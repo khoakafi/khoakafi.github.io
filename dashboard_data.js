@@ -1285,6 +1285,45 @@ const FUNDAMENTALS = {
       {quarter:"Q4/2025",revenue:327.00,profit:188.11,yoyRevenue:11.20,yoyProfit:10.50,pe:7.35,pb:3.45,roe:50.62}
     ]
   },
+  SHB: {
+    currentPE: 5.27, currentPB: null, currentROE: 18.13,
+    isBank:true,
+    quarters: [
+      {quarter:"Q2/2024",revenue:4412.04,profit:2285.23,yoyRevenue:7.41,yoyProfit:17.10},
+      {quarter:"Q3/2024",revenue:3261.81,profit:1739.93,yoyRevenue:-26.23,yoyProfit:-15.48},
+      {quarter:"Q4/2024",revenue:8388.20,profit:2087.50,yoyRevenue:56.61,yoyProfit:260.50},
+      {quarter:"Q1/2025",revenue:5543.67,profit:3496.35,yoyRevenue:7.23,yoyProfit:8.94},
+      {quarter:"Q2/2025",revenue:9160.06,profit:3646.90,yoyRevenue:107.62,yoyProfit:59.59},
+      {quarter:"Q3/2025",revenue:5323.82,profit:2606.72,yoyRevenue:63.22,yoyProfit:49.82},
+      {quarter:"Q4/2025",revenue:187.36,profit:2210.32,yoyRevenue:-97.77,yoyProfit:5.88}
+    ]
+  },
+  SJS: {
+    currentPE: 30.06, currentPB: null, currentROE: 13.98,
+    warning:"SJS có doanh thu/lợi nhuận biến động mạnh theo quý (đặc thù ghi nhận doanh thu BĐS) theo dữ liệu KAFI — cần thận trọng khi đánh giá.",
+    quarters: [
+      {quarter:"Q2/2024",revenue:118.81,profit:52.27,yoyRevenue:539.19,yoyProfit:-7.91,pe:34.72,pb:2.64,roe:7.84},
+      {quarter:"Q3/2024",revenue:127.61,profit:47.07,yoyRevenue:-26.34,yoyProfit:32.80,pe:44.07,pb:3.47,roe:8.09},
+      {quarter:"Q4/2024",revenue:281.31,profit:125.10,yoyRevenue:44.53,yoyProfit:53.57,pe:36.82,pb:3.32,roe:9.44},
+      {quarter:"Q1/2025",revenue:143.35,profit:67.24,yoyRevenue:21.19,yoyProfit:52.55,pe:67.62,pb:6.50,roe:9.99},
+      {quarter:"Q2/2025",revenue:200.65,profit:103.88,yoyRevenue:68.88,yoyProfit:98.76,pe:55.51,pb:6.04,roe:11.41},
+      {quarter:"Q3/2025",revenue:26.72,profit:2.88,yoyRevenue:-79.06,yoyProfit:-93.88,pe:51.59,pb:4.77,roe:9.63},
+      {quarter:"Q4/2025",revenue:380.01,profit:187.32,yoyRevenue:35.08,yoyProfit:49.74,pe:48.25,pb:5.09,roe:11.12}
+    ]
+  },
+  SSB: {
+    currentPE: 18.09, currentPB: null, currentROE: 7.74,
+    isBank:true,
+    quarters: [
+      {quarter:"Q2/2024",revenue:2741.58,profit:1381.79,yoyRevenue:81.86,yoyProfit:83.38},
+      {quarter:"Q3/2024",revenue:2797.22,profit:1011.97,yoyRevenue:70.77,yoyProfit:11.43},
+      {quarter:"Q4/2024",revenue:2425.90,profit:1220.94,yoyRevenue:9.51,yoyProfit:5.14},
+      {quarter:"Q1/2025",revenue:2450.48,profit:3492.49,yoyRevenue:22.42,yoyProfit:190.72},
+      {quarter:"Q2/2025",revenue:2464.39,profit:1133.28,yoyRevenue:-10.11,yoyProfit:-17.98},
+      {quarter:"Q3/2025",revenue:2337.10,profit:779.49,yoyRevenue:-16.45,yoyProfit:-22.97},
+      {quarter:"Q4/2025",revenue:2451.87,profit:104.29,yoyRevenue:1.07,yoyProfit:-91.46}
+    ]
+  },
   VCB: {
     currentPE: 14.46, currentPB: null, currentROE: 16.07,
     isBank:true,
