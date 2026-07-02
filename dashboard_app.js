@@ -491,6 +491,10 @@ function fmtFundPct(v){
   const sign = v > 0 ? "+" : "";
   return '<span class="' + cls + '">' + sign + v.toFixed(1) + '%</span>';
 }
+function fmtFundRatio(v){
+  if(v === null || v === undefined || isNaN(v)) return "--";
+  return Number(v).toLocaleString("vi-VN", {maximumFractionDigits:2});
+}
 
 function renderFundamentals(ticker){
   const body = document.getElementById("fundamentalsBody");
@@ -522,12 +526,21 @@ function renderFundamentals(ticker){
   const yoyProfitCells = fd.quarters.map(function(q){ return '<td>' + fmtFundPct(q.yoyProfit) + '</td>'; }).join("");
   const trendCells = trends.map(function(t){ return '<td>' + t + '</td>'; }).join("");
 
-  const peb = '<div class="fund-note" style="margin-bottom:8px;font-style:normal;">' +
-    'P/E hiện tại: <b style="color:var(--text);">' + (fd.currentPE || "--") + '</b>' +
-    ' &nbsp;•&nbsp; P/B hiện tại: <b style="color:var(--text);">' + (fd.currentPB || "--") + '</b>' +
-  '</div>';
+  // P/E, P/B theo từng quý (chỉ có với các mã không phải NH, và riêng MBB trong nhóm NH)
+  const hasQuarterlyPB = fd.quarters.some(function(q){ return q.pe !== undefined && q.pe !== null; });
+  const peCells = fd.quarters.map(function(q){ return '<td>' + fmtFundRatio(q.pe) + '</td>'; }).join("");
+  const pbCells = fd.quarters.map(function(q){ return '<td>' + fmtFundRatio(q.pb) + '</td>'; }).join("");
+  const pebRows = hasQuarterlyPB ?
+    ('<tr><td>P/E</td>' + peCells + '</tr>' + '<tr><td>P/B</td>' + pbCells + '</tr>') : "";
 
-  body.innerHTML = peb +
+  const pebHeader = (!hasQuarterlyPB) ?
+    ('<div class="fund-note" style="margin-bottom:8px;font-style:normal;">' +
+      'P/E hiện tại: <b style="color:var(--text);">' + (fd.currentPE || "--") + '</b>' +
+      ' &nbsp;•&nbsp; P/B hiện tại: <b style="color:var(--text);">' + (fd.currentPB || "--") + '</b>' +
+      ' <span style="opacity:.7;">(ngân hàng này không có P/E, P/B theo quý trong dữ liệu nguồn)</span>' +
+    '</div>') : "";
+
+  body.innerHTML = pebHeader +
     '<div class="fund-table-wrap"><table class="fund-table fund-table-h"><thead><tr>' +
       '<th>Quý</th>' + quarterHeaderCells +
     '</tr></thead><tbody>' +
@@ -536,10 +549,13 @@ function renderFundamentals(ticker){
       '<tr><td>%YoY DT</td>' + yoyRevCells + '</tr>' +
       '<tr><td>%YoY LN</td>' + yoyProfitCells + '</tr>' +
       '<tr><td>Xu hướng LN</td>' + trendCells + '</tr>' +
+      pebRows +
     '</tbody></table></div>' +
-    '<div class="fund-note">Tổng hợp từ tin công bố KQKD trên báo tài chính (cafef, vietstock, tinnhanhchungkhoan...), không thay thế BCTC kiểm toán. ' +
-      (fd.isBank ? 'Số liệu lợi nhuận ngân hàng có thể là trước thuế tùy nguồn. ' : '') +
-      'Ô "--" là quý nguồn không công bố tách riêng. P/E, P/B chỉ có số hiện tại — chưa có dữ liệu lịch sử theo từng quý từ nguồn miễn phí. "Tăng tốc/Giảm tốc" so sánh %YoY LNST quý này với quý liền trước.' +
+    '<div class="fund-note">Nguồn: KAFI X (dữ liệu FiinTrade/FiinGroup), truy xuất trực tiếp qua tài khoản người dùng. ' +
+      (fd.isBank ? 'Chỉ tiêu "doanh thu" của ngân hàng là Thu nhập lãi thuần. ' : '') +
+      'Ô "--" là quý nguồn chưa công bố. ' +
+      (hasQuarterlyPB ? '' : 'Nhóm ngân hàng này không có P/E, P/B theo quý trong mẫu chỉ số của nguồn — chỉ hiển thị số hiện tại ở trên. ') +
+      '"Tăng tốc/Giảm tốc" so sánh %YoY LNST quý này với quý liền trước.' +
     '</div>';
 }
 

@@ -387,188 +387,259 @@ const TOP_ANALYSIS = {
 
 // ---------------------------------------------------------------
 // DỮ LIỆU CƠ BẢN THEO QUÝ (Doanh thu / LNST / %YoY / P/E / P/B)
-// Tổng hợp từ tin tức công bố KQKD trên cafef.vn, vietstock.vn, tinnhanhchungkhoan.vn,
-// dnse.com.vn, elibook.vn... KHÔNG phải dữ liệu chuẩn từ BCTC kiểm toán — một số quý
-// thiếu số liệu (nguồn không công bố tách quý) hoặc là số trước thuế đối với ngân hàng.
-// P/E, P/B chỉ có giá trị hiện tại (tại thời điểm thu thập), KHÔNG có lịch sử theo quý
-// vì nguồn miễn phí không công bố P/E, P/B lịch sử theo từng quý.
+// Nguồn: KAFI X (nền tảng giao dịch, dữ liệu FiinTrade/FiinGroup) — mục
+// "Phân tích tài chính > Chỉ số Tài Chính" của từng mã, người dùng tự truy cập
+// bằng tài khoản KAFI cá nhân. Đây là dữ liệu tổng hợp chuẩn từ FiinGroup,
+// đáng tin cậy hơn nhiều so với số ước tính từ tin tức trước đây.
+// Ghi chú: các ngân hàng (VCB, VPB, HDB, EIB, STB) không có P/E, P/B theo quý
+// trong mẫu chỉ số của KAFI/FiinTrade (chỉ MBB trong nhóm NH có đủ P/E, P/B).
+// "revenue" với ngân hàng là Thu nhập lãi thuần (không hoàn toàn tương đương
+// doanh thu của DN phi tài chính). Một số quý cũ nhất không có số liệu do
+// nguồn chưa công bố (hiển thị null/--).
 // ---------------------------------------------------------------
 const FUNDAMENTALS = {
   HPG: {
-    currentPE: 6.86, currentPB: 2.58,
+    currentPE: 9.38, currentPB: 1.42,
     quarters: [
-      {quarter:"Q2/2024",revenue:39556,profit:3319.26,yoyRevenue:34,yoyProfit:127.34},
-      {quarter:"Q3/2024",revenue:34000,profit:3022.95,yoyRevenue:19,yoyProfit:50.79},
-      {quarter:"Q4/2024",revenue:35232,profit:2806.8,yoyRevenue:1,yoyProfit:-5.58},
-      {quarter:"Q1/2025",revenue:37900,profit:3344.28,yoyRevenue:22,yoyProfit:16.5},
-      {quarter:"Q2/2025",revenue:36000,profit:4256.75,yoyRevenue:-9,yoyProfit:28.24},
-      {quarter:"Q3/2025",revenue:36794,profit:4012,yoyRevenue:7,yoyProfit:33},
-      {quarter:"Q4/2025",revenue:47302,profit:3888,yoyRevenue:34,yoyProfit:38},
-      {quarter:"Q1/2026",revenue:53300,profit:9056,yoyRevenue:40,yoyProfit:170}
+      {quarter:"Q2/2023",revenue:29799.50,profit:1460.04,yoyRevenue:-20.99,yoyProfit:-63.79,pe:-71.16,pb:1.39},
+      {quarter:"Q3/2023",revenue:28765.72,profit:2004.75,yoyRevenue:-16.48,yoyProfit:213.00,pe:87.03,pb:1.63},
+      {quarter:"Q4/2023",revenue:34924.57,profit:2972.78,yoyRevenue:33.24,yoyProfit:249.27,pe:24.29,pb:1.62},
+      {quarter:"Q1/2024",revenue:31092.57,profit:2870.59,yoyRevenue:15.73,yoyProfit:622.17,pe:19.17,pb:1.69},
+      {quarter:"Q2/2024",revenue:39936.27,profit:3319.26,yoyRevenue:34.02,yoyProfit:127.34,pe:15.46,pb:1.59},
+      {quarter:"Q3/2024",revenue:34300.35,profit:3022.95,yoyRevenue:19.24,yoyProfit:50.79,pe:13.94,pb:1.52},
+      {quarter:"Q4/2024",revenue:35232.20,profit:2808.65,yoyRevenue:0.88,yoyProfit:-5.52,pe:13.57,pb:1.43},
+      {quarter:"Q1/2025",revenue:37950.64,profit:3344.28,yoyRevenue:22.06,yoyProfit:16.50,pe:15.60,pb:1.66},
+      {quarter:"Q2/2025",revenue:36286.19,profit:4256.49,yoyRevenue:-9.14,yoyProfit:28.24,pe:15.57,pb:1.72},
+      {quarter:"Q3/2025",revenue:36793.87,profit:3988.32,yoyRevenue:7.27,yoyProfit:31.93,pe:14.29,pb:1.64},
+      {quarter:"Q4/2025",revenue:47301.62,profit:3864.08,yoyRevenue:34.26,yoyProfit:37.58,pe:13.78,pb:1.65},
+      {quarter:"Q1/2026",revenue:53312.91,profit:8994.00,yoyRevenue:40.48,yoyProfit:168.94,pe:9.38,pb:1.42}
     ]
   },
   VNM: {
-    currentPE: 15.22, currentPB: 4.76,
+    currentPE: 13.53, currentPB: 4.15,
     quarters: [
-      {quarter:"Q2/2024",revenue:16665,profit:2695,yoyRevenue:9.5,yoyProfit:20.9},
-      {quarter:"Q3/2024",revenue:15537,profit:2404,yoyRevenue:-0.6,yoyProfit:-4},
-      {quarter:"Q4/2024",revenue:15477,profit:2147,yoyRevenue:-1,yoyProfit:-9},
-      {quarter:"Q1/2025",revenue:12935,profit:null,yoyRevenue:null,yoyProfit:null},
-      {quarter:"Q2/2025",revenue:16745,profit:2489,yoyRevenue:null,yoyProfit:null},
-      {quarter:"Q3/2025",revenue:16968,profit:2511,yoyRevenue:9.1,yoyProfit:4.5},
-      {quarter:"Q4/2025",revenue:17000,profit:2827,yoyRevenue:10,yoyProfit:32},
-      {quarter:"Q1/2026",revenue:16147,profit:2429,yoyRevenue:25,yoyProfit:55}
+      {quarter:"Q2/2023",revenue:15212.94,profit:2198.81,yoyRevenue:1.69,yoyProfit:5.56,pe:17.18,pb:4.22},
+      {quarter:"Q3/2023",revenue:15681.49,profit:2492.25,yoyRevenue:-2.56,yoyProfit:8.43,pe:16.61,pb:4.56},
+      {quarter:"Q4/2023",revenue:15630.46,profit:2326.01,yoyRevenue:3.65,yoyProfit:24.44,pe:15.31,pb:4.29},
+      {quarter:"Q1/2024",revenue:14124.89,profit:2194.67,yoyRevenue:1.22,yoyProfit:18.20,pe:15.25,pb:4.41},
+      {quarter:"Q2/2024",revenue:16665.24,profit:2670.48,yoyRevenue:9.55,yoyProfit:21.45,pe:14.31,pb:4.03},
+      {quarter:"Q3/2024",revenue:15548.71,profit:2403.52,yoyRevenue:-0.85,yoyProfit:-3.56,pe:13.55,pb:4.14},
+      {quarter:"Q4/2024",revenue:15485.05,profit:2123.65,yoyRevenue:-0.93,yoyProfit:-8.70,pe:12.82,pb:3.73},
+      {quarter:"Q1/2025",revenue:12965.40,profit:1568.48,yoyRevenue:-8.21,yoyProfit:-28.53,pe:15.00,pb:3.90},
+      {quarter:"Q2/2025",revenue:16744.61,profit:2474.59,yoyRevenue:0.48,yoyProfit:-7.34,pe:13.92,pb:3.76},
+      {quarter:"Q3/2025",revenue:16968.08,profit:2526.77,yoyRevenue:9.13,yoyProfit:5.13,pe:16.97,pb:4.33},
+      {quarter:"Q4/2025",revenue:17045.42,profit:2840.37,yoyRevenue:10.08,yoyProfit:33.75,pe:13.53,pb:4.15},
+      {quarter:"Q1/2026",revenue:16147,profit:2429,yoyRevenue:25,yoyProfit:55,pe:null,pb:null}
     ]
   },
   MWG: {
-    currentPE: 20.48, currentPB: 4.1,
+    currentPE: 17.93, currentPB: 3.86,
     quarters: [
-      {quarter:"Q2/2024",revenue:34100,profit:1172.28,yoyRevenue:16,yoyProfit:6635.03},
-      {quarter:"Q3/2024",revenue:34147,profit:806,yoyRevenue:13,yoyProfit:2000},
-      {quarter:"Q1/2025",revenue:36135,profit:1548,yoyRevenue:15,yoyProfit:71},
-      {quarter:"Q2/2025",revenue:null,profit:null,yoyRevenue:null,yoyProfit:null},
-      {quarter:"Q3/2025",revenue:39853,profit:1784,yoyRevenue:17,yoyProfit:120},
-      {quarter:"Q4/2025",revenue:42850,profit:2086,yoyRevenue:24,yoyProfit:144.59},
-      {quarter:"Q1/2026",revenue:46508,profit:2700,yoyRevenue:29,yoyProfit:75}
+      {quarter:"Q2/2023",revenue:29725.05,profit:17.41,yoyRevenue:-14.34,yoyProfit:-98.46,pe:37.90,pb:2.55},
+      {quarter:"Q3/2023",revenue:30520.84,profit:38.74,yoyRevenue:-5.57,yoyProfit:-95.73,pe:95.39,pb:2.85},
+      {quarter:"Q4/2023",revenue:31653.21,profit:90.26,yoyRevenue:2.51,yoyProfit:-85.42,pe:479.11,pb:3.44},
+      {quarter:"Q1/2024",revenue:31685.02,profit:902.44,yoyRevenue:15.91,yoyProfit:4143.38,pe:86.50,pb:3.59},
+      {quarter:"Q2/2024",revenue:34384.59,profit:1172.28,yoyRevenue:15.68,yoyProfit:6635.03,pe:44.13,pb:3.72},
+      {quarter:"Q3/2024",revenue:34361.57,profit:800.15,yoyRevenue:12.58,yoyProfit:1965.48,pe:29.20,pb:3.21},
+      {quarter:"Q4/2024",revenue:34793.92,profit:847.00,yoyRevenue:9.92,yoyProfit:838.43,pe:23.47,pb:3.18},
+      {quarter:"Q1/2025",revenue:36332.91,profit:1545.94,yoyRevenue:14.67,yoyProfit:71.31,pe:22.39,pb:3.36},
+      {quarter:"Q2/2025",revenue:37844.16,profit:1648.15,yoyRevenue:10.06,yoyProfit:40.59,pe:25.57,pb:4.21},
+      {quarter:"Q3/2025",revenue:40091.34,profit:1770.90,yoyRevenue:16.67,yoyProfit:121.32,pe:23.48,pb:4.34},
+      {quarter:"Q4/2025",revenue:42567.70,profit:2068.75,yoyRevenue:22.34,yoyProfit:144.24,pe:17.93,pb:3.86}
     ]
   },
   VCB: {
-    currentPE: 15.6, currentPB: 2.35,
+    currentPE: null, currentPB: null,
     isBank:true,
     quarters: [
-      {quarter:"Q2/2024",revenue:34032,profit:8119.41,yoyRevenue:null,yoyProfit:9.38},
-      {quarter:"Q3/2024",revenue:null,profit:8566.6,yoyRevenue:null,yoyProfit:17.85},
-      {quarter:"Q1/2025",revenue:17264.73,profit:8696.23,yoyRevenue:-0.09,yoyProfit:1.35},
-      {quarter:"Q2/2025",revenue:null,profit:8831.88,yoyRevenue:null,yoyProfit:8.77},
-      {quarter:"Q3/2025",revenue:null,profit:9020.5,yoyRevenue:null,yoyProfit:5.3},
-      {quarter:"Q4/2025",revenue:null,profit:10900,yoyRevenue:null,yoyProfit:1.7},
-      {quarter:"Q1/2026",revenue:21180,profit:9456.57,yoyRevenue:22.7,yoyProfit:8.74}
+      {quarter:"Q2/2023",revenue:14020.58,profit:7422.82,yoyRevenue:9.56,yoyProfit:25.03},
+      {quarter:"Q3/2023",revenue:12596.12,profit:7268.92,yoyRevenue:-7.81,yoyProfit:19.85},
+      {quarter:"Q4/2023",revenue:12801.22,profit:9355.03,yoyRevenue:-13.56,yoyProfit:-5.77},
+      {quarter:"Q1/2024",revenue:14078.06,profit:8580.00,yoyRevenue:-0.88,yoyProfit:-4.52},
+      {quarter:"Q2/2024",revenue:13907.71,profit:8119.41,yoyRevenue:-0.81,yoyProfit:9.38},
+      {quarter:"Q3/2024",revenue:13577.64,profit:8566.60,yoyRevenue:7.79,yoyProfit:17.85},
+      {quarter:"Q4/2024",revenue:13842.33,profit:8565.38,yoyRevenue:8.13,yoyProfit:-8.44},
+      {quarter:"Q1/2025",revenue:13687.15,profit:8696.23,yoyRevenue:-2.78,yoyProfit:1.35},
+      {quarter:"Q2/2025",revenue:14160.19,profit:8831.89,yoyRevenue:1.82,yoyProfit:8.77},
+      {quarter:"Q3/2025",revenue:14657.24,profit:9020.50,yoyRevenue:7.95,yoyProfit:5.30},
+      {quarter:"Q4/2025",revenue:16266.83,profit:8629.05,yoyRevenue:17.52,yoyProfit:0.74}
     ]
   },
   VPB: {
-    currentPE: 13.35, currentPB: 2.64,
+    currentPE: null, currentPB: null,
     isBank:true,
     quarters: [
-      {quarter:"Q2/2024",revenue:null,profit:6215,yoyRevenue:null,yoyProfit:null},
-      {quarter:"Q3/2024",revenue:15063,profit:5186,yoyRevenue:null,yoyProfit:66},
-      {quarter:"Q4/2024",revenue:null,profit:6100,yoyRevenue:null,yoyProfit:140},
-      {quarter:"Q1/2025",revenue:15566,profit:3934,yoyRevenue:15,yoyProfit:25.2},
-      {quarter:"Q2/2025",revenue:null,profit:5753,yoyRevenue:null,yoyProfit:61},
-      {quarter:"Q3/2025",revenue:null,profit:9166,yoyRevenue:null,yoyProfit:76.7},
-      {quarter:"Q4/2025",revenue:22416,profit:10229,yoyRevenue:27,yoyProfit:70},
-      {quarter:"Q1/2026",revenue:19900,profit:6198.66,yoyRevenue:26.3,yoyProfit:59.15}
+      {quarter:"Q2/2023",revenue:8762.15,profit:3061.79,yoyRevenue:-16.28,yoyProfit:-12.72},
+      {quarter:"Q3/2023",revenue:8836.75,profit:2424.75,yoyRevenue:-14.91,yoyProfit:-34.99},
+      {quarter:"Q4/2023",revenue:11041.84,profit:2030.08,yoyRevenue:7.38,yoyProfit:-10.40},
+      {quarter:"Q1/2024",revenue:11323.40,profit:3566.70,yoyRevenue:18.77,yoyProfit:40.65},
+      {quarter:"Q2/2024",revenue:12408.24,profit:3566.85,yoyRevenue:41.61,yoyProfit:16.50},
+      {quarter:"Q3/2024",revenue:12155.77,profit:4027.83,yoyRevenue:37.56,yoyProfit:66.11},
+      {quarter:"Q4/2024",revenue:14114.99,profit:4617.42,yoyRevenue:27.83,yoyProfit:127.45},
+      {quarter:"Q1/2025",revenue:13355.76,profit:3894.91,yoyRevenue:17.95,yoyProfit:9.20},
+      {quarter:"Q2/2025",revenue:13478.57,profit:4862.40,yoyRevenue:8.63,yoyProfit:36.32},
+      {quarter:"Q3/2025",revenue:15061.21,profit:7275.48,yoyRevenue:23.90,yoyProfit:80.63},
+      {quarter:"Q4/2025",revenue:16767.18,profit:7957.14,yoyRevenue:18.79,yoyProfit:72.33}
     ]
   },
   HDB: {
     currentPE: null, currentPB: null,
     isBank:true,
     quarters: [
-      {quarter:"Q4/2024",revenue:9448.13,profit:3114.65,yoyRevenue:14.42,yoyProfit:-6.86},
-      {quarter:"Q1/2025",revenue:null,profit:4028,yoyRevenue:null,yoyProfit:46.8},
-      {quarter:"Q2/2025",revenue:null,profit:3514.86,yoyRevenue:null,yoyProfit:12.84},
-      {quarter:"Q3/2025",revenue:null,profit:3646.64,yoyRevenue:null,yoyProfit:6.51},
-      {quarter:"Q4/2025",revenue:null,profit:6500,yoyRevenue:null,yoyProfit:60},
-      {quarter:"Q1/2026",revenue:null,profit:6107,yoyRevenue:null,yoyProfit:14}
+      {quarter:"Q2/2024",revenue:7719.88,profit:3114.89,yoyRevenue:55.82,yoyProfit:44.30},
+      {quarter:"Q3/2024",revenue:7773.45,profit:3423.88,yoyRevenue:58.12,yoyProfit:38.04},
+      {quarter:"Q4/2024",revenue:8203.40,profit:3114.41,yoyRevenue:9.78,yoyProfit:-6.86},
+      {quarter:"Q1/2025",revenue:7408.10,profit:4234.75,yoyRevenue:3.46,yoyProfit:36.18},
+      {quarter:"Q2/2025",revenue:9819.16,profit:3514.86,yoyRevenue:27.19,yoyProfit:12.84},
+      {quarter:"Q3/2025",revenue:7763.32,profit:3646.64,yoyRevenue:-0.13,yoyProfit:6.51},
+      {quarter:"Q4/2025",revenue:9755.61,profit:5128.14,yoyRevenue:18.92,yoyProfit:64.66},
+      {quarter:"Q1/2026",revenue:8483.02,profit:4766.64,yoyRevenue:14.51,yoyProfit:12.56}
     ]
   },
   EIB: {
-    currentPE: 37.11, currentPB: 1.81,
+    currentPE: null, currentPB: null,
     isBank:true,
     quarters: [
-      {quarter:"Q2/2024",revenue:null,profit:813,yoyRevenue:null,yoyProfit:52.0},
-      {quarter:"Q3/2024",revenue:null,profit:904,yoyRevenue:null,yoyProfit:194.4},
-      {quarter:"Q4/2024",revenue:null,profit:1810,yoyRevenue:null,yoyProfit:79.7},
-      {quarter:"Q1/2025",revenue:null,profit:832,yoyRevenue:null,yoyProfit:25.8},
-      {quarter:"Q2/2025",revenue:null,profit:656.9,yoyRevenue:null,yoyProfit:-19.2},
-      {quarter:"Q3/2025",revenue:null,profit:560,yoyRevenue:null,yoyProfit:-38.02},
-      {quarter:"Q1/2026",revenue:1528,profit:338,yoyRevenue:null,yoyProfit:-59.0}
+      {quarter:"Q3/2023",revenue:868.74,profit:241.81,yoyRevenue:-41.77,yoyProfit:-76.38},
+      {quarter:"Q4/2023",revenue:1397.54,profit:804.55,yoyRevenue:-2.79,yoyProfit:99.35},
+      {quarter:"Q1/2024",revenue:1358.03,profit:527.25,yoyRevenue:9.82,yoyProfit:-24.26},
+      {quarter:"Q2/2024",revenue:1511.54,profit:642.84,yoyRevenue:38.14,yoyProfit:52.11},
+      {quarter:"Q3/2024",revenue:1535.87,profit:721.21,yoyRevenue:76.79,yoyProfit:198.25},
+      {quarter:"Q4/2024",revenue:1518.09,profit:1435.50,yoyRevenue:8.63,yoyProfit:78.42},
+      {quarter:"Q1/2025",revenue:1354.38,profit:658.49,yoyRevenue:-0.27,yoyProfit:24.89},
+      {quarter:"Q2/2025",revenue:1469.40,profit:506.24,yoyRevenue:-2.79,yoyProfit:-21.25},
+      {quarter:"Q3/2025",revenue:1465.01,profit:444.69,yoyRevenue:-4.61,yoyProfit:-38.34},
+      {quarter:"Q4/2025",revenue:1690.89,profit:-472.48,yoyRevenue:11.38,yoyProfit:-132.91},
+      {quarter:"Q1/2026",revenue:1379.98,profit:269.16,yoyRevenue:1.89,yoyProfit:-59.12}
     ]
   },
   STB: {
-    currentPE: 28.0, currentPB: 2.1,
+    currentPE: null, currentPB: null,
     isBank:true,
     quarters: [
-      {quarter:"Q2/2024",revenue:null,profit:2688,yoyRevenue:null,yoyProfit:13.1},
-      {quarter:"Q3/2024",revenue:null,profit:2752,yoyRevenue:null,yoyProfit:null},
-      {quarter:"Q2/2025",revenue:null,profit:4500,yoyRevenue:null,yoyProfit:67.0},
-      {quarter:"Q3/2025",revenue:null,profit:3657,yoyRevenue:null,yoyProfit:32.9},
-      {quarter:"Q4/2025",revenue:null,profit:-3360,yoyRevenue:null,yoyProfit:null},
-      {quarter:"Q1/2026",revenue:null,profit:2106,yoyRevenue:null,yoyProfit:-43.0}
+      {quarter:"Q3/2023",revenue:4851.11,profit:1634.59,yoyRevenue:-15.81,yoyProfit:34.91},
+      {quarter:"Q4/2023",revenue:5633.09,profit:2258.94,yoyRevenue:-6.79,yoyProfit:29.00},
+      {quarter:"Q1/2024",revenue:5950.84,profit:2111.41,yoyRevenue:1.96,yoyProfit:11.13},
+      {quarter:"Q2/2024",revenue:6116.57,profit:2176.84,yoyRevenue:6.35,yoyProfit:13.08},
+      {quarter:"Q3/2024",revenue:6365.11,profit:2201.17,yoyRevenue:31.21,yoyProfit:34.66},
+      {quarter:"Q4/2024",revenue:6099.18,profit:3598.08,yoyRevenue:8.27,yoyProfit:59.28},
+      {quarter:"Q1/2025",revenue:6863.17,profit:2896.69,yoyRevenue:15.33,yoyProfit:37.19},
+      {quarter:"Q2/2025",revenue:6585.08,profit:2893.60,yoyRevenue:7.66,yoyProfit:32.93},
+      {quarter:"Q3/2025",revenue:7874.37,profit:2901.28,yoyRevenue:23.71,yoyProfit:31.81},
+      {quarter:"Q4/2025",revenue:5358.00,profit:-2752.46,yoyRevenue:-12.15,yoyProfit:-176.50}
     ]
   },
   CTR: {
-    currentPE: 13.5, currentPB: null,
+    currentPE: 16.38, currentPB: 4.75,
     quarters: [
-      {quarter:"Q2/2024",revenue:1045.3,profit:null,yoyRevenue:14.0,yoyProfit:null},
-      {quarter:"Q3/2024",revenue:null,profit:178,yoyRevenue:null,yoyProfit:null},
-      {quarter:"Q2/2025",revenue:3236,profit:145,yoyRevenue:7.0,yoyProfit:16.0},
-      {quarter:"Q3/2025",revenue:null,profit:168.94,yoyRevenue:14.09,yoyProfit:15.5},
-      {quarter:"Q4/2025",revenue:3999.5,profit:163.9,yoyRevenue:14.2,yoyProfit:8.8},
-      {quarter:"Q1/2026",revenue:3804.8,profit:null,yoyRevenue:38.9,yoyProfit:22.6}
+      {quarter:"Q2/2023",revenue:2701.36,profit:124.14,yoyRevenue:21.48,yoyProfit:20.61,pe:17.13,pb:4.98},
+      {quarter:"Q3/2023",revenue:3083.43,profit:140.59,yoyRevenue:18.34,yoyProfit:9.64,pe:21.33,pb:5.81},
+      {quarter:"Q4/2023",revenue:3174.68,profit:143.24,yoyRevenue:20.42,yoyProfit:6.27,pe:27.49,pb:7.13},
+      {quarter:"Q1/2024",revenue:2623.10,profit:116.13,yoyRevenue:12.12,yoyProfit:7.04,pe:28.70,pb:7.94},
+      {quarter:"Q2/2024",revenue:3008.97,profit:125.11,yoyRevenue:11.39,yoyProfit:0.78,pe:27.82,pb:7.80},
+      {quarter:"Q3/2024",revenue:3475.57,profit:146.26,yoyRevenue:12.72,yoyProfit:4.03,pe:28.75,pb:9.03},
+      {quarter:"Q4/2024",revenue:3501.88,profit:150.72,yoyRevenue:10.31,yoyProfit:5.22,pe:17.92,pb:5.17},
+      {quarter:"Q1/2025",revenue:2738.46,profit:121.71,yoyRevenue:4.40,yoyProfit:4.80,pe:20.76,pb:5.63},
+      {quarter:"Q2/2025",revenue:3236.36,profit:145.22,yoyRevenue:7.56,yoyProfit:16.08,pe:18.46,pb:5.22},
+      {quarter:"Q3/2025",revenue:3965.18,profit:168.94,yoyRevenue:14.09,yoyProfit:15.50,pe:18.72,pb:5.09},
+      {quarter:"Q4/2025",revenue:3999.53,profit:163.85,yoyRevenue:14.21,yoyProfit:8.71,pe:16.38,pb:4.75}
     ]
   },
   GVR: {
-    currentPE: 25.39, currentPB: 2.2,
+    currentPE: 24.82, currentPB: 2.34,
     quarters: [
-      {quarter:"Q1/2024",revenue:4590,profit:650,yoyRevenue:11.0,yoyProfit:-14.0},
-      {quarter:"Q3/2024",revenue:6963,profit:802,yoyRevenue:12.4,yoyProfit:62.7},
-      {quarter:"Q2/2025",revenue:6017,profit:1523,yoyRevenue:30.0,yoyProfit:53.0},
-      {quarter:"Q3/2025",revenue:9294,profit:2187,yoyRevenue:20.4,yoyProfit:95.0},
-      {quarter:"Q4/2025",revenue:8500,profit:1000,yoyRevenue:-9.0,yoyProfit:-49.0},
-      {quarter:"Q1/2026",revenue:8845,profit:2513,yoyRevenue:56.0,yoyProfit:85.0}
+      {quarter:"Q2/2023",revenue:4161.20,profit:558.18,yoyRevenue:-25.39,yoyProfit:-45.12,pe:25.22,pb:1.45},
+      {quarter:"Q3/2023",revenue:6199.49,profit:312.83,yoyRevenue:5.91,yoyProfit:-62.54,pe:39.36,pb:1.82},
+      {quarter:"Q4/2023",revenue:7606.80,profit:1164.40,yoyRevenue:-15.82,yoyProfit:27.73,pe:45.75,pb:2.41},
+      {quarter:"Q1/2024",revenue:4590.33,profit:475.56,yoyRevenue:10.82,yoyProfit:-13.50,pe:53.37,pb:2.64},
+      {quarter:"Q2/2024",revenue:4653.67,profit:820.84,yoyRevenue:11.83,yoyProfit:47.06,pe:47.16,pb:2.55},
+      {quarter:"Q3/2024",revenue:7717.06,profit:943.78,yoyRevenue:24.48,yoyProfit:201.69,pe:33.84,pb:2.21},
+      {quarter:"Q4/2024",revenue:9305.95,profit:1748.53,yoyRevenue:22.34,yoyProfit:50.17,pe:23.77,pb:1.79},
+      {quarter:"Q1/2025",revenue:5681.99,profit:1184.65,yoyRevenue:23.78,yoyProfit:149.10,pe:25.12,pb:2.17},
+      {quarter:"Q2/2025",revenue:5891.20,profit:1446.81,yoyRevenue:26.59,yoyProfit:76.26,pe:20.70,pb:1.96},
+      {quarter:"Q3/2025",revenue:9296.20,profit:1897.26,yoyRevenue:20.46,yoyProfit:101.03,pe:26.03,pb:2.82},
+      {quarter:"Q4/2025",revenue:8658.03,profit:694.40,yoyRevenue:-6.96,yoyProfit:-60.29,pe:24.82,pb:2.34}
     ]
   },
   FPT: {
-    currentPE: 18.5, currentPB: null,
+    currentPE: 13.31, currentPB: 3.43,
     quarters: [
-      {quarter:"Q2/2024",revenue:15245,profit:1874,yoyRevenue:22.0,yoyProfit:24.16},
-      {quarter:"Q3/2024",revenue:15903,profit:2090,yoyRevenue:16.0,yoyProfit:21.0},
-      {quarter:"Q1/2025",revenue:16058,profit:2174,yoyRevenue:13.9,yoyProfit:20.9},
-      {quarter:"Q4/2025",revenue:null,profit:2502.7,yoyRevenue:14.87,yoyProfit:19.48},
-      {quarter:"Q1/2026",revenue:12480,profit:2487,yoyRevenue:8.7,yoyProfit:14.4}
+      {quarter:"Q2/2023",revenue:12484.52,profit:1509.22,yoyRevenue:23.65,yoyProfit:20.66,pe:20.02,pb:4.84},
+      {quarter:"Q3/2023",revenue:13761.83,profit:1739.34,yoyRevenue:23.44,yoyProfit:19.65,pe:19.73,pb:5.10},
+      {quarter:"Q4/2023",revenue:14695.81,profit:1728.40,yoyRevenue:12.58,yoyProfit:27.88,pe:21.62,pb:5.61},
+      {quarter:"Q1/2024",revenue:14093.30,profit:1798.03,yoyRevenue:20.63,yoyProfit:20.39,pe:27.56,pb:6.96},
+      {quarter:"Q2/2024",revenue:15245.89,profit:1875.16,yoyRevenue:22.12,yoyProfit:24.25,pe:27.45,pb:7.18},
+      {quarter:"Q3/2024",revenue:15972.40,profit:2088.85,yoyRevenue:16.06,yoyProfit:20.09,pe:29.97,pb:7.60},
+      {quarter:"Q4/2024",revenue:17651.07,profit:2094.73,yoyRevenue:20.11,yoyProfit:21.19,pe:20.56,pb:5.45},
+      {quarter:"Q1/2025",revenue:16064.98,profit:2174.30,yoyRevenue:13.99,yoyProfit:20.93,pe:23.01,pb:5.95},
+      {quarter:"Q2/2025",revenue:16658.34,profit:2257.46,yoyRevenue:9.26,yoyProfit:20.39,pe:18.66,pb:4.86},
+      {quarter:"Q3/2025",revenue:17225.51,profit:2434.84,yoyRevenue:7.85,yoyProfit:16.56,pe:18.65,pb:4.69},
+      {quarter:"Q4/2025",revenue:20258.87,profit:2509.52,yoyRevenue:14.77,yoyProfit:19.80,pe:13.31,pb:3.43}
     ]
   },
   MBB: {
-    currentPE: 6.55, currentPB: 1.36,
+    currentPE: 8.03, currentPB: 1.58,
     isBank:true,
     quarters: [
-      {quarter:"Q2/2024",revenue:null,profit:6026.75,yoyRevenue:null,yoyProfit:23.16},
-      {quarter:"Q2/2025",revenue:12372.12,profit:5877.6,yoyRevenue:17.48,yoyProfit:-2.47},
-      {quarter:"Q3/2025",revenue:15596.69,profit:5571.02,yoyRevenue:22.77,yoyProfit:-3.78},
-      {quarter:"Q1/2026",revenue:17430,profit:7515.51,yoyRevenue:13.8,yoyProfit:14.43}
+      {quarter:"Q2/2023",revenue:9481.37,profit:4893.50,yoyRevenue:5.71,yoyProfit:5.85,pe:5.25,pb:1.16},
+      {quarter:"Q3/2023",revenue:9811.79,profit:5773.27,yoyRevenue:8.55,yoyProfit:18.32,pe:4.98,pb:1.27},
+      {quarter:"Q4/2023",revenue:9163.49,profit:4986.37,yoyRevenue:-4.84,yoyProfit:45.20,pe:6.22,pb:1.41},
+      {quarter:"Q1/2024",revenue:9062.29,profit:4532.70,yoyRevenue:-11.39,yoyProfit:-9.77,pe:5.97,pb:1.25},
+      {quarter:"Q2/2024",revenue:10531.11,profit:6026.75,yoyRevenue:11.07,yoyProfit:23.16,pe:6.35,pb:1.37},
+      {quarter:"Q3/2024",revenue:10416.64,profit:5790.16,yoyRevenue:6.16,yoyProfit:0.29,pe:6.04,pb:1.23},
+      {quarter:"Q4/2024",revenue:11142.18,profit:6284.15,yoyRevenue:21.59,yoyProfit:26.03,pe:6.17,pb:1.25},
+      {quarter:"Q1/2025",revenue:11692.18,profit:6567.74,yoyRevenue:29.02,yoyProfit:44.90,pe:6.62,pb:1.38},
+      {quarter:"Q2/2025",revenue:12372.12,profit:5877.61,yoyRevenue:17.48,yoyProfit:-2.47,pe:8.88,pb:1.78},
+      {quarter:"Q3/2025",revenue:12990.52,profit:5571.02,yoyRevenue:24.71,yoyProfit:-3.78,pe:9.00,pb:1.72},
+      {quarter:"Q4/2025",revenue:14555.29,profit:8762.57,yoyRevenue:30.63,yoyProfit:39.44,pe:8.03,pb:1.58}
     ]
   },
   VHM: {
-    currentPE: 10.2, currentPB: 3.67,
+    currentPE: 14.80, currentPB: 2.61,
     quarters: [
-      {quarter:"Q2/2024",revenue:28200,profit:10600,yoyRevenue:null,yoyProfit:10},
-      {quarter:"Q3/2024",revenue:33323,profit:8980,yoyRevenue:null,yoyProfit:-16},
-      {quarter:"Q1/2025",revenue:15700,profit:2700,yoyRevenue:null,yoyProfit:193},
-      {quarter:"Q4/2025",revenue:103000,profit:26797,yoyRevenue:null,yoyProfit:85},
-      {quarter:"Q1/2026",revenue:65114,profit:25625,yoyRevenue:315,yoyProfit:866}
+      {quarter:"Q2/2023",revenue:32613.84,profit:9687.70,yoyRevenue:629.54,yoyProfit:1353.57,pe:4.31,pb:1.16},
+      {quarter:"Q3/2023",revenue:32724.10,profit:10694.76,yoyRevenue:83.79,yoyProfit:-26.21,pe:4.44,pb:1.03},
+      {quarter:"Q4/2023",revenue:8697.58,profit:825.69,yoyRevenue:-72.12,yoyProfit:-90.75,pe:5.32,pb:0.99},
+      {quarter:"Q1/2024",revenue:8211.20,profit:884.70,yoyRevenue:-71.97,yoyProfit:-92.58,pe:7.38,pb:0.89},
+      {quarter:"Q2/2024",revenue:28375.36,profit:10891.02,yoyRevenue:-13.00,yoyProfit:12.42,pe:7.99,pb:0.97},
+      {quarter:"Q3/2024",revenue:33323.14,profit:7866.08,yoyRevenue:1.83,yoyProfit:-26.45,pe:8.35,pb:0.81},
+      {quarter:"Q4/2024",revenue:32413.48,profit:12159.46,yoyRevenue:272.67,yoyProfit:1372.64,pe:7.96,pb:1.19},
+      {quarter:"Q1/2025",revenue:15697.92,profit:2688.95,yoyRevenue:91.18,yoyProfit:203.94,pe:11.78,pb:1.83},
+      {quarter:"Q2/2025",revenue:18974.96,profit:7508.04,yoyRevenue:-33.13,yoyProfit:-31.06,pe:14.89,pb:2.00},
+      {quarter:"Q3/2025",revenue:16419.97,profit:4183.93,yoyRevenue:-50.73,yoyProfit:-46.81,pe:17.45,pb:2.02},
+      {quarter:"Q4/2025",revenue:102178.07,profit:27514.33,yoyRevenue:215.23,yoyProfit:126.28,pe:14.80,pb:2.61}
     ]
   },
   VIC: {
-    currentPE: 44.2, currentPB: 10,
+    currentPE: 153.62, currentPB: 11.80,
     quarters: [
-      {quarter:"Q2/2024",revenue:43304,profit:684,yoyRevenue:-8.4,yoyProfit:71},
-      {quarter:"Q3/2024",revenue:62850,profit:2015,yoyRevenue:31,yoyProfit:200},
-      {quarter:"Q4/2024",revenue:65247,profit:1182,yoyRevenue:139,yoyProfit:130},
-      {quarter:"Q2/2025",revenue:null,profit:-581,yoyRevenue:9.42,yoyProfit:83.49},
-      {quarter:"Q3/2025",revenue:null,profit:3025,yoyRevenue:null,yoyProfit:50},
-      {quarter:"Q1/2026",revenue:104352,profit:5611,yoyRevenue:24,yoyProfit:150}
+      {quarter:"Q2/2023",revenue:47284.62,profit:1824.14,yoyRevenue:253.28,yoyProfit:-46.23,pe:31.12,pb:1.47},
+      {quarter:"Q3/2023",revenue:47955.86,profit:-669.04,yoyRevenue:66.56,yoyProfit:-170.66,pe:43.71,pb:1.33},
+      {quarter:"Q4/2023",revenue:27451.79,profit:-158.77,yoyRevenue:-33.32,yoyProfit:-110.18,pe:75.34,pb:1.42},
+      {quarter:"Q1/2024",revenue:21739.45,profit:7934.47,yoyRevenue:-44.22,yoyProfit:644.16,pe:17.58,pb:1.19},
+      {quarter:"Q2/2024",revenue:42332.28,profit:-3529.02,yoyRevenue:-10.47,yoyProfit:-293.46,pe:44.27,pb:1.22},
+      {quarter:"Q3/2024",revenue:62862.40,profit:5294.92,yoyRevenue:31.08,yoyProfit:891.42,pe:16.40,pb:1.15},
+      {quarter:"Q4/2024",revenue:62156.47,profit:2192.43,yoyRevenue:126.42,yoyProfit:1480.92,pe:22.16,pb:1.90},
+      {quarter:"Q1/2025",revenue:83821.34,profit:6978.76,yoyRevenue:285.57,yoyProfit:-12.04,pe:38.80,pb:2.91},
+      {quarter:"Q2/2025",revenue:46435.49,profit:-940.91,yoyRevenue:9.69,yoyProfit:73.34,pe:58.53,pb:5.47},
+      {quarter:"Q3/2025",revenue:39143.02,profit:640.18,yoyRevenue:-37.73,yoyProfit:-87.91,pe:122.46,pb:7.44},
+      {quarter:"Q4/2025",revenue:162238.60,profit:4671.90,yoyRevenue:161.02,yoyProfit:113.09,pe:153.62,pb:11.80}
     ]
   },
   ANV: {
-    currentPE: 15.1, currentPB: null,
+    currentPE: 6.43, currentPB: 1.82,
     quarters: [
-      {quarter:"Q2/2024",revenue:1193,profit:17.5,yoyRevenue:11,yoyProfit:null},
-      {quarter:"Q3/2024",revenue:1341,profit:null,yoyRevenue:22,yoyProfit:null},
-      {quarter:"Q1/2025",revenue:null,profit:132.02,yoyRevenue:null,yoyProfit:681.03},
-      {quarter:"Q2/2025",revenue:1726,profit:332.81,yoyRevenue:45,yoyProfit:14651.17},
-      {quarter:"Q3/2025",revenue:2000,profit:300,yoyRevenue:45,yoyProfit:710},
-      {quarter:"Q4/2025",revenue:2119,profit:251.57,yoyRevenue:56,yoyProfit:4610.83},
-      {quarter:"Q1/2026",revenue:1844.9,profit:195.3,yoyRevenue:65.9,yoyProfit:47.9}
+      {quarter:"Q2/2023",revenue:1090.88,profit:-51.04,yoyRevenue:-16.46,yoyProfit:-121.21,pe:16.23,pb:1.50},
+      {quarter:"Q3/2023",revenue:1100.74,profit:1.04,yoyRevenue:-11.80,yoyProfit:-99.13,pe:26.01,pb:1.32},
+      {quarter:"Q4/2023",revenue:1112.56,profit:-0.52,yoyRevenue:-4.19,yoyProfit:-100.49,pe:97.78,pb:1.36},
+      {quarter:"Q1/2024",revenue:1016.23,profit:16.90,yoyRevenue:-12.21,yoyProfit:-81.70,pe:-142.55,pb:1.67},
+      {quarter:"Q2/2024",revenue:1209.20,profit:-2.29,yoyRevenue:10.85,yoyProfit:95.52,pe:292.87,pb:1.56},
+      {quarter:"Q3/2024",revenue:1345.00,profit:27.88,yoyRevenue:22.19,yoyProfit:2583.01,pe:116.08,pb:1.70},
+      {quarter:"Q4/2024",revenue:1368.68,profit:5.34,yoyRevenue:23.02,yoyProfit:1131.17,pe:84.89,pb:1.45},
+      {quarter:"Q1/2025",revenue:1111.47,profit:132.02,yoyRevenue:9.37,yoyProfit:681.03,pe:38.07,pb:2.12},
+      {quarter:"Q2/2025",revenue:1744.79,profit:332.81,yoyRevenue:44.29,yoyProfit:14651.17,pe:16.36,pb:2.50},
+      {quarter:"Q3/2025",revenue:2007.87,profit:283.08,yoyRevenue:49.28,yoyProfit:915.48,pe:9.47,pb:2.01},
+      {quarter:"Q4/2025",revenue:2128.36,profit:251.57,yoyRevenue:55.50,yoyProfit:4610.83,pe:6.43,pb:1.82}
     ]
   }
 };
