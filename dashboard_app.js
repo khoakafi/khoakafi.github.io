@@ -353,7 +353,8 @@ function renderRelativeStrength(ticker, stockData){
 function renderCharts(ticker){
   document.getElementById("chartSymbolLabel").innerText = "HOSE:" + ticker;
   document.getElementById("chartContainer").innerHTML = '<div class="chart-loading">Đang tải dữ liệu giá (VNDirect → CafeF)…</div>';
-  document.getElementById("taContainer").innerHTML = "";
+  const techBoxInit = document.getElementById("techBody");
+  if(techBoxInit) techBoxInit.innerHTML = '<div class="empty-state">Đang tính toán...</div>';
   const rsBoxInit = document.getElementById("rsBody");
   if(rsBoxInit) rsBoxInit.innerHTML = '<div class="empty-state">Đang tính toán...</div>';
 
@@ -390,35 +391,111 @@ function renderCharts(ticker){
     const canvas = document.getElementById("candleCanvas");
     requestAnimationFrame(function(){ setupInteractiveChart(canvas, data, 130); });
     renderRelativeStrength(ticker, data);
+    renderTechnicalSignal(ticker, data);
   }).catch(function(err){
     renderChartFallback(ticker);
     const rsBox = document.getElementById("rsBody");
     if(rsBox) rsBox.innerHTML = '<div class="empty-state">Không có dữ liệu giá để tính sức mạnh giá.</div>';
+    const techBox = document.getElementById("techBody");
+    if(techBox) techBox.innerHTML = '<div class="empty-state">Không có dữ liệu giá để tính tín hiệu kỹ thuật.</div>';
   });
+}
 
-  const taDiv = document.createElement("div");
-  taDiv.className = "tradingview-widget-container";
-  taDiv.style.height = "100%";
-  const taInner = document.createElement("div");
-  taInner.className = "tradingview-widget-container__widget";
-  taDiv.appendChild(taInner);
-  document.getElementById("taContainer").appendChild(taDiv);
+// ---------------------------------------------------------------
+// TÍN HIỆU KỸ THUẬT TỰ TÍNH (thay cho widget TradingView cũ)
+// Xu hướng: vị trí giá so với MA20/MA50. Động lượng: RSI14 (xấp xỉ, dựa trên
+// trung bình tăng/giảm giản đơn của 14 phiên gần nhất, không phải RSI Wilder
+// đầy đủ). Hỗ trợ/kháng cự: đáy/đỉnh trong ~65 phiên gần nhất (~3 tháng).
+// Đây là tín hiệu tham khảo tự động, không phải khuyến nghị đầu tư.
+// ---------------------------------------------------------------
+function computeSMA(closes, period){
+  if(!closes || closes.length < period) return null;
+  const slice = closes.slice(closes.length - period);
+  return slice.reduce(function(a, b){ return a + b; }, 0) / period;
+}
 
-  const script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js";
-  script.async = true;
-  script.innerHTML = JSON.stringify({
-    "interval": "1D",
-    "width": "100%",
-    "isTransparent": false,
-    "height": "100%",
-    "symbol": "HOSE:" + ticker,
-    "showIntervalTabs": true,
-    "locale": "vi_VN",
-    "colorTheme": "dark"
+function computeRSI(closes, period){
+  if(!closes || closes.length < period + 1) return null;
+  let gains = 0, losses = 0;
+  for(let i = closes.length - period; i < closes.length; i++){
+    const diff = closes[i] - closes[i - 1];
+    if(diff >= 0) gains += diff; else losses += -diff;
+  }
+  const avgGain = gains / period, avgLoss = losses / period;
+  if(avgLoss === 0) return 100;
+  const rs = avgGain / avgLoss;
+  return 100 - (100 / (1 + rs));
+}
+
+function computeSupportResistance(data, lookback){
+  const n = Math.min(lookback, data.length);
+  const slice = data.slice(data.length - n);
+  let lo = Infinity, hi = -Infinity;
+  slice.forEach(function(d){
+    const lowVal = Number(d.low), highVal = Number(d.high);
+    if(!isNaN(lowVal) && lowVal < lo) lo = lowVal;
+    if(!isNaN(highVal) && highVal > hi) hi = highVal;
   });
-  taDiv.appendChild(script);
+  return { support: lo === Infinity ? null : lo, resistance: hi === -Infinity ? null : hi, sessions: n };
+}
+
+function fmtTechPrice(v){
+  if(v === null || v === undefined || isNaN(v)) return "--";
+  return Number(v).toLocaleString("vi-VN", { maximumFractionDigits: 2 });
+}
+
+function renderTechnicalSignal(ticker, data){
+  const box = document.getElementById("techBody");
+  if(!box) return;
+  const closes = data.map(function(d){ return Number(d.close); }).filter(function(v){ return !isNaN(v); });
+  if(closes.length < 20){
+    box.innerHTML = '<div class="empty-state">Chưa đủ dữ liệu giá để tính tín hiệu kỹ thuật.</div>';
+    return;
+  }
+  const price = closes[closes.length - 1];
+  const ma20 = computeSMA(closes, 20);
+  const ma50 = computeSMA(closes, 50);
+  const rsi = computeRSI(closes, 14);
+
+  let trendLabel, trendUp;
+  if(ma50 !== null){
+    if(price > ma20 && price > ma50){ trendLabel = "Tăng"; trendUp = true; }
+    else if(price < ma20 && price < ma50){ trendLabel = "Giảm"; trendUp = false; }
+    else { trendLabel = "Đi ngang / chưa rõ"; trendUp = null; }
+  } else if(ma20 !== null){
+    trendLabel = price > ma20 ? "Tăng" : "Giảm";
+    trendUp = price > ma20;
+  } else {
+    trendLabel = "--"; trendUp = null;
+  }
+
+  let momLabel, momUp;
+  if(rsi === null){ momLabel = "--"; momUp = null; }
+  else if(rsi >= 55){ momLabel = "Mạnh (RSI " + rsi.toFixed(0) + ")"; momUp = true; }
+  else if(rsi <= 45){ momLabel = "Yếu (RSI " + rsi.toFixed(0) + ")"; momUp = false; }
+  else { momLabel = "Trung tính (RSI " + rsi.toFixed(0) + ")"; momUp = null; }
+
+  let verdict, verdictClass;
+  if(trendUp === true && momUp !== false){ verdict = "MUA / TÍCH LŨY"; verdictClass = "tech-buy"; }
+  else if(trendUp === false && momUp !== true){ verdict = "BÁN / TRÁNH MUA MỚI"; verdictClass = "tech-sell"; }
+  else { verdict = "ĐỨNG NGOÀI / QUAN SÁT"; verdictClass = "tech-neutral"; }
+
+  const sr = computeSupportResistance(data, 65);
+  const supportPct = (sr.support !== null) ? ((price - sr.support) / price * 100) : null;
+  const resistancePct = (sr.resistance !== null) ? ((sr.resistance - price) / price * 100) : null;
+
+  const trendDetail = (ma20 !== null)
+    ? ('Giá ' + fmtTechPrice(price) + ' so với MA20 ' + fmtTechPrice(ma20) + (ma50 !== null ? (' / MA50 ' + fmtTechPrice(ma50)) : ''))
+    : '';
+
+  box.innerHTML =
+    '<div class="tech-verdict-badge ' + verdictClass + '">' + verdict + '</div>' +
+    '<div class="tech-row"><span>Xu hướng</span><span>' + trendLabel + '</span></div>' +
+    (trendDetail ? ('<div class="tech-row"><span></span><span>' + trendDetail + '</span></div>') : '') +
+    '<div class="tech-row"><span>Động lượng</span><span>' + momLabel + '</span></div>' +
+    '<div class="tech-row"><span>Hỗ trợ gần nhất</span><span>' + fmtTechPrice(sr.support) + (supportPct !== null ? (' (-' + supportPct.toFixed(1) + '%)') : '') + '</span></div>' +
+    '<div class="tech-row"><span>Kháng cự gần nhất</span><span>' + fmtTechPrice(sr.resistance) + (resistancePct !== null ? (' (+' + resistancePct.toFixed(1) + '%)') : '') + '</span></div>' +
+    '<div class="tech-note">Xu hướng dựa trên vị trí giá so với MA20/MA50; động lượng dựa trên RSI14 (xấp xỉ); hỗ trợ/kháng cự là đáy/đỉnh trong ' + sr.sessions + ' phiên gần nhất (~3 tháng). Đây là tín hiệu tham khảo tự động, không phải khuyến nghị đầu tư.</div>';
 }
 
 // ---------------------------------------------------------------

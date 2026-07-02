@@ -30,7 +30,17 @@
   .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:16px;}
   .card h2{font-size:15px;margin:0 0 12px;display:flex;align-items:center;gap:8px;}
   .card h2 .tag{font-size:11px;color:var(--muted);font-weight:400;}
-  #chartContainer, #taContainer{width:100%;}
+  #chartContainer{width:100%;}
+  .tech-box{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;padding:12px;}
+  .tech-verdict-badge{display:block;text-align:center;font-weight:700;font-size:15px;padding:9px 10px;border-radius:8px;margin-bottom:10px;letter-spacing:.3px;}
+  .tech-buy{background:rgba(31,191,117,.15);color:var(--green);border:1px solid rgba(31,191,117,.4);}
+  .tech-sell{background:rgba(240,69,90,.15);color:var(--red);border:1px solid rgba(240,69,90,.4);}
+  .tech-neutral{background:rgba(240,180,41,.15);color:var(--yellow);border:1px solid rgba(240,180,41,.4);}
+  .tech-row{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;padding:5px 0;border-bottom:1px solid var(--border);}
+  .tech-row:last-of-type{border-bottom:none;}
+  .tech-row span:first-child{color:var(--muted);flex-shrink:0;}
+  .tech-row span:last-child{text-align:right;}
+  .tech-note{margin-top:8px;font-size:11px;color:var(--muted);font-style:italic;line-height:1.5;}
   .side-card{display:flex;flex-direction:column;}
   .side-subhead{font-size:13px;margin:14px 0 8px;color:var(--muted);font-weight:600;}
   .rs-box{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;padding:12px;font-size:13px;line-height:1.7;}
@@ -151,8 +161,8 @@
     </div>
     <div>
       <div class="card side-card">
-        <h2>Chỉ báo kỹ thuật <span class="tag">TradingView</span></h2>
-        <div id="taContainer" style="height:220px;"></div>
+        <h2>Tín hiệu kỹ thuật <span class="tag">Tự tính từ giá — MA20/50, RSI14</span></h2>
+        <div id="techBody" class="tech-box"><div class="empty-state">Đang tính toán...</div></div>
 
         <h2 class="side-subhead">Sức mạnh giá (RS) so với VN-Index</h2>
         <div id="rsBody" class="rs-box">
