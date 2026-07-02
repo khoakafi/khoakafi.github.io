@@ -1362,6 +1362,44 @@ const FUNDAMENTALS = {
       {quarter:"Q4/2025",revenue:317.03,profit:52.43,yoyRevenue:-79.69,yoyProfit:-82.90,pe:43.06,pb:1.43,roe:3.04}
     ]
   },
+  TMS: {
+    currentPE: 17.18, currentPB: null, currentROE: 8.78,
+    quarters: [
+      {quarter:"Q2/2024",revenue:829.90,profit:38.09,yoyRevenue:57.09,yoyProfit:85.34,pe:31.16,pb:1.92,roe:6.14},
+      {quarter:"Q3/2024",revenue:911.87,profit:73.91,yoyRevenue:36.75,yoyProfit:53.73,pe:27.08,pb:1.82,roe:6.77},
+      {quarter:"Q4/2024",revenue:917.50,profit:52.92,yoyRevenue:15.74,yoyProfit:-54.31,pe:35.07,pb:1.77,roe:4.83},
+      {quarter:"Q1/2025",revenue:711.45,profit:91.40,yoyRevenue:2.10,yoyProfit:142.70,pe:27.75,pb:1.73,roe:6.42},
+      {quarter:"Q2/2025",revenue:875.51,profit:76.74,yoyRevenue:5.50,yoyProfit:101.47,pe:23.59,pb:1.68,roe:7.27},
+      {quarter:"Q3/2025",revenue:934.58,profit:92.45,yoyRevenue:2.49,yoyProfit:25.09,pe:22.86,pb:1.69,roe:7.59},
+      {quarter:"Q4/2025",revenue:983.09,profit:101.48,yoyRevenue:7.15,yoyProfit:91.77,pe:19.20,pb:1.67,roe:8.84}
+    ]
+  },
+  TPB: {
+    currentPE: 6.30, currentPB: null, currentROE: 17.91,
+    isBank:true,
+    quarters: [
+      {quarter:"Q2/2024",revenue:3236.77,profit:1522.56,yoyRevenue:18.61,yoyProfit:17.74},
+      {quarter:"Q3/2024",revenue:3173.83,profit:1383.03,yoyRevenue:7.13,yoyProfit:9.52},
+      {quarter:"Q4/2024",revenue:3068.67,profit:1703.25,yoyRevenue:-23.21,yoyProfit:244.84},
+      {quarter:"Q1/2025",revenue:3383.62,profit:1686.69,yoyRevenue:-1.28,yoyProfit:15.31},
+      {quarter:"Q2/2025",revenue:3151.33,profit:1629.60,yoyRevenue:-2.64,yoyProfit:7.03},
+      {quarter:"Q3/2025",revenue:3237.62,profit:1520.64,yoyRevenue:2.01,yoyProfit:9.95},
+      {quarter:"Q4/2025",revenue:3598.60,profit:2565.06,yoyRevenue:17.27,yoyProfit:50.60}
+    ]
+  },
+  VCG: {
+    currentPE: 3.26, currentPB: null, currentROE: 38.92,
+    warning:"VCG có lợi nhuận Q2/2025 tăng đột biến (yoyProfit ~3989%), có thể do khoản lợi nhuận bất thường/một lần — P/E và ROE hiện tại bị ảnh hưởng mạnh, cần thận trọng khi đánh giá.",
+    quarters: [
+      {quarter:"Q2/2024",revenue:2807.93,profit:97.56,yoyRevenue:-38.54,yoyProfit:-12.78,pe:13.11,pb:1.38,roe:10.86},
+      {quarter:"Q3/2024",revenue:2675.29,profit:80.26,yoyRevenue:12.33,yoyProfit:-22.75,pe:14.98,pb:1.51,roe:10.27},
+      {quarter:"Q4/2024",revenue:4731.18,profit:285.59,yoyRevenue:24.85,yoyProfit:95.52,pe:13.76,pb:1.58,roe:12.02},
+      {quarter:"Q1/2025",revenue:2596.05,profit:127.96,yoyRevenue:-2.25,yoyProfit:-72.37,pe:27.77,pb:2.00,roe:7.36},
+      {quarter:"Q2/2025",revenue:4387.36,profit:278.93,yoyRevenue:56.25,yoyProfit:185.91,pe:22.04,pb:2.13,roe:9.53},
+      {quarter:"Q3/2025",revenue:4429.33,profit:3282.11,yoyRevenue:65.56,yoyProfit:3989.29,pe:3.11,pb:1.10,roe:44.30},
+      {quarter:"Q4/2025",revenue:4651.73,profit:243.83,yoyRevenue:-1.68,yoyProfit:-14.62,pe:3.91,pb:1.27,roe:37.60}
+    ]
+  },
   VCB: {
     currentPE: 14.46, currentPB: null, currentROE: 16.07,
     isBank:true,
