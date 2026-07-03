@@ -415,6 +415,469 @@ const TOP_ANALYSIS = {
 };
 
 // ---------------------------------------------------------------
+// 2b. ĐỊNH GIÁ CTCK CHO CÁC MÃ VN100 CÒN LẠI (ngoài 15 mã TOP_ANALYSIS)
+// Nguồn: Simplize.vn (tổng hợp báo cáo gốc từ nhiều CTCK), lấy 03/07/2026.
+// Rule: tối đa 6 báo cáo/mã, tối đa 2 báo cáo/CTCK, trong 1 năm gần nhất
+// (03/07/2025 - 03/07/2026), sort mới nhất trước. Upside tự tính =
+// (target/giá hiện tại tại thời điểm lấy dữ liệu - 1) * 100.
+// ---------------------------------------------------------------
+const VALUATIONS_EXTRA = {
+  AAA:[
+    {ctck:"FPTS", rating:"Mua", target:"8.600", upside:"+15,7%", date:"20/04/2026", url:"https://simplize.vn/co-phieu/AAA/bao-cao"}
+  ],
+  ACB:[
+    {ctck:"Agriseco", rating:"Mua", target:"25.900", upside:"+16,7%", date:"04/06/2026", url:"https://simplize.vn/co-phieu/ACB/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"27.500", upside:"+23,9%", date:"04/06/2026", url:"https://simplize.vn/co-phieu/ACB/bao-cao"},
+    {ctck:"VPBS", rating:"Mua", target:"26.400", upside:"+18,9%", date:"02/06/2026", url:"https://simplize.vn/co-phieu/ACB/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"29.200", upside:"+31,5%", date:"02/06/2026", url:"https://simplize.vn/co-phieu/ACB/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"23.300", upside:"+5,0%", date:"21/05/2026", url:"https://simplize.vn/co-phieu/ACB/bao-cao"},
+    {ctck:"SSI", rating:"Mua", target:"23.700", upside:"+6,8%", date:"12/05/2026", url:"https://simplize.vn/co-phieu/ACB/bao-cao"}
+  ],
+  BCM:[
+    {ctck:"ACBS", rating:"Mua", target:"73.100", upside:"+43,1%", date:"26/06/2026", url:"https://simplize.vn/co-phieu/BCM/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"73.100", upside:"+43,1%", date:"27/05/2026", url:"https://simplize.vn/co-phieu/BCM/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"89.600", upside:"+75,3%", date:"13/05/2026", url:"https://simplize.vn/co-phieu/BCM/bao-cao"},
+    {ctck:"SHS", rating:"Tăng tỷ trọng", target:"63.700", upside:"+24,7%", date:"10/05/2026", url:"https://simplize.vn/co-phieu/BCM/bao-cao"},
+    {ctck:"BVSC", rating:"Mua", target:"74.500", upside:"+45,8%", date:"12/03/2026", url:"https://simplize.vn/co-phieu/BCM/bao-cao"},
+    {ctck:"VCBS", rating:"Trung lập", target:"72.500", upside:"+41,9%", date:"28/11/2025", url:"https://simplize.vn/co-phieu/BCM/bao-cao"}
+  ],
+  BID:[
+    {ctck:"DSC", rating:"Trung lập", target:"46.900", upside:"+11,0%", date:"05/06/2026", url:"https://simplize.vn/co-phieu/BID/bao-cao"},
+    {ctck:"VPBS", rating:"Trung lập", target:"46.000", upside:"+8,9%", date:"05/05/2026", url:"https://simplize.vn/co-phieu/BID/bao-cao"},
+    {ctck:"VDS", rating:"Mua", target:"50.000", upside:"+18,3%", date:"21/04/2026", url:"https://simplize.vn/co-phieu/BID/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"47.800", upside:"+13,1%", date:"11/03/2026", url:"https://simplize.vn/co-phieu/BID/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"53.400", upside:"+26,4%", date:"11/03/2026", url:"https://simplize.vn/co-phieu/BID/bao-cao"},
+    {ctck:"BVSC", rating:"Trung lập", target:"51.100", upside:"+21,0%", date:"05/02/2026", url:"https://simplize.vn/co-phieu/BID/bao-cao"}
+  ],
+  BMP:[
+    {ctck:"ACBS", rating:"Mua", target:"176.400", upside:"+17,6%", date:"22/04/2026", url:"https://simplize.vn/co-phieu/BMP/bao-cao"},
+    {ctck:"SHINHAN", rating:"Mua", target:"161.600", upside:"+7,7%", date:"08/04/2026", url:"https://simplize.vn/co-phieu/BMP/bao-cao"},
+    {ctck:"ABS", rating:"Mua", target:"183.200", upside:"+22,1%", date:"05/03/2026", url:"https://simplize.vn/co-phieu/BMP/bao-cao"},
+    {ctck:"BVSC", rating:"Outperform", target:"184.000", upside:"+22,7%", date:"26/01/2026", url:"https://simplize.vn/co-phieu/BMP/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"181.600", upside:"+21,1%", date:"22/01/2026", url:"https://simplize.vn/co-phieu/BMP/bao-cao"},
+    {ctck:"BSC", rating:"Theo dõi", target:"157.000", upside:"+4,7%", date:"21/01/2026", url:"https://simplize.vn/co-phieu/BMP/bao-cao"}
+  ],
+  BVH:[
+    {ctck:"ELDIAN", rating:"Tích cực", target:"61.800", upside:"-0,8%", date:"15/12/2025", url:"https://simplize.vn/co-phieu/BVH/bao-cao"}
+  ],
+  BWE:[
+    {ctck:"KBSV", rating:"Mua", target:"59.000", upside:"+30,2%", date:"22/03/2026", url:"https://simplize.vn/co-phieu/BWE/bao-cao"},
+    {ctck:"MAS", rating:"Tăng tỷ trọng", target:"52.500", upside:"+15,9%", date:"27/02/2026", url:"https://simplize.vn/co-phieu/BWE/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"54.900", upside:"+21,2%", date:"17/12/2025", url:"https://simplize.vn/co-phieu/BWE/bao-cao"}
+  ],
+  CII:[
+    {ctck:"BVSC", rating:"Outperform", target:"24.200", upside:"+40,7%", date:"05/02/2026", url:"https://simplize.vn/co-phieu/CII/bao-cao"},
+    {ctck:"VCBS", rating:"Mua", target:"16.000", upside:"-7,0%", date:"01/08/2025", url:"https://simplize.vn/co-phieu/CII/bao-cao"}
+  ],
+  CMG:[
+    {ctck:"DSC", rating:"Trung lập", target:"42.100", upside:"+54,5%", date:"20/08/2025", url:"https://simplize.vn/co-phieu/CMG/bao-cao"}
+  ],
+  CTD:[
+    {ctck:"ACBS", rating:"Mua", target:"99.800", upside:"+38,6%", date:"17/06/2026", url:"https://simplize.vn/co-phieu/CTD/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"96.500", upside:"+34,0%", date:"25/05/2026", url:"https://simplize.vn/co-phieu/CTD/bao-cao"},
+    {ctck:"ACBS", rating:"Khả quan", target:"99.800", upside:"+38,6%", date:"29/04/2026", url:"https://simplize.vn/co-phieu/CTD/bao-cao"},
+    {ctck:"SSI", rating:"Trung lập", target:"86.900", upside:"+20,7%", date:"27/03/2026", url:"https://simplize.vn/co-phieu/CTD/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"96.100", upside:"+33,5%", date:"18/03/2026", url:"https://simplize.vn/co-phieu/CTD/bao-cao"},
+    {ctck:"ABS", rating:"Mua", target:"92.100", upside:"+27,9%", date:"17/03/2026", url:"https://simplize.vn/co-phieu/CTD/bao-cao"}
+  ],
+  CTG:[
+    {ctck:"ACBS", rating:"Mua", target:"50.000", upside:"+46,4%", date:"09/06/2026", url:"https://simplize.vn/co-phieu/CTG/bao-cao"},
+    {ctck:"DSC", rating:"Mua", target:"42.900", upside:"+25,6%", date:"04/06/2026", url:"https://simplize.vn/co-phieu/CTG/bao-cao"},
+    {ctck:"NHSV", rating:"Trung lập", target:"40.200", upside:"+17,7%", date:"14/05/2026", url:"https://simplize.vn/co-phieu/CTG/bao-cao"},
+    {ctck:"VPBS", rating:"Mua", target:"40.600", upside:"+18,9%", date:"06/05/2026", url:"https://simplize.vn/co-phieu/CTG/bao-cao"},
+    {ctck:"VDS", rating:"Mua", target:"44.800", upside:"+31,2%", date:"21/04/2026", url:"https://simplize.vn/co-phieu/CTG/bao-cao"},
+    {ctck:"SHINHAN", rating:"Mua", target:"43.700", upside:"+28,0%", date:"27/03/2026", url:"https://simplize.vn/co-phieu/CTG/bao-cao"}
+  ],
+  DBC:[
+    {ctck:"VPBS", rating:"Khác", target:"22.800", upside:"+22,9%", date:"15/05/2026", url:"https://simplize.vn/co-phieu/DBC/bao-cao"},
+    {ctck:"VPBS", rating:"Trung lập", target:"22.800", upside:"+22,9%", date:"13/05/2026", url:"https://simplize.vn/co-phieu/DBC/bao-cao"},
+    {ctck:"MBS", rating:"Trung lập", target:"22.400", upside:"+20,8%", date:"29/04/2026", url:"https://simplize.vn/co-phieu/DBC/bao-cao"},
+    {ctck:"FPTS", rating:"Mua", target:"26.000", upside:"+40,2%", date:"06/04/2026", url:"https://simplize.vn/co-phieu/DBC/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"30.000", upside:"+61,7%", date:"11/02/2026", url:"https://simplize.vn/co-phieu/DBC/bao-cao"},
+    {ctck:"MAS", rating:"Khác", target:"26.900", upside:"+45,0%", date:"11/02/2026", url:"https://simplize.vn/co-phieu/DBC/bao-cao"}
+  ],
+  DCM:[
+    {ctck:"VNDS", rating:"Khác", target:"49.800", upside:"+23,9%", date:"04/05/2026", url:"https://simplize.vn/co-phieu/DCM/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"52.300", upside:"+30,1%", date:"28/04/2026", url:"https://simplize.vn/co-phieu/DCM/bao-cao"},
+    {ctck:"SHS", rating:"Khả quan", target:"49.500", upside:"+23,1%", date:"22/04/2026", url:"https://simplize.vn/co-phieu/DCM/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"53.300", upside:"+32,6%", date:"22/04/2026", url:"https://simplize.vn/co-phieu/DCM/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"54.900", upside:"+36,6%", date:"14/04/2026", url:"https://simplize.vn/co-phieu/DCM/bao-cao"},
+    {ctck:"SSI", rating:"Mua", target:"53.000", upside:"+31,8%", date:"14/04/2026", url:"https://simplize.vn/co-phieu/DCM/bao-cao"}
+  ],
+  DGC:[
+    {ctck:"YUANTA", rating:"Mua", target:"128.100", upside:"+168,6%", date:"13/05/2026", url:"https://simplize.vn/co-phieu/DGC/bao-cao"},
+    {ctck:"YUANTA", rating:"Mua", target:"128.100", upside:"+168,6%", date:"26/03/2026", url:"https://simplize.vn/co-phieu/DGC/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"96.700", upside:"+102,7%", date:"16/03/2026", url:"https://simplize.vn/co-phieu/DGC/bao-cao"},
+    {ctck:"SHS", rating:"Khả quan", target:"103.000", upside:"+115,9%", date:"10/03/2026", url:"https://simplize.vn/co-phieu/DGC/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"118.900", upside:"+149,3%", date:"09/12/2025", url:"https://simplize.vn/co-phieu/DGC/bao-cao"},
+    {ctck:"KAFI", rating:"Mua", target:"112.000", upside:"+134,8%", date:"08/12/2025", url:"https://simplize.vn/co-phieu/DGC/bao-cao"}
+  ],
+  DGW:[
+    {ctck:"VDS", rating:"Mua", target:"46.300", upside:"+15,0%", date:"17/06/2026", url:"https://simplize.vn/co-phieu/DGW/bao-cao"},
+    {ctck:"MAS", rating:"Tăng tỷ trọng", target:"46.600", upside:"+15,8%", date:"09/06/2026", url:"https://simplize.vn/co-phieu/DGW/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"57.300", upside:"+42,4%", date:"26/05/2026", url:"https://simplize.vn/co-phieu/DGW/bao-cao"},
+    {ctck:"DSC", rating:"Mua", target:"48.000", upside:"+19,3%", date:"25/05/2026", url:"https://simplize.vn/co-phieu/DGW/bao-cao"},
+    {ctck:"VNDS", rating:"Khác", target:"50.500", upside:"+25,5%", date:"04/05/2026", url:"https://simplize.vn/co-phieu/DGW/bao-cao"},
+    {ctck:"FPTS", rating:"Mua", target:"53.400", upside:"+32,7%", date:"24/03/2026", url:"https://simplize.vn/co-phieu/DGW/bao-cao"}
+  ],
+  DHC:[
+    {ctck:"CSI", rating:"Mua", target:"44.100", upside:"+19,2%", date:"25/03/2026", url:"https://simplize.vn/co-phieu/DHC/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"51.400", upside:"+38,9%", date:"27/02/2026", url:"https://simplize.vn/co-phieu/DHC/bao-cao"},
+    {ctck:"FPTS", rating:"Theo dõi", target:"34.900", upside:"-5,7%", date:"19/01/2026", url:"https://simplize.vn/co-phieu/DHC/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"37.600", upside:"+1,6%", date:"02/12/2025", url:"https://simplize.vn/co-phieu/DHC/bao-cao"},
+    {ctck:"SSI", rating:"Khả quan", target:"38.300", upside:"+3,5%", date:"24/11/2025", url:"https://simplize.vn/co-phieu/DHC/bao-cao"},
+    {ctck:"ELDIAN", rating:"Tích cực", target:"38.900", upside:"+5,1%", date:"17/11/2025", url:"https://simplize.vn/co-phieu/DHC/bao-cao"}
+  ],
+  DPM:[
+    {ctck:"ACBS", rating:"Mua", target:"33.900", upside:"+31,1%", date:"24/04/2026", url:"https://simplize.vn/co-phieu/DPM/bao-cao"},
+    {ctck:"ABS", rating:"Trung lập", target:"30.700", upside:"+18,8%", date:"27/03/2026", url:"https://simplize.vn/co-phieu/DPM/bao-cao"},
+    {ctck:"ELDIAN", rating:"Khả quan", target:"29.000", upside:"+12,2%", date:"25/02/2026", url:"https://simplize.vn/co-phieu/DPM/bao-cao"},
+    {ctck:"BSC", rating:"Nắm giữ", target:"28.000", upside:"+8,3%", date:"25/02/2026", url:"https://simplize.vn/co-phieu/DPM/bao-cao"},
+    {ctck:"ACBS", rating:"Khả quan", target:"28.500", upside:"+10,3%", date:"11/02/2026", url:"https://simplize.vn/co-phieu/DPM/bao-cao"},
+    {ctck:"ELDIAN", rating:"Mua", target:"28.900", upside:"+11,8%", date:"24/01/2026", url:"https://simplize.vn/co-phieu/DPM/bao-cao"}
+  ],
+  DXG:[
+    {ctck:"VNDS", rating:"Mua", target:"17.900", upside:"+39,3%", date:"20/05/2026", url:"https://simplize.vn/co-phieu/DXG/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"18.200", upside:"+41,6%", date:"19/05/2026", url:"https://simplize.vn/co-phieu/DXG/bao-cao"},
+    {ctck:"NHSV", rating:"Mua", target:"18.200", upside:"+41,6%", date:"15/05/2026", url:"https://simplize.vn/co-phieu/DXG/bao-cao"},
+    {ctck:"YUANTA", rating:"Mua", target:"22.800", upside:"+77,4%", date:"26/03/2026", url:"https://simplize.vn/co-phieu/DXG/bao-cao"},
+    {ctck:"DSC", rating:"Mua", target:"19.600", upside:"+52,5%", date:"03/12/2025", url:"https://simplize.vn/co-phieu/DXG/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"20.500", upside:"+59,5%", date:"05/09/2025", url:"https://simplize.vn/co-phieu/DXG/bao-cao"}
+  ],
+  DXS:[
+    {ctck:"NHSV", rating:"Mua", target:"12.000", upside:"+68,3%", date:"15/05/2026", url:"https://simplize.vn/co-phieu/DXS/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"8.300", upside:"+16,4%", date:"09/04/2026", url:"https://simplize.vn/co-phieu/DXS/bao-cao"},
+    {ctck:"SHINHAN", rating:"Mua", target:"12.500", upside:"+75,3%", date:"18/11/2025", url:"https://simplize.vn/co-phieu/DXS/bao-cao"}
+  ],
+  FRT:[
+    {ctck:"VDS", rating:"Mua", target:"161.900", upside:"+34,5%", date:"09/06/2026", url:"https://simplize.vn/co-phieu/FRT/bao-cao"},
+    {ctck:"DSC", rating:"Mua", target:"171.400", upside:"+42,4%", date:"18/05/2026", url:"https://simplize.vn/co-phieu/FRT/bao-cao"},
+    {ctck:"VPBS", rating:"Khác", target:"172.300", upside:"+43,1%", date:"15/05/2026", url:"https://simplize.vn/co-phieu/FRT/bao-cao"},
+    {ctck:"NHSV", rating:"Mua", target:"161.900", upside:"+34,5%", date:"14/05/2026", url:"https://simplize.vn/co-phieu/FRT/bao-cao"},
+    {ctck:"ACBS", rating:"Khả quan", target:"166.800", upside:"+38,5%", date:"05/05/2026", url:"https://simplize.vn/co-phieu/FRT/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"163.800", upside:"+36,0%", date:"04/05/2026", url:"https://simplize.vn/co-phieu/FRT/bao-cao"}
+  ],
+  GAS:[
+    {ctck:"KBSV", rating:"Trung lập", target:"83.200", upside:"+10,5%", date:"16/06/2026", url:"https://simplize.vn/co-phieu/GAS/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"102.800", upside:"+36,5%", date:"11/06/2026", url:"https://simplize.vn/co-phieu/GAS/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"96.800", upside:"+28,5%", date:"29/05/2026", url:"https://simplize.vn/co-phieu/GAS/bao-cao"},
+    {ctck:"SSI", rating:"Trung lập", target:"86.000", upside:"+14,2%", date:"27/05/2026", url:"https://simplize.vn/co-phieu/GAS/bao-cao"},
+    {ctck:"DSC", rating:"Trung lập", target:"87.300", upside:"+15,9%", date:"18/05/2026", url:"https://simplize.vn/co-phieu/GAS/bao-cao"},
+    {ctck:"VPBS", rating:"Trung lập", target:"82.100", upside:"+9,0%", date:"05/05/2026", url:"https://simplize.vn/co-phieu/GAS/bao-cao"}
+  ],
+  GEG:[
+    {ctck:"MAS", rating:"Mua", target:"17.600", upside:"+28,5%", date:"22/05/2026", url:"https://simplize.vn/co-phieu/GEG/bao-cao"},
+    {ctck:"VPBS", rating:"Khác", target:"16.400", upside:"+19,7%", date:"15/05/2026", url:"https://simplize.vn/co-phieu/GEG/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"17.500", upside:"+27,7%", date:"08/05/2026", url:"https://simplize.vn/co-phieu/GEG/bao-cao"},
+    {ctck:"VDS", rating:"Mua", target:"19.400", upside:"+41,6%", date:"22/04/2026", url:"https://simplize.vn/co-phieu/GEG/bao-cao"},
+    {ctck:"MAS", rating:"Tăng tỷ trọng", target:"16.800", upside:"+22,6%", date:"27/02/2026", url:"https://simplize.vn/co-phieu/GEG/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"17.500", upside:"+27,7%", date:"02/02/2026", url:"https://simplize.vn/co-phieu/GEG/bao-cao"}
+  ],
+  GEX:[
+    {ctck:"BSC", rating:"Mua", target:"33.600", upside:"+10,0%", date:"10/04/2026", url:"https://simplize.vn/co-phieu/GEX/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"30.100", upside:"-1,5%", date:"13/02/2026", url:"https://simplize.vn/co-phieu/GEX/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"37.200", upside:"+21,8%", date:"09/01/2026", url:"https://simplize.vn/co-phieu/GEX/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"36.600", upside:"+19,8%", date:"17/12/2025", url:"https://simplize.vn/co-phieu/GEX/bao-cao"},
+    {ctck:"Vietcap", rating:"Trung lập", target:"35.500", upside:"+16,2%", date:"22/08/2025", url:"https://simplize.vn/co-phieu/GEX/bao-cao"}
+  ],
+  GMD:[
+    {ctck:"FPTS", rating:"Theo dõi", target:"72.600", upside:"-1,2%", date:"06/04/2026", url:"https://simplize.vn/co-phieu/GMD/bao-cao"},
+    {ctck:"YUANTA", rating:"Mua", target:"89.000", upside:"+21,1%", date:"27/03/2026", url:"https://simplize.vn/co-phieu/GMD/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"90.000", upside:"+22,4%", date:"12/03/2026", url:"https://simplize.vn/co-phieu/GMD/bao-cao"},
+    {ctck:"MAS", rating:"Nắm giữ", target:"74.600", upside:"+1,5%", date:"12/03/2026", url:"https://simplize.vn/co-phieu/GMD/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"93.900", upside:"+27,8%", date:"04/03/2026", url:"https://simplize.vn/co-phieu/GMD/bao-cao"},
+    {ctck:"DSC", rating:"Trung lập", target:"83.200", upside:"+13,2%", date:"27/02/2026", url:"https://simplize.vn/co-phieu/GMD/bao-cao"}
+  ],
+  HCM:[
+    {ctck:"DSC", rating:"Trung lập", target:"29.100", upside:"+2,1%", date:"20/05/2026", url:"https://simplize.vn/co-phieu/HCM/bao-cao"},
+    {ctck:"DSC", rating:"Trung lập", target:"29.100", upside:"+2,1%", date:"15/05/2026", url:"https://simplize.vn/co-phieu/HCM/bao-cao"}
+  ],
+  HDC:[
+    {ctck:"VCBS", rating:"Mua", target:"20.700", upside:"+38,5%", date:"20/05/2026", url:"https://simplize.vn/co-phieu/HDC/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"23.300", upside:"+55,9%", date:"05/02/2026", url:"https://simplize.vn/co-phieu/HDC/bao-cao"},
+    {ctck:"Vietcap", rating:"Khả quan", target:"21.300", upside:"+42,5%", date:"19/01/2026", url:"https://simplize.vn/co-phieu/HDC/bao-cao"}
+  ],
+  HDG:[
+    {ctck:"VNDS", rating:"Mua", target:"27.500", upside:"+37,5%", date:"28/05/2026", url:"https://simplize.vn/co-phieu/HDG/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"29.500", upside:"+47,5%", date:"26/05/2026", url:"https://simplize.vn/co-phieu/HDG/bao-cao"},
+    {ctck:"ACBS", rating:"Khả quan", target:"23.700", upside:"+18,5%", date:"26/05/2026", url:"https://simplize.vn/co-phieu/HDG/bao-cao"},
+    {ctck:"SSI", rating:"Mua", target:"26.300", upside:"+31,5%", date:"06/05/2026", url:"https://simplize.vn/co-phieu/HDG/bao-cao"},
+    {ctck:"VDS", rating:"Mua", target:"31.000", upside:"+55,0%", date:"17/04/2026", url:"https://simplize.vn/co-phieu/HDG/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"32.900", upside:"+64,5%", date:"27/03/2026", url:"https://simplize.vn/co-phieu/HDG/bao-cao"}
+  ],
+  HHV:[
+    {ctck:"SHINHAN", rating:"Mua", target:"16.900", upside:"+49,6%", date:"01/07/2026", url:"https://simplize.vn/co-phieu/HHV/bao-cao"},
+    {ctck:"AGRISECO", rating:"Mua", target:"13.700", upside:"+21,2%", date:"04/06/2026", url:"https://simplize.vn/co-phieu/HHV/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"16.000", upside:"+41,6%", date:"27/02/2026", url:"https://simplize.vn/co-phieu/HHV/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"16.500", upside:"+46,0%", date:"11/02/2026", url:"https://simplize.vn/co-phieu/HHV/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"16.300", upside:"+44,2%", date:"26/11/2025", url:"https://simplize.vn/co-phieu/HHV/bao-cao"},
+    {ctck:"SHINHAN", rating:"Mua", target:"16.500", upside:"+46,0%", date:"11/11/2025", url:"https://simplize.vn/co-phieu/HHV/bao-cao"}
+  ],
+  HSG:[
+    {ctck:"BSC", rating:"Trung lập", target:"14.300", upside:"+15,8%", date:"06/05/2026", url:"https://simplize.vn/co-phieu/HSG/bao-cao"},
+    {ctck:"VDS", rating:"Mua", target:"15.500", upside:"+25,5%", date:"17/04/2026", url:"https://simplize.vn/co-phieu/HSG/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"15.300", upside:"+23,9%", date:"14/04/2026", url:"https://simplize.vn/co-phieu/HSG/bao-cao"},
+    {ctck:"SHINHAN", rating:"Giữ", target:"11.700", upside:"-5,3%", date:"20/03/2026", url:"https://simplize.vn/co-phieu/HSG/bao-cao"},
+    {ctck:"FPTS", rating:"Theo dõi", target:"10.200", upside:"-17,4%", date:"20/03/2026", url:"https://simplize.vn/co-phieu/HSG/bao-cao"},
+    {ctck:"BVSC", rating:"Trung lập", target:"12.600", upside:"+2,0%", date:"12/03/2026", url:"https://simplize.vn/co-phieu/HSG/bao-cao"}
+  ],
+  HT1:[
+    {ctck:"BSC", rating:"Trung lập", target:"15.900", upside:"+19,1%", date:"18/05/2026", url:"https://simplize.vn/co-phieu/HT1/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"20.800", upside:"+55,8%", date:"25/11/2025", url:"https://simplize.vn/co-phieu/HT1/bao-cao"},
+    {ctck:"BSC", rating:"Nắm giữ", target:"16.600", upside:"+24,3%", date:"03/11/2025", url:"https://simplize.vn/co-phieu/HT1/bao-cao"},
+    {ctck:"SSI", rating:"Trung lập", target:"18.400", upside:"+37,8%", date:"29/10/2025", url:"https://simplize.vn/co-phieu/HT1/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"20.400", upside:"+52,8%", date:"26/08/2025", url:"https://simplize.vn/co-phieu/HT1/bao-cao"},
+    {ctck:"FPTS", rating:"Trung lập", target:"16.700", upside:"+25,1%", date:"21/08/2025", url:"https://simplize.vn/co-phieu/HT1/bao-cao"}
+  ],
+  IMP:[
+    {ctck:"ACBS", rating:"Trung lập", target:"44.500", upside:"+3,9%", date:"22/05/2026", url:"https://simplize.vn/co-phieu/IMP/bao-cao"},
+    {ctck:"DSC", rating:"Trung lập", target:"53.300", upside:"+24,4%", date:"18/05/2026", url:"https://simplize.vn/co-phieu/IMP/bao-cao"},
+    {ctck:"FPTS", rating:"Theo dõi", target:"56.500", upside:"+31,9%", date:"11/03/2026", url:"https://simplize.vn/co-phieu/IMP/bao-cao"},
+    {ctck:"DSC", rating:"Theo dõi", target:"52.000", upside:"+21,4%", date:"21/11/2025", url:"https://simplize.vn/co-phieu/IMP/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"60.000", upside:"+40,0%", date:"11/11/2025", url:"https://simplize.vn/co-phieu/IMP/bao-cao"},
+    {ctck:"FPTS", rating:"Theo dõi", target:"51.100", upside:"+19,3%", date:"06/11/2025", url:"https://simplize.vn/co-phieu/IMP/bao-cao"}
+  ],
+  KBC:[
+    {ctck:"VDS", rating:"Mua", target:"41.600", upside:"+42,2%", date:"16/06/2026", url:"https://simplize.vn/co-phieu/KBC/bao-cao"},
+    {ctck:"VNDS", rating:"Mua", target:"35.700", upside:"+22,1%", date:"15/06/2026", url:"https://simplize.vn/co-phieu/KBC/bao-cao"},
+    {ctck:"ACBS", rating:"Khả quan", target:"36.800", upside:"+25,8%", date:"15/05/2026", url:"https://simplize.vn/co-phieu/KBC/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"42.400", upside:"+45,0%", date:"08/05/2026", url:"https://simplize.vn/co-phieu/KBC/bao-cao"},
+    {ctck:"VPBS", rating:"Mua", target:"39.400", upside:"+34,7%", date:"06/05/2026", url:"https://simplize.vn/co-phieu/KBC/bao-cao"},
+    {ctck:"YUANTA", rating:"Mua", target:"40.400", upside:"+38,1%", date:"29/04/2026", url:"https://simplize.vn/co-phieu/KBC/bao-cao"}
+  ],
+  KDH:[
+    {ctck:"KBSV", rating:"Mua", target:"36.200", upside:"+70,0%", date:"16/06/2026", url:"https://simplize.vn/co-phieu/KDH/bao-cao"},
+    {ctck:"VDS", rating:"Mua", target:"41.500", upside:"+94,8%", date:"29/05/2026", url:"https://simplize.vn/co-phieu/KDH/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"34.100", upside:"+60,1%", date:"08/05/2026", url:"https://simplize.vn/co-phieu/KDH/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"43.700", upside:"+105,2%", date:"27/03/2026", url:"https://simplize.vn/co-phieu/KDH/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"36.200", upside:"+70,0%", date:"18/03/2026", url:"https://simplize.vn/co-phieu/KDH/bao-cao"},
+    {ctck:"SSI", rating:"Mua", target:"32.800", upside:"+54,0%", date:"16/03/2026", url:"https://simplize.vn/co-phieu/KDH/bao-cao"}
+  ],
+  LPB:[
+    {ctck:"Vietcap", rating:"Kém khả quan", target:"36.300", upside:"-29,1%", date:"26/11/2025", url:"https://simplize.vn/co-phieu/LPB/bao-cao"},
+    {ctck:"Vietcap", rating:"Bán", target:"26.800", upside:"-47,7%", date:"25/08/2025", url:"https://simplize.vn/co-phieu/LPB/bao-cao"}
+  ],
+  MSB:[
+    {ctck:"SSI", rating:"Mua", target:"18.000", upside:"+15,8%", date:"01/06/2026", url:"https://simplize.vn/co-phieu/MSB/bao-cao"},
+    {ctck:"VDS", rating:"Trung lập", target:"13.800", upside:"-11,3%", date:"12/05/2026", url:"https://simplize.vn/co-phieu/MSB/bao-cao"},
+    {ctck:"VCBS", rating:"Mua", target:"16.300", upside:"+4,8%", date:"21/08/2025", url:"https://simplize.vn/co-phieu/MSB/bao-cao"}
+  ],
+  MSN:[
+    {ctck:"MAS", rating:"Mua", target:"86.900", upside:"+21,0%", date:"19/06/2026", url:"https://simplize.vn/co-phieu/MSN/bao-cao"},
+    {ctck:"SHS", rating:"Khá quan", target:"97.300", upside:"+35,5%", date:"13/05/2026", url:"https://simplize.vn/co-phieu/MSN/bao-cao"},
+    {ctck:"VDS", rating:"Mua", target:"110.000", upside:"+53,2%", date:"17/04/2026", url:"https://simplize.vn/co-phieu/MSN/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"101.700", upside:"+41,6%", date:"20/03/2026", url:"https://simplize.vn/co-phieu/MSN/bao-cao"},
+    {ctck:"SHINHAN", rating:"Mua", target:"104.300", upside:"+45,3%", date:"11/03/2026", url:"https://simplize.vn/co-phieu/MSN/bao-cao"},
+    {ctck:"SSI", rating:"Mua", target:"105.900", upside:"+47,5%", date:"05/03/2026", url:"https://simplize.vn/co-phieu/MSN/bao-cao"}
+  ],
+  NKG:[
+    {ctck:"FPTS", rating:"Theo dõi", target:"12.900", upside:"+7,5%", date:"04/03/2026", url:"https://simplize.vn/co-phieu/NKG/bao-cao"},
+    {ctck:"DSC", rating:"Trung lập", target:"13.900", upside:"+15,8%", date:"27/02/2026", url:"https://simplize.vn/co-phieu/NKG/bao-cao"},
+    {ctck:"SHINHAN", rating:"Giữ", target:"15.400", upside:"+28,3%", date:"02/12/2025", url:"https://simplize.vn/co-phieu/NKG/bao-cao"},
+    {ctck:"MAS", rating:"Nắm giữ", target:"14.700", upside:"+22,5%", date:"21/11/2025", url:"https://simplize.vn/co-phieu/NKG/bao-cao"},
+    {ctck:"FPTS", rating:"Theo dõi", target:"13.600", upside:"+13,3%", date:"20/11/2025", url:"https://simplize.vn/co-phieu/NKG/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"17.000", upside:"+41,7%", date:"31/10/2025", url:"https://simplize.vn/co-phieu/NKG/bao-cao"}
+  ],
+  NLG:[
+    {ctck:"Vietcap", rating:"Mua", target:"45.300", upside:"+75,6%", date:"13/05/2026", url:"https://simplize.vn/co-phieu/NLG/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"38.200", upside:"+48,1%", date:"07/05/2026", url:"https://simplize.vn/co-phieu/NLG/bao-cao"},
+    {ctck:"VPBS", rating:"Mua", target:"37.900", upside:"+46,9%", date:"28/04/2026", url:"https://simplize.vn/co-phieu/NLG/bao-cao"},
+    {ctck:"VPBS", rating:"Mua", target:"37.900", upside:"+46,9%", date:"24/04/2026", url:"https://simplize.vn/co-phieu/NLG/bao-cao"},
+    {ctck:"VDS", rating:"Mua", target:"36.600", upside:"+41,9%", date:"17/04/2026", url:"https://simplize.vn/co-phieu/NLG/bao-cao"},
+    {ctck:"VNDS", rating:"Mua", target:"37.500", upside:"+45,3%", date:"17/04/2026", url:"https://simplize.vn/co-phieu/NLG/bao-cao"}
+  ],
+  NT2:[
+    {ctck:"BSC", rating:"Mua", target:"29.000", upside:"+28,0%", date:"15/06/2026", url:"https://simplize.vn/co-phieu/NT2/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"28.800", upside:"+27,2%", date:"29/05/2026", url:"https://simplize.vn/co-phieu/NT2/bao-cao"},
+    {ctck:"MAS", rating:"Tăng tỷ trọng", target:"28.800", upside:"+27,2%", date:"13/05/2026", url:"https://simplize.vn/co-phieu/NT2/bao-cao"},
+    {ctck:"ACBS", rating:"Khả quan", target:"25.600", upside:"+13,0%", date:"07/05/2026", url:"https://simplize.vn/co-phieu/NT2/bao-cao"},
+    {ctck:"VPBS", rating:"Trung lập", target:"26.800", upside:"+18,3%", date:"28/04/2026", url:"https://simplize.vn/co-phieu/NT2/bao-cao"},
+    {ctck:"VCBS", rating:"Khác", target:"31.200", upside:"+37,7%", date:"15/04/2026", url:"https://simplize.vn/co-phieu/NT2/bao-cao"}
+  ],
+  NVL:[
+    {ctck:"Vietcap", rating:"Mua", target:"18.600", upside:"+51,2%", date:"19/06/2026", url:"https://simplize.vn/co-phieu/NVL/bao-cao"}
+  ],
+  OCB:[
+    {ctck:"BSC", rating:"Nắm giữ", target:"11.700", upside:"+2,6%", date:"13/02/2026", url:"https://simplize.vn/co-phieu/OCB/bao-cao"},
+    {ctck:"BVSC", rating:"Mua", target:"14.100", upside:"+23,7%", date:"05/09/2025", url:"https://simplize.vn/co-phieu/OCB/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"13.900", upside:"+21,9%", date:"21/08/2025", url:"https://simplize.vn/co-phieu/OCB/bao-cao"}
+  ],
+  PAN:[
+    {ctck:"MAS", rating:"Tăng tỷ trọng", target:"24.600", upside:"+7,9%", date:"11/12/2025", url:"https://simplize.vn/co-phieu/PAN/bao-cao"}
+  ],
+  PC1:[
+    {ctck:"DSC", rating:"Mua", target:"25.100", upside:"+14,1%", date:"16/06/2026", url:"https://simplize.vn/co-phieu/PC1/bao-cao"},
+    {ctck:"BVSC", rating:"Mua", target:"32.000", upside:"+45,5%", date:"23/03/2026", url:"https://simplize.vn/co-phieu/PC1/bao-cao"},
+    {ctck:"ABS", rating:"Mua", target:"30.700", upside:"+39,5%", date:"12/03/2026", url:"https://simplize.vn/co-phieu/PC1/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"32.100", upside:"+45,9%", date:"11/03/2026", url:"https://simplize.vn/co-phieu/PC1/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"32.200", upside:"+46,4%", date:"06/02/2026", url:"https://simplize.vn/co-phieu/PC1/bao-cao"},
+    {ctck:"SHS", rating:"Khả quan", target:"29.500", upside:"+34,1%", date:"01/02/2026", url:"https://simplize.vn/co-phieu/PC1/bao-cao"}
+  ],
+  PDR:[
+    {ctck:"VPBS", rating:"Khác", target:"25.600", upside:"+76,0%", date:"29/04/2026", url:"https://simplize.vn/co-phieu/PDR/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"20.400", upside:"+40,2%", date:"27/03/2026", url:"https://simplize.vn/co-phieu/PDR/bao-cao"},
+    {ctck:"VCBS", rating:"Mua", target:"19.300", upside:"+32,6%", date:"18/03/2026", url:"https://simplize.vn/co-phieu/PDR/bao-cao"},
+    {ctck:"SHINHAN", rating:"Mua", target:"20.000", upside:"+37,5%", date:"13/03/2026", url:"https://simplize.vn/co-phieu/PDR/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"27.600", upside:"+89,7%", date:"04/11/2025", url:"https://simplize.vn/co-phieu/PDR/bao-cao"},
+    {ctck:"MBS", rating:"Mua", target:"27.300", upside:"+87,6%", date:"22/08/2025", url:"https://simplize.vn/co-phieu/PDR/bao-cao"}
+  ],
+  PHR:[
+    {ctck:"Vietcap", rating:"Mua", target:"71.300", upside:"+6,0%", date:"09/04/2026", url:"https://simplize.vn/co-phieu/PHR/bao-cao"},
+    {ctck:"FPTS", rating:"Mua", target:"72.000", upside:"+7,0%", date:"06/03/2026", url:"https://simplize.vn/co-phieu/PHR/bao-cao"},
+    {ctck:"FPTS", rating:"Mua", target:"73.800", upside:"+9,7%", date:"02/12/2025", url:"https://simplize.vn/co-phieu/PHR/bao-cao"},
+    {ctck:"BVSC", rating:"Outperform", target:"76.200", upside:"+13,2%", date:"24/10/2025", url:"https://simplize.vn/co-phieu/PHR/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"66.000", upside:"-1,9%", date:"04/07/2025", url:"https://simplize.vn/co-phieu/PHR/bao-cao"}
+  ],
+  PLX:[
+    {ctck:"FPTS", rating:"Mua", target:"48.500", upside:"+32,7%", date:"29/04/2026", url:"https://simplize.vn/co-phieu/PLX/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"49.600", upside:"+35,7%", date:"29/04/2026", url:"https://simplize.vn/co-phieu/PLX/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"50.300", upside:"+37,6%", date:"14/04/2026", url:"https://simplize.vn/co-phieu/PLX/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"49.600", upside:"+35,7%", date:"09/04/2026", url:"https://simplize.vn/co-phieu/PLX/bao-cao"},
+    {ctck:"DSC", rating:"Trung lập", target:"49.500", upside:"+35,4%", date:"11/03/2026", url:"https://simplize.vn/co-phieu/PLX/bao-cao"},
+    {ctck:"MBS", rating:"Trung lập", target:"61.000", upside:"+66,9%", date:"10/02/2026", url:"https://simplize.vn/co-phieu/PLX/bao-cao"}
+  ],
+  PNJ:[
+    {ctck:"ACBS", rating:"Mua", target:"110.500", upside:"+70,8%", date:"15/05/2026", url:"https://simplize.vn/co-phieu/PNJ/bao-cao"},
+    {ctck:"DSC", rating:"Mua", target:"84.000", upside:"+29,8%", date:"13/05/2026", url:"https://simplize.vn/co-phieu/PNJ/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"104.200", upside:"+61,1%", date:"31/03/2026", url:"https://simplize.vn/co-phieu/PNJ/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"93.500", upside:"+44,5%", date:"13/03/2026", url:"https://simplize.vn/co-phieu/PNJ/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"102.600", upside:"+58,6%", date:"02/03/2026", url:"https://simplize.vn/co-phieu/PNJ/bao-cao"},
+    {ctck:"ACBS", rating:"Khả quan", target:"88.000", upside:"+36,0%", date:"05/02/2026", url:"https://simplize.vn/co-phieu/PNJ/bao-cao"}
+  ],
+  POW:[
+    {ctck:"FPTS", rating:"Theo dõi", target:"16.900", upside:"+13,4%", date:"29/06/2026", url:"https://simplize.vn/co-phieu/POW/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"15.900", upside:"+6,7%", date:"10/06/2026", url:"https://simplize.vn/co-phieu/POW/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"16.700", upside:"+12,1%", date:"26/05/2026", url:"https://simplize.vn/co-phieu/POW/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"17.100", upside:"+14,8%", date:"12/05/2026", url:"https://simplize.vn/co-phieu/POW/bao-cao"},
+    {ctck:"SSI", rating:"Mua", target:"16.000", upside:"+7,4%", date:"07/05/2026", url:"https://simplize.vn/co-phieu/POW/bao-cao"},
+    {ctck:"VPBS", rating:"Mua", target:"15.600", upside:"+4,7%", date:"06/05/2026", url:"https://simplize.vn/co-phieu/POW/bao-cao"}
+  ],
+  PPC:[
+    {ctck:"FPTS", rating:"Theo dõi", target:"10.800", upside:"+13,9%", date:"12/09/2025", url:"https://simplize.vn/co-phieu/PPC/bao-cao"}
+  ],
+  PTB:[
+    {ctck:"FPTS", rating:"Theo dõi", target:"52.500", upside:"+4,4%", date:"17/04/2026", url:"https://simplize.vn/co-phieu/PTB/bao-cao"},
+    {ctck:"BSC", rating:"Trung lập", target:"46.500", upside:"-7,6%", date:"12/09/2025", url:"https://simplize.vn/co-phieu/PTB/bao-cao"}
+  ],
+  PVD:[
+    {ctck:"VPBS", rating:"Trung lập", target:"33.800", upside:"+9,7%", date:"07/05/2026", url:"https://simplize.vn/co-phieu/PVD/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"37.900", upside:"+23,1%", date:"28/04/2026", url:"https://simplize.vn/co-phieu/PVD/bao-cao"},
+    {ctck:"BSC", rating:"Mua", target:"39.400", upside:"+27,9%", date:"23/04/2026", url:"https://simplize.vn/co-phieu/PVD/bao-cao"},
+    {ctck:"MBS", rating:"Trung lập", target:"33.100", upside:"+7,5%", date:"27/03/2026", url:"https://simplize.vn/co-phieu/PVD/bao-cao"},
+    {ctck:"SHINHAN", rating:"Giữ", target:"39.700", upside:"+28,9%", date:"12/03/2026", url:"https://simplize.vn/co-phieu/PVD/bao-cao"},
+    {ctck:"ACBS", rating:"Khả quan", target:"37.900", upside:"+23,1%", date:"06/02/2026", url:"https://simplize.vn/co-phieu/PVD/bao-cao"}
+  ],
+  PVT:[
+    {ctck:"ACBS", rating:"Mua", target:"28.200", upside:"+25,9%", date:"08/05/2026", url:"https://simplize.vn/co-phieu/PVT/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"26.000", upside:"+16,1%", date:"21/04/2026", url:"https://simplize.vn/co-phieu/PVT/bao-cao"},
+    {ctck:"SSI", rating:"Mua", target:"26.200", upside:"+17,0%", date:"30/03/2026", url:"https://simplize.vn/co-phieu/PVT/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"30.800", upside:"+37,5%", date:"20/03/2026", url:"https://simplize.vn/co-phieu/PVT/bao-cao"},
+    {ctck:"VCBS", rating:"Mua", target:"28.600", upside:"+27,7%", date:"19/03/2026", url:"https://simplize.vn/co-phieu/PVT/bao-cao"},
+    {ctck:"SSI", rating:"Khả quan", target:"20.400", upside:"-8,9%", date:"18/12/2025", url:"https://simplize.vn/co-phieu/PVT/bao-cao"}
+  ],
+  REE:[
+    {ctck:"ACBS", rating:"Khả quan", target:"78.300", upside:"+26,1%", date:"08/04/2026", url:"https://simplize.vn/co-phieu/REE/bao-cao"},
+    {ctck:"KBSV", rating:"Trung lập", target:"69.500", upside:"+11,9%", date:"15/03/2026", url:"https://simplize.vn/co-phieu/REE/bao-cao"},
+    {ctck:"BSC", rating:"Trung lập", target:"65.700", upside:"+5,8%", date:"10/03/2026", url:"https://simplize.vn/co-phieu/REE/bao-cao"},
+    {ctck:"SSI", rating:"Trung lập", target:"70.200", upside:"+13,0%", date:"09/03/2026", url:"https://simplize.vn/co-phieu/REE/bao-cao"},
+    {ctck:"ABS", rating:"Mua", target:"72.900", upside:"+17,4%", date:"04/03/2026", url:"https://simplize.vn/co-phieu/REE/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"74.900", upside:"+20,6%", date:"25/02/2026", url:"https://simplize.vn/co-phieu/REE/bao-cao"}
+  ],
+  SAB:[
+    {ctck:"MAS", rating:"Nắm giữ", target:"52.800", upside:"+12,2%", date:"28/04/2026", url:"https://simplize.vn/co-phieu/SAB/bao-cao"},
+    {ctck:"FPTS", rating:"Theo dõi", target:"49.900", upside:"+6,1%", date:"15/04/2026", url:"https://simplize.vn/co-phieu/SAB/bao-cao"},
+    {ctck:"DSC", rating:"Trung lập", target:"51.000", upside:"+8,4%", date:"25/03/2026", url:"https://simplize.vn/co-phieu/SAB/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"52.800", upside:"+12,2%", date:"10/03/2026", url:"https://simplize.vn/co-phieu/SAB/bao-cao"},
+    {ctck:"SSI", rating:"Trung lập", target:"55.000", upside:"+16,9%", date:"03/03/2026", url:"https://simplize.vn/co-phieu/SAB/bao-cao"},
+    {ctck:"SHINHAN", rating:"Mua", target:"59.400", upside:"+26,2%", date:"26/02/2026", url:"https://simplize.vn/co-phieu/SAB/bao-cao"}
+  ],
+  SBT:[
+    {ctck:"FPTS", rating:"Theo dõi", target:"19.400", upside:"-7,6%", date:"13/05/2026", url:"https://simplize.vn/co-phieu/SBT/bao-cao"}
+  ],
+  SCS:[
+    {ctck:"KBSV", rating:"Trung lập", target:"56.800", upside:"+9,7%", date:"22/12/2025", url:"https://simplize.vn/co-phieu/SCS/bao-cao"},
+    {ctck:"SHS", rating:"Khả quan", target:"82.500", upside:"+59,3%", date:"08/12/2025", url:"https://simplize.vn/co-phieu/SCS/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"68.500", upside:"+32,2%", date:"24/09/2025", url:"https://simplize.vn/co-phieu/SCS/bao-cao"},
+    {ctck:"DSC", rating:"Mua", target:"68.500", upside:"+32,2%", date:"03/07/2025", url:"https://simplize.vn/co-phieu/SCS/bao-cao"}
+  ],
+  SHB:[
+    {ctck:"ABS", rating:"Mua", target:"18.100", upside:"+18,3%", date:"26/03/2026", url:"https://simplize.vn/co-phieu/SHB/bao-cao"}
+  ],
+  SSI:[
+    {ctck:"VPBS", rating:"Mua", target:"39.400", upside:"+44,3%", date:"24/04/2026", url:"https://simplize.vn/co-phieu/SSI/bao-cao"},
+    {ctck:"DSC", rating:"Mua", target:"37.200", upside:"+36,3%", date:"17/03/2026", url:"https://simplize.vn/co-phieu/SSI/bao-cao"},
+    {ctck:"DSC", rating:"Khác", target:"28.600", upside:"+4,8%", date:"06/08/2025", url:"https://simplize.vn/co-phieu/SSI/bao-cao"}
+  ],
+  SZC:[
+    {ctck:"SHINHAN", rating:"Mua", target:"42.900", upside:"+93,2%", date:"12/03/2026", url:"https://simplize.vn/co-phieu/SZC/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"40.100", upside:"+80,6%", date:"26/01/2026", url:"https://simplize.vn/co-phieu/SZC/bao-cao"},
+    {ctck:"BVSC", rating:"Outperform", target:"41.700", upside:"+87,8%", date:"21/01/2026", url:"https://simplize.vn/co-phieu/SZC/bao-cao"},
+    {ctck:"SHINHAN", rating:"Mua", target:"45.400", upside:"+104,5%", date:"11/11/2025", url:"https://simplize.vn/co-phieu/SZC/bao-cao"},
+    {ctck:"SSV", rating:"Mua", target:"45.400", upside:"+104,5%", date:"10/09/2025", url:"https://simplize.vn/co-phieu/SZC/bao-cao"},
+    {ctck:"DSC", rating:"Trung lập", target:"39.200", upside:"+76,6%", date:"19/08/2025", url:"https://simplize.vn/co-phieu/SZC/bao-cao"}
+  ],
+  TCB:[
+    {ctck:"BSC", rating:"Khác", target:"42.800", upside:"+27,4%", date:"15/06/2026", url:"https://simplize.vn/co-phieu/TCB/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"39.700", upside:"+18,2%", date:"22/05/2026", url:"https://simplize.vn/co-phieu/TCB/bao-cao"},
+    {ctck:"KIS", rating:"Mua", target:"39.600", upside:"+17,9%", date:"07/05/2026", url:"https://simplize.vn/co-phieu/TCB/bao-cao"},
+    {ctck:"KBSV", rating:"Mua", target:"42.000", upside:"+25,0%", date:"20/03/2026", url:"https://simplize.vn/co-phieu/TCB/bao-cao"},
+    {ctck:"VPBS", rating:"Mua", target:"39.300", upside:"+17,0%", date:"20/03/2026", url:"https://simplize.vn/co-phieu/TCB/bao-cao"},
+    {ctck:"Vietcap", rating:"Mua", target:"40.800", upside:"+21,4%", date:"17/03/2026", url:"https://simplize.vn/co-phieu/TCB/bao-cao"}
+  ],
+  TCH:[
+    {ctck:"VDS", rating:"Mua", target:"21.700", upside:"+51,7%", date:"08/06/2026", url:"https://simplize.vn/co-phieu/TCH/bao-cao"},
+    {ctck:"SHS", rating:"Tăng tỷ trọng", target:"19.900", upside:"+39,2%", date:"21/05/2026", url:"https://simplize.vn/co-phieu/TCH/bao-cao"},
+    {ctck:"VCBS", rating:"Mua", target:"22.200", upside:"+55,2%", date:"28/03/2026", url:"https://simplize.vn/co-phieu/TCH/bao-cao"},
+    {ctck:"SHS", rating:"Tăng tỷ trọng", target:"19.100", upside:"+33,6%", date:"05/02/2026", url:"https://simplize.vn/co-phieu/TCH/bao-cao"}
+  ],
+  TPB:[
+    {ctck:"SSI", rating:"Mua", target:"18.700", upside:"+15,8%", date:"24/03/2026", url:"https://simplize.vn/co-phieu/TPB/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"21.000", upside:"+30,0%", date:"10/03/2026", url:"https://simplize.vn/co-phieu/TPB/bao-cao"},
+    {ctck:"DSC", rating:"Mua", target:"21.500", upside:"+33,1%", date:"23/09/2025", url:"https://simplize.vn/co-phieu/TPB/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"16.400", upside:"+1,5%", date:"14/07/2025", url:"https://simplize.vn/co-phieu/TPB/bao-cao"}
+  ],
+  VCG:[
+    {ctck:"MBS", rating:"Khả quan", target:"23.100", upside:"+11,6%", date:"15/06/2026", url:"https://simplize.vn/co-phieu/VCG/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"28.000", upside:"+35,3%", date:"29/04/2026", url:"https://simplize.vn/co-phieu/VCG/bao-cao"},
+    {ctck:"MAS", rating:"Khác", target:"27.200", upside:"+31,4%", date:"24/03/2026", url:"https://simplize.vn/co-phieu/VCG/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"35.000", upside:"+69,1%", date:"09/12/2025", url:"https://simplize.vn/co-phieu/VCG/bao-cao"},
+    {ctck:"SBBS", rating:"Mua", target:"28.700", upside:"+38,6%", date:"19/11/2025", url:"https://simplize.vn/co-phieu/VCG/bao-cao"}
+  ],
+  VCI:[
+    {ctck:"DSC", rating:"Mua", target:"31.200", upside:"+24,3%", date:"26/05/2026", url:"https://simplize.vn/co-phieu/VCI/bao-cao"},
+    {ctck:"DSC", rating:"Mua", target:"31.500", upside:"+25,5%", date:"12/11/2025", url:"https://simplize.vn/co-phieu/VCI/bao-cao"},
+    {ctck:"SBBS", rating:"Mua", target:"29.800", upside:"+18,7%", date:"27/10/2025", url:"https://simplize.vn/co-phieu/VCI/bao-cao"}
+  ],
+  VHC:[
+    {ctck:"SBBS", rating:"Mua", target:"73.000", upside:"+23,7%", date:"21/05/2026", url:"https://simplize.vn/co-phieu/VHC/bao-cao"},
+    {ctck:"MAS", rating:"Tăng tỷ trọng", target:"69.900", upside:"+18,5%", date:"13/05/2026", url:"https://simplize.vn/co-phieu/VHC/bao-cao"},
+    {ctck:"FPTS", rating:"Theo dõi", target:"62.400", upside:"+5,8%", date:"24/03/2026", url:"https://simplize.vn/co-phieu/VHC/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"73.500", upside:"+24,6%", date:"17/03/2026", url:"https://simplize.vn/co-phieu/VHC/bao-cao"},
+    {ctck:"KBSV", rating:"Trung lập", target:"63.200", upside:"+7,1%", date:"16/03/2026", url:"https://simplize.vn/co-phieu/VHC/bao-cao"},
+    {ctck:"BVSC", rating:"Trung lập", target:"69.300", upside:"+17,5%", date:"04/03/2026", url:"https://simplize.vn/co-phieu/VHC/bao-cao"}
+  ],
+  VIB:[
+    {ctck:"MBS", rating:"Khả quan", target:"24.800", upside:"+43,8%", date:"10/03/2026", url:"https://simplize.vn/co-phieu/VIB/bao-cao"},
+    {ctck:"MAS", rating:"Mua", target:"23.000", upside:"+33,3%", date:"02/03/2026", url:"https://simplize.vn/co-phieu/VIB/bao-cao"},
+    {ctck:"ACBS", rating:"Khả quan", target:"20.200", upside:"+17,1%", date:"09/12/2025", url:"https://simplize.vn/co-phieu/VIB/bao-cao"},
+    {ctck:"DSC", rating:"Khác", target:"21.300", upside:"+23,5%", date:"25/11/2025", url:"https://simplize.vn/co-phieu/VIB/bao-cao"}
+  ],
+  VJC:[
+    {ctck:"VNDS", rating:"Khác", target:"113.600", upside:"-35,5%", date:"05/05/2026", url:"https://simplize.vn/co-phieu/VJC/bao-cao"},
+    {ctck:"FPTS", rating:"Trung lập", target:"152.700", upside:"-13,3%", date:"25/02/2026", url:"https://simplize.vn/co-phieu/VJC/bao-cao"},
+    {ctck:"VCBS", rating:"Trung lập", target:"149.000", upside:"-15,4%", date:"16/09/2025", url:"https://simplize.vn/co-phieu/VJC/bao-cao"}
+  ],
+  VRE:[
+    {ctck:"MAS", rating:"Mua", target:"35.800", upside:"+27,2%", date:"19/06/2026", url:"https://simplize.vn/co-phieu/VRE/bao-cao"},
+    {ctck:"MBS", rating:"Khả quan", target:"37.900", upside:"+34,6%", date:"08/06/2026", url:"https://simplize.vn/co-phieu/VRE/bao-cao"},
+    {ctck:"Vietcap", rating:"Trung lập", target:"33.200", upside:"+18,0%", date:"02/06/2026", url:"https://simplize.vn/co-phieu/VRE/bao-cao"},
+    {ctck:"BSC", rating:"Trung lập", target:"39.100", upside:"+38,9%", date:"08/05/2026", url:"https://simplize.vn/co-phieu/VRE/bao-cao"},
+    {ctck:"ACBS", rating:"Mua", target:"35.000", upside:"+24,3%", date:"28/04/2026", url:"https://simplize.vn/co-phieu/VRE/bao-cao"},
+    {ctck:"VPBS", rating:"Khác", target:"30.600", upside:"+8,7%", date:"24/04/2026", url:"https://simplize.vn/co-phieu/VRE/bao-cao"}
+  ]
+};
+
+// ---------------------------------------------------------------
 // DỮ LIỆU CƠ BẢN THEO QUÝ (Doanh thu / LNST / %YoY / P/E / P/B)
 // Nguồn: KAFI X (nền tảng giao dịch, dữ liệu FiinTrade/FiinGroup) — mục
 // "Phân tích tài chính > Chỉ số Tài Chính" của từng mã (bảng theo quý) và mục
