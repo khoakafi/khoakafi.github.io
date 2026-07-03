@@ -494,8 +494,7 @@ function renderTechnicalSignal(ticker, data){
     (trendDetail ? ('<div class="tech-row"><span></span><span>' + trendDetail + '</span></div>') : '') +
     '<div class="tech-row"><span>Động lượng</span><span>' + momLabel + '</span></div>' +
     '<div class="tech-row"><span>Hỗ trợ gần nhất</span><span>' + fmtTechPrice(sr.support) + (supportPct !== null ? (' (-' + supportPct.toFixed(1) + '%)') : '') + '</span></div>' +
-    '<div class="tech-row"><span>Kháng cự gần nhất</span><span>' + fmtTechPrice(sr.resistance) + (resistancePct !== null ? (' (+' + resistancePct.toFixed(1) + '%)') : '') + '</span></div>' +
-    '<div class="tech-note">Xu hướng dựa trên vị trí giá so với MA20/MA50; động lượng dựa trên RSI14 (xấp xỉ); hỗ trợ/kháng cự là đáy/đỉnh trong ' + sr.sessions + ' phiên gần nhất (~3 tháng). Đây là tín hiệu tham khảo tự động, không phải khuyến nghị đầu tư.</div>';
+    '<div class="tech-row"><span>Kháng cự gần nhất</span><span>' + fmtTechPrice(sr.resistance) + (resistancePct !== null ? (' (+' + resistancePct.toFixed(1) + '%)') : '') + '</span></div>';
 }
 
 // ---------------------------------------------------------------
@@ -560,8 +559,7 @@ function renderValuations(ticker){
   document.getElementById("valuationBody").innerHTML =
     '<table class="valuation-table"><thead><tr>' +
       '<th>Ngày</th><th>CTCK</th><th>Khuyến nghị</th><th>Giá mục tiêu</th><th>Upside</th><th>Báo cáo</th>' +
-    '</tr></thead><tbody>' + rows + '</tbody></table>' + avgHtml +
-    '<div class="valuation-note">Tối đa 6 báo cáo gần nhất trong 1 năm qua, không quá 2 báo cáo/CTCK, nguồn: Simplize.vn (tổng hợp từ nhiều CTCK).</div>';
+    '</tr></thead><tbody>' + rows + '</tbody></table>' + avgHtml;
 }
 
 function fmtFundNum(v){
