@@ -116,6 +116,9 @@
   .valuation-dl-btn{display:inline-block;padding:3px 9px;border-radius:8px;font-size:11.5px;font-weight:600;color:var(--text);background:rgba(139,147,167,.12);text-decoration:none;white-space:nowrap;}
   .valuation-dl-btn:hover{background:rgba(139,147,167,.22);}
   .valuation-note{margin-top:8px;font-size:11px;color:var(--muted);}
+  .valuation-scroll{overflow-x:auto;}
+  .valuation-scroll .valuation-table{font-size:12px;}
+  .valuation-scroll .valuation-table th, .valuation-scroll .valuation-table td{padding:7px 8px;white-space:nowrap;}
   .fund-table-wrap{overflow-x:auto;}
   .fund-table{width:100%;border-collapse:collapse;font-size:12.5px;white-space:nowrap;}
   .fund-table th{text-align:right;color:var(--muted);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--border);}
@@ -159,7 +162,7 @@
     <div>
       <div class="card">
         <h2>Biểu đồ giá <span class="tag" id="chartSymbolLabel"></span></h2>
-        <div id="chartContainer" style="height:460px;"></div>
+        <div id="chartContainer" style="height:300px;"></div>
       </div>
     </div>
     <div>
@@ -167,10 +170,8 @@
         <h2>Tín hiệu kỹ thuật <span class="tag">Tự tính từ giá — MA20/50, RSI14</span></h2>
         <div id="techBody" class="tech-box"><div class="empty-state">Đang tính toán...</div></div>
 
-        <h2 class="side-subhead">Sức mạnh giá (RS) so với VN-Index</h2>
-        <div id="rsBody" class="rs-box">
-          <div class="empty-state">Đang tính toán...</div>
-        </div>
+        <h2 class="side-subhead">Định giá của các CTCK</h2>
+        <div id="valuationBody" class="valuation-scroll"></div>
 
         <details class="pattern-ref">
           <summary>Mẫu hình giá CANSLIM tham khảo ▾</summary>
@@ -205,11 +206,6 @@
       <h2>Catalyst / Nhận định CTCK</h2>
       <div id="catalystBody"></div>
     </div>
-  </div>
-
-  <div class="card">
-    <h2>Định giá của các CTCK</h2>
-    <div id="valuationBody"></div>
   </div>
 
   <div class="disclaimer">
