@@ -522,7 +522,9 @@ function ratingToClass(rating){
 }
 
 function renderValuations(ticker){
-  const data = TOP_ANALYSIS[ticker];
+  const topData = TOP_ANALYSIS[ticker];
+  const extraList = (typeof VALUATIONS_EXTRA !== "undefined") ? VALUATIONS_EXTRA[ticker] : undefined;
+  const data = (topData && topData.valuations && topData.valuations.length) ? topData : (extraList ? {valuations: extraList} : null);
   const body = document.getElementById("valuationBody");
   if(!data || !data.valuations || !data.valuations.length){
     body.innerHTML = '<div class="empty-state">Chưa tổng hợp định giá từ CTCK cho mã này trong phiên bản hiện tại của dashboard.</div>';
