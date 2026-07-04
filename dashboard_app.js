@@ -51,9 +51,11 @@ inits.market = async function(){
   </div>`;
   const mini = (rows, cols) => `<table><tr><th>Mã</th>${cols.map(c=>`<th>${c[0]}</th>`).join('')}</tr>` +
     rows.map(r=>`<tr class="row" onclick="openDetail('${r.t}')"><td><b>${r.t}</b> <span class="mini">${(r.n||'').slice(0,22)}</span></td>${cols.map(c=>`<td class="${c[2]?c[2](r):''}">${c[1](r)}</td>`).join('')}</tr>`).join('') + '</table>';
-  const csCols = [['CANSLIM',r=>r.csTong+'/6'],['RS',r=>r.rs??'—'],['LNST YoY',r=>pct(r.npatYoY),r=>cls(r.npatYoY)],['Cách đỉnh',r=>pct(r.dHi),r=>cls(r.dHi)]];
-  $('#topCs').innerHTML = mini([...ROWS()].sort((a,b)=>b.csTong-a.csTong||(b.rs||0)-(a.rs||0)).slice(0,10), csCols);
-  $('#topRs').innerHTML = mini([...ROWS()].filter(r=>(r.val20||0)>2000).sort((a,b)=>(b.rs||0)-(a.rs||0)||(b.r3||0)-(a.r3||0)).slice(0,10), csCols);
+  const csCols = [['CANSLIM',r=>r.csTong+'/6'],['RS',r=>r.rs??'—'],['LNST YoY',r=>pct(r.npatYoY),r=>cls(r.npatYoY)],['Cách đỉnh',r=>pct(r.dHi),r=>cls(r.dHi)],['GTGD (tỷ)',r=>fmt((r.val20||0)/1000,0)]];
+  // Chỉ lấy mã thanh khoản >= 20 tỷ/ngày (giá close x volume TB 20 phiên) để loại mã rác
+  const thanhKhoan = r => (r.val20||0) >= 20000;
+  $('#topCs').innerHTML = mini([...ROWS()].filter(thanhKhoan).sort((a,b)=>b.csTong-a.csTong||(b.rs||0)-(a.rs||0)).slice(0,10), csCols);
+  $('#topRs').innerHTML = mini([...ROWS()].filter(thanhKhoan).sort((a,b)=>(b.rs||0)-(a.rs||0)||(b.r3||0)-(a.r3||0)).slice(0,10), csCols);
   try {
     const d = await api.ohlc('VNINDEX', 1500);
     const c = d.c, last = c[c.length-1], prev = c[c.length-2];
