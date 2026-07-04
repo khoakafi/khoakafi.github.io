@@ -373,9 +373,9 @@ $('#btnRefresh').onclick = async function(){
       out.push(o);
     } catch(e){} };
     for (let i=0;i<list.length;i+=CONC) { await Promise.all(list.slice(i,i+CONC).map(one)); st.innerHTML = `<span class="spin"></span> ${Math.min(i+CONC,list.length)}/${list.length} mã…`; }
-    // RS + CANSLIM
+    // RS + CANSLIM — RS chỉ xếp hạng trong nhóm thanh khoản >= 10 tỷ/ngày để không bị nhiễu bởi mã rác
     const score = r => (r.r3!=null?0.4*r.r3:0)+(r.r6!=null?0.3*r.r6:0)+(r.r12!=null?0.3*r.r12:0);
-    const sorted = out.filter(r=>r.p!=null).map(r=>({t:r.t,s:score(r)})).sort((a,b)=>a.s-b.s);
+    const sorted = out.filter(r=>r.p!=null && (r.val20||0)>=10000).map(r=>({t:r.t,s:score(r)})).sort((a,b)=>a.s-b.s);
     const rk = {}; sorted.forEach((x,i)=>rk[x.t]=Math.max(1,Math.round((i+1)/sorted.length*99)));
     for (const r of out) { r.rs = rk[r.t]||null;
       r.cs = {C:r.npatYoY>=25?1:0, A:(r.cagr3||0)>=20?1:0, N:(r.dHi??-99)>=-15?1:0, S:(r.vx||0)>=1.2?1:0, L:(r.rs||0)>=70?1:0, I:(r.val20||0)>=5000?1:0};
