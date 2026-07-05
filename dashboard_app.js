@@ -102,14 +102,14 @@ inits.market = async function(){
         <h2 style="margin:0">Hiệu suất Khoa KAFI Signal <span class="hint">so với VN-Index · backtest sau phí</span></h2>
         <div class="seg" id="perfSeg"><button data-r="all" class="on">Tất cả</button><button data-r="1y">1 năm</button><button data-r="6m">6 tháng</button><button data-r="2025">2025</button><button data-r="2026">2026</button></div>
       </div>
-      <div style="height:330px"><canvas id="cvPerf"></canvas></div>
+      <div style="height:565px"><canvas id="cvPerf"></canvas></div>
     </div>
     <div class="card" style="margin-bottom:0;display:flex;flex-direction:column">
       <h2 style="text-align:center;letter-spacing:.02em">TOP TÍN HIỆU 6 THÁNG QUA</h2>
       <div style="flex:1;overflow:auto"><table class="sigtb"><tr><th>Mã</th><th>Giá mua</th><th>Giá bán / TT</th><th>Lợi suất</th></tr>
       ${(tpn.recent||[]).map(d=>{ const sp=(d.bp*(1+(d.ret+0.6)/100)); return `<tr class="row" onclick="openDetail('${d.t}')">
         <td><div class="l1">${d.t} ${d.open?'<span class="chip a">Đang mở</span>':''}</div><div class="l2">${d.bd}</div></td>
-        <td><div class="l1" style="font-size:13px">${d.bp}</div><div class="l2">đề xuất</div></td>
+        <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
         <td><div class="l1" style="font-size:13px">${sp>=100?sp.toFixed(1):sp.toFixed(2)}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
         <td><span class="${d.ret>=0?'up':'down'}" style="font-size:14px">${d.ret>=0?'+':''}${d.ret}%</span></td></tr>`;}).join('')}
       </table></div>
@@ -354,7 +354,7 @@ inits.detail = function(t){
           <button class="btn active" id="btnChartSig">Chart Tín hiệu</button>
           <button class="btn" id="btnChartPro">Chart Pro + Tín hiệu</button>
           <span style="width:14px"></span>
-          ${[['3T',0.25],['6T',0.5],['1N',1],['3N',3],['5N',5],['Tất cả',14]].map((x,i)=>`<button class="btn rng ${i===2?'active':''}" data-y="${x[1]}">${x[0]}</button>`).join('')}
+
           <label class="mini" style="margin-left:10px"><input type="checkbox" id="ckBoll"> Bollinger</label>
         </div>
         <div id="chartSigWrap" style="position:relative">
@@ -363,7 +363,7 @@ inits.detail = function(t){
             <button class="btn" id="btnLog" style="padding:2px 10px;font-size:11px">Log</button>
             <button class="btn" id="btnFull" style="padding:2px 10px;font-size:11px">⛶ Toàn màn hình</button>
           </div>
-          <div id="chartMain"></div><div id="chartRsi"></div><div id="chartMacd"></div>
+          <div id="chartMain"></div><div id="chartVol"></div>
         </div>
         <div id="chartProWrap" style="display:none;height:640px"></div>
       </div>
@@ -392,9 +392,9 @@ inits.detail = function(t){
       $('#btnChartPro').classList.add('active'); $('#btnChartSig').classList.remove('active');
       loadProChart();
     };
-    $('#ckBoll').onchange = () => { const b = $('#dRanges .btn.active'); drawPrice(b?+b.dataset.y:1); };
+    $('#ckBoll').onchange = () => { const b = $('#dRanges .btn.active'); drawPrice(b?+b.dataset.y:14); };
     $('#btnCmpAdd').onclick = () => { if (curT) addCmp(curT); };
-    $('#btnLog').onclick = function(){ useLog = !useLog; this.classList.toggle('active', useLog); const b = $('#dRanges .btn.rng.active'); drawPrice(b?+b.dataset.y:1); };
+    $('#btnLog').onclick = function(){ useLog = !useLog; this.classList.toggle('active', useLog); const b = $('#dRanges .btn.rng.active'); drawPrice(b?+b.dataset.y:14); };
     $('#btnFull').onclick = () => { const el = $('#chartSigWrap'); if (document.fullscreenElement) document.exitFullscreen(); else { el.style.background='#fff'; el.requestFullscreen(); } };
   }
   if (typeof t === 'string') loadDetail(t);
@@ -434,7 +434,7 @@ async function loadDetail(t){
     })).sort((a,b)=>a.av-b.av);
     dtData = {oh, qsAv, rtsAv};
     updateKpis(null);
-    drawPrice(1);
+    drawPrice(14);
     drawCanslim(r, qs);
     drawKq(qs);
     drawRt(rts);
@@ -526,7 +526,7 @@ function renderTPN(s){
 function drawPrice(years){
   if (!curOhlc) return;
   dtCharts.forEach(c=>c.remove()); dtCharts = [];
-  ['chartMain','chartRsi','chartMacd'].forEach(id=>$('#'+id).innerHTML='');
+  ['chartMain','chartVol'].forEach(id=>$('#'+id).innerHTML='');
   const oh = curOhlc; const n = oh.t.length;
   const from = years>=14 ? 0 : Math.max(0, n - Math.round(250*years));
   const T = oh.t.slice(from), O = oh.o.slice(from), H = oh.h.slice(from), Lo = oh.l.slice(from), C = oh.c.slice(from), V = oh.v.slice(from);
@@ -546,9 +546,7 @@ function drawPrice(years){
       const ix = T.indexOf(p.time);
       if (ix>=0) { leg.innerHTML = fmtL(ix); updateKpis(from + ix); }   // bang so lieu chay theo con tro
     }); }
-  const vs = ch.addHistogramSeries({priceScaleId:'vol', priceFormat:{type:'volume'}});
-  ch.priceScale('vol').applyOptions({scaleMargins:{top:0.82,bottom:0}});
-  vs.setData(T.map((t,i)=>({time:t,value:V[i],color: C[i]>=O[i] ? 'rgba(24,163,75,.35)':'rgba(229,72,77,.35)'})));
+
   const cAll = oh.c;
   const cut = a => a.slice(from);
   addLine(ch, T, cut(smaS(cAll,20)), '#2563eb', 'MA20');
@@ -556,21 +554,14 @@ function drawPrice(years){
   if (cAll.length>=200) addLine(ch, T, cut(smaS(cAll,200)), '#8b5cf6', 'MA200');
   if ($('#ckBoll').checked) { const bb = bollS(cAll); addLine(ch, T, cut(bb.map(x=>x[0])), 'rgba(107,114,128,.55)', 'BB+'); addLine(ch, T, cut(bb.map(x=>x[1])), 'rgba(107,114,128,.55)', 'BB-'); }
   ch.timeScale().fitContent();
-  // RSI
-  const ch2 = LightweightCharts.createChart($('#chartRsi'), chartOpts()); dtCharts.push(ch2);
-  addLine(ch2, T, cut(rsiS(cAll)), '#2563eb', 'RSI14');
-  [30,70].forEach(v => ch2.addLineSeries({color:'#d1d5db',lineWidth:1,priceLineVisible:false,lastValueVisible:false}).setData(T.map(t=>({time:t,value:v}))));
-  ch2.timeScale().fitContent();
-  // MACD
-  const ch3 = LightweightCharts.createChart($('#chartMacd'), chartOpts()); dtCharts.push(ch3);
-  const md = macdS(cAll);
-  const hs = ch3.addHistogramSeries({});
-  hs.setData(T.map((t,i)=>{ const v = md.hist[from+i]; return v!=null?{time:t,value:v,color:v>=0?'rgba(24,163,75,.5)':'rgba(229,72,77,.5)'}:null; }).filter(Boolean));
-  addLine(ch3, T, cut(md.m), '#2563eb', 'MACD'); addLine(ch3, T, cut(md.sig), '#d97706', 'Signal');
-  ch3.timeScale().fitContent();
+  // Volume — khung rieng tach khoi chart gia
+  const chV = LightweightCharts.createChart($('#chartVol'), chartOpts()); dtCharts.push(chV);
+  const vs = chV.addHistogramSeries({priceFormat:{type:'volume'}});
+  vs.setData(T.map((t,i)=>({time:t,value:V[i],color: C[i]>=O[i] ? 'rgba(24,163,75,.55)':'rgba(229,72,77,.55)'})));
+  chV.timeScale().fitContent();
   // đồng bộ trục thời gian
   const sync = (a,b) => a.timeScale().subscribeVisibleLogicalRangeChange(r => r && b.timeScale().setVisibleLogicalRange(r));
-  sync(ch,ch2); sync(ch,ch3); sync(ch2,ch);
+  sync(ch,chV); sync(chV,ch);
 }
 function drawCanslim(r, qs){
   const np = qs.map(x=>pick(x,NPAT));

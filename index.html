@@ -43,7 +43,7 @@ nav{display:flex;gap:4px;flex:1}
 .g2{grid-template-columns:1fr 1fr}
 .hero{display:grid;grid-template-columns:1fr 400px;gap:16px}
 .stats4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-@media(max-width:1000px){.g2,.hero,.stats4{grid-template-columns:1fr}.searchbox{min-width:120px}}
+@media(max-width:1000px){.g2,.hero,.stats4{grid-template-columns:1fr}.searchbox{min-width:120px}.kpis{grid-template-columns:repeat(3,1fr)}}
 /* ===== SEGMENTED ===== */
 .seg{display:inline-flex;background:var(--panel2);border-radius:9px;padding:3px;gap:2px}
 .seg button{border:none;background:none;font:inherit;font-size:12.5px;font-weight:600;color:var(--muted);padding:6px 16px;border-radius:7px;cursor:pointer}
@@ -76,8 +76,9 @@ input[type=number]{width:80px}
 .cs-letter{display:inline-flex;width:30px;height:30px;border-radius:8px;align-items:center;justify-content:center;font-weight:800;margin-right:6px;border:1px solid var(--border);font-size:13px}
 .cs-on{background:var(--green-soft);color:var(--green-dark);border-color:#B7E4C7}
 .cs-off{background:var(--panel2);color:var(--muted)}
-.kpis{display:flex;gap:10px;flex-wrap:wrap}
-.kpi{background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px 14px;min-width:108px}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.kpi{background:#fff;padding:11px 16px;min-width:0}
+.kpi:hover{background:var(--green-soft)}
 .kpi .l{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.01em}
 .kpi .v{font-size:16.5px;font-weight:700;margin-top:3px;color:var(--text)}
 /* perf rows (Finbox style) */
@@ -85,7 +86,7 @@ input[type=number]{width:80px}
 .perf-row:last-child{border-bottom:none}
 .perf-row .l{color:var(--muted);font-size:12.5px;font-weight:500}
 .perf-row .v{font-weight:700;font-size:15px}
-#chartMain{height:420px}#chartRsi,#chartMacd{height:110px}
+#chartMain{height:440px}#chartVol{height:140px;margin-top:10px}
 .mini{font-size:12px;color:var(--muted)}
 .search-wrap{position:relative}
 #sugg,#navSugg{position:absolute;top:40px;left:0;background:#fff;border:1px solid var(--border);border-radius:10px;z-index:200;max-height:300px;overflow:auto;min-width:290px;display:none;box-shadow:0 12px 32px rgba(16,24,40,.14)}
@@ -132,7 +133,7 @@ footer{color:var(--muted);font-size:11.5px;padding:20px 0 28px;text-align:center
   <footer>Disclaimer: Số liệu hiệu suất tính từ mô phỏng lịch sử (backtest) của hệ Khoa KAFI Signal, đã gồm phí 0,3%/chiều; kết quả quá khứ không đảm bảo tương lai. Nguồn dữ liệu: VNDirect (giá), Vietcap IQ (BCTC). Thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</footer>
 </div>
 <div id="toast"></div>
-<script src="dashboard_data.js?v=20260706f"></script>
-<script src="dashboard_app.js?v=20260706f"></script>
+<script src="dashboard_data.js?v=20260706h"></script>
+<script src="dashboard_app.js?v=20260706h"></script>
 </body>
 </html>
