@@ -660,14 +660,63 @@ inits.watch = function(){
   el.innerHTML = `<div class="card">
     <h2>Vùng theo dõi — canh phiên bùng nổ <span class="hint">quét cuối phiên · ${ws.length} mã đạt chuẩn nền · ${(SUM.updated||'')}</span></h2>
     <div class="mini" style="margin-bottom:10px">Danh sách mã đã đạt chuẩn tích lũy + dòng tiền của Khoa KAFI Signal tính đến hết phiên gần nhất. Sáng mai chỉ cần tập trung các mã này: mã nào bùng nổ đạt chuẩn trong phiên là tín hiệu MUA được kích hoạt. Độ nén càng thấp — lò xo càng chặt.</div>
-    <table><tr><th>Mã</th><th style="text-align:left">Tên</th><th>Sàn</th><th>Giá</th><th>GTGD TB20 (tỷ)</th><th>Độ nén nền</th><th>Cách đỉnh nền</th><th>RS</th><th>Hạng AI</th></tr>
+    <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap">
+      <button class="btn" id="btnLive">Bật trực chiến trong phiên</button>
+      <span class="mini" id="liveSt"></span>
+    </div>
+    <table><tr><th>Mã</th><th style="text-align:left">Tên</th><th>Sàn</th><th>Giá</th><th>Trong phiên</th><th>GTGD TB20 (tỷ)</th><th>Độ nén nền</th><th>Cách đỉnh nền</th><th>RS</th><th>Hạng AI</th></tr>
     ${ws.map(r=>`<tr class="row" onclick="openDetail('${r.t}')">
       <td><b>${r.t}</b></td><td style="text-align:left" class="mini">${r.n||''}</td><td>${r.b==='HO'?'HOSE':'HNX'}</td>
-      <td>${fmt(r.p,2)}</td><td>${fmt((r.val20||0)/1000,0)}</td>
+      <td>${fmt(r.p,2)}</td><td id="lv_${r.t}" class="mut">—</td><td>${fmt((r.val20||0)/1000,0)}</td>
       <td><span class="chip ${r.wrng<=8?'g':'a'}">${r.wrng}%</span></td>
       <td class="${cls(r.wdb)}">${pct(r.wdb)}</td><td>${r.rs??'—'}</td>
       <td><span class="chip ${r.wgrade==='weak'?'a':'g'}">${r.wgrade==='weak'?'Yếu':'Mạnh'}</span></td></tr>`).join('')}
     </table>${ws.length?'':'<div class="mini" style="padding:14px">Chưa có mã nào đạt chuẩn nền — bấm "Cập nhật dữ liệu" để quét lại cuối phiên.</div>'}</div>`;
+  $('#btnLive').onclick = () => liveWatch.toggle(ws);
+  liveWatch.paint();
+};
+// ===== TRỰC CHIẾN TRONG PHIÊN: poll giá realtime các mã vùng theo dõi, báo khi bùng nổ =====
+const liveWatch = {
+  timer: null, list: [],
+  inSession(){ const h = new Date().getHours()+new Date().getMinutes()/60; const d = new Date().getDay(); return d>=1 && d<=5 && ((h>=9 && h<11.5) || (h>=13 && h<14.83)); },
+  paint(){ const b = document.getElementById('btnLive'), st = document.getElementById('liveSt'); if(!b) return;
+    b.classList.toggle('active', !!this.timer);
+    b.textContent = this.timer ? 'Đang trực chiến — bấm để tắt' : 'Bật trực chiến trong phiên';
+    if (st && !this.timer) st.textContent = 'Quét mỗi 90 giây trong giờ giao dịch, báo ngay khi có mã bùng nổ. Giữ tab này mở.'; },
+  async toggle(ws){
+    if (this.timer) { clearInterval(this.timer); this.timer = null; this.paint(); return; }
+    if ('Notification' in window && Notification.permission === 'default') await Notification.requestPermission();
+    this.list = ws.map(r=>({t:r.t, b:r.b, v20:r.v20||0}));
+    this.timer = setInterval(()=>this.tick(), 90000);
+    this.paint(); this.tick();
+  },
+  notified: {},
+  notify(key, title, body){
+    const day = new Date().toISOString().slice(0,10);
+    if (this.notified[key] === day) return; this.notified[key] = day;
+    toast(title + ' — ' + body);
+    if ('Notification' in window && Notification.permission === 'granted') new Notification(title, {body});
+  },
+  async tick(){
+    const st = document.getElementById('liveSt');
+    if (!this.inSession()) { if (st) st.textContent = 'Ngoài giờ giao dịch — chờ phiên sau (quét tự động 9:00-11:30, 13:00-14:50).'; return; }
+    const now = NOW(); let hot = 0;
+    const h = new Date().getHours()+new Date().getMinutes()/60;
+    const elapsed = Math.max(0.08, Math.min(1, (h<11.5 ? (h-9) : (h<13 ? 2.5 : 2.5+(h-13))) / 4.33));
+    const one = async m => { try {
+      const d = await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${m.t}&resolution=D&from=${now-86400*7}&to=${now}`);
+      const c = d.c||[], v = d.v||[]; if (c.length < 2) return;
+      const px = c[c.length-1], chg = (px/c[c.length-2]-1)*100;
+      const volR = m.v20 ? (v[v.length-1]/elapsed)/m.v20 : 0;
+      const cell = document.getElementById('lv_'+m.t);
+      if (cell) { cell.textContent = (chg>=0?'+':'')+chg.toFixed(1)+'%' + (volR>=1.5?' · KL x'+volR.toFixed(1):''); cell.className = chg>=3?'up':(chg<=-2?'down':'mut'); }
+      const thr = m.b==='HN' ? 8.8 : 6.3;
+      if (chg >= thr-0.15 && volR >= 1.8) { hot++; this.notify('L2'+m.t, m.t+' '+(chg>=0?'+':'')+chg.toFixed(1)+'% kèm dòng tiền mạnh', 'Tín hiệu MUA có thể kích hoạt cuối phiên — mở dashboard kiểm tra ngay.'); }
+      else if (chg >= 4) { hot++; this.notify('L1'+m.t, m.t+' +'+chg.toFixed(1)+'% — đang nóng máy', 'Mã trong vùng theo dõi đang tăng tốc. Canh chặt tới cuối phiên.'); }
+    } catch(e){} };
+    for (let i=0;i<this.list.length;i+=6) await Promise.all(this.list.slice(i,i+6).map(one));
+    if (st) st.textContent = 'Quét lúc ' + new Date().toTimeString().slice(0,5) + ' — ' + this.list.length + ' mã' + (hot ? ' · ' + hot + ' mã đang nóng' : ' · chưa mã nào bùng nổ');
+  }
 };
 $('#btnRefresh').onclick = async function(){
   if (!confirm('Tải lại toàn bộ dữ liệu 702 mã từ API? Mất khoảng 1-2 phút.')) return;
