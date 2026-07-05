@@ -80,7 +80,7 @@ function drawPerf(){
   if (perfChart) perfChart.destroy();
   perfChart = new Chart(document.getElementById('cvPerf'), { type:'line',
     data:{ labels, datasets:[
-      {label:'Hệ Trần Phá Nền', data:dsT, borderColor:'#128A3E', backgroundColor:'#128A3E', pointRadius:0, borderWidth:2.5, tension:.35},
+      {label:'Khoa KAFI Signal', data:dsT, borderColor:'#128A3E', backgroundColor:'#128A3E', pointRadius:0, borderWidth:2.5, tension:.35},
       {label:'VN-Index', data:dsV, borderColor:'#E5484D', backgroundColor:'#E5484D', pointRadius:0, borderWidth:2, tension:.35}]},
     options:{ responsive:true, maintainAspectRatio:false, layout:{padding:{right:70}}, interaction:{mode:'index',intersect:false},
       plugins:{ legend:{labels:{color:'#1F2937', usePointStyle:true, pointStyle:'circle', boxWidth:7, boxHeight:7, font:{weight:600, size:12, family:'Inter'}}},
@@ -98,7 +98,7 @@ inits.market = async function(){
   <div class="hero">
     <div class="card" style="margin-bottom:0">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px">
-        <h2 style="margin:0">Hiệu suất hệ Trần Phá Nền <span class="hint">so với VN-Index · backtest sau phí</span></h2>
+        <h2 style="margin:0">Hiệu suất Khoa KAFI Signal <span class="hint">so với VN-Index · backtest sau phí</span></h2>
         <div class="seg" id="perfSeg"><button data-r="all" class="on">Tất cả</button><button data-r="1y">1 năm</button><button data-r="6m">6 tháng</button></div>
       </div>
       <div style="height:330px"><canvas id="cvPerf"></canvas></div>
@@ -116,7 +116,7 @@ inits.market = async function(){
   </div>
   <div style="height:16px"></div>
   <div class="stats4">
-    <div class="card" style="margin:0"><h2>Lợi suất hệ TPN</h2>
+    <div class="card" style="margin:0"><h2>Lợi suất KAFI Signal</h2>
       <div class="perf-row"><span class="l">1 năm</span><span class="v up">${st.y1>=0?'+':''}${st.y1}%</span></div>
       <div class="perf-row"><span class="l">3 năm</span><span class="v up">+${st.y3}%</span></div>
       <div class="perf-row"><span class="l">Từ 2019</span><span class="v up">+${st.all}%</span></div></div>
@@ -294,7 +294,7 @@ function loadProChart(){
       + [['segment','✏️ Xu hướng'],['horizontalStraightLine','― Ngang'],['rayLine','↗ Tia'],['fibonacciLine','𝑓 Fibonacci'],['priceChannelLine','∥ Kênh giá']]
         .map(x=>`<button class="btn" style="padding:3px 10px;font-size:12px" data-ov="${x[0]}">${x[1]}</button>`).join('')
       + '<button class="btn" style="padding:3px 10px;font-size:12px" id="proClear">🗑 Xóa nét vẽ</button>'
-      + '<span class="mini" style="margin-left:auto">Badge B/S = tín hiệu Trần Phá Nền v1.1</span></div>'
+      + '<span class="mini" style="margin-left:auto">Badge B/S = Khoa KAFI Signal</span></div>'
       + '<div id="proK" style="height:620px"></div>';
     try { klinecharts.dispose('proK'); } catch(e){}
     proChart = klinecharts.init('proK');
@@ -346,7 +346,7 @@ inits.detail = function(t){
         <button class="btn" id="btnCmpAdd">+ Thêm vào So sánh</button>
       </div></div>
       <div id="dBody" style="display:none">
-      <div class="card"><h2>Tín hiệu Trần Phá Nền v1.1</h2><div id="dTpn"></div><div class="kpis" id="dKpis" style="margin-top:10px"></div></div>
+      <div class="card"><h2>Khoa KAFI Signal <span class="hint">tín hiệu AI độc quyền</span></h2><div id="dTpn"></div><div class="kpis" id="dKpis" style="margin-top:10px"></div></div>
       <div class="card"><h2 id="dChartTitle">Biểu đồ giá</h2>
         <div style="display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap;align-items:center" id="dRanges">
           <button class="btn active" id="btnChartSig">Chart Tín hiệu</button>
@@ -500,13 +500,13 @@ function renderTPN(s){
   const el = document.getElementById('dTpn');
   if (!el) return;
   let chip, desc;
-  if (s.inPos && s.buyToday) { chip = ['MUA HÔM NAY', '#e7f6ec', '#128a3e']; desc = `Cây trần phá nền vừa xuất hiện — theo luật: quét giá tím trong phiên. Phán quyết T+3: hàng về lỗ là bán.`; }
+  if (s.inPos && s.buyToday) { chip = ['TÍN HIỆU MUA HÔM NAY', '#e7f6ec', '#128a3e']; desc = `Thuật toán vừa kích hoạt điểm MUA — vào lệnh ngay trong phiên. Hệ thống sẽ phán quyết giữ/bán khi hàng về tài khoản.`; }
   else if (s.inPos) {
-    chip = [`ĐANG GỒNG — T+${s.holdDays}, ${s.pnl>0?'+':''}${s.pnl.toFixed(1)}%`, s.pnl>0?'#e7f6ec':'#fdecec', s.pnl>0?'#128a3e':'#e5484d'];
-    desc = `Mua ${s.buyDate} giá ${s.fill.toFixed(2)}. ` + (s.holdDays<3 ? `Chờ hàng về (T+3) — nếu đóng cửa ≤ giá mua thì BÁN.` : (s.belowMa20 ? `⚠️ Đang thủng MA20 — thêm 1 phiên đóng dưới nữa là BÁN.` : `Gồng tới khi đóng cửa dưới MA20 hai phiên liên tiếp. Cắt lỗ cứng −7%.`));
+    chip = [`ĐANG NẮM GIỮ — T+${s.holdDays}, ${s.pnl>0?'+':''}${s.pnl.toFixed(1)}%`, s.pnl>0?'#e7f6ec':'#fdecec', s.pnl>0?'#128a3e':'#e5484d'];
+    desc = `Tín hiệu MUA ${s.buyDate} giá ${s.fill.toFixed(2)}. ` + (s.holdDays<3 ? `Đang chờ hàng về — hệ thống sẽ phán quyết giữ hay bán ngay khi hàng về.` : (s.belowMa20 ? `⚠️ Cấu trúc tăng giá đang suy yếu — chuẩn bị tín hiệu BÁN.` : `Đang trong xu hướng tăng — giữ vị thế tới khi hệ thống phát tín hiệu BÁN. Cắt lỗ tự động −7%.`));
   }
-  else if (!s.hasCeil && s.rng <= 12 && s.gtgd >= 20) { chip = ['NỀN ĐẠT — CHỜ CÂY TRẦN', '#fef9e7', '#b45309']; desc = `Nền 30 phiên biên độ ${s.rng.toFixed(1)}% (≤12%), chưa có trần, GTGD ${s.gtgd.toFixed(0)} tỷ/phiên. Chỉ chờ phiên kịch trần (+${s.ceilThr}%) với volume ≥2,5× TB là kích hoạt MUA.`; }
-  else { chip = ['CHƯA CÓ SETUP', '#f3f5f7', '#6b7280']; const why = []; if (s.rng > 12) why.push(`nền còn rộng ${s.rng.toFixed(1)}% (cần ≤12%)`); if (s.hasCeil) why.push('đã có trần trong 30 phiên (sóng đã mở)'); if (s.gtgd < 20) why.push(`GTGD ${s.gtgd.toFixed(0)} tỷ (cần ≥20)`); desc = 'Thiếu: ' + why.join(' · '); }
+  else if (!s.hasCeil && s.rng <= 12 && s.gtgd >= 20) { chip = ['VÙNG THEO DÕI — CHỜ ĐIỂM MUA', '#fef9e7', '#b45309']; desc = `Cổ phiếu đã vào vùng theo dõi của thuật toán — cấu trúc tích lũy và dòng tiền đạt chuẩn. Chờ phiên bùng nổ kích hoạt tín hiệu MUA.`; }
+  else { chip = ['CHƯA CÓ TÍN HIỆU', '#f3f5f7', '#6b7280']; desc = 'Cổ phiếu chưa vào vùng theo dõi của thuật toán. Hệ thống quét tự động mỗi phiên.'; }
   el.innerHTML = `<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:4px">
     <span class="tag" style="background:${chip[1]};color:${chip[2]};font-size:14px;padding:6px 14px">${chip[0]}</span>
     <span class="mini">${desc}</span></div>`;
