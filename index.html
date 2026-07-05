@@ -43,16 +43,21 @@ nav{display:flex;gap:4px;flex:1}
 .g2{grid-template-columns:1fr 1fr}
 .hero{display:grid;grid-template-columns:1fr 400px;gap:16px}
 .stats4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-@media(max-width:1000px){.g2,.hero,.stats4{grid-template-columns:1fr}.searchbox{min-width:120px}.kpis{grid-template-columns:repeat(3,1fr)}
-.topbar-in{flex-wrap:wrap;height:auto;padding:8px 12px;gap:8px}
-nav{order:3;flex-basis:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.nav-link{padding:9px 10px;white-space:nowrap;font-size:13px}
-.btn-cta{padding:7px 11px;font-size:12px}
+@media(max-width:1000px){.g2,.hero,.stats4{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(3,1fr)}
+.topbar-in{flex-wrap:wrap;height:auto;padding:10px 12px;gap:10px}
+.logo{order:1}
+.btn-cta{order:2;margin-left:auto;padding:7px 11px;font-size:12px}
+.searchbox{order:3;flex-basis:100%;min-width:0}
+nav{order:4;flex-basis:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;gap:0}
+.nav-link{padding:9px 10px;white-space:nowrap;font-size:13.5px}
 #chartSigWrap>div{flex-direction:column}
 #dSide{width:100%!important}
-.wrap{padding:10px 10px}
-.card{padding:14px 12px}
-table{font-size:12px}}
+.wrap{padding:10px 8px}
+.card{padding:14px 12px;overflow-x:auto}
+div:has(>#cvPerf){height:330px!important}
+#chartMain{height:340px}#chartVol{height:110px}
+table{font-size:12px}
+html{font-size:13px}}
 /* ===== SEGMENTED ===== */
 .seg{display:inline-flex;background:var(--panel2);border-radius:9px;padding:3px;gap:2px}
 .seg button{border:none;background:none;font:inherit;font-size:12.5px;font-weight:600;color:var(--muted);padding:6px 16px;border-radius:7px;cursor:pointer}
@@ -142,8 +147,8 @@ footer{color:var(--muted);font-size:11.5px;padding:20px 0 28px;text-align:center
   <footer>Disclaimer: Số liệu hiệu suất tính từ mô phỏng lịch sử (backtest) của hệ Khoa KAFI Signal, đã gồm phí 0,3%/chiều; kết quả quá khứ không đảm bảo tương lai. Nguồn dữ liệu: VNDirect (giá), Vietcap IQ (BCTC). Thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</footer>
 </div>
 <div id="toast"></div>
-<script src="dashboard_data.js?v=20260706s"></script>
-<script src="dashboard_app.js?v=20260706s"></script>
+<script src="dashboard_data.js?v=20260706t"></script>
+<script src="dashboard_app.js?v=20260706t"></script>
 </body>
 </html>
 

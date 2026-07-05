@@ -719,14 +719,14 @@ inits.watch = function(){
       <button class="btn" id="btnLive">Bật trực chiến trong phiên</button>
       <span class="mini" id="liveSt"></span>
     </div>
-    <table><tr><th>Mã</th><th style="text-align:left">Tên</th><th>Sàn</th><th>Giá</th><th>Trong phiên</th><th>GTGD TB20 (tỷ)</th><th>Độ nén nền</th><th>Cách đỉnh nền</th><th>RS</th><th>Hạng AI</th></tr>
+    <div style="overflow:auto"><table><tr><th>Mã</th><th style="text-align:left">Tên</th><th>Sàn</th><th>Giá</th><th>Trong phiên</th><th>GTGD TB20 (tỷ)</th><th>Độ nén nền</th><th>Cách đỉnh nền</th><th>RS</th><th>Hạng AI</th></tr>
     ${ws.map(r=>`<tr class="row" onclick="openDetail('${r.t}')">
       <td><b>${r.t}</b></td><td style="text-align:left" class="mini">${r.n||''}</td><td>${r.b==='HO'?'HOSE':'HNX'}</td>
       <td>${fmt(r.p,2)}</td><td id="lv_${r.t}" class="mut">—</td><td>${fmt((r.val20||0)/1000,0)}</td>
       <td><span class="chip ${r.wrng<=8?'g':'a'}">${r.wrng}%</span></td>
       <td class="${cls(r.wdb)}">${pct(r.wdb)}</td><td>${r.rs??'—'}</td>
       <td><span class="chip ${r.wgrade==='weak'?'a':'g'}">${r.wgrade==='weak'?'Yếu':'Mạnh'}</span></td></tr>`).join('')}
-    </table>${ws.length?'':'<div class="mini" style="padding:14px">Chưa có mã nào đạt chuẩn nền — bấm "Cập nhật dữ liệu" để quét lại cuối phiên.</div>'}</div>`;
+    </table></div>${ws.length?'':'<div class="mini" style="padding:14px">Chưa có mã nào đạt chuẩn nền — bấm "Cập nhật dữ liệu" để quét lại cuối phiên.</div>'}</div>`;
   $('#btnLive').onclick = () => liveWatch.toggle(ws);
   liveWatch.paint();
 };
