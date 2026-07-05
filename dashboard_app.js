@@ -175,10 +175,27 @@ function loadProChart(){
       + '<div id="proK" style="height:620px"></div>';
     try { klinecharts.dispose('proK'); } catch(e){}
     proChart = klinecharts.init('proK');
-    proChart.setStyles({ candle: { bar: { upColor:'#18a34b', downColor:'#e5484d', upBorderColor:'#18a34b', downBorderColor:'#e5484d', upWickColor:'#18a34b', downWickColor:'#e5484d' } },
-      indicator: { lines: [{color:'#2563eb'},{color:'#d97706'},{color:'#8b5cf6'}] } });
+    // Bang mau TradingView
+    const UP = '#089981', DOWN = '#F23645';
+    proChart.setStyles({
+      grid: { horizontal: { color: '#F0F3FA' }, vertical: { color: '#F0F3FA' } },
+      candle: {
+        bar: { upColor: UP, downColor: DOWN, upBorderColor: UP, downBorderColor: DOWN, upWickColor: UP, downWickColor: DOWN },
+        priceMark: { last: { upColor: UP, downColor: DOWN } },
+        tooltip: { text: { color: '#131722' } }
+      },
+      indicator: {
+        lines: [{color:'#2962FF'},{color:'#FF6D00'},{color:'#9C27B0'},{color:'#E91E63'},{color:'#787B86'}],
+        bars: [{ upColor: 'rgba(8,153,129,.5)', downColor: 'rgba(242,54,69,.5)', noChangeColor: '#888' }],
+        tooltip: { text: { color: '#131722' } }
+      },
+      xAxis: { axisLine: { color: '#DDE1E6' }, tickText: { color: '#787B86' } },
+      yAxis: { axisLine: { color: '#DDE1E6' }, tickText: { color: '#787B86' } },
+      crosshair: { horizontal: { line: { color: '#9598A1' }, text: { backgroundColor: '#131722' } },
+                   vertical:   { line: { color: '#9598A1' }, text: { backgroundColor: '#131722' } } }
+    });
     proChart.applyNewData(curOhlc.t.map((tt,i)=>({ timestamp: tt*1000, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i], volume: curOhlc.v[i] })));
-    proChart.createIndicator('MA', true, { id: 'candle_pane' });
+    proChart.createIndicator({ name: 'MA', calcParams: [10, 20, 50, 200] }, true, { id: 'candle_pane' });
     proChart.createIndicator('VOL');
     proChart.createIndicator('MACD');
     addProBadges();
