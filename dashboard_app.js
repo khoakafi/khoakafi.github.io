@@ -150,7 +150,7 @@ function renderSc(){
 
 // ================= 3. CHI TIẾT MÃ =================
 let dtInit = false, dtCharts = [], kqChart = null, rtChart = null, curT = null, curOhlc = null;
-let tvLoadedFor = null;
+let tvLoadedFor = null, useLog = false;
 function loadTvWidget(){
   if (!curT || tvLoadedFor === curT) return;
   tvLoadedFor = curT;
@@ -188,7 +188,14 @@ inits.detail = function(t){
           ${[['3T',0.25],['6T',0.5],['1N',1],['3N',3],['5N',5],['Tất cả',14]].map((x,i)=>`<button class="btn rng ${i===2?'active':''}" data-y="${x[1]}">${x[0]}</button>`).join('')}
           <label class="mini" style="margin-left:10px"><input type="checkbox" id="ckBoll"> Bollinger</label>
         </div>
-        <div id="chartSigWrap"><div id="chartMain"></div><div id="chartRsi"></div><div id="chartMacd"></div></div>
+        <div id="chartSigWrap" style="position:relative">
+          <div id="ohlcLegend" style="position:absolute;top:6px;left:8px;z-index:20;font-size:12.5px;color:#374151;background:rgba(255,255,255,.85);padding:3px 10px;border-radius:6px;border:1px solid #e4e8ec"></div>
+          <div style="position:absolute;top:6px;right:76px;z-index:20;display:flex;gap:6px">
+            <button class="btn" id="btnLog" style="padding:2px 10px;font-size:11px">Log</button>
+            <button class="btn" id="btnFull" style="padding:2px 10px;font-size:11px">⛶ Toàn màn hình</button>
+          </div>
+          <div id="chartMain"></div><div id="chartRsi"></div><div id="chartMacd"></div>
+        </div>
         <div id="chartProWrap" style="display:none;height:640px"></div>
       </div>
       <div class="card"><h2>Đánh giá CANSLIM tự động</h2><div id="dCs"></div></div>
@@ -218,6 +225,8 @@ inits.detail = function(t){
     };
     $('#ckBoll').onchange = () => { const b = $('#dRanges .btn.active'); drawPrice(b?+b.dataset.y:1); };
     $('#btnCmpAdd').onclick = () => { if (curT) addCmp(curT); };
+    $('#btnLog').onclick = function(){ useLog = !useLog; this.classList.toggle('active', useLog); const b = $('#dRanges .btn.rng.active'); drawPrice(b?+b.dataset.y:1); };
+    $('#btnFull').onclick = () => { const el = $('#chartSigWrap'); if (document.fullscreenElement) document.exitFullscreen(); else { el.style.background='#fff'; el.requestFullscreen(); } };
   }
   if (typeof t === 'string') loadDetail(t);
   else if (!curT) loadDetail('FPT');
@@ -340,10 +349,18 @@ function drawPrice(years){
   const oh = curOhlc; const n = oh.t.length;
   const from = years>=14 ? 0 : Math.max(0, n - Math.round(250*years));
   const T = oh.t.slice(from), O = oh.o.slice(from), H = oh.h.slice(from), Lo = oh.l.slice(from), C = oh.c.slice(from), V = oh.v.slice(from);
-  const ch = LightweightCharts.createChart($('#chartMain'), chartOpts()); dtCharts.push(ch);
+  const opts = chartOpts();
+  opts.rightPriceScale.mode = useLog ? 1 : 0;
+  const ch = LightweightCharts.createChart($('#chartMain'), opts); dtCharts.push(ch);
   const cs = ch.addCandlestickSeries(candleOpts());
   cs.setData(T.map((t,i)=>({time:t,open:O[i],high:H[i],low:Lo[i],close:C[i]})));
   if (curMarkers.length) cs.setMarkers(curMarkers.filter(m=>m.time>=T[0]));
+  // OHLC legend theo con tro (kieu TradingView)
+  const leg = document.getElementById('ohlcLegend');
+  const fmtL = (i) => { const chgP = i>0 ? (C[i]/C[i-1]-1)*100 : 0; const cl = C[i]>=O[i] ? '#128a3e' : '#e5484d';
+    return `<b>${curT}</b> &nbsp;O <span style="color:${cl}">${O[i]}</span> &nbsp;H <span style="color:${cl}">${H[i]}</span> &nbsp;L <span style="color:${cl}">${Lo[i]}</span> &nbsp;C <span style="color:${cl}">${C[i]}</span> &nbsp;<span style="color:${chgP>=0?'#128a3e':'#e5484d'}">${chgP>=0?'+':''}${chgP.toFixed(2)}%</span> &nbsp;<span class="mini">KL ${(V[i]/1e6).toFixed(2)}tr</span>`; };
+  if (leg && T.length) { leg.innerHTML = fmtL(T.length-1);
+    ch.subscribeCrosshairMove(p => { if (!p || !p.time) { leg.innerHTML = fmtL(T.length-1); return; } const ix = T.indexOf(p.time); if (ix>=0) leg.innerHTML = fmtL(ix); }); }
   const vs = ch.addHistogramSeries({priceScaleId:'vol', priceFormat:{type:'volume'}});
   ch.priceScale('vol').applyOptions({scaleMargins:{top:0.82,bottom:0}});
   vs.setData(T.map((t,i)=>({time:t,value:V[i],color: C[i]>=O[i] ? 'rgba(24,163,75,.35)':'rgba(229,72,77,.35)'})));
