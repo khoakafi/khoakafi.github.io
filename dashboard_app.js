@@ -3,7 +3,7 @@
 'use strict';
 // ================= DỮ LIỆU & TIỆN ÍCH =================
 let SUM = window.SUMMARY;
-try { const ls = localStorage.getItem('summary_v1'); if (ls) { const p = JSON.parse(ls); if (p && p.rows && p.rows.length > 500) { if (!p.rows.some(r=>r.watch) && window.SUMMARY.rows.some(r=>r.watch)) { const wm={}; window.SUMMARY.rows.forEach(r=>{ if(r.watch) wm[r.t]=r; }); p.rows.forEach(r=>{ const w=wm[r.t]; if(w){ r.watch=1; r.wrng=w.wrng; r.wdb=w.wdb; r.wgrade=w.wgrade; } }); } SUM = p; } } } catch(e){}
+try { const ls = localStorage.getItem('summary_v1'); if (ls) { const p = JSON.parse(ls); if (p && p.rows && p.rows.length > 500) { if (!p.tpn && window.SUMMARY.tpn) p.tpn = window.SUMMARY.tpn; if (!p.rows.some(r=>r.watch) && window.SUMMARY.rows.some(r=>r.watch)) { const wm={}; window.SUMMARY.rows.forEach(r=>{ if(r.watch) wm[r.t]=r; }); p.rows.forEach(r=>{ const w=wm[r.t]; if(w){ r.watch=1; r.wrng=w.wrng; r.wdb=w.wdb; r.wgrade=w.wgrade; } }); } SUM = p; } } } catch(e){}
 const ROWS = () => SUM.rows;
 const byT = {}; SUM.rows.forEach(r => byT[r.t] = r);
 document.getElementById('bgeData').textContent = 'Dữ liệu screener: ' + SUM.updated;
@@ -897,7 +897,7 @@ $('#btnRefresh').onclick = async function(){
     for (const r of out) { r.rs = rk[r.t]||null;
       r.cs = {C:r.npatYoY>=25?1:0, A:(r.cagr3||0)>=20?1:0, N:(r.dHi??-99)>=-15?1:0, S:(r.vx||0)>=1.2?1:0, L:(r.rs||0)>=70?1:0, I:(r.val20||0)>=5000?1:0};
       r.csTong = Object.values(r.cs).reduce((a,b)=>a+b,0); }
-    SUM = {updated: new Date().toISOString().slice(0,16).replace('T',' ')+' (trình duyệt)', nTickers: out.length, rows: out};
+    SUM = {updated: new Date().toISOString().slice(0,16).replace('T',' ')+' (trình duyệt)', nTickers: out.length, rows: out, tpn: SUM.tpn || window.SUMMARY.tpn};
     try { localStorage.setItem('summary_v1', JSON.stringify(SUM)); } catch(e){}
     Object.keys(byT).forEach(k=>delete byT[k]); SUM.rows.forEach(r=>byT[r.t]=r);
     $('#bgeData').textContent = 'Dữ liệu screener: ' + SUM.updated;
