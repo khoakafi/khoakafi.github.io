@@ -118,20 +118,46 @@ function renderTops(){
   const el2 = document.getElementById('topRs');
   if (el2) el2.innerHTML = mini2([...ROWS()].filter(lq).sort((a,b)=>((b.vx||0)*(b.v20||0))-((a.vx||0)*(a.v20||0))).slice(0,10), gCols);
 }
+function renderRecent(){
+  const el = document.getElementById('recentWrap'); if (!el) return;
+  const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
+  el.innerHTML = `<table class="sigtb"><tr><th>Mã</th><th>Giá mua</th><th>Giá bán / TT</th><th>Lợi suất</th></tr>` +
+    tpn.recent.map(d=>{ const sp = d.bp*(1+(d.ret+0.6)/100); return `<tr class="row" onclick="openDetail('${d.t}')">
+      <td><div class="l1">${d.t} ${d.open?'<span class="chip a">Đang mở</span>':''}</div><div class="l2">${d.bd}</div></td>
+      <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
+      <td><div class="l1" style="font-size:13px">${sp>=100?sp.toFixed(1):sp.toFixed(2)}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
+      <td><span class="${d.ret>=0?'up':'down'}" style="font-size:14px">${d.ret>=0?'+':''}${d.ret}%</span></td></tr>`;}).join('') + '</table>';
+}
 async function refreshOpenDeals(){
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
-  const opens = tpn.recent.filter(d=>d.open);
-  if (!opens.length) return;
+  const opens = tpn.recent.filter(d=>d.open && d.bdate);
+  if (!opens.length) { renderRecent(); return; }
   const now = NOW();
   await Promise.all(opens.map(async d => { try {
-    const r = await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${d.t}&resolution=D&from=${now-86400*7}&to=${now}`);
-    const px = r.c[r.c.length-1];
-    const ret = (px/d.bp-1)*100 - 0.6;
-    const pe = document.getElementById('ttp_'+d.t), re = document.getElementById('ttr_'+d.t);
-    if (pe) pe.textContent = px>=100?px.toFixed(1):px.toFixed(2);
-    if (re){ re.textContent = (ret>=0?'+':'')+ret.toFixed(1)+'%'; re.className = ret>=0?'up':'down'; }
-    d.ret = +ret.toFixed(1);
+    const bts = Math.floor(new Date(d.bdate+'T00:00:00Z').getTime()/1000);
+    const r = await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${d.t}&resolution=D&from=${bts-120*86400}&to=${now}`);
+    const c = r.c, tt = r.t; if (!c || c.length < 5) return;
+    let gi = -1; for (let i = 0; i < tt.length; i++){ if (tt[i] >= bts - 43200){ gi = i; break; } }
+    if (gi < 0) return;
+    const fill = d.bp;
+    const sma = (i,n) => { if (i < n-1) return null; let x = 0; for (let k = i-n+1; k <= i; k++) x += c[k]; return x/n; };
+    let big = false, closed = false;
+    for (let i = gi+3; i < c.length; i++){
+      const h = i-gi, pnl = c[i]/fill-1;
+      if (pnl >= 0.25) big = true;
+      const gate = (h === 3 && pnl <= 0) || pnl <= -0.07;
+      const m20 = sma(i,20), m20p = sma(i-1,20), m10 = sma(i,10), m10p = sma(i-1,10);
+      const brk = big ? (m10 && c[i] < m10 && c[i-1] < m10p) : (h > 3 && m20 && c[i] < m20 && c[i-1] < m20p);
+      if (gate || brk){
+        d.open = false; d.ret = +((pnl*100)-0.6).toFixed(1);
+        const dt = new Date(tt[i]*1000);
+        d.sd = ('0'+dt.getDate()).slice(-2)+'/'+('0'+(dt.getMonth()+1)).slice(-2)+'/'+String(dt.getFullYear()).slice(2);
+        closed = true; break;
+      }
+    }
+    if (!closed){ d.ret = +(((c[c.length-1]/fill-1)*100)-0.6).toFixed(1); }
   } catch(e){} }));
+  renderRecent();
 }
 inits.market = async function(){
   if (mktDone) return; mktDone = true;
@@ -149,13 +175,7 @@ inits.market = async function(){
     </div>
     <div class="card" style="margin-bottom:0;display:flex;flex-direction:column">
       <h2 style="text-align:center;letter-spacing:.02em">TOP TÍN HIỆU 6 THÁNG QUA</h2>
-      <div style="flex:1;overflow:auto"><table class="sigtb"><tr><th>Mã</th><th>Giá mua</th><th>Giá bán / TT</th><th>Lợi suất</th></tr>
-      ${(tpn.recent||[]).map(d=>{ const sp=(d.bp*(1+(d.ret+0.6)/100)); return `<tr class="row" onclick="openDetail('${d.t}')">
-        <td><div class="l1">${d.t} ${d.open?'<span class="chip a">Đang mở</span>':''}</div><div class="l2">${d.bd}</div></td>
-        <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
-        <td><div class="l1" style="font-size:13px" ${d.open?`id="ttp_${d.t}"`:''}>${sp>=100?sp.toFixed(1):sp.toFixed(2)}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
-        <td><span ${d.open?`id="ttr_${d.t}"`:''} class="${d.ret>=0?'up':'down'}" style="font-size:14px">${d.ret>=0?'+':''}${d.ret}%</span></td></tr>`;}).join('')}
-      </table></div>
+      <div style="flex:1;overflow:auto" id="recentWrap"></div>
       <button class="btn-cta" style="width:100%;margin-top:12px" onclick="showView('screener')">KHÁM PHÁ BỘ LỌC 702 MÃ</button>
     </div>
   </div>
@@ -184,6 +204,7 @@ inits.market = async function(){
     <div class="card"><h2>Top khối lượng hôm nay <span class="hint">GTGD TB20 ≥ 20 tỷ · cuối phiên gần nhất</span></h2><div id="topRs"></div></div>
   </div>`;
   drawPerf();
+  renderRecent();
   refreshOpenDeals();
   if (!window._odTimer) window._odTimer = setInterval(refreshOpenDeals, 120000);
   $('#perfSeg').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
@@ -494,6 +515,11 @@ function computeTPN(oh, boardCode, qsAv){
       ma20.push(s/20); v20.push(sv/20);
     } else { ma20.push(null); v20.push(null); }
   }
+  const ma10 = [], hi10 = [];
+  for (let i = 0; i < n; i++) {
+    if (i >= 9) { let s2 = 0, hh = -1e9; for (let k = i-9; k <= i; k++) { s2 += c[k]; if (c[k] > hh) hh = c[k]; } ma10.push(s2/10); hi10.push(hh); }
+    else { ma10.push(null); hi10.push(null); }
+  }
   const baseInfo = i => {   // thong tin nen 30 phien truoc bar i
     let hi = -1e9, lo = 1e9, hasCeil = false;
     for (let k = i-30; k < i; k++) {
@@ -502,7 +528,7 @@ function computeTPN(oh, boardCode, qsAv){
     }
     return {rng: (hi-lo)/lo*100, hasCeil};
   };
-  let inPos = false, fill = 0, ei = 0, lastWeakIdx = -9;
+  let inPos = false, fill = 0, ei = 0, lastWeakIdx = -9, big = false, added = false;
   for (let i = 31; i < n; i++) {
     if (!inPos) {
       const chg = (c[i]/c[i-1]-1)*100;
@@ -517,14 +543,20 @@ function computeTPN(oh, boardCode, qsAv){
         markers.push({time: t[i], position:'belowBar', color:'#b45309', shape:'arrowUp', text:'WEAK'});
         continue;
       }
-      inPos = true; fill = c[i]; ei = i;
+      inPos = true; fill = c[i]; ei = i; big = false; added = false;
       markers.push({time: t[i], position:'belowBar', color:'#18a34b', shape:'arrowUp', text:'BUY'});
     } else {
       const h = i - ei, pnl = c[i]/fill - 1;
+      if (pnl >= 0.25) big = true;
+      if (!added && h > 3 && pnl >= 0.10 && hi10[i] && c[i] >= hi10[i]*0.999) {
+        added = true;
+        markers.push({time: t[i], position:'belowBar', color:'#67c98b', shape:'arrowUp', text:'ADD'});
+      }
       let reason = null;
       if (h === 3 && pnl <= 0) reason = 'T+3';
       else if (h >= 3 && pnl <= -0.07) reason = 'CL7';
-      else if (h > 3 && ma20[i] && c[i] < ma20[i] && c[i-1] < ma20[i-1]) reason = 'MA20';
+      else if (big && ma10[i] && c[i] < ma10[i] && c[i-1] < ma10[i-1]) reason = 'MA10';
+      else if (!big && h > 3 && ma20[i] && c[i] < ma20[i] && c[i-1] < ma20[i-1]) reason = 'MA20';
       if (reason) {
         markers.push({time: t[i], position:'aboveBar', color:'#e5484d', shape:'arrowDown', text: (pnl>0?'+':'') + (pnl*100).toFixed(0) + '%'});
         inPos = false;
