@@ -93,18 +93,20 @@ function drawPerf(){
 }
 async function liveQuote(){
   try {
-    const d0 = new Date(Date.now()-4*86400000).toISOString().slice(0,10);
-    const r = await jget(`https://api-finfo.vndirect.com.vn/v4/stock_prices?sort=code&q=date:gte:${d0}&size=3000`);
-    if (!r.data || !r.data.length) return false;
-    const latest = {};
-    r.data.forEach(d=>{ if (!latest[d.code] || d.date > latest[d.code].date) latest[d.code] = d; });
+    let data = null;
+    for (let k = 0; k < 7; k++) {
+      const day = new Date(Date.now()-k*86400000).toISOString().slice(0,10);
+      const r = await jget(`https://api-finfo.vndirect.com.vn/v4/stock_prices?sort=code&q=date:gte:${day}~date:lte:${day}&size=3000`);
+      if (r.data && r.data.length > 300) { data = r.data; break; }   // ngay giao dich gan nhat
+    }
+    if (!data) return false;
     let n = 0;
-    Object.values(latest).forEach(d=>{ const row = byT[d.code]; if (!row) return;
+    data.forEach(d=>{ const row = byT[d.code]; if (!row) return;
       if (d.close!=null) row.p = d.close;
       if (d.pctChange!=null) row.chg = +(+d.pctChange).toFixed(2);
       if (row.v20 && d.nmVolume!=null) row.vx = +(d.nmVolume/row.v20).toFixed(2);
       n++; });
-    if (n) { const el = document.getElementById('bgeData'); if (el) el.textContent = 'Giá cập nhật lúc ' + new Date().toTimeString().slice(0,5) + ' · FA/screener: ' + (SUM.updated||''); }
+    if (n) { const el = document.getElementById('bgeData'); if (el) el.textContent = 'Giá cập nhật lúc ' + new Date().toTimeString().slice(0,5) + ' (phiên ' + data[0].date.slice(8,10)+'/'+data[0].date.slice(5,7) + ') · FA/screener: ' + (SUM.updated||''); }
     return n > 0;
   } catch(e){ return false; }
 }
