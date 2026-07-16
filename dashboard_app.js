@@ -123,10 +123,25 @@ function renderRecent(){
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
   el.innerHTML = `<table class="sigtb"><tr><th>Mã</th><th>Giá mua</th><th>Giá bán / TT</th><th>Lợi suất</th></tr>` +
     tpn.recent.map(d=>{ const sp = d.bp*(1+(d.ret+0.6)/100); return `<tr class="row" onclick="openDetail('${d.t}')">
-      <td><div class="l1">${d.t} ${d.open?'<span class="chip a">Đang mở</span>':''}</div><div class="l2">${d.bd}</div></td>
+      <td><div class="l1">${d.t} ${d.open?(d.today?'<span class="chip g">Mua hôm nay</span>':'<span class="chip a">Đang mở</span>'):''}</div><div class="l2">${d.bd}</div></td>
       <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
       <td><div class="l1" style="font-size:13px">${sp>=100?sp.toFixed(1):sp.toFixed(2)}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
       <td><span class="${d.ret>=0?'up':'down'}" style="font-size:14px">${d.ret>=0?'+':''}${d.ret}%</span></td></tr>`;}).join('') + '</table>';
+}
+function scanNewSignals(){
+  const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
+  const now = new Date();
+  const dstr = ('0'+now.getDate()).slice(-2)+'/'+('0'+(now.getMonth()+1)).slice(-2)+'/'+String(now.getFullYear()).slice(2);
+  const biso = now.toISOString().slice(0,10);
+  ROWS().forEach(r=>{
+    if (!r.watch || r.wgrade === 'weak') return;              // phai dang trong vung theo doi + hang Manh
+    const thr = r.b === 'HN' ? 8.8 : 6.3;
+    if (r.chg == null || r.chg < thr) return;                  // hom nay tran
+    if (!r.vx || r.vx < 2.0) return;                           // kem dong tien
+    if (tpn.recent.some(x => x.t === r.t && (x.open || x.bdate === biso))) return;
+    tpn.recent.unshift({t:r.t, bd:dstr, bdate:biso, bp:+(+r.p).toFixed(2), sd:'—', ret:-0.6, open:true, today:1});
+  });
+  if (tpn.recent.length > 12) tpn.recent = tpn.recent.slice(0,12);
 }
 async function refreshOpenDeals(){
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
@@ -943,6 +958,6 @@ $('#btnRefresh').onclick = async function(){
 };
 
 // ================= KHỞI ĐỘNG =================
-(async () => { try { await liveQuote(); } catch(e){} inits.market(); })();
-setInterval(async () => { if (await liveQuote()) renderTops(); }, 120000);
+(async () => { try { await liveQuote(); scanNewSignals(); } catch(e){} inits.market(); })();
+setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); renderRecent(); } }, 120000);
 })();
