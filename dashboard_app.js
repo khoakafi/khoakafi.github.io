@@ -148,7 +148,7 @@ function renderMonthly(){
     if (!yend[y]) yorder.push(y);
     yend[y] = cur; prev = cur;
   });
-  const G = ['#EAF7EF','#D0EFDC','#AEE4C4','#86D7A8','#5CC98C'], R = ['#FCF1EC','#F9E1D6','#F4CBB8','#EFB295','#E99A77'];
+  const G = ['#EAF7EF','#D0EFDC','#AEE4C4','#86D7A8','#5CC98C'], R = ['#FDEEEE','#FBD9DA','#F8C2C3','#F3A6A8','#EE8A8D'];
   let nAct = 0, nPos = 0, best = null, worst = null;
   yorder.forEach(y => { for (const m in mret[y]) { const v = mret[y][m]; if (Math.abs(v) < 0.05) continue; nAct++; if (v > 0) nPos++; if (best==null || v > best) best = v; if (worst==null || v < worst) worst = v; } });
   const sum = document.getElementById('moSum');
@@ -156,7 +156,7 @@ function renderMonthly(){
   const cell = v => {
     if (v==null || Math.abs(v) < 0.05) return '<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:#FAFBFC;color:#C6CBD1;font-weight:400">·</td>';
     const i = Math.min(4, Math.floor(Math.abs(v)/15*5));
-    const bg = v>0 ? G[i] : R[i], tc = v>0 ? '#0d6e31' : '#8F4526';
+    const bg = v>0 ? G[i] : R[i], tc = v>0 ? '#0d6e31' : '#B03A3E';
     return `<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:${bg};color:${tc};font-weight:600">${v>0?'+':'−'}${Math.abs(v).toFixed(1)}</td>`;
   };
   const thS = 'border-bottom:none;text-align:center;padding:4px 0;font-size:11px';
@@ -165,7 +165,7 @@ function renderMonthly(){
   yorder.forEach(y => {
     const e = yend[y], pt = prevY ? prevY[1] : 0, pv = prevY ? prevY[2] : 0;
     const yr = ((1+e[1]/100)/(1+pt/100)-1)*100, vr = ((1+e[2]/100)/(1+pv/100)-1)*100;
-    rows.push(`<tr><td style="border-top:none;text-align:left;padding:6px 4px"><b>${y}</b></td>` + Array.from({length:12},(_,i)=>cell(mret[y]&&mret[y][i+1]!=null?mret[y][i+1]:null)).join('') + `<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:${yr>=0?'#128A3E':'#D97757'};color:#fff;font-weight:700">${yr>0?'+':'−'}${Math.abs(yr).toFixed(1)}</td><td style="border-top:none;text-align:center;padding:6px 0;color:#7A828E">${vr>0?'+':'−'}${Math.abs(vr).toFixed(1)}</td></tr>`);
+    rows.push(`<tr><td style="border-top:none;text-align:left;padding:6px 4px"><b>${y}</b></td>` + Array.from({length:12},(_,i)=>cell(mret[y]&&mret[y][i+1]!=null?mret[y][i+1]:null)).join('') + `<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:${yr>=0?'#128A3E':'#E5484D'};color:#fff;font-weight:700">${yr>0?'+':'−'}${Math.abs(yr).toFixed(1)}</td><td style="border-top:none;text-align:center;padding:6px 0;color:#7A828E">${vr>0?'+':'−'}${Math.abs(vr).toFixed(1)}</td></tr>`);
     prevY = e;
   });
   el.innerHTML = `<table style="border-collapse:separate;border-spacing:2px;table-layout:fixed;font-size:12px">` + head + rows.reverse().join('') + '</table>';
