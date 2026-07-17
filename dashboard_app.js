@@ -134,6 +134,31 @@ function renderTops(){
   const el2 = document.getElementById('topRs');
   if (el2) el2.innerHTML = mini2([...ROWS()].filter(lq).sort((a,b)=>((b.vx||0)*(b.v20||0))-((a.vx||0)*(a.v20||0))).slice(0,10), gCols);
 }
+function renderMonthly(){
+  const el = document.getElementById('moTable'); if (!el) return;
+  const tpn = SUM.tpn; if (!tpn || !tpn.curve || !tpn.curve.length) return;
+  const ends = {}, order = [];
+  tpn.curve.forEach(x => { const k = x[0].slice(0,7); if (!(k in ends)) order.push(k); ends[k] = x; });
+  const mret = {}, yend = {}, yorder = [];
+  let prev = null;
+  order.forEach(k => {
+    const y = k.slice(0,4), m = +k.slice(5,7), cur = ends[k];
+    const pt = prev ? prev[1] : 0;
+    (mret[y] = mret[y] || {})[m] = ((1+cur[1]/100)/(1+pt/100)-1)*100;
+    if (!yend[y]) yorder.push(y);
+    yend[y] = cur; prev = cur;
+  });
+  const cell = v => v==null ? '<td class="mut">—</td>' : `<td class="${v>=0.05?'up':(v<=-0.05?'down':'mut')}">${v>0?'+':''}${v.toFixed(1)}</td>`;
+  const head = '<tr><th style="text-align:left">Năm</th>' + Array.from({length:12},(_,i)=>`<th>T${i+1}</th>`).join('') + '<th>Cả năm</th><th>VN-Index</th></tr>';
+  let prevY = null; const rows = [];
+  yorder.forEach(y => {
+    const e = yend[y], pt = prevY ? prevY[1] : 0, pv = prevY ? prevY[2] : 0;
+    const yr = ((1+e[1]/100)/(1+pt/100)-1)*100, vr = ((1+e[2]/100)/(1+pv/100)-1)*100;
+    rows.push(`<tr><td style="text-align:left"><b>${y}</b></td>` + Array.from({length:12},(_,i)=>cell(mret[y]&&mret[y][i+1]!=null?mret[y][i+1]:null)).join('') + `<td class="${yr>=0?'up':'down'}" style="font-weight:800">${yr>0?'+':''}${yr.toFixed(1)}</td><td class="${vr>=0?'up':'down'}" style="opacity:.7">${vr>0?'+':''}${vr.toFixed(1)}</td></tr>`);
+    prevY = e;
+  });
+  el.innerHTML = '<table>' + head + rows.reverse().join('') + '</table>';
+}
 function renderRecent(){
   const el = document.getElementById('recentWrap'); if (!el) return;
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
@@ -317,7 +342,7 @@ inits.market = async function(){
   <div class="hero">
     <div class="card" style="margin-bottom:0">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px">
-        <h2 style="margin:0">Hiệu suất Khoa KAFI Signal <span class="hint">so với VN-Index · backtest sau phí</span></h2>
+        <h2 style="margin:0">Hiệu suất Khoa KAFI Signal</h2>
         <div class="seg" id="perfSeg"><button data-r="all" class="on">Tất cả</button><button data-r="1y">1 năm</button><button data-r="6m">6 tháng</button><button data-r="2025">2025</button><button data-r="2026">2026</button></div>
       </div>
       <div style="height:565px"><canvas id="cvPerf"></canvas></div>
@@ -348,12 +373,10 @@ inits.market = async function(){
       <div class="perf-row"><span class="l">Phí giao dịch</span><span class="v mut">0,15% mua · 0,25% bán</span></div></div>
   </div>
   <div style="height:16px"></div>
-  <div class="grid g2">
-    <div class="card"><h2>Top tăng giá hôm nay <span class="hint">GTGD TB20 ≥ 20 tỷ · cuối phiên gần nhất</span></h2><div id="topCs"></div></div>
-    <div class="card"><h2>Top khối lượng hôm nay <span class="hint">GTGD TB20 ≥ 20 tỷ · cuối phiên gần nhất</span></h2><div id="topRs"></div></div>
-  </div>`;
+  <div class="card"><h2>Lợi suất theo tháng <span class="hint">% · 2 cột cuối: cả năm và VN-Index cùng kỳ</span></h2><div id="moTable" style="overflow-x:auto"></div></div>`;
   drawPerf();
   renderRecent();
+  renderMonthly();
   refreshOpenDeals();
   if (!window._odTimer) window._odTimer = setInterval(refreshOpenDeals, 120000);
   $('#perfSeg').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
@@ -383,7 +406,10 @@ const PRESETS = {
 inits.screener = function(){
   if (scInit) return; scInit = true;
   const el = $('#view-screener');
-  el.innerHTML = `<div class="card">
+  el.innerHTML = `<div class="grid g2" style="margin-bottom:16px">
+    <div class="card" style="margin:0"><h2>Top tăng giá hôm nay <span class="hint">GTGD TB20 ≥ 20 tỷ · cuối phiên gần nhất</span></h2><div id="topCs"></div></div>
+    <div class="card" style="margin:0"><h2>Top khối lượng hôm nay <span class="hint">GTGD TB20 ≥ 20 tỷ · cuối phiên gần nhất</span></h2><div id="topRs"></div></div>
+  </div><div class="card">
     <div class="filters">
       <div><label>Tìm mã / tên</label><input id="fQ" style="width:150px" placeholder="VD: FPT, thép..."></div>
       <div><label>Sàn</label><select id="fSan"><option value="">Cả hai</option><option value="HO">HOSE</option><option value="HN">HNX</option></select></div>
@@ -404,6 +430,7 @@ inits.screener = function(){
   $('#fClear').onclick = () => { ['fQ','fPe','fPb','fRoe','fNp','fRs','fCs','fCap','fVal'].forEach(id=>$('#'+id).value=''); $('#fSan').value=''; activePreset=null; $$('.pill').forEach(p=>p.classList.remove('on')); renderSc(); };
   $$('.pill').forEach(p => p.onclick = () => { activePreset = activePreset===p.dataset.p ? null : p.dataset.p; $$('.pill').forEach(x=>x.classList.toggle('on', x.dataset.p===activePreset)); renderSc(); });
   renderSc();
+  renderTops();
 };
 let activePreset = null;
 function renderSc(){
