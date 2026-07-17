@@ -178,6 +178,53 @@ function ensureNotifBanner(){
   };
   meta.parentNode.appendChild(b);
 }
+async function verifySignalAt(t, ds){
+  try {
+    const bts = Math.floor(new Date(ds+'T00:00:00Z').getTime()/1000);
+    const r = await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${t}&resolution=D&from=${bts-120*86400}&to=${bts+43200}`);
+    const c = r.c, v = r.v, tt = r.t; if (!c || c.length < 35) return null;
+    const i = c.length-1;
+    if (Math.abs(tt[i]-bts) > 86400) return null;
+    const thr = (byT[t] && byT[t].b === 'HN') ? 8.8 : 6.3;
+    const chg = (c[i]/c[i-1]-1)*100; if (chg < thr) return null;
+    let hi=-1e9, lo=1e9, hc=false, sv=0, svv=0;
+    for (let k=i-30; k<i; k++){ if(c[k]>hi)hi=c[k]; if(c[k]<lo)lo=c[k]; if((c[k]/c[k-1]-1)*100>=thr)hc=true; }
+    for (let k=i-20; k<i; k++){ sv+=v[k]; svv+=c[k]*v[k]; }
+    const v20=sv/20, gt=svv/20/1e6;
+    if (hc || (hi-lo)/lo*100 > 12 || v[i] < 2*v20 || gt < 15) return null;
+    return {bp: +c[i].toFixed(2)};
+  } catch(e){ return null; }
+}
+async function retroScanSignals(){
+  try {
+    const KEY='kafi_retro_ts';
+    if (Date.now() - (+localStorage.getItem(KEY)||0) < 6*3600*1000) return;
+    const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
+    let store = loadLiveDeals(); let changed = false;
+    for (let k=1; k<=10; k++){
+      const D = new Date(Date.now()-k*86400000);
+      if (D.getDay()===0 || D.getDay()===6) continue;
+      const ds = D.toISOString().slice(0,10);
+      let rows = [];
+      try { const rr = await jget(`https://api-finfo.vndirect.com.vn/v4/stock_prices?sort=code&q=date:gte:${ds}~date:lte:${ds}&size=3000`); rows = rr.data||[]; } catch(e){ continue; }
+      for (const d of rows){
+        const r0 = byT[d.code]; if (!r0) continue;
+        const thr = r0.b==='HN' ? 8.8 : 6.3;
+        if (d.pctChange==null || +d.pctChange < thr) continue;
+        if (r0.npatYoY!=null && r0.npatYoY>=0 && r0.npatYoY<25) continue;
+        if (store.some(x=>x.t===d.code && x.bdate===ds)) continue;
+        if (tpn.recent.some(x=>x.t===d.code && (x.bdate===ds || x.open))) continue;
+        const ok = await verifySignalAt(d.code, ds); if (!ok) continue;
+        const bd = ds.slice(8,10)+'/'+ds.slice(5,7)+'/'+ds.slice(2,4);
+        tpn.recent.unshift({t:d.code, bd, bdate:ds, bp:ok.bp, sd:'—', ret:0, open:true});
+        store.push({t:d.code, bd, bdate:ds, bp:ok.bp});
+        changed = true;
+      }
+    }
+    if (changed){ saveLiveDeals(store); if (tpn.recent.length>12) tpn.recent = tpn.recent.slice(0,12); refreshOpenDeals(); }
+    localStorage.setItem(KEY, ''+Date.now());
+  } catch(e){}
+}
 function scanNewSignals(){
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
   const now = new Date();
@@ -1073,6 +1120,6 @@ $('#btnRefresh').onclick = async function(){
 };
 
 // ================= KHỞI ĐỘNG =================
-(async () => { try { await liveQuote(); mergeLiveDeals(); scanNewSignals(); checkWatchAlerts(); } catch(e){} inits.market(); ensureNotifBanner(); })();
+(async () => { try { await liveQuote(); mergeLiveDeals(); scanNewSignals(); checkWatchAlerts(); } catch(e){} inits.market(); ensureNotifBanner(); retroScanSignals(); })();
 setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); } }, 120000);
 })();
