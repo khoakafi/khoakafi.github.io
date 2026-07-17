@@ -931,6 +931,16 @@ const liveWatch = {
     if (this.timer) { clearInterval(this.timer); this.timer = null; document.querySelectorAll('#view-watch tr.row').forEach(tr=>tr.style.display=''); const em=document.getElementById('liveEmpty'); if(em) em.textContent=''; this.paint(); return; }
     ga('live_watch_on');
     if ('Notification' in window && Notification.permission === 'default') await Notification.requestPermission();
+    if (!('Notification' in window)) {
+      toast('Thiết bị này không hỗ trợ thông báo đẩy (iPhone/Safari) — hãy giữ tab này mở, bảng lọc vẫn tự cập nhật.');
+    } else if (Notification.permission === 'granted') {
+      try { new Notification('Khoa KAFI Signal', {body: 'Trực chiến đã bật — thông báo hoạt động tốt. Có mã bùng nổ sẽ báo ngay tại đây.'}); } catch(e){}
+    } else if (Notification.permission === 'denied') {
+      toast('THÔNG BÁO ĐANG BỊ CHẶN — bấm ổ khóa cạnh thanh địa chỉ, mở Thông báo: Cho phép, rồi bật lại trực chiến.');
+      alert('Thông báo của trang đang bị CHẶN nên cảnh báo sẽ không nổi lên.' + String.fromCharCode(10,10) + 'Cách mở: bấm biểu tượng Ổ KHÓA cạnh thanh địa chỉ, chọn Thông báo: Cho phép, tải lại trang và bật lại Trực chiến.');
+    } else {
+      toast('Bạn chưa cho phép thông báo — trực chiến vẫn chạy nhưng chỉ hiện trên bảng, không có cảnh báo nổi.');
+    }
     this.list = ws.map(r=>({t:r.t, b:r.b, v20:r.v20||0}));
     this.timer = setInterval(()=>this.tick(), 90000);
     this.paint(); this.tick();
