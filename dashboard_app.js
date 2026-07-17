@@ -179,8 +179,8 @@ function ensureNotifBanner(){
   if (!meta || document.getElementById('notifBtn')) return;
   const b = document.createElement('button');
   b.id = 'notifBtn'; b.className = 'btn';
-  b.style.cssText = 'margin-left:10px;padding:4px 12px;font-size:12px;background:#fef6e7;border:1px solid #f0c36d;color:#b45309;font-weight:700;border-radius:8px;cursor:pointer';
-  b.textContent = 'Bật cảnh báo mã bùng nổ';
+  b.style.cssText = 'margin-left:10px;padding:5px 14px;font-size:12px;background:#e8f7ee;border:1px solid #7fd2a1;color:#0d6e31;font-weight:700;border-radius:999px;cursor:pointer';
+  b.textContent = '🔔 Bật thông báo realtime';
   b.onclick = async () => {
     if (Notification.permission === 'denied') {
       alert('Thông báo của trang đang bị CHẶN.' + String.fromCharCode(10,10) + 'Cách mở: bấm biểu tượng Ổ KHÓA cạnh thanh địa chỉ, chọn Thông báo: Cho phép, rồi tải lại trang.');
@@ -188,7 +188,7 @@ function ensureNotifBanner(){
     }
     const p = await Notification.requestPermission();
     if (p === 'granted') {
-      try { new Notification('Khoa KAFI Signal', {body: 'Đã bật cảnh báo — có mã bùng nổ trong vùng theo dõi sẽ báo ngay tại đây, kể cả khi bạn đang mở tab khác.'}); } catch(e){}
+      try { new Notification('Khoa KAFI Signal', {body: 'Đã bật thông báo realtime — có tín hiệu mới sẽ báo ngay tại đây, kể cả khi bạn đang mở tab khác.'}); } catch(e){}
       b.remove();
     }
   };

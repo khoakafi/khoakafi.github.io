@@ -137,7 +137,8 @@ footer{color:var(--muted);font-size:11.5px;padding:20px 0 28px;text-align:center
     <button class="nav-link" data-view="detail">Chi tiết mã</button>
     <button class="nav-link" data-view="compare">So sánh</button>
   </nav>
-  <button class="btn-cta" id="btnRefresh" title="Tải lại dữ liệu screener từ API (~1-2 phút)">Cập nhật dữ liệu</button>
+  <a class="btn-cta" id="btnOpenKafi" href="https://open.kafi.vn/x/SANG009" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block" onclick="try{gtag('event','open_kafi')}catch(e){}">Mở tài khoản KAFI</a>
+  <button class="btn-cta" id="btnRefresh" style="display:none" title="Tải lại dữ liệu screener từ API (~1-2 phút)">Cập nhật dữ liệu</button>
 </div></div>
 <div class="wrap">
   <div style="display:flex;gap:10px;align-items:center;margin-bottom:12px">
@@ -150,11 +151,4 @@ footer{color:var(--muted);font-size:11.5px;padding:20px 0 28px;text-align:center
   <div id="view-watch" style="display:none"></div>
   <div id="view-detail" style="display:none"></div>
   <div id="view-compare" style="display:none"></div>
-  <footer>Disclaimer: Số liệu hiệu suất tính từ mô phỏng lịch sử (backtest) của hệ Khoa KAFI Signal, đã gồm phí giao dịch 0,15% mua và 0,25% bán (gồm thuế); kết quả quá khứ không đảm bảo tương lai. Nguồn dữ liệu: VNDirect (giá), Vietcap IQ (BCTC). Thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</footer>
-</div>
-<div id="toast"></div>
-<script src="dashboard_data.js?v=20260717h"></script>
-<script src="dashboard_app.js?v=20260717h"></script>
-</body>
-</html>
-
+  <footer>Disclaimer: Số liệu hiệu suất tính từ mô phỏng lịch sử (backtest) của hệ Khoa KAFI Signal, đã gồm phí giao dịch 0,15% mua và 0,25% bán (gồm thuế); kết quả quá khứ không đảm bảo tương lai. Nguồn dữ liệu: VNDirect (giá), Vietcap I
