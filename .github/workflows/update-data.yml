@@ -1,7 +1,8 @@
+# LUU Y: API VNDirect/Vietcap chan IP may chu nuoc ngoai -> robot GitHub khong keo duoc data (0/702).
+# Lich cron da tat. Viec cap nhat hang ngay do "may phat hanh" cua Khoa dam nhiem (che do kafi_gh_token trong dashboard).
+# Giu workflow_dispatch de thu lai thu cong neu sau nay API mo.
 name: Auto update data
 on:
-  schedule:
-    - cron: '50 8 * * 1-5'   # 15:50 gio VN, thu 2 - thu 6
   workflow_dispatch:
 permissions:
   contents: write
@@ -20,5 +21,5 @@ jobs:
           git config user.name "kafi-data-bot"
           git config user.email "kafi-bot@users.noreply.github.com"
           git add dashboard_data.js
-          git diff --cached --quiet || git commit -m "Auto data update $(TZ=Asia/Ho_Chi_Minh date +'%Y-%m-%d %H:%M')"
+          git diff --cached --quiet || git commit -m "Auto data update"
           git push
