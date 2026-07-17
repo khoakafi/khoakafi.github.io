@@ -519,17 +519,60 @@ function updateKpis(i){
       <span style="color:var(--muted)">${k[0]}</span><span style="font-weight:600">${k[1]}</span></div>`).join('')}
   </div>`;
 }
+function renderDHead(){
+  const el = document.getElementById('dHead'); if (!el || !curOhlc) return;
+  const r = byT[curT] || {};
+  const c = curOhlc.c, n = c.length;
+  const p = r.p != null ? r.p : c[n-1];
+  const chg = r.chg != null ? r.chg : (n>1 ? (c[n-1]/c[n-2]-1)*100 : 0);
+  const col = chg > 0 ? '#089981' : (chg < 0 ? '#F23645' : '#787B86');
+  const vol = ((curOhlc.v[n-1]||0)/1e6);
+  el.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">
+    <div><div style="font-size:20px;font-weight:800">${curT} <span class="mini" style="font-weight:600">${r.b==='HN'?'HNX':'HOSE'}</span></div>
+    <div class="mini" style="max-width:185px">${r.n||''}</div></div>
+    <div style="text-align:right"><div style="font-size:24px;font-weight:800;color:${col};line-height:1.1">${fmt(p,2)}</div>
+    <div style="font-weight:700;color:${col}">${pct(chg,2)}</div>
+    <div class="mini">KL ${fmt(vol,2)} tr</div></div></div>`;
+}
+async function loadRecs(){
+  const box = document.getElementById('tab-rec'); if (!box || !curT) return;
+  if (window._recFor === curT) return;
+  box.innerHTML = '<div class="mini">Đang tải khuyến nghị…</div>';
+  try {
+    const r = await jget(`https://api-finfo.vndirect.com.vn/v4/recommendations?q=code:${curT}&size=10&sort=reportDate:desc`);
+    const d = (r && r.data) || [];
+    window._recFor = curT;
+    if (!d.length) { box.innerHTML = '<div class="mini" style="padding:8px 0">Chưa có báo cáo phân tích nào của các CTCK cho mã này.</div>'; return; }
+    const rr = byT[curT] || {}; const cur = rr.p != null ? rr.p : (curOhlc ? curOhlc.c[curOhlc.c.length-1] : null);
+    const chip = ty => ty==='BUY' ? '<span class="chip g">MUA</span>' : (ty==='SELL' ? '<span class="chip r">BÁN</span>' : '<span class="chip a">'+(ty||'—')+'</span>');
+    box.innerHTML = '<table style="font-size:12.5px"><tr><th style="text-align:left">CTCK · Ngày</th><th>Loại</th><th>Giá MT</th><th>Upside</th></tr>' +
+      d.map(x => { const up = (cur && x.targetPrice) ? (x.targetPrice/cur-1)*100 : null;
+        return `<tr><td style="text-align:left"><b>${x.firm||x.source||'—'}</b><div class="mini">${(x.reportDate||'').split('-').reverse().join('/')}</div></td>
+        <td>${chip(x.type)}</td><td><b>${x.targetPrice!=null?fmt(x.targetPrice,2):'—'}</b></td>
+        <td class="${up!=null?cls(up):'mut'}">${up!=null?pct(up,0):'—'}</td></tr>`; }).join('') + '</table>' +
+      '<div class="mini" style="margin-top:8px">Upside so với giá hiện tại · tổng hợp từ báo cáo các CTCK</div>';
+  } catch(e){ box.innerHTML = '<div class="mini">Không tải được dữ liệu khuyến nghị.</div>'; }
+}
 let proLoadedFor = null, proChart = null, useLog = false;
 function addProBadges(){
   if (!proChart || !curOhlc) return;
+  if (!window._kbadgeReg && window.klinecharts) {
+    const mk = below => ({ name: below ? 'kafiBadgeB' : 'kafiBadgeA', totalStep: 1, lock: true,
+      createPointFigures: ({ overlay, coordinates }) => { const c0 = coordinates[0]; if (!c0) return [];
+        const ed = overlay.extendData || {};
+        return [{ type: 'text', attrs: { x: c0.x, y: below ? c0.y + 7 : c0.y - 7, text: ed.t || '', align: 'center', baseline: below ? 'top' : 'bottom' },
+          styles: { style: 'fill', color: '#fff', backgroundColor: ed.bg || '#128A3E', borderRadius: 4, paddingLeft: 6, paddingRight: 6, paddingTop: 3, paddingBottom: 3, size: 12 } }];
+      } });
+    klinecharts.registerOverlay(mk(true)); klinecharts.registerOverlay(mk(false));
+    window._kbadgeReg = true;
+  }
   const tix = {}; curOhlc.t.forEach((tt,i)=>tix[tt]=i);
   curMarkers.forEach(m => {
     const i = tix[m.time]; if (i == null) return;
     const isBuy = m.position === 'belowBar';
-    proChart.createOverlay({ name: 'simpleAnnotation', lock: true,
-      extendData: isBuy ? '▲ ' + m.text : '▼ ' + m.text,
-      points: [{ timestamp: m.time*1000, value: isBuy ? curOhlc.l[i] : curOhlc.h[i] }],
-      styles: { text: { color: '#fff', backgroundColor: m.color, borderRadius: 4, paddingLeft: 5, paddingRight: 5, paddingTop: 3, paddingBottom: 3 } } });
+    proChart.createOverlay({ name: isBuy ? 'kafiBadgeB' : 'kafiBadgeA', lock: true,
+      extendData: { t: (isBuy ? '\u25b2 ' : '\u25bc ') + m.text, bg: m.color },
+      points: [{ timestamp: m.time*1000, value: isBuy ? curOhlc.l[i] : curOhlc.h[i] }] });
   });
 }
 function loadProChart(){
@@ -610,29 +653,42 @@ inits.detail = function(t){
       <div id="dTpn"></div></div>
       <div id="dBody" style="display:none">
       <div class="card"><h2 id="dChartTitle">Biểu đồ giá</h2>
-        <div style="display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap;align-items:center" id="dRanges">
-          <button class="btn active" id="btnChartPro">Chart Pro + Tín hiệu</button>
-          <button class="btn" id="btnChartSig">Chart Tín hiệu</button>
-        </div>
-        <div id="chartSigWrap" style="display:none">
-          <div style="display:flex;gap:16px;align-items:stretch">
-            <div style="flex:1;min-width:0;position:relative">
-              <div id="ohlcLegend" style="position:absolute;top:6px;left:8px;z-index:20;font-size:12.5px;color:#374151;background:rgba(255,255,255,.85);padding:3px 10px;border-radius:6px;border:1px solid #e4e8ec"></div>
-              <div style="position:absolute;top:6px;right:76px;z-index:20;display:flex;gap:6px">
-                <button class="btn" id="btnLog" style="padding:2px 10px;font-size:11px">Log</button>
-                <button class="btn" id="btnFull" style="padding:2px 10px;font-size:11px">⛶ Toàn màn hình</button>
-              </div>
-              <div id="chartMain"></div><div id="chartVol"></div>
+        <div style="display:flex;gap:16px;align-items:flex-start" id="dFlex">
+          <div style="flex:1;min-width:0">
+            <div style="display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap;align-items:center" id="dRanges">
+              <button class="btn active" id="btnChartPro">Chart Pro + Tín hiệu</button>
+              <button class="btn" id="btnChartSig">Chart Tín hiệu</button>
             </div>
-            <div style="width:285px;flex:none" id="dSide"></div>
+            <div id="chartSigWrap" style="display:none">
+              <div style="flex:1;min-width:0;position:relative">
+                <div id="ohlcLegend" style="position:absolute;top:6px;left:8px;z-index:20;font-size:12.5px;color:#374151;background:rgba(255,255,255,.85);padding:3px 10px;border-radius:6px;border:1px solid #e4e8ec"></div>
+                <div style="position:absolute;top:6px;right:76px;z-index:20;display:flex;gap:6px">
+                  <button class="btn" id="btnLog" style="padding:2px 10px;font-size:11px">Log</button>
+                  <button class="btn" id="btnFull" style="padding:2px 10px;font-size:11px">\u26f6 Toàn màn hình</button>
+                </div>
+                <div id="chartMain"></div><div id="chartVol"></div>
+              </div>
+            </div>
+            <div id="chartProWrap"></div>
+          </div>
+          <div style="width:360px;flex:none" id="dPanel">
+            <div id="dHead" style="margin-bottom:10px"></div>
+            <div id="dTabs" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">
+              <button class="btn active" data-t="ov" style="padding:5px 10px;font-size:12px">Tổng quan</button>
+              <button class="btn" data-t="fin" style="padding:5px 10px;font-size:12px">Tài chính</button>
+              <button class="btn" data-t="sig" style="padding:5px 10px;font-size:12px">Tín hiệu</button>
+              <button class="btn" data-t="rec" style="padding:5px 10px;font-size:12px">CTCK KN</button>
+            </div>
+            <div id="tab-ov"><div id="dSide"></div></div>
+            <div id="tab-fin" style="display:none">
+              <div class="mini" id="dFundCur" style="margin-bottom:8px;font-size:12.5px"></div>
+              <div style="overflow:auto;max-height:480px"><table id="tbFund"></table></div>
+              <div class="mini" style="margin-top:8px;font-style:italic">Ô "--" là quý nguồn chưa công bố.</div>
+            </div>
+            <div id="tab-sig" style="display:none"></div>
+            <div id="tab-rec" style="display:none"></div>
           </div>
         </div>
-        <div id="chartProWrap"></div>
-      </div>
-      <div class="card"><h2>Dữ liệu cơ bản <span class="hint">Doanh thu · LNST · P/E · P/B — 12 quý gần nhất</span></h2>
-        <div class="mini" id="dFundCur" style="margin-bottom:10px;font-size:13px"></div>
-        <div style="overflow:auto"><table id="tbFund"></table></div>
-        <div class="mini" style="margin-top:10px;font-style:italic">Ô "--" là quý nguồn chưa công bố. "Tăng tốc/Giảm tốc" so sánh %YoY LNST quý này với quý liền trước.</div></div>
       </div>`;
       // eslint-disable-next-line
   const dq = $('#dQ');
@@ -652,6 +708,12 @@ inits.detail = function(t){
       $('#btnChartPro').classList.add('active'); $('#btnChartSig').classList.remove('active');
       loadProChart();
     };
+    $('#dTabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
+      $$('#dTabs button').forEach(x=>x.classList.toggle('active', x===b));
+      ['ov','fin','sig','rec'].forEach(k => { const d = document.getElementById('tab-'+k); if (d) d.style.display = (b.dataset.t===k?'':'none'); });
+      if (b.dataset.t==='sig') { const sg = document.getElementById('tab-sig'); const src = document.getElementById('dTpn'); if (sg) sg.innerHTML = (src && src.innerHTML) || '<div class="mini">Chưa có tín hiệu.</div>'; }
+      if (b.dataset.t==='rec') loadRecs();
+    });
     $('#btnLog').onclick = function(){ useLog = !useLog; this.classList.toggle('active', useLog); const b = $('#dRanges .btn.rng.active'); drawPrice(b?+b.dataset.y:14); };
     $('#btnFull').onclick = () => { const el = $('#chartSigWrap'); if (document.fullscreenElement) document.exitFullscreen(); else { el.style.background='#fff'; el.requestFullscreen(); } };
   }
@@ -695,6 +757,11 @@ async function loadDetail(t){
     drawPrice(14);
     if (document.getElementById('chartProWrap').style.display !== 'none') loadProChart();
     drawFund(r, qs, rts);
+    renderDHead();
+    window._recFor = null;
+    const _at = document.querySelector('#dTabs button.active');
+    if (_at && _at.dataset.t==='rec') loadRecs();
+    if (_at && _at.dataset.t==='sig') { const sg = document.getElementById('tab-sig'); const src = document.getElementById('dTpn'); if (sg && src) sg.innerHTML = src.innerHTML; }
   } catch(e){ toast('Lỗi tải dữ liệu '+t+': '+e.message); }
 }
 // ===== Khoa KAFI Signal engine v2 =====
