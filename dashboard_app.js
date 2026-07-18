@@ -603,21 +603,35 @@ function addProBadges(){
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         bs.forEach(b => {
-          const x = xm[b.i];
-          if (x == null) return;
-          const y = yAxis.convertToPixel(b.value) + (b.below ? 6 : -6);
-          const w = ctx.measureText(b.text).width + 10, h = 17, r = 4;
-          const top = b.below ? y : y - h;
+          const cx = xm[b.i];
+          if (cx == null) return;
+          const yv = yAxis.convertToPixel(b.value);
+          const dir = b.below ? 1 : -1;          // dưới nến (mua) mũi tên chỉ lên, trên nến (bán) chỉ xuống
+          const gap = 3, ah = 7, aw = 5;
+          const tipY = yv + dir * gap;           // đỉnh mũi tên chạm sát cây nến
+          const baseY = tipY + dir * ah;
+          // mũi tên nhọn chỉ đúng vào cây nến (kiểu AmiBroker)
           ctx.fillStyle = b.color;
           ctx.beginPath();
-          ctx.moveTo(x - w/2 + r, top);
-          ctx.arcTo(x + w/2, top, x + w/2, top + h, r);
-          ctx.arcTo(x + w/2, top + h, x - w/2, top + h, r);
-          ctx.arcTo(x - w/2, top + h, x - w/2, top, r);
-          ctx.arcTo(x - w/2, top, x + w/2, top, r);
+          ctx.moveTo(cx, tipY);
+          ctx.lineTo(cx - aw, baseY);
+          ctx.lineTo(cx + aw, baseY);
+          ctx.closePath();
+          ctx.fill();
+          // nhãn gọn ngay sau mũi tên
+          const lbl = b.text.replace(/^[\u25B2\u25BC]\s*/, '');
+          const h = 16, r = 3, w = ctx.measureText(lbl).width + 10;
+          const top = b.below ? baseY + 1 : baseY - 1 - h;
+          ctx.fillStyle = b.color;
+          ctx.beginPath();
+          ctx.moveTo(cx - w/2 + r, top);
+          ctx.arcTo(cx + w/2, top, cx + w/2, top + h, r);
+          ctx.arcTo(cx + w/2, top + h, cx - w/2, top + h, r);
+          ctx.arcTo(cx - w/2, top + h, cx - w/2, top, r);
+          ctx.arcTo(cx - w/2, top, cx + w/2, top, r);
           ctx.fill();
           ctx.fillStyle = '#fff';
-          ctx.fillText(b.text, x, top + h/2 + 0.5);
+          ctx.fillText(lbl, cx, top + h/2 + 0.5);
         });
         ctx.restore();
         return true;
