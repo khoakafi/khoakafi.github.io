@@ -587,24 +587,46 @@ let proLoadedFor = null, proChart = null, useLog = false;
 function addProBadges(){
   if (!proChart || !curOhlc) return;
   if (!window._kbadgeReg && window.klinecharts) {
-    const mk = below => ({ name: below ? 'kafiBadgeB' : 'kafiBadgeA', totalStep: 1, lock: true,
-      createPointFigures: ({ overlay, coordinates }) => { const c0 = coordinates[0]; if (!c0) return [];
-        const ed = overlay.extendData || {};
-        return [{ type: 'text', attrs: { x: c0.x, y: below ? c0.y + 7 : c0.y - 7, text: ed.t || '', align: 'center', baseline: below ? 'top' : 'bottom' },
-          styles: { style: 'fill', color: '#fff', backgroundColor: ed.bg || '#128A3E', borderRadius: 4, paddingLeft: 5, paddingRight: 5, paddingTop: 2, paddingBottom: 2, size: 11, weight: 'bold' } }];
-      } });
-    klinecharts.registerOverlay(mk(true)); klinecharts.registerOverlay(mk(false));
+    klinecharts.registerIndicator({
+      name: 'KBADGE', calc: list => list, figures: [],
+      draw: p => {
+        const ctx = p.ctx, vr = p.visibleRange, xAxis = p.xAxis, yAxis = p.yAxis;
+        const bs = window._kafiBadges || [];
+        ctx.save();
+        ctx.font = 'bold 11px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        bs.forEach(b => {
+          if (b.i < vr.from - 2 || b.i > vr.to + 2) return;
+          const x = xAxis.convertToPixel(b.i);
+          const y = yAxis.convertToPixel(b.value) + (b.below ? 6 : -6);
+          const w = ctx.measureText(b.text).width + 10, h = 17, r = 4;
+          const top = b.below ? y : y - h;
+          ctx.fillStyle = b.color;
+          ctx.beginPath();
+          ctx.moveTo(x - w/2 + r, top);
+          ctx.arcTo(x + w/2, top, x + w/2, top + h, r);
+          ctx.arcTo(x + w/2, top + h, x - w/2, top + h, r);
+          ctx.arcTo(x - w/2, top + h, x - w/2, top, r);
+          ctx.arcTo(x - w/2, top, x + w/2, top, r);
+          ctx.fill();
+          ctx.fillStyle = '#fff';
+          ctx.fillText(b.text, x, top + h/2 + 0.5);
+        });
+        ctx.restore();
+        return true;
+      }
+    });
     window._kbadgeReg = true;
   }
-  const tix = {}; curOhlc.t.forEach((tt,i)=>tix[tt]=i);
-  curMarkers.forEach(m => {
-    const i = tix[m.time]; if (i == null) return;
+  const tix = {}; curOhlc.t.forEach((tt,i)=>{ tix[tt]=i; });
+  window._kafiBadges = curMarkers.map(m => {
+    const i = tix[m.time]; if (i == null) return null;
     const isBuy = m.position === 'belowBar';
-    const lbl = isBuy ? (m.text === 'ADD' ? '\u25b2 Add' : (m.text === 'WEAK' ? '\u25b2 Weak' : '\u25b2 B')) : '\u25bc S ' + m.text;
-    proChart.createOverlay({ name: isBuy ? 'kafiBadgeB' : 'kafiBadgeA', lock: true,
-      extendData: { t: lbl, bg: m.color },
-      points: [{ dataIndex: i, timestamp: m.time*1000, value: isBuy ? curOhlc.l[i] : curOhlc.h[i] }] });
-  });
+    const lbl = isBuy ? (m.text === 'ADD' ? '▲ Add' : (m.text === 'WEAK' ? '▲ Weak' : '▲ B')) : '▼ S ' + m.text;
+    return { i: i, below: isBuy, text: lbl, color: m.color, value: isBuy ? curOhlc.l[i] : curOhlc.h[i] };
+  }).filter(Boolean);
+  try { proChart.createIndicator('KBADGE', true, { id: 'candle_pane' }); } catch(e){}
 }
 function loadProChart(){
   if (!curT || !curOhlc || proLoadedFor === curT) return;
