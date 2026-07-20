@@ -1099,26 +1099,31 @@ async function drawSec(){
   if (!cch || (Date.now() - (cch._ts||0)) > 10*60*1000) {
     if (st) st.innerHTML = '<span class="spin"></span> đang tải…';
     const out = {};
-    try { const f = await jget('https://api-finfo.vndirect.com.vn/v4/ratios/latest?filter=ratioCode:PRICE_TO_BOOK&where=code:'+codes.join(',')+'&size=50');
-      (f.data||[]).forEach(x=>{ out[x.code] = {curPb: x.value}; }); } catch(e){}
+    try { const f = await jget('https://api-finfo.vndirect.com.vn/v4/ratios/latest?order=reportDate&filter=ratioCode:PRICE_TO_BOOK&where=code:'+codes.join(',')+'&size=50');
+      (f.data||[]).forEach(x=>{ out[x.code] = {curPb: x.value, pbDate: (x.reportDate||'').slice(0,10) || null}; }); } catch(e){}
     for (let i=0;i<codes.length;i+=6) await Promise.all(codes.slice(i,i+6).map(async t => { try {
       const rts = await api.ratios(t); const h = rts.slice(-24);
       const pbs = h.map(x=>x.pb).filter(v=>v!=null&&isFinite(v)), roes = h.map(x=>x.roe!=null?x.roe*100:null).filter(v=>v!=null&&isFinite(v));
       out[t] = Object.assign(out[t]||{}, { pbLo:Math.min(...pbs), pbHi:Math.max(...pbs), roeLo:Math.min(...roes), roeHi:Math.max(...roes),
         curRoe: rts.length && rts[rts.length-1].roe!=null ? rts[rts.length-1].roe*100 : null });
-      // P/B HIEN TAI theo GIA MOI NHAT: neo BVPS = gia cuoi quy / P/B quy (fix lech 1 phien kieu SHS 1.16 vs 1.06)
-      try { const L = rts.length ? rts[rts.length-1] : null;
-        if (L && L.pb != null && L.pb > 0) {
-          const qEnd = new Date(Date.UTC(L.yearReport, L.quarter*3, 0)).toISOString().slice(0,10);
-          const oh = await api.ohlc(t, 220);
-          if (oh && oh.c && oh.c.length > 1) {
-            let pQ = null;
-            for (let k = oh.t.length-1; k >= 0; k--) {
-              const ds = new Date(oh.t[k]*1000).toISOString().slice(0,10);
-              if (ds <= qEnd) { pQ = oh.c[k]; break; }
+      // P/B HIEN TAI theo GIA MOI NHAT (fix lech 1 phien kieu SHS 1.16 vs 1.06):
+      // uu tien VNDirect (cung he so sach voi CafeF) neo dung reportDate; du phong Vietcap neo cuoi quy
+      try { const oh = await api.ohlc(t, 220);
+        if (oh && oh.c && oh.c.length > 1) {
+          const pNow = oh.c[oh.c.length-1];
+          const closeAt = lim => { for (let k = oh.t.length-1; k >= 0; k--) {
+            const ds = new Date(oh.t[k]*1000).toISOString().slice(0,10);
+            if (ds <= lim) return oh.c[k]; } return null; };
+          if (out[t].curPb != null && out[t].pbDate) {
+            const pRef = closeAt(out[t].pbDate);
+            if (pRef > 0 && pNow > 0) out[t].curPb = +(out[t].curPb * pNow / pRef).toFixed(3);
+          } else {
+            const L = rts.length ? rts[rts.length-1] : null;
+            if (L && L.pb != null && L.pb > 0) {
+              const qEnd = new Date(Date.UTC(L.yearReport, L.quarter*3, 0)).toISOString().slice(0,10);
+              const pQ = closeAt(qEnd);
+              if (pQ > 0 && pNow > 0) out[t].curPb = +(L.pb * pNow / pQ).toFixed(3);
             }
-            const pNow = oh.c[oh.c.length-1];
-            if (pQ > 0 && pNow > 0) out[t].curPb = +(L.pb * pNow / pQ).toFixed(3);
           }
         }
         if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb;
