@@ -87,6 +87,21 @@ const inits = {};
   }
 })();
 
+(function brandFooter(){
+  const f = document.querySelector('footer');
+  if (!f || f.dataset.branded) return;
+  f.dataset.branded = '1';
+  f.innerHTML =
+    '<div style="font-style:normal;font-weight:700;font-size:13.5px;color:var(--text)">'
+    + 'Nguyễn Ngọc Anh Khoa'
+    + '<span style="color:var(--border);font-weight:400;margin:0 8px">|</span>'
+    + '<a href="tel:0339136452" style="color:var(--green-dark);text-decoration:none">0339 136 452</a>'
+    + '<span style="color:var(--border);font-weight:400;margin:0 8px">|</span>'
+    + 'Giám đốc Tư vấn Đầu tư — Chứng khoán KAFI'
+    + '</div>'
+    + '<div style="margin-top:7px;font-size:11px;font-style:italic">Số liệu hiệu suất từ mô phỏng lịch sử (backtest) đã gồm phí giao dịch; kết quả quá khứ không đảm bảo tương lai — thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>';
+})();
+
 const LB_SECTORS = {
   "THÉP": ["HPG","HSG","VGS","NKG"],
   "BĐS": ["DXG","CEO","DXS","DPG","NVL","VHM","VIC","NTL","NLG","DIG","HDC","ITC","TCH","PDR","DTD","KDH","ASM","TDC","L14","TIG"],
