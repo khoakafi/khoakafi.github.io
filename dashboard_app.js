@@ -49,11 +49,196 @@ function macdS(c){ const e12=emaS(c,12), e26=emaS(c,26); const m=c.map((_,i)=>e1
 function bollS(c,n=20,k=2){ const ma=smaS(c,n); return c.map((_,i)=>{ if(ma[i]==null) return [null,null]; let s=0; for(let j=i-n+1;j<=i;j++) s+=Math.pow(c[j]-ma[i],2); const sd=Math.sqrt(s/n); return [ma[i]+k*sd, ma[i]-k*sd]; }); }
 
 // ================= ĐIỀU HƯỚNG =================
-const views = ['market','screener','watch','detail','compare'];
+const views = ['market','screener','watch','detail','compare','leader'];
 $$('.nav-link').forEach(b => b.onclick = () => showView(b.dataset.view));
 function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { $('#view-'+x).style.display = x===v?'':'none'; }); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view===v)); if(!skip) inits[v] && inits[v](); }
 window.showView = showView;
+
 const inits = {};
+// ================= LEADER BOARD (SM = Stoch%K + MFI, 4 chu ky 20/50/100/200) =================
+(function addLeaderTab(){
+  const nav = document.querySelector('nav');
+  if (nav && !nav.querySelector('[data-view="leader"]')) {
+    const b = document.createElement('button');
+    b.className = 'nav-link'; b.dataset.view = 'leader'; b.textContent = 'Leader Board';
+    b.onclick = () => showView('leader');
+    nav.appendChild(b);
+  }
+  if (!document.getElementById('view-leader')) {
+    const d = document.createElement('div');
+    d.id = 'view-leader'; d.style.display = 'none';
+    const anchor = document.getElementById('view-compare');
+    if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(d, anchor.nextSibling);
+    else { const w = document.querySelector('.wrap'); if (w) w.appendChild(d); }
+  }
+})();
+
+const LB_SECTORS = {
+  "THÉP": ["HPG","HSG","VGS","NKG"],
+  "BĐS": ["DXG","CEO","DXS","DPG","NVL","VHM","VIC","NTL","NLG","DIG","HDC","ITC","TCH","PDR","DTD","KDH","ASM","TDC","L14","TIG"],
+  "CHỨNG KHOÁN": ["CTS","VND","SHS","VIX","SSI","MBS","ORS","FTS","BVS","AGR","HCM","VCI","BSI"],
+  "NGÂN HÀNG": ["SHB","MBB","STB","OCB","TCB","CTG","MSB","VPB","EIB","ACB","HDB","TPB","LPB","BID","VIB","VCB","NAB"],
+  "BĐS KCN": ["PHR","GVR","SZC","DPR","KBC","VGC","IDC","IJC","SIP"],
+  "CẢNG - VẬN TẢI": ["PVP","VOS","DXP","VIP","GMD","HAH","VSC"],
+  "ĐẦU TƯ CÔNG": ["CTI","VCG","HT1","PLC","CTD","HHV","FCN","KSB","CII","LCG","HUT"],
+  "DẦU KHÍ": ["PVC","GAS","PVS","PVB","PVT","OIL","PLX","PVD","BSR"],
+  "BÁN LẺ": ["DGW","MWG","PET","FRT","PNJ"],
+  "PHÂN BÓN - HÓA CHẤT": ["DDV","BFC","DCM","DPM","LAS","DGC","CSV"],
+  "MID": ["DBC","GEX","ANV","HDG","REE","GIL","TNG","NTP","MSH","BMP","HVN","CTR","QNS","TV2","SCS","VHC","VGI","DRC","EVF","VCS","PC1","VTP","ACV","VPG"],
+  "VN30": ["GAS","MBB","STB","TCB","CTG","MSN","MWG","HPG","VHM","VIC","VPB","SHB","ACB","VRE","BVH","SSI","BID","VIB","VCB","BCM","VNM","FPT","SAB"]
+};
+const LB_BANDS = [
+  {max:400,  label:'Yếu',       bg:'#BFE6F7', fg:'#0F3D56'},
+  {max:500,  label:'Trung Bình',bg:'#FFFFFF', fg:'#1F2937'},
+  {max:550,  label:'Khá',       bg:'#D9EFD9', fg:'#14532D'},
+  {max:600,  label:'Khỏe',      bg:'#00A550', fg:'#FFFFFF'},
+  {max:1e9,  label:'Rất Khỏe',  bg:'#C77DD6', fg:'#FFFFFF'}
+];
+const lbBand = v => LB_BANDS.find(b => v < b.max) || LB_BANDS[LB_BANDS.length-1];
+
+function lbStochK(c, L, p){
+  if (L-p+1 < 0) return null;
+  const s = c.slice(L-p+1, L+1);
+  let hi=-Infinity, lo=Infinity;
+  for (const x of s){ if(x.h>hi) hi=x.h; if(x.l<lo) lo=x.l; }
+  return hi===lo ? 0 : 100*(c[L].c-lo)/(hi-lo);
+}
+function lbMFI(c, L, p){
+  if (L-p+1 < 0) return null;
+  const s = c.slice(L-p+1, L+1);
+  let pos=0, neg=0;
+  for (let i=1;i<s.length;i++){
+    const a=(s[i].h+s[i].l+s[i].c)/3, b=(s[i-1].h+s[i-1].l+s[i-1].c)/3;
+    const rmf=a*s[i].v;
+    if (a>b) pos+=rmf; else if (a<b) neg+=rmf;
+  }
+  if (neg===0) return 100;
+  return 100-(100/(1+pos/neg));
+}
+function lbCalcSM(c, L){
+  const P=[20,50,100,200];
+  let S=0, M=0;
+  for (const p of P){
+    const k=lbStochK(c,L,p), m=lbMFI(c,L,p);
+    if (k===null||m===null) return null;
+    S+=k; M+=m;
+  }
+  return {S, M, SM:S+M};
+}
+
+let lbRaw = null, lbMode = 'rt', lbLoading = false, lbTimer = null, lbStamp = '';
+const LB_SYMS = [...new Set(Object.values(LB_SECTORS).flat())];
+
+async function lbFetchAll(onProg){
+  const now = Math.floor(Date.now()/1000);
+  const from = now - 86400*500, to = now + 86400;
+  const out = {}; let idx = 0, done = 0;
+  const CONC = 8;
+  await Promise.all(Array.from({length:CONC}, async () => {
+    while (idx < LB_SYMS.length){
+      const sy = LB_SYMS[idx++];
+      try {
+        const r = await fetch(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sy}&resolution=D&from=${from}&to=${to}`).then(x=>x.json());
+        if (r && r.t && r.t.length >= 200) {
+          out[sy] = r.t.map((tt,i)=>({t:tt, h:r.h[i], l:r.l[i], c:r.c[i], v:r.v[i]}));
+        }
+      } catch(e){}
+      done++; onProg && onProg(done, LB_SYMS.length);
+    }
+  }));
+  return out;
+}
+
+function lbIndexFor(candles){
+  const L = candles.length - 1;
+  if (lbMode === 'rt') return L;
+  const d = new Date(candles[L].t*1000).toISOString().slice(0,10);
+  const today = new Date().toISOString().slice(0,10);
+  return d === today ? L-1 : L;   // che do EOD: bo nen dang chay
+}
+
+function lbRender(){
+  const grid = document.getElementById('lbGrid');
+  if (!grid || !lbRaw) return;
+  const html = Object.entries(LB_SECTORS).map(([name, syms]) => {
+    const rows = syms.map(sy => {
+      const c = lbRaw[sy]; if (!c) return null;
+      const L = lbIndexFor(c); if (L < 0) return null;
+      const r = lbCalcSM(c, L); if (!r) return null;
+      return {t:sy, sm:Math.round(r.SM)};
+    }).filter(Boolean).sort((a,b)=>b.sm-a.sm);
+    if (!rows.length) return '';
+    const body = rows.map(r => {
+      const b = lbBand(r.sm);
+      const brd = b.bg === '#FFFFFF' ? ';box-shadow:inset 0 0 0 1px var(--border)' : '';
+      return `<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;padding:3px 8px;margin-bottom:2px;border-radius:4px;background:${b.bg};color:${b.fg}${brd};cursor:pointer" onclick="openDetail('${r.t}')">
+        <span style="font-weight:700;font-size:12.5px">${r.t}</span><span style="font-weight:600;font-size:12.5px">${r.sm}</span></div>`;
+    }).join('');
+    return `<div style="background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:10px 10px 8px">
+      <div style="font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:var(--text);padding-bottom:6px;margin-bottom:6px;border-bottom:2px solid var(--green)">${name}</div>
+      ${body}</div>`;
+  }).join('');
+  grid.innerHTML = html;
+  const st = document.getElementById('lbStatus');
+  if (st) st.textContent = lbStamp;
+}
+
+async function lbLoad(){
+  if (lbLoading) return;
+  lbLoading = true;
+  const st = document.getElementById('lbStatus');
+  if (st) st.innerHTML = '<span class="spin"></span> Đang tải dữ liệu ' + LB_SYMS.length + ' mã…';
+  try {
+    lbRaw = await lbFetchAll((d,n)=>{ if (st && d%20===0) st.innerHTML = '<span class="spin"></span> Đang tính SM… ' + d + '/' + n; });
+    const n = Object.keys(lbRaw).length;
+    lbStamp = (lbMode==='rt' ? 'Realtime — cập nhật ' + new Date().toTimeString().slice(0,5) : 'Cuối phiên đã đóng gần nhất') + ' · ' + n + ' mã';
+    lbRender();
+  } catch(e){
+    if (st) st.textContent = 'Lỗi tải dữ liệu: ' + e.message;
+  }
+  lbLoading = false;
+}
+
+inits.leader = function(){
+  const el = $('#view-leader');
+  if (!el.dataset.built) {
+    el.dataset.built = '1';
+    el.innerHTML = `<div class="card">
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
+        <h2 style="margin:0">Leader Board <span class="hint">sức mạnh dòng tiền theo ngành · SM = Stochastic + MFI</span></h2>
+        <div class="seg" id="lbSeg" style="margin-left:auto">
+          <button data-m="rt" class="on">Realtime</button><button data-m="eod">Cuối phiên</button>
+        </div>
+        <button class="btn" id="lbRefresh">Tải lại</button>
+      </div>
+      <div class="mini" id="lbStatus" style="margin-bottom:10px"></div>
+      <div id="lbGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px"></div>
+      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <span class="mini" style="font-weight:600">Thang SM:</span>
+        ${LB_BANDS.map((b,i)=>{
+          const rng = ['&lt;400','400-500','500-550','550-600','&gt;600'][i];
+          const brd = b.bg==='#FFFFFF' ? ';box-shadow:inset 0 0 0 1px var(--border)' : '';
+          return `<span style="border-radius:5px;padding:3px 10px;font-size:11.5px;font-weight:700;background:${b.bg};color:${b.fg}${brd}">${rng} ${b.label}</span>`;
+        }).join('')}
+      </div>
+      <div class="mini" style="margin-top:10px;font-style:italic">Trong phiên, MFI dùng khối lượng lũy kế nên số buổi sáng còn nhảy, ổn dần về cuối phiên. Bấm vào mã để xem chi tiết.</div>
+    </div>`;
+    el.querySelector('#lbSeg').addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      el.querySelectorAll('#lbSeg button').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on'); lbMode = b.dataset.m;
+      lbStamp = (lbMode==='rt' ? 'Realtime — cập nhật ' + new Date().toTimeString().slice(0,5) : 'Cuối phiên đã đóng gần nhất') + ' · ' + (lbRaw?Object.keys(lbRaw).length:0) + ' mã';
+      lbRender();
+    });
+    el.querySelector('#lbRefresh').onclick = () => lbLoad();
+  }
+  if (!lbRaw && !lbLoading) lbLoad(); else lbRender();
+  if (!lbTimer) lbTimer = setInterval(() => {
+    const v = document.getElementById('view-leader');
+    if (v && v.style.display !== 'none' && lbMode === 'rt' && !lbLoading) lbLoad();
+  }, 180000);
+};
+
 // ===== Tim kiem tren navbar =====
 (function(){
   const q = $('#navQ'), box = $('#navSugg');
@@ -603,21 +788,35 @@ function addProBadges(){
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         bs.forEach(b => {
-          const x = xm[b.i];
-          if (x == null) return;
-          const y = yAxis.convertToPixel(b.value) + (b.below ? 6 : -6);
-          const w = ctx.measureText(b.text).width + 10, h = 17, r = 4;
-          const top = b.below ? y : y - h;
+          const cx = xm[b.i];
+          if (cx == null) return;
+          const yv = yAxis.convertToPixel(b.value);
+          const dir = b.below ? 1 : -1;          // dưới nến (mua) mũi tên chỉ lên, trên nến (bán) chỉ xuống
+          const gap = 3, ah = 7, aw = 5;
+          const tipY = yv + dir * gap;           // đỉnh mũi tên chạm sát cây nến
+          const baseY = tipY + dir * ah;
+          // mũi tên nhọn chỉ đúng vào cây nến (kiểu AmiBroker)
           ctx.fillStyle = b.color;
           ctx.beginPath();
-          ctx.moveTo(x - w/2 + r, top);
-          ctx.arcTo(x + w/2, top, x + w/2, top + h, r);
-          ctx.arcTo(x + w/2, top + h, x - w/2, top + h, r);
-          ctx.arcTo(x - w/2, top + h, x - w/2, top, r);
-          ctx.arcTo(x - w/2, top, x + w/2, top, r);
+          ctx.moveTo(cx, tipY);
+          ctx.lineTo(cx - aw, baseY);
+          ctx.lineTo(cx + aw, baseY);
+          ctx.closePath();
+          ctx.fill();
+          // nhãn gọn ngay sau mũi tên
+          const lbl = b.text.replace(/^[\u25B2\u25BC]\s*/, '');
+          const h = 16, r = 3, w = ctx.measureText(lbl).width + 10;
+          const top = b.below ? baseY + 1 : baseY - 1 - h;
+          ctx.fillStyle = b.color;
+          ctx.beginPath();
+          ctx.moveTo(cx - w/2 + r, top);
+          ctx.arcTo(cx + w/2, top, cx + w/2, top + h, r);
+          ctx.arcTo(cx + w/2, top + h, cx - w/2, top + h, r);
+          ctx.arcTo(cx - w/2, top + h, cx - w/2, top, r);
+          ctx.arcTo(cx - w/2, top, cx + w/2, top, r);
           ctx.fill();
           ctx.fillStyle = '#fff';
-          ctx.fillText(b.text, x, top + h/2 + 0.5);
+          ctx.fillText(lbl, cx, top + h/2 + 0.5);
         });
         ctx.restore();
         return true;
@@ -1095,45 +1294,20 @@ const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB'
 let secCache = {}, secChart = null, secGrp = 'bank';
 async function drawSec(){
   const st = $('#secSt'); const codes = SEC_GROUPS[secGrp];
-  const cch = secCache[secGrp];
-  if (!cch || (Date.now() - (cch._ts||0)) > 10*60*1000) {
+  if (!secCache[secGrp]) {
     if (st) st.innerHTML = '<span class="spin"></span> đang tải…';
     const out = {};
-    try { const f = await jget('https://api-finfo.vndirect.com.vn/v4/ratios/latest?order=reportDate&filter=ratioCode:PRICE_TO_BOOK&where=code:'+codes.join(',')+'&size=50');
-      (f.data||[]).forEach(x=>{ out[x.code] = {curPb: x.value, pbDate: (x.reportDate||'').slice(0,10) || null}; }); } catch(e){}
+    try { const f = await jget('https://api-finfo.vndirect.com.vn/v4/ratios/latest?filter=ratioCode:PRICE_TO_BOOK&where=code:'+codes.join(',')+'&size=50');
+      (f.data||[]).forEach(x=>{ out[x.code] = {curPb: x.value}; }); } catch(e){}
     for (let i=0;i<codes.length;i+=6) await Promise.all(codes.slice(i,i+6).map(async t => { try {
       const rts = await api.ratios(t); const h = rts.slice(-24);
       const pbs = h.map(x=>x.pb).filter(v=>v!=null&&isFinite(v)), roes = h.map(x=>x.roe!=null?x.roe*100:null).filter(v=>v!=null&&isFinite(v));
       out[t] = Object.assign(out[t]||{}, { pbLo:Math.min(...pbs), pbHi:Math.max(...pbs), roeLo:Math.min(...roes), roeHi:Math.max(...roes),
         curRoe: rts.length && rts[rts.length-1].roe!=null ? rts[rts.length-1].roe*100 : null });
-      // P/B HIEN TAI theo GIA MOI NHAT (fix lech 1 phien kieu SHS 1.16 vs 1.06):
-      // uu tien VNDirect (cung he so sach voi CafeF) neo dung reportDate; du phong Vietcap neo cuoi quy
-      try { const oh = await api.ohlc(t, 220);
-        if (oh && oh.c && oh.c.length > 1) {
-          const pNow = oh.c[oh.c.length-1];
-          const closeAt = lim => { for (let k = oh.t.length-1; k >= 0; k--) {
-            const ds = new Date(oh.t[k]*1000).toISOString().slice(0,10);
-            if (ds <= lim) return oh.c[k]; } return null; };
-          if (out[t].curPb != null && out[t].pbDate) {
-            const pRef = closeAt(out[t].pbDate);
-            if (pRef > 0 && pNow > 0) out[t].curPb = +(out[t].curPb * pNow / pRef).toFixed(3);
-          }
-          if (out[t].curPb > 0 && pNow > 0) out[t].bvps = +(pNow / out[t].curPb).toFixed(2);
-          if (out[t].curPb != null && out[t].pbDate) {} else {
-            const L = rts.length ? rts[rts.length-1] : null;
-            if (L && L.pb != null && L.pb > 0) {
-              const qEnd = new Date(Date.UTC(L.yearReport, L.quarter*3, 0)).toISOString().slice(0,10);
-              const pQ = closeAt(qEnd);
-              if (pQ > 0 && pNow > 0) out[t].curPb = +(L.pb * pNow / pQ).toFixed(3);
-            }
-          }
-        }
-        if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb;
-      } catch(e){ if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb; }
+      if (out[t].curPb == null) out[t].curPb = rts.length ? rts[rts.length-1].pb : null;
     } catch(e){} }));
-    out._ts = Date.now();
     secCache[secGrp] = out;
-    if (st) st.textContent = 'P/B hiện tại đã quy theo giá phiên mới nhất';
+    if (st) st.textContent = '';
   }
   const D = secCache[secGrp];
   const items = codes.filter(c => D[c] && D[c].pbLo!=null && isFinite(D[c].pbLo));
@@ -1154,8 +1328,7 @@ async function drawSec(){
     options:{ responsive:true, maintainAspectRatio:false,
       plugins:{ legend:{display:false}, tooltip:{callbacks:{ label: c => { const d = D[items[c.dataIndex]];
         return c.datasetIndex===1 ? 'ROE hiện tại: '+(d.curRoe!=null?d.curRoe.toFixed(1)+'%':'--')
-          : ['P/B cao nhất: '+d.pbHi.toFixed(2), 'P/B thấp nhất: '+d.pbLo.toFixed(2), 'P/B hiện tại: '+(d.curPb!=null?(+d.curPb).toFixed(2):'--'),
-             'Sổ sách/cp: '+(d.bvps!=null?(+d.bvps).toFixed(2)+' (VNDirect)':'--')]; } }} },
+          : ['P/B cao nhất: '+d.pbHi.toFixed(2), 'P/B thấp nhất: '+d.pbLo.toFixed(2), 'P/B hiện tại: '+(d.curPb!=null?(+d.curPb).toFixed(2):'--')]; } }} },
       scales:{ x:{grid:{display:false}, ticks:{color:'#1F2937', font:{weight:600, size:12, family:'Inter'}}},
                y:{beginAtZero:true, grid:{color:'#F1F3F6'}, ticks:{color:'#7A828E', font:{size:11}}, title:{display:true, text:'P/B', color:'#7A828E', font:{size:11}}},
                y2:{position:'right', beginAtZero:true, grid:{drawOnChartArea:false}, ticks:{color:'#D97706', font:{size:11}, callback:v=>v+'%'}, title:{display:true, text:'ROE', color:'#D97706', font:{size:11}}} } },
