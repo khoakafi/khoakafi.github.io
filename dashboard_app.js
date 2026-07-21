@@ -87,6 +87,19 @@ const inits = {};
   }
 })();
 
+(function brandLogo(){
+  const m = document.querySelector('.logo-mark');
+  if (!m || m.dataset.img) return;
+  m.dataset.img = '1';
+  m.textContent = '';
+  m.style.cssText = 'display:inline-flex;width:36px;height:36px;border-radius:9px;background:none;box-shadow:none;align-items:center;justify-content:center;overflow:hidden;flex:none';
+  const img = document.createElement('img');
+  img.src = 'logo.png';
+  img.alt = 'Khoa Nguyen KAFI';
+  img.style.cssText = 'width:100%;height:100%;object-fit:contain;display:block';
+  m.appendChild(img);
+})();
+
 (function brandFooter(){
   const f = document.querySelector('footer');
   if (!f || f.dataset.branded) return;
