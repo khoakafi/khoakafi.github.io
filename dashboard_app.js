@@ -926,9 +926,13 @@ function loadProChart(){
     addProBadges();
     // bang so lieu chay theo con tro tren Chart Pro
     const tmap = {}; curOhlc.t.forEach((tt,i)=>{ tmap[tt*1000] = i; });
+    let lastCi = -999;
     proChart.subscribeAction('onCrosshairChange', d => {
       const ts = d && d.kLineData ? d.kLineData.timestamp : null;
       const ci = ts != null && tmap[ts] != null ? tmap[ts] : null;
+      const key = ci == null ? -1 : ci;
+      if (key === lastCi) return;        // chi ve lai khi sang cay nen khac
+      lastCi = key;
       updateKpis(ci); updateDPx(ci);
     });
   };
