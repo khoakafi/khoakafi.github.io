@@ -913,9 +913,9 @@ inits.detail = function(t){
         <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:9px">
           <div class="search-wrap"><input id="dQ" placeholder="Nhập mã hoặc tên công ty…" style="width:206px;padding:6px 11px"><div id="sugg"></div></div>
           <div id="dTitle" style="font-size:15.5px;font-weight:700"></div>
-          <div style="display:flex;gap:6px;margin-left:auto;flex-wrap:wrap" id="dRanges">
-            <button class="btn active" id="btnChartPro">Chart Pro + Tín hiệu</button>
-            <button class="btn" id="btnChartSig">Chart Tín hiệu</button>
+          <div style="display:flex;gap:9px;align-items:center;margin-left:auto;flex-wrap:wrap" id="dRanges">
+            <span style="background:var(--green);color:#fff;border-radius:7px;padding:5px 12px;font-size:12px;font-weight:700;letter-spacing:.02em;white-space:nowrap">CHART TÍN HIỆU AI</span>
+            <span class="mini" style="font-style:italic;white-space:nowrap">điểm Mua · Bồi · Bán hiện ngay trên nến</span>
           </div>
         </div>
         <div id="dTpn" style="margin-bottom:10px"></div>
@@ -966,12 +966,6 @@ inits.detail = function(t){
     dq.addEventListener('keydown', e => { if (e.key==='Enter') { const q = dq.value.toUpperCase().trim(); if (byT[q]) openDetail(q); } });
     document.addEventListener('click', e => { if (!e.target.closest('.search-wrap')) $('#sugg').style.display='none'; });
     $('#dRanges').addEventListener('click', e => { const b = e.target.closest('button.rng'); if (!b) return; $$('#dRanges .btn.rng').forEach(x=>x.classList.remove('active')); b.classList.add('active'); drawPrice(+b.dataset.y); });
-    $('#btnChartSig').onclick = () => { $('#chartSigWrap').style.display=''; $('#chartProWrap').style.display='none'; $('#btnChartSig').classList.add('active'); $('#btnChartPro').classList.remove('active'); };
-    $('#btnChartPro').onclick = () => {
-      $('#chartSigWrap').style.display='none'; $('#chartProWrap').style.display='';
-      $('#btnChartPro').classList.add('active'); $('#btnChartSig').classList.remove('active');
-      loadProChart();
-    };
     $('#dTabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
       $$('#dTabs button').forEach(x=>x.classList.toggle('active', x===b));
       ['ov','fin','sig','rec'].forEach(k => { const d = document.getElementById('tab-'+k); if (d) d.style.display = (b.dataset.t===k?'':'none'); });
