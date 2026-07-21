@@ -709,9 +709,19 @@ function updateKpis(i){
     ['+/- LN quý gần nhất', `<span class="${cls(qq.npY)}">${pct(qq.npY,1)}</span>`]
   ];
   const el = document.getElementById('dSide');
-  if (el) el.innerHTML = `<div style="font-weight:700;font-size:14.5px;margin:4px 0 2px">Chỉ số cơ bản</div>
-    ${rows.map(k=>`<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:9.5px 0;border-bottom:1px solid var(--border);font-size:13.5px">
-      <span style="color:var(--muted)">${k[0]}</span><span style="font-weight:700">${k[1]}</span></div>`).join('')}`;
+  if (!el) return;
+  if (el.dataset.built !== '1') {
+    el.innerHTML = `<div style="font-weight:700;font-size:14.5px;margin:4px 0 2px">Chỉ số cơ bản</div>
+      ${rows.map(k=>`<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:9.5px 0;border-bottom:1px solid var(--border);font-size:13.5px">
+        <span style="color:var(--muted)">${k[0]}</span><span class="kpiV" style="font-weight:700">${k[1]}</span></div>`).join('')}`;
+    el.dataset.built = '1';
+    return;
+  }
+  const vals = el.getElementsByClassName('kpiV');
+  for (let ix = 0; ix < rows.length && ix < vals.length; ix++) {
+    const html = String(rows[ix][1]);
+    if (vals[ix].innerHTML !== html) vals[ix].innerHTML = html;   // chi ghi khi that su doi
+  }
 }
 function updateDPx(i){
   const el = document.getElementById('dPx'); if (!el || !curOhlc) return;
@@ -729,8 +739,15 @@ function updateDPx(i){
          const tb = cnt ? sm/cnt : 0; if (tb>0) vx = Math.round((v[idx]||0)/tb*100); }
   const d = new Date(curOhlc.t[idx]*1000);
   const ngay = isNow ? '' : ' <span class="mini" style="font-weight:600">' + ('0'+d.getUTCDate()).slice(-2)+'/'+('0'+(d.getUTCMonth()+1)).slice(-2)+'/'+String(d.getUTCFullYear()).slice(2) + '</span>';
-  el.innerHTML = `<div style="font-size:27px;font-weight:800;color:${col};line-height:1">${fmt(p,2)} <span style="font-size:15px;font-weight:700">(${chg>0?'+':''}${fmt(chg,1)}%)</span>${ngay}</div>
-    <div style="font-size:14px;font-weight:800;white-space:nowrap">KL ${fmt(vol,2)} tr${vx!=null?` <span style="font-weight:700;color:${vx>=150?'#B45309':'var(--muted)'}">(${vx}%)</span>`:''}</div>`;
+  const htmlL = `${fmt(p,2)} <span style="font-size:15px;font-weight:700">(${chg>0?'+':''}${fmt(chg,1)}%)</span>${ngay}`;
+  const htmlR = `KL ${fmt(vol,2)} tr${vx!=null?` <span style="font-weight:700;color:${vx>=150?'#B45309':'var(--muted)'}">(${vx}%)</span>`:''}`;
+  if (el.dataset.built !== '1') {
+    el.innerHTML = `<div id="dPxL" style="font-size:27px;font-weight:800;line-height:1"></div><div id="dPxR" style="font-size:14px;font-weight:800;white-space:nowrap"></div>`;
+    el.dataset.built = '1';
+  }
+  const L = document.getElementById('dPxL'), R = document.getElementById('dPxR');
+  if (L) { if (L.style.color !== col) L.style.color = col; if (L.innerHTML !== htmlL) L.innerHTML = htmlL; }
+  if (R && R.innerHTML !== htmlR) R.innerHTML = htmlR;
 }
 function renderDHead(){
   const el = document.getElementById('dHead'); if (!el || !curOhlc) return;
@@ -926,14 +943,15 @@ function loadProChart(){
     addProBadges();
     // bang so lieu chay theo con tro tren Chart Pro
     const tmap = {}; curOhlc.t.forEach((tt,i)=>{ tmap[tt*1000] = i; });
-    let lastCi = -999;
+    let lastCi = -999, pendCi = null, rafId = 0;
     proChart.subscribeAction('onCrosshairChange', d => {
       const ts = d && d.kLineData ? d.kLineData.timestamp : null;
       const ci = ts != null && tmap[ts] != null ? tmap[ts] : null;
       const key = ci == null ? -1 : ci;
-      if (key === lastCi) return;        // chi ve lai khi sang cay nen khac
-      lastCi = key;
-      updateKpis(ci); updateDPx(ci);
+      if (key === lastCi) return;        // van o trong cung cay nen -> bo qua
+      lastCi = key; pendCi = ci;
+      if (rafId) return;                 // da co lich ve trong khung hinh nay
+      rafId = requestAnimationFrame(() => { rafId = 0; updateKpis(pendCi); updateDPx(pendCi); });
     });
   };
   if (window.klinecharts) init();
