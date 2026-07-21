@@ -1306,20 +1306,42 @@ const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB'
 let secCache = {}, secChart = null, secGrp = 'bank';
 async function drawSec(){
   const st = $('#secSt'); const codes = SEC_GROUPS[secGrp];
-  if (!secCache[secGrp]) {
+  const cch = secCache[secGrp];
+  if (!cch || (Date.now() - (cch._ts||0)) > 10*60*1000) {
     if (st) st.innerHTML = '<span class="spin"></span> đang tải…';
     const out = {};
-    try { const f = await jget('https://api-finfo.vndirect.com.vn/v4/ratios/latest?filter=ratioCode:PRICE_TO_BOOK&where=code:'+codes.join(',')+'&size=50');
-      (f.data||[]).forEach(x=>{ out[x.code] = {curPb: x.value}; }); } catch(e){}
+    try { const f = await jget('https://api-finfo.vndirect.com.vn/v4/ratios/latest?order=reportDate&filter=ratioCode:PRICE_TO_BOOK&where=code:'+codes.join(',')+'&size=50');
+      (f.data||[]).forEach(x=>{ out[x.code] = {curPb: x.value, pbDate: (x.reportDate||'').slice(0,10) || null}; }); } catch(e){}
     for (let i=0;i<codes.length;i+=6) await Promise.all(codes.slice(i,i+6).map(async t => { try {
       const rts = await api.ratios(t); const h = rts.slice(-24);
       const pbs = h.map(x=>x.pb).filter(v=>v!=null&&isFinite(v)), roes = h.map(x=>x.roe!=null?x.roe*100:null).filter(v=>v!=null&&isFinite(v));
       out[t] = Object.assign(out[t]||{}, { pbLo:Math.min(...pbs), pbHi:Math.max(...pbs), roeLo:Math.min(...roes), roeHi:Math.max(...roes),
         curRoe: rts.length && rts[rts.length-1].roe!=null ? rts[rts.length-1].roe*100 : null });
-      if (out[t].curPb == null) out[t].curPb = rts.length ? rts[rts.length-1].pb : null;
+      try { const oh = await api.ohlc(t, 220);
+        if (oh && oh.c && oh.c.length > 1) {
+          const pNow = oh.c[oh.c.length-1];
+          const closeAt = lim => { for (let k = oh.t.length-1; k >= 0; k--) {
+            const ds = new Date(oh.t[k]*1000).toISOString().slice(0,10);
+            if (ds <= lim) return oh.c[k]; } return null; };
+          if (out[t].curPb != null && out[t].pbDate) {
+            const pRef = closeAt(out[t].pbDate);
+            if (pRef > 0 && pNow > 0) out[t].curPb = +(out[t].curPb * pNow / pRef).toFixed(3);
+          } else {
+            const L = rts.length ? rts[rts.length-1] : null;
+            if (L && L.pb != null && L.pb > 0) {
+              const qEnd = new Date(Date.UTC(L.yearReport, L.quarter*3, 0)).toISOString().slice(0,10);
+              const pQ = closeAt(qEnd);
+              if (pQ > 0 && pNow > 0) out[t].curPb = +(L.pb * pNow / pQ).toFixed(3);
+            }
+          }
+          if (out[t].curPb > 0 && pNow > 0) out[t].bvps = +(pNow / out[t].curPb).toFixed(2);
+        }
+        if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb;
+      } catch(e){ if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb; }
     } catch(e){} }));
+    out._ts = Date.now();
     secCache[secGrp] = out;
-    if (st) st.textContent = '';
+    if (st) st.textContent = 'P/B hiện tại đã quy theo giá phiên mới nhất';
   }
   const D = secCache[secGrp];
   const items = codes.filter(c => D[c] && D[c].pbLo!=null && isFinite(D[c].pbLo));
@@ -1340,7 +1362,8 @@ async function drawSec(){
     options:{ responsive:true, maintainAspectRatio:false,
       plugins:{ legend:{display:false}, tooltip:{callbacks:{ label: c => { const d = D[items[c.dataIndex]];
         return c.datasetIndex===1 ? 'ROE hiện tại: '+(d.curRoe!=null?d.curRoe.toFixed(1)+'%':'--')
-          : ['P/B cao nhất: '+d.pbHi.toFixed(2), 'P/B thấp nhất: '+d.pbLo.toFixed(2), 'P/B hiện tại: '+(d.curPb!=null?(+d.curPb).toFixed(2):'--')]; } }} },
+          : ['P/B cao nhất: '+d.pbHi.toFixed(2), 'P/B thấp nhất: '+d.pbLo.toFixed(2), 'P/B hiện tại: '+(d.curPb!=null?(+d.curPb).toFixed(2):'--'),
+             'Sổ sách/cp: '+(d.bvps!=null?(+d.bvps).toFixed(2)+' (VNDirect)':'--')]; } }} },
       scales:{ x:{grid:{display:false}, ticks:{color:'#1F2937', font:{weight:600, size:12, family:'Inter'}}},
                y:{beginAtZero:true, grid:{color:'#F1F3F6'}, ticks:{color:'#7A828E', font:{size:11}}, title:{display:true, text:'P/B', color:'#7A828E', font:{size:11}}},
                y2:{position:'right', beginAtZero:true, grid:{drawOnChartArea:false}, ticks:{color:'#D97706', font:{size:11}, callback:v=>v+'%'}, title:{display:true, text:'ROE', color:'#D97706', font:{size:11}}} } },
