@@ -964,6 +964,10 @@ function loadProChart(){
     proChart.createIndicator('KVOL', false, { height: 96 });
     try { proChart.setBarSpace(9); proChart.setOffsetRightDistance(70); } catch(e){}
     addProBadges();
+    setTimeout(()=>{ try{ proChart && proChart.resize(); }catch(e){} }, 150);
+    if (!window._proResizeReg){ window._proResizeReg=1;
+      const rz=()=>{ try{ proChart && proChart.resize(); }catch(e){} };
+      window.addEventListener('resize', rz); window.addEventListener('orientationchange', ()=>setTimeout(rz,200)); }
     // bang so lieu chay theo con tro tren Chart Pro
     const tmap = {}; curOhlc.t.forEach((tt,i)=>{ tmap[tt*1000] = i; });
     let lastCi = -999, pendCi = null, rafId = 0;
