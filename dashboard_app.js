@@ -627,7 +627,7 @@ function addLine(ch, times, vals, color, title){ const s = ch.addLineSeries({col
 let scInit = false, sortKey = '_capR', sortDir = 1;
 const COLS = [
   ['t','Mã'],['sec','Ngành'],['p','Giá'],['_ytd','YTD%'],['npatYoY','LNST YoY%'],['revYoY','DT YoY%'],
-  ['roe','ROE%'],['_peR','P/E'],['_pbR','P/B'],['dy','Cổ tức%'],['_capR','Vốn hóa (tỷ)']
+  ['roe','ROE%'],['_peR','P/E'],['_pbR','P/B'],['dy','Cổ tức%'],['_capR','Vốn hóa (tỷ)'],['val20','GTGD TB20 (tỷ)']
 ];
 const PRESETS = {
   growth: {label:'Tăng trưởng cao', f: r => (r.npatYoY||0)>=30 && (r.revYoY||0)>=15},
@@ -653,13 +653,14 @@ inits.screener = function(){
       <div><label>Cổ tức ≥ %</label><input id="fDy" type="number"></div>
       <div><label>Vốn hóa ≥ tỷ</label><input id="fCap" type="number"></div>
       <div><label>YTD ≥ %</label><input id="fYtd" type="number"></div>
+      <div><label>GTGD ≥ tỷ</label><input id="fVal" type="number"></div>
       <button class="btn" id="fClear">Xóa lọc</button>
     </div>
     <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">${Object.entries(PRESETS).map(([k,p])=>`<span class="pill" data-p="${k}">${p.label}</span>`).join('')}</div>
     <div style="max-height:calc(100vh - 258px);min-height:260px;overflow:auto;margin-top:14px;border-top:1px solid var(--border);padding-top:12px"><table id="scTable"></table></div>
   </div>`;
-  ['fQ','fSec','fSan','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id => $('#'+id).addEventListener('input', renderSc));
-  $('#fClear').onclick = () => { ['fQ','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id=>$('#'+id).value=''); $('#fSan').value=''; $('#fSec').value=''; activePreset=null; $$('.pill').forEach(p=>p.classList.remove('on')); renderSc(); };
+  ['fQ','fSec','fSan','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd','fVal'].forEach(id => $('#'+id).addEventListener('input', renderSc));
+  $('#fClear').onclick = () => { ['fQ','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd','fVal'].forEach(id=>$('#'+id).value=''); $('#fSan').value=''; $('#fSec').value=''; activePreset=null; $$('.pill').forEach(p=>p.classList.remove('on')); renderSc(); };
   $$('.pill').forEach(p => p.onclick = () => { activePreset = activePreset===p.dataset.p ? null : p.dataset.p; $$('.pill').forEach(x=>x.classList.toggle('on', x.dataset.p===activePreset)); renderSc(); });
   renderSc();
 };
@@ -668,7 +669,7 @@ function renderSc(){
   ROWS().forEach(scDerive);
   const q = ($('#fQ').value||'').toUpperCase();
   const num = id => { const v = $('#'+id).value; return v===''?null:+v; };
-  const [pe,pb,roe,np,rev,dy,cap,ytd] = ['fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].map(num);
+  const [pe,pb,roe,np,rev,dy,cap,ytd,gtgd] = ['fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd','fVal'].map(num);
   const san = $('#fSan').value, sec = $('#fSec').value;
   let rows = ROWS().filter(r =>
     (!q || r.t.includes(q) || (r.n||'').toUpperCase().includes(q)) &&
@@ -681,7 +682,8 @@ function renderSc(){
     (rev==null || (r.revYoY!=null && r.revYoY>=rev)) &&
     (dy==null || (r.dy||0)>=dy) &&
     (cap==null || (r._capR||0)>=cap) &&
-    (ytd==null || (r._ytd!=null && r._ytd>=ytd))
+    (ytd==null || (r._ytd!=null && r._ytd>=ytd)) &&
+    (gtgd==null || (r.val20||0)/1000>=gtgd)
   );
   if (activePreset) rows = rows.filter(PRESETS[activePreset].f);
   rows.sort((a,b)=>{ const x=a[sortKey], y=b[sortKey]; if(x==null) return 1; if(y==null) return -1; return (x<y?-1:x>y?1:0)*sortDir*-1; });
@@ -697,7 +699,8 @@ function renderSc(){
     <td>${fmt(r._peR,1)}</td>
     <td>${fmt(r._pbR,2)}</td>
     <td>${r.dy?fmt(r.dy,1):'—'}</td>
-    <td>${fmt(r._capR,0)}</td></tr>`).join('');
+    <td>${fmt(r._capR,0)}</td>
+    <td>${fmt((r.val20||0)/1000,0)}</td></tr>`).join('');
   $('#scTable').innerHTML = head + body;
   $$('#scTable th').forEach(th => th.onclick = () => { const k = th.dataset.k; if (sortKey===k) sortDir*=-1; else { sortKey=k; sortDir=1; } renderSc(); });
 }
