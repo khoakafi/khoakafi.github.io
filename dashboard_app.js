@@ -14,6 +14,7 @@ SUM.rows.forEach(r => {
   r._sh  = (r.cap && r.p) ? r.cap / r.p : null;
   r._bv  = (r.pb && r.p) ? r.p / r.pb : null;
   r.sec  = SEC_MAP[r.t] || '';
+  if (r.revYoY == null && REV_FIX[r.t] != null) r.revYoY = REV_FIX[r.t];
 });
 function scDerive(r){
   r._peR = r._eps ? r.p / r._eps : r.pe;
@@ -34,6 +35,8 @@ const NOW = () => Math.floor(Date.now()/1000);
 
 const REV = ['isa3','isb27','isi64','nos689','nos693'], NPAT = ['isa22','isa20'];
 const pick = (row, codes) => { for (const c of codes) if (row[c]!=null) return row[c]; return null; };
+const pickRev = (row, codes) => { for (const c of codes){ const v=row[c]; if (v!=null && v!==0) return v; } return null; };
+const REV_FIX = {"VPB":27.0,"VNR":11.0,"VIB":8.1,"VCB":29.0,"VAB":10.3,"TPB":2.2,"TCB":14.6,"STB":-12.0,"SSB":-1.5,"SHB":-0.8,"PVI":27.4,"PTI":4.2,"PRE":5.6,"PGI":11.4,"OCB":10.1,"NVB":56.9,"NAB":-1.9,"MSB":27.7,"MIG":2.6,"MBB":27.5,"LPB":18.2,"KLB":8.3,"HDB":14.5,"EVF":5.5,"EIB":1.9,"CTG":25.3,"BVH":-1.5,"BMI":1.5,"BID":12.8,"BIC":10.1,"BAB":16.7,"ACB":9.9};
 
 async function jget(u){ const r = await fetch(u); if(!r.ok) throw new Error(r.status); return r.json(); }
 const api = {
@@ -1611,7 +1614,7 @@ $('#btnRefresh').onclick = async function(){
           if (!hc && rng<=12) { o.watch=1; o.wrng=+rng.toFixed(1); o.wdb=+((c[L2]/hi-1)*100).toFixed(1); }
         } }
       const qs = qsArr;
-      if (qs.length) { const rev = qs.map(x=>pick(x,REV)), np2 = qs.map(x=>pick(x,NPAT)); const n = qs.length;
+      if (qs.length) { const rev = qs.map(x=>pickRev(x,REV)), np2 = qs.map(x=>pick(x,NPAT)); const n = qs.length;
         o.q = qs.slice(-9).map((x,i,arr)=>{ const idx = n-arr.length+i; return [x.yearReport,x.lengthReport,rev[idx],np2[idx]]; });
         if (n>=5 && np2[n-5]!=null && np2[n-1]!=null && np2[n-5]!==0) o.npatYoY = +((np2[n-1]/Math.abs(np2[n-5])-1)*100).toFixed(1);
         if (n>=5 && rev[n-5] && rev[n-1]!=null) o.revYoY = +((rev[n-1]/Math.abs(rev[n-5])-1)*100).toFixed(1);
