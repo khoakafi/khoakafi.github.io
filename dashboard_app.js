@@ -621,7 +621,7 @@ function candleOpts(){ return {upColor:'#18a34b',downColor:'#e5484d',borderUpCol
 function addLine(ch, times, vals, color, title){ const s = ch.addLineSeries({color, lineWidth:1.5, title, priceLineVisible:false, lastValueVisible:false}); s.setData(times.map((t,i)=>vals[i]!=null?{time:t,value:vals[i]}:null).filter(Boolean)); return s; }
 
 // ================= 2. SCREENER =================
-let scInit = false, sortKey = '_capR', sortDir = -1;
+let scInit = false, sortKey = '_capR', sortDir = 1;
 const COLS = [
   ['t','Mã'],['sec','Ngành'],['p','Giá'],['_ytd','YTD%'],['npatYoY','LNST YoY%'],['revYoY','DT YoY%'],
   ['roe','ROE%'],['_peR','P/E'],['_pbR','P/B'],['dy','Cổ tức%'],['_capR','Vốn hóa (tỷ)']
@@ -701,7 +701,7 @@ function renderSc(){
     <td>${r.dy?fmt(r.dy,1):'—'}</td>
     <td>${fmt(r._capR,0)}</td></tr>`).join('');
   $('#scTable').innerHTML = head + body;
-  $$('#scTable th').forEach(th => th.onclick = () => { const k = th.dataset.k; if (sortKey===k) sortDir*=-1; else { sortKey=k; sortDir=-1; } renderSc(); });
+  $$('#scTable th').forEach(th => th.onclick = () => { const k = th.dataset.k; if (sortKey===k) sortDir*=-1; else { sortKey=k; sortDir=1; } renderSc(); });
 }
 
 // ================= 3. CHI TIẾT MÃ =================
