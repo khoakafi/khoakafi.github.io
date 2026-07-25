@@ -119,7 +119,6 @@ const inits = {};
   m.appendChild(img);
 })();
 
-(function verTag(){ try{ const d=document.createElement('div'); d.textContent='v25m'; d.style.cssText='position:fixed;left:5px;bottom:3px;font-size:10px;color:#c9ced6;z-index:99999;pointer-events:none'; (document.body||document.documentElement).appendChild(d);}catch(e){} })();
 (function brandFooter(){
   const f = document.querySelector('footer');
   if (!f || f.dataset.branded) return;
@@ -657,8 +656,8 @@ inits.screener = function(){
       <button class="btn" id="fClear">Xóa lọc</button>
     </div>
     <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">${Object.entries(PRESETS).map(([k,p])=>`<span class="pill" data-p="${k}">${p.label}</span>`).join('')}</div>
-  </div>
-  <div class="card" style="margin-bottom:8px"><div style="max-height:calc(100vh - 300px);min-height:260px;overflow:auto"><table id="scTable"></table></div></div>`;
+    <div style="max-height:calc(100vh - 320px);min-height:260px;overflow:auto;margin-top:14px;border-top:1px solid var(--border);padding-top:12px"><table id="scTable"></table></div>
+  </div>`;
   ['fQ','fSec','fSan','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id => $('#'+id).addEventListener('input', renderSc));
   $('#fClear').onclick = () => { ['fQ','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id=>$('#'+id).value=''); $('#fSan').value=''; $('#fSec').value=''; activePreset=null; $$('.pill').forEach(p=>p.classList.remove('on')); renderSc(); };
   $$('.pill').forEach(p => p.onclick = () => { activePreset = activePreset===p.dataset.p ? null : p.dataset.p; $$('.pill').forEach(x=>x.classList.toggle('on', x.dataset.p===activePreset)); renderSc(); });
