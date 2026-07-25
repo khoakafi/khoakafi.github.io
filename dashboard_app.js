@@ -70,7 +70,7 @@ function bollS(c,n=20,k=2){ const ma=smaS(c,n); return c.map((_,i)=>{ if(ma[i]==
 // ================= ĐIỀU HƯỚNG =================
 const views = ['market','screener','watch','detail','compare','leader'];
 $$('.nav-link').forEach(b => b.onclick = () => showView(b.dataset.view));
-function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { $('#view-'+x).style.display = x===v?'':'none'; }); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view===v)); if(!skip) inits[v] && inits[v](); }
+function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { $('#view-'+x).style.display = x===v?'':'none'; }); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view===v)); const fd=document.getElementById('footDisc'); if(fd) fd.style.display=(v==='screener')?'none':''; if(!skip) inits[v] && inits[v](); }
 window.showView = showView;
 
 const inits = {};
@@ -131,7 +131,7 @@ const inits = {};
     + '<span style="color:var(--border);font-weight:400;margin:0 8px">|</span>'
     + 'Giám đốc Tư vấn Đầu tư — Chứng khoán KAFI'
     + '</div>'
-    + '<div style="margin-top:7px;font-size:11px;font-style:italic">Số liệu hiệu suất từ mô phỏng lịch sử (backtest) đã gồm phí giao dịch; kết quả quá khứ không đảm bảo tương lai — thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>';
+    + '<div id="footDisc" style="margin-top:7px;font-size:11px;font-style:italic">Số liệu hiệu suất từ mô phỏng lịch sử (backtest) đã gồm phí giao dịch; kết quả quá khứ không đảm bảo tương lai — thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>';
 })();
 
 const LB_SECTORS = {
@@ -657,7 +657,7 @@ inits.screener = function(){
     </div>
     <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">${Object.entries(PRESETS).map(([k,p])=>`<span class="pill" data-p="${k}">${p.label}</span>`).join('')}</div>
   </div>
-  <div class="card" style="margin-bottom:8px"><div style="max-height:calc(100vh - 365px);min-height:260px;overflow:auto"><table id="scTable"></table></div></div>`;
+  <div class="card" style="margin-bottom:8px"><div style="max-height:calc(100vh - 275px);min-height:260px;overflow:auto"><table id="scTable"></table></div></div>`;
   ['fQ','fSec','fSan','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id => $('#'+id).addEventListener('input', renderSc));
   $('#fClear').onclick = () => { ['fQ','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id=>$('#'+id).value=''); $('#fSan').value=''; $('#fSec').value=''; activePreset=null; $$('.pill').forEach(p=>p.classList.remove('on')); renderSc(); };
   $$('.pill').forEach(p => p.onclick = () => { activePreset = activePreset===p.dataset.p ? null : p.dataset.p; $$('.pill').forEach(x=>x.classList.toggle('on', x.dataset.p===activePreset)); renderSc(); });
