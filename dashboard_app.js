@@ -637,10 +637,7 @@ const SECTORS = [...new Set(Object.values(SEC_MAP).filter(Boolean))].sort((a,b)=
 inits.screener = function(){
   if (scInit) return; scInit = true;
   const el = $('#view-screener');
-  el.innerHTML = `<div class="grid g2" style="margin-bottom:16px">
-    <div class="card" style="margin:0"><h2>Top tăng giá hôm nay <span class="hint">GTGD TB20 ≥ 20 tỷ · cuối phiên gần nhất</span></h2><div id="topCs"></div></div>
-    <div class="card" style="margin:0"><h2>Top khối lượng hôm nay <span class="hint">GTGD TB20 ≥ 20 tỷ · cuối phiên gần nhất</span></h2><div id="topRs"></div></div>
-  </div><div class="card">
+  el.innerHTML = `<div class="card">
     <div class="filters">
       <div><label>Tìm mã / tên</label><input id="fQ" style="width:140px" placeholder="VD: FPT, thép..."></div>
       <div><label>Ngành</label><select id="fSec" style="max-width:190px"><option value="">Tất cả ngành</option>${SECTORS.map(x=>`<option value="${x}">${x}</option>`).join('')}</select></div>
@@ -662,7 +659,6 @@ inits.screener = function(){
   $('#fClear').onclick = () => { ['fQ','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id=>$('#'+id).value=''); $('#fSan').value=''; $('#fSec').value=''; activePreset=null; $$('.pill').forEach(p=>p.classList.remove('on')); renderSc(); };
   $$('.pill').forEach(p => p.onclick = () => { activePreset = activePreset===p.dataset.p ? null : p.dataset.p; $$('.pill').forEach(x=>x.classList.toggle('on', x.dataset.p===activePreset)); renderSc(); });
   renderSc();
-  renderTops();
 };
 let activePreset = null;
 function renderSc(){
