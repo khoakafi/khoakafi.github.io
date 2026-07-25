@@ -657,7 +657,7 @@ inits.screener = function(){
     </div>
     <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">${Object.entries(PRESETS).map(([k,p])=>`<span class="pill" data-p="${k}">${p.label}</span>`).join('')}</div>
   </div>
-  <div class="card"><div class="mini" id="scCount" style="margin-bottom:8px"></div><div style="max-height:65vh;overflow:auto"><table id="scTable"></table></div></div>`;
+  <div class="card" style="margin-bottom:8px"><div style="max-height:calc(100vh - 330px);min-height:260px;overflow:auto"><table id="scTable"></table></div></div>`;
   ['fQ','fSec','fSan','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id => $('#'+id).addEventListener('input', renderSc));
   $('#fClear').onclick = () => { ['fQ','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id=>$('#'+id).value=''); $('#fSan').value=''; $('#fSec').value=''; activePreset=null; $$('.pill').forEach(p=>p.classList.remove('on')); renderSc(); };
   $$('.pill').forEach(p => p.onclick = () => { activePreset = activePreset===p.dataset.p ? null : p.dataset.p; $$('.pill').forEach(x=>x.classList.toggle('on', x.dataset.p===activePreset)); renderSc(); });
@@ -685,7 +685,6 @@ function renderSc(){
   );
   if (activePreset) rows = rows.filter(PRESETS[activePreset].f);
   rows.sort((a,b)=>{ const x=a[sortKey], y=b[sortKey]; if(x==null) return 1; if(y==null) return -1; return (x<y?-1:x>y?1:0)*sortDir*-1; });
-  $('#scCount').textContent = rows.length + ' mã thỏa điều kiện (bấm tiêu đề cột để sắp xếp, bấm dòng để xem chi tiết)';
   const head = '<tr>' + COLS.map(c=>`<th data-k="${c[0]}" class="${sortKey===c[0]?'on':''}"${(c[0]==='t'||c[0]==='sec')?' style="text-align:left"':''}>${c[1]}${sortKey===c[0]?(sortDir>0?' ↓':' ↑'):''}</th>`).join('') + '</tr>';
   const body = rows.slice(0,400).map(r => `<tr class="row" onclick="openDetail('${r.t}')">
     <td><b>${r.t}</b> <span class="mini">${r.b==='HO'?'HOSE':'HNX'}</span><br><span class="mini">${(r.n||'').slice(0,24)}</span></td>
