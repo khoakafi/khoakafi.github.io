@@ -640,7 +640,7 @@ const SECTORS = [...new Set(Object.values(SEC_MAP).filter(Boolean))].sort((a,b)=
 inits.screener = function(){
   if (scInit) return; scInit = true;
   const el = $('#view-screener');
-  el.innerHTML = `<div class="card">
+  el.innerHTML = `<div class="card" style="margin-bottom:4px;padding-bottom:8px">
     <div class="filters">
       <div><label>Tìm mã / tên</label><input id="fQ" style="width:140px" placeholder="VD: FPT, thép..."></div>
       <div><label>Ngành</label><select id="fSec" style="max-width:190px"><option value="">Tất cả ngành</option>${SECTORS.map(x=>`<option value="${x}">${x}</option>`).join('')}</select></div>
@@ -656,7 +656,7 @@ inits.screener = function(){
       <button class="btn" id="fClear">Xóa lọc</button>
     </div>
     <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">${Object.entries(PRESETS).map(([k,p])=>`<span class="pill" data-p="${k}">${p.label}</span>`).join('')}</div>
-    <div style="max-height:calc(100vh - 285px);min-height:260px;overflow:auto;margin-top:14px;border-top:1px solid var(--border);padding-top:12px"><table id="scTable"></table></div>
+    <div style="max-height:calc(100vh - 258px);min-height:260px;overflow:auto;margin-top:14px;border-top:1px solid var(--border);padding-top:12px"><table id="scTable"></table></div>
   </div>`;
   ['fQ','fSec','fSan','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id => $('#'+id).addEventListener('input', renderSc));
   $('#fClear').onclick = () => { ['fQ','fPe','fPb','fRoe','fNp','fRev','fDy','fCap','fYtd'].forEach(id=>$('#'+id).value=''); $('#fSan').value=''; $('#fSec').value=''; activePreset=null; $$('.pill').forEach(p=>p.classList.remove('on')); renderSc(); };
