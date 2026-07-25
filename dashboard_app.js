@@ -964,7 +964,7 @@ function loadProChart(){
     proChart.createIndicator('KVOL', false, { height: 96 });
     try { proChart.setBarSpace(9); proChart.setOffsetRightDistance(70); } catch(e){}
     addProBadges();
-    setTimeout(()=>{ try{ proChart && proChart.resize(); }catch(e){} }, 150);
+    [60,200,500,1000,2000].forEach(ms=>setTimeout(()=>{ try{ proChart && proChart.resize(); }catch(e){} }, ms));
     if (!window._proResizeReg){ window._proResizeReg=1;
       const rz=()=>{ try{ proChart && proChart.resize(); }catch(e){} };
       window.addEventListener('resize', rz); window.addEventListener('orientationchange', ()=>setTimeout(rz,200)); }
