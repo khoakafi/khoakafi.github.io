@@ -119,6 +119,7 @@ const inits = {};
   m.appendChild(img);
 })();
 
+(function verTag(){ try{ const d=document.createElement('div'); d.textContent='v25L'; d.style.cssText='position:fixed;left:5px;bottom:3px;font-size:10px;color:#c9ced6;z-index:99999;pointer-events:none'; (document.body||document.documentElement).appendChild(d);}catch(e){} })();
 (function brandFooter(){
   const f = document.querySelector('footer');
   if (!f || f.dataset.branded) return;
@@ -915,6 +916,9 @@ function loadProChart(){
     proLoadedFor = curT;
     const wrap = document.getElementById('chartProWrap');
     wrap.innerHTML = '<div id="proK" style="height:470px"></div>';
+    const __build = () => {
+    const __pk = document.getElementById('proK');
+    if (__pk && __pk.clientWidth < 20) { __build._n = (__build._n||0)+1; if (__build._n < 40) return requestAnimationFrame(__build); }
     try { klinecharts.dispose('proK'); } catch(e){}
     proChart = klinecharts.init('proK');
     // Bang mau TradingView
@@ -986,6 +990,8 @@ function loadProChart(){
       kEl.addEventListener("pointerenter", () => { window.__dHov = 1; });
       kEl.addEventListener("pointerleave", () => { window.__dHov = 0; lastCi = -999; pendCi = null; updateKpis(null); updateDPx(null); });
     }
+    };
+    requestAnimationFrame(__build);
   };
   if (window.klinecharts) init();
   else { const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/klinecharts@9/dist/klinecharts.min.js'; s.onload = init; s.onerror = () => toast('Không tải được thư viện chart'); document.head.appendChild(s); }
