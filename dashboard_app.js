@@ -338,7 +338,7 @@ async function liveQuote(){
     if (!data) return false;
     let n = 0;
     data.forEach(d=>{ const row = byT[d.code]; if (!row) return;
-      if (d.close!=null) row.p = d.close;
+      if (d.close!=null) { const _op=row.p; row.p = d.close; if (_op>0 && d.close>0) { const _k=d.close/_op; ['cap','pe','pb'].forEach(_f=>{ if (typeof row[_f]==='number' && isFinite(row[_f]) && row[_f]!==0) row[_f]=row[_f]*_k; }); } }
       if (d.pctChange!=null) row.chg = +(+d.pctChange).toFixed(2);
       if (row.v20 && d.nmVolume!=null) row.vx = +(d.nmVolume/row.v20).toFixed(2);
       n++; });
