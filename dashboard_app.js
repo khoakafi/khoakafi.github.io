@@ -723,7 +723,13 @@ function updateKpis(i){
   const r = byT[curT] || {};
   const peV = isNow && r.pe != null ? r.pe : rt.pe;
   const pbV = isNow && r.pb != null ? r.pb : rt.pb;
-  const capT = isNow && r.cap != null ? r.cap/1000 : (rt.cap != null ? rt.cap/1e12 : null);
+  let capT = null;
+  if (rt.cap != null && rt.av != null) {
+    const qe = rt.av - 45*86400;  // moc do von hoa = ngay chot quy (av = qe + 45 ngay BCTC)
+    let j0 = i; while (j0 > 0 && t[j0] > qe) j0--;
+    const p0 = c[j0];
+    capT = (p0 > 0 && c[i] > 0) ? (rt.cap/1e12)*(c[i]/p0) : rt.cap/1e12;  // von hoa chay theo gia dong nen
+  } else if (isNow && r.cap != null) capT = r.cap/1000;
   const roeV = isNow && r.roe != null ? r.roe : (rt.roe != null ? rt.roe*100 : null);
   const rows = [
     ['Vốn hóa', capT != null ? fmt(capT,1)+' nghìn tỷ' : '—'],
