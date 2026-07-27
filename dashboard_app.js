@@ -343,6 +343,7 @@ async function liveQuote(){
       if (row.v20 && d.nmVolume!=null) row.vx = +(d.nmVolume/row.v20).toFixed(2);
       n++; });
     if (n) { const el = document.getElementById('bgeData'); if (el) el.textContent = 'Giá cập nhật lúc ' + new Date().toTimeString().slice(0,5) + ' (phiên ' + data[0].date.slice(8,10)+'/'+data[0].date.slice(5,7) + ') · FA/screener: ' + (SUM.updated||''); }
+    if (n) { try { if (typeof dtData!=='undefined' && dtData && dtData.oh && dtData.oh.c && dtData.oh.c.length) updateKpis(dtData.oh.c.length-1); } catch(e){} }
     return n > 0;
   } catch(e){ return false; }
 }
