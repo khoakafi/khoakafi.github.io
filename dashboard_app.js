@@ -1707,7 +1707,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       +'#newsBody .cta{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 8px}'
       +'#newsBody .cta a{text-decoration:none;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px}'
       +'#newsBody .cta .p{background:#18a34b;color:#fff}#newsBody .cta .s{border:1.5px solid #18a34b;color:#128A3E}'
-      +'#newsBody .disc{font-size:12.5px;color:var(--muted);border-top:1px solid var(--border);margin-top:24px;padding-top:12px;font-style:italic}'
+      +'#newsBody .disc{display:none}#newsBody .cta a[href="https://khoakafi.github.io/"]{display:none}'
       +'</style>';
     d.innerHTML = css
       + '<div class="card" style="padding:18px 20px" id="newsListCard">'
@@ -1723,11 +1723,16 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       + '</div></div>';
     const ft = wrap.querySelector('footer');
     wrap.insertBefore(d, ft || null);
-    window.__closeArt = function(){
+    window.__closeArt = function(skipHist){
       document.getElementById('newsReader').style.display = 'none';
       document.getElementById('newsListCard').style.display = '';
       window.scrollTo({top:0});
+      if (!skipHist) try{ if (location.pathname.indexOf('/bai-viet/') >= 0) history.replaceState({}, '', '/'); }catch(e){}
     };
+    window.addEventListener('popstate', function(){
+      const r = document.getElementById('newsReader');
+      if (r && r.style.display !== 'none' && location.pathname.indexOf('/bai-viet/') < 0){ window.__closeArt(true); }
+    });
     window.__openArt = async function(url, slug){
       try{ ga('view_article', {slug: slug}); }catch(e){}
       const el = document.getElementById('newsBody');
@@ -1735,6 +1740,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       document.getElementById('newsListCard').style.display = 'none';
       document.getElementById('newsReader').style.display = '';
       window.scrollTo({top:0});
+      try{ history.pushState({art:slug}, '', url); }catch(e){}
       try{
         const t = await fetch(url, {cache:'no-store'}).then(r => r.text());
         const doc = new DOMParser().parseFromString(t, 'text/html');
