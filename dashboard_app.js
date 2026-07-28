@@ -1670,4 +1670,43 @@ $('#btnRefresh').onclick = async function(){
   maybeAutoPublish();
 })();
 setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); } }, 120000);
+
+// ================= 9. BAI VIET (tab tin & phan tich) =================
+(function addNewsTab(){
+  try{
+    const nav = document.querySelector('nav');
+    if (!nav || document.getElementById('view-news')) return;
+    views.push('news');
+    const b = document.createElement('button');
+    b.className = 'nav-link'; b.dataset.view = 'news'; b.textContent = 'B\u00e0i vi\u1ebft';
+    b.onclick = () => showView('news');
+    const first = nav.querySelector('button');
+    nav.insertBefore(b, first ? first.nextSibling : null);
+    const wrap = document.getElementById('view-market').parentElement;
+    const d = document.createElement('div');
+    d.id = 'view-news'; d.style.display = 'none';
+    d.innerHTML = '<div class="card" style="padding:18px 20px"><div style="font-size:19px;font-weight:800;margin-bottom:4px">B\u00e0i vi\u1ebft & Ph\u00e2n t\u00edch</div><div class="mini" style="margin-bottom:14px">T\u1ed5ng h\u1ee3p cu\u1ed1i ng\u00e0y \u00b7 H\u1ecdc trend-following \u00b7 Ph\u00e2n t\u00edch s\u1ef1 ki\u1ec7n \u2014 vi\u1ebft t\u1eeb d\u1eef li\u1ec7u h\u1ec7 th\u1ed1ng</div><div id="newsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px"></div><div id="newsEmpty" class="mini" style="padding:14px 2px;display:none">Ch\u01b0a c\u00f3 b\u00e0i vi\u1ebft n\u00e0o.</div></div>';
+    wrap.appendChild(d);
+    const CATN = {eod:'T\u1ed5ng h\u1ee3p phi\u00ean', hoc:'H\u1ecdc trend-following', nong:'Ph\u00e2n t\u00edch s\u1ef1 ki\u1ec7n'};
+    const CATC = {eod:'#2563eb', hoc:'#18a34b', nong:'#b45309'};
+    let loaded = false;
+    inits['news'] = async function(){
+      if (loaded) return;
+      try{
+        const idx = await fetch('bai-viet/index.json?_=' + Date.now()).then(r => r.json());
+        loaded = true;
+        const g = document.getElementById('newsGrid');
+        if (!idx.length){ document.getElementById('newsEmpty').style.display = ''; return; }
+        g.innerHTML = idx.map(a =>
+          '<a href="' + a.url + '" target="_blank" rel="noopener" onclick="try{gtag(String.fromCharCode(101,118,101,110,116),String.fromCharCode(118,105,101,119,95,97,114,116,105,99,108,101))}catch(e){}" style="text-decoration:none;color:inherit;border:1px solid var(--border);border-radius:12px;overflow:hidden;display:block;background:#fff">'
+          + '<img src="' + a.thumb + '" alt="" loading="lazy" style="width:100%;aspect-ratio:1200/630;object-fit:cover;display:block">'
+          + '<div style="padding:12px 14px 14px">'
+          + '<div style="display:flex;gap:8px;align-items:center;margin-bottom:7px"><span style="font-size:11px;font-weight:700;color:#fff;background:' + (CATC[a.cat] || '#64748b') + ';padding:2px 8px;border-radius:99px">' + (CATN[a.cat] || 'B\u00e0i vi\u1ebft') + '</span><span class="mini">' + a.date + '</span></div>'
+          + '<div style="font-weight:800;font-size:15.5px;line-height:1.35;margin-bottom:6px">' + a.title + '</div>'
+          + '<div class="mini" style="line-height:1.5">' + a.summary + '</div>'
+          + '</div></a>').join('');
+      }catch(e){ const ne = document.getElementById('newsEmpty'); if (ne) ne.style.display = ''; }
+    };
+  }catch(e){}
+})();
 })();
