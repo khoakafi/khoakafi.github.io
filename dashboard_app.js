@@ -70,7 +70,7 @@ function bollS(c,n=20,k=2){ const ma=smaS(c,n); return c.map((_,i)=>{ if(ma[i]==
 // ================= ĐIỀU HƯỚNG =================
 const views = ['market','screener','watch','detail','compare','leader'];
 $$('.nav-link').forEach(b => b.onclick = () => showView(b.dataset.view));
-function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { $('#view-'+x).style.display = x===v?'':'none'; }); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view===v)); const fd=document.getElementById('footDisc'); if(fd) fd.style.display=(v==='screener')?'none':''; if(!skip) inits[v] && inits[v](); }
+function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { $('#view-'+x).style.display = x===v?'':'none'; }); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view===v)); const fd=document.getElementById('footDisc'); if(fd) fd.style.display=(v==='screener'||v==='news')?'none':''; if(!skip) inits[v] && inits[v](); }
 window.showView = showView;
 
 const inits = {};
@@ -1671,7 +1671,7 @@ $('#btnRefresh').onclick = async function(){
 })();
 setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); } }, 120000);
 
-// ================= 9. BAI VIET (tab tin & phan tich) =================
+// ================= 9. BAI VIET (tab tin & phan tich — doc ngay trong trang) =================
 (function addNewsTab(){
   try{
     const nav = document.querySelector('nav');
@@ -1685,8 +1685,63 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
     const wrap = document.getElementById('view-market').parentElement;
     const d = document.createElement('div');
     d.id = 'view-news'; d.style.display = 'none';
-    d.innerHTML = '<div class="card" style="padding:18px 20px"><div style="font-size:19px;font-weight:800;margin-bottom:4px">B\u00e0i vi\u1ebft & Ph\u00e2n t\u00edch</div><div class="mini" style="margin-bottom:14px">T\u1ed5ng h\u1ee3p cu\u1ed1i ng\u00e0y \u00b7 H\u1ecdc trend-following \u00b7 Ph\u00e2n t\u00edch s\u1ef1 ki\u1ec7n \u2014 vi\u1ebft t\u1eeb d\u1eef li\u1ec7u h\u1ec7 th\u1ed1ng</div><div id="newsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px"></div><div id="newsEmpty" class="mini" style="padding:14px 2px;display:none">Ch\u01b0a c\u00f3 b\u00e0i vi\u1ebft n\u00e0o.</div></div>';
-    wrap.appendChild(d);
+    const css = '<style>'
+      +'#newsBody{font-size:16.5px;line-height:1.66;max-width:820px;margin:0 auto}'
+      +'#newsBody h1{font-size:25px;line-height:1.32;margin:6px 0 14px}'
+      +'#newsBody h2{font-size:19.5px;margin:30px 0 10px}'
+      +'#newsBody .meta{font-size:13px;color:var(--muted);margin:8px 0 10px}'
+      +'#newsBody .meta .chip{background:#b45309;color:#fff;font-weight:700;padding:2px 9px;border-radius:99px;font-size:11.5px;margin-right:8px}'
+      +'#newsBody .s60{border:1px solid var(--border);border-left:4px solid #18a34b;background:#fff;border-radius:10px;padding:14px 18px;margin:18px 0}'
+      +'#newsBody .s60 .t{font-weight:800;font-size:13px;color:#18a34b;margin-bottom:8px}'
+      +'#newsBody .s60 ul{margin:0;padding-left:19px}#newsBody .s60 li{margin:6px 0}'
+      +'#newsBody figure{margin:18px 0;border:1px solid var(--border);border-radius:10px;overflow:hidden;background:#fff}'
+      +'#newsBody figure svg{width:100%;height:auto;display:block}'
+      +'#newsBody figcaption{font-size:12.5px;color:var(--muted);padding:8px 14px;border-top:1px solid var(--border)}'
+      +'#newsBody table{width:100%;border-collapse:collapse;background:#fff;font-size:15px;margin:14px 0}'
+      +'#newsBody th{background:#0b1f3a;color:#fff;padding:9px 12px;text-align:left;font-size:13.5px}'
+      +'#newsBody td{padding:9px 12px;border-bottom:1px solid var(--border)}'
+      +'#newsBody tr.hl td{background:#fef2f2;font-weight:700;border-left:3px solid #dc2626}'
+      +'#newsBody .g{color:#18a34b;font-weight:700}#newsBody .r{color:#dc2626;font-weight:700}'
+      +'#newsBody .pull{border-left:4px solid #b45309;background:#fffbeb;border-radius:0 10px 10px 0;padding:12px 18px;margin:18px 0;font-size:17px;font-weight:600}'
+      +'#newsBody .note{font-size:13px;color:var(--muted);font-style:italic}'
+      +'#newsBody .cta{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 8px}'
+      +'#newsBody .cta a{text-decoration:none;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px}'
+      +'#newsBody .cta .p{background:#18a34b;color:#fff}#newsBody .cta .s{border:1.5px solid #18a34b;color:#128A3E}'
+      +'#newsBody .disc{font-size:12.5px;color:var(--muted);border-top:1px solid var(--border);margin-top:24px;padding-top:12px;font-style:italic}'
+      +'</style>';
+    d.innerHTML = css
+      + '<div class="card" style="padding:18px 20px" id="newsListCard">'
+      + '<div style="font-size:19px;font-weight:800;margin-bottom:4px">B\u00e0i vi\u1ebft & Ph\u00e2n t\u00edch</div>'
+      + '<div class="mini" style="margin-bottom:14px">M\u1ed7i ng\u00e0y m\u1ed9t b\u00e0i m\u1ed5 x\u1ebb t\u1eeb d\u1eef li\u1ec7u h\u1ec7 th\u1ed1ng \u2014 T\u1ed5ng h\u1ee3p phi\u00ean \u00b7 H\u1ecdc trend-following \u00b7 Ph\u00e2n t\u00edch s\u1ef1 ki\u1ec7n</div>'
+      + '<div id="newsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px"></div>'
+      + '<div id="newsEmpty" class="mini" style="padding:14px 2px;display:none">Ch\u01b0a c\u00f3 b\u00e0i vi\u1ebft n\u00e0o.</div>'
+      + '<div style="margin-top:18px;padding:12px 16px;background:#eef9f1;border:1px solid #bbe6c8;border-radius:10px;font-size:14.5px">\ud83d\udceevào room Zalo c\u1ee7a Khoa \u0111\u1ec3 nh\u1eadn b\u00e0i s\u1edbm nh\u1ea5t m\u1ed7i ng\u00e0y \u2014 <a href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" style="font-weight:800;color:#128A3E" onclick="try{gtag(String.fromCharCode(101,118,101,110,116),String.fromCharCode(99,116,97,95,122,97,108,111))}catch(e){}">b\u1ea5m v\u00e0o \u0111\u00e2y \u2192</a></div>'
+      + '</div>'
+      + '<div id="newsReader" style="display:none"><div class="card" style="padding:8px 22px 22px">'
+      + '<div style="padding:10px 0 2px"><a href="#" id="newsBack" style="font-size:14px;font-weight:700;color:#128A3E;text-decoration:none" onclick="window.__closeArt();return false">\u2190 T\u1ea5t c\u1ea3 b\u00e0i vi\u1ebft</a></div>'
+      + '<div id="newsBody"></div>'
+      + '</div></div>';
+    const ft = wrap.querySelector('footer');
+    wrap.insertBefore(d, ft || null);
+    window.__closeArt = function(){
+      document.getElementById('newsReader').style.display = 'none';
+      document.getElementById('newsListCard').style.display = '';
+      window.scrollTo({top:0});
+    };
+    window.__openArt = async function(url, slug){
+      try{ ga('view_article', {slug: slug}); }catch(e){}
+      const el = document.getElementById('newsBody');
+      el.innerHTML = '<div class="mini" style="padding:30px 0">\u0110ang t\u1ea3i b\u00e0i\u2026</div>';
+      document.getElementById('newsListCard').style.display = 'none';
+      document.getElementById('newsReader').style.display = '';
+      window.scrollTo({top:0});
+      try{
+        const t = await fetch(url, {cache:'no-store'}).then(r => r.text());
+        const doc = new DOMParser().parseFromString(t, 'text/html');
+        const m = doc.querySelector('main');
+        el.innerHTML = m ? m.innerHTML : 'Kh\u00f4ng t\u1ea3i \u0111\u01b0\u1ee3c b\u00e0i.';
+      }catch(e){ el.innerHTML = 'Kh\u00f4ng t\u1ea3i \u0111\u01b0\u1ee3c b\u00e0i \u2014 <a href="'+url+'" target="_blank" rel="noopener">m\u1edf trang b\u00e0i</a>.'; }
+    };
     const CATN = {eod:'T\u1ed5ng h\u1ee3p phi\u00ean', hoc:'H\u1ecdc trend-following', nong:'Ph\u00e2n t\u00edch s\u1ef1 ki\u1ec7n'};
     const CATC = {eod:'#2563eb', hoc:'#18a34b', nong:'#b45309'};
     let loaded = false;
@@ -1698,7 +1753,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
         const g = document.getElementById('newsGrid');
         if (!idx.length){ document.getElementById('newsEmpty').style.display = ''; return; }
         g.innerHTML = idx.map(a =>
-          '<a href="' + a.url + '" target="_blank" rel="noopener" onclick="try{gtag(String.fromCharCode(101,118,101,110,116),String.fromCharCode(118,105,101,119,95,97,114,116,105,99,108,101))}catch(e){}" style="text-decoration:none;color:inherit;border:1px solid var(--border);border-radius:12px;overflow:hidden;display:block;background:#fff">'
+          '<a href="' + a.url + '" onclick="window.__openArt(' + String.fromCharCode(38,35,51,57,59) + a.url + String.fromCharCode(38,35,51,57,59) + ',' + String.fromCharCode(38,35,51,57,59) + a.slug + String.fromCharCode(38,35,51,57,59) + ');return false" style="text-decoration:none;color:inherit;border:1px solid var(--border);border-radius:12px;overflow:hidden;display:block;background:#fff">'
           + '<img src="' + a.thumb + '" alt="" loading="lazy" style="width:100%;aspect-ratio:1200/630;object-fit:cover;display:block">'
           + '<div style="padding:12px 14px 14px">'
           + '<div style="display:flex;gap:8px;align-items:center;margin-bottom:7px"><span style="font-size:11px;font-weight:700;color:#fff;background:' + (CATC[a.cat] || '#64748b') + ';padding:2px 8px;border-radius:99px">' + (CATN[a.cat] || 'B\u00e0i vi\u1ebft') + '</span><span class="mini">' + a.date + '</span></div>'
