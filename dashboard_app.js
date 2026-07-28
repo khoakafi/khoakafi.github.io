@@ -1734,6 +1734,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       if (r && r.style.display !== 'none' && location.pathname.indexOf('/bai-viet/') < 0){ window.__closeArt(true); }
     });
     window.__openArt = async function(url, slug){
+      try{ url = new URL(url, 'https://khoakafi.github.io/').href; }catch(e){}
       try{ ga('view_article', {slug: slug}); }catch(e){}
       const el = document.getElementById('newsBody');
       el.innerHTML = '<div class="mini" style="padding:30px 0">\u0110ang t\u1ea3i b\u00e0i\u2026</div>';
