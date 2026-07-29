@@ -1715,7 +1715,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       + '<div class="mini" style="margin-bottom:14px">M\u1ed7i ng\u00e0y m\u1ed9t b\u00e0i m\u1ed5 x\u1ebb t\u1eeb d\u1eef li\u1ec7u h\u1ec7 th\u1ed1ng \u2014 T\u1ed5ng h\u1ee3p phi\u00ean \u00b7 H\u1ecdc trend-following \u00b7 Ph\u00e2n t\u00edch s\u1ef1 ki\u1ec7n</div>'
       + '<div id="newsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px"></div>'
       + '<div id="newsEmpty" class="mini" style="padding:14px 2px;display:none">Ch\u01b0a c\u00f3 b\u00e0i vi\u1ebft n\u00e0o.</div>'
-      + '<div style="margin-top:18px;padding:12px 16px;background:#eef9f1;border:1px solid #bbe6c8;border-radius:10px;font-size:14.5px">\ud83d\udceevào room Zalo c\u1ee7a Khoa \u0111\u1ec3 nh\u1eadn b\u00e0i s\u1edbm nh\u1ea5t m\u1ed7i ng\u00e0y \u2014 <a href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" style="font-weight:800;color:#128A3E" onclick="try{gtag(String.fromCharCode(101,118,101,110,116),String.fromCharCode(99,116,97,95,122,97,108,111))}catch(e){}">b\u1ea5m v\u00e0o \u0111\u00e2y \u2192</a></div>'
+      + '<div style="margin-top:18px;padding:12px 16px;background:#eef9f1;border:1px solid #bbe6c8;border-radius:10px;font-size:14.5px">\ud83d\udcacvào room Zalo c\u1ee7a Khoa \u0111\u1ec3 nh\u1eadn b\u00e0i s\u1edbm nh\u1ea5t m\u1ed7i ng\u00e0y \u2014 <a href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" style="font-weight:800;color:#128A3E" onclick="try{gtag(String.fromCharCode(101,118,101,110,116),String.fromCharCode(99,116,97,95,122,97,108,111))}catch(e){}">b\u1ea5m v\u00e0o \u0111\u00e2y \u2192</a></div>'
       + '</div>'
       + '<div id="newsReader" style="display:none"><div class="card" style="padding:8px 22px 22px">'
       + '<div style="padding:10px 0 2px"><a href="#" id="newsBack" style="font-size:14px;font-weight:700;color:#128A3E;text-decoration:none" onclick="window.__closeArt();return false">\u2190 T\u1ea5t c\u1ea3 b\u00e0i vi\u1ebft</a></div>'
@@ -1771,4 +1771,23 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
     };
   }catch(e){}
 })();
+})();
+
+
+/* [UI] 20260729b — ghim name tag ở đáy màn hình */
+function pinNameBar(){
+  var f=document.querySelector('footer'); if(!f) return false;
+  var rows=[].slice.call(f.querySelectorAll('div')).filter(function(d){
+    return d.textContent.indexOf('Gi\u00e1m \u0111\u1ed1c')>-1 && d.textContent.indexOf('KAFI')>-1 && d.children.length<8;});
+  var row=rows[rows.length-1]; if(!row) return false;
+  var bar=document.getElementById('nameBar');
+  if(!bar){bar=document.createElement('div'); bar.id='nameBar'; document.body.appendChild(bar);}
+  if(row.parentElement!==bar){ bar.innerHTML=''; bar.appendChild(row); }
+  return true;
+}
+(function(){
+  function tick(){ var n=0; var t=setInterval(function(){ if(pinNameBar()||++n>80) clearInterval(t); },250); }
+  function watch(){ try{ var f=document.querySelector('footer'); if(f) new MutationObserver(function(){ pinNameBar(); }).observe(f,{childList:true,subtree:true}); }catch(e){} }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',function(){ tick(); watch(); }); }
+  else { tick(); watch(); }
 })();
