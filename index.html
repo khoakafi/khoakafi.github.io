@@ -141,6 +141,19 @@ footer>div:first-child{color:var(--green-dark)!important}
 .spin{display:inline-block;width:14px;height:14px;border:2px solid var(--border);border-top-color:var(--green);border-radius:50%;animation:sp .8s linear infinite;vertical-align:middle}
 @keyframes sp{to{transform:rotate(360deg)}}
 </style>
+<style>
+#newsGrid>*{transition:border-color .16s ease,transform .16s ease,box-shadow .16s ease}
+#newsGrid>*:hover{border-color:#16a34a!important;transform:translateY(-2px);box-shadow:0 6px 20px rgba(15,32,56,.10)}
+#newsGrid>*>img{background:#132a44}
+@media(min-width:820px){
+ #newsGrid>*:first-child{grid-column:1/-1!important;display:grid!important;grid-template-columns:minmax(0,38%) minmax(0,1fr)!important;align-items:stretch}
+ #newsGrid>*:first-child>img{aspect-ratio:auto!important;height:100%!important;min-height:250px}
+ #newsGrid>*:first-child>div{padding:24px 28px!important;align-self:center}
+ #newsGrid>*:first-child>div>div:nth-of-type(2){font-size:25px!important;line-height:1.28!important;margin-top:10px}
+ #newsGrid>*:first-child>div>div:nth-of-type(3){font-size:15px!important;line-height:1.65!important;margin-top:10px}
+}
+</style>
+
 </head>
 <body>
 <div class="topbar"><div class="topbar-in">
@@ -174,7 +187,7 @@ footer>div:first-child{color:var(--green-dark)!important}
 </div>
 <div id="toast"></div>
 <script src="dashboard_data.js?v=20260725q"></script>
-<script src="dashboard_app.js?v=20260728L4"></script>
+<script src="dashboard_app.js?v=20260729a"></script>
 </body>
 </html>
 

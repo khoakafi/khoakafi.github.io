@@ -1761,7 +1761,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
         if (!idx.length){ document.getElementById('newsEmpty').style.display = ''; return; }
         g.innerHTML = idx.map(a =>
           '<a href="' + a.url + '" onclick="window.__openArt(' + String.fromCharCode(38,35,51,57,59) + a.url + String.fromCharCode(38,35,51,57,59) + ',' + String.fromCharCode(38,35,51,57,59) + a.slug + String.fromCharCode(38,35,51,57,59) + ');return false" style="text-decoration:none;color:inherit;border:1px solid var(--border);border-radius:12px;overflow:hidden;display:block;background:#fff">'
-          + '<img src="' + a.thumb + '" alt="" loading="lazy" style="width:100%;aspect-ratio:1200/630;object-fit:cover;display:block">'
+          + '<img src="' + a.thumb + '" alt="" decoding="async" style="width:100%;aspect-ratio:1200/630;object-fit:cover;display:block;background:#132a44">'
           + '<div style="padding:12px 14px 14px">'
           + '<div style="display:flex;gap:8px;align-items:center;margin-bottom:7px"><span style="font-size:11px;font-weight:700;color:#fff;background:' + (CATC[a.cat] || '#64748b') + ';padding:2px 8px;border-radius:99px">' + (CATN[a.cat] || 'B\u00e0i vi\u1ebft') + '</span><span class="mini">' + a.date + '</span></div>'
           + '<div style="font-weight:800;font-size:15.5px;line-height:1.35;margin-bottom:6px">' + a.title + '</div>'
