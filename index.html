@@ -153,6 +153,10 @@ footer>div:first-child{color:var(--green-dark)!important}
  #newsGrid>*:first-child>div>div:nth-of-type(2){font-size:24px!important;line-height:1.28!important;margin-top:10px}
  #newsGrid>*:first-child>div>div:nth-of-type(3){font-size:15px!important;line-height:1.65!important;margin-top:10px}
  #newsGrid>*:first-child>div::after{content:"Đọc tiếp →";align-self:flex-start;margin-top:18px;background:#18a34b;color:#fff;font-weight:700;font-size:14px;padding:9px 18px;border-radius:9px;letter-spacing:.2px}
+ #newsGrid>*:last-child:nth-child(even){grid-column:1/-1!important;display:grid!important;grid-template-columns:minmax(0,30%) minmax(0,1fr)!important;align-items:stretch}
+ #newsGrid>*:last-child:nth-child(even)>img{aspect-ratio:auto!important;height:100%!important;min-height:170px;max-height:240px}
+ #newsGrid>*:last-child:nth-child(even)>div{padding:18px 24px!important;display:flex!important;flex-direction:column;justify-content:center}
+ #newsGrid>*:last-child:nth-child(even)>div>div:nth-of-type(2){font-size:19px!important;line-height:1.32!important}
 }
 #nameBar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#fff;border-top:2px solid #18a34b;box-shadow:0 -3px 12px rgba(15,32,56,.10);padding:9px 16px;text-align:center;font-style:normal}
 #nameBar>div{font-size:13px!important;font-style:normal!important;color:#0b1f3a!important;line-height:1.4}
