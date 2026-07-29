@@ -1774,7 +1774,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
 })();
 
 
-/* [UI] 20260729b — ghim name tag ở đáy màn hình */
+/* [UI] 20260729c — ghim name tag + nut Zalo o day man hinh */
 function pinNameBar(){
   var f=document.querySelector('footer'); if(!f) return false;
   var rows=[].slice.call(f.querySelectorAll('div')).filter(function(d){
@@ -1783,6 +1783,14 @@ function pinNameBar(){
   var bar=document.getElementById('nameBar');
   if(!bar){bar=document.createElement('div'); bar.id='nameBar'; document.body.appendChild(bar);}
   if(row.parentElement!==bar){ bar.innerHTML=''; bar.appendChild(row); }
+  if(!bar.querySelector('a.nbz')){
+    var z=document.createElement('a');
+    z.className='nbz'; z.target='_blank'; z.rel='noopener';
+    z.href='https://zalo.me/g/ykbtyp974';
+    z.textContent='T\u01b0 v\u1ea5n qua Zalo \u2192';
+    z.addEventListener('click',function(){try{gtag('event','cta_zalo',{from:'namebar'})}catch(e){}});
+    bar.appendChild(z);
+  }
   return true;
 }
 (function(){
