@@ -1799,3 +1799,29 @@ function pinNameBar(){
   if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',function(){ tick(); watch(); }); }
   else { tick(); watch(); }
 })();
+
+/* [UI] 20260729d — deep link ?art= : link chia se mo trong dashboard */
+(function(){
+ var m=location.search.match(/[?&]art=([^&]+)/); if(!m) return;
+ var slug=decodeURIComponent(m[1]);
+ function goNews(){
+  var els=[].slice.call(document.querySelectorAll('a,button,div,span'));
+  for(var i=0;i<els.length;i++){ if(els[i].children.length===0 && els[i].textContent.trim()==='B\u00e0i vi\u1ebft'){ els[i].click(); return true; } }
+  return false;
+ }
+ function run(){
+  var n=0;
+  var t=setInterval(function(){
+   n++;
+   if(typeof window.__openArt!=='function'){ if(n>160) clearInterval(t); return; }
+   clearInterval(t); goNews();
+   fetch('bai-viet/index.json?cb='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+    var arr=Array.isArray(j)?j:(j.items||j.articles||[]); var it=null;
+    for(var i=0;i<arr.length;i++){ if(arr[i].slug===slug){ it=arr[i]; break; } }
+    if(!it) return;
+    setTimeout(function(){ try{ window.__openArt(it.url); }catch(e){} },450);
+   }).catch(function(){});
+  },250);
+ }
+ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run); else run();
+})();
