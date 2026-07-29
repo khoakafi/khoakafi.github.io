@@ -158,11 +158,13 @@ footer>div:first-child{color:var(--green-dark)!important}
  #newsGrid>*:last-child:nth-child(even)>div{padding:18px 24px!important;display:flex!important;flex-direction:column;justify-content:center}
  #newsGrid>*:last-child:nth-child(even)>div>div:nth-of-type(2){font-size:19px!important;line-height:1.32!important}
 }
-#nameBar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#fff;border-top:2px solid #18a34b;box-shadow:0 -3px 12px rgba(15,32,56,.10);padding:9px 16px;text-align:center;font-style:normal}
+#nameBar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#f6fbf7;border-top:1px solid #dcebe1;box-shadow:0 -3px 12px rgba(15,32,56,.07);padding:8px 16px;font-style:normal;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
 #nameBar>div{font-size:13px!important;font-style:normal!important;color:#0b1f3a!important;line-height:1.4}
 #nameBar a{color:#18a34b!important;text-decoration:none}
-body{padding-bottom:54px}
-@media(max-width:640px){#nameBar{padding:7px 10px}#nameBar>div{font-size:11.5px!important}body{padding-bottom:46px}}
+#nameBar a.nbz{background:#18a34b;color:#fff!important;font-weight:700;font-size:12.5px;padding:6px 15px;border-radius:8px;white-space:nowrap;box-shadow:0 1px 4px rgba(24,163,75,.28);transition:background .15s ease}
+#nameBar a.nbz:hover{background:#128A3E}
+body{padding-bottom:56px}
+@media(max-width:640px){#nameBar{padding:6px 10px;gap:8px}#nameBar>div{font-size:11px!important}#nameBar a.nbz{font-size:11px;padding:5px 11px}body{padding-bottom:66px}}
 </style>
 
 </head>
@@ -198,7 +200,7 @@ body{padding-bottom:54px}
 </div>
 <div id="toast"></div>
 <script src="dashboard_data.js?v=20260725q"></script>
-<script src="dashboard_app.js?v=20260729b"></script>
+<script src="dashboard_app.js?v=20260729c"></script>
 </body>
 </html>
 
