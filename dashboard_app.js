@@ -1569,7 +1569,14 @@ async function pushDataToGitHub(){
     if (st) st.innerHTML = '<span class="spin"></span> đang phát hành dữ liệu cho mọi khách…';
     const apiU = 'https://api.github.com/repos/khoakafi/khoakafi.github.io/contents/dashboard_data.js';
     const H = { 'Authorization': 'Bearer ' + tk, 'Accept': 'application/vnd.github+json' };
-    const cur = await fetch(apiU, { headers: H }).then(r => r.json());
+    let cur = null;
+    try { cur = JSON.parse(await fetch(apiU, { headers: H }).then(r => r.text())); } catch(_) {}
+    if (!cur || !cur.sha) {
+      const tr2 = await fetch('https://api.github.com/repos/khoakafi/khoakafi.github.io/git/trees/main?recursive=1', { headers: H }).then(r => r.json());
+      const it = ((tr2 && tr2.tree) || []).find(x => x.path === 'dashboard_data.js');
+      if (!it) throw new Error('Khong tim thay sha dashboard_data.js');
+      cur = { sha: it.sha };
+    }
     const content = 'window.SUMMARY=' + JSON.stringify(SUM) + ';';
     const b64 = btoa(unescape(encodeURIComponent(content)));
     const res = await fetch(apiU, { method: 'PUT', headers: H, body: JSON.stringify({ message: 'Auto data publish ' + SUM.updated, content: b64, sha: cur.sha }) });
