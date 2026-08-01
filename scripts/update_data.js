@@ -2,6 +2,14 @@
 // Port tu logic "Cap nhat du lieu" cua dashboard_app.js. Giu nguyen khoi tpn (hieu suat).
 const fs = require('fs');
 
+// Guard: neu trinh duyet da phat hanh hom nay roi thi bo qua, khoi commit trung
+try {
+  const cur0 = fs.readFileSync('dashboard_data.js', 'utf8');
+  const mo0 = cur0.match(/"updated":"(\d{4}-\d{2}-\d{2})/);
+  const vn0 = new Date(Date.now() + (7*60 + new Date().getTimezoneOffset())*60000);
+  if (mo0 && mo0[1] === vn0.toISOString().slice(0,10)) { console.log('Da tuoi (' + mo0[1] + '), bo qua.'); process.exit(0); }
+} catch(e) {}
+
 const REV = ['isa3','isb27','isi64','nos689','nos693'], NPAT = ['isa22','isa20'];
 const pick = (row, codes) => { for (const c of codes) if (row && row[c] != null) return row[c]; return null; };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
