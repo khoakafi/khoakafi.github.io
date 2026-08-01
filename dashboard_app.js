@@ -1582,8 +1582,9 @@ async function pushDataToGitHub(){
     const res = await fetch(apiU, { method: 'PUT', headers: H, body: JSON.stringify({ message: 'Auto data publish ' + SUM.updated, content: b64, sha: cur.sha }) });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     if (st) st.textContent = 'Đã phát hành dữ liệu mới cho tất cả khách truy cập';
+    try { const vnOk = new Date(Date.now() + (7*60 + new Date().getTimezoneOffset())*60000); localStorage.setItem('kafi_autopub', vnOk.toISOString().slice(0,10)); localStorage.removeItem('kafi_autopub_fail'); } catch(_) {}
     return true;
-  } catch(e) { if (st) st.textContent = 'Phát hành lỗi: ' + e.message; return false; }
+  } catch(e) { if (st) st.textContent = 'Phát hành lỗi: ' + e.message; try { localStorage.setItem('kafi_autopub_fail', String(Date.now())); } catch(_) {} return false; }
 }
 async function maybeAutoPublish(){
   try {
@@ -1595,7 +1596,7 @@ async function maybeAutoPublish(){
     if (h < 15.75) return;
     const m = (SUM.updated || '').match(/\d{4}-\d{2}-\d{2}/);
     if (m && m[0] >= today) return;
-    localStorage.setItem('kafi_autopub', today);
+    if (Date.now() - (+(localStorage.getItem('kafi_autopub_fail')||0)) < 3600000) return;
     window._autoRefresh = true;
     const b = document.getElementById('btnRefresh'); if (b) b.click();
   } catch(e){}
@@ -1674,9 +1675,23 @@ $('#btnRefresh').onclick = async function(){
     const t = prompt('Dán GitHub token (fine-grained, quyền Contents Read&Write của repo khoakafi.github.io) để biến máy này thành máy phát hành:');
     if (t) { localStorage.setItem('kafi_gh_token', t.trim()); alert('Đã lưu. Từ giờ máy này mở trang sau 15h45 sẽ tự cập nhật dữ liệu và phát hành cho mọi khách.'); }
   }
+  try {
+    if (localStorage.getItem('kafi_gh_token')) {
+      const vnB = new Date(Date.now() + (7*60 + new Date().getTimezoneOffset())*60000);
+      const lastTrade = new Date(vnB);
+      if (vnB.getHours() + vnB.getMinutes()/60 < 15.75) lastTrade.setDate(lastTrade.getDate()-1);
+      while (lastTrade.getDay()===0 || lastTrade.getDay()===6) lastTrade.setDate(lastTrade.getDate()-1);
+      const need = lastTrade.toISOString().slice(0,10);
+      const mU = (SUM.updated||'').match(/\d{4}-\d{2}-\d{2}/);
+      if (!mU || mU[0] < need) {
+        const elW = document.getElementById('refreshStatus');
+        if (elW) elW.innerHTML = '<b style="color:#e5484d">⚠ Khách đang xem dữ liệu ' + (mU?mU[0]:'?') + ', chưa phát hành phiên ' + need + ' — bấm "Cập nhật dữ liệu" (ngày lễ thì bỏ qua cảnh báo này).</b>';
+      }
+    }
+  } catch(_) {}
   maybeAutoPublish();
 })();
-setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); } }, 120000);
+setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); } maybeAutoPublish(); }, 120000);
 
 // ================= 9. BAI VIET (tab tin & phan tich — doc ngay trong trang) =================
 (function addNewsTab(){
