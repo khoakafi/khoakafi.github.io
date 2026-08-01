@@ -1,6 +1,6 @@
 # LUU Y: API VNDirect/Vietcap chan IP may chu nuoc ngoai -> robot GitHub khong keo duoc data (0/702).
-# Lich cron da tat. Viec cap nhat hang ngay do "may phat hanh" cua Khoa dam nhiem (che do kafi_gh_token trong dashboard).
-# Giu workflow_dispatch de thu lai thu cong neu sau nay API mo.
+# Du phong: 20h toi (13:00 UTC) cac ngay trong tuan. Neu "may phat hanh" tren trinh duyet cua Khoa
+# da phat hanh trong ngay thi script tu bo qua (guard trong update_data.js), khong commit trung.
 name: Auto update data
 on:
   workflow_dispatch:
