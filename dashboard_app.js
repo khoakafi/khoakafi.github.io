@@ -38,6 +38,11 @@ const REV = ['isa3','isb27','isi64','nos689','nos693'], NPAT = ['isa22','isa20']
 const pick = (row, codes) => { for (const c of codes) if (row[c]!=null) return row[c]; return null; };
 const pickRev = (row, codes) => { for (const c of codes){ const v=row[c]; if (v!=null && v!==0) return v; } return null; };
 
+const pickTop = (row) => { if (row && row.isb38) return row.isb38; return pickRev(row, REV); };
+function __fRN(){ return window.__FIN_BANK ? 'TOI' : 'Doanh thu'; }
+function __fRS(){ return window.__FIN_BANK ? 'TOI' : 'DT'; }
+function __fTxtB(x){ return window.__FIN_BANK ? String(x).replace(/Doanh thu/g,'TOI').replace(/doanh thu/g,'TOI') : x; }
+
 async function jget(u){ const r = await fetch(u); if(!r.ok) throw new Error(r.status); return r.json(); }
 const api = {
   ohlc: async (sym, days) => { const to = NOW()+86400; return jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sym}&resolution=D&from=${to-86400*days}&to=${to}`); },
@@ -627,7 +632,7 @@ function addLine(ch, times, vals, color, title){ const s = ch.addLineSeries({col
 // ================= 2. SCREENER =================
 let scInit = false, sortKey = '_capR', sortDir = 1;
 const COLS = [
-  ['t','Mã'],['sec','Ngành'],['p','Giá'],['_ytd','YTD%'],['npatYoY','LNST YoY%'],['revYoY','DT YoY%'],
+  ['t','Mã'],['sec','Ngành'],['p','Giá'],['_ytd','YTD%'],['npatYoY','LNST YoY%'],['revYoY','DT / TOI YoY%'],
   ['roe','ROE%'],['_peR','P/E'],['_pbR','P/B'],['dy','Cổ tức%'],['_capR','Vốn hóa (tỷ)'],['val20','GTGD TB20 (tỷ)']
 ];
 const PRESETS = {
@@ -650,7 +655,7 @@ inits.screener = function(){
       <div><label>P/B ≤</label><input id="fPb" type="number"></div>
       <div><label>ROE ≥ %</label><input id="fRoe" type="number"></div>
       <div><label>LNST YoY ≥ %</label><input id="fNp" type="number"></div>
-      <div><label>DT YoY ≥ %</label><input id="fRev" type="number"></div>
+      <div><label>DT / TOI YoY ≥ %</label><input id="fRev" type="number"></div>
       <div><label>Cổ tức ≥ %</label><input id="fDy" type="number"></div>
       <div><label>Vốn hóa ≥ tỷ</label><input id="fCap" type="number"></div>
       <div><label>YTD ≥ %</label><input id="fYtd" type="number"></div>
@@ -1114,7 +1119,7 @@ async function loadDetail(t){
       const pv = qs.find(x=>x.yearReport===q.yearReport-1 && x.lengthReport===q.lengthReport);
       let revY = null, npY = null;
       if (pv) {
-        const r1 = pick(q,REV), r0 = pick(pv,REV), n1 = pick(q,NPAT), n0 = pick(pv,NPAT);
+        const r1 = pickTop(q), r0 = pickTop(pv), n1 = pick(q,NPAT), n0 = pick(pv,NPAT);
         if (r1!=null && r0) revY = (r1/Math.abs(r0)-1)*100;
         if (n1!=null && n0) npY = (n1/Math.abs(n0)-1)*100;
       }
@@ -1323,13 +1328,14 @@ function drawFund(r, qs, rts){
   if (r.pb!=null) cur.push(`P/B hiện tại: <b>${fmt(r.pb,2)}</b>`);
   if (r.roe!=null) cur.push(`ROE hiện tại (TTM): <b>${fmt(r.roe,1)}%</b>`);
   $('#dFundCur').innerHTML = cur.join(' &nbsp;·&nbsp; ');
+  window.__FIN_BANK = !!(qs && qs.some(function(x){ return x && x.isb38; }));
   const last12 = qs.slice(-12);
   const rtByQ = {}; rts.forEach(x=>{ rtByQ[x.yearReport+'Q'+x.quarter] = x; });
   const cols = last12.map(q => {
     const key = q.yearReport+'Q'+q.lengthReport;
     const pv = qs.find(x=>x.yearReport===q.yearReport-1 && x.lengthReport===q.lengthReport);
-    const rev = pick(q,REV), np = pick(q,NPAT);
-    const rev0 = pv?pick(pv,REV):null, np0 = pv?pick(pv,NPAT):null;
+    const rev = pickTop(q), np = pick(q,NPAT);
+    const rev0 = pv?pickTop(pv):null, np0 = pv?pick(pv,NPAT):null;
     const rt = rtByQ[key] || {};
     return { lb: 'Q'+q.lengthReport+'/'+q.yearReport,
       rev: rev!=null?rev/1e9:null, np: np!=null?np/1e9:null,
@@ -1342,9 +1348,9 @@ function drawFund(r, qs, rts){
     return c.yln>=cols[i-1].yln ? '<td><span class="chip g">Tăng tốc ▲</span></td>' : '<td><span class="chip r">Giảm tốc ▼</span></td>'; });
   $('#tbFund').innerHTML =
     '<tr><th style="text-align:left">Quý</th>'+cols.map(c=>`<th>${c.lb}</th>`).join('')+'</tr>'
-    +'<tr><td style="text-align:left"><b>Doanh thu (tỷ)</b></td>'+cols.map(c=>cell(c.rev,1)).join('')+'</tr>'
+    +'<tr><td style="text-align:left"><b>'+__fRN()+' (tỷ)</b></td>'+cols.map(c=>cell(c.rev,1)).join('')+'</tr>'
     +'<tr><td style="text-align:left"><b>LNST (tỷ)</b></td>'+cols.map(c=>cell(c.np,1)).join('')+'</tr>'
-    +'<tr><td style="text-align:left">%YoY DT</td>'+cols.map(c=>cell(c.ydt,1,'%',true)).join('')+'</tr>'
+    +'<tr><td style="text-align:left">%YoY '+__fRS()+'</td>'+cols.map(c=>cell(c.ydt,1,'%',true)).join('')+'</tr>'
     +'<tr><td style="text-align:left">%YoY LN</td>'+cols.map(c=>cell(c.yln,1,'%',true)).join('')+'</tr>'
     +'<tr><td style="text-align:left">ROE (%)</td>'+cols.map(c=>cell(c.roe,1,'%',true)).join('')+'</tr>'
     +'<tr><td style="text-align:left">Xu hướng LN</td>'+trend.join('')+'</tr>'
@@ -1566,7 +1572,7 @@ function drawFundCharts(cols){
       {ds:1,i:ix(yl,mn(yl)),text:'Đáy '+sg(mn(yl),1)+'%',below:(mn(yl)<0),color:C.ln}
     ]);
     mk('fcYoy', function(){ return { type:'bar', plugins:[__finPlug],
-      data:{ labels:L, datasets:[ bar('%YoY Doanh thu','ydt',C.dt), bar('%YoY Lợi nhuận','yln',C.ln) ] },
+      data:{ labels:L, datasets:[ bar('%YoY '+__fRN(),'ydt',C.dt), bar('%YoY Lợi nhuận','yln',C.ln) ] },
       options:opt(pctv,true,m1,null) }; });
     hero('fhYoy', sg(yl[last],1)+'%', (yl[last]!=null&&yl[last-1]!=null)?(yl[last]-yl[last-1]):null, ' đ%',1,false);
 
@@ -1576,7 +1582,7 @@ function drawFundCharts(cols){
       {ds:0,i:ix(rv,mx(rv)),text:'Đỉnh '+fmt(mx(rv),0),color:C.dt}
     ]);
     mk('fcScale', function(){ return { type:'bar', plugins:[__finPlug],
-      data:{ labels:L, datasets:[ bar('Doanh thu (tỷ)','rev',C.dt), bar('LNST (tỷ)','np',C.ln) ] },
+      data:{ labels:L, datasets:[ bar(__fRN()+' (tỷ)','rev',C.dt), bar('LNST (tỷ)','np',C.ln) ] },
       options:opt(tyv,true,m2,null) }; });
     hero('fhScale', fmt(rv[last],0)+' tỷ', (rv[last]&&rv[last-1])?((rv[last]/rv[last-1]-1)*100):null, '%',1,false);
 
@@ -1606,11 +1612,12 @@ function drawFundCharts(cols){
     hero('fhVal', 'P/E '+fmt(pe[last],2), (pe[last]&&pe[last-1])?((pe[last]/pe[last-1]-1)*100):null, '%',1,true);
 
     var set=function(id,html){ var e=document.getElementById(id); if(e) e.innerHTML=html; };
-    set('fiYoy',   fundInsight('yoy',cols));
-    set('fiScale', fundInsight('scale',cols));
+    set('fiYoy',   __fTxtB(fundInsight('yoy',cols)));
+    set('fiScale', __fTxtB(fundInsight('scale',cols)));
     set('fiRoe',   fundInsight('roe',cols));
     set('fiVal',   fundInsight('val',cols));
-    __finDecorate();
+    try{ var _t1=document.getElementById('fcYoy'), _t2=document.getElementById('fcScale'), _c1=_t1&&_t1.closest('.fcard'), _c2=_t2&&_t2.closest('.fcard'); if(_c1&&_c1.querySelector('.ftit')) _c1.querySelector('.ftit').textContent='Tăng trưởng YoY — '+__fRN()+' & Lợi nhuận'; if(_c2&&_c2.querySelector('.ftit')) _c2.querySelector('.ftit').textContent='Quy mô — '+__fRN()+' & LNST (tỷ đồng)'; }catch(e){}
+__finDecorate();
   }catch(e){ console.warn('drawFundCharts', e); }
 }
 
@@ -1861,7 +1868,7 @@ async function renderCmp(){
   $('#cChips').innerHTML = cmpList.map(t=>`<span class="cmp-chip">${t}<span onclick="rmCmp('${t}')">✕</span></span>`).join('');
   window.rmCmp = t => { cmpList = cmpList.filter(x=>x!==t); renderCmp(); };
   if (!cmpList.length) { $('#tbCmp').innerHTML=''; return; }
-  const metrics = [['Giá','p',2],['P/E','pe',1],['P/B','pb',2],['ROE %','roe',1],['LNST YoY %','npatYoY',1],['DT YoY %','revYoY',1],['LN 3 năm %/n','cagr3',1],['RS','rs',0],['CANSLIM','csTong',0],['Vốn hóa (tỷ)','cap',0],['Cổ tức %','dy',1],['Cách đỉnh 52T %','dHi',1]];
+  const metrics = [['Giá','p',2],['P/E','pe',1],['P/B','pb',2],['ROE %','roe',1],['LNST YoY %','npatYoY',1],['DT / TOI YoY %','revYoY',1],['LN 3 năm %/n','cagr3',1],['RS','rs',0],['CANSLIM','csTong',0],['Vốn hóa (tỷ)','cap',0],['Cổ tức %','dy',1],['Cách đỉnh 52T %','dHi',1]];
   $('#tbCmp').innerHTML = '<tr><th>Chỉ số</th>' + cmpList.map(t=>`<th>${t}</th>`).join('') + '</tr>' +
     metrics.map(m=>`<tr><td><b>${m[0]}</b></td>${cmpList.map(t=>{ const v = (byT[t]||{})[m[1]]; return `<td>${fmt(v,m[2])}</td>`; }).join('')}</tr>`).join('');
 }
@@ -2039,7 +2046,7 @@ $('#btnRefresh').onclick = async function(){
           if (!hc && rng<=12) { o.watch=1; o.wrng=+rng.toFixed(1); o.wdb=+((c[L2]/hi-1)*100).toFixed(1); }
         } }
       const qs = qsArr;
-      if (qs.length) { const rev = qs.map(x=>pickRev(x,REV)), np2 = qs.map(x=>pick(x,NPAT)); const n = qs.length;
+      if (qs.length) { const rev = qs.map(x=>pickTop(x)), np2 = qs.map(x=>pick(x,NPAT)); const n = qs.length;
         o.q = qs.slice(-9).map((x,i,arr)=>{ const idx = n-arr.length+i; return [x.yearReport,x.lengthReport,rev[idx],np2[idx]]; });
         if (n>=5 && np2[n-5]!=null && np2[n-1]!=null && np2[n-5]!==0) o.npatYoY = +((np2[n-1]/Math.abs(np2[n-5])-1)*100).toFixed(1);
         if (n>=5 && rev[n-5] && rev[n-1]!=null) o.revYoY = +((rev[n-1]/Math.abs(rev[n-5])-1)*100).toFixed(1);
