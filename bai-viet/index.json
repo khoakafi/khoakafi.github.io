@@ -1,29 +1,38 @@
 [
-  {
-    "slug": "2026-07-31-chi-so-giam-nhe-thi-truong-giam-nhieu-hon",
-    "date": "31/07/2026",
-    "cat": "nong",
-    "title": "Nhịp đập 31/07: chỉ số chỉ giảm 0,51% — nhưng 283 mã đỏ và bộ lọc còn đúng 5 mã",
-    "summary": "VN-Index mở gap tăng 19,79 điểm lên 1.764,45 rồi lấy luôn mức đó làm đỉnh cả ngày, rơi 57 điểm trước khi đóng cửa 1.735,78. Khối lượng giảm 13,8% nên chưa phải một ngày phân phối, nhưng độ rộng 283 mã giảm so với 175 mã tăng cho thấy thị trường giảm nhiều hơn chỉ số. Hôm nay tôi siết thêm điều kiện nền 20 phiên dưới 12% — lọc lại 694 mã, còn đúng 5 mã.",
-    "thumb": "bai-viet/thumb/2026-07-31-chi-so-giam-nhe-thi-truong-giam-nhieu-hon.jpg",
-    "url": "bai-viet/2026-07-31-chi-so-giam-nhe-thi-truong-giam-nhieu-hon.html"
-  },
-  {
-    "slug": "2026-07-29-hpg-lai-gap-doi-gia-thung-day",
-    "date": "29/07/2026",
-    "cat": "nong",
-    "title": "Nhịp đập 29/07: Hòa Phát lãi gấp đôi — vì sao cổ phiếu vẫn chưa rời đáy một năm?",
-    "summary": "VN-Index +24,06 điểm lên 1.704,68 nhưng cổ phiếu trung vị chỉ +0,47%, bốn mã họ Vin gánh 73% mức tăng. Cùng phiên, Hòa Phát báo lãi nửa năm 15.480 tỷ — gấp đôi cùng kỳ, trong khi cổ phiếu vừa thủng đáy một năm chín ngày trước. Tôi lọc 239 mã đủ thanh khoản: nhóm lãi tăng từ 50% trở lên vẫn có 76% số mã giảm giá ba tháng.",
-    "thumb": "bai-viet/thumb/2026-07-29-hpg-lai-gap-doi-gia-thung-day.png",
-    "url": "bai-viet/2026-07-29-hpg-lai-gap-doi-gia-thung-day.html"
-  },
-  {
-    "slug": "2026-07-28-mwg-bai-hoc-dao-roi",
-    "date": "28/07/2026",
-    "cat": "nong",
-    "title": "MWG rơi 16%: tôi đếm 697 cú “dao rơi” trong 7 năm — kết quả ngược điều bạn nghĩ",
-    "summary": "Bắt đáy hay đứng ngoài? Tôi đếm toàn bộ 697 lần thị trường gặp đúng cảnh này từ 2019. Trung vị +4,5% — nhưng đó chưa phải phần đáng sợ nhất.",
-    "thumb": "bai-viet/thumb/mwg-dao-roi-697.png",
-    "url": "bai-viet/2026-07-28-mwg-bai-hoc-dao-roi.html"
-  }
+ {
+  "slug": "2026-08-02-mark-minervini-6-nam-trang-tay",
+  "date": "2026-08-02",
+  "cat": "nong",
+  "title": "Mark Minervini: 6 năm không kiếm nổi một đồng. Rồi 5 năm sau, tài khoản tăng 33.554%.",
+  "summary": "Bỏ học lớp 8, cháy tài khoản nhiều lần, 6 năm đầu không có lãi. Thứ ông thay đổi không phải công thức mua — và bảng toán phục hồi lỗ/lãi mà ai đang ôm lỗ cũng nên nhìn một lần.",
+  "thumb": "thumb/2026-08-02-mark-minervini-6-nam-trang-tay.jpg",
+  "url": "2026-08-02-mark-minervini-6-nam-trang-tay.html"
+ },
+ {
+  "slug": "2026-07-31-chi-so-giam-nhe-thi-truong-giam-nhieu-hon",
+  "date": "31/07/2026",
+  "cat": "nong",
+  "title": "Nhịp đập 31/07: chỉ số chỉ giảm 0,51% — nhưng 283 mã đỏ và bộ lọc còn đúng 5 mã",
+  "summary": "VN-Index mở gap tăng 19,79 điểm lên 1.764,45 rồi lấy luôn mức đó làm đỉnh cả ngày, rơi 57 điểm trước khi đóng cửa 1.735,78. Khối lượng giảm 13,8% nên chưa phải một ngày phân phối, nhưng độ rộng 283 mã giảm so với 175 mã tăng cho thấy thị trường giảm nhiều hơn chỉ số. Hôm nay tôi siết thêm điều kiện nền 20 phiên dưới 12% — lọc lại 694 mã, còn đúng 5 mã.",
+  "thumb": "bai-viet/thumb/2026-07-31-chi-so-giam-nhe-thi-truong-giam-nhieu-hon.jpg",
+  "url": "bai-viet/2026-07-31-chi-so-giam-nhe-thi-truong-giam-nhieu-hon.html"
+ },
+ {
+  "slug": "2026-07-29-hpg-lai-gap-doi-gia-thung-day",
+  "date": "29/07/2026",
+  "cat": "nong",
+  "title": "Nhịp đập 29/07: Hòa Phát lãi gấp đôi — vì sao cổ phiếu vẫn chưa rời đáy một năm?",
+  "summary": "VN-Index +24,06 điểm lên 1.704,68 nhưng cổ phiếu trung vị chỉ +0,47%, bốn mã họ Vin gánh 73% mức tăng. Cùng phiên, Hòa Phát báo lãi nửa năm 15.480 tỷ — gấp đôi cùng kỳ, trong khi cổ phiếu vừa thủng đáy một năm chín ngày trước. Tôi lọc 239 mã đủ thanh khoản: nhóm lãi tăng từ 50% trở lên vẫn có 76% số mã giảm giá ba tháng.",
+  "thumb": "bai-viet/thumb/2026-07-29-hpg-lai-gap-doi-gia-thung-day.png",
+  "url": "bai-viet/2026-07-29-hpg-lai-gap-doi-gia-thung-day.html"
+ },
+ {
+  "slug": "2026-07-28-mwg-bai-hoc-dao-roi",
+  "date": "28/07/2026",
+  "cat": "nong",
+  "title": "MWG rơi 16%: tôi đếm 697 cú “dao rơi” trong 7 năm — kết quả ngược điều bạn nghĩ",
+  "summary": "Bắt đáy hay đứng ngoài? Tôi đếm toàn bộ 697 lần thị trường gặp đúng cảnh này từ 2019. Trung vị +4,5% — nhưng đó chưa phải phần đáng sợ nhất.",
+  "thumb": "bai-viet/thumb/mwg-dao-roi-697.png",
+  "url": "bai-viet/2026-07-28-mwg-bai-hoc-dao-roi.html"
+ }
 ]
