@@ -1480,6 +1480,7 @@ var __finPlug = {
     if(!o || !o.marks || !o.marks.length) return;
     var ctx=chart.ctx, ca=chart.chartArea;
     ctx.save();
+    var placed = [];
     o.marks.forEach(function(m){
       var meta=chart.getDatasetMeta(m.ds); if(!meta||!meta.data) return;
       var el=meta.data[m.i]; if(!el) return;
@@ -1487,13 +1488,19 @@ var __finPlug = {
       if(m.dot){ ctx.beginPath(); ctx.arc(x,y,4,0,6.2832); ctx.fillStyle=m.color||__FUI.ink; ctx.fill();
                  ctx.lineWidth=2; ctx.strokeStyle=__FUI.panel; ctx.stroke(); }
       ctx.font=(m.strong?'700 11.5px ':'600 10.5px ')+__FUI.ff;
-      var w=ctx.measureText(m.text).width;
-      var tx=Math.min(Math.max(x, ca.left+w/2+1), ca.right-w/2-1);
-      var ty=m.below ? y+(m.dot?9:7) : y-(m.dot?9:7);
-      ctx.textAlign='center'; ctx.textBaseline=m.below?'top':'bottom';
-      if(!m.below) ty=Math.max(ty, ca.top+11); else ty=Math.min(ty, ca.bottom-1);
-      ctx.lineWidth=4; ctx.strokeStyle=__FUI.panel; ctx.strokeText(m.text,tx,ty);
-      ctx.fillStyle=m.strong?__FUI.ink:__FUI.mut; ctx.fillText(m.text,tx,ty);
+      var w = ctx.measureText(m.text).width;
+      var tx = Math.min(Math.max(x, ca.left+w/2+1), ca.right-w/2-1);
+      var ty = m.below ? y+(m.dot?9:7) : y-(m.dot?9:7);
+      ctx.textAlign = 'center'; ctx.textBaseline = m.below ? 'top':'bottom';
+      if(!m.below) ty = Math.max(ty, ca.top+11); else ty = Math.min(ty, ca.bottom-1);
+      var hh = m.strong ? 12 : 11, stepd = m.below ? 1 : -1, guard = 0;
+      var rc = function(t){ return { l: tx-w/2-3, r: tx+w/2+3, t: m.below ? t : t-hh, b: m.below ? t+hh : t }; };
+      var hit = function(r){ for(var k=0;k<placed.length;k++){ var q=placed[k]; if(r.l<q.r && r.r>q.l && r.t<q.b && r.b>q.t) return true; } return false; };
+      while(hit(rc(ty)) && guard < 6){ ty += stepd*(hh+3); guard++; }
+      if(!m.below) ty = Math.max(ty, ca.top+11); else ty = Math.min(ty, ca.bottom-1);
+      placed.push(rc(ty));
+      ctx.lineWidth = 4; ctx.strokeStyle = __FUI.panel; ctx.strokeText(m.text,tx,ty);
+      ctx.fillStyle = m.strong ? __FUI.ink:__FUI.mut; ctx.fillText(m.text,tx,ty);
     });
     ctx.restore();
   }
