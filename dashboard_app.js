@@ -1045,7 +1045,30 @@ inits.detail = function(t){
           <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px">
             <b style="font-size:15px">Tài chính — 12 quý gần nhất</b>
             <div class="mini" id="dFundCur" style="font-size:12.5px"></div>
+          </div>          <style>
+#finCharts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:8px}
+@media (max-width:900px){#finCharts{grid-template-columns:1fr}}
+#finCharts .fcard{border:1px solid var(--border);border-radius:12px;padding:12px 14px 14px;background:var(--panel);min-width:0}
+#finCharts .fhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:6px}
+#finCharts .ftit{font-size:13px;font-weight:700;color:var(--text);line-height:1.3}
+#finCharts .fhero{font-size:16px;font-weight:800;color:var(--text);white-space:nowrap;letter-spacing:-.2px}
+#finCharts .fhero .fq{font-size:10.5px;font-weight:600;color:var(--muted);margin-right:6px;letter-spacing:0}
+#finCharts .fhero .fd{display:inline-block;font-size:11px;font-weight:700;margin-left:6px;padding:2px 7px;border-radius:999px;letter-spacing:0;vertical-align:1px}
+#finCharts .fd.up{color:var(--green);background:var(--green-soft)}
+#finCharts .fd.dn{color:var(--red);background:var(--red-soft)}
+#finCharts .fd.fl{color:var(--muted);background:var(--panel2)}
+#finCharts .fbox{height:215px;position:relative}
+#finCharts .fins{font-size:12.5px;line-height:1.6;color:var(--muted);margin-top:10px;padding:9px 12px;background:var(--panel2);border-radius:8px;border-left:3px solid var(--blue)}
+#finCharts .fins b{color:var(--text);font-weight:700}
+          </style>
+          <div id="finCharts">
+            <div class="fcard"><div class="fhead"><div class="ftit">Tăng trưởng YoY — Doanh thu &amp; Lợi nhuận</div><div class="fhero" id="fhYoy"></div></div><div class="fbox"><canvas id="fcYoy"></canvas></div><div class="fins" id="fiYoy"></div></div>
+            <div class="fcard"><div class="fhead"><div class="ftit">Quy mô — Doanh thu &amp; LNST (tỷ đồng)</div><div class="fhero" id="fhScale"></div></div><div class="fbox"><canvas id="fcScale"></canvas></div><div class="fins" id="fiScale"></div></div>
+            <div class="fcard"><div class="fhead"><div class="ftit">ROE theo quý (%)</div><div class="fhero" id="fhRoe"></div></div><div class="fbox"><canvas id="fcRoe"></canvas></div><div class="fins" id="fiRoe"></div></div>
+            <div class="fcard"><div class="fhead"><div class="ftit">Định giá — P/E &amp; P/B (lần)</div><div class="fhero" id="fhVal"></div></div><div class="fbox"><canvas id="fcVal"></canvas></div><div class="fins" id="fiVal"></div></div>
           </div>
+          <div class="mini" style="margin:0 0 12px;font-style:italic">Số ghi trên chart là đỉnh, đáy và quý mới nhất; đường ngang mảnh là mức trung bình của chính mã. Nhận định được tính tự động từ quý mới nhất so với chuỗi 12 quý của chính mã — không so với ngành.</div>
+
           <div style="overflow-x:auto"><table id="tbFund" style="width:100%"></table></div>
           <div class="mini" style="margin-top:8px;font-style:italic">Ô "--" là quý nguồn chưa công bố.</div>
         </div>
@@ -1327,7 +1350,379 @@ function drawFund(r, qs, rts){
     +'<tr><td style="text-align:left">Xu hướng LN</td>'+trend.join('')+'</tr>'
     +'<tr><td style="text-align:left">P/E</td>'+cols.map(c=>cell(c.pe,2)).join('')+'</tr>'
     +'<tr><td style="text-align:left">P/B</td>'+cols.map(c=>cell(c.pb,2)).join('')+'</tr>';
+  drawFundCharts(cols);
 }
+
+function __fnn(a){ return a.filter(function(v){ return v!=null && !isNaN(v); }); }
+function __favg(a){ var x=__fnn(a); if(!x.length) return null; return x.reduce(function(s,v){return s+v;},0)/x.length; }
+function __fmed(a){ var x=__fnn(a).slice().sort(function(p,q){return p-q;}); if(!x.length) return null; var m=x.length>>1; return x.length%2 ? x[m] : (x[m-1]+x[m])/2; }
+function __fmax(a){ var x=__fnn(a); return x.length?Math.max.apply(null,x):null; }
+function __fmin(a){ var x=__fnn(a); return x.length?Math.min.apply(null,x):null; }
+function __fidx(a,v){ for(var i=0;i<a.length;i++){ if(a[i]===v) return i; } return -1; }
+function __fqOf(cols,key,v){ for(var i=0;i<cols.length;i++){ if(cols[i][key]===v) return cols[i].lb; } return ''; }
+function __fsign(v,d){ if(v==null||isNaN(v)) return '--'; return (v>0?'+':'')+fmt(v,d); }
+function __fpos(v,a){ var x=__fnn(a); if(!x.length||v==null) return '';
+  var tot=x.length, lower=x.filter(function(z){return z<v;}).length, rh=tot-lower;
+  if(rh===1) return 'cao nhất '+tot+' quý'; if(rh===2) return 'cao thứ 2 trong '+tot+' quý'; if(rh===3) return 'cao thứ 3 trong '+tot+' quý';
+  if(lower===0) return 'thấp nhất '+tot+' quý'; if(lower===1) return 'thấp thứ 2 trong '+tot+' quý'; if(lower===2) return 'thấp thứ 3 trong '+tot+' quý';
+  return 'nằm vùng giữa chuỗi '+tot+' quý'; }
+function __fstreak(a){ var dir=0,n=0; for(var i=a.length-1;i>0;i--){ if(a[i]==null||a[i-1]==null) break; var d=Math.sign(a[i]-a[i-1]); if(d===0) break; if(dir===0){dir=d;n=1;} else if(d===dir){n++;} else break; } return {n:n,dir:dir}; }
+function __fwrap(lead,det){ return '<b>'+lead+'</b> '+det; }
+
+function fundInsight(kind, cols){
+ try{
+  if(!cols||!cols.length) return '';
+  var L=cols[cols.length-1], q=L.lb;
+  var A=function(k){ return cols.map(function(c){ return c[k]; }); };
+
+  if(kind==='yoy'){
+    var yl=A('yln'), yd=A('ydt'), v=L.yln, d=L.ydt;
+    if(v==null) return '';
+    var st=__fstreak(yl), lead;
+    if(d!=null && d<0 && v>0) lead='Tăng trưởng đang đến từ biên lợi nhuận, không phải từ quy mô.';
+    else if(v<0) lead='Lợi nhuận đã tăng trưởng âm so với cùng kỳ.';
+    else if(st.dir<0 && st.n>=2) lead='Vẫn tăng trưởng nhưng đà đang chậm lại rõ.';
+    else if(st.dir>0 && st.n>=2) lead='Đà tăng trưởng lợi nhuận đang mạnh dần lên.';
+    else lead='Tăng trưởng lợi nhuận quanh mặt bằng của chính nó.';
+    var det=q+': LNST '+__fsign(v,1)+'% YoY — '+__fpos(v,yl);
+    if(st.n>=2) det+=', '+(st.dir<0?'giảm tốc ':'tăng tốc ')+st.n+' quý liên tiếp';
+    det+='. Doanh thu '+(d==null?'--':__fsign(d,1)+'%')+'.';
+    return __fwrap(lead,det);
+  }
+
+  if(kind==='scale'){
+    var rv=A('rev'), r=L.rev;
+    if(r==null) return '';
+    var mxr=__fmax(rv), qi=__fidx(rv,mxr), gap=(mxr?((mxr-r)/mxr*100):0);
+    var mgs=cols.map(function(c){ return (c.rev&&c.np!=null)?(c.np/c.rev*100):null; });
+    var mg=mgs[mgs.length-1], amg=__favg(mgs), lead;
+    if(gap<1) lead='Doanh thu vừa lập đỉnh của chuỗi 12 quý.';
+    else if(mg!=null&&amg!=null&&mg>amg&&gap>=8) lead='Quy mô co lại nhưng mỗi đồng doanh thu sinh lời nhiều hơn trước.';
+    else if(mg!=null&&amg!=null&&mg<amg&&gap>=8) lead='Cả quy mô lẫn biên lợi nhuận đều dưới mặt bằng của chính nó.';
+    else lead='Quy mô doanh thu quanh mặt bằng chuỗi 12 quý.';
+    var det=q+': doanh thu '+fmt(r,0)+' tỷ';
+    if(gap>=1) det+=', thấp hơn đỉnh '+(cols[qi]?cols[qi].lb:'')+' ('+fmt(mxr,0)+' tỷ) '+fmt(gap,1)+'%';
+    if(mg!=null) det+='. Biên LNST '+fmt(mg,1)+'% — '+__fpos(mg,mgs)+', trung bình chuỗi '+fmt(amg,1)+'%';
+    det+='.';
+    return __fwrap(lead,det);
+  }
+
+  if(kind==='roe'){
+    var ro=A('roe'), rv2=L.roe;
+    if(rv2==null) return '';
+    var av=__favg(ro), hi=__fmax(ro), lo=__fmin(ro), band=(hi!=null&&lo!=null)?(hi-lo):null;
+    var st2=__fstreak(ro), tot=__fnn(ro).length, n15=__fnn(ro).filter(function(z){return z>=15;}).length, lead;
+    var tight = (band!==null && band<=5 && n15===tot && tot>=8);
+    if(tight && rv2===lo) lead = 'Nền sinh lời trên vốn vẫn cao và rất ổn định.';
+    else if(tight && rv2===hi) lead = 'Vừa lập đỉnh 12 quý trên một nền sinh lời vốn đã rất ổn định.';
+    else if(rv2===hi) lead = 'ROE đang ở đỉnh của chuỗi 12 quý.';
+    else if(rv2===lo) lead = 'ROE đang ở đáy của chuỗi 12 quý.';
+    else if(tight) lead = 'Sinh lời trên vốn cao và rất ổn định — không phải hiện tượng một quý.';
+    else if(st2.dir<0 && st2.n>=2) lead = 'Hiệu quả sinh lời trên vốn đang xói mòn dần.';
+    else if(st2.dir>0 && st2.n>=2) lead = 'Hiệu quả sinh lời trên vốn đang cải thiện.';
+    else lead = 'ROE dao động quanh mặt bằng của chính nó.';
+    var det=q+': ROE '+fmt(rv2,1)+'% — '+__fpos(rv2,ro)+', '+(rv2>=av?'trên':'dưới')+' trung bình chuỗi ('+fmt(av,1)+'%)';
+    if(st2.n>=2) det+=', '+(st2.dir<0?'giảm ':'tăng ')+st2.n+' quý liên tiếp';
+    det+='. '+n15+'/'+tot+' quý trên 15%, cả chuỗi chỉ dao động '+fmt(band,1)+' điểm %.';
+    return __fwrap(lead,det);
+  }
+
+  if(kind==='val'){
+    var pe=A('pe'), pb=A('pb'), ro2=A('roe'), v2=L.pe, b=L.pb, r2=L.roe;
+    if(v2==null&&b==null) return '';
+    var mpe=__fmed(pe), aro=__favg(ro2);
+    var cheap=(v2!=null&&mpe!=null&&v2<mpe*0.85), rich=(v2!=null&&mpe!=null&&v2>mpe*1.15);
+    var roeOk=(r2!=null&&aro!=null&&r2>=aro*0.95), lead;
+    if(cheap&&roeOk) lead='Thị trường đang trả giá thấp hơn hẳn cho cùng một mức sinh lời so với chính nó 3 năm qua.';
+    else if(cheap&&!roeOk) lead='Định giá rẻ đi cùng lúc sinh lời cũng yếu đi — rẻ có lý do của nó.';
+    else if(rich&&roeOk) lead='Định giá đang cao hơn mặt bằng 3 năm trong khi sinh lời không đổi.';
+    else if(rich&&!roeOk) lead='Giá đang đắt hơn mặt bằng mà sinh lời không theo kịp.';
+    else lead='Định giá đang quanh mặt bằng của chính nó.';
+    var det=q+': P/E '+fmt(v2,2)+' — '+__fpos(v2,pe)+', trung vị chuỗi '+fmt(mpe,2);
+    if(b!=null){ var mxb=__fmax(pb); det+='. P/B '+fmt(b,2)+' — '+__fpos(b,pb)+((mxb!=null&&mxb>b)?', từ '+fmt(mxb,2)+' ('+__fqOf(cols,'pb',mxb)+') về đây':''); }
+    if(r2!=null&&aro!=null) det+='. ROE hiện '+fmt(r2,1)+'% so với trung bình chuỗi '+fmt(aro,1)+'%';
+    det+='.';
+    return __fwrap(lead,det);
+  }
+  return '';
+ }catch(e){ return ''; }
+}
+
+var __fundCharts = {}; var __fundCfg = {};
+var __FUI = { ink:'#1F2937', mut:'#7A828E', grid:'#E8EAEF', panel:'#FFFFFF',
+  ff:'system-ui,-apple-system,Segoe UI,Roboto,sans-serif' };
+var __finPlug = {
+  id:'finPlug',
+  afterDraw: function(chart, a, o){
+    var ctx=chart.ctx, ca=chart.chartArea; if(!ca) return;
+    var fs=Math.max(13, Math.min(27, (ca.right-ca.left)/25));
+    ctx.save();
+    ctx.font='700 '+fs.toFixed(1)+'px '+__FUI.ff;
+    ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillStyle='rgba(122,130,142,.12)';
+    try{ ctx.letterSpacing=(fs/7).toFixed(1)+'px'; }catch(e){}
+    ctx.fillText('Khoa Nguyen Invest', (ca.left+ca.right)/2, (ca.top+ca.bottom)/2);
+    ctx.restore();
+  },
+  beforeDatasetsDraw: function(chart, a, o){
+    if(!o || !o.ref || o.ref.v==null) return;
+    var ctx=chart.ctx, ca=chart.chartArea, sc=chart.scales.y; if(!sc) return;
+    var y=sc.getPixelForValue(o.ref.v); if(!isFinite(y)||y<ca.top||y>ca.bottom) return;
+    ctx.save();
+    ctx.strokeStyle='rgba(122,130,142,.5)'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(ca.left, Math.round(y)+0.5); ctx.lineTo(ca.right, Math.round(y)+0.5); ctx.stroke();
+    ctx.font='600 10px '+__FUI.ff; ctx.textAlign='right'; ctx.textBaseline='bottom';
+    ctx.lineWidth=4; ctx.strokeStyle=__FUI.panel; ctx.strokeText(o.ref.label, ca.right-2, y-3);
+    ctx.fillStyle=__FUI.mut; ctx.fillText(o.ref.label, ca.right-2, y-3);
+    ctx.restore();
+  },
+  afterDatasetsDraw: function(chart, a, o){
+    if(!o || !o.marks || !o.marks.length) return;
+    var ctx=chart.ctx, ca=chart.chartArea;
+    ctx.save();
+    o.marks.forEach(function(m){
+      var meta=chart.getDatasetMeta(m.ds); if(!meta||!meta.data) return;
+      var el=meta.data[m.i]; if(!el) return;
+      var x=el.x, y=el.y;
+      if(m.dot){ ctx.beginPath(); ctx.arc(x,y,4,0,6.2832); ctx.fillStyle=m.color||__FUI.ink; ctx.fill();
+                 ctx.lineWidth=2; ctx.strokeStyle=__FUI.panel; ctx.stroke(); }
+      ctx.font=(m.strong?'700 11.5px ':'600 10.5px ')+__FUI.ff;
+      var w=ctx.measureText(m.text).width;
+      var tx=Math.min(Math.max(x, ca.left+w/2+1), ca.right-w/2-1);
+      var ty=m.below ? y+(m.dot?9:7) : y-(m.dot?9:7);
+      ctx.textAlign='center'; ctx.textBaseline=m.below?'top':'bottom';
+      if(!m.below) ty=Math.max(ty, ca.top+11); else ty=Math.min(ty, ca.bottom-1);
+      ctx.lineWidth=4; ctx.strokeStyle=__FUI.panel; ctx.strokeText(m.text,tx,ty);
+      ctx.fillStyle=m.strong?__FUI.ink:__FUI.mut; ctx.fillText(m.text,tx,ty);
+    });
+    ctx.restore();
+  }
+};
+
+function drawFundCharts(cols){
+  try{
+    if(typeof Chart === 'undefined' || !cols || !cols.length) return;
+    var C = { dt:'#2563EB', ln:'#18A34B', roe:'#18A34B', pe:'#2563EB', pb:'#18A34B' };
+    var INK=__FUI.ink, MUT=__FUI.mut, GRID=__FUI.grid;
+    var L = cols.map(function(c){ return c.lb; }), last = cols.length-1;
+    var V = function(k){ return cols.map(function(c){ return c[k]; }); };
+    var nn = function(a){ return a.filter(function(v){ return v!=null && !isNaN(v); }); };
+    var mx = function(a){ var x=nn(a); return x.length?Math.max.apply(null,x):null; };
+    var mn = function(a){ var x=nn(a); return x.length?Math.min.apply(null,x):null; };
+    var av = function(a){ var x=nn(a); return x.length?x.reduce(function(s,v){return s+v;},0)/x.length:null; };
+    var md = function(a){ var x=nn(a).slice().sort(function(p,q){return p-q;}); if(!x.length) return null; var i=x.length>>1; return x.length%2?x[i]:(x[i-1]+x[i])/2; };
+    var ix = function(a,v){ for(var i=0;i<a.length;i++){ if(a[i]===v) return i; } return -1; };
+    var dd = function(ms){ var s={}, out=[]; ms.forEach(function(m){ if(!m||m.i<0||m.text==null) return; var k=m.ds+'_'+m.i; if(s[k]) return; s[k]=1; out.push(m); }); return out; };
+    var sg = function(v,d){ if(v==null||isNaN(v)) return '--'; return (v>0?'+':'')+fmt(v,d); };
+
+    var opt = function(fv, legend, marks, ref){ return {
+      responsive:true, maintainAspectRatio:false, animation:false,
+      interaction:{ mode:'index', intersect:false },
+      layout:{ padding:{ top:16, right:6, left:0, bottom:0 } },
+      plugins:{
+        legend:{ display:!!legend, position:'top', align:'start',
+          labels:{ boxWidth:8, boxHeight:8, usePointStyle:true, pointStyle:'rectRounded', color:INK, font:{size:11.5}, padding:14 } },
+        tooltip:{ backgroundColor:'rgba(31,41,55,.95)', padding:9, cornerRadius:6, usePointStyle:true, boxWidth:8, boxHeight:8,
+          titleFont:{size:11.5}, bodyFont:{size:11.5},
+          callbacks:{ label:function(x){ return ' '+x.dataset.label+': '+(x.parsed.y==null?'--':fv(x.parsed.y)); } } },
+        finPlug:{ marks:marks||[], ref:ref||null }
+      },
+      scales:{
+        x:{ grid:{ display:false }, border:{ color:GRID },
+            ticks:{ color:MUT, font:{size:10}, maxRotation:0, autoSkip:true, maxTicksLimit:6 } },
+        y:{ grid:{ color:GRID, drawTicks:false }, border:{ display:false },
+            ticks:{ color:MUT, font:{size:10}, maxTicksLimit:5, callback:function(v){ return fv(v); } } }
+      }
+    }; };
+    var bar = function(label,key,color){ return { label:label, data:V(key),
+      backgroundColor:cols.map(function(c,i){ return i===last?color:color+'80'; }),
+      borderRadius:4, borderSkipped:'start', categoryPercentage:.72, barPercentage:.86 }; };
+    var line = function(label,key,color){ return { label:label, data:V(key),
+      borderColor:color, backgroundColor:color, borderWidth:2, pointRadius:0, pointHoverRadius:5,
+      pointHoverBorderColor:__FUI.panel, pointHoverBorderWidth:2, tension:.25, spanGaps:true }; };
+    var mk = function(id,fn){ var el=document.getElementById(id); if(!el) return;
+      var ex=__fundCharts[id]||(Chart.getChart?Chart.getChart(el):null); if(ex){ try{ ex.destroy(); }catch(e){} }
+      var c2=el.getContext('2d'); var __cfg = fn(c2); __fundCfg[id] = __cfg; __fundCharts[id] = new Chart(c2, __cfg); };
+    var pctv=function(v){ return fmt(v,1)+'%'; }, tyv=function(v){ return fmt(v,0); }, lanv=function(v){ return fmt(v,1); };
+    var chip=function(d,unit,dec,neutral){ if(d==null||!isFinite(d)) return '';
+      var cls=neutral?'fl':(d>0?'up':(d<0?'dn':'fl')), ar=(d>0?'▲':(d<0?'▼':'■'));
+      return '<span class="fd '+cls+'">'+ar+' '+fmt(Math.abs(d),dec)+unit+'</span>'; };
+    var hero=function(id,val,d,unit,dec,neutral){ var e=document.getElementById(id); if(!e) return;
+      e.innerHTML='<span class="fq">'+cols[last].lb+'</span>'+val+chip(d,unit,dec,neutral); };
+
+    var yl=V('yln'), yd=V('ydt'), rv=V('rev'), np=V('np'), ro=V('roe'), pe=V('pe'), pb=V('pb');
+
+    var m1=dd([
+      {ds:1,i:last,text:sg(yl[last],1)+'%',strong:true,below:(yl[last]<0)},
+      {ds:0,i:last,text:sg(yd[last],1)+'%',strong:true,below:(yd[last]<0)},
+      {ds:1,i:ix(yl,mx(yl)),text:'Đỉnh '+sg(mx(yl),1)+'%',color:C.ln},
+      {ds:1,i:ix(yl,mn(yl)),text:'Đáy '+sg(mn(yl),1)+'%',below:(mn(yl)<0),color:C.ln}
+    ]);
+    mk('fcYoy', function(){ return { type:'bar', plugins:[__finPlug],
+      data:{ labels:L, datasets:[ bar('%YoY Doanh thu','ydt',C.dt), bar('%YoY Lợi nhuận','yln',C.ln) ] },
+      options:opt(pctv,true,m1,null) }; });
+    hero('fhYoy', sg(yl[last],1)+'%', (yl[last]!=null&&yl[last-1]!=null)?(yl[last]-yl[last-1]):null, ' đ%',1,false);
+
+    var m2=dd([
+      {ds:0,i:last,text:fmt(rv[last],0),strong:true},
+      {ds:1,i:last,text:fmt(np[last],0),strong:true},
+      {ds:0,i:ix(rv,mx(rv)),text:'Đỉnh '+fmt(mx(rv),0),color:C.dt}
+    ]);
+    mk('fcScale', function(){ return { type:'bar', plugins:[__finPlug],
+      data:{ labels:L, datasets:[ bar('Doanh thu (tỷ)','rev',C.dt), bar('LNST (tỷ)','np',C.ln) ] },
+      options:opt(tyv,true,m2,null) }; });
+    hero('fhScale', fmt(rv[last],0)+' tỷ', (rv[last]&&rv[last-1])?((rv[last]/rv[last-1]-1)*100):null, '%',1,false);
+
+    var m3=dd([
+      {ds:0,i:last,text:fmt(ro[last],1)+'%',strong:true,dot:true,color:C.roe},
+      {ds:0,i:ix(ro,mx(ro)),text:'Đỉnh '+fmt(mx(ro),1)+'%',dot:true,color:C.roe},
+      {ds:0,i:ix(ro,mn(ro)),text:'Đáy '+fmt(mn(ro),1)+'%',below:true,dot:true,color:C.roe}
+    ]);
+    var avRoe=av(ro);
+    mk('fcRoe', function(c2){ var ds=line('ROE (%)','roe',C.roe);
+      var g=c2.createLinearGradient(0,0,0,215); g.addColorStop(0,C.roe+'2B'); g.addColorStop(1,C.roe+'00');
+      ds.fill=true; ds.backgroundColor=g;
+      return { type:'line', plugins:[__finPlug], data:{ labels:L, datasets:[ds] },
+        options:opt(pctv,false,m3,avRoe==null?null:{v:avRoe,label:'TB '+fmt(avRoe,1)+'%'}) }; });
+    hero('fhRoe', fmt(ro[last],1)+'%', (ro[last]!=null&&ro[last-1]!=null)?(ro[last]-ro[last-1]):null, ' đ%',1,false);
+
+    var m4=dd([
+      {ds:0,i:last,text:fmt(pe[last],2),strong:true,dot:true,color:C.pe},
+      {ds:1,i:last,text:fmt(pb[last],2),strong:true,dot:true,color:C.pb,below:true},
+      {ds:0,i:ix(pe,mx(pe)),text:'Đỉnh '+fmt(mx(pe),2),dot:true,color:C.pe},
+      {ds:0,i:ix(pe,mn(pe)),text:'Đáy '+fmt(mn(pe),2),below:true,dot:true,color:C.pe}
+    ]);
+    var mdPe=md(pe);
+    mk('fcVal', function(){ return { type:'line', plugins:[__finPlug],
+      data:{ labels:L, datasets:[ line('P/E','pe',C.pe), line('P/B','pb',C.pb) ] },
+      options:opt(lanv,true,m4,mdPe==null?null:{v:mdPe,label:'Trung vị P/E '+fmt(mdPe,2)}) }; });
+    hero('fhVal', 'P/E '+fmt(pe[last],2), (pe[last]&&pe[last-1])?((pe[last]/pe[last-1]-1)*100):null, '%',1,true);
+
+    var set=function(id,html){ var e=document.getElementById(id); if(e) e.innerHTML=html; };
+    set('fiYoy',   fundInsight('yoy',cols));
+    set('fiScale', fundInsight('scale',cols));
+    set('fiRoe',   fundInsight('roe',cols));
+    set('fiVal',   fundInsight('val',cols));
+    __finDecorate();
+  }catch(e){ console.warn('drawFundCharts', e); }
+}
+
+
+var __finBack = null, __finCurId = null;
+function __finCss(){
+  if(document.getElementById('finXtraCss')) return;
+  var st = document.createElement('style'); st.id = 'finXtraCss';
+  st.textContent = [
+   '#finCharts .fhead{gap:8px}',
+   '#finCharts .ftit{flex:1 1 auto;min-width:0}',
+   '#finCharts .fsym,#finModalHead .fsym{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.4px;color:var(--text);background:var(--panel2);border:1px solid var(--border);border-radius:6px;padding:1px 7px;margin-right:8px;vertical-align:1px}',
+   '#finModalHead .fsym{font-size:12.5px;padding:2px 9px}',
+   '#finCharts .fexp{flex:0 0 auto;align-self:center;width:27px;height:25px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--panel);color:var(--muted);border-radius:7px;cursor:pointer;padding:0}',
+   '#finCharts .fexp:hover{background:var(--panel2);color:var(--text)}',
+   '#finModal{position:fixed;inset:0;z-index:100000;display:none;align-items:center;justify-content:center;background:rgba(31,41,55,.55);padding:20px}',
+   '#finModalCard{position:relative;background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px 20px 16px;width:min(1120px,96vw);max-height:92vh;overflow:auto}',
+   '#finModalX{position:absolute;top:10px;right:12px;width:30px;height:30px;border:1px solid var(--border);background:var(--panel);color:var(--muted);border-radius:8px;font-size:19px;line-height:1;cursor:pointer;padding:0}',
+   '#finModalX:hover{background:var(--panel2);color:var(--text)}',
+   '#finModalHead{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding-right:38px;margin-bottom:10px}',
+   '#finModalHead .mtit{font-size:16px;font-weight:700;color:var(--text)}',
+   '#finModalHead .fhero{font-size:20px;font-weight:800;color:var(--text);white-space:nowrap;letter-spacing:-.2px}',
+   '#finModalHead .fq{font-size:12px;font-weight:600;color:var(--muted);margin-right:7px;letter-spacing:0}',
+   '#finModalHead .fd{display:inline-block;font-size:12.5px;font-weight:700;margin-left:7px;padding:2px 9px;border-radius:999px;letter-spacing:0;vertical-align:2px}',
+   '#finModalHead .fd.up{color:var(--green);background:var(--green-soft)}',
+   '#finModalHead .fd.dn{color:var(--red);background:var(--red-soft)}',
+   '#finModalHead .fd.fl{color:var(--muted);background:var(--panel2)}',
+   '#finModal .fbox{height:min(56vh,470px);position:relative}',
+   '#finModalIns{font-size:14px;line-height:1.65;color:var(--muted);margin-top:12px;padding:11px 14px;background:var(--panel2);border-radius:9px;border-left:3px solid var(--blue)}',
+   '#finModalIns b{color:var(--text);font-weight:700}',
+   '#finModalFoot{margin-top:11px;font-size:11.5px;color:var(--muted);text-align:right;letter-spacing:.2px}'
+  ].join('');
+  document.head.appendChild(st);
+}
+function __finSym(){
+  var e = document.getElementById('dTitle');
+  if(e && e.firstChild && e.firstChild.textContent){
+    var t = e.firstChild.textContent.trim();
+    if(/^[A-Z0-9]{2,5}$/.test(t)) return t;
+  }
+  return '';
+}
+function __finClose(){
+  var m = document.getElementById('finModal'); if(!m) return;
+  if(__finBack && __finBack.box && __finBack.parent){
+    __finBack.parent.insertBefore(__finBack.box, __finBack.next);
+    var ch = __fundCharts[__finCurId];
+    if(ch){ try{ ch.resize(); }catch(e){} }
+  }
+  __finBack = null; __finCurId = null;
+  m.style.display = 'none';
+}
+function __finOpen(cid){
+  try{
+    __finCss();
+    var cv = document.getElementById(cid); if(!cv) return;
+    var card = cv.closest('.fcard'); if(!card) return;
+    var box = cv.closest('.fbox'); if(!box) return;
+    var m = document.getElementById('finModal');
+    if(!m){
+      m = document.createElement('div'); m.id = 'finModal';
+      m.innerHTML = '<div id="finModalCard">'
+        + '<button id="finModalX" type="button" aria-label="Đóng">&times;</button>'
+        + '<div id="finModalHead"></div>'
+        + '<div id="finModalSlot"></div>'
+        + '<div id="finModalIns"></div>'
+        + '<div id="finModalFoot"></div>'
+        + '</div>';
+      document.body.appendChild(m);
+      m.addEventListener('click', function(ev){ if(ev.target === m) __finClose(); });
+      document.getElementById('finModalX').onclick = __finClose;
+      document.addEventListener('keydown', function(ev){
+        if(ev.key === 'Escape'){ var mm = document.getElementById('finModal'); if(mm && mm.style.display === 'flex') __finClose(); }
+      });
+    }
+    if(__finCurId) __finClose();
+    var tit = card.querySelector('.ftit'), hero = card.querySelector('.fhero'), ins = card.querySelector('.fins');
+    document.getElementById('finModalHead').innerHTML =
+      '<div class="mtit">' + (tit ? tit.innerHTML : '') + '</div>'
+      + '<div class="fhero">' + (hero ? hero.innerHTML : '') + '</div>';
+    document.getElementById('finModalIns').innerHTML = ins ? ins.innerHTML : '';
+    document.getElementById('finModalFoot').textContent = 'Khoa Nguyen Invest \u00b7 khoakafi.github.io';
+    __finBack = { box: box, parent: box.parentNode, next: box.nextSibling };
+    __finCurId = cid;
+    document.getElementById('finModalSlot').appendChild(box);
+    m.style.display = 'flex';
+    var ch = __fundCharts[cid];
+    if(ch){ setTimeout(function(){ try{ ch.resize(); }catch(e){} }, 30); }
+  }catch(e){ console.warn('finOpen', e); }
+}
+function __finDecorate(){
+  try{
+    __finCss();
+    var sym = __finSym();
+    var ids = ['fcYoy','fcScale','fcRoe','fcVal'];
+    var svg = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>';
+    ids.forEach(function(cid){
+      var cv = document.getElementById(cid); if(!cv) return;
+      var card = cv.closest('.fcard'); if(!card) return;
+      var tit = card.querySelector('.ftit');
+      if(tit){
+        var b = tit.querySelector('.fsym');
+        if(!b){ b = document.createElement('span'); b.className = 'fsym'; tit.insertBefore(b, tit.firstChild); }
+        b.textContent = sym || '--';
+        b.style.display = sym ? 'inline-block' : 'none';
+      }
+      var head = card.querySelector('.fhead');
+      if(head && !head.querySelector('.fexp')){
+        var btn = document.createElement('button');
+        btn.type = 'button'; btn.className = 'fexp'; btn.title = 'Phóng to';
+        btn.setAttribute('aria-label', 'Phóng to biểu đồ');
+        btn.innerHTML = svg;
+        btn.addEventListener('click', function(){ __finOpen(cid); });
+        head.appendChild(btn);
+      }
+    });
+  }catch(e){ console.warn('finDecorate', e); }
+}
+
 function drawCanslim(r, qs){
   const np = qs.map(x=>pick(x,NPAT));
   const items = [
