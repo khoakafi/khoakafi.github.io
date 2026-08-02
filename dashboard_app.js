@@ -1033,19 +1033,21 @@ inits.detail = function(t){
             <div id="dHead" style="margin-bottom:10px"></div>
             <div id="dTabs" style="display:flex;border-bottom:1px solid var(--border);margin-bottom:10px">
               <button class="dtab active" data-t="ov">Tổng quan</button>
-              <button class="dtab" data-t="fin">Tài chính</button>
               <button class="dtab" data-t="sig">Tín hiệu</button>
               <button class="dtab" data-t="rec">CTCK KN</button>
             </div>
             <div id="tab-ov"><div id="dSide"></div></div>
-            <div id="tab-fin" style="display:none">
-              <div class="mini" id="dFundCur" style="margin-bottom:8px;font-size:12.5px"></div>
-              <div style="overflow:auto;max-height:480px"><table id="tbFund"></table></div>
-              <div class="mini" style="margin-top:8px;font-style:italic">Ô "--" là quý nguồn chưa công bố.</div>
-            </div>
             <div id="tab-sig" style="display:none"></div>
             <div id="tab-rec" style="display:none"></div>
           </div>
+        </div>
+        <div id="finFull" style="margin-top:14px;border:1px solid var(--border);border-radius:12px;padding:14px 16px;background:#fff">
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px">
+            <b style="font-size:15px">Tài chính — 12 quý gần nhất</b>
+            <div class="mini" id="dFundCur" style="font-size:12.5px"></div>
+          </div>
+          <div style="overflow-x:auto"><table id="tbFund" style="width:100%"></table></div>
+          <div class="mini" style="margin-top:8px;font-style:italic">Ô "--" là quý nguồn chưa công bố.</div>
         </div>
       </div>
     </div>
@@ -1064,7 +1066,7 @@ inits.detail = function(t){
     $('#dRanges').addEventListener('click', e => { const b = e.target.closest('button.rng'); if (!b) return; $$('#dRanges .btn.rng').forEach(x=>x.classList.remove('active')); b.classList.add('active'); drawPrice(+b.dataset.y); });
     $('#dTabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
       $$('#dTabs button').forEach(x=>x.classList.toggle('active', x===b));
-      ['ov','fin','sig','rec'].forEach(k => { const d = document.getElementById('tab-'+k); if (d) d.style.display = (b.dataset.t===k?'':'none'); });
+      ['ov','sig','rec'].forEach(k => { const d = document.getElementById('tab-'+k); if (d) d.style.display = (b.dataset.t===k?'':'none'); });
       if (b.dataset.t==='sig') renderSigTab();
       if (b.dataset.t==='rec') loadRecs();
     });
