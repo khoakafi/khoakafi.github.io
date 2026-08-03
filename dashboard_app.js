@@ -2123,7 +2123,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       +'#newsBody h1{font-size:25px;line-height:1.32;margin:6px 0 14px}'
       +'#newsBody h2{font-size:19.5px;margin:30px 0 10px}'
       +'#newsBody .meta{font-size:13px;color:var(--muted);margin:8px 0 10px}'
-      +'#newsBody .meta .chip{background:#b45309;color:#fff;font-weight:700;padding:2px 9px;border-radius:99px;font-size:11.5px;margin-right:8px}'
+      +'#newsBody .meta .chip{background:#18a34b;color:#fff;font-weight:700;padding:2px 9px;border-radius:99px;font-size:11.5px;margin-right:8px}'
       +'#newsBody .s60{border:1px solid var(--border);border-left:4px solid #18a34b;background:#fff;border-radius:10px;padding:14px 18px;margin:18px 0}'
       +'#newsBody .s60 .t{font-weight:800;font-size:13px;color:#18a34b;margin-bottom:8px}'
       +'#newsBody .s60 ul{margin:0;padding-left:19px}#newsBody .s60 li{margin:6px 0}'
@@ -2131,11 +2131,11 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       +'#newsBody figure svg{width:100%;height:auto;display:block}'
       +'#newsBody figcaption{font-size:12.5px;color:var(--muted);padding:8px 14px;border-top:1px solid var(--border)}'
       +'#newsBody table{width:100%;border-collapse:collapse;background:#fff;font-size:15px;margin:14px 0}'
-      +'#newsBody th{background:#0b1f3a;color:#fff;padding:9px 12px;text-align:left;font-size:13.5px}'
+      +'#newsBody th{background:#18a34b;color:#fff;padding:9px 12px;text-align:left;font-size:13.5px}'
       +'#newsBody td{padding:9px 12px;border-bottom:1px solid var(--border)}'
       +'#newsBody tr.hl td{background:#fef2f2;font-weight:700;border-left:3px solid #dc2626}'
       +'#newsBody .g{color:#18a34b;font-weight:700}#newsBody .r{color:#dc2626;font-weight:700}'
-      +'#newsBody .pull{border-left:4px solid #b45309;background:#fffbeb;border-radius:0 10px 10px 0;padding:12px 18px;margin:18px 0;font-size:17px;font-weight:600}'
+      +'#newsBody .pull{border-left:4px solid #18a34b;background:#f0fdf4;border-radius:0 10px 10px 0;padding:12px 18px;margin:18px 0;font-size:17px;font-weight:600}'
       +'#newsBody .note{font-size:13px;color:var(--muted);font-style:italic}'
       +'#newsBody .cta{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 8px}'
       +'#newsBody .cta a{text-decoration:none;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px}'
@@ -2183,7 +2183,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       }catch(e){ el.innerHTML = 'Kh\u00f4ng t\u1ea3i \u0111\u01b0\u1ee3c b\u00e0i \u2014 <a href="'+url+'" target="_blank" rel="noopener">m\u1edf trang b\u00e0i</a>.'; }
     };
     const CATN = {eod:'T\u1ed5ng h\u1ee3p phi\u00ean', hoc:'H\u1ecdc trend-following', nong:'Ph\u00e2n t\u00edch s\u1ef1 ki\u1ec7n'};
-    const CATC = {eod:'#2563eb', hoc:'#18a34b', nong:'#b45309'};
+    const CATC = {eod:'#2563eb', hoc:'#18a34b', nong:'#18a34b'};
     let loaded = false;
     inits['news'] = async function(){
       if (loaded) return;
