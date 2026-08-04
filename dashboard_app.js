@@ -79,6 +79,29 @@ function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { 
 window.showView = showView;
 
 const inits = {};
+// ================= WATCHLIST — DANH MUC THEO DOI (dai tren tab Chi tiet ma) =================
+(function watchStrip(){
+try{
+const vd=document.getElementById('view-detail');
+if(!vd||document.getElementById('watchStrip'))return;
+const ws=ROWS().filter(r=>r.watch&&r.wgrade!=='weak').sort((a,b)=>{const sa=a.wstar?0:1,sb=b.wstar?0:1;if(sa!==sb)return sa-sb;return (a.wrng||99)-(b.wrng||99);});
+if(!ws.length)return;
+let lab='';
+const up=(SUM.updated||'').slice(0,10);
+if(up){const dt=new Date(up+'T12:00:00');const wd=dt.getDay();dt.setDate(dt.getDate()+(wd===5?3:(wd===6?2:1)));lab=('0'+dt.getDate()).slice(-2)+'/'+('0'+(dt.getMonth()+1)).slice(-2);}
+const chip=r=>{const ch=(r._lv!=null?r._lv:r.chg);
+const txt=ch!=null?((ch>0?'+':'')+(+ch).toFixed(1)+'%'):'\u2014';
+const col=ch==null?'#7A828E':(ch>0?'#18A34B':(ch<0?'#E5484D':'#7A828E'));
+return '<span class="wchip" data-t="'+r.t+'" style="display:inline-flex;align-items:center;gap:3px;padding:1px 7px;border:1px solid #E8EAEF;border-radius:999px;cursor:pointer;background:#fff;font-weight:700;font-size:11.5px;color:#1F2937;white-space:nowrap">'+(r.wstar?'<span style="color:#B45309;font-size:10px">\u2605</span>':'')+r.t+'<span id="wlv_'+r.t+'" style="color:'+col+';font-weight:600;font-size:10.5px">'+txt+'</span></span>';};
+const el=document.createElement('div');el.id='watchStrip';
+el.style.cssText='display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E8EAEF;border-radius:9px;padding:5px 10px;margin-bottom:8px;overflow-x:auto;scrollbar-width:none';
+el.innerHTML='<span style="font-weight:700;font-size:11.5px;color:#7A828E;white-space:nowrap;flex:0 0 auto">Watchlist '+lab+'</span>'+ws.map(chip).join('');
+el.addEventListener('click',e=>{const c2=e.target.closest('.wchip');if(c2&&window.openDetail)window.openDetail(c2.dataset.t);});
+vd.insertBefore(el,vd.firstChild);
+setInterval(()=>{ws.forEach(r=>{const s=document.getElementById('wlv_'+r.t);if(!s)return;const ch=(r._lv!=null?r._lv:r.chg);if(ch==null)return;s.textContent=(ch>0?'+':'')+(+ch).toFixed(1)+'%';s.style.color=ch>0?'#18A34B':(ch<0?'#E5484D':'#7A828E');});},30000);
+}catch(e){}
+})();
+
 // ================= LEADER BOARD =================
 (function addLeaderTab(){
   const nav = document.querySelector('nav');
@@ -2043,7 +2066,7 @@ $('#btnRefresh').onclick = async function(){
           let hi=-1e9, lo=1e9, hc=false;
           for (let k=L2-29;k<=L2;k++){ if(c[k]>hi)hi=c[k]; if(c[k]<lo)lo=c[k]; if(k>0&&(c[k]/c[k-1]-1)*100>=thr)hc=true; }
           const rng=(hi-lo)/lo*100;
-          if (!hc && rng<=12) { o.watch=1; o.wrng=+rng.toFixed(1); o.wdb=+((c[L2]/hi-1)*100).toFixed(1); }
+          if (!hc && rng<=12) { o.watch=1; o.wrng=+rng.toFixed(1); o.wdb=+((c[L2]/hi-1)*100).toFixed(1);  let h1=-1e9,l1=1e9; for (let k=L2-9;k<=L2;k++){ if(c[k]>h1)h1=c[k]; if(c[k]<l1)l1=c[k]; } const rg1=(h1-l1)/l1*100; o.wstar=(rng>0 && rg1/rng<=0.6)?1:0; }
         } }
       const qs = qsArr;
       if (qs.length) { const rev = qs.map(x=>pickTop(x)), np2 = qs.map(x=>pick(x,NPAT)); const n = qs.length;
