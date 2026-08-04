@@ -80,7 +80,7 @@ window.showView = showView;
 
 const inits = {};
 // ================= WATCHLIST — DANH MUC THEO DOI (dai tren tab Chi tiet ma) =================
-(function watchStrip(){
+function buildWatchStrip(){
 try{
 const vd=document.getElementById('view-detail');
 if(!vd||document.getElementById('watchStrip'))return;
@@ -98,9 +98,14 @@ el.style.cssText='display:flex;align-items:center;gap:6px;background:#FFFFFF;bor
 el.innerHTML='<span style="font-weight:700;font-size:11.5px;color:#7A828E;white-space:nowrap;flex:0 0 auto">Watchlist '+lab+'</span>'+ws.map(chip).join('');
 el.addEventListener('click',e=>{const c2=e.target.closest('.wchip');if(c2&&window.openDetail)window.openDetail(c2.dataset.t);});
 vd.insertBefore(el,vd.firstChild);
-setInterval(()=>{ws.forEach(r=>{const s=document.getElementById('wlv_'+r.t);if(!s)return;const ch=(r._lv!=null?r._lv:r.chg);if(ch==null)return;s.textContent=(ch>0?'+':'')+(+ch).toFixed(1)+'%';s.style.color=ch>0?'#18A34B':(ch<0?'#E5484D':'#7A828E');});},30000);
 }catch(e){}
-})();
+}
+buildWatchStrip();
+setInterval(function(){
+if(!document.getElementById('watchStrip')){buildWatchStrip();return;}
+try{ROWS().forEach(function(r){if(!r.watch)return;const s=document.getElementById('wlv_'+r.t);if(!s)return;const ch=(r._lv!=null?r._lv:r.chg);if(ch==null)return;s.textContent=(ch>0?'+':'')+(+ch).toFixed(1)+'%';s.style.color=ch>0?'#18A34B':(ch<0?'#E5484D':'#7A828E');});}catch(e){}
+},5000);
+
 
 // ================= LEADER BOARD =================
 (function addLeaderTab(){
