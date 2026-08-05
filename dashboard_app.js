@@ -1154,7 +1154,7 @@ async function loadDetail(t){
       qsAv.push({pub: Date.parse(q.publicDate.slice(0,10))/1000, revY, npY});
     });
     qsAv.sort((a,b)=>a.pub-b.pub);
-    const tpn = computeTPN(oh, r.b || 'HO', qsAv);
+    const tpn = computeTPN(oh, r.b || 'HO', qsAv); starTPN(tpn.markers, oh);
     curMarkers = tpn.markers;
     renderTPN(tpn.state);
     if (proLoadedFor && proLoadedFor !== t) { proLoadedFor = null; if (document.getElementById('chartProWrap').style.display !== 'none') loadProChart(); }
@@ -1176,6 +1176,22 @@ async function loadDetail(t){
     if (_at && _at.dataset.t==='sig') renderSigTab();
   } catch(e){ toast('Lỗi tải dữ liệu '+t+': '+e.message); }
 }
+// ===== B★: nang cap hien thi diem mua dat chuan nen co hep + thi truong thuan (display-only) =====
+let __ixSD=null, __ixSI=null;
+(async()=>{ try{ const to2=NOW()+86400; __ixSD=await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=VNINDEX&resolution=D&from=${to2-86400*5100}&to=${to2}`); __ixSI={}; __ixSD.t.forEach((ts,k2)=>__ixSI[ts]=k2); }catch(e){} })();
+function __ixMA50S(ts){ if(!__ixSD||!__ixSI) return null; const j2=__ixSI[ts]; if(j2==null||j2<49) return null; let s2=0; for(let k2=j2-49;k2<=j2;k2++) s2+=__ixSD.c[k2]; return {c:__ixSD.c[j2], ma:s2/50}; }
+function starTPN(mk, oh){ try{
+ const c2=oh.c, tt2=oh.t; const ixm={}; tt2.forEach((ts,i2)=>ixm[ts]=i2);
+ mk.forEach(m=>{ if(m.text!=='BUY') return;
+  const i2=ixm[m.time]; if(i2==null||i2<=40) return;
+  let h1=-1e9,l1=1e9,h3=-1e9,l3=1e9;
+  for(let k2=i2-10;k2<i2;k2++){ if(c2[k2]>h1)h1=c2[k2]; if(c2[k2]<l1)l1=c2[k2]; }
+  for(let k2=i2-30;k2<i2;k2++){ if(c2[k2]>h3)h3=c2[k2]; if(c2[k2]<l3)l3=c2[k2]; }
+  const r10=(h1-l1)/l1*100, r30=(h3-l3)/l3*100;
+  if(!(r30>0 && r10<=0.6*r30)) return;
+  const m50=__ixMA50S(m.time); if(m50!=null && !(m50.c>m50.ma)) return;
+  m.text='BUY\u2605';
+ }); }catch(e){} }
 // ===== Khoa Nguyen Signal engine v2 =====
 function computeTPN(oh, boardCode, qsAv){
   // xep hang do tin cay tin hieu theo du lieu co ban as-of (chi tiet thuat toan khong cong bo)
