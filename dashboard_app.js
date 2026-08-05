@@ -946,7 +946,7 @@ function addProBadges(){
   window._kafiBadges = curMarkers.map(m => {
     const i = tix[m.time]; if (i == null) return null;
     const isBuy = m.position === 'belowBar';
-    const lbl = isBuy ? (m.text === 'ADD' ? '▲ Add' : (m.text === 'WEAK' ? '▲ Weak' : (m.text === 'THIN' ? '▲ B!' : '▲ B'))) : '▼ S ' + m.text;
+    const lbl = isBuy ? (m.text === 'ADD' ? '▲ Add' : (m.text === 'WEAK' ? '▲ Weak' : (m.text === 'THIN' ? '▲ B!' : (m.text === 'BUY★' ? '▲ B★' : '▲ B')))) : '▼ S ' + m.text;
     return { i: i, below: isBuy, text: lbl, color: m.color, value: isBuy ? curOhlc.l[i] : curOhlc.h[i] };
   }).filter(Boolean);
   try { proChart.createIndicator('KBADGE', true, { id: 'candle_pane' }); } catch(e){}
