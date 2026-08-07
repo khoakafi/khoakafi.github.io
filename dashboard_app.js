@@ -372,6 +372,7 @@ async function liveQuote(){
       if (r.data && r.data.length > 300) { data = r.data; break; }   // ngay giao dich gan nhat
     }
     if (!data) return false;
+    try { window.LIVE_DATE = (data[0]&&data[0].date)||null; } catch(e){}
     let n = 0;
     data.forEach(d=>{ const row = byT[d.code]; if (!row) return;
       if (d.close!=null) { const _op=row.p; row.p = d.close; if (_op>0 && d.close>0) { const _k=d.close/_op; ['cap','pe','pb'].forEach(_f=>{ if (typeof row[_f]==='number' && isFinite(row[_f]) && row[_f]!==0) row[_f]=row[_f]*_k; }); } }
@@ -794,6 +795,17 @@ function updateKpis(i){
     if (vals[ix].innerHTML !== html) vals[ix].innerHTML = html;   // chi ghi khi that su doi
   }
 }
+// KL "song" cua 1 cay nen: chi tra ve khi cay nen do DUNG la phien ma feed song dang bao.
+// Lech ngay -> tra null -> moi thu quay ve dung so cua chart. KHONG bao gio ghi vao curOhlc.
+function liveVolOf(tk, barTs){
+  try {
+    const r = byT[tk];
+    if (!r || r.vx == null || !r.v20 || !window.LIVE_DATE) return null;
+    const d = new Date(barTs*1000);
+    const ds = d.getUTCFullYear()+'-'+('0'+(d.getUTCMonth()+1)).slice(-2)+'-'+('0'+d.getUTCDate()).slice(-2);
+    return ds === window.LIVE_DATE ? r.vx*r.v20 : null;
+  } catch(e){ return null; }
+}
 function updateDPx(i){
   const el = document.getElementById('dPx'); if (!el || !curOhlc) return;
   const r = byT[curT] || {};
@@ -803,9 +815,10 @@ function updateDPx(i){
   const p = isNow && r.p != null ? r.p : c[idx];
   const chg = isNow && r.chg != null ? r.chg : (idx > 0 ? (c[idx]/c[idx-1]-1)*100 : 0);
   const col = chg > 0 ? '#089981' : (chg < 0 ? '#F23645' : '#787B86');
-  const vol = (v[idx]||0)/1e6;
+  let vol = (v[idx]||0)/1e6;
   let vx = null;
-  if (isNow && r.vx != null) vx = Math.round(r.vx*100);
+  const lv = isNow ? liveVolOf(curT, curOhlc.t[idx]) : null;
+  if (lv != null && r.vx != null) { vx = Math.round(r.vx*100); vol = lv/1e6; }
   else { let sm=0, cnt=0; for (let k=Math.max(0,idx-19); k<=idx; k++){ sm+=(v[k]||0); cnt++; }
          const tb = cnt ? sm/cnt : 0; if (tb>0) vx = Math.round((v[idx]||0)/tb*100); }
   const d = new Date(curOhlc.t[idx]*1000);
@@ -957,6 +970,22 @@ function addProBadges(){
   try { proChart.createIndicator('KBADGE', true, { id: 'candle_pane' }); } catch(e){}
   window._dbg = { get chart(){ return proChart; }, get markers(){ return curMarkers; }, get oh(){ return curOhlc; }, get badges(){ return window._kafiBadges; } };
 }
+// Moi lan feed song lam moi -> cap nhat CAY NEN CUOI cua chart cho theo sat.
+// Chi sua cay nen dang hien thi; KHONG bao gio ghi vao curOhlc (may tin hieu doc curOhlc).
+function syncLiveBar(){
+  try {
+    if (!proChart || !curOhlc || !curT || !curOhlc.t) return;
+    const n = curOhlc.t.length; if (!n) return;
+    const ts = curOhlc.t[n-1];
+    const lv = liveVolOf(curT, ts);
+    if (lv == null) return;                       // lech phien -> khong dung gi
+    const r = byT[curT] || {};
+    const cl = (r.p != null && isFinite(r.p) && r.p > 0) ? r.p : curOhlc.c[n-1];
+    proChart.updateData({ timestamp: ts*1000, open: curOhlc.o[n-1],
+      high: Math.max(curOhlc.h[n-1], cl), low: Math.min(curOhlc.l[n-1], cl),
+      close: cl, volume: lv });
+  } catch(e){}
+}
 function loadProChart(){
   if (!curT || !curOhlc || proLoadedFor === curT) return;
   const init = () => {
@@ -984,7 +1013,14 @@ function loadProChart(){
       crosshair: { horizontal: { line: { color: '#9598A1' }, text: { backgroundColor: '#131722' } },
                    vertical:   { line: { color: '#9598A1' }, text: { backgroundColor: '#131722' } } }
     });
-    proChart.applyNewData(curOhlc.t.map((tt,i)=>({ timestamp: tt*1000, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i], volume: curOhlc.v[i] })));
+    const _lastI = curOhlc.t.length - 1;
+    proChart.applyNewData(curOhlc.t.map((tt,i)=>{
+      const lv = (i === _lastI) ? liveVolOf(curT, tt) : null;   // chi cay nen cuoi, chi khi trung phien
+      if (lv == null) return { timestamp: tt*1000, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i], volume: curOhlc.v[i] };
+      const _r = byT[curT] || {};
+      const _cl = (_r.p != null && isFinite(_r.p) && _r.p > 0) ? _r.p : curOhlc.c[i];
+      return { timestamp: tt*1000, open: curOhlc.o[i], high: Math.max(curOhlc.h[i], _cl), low: Math.min(curOhlc.l[i], _cl), close: _cl, volume: lv };
+    }));
     proChart.createIndicator({ name: 'MA', calcParams: [20] }, true, { id: 'candle_pane' });
     if (!window._kvolReg) {
       klinecharts.registerIndicator({
@@ -2151,7 +2187,7 @@ $('#btnRefresh').onclick = async function(){
   } catch(_) {}
   maybeAutoPublish();
 })();
-setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); } maybeAutoPublish(); }, 120000);
+setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar(); } maybeAutoPublish(); }, 120000);
 
 // ================= 9. BAI VIET (tab tin & phan tich — doc ngay trong trang) =================
 (function addNewsTab(){
