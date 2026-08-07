@@ -754,7 +754,11 @@ function updateKpis(i){
   if (i == null || i < 0 || i >= n) i = n-1;
   const isNow = i === n-1;
   let sVal = 0, cnt = 0;
-  for (let k = Math.max(0, i-19); k <= i; k++){ sVal += c[k]*(v[k]||0); cnt++; }
+  for (let k = Math.max(0, i-19); k <= i; k++){
+    let vk = v[k]||0;
+    if (k === n-1) { const _lv = liveVolOf(curT, t[k]); if (_lv != null) vk = _lv; }   // cay nen cuoi: dung KL song
+    sVal += c[k]*vk; cnt++;
+  }
   const gtgd20 = sVal/cnt/1e6;
   const ts = t[i];
   const rt = dtData.rtsAv.filter(x=>x.av<=ts).slice(-1)[0] || {};
@@ -986,6 +990,46 @@ function syncLiveBar(){
       close: cl, volume: lv });
   } catch(e){}
 }
+// ===== TU KIEM: bat cac cap so hien thi khong the cung dung ve mat so hoc =====
+window.kafiSelfCheck = function(){
+  const out = [];
+  const add = (muc, ok, chiTiet) => out.push({ muc, ket_qua: ok ? 'OK' : 'LOI', chi_tiet: chiTiet });
+  const info = (muc, chiTiet) => out.push({ muc, ket_qua: 'thong tin', chi_tiet: chiTiet });
+  try {
+    // 1) Khung KL: so trieu co khop voi %TB20 khong
+    const txt = (document.getElementById('dPxR')||{}).textContent || '';
+    const m = txt.replace(/\./g,'').match(/KL\s+([\d,]+)\s*tr\s*\((\d+)%\)/);
+    const rr = byT[curT] || {};
+    if (m && rr.v20) {
+      const kl = parseFloat(m[1].replace(',', '.'))*1e6, pctHien = +m[2];
+      const pctThat = kl/rr.v20*100;
+      const lech = Math.abs(pctThat - pctHien);
+      add('Khung KL vs %TB20', lech <= 4, `hien ${pctHien}% · tinh ra ${pctThat.toFixed(0)}% · lech ${lech.toFixed(0)} diem`);
+    } else add('Khung KL vs %TB20', true, 'khong doc duoc (bo qua)');
+    // 2) Gia trong khung vs close cay nen cuoi cua chart
+    if (curOhlc && curOhlc.c && curOhlc.c.length) {
+      const n = curOhlc.c.length, lv = liveVolOf(curT, curOhlc.t[n-1]);
+      const giaKhung = rr.p, giaNen = curOhlc.c[n-1];
+      if (lv != null && giaKhung != null) {
+        const l = Math.abs(giaKhung/giaNen - 1)*100;
+        info('Gia khung vs nen goc', `khung ${giaKhung} · mang goc ${giaNen} · lech ${l.toFixed(2)}% — CO CHU DICH: mang goc giu nguyen cho may tin hieu, nen ve tren chart da dong bo`);
+      }
+      // 3) Ngay cay nen cuoi vs ngay phien feed song
+      const d = new Date(curOhlc.t[n-1]*1000);
+      const ds = d.getUTCFullYear()+'-'+('0'+(d.getUTCMonth()+1)).slice(-2)+'-'+('0'+d.getUTCDate()).slice(-2);
+      info('Ngay nen vs ngay feed', `nen ${ds} · feed ${window.LIVE_DATE||'—'}` + (ds===window.LIVE_DATE?' — trung phien, dang dong bo':' — LECH phien, moi so tu dong quay ve nguon chart (an toan)'));
+    }
+    // 4) Do tuoi cua feed song
+    const bg = (document.getElementById('bgeData')||{}).textContent || '';
+    add('Nhan cap nhat', /Gia cap nhat luc|Giá cập nhật lúc/.test(bg), bg.slice(0,80) || 'chua co nhan');
+    // 5) %KL cua ca ro: co dong nao KL va vx choi nhau khong
+    let xau = 0, tong = 0;
+    ROWS().forEach(r => { if (r.vx == null || !r.v20) return; tong++; if (!(r.vx >= 0 && r.vx < 60)) xau++; });
+    add('vx toan ro trong khoang hop ly', xau === 0, `${tong} ma co vx · ${xau} ma bat thuong`);
+  } catch(e){ add('Tu kiem', false, 'loi: ' + e.message); }
+  try { console.table(out); } catch(e){ console.log(out); }
+  return out;
+};
 function loadProChart(){
   if (!curT || !curOhlc || proLoadedFor === curT) return;
   const init = () => {
@@ -2187,7 +2231,7 @@ $('#btnRefresh').onclick = async function(){
   } catch(_) {}
   maybeAutoPublish();
 })();
-setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar(); } maybeAutoPublish(); }, 120000);
+setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar(); try { if (!window.__dHov) updateDPx(null); } catch(e){} } maybeAutoPublish(); }, 120000);
 
 // ================= 9. BAI VIET (tab tin & phan tich — doc ngay trong trang) =================
 (function addNewsTab(){
