@@ -4,7 +4,7 @@
 // ================= DỮ LIỆU & TIỆN ÍCH =================
 let SUM = window.SUMMARY;
 try { const ls = localStorage.getItem('summary_v1'); if (ls) { const p = JSON.parse(ls); if (p && p.rows && p.rows.length > 500) { if (!p.tpn && window.SUMMARY.tpn) p.tpn = window.SUMMARY.tpn; if (!p.rows.some(r=>r.watch) && window.SUMMARY.rows.some(r=>r.watch)) { const wm={}; window.SUMMARY.rows.forEach(r=>{ if(r.watch) wm[r.t]=r; }); p.rows.forEach(r=>{ const w=wm[r.t]; if(w){ r.watch=1; r.wrng=w.wrng; r.wdb=w.wdb; r.wgrade=w.wgrade; } }); } SUM = p; } } } catch(e){}
-const BO_CUNG = new Set(['DCL','VC3','SSB','KHG']);
+const BO_CUNG = new Set(['DCL','VC3','SSB','KHG','VPI']);
 SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t)) r.watch=0; });
 if(SUM.tpn&&SUM.tpn.recent) SUM.tpn.recent=SUM.tpn.recent.filter(x=>!BO_CUNG.has(x.t));
 const ROWS = () => SUM.rows;
@@ -872,7 +872,9 @@ function renderSigTab(){
     const d = new Date(m.time*1000);
     const ds = ('0'+d.getUTCDate()).slice(-2)+'/'+('0'+(d.getUTCMonth()+1)).slice(-2)+'/'+String(d.getUTCFullYear()).slice(2);
     if (m.position === 'belowBar') {
-      if (m.text === 'BUY') od = { bd: ds, bp: (ii!=null&&curOhlc)?curOhlc.c[ii]:null, add: false };
+      // BUY / BUY-sao / THIN deu la lenh THAT (computeTPN deu set inPos=true). Chi WEAK la khong vao lenh.
+      if (m.text === 'BUY' || m.text === 'BUY\u2605' || m.text === 'THIN')
+        od = { bd: ds, bp: (ii!=null&&curOhlc)?curOhlc.c[ii]:null, add: false, loai: m.text };
       else if (m.text === 'ADD' && od) od.add = true;
     } else if (od) { od.sd = ds; od.ret = m.text; deals.push(od); od = null; }
   });
@@ -880,7 +882,7 @@ function renderSigTab(){
   if (deals.length) {
     html += `<div style="font-weight:700;font-size:14.5px;margin:16px 0 4px">Lịch sử tín hiệu mã này <span class="hint">${deals.length} deal</span></div>
     <table style="font-size:12.5px"><tr><th style="text-align:left">Mua · giá</th><th>Bán</th><th>Kết quả</th></tr>` +
-      deals.slice().reverse().map(x => `<tr><td style="text-align:left"><b>${x.bd}</b> @${x.bp!=null?fmt(x.bp,2):'—'}${x.add?' <span class="chip g" style="font-size:10.5px">+Bồi</span>':''}</td>
+      deals.slice().reverse().map(x => `<tr><td style="text-align:left"><b>${x.bd}</b> @${x.bp!=null?fmt(x.bp,2):'—'}${x.loai==='BUY\u2605'?' <span class="chip g" style="font-size:10.5px">★</span>':(x.loai==='THIN'?' <span class="chip" style="font-size:10.5px;background:#fef6e7;color:#b45309">Nền mỏng</span>':'')}${x.add?' <span class="chip g" style="font-size:10.5px">+Bồi</span>':''}</td>
       <td>${x.sd}</td><td class="${x.ret==='đang mở'?'mut':((''+x.ret).indexOf('-')===0?'down':'up')}" style="font-weight:700">${x.ret}</td></tr>`).join('') + '</table>';
   } else {
     html += '<div class="mini" style="margin-top:14px">Hệ thống chưa từng có tín hiệu mua với mã này trong dữ liệu hiện có.</div>';
