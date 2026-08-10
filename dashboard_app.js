@@ -1969,7 +1969,8 @@ async function drawSec(){
     if (st) st.textContent = 'P/B hiện tại đã quy theo giá phiên mới nhất';
   }
   const D = secCache[secGrp];
-  const items = codes.filter(c => D[c] && D[c].pbLo!=null && isFinite(D[c].pbLo));
+  const items = codes.filter(c => D[c] && D[c].pbLo!=null && isFinite(D[c].pbLo))
+    .sort((a,b)=>((D[b].curRoe??-99)-(D[a].curRoe??-99)));   // xep theo ROE cao -> thap cho de doc
   if (secChart) secChart.destroy();
   const secLbl = { id:'secLbl', afterDatasetsDraw(chart){ const ctx = chart.ctx; const meta = chart.getDatasetMeta(0);
     meta.data.forEach((bar,i)=>{ const d = D[items[i]];
