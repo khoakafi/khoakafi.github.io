@@ -1927,7 +1927,7 @@ inits.compare = function(){
   drawSec();
 };
 // ===== DINH GIA THEO DONG (khoang P/B & ROE lich su, hien tai theo phien) =====
-const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB','TPB','VIB','MSB','OCB'], sec:['SSI','VND','VCI','HCM','MBS','VDS','BSI','SHS','VIX','FTS','ORS'] };
+const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB','TPB','VIB','MSB','OCB'], sec:['SSI','VND','VCI','HCM','MBS','VDS','BSI','SHS','VIX','FTS','ORS','TCX','VPX','VCK'] };
 let secCache = {}, secChart = null, secGrp = 'bank';
 async function drawSec(){
   const st = $('#secSt'); const codes = SEC_GROUPS[secGrp];
