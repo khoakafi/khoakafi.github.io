@@ -1921,7 +1921,7 @@ inits.compare = function(){
         <span class="mini" style="align-self:center"><span style="display:inline-block;width:10px;height:10px;background:#128A3E;border-radius:3px;vertical-align:-1px"></span> khoảng P/B &nbsp; <span style="display:inline-block;width:10px;height:10px;background:#67D98B;border-radius:3px;vertical-align:-1px"></span> P/B hiện tại &nbsp; <span style="display:inline-block;width:10px;height:10px;background:#D97706;border-radius:50%;vertical-align:-1px"></span> ROE hiện tại</span>
         <span class="mini" id="secSt" style="align-self:center"></span>
       </div>
-      <div style="height:calc(100vh - 335px);min-height:420px"><canvas id="cvSec"></canvas></div></div>`;
+      <div style="height:calc(100vh - 240px);min-height:420px"><canvas id="cvSec"></canvas></div></div>`;
     $('#secGrp').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; $$('#secGrp button').forEach(x=>x.classList.remove('on')); b.classList.add('on'); secGrp = b.dataset.g; drawSec(); });
   }
   drawSec();
