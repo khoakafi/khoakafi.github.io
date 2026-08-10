@@ -78,7 +78,7 @@ function bollS(c,n=20,k=2){ const ma=smaS(c,n); return c.map((_,i)=>{ if(ma[i]==
 // ================= ĐIỀU HƯỚNG =================
 const views = ['market','screener','watch','detail','compare','leader'];
 $$('.nav-link').forEach(b => b.onclick = () => showView(b.dataset.view));
-function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { $('#view-'+x).style.display = x===v?'':'none'; }); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view===v)); const fd=document.getElementById('footDisc'); if(fd) fd.style.display=(v==='screener'||v==='news')?'none':''; if(!skip) inits[v] && inits[v](); }
+function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { $('#view-'+x).style.display = x===v?'':'none'; }); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view===v)); const fd=document.getElementById('footDisc'); if(fd) fd.style.display=(v==='screener'||v==='news'||v==='compare'||v==='leader')?'none':''; if(!skip) inits[v] && inits[v](); }
 window.showView = showView;
 
 const inits = {};
@@ -1921,7 +1921,7 @@ inits.compare = function(){
         <span class="mini" style="align-self:center"><span style="display:inline-block;width:10px;height:10px;background:#128A3E;border-radius:3px;vertical-align:-1px"></span> khoảng P/B &nbsp; <span style="display:inline-block;width:10px;height:10px;background:#67D98B;border-radius:3px;vertical-align:-1px"></span> P/B hiện tại &nbsp; <span style="display:inline-block;width:10px;height:10px;background:#D97706;border-radius:50%;vertical-align:-1px"></span> ROE hiện tại</span>
         <span class="mini" id="secSt" style="align-self:center"></span>
       </div>
-      <div style="height:380px"><canvas id="cvSec"></canvas></div></div>`;
+      <div style="height:calc(100vh - 335px);min-height:420px"><canvas id="cvSec"></canvas></div></div>`;
     $('#secGrp').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; $$('#secGrp button').forEach(x=>x.classList.remove('on')); b.classList.add('on'); secGrp = b.dataset.g; drawSec(); });
   }
   drawSec();
