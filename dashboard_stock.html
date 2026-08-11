@@ -65,7 +65,7 @@ nav{display:flex;gap:4px;flex:1}
 .card h2 .hint{font-weight:500;font-size:12px;color:var(--muted);margin-left:6px}
 .grid{display:grid;gap:16px}
 .g2{grid-template-columns:1fr 1fr}
-.hero{display:grid;grid-template-columns:1fr 400px;gap:16px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:16px}
 .stats4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 @media(max-width:1000px){.g2,.hero,.stats4{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(3,1fr)}
 .topbar-in{flex-wrap:wrap;height:auto;padding:10px 12px;gap:10px}
