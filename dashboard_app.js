@@ -573,7 +573,6 @@ inits.market = async function(){
     <div class="card" style="margin-bottom:0;display:flex;flex-direction:column">
       <h2 style="text-align:center;letter-spacing:.02em">TOP TÍN HIỆU 6 THÁNG QUA</h2>
       <div style="flex:1;overflow:auto" id="recentWrap"></div>
-      <button class="btn-cta" style="width:100%;margin-top:12px" onclick="showView('screener')">KHÁM PHÁ BỘ LỌC 702 MÃ</button>
     </div>
   </div>
   <div style="height:16px"></div>
