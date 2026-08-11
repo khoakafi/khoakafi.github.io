@@ -1832,7 +1832,7 @@ function __finOpen(cid){
       '<div class="mtit">' + (tit ? tit.innerHTML : '') + '</div>'
       + '<div class="fhero">' + (hero ? hero.innerHTML : '') + '</div>';
     document.getElementById('finModalIns').innerHTML = ins ? ins.innerHTML : '';
-    document.getElementById('finModalFoot').textContent = 'Khoa Nguyen Invest \u00b7 khoakafi.github.io';
+    document.getElementById('finModalFoot').textContent = 'Khoa Nguyen Invest \u00b7 khoanguyeninvest.vn';
     __finBack = { box: box, parent: box.parentNode, next: box.nextSibling };
     __finCurId = cid;
     document.getElementById('finModalSlot').appendChild(box);
@@ -2273,7 +2273,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       +'#newsBody .cta{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 8px}'
       +'#newsBody .cta a{text-decoration:none;font-weight:700;font-size:15px;padding:11px 20px;border-radius:10px}'
       +'#newsBody .cta .p{background:#18a34b;color:#fff}#newsBody .cta .s{border:1.5px solid #18a34b;color:#128A3E}'
-      +'#newsBody .disc{display:none}#newsBody .cta a[href="https://khoakafi.github.io/"]{display:none}'
+      +'#newsBody .disc{display:none}#newsBody .cta a[href="https://khoakafi.github.io/"],#newsBody .cta a[href="https://khoanguyeninvest.vn/"]{display:none}'
       +'</style>';
     d.innerHTML = css
       + '<div class="card" style="padding:18px 20px" id="newsListCard">'
@@ -2300,7 +2300,7 @@ setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(
       if (r && r.style.display !== 'none' && location.pathname.indexOf('/bai-viet/') < 0){ window.__closeArt(true); }
     });
     window.__openArt = async function(url, slug){
-      try{ url = new URL(url, 'https://khoakafi.github.io/').href; }catch(e){}
+      try{ url = new URL(url, location.origin + '/').href; }catch(e){}
       try{ ga('view_article', {slug: slug}); }catch(e){}
       const el = document.getElementById('newsBody');
       el.innerHTML = '<div class="mini" style="padding:30px 0">\u0110ang t\u1ea3i b\u00e0i\u2026</div>';
