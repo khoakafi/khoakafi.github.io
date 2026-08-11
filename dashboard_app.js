@@ -166,8 +166,6 @@ try{ROWS().forEach(function(r){if(!r.watch)return;const s=document.getElementByI
     + '<a href="tel:0339136452" style="color:var(--green-dark);text-decoration:none">0339 136 452</a>'
     + '<span style="color:var(--border);font-weight:400;margin:0 8px">|</span>'
     + 'Giám đốc Tư vấn Đầu tư — Chứng khoán KAFI'
-    + '<span style="color:var(--border);font-weight:400;margin:0 8px">|</span>'
-    + '<a href="https://khoanguyeninvest.vn" style="color:var(--green-dark);text-decoration:none">khoanguyeninvest.vn</a>'
     + '</div>'
     + '<div id="footDisc" style="margin-top:7px;font-size:11px;font-style:italic">Số liệu hiệu suất từ mô phỏng lịch sử (backtest) đã gồm phí giao dịch; kết quả quá khứ không đảm bảo tương lai — thông tin chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>';
 })();
