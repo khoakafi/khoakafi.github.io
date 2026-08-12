@@ -1,0 +1,26 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Đặt token cho web</title><meta name="robots" content="noindex">
+<style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b1f2a;color:#dfe8ee;max-width:620px;margin:0 auto;padding:28px 18px;line-height:1.6}
+h1{font-size:19px;color:#4ade80}.box{background:#12303d;border:1px solid #1d4557;border-radius:12px;padding:16px 18px;margin:14px 0}
+input{width:100%;box-sizing:border-box;padding:10px;border-radius:8px;border:1px solid #2c5568;background:#0b1f2a;color:#dfe8ee;font-size:13px}
+button{background:#18a34b;color:#fff;border:0;border-radius:8px;padding:12px 22px;font-size:15px;font-weight:700;cursor:pointer;margin-top:10px}
+#log{white-space:pre-wrap;font-family:ui-monospace,monospace;font-size:12.5px;background:#081720;border-radius:8px;padding:12px;margin-top:12px}
+.g{color:#4ade80}.r{color:#f87171}.y{color:#fbbf24}</style></head><body>
+<h1>🔑 Đặt token cho web (chạy 1 lần)</h1>
+<div class="box">Dán vào đây <b>đúng token anh đã dùng ở file cài đặt</b> (token rộng, đọc được kho riêng tư). Trang này lưu token vào web và kiểm tra ngay xem đọc được công thức chưa.</div>
+<div class="box"><input id="tok" type="password" placeholder="github_pat_..."><br><button id="go">Lưu &amp; kiểm tra</button></div>
+<div id="log">Dán token rồi bấm nút.</div>
+<script>
+const Q=document.getElementById('tok'),LG=document.getElementById('log');
+const L=(m,c)=>{const s=document.createElement('div');if(c)s.className=c;s.textContent=m;LG.appendChild(s);};
+try{const s=localStorage.getItem('kafi_gh_token');if(s)Q.value=s;}catch(e){}
+document.getElementById('go').onclick=async()=>{
+  const t=Q.value.trim();if(!t){L('Chưa có token','r');return;}
+  LG.innerHTML='';
+  try{
+    const r=await fetch('https://api.github.com/repos/khoakafi/kafi-core/contents/engine.js?cb='+Date.now(),{headers:{Authorization:'token '+t,Accept:'application/vnd.github+json'}});
+    if(r.status===200){ localStorage.setItem('kafi_gh_token',t); L('✓ Token đọc được kho riêng tư. Đã lưu vào web.','g'); L('Xong! Đóng trang này, mở lại khoanguyeninvest.vn sau 14h45 là nó tự cập nhật.','g'); }
+    else if(r.status===404){ L('✗ Token này KHÔNG đọc được kho riêng tư (404). Anh dùng đúng token đã dán ở file cài đặt nhé.','r'); }
+    else { L('Trả về mã '+r.status+' — thử lại.','y'); }
+  }catch(e){ L('Lỗi: '+e.message,'r'); }
+};
+</script></body></html>
