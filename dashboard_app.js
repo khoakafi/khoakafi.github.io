@@ -3,7 +3,7 @@
 'use strict';
 // ================= DỮ LIỆU & TIỆN ÍCH =================
 let SUM = window.SUMMARY;
-try { const ls = localStorage.getItem('summary_v1'); if (ls) { const p = JSON.parse(ls); if (p && p.rows && p.rows.length > 500) { if (!p.tpn && window.SUMMARY.tpn) p.tpn = window.SUMMARY.tpn; if (!p.rows.some(r=>r.watch) && window.SUMMARY.rows.some(r=>r.watch)) { const wm={}; window.SUMMARY.rows.forEach(r=>{ if(r.watch) wm[r.t]=r; }); p.rows.forEach(r=>{ const w=wm[r.t]; if(w){ r.watch=1; r.wrng=w.wrng; r.wdb=w.wdb; r.wgrade=w.wgrade; } }); } SUM = p; } } } catch(e){}
+try { const ls = localStorage.getItem('summary_v1'); if (ls) { const p = JSON.parse(ls); if (p && p.rows && p.rows.length > 500 && (p.updated||'') > ((window.SUMMARY&&window.SUMMARY.updated)||'')) { if (!p.tpn && window.SUMMARY.tpn) p.tpn = window.SUMMARY.tpn; if (!p.rows.some(r=>r.watch) && window.SUMMARY.rows.some(r=>r.watch)) { const wm={}; window.SUMMARY.rows.forEach(r=>{ if(r.watch) wm[r.t]=r; }); p.rows.forEach(r=>{ const w=wm[r.t]; if(w){ r.watch=1; r.wrng=w.wrng; r.wdb=w.wdb; r.wgrade=w.wgrade; } }); } SUM = p; } } } catch(e){}
 const BO_CUNG = new Set(['DCL','VC3','SSB','KHG','VPI']);
 SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t)) r.watch=0; });
 if(SUM.tpn&&SUM.tpn.recent) SUM.tpn.recent=SUM.tpn.recent.filter(x=>!BO_CUNG.has(x.t));
