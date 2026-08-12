@@ -15,7 +15,7 @@
     }
     return 0;
   }
-  function sigsMs(){ try { var u = window.SIGS && window.SIGS.updated; if(!u) return 0; var t = Date.parse(u.replace(' ','T') + ':00+07:00'); return isNaN(t)?0:t; } catch(e){ return 0; } }
+  function sigsMs(){ try { var u = window.SIGS && window.SIGS.updated; if(!u) return 0; var t = Date.parse(u.replace(' ','T') + ':00Z'); return isNaN(t)?0:t; } catch(e){ return 0; } }
   var bEl=null;
   function badge(msg,color,done){ if(!bEl){ bEl=document.createElement('div'); bEl.style.cssText='position:fixed;bottom:14px;right:14px;z-index:99999;padding:8px 14px;border-radius:8px;font:12.5px/1.4 Inter,system-ui,sans-serif;color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.25);max-width:340px'; document.body.appendChild(bEl); } bEl.style.background=color; bEl.textContent=msg; if(done) setTimeout(function(){ if(bEl){bEl.remove();bEl=null;} },15000); }
   function b64enc(str){ var b=new TextEncoder().encode(str); var s=''; for(var i=0;i<b.length;i+=8192) s+=String.fromCharCode.apply(null,b.subarray(i,i+8192)); return btoa(s); }
