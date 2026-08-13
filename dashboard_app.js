@@ -1849,31 +1849,32 @@ let wSortK='val20', wSortD=-1;
 window.sortWatch = k => { if (wSortK===k) wSortD=-wSortD; else { wSortK=k; wSortD=(k==='t')?1:-1; } inits.watch(); };
 inits.watch = function(){
   const el = $('#view-watch');
-  const ws = ROWS().filter(r=>r.watch && r.wgrade!=='weak');
-  ws.forEach(r=>{
+  const all = ROWS().filter(r=>r.watch);
+  const enrich = r=>{
     r._kl  = (r.v20!=null && r.vx!=null) ? Math.round(r.v20*r.vx) : (r.v20!=null?r.v20:null);
     r._pkl = (r.vx!=null) ? r.vx*100 : null;
     const q = (r.q && r.q.length) ? r.q[r.q.length-1] : null;
     r._dtq = q ? (q[2]||0) : null;                 // doanh thu quy gan nhat (VND); bank = 0
     r._lnq = q ? (q[3]!=null?q[3]:null) : null;      // loi nhuan quy gan nhat (VND)
-  });
-  ws.sort((a,b)=>{
+    r._q = q;
+  };
+  all.forEach(enrich);
+  const sorter = (a,b)=>{
     if (wSortK==='val20' && wSortD===-1){ const sa=a.wstar?0:1, sb=b.wstar?0:1; if(sa!==sb) return sa-sb; }  // sao len truoc
     let x=a[wSortK], y=b[wSortK];
     if (typeof x==='string'||typeof y==='string'){ return wSortD*String(x||'').localeCompare(String(y||'')); }
     x=(x==null?-1e18:x); y=(y==null?-1e18:y); return wSortD*(x-y);
-  });
-  const H=(k,lb,left)=>`<th ${left?'style="text-align:left"':''}class="${wSortK===k?'on':''}" onclick="event.stopPropagation();sortWatch('${k}')">${lb}${wSortK===k?(wSortD>0?' ▲':' ▼'):''}</th>`;
+  };
+  const strong = all.filter(r=>r.wgrade!=='weak').sort(sorter);   // FA dat -> danh sach mua
+  const weak   = all.filter(r=>r.wgrade==='weak').sort(sorter);    // FA chua dat -> de rieng
+  const H =(k,lb,left)=>`<th ${left?'style="text-align:left"':''}class="${wSortK===k?'on':''}" onclick="event.stopPropagation();sortWatch('${k}')">${lb}${wSortK===k?(wSortD>0?' ▲':' ▼'):''}</th>`;
+  const HP=(lb,left)=>`<th ${left?'style="text-align:left"':''}>${lb}</th>`;
   let lab=''; const up=(SUM.updated||'').slice(0,10);
   if(up){const dt=new Date(up+'T12:00:00');const wd=dt.getDay();dt.setDate(dt.getDate()+(wd===5?3:(wd===6?2:1)));lab=('0'+dt.getDate()).slice(-2)+'/'+('0'+(dt.getMonth()+1)).slice(-2);}
   const tyd = v => (v==null) ? '—' : (v===0 ? '—' : fmt(v/1e9, Math.abs(v)>=1e10?0:1));   // ve ty dong
-  el.innerHTML = `<div class="card">
-    <h2 style="margin-bottom:3px">Watchlist ${lab}</h2>
-    <div class="mini" style="margin-bottom:10px">Danh sách canh mua phiên tới · ${ws.length} mã · cập nhật ${(SUM.updated||'')}. Mã có <span style="color:#B45309">★</span> là nền siết chặt (lò xo nén mạnh) — bấm tiêu đề cột để sắp xếp.</div>
-    <div style="overflow:auto"><table><tr>${H('t','Mã',1)}${H('p','Giá')}${H('chg','% giá')}${H('_kl','Khối lượng')}${H('_pkl','% KL')}${H('val20','GTGD TB20 (tỷ)')}${H('_lnq','LN quý (tỷ)')}${H('_dtq','DT quý (tỷ)')}</tr>
-    ${ws.map(r=>{
-      const q=(r.q&&r.q.length)?r.q[r.q.length-1]:null; const qlab=q?('Q'+q[1]+'/'+q[0]):'';
-      return `<tr class="row" data-t="${r.t}" onclick="openDetail('${r.t}')">
+  const rowHtml = r=>{
+    const qlab=r._q?('Q'+r._q[1]+'/'+r._q[0]):'';
+    return `<tr class="row" data-t="${r.t}" onclick="openDetail('${r.t}')">
       <td style="text-align:left"><b>${r.t}</b>${r.wstar?' <span style="color:#B45309" title="Nền siết chặt">★</span>':''}</td>
       <td>${fmt(r.p,2)}</td>
       <td id="lv_${r.t}" class="${cls(r.chg)}">${pct(r.chg)}</td>
@@ -1881,9 +1882,23 @@ inits.watch = function(){
       <td class="${r._pkl!=null&&r._pkl>=100?'up':'mut'}">${r._pkl==null?'—':fmt(r._pkl,0)+'%'}</td>
       <td>${fmt((r.val20||0)/1000,1)}</td>
       <td class="${cls(r._lnq)}" title="${qlab}">${tyd(r._lnq)}</td>
-      <td title="${qlab}">${tyd(r._dtq)}</td></tr>`;}).join('')}
-    </table></div>${ws.length?'':'<div class="mini" style="padding:14px">Chưa có mã nào trong watchlist — cập nhật cuối phiên để quét lại.</div>'}
-    <div class="mini" style="margin-top:9px;color:#7A828E">LN/DT quý = quý gần nhất đã công bố (ngân hàng không có cột doanh thu → ghi —). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div></div>`;
+      <td title="${qlab}">${tyd(r._dtq)}</td></tr>`;
+  };
+  const headRow = sortable => sortable
+    ? `<tr>${H('t','Mã',1)}${H('p','Giá')}${H('chg','% giá')}${H('_kl','Khối lượng')}${H('_pkl','% KL')}${H('val20','GTGD TB20 (tỷ)')}${H('_lnq','LN quý (tỷ)')}${H('_dtq','DT quý (tỷ)')}</tr>`
+    : `<tr>${HP('Mã',1)}${HP('Giá')}${HP('% giá')}${HP('Khối lượng')}${HP('% KL')}${HP('GTGD TB20 (tỷ)')}${HP('LN quý (tỷ)')}${HP('DT quý (tỷ)')}</tr>`;
+  const tableHtml = (list, sortable)=>`<div style="overflow:auto"><table>${headRow(sortable)}${list.map(rowHtml).join('')}</table></div>`;
+  el.innerHTML = `<div class="card">
+    <h2 style="margin-bottom:3px">Watchlist ${lab}</h2>
+    <div class="mini" style="margin-bottom:10px">Danh sách canh mua phiên tới — đã lọc cơ bản (FA đạt) · ${strong.length} mã · cập nhật ${(SUM.updated||'')}. Mã có <span style="color:#B45309">★</span> là nền siết chặt — bấm tiêu đề cột để sắp xếp.</div>
+    ${strong.length?tableHtml(strong,true):'<div class="mini" style="padding:8px 0">Chưa có mã đạt chuẩn cơ bản — cập nhật cuối phiên để quét lại.</div>'}
+    <div class="mini" style="margin-top:9px;color:#7A828E">LN/DT quý = quý gần nhất đã công bố (ngân hàng không có cột doanh thu → ghi —). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div>
+  </div>
+  ${weak.length?`<div class="card" style="border-top:3px solid #F0B429">
+    <h2 style="margin-bottom:3px;color:#B45309">Chưa đạt về cơ bản (FA) <span class="hint" style="color:#B45309">· ${weak.length} mã · để riêng, không vào danh sách mua</span></h2>
+    <div class="mini" style="margin-bottom:10px">Đã đạt nền kỹ thuật nhưng tăng trưởng lợi nhuận quý gần nhất rơi vùng 0–25% (chưa tăng tốc) — theo bộ lọc FA thì tách riêng để theo dõi, chưa phải mã mua.</div>
+    ${tableHtml(weak,false)}
+  </div>`:''}`;
 };
 
 // ===== TRỰC CHIẾN TRONG PHIÊN: poll giá realtime các mã vùng theo dõi, báo khi bùng nổ =====
