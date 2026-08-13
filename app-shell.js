@@ -43,30 +43,29 @@
     { v:'screener', label:'Bộ lọc',    icon:IC.screener },
     { v:'news',     label:'Bài viết',  icon:IC.news   }
   ];
-  // nhieu view co the thuoc cung 1 tab (Bo loc gom screener + leader + so sanh)
   var VIEW2TAB = { watch:0, detail:1, market:2, screener:3, leader:3, compare:3, news:4 };
 
   /* ---------- 4. CSS ---------- */
   var css = document.createElement('style'); css.id = 'knAppCss';
   css.textContent =
-    // an thanh nav chu tren cung + CTA -> thay bang tab day
     '.kn-app .topbar-in nav{display:none!important}'
   + '.kn-app #btnOpenKafi{display:none!important}'
   + '.kn-app .topbar-in{height:auto;padding:9px 13px;gap:11px}'
   + '.kn-app .searchbox{flex:1}'
-  // footer ghim (#nameBar) -> tro ve luong thuong de khong dam vao tab day
   + '.kn-app #nameBar{position:static!important;box-shadow:none!important;border-top:1px solid #E8EAEF}'
-  // chua bi tab day che
-  + '.kn-app .wrap{padding-bottom:14px}'
+  + '.kn-app .wrap{padding:8px 0 14px 0}'
+  + '.kn-app .card{border-radius:0;border-left:0;border-right:0;box-shadow:none;margin:0 0 8px 0;padding:14px 13px}'
+  + '.kn-app .card h2{font-size:16px}'
+  + '.kn-app table{font-size:13px}'
+  + '.kn-app th,.kn-app td{padding:10px 8px}'
+  + '.kn-app #view-watch table th:first-child,.kn-app #view-watch table td:first-child{position:sticky;left:0;background:#fff;z-index:3;box-shadow:1px 0 0 #EDEFF2}'
   + '.kn-app body,body.kn-app{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))!important}'
-  // thanh tab day
   + '#knTabbar{position:fixed;left:0;right:0;bottom:0;z-index:9000;'
   +   'background:transparent;pointer-events:none;'
   +   'display:grid;grid-template-columns:repeat(5,1fr);'
   +   'padding-top:26px;'
   +   'padding-bottom:calc(8px + env(safe-area-inset-bottom,0px));'
   +   'font-family:Inter,system-ui,-apple-system,sans-serif}'
-  // dai trang chi phu phan duoi -> vong tron o giua nam gon trong khung, khong bi cat
   + '#knTabbar::before{content:"";position:absolute;left:0;right:0;top:26px;bottom:0;'
   +   'background:#fff;border-top:1px solid #E8EAEF;box-shadow:0 -6px 20px rgba(20,26,40,.06)}'
   + '#knTabbar .knTab{position:relative;pointer-events:auto;background:none;border:0;cursor:pointer;'
@@ -75,7 +74,6 @@
   +   'line-height:1;-webkit-tap-highlight-color:transparent;transition:color .15s}'
   + '#knTabbar .knTab svg{display:block}'
   + '#knTabbar .knTab.active{color:#128A3E}'
-  // tab giua noi bat: vong tron xanh navi len
   + '#knTabbar .knTab.center{justify-content:flex-end}'
   + '#knTabbar .knTab.center .knBadge{position:absolute;top:-20px;left:50%;transform:translateX(-50%);'
   +   'width:52px;height:52px;border-radius:50%;background:#222634;color:#fff;'
@@ -86,7 +84,6 @@
   + '#knTabbar .knTab.center.active{color:#128A3E}';
   document.head.appendChild(css);
 
-  /* ---------- 5. Dung thanh tab ---------- */
   function build(){
     if (document.getElementById('knTabbar')) return;
     var bar = document.createElement('nav');
@@ -117,15 +114,11 @@
   }
 
   function go(view){
-    try {
-      if (typeof window.showView === 'function') window.showView(view);
-    } catch(e){}
+    try { if (typeof window.showView === 'function') window.showView(view); } catch(e){}
     setActive(view);
     try { window.scrollTo({top:0, behavior:'smooth'}); } catch(e){ window.scrollTo(0,0); }
   }
 
-  /* ---------- 6. Dong bo tab active khi dieu huong tu noi khac ----------
-     (bam vao ma o leaderboard / o tim kiem -> showView('detail')...)      */
   function hook(){
     if (typeof window.showView !== 'function'){ setTimeout(hook, 120); return; }
     if (window.__knHooked) return; window.__knHooked = true;
@@ -137,11 +130,9 @@
     };
   }
 
-  /* ---------- 7. Khoi tao ---------- */
   onReady(function(){
     build();
     hook();
-    // xac dinh view dang hien de to sang tab dung ngay tu dau
     var cur = 'market';
     ['watch','detail','market','screener','leader','compare','news'].forEach(function(v){
       var el = document.getElementById('view-'+v);
