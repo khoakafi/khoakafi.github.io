@@ -1868,12 +1868,8 @@ inits.watch = function(){
   if(up){const dt=new Date(up+'T12:00:00');const wd=dt.getDay();dt.setDate(dt.getDate()+(wd===5?3:(wd===6?2:1)));lab=('0'+dt.getDate()).slice(-2)+'/'+('0'+(dt.getMonth()+1)).slice(-2);}
   const tyd = v => (v==null) ? '—' : (v===0 ? '—' : fmt(v/1e9, Math.abs(v)>=1e10?0:1));   // ve ty dong
   el.innerHTML = `<div class="card">
-    <h2>Watchlist ${lab} <span class="hint">danh sách canh mua phiên tới · ${ws.length} mã · cập nhật ${(SUM.updated||'')}</span></h2>
-    <div class="mini" style="margin-bottom:10px">Các mã đã đạt chuẩn nền tích lũy + dòng tiền tính đến hết phiên gần nhất — để canh mã bùng nổ trong phiên tới. Mã có <span style="color:#B45309">★</span> là nền siết chặt (lò xo nén mạnh). Bấm tiêu đề cột để sắp xếp.</div>
-    <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap">
-      <button class="btn" id="btnLive">Bật trực chiến trong phiên</button>
-      <span class="mini" id="liveSt"></span>
-    </div>
+    <h2 style="margin-bottom:3px">Watchlist ${lab}</h2>
+    <div class="mini" style="margin-bottom:10px">Danh sách canh mua phiên tới · ${ws.length} mã · cập nhật ${(SUM.updated||'')}. Mã có <span style="color:#B45309">★</span> là nền siết chặt (lò xo nén mạnh) — bấm tiêu đề cột để sắp xếp.</div>
     <div style="overflow:auto"><table><tr>${H('t','Mã',1)}${H('p','Giá')}${H('chg','% giá')}${H('_kl','Khối lượng')}${H('_pkl','% KL')}${H('val20','GTGD TB20 (tỷ)')}${H('_lnq','LN quý (tỷ)')}${H('_dtq','DT quý (tỷ)')}</tr>
     ${ws.map(r=>{
       const q=(r.q&&r.q.length)?r.q[r.q.length-1]:null; const qlab=q?('Q'+q[1]+'/'+q[0]):'';
@@ -1888,9 +1884,6 @@ inits.watch = function(){
       <td title="${qlab}">${tyd(r._dtq)}</td></tr>`;}).join('')}
     </table></div>${ws.length?'':'<div class="mini" style="padding:14px">Chưa có mã nào trong watchlist — cập nhật cuối phiên để quét lại.</div>'}
     <div class="mini" style="margin-top:9px;color:#7A828E">LN/DT quý = quý gần nhất đã công bố (ngân hàng không có cột doanh thu → ghi —). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div></div>`;
-  $('#btnLive').onclick = () => liveWatch.toggle(ws);
-  liveWatch.paint();
-  if (liveWatch.timer) liveWatch.applyFilter();
 };
 
 // ===== TRỰC CHIẾN TRONG PHIÊN: poll giá realtime các mã vùng theo dõi, báo khi bùng nổ =====
