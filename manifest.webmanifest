@@ -1,0 +1,17 @@
+{
+  "name": "Khoa Nguyen Invest",
+  "short_name": "KN Invest",
+  "description": "Hệ thống tín hiệu Khoa Nguyen — Trend Following. Watchlist, tín hiệu mua/bán, hiệu suất công khai.",
+  "start_url": "/?src=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#222634",
+  "lang": "vi",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
