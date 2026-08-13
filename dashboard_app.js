@@ -1845,39 +1845,54 @@ async function renderCmp(){
 
 // ================= CẬP NHẬT DỮ LIỆU (client-side) =================
 // ================= TAB THEO DÕI (quét cuối phiên — canh phiên bùng nổ) =================
-let wSortK='wrng', wSortD=1;
-window.sortWatch = k => { if (wSortK===k) wSortD=-wSortD; else { wSortK=k; wSortD=(k==='t'||k==='n'||k==='b'||k==='wrng')?1:-1; } inits.watch(); };
+let wSortK='val20', wSortD=-1;
+window.sortWatch = k => { if (wSortK===k) wSortD=-wSortD; else { wSortK=k; wSortD=(k==='t')?1:-1; } inits.watch(); };
 inits.watch = function(){
   const el = $('#view-watch');
-  const ws = ROWS().filter(r=>r.watch).sort((a,b)=>{
+  const ws = ROWS().filter(r=>r.watch);
+  ws.forEach(r=>{
+    r._kl  = (r.v20!=null && r.vx!=null) ? Math.round(r.v20*r.vx) : (r.v20!=null?r.v20:null);
+    r._pkl = (r.vx!=null) ? r.vx*100 : null;
+    const q = (r.q && r.q.length) ? r.q[r.q.length-1] : null;
+    r._dtq = q ? (q[2]||0) : null;                 // doanh thu quy gan nhat (VND); bank = 0
+    r._lnq = q ? (q[3]!=null?q[3]:null) : null;      // loi nhuan quy gan nhat (VND)
+  });
+  ws.sort((a,b)=>{
+    if (wSortK==='val20' && wSortD===-1){ const sa=a.wstar?0:1, sb=b.wstar?0:1; if(sa!==sb) return sa-sb; }  // sao len truoc
     let x=a[wSortK], y=b[wSortK];
-    if (wSortK==='wgrade'){ x=a.wgrade==='weak'?0:1; y=b.wgrade==='weak'?0:1; }
     if (typeof x==='string'||typeof y==='string'){ return wSortD*String(x||'').localeCompare(String(y||'')); }
     x=(x==null?-1e18:x); y=(y==null?-1e18:y); return wSortD*(x-y);
   });
   const H=(k,lb,left)=>`<th ${left?'style="text-align:left"':''}class="${wSortK===k?'on':''}" onclick="event.stopPropagation();sortWatch('${k}')">${lb}${wSortK===k?(wSortD>0?' ▲':' ▼'):''}</th>`;
+  let lab=''; const up=(SUM.updated||'').slice(0,10);
+  if(up){const dt=new Date(up+'T12:00:00');const wd=dt.getDay();dt.setDate(dt.getDate()+(wd===5?3:(wd===6?2:1)));lab=('0'+dt.getDate()).slice(-2)+'/'+('0'+(dt.getMonth()+1)).slice(-2);}
+  const tyd = v => (v==null) ? '—' : (v===0 ? '—' : fmt(v/1e9, Math.abs(v)>=1e10?0:1));   // ve ty dong
   el.innerHTML = `<div class="card">
-    <h2>Vùng theo dõi — canh phiên bùng nổ <span class="hint">quét cuối phiên · ${ws.length} mã đạt chuẩn nền · ${(SUM.updated||'')}</span></h2>
-    <div class="mini" style="margin-bottom:10px">Danh sách mã đã đạt chuẩn tích lũy + dòng tiền của Khoa Nguyen Signal tính đến hết phiên gần nhất. Sáng mai chỉ cần tập trung các mã này: mã nào bùng nổ đạt chuẩn trong phiên là tín hiệu MUA được kích hoạt. Độ nén càng thấp — lò xo càng chặt. Bấm tiêu đề cột để sắp xếp.</div>
+    <h2>Watchlist ${lab} <span class="hint">danh sách canh mua phiên tới · ${ws.length} mã · cập nhật ${(SUM.updated||'')}</span></h2>
+    <div class="mini" style="margin-bottom:10px">Các mã đã đạt chuẩn nền tích lũy + dòng tiền tính đến hết phiên gần nhất — để canh mã bùng nổ trong phiên tới. Mã có <span style="color:#B45309">★</span> là nền siết chặt (lò xo nén mạnh). Bấm tiêu đề cột để sắp xếp.</div>
     <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap">
       <button class="btn" id="btnLive">Bật trực chiến trong phiên</button>
       <span class="mini" id="liveSt"></span>
     </div>
-    <div style="overflow:auto"><table><tr>${H('t','Mã')}${H('n','Tên',1)}${H('b','Sàn')}${H('p','Giá')}${H('_lv','Trong phiên')}${H('val20','GTGD TB20 (tỷ)')}${H('wrng','Độ nén nền')}${H('wdb','Cách đỉnh nền')}${H('rs','RS')}${H('wgrade','Hạng AI')}</tr>
-    ${ws.map(r=>{ const lv=r._lv, vv=r._lvv||0;
-      const lvtxt = lv!=null ? ((lv>=0?'+':'')+lv.toFixed(1)+'%'+(vv>=1.5?' · KL x'+vv.toFixed(1):'')) : '—';
-      const lvcls = lv!=null ? (lv>=3?'up':(lv<=-2?'down':'mut')) : 'mut';
-      return `<tr class="row" onclick="openDetail('${r.t}')">
-      <td><b>${r.t}</b></td><td style="text-align:left" class="mini">${r.n||''}</td><td>${r.b==='HO'?'HOSE':'HNX'}</td>
-      <td>${fmt(r.p,2)}</td><td id="lv_${r.t}" class="${lvcls}">${lvtxt}</td><td>${fmt((r.val20||0)/1000,0)}</td>
-      <td><span class="chip ${r.wrng<=8?'g':'a'}">${r.wrng}%</span></td>
-      <td class="${cls(r.wdb)}">${pct(r.wdb)}</td><td>${r.rs??'—'}</td>
-      <td><span class="chip ${r.wgrade==='weak'?'a':'g'}">${r.wgrade==='weak'?'Yếu':'Mạnh'}</span></td></tr>`;}).join('')}
-    </table></div>${ws.length?'':'<div class="mini" style="padding:14px">Chưa có mã nào đạt chuẩn nền — bấm "Cập nhật dữ liệu" để quét lại cuối phiên.</div>'}</div>`;
+    <div style="overflow:auto"><table><tr>${H('t','Mã',1)}${H('p','Giá')}${H('chg','% giá')}${H('_kl','Khối lượng')}${H('_pkl','% KL')}${H('val20','GTGD TB20 (tỷ)')}${H('_lnq','LN quý (tỷ)')}${H('_dtq','DT quý (tỷ)')}</tr>
+    ${ws.map(r=>{
+      const q=(r.q&&r.q.length)?r.q[r.q.length-1]:null; const qlab=q?('Q'+q[1]+'/'+q[0]):'';
+      return `<tr class="row" data-t="${r.t}" onclick="openDetail('${r.t}')">
+      <td style="text-align:left"><b>${r.t}</b>${r.wstar?' <span style="color:#B45309" title="Nền siết chặt">★</span>':''}</td>
+      <td>${fmt(r.p,2)}</td>
+      <td id="lv_${r.t}" class="${cls(r.chg)}">${pct(r.chg)}</td>
+      <td>${fmt(r._kl,0)}</td>
+      <td class="${r._pkl!=null&&r._pkl>=100?'up':'mut'}">${r._pkl==null?'—':fmt(r._pkl,0)+'%'}</td>
+      <td>${fmt((r.val20||0)/1000,1)}</td>
+      <td class="${cls(r._lnq)}" title="${qlab}">${tyd(r._lnq)}</td>
+      <td title="${qlab}">${tyd(r._dtq)}</td></tr>`;}).join('')}
+    </table></div>${ws.length?'':'<div class="mini" style="padding:14px">Chưa có mã nào trong watchlist — cập nhật cuối phiên để quét lại.</div>'}
+    <div class="mini" style="margin-top:9px;color:#7A828E">LN/DT quý = quý gần nhất đã công bố (ngân hàng không có cột doanh thu → ghi —). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div></div>`;
   $('#btnLive').onclick = () => liveWatch.toggle(ws);
   liveWatch.paint();
   if (liveWatch.timer) liveWatch.applyFilter();
 };
+
 // ===== TRỰC CHIẾN TRONG PHIÊN: poll giá realtime các mã vùng theo dõi, báo khi bùng nổ =====
 const liveWatch = {
   timer: null, list: [],
@@ -1908,7 +1923,7 @@ const liveWatch = {
     if (!this.timer) return 0;
     let shown = 0;
     document.querySelectorAll('#view-watch tr.row').forEach(tr=>{
-      const t = (tr.cells[0] ? tr.cells[0].textContent : '').trim();
+      const t = (tr.dataset && tr.dataset.t) ? tr.dataset.t : (tr.cells[0] ? tr.cells[0].textContent.trim() : '');
       const r = byT[t]; const on = r && r._lv != null && r._lv >= 2;
       tr.style.display = on ? '' : 'none'; if (on) shown++;
     });
