@@ -61,12 +61,15 @@
   + '.kn-app body,body.kn-app{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))!important}'
   // thanh tab day
   + '#knTabbar{position:fixed;left:0;right:0;bottom:0;z-index:9000;'
-  +   'background:#fff;border-top:1px solid #E8EAEF;'
-  +   'box-shadow:0 -6px 20px rgba(20,26,40,.06);'
+  +   'background:transparent;pointer-events:none;'
   +   'display:grid;grid-template-columns:repeat(5,1fr);'
+  +   'padding-top:26px;'
   +   'padding-bottom:calc(8px + env(safe-area-inset-bottom,0px));'
   +   'font-family:Inter,system-ui,-apple-system,sans-serif}'
-  + '#knTabbar .knTab{position:relative;background:none;border:0;cursor:pointer;'
+  // dai trang chi phu phan duoi -> vong tron o giua nam gon trong khung, khong bi cat
+  + '#knTabbar::before{content:"";position:absolute;left:0;right:0;top:26px;bottom:0;'
+  +   'background:#fff;border-top:1px solid #E8EAEF;box-shadow:0 -6px 20px rgba(20,26,40,.06)}'
+  + '#knTabbar .knTab{position:relative;pointer-events:auto;background:none;border:0;cursor:pointer;'
   +   'display:flex;flex-direction:column;align-items:center;justify-content:flex-end;'
   +   'gap:3px;padding:8px 2px 7px;color:#8A919E;font-size:10.5px;font-weight:600;'
   +   'line-height:1;-webkit-tap-highlight-color:transparent;transition:color .15s}'
