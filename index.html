@@ -5,7 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Khoa Nguyen Invest — Trend Following</title>
   <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png?v=6">
-  <link rel="apple-touch-icon" href="/logo.png?v=1">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#222634">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Khoa Nguyen Invest">
 <meta property="og:title" content="Khoa Nguyen Invest — Trend Following">
 <meta property="og:description" content="Hệ thống tín hiệu đầu tư theo xu hướng thị trường chứng khoán Việt Nam — Khoa Nguyen Signal.">
 <meta property="og:url" content="https://khoanguyeninvest.vn/">
@@ -209,6 +215,7 @@ body{padding-bottom:56px}
 <script src="signals_data.js"></script>
 <script src="dashboard_app.js?v=20260812d"></script>
 <script src="autorun.js?v=20260812a"></script>
+<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script>
 </body>
 </html>
 
