@@ -1849,7 +1849,7 @@ let wSortK='val20', wSortD=-1;
 window.sortWatch = k => { if (wSortK===k) wSortD=-wSortD; else { wSortK=k; wSortD=(k==='t')?1:-1; } inits.watch(); };
 inits.watch = function(){
   const el = $('#view-watch');
-  const ws = ROWS().filter(r=>r.watch);
+  const ws = ROWS().filter(r=>r.watch && r.wgrade!=='weak');
   ws.forEach(r=>{
     r._kl  = (r.v20!=null && r.vx!=null) ? Math.round(r.v20*r.vx) : (r.v20!=null?r.v20:null);
     r._pkl = (r.vx!=null) ? r.vx*100 : null;
