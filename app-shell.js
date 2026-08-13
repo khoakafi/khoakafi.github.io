@@ -58,13 +58,13 @@
   + '.kn-app #nameBar{position:static!important;box-shadow:none!important;border-top:1px solid #E8EAEF}'
   // chua bi tab day che
   + '.kn-app .wrap{padding-bottom:14px}'
-  + '.kn-app body,body.kn-app{padding-bottom:calc(66px + env(safe-area-inset-bottom,0px))!important}'
+  + '.kn-app body,body.kn-app{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))!important}'
   // thanh tab day
   + '#knTabbar{position:fixed;left:0;right:0;bottom:0;z-index:9000;'
   +   'background:#fff;border-top:1px solid #E8EAEF;'
   +   'box-shadow:0 -6px 20px rgba(20,26,40,.06);'
   +   'display:grid;grid-template-columns:repeat(5,1fr);'
-  +   'padding-bottom:env(safe-area-inset-bottom,0px);'
+  +   'padding-bottom:calc(8px + env(safe-area-inset-bottom,0px));'
   +   'font-family:Inter,system-ui,-apple-system,sans-serif}'
   + '#knTabbar .knTab{position:relative;background:none;border:0;cursor:pointer;'
   +   'display:flex;flex-direction:column;align-items:center;justify-content:flex-end;'
