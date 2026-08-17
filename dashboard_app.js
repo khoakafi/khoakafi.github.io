@@ -1005,7 +1005,19 @@ window.kafiSelfCheck = function(){
   return out;
 };
 function loadProChart(){
-  if (!curT || !curOhlc || proLoadedFor === curT) return;
+  if (!curT || !curOhlc) return;
+  if (proLoadedFor === curT) {
+    // Chart co the da duoc dung luc khung con AN -> canvas ket o 300x150 -> nhin thay trang tron.
+    // Kiem tra thuc te: canvas phai rong gan bang khung; neu khong thi dung lai tu dau.
+    let oK = false;
+    try {
+      const el = document.getElementById('proK');
+      const cv = el && el.querySelector('canvas');
+      oK = !!(el && cv && el.clientWidth > 0 && cv.width >= el.clientWidth * 0.5);
+    } catch(e){}
+    if (oK) return;
+    proLoadedFor = null;
+  }
   const init = () => {
     proLoadedFor = curT;
     const wrap = document.getElementById('chartProWrap');
@@ -1997,7 +2009,18 @@ try { const _b = document.getElementById('btnRefresh'); if (_b) _b.style.display
 (async () => { try { await liveQuote(); mergeLiveDeals(); scanNewSignals(); checkWatchAlerts(); } catch(e){} inits.market(); ensureNotifBanner(); ensureFreshBanner(); retroScanSignals();
   maybeAutoPublish();
 })();
-setInterval(async () => { if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar(); try { if (!window.__dHov) updateDPx(null); } catch(e){} } maybeAutoPublish(); }, 120000);
+// Nhip lam moi gia: 30 giay trong gio giao dich (nhanh, sat thi truong), 120 giay ngoai gio (do ton).
+(function nhipGia(){
+  let trongPhien = false;
+  try { trongPhien = liveWatch.inSession(); } catch(e){}
+  setTimeout(async () => {
+    try {
+      if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar(); try { if (!window.__dHov) updateDPx(null); } catch(e){} }
+      maybeAutoPublish();
+    } catch(e){}
+    nhipGia();
+  }, trongPhien ? 30000 : 120000);
+})();
 
 // ================= 9. BAI VIET (tab tin & phan tich — doc ngay trong trang) =================
 (function addNewsTab(){
