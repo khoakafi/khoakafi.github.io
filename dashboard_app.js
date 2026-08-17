@@ -2009,17 +2009,30 @@ try { const _b = document.getElementById('btnRefresh'); if (_b) _b.style.display
 (async () => { try { await liveQuote(); mergeLiveDeals(); scanNewSignals(); checkWatchAlerts(); } catch(e){} inits.market(); ensureNotifBanner(); ensureFreshBanner(); retroScanSignals();
   maybeAutoPublish();
 })();
-// Nhip lam moi gia: 30 giay trong gio giao dich (nhanh, sat thi truong), 120 giay ngoai gio (do ton).
+// Nhip lam moi gia: 15 giay trong gio giao dich, 120 giay ngoai gio.
+// Co TU LUI: hong 3 lan lien tiep -> gian nhip (15->30->60->120s); goi lai duoc -> tu ve 15s.
+window.__nhipPhat = 0;      // 0 = dung nhip chuan
+window.__loiLienTiep = 0;
 (function nhipGia(){
   let trongPhien = false;
   try { trongPhien = liveWatch.inSession(); } catch(e){}
+  const chuKyChuan = trongPhien ? 15000 : 120000;
+  const chuKy = Math.max(chuKyChuan, window.__nhipPhat || 0);
   setTimeout(async () => {
     try {
-      if (await liveQuote()) { renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar(); try { if (!window.__dHov) updateDPx(null); } catch(e){} }
+      const oK = await liveQuote();
+      if (oK) {
+        window.__loiLienTiep = 0; window.__nhipPhat = 0;
+        renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar();
+        try { if (!window.__dHov) updateDPx(null); } catch(e){}
+      } else {
+        window.__loiLienTiep++;
+        if (window.__loiLienTiep >= 3) window.__nhipPhat = Math.min(120000, (window.__nhipPhat || 15000) * 2);
+      }
       maybeAutoPublish();
     } catch(e){}
     nhipGia();
-  }, trongPhien ? 30000 : 120000);
+  }, chuKy);
 })();
 
 // ================= 9. BAI VIET (tab tin & phan tich — doc ngay trong trang) =================
