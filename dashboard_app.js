@@ -860,6 +860,34 @@ async function loadRecs(){
   } catch(e){ box.innerHTML = '<div class="mini">Không tải được dữ liệu khuyến nghị.</div>'; }
 }
 let proLoadedFor = null, proChart = null, useLog = false;
+// Dung lai toan bo mui tren chart = tin hieu DA CHOT + tin hieu DANG DAT TRONG PHIEN.
+// Trong phien: gia >= nguong gia va volume >= nguong volume (bep da phat hanh trong SIGS.trig)
+// -> ve mui tren; neu gia tut xuong duoi nguong thi mui tu bien mat o lan ve ke tiep.
+window.__rebuildBadges = function(){
+  if (!curOhlc || !curOhlc.t) { window._kafiBadges = []; return; }
+  const tix = {}; curOhlc.t.forEach((tt,i)=>{ tix[tt]=i; });
+  const out = (curMarkers||[]).map(m => {
+    const i = tix[m.time]; if (i == null) return null;
+    const isBuy = m.position === 'belowBar';
+    const lbl = isBuy ? (m.text === 'ADD' ? '\u25B2 Add' : (m.text === 'WEAK' ? '\u25B2 Weak' : (m.text === 'THIN' ? '\u25B2 B!' : (m.text === 'BUY\u2605' ? '\u25B2 B\u2605' : '\u25B2 B')))) : '\u25BC S ' + m.text;
+    return { i: i, below: isBuy, text: lbl, color: m.color, value: isBuy ? curOhlc.l[i] : curOhlc.h[i] };
+  }).filter(Boolean);
+  try {
+    const n = curOhlc.t.length;
+    const ts = curOhlc.t[n-1];
+    const g = (window.SIGS && window.SIGS.trig && window.SIGS.trig[curT]) || null;
+    const lv = liveVolOf(curT, ts);                 // chi khac null khi cay nen cuoi la phien hom nay
+    const r  = byT[curT] || {};
+    const px = (r.p != null && isFinite(r.p) && r.p > 0) ? r.p : null;
+    const daCoTinHieu = out.some(b => b.i === n-1 && b.below);
+    if (g && lv != null && px != null && !daCoTinHieu
+        && liveWatch.inSession() && px >= g[0] && lv >= g[1]) {
+      out.push({ i: n-1, below: true, text: '\u25B2 B', color: '#18a34b',
+                 value: Math.min(curOhlc.l[n-1], px) });
+    }
+  } catch(e){}
+  window._kafiBadges = out;
+};
 function addProBadges(){
   if (!proChart || !curOhlc) return;
   if (!window._kbadgeReg && window.klinecharts) {
@@ -915,13 +943,7 @@ function addProBadges(){
     });
     window._kbadgeReg = true;
   }
-  const tix = {}; curOhlc.t.forEach((tt,i)=>{ tix[tt]=i; });
-  window._kafiBadges = curMarkers.map(m => {
-    const i = tix[m.time]; if (i == null) return null;
-    const isBuy = m.position === 'belowBar';
-    const lbl = isBuy ? (m.text === 'ADD' ? '▲ Add' : (m.text === 'WEAK' ? '▲ Weak' : (m.text === 'THIN' ? '▲ B!' : (m.text === 'BUY★' ? '▲ B★' : '▲ B')))) : '▼ S ' + m.text;
-    return { i: i, below: isBuy, text: lbl, color: m.color, value: isBuy ? curOhlc.l[i] : curOhlc.h[i] };
-  }).filter(Boolean);
+  window.__rebuildBadges();
   try { proChart.createIndicator('KBADGE', true, { id: 'candle_pane' }); } catch(e){}
   window._dbg = { get chart(){ return proChart; }, get markers(){ return curMarkers; }, get oh(){ return curOhlc; }, get badges(){ return window._kafiBadges; } };
 }
@@ -936,6 +958,7 @@ function syncLiveBar(){
     if (lv == null) return;                       // lech phien -> khong dung gi
     const r = byT[curT] || {};
     const cl = (r.p != null && isFinite(r.p) && r.p > 0) ? r.p : curOhlc.c[n-1];
+    try { window.__rebuildBadges && window.__rebuildBadges(); } catch(e){}
     proChart.updateData({ timestamp: ts*1000, open: curOhlc.o[n-1],
       high: Math.max(curOhlc.h[n-1], cl), low: Math.min(curOhlc.l[n-1], cl),
       close: cl, volume: lv });
