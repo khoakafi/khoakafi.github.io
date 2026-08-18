@@ -1017,6 +1017,13 @@ function loadProChart(){
   // dong bo truc thoi gian 2 khung
   const syncTS = (a,b) => a.timeScale().subscribeVisibleLogicalRangeChange(r => { if (r) try { b.timeScale().setVisibleLogicalRange(r); } catch(e){} });
   syncTS(proChart, proVolChart); syncTS(proVolChart, proChart);
+  // ep do rong truc gia 2 khung bang nhau -> nen va cot volume thang hang
+  const alignScales = () => { try {
+    const w1 = proChart.priceScale('right').width(), w2 = proVolChart.priceScale('right').width();
+    const w = Math.max(w1, w2);
+    if (w > 0) { proChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); proVolChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); }
+  } catch(e){} };
+  setTimeout(alignScales, 80); setTimeout(alignScales, 400); setTimeout(alignScales, 1000);
   // ==== mui ten + nhan mau (ve tay nhu ban cu) ====
   const paintBadges = () => {
     try {
@@ -1047,7 +1054,7 @@ function loadProChart(){
   };
   window.__paintBadges = paintBadges;
   proChart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(paintBadges));
-  try { new ResizeObserver(() => requestAnimationFrame(paintBadges)).observe(document.getElementById('proPx')); } catch(e){}
+  try { new ResizeObserver(() => { requestAnimationFrame(paintBadges); alignScales(); }).observe(document.getElementById('proPx')); } catch(e){}
   addProBadges();
   const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 }); } catch(e){} };
   __setRange(); setTimeout(__setRange, 150); setTimeout(__setRange, 600);
@@ -1082,6 +1089,16 @@ function loadProChart(){
   };
   proChart.subscribeCrosshairMove(onCross);
   proVolChart.subscribeCrosshairMove(onCross);
+  // soi guong con tro giua 2 khung
+  let mirroring = false;
+  proChart.subscribeCrosshairMove(p => { if (mirroring) return; mirroring = true; try {
+      const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
+      if (ci == null) proVolChart.clearCrosshairPosition(); else proVolChart.setCrosshairPosition(volAt(ci), curOhlc.t[ci], proVol);
+    } catch(e){} mirroring = false; });
+  proVolChart.subscribeCrosshairMove(p => { if (mirroring) return; mirroring = true; try {
+      const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
+      if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, curOhlc.t[ci], proCandle);
+    } catch(e){} mirroring = false; });
   const kEl = document.getElementById('proK');
   if (kEl && !kEl.dataset.hovfix) { kEl.dataset.hovfix = '1';
     kEl.addEventListener('pointerenter', () => { window.__dHov = 1; });
