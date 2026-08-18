@@ -2032,6 +2032,18 @@ window.__loiLienTiep = 0;
     nhipGia();
   }, chuKy);
 })();
+// Quay lai tab la cap nhat gia NGAY, khong cho nhip (Chrome dong bang tab nen)
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState !== 'visible') return;
+  (async () => {
+    try {
+      if (await liveQuote()) {
+        renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar();
+        try { if (!window.__dHov) updateDPx(null); } catch(e){}
+      }
+    } catch(e){}
+  })();
+});
 
 // ================= 9. BAI VIET (tab tin & phan tich — doc ngay trong trang) =================
 (function addNewsTab(){
