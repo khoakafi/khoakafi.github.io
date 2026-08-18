@@ -859,7 +859,7 @@ async function loadRecs(){
       '<div class="mini" style="margin-top:8px">Upside so với giá hiện tại · tổng hợp từ báo cáo các CTCK</div>';
   } catch(e){ box.innerHTML = '<div class="mini">Không tải được dữ liệu khuyến nghị.</div>'; }
 }
-let proLoadedFor = null, proChart = null, proCandle = null, proVol = null, proMa = null, useLog = false;
+let proLoadedFor = null, proChart = null, proVolChart = null, proCandle = null, proVol = null, proMa = null, useLog = false;
 // Dung lai toan bo mui tren chart = tin hieu DA CHOT + tin hieu DANG DAT TRONG PHIEN.
 // Trong phien: gia >= nguong gia va volume >= nguong volume (bep da phat hanh trong SIGS.trig)
 // -> ve mui tren; neu gia tut xuong duoi nguong thi mui tu bien mat o lan ve ke tiep.
@@ -891,19 +891,10 @@ window.__rebuildBadges = function(){
 function addProBadges(){
   if (!proCandle || !curOhlc) return;
   window.__rebuildBadges();
-  const bs = window._kafiBadges || [];
-  try {
-    proCandle.setMarkers(bs.map(b => ({
-      time: curOhlc.t[b.i],
-      position: b.below ? 'belowBar' : 'aboveBar',
-      shape: b.below ? 'arrowUp' : 'arrowDown',
-      color: b.color, size: 1,
-      text: b.text.replace(/^[\u25B2\u25BC]\s*/, '')
-    })));
-  } catch(e){}
+  if (window.__paintBadges) window.__paintBadges();
   window._dbg = { get chart(){ return proChart; }, get markers(){ return curMarkers; }, get oh(){ return curOhlc; }, get badges(){ return window._kafiBadges; } };
 }
-// Moi lan feed song lam moi -> cap nhat CAY NEN CUOI (Lightweight Charts) + ve lai mui ten.
+// Moi lan feed song lam moi -> cap nhat CAY NEN CUOI + ve lai mui ten + legend.
 function syncLiveBar(){
   try {
     if (!proCandle || !curOhlc || !curT || !curOhlc.t) return;
@@ -964,30 +955,43 @@ function loadProChart(){
   if (proLoadedFor === curT) {
     let oK = false;
     try {
-      const el = document.getElementById('proK');
+      const el = document.getElementById('proPx');
       const cv = el && el.querySelector('canvas');
       oK = !!(el && cv && el.clientWidth > 0 && cv.width >= el.clientWidth * 0.5);
     } catch(e){}
     if (oK) return;
     proLoadedFor = null;
   }
-  if (!window.LightweightCharts) { toast('Kh\u00f4ng t\u1ea3i \u0111\u01b0\u1ee3c th\u01b0 vi\u1ec7n chart'); return; }
+  if (!window.LightweightCharts) { toast('Không tải được thư viện chart'); return; }
   proLoadedFor = curT;
   const wrap = document.getElementById('chartProWrap');
-  wrap.innerHTML = '<div id="proK" style="height:470px;position:relative"><div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:11.5px/1.55 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div></div>';
+  wrap.innerHTML = '<div id="proK" style="position:relative">'
+    + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas></div>'
+    + '<div id="proVolPane" style="height:110px;border-top:1px solid #F0F3FA"></div>'
+    + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div>'
+    + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:1px 7px;border-radius:4px;pointer-events:none"></div>'
+    + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
+  try { if (proVolChart && proVolChart.remove) proVolChart.remove(); } catch(e){}
   const UP = '#089981', DOWN = '#F23645';
-  proChart = LightweightCharts.createChart(document.getElementById('proK'), {
+  const baseOpts = {
     autoSize: true,
     layout: { background: { color: '#ffffff' }, textColor: '#787B86', fontSize: 12 },
     grid: { horzLines: { color: '#F0F3FA' }, vertLines: { color: '#F0F3FA' } },
-    rightPriceScale: { borderColor: '#DDE1E6', scaleMargins: { top: 0.06, bottom: 0.22 } },
+    rightPriceScale: { borderColor: '#DDE1E6' },
     timeScale: { borderColor: '#DDE1E6', rightOffset: 6, barSpacing: 9, timeVisible: false },
     crosshair: { mode: 0,
       horzLine: { color: '#9598A1', labelBackgroundColor: '#131722' },
       vertLine: { color: '#9598A1', labelBackgroundColor: '#131722' } },
     localization: { locale: 'vi-VN' }
-  });
+  };
+  const o1 = JSON.parse(JSON.stringify(baseOpts));
+  o1.timeScale.visible = false;
+  o1.rightPriceScale.scaleMargins = { top: 0.07, bottom: 0.06 };
+  proChart = LightweightCharts.createChart(document.getElementById('proPx'), o1);
+  const o2 = JSON.parse(JSON.stringify(baseOpts));
+  o2.rightPriceScale.scaleMargins = { top: 0.18, bottom: 0 };
+  proVolChart = LightweightCharts.createChart(document.getElementById('proVolPane'), o2);
   proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
   const n0 = curOhlc.t.length - 1;
   const liveLast = (function(){
@@ -1002,45 +1006,81 @@ function loadProChart(){
     return { time: tt, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i] };
   });
   proCandle.setData(candData);
-  proVol = proChart.addHistogramSeries({ priceFormat: { type: 'volume' }, priceScaleId: 'kvol', priceLineVisible: false, lastValueVisible: false });
-  proChart.priceScale('kvol').applyOptions({ scaleMargins: { top: 0.82, bottom: 0 } });
+  proVol = proVolChart.addHistogramSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false });
   const volAt = i => (i === n0 && liveLast) ? liveLast.lv : curOhlc.v[i];
   proVol.setData(curOhlc.t.map((tt,i)=>({ time: tt, value: volAt(i), color: candData[i].close >= candData[i].open ? 'rgba(8,153,129,.5)' : 'rgba(242,54,69,.5)' })));
   const ma = []; let s = 0;
   for (let i = 0; i < curOhlc.c.length; i++){ s += curOhlc.c[i]; if (i >= 20) s -= curOhlc.c[i-20]; if (i >= 19) ma.push({ time: curOhlc.t[i], value: +(s/20).toFixed(2) }); }
   proMa = proChart.addLineSeries({ color: '#2962FF', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false });
   proMa.setData(ma);
+  // dong bo truc thoi gian 2 khung
+  const syncTS = (a,b) => a.timeScale().subscribeVisibleLogicalRangeChange(r => { if (r) try { b.timeScale().setVisibleLogicalRange(r); } catch(e){} });
+  syncTS(proChart, proVolChart); syncTS(proVolChart, proChart);
+  // ==== mui ten + nhan mau (ve tay nhu ban cu) ====
+  const paintBadges = () => {
+    try {
+      const cvs = document.getElementById('proBadgeCv'); const px = document.getElementById('proPx');
+      if (!cvs || !px || !proChart || !proCandle || !curOhlc) return;
+      const w = px.clientWidth, h = px.clientHeight;
+      const dpr = window.devicePixelRatio || 1;
+      if (cvs.width !== Math.round(w*dpr) || cvs.height !== Math.round(h*dpr)) { cvs.width = Math.round(w*dpr); cvs.height = Math.round(h*dpr); cvs.style.width = w+'px'; cvs.style.height = h+'px'; }
+      const ctx = cvs.getContext('2d');
+      ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,w,h);
+      ctx.font = 'bold 11px Inter, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      const tsc = proChart.timeScale();
+      (window._kafiBadges || []).forEach(b => {
+        const x = tsc.timeToCoordinate(curOhlc.t[b.i]); if (x == null) return;
+        const y = proCandle.priceToCoordinate(b.value); if (y == null) return;
+        const dir = b.below ? 1 : -1, gap = 3, ah = 7, aw = 5;
+        const tipY = y + dir*gap, baseY = tipY + dir*ah;
+        ctx.fillStyle = b.color;
+        ctx.beginPath(); ctx.moveTo(x, tipY); ctx.lineTo(x-aw, baseY); ctx.lineTo(x+aw, baseY); ctx.closePath(); ctx.fill();
+        const lbl = b.text.replace(/^[▲▼]\s*/, '');
+        const hh = 16, r = 3, ww = ctx.measureText(lbl).width + 10;
+        const top = b.below ? baseY + 1 : baseY - 1 - hh;
+        ctx.beginPath();
+        ctx.moveTo(x-ww/2+r, top); ctx.arcTo(x+ww/2, top, x+ww/2, top+hh, r); ctx.arcTo(x+ww/2, top+hh, x-ww/2, top+hh, r); ctx.arcTo(x-ww/2, top+hh, x-ww/2, top, r); ctx.arcTo(x-ww/2, top, x+ww/2, top, r); ctx.fill();
+        ctx.fillStyle = '#fff'; ctx.fillText(lbl, x, top + hh/2 + 0.5);
+      });
+    } catch(e){}
+  };
+  window.__paintBadges = paintBadges;
+  proChart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(paintBadges));
+  try { new ResizeObserver(() => requestAnimationFrame(paintBadges)).observe(document.getElementById('proPx')); } catch(e){}
   addProBadges();
   const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 }); } catch(e){} };
   __setRange(); setTimeout(__setRange, 150); setTimeout(__setRange, 600);
+  // legend
   const v20arr = []; let sv = 0;
   for (let i = 0; i < curOhlc.v.length; i++){ sv += curOhlc.v[i]; if (i >= 20) sv -= curOhlc.v[i-20]; v20arr.push(i >= 19 ? sv/20 : null); }
   const leg = document.getElementById('proLegend');
-  const fmtVol = v => v == null ? '\u2014' : (v >= 1e6 ? (v/1e6).toFixed(2) + 'tr' : Math.round(v/1e3) + 'k');
+  const vleg = document.getElementById('proVolLegend');
+  const fmtVol = v => v == null ? '—' : (v >= 1e6 ? (v/1e6).toFixed(2) + 'tr' : Math.round(v/1e3) + 'k');
   const showLeg = (i) => {
-    if (!leg) return;
     const ii = (i == null || i < 0 || i > n0) ? n0 : i;
     const d = candData[ii];
     const vv = volAt(ii);
     const chg = ii > 0 ? (d.close/curOhlc.c[ii-1]-1)*100 : 0;
     const cl = d.close >= d.open ? UP : DOWN;
-    const av = v20arr[ii]; const pct = av ? (vv/av-1)*100 : null;
+    const av = v20arr[ii]; const pct = av ? Math.round(vv/av*100) : null;
     const maV = ii >= 19 && ma[ii-19] ? ma[ii-19].value : null;
-    const pctTxt = pct == null ? '' : ' \u00b7 \u0110\u1ed9t bi\u1ebfn <b style="color:' + (pct >= 100 ? '#B45309' : (pct >= 0 ? UP : '#787B86')) + '">' + (pct >= 0 ? '+' : '\u2212') + Math.abs(pct).toFixed(0) + '%</b> so TB20';
-    leg.innerHTML = '<b>' + curT + '</b> <span style="color:' + cl + '">O ' + d.open + ' \u00b7 H ' + d.high + ' \u00b7 L ' + d.low + ' \u00b7 C <b>' + d.close + '</b></span> <b style="color:' + (chg >= 0 ? UP : DOWN) + '">' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%</b> \u00b7 <span style="color:#2962FF">MA20 ' + (maV == null ? '\u2014' : maV) + '</span><br><span style="color:#787B86">KL</span> ' + fmtVol(vv) + pctTxt;
+    if (leg) leg.innerHTML = '<b>' + curT + '</b> <span style="color:' + cl + '">O ' + d.open + ' · H ' + d.high + ' · L ' + d.low + ' · C <b>' + d.close + '</b></span> <b style="color:' + (chg >= 0 ? UP : DOWN) + '">' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%</b> · <span style="color:#2962FF">MA20 ' + (maV == null ? '—' : maV) + '</span>';
+    if (vleg) vleg.innerHTML = '<span style="color:#787B86">KL</span> <b>' + fmtVol(vv) + '</b>' + (pct == null ? '' : ' <span style="color:' + (pct >= 200 ? '#B45309' : '#787B86') + '">(' + pct + '%)</span>');
   };
   window.__proLegend = showLeg;
   showLeg(null);
   const tpos = {}; curOhlc.t.forEach((tt,i)=>{ tpos[tt] = i; });
   let lastCi = -999;
-  proChart.subscribeCrosshairMove(p => {
+  const onCross = p => {
     const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
     const key = ci == null ? -1 : ci;
     if (key === lastCi) return;
     lastCi = key;
     showLeg(ci);
     if (window.__dHov) { updateKpis(ci); updateDPx(ci); }
-  });
+  };
+  proChart.subscribeCrosshairMove(onCross);
+  proVolChart.subscribeCrosshairMove(onCross);
   const kEl = document.getElementById('proK');
   if (kEl && !kEl.dataset.hovfix) { kEl.dataset.hovfix = '1';
     kEl.addEventListener('pointerenter', () => { window.__dHov = 1; });
