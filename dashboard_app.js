@@ -967,7 +967,7 @@ function loadProChart(){
   const wrap = document.getElementById('chartProWrap');
   wrap.innerHTML = '<div id="proK" style="position:relative">'
     + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas></div>'
-    + '<div id="proVolPane" style="height:110px;border-top:1px solid #F0F3FA"></div>'
+    + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
     + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div>'
     + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:1px 7px;border-radius:4px;pointer-events:none"></div>'
     + '</div>';
@@ -990,7 +990,7 @@ function loadProChart(){
   o1.rightPriceScale.scaleMargins = { top: 0.07, bottom: 0.06 };
   proChart = LightweightCharts.createChart(document.getElementById('proPx'), o1);
   const o2 = JSON.parse(JSON.stringify(baseOpts));
-  o2.rightPriceScale.scaleMargins = { top: 0.18, bottom: 0 };
+  o2.rightPriceScale.scaleMargins = { top: 0.10, bottom: 0 };
   o2.layout.attributionLogo = false;
   proVolChart = LightweightCharts.createChart(document.getElementById('proVolPane'), o2);
   proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
@@ -1114,12 +1114,9 @@ inits.detail = function(t){
         <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:9px">
           <div class="search-wrap"><input id="dQ" placeholder="Nhập mã hoặc tên công ty…" style="width:206px;padding:6px 11px"><div id="sugg"></div></div>
           <div id="dTitle" style="font-size:15.5px;font-weight:700"></div>
-          <div style="display:flex;gap:9px;align-items:center;margin-left:auto;flex-wrap:wrap" id="dRanges">
-            <span style="background:var(--green);color:#fff;border-radius:7px;padding:5px 12px;font-size:12px;font-weight:700;letter-spacing:.02em;white-space:nowrap">CHART TÍN HIỆU AI</span>
-            <span class="mini" style="font-style:italic;white-space:nowrap">điểm Mua · Bồi · Bán hiện ngay trên nến</span>
-          </div>
+          <div id="dRanges" style="display:none"></div>
+          <div id="dTpn" style="margin-left:auto"></div>
         </div>
-        <div id="dTpn" style="margin-bottom:10px"></div>
         <div style="display:flex;gap:16px;align-items:flex-start" id="dFlex">
           <div style="flex:1;min-width:0">
             <div id="chartSigWrap" style="display:none">
@@ -1283,9 +1280,9 @@ function renderTPN(s){
       }
     } catch(e){}
   } else { chip = ['CHƯA CÓ TÍN HIỆU', '#f3f5f7', '#6b7280']; desc = ''; }
-  el.innerHTML = `<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:4px">
-    <span class="tag" style="background:${chip[1]};color:${chip[2]};font-size:14px;padding:6px 14px">${chip[0]}</span>
-    <span class="mini">${desc}</span></div>`;
+  el.innerHTML = `<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end">
+    <span class="tag" style="background:${chip[1]};color:${chip[2]};font-size:12.5px;padding:5px 12px;white-space:nowrap">${chip[0]}</span>
+    <span class="mini" style="max-width:540px">${desc}</span></div>`;
 }
 
 function drawPrice(years){
