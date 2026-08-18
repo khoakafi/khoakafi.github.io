@@ -991,6 +991,7 @@ function loadProChart(){
   proChart = LightweightCharts.createChart(document.getElementById('proPx'), o1);
   const o2 = JSON.parse(JSON.stringify(baseOpts));
   o2.rightPriceScale.scaleMargins = { top: 0.18, bottom: 0 };
+  o2.layout.attributionLogo = false;
   proVolChart = LightweightCharts.createChart(document.getElementById('proVolPane'), o2);
   proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
   const n0 = curOhlc.t.length - 1;
