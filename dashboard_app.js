@@ -859,7 +859,7 @@ async function loadRecs(){
       '<div class="mini" style="margin-top:8px">Upside so với giá hiện tại · tổng hợp từ báo cáo các CTCK</div>';
   } catch(e){ box.innerHTML = '<div class="mini">Không tải được dữ liệu khuyến nghị.</div>'; }
 }
-let proLoadedFor = null, proChart = null, useLog = false;
+let proLoadedFor = null, proChart = null, proCandle = null, proVol = null, proMa = null, useLog = false;
 // Dung lai toan bo mui tren chart = tin hieu DA CHOT + tin hieu DANG DAT TRONG PHIEN.
 // Trong phien: gia >= nguong gia va volume >= nguong volume (bep da phat hanh trong SIGS.trig)
 // -> ve mui tren; neu gia tut xuong duoi nguong thi mui tu bien mat o lan ve ke tiep.
@@ -889,79 +889,34 @@ window.__rebuildBadges = function(){
   window._kafiBadges = out;
 };
 function addProBadges(){
-  if (!proChart || !curOhlc) return;
-  if (!window._kbadgeReg && window.klinecharts) {
-    klinecharts.registerIndicator({
-      name: 'KBADGE', calc: list => list, figures: [],
-      createTooltipDataSource: () => ({ name: '', calcParamsText: '', values: [], legends: [] }),
-      draw: p => {
-        const ctx = p.ctx, yAxis = p.yAxis;
-        const bs = window._kafiBadges || [];
-        if (!bs.length || !proChart) return true;
-        let vdl = [];
-        try { vdl = proChart.getChartStore().getVisibleDataList() || []; } catch(e){ return true; }
-        const xm = {};
-        vdl.forEach(d => { xm[d.dataIndex] = d.x; });
-        ctx.save();
-        ctx.font = 'bold 11px Inter, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        bs.forEach(b => {
-          const cx = xm[b.i];
-          if (cx == null) return;
-          const yv = yAxis.convertToPixel(b.value);
-          const dir = b.below ? 1 : -1;          // dưới nến (mua) mũi tên chỉ lên, trên nến (bán) chỉ xuống
-          const gap = 3, ah = 7, aw = 5;
-          const tipY = yv + dir * gap;           // đỉnh mũi tên chạm sát cây nến
-          const baseY = tipY + dir * ah;
-          // mũi tên nhọn chỉ đúng vào cây nến (kiểu AmiBroker)
-          ctx.fillStyle = b.color;
-          ctx.beginPath();
-          ctx.moveTo(cx, tipY);
-          ctx.lineTo(cx - aw, baseY);
-          ctx.lineTo(cx + aw, baseY);
-          ctx.closePath();
-          ctx.fill();
-          // nhãn gọn ngay sau mũi tên
-          const lbl = b.text.replace(/^[\u25B2\u25BC]\s*/, '');
-          const h = 16, r = 3, w = ctx.measureText(lbl).width + 10;
-          const top = b.below ? baseY + 1 : baseY - 1 - h;
-          ctx.fillStyle = b.color;
-          ctx.beginPath();
-          ctx.moveTo(cx - w/2 + r, top);
-          ctx.arcTo(cx + w/2, top, cx + w/2, top + h, r);
-          ctx.arcTo(cx + w/2, top + h, cx - w/2, top + h, r);
-          ctx.arcTo(cx - w/2, top + h, cx - w/2, top, r);
-          ctx.arcTo(cx - w/2, top, cx + w/2, top, r);
-          ctx.fill();
-          ctx.fillStyle = '#fff';
-          ctx.fillText(lbl, cx, top + h/2 + 0.5);
-        });
-        ctx.restore();
-        return true;
-      }
-    });
-    window._kbadgeReg = true;
-  }
+  if (!proCandle || !curOhlc) return;
   window.__rebuildBadges();
-  try { proChart.createIndicator('KBADGE', true, { id: 'candle_pane' }); } catch(e){}
+  const bs = window._kafiBadges || [];
+  try {
+    proCandle.setMarkers(bs.map(b => ({
+      time: curOhlc.t[b.i],
+      position: b.below ? 'belowBar' : 'aboveBar',
+      shape: b.below ? 'arrowUp' : 'arrowDown',
+      color: b.color, size: 1,
+      text: b.text.replace(/^[\u25B2\u25BC]\s*/, '')
+    })));
+  } catch(e){}
   window._dbg = { get chart(){ return proChart; }, get markers(){ return curMarkers; }, get oh(){ return curOhlc; }, get badges(){ return window._kafiBadges; } };
 }
-// Moi lan feed song lam moi -> cap nhat CAY NEN CUOI cua chart cho theo sat.
-// Chi sua cay nen dang hien thi; KHONG bao gio ghi vao curOhlc (may tin hieu doc curOhlc).
+// Moi lan feed song lam moi -> cap nhat CAY NEN CUOI (Lightweight Charts) + ve lai mui ten.
 function syncLiveBar(){
   try {
-    if (!proChart || !curOhlc || !curT || !curOhlc.t) return;
+    if (!proCandle || !curOhlc || !curT || !curOhlc.t) return;
     const n = curOhlc.t.length; if (!n) return;
     const ts = curOhlc.t[n-1];
     const lv = liveVolOf(curT, ts);
-    if (lv == null) return;                       // lech phien -> khong dung gi
+    if (lv == null) return;
     const r = byT[curT] || {};
     const cl = (r.p != null && isFinite(r.p) && r.p > 0) ? r.p : curOhlc.c[n-1];
-    try { window.__rebuildBadges && window.__rebuildBadges(); } catch(e){}
-    proChart.updateData({ timestamp: ts*1000, open: curOhlc.o[n-1],
-      high: Math.max(curOhlc.h[n-1], cl), low: Math.min(curOhlc.l[n-1], cl),
-      close: cl, volume: lv });
+    proCandle.update({ time: ts, open: curOhlc.o[n-1], high: Math.max(curOhlc.h[n-1], cl), low: Math.min(curOhlc.l[n-1], cl), close: cl });
+    if (proVol) proVol.update({ time: ts, value: lv, color: cl >= curOhlc.o[n-1] ? 'rgba(8,153,129,.5)' : 'rgba(242,54,69,.5)' });
+    addProBadges();
+    if (window.__proLegend) window.__proLegend(null);
   } catch(e){}
 }
 // ===== TU KIEM: bat cac cap so hien thi khong the cung dung ve mat so hoc =====
@@ -1007,8 +962,6 @@ window.kafiSelfCheck = function(){
 function loadProChart(){
   if (!curT || !curOhlc) return;
   if (proLoadedFor === curT) {
-    // Chart co the da duoc dung luc khung con AN -> canvas ket o 300x150 -> nhin thay trang tron.
-    // Kiem tra thuc te: canvas phai rong gan bang khung; neu khong thi dung lai tu dau.
     let oK = false;
     try {
       const el = document.getElementById('proK');
@@ -1018,91 +971,80 @@ function loadProChart(){
     if (oK) return;
     proLoadedFor = null;
   }
-  const init = () => {
-    proLoadedFor = curT;
-    const wrap = document.getElementById('chartProWrap');
-    wrap.innerHTML = '<div id="proK" style="height:470px"></div>';
-    try { klinecharts.dispose('proK'); } catch(e){}
-    proChart = klinecharts.init('proK');
-    // Bang mau TradingView
-    const UP = '#089981', DOWN = '#F23645';
-    proChart.setStyles({
-      grid: { horizontal: { color: '#F0F3FA' }, vertical: { color: '#F0F3FA' } },
-      candle: {
-        bar: { upColor: UP, downColor: DOWN, upBorderColor: UP, downBorderColor: DOWN, upWickColor: UP, downWickColor: DOWN },
-        priceMark: { last: { upColor: UP, downColor: DOWN } },
-        tooltip: { text: { color: '#131722' } }
-      },
-      indicator: {
-        lines: [{color:'#2962FF'},{color:'#FF6D00'},{color:'#9C27B0'},{color:'#E91E63'},{color:'#787B86'}],
-        bars: [{ upColor: 'rgba(8,153,129,.5)', downColor: 'rgba(242,54,69,.5)', noChangeColor: '#888' }],
-        tooltip: { text: { color: '#131722' } }
-      },
-      xAxis: { axisLine: { color: '#DDE1E6' }, tickText: { color: '#787B86', size: 12 } },
-      yAxis: { axisLine: { color: '#DDE1E6' }, tickText: { color: '#787B86', size: 12 } },
-      crosshair: { horizontal: { line: { color: '#9598A1' }, text: { backgroundColor: '#131722' } },
-                   vertical:   { line: { color: '#9598A1' }, text: { backgroundColor: '#131722' } } }
-    });
-    const _lastI = curOhlc.t.length - 1;
-    proChart.applyNewData(curOhlc.t.map((tt,i)=>{
-      const lv = (i === _lastI) ? liveVolOf(curT, tt) : null;   // chi cay nen cuoi, chi khi trung phien
-      if (lv == null) return { timestamp: tt*1000, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i], volume: curOhlc.v[i] };
-      const _r = byT[curT] || {};
-      const _cl = (_r.p != null && isFinite(_r.p) && _r.p > 0) ? _r.p : curOhlc.c[i];
-      return { timestamp: tt*1000, open: curOhlc.o[i], high: Math.max(curOhlc.h[i], _cl), low: Math.min(curOhlc.l[i], _cl), close: _cl, volume: lv };
-    }));
-    proChart.createIndicator({ name: 'MA', calcParams: [20] }, true, { id: 'candle_pane' });
-    if (!window._kvolReg) {
-      klinecharts.registerIndicator({
-        name: 'KVOL', shortName: 'KL', series: 'volume', precision: 0, shouldFormatBigNumber: true,
-        calc: list => list.map((d, i) => { let s = 0, c = 0; for (let k = Math.max(0, i - 20); k < i; k++) { s += list[k].volume || 0; c++; } return { volume: d.volume, avg: c >= 10 ? s / c : null }; }),
-        figures: [{ key: 'volume', title: 'KL: ', type: 'bar', baseValue: 0,
-          styles: d => { const k = (d.current && d.current.kLineData) || {}; return { color: (k.close >= k.open) ? 'rgba(8,153,129,.55)' : 'rgba(242,54,69,.55)' }; } }],
-        createTooltipDataSource: p => {
-          const list = p.kLineDataList || [], res = (p.indicator && p.indicator.result) || [];
-          const i = (p.crosshair && p.crosshair.dataIndex != null) ? p.crosshair.dataIndex : list.length - 1;
-          const r = res[i] || {};
-          const fv = v => v == null ? '—' : (v >= 1e6 ? (v / 1e6).toFixed(2) + 'tr' : Math.round((v || 0) / 1e3) + 'k');
-          const pct = (r.avg && r.volume != null) ? (r.volume / r.avg - 1) * 100 : null;
-          const pctTxt = pct == null ? '—' : (pct >= 0 ? '+' : '−') + Math.abs(pct).toFixed(0) + '% so với TB 20 phiên';
-          const pcol = pct == null ? '#787B86' : (pct >= 100 ? '#B45309' : (pct >= 0 ? '#089981' : '#787B86'));
-          const items = [
-            { title: { text: 'KL: ', color: '#787B86' }, value: { text: fv(r.volume), color: '#131722' } },
-            { title: { text: 'Đột biến: ', color: '#787B86' }, value: { text: pctTxt, color: pcol } }
-          ];
-          return { name: '', calcParamsText: '', values: items, legends: items };
-        }
-      });
-      window._kvolReg = true;
-    }
-    proChart.createIndicator('KVOL', false, { height: 96 });
-    try { proChart.setBarSpace(9); proChart.setOffsetRightDistance(70); } catch(e){}
-    addProBadges();
-    [60,200,500,1000,2000].forEach(ms=>setTimeout(()=>{ try{ proChart && proChart.resize(); }catch(e){} }, ms));
-    if (!window._proResizeReg){ window._proResizeReg=1;
-      const rz=()=>{ try{ proChart && proChart.resize(); }catch(e){} };
-      window.addEventListener('resize', rz); window.addEventListener('orientationchange', ()=>setTimeout(rz,200)); }
-    // bang so lieu chay theo con tro tren Chart Pro
-    const tmap = {}; curOhlc.t.forEach((tt,i)=>{ tmap[tt*1000] = i; });
-    let lastCi = -999, pendCi = null, rafId = 0;
-    proChart.subscribeAction('onCrosshairChange', d => {
-      const ts = d && d.kLineData ? d.kLineData.timestamp : null;
-      const ci = ts != null && tmap[ts] != null ? tmap[ts] : null;
-      const key = ci == null ? -1 : ci;
-      if (key === lastCi) return;        // van o trong cung cay nen -> bo qua
-      lastCi = key; pendCi = ci;
-      if (rafId) return;                 // da co lich ve trong khung hinh nay
-      rafId = requestAnimationFrame(() => { rafId = 0; if (!window.__dHov) return; updateKpis(pendCi); updateDPx(pendCi); });
-    });
-    // FIX 22/07: chi nhan hover khi chuot nam tren chart; roi chart -> tra ve gia phien moi nhat (het ket nen cu + het giat)
-    const kEl = document.getElementById("proK");
-    if (kEl && !kEl.dataset.hovfix) { kEl.dataset.hovfix = "1";
-      kEl.addEventListener("pointerenter", () => { window.__dHov = 1; });
-      kEl.addEventListener("pointerleave", () => { window.__dHov = 0; lastCi = -999; pendCi = null; updateKpis(null); updateDPx(null); });
-    }
+  if (!window.LightweightCharts) { toast('Kh\u00f4ng t\u1ea3i \u0111\u01b0\u1ee3c th\u01b0 vi\u1ec7n chart'); return; }
+  proLoadedFor = curT;
+  const wrap = document.getElementById('chartProWrap');
+  wrap.innerHTML = '<div id="proK" style="height:470px;position:relative"><div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:11.5px/1.55 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div></div>';
+  try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
+  const UP = '#089981', DOWN = '#F23645';
+  proChart = LightweightCharts.createChart(document.getElementById('proK'), {
+    autoSize: true,
+    layout: { background: { color: '#ffffff' }, textColor: '#787B86', fontSize: 12 },
+    grid: { horzLines: { color: '#F0F3FA' }, vertLines: { color: '#F0F3FA' } },
+    rightPriceScale: { borderColor: '#DDE1E6', scaleMargins: { top: 0.06, bottom: 0.22 } },
+    timeScale: { borderColor: '#DDE1E6', rightOffset: 6, barSpacing: 9, timeVisible: false },
+    crosshair: { mode: 0,
+      horzLine: { color: '#9598A1', labelBackgroundColor: '#131722' },
+      vertLine: { color: '#9598A1', labelBackgroundColor: '#131722' } },
+    localization: { locale: 'vi-VN' }
+  });
+  proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
+  const n0 = curOhlc.t.length - 1;
+  const liveLast = (function(){
+    const lv = liveVolOf(curT, curOhlc.t[n0]);
+    if (lv == null) return null;
+    const _r = byT[curT] || {};
+    const cl = (_r.p != null && isFinite(_r.p) && _r.p > 0) ? _r.p : curOhlc.c[n0];
+    return { cl: cl, lv: lv };
+  })();
+  const candData = curOhlc.t.map((tt,i)=>{
+    if (i === n0 && liveLast) return { time: tt, open: curOhlc.o[i], high: Math.max(curOhlc.h[i], liveLast.cl), low: Math.min(curOhlc.l[i], liveLast.cl), close: liveLast.cl };
+    return { time: tt, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i] };
+  });
+  proCandle.setData(candData);
+  proVol = proChart.addHistogramSeries({ priceFormat: { type: 'volume' }, priceScaleId: 'kvol', priceLineVisible: false, lastValueVisible: false });
+  proChart.priceScale('kvol').applyOptions({ scaleMargins: { top: 0.82, bottom: 0 } });
+  const volAt = i => (i === n0 && liveLast) ? liveLast.lv : curOhlc.v[i];
+  proVol.setData(curOhlc.t.map((tt,i)=>({ time: tt, value: volAt(i), color: candData[i].close >= candData[i].open ? 'rgba(8,153,129,.5)' : 'rgba(242,54,69,.5)' })));
+  const ma = []; let s = 0;
+  for (let i = 0; i < curOhlc.c.length; i++){ s += curOhlc.c[i]; if (i >= 20) s -= curOhlc.c[i-20]; if (i >= 19) ma.push({ time: curOhlc.t[i], value: +(s/20).toFixed(2) }); }
+  proMa = proChart.addLineSeries({ color: '#2962FF', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false });
+  proMa.setData(ma);
+  addProBadges();
+  proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 });
+  const v20arr = []; let sv = 0;
+  for (let i = 0; i < curOhlc.v.length; i++){ sv += curOhlc.v[i]; if (i >= 20) sv -= curOhlc.v[i-20]; v20arr.push(i >= 19 ? sv/20 : null); }
+  const leg = document.getElementById('proLegend');
+  const fmtVol = v => v == null ? '\u2014' : (v >= 1e6 ? (v/1e6).toFixed(2) + 'tr' : Math.round(v/1e3) + 'k');
+  const showLeg = (i) => {
+    if (!leg) return;
+    const ii = (i == null || i < 0 || i > n0) ? n0 : i;
+    const d = candData[ii];
+    const vv = volAt(ii);
+    const chg = ii > 0 ? (d.close/curOhlc.c[ii-1]-1)*100 : 0;
+    const cl = d.close >= d.open ? UP : DOWN;
+    const av = v20arr[ii]; const pct = av ? (vv/av-1)*100 : null;
+    const maV = ii >= 19 && ma[ii-19] ? ma[ii-19].value : null;
+    const pctTxt = pct == null ? '' : ' \u00b7 \u0110\u1ed9t bi\u1ebfn <b style="color:' + (pct >= 100 ? '#B45309' : (pct >= 0 ? UP : '#787B86')) + '">' + (pct >= 0 ? '+' : '\u2212') + Math.abs(pct).toFixed(0) + '%</b> so TB20';
+    leg.innerHTML = '<b>' + curT + '</b> <span style="color:' + cl + '">O ' + d.open + ' \u00b7 H ' + d.high + ' \u00b7 L ' + d.low + ' \u00b7 C <b>' + d.close + '</b></span> <b style="color:' + (chg >= 0 ? UP : DOWN) + '">' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%</b> \u00b7 <span style="color:#2962FF">MA20 ' + (maV == null ? '\u2014' : maV) + '</span><br><span style="color:#787B86">KL</span> ' + fmtVol(vv) + pctTxt;
   };
-  if (window.klinecharts) init();
-  else { const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/klinecharts@9/dist/klinecharts.min.js'; s.onload = init; s.onerror = () => toast('Không tải được thư viện chart'); document.head.appendChild(s); }
+  window.__proLegend = showLeg;
+  showLeg(null);
+  const tpos = {}; curOhlc.t.forEach((tt,i)=>{ tpos[tt] = i; });
+  let lastCi = -999;
+  proChart.subscribeCrosshairMove(p => {
+    const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
+    const key = ci == null ? -1 : ci;
+    if (key === lastCi) return;
+    lastCi = key;
+    showLeg(ci);
+    if (window.__dHov) { updateKpis(ci); updateDPx(ci); }
+  });
+  const kEl = document.getElementById('proK');
+  if (kEl && !kEl.dataset.hovfix) { kEl.dataset.hovfix = '1';
+    kEl.addEventListener('pointerenter', () => { window.__dHov = 1; });
+    kEl.addEventListener('pointerleave', () => { window.__dHov = 0; lastCi = -999; showLeg(null); updateKpis(null); updateDPx(null); });
+  }
 }
 window.openDetail = t => { ga('view_ticker', {ticker: t}); showView('detail', true); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view==='detail')); inits.detail(t); };
 inits.detail = function(t){
