@@ -1011,7 +1011,8 @@ function loadProChart(){
   proMa = proChart.addLineSeries({ color: '#2962FF', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false });
   proMa.setData(ma);
   addProBadges();
-  proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 });
+  const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 }); } catch(e){} };
+  __setRange(); setTimeout(__setRange, 150); setTimeout(__setRange, 600);
   const v20arr = []; let sv = 0;
   for (let i = 0; i < curOhlc.v.length; i++){ sv += curOhlc.v[i]; if (i >= 20) sv -= curOhlc.v[i-20]; v20arr.push(i >= 19 ? sv/20 : null); }
   const leg = document.getElementById('proLegend');
