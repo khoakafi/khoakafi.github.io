@@ -1066,8 +1066,10 @@ function loadProChart(){
   const fmtVol = v => v == null ? '—' : (v >= 1e6 ? (v/1e6).toFixed(2) + 'tr' : Math.round(v/1e3) + 'k');
   const showLeg = (i) => {
     const ii = (i == null || i < 0 || i > n0) ? n0 : i;
-    const d = candData[ii];
-    const vv = volAt(ii);
+    let d = candData[ii], vv = volAt(ii);
+    if (ii === n0) { try { const rr = byT[curT] || {}; const lv = liveVolOf(curT, curOhlc.t[n0]);
+      if (lv != null) { const c2 = (rr.p != null && isFinite(rr.p) && rr.p > 0) ? rr.p : d.close;
+        d = { open: curOhlc.o[n0], high: Math.max(curOhlc.h[n0], c2), low: Math.min(curOhlc.l[n0], c2), close: c2 }; vv = lv; } } catch(e){} }
     const chg = ii > 0 ? (d.close/curOhlc.c[ii-1]-1)*100 : 0;
     const cl = d.close >= d.open ? UP : DOWN;
     const av = v20arr[ii]; const pct = av ? Math.round(vv/av*100) : null;
@@ -2031,6 +2033,31 @@ window.__loiLienTiep = 0;
     } catch(e){}
     nhipGia();
   }, chuKy);
+})();
+// Ong nuoc nhanh: ma dang mo chi tiet keo nen 1 phut dchart moi 10s (nguon ~realtime)
+(function nhipNhanh(){
+  setTimeout(async () => {
+    try {
+      if (document.visibilityState === 'visible' && liveWatch.inSession() && curT && curOhlc && document.getElementById('proK')) {
+        const to = Math.floor(Date.now()/1000);
+        const r = await (await fetch('https://dchart-api.vndirect.com.vn/dchart/history?symbol=' + curT + '&resolution=1&from=' + (to - 8*3600) + '&to=' + to)).json();
+        const n = ((r && r.t) || []).length;
+        if (n) {
+          const row = byT[curT];
+          const nb = curOhlc.t.length;
+          if (row && row.v20 && nb >= 2 && liveVolOf(curT, curOhlc.t[nb-1]) != null) {
+            const p = r.c[n-1];
+            let kl = 0; for (let i = 0; i < n; i++) kl += (r.v[i] || 0);
+            if (p > 0) { row.p = p; row.chg = +((p / curOhlc.c[nb-2] - 1) * 100).toFixed(2); }
+            if (kl > 0) row.vx = +(kl / row.v20).toFixed(2);
+            syncLiveBar();
+            try { if (!window.__dHov) updateDPx(null); } catch(e){}
+          }
+        }
+      }
+    } catch(e){}
+    nhipNhanh();
+  }, 10000);
 })();
 // Quay lai tab la cap nhat gia NGAY, khong cho nhip (Chrome dong bang tab nen)
 document.addEventListener('visibilitychange', () => {
