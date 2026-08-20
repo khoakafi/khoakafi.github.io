@@ -84,7 +84,7 @@ function bollS(c,n=20,k=2){ const ma=smaS(c,n); return c.map((_,i)=>{ if(ma[i]==
 // ================= ĐIỀU HƯỚNG =================
 const views = ['market','screener','watch','detail','compare','leader'];
 $$('.nav-link').forEach(b => b.onclick = () => showView(b.dataset.view));
-function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { $('#view-'+x).style.display = x===v?'':'none'; }); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view===v)); const fd=document.getElementById('footDisc'); if(fd) fd.style.display=(v==='screener'||v==='news'||v==='compare'||v==='leader')?'none':''; if(!skip) inits[v] && inits[v](); }
+function showView(v, skip){ ga('view_tab', {tab_name: v}); views.forEach(x => { $('#view-'+x).style.display = x===v?'':'none'; }); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view===v)); const fd=document.getElementById('footDisc'); if(fd) fd.style.display=(v==='screener'||v==='news'||v==='compare'||v==='leader'||v==='fund')?'none':''; if(!skip) inits[v] && inits[v](); }
 window.showView = showView;
 
 const inits = {};
@@ -2336,14 +2336,14 @@ document.addEventListener('visibilitychange', () => {
                 he = bits.length ? bits.join(' · ') : '<span class="mini">trong rổ</span>';
               }
               return '<tr class="row" onclick="openDetail(' + String.fromCharCode(39) + a.t + String.fromCharCode(39) + ')" title="' + a.quy.slice(0,12).join(', ') + '">'
-                + '<td class="mini">' + (i+1) + '</td>'
+                + '<td class="mini" style="text-align:left">' + (i+1) + '</td>'
                 + '<td><b>' + a.t + '</b>' + (r ? ' <span class="mini">' + (r.b==='HN'?'HNX':'HOSE') + '</span>' : '') + '</td>'
                 + '<td style="text-align:right"><b>' + a.n + '</b></td>'
                 + '<td style="text-align:right">' + vnd(a.val) + '</td>'
                 + '<td style="text-align:right">' + p1(a.tb) + '</td>'
                 + '<td style="text-align:right">' + p1(a.max) + '</td>'
-                + '<td class="mini">' + (a.nganh||'—') + '</td>'
-                + '<td class="mini">' + he + '</td>'
+                + '<td class="mini" style="text-align:left">' + (a.nganh||'—') + '</td>'
+                + '<td class="mini" style="text-align:left">' + he + '</td>'
                 + '</tr>';
             }).join('');
         loaded = true;
