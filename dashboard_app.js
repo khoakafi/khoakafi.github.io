@@ -1137,7 +1137,9 @@ function loadProChart(){
     const gtd = (vv != null && d.close) ? (d.close * vv) / 1e6 : null;
     const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
     if (leg) leg.innerHTML = '<b>' + curT + '</b>' + SP + dstr + SP + 'Open = ' + d.open + SP + 'High = ' + d.high + SP + 'Low = ' + d.low + SP + 'Close = ' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%)' + SP + 'MA20 = ' + (maV == null ? '—' : maV);
-    if (vleg) vleg.innerHTML = dstr + SP + 'VOL = ' + (vv == null ? '—' : Math.round(vv).toLocaleString('en-US')) + SP + 'GTGD = ' + (gtd == null ? '—' : gtd.toFixed(2) + ' tỷ') + SP + 'GTGD 20D = ' + (gt20 == null ? '—' : gt20.toFixed(2) + ' tỷ') + (pct == null ? '' : SP + pct + '%');
+    const _isIx = ((XROW(curT)||{}).b === 'IX');
+    if (vleg && _isIx) vleg.innerHTML = dstr + SP + 'VOL = ' + (vv == null ? '—' : Math.round(vv).toLocaleString('en-US')) + (pct == null ? '' : SP + pct + '%');
+    else if (vleg) vleg.innerHTML = dstr + SP + 'VOL = ' + (vv == null ? '—' : Math.round(vv).toLocaleString('en-US')) + SP + 'GTGD = ' + (gtd == null ? '—' : gtd.toFixed(2) + ' tỷ') + SP + 'GTGD 20D = ' + (gt20 == null ? '—' : gt20.toFixed(2) + ' tỷ') + (pct == null ? '' : SP + pct + '%');
   };
   window.__proLegend = showLeg;
   showLeg(null);
