@@ -1124,7 +1124,7 @@ function loadProChart(){
     const maV = ii >= 19 && ma[ii-19] ? ma[ii-19].value : null;
     const SP = '&nbsp;&nbsp;&nbsp;';
     let dstr = '';
-    try { const ps = String(curOhlc.t[ii]).split('-'); dstr = ps.length === 3 ? ps[2] + '/' + ps[1] + '/' + ps[0] : String(curOhlc.t[ii]); } catch(ex){}
+    try { const tv = curOhlc.t[ii]; if (typeof tv === 'number' || /^\d+$/.test(String(tv))) { const dd = new Date(Number(tv) * 1000); const z = n => (n < 10 ? '0' : '') + n; dstr = z(dd.getUTCDate()) + '/' + z(dd.getUTCMonth() + 1) + '/' + dd.getUTCFullYear(); } else { const ps = String(tv).split('-'); dstr = ps.length === 3 ? ps[2] + '/' + ps[1] + '/' + ps[0] : String(tv); } } catch(ex){}
     const gtd = (vv != null && d.close) ? (d.close * vv) / 1e6 : null;
     const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
     if (leg) leg.innerHTML = '<b>' + curT + '</b>' + SP + dstr + SP + 'Open = ' + d.open + SP + 'High = ' + d.high + SP + 'Low = ' + d.low + SP + 'Close = ' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%)' + SP + 'MA20 = ' + (maV == null ? '—' : maV);
