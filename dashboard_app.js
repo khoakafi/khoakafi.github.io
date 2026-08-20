@@ -2254,11 +2254,11 @@ document.addEventListener('visibilitychange', () => {
     d.id = 'view-fund'; d.style.display = 'none';
     d.innerHTML =
       '<div class="card">'
-      + '<h2 style="margin:0 0 2px">Fund Insight <span class="hint">mã được các quỹ nắm giữ nhiều nhất</span></h2>'
+      + '<h2 style="margin:0 0 2px">Fund Insight <span class="hint">quỹ mở nội địa đang cầm gì</span></h2>'
       + '<div class="mini" id="fdMeta" style="margin-bottom:10px">Đang tải danh mục các quỹ…</div>'
       + '<div id="fdNote" style="border:1px solid var(--border);border-left:4px solid #18a34b;background:#fff;border-radius:10px;padding:10px 14px;margin:0 0 12px;font-size:12.5px;line-height:1.6;color:var(--muted)">'
-      +   '<b style="color:var(--text)">Đọc bảng này thế nào.</b> Danh mục quỹ được công bố <b>hàng tháng</b>, trễ khoảng hai tuần so với thực tế — nên đây không phải công cụ bấm điểm mua, mà là bản đồ cho biết tiền lớn đang đứng ở đâu. '
-      +   'Mỗi quỹ chỉ công bố khoảng 10 khoản nắm giữ lớn nhất, vì vậy con số dưới đây là phần nổi, không phải toàn bộ danh mục.'
+      +   '<b style="color:var(--text)">Phạm vi.</b> Đây là <b>quỹ mở nội địa</b> — không gồm các quỹ lớn nhất thị trường (VEIL, VOF, PYN Elite, Fubon, VanEck) vì nhóm đó không công bố qua kênh này. '
+      +   'Danh mục công bố <b>hàng tháng</b>, trễ khoảng hai tuần, và mỗi quỹ chỉ nêu khoảng 10 khoản lớn nhất — nên đây là bản đồ vị thế, không phải công cụ bấm điểm mua.'
       + '</div>'
       + '<style>#view-fund{--fg:#128A3E;--fr:#E5484D;--fb:#2A78D6;--fi:#1F2937;--fm:#7A828E;--fl:#E8EAEF}'
       + '#fiGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 12px}'
@@ -2343,7 +2343,7 @@ document.addEventListener('visibilitychange', () => {
         }).sort((x,y) => (y.n - x.n) || (y.val - x.val));
 
         const dstr = newest ? (function(){ const z=n=>(n<10?'0':'')+n; const t=new Date(newest); return z(t.getDate())+'/'+z(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
-        meta.innerHTML = 'Tổng hợp từ <b>' + nQ + '/' + funds.length + ' quỹ</b> cổ phiếu &amp; cân bằng · <b>' + rows.length + ' mã</b> xuất hiện trong các danh mục · số liệu công bố tới ' + dstr + (thieu ? ' · <span style="color:#B45309">' + thieu + ' quỹ chưa đọc được</span>' : '');
+        meta.innerHTML = 'Đọc được <b>' + nQ + '/' + funds.length + ' quỹ</b> mở nội địa · <b>' + rows.length + ' mã</b> xuất hiện trong các danh mục · số liệu công bố tới ' + dstr + (thieu ? ' · <span style="color:#B45309">' + thieu + ' quỹ chưa đọc được</span>' : '');
 
 
         // ===== tiles + cac the bieu do =====
