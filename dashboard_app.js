@@ -2280,8 +2280,22 @@ document.addEventListener('visibilitychange', () => {
         if (!funds.length) throw new Error('không lấy được danh sách quỹ');
         meta.textContent = 'Đang đọc danh mục ' + funds.length + ' quỹ…';
 
-        const dets = await Promise.all(funds.map(f =>
-          fetch('https://api.fmarket.vn/res/products/' + f.id).then(r=>r.json()).then(j => ({f, d:(j.data||{})})).catch(()=>null)));
+        const one = async (f, tries) => {
+          for (let i = 0; i < (tries||3); i++) {
+            try { const r = await fetch('https://api.fmarket.vn/res/products/' + f.id);
+              if (r.ok) { const j = await r.json(); if (j && j.data) return { f, d: j.data }; } } catch(e){}
+            await new Promise(z => setTimeout(z, 300 + i * 500));
+          }
+          return null;
+        };
+        const dets = [];
+        for (let i = 0; i < funds.length; i += 6) {
+          const part = await Promise.all(funds.slice(i, i + 6).map(f => one(f)));
+          part.forEach(x => dets.push(x));
+          meta.textContent = 'Đang đọc danh mục quỹ… ' + Math.min(i + 6, funds.length) + '/' + funds.length;
+          if (i + 6 < funds.length) await new Promise(z => setTimeout(z, 120));
+        }
+        const thieu = dets.filter(x => !x).length;
 
         const agg = {}; let nQ = 0, newest = 0;
         dets.filter(Boolean).forEach(x => {
@@ -2307,7 +2321,7 @@ document.addEventListener('visibilitychange', () => {
         }).sort((x,y) => (y.n - x.n) || (y.val - x.val));
 
         const dstr = newest ? (function(){ const z=n=>(n<10?'0':'')+n; const t=new Date(newest); return z(t.getDate())+'/'+z(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
-        meta.innerHTML = 'Tổng hợp từ <b>' + nQ + ' quỹ</b> cổ phiếu &amp; cân bằng · <b>' + rows.length + ' mã</b> xuất hiện trong các danh mục · số liệu công bố tới ' + dstr;
+        meta.innerHTML = 'Tổng hợp từ <b>' + nQ + '/' + funds.length + ' quỹ</b> cổ phiếu &amp; cân bằng · <b>' + rows.length + ' mã</b> xuất hiện trong các danh mục · số liệu công bố tới ' + dstr + (thieu ? ' · <span style="color:#B45309">' + thieu + ' quỹ chưa đọc được</span>' : '');
 
         tb.innerHTML =
           '<tr><th style="text-align:left">#</th><th style="text-align:left">Mã</th><th>Số quỹ cầm</th><th>Tổng giá trị (tỷ)</th>'
