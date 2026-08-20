@@ -968,8 +968,8 @@ function loadProChart(){
   wrap.innerHTML = '<div id="proK" style="position:relative">'
     + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas></div>'
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
-    + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div>'
-    + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div>'
+    + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div>'
+    + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div>'
     + '<button id="proFsBtn" title="Phóng to toàn màn hình" style="position:absolute;top:6px;right:8px;z-index:6;width:30px;height:30px;border:1px solid #DDE1E6;border-radius:6px;background:rgba(255,255,255,.92);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;color:#787B86"></button>'
     + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
@@ -1107,6 +1107,8 @@ function loadProChart(){
   // legend
   const v20arr = []; let sv = 0;
   for (let i = 0; i < curOhlc.v.length; i++){ sv += curOhlc.v[i]; if (i >= 20) sv -= curOhlc.v[i-20]; v20arr.push(i >= 19 ? sv/20 : null); }
+  const gt20arr = []; let sg = 0;
+  for (let i = 0; i < curOhlc.v.length; i++){ sg += curOhlc.v[i] * curOhlc.c[i]; if (i >= 20) sg -= curOhlc.v[i-20] * curOhlc.c[i-20]; gt20arr.push(i >= 19 ? sg/20 : null); }
   const leg = document.getElementById('proLegend');
   const vleg = document.getElementById('proVolLegend');
   const fmtVol = v => v == null ? '—' : (v >= 1e6 ? (v/1e6).toFixed(2) + 'tr' : Math.round(v/1e3) + 'k');
@@ -1120,8 +1122,13 @@ function loadProChart(){
     const cl = d.close >= d.open ? UP : DOWN;
     const av = v20arr[ii]; const pct = av ? Math.round(vv/av*100) : null;
     const maV = ii >= 19 && ma[ii-19] ? ma[ii-19].value : null;
-    if (leg) leg.innerHTML = '<b>' + curT + '</b> · O ' + d.open + ' · H ' + d.high + ' · L ' + d.low + ' · C ' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%) · MA20 ' + (maV == null ? '—' : maV);
-    if (vleg) vleg.innerHTML = 'KL ' + fmtVol(vv) + (pct == null ? '' : ' (' + pct + '%)');
+    const SP = '&nbsp;&nbsp;&nbsp;';
+    let dstr = '';
+    try { const ps = String(curOhlc.t[ii]).split('-'); dstr = ps.length === 3 ? ps[2] + '/' + ps[1] + '/' + ps[0] : String(curOhlc.t[ii]); } catch(ex){}
+    const gtd = (vv != null && d.close) ? (d.close * vv) / 1e6 : null;
+    const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
+    if (leg) leg.innerHTML = '<b>' + curT + '</b>' + SP + dstr + SP + 'Open = ' + d.open + SP + 'High = ' + d.high + SP + 'Low = ' + d.low + SP + 'Close = ' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%)' + SP + 'MA20 = ' + (maV == null ? '—' : maV);
+    if (vleg) vleg.innerHTML = dstr + SP + 'VOL = ' + (vv == null ? '—' : Math.round(vv).toLocaleString('en-US')) + SP + 'GTGD = ' + (gtd == null ? '—' : gtd.toFixed(2) + ' tỷ') + SP + 'GTGD 20D = ' + (gt20 == null ? '—' : gt20.toFixed(2) + ' tỷ') + (pct == null ? '' : SP + pct + '%');
   };
   window.__proLegend = showLeg;
   showLeg(null);
