@@ -969,7 +969,7 @@ function loadProChart(){
     + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas></div>'
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
     + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div>'
-    + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:1px 7px;border-radius:4px;pointer-events:none"></div>'
+    + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div>'
     + '<button id="proFsBtn" title="Phóng to toàn màn hình" style="position:absolute;top:6px;right:8px;z-index:6;width:30px;height:30px;border:1px solid #DDE1E6;border-radius:6px;background:rgba(255,255,255,.92);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;color:#787B86"></button>'
     + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
@@ -1120,8 +1120,8 @@ function loadProChart(){
     const cl = d.close >= d.open ? UP : DOWN;
     const av = v20arr[ii]; const pct = av ? Math.round(vv/av*100) : null;
     const maV = ii >= 19 && ma[ii-19] ? ma[ii-19].value : null;
-    if (leg) leg.innerHTML = '<b>' + curT + '</b> <span style="color:' + cl + '">O ' + d.open + ' · H ' + d.high + ' · L ' + d.low + ' · C <b>' + d.close + '</b></span> <b style="color:' + (chg >= 0 ? UP : DOWN) + '">' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%</b> · <span style="color:#2962FF">MA20 ' + (maV == null ? '—' : maV) + '</span>';
-    if (vleg) vleg.innerHTML = '<span style="color:#787B86">KL</span> <b>' + fmtVol(vv) + '</b>' + (pct == null ? '' : ' <span style="color:' + (pct >= 200 ? '#B45309' : '#787B86') + '">(' + pct + '%)</span>');
+    if (leg) leg.innerHTML = '<b>' + curT + '</b> · O ' + d.open + ' · H ' + d.high + ' · L ' + d.low + ' · C ' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%) · MA20 ' + (maV == null ? '—' : maV);
+    if (vleg) vleg.innerHTML = 'KL ' + fmtVol(vv) + (pct == null ? '' : ' (' + pct + '%)');
   };
   window.__proLegend = showLeg;
   showLeg(null);
