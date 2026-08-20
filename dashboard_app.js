@@ -970,6 +970,7 @@ function loadProChart(){
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
     + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:4px;pointer-events:none"></div>'
     + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:11.5px/1.5 Inter,sans-serif;color:#131722;background:rgba(255,255,255,.78);padding:1px 7px;border-radius:4px;pointer-events:none"></div>'
+    + '<button id="proFsBtn" title="Phóng to toàn màn hình" style="position:absolute;top:6px;right:8px;z-index:6;width:30px;height:30px;border:1px solid #DDE1E6;border-radius:6px;background:rgba(255,255,255,.92);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;color:#787B86"></button>'
     + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
   try { if (proVolChart && proVolChart.remove) proVolChart.remove(); } catch(e){}
@@ -1058,6 +1059,46 @@ function loadProChart(){
   addProBadges();
   const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 }); } catch(e){} };
   __setRange(); setTimeout(__setRange, 150); setTimeout(__setRange, 600);
+  const _fsEx = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>';
+  const _fsCo = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/></svg>';
+  function setProFS(on){
+    window.__proFS = !!on;
+    const w2 = document.getElementById('chartProWrap');
+    const px2 = document.getElementById('proPx');
+    const vp2 = document.getElementById('proVolPane');
+    const vl2 = document.getElementById('proVolLegend');
+    const pk2 = document.getElementById('proK');
+    const b2 = document.getElementById('proFsBtn');
+    if (!w2 || !px2 || !vp2) return;
+    if (on) {
+      w2.style.cssText = 'position:fixed;inset:0;z-index:99999;background:#fff;padding:10px 12px;overflow:hidden';
+      if (pk2) pk2.style.setProperty('height','auto','important');
+      const vh2 = window.innerHeight - 20;
+      const volH = Math.max(110, Math.round(vh2 * 0.20));
+      const pxH = Math.max(200, vh2 - volH);
+      px2.style.height = pxH + 'px';
+      vp2.style.height = volH + 'px';
+      if (vl2) vl2.style.top = (pxH + 6) + 'px';
+      document.body.style.overflow = 'hidden';
+    } else {
+      w2.style.cssText = '';
+      if (pk2) pk2.style.removeProperty('height');
+      px2.style.height = '360px';
+      vp2.style.height = '145px';
+      if (vl2) vl2.style.top = '366px';
+      document.body.style.overflow = '';
+    }
+    if (b2) { b2.innerHTML = on ? _fsCo : _fsEx; b2.title = on ? 'Thu nhỏ (Esc)' : 'Phóng to toàn màn hình'; }
+    setTimeout(alignScales, 60); setTimeout(alignScales, 300);
+  }
+  window.__setProFS = setProFS;
+  const _fsB = document.getElementById('proFsBtn');
+  if (_fsB) { _fsB.innerHTML = window.__proFS ? _fsCo : _fsEx; _fsB.onclick = function(){ setProFS(!window.__proFS); }; }
+  if (!window.__proFSWired) { window.__proFSWired = true;
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && window.__proFS && window.__setProFS) window.__setProFS(false); });
+    window.addEventListener('resize', function(){ if (window.__proFS && window.__setProFS) window.__setProFS(true); });
+  }
+  if (window.__proFS) setProFS(true);
   // legend
   const v20arr = []; let sv = 0;
   for (let i = 0; i < curOhlc.v.length; i++){ sv += curOhlc.v[i]; if (i >= 20) sv -= curOhlc.v[i-20]; v20arr.push(i >= 19 ? sv/20 : null); }
