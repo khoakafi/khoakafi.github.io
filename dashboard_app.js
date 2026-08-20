@@ -1071,9 +1071,14 @@ function loadProChart(){
     const b2 = document.getElementById('proFsBtn');
     if (!w2 || !px2 || !vp2) return;
     if (on) {
-      w2.style.cssText = 'position:fixed;inset:0;z-index:99999;background:#fff;padding:10px 12px;overflow:hidden';
+      try { window.scrollTo(0,0); } catch(ex){}
+      const hd2 = document.querySelector('.topbar');
+      const ft2 = document.getElementById('nameBar');
+      const topY = hd2 ? Math.round(hd2.getBoundingClientRect().bottom) : 0;
+      const botH = ft2 ? Math.max(0, Math.round(window.innerHeight - ft2.getBoundingClientRect().top)) : 0;
+      w2.style.cssText = 'position:fixed;left:0;right:0;top:' + topY + 'px;bottom:' + botH + 'px;z-index:70;background:#fff;padding:8px 12px;overflow:hidden';
       if (pk2) pk2.style.setProperty('height','auto','important');
-      const vh2 = window.innerHeight - 20;
+      const vh2 = window.innerHeight - topY - botH - 16;
       const volH = Math.max(110, Math.round(vh2 * 0.20));
       const pxH = Math.max(200, vh2 - volH);
       px2.style.height = pxH + 'px';
