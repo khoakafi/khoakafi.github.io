@@ -2260,6 +2260,27 @@ document.addEventListener('visibilitychange', () => {
       +   '<b style="color:var(--text)">Đọc bảng này thế nào.</b> Danh mục quỹ được công bố <b>hàng tháng</b>, trễ khoảng hai tuần so với thực tế — nên đây không phải công cụ bấm điểm mua, mà là bản đồ cho biết tiền lớn đang đứng ở đâu. '
       +   'Mỗi quỹ chỉ công bố khoảng 10 khoản nắm giữ lớn nhất, vì vậy con số dưới đây là phần nổi, không phải toàn bộ danh mục.'
       + '</div>'
+      + '<style>#view-fund{--fg:#128A3E;--fr:#E5484D;--fb:#2A78D6;--fi:#1F2937;--fm:#7A828E;--fl:#E8EAEF}'
+      + '#fiGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 12px}'
+      + '@media(max-width:900px){#fiGrid{grid-template-columns:1fr}}'
+      + '#view-fund .fiC{border:1px solid var(--fl);border-radius:12px;background:#fff;padding:14px 16px 16px}'
+      + '#view-fund .fiC h3{margin:0 0 3px;font-size:14.5px;font-weight:800;color:var(--fi)}'
+      + '#view-fund .fiS{font-size:12px;color:var(--fm);line-height:1.55;margin:0 0 12px}'
+      + '#view-fund .fiK{font-size:12.5px;line-height:1.6;color:var(--fi);background:#F3F8F4;border-left:3px solid var(--fg);border-radius:0 7px 7px 0;padding:7px 11px;margin:11px 0 0}'
+      + '#fiTiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 12px}'
+      + '@media(max-width:760px){#fiTiles{grid-template-columns:repeat(2,minmax(0,1fr))}}'
+      + '#view-fund .fiT{border:1px solid var(--fl);border-radius:12px;background:#fff;padding:12px 14px}'
+      + '#view-fund .fiT .n{font-size:23px;font-weight:800;color:var(--fi);line-height:1.15;font-variant-numeric:tabular-nums}'
+      + '#view-fund .fiT .l{font-size:11.5px;color:var(--fm);margin-top:2px}'
+      + '#view-fund .fiR{display:grid;grid-template-columns:52px 1fr 66px;align-items:center;gap:9px;margin:0 0 5px;font-size:12.5px}'
+      + '#view-fund .fiR b{font-weight:700;color:var(--fi)}'
+      + '#view-fund .fiK2{height:15px;background:#F1F3F6;border-radius:4px;overflow:hidden}'
+      + '#view-fund .fiF{height:100%;border-radius:4px;background:var(--fg)}'
+      + '#view-fund .fiV{text-align:right;font-variant-numeric:tabular-nums;color:var(--fm)}'
+      + '#view-fund .fiL{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--fm);margin:9px 0 0}'
+      + '#view-fund .fiL i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:-1px}'
+      + '</style>'
+      + '<div id="fiTiles"></div><div id="fiGrid"></div>'
       + '<div style="overflow:auto"><table id="fdTable"><tbody><tr><td class="mini">Đang tải…</td></tr></tbody></table></div>'
       + '</div>';
     wrap.appendChild(d);
@@ -2297,16 +2318,17 @@ document.addEventListener('visibilitychange', () => {
         }
         const thieu = dets.filter(x => !x).length;
 
-        const agg = {}; let nQ = 0, newest = 0;
+        const agg = {}, sec = {}; let nQ = 0, newest = 0, tongGT = 0;
         dets.filter(Boolean).forEach(x => {
           const hs = (x.d.productTopHoldingList||[]).filter(h => h.type === 'STOCK' && h.stockCode);
           if (!hs.length) return;
           nQ++;
+          (x.d.productIndustriesHoldingList||[]).forEach(g => { if (!g.industry) return; sec[g.industry] = (sec[g.industry]||0) + (g.assetPercent||0); });
           hs.forEach(h => {
             const k = h.stockCode;
             if (!agg[k]) agg[k] = { t:k, n:0, val:0, vol:0, ws:[], nganh:h.industry||'', quy:[] };
             const a = agg[k];
-            a.n++; a.val += (h.assetValue||0); a.vol += (h.volume||0);
+            a.n++; a.val += (h.assetValue||0); a.vol += (h.volume||0); tongGT += (h.assetValue||0);
             if (h.netAssetPercent != null) a.ws.push(h.netAssetPercent);
             a.quy.push(x.f.shortName);
             if (h.updateAt && h.updateAt > newest) newest = h.updateAt;
@@ -2322,6 +2344,69 @@ document.addEventListener('visibilitychange', () => {
 
         const dstr = newest ? (function(){ const z=n=>(n<10?'0':'')+n; const t=new Date(newest); return z(t.getDate())+'/'+z(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
         meta.innerHTML = 'Tổng hợp từ <b>' + nQ + '/' + funds.length + ' quỹ</b> cổ phiếu &amp; cân bằng · <b>' + rows.length + ' mã</b> xuất hiện trong các danh mục · số liệu công bố tới ' + dstr + (thieu ? ' · <span style="color:#B45309">' + thieu + ' quỹ chưa đọc được</span>' : '');
+
+
+        // ===== tiles + cac the bieu do =====
+        const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+        const sgn = v => (v>0?'+':'') + v.toFixed(0);
+        const bar = (label, w, val, col, lw) => '<div class="fiR"' + (lw?' style="grid-template-columns:'+lw+' 1fr 56px"':'') + '><b' + (lw?' style="font-size:11.5px;font-weight:600"':'') + '>' + esc(label) + '</b><div class="fiK2"><div class="fiF" style="width:' + w.toFixed(1) + '%' + (col?';background:'+col:'') + '"></div></div><span class="fiV">' + val + '</span></div>';
+        document.getElementById('fiTiles').innerHTML = [
+          [nQ, 'quỹ mở nội địa đọc được'],
+          [rows.length, 'mã trong các danh mục'],
+          [Math.round(tongGT/1e12) + ' nghìn tỷ', 'giá trị các khoản nắm giữ lớn'],
+          [dstr, 'ngày số liệu mới nhất']
+        ].map(x => '<div class="fiT"><div class="n">' + x[0] + '</div><div class="l">' + x[1] + '</div></div>').join('');
+
+        const A = rows.slice(0,15), amax = A[0] ? A[0].n : 1;
+        const cardA = '<div class="fiC"><h3>Mã nhiều quỹ cùng nắm nhất</h3>'
+          + '<p class="fiS">Đếm số quỹ có mã trong nhóm nắm giữ lớn. Đo <b>độ rộng đồng thuận</b>, không đo quy mô tiền.</p>'
+          + A.map(a => bar(a.t, a.n/amax*100, a.n + ' quỹ')).join('')
+          + (A[0] ? '<div class="fiK">' + esc(A[0].t + ' được ' + A[0].n + '/' + nQ + ' quỹ cùng nắm — mã đồng thuận nhất trong nhóm quỹ nội.') + '</div>' : '')
+          + '</div>';
+
+        const B = rows.filter(a => a.max != null).slice().sort((x,y) => y.max - x.max).slice(0,12);
+        const bmax = B[0] ? B[0].max : 1;
+        const cardB = '<div class="fiC"><h3>Mã bị đặt cược nặng nhất</h3>'
+          + '<p class="fiS">Tỷ trọng lớn nhất mà một quỹ dành cho mã đó. Nhiều quỹ nắm nhẹ là <b>đồng thuận</b>; ít quỹ nắm nặng là <b>cược riêng</b>.</p>'
+          + B.map(a => bar(a.t, a.max/bmax*100, a.max.toFixed(1) + '%', a.n<=3 ? 'var(--fb)' : '')).join('')
+          + '<div class="fiL"><span><i style="background:#128A3E"></i>từ 4 quỹ trở lên — đồng thuận</span><span><i style="background:#2A78D6"></i>3 quỹ trở xuống — cược riêng</span></div>'
+          + (B[0] ? '<div class="fiK">' + esc(B[0].t + ': có quỹ dành ' + B[0].max.toFixed(1) + '% tài sản cho riêng mã này' + (B[0].n<=3 ? ' — và chỉ ' + B[0].n + ' quỹ nắm, tức là cược riêng chứ không phải đồng thuận.' : '.')) + '</div>' : '')
+          + '</div>';
+
+        const S = Object.keys(sec).map(k => ({k, v: sec[k]/nQ})).sort((a,b)=>b.v-a.v).slice(0,12);
+        const smax = S[0] ? S[0].v : 1;
+        const cardC = '<div class="fiC"><h3>Tiền quỹ đang đứng ở ngành nào</h3>'
+          + '<p class="fiS">Tỷ trọng ngành bình quân trên toàn bộ ' + nQ + ' quỹ.</p>'
+          + S.map(x => bar(x.k, x.v/smax*100, x.v.toFixed(1) + '%', '', '116px')).join('')
+          + (S[0] ? '<div class="fiK">' + esc(S[0].k + ' chiếm ' + S[0].v.toFixed(1) + '% tài sản bình quân — nhóm quỹ nội đang dồn vào đây nhiều nhất.') + '</div>' : '')
+          + '</div>';
+
+        let cardD = '';
+        try {
+          const codes = rows.slice(0,18).map(a => a.t);
+          const z2 = n => (n<10?'0':'')+n;
+          const f2 = dd => dd.getFullYear()+'-'+z2(dd.getMonth()+1)+'-'+z2(dd.getDate());
+          const fr = await fetch('https://api-finfo.vndirect.com.vn/v4/foreigns?q=code:' + codes.join(',') + '~tradingDate:gte:' + f2(new Date(Date.now()-30*86400000)) + '~tradingDate:lte:' + f2(new Date()) + '&size=900').then(r=>r.json());
+          const net = {};
+          ((fr||{}).data||[]).forEach(x => { if (x.netVal != null) net[x.code] = (net[x.code]||0) + x.netVal; });
+          const D = codes.filter(c => net[c] != null).map(c => ({t:c, nq:(agg[c]||{}).n, nv: net[c]/1e9})).sort((a,b)=>a.nv-b.nv);
+          if (D.length) {
+            const lim = Math.max.apply(null, D.map(x => Math.abs(x.nv))) || 1;
+            const xa = D.filter(x => x.nv < 0);
+            const key = xa.length ? (xa[0].t + ' đang được ' + xa[0].nq + ' quỹ nội nắm, nhưng khối ngoại rút ròng ' + Math.abs(xa[0].nv).toFixed(0) + ' tỷ một tháng qua — hai dòng tiền lớn đang đi ngược nhau ở mã này.') : 'Một tháng qua khối ngoại mua ròng ở hầu hết các mã quỹ nội đang nắm — hai dòng tiền cùng chiều.';
+            cardD = '<div class="fiC"><h3>Quỹ nội nắm × khối ngoại một tháng</h3>'
+              + '<p class="fiS">Danh mục quỹ là ảnh chụp hàng tháng; khối ngoại là số tươi từng ngày. Chỗ hai bên <b>ngược chiều</b> là chỗ đáng soi.</p>'
+              + D.map(x => { const w = Math.abs(x.nv)/lim*50, neg = x.nv < 0;
+                  return '<div class="fiR" style="grid-template-columns:52px 1fr 78px"><b>' + x.t + '</b>'
+                    + '<div style="position:relative;height:15px;background:#F1F3F6;border-radius:4px">'
+                    + '<div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:#D4D8DE"></div>'
+                    + '<div style="position:absolute;top:0;height:15px;border-radius:4px;background:' + (neg?'var(--fr)':'var(--fg)') + ';' + (neg?('right:50%;width:'+w.toFixed(1)+'%'):('left:50%;width:'+w.toFixed(1)+'%')) + '"></div></div>'
+                    + '<span class="fiV" style="color:' + (neg?'var(--fr)':'var(--fg)') + '">' + sgn(x.nv) + ' tỷ</span></div>'; }).join('')
+              + '<div class="fiL"><span><i style="background:#128A3E"></i>khối ngoại mua ròng (+)</span><span><i style="background:#E5484D"></i>khối ngoại bán ròng (−)</span></div>'
+              + '<div class="fiK">' + esc(key) + '</div></div>';
+          }
+        } catch(e){}
+        document.getElementById('fiGrid').innerHTML = cardA + cardB + cardC + cardD;
 
         tb.innerHTML =
           '<tr><th style="text-align:left">#</th><th style="text-align:left">Mã</th><th>Số quỹ cầm</th><th>Tổng giá trị (tỷ)</th>'
