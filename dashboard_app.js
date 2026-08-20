@@ -2236,6 +2236,111 @@ document.addEventListener('visibilitychange', () => {
     };
   }catch(e){}
 })();
+
+/* ===== Fund Insight — ma duoc cac quy nam giu nhieu nhat ===== */
+(function addFundTab(){
+  try{
+    const nav = document.querySelector('nav');
+    if (!nav || document.getElementById('view-fund')) return;
+    views.push('fund');
+    try { const ob = nav.querySelector('button[data-view="news"]'); if (ob) ob.style.display = 'none'; } catch(e){}
+    const b = document.createElement('button');
+    b.className = 'nav-link'; b.dataset.view = 'fund'; b.textContent = 'Fund Insight';
+    b.onclick = () => showView('fund');
+    const first = nav.querySelector('button');
+    nav.insertBefore(b, first ? first.nextSibling : null);
+    const wrap = document.getElementById('view-market').parentElement;
+    const d = document.createElement('div');
+    d.id = 'view-fund'; d.style.display = 'none';
+    d.innerHTML =
+      '<div class="card">'
+      + '<h2 style="margin:0 0 2px">Fund Insight <span class="hint">mã được các quỹ nắm giữ nhiều nhất</span></h2>'
+      + '<div class="mini" id="fdMeta" style="margin-bottom:10px">Đang tải danh mục các quỹ…</div>'
+      + '<div id="fdNote" style="border:1px solid var(--border);border-left:4px solid #18a34b;background:#fff;border-radius:10px;padding:10px 14px;margin:0 0 12px;font-size:12.5px;line-height:1.6;color:var(--muted)">'
+      +   '<b style="color:var(--text)">Đọc bảng này thế nào.</b> Danh mục quỹ được công bố <b>hàng tháng</b>, trễ khoảng hai tuần so với thực tế — nên đây không phải công cụ bấm điểm mua, mà là bản đồ cho biết tiền lớn đang đứng ở đâu. '
+      +   'Mỗi quỹ chỉ công bố khoảng 10 khoản nắm giữ lớn nhất, vì vậy con số dưới đây là phần nổi, không phải toàn bộ danh mục.'
+      + '</div>'
+      + '<div style="overflow:auto"><table id="fdTable"><tbody><tr><td class="mini">Đang tải…</td></tr></tbody></table></div>'
+      + '</div>';
+    wrap.appendChild(d);
+
+    const vnd = v => v == null ? '—' : (v/1e9).toFixed(0);
+    const p1 = v => v == null ? '—' : v.toFixed(1) + '%';
+    let loaded = false;
+
+    inits['fund'] = async function(){
+      if (loaded) return;
+      const meta = document.getElementById('fdMeta');
+      const tb = document.querySelector('#fdTable tbody');
+      try {
+        const body = { types:['NEW_FUND','TRADING_FUND'], issuerIds:[], sortOrder:'DESC', sortField:'annualizedReturn36Months',
+          page:1, pageSize:100, isIpo:false, fundAssetTypes:[], bondRemainPeriods:[], searchField:'', isBuyByReward:false, thirdAppIds:[] };
+        const lst = await fetch('https://api.fmarket.vn/res/products/filter', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)}).then(r=>r.json());
+        const funds = ((lst.data||{}).rows||[]).filter(f => { const n = (f.dataFundAssetType||{}).name || ''; return /cổ phiếu|cân bằng/i.test(n); });
+        if (!funds.length) throw new Error('không lấy được danh sách quỹ');
+        meta.textContent = 'Đang đọc danh mục ' + funds.length + ' quỹ…';
+
+        const dets = await Promise.all(funds.map(f =>
+          fetch('https://api.fmarket.vn/res/products/' + f.id).then(r=>r.json()).then(j => ({f, d:(j.data||{})})).catch(()=>null)));
+
+        const agg = {}; let nQ = 0, newest = 0;
+        dets.filter(Boolean).forEach(x => {
+          const hs = (x.d.productTopHoldingList||[]).filter(h => h.type === 'STOCK' && h.stockCode);
+          if (!hs.length) return;
+          nQ++;
+          hs.forEach(h => {
+            const k = h.stockCode;
+            if (!agg[k]) agg[k] = { t:k, n:0, val:0, vol:0, ws:[], nganh:h.industry||'', quy:[] };
+            const a = agg[k];
+            a.n++; a.val += (h.assetValue||0); a.vol += (h.volume||0);
+            if (h.netAssetPercent != null) a.ws.push(h.netAssetPercent);
+            a.quy.push(x.f.shortName);
+            if (h.updateAt && h.updateAt > newest) newest = h.updateAt;
+            if (!a.nganh && h.industry) a.nganh = h.industry;
+          });
+        });
+
+        const rows = Object.keys(agg).map(k => agg[k]).map(a => {
+          a.tb = a.ws.length ? a.ws.reduce((s,v)=>s+v,0)/a.ws.length : null;
+          a.max = a.ws.length ? Math.max.apply(null, a.ws) : null;
+          return a;
+        }).sort((x,y) => (y.n - x.n) || (y.val - x.val));
+
+        const dstr = newest ? (function(){ const z=n=>(n<10?'0':'')+n; const t=new Date(newest); return z(t.getDate())+'/'+z(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
+        meta.innerHTML = 'Tổng hợp từ <b>' + nQ + ' quỹ</b> cổ phiếu &amp; cân bằng · <b>' + rows.length + ' mã</b> xuất hiện trong các danh mục · số liệu công bố tới ' + dstr;
+
+        tb.innerHTML =
+          '<tr><th style="text-align:left">#</th><th style="text-align:left">Mã</th><th>Số quỹ cầm</th><th>Tổng giá trị (tỷ)</th>'
+          + '<th>Tỷ trọng TB</th><th>Cao nhất</th><th style="text-align:left">Ngành</th><th style="text-align:left">Trong hệ</th></tr>'
+          + rows.map(function(a, i){
+              const r = byT[a.t];
+              let he = '<span class="mini">ngoài rổ</span>';
+              if (r) {
+                const bits = [];
+                if (r.rs != null) bits.push('RS ' + r.rs);
+                if (r.watch) bits.push('<b style="color:#128A3E">đang theo dõi</b>');
+                he = bits.length ? bits.join(' · ') : '<span class="mini">trong rổ</span>';
+              }
+              return '<tr class="row" onclick="openDetail(' + String.fromCharCode(39) + a.t + String.fromCharCode(39) + ')" title="' + a.quy.slice(0,12).join(', ') + '">'
+                + '<td class="mini">' + (i+1) + '</td>'
+                + '<td><b>' + a.t + '</b>' + (r ? ' <span class="mini">' + (r.b==='HN'?'HNX':'HOSE') + '</span>' : '') + '</td>'
+                + '<td style="text-align:right"><b>' + a.n + '</b></td>'
+                + '<td style="text-align:right">' + vnd(a.val) + '</td>'
+                + '<td style="text-align:right">' + p1(a.tb) + '</td>'
+                + '<td style="text-align:right">' + p1(a.max) + '</td>'
+                + '<td class="mini">' + (a.nganh||'—') + '</td>'
+                + '<td class="mini">' + he + '</td>'
+                + '</tr>';
+            }).join('');
+        loaded = true;
+      } catch(e) {
+        meta.textContent = 'Chưa tải được dữ liệu quỹ: ' + e.message;
+        tb.innerHTML = '<tr><td class="mini">Nguồn dữ liệu quỹ tạm thời không phản hồi. Thử tải lại trang.</td></tr>';
+      }
+    };
+  }catch(e){}
+})();
+
 })();
 
 
