@@ -2281,8 +2281,8 @@ document.addEventListener('visibilitychange', () => {
       + '#fiPer{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}'
       + '#fiPer button{border:1px solid var(--fl);background:#fff;border-radius:99px;padding:5px 13px;font:600 12px Inter,sans-serif;color:var(--fm);cursor:pointer}'
       + '#fiPer button.on{background:var(--fi);border-color:var(--fi);color:#fff}'
-      + '#fiLeg{display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:var(--fm);margin:9px 0 0}'
-      + '#fiLeg span{display:flex;align-items:center;gap:5px}#fiLeg i{width:14px;height:3px;border-radius:2px;display:inline-block}'
+      + '#fiLeg,#view-fund #fiLeg2{display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:var(--fm);margin:9px 0 0}'
+      + '#fiLeg span,#view-fund #fiLeg2 span{display:flex;align-items:center;gap:5px}#fiLeg i,#view-fund #fiLeg2 i{width:14px;height:3px;border-radius:2px;display:inline-block}'
       + '</style>'
       + '<div class="card" style="padding:0;border:0;background:none;box-shadow:none">'
       + '<h2 style="margin:0 0 3px">Fund Insight <span class="hint">quỹ mở nội địa đang làm ăn ra sao và cầm gì</span></h2>'
@@ -2299,7 +2299,14 @@ document.addEventListener('visibilitychange', () => {
     const BM = '#1F2937';
     let loaded = false, F = [], BIG = [], CNT = {}, NAVH = {}, IXH = null, PICK = null, PER = 'navTo36Months', CHART = null;
 
-    const jp = async (u, b) => (await (await fetch(u, b ? {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(b)} : {})).json());
+    const jp = async (u, b) => { let er = null;
+      for (let a = 0; a < 4; a++) {
+        try { const r = await fetch(u, b ? {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(b)} : {});
+          if (r.ok) return await r.json(); er = new Error('HTTP ' + r.status); }
+        catch(e) { er = e; }
+        await new Promise(z => setTimeout(z, 500 * (a + 1)));
+      }
+      throw er || new Error('fetch fail'); };
     const pool = async (items, n, fn) => { const out = new Array(items.length); let i = 0;
       await Promise.all(Array.from({length:Math.min(n, items.length)}, async () => {
         while (i < items.length) { const k = i++; try { out[k] = await fn(items[k], k); } catch(e) { out[k] = null; } } }));
@@ -2319,7 +2326,7 @@ document.addEventListener('visibilitychange', () => {
         const rows = (await jp('https://api.fmarket.vn/res/products/filter', { types:['NEW_FUND','TRADING_FUND'], issuerIds:[], sortOrder:'DESC', sortField:'annualizedReturn36Months', page:1, pageSize:100, isIpo:false, fundAssetTypes:[], bondRemainPeriods:[], searchField:'', isBuyByReward:false, thirdAppIds:[] })).data.rows;
 
         meta.textContent = 'Đang tải danh mục ' + rows.length + ' quỹ…';
-        const dets = await pool(rows, 8, async f => ({ f, d: (await jp('https://api.fmarket.vn/res/products/' + f.id)).data }));
+        const dets = await pool(rows, 3, async f => ({ f, d: (await jp('https://api.fmarket.vn/res/products/' + f.id)).data }));
 
         let newest = 0;
         F = [];
@@ -2347,7 +2354,7 @@ document.addEventListener('visibilitychange', () => {
         meta.textContent = 'Đang tải đường NAV…';
         const to2 = Math.floor(Date.now()/1000) + 86400;
         try { IXH = await (await fetch('https://dchart-api.vndirect.com.vn/dchart/history?symbol=VNINDEX&resolution=D&from=' + (to2-86400*2000) + '&to=' + to2)).json(); } catch(e){ IXH = null; }
-        await pool(BIG, 6, async f => { NAVH[f.id] = (await jp('https://api.fmarket.vn/res/product/get-nav-history', {isAllData:0, productId:f.id, navPeriod:'navToBeginning'})).data || []; });
+        await pool(BIG, 3, async f => { NAVH[f.id] = (await jp('https://api.fmarket.vn/res/product/get-nav-history', {isAllData:0, productId:f.id, navPeriod:'navToBeginning'})).data || []; });
 
         const z2 = n => (n<10?'0':'')+n;
         const dstr = newest ? (function(){ const t=new Date(newest); return z2(t.getDate())+'/'+z2(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
@@ -2448,10 +2455,11 @@ document.addEventListener('visibilitychange', () => {
       el.onclick = e => { const tr = e.target.closest('tr[data-id]'); if (!tr) return; const f = BIG.find(x => String(x.id) === tr.dataset.id); if (f) pick(f); };
     }
 
-    function pick(f){
+    async function pick(f){
       if (!f) return;
       PICK = f;
       renderRank(); drawChart();
+      if (!(NAVH[f.id] || []).length) { try { NAVH[f.id] = (await jp('https://api.fmarket.vn/res/product/get-nav-history', {isAllData:0, productId:f.id, navPeriod:'navToBeginning'})).data || []; drawChart(); } catch(e){} }
       const H = f.hold.slice(0, 10);
       const hmax = H[0] ? (H[0].netAssetPercent||1) : 1;
       const rare = H.filter(h => (CNT[h.stockCode]||0) <= 4);
@@ -2469,7 +2477,7 @@ document.addEventListener('visibilitychange', () => {
         '<h3>' + esc(f.m) + ' <span style="font-weight:600;color:var(--fm);font-size:12px">' + esc(f.ten.slice(0,42)) + '</span></h3>'
         + '<p class="fiS">Quy mô <b>' + nv(f.nav) + ' tỷ</b> · 12 tháng ' + sg(f.r12) + ' · 10 mã nặng nhất chiếm <b>' + f.top.toFixed(0) + '%</b> tài sản</p>'
         + rows
-        + '<div id="fiLeg" style="margin:10px 0 0"><span><i style="background:var(--fb)"></i>đặt cược riêng — từ 4 quỹ trở xuống cùng cầm</span><span><i style="background:var(--fg)"></i>đồng thuận đám đông</span></div>'
+        + '<div id="fiLeg2" style="margin:10px 0 0"><span><i style="background:var(--fb)"></i>đặt cược riêng — từ 4 quỹ trở xuống cùng cầm</span><span><i style="background:var(--fg)"></i>đồng thuận đám đông</span></div>'
         + '<div class="fiK">' + (rare.length
             ? '<b>' + esc(f.m) + ' dám khác đám đông ở ' + rare.length + ' mã:</b> ' + esc(rare.map(h=>h.stockCode + ' (' + (CNT[h.stockCode]||0) + ' quỹ)').join(', ')) + '. Trung bình mỗi mã họ cầm có ' + avgCrowd.toFixed(0) + ' quỹ khác cùng nắm.'
             : 'Danh mục bám sát đồng thuận thị trường — trung bình mỗi mã có ' + avgCrowd.toFixed(0) + ' quỹ khác cùng nắm, không có vị thế đi riêng.')
