@@ -1154,7 +1154,8 @@ function loadProChart(){
     const gtd = (vv != null && d.close) ? (d.close * vv) / 1e6 : null;
     const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
     const dsh = NAR ? dstr.slice(0,5) : dstr;
-    if (leg) leg.innerHTML = '<b>' + curT + '</b>' + SP + dsh + SP + L.o + d.open + SP + L.h + d.high + SP + L.l + d.low + SP + L.c + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(NAR ? 1 : 2) + '%)' + SP + L.m + (maV == null ? '—' : maV);
+    const head = NAR ? '' : ('<b>' + curT + '</b>' + SP);
+    if (leg) leg.innerHTML = head + dsh + SP + L.o + d.open + SP + L.h + d.high + SP + L.l + d.low + SP + L.c + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(NAR ? 1 : 2) + '%)' + SP + L.m + (maV == null ? '—' : maV);
     const _isIx = ((XROW(curT)||{}).b === 'IX');
     const fV = x => x == null ? '—' : (NAR ? (x >= 1e6 ? (x/1e6).toFixed(2) + 'tr' : Math.round(x/1e3) + 'k') : Math.round(x).toLocaleString('en-US'));
     if (vleg && _isIx) vleg.innerHTML = dsh + SP + L.v + fV(vv) + (pct == null ? '' : SP + pct + '%');
