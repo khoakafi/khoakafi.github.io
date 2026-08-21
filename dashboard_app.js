@@ -2243,200 +2243,239 @@ document.addEventListener('visibilitychange', () => {
     const nav = document.querySelector('nav');
     if (!nav || document.getElementById('view-fund')) return;
     views.push('fund');
-    try { const ob = nav.querySelector('button[data-view="news"]'); if (ob) ob.style.display = 'none'; } catch(e){}
     const b = document.createElement('button');
     b.className = 'nav-link'; b.dataset.view = 'fund'; b.textContent = 'Fund Insight';
     b.onclick = () => showView('fund');
-    const first = nav.querySelector('button');
-    nav.insertBefore(b, first ? first.nextSibling : null);
-    const wrap = document.getElementById('view-market').parentElement;
+    const nb = nav.querySelector('[data-view="detail"]');
+    nb ? nav.insertBefore(b, nb) : nav.appendChild(b);
+    const host = document.querySelector('.wrap') || document.body;
     const d = document.createElement('div');
     d.id = 'view-fund'; d.style.display = 'none';
     d.innerHTML =
-      '<div class="card">'
-      + '<h2 style="margin:0 0 2px">Fund Insight <span class="hint">quỹ mở nội địa đang cầm gì</span></h2>'
-      + '<div class="mini" id="fdMeta" style="margin-bottom:10px">Đang tải danh mục các quỹ…</div>'
-      + '<div id="fdNote" style="border:1px solid var(--border);border-left:4px solid #18a34b;background:#fff;border-radius:10px;padding:10px 14px;margin:0 0 12px;font-size:12.5px;line-height:1.6;color:var(--muted)">'
-      +   '<b style="color:var(--text)">Phạm vi.</b> Đây là <b>quỹ mở nội địa</b> — không gồm các quỹ lớn nhất thị trường (VEIL, VOF, PYN Elite, Fubon, VanEck) vì nhóm đó không công bố qua kênh này. '
-      +   'Danh mục công bố <b>hàng tháng</b>, trễ khoảng hai tuần, và mỗi quỹ chỉ nêu khoảng 10 khoản lớn nhất — nên đây là bản đồ vị thế, không phải công cụ bấm điểm mua.'
-      + '</div>'
-      + '<style>#view-fund{--fg:#128A3E;--fr:#E5484D;--fb:#2A78D6;--fi:#1F2937;--fm:#7A828E;--fl:#E8EAEF}'
-      + '#fiGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 12px}'
-      + '@media(max-width:900px){#fiGrid{grid-template-columns:1fr}}'
-      + '#view-fund .fiC{border:1px solid var(--fl);border-radius:12px;background:#fff;padding:14px 16px 16px}'
-      + '#view-fund .fiC h3{margin:0 0 3px;font-size:14.5px;font-weight:800;color:var(--fi)}'
+      '<style>#view-fund{--fg:#128A3E;--fr:#E5484D;--fb:#2A78D6;--fi:#1F2937;--fm:#7A828E;--fl:#E8EAEF}'
+      + '#view-fund .fiC{border:1px solid var(--fl);border-radius:12px;background:#fff;padding:15px 17px 17px;margin:0 0 12px}'
+      + '#view-fund .fiC h3{margin:0 0 3px;font-size:15px;font-weight:800;color:var(--fi)}'
       + '#view-fund .fiS{font-size:12px;color:var(--fm);line-height:1.55;margin:0 0 12px}'
-      + '#view-fund .fiK{font-size:12.5px;line-height:1.6;color:var(--fi);background:#F3F8F4;border-left:3px solid var(--fg);border-radius:0 7px 7px 0;padding:7px 11px;margin:11px 0 0}'
-      + '#fiTiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 12px}'
+      + '#fiHero{border:1px solid var(--fl);border-radius:12px;background:linear-gradient(180deg,#F6FBF7,#fff);padding:16px 18px;margin:0 0 12px}'
+      + '#fiHero .big{font-size:26px;font-weight:800;color:var(--fi);line-height:1.2;letter-spacing:-.4px}'
+      + '#fiHero .sub{font-size:12.5px;color:var(--fm);margin-top:5px;line-height:1.6}'
+      + '#fiTiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:13px 0 0}'
       + '@media(max-width:760px){#fiTiles{grid-template-columns:repeat(2,minmax(0,1fr))}}'
-      + '#view-fund .fiT{border:1px solid var(--fl);border-radius:12px;background:#fff;padding:12px 14px}'
-      + '#view-fund .fiT .n{font-size:23px;font-weight:800;color:var(--fi);line-height:1.15;font-variant-numeric:tabular-nums}'
-      + '#view-fund .fiT .l{font-size:11.5px;color:var(--fm);margin-top:2px}'
-      + '#view-fund .fiR{display:grid;grid-template-columns:52px 1fr 66px;align-items:center;gap:9px;margin:0 0 5px;font-size:12.5px}'
+      + '#view-fund .fiT{border:1px solid var(--fl);border-radius:10px;background:#fff;padding:10px 12px}'
+      + '#view-fund .fiT .n{font-size:20px;font-weight:800;color:var(--fi);line-height:1.15;font-variant-numeric:tabular-nums}'
+      + '#view-fund .fiT .l{font-size:11px;color:var(--fm);margin-top:2px;line-height:1.45}'
+      + '#fiSplit{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:12px}'
+      + '@media(max-width:980px){#fiSplit{grid-template-columns:1fr}}'
+      + '#view-fund .fiR{display:grid;grid-template-columns:50px 1fr 54px 62px;align-items:center;gap:9px;margin:0 0 6px;font-size:12.5px}'
       + '#view-fund .fiR b{font-weight:700;color:var(--fi)}'
-      + '#view-fund .fiK2{height:15px;background:#F1F3F6;border-radius:4px;overflow:hidden}'
-      + '#view-fund .fiF{height:100%;border-radius:4px;background:var(--fg)}'
-      + '#view-fund .fiV{text-align:right;font-variant-numeric:tabular-nums;color:var(--fm)}'
-      + '#view-fund .fiL{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--fm);margin:9px 0 0}'
-      + '#view-fund .fiL i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:-1px}'
+      + '#view-fund .fiK2{height:16px;background:#F1F3F6;border-radius:4px;overflow:hidden}'
+      + '#view-fund .fiF{height:100%;border-radius:4px}'
+      + '#view-fund .fiV{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;color:var(--fi)}'
+      + '#view-fund .fiN{text-align:right;font-size:11px;color:var(--fm)}'
+      + '#view-fund .fiK{font-size:12.5px;line-height:1.6;color:var(--fi);background:#F3F8F4;border-left:3px solid var(--fg);border-radius:0 7px 7px 0;padding:8px 11px;margin:12px 0 0}'
+      + '#view-fund table{width:100%;border-collapse:collapse;font-size:12.5px}'
+      + '#view-fund th{font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--fm);font-weight:700;padding:7px 6px;border-bottom:1.5px solid var(--fl);text-align:right;white-space:nowrap}'
+      + '#view-fund td{padding:8px 6px;border-bottom:1px solid #F4F6F8;text-align:right;font-variant-numeric:tabular-nums}'
+      + '#view-fund tr.sel td{background:#F3F8F4}'
+      + '#view-fund tr.bm td{background:#FAFBFC}'
+      + '#fiPer{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}'
+      + '#fiPer button{border:1px solid var(--fl);background:#fff;border-radius:99px;padding:5px 13px;font:600 12px Inter,sans-serif;color:var(--fm);cursor:pointer}'
+      + '#fiPer button.on{background:var(--fi);border-color:var(--fi);color:#fff}'
+      + '#fiLeg{display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:var(--fm);margin:9px 0 0}'
+      + '#fiLeg span{display:flex;align-items:center;gap:5px}#fiLeg i{width:14px;height:3px;border-radius:2px;display:inline-block}'
       + '</style>'
-      + '<div id="fiTiles"></div><div id="fiGrid"></div>'
-      + '<div style="overflow:auto"><table id="fdTable"><tbody><tr><td class="mini">Đang tải…</td></tr></tbody></table></div>'
+      + '<div class="card" style="padding:0;border:0;background:none;box-shadow:none">'
+      + '<h2 style="margin:0 0 3px">Fund Insight <span class="hint">quỹ mở nội địa đang làm ăn ra sao và cầm gì</span></h2>'
+      + '<div id="fiMeta" class="mini" style="margin:0 0 13px">Đang tải…</div>'
+      + '<div id="fiHero"><div class="big" id="fiBig">—</div><div class="sub" id="fiSubT"></div>'
+      + '<div id="fiTiles"></div></div>'
+      + '<div class="fiC"><h3>Đường tăng trưởng NAV</h3><p class="fiS" id="fiChartS">So sánh 5 quỹ dẫn đầu với VN-Index. Bấm một quỹ ở bảng dưới để thêm vào biểu đồ.</p>'
+      + '<div id="fiPer"></div><div style="position:relative;height:330px"><canvas id="fiCanvas"></canvas></div><div id="fiLeg"></div></div>'
+      + '<div id="fiSplit"><div class="fiC" id="fiRank"></div><div class="fiC" id="fiDetail"></div></div>'
       + '</div>';
-    wrap.appendChild(d);
+    host.appendChild(d);
 
-    const vnd = v => v == null ? '—' : (v/1e9).toFixed(0);
-    const p1 = v => v == null ? '—' : v.toFixed(1) + '%';
-    let loaded = false;
+    const PAL = ['#2A78D6','#128A3E','#E5484D','#B45309','#7C3AED','#0E7490'];
+    const BM = '#1F2937';
+    let loaded = false, F = [], BIG = [], CNT = {}, NAVH = {}, IXH = null, PICK = null, PER = 'navTo36Months', CHART = null;
 
-    inits['fund'] = async function(){
+    const jp = async (u, b) => (await (await fetch(u, b ? {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(b)} : {})).json());
+    const pool = async (items, n, fn) => { const out = new Array(items.length); let i = 0;
+      await Promise.all(Array.from({length:Math.min(n, items.length)}, async () => {
+        while (i < items.length) { const k = i++; try { out[k] = await fn(items[k], k); } catch(e) { out[k] = null; } } }));
+      return out; };
+
+    const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    const nv = v => v == null ? '—' : (v/1e9).toFixed(0);
+    const sg = (v, dg) => v == null ? '—' : (v>=0?'+':'') + v.toFixed(dg==null?1:dg) + '%';
+    const pc = v => v == null ? '<span style="color:var(--fm)">—</span>' : '<span style="color:' + (v>=0?'var(--fg)':'var(--fr)') + '">' + sg(v) + '</span>';
+
+    inits.fund = async function(){
       if (loaded) return;
-      const meta = document.getElementById('fdMeta');
-      const tb = document.querySelector('#fdTable tbody');
+      loaded = true;
+      const meta = document.getElementById('fiMeta');
       try {
-        const body = { types:['NEW_FUND','TRADING_FUND'], issuerIds:[], sortOrder:'DESC', sortField:'annualizedReturn36Months',
-          page:1, pageSize:100, isIpo:false, fundAssetTypes:[], bondRemainPeriods:[], searchField:'', isBuyByReward:false, thirdAppIds:[] };
-        const lst = await fetch('https://api.fmarket.vn/res/products/filter', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)}).then(r=>r.json());
-        const funds = ((lst.data||{}).rows||[]).filter(f => { const n = (f.dataFundAssetType||{}).name || ''; return /cổ phiếu|cân bằng/i.test(n); });
-        if (!funds.length) throw new Error('không lấy được danh sách quỹ');
-        meta.textContent = 'Đang đọc danh mục ' + funds.length + ' quỹ…';
+        meta.textContent = 'Đang tải danh sách quỹ…';
+        const rows = (await jp('https://api.fmarket.vn/res/products/filter', { types:['NEW_FUND','TRADING_FUND'], issuerIds:[], sortOrder:'DESC', sortField:'annualizedReturn36Months', page:1, pageSize:100, isIpo:false, fundAssetTypes:[], bondRemainPeriods:[], searchField:'', isBuyByReward:false, thirdAppIds:[] })).data.rows;
 
-        const one = async (f, tries) => {
-          for (let i = 0; i < (tries||3); i++) {
-            try { const r = await fetch('https://api.fmarket.vn/res/products/' + f.id);
-              if (r.ok) { const j = await r.json(); if (j && j.data) return { f, d: j.data }; } } catch(e){}
-            await new Promise(z => setTimeout(z, 300 + i * 500));
-          }
-          return null;
-        };
-        const dets = [];
-        for (let i = 0; i < funds.length; i += 6) {
-          const part = await Promise.all(funds.slice(i, i + 6).map(f => one(f)));
-          part.forEach(x => dets.push(x));
-          meta.textContent = 'Đang đọc danh mục quỹ… ' + Math.min(i + 6, funds.length) + '/' + funds.length;
-          if (i + 6 < funds.length) await new Promise(z => setTimeout(z, 120));
-        }
-        const thieu = dets.filter(x => !x).length;
+        meta.textContent = 'Đang tải danh mục ' + rows.length + ' quỹ…';
+        const dets = await pool(rows, 8, async f => ({ f, d: (await jp('https://api.fmarket.vn/res/products/' + f.id)).data }));
 
-        const agg = {}, sec = {}; let nQ = 0, newest = 0, tongGT = 0;
-        dets.filter(Boolean).forEach(x => {
+        let newest = 0;
+        F = [];
+        dets.forEach(x => {
+          if (!x || !x.d) return;
           const hs = (x.d.productTopHoldingList||[]).filter(h => h.type === 'STOCK' && h.stockCode);
           if (!hs.length) return;
-          nQ++;
-          (x.d.productIndustriesHoldingList||[]).forEach(g => { if (!g.industry) return; sec[g.industry] = (sec[g.industry]||0) + (g.assetPercent||0); });
-          hs.forEach(h => {
-            const k = h.stockCode;
-            if (!agg[k]) agg[k] = { t:k, n:0, val:0, vol:0, ws:[], nganh:h.industry||'', quy:[] };
-            const a = agg[k];
-            a.n++; a.val += (h.assetValue||0); a.vol += (h.volume||0); tongGT += (h.assetValue||0);
-            if (h.netAssetPercent != null) a.ws.push(h.netAssetPercent);
-            a.quy.push(x.f.shortName);
-            if (h.updateAt && h.updateAt > newest) newest = h.updateAt;
-            if (!a.nganh && h.industry) a.nganh = h.industry;
-          });
+          const sv = hs.reduce((s,h)=>s+(h.assetValue||0),0), sp = hs.reduce((s,h)=>s+(h.netAssetPercent||0),0);
+          if (!(sp > 0)) return;
+          hs.forEach(h => { if (h.updateAt > newest) newest = h.updateAt; });
+          const c = x.d.productNavChange || {};
+          F.push({ id:x.f.id, m:x.f.shortName, ten:(x.f.name||'').replace(/^QU[ỸY]\s+/i,''),
+            loai:((x.f.dataFundAssetType||{}).name||'').replace(/^Quỹ\s+/,''),
+            nav: sv/sp*100, top: sp,
+            r12:c.navTo12Months, r36:c.navTo36Months, r60:c.navTo60Months, r3:c.navTo3Months,
+            hold: hs.slice().sort((a,b)=>(b.netAssetPercent||0)-(a.netAssetPercent||0)) });
         });
 
-        const rows = Object.keys(agg).map(k => agg[k]).map(a => {
-          a.tb = a.ws.length ? a.ws.reduce((s,v)=>s+v,0)/a.ws.length : null;
-          a.max = a.ws.length ? Math.max.apply(null, a.ws) : null;
-          return a;
-        }).sort((x,y) => (y.n - x.n) || (y.val - x.val));
+        CNT = {};
+        F.forEach(f => f.hold.forEach(h => { CNT[h.stockCode] = (CNT[h.stockCode]||0)+1; }));
 
-        const dstr = newest ? (function(){ const z=n=>(n<10?'0':'')+n; const t=new Date(newest); return z(t.getDate())+'/'+z(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
-        meta.innerHTML = 'Đọc được <b>' + nQ + '/' + funds.length + ' quỹ</b> mở nội địa · <b>' + rows.length + ' mã</b> xuất hiện trong các danh mục · số liệu công bố tới ' + dstr + (thieu ? ' · <span style="color:#B45309">' + thieu + ' quỹ chưa đọc được</span>' : '');
+        BIG = F.filter(f => f.nav >= 500e9).sort((a,b)=>(b.r12==null?-999:b.r12)-(a.r12==null?-999:a.r12));
+        if (BIG.length < 6) BIG = F.slice().sort((a,b)=>b.nav-a.nav).slice(0,12);
 
+        meta.textContent = 'Đang tải đường NAV…';
+        const to2 = Math.floor(Date.now()/1000) + 86400;
+        try { IXH = await (await fetch('https://dchart-api.vndirect.com.vn/dchart/history?symbol=VNINDEX&resolution=D&from=' + (to2-86400*2000) + '&to=' + to2)).json(); } catch(e){ IXH = null; }
+        await pool(BIG, 6, async f => { NAVH[f.id] = (await jp('https://api.fmarket.vn/res/product/get-nav-history', {isAllData:0, productId:f.id, navPeriod:'navToBeginning'})).data || []; });
 
-        // ===== tiles + cac the bieu do =====
-        const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-        const sgn = v => (v>0?'+':'') + v.toFixed(0);
-        const bar = (label, w, val, col, lw) => '<div class="fiR"' + (lw?' style="grid-template-columns:'+lw+' 1fr 56px"':'') + '><b' + (lw?' style="font-size:11.5px;font-weight:600"':'') + '>' + esc(label) + '</b><div class="fiK2"><div class="fiF" style="width:' + w.toFixed(1) + '%' + (col?';background:'+col:'') + '"></div></div><span class="fiV">' + val + '</span></div>';
-        document.getElementById('fiTiles').innerHTML = [
-          [nQ, 'quỹ mở nội địa đọc được'],
-          [rows.length, 'mã trong các danh mục'],
-          [Math.round(tongGT/1e12) + ' nghìn tỷ', 'giá trị các khoản nắm giữ lớn'],
-          [dstr, 'ngày số liệu mới nhất']
-        ].map(x => '<div class="fiT"><div class="n">' + x[0] + '</div><div class="l">' + x[1] + '</div></div>').join('');
+        const z2 = n => (n<10?'0':'')+n;
+        const dstr = newest ? (function(){ const t=new Date(newest); return z2(t.getDate())+'/'+z2(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
+        meta.innerHTML = '<b>' + F.length + ' quỹ mở nội địa</b> có danh mục cổ phiếu · <b>' + BIG.length + ' quỹ</b> quy mô từ 500 tỷ · danh mục công bố ' + dstr + ' · nguồn Fmarket';
 
-        const A = rows.slice(0,15), amax = A[0] ? A[0].n : 1;
-        const cardA = '<div class="fiC"><h3>Mã nhiều quỹ cùng nắm nhất</h3>'
-          + '<p class="fiS">Đếm số quỹ có mã trong nhóm nắm giữ lớn. Đo <b>độ rộng đồng thuận</b>, không đo quy mô tiền.</p>'
-          + A.map(a => bar(a.t, a.n/amax*100, a.n + ' quỹ')).join('')
-          + (A[0] ? '<div class="fiK">' + esc(A[0].t + ' được ' + A[0].n + '/' + nQ + ' quỹ cùng nắm — mã đồng thuận nhất trong nhóm quỹ nội.') + '</div>' : '')
-          + '</div>';
-
-        const B = rows.filter(a => a.max != null).slice().sort((x,y) => y.max - x.max).slice(0,12);
-        const bmax = B[0] ? B[0].max : 1;
-        const cardB = '<div class="fiC"><h3>Mã bị đặt cược nặng nhất</h3>'
-          + '<p class="fiS">Tỷ trọng lớn nhất mà một quỹ dành cho mã đó. Nhiều quỹ nắm nhẹ là <b>đồng thuận</b>; ít quỹ nắm nặng là <b>cược riêng</b>.</p>'
-          + B.map(a => bar(a.t, a.max/bmax*100, a.max.toFixed(1) + '%', a.n<=3 ? 'var(--fb)' : '')).join('')
-          + '<div class="fiL"><span><i style="background:#128A3E"></i>từ 4 quỹ trở lên — đồng thuận</span><span><i style="background:#2A78D6"></i>3 quỹ trở xuống — cược riêng</span></div>'
-          + (B[0] ? '<div class="fiK">' + esc(B[0].t + ': có quỹ dành ' + B[0].max.toFixed(1) + '% tài sản cho riêng mã này' + (B[0].n<=3 ? ' — và chỉ ' + B[0].n + ' quỹ nắm, tức là cược riêng chứ không phải đồng thuận.' : '.')) + '</div>' : '')
-          + '</div>';
-
-        const S = Object.keys(sec).map(k => ({k, v: sec[k]/nQ})).sort((a,b)=>b.v-a.v).slice(0,12);
-        const smax = S[0] ? S[0].v : 1;
-        const cardC = '<div class="fiC"><h3>Tiền quỹ đang đứng ở ngành nào</h3>'
-          + '<p class="fiS">Tỷ trọng ngành bình quân trên toàn bộ ' + nQ + ' quỹ.</p>'
-          + S.map(x => bar(x.k, x.v/smax*100, x.v.toFixed(1) + '%', '', '116px')).join('')
-          + (S[0] ? '<div class="fiK">' + esc(S[0].k + ' chiếm ' + S[0].v.toFixed(1) + '% tài sản bình quân — nhóm quỹ nội đang dồn vào đây nhiều nhất.') + '</div>' : '')
-          + '</div>';
-
-        let cardD = '';
-        try {
-          const codes = rows.slice(0,18).map(a => a.t);
-          const z2 = n => (n<10?'0':'')+n;
-          const f2 = dd => dd.getFullYear()+'-'+z2(dd.getMonth()+1)+'-'+z2(dd.getDate());
-          const fr = await fetch('https://api-finfo.vndirect.com.vn/v4/foreigns?q=code:' + codes.join(',') + '~tradingDate:gte:' + f2(new Date(Date.now()-30*86400000)) + '~tradingDate:lte:' + f2(new Date()) + '&size=900').then(r=>r.json());
-          const net = {};
-          ((fr||{}).data||[]).forEach(x => { if (x.netVal != null) net[x.code] = (net[x.code]||0) + x.netVal; });
-          const D = codes.filter(c => net[c] != null).map(c => ({t:c, nq:(agg[c]||{}).n, nv: net[c]/1e9})).sort((a,b)=>a.nv-b.nv);
-          if (D.length) {
-            const lim = Math.max.apply(null, D.map(x => Math.abs(x.nv))) || 1;
-            const xa = D.filter(x => x.nv < 0);
-            const key = xa.length ? (xa[0].t + ' đang được ' + xa[0].nq + ' quỹ nội nắm, nhưng khối ngoại rút ròng ' + Math.abs(xa[0].nv).toFixed(0) + ' tỷ một tháng qua — hai dòng tiền lớn đang đi ngược nhau ở mã này.') : 'Một tháng qua khối ngoại mua ròng ở hầu hết các mã quỹ nội đang nắm — hai dòng tiền cùng chiều.';
-            cardD = '<div class="fiC"><h3>Quỹ nội nắm × khối ngoại một tháng</h3>'
-              + '<p class="fiS">Danh mục quỹ là ảnh chụp hàng tháng; khối ngoại là số tươi từng ngày. Chỗ hai bên <b>ngược chiều</b> là chỗ đáng soi.</p>'
-              + D.map(x => { const w = Math.abs(x.nv)/lim*50, neg = x.nv < 0;
-                  return '<div class="fiR" style="grid-template-columns:52px 1fr 78px"><b>' + x.t + '</b>'
-                    + '<div style="position:relative;height:15px;background:#F1F3F6;border-radius:4px">'
-                    + '<div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:#D4D8DE"></div>'
-                    + '<div style="position:absolute;top:0;height:15px;border-radius:4px;background:' + (neg?'var(--fr)':'var(--fg)') + ';' + (neg?('right:50%;width:'+w.toFixed(1)+'%'):('left:50%;width:'+w.toFixed(1)+'%')) + '"></div></div>'
-                    + '<span class="fiV" style="color:' + (neg?'var(--fr)':'var(--fg)') + '">' + sgn(x.nv) + ' tỷ</span></div>'; }).join('')
-              + '<div class="fiL"><span><i style="background:#128A3E"></i>khối ngoại mua ròng (+)</span><span><i style="background:#E5484D"></i>khối ngoại bán ròng (−)</span></div>'
-              + '<div class="fiK">' + esc(key) + '</div></div>';
-          }
-        } catch(e){}
-        document.getElementById('fiGrid').innerHTML = cardA + cardB + cardC + cardD;
-
-        tb.innerHTML =
-          '<tr><th style="text-align:left">#</th><th style="text-align:left">Mã</th><th>Số quỹ cầm</th><th>Tổng giá trị (tỷ)</th>'
-          + '<th>Tỷ trọng TB</th><th>Cao nhất</th><th style="text-align:left">Ngành</th><th style="text-align:left">Trong hệ</th></tr>'
-          + rows.map(function(a, i){
-              const r = byT[a.t];
-              let he = '<span class="mini">ngoài rổ</span>';
-              if (r) {
-                const bits = [];
-                if (r.rs != null) bits.push('RS ' + r.rs);
-                if (r.watch) bits.push('<b style="color:#128A3E">đang theo dõi</b>');
-                he = bits.length ? bits.join(' · ') : '<span class="mini">trong rổ</span>';
-              }
-              return '<tr class="row" onclick="openDetail(' + String.fromCharCode(39) + a.t + String.fromCharCode(39) + ')" title="' + a.quy.slice(0,12).join(', ') + '">'
-                + '<td class="mini" style="text-align:left">' + (i+1) + '</td>'
-                + '<td><b>' + a.t + '</b>' + (r ? ' <span class="mini">' + (r.b==='HN'?'HNX':'HOSE') + '</span>' : '') + '</td>'
-                + '<td style="text-align:right"><b>' + a.n + '</b></td>'
-                + '<td style="text-align:right">' + vnd(a.val) + '</td>'
-                + '<td style="text-align:right">' + p1(a.tb) + '</td>'
-                + '<td style="text-align:right">' + p1(a.max) + '</td>'
-                + '<td class="mini" style="text-align:left">' + (a.nganh||'—') + '</td>'
-                + '<td class="mini" style="text-align:left">' + he + '</td>'
-                + '</tr>';
-            }).join('');
-        loaded = true;
+        renderHero(); renderPeriods(); renderRank(); pick(BIG[0]);
       } catch(e) {
-        meta.textContent = 'Chưa tải được dữ liệu quỹ: ' + e.message;
-        tb.innerHTML = '<tr><td class="mini">Nguồn dữ liệu quỹ tạm thời không phản hồi. Thử tải lại trang.</td></tr>';
+        meta.textContent = 'Không tải được dữ liệu quỹ: ' + e.message;
       }
     };
+
+    function ixRet(days){ if (!IXH || !IXH.c || IXH.c.length < days+2) return null; const c = IXH.c, n = c.length-1; return (c[n]/c[n-days]-1)*100; }
+
+    function renderHero(){
+      const i12 = ixRet(250);
+      const beat = BIG.filter(f => f.r12 != null && i12 != null && f.r12 > i12);
+      const pos = BIG.filter(f => f.r12 != null && f.r12 > 0);
+      const best = BIG[0];
+      document.getElementById('fiBig').textContent = (i12 == null) ? (BIG.length + ' quỹ lớn trên bàn cân')
+        : (beat.length + '/' + BIG.length + ' quỹ lớn vượt được VN-Index trong 12 tháng');
+      document.getElementById('fiSubT').innerHTML = (i12 == null ? '' : 'VN-Index 12 tháng <b>' + sg(i12) + '</b>. ')
+        + (best ? 'Dẫn đầu là <b>' + esc(best.m) + '</b> với ' + sg(best.r12) + '. ' : '')
+        + 'Chỉ ' + pos.length + '/' + BIG.length + ' quỹ có lãi dương. Con số này nói lên một năm khó của nghề quản lý quỹ — và cũng là lý do kỷ luật cắt lỗ của một hệ thống có giá trị.';
+      const conc = F.slice().sort((a,b)=>b.top-a.top)[0];
+      const popular = Object.entries(CNT).sort((a,b)=>b[1]-a[1])[0];
+      const lonely = Object.values(CNT).filter(v=>v===1).length;
+      const tiles = [
+        ['n', BIG.length, 'quỹ quy mô từ 500 tỷ'],
+        ['n', (popular ? popular[0] + ' · ' + popular[1] : '—'), 'mã nhiều quỹ cầm nhất (trên ' + F.length + ' quỹ)'],
+        ['n', lonely, 'mã chỉ duy nhất 1 quỹ dám cầm'],
+        ['n', (conc ? conc.m + ' · ' + conc.top.toFixed(0) + '%' : '—'), 'quỹ dồn đậm nhất vào 10 mã']
+      ];
+      document.getElementById('fiTiles').innerHTML = tiles.map(t => '<div class="fiT"><div class="n">' + esc(String(t[1])) + '</div><div class="l">' + esc(t[2]) + '</div></div>').join('');
+    }
+
+    function renderPeriods(){
+      const P = [['navTo12Months','1 năm',250],['navTo36Months','3 năm',750],['navTo60Months','5 năm',1250],['navToBeginning','Tất cả',99999]];
+      document.getElementById('fiPer').innerHTML = P.map(p => '<button data-p="' + p[0] + '" data-d="' + p[2] + '"' + (p[0]===PER?' class="on"':'') + '>' + p[1] + '</button>').join('');
+      document.getElementById('fiPer').onclick = e => { const bt = e.target.closest('button'); if (!bt) return; PER = bt.dataset.p; renderPeriods(); drawChart(); };
+    }
+
+    function seriesOf(f, days){
+      const a = NAVH[f.id] || []; if (!a.length) return null;
+      const cut = days >= 99999 ? a : a.slice(Math.max(0, a.length - days));
+      if (cut.length < 3) return null;
+      const b0 = cut[0].nav; if (!b0) return null;
+      return cut.map(x => ({ x: x.navDate, y: +((x.nav/b0-1)*100).toFixed(2) }));
+    }
+
+    function drawChart(){
+      const el = document.getElementById('fiCanvas'); if (!el || !window.Chart) return;
+      const days = +(document.querySelector('#fiPer button.on')||{dataset:{d:750}}).dataset.d;
+      const sel = [];
+      if (PICK) sel.push(PICK);
+      BIG.forEach(f => { if (sel.length < 5 && !sel.some(x=>x.id===f.id)) sel.push(f); });
+      const ds = [];
+      sel.forEach((f, i) => { const s = seriesOf(f, days); if (s) ds.push({ label: f.m, data: s, borderColor: PAL[i % PAL.length], backgroundColor: PAL[i % PAL.length], borderWidth: (PICK && f.id===PICK.id) ? 2.6 : 1.7, pointRadius: 0, tension: .18, order: 2 }); });
+      if (IXH && IXH.c && IXH.t) {
+        const n = IXH.c.length, st = days >= 99999 ? 0 : Math.max(0, n - days);
+        const b0 = IXH.c[st];
+        if (b0) ds.push({ label: 'VN-Index', borderColor: BM, backgroundColor: BM, borderWidth: 2.2, borderDash: [5,4], pointRadius: 0, tension: .18, order: 1,
+          data: IXH.c.slice(st).map((v,k) => ({ x: new Date(IXH.t[st+k]*1000).toISOString().slice(0,10), y: +((v/b0-1)*100).toFixed(2) })) });
+      }
+      try { if (CHART) CHART.destroy(); } catch(e){}
+      CHART = new Chart(el.getContext('2d'), {
+        type: 'line',
+        data: { datasets: ds },
+        options: { responsive: true, maintainAspectRatio: false, animation: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: { legend: { display: false },
+            tooltip: { callbacks: { label: c => c.dataset.label + ': ' + (c.parsed.y>=0?'+':'') + c.parsed.y.toFixed(1) + '%' } } },
+          scales: { x: { type: 'category', ticks: { color:'#7A828E', maxTicksLimit: 9, font:{size:10.5}, callback: function(v){ const s = this.getLabelForValue(v); return s ? s.slice(8,10)+'/'+s.slice(5,7)+'/'+s.slice(2,4) : ''; } }, grid: { display:false } },
+                   y: { ticks: { color:'#7A828E', font:{size:10.5}, callback: v => (v>=0?'+':'')+v+'%' }, grid: { color:'#F1F3F6' } } } }
+      });
+      document.getElementById('fiLeg').innerHTML = ds.map(x => '<span><i style="background:' + x.borderColor + (x.borderDash?';height:0;border-top:3px dashed '+BM:'') + '"></i>' + esc(x.label) + '</span>').join('');
+      const nm = ds.length - (IXH?1:0);
+      document.getElementById('fiChartS').textContent = 'Cùng xuất phát từ 0% — đường nào lên cao hơn là quỹ đó lãi nhiều hơn. Nét đứt đậm là VN-Index. Đang vẽ ' + nm + ' quỹ.';
+    }
+
+    function renderRank(){
+      const i12 = ixRet(250), i3 = ixRet(63);
+      const row = (f, i) => '<tr class="row' + (PICK && f.id===PICK.id ? ' sel' : '') + '" data-id="' + f.id + '" style="cursor:pointer">'
+        + '<td style="text-align:left;color:var(--fm)">' + (i+1) + '</td>'
+        + '<td style="text-align:left"><b>' + esc(f.m) + '</b><br><span class="mini">' + esc(f.loai) + '</span></td>'
+        + '<td>' + nv(f.nav) + '</td><td>' + pc(f.r12) + '</td><td>' + pc(f.r36) + '</td><td>' + pc(f.r60) + '</td></tr>';
+      let out = '<h3>Bảng xếp hạng quỹ lớn</h3><p class="fiS">Xếp theo hiệu suất 12 tháng. Bấm một quỹ để soi danh mục và vẽ lên biểu đồ.</p>'
+        + '<div style="overflow:auto"><table><tbody><tr><th style="text-align:left">#</th><th style="text-align:left">Quỹ</th><th>NAV (tỷ)</th><th>12 tháng</th><th>3 năm</th><th>5 năm</th></tr>';
+      let done = false;
+      BIG.forEach((f, i) => {
+        if (!done && i12 != null && (f.r12 == null || f.r12 < i12)) { done = true;
+          out += '<tr class="bm"><td style="text-align:left;color:var(--fm)">—</td><td style="text-align:left"><b>VN-Index</b><br><span class="mini">mốc thị trường</span></td><td class="mini">—</td><td><b>' + pc(i12) + '</b></td><td class="mini">—</td><td class="mini">—</td></tr>'; }
+        out += row(f, i);
+      });
+      if (!done && i12 != null) out += '<tr class="bm"><td style="text-align:left;color:var(--fm)">—</td><td style="text-align:left"><b>VN-Index</b><br><span class="mini">mốc thị trường</span></td><td class="mini">—</td><td><b>' + pc(i12) + '</b></td><td class="mini">—</td><td class="mini">—</td></tr>';
+      out += '</tbody></table></div>';
+      const el = document.getElementById('fiRank');
+      el.innerHTML = out;
+      el.onclick = e => { const tr = e.target.closest('tr[data-id]'); if (!tr) return; const f = BIG.find(x => String(x.id) === tr.dataset.id); if (f) pick(f); };
+    }
+
+    function pick(f){
+      if (!f) return;
+      PICK = f;
+      renderRank(); drawChart();
+      const H = f.hold.slice(0, 10);
+      const hmax = H[0] ? (H[0].netAssetPercent||1) : 1;
+      const rare = H.filter(h => (CNT[h.stockCode]||0) <= 4);
+      const inSys = H.filter(h => byT[h.stockCode]);
+      const onWatch = H.filter(h => (byT[h.stockCode]||{}).watch).map(h => h.stockCode);
+      const avgCrowd = H.length ? H.reduce((s,h)=>s+(CNT[h.stockCode]||0),0)/H.length : 0;
+      const rows = H.map(h => {
+        const n = CNT[h.stockCode]||0, w = (h.netAssetPercent||0)/hmax*100;
+        const col = n <= 4 ? 'var(--fb)' : 'var(--fg)';
+        return '<div class="fiR"><b>' + esc(h.stockCode) + '</b>'
+          + '<div class="fiK2"><div class="fiF" style="width:' + w.toFixed(1) + '%;background:' + col + '"></div></div>'
+          + '<span class="fiV">' + (h.netAssetPercent||0).toFixed(1) + '%</span>'
+          + '<span class="fiN">' + n + ' quỹ</span></div>'; }).join('');
+      document.getElementById('fiDetail').innerHTML =
+        '<h3>' + esc(f.m) + ' <span style="font-weight:600;color:var(--fm);font-size:12px">' + esc(f.ten.slice(0,42)) + '</span></h3>'
+        + '<p class="fiS">Quy mô <b>' + nv(f.nav) + ' tỷ</b> · 12 tháng ' + sg(f.r12) + ' · 10 mã nặng nhất chiếm <b>' + f.top.toFixed(0) + '%</b> tài sản</p>'
+        + rows
+        + '<div id="fiLeg" style="margin:10px 0 0"><span><i style="background:var(--fb)"></i>đặt cược riêng — từ 4 quỹ trở xuống cùng cầm</span><span><i style="background:var(--fg)"></i>đồng thuận đám đông</span></div>'
+        + '<div class="fiK">' + (rare.length
+            ? '<b>' + esc(f.m) + ' dám khác đám đông ở ' + rare.length + ' mã:</b> ' + esc(rare.map(h=>h.stockCode + ' (' + (CNT[h.stockCode]||0) + ' quỹ)').join(', ')) + '. Trung bình mỗi mã họ cầm có ' + avgCrowd.toFixed(0) + ' quỹ khác cùng nắm.'
+            : 'Danh mục bám sát đồng thuận thị trường — trung bình mỗi mã có ' + avgCrowd.toFixed(0) + ' quỹ khác cùng nắm, không có vị thế đi riêng.')
+          + ' ' + inSys.length + '/' + H.length + ' mã nằm trong rổ theo dõi của hệ'
+          + (onWatch.length ? ', trong đó <b>' + esc(onWatch.join(', ')) + '</b> đang ở vùng chờ mua.' : '.') + '</div>';
+    }
   }catch(e){}
 })();
 
