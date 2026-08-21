@@ -43,7 +43,8 @@
     { v:'screener', label:'Bộ lọc',    icon:IC.screener },
     { v:'news',     label:'Bài viết',  icon:IC.news   }
   ];
-  var VIEW2TAB = { watch:0, detail:1, market:2, screener:3, leader:3, compare:3, news:4 };
+  var VIEW2TAB = { watch:0, detail:1, market:2, screener:3, leader:3, compare:3, fund:3, news:4 };
+  var SUBNAV = [['screener','Bộ lọc'],['leader','Leader Board'],['fund','Fund Insight'],['compare','So sánh'],['news','Bài viết']];
 
   /* ---------- 4. CSS ---------- */
   var css = document.createElement('style'); css.id = 'knAppCss';
@@ -58,7 +59,18 @@
   + '.kn-app .card h2{font-size:16px}'
   + '.kn-app table{font-size:13px}'
   + '.kn-app th,.kn-app td{padding:10px 8px}'
-  + '.kn-app #view-watch table th:first-child,.kn-app #view-watch table td:first-child{position:sticky;left:0;background:#fff;z-index:3;box-shadow:1px 0 0 #EDEFF2}'
+  + '.kn-app #view-watch table th:first-child,.kn-app #view-watch table td:first-child,'
+  + '.kn-app #view-screener table th:first-child,.kn-app #view-screener table td:first-child,'
+  + '.kn-app #view-leader table th:first-child,.kn-app #view-leader table td:first-child,'
+  + '.kn-app #view-fund table th:first-child,.kn-app #view-fund table td:first-child'
+  + '{position:sticky;left:0;background:#fff;z-index:3;box-shadow:1px 0 0 #EDEFF2}'
+  + '.kn-app #view-screener table,.kn-app #view-leader table{min-width:640px}'
+  + '.kn-app .card>table,.kn-app #view-screener .card>table{display:block;overflow-x:auto}'
+  + '#knSub{display:none;gap:6px;padding:8px 12px 2px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}'
+  + '#knSub::-webkit-scrollbar{display:none}'
+  + '#knSub.on{display:flex}'
+  + '#knSub button{flex:0 0 auto;border:1px solid #E8EAEF;background:#fff;border-radius:999px;padding:6px 14px;font:700 12.5px Inter,system-ui,sans-serif;color:#7A828E;cursor:pointer;white-space:nowrap;-webkit-tap-highlight-color:transparent}'
+  + '#knSub button.on{background:#128A3E;border-color:#128A3E;color:#fff}'
   + '.kn-app body,body.kn-app{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))!important}'
   + '#knTabbar{position:fixed;left:0;right:0;bottom:0;z-index:9000;'
   +   'background:transparent;pointer-events:none;'
@@ -76,11 +88,11 @@
   + '#knTabbar .knTab.active{color:#128A3E}'
   + '#knTabbar .knTab.center{justify-content:flex-end}'
   + '#knTabbar .knTab.center .knBadge{position:absolute;top:-20px;left:50%;transform:translateX(-50%);'
-  +   'width:52px;height:52px;border-radius:50%;background:#222634;color:#fff;'
+  +   'width:52px;height:52px;border-radius:50%;background:#18A34B;color:#fff;'
   +   'display:flex;align-items:center;justify-content:center;'
-  +   'box-shadow:0 6px 16px rgba(34,38,52,.34);border:3px solid #fff;transition:background .15s}'
+  +   'box-shadow:0 5px 14px rgba(18,138,62,.30);border:3px solid #fff;transition:background .15s}'
   + '#knTabbar .knTab.center .knLbl{margin-top:34px}'
-  + '#knTabbar .knTab.center.active .knBadge{background:#18A34B}'
+  + '#knTabbar .knTab.center.active .knBadge{background:#0E7A38;box-shadow:0 6px 18px rgba(14,122,56,.42)}'
   + '#knTabbar .knTab.center.active{color:#128A3E}';
   document.head.appendChild(css);
 
@@ -103,6 +115,18 @@
       bar.appendChild(b);
     });
     document.body.appendChild(bar);
+    if (!document.getElementById('knSub')){
+      var sub = document.createElement('div'); sub.id = 'knSub';
+      SUBNAV.forEach(function(s){
+        var x = document.createElement('button');
+        x.type = 'button'; x.dataset.view = s[0]; x.textContent = s[1];
+        x.addEventListener('click', function(){ go(s[0]); });
+        sub.appendChild(x);
+      });
+      var tb = document.querySelector('.topbar');
+      if (tb && tb.parentElement) tb.parentElement.insertBefore(sub, tb.nextSibling);
+      else document.body.insertBefore(sub, document.body.firstChild);
+    }
   }
 
   function setActive(view){
@@ -111,6 +135,14 @@
     Array.prototype.forEach.call(bar.children, function(b){
       b.classList.toggle('active', String(idx) === b.dataset.tab);
     });
+    try {
+      var sub = document.getElementById('knSub');
+      if (sub){
+        var inSub = SUBNAV.some(function(s){ return s[0] === view; });
+        sub.classList.toggle('on', inSub);
+        Array.prototype.forEach.call(sub.children, function(b){ b.classList.toggle('on', b.dataset.view === view); });
+      }
+    } catch(e){}
   }
 
   function go(view){
@@ -120,12 +152,9 @@
     setActive(view);
     /* Bam lai dung tab dang mo -> len dau trang (giong app iOS).
        Doi sang tab khac -> tra ve dung cho dang xem do cua tab do. */
-    if (same){
-      try { window.scrollTo({top:0, behavior:'smooth'}); } catch(e){ window.scrollTo(0,0); }
-    } else {
-      var y = scrollMem[view] || 0;
-      requestAnimationFrame(function(){ window.scrollTo(0, y); });
-    }
+    try { window.scrollTo({top:0, behavior: same ? 'smooth' : 'auto'}); } catch(e){ window.scrollTo(0,0); }
+    requestAnimationFrame(function(){ window.scrollTo(0,0); });
+    setTimeout(function(){ window.scrollTo(0,0); }, 60);
   }
 
   function hook(){
