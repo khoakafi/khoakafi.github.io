@@ -2391,14 +2391,15 @@ document.addEventListener('visibilitychange', () => {
     }
 
     function renderPeriods(){
-      const P = [['navTo12Months','1 năm',250],['navTo36Months','3 năm',750],['navTo60Months','5 năm',1250],['navToBeginning','Tất cả',99999]];
+      const P = [['navTo12Months','1 năm',365],['navTo36Months','3 năm',1095],['navTo60Months','5 năm',1825],['navToBeginning','Tất cả',99999]];
       document.getElementById('fiPer').innerHTML = P.map(p => '<button data-p="' + p[0] + '" data-d="' + p[2] + '"' + (p[0]===PER?' class="on"':'') + '>' + p[1] + '</button>').join('');
       document.getElementById('fiPer').onclick = e => { const bt = e.target.closest('button'); if (!bt) return; PER = bt.dataset.p; renderPeriods(); drawChart(); };
     }
 
     function seriesOf(f, days){
       const a = NAVH[f.id] || []; if (!a.length) return null;
-      const cut = days >= 99999 ? a : a.slice(Math.max(0, a.length - days));
+      const lim = days >= 99999 ? 0 : Date.now() - days * 86400000;
+      const cut = a.filter(x => Date.parse(x.navDate + 'T00:00:00Z') >= lim);
       if (cut.length < 3) return null;
       const b0 = cut[0].nav; if (!b0) return null;
       return cut.map(x => ({ x: Date.parse(x.navDate + 'T00:00:00Z'), y: +((x.nav/b0-1)*100).toFixed(2) }));
@@ -2413,7 +2414,8 @@ document.addEventListener('visibilitychange', () => {
       const ds = [];
       sel.forEach((f, i) => { const s = seriesOf(f, days); if (s) ds.push({ label: f.m, data: s, borderColor: PAL[i % PAL.length], backgroundColor: PAL[i % PAL.length], borderWidth: (PICK && f.id===PICK.id) ? 2.6 : 1.7, pointRadius: 0, tension: .18, order: 2 }); });
       if (IXH && IXH.c && IXH.t) {
-        const n = IXH.c.length, st = days >= 99999 ? 0 : Math.max(0, n - days);
+        const lim2 = days >= 99999 ? 0 : Math.floor((Date.now() - days * 86400000) / 1000);
+        let st = 0; while (st < IXH.t.length - 2 && IXH.t[st] < lim2) st++;
         const b0 = IXH.c[st];
         if (b0) ds.push({ label: 'VN-Index', borderColor: BM, backgroundColor: BM, borderWidth: 2.2, borderDash: [5,4], pointRadius: 0, tension: .18, order: 1,
           data: IXH.c.slice(st).map((v,k) => ({ x: IXH.t[st+k]*1000, y: +((v/b0-1)*100).toFixed(2) })) });
