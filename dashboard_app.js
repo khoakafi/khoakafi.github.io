@@ -2401,7 +2401,7 @@ document.addEventListener('visibilitychange', () => {
       const cut = days >= 99999 ? a : a.slice(Math.max(0, a.length - days));
       if (cut.length < 3) return null;
       const b0 = cut[0].nav; if (!b0) return null;
-      return cut.map(x => ({ x: x.navDate, y: +((x.nav/b0-1)*100).toFixed(2) }));
+      return cut.map(x => ({ x: Date.parse(x.navDate + 'T00:00:00Z'), y: +((x.nav/b0-1)*100).toFixed(2) }));
     }
 
     function drawChart(){
@@ -2416,7 +2416,7 @@ document.addEventListener('visibilitychange', () => {
         const n = IXH.c.length, st = days >= 99999 ? 0 : Math.max(0, n - days);
         const b0 = IXH.c[st];
         if (b0) ds.push({ label: 'VN-Index', borderColor: BM, backgroundColor: BM, borderWidth: 2.2, borderDash: [5,4], pointRadius: 0, tension: .18, order: 1,
-          data: IXH.c.slice(st).map((v,k) => ({ x: new Date(IXH.t[st+k]*1000).toISOString().slice(0,10), y: +((v/b0-1)*100).toFixed(2) })) });
+          data: IXH.c.slice(st).map((v,k) => ({ x: IXH.t[st+k]*1000, y: +((v/b0-1)*100).toFixed(2) })) });
       }
       try { if (CHART) CHART.destroy(); } catch(e){}
       CHART = new Chart(el.getContext('2d'), {
@@ -2425,8 +2425,8 @@ document.addEventListener('visibilitychange', () => {
         options: { responsive: true, maintainAspectRatio: false, animation: false,
           interaction: { mode: 'index', intersect: false },
           plugins: { legend: { display: false },
-            tooltip: { callbacks: { label: c => c.dataset.label + ': ' + (c.parsed.y>=0?'+':'') + c.parsed.y.toFixed(1) + '%' } } },
-          scales: { x: { type: 'category', ticks: { color:'#7A828E', maxTicksLimit: 9, font:{size:10.5}, callback: function(v){ const s = this.getLabelForValue(v); return s ? s.slice(8,10)+'/'+s.slice(5,7)+'/'+s.slice(2,4) : ''; } }, grid: { display:false } },
+            tooltip: { callbacks: { title: it => { if (!it || !it.length) return ''; const dd = new Date(it[0].parsed.x); const z = n => (n<10?'0':'')+n; return z(dd.getUTCDate())+'/'+z(dd.getUTCMonth()+1)+'/'+dd.getUTCFullYear(); }, label: c => c.dataset.label + ': ' + (c.parsed.y>=0?'+':'') + c.parsed.y.toFixed(1) + '%' } } },
+          scales: { x: { type: 'linear', bounds: 'data', ticks: { color:'#7A828E', maxTicksLimit: 8, autoSkip: true, font:{size:10.5}, callback: v => { const dd = new Date(v); const z = n => (n<10?'0':'')+n; return z(dd.getUTCMonth()+1)+'/'+dd.getUTCFullYear(); } }, grid: { display:false } },
                    y: { ticks: { color:'#7A828E', font:{size:10.5}, callback: v => (v>=0?'+':'')+v+'%' }, grid: { color:'#F1F3F6' } } } }
       });
       document.getElementById('fiLeg').innerHTML = ds.map(x => '<span><i style="background:' + x.borderColor + (x.borderDash?';height:0;border-top:3px dashed '+BM:'') + '"></i>' + esc(x.label) + '</span>').join('');
