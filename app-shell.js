@@ -66,6 +66,8 @@
   + '{position:sticky;left:0;background:#fff;z-index:3;box-shadow:1px 0 0 #EDEFF2}'
   + '.kn-app #view-screener table,.kn-app #view-leader table{min-width:640px}'
   + '.kn-app .card>table,.kn-app #view-screener .card>table{display:block;overflow-x:auto}'
+  + '.kn-app #proLegend,.kn-app #proVolLegend{font-size:11px!important;line-height:1.5!important;padding:2px 7px!important;max-width:calc(100% - 42px)!important}'
+  + '.kn-app #proFsBtn{width:26px!important;height:26px!important}'
   + '#knSub{display:none;gap:6px;padding:8px 12px 2px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}'
   + '#knSub::-webkit-scrollbar{display:none}'
   + '#knSub.on{display:flex}'
