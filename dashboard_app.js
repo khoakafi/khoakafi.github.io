@@ -145,6 +145,7 @@ try{var _el=document.getElementById('watchStrip');
   if (!document.getElementById('lbCss')) {
     const st = document.createElement('style'); st.id = 'lbCss';
     st.textContent = '.wrap,.topbar-in{max-width:min(1920px,99vw)!important}'
+      + '@media(min-width:1001px){#dFlex>div:first-child{margin-right:-18px}}'
       + '#lbGrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:5px;align-items:start;padding:6px 0 8px}'
       + '#lbGrid .lbCol{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:5px 4px;min-width:0}'
       + '#lbGrid .lbHd{font-weight:700;font-size:9px;line-height:1.15;color:var(--text);padding-bottom:4px;margin-bottom:5px;border-bottom:2px solid var(--green);min-height:23px;display:flex;align-items:flex-end}'
@@ -1002,7 +1003,7 @@ function loadProChart(){
     autoSize: true,
     layout: { background: { color: '#ffffff' }, textColor: '#787B86', fontSize: 12 },
     grid: { horzLines: { color: '#F0F3FA' }, vertLines: { color: '#F0F3FA' } },
-    rightPriceScale: { borderColor: '#DDE1E6' },
+    rightPriceScale: { borderColor: '#DDE1E6', ticksVisible: false },
     timeScale: { borderColor: '#DDE1E6', rightOffset: 2, barSpacing: 9, timeVisible: false },
     crosshair: { mode: 0,
       horzLine: { color: '#9598A1', labelBackgroundColor: '#131722' },
