@@ -1203,7 +1203,7 @@ inits.detail = function(t){
           <div id="dRanges" style="display:none"></div>
           <div id="dTpn" style="margin-left:auto"></div>
         </div>
-        <div style="display:flex;gap:16px;align-items:flex-start" id="dFlex">
+        <div style="display:flex;gap:10px;align-items:flex-start" id="dFlex">
           <div style="flex:1;min-width:0">
             <div id="chartSigWrap" style="display:none">
               <div style="flex:1;min-width:0;position:relative">
