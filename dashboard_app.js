@@ -2266,7 +2266,8 @@ document.addEventListener('visibilitychange', () => {
       + '#view-fund .fiT .l{font-size:11px;color:var(--fm);margin-top:2px;line-height:1.45}'
       + '#fiSplit{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:12px}'
       + '@media(max-width:980px){#fiSplit{grid-template-columns:1fr}}'
-      + '#view-fund .fiR{display:grid;grid-template-columns:50px 1fr 54px 62px;align-items:center;gap:9px;margin:0 0 6px;font-size:12.5px}'
+      + '#view-fund .fiR{display:grid;grid-template-columns:48px 1fr 48px 62px 54px;align-items:center;gap:8px;margin:0 0 6px;font-size:12.5px}'
+      + '#view-fund .fiD{text-align:right;font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}'
       + '#view-fund .fiR b{font-weight:700;color:var(--fi)}'
       + '#view-fund .fiK2{height:16px;background:#F1F3F6;border-radius:4px;overflow:hidden}'
       + '#view-fund .fiF{height:100%;border-radius:4px}'
@@ -2298,6 +2299,7 @@ document.addEventListener('visibilitychange', () => {
     const PAL = ['#2A78D6','#128A3E','#E5484D','#B45309','#7C3AED','#0E7490'];
     const BM = '#1F2937';
     let loaded = false, F = [], BIG = [], CNT = {}, NAVH = {}, IXH = null, PICK = null, PER = 'navTo36Months', CHART = null;
+    let HIST = [], CURKEY = null;
 
     const jp = async (u, b) => { let er = null;
       for (let a = 0; a < 4; a++) {
@@ -2336,10 +2338,11 @@ document.addEventListener('visibilitychange', () => {
           if (!hs.length) return;
           const sv = hs.reduce((s,h)=>s+(h.assetValue||0),0), sp = hs.reduce((s,h)=>s+(h.netAssetPercent||0),0);
           if (!(sp > 0)) return;
-          hs.forEach(h => { if (h.updateAt > newest) newest = h.updateAt; });
+          let up = 0; hs.forEach(h => { if (h.updateAt > up) up = h.updateAt; }); if (up > newest) newest = up;
           const c = x.d.productNavChange || {};
           F.push({ id:x.f.id, m:x.f.shortName, ten:(x.f.name||'').replace(/^QU[ỸY]\s+/i,''),
             loai:((x.f.dataFundAssetType||{}).name||'').replace(/^Quỹ\s+/,''),
+            asOf: up ? new Date(up).toISOString().slice(0,10) : null,
             nav: sv/sp*100, top: sp,
             r12:c.navTo12Months, r36:c.navTo36Months, r60:c.navTo60Months, r3:c.navTo3Months,
             hold: hs.slice().sort((a,b)=>(b.netAssetPercent||0)-(a.netAssetPercent||0)) });
@@ -2360,12 +2363,45 @@ document.addEventListener('visibilitychange', () => {
         const dstr = newest ? (function(){ const t=new Date(newest); return z2(t.getDate())+'/'+z2(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
         meta.innerHTML = '<b>' + F.length + ' quỹ mở nội địa</b> có danh mục cổ phiếu · <b>' + BIG.length + ' quỹ</b> quy mô từ 500 tỷ · danh mục công bố ' + dstr + ' · nguồn Fmarket';
 
+        CURKEY = newest ? new Date(newest).toISOString().slice(0,7) : null;
+        try { HIST = (((await (await fetch('/fund_history.json?cb=' + Date.now(), {cache:'no-store'})).json())||{}).snaps) || []; } catch(e) { HIST = []; }
+        try { await luuMoc(); } catch(e){}
         renderHero(); renderPeriods(); renderRank(); pick(BIG[0]);
       } catch(e) {
         meta.textContent = 'Không tải được dữ liệu quỹ: ' + e.message;
       }
     };
 
+    function prevSnap(){
+      if (!HIST.length || !CURKEY) return null;
+      const cu = HIST.filter(s => s && s.key && s.key < CURKEY).sort((a,b) => a.key < b.key ? 1 : -1);
+      return cu[0] || null;
+    }
+    async function luuMoc(){
+      const tk = localStorage.getItem('kafi_gh_token');
+      if (!tk || !CURKEY || !F.length) return;
+      if (HIST.some(s => s && s.key === CURKEY)) return;
+      const flag = 'kafi_snap_' + CURKEY;
+      if (localStorage.getItem(flag)) return;
+      localStorage.setItem(flag, '1');
+      const fu = {};
+      F.forEach(f => { fu[f.id] = { m: f.m, asOf: f.asOf || null, nav: Math.round(f.nav),
+        h: f.hold.map(h => [h.stockCode, +(h.netAssetPercent||0).toFixed(2), Math.round(h.volume||0)]) }; });
+      const snap = { key: CURKEY, taken: new Date().toISOString().slice(0,10), n: Object.keys(fu).length, funds: fu };
+      const HH = {}; HH['Authoriz' + 'ation'] = 'to' + 'ken ' + tk; HH.Accept = 'application/vnd.github+json';
+      const g = await fetch('https://api.github.com/repos/khoakafi/khoakafi.github.io/contents/fund_history.json?ref=main', {headers:HH});
+      if (!g.ok) return;
+      const gj = await g.json();
+      const cur = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(gj.content.replace(/\n/g,'')), c => c.charCodeAt(0))));
+      if ((cur.snaps||[]).some(s => s && s.key === CURKEY)) { HIST = cur.snaps; return; }
+      cur.snaps = (cur.snaps||[]).concat([snap]);
+      const st = JSON.stringify(cur);
+      const u8 = new TextEncoder().encode(st); let bin = '';
+      for (let j = 0; j < u8.length; j++) bin += String.fromCharCode(u8[j]);
+      const w = await fetch('https://api.github.com/repos/khoakafi/khoakafi.github.io/contents/fund_history.json', {method:'PUT', headers:HH,
+        body: JSON.stringify({ message: 'Kho danh muc quy: them moc ' + CURKEY, content: btoa(bin), sha: gj.sha, branch: 'main' })});
+      if (w.ok) HIST = cur.snaps;
+    }
     function ixRet(days){ if (!IXH || !IXH.c || IXH.c.length < days+2) return null; const c = IXH.c, n = c.length-1; return (c[n]/c[n-days]-1)*100; }
 
     function renderHero(){
@@ -2468,13 +2504,26 @@ document.addEventListener('visibilitychange', () => {
       const inSys = H.filter(h => byT[h.stockCode]);
       const onWatch = H.filter(h => (byT[h.stockCode]||{}).watch).map(h => h.stockCode);
       const avgCrowd = H.length ? H.reduce((s,h)=>s+(CNT[h.stockCode]||0),0)/H.length : 0;
+      const ps = prevSnap();
+      const pf = (ps && ps.funds) ? ps.funds[f.id] : null;
+      const pm = {}; if (pf) (pf.h||[]).forEach(x => { pm[x[0]] = { p: x[1], v: x[2] }; });
       const rows = H.map(h => {
         const n = CNT[h.stockCode]||0, w = (h.netAssetPercent||0)/hmax*100;
         const col = n <= 4 ? 'var(--fb)' : 'var(--fg)';
+        let dt = '', dc = 'var(--fm)';
+        if (pf) { const pr = pm[h.stockCode];
+          if (!pr) { dt = 'mới'; dc = 'var(--fb)'; }
+          else if (pr.v > 0 && h.volume) { const ch = (h.volume/pr.v - 1) * 100;
+            if (ch >= 3) { dt = '▲' + ch.toFixed(0) + '%'; dc = 'var(--fg)'; }
+            else if (ch <= -3) { dt = '▼' + Math.abs(ch).toFixed(0) + '%'; dc = 'var(--fr)'; }
+            else { dt = 'giữ'; } } }
         return '<div class="fiR"><b>' + esc(h.stockCode) + '</b>'
           + '<div class="fiK2"><div class="fiF" style="width:' + w.toFixed(1) + '%;background:' + col + '"></div></div>'
           + '<span class="fiV">' + (h.netAssetPercent||0).toFixed(1) + '%</span>'
+          + '<span class="fiD" style="color:' + dc + '">' + dt + '</span>'
           + '<span class="fiN">' + n + ' quỹ</span></div>'; }).join('');
+      const moi = pf ? H.filter(h => !pm[h.stockCode]).map(h => h.stockCode) : [];
+      const banSach = pf ? (pf.h||[]).map(x => x[0]).filter(c => !H.some(h => h.stockCode === c)) : [];
       document.getElementById('fiDetail').innerHTML =
         '<h3>' + esc(f.m) + ' <span style="font-weight:600;color:var(--fm);font-size:12px">' + esc(f.ten.slice(0,42)) + '</span></h3>'
         + '<p class="fiS">Quy mô <b>' + nv(f.nav) + ' tỷ</b> · 12 tháng ' + sg(f.r12) + ' · 10 mã nặng nhất chiếm <b>' + f.top.toFixed(0) + '%</b> tài sản</p>'
@@ -2484,7 +2533,14 @@ document.addEventListener('visibilitychange', () => {
             ? '<b>' + esc(f.m) + ' dám khác đám đông ở ' + rare.length + ' mã:</b> ' + esc(rare.map(h=>h.stockCode + ' (' + (CNT[h.stockCode]||0) + ' quỹ)').join(', ')) + '. Trung bình mỗi mã họ cầm có ' + avgCrowd.toFixed(0) + ' quỹ khác cùng nắm.'
             : 'Danh mục bám sát đồng thuận thị trường — trung bình mỗi mã có ' + avgCrowd.toFixed(0) + ' quỹ khác cùng nắm, không có vị thế đi riêng.')
           + ' ' + inSys.length + '/' + H.length + ' mã nằm trong rổ theo dõi của hệ'
-          + (onWatch.length ? ', trong đó <b>' + esc(onWatch.join(', ')) + '</b> đang ở vùng chờ mua.' : '.') + '</div>';
+          + (onWatch.length ? ', trong đó <b>' + esc(onWatch.join(', ')) + '</b> đang ở vùng chờ mua.' : '.') + '</div>'
+        + '<div class="fiK" style="background:#F5F7FA;border-left-color:#7A828E">' + (pf
+            ? 'So với kỳ công bố ' + esc(ps.key) + ': '
+              + (moi.length ? '<b>mới mua ' + esc(moi.join(', ')) + '</b>. ' : '')
+              + (banSach.length ? '<b>đã bán hết ' + esc(banSach.join(', ')) + '</b>. ' : '')
+              + (!moi.length && !banSach.length ? 'không đổi danh sách mã. ' : '')
+              + 'Mũi tên bên phải là mức tăng giảm số lượng cổ phiếu nắm giữ.'
+            : 'Kho lịch sử danh mục bắt đầu ghi từ kỳ ' + esc(CURKEY || '') + '. Sang kỳ công bố sau, chỗ này sẽ hiện quỹ mua thêm hay bán bớt mã nào.') + '</div>';
     }
   }catch(e){}
 })();
