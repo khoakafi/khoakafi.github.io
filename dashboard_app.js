@@ -2383,7 +2383,8 @@ document.addEventListener('visibilitychange', () => {
       if (HIST.some(s => s && s.key === CURKEY)) return;
       const flag = 'kafi_snap_' + CURKEY;
       if (localStorage.getItem(flag)) return;
-      localStorage.setItem(flag, '1');
+      if (window.__kafiSnapTried) return;
+      window.__kafiSnapTried = 1;
       const fu = {};
       F.forEach(f => { fu[f.id] = { m: f.m, asOf: f.asOf || null, nav: Math.round(f.nav),
         h: f.hold.map(h => [h.stockCode, +(h.netAssetPercent||0).toFixed(2), Math.round(h.volume||0)]) }; });
@@ -2393,14 +2394,14 @@ document.addEventListener('visibilitychange', () => {
       if (!g.ok) return;
       const gj = await g.json();
       const cur = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(gj.content.replace(/\n/g,'')), c => c.charCodeAt(0))));
-      if ((cur.snaps||[]).some(s => s && s.key === CURKEY)) { HIST = cur.snaps; return; }
+      if ((cur.snaps||[]).some(s => s && s.key === CURKEY)) { HIST = cur.snaps; try { localStorage.setItem(flag, '1'); } catch(e){} return; }
       cur.snaps = (cur.snaps||[]).concat([snap]);
       const st = JSON.stringify(cur);
       const u8 = new TextEncoder().encode(st); let bin = '';
       for (let j = 0; j < u8.length; j++) bin += String.fromCharCode(u8[j]);
       const w = await fetch('https://api.github.com/repos/khoakafi/khoakafi.github.io/contents/fund_history.json', {method:'PUT', headers:HH,
         body: JSON.stringify({ message: 'Kho danh muc quy: them moc ' + CURKEY, content: btoa(bin), sha: gj.sha, branch: 'main' })});
-      if (w.ok) HIST = cur.snaps;
+      if (w.ok) { HIST = cur.snaps; try { localStorage.setItem(flag, '1'); } catch(e){} }
     }
     function ixRet(days){ if (!IXH || !IXH.c || IXH.c.length < days+2) return null; const c = IXH.c, n = c.length-1; return (c[n]/c[n-days]-1)*100; }
 
