@@ -1003,11 +1003,11 @@ function loadProChart(){
     layout: { background: { color: '#ffffff' }, textColor: '#787B86', fontSize: 12 },
     grid: { horzLines: { color: '#F0F3FA' }, vertLines: { color: '#F0F3FA' } },
     rightPriceScale: { borderColor: '#DDE1E6' },
-    timeScale: { borderColor: '#DDE1E6', rightOffset: 6, barSpacing: 9, timeVisible: false },
+    timeScale: { borderColor: '#DDE1E6', rightOffset: 2, barSpacing: 9, timeVisible: false },
     crosshair: { mode: 0,
       horzLine: { color: '#9598A1', labelBackgroundColor: '#131722' },
       vertLine: { color: '#9598A1', labelBackgroundColor: '#131722' } },
-    localization: { locale: 'vi-VN' }
+    localization: { locale: 'vi-VN', priceFormatter: function(p){ var n = +p; if (!isFinite(n)) return String(p); return String(+n.toFixed(2)); } }
   };
   const o1 = JSON.parse(JSON.stringify(baseOpts));
   o1.timeScale.visible = false;
