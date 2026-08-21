@@ -991,8 +991,8 @@ function loadProChart(){
   wrap.innerHTML = '<div id="proK" style="position:relative">'
     + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas></div>'
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
-    + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;border-radius:4px;pointer-events:none"></div>'
-    + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;border-radius:4px;pointer-events:none"></div>'
+    + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
+    + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
     + '<button id="proFsBtn" title="Phóng to toàn màn hình" style="position:absolute;top:6px;right:8px;z-index:6;width:30px;height:30px;border:1px solid #DDE1E6;border-radius:6px;background:rgba(255,255,255,.92);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;color:#787B86"></button>'
     + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
@@ -1145,15 +1145,20 @@ function loadProChart(){
     const cl = d.close >= d.open ? UP : DOWN;
     const av = v20arr[ii]; const pct = av ? Math.round(vv/av*100) : null;
     const maV = ii >= 19 && ma[ii-19] ? ma[ii-19].value : null;
-    const SP = '<span style="display:inline-block;width:22px"></span>';
+    const NAR = (window.innerWidth || 999) < 620;
+    const SP = NAR ? '<span style="display:inline-block;width:10px"></span>' : '<span style="display:inline-block;width:22px"></span>';
+    const L = NAR ? {o:'O ', h:'H ', l:'L ', c:'C ', m:'MA20 ', v:'KL ', g:'GT ', t:'TB20 '}
+                  : {o:'Open = ', h:'High = ', l:'Low = ', c:'Close = ', m:'MA20 = ', v:'VOL = ', g:'GTGD = ', t:'GTGD 20D = '};
     let dstr = '';
     try { const tv = curOhlc.t[ii]; if (typeof tv === 'number' || /^\d+$/.test(String(tv))) { const dd = new Date(Number(tv) * 1000); const z = n => (n < 10 ? '0' : '') + n; dstr = z(dd.getUTCDate()) + '/' + z(dd.getUTCMonth() + 1) + '/' + dd.getUTCFullYear(); } else { const ps = String(tv).split('-'); dstr = ps.length === 3 ? ps[2] + '/' + ps[1] + '/' + ps[0] : String(tv); } } catch(ex){}
     const gtd = (vv != null && d.close) ? (d.close * vv) / 1e6 : null;
     const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
-    if (leg) leg.innerHTML = '<b>' + curT + '</b>' + SP + dstr + SP + 'Open = ' + d.open + SP + 'High = ' + d.high + SP + 'Low = ' + d.low + SP + 'Close = ' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + '%)' + SP + 'MA20 = ' + (maV == null ? '—' : maV);
+    const dsh = NAR ? dstr.slice(0,5) : dstr;
+    if (leg) leg.innerHTML = '<b>' + curT + '</b>' + SP + dsh + SP + L.o + d.open + SP + L.h + d.high + SP + L.l + d.low + SP + L.c + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(NAR ? 1 : 2) + '%)' + SP + L.m + (maV == null ? '—' : maV);
     const _isIx = ((XROW(curT)||{}).b === 'IX');
-    if (vleg && _isIx) vleg.innerHTML = dstr + SP + 'VOL = ' + (vv == null ? '—' : Math.round(vv).toLocaleString('en-US')) + (pct == null ? '' : SP + pct + '%');
-    else if (vleg) vleg.innerHTML = dstr + SP + 'VOL = ' + (vv == null ? '—' : Math.round(vv).toLocaleString('en-US')) + SP + 'GTGD = ' + (gtd == null ? '—' : gtd.toFixed(2) + ' tỷ') + SP + 'GTGD 20D = ' + (gt20 == null ? '—' : gt20.toFixed(2) + ' tỷ') + (pct == null ? '' : SP + pct + '%');
+    const fV = x => x == null ? '—' : (NAR ? (x >= 1e6 ? (x/1e6).toFixed(2) + 'tr' : Math.round(x/1e3) + 'k') : Math.round(x).toLocaleString('en-US'));
+    if (vleg && _isIx) vleg.innerHTML = dsh + SP + L.v + fV(vv) + (pct == null ? '' : SP + pct + '%');
+    else if (vleg) vleg.innerHTML = dsh + SP + L.v + fV(vv) + SP + L.g + (gtd == null ? '—' : gtd.toFixed(NAR ? 1 : 2) + ' tỷ') + SP + L.t + (gt20 == null ? '—' : gt20.toFixed(NAR ? 1 : 2) + ' tỷ') + (pct == null ? '' : SP + pct + '%');
   };
   window.__proLegend = showLeg;
   showLeg(null);
