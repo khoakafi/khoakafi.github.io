@@ -2036,8 +2036,8 @@ inits.watch = function(){
     r._kl  = (r.v20!=null && r.vx!=null) ? Math.round(r.v20*r.vx) : (r.v20!=null?r.v20:null);
     r._pkl = (r.vx!=null) ? r.vx*100 : null;
     const q = (r.q && r.q.length) ? r.q[r.q.length-1] : null;
-    r._dtq = q ? (q[2]||0) : null;                 // doanh thu quy gan nhat (VND); bank = 0
-    r._lnq = q ? (q[3]!=null?q[3]:null) : null;      // loi nhuan quy gan nhat (VND)
+    r._dtq = (r.revYoY!=null) ? r.revYoY : null;   // +/- DT/TOI quy gan nhat so cung ky (%)
+    r._lnq = (r.npatYoY!=null) ? r.npatYoY : null;   // +/- LN quy gan nhat so cung ky (%)
     r._q = q;
   };
   all.forEach(enrich);
@@ -2063,18 +2063,18 @@ inits.watch = function(){
       <td>${fmt(r._kl,0)}</td>
       <td class="${r._pkl!=null&&r._pkl>=100?'up':'mut'}">${r._pkl==null?'—':fmt(r._pkl,0)+'%'}</td>
       <td>${fmt((r.val20||0)/1000,1)}</td>
-      <td class="${cls(r._lnq)}" title="${qlab}">${tyd(r._lnq)}</td>
-      <td title="${qlab}">${tyd(r._dtq)}</td></tr>`;
+      <td class="${cls(r._lnq)}" title="${qlab}">${r._lnq==null?'—':pct(r._lnq,1)}</td>
+      <td class="${cls(r._dtq)}" title="${qlab}">${r._dtq==null?'—':pct(r._dtq,1)}</td></tr>`;
   };
   const headRow = sortable => sortable
-    ? `<tr>${H('t','Mã',1)}${H('p','Giá')}${H('chg','% giá')}${H('_kl','Khối lượng')}${H('_pkl','% KL')}${H('val20','GTGD TB20 (tỷ)')}${H('_lnq','LN quý (tỷ)')}${H('_dtq','DT quý (tỷ)')}</tr>`
-    : `<tr>${HP('Mã',1)}${HP('Giá')}${HP('% giá')}${HP('Khối lượng')}${HP('% KL')}${HP('GTGD TB20 (tỷ)')}${HP('LN quý (tỷ)')}${HP('DT quý (tỷ)')}</tr>`;
+    ? `<tr>${H('t','Mã',1)}${H('p','Giá')}${H('chg','% giá')}${H('_kl','Khối lượng')}${H('_pkl','% KL')}${H('val20','GTGD TB20 (tỷ)')}${H('_lnq','+/- LN quý')}${H('_dtq','+/- DT/TOI quý')}</tr>`
+    : `<tr>${HP('Mã',1)}${HP('Giá')}${HP('% giá')}${HP('Khối lượng')}${HP('% KL')}${HP('GTGD TB20 (tỷ)')}${HP('+/- LN quý')}${HP('+/- DT/TOI quý')}</tr>`;
   const tableHtml = (list, sortable)=>`<div style="overflow:auto"><table>${headRow(sortable)}${list.map(rowHtml).join('')}</table></div>`;
   el.innerHTML = `<div class="card">
     <h2 style="margin-bottom:3px">Watchlist ${lab}</h2>
     <div class="mini" style="margin-bottom:10px">Danh sách canh mua phiên tới — đã lọc cơ bản (FA đạt) · ${strong.length} mã · cập nhật ${(SUM.updated||'')}. Mã có <span style="color:#B45309">★</span> là nền siết chặt — bấm tiêu đề cột để sắp xếp.</div>
     ${strong.length?tableHtml(strong,true):'<div class="mini" style="padding:8px 0">Chưa có mã đạt chuẩn cơ bản — cập nhật cuối phiên để quét lại.</div>'}
-    <div class="mini" style="margin-top:9px;color:#7A828E">LN/DT quý = quý gần nhất đã công bố (ngân hàng không có cột doanh thu → ghi —). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div>
+    <div class="mini" style="margin-top:9px;color:#7A828E">+/- LN, DT/TOI quý = tăng trưởng quý gần nhất so với cùng kỳ (cùng số với mục Chỉ số cơ bản trong Chi tiết mã; ngân hàng dùng TOI thay doanh thu). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div>
   </div>
   ${weak.length?`<div class="card" style="border-top:3px solid #F0B429">
     <h2 style="margin-bottom:3px;color:#B45309">Chưa đạt về cơ bản (FA) <span class="hint" style="color:#B45309">· ${weak.length} mã · để riêng, không vào danh sách mua</span></h2>
