@@ -62,16 +62,56 @@ const api = {
 const ga = (n,p) => { try { window.gtag && gtag('event', n, p||{}); } catch(e){} };
 const _ntf = {};
 function beepSound(){ try { const a = new (window.AudioContext||window.webkitAudioContext)(); const o = a.createOscillator(), g = a.createGain(); o.connect(g); g.connect(a.destination); o.frequency.value = 880; g.gain.value = 0.12; o.start(); o.stop(a.currentTime + 0.3); } catch(e){} }
-function notifyPush(key, title, body, repeatMs){
-  const now = Date.now();
-  if (_ntf[key] && now - _ntf[key] < (repeatMs || 8.64e7)) return;
-  _ntf[key] = now;
+/* ============ THONG BAO v2 — chong spam ============
+   1) Moi khoa (ma x bac canh bao) chi bao DUNG 1 LAN MOI PHIEN —
+      luu localStorage nen tai lai trang / mo lai app cung khong bao lai.
+   2) Nhieu canh bao don trong cung dot quet -> GOM thanh 1 thong bao.
+   3) Gian toi thieu 45 giay giua 2 thong bao lien tiep.
+   4) Khong requireInteraction -> thong bao tu troi, khong gam man hinh. */
+const NTF_LS = 'kn_ntf_day';
+function ntfSeen(key){
+  try {
+    const day = new Date().toISOString().slice(0,10);
+    let m; try { m = JSON.parse(localStorage.getItem(NTF_LS) || '{}'); } catch(e){ m = {}; }
+    if (m.__day !== day) m = {__day: day};          // sang phien moi -> xoa dau cu
+    if (m[key]) return true;
+    m[key] = 1;
+    localStorage.setItem(NTF_LS, JSON.stringify(m));
+    return false;
+  } catch(e){
+    const now = Date.now();
+    if (_ntf[key] && now - _ntf[key] < 8.64e7) return true;
+    _ntf[key] = now; return false;
+  }
+}
+let _ntfQ = [], _ntfLast = 0, _ntfTimer = null;
+const NTF_GAP = 45000;      // gian toi thieu giua 2 thong bao
+const NTF_BATCH = 4000;     // gom cac canh bao phat sinh trong 4s
+function ntfFlush(){
+  _ntfTimer = null;
+  if (!_ntfQ.length) return;
+  const wait = NTF_GAP - (Date.now() - _ntfLast);
+  if (wait > 0){ _ntfTimer = setTimeout(ntfFlush, wait); return; }
+  const q = _ntfQ; _ntfQ = [];
+  _ntfLast = Date.now();
+  let title, body, tag;
+  if (q.length === 1){ title = q[0].title; body = q[0].body; tag = q[0].key; }
+  else {
+    title = q.length + ' mã theo dõi đang chuyển động';
+    body = q.map(x => x.short || x.title).join('  ·  ');
+    tag = 'kn-multi';
+  }
   toast(title + ' — ' + body);
   beepSound();
   try { if ('Notification' in window && Notification.permission === 'granted') {
-    const n = new Notification(title, {body, tag: key, requireInteraction: true, renotify: true});
+    const n = new Notification(title, {body, tag, renotify: false});
     n.onclick = () => { window.focus(); n.close(); };
   } } catch(e){}
+}
+function notifyPush(key, title, body, repeatMs, short){
+  if (ntfSeen(key)) return;
+  _ntfQ.push({key, title, body, short});
+  if (!_ntfTimer) _ntfTimer = setTimeout(ntfFlush, NTF_BATCH);
 }
 document.addEventListener('click', () => { try { if ('Notification' in window && Notification.permission === 'default') Notification.requestPermission(); } catch(e){} }, {once:true});
 // ============ CHỈ BÁO KỸ THUẬT ============
@@ -549,21 +589,27 @@ function scanNewSignals(){
     if (tpn.recent.some(x => x.t === r.t && (x.open || x.bdate === biso))) return;
     const nd = {t:r.t, bd:dstr, bdate:biso, bp:+(+r.p).toFixed(2), sd:'—', ret:-0.15, open:true, today:1};
     tpn.recent.unshift(nd);
-    notifyPush('SIG'+r.t+biso, r.t+' — TÍN HIỆU MUA KÍCH HOẠT', 'Cây bùng nổ đạt chuẩn kèm dòng tiền tại giá '+nd.bp+'. Mở dashboard xem chi tiết.', 15*60000);
+    notifyPush('SIG'+r.t+biso, r.t+' — TÍN HIỆU MUA KÍCH HOẠT', 'Cây bùng nổ đạt chuẩn kèm dòng tiền tại giá '+nd.bp+'. Mở dashboard xem chi tiết.', 0, r.t+' KÍCH HOẠT MUA');
     if (!store.some(x => x.t === r.t && x.bdate === biso)) store.push({t:r.t, bd:dstr, bdate:biso, bp:nd.bp});
   });
   saveLiveDeals(store);
   if (tpn.recent.length > 12) tpn.recent = tpn.recent.slice(0,12);
 }
 function checkWatchAlerts(){
+  /* Bac canh bao (moi bac 1 lan/phien/ma — notifyPush tu chan trung):
+       W2  : tang >= 2%  — khoi dong
+       W4  : tang >= 4%  — nong may (W2 da bao van bao them W4 vi la nguong moi)
+       NEAR: gia cham 98.5% diem kich hoat nhung chua vuot — sat diem mua */
   try {
     if (!liveWatch.inSession()) return;
     ROWS().forEach(r=>{
       if (!r.watch || r.wgrade === 'weak' || r.chg == null) return;
       const g = (window.SIGS && window.SIGS.trig && window.SIGS.trig[r.t]) || null;
       if (g && r.p != null && r.p >= g[0]) return;  // da co thong bao TIN HIEU MUA lo
-      if (r.chg >= 4) notifyPush('W4'+r.t, r.t+' +'+(+r.chg).toFixed(1)+'% — NÓNG MÁY', 'Mã trong vùng theo dõi đang tăng tốc mạnh. Canh chặt tới cuối phiên.', 10*60000);
-      else if (r.chg >= 2) notifyPush('W2'+r.t, r.t+' +'+(+r.chg).toFixed(1)+'% — khởi động', 'Mã trong vùng theo dõi bắt đầu chạy. Để mắt.', 15*60000);
+      if (g && r.p != null && r.p >= g[0]*0.985)
+        notifyPush('NEAR'+r.t, r.t+' — sát điểm mua', 'Giá '+(+r.p).toFixed(2)+', còn cách điểm kích hoạt '+(+g[0]).toFixed(2)+' chưa tới 1.5%. Chuẩn bị sẵn.', 0, r.t+' sát điểm mua');
+      if (r.chg >= 4) notifyPush('W4'+r.t, r.t+' +'+(+r.chg).toFixed(1)+'% — NÓNG MÁY', 'Mã trong vùng theo dõi đang tăng tốc mạnh. Canh chặt tới cuối phiên.', 0, r.t+' +'+(+r.chg).toFixed(1)+'%');
+      else if (r.chg >= 2) notifyPush('W2'+r.t, r.t+' +'+(+r.chg).toFixed(1)+'% — khởi động', 'Mã trong vùng theo dõi bắt đầu chạy. Để mắt.', 0, r.t+' +'+(+r.chg).toFixed(1)+'%');
     });
   } catch(e){}
 }
@@ -1965,7 +2011,7 @@ async function renderCmp(){
 
 // ================= CẬP NHẬT DỮ LIỆU (client-side) =================
 // ================= TAB THEO DÕI (quét cuối phiên — canh phiên bùng nổ) =================
-let wSortK='val20', wSortD=-1;
+let wSortK='chg', wSortD=-1;   // mặc định: %giá giảm dần (mã chạy mạnh nhất lên đầu)
 window.sortWatch = k => { if (wSortK===k) wSortD=-wSortD; else { wSortK=k; wSortD=(k==='t')?1:-1; } inits.watch(); };
 inits.watch = function(){
   const el = $('#view-watch');
@@ -1980,7 +2026,7 @@ inits.watch = function(){
   };
   all.forEach(enrich);
   const sorter = (a,b)=>{
-    if (wSortK==='val20' && wSortD===-1){ const sa=a.wstar?0:1, sb=b.wstar?0:1; if(sa!==sb) return sa-sb; }  // sao len truoc
+    if ((wSortK==='chg'||wSortK==='val20') && wSortD===-1){ const sa=a.wstar?0:1, sb=b.wstar?0:1; if(sa!==sb) return sa-sb; }  // sao len truoc
     let x=a[wSortK], y=b[wSortK];
     if (typeof x==='string'||typeof y==='string'){ return wSortD*String(x||'').localeCompare(String(y||'')); }
     x=(x==null?-1e18:x); y=(y==null?-1e18:y); return wSortD*(x-y);
