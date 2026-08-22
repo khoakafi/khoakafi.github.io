@@ -1395,7 +1395,23 @@ function computeTPN(oh, boardCode, qsAv){
       const mm = MP[k] || MP.B;
       markers.push({time: ts, position:'belowBar', color: mm[0], shape:'arrowUp', text: mm[1]}); }
   });
-  return {markers, state: (S && S.st) || null};
+  let _st = (S && S.st) || null;
+  // Ma nam trong vung theo doi nhung bep chua kem trang thai -> dung ngay nguong da cong bo
+  if (!_st) { try {
+    const _r = byT[curT] || {};
+    const _g = (window.SIGS && window.SIGS.trig && window.SIGS.trig[curT]) || null;
+    if (_r.watch && _g && +_g[0] > 0 && +_g[1] > 0) {
+      const _px = (+_g[0]).toFixed(2), _kl = (+_g[1]/1e6).toFixed(1);
+      const _yeu = (_r.wgrade === 'weak');
+      const _duoi = _yeu ? ' triệu cp — cơ bản quý không đạt, chỉ quan sát.' : ' triệu cp.';
+      let _ts = null;
+      try { const _tt = window.SIGS.t || {}; for (const _k2 in _tt) { if (_tt[_k2] && _tt[_k2].st && _tt[_k2].st.ts) { _ts = _tt[_k2].st.ts; break; } } } catch(e){}
+      _st = { c: _yeu ? ['CHỜ ĐIỂM MUA — HẠNG YẾU', '#f3f5f7', '#6b7280'] : ['CHỜ ĐIỂM MUA', '#fef9e7', '#b45309'],
+        dL: 'Đóng cửa hôm nay ≥ ' + _px + ' · KL ≥ ' + _kl + _duoi,
+        dA: 'Đóng cửa phiên tới ≥ ' + _px + ' · KL ≥ ' + _kl + _duoi, ts: _ts };
+    }
+  } catch(e){} }
+  return {markers, state: _st};
 }
 let curMarkers = [];
 function renderTPN(s){
