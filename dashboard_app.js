@@ -2339,14 +2339,36 @@ document.addEventListener('visibilitychange', () => {
       + '#view-fund .fiC{border:1px solid var(--fl);border-radius:12px;background:#fff;padding:15px 17px 17px;margin:0 0 12px}'
       + '#view-fund .fiC h3{margin:0 0 3px;font-size:15px;font-weight:800;color:var(--fi)}'
       + '#view-fund .fiS{font-size:12px;color:var(--fm);line-height:1.55;margin:0 0 12px}'
-      + '#fiHero{border:1px solid var(--fl);border-radius:12px;background:linear-gradient(180deg,#F6FBF7,#fff);padding:16px 18px;margin:0 0 12px}'
-      + '#fiHero .big{font-size:26px;font-weight:800;color:var(--fi);line-height:1.2;letter-spacing:-.4px}'
-      + '#fiHero .sub{font-size:12.5px;color:var(--fm);margin-top:5px;line-height:1.6}'
-      + '#fiTiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:13px 0 0}'
-      + '@media(max-width:760px){#fiTiles{grid-template-columns:repeat(2,minmax(0,1fr))}}'
-      + '#view-fund .fiT{border:1px solid var(--fl);border-radius:10px;background:#fff;padding:10px 12px}'
-      + '#view-fund .fiT .n{font-size:20px;font-weight:800;color:var(--fi);line-height:1.15;font-variant-numeric:tabular-nums}'
-      + '#view-fund .fiT .l{font-size:11px;color:var(--fm);margin-top:2px;line-height:1.45}'
+      + '#fiHero{border:1px solid var(--fl);border-radius:12px;background:linear-gradient(180deg,#F6FBF7,#fff);padding:14px 16px 15px;margin:0 0 12px}'
+      + '#fiHero .ttl{font-size:19px;font-weight:800;color:var(--fi);letter-spacing:-.3px;line-height:1.25}'
+      + '#fiHero .ttl em{font-style:normal;color:var(--fg)}'
+      + '#fiHero .sub{font-size:12.5px;color:var(--fm);margin:4px 0 12px;line-height:1.6}'
+      + '#fiTop{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:14px;align-items:start}'
+      + '@media(max-width:980px){#fiTop{grid-template-columns:1fr}}'
+      + '#fiPick{border:1px solid var(--fl);border-radius:10px;background:#fff;overflow:hidden}'
+      + '#view-fund .fiPh,#view-fund .fiPr{display:grid;grid-template-columns:minmax(0,1fr) 44px 50px minmax(62px,.85fr) 56px;align-items:center;gap:9px;padding:7px 11px}'
+      + '#view-fund .fiPh{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--fm);font-weight:700;background:#FAFBFC;border-bottom:1px solid var(--fl)}'
+      + '#view-fund .fiPr{border-bottom:1px solid #F4F6F8;cursor:pointer;font-size:12.5px}'
+      + '#view-fund .fiPr:last-child{border-bottom:0}'
+      + '#view-fund .fiPr:hover{background:#F6FBF7}'
+      + '#view-fund .fiPn{display:flex;align-items:center;gap:8px;min-width:0}'
+      + '#view-fund .fiPn img{width:24px;height:24px;border-radius:5px;object-fit:contain;background:#fff;border:1px solid var(--fl);flex:0 0 auto}'
+      + '#view-fund .fiPn b{font-size:13.5px;font-weight:800;color:var(--fi);display:block;line-height:1.25}'
+      + '#view-fund .fiPn i{font-style:normal;font-size:10.5px;color:var(--fm);display:block;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}'
+      + '#view-fund .fiPq{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;color:var(--fi)}'
+      + '#view-fund .fiPw{text-align:right;font-variant-numeric:tabular-nums;color:var(--fm);font-size:11.5px}'
+      + '#view-fund .fiPb{display:flex;align-items:center;gap:7px;min-width:0}'
+      + '#view-fund .fiPb .bar{flex:1;height:7px;background:#EDF0F3;border-radius:99px;overflow:hidden;min-width:22px}'
+      + '#view-fund .fiPb .bar i{display:block;height:100%;background:var(--fg);border-radius:99px}'
+      + '#view-fund .fiPb u{text-decoration:none;font-size:11.5px;font-weight:700;color:var(--fg);font-variant-numeric:tabular-nums;flex:0 0 auto}'
+      + '#view-fund .fiPd{text-align:right;font-size:11.5px;font-weight:700;color:var(--fm);font-variant-numeric:tabular-nums}'
+      + '#fiOdd{display:flex;flex-direction:column;gap:8px}'
+      + '#view-fund .fiOd{border:1px solid var(--fl);border-radius:10px;background:#fff;padding:9px 11px}'
+      + '#view-fund .fiOd .k{font-size:10px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;color:var(--fm)}'
+      + '#view-fund .fiOd .v{font-size:15px;font-weight:800;color:var(--fi);margin:2px 0 3px;line-height:1.25}'
+      + '#view-fund .fiOd .d{font-size:11.5px;color:var(--fm);line-height:1.55}'
+      + '#view-fund .fiOd.hot{border-color:#F0DBB0;background:#FFFCF5}'
+      + '#fiNote{font-size:11.5px;color:var(--fi);line-height:1.55;background:#F3F8F4;border-left:3px solid var(--fg);border-radius:0 7px 7px 0;padding:8px 10px}'
       + '#fiSplit{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:12px}'
       + '@media(max-width:980px){#fiSplit{grid-template-columns:1fr}}'
       + '#view-fund .fiR{display:grid;grid-template-columns:48px 1fr 48px 62px 54px;align-items:center;gap:8px;margin:0 0 6px;font-size:12.5px}'
@@ -2375,8 +2397,8 @@ document.addEventListener('visibilitychange', () => {
       + '<div class="card" style="padding:0;border:0;background:none;box-shadow:none">'
       + '<h2 style="margin:0 0 3px">Fund Insight <span class="hint">quỹ mở nội địa đang làm ăn ra sao và cầm gì</span></h2>'
       + '<div id="fiMeta" class="mini" style="margin:0 0 13px">Đang tải…</div>'
-      + '<div id="fiHero"><div class="big" id="fiBig">—</div><div class="sub" id="fiSubT"></div>'
-      + '<div id="fiTiles"></div></div>'
+      + '<div id="fiHero"><div class="ttl" id="fiTtl">—</div><div class="sub" id="fiSubT"></div>'
+      + '<div id="fiTop"><div id="fiPick"></div><div id="fiOdd"></div></div></div>'
       + '<div id="fiSplit"><div class="fiC" id="fiRank"></div><div class="fiC" id="fiDetail"></div></div>'
       + '</div>';
     host.appendChild(d);
@@ -2491,25 +2513,74 @@ document.addEventListener('visibilitychange', () => {
     function ixRet(days){ if (!IXH || !IXH.c || IXH.c.length < days+2) return null; const c = IXH.c, n = c.length-1; return (c[n]/c[n-days]-1)*100; }
 
     function renderHero(){
+      const rws = (window.SUMMARY && window.SUMMARY.rows) || [];
+      const bt = {}; rws.forEach(function(r){ bt[r.t] = r; });
+      const SW = {}, SC = {};
+      F.forEach(function(f){ f.hold.forEach(function(h){ const k = h.stockCode; if (!k) return;
+        SW[k] = (SW[k]||0) + (+h.netAssetPercent||0); SC[k] = (SC[k]||0) + 1; }); });
+      const codes = Object.keys(CNT);
+      const inW = codes.map(function(k){ return bt[k]; }).filter(function(r){ return r && r.watch; });
+      let pk = inW.filter(function(r){ return r.wgrade === 'strong' && (+r.rs||0) >= 55; });
+      if (pk.length < 3) pk = inW.filter(function(r){ return r.wgrade === 'strong'; });
+      if (pk.length < 3) pk = inW.slice();
+      pk = pk.sort(function(a,b){ return (+b.rs||0) - (+a.rs||0); }).slice(0, 6);
+
+      const mkey = CURKEY || new Date().toISOString().slice(0,7);
+      const mth = +mkey.slice(5,7);
       const i12 = ixRet(250);
-      const beat = BIG.filter(f => f.r12 != null && i12 != null && f.r12 > i12);
-      const pos = BIG.filter(f => f.r12 != null && f.r12 > 0);
-      const best = BIG[0];
-      document.getElementById('fiBig').textContent = (i12 == null) ? (BIG.length + ' quỹ lớn trên bàn cân')
-        : (beat.length + '/' + BIG.length + ' quỹ lớn vượt được VN-Index trong 12 tháng');
-      document.getElementById('fiSubT').innerHTML = (i12 == null ? '' : 'VN-Index 12 tháng <b>' + sg(i12) + '</b>. ')
-        + (best ? 'Dẫn đầu là <b>' + esc(best.m) + '</b> với ' + sg(best.r12) + '. ' : '')
-        + 'Chỉ ' + pos.length + '/' + BIG.length + ' quỹ có lãi dương. Con số này nói lên một năm khó của nghề quản lý quỹ — và cũng là lý do kỷ luật cắt lỗ của một hệ thống có giá trị.';
-      const conc = F.slice().sort((a,b)=>b.top-a.top)[0];
-      const popular = Object.entries(CNT).sort((a,b)=>b[1]-a[1])[0];
-      const lonely = Object.values(CNT).filter(v=>v===1).length;
-      const tiles = [
-        ['n', BIG.length, 'quỹ quy mô từ 500 tỷ'],
-        ['n', (popular ? popular[0] + ' · ' + popular[1] : '—'), 'mã nhiều quỹ cầm nhất (trên ' + F.length + ' quỹ)'],
-        ['n', lonely, 'mã chỉ duy nhất 1 quỹ dám cầm'],
-        ['n', (conc ? conc.m + ' · ' + conc.top.toFixed(0) + '%' : '—'), 'quỹ dồn đậm nhất vào 10 mã']
-      ];
-      document.getElementById('fiTiles').innerHTML = tiles.map(t => '<div class="fiT"><div class="n">' + esc(String(t[1])) + '</div><div class="l">' + esc(t[2]) + '</div></div>').join('');
+      const beat = BIG.filter(function(f){ return f.r12 != null && i12 != null && f.r12 > i12; });
+
+      document.getElementById('fiTtl').innerHTML = 'Top pick tháng ' + mth + ' — <em>nơi tiền lớn và tín hiệu gặp nhau</em>';
+      document.getElementById('fiSubT').innerHTML = '<b>' + F.length + ' quỹ</b> đang cầm <b>' + codes.length
+        + ' mã</b>. Hệ chấm <b>' + inW.length + ' mã</b> trong số đó đang ở vùng chờ mua — đây là những mã khỏe nhất trong nhóm giao nhau.';
+
+      const pel = document.getElementById('fiPick');
+      pel.innerHTML = '<div class="fiPh"><span>Mã</span><span style="text-align:right">Quỹ cầm</span>'
+        + '<span style="text-align:right">Tỷ trọng</span><span>Sức mạnh giá</span><span style="text-align:right">Cách đỉnh</span></div>'
+        + (pk.length ? pk.map(function(r){
+            const k = r.t, nq = CNT[k]||0, w = SC[k] ? SW[k]/SC[k] : 0, rs = Math.round(+r.rs||0);
+            const dh = (r.dHi == null) ? null : +r.dHi;
+            const near = (dh != null && Math.abs(dh) <= 10);
+            const gp = (r.p == null) ? '' : (+r.p).toFixed(2);
+            const gc = (r.chg == null) ? null : +r.chg;
+            const gcs = (gc == null) ? '' : '<span style="color:' + (gc >= 0 ? 'var(--fg)' : 'var(--fr)') + '">'
+              + (gc >= 0 ? '+' : '') + gc.toFixed(2) + '%</span>';
+            return '<div class="fiPr" data-t="' + esc(k) + '">'
+              + '<span class="fiPn"><img src="https://cdn.simplize.vn/simplizevn/logo/' + esc(k) + '.jpeg" onerror="this.style.visibility=\'hidden\'" alt="">'
+              + '<span style="min-width:0"><b>' + esc(k) + '</b><i>' + gp + (gcs ? ' · ' + gcs : '') + '</i></span></span>'
+              + '<span class="fiPq">' + nq + '</span>'
+              + '<span class="fiPw">' + w.toFixed(1) + '%</span>'
+              + '<span class="fiPb"><span class="bar"><i style="width:' + Math.max(3, Math.min(100, rs)) + '%"></i></span><u>' + rs + '</u></span>'
+              + '<span class="fiPd"' + (near ? ' style="color:var(--fg)"' : '') + '>' + (dh == null ? '—' : dh.toFixed(1) + '%') + '</span></div>';
+          }).join('')
+          : '<div style="padding:16px 12px;font-size:12.5px;color:var(--fm)">Chưa có mã nào vừa được quỹ cầm vừa ở vùng chờ mua.</div>');
+      pel.onclick = function(e){ const r = e.target.closest('.fiPr'); if (r && window.openDetail) window.openDetail(r.dataset.t); };
+
+      const kt = codes.slice().sort(function(a,b){ return (CNT[b]||0)-(CNT[a]||0); }).slice(0,10)
+        .map(function(k){ return bt[k]; }).filter(Boolean)
+        .sort(function(a,b){ return (+a.rs||0)-(+b.rs||0); })[0];
+      const kh = codes.map(function(k){ return bt[k]; }).filter(Boolean)
+        .sort(function(a,b){ return (+b.rs||0)-(+a.rs||0); })[0];
+      const lone = codes.filter(function(k){ return CNT[k] === 1; });
+      const lex = lone.slice().sort(function(a,b){ return (+((bt[b]||{}).rs)||0)-(+((bt[a]||{}).rs)||0); }).slice(0,3);
+
+      const cards = [];
+      if (kt) cards.push(['hot','Đám đông đang kẹt', esc(kt.t) + ' · ' + (CNT[kt.t]||0) + ' quỹ',
+        'Nằm trong nhóm mã được quỹ cầm nhiều nhất, nhưng sức mạnh giá chỉ ' + Math.round(+kt.rs||0)
+        + '/99 và còn cách đỉnh ' + (kt.dHi == null ? '—' : Math.abs(+kt.dHi).toFixed(1) + '%')
+        + '. Tiền lớn vào sớm chưa chắc là đúng thời điểm.']);
+      if (kh) cards.push(['','Khỏe nhất trong rổ quỹ', esc(kh.t) + ' · ' + Math.round(+kh.rs||0) + '/99',
+        (CNT[kh.t]||0) + ' quỹ đang cầm' + (kh.watch ? ', và hệ đã đưa vào vùng theo dõi.' : ', nhưng hệ chưa đưa vào vùng theo dõi.')]);
+      cards.push(['','Đi lệch đám đông', lone.length + ' mã',
+        'Chỉ đúng một quỹ dám cầm' + (lex.length ? ' — như ' + lex.map(esc).join(', ') + '.' : '.')
+        + ' Đây là chỗ các quỹ đặt cược riêng thay vì bám chỉ số.']);
+
+      document.getElementById('fiOdd').innerHTML = cards.map(function(c){
+          return '<div class="fiOd' + (c[0] ? ' ' + c[0] : '') + '"><div class="k">' + c[1] + '</div><div class="v">'
+            + c[2] + '</div><div class="d">' + c[3] + '</div></div>'; }).join('')
+        + '<div id="fiNote">' + (i12 == null ? '' : '<b>' + beat.length + '/' + BIG.length
+          + ' quỹ lớn</b> vượt được VN-Index 12 tháng (chỉ số ' + sg(i12) + '). ')
+        + 'Bảng xếp hạng và danh mục từng quỹ ở ngay bên dưới.</div>';
     }
 
     function renderPeriods(){
