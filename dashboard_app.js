@@ -1097,7 +1097,7 @@ function loadProChart(){
       sva.push(i ? sv*kE + sva[i-1]*(1-kE) : sv);
       const bsp = Math.abs(bva[i]-sva[i])*v;
       const buy = bva[i] > sva[i];
-      const spike = i > 0 && pb > 0 && bsp > X*pb;
+      const spike = i > 0 && pb > 0 && bsp > X*pb && v > va[i];
       pb = bsp;
       let f, bd;
       if (spike && buy) { f = '#00A868'; bd = '#006B44'; }
