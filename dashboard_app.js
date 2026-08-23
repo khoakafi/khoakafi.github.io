@@ -1065,6 +1065,16 @@ function loadProChart(){
   o2.rightPriceScale.scaleMargins = { top: 0.26, bottom: 0 };
   o2.layout.attributionLogo = false;
   proVolChart = LightweightCharts.createChart(document.getElementById('proVolPane'), o2);
+  // ==== Lan chuot = keo chart ve qua khu (nhu ami); giu Ctrl roi lan = phong to/thu nho ====
+  const __wmPan = { handleScale: { mouseWheel: false, pinch: true, axisPressedMouseMove: true }, handleScroll: { mouseWheel: true, pressedMouseMove: true, horzTouchDrag: true, vertTouchDrag: false } };
+  const __wmZoom = { handleScale: { mouseWheel: true, pinch: true, axisPressedMouseMove: true }, handleScroll: { mouseWheel: false, pressedMouseMove: true, horzTouchDrag: true, vertTouchDrag: false } };
+  proChart.applyOptions(__wmPan); proVolChart.applyOptions(__wmPan);
+  const __wheelMode = function(e){ const o = (e.ctrlKey || e.metaKey) ? __wmZoom : __wmPan;
+    try { proChart.applyOptions(o); proVolChart.applyOptions(o); } catch(x){} };
+  try {
+    document.getElementById('proPx').addEventListener('wheel', __wheelMode, { capture: true, passive: true });
+    document.getElementById('proVolPane').addEventListener('wheel', __wheelMode, { capture: true, passive: true });
+  } catch(e){}
   proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
   const n0 = curOhlc.t.length - 1;
   const liveLast = (function(){
@@ -1079,14 +1089,13 @@ function loadProChart(){
     return { time: tt, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i] };
   });
   proCandle.setData(candData);
-  proVol = proVolChart.addCandlestickSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false, wickVisible: false });
-  proSm = null;
+  proVol = proVolChart.addHistogramSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false });
   const volAt = i => (i === n0 && liveLast) ? liveLast.lv : curOhlc.v[i];
-  // ==== Smart Money volume — mot lop mau duy nhat, mau mang nghia:
-  //  xanh dam = ap luc MUA bung no; do dam = ap luc BAN bung no; xam than = KL dot bien; con lai chim vao nen
+  // ==== Smart Money volume: cot KL lam nen (xam), cot AP LUC co chieu cao rieng (truc tu co gian theo khung dang xem)
+  //  mau dam = bung no (ap luc > 1.2x phien truoc + KL tren trung binh), mau nhat = ben dang thang the binh thuong
   window.__smCalc = function(ovr){
     const N = 10, X = 1.2, kE = 2/(N+1), m = curOhlc.t.length;
-    const va = [], bva = [], sva = [], volD = [];
+    const va = [], bva = [], sva = [], volD = [], smD = [];
     let pb = 0;
     for (let i = 0; i < m; i++){
       let v = volAt(i)||0, c = candData[i].close, h = candData[i].high, l = candData[i].low;
@@ -1099,17 +1108,17 @@ function loadProChart(){
       const buy = bva[i] > sva[i];
       const spike = i > 0 && pb > 0 && bsp > X*pb && v > va[i];
       pb = bsp;
-      let f, bd;
-      if (spike && buy) { f = '#00A868'; bd = '#006B44'; }
-      else if (spike) { f = '#F5333F'; bd = '#B5202B'; }
-      else if (v > X*va[i]) { f = '#9AA4B2'; bd = '#9AA4B2'; }
-      else { f = '#E8EAEF'; bd = '#E8EAEF'; }
-      volD.push({ time: curOhlc.t[i], open: 0, high: v, low: 0, close: v, color: f, borderColor: bd, wickColor: bd });
+      volD.push({ time: curOhlc.t[i], value: v, color: v > X*va[i] ? '#9AA4B2' : '#E4E7EC' });
+      smD.push({ time: curOhlc.t[i], value: bsp,
+        color: spike ? (buy ? '#00A868' : '#F5333F') : (buy ? 'rgba(0,168,104,.38)' : 'rgba(245,51,63,.33)') });
     }
-    return { volD: volD, smD: [] };
+    return { volD: volD, smD: smD };
   };
   const smd0 = window.__smCalc(null);
   proVol.setData(smd0.volD);
+  proSm = proVolChart.addHistogramSeries({ priceScaleId: 'sm', priceLineVisible: false, lastValueVisible: false });
+  try { proVolChart.priceScale('sm').applyOptions({ scaleMargins: { top: 0.26, bottom: 0 }, visible: false }); } catch(e){}
+  proSm.setData(smd0.smD);
   const ma = []; let s = 0;
   for (let i = 0; i < curOhlc.c.length; i++){ s += curOhlc.c[i]; if (i >= 20) s -= curOhlc.c[i-20]; if (i >= 19) ma.push({ time: curOhlc.t[i], value: +(s/20).toFixed(2) }); }
   proMa = proChart.addLineSeries({ color: '#2962FF', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false });
