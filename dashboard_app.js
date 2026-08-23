@@ -9,15 +9,6 @@ SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t)) r.watch=0; });
 if(SUM.tpn&&SUM.tpn.recent) SUM.tpn.recent=SUM.tpn.recent.filter(x=>!BO_CUNG.has(x.t));
 const ROWS = () => SUM.rows;
 const byT = {}; SUM.rows.forEach(r => byT[r.t] = r);
-// RS chi xep hang trong ro thanh khoan: GTGD TB20 >= 15 ty/phien; duoi nguong -> chua co RS
-(function(){ try {
-  const LIQ = 15000; // val20 tinh bang trieu dong
-  const co = SUM.rows.filter(r => r.rs != null && (+r.val20||0) >= LIQ);
-  co.sort((a,b) => (a.rs - b.rs) || ((a.r6==null?-999:+a.r6) - (b.r6==null?-999:+b.r6)) || ((a.r3==null?-999:+a.r3) - (b.r3==null?-999:+b.r3)));
-  const nL = co.length;
-  if (nL > 5) co.forEach((r,i) => { r.rs = Math.max(1, Math.min(99, Math.round((i+1)/nL*99))); });
-  SUM.rows.forEach(r => { if (r.rs != null && (+r.val20||0) < LIQ) r.rs = null; });
-} catch(e){} })();
 // ==== Ma chi xem chart (KHONG vao ro tin hieu, khong sinh deal) ====
 const XTRA = {};
 [['VNINDEX','Chỉ số VN-Index'],['VN30','Chỉ số VN30'],['VN100','Chỉ số VN100'],['HNX','Chỉ số HNX-Index'],['HNX30','Chỉ số HNX30'],['UPCOM','Chỉ số UPCoM-Index'],['VNXALL','Chỉ số VNX Allshare']].forEach(x => { XTRA[x[0]] = {t:x[0], b:'IX', n:x[1]}; });
@@ -1104,9 +1095,9 @@ function loadProChart(){
       const bsp = Math.abs(bva[i]-sva[i])*v;
       const buy = bva[i] > sva[i];
       const spike = i > 0 && smD[i-1]._bsp > 0 && bsp > X*smD[i-1]._bsp;
-      volD.push({ time: curOhlc.t[i], value: v, color: v > X*va[i] ? 'rgba(90,100,112,.45)' : 'rgba(150,158,168,.26)' });
+      volD.push({ time: curOhlc.t[i], value: v, color: v > X*va[i] ? '#5B6B84' : '#CBD2DC' });
       smD.push({ time: curOhlc.t[i], value: bsp, _bsp: bsp,
-        color: spike ? (buy ? '#0BB04B' : '#E5484D') : (buy ? 'rgba(18,138,62,.38)' : 'rgba(229,72,77,.32)') });
+        color: spike ? (buy ? '#00A63E' : '#E5231B') : (buy ? '#7FBF97' : '#EFA0A2') });
     }
     return { volD: volD, smD: smD };
   };
@@ -2434,7 +2425,8 @@ document.addEventListener('visibilitychange', () => {
       + '<div id="fiTop"><div id="fiPick"></div><div id="fiOdd"></div></div></div>'
       + '<div id="fiSplit"><div class="fiC" id="fiRank"></div><div class="fiC" id="fiDetail"></div></div>'
       + '</div>';
-    host.appendChild(d);
+    const ftEl = host.querySelector(':scope > footer') || host.querySelector('footer');
+    if (ftEl && ftEl.parentElement === host) host.insertBefore(d, ftEl); else host.appendChild(d);
 
     const PAL = ['#2A78D6','#128A3E','#E5484D','#B45309','#7C3AED','#0E7490'];
     const BM = '#1F2937';
@@ -2501,7 +2493,7 @@ document.addEventListener('visibilitychange', () => {
 
         const z2 = n => (n<10?'0':'')+n;
         const dstr = newest ? (function(){ const t=new Date(newest); return z2(t.getDate())+'/'+z2(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
-        meta.innerHTML = 'insight từ ' + F.length + ' quỹ mở · nguồn Fmarket · danh mục ' + dstr;
+        meta.innerHTML = 'insight từ ' + F.length + ' quỹ mở · nguồn Fmarket';
 
         CURKEY = newest ? new Date(newest).toISOString().slice(0,7) : null;
         try { HIST = (((await (await fetch('/fund_history.json?cb=' + Date.now(), {cache:'no-store'})).json())||{}).snaps) || []; } catch(e) { HIST = []; }
