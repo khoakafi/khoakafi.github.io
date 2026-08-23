@@ -1095,9 +1095,9 @@ function loadProChart(){
       const bsp = Math.abs(bva[i]-sva[i])*v;
       const buy = bva[i] > sva[i];
       const spike = i > 0 && smD[i-1]._bsp > 0 && bsp > X*smD[i-1]._bsp;
-      volD.push({ time: curOhlc.t[i], value: v, color: v > X*va[i] ? '#5B6B84' : '#CBD2DC' });
+      volD.push({ time: curOhlc.t[i], value: v, color: v > X*va[i] ? '#3A4552' : '#D8DCE2' });
       smD.push({ time: curOhlc.t[i], value: bsp, _bsp: bsp,
-        color: spike ? (buy ? '#00A63E' : '#E5231B') : (buy ? '#7FBF97' : '#EFA0A2') });
+        color: spike ? (buy ? '#00C853' : '#F23645') : 'rgba(0,0,0,0)' });
     }
     return { volD: volD, smD: smD };
   };
