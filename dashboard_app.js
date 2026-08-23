@@ -2361,6 +2361,10 @@ document.addEventListener('visibilitychange', () => {
       + '#view-fund th{font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--fm);font-weight:700;padding:7px 6px;border-bottom:1.5px solid var(--fl);text-align:right;white-space:nowrap}'
       + '#view-fund td{padding:8px 6px;border-bottom:1px solid #F4F6F8;text-align:right;font-variant-numeric:tabular-nums}'
       + '#view-fund tr.sel td{background:#F3F8F4}'
+      + '#view-fund th.fiSort{cursor:pointer;-webkit-user-select:none;user-select:none;white-space:nowrap}'
+      + '#view-fund th.fiSort:active{color:var(--fi)}'
+      + '#view-fund th.fiSort.on{color:var(--fg)}'
+      + '#view-fund th.fiSort .fiArr{opacity:.4;font-weight:400}'
       + '#view-fund tr.bm td{background:#FAFBFC}'
       + '#fiPer{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}'
       + '#fiPer button{border:1px solid var(--fl);background:#fff;border-radius:99px;padding:5px 13px;font:600 12px Inter,sans-serif;color:var(--fm);cursor:pointer}'
@@ -2373,8 +2377,6 @@ document.addEventListener('visibilitychange', () => {
       + '<div id="fiMeta" class="mini" style="margin:0 0 13px">Đang tải…</div>'
       + '<div id="fiHero"><div class="big" id="fiBig">—</div><div class="sub" id="fiSubT"></div>'
       + '<div id="fiTiles"></div></div>'
-      + '<div class="fiC"><h3>Đường tăng trưởng NAV</h3><p class="fiS" id="fiChartS">So sánh 5 quỹ dẫn đầu với VN-Index. Bấm một quỹ ở bảng dưới để thêm vào biểu đồ.</p>'
-      + '<div id="fiPer"></div><div style="position:relative;height:330px"><canvas id="fiCanvas"></canvas></div><div id="fiLeg"></div></div>'
       + '<div id="fiSplit"><div class="fiC" id="fiRank"></div><div class="fiC" id="fiDetail"></div></div>'
       + '</div>';
     host.appendChild(d);
@@ -2437,10 +2439,10 @@ document.addEventListener('visibilitychange', () => {
         BIG = F.filter(f => f.nav >= 500e9).sort((a,b)=>(b.r12==null?-999:b.r12)-(a.r12==null?-999:a.r12));
         if (BIG.length < 6) BIG = F.slice().sort((a,b)=>b.nav-a.nav).slice(0,12);
 
-        meta.textContent = 'Đang tải đường NAV…';
+        meta.textContent = 'Đang lấy mốc VN-Index…';
         const to2 = Math.floor(Date.now()/1000) + 86400;
         try { IXH = await (await fetch('https://dchart-api.vndirect.com.vn/dchart/history?symbol=VNINDEX&resolution=D&from=' + (to2-86400*2000) + '&to=' + to2)).json(); } catch(e){ IXH = null; }
-        await pool(BIG, 3, async f => { NAVH[f.id] = (await jp('https://api.fmarket.vn/res/product/get-nav-history', {isAllData:0, productId:f.id, navPeriod:'navToBeginning'})).data || []; });
+        /* Da bo bieu do NAV -> khong prefetch lich su NAV tung quy nua (tiet kiem ~12 request) */
 
         const z2 = n => (n<10?'0':'')+n;
         const dstr = newest ? (function(){ const t=new Date(newest); return z2(t.getDate())+'/'+z2(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
@@ -2512,6 +2514,7 @@ document.addEventListener('visibilitychange', () => {
 
     function renderPeriods(){
       const P = [['navTo12Months','1 năm',365],['navTo36Months','3 năm',1095],['navTo60Months','5 năm',1825],['navToBeginning','Tất cả',99999]];
+      if (!document.getElementById('fiPer')) return;   // da bo bieu do NAV
       document.getElementById('fiPer').innerHTML = P.map(p => '<button data-p="' + p[0] + '" data-d="' + p[2] + '"' + (p[0]===PER?' class="on"':'') + '>' + p[1] + '</button>').join('');
       document.getElementById('fiPer').onclick = e => { const bt = e.target.closest('button'); if (!bt) return; PER = bt.dataset.p; renderPeriods(); drawChart(); };
     }
@@ -2526,7 +2529,7 @@ document.addEventListener('visibilitychange', () => {
     }
 
     function drawChart(){
-      const el = document.getElementById('fiCanvas'); if (!el || !window.Chart) return;
+      const el = document.getElementById('fiCanvas'); if (!el || !window.Chart) return;   // da bo bieu do NAV
       const days = +(document.querySelector('#fiPer button.on')||{dataset:{d:750}}).dataset.d;
       const sel = [];
       if (PICK) sel.push(PICK);
@@ -2556,21 +2559,40 @@ document.addEventListener('visibilitychange', () => {
       document.getElementById('fiChartS').textContent = 'Cùng xuất phát từ 0% — đường nào lên cao hơn là quỹ đó lãi nhiều hơn. Nét đứt đậm là VN-Index. Đang vẽ ' + nm + ' quỹ.';
     }
 
+    /* Sap xep bang xep hang quy: bam tieu de cot NAV / 12 thang / 3 nam / 5 nam */
+    let RK = { k: 'r12', d: -1 };
+    window.fiSortRank = k => { if (RK.k === k) RK.d = -RK.d; else RK = { k, d: (k === 'm' ? 1 : -1) }; renderRank(); };
+
     function renderRank(){
       const i12 = ixRet(250), i3 = ixRet(63);
+      const LOW = -1e9;
+      const sorted = BIG.slice().sort((a, b) => {
+        if (RK.k === 'm') return RK.d * String(a.m || '').localeCompare(String(b.m || ''), 'vi');
+        const x = a[RK.k] == null ? LOW : a[RK.k];
+        const y = b[RK.k] == null ? LOW : b[RK.k];
+        return RK.d * (x - y);
+      });
+      const SORTABLE = [['m', 'Quỹ', 1], ['nav', 'NAV (tỷ)', 0], ['r12', '12 tháng', 0], ['r36', '3 năm', 0], ['r60', '5 năm', 0]];
+      const th = SORTABLE.map(c => '<th' + (c[2] ? ' style="text-align:left"' : '') + ' class="fiSort' + (RK.k === c[0] ? ' on' : '')
+        + '" onclick="event.stopPropagation();fiSortRank(\'' + c[0] + '\')">' + c[1]
+        + (RK.k === c[0] ? (RK.d > 0 ? ' ▲' : ' ▼') : ' <span class="fiArr">⇅</span>') + '</th>').join('');
       const row = (f, i) => '<tr class="row' + (PICK && f.id===PICK.id ? ' sel' : '') + '" data-id="' + f.id + '" style="cursor:pointer">'
         + '<td style="text-align:left;color:var(--fm)">' + (i+1) + '</td>'
         + '<td style="text-align:left"><b>' + esc(f.m) + '</b><br><span class="mini">' + esc(f.loai) + '</span></td>'
         + '<td>' + nv(f.nav) + '</td><td>' + pc(f.r12) + '</td><td>' + pc(f.r36) + '</td><td>' + pc(f.r60) + '</td></tr>';
-      let out = '<h3>Bảng xếp hạng quỹ lớn</h3><p class="fiS">Xếp theo hiệu suất 12 tháng. Bấm một quỹ để soi danh mục và vẽ lên biểu đồ.</p>'
-        + '<div style="overflow:auto"><table><tbody><tr><th style="text-align:left">#</th><th style="text-align:left">Quỹ</th><th>NAV (tỷ)</th><th>12 tháng</th><th>3 năm</th><th>5 năm</th></tr>';
+      const bmRow = '<tr class="bm"><td style="text-align:left;color:var(--fm)">—</td><td style="text-align:left"><b>VN-Index</b><br><span class="mini">mốc thị trường</span></td><td class="mini">—</td><td><b>' + pc(i12) + '</b></td><td class="mini">—</td><td class="mini">—</td></tr>';
+      /* Chi chen VN-Index dung vi tri khi dang xep theo 12 thang giam dan;
+         cac kieu sap xep khac thi ghim len dau lam moc doi chieu. */
+      const inline = (RK.k === 'r12' && RK.d === -1);
+      let out = '<h3>Bảng xếp hạng quỹ lớn</h3><p class="fiS">Bấm tiêu đề cột để sắp xếp · bấm một quỹ để soi danh mục.</p>'
+        + '<div style="overflow:auto"><table><tbody><tr><th style="text-align:left">#</th>' + th + '</tr>';
+      if (!inline && i12 != null) out += bmRow;
       let done = false;
-      BIG.forEach((f, i) => {
-        if (!done && i12 != null && (f.r12 == null || f.r12 < i12)) { done = true;
-          out += '<tr class="bm"><td style="text-align:left;color:var(--fm)">—</td><td style="text-align:left"><b>VN-Index</b><br><span class="mini">mốc thị trường</span></td><td class="mini">—</td><td><b>' + pc(i12) + '</b></td><td class="mini">—</td><td class="mini">—</td></tr>'; }
+      sorted.forEach((f, i) => {
+        if (inline && !done && i12 != null && (f.r12 == null || f.r12 < i12)) { done = true; out += bmRow; }
         out += row(f, i);
       });
-      if (!done && i12 != null) out += '<tr class="bm"><td style="text-align:left;color:var(--fm)">—</td><td style="text-align:left"><b>VN-Index</b><br><span class="mini">mốc thị trường</span></td><td class="mini">—</td><td><b>' + pc(i12) + '</b></td><td class="mini">—</td><td class="mini">—</td></tr>';
+      if (inline && !done && i12 != null) out += bmRow;
       out += '</tbody></table></div>';
       const el = document.getElementById('fiRank');
       el.innerHTML = out;
@@ -2581,7 +2603,7 @@ document.addEventListener('visibilitychange', () => {
       if (!f) return;
       PICK = f;
       renderRank(); drawChart();
-      if (!(NAVH[f.id] || []).length) { try { NAVH[f.id] = (await jp('https://api.fmarket.vn/res/product/get-nav-history', {isAllData:0, productId:f.id, navPeriod:'navToBeginning'})).data || []; drawChart(); } catch(e){} }
+      if (document.getElementById('fiCanvas') && !(NAVH[f.id] || []).length) { try { NAVH[f.id] = (await jp('https://api.fmarket.vn/res/product/get-nav-history', {isAllData:0, productId:f.id, navPeriod:'navToBeginning'})).data || []; drawChart(); } catch(e){} }
       const H = f.hold.slice(0, 10);
       const hmax = H[0] ? (H[0].netAssetPercent||1) : 1;
       const rare = H.filter(h => (CNT[h.stockCode]||0) <= 4);
