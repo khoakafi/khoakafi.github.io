@@ -1040,7 +1040,7 @@ function loadProChart(){
     + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas></div>'
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
     + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
-    + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
+    + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:none;padding:3px 9px;text-shadow:0 1px 0 #fff,0 -1px 0 #fff,1px 0 0 #fff,-1px 0 0 #fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
     + '<button id="proFsBtn" title="Phóng to toàn màn hình" style="position:absolute;top:6px;right:8px;z-index:6;width:30px;height:30px;border:1px solid #DDE1E6;border-radius:6px;background:rgba(255,255,255,.92);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;color:#787B86"></button>'
     + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
@@ -1062,7 +1062,7 @@ function loadProChart(){
   o1.rightPriceScale.scaleMargins = { top: 0.07, bottom: 0.06 };
   proChart = LightweightCharts.createChart(document.getElementById('proPx'), o1);
   const o2 = JSON.parse(JSON.stringify(baseOpts));
-  o2.rightPriceScale.scaleMargins = { top: 0.10, bottom: 0 };
+  o2.rightPriceScale.scaleMargins = { top: 0.26, bottom: 0 };
   o2.layout.attributionLogo = false;
   proVolChart = LightweightCharts.createChart(document.getElementById('proVolPane'), o2);
   proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
@@ -1106,7 +1106,7 @@ function loadProChart(){
   const smd0 = window.__smCalc(null);
   proVol.setData(smd0.volD);
   proSm = proVolChart.addCandlestickSeries({ priceScaleId: 'sm', priceLineVisible: false, lastValueVisible: false, wickVisible: false });
-  try { proVolChart.priceScale('sm').applyOptions({ scaleMargins: { top: 0.10, bottom: 0 }, visible: false }); } catch(e){}
+  try { proVolChart.priceScale('sm').applyOptions({ scaleMargins: { top: 0.26, bottom: 0 }, visible: false }); } catch(e){}
   proSm.setData(smd0.smD);
   const ma = []; let s = 0;
   for (let i = 0; i < curOhlc.c.length; i++){ s += curOhlc.c[i]; if (i >= 20) s -= curOhlc.c[i-20]; if (i >= 19) ma.push({ time: curOhlc.t[i], value: +(s/20).toFixed(2) }); }
