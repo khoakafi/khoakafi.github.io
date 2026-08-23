@@ -2362,6 +2362,7 @@ document.addEventListener('visibilitychange', () => {
       + '#view-fund .fiPb .bar i{display:block;height:100%;background:var(--fg);border-radius:99px}'
       + '#view-fund .fiPb u{text-decoration:none;font-size:11.5px;font-weight:700;color:var(--fg);font-variant-numeric:tabular-nums;flex:0 0 auto}'
       + '#view-fund .fiPd{text-align:right;font-size:11.5px;font-weight:700;color:var(--fm);font-variant-numeric:tabular-nums}'
+      + '@media(max-width:620px){#view-fund .fiPh,#view-fund .fiPr{grid-template-columns:minmax(0,1fr) 36px minmax(50px,.7fr) 52px;gap:7px;padding:7px 9px}#view-fund .fiPh span:nth-child(3),#view-fund .fiPr .fiPw{display:none}#view-fund .fiPn img{width:22px;height:22px}#view-fund .fiPn i{font-size:10px}}'
       + '#fiOdd{display:flex;flex-direction:column;gap:8px}'
       + '#view-fund .fiOd{border:1px solid var(--fl);border-radius:10px;background:#fff;padding:9px 11px}'
       + '#view-fund .fiOd .k{font-size:10px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;color:var(--fm)}'
