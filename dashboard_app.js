@@ -9,6 +9,15 @@ SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t)) r.watch=0; });
 if(SUM.tpn&&SUM.tpn.recent) SUM.tpn.recent=SUM.tpn.recent.filter(x=>!BO_CUNG.has(x.t));
 const ROWS = () => SUM.rows;
 const byT = {}; SUM.rows.forEach(r => byT[r.t] = r);
+// RS chi xep hang trong ro thanh khoan: GTGD TB20 >= 15 ty/phien; duoi nguong -> chua co RS
+(function(){ try {
+  const LIQ = 15000; // val20 tinh bang trieu dong
+  const co = SUM.rows.filter(r => r.rs != null && (+r.val20||0) >= LIQ);
+  co.sort((a,b) => (a.rs - b.rs) || ((a.r6==null?-999:+a.r6) - (b.r6==null?-999:+b.r6)) || ((a.r3==null?-999:+a.r3) - (b.r3==null?-999:+b.r3)));
+  const nL = co.length;
+  if (nL > 5) co.forEach((r,i) => { r.rs = Math.max(1, Math.min(99, Math.round((i+1)/nL*99))); });
+  SUM.rows.forEach(r => { if (r.rs != null && (+r.val20||0) < LIQ) r.rs = null; });
+} catch(e){} })();
 // ==== Ma chi xem chart (KHONG vao ro tin hieu, khong sinh deal) ====
 const XTRA = {};
 [['VNINDEX','Chỉ số VN-Index'],['VN30','Chỉ số VN30'],['VN100','Chỉ số VN100'],['HNX','Chỉ số HNX-Index'],['HNX30','Chỉ số HNX30'],['UPCOM','Chỉ số UPCoM-Index'],['VNXALL','Chỉ số VNX Allshare']].forEach(x => { XTRA[x[0]] = {t:x[0], b:'IX', n:x[1]}; });
@@ -929,7 +938,7 @@ async function loadRecs(){
       '<div class="mini" style="margin-top:8px">Upside so với giá hiện tại · tổng hợp từ báo cáo các CTCK</div>';
   } catch(e){ box.innerHTML = '<div class="mini">Không tải được dữ liệu khuyến nghị.</div>'; }
 }
-let proLoadedFor = null, proChart = null, proVolChart = null, proCandle = null, proVol = null, proMa = null, useLog = false;
+let proLoadedFor = null, proChart = null, proVolChart = null, proCandle = null, proVol = null, proSm = null, proMa = null, useLog = false;
 // Dung lai toan bo mui tren chart = tin hieu DA CHOT + tin hieu DANG DAT TRONG PHIEN.
 // Trong phien: gia >= nguong gia va volume >= nguong volume (bep da phat hanh trong SIGS.trig)
 // -> ve mui tren; neu gia tut xuong duoi nguong thi mui tu bien mat o lan ve ke tiep.
@@ -975,7 +984,8 @@ function syncLiveBar(){
     const r = byT[curT] || {};
     const cl = (r.p != null && isFinite(r.p) && r.p > 0) ? r.p : curOhlc.c[n-1];
     proCandle.update({ time: ts, open: curOhlc.o[n-1], high: Math.max(curOhlc.h[n-1], cl), low: Math.min(curOhlc.l[n-1], cl), close: cl });
-    if (proVol) proVol.update({ time: ts, value: lv, color: cl >= curOhlc.o[n-1] ? 'rgba(8,153,129,.5)' : 'rgba(242,54,69,.5)' });
+    if (proVol && window.__smCalc) { try { const d2 = window.__smCalc({cl: cl, lv: lv}); const mm = d2.volD.length - 1;
+      proVol.update(d2.volD[mm]); if (proSm) proSm.update(d2.smD[mm]); } catch(e){} }
     addProBadges();
     if (window.__proLegend) window.__proLegend(null);
   } catch(e){}
@@ -1080,7 +1090,31 @@ function loadProChart(){
   proCandle.setData(candData);
   proVol = proVolChart.addHistogramSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false });
   const volAt = i => (i === n0 && liveLast) ? liveLast.lv : curOhlc.v[i];
-  proVol.setData(curOhlc.t.map((tt,i)=>({ time: tt, value: volAt(i), color: candData[i].close >= candData[i].open ? 'rgba(8,153,129,.5)' : 'rgba(242,54,69,.5)' })));
+  // ==== Smart Money volume (logic AmiBroker): BV=V*(C-L), SV=V*(H-C), EMA 10, spike khi ap luc > 1.2x phien truoc ====
+  window.__smCalc = function(ovr){
+    const N = 10, X = 1.2, kE = 2/(N+1), m = curOhlc.t.length;
+    const va = [], bva = [], sva = [], volD = [], smD = [];
+    for (let i = 0; i < m; i++){
+      let v = volAt(i)||0, c = candData[i].close, h = candData[i].high, l = candData[i].low;
+      if (ovr && i === m-1){ v = ovr.lv; c = ovr.cl; h = Math.max(h, ovr.cl); l = Math.min(l, ovr.cl); }
+      const bv = v*(c-l), sv = v*(h-c);
+      va.push(i ? v*kE + va[i-1]*(1-kE) : v);
+      bva.push(i ? bv*kE + bva[i-1]*(1-kE) : bv);
+      sva.push(i ? sv*kE + sva[i-1]*(1-kE) : sv);
+      const bsp = Math.abs(bva[i]-sva[i])*v;
+      const buy = bva[i] > sva[i];
+      const spike = i > 0 && smD[i-1]._bsp > 0 && bsp > X*smD[i-1]._bsp;
+      volD.push({ time: curOhlc.t[i], value: v, color: v > X*va[i] ? 'rgba(90,100,112,.45)' : 'rgba(150,158,168,.26)' });
+      smD.push({ time: curOhlc.t[i], value: bsp, _bsp: bsp,
+        color: spike ? (buy ? '#0BB04B' : '#E5484D') : (buy ? 'rgba(18,138,62,.38)' : 'rgba(229,72,77,.32)') });
+    }
+    return { volD: volD, smD: smD };
+  };
+  const smd0 = window.__smCalc(null);
+  proVol.setData(smd0.volD);
+  proSm = proVolChart.addHistogramSeries({ priceScaleId: 'sm', priceLineVisible: false, lastValueVisible: false });
+  try { proVolChart.priceScale('sm').applyOptions({ scaleMargins: { top: 0.10, bottom: 0 }, visible: false }); } catch(e){}
+  proSm.setData(smd0.smD);
   const ma = []; let s = 0;
   for (let i = 0; i < curOhlc.c.length; i++){ s += curOhlc.c[i]; if (i >= 20) s -= curOhlc.c[i-20]; if (i >= 19) ma.push({ time: curOhlc.t[i], value: +(s/20).toFixed(2) }); }
   proMa = proChart.addLineSeries({ color: '#2962FF', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false });
@@ -2396,9 +2430,7 @@ document.addEventListener('visibilitychange', () => {
       + '#fiLeg span,#view-fund #fiLeg2 span{display:flex;align-items:center;gap:5px}#fiLeg i,#view-fund #fiLeg2 i{width:14px;height:3px;border-radius:2px;display:inline-block}'
       + '</style>'
       + '<div class="card" style="padding:0;border:0;background:none;box-shadow:none">'
-      + '<h2 style="margin:0 0 3px">Fund Insight <span class="hint">quỹ mở nội địa đang làm ăn ra sao và cầm gì</span></h2>'
-      + '<div id="fiMeta" class="mini" style="margin:0 0 13px">Đang tải…</div>'
-      + '<div id="fiHero"><div class="ttl" id="fiTtl">—</div><div class="sub" id="fiSubT"></div>'
+      + '<h2 style="margin:0 0 10px">Fund Insight <span class="hint" id="fiMeta">Đang tải…</span></h2>'      + '<div id="fiHero"><div class="ttl" id="fiTtl">—</div><div class="sub" id="fiSubT"></div>'
       + '<div id="fiTop"><div id="fiPick"></div><div id="fiOdd"></div></div></div>'
       + '<div id="fiSplit"><div class="fiC" id="fiRank"></div><div class="fiC" id="fiDetail"></div></div>'
       + '</div>';
@@ -2469,7 +2501,7 @@ document.addEventListener('visibilitychange', () => {
 
         const z2 = n => (n<10?'0':'')+n;
         const dstr = newest ? (function(){ const t=new Date(newest); return z2(t.getDate())+'/'+z2(t.getMonth()+1)+'/'+t.getFullYear(); })() : '—';
-        meta.innerHTML = '<b>' + F.length + ' quỹ mở nội địa</b> có danh mục cổ phiếu · <b>' + BIG.length + ' quỹ</b> quy mô từ 500 tỷ · danh mục công bố ' + dstr + ' · nguồn Fmarket';
+        meta.innerHTML = 'insight từ ' + F.length + ' quỹ mở · nguồn Fmarket · danh mục ' + dstr;
 
         CURKEY = newest ? new Date(newest).toISOString().slice(0,7) : null;
         try { HIST = (((await (await fetch('/fund_history.json?cb=' + Date.now(), {cache:'no-store'})).json())||{}).snaps) || []; } catch(e) { HIST = []; }
@@ -2514,8 +2546,7 @@ document.addEventListener('visibilitychange', () => {
     function ixRet(days){ if (!IXH || !IXH.c || IXH.c.length < days+2) return null; const c = IXH.c, n = c.length-1; return (c[n]/c[n-days]-1)*100; }
 
     function renderHero(){
-      const rws = (window.SUMMARY && window.SUMMARY.rows) || [];
-      const bt = {}; rws.forEach(function(r){ bt[r.t] = r; });
+      const bt = byT;
       const SW = {}, SC = {};
       F.forEach(function(f){ f.hold.forEach(function(h){ const k = h.stockCode; if (!k) return;
         SW[k] = (SW[k]||0) + (+h.netAssetPercent||0); SC[k] = (SC[k]||0) + 1; }); });
@@ -2562,8 +2593,7 @@ document.addEventListener('visibilitychange', () => {
         .sort(function(a,b){ return (+a.rs||0)-(+b.rs||0); })[0];
       const kh = codes.map(function(k){ return bt[k]; }).filter(Boolean)
         .sort(function(a,b){ return (+b.rs||0)-(+a.rs||0); })[0];
-      const lone = codes.filter(function(k){ return CNT[k] === 1; });
-      const lex = lone.slice().sort(function(a,b){ return (+((bt[b]||{}).rs)||0)-(+((bt[a]||{}).rs)||0); }).slice(0,3);
+      const t3 = codes.slice().sort(function(a,b){ return (CNT[b]||0)-(CNT[a]||0); }).slice(0,3);
 
       const cards = [];
       if (kt) cards.push(['hot','Đám đông đang kẹt', esc(kt.t) + ' · ' + (CNT[kt.t]||0) + ' quỹ',
@@ -2572,9 +2602,8 @@ document.addEventListener('visibilitychange', () => {
         + '. Tiền lớn vào sớm chưa chắc là đúng thời điểm.']);
       if (kh) cards.push(['','Khỏe nhất trong rổ quỹ', esc(kh.t) + ' · ' + Math.round(+kh.rs||0) + '/99',
         (CNT[kh.t]||0) + ' quỹ đang cầm' + (kh.watch ? ', và hệ đã đưa vào vùng theo dõi.' : ', nhưng hệ chưa đưa vào vùng theo dõi.')]);
-      cards.push(['','Đi lệch đám đông', lone.length + ' mã',
-        'Chỉ đúng một quỹ dám cầm' + (lex.length ? ' — như ' + lex.map(esc).join(', ') + '.' : '.')
-        + ' Đây là chỗ các quỹ đặt cược riêng thay vì bám chỉ số.']);
+      cards.push(['','Được quỹ cầm nhiều nhất', t3.map(function(k){ return esc(k) + ' · ' + (CNT[k]||0); }).join(' &nbsp; '),
+        'Số quỹ đang nắm trong ' + F.length + ' quỹ — nơi tiền tổ chức đứng đông nhất thị trường.']);
 
       document.getElementById('fiOdd').innerHTML = cards.map(function(c){
           return '<div class="fiOd' + (c[0] ? ' ' + c[0] : '') + '"><div class="k">' + c[1] + '</div><div class="v">'
