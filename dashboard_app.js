@@ -2520,7 +2520,7 @@ document.addEventListener('visibilitychange', () => {
         SW[k] = (SW[k]||0) + (+h.netAssetPercent||0); SC[k] = (SC[k]||0) + 1; }); });
       const codes = Object.keys(CNT);
       const inW = codes.map(function(k){ return bt[k]; }).filter(function(r){ return r && r.watch; });
-      let pk = inW.filter(function(r){ return r.wgrade === 'strong' && (+r.rs||0) >= 55; });
+      let pk = inW.filter(function(r){ return r.wgrade === 'strong'; });
       if (pk.length < 3) pk = inW.filter(function(r){ return r.wgrade === 'strong'; });
       if (pk.length < 3) pk = inW.slice();
       pk = pk.sort(function(a,b){ return (+b.rs||0) - (+a.rs||0); }).slice(0, 6);
