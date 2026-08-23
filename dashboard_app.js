@@ -1098,8 +1098,8 @@ function loadProChart(){
       volD.push({ time: curOhlc.t[i], open: 0, high: v, low: 0, close: v,
         color: v > X*va[i] ? '#FFFFFF' : '#C8C8C8', borderColor: '#323232', wickColor: '#323232' });
       smD.push({ time: curOhlc.t[i], open: 0, high: bsp, low: 0, close: bsp, _bsp: bsp,
-        color: spike ? (buy ? '#00E100' : '#FF0000') : '#FFFFFF',
-        borderColor: buy ? '#005500' : '#8B0000', wickColor: buy ? '#005500' : '#8B0000' });
+        color: spike ? (buy ? '#089981' : '#F23645') : '#FFFFFF',
+        borderColor: buy ? '#05594B' : '#B0232F', wickColor: buy ? '#05594B' : '#B0232F' });
     }
     return { volD: volD, smD: smD };
   };
