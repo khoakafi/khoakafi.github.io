@@ -1080,11 +1080,14 @@ function loadProChart(){
   });
   proCandle.setData(candData);
   proVol = proVolChart.addCandlestickSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false, wickVisible: false });
+  proSm = null;
   const volAt = i => (i === n0 && liveLast) ? liveLast.lv : curOhlc.v[i];
-  // ==== Smart Money volume — dung bang mau ami: nen trang, than xam 200 vien 50, KL lon = than trang (rong ruot), ap luc bung = xanh/do ruc vien dam ====
+  // ==== Smart Money volume — mot lop mau duy nhat, mau mang nghia:
+  //  xanh dam = ap luc MUA bung no; do dam = ap luc BAN bung no; xam than = KL dot bien; con lai chim vao nen
   window.__smCalc = function(ovr){
     const N = 10, X = 1.2, kE = 2/(N+1), m = curOhlc.t.length;
-    const va = [], bva = [], sva = [], volD = [], smD = [];
+    const va = [], bva = [], sva = [], volD = [];
+    let pb = 0;
     for (let i = 0; i < m; i++){
       let v = volAt(i)||0, c = candData[i].close, h = candData[i].high, l = candData[i].low;
       if (ovr && i === m-1){ v = ovr.lv; c = ovr.cl; h = Math.max(h, ovr.cl); l = Math.min(l, ovr.cl); }
@@ -1094,20 +1097,19 @@ function loadProChart(){
       sva.push(i ? sv*kE + sva[i-1]*(1-kE) : sv);
       const bsp = Math.abs(bva[i]-sva[i])*v;
       const buy = bva[i] > sva[i];
-      const spike = i > 0 && smD[i-1]._bsp > 0 && bsp > X*smD[i-1]._bsp;
-      volD.push({ time: curOhlc.t[i], open: 0, high: v, low: 0, close: v,
-        color: v > X*va[i] ? '#FFFFFF' : '#C8C8C8', borderColor: '#323232', wickColor: '#323232' });
-      smD.push({ time: curOhlc.t[i], open: 0, high: bsp, low: 0, close: bsp, _bsp: bsp,
-        color: spike ? (buy ? '#089981' : '#F23645') : '#FFFFFF',
-        borderColor: buy ? '#05594B' : '#B0232F', wickColor: buy ? '#05594B' : '#B0232F' });
+      const spike = i > 0 && pb > 0 && bsp > X*pb;
+      pb = bsp;
+      let f, bd;
+      if (spike && buy) { f = '#00A868'; bd = '#006B44'; }
+      else if (spike) { f = '#F5333F'; bd = '#B5202B'; }
+      else if (v > X*va[i]) { f = '#9AA4B2'; bd = '#9AA4B2'; }
+      else { f = '#E8EAEF'; bd = '#E8EAEF'; }
+      volD.push({ time: curOhlc.t[i], open: 0, high: v, low: 0, close: v, color: f, borderColor: bd, wickColor: bd });
     }
-    return { volD: volD, smD: smD };
+    return { volD: volD, smD: [] };
   };
   const smd0 = window.__smCalc(null);
   proVol.setData(smd0.volD);
-  proSm = proVolChart.addCandlestickSeries({ priceScaleId: 'sm', priceLineVisible: false, lastValueVisible: false, wickVisible: false });
-  try { proVolChart.priceScale('sm').applyOptions({ scaleMargins: { top: 0.26, bottom: 0 }, visible: false }); } catch(e){}
-  proSm.setData(smd0.smD);
   const ma = []; let s = 0;
   for (let i = 0; i < curOhlc.c.length; i++){ s += curOhlc.c[i]; if (i >= 20) s -= curOhlc.c[i-20]; if (i >= 19) ma.push({ time: curOhlc.t[i], value: +(s/20).toFixed(2) }); }
   proMa = proChart.addLineSeries({ color: '#2962FF', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false });
