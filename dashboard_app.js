@@ -1079,9 +1079,9 @@ function loadProChart(){
     return { time: tt, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i] };
   });
   proCandle.setData(candData);
-  proVol = proVolChart.addHistogramSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false });
+  proVol = proVolChart.addCandlestickSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false, wickVisible: false });
   const volAt = i => (i === n0 && liveLast) ? liveLast.lv : curOhlc.v[i];
-  // ==== Smart Money volume (logic AmiBroker): BV=V*(C-L), SV=V*(H-C), EMA 10, spike khi ap luc > 1.2x phien truoc ====
+  // ==== Smart Money volume — dung bang mau ami: nen trang, than xam 200 vien 50, KL lon = than trang (rong ruot), ap luc bung = xanh/do ruc vien dam ====
   window.__smCalc = function(ovr){
     const N = 10, X = 1.2, kE = 2/(N+1), m = curOhlc.t.length;
     const va = [], bva = [], sva = [], volD = [], smD = [];
@@ -1095,15 +1095,17 @@ function loadProChart(){
       const bsp = Math.abs(bva[i]-sva[i])*v;
       const buy = bva[i] > sva[i];
       const spike = i > 0 && smD[i-1]._bsp > 0 && bsp > X*smD[i-1]._bsp;
-      volD.push({ time: curOhlc.t[i], value: v, color: v > X*va[i] ? '#3A4552' : '#D8DCE2' });
-      smD.push({ time: curOhlc.t[i], value: bsp, _bsp: bsp,
-        color: spike ? (buy ? '#00C853' : '#F23645') : (buy ? 'rgba(27,94,32,.22)' : 'rgba(155,28,28,.22)') });
+      volD.push({ time: curOhlc.t[i], open: 0, high: v, low: 0, close: v,
+        color: v > X*va[i] ? '#FFFFFF' : '#C8C8C8', borderColor: '#323232', wickColor: '#323232' });
+      smD.push({ time: curOhlc.t[i], open: 0, high: bsp, low: 0, close: bsp, _bsp: bsp,
+        color: spike ? (buy ? '#00E100' : '#FF0000') : '#FFFFFF',
+        borderColor: buy ? '#005500' : '#8B0000', wickColor: buy ? '#005500' : '#8B0000' });
     }
     return { volD: volD, smD: smD };
   };
   const smd0 = window.__smCalc(null);
   proVol.setData(smd0.volD);
-  proSm = proVolChart.addHistogramSeries({ priceScaleId: 'sm', priceLineVisible: false, lastValueVisible: false });
+  proSm = proVolChart.addCandlestickSeries({ priceScaleId: 'sm', priceLineVisible: false, lastValueVisible: false, wickVisible: false });
   try { proVolChart.priceScale('sm').applyOptions({ scaleMargins: { top: 0.10, bottom: 0 }, visible: false }); } catch(e){}
   proSm.setData(smd0.smD);
   const ma = []; let s = 0;
