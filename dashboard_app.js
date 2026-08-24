@@ -912,21 +912,54 @@ async function loadRecs(){
   const box = document.getElementById('tab-rec'); if (!box || !curT) return;
   if (window._recFor === curT) return;
   box.innerHTML = '<div class="mini">Đang tải khuyến nghị…</div>';
+  const NORM = s => {
+    const u = (s||'').toUpperCase();
+    if (/MUA|KHẢ QUAN|KHA QUAN|TĂNG TỶ TRỌNG|TANG TY TRONG|OUTPERFORM|BUY|OVERWEIGHT/.test(u)) return 1;
+    if (/BÁN|BAN|KÉM KHẢ QUAN|KEM KHA QUAN|GIẢM TỶ TRỌNG|GIAM TY TRONG|SELL|UNDERPERFORM|UNDERWEIGHT/.test(u)) return -1;
+    return 0;
+  };
+  const E = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const PDATE = s => { const p = (s||'').split('/'); return p.length === 3 ? new Date(+p[2], +p[1]-1, +p[0]).getTime() : 0; };
   try {
-    const r = await jget(`https://api-finfo.vndirect.com.vn/v4/recommendations?q=code:${curT}&size=10&sort=reportDate:desc`);
-    const d0 = (r && r.data) || [];
-    const cut = Date.now() - 240*86400000;
-    const d = d0.filter(x => x.reportDate && new Date(x.reportDate).getTime() >= cut).slice(0, 6);
+    const j = await jget('https://api2.simplize.vn/api/company/analysis-report/list?ticker=' + curT + '&page=0&size=40&isWl=false');
+    const all = (j && j.data) || [];
+    const cut = Date.now() - 365*86400000;
+    const d = all.filter(x => x && +x.targetPrice > 0 && PDATE(x.issueDate) >= cut)
+                 .sort((a,b) => PDATE(b.issueDate) - PDATE(a.issueDate));
     window._recFor = curT;
-    if (!d.length) { box.innerHTML = '<div class="mini" style="padding:8px 0">Chưa có báo cáo phân tích nào của CTCK trong 8 tháng gần đây.</div>'; return; }
-    const rr = byT[curT] || {}; const cur = rr.p != null ? rr.p : (curOhlc ? curOhlc.c[curOhlc.c.length-1] : null);
-    const chip = ty => ty==='BUY' ? '<span class="chip g">MUA</span>' : (ty==='SELL' ? '<span class="chip r">BÁN</span>' : '<span class="chip a">'+(ty||'—')+'</span>');
-    box.innerHTML = '<table style="font-size:12.5px"><tr><th style="text-align:left">CTCK · Ngày</th><th>Loại</th><th>Giá MT</th><th>Upside</th></tr>' +
-      d.map(x => { const up = (cur && x.targetPrice) ? (x.targetPrice/cur-1)*100 : null;
-        return `<tr><td style="text-align:left"><b>${x.firm||x.source||'—'}</b><div class="mini">${(x.reportDate||'').split('-').reverse().join('/')}</div></td>
-        <td>${chip(x.type)}</td><td><b>${x.targetPrice!=null?fmt(x.targetPrice,2):'—'}</b></td>
-        <td class="${up!=null?cls(up):'mut'}">${up!=null?pct(up,0):'—'}</td></tr>`; }).join('') + '</table>' +
-      '<div class="mini" style="margin-top:8px">Upside so với giá hiện tại · tổng hợp từ báo cáo các CTCK</div>';
+    if (!d.length) { box.innerHTML = '<div class="mini" style="padding:8px 0">Chưa có báo cáo phân tích nào của CTCK trong 12 tháng gần đây.</div>'; return; }
+    const rr = byT[curT] || {};
+    const cur = rr.p != null ? rr.p : (curOhlc ? curOhlc.c[curOhlc.c.length-1] : null);
+    const TP = x => +x.targetPrice / 1000;
+    let nB = 0, nH = 0, nS = 0;
+    d.forEach(x => { const k = NORM(x.recommend); if (k > 0) nB++; else if (k < 0) nS++; else nH++; });
+    const rec = d.slice(0, 5);
+    const avg = rec.reduce((s,x) => s + TP(x), 0) / rec.length;
+    const upA = (cur ? (avg/cur - 1)*100 : null);
+    const tot = d.length, pB = Math.round(nB/tot*100), pS = Math.round(nS/tot*100), pH = 100 - pB - pS;
+    const chip = r => { const k = NORM(r); const t = E(r || '—');
+      return k > 0 ? '<span class="chip g">' + t + '</span>' : (k < 0 ? '<span class="chip r">' + t + '</span>' : '<span class="chip a">' + t + '</span>'); };
+    let h = '<div style="border:1px solid var(--line,#E8EAEF);border-radius:10px;background:linear-gradient(180deg,#F6FBF7,#fff);padding:11px 12px;margin:0 0 12px">'
+      + '<div style="font-size:22px;font-weight:800;letter-spacing:-.4px;line-height:1.15">Giá mục tiêu <span style="color:#18A34B">' + fmt(avg,1) + '</span>'
+      + (upA == null ? '' : ' <span style="font-size:15px;color:' + (upA >= 0 ? '#18A34B' : '#E5484D') + '">' + (upA>=0?'+':'') + upA.toFixed(0) + '%</span>') + '</div>'
+      + '<div style="font-size:11.5px;color:#7A828E;margin-top:3px;line-height:1.5">Trung bình ' + rec.length + ' báo cáo gần nhất'
+      + (cur != null ? ' · giá hiện tại ' + fmt(cur,2) : '') + '</div>'
+      + '<div style="display:flex;height:7px;border-radius:99px;overflow:hidden;margin:9px 0 5px;background:#EDF0F3">'
+      + '<i style="display:block;height:100%;width:' + pB + '%;background:#18A34B"></i>'
+      + '<i style="display:block;height:100%;width:' + pH + '%;background:#E0A82E"></i>'
+      + '<i style="display:block;height:100%;width:' + pS + '%;background:#E5484D"></i></div>'
+      + '<div style="display:flex;gap:12px;font-size:10.5px;color:#7A828E;flex-wrap:wrap">'
+      + '<span><b style="color:#1F2937">' + nB + '</b> mua</span><span><b style="color:#1F2937">' + nH + '</b> trung lập</span>'
+      + '<span><b style="color:#1F2937">' + nS + '</b> bán</span><span>· ' + tot + ' báo cáo / 12 tháng</span></div></div>';
+    h += '<table style="font-size:12.5px"><tr><th style="text-align:left">CTCK · Ngày</th><th>Khuyến nghị</th><th>Giá MT</th><th>Upside</th></tr>'
+      + d.slice(0, 6).map(x => { const tp = TP(x), up = cur ? (tp/cur - 1)*100 : null;
+        const lk = x.attachedLink ? ' <a href="' + E(x.attachedLink) + '" target="_blank" rel="noopener" style="color:#7A828E;text-decoration:none;font-size:11px" title="Mở báo cáo gốc">↗</a>' : '';
+        return '<tr><td style="text-align:left"><b>' + E(x.source || '—') + '</b>' + lk
+          + '<div class="mini">' + E(x.issueDate || '') + '</div></td>'
+          + '<td>' + chip(x.recommend) + '</td><td><b>' + fmt(tp,1) + '</b></td>'
+          + '<td class="' + (up != null ? cls(up) : 'mut') + '">' + (up != null ? pct(up,0) : '—') + '</td></tr>'; }).join('')
+      + '</table><div class="mini" style="margin-top:8px">Upside so với giá hiện tại · bấm ↗ để mở báo cáo gốc · nguồn Simplize</div>';
+    box.innerHTML = h;
   } catch(e){ box.innerHTML = '<div class="mini">Không tải được dữ liệu khuyến nghị.</div>'; }
 }
 let proLoadedFor = null, proChart = null, proVolChart = null, proCandle = null, proVol = null, proSm = null, proMa = null, useLog = false;
