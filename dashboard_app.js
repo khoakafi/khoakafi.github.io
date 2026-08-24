@@ -999,6 +999,7 @@ function addProBadges(){
 }
 // Moi lan feed song lam moi -> cap nhat CAY NEN CUOI + ve lai mui ten + legend.
 function syncLiveBar(){
+  if ((window.__proTF || 'D') !== 'D') return;
   try {
     if (!proCandle || !curOhlc || !curT || !curOhlc.t) return;
     const n = curOhlc.t.length; if (!n) return;
@@ -1054,8 +1055,29 @@ window.kafiSelfCheck = function(){
   try { console.table(out); } catch(e){ console.log(out); }
   return out;
 };
+let proVwap = null;
+window.__proTF = 'D'; window.__proIntra = null;
+window.__setTF = async function(tf){
+  const RES = { '15':'15', '60':'60', 'D':'D' };
+  if (!RES[tf]) tf = 'D';
+  window.__proTF = tf;
+  if (tf === 'D') { window.__proIntra = null; proLoadedFor = null; loadProChart(); return; }
+  try {
+    const days = tf === '15' ? 40 : 200;
+    const to = Math.floor(Date.now()/1000) + 86400;
+    const r = await jget('https://dchart-api.vndirect.com.vn/dchart/history?symbol=' + curT + '&resolution=' + RES[tf] + '&from=' + (to - 86400*days) + '&to=' + to);
+    if (!r || !r.t || !r.t.length) { toast('Không có dữ liệu khung ' + tf); window.__proTF = 'D'; window.__proIntra = null; proLoadedFor = null; loadProChart(); return; }
+    r.sym = curT;
+    window.__proIntra = r;
+    proLoadedFor = null; loadProChart();
+  } catch(e) { toast('Không tải được khung ' + tf); window.__proTF = 'D'; window.__proIntra = null; proLoadedFor = null; loadProChart(); }
+};
 function loadProChart(){
   if (!curT || !curOhlc) return;
+  const _TF = window.__proTF || "D";
+  if (_TF !== "D" && (!window.__proIntra || window.__proIntra.sym !== curT)) { window.__setTF(_TF); return; }
+  const PD = (_TF !== "D" && window.__proIntra) ? window.__proIntra : curOhlc;
+  const INTRA = (PD !== curOhlc);
   if (proLoadedFor === curT) {
     let oK = false;
     try {
@@ -1074,6 +1096,7 @@ function loadProChart(){
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
     + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
     + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:none;padding:3px 9px;text-shadow:0 1px 0 #fff,0 -1px 0 #fff,1px 0 0 #fff,-1px 0 0 #fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
+    + '<div id="proTFBar" style="position:absolute;top:6px;right:44px;z-index:6;display:flex;gap:3px"></div>'
     + '<button id="proFsBtn" title="Phóng to toàn màn hình" style="position:absolute;top:6px;right:8px;z-index:6;width:30px;height:30px;border:1px solid #DDE1E6;border-radius:6px;background:rgba(255,255,255,.92);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;color:#787B86"></button>'
     + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
@@ -1117,25 +1140,25 @@ function loadProChart(){
     document.getElementById('proVolPane').addEventListener('wheel', __wheelPan, { capture: true, passive: false });
   } catch(e){}
   proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
-  const n0 = curOhlc.t.length - 1;
+  const n0 = PD.t.length - 1;
   const liveLast = (function(){
-    const lv = liveVolOf(curT, curOhlc.t[n0]);
+    const lv = liveVolOf(curT, PD.t[n0]);
     if (lv == null) return null;
     const _r = byT[curT] || {};
-    const cl = (_r.p != null && isFinite(_r.p) && _r.p > 0) ? _r.p : curOhlc.c[n0];
+    const cl = (_r.p != null && isFinite(_r.p) && _r.p > 0) ? _r.p : PD.c[n0];
     return { cl: cl, lv: lv };
   })();
-  const candData = curOhlc.t.map((tt,i)=>{
-    if (i === n0 && liveLast) return { time: tt, open: curOhlc.o[i], high: Math.max(curOhlc.h[i], liveLast.cl), low: Math.min(curOhlc.l[i], liveLast.cl), close: liveLast.cl };
-    return { time: tt, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i] };
+  const candData = PD.t.map((tt,i)=>{
+    if (i === n0 && liveLast) return { time: tt, open: PD.o[i], high: Math.max(PD.h[i], liveLast.cl), low: Math.min(PD.l[i], liveLast.cl), close: liveLast.cl };
+    return { time: tt, open: PD.o[i], high: PD.h[i], low: PD.l[i], close: PD.c[i] };
   });
   proCandle.setData(candData);
   proVol = proVolChart.addCandlestickSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false, wickVisible: false });
-  const volAt = i => (i === n0 && liveLast) ? liveLast.lv : curOhlc.v[i];
+  const volAt = i => (i === n0 && liveLast) ? liveLast.lv : PD.v[i];
   // ==== Smart Money volume (PA2 da chot): cau truc ami, tong mau web. Hai lop cot cung be rong (cung kieu ve) ====
   //  KL thuong = xam nhat; KL > 1.2x TB = trang rong; ap luc thuong = trang vien xanh/do mo; bung no = xanh ngoc/do dac
   window.__smCalc = function(ovr){
-    const N = 10, X = 1.2, kE = 2/(N+1), m = curOhlc.t.length;
+    const N = 10, X = 1.2, kE = 2/(N+1), m = PD.t.length;
     const va = [], bva = [], sva = [], volD = [], smD = [];
     let pb = 0;
     for (let i = 0; i < m; i++){
@@ -1150,9 +1173,9 @@ function loadProChart(){
       const spike = i > 0 && pb > 0 && bsp > X*pb && v > va[i];
       pb = bsp;
       const big = v > X*va[i];
-      volD.push({ time: curOhlc.t[i], open: 0, high: v, low: 0, close: v,
+      volD.push({ time: PD.t[i], open: 0, high: v, low: 0, close: v,
         color: big ? '#FFFFFF' : '#E8EAEE', borderColor: '#6A7280', wickColor: '#6A7280' });
-      smD.push({ time: curOhlc.t[i], open: 0, high: bsp, low: 0, close: bsp,
+      smD.push({ time: PD.t[i], open: 0, high: bsp, low: 0, close: bsp,
         color: spike ? (buy ? '#18A34B' : '#F23645') : '#FFFFFF',
         borderColor: spike ? (buy ? '#0E7A38' : '#B0232F') : (buy ? '#9FD3AF' : '#E3AEB2'),
         wickColor: spike ? (buy ? '#0E7A38' : '#B0232F') : (buy ? '#9FD3AF' : '#E3AEB2') });
@@ -1165,9 +1188,25 @@ function loadProChart(){
   try { proVolChart.priceScale('sm').applyOptions({ scaleMargins: { top: 0.26, bottom: 0 }, visible: false }); } catch(e){}
   proSm.setData(smd0.smD);
   const ma = []; let s = 0;
-  for (let i = 0; i < curOhlc.c.length; i++){ s += curOhlc.c[i]; if (i >= 20) s -= curOhlc.c[i-20]; if (i >= 19) ma.push({ time: curOhlc.t[i], value: +(s/20).toFixed(2) }); }
+  for (let i = 0; i < PD.c.length; i++){ s += PD.c[i]; if (i >= 20) s -= PD.c[i-20]; if (i >= 19) ma.push({ time: PD.t[i], value: +(s/20).toFixed(2) }); }
   proMa = proChart.addLineSeries({ color: '#2962FF', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false });
   proMa.setData(ma);
+  try { if (proVwap && proVwap.__ch) { proVwap.__ch.removeSeries(proVwap.s); } } catch(e){}
+  proVwap = null;
+  if (INTRA) {
+    const dkey = ts => Math.floor((ts + 7*3600) / 86400);
+    const vw = []; let sPV = 0, sV = 0, ck = null;
+    for (let i2 = 0; i2 < PD.t.length; i2++) {
+      const k2 = dkey(PD.t[i2]);
+      if (k2 !== ck) { ck = k2; sPV = 0; sV = 0; }
+      const tp = (PD.h[i2] + PD.l[i2] + PD.c[i2]) / 3, vv = PD.v[i2] || 0;
+      sPV += tp * vv; sV += vv;
+      vw.push({ time: PD.t[i2], value: +(sV ? sPV/sV : PD.c[i2]).toFixed(3) });
+    }
+    const s2 = proChart.addLineSeries({ color: '#7C3AED', lineWidth: 2, priceLineVisible: false, lastValueVisible: true, crosshairMarkerVisible: false, title: 'VWAP' });
+    s2.setData(vw); proVwap = { s: s2, __ch: proChart };
+  }
+  if (INTRA) { window._kafiBadges = []; }
   // dong bo truc thoi gian 2 khung
   const syncTS = (a,b) => a.timeScale().subscribeVisibleLogicalRangeChange(r => { if (r) try { b.timeScale().setVisibleLogicalRange(r); } catch(e){} });
   syncTS(proChart, proVolChart); syncTS(proVolChart, proChart);
@@ -1180,9 +1219,10 @@ function loadProChart(){
   setTimeout(alignScales, 80); setTimeout(alignScales, 400); setTimeout(alignScales, 1000);
   // ==== mui ten + nhan mau (ve tay nhu ban cu) ====
   const paintBadges = () => {
+    if (INTRA) { try { const cv0 = document.getElementById('proBadgeCv'); if (cv0) { const g0 = cv0.getContext('2d'); g0.clearRect(0,0,cv0.width,cv0.height); } } catch(e){} return; }
     try {
       const cvs = document.getElementById('proBadgeCv'); const px = document.getElementById('proPx');
-      if (!cvs || !px || !proChart || !proCandle || !curOhlc) return;
+      if (!cvs || !px || !proChart || !proCandle || !PD) return;
       const w = px.clientWidth, h = px.clientHeight;
       const dpr = window.devicePixelRatio || 1;
       if (cvs.width !== Math.round(w*dpr) || cvs.height !== Math.round(h*dpr)) { cvs.width = Math.round(w*dpr); cvs.height = Math.round(h*dpr); cvs.style.width = w+'px'; cvs.style.height = h+'px'; }
@@ -1191,7 +1231,7 @@ function loadProChart(){
       ctx.font = 'bold 11px Inter, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       const tsc = proChart.timeScale();
       (window._kafiBadges || []).forEach(b => {
-        const x = tsc.timeToCoordinate(curOhlc.t[b.i]); if (x == null) return;
+        const x = tsc.timeToCoordinate(PD.t[b.i]); if (x == null) return;
         const y = proCandle.priceToCoordinate(b.value); if (y == null) return;
         const dir = b.below ? 1 : -1, gap = 3, ah = 7, aw = 5;
         const tipY = y + dir*gap, baseY = tipY + dir*ah;
@@ -1210,7 +1250,7 @@ function loadProChart(){
   proChart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(paintBadges));
   try { new ResizeObserver(() => { requestAnimationFrame(paintBadges); alignScales(); }).observe(document.getElementById('proPx')); } catch(e){}
   addProBadges();
-  const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 }); } catch(e){} };
+  const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, PD.t.length - 130), to: PD.t.length + 5 }); } catch(e){} };
   __setRange(); setTimeout(__setRange, 150); setTimeout(__setRange, 600);
   const _fsEx = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>';
   const _fsCo = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/></svg>';
@@ -1250,6 +1290,14 @@ function loadProChart(){
     setTimeout(alignScales, 60); setTimeout(alignScales, 300);
   }
   window.__setProFS = setProFS;
+  try {
+    const bar = document.getElementById('proTFBar');
+    if (bar) {
+      const TFS = [['15','15m'],['60','1H'],['D','1D']];
+      bar.innerHTML = TFS.map(x => '<button data-tf="' + x[0] + '" style="height:30px;min-width:34px;padding:0 8px;border:1px solid ' + (x[0]===_TF?'#18A34B':'#DDE1E6') + ';border-radius:6px;background:' + (x[0]===_TF?'#18A34B':'rgba(255,255,255,.92)') + ';color:' + (x[0]===_TF?'#fff':'#787B86') + ';font:700 11.5px Inter,sans-serif;cursor:pointer">' + x[1] + '</button>').join('');
+      bar.onclick = e => { const b = e.target.closest('button'); if (b) window.__setTF(b.dataset.tf); };
+    }
+  } catch(e){}
   const _fsB = document.getElementById('proFsBtn');
   if (_fsB) { _fsB.innerHTML = window.__proFS ? _fsCo : _fsEx; _fsB.onclick = function(){ setProFS(!window.__proFS); }; }
   if (!window.__proFSWired) { window.__proFSWired = true;
@@ -1259,19 +1307,19 @@ function loadProChart(){
   if (window.__proFS) setProFS(true);
   // legend
   const v20arr = []; let sv = 0;
-  for (let i = 0; i < curOhlc.v.length; i++){ sv += curOhlc.v[i]; if (i >= 20) sv -= curOhlc.v[i-20]; v20arr.push(i >= 19 ? sv/20 : null); }
+  for (let i = 0; i < PD.v.length; i++){ sv += PD.v[i]; if (i >= 20) sv -= PD.v[i-20]; v20arr.push(i >= 19 ? sv/20 : null); }
   const gt20arr = []; let sg = 0;
-  for (let i = 0; i < curOhlc.v.length; i++){ sg += curOhlc.v[i] * curOhlc.c[i]; if (i >= 20) sg -= curOhlc.v[i-20] * curOhlc.c[i-20]; gt20arr.push(i >= 19 ? sg/20 : null); }
+  for (let i = 0; i < PD.v.length; i++){ sg += PD.v[i] * PD.c[i]; if (i >= 20) sg -= PD.v[i-20] * PD.c[i-20]; gt20arr.push(i >= 19 ? sg/20 : null); }
   const leg = document.getElementById('proLegend');
   const vleg = document.getElementById('proVolLegend');
   const fmtVol = v => v == null ? '—' : (v >= 1e6 ? (v/1e6).toFixed(2) + 'tr' : Math.round(v/1e3) + 'k');
   const showLeg = (i) => {
     const ii = (i == null || i < 0 || i > n0) ? n0 : i;
     let d = candData[ii], vv = volAt(ii);
-    if (ii === n0) { try { const rr = byT[curT] || {}; const lv = liveVolOf(curT, curOhlc.t[n0]);
+    if (ii === n0) { try { const rr = byT[curT] || {}; const lv = liveVolOf(curT, PD.t[n0]);
       if (lv != null) { const c2 = (rr.p != null && isFinite(rr.p) && rr.p > 0) ? rr.p : d.close;
-        d = { open: curOhlc.o[n0], high: Math.max(curOhlc.h[n0], c2), low: Math.min(curOhlc.l[n0], c2), close: c2 }; vv = lv; } } catch(e){} }
-    const chg = ii > 0 ? (d.close/curOhlc.c[ii-1]-1)*100 : 0;
+        d = { open: PD.o[n0], high: Math.max(PD.h[n0], c2), low: Math.min(PD.l[n0], c2), close: c2 }; vv = lv; } } catch(e){} }
+    const chg = ii > 0 ? (d.close/PD.c[ii-1]-1)*100 : 0;
     const cl = d.close >= d.open ? UP : DOWN;
     const av = v20arr[ii]; const pct = av ? Math.round(vv/av*100) : null;
     const maV = ii >= 19 && ma[ii-19] ? ma[ii-19].value : null;
@@ -1280,7 +1328,7 @@ function loadProChart(){
     const L = NAR ? {o:'O ', h:'H ', l:'L ', c:'C ', m:'MA20 ', v:'KL ', g:'GT ', t:'TB20 '}
                   : {o:'Open = ', h:'High = ', l:'Low = ', c:'Close = ', m:'MA20 = ', v:'VOL = ', g:'GTGD = ', t:'GTGD 20D = '};
     let dstr = '';
-    try { const tv = curOhlc.t[ii]; if (typeof tv === 'number' || /^\d+$/.test(String(tv))) { const dd = new Date(Number(tv) * 1000); const z = n => (n < 10 ? '0' : '') + n; dstr = z(dd.getUTCDate()) + '/' + z(dd.getUTCMonth() + 1) + '/' + dd.getUTCFullYear(); } else { const ps = String(tv).split('-'); dstr = ps.length === 3 ? ps[2] + '/' + ps[1] + '/' + ps[0] : String(tv); } } catch(ex){}
+    try { const tv = PD.t[ii]; if (typeof tv === 'number' || /^\d+$/.test(String(tv))) { const dd = new Date(Number(tv) * 1000); const z = n => (n < 10 ? '0' : '') + n; dstr = z(dd.getUTCDate()) + '/' + z(dd.getUTCMonth() + 1) + '/' + dd.getUTCFullYear(); } else { const ps = String(tv).split('-'); dstr = ps.length === 3 ? ps[2] + '/' + ps[1] + '/' + ps[0] : String(tv); } } catch(ex){}
     const gtd = (vv != null && d.close) ? (d.close * vv) / 1e6 : null;
     const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
     const dsh = NAR ? dstr.slice(0,5) : dstr;
@@ -1293,7 +1341,7 @@ function loadProChart(){
   };
   window.__proLegend = showLeg;
   showLeg(null);
-  const tpos = {}; curOhlc.t.forEach((tt,i)=>{ tpos[tt] = i; });
+  const tpos = {}; PD.t.forEach((tt,i)=>{ tpos[tt] = i; });
   let lastCi = -999;
   const onCross = p => {
     const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
@@ -1309,11 +1357,11 @@ function loadProChart(){
   let mirroring = false;
   proChart.subscribeCrosshairMove(p => { if (mirroring) return; mirroring = true; try {
       const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
-      if (ci == null) proVolChart.clearCrosshairPosition(); else proVolChart.setCrosshairPosition(volAt(ci), curOhlc.t[ci], proVol);
+      if (ci == null) proVolChart.clearCrosshairPosition(); else proVolChart.setCrosshairPosition(volAt(ci), PD.t[ci], proVol);
     } catch(e){} mirroring = false; });
   proVolChart.subscribeCrosshairMove(p => { if (mirroring) return; mirroring = true; try {
       const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
-      if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, curOhlc.t[ci], proCandle);
+      if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, PD.t[ci], proCandle);
     } catch(e){} mirroring = false; });
   const kEl = document.getElementById('proK');
   if (kEl && !kEl.dataset.hovfix) { kEl.dataset.hovfix = '1';
@@ -1442,7 +1490,7 @@ async function loadDetail(t){
     const tpn = computeTPN(oh, r.b || 'HO', qsAv); starTPN(tpn.markers, oh);
     curMarkers = tpn.markers;
     renderTPN(tpn.state);
-    if (proLoadedFor && proLoadedFor !== t) { proLoadedFor = null; if (document.getElementById('chartProWrap').style.display !== 'none') loadProChart(); }
+    if (proLoadedFor && proLoadedFor !== t) { proLoadedFor = null; window.__proIntra = null; if (document.getElementById('chartProWrap').style.display !== 'none') loadProChart(); }
     $('#dTitle').innerHTML = `${t} <span class="mini">— ${r.n||''} (${BRD(r.b)})</span>`;
     // KPI
     const rtsAv = rts.map(x => ({
