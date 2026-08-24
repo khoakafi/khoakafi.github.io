@@ -1066,14 +1066,22 @@ function loadProChart(){
   o2.layout.attributionLogo = false;
   proVolChart = LightweightCharts.createChart(document.getElementById('proVolPane'), o2);
   // ==== Lan chuot = keo chart ve qua khu (nhu ami); giu Ctrl roi lan = phong to/thu nho ====
-  const __wmPan = { handleScale: { mouseWheel: false, pinch: true, axisPressedMouseMove: true }, handleScroll: { mouseWheel: true, pressedMouseMove: true, horzTouchDrag: true, vertTouchDrag: false } };
-  const __wmZoom = { handleScale: { mouseWheel: true, pinch: true, axisPressedMouseMove: true }, handleScroll: { mouseWheel: false, pressedMouseMove: true, horzTouchDrag: true, vertTouchDrag: false } };
-  proChart.applyOptions(__wmPan); proVolChart.applyOptions(__wmPan);
-  const __wheelMode = function(e){ const o = (e.ctrlKey || e.metaKey) ? __wmZoom : __wmPan;
-    try { proChart.applyOptions(o); proVolChart.applyOptions(o); } catch(x){} };
+  const __wmOpt = { handleScale: { mouseWheel: true, pinch: true, axisPressedMouseMove: true }, handleScroll: { mouseWheel: false, pressedMouseMove: true, horzTouchDrag: true, vertTouchDrag: false } };
+  proChart.applyOptions(__wmOpt); proVolChart.applyOptions(__wmOpt);
+  const __wheelPan = function(e){
+    if (e.ctrlKey || e.metaKey) return; // giu Ctrl -> de thu vien tu zoom
+    e.preventDefault(); e.stopPropagation();
+    try {
+      const ts = proChart.timeScale();
+      const r = ts.getVisibleLogicalRange(); if (!r) return;
+      const shift = Math.max(1, Math.round((r.to - r.from) * 0.10));
+      const d = e.deltaY > 0 ? -shift : shift;
+      ts.setVisibleLogicalRange({ from: r.from + d, to: r.to + d });
+    } catch(x){}
+  };
   try {
-    document.getElementById('proPx').addEventListener('wheel', __wheelMode, { capture: true, passive: true });
-    document.getElementById('proVolPane').addEventListener('wheel', __wheelMode, { capture: true, passive: true });
+    document.getElementById('proPx').addEventListener('wheel', __wheelPan, { capture: true, passive: false });
+    document.getElementById('proVolPane').addEventListener('wheel', __wheelPan, { capture: true, passive: false });
   } catch(e){}
   proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
   const n0 = curOhlc.t.length - 1;
@@ -1110,7 +1118,7 @@ function loadProChart(){
       pb = bsp;
       volD.push({ time: curOhlc.t[i], value: v, color: v > X*va[i] ? '#9AA4B2' : '#E4E7EC' });
       smD.push({ time: curOhlc.t[i], value: bsp,
-        color: spike ? (buy ? '#00A868' : '#F5333F') : (buy ? 'rgba(0,168,104,.38)' : 'rgba(245,51,63,.33)') });
+        color: spike ? (buy ? '#00A868' : '#F5333F') : 'rgba(0,0,0,0)' });
     }
     return { volD: volD, smD: smD };
   };
