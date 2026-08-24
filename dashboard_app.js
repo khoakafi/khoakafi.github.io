@@ -1316,7 +1316,7 @@ function loadProChart(){
   const showLeg = (i) => {
     const ii = (i == null || i < 0 || i > n0) ? n0 : i;
     let d = candData[ii], vv = volAt(ii);
-    if (ii === n0) { try { const rr = byT[curT] || {}; const lv = liveVolOf(curT, PD.t[n0]);
+    if (ii === n0 && !INTRA) { try { const rr = byT[curT] || {}; const lv = liveVolOf(curT, PD.t[n0]);
       if (lv != null) { const c2 = (rr.p != null && isFinite(rr.p) && rr.p > 0) ? rr.p : d.close;
         d = { open: PD.o[n0], high: Math.max(PD.h[n0], c2), low: Math.min(PD.l[n0], c2), close: c2 }; vv = lv; } } catch(e){} }
     const chg = ii > 0 ? (d.close/PD.c[ii-1]-1)*100 : 0;
@@ -1328,7 +1328,7 @@ function loadProChart(){
     const L = NAR ? {o:'O ', h:'H ', l:'L ', c:'C ', m:'MA20 ', v:'KL ', g:'GT ', t:'TB20 '}
                   : {o:'Open = ', h:'High = ', l:'Low = ', c:'Close = ', m:'MA20 = ', v:'VOL = ', g:'GTGD = ', t:'GTGD 20D = '};
     let dstr = '';
-    try { const tv = PD.t[ii]; if (typeof tv === 'number' || /^\d+$/.test(String(tv))) { const dd = new Date(Number(tv) * 1000); const z = n => (n < 10 ? '0' : '') + n; dstr = z(dd.getUTCDate()) + '/' + z(dd.getUTCMonth() + 1) + '/' + dd.getUTCFullYear(); } else { const ps = String(tv).split('-'); dstr = ps.length === 3 ? ps[2] + '/' + ps[1] + '/' + ps[0] : String(tv); } } catch(ex){}
+    try { const tv = PD.t[ii]; if (typeof tv === 'number' || /^\d+$/.test(String(tv))) { const dd = new Date((Number(tv) + (INTRA ? 7*3600 : 0)) * 1000); const z = n => (n < 10 ? '0' : '') + n; dstr = z(dd.getUTCDate()) + '/' + z(dd.getUTCMonth() + 1) + '/' + dd.getUTCFullYear() + (INTRA ? ' ' + z(dd.getUTCHours()) + ':' + z(dd.getUTCMinutes()) : ''); } else { const ps = String(tv).split('-'); dstr = ps.length === 3 ? ps[2] + '/' + ps[1] + '/' + ps[0] : String(tv); } } catch(ex){}
     const gtd = (vv != null && d.close) ? (d.close * vv) / 1e6 : null;
     const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
     const dsh = NAR ? dstr.slice(0,5) : dstr;
@@ -1337,6 +1337,7 @@ function loadProChart(){
     const _isIx = ((XROW(curT)||{}).b === 'IX');
     const fV = x => x == null ? '—' : (NAR ? (x >= 1e6 ? (x/1e6).toFixed(2) + 'tr' : Math.round(x/1e3) + 'k') : Math.round(x).toLocaleString('en-US'));
     if (vleg && _isIx) vleg.innerHTML = dsh + SP + L.v + fV(vv) + (pct == null ? '' : SP + pct + '%');
+    else if (vleg && INTRA) vleg.innerHTML = dsh + SP + L.v + fV(vv) + SP + L.g + (gtd == null ? '—' : gtd.toFixed(NAR ? 1 : 2) + ' tỷ');
     else if (vleg) vleg.innerHTML = dsh + SP + L.v + fV(vv) + SP + L.g + (gtd == null ? '—' : gtd.toFixed(NAR ? 1 : 2) + ' tỷ') + SP + L.t + (gt20 == null ? '—' : gt20.toFixed(NAR ? 1 : 2) + ' tỷ') + (pct == null ? '' : SP + pct + '%');
   };
   window.__proLegend = showLeg;
