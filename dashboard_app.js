@@ -829,23 +829,24 @@ function liveVolOf(tk, barTs){
     return ds === window.LIVE_DATE ? r.vx*r.v20 : null;
   } catch(e){ return null; }
 }
-function updateDPx(i){
-  const el = document.getElementById('dPx'); if (!el || !curOhlc) return;
+function updateDPx(i, src){
+  const el = document.getElementById('dPx'); const OH = src || curOhlc; if (!el || !OH) return;
   const r = byT[curT] || {};
-  const c = curOhlc.c, v = curOhlc.v, n = c.length;
+  const c = OH.c, v = OH.v, n = c.length;
   const idx = (i == null || i < 0 || i >= n) ? n-1 : i;
-  const isNow = idx === n-1;
+  const isNow = (idx === n-1) && !src;
   const p = isNow && r.p != null ? r.p : c[idx];
   const chg = isNow && r.chg != null ? r.chg : (idx > 0 ? (c[idx]/c[idx-1]-1)*100 : 0);
   const col = chg > 0 ? '#18A34B' : (chg < 0 ? '#F23645' : '#787B86');
   let vol = (v[idx]||0)/1e6;
   let vx = null;
-  const lv = isNow ? liveVolOf(curT, curOhlc.t[idx]) : null;
+  const lv = isNow ? liveVolOf(curT, OH.t[idx]) : null;
   if (lv != null && r.vx != null) { vx = Math.round(r.vx*100); vol = lv/1e6; }
   else { let sm=0, cnt=0; for (let k=Math.max(0,idx-19); k<=idx; k++){ sm+=(v[k]||0); cnt++; }
          const tb = cnt ? sm/cnt : 0; if (tb>0) vx = Math.round((v[idx]||0)/tb*100); }
-  const d = new Date(curOhlc.t[idx]*1000);
-  const ngay = ' <span class="mini" style="font-weight:600;display:block;line-height:1.35;min-height:16px">' + ('0'+d.getUTCDate()).slice(-2)+'/'+('0'+(d.getUTCMonth()+1)).slice(-2)+'/'+String(d.getUTCFullYear()).slice(2) + '</span>';
+  const d = new Date((OH.t[idx] + (src ? 7*3600 : 0))*1000);
+  const _z2 = x => ('0'+x).slice(-2);
+  const ngay = ' <span class="mini" style="font-weight:600;display:block;line-height:1.35;min-height:16px">' + _z2(d.getUTCDate())+'/'+_z2(d.getUTCMonth()+1)+ (src ? ' ' + _z2(d.getUTCHours())+':'+_z2(d.getUTCMinutes()) : '/'+String(d.getUTCFullYear()).slice(2)) + '</span>';
   const htmlL = `${fmt(p,2)} <span style="font-size:15px;font-weight:700">(${chg>0?'+':''}${fmt(chg,1)}%)</span>${ngay}`;
   const htmlR = `KL ${fmt(vol,2)} tr${vx!=null?` <span style="font-weight:700;color:${vx>=150?'#B45309':'var(--muted)'}">(${vx}%)</span>`:''}`;
   if (el.dataset.built !== '1') {
@@ -1350,7 +1351,7 @@ function loadProChart(){
     if (key === lastCi) return;
     lastCi = key;
     showLeg(ci);
-    if (window.__dHov) { if (INTRA) { updateKpis(null); updateDPx(null); } else { updateKpis(ci); updateDPx(ci); } }
+    if (window.__dHov) { if (INTRA) { updateDPx(ci, PD); } else { updateKpis(ci); updateDPx(ci); } }
   };
   proChart.subscribeCrosshairMove(onCross);
   proVolChart.subscribeCrosshairMove(onCross);
