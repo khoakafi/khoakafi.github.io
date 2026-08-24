@@ -1097,7 +1097,7 @@ function loadProChart(){
     return { time: tt, open: curOhlc.o[i], high: curOhlc.h[i], low: curOhlc.l[i], close: curOhlc.c[i] };
   });
   proCandle.setData(candData);
-  proVol = proVolChart.addHistogramSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false });
+  proVol = proVolChart.addCandlestickSeries({ priceFormat: { type: 'volume' }, priceLineVisible: false, lastValueVisible: false, wickVisible: false });
   const volAt = i => (i === n0 && liveLast) ? liveLast.lv : curOhlc.v[i];
   // ==== Smart Money volume: cot KL lam nen (xam), cot AP LUC co chieu cao rieng (truc tu co gian theo khung dang xem)
   //  mau dam = bung no (ap luc > 1.2x phien truoc + KL tren trung binh), mau nhat = ben dang thang the binh thuong
@@ -1116,7 +1116,9 @@ function loadProChart(){
       const buy = bva[i] > sva[i];
       const spike = i > 0 && pb > 0 && bsp > X*pb && v > va[i];
       pb = bsp;
-      volD.push({ time: curOhlc.t[i], value: v, color: v > X*va[i] ? '#9AA4B2' : '#E4E7EC' });
+      volD.push({ time: curOhlc.t[i], open: 0, high: v, low: 0, close: v,
+        color: v > X*va[i] ? '#9AA4B2' : '#FFFFFF',
+        borderColor: v > X*va[i] ? '#9AA4B2' : '#C9CFD7', wickColor: '#C9CFD7' });
       smD.push({ time: curOhlc.t[i], value: bsp,
         color: spike ? (buy ? '#00A868' : '#F5333F') : 'rgba(0,0,0,0)' });
     }
