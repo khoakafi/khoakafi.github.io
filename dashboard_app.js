@@ -1075,7 +1075,7 @@ function loadProChart(){
       const ts = proChart.timeScale();
       const r = ts.getVisibleLogicalRange(); if (!r) return;
       const shift = Math.max(1, Math.round((r.to - r.from) * 0.10));
-      const d = e.deltaY > 0 ? -shift : shift;
+      const d = e.deltaY > 0 ? shift : -shift;
       ts.setVisibleLogicalRange({ from: r.from + d, to: r.to + d });
     } catch(x){}
   };
