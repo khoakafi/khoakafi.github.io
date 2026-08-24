@@ -1350,7 +1350,7 @@ function loadProChart(){
     if (key === lastCi) return;
     lastCi = key;
     showLeg(ci);
-    if (window.__dHov) { updateKpis(ci); updateDPx(ci); }
+    if (window.__dHov) { if (INTRA) { updateKpis(null); updateDPx(null); } else { updateKpis(ci); updateDPx(ci); } }
   };
   proChart.subscribeCrosshairMove(onCross);
   proVolChart.subscribeCrosshairMove(onCross);
