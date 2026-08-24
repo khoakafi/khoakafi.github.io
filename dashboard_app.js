@@ -837,7 +837,7 @@ function updateDPx(i){
   const isNow = idx === n-1;
   const p = isNow && r.p != null ? r.p : c[idx];
   const chg = isNow && r.chg != null ? r.chg : (idx > 0 ? (c[idx]/c[idx-1]-1)*100 : 0);
-  const col = chg > 0 ? '#089981' : (chg < 0 ? '#F23645' : '#787B86');
+  const col = chg > 0 ? '#18A34B' : (chg < 0 ? '#F23645' : '#787B86');
   let vol = (v[idx]||0)/1e6;
   let vx = null;
   const lv = isNow ? liveVolOf(curT, curOhlc.t[idx]) : null;
@@ -862,7 +862,7 @@ function renderDHead(){
   const c = curOhlc.c, n = c.length;
   const p = r.p != null ? r.p : c[n-1];
   const chg = r.chg != null ? r.chg : (n>1 ? (c[n-1]/c[n-2]-1)*100 : 0);
-  const col = chg > 0 ? '#089981' : (chg < 0 ? '#F23645' : '#787B86');
+  const col = chg > 0 ? '#18A34B' : (chg < 0 ? '#F23645' : '#787B86');
   const vol = ((curOhlc.v[n-1]||0)/1e6);
   const vx = r.vx != null ? Math.round(r.vx*100) : null;
   el.innerHTML = `<div style="display:flex;align-items:center;gap:10px">
@@ -1045,7 +1045,7 @@ function loadProChart(){
     + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
   try { if (proVolChart && proVolChart.remove) proVolChart.remove(); } catch(e){}
-  const UP = '#089981', DOWN = '#F23645';
+  const UP = '#18A34B', DOWN = '#F23645';
   const baseOpts = {
     autoSize: true,
     layout: { background: { color: '#ffffff' }, textColor: '#787B86', fontSize: 12 },
@@ -1120,9 +1120,9 @@ function loadProChart(){
       volD.push({ time: curOhlc.t[i], open: 0, high: v, low: 0, close: v,
         color: big ? '#FFFFFF' : '#E8EAEE', borderColor: '#6A7280', wickColor: '#6A7280' });
       smD.push({ time: curOhlc.t[i], open: 0, high: bsp, low: 0, close: bsp,
-        color: spike ? (buy ? '#089981' : '#F23645') : '#FFFFFF',
-        borderColor: spike ? (buy ? '#05594B' : '#B0232F') : (buy ? '#9DC7B5' : '#E3AEB2'),
-        wickColor: spike ? (buy ? '#05594B' : '#B0232F') : (buy ? '#9DC7B5' : '#E3AEB2') });
+        color: spike ? (buy ? '#18A34B' : '#F23645') : '#FFFFFF',
+        borderColor: spike ? (buy ? '#0E7A38' : '#B0232F') : (buy ? '#9FD3AF' : '#E3AEB2'),
+        wickColor: spike ? (buy ? '#0E7A38' : '#B0232F') : (buy ? '#9FD3AF' : '#E3AEB2') });
     }
     return { volD: volD, smD: smD };
   };
