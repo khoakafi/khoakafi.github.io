@@ -1141,7 +1141,7 @@ function loadProChart(){
   } catch(e){}
   proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
   const n0 = PD.t.length - 1;
-  const liveLast = (function(){
+  const liveLast = INTRA ? null : (function(){
     const lv = liveVolOf(curT, PD.t[n0]);
     if (lv == null) return null;
     const _r = byT[curT] || {};
