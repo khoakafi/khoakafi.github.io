@@ -912,7 +912,7 @@ function renderSigTab(){
 window.__vpsOk = 0; window.__vpsQ = null; window.__vpsTape = []; window.__vpsProf = {}; window.__mthOpen = false; window.__mthFor = null;
 function mthNum(n){ try { return (Math.round(n)).toLocaleString('vi-VN'); } catch(e){ return String(n); } }
 function mthPx(p){ return (Math.round(p*100)/100).toFixed(1).replace('.', ','); }
-function mthTy(v){ const x = v/1e6; return (Math.abs(x) >= 100 ? Math.round(x) : (Math.round(x*10)/10)).toString().replace('.', ',') + ' tỷ'; }
+function mthTy(v){ const x = v/1e6; if (Math.abs(x) > 0 && Math.abs(x) < 0.1) return (Math.round(v/100)/10).toString().replace('.', ',') + ' tr'; return (Math.abs(x) >= 100 ? Math.round(x) : (Math.round(x*10)/10)).toString().replace('.', ',') + ' tỷ'; }
 function mthG(s){ const a = String(s||'').split('|'); const p = +a[0]||0, v = (+a[1]||0)*10; return [p, v]; }
 function mthSide(p, prev){
   try {
@@ -1038,7 +1038,7 @@ function renderMatch(){
       + cell('Bán', mthNum(fs), mthTy(fsv), DNC)
       + cell('Ròng', (nq >= 0 ? '+' : '−') + mthNum(Math.abs(nq)), (nv >= 0 ? '+' : '−') + mthTy(Math.abs(nv)), nq >= 0 ? UPC : DNC)
       + '</div>'
-      + (+q.fRoom > 0 ? '<div style="border-top:1px solid ' + LN + ';padding:7px 11px;font-size:11.5px;color:' + MUT + ';display:flex;justify-content:space-between"><span>Room còn lại</span><b style="color:#1F2937;font-weight:700">' + (Math.round(+q.fRoom/1e4)/10).toString().replace('.', ',') + ' tr cp</b></div>' : '')
+      + (+q.fRoom > 0 ? '<div style="border-top:1px solid ' + LN + ';padding:7px 11px;font-size:11.5px;color:' + MUT + ';display:flex;justify-content:space-between"><span>Room còn lại</span><b style="color:#1F2937;font-weight:700">' + (function(){ var rm = +q.fRoom*10; return rm >= 1e9 ? (Math.round(rm/1e8)/10).toString().replace('.', ',') + ' tỷ cp' : (Math.round(rm/1e5)/10).toString().replace('.', ',') + ' tr cp'; })() + '</b></div>' : '')
       + '</div>';
   }
 
