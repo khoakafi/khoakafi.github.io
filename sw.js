@@ -19,3 +19,20 @@ self.addEventListener('fetch', function(e){
     }).catch(function(){ return caches.match(e.request); })
   );
 });
+
+// Bam vao thong bao -> dua ve app dang mo, khong mo them tab moi.
+// (Tren iOS thong bao BUOC phai ban qua registration.showNotification,
+//  nen handler nay la duong duy nhat de xu ly cu bam.)
+self.addEventListener('notificationclick', function(e){
+  e.notification.close();
+  var url = (e.notification.data && e.notification.data.url) || '/';
+  e.waitUntil(
+    self.clients.matchAll({type: 'window', includeUncontrolled: true}).then(function(list){
+      for (var i = 0; i < list.length; i++) {
+        var c = list[i];
+        if (c.url.indexOf(self.location.origin) === 0 && 'focus' in c) return c.focus();
+      }
+      if (self.clients.openWindow) return self.clients.openWindow(url);
+    })
+  );
+});

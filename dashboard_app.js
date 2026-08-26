@@ -103,11 +103,50 @@ function ntfFlush(){
   }
   toast(title + ' — ' + body);
   beepSound();
-  try { if ('Notification' in window && Notification.permission === 'granted') {
-    const n = new Notification(title, {body, tag, renotify: false});
-    n.onclick = () => { window.focus(); n.close(); };
-  } } catch(e){}
+  ntfShow(title, body, tag);
 }
+/* iOS (Safari/PWA) KHONG ho tro `new Notification()` — bat buoc phai di qua
+   service worker: registration.showNotification(). Android/desktop thi ca hai
+   deu chay. Nen uu tien service worker, chi fallback sang constructor khi
+   khong co SW. */
+function ntfShow(title, body, tag){
+  if (!('Notification' in window) || Notification.permission !== 'granted') return;
+  const opt = {
+    body, tag, renotify: false,
+    icon: '/icon-192.png', badge: '/icon-192.png',
+    data: { url: '/' }
+  };
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready
+      .then(reg => reg.showNotification(title, opt))
+      .catch(() => ntfShowLegacy(title, opt));
+    return;
+  }
+  ntfShowLegacy(title, opt);
+}
+window.ntfShow = ntfShow;   // de goi duoc tu console khi can chan doan
+function ntfShowLegacy(title, opt){
+  try {
+    const n = new Notification(title, opt);
+    n.onclick = () => { window.focus(); n.close(); };
+  } catch(e){ console.warn('Notification khong hien duoc:', e && e.message); }
+}
+/* Chan doan nhanh: go knNotifyTest() trong console de thu ban 1 thong bao */
+window.knNotifyTest = async function(){
+  const out = {
+    daCaiHomeScreen: (window.navigator.standalone === true) ||
+      (window.matchMedia && matchMedia('(display-mode: standalone)').matches),
+    coNotificationAPI: 'Notification' in window,
+    quyen: ('Notification' in window) ? Notification.permission : 'khong co API',
+    coServiceWorker: 'serviceWorker' in navigator,
+    swSanSang: false
+  };
+  if (out.coServiceWorker) { try { await navigator.serviceWorker.ready; out.swSanSang = true; } catch(e){} }
+  console.table(out);
+  if (out.quyen === 'granted') ntfShow('Khoa Nguyen Signal', 'Thong bao dang hoat dong binh thuong.', 'kn-test');
+  else console.warn('Chua duoc cap quyen thong bao — bam chuong tren thanh tren de cap.');
+  return out;
+};
 function notifyPush(key, title, body, repeatMs, short){
   if (ntfSeen(key)) return;
   _ntfQ.push({key, title, body, short});
@@ -533,9 +572,17 @@ function ensureFreshBanner(){
     meta.parentNode.appendChild(b);
   } catch(e){}
 }
+const NL = String.fromCharCode(10);
+function laIOS(){
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+         (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+function daCaiHomeScreen(){
+  try { return (window.navigator.standalone === true) ||
+    (window.matchMedia && matchMedia('(display-mode: standalone)').matches); } catch(e){ return false; }
+}
 function ensureNotifBanner(){
-  if (!('Notification' in window)) return;
-  if (Notification.permission === 'granted') return;
+  if ('Notification' in window && Notification.permission === 'granted') return;
   const meta = document.getElementById('bgeData');
   if (!meta || document.getElementById('notifBtn')) return;
   const b = document.createElement('button');
@@ -543,13 +590,30 @@ function ensureNotifBanner(){
   b.style.cssText = 'margin-left:10px;padding:5px 14px;font-size:12px;background:#e8f7ee;border:1px solid #7fd2a1;color:#0d6e31;font-weight:700;border-radius:999px;cursor:pointer';
   b.textContent = '🔔 Bật thông báo realtime';
   b.onclick = async () => {
+    /* Tren iPhone/iPad, Notification API chi ton tai khi web da duoc THEM VAO
+       MAN HINH CHINH. Mo bang tab Safari thi khong co API -> phai huong dan. */
+    if (!('Notification' in window)) {
+      if (laIOS() && !daCaiHomeScreen()) {
+        alert('Trên iPhone, thông báo chỉ chạy khi app được thêm vào Màn hình chính.' + NL + NL +
+              'Cách làm: mở trang này trong Safari → bấm nút Chia sẻ (ô vuông có mũi tên) →' + NL +
+              'chọn "Thêm vào MH chính" → mở app từ biểu tượng vừa tạo → bấm lại chuông này.');
+      } else {
+        alert('Trình duyệt này không hỗ trợ thông báo.');
+      }
+      return;
+    }
     if (Notification.permission === 'denied') {
-      alert('Thông báo của trang đang bị CHẶN.' + String.fromCharCode(10,10) + 'Cách mở: bấm biểu tượng Ổ KHÓA cạnh thanh địa chỉ, chọn Thông báo: Cho phép, rồi tải lại trang.');
+      alert(laIOS()
+        ? ('Thông báo đang bị chặn.' + NL + NL +
+           'Cách mở: vào Cài đặt của iPhone → Thông báo → tìm "Khoa Nguyen Invest" →' + NL +
+           'bật "Cho phép Thông báo", rồi mở lại app.')
+        : ('Thông báo của trang đang bị CHẶN.' + NL + NL +
+           'Cách mở: bấm biểu tượng Ổ KHÓA cạnh thanh địa chỉ, chọn Thông báo: Cho phép, rồi tải lại trang.'));
       return;
     }
     const p = await Notification.requestPermission();
     if (p === 'granted') {
-      try { new Notification('Khoa Nguyen Signal', {body: 'Đã bật thông báo realtime — có tín hiệu mới sẽ báo ngay tại đây, kể cả khi bạn đang mở tab khác.'}); } catch(e){}
+      ntfShow('Khoa Nguyen Signal', 'Đã bật thông báo — có tín hiệu mới sẽ báo ngay tại đây khi app đang mở.', 'kn-welcome');
       b.remove();
     }
   };
