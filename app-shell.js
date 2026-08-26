@@ -95,6 +95,7 @@
   +   'cursor:pointer;padding:0;transition:transform .12s}'
   + '.kn-app .knIcoBtn:active{transform:scale(.9)}'
   + '.kn-app .knIcoBtn svg{width:19px;height:19px}'
+  + '.kn-app #knBell.on{color:#128A3E;border-color:#9BD9B4;background:#F1FAF4}'
   /* CSS gốc gán order cho logo/search -> đặt order rõ ràng cho nút mới */
   + '.kn-app #knBack{order:-2}'
   + '.kn-app #knSecTitle{order:-1}'
@@ -315,20 +316,27 @@
 
     var bell = document.createElement('button');
     bell.id = 'knBell'; bell.className = 'knIcoBtn';
-    bell.setAttribute('aria-label','Bật thông báo');
     bell.innerHTML = IC.bell;
-    bell.style.display = 'none';
+    /* Chuong LUON hien:
+         - chua cap quyen  -> bam de xin quyen (qua #notifBtn)
+         - da cap quyen    -> bam de GUI THU mot thong bao, tu kiem tra duoc
+                              ngay tren may khong can cam vao Mac. */
+    function bellState(){
+      var granted = ('Notification' in window) && Notification.permission === 'granted';
+      bell.classList.toggle('on', granted);
+      bell.setAttribute('aria-label', granted ? 'Gửi thử thông báo' : 'Bật thông báo');
+      bell.title = granted ? 'Bấm để gửi thử một thông báo' : 'Bật thông báo';
+    }
     bell.addEventListener('click', function(){
+      if (typeof window.knTestNotify === 'function' && ('Notification' in window)
+          && Notification.permission === 'granted') { window.knTestNotify(); return; }
       var b = document.getElementById('notifBtn');
       if (b) b.click();
+      setTimeout(bellState, 800);
     });
     tb.appendChild(bell);
-
-    /* chuông chỉ hiện khi còn phải xin quyền (chip #notifBtn tồn tại) */
-    setInterval(function(){
-      var has = !!document.getElementById('notifBtn');
-      bell.style.display = has ? 'flex' : 'none';
-    }, 1500);
+    bellState();
+    setInterval(bellState, 2000);
   }
 
   /* Gỡ tab Bài viết + So sánh khỏi luồng app: không có lối vào từ tab bar.

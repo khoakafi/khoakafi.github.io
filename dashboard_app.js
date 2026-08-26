@@ -125,6 +125,27 @@ function ntfShow(title, body, tag){
   ntfShowLegacy(title, opt);
 }
 window.ntfShow = ntfShow;   // de goi duoc tu console khi can chan doan
+/* Gui thu mot thong bao — gan vao chuong tren thanh tren de tu kiem tra
+   ngay tren dien thoai, khong can cam vao Mac. */
+window.knTestNotify = function(){
+  if (!('Notification' in window)) {
+    alert(laIOS() && !daCaiHomeScreen()
+      ? ('Trên iPhone, thông báo chỉ chạy khi app được thêm vào Màn hình chính.' + NL + NL +
+         'Safari → nút Chia sẻ → "Thêm vào MH chính" → mở app từ biểu tượng đó.')
+      : 'Trình duyệt này không hỗ trợ thông báo.');
+    return;
+  }
+  if (Notification.permission !== 'granted') {
+    const b = document.getElementById('notifBtn');
+    if (b) b.click(); else Notification.requestPermission();
+    return;
+  }
+  const gio = new Date().toLocaleTimeString('vi-VN');
+  ntfShow('Khoa Nguyen Signal — thử thông báo',
+          'Thông báo đang hoạt động bình thường. Gửi lúc ' + gio + '.',
+          'kn-test-' + Date.now());
+  toast('Đã gửi thử thông báo lúc ' + gio + ' — kiểm tra khay thông báo của máy.');
+};
 function ntfShowLegacy(title, opt){
   try {
     const n = new Notification(title, opt);
