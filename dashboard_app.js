@@ -964,6 +964,28 @@ async function loadMatch(){
     }
   } catch(e){}
   try { const j = await (await fetch('https://bgapidatafeed.vps.com.vn/getliststockdata/' + curT, {cache:'no-store'})).json(); if (j && j[0]) window.__vpsQ = j[0]; } catch(e){}
+
+  try {
+    const q0 = window.__vpsQ;
+    if (!q0 || !(+q0.lot > 0)) {
+      const dd = new Date(Date.now() - 30*86400000).toISOString().slice(0,10);
+      const sp = await (await fetch('https://api-finfo.vndirect.com.vn/v4/stock_prices?q=code:' + curT + '~date:gte:' + dd + '&size=40', {cache:'no-store'})).json();
+      let d0 = null; ((sp && sp.data) || []).forEach(x => { if (!d0 || x.date > d0.date) d0 = x; });
+      if (d0) {
+        let f0 = {};
+        try { const fg = await (await fetch('https://api-finfo.vndirect.com.vn/v4/foreigns?q=code:' + curT + '&sort=tradingDate&size=5', {cache:'no-store'})).json();
+          ((fg && fg.data) || []).forEach(x => { if (!f0.tradingDate || x.tradingDate > f0.tradingDate) f0 = x; }); } catch(e){}
+        window.__vpsQ = { sym: curT, __eod: d0.date,
+          c: d0.ceilingPrice, f: d0.floorPrice, r: d0.basicPrice,
+          openPrice: d0.open, highPrice: d0.high, lowPrice: d0.low, avePrice: d0.average,
+          lastPrice: d0.close, lot: (d0.nmVolume || 0) / 10,
+          fBVol: (f0.buyVol || 0) / 10, fSVolume: (f0.sellVol || 0) / 10,
+          fBValue: (f0.buyVal || 0) / 1000, fSValue: (f0.sellVal || 0) / 1000,
+          fRoom: (f0.currentRoom || 0) / 10 };
+      }
+    }
+  } catch(e){}
+
   renderMatch();
 }
 function renderMatch(){
@@ -974,6 +996,7 @@ function renderMatch(){
   const ref = q ? (+q.r || 0) : 0;
   const col = p => ref > 0 ? (p > ref ? UPC : (p < ref ? DNC : REFC)) : '#1F2937';
   let h = '';
+  if (q && q.__eod) { const dp = q.__eod.split('-'); h += '<div style="font-size:11.5px;color:#7A828E;background:#F4F6F8;border-radius:8px;padding:7px 11px;margin-bottom:13px">Số liệu phiên <b style="color:#1F2937;font-weight:700">' + dp[2] + '/' + dp[1] + '</b> · phiên mới chưa mở</div>'; }
 
   if (q) {
     const st = [
@@ -1015,7 +1038,7 @@ function renderMatch(){
       + cell('Bán', mthNum(fs), mthTy(fsv), DNC)
       + cell('Ròng', (nq >= 0 ? '+' : '−') + mthNum(Math.abs(nq)), mthTy(Math.abs(nv)), nq >= 0 ? UPC : DNC)
       + '</div>'
-      + (+q.fRoom > 0 ? '<div style="border-top:1px solid ' + LN + ';padding:7px 11px;font-size:11.5px;color:' + MUT + ';display:flex;justify-content:space-between"><span>Room còn lại</span><b style="color:#1F2937;font-weight:700">' + (Math.round(+q.fRoom/1e5)/10).toString().replace('.', ',') + ' tr cp</b></div>' : '')
+      + (+q.fRoom > 0 ? '<div style="border-top:1px solid ' + LN + ';padding:7px 11px;font-size:11.5px;color:' + MUT + ';display:flex;justify-content:space-between"><span>Room còn lại</span><b style="color:#1F2937;font-weight:700">' + (Math.round(+q.fRoom/1e4)/10).toString().replace('.', ',') + ' tr cp</b></div>' : '')
       + '</div>';
   }
 
@@ -1089,7 +1112,7 @@ function renderMatch(){
             syncLiveBar();
             try { if (!window.__dHov) updateDPx(null); } catch(e){}
           }
-          if (prev && String(prev.sym) === String(q.sym) && window.__mthFor === curT) {
+          if (prev && !prev.__eod && String(prev.sym) === String(q.sym) && window.__mthFor === curT) {
             const dk2 = kl - (+prev.lot || 0) * 10;
             if (dk2 > 0) { const sd = mthSide(p, prev); if (sd) mthPush(p, dk2, sd); }
           }
