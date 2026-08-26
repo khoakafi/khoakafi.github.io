@@ -572,6 +572,15 @@ async function retroScanSignals(){
     if (changed) { saveLiveDeals(store); if (tpn.recent.length > 12) tpn.recent = tpn.recent.slice(0,12); refreshOpenDeals(); }
   } catch(e){}
 }
+function __nenOk(t){
+  try {
+    const o = window.SIGS && window.SIGS.t && window.SIGS.t[t];
+    const st = o && o.st;
+    if (!st || !st.c || !st.c[0]) return false;
+    if (String(st.c[0]).toUpperCase().indexOf('YẾU') >= 0) return false;
+    return true;
+  } catch(e) { return false; }
+}
 function scanNewSignals(){
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
   const now = new Date();
@@ -579,6 +588,7 @@ function scanNewSignals(){
   const biso = now.toISOString().slice(0,10);
   const qualify = t => { if (BO_CUNG.has(t)) return false; const r = byT[t]; if (!r) return false;
     const g = (window.SIGS && window.SIGS.trig && window.SIGS.trig[t]) || null; if (!g) return false;
+    if (!__nenOk(t)) return false;
     return r.p != null && r.p >= g[0] && r.vx != null && r.v20 && (r.vx * r.v20) >= g[1]; };
   // tin hieu trong phien rot chuan -> tu rut khoi bang + so
   tpn.recent = tpn.recent.filter(x => !(x.today && x.bdate === biso && !qualify(x.t)));
