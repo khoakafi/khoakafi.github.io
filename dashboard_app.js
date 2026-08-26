@@ -1036,7 +1036,7 @@ function renderMatch(){
       + '<div style="display:grid;grid-template-columns:1fr 1fr 1fr">'
       + cell('Mua', mthNum(fb), mthTy(fbv), UPC, true)
       + cell('Bán', mthNum(fs), mthTy(fsv), DNC)
-      + cell('Ròng', (nq >= 0 ? '+' : '−') + mthNum(Math.abs(nq)), mthTy(Math.abs(nv)), nq >= 0 ? UPC : DNC)
+      + cell('Ròng', (nq >= 0 ? '+' : '−') + mthNum(Math.abs(nq)), (nv >= 0 ? '+' : '−') + mthTy(Math.abs(nv)), nq >= 0 ? UPC : DNC)
       + '</div>'
       + (+q.fRoom > 0 ? '<div style="border-top:1px solid ' + LN + ';padding:7px 11px;font-size:11.5px;color:' + MUT + ';display:flex;justify-content:space-between"><span>Room còn lại</span><b style="color:#1F2937;font-weight:700">' + (Math.round(+q.fRoom/1e4)/10).toString().replace('.', ',') + ' tr cp</b></div>' : '')
       + '</div>';
