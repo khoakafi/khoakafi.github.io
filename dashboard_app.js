@@ -141,10 +141,20 @@ window.knTestNotify = function(){
     return;
   }
   const gio = new Date().toLocaleTimeString('vi-VN');
-  ntfShow('Khoa Nguyen Signal — thử thông báo',
-          'Thông báo đang hoạt động bình thường. Gửi lúc ' + gio + '.',
+  /* 1) Ban ngay — kiem tra duong thong bao co thong khong */
+  ntfShow('Khoa Nguyen Signal — thử ngay',
+          'Thông báo đang hoạt động. Gửi lúc ' + gio + '.',
           'kn-test-' + Date.now());
-  toast('Đã gửi thử thông báo lúc ' + gio + ' — kiểm tra khay thông báo của máy.');
+  /* 2) Hen mot cai nua sau 45 giay — de nguoi dung KHOA MAY roi cho.
+     Day moi la phep thu that: neu iOS treo app khi chay nen thi cai nay
+     se KHONG len, va do chinh la gioi han cua PWA khong co Web Push. */
+  clearTimeout(window.__knDelayed);
+  window.__knDelayed = setTimeout(function(){
+    ntfShow('Khoa Nguyen Signal — thử sau 45 giây',
+            'Nếu bạn thấy dòng này lúc máy đang khoá thì thông báo chạy nền được.',
+            'kn-test-delay-' + Date.now());
+  }, 45000);
+  toast('Đã gửi 1 thông báo ngay. Cái thứ 2 sẽ bắn sau 45 giây — khoá máy lại rồi chờ xem có lên không.');
 };
 function ntfShowLegacy(title, opt){
   try {
