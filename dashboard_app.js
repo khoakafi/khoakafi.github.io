@@ -441,7 +441,7 @@ async function liveQuote(){
         else if (!_x && (d.floor === 'UPCOM' || d.floor === 'OTC') && d.type === 'STOCK') XTRA[d.code] = {t:d.code, b:'UP', n:'', p:d.close, chg:_c}; } catch(e){} return; }
       if (d.close!=null) { const _op=row.p; row.p = d.close; if (_op>0 && d.close>0) { const _k=d.close/_op; ['cap','pe','pb'].forEach(_f=>{ if (typeof row[_f]==='number' && isFinite(row[_f]) && row[_f]!==0) row[_f]=row[_f]*_k; }); } }
       if (d.pctChange!=null) row.chg = +(+d.pctChange).toFixed(2);
-      if (row.v20 && d.nmVolume!=null) row.vx = +(d.nmVolume/row.v20).toFixed(4);
+      if (row.v20 && d.nmVolume!=null) row.vx = +(d.nmVolume/row.v20).toFixed(6);
       n++; });
     if (n) { const el = document.getElementById('bgeData'); if (el) el.textContent = 'Giá cập nhật lúc ' + new Date().toTimeString().slice(0,5) + ' (phiên ' + data[0].date.slice(8,10)+'/'+data[0].date.slice(5,7) + ') · FA/screener: ' + (SUM.updated||''); }
     if (n) { try { if (typeof dtData!=='undefined' && dtData && dtData.oh && dtData.oh.c && dtData.oh.c.length) updateKpis(dtData.oh.c.length-1); } catch(e){} }
@@ -1108,7 +1108,7 @@ function renderMatch(){
             const base = ref > 0 ? ref : curOhlc.c[nb-2];
             row.p = p;
             if (base > 0) row.chg = +((p / base - 1) * 100).toFixed(2);
-            if (kl > 0) row.vx = +(kl / row.v20).toFixed(4);
+            if (kl > 0) row.vx = +(kl / row.v20).toFixed(6);
             syncLiveBar();
             try { if (!window.__dHov) updateDPx(null); } catch(e){}
           }
@@ -2515,7 +2515,7 @@ window.__loiLienTiep = 0;
             const p = r.c[n-1];
             let kl = 0; for (let i = 0; i < n; i++) kl += (r.v[i] || 0);
             if (p > 0) { row.p = p; row.chg = +((p / curOhlc.c[nb-2] - 1) * 100).toFixed(2); }
-            if (kl > 0) row.vx = +(kl / row.v20).toFixed(4);
+            if (kl > 0) row.vx = +(kl / row.v20).toFixed(6);
             syncLiveBar();
             try { if (!window.__dHov) updateDPx(null); } catch(e){}
           }
