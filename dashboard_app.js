@@ -970,11 +970,11 @@ async function loadMatch(){
     if (!q0 || !(+q0.lot > 0)) {
       const dd = new Date(Date.now() - 30*86400000).toISOString().slice(0,10);
       const sp = await (await fetch('https://api-finfo.vndirect.com.vn/v4/stock_prices?q=code:' + curT + '~date:gte:' + dd + '&size=40', {cache:'no-store'})).json();
-      let d0 = null; ((sp && sp.data) || []).forEach(x => { if (!d0 || x.date > d0.date) d0 = x; });
+      let d0 = null; ((sp && sp.data) || []).forEach(x => { if ((+x.nmVolume || 0) > 0 && (!d0 || x.date > d0.date)) d0 = x; });
       if (d0) {
         let f0 = {};
-        try { const fg = await (await fetch('https://api-finfo.vndirect.com.vn/v4/foreigns?q=code:' + curT + '&sort=tradingDate&size=5', {cache:'no-store'})).json();
-          ((fg && fg.data) || []).forEach(x => { if (!f0.tradingDate || x.tradingDate > f0.tradingDate) f0 = x; }); } catch(e){}
+        try { const fg = await (await fetch('https://api-finfo.vndirect.com.vn/v4/foreigns?q=code:' + curT + '&sort=tradingDate&size=12', {cache:'no-store'})).json();
+          ((fg && fg.data) || []).forEach(x => { if (x.tradingDate === d0.date) f0 = x; }); } catch(e){}
         window.__vpsQ = { sym: curT, __eod: d0.date,
           c: d0.ceilingPrice, f: d0.floorPrice, r: d0.basicPrice,
           openPrice: d0.open, highPrice: d0.high, lowPrice: d0.low, avePrice: d0.average,
