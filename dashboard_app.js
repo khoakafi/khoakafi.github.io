@@ -847,7 +847,7 @@ function updateDPx(i){
   const d = new Date(curOhlc.t[idx]*1000);
   const ngay = ' <span class="mini" style="font-weight:600;display:block;line-height:1.35;min-height:16px">' + ('0'+d.getUTCDate()).slice(-2)+'/'+('0'+(d.getUTCMonth()+1)).slice(-2)+'/'+String(d.getUTCFullYear()).slice(2) + '</span>';
   const htmlL = `${fmt(p,2)} <span style="font-size:15px;font-weight:700">(${chg>0?'+':''}${fmt(chg,1)}%)</span>${ngay}`;
-  const htmlR = `KL ${fmt(vol,2)} tr${vx!=null?` <span style="font-weight:700;color:${vx>=150?'#B45309':'var(--muted)'}">(${vx}%)</span>`:''}`;
+  const htmlR = `KL ${Math.round(vol*1e6).toLocaleString("en-US")}${vx!=null?` <span style="font-weight:700;color:${vx>=150?'#B45309':'var(--muted)'}">(${vx}%)</span>`:''}`;
   if (el.dataset.built !== '1') {
     el.innerHTML = `<div id="dPxL" style="font-size:27px;font-weight:800;line-height:1;white-space:nowrap"></div><div id="dPxR" style="font-size:14px;font-weight:800;white-space:nowrap"></div>`;
     el.dataset.built = '1';
