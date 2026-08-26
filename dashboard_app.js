@@ -125,6 +125,61 @@ function ntfShow(title, body, tag){
   ntfShowLegacy(title, opt);
 }
 window.ntfShow = ntfShow;   // de goi duoc tu console khi can chan doan
+
+/* ============ WEB PUSH — bao duoc ca khi app dong ============
+   iOS treo app ngay khi roi man hinh, nen thong bao tu app chi chay luc
+   dang mo. Muon bao that thi phai co server day xuong: may chu quet gia
+   (GitHub Actions) -> dich vu push cua Apple -> service worker -> iPhone. */
+const VAPID_PUBLIC = 'BEu71EkQbeu2Mr7CfVCeo1g1A4MoshUOI43FWZubKX6vGS4PmFVWYcqHOLgHmwlsEsnty_XWyMFM41YzHE1dDRY';
+function b64ToU8(base64){
+  const pad = '='.repeat((4 - base64.length % 4) % 4);
+  const b64 = (base64 + pad).replace(/-/g, '+').replace(/_/g, '/');
+  const raw = atob(b64);
+  const out = new Uint8Array(raw.length);
+  for (let i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i);
+  return out;
+}
+async function dangKyPush(){
+  if (!('serviceWorker' in navigator) || !('PushManager' in window)) return null;
+  const reg = await navigator.serviceWorker.ready;
+  let sub = await reg.pushManager.getSubscription();
+  if (!sub) {
+    sub = await reg.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: b64ToU8(VAPID_PUBLIC)
+    });
+  }
+  return sub;
+}
+/* Lay "ma thiet bi" de dan vao GitHub Secret PUSH_SUBS */
+window.knLayMaThietBi = async function(){
+  try {
+    if (!('Notification' in window)) {
+      alert(laIOS() && !daCaiHomeScreen()
+        ? ('Trên iPhone phải thêm app vào Màn hình chính trước.' + NL + NL +
+           'Safari → Chia sẻ → "Thêm vào MH chính" → mở từ biểu tượng đó.')
+        : 'Trình duyệt này không hỗ trợ thông báo.');
+      return;
+    }
+    if (Notification.permission !== 'granted') {
+      const p = await Notification.requestPermission();
+      if (p !== 'granted') { alert('Cần cấp quyền thông báo trước đã.'); return; }
+    }
+    const sub = await dangKyPush();
+    if (!sub) { alert('Máy này không hỗ trợ Web Push.'); return; }
+    const ma = JSON.stringify(sub);
+    let daChep = false;
+    try { await navigator.clipboard.writeText(ma); daChep = true; } catch(e){}
+    if (daChep) {
+      alert('Đã sao chép mã thiết bị vào bộ nhớ tạm.' + NL + NL +
+            'Dán mã này vào GitHub Secret tên PUSH_SUBS (dạng mảng, ví dụ [ mã_vừa_chép ]).');
+    } else {
+      prompt('Sao chép đoạn dưới rồi dán vào GitHub Secret PUSH_SUBS:', ma);
+    }
+    console.log('Mã thiết bị:', ma);
+    return ma;
+  } catch(e){ alert('Không đăng ký được: ' + e.message); }
+};
 /* Gui thu mot thong bao — gan vao chuong tren thanh tren de tu kiem tra
    ngay tren dien thoai, khong can cam vao Mac. */
 window.knTestNotify = function(){

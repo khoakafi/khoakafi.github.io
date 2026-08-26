@@ -327,7 +327,21 @@
       bell.setAttribute('aria-label', granted ? 'Gửi thử thông báo' : 'Bật thông báo');
       bell.title = granted ? 'Bấm để gửi thử một thông báo' : 'Bật thông báo';
     }
-    bell.addEventListener('click', function(){
+    /* Bam ngan  -> gui thu mot thong bao.
+       Giu lau 700ms -> lay "ma thiet bi" de dang ky nhan push khi app dong. */
+    var hold = null, daGiu = false;
+    bell.addEventListener('touchstart', function(){
+      daGiu = false;
+      hold = setTimeout(function(){
+        daGiu = true;
+        if (typeof window.knLayMaThietBi === 'function') window.knLayMaThietBi();
+      }, 700);
+    }, {passive:true});
+    bell.addEventListener('touchend', function(){ clearTimeout(hold); }, {passive:true});
+    bell.addEventListener('touchmove', function(){ clearTimeout(hold); daGiu = true; }, {passive:true});
+    bell.addEventListener('click', function(e){
+      if (daGiu){ daGiu = false; return; }
+      if (e.altKey && typeof window.knLayMaThietBi === 'function'){ window.knLayMaThietBi(); return; }
       if (typeof window.knTestNotify === 'function' && ('Notification' in window)
           && Notification.permission === 'granted') { window.knTestNotify(); return; }
       var b = document.getElementById('notifBtn');

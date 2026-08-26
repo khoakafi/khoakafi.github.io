@@ -20,6 +20,22 @@ self.addEventListener('fetch', function(e){
   );
 });
 
+// Nhan Web Push tu may chu quet gia -> hien thong bao ke ca khi app da dong.
+// Day la duong DUY NHAT bao duoc luc iPhone nam trong tui.
+self.addEventListener('push', function(e){
+  var d = {};
+  try { d = e.data ? e.data.json() : {}; } catch(_){ d = { title: 'Khoa Nguyen Signal', body: e.data ? e.data.text() : '' }; }
+  var title = d.title || 'Khoa Nguyen Signal';
+  e.waitUntil(self.registration.showNotification(title, {
+    body: d.body || '',
+    tag: d.tag || 'kn-push',
+    renotify: false,
+    icon: '/icon-192.png',
+    badge: '/icon-192.png',
+    data: { url: d.url || '/' }
+  }));
+});
+
 // Bam vao thong bao -> dua ve app dang mo, khong mo them tab moi.
 // (Tren iOS thong bao BUOC phai ban qua registration.showNotification,
 //  nen handler nay la duong duy nhat de xu ly cu bam.)
