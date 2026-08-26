@@ -1638,7 +1638,14 @@ inits.detail = function(t){
   else if (!curT) loadDetail('FPT');
 };
 async function loadDetail(t){
-  curT = t; const r = XROW(t) || {t}; const isX = !byT[t];
+  curT = t;
+  try { window.__mthSwitch = 1;
+    if (window.__mthFor && window.__mthFor !== t) { window.__mthFor = null; window.__vpsQ = null; window.__vpsTape = []; window.__vpsProf = {}; }
+    const _mb = document.getElementById('tab-mth'), _rb = document.getElementById('tab-rec'), _sb = document.getElementById('tab-sig');
+    if (_mb && _mb.style.display !== 'none') { _mb.innerHTML = '<div class="mini">Đang tải khớp lệnh…</div>'; setTimeout(function(){ try { loadMatch(); } catch(e){} }, 60); }
+    if (_rb && _rb.style.display !== 'none' && window._recFor !== t) { setTimeout(function(){ try { loadRecs(); } catch(e){} }, 60); }
+    if (_sb && _sb.style.display !== 'none') { setTimeout(function(){ try { renderSigTab(); } catch(e){} }, 400); }
+  } catch(e){} const r = XROW(t) || {t}; const isX = !byT[t];
   $('#sugg').style.display='none'; $('#dQ').value='';
   $('#dTitle').innerHTML = `${t} <span class="mini">— ${r.n||''} (${BRD(r.b)})</span> <span class="spin"></span>`;
   $('#dBody').style.display='';
