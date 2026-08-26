@@ -1324,8 +1324,16 @@ function loadProChart(){
     try {
       const ts = proChart.timeScale();
       const r = ts.getVisibleLogicalRange(); if (!r) return;
-      const shift = Math.max(1, Math.round((r.to - r.from) * 0.10));
-      const d = e.deltaY > 0 ? shift : -shift;
+      let dy = e.deltaY;
+      if (e.deltaMode === 1) dy *= 16; else if (e.deltaMode === 2) dy *= 400;
+      const span = r.to - r.from;
+      let bars = (dy / 100) * span * (window.__wSpeed || 0.08);
+      const cap = Math.max(1, span * 0.15);
+      if (bars > cap) bars = cap; else if (bars < -cap) bars = -cap;
+      window.__wAcc = (window.__wAcc || 0) + bars;
+      const d = window.__wAcc > 0 ? Math.floor(window.__wAcc) : Math.ceil(window.__wAcc);
+      if (!d) return;
+      window.__wAcc -= d;
       ts.setVisibleLogicalRange({ from: r.from + d, to: r.to + d });
     } catch(x){}
   };
