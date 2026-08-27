@@ -1,0 +1,72 @@
+name: Quét giá & đẩy thông báo
+
+on:
+  schedule:
+    # Giờ UTC. Phiên VN (UTC+7): sáng 9:00-11:30 -> UTC 2:00-4:30
+    #                            chiều 13:00-14:50 -> UTC 6:00-7:50
+    - cron: '*/5 2-4 * * 1-5'
+    - cron: '*/5 6-7 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Chỉ chạy thử, không gửi thông báo thật'
+        type: boolean
+        default: true
+      force:
+        description: 'Bỏ qua kiểm tra giờ phiên'
+        type: boolean
+        default: true
+
+concurrency:
+  group: push-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Lấy code (nhánh main)
+        uses: actions/checkout@v4
+
+      - name: Lấy trạng thái chống trùng (nhánh push-state)
+        run: |
+          git fetch origin push-state --depth=1 2>/dev/null || true
+          if git show origin/push-state:.push-state.json > .push-state.json 2>/dev/null; then
+            echo "Đã tải trạng thái phiên trước"
+          else
+            echo '{}' > .push-state.json
+            echo "Chưa có trạng thái — tạo mới"
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Cài web-push
+        run: npm install web-push@3 --no-save --no-audit --no-fund
+
+      - name: Quét và đẩy thông báo
+        env:
+          VAPID_PUBLIC: ${{ secrets.VAPID_PUBLIC }}
+          VAPID_PRIVATE: ${{ secrets.VAPID_PRIVATE }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+          PUSH_SUBS: ${{ secrets.PUSH_SUBS }}
+          ALERT_KINDS: ${{ vars.ALERT_KINDS || 'signal,near,move' }}
+          DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
+          FORCE_RUN: ${{ inputs.force == true && '1' || '0' }}
+        run: node scripts/push-scan.js
+
+      - name: Lưu lại trạng thái chống trùng
+        if: always()
+        run: |
+          git config user.name  "kn-push-bot"
+          git config user.email "noreply@khoanguyeninvest.vn"
+          mkdir -p /tmp/st && cp .push-state.json /tmp/st/
+          git checkout --orphan push-state-tmp
+          git rm -rf --cached . > /dev/null 2>&1 || true
+          rm -rf $(git ls-files) 2>/dev/null || true
+          cp /tmp/st/.push-state.json .
+          git add .push-state.json
+          git commit -m "trạng thái thông báo $(date -u +%FT%TZ)" || exit 0
+          git push -f origin push-state-tmp:push-state

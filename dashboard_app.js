@@ -130,7 +130,7 @@ window.ntfShow = ntfShow;   // de goi duoc tu console khi can chan doan
    iOS treo app ngay khi roi man hinh, nen thong bao tu app chi chay luc
    dang mo. Muon bao that thi phai co server day xuong: may chu quet gia
    (GitHub Actions) -> dich vu push cua Apple -> service worker -> iPhone. */
-const VAPID_PUBLIC = 'BEu71EkQbeu2Mr7CfVCeo1g1A4MoshUOI43FWZubKX6vGS4PmFVWYcqHOLgHmwlsEsnty_XWyMFM41YzHE1dDRY';
+const VAPID_PUBLIC = 'BKSyDtgqAcMauvWxnLVxG1E0zY4iowS3GtwvXbXRnc7twGPjUPBbXkv5DDTjyGFvYHBpnbZxt8c0iG8iaKpOm_w';
 function b64ToU8(base64){
   const pad = '='.repeat((4 - base64.length % 4) % 4);
   const b64 = (base64 + pad).replace(/-/g, '+').replace(/_/g, '/');
