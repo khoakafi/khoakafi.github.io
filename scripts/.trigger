@@ -1,1 +1,2 @@
-2026-08-27T13:26:06Z
+Ready for Uptrend 2026
+Khoa Nguyen Signal đã sẵn sàng. Chúc anh một mùa sóng thật đẹp.

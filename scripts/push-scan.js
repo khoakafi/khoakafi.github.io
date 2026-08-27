@@ -206,9 +206,19 @@ async function gui(tin) {
      Dung de kiem tra duong day sau khi cam thiet bi, khong dung luc chay lich. */
   if (process.env.TEST_PUSH === '1') {
     const gio = new Date(Date.now() + 7 * 3600 * 1000).toISOString().slice(11, 19);
+    /* Noi dung tin thu doc tu scripts/.trigger:
+         dong 1 = tieu de, cac dong sau = noi dung. Bo trong thi dung mac dinh. */
+    let tt = '', tb = '';
+    try {
+      const raw = fs.readFileSync(path.join(ROOT, 'scripts/.trigger'), 'utf8').trim().split('\n');
+      if (raw[0] && !/^\d{4}-\d{2}-\d{2}T/.test(raw[0])) {
+        tt = raw[0].trim();
+        tb = raw.slice(1).join(' ').trim();
+      }
+    } catch (e) {}
     await gui([{ key: 'kn-test-' + Date.now(),
-      tieuDe: 'Khoa Nguyen Signal — thử từ máy chủ',
-      than: 'Thông báo đẩy từ GitHub lúc ' + gio + ' giờ VN. Nếu bạn thấy dòng này lúc app đang đóng thì hệ thống đã chạy.',
+      tieuDe: tt || 'Khoa Nguyen Signal — thử từ máy chủ',
+      than: tb || (tt ? '' : 'Thông báo đẩy từ GitHub lúc ' + gio + ' giờ VN. Nếu bạn thấy dòng này lúc app đang đóng thì hệ thống đã chạy.'),
       ngan: 'thử từ máy chủ' }]);
     ghiNhatKy({ ok: true, cheDo: 'TEST_PUSH', soThietBi: (JSON.parse(process.env.PUSH_SUBS || '[]')).length });
     return;
