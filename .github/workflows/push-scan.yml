@@ -6,6 +6,11 @@ on:
     #                            chiều 13:00-14:50 -> UTC 6:00-7:50
     - cron: '*/5 2-4 * * 1-5'
     - cron: '*/5 6-7 * * 1-5'
+  # Đẩy commit chạm vào bộ quét -> chạy thử ngay (luôn ở chế độ thử, không gửi thật)
+  push:
+    paths:
+      - 'scripts/push-scan.js'
+      - '.github/workflows/push-scan.yml'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -53,8 +58,8 @@ jobs:
           VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
           PUSH_SUBS: ${{ secrets.PUSH_SUBS }}
           ALERT_KINDS: ${{ vars.ALERT_KINDS || 'signal,near,move' }}
-          DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
-          FORCE_RUN: ${{ inputs.force == true && '1' || '0' }}
+          DRY_RUN: ${{ (github.event_name == 'push' || inputs.dry_run == true) && '1' || '0' }}
+          FORCE_RUN: ${{ (github.event_name == 'push' || inputs.force == true) && '1' || '0' }}
         run: node scripts/push-scan.js
 
       - name: Lưu lại trạng thái chống trùng
