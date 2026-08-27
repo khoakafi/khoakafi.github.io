@@ -26,6 +26,9 @@ concurrency:
   group: push-scan
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -62,16 +65,19 @@ jobs:
           FORCE_RUN: ${{ (github.event_name == 'push' || inputs.force == true) && '1' || '0' }}
         run: node scripts/push-scan.js
 
-      - name: Lưu lại trạng thái chống trùng
+      - name: Lưu lại trạng thái + nhật ký chẩn đoán
         if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          [ -f .push-state.json ] || echo '{}' > .push-state.json
+          [ -f .push-run.json ] || echo '{}' > .push-run.json
+          rm -rf /tmp/state && mkdir -p /tmp/state
+          cp .push-state.json .push-run.json /tmp/state/
+          cd /tmp/state
+          git init -q
           git config user.name  "kn-push-bot"
           git config user.email "noreply@khoanguyeninvest.vn"
-          mkdir -p /tmp/st && cp .push-state.json /tmp/st/
-          git checkout --orphan push-state-tmp
-          git rm -rf --cached . > /dev/null 2>&1 || true
-          rm -rf $(git ls-files) 2>/dev/null || true
-          cp /tmp/st/.push-state.json .
-          git add .push-state.json
-          git commit -m "trạng thái thông báo $(date -u +%FT%TZ)" || exit 0
-          git push -f origin push-state-tmp:push-state
+          git add .push-state.json .push-run.json
+          git commit -q -m "trạng thái thông báo $(date -u +%FT%TZ)"
+          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:push-state

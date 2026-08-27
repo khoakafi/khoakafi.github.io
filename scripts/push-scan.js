@@ -78,6 +78,11 @@ function docState() {
   return { phien: phienKey(), daBao: {} };
 }
 function ghiState(st) { fs.writeFileSync(STATE_FILE, JSON.stringify(st, null, 1)); }
+/* Nhat ky lan chay gan nhat — commit len nhanh push-state de soi tu xa */
+function ghiNhatKy(o){
+  try { fs.writeFileSync(path.join(path.dirname(STATE_FILE), '.push-run.json'),
+    JSON.stringify(Object.assign({ luc: new Date().toISOString() }, o), null, 1)); } catch(e){}
+}
 
 /* ---------- luật báo ---------- */
 function quet(gia, st) {
@@ -159,13 +164,22 @@ async function gui(tin) {
   console.log('Quét', codes.length, 'mã:', codes.join(','));
 
   const gia = await layGia(codes);
-  console.log('Lấy được giá', Object.keys(gia).length, '/', codes.length, 'mã');
-  if (!Object.keys(gia).length) { console.log('Không lấy được giá — thoát, không đổi trạng thái.'); process.exit(0); }
+  const soMa = Object.keys(gia).length;
+  console.log('Lấy được giá', soMa, '/', codes.length, 'mã');
+  const mau = Object.entries(gia).slice(0, 3).map(([k, v]) => k + '=' + v.p);
+  if (!soMa) {
+    console.error('KHÔNG lấy được giá nào từ VPS — có thể bị chặn theo vùng.');
+    ghiNhatKy({ ok: false, loi: 'VPS không trả dữ liệu', soMaQuet: codes.length, soMaLayDuoc: 0, dry: DRY });
+    process.exit(0);
+  }
 
   const st = docState();
   const tin = quet(gia, st);
-  if (!tin.length) { console.log('Không có cảnh báo mới.'); ghiState(st); return; }
+  const soSub = (() => { try { return JSON.parse(process.env.PUSH_SUBS || '[]').length; } catch(e){ return -1; } })();
+  ghiNhatKy({ ok: true, soMaQuet: codes.length, soMaLayDuoc: soMa, mauGia: mau,
+              soCanhBao: tin.length, canhBao: tin.map(x => x.ngan), soThietBi: soSub, dry: DRY });
 
+  if (!tin.length) { console.log('Không có cảnh báo mới.'); ghiState(st); return; }
   console.log('Cảnh báo mới:', tin.map(x => x.ngan).join(' | '));
   if (DRY) console.log('(DRY_RUN — không gửi thật)');
   else await gui(tin);
