@@ -131,6 +131,7 @@ function quet(gia, st) {
 /* ---------- gửi ---------- */
 /* Danh sach thiet bi lay tu Google Sheet (Apps Script), du phong PUSH_SUBS */
 async function layDanhSach() {
+  const ra = [];
   const api = process.env.SHEET_API, tok = process.env.SHEET_TOKEN;
   if (api && tok) {
     try {
@@ -139,12 +140,18 @@ async function layDanhSach() {
       const j = await r.json();
       if (j && j.ok && Array.isArray(j.subs)) {
         console.log('Sheet trả về', j.subs.length, 'thiết bị');
-        return j.subs;
-      }
-      console.error('Sheet trả lời không hợp lệ:', JSON.stringify(j).slice(0, 200));
+        ra.push(...j.subs);
+      } else console.error('Sheet trả lời không hợp lệ:', JSON.stringify(j).slice(0, 200));
     } catch (e) { console.error('Không gọi được Sheet:', e.message); }
   }
-  try { return JSON.parse(process.env.PUSH_SUBS || '[]'); } catch (e) { return []; }
+  /* Gop them PUSH_SUBS (may cam tay tu truoc) -> khong ai bi mat tin hieu
+     trong luc chuyen sang dang ky qua Sheet. Trung endpoint thi bo. */
+  try {
+    const cu = JSON.parse(process.env.PUSH_SUBS || '[]');
+    const da = new Set(ra.map(x => x.endpoint));
+    cu.forEach(x => { if (x && x.endpoint && !da.has(x.endpoint)) { da.add(x.endpoint); ra.push(x); } });
+  } catch (e) {}
+  return ra;
 }
 
 /* Bao nguoc ve Sheet: may het han -> tat; gui thanh cong -> ghi moc thoi gian */
