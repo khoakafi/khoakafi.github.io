@@ -154,6 +154,12 @@ async function dangKyPush(){
 /* Lay "ma thiet bi" de dan vao GitHub Secret PUSH_SUBS */
 /* ---- Khach dang ky nhan tin hieu: nhap ma moi -> gui thang len Google Sheet ---- */
 var SHEET_API = 'https://script.google.com/macros/s/AKfycbyFFvGLSBfkdNNtQCvQBhgYSnJuxfIupJ52qi8oGDaPjXAK7h86ounrDsZcYDgiu4QX/exec';
+window.knDaDangKy = function(){
+  try { return !!localStorage.getItem('kn_push_dangky'); } catch(e){ return false; }
+};
+window.knHuyDangKyCucBo = function(){
+  try { localStorage.removeItem('kn_push_dangky'); } catch(e){}
+};
 window.knDangKyNhanTinHieu = async function(){
   try {
     if (!('Notification' in window)) {
@@ -183,6 +189,7 @@ window.knDangKyNhanTinHieu = async function(){
     }).then(function(x){ return x.json(); });
 
     if (r && r.ok) {
+      try { localStorage.setItem('kn_push_dangky', String(Date.now())); } catch(e){}
       ntfShow('Khoa Nguyen Signal', 'Đăng ký thành công. Có tín hiệu mới sẽ báo về máy này, kể cả khi app đóng.', 'kn-welcome');
       alert('Đăng ký thành công.' + NL + NL + 'Từ giờ có tín hiệu là máy bạn sẽ nhận được thông báo, kể cả lúc không mở app.');
     } else {

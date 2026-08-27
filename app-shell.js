@@ -322,10 +322,10 @@
          - da cap quyen    -> bam de GUI THU mot thong bao, tu kiem tra duoc
                               ngay tren may khong can cam vao Mac. */
     function bellState(){
-      var granted = ('Notification' in window) && Notification.permission === 'granted';
-      bell.classList.toggle('on', granted);
-      bell.setAttribute('aria-label', granted ? 'Gửi thử thông báo' : 'Bật thông báo');
-      bell.title = granted ? 'Bấm để gửi thử một thông báo' : 'Bật thông báo';
+      var daDK = (typeof window.knDaDangKy === 'function') && window.knDaDangKy();
+      bell.classList.toggle('on', daDK);
+      bell.setAttribute('aria-label', daDK ? 'Gửi thử thông báo' : 'Đăng ký nhận tín hiệu');
+      bell.title = daDK ? 'Bấm để gửi thử một thông báo' : 'Đăng ký nhận tín hiệu';
     }
     /* Bam ngan  -> gui thu mot thong bao.
        Giu lau 700ms -> lay "ma thiet bi" de dang ky nhan push khi app dong. */
@@ -343,10 +343,14 @@
       if (daGiu){ daGiu = false; return; }
       /* Giu Alt/Option + bam = lay ma thiet bi (danh cho viec chan doan) */
       if (e.altKey && typeof window.knLayMaThietBi === 'function'){ window.knLayMaThietBi(); return; }
-      /* Da bat thong bao roi -> gui thu. Chua bat -> mo luong dang ky co ma moi. */
+      /* Chua dang ky voi may chu -> mo luong nhap ma moi.
+         Da dang ky roi -> bam chuong la gui thu mot thong bao. */
+      var daDK = (typeof window.knDaDangKy === 'function') && window.knDaDangKy();
+      if (!daDK && typeof window.knDangKyNhanTinHieu === 'function'){
+        window.knDangKyNhanTinHieu(); setTimeout(bellState, 1500); return;
+      }
       if (('Notification' in window) && Notification.permission === 'granted'
           && typeof window.knTestNotify === 'function') { window.knTestNotify(); return; }
-      if (typeof window.knDangKyNhanTinHieu === 'function'){ window.knDangKyNhanTinHieu(); setTimeout(bellState, 1500); return; }
       var b = document.getElementById('notifBtn');
       if (b) b.click();
       setTimeout(bellState, 800);
