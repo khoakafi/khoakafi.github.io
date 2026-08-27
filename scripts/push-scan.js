@@ -158,6 +158,17 @@ async function gui(tin) {
 
 /* ---------- chạy ---------- */
 (async () => {
+  /* Che do gui thu that: commit co [test-push] -> ban 1 thong bao roi thoat.
+     Dung de kiem tra duong day sau khi cam thiet bi, khong dung luc chay lich. */
+  if (process.env.TEST_PUSH === '1') {
+    const gio = new Date(Date.now() + 7 * 3600 * 1000).toISOString().slice(11, 19);
+    await gui([{ key: 'kn-test-' + Date.now(),
+      tieuDe: 'Khoa Nguyen Signal — thử từ máy chủ',
+      than: 'Thông báo đẩy từ GitHub lúc ' + gio + ' giờ VN. Nếu bạn thấy dòng này lúc app đang đóng thì hệ thống đã chạy.',
+      ngan: 'thử từ máy chủ' }]);
+    ghiNhatKy({ ok: true, cheDo: 'TEST_PUSH', soThietBi: (JSON.parse(process.env.PUSH_SUBS || '[]')).length });
+    return;
+  }
   if (!inSession()) { console.log('Ngoài giờ phiên — bỏ qua.'); return; }
   const codes = SUM.rows.filter(r => r.watch && !BO_CUNG.has(r.t)).map(r => r.t);
   if (!codes.length) { console.log('Watchlist rỗng.'); return; }

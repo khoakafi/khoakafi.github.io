@@ -61,7 +61,8 @@ jobs:
           VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
           PUSH_SUBS: ${{ secrets.PUSH_SUBS }}
           ALERT_KINDS: ${{ vars.ALERT_KINDS || 'signal,near,move' }}
-          DRY_RUN: ${{ (github.event_name == 'push' || inputs.dry_run == true) && '1' || '0' }}
+          TEST_PUSH: ${{ contains(github.event.head_commit.message, '[test-push]') && '1' || '0' }}
+          DRY_RUN: ${{ (github.event_name == 'push' && !contains(github.event.head_commit.message, '[test-push]') || inputs.dry_run == true) && '1' || '0' }}
           FORCE_RUN: ${{ (github.event_name == 'push' || inputs.force == true) && '1' || '0' }}
         run: node scripts/push-scan.js
 
