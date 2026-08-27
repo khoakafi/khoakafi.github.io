@@ -341,9 +341,12 @@
     bell.addEventListener('touchmove', function(){ clearTimeout(hold); daGiu = true; }, {passive:true});
     bell.addEventListener('click', function(e){
       if (daGiu){ daGiu = false; return; }
+      /* Giu Alt/Option + bam = lay ma thiet bi (danh cho viec chan doan) */
       if (e.altKey && typeof window.knLayMaThietBi === 'function'){ window.knLayMaThietBi(); return; }
-      if (typeof window.knTestNotify === 'function' && ('Notification' in window)
-          && Notification.permission === 'granted') { window.knTestNotify(); return; }
+      /* Da bat thong bao roi -> gui thu. Chua bat -> mo luong dang ky co ma moi. */
+      if (('Notification' in window) && Notification.permission === 'granted'
+          && typeof window.knTestNotify === 'function') { window.knTestNotify(); return; }
+      if (typeof window.knDangKyNhanTinHieu === 'function'){ window.knDangKyNhanTinHieu(); setTimeout(bellState, 1500); return; }
       var b = document.getElementById('notifBtn');
       if (b) b.click();
       setTimeout(bellState, 800);

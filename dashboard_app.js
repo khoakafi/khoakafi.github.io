@@ -152,6 +152,45 @@ async function dangKyPush(){
   return sub;
 }
 /* Lay "ma thiet bi" de dan vao GitHub Secret PUSH_SUBS */
+/* ---- Khach dang ky nhan tin hieu: nhap ma moi -> gui thang len Google Sheet ---- */
+var SHEET_API = 'https://script.google.com/macros/s/AKfycbyFFvGLSBfkdNNtQCvQBhgYSnJuxfIupJ52qi8oGDaPjXAK7h86ounrDsZcYDgiu4QX/exec';
+window.knDangKyNhanTinHieu = async function(){
+  try {
+    if (!('Notification' in window)) {
+      alert(laIOS() && !daCaiHomeScreen()
+        ? ('Trên iPhone cần thêm app vào Màn hình chính trước.' + NL + NL +
+           'Safari → nút Chia sẻ → "Thêm vào MH chính" → mở app từ biểu tượng đó rồi bấm lại.')
+        : 'Trình duyệt này không hỗ trợ thông báo.');
+      return;
+    }
+    var ma = prompt('Nhập mã mời để nhận tín hiệu qua thông báo:');
+    if (ma === null) return;
+    ma = String(ma).trim();
+    if (!ma) { alert('Bạn chưa nhập mã.'); return; }
+
+    if (Notification.permission !== 'granted') {
+      var p = await Notification.requestPermission();
+      if (p !== 'granted') { alert('Cần cho phép thông báo thì mới nhận được tín hiệu.'); return; }
+    }
+    var sub = await dangKyPush();
+    if (!sub) { alert('Máy này không hỗ trợ nhận thông báo đẩy.'); return; }
+
+    var may = (laIOS() ? 'iPhone/iPad' : (/Android/i.test(navigator.userAgent) ? 'Android' : 'Máy tính'));
+    var r = await fetch(SHEET_API, {
+      method: 'POST', redirect: 'follow',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ action: 'subscribe', code: ma, may: may, sub: JSON.parse(JSON.stringify(sub)) })
+    }).then(function(x){ return x.json(); });
+
+    if (r && r.ok) {
+      ntfShow('Khoa Nguyen Signal', 'Đăng ký thành công. Có tín hiệu mới sẽ báo về máy này, kể cả khi app đóng.', 'kn-welcome');
+      alert('Đăng ký thành công.' + NL + NL + 'Từ giờ có tín hiệu là máy bạn sẽ nhận được thông báo, kể cả lúc không mở app.');
+    } else {
+      alert('Không đăng ký được: ' + ((r && r.loi) || 'lỗi không rõ'));
+    }
+  } catch (e) { alert('Không đăng ký được: ' + e.message); }
+};
+
 window.knLayMaThietBi = async function(){
   try {
     if (!('Notification' in window)) {

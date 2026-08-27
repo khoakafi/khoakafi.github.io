@@ -129,9 +129,39 @@ function quet(gia, st) {
 }
 
 /* ---------- gửi ---------- */
+/* Danh sach thiet bi lay tu Google Sheet (Apps Script), du phong PUSH_SUBS */
+async function layDanhSach() {
+  const api = process.env.SHEET_API, tok = process.env.SHEET_TOKEN;
+  if (api && tok) {
+    try {
+      const r = await fetch(api + '?token=' + encodeURIComponent(tok),
+        { redirect: 'follow', signal: AbortSignal.timeout(25000) });
+      const j = await r.json();
+      if (j && j.ok && Array.isArray(j.subs)) {
+        console.log('Sheet trả về', j.subs.length, 'thiết bị');
+        return j.subs;
+      }
+      console.error('Sheet trả lời không hợp lệ:', JSON.stringify(j).slice(0, 200));
+    } catch (e) { console.error('Không gọi được Sheet:', e.message); }
+  }
+  try { return JSON.parse(process.env.PUSH_SUBS || '[]'); } catch (e) { return []; }
+}
+
+/* Bao nguoc ve Sheet: may het han -> tat; gui thanh cong -> ghi moc thoi gian */
+async function baoVeSheet(payload) {
+  const api = process.env.SHEET_API, tok = process.env.SHEET_TOKEN;
+  if (!api || !tok) return;
+  try {
+    await fetch(api, { method: 'POST', redirect: 'follow',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify(Object.assign({ token: tok }, payload)),
+      signal: AbortSignal.timeout(20000) });
+  } catch (e) { console.error('Không báo được về Sheet:', e.message); }
+}
+
 async function gui(tin) {
-  const subs = JSON.parse(process.env.PUSH_SUBS || '[]');
-  if (!subs.length) { console.log('Chưa có thiết bị nào đăng ký (PUSH_SUBS rỗng).'); return; }
+  const subs = await layDanhSach();
+  if (!subs.length) { console.log('Chưa có thiết bị nào đăng ký.'); return; }
   webpush.setVapidDetails(
     process.env.VAPID_SUBJECT || 'mailto:khoanguyengstt@gmail.com',
     process.env.VAPID_PUBLIC, process.env.VAPID_PRIVATE);
@@ -145,15 +175,22 @@ async function gui(tin) {
   }
   const payload = JSON.stringify({ title: tieuDe, body: than, tag, url: '/' });
 
+  const daGui = [];
   for (const s of subs) {
     try {
       await webpush.sendNotification(s, payload, { TTL: 900, urgency: 'high' });
-      console.log('đã đẩy tới', String(s.endpoint).slice(0, 60) + '…');
+      daGui.push(s.endpoint);
+      console.log('đã đẩy tới', String(s.endpoint).slice(0, 55) + '…');
     } catch (e) {
       console.error('đẩy lỗi', e.statusCode || '', e.message);
-      if (e.statusCode === 404 || e.statusCode === 410) console.error('  -> thiết bị này đã hết hạn, cần đăng ký lại');
+      if (e.statusCode === 404 || e.statusCode === 410) {
+        console.error('  -> thiết bị hết hạn, tự tắt trong Sheet');
+        await baoVeSheet({ action: 'dead', endpoint: s.endpoint });
+      }
     }
   }
+  if (daGui.length) await baoVeSheet({ action: 'sent', endpoints: daGui });
+  return daGui.length;
 }
 
 /* ---------- chạy ---------- */
@@ -167,6 +204,28 @@ async function gui(tin) {
       than: 'Thông báo đẩy từ GitHub lúc ' + gio + ' giờ VN. Nếu bạn thấy dòng này lúc app đang đóng thì hệ thống đã chạy.',
       ngan: 'thử từ máy chủ' }]);
     ghiNhatKy({ ok: true, cheDo: 'TEST_PUSH', soThietBi: (JSON.parse(process.env.PUSH_SUBS || '[]')).length });
+    return;
+  }
+  /* Tong ket cuoi phien — mot tin duy nhat luc ~14h50 */
+  if (process.env.SUMMARY === '1') {
+    const st0 = docState();
+    const cb = Object.keys(st0.daBao || {});
+    const sig = cb.filter(k => k.indexOf('SIG') === 0).map(k => k.slice(3));
+    const nong = cb.filter(k => k.indexOf('W4') === 0).map(k => k.slice(2));
+    const sat = cb.filter(k => k.indexOf('NEAR') === 0).map(k => k.slice(4));
+    var than;
+    if (!cb.length) than = 'Hôm nay không có mã nào đạt điều kiện. Hệ thống đứng ngoài.';
+    else {
+      const ph = [];
+      if (sig.length) ph.push(sig.length + ' tín hiệu mua: ' + sig.join(', '));
+      if (sat.length) ph.push(sat.length + ' mã sát điểm mua: ' + sat.join(', '));
+      if (nong.length) ph.push(nong.length + ' mã tăng trên 4%: ' + nong.join(', '));
+      than = ph.join('. ') + '.';
+    }
+    await gui([{ key: 'TK' + phienKey(), tieuDe: 'Tổng kết phiên ' +
+      nowVN().toISOString().slice(8,10) + '/' + nowVN().toISOString().slice(5,7),
+      than: than, ngan: 'tổng kết phiên' }]);
+    ghiNhatKy({ ok: true, cheDo: 'SUMMARY', soCanhBao: cb.length });
     return;
   }
   if (!inSession()) { console.log('Ngoài giờ phiên — bỏ qua.'); return; }
@@ -186,7 +245,7 @@ async function gui(tin) {
 
   const st = docState();
   const tin = quet(gia, st);
-  const soSub = (() => { try { return JSON.parse(process.env.PUSH_SUBS || '[]').length; } catch(e){ return -1; } })();
+  const soSub = (await layDanhSach()).length;
   ghiNhatKy({ ok: true, soMaQuet: codes.length, soMaLayDuoc: soMa, mauGia: mau,
               soCanhBao: tin.length, canhBao: tin.map(x => x.ngan), soThietBi: soSub, dry: DRY });
 

@@ -6,6 +6,8 @@ on:
     #                            chiều 13:00-14:50 -> UTC 6:00-7:50
     - cron: '*/5 2-4 * * 1-5'
     - cron: '*/5 6-7 * * 1-5'
+    # Tổng kết cuối phiên: 14h50 giờ VN = 07:50 UTC
+    - cron: '50 7 * * 1-5'
   # Đẩy commit chạm vào bộ quét -> chạy thử ngay (luôn ở chế độ thử, không gửi thật)
   push:
     paths:
@@ -60,6 +62,9 @@ jobs:
           VAPID_PRIVATE: ${{ secrets.VAPID_PRIVATE }}
           VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
           PUSH_SUBS: ${{ secrets.PUSH_SUBS }}
+          SHEET_API: ${{ secrets.SHEET_API }}
+          SHEET_TOKEN: ${{ secrets.SHEET_TOKEN }}
+          SUMMARY: ${{ github.event.schedule == '50 7 * * 1-5' && '1' || '0' }}
           ALERT_KINDS: ${{ vars.ALERT_KINDS || 'signal,near,move' }}
           TEST_PUSH: ${{ contains(github.event.head_commit.message, '[test-push]') && '1' || '0' }}
           DRY_RUN: ${{ (github.event_name == 'push' && !contains(github.event.head_commit.message, '[test-push]') || inputs.dry_run == true) && '1' || '0' }}
