@@ -462,7 +462,9 @@ const lbInSession = () => { const d=new Date(), w=d.getDay(), m=d.getHours()*60+
 
 async function lbFetchAll(onProg){
   const now = Math.floor(Date.now()/1000);
-  const from = now - 86400*500, to = now + 86400;
+  /* Diem so chi nhin lai toi da 200 phien -> 360 ngay lich (~245 phien) la du xa,
+     van con bien an toan cho nghi le. Truoc lay 500 ngay, nang hon ~30% khong can thiet. */
+  const from = now - 86400*360, to = now + 86400;
   const out = {}; let idx = 0, done = 0;
   await Promise.all(Array.from({length:8}, async () => {
     while (idx < LB_SYMS.length){
@@ -538,10 +540,13 @@ inits.leader = function(){
     </div>`;
   }
   if (!lbRaw && !lbLoading) lbLoad(); else lbRender();
+  /* Tai lai 133 ma ton ~2,3MB. Diem so tinh tren nen 20/50/100/200 phien nen 3 phut
+     gan nhu khong doi gi -> gian ra 10 phut, va chi lam khi khach dang thuc su nhin tab nay. */
   if (!lbTimer) lbTimer = setInterval(() => {
     const v = document.getElementById('view-leader');
+    if (document.visibilityState !== 'visible') return;
     if (v && v.style.display !== 'none' && lbInSession() && !lbLoading) lbLoad();
-  }, 180000);
+  }, 600000);
 };
 
 // ===== Tim kiem tren navbar =====
@@ -832,6 +837,18 @@ async function refreshOpenDeals(){
   } catch(e){} }));
   renderRecent();
 }
+/* Sut giam sau nhat cua VN-Index, tinh thang tu duong cong thay vi viet cung so —
+   truoc day ghi chet -40.3% nen cang chay lau cang sai. curve = [ngay, %he, %vni]. */
+function ddVNI(curve){
+  if (!curve || !curve.length) return '—';
+  let dinh = -Infinity, sau = 0;
+  for (const x of curve){
+    const v = 1 + (x[2] || 0) / 100;
+    if (v > dinh) dinh = v;
+    if (dinh > 0){ const d = v / dinh - 1; if (d < sau) sau = d; }
+  }
+  return '−' + Math.abs(sau * 100).toFixed(1) + '%';
+}
 inits.market = async function(){
   if (mktDone) return; mktDone = true;
   const el = $('#view-market');
@@ -866,8 +883,8 @@ inits.market = async function(){
       <div class="perf-row"><span class="l">Win rate</span><span class="v">${st.winrate}%</span></div>
       <div class="perf-row"><span class="l">Tổng số deal</span><span class="v">${st.ndeal}</span></div></div>
     <div class="card" style="margin:0"><h2>Rủi ro</h2>
-      <div class="perf-row"><span class="l">Max Drawdown hệ</span><span class="v down">${st.maxdd}%</span></div>
-      <div class="perf-row"><span class="l">Max DD VN-Index</span><span class="v mut">−40.3%</span></div>
+      <div class="perf-row"><span class="l">Max DD hệ thống</span><span class="v down">${st.maxdd}%</span></div>
+      <div class="perf-row"><span class="l">Max DD VN-Index</span><span class="v mut">${ddVNI(tpn.curve)}</span></div>
       <div class="perf-row"><span class="l">Phí giao dịch</span><span class="v mut">0,15% mua · 0,25% bán</span></div></div>
   </div>
   <div style="height:16px"></div>
@@ -2581,7 +2598,7 @@ inits.watch = function(){
   const rowHtml = r=>{
     const qlab=r._q?('Q'+r._q[1]+'/'+r._q[0]):'';
     return `<tr class="row" data-t="${r.t}" onclick="openDetail('${r.t}')">
-      <td style="text-align:left"><b>${r.t}</b>${r.wstar?' <span style="color:#B45309" title="Nền siết chặt">★</span>':''}</td>
+      <td style="text-align:left"><b>${r.t}</b>${r.wstar?' <span style="color:#B45309" title="Nền thắt chặt">★</span>':''}</td>
       <td>${fmt(r.p,2)}</td>
       <td id="lv_${r.t}" class="${cls(r.chg)}">${pct(r.chg)}</td>
       <td>${fmt(r._kl,0)}</td>
@@ -2596,13 +2613,13 @@ inits.watch = function(){
   const tableHtml = (list, sortable)=>`<div style="overflow:auto"><table>${headRow(sortable)}${list.map(rowHtml).join('')}</table></div>`;
   el.innerHTML = `<div class="card">
     <h2 style="margin-bottom:3px">Watchlist ${lab}</h2>
-    <div class="mini" style="margin-bottom:10px">Danh sách canh mua phiên tới — đã lọc cơ bản (FA đạt) · ${strong.length} mã · cập nhật ${(SUM.updated||'')}. Mã có <span style="color:#B45309">★</span> là nền siết chặt — bấm tiêu đề cột để sắp xếp.</div>
+    <div class="mini" style="margin-bottom:10px">Mã có <span style="color:#B45309">★</span> là nền thắt chặt.</div>
     ${strong.length?tableHtml(strong,true):'<div class="mini" style="padding:8px 0">Chưa có mã đạt chuẩn cơ bản — cập nhật cuối phiên để quét lại.</div>'}
     <div class="mini" style="margin-top:9px;color:#7A828E">+/- LN, DT/TOI quý = tăng trưởng quý gần nhất so với cùng kỳ (cùng số với mục Chỉ số cơ bản trong Chi tiết mã; ngân hàng dùng TOI thay doanh thu). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div>
   </div>
   ${weak.length?`<div class="card" style="border-top:3px solid #F0B429">
     <h2 style="margin-bottom:3px;color:#B45309">Chưa đạt về cơ bản (FA) <span class="hint" style="color:#B45309">· ${weak.length} mã · để riêng, không vào danh sách mua</span></h2>
-    <div class="mini" style="margin-bottom:10px">Đã đạt nền kỹ thuật nhưng tăng trưởng lợi nhuận quý gần nhất rơi vùng 0–25% (chưa tăng tốc) — theo bộ lọc FA thì tách riêng để theo dõi, chưa phải mã mua.</div>
+    <div class="mini" style="margin-bottom:10px">Đã đạt nền kỹ thuật nhưng FA chưa đạt yêu cầu — để riêng theo dõi, chưa phải mã mua.</div>
     ${tableHtml(weak,false)}
   </div>`:''}`;
 };
@@ -2690,6 +2707,10 @@ window.__loiLienTiep = 0;
   const chuKyChuan = trongPhien ? 15000 : 120000;
   const chuKy = Math.max(chuKyChuan, window.__nhipPhat || 0);
   setTimeout(async () => {
+    /* App chay nen (khoa may, chuyen app khac) -> KHONG hoi gia.
+       Bang gia toan thi truong nang ~590KB/lan, hoi khi khong ai xem la dot 4G cua khach.
+       Quay lai app thi handler visibilitychange ben duoi cap nhat NGAY, khong phai cho nhip. */
+    if (document.visibilityState !== 'visible') { nhipGia(); return; }
     try {
       const oK = await liveQuote();
       if (oK) {
@@ -3000,9 +3021,15 @@ document.addEventListener('visibilitychange', () => {
         try { await luuMoc(); } catch(e){}
         renderHero(); renderPeriods(); renderRank(); pick(BIG[0]);
       } catch(e) {
-        meta.textContent = 'Không tải được dữ liệu quỹ: ' + e.message;
+        /* Mo khoa de lan sau vao tab lai thu lai — truoc day hong 1 lan la hong luon,
+           phai tat han app moi vao lai duoc. */
+        loaded = false;
+        meta.innerHTML = 'Không tải được dữ liệu quỹ · '
+          + '<a href="javascript:void 0" onclick="knTaiLaiQuy()" style="color:var(--fg);font-weight:700;text-decoration:underline">Thử lại</a>';
       }
     };
+    /* Ca file nam trong IIFE nen onclick ngoai HTML khong thay duoc inits -> phai bac cau qua window */
+    window.knTaiLaiQuy = function(){ inits.fund(); };
 
     function prevSnap(){
       if (!HIST.length || !CURKEY) return null;
