@@ -28,7 +28,36 @@ function readWindowJson(file, varName) {
 const SUM = readWindowJson('dashboard_data.js');
 const SIGS = readWindowJson('signals_data.js');
 const TRIG = SIGS.trig || {};
-const BO_CUNG = new Set(['DCL', 'VC3', 'SSB', 'KHG', 'VPI']);
+
+/* Danh sach bo cung doc THANG tu dashboard_app.js de khong lech voi web.
+   Truoc day chep tay vao day -> ben kia sua ma ben nay khong biet. */
+function docBoCung() {
+  try {
+    const s = fs.readFileSync(path.join(ROOT, 'dashboard_app.js'), 'utf8');
+    const m = s.match(/BO_CUNG\s*=\s*new Set\(\[([^\]]*)\]\)/);
+    if (m) {
+      const ds = m[1].split(',').map(x => x.replace(/['"\s]/g, '')).filter(Boolean);
+      if (ds.length) { console.log('Bỏ cứng (đọc từ web):', ds.join(',')); return new Set(ds); }
+    }
+  } catch (e) {}
+  return new Set(['DCL', 'VC3', 'SSB', 'KHG', 'VPI']);
+}
+const BO_CUNG = docBoCung();
+
+/* ĐIỀU KIỆN BẮT BUỘC trước khi báo bất cứ bậc nào (theo bản chốt 28/08):
+     st tồn tại  VÀ  st.c[0] không chứa chữ "YẾU"
+   · st = null  -> nền hoặc thanh khoản không đạt -> im
+   · "...HẠNG YẾU" -> cơ bản không đạt -> im
+   Chỉ lọc theo wgrade là CHƯA ĐỦ: wgrade nói về cơ bản, st nói về nền.
+   Ngày 28/08 có 4 mã (HDG, SHB, HSG, MBS) wgrade=strong nhưng st=null —
+   lọc kiểu cũ là bắn tín hiệu mua giả cho khách. */
+function duDieuKien(ma) {
+  const t = (SIGS.t || {})[ma];
+  const st = t && t.st;
+  if (!st) return false;
+  const nhan = String((st.c || [])[0] || '');
+  return !/Y[EẾ]U/i.test(nhan);
+}
 
 /* ---------- giờ phiên Việt Nam (UTC+7) ---------- */
 function nowVN() { return new Date(Date.now() + 7 * 3600 * 1000); }
@@ -95,8 +124,9 @@ function quet(gia, st) {
   };
 
   for (const r of SUM.rows) {
-    /* Khop DUNG app: ma hang yeu (FA chua dat) khong bao bat ky bac nao */
-    if (!r.watch || r.wgrade === 'weak' || BO_CUNG.has(r.t)) continue;
+    /* Cong kiem duy nhat cho ca 3 bac (SIG / NEAR / W2-W4) */
+    if (!r.watch || BO_CUNG.has(r.t)) continue;
+    if (!duDieuKien(r.t)) continue;
     const live = gia[r.t];
     if (!live) continue;
     const g = TRIG[r.t];
@@ -148,10 +178,20 @@ async function layDanhSach() {
      trong luc chuyen sang dang ky qua Sheet. Trung endpoint thi bo. */
   try {
     const cu = JSON.parse(process.env.PUSH_SUBS || '[]');
-    const da = new Set(ra.map(x => x.endpoint));
-    cu.forEach(x => { if (x && x.endpoint && !da.has(x.endpoint)) { da.add(x.endpoint); ra.push(x); } });
+    cu.forEach(x => { if (x && x.endpoint) ra.push(x); });
   } catch (e) {}
-  return ra;
+
+  /* Bo trung theo endpoint tren TOAN BO danh sach — ke ca trung ngay trong Sheet.
+     Hai khach bam dang ky cung luc co the sinh 2 dong cung mot may; khong loc thi
+     may do nhan 2 thong bao giong het nhau. */
+  const thay = new Set(), sach = [];
+  for (const s of ra) {
+    if (!s || !s.endpoint || thay.has(s.endpoint)) continue;
+    thay.add(s.endpoint); sach.push(s);
+  }
+  if (sach.length !== ra.length) console.log('Bỏ', ra.length - sach.length, 'thiết bị trùng endpoint');
+  console.log('Tổng cộng', sach.length, 'thiết bị sẽ nhận');
+  return sach;
 }
 
 /* Bao nguoc ve Sheet: may het han -> tat; gui thanh cong -> ghi moc thoi gian */
@@ -246,7 +286,8 @@ async function gui(tin) {
     return;
   }
   if (!inSession()) { console.log('Ngoài giờ phiên — bỏ qua.'); return; }
-  const codes = SUM.rows.filter(r => r.watch && !BO_CUNG.has(r.t)).map(r => r.t);
+  /* Chi hoi gia nhung ma thuc su co the bao -> nhe hon, va khop voi luat quet */
+  const codes = SUM.rows.filter(r => r.watch && !BO_CUNG.has(r.t) && duDieuKien(r.t)).map(r => r.t);
   if (!codes.length) { console.log('Watchlist rỗng.'); return; }
   console.log('Quét', codes.length, 'mã:', codes.join(','));
 
