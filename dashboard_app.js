@@ -1434,7 +1434,7 @@ function syncLiveBar(){
     if (proVol && window.__smCalc) { try { const d2 = window.__smCalc({cl: cl, lv: lv}); const mm = d2.volD.length - 1;
       proVol.update(d2.volD[mm]); if (proSm) proSm.update(d2.smD[mm]); } catch(e){} }
     addProBadges();
-    if (window.__proLegend) window.__proLegend(null);
+    if (window.__proLegend && !window.__dHov) window.__proLegend(null);
   } catch(e){}
 }
 // ===== TU KIEM: bat cac cap so hien thi khong the cung dung ve mat so hoc =====
