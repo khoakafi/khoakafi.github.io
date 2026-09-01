@@ -3351,7 +3351,10 @@ function pinNameBar(){
     + '#dTpn > div{justify-content:flex-start !important}'
     + '#dTpn .tag{background:#F5FBF7 !important;color:#18A34B !important;border:1px solid #CDE9D8}'
     + '#dTpn .mini{max-width:100% !important}'
-    + '#finFull{margin-top:0 !important;border:0 !important;padding:0 !important}';
+    + '#finFull{margin-top:0 !important;border:0 !important;padding:0 !important}'
+    + '#tab-fin{overflow-x:hidden}'
+    + '#tab-fin #finCharts{grid-template-columns:1fr !important}'
+    + '#tab-fin table{font-size:11px}';
     document.head.appendChild(st);
   }catch(e){}
   function __fbxFit(){
@@ -3370,7 +3373,20 @@ function pinNameBar(){
       if (tp && ov && tp.parentElement !== ov) ov.insertBefore(tp, ov.firstChild);
     }catch(e){}
   }
-  window.__finTab = function(){ __fbxMove(); try{ window.dispatchEvent(new Event('resize')); }catch(e){} };
+  window.__finTab = function(){
+    __fbxMove();
+    try{ window.dispatchEvent(new Event('resize')); }catch(e){}
+    // Chart.js ve khi tab con an -> canvas 0px; mo tab thi ve lai
+    setTimeout(function(){
+      try{
+        var bx = document.getElementById('tab-fin'); if (!bx) return;
+        var cs = bx.querySelectorAll('canvas');
+        for (var i = 0; i < cs.length; i++){
+          try{ var ch = window.Chart && window.Chart.getChart ? window.Chart.getChart(cs[i]) : null; if (ch) ch.resize(); }catch(e2){}
+        }
+      }catch(e){}
+    }, 220);
+  };
   window.addEventListener('resize', __fbxFit);
   setTimeout(function(){ __fbxMove(); __fbxFit(); }, 600);
   setInterval(function(){ __fbxMove(); __fbxFit(); }, 1200);
