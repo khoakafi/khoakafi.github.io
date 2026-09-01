@@ -1601,9 +1601,9 @@ function loadProChart(){
       volD.push({ time: curOhlc.t[i], open: 0, high: v, low: 0, close: v,
         color: big ? '#FFFFFF' : '#E8EAEE', borderColor: '#6A7280', wickColor: '#6A7280' });
       smD.push({ time: curOhlc.t[i], open: 0, high: bsp, low: 0, close: bsp,
-        color: spike ? (buy ? '#18A34B' : '#F23645') : '#FFFFFF',
-        borderColor: spike ? (buy ? '#0E7A38' : '#B0232F') : (buy ? '#9FD3AF' : '#E3AEB2'),
-        wickColor: spike ? (buy ? '#0E7A38' : '#B0232F') : (buy ? '#9FD3AF' : '#E3AEB2') });
+        color: spike ? (buy ? '#16BF5B' : '#FF3B30') : '#FFFFFF',
+        borderColor: spike ? (buy ? '#0E8F44' : '#D2281E') : (buy ? '#9FDCB5' : '#FFB3AE'),
+        wickColor: spike ? (buy ? '#0E8F44' : '#D2281E') : (buy ? '#9FDCB5' : '#FFB3AE') });
     }
     return { volD: volD, smD: smD };
   };
@@ -1732,8 +1732,8 @@ function loadProChart(){
     const gtd = (vv != null && d.close) ? (d.close * vv) / 1e6 : null;
     const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
     const dsh = NAR ? dstr.slice(0,5) : dstr;
-    const head = NAR ? '' : ('<b>' + curT + '</b>' + SP);
-    if (leg) leg.innerHTML = head + (NAR ? '' : dsh + SP) + L.o + d.open + SP + L.h + d.high + SP + L.l + d.low + SP + L.c + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(NAR ? 1 : 2) + '%)' + SP + L.m + (maV == null ? '—' : maV);
+    const head = '';
+    if (leg) leg.innerHTML = head + (NAR ? '' : dsh + SP) + L.o + d.open + SP + L.h + d.high + SP + L.l + d.low + SP + L.c + '<span style="color:' + (chg < 0 ? '#F23645' : '#18A34B') + '">' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(NAR ? 1 : 2) + '%)</span>' + SP + L.m + (maV == null ? '—' : maV);
     const _isIx = ((XROW(curT)||{}).b === 'IX');
     const fV = x => x == null ? '—' : (NAR ? (x >= 1e6 ? (x/1e6).toFixed(2) + 'tr' : Math.round(x/1e3) + 'k') : Math.round(x).toLocaleString('en-US'));
     if (vleg && _isIx) vleg.innerHTML = dsh + SP + L.v + fV(vv) + (pct == null ? '' : SP + pct + '%');
@@ -1800,11 +1800,13 @@ inits.detail = function(t){
             <div id="dTabs" style="display:flex;border-bottom:1px solid var(--border);margin-bottom:10px">
               <button class="dtab active" data-t="ov">Tổng quan</button>
               <button class="dtab" data-t="sig">Tín hiệu</button>
+              <button class="dtab" data-t="fin">Tài chính</button>
               <button class="dtab" data-t="rec">CTCK KN</button>
               <button class="dtab" data-t="mth">Khớp lệnh</button>
             </div>
             <div id="tab-ov"><div id="dSide"></div></div>
             <div id="tab-sig" style="display:none"></div>
+            <div id="tab-fin" style="display:none"></div>
             <div id="tab-rec" style="display:none"></div>
             <div id="tab-mth" style="display:none"></div>
           </div>
@@ -1857,10 +1859,11 @@ inits.detail = function(t){
     $('#dRanges').addEventListener('click', e => { const b = e.target.closest('button.rng'); if (!b) return; $$('#dRanges .btn.rng').forEach(x=>x.classList.remove('active')); b.classList.add('active'); drawPrice(+b.dataset.y); });
     $('#dTabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
       $$('#dTabs button').forEach(x=>x.classList.toggle('active', x===b));
-      ['ov','sig','rec','mth'].forEach(k => { const d = document.getElementById('tab-'+k); if (d) d.style.display = (b.dataset.t===k?'':'none'); });
+      ['ov','sig','fin','rec','mth'].forEach(k => { const d = document.getElementById('tab-'+k); if (d) d.style.display = (b.dataset.t===k?'':'none'); });
       if (b.dataset.t==='sig') renderSigTab();
       if (b.dataset.t==='rec') loadRecs();
       if (b.dataset.t==='mth') loadMatch(); else window.__mthOpen = false;
+      if (b.dataset.t==='fin' && window.__finTab) window.__finTab();
     });
     $('#btnLog').onclick = function(){ useLog = !useLog; this.classList.toggle('active', useLog); const b = $('#dRanges .btn.rng.active'); drawPrice(b?+b.dataset.y:14); };
     $('#btnFull').onclick = () => { const el = $('#chartSigWrap'); if (document.fullscreenElement) document.exitFullscreen(); else { el.style.background='#fff'; el.requestFullscreen(); } };
@@ -3324,4 +3327,51 @@ function pinNameBar(){
   },250);
  }
  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run); else run();
+})();
+
+
+/* ===== __FBX: khung chi tiet ma tran man hinh + tab Tai chinh (31/08/2026) ===== */
+(function(){
+  try{
+    var st = document.createElement('style'); st.id = 'knFbx';
+    st.textContent =
+      '#view-detail{display:flex;flex-direction:column;overflow:hidden}'
+    + '#watchStrip{flex:0 0 auto}'
+    + '#dBody{flex:1 1 auto;min-height:0;display:flex;flex-direction:column}'
+    + '#view-detail .card{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;overflow:hidden}'
+    + '#dFlex{flex:1 1 auto;min-height:0;align-items:stretch !important}'
+    + '#dFlex > div:first-child{display:flex;flex-direction:column;min-height:0;min-width:0;flex:1 1 auto}'
+    + '#chartProWrap{flex:1 1 auto;min-height:0;display:flex;flex-direction:column}'
+    + '#proK{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;position:relative}'
+    + '#proPx{flex:1 1 auto;min-height:0;height:auto !important}'
+    + '#proVolPane{flex:0 0 27%;min-height:110px;height:auto !important}'
+    + '#proVolLegend{top:auto !important;bottom:27% !important}'
+    + '#dPanel{overflow-y:auto;align-self:stretch;max-height:none !important}'
+    + '#dTpn{margin-left:0 !important;margin-bottom:10px}'
+    + '#dTpn > div{justify-content:flex-start !important}'
+    + '#dTpn .tag{background:#F5FBF7 !important;color:#18A34B !important;border:1px solid #CDE9D8}'
+    + '#dTpn .mini{max-width:100% !important}'
+    + '#finFull{margin-top:0 !important;border:0 !important;padding:0 !important}';
+    document.head.appendChild(st);
+  }catch(e){}
+  function __fbxFit(){
+    try{
+      var vd = document.getElementById('view-detail');
+      if (!vd || vd.offsetParent === null) return;
+      var top = vd.getBoundingClientRect().top + window.scrollY;
+      vd.style.height = Math.max(420, window.innerHeight - top - 30) + 'px';
+    }catch(e){}
+  }
+  function __fbxMove(){
+    try{
+      var ff = document.getElementById('finFull'), bx = document.getElementById('tab-fin');
+      if (ff && bx && ff.parentElement !== bx) { bx.appendChild(ff); ff.style.display = ''; }
+      var tp = document.getElementById('dTpn'), ov = document.getElementById('tab-ov');
+      if (tp && ov && tp.parentElement !== ov) ov.insertBefore(tp, ov.firstChild);
+    }catch(e){}
+  }
+  window.__finTab = function(){ __fbxMove(); try{ window.dispatchEvent(new Event('resize')); }catch(e){} };
+  window.addEventListener('resize', __fbxFit);
+  setTimeout(function(){ __fbxMove(); __fbxFit(); }, 600);
+  setInterval(function(){ __fbxMove(); __fbxFit(); }, 1200);
 })();
