@@ -3463,17 +3463,23 @@ function pinNameBar(){
     nav.querySelectorAll('button').forEach(function(x){ if(x.dataset.view==='news') x.style.display='none'; });
     const wrap=document.getElementById('view-market').parentElement;
     const d=document.createElement('div'); d.id='view-hh'; d.style.display='none';
-    d.innerHTML='<div class="card" style="padding:14px 16px">'
-      +'<div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px"><b style="font-size:16px">Hàng hoá &amp; chỉ số chính</b>'
-      +'<span class="mini" id="hhTime">đang tải…</span>'
-      +'<span class="mini" style="margin-left:auto">bấm một dòng để mở biểu đồ ở Chi tiết mã</span></div>'
-      +'<div id="hhGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">'
-      +'<div><div class="mini" style="font-weight:800;letter-spacing:.4px;margin-bottom:5px">HÀNG HOÁ</div><table class="hhtb" id="hhT1"></table></div>'
-      +'<div><div class="mini" style="font-weight:800;letter-spacing:.4px;margin-bottom:5px">CHỈ SỐ · TIỀN TỆ · LÃI SUẤT</div><table class="hhtb" id="hhT2"></table></div>'
-      +'</div>'
-      +'<div class="mini" style="margin-top:12px;line-height:1.6">Chấm xanh: giá trực tiếp · chấm vàng: nguồn phát chậm 10–15 phút.<br>Crack spread 3-2-1 ghép từ giá xăng, dầu diesel và dầu thô cùng phiên.</div>'
-      +'</div>';
-    wrap.appendChild(d);
+    d.innerHTML='<div style="display:flex;align-items:baseline;gap:10px;margin:2px 0 14px">'
+          +'<b style="font-size:17px">Hàng hoá &amp; chỉ số chính</b>'
+          +'<span class="mini" id="hhTime">đang tải…</span>'
+          +'<span class="mini" style="margin-left:auto">bấm một dòng để mở biểu đồ ở Chi tiết mã</span></div>'
+          +'<div id="hhGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start">'
+          +'<div class="card" style="padding:0;overflow:hidden">'
+            +'<div style="padding:11px 14px;border-bottom:1px solid var(--border);font-weight:800;font-size:12.5px;letter-spacing:.5px">HÀNG HOÁ</div>'
+            +'<table class="hhtb" id="hhT1"></table>'
+            +'<div class="mini" style="padding:10px 14px;border-top:1px solid var(--border);line-height:1.55">Crack spread 3-2-1 ghép từ giá xăng, dầu diesel và dầu thô cùng phiên.</div>'
+          +'</div>'
+          +'<div class="card" style="padding:0;overflow:hidden">'
+            +'<div style="padding:11px 14px;border-bottom:1px solid var(--border);font-weight:800;font-size:12.5px;letter-spacing:.5px">CHỈ SỐ · TIỀN TỆ · LÃI SUẤT</div>'
+            +'<table class="hhtb" id="hhT2"></table>'
+            +'<div class="mini" style="padding:10px 14px;border-top:1px solid var(--border);line-height:1.55">Chấm xanh: giá trực tiếp · chấm vàng: nguồn phát chậm 10–15 phút.</div>'
+          +'</div>'
+          +'</div>';
+        wrap.appendChild(d);
     const st=document.createElement('style');
     st.textContent='.hhtb{width:100%;border-collapse:collapse}'
       +'.hhtb th{font-size:10.5px;color:#7A828E;font-weight:700;text-transform:uppercase;letter-spacing:.3px;padding:6px 9px;border-bottom:1px solid var(--border);text-align:right;background:#FCFDFD;white-space:nowrap}'
