@@ -3444,10 +3444,21 @@ function pinNameBar(){
       const j=await r.json(); (j.data||[]).forEach(function(x){ Q[x.s]=x.d; });
       const lb=document.getElementById('hhTime'); if(lb) lb.textContent='giá lúc '+new Date().toLocaleTimeString('vi-VN').slice(0,5);
       render(); }catch(e){} }
+  /* dieu huong: 'hh' khong nam trong danh sach view goc nen tu lo phan hien/an */
+  function hienHH(){
+    document.querySelectorAll('[id^="view-"]').forEach(function(x){ x.style.display='none'; });
+    const e=document.getElementById('view-hh'); if(e) e.style.display='';
+    document.querySelectorAll('.nav-link').forEach(function(x){ x.classList.toggle('active', x.dataset.view==='hh'); });
+    const fd=document.getElementById('footDisc'); if(fd) fd.style.display='none';
+  }
+  (function(){ const _sv=window.showView; if(!_sv||window.__svHH) return; window.__svHH=1;
+    window.showView=function(vv){ if(vv==='hh'){ hienHH(); return; }
+      const e=document.getElementById('view-hh'); if(e) e.style.display='none';
+      return _sv.apply(this, arguments); };
+  })();
   function add(){ const nav=document.querySelector('nav'); if(!nav||document.getElementById('view-hh')) return;
-    try{ views.push('hh'); }catch(e){}
     const b=document.createElement('button'); b.className='nav-link'; b.dataset.view='hh'; b.textContent='Hàng hoá';
-    b.onclick=function(){ showView('hh'); render(); nhip(); };
+    b.onclick=function(){ hienHH(); render(); nhip(); };
     const first=nav.querySelector('button'); nav.insertBefore(b, first?first.nextSibling:null);
     nav.querySelectorAll('button').forEach(function(x){ if(x.dataset.view==='news') x.style.display='none'; });
     const wrap=document.getElementById('view-market').parentElement;
