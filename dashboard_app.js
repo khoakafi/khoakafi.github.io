@@ -3477,7 +3477,14 @@ function pinNameBar(){
     setInterval(function(){ const v=document.getElementById('view-hh'); if(v && v.style.display!=='none') nhip(); }, 60000);
   }
   /* trong Chi tiet ma: ma hang hoa thi khong co bang ben phai */
-  setInterval(function(){ try{ const p=document.getElementById('dPanel'); if(!p) return;
-    p.style.display = meta(typeof curT!=='undefined'?curT:null) ? 'none' : ''; }catch(e){} }, 1000);
+  setInterval(function(){ try{
+    const t=document.getElementById('dTitle'); if(!t) return;
+    const nm=(t.textContent||'').split('—')[0].trim();
+    let isHH=false; const H=window.HH;
+    if(H && H.meta){ for(const k in H.meta){ if(H.meta[k].n===nm){ isHH=true; break; } } }
+    const p=document.getElementById('dPanel'); if(p) p.style.display = isHH?'none':'';
+    const vp=document.getElementById('proVolPane'); if(vp) vp.style.display = isHH?'none':'';
+    const vl=document.getElementById('proVolLegend'); if(vl) vl.style.display = isHH?'none':'';
+  }catch(e){} }, 800);
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', add); else add();
 })();
