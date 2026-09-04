@@ -3434,7 +3434,9 @@ function pinNameBar(){
     const a=el.querySelector('#hhT1'), b=el.querySelector('#hhT2');
     if(a) a.innerHTML=h+rows(ORD_HH); if(b) b.innerHTML=h+rows(ORD_CS);
     el.querySelectorAll('.hhr').forEach(function(tr){ tr.onclick=function(){
-      try{ showView('detail'); window.openDetail(tr.dataset.k); }catch(e){} }; }); }
+      const k=tr.dataset.k;
+      try{ showView('detail'); }catch(e){}
+      setTimeout(function(){ try{ window.openDetail(k); }catch(e){} }, 400); }; }); }
   async function nhip(){ try{ const H=window.HH; if(!H) return;
       const tv=Object.keys(H.meta).map(k=>H.meta[k].tv).filter(Boolean);
       const r=await fetch('https://scanner.tradingview.com/global/scan',{method:'POST',headers:{'Content-Type':'text/plain'},
