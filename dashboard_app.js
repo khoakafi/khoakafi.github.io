@@ -54,7 +54,13 @@ function __fTxtB(x){ return window.__FIN_BANK ? String(x).replace(/Doanh thu/g,'
 
 async function jget(u){ const r = await fetch(u); if(!r.ok) throw new Error(r.status); return r.json(); }
 const api = {
-  ohlc: async (sym, days) => { const to = NOW()+86400; return jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sym}&resolution=D&from=${to-86400*days}&to=${to}`); },
+  ohlc: async (sym, days) => {
+    try { const H = window.HH; const b = H && H.bars ? H.bars[sym] : null;
+      if (b && b.length) return { s:'ok',
+        t: b.map(r=>r[0]), o: b.map(r=>r[1]!=null?r[1]:r[4]), h: b.map(r=>r[2]!=null?r[2]:r[4]),
+        l: b.map(r=>r[3]!=null?r[3]:r[4]), c: b.map(r=>r[4]), v: b.map(()=>0) };
+    } catch(e){}
+    const to = NOW()+86400; return jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sym}&resolution=D&from=${to-86400*days}&to=${to}`); },
   kqkd: async t => (await jget(`https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/${t}/financial-statement?section=INCOME_STATEMENT`))?.data?.quarters || [],
   ratios: async t => ((await jget(`https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/${t}/statistics-financial`))?.data||[]).filter(x=>x.ratioType==='RATIO_TTM'&&x.quarter>=1&&x.quarter<=4)
 };
@@ -1881,7 +1887,10 @@ async function loadDetail(t){
     if (_sb && _sb.style.display !== 'none') { setTimeout(function(){ try { renderSigTab(); } catch(e){} }, 400); }
   } catch(e){} const r = XROW(t) || {t}; const isX = !byT[t];
   $('#sugg').style.display='none'; $('#dQ').value='';
-  $('#dTitle').innerHTML = `${t} <span class="mini">— ${r.n||''} (${BRD(r.b)})</span> <span class="spin"></span>`;
+  const _hhm = (window.HH && window.HH.meta) ? window.HH.meta[t] : null;
+  $('#dTitle').innerHTML = _hhm
+    ? `${_hhm.n} <span class="mini">— ${_hhm.u}</span> <span class="spin"></span>`
+    : `${t} <span class="mini">— ${r.n||''} (${BRD(r.b)})</span> <span class="spin"></span>`;
   $('#dBody').style.display='';
   try {
     const [oh, qs, rts] = await Promise.all([api.ohlc(t, 5100), isX ? Promise.resolve([]) : api.kqkd(t).catch(()=>[]), isX ? Promise.resolve([]) : api.ratios(t).catch(()=>[])]);
@@ -3390,4 +3399,78 @@ function pinNameBar(){
   window.addEventListener('resize', __fbxFit);
   setTimeout(function(){ __fbxMove(); __fbxFit(); }, 600);
   setInterval(function(){ __fbxMove(); __fbxFit(); }, 1200);
+})();
+
+/* ===== __HH: tab Hang hoa (thay tab Bai viet) + chart hang hoa mo thang trong Chi tiet ma ===== */
+(function(){
+  function meta(t){ try{ return (window.HH && window.HH.meta && window.HH.meta[t]) || null; }catch(e){ return null; } }
+  const ORD_HH=['CL','BZ','CRACK','COAL','IRON','HRC','FRGT','RUBB','UREA'];
+  const ORD_CS=['VNI','DJI','NI225','GOLD','DXY','USDVND','US10Y','VN10Y','FED'];
+  const LIVE={VNI:1,DJI:1,NI225:1,DXY:1,USDVND:1,US10Y:1,VN10Y:1,FED:1};
+  let Q={};
+  const nf=(v,d)=>v==null?'—':(+v).toLocaleString('vi-VN',{minimumFractionDigits:d,maximumFractionDigits:d});
+  function dc(v){ v=Math.abs(v||0); return v>=10000?0:(v>=1000?2:(v>=1?2:4)); }
+  function perf(k){ const H=window.HH, b=(H&&H.bars)?H.bars[k]:null; if(!b||b.length<2) return {};
+    const c=b[b.length-1][4], at=n=>{const i=b.length-1-n; return i>=0?b[i][4]:null;};
+    const yr=new Date(b[b.length-1][0]*1000).getUTCFullYear(); let f=null;
+    for(const r of b){ if(new Date(r[0]*1000).getUTCFullYear()===yr){ f=r[4]; break; } }
+    const p=a=>a?((c/a-1)*100):null;
+    return { c:c, prev:at(1), d:p(at(1)), w:p(at(5)), m:p(at(21)), y:p(f) }; }
+  function cell(v,pct){ if(v==null) return '<td class="mini">—</td>';
+    const col=v>0?'#18A34B':(v<0?'#F23645':'#7A828E'), s=v>0?'+':(v<0?'−':'');
+    return '<td style="color:'+col+';font-weight:600">'+s+(pct?Math.abs(v).toFixed(2)+'%':nf(Math.abs(v),Math.abs(v)>=100?0:2))+'</td>'; }
+  function rows(list){ return list.map(function(k){ const m=meta(k); if(!m) return '';
+      const q=Q[m.tv]||null, P=perf(k);
+      const px=q?q[0]:P.c, ab=q?q[2]:((P.c!=null&&P.prev!=null)?P.c-P.prev:null), d1=q?q[1]:P.d;
+      return '<tr class="hhr" data-k="'+k+'" style="cursor:pointer">'
+        +'<td style="text-align:left"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:7px;background:'+(LIVE[k]?'#18A34B':'#D8B14A')+'"></span>'
+        +'<b>'+m.n+'</b><div class="mini">'+m.u+'</div></td>'
+        +'<td><b>'+nf(px, m.u==='VND'?0:dc(px))+'</b></td>'
+        +cell(ab,false)+cell(d1,true)+cell(P.w,true)+cell(P.m,true)+cell(P.y,true)+'</tr>'; }).join(''); }
+  function render(){ const el=document.getElementById('view-hh'); if(!el) return;
+    const h='<tr><th style="text-align:left">Tên</th><th>Giá</th><th>+/−</th><th>Ngày</th><th>Tuần</th><th>Tháng</th><th>YTD</th></tr>';
+    const a=el.querySelector('#hhT1'), b=el.querySelector('#hhT2');
+    if(a) a.innerHTML=h+rows(ORD_HH); if(b) b.innerHTML=h+rows(ORD_CS);
+    el.querySelectorAll('.hhr').forEach(function(tr){ tr.onclick=function(){
+      try{ showView('detail'); window.openDetail(tr.dataset.k); }catch(e){} }; }); }
+  async function nhip(){ try{ const H=window.HH; if(!H) return;
+      const tv=Object.keys(H.meta).map(k=>H.meta[k].tv).filter(Boolean);
+      const r=await fetch('https://scanner.tradingview.com/global/scan',{method:'POST',headers:{'Content-Type':'text/plain'},
+        body:JSON.stringify({symbols:{tickers:tv,query:{types:[]}},columns:['close','change','change_abs']})});
+      const j=await r.json(); (j.data||[]).forEach(function(x){ Q[x.s]=x.d; });
+      const lb=document.getElementById('hhTime'); if(lb) lb.textContent='giá lúc '+new Date().toLocaleTimeString('vi-VN').slice(0,5);
+      render(); }catch(e){} }
+  function add(){ const nav=document.querySelector('nav'); if(!nav||document.getElementById('view-hh')) return;
+    try{ views.push('hh'); }catch(e){}
+    const b=document.createElement('button'); b.className='nav-link'; b.dataset.view='hh'; b.textContent='Hàng hoá';
+    b.onclick=function(){ showView('hh'); render(); nhip(); };
+    const first=nav.querySelector('button'); nav.insertBefore(b, first?first.nextSibling:null);
+    nav.querySelectorAll('button').forEach(function(x){ if(x.dataset.view==='news') x.style.display='none'; });
+    const wrap=document.getElementById('view-market').parentElement;
+    const d=document.createElement('div'); d.id='view-hh'; d.style.display='none';
+    d.innerHTML='<div class="card" style="padding:14px 16px">'
+      +'<div style="display:flex;align-items:baseline;gap:10px;margin-bottom:12px"><b style="font-size:16px">Hàng hoá &amp; chỉ số chính</b>'
+      +'<span class="mini" id="hhTime">đang tải…</span>'
+      +'<span class="mini" style="margin-left:auto">bấm một dòng để mở biểu đồ ở Chi tiết mã</span></div>'
+      +'<div id="hhGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">'
+      +'<div><div class="mini" style="font-weight:800;letter-spacing:.4px;margin-bottom:5px">HÀNG HOÁ</div><table class="hhtb" id="hhT1"></table></div>'
+      +'<div><div class="mini" style="font-weight:800;letter-spacing:.4px;margin-bottom:5px">CHỈ SỐ · TIỀN TỆ · LÃI SUẤT</div><table class="hhtb" id="hhT2"></table></div>'
+      +'</div>'
+      +'<div class="mini" style="margin-top:12px;line-height:1.6">Chấm xanh: giá trực tiếp · chấm vàng: nguồn phát chậm 10–15 phút.<br>Crack spread 3-2-1 ghép từ giá xăng, dầu diesel và dầu thô cùng phiên.</div>'
+      +'</div>';
+    wrap.appendChild(d);
+    const st=document.createElement('style');
+    st.textContent='.hhtb{width:100%;border-collapse:collapse}'
+      +'.hhtb th{font-size:10.5px;color:#7A828E;font-weight:700;text-transform:uppercase;letter-spacing:.3px;padding:6px 9px;border-bottom:1px solid var(--border);text-align:right;background:#FCFDFD;white-space:nowrap}'
+      +'.hhtb td{padding:7px 9px;border-bottom:1px solid #F4F6F8;text-align:right;font-variant-numeric:tabular-nums;font-size:13px;white-space:nowrap}'
+      +'.hhtb tr.hhr:hover td{background:#F5FBF7}'
+      +'@media(max-width:900px){#hhGrid{grid-template-columns:1fr !important}}';
+    document.head.appendChild(st);
+    render(); nhip();
+    setInterval(function(){ const v=document.getElementById('view-hh'); if(v && v.style.display!=='none') nhip(); }, 60000);
+  }
+  /* trong Chi tiet ma: ma hang hoa thi khong co bang ben phai */
+  setInterval(function(){ try{ const p=document.getElementById('dPanel'); if(!p) return;
+    p.style.display = meta(typeof curT!=='undefined'?curT:null) ? 'none' : ''; }catch(e){} }, 1000);
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', add); else add();
 })();
