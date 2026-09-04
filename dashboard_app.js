@@ -1913,7 +1913,9 @@ async function loadDetail(t){
     curMarkers = tpn.markers;
     renderTPN(tpn.state);
     if (proLoadedFor && proLoadedFor !== t) { proLoadedFor = null; if (document.getElementById('chartProWrap').style.display !== 'none') loadProChart(); }
-    $('#dTitle').innerHTML = `${t} <span class="mini">— ${r.n||''} (${BRD(r.b)})</span>`;
+    $('#dTitle').innerHTML = _hhm
+      ? `${_hhm.n} <span class="mini">— ${_hhm.u}</span>`
+      : `${t} <span class="mini">— ${r.n||''} (${BRD(r.b)})</span>`;
     // KPI
     const rtsAv = rts.map(x => ({
       av: Date.UTC(x.yearReport, x.quarter*3, 1)/1000 + 45*86400,  // sau khi het quy ~45 ngay (BCTC ra)
@@ -3463,7 +3465,10 @@ function pinNameBar(){
     st.textContent='.hhtb{width:100%;border-collapse:collapse}'
       +'.hhtb th{font-size:10.5px;color:#7A828E;font-weight:700;text-transform:uppercase;letter-spacing:.3px;padding:6px 9px;border-bottom:1px solid var(--border);text-align:right;background:#FCFDFD;white-space:nowrap}'
       +'.hhtb td{padding:7px 9px;border-bottom:1px solid #F4F6F8;text-align:right;font-variant-numeric:tabular-nums;font-size:13px;white-space:nowrap}'
-      +'.hhtb tr.hhr:hover td{background:#F5FBF7}'
+      +'.hhtb tr.hhr:hover td{background:#FAFBFC}'
+      +'.hhtb tr.hhr:hover b{color:#18A34B}'
+      +'.hhtb tr.hhr td{transition:background .12s}'
+      +'.hhtb tr.hhr:focus,.hhtb tr.hhr:active{outline:none}'
       +'@media(max-width:900px){#hhGrid{grid-template-columns:1fr !important}}';
     document.head.appendChild(st);
     render(); nhip();
