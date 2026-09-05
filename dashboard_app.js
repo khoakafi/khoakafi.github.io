@@ -676,16 +676,16 @@ async function bstarLoadPrices(onlyOpen){
   BSTAR.ready = true;
 }
 function bstarRecent(){
-  const cut = new Date(Date.now()-183*86400000).toISOString().slice(0,10);
+  const y0 = new Date().getFullYear()+'-01-01';
+  const fmt = d => d.slice(8,10)+'/'+d.slice(5,7)+'/'+d.slice(2,4);
   const rows = [];
-  bstarDeals().filter(d => d.bdate >= cut && !BO_CUNG.has(d.t)).forEach(d => {
+  // năm hiện tại: tính sống từ dấu X + giá dchart
+  bstarDeals().filter(d => d.bdate >= y0).forEach(d => {
     const p = BSTAR.px[d.t]; if (!p) return;
     const bp = p.mp[d.bdate]; if (!(bp > 0)) return;
     const open = !d.sdate; const sp = open ? p.last : p.mp[d.sdate]; if (!(sp > 0)) return;
     const gross = (sp/bp - 1)*100;
-    rows.push({ t:d.t, bd:d.bdate.slice(8,10)+'/'+d.bdate.slice(5,7)+'/'+d.bdate.slice(2,4), bdate:d.bdate,
-      bp:+bp.toFixed(2), sp:+sp.toFixed(2), sd: open ? '—' : d.sdate.slice(8,10)+'/'+d.sdate.slice(5,7)+'/'+d.sdate.slice(2,4),
-      ret:+(open ? gross : gross-0.4).toFixed(1), open });
+    rows.push({ t:d.t, bd:fmt(d.bdate), bdate:d.bdate, bp:+bp.toFixed(2), sp:+sp.toFixed(2), sd: open ? '—' : fmt(d.sdate), ret:+(open ? gross : gross-0.4).toFixed(1), open });
   });
   // tín hiệu ★ mới trong phiên (đã qua scanNewSignals) — chỉ nhận nếu nền siết (a10/a30 < 0.6 tính trên 30 phiên trước hôm nay)
   const tpn = SUM.tpn; const today = new Date().toISOString().slice(0,10);
@@ -698,6 +698,11 @@ function bstarRecent(){
     if (rows.some(r => r.t === x.t && r.open)) return;
     rows.unshift({ t:x.t, bd:x.bd, bdate:x.bdate, bp:x.bp, sp:x.bp*(1+x.ret/100), sd:'—', ret:x.ret, open:true, today:true });
   });
+  // các năm đã khép: lấy từ bstar_books.js (giá đã chốt)
+  (window.BSTAR_DEALS || []).filter(d => d.b < y0).forEach(d => {
+    rows.push({ t:d.t, bd:fmt(d.b), bdate:d.b, bp:d.bp, sp:d.sp, sd:fmt(d.s), ret:+(((d.sp/d.bp-1)*100)-0.4).toFixed(1), open:false });
+  });
+  rows.sort((a,b) => a.bdate < b.bdate ? 1 : (a.bdate > b.bdate ? -1 : 0));
   return rows;
 }
 function bstarBookLive(){
@@ -755,13 +760,15 @@ function renderMonthlyStar(){
 function renderRecentStar(){
   const el = document.getElementById('recentWrap'); if (!el || !BSTAR.ready) return false;
   const rows = bstarRecent(); if (!rows.length) return false;
-  el.innerHTML = `<table class="sigtb"><tr><th>Mã</th><th>Giá mua</th><th>Giá bán / TT</th><th>Lợi suất</th></tr>` +
+  try { const h = el.parentElement && el.parentElement.querySelector('h2'); if (h) h.innerHTML = 'TOÀN BỘ TÍN HIỆU B★ <span class="hint">' + rows.length + ' deal · từ ' + rows[rows.length-1].bdate.slice(0,4) + '</span>'; } catch(e){}
+  const thS = 'position:sticky;top:0;background:#fff;z-index:1';
+  el.innerHTML = `<table class="sigtb"><tr><th style="${thS}">Mã</th><th style="${thS}">Giá mua</th><th style="${thS}">Giá bán / TT</th><th style="${thS}">Lợi suất</th></tr>` +
     rows.map(d => `<tr class="row" onclick="openDetail('${d.t}')">
       <td><div class="l1">${d.t} <span class="chip g" style="padding:0 5px">★</span> ${d.open?(d.today?'<span class="chip g">Mua hôm nay</span>':'<span class="chip a">Đang mở</span>'):''}</div><div class="l2">${d.bd}</div></td>
       <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
       <td><div class="l1" style="font-size:13px">${d.sp>=100?(+d.sp).toFixed(1):(+d.sp).toFixed(2)}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
       <td><span class="${d.ret>=0?'up':'down'}" style="font-size:14px">${d.ret>=0?'+':''}${d.ret}%</span></td></tr>`).join('') + '</table>'
-    + `<div class="hint" style="padding:8px 4px 0">Chỉ tín hiệu B★ (nền siết) 6 tháng qua · lợi suất đã trừ phí 0,4% với deal đã bán.</div>`;
+    + `<div class="hint" style="padding:8px 4px 0">Chỉ tín hiệu B★ (nền siết) · mua/bán giá đóng cửa · lợi suất đã trừ phí 0,4% với deal đã bán · các năm cũ lấy từ giá đã điều chỉnh cổ tức.</div>`;
   return true;
 }
 async function bstarInit(){
