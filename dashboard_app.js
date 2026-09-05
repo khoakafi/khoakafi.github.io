@@ -766,7 +766,7 @@ function bstarStats(cv){
   const lc = BSTAR.liveClosed || []; const lw = lc.filter(x => x > 0), ll = lc.filter(x => x <= 0);
   const nw = C.wins + lw.length, nl = C.losses + ll.length;
   const aw = nw ? (C.avgw*C.wins + lw.reduce((a,b)=>a+b,0))/nw : 0, al = nl ? (C.avgl*C.losses + ll.reduce((a,b)=>a+b,0))/nl : 0;
-  return { all:L[1], y1:rel(L[1], at(52)[1]), y3:rel(L[1], at(156)[1]), vall:L[2], vy1:rel(L[2], at(52)[2]), vy3:rel(L[2], at(156)[2]),
+  return { all:rel(L[1], cv[0][1]), y1:rel(L[1], at(52)[1]), y3:rel(L[1], at(156)[1]), vall:rel(L[2], cv[0][2]), vy1:rel(L[2], at(52)[2]), vy3:rel(L[2], at(156)[2]),
            maxdd:mdd*100, winrate: nw+nl ? nw/(nw+nl)*100 : 0, rr: al ? Math.abs(aw/al) : 0, ndeal: nw+nl };
 }
 function renderStatsStar(){
