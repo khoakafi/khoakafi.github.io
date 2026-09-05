@@ -640,7 +640,136 @@ function renderTops(){
   const el2 = document.getElementById('topRs');
   if (el2) el2.innerHTML = mini2([...ROWS()].filter(lq).sort((a,b)=>((b.vx||0)*(b.v20||0))-((a.vx||0)*(a.v20||0))).slice(0,10), gCols);
 }
+/* ================= B★ — sổ theo năm & top tín hiệu B★ =================
+   Nguồn sự thật: window.SIGS.t[mã].m (dấu X = B★, S = bán). Giá: dchart nến ngày (tải khi mở tab).
+   Các năm đã khép: window.BSTAR_BOOKS (bstar_books.js). Năm hiện tại: tính sống ở đây, cùng quy ước. */
+const BSTAR = { deals:null, px:{}, vni:null, ready:false };
+window.__bstar = { S:BSTAR, deals:()=>bstarDeals(), live:()=>bstarBookLive() };
+function bstarDeals(){
+  if (BSTAR.deals) return BSTAR.deals;
+  const out = []; const T = (window.SIGS && window.SIGS.t) || {};
+  const iso = ts => new Date((ts+7*3600)*1000).toISOString().slice(0,10);
+  Object.keys(T).forEach(t => {
+    const m = T[t].m || [];
+    m.forEach((mk, i) => {
+      if (mk[1] !== 'X') return;
+      let sell = null;
+      for (let k = i+1; k < m.length; k++) { const q = m[k][1]; if (q === 'S') { sell = m[k]; break; } if ('XBTW'.indexOf(q) >= 0) break; }
+      out.push({ t, bdate: iso(mk[0]), sdate: sell ? iso(sell[0]) : null });
+    });
+  });
+  out.sort((a,b) => a.bdate < b.bdate ? 1 : -1);
+  BSTAR.deals = out; return out;
+}
+async function bstarLoadPrices(onlyOpen){
+  const y = new Date().getFullYear();
+  const need = new Set(bstarDeals().filter(d => (d.bdate >= (y+'-01-01') || d.bdate >= new Date(Date.now()-200*86400000).toISOString().slice(0,10)) && (!onlyOpen || !d.sdate)).map(d => d.t));
+  const to = NOW()+86400, from = to - 86400*330;
+  const one = async sym => { try {
+    const r = await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sym}&resolution=D&from=${from}&to=${to}`);
+    if (!r || !r.t || !r.t.length) return null;
+    const mp = {}; const ds = []; r.t.forEach((ts,i) => { const d = new Date((ts+7*3600)*1000).toISOString().slice(0,10); mp[d] = r.c[i]; ds.push(d); });
+    return { mp, ds, last: r.c[r.c.length-1], lastd: ds[ds.length-1] };
+  } catch(e){ return null; } };
+  await Promise.all([...need].map(async s => { const r = await one(s); if (r) BSTAR.px[s] = r; }));
+  if (!onlyOpen || !BSTAR.vni) { const v = await one('VNINDEX'); if (v) BSTAR.vni = v; }
+  BSTAR.ready = true;
+}
+function bstarRecent(){
+  const cut = new Date(Date.now()-183*86400000).toISOString().slice(0,10);
+  const rows = [];
+  bstarDeals().filter(d => d.bdate >= cut && !BO_CUNG.has(d.t)).forEach(d => {
+    const p = BSTAR.px[d.t]; if (!p) return;
+    const bp = p.mp[d.bdate]; if (!(bp > 0)) return;
+    const open = !d.sdate; const sp = open ? p.last : p.mp[d.sdate]; if (!(sp > 0)) return;
+    const gross = (sp/bp - 1)*100;
+    rows.push({ t:d.t, bd:d.bdate.slice(8,10)+'/'+d.bdate.slice(5,7)+'/'+d.bdate.slice(2,4), bdate:d.bdate,
+      bp:+bp.toFixed(2), sp:+sp.toFixed(2), sd: open ? '—' : d.sdate.slice(8,10)+'/'+d.sdate.slice(5,7)+'/'+d.sdate.slice(2,4),
+      ret:+(open ? gross : gross-0.4).toFixed(1), open });
+  });
+  // tín hiệu ★ mới trong phiên (đã qua scanNewSignals) — chỉ nhận nếu nền siết (a10/a30 < 0.6 tính trên 30 phiên trước hôm nay)
+  const tpn = SUM.tpn; const today = new Date().toISOString().slice(0,10);
+  ((tpn && tpn.recent) || []).filter(x => x.open && x.today && x.bdate === today).forEach(x => {
+    const p = BSTAR.px[x.t]; if (!p) return;
+    const c = p.ds.filter(d => d < today).map(d => p.mp[d]); if (c.length < 31) return;
+    const w10 = c.slice(-10), w30 = c.slice(-30);
+    const a10 = (Math.max(...w10)-Math.min(...w10))/Math.min(...w10), a30 = (Math.max(...w30)-Math.min(...w30))/Math.min(...w30);
+    if (!(a30 > 0) || a10/a30 >= 0.6) return;
+    if (rows.some(r => r.t === x.t && r.open)) return;
+    rows.unshift({ t:x.t, bd:x.bd, bdate:x.bdate, bp:x.bp, sp:x.bp*(1+x.ret/100), sd:'—', ret:x.ret, open:true, today:true });
+  });
+  return rows;
+}
+function bstarBookLive(){
+  const y = new Date().getFullYear(); const ys = String(y);
+  const ds = bstarDeals().filter(d => d.bdate.slice(0,4) === ys).map(d => ({...d}));
+  if (!ds.length || !BSTAR.vni) return null;
+  const cal = BSTAR.vni.ds.filter(d => d >= ys+'-01-01');
+  const by = {}; ds.forEach(d => (by[d.bdate] = by[d.bdate] || []).push(d));
+  let nav = 100, opn = [], wins = 0, maxpos = 0, maxexp = 0; const mend = {}; let last = 100;
+  const FEE = 0.004, MR = 0.13/250;
+  for (const d of cal) {
+    const still = [];
+    for (const p of opn) { const px = BSTAR.px[p.t] && BSTAR.px[p.t].mp[d]; if (px > 0) p.cur = p.cost*px/p.px;
+      if (p.sdate === d) { nav += p.cur - p.cost - p.cost*FEE; if (p.cur > p.cost) wins++; } else still.push(p); }
+    opn = still;
+    (by[d] || []).forEach(tr => { const px = BSTAR.px[tr.t] && BSTAR.px[tr.t].mp[d]; if (!(px > 0)) return;
+      const cost = 0.25*nav; opn.push({ t:tr.t, px, cost, cur:cost, sdate:tr.sdate }); });
+    const inv = opn.reduce((a,p) => a+p.cost, 0); maxexp = Math.max(maxexp, inv/nav*100); maxpos = Math.max(maxpos, opn.length);
+    if (inv > nav) nav -= (inv-nav)*MR;
+    last = nav + opn.reduce((a,p) => a+p.cur-p.cost, 0); mend[+d.slice(5,7)] = last;
+  }
+  const m = {}; let prev = 100;
+  for (let k = 1; k <= 12; k++) { if (k in mend) { m[k] = (mend[k]/prev-1)*100; prev = mend[k]; } else m[k] = null; }
+  const v0 = BSTAR.vni.mp[cal[0]], v1 = BSTAR.vni.mp[cal[cal.length-1]];
+  return { m, spill:0, year:last-100, vni:(v1/v0-1)*100, n:ds.length, win:wins, maxpos, maxexp:Math.round(maxexp), live:true };
+}
+function renderMonthlyStar(){
+  const el = document.getElementById('moTable'); if (!el || !window.BSTAR_BOOKS) return false;
+  const B = Object.assign({}, window.BSTAR_BOOKS); const live = BSTAR.ready ? bstarBookLive() : null;
+  if (live) B[String(new Date().getFullYear())] = live;
+  const years = Object.keys(B).sort();
+  const G = ['#EAF7EF','#D0EFDC','#AEE4C4','#86D7A8','#5CC98C'], R = ['#FDEEEE','#FBD9DA','#F8C2C3','#F3A6A8','#EE8A8D'];
+  let nAct = 0, nPos = 0, best = null, worst = null;
+  years.forEach(y => { for (let k = 1; k <= 12; k++) { const v = B[y].m[k]; if (v == null || Math.abs(v) < 0.05) continue; nAct++; if (v > 0) nPos++; if (best==null || v > best) best = v; if (worst==null || v < worst) worst = v; } });
+  const sum = document.getElementById('moSum');
+  if (sum && nAct) sum.innerHTML = `Tỷ lệ tháng có lãi: <b class="up">${Math.round(nPos/nAct*100)}%</b> &nbsp;·&nbsp; Tháng lãi cao nhất: <b class="up">+${best.toFixed(1)}%</b> &nbsp;·&nbsp; Tháng lỗ sâu nhất: <b class="down">−${Math.abs(worst).toFixed(1)}%</b> &nbsp;·&nbsp; Năm có lãi: <b class="up">${years.filter(y => B[y].year > 0).length}/${years.length}</b>`;
+  const cell = v => {
+    if (v==null || Math.abs(v) < 0.05) return '<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:#FAFBFC;color:#C6CBD1;font-weight:400">·</td>';
+    const i = Math.min(4, Math.floor(Math.abs(v)/15*5));
+    const bg = v>0 ? G[i] : R[i], tc = v>0 ? '#0d6e31' : '#B03A3E';
+    return `<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:${bg};color:${tc};font-weight:600">${v>0?'+':'−'}${Math.abs(v).toFixed(1)}</td>`;
+  };
+  const thS = 'border-bottom:none;text-align:center;padding:4px 0;font-size:11px';
+  const head = `<tr><th style="${thS};text-align:left;padding-left:4px">Năm</th>` + Array.from({length:12},(_,i)=>`<th style="${thS}">T${i+1}</th>`).join('') + `<th style="${thS}">Sau 31/12</th><th style="${thS}">Cả năm</th><th style="${thS}">VN-Index</th><th style="${thS}">Deal ★</th></tr>`;
+  const rows = years.slice().reverse().map(y => { const b = B[y];
+    return `<tr><td style="border-top:none;text-align:left;padding:6px 4px"><b>${y}</b>${b.live?'<span class="hint" style="margin-left:4px">đang chạy</span>':''}</td>` + Array.from({length:12},(_,i)=>cell(b.m[i+1])).join('')
+      + cell(b.spill)
+      + `<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:${Math.abs(b.year)<0.05?'#9CA3AF':(b.year>0?'#128A3E':'#E5484D')};color:#fff;font-weight:700">${Math.abs(b.year)<0.05?'0.0':(b.year>0?'+':'−')+Math.abs(b.year).toFixed(1)}</td>`
+      + `<td style="border-top:none;text-align:center;padding:6px 0;color:#6B7280;font-weight:600">${b.vni>0?'+':'−'}${Math.abs(b.vni).toFixed(1)}</td>`
+      + `<td style="border-top:none;text-align:center;padding:6px 0;color:#6B7280;font-weight:500;font-size:11.5px">${b.n} · thắng ${b.win}</td></tr>`; });
+  el.innerHTML = `<table style="border-collapse:separate;border-spacing:2px;table-layout:fixed;font-size:12px">` + head + rows.join('') + '</table>'
+    + `<div class="hint" style="margin-top:8px">Chỉ deal B★. Mỗi năm một sổ riêng khởi đầu 100, gồm deal mua trong năm, giả định vào hết, 25% vốn/deal, phí 0,4%, vay 13%/năm phần vượt vốn. "Sau 31/12" = lãi/lỗ phát sinh sau 31/12 của deal mua cuối năm bán sang năm sau (thuộc sổ năm mua).</div>`;
+  return true;
+}
+function renderRecentStar(){
+  const el = document.getElementById('recentWrap'); if (!el || !BSTAR.ready) return false;
+  const rows = bstarRecent(); if (!rows.length) return false;
+  el.innerHTML = `<table class="sigtb"><tr><th>Mã</th><th>Giá mua</th><th>Giá bán / TT</th><th>Lợi suất</th></tr>` +
+    rows.map(d => `<tr class="row" onclick="openDetail('${d.t}')">
+      <td><div class="l1">${d.t} <span class="chip g" style="padding:0 5px">★</span> ${d.open?(d.today?'<span class="chip g">Mua hôm nay</span>':'<span class="chip a">Đang mở</span>'):''}</div><div class="l2">${d.bd}</div></td>
+      <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
+      <td><div class="l1" style="font-size:13px">${d.sp>=100?(+d.sp).toFixed(1):(+d.sp).toFixed(2)}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
+      <td><span class="${d.ret>=0?'up':'down'}" style="font-size:14px">${d.ret>=0?'+':''}${d.ret}%</span></td></tr>`).join('') + '</table>'
+    + `<div class="hint" style="padding:8px 4px 0">Chỉ tín hiệu B★ (nền siết) 6 tháng qua · lợi suất đã trừ phí 0,4% với deal đã bán.</div>`;
+  return true;
+}
+async function bstarInit(){
+  try { renderMonthlyStar(); await bstarLoadPrices(); renderMonthlyStar(); renderRecentStar(); } catch(e){}
+  if (!window._bsTimer) window._bsTimer = setInterval(async () => { try { await bstarLoadPrices(true); renderRecentStar(); renderMonthlyStar(); } catch(e){} }, 120000);
+}
 function renderMonthly(){
+  if (renderMonthlyStar()) return;
   const el = document.getElementById('moTable'); if (!el) return;
   const tpn = SUM.tpn; if (!tpn || !tpn.curve || !tpn.curve.length) return;
   const ends = {}, order = [];
@@ -678,6 +807,7 @@ function renderMonthly(){
 }
 function renderRecent(){
   const el = document.getElementById('recentWrap'); if (!el) return;
+  if (renderRecentStar()) return;
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
   el.innerHTML = `<table class="sigtb"><tr><th>Mã</th><th>Giá mua</th><th>Giá bán / TT</th><th>Lợi suất</th></tr>` +
     tpn.recent.map(d=>{ const sp = d.bp*(1+(d.ret+(d.open?0.15:0.4))/100); return `<tr class="row" onclick="openDetail('${d.t}')">
@@ -899,6 +1029,7 @@ inits.market = async function(){
   renderRecent();
   renderMonthly();
   refreshOpenDeals();
+  bstarInit();
   if (!window._odTimer) window._odTimer = setInterval(refreshOpenDeals, 120000);
   $('#perfSeg').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
     $$('#perfSeg button').forEach(x=>x.classList.remove('on')); b.classList.add('on'); perfRange = b.dataset.r; drawPerf(); });
