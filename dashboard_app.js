@@ -587,7 +587,7 @@ const endBadge = { id:'endBadge', afterDatasetsDraw(chart){
 }};
 function drawPerf(){
   const tpn = SUM.tpn; if (!tpn || !tpn.curve || !tpn.curve.length) return;
-  let cv = tpn.curve;
+  let cv = (typeof bstarCurve === 'function' && bstarCurve()) || tpn.curve;
   if (/^20\d\d$/.test(perfRange)) cv = cv.filter(x=>x[0].startsWith(perfRange));
   else if (perfRange !== 'all') cv = cv.slice(perfRange==='1y' ? -52 : -26);
   const b0 = cv[0];
@@ -665,6 +665,7 @@ function bstarDeals(){
 async function bstarLoadPrices(onlyOpen){
   const y = new Date().getFullYear();
   const need = new Set(bstarDeals().filter(d => (d.bdate >= (y+'-01-01') || d.bdate >= new Date(Date.now()-200*86400000).toISOString().slice(0,10)) && (!onlyOpen || !d.sdate)).map(d => d.t));
+  ((window.BSTAR_CURVE && window.BSTAR_CURVE.carry) || []).forEach(c => { if (!onlyOpen) need.add(c.t); });
   const to = NOW()+86400, from = to - 86400*330;
   const one = async sym => { try {
     const r = await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sym}&resolution=D&from=${from}&to=${to}`);
@@ -730,6 +731,58 @@ function bstarBookLive(){
   const v0 = BSTAR.vni.mp[cal[0]], v1 = BSTAR.vni.mp[cal[cal.length-1]];
   return { m, spill:0, year:last-100, vni:(v1/v0-1)*100, n:ds.length, win:wins, maxpos, maxexp:Math.round(maxexp), live:true };
 }
+function bstarCurve(){
+  const C = window.BSTAR_CURVE; if (!C || !C.pts) return null;
+  const pts = C.pts.slice();
+  if (!BSTAR.ready || !BSTAR.vni) return pts;
+  const y0 = String(new Date().getFullYear())+'-01-01';
+  if (C.end >= y0) return pts;
+  const cal = BSTAR.vni.ds.filter(d => d > C.end);
+  if (!cal.length) return pts;
+  const ds = bstarDeals().filter(d => d.bdate > C.end);
+  const by = {}; ds.forEach(d => (by[d.bdate] = by[d.bdate] || []).push(d));
+  let nav = C.nav; let opn = (C.carry || []).map(c => ({ t:c.t, px:c.px, cost:c.frac*C.nav, cur:c.frac*C.nav, sdate:c.s }));
+  const FEE = 0.004, MR = 0.13/250; const wk = d => { const x = new Date(d+'T00:00:00Z'); const day = (x.getUTCDay()+6)%7; x.setUTCDate(x.getUTCDate()-day+3); return x.toISOString().slice(0,10); };
+  const live = []; const closed = [];
+  for (let i = 0; i < cal.length; i++) { const d = cal[i];
+    const still = [];
+    for (const p of opn) { const px = BSTAR.px[p.t] && BSTAR.px[p.t].mp[d]; if (px > 0) p.cur = p.cost*px/p.px;
+      if (p.sdate === d) { const pnl = p.cur - p.cost - p.cost*FEE; nav += pnl; closed.push(pnl/p.cost*100); } else still.push(p); }
+    opn = still;
+    (by[d] || []).forEach(tr => { const px = BSTAR.px[tr.t] && BSTAR.px[tr.t].mp[d]; if (!(px > 0)) return; const cost = 0.25*nav; opn.push({ t:tr.t, px, cost, cur:cost, sdate:tr.sdate }); });
+    const inv = opn.reduce((a,p) => a+p.cost, 0); if (inv > nav) nav -= (inv-nav)*MR;
+    const eq = nav + opn.reduce((a,p) => a+p.cur-p.cost, 0);
+    const last = i === cal.length-1 || wk(cal[i+1]) !== wk(d);
+    if (last) live.push([d, +(eq-100).toFixed(2), +((BSTAR.vni.mp[d]/C.vni0-1)*100).toFixed(2)]);
+  }
+  BSTAR.liveClosed = closed;
+  return pts.concat(live);
+}
+function bstarStats(cv){
+  const C = window.BSTAR_CURVE; if (!cv || cv.length < 2) return null;
+  const L = cv[cv.length-1]; const at = k => cv[Math.max(0, cv.length-1-k)];
+  const rel = (a,b) => ((1+a/100)/(1+b/100)-1)*100;
+  let peak = -1e9, mdd = 0; cv.forEach(x => { const e = 1+x[1]/100; peak = Math.max(peak, e); mdd = Math.min(mdd, e/peak-1); });
+  const lc = BSTAR.liveClosed || []; const lw = lc.filter(x => x > 0), ll = lc.filter(x => x <= 0);
+  const nw = C.wins + lw.length, nl = C.losses + ll.length;
+  const aw = nw ? (C.avgw*C.wins + lw.reduce((a,b)=>a+b,0))/nw : 0, al = nl ? (C.avgl*C.losses + ll.reduce((a,b)=>a+b,0))/nl : 0;
+  return { all:L[1], y1:rel(L[1], at(52)[1]), y3:rel(L[1], at(156)[1]), vall:L[2], vy1:rel(L[2], at(52)[2]), vy3:rel(L[2], at(156)[2]),
+           maxdd:mdd*100, winrate: nw+nl ? nw/(nw+nl)*100 : 0, rr: al ? Math.abs(aw/al) : 0, ndeal: nw+nl };
+}
+function renderStatsStar(){
+  try {
+    const cv = bstarCurve(); const st = bstarStats(cv); if (!st) return false;
+    const cards = document.querySelectorAll('#view-market .stats4 .card'); if (cards.length < 4) return false;
+    const f = (v, plus) => (v >= 0 ? (plus ? '+' : '') : '−') + Math.abs(v).toFixed(1) + '%';
+    const set = (ci, ri, txt, cls) => { const el = cards[ci].querySelectorAll('.perf-row .v')[ri]; if (!el) return; el.textContent = txt; if (cls) el.className = 'v ' + cls; };
+    set(0,0,f(st.y1,true), st.y1>=0?'up':'down'); set(0,1,f(st.y3,true), st.y3>=0?'up':'down'); set(0,2,f(st.all,true), st.all>=0?'up':'down');
+    set(1,0,f(st.vy1,true)); set(1,1,f(st.vy3,true)); set(1,2,f(st.vall,true));
+    set(2,0,st.rr.toFixed(1)); set(2,1,Math.round(st.winrate)+'%'); set(2,2,String(st.ndeal));
+    set(3,0,f(st.maxdd,false));
+    const h = document.querySelector('#view-market .hero .card h2'); if (h && h.textContent.indexOf('B★') < 0) h.textContent = 'Hiệu suất Khoa Nguyen Signal — B★';
+    return true;
+  } catch(e){ return false; }
+}
 function renderMonthlyStar(){
   const el = document.getElementById('moTable'); if (!el || !window.BSTAR_BOOKS) return false;
   const B = Object.assign({}, window.BSTAR_BOOKS); const live = BSTAR.ready ? bstarBookLive() : null;
@@ -790,7 +843,7 @@ function renderRecentStar(){
   return true;
 }
 async function bstarInit(){
-  try { renderMonthlyStar(); await bstarLoadPrices(); renderMonthlyStar(); renderRecentStar(); } catch(e){}
+  try { renderMonthlyStar(); await bstarLoadPrices(); renderMonthlyStar(); renderRecentStar(); drawPerf(); renderStatsStar(); } catch(e){}
   if (!window._bsTimer) window._bsTimer = setInterval(async () => { try { await bstarLoadPrices(true); renderRecentStar(); renderMonthlyStar(); } catch(e){} }, 120000);
 }
 function renderMonthly(){
