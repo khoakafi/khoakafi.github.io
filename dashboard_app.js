@@ -650,6 +650,7 @@ function bstarDeals(){
   const out = []; const T = (window.SIGS && window.SIGS.t) || {};
   const iso = ts => new Date((ts+7*3600)*1000).toISOString().slice(0,10);
   Object.keys(T).forEach(t => {
+    if (BO_CUNG.has(t)) return;   // mã cấm: không tính vào B★ (danh sách lẫn sổ năm)
     const m = T[t].m || [];
     m.forEach((mk, i) => {
       if (mk[1] !== 'X') return;
@@ -699,7 +700,7 @@ function bstarRecent(){
     rows.unshift({ t:x.t, bd:x.bd, bdate:x.bdate, bp:x.bp, sp:x.bp*(1+x.ret/100), sd:'—', ret:x.ret, open:true, today:true });
   });
   // các năm đã khép: lấy từ bstar_books.js (giá đã chốt)
-  (window.BSTAR_DEALS || []).filter(d => d.b < y0).forEach(d => {
+  (window.BSTAR_DEALS || []).filter(d => d.b < y0 && !BO_CUNG.has(d.t)).forEach(d => {
     rows.push({ t:d.t, bd:fmt(d.b), bdate:d.b, bp:d.bp, sp:d.sp, sd:fmt(d.s), ret:+(((d.sp/d.bp-1)*100)-0.4).toFixed(1), open:false });
   });
   rows.sort((a,b) => a.bdate < b.bdate ? 1 : (a.bdate > b.bdate ? -1 : 0));
