@@ -760,15 +760,32 @@ function renderMonthlyStar(){
 function renderRecentStar(){
   const el = document.getElementById('recentWrap'); if (!el || !BSTAR.ready) return false;
   const rows = bstarRecent(); if (!rows.length) return false;
-  try { const h = el.parentElement && el.parentElement.querySelector('h2'); if (h) h.innerHTML = 'TOÀN BỘ TÍN HIỆU B★ <span class="hint">' + rows.length + ' deal · từ ' + rows[rows.length-1].bdate.slice(0,4) + '</span>'; } catch(e){}
+  const yNow = String(new Date().getFullYear());
+  const nNow = rows.filter(r => r.bdate.slice(0,4) === yNow).length;
+  try { const h = el.parentElement && el.parentElement.querySelector('h2'); if (h) h.innerHTML = 'TÍN HIỆU B★ ' + yNow + ' <span class="hint">' + nNow + ' deal · kéo xuống xem từ ' + rows[rows.length-1].bdate.slice(0,4) + '</span>'; } catch(e){}
   const thS = 'position:sticky;top:0;background:#fff;z-index:1';
-  el.innerHTML = `<table class="sigtb"><tr><th style="${thS}">Mã</th><th style="${thS}">Giá mua</th><th style="${thS}">Giá bán / TT</th><th style="${thS}">Lợi suất</th></tr>` +
-    rows.map(d => `<tr class="row" onclick="openDetail('${d.t}')">
+  let lastY = null; const body = [];
+  rows.forEach(d => {
+    const y = d.bdate.slice(0,4);
+    if (y !== lastY && y !== yNow) body.push(`<tr><td colspan="4" style="padding:10px 4px 4px;font-size:11px;letter-spacing:.06em;color:#6B7280;font-weight:700;border-bottom:1px solid #E5E7EB">NĂM ${y}</td></tr>`);
+    lastY = y;
+    body.push(`<tr class="row" onclick="openDetail('${d.t}')">
       <td><div class="l1">${d.t} <span class="chip g" style="padding:0 5px">★</span> ${d.open?(d.today?'<span class="chip g">Mua hôm nay</span>':'<span class="chip a">Đang mở</span>'):''}</div><div class="l2">${d.bd}</div></td>
       <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
       <td><div class="l1" style="font-size:13px">${d.sp>=100?(+d.sp).toFixed(1):(+d.sp).toFixed(2)}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
-      <td><span class="${d.ret>=0?'up':'down'}" style="font-size:14px">${d.ret>=0?'+':''}${d.ret}%</span></td></tr>`).join('') + '</table>'
+      <td><span class="${d.ret>=0?'up':'down'}" style="font-size:14px">${d.ret>=0?'+':''}${d.ret}%</span></td></tr>`);
+  });
+  el.innerHTML = `<table class="sigtb"><tr><th style="${thS}">Mã</th><th style="${thS}">Giá mua</th><th style="${thS}">Giá bán / TT</th><th style="${thS}">Lợi suất</th></tr>` + body.join('') + '</table>'
     + `<div class="hint" style="padding:8px 4px 0">Chỉ tín hiệu B★ (nền siết) · mua/bán giá đóng cửa · lợi suất đã trừ phí 0,4% với deal đã bán · các năm cũ lấy từ giá đã điều chỉnh cổ tức.</div>`;
+  // khoá chiều cao thẻ bằng thẻ biểu đồ bên cạnh; phần còn lại cuộn trong khung
+  try {
+    const card = el.parentElement, chartCard = card && card.previousElementSibling;
+    if (chartCard) {
+      card.style.alignSelf = 'start'; el.style.maxHeight = '100px';
+      const overhead = card.offsetHeight - 100; const nat = chartCard.offsetHeight;
+      card.style.alignSelf = ''; el.style.maxHeight = Math.max(300, nat - overhead) + 'px';
+    }
+  } catch(e){}
   return true;
 }
 async function bstarInit(){
