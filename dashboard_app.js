@@ -3647,7 +3647,12 @@ function pinNameBar(){
       const k=tr.dataset.k;
       try{ showView('detail'); }catch(e){}
       setTimeout(function(){ try{ window.openDetail(k); }catch(e){} }, 400); }; }); }
-  async function nhip(){ try{ const H=window.HH; if(!H) return;
+  /* VN-Index: hanghoa_data.js không có nến (y/tv = null) -> lấy nến ngày từ dchart để dòng VN-Index không trống */
+  async function vniBars(){ try{ const H=window.HH; if(!H||!H.bars||(H.bars.VNI&&H.bars.VNI.length)) return;
+      const to=Math.floor(Date.now()/1000)+86400;
+      const r=await (await fetch('https://dchart-api.vndirect.com.vn/dchart/history?symbol=VNINDEX&resolution=D&from='+(to-86400*400)+'&to='+to,{cache:'no-store'})).json();
+      if(r&&r.t&&r.t.length) H.bars.VNI=r.t.map(function(t,i){ return [t,r.o[i],r.h[i],r.l[i],r.c[i]]; }); }catch(e){} }
+  async function nhip(){ try{ const H=window.HH; if(!H) return; await vniBars();
       const tv=Object.keys(H.meta).map(k=>H.meta[k].tv).filter(Boolean);
       const r=await fetch('https://scanner.tradingview.com/global/scan',{method:'POST',headers:{'Content-Type':'text/plain'},
         body:JSON.stringify({symbols:{tickers:tv,query:{types:[]}},columns:['close','change','change_abs']})});
