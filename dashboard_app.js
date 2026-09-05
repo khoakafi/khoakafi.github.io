@@ -788,12 +788,13 @@ function renderMonthlyStar(){
   const el = document.getElementById('moTable'); if (!el || !window.BSTAR_BOOKS) return false;
   const B = Object.assign({}, window.BSTAR_BOOKS); const live = BSTAR.ready ? bstarBookLive() : null;
   if (live) B[String(new Date().getFullYear())] = live;
+  else if (!B[String(new Date().getFullYear())]) B[String(new Date().getFullYear())] = { m:{}, spill:0, year:0, vni:0, n:'…', win:'…', live:true, pending:true };
   const years = Object.keys(B).sort();
   const G = ['#EAF7EF','#D0EFDC','#AEE4C4','#86D7A8','#5CC98C'], R = ['#FDEEEE','#FBD9DA','#F8C2C3','#F3A6A8','#EE8A8D'];
   let nAct = 0, nPos = 0, best = null, worst = null;
   years.forEach(y => { for (let k = 1; k <= 12; k++) { const v = B[y].m[k]; if (v == null || Math.abs(v) < 0.05) continue; nAct++; if (v > 0) nPos++; if (best==null || v > best) best = v; if (worst==null || v < worst) worst = v; } });
   const sum = document.getElementById('moSum');
-  if (sum && nAct) sum.innerHTML = `Tỷ lệ tháng có lãi: <b class="up">${Math.round(nPos/nAct*100)}%</b> &nbsp;·&nbsp; Tháng lãi cao nhất: <b class="up">+${best.toFixed(1)}%</b> &nbsp;·&nbsp; Tháng lỗ sâu nhất: <b class="down">−${Math.abs(worst).toFixed(1)}%</b> &nbsp;·&nbsp; Năm có lãi: <b class="up">${years.filter(y => B[y].year > 0).length}/${years.length}</b>`;
+  if (sum && nAct) sum.innerHTML = `Tỷ lệ tháng có lãi: <b class="up">${Math.round(nPos/nAct*100)}%</b> &nbsp;·&nbsp; Tháng lãi cao nhất: <b class="up">+${best.toFixed(1)}%</b> &nbsp;·&nbsp; Tháng lỗ sâu nhất: <b class="down">−${Math.abs(worst).toFixed(1)}%</b> &nbsp;·&nbsp; Năm có lãi: <b class="up">${years.filter(y => !B[y].pending && B[y].year > 0).length}/${years.filter(y => !B[y].pending).length}</b>`;
   const cell = v => {
     if (v==null || Math.abs(v) < 0.05) return '<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:#FAFBFC;color:#C6CBD1;font-weight:400">·</td>';
     const i = Math.min(4, Math.floor(Math.abs(v)/15*5));
@@ -805,16 +806,24 @@ function renderMonthlyStar(){
   const rows = years.slice().reverse().map(y => { const b = B[y];
     return `<tr><td style="border-top:none;text-align:left;padding:6px 4px"><b>${y}</b>${b.live?'<span class="hint" style="margin-left:4px">đang chạy</span>':''}</td>` + Array.from({length:12},(_,i)=>cell(b.m[i+1])).join('')
       + cell(b.spill)
-      + `<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:${Math.abs(b.year)<0.05?'#9CA3AF':(b.year>0?'#128A3E':'#E5484D')};color:#fff;font-weight:700">${Math.abs(b.year)<0.05?'0.0':(b.year>0?'+':'−')+Math.abs(b.year).toFixed(1)}</td>`
-      + `<td style="border-top:none;text-align:center;padding:6px 0;color:#6B7280;font-weight:600">${b.vni>0?'+':'−'}${Math.abs(b.vni).toFixed(1)}</td>`
+      + `<td style="border-top:none;text-align:center;padding:6px 0;border-radius:4px;background:${b.pending?'#9CA3AF':(Math.abs(b.year)<0.05?'#9CA3AF':(b.year>0?'#128A3E':'#E5484D'))};color:#fff;font-weight:700">${b.pending?'…':(Math.abs(b.year)<0.05?'0.0':(b.year>0?'+':'−')+Math.abs(b.year).toFixed(1))}</td>`
+      + `<td style="border-top:none;text-align:center;padding:6px 0;color:#6B7280;font-weight:600">${b.pending?'…':(b.vni>0?'+':'−')+Math.abs(b.vni).toFixed(1)}</td>`
       + `<td style="border-top:none;text-align:center;padding:6px 0;color:#6B7280;font-weight:500;font-size:11.5px">${b.n} · thắng ${b.win}</td></tr>`; });
   el.innerHTML = `<table style="border-collapse:separate;border-spacing:2px;table-layout:fixed;font-size:12px">` + head + rows.join('') + '</table>'
     + `<div class="hint" style="margin-top:8px">Chỉ deal B★. Mỗi năm một sổ riêng khởi đầu 100, gồm deal mua trong năm, giả định vào hết, mỗi deal đúng 25% NAV đầu năm (cố định cả năm, cuối năm mới cộng lãi), phí 0,4%, vay 13%/năm phần vượt vốn. "Sau 31/12" = lãi/lỗ phát sinh sau 31/12 của deal mua cuối năm bán sang năm sau (thuộc sổ năm mua).</div>`;
   return true;
 }
 function renderRecentStar(){
-  const el = document.getElementById('recentWrap'); if (!el || !BSTAR.ready) return false;
-  const rows = bstarRecent(); if (!rows.length) return false;
+  const el = document.getElementById('recentWrap'); if (!el || !window.BSTAR_DEALS) return false;
+  let rows;
+  if (BSTAR.ready) rows = bstarRecent();
+  else {
+    // chưa có giá: vẽ ngay khung B★ (deal năm nay chờ giá, các năm cũ đã chốt) để không giật khi giá về
+    const y0 = String(new Date().getFullYear())+'-01-01'; const fmt = d => d.slice(8,10)+'/'+d.slice(5,7)+'/'+d.slice(2,4);
+    rows = bstarDeals().filter(d => d.bdate >= y0).map(d => ({ t:d.t, bd:fmt(d.bdate), bdate:d.bdate, bp:'…', sp:'…', sd:d.sdate ? fmt(d.sdate) : '—', ret:null, open:!d.sdate }))
+      .concat((window.BSTAR_DEALS || []).filter(d => d.b < y0 && !BO_CUNG.has(d.t)).map(d => ({ t:d.t, bd:fmt(d.b), bdate:d.b, bp:d.bp, sp:d.sp, sd:fmt(d.s), ret:+(((d.sp/d.bp-1)*100)-0.4).toFixed(1), open:false })));
+  }
+  if (!rows.length) return false;
   const yNow = String(new Date().getFullYear());
   const nNow = rows.filter(r => r.bdate.slice(0,4) === yNow).length;
   try { const h = el.parentElement && el.parentElement.querySelector('h2'); if (h) h.innerHTML = 'TÍN HIỆU B★ ' + yNow + ' <span class="hint">' + nNow + ' deal · kéo xuống xem từ ' + rows[rows.length-1].bdate.slice(0,4) + '</span>'; } catch(e){}
@@ -827,8 +836,8 @@ function renderRecentStar(){
     body.push(`<tr class="row" onclick="openDetail('${d.t}')">
       <td><div class="l1">${d.t} <span class="chip g" style="padding:0 5px">★</span> ${d.open?(d.today?'<span class="chip g">Mua hôm nay</span>':'<span class="chip a">Đang mở</span>'):''}</div><div class="l2">${d.bd}</div></td>
       <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
-      <td><div class="l1" style="font-size:13px">${d.sp>=100?(+d.sp).toFixed(1):(+d.sp).toFixed(2)}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
-      <td><span class="${d.ret>=0?'up':'down'}" style="font-size:14px">${d.ret>=0?'+':''}${d.ret}%</span></td></tr>`);
+      <td><div class="l1" style="font-size:13px">${typeof d.sp==='number'?(d.sp>=100?d.sp.toFixed(1):d.sp.toFixed(2)):d.sp}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
+      <td><span class="${d.ret==null?'mut':(d.ret>=0?'up':'down')}" style="font-size:14px">${d.ret==null?'…':(d.ret>=0?'+':'')+d.ret+'%'}</span></td></tr>`);
   });
   el.innerHTML = `<table class="sigtb"><tr><th style="${thS}">Mã</th><th style="${thS}">Giá mua</th><th style="${thS}">Giá bán / TT</th><th style="${thS}">Lợi suất</th></tr>` + body.join('') + '</table>'
     + `<div class="hint" style="padding:8px 4px 0">Chỉ tín hiệu B★ (nền siết) · mua/bán giá đóng cửa · lợi suất đã trừ phí 0,4% với deal đã bán · các năm cũ lấy từ giá đã điều chỉnh cổ tức.</div>`;
