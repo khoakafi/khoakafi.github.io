@@ -721,8 +721,8 @@ function bstarBookLive(){
       if (p.sdate === d) { nav += p.cur - p.cost - p.cost*FEE; if (p.cur > p.cost) wins++; } else still.push(p); }
     opn = still;
     (by[d] || []).forEach(tr => { const px = BSTAR.px[tr.t] && BSTAR.px[tr.t].mp[d]; if (!(px > 0)) return;
-      const cost = 0.25*nav; opn.push({ t:tr.t, px, cost, cur:cost, sdate:tr.sdate }); });
-    const inv = opn.reduce((a,p) => a+p.cost, 0); maxexp = Math.max(maxexp, inv/nav*100); maxpos = Math.max(maxpos, opn.length);
+      const cost = 25; opn.push({ t:tr.t, px, cost, cur:cost, sdate:tr.sdate }); });   // 25% NAV đầu năm, cố định cả năm
+    const inv = opn.reduce((a,p) => a+p.cost, 0); maxexp = Math.max(maxexp, inv); maxpos = Math.max(maxpos, opn.length);
     if (inv > nav) nav -= (inv-nav)*MR;
     last = nav + opn.reduce((a,p) => a+p.cur-p.cost, 0); mend[+d.slice(5,7)] = last;
   }
@@ -741,7 +741,8 @@ function bstarCurve(){
   if (!cal.length) return pts;
   const ds = bstarDeals().filter(d => d.bdate > C.end);
   const by = {}; ds.forEach(d => (by[d.bdate] = by[d.bdate] || []).push(d));
-  let nav = C.nav; let opn = (C.carry || []).map(c => ({ t:c.t, px:c.px, cost:c.frac*C.nav, cur:c.frac*C.nav, sdate:c.s }));
+  let nav = C.nav; const unit = 0.25*C.eq0;   // 25% NAV đầu năm (= NAV cuối năm trước), cố định cả năm
+  let opn = (C.carry || []).map(c => ({ t:c.t, px:c.px, cost:c.cost, cur:c.cost, sdate:c.s }));
   const FEE = 0.004, MR = 0.13/250; const wk = d => { const x = new Date(d+'T00:00:00Z'); const day = (x.getUTCDay()+6)%7; x.setUTCDate(x.getUTCDate()-day+3); return x.toISOString().slice(0,10); };
   const live = []; const closed = [];
   for (let i = 0; i < cal.length; i++) { const d = cal[i];
@@ -749,7 +750,7 @@ function bstarCurve(){
     for (const p of opn) { const px = BSTAR.px[p.t] && BSTAR.px[p.t].mp[d]; if (px > 0) p.cur = p.cost*px/p.px;
       if (p.sdate === d) { const pnl = p.cur - p.cost - p.cost*FEE; nav += pnl; closed.push(pnl/p.cost*100); } else still.push(p); }
     opn = still;
-    (by[d] || []).forEach(tr => { const px = BSTAR.px[tr.t] && BSTAR.px[tr.t].mp[d]; if (!(px > 0)) return; const cost = 0.25*nav; opn.push({ t:tr.t, px, cost, cur:cost, sdate:tr.sdate }); });
+    (by[d] || []).forEach(tr => { const px = BSTAR.px[tr.t] && BSTAR.px[tr.t].mp[d]; if (!(px > 0)) return; const cost = unit; opn.push({ t:tr.t, px, cost, cur:cost, sdate:tr.sdate }); });
     const inv = opn.reduce((a,p) => a+p.cost, 0); if (inv > nav) nav -= (inv-nav)*MR;
     const eq = nav + opn.reduce((a,p) => a+p.cur-p.cost, 0);
     const last = i === cal.length-1 || wk(cal[i+1]) !== wk(d);
@@ -808,7 +809,7 @@ function renderMonthlyStar(){
       + `<td style="border-top:none;text-align:center;padding:6px 0;color:#6B7280;font-weight:600">${b.vni>0?'+':'−'}${Math.abs(b.vni).toFixed(1)}</td>`
       + `<td style="border-top:none;text-align:center;padding:6px 0;color:#6B7280;font-weight:500;font-size:11.5px">${b.n} · thắng ${b.win}</td></tr>`; });
   el.innerHTML = `<table style="border-collapse:separate;border-spacing:2px;table-layout:fixed;font-size:12px">` + head + rows.join('') + '</table>'
-    + `<div class="hint" style="margin-top:8px">Chỉ deal B★. Mỗi năm một sổ riêng khởi đầu 100, gồm deal mua trong năm, giả định vào hết, 25% vốn/deal, phí 0,4%, vay 13%/năm phần vượt vốn. "Sau 31/12" = lãi/lỗ phát sinh sau 31/12 của deal mua cuối năm bán sang năm sau (thuộc sổ năm mua).</div>`;
+    + `<div class="hint" style="margin-top:8px">Chỉ deal B★. Mỗi năm một sổ riêng khởi đầu 100, gồm deal mua trong năm, giả định vào hết, mỗi deal đúng 25% NAV đầu năm (cố định cả năm, cuối năm mới cộng lãi), phí 0,4%, vay 13%/năm phần vượt vốn. "Sau 31/12" = lãi/lỗ phát sinh sau 31/12 của deal mua cuối năm bán sang năm sau (thuộc sổ năm mua).</div>`;
   return true;
 }
 function renderRecentStar(){
