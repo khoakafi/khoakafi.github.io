@@ -588,7 +588,7 @@ const endBadge = { id:'endBadge', afterDatasetsDraw(chart){
 function drawPerf(){
   const tpn = SUM.tpn; if (!tpn || !tpn.curve || !tpn.curve.length) return;
   let cv = (typeof bstarCurve === 'function' && bstarCurve()) || tpn.curve;
-  if (/^20\d\d$/.test(perfRange)) cv = cv.filter(x=>x[0].startsWith(perfRange));
+  if (/^20\d\d$/.test(perfRange)) { const i0 = cv.findIndex(x=>x[0].startsWith(perfRange)); const i1 = cv.findIndex(x=>x[0] > perfRange+'-12-31'); if (i0 < 0) return; cv = cv.slice(Math.max(0, i0-1), i1 < 0 ? cv.length : i1); }  // mốc = điểm cuối năm trước, khớp bảng tháng
   else if (perfRange !== 'all') cv = cv.slice(perfRange==='1y' ? -52 : -26);
   const b0 = cv[0];
   const labels = cv.map(x => x[0].slice(5,7)+'/'+x[0].slice(2,4));
