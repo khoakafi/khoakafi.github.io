@@ -1137,6 +1137,8 @@ const COLS = [
   ['roe','ROE%'],['_peR','P/E'],['_pbR','P/B'],['dy','Cổ tức%'],['_capR','Vốn hóa (tỷ)'],['val20','GTGD TB20 (tỷ)']
 ];
 const PRESETS = {
+  watch: {label:'Watchlist hôm nay', f: r => !!r.watch && r.wgrade!=='weak'},
+  star:  {label:'Chỉ B★', f: r => !!r.watch && r.wgrade!=='weak' && r.wstar===1},
   growth: {label:'Tăng trưởng cao', f: r => (r.npatYoY||0)>=30 && (r.revYoY||0)>=15},
   value: {label:'Định giá rẻ', f: r => r._peR!=null && r._peR>0 && r._peR<10 && r._pbR!=null && r._pbR<1.5 && (r.roe||0)>=12},
   divi: {label:'Cổ tức cao', f: r => (r.dy||0)>=5},
@@ -1172,6 +1174,14 @@ inits.screener = function(){
   renderSc();
 };
 let activePreset = null;
+/* nhan trang thai watchlist: B★ (nen siet, tren MA50) hoac B thuong */
+function __wchip(r){
+  if (!r || !r.watch || r.wgrade==='weak') return '';
+  const sao = r.wstar===1;
+  return ' <span style="font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;vertical-align:1px;'
+    + (sao ? 'background:#E9F7EF;color:#127A3B' : 'background:#EEF2F6;color:#5B6470') + '">'
+    + (sao ? 'B★' : 'B') + '</span>';
+}
 function renderSc(){
   ROWS().forEach(scDerive);
   const q = ($('#fQ').value||'').toUpperCase();
@@ -1196,7 +1206,7 @@ function renderSc(){
   rows.sort((a,b)=>{ const x=a[sortKey], y=b[sortKey]; if(x==null) return 1; if(y==null) return -1; return (x<y?-1:x>y?1:0)*sortDir*-1; });
   const head = '<tr>' + COLS.map(c=>`<th data-k="${c[0]}" class="${sortKey===c[0]?'on':''}"${(c[0]==='t'||c[0]==='sec')?' style="text-align:left"':''}>${c[1]}${sortKey===c[0]?(sortDir>0?' ↓':' ↑'):''}</th>`).join('') + '</tr>';
   const body = rows.slice(0,400).map(r => `<tr class="row" onclick="openDetail('${r.t}')">
-    <td><b>${r.t}</b> <span class="mini">${BRD(r.b)}</span><br><span class="mini">${(r.n||'').slice(0,24)}</span></td>
+    <td><b>${r.t}</b> <span class="mini">${BRD(r.b)}</span>${__wchip(r)}<br><span class="mini">${(r.n||'').slice(0,24)}</span></td>
     <td style="text-align:left"><span class="mini">${r.sec||'—'}</span></td>
     <td>${fmt(r.p,2)}</td>
     <td class="${cls(r._ytd)}">${pct(r._ytd)}</td>
