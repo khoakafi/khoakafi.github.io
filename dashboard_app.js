@@ -3699,6 +3699,13 @@ function pinNameBar(){
     b.onclick=function(){ hienHH(); render(); nhip(); };
     const first=nav.querySelector('button'); nav.insertBefore(b, first?first.nextSibling:null);
     nav.querySelectorAll('button').forEach(function(x){ if(x.dataset.view==='news') x.style.display='none'; });
+    // cac nut tab goc goi ham chuyen view noi bo (khong qua window.showView) -> tu an view-hh khi bam tab khac
+    nav.addEventListener('click', function(e){ const t=e.target.closest('button'); if(!t || !t.dataset.view || t.dataset.view==='hh') return;
+      const vh=document.getElementById('view-hh'); if(vh) vh.style.display='none'; }, true);
+    // bao hiem: neu view-hh dang hien ma co view khac cung hien -> an view-hh
+    setInterval(function(){ const vh=document.getElementById('view-hh'); if(!vh || vh.style.display==='none') return;
+      const others=[].slice.call(document.querySelectorAll('[id^="view-"]')).filter(function(x){ return x!==vh && x.style.display!=='none' && x.offsetParent!==null; });
+      if(others.length){ vh.style.display='none'; } }, 700);
     const wrap=document.getElementById('view-market').parentElement;
     const d=document.createElement('div'); d.id='view-hh'; d.style.display='none';
     d.innerHTML='<div style="display:flex;align-items:baseline;gap:10px;margin:2px 0 14px">'
