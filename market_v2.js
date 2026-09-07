@@ -16,25 +16,26 @@
     if (document.getElementById('mkt2css')) return;
     const st = document.createElement('style'); st.id = 'mkt2css';
     st.textContent = `
-.m2hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center;padding:14px 6px 30px;color:${INK}}
+.m2hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:36px;align-items:center;padding:10px 6px 22px;color:${INK}}
 .m2hero *{box-sizing:border-box}
 .m2hero .eyebrow{font-family:${MONO};font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:${GREEN};font-weight:500}
-.m2hero .h1{font-family:${SERIF};font-size:52px;line-height:1.08;letter-spacing:-.02em;margin:16px 0 0;font-weight:400}
+.m2hero .h1{font-family:${SERIF};font-size:36px;line-height:1.12;letter-spacing:-.015em;margin:10px 0 0;font-weight:400}
 .m2hero .h1 i{font-style:italic;color:${GREEN}}
-.m2hero .lead{font-size:16.5px;line-height:1.65;color:#4B564F;margin:18px 0 0;max-width:56ch}
-.m2hero .btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
-.m2hero .btnP{background:${GREEN};color:#fff;font-weight:700;font-size:14.5px;padding:13px 22px;border-radius:10px;cursor:pointer;border:0;font-family:inherit}
+.m2hero .lead{font-size:14.5px;line-height:1.6;color:#4B564F;margin:12px 0 0;max-width:60ch}
+.m2hero .btns{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;align-items:center}
+.m2hero .btnP{background:${GREEN};color:#fff;font-weight:700;font-size:13.5px;padding:10px 18px;border-radius:10px;cursor:pointer;border:0;font-family:inherit}
 .m2hero .btnP:hover{background:${INK}}
-.m2hero .btnS{border:1.5px solid #DAD8D0;color:${INK};background:transparent;font-weight:700;font-size:14.5px;padding:13px 22px;border-radius:10px;cursor:pointer;font-family:inherit}
+.m2hero .btnS{border:1.5px solid #DAD8D0;color:${INK};background:transparent;font-weight:700;font-size:13.5px;padding:10px 18px;border-radius:10px;cursor:pointer;font-family:inherit}
 .m2hero .btnS:hover{border-color:${INK}}
-.m2hero .meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px;font-size:12.5px;color:${MUT};font-family:${MONO}}
+.m2hero .meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:11.5px;color:${MUT};font-family:${MONO}}
 .m2hero .meta i{color:#D5D3CB;font-style:normal}
-.m2hero .k4{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:${LINE};border:1px solid ${LINE};border-radius:14px;overflow:hidden}
-.m2hero .k4 > div{background:#fff;padding:20px 20px}
+.m2hero .k4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:${LINE};border:1px solid ${LINE};border-radius:14px;overflow:hidden}
+.m2hero .k4 > div{background:#fff;padding:16px 18px}
 .m2hero .kl{font-size:13px;font-weight:600;color:${MUT};letter-spacing:.02em}
-.m2hero .kv{font-family:${MONO};font-weight:700;font-size:32px;letter-spacing:-.02em;margin-top:6px}
-.m2hero .ks{font-size:13px;color:${MUT};margin-top:4px}
-@media(max-width:960px){ .m2hero{grid-template-columns:1fr;gap:24px;padding-top:6px} .m2hero .h1{font-size:38px} }
+.m2hero .kv{font-family:${MONO};font-weight:700;font-size:26px;letter-spacing:-.02em;margin-top:5px}
+.m2hero .ks{font-size:12px;color:${MUT};margin-top:3px}
+@media(max-width:1100px){ .m2hero .k4{grid-template-columns:1fr 1fr} }
+@media(max-width:960px){ .m2hero{grid-template-columns:1fr;gap:18px;padding-top:6px} .m2hero .h1{font-size:30px} }
 @media(max-width:560px){ .m2hero .k4{grid-template-columns:1fr} .m2hero .kv{font-size:28px} }
 `;
     document.head.appendChild(st);
