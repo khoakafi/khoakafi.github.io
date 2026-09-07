@@ -72,7 +72,7 @@
       <h1 class="h1">Mua khi xu hướng bắt đầu.<br><i>Bán khi nó kết thúc.</i></h1>
       <p class="lead">Hệ thống tín hiệu định lượng cho thị trường chứng khoán Việt Nam — vào lệnh theo xu hướng, cắt lỗ bằng quy tắc, không dự đoán.</p>
       <div class="m2row">
-        <div class="btns"><button class="btnP" id="m2goWatch">Xem tín hiệu hôm nay →</button><button class="btnS" id="m2goDetail">Chi tiết mã</button></div>
+        <div class="btns"><button class="btnP" id="m2goWatch">Xem tín hiệu hôm nay →</button></div>
         <div class="meta" id="m2meta"></div>
       </div>
     </div>
@@ -80,7 +80,6 @@
     el.insertBefore(h, el.firstChild);
     const q = id => document.getElementById(id);
     if (q('m2goWatch')) q('m2goWatch').onclick = () => { try { window.showView('watch'); } catch(e){} };
-    if (q('m2goDetail')) q('m2goDetail').onclick = () => { try { window.showView('detail'); } catch(e){} };
     setTimeout(fitChart, 150); setTimeout(fitChart, 900);
     return true;
   }
