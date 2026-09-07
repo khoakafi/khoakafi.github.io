@@ -37,7 +37,7 @@
 .m2 .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px;font-size:13px;color:${MUT};font-family:${MONO}}
 .m2 .meta i{color:#D5D3CB;font-style:normal}
 .m2 .k4{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:${LINE};border:1px solid ${LINE};border-radius:14px;overflow:hidden}
-.m2 .k4 div{background:#fff;padding:22px 20px}
+.m2 .k4 > div{background:#fff;padding:22px 20px}
 .m2 .kl{font-size:13px;font-weight:600;color:${MUT};letter-spacing:.02em}
 .m2 .kv{font-family:${MONO};font-weight:700;font-size:34px;letter-spacing:-.02em;margin-top:8px}
 .m2 .ks{font-size:13px;color:${MUT};margin-top:4px}
@@ -58,7 +58,7 @@
 .m2 .ddh{display:flex;justify-content:space-between;font-size:12px;font-family:${MONO};color:${MUT};margin-bottom:4px}
 .m2 .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:14px;font-size:12.5px;color:${MUT};font-family:${MONO}}
 .m2 .k6{margin-top:16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:${LINE};border:1px solid ${LINE};border-radius:14px;overflow:hidden}
-.m2 .k6 div{background:#fff;padding:18px 20px}
+.m2 .k6 > div{background:#fff;padding:18px 20px}
 .m2 .k6 .kv{font-size:24px;margin-top:6px;letter-spacing:-.01em}
 .m2 .sec{margin-top:48px}
 .m2 .secH{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:14px}
@@ -199,7 +199,7 @@
   }
   function monthStats(bk){
     let n = 0, win = 0, best = null, worst = null;
-    Object.keys(bk).forEach(y => { const m = bk[y].m || {}; for (let k = 1; k <= 12; k++) { const v = m[k]; if (v == null) continue; n++; if (v > 0) win++;
+    Object.keys(bk).forEach(y => { const m = bk[y].m || {}; for (let k = 1; k <= 12; k++) { const v = m[k]; if (v == null || Math.abs(v) < 0.005) continue; n++; if (v > 0) win++;
       if (best == null || v > best.v) best = { v, y, k }; if (worst == null || v < worst.v) worst = { v, y, k }; } });
     return { n, win, best, worst };
   }
@@ -217,7 +217,7 @@
     const ms = monthStats(bk);
     const ndeal = st.ndeal || 0, wr = st.winrate, rr = st.rr;
     const yNow = String(new Date().getFullYear());
-    const nNow = (bk[yNow] && bk[yNow].n) || rc.length;
+    const nNow = rc.filter(r => String(r.bdate || '').slice(0,4) === yNow).length || ((bk[yNow] && bk[yNow].n) || 0);
     const upd = (window.SUMMARY && window.SUMMARY.updated) || '';
     // TB ngay nam giu
     let hold = null; try { const ds = (B().deals && B().deals()) || []; const cl = ds.filter(x => x.sdate); if (cl.length) hold = Math.round(cl.reduce((a, x) => a + (Date.parse(x.sdate) - Date.parse(x.bdate))/86400000, 0)/cl.length); } catch(e){}
@@ -229,7 +229,8 @@
       for (let k = 1; k <= 12; k++) h += heatCell(m[k] == null ? null : m[k], heatMax);
       h += '<div class="ht" style="color:'+col(r.year)+'">'+pct(r.year)+'</div><div class="hv">'+pct(r.vni)+'</div></div>'; return h; }).join('');
 
-    const dealRows = rc.map(r => {
+    const rcY = rc.filter(r => String(r.bdate || '').slice(0,4) === yNow);
+    const dealRows = rcY.map(r => {
       const hold = r.open ? '—' : Math.round((Date.parse(r.sdate || r.bdate) - Date.parse(r.bdate))/86400000) + ' ngày';
       return '<tr><td><span class="tk" data-t="'+r.t+'">'+r.t+'</span><span class="star">B★</span></td>'
         + '<td>'+r.bd+'</td><td class="s">'+num(r.bp, 2)+'</td>'
