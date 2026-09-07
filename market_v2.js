@@ -34,6 +34,7 @@
 .m2hero .kl{font-size:13px;font-weight:600;color:${MUT};letter-spacing:.02em}
 .m2hero .kv{font-family:${MONO};font-weight:700;font-size:26px;letter-spacing:-.02em;margin-top:5px}
 .m2hero .ks{font-size:12px;color:${MUT};margin-top:3px}
+#view-market .stats4{display:none !important}
 @media(max-width:1100px){ .m2hero .k4{grid-template-columns:1fr 1fr} }
 @media(max-width:960px){ .m2hero{grid-template-columns:1fr;gap:18px;padding-top:6px} .m2hero .h1{font-size:30px} }
 @media(max-width:560px){ .m2hero .k4{grid-template-columns:1fr} .m2hero .kv{font-size:28px} }
@@ -54,7 +55,7 @@
     const total = st.all != null ? st.all : (cv.length ? cv[cv.length-1][1] : null);
     const vtotal = st.vall != null ? st.vall : (cv.length ? cv[cv.length-1][2] : null);
     const cg = (total != null && yrs) ? cagr(total, yrs) : null, vcg = (vtotal != null && yrs) ? cagr(vtotal, yrs) : null;
-    return { cg, vcg, ddS: cv.length ? ddWorst(cv.map(p => p[1])) : null, ddV: cv.length ? ddWorst(cv.map(p => p[2])) : null,
+    return { total, vtotal, cg, vcg, ddS: cv.length ? ddWorst(cv.map(p => p[1])) : null, ddV: cv.length ? ddWorst(cv.map(p => p[2])) : null,
              wr: st.winrate, rr: st.rr, n: st.ndeal || 0, yNow: new Date().getFullYear() };
   }
 
@@ -81,14 +82,14 @@
   let lastSig = '';
   function fill(){
     const k = kpis();
-    const sig = JSON.stringify([k.cg, k.ddS, k.wr, k.rr, k.n]); if (sig === lastSig) return; lastSig = sig;
+    const sig = JSON.stringify([k.total, k.cg, k.ddS, k.wr, k.rr, k.n]); if (sig === lastSig) return; lastSig = sig;
     const k4 = document.getElementById('m2k4'), meta = document.getElementById('m2meta'); if (!k4) return;
     k4.innerHTML =
-      '<div><div class="kl">Lợi nhuận kép / năm</div><div class="kv" style="color:'+GREEN+'">'+pct(k.cg)+'</div><div class="ks">VN-Index '+pct(k.vcg)+'</div></div>'
+      '<div><div class="kl">Tổng lợi nhuận từ 2019</div><div class="kv" style="color:'+GREEN+'">'+pct(k.total)+'</div><div class="ks">VN-Index '+pct(k.vtotal)+'</div></div>'
+    + '<div><div class="kl">Lợi nhuận kép / năm</div><div class="kv" style="color:'+GREEN+'">'+pct(k.cg)+'</div><div class="ks">VN-Index '+pct(k.vcg)+'</div></div>'
     + '<div><div class="kl">Sụt giảm tối đa</div><div class="kv">'+pct(k.ddS)+'</div><div class="ks">VN-Index '+pct(k.ddV)+'</div></div>'
-    + '<div><div class="kl">Tỷ lệ thắng</div><div class="kv">'+(k.wr != null ? Math.round(k.wr) + '%' : '—')+'</div><div class="ks">trên '+k.n+' deal B★</div></div>'
-    + '<div><div class="kl">Lãi / lỗ bình quân</div><div class="kv">'+(k.rr != null ? k.rr.toFixed(1).replace('.', ',') + '×' : '—')+'</div><div class="ks">R:R toàn hệ B★</div></div>';
-    if (meta) meta.innerHTML = '<span>Backtest 2019 → '+k.yNow+'</span><i>·</i><span>Phí 0,4% mỗi vòng đã tính</span><i>·</i><span>VNDirect · Vietcap IQ</span>';
+    + '<div><div class="kl">Tỷ lệ thắng · R:R</div><div class="kv">'+(k.wr != null ? Math.round(k.wr) + '%' : '—')+' <span style="font-size:18px;color:'+MUT+'">·</span> '+(k.rr != null ? k.rr.toFixed(1).replace('.', ',') + '×' : '—')+'</div><div class="ks">trên '+k.n+' deal B★ · phí 0,15% mua / 0,25% bán</div></div>';
+    if (meta) meta.innerHTML = '<span>Backtest 2019 → '+k.yNow+'</span><i>·</i><span>Đã trừ phí giao dịch</span><i>·</i><span>Nguồn giá VNDirect · BCTC Vietcap IQ</span>';
   }
 
   function tick(){ try { build(); fill(); } catch(e){ console.warn('[mkt2]', e); } }
