@@ -1658,9 +1658,12 @@ window.__rebuildBadges = function(){
     const r  = byT[curT] || {};
     const px = (r.p != null && isFinite(r.p) && r.p > 0) ? r.p : null;
     const daCoTinHieu = out.some(b => b.i === n-1 && b.below);
+    // Mui ten trong phien: cung cua voi cuoi phien (nen/co ban phai dat) va phan biet B\u2605 / B theo co wstar cua bep
     if (g && lv != null && px != null && !daCoTinHieu
-        && liveWatch.inSession() && px >= g[0] && lv >= g[1]) {
-      out.push({ i: n-1, below: true, text: '\u25B2 B', color: '#18a34b',
+        && liveWatch.inSession() && px >= g[0] && lv >= g[1]
+        && (typeof __nenOk !== 'function' || __nenOk(curT))) {
+      const sao = (r.wstar === 1);
+      out.push({ i: n-1, below: true, text: sao ? '\u25B2 B\u2605' : '\u25B2 B', color: '#18a34b',
                  value: Math.min(curOhlc.l[n-1], px) });
     }
   } catch(e){}
