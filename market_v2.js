@@ -22,7 +22,7 @@
     st.textContent = `
 #view-market.m2{background:transparent;margin:0;padding:0 0 40px;color:${INK};font-family:'Be Vietnam Pro',Inter,system-ui,sans-serif}
 #view-market.m2 *{box-sizing:border-box}
-.m2w{max-width:none;margin:0;padding:0}
+.m2w{max-width:none;margin:0;padding:0 6px}
 .m2 h1,.m2 h2,.m2 h3,.m2 p{margin:0}
 .m2 .hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center;padding-top:18px}
 .m2 .eyebrow{font-family:${MONO};font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:${GREEN};font-weight:500}
@@ -168,6 +168,7 @@
       if (!el.querySelector('#cvPerf')) { el.style.height = '460px'; el.innerHTML = '<canvas id="cvPerf"></canvas>'; }
       try { window.__perf.setRange(RMAP[range] || 'all'); } catch(e){}
       const sc = document.getElementById('m2scale'); if (sc) sc.style.display = 'none';
+      const lg = document.querySelector('#view-market .lg'); if (lg) lg.style.display = 'none';   // chart cu da co chu giai rieng
       document.querySelectorAll('#m2seg span').forEach(x => x.classList.toggle('on', x.dataset.r === range));
       drawDD(); return;
     }
