@@ -1662,7 +1662,7 @@ window.__rebuildBadges = function(){
     if (g && lv != null && px != null && !daCoTinHieu
         && liveWatch.inSession() && px >= g[0] && lv >= g[1]
         && (typeof __nenOk !== 'function' || __nenOk(curT))) {
-      const sao = (r.wstar === 1);
+      const sao = (r.wstar === 1) || (((window.SUMMARY||{}).rows||[]).some(x => x && x.t === curT && x.wstar === 1));
       out.push({ i: n-1, below: true, text: sao ? '\u25B2 B\u2605' : '\u25B2 B', color: '#18a34b',
                  value: Math.min(curOhlc.l[n-1], px) });
     }
