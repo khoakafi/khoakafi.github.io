@@ -644,7 +644,7 @@ function renderTops(){
    Nguồn sự thật: window.SIGS.t[mã].m (dấu X = B★, S = bán). Giá: dchart nến ngày (tải khi mở tab).
    Các năm đã khép: window.BSTAR_BOOKS (bstar_books.js). Năm hiện tại: tính sống ở đây, cùng quy ước. */
 const BSTAR = { deals:null, px:{}, vni:null, ready:false };
-window.__bstar = { S:BSTAR, deals:()=>bstarDeals(), live:()=>bstarBookLive() };
+window.__bstar = { S:BSTAR, deals:()=>bstarDeals(), live:()=>bstarBookLive(), curve:()=>bstarCurve(), stats:(cv)=>bstarStats(cv), recent:()=>bstarRecent() };
 function bstarDeals(){
   if (BSTAR.deals) return BSTAR.deals;
   const out = []; const T = (window.SIGS && window.SIGS.t) || {};
