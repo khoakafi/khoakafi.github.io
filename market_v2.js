@@ -191,7 +191,7 @@
 
   /* ---------- heat & thang ---------- */
   function heatCell(v, mx){
-    if (v == null) return '<div class="hc" style="background:'+BG+'"></div>';
+    if (v == null || Math.abs(v) < 0.005) return '<div class="hc" style="background:'+BG+'"></div>';   // 0 = khong co deal trong thang -> o trong
     const k = Math.min(1, Math.abs(v)/mx), mix = (a, b) => Math.round(a + (b - a)*(0.18 + k*0.82));
     const bg = v >= 0 ? 'rgb('+mix(242,88)+','+mix(241,176)+','+mix(236,124)+')' : 'rgb('+mix(242,205)+','+mix(241,92)+','+mix(236,84)+')';
     const txt = (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(1).replace('.', ',');
