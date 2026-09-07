@@ -5,7 +5,7 @@
   const ON = /[?&]mkt=2\b/.test(location.search) || window.__MKT2_ON === true;
   if (!ON) return;
 
-  const INK='#14201C', MUT='#5F6A62', GREEN='#0F7A3D', GRAPH='#18A34B', RED='#C4453E', LINE='#E4E2DB', BG='#FBFAF7';
+  const INK='#14201C', MUT='#5F6A62', GREEN='#0F7A3D', GRAPH='#18A34B', RED='#C4453E', LINE='#E4E2DB', BG='#F4F6F8';
   const MONO="'JetBrains Mono',ui-monospace,Menlo,monospace", SERIF="'Lora',Georgia,serif";
 
   /* ---------- dinh dang vi-VN ---------- */
@@ -20,11 +20,11 @@
     if (document.getElementById('mkt2css')) return;
     const st = document.createElement('style'); st.id = 'mkt2css';
     st.textContent = `
-#view-market.m2{background:${BG};margin:-14px 0 0;padding:0 0 60px;border-radius:0 0 14px 14px;color:${INK};font-family:'Be Vietnam Pro',Inter,system-ui,sans-serif}
+#view-market.m2{background:transparent;margin:0;padding:0 0 40px;color:${INK};font-family:'Be Vietnam Pro',Inter,system-ui,sans-serif}
 #view-market.m2 *{box-sizing:border-box}
-.m2w{max-width:1240px;margin:0 auto;padding:0 24px}
+.m2w{max-width:none;margin:0;padding:0}
 .m2 h1,.m2 h2,.m2 h3,.m2 p{margin:0}
-.m2 .hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center;padding-top:52px}
+.m2 .hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center;padding-top:18px}
 .m2 .eyebrow{font-family:${MONO};font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:${GREEN};font-weight:500}
 .m2 .h1{font-family:${SERIF};font-size:56px;line-height:1.06;letter-spacing:-.02em;margin-top:18px;font-weight:400}
 .m2 .h1 i{font-style:italic;color:${GREEN}}
@@ -42,7 +42,7 @@
 .m2 .kv{font-family:${MONO};font-weight:700;font-size:34px;letter-spacing:-.02em;margin-top:8px}
 .m2 .ks{font-size:13px;color:${MUT};margin-top:4px}
 .m2 .card{background:#fff;border:1px solid ${LINE};border-radius:16px}
-.m2 .chartCard{margin-top:48px;padding:24px 26px 20px}
+.m2 .chartCard{margin-top:32px;padding:24px 26px 20px}
 .m2 .ch{display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap}
 .m2 .h2{font-size:20px;font-weight:800;letter-spacing:-.01em}
 .m2 .lg{display:flex;gap:18px;margin-top:10px;font-size:13px;font-weight:600}
@@ -60,7 +60,7 @@
 .m2 .k6{margin-top:16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:${LINE};border:1px solid ${LINE};border-radius:14px;overflow:hidden}
 .m2 .k6 > div{background:#fff;padding:18px 20px}
 .m2 .k6 .kv{font-size:24px;margin-top:6px;letter-spacing:-.01em}
-.m2 .sec{margin-top:48px}
+.m2 .sec{margin-top:36px}
 .m2 .secH{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:14px}
 .m2 .hs{font-family:${SERIF};font-size:32px;letter-spacing:-.01em;font-weight:400}
 .m2 .sub{font-size:15px;color:${MUT};margin-top:6px}
@@ -152,8 +152,25 @@
     if (close) d += 'L1000 ' + H + ' L0 ' + H + ' Z';
     return d;
   }
+  const RMAP = { all:'all', '1y':'1y', '6m':'6m', y2025:'2025', y2026:'2026' };
+  function drawDD(){
+    const cv = curveAll(); const ddEl = document.getElementById('m2dd'); if (!ddEl || !cv.length) return;
+    const full = cv.map(p => p[1]); const { dd, worst } = ddOf(full);
+    const h = 64, n = dd.length; let dp = 'M0 0 ';
+    dd.forEach((v, i) => { dp += 'L' + (i/(n-1)*1000).toFixed(1) + ' ' + (worst ? (v/worst*h) : 0).toFixed(1) + ' '; });
+    dp += 'L1000 0 Z';
+    ddEl.innerHTML = '<div class="ddh"><span>SỤT GIẢM TỪ ĐỈNH · TOÀN CHUỘI</span><span>đáy sâu nhất '+pct(worst)+'</span></div>'
+      + '<svg viewBox="0 0 1000 64" preserveAspectRatio="none" style="width:100%;height:64px;display:block"><path d="'+dp+'" fill="'+RED+'" fill-opacity=".14" stroke="'+RED+'" stroke-width="1.4" vector-effect="non-scaling-stroke"/></svg>';
+  }
   function drawChart(){
     const el = document.getElementById('m2chart'); if (!el) return;
+    if (window.__perf && window.Chart) {            // chart cu cua web (Chart.js) dat trong khung moi
+      if (!el.querySelector('#cvPerf')) { el.style.height = '460px'; el.innerHTML = '<canvas id="cvPerf"></canvas>'; }
+      try { window.__perf.setRange(RMAP[range] || 'all'); } catch(e){}
+      const sc = document.getElementById('m2scale'); if (sc) sc.style.display = 'none';
+      document.querySelectorAll('#m2seg span').forEach(x => x.classList.toggle('on', x.dataset.r === range));
+      drawDD(); return;
+    }
     const cv = curveAll(); const { s, b, d } = slice(cv);
     if (!s.length) { el.innerHTML = '<div style="padding:60px;text-align:center;color:'+MUT+'">Đang tải đường vốn…</div>'; return; }
     const all = s.concat(b).map(tf);
