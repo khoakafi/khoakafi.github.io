@@ -20,7 +20,7 @@
     if (document.getElementById('mkt2css')) return;
     const st = document.createElement('style'); st.id = 'mkt2css';
     st.textContent = `
-#view-market.m2{background:${BG};margin:-14px -16px 0;padding:0 0 60px;color:${INK};font-family:'Be Vietnam Pro',Inter,system-ui,sans-serif}
+#view-market.m2{background:${BG};margin:-14px 0 0;padding:0 0 60px;border-radius:0 0 14px 14px;color:${INK};font-family:'Be Vietnam Pro',Inter,system-ui,sans-serif}
 #view-market.m2 *{box-sizing:border-box}
 .m2w{max-width:1240px;margin:0 auto;padding:0 24px}
 .m2 h1,.m2 h2,.m2 h3,.m2 p{margin:0}
@@ -231,7 +231,10 @@
 
     const rcY = rc.filter(r => String(r.bdate || '').slice(0,4) === yNow);
     const dealRows = rcY.map(r => {
-      const hold = r.open ? '—' : Math.round((Date.parse(r.sdate || r.bdate) - Date.parse(r.bdate))/86400000) + ' ngày';
+      const dmy = s => { const m = String(s||'').match(/^(\d{2})\/(\d{2})\/(\d{2})$/); return m ? Date.UTC(2000 + +m[3], +m[2]-1, +m[1]) : NaN; };
+      const t0 = r.bdate ? Date.parse(r.bdate) : dmy(r.bd), t1 = r.open ? Date.now() : dmy(r.sd);
+      const nd = (isFinite(t0) && isFinite(t1)) ? Math.round((t1 - t0)/86400000) : null;
+      const hold = nd == null ? '—' : nd + ' ngày' + (r.open ? ' (đang giữ)' : '');
       return '<tr><td><span class="tk" data-t="'+r.t+'">'+r.t+'</span><span class="star">B★</span></td>'
         + '<td>'+r.bd+'</td><td class="s">'+num(r.bp, 2)+'</td>'
         + '<td>'+(r.open ? '<span style="color:'+GREEN+';font-weight:700">đang giữ</span>' : r.sd)+'</td>'
