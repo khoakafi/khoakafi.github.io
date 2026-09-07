@@ -585,6 +585,7 @@ const endBadge = { id:'endBadge', afterDatasetsDraw(chart){
     ctx.fillStyle = '#fff'; ctx.textBaseline = 'middle'; ctx.fillText(txt, pt.x+15, pt.y+1); ctx.restore();
   });
 }};
+window.__perf = { draw: () => { try { drawPerf(); } catch(e){} }, setRange: (r) => { perfRange = r; try { drawPerf(); } catch(e){} }, range: () => perfRange };
 function drawPerf(){
   const tpn = SUM.tpn; if (!tpn || !tpn.curve || !tpn.curve.length) return;
   let cv = (typeof bstarCurve === 'function' && bstarCurve()) || tpn.curve;
