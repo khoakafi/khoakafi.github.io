@@ -295,15 +295,6 @@
     <div class="foot"><span>Cập nhật ${upd}</span><span>Backtest · đã trừ phí · chưa tính trượt giá</span></div>
   </div>
 
-  <div class="k6">
-    <div><div class="kl">Tổng lợi nhuận từ 2019</div><div class="kv" style="color:${GREEN}">${pct(total)}</div><div class="ks">VN-Index ${pct(vtotal)}</div></div>
-    <div><div class="kl">Lợi nhuận kép / năm</div><div class="kv" style="color:${GREEN}">${pct(cg)}</div><div class="ks">trên ${yrs.toFixed(1).replace('.', ',')} năm</div></div>
-    <div><div class="kl">Sụt giảm tối đa</div><div class="kv">${pct(ddS)}</div><div class="ks">VN-Index ${pct(ddV)}</div></div>
-    <div><div class="kl">Tỷ lệ tháng có lãi</div><div class="kv">${ms.n ? Math.round(ms.win/ms.n*100) + '%' : '—'}</div><div class="ks">tháng lãi nhất ${ms.best ? pct(ms.best.v) + ' (T' + ms.best.k + '/' + ms.best.y + ')' : '—'}</div></div>
-    <div><div class="kl">Tháng lỗ nặng nhất</div><div class="kv" style="color:${RED}">${ms.worst ? pct(ms.worst.v) : '—'}</div><div class="ks">${ms.worst ? 'tháng ' + ms.worst.k + '/' + ms.worst.y : ''}</div></div>
-    <div><div class="kl">Tổng số deal B★</div><div class="kv">${ndeal}</div><div class="ks">${hold != null ? 'trung bình ' + hold + ' ngày / deal' : ''}</div></div>
-  </div>
-
   <div class="sec">
     <div class="secH">
       <div><h2 class="hs">Tín hiệu B★ năm ${yNow}</h2><p class="sub">${nNow} deal · mỗi deal vào đúng 25% NAV đầu năm</p></div>
