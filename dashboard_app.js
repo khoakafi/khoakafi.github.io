@@ -897,6 +897,10 @@ function renderMonthly(){
 function renderRecent(){
   const el = document.getElementById('recentWrap'); if (!el) return;
   if (renderRecentStar()) return;
+  // Chua co so B★ (bstar_books.js chua nap): hien 'dang tai' + tu nap lai — KHONG roi ve bang cu (khac bo loc → khach thay so khac)
+  el.innerHTML = '<div class="hint" style="padding:28px 8px;text-align:center">Đang tải danh sách tín hiệu B★…</div>';
+  if (!window.BSTAR_DEALS && !window.__napBstar) { window.__napBstar = 1; const sc = document.createElement('script'); sc.src = 'bstar_books.js?cb=' + Date.now(); sc.onload = () => { try { bstarInit(); renderRecent(); } catch(e){} }; document.head.appendChild(sc); }
+  return;
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
   el.innerHTML = `<table class="sigtb"><tr><th>Mã</th><th>Giá mua</th><th>Giá bán / TT</th><th>Lợi suất</th></tr>` +
     tpn.recent.map(d=>{ const sp = d.bp*(1+(d.ret+(d.open?0.15:0.4))/100); return `<tr class="row" onclick="openDetail('${d.t}')">
@@ -3749,4 +3753,22 @@ function pinNameBar(){
     const vl=document.getElementById('proVolLegend'); if(vl) vl.style.display = isHH?'none':'';
   }catch(e){} }, 800);
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', add); else add();
+})();
+
+/* ===== __PB: tu kiem phien ban — tab mo lau / cache cu se tu tai lai khi ranh, de moi nguoi cung thay mot ban ===== */
+(function(){
+  try {
+    const sc = document.querySelector('script[src*="dashboard_app.js"]'); if (!sc) return;
+    const vCur = (sc.getAttribute('src').match(/v=(\w+)/)||[])[1]; if (!vCur) return;
+    let idle = Date.now();
+    ['mousemove','keydown','touchstart','scroll','click'].forEach(ev => addEventListener(ev, () => { idle = Date.now(); }, {passive:true}));
+    async function kiem(){ try {
+      const t = await fetch(location.pathname + '?vchk=' + Date.now(), {cache:'no-store'}).then(r => r.ok ? r.text() : '');
+      const v = (t.match(/dashboard_app\.js\?v=(\w+)/)||[])[1];
+      if (v && v !== vCur) { window.__coBanMoi = v; thuTaiLai(); }
+    } catch(e){} }
+    function thuTaiLai(){ if (!window.__coBanMoi) return; if (document.hidden || Date.now() - idle > 90000) location.reload(); else setTimeout(thuTaiLai, 30000); }
+    setInterval(kiem, 10*60000); setTimeout(kiem, 60000);
+    document.addEventListener('visibilitychange', () => { if (document.hidden && window.__coBanMoi) location.reload(); });
+  } catch(e){}
 })();
