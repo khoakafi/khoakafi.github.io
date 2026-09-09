@@ -911,10 +911,13 @@ function renderRecent(){
 }
 function loadLiveDeals(){ try { return JSON.parse(localStorage.getItem('kafi_live_deals')) || []; } catch(e){ return []; } }
 function saveLiveDeals(a){ try { localStorage.setItem('kafi_live_deals', JSON.stringify(a.slice(-20))); } catch(e){} }
+/* Ngay du lieu cua bep (SUM.updated). Deal 'trong phien' chi la tam — bep chay sau gio dong cua moi la phan quyet chinh thuc;
+   deal tam co ngay <= ngay bep da chay thi bo (khong xac nhan = khong co lenh), tranh moi trinh duyet giu mot su that rieng. */
+function __ngayBep(){ try { return ((SUM.updated||'').match(/\d{4}-\d{2}-\d{2}/)||[])[0] || ''; } catch(e){ return ''; } }
 function mergeLiveDeals(){
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
-  const cut = Date.now() - 185*86400000;
-  const store = loadLiveDeals().filter(x => new Date(x.bdate).getTime() > cut);
+  const cut = Date.now() - 185*86400000; const dd = __ngayBep();
+  const store = loadLiveDeals().filter(x => new Date(x.bdate).getTime() > cut && (!dd || x.bdate > dd));
   store.forEach(x => {
     if (BO_CUNG.has(x.t)) return;
     if (tpn.recent.some(y => y.t === x.t && y.bdate === x.bdate)) return;
@@ -1022,7 +1025,7 @@ function scanNewSignals(){
     return r.p != null && r.p >= g[0] && r.vx != null && r.v20 && (r.vx * r.v20) >= g[1]; };
   // tin hieu trong phien rot chuan -> tu rut khoi bang + so
   tpn.recent = tpn.recent.filter(x => !(x.today && x.bdate === biso && !qualify(x.t)));
-  let store = loadLiveDeals().filter(x => !(x.bdate === biso && !qualify(x.t)));
+  const ddB = __ngayBep(); let store = loadLiveDeals().filter(x => !(x.bdate === biso && !qualify(x.t)) && (!ddB || x.bdate > ddB));
   ROWS().forEach(r=>{
     if (!r.watch || r.wgrade === 'weak') return;
     if (!qualify(r.t)) return;
