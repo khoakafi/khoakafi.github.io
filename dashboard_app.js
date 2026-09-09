@@ -166,42 +166,150 @@ window.knDaDangKy = function(){
 window.knHuyDangKyCucBo = function(){
   try { localStorage.removeItem('kn_push_dangky'); } catch(e){}
 };
-window.knDangKyNhanTinHieu = async function(){
-  try {
-    if (!('Notification' in window)) {
-      alert(laIOS() && !daCaiHomeScreen()
-        ? ('Trên iPhone cần thêm app vào Màn hình chính trước.' + NL + NL +
-           'Safari → nút Chia sẻ → "Thêm vào MH chính" → mở app từ biểu tượng đó rồi bấm lại.')
-        : 'Trình duyệt này không hỗ trợ thông báo.');
-      return;
-    }
-    var ma = prompt('Nhập mã mời để nhận tín hiệu qua thông báo:');
-    if (ma === null) return;
-    ma = String(ma).trim();
-    if (!ma) { alert('Bạn chưa nhập mã.'); return; }
+window.knDangKyNhanTinHieu = function(){
+  /* iPhone chua them vao Man hinh chinh thi khong co Notification API */
+  if (!('Notification' in window)) {
+    alert(laIOS() && !daCaiHomeScreen()
+      ? ('Trên iPhone cần thêm app vào Màn hình chính trước.' + NL + NL +
+         'Safari → nút Chia sẻ → "Thêm vào MH chính" → mở app từ biểu tượng đó rồi bấm lại.')
+      : 'Trình duyệt này không hỗ trợ thông báo.');
+    return;
+  }
 
-    if (Notification.permission !== 'granted') {
-      var p = await Notification.requestPermission();
-      if (p !== 'granted') { alert('Cần cho phép thông báo thì mới nhận được tín hiệu.'); return; }
-    }
-    var sub = await dangKyPush();
-    if (!sub) { alert('Máy này không hỗ trợ nhận thông báo đẩy.'); return; }
+  /* Da tung bam "Không cho phép" -> iOS khong hoi lai nua, phai vao Cai dat */
+  if (Notification.permission === 'denied') {
+    alert('Máy đang chặn thông báo của app nên không bật được.' + NL + NL +
+      (laIOS()
+        ? ('Mở Cài đặt → Thông báo → tìm "Khoa Nguyen" → bật "Cho phép Thông báo", rồi quay lại bấm chuông.' + NL + NL +
+           'Nếu không thấy trong danh sách: xoá biểu tượng app ở Màn hình chính rồi thêm lại từ Safari.')
+        : 'Mở Cài đặt trình duyệt → Thông báo → cho phép cho khoanguyeninvest.vn, rồi quay lại bấm chuông.'));
+    return;
+  }
 
-    var may = (laIOS() ? 'iPhone/iPad' : (/Android/i.test(navigator.userAgent) ? 'Android' : 'Máy tính'));
-    var r = await fetch(SHEET_API, {
-      method: 'POST', redirect: 'follow',
-      headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify({ action: 'subscribe', code: ma, may: may, sub: JSON.parse(JSON.stringify(sub)) })
-    }).then(function(x){ return x.json(); });
+  /* ===== Bang nhap ma moi (tu ve, KHONG dung prompt) =====
+     prompt()/alert() cua he thong lam MAT "cu cham" cua nguoi dung; sau do
+     Notification.requestPermission() tren iOS bi tu choi thang ma khong them
+     hien hop xin quyen. Do la ly do khach nhap ma xong lai bao "Cần cho phép
+     thông báo". Vi vay phai dung o nhap tu ve, va goi xin quyen NGAY trong
+     cu cham vao nut, truoc moi lenh cho (await). */
+  var cu = document.getElementById('knDkLop');
+  if (cu) cu.remove();
 
-    if (r && r.ok) {
-      try { localStorage.setItem('kn_push_dangky', String(Date.now())); } catch(e){}
-      ntfShow('Khoa Nguyen Signal', 'Đăng ký thành công. Có tín hiệu mới sẽ báo về máy này, kể cả khi app đóng.', 'kn-welcome');
-      alert('Đăng ký thành công.' + NL + NL + 'Từ giờ có tín hiệu là máy bạn sẽ nhận được thông báo, kể cả lúc không mở app.');
-    } else {
-      alert('Không đăng ký được: ' + ((r && r.loi) || 'lỗi không rõ'));
-    }
-  } catch (e) { alert('Không đăng ký được: ' + e.message); }
+  var lop = document.createElement('div');
+  lop.id = 'knDkLop';
+  lop.style.cssText = 'position:fixed;inset:0;z-index:99999;background:rgba(15,20,25,.55);' +
+    'display:flex;align-items:center;justify-content:center;padding:22px;' +
+    '-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);';
+  lop.innerHTML =
+    '<div style="background:#fff;border-radius:18px;max-width:340px;width:100%;padding:22px 20px 18px;' +
+      'box-shadow:0 18px 50px rgba(0,0,0,.25);font-family:Inter,system-ui,-apple-system,sans-serif;">' +
+      '<div style="font-size:17px;font-weight:800;color:#1F2937;">Nhận tín hiệu qua thông báo</div>' +
+      '<div style="font-size:13px;color:#6B7280;margin-top:6px;line-height:1.5;">' +
+        'Nhập mã mời được cấp. Sau khi bấm nút, máy sẽ hỏi cho phép thông báo — chọn <b>Cho phép</b>.</div>' +
+      '<input id="knDkMa" type="text" inputmode="text" autocapitalize="characters" autocorrect="off" ' +
+        'spellcheck="false" placeholder="MÃ MỜI" ' +
+        'style="width:100%;box-sizing:border-box;margin-top:14px;padding:12px;border:1.5px solid #E5E7EB;' +
+        'border-radius:10px;font:inherit;font-size:16px;font-weight:700;text-align:center;' +
+        'letter-spacing:.12em;text-transform:uppercase;color:#1F2937;">' +
+      '<div id="knDkMsg" style="font-size:12.5px;margin-top:9px;min-height:17px;line-height:1.4;"></div>' +
+      '<button id="knDkOk" style="width:100%;margin-top:8px;padding:13px;border:0;border-radius:11px;' +
+        'background:#18A34B;color:#fff;font:inherit;font-size:15px;font-weight:800;cursor:pointer;">' +
+        'Bật thông báo</button>' +
+      '<button id="knDkHuy" style="width:100%;margin-top:8px;padding:9px;border:0;background:none;' +
+        'color:#8A919E;font:inherit;font-size:13.5px;font-weight:600;cursor:pointer;">Để sau</button>' +
+    '</div>';
+  document.body.appendChild(lop);
+
+  var oMa  = lop.querySelector('#knDkMa');
+  var oMsg = lop.querySelector('#knDkMsg');
+  var nOk  = lop.querySelector('#knDkOk');
+  try { oMa.focus(); } catch(e){}
+
+  function baoLoi(t){ oMsg.style.color = '#DC2626'; oMsg.textContent = t; }
+  function baoOk(t){  oMsg.style.color = '#0D6E31'; oMsg.textContent = t; }
+  function dong(){ lop.remove(); }
+  function khoa(b){
+    nOk.disabled = b;
+    nOk.style.opacity = b ? '.6' : '1';
+    nOk.textContent = b ? 'Đang xử lý…' : 'Bật thông báo';
+  }
+
+  lop.querySelector('#knDkHuy').onclick = dong;
+  lop.addEventListener('click', function(e){ if (e.target === lop) dong(); });
+  oMa.addEventListener('keydown', function(e){ if (e.key === 'Enter') nOk.click(); });
+
+  nOk.onclick = function(){
+    var ma = String(oMa.value || '').trim().toUpperCase();
+    if (!ma) { baoLoi('Bạn chưa nhập mã mời.'); oMa.focus(); return; }
+
+    /* QUAN TRONG: goi xin quyen NGAY tai day, khong await bat cu thu gi truoc do,
+       nếu không iOS coi như mất cú chạm và từ chối thẳng. */
+    var xinQuyen = (Notification.permission === 'granted')
+      ? Promise.resolve('granted')
+      : Notification.requestPermission();
+
+    khoa(true);
+    baoOk('Đang chờ bạn cho phép thông báo…');
+    tiepTuc(ma, xinQuyen);
+  };
+
+  /* Dong chan doan nho: khach chup man hinh gui lai la biet ngay hong o dau */
+  function themChanDoan(quyen){
+    var cu = lop.querySelector('#knDkCd'); if (cu) cu.remove();
+    var d = document.createElement('div');
+    d.id = 'knDkCd';
+    d.style.cssText = 'font-size:11px;color:#9CA3AF;margin-top:8px;line-height:1.45;';
+    d.textContent = 'Mã lỗi: quyền=' + quyen +
+      ' · trạng thái=' + (('Notification' in window) ? Notification.permission : 'không có') +
+      ' · màn hình chính=' + (daCaiHomeScreen() ? 'có' : 'chưa') +
+      ' · iOS=' + (laIOS() ? 'có' : 'không');
+    nOk.parentNode.insertBefore(d, nOk);
+  }
+
+  function tiepTuc(ma, xinQuyen){
+    Promise.resolve(xinQuyen).then(function(quyen){
+      if (quyen !== 'granted') {
+        khoa(false);
+        /* Neu may KHONG he hien hop xin quyen (quyen van la 'default') thi la
+           truong hop mat "cu cham" — bam lai lan nua thuong la duoc. */
+        baoLoi(quyen === 'denied'
+          ? 'Máy đã chặn thông báo. Vào Cài đặt → Thông báo → "Khoa Nguyen" → bật Cho phép, rồi thử lại.'
+          : 'Máy chưa hiện hộp xin quyền. Bấm "Bật thông báo" thêm lần nữa giúp tôi.');
+        themChanDoan(quyen);
+        return null;
+      }
+      baoOk('Đang kết nối máy chủ…');
+      return dangKyPush();
+    }).then(function(sub){
+      if (!sub) return null;
+      var may = laIOS() ? 'iPhone/iPad'
+              : (/Android/i.test(navigator.userAgent) ? 'Android' : 'Máy tính');
+      return fetch(SHEET_API, {
+        method: 'POST', redirect: 'follow',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ action: 'subscribe', code: ma, may: may,
+                               sub: JSON.parse(JSON.stringify(sub)) })
+      }).then(function(x){ return x.json(); });
+    }).then(function(r){
+      if (r === null) return;
+      if (r && r.ok) {
+        try { localStorage.setItem('kn_push_dangky', String(Date.now())); } catch(e){}
+        try { ntfShow('Khoa Nguyen Signal',
+          'Đăng ký thành công. Có tín hiệu mới sẽ báo về máy này, kể cả khi app đóng.',
+          'kn-welcome'); } catch(e){}
+        dong();
+        alert('Đăng ký thành công.' + NL + NL +
+              'Từ giờ có tín hiệu là máy bạn sẽ nhận được thông báo, kể cả lúc không mở app.');
+      } else {
+        khoa(false);
+        baoLoi((r && r.loi) || 'Không đăng ký được, thử lại giúp tôi.');
+        oMa.focus(); oMa.select();
+      }
+    }).catch(function(e){
+      khoa(false);
+      baoLoi('Lỗi: ' + (e && e.message ? e.message : e));
+    });
+  }
 };
 
 window.knLayMaThietBi = async function(){
