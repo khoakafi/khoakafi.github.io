@@ -301,17 +301,28 @@
   /* ---------- 5. Điều hướng ---------- */
   var scrollMem = {};
   var lastPrimary = 'market';
+  var VIEWS = ['watch','detail','market','screener','leader','compare','news','fund'];
 
   function curView(){
     var found = null;
-    ['watch','detail','market','screener','leader','compare','news','fund'].forEach(function(v){
+    VIEWS.forEach(function(v){
       var el = document.getElementById('view-'+v);
       if (el && el.style.display !== 'none' && el.offsetParent !== null) found = v;
     });
     return found;
   }
+  /* Bản nhanh: chỉ đọc style ghi thẳng trên thẻ (showView đặt display:none/'').
+     Không đụng offsetParent nên KHÔNG ép trình duyệt tính lại layout —
+     dùng cho những chỗ chạy lặp lại liên tục. */
+  function curViewNhanh(){
+    for (var i = 0; i < VIEWS.length; i++){
+      var el = document.getElementById('view-'+VIEWS[i]);
+      if (el && el.style.display !== 'none') return VIEWS[i];
+    }
+    return null;
+  }
   function rememberScroll(){
-    var v = curView();
+    var v = curViewNhanh();
     if (v) scrollMem[v] = window.pageYOffset || 0;
   }
   function setActive(view){
@@ -326,23 +337,71 @@
     if (tEl && sec) tEl.textContent = SEC_TITLE[view] || '';
     if (PRIMARY[view]) lastPrimary = view;
   }
+  /* Hiệu ứng vào tab.
+     Cách cũ (bỏ class -> đọc offsetWidth -> thêm class) ép trình duyệt tính lại
+     layout NGAY trong lúc ngón tay vừa nhấc — với tab Hiệu suất (1.612 phần tử)
+     riêng động tác đó đã tốn ~80ms. Dùng Web Animations API thì không cần ép,
+     và hiệu ứng chạy thẳng trên trình tổng hợp ảnh. */
   function animateIn(view){
     var el = document.getElementById('view-'+view);
-    if (!el) return;
-    el.classList.remove('knAnim');
-    void el.offsetWidth;                 // ép reflow để phát lại animation
-    el.classList.add('knAnim');
+    if (!el || typeof el.animate !== 'function') return;
+    try {
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      el.animate([{ opacity: .72, transform: 'translateY(4px)' },
+                  { opacity: 1,   transform: 'none' }],
+                 { duration: 150, easing: 'ease-out' });
+    } catch(e){}
   }
+  /* ---------- 5b. Chuyển tab HAI PHA ----------
+     Đo trên CPU chậm 4x (gần với iPhone chạy PWA):
+        showView(v)            -> 82-87ms  (vì nó chạy lại inits[v](), dựng lại
+                                  toàn bộ nội dung tab, ra DOM y hệt: 461->461,
+                                  1612->1612 phần tử — tức là dựng lại thứ đã có)
+        showView(v, true)      ->  2ms     (chỉ đổi hiển thị)
+     82ms chặn luồng chính ngay lúc ngón tay nhấc lên = cảm giác "khựng, như tải lại".
+
+     Cách làm mới: PHA 1 đổi hiển thị rồi để trình duyệt vẽ ngay (2ms, tức thì);
+     PHA 2 chạy inits[v]() SAU khi đã vẽ xong, nên người dùng không phải chờ.
+     Dữ liệu vẫn được làm mới đầy đủ, không bỏ sót lần nào. */
+  var phienTab = 0;
+  function coNoiDung(view){
+    var el = document.getElementById('view-'+view);
+    return !!(el && el.firstElementChild);
+  }
+  function hienTab(view, xong){
+    var phien = ++phienTab;
+    /* Lần đầu vào tab: chưa có gì để hiện -> dựng ngay, không thì thấy trang trắng */
+    if (!coNoiDung(view)) {
+      try { window.showView(view); } catch(e){}
+      if (xong) xong();
+      return;
+    }
+    try { window.showView(view, true); } catch(e){}      // PHA 1
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){                   // đã vẽ xong màn hình mới
+        if (phien !== phienTab) return;                   // người dùng đã sang tab khác
+        if (curViewNhanh() !== view) return;
+        /* tắt gtag trong đúng lời gọi này để Analytics không đếm 2 lần 1 lần chuyển tab */
+        var g = window.gtag; window.gtag = null;
+        try { window.showView(view); } catch(e){}         // PHA 2: làm mới nội dung
+        window.gtag = g;
+        if (xong) xong();
+      });
+    });
+  }
+
   function go(view){
-    var same = curView() === view;
+    /* curViewNhanh() chỉ đọc style ghi thẳng trên thẻ -> không ép tính layout.
+       curView() cũ gọi offsetParent, mà go() gọi nó 2 lần = 2 lần ép tính. */
+    var same = curViewNhanh() === view;
     if (!same) rememberScroll();
-    try { if (typeof window.showView === 'function') window.showView(view); } catch(e){}
+    var y = same ? 0 : (scrollMem[view] || 0);
+    hienTab(view, function(){ if (!same) window.scrollTo(0, y); });
     setActive(view);
     if (same){
       /* bấm lại tab đang mở -> lên đầu trang (nếp iOS) */
       try { window.scrollTo({top:0, behavior:'smooth'}); } catch(e){ window.scrollTo(0,0); }
     } else {
-      var y = scrollMem[view] || 0;
       requestAnimationFrame(function(){ window.scrollTo(0, y); });
       animateIn(view);
     }
@@ -378,7 +437,7 @@
      lớp vỏ không biết -> tab bar sáng sai tab. Đồng bộ lại theo view đang hiện. */
   function dongBoTab(){
     try {
-      var v = curView();
+      var v = curViewNhanh();
       if (!v) return;
       var bar = document.getElementById('knTabbar'); if (!bar) return;
       var dang = null;
