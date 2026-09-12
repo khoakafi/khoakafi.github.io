@@ -3757,7 +3757,7 @@ function pinNameBar(){
          ep khung thi no tranh cho voi chart -> chart bi bop, chu de len nhau.
          Chart dung chieu cao inline (360 + 145) va trang cuon binh thuong. */
       '#proK{position:relative}'
-    + '#dPanel{overflow-y:auto;max-height:620px}'
+    + '#dPanel{overflow-y:auto}'
     + '#dTpn{margin-left:0 !important;margin-bottom:10px}'
     + '#dTpn > div{justify-content:flex-start !important}'
     + '#dTpn .tag{background:#F5FBF7 !important;color:#18A34B !important;border:1px solid #CDE9D8}'
@@ -3770,8 +3770,50 @@ function pinNameBar(){
       /* Go bo chieu cao co dinh ban cu tung dat vao (neu con sot lai) */
       var vd = document.getElementById('view-detail');
       if (vd && vd.style.height) vd.style.height = '';
+      __chartTranMan();
     }catch(e){}
   }
+
+  /* Chart gia + khoi luong phu het chieu cao man hinh (chi tren WEB may tinh).
+     App dien thoai co chieu cao rieng dat bang !important trong app-shell.js
+     nen ham nay khong dung toi app. */
+  function __chartTranMan(){
+    try{
+      if (document.documentElement.classList.contains('kn-app')) return;
+      var px = document.getElementById('proPx'), vol = document.getElementById('proVolPane');
+      var k  = document.getElementById('proK');
+      if (!px || !vol || !k || px.offsetParent === null) return;
+      var dinh = k.getBoundingClientRect().top + window.scrollY;   // vi tri chart trong trang
+      var CHAN = 66;                                               // chua dai lien he ghim duoi
+      var tong = Math.max(430, Math.round(window.innerHeight - dinh - CHAN));
+      var hPx  = Math.round(tong * 0.74), hVol = tong - hPx;
+      /* Do lai moi nhip va chi sua khi lech >6px: lan dau chart duoc dung truoc
+         khi dai watchlist ve xong nen vi tri con xe dich; cach nay tu chinh lai. */
+      if (Math.abs(parseFloat(px.style.height || 0) - hPx) > 6){
+        px.style.height = hPx + 'px';
+        vol.style.height = hVol + 'px';
+        var lg = document.getElementById('proVolLegend');
+        if (lg) lg.style.top = (hPx + 6) + 'px';
+        var pn = document.getElementById('dPanel');
+        if (pn) pn.style.maxHeight = (tong + 46) + 'px';
+        try { window.dispatchEvent(new Event('resize')); } catch(e){}
+        /* doi chieu cao xong thi vi tri chart co the xe dich -> do lai ngay
+           khung hinh ke tiep, khong cho toi nhip 1,2 giay (tranh giat 1 nhip) */
+        if (!__tmLai){ __tmLai = 1; requestAnimationFrame(function(){ __tmLai = 0; __chartTranMan(); }); }
+      }
+    }catch(e){}
+  }
+  var __tmLai = 0;
+  /* Mo mot ma -> chart duoc dung lai tu dau, canh lai ngay thay vi doi nhip */
+  try {
+    var __od = window.openDetail;
+    if (typeof __od === 'function') window.openDetail = function(){
+      var r = __od.apply(this, arguments);
+      for (var i = 1; i <= 8; i++) setTimeout(__chartTranMan, i * 220);
+      return r;
+    };
+  } catch(e){}
+  addEventListener('resize', function(){ __chartTranMan(); });
   function __fbxMove(){
     try{
       /* Tai chinh tro lai thanh mot khoi RONG NGANG nam duoi chart (nhu ban cu).
