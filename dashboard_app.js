@@ -1699,66 +1699,96 @@ function renderMatch(){
   }, 1000);
 })();
 
-/* ===== Tin tuc & su kien doanh nghiep theo ma =====
-   FireAnt tra 401 (phai co token) nen KHONG lay tu do.
-   Dung nguon VNDirect finfo ma app von da dung cho gia/BCTC: muc "events"
-   co day du su kien cua tung ma (co tuc, phat hanh, DHCD, ngay GDKHQ...).
-   Kem 2 duong dan mo trang tin cua ma do o FireAnt / Vietstock. */
+/* ===== Tin tuc theo ma =====
+   Nguon: VNDirect finfo (dung nha cung cap ma app da dung cho gia/BCTC).
+   Loc theo truong tagCodes -> ra tin bao, cong bo thong tin, bao cao phan tich
+   cua dung ma do. FireAnt tra 401 (phai co token) nen khong lay tu do;
+   TCBS / SSI / DNSE deu chan CORS nen trinh duyet khong goi duoc. */
 const TT_NHOM = {
-  schedEvent:['Dự kiến','#2563EB','#EFF4FF'],
-  investorRight:['Quyền cổ đông','#0E7A35','#E7F6EC'],
-  meeting:['Đại hội','#B45309','#FCF2E3'],
-  financial:['Tài chính','#6D28D9','#F3EDFE']
+  company_news:      ['Doanh nghiệp', '#0E7A35', '#E7F6EC'],
+  stock_news:        ['Cổ phiếu',     '#2563EB', '#EFF4FF'],
+  macro_news:        ['Vĩ mô',        '#6D28D9', '#F3EDFE'],
+  analytic_report:   ['Phân tích',    '#B45309', '#FCF2E3'],
+  disclosure:        ['Công bố TT',   '#475569', '#F1F5F9'],
+  rights_disclosure: ['Quyền cổ đông','#0E7A35', '#E7F6EC']
 };
+const TT_LOC = [
+  ['all',  'Tất cả',      null],
+  ['bai',  'Tin bài',     ['company_news','stock_news','macro_news']],
+  ['cbtt', 'Công bố TT',  ['disclosure','rights_disclosure']],
+  ['bc',   'Phân tích',   ['analytic_report']]
+];
+let TT_DATA = [], TT_MA = '', TT_LOCHIEN = 'all';
+const ttEsc = t => String(t == null ? '' : t)
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
 async function loadTinTuc(){
   const box = document.getElementById('tab-news'); if (!box || !curT) return;
-  if (box.dataset.forT === curT) return;
-  box.dataset.forT = curT;
-  const ma = curT;
-  const nut = 'display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border);'
-    + 'border-radius:9px;padding:7px 12px;font-size:12.5px;font-weight:700;color:var(--green-dark);'
-    + 'text-decoration:none;background:#fff;white-space:nowrap';
-  const ngoai = '<div style="display:flex;gap:8px;flex-wrap:wrap;margin:2px 0 12px">'
-    + '<a style="' + nut + '" target="_blank" rel="noopener" href="https://fireant.vn/ma-chung-khoan/' + ma + '">Tin ' + ma + ' trên FireAnt →</a>'
-    + '<a style="' + nut + '" target="_blank" rel="noopener" href="https://finance.vietstock.vn/' + ma + '/tin-moi-nhat.htm">Vietstock →</a>'
-    + '</div>';
-  box.innerHTML = ngoai + '<div class="mini">Đang tải sự kiện…</div>';
+  if (TT_MA === curT && TT_DATA.length) { veTinTuc(); return; }
+  const ma = curT; TT_MA = ma; TT_DATA = []; TT_LOCHIEN = 'all';
+  box.innerHTML = '<div class="mini" style="padding:6px 0">Đang tải tin…</div>';
   try {
-    const u = 'https://api-finfo.vndirect.com.vn/v4/events?q=code:' + ma
-            + '~locale:VN&size=40&sort=disclosureDate:desc';
+    const u = 'https://api-finfo.vndirect.com.vn/v4/news?q=tagCodes:' + ma
+            + '~locale:VN&size=50&sort=newsDate:desc';
     const r = await fetch(u, {cache:'no-store'}).then(x => x.json());
-    if (box.dataset.forT !== ma) return;                  // nguoi dung da doi ma
-    const ds = (r && r.data) || [];
-    if (!ds.length) { box.innerHTML = ngoai + '<div class="mini">Chưa có sự kiện nào được công bố.</div>'; return; }
-    const ngay = d => d ? (d.slice(8,10) + '/' + d.slice(5,7) + '/' + d.slice(0,4)) : '';
-    const seen = {};
-    const html = ds.map(d => {
-      const khoa = (d.typeDesc||'') + '|' + (d.note||'') + '|' + (d.disclosureDate||'');
-      if (seen[khoa]) return ''; seen[khoa] = 1;
-      const g = TT_NHOM[d.group] || ['Sự kiện','#6B7280','#F3F5F7'];
-      const khi = d.actualDate || d.effectiveDate || d.registerStartDate;
-      return '<div style="display:flex;gap:11px;padding:11px 2px;border-top:1px solid #F1F3F6">'
-        + '<div style="flex:none;width:74px;font-size:12px;font-weight:700;color:var(--muted);padding-top:1px">'
-        +   ngay(d.disclosureDate) + '</div>'
-        + '<div style="flex:1;min-width:0">'
-        +   '<div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap">'
-        +     '<span style="font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:5px;'
-        +       'background:' + g[2] + ';color:' + g[1] + '">' + g[0] + '</span>'
-        +     '<b style="font-size:13.5px">' + (d.typeDesc || '') + '</b></div>'
-        +   (d.note ? '<div class="mini" style="margin-top:3px;line-height:1.5">' + d.note + '</div>' : '')
-        +   (khi ? '<div class="mini" style="margin-top:2px">Thực hiện: ' + ngay(khi) + '</div>' : '')
-        + '</div></div>';
-    }).join('');
-    box.innerHTML = ngoai + html
-      + '<div class="mini" style="margin-top:10px;font-style:italic">Nguồn sự kiện: VNDirect. '
-      + 'Tin bài chi tiết xem ở hai đường dẫn phía trên.</div>';
+    if (TT_MA !== ma) return;
+    TT_DATA = (r && r.data) || [];
+    veTinTuc();
   } catch(e) {
-    if (box.dataset.forT !== ma) return;
-    box.innerHTML = ngoai + '<div class="mini">Không tải được sự kiện. '
+    if (TT_MA !== ma) return;
+    box.innerHTML = '<div class="mini">Không tải được tin. '
       + '<a href="javascript:void 0" style="color:var(--green-dark);font-weight:700" '
-      + 'onclick="var b=document.getElementById(\'tab-news\');b.dataset.forT=\'\';loadTinTuc()">Thử lại</a></div>';
+      + 'onclick="__ttTaiLai()">Thử lại</a></div>';
   }
 }
+
+function veTinTuc(){
+  const box = document.getElementById('tab-news'); if (!box) return;
+  const dem = k => { const g = (TT_LOC.find(x => x[0] === k) || [])[2];
+    return g ? TT_DATA.filter(d => g.indexOf(d.newsGroup) >= 0).length : TT_DATA.length; };
+  const chips = TT_LOC.filter(x => dem(x[0]) > 0).map(([k, ten]) =>
+    '<button class="pill' + (TT_LOCHIEN === k ? ' on' : '') + '" style="font-size:11.5px;padding:4px 11px"'
+    + ' onclick="__ttLoc(\'' + k + '\')">' + ten + ' ' + dem(k) + '</button>').join('');
+  const nhomLoc = (TT_LOC.find(x => x[0] === TT_LOCHIEN) || [])[2];
+  const ds = nhomLoc ? TT_DATA.filter(d => nhomLoc.indexOf(d.newsGroup) >= 0) : TT_DATA;
+
+  if (!TT_DATA.length) {
+    box.innerHTML = '<div class="mini">Chưa có tin nào cho mã này.</div>'; return;
+  }
+  const ngay = d => d ? (d.slice(8,10) + '/' + d.slice(5,7)) : '';
+  const html = ds.map(d => {
+    const g = TT_NHOM[d.newsGroup] || ['Tin', '#6B7280', '#F3F5F7'];
+    const link = d.newsUrl || d.dstockUrl || '';
+    const tt = (d.newsAbstract || '').trim();
+    const anh = d.thumbnailUrl || '';
+    return '<a href="' + ttEsc(link) + '" target="_blank" rel="noopener noreferrer"'
+      + ' style="display:flex;gap:10px;padding:11px 2px;border-top:1px solid #F1F3F6;'
+      + 'text-decoration:none;color:inherit">'
+      + '<div style="flex:1;min-width:0">'
+      +   '<div style="display:flex;align-items:center;gap:7px;margin-bottom:3px">'
+      +     '<span style="font-size:10px;font-weight:700;padding:2px 7px;border-radius:5px;'
+      +       'background:' + g[2] + ';color:' + g[1] + '">' + g[0] + '</span>'
+      +     '<span class="mini" style="font-size:11px">' + ngay(d.newsDate)
+      +       (d.newsSource ? ' · ' + ttEsc(d.newsSource) : '') + '</span></div>'
+      +   '<div style="font-size:13.5px;font-weight:700;line-height:1.4">' + ttEsc(d.newsTitle) + '</div>'
+      +   (tt ? '<div class="mini" style="margin-top:3px;line-height:1.5;display:-webkit-box;'
+      +         '-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">' + ttEsc(tt) + '</div>' : '')
+      + '</div>'
+      + (anh ? '<img src="' + ttEsc(anh) + '" alt="" loading="lazy" decoding="async" '
+             + 'style="flex:none;width:52px;height:52px;border-radius:8px;object-fit:cover;background:#EEF0F3">' : '')
+      + '</a>';
+  }).join('');
+  box.innerHTML = '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px">' + chips + '</div>'
+    + (ds.length ? html : '<div class="mini" style="padding:10px 0">Không có tin trong mục này.</div>')
+    + '<div class="mini" style="margin-top:10px;font-style:italic">Nguồn tin: VNDirect · bấm để mở bài gốc.</div>';
+}
+/* onclick trong HTML chay o pham vi toan cuc; TT_LOCHIEN/TT_MA khai bao bang
+   let o cap script nen KHONG nam tren window -> phai doi qua ham nay, neu khong
+   lenh gan chi tao ra mot bien toan cuc khac va bo loc khong an gi. */
+window.__ttLoc = function(k){ TT_LOCHIEN = k; veTinTuc(); };
+window.__ttTaiLai = function(){ TT_MA = ''; loadTinTuc(); };
+window.loadTinTuc = loadTinTuc; window.veTinTuc = veTinTuc;
+
 async function loadRecs(){
   const box = document.getElementById('tab-rec'); if (!box || !curT) return;
   if (window._recFor === curT) return;
