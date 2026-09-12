@@ -43,35 +43,41 @@
 
   /* ---------- 2. Icon SVG ---------- */
   function svg(inner, w){
-    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="'+(w||1.9)+'" '
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="'+(w||1.8)+'" '
          + 'stroke-linecap="round" stroke-linejoin="round" width="23" height="23">'+inner+'</svg>';
   }
+  /* 5 icon vẽ lại thành MỘT BỘ: cùng nét 1.8, cùng bo góc, cùng chân đế ~20,
+     cùng khối lượng thị giác. Trước đây mỗi cái một kiểu (ngôi sao mảnh, nến
+     rất chi tiết, cột lại gắn thêm ngôi sao) nên nhìn không ăn nhập nhau. */
   var IC = {
-    watch:  svg('<path d="M12 3.2l2.6 5.3 5.9.5-4.5 3.9 1.4 5.7L12 15.9 6.6 18.6 8 12.9 3.5 9l5.9-.5z"/>'),
-    detail: svg('<path d="M4 20V4"/><path d="M4 20h16"/><rect x="7" y="10" width="3" height="6" rx=".6"/><path d="M8.5 8v2M8.5 16v2"/><rect x="14" y="6" width="3" height="7" rx=".6"/><path d="M15.5 4v2M15.5 13v2"/>'),
-    market: svg('<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>'),
-    fund:   svg('<path d="M12 3a9 9 0 1 0 9 9h-9V3z"/><path d="M15.5 2.6A9 9 0 0 1 21.4 8.5H15.5V2.6z"/>'),
-    leader: svg('<rect x="9.2" y="8" width="5.6" height="12" rx=".8"/><rect x="2.8" y="12.5" width="5.6" height="7.5" rx=".8"/><rect x="15.6" y="10.5" width="5.6" height="9.5" rx=".8"/><path d="M12 2.6l.9 1.8 2 .3-1.45 1.4.35 2L12 7.2l-1.8.9.35-2L9.1 4.7l2-.3z" fill="currentColor" stroke="none"/>'),
+    watch:  svg('<path d="M12 3.4l2.65 5.37 5.93.86-4.29 4.18 1.01 5.9L12 16.9l-5.3 2.79 1.01-5.9-4.29-4.18 5.93-.86z"/>'),
+    detail: svg('<path d="M3.6 20.4h16.8"/><rect x="6" y="9.5" width="4" height="7.2" rx="1.2"/>'
+              + '<path d="M8 6.7v2.8M8 16.7v1.9"/><rect x="14" y="5.5" width="4" height="8.3" rx="1.2"/>'
+              + '<path d="M16 3.6v1.9M16 13.8v2.5"/>'),
+    market: svg('<path d="M3.6 16.4l5.2-5.2 3.4 3.4 8.2-8.2"/><path d="M15.3 6.4h5.1v5.1"/>'),
+    fund:   svg('<circle cx="12" cy="12" r="8.6"/><path d="M12 3.4V12h8.6"/>'),
+    leader: svg('<rect x="9.4" y="7.6" width="5.2" height="12.4" rx="1.4"/>'
+              + '<rect x="3" y="12.2" width="5.2" height="7.8" rx="1.4"/>'
+              + '<rect x="15.8" y="10" width="5.2" height="10" rx="1.4"/>'),
     back:   svg('<path d="M15 5l-7 7 7 7"/>', 2.2),
     filter: svg('<path d="M4 5h16l-6.2 7.2V19l-3.6 1.8v-8.6z"/>'),
     bell:   svg('<path d="M18 9a6 6 0 1 0-12 0c0 6-2.2 7-2.2 7h16.4S18 15 18 9z"/><path d="M10.2 20a2 2 0 0 0 3.6 0"/>')
   };
 
-  /* Bản ĐẶC của 5 icon tab — bật khi tab đang mở (nếp iOS: active = icon đặc) */
+  /* Bản ĐẶC — cùng hình dáng, chỉ tô đầy. Tab đang mở dùng bản này (nếp iOS). */
   function svgf(inner){
     return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" width="24" height="24">'+inner+'</svg>';
   }
   var ICF = {
-    watch:  svgf('<path d="M12 2.6l2.82 5.72 6.31.92-4.57 4.45 1.08 6.29L12 16.93l-5.64 2.97 1.08-6.29-4.57-4.45 6.31-.92z"/>'),
-    detail: svgf('<rect x="3" y="18.9" width="18" height="1.9" rx=".95"/>'
-               + '<rect x="6.1" y="9.4" width="3.8" height="7.4" rx="1.1"/><rect x="7.6" y="6.6" width=".8" height="12.6" rx=".4"/>'
-               + '<rect x="14.1" y="5.4" width="3.8" height="8.2" rx="1.1"/><rect x="15.6" y="3.2" width=".8" height="12.4" rx=".4"/>'),
-    market: svgf('<path d="M3.2 20.8h17.6V5.6l-7.3 7.3-3.7-3.7-6.6 6.6z"/>'),
-    fund:   svgf('<path d="M11 3.05A9 9 0 1 0 20.95 13H11z"/><path d="M13 2.2V11h8.8A9 9 0 0 0 13 2.2z" opacity=".5"/>'),
-    leader: svgf('<rect x="9.4" y="8.4" width="5.2" height="11.6" rx="1.1"/>'
-               + '<rect x="3" y="12.6" width="5.2" height="7.4" rx="1.1"/>'
-               + '<rect x="15.8" y="10.8" width="5.2" height="9.2" rx="1.1"/>'
-               + '<path d="M12 2.3l.87 1.77 1.95.28-1.41 1.37.33 1.94L12 6.72l-1.74.94.33-1.94-1.41-1.37 1.95-.28z"/>')
+    watch:  svgf('<path d="M12 2.9l2.78 5.63 6.22.9-4.5 4.39 1.06 6.19L12 17.09l-5.56 2.92 1.06-6.19-4.5-4.39 6.22-.9z"/>'),
+    detail: svgf('<rect x="3.6" y="19.5" width="16.8" height="1.8" rx=".9"/>'
+               + '<rect x="6" y="9.5" width="4" height="7.2" rx="1.2"/><rect x="7.3" y="6.7" width="1.4" height="11.9" rx=".7"/>'
+               + '<rect x="14" y="5.5" width="4" height="8.3" rx="1.2"/><rect x="15.3" y="3.6" width="1.4" height="12.7" rx=".7"/>'),
+    market: svgf('<path d="M3.6 20.4h16.8V5.4l-8.2 8.2-3.4-3.4-5.2 5.2z"/>'),
+    fund:   svgf('<path d="M11 3.45A8.6 8.6 0 1 0 20.55 13H11z"/><path d="M13 3.45V11h7.55A8.6 8.6 0 0 0 13 3.45z" opacity=".55"/>'),
+    leader: svgf('<rect x="9.4" y="7.6" width="5.2" height="12.4" rx="1.4"/>'
+               + '<rect x="3" y="12.2" width="5.2" height="7.8" rx="1.4"/>'
+               + '<rect x="15.8" y="10" width="5.2" height="10" rx="1.4"/>')
   };
 
   /* ---------- 3. Khai báo tab ----------
@@ -224,7 +230,7 @@
   + '.kn-app #dPanel{width:auto!important;flex:none!important;overflow:visible!important;'
   +   'max-height:none!important;border:0!important;border-radius:0!important;'
   +   'padding:14px 13px 0!important;margin-top:4px}'
-  + '.kn-app #finFull{border:0!important;padding:0!important}'
+  + '.kn-app #finFull{border:0!important;padding:0!important;margin-top:12px!important}'
   /* ===== dải tab con (Chi tiết mã): 1 hàng cuộn ngang, gạch chân bám chữ ===== */
   + '.kn-app #dTabs{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:20px;'
   +   'border-bottom:1px solid #EDEFF2;margin:0 -13px 12px;padding:0 13px;'
