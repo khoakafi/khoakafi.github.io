@@ -140,14 +140,14 @@
   +   'box-shadow:0 1px 2px rgba(16,24,40,.05),0 4px 14px rgba(16,24,40,.045)}'
   + '.kn-app .card h2{text-align:left!important;letter-spacing:-.01em!important;text-transform:none!important;'
   +   'font-size:15.5px;font-weight:800}'
-  + '.kn-app .card:not(:has(canvas)){content-visibility:auto;contain-intrinsic-size:auto 420px}'
   + '.kn-app table{font-size:13px}'
   + '.kn-app th,.kn-app td{padding:10px 8px}'
   + '.kn-app table tr.row{transition:background .12s}'
   + '.kn-app table tr.row:active{background:#EEF6F0}'
   /* chuyển tab: trượt nhẹ + mờ dần (chỉ transform/opacity -> chạy trên GPU) */
-  + '@keyframes knViewIn{from{opacity:.25;transform:translateY(9px)}to{opacity:1;transform:none}}'
-  + '.kn-app .knAnim{animation:knViewIn .19s cubic-bezier(.25,.8,.4,1)}'
+  /* nhẹ thôi: mờ 25% như trước nhìn giống tải lại trang */
+  + '@keyframes knViewIn{from{opacity:.72;transform:translateY(4px)}to{opacity:1;transform:none}}'
+  + '.kn-app .knAnim{animation:knViewIn .15s ease-out}'
   + '@media (prefers-reduced-motion:reduce){.kn-app .knAnim{animation:none}}'
   /* ===== Hiệu suất ===== */
   + '.kn-app #view-market div[style*="565"]{height:360px!important}'
@@ -600,7 +600,8 @@
                   + 'stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg>';
     document.body.appendChild(ind);
 
-    var y0 = null, active = false, MAX = 80, TRIG = 62;
+    /* ngưỡng cao hơn để vuốt nhẹ ở đầu trang không vô tình tải lại */
+    var y0 = null, active = false, MAX = 96, TRIG = 92;
     function top(){ return window.pageYOffset || document.documentElement.scrollTop || 0; }
     addEventListener('touchstart', function(e){
       if (top() > 0 || e.touches.length !== 1){ y0 = null; return; }
