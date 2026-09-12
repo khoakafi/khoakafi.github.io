@@ -57,17 +57,34 @@
     bell:   svg('<path d="M18 9a6 6 0 1 0-12 0c0 6-2.2 7-2.2 7h16.4S18 15 18 9z"/><path d="M10.2 20a2 2 0 0 0 3.6 0"/>')
   };
 
+  /* Bản ĐẶC của 5 icon tab — bật khi tab đang mở (nếp iOS: active = icon đặc) */
+  function svgf(inner){
+    return '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" width="24" height="24">'+inner+'</svg>';
+  }
+  var ICF = {
+    watch:  svgf('<path d="M12 2.6l2.82 5.72 6.31.92-4.57 4.45 1.08 6.29L12 16.93l-5.64 2.97 1.08-6.29-4.57-4.45 6.31-.92z"/>'),
+    detail: svgf('<rect x="3" y="18.9" width="18" height="1.9" rx=".95"/>'
+               + '<rect x="6.1" y="9.4" width="3.8" height="7.4" rx="1.1"/><rect x="7.6" y="6.6" width=".8" height="12.6" rx=".4"/>'
+               + '<rect x="14.1" y="5.4" width="3.8" height="8.2" rx="1.1"/><rect x="15.6" y="3.2" width=".8" height="12.4" rx=".4"/>'),
+    market: svgf('<path d="M3.2 20.8h17.6V5.6l-7.3 7.3-3.7-3.7-6.6 6.6z"/>'),
+    fund:   svgf('<path d="M11 3.05A9 9 0 1 0 20.95 13H11z"/><path d="M13 2.2V11h8.8A9 9 0 0 0 13 2.2z" opacity=".5"/>'),
+    leader: svgf('<rect x="9.4" y="8.4" width="5.2" height="11.6" rx="1.1"/>'
+               + '<rect x="3" y="12.6" width="5.2" height="7.4" rx="1.1"/>'
+               + '<rect x="15.8" y="10.8" width="5.2" height="9.2" rx="1.1"/>'
+               + '<path d="M12 2.3l.87 1.77 1.95.28-1.41 1.37.33 1.94L12 6.72l-1.74.94.33-1.94-1.41-1.37 1.95-.28z"/>')
+  };
+
   /* ---------- 3. Khai báo tab ----------
      5 tab chính theo yêu cầu: Hiệu suất (giữa, nổi) · Watchlist ·
      Chi tiết mã · Fund Insight · Leader Board.
      Bộ lọc + So sánh = trang phụ (push) mở từ icon phễu trên header.
      Bài viết: BỎ hẳn khỏi app. */
   var TABS = [
-    { v:'watch',  label:'Watchlist', icon:IC.watch  },
-    { v:'detail', label:'Chi tiết',  icon:IC.detail },
-    { v:'market', label:'Hiệu suất', icon:IC.market, center:true },
-    { v:'fund',   label:'Fund',      icon:IC.fund   },
-    { v:'leader', label:'Leader',    icon:IC.leader }
+    { v:'watch',  label:'Watchlist', icon:IC.watch,  ico2:ICF.watch  },
+    { v:'detail', label:'Chi tiết',  icon:IC.detail, ico2:ICF.detail },
+    { v:'market', label:'Hiệu suất', icon:IC.market, ico2:ICF.market },
+    { v:'fund',   label:'Fund',      icon:IC.fund,   ico2:ICF.fund   },
+    { v:'leader', label:'Leader',    icon:IC.leader, ico2:ICF.leader }
   ];
   var PRIMARY = {watch:1, detail:1, market:1, fund:1, leader:1};
   var SEC_TITLE = {screener:'Bộ lọc cổ phiếu', compare:'So sánh mã', news:'Bài viết'};
@@ -77,25 +94,33 @@
   css.textContent =
   /* ===== nền tảng ===== */
     'html.kn-app{-webkit-text-size-adjust:100%}'
+  /* Nền xám để các thẻ trắng nổi lên — đây là thứ làm app "ra app" nhất */
   + '.kn-app body{overscroll-behavior-y:contain;touch-action:manipulation;'
-  +   '-webkit-tap-highlight-color:transparent;'
-  +   'padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))!important}'
+  +   '-webkit-tap-highlight-color:transparent;background:#EEF0F3!important;'
+  +   'padding-bottom:calc(62px + env(safe-area-inset-bottom,0px))!important}'
   /* ===== topbar ===== */
-  + '.kn-app .topbar{padding-top:env(safe-area-inset-top,0px)}'
+  + '.kn-app .topbar{padding-top:env(safe-area-inset-top,0px);border-bottom:0;'
+  +   'background:rgba(255,255,255,.92);'
+  +   '-webkit-backdrop-filter:saturate(180%) blur(18px);backdrop-filter:saturate(180%) blur(18px);'
+  +   'box-shadow:0 .5px 0 rgba(16,24,40,.12)}'
   + '.kn-app .topbar-in nav{display:none!important}'
   + '.kn-app #btnOpenKafi{display:none!important}'
-  + '.kn-app .topbar-in{height:auto;padding:9px 12px;gap:10px}'
+  + '.kn-app .topbar-in{height:auto;padding:8px 10px;gap:7px}'
   + '.kn-app .logo{font-size:0;gap:0;user-select:none;-webkit-user-select:none}'
-  + '.kn-app .logo .logo-mark{flex:none;font-size:15px;width:32px;height:32px;border-radius:9px}'
+  + '.kn-app .logo .logo-mark{flex:none;font-size:15px;width:31px;height:31px;border-radius:9px}'
   + '.kn-app .logo .sub{display:none}'
-  + '.kn-app .searchbox{flex:1;min-width:0;padding:8px 13px}'
+  /* ô tìm kiếm kiểu iOS: nền xám đặc, không viền */
+  + '.kn-app .searchbox{flex:1;min-width:0;padding:8px 12px;border:0;background:#EDEFF3;border-radius:11px}'
+  + '.kn-app .searchbox:focus-within{background:#E6E9EE}'
+  + '.kn-app .searchbox svg{width:16px;height:16px}'
   + '.kn-app .searchbox input{font-size:15px;min-width:0}'
-  + '.kn-app .knIcoBtn{flex:none;width:38px;height:38px;border-radius:50%;border:1px solid var(--border);'
-  +   'background:#fff;display:flex;align-items:center;justify-content:center;color:#4b5563;'
-  +   'cursor:pointer;padding:0;transition:transform .12s}'
-  + '.kn-app .knIcoBtn:active{transform:scale(.9)}'
-  + '.kn-app .knIcoBtn svg{width:19px;height:19px}'
-  + '.kn-app #knBell.on{color:#128A3E;border-color:#9BD9B4;background:#F1FAF4}'
+  /* nút icon trên header: bỏ vòng tròn viền (dấu hiệu "web") */
+  + '.kn-app .knIcoBtn{flex:none;width:34px;height:34px;border-radius:50%;border:0;'
+  +   'background:transparent;display:flex;align-items:center;justify-content:center;color:#39414E;'
+  +   'cursor:pointer;padding:0;transition:transform .12s,background .12s}'
+  + '.kn-app .knIcoBtn:active{transform:scale(.88);background:rgba(16,24,40,.06)}'
+  + '.kn-app .knIcoBtn svg{width:21px;height:21px}'
+  + '.kn-app #knBell.on{color:#18A34B}'
   /* CSS gốc gán order cho logo/search -> đặt order rõ ràng cho nút mới */
   + '.kn-app #knBack{order:-2}'
   + '.kn-app #knSecTitle{order:-1}'
@@ -109,9 +134,12 @@
   + '.kn-app.kn-sec #knSecTitle{display:block}'
   + '.kn-app.kn-sec .logo,.kn-app.kn-sec .searchbox,.kn-app.kn-sec #knBell,.kn-app.kn-sec #knFilter{display:none!important}'
   /* ===== nội dung ===== */
-  + '.kn-app .wrap{padding:8px 0 14px 0}'
-  + '.kn-app .card{border-radius:0;border-left:0;border-right:0;box-shadow:none;margin:0 0 8px 0;padding:14px 13px}'
-  + '.kn-app .card h2{text-align:left!important;letter-spacing:0!important;text-transform:none!important;font-size:16px}'
+  + '.kn-app .wrap{padding:10px 0 16px 0}'
+  /* Thẻ trắng bo góc, nổi trên nền xám — thay cho kiểu tràn viền cũ */
+  + '.kn-app .card{background:#fff;border:0;border-radius:15px;margin:0 11px 10px;padding:14px 13px;'
+  +   'box-shadow:0 1px 2px rgba(16,24,40,.05),0 4px 14px rgba(16,24,40,.045)}'
+  + '.kn-app .card h2{text-align:left!important;letter-spacing:-.01em!important;text-transform:none!important;'
+  +   'font-size:15.5px;font-weight:800}'
   + '.kn-app .card:not(:has(canvas)){content-visibility:auto;contain-intrinsic-size:auto 420px}'
   + '.kn-app table{font-size:13px}'
   + '.kn-app th,.kn-app td{padding:10px 8px}'
@@ -128,7 +156,8 @@
   + '.kn-app .seg{display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;'
   +   '-ms-overflow-style:none;scrollbar-width:none}'
   + '.kn-app .seg::-webkit-scrollbar{display:none}'
-  + '.kn-app .seg button{flex:none;white-space:nowrap;padding:7px 14px}'
+  + '.kn-app .seg{width:100%;border-radius:11px;padding:3px}'
+  + '.kn-app .seg button{flex:1 0 auto;white-space:nowrap;padding:7px 9px;font-size:12px;border-radius:9px}'
   /* bảng lợi suất theo tháng: cuộn ngang, cột NĂM ghim trái */
   + '.kn-app #moTable table{width:auto!important;min-width:100%;table-layout:auto}'
   + '.kn-app #moTable th,.kn-app #moTable td{min-width:46px;white-space:nowrap;padding-left:3px;padding-right:3px}'
@@ -155,10 +184,56 @@
   + '.kn-app #lbGrid .lbCol{scroll-snap-align:start;border-radius:11px;padding:7px 6px}'
   + '.kn-app #lbGrid .lbHd{font-size:10px;min-height:26px}'
   + '.kn-app #lbGrid .lbR{font-size:11.5px;padding:4px 5px;margin-bottom:2px;border-radius:6px}'
+  /* ===== Chi tiết mã: bố cục kiểu app (giống FinBox) =====
+     Trước: #view-detail bị ép thành khung cao cố định, #dPanel có flex:none nên
+     KHÔNG co lại -> nó đẩy cột chart teo dần, cuối cùng chỉ còn thấy khối lượng.
+     Giờ: bỏ khung cố định, trang cuộn bình thường, thứ tự = giá -> chart to -> tab. */
+  + '.kn-app #view-detail{display:block!important;height:auto!important;overflow:visible!important}'
+  + '.kn-app #dBody{display:block!important}'
+  + '.kn-app #view-detail>.card,.kn-app #dBody>.card{display:block!important;overflow:visible!important;'
+  +   'padding:0 0 4px!important}'
+  + '.kn-app #dFlex{display:block!important;min-height:0!important}'
+  + '.kn-app #dFlex>div:first-child{display:block!important;min-height:0!important}'
+  /* ô tìm kiếm riêng của trang này: bỏ, vì thanh trên cùng đã có ô tìm kiếm */
+  + '.kn-app #view-detail .search-wrap{display:none!important}'
+  + '.kn-app #dTitle{display:none!important}'
+  /* khối giá (logo tròn + mã + tên + giá lớn) được JS đưa lên đầu thẻ */
+  + '.kn-app #dHead{order:-3;margin:0 0 2px!important;padding:13px 13px 0}'
+  + '.kn-app #dHead #dPx{margin:9px 0 0!important}'
+  /* dải chọn khung thời gian ngay trên chart */
+  + '.kn-app #dRanges{order:-2;padding:0 13px;flex-wrap:nowrap;overflow-x:auto;'
+  +   '-ms-overflow-style:none;scrollbar-width:none}'
+  + '.kn-app #dRanges::-webkit-scrollbar{display:none}'
+  + '.kn-app #dRanges>*{flex:none}'
+  /* chart: cao, tràn sát 2 mép thẻ */
+  + '.kn-app #chartProWrap{display:block!important;height:auto!important;margin:9px 0 0}'
+  + '.kn-app #proK{display:block!important;height:auto!important;flex:none!important}'
+  + '.kn-app #proPx{height:336px!important;flex:none!important;min-height:0!important}'
+  + '.kn-app #proVolPane{height:116px!important;flex:none!important;min-height:0!important}'
+  + '.kn-app #proVolLegend{top:342px!important;bottom:auto!important}'
+  + '.kn-app #chartSigWrap{margin:9px 0 0}'
+  /* dải mã watchlist ở đầu trang Chi tiết: đồng bộ với kiểu thẻ mới */
+  + '.kn-app #watchStrip{border:0!important;border-radius:13px!important;margin:0 11px 9px!important;'
+  +   'padding:7px 11px!important;box-shadow:0 1px 2px rgba(16,24,40,.05),0 4px 14px rgba(16,24,40,.045)!important;'
+  +   '-ms-overflow-style:none}'
+  + '.kn-app #watchStrip::-webkit-scrollbar{display:none}'
+  /* khối tab con nằm dưới chart, cao tự nhiên, không tự cuộn bên trong nữa */
+  + '.kn-app #dPanel{width:auto!important;flex:none!important;overflow:visible!important;'
+  +   'max-height:none!important;border:0!important;border-radius:0!important;'
+  +   'padding:14px 13px 0!important;margin-top:4px}'
+  + '.kn-app #finFull{border:0!important;padding:0!important}'
+  /* ===== dải tab con (Chi tiết mã): 1 hàng cuộn ngang, gạch chân bám chữ ===== */
+  + '.kn-app #dTabs{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:20px;'
+  +   'border-bottom:1px solid #EDEFF2;margin:0 -13px 12px;padding:0 13px;'
+  +   '-ms-overflow-style:none;scrollbar-width:none}'
+  + '.kn-app #dTabs::-webkit-scrollbar{display:none}'
+  + '.kn-app #dTabs .dtab{flex:none;white-space:nowrap;margin-right:0;padding:9px 0;'
+  +   'font-size:13.5px;font-weight:700;border-bottom-width:2.5px}'
+  + '.kn-app #dTabs .dtab.active{color:#1F2937}'
   /* ===== Fund Insight ===== */
   + '.kn-app #fiSplit{grid-template-columns:1fr!important}'
-  + '.kn-app #view-fund .fiC{border-left:0;border-right:0;border-radius:0}'
-  + '.kn-app #fiHero{border-left:0;border-right:0;border-radius:0}'
+  + '.kn-app #view-fund .fiC,.kn-app #fiHero{border-left:0;border-right:0;border-radius:15px;'
+  +   'margin-left:11px;margin-right:11px}'
   /* ===== Bộ lọc (trang phụ) ===== */
   + '.kn-app #view-screener .card > div[style*="max-height"]{max-height:none!important;'
   +   'overflow:visible!important;min-height:0!important}'
@@ -183,33 +258,33 @@
   + '.kn-app #notifBtn{position:fixed;left:-9999px;top:-9999px}'
   /* ===== footer + dải liên hệ Zalo: nằm trong trang, không đè tab bar ===== */
   + '.kn-app footer{padding-bottom:6px}'
-  + '.kn-app #nameBar{position:static!important;box-shadow:none!important;border-top:1px solid #E8EAEF}'
+  + '.kn-app #nameBar{position:static!important;border-top:0!important;border-radius:15px;'
+  +   'margin:2px 11px 10px!important;padding:14px 13px!important;'
+  +   'box-shadow:0 1px 2px rgba(16,24,40,.05),0 4px 14px rgba(16,24,40,.045)!important}'
   /* ===== tab bar ===== */
+  /* 5 tab bằng nhau, không còn nút tròn nổi ở giữa.
+     Tab đang mở: icon ĐẶC + chữ xanh (đúng nếp app iOS). */
   + '#knTabbar{position:fixed;left:0;right:0;bottom:0;z-index:9000;'
-  +   'background:transparent;pointer-events:none;'
   +   'display:grid;grid-template-columns:repeat(5,1fr);'
-  +   'padding-top:26px;'
-  +   'padding-bottom:calc(8px + env(safe-area-inset-bottom,0px));'
+  +   'background:rgba(255,255,255,.92);'
+  +   '-webkit-backdrop-filter:saturate(180%) blur(18px);backdrop-filter:saturate(180%) blur(18px);'
+  +   'border-top:.5px solid rgba(16,24,40,.13);'
+  +   'padding-bottom:env(safe-area-inset-bottom,0px);'
   +   'font-family:Inter,system-ui,-apple-system,sans-serif}'
-  + '#knTabbar::before{content:"";position:absolute;left:0;right:0;top:26px;bottom:0;'
-  +   'background:#fff;border-top:1px solid #E8EAEF;box-shadow:0 -6px 20px rgba(20,26,40,.06)}'
-  + '#knTabbar .knTab{position:relative;pointer-events:auto;background:none;border:0;cursor:pointer;'
-  +   'display:flex;flex-direction:column;align-items:center;justify-content:flex-end;'
-  +   'gap:3px;padding:8px 2px 7px;color:#8A919E;font-size:10.5px;font-weight:600;'
+  + '#knTabbar .knTab{position:relative;background:none;border:0;cursor:pointer;'
+  +   'display:flex;flex-direction:column;align-items:center;justify-content:flex-start;'
+  +   'gap:3px;padding:7px 2px 6px;color:#98A0AC;font-size:10px;font-weight:600;'
   +   'line-height:1;-webkit-tap-highlight-color:transparent;'
-  +   'transition:color .15s,transform .12s;user-select:none;-webkit-user-select:none}'
-  + '#knTabbar .knTab:active{transform:scale(.9)}'
-  + '#knTabbar .knTab svg{display:block}'
-  + '#knTabbar .knTab.active{color:#128A3E}'
-  + '#knTabbar .knTab.center{justify-content:flex-end}'
-  + '#knTabbar .knTab.center .knBadge{position:absolute;top:-20px;left:50%;transform:translateX(-50%);'
-  +   'width:52px;height:52px;border-radius:50%;background:#fff;color:#39414E;'
-  +   'display:flex;align-items:center;justify-content:center;'
-  +   'box-shadow:0 4px 12px rgba(34,38,52,.16);border:2px solid #39414E;'
-  +   'transition:background .15s,border-color .15s,color .15s}'
-  + '#knTabbar .knTab.center .knLbl{margin-top:34px}'
-  + '#knTabbar .knTab.center.active .knBadge{background:#18A34B;border-color:#fff;color:#fff;box-shadow:0 6px 16px rgba(24,163,75,.4)}'
-  + '#knTabbar .knTab.center.active{color:#128A3E}'
+  +   'transition:color .16s;user-select:none;-webkit-user-select:none}'
+  + '#knTabbar .knTab .knIco{display:block;height:24px}'
+  + '#knTabbar .knTab svg{display:block;width:24px;height:24px}'
+  + '#knTabbar .knTab .knIcoB{display:none}'
+  + '#knTabbar .knTab:active .knIco{transform:scale(.88);transition:transform .1s}'
+  + '#knTabbar .knTab.active{color:#18A34B;font-weight:700}'
+  + '#knTabbar .knTab.active .knIcoA{display:none}'
+  + '#knTabbar .knTab.active .knIcoB{display:block;animation:knPop .22s cubic-bezier(.34,1.5,.5,1)}'
+  + '@keyframes knPop{from{transform:scale(.78)}to{transform:none}}'
+  + '@media (prefers-reduced-motion:reduce){#knTabbar .knTab.active .knIcoB{animation:none}}'
   /* ===== kéo xuống để tải lại ===== */
   + '#knPtr{position:fixed;left:0;right:0;top:0;height:0;overflow:hidden;z-index:8000;'
   +   'display:flex;align-items:flex-end;justify-content:center;padding-bottom:7px;'
@@ -271,6 +346,51 @@
   }
   function goBack(){ go(lastPrimary || 'market'); }
 
+  /* ---------- 4b. Chi tiết mã: đưa khối giá lên đầu, ngay trên chart ----------
+     Bản gốc để #dHead (logo + mã + giá) nằm trong #dPanel, tức là DƯỚI chart.
+     App thật thì giá phải nằm trên cùng. Ở đây chỉ di chuyển phần tử, không
+     đụng gì tới nội dung do dashboard_app.js dựng ra. */
+  function xepLaiChiTiet(){
+    try {
+      var vd = document.getElementById('view-detail');
+      if (!vd || vd.style.display === 'none') return;
+      var card = vd.querySelector('.card'); if (!card) return;
+
+      var head = document.getElementById('dHead');
+      if (head && head.parentElement !== card) card.insertBefore(head, card.firstChild);
+
+      /* hàng chứa #dRanges (chọn khung thời gian) -> ngay dưới khối giá */
+      var rg = document.getElementById('dRanges');
+      if (rg){
+        var row = rg.parentElement;
+        if (row && row !== card && row.parentElement === card && head && row.previousElementSibling !== head)
+          card.insertBefore(row, head.nextSibling);
+      }
+      /* gỡ chiều cao cố định mà khối __fbx đặt vào (nó chạy lại mỗi 1,2 giây) */
+      if (vd.style.height) vd.style.height = '';
+    } catch(e){}
+  }
+  /* dashboard_app.js gọi showView(...) TRỰC TIẾP ở nhiều chỗ (mở mã, Fund,
+     Leader, So sánh...). Những lời gọi đó không đi qua window.showView nên
+     lớp vỏ không biết -> tab bar sáng sai tab. Đồng bộ lại theo view đang hiện. */
+  function dongBoTab(){
+    try {
+      var v = curView();
+      if (!v) return;
+      var bar = document.getElementById('knTabbar'); if (!bar) return;
+      var dang = null;
+      Array.prototype.forEach.call(bar.children, function(b){
+        if (b.classList.contains('active')) dang = b.dataset.view;
+      });
+      if (dang !== v) setActive(v);
+    } catch(e){}
+  }
+  var nhipXep = 0;
+  function batNhipXep(){
+    if (nhipXep) return;
+    nhipXep = setInterval(function(){ dongBoTab(); xepLaiChiTiet(); }, 500);
+  }
+
   function build(){
     if (document.getElementById('knTabbar')) return;
     var bar = document.createElement('nav');
@@ -278,13 +398,11 @@
     bar.setAttribute('aria-label','Điều hướng ứng dụng');
     TABS.forEach(function(t){
       var b = document.createElement('button');
-      b.className = 'knTab' + (t.center ? ' center' : '');
+      b.className = 'knTab';
       b.dataset.view = t.v;
-      if (t.center){
-        b.innerHTML = '<span class="knBadge">'+t.icon+'</span><span class="knLbl">'+t.label+'</span>';
-      } else {
-        b.innerHTML = t.icon + '<span class="knLbl">'+t.label+'</span>';
-      }
+      b.innerHTML = '<span class="knIco knIcoA">'+t.icon+'</span>'
+                  + '<span class="knIco knIcoB">'+t.ico2+'</span>'
+                  + '<span class="knLbl">'+t.label+'</span>';
       b.addEventListener('click', function(){ go(t.v); });
       bar.appendChild(b);
     });
@@ -384,8 +502,25 @@
     window.showView = function(v, skip){
       var r; try { r = orig.apply(this, arguments); } catch(e){}
       try { setActive(v); } catch(e){}
+      if (v === 'detail') try { xepLaiChiTiet(); } catch(e){}
       return r;
     };
+    /* Bấm một mã ở Watchlist/Leader -> mở Chi tiết thì phải nhảy về đầu trang,
+       nếu không người dùng rơi giữa chart (chỉ thấy phần khối lượng). */
+    if (typeof window.openDetail === 'function' && !window.__knOdHooked){
+      window.__knOdHooked = true;
+      var od = window.openDetail;
+      window.openDetail = function(t){
+        var r; try { r = od.apply(this, arguments); } catch(e){}
+        try { window.scrollTo(0, 0); } catch(e){}
+        scrollMem.detail = 0;
+        setActive('detail');
+        xepLaiChiTiet();
+        requestAnimationFrame(function(){ window.scrollTo(0, 0); xepLaiChiTiet(); });
+        setTimeout(function(){ window.scrollTo(0, 0); xepLaiChiTiet(); }, 260);
+        return r;
+      };
+    }
   }
 
   /* ---------- 6. Trang Bộ lọc: chip nhanh lên đầu, ô nhập gom lại ---------- */
@@ -506,6 +641,7 @@
     setActive(cur);
     reshapeScreener();
     softenTitles(); markScrollers();
+    batNhipXep();
     var t;
     new MutationObserver(function(){
       clearTimeout(t);
