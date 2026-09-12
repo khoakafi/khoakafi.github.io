@@ -188,12 +188,15 @@
      Trước: #view-detail bị ép thành khung cao cố định, #dPanel có flex:none nên
      KHÔNG co lại -> nó đẩy cột chart teo dần, cuối cùng chỉ còn thấy khối lượng.
      Giờ: bỏ khung cố định, trang cuộn bình thường, thứ tự = giá -> chart to -> tab. */
-  + '.kn-app #view-detail{display:block!important;height:auto!important;overflow:visible!important}'
-  + '.kn-app #dBody{display:block!important}'
-  + '.kn-app #view-detail>.card,.kn-app #dBody>.card{display:block!important;overflow:visible!important;'
+  /* KHÔNG dùng !important cho display ở các khối app bật/tắt bằng style inline
+     (#view-detail, #dBody, #chartProWrap) — nếu ép, tab Chi tiết sẽ dính lại
+     trên mọi tab khác. Chỉ cần độ ưu tiên .kn-app #id là đã thắng #id của bản gốc. */
+  + '.kn-app #view-detail{display:block;height:auto!important;overflow:visible!important}'
+  + '.kn-app #dBody{display:block}'
+  + '.kn-app #view-detail>.card,.kn-app #dBody>.card{display:block;overflow:visible!important;'
   +   'padding:0 0 4px!important}'
-  + '.kn-app #dFlex{display:block!important;min-height:0!important}'
-  + '.kn-app #dFlex>div:first-child{display:block!important;min-height:0!important}'
+  + '.kn-app #dFlex{display:block;min-height:0!important}'
+  + '.kn-app #dFlex>div:first-child{display:block;min-height:0!important}'
   /* ô tìm kiếm riêng của trang này: bỏ, vì thanh trên cùng đã có ô tìm kiếm */
   + '.kn-app #view-detail .search-wrap{display:none!important}'
   + '.kn-app #dTitle{display:none!important}'
@@ -206,8 +209,8 @@
   + '.kn-app #dRanges::-webkit-scrollbar{display:none}'
   + '.kn-app #dRanges>*{flex:none}'
   /* chart: cao, tràn sát 2 mép thẻ */
-  + '.kn-app #chartProWrap{display:block!important;height:auto!important;margin:9px 0 0}'
-  + '.kn-app #proK{display:block!important;height:auto!important;flex:none!important}'
+  + '.kn-app #chartProWrap{display:block;height:auto!important;margin:9px 0 0}'
+  + '.kn-app #proK{display:block;height:auto!important;flex:none!important}'
   + '.kn-app #proPx{height:336px!important;flex:none!important;min-height:0!important}'
   + '.kn-app #proVolPane{height:116px!important;flex:none!important;min-height:0!important}'
   + '.kn-app #proVolLegend{top:342px!important;bottom:auto!important}'
