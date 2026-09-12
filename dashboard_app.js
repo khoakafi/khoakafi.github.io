@@ -1699,6 +1699,66 @@ function renderMatch(){
   }, 1000);
 })();
 
+/* ===== Tin tuc & su kien doanh nghiep theo ma =====
+   FireAnt tra 401 (phai co token) nen KHONG lay tu do.
+   Dung nguon VNDirect finfo ma app von da dung cho gia/BCTC: muc "events"
+   co day du su kien cua tung ma (co tuc, phat hanh, DHCD, ngay GDKHQ...).
+   Kem 2 duong dan mo trang tin cua ma do o FireAnt / Vietstock. */
+const TT_NHOM = {
+  schedEvent:['Dự kiến','#2563EB','#EFF4FF'],
+  investorRight:['Quyền cổ đông','#0E7A35','#E7F6EC'],
+  meeting:['Đại hội','#B45309','#FCF2E3'],
+  financial:['Tài chính','#6D28D9','#F3EDFE']
+};
+async function loadTinTuc(){
+  const box = document.getElementById('tab-news'); if (!box || !curT) return;
+  if (box.dataset.forT === curT) return;
+  box.dataset.forT = curT;
+  const ma = curT;
+  const nut = 'display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border);'
+    + 'border-radius:9px;padding:7px 12px;font-size:12.5px;font-weight:700;color:var(--green-dark);'
+    + 'text-decoration:none;background:#fff;white-space:nowrap';
+  const ngoai = '<div style="display:flex;gap:8px;flex-wrap:wrap;margin:2px 0 12px">'
+    + '<a style="' + nut + '" target="_blank" rel="noopener" href="https://fireant.vn/ma-chung-khoan/' + ma + '">Tin ' + ma + ' trên FireAnt →</a>'
+    + '<a style="' + nut + '" target="_blank" rel="noopener" href="https://finance.vietstock.vn/' + ma + '/tin-moi-nhat.htm">Vietstock →</a>'
+    + '</div>';
+  box.innerHTML = ngoai + '<div class="mini">Đang tải sự kiện…</div>';
+  try {
+    const u = 'https://api-finfo.vndirect.com.vn/v4/events?q=code:' + ma
+            + '~locale:VN&size=40&sort=disclosureDate:desc';
+    const r = await fetch(u, {cache:'no-store'}).then(x => x.json());
+    if (box.dataset.forT !== ma) return;                  // nguoi dung da doi ma
+    const ds = (r && r.data) || [];
+    if (!ds.length) { box.innerHTML = ngoai + '<div class="mini">Chưa có sự kiện nào được công bố.</div>'; return; }
+    const ngay = d => d ? (d.slice(8,10) + '/' + d.slice(5,7) + '/' + d.slice(0,4)) : '';
+    const seen = {};
+    const html = ds.map(d => {
+      const khoa = (d.typeDesc||'') + '|' + (d.note||'') + '|' + (d.disclosureDate||'');
+      if (seen[khoa]) return ''; seen[khoa] = 1;
+      const g = TT_NHOM[d.group] || ['Sự kiện','#6B7280','#F3F5F7'];
+      const khi = d.actualDate || d.effectiveDate || d.registerStartDate;
+      return '<div style="display:flex;gap:11px;padding:11px 2px;border-top:1px solid #F1F3F6">'
+        + '<div style="flex:none;width:74px;font-size:12px;font-weight:700;color:var(--muted);padding-top:1px">'
+        +   ngay(d.disclosureDate) + '</div>'
+        + '<div style="flex:1;min-width:0">'
+        +   '<div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap">'
+        +     '<span style="font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:5px;'
+        +       'background:' + g[2] + ';color:' + g[1] + '">' + g[0] + '</span>'
+        +     '<b style="font-size:13.5px">' + (d.typeDesc || '') + '</b></div>'
+        +   (d.note ? '<div class="mini" style="margin-top:3px;line-height:1.5">' + d.note + '</div>' : '')
+        +   (khi ? '<div class="mini" style="margin-top:2px">Thực hiện: ' + ngay(khi) + '</div>' : '')
+        + '</div></div>';
+    }).join('');
+    box.innerHTML = ngoai + html
+      + '<div class="mini" style="margin-top:10px;font-style:italic">Nguồn sự kiện: VNDirect. '
+      + 'Tin bài chi tiết xem ở hai đường dẫn phía trên.</div>';
+  } catch(e) {
+    if (box.dataset.forT !== ma) return;
+    box.innerHTML = ngoai + '<div class="mini">Không tải được sự kiện. '
+      + '<a href="javascript:void 0" style="color:var(--green-dark);font-weight:700" '
+      + 'onclick="var b=document.getElementById(\'tab-news\');b.dataset.forT=\'\';loadTinTuc()">Thử lại</a></div>';
+  }
+}
 async function loadRecs(){
   const box = document.getElementById('tab-rec'); if (!box || !curT) return;
   if (window._recFor === curT) return;
@@ -2154,15 +2214,13 @@ inits.detail = function(t){
             <div id="dTabs" style="display:flex;border-bottom:1px solid var(--border);margin-bottom:10px">
               <button class="dtab active" data-t="ov">Tổng quan</button>
               <button class="dtab" data-t="sig">Tín hiệu</button>
-              <button class="dtab" data-t="fin">Tài chính</button>
               <button class="dtab" data-t="rec">CTCK KN</button>
-              <button class="dtab" data-t="mth">Khớp lệnh</button>
+              <button class="dtab" data-t="news">Tin tức</button>
             </div>
             <div id="tab-ov"><div id="dSide"></div></div>
             <div id="tab-sig" style="display:none"></div>
-            <div id="tab-fin" style="display:none"></div>
             <div id="tab-rec" style="display:none"></div>
-            <div id="tab-mth" style="display:none"></div>
+            <div id="tab-news" style="display:none"></div>
           </div>
         </div>
         <div id="finFull" style="margin-top:14px;border:1px solid var(--border);border-radius:12px;padding:14px 16px;background:#fff">
@@ -2213,11 +2271,11 @@ inits.detail = function(t){
     $('#dRanges').addEventListener('click', e => { const b = e.target.closest('button.rng'); if (!b) return; $$('#dRanges .btn.rng').forEach(x=>x.classList.remove('active')); b.classList.add('active'); drawPrice(+b.dataset.y); });
     $('#dTabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
       $$('#dTabs button').forEach(x=>x.classList.toggle('active', x===b));
-      ['ov','sig','fin','rec','mth'].forEach(k => { const d = document.getElementById('tab-'+k); if (d) d.style.display = (b.dataset.t===k?'':'none'); });
+      ['ov','sig','rec','news'].forEach(k => { const d = document.getElementById('tab-'+k); if (d) d.style.display = (b.dataset.t===k?'':'none'); });
+      window.__mthOpen = false;
       if (b.dataset.t==='sig') renderSigTab();
       if (b.dataset.t==='rec') loadRecs();
-      if (b.dataset.t==='mth') loadMatch(); else window.__mthOpen = false;
-      if (b.dataset.t==='fin' && window.__finTab) window.__finTab();
+      if (b.dataset.t==='news') loadTinTuc();
     });
     $('#btnLog').onclick = function(){ useLog = !useLog; this.classList.toggle('active', useLog); const b = $('#dRanges .btn.rng.active'); drawPrice(b?+b.dataset.y:14); };
     $('#btnFull').onclick = () => { const el = $('#chartSigWrap'); if (document.fullscreenElement) document.exitFullscreen(); else { el.style.background='#fff'; el.requestFullscreen(); } };
@@ -3710,10 +3768,7 @@ function pinNameBar(){
     + '#dTpn > div{justify-content:flex-start !important}'
     + '#dTpn .tag{background:#F5FBF7 !important;color:#18A34B !important;border:1px solid #CDE9D8}'
     + '#dTpn .mini{max-width:100% !important}'
-    + '#finFull{margin-top:0 !important;border:0 !important;padding:0 !important}'
-    + '#tab-fin{overflow-x:hidden}'
-    + '#tab-fin #finCharts{grid-template-columns:1fr !important}'
-    + '#tab-fin table{font-size:11px}';
+    + '#finFull{margin-top:14px !important}';
     document.head.appendChild(st);
   }catch(e){}
   function __fbxFit(){
@@ -3726,13 +3781,16 @@ function pinNameBar(){
   }
   function __fbxMove(){
     try{
-      var ff = document.getElementById('finFull'), bx = document.getElementById('tab-fin');
-      if (ff && bx && ff.parentElement !== bx) { bx.appendChild(ff); ff.style.display = ''; }
+      /* Tai chinh tro lai thanh mot khoi RONG NGANG nam duoi chart (nhu ban cu).
+         Nhet no vao thanh ben phai 360px lam so lieu nho qua, doc khong ra. */
+      var ff = document.getElementById('finFull'), body = document.getElementById('dBody');
+      var card = body && body.querySelector('.card');
+      if (ff && card && ff.parentElement !== card) card.appendChild(ff);
       var tp = document.getElementById('dTpn'), ov = document.getElementById('tab-ov');
       if (tp && ov && tp.parentElement !== ov) ov.insertBefore(tp, ov.firstChild);
     }catch(e){}
   }
-  window.__finTab = function(){
+  window.__finTab = function(){        /* giu lai cho ma cu goi, khong con tab Tai chinh */
     __fbxMove();
     try{ window.dispatchEvent(new Event('resize')); }catch(e){}
     // Chart.js ve khi tab con an -> canvas 0px; mo tab thi ve lai
