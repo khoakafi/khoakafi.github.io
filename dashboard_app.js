@@ -3752,18 +3752,12 @@ function pinNameBar(){
   try{
     var st = document.createElement('style'); st.id = 'knFbx';
     st.textContent =
-      '#view-detail{display:flex;flex-direction:column;overflow:hidden}'
-    + '#watchStrip{flex:0 0 auto}'
-    + '#dBody{flex:1 1 auto;min-height:0;display:flex;flex-direction:column}'
-    + '#view-detail .card{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;overflow:hidden}'
-    + '#dFlex{flex:1 1 auto;min-height:0;align-items:stretch !important}'
-    + '#dFlex > div:first-child{display:flex;flex-direction:column;min-height:0;min-width:0;flex:1 1 auto}'
-    + '#chartProWrap{flex:1 1 auto;min-height:0;display:flex;flex-direction:column}'
-    + '#proK{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;position:relative}'
-    + '#proPx{flex:1 1 auto;min-height:0;height:auto !important}'
-    + '#proVolPane{flex:0 0 27%;min-height:110px;height:auto !important}'
-    + '#proVolLegend{top:auto !important;bottom:27% !important}'
-    + '#dPanel{overflow-y:auto;align-self:stretch;max-height:none !important}'
+      /* KHONG con ep trang Chi tiet thanh khung cao co dinh overflow:hidden.
+         Khoi Tai chinh gio nam trong the (ngay duoi chart) nhu ban cu; neu van
+         ep khung thi no tranh cho voi chart -> chart bi bop, chu de len nhau.
+         Chart dung chieu cao inline (360 + 145) va trang cuon binh thuong. */
+      '#proK{position:relative}'
+    + '#dPanel{overflow-y:auto;max-height:620px}'
     + '#dTpn{margin-left:0 !important;margin-bottom:10px}'
     + '#dTpn > div{justify-content:flex-start !important}'
     + '#dTpn .tag{background:#F5FBF7 !important;color:#18A34B !important;border:1px solid #CDE9D8}'
@@ -3773,19 +3767,18 @@ function pinNameBar(){
   }catch(e){}
   function __fbxFit(){
     try{
+      /* Go bo chieu cao co dinh ban cu tung dat vao (neu con sot lai) */
       var vd = document.getElementById('view-detail');
-      if (!vd || vd.offsetParent === null) return;
-      var top = vd.getBoundingClientRect().top + window.scrollY;
-      vd.style.height = Math.max(420, window.innerHeight - top - 30) + 'px';
+      if (vd && vd.style.height) vd.style.height = '';
     }catch(e){}
   }
   function __fbxMove(){
     try{
       /* Tai chinh tro lai thanh mot khoi RONG NGANG nam duoi chart (nhu ban cu).
          Nhet no vao thanh ben phai 360px lam so lieu nho qua, doc khong ra. */
-      var ff = document.getElementById('finFull'), body = document.getElementById('dBody');
-      var card = body && body.querySelector('.card');
-      if (ff && card && ff.parentElement !== card) card.appendChild(ff);
+      var ff = document.getElementById('finFull'), fl = document.getElementById('dFlex');
+      if (ff && fl && fl.parentElement && ff.previousElementSibling !== fl)
+        fl.parentElement.insertBefore(ff, fl.nextSibling);
       var tp = document.getElementById('dTpn'), ov = document.getElementById('tab-ov');
       if (tp && ov && tp.parentElement !== ov) ov.insertBefore(tp, ov.firstChild);
     }catch(e){}
