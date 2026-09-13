@@ -96,12 +96,11 @@ html{font-size:13px}}
 .seg{display:inline-flex;background:var(--panel2);border-radius:9px;padding:3px;gap:2px}
 .seg button{border:none;background:none;font:inherit;font-size:12.5px;font-weight:600;color:var(--muted);padding:6px 16px;border-radius:7px;cursor:pointer}
 .seg button.on{background:#fff;color:var(--text);box-shadow:0 1px 3px rgba(16,24,40,.12)}
-/* Panel tin hieu ben phai: cao theo NOI DUNG, khong keo gian theo chart.
-   Truoc day no bi grid keo cao bang the chart; luc du lieu chua ve xong
-   thi phan duoi la mot mang trang lon. */
+/* Panel tin hieu ben phai keo dai bang the chart ben trai (chart nay gio phu
+   het chieu cao man hinh) -> khong con mang trong o duoi. */
 @media(min-width:1001px){
-  .hero>.card:last-child{align-self:start}
-  #recentWrap{max-height:576px}
+  .hero>.card:last-child{align-self:stretch}
+  #recentWrap{min-height:0}
 }
 /* ===== TABLES ===== */
 table{width:100%;border-collapse:collapse;font-size:13px}
@@ -226,7 +225,7 @@ body{padding-bottom:56px}
 <script src="signals_data.js"></script>
 <script src="bstar_books.js?v=20260906a"></script>
 <script src="hanghoa_data.js?v=20260907a"></script>
-<script src="dashboard_app.js?v=20260912d"></script>
+<script src="dashboard_app.js?v=20260913a"></script>
 <script src="market_v2.js?v=20260907l"></script>
 <script src="autorun.js?v=20260812a"></script>
 <script src="app-shell.js?v=20260912d"></script>
