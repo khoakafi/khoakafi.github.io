@@ -66,6 +66,40 @@ const api = {
 };
 
 const ga = (n,p) => { try { window.gtag && gtag('event', n, p||{}); } catch(e){} };
+
+/* ===== Khoa phien giao dich =====
+   Nhieu khoi du lieu chi thay doi theo PHIEN chu khong theo tung phut.
+   Ham nay tra ve mot "khoa" dang 2026-09-12#1 — chi doi khi qua moc gio moi.
+   T7/CN: lay khoa cua thu 6 (khong co giao dich nen so lieu khong lech). */
+function knNgayStr(d){
+  return d.getFullYear() + '-' + ('0'+(d.getMonth()+1)).slice(-2) + '-' + ('0'+d.getDate()).slice(-2);
+}
+function knPhienTruoc(d){
+  const x = new Date(d);
+  do { x.setDate(x.getDate() - 1); } while (x.getDay() === 0 || x.getDay() === 6);
+  return x;
+}
+function knKhoaPhien(moc){                    // moc: mang phut-trong-ngay, tang dan
+  const now = new Date();
+  let d = now, i = -1;
+  if (now.getDay() === 0 || now.getDay() === 6) {          // T7/CN -> dung cua thu 6
+    d = knPhienTruoc(now); i = moc.length - 1;
+  } else {
+    const p = now.getHours() * 60 + now.getMinutes();
+    for (let k = 0; k < moc.length; k++) if (p >= moc[k]) i = k;
+    if (i < 0) { d = knPhienTruoc(now); i = moc.length - 1; }   // chua toi moc dau -> phien truoc
+  }
+  return knNgayStr(d) + '#' + i;
+}
+function knDocCache(ten, khoa){
+  try { const s = localStorage.getItem(ten); if (!s) return null;
+        const o = JSON.parse(s); return (o && o.k === khoa) ? o.v : null; } catch(e){ return null; }
+}
+function knGhiCache(ten, khoa, v){
+  try { localStorage.setItem(ten, JSON.stringify({ k: khoa, v: v })); } catch(e){}
+}
+const KN_MOC_LB  = [11*60+30, 15*60+5];   // Leader Board: 11h30 va sau phien
+const KN_MOC_SEC = [15*60+5];             // Dinh gia theo dong: 1 lan sau phien
 const _ntf = {};
 function beepSound(){ try { const a = new (window.AudioContext||window.webkitAudioContext)(); const o = a.createOscillator(), g = a.createGain(); o.connect(g); g.connect(a.destination); o.frequency.value = 880; g.gain.value = 0.12; o.start(); o.stop(a.currentTime + 0.3); } catch(e){} }
 /* ============ THONG BAO v2 — chong spam ============
@@ -569,7 +603,7 @@ function lbScore(c, L){
   return t;
 }
 
-let lbRaw = null, lbLoading = false, lbTimer = null, lbStamp = '';
+let lbRaw = null, lbLoading = false, lbTimer = null, lbStamp = '', lbScores = null, lbKhoa = '';
 const LB_SYMS = [...new Set(Object.values(LB_SECTORS).flat())];
 const lbInSession = () => { const d=new Date(), w=d.getDay(), m=d.getHours()*60+d.getMinutes();
   return w>=1 && w<=5 && m>=9*60 && m<=15*60; };
@@ -593,14 +627,23 @@ async function lbFetchAll(onProg){
   return out;
 }
 
+/* Ve tu BANG DIEM (nho, vai KB) chu khong tu 2,3MB du lieu gia thoi -> luu
+   duoc vao localStorage, mo lai tab la hien ngay khong phai tai lai. */
+function lbTinhDiem(){
+  const o = {};
+  Object.keys(lbRaw || {}).forEach(sy => {
+    const c = lbRaw[sy]; if (!c || !c.length) return;
+    const v = lbScore(c, c.length - 1); if (v !== null) o[sy] = Math.round(v);
+  });
+  return o;
+}
 function lbRender(){
   const grid = document.getElementById('lbGrid');
-  if (!grid || !lbRaw) return;
+  if (!grid || !lbScores) return;
   grid.innerHTML = Object.entries(LB_SECTORS).map(([name, syms]) => {
     const rows = syms.map(sy => {
-      const c = lbRaw[sy]; if (!c) return null;
-      const v = lbScore(c, c.length-1); if (v===null) return null;
-      return {t:sy, sm:Math.round(v)};
+      const sm = lbScores[sy]; if (sm == null) return null;
+      return {t:sy, sm:sm};
     }).filter(Boolean).sort((a,b)=>b.sm-a.sm);
     if (!rows.length) return '';
     const body = rows.map(r => {
@@ -624,8 +667,12 @@ async function lbLoad(){
     let ngay = '';
     const any = Object.values(lbRaw)[0];
     if (any) { const d = new Date(any[any.length-1].t*1000); ngay = ('0'+d.getDate()).slice(-2)+'/'+('0'+(d.getMonth()+1)).slice(-2); }
-    lbStamp = (lbInSession() ? 'Trong phiên · giá chạy realtime' : 'Kết phiên ' + ngay)
-            + ' · cập nhật ' + new Date().toTimeString().slice(0,5) + ' · ' + Object.keys(lbRaw).length + ' mã';
+    lbStamp = 'Kết phiên ' + ngay + ' · cập nhật ' + new Date().toTimeString().slice(0,5)
+            + ' · ' + Object.keys(lbRaw).length + ' mã';
+    lbScores = lbTinhDiem();
+    lbKhoa = knKhoaPhien(KN_MOC_LB);
+    knGhiCache('kn_lb', lbKhoa, { d: lbScores, s: lbStamp });
+    lbRaw = null;                       // 2,3MB gia thoi: da tinh xong diem thi tha ra
     lbRender();
   } catch(e){
     if (st) st.textContent = 'Lỗi tải dữ liệu: ' + e.message;
@@ -653,14 +700,22 @@ inits.leader = function(){
       <div id="lbGrid"></div>
     </div>`;
   }
-  if (!lbRaw && !lbLoading) lbLoad(); else lbRender();
-  /* Tai lai 133 ma ton ~2,3MB. Diem so tinh tren nen 20/50/100/200 phien nen 3 phut
-     gan nhu khong doi gi -> gian ra 10 phut, va chi lam khi khach dang thuc su nhin tab nay. */
+  /* Diem so chi doi theo PHIEN (11h30 va sau khi ket phien), T7/CN khong doi.
+     Co ban dung phien roi thi ve ngay, khong tai lai 2,3MB va khong quay vong tron. */
+  const khoa = knKhoaPhien(KN_MOC_LB);
+  if (lbKhoa !== khoa) {
+    const luu = knDocCache('kn_lb', khoa);
+    if (luu && luu.d) { lbScores = luu.d; lbStamp = luu.s || ''; lbKhoa = khoa; }
+  }
+  if (lbScores && lbKhoa === khoa) lbRender();
+  else if (!lbLoading) lbLoad();
+  /* Moi phut kiem tra xem da qua moc gio moi chua; chua qua thi khong lam gi ca. */
   if (!lbTimer) lbTimer = setInterval(() => {
     const v = document.getElementById('view-leader');
     if (document.visibilityState !== 'visible') return;
-    if (v && v.style.display !== 'none' && lbInSession() && !lbLoading) lbLoad();
-  }, 600000);
+    if (!v || v.style.display === 'none' || lbLoading) return;
+    if (knKhoaPhien(KN_MOC_LB) !== lbKhoa) lbLoad();
+  }, 60000);
 };
 
 // ===== Tim kiem tren navbar =====
@@ -2943,8 +2998,15 @@ const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB'
 let secCache = {}, secChart = null, secGrp = 'bank';
 async function drawSec(){
   const st = $('#secSt'); const codes = SEC_GROUPS[secGrp];
-  const cch = secCache[secGrp];
-  if (!cch || (Date.now() - (cch._ts||0)) > 10*60*1000) {
+  /* Du lieu nay chi doi sau khi ket phien -> chi tinh lai 1 lan/ngay.
+     Co san trong localStorage thi ve thang, khong quay vong tron nua. */
+  const khoa = knKhoaPhien(KN_MOC_SEC);
+  let cch = secCache[secGrp];
+  if (!cch || cch._k !== khoa) {
+    const luu = knDocCache('kn_sec_' + secGrp, khoa);
+    if (luu) { luu._k = khoa; secCache[secGrp] = cch = luu; }
+  }
+  if (!cch || cch._k !== khoa) {
     if (st) st.innerHTML = '<span class="spin"></span> đang tải…';
     const out = {};
     try { const f = await jget('https://api-finfo.vndirect.com.vn/v4/ratios/latest?order=reportDate&filter=ratioCode:PRICE_TO_BOOK&where=code:'+codes.join(',')+'&size=50');
@@ -2976,8 +3038,9 @@ async function drawSec(){
         if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb;
       } catch(e){ if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb; }
     } catch(e){} }));
-    out._ts = Date.now();
+    out._ts = Date.now(); out._k = khoa;
     secCache[secGrp] = out;
+    knGhiCache('kn_sec_' + secGrp, khoa, out);       // lan sau mo tab la co ngay
     if (st) st.textContent = 'P/B hiện tại đã quy theo giá phiên mới nhất';
   }
   const D = secCache[secGrp];
@@ -3801,6 +3864,7 @@ function pinNameBar(){
       var vd = document.getElementById('view-detail');
       if (vd && vd.style.height) vd.style.height = '';
       __chartTranMan();
+      __perfTranMan();
     }catch(e){}
   }
 
@@ -3843,7 +3907,26 @@ function pinNameBar(){
       return r;
     };
   } catch(e){}
-  addEventListener('resize', function(){ __chartTranMan(); });
+  /* Tab Hieu suat: chart hieu suat cung phu het chieu cao man hinh, nho do the
+     ben phai (danh sach deal) duoc keo dai theo -> khong con mang trong o duoi. */
+  function __perfTranMan(){
+    try{
+      if (document.documentElement.classList.contains('kn-app')) return;
+      var vm = document.getElementById('view-market');
+      if (!vm || vm.style.display === 'none' || vm.offsetParent === null) return;
+      var cv = document.getElementById('cvPerf'); if (!cv) return;
+      var box = cv.parentElement; if (!box) return;
+      var dinh = box.getBoundingClientRect().top + window.scrollY;
+      var CHAN = 66;
+      var h = Math.max(430, Math.round(window.innerHeight - dinh - CHAN));
+      if (Math.abs(parseFloat(box.style.height || 0) - h) > 6){
+        box.style.height = h + 'px';
+        try { if (typeof perfChart !== 'undefined' && perfChart) perfChart.resize(); } catch(e){}
+        try { window.dispatchEvent(new Event('resize')); } catch(e){}
+      }
+    }catch(e){}
+  }
+  addEventListener('resize', function(){ __chartTranMan(); __perfTranMan(); });
   function __fbxMove(){
     try{
       /* Tai chinh tro lai thanh mot khoi RONG NGANG nam duoi chart (nhu ban cu).
