@@ -1017,7 +1017,7 @@ function renderRecentStar(){
   return true;
 }
 async function bstarInit(){
-  try { renderMonthlyStar(); await bstarLoadPrices(); renderMonthlyStar(); renderRecentStar(); drawPerf(); renderStatsStar(); } catch(e){}
+  try { if (!window.__knLite) renderMonthlyStar(); await bstarLoadPrices(); if (!window.__knLite) { renderMonthlyStar(); renderRecentStar(); drawPerf(); renderStatsStar(); } } catch(e){}
   if (!window._bsTimer) window._bsTimer = setInterval(async () => { try { await bstarLoadPrices(true); renderRecentStar(); renderMonthlyStar(); } catch(e){} }, 120000);
 }
 function renderMonthly(){
@@ -1284,9 +1284,10 @@ inits.market = async function(){
   </div>
   <div style="height:16px"></div>
   <div class="card"><h2>Lợi suất theo tháng <span class="hint">% · màu đậm = biên độ lớn · chấm mờ = đứng ngoài thị trường</span></h2><div class="mini" id="moSum" style="margin-bottom:10px"></div><div id="moTable" style="overflow-x:auto"></div></div>`;
-  drawPerf();
+  /* App (vỏ app-shell đặt window.__knLite): tab này nằm ẩn, bỏ qua chart + bảng tháng + top cho nhẹ */
+  if (!window.__knLite) { drawPerf(); }
   renderRecent();
-  renderMonthly();
+  if (!window.__knLite) { renderMonthly(); }
   refreshOpenDeals();
   bstarInit();
   if (!window._odTimer) window._odTimer = setInterval(refreshOpenDeals, 120000);
@@ -1294,7 +1295,7 @@ inits.market = async function(){
     $$('#perfSeg button').forEach(x=>x.classList.remove('on')); b.classList.add('on'); perfRange = b.dataset.r; drawPerf(); });
   const mini = (rows, cols) => `<table><tr><th>Mã</th>${cols.map(c=>`<th>${c[0]}</th>`).join('')}</tr>` +
     rows.map(r=>`<tr class="row" onclick="openDetail('${r.t}')"><td><b>${r.t}</b> <span class="mini">${(r.n||'').slice(0,22)}</span></td>${cols.map(c=>`<td class="${c[2]?c[2](r):''}">${c[1](r)}</td>`).join('')}</tr>`).join('') + '</table>';
-  renderTops();
+  if (!window.__knLite) renderTops();
 };
 
 function chartOpts(){ return {layout:{background:{color:'transparent'},textColor:'#6b7280'},grid:{vertLines:{color:'#eef1f4'},horzLines:{color:'#eef1f4'}},timeScale:{borderColor:'#e4e8ec'},rightPriceScale:{borderColor:'#e4e8ec'},autoSize:true}; }
@@ -3815,6 +3816,21 @@ document.addEventListener('visibilitychange', () => {
   }catch(e){}
 })();
 
+/* ===== KN: cầu nối cho vỏ app (app-shell.js) — CHỈ ĐỌC, không đổi logic web.
+   Các biến let/const ở đầu file không nằm trên window, nên vỏ app không với tới
+   được; gom lại đây một chỗ. Getter để luôn đọc giá trị mới nhất. ===== */
+window.KN = {
+  ROWS, byT, XROW, api, jget, fmt, pct, cls, BRD,
+  get SUM(){ return SUM; },
+  LB_SECTORS, LB_BANDS, lbBand, lbLoad,
+  get lbScores(){ return lbScores; }, get lbKhoa(){ return lbKhoa; }, get lbLoading(){ return lbLoading; }, get lbStamp(){ return lbStamp; },
+  SEC_GROUPS, drawSec, get secCache(){ return secCache; }, get secGrp(){ return secGrp; }, set secGrp(v){ secGrp = v; },
+  BSTAR, bstarDeals, bstarRecent, bstarCurve,
+  knKhoaPhien, KN_MOC_LB, KN_MOC_SEC, knDocCache, knGhiCache,
+  get curT(){ return curT; }, get curOhlc(){ return curOhlc; }, get curMarkers(){ return curMarkers; },
+  get proChart(){ return proChart; }, get proVolChart(){ return proVolChart; }, get proLoadedFor(){ return proLoadedFor; },
+  inits, showView, loadDetail, renderSigTab, loadRecs, loadTinTuc, computeTPN
+};
 })();
 
 
