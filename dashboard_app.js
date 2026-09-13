@@ -2368,8 +2368,39 @@ inits.detail = function(t){
   if (typeof t === 'string') loadDetail(t);
   else if (!curT) loadDetail('FPT');
 };
+function renderND(t){
+  // Nhan dinh ngan han 10-20 phien: doc tu nhan_dinh.js (tinh san moi phien), chi hien thi
+  const D = window.NHAN_DINH || null; const ov = document.getElementById('tab-ov'); if (!ov) return;
+  let el = document.getElementById('dND');
+  if (!el) {
+    el = document.createElement('div'); el.id = 'dND';
+    const side = document.getElementById('dSide'); ov.insertBefore(el, side || null);
+    if (!document.getElementById('ndCss')) { const st = document.createElement('style'); st.id = 'ndCss'; st.textContent =
+      '#dND{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin:0 0 14px;background:#fafbfc}'
+      + '#dND .ndh{display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.04em;color:#6b7280;text-transform:uppercase;font-weight:600}'
+      + '#dND .ndl{display:inline-block;margin-top:8px;font-weight:700;font-size:13px;padding:4px 10px;border-radius:999px}'
+      + '#dND .ndc{color:#6b7280;font-size:12px;margin:8px 0 6px}#dND .ndc b{color:#374151;font-weight:600}'
+      + '#dND .nds{font-size:13px;line-height:1.45;margin:0 0 8px}'
+      + '#dND .nda{font-size:13px;font-weight:700;padding-top:8px;border-top:1px dashed var(--border)}'
+      + '#dND.red .ndl{background:#fdecec;color:#c0392b}#dND.red .nda{color:#c0392b}'
+      + '#dND.amber .ndl{background:#fff4e0;color:#b45309}#dND.amber .nda{color:#b45309}'
+      + '#dND.grey .ndl{background:#eef0f3;color:#4b5563}#dND.grey .nda{color:#4b5563}'
+      + '#dND.blue .ndl{background:#e8f0fd;color:#2f6fdc}#dND.blue .nda{color:#2f6fdc}'
+      + '#dND.green .ndl{background:#ecf8f0;color:#1a9e55}#dND.green .nda{color:#1a9e55}';
+      document.head.appendChild(st); }
+  }
+  const r = D && D.t ? D.t[t] : null;
+  if (!r) { el.innerHTML = ''; el.style.display = 'none'; return; }
+  el.style.display = '';
+  const dd = D.d ? D.d.slice(8,10) + '/' + D.d.slice(5,7) : '';
+  const ctx = String(r.c||'').split('·').map((x,k) => k === 0 ? '<b>' + x.trim() + '</b>' : x.trim()).join(' · ');
+  el.className = 'nd ' + (r.t || 'grey');
+  el.innerHTML = '<div class="ndh"><span>Nhận định ngắn hạn · 10–20 phiên</span><span>' + dd + '</span></div>'
+    + '<span class="ndl">' + r.l + '</span><div class="ndc">' + ctx + '</div><div class="nds">' + r.s + '</div><div class="nda">→ ' + r.a + '</div>';
+}
 async function loadDetail(t){
   curT = t;
+  try { renderND(t); } catch(e){}
   try { window.__mthSwitch = 1;
     if (window.__mthFor && window.__mthFor !== t) { window.__mthFor = null; window.__vpsQ = null; window.__vpsTape = []; window.__vpsProf = {}; }
     const _mb = document.getElementById('tab-mth'), _rb = document.getElementById('tab-rec'), _sb = document.getElementById('tab-sig');
