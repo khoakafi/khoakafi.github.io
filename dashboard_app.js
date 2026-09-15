@@ -2452,7 +2452,15 @@ async function loadDetail(t){
   /* Nen cua ma cu khong con dung cho ma moi -> cat ngay, khong de nhip gia ve len no.
      Chart cu lam mo trong luc cho, tai xong thi sang lai. */
   curOhlc = null; curOhlcFor = null;
-  try { const _w = document.getElementById('chartProWrap'); if (_w) { _w.style.opacity = '.4'; _w.style.transition = 'opacity .15s'; } } catch(e){}
+  try {
+    const _w = document.getElementById('chartProWrap');
+    if (_w) {
+      _w.style.opacity = '.45';
+      /* Chốt chặn: mạng hỏng / tab bị treo giữa chừng cũng không để chart mờ mãi */
+      clearTimeout(window.__knMoTimer);
+      window.__knMoTimer = setTimeout(function(){ try { _w.style.opacity = ''; } catch(e){} }, 8000);
+    }
+  } catch(e){}
   try { renderND(t); } catch(e){}
   try { window.__mthSwitch = 1;
     if (window.__mthFor && window.__mthFor !== t) { window.__mthFor = null; window.__vpsQ = null; window.__vpsTape = []; window.__vpsProf = {}; }
@@ -2470,7 +2478,7 @@ async function loadDetail(t){
   try {
     const [oh, qs, rts] = await Promise.all([api.ohlc(t, 5100), isX ? Promise.resolve([]) : api.kqkd(t).catch(()=>[]), isX ? Promise.resolve([]) : api.ratios(t).catch(()=>[])]);
     curOhlc = oh; curOhlcFor = t;
-    try { const _w = document.getElementById('chartProWrap'); if (_w) _w.style.opacity = ''; } catch(e){}
+    try { clearTimeout(window.__knMoTimer); const _w = document.getElementById('chartProWrap'); if (_w) _w.style.opacity = ''; } catch(e){}
     // du lieu quy as-of (theo ngay cong bo) — dung cho ca bang KPI va engine tin hieu
     const qsAv = [];
     qs.forEach(q => {
@@ -2508,7 +2516,7 @@ async function loadDetail(t){
     if (_at && _at.dataset.t==='rec') loadRecs();
     if (_at && _at.dataset.t==='sig') renderSigTab();
   } catch(e){
-    try { const _w = document.getElementById('chartProWrap'); if (_w) _w.style.opacity = ''; } catch(_){}
+    try { clearTimeout(window.__knMoTimer); const _w = document.getElementById('chartProWrap'); if (_w) _w.style.opacity = ''; } catch(_){}
     toast('Lỗi tải dữ liệu '+t+': '+e.message);
   }
 }
