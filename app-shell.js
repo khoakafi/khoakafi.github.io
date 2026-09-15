@@ -473,6 +473,8 @@
     else { window.scrollTo(0, y); requestAnimationFrame(function(){ window.scrollTo(0, y); }); }
   }
   function goBack(){ go(lastPrimary || 'market'); }
+  /* Bấm vào thông báo đẩy -> dashboard_app gọi ra đây để mở đúng tab trong app */
+  window.knGoTab = function(v){ try { go(PRIMARY[v] ? v : 'watch'); } catch(e){} };
 
   /* ---------- 8. Dữ liệu chung ---------- */
   function watchRows(){
@@ -606,6 +608,15 @@
     drawPerf('all'); renderDeals();
     /* giá về (BSTAR.ready) -> vẽ lại bảng lệnh + đường cong năm nay, tối đa 60 lần */
     var n = 0; var iv = setInterval(function(){ n++; var K = KN(); if ((K && K.BSTAR && K.BSTAR.ready) || n > 60){ clearInterval(iv); renderDeals(); drawPerf(perfRange); } }, 1000);
+    /* Trong phiên: mỗi lần bảng giá về (15 giây/lần) engine gọi ra đây -> vẽ lại
+       đường hiệu suất bằng giá sống. Chỉ vẽ khi đang đứng ở tab Hiệu suất. */
+    window.__knVePerf = function(){
+      if (cur !== 'market') return;
+      if (document.visibilityState !== 'visible') return;
+      if (Date.now() - (window.__knPerfLuc || 0) < 5000) return;
+      window.__knPerfLuc = Date.now();
+      try { drawPerf(perfRange); } catch(e){}
+    };
   }
 
   /* ---------- 10. WATCHLIST ---------- */

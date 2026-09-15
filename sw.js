@@ -82,11 +82,25 @@ self.addEventListener('push', function(e){
     renotify: false,
     icon: '/icon-192.png',
     badge: '/icon-192.png',
-    data: { url: d.url || '/' }
+    data: { url: d.url || '/', ma: d.ma || '' }
   }));
 });
 
-// Bam vao thong bao -> dua ve app dang mo, khong mo them tab moi.
+// Bao cho app dang mo biet khach vua bam thong bao nao. App tra loi qua cong
+// MessageChannel; im lang 700ms (ban cu / tab treo) thi dieu huong thang bang URL.
+function knBaoApp(c, tin){
+  return new Promise(function(xong){
+    var da = false;
+    try {
+      var ch = new MessageChannel();
+      ch.port1.onmessage = function(){ da = true; xong(true); };
+      c.postMessage(tin, [ch.port2]);
+    } catch(_) { return xong(false); }
+    setTimeout(function(){ if (!da) xong(false); }, 700);
+  });
+}
+// Bam vao thong bao -> MO DUNG THU CAN XEM (tab chi tiet ma / watchlist),
+// khong phai chi focus cua so roi thoi.
 // (Tren iOS thong bao BUOC phai ban qua registration.showNotification,
 //  nen handler nay la duong duy nhat de xu ly cu bam.)
 self.addEventListener('notificationclick', function(e){
@@ -94,9 +108,18 @@ self.addEventListener('notificationclick', function(e){
   var url = (e.notification.data && e.notification.data.url) || '/';
   e.waitUntil(
     self.clients.matchAll({type: 'window', includeUncontrolled: true}).then(function(list){
+      var tin = { kn: 'mo', ma: (e.notification.data && e.notification.data.ma) || '', url: url };
       for (var i = 0; i < list.length; i++) {
         var c = list[i];
-        if (c.url.indexOf(self.location.origin) === 0 && 'focus' in c) return c.focus();
+        if (c.url.indexOf(self.location.origin) !== 0) continue;
+        return Promise.resolve(('focus' in c) ? c.focus() : c).then(function(cc){
+          cc = cc || c;
+          return knBaoApp(cc, tin).then(function(hieu){
+            if (hieu) return cc;                      // app da tu mo dung cho
+            try { if (cc.navigate) return cc.navigate(url); } catch(_){}
+            return cc;
+          });
+        });
       }
       if (self.clients.openWindow) return self.clients.openWindow(url);
     })

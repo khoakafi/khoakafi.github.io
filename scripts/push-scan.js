@@ -61,13 +61,31 @@ function duDieuKien(ma) {
 
 /* ---------- giờ phiên Việt Nam (UTC+7) ---------- */
 function nowVN() { return new Date(Date.now() + 7 * 3600 * 1000); }
+function gioVN() { const d = nowVN(); return d.getUTCHours() + d.getUTCMinutes() / 60; }
+function ngayLamViec() { const dow = nowVN().getUTCDay(); return dow >= 1 && dow <= 5; }
 function inSession() {
   if (process.env.FORCE_RUN === '1') return true;
-  const d = nowVN();
-  const dow = d.getUTCDay();
-  if (dow < 1 || dow > 5) return false;
-  const h = d.getUTCHours() + d.getUTCMinutes() / 60;
+  if (!ngayLamViec()) return false;
+  const h = gioVN();
   return (h >= 9 && h < 11.5) || (h >= 13 && h < 14.84);
+}
+/* Tổng kết CHỈ được gửi ngay sau khi đóng cửa. GitHub Actions hay chạy trễ
+   (có hôm trễ mấy tiếng) — không chặn thì khách nhận tổng kết lúc tối. */
+function trongKhungTongKet() {
+  if (process.env.FORCE_RUN === '1') return true;
+  if (!ngayLamViec()) return false;
+  const h = gioVN();
+  return h >= 14.7 && h < 16;
+}
+/* Thân tin phải có chữ thật. Trước đây tổng kết ghép chuỗi rỗng + '.' -> khách
+   nhận được đúng một dấu chấm. Không bao giờ để chuyện đó lặp lại. */
+function coNoiDung(s) {
+  return typeof s === 'string' &&
+    s.replace(/[^0-9A-Za-zÀ-ỹ]/g, '').length >= 8;
+}
+function catGon(s, n) {
+  s = String(s || '').trim();
+  return s.length <= n ? s : s.slice(0, n - 1).replace(/[\s,·]+$/, '') + '…';
 }
 function phienKey() {
   const d = nowVN();
@@ -117,10 +135,10 @@ function ghiNhatKy(o){
 function quet(gia, st) {
   const BAT = (process.env.ALERT_KINDS || 'signal,near,move').split(',');
   const ra = [];
-  const them = (key, tieuDe, than, ngan) => {
+  const them = (key, tieuDe, than, ngan, ma) => {
     if (st.daBao[key]) return;
     st.daBao[key] = Date.now();
-    ra.push({ key, tieuDe, than, ngan });
+    ra.push({ key, tieuDe, than, ngan, ma });
   };
 
   for (const r of SUM.rows) {
@@ -139,20 +157,20 @@ function quet(gia, st) {
       if (p >= nguong && duKL && BAT.includes('signal')) {
         them('SIG' + r.t, r.t + ' — TÍN HIỆU MUA KÍCH HOẠT',
           'Giá ' + p.toFixed(2) + ' vượt ngưỡng ' + nguong.toFixed(2) + ' kèm dòng tiền đạt chuẩn.',
-          r.t + ' KÍCH HOẠT MUA');
+          r.t + ' KÍCH HOẠT MUA', r.t);
         continue;
       }
       if (p < nguong && p >= nguong * 0.985 && BAT.includes('near')) {
         them('NEAR' + r.t, r.t + ' — sát điểm mua',
           'Giá ' + p.toFixed(2) + ', còn cách ngưỡng ' + nguong.toFixed(2) + ' chưa tới 1,5%.',
-          r.t + ' sát điểm mua');
+          r.t + ' sát điểm mua', r.t);
       }
     }
     if (chg != null && BAT.includes('move')) {
       if (chg >= 4) them('W4' + r.t, r.t + ' +' + chg.toFixed(1) + '% — NÓNG MÁY',
-        'Mã trong vùng theo dõi đang tăng tốc mạnh.', r.t + ' +' + chg.toFixed(1) + '%');
+        'Mã trong vùng theo dõi đang tăng tốc mạnh.', r.t + ' +' + chg.toFixed(1) + '%', r.t);
       else if (chg >= 2) them('W2' + r.t, r.t + ' +' + chg.toFixed(1) + '% — khởi động',
-        'Mã trong vùng theo dõi bắt đầu chạy.', r.t + ' +' + chg.toFixed(1) + '%');
+        'Mã trong vùng theo dõi bắt đầu chạy.', r.t + ' +' + chg.toFixed(1) + '%', r.t);
     }
   }
   return ra;
@@ -213,14 +231,26 @@ async function gui(tin) {
     process.env.VAPID_SUBJECT || 'mailto:khoanguyengstt@gmail.com',
     process.env.VAPID_PUBLIC, process.env.VAPID_PRIVATE);
 
-  let tieuDe, than, tag;
-  if (tin.length === 1) { tieuDe = tin[0].tieuDe; than = tin[0].than; tag = tin[0].key; }
-  else {
+  let tieuDe, than, tag, url, ma = '';
+  if (tin.length === 1) {
+    tieuDe = tin[0].tieuDe; than = tin[0].than; tag = tin[0].key;
+    ma = tin[0].ma || '';
+    /* Bấm vào tin 1 mã -> mở thẳng tab Chi tiết mã đó. Tin nhiều mã -> mở Watchlist. */
+    url = ma ? '/?ma=' + encodeURIComponent(ma) + '&src=push' : (tin[0].url || '/?src=push');
+  } else {
     tieuDe = tin.length + ' mã theo dõi đang chuyển động';
     than = tin.map(x => x.ngan).join('  ·  ');
     tag = 'kn-multi';
+    url = '/?tab=watch&src=push';
   }
-  const payload = JSON.stringify({ title: tieuDe, body: than, tag, url: '/' });
+  /* Luật cuối cùng trước khi bắn: tiêu đề và thân phải có chữ thật. */
+  if (!coNoiDung(tieuDe) || !coNoiDung(than)) {
+    console.error('BỎ GỬI — nội dung rỗng/không hợp lệ:', JSON.stringify({ tieuDe, than }));
+    ghiNhatKy({ ok: false, loi: 'noi dung rong', tieuDe: tieuDe, than: than });
+    return 0;
+  }
+  than = catGon(than, 180);
+  const payload = JSON.stringify({ title: tieuDe, body: than, tag, url, ma });
 
   const daGui = [];
   for (const s of subs) {
@@ -258,31 +288,78 @@ async function gui(tin) {
     } catch (e) {}
     await gui([{ key: 'kn-test-' + Date.now(),
       tieuDe: tt || 'Khoa Nguyen Signal — thử từ máy chủ',
-      than: tb || (tt ? '' : 'Thông báo đẩy từ GitHub lúc ' + gio + ' giờ VN. Nếu bạn thấy dòng này lúc app đang đóng thì hệ thống đã chạy.'),
+      than: tb || 'Thông báo đẩy từ GitHub lúc ' + gio + ' giờ VN. Nếu bạn thấy dòng này lúc app đang đóng thì hệ thống đã chạy.',
       ngan: 'thử từ máy chủ' }]);
     ghiNhatKy({ ok: true, cheDo: 'TEST_PUSH', soThietBi: (JSON.parse(process.env.PUSH_SUBS || '[]')).length });
     return;
   }
-  /* Tong ket cuoi phien — mot tin duy nhat luc ~14h50 */
+  /* Tổng kết cuối phiên — một tin duy nhất, ngay sau khi đóng cửa.
+     LUẬT:
+       1. Chỉ gửi trong khung 14:45–16:00 giờ VN của ngày giao dịch. Workflow chạy
+          trễ (GitHub hay dồn việc) thì BỎ, không gửi lúc tối.
+       2. Mỗi phiên gửi đúng 1 lần — chạy lại workflow không bắn lại.
+       3. Số liệu phải là số ĐÓNG CỬA, hỏi lại giá rồi mới viết. Mã từng bật >4%
+          trong phiên nhưng đóng cửa thấp hơn thì KHÔNG được xếp vào nhóm "trên 4%".
+       4. Thân tin rỗng -> không gửi (hàm gui() chặn lần cuối). */
   if (process.env.SUMMARY === '1') {
-    const st0 = docState();
-    const cb = Object.keys(st0.daBao || {});
-    const sig = cb.filter(k => k.indexOf('SIG') === 0).map(k => k.slice(3));
-    const nong = cb.filter(k => k.indexOf('W4') === 0).map(k => k.slice(2));
-    const sat = cb.filter(k => k.indexOf('NEAR') === 0).map(k => k.slice(4));
-    var than;
-    if (!cb.length) than = 'Hôm nay không có mã nào đạt điều kiện. Hệ thống đứng ngoài.';
-    else {
-      const ph = [];
-      if (sig.length) ph.push(sig.length + ' tín hiệu mua: ' + sig.join(', '));
-      if (sat.length) ph.push(sat.length + ' mã sát điểm mua: ' + sat.join(', '));
-      if (nong.length) ph.push(nong.length + ' mã tăng trên 4%: ' + nong.join(', '));
-      than = ph.join('. ') + '.';
+    if (!trongKhungTongKet()) {
+      console.log('Ngoài khung tổng kết (' + gioVN().toFixed(2) + 'h VN) — bỏ qua.');
+      ghiNhatKy({ ok: true, cheDo: 'SUMMARY', boQua: 'ngoai khung gio', gioVN: +gioVN().toFixed(2) });
+      return;
     }
-    await gui([{ key: 'TK' + phienKey(), tieuDe: 'Tổng kết phiên ' +
-      nowVN().toISOString().slice(8,10) + '/' + nowVN().toISOString().slice(5,7),
-      than: than, ngan: 'tổng kết phiên' }]);
-    ghiNhatKy({ ok: true, cheDo: 'SUMMARY', soCanhBao: cb.length });
+    const st0 = docState();
+    const khoaTK = 'TK' + phienKey();
+    if (st0.daBao && st0.daBao[khoaTK]) {
+      console.log('Tổng kết phiên này đã gửi rồi — bỏ qua.');
+      ghiNhatKy({ ok: true, cheDo: 'SUMMARY', boQua: 'da gui' });
+      return;
+    }
+    const cb = Object.keys(st0.daBao || {});
+    const lay = pre => cb.filter(k => k.indexOf(pre) === 0).map(k => k.slice(pre.length));
+    const sig = lay('SIG'), sat = lay('NEAR'), w4 = lay('W4'), w2 = lay('W2');
+
+    /* Hỏi lại giá đóng cửa của đúng những mã đã báo trong phiên */
+    const canHoi = [...new Set([].concat(sig, sat, w4, w2))];
+    const chot = canHoi.length ? await layGia(canHoi) : {};
+    const refOf = t => { const r = (SUM.rows || []).find(x => x.t === t); return r && r.p; };
+    const chgOf = t => {
+      const live = chot[t], ref = refOf(t);
+      if (!live || !(ref > 0)) return null;
+      return ((live.p / ref) - 1) * 100;
+    };
+    const keo = t => { const c = chgOf(t); return c == null ? t : t + ' ' + (c >= 0 ? '+' : '') + c.toFixed(1).replace('.', ',') + '%'; };
+
+    /* Phân loại lại theo giá ĐÓNG CỬA, không dùng lại nhãn lúc báo trong phiên */
+    const daBat = [...new Set([].concat(w4, w2))];
+    const coSo = daBat.some(t => chgOf(t) != null);
+    const tren4 = daBat.filter(t => (chgOf(t) || 0) >= 4);
+    const haNhiet = daBat.filter(t => w4.includes(t) && (chgOf(t) || 0) < 4);
+    const conLai = daBat.filter(t => !tren4.includes(t) && !haNhiet.includes(t) && (chgOf(t) || 0) >= 2);
+
+    let than;
+    if (!cb.length) {
+      than = 'Hôm nay không có mã nào đạt điều kiện. Hệ thống đứng ngoài, không mua đuổi.';
+    } else {
+      const ph = [];
+      if (sig.length) ph.push('Tín hiệu mua: ' + sig.map(keo).join(', '));
+      if (sat.length) ph.push('Sát điểm mua: ' + sat.join(', '));
+      if (!coSo) {
+        /* Không hỏi được giá đóng cửa -> chỉ nêu tên, tuyệt đối không phán số */
+        if (daBat.length) ph.push('Có chuyển động trong phiên: ' + daBat.join(', '));
+      } else {
+        if (tren4.length) ph.push('Đóng cửa trên +4%: ' + tren4.map(keo).join(', '));
+        if (conLai.length) ph.push('Tăng khá: ' + conLai.map(keo).join(', '));
+        if (haNhiet.length) ph.push('Bật mạnh rồi hạ nhiệt: ' + haNhiet.map(keo).join(', '));
+      }
+      than = ph.length ? ph.join('. ') + '.'
+                       : 'Phiên nay không có mã nào giữ được nhịp tới cuối phiên.';
+    }
+    const d = nowVN();
+    const soGui = await gui([{ key: khoaTK,
+      tieuDe: 'Tổng kết phiên ' + d.toISOString().slice(8, 10) + '/' + d.toISOString().slice(5, 7),
+      than: than, ngan: 'tổng kết phiên', url: '/?tab=watch&src=push' }]);
+    if (soGui) { st0.daBao[khoaTK] = Date.now(); ghiState(st0); }
+    ghiNhatKy({ ok: true, cheDo: 'SUMMARY', soCanhBao: cb.length, than: than, soGui: soGui || 0 });
     return;
   }
   if (!inSession()) { console.log('Ngoài giờ phiên — bỏ qua.'); return; }

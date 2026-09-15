@@ -758,6 +758,17 @@ function drawPerf(){
   const labels = cv.map(x => x[0].slice(5,7)+'/'+x[0].slice(2,4));
   const dsT = cv.map(x => +(((1+x[1]/100)/(1+b0[1]/100)-1)*100).toFixed(1));
   const dsV = cv.map(x => +(((1+x[2]/100)/(1+b0[2]/100)-1)*100).toFixed(1));
+  /* Trong phiên điểm cuối nhúc nhích mỗi 15 giây -> chỉ thay số chứ không dựng
+     lại biểu đồ (dựng lại liên tục vừa tốn vừa nháy mắt). */
+  if (perfChart && perfChart.__knKey === perfRange && perfChart.data.labels.length === labels.length) {
+    try {
+      perfChart.data.labels = labels;
+      perfChart.data.datasets[0].data = dsT;
+      perfChart.data.datasets[1].data = dsV;
+      perfChart.update('none');
+      return;
+    } catch(e){}
+  }
   if (perfChart) perfChart.destroy();
   perfChart = new Chart(document.getElementById('cvPerf'), { type:'line',
     data:{ labels, datasets:[
@@ -769,6 +780,7 @@ function drawPerf(){
       scales:{ x:{ticks:{color:'#7A828E', maxTicksLimit:10, font:{size:11}}, grid:{display:false}},
                y:{ticks:{color:'#7A828E', callback:v=>v+'%', font:{size:11}}, grid:{color:'#F1F3F6'}} } },
     plugins:[endBadge] });
+  perfChart.__knKey = perfRange;
 }
 async function liveQuote(){
   try {
@@ -838,7 +850,7 @@ async function bstarLoadPrices(onlyOpen){
     return { mp, ds, last: r.c[r.c.length-1], lastd: ds[ds.length-1] };
   } catch(e){ return null; } };
   await Promise.all([...need].map(async s => { const r = await one(s); if (r) BSTAR.px[s] = r; }));
-  if (!onlyOpen || !BSTAR.vni) { const v = await one('VNINDEX'); if (v) BSTAR.vni = v; }
+  { const v = await one('VNINDEX'); if (v) BSTAR.vni = v; }   // VN-Index luôn nạp lại: không thì đường so sánh đứng im cả phiên
   BSTAR.ready = true;
 }
 function bstarRecent(){
@@ -881,10 +893,10 @@ function bstarBookLive(){
   const FEE = 0.004, MR = 0.13/250;
   for (const d of cal) {
     const still = [];
-    for (const p of opn) { const px = BSTAR.px[p.t] && BSTAR.px[p.t].mp[d]; if (px > 0) p.cur = p.cost*px/p.px;
+    for (const p of opn) { const px = bstarGia(p.t, d); if (px > 0) p.cur = p.cost*px/p.px;
       if (p.sdate === d) { nav += p.cur - p.cost - p.cost*FEE; if (p.cur > p.cost) wins++; } else still.push(p); }
     opn = still;
-    (by[d] || []).forEach(tr => { const px = BSTAR.px[tr.t] && BSTAR.px[tr.t].mp[d]; if (!(px > 0)) return;
+    (by[d] || []).forEach(tr => { const px = bstarGia(tr.t, d); if (!(px > 0)) return;
       const cost = 25; opn.push({ t:tr.t, px, cost, cur:cost, sdate:tr.sdate }); });   // 25% NAV đầu năm, cố định cả năm
     const inv = opn.reduce((a,p) => a+p.cost, 0); maxexp = Math.max(maxexp, inv); maxpos = Math.max(maxpos, opn.length);
     if (inv > nav) nav -= (inv-nav)*MR;
@@ -894,6 +906,26 @@ function bstarBookLive(){
   for (let k = 1; k <= 12; k++) { if (k in mend) { m[k] = (mend[k]/prev-1)*100; prev = mend[k]; } else m[k] = null; }
   const v0 = BSTAR.vni.mp[cal[0]], v1 = BSTAR.vni.mp[cal[cal.length-1]];
   return { m, spill:0, year:last-100, vni:(v1/v0-1)*100, n:ds.length, win:wins, maxpos, maxexp:Math.round(maxexp), live:true };
+}
+/* Giá dùng cho đường hiệu suất. Riêng NGÀY HÔM NAY lấy giá sống từ bảng giá
+   (làm mới 15 giây/lần) -> trong phiên đường hiệu suất chạy theo thị trường chứ
+   không phải hết phiên mới nhúc nhích. Ngày cũ vẫn lấy nến ngày đã chốt. */
+function bstarNgayVN(){ return new Date(Date.now() + 7*3600*1000).toISOString().slice(0,10); }
+/* Giá mới về -> làm tươi trang Hiệu suất ngay trong phiên (trước đây phải hết phiên,
+   chờ sổ B★ được xuất bản lại thì đường mới nhúc nhích).
+   Bản web vẽ bằng Chart.js; bản app (knLite) có khung riêng nên gọi hook của app-shell. */
+function knHieuSuatTuoi(){
+  try { if (!window.BSTAR || !BSTAR.ready) return; } catch(e){ return; }
+  if (!window.__knLite) {
+    try { drawPerf(); } catch(e){}
+    try { renderStatsStar(); } catch(e){}
+    try { renderMonthlyStar(); } catch(e){}
+  }
+  try { if (typeof window.__knVePerf === 'function') window.__knVePerf(); } catch(e){}
+}
+function bstarGia(t, d){
+  if (d === bstarNgayVN()) { const r = byT[t]; if (r && r.p > 0) return r.p; }
+  const p = BSTAR.px[t]; return p && p.mp[d];
 }
 function bstarCurve(){
   const C = window.BSTAR_CURVE; if (!C || !C.pts) return null;
@@ -911,10 +943,10 @@ function bstarCurve(){
   const live = []; const closed = [];
   for (let i = 0; i < cal.length; i++) { const d = cal[i];
     const still = [];
-    for (const p of opn) { const px = BSTAR.px[p.t] && BSTAR.px[p.t].mp[d]; if (px > 0) p.cur = p.cost*px/p.px;
+    for (const p of opn) { const px = bstarGia(p.t, d); if (px > 0) p.cur = p.cost*px/p.px;
       if (p.sdate === d) { const pnl = p.cur - p.cost - p.cost*FEE; nav += pnl; closed.push(pnl/p.cost*100); } else still.push(p); }
     opn = still;
-    (by[d] || []).forEach(tr => { const px = BSTAR.px[tr.t] && BSTAR.px[tr.t].mp[d]; if (!(px > 0)) return; const cost = unit; opn.push({ t:tr.t, px, cost, cur:cost, sdate:tr.sdate }); });
+    (by[d] || []).forEach(tr => { const px = bstarGia(tr.t, d); if (!(px > 0)) return; const cost = unit; opn.push({ t:tr.t, px, cost, cur:cost, sdate:tr.sdate }); });
     const inv = opn.reduce((a,p) => a+p.cost, 0); if (inv > nav) nav -= (inv-nav)*MR;
     const eq = nav + opn.reduce((a,p) => a+p.cur-p.cost, 0);
     const last = i === cal.length-1 || wk(cal[i+1]) !== wk(d);
@@ -1018,7 +1050,16 @@ function renderRecentStar(){
 }
 async function bstarInit(){
   try { if (!window.__knLite) renderMonthlyStar(); await bstarLoadPrices(); if (!window.__knLite) { renderMonthlyStar(); renderRecentStar(); drawPerf(); renderStatsStar(); } } catch(e){}
-  if (!window._bsTimer) window._bsTimer = setInterval(async () => { try { await bstarLoadPrices(true); renderRecentStar(); renderMonthlyStar(); } catch(e){} }, 120000);
+  /* Nhịp 2 phút: nạp lại nến ngày của các vị thế đang mở + VN-Index rồi vẽ lại
+     trang Hiệu suất. Trong phiên, giữa hai nhịp này đường vẫn chạy nhờ giá sống
+     (bstarGia lấy giá hôm nay từ bảng giá, làm mới 15 giây/lần). */
+  if (!window._bsTimer) window._bsTimer = setInterval(async () => {
+    try {
+      await bstarLoadPrices(true);
+      if (!window.__knLite) { renderRecentStar(); renderMonthlyStar(); }
+      knHieuSuatTuoi();
+    } catch(e){}
+  }, 120000);
 }
 function renderMonthly(){
   if (renderMonthlyStar()) return;
@@ -1396,6 +1437,11 @@ function renderSc(){
 
 // ================= 3. CHI TIẾT MÃ =================
 let dtInit = false, dtCharts = [], kqChart = null, rtChart = null, curT = null, curOhlc = null;
+/* curOhlcFor = ma ma curOhlc dang chua. Doi ma thi curT doi NGAY, con curOhlc phai cho
+   tai xong (1-2 giay). Trong khe do, neu lay gia cua ma MOI ap vao nen cua ma CU se ve ra
+   "nen ao" dai thoong roi moi tu sua. Moi cho cap nhat gia trong phien phai hoi nenKhopMa(). */
+let curOhlcFor = null;
+function nenKhopMa(){ return !!(curT && curOhlc && curOhlc.t && curOhlc.t.length && curOhlcFor === curT); }
 let dtData = null;
 function updateKpis(i){
   if (!dtData) return;
@@ -1726,8 +1772,10 @@ function renderMatch(){
 (function nhipVPS(){
   setTimeout(async () => {
     try {
-      if (document.visibilityState === 'visible' && liveWatch.inSession() && curT && curOhlc && curOhlc.t && curOhlc.t.length >= 2) {
+      if (document.visibilityState === 'visible' && liveWatch.inSession() && nenKhopMa() && curOhlc.t.length >= 2) {
+        const maLuc0 = curT;
         const j = await (await fetch('https://bgapidatafeed.vps.com.vn/getliststockdata/' + curT, {cache:'no-store'})).json();
+        if (maLuc0 !== curT || !nenKhopMa()) { nhipVPS(); return; }   // doi ma giua chung -> bo ket qua cu
         const q = (j && j[0]) || null;
         if (q && +q.lastPrice > 0 && String(q.sym) === String(curT)) {
           window.__vpsOk = Date.now();
@@ -1921,7 +1969,7 @@ window.__rebuildBadges = function(){
     const px = (r.p != null && isFinite(r.p) && r.p > 0) ? r.p : null;
     const daCoTinHieu = out.some(b => b.i === n-1 && b.below);
     // Mui ten trong phien: cung cua voi cuoi phien (nen/co ban phai dat) va phan biet B\u2605 / B theo co wstar cua bep
-    if (g && lv != null && px != null && !daCoTinHieu
+    if (g && lv != null && px != null && !daCoTinHieu && nenKhopMa()
         && liveWatch.inSession() && px >= g[0] && lv >= g[1]
         && (typeof __nenOk !== 'function' || __nenOk(curT))) {
       const sao = (r.wstar === 1) || (((window.SUMMARY||{}).rows||[]).some(x => x && x.t === curT && x.wstar === 1));
@@ -1940,7 +1988,7 @@ function addProBadges(){
 // Moi lan feed song lam moi -> cap nhat CAY NEN CUOI + ve lai mui ten + legend.
 function syncLiveBar(){
   try {
-    if (!proCandle || !curOhlc || !curT || !curOhlc.t) return;
+    if (!proCandle || !nenKhopMa()) return;   // nen cua ma khac -> khong duoc ve
     const n = curOhlc.t.length; if (!n) return;
     const ts = curOhlc.t[n-1];
     const lv = liveVolOf(curT, ts);
@@ -2401,6 +2449,10 @@ function renderND(t){
 }
 async function loadDetail(t){
   curT = t;
+  /* Nen cua ma cu khong con dung cho ma moi -> cat ngay, khong de nhip gia ve len no.
+     Chart cu lam mo trong luc cho, tai xong thi sang lai. */
+  curOhlc = null; curOhlcFor = null;
+  try { const _w = document.getElementById('chartProWrap'); if (_w) { _w.style.opacity = '.4'; _w.style.transition = 'opacity .15s'; } } catch(e){}
   try { renderND(t); } catch(e){}
   try { window.__mthSwitch = 1;
     if (window.__mthFor && window.__mthFor !== t) { window.__mthFor = null; window.__vpsQ = null; window.__vpsTape = []; window.__vpsProf = {}; }
@@ -2417,7 +2469,8 @@ async function loadDetail(t){
   $('#dBody').style.display='';
   try {
     const [oh, qs, rts] = await Promise.all([api.ohlc(t, 5100), isX ? Promise.resolve([]) : api.kqkd(t).catch(()=>[]), isX ? Promise.resolve([]) : api.ratios(t).catch(()=>[])]);
-    curOhlc = oh;
+    curOhlc = oh; curOhlcFor = t;
+    try { const _w = document.getElementById('chartProWrap'); if (_w) _w.style.opacity = ''; } catch(e){}
     // du lieu quy as-of (theo ngay cong bo) — dung cho ca bang KPI va engine tin hieu
     const qsAv = [];
     qs.forEach(q => {
@@ -2454,7 +2507,10 @@ async function loadDetail(t){
     const _at = document.querySelector('#dTabs button.active');
     if (_at && _at.dataset.t==='rec') loadRecs();
     if (_at && _at.dataset.t==='sig') renderSigTab();
-  } catch(e){ toast('Lỗi tải dữ liệu '+t+': '+e.message); }
+  } catch(e){
+    try { const _w = document.getElementById('chartProWrap'); if (_w) _w.style.opacity = ''; } catch(_){}
+    toast('Lỗi tải dữ liệu '+t+': '+e.message);
+  }
 }
 // ===== B★: nang cap hien thi diem mua dat chuan nen co hep + thi truong thuan (display-only) =====
 let __ixSD=null, __ixSI=null;
@@ -3261,6 +3317,7 @@ window.__loiLienTiep = 0;
       if (oK) {
         window.__loiLienTiep = 0; window.__nhipPhat = 0;
         renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar();
+        knHieuSuatTuoi();
         try { if (!window.__dHov) updateDPx(null); } catch(e){}
       } else {
         window.__loiLienTiep++;
@@ -3276,11 +3333,12 @@ window.__loiLienTiep = 0;
   setTimeout(async () => {
     try {
       if (Date.now() - (window.__vpsOk||0) < 20000) { nhipNhanh(); return; }
-      if (document.visibilityState === 'visible' && liveWatch.inSession() && curT && curOhlc && document.getElementById('proK')) {
+      if (document.visibilityState === 'visible' && liveWatch.inSession() && nenKhopMa() && document.getElementById('proK')) {
         const to = Math.floor(Date.now()/1000);
+        const maLuc0 = curT;
         const r = await (await fetch('https://dchart-api.vndirect.com.vn/dchart/history?symbol=' + curT + '&resolution=1&from=' + (to - 8*3600) + '&to=' + to)).json();
         const n = ((r && r.t) || []).length;
-        if (n) {
+        if (n && maLuc0 === curT && nenKhopMa()) {   // doi ma giua chung -> bo ket qua cu
           const row = byT[curT];
           const nb = curOhlc.t.length;
           if (row && row.v20 && nb >= 2 && liveVolOf(curT, curOhlc.t[nb-1]) != null) {
@@ -3304,6 +3362,7 @@ document.addEventListener('visibilitychange', () => {
     try {
       if (await liveQuote()) {
         renderTops(); scanNewSignals(); checkWatchAlerts(); renderRecent(); syncLiveBar();
+        knHieuSuatTuoi();
         try { if (!window.__dHov) updateDPx(null); } catch(e){}
       }
     } catch(e){}
@@ -3825,7 +3884,7 @@ window.KN = {
   LB_SECTORS, LB_BANDS, lbBand, lbLoad,
   get lbScores(){ return lbScores; }, get lbKhoa(){ return lbKhoa; }, get lbLoading(){ return lbLoading; }, get lbStamp(){ return lbStamp; },
   SEC_GROUPS, drawSec, get secCache(){ return secCache; }, get secGrp(){ return secGrp; }, set secGrp(v){ secGrp = v; },
-  BSTAR, bstarDeals, bstarRecent, bstarCurve,
+  BSTAR, bstarDeals, bstarRecent, bstarCurve, bstarGia, bstarNgayVN, knHieuSuatTuoi,
   knKhoaPhien, KN_MOC_LB, KN_MOC_SEC, knDocCache, knGhiCache,
   get curT(){ return curT; }, get curOhlc(){ return curOhlc; }, get curMarkers(){ return curMarkers; },
   get proChart(){ return proChart; }, get proVolChart(){ return proVolChart; }, get proLoadedFor(){ return proLoadedFor; },
@@ -4134,5 +4193,64 @@ function pinNameBar(){
     function thuTaiLai(){ if (!window.__coBanMoi) return; if (document.hidden || Date.now() - idle > 90000) location.reload(); else setTimeout(thuTaiLai, 30000); }
     setInterval(kiem, 10*60000); setTimeout(kiem, 60000);
     document.addEventListener('visibilitychange', () => { if (document.hidden && window.__coBanMoi) location.reload(); });
+  } catch(e){}
+})();
+
+/* ===== [20260915] Bấm vào thông báo đẩy -> mở đúng thứ khách cần xem =====
+   Trước đây payload nào cũng url:'/' và service worker chỉ focus cửa sổ cũ,
+   nên khách bấm vào thông báo thì "không ra gì". Giờ:
+     · Tin 1 mã            -> mở thẳng tab Chi tiết của mã đó
+     · Tin nhiều mã / tổng kết -> mở Watchlist
+   Hai đường vào:
+     1. App đang đóng  -> service worker mở /?ma=XXX, đọc ở đây lúc khởi động
+     2. App đang mở nền -> service worker gửi message, mở ngay không tải lại trang */
+(function(){
+  function moTab(tab){
+    tab = String(tab || 'watch');
+    try { if (typeof window.knGoTab === 'function') { window.knGoTab(tab); return true; } } catch(e){}
+    try { if (typeof window.showView === 'function') { window.showView(tab); return true; } } catch(e){}
+    return false;
+  }
+  function coDuLieu(ma){
+    try { var K = window.KN; if (K && typeof K.XROW === 'function') return !!K.XROW(ma); } catch(e){}
+    return true;
+  }
+  function moMa(ma, lan){
+    ma = String(ma || '').toUpperCase().trim(); if (!ma) return;
+    lan = lan || 0;
+    if (typeof window.openDetail === 'function' && (coDuLieu(ma) || lan >= 20)) {
+      try { window.openDetail(ma); } catch(e){}
+      return;
+    }
+    if (lan < 24) setTimeout(function(){ moMa(ma, lan + 1); }, 300);   // chờ bảng giá nạp xong
+  }
+  window.knMoTuThongBao = function(d){
+    d = d || {};
+    if (d.ma) { moMa(d.ma); return; }
+    var m = String(d.url || '').match(/[?&]tab=([a-z]+)/);
+    moTab(m ? m[1] : 'watch');
+  };
+  /* 1. Khởi động từ thông báo: /?ma=SSB hoặc /?tab=watch */
+  try {
+    var q = new URLSearchParams(location.search);
+    var ma = q.get('ma'), tab = q.get('tab');
+    if (ma) setTimeout(function(){ moMa(ma); }, 500);
+    else if (tab) setTimeout(function(){ moTab(tab); }, 500);
+    if ((ma || tab) && history.replaceState) {           // dọn lại URL cho sạch
+      q.delete('ma'); q.delete('tab'); q.delete('src');
+      var s = q.toString();
+      history.replaceState(null, '', location.pathname + (s ? '?' + s : '') + location.hash);
+    }
+  } catch(e){}
+  /* 2. App đang mở sẵn: nhận tin từ service worker rồi báo lại đã xử lý */
+  try {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.addEventListener('message', function(e){
+        var d = e.data || {};
+        if (!d || d.kn !== 'mo') return;
+        try { if (e.ports && e.ports[0]) e.ports[0].postMessage({ ok: 1 }); } catch(_){}
+        window.knMoTuThongBao(d);
+      });
+    }
   } catch(e){}
 })();
