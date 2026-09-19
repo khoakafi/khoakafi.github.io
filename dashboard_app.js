@@ -1022,7 +1022,7 @@ function renderRecentStar(){
   if (!rows.length) return false;
   const yNow = String(new Date().getFullYear());
   const nNow = rows.filter(r => r.bdate.slice(0,4) === yNow).length;
-  try { const h = el.parentElement && el.parentElement.querySelector('h2'); if (h) h.innerHTML = 'TÍN HIỆU B★ ' + yNow + ' <span class="hint">' + nNow + ' deal · kéo xuống xem từ ' + rows[rows.length-1].bdate.slice(0,4) + '</span>'; } catch(e){}
+  try { const cd = el.closest ? el.closest('.card') : el.parentElement; const h = cd && cd.querySelector('h2'); if (h) h.innerHTML = 'TÍN HIỆU B★ ' + yNow + ' <span class="hint">' + nNow + ' deal · kéo xuống xem từ ' + rows[rows.length-1].bdate.slice(0,4) + '</span>'; } catch(e){}
   const thS = 'position:sticky;top:0;background:#fff;z-index:1';
   let lastY = null; const body = [];
   rows.forEach(d => {
@@ -1037,15 +1037,11 @@ function renderRecentStar(){
   });
   el.innerHTML = `<table class="sigtb"><tr><th style="${thS}">Mã</th><th style="${thS}">Giá mua</th><th style="${thS}">Giá bán / TT</th><th style="${thS}">Lợi suất</th></tr>` + body.join('') + '</table>'
     + `<div class="hint" style="padding:8px 4px 0">Chỉ tín hiệu B★ (nền siết) · mua/bán giá đóng cửa · lợi suất đã trừ phí 0,4% với deal đã bán · các năm cũ lấy từ giá đã điều chỉnh cổ tức.</div>`;
-  // khoá chiều cao thẻ bằng thẻ biểu đồ bên cạnh; phần còn lại cuộn trong khung
-  try {
-    const card = el.parentElement, chartCard = card && card.previousElementSibling;
-    if (chartCard) {
-      card.style.alignSelf = 'start'; el.style.maxHeight = '100px';
-      const overhead = card.offsetHeight - 100; const nat = chartCard.offsetHeight;
-      card.style.alignSelf = ''; el.style.maxHeight = Math.max(300, nat - overhead) + 'px';
-    }
-  } catch(e){}
+  /* Chieu cao khung cuon do CSS lo: the phai keo bang the chart (align-self:stretch),
+     ben trong la khung tuyet doi (position:absolute) nen tu co gian khi doi cua so /
+     zoom. Truoc day khoa bang pixel ngay luc ve -> zoom xong con mang trang o duoi
+     the chart cho toi nhip 2 phut sau moi ve lai. */
+  try { el.style.maxHeight = ''; } catch(e){}
   return true;
 }
 async function bstarInit(){
@@ -1301,7 +1297,7 @@ inits.market = async function(){
     </div>
     <div class="card" style="margin-bottom:0;display:flex;flex-direction:column">
       <h2 style="text-align:center;letter-spacing:.02em">TOP TÍN HIỆU 6 THÁNG QUA</h2>
-      <div style="flex:1;overflow:auto" id="recentWrap"></div>
+      <div style="flex:1;min-height:300px;position:relative"><div id="recentWrap" style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:auto"></div></div>
     </div>
   </div>
   <div style="height:16px"></div>
@@ -4040,7 +4036,35 @@ function pinNameBar(){
       }
     }catch(e){}
   }
-  addEventListener('resize', function(){ __chartTranMan(); __perfTranMan(); });
+  /* Tab So sanh: bieu do P/B keo xuong sat thanh ten ghim o day man hinh.
+     Truoc day chieu cao la calc(100vh - 285px), cong them dem duoi the + footer
+     rong + padding cho thanh ghim -> con mot mang trang ~60px ngay tren dong
+     "Nguyen Ngoc Anh Khoa - Giam doc Tu van Dau tu". Khi vua man hinh thi bat
+     class knFit de bo cac khoang dem do, khong vua thi tra lai nhu cu. */
+  function __cmpTranMan(){
+    try{
+      var body = document.body;
+      var tat = function(){ if (body) body.classList.remove('knFit'); };
+      if (document.documentElement.classList.contains('kn-app')) return tat();
+      var vc = document.getElementById('view-compare');
+      if (!vc || vc.style.display === 'none' || vc.offsetParent === null) return tat();
+      var cv = document.getElementById('cvSec'); if (!cv) return tat();
+      var box = cv.parentElement; if (!box) return tat();
+      var nb = document.getElementById('nameBar');
+      if (!nb || getComputedStyle(nb).position !== 'fixed') return tat();   // che do app: thanh ten nam trong luong
+      var caoTen = Math.round(nb.getBoundingClientRect().height);
+      var dinh = box.getBoundingClientRect().top + window.scrollY;
+      var h = Math.round(window.innerHeight - dinh - caoTen - 28);  // 10 khe ho + 18 dem duoi the
+      if (h < 420) { tat(); h = 420; } else body.classList.add('knFit');
+      var cu = parseFloat(box.style.height);
+      if (!(Math.abs(cu - h) <= 4)){
+        box.style.height = h + 'px';
+        try { var ch = (window.Chart && Chart.getChart) ? Chart.getChart(cv) : null; if (ch) ch.resize(); } catch(e){}
+      }
+    }catch(e){}
+  }
+  window.__knCmpFit = __cmpTranMan;
+  addEventListener('resize', function(){ __chartTranMan(); __perfTranMan(); __cmpTranMan(); });
   function __fbxMove(){
     try{
       /* Tai chinh tro lai thanh mot khoi RONG NGANG nam duoi chart (nhu ban cu).
@@ -4067,8 +4091,8 @@ function pinNameBar(){
     }, 220);
   };
   window.addEventListener('resize', __fbxFit);
-  setTimeout(function(){ __fbxMove(); __fbxFit(); }, 600);
-  setInterval(function(){ __fbxMove(); __fbxFit(); }, 1200);
+  setTimeout(function(){ __fbxMove(); __fbxFit(); __cmpTranMan(); }, 600);
+  setInterval(function(){ __fbxMove(); __fbxFit(); __cmpTranMan(); }, 1200);
 })();
 
 /* ===== __HH: tab Hang hoa (thay tab Bai viet) + chart hang hoa mo thang trong Chi tiet ma ===== */
