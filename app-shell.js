@@ -275,18 +275,19 @@
   + '.kn-app #view-detail .search-wrap,.kn-app #dTitle,.kn-app #dRanges,.kn-app #dHead{display:none!important}'
   + '.kn-app #dTpn{margin:0!important}'
   /* đầu trang kiểu FinBox: mã + tên trên, logo tròn + giá to + KL dưới */
-  + '#knDHead{order:-3;background:#fff;padding:12px 14px 0}'
-  + '#knDHead .r1{display:flex;align-items:center;gap:10px}'
+  /* Dau trang ma: logo len cung hang voi ma, gia va khoi luong nam chung mot
+     hang -> tiet kiem ~45px chieu cao, chart duoc keo dai them. */
+  + '#knDHead{order:-3;background:#fff;padding:10px 14px 0}'
+  + '#knDHead .r1{display:flex;align-items:center;gap:9px}'
   + '#knDHead .nm{flex:1;min-width:0}#knDHead .nm b{font-size:18px;font-weight:800;letter-spacing:-.02em}'
   + '#knDHead .nm b span{font-size:11.5px;font-weight:600;color:var(--kink2);margin-left:6px;letter-spacing:0}'
   + '#knDHead .nm .knSub{max-width:none}'
-  + '#knDHead .r2{display:flex;align-items:center;gap:12px;margin-top:12px;padding-bottom:4px}'
-  + '#knDHead .av{width:50px;height:50px;flex:none;border-radius:50%;background:var(--kbs);color:var(--kbd);display:grid;place-items:center;font-weight:800;font-size:13px;overflow:hidden;border:1px solid var(--khair)}'
+  + '#knDHead .r2{display:flex;align-items:baseline;gap:10px;margin-top:6px;padding-bottom:4px}'
+  + '#knDHead .av{width:34px;height:34px;flex:none;border-radius:50%;background:var(--kbs);color:var(--kbd);display:grid;place-items:center;font-weight:800;font-size:10px;overflow:hidden;border:1px solid var(--khair)}'
   + '#knDHead .av img{width:100%;height:100%;object-fit:contain;background:#fff;display:block}'
-  + '#knDHead .px{flex:1;min-width:0}'
-  + '#knDHead .big{font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1.05;white-space:nowrap}'
-  + '#knDHead .big span{font-size:20px;font-weight:700;letter-spacing:-.01em}'
-  + '#knDHead .vol{font-size:13px;font-weight:600;color:var(--kink2);margin-top:5px;white-space:nowrap}#knDHead .vol b{color:var(--kbd)}'
+  + '#knDHead .big{font-size:25px;font-weight:800;letter-spacing:-.03em;line-height:1.05;white-space:nowrap}'
+  + '#knDHead .big span{font-size:18px;font-weight:700;letter-spacing:-.01em}'
+  + '#knDHead .vol{font-size:12.5px;font-weight:600;color:var(--kink2);margin-left:auto;text-align:right;white-space:nowrap}#knDHead .vol b{color:var(--kbd)}'
   + '#knRange{order:-2;background:#fff;padding:4px 14px 10px}'
   /* dải mã watchlist ở đầu (web tự dựng) -> thành dải chip */
   + '.kn-app #watchStrip{order:-4;border:0!important;border-radius:0!important;margin:0!important;padding:8px 14px 4px!important;'
@@ -887,9 +888,10 @@
     var first = dhFor !== t; dhFor = t; dhPx = key;
     var av = h.querySelector('.av');
     if (first || !av){
-      h.innerHTML = '<div class="r1"><div class="nm"><b>' + esc(t) + '<span>' + esc(K.BRD(r.b)) + '</span></b><div class="knSub">' + esc(shortName(r.n || '')) + '</div></div>'
+      h.innerHTML = '<div class="r1"><div class="av"><span>' + esc(t) + '</span></div>'
+        + '<div class="nm"><b>' + esc(t) + '<span>' + esc(K.BRD(r.b)) + '</span></b><div class="knSub">' + esc(shortName(r.n || '')) + '</div></div>'
         + '<button class="knIcoBtn" id="knDStar" aria-label="Trong watchlist" style="color:' + (r.watch ? 'var(--kfl)' : 'var(--kink3)') + '">' + (r.watch ? svgf('<path d="M12 2.9l2.78 5.63 6.22.9-4.5 4.39 1.06 6.19L12 17.09l-5.56 2.92 1.06-6.19-4.5-4.39 6.22-.9z"/>') : IC.watch) + '</button></div>'
-        + '<div class="r2"><div class="av"><span>' + esc(t) + '</span></div><div class="px"><div class="big"></div><div class="vol"></div></div></div>';
+        + '<div class="r2"><div class="big"></div><div class="vol"></div></div>';
       var img = new Image();
       img.onload = function(){ var d = h.querySelector('.av'); if (d && dhFor === t){ d.innerHTML = ''; d.appendChild(img); } };
       img.src = 'https://cdn.simplize.vn/simplizevn/logo/' + t + '.jpeg';
