@@ -1045,14 +1045,14 @@ function renderRecentStar(){
   return true;
 }
 async function bstarInit(){
-  try { if (!window.__knLite) renderMonthlyStar(); await bstarLoadPrices(); if (!window.__knLite) { renderMonthlyStar(); renderRecentStar(); drawPerf(); renderStatsStar(); } } catch(e){}
+  try { if (!window.__knLite) renderMonthlyStar(); await bstarLoadPrices(); if (!window.__knLite) { renderMonthlyStar(); renderRecentStar(); drawPerf(); renderStatsStar(); knHeroVe(); } } catch(e){}
   /* Nhịp 2 phút: nạp lại nến ngày của các vị thế đang mở + VN-Index rồi vẽ lại
      trang Hiệu suất. Trong phiên, giữa hai nhịp này đường vẫn chạy nhờ giá sống
      (bstarGia lấy giá hôm nay từ bảng giá, làm mới 15 giây/lần). */
   if (!window._bsTimer) window._bsTimer = setInterval(async () => {
     try {
       await bstarLoadPrices(true);
-      if (!window.__knLite) { renderRecentStar(); renderMonthlyStar(); }
+      if (!window.__knLite) { renderRecentStar(); renderMonthlyStar(); knHeroVe(); }
       knHieuSuatTuoi();
     } catch(e){}
   }, 120000);
@@ -1281,12 +1281,113 @@ function ddVNI(curve){
   }
   return '−' + Math.abs(sau * 100).toFixed(1) + '%';
 }
+/* ===== TRANG DAU (tab He thong) =====
+   Khach vua vao la thay: he thong nay lam gi -> ai lam ra no -> roi moi toi so lieu.
+   Hai cai mockup may tinh / dien thoai ve bang CSS + SVG, ben trong la so lieu THAT
+   (duong von, tin hieu B★, watchlist hom nay) nen khong bao gio cu. Che do app bo qua. */
+function knHeroHtml(){
+  return `<section id="knHero"><div class="kh-in">
+    <div class="kh-txt">
+      <span class="kh-tag">Khoa Nguyen Signal</span>
+      <h1>Hệ thống chọn cổ phiếu theo xu hướng, chạy lại mỗi phiên</h1>
+      <p>Hết phiên, hệ thống quét toàn bộ HOSE và HNX: chấm điểm cơ bản (tăng trưởng lợi nhuận, ROE, định giá, thanh khoản) rồi soi đồ thị tìm nền giá siết chặt. Mã đạt cả hai mới vào Watchlist — nền siết nhất được gắn <b>B★</b>.</p>
+      <p>Có tín hiệu là điện thoại báo ngay: mua mã nào, quanh vùng giá nào, hệ thống thoát khi nào. Không đoán đỉnh đáy, chỉ đi theo xu hướng đang có.</p>
+      <div class="kh-num" id="khNum"></div>
+      <div class="kh-cta">
+        <a class="kh-b1" href="https://open.kafi.vn/x/SANG009" target="_blank" rel="noopener" onclick="try{gtag('event','open_kafi',{from:'hero'})}catch(e){}">Mở tài khoản KAFI</a>
+        <a class="kh-b2" href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'hero'})}catch(e){}">Tư vấn qua Zalo →</a>
+        <button class="kh-b3" type="button" onclick="knHeroCuon()">Xem số liệu hiệu suất ↓</button>
+      </div>
+    </div>
+    <div class="kh-dev">
+      <div class="kh-mac">
+        <div class="kh-scr">
+          <div class="kh-bar"><span class="kh-dot"></span><span class="kh-url">khoanguyeninvest.vn</span></div>
+          <div class="kh-nav"><b>Khoa Nguyen Invest</b><i class="on">Hệ thống</i><i>Bộ lọc</i><i>Chi tiết mã</i><i>So sánh</i></div>
+          <div class="kh-body">
+            <div class="kh-chart">
+              <div class="kh-lg"><em class="d1"></em>Khoa Nguyen Signal<em class="d2"></em>VN-Index</div>
+              <svg viewBox="0 0 300 92" preserveAspectRatio="none"><path id="khPv" fill="none" stroke="#E5484D" stroke-width="1.4" stroke-linejoin="round"></path><path id="khPs" fill="none" stroke="#18A34B" stroke-width="1.9" stroke-linejoin="round"></path></svg>
+            </div>
+            <div class="kh-side" id="khSide"></div>
+          </div>
+        </div>
+        <div class="kh-foot"></div>
+      </div>
+      <div class="kh-iph">
+        <div class="kh-notch"></div>
+        <div class="kh-ihd">Watchlist hôm nay</div>
+        <div class="kh-ilist" id="khPh"></div>
+        <div class="kh-itab"><i class="on"></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div></section>`;
+}
+function knAboutHtml(){
+  return `<section id="knAbout" class="card"><div class="ab-in">
+    <img class="ab-av" src="logo.png" alt="Nguyễn Ngọc Anh Khoa">
+    <div>
+      <div class="ab-nm">Nguyễn Ngọc Anh Khoa</div>
+      <div class="ab-rl">Giám đốc Tư vấn Đầu tư — Công ty Chứng khoán KAFI</div>
+      <p>Tôi làm tư vấn đầu tư và tự viết lấy bộ công cụ mình dùng mỗi ngày: bộ lọc cơ bản, sổ tay tín hiệu, trang hiệu suất và cái app báo tín hiệu anh/chị đang xem. Số liệu trên trang là của chính hệ thống này, cập nhật theo phiên, không chỉnh tay.</p>
+      <p>Cách tôi làm việc: bám xu hướng, vào khi nền giá siết chặt và doanh nghiệp đang tăng trưởng thật, thoát khi xu hướng gãy — thay vì đoán đỉnh đáy. Quản trị rủi ro đứng trước lợi nhuận, mỗi vị thế có điểm thoát ngay từ lúc mua.</p>
+      <div class="ab-ct">
+        <a href="tel:0339136452">0339 136 452</a>
+        <a href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'about'})}catch(e){}">Nhóm Zalo tư vấn</a>
+        <a href="https://open.kafi.vn/x/SANG009" target="_blank" rel="noopener" onclick="try{gtag('event','open_kafi',{from:'about'})}catch(e){}">Mở tài khoản KAFI</a>
+      </div>
+    </div>
+  </div></section>`;
+}
+window.knHeroCuon = function(){
+  try { const c = document.querySelector('#view-market .hero'); if (!c) return;
+    window.scrollTo({ top: c.getBoundingClientRect().top + window.scrollY - 64, behavior:'smooth' }); } catch(e){}
+};
+/* Do so that vao hai cai mockup + day so o hero. Goi lai moi khi gia ve. */
+function knHeroVe(){
+  try{
+    const num = document.getElementById('khNum'); if (!num) return;
+    const cv = bstarCurve(); const st = cv ? bstarStats(cv) : null;
+    const f = v => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(1) + '%';
+    if (st) num.innerHTML =
+        `<div><div class="l">Hệ thống từ 2019</div><div class="v up">${f(st.all)}</div></div>`
+      + `<div><div class="l">VN-Index cùng kỳ</div><div class="v mut" style="font-weight:800">${f(st.vall)}</div></div>`
+      + `<div><div class="l">Tỷ lệ thắng</div><div class="v">${Math.round(st.winrate)}%</div></div>`
+      + `<div><div class="l">Deal đã chốt</div><div class="v">${st.ndeal}</div></div>`;
+    if (cv && cv.length > 3){
+      const n = cv.length, sk = Math.max(1, Math.floor(n/110));
+      const pts = []; for (let i = 0; i < n; i += sk) pts.push(cv[i]);
+      if (pts[pts.length-1] !== cv[n-1]) pts.push(cv[n-1]);
+      let lo = 1e9, hi = -1e9;
+      pts.forEach(p => { lo = Math.min(lo, p[1], p[2]); hi = Math.max(hi, p[1], p[2]); });
+      const W = 300, H = 92, pad = 4, span = (hi - lo) || 1;
+      const X = i => (i/(pts.length-1))*W, Y = v => H - pad - ((v-lo)/span)*(H-pad*2);
+      const d = k => pts.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[k]).toFixed(1)).join(' ');
+      const s = document.getElementById('khPs'), v = document.getElementById('khPv');
+      if (s) s.setAttribute('d', d(1));
+      if (v) v.setAttribute('d', d(2));
+    }
+    const sd = document.getElementById('khSide');
+    if (sd){
+      let rs = []; try { rs = (BSTAR.ready ? bstarRecent() : []).slice(0,7); } catch(e){}
+      sd.innerHTML = '<div class="h">TÍN HIỆU B★</div>' + rs.map(r =>
+        `<div class="r"><b>${r.t}</b><span class="${r.ret==null?'mut':(r.ret>=0?'up':'down')}">${r.ret==null?'·':(r.ret>=0?'+':'')+r.ret+'%'}</span></div>`).join('');
+    }
+    const ph = document.getElementById('khPh');
+    if (ph){
+      let w = []; try { w = ROWS().filter(r => r.watch && r.wgrade!=='weak')
+        .sort((a,b)=>(b.chg==null?-99:b.chg)-(a.chg==null?-99:a.chg)).slice(0,5); } catch(e){}
+      ph.innerHTML = w.map(r => `<div class="r"><b>${r.t}${r.wstar?' ★':''}</b><span class="${(r.chg||0)>=0?'up':'down'}">${(r.chg||0)>=0?'+':''}${(r.chg||0).toFixed(1)}%</span></div>`).join('');
+    }
+  }catch(e){}
+}
 inits.market = async function(){
   if (mktDone) return; mktDone = true;
   const el = $('#view-market');
   const tpn = SUM.tpn || {stats:{}, recent:[], curve:[]};
   const st = tpn.stats || {};
-  el.innerHTML = `
+  const dau = window.__knLite ? '' : (knHeroHtml() + knAboutHtml());
+  el.innerHTML = dau + `
   <div class="hero">
     <div class="card" style="margin-bottom:0">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px">
@@ -1322,7 +1423,7 @@ inits.market = async function(){
   <div style="height:16px"></div>
   <div class="card"><h2>Lợi suất theo tháng <span class="hint">% · màu đậm = biên độ lớn · chấm mờ = đứng ngoài thị trường</span></h2><div class="mini" id="moSum" style="margin-bottom:10px"></div><div id="moTable" style="overflow-x:auto"></div></div>`;
   /* App (vỏ app-shell đặt window.__knLite): tab này nằm ẩn, bỏ qua chart + bảng tháng + top cho nhẹ */
-  if (!window.__knLite) { drawPerf(); }
+  if (!window.__knLite) { drawPerf(); knHeroVe(); }
   renderRecent();
   if (!window.__knLite) { renderMonthly(); }
   refreshOpenDeals();
@@ -4028,7 +4129,13 @@ function pinNameBar(){
       var box = cv.parentElement; if (!box) return;
       var dinh = box.getBoundingClientRect().top + window.scrollY;
       var CHAN = 66;
-      var h = Math.max(430, Math.round(window.innerHeight - dinh - CHAN));
+      /* Chart nam ngay man hinh dau -> keo cho het man hinh. Tu khi co phan gioi
+         thieu o tren, no nam duoi nep gap: luc do do bang mot man hinh tru thanh
+         dieu huong + tieu de the, khach cuon toi la vua khung hinh. */
+      var h = (dinh < window.innerHeight * 0.55)
+        ? Math.round(window.innerHeight - dinh - CHAN)
+        : Math.round(window.innerHeight - 196);
+      h = Math.max(430, h);
       if (Math.abs(parseFloat(box.style.height || 0) - h) > 6){
         box.style.height = h + 'px';
         try { if (typeof perfChart !== 'undefined' && perfChart) perfChart.resize(); } catch(e){}
