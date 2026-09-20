@@ -1,0 +1,22 @@
+name: probe-api
+on:
+  push:
+    branches: [claude/lucid-fermat-8vtoo1]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Thu cac nguon du lieu
+        run: |
+          thu(){ echo "=== $1"; echo "--- $2";
+            code=$(curl -s -m 25 -o /tmp/r.json -w '%{http_code}' -H 'User-Agent: Mozilla/5.0' -H 'Accept: application/json' "$2");
+            echo "HTTP $code  bytes $(wc -c </tmp/r.json)"; head -c 700 /tmp/r.json; echo; echo; }
+          thu "vietcap ratios (nguon chinh hien tai)" "https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/VCB/statistics-financial"
+          thu "vietcap kqkd" "https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/VCB/financial-statement?section=INCOME_STATEMENT"
+          thu "vnd finfo ratios/latest (dang dung, de doi chieu)" "https://api-finfo.vndirect.com.vn/v4/ratios/latest?order=reportDate&filter=ratioCode:PRICE_TO_BOOK&where=code:VCB,BID&size=10"
+          thu "vnd finfo ratios lich su q=" "https://api-finfo.vndirect.com.vn/v4/ratios?q=code:VCB~ratioCode:PRICE_TO_BOOK&sort=reportDate&size=10"
+          thu "vnd finfo ratios lich su filter/where" "https://api-finfo.vndirect.com.vn/v4/ratios?order=reportDate&filter=ratioCode:PRICE_TO_BOOK&where=code:VCB&size=10"
+          thu "vnd finfo ROE lich su" "https://api-finfo.vndirect.com.vn/v4/ratios?q=code:VCB~ratioCode:ROE&sort=reportDate&size=10"
+          thu "vnd finfo financial_statements" "https://api-finfo.vndirect.com.vn/v4/financial_statements?q=code:VCB~reportType:QUARTER~modelType:1,89,101,411&sort=fiscalDate&size=10"
+          thu "vnd finfo financial_models" "https://api-finfo.vndirect.com.vn/v4/financial_models?q=code:VCB~reportType:QUARTER~modelType:1&sort=fiscalDate&size=10"
+          thu "vnd dchart (gia, dang dung)" "https://dchart-api.vndirect.com.vn/dchart/history?symbol=VCB&resolution=D&from=1750000000&to=1790000000"
