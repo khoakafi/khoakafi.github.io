@@ -1287,12 +1287,12 @@ function ddVNI(curve){
    Mockup: khung ve bang CSS, ben trong la anh chup that (mock-web.webp / mock-app.webp).
    Che do app bo qua. */
 const KN_BUOC = [
-  ['Thu thập dữ liệu','Data','Giá, khối lượng, báo cáo tài chính 12 quý, cổ tức và sự kiện doanh nghiệp của toàn bộ HOSE–HNX được nạp về ngay sau phiên đóng cửa. Nguồn: VNDirect, Vietcap IQ.'],
-  ['Chuẩn hoá','Normalize','Điều chỉnh cổ tức và chia tách, đồng nhất chuẩn kế toán ngân hàng – phi ngân hàng, loại mã thanh khoản mỏng. Mọi mã được đưa về cùng một hệ quy chiếu.'],
-  ['Chấm điểm đa nhân tố','Score','Tăng trưởng LNST và doanh thu, ROE, P/E–P/B so với lịch sử 6 năm của chính nó, sức mạnh giá tương đối RS, bộ tiêu chí CANSLIM. Mỗi mã một điểm số, xếp hạng toàn thị trường.'],
-  ['Nhận diện nền giá','Detect','Thuật toán đọc cấu trúc nến theo Wyckoff và Minervini: biên độ co hẹp dần, khối lượng cạn, vị trí so đường trung bình. Nền siết chặt nhất được gắn B★.'],
-  ['Phát tín hiệu','Signal','Giá bứt khỏi nền kèm khối lượng là hệ thống vào lệnh, điểm thoát đặt sẵn từ lúc mua. Thông báo về điện thoại trong vài giây, kể cả khi app đang đóng.'],
-  ['Đối soát','Review','Mỗi lệnh vào sổ, tính lãi/lỗ đã trừ phí, dựng lại đường vốn và đặt cạnh VN-Index. Kiểm chứng liên tục từ 2019 — sai thì sửa luật, không sửa số.']
+  ['Thu thập dữ liệu','Data','Giá, khối lượng, BCTC 12 quý của toàn bộ HOSE–HNX, nạp về ngay sau phiên.'],
+  ['Chuẩn hoá','Normalize','Chỉnh cổ tức, chia tách; đồng nhất chuẩn kế toán; loại mã thanh khoản mỏng.'],
+  ['Chấm điểm','Score','Tăng trưởng, ROE, định giá, sức mạnh giá RS, tiêu chí CANSLIM — mỗi mã một điểm.'],
+  ['Nhận diện nền','Detect','Đọc nền giá theo Wyckoff và Minervini; nền siết chặt nhất được gắn B★.'],
+  ['Phát tín hiệu','Signal','Bứt nền kèm khối lượng là vào lệnh, điểm thoát đặt sẵn; báo thẳng về điện thoại.'],
+  ['Đối soát','Review','Mỗi lệnh vào sổ, lãi lỗ tính sau phí, đặt cạnh VN-Index. Sai thì sửa luật, không sửa số.']
 ];
 function knHeroHtml(){
   const zalo = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.5-5.2A8.5 8.5 0 1 1 21 12z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg>';
@@ -1300,10 +1300,10 @@ function knHeroHtml(){
     <div class="kh-in">
       <div class="kh-txt">
         <span class="kh-tag"><i></i>Khoa Nguyen Signal · Hệ thống giao dịch định lượng</span>
-        <h1>Cả thị trường được quét lại mỗi phiên. <em>Chỉ vài mã lọt qua.</em></h1>
-        <p>Khoa Nguyen Signal là bộ máy giao dịch định lượng tôi tự xây và vận hành liên tục từ 2019. Mỗi phiên đóng cửa, engine chấm điểm toàn bộ HOSE–HNX qua hai lớp lọc: <b>sức khoẻ doanh nghiệp</b> (tăng trưởng, ROE, định giá, dòng tiền) và <b>cấu trúc đồ thị</b> (nền giá, thanh khoản, sức mạnh tương đối). Mã qua được cả hai vòng mới vào Watchlist — nền siết chặt nhất được gắn <b>B★</b>.</p>
-        <p>Tín hiệu mua, điểm thoát, khối lượng — đẩy thẳng về điện thoại. Không dự đoán, không cảm tính: mọi lệnh đều được ghi sổ, đối soát và công khai ngay trên trang này.</p>
-        <p class="kh-root">Nền tảng tư tưởng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b>, được hệ thống hoá thành thuật toán và kiểm chứng trên dữ liệu 7 năm của thị trường Việt Nam.</p>
+        <h1>Tôi không đoán thị trường. <em>Hệ thống chọn mã, tôi mới xuống tiền.</em></h1>
+        <p>Khoa Nguyen Signal là bộ máy tôi tự viết và chạy bằng tiền thật từ 2019. Cứ hết phiên là nó rà lại toàn bộ HOSE–HNX qua hai vòng: <b>doanh nghiệp có khoẻ không</b> (tăng trưởng, ROE, định giá, dòng tiền) và <b>đồ thị có đẹp không</b> (nền giá, thanh khoản, sức mạnh tương đối). Qua cả hai vòng mới được vào Watchlist; nền siết chặt nhất được gắn <b>B★</b>.</p>
+        <p>Điểm mua, điểm thoát, khối lượng — báo thẳng về điện thoại. Lời hay lỗ đều ghi sổ, đặt cạnh VN-Index và để công khai ngay trang này. Bảy năm, hơn trăm deal, không giấu deal nào.</p>
+        <p class="kh-root">Nền tảng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b> — tôi gói những nguyên tắc đó thành thuật toán và kiểm chứng trên 7 năm dữ liệu thị trường Việt Nam.</p>
         <div class="kh-num" id="khNum"></div>
         <div class="kh-cta">
           <a class="kh-b1" href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'hero'})}catch(e){}">${zalo}Room Zalo trải nghiệm</a>
@@ -1314,23 +1314,35 @@ function knHeroHtml(){
         <div class="kh-mac">
           <div class="kh-lid"><span class="kh-cam"></span>
             <div class="kh-scr">
-              <div class="kh-bar"><i></i><i></i><i></i><span>khoanguyeninvest.vn</span></div>
-              <img src="mock-web.webp" width="1800" height="1028" alt="Trang hiệu suất Khoa Nguyen Signal" decoding="async" fetchpriority="high">
+              <img src="mock-web.webp" width="1600" height="813" alt="GVR — tín hiệu B★, Add và điểm bán trên khoanguyeninvest.vn" decoding="async" fetchpriority="high">
             </div>
           </div>
           <div class="kh-base"></div>
         </div>
         <div class="kh-iph"><span class="kh-island"></span>
-          <img src="mock-app.webp" width="700" height="1479" alt="App Khoa Nguyen Invest — chi tiết mã" decoding="async">
+          <img src="mock-app.webp" width="540" height="1209" alt="App Khoa Nguyen Invest — hiệu suất và các deal B★ 2026" decoding="async">
         </div>
       </div>
     </div>
     <div class="kh-flow">
-      <div class="kf-hd"><h2>Quy trình vận hành</h2><p>Sáu bước chạy tự động sau mỗi phiên đóng cửa — không ai gõ tay vào bất kỳ con số nào trên trang này.</p></div>
-      <div class="kf-grid">${KN_BUOC.map((b,i)=>`<div class="kf-c"><span class="kf-n">${i+1}</span><h3>${b[0]}<em>${b[1]}</em></h3><p>${b[2]}</p></div>`).join('')}</div>
+      <div class="kf-hd"><h2>Máy chạy sáu bước sau mỗi phiên</h2><p>Không ai gõ tay vào con số nào trên trang này.</p></div>
+      <div class="kf-line">${KN_BUOC.map((b,i)=>`<div class="kf-s"><span class="kf-n">${i+1}</span><h3>${b[0]}<em>${b[1]}</em></h3><p>${b[2]}</p></div>`).join('')}</div>
     </div>
   </section>`;
 }
+/* Khung trang dau cao dung mot man hinh: tu dinh (duoi thanh menu) den sat thanh ten ghim.
+   Man hinh thap qua (noi dung khong vua) thi de tu nhien, cuon binh thuong. */
+function __heroTranMan(){
+  try{
+    const h = document.getElementById('knHero'); if (!h || innerWidth <= 1000) return;
+    const top = h.getBoundingClientRect().top + window.scrollY;
+    const ft = document.getElementById('nameBar');
+    const botH = ft ? Math.max(0, Math.round(innerHeight - ft.getBoundingClientRect().top)) : 0;
+    const want = Math.round(innerHeight - top - botH - 16);
+    h.style.minHeight = want > 520 ? want + 'px' : '';
+  }catch(e){}
+}
+addEventListener('resize', __heroTranMan);
 window.knHeroCuon = function(){
   try { const c = document.querySelector('#view-market .hero'); if (!c) return;
     window.scrollTo({ top: c.getBoundingClientRect().top + window.scrollY - 64, behavior:'smooth' }); } catch(e){}
@@ -1371,7 +1383,7 @@ inits.market = async function(){
   <div style="height:16px"></div>
   <div class="card"><h2>Lợi suất theo tháng <span class="hint">% · màu đậm = biên độ lớn · chấm mờ = đứng ngoài thị trường</span></h2><div class="mini" id="moSum" style="margin-bottom:10px"></div><div id="moTable" style="overflow-x:auto"></div></div>`;
   /* App (vỏ app-shell đặt window.__knLite): tab này nằm ẩn, bỏ qua chart + bảng tháng + top cho nhẹ */
-  if (!window.__knLite) { drawPerf(); knHeroVe(); }
+  if (!window.__knLite) { drawPerf(); knHeroVe(); setTimeout(__heroTranMan, 0); setTimeout(__heroTranMan, 400); }
   renderRecent();
   if (!window.__knLite) { renderMonthly(); }
   refreshOpenDeals();
