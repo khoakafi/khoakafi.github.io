@@ -969,7 +969,8 @@ function bstarStats(cv){
 function renderStatsStar(){
   try {
     const cv = bstarCurve(); const st = bstarStats(cv); if (!st) return false;
-    const cards = document.querySelectorAll('#view-market .stats4 .card'); if (cards.length < 4) return false;
+    try { const h0 = document.querySelector('#view-market .hero .card h2'); if (h0 && h0.textContent.indexOf('B★') < 0) h0.textContent = 'Hiệu suất Khoa Nguyen Signal — B★'; } catch(e){}
+    const cards = document.querySelectorAll('#view-market .stats4 .card'); if (cards.length < 4) return false;   // 4 the nay da bo, so lieu len hero
     const f = (v, plus) => (v >= 0 ? (plus ? '+' : '') : '−') + Math.abs(v).toFixed(1) + '%';
     const set = (ci, ri, txt, cls) => { const el = cards[ci].querySelectorAll('.perf-row .v')[ri]; if (!el) return; el.textContent = txt; if (cls) el.className = 'v ' + cls; };
     set(0,0,f(st.y1,true), st.y1>=0?'up':'down'); set(0,1,f(st.y3,true), st.y3>=0?'up':'down'); set(0,2,f(st.all,true), st.all>=0?'up':'down');
@@ -1282,76 +1283,69 @@ function ddVNI(curve){
   return '−' + Math.abs(sau * 100).toFixed(1) + '%';
 }
 /* ===== TRANG DAU (tab He thong) =====
-   Khach vua vao la thay: he thong nay lam gi -> chay ra sao -> roi moi toi so lieu.
-   Hai cai mockup may tinh / dien thoai: khung ve bang CSS, ben trong la anh chup
-   that cua web va app (mock-web.webp / mock-app.webp). Che do app bo qua. */
-function knHeroHtml(){
-  return `<section id="knHero"><div class="kh-in">
-    <div class="kh-txt">
-      <span class="kh-tag"><i></i>Khoa Nguyen Signal</span>
-      <h1>Thuật toán quét cả thị trường mỗi phiên, <em>trả về vài mã đáng mua</em></h1>
-      <p>Hết phiên, hệ thống chấm điểm toàn bộ HOSE–HNX trên hai lớp: sức khoẻ doanh nghiệp và trạng thái đồ thị. Mã qua được cả hai mới vào Watchlist — nền giá siết nhất được gắn <b>B★</b>.</p>
-      <p>Tín hiệu đẩy thẳng về điện thoại: mua mã nào, quanh vùng giá nào, thoát ở đâu. Mọi lệnh đều vào sổ và được đối soát — con số bên dưới là kết quả của chính bộ tín hiệu này.</p>
-      <div class="kh-num" id="khNum"></div>
-      <div class="kh-cta">
-        <a class="kh-b1" href="https://open.kafi.vn/x/SANG009" target="_blank" rel="noopener" onclick="try{gtag('event','open_kafi',{from:'hero'})}catch(e){}">Mở tài khoản KAFI</a>
-        <a class="kh-b2" href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'hero'})}catch(e){}">Tư vấn qua Zalo →</a>
-        <button class="kh-b3" type="button" onclick="knHeroCuon()">Xem số liệu hiệu suất ↓</button>
-      </div>
-    </div>
-    <div class="kh-dev">
-      <div class="kh-mac">
-        <div class="kh-lid"><span class="kh-cam"></span>
-          <div class="kh-scr">
-            <div class="kh-bar"><i></i><i></i><i></i><span>khoanguyeninvest.vn</span></div>
-            <img src="mock-web.webp" width="1000" height="571" alt="Trang hiệu suất Khoa Nguyen Signal" decoding="async" fetchpriority="high">
-          </div>
-        </div>
-        <div class="kh-base"></div>
-      </div>
-      <div class="kh-iph"><span class="kh-island"></span>
-        <img src="mock-app.webp" width="420" height="887" alt="App Khoa Nguyen Invest — chi tiết mã" decoding="async">
-      </div>
-    </div>
-  </div></section>`;
-}
+   Mot khung trang duy nhat: gioi thieu + mockup + 6 chi so song + quy trinh 6 buoc.
+   Mockup: khung ve bang CSS, ben trong la anh chup that (mock-web.webp / mock-app.webp).
+   Che do app bo qua. */
 const KN_BUOC = [
-  ['Thu thập dữ liệu','Acquire','Giá và khối lượng từng phiên của toàn bộ HOSE–HNX, báo cáo tài chính 12 quý gần nhất, cổ tức, ngành nghề — nạp lại ngay sau khi thị trường đóng cửa.'],
-  ['Chuẩn hoá dữ liệu','Normalize','Giá điều chỉnh cổ tức và chia tách, ngân hàng quy về TOI thay doanh thu, loại mã thanh khoản mỏng. Mọi mã về cùng một thước đo trước khi chấm.'],
-  ['Chấm điểm cơ bản','Score','Tăng trưởng lợi nhuận và doanh thu so cùng kỳ, ROE, P/E–P/B đặt cạnh chính nó 6 năm, sức mạnh giá tương đối, bộ tiêu chí CANSLIM. Mỗi mã một điểm số.'],
-  ['Nhận diện nền giá','Detect','Thuật toán soi biên độ dao động, khối lượng cạn dần và vị trí so đường trung bình để tìm nền siết chặt — mẫu hình thường đi trước một nhịp tăng. Siết nhất: B★.'],
-  ['Phát tín hiệu','Signal','Giá bứt khỏi nền kèm khối lượng là hệ thống vào lệnh và đặt sẵn điểm thoát. Thông báo chạy về điện thoại trong vài giây, kể cả khi app đang đóng.'],
-  ['Đối soát kết quả','Review','Mỗi lệnh vào sổ, tính lãi/lỗ đã trừ phí 0,4%, dựng lại đường vốn rồi đặt cạnh VN-Index. Sai thì sửa luật của hệ thống, không sửa số.']
+  ['Thu thập dữ liệu','Data','Giá, khối lượng, báo cáo tài chính 12 quý, cổ tức và sự kiện doanh nghiệp của toàn bộ HOSE–HNX được nạp về ngay sau phiên đóng cửa. Nguồn: VNDirect, Vietcap IQ.'],
+  ['Chuẩn hoá','Normalize','Điều chỉnh cổ tức và chia tách, đồng nhất chuẩn kế toán ngân hàng – phi ngân hàng, loại mã thanh khoản mỏng. Mọi mã được đưa về cùng một hệ quy chiếu.'],
+  ['Chấm điểm đa nhân tố','Score','Tăng trưởng LNST và doanh thu, ROE, P/E–P/B so với lịch sử 6 năm của chính nó, sức mạnh giá tương đối RS, bộ tiêu chí CANSLIM. Mỗi mã một điểm số, xếp hạng toàn thị trường.'],
+  ['Nhận diện nền giá','Detect','Thuật toán đọc cấu trúc nến theo Wyckoff và Minervini: biên độ co hẹp dần, khối lượng cạn, vị trí so đường trung bình. Nền siết chặt nhất được gắn B★.'],
+  ['Phát tín hiệu','Signal','Giá bứt khỏi nền kèm khối lượng là hệ thống vào lệnh, điểm thoát đặt sẵn từ lúc mua. Thông báo về điện thoại trong vài giây, kể cả khi app đang đóng.'],
+  ['Đối soát','Review','Mỗi lệnh vào sổ, tính lãi/lỗ đã trừ phí, dựng lại đường vốn và đặt cạnh VN-Index. Kiểm chứng liên tục từ 2019 — sai thì sửa luật, không sửa số.']
 ];
-function knFlowHtml(){
-  return `<section id="knFlow">
-    <div class="kf-hd">
-      <span class="kf-ico"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.4"/></svg></span>
-      <h2>QUY TRÌNH CÔNG NGHỆ</h2>
-      <p>Sáu bước chạy tự động sau mỗi phiên đóng cửa. Không ai gõ tay vào bất kỳ con số nào trên trang này.</p>
+function knHeroHtml(){
+  const zalo = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.5-5.2A8.5 8.5 0 1 1 21 12z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg>';
+  return `<section id="knHero">
+    <div class="kh-in">
+      <div class="kh-txt">
+        <span class="kh-tag"><i></i>Khoa Nguyen Signal · Hệ thống giao dịch định lượng</span>
+        <h1>Cả thị trường được quét lại mỗi phiên. <em>Chỉ vài mã lọt qua.</em></h1>
+        <p>Khoa Nguyen Signal là bộ máy giao dịch định lượng tôi tự xây và vận hành liên tục từ 2019. Mỗi phiên đóng cửa, engine chấm điểm toàn bộ HOSE–HNX qua hai lớp lọc: <b>sức khoẻ doanh nghiệp</b> (tăng trưởng, ROE, định giá, dòng tiền) và <b>cấu trúc đồ thị</b> (nền giá, thanh khoản, sức mạnh tương đối). Mã qua được cả hai vòng mới vào Watchlist — nền siết chặt nhất được gắn <b>B★</b>.</p>
+        <p>Tín hiệu mua, điểm thoát, khối lượng — đẩy thẳng về điện thoại. Không dự đoán, không cảm tính: mọi lệnh đều được ghi sổ, đối soát và công khai ngay trên trang này.</p>
+        <p class="kh-root">Nền tảng tư tưởng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b>, được hệ thống hoá thành thuật toán và kiểm chứng trên dữ liệu 7 năm của thị trường Việt Nam.</p>
+        <div class="kh-num" id="khNum"></div>
+        <div class="kh-cta">
+          <a class="kh-b1" href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'hero'})}catch(e){}">${zalo}Room Zalo trải nghiệm</a>
+          <button class="kh-b3" type="button" onclick="knHeroCuon()">Xem số liệu hiệu suất ↓</button>
+        </div>
+      </div>
+      <div class="kh-dev">
+        <div class="kh-mac">
+          <div class="kh-lid"><span class="kh-cam"></span>
+            <div class="kh-scr">
+              <div class="kh-bar"><i></i><i></i><i></i><span>khoanguyeninvest.vn</span></div>
+              <img src="mock-web.webp" width="1800" height="1028" alt="Trang hiệu suất Khoa Nguyen Signal" decoding="async" fetchpriority="high">
+            </div>
+          </div>
+          <div class="kh-base"></div>
+        </div>
+        <div class="kh-iph"><span class="kh-island"></span>
+          <img src="mock-app.webp" width="700" height="1479" alt="App Khoa Nguyen Invest — chi tiết mã" decoding="async">
+        </div>
+      </div>
     </div>
-    <div class="kf-grid">${KN_BUOC.map((b,i)=>`<div class="kf-c"><span class="kf-n">${i+1}</span><h3>${b[0]}<em>${b[1]}</em></h3><p>${b[2]}</p></div>`).join('')}</div>
-    <div class="kf-ft" id="kfFt"></div>
+    <div class="kh-flow">
+      <div class="kf-hd"><h2>Quy trình vận hành</h2><p>Sáu bước chạy tự động sau mỗi phiên đóng cửa — không ai gõ tay vào bất kỳ con số nào trên trang này.</p></div>
+      <div class="kf-grid">${KN_BUOC.map((b,i)=>`<div class="kf-c"><span class="kf-n">${i+1}</span><h3>${b[0]}<em>${b[1]}</em></h3><p>${b[2]}</p></div>`).join('')}</div>
+    </div>
   </section>`;
 }
 window.knHeroCuon = function(){
   try { const c = document.querySelector('#view-market .hero'); if (!c) return;
     window.scrollTo({ top: c.getBoundingClientRect().top + window.scrollY - 64, behavior:'smooth' }); } catch(e){}
 };
-/* Day so song vao hero + dong ket o cuoi khoi quy trinh. Goi lai moi khi gia ve. */
+/* Day so song vao hero. Goi lai moi khi gia ve. */
 function knHeroVe(){
   try{
     const num = document.getElementById('khNum'); if (!num) return;
     const cv = bstarCurve(); const st = cv ? bstarStats(cv) : null;
     if (!st) return;
     const f = v => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(1) + '%';
-    num.innerHTML =
-        `<div><div class="l">Hệ thống từ 2019</div><div class="v up">${f(st.all)}</div></div>`
-      + `<div><div class="l">VN-Index cùng kỳ</div><div class="v mut" style="font-weight:800">${f(st.vall)}</div></div>`
-      + `<div><div class="l">Tỷ lệ thắng</div><div class="v">${Math.round(st.winrate)}%</div></div>`
-      + `<div><div class="l">Deal đã chốt</div><div class="v">${st.ndeal}</div></div>`;
-    const ft = document.getElementById('kfFt');
-    if (ft) ft.innerHTML = `Đã chạy qua <b>${st.ndeal} lệnh</b> kể từ 2019 · tỷ lệ thắng <b>${Math.round(st.winrate)}%</b> · lãi/lỗ trung bình mỗi lệnh thắng gấp <b>${st.rr.toFixed(1)} lần</b> lệnh thua.`;
+    const o = (l, v, cls) => `<div><div class="l">${l}</div><div class="v ${cls||''}">${v}</div></div>`;
+    num.innerHTML = o('Hệ thống từ 2019', f(st.all), 'up') + o('VN-Index cùng kỳ', f(st.vall), 'mut')
+      + o('Tỷ lệ thắng', Math.round(st.winrate) + '%') + o('Deal đã chốt', String(st.ndeal))
+      + o('R:R', st.rr.toFixed(1)) + o('Max drawdown', '−' + Math.abs(st.maxdd).toFixed(1) + '%', 'down');
   }catch(e){}
 }
 inits.market = async function(){
@@ -1359,7 +1353,7 @@ inits.market = async function(){
   const el = $('#view-market');
   const tpn = SUM.tpn || {stats:{}, recent:[], curve:[]};
   const st = tpn.stats || {};
-  const dau = window.__knLite ? '' : (knHeroHtml() + knFlowHtml());
+  const dau = window.__knLite ? '' : knHeroHtml();
   el.innerHTML = dau + `
   <div class="hero">
     <div class="card" style="margin-bottom:0">
@@ -1373,25 +1367,6 @@ inits.market = async function(){
       <h2 style="text-align:center;letter-spacing:.02em">TOP TÍN HIỆU 6 THÁNG QUA</h2>
       <div style="flex:1;min-height:300px;position:relative"><div id="recentWrap" style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:auto"></div></div>
     </div>
-  </div>
-  <div style="height:16px"></div>
-  <div class="stats4">
-    <div class="card" style="margin:0"><h2>Khoa Nguyen Signal</h2>
-      <div class="perf-row"><span class="l">1 năm</span><span class="v up">${st.y1>=0?'+':''}${st.y1}%</span></div>
-      <div class="perf-row"><span class="l">3 năm</span><span class="v up">+${st.y3}%</span></div>
-      <div class="perf-row"><span class="l">Từ 2019</span><span class="v up">+${st.all}%</span></div></div>
-    <div class="card" style="margin:0"><h2>VN-Index cùng kỳ</h2>
-      <div class="perf-row"><span class="l">1 năm</span><span class="v">${st.vy1>=0?'+':''}${st.vy1}%</span></div>
-      <div class="perf-row"><span class="l">3 năm</span><span class="v">+${st.vy3}%</span></div>
-      <div class="perf-row"><span class="l">Từ 2019</span><span class="v">+${st.vall}%</span></div></div>
-    <div class="card" style="margin:0"><h2>Chất lượng hệ thống</h2>
-      <div class="perf-row"><span class="l">R:R</span><span class="v">${st.rr}</span></div>
-      <div class="perf-row"><span class="l">Win rate</span><span class="v">${st.winrate}%</span></div>
-      <div class="perf-row"><span class="l">Tổng số deal</span><span class="v">${st.ndeal}</span></div></div>
-    <div class="card" style="margin:0"><h2>Rủi ro</h2>
-      <div class="perf-row"><span class="l">Max DD hệ thống</span><span class="v down">${st.maxdd}%</span></div>
-      <div class="perf-row"><span class="l">Max DD VN-Index</span><span class="v mut">${ddVNI(tpn.curve)}</span></div>
-      <div class="perf-row"><span class="l">Phí giao dịch</span><span class="v mut">0,15% mua · 0,25% bán</span></div></div>
   </div>
   <div style="height:16px"></div>
   <div class="card"><h2>Lợi suất theo tháng <span class="hint">% · màu đậm = biên độ lớn · chấm mờ = đứng ngoài thị trường</span></h2><div class="mini" id="moSum" style="margin-bottom:10px"></div><div id="moTable" style="overflow-x:auto"></div></div>`;

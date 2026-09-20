@@ -192,71 +192,68 @@ body.knFit{padding-bottom:0}
 body.knFit .wrap{padding-bottom:0}
 body.knFit footer{display:none}
 body.knFit #view-compare>.card{margin-bottom:0}
-/* ===== TRANG DAU (tab He thong): gioi thieu he thong + quy trinh cong nghe ===== */
-.kn-app #knHero,.kn-app #knFlow{display:none!important}
-#knHero{background:linear-gradient(168deg,#EEF7F1 0%,#F7F9FB 60%);border:1px solid #E1EBE5;border-radius:16px;padding:28px 30px 26px;margin-bottom:16px}
-#knHero .kh-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);gap:34px;align-items:center}
+/* ===== TRANG DAU (tab He thong): mot khung trang — gioi thieu + mockup + chi so + quy trinh ===== */
+.kn-app #knHero{display:none!important}
+#knHero{background:#fff;border:1px solid var(--border);border-radius:16px;padding:30px 32px 26px;margin-bottom:16px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
+#knHero .kh-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);gap:36px;align-items:center}
 #knHero .kh-in>*{min-width:0}
-.kh-tag{display:inline-flex;align-items:center;gap:7px;background:#fff;color:var(--green-dark);border:1px solid #CFE9D8;font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:5px 13px;border-radius:20px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
+.kh-tag{display:inline-flex;align-items:center;gap:7px;background:#F1F8F3;color:var(--green-dark);border:1px solid #CFE9D8;font-weight:800;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;padding:5px 13px;border-radius:20px}
 .kh-tag i{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(24,163,75,.18)}
-#knHero h1{font-size:30px;line-height:1.24;letter-spacing:-.025em;margin:14px 0 12px;color:#12203A;font-weight:800}
+#knHero h1{font-size:30px;line-height:1.22;letter-spacing:-.025em;margin:14px 0 12px;color:#12203A;font-weight:800}
 #knHero h1 em{font-style:normal;color:var(--green-dark)}
 #knHero p{font-size:14px;line-height:1.68;color:#4B5563;margin-bottom:9px}
-#knHero p b{color:var(--green-dark);font-weight:700}
-.kh-num{display:flex;gap:28px;flex-wrap:wrap;margin:17px 0 18px;padding-top:15px;border-top:1px solid #DFEAE3}
-.kh-num .l{font-size:11px;color:var(--muted);font-weight:600}
+#knHero p b{color:#12203A;font-weight:700}
+#knHero p.kh-root{font-size:12.5px;line-height:1.6;color:#6B7280;border-left:3px solid #CFE9D8;padding-left:11px;margin-top:11px}
+#knHero p.kh-root b{color:var(--green-dark);font-weight:700}
+.kh-num{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 22px;margin:17px 0 18px;padding-top:15px;border-top:1px solid #E7ECE9}
+.kh-num .l{font-size:11px;color:var(--muted);font-weight:600;white-space:nowrap}
 .kh-num .v{font-size:21px;font-weight:800;margin-top:2px;letter-spacing:-.015em}
+.kh-num .v.mut{color:#6B7280}
 .kh-cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.kh-cta a,.kh-cta button{text-decoration:none;font:inherit;font-weight:700;font-size:13.5px;padding:11px 19px;border-radius:9px;cursor:pointer;border:1px solid transparent}
-.kh-b1{background:var(--green-dark);color:#fff;box-shadow:0 2px 10px rgba(18,138,62,.28)}
-.kh-b1:hover{background:#0D6E31}
-.kh-b2{background:#fff;color:var(--green-dark);border-color:#CFE9D8}
+.kh-cta a,.kh-cta button{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:inherit;font-weight:700;font-size:13.5px;padding:11px 19px;border-radius:9px;cursor:pointer;border:1px solid transparent}
+.kh-b1{background:#0068FF;color:#fff;box-shadow:0 2px 10px rgba(0,104,255,.28)}
+.kh-b1:hover{background:#0055D4}
 .kh-b3{background:none;color:var(--muted)}
 .kh-b3:hover{color:var(--green-dark)}
-/* --- khung may tinh + dien thoai (ve bang CSS, anh ben trong la chup that) --- */
-.kh-dev{position:relative;padding:0 96px 28px 0}
-.kh-mac{filter:drop-shadow(0 22px 40px rgba(15,32,56,.20))}
-.kh-lid{background:linear-gradient(#32363F,#23262D);border-radius:13px 13px 4px 4px;padding:15px 8px 9px;position:relative}
+/* --- may tinh + dien thoai: khung CSS co goc nghieng nhe + anh phan chieu, ben trong la anh chup that --- */
+.kh-dev{position:relative;padding:8px 104px 34px 0;perspective:1800px}
+.kh-mac{transform:rotateY(-7deg) rotateX(2.5deg);transform-origin:55% 60%;filter:drop-shadow(0 26px 44px rgba(15,32,56,.22))}
+.kh-lid{background:linear-gradient(160deg,#3A3F49 0%,#23262D 55%,#1B1D23 100%);border-radius:13px 13px 4px 4px;padding:15px 8px 9px;position:relative;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
 .kh-cam{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:5px;height:5px;border-radius:50%;background:#0D0E11;box-shadow:inset 0 0 0 1px #4A4F59}
-.kh-scr{background:#fff;border-radius:3px;overflow:hidden;line-height:0}
+.kh-scr{position:relative;background:#fff;border-radius:3px;overflow:hidden;line-height:0}
+.kh-scr::after{content:"";position:absolute;inset:0;background:linear-gradient(112deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,.06) 30%,rgba(255,255,255,0) 48%);pointer-events:none}
 .kh-bar{display:flex;align-items:center;gap:5px;background:#EDF0F4;padding:4px 8px;line-height:1}
 .kh-bar i{width:5px;height:5px;border-radius:50%;background:#CBD2DB;flex:none}
 .kh-bar i:first-child{background:#E8A0A0}.kh-bar i:nth-child(2){background:#EBCB94}.kh-bar i:nth-child(3){background:#A6D5AE}
 .kh-bar span{flex:1;text-align:center;font-size:7.5px;color:#939BA7;background:#fff;border-radius:6px;padding:2px 0;margin-left:6px;line-height:1.3}
 .kh-scr img{width:100%;height:auto;display:block}
-.kh-base{height:13px;margin:0 -8%;background:linear-gradient(#C9CFD8 0%,#AFB6C1 45%,#8D95A2 100%);border-radius:0 0 11px 11px;position:relative;box-shadow:0 6px 14px rgba(15,32,56,.18)}
+.kh-base{height:13px;margin:0 -8%;background:linear-gradient(#D5DAE2 0%,#B4BBC6 45%,#8E96A3 100%);border-radius:0 0 12px 12px;position:relative;box-shadow:0 8px 16px rgba(15,32,56,.2)}
 .kh-base::after{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:13%;height:4px;background:#9AA2AF;border-radius:0 0 6px 6px}
-.kh-iph{position:absolute;right:0;bottom:0;width:132px;background:#23262D;border-radius:22px;padding:5px;box-shadow:0 18px 34px rgba(15,32,56,.28);line-height:0}
-.kh-iph img{width:100%;height:auto;display:block;border-radius:18px}
-.kh-island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:40px;height:11px;background:#111318;border-radius:99px;z-index:2}
-/* --- quy trinh cong nghe --- */
-#knFlow{background:radial-gradient(120% 140% at 12% 0%,#13375B 0%,#0C1E33 45%,#0A1A22 100%);border-radius:16px;padding:30px 30px 32px;margin-bottom:16px;color:#E8EEF5}
-.kf-hd{text-align:center;max-width:720px;margin:0 auto 24px}
-.kf-ico{display:inline-flex;width:38px;height:38px;border-radius:11px;background:linear-gradient(140deg,#1DBE63,#0F7A3C);align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(24,163,75,.4);margin-bottom:12px}
-.kf-ico svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-#knFlow h2{font-size:22px;font-weight:800;letter-spacing:.02em;color:#fff;margin-bottom:8px}
-.kf-hd p{font-size:13.5px;line-height:1.6;color:#9FB2C6}
-.kf-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.kf-c{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:13px;padding:17px 17px 16px;position:relative;overflow:hidden}
-.kf-c::before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:2px;background:linear-gradient(90deg,#1DBE63,rgba(29,190,99,0))}
-.kf-n{display:inline-flex;width:27px;height:27px;border-radius:9px;background:rgba(29,190,99,.14);border:1px solid rgba(29,190,99,.34);color:#5BE08F;font-weight:800;font-size:13px;align-items:center;justify-content:center;margin-bottom:11px}
-.kf-c h3{font-size:14.5px;font-weight:700;color:#fff;margin-bottom:7px;letter-spacing:-.01em}
-.kf-c h3 em{font-style:normal;font-weight:600;font-size:11.5px;color:#6BD394;letter-spacing:.04em;margin-left:5px}
-.kf-c p{font-size:12.8px;line-height:1.62;color:#A9B9C9}
-.kf-ft{margin-top:16px;text-align:center;font-size:12.5px;color:#8FA3B8}
-.kf-ft b{color:#6BD394}
+.kh-iph{position:absolute;right:0;bottom:6px;width:130px;background:linear-gradient(160deg,#30343C,#1E2026);border-radius:23px;padding:5px;box-shadow:0 22px 40px rgba(15,32,56,.32),inset 0 0 0 1px rgba(255,255,255,.08);line-height:0;transform:rotateY(9deg) rotateX(2deg);transform-origin:40% 60%}
+.kh-iph::after{content:"";position:absolute;inset:5px;border-radius:19px;background:linear-gradient(118deg,rgba(255,255,255,.2) 0%,rgba(255,255,255,.04) 32%,rgba(255,255,255,0) 50%);pointer-events:none}
+.kh-iph img{width:100%;height:auto;display:block;border-radius:19px}
+.kh-island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:42px;height:11px;background:#0B0C10;border-radius:99px;z-index:2}
+/* --- quy trinh van hanh: cung khung trang, nen sang --- */
+.kh-flow{margin-top:28px;padding-top:24px;border-top:1px solid #E7ECE9}
+.kf-hd{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.kf-hd h2{font-size:15px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#12203A;margin:0}
+.kf-hd p{font-size:13px;color:var(--muted);margin:0}
+.kf-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.kf-c{background:#F8FAF9;border:1px solid #E7ECE9;border-radius:12px;padding:15px 16px 14px;position:relative}
+.kf-n{display:inline-flex;width:26px;height:26px;border-radius:8px;background:var(--green-soft);border:1px solid #CFE9D8;color:var(--green-dark);font-weight:800;font-size:12.5px;align-items:center;justify-content:center;margin-bottom:9px}
+.kf-c h3{font-size:14px;font-weight:700;color:#12203A;margin-bottom:6px;letter-spacing:-.01em}
+.kf-c h3 em{font-style:normal;font-weight:700;font-size:11px;color:var(--green-dark);letter-spacing:.06em;text-transform:uppercase;margin-left:6px}
+.kf-c p{font-size:12.6px;line-height:1.6;color:#5B6472;margin:0}
 @media(max-width:1000px){
  #knHero{padding:20px 16px 18px}
  #knHero .kh-in{grid-template-columns:minmax(0,1fr);gap:24px}
- #knHero h1{font-size:21px;margin:11px 0 9px}
+ #knHero h1{font-size:22px;margin:11px 0 9px}
  #knHero p{font-size:13.5px;line-height:1.6}
- .kh-dev{max-width:440px;margin:0 auto;padding:0 82px 24px 0;width:100%}
- .kh-iph{width:118px}
- .kh-num{gap:16px;margin:13px 0 15px;padding-top:12px}.kh-num .v{font-size:18.5px}
+ .kh-dev{max-width:440px;margin:0 auto;padding:6px 84px 30px 0;width:100%}
+ .kh-iph{width:120px}
+ .kh-num{gap:10px 14px;margin:13px 0 15px;padding-top:12px}.kh-num .v{font-size:18.5px}
  .kh-cta a,.kh-cta button{padding:10px 16px;font-size:13px}
- #knFlow{padding:22px 15px 24px}
  .kf-grid{grid-template-columns:minmax(0,1fr);gap:10px}
- #knFlow h2{font-size:18.5px}
 }
 </style>
 
@@ -298,10 +295,10 @@ body.knFit #view-compare>.card{margin-bottom:0}
 <script src="bstar_books.js?v=20260906a"></script>
 <script src="hanghoa_data.js?v=20260907a"></script>
 <script src="nhan_dinh.js?v=20260914a"></script>
-<script src="dashboard_app.js?v=20260919c"></script>
+<script src="dashboard_app.js?v=20260919d"></script>
 <script src="market_v2.js?v=20260907l"></script>
 <script src="autorun.js?v=20260812a"></script>
-<script src="app-shell.js?v=20260919c"></script>
+<script src="app-shell.js?v=20260919d"></script>
 <script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script>
 </body>
 </html>
