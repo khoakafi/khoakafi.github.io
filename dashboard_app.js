@@ -3141,7 +3141,8 @@ inits.compare = function(){
         <span class="mini" style="align-self:center"><span style="display:inline-block;width:10px;height:10px;background:#128A3E;border-radius:3px;vertical-align:-1px"></span> khoảng P/B &nbsp; <span style="display:inline-block;width:10px;height:10px;background:#67D98B;border-radius:3px;vertical-align:-1px"></span> P/B hiện tại &nbsp; <span style="display:inline-block;width:10px;height:10px;background:#D97706;border-radius:50%;vertical-align:-1px"></span> ROE hiện tại</span>
         <span class="mini" id="secSt" style="align-self:center"></span>
       </div>
-      <div style="height:calc(100vh - 285px);min-height:420px"><canvas id="cvSec"></canvas></div></div>`;
+      <div style="position:relative;height:calc(100vh - 285px);min-height:420px"><canvas id="cvSec"></canvas>
+        <div id="secMsg" style="display:none;position:absolute;inset:0;place-items:center;text-align:center;padding:24px"></div></div></div>`;
     $('#secGrp').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; $$('#secGrp button').forEach(x=>x.classList.remove('on')); b.classList.add('on'); secGrp = b.dataset.g; drawSec(); });
   }
   drawSec();
@@ -3149,6 +3150,15 @@ inits.compare = function(){
 // ===== DINH GIA THEO DONG (khoang P/B & ROE lich su, hien tai theo phien) =====
 const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB','TPB','VIB','MSB','OCB'], sec:['SSI','VND','VCI','HCM','MBS','VDS','BSI','SHS','VIX','FTS','ORS','TCX','VPX','VCK'] };
 let secCache = {}, secChart = null, secGrp = 'bank';
+/* Dem so ma thuc su ve duoc khoang P/B. Dung de biet mot lan tai la that bai hay thanh cong. */
+function secDemMuc(D, codes){
+  if (!D) return 0;
+  return codes.filter(c => D[c] && D[c].pbLo != null && isFinite(D[c].pbLo)).length;
+}
+window.secTaiLai = function(){
+  try { localStorage.removeItem('kn_sec_' + secGrp); } catch(e){}
+  secCache[secGrp] = null; return drawSec();
+};
 async function drawSec(){
   const st = $('#secSt'); const codes = SEC_GROUPS[secGrp];
   /* Du lieu nay chi doi sau khi ket phien -> chi tinh lai 1 lan/ngay.
@@ -3159,6 +3169,11 @@ async function drawSec(){
     const luu = knDocCache('kn_sec_' + secGrp, khoa);
     if (luu) { luu._k = khoa; secCache[secGrp] = cch = luu; }
   }
+  /* Cache rong = lan tai truoc that bai. Bo di de tai lai, dung de ca phien chart trong. */
+  if (cch && !secDemMuc(cch, codes)) {
+    secCache[secGrp] = cch = null;
+    try { localStorage.removeItem('kn_sec_' + secGrp); } catch(e){}
+  }
   if (!cch || cch._k !== khoa) {
     if (st) st.innerHTML = '<span class="spin"></span> đang tải…';
     const out = {};
@@ -3167,7 +3182,8 @@ async function drawSec(){
     for (let i=0;i<codes.length;i+=6) await Promise.all(codes.slice(i,i+6).map(async t => { try {
       const rts = await api.ratios(t); const h = rts.slice(-24);
       const pbs = h.map(x=>x.pb).filter(v=>v!=null&&isFinite(v)), roes = h.map(x=>x.roe!=null?x.roe*100:null).filter(v=>v!=null&&isFinite(v));
-      out[t] = Object.assign(out[t]||{}, { pbLo:Math.min(...pbs), pbHi:Math.max(...pbs), roeLo:Math.min(...roes), roeHi:Math.max(...roes),
+      const mn = a => a.length ? Math.min(...a) : null, mx = a => a.length ? Math.max(...a) : null;
+      out[t] = Object.assign(out[t]||{}, { pbLo:mn(pbs), pbHi:mx(pbs), roeLo:mn(roes), roeHi:mx(roes),
         curRoe: rts.length && rts[rts.length-1].roe!=null ? rts[rts.length-1].roe*100 : null });
       try { const oh = await api.ohlc(t, 220);
         if (oh && oh.c && oh.c.length > 1) {
@@ -3193,13 +3209,30 @@ async function drawSec(){
     } catch(e){} }));
     out._ts = Date.now(); out._k = khoa;
     secCache[secGrp] = out;
-    knGhiCache('kn_sec_' + secGrp, khoa, out);       // lan sau mo tab la co ngay
-    if (st) st.textContent = 'P/B hiện tại đã quy theo giá phiên mới nhất';
+    /* Chi ghi cache khi ve du ma. Tai hong ma van ghi thi ca phien sau do chart trong. */
+    const nOk = secDemMuc(out, codes);
+    if (nOk >= Math.ceil(codes.length / 2)) {
+      knGhiCache('kn_sec_' + secGrp, khoa, out);     // lan sau mo tab la co ngay
+      if (st) st.textContent = 'P/B hiện tại đã quy theo giá phiên mới nhất';
+    } else if (nOk) {
+      if (st) st.innerHTML = 'Mới lấy được ' + nOk + '/' + codes.length + ' mã — mở lại tab để lấy tiếp';
+    } else if (st) st.textContent = '';
   }
   const D = secCache[secGrp];
   const items = codes.filter(c => D[c] && D[c].pbLo!=null && isFinite(D[c].pbLo))
     .sort((a,b)=>((D[b].curRoe??-99)-(D[a].curRoe??-99)));   // xep theo ROE cao -> thap cho de doc
-  if (secChart) secChart.destroy();
+  if (secChart) { secChart.destroy(); secChart = null; }
+  const cv = $('#cvSec'), msg = $('#secMsg');
+  if (!items.length) {
+    if (cv) cv.style.display = 'none';
+    if (msg) { msg.style.display = 'grid';
+      msg.innerHTML = '<div><div style="font-weight:700;font-size:15px;margin-bottom:6px">Chưa lấy được dữ liệu định giá</div>'
+        + '<div class="mini" style="margin-bottom:14px">Nguồn P/B lịch sử đang không phản hồi. Dữ liệu không bị mất — mở lại tab hoặc bấm nút dưới là lấy lại.</div>'
+        + '<button class="btn-cta" type="button" onclick="secTaiLai()">Thử lại</button></div>'; }
+    return;
+  }
+  if (cv) cv.style.display = '';
+  if (msg) msg.style.display = 'none';
   const secLbl = { id:'secLbl', afterDatasetsDraw(chart){ const ctx = chart.ctx; const meta = chart.getDatasetMeta(0);
     meta.data.forEach((bar,i)=>{ const d = D[items[i]];
       ctx.save(); ctx.font = '700 11px Inter, sans-serif'; ctx.fillStyle = '#1F2937'; ctx.textAlign = 'center';
