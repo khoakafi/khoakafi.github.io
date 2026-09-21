@@ -46,7 +46,10 @@ Máy chạy task thường bị chặn gọi ra ngoài. Đừng nhờ anh Khoa c
 `Referer: https://khoanguyeninvest.vn/` → trả **400**; không có Referer → **200**.
 Server vẫn sống, CORS vẫn đúng domain, nên nhìn từ curl tưởng API còn tốt.
 
-Đã sửa: `jget` gọi `fetch(u, { referrerPolicy: 'no-referrer' })`.
+Đã sửa: `jget` bỏ Referer **chỉ khi gọi vietcap** (`/iq\.vietcap\.com\.vn/.test(u)`).
+**Bài học đắt (2026-09-21):** lần đầu em bỏ Referer cho *toàn bộ* `jget` → VNDirect từ chối một phần
+trong 15 lời gọi dchart cùng lúc của B★ → deal ra "…", đường hiệu suất rơi về bản không-B★ (+486.9%).
+Đổi header thì **khoanh đúng host cần đổi**, không đụng host đang chạy tốt.
 **Đừng** dùng `<meta name="referrer">` cho cả site — sẽ mất Referer ở link mở tài khoản KAFI
 và Google Analytics. Các API VNDirect (dchart, stock_prices, foreigns, ratios, news)
 chạy được cả hai chiều, nên bỏ Referer không ảnh hưởng.

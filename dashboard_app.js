@@ -53,9 +53,12 @@ function __fRS(){ return window.__FIN_BANK ? 'TOI' : 'DT'; }
 function __fTxtB(x){ return window.__FIN_BANK ? String(x).replace(/Doanh thu/g,'TOI').replace(/doanh thu/g,'TOI') : x; }
 
 /* Vietcap chan request kem Referer (400). Trinh duyet luon tu gan Referer cua
-   trang -> phai tat di. Khong dung <meta name="referrer"> cho ca site vi se
-   mat Referer o link mo tai khoan KAFI va Google Analytics. */
-async function jget(u){ const r = await fetch(u, { referrerPolicy: 'no-referrer' });
+   trang -> phai tat di, NHUNG CHI cho vietcap. VNDirect (dchart, finfo) chay
+   tot voi Referer suot may thang; bo Referer o do lam B* mat gia (15 loi goi
+   dchart cung luc, mot so bi tu choi -> deal ra "..."). Khong dung
+   <meta name="referrer"> cho ca site vi se mat Referer o link KAFI va GA. */
+async function jget(u){
+  const r = await fetch(u, /iq\.vietcap\.com\.vn/.test(u) ? { referrerPolicy: 'no-referrer' } : undefined);
   if(!r.ok) throw new Error(r.status); return r.json(); }
 const api = {
   ohlc: async (sym, days) => {
