@@ -1291,12 +1291,12 @@ function ddVNI(curve){
    Mockup: khung ve bang CSS, ben trong la anh chup that (mock-web.webp / mock-app.webp).
    Che do app bo qua. */
 const KN_BUOC = [
-  ['Thu thập dữ liệu','Data','Giá, khối lượng, BCTC 12 quý của toàn bộ HOSE–HNX, nạp về ngay sau phiên.'],
-  ['Chuẩn hoá','Normalize','Chỉnh cổ tức, chia tách; đồng nhất chuẩn kế toán; loại mã thanh khoản mỏng.'],
-  ['Chấm điểm','Score','Tăng trưởng, ROE, định giá, sức mạnh giá RS, tiêu chí CANSLIM — mỗi mã một điểm.'],
-  ['Nhận diện nền','Detect','Đọc nền giá theo Wyckoff và Minervini; nền siết chặt nhất được gắn B★.'],
-  ['Phát tín hiệu','Signal','Bứt nền kèm khối lượng là vào lệnh, điểm thoát đặt sẵn; báo thẳng về điện thoại.'],
-  ['Đối soát','Review','Mỗi lệnh vào sổ, lãi lỗ tính sau phí, đặt cạnh VN-Index. Sai thì sửa luật, không sửa số.']
+  ['Thu thập','Data','Giá, khối lượng, BCTC, định giá, dòng tiền.'],
+  ['Chuẩn hoá','Normalize','Cổ tức, chia tách, thanh khoản, số liệu lỗi.'],
+  ['Chấm điểm','Score','Tăng trưởng, ROE, định giá, RS, CANSLIM.'],
+  ['Đọc cấu trúc','Pattern','Nền giá, độ siết theo Wyckoff–Minervini.'],
+  ['Gác cổng','Rule & Risk','Đủ chuẩn, rủi ro đã định mới vào lệnh.'],
+  ['Đối soát','Review','Vào sổ, lãi lỗ sau phí, cạnh VN-Index.']
 ];
 function knHeroHtml(){
   const zalo = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.5-5.2A8.5 8.5 0 1 1 21 12z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg>';
@@ -1304,10 +1304,11 @@ function knHeroHtml(){
     <div class="kh-in">
       <div class="kh-txt">
         <span class="kh-tag"><i></i>Khoa Nguyen Signal · Hệ thống giao dịch định lượng</span>
-        <h1>Tôi không đoán thị trường. <em>Hệ thống chọn mã, tôi mới xuống tiền.</em></h1>
-        <p>Khoa Nguyen Signal là bộ máy tôi tự viết và chạy bằng tiền thật từ 2019. Cứ hết phiên là nó rà lại toàn bộ HOSE–HNX qua hai vòng: <b>doanh nghiệp có khoẻ không</b> (tăng trưởng, ROE, định giá, dòng tiền) và <b>đồ thị có đẹp không</b> (nền giá, thanh khoản, sức mạnh tương đối). Qua cả hai vòng mới được vào Watchlist; nền siết chặt nhất được gắn <b>B★</b>.</p>
-        <p>Điểm mua, điểm thoát, khối lượng — báo thẳng về điện thoại. Lời hay lỗ đều ghi sổ, đặt cạnh VN-Index và để công khai ngay trang này. Bảy năm, hơn trăm deal, không giấu deal nào.</p>
-        <p class="kh-root">Nền tảng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b> — tôi gói những nguyên tắc đó thành thuật toán và kiểm chứng trên 7 năm dữ liệu thị trường Việt Nam.</p>
+        <h1>Máy đọc dữ liệu. <em>Quy tắc quyết định có hành động hay không.</em></h1>
+        <p>Tôi không hô hào mã nào sẽ tăng bao nhiêu. Khoa Nguyen Signal là cỗ máy tôi tự viết, chạy bằng tiền thật từ 2019: hết phiên là chấm lại toàn sàn qua hai vòng — <b>doanh nghiệp có khoẻ không</b> và <b>đồ thị có đẹp không</b>.</p>
+        <p>Máy đọc được lượng dữ liệu một người không đọc nổi mỗi ngày, nhưng máy không khuyến nghị. Quy tắc định lượng mới quyết định: <b>mã nào đáng theo dõi, khi nào được vào lệnh, khi nào phải đứng ngoài</b>. Nền siết chặt nhất được gắn <b>B★</b>.</p>
+        <p>Hệ thống không có niềm tin — hệ thống có nhật ký. Sai thì mức sai được kiểm soát, đúng thì xu hướng được giữ đủ lâu.</p>
+        <p class="kh-root">Nền tảng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b>. Nguyên tắc của họ thì ai cũng đọc được; phần tôi mất bảy năm hiệu chỉnh trên dữ liệu Việt Nam là <b>ngưỡng</b> — con số quyết định thế nào là đủ ở mỗi bước.</p>
         <div class="kh-num" id="khNum"></div>
         <div class="kh-cta">
           <a class="kh-b1" href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'hero'})}catch(e){}">${zalo}Room Zalo trải nghiệm</a>
@@ -1329,7 +1330,7 @@ function knHeroHtml(){
       </div>
     </div>
     <div class="kh-flow">
-      <div class="kf-hd"><h2>Máy chạy sáu bước sau mỗi phiên</h2><p>Không ai gõ tay vào con số nào trên trang này.</p></div>
+      <div class="kf-hd"><h2>Từ dữ liệu thô đến quyết định có kỷ luật</h2><p>Sáu bước chạy lại sau mỗi phiên. Không ai gõ tay vào con số nào trên trang này.</p></div>
       <div class="kf-line">${KN_BUOC.map((b,i)=>`<div class="kf-s"><span class="kf-n">${i+1}</span><h3>${b[0]}<em>${b[1]}</em></h3><p>${b[2]}</p></div>`).join('')}</div>
     </div>
   </section>`;
