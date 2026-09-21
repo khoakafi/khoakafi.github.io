@@ -1,0 +1,69 @@
+name: chup-mockup
+on:
+  push:
+    branches:
+    - claude/lucid-fermat-8vtoo1
+jobs:
+  chup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: claude/lucid-fermat-8vtoo1
+    - name: Cai Playwright
+      run: npm i --no-save playwright && npx playwright install --with-deps chromium && pip install --quiet Pillow numpy
+    - name: Chup trang that
+      run: |-
+        cat > chup.js <<'EOF'
+        const {chromium} = require('playwright');
+        (async () => {
+          const b = await chromium.launch();
+          // Dung dung do phan giai logic cua MacBook 14" + man Retina 2x -> anh 3024x1964
+          const p = await b.newPage({ viewport: {width:1512, height:982}, deviceScaleFactor: 2 });
+          p.on('console', m => { if (m.type()==='error') console.log('  [trang]', m.text().slice(0,120)); });
+          await p.goto('https://khoanguyeninvest.vn/', { waitUntil:'load', timeout:90000 });
+          await p.waitForTimeout(6000);
+          await p.evaluate(() => { try { openDetail('GVR'); } catch(e) { console.error('openDetail loi: '+e.message); } });
+          // cho chart nen ve xong
+          await p.waitForFunction(() => {
+            const c = document.querySelector('#proPx canvas, #chartProWrap canvas');
+            return c && c.width > 200;
+          }, { timeout: 60000 }).catch(() => console.log('  (khong thay canvas chart, van chup)'));
+          await p.waitForTimeout(8000);
+          await p.screenshot({ path: 'shot.png' });
+          console.log('da chup:', await p.evaluate(() => document.title));
+          await b.close();
+        })();
+        EOF
+        node chup.js
+    - name: Dong goi thanh mock-web.webp
+      run: |-
+        cat > dong.py <<'EOF'
+        from PIL import Image, ImageFilter
+        import numpy as np, os
+        im = Image.open('shot.png').convert('RGB')
+        print('anh chup goc:', im.size, 'ty le %.3f' % (im.size[0]/im.size[1]))
+        def net(x):
+            a = np.asarray(x.convert('L'), float)
+            l = (-4*a[1:-1,1:-1]+a[:-2,1:-1]+a[2:,1:-1]+a[1:-1,:-2]+a[1:-1,2:]); return l.var()
+        # Ha ve 2000px bang LANCZOS roi lam net rat nhe - nguon la ban render that nen khong can bu nhieu
+        r = im.resize((2000, round(2000*im.size[1]/im.size[0])), Image.LANCZOS)
+        r = r.filter(ImageFilter.UnsharpMask(radius=0.6, percent=55, threshold=3))
+        r.save('mock-web.webp', 'WEBP', quality=82, method=6)
+        kt = Image.open('mock-web.webp')
+        thu = kt.resize((1312, round(1312*kt.size[1]/kt.size[0])), Image.LANCZOS)
+        print('mock-web.webp:', kt.size, '%d KB' % (os.path.getsize('mock-web.webp')//1024))
+        print('do net sau khi thu ve kich thuoc hien thi: %.0f' % net(thu))
+        EOF
+        python3 dong.py
+    - name: Commit anh vao nhanh
+      run: |-
+        rm -f shot.png chup.js dong.py
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add mock-web.webp
+        git diff --cached --quiet && echo "anh khong doi" && exit 0
+        git commit -m "Mockup: anh chup tu trang that, render o do phan giai MacBook Retina"
+        git push origin claude/lucid-fermat-8vtoo1
