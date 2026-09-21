@@ -3159,6 +3159,61 @@ window.secTaiLai = function(){
   try { localStorage.removeItem('kn_sec_' + secGrp); } catch(e){}
   secCache[secGrp] = null; return drawSec();
 };
+let secLoi = null;      // ly do lan tai gan nhat that bai, de hien ra man hinh
+const secNgay = d => d ? d.slice(8,10) + '/' + d.slice(5,7) + '/' + d.slice(0,4) : '';
+/* Ghi dung moc thoi gian cua so lieu dang ve — khong noi chung chung. */
+function secMoc(D, codes){
+  let moi = '', cu = '';
+  codes.forEach(c => { const o = D[c]; if (!o) return;
+    if (o.pbDate && o.pbDate > moi) moi = o.pbDate;
+    if (o.pbTu && (!cu || o.pbTu < cu)) cu = o.pbTu; });
+  if (!moi) return 'P/B theo quý gần nhất';
+  return 'P/B tính đến phiên ' + secNgay(moi) + (cu ? ' · khoảng lấy từ ' + secNgay(cu) : '');
+}
+/* ===== Lay khoang P/B =====
+   Nguon 1: VNDirect finfo — P/B theo TUNG PHIEN, mot lan goi duoc nhieu ma
+            (CORS mo, cung nha cung cap dang dung cho gia/BCTC).
+   Nguon 2: Vietcap — P/B theo quy, chi dung cho ma nguon 1 khong co.
+   ROE hien tai + gia: lay tu dashboard_data.js cua chinh site, khong can API. */
+async function secTai(codes){
+  const out = {};
+  let loi = null;
+  const tu = new Date(); tu.setFullYear(tu.getFullYear() - 6);
+  const tuS = knNgayStr(tu);
+  try {
+    /* Lo 4 ma: 4 x ~1500 phien van duoi tran 9999 dong cua API. */
+    for (let i = 0; i < codes.length; i += 4) {
+      const r = await jget('https://api-finfo.vndirect.com.vn/v4/ratios?q=code:' + codes.slice(i, i+4).join(',')
+        + '~ratioCode:PRICE_TO_BOOK~reportDate:gte:' + tuS + '&sort=reportDate&size=9999');
+      ((r && r.data) || []).forEach(x => {
+        const v = +x.value; if (!isFinite(v) || v <= 0) return;
+        const d = (x.reportDate || '').slice(0, 10); if (!d) return;
+        const o = out[x.code] || (out[x.code] = { pbLo: v, pbHi: v, curPb: v, pbDate: d, pbTu: d });
+        if (v < o.pbLo) o.pbLo = v;
+        if (v > o.pbHi) o.pbHi = v;
+        if (d > o.pbDate) { o.curPb = v; o.pbDate = d; }
+        if (d < o.pbTu) o.pbTu = d;
+      });
+    }
+  } catch(e){ loi = 'VNDirect: ' + ((e && e.message) || 'không gọi được'); }
+  const thieu = codes.filter(c => !out[c]);
+  if (thieu.length) await Promise.all(thieu.map(async t => {
+    try {
+      const rts = await api.ratios(t);
+      const pbs = rts.slice(-24).map(x => x.pb).filter(v => v != null && isFinite(v) && v > 0);
+      if (!pbs.length) return;
+      out[t] = { pbLo: Math.min(...pbs), pbHi: Math.max(...pbs), curPb: pbs[pbs.length-1], pbDate: null, pbTu: null };
+    } catch(e){ if (!loi) loi = 'Vietcap: ' + ((e && e.message) || 'không gọi được'); }
+  }));
+  /* ROE hien tai va so sach/cp: so cua chinh minh, khong di hoi ai. */
+  codes.forEach(t => {
+    const o = out[t]; if (!o) return;
+    const r = (typeof byT === 'object' && byT[t]) || {};
+    o.curRoe = (r.roe != null && isFinite(r.roe)) ? r.roe : null;
+    o.bvps = (r.p != null && o.curPb > 0) ? +(r.p / o.curPb).toFixed(2) : null;
+  });
+  return { out: out, loi: loi };
+}
 async function drawSec(){
   const st = $('#secSt'); const codes = SEC_GROUPS[secGrp];
   /* Du lieu nay chi doi sau khi ket phien -> chi tinh lai 1 lan/ngay.
@@ -3176,44 +3231,15 @@ async function drawSec(){
   }
   if (!cch || cch._k !== khoa) {
     if (st) st.innerHTML = '<span class="spin"></span> đang tải…';
-    const out = {};
-    try { const f = await jget('https://api-finfo.vndirect.com.vn/v4/ratios/latest?order=reportDate&filter=ratioCode:PRICE_TO_BOOK&where=code:'+codes.join(',')+'&size=50');
-      (f.data||[]).forEach(x=>{ out[x.code] = {curPb: x.value, pbDate: (x.reportDate||'').slice(0,10) || null}; }); } catch(e){}
-    for (let i=0;i<codes.length;i+=6) await Promise.all(codes.slice(i,i+6).map(async t => { try {
-      const rts = await api.ratios(t); const h = rts.slice(-24);
-      const pbs = h.map(x=>x.pb).filter(v=>v!=null&&isFinite(v)), roes = h.map(x=>x.roe!=null?x.roe*100:null).filter(v=>v!=null&&isFinite(v));
-      const mn = a => a.length ? Math.min(...a) : null, mx = a => a.length ? Math.max(...a) : null;
-      out[t] = Object.assign(out[t]||{}, { pbLo:mn(pbs), pbHi:mx(pbs), roeLo:mn(roes), roeHi:mx(roes),
-        curRoe: rts.length && rts[rts.length-1].roe!=null ? rts[rts.length-1].roe*100 : null });
-      try { const oh = await api.ohlc(t, 220);
-        if (oh && oh.c && oh.c.length > 1) {
-          const pNow = oh.c[oh.c.length-1];
-          const closeAt = lim => { for (let k = oh.t.length-1; k >= 0; k--) {
-            const ds = new Date(oh.t[k]*1000).toISOString().slice(0,10);
-            if (ds <= lim) return oh.c[k]; } return null; };
-          if (out[t].curPb != null && out[t].pbDate) {
-            const pRef = closeAt(out[t].pbDate);
-            if (pRef > 0 && pNow > 0) out[t].curPb = +(out[t].curPb * pNow / pRef).toFixed(3);
-          } else {
-            const L = rts.length ? rts[rts.length-1] : null;
-            if (L && L.pb != null && L.pb > 0) {
-              const qEnd = new Date(Date.UTC(L.yearReport, L.quarter*3, 0)).toISOString().slice(0,10);
-              const pQ = closeAt(qEnd);
-              if (pQ > 0 && pNow > 0) out[t].curPb = +(L.pb * pNow / pQ).toFixed(3);
-            }
-          }
-          if (out[t].curPb > 0 && pNow > 0) out[t].bvps = +(pNow / out[t].curPb).toFixed(2);
-        }
-        if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb;
-      } catch(e){ if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb; }
-    } catch(e){} }));
+    const kq = await secTai(codes);
+    const out = kq.out; secLoi = kq.loi;
     out._ts = Date.now(); out._k = khoa;
     secCache[secGrp] = out;
     /* Chi ghi cache khi ve du ma. Tai hong ma van ghi thi ca phien sau do chart trong. */
     const nOk = secDemMuc(out, codes);
     if (nOk >= Math.ceil(codes.length / 2)) {
       knGhiCache('kn_sec_' + secGrp, khoa, out);     // lan sau mo tab la co ngay
-      if (st) st.textContent = 'P/B hiện tại đã quy theo giá phiên mới nhất';
+      if (st) st.textContent = secMoc(out, codes);
     } else if (nOk) {
       if (st) st.innerHTML = 'Mới lấy được ' + nOk + '/' + codes.length + ' mã — mở lại tab để lấy tiếp';
     } else if (st) st.textContent = '';
@@ -3227,7 +3253,8 @@ async function drawSec(){
     if (cv) cv.style.display = 'none';
     if (msg) { msg.style.display = 'grid';
       msg.innerHTML = '<div><div style="font-weight:700;font-size:15px;margin-bottom:6px">Chưa lấy được dữ liệu định giá</div>'
-        + '<div class="mini" style="margin-bottom:14px">Nguồn P/B lịch sử đang không phản hồi. Dữ liệu không bị mất — mở lại tab hoặc bấm nút dưới là lấy lại.</div>'
+        + '<div class="mini" style="margin-bottom:14px">Nguồn P/B lịch sử đang không phản hồi. Dữ liệu không bị mất — mở lại tab hoặc bấm nút dưới là lấy lại.'
+        + (secLoi ? '<br>Chi tiết: ' + String(secLoi).replace(/[<>]/g, '') : '') + '</div>'
         + '<button class="btn-cta" type="button" onclick="secTaiLai()">Thử lại</button></div>'; }
     return;
   }
