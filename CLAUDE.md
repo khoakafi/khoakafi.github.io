@@ -61,6 +61,9 @@ tính lại trên trình duyệt từ giá dchart của ~15 mã (`bstarLoadPrice
 phép tính** → con số thấp hơn thật mà trông vẫn hợp lý. Đã sửa: tải 4 lô song song, hỏng thử lại 2 lần, nhớ
 giá theo phiên (`kn_bstar_px`, chỉ ghi mã tải thành công), nhịp 2 phút tải lại cả mã còn thiếu, và
 `BSTAR.thieu` để màn hình ghi "đang tải N mã" thay vì im lặng. Web và app dùng **cùng** `bstarCurve()`.
+Kho giá `kn_bstar_px` giữ **qua ngày** (khoá `v2`, không theo phiên): lịch sử đến phiên trước không đổi, giá hôm nay
+`bstarGia` lấy từ bảng giá; mã nào `lastd` < phiên trước mới tải lại. `thieu == null` = chưa tải xong lần đầu →
+trang đầu ghi "· đang tính 2026…" (mở tab ẩn danh mất vài giây, lần sau ~0.3s). Số đúng là số khi `thieu` rỗng.
 
 ## Cách anh Khoa thích làm việc
 

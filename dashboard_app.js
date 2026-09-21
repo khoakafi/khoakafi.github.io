@@ -828,7 +828,7 @@ function renderTops(){
 /* ================= B★ — sổ theo năm & top tín hiệu B★ =================
    Nguồn sự thật: window.SIGS.t[mã].m (dấu X = B★, S = bán). Giá: dchart nến ngày (tải khi mở tab).
    Các năm đã khép: window.BSTAR_BOOKS (bstar_books.js). Năm hiện tại: tính sống ở đây, cùng quy ước. */
-const BSTAR = { deals:null, px:{}, vni:null, ready:false, thieu:[], loi:{} };
+const BSTAR = { deals:null, px:{}, vni:null, ready:false, thieu:null, loi:{} };   // thieu=null: chua tai xong lan dau
 window.__bstar = { S:BSTAR, deals:()=>bstarDeals(), live:()=>bstarBookLive(), curve:()=>bstarCurve(), stats:(cv)=>bstarStats(cv), recent:()=>bstarRecent() };
 function bstarDeals(){
   if (BSTAR.deals) return BSTAR.deals;
@@ -887,16 +887,19 @@ async function bstarLoadPrices(onlyOpen){
   const need = new Set(deals.map(d => d.t));
   ((window.BSTAR_CURVE && window.BSTAR_CURVE.carry) || []).forEach(c => need.add(c.t));
   const mo = new Set(deals.filter(d => !d.sdate).map(d => d.t));
-  const khoa = bstarKhoa();
-  /* 1) Lay tu kho phien nay truoc (chi chua ma da tai thanh cong) */
+  /* 1) Lay tu kho (giu QUA NGAY, khong theo phien): lich su den phien truoc khong doi, con gia
+        hom nay bstarGia lay tu bang gia (byT) roi. Ma nao lich su ket thuc truoc phien truoc -> tai lai. */
+  const khoa = 'v2';
+  const phienTruoc = knNgayStr(knPhienTruoc(new Date(Date.now() + 7*3600*1000)));
   const kho = knDocCache(KN_BS_KHO, khoa) || {};
-  for (const s of need) if (!BSTAR.px[s] && kho[s]) BSTAR.px[s] = kho[s];
-  if (!BSTAR.vni && kho.VNINDEX) BSTAR.vni = kho.VNINDEX;
+  const conTot = r => r && r.lastd && r.lastd >= phienTruoc && r.mp && r.ds && r.ds.length > 100;
+  for (const s of need) if (!BSTAR.px[s] && conTot(kho[s])) BSTAR.px[s] = kho[s];
+  if (!BSTAR.vni && conTot(kho.VNINDEX)) BSTAR.vni = kho.VNINDEX;
   /* 2) Can tai: lan dau = ma chua co; nhip 2 phut = deal dang mo + moi ma con thieu */
   const can = [...need].filter(s => !BSTAR.px[s] || (onlyOpen && mo.has(s)));
   const to = NOW()+86400, from = to - 86400*330;
   const [ra, vni] = await Promise.all([
-    bstarTaiNhom(can, from, to, 4),
+    bstarTaiNhom(can, from, to, 8),
     bstarTaiNhom(['VNINDEX'], from, to, 1)     // VN-Index luon nap lai: khong thi duong so sanh dung im ca phien
   ]);
   Object.assign(BSTAR.px, ra);
@@ -1439,8 +1442,11 @@ function knHeroVe(){
     if (!st) return;
     const f = v => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(1) + '%';
     const o = (l, v, cls) => `<div><div class="l">${l}</div><div class="v ${cls||''}">${v}</div></div>`;
+    const nam = new Date().getFullYear();
+    const dangTinh = BSTAR.thieu == null && window.BSTAR_CURVE && window.BSTAR_CURVE.end < nam + '-01-01';
     const thieu = (BSTAR.thieu || []).length;
-    const nhan = 'Hệ thống từ 2019' + (thieu ? ' <i style="font-style:normal;color:#D97706" title="' + BSTAR.thieu.join(', ') + '">· đang tải ' + thieu + ' mã</i>' : '');
+    const nhan = 'Hệ thống từ 2019' + (dangTinh ? ' <i style="font-style:normal;color:#D97706">· đang tính ' + nam + '…</i>'
+      : thieu ? ' <i style="font-style:normal;color:#D97706" title="' + BSTAR.thieu.join(', ') + '">· đang tải ' + thieu + ' mã</i>' : '');
     num.innerHTML = o(nhan, f(st.all), 'up') + o('VN-Index cùng kỳ', f(st.vall), 'mut')
       + o('Tỷ lệ thắng', Math.round(st.winrate) + '%') + o('Deal đã chốt', String(st.ndeal))
       + o('R:R', st.rr.toFixed(1)) + o('Max drawdown', '−' + Math.abs(st.maxdd).toFixed(1) + '%', 'down');
