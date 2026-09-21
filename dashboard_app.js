@@ -1301,9 +1301,10 @@ const KN_BUOC = [
   ['Đối soát','Review','Ngày vào, giá ra, lãi lỗ sau phí, cạnh VN-Index.']
 ];
 function knHeroHtml(){
-  const zalo = '<svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true">'
-    + '<path d="M4.9 2.4h14.2a2.7 2.7 0 0 1 2.7 2.7v9.4a2.7 2.7 0 0 1-2.7 2.7h-5.6l-4.3 3.2a.62.62 0 0 1-1-.5v-2.7H4.9a2.7 2.7 0 0 1-2.7-2.7V5.1a2.7 2.7 0 0 1 2.7-2.7z" fill="#0068FF"/>'
-    + '<text x="12" y="13.2" text-anchor="middle" font-size="8.4" font-weight="800" letter-spacing="-.2"'
+  /* Dau Zalo kieu icon app tren dien thoai: o vuong bo goc xanh, chu Zalo trang o giua */
+  const zalo = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">'
+    + '<rect width="24" height="24" rx="5.4" fill="#0068FF"/>'
+    + '<text x="12" y="15.7" text-anchor="middle" font-size="9.8" font-weight="800" letter-spacing="-.4"'
     +   ' font-family="Be Vietnam Pro,Inter,system-ui,sans-serif" fill="#fff">Zalo</text></svg>';
   return `<section id="knHero">
     <div class="kh-in">
