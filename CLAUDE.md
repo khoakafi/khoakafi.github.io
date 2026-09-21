@@ -54,6 +54,14 @@ trong 15 lời gọi dchart cùng lúc của B★ → deal ra "…", đường h
 và Google Analytics. Các API VNDirect (dchart, stock_prices, foreigns, ratios, news)
 chạy được cả hai chiều, nên bỏ Referer không ảnh hưởng.
 
+## Số hiệu suất B★ tính ở đâu
+
+`bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
+tính lại trên trình duyệt từ giá dchart của ~15 mã (`bstarLoadPrices`). Deal nào thiếu giá thì bị **bỏ khỏi
+phép tính** → con số thấp hơn thật mà trông vẫn hợp lý. Đã sửa: tải 4 lô song song, hỏng thử lại 2 lần, nhớ
+giá theo phiên (`kn_bstar_px`, chỉ ghi mã tải thành công), nhịp 2 phút tải lại cả mã còn thiếu, và
+`BSTAR.thieu` để màn hình ghi "đang tải N mã" thay vì im lặng. Web và app dùng **cùng** `bstarCurve()`.
+
 ## Cách anh Khoa thích làm việc
 
 Làm từng phần nhỏ, đẩy lên ngay, báo ngắn gọn. Ghét chờ lâu và ghét dừng giữa chừng để hỏi.

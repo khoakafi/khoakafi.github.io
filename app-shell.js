@@ -563,7 +563,12 @@
   function dealRows(){
     var K = KN(); if (!K) return null;
     var khoa = K.knKhoaPhien(K.KN_MOC_SEC);
-    if (K.BSTAR && K.BSTAR.ready){ try { var rows = K.bstarRecent(); if (rows && rows.length){ K.knGhiCache('kn_deals', khoa, rows); dealsDone = true; return rows; } } catch(e){} }
+    if (K.BSTAR && K.BSTAR.ready){ try { var rows = K.bstarRecent(); if (rows && rows.length){
+      /* Chi ghi cache khi da du gia moi ma; con thieu thi van hien (tot nhat co the) nhung khong ghi,
+         de nhip 2 phut tai bu xong thi bang duoc dung lai day du. */
+      var du = !(K.BSTAR.thieu && K.BSTAR.thieu.length);
+      if (du) K.knGhiCache('kn_deals', khoa, rows);
+      dealsDone = du; return rows; } } catch(e){} }
     var c = K.knDocCache('kn_deals', khoa); if (c && c.length){ dealsDone = true; return c; }
     /* chưa có giá: dựng khung từ dấu X (deal năm nay chờ giá, năm cũ đã chốt) */
     try {

@@ -828,7 +828,7 @@ function renderTops(){
 /* ================= B★ — sổ theo năm & top tín hiệu B★ =================
    Nguồn sự thật: window.SIGS.t[mã].m (dấu X = B★, S = bán). Giá: dchart nến ngày (tải khi mở tab).
    Các năm đã khép: window.BSTAR_BOOKS (bstar_books.js). Năm hiện tại: tính sống ở đây, cùng quy ước. */
-const BSTAR = { deals:null, px:{}, vni:null, ready:false };
+const BSTAR = { deals:null, px:{}, vni:null, ready:false, thieu:[] };
 window.__bstar = { S:BSTAR, deals:()=>bstarDeals(), live:()=>bstarBookLive(), curve:()=>bstarCurve(), stats:(cv)=>bstarStats(cv), recent:()=>bstarRecent() };
 function bstarDeals(){
   if (BSTAR.deals) return BSTAR.deals;
@@ -847,20 +847,63 @@ function bstarDeals(){
   out.sort((a,b) => a.bdate < b.bdate ? 1 : -1);
   BSTAR.deals = out; return out;
 }
+/* ===== Nap gia cho B* =====
+   Truoc: 15 ma goi CUNG LUC, ma nao hong thi lang le thieu -> bstarCurve bo deal do
+   khoi phep tinh -> con so thap hon that ma khong ai biet (486.9 / 592.9 / 600+ tuy
+   mang). Nhip 2 phut chi tai lai deal dang mo nen deal da chot ma hong thi ca phien
+   khong bao gio duoc tai lai. App dien thoai mang kem nen hong nhieu hon Chrome.
+   Gio: toi da 4 lo song song, ma hong thu lai 2 lan, nho gia theo phien trong
+   localStorage (chi nho ma tai THANH CONG), nhip 2 phut tai lai ca ma con thieu,
+   va bao ro so ma con thieu (BSTAR.thieu) de man hinh khong dua so thap ra nhu that. */
+const KN_BS_KHO = 'kn_bstar_px';
+function bstarKhoa(){ return knKhoaPhien(KN_MOC_SEC); }
+async function bstarTaiMot(sym, from, to){
+  const r = await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sym}&resolution=D&from=${from}&to=${to}`);
+  if (!r || !r.t || !r.t.length) return null;
+  const mp = {}; const ds = []; r.t.forEach((ts,i) => { const d = new Date((ts+7*3600)*1000).toISOString().slice(0,10); mp[d] = r.c[i]; ds.push(d); });
+  return { mp, ds, last: r.c[r.c.length-1], lastd: ds[ds.length-1] };
+}
+/* Tai mot danh sach ma: toi da `song` cai cung luc, hong thi thu lai. Tra ve { sym: du_lieu } cua ma thanh cong. */
+async function bstarTaiNhom(syms, from, to, song){
+  const ra = {}; let hang = syms.slice();
+  const cho = ms => new Promise(r => setTimeout(r, ms));
+  for (let lan = 0; lan < 3 && hang.length; lan++) {
+    if (lan) await cho(lan === 1 ? 700 : 1800);
+    const hong = [];
+    for (let i = 0; i < hang.length; i += song) {
+      await Promise.all(hang.slice(i, i+song).map(async s => {
+        try { const r = await bstarTaiMot(s, from, to); if (r) ra[s] = r; else hong.push(s); } catch(e){ hong.push(s); }
+      }));
+    }
+    hang = hong;
+  }
+  return ra;
+}
 async function bstarLoadPrices(onlyOpen){
   const y = new Date().getFullYear();
-  const need = new Set(bstarDeals().filter(d => (d.bdate >= (y+'-01-01') || d.bdate >= new Date(Date.now()-200*86400000).toISOString().slice(0,10)) && (!onlyOpen || !d.sdate)).map(d => d.t));
-  ((window.BSTAR_CURVE && window.BSTAR_CURVE.carry) || []).forEach(c => { if (!onlyOpen) need.add(c.t); });
+  const moc = new Date(Date.now()-200*86400000).toISOString().slice(0,10);
+  const deals = bstarDeals().filter(d => d.bdate >= (y+'-01-01') || d.bdate >= moc);
+  const need = new Set(deals.map(d => d.t));
+  ((window.BSTAR_CURVE && window.BSTAR_CURVE.carry) || []).forEach(c => need.add(c.t));
+  const mo = new Set(deals.filter(d => !d.sdate).map(d => d.t));
+  const khoa = bstarKhoa();
+  /* 1) Lay tu kho phien nay truoc (chi chua ma da tai thanh cong) */
+  const kho = knDocCache(KN_BS_KHO, khoa) || {};
+  for (const s of need) if (!BSTAR.px[s] && kho[s]) BSTAR.px[s] = kho[s];
+  if (!BSTAR.vni && kho.VNINDEX) BSTAR.vni = kho.VNINDEX;
+  /* 2) Can tai: lan dau = ma chua co; nhip 2 phut = deal dang mo + moi ma con thieu */
+  const can = [...need].filter(s => !BSTAR.px[s] || (onlyOpen && mo.has(s)));
   const to = NOW()+86400, from = to - 86400*330;
-  const one = async sym => { try {
-    const r = await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sym}&resolution=D&from=${from}&to=${to}`);
-    if (!r || !r.t || !r.t.length) return null;
-    const mp = {}; const ds = []; r.t.forEach((ts,i) => { const d = new Date((ts+7*3600)*1000).toISOString().slice(0,10); mp[d] = r.c[i]; ds.push(d); });
-    return { mp, ds, last: r.c[r.c.length-1], lastd: ds[ds.length-1] };
-  } catch(e){ return null; } };
-  await Promise.all([...need].map(async s => { const r = await one(s); if (r) BSTAR.px[s] = r; }));
-  { const v = await one('VNINDEX'); if (v) BSTAR.vni = v; }   // VN-Index luôn nạp lại: không thì đường so sánh đứng im cả phiên
-  BSTAR.ready = true;
+  const [ra, vni] = await Promise.all([
+    bstarTaiNhom(can, from, to, 4),
+    bstarTaiNhom(['VNINDEX'], from, to, 1)     // VN-Index luon nap lai: khong thi duong so sanh dung im ca phien
+  ]);
+  Object.assign(BSTAR.px, ra);
+  if (vni.VNINDEX) BSTAR.vni = vni.VNINDEX;
+  /* 3) Ghi kho: chi ma thanh cong, ma hong khong ghi de lan sau con tai lai */
+  try { const moi = Object.assign({}, kho); for (const s in ra) moi[s] = ra[s]; if (vni.VNINDEX) moi.VNINDEX = vni.VNINDEX; knGhiCache(KN_BS_KHO, khoa, moi); } catch(e){}
+  BSTAR.thieu = [...need].filter(s => !BSTAR.px[s]);
+  BSTAR.ready = !!BSTAR.vni;
 }
 function bstarRecent(){
   const y0 = new Date().getFullYear()+'-01-01';
@@ -1371,7 +1414,9 @@ function knHeroVe(){
     if (!st) return;
     const f = v => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(1) + '%';
     const o = (l, v, cls) => `<div><div class="l">${l}</div><div class="v ${cls||''}">${v}</div></div>`;
-    num.innerHTML = o('Hệ thống từ 2019', f(st.all), 'up') + o('VN-Index cùng kỳ', f(st.vall), 'mut')
+    const thieu = (BSTAR.thieu || []).length;
+    const nhan = 'Hệ thống từ 2019' + (thieu ? ' <i style="font-style:normal;color:#D97706" title="' + BSTAR.thieu.join(', ') + '">· đang tải ' + thieu + ' mã</i>' : '');
+    num.innerHTML = o(nhan, f(st.all), 'up') + o('VN-Index cùng kỳ', f(st.vall), 'mut')
       + o('Tỷ lệ thắng', Math.round(st.winrate) + '%') + o('Deal đã chốt', String(st.ndeal))
       + o('R:R', st.rr.toFixed(1)) + o('Max drawdown', '−' + Math.abs(st.maxdd).toFixed(1) + '%', 'down');
   }catch(e){}
