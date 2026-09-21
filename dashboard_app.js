@@ -1400,7 +1400,7 @@ function knHeroHtml(){
           <div class="kh-base"></div>
         </div>
         <div class="kh-iph"><div class="kh-ipscr"><span class="kh-island"></span>
-          <img src="mock-app.webp" width="540" height="1209" alt="App Khoa Nguyen Invest — hiệu suất và các deal B★ 2026" decoding="async">
+          <img src="mock-app.webp?v=3" srcset="mock-app.webp?v=3 2x, mock-app-3x.webp?v=3 3x" width="216" height="484" alt="App Khoa Nguyen Invest — hiệu suất và các deal B★ 2026" decoding="async">
         </div></div>
       </div>
     </div>
