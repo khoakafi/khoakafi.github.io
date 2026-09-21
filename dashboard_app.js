@@ -1292,14 +1292,17 @@ function ddVNI(curve){
    Che do app bo qua. */
 const KN_BUOC = [
   ['Thu thập','Data','Giá, khối lượng, BCTC, định giá, dòng tiền.'],
-  ['Chuẩn hoá','Normalize','Cổ tức, chia tách, thanh khoản, số liệu lỗi.'],
-  ['Chấm điểm','Score','Tăng trưởng, ROE, định giá, RS, CANSLIM.'],
-  ['Đọc cấu trúc','Pattern','Nền giá, độ siết theo Wyckoff–Minervini.'],
-  ['Gác cổng','Rule & Risk','Đủ chuẩn, rủi ro đã định mới vào lệnh.'],
-  ['Đối soát','Review','Vào sổ, lãi lỗ sau phí, cạnh VN-Index.']
+  ['Làm sạch','Normalize','Cổ tức, chia tách, thanh khoản mỏng, số liệu lỗi.'],
+  ['Xếp hạng','Score','Không đoán giá ngày mai — chấm và xếp thứ tự.'],
+  ['Đọc cấu trúc','Pattern','Nền, độ siết, nhịp tích luỹ — không chỉ một cây nến.'],
+  ['Gác cổng','Rule & Risk','Không đủ điều kiện thì không có giao dịch.'],
+  ['Đối soát','Review','Ngày vào, giá ra, lãi lỗ sau phí, cạnh VN-Index.']
 ];
 function knHeroHtml(){
-  const zalo = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.5-5.2A8.5 8.5 0 1 1 21 12z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg>';
+  const zalo = '<svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true">'
+    + '<path d="M4.9 2.4h14.2a2.7 2.7 0 0 1 2.7 2.7v9.4a2.7 2.7 0 0 1-2.7 2.7h-5.6l-4.3 3.2a.62.62 0 0 1-1-.5v-2.7H4.9a2.7 2.7 0 0 1-2.7-2.7V5.1a2.7 2.7 0 0 1 2.7-2.7z" fill="#fff"/>'
+    + '<text x="12" y="13.2" text-anchor="middle" font-size="8.4" font-weight="800" letter-spacing="-.2"'
+    +   ' font-family="Be Vietnam Pro,Inter,system-ui,sans-serif" fill="#0068FF">Zalo</text></svg>';
   return `<section id="knHero">
     <div class="kh-in">
       <div class="kh-txt">
@@ -1308,12 +1311,7 @@ function knHeroHtml(){
         <p>Tôi không hô hào mã nào sẽ tăng bao nhiêu. Khoa Nguyen Signal là cỗ máy tôi tự viết, chạy bằng tiền thật từ 2019: hết phiên là chấm lại toàn sàn qua hai vòng — <b>doanh nghiệp có khoẻ không</b> và <b>đồ thị có đẹp không</b>.</p>
         <p>Máy đọc được lượng dữ liệu một người không đọc nổi mỗi ngày, nhưng máy không khuyến nghị. Quy tắc định lượng mới quyết định: <b>mã nào đáng theo dõi, khi nào được vào lệnh, khi nào phải đứng ngoài</b>. Nền siết chặt nhất được gắn <b>B★</b>.</p>
         <p>Hệ thống không có niềm tin — hệ thống có nhật ký. Sai thì mức sai được kiểm soát, đúng thì xu hướng được giữ đủ lâu.</p>
-        <p class="kh-root">Nền tảng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b>. Nguyên tắc của họ thì ai cũng đọc được; phần tôi mất bảy năm hiệu chỉnh trên dữ liệu Việt Nam là <b>ngưỡng</b> — con số quyết định thế nào là đủ ở mỗi bước.</p>
         <div class="kh-num" id="khNum"></div>
-        <div class="kh-cta">
-          <a class="kh-b1" href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'hero'})}catch(e){}">${zalo}Room Zalo trải nghiệm</a>
-          <button class="kh-b3" type="button" onclick="knHeroCuon()">Xem số liệu hiệu suất ↓</button>
-        </div>
       </div>
       <div class="kh-dev">
         <div class="kh-mac">
@@ -1329,8 +1327,15 @@ function knHeroHtml(){
         </div>
       </div>
     </div>
+    <div class="kh-bot">
+      <div class="kh-cta">
+        <a class="kh-b1" href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'hero'})}catch(e){}">${zalo}Room Zalo trải nghiệm</a>
+        <button class="kh-b3" type="button" onclick="knHeroCuon()">Xem số liệu hiệu suất ↓</button>
+      </div>
+      <p class="kh-root">Nền tảng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b>. Nguyên tắc của họ thì ai cũng đọc được; phần tôi mất bảy năm hiệu chỉnh trên dữ liệu Việt Nam là <b>ngưỡng</b> — con số quyết định thế nào là đủ ở mỗi bước.</p>
+    </div>
     <div class="kh-flow">
-      <div class="kf-hd"><h2>Từ dữ liệu thô đến quyết định có kỷ luật</h2><p>Sáu bước chạy lại sau mỗi phiên. Không ai gõ tay vào con số nào trên trang này.</p></div>
+      <div class="kf-hd"><h2>Sáu bước chạy sau mỗi phiên</h2></div>
       <div class="kf-line">${KN_BUOC.map((b,i)=>`<div class="kf-s"><span class="kf-n">${i+1}</span><h3>${b[0]}<em>${b[1]}</em></h3><p>${b[2]}</p></div>`).join('')}</div>
     </div>
   </section>`;
