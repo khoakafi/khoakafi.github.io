@@ -1300,9 +1300,9 @@ const KN_BUOC = [
 ];
 function knHeroHtml(){
   const zalo = '<svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true">'
-    + '<path d="M4.9 2.4h14.2a2.7 2.7 0 0 1 2.7 2.7v9.4a2.7 2.7 0 0 1-2.7 2.7h-5.6l-4.3 3.2a.62.62 0 0 1-1-.5v-2.7H4.9a2.7 2.7 0 0 1-2.7-2.7V5.1a2.7 2.7 0 0 1 2.7-2.7z" fill="#fff"/>'
+    + '<path d="M4.9 2.4h14.2a2.7 2.7 0 0 1 2.7 2.7v9.4a2.7 2.7 0 0 1-2.7 2.7h-5.6l-4.3 3.2a.62.62 0 0 1-1-.5v-2.7H4.9a2.7 2.7 0 0 1-2.7-2.7V5.1a2.7 2.7 0 0 1 2.7-2.7z" fill="#0068FF"/>'
     + '<text x="12" y="13.2" text-anchor="middle" font-size="8.4" font-weight="800" letter-spacing="-.2"'
-    +   ' font-family="Be Vietnam Pro,Inter,system-ui,sans-serif" fill="#0068FF">Zalo</text></svg>';
+    +   ' font-family="Be Vietnam Pro,Inter,system-ui,sans-serif" fill="#fff">Zalo</text></svg>';
   return `<section id="knHero">
     <div class="kh-in">
       <div class="kh-txt">
@@ -1317,7 +1317,7 @@ function knHeroHtml(){
         <div class="kh-mac">
           <div class="kh-lid"><span class="kh-cam"></span>
             <div class="kh-scr">
-              <img src="mock-web.webp" width="1600" height="813" alt="GVR — tín hiệu B★, Add và điểm bán trên khoanguyeninvest.vn" decoding="async" fetchpriority="high">
+              <img src="mock-web.webp?v=2" width="2000" height="1256" alt="GVR — tín hiệu B★, Add và điểm bán trên khoanguyeninvest.vn" decoding="async" fetchpriority="high">
             </div>
           </div>
           <div class="kh-base"></div>
