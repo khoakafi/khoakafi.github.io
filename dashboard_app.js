@@ -4489,9 +4489,10 @@ function pinNameBar(){
       const v = (t.match(/dashboard_app\.js\?v=(\w+)/)||[])[1];
       if (v && v !== vCur) { window.__coBanMoi = v; thuTaiLai(); }
     } catch(e){} }
-    function thuTaiLai(){ if (!window.__coBanMoi) return; if (document.hidden || Date.now() - idle > 90000) location.reload(); else setTimeout(thuTaiLai, 30000); }
+    function napLai(){ const v = window.__coBanMoi; if (!v) return; try { if (sessionStorage.getItem('kn_pb') === v) return; sessionStorage.setItem('kn_pb', v); } catch(e){} const u = new URL(location.href); u.searchParams.set('v', v); location.replace(u.toString()); }
+    function thuTaiLai(){ if (!window.__coBanMoi) return; if (document.hidden || Date.now() - idle > 90000) napLai(); else setTimeout(thuTaiLai, 30000); }
     setInterval(kiem, 10*60000); setTimeout(kiem, 60000);
-    document.addEventListener('visibilitychange', () => { if (document.hidden && window.__coBanMoi) location.reload(); });
+    document.addEventListener('visibilitychange', () => { if (document.hidden && window.__coBanMoi) napLai(); });
   } catch(e){}
 })();
 
