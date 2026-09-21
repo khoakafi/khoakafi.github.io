@@ -36,6 +36,57 @@
     var r=await fetch('https://api.github.com/repos/'+AR_REPO+'/contents/'+path,{method:'PUT',headers:Object.assign({'Content-Type':'application/json'},H),body:JSON.stringify(body)});
     if(!r.ok) throw new Error('phat hanh '+path+' loi '+r.status);
   }
+  /* ===== bstar_live.js: gia nam nay cua cac ma B* + VN-Index, nuong san de trang dau hien
+     602% NGAY khi mo (ke ca tab an danh). Luat chon ma y het bstarDeals()/bstarLoadPrices()
+     trong dashboard_app.js. Chay SAU khi da phat hanh signals_data.js. ===== */
+  var BO_CUNG=['DCL','VC3','SSB','KHG','VPI'];
+  function isoVN(ts){ return new Date((ts+7*3600)*1000).toISOString().slice(0,10); }
+  function dealsB(SIGS){
+    var out=[], T=(SIGS&&SIGS.t)||{};
+    Object.keys(T).forEach(function(t){
+      if (BO_CUNG.indexOf(t)>=0) return;
+      var m=T[t].m||[];
+      m.forEach(function(mk,i){
+        if (mk[1]!=='X') return;
+        var sell=null;
+        for (var k=i+1;k<m.length;k++){ var q=m[k][1]; if(q==='S'){sell=m[k];break;} if('XBTW'.indexOf(q)>=0) break; }
+        out.push({t:t, bdate:isoVN(mk[0]), sdate:sell?isoVN(sell[0]):null});
+      });
+    });
+    return out;
+  }
+  async function taiMot(sym, from, to, giuTu){
+    var r=await fetch('https://dchart-api.vndirect.com.vn/dchart/history?symbol='+sym+'&resolution=D&from='+from+'&to='+to);
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    var j=await r.json(); if(!j||!j.t||!j.t.length) throw new Error('rong');
+    var mp={}, ds=[];
+    j.t.forEach(function(ts,i){ var d=isoVN(ts); if(d<giuTu) return; mp[d]=j.c[i]; ds.push(d); });
+    return {mp:mp, ds:ds, last:j.c[j.c.length-1], lastd:ds[ds.length-1]};
+  }
+  async function phatHanhBstarLive(tok){
+    var SIGS=window.SIGS, C=window.BSTAR_CURVE;
+    if(!SIGS||!SIGS.t) throw new Error('chua co SIGS');
+    var y=new Date().getFullYear(), moc=new Date(Date.now()-200*86400000).toISOString().slice(0,10);
+    var giuTu=(y-1)+'-12-01';
+    var need={}; dealsB(SIGS).forEach(function(d){ if(d.bdate>=(y+'-01-01')||d.bdate>=moc) need[d.t]=1; });
+    ((C&&C.carry)||[]).forEach(function(c){ need[c.t]=1; });
+    var syms=Object.keys(need).sort(); syms.push('VNINDEX');
+    var to=Math.floor(Date.now()/1000)+86400, from=to-86400*330;
+    var px={}, hong=[];
+    for (var i=0;i<syms.length;i+=4){
+      await Promise.all(syms.slice(i,i+4).map(async function(s){
+        for (var lan=0;lan<3;lan++){
+          try{ px[s]=await taiMot(s,from,to,giuTu); return; }
+          catch(e){ if(lan===2) hong.push(s+': '+e.message); else await new Promise(function(r){ setTimeout(r,800*(lan+1)); }); }
+        }
+      }));
+    }
+    if(!px.VNINDEX) throw new Error('khong co VN-Index'+(hong.length?' ('+hong.join('; ')+')':''));
+    var out={as_of:px.VNINDEX.lastd, ghi_luc:new Date().toISOString(), px:px};
+    await putFile(tok,'bstar_live.js','window.BSTAR_LIVE='+JSON.stringify(out)+';\n','[AUTO] gia B* '+new Date().toISOString().slice(0,10));
+    return {so:Object.keys(px).length, tong:syms.length, hong:hong, as_of:out.as_of};
+  }
+  window.__knBstarLive=phatHanhBstarLive;   // de kiem tra tay: __knBstarLive(localStorage.kafi_gh_token)
   async function run(){
     var lc=lastCloseMs(); if(!lc) return;
     if(sigsMs()>=lc) return;
@@ -58,10 +109,27 @@
       await putFile(tok,'dashboard_data.js', ddJs, '[AUTO] cap nhat bang gia '+new Date().toISOString().slice(0,10));
       await putFile(tok,'signals_data.js', sigJs, '[AUTO] phat hanh tin hieu '+new Date().toISOString().slice(0,10));
       lsSet('kafi_lastpub',String(Date.now()));
-      badge('✓ Đã cập nhật GIÁ + TÍN HIỆU hôm nay — bấm F5 để xem bảng mới','#128a3e',true);
+      badge('Đang nướng giá B★ năm nay…','#b45309');
+      try{ var kq=await phatHanhBstarLive(tok); lsSet('kafi_lastlive',String(Date.now()));
+           badge('✓ Đã cập nhật GIÁ + TÍN HIỆU + giá B★ ('+kq.so+'/'+kq.tong+' mã'+(kq.hong.length?', hỏng: '+kq.hong.join(', '):'')+') — bấm F5 để xem','#128a3e',true); }
+      catch(e){ badge('✓ Đã cập nhật GIÁ + TÍN HIỆU · ⚠ giá B★ chưa nướng được: '+e.message+' (lần mở sau sẽ thử lại)','#b45309',true); }
     }catch(e){ badge('⚠ Tự cập nhật lỗi: '+e.message,'#e5484d',true); }
     finally{ if(tick)clearInterval(tick); lsSet('kafi_ar_lock','0'); }
   }
-  if(document.readyState==='complete') setTimeout(run,2500);
-  else window.addEventListener('load',function(){ setTimeout(run,2500); });
+  /* Da phat hanh tin hieu roi ma gia B* chua nuong (hong / ban cu chua co buoc nay) -> chay bu rieng. */
+  async function runLive(){
+    var lc=lastCloseMs(); if(!lc) return;
+    if(sigsMs()<lc) return;                                   // tin hieu hom nay chua co -> run() lo
+    if(+(ls('kafi_lastlive')||0)>=lc) return;
+    var L=window.BSTAR_LIVE; if(L&&L.as_of&&Date.parse(L.as_of+'T08:45:00+07:00')>=lc){ lsSet('kafi_lastlive',String(Date.now())); return; }
+    var lk=+(ls('kafi_live_lock')||0); if(Date.now()-lk<300000) return;
+    lsSet('kafi_live_lock',String(Date.now()));
+    try{ badge('Đang nướng giá B★ năm nay…','#b45309'); var kq=await phatHanhBstarLive(ls(TOKK)); lsSet('kafi_lastlive',String(Date.now()));
+         badge('✓ Đã nướng giá B★ ('+kq.so+'/'+kq.tong+' mã) — mở lại trang là 602% hiện ngay','#128a3e',true); }
+    catch(e){ badge('⚠ Giá B★ chưa nướng được: '+e.message,'#b45309',true); }
+    finally{ lsSet('kafi_live_lock','0'); }
+  }
+  function batDau(){ setTimeout(run,2500); setTimeout(runLive,9000); }
+  if(document.readyState==='complete') batDau();
+  else window.addEventListener('load',batDau);
 })();
