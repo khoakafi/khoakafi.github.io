@@ -1,0 +1,11 @@
+name: probe-api
+on:
+  push:
+    branches:
+    - claude/lucid-fermat-8vtoo1
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Vietcap: thu tung bo header'
+      run: "U=\"https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/VCB/statistics-financial\"\nUA=\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"\nthu(){\n  echo \"=== $1\"\n  code=$(curl -s --compressed -m 25 -o /tmp/r.json -w '%{http_code}' \"${@:2}\" \"$U\")\n  echo \"HTTP $code   bytes $(wc -c </tmp/r.json)\"\n  head -c 220 /tmp/r.json; echo; echo\n}\nthu \"1. tran (nhu curl luc truoc)\"\nthu \"2. + User-Agent Chrome\" -H \"User-Agent: $UA\"\nthu \"3. + Origin\" -H \"User-Agent: $UA\" -H \"Origin: https://khoanguyeninvest.vn\"\nthu \"4. + REFERER cua site  <-- dung nhu trinh duyet anh Khoa\" -H \"User-Agent: $UA\" -H \"Origin: https://khoanguyeninvest.vn\" -H \"Referer: https://khoanguyeninvest.vn/\"\nthu \"5. + Sec-Fetch (bo header day du cua Chrome)\" -H \"User-Agent: $UA\" -H \"Origin: https://khoanguyeninvest.vn\" -H \"Referer: https://khoanguyeninvest.vn/\" -H \"Sec-Fetch-Site: cross-site\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Dest: empty\" -H \"Accept: */*\" -H \"Accept-Language: vi-VN,vi;q=0.9\"\nthu \"6. Referer cua trang khac (doi chieu)\" -H \"User-Agent: $UA\" -H \"Referer: https://example.com/\"\nthu \"7. Referer chinh vietcap (doi chieu)\" -H \"User-Agent: $UA\" -H \"Referer: https://iq.vietcap.com.vn/\"\necho \"=== header tra ve o truong hop 5 (xem CORS + cache CDN)\"\ncurl -s --compressed -m 25 -o /dev/null -D - \\\n  -H \"User-Agent: $UA\" -H \"Origin: https://khoanguyeninvest.vn\" -H \"Referer: https://khoanguyeninvest.vn/\" \\\n  -H \"Sec-Fetch-Site: cross-site\" -H \"Sec-Fetch-Mode: cors\" \"$U\" | grep -iE 'http/|access-control|x-cache|vary|cf-|server:|age:'"
