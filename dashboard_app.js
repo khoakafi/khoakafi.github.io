@@ -1399,9 +1399,9 @@ function knHeroHtml(){
           </div>
           <div class="kh-base"></div>
         </div>
-        <div class="kh-iph"><span class="kh-island"></span>
+        <div class="kh-iph"><div class="kh-ipscr"><span class="kh-island"></span>
           <img src="mock-app.webp" width="540" height="1209" alt="App Khoa Nguyen Invest — hiệu suất và các deal B★ 2026" decoding="async">
-        </div>
+        </div></div>
       </div>
     </div>
     <div class="kh-bot">
@@ -1409,7 +1409,7 @@ function knHeroHtml(){
         <a class="kh-b1" href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'hero'})}catch(e){}">${zalo}Room Zalo trải nghiệm</a>
         <button class="kh-b3" type="button" onclick="knHeroCuon()">Xem số liệu hiệu suất ↓</button>
       </div>
-      <p class="kh-root">Nền tảng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b>. Nguyên tắc của họ thì ai cũng đọc được; phần tôi mất bảy năm hiệu chỉnh trên dữ liệu Việt Nam là <b>ngưỡng</b> — con số quyết định thế nào là đủ ở mỗi bước.</p>
+      <p class="kh-root">Nền tảng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b>. Nguyên tắc của họ thì ai cũng đọc được; phần tôi mất mười năm trên thị trường để hiệu chỉnh là <b>ngưỡng</b> — con số quyết định thế nào là đủ ở mỗi bước.</p>
     </div>
     <div class="kh-flow">
       <div class="kf-hd"><h2>Sáu bước chạy sau mỗi phiên</h2></div>
