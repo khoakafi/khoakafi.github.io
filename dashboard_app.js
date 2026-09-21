@@ -476,6 +476,8 @@ const el=document.createElement('div');el.id='watchStrip';
 el.style.cssText='display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E8EAEF;border-radius:9px;padding:5px 10px;margin-bottom:8px;overflow-x:auto;scrollbar-width:none';
 el.innerHTML='<span style="font-weight:700;font-size:11.5px;color:#7A828E;white-space:nowrap;flex:0 0 auto">Watchlist '+lab+'</span>'+ws.map(chip).join('');
 el.addEventListener('click',e=>{const c2=e.target.closest('.wchip');if(c2&&window.openDetail)window.openDetail(c2.dataset.t);});
+/* Cham xuong la bat dau tai luon, khong doi nha tay -> tiet kiem ~150-300ms moi lan bam */
+el.addEventListener('pointerdown',e=>{const c2=e.target.closest('.wchip');if(c2)knDtNap(c2.dataset.t);},{passive:true});
 vd.insertBefore(el,vd.firstChild);
 }catch(e){}
 }
@@ -2514,13 +2516,69 @@ function renderND(t){
   el.innerHTML = '<div class="ndh"><span>Nhận định ngắn hạn · 10–20 phiên</span><span>' + dd + '</span></div>'
     + '<span class="ndl">' + r.l + '</span><div class="ndc">' + ctx + '</div><div class="nds">' + r.s + '</div><div class="nda">→ ' + r.a + '</div>';
 }
+/* ===== Doi ma cho muot =====
+   Truoc: moi lan bam sang ma khac deu goi lai ca 3 API (gia 14 nam, BCTC, chi so)
+   -> lan nao cung cho, bam qua bam lai cung cho. Gio giu lai trong bo nho:
+   - BCTC va chi so: doi theo quy, giu nguyen ca phien, khong bao gio goi lai.
+   - Gia: giu 2 phut. Qua han thi VAN ve ngay bang ban cu roi tai lai ngam,
+     de lan sau da co san (khong ve lai de tranh nhay hinh).
+   Giu toi da 10 ma gan nhat cho khoi ton bo nho may dien thoai. */
+const KN_DT_TTL = 120000, KN_DT_MAX = 10;
+const knDtKho = new Map();
+function knDtLay(t){
+  const v = knDtKho.get(t);
+  if (v) { knDtKho.delete(t); knDtKho.set(t, v); }   // dung gan day nhat -> de cuoi hang
+  return v;
+}
+function knDtGhi(t, v){
+  knDtKho.set(t, v);
+  while (knDtKho.size > KN_DT_MAX) knDtKho.delete(knDtKho.keys().next().value);
+}
+function knDtConTuoi(t){
+  const v = knDtLay(t);
+  return !!(v && Date.now() - v.ohTs < KN_DT_TTL);
+}
+const knDtCho = new Map();   // ma -> lan tai dang chay do, de khong tai hai lan
+async function knDtTai(t, isX){
+  const cu = knDtLay(t);
+  if (cu && Date.now() - cu.ohTs < KN_DT_TTL) return cu;
+  /* Dang tai roi thi dung chung, dung goi them. Nho cho nay ma viec nap truoc
+     luc cham tay moi co tac dung: nha tay ra la dung luon lan tai da chay. */
+  const dangCho = knDtCho.get(t);
+  if (dangCho) return dangCho;
+  const viec = (async function(){
+    const [oh, qs, rts] = await Promise.all([
+      api.ohlc(t, 5100),
+      isX ? Promise.resolve([]) : (cu && cu.qs  ? Promise.resolve(cu.qs)  : api.kqkd(t).catch(()=>[])),
+      isX ? Promise.resolve([]) : (cu && cu.rts ? Promise.resolve(cu.rts) : api.ratios(t).catch(()=>[]))
+    ]);
+    const v = { oh, qs, rts, ohTs: Date.now() };
+    knDtGhi(t, v);
+    return v;
+  })();
+  knDtCho.set(t, viec);
+  return viec.finally(function(){ knDtCho.delete(t); });
+}
+/* Nap truoc, khong cho ket qua. Dung khi nguoi dung vua cham vao chip. */
+function knDtNap(t){
+  try { if (!t || knDtConTuoi(t)) return; knDtTai(t, !byT[t]).catch(function(){}); } catch(e){}
+}
+/* Nap truoc hai ma ke ben trong dai watchlist -> bam tiep la co san. */
+function knDtNapKeBen(t){
+  try {
+    const ds = [].slice.call(document.querySelectorAll('#watchStrip .wchip')).map(function(x){ return x.dataset.t; });
+    const i = ds.indexOf(t); if (i < 0) return;
+    [ds[i+1], ds[i-1]].forEach(knDtNap);
+  } catch(e){}
+}
 async function loadDetail(t){
   curT = t;
+  const veNgay = knDtConTuoi(t);      // co san du lieu con tuoi -> doi ma gan nhu tuc thi
   /* Nen cua ma cu khong con dung cho ma moi -> cat ngay, khong de nhip gia ve len no.
      Chart cu lam mo trong luc cho, tai xong thi sang lai. */
   curOhlc = null; curOhlcFor = null;
   try {
-    const _w = document.getElementById('chartProWrap');
+    const _w = veNgay ? null : document.getElementById('chartProWrap');
     if (_w) {
       _w.style.opacity = '.45';
       /* Chốt chặn: mạng hỏng / tab bị treo giữa chừng cũng không để chart mờ mãi */
@@ -2538,13 +2596,19 @@ async function loadDetail(t){
   } catch(e){} const r = XROW(t) || {t}; const isX = !byT[t];
   $('#sugg').style.display='none'; $('#dQ').value='';
   const _hhm = (window.HH && window.HH.meta) ? window.HH.meta[t] : null;
+  const _sp = veNgay ? '' : ' <span class="spin"></span>';
   $('#dTitle').innerHTML = _hhm
-    ? `${_hhm.n} <span class="mini">— ${_hhm.u}</span> <span class="spin"></span>`
-    : `${t} <span class="mini">— ${r.n||''} (${BRD(r.b)})</span> <span class="spin"></span>`;
+    ? `${_hhm.n} <span class="mini">— ${_hhm.u}</span>${_sp}`
+    : `${t} <span class="mini">— ${r.n||''} (${BRD(r.b)})</span>${_sp}`;
   $('#dBody').style.display='';
   try {
-    const [oh, qs, rts] = await Promise.all([api.ohlc(t, 5100), isX ? Promise.resolve([]) : api.kqkd(t).catch(()=>[]), isX ? Promise.resolve([]) : api.ratios(t).catch(()=>[])]);
+    const _kho = await knDtTai(t, isX);
+    const oh = _kho.oh, qs = _kho.qs, rts = _kho.rts;
+    if (curT !== t) return;                     // nguoi dung da bam sang ma khac trong luc cho
     curOhlc = oh; curOhlcFor = t;
+    /* Ban cu qua han: ve bang ban cu cho muot, dong thoi tai lai ngam cho lan sau. */
+    if (Date.now() - _kho.ohTs >= KN_DT_TTL) { _kho.ohTs = 0; knDtTai(t, isX).catch(function(){}); }
+    setTimeout(function(){ knDtNapKeBen(t); }, 1200);
     try { clearTimeout(window.__knMoTimer); const _w = document.getElementById('chartProWrap'); if (_w) _w.style.opacity = ''; } catch(e){}
     // du lieu quy as-of (theo ngay cong bo) — dung cho ca bang KPI va engine tin hieu
     const qsAv = [];
