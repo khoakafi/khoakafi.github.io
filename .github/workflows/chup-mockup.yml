@@ -18,22 +18,43 @@ jobs:
       run: |-
         cat > chup.js <<'EOF'
         const {chromium} = require('playwright');
+
+        const coNoiDung = () => {
+          // canvas da ve that su chua: doc du lieu anh ra, trong tron thi rat nhe
+          const ok = c => { try { return c && c.width > 300 && c.toDataURL().length > 60000; } catch(e){ return false; } };
+          const px = document.querySelector('#proPx canvas');
+          const fin = [...document.querySelectorAll('#finCharts canvas')];
+          return { chart: ok(px), fin: fin.filter(ok).length, tongFin: fin.length,
+                   spin: !!document.querySelector('.spin') };
+        };
+
         (async () => {
           const b = await chromium.launch();
-          // Dung dung do phan giai logic cua MacBook 14" + man Retina 2x -> anh 3024x1964
+          // Dung do phan giai logic cua MacBook 14" + man Retina 2x -> anh 3024x1964
           const p = await b.newPage({ viewport: {width:1512, height:982}, deviceScaleFactor: 2 });
-          p.on('console', m => { if (m.type()==='error') console.log('  [trang]', m.text().slice(0,120)); });
-          await p.goto('https://khoanguyeninvest.vn/', { waitUntil:'load', timeout:90000 });
-          await p.waitForTimeout(6000);
-          await p.evaluate(() => { try { openDetail('GVR'); } catch(e) { console.error('openDetail loi: '+e.message); } });
-          // cho chart nen ve xong
-          await p.waitForFunction(() => {
-            const c = document.querySelector('#proPx canvas, #chartProWrap canvas');
-            return c && c.width > 200;
-          }, { timeout: 60000 }).catch(() => console.log('  (khong thay canvas chart, van chup)'));
+          p.on('console', m => { if (m.type()==='error') console.log('  [trang]', m.text().slice(0,140)); });
+          await p.goto('https://khoanguyeninvest.vn/', { waitUntil:'load', timeout:120000 });
           await p.waitForTimeout(8000);
+          await p.evaluate(() => { try { openDetail('GVR'); } catch(e) { console.error('openDetail: '+e.message); } });
+
+          // Cho toi khi chart gia VA it nhat 3/4 chart tai chinh da ve xong
+          let ok = false;
+          for (let i = 0; i < 60; i++) {
+            const t = await p.evaluate(coNoiDung);
+            if (i % 5 === 0) console.log('  cho... chart=' + t.chart + ' tai-chinh=' + t.fin + '/' + t.tongFin + ' dang-tai=' + t.spin);
+            if (t.chart && t.fin >= 3) { ok = true; console.log('  DA VE XONG sau ' + (i*3) + 's'); break; }
+            await p.waitForTimeout(3000);
+          }
+          if (!ok) { console.log('  ::error::Chart chua ve xong sau 180s - KHONG chup'); process.exit(1); }
+
+          await p.waitForTimeout(4000);   // cho hieu ung ve xong han
+          await p.evaluate(() => {        // bo nut xin quyen thong bao (khong phai noi dung trang)
+            const n = document.getElementById('notifBtn'); if (n) n.style.display = 'none';
+            document.querySelectorAll('.spin').forEach(e => e.style.display = 'none');
+          });
+          await p.waitForTimeout(600);
           await p.screenshot({ path: 'shot.png' });
-          console.log('da chup:', await p.evaluate(() => document.title));
+          console.log('da chup xong');
           await b.close();
         })();
         EOF
@@ -42,22 +63,31 @@ jobs:
       run: |-
         cat > dong.py <<'EOF'
         from PIL import Image, ImageFilter
-        import numpy as np, os
+        import numpy as np, os, sys
         im = Image.open('shot.png').convert('RGB')
         print('anh chup goc:', im.size, 'ty le %.3f' % (im.size[0]/im.size[1]))
         def net(x):
             a = np.asarray(x.convert('L'), float)
             l = (-4*a[1:-1,1:-1]+a[:-2,1:-1]+a[2:,1:-1]+a[1:-1,:-2]+a[1:-1,2:]); return l.var()
-        # Ha ve 2000px bang LANCZOS roi lam net rat nhe - nguon la ban render that nen khong can bu nhieu
         r = im.resize((2000, round(2000*im.size[1]/im.size[0])), Image.LANCZOS)
         r = r.filter(ImageFilter.UnsharpMask(radius=0.6, percent=55, threshold=3))
         r.save('mock-web.webp', 'WEBP', quality=82, method=6)
         kt = Image.open('mock-web.webp')
         thu = kt.resize((1312, round(1312*kt.size[1]/kt.size[0])), Image.LANCZOS)
-        print('mock-web.webp:', kt.size, '%d KB' % (os.path.getsize('mock-web.webp')//1024))
-        print('do net sau khi thu ve kich thuoc hien thi: %.0f' % net(thu))
+        d = net(thu); kb = os.path.getsize('mock-web.webp')//1024
+        print('mock-web.webp: %s  %d KB' % (kt.size, kb))
+        print('do net sau khi thu ve kich thuoc hien thi: %.0f  (anh anh Khoa gui: 1751)' % d)
+        if d < 2000 or kb < 90:
+            print('::error::Anh co ve van trong (do net %.0f, %d KB) - dung lai, khong ghi de' % (d, kb)); sys.exit(1)
         EOF
         python3 dong.py
+    - name: Luu anh chup goc de doi chieu
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: anh-chup-goc
+        path: shot.png
+        if-no-files-found: ignore
     - name: Commit anh vao nhanh
       run: |-
         rm -f shot.png chup.js dong.py
@@ -65,5 +95,5 @@ jobs:
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add mock-web.webp
         git diff --cached --quiet && echo "anh khong doi" && exit 0
-        git commit -m "Mockup: anh chup tu trang that, render o do phan giai MacBook Retina"
+        git commit -m "Mockup: anh chup tu trang that o do phan giai MacBook Retina"
         git push origin claude/lucid-fermat-8vtoo1
