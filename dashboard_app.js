@@ -828,7 +828,7 @@ function renderTops(){
 /* ================= B★ — sổ theo năm & top tín hiệu B★ =================
    Nguồn sự thật: window.SIGS.t[mã].m (dấu X = B★, S = bán). Giá: dchart nến ngày (tải khi mở tab).
    Các năm đã khép: window.BSTAR_BOOKS (bstar_books.js). Năm hiện tại: tính sống ở đây, cùng quy ước. */
-const BSTAR = { deals:null, px:{}, vni:null, ready:false, thieu:[] };
+const BSTAR = { deals:null, px:{}, vni:null, ready:false, thieu:[], loi:{} };
 window.__bstar = { S:BSTAR, deals:()=>bstarDeals(), live:()=>bstarBookLive(), curve:()=>bstarCurve(), stats:(cv)=>bstarStats(cv), recent:()=>bstarRecent() };
 function bstarDeals(){
   if (BSTAR.deals) return BSTAR.deals;
@@ -872,7 +872,8 @@ async function bstarTaiNhom(syms, from, to, song){
     const hong = [];
     for (let i = 0; i < hang.length; i += song) {
       await Promise.all(hang.slice(i, i+song).map(async s => {
-        try { const r = await bstarTaiMot(s, from, to); if (r) ra[s] = r; else hong.push(s); } catch(e){ hong.push(s); }
+        try { const r = await bstarTaiMot(s, from, to); if (r) { ra[s] = r; delete BSTAR.loi[s]; } else { hong.push(s); BSTAR.loi[s] = 'rong'; } }
+        catch(e){ hong.push(s); BSTAR.loi[s] = String((e && e.message) || 'loi'); }
       }));
     }
     hang = hong;
@@ -1097,8 +1098,32 @@ function renderRecentStar(){
   try { el.style.maxHeight = ''; } catch(e){}
   return true;
 }
+/* Bang chan doan: mo trang voi ?debug=1 -> hop chu xanh o goc trai duoi, ghi JS ban nao,
+   B* nap duoc bao nhieu ma, thieu ma nao, ma loi HTTP cua tung ma hong. Chup mot anh la biet. */
+function knDebug(){
+  try {
+    if (!/[?&]debug=1/.test(location.search)) return;
+    let b = document.getElementById('knDbg');
+    if (!b) { b = document.createElement('pre'); b.id = 'knDbg';
+      b.style.cssText = 'position:fixed;left:8px;bottom:64px;z-index:99999;background:#111;color:#7CFC9A;font:11.5px/1.45 ui-monospace,Menlo,monospace;padding:9px 11px;border-radius:8px;max-width:92vw;white-space:pre-wrap;opacity:.94;margin:0';
+      document.body.appendChild(b); }
+    const sc = Array.prototype.map.call(document.scripts, x => x.src).find(u => /dashboard_app\.js/.test(u)) || '';
+    const cv = (typeof bstarCurve === 'function' && bstarCurve()) || [];
+    const kho = localStorage.getItem('kn_bstar_px');
+    b.textContent = [
+      'JS v=' + (sc.split('?v=')[1] || '?') + ' | SW ' + (navigator.serviceWorker && navigator.serviceWorker.controller ? 'dang dieu khien' : 'khong') + ' | ' + new Date().toLocaleTimeString('vi-VN'),
+      'BSTAR ready=' + BSTAR.ready + ' | VN-Index=' + (BSTAR.vni ? 'co (' + BSTAR.vni.lastd + ')' : 'KHONG') + ' | da nap gia=' + Object.keys(BSTAR.px).length + ' ma',
+      'thieu: ' + ((BSTAR.thieu || []).join(', ') || '(khong)'),
+      'loi:   ' + (Object.keys(BSTAR.loi || {}).length ? JSON.stringify(BSTAR.loi) : '(khong)'),
+      'diem cuoi duong: ' + JSON.stringify(cv[cv.length-1] || null) + ' | so diem=' + cv.length,
+      'bstar_books: end=' + (window.BSTAR_CURVE ? window.BSTAR_CURVE.end : '?') + ' | SIGS=' + !!(window.SIGS && window.SIGS.t) + ' | kho phien=' + (kho ? Math.round(kho.length/1024) + 'KB' : 'trong')
+    ].join('\n');
+  } catch(e){}
+}
 async function bstarInit(){
-  try { if (!window.__knLite) renderMonthlyStar(); await bstarLoadPrices(); if (!window.__knLite) { renderMonthlyStar(); renderRecentStar(); drawPerf(); renderStatsStar(); knHeroVe(); } } catch(e){}
+  knDebug();
+  try { if (!window.__knLite) renderMonthlyStar(); await bstarLoadPrices(); if (!window.__knLite) { renderMonthlyStar(); renderRecentStar(); drawPerf(); renderStatsStar(); knHeroVe(); } } catch(e){ try { BSTAR.loi.__init = String((e && e.message) || e); } catch(_){} }
+  knDebug();
   /* Nhịp 2 phút: nạp lại nến ngày của các vị thế đang mở + VN-Index rồi vẽ lại
      trang Hiệu suất. Trong phiên, giữa hai nhịp này đường vẫn chạy nhờ giá sống
      (bstarGia lấy giá hôm nay từ bảng giá, làm mới 15 giây/lần). */
@@ -1106,7 +1131,7 @@ async function bstarInit(){
     try {
       await bstarLoadPrices(true);
       if (!window.__knLite) { renderRecentStar(); renderMonthlyStar(); knHeroVe(); }
-      knHieuSuatTuoi();
+      knHieuSuatTuoi(); knDebug();
     } catch(e){}
   }, 120000);
 }
