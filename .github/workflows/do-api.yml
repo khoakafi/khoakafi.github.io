@@ -1,0 +1,47 @@
+name: do-api
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: URL API can do
+        required: true
+        type: string
+      origin:
+        description: Origin gia lap
+        required: false
+        default: https://khoanguyeninvest.vn
+        type: string
+jobs:
+  do:
+    runs-on: ubuntu-latest
+    steps:
+    - name: So sanh tung bo header
+      env:
+        URL: ${{ inputs.url }}
+        ORIGIN: ${{ inputs.origin }}
+      run: |-
+        U="$URL"; O="$ORIGIN"
+        UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+        echo "URL: $U"; echo "Origin gia lap: $O"; echo
+        thu(){
+          ten="$1"; shift
+          code=$(curl -s --compressed -m 25 -o /tmp/r.json -w '%{http_code}' "$@" "$U")
+          printf '%-46s HTTP %s  (%s bytes)\n' "$ten" "$code" "$(wc -c </tmp/r.json)"
+        }
+        thu "1. tran (curl khong header)"
+        thu "2. + User-Agent Chrome" -H "User-Agent: $UA"
+        thu "3. + Origin" -H "User-Agent: $UA" -H "Origin: $O"
+        thu "4. + Referer cua site <-- giong trinh duyet" -H "User-Agent: $UA" -H "Origin: $O" -H "Referer: $O/"
+        thu "5. bo header day du cua Chrome" -H "User-Agent: $UA" -H "Origin: $O" -H "Referer: $O/" -H "Sec-Fetch-Site: cross-site" -H "Sec-Fetch-Mode: cors" -H "Sec-Fetch-Dest: empty" -H "Accept: */*" -H "Accept-Language: vi-VN,vi;q=0.9"
+        thu "6. Referer trang khac (doi chieu)" -H "User-Agent: $UA" -H "Referer: https://example.com/"
+        echo
+        echo "Cach doc: dong 3 va 4 chi khac dung header Referer."
+        echo "  3 OK ma 4 hong -> API chan theo Referer. Sua: fetch(u,{referrerPolicy:'no-referrer'})."
+        echo "  2 OK ma 3 hong -> API chan theo Origin (CORS). Phai doi cach goi hoac doi nguon."
+        echo "  Tat ca deu hong -> API that su chet, hoac chan theo IP."
+        echo
+        echo "=== header tra ve (bo day du cua Chrome)"
+        curl -s --compressed -m 25 -o /dev/null -D - -H "User-Agent: $UA" -H "Origin: $O" -H "Referer: $O/" -H "Sec-Fetch-Site: cross-site" -H "Sec-Fetch-Mode: cors" "$U" | grep -iE 'http/|access-control|x-cache|vary|age:|server:' || true
+        echo
+        echo "=== 400 ky tu dau cua noi dung (goi KHONG Referer)"
+        curl -s --compressed -m 25 -H "User-Agent: $UA" -H "Origin: $O" "$U" | head -c 400; echo
