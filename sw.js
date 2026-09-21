@@ -8,7 +8,7 @@
 //   * Con lai: mang truoc, loi thi cache.
 //   Web va app dung chung file nay; noi dung hien thi khong doi, chi nhanh hon.
 const CACHE = 'kn-shell-v2';
-const DATA_RE = /dashboard_data\.js|signals_data\.js/;
+const DATA_RE = /dashboard_data\.js|signals_data\.js|bstar_live\.js/;
 const CDN_RE = /^https:\/\/(unpkg\.com|cdn\.jsdelivr\.net|fonts\.gstatic\.com|fonts\.googleapis\.com)\//;
 
 self.addEventListener('install', function(e){ self.skipWaiting(); });

@@ -65,6 +65,16 @@ Kho giá `kn_bstar_px` giữ **qua ngày** (khoá `v2`, không theo phiên): l�
 `bstarGia` lấy từ bảng giá; mã nào `lastd` < phiên trước mới tải lại. `thieu == null` = chưa tải xong lần đầu →
 trang đầu ghi "· đang tính 2026…" (mở tab ẩn danh mất vài giây, lần sau ~0.3s). Số đúng là số khi `thieu` rỗng.
 
+## bstar_live.js — giá năm nay nướng sẵn (để 602% hiện ngay, không "đang tính")
+
+`scripts/bstar-live.js` chạy **trên máy phát hành của anh Khoa** (máy commit `[AUTO]` ~20:12 mỗi tối), ngay sau
+khi cập nhật `signals_data.js`: `node scripts/bstar-live.js` → ghi `bstar_live.js` (giá dchart từ 01/12 năm trước
+của các mã B★ năm nay + carry + VNINDEX, ~100KB) → commit cùng lượt `[AUTO]`. **Không chạy được trên GitHub
+Actions** (VNDirect chặn IP, 403). Client: `bstarLoadPrices` ưu tiên `window.BSTAR_LIVE.px` nếu `lastd` ≥ phiên
+trước → `ready` ngay, vẽ ngay, phần tải VN-Index/deal mở chạy ngầm. File cũ (lastd < phiên trước) bị bỏ qua,
+trang tự tải như trước. `sw.js` xếp `bstar_live.js` vào nhóm dữ liệu (mạng trước 4s), thẻ script không có `?v=`.
+**Không bao giờ commit `bstar_live.js` sinh từ dữ liệu giả** (test dùng fetch giả — xoá file sau khi test).
+
 ## Cách anh Khoa thích làm việc
 
 Làm từng phần nhỏ, đẩy lên ngay, báo ngắn gọn. Ghét chờ lâu và ghét dừng giữa chừng để hỏi.

@@ -893,8 +893,19 @@ async function bstarLoadPrices(onlyOpen){
   const phienTruoc = knNgayStr(knPhienTruoc(new Date(Date.now() + 7*3600*1000)));
   const kho = knDocCache(KN_BS_KHO, khoa) || {};
   const conTot = r => r && r.lastd && r.lastd >= phienTruoc && r.mp && r.ds && r.ds.length > 100;
-  for (const s of need) if (!BSTAR.px[s] && conTot(kho[s])) BSTAR.px[s] = kho[s];
+  /* 0) Gia nuong san tu may phat hanh (bstar_live.js, scripts/bstar-live.js): co va con moi thi
+        dung ngay -> 602% hien tuc thi ke ca tab an danh, khong phai "dang tinh". */
+  try { const L = window.BSTAR_LIVE && window.BSTAR_LIVE.px;
+    if (L) { for (const s of need) if (!BSTAR.px[s] && conTot(L[s])) BSTAR.px[s] = L[s];
+             if (!BSTAR.vni && conTot(L.VNINDEX)) BSTAR.vni = L.VNINDEX; } } catch(e){}
   if (!BSTAR.vni && conTot(kho.VNINDEX)) BSTAR.vni = kho.VNINDEX;
+  /* 1b) Da du tu gia nuong san / kho -> bao san sang va VE NGAY, phan tai moi ben duoi chay ngam.
+        Khong thi mo tab an danh voi bstar_live.js van phai doi VN-Index tai lai (co the vai giay). */
+  const duSan = !![...need].every(s => BSTAR.px[s]) && !!BSTAR.vni;
+  if (duSan && !BSTAR.ready) {
+    BSTAR.ready = true; BSTAR.thieu = [];
+    try { if (!window.__knLite) { knHeroVe(); renderRecentStar(); } knHieuSuatTuoi(); } catch(e){}
+  }
   /* 2) Can tai: lan dau = ma chua co; nhip 2 phut = deal dang mo + moi ma con thieu */
   const can = [...need].filter(s => !BSTAR.px[s] || (onlyOpen && mo.has(s)));
   const to = NOW()+86400, from = to - 86400*330;
