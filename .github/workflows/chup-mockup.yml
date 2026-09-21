@@ -31,8 +31,14 @@ jobs:
         (async () => {
           const b = await chromium.launch();
           // Dung do phan giai logic cua MacBook 14" + man Retina 2x -> anh 3024x1964
-          const p = await b.newPage({ viewport: {width:1512, height:982}, deviceScaleFactor: 2 });
+          const p = await b.newPage({ viewport: {width:1512, height:982}, deviceScaleFactor: 2,
+    permissions: ['notifications'], locale: 'vi-VN', timezoneId: 'Asia/Ho_Chi_Minh' });
           p.on('console', m => { if (m.type()==='error') console.log('  [trang]', m.text().slice(0,140)); });
+  const hong = new Map();
+  p.on('response', r => { if (r.status() >= 400) { const u = new URL(r.url());
+    hong.set(u.host + u.pathname, r.status()); } });
+  p.on('requestfailed', r => { try { const u = new URL(r.url());
+    hong.set(u.host + u.pathname, 'khong ket noi duoc: ' + (r.failure()||{}).errorText); } catch(e){} });
           await p.goto('https://khoanguyeninvest.vn/', { waitUntil:'load', timeout:120000 });
           await p.waitForTimeout(8000);
           await p.evaluate(() => { try { openDetail('GVR'); } catch(e) { console.error('openDetail: '+e.message); } });
@@ -45,7 +51,13 @@ jobs:
             if (t.chart && t.fin >= 3) { ok = true; console.log('  DA VE XONG sau ' + (i*3) + 's'); break; }
             await p.waitForTimeout(3000);
           }
-          if (!ok) { console.log('  ::error::Chart chua ve xong sau 180s - KHONG chup'); process.exit(1); }
+          if (!ok) {
+    console.log('\n  === Cac dia chi tai hong ===');
+    for (const [k, v] of hong) console.log('   ' + v + '  ' + k);
+    console.log('  ::error::Chart chua ve xong sau 180s - KHONG chup'); process.exit(1);
+  }
+  console.log('  Dia chi tai hong (neu co):');
+  for (const [k, v] of hong) console.log('   ' + v + '  ' + k);
 
           await p.waitForTimeout(4000);   // cho hieu ung ve xong han
           await p.evaluate(() => {        // bo nut xin quyen thong bao (khong phai noi dung trang)
