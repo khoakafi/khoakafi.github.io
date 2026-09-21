@@ -6,9 +6,6 @@ const n=(re)=>L.findIndex(x=>re.test(x))+1;
 const src = lay(n(/^function knNgayStr\(/), n(/^const KN_MOC_SEC/)) + '\n'
           + lay(n(/^const SEC_GROUPS =/), n(/^async function renderCmp\(/)-1);
 
-const sandbox={};
-vm.createContext(sandbox);
-vm.runInContext(fs.readFileSync('dashboard_data.js','utf8').replace(/^window\./,'var SUMMARY_=')|| '', {});
 const w={}; vm.runInContext('var window=this;'+fs.readFileSync('dashboard_data.js','utf8'), w);
 const byT={}; (w.SUMMARY.rows||[]).forEach(r=>byT[r.t]=r);
 
