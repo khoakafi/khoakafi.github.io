@@ -1317,7 +1317,7 @@ function knHeroHtml(){
         <div class="kh-mac">
           <div class="kh-lid"><span class="kh-cam"></span>
             <div class="kh-scr">
-              <img src="mock-web.webp?v=2" width="2000" height="1256" alt="GVR — tín hiệu B★, Add và điểm bán trên khoanguyeninvest.vn" decoding="async" fetchpriority="high">
+              <img src="mock-web.webp?v=3" width="2000" height="1256" alt="GVR — tín hiệu B★, Add và điểm bán trên khoanguyeninvest.vn" decoding="async" fetchpriority="high">
             </div>
           </div>
           <div class="kh-base"></div>
