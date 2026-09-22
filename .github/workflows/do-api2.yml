@@ -1,0 +1,38 @@
+name: do-api2
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: Danh sach URL, moi dong mot URL
+        required: true
+        type: string
+      chars:
+        description: So ky tu in ra moi URL
+        required: false
+        default: "2500"
+        type: string
+      jq:
+        description: Bo loc jq (tuy chon)
+        required: false
+        default: ""
+        type: string
+jobs:
+  do:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Goi tung URL nhu Chrome
+      env:
+        URLS: ${{ inputs.urls }}
+        CHARS: ${{ inputs.chars }}
+        JQ: ${{ inputs.jq }}
+      run: |-
+        UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+        O="https://khoanguyeninvest.vn"
+        while IFS= read -r U; do
+          [ -z "$U" ] && continue
+          echo "################ $U"
+          code=$(curl -s --compressed -m 25 -o /tmp/r.json -w '%{http_code}' -H "User-Agent: $UA" -H "Origin: $O" -H "Referer: $O/" -H "Accept: */*" "$U")
+          echo "HTTP $code  ($(wc -c </tmp/r.json) bytes)"
+          if [ -n "$JQ" ]; then jq -r "$JQ" /tmp/r.json 2>/dev/null | head -c "$CHARS" || head -c "$CHARS" /tmp/r.json; else head -c "$CHARS" /tmp/r.json; fi
+          echo; echo
+        done <<< "$URLS"
