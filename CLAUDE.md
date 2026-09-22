@@ -71,8 +71,19 @@ cap, dte, gm, dy) mà autorun vẫn PUT vì chỉ kiểm độ dài file; tab Ch
   GROSS_MARGIN_TR, DEBT_TO_EQUITY_AQ, NET_SALES_QR_GRYOY, NET_PROFIT_QR_GRYOY, DIVIDEND_YIELD (tỉ lệ, ×100 = %).
   `reportDate:a,b,c` và `code:A,B,C` nhận danh sách; `ratios/latest` cần `filter=` + `where=`.
 - Dò API: `.github/workflows/do-api2.yml` (nhiều URL một lượt, có `jq`). TCBS bị Cloudflare chặn runner — không dùng được.
-- **Còn nợ:** engine trong `kafi-core` vẫn gọi vietcap; nếu engine dùng cơ bản để chấm `wgrade` thì phần đó đang chạy thiếu dữ liệu.
-  Phiên nào có quyền đọc `kafi-core` thì đổi engine sang VNDirect (tái dùng `coban_vnd.js`).
+- **Engine (`kafi-core/engine.js`) đã sửa 22/09** (commit `752e250`): `layCoBan()` vietcap trước, hỏng thì VNDirect (`ffQuy`/`ffChiSo`,
+  trả đúng hình dạng vietcap); **thiếu BCTC >15% mã thì ném lỗi, không phát hành**. Lý do bắt buộc: `gradeAt()` (lọc "cơ bản quý
+  không đạt", LNST YoY 0–25% → W) đọc `qsAv`; rỗng là mọi mã "đạt" → bộ tín hiệu 21/09 lệch (X 131→163, thêm BCM/ORS/HHP 2026,
+  hiệu suất 602%→579%). Test: `node scratchpad/engine-test.mjs` (fetch giả, 650 mã) — mã yếu phải ra W, VNDirect hỏng phải ném lỗi.
+
+### Hai máy phát hành (sửa lại ghi chú cũ)
+
+Ngoài Chrome của anh Khoa (`autorun.js`), kho `kafi-core` còn workflow **`phat-hanh.yml`** (`run.mjs`, lịch 08:50 UTC = 15:50 VN,
+hay chạy trễ nhiều giờ — 21/09 chạy 22:21) PUT `dashboard_data.js` + `signals_data.js` bằng secret `WEB_TOKEN`. Các commit
+`[AUTO]` buổi tối là của nó. **dchart VNDirect gọi được từ runner GitHub** (run 19 kéo đủ 693 mã) — ghi chú "VNDirect chặn IP
+runner" trước đây sai với `run.mjs`; chỉ `bstar_live.js` chưa có bước chạy trên runner. Hai máy chạy cùng engine nên sửa
+`engine.js` là sửa cả hai; muốn phát hành lại tay: Actions → `Phat hanh tin hieu` → Run workflow (chỉ chạy **sau 14:45**, engine
+lấy cả nến hôm nay).
 
 ## Số hiệu suất B★ tính ở đâu
 
@@ -95,7 +106,7 @@ chạy ngay sau đó trong cùng trình duyệt (gọi được VNDirect): giá 
 bù nếu tín hiệu đã phát hành mà file chưa có / hỏng. Kiểm tra tay trong console: `__knBstarLive(localStorage.kafi_gh_token)`.
 Client: `bstarLoadPrices` ưu tiên `window.BSTAR_LIVE.px` nếu `lastd` ≥ phiên trước → `ready` + vẽ ngay. File cũ
 bị bỏ qua, trang tự tải như trước. `sw.js` xếp `bstar_live.js` vào nhóm dữ liệu; thẻ script không có `?v=`.
-**Không chạy được trên GitHub Actions** (VNDirect chặn IP, 403) và **không bao giờ commit file sinh từ dữ liệu giả**.
+`bstar_live.js` chưa có bước chạy trên GitHub Actions (xem mục *Hai máy phát hành*) và **không bao giờ commit file sinh từ dữ liệu giả**.
 
 ## Cách anh Khoa thích làm việc
 
