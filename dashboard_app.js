@@ -68,9 +68,100 @@ const api = {
         l: b.map(r=>r[3]!=null?r[3]:r[4]), c: b.map(r=>r[4]), v: b.map(()=>0) };
     } catch(e){}
     const to = NOW()+86400; return jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sym}&resolution=D&from=${to-86400*days}&to=${to}`); },
-  kqkd: async t => (await jget(`https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/${t}/financial-statement?section=INCOME_STATEMENT`))?.data?.quarters || [],
-  ratios: async t => ((await jget(`https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/${t}/statistics-financial`))?.data||[]).filter(x=>x.ratioType==='RATIO_TTM'&&x.quarter>=1&&x.quarter<=4)
+  /* BCTC + chi so: vietcap truoc (nguon goc), hong thi rot sang VNDirect finfo (cung hinh dang du lieu). */
+  kqkd: async t => {
+    if (!knVcHong) { try { const q = (await jget(`https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/${t}/financial-statement?section=INCOME_STATEMENT`))?.data?.quarters || [];
+      if (q.length) return q; } catch(e){} knVcDanhDau(); }
+    return knFfQuy(t);
+  },
+  ratios: async t => {
+    if (!knVcHong) { try { const r = ((await jget(`https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/${t}/statistics-financial`))?.data||[]).filter(x=>x.ratioType==='RATIO_TTM'&&x.quarter>=1&&x.quarter<=4);
+      if (r.length) return r; } catch(e){} knVcDanhDau(); }
+    return knFfChiSo(t);
+  }
 };
+
+/* ===== VNDirect finfo — nguon du phong cho BCTC + chi so =====
+   22/09/2026: iq.vietcap.com.vn chan MOI request cross-origin (400/403 du header nao, da do tren runner
+   GitHub bang 6 bo header) -> tab Chi tiet ma mat sach P/E, P/B, ROE, von hoa va 4 chart tai chinh.
+   Cach lam: giu vietcap la lua chon dau; hong 1 lan trong phien thi ghi co (sessionStorage) va di thang VNDirect.
+   Ham duoi tra ve DUNG hinh dang vietcap (yearReport/lengthReport/publicDate/isa3/isb38/isa22 va
+   yearReport/quarter/pe/pb/roe/marketCap) de drawFund, qsAv, rtsAv, So sanh khong phai doi mot dong.
+   Ma chi tieu (financial_models): 21001 doanh thu thuan (moi mo hinh KQKD: DN thuong, CTCK 90, bao hiem 412),
+   421701 tong thu nhap hoat dong ngan hang (TOI), 23000 LNST cong ty me, 23003 LNST, 23001 EPS quy, 14100 von chu. */
+const KN_FF = 'https://api-finfo.vndirect.com.vn/v4/';
+let knVcHong = false; try { knVcHong = sessionStorage.getItem('kn_vc_hong') === '1'; } catch(e){}
+function knVcDanhDau(){ knVcHong = true; try { sessionStorage.setItem('kn_vc_hong', '1'); } catch(e){} }
+function knFfSo(v){ const n = +v; return isFinite(n) ? n : null; }
+/* Danh sach ngay cuoi quy da ket thuc, moi nhat truoc: [{y, q, d:'YYYY-MM-DD'}] */
+function knFfQuyDaXong(n){
+  const out = []; const now = new Date();
+  let y = now.getFullYear(), q = Math.ceil((now.getMonth()+1)/3) - 1;   // quy hien tai chua xong -> lui 1
+  if (q < 1) { q = 4; y--; }
+  for (let i = 0; i < n; i++) {
+    const m = q*3; const d = new Date(Date.UTC(y, m, 0));           // ngay 0 thang sau = ngay cuoi quy
+    out.push({ y, q, d: d.toISOString().slice(0,10) });
+    q--; if (q < 1) { q = 4; y--; }
+  }
+  return out;
+}
+async function knFfQuy(t){
+  const u = KN_FF + 'financial_statements?q=code:' + t + '~reportType:QUARTER~itemCode:21001,421701,23000,23003,23001,14100&sort=fiscalDate:desc&size=150';
+  const r = await jget(u);
+  const byQ = {};
+  (r.data || []).forEach(x => {
+    const d = String(x.fiscalDate || '').slice(0,10); if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return;
+    const y = +d.slice(0,4), q = Math.ceil(+d.slice(5,7)/3), k = y + 'Q' + q;
+    const o = byQ[k] || (byQ[k] = { yearReport: y, lengthReport: q, publicDate: null, _np2: null });
+    const ic = Math.round(+x.itemCode), v = knFfSo(x.numericValue);
+    if (ic === 21001) { if (v != null && v !== 0) o.isa3 = v; }
+    else if (ic === 421701) o.isb38 = v;
+    else if (ic === 23000) o.isa22 = v;
+    else if (ic === 23003) o._np2 = v;
+    else if (ic === 23001) o._eps = v;
+    else if (ic === 14100) o._eq = v;
+    const cd = String(x.createdDate || '').slice(0,10);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(cd) && (!o.publicDate || cd < o.publicDate)) o.publicDate = cd;
+  });
+  const qs = Object.values(byQ).map(o => {
+    if (o.isa22 == null && o._np2 != null) o.isa22 = o._np2;
+    if (!o.publicDate) { const e = new Date(Date.UTC(o.yearReport, o.lengthReport*3, 0)); e.setUTCDate(e.getUTCDate() + 30); o.publicDate = e.toISOString().slice(0,10); }
+    return o;
+  }).filter(o => o.isa22 != null || o.isa3 != null || o.isb38 != null);
+  qs.sort((a,b) => a.yearReport - b.yearReport || a.lengthReport - b.lengthReport);
+  return qs;
+}
+async function knFfChiSo(t){
+  const MA = 'PRICE_TO_EARNINGS,PRICE_TO_BOOK,MARKETCAP,ROAE_TR_AVG4Q';
+  const quy = knFfQuyDaXong(17);
+  // 4 ngay cuoi moi quy: cuoi quy roi vao cuoi tuan thi P/E, P/B nam o phien truoc do; ROAE ghi dung ngay cuoi quy
+  const ngay = [];
+  quy.forEach(x => { for (let k = 0; k < 4; k++) { const d = new Date(x.d + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() - k); ngay.push(d.toISOString().slice(0,10)); } });
+  const [ls, moi] = await Promise.all([
+    jget(KN_FF + 'ratios?q=code:' + t + '~ratioCode:' + MA + '~reportDate:' + ngay.join(',') + '&size=400').catch(() => ({})),
+    jget(KN_FF + 'ratios/latest?order=reportDate&filter=ratioCode:' + MA + '&where=code:' + t + '&size=20').catch(() => ({}))
+  ]);
+  const byQ = {};
+  (ls.data || []).forEach(x => {
+    const d = String(x.reportDate || '').slice(0,10); const v = knFfSo(x.value); if (v == null) return;
+    const qq = quy.find(z => d <= z.d && d >= z.d.slice(0,8) + '01' && +d.slice(5,7) === +z.d.slice(5,7)); if (!qq) return;
+    const k = qq.y + 'Q' + qq.q; const o = byQ[k] || (byQ[k] = { yearReport: qq.y, quarter: qq.q, _d: {} });
+    const c = x.ratioCode; if (o._d[c] && o._d[c] > d) return; o._d[c] = d;
+    if (c === 'PRICE_TO_EARNINGS') o.pe = v; else if (c === 'PRICE_TO_BOOK') o.pb = v; else if (c === 'MARKETCAP') o.marketCap = v; else if (c === 'ROAE_TR_AVG4Q') o.roe = v;
+  });
+  const rts = Object.values(byQ).sort((a,b) => a.yearReport - b.yearReport || a.quarter - b.quarter);
+  // Gia tri hien tai (P/E, P/B, von hoa theo gia hom nay; ROAE theo BCTC moi nhat) -> dong cuoi, av = bay gio
+  const now = {}; (moi.data || []).forEach(x => { const v = knFfSo(x.value); if (v == null) return;
+    if (x.ratioCode === 'PRICE_TO_EARNINGS') now.pe = v; else if (x.ratioCode === 'PRICE_TO_BOOK') now.pb = v;
+    else if (x.ratioCode === 'MARKETCAP') now.marketCap = v; else if (x.ratioCode === 'ROAE_TR_AVG4Q') now.roe = v; });
+  if (now.pe != null || now.pb != null || now.marketCap != null) {
+    const d = new Date(); rts.push(Object.assign({ yearReport: d.getFullYear(), quarter: Math.ceil((d.getMonth()+1)/3), _av: Math.floor(Date.now()/1000) }, now));
+    // Bang gia (dashboard_data.js) thieu co ban -> dien cho ma nay de "Tong quan" va cac o P/E, P/B, ROE co so
+    try { const r = byT[t]; if (r) { if (r.pe == null && now.pe != null) r.pe = +now.pe.toFixed(2); if (r.pb == null && now.pb != null) r.pb = +now.pb.toFixed(2);
+      if (r.roe == null && now.roe != null) r.roe = +(now.roe*100).toFixed(1); if (r.cap == null && now.marketCap != null) r.cap = Math.round(now.marketCap/1e9); } } catch(e){}
+  }
+  return rts;
+}
 
 const ga = (n,p) => { try { window.gtag && gtag('event', n, p||{}); } catch(e){} };
 
@@ -2724,7 +2815,7 @@ async function loadDetail(t){
       : `${t} <span class="mini">— ${r.n||''} (${BRD(r.b)})</span>`;
     // KPI
     const rtsAv = rts.map(x => ({
-      av: Date.UTC(x.yearReport, x.quarter*3, 1)/1000 + 45*86400,  // sau khi het quy ~45 ngay (BCTC ra)
+      av: x._av != null ? x._av : Date.UTC(x.yearReport, x.quarter*3, 1)/1000 + 45*86400,  // sau khi het quy ~45 ngay (BCTC ra); dong "hien tai" cua VNDirect co av rieng
       pe: x.pe, pb: x.pb, cap: x.marketCap, roe: x.roe
     })).sort((a,b)=>a.av-b.av);
     dtData = {oh, qsAv, rtsAv};
