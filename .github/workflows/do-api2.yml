@@ -31,7 +31,7 @@ jobs:
         while IFS= read -r U; do
           [ -z "$U" ] && continue
           echo "################ $U"
-          code=$(curl -s --compressed -m 25 -o /tmp/r.json -w '%{http_code}' -H "User-Agent: $UA" -H "Origin: $O" -H "Referer: $O/" -H "Accept: */*" "$U")
+          code=$(curl -s --compressed -m 20 -o /tmp/r.json -w "%{http_code}" -H "User-Agent: $UA" -H "Origin: $O" -H "Referer: $O/" -H "Accept: */*" "$U" || echo "LOI-curl-$?")
           echo "HTTP $code  ($(wc -c </tmp/r.json) bytes)"
           if [ -n "$JQ" ]; then jq -r "$JQ" /tmp/r.json 2>/dev/null | head -c "$CHARS" || head -c "$CHARS" /tmp/r.json; else head -c "$CHARS" /tmp/r.json; fi
           echo; echo
