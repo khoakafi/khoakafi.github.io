@@ -87,6 +87,19 @@
     return {so:Object.keys(px).length, tong:syms.length, hong:hong, as_of:out.as_of};
   }
   window.__knBstarLive=phatHanhBstarLive;   // de kiem tra tay: __knBstarLive(localStorage.kafi_gh_token)
+  /* Engine mat co ban (vietcap chan 21/09/2026) -> dien tu VNDirect bang coban_vnd.js truoc khi phat hanh.
+     Chi chay khi >=20% ma thieu P/E hoac chuoi quy; engine lay duoc thi buoc nay khong dong vao. */
+  async function boSungCoBan(ddJs){
+    if(typeof window.knBoSungCoBan!=='function') return ddJs;
+    var S=(new Function('window', ddJs+'\n;return window.SUMMARY;'))({});
+    if(!S||!S.rows||!S.rows.length) return ddJs;
+    var thieu=window.knCoBanThieu(S.rows); if(thieu<S.rows.length*0.2) return ddJs;
+    badge('Đang bổ sung cơ bản từ VNDirect ('+thieu+' mã thiếu)…','#b45309');
+    var kq=await window.knBoSungCoBan(S.rows,{onTien:function(a,b){ badge('Đang bổ sung cơ bản từ VNDirect… '+a+'/'+b,'#b45309'); }});
+    if(kq.dien<thieu*0.5) throw new Error('chi dien duoc '+kq.dien+'/'+thieu+' ma'+(kq.hong.length?' ('+kq.hong[0]+')':''));
+    S.coBan='vndirect '+new Date().toISOString().slice(0,10)+(kq.hong.length?' (hỏng '+kq.hong.length+' lô)':'');
+    return 'window.SUMMARY='+JSON.stringify(S)+';';
+  }
   async function run(){
     var lc=lastCloseMs(); if(!lc) return;
     if(sigsMs()>=lc) return;
@@ -104,6 +117,7 @@
       var sigJs=window.__SIGSOUT, ddJs=window.__DDOUT;
       if(!sigJs||sigJs.length<1000) throw new Error('tin hieu rong');
       if(!ddJs||ddJs.length<150000) throw new Error('bang gia thieu');
+      try{ ddJs=await boSungCoBan(ddJs); }catch(e){ badge('⚠ Bổ sung cơ bản (VNDirect) lỗi: '+e.message+' — vẫn phát hành bảng giá','#b45309'); }
       try{ (new Function(sigJs))(); if(typeof retroScanSignals==='function') retroScanSignals(); }catch(e){}
       badge('Đang phát hành lên web…','#b45309');
       await putFile(tok,'dashboard_data.js', ddJs, '[AUTO] cap nhat bang gia '+new Date().toISOString().slice(0,10));

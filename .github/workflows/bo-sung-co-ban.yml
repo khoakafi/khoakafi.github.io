@@ -1,0 +1,26 @@
+name: bo-sung-co-ban
+# Luoi an toan: sau gio phat hanh, neu dashboard_data.js thieu co ban (engine khong lay duoc) thi dien tu VNDirect.
+on:
+  workflow_dispatch:   # bam tay (Actions -> bo-sung-co-ban -> Run workflow); chua dat lich tu dong
+permissions:
+  contents: write
+  pages: write
+jobs:
+  dien:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Dien co ban tu VNDirect neu thieu
+      run: node scripts/bo-sung-co-ban.js
+    - name: Commit neu co thay doi
+      run: |
+        if git diff --quiet -- dashboard_data.js; then echo "khong doi"; exit 0; fi
+        git config user.name "kafi-auto" && git config user.email "auto@khoanguyeninvest.vn"
+        git add dashboard_data.js
+        git commit -m "[AUTO] bo sung co ban $(date -u +%Y-%m-%d) (VNDirect)"
+        git push
+        # commit bang GITHUB_TOKEN khong tu kich hoat Pages -> goi build tay
+        curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+          https://api.github.com/repos/${{ github.repository }}/pages/builds -o /dev/null -w "pages build: %{http_code}\n" || true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
