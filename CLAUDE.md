@@ -54,6 +54,26 @@ trong 15 lời gọi dchart cùng lúc của B★ → deal ra "…", đường h
 và Google Analytics. Các API VNDirect (dchart, stock_prices, foreigns, ratios, news)
 chạy được cả hai chiều, nên bỏ Referer không ảnh hưởng.
 
+### Đã dính (2026-09-22): vietcap chặn hẳn
+
+`iq.vietcap.com.vn` chặn **mọi** request cross-origin (400/403 với cả 6 bộ header trên runner, cả không Referer).
+Chrome của anh Khoa mở *trang* vietcap vẫn thấy dữ liệu vì đó là cùng domain + cookie của họ — không phải bằng chứng API còn mở.
+Hậu quả: engine (kafi-core) phát hành `dashboard_data.js` **mất 12 trường cơ bản** (q, npatYoY, revYoY, cagr3, pe, pb, roe, roa,
+cap, dte, gm, dy) mà autorun vẫn PUT vì chỉ kiểm độ dài file; tab Chi tiết mã mất P/E, P/B, ROE, vốn hóa + 4 chart tài chính.
+
+Đã sửa (nguồn dự phòng = **VNDirect finfo**, CORS `*`, runner GitHub gọi được — khác dchart):
+- `dashboard_app.js`: `api.kqkd` / `api.ratios` thử vietcap trước, hỏng 1 lần trong phiên (`sessionStorage.kn_vc_hong`) thì đi thẳng
+  `knFfQuy` / `knFfChiSo`, trả **đúng hình dạng vietcap** nên phần vẽ không đổi.
+- `coban_vnd.js` (`knBoSungCoBan`): điền 12 trường vào `SUMMARY.rows` cho mã thiếu, 40 mã/lô. Dùng ở `autorun.js` (trước khi PUT,
+  chỉ khi ≥20% mã thiếu) và `scripts/bo-sung-co-ban.js` (workflow `bo-sung-co-ban.yml`, bấm tay). Ghi nguồn ở `SUMMARY.coBan`.
+- Mã chỉ tiêu VNDirect: `financial_statements` itemCode 21001 doanh thu thuần (mọi mô hình KQKD), 421701 TOI ngân hàng, 23000 LNST mẹ,
+  23001 EPS quý, 14100 vốn chủ; `ratios` PRICE_TO_EARNINGS, PRICE_TO_BOOK, MARKETCAP (VND), ROAE_TR_AVG4Q, ROAA_TR_AVG4Q,
+  GROSS_MARGIN_TR, DEBT_TO_EQUITY_AQ, NET_SALES_QR_GRYOY, NET_PROFIT_QR_GRYOY, DIVIDEND_YIELD (tỉ lệ, ×100 = %).
+  `reportDate:a,b,c` và `code:A,B,C` nhận danh sách; `ratios/latest` cần `filter=` + `where=`.
+- Dò API: `.github/workflows/do-api2.yml` (nhiều URL một lượt, có `jq`). TCBS bị Cloudflare chặn runner — không dùng được.
+- **Còn nợ:** engine trong `kafi-core` vẫn gọi vietcap; nếu engine dùng cơ bản để chấm `wgrade` thì phần đó đang chạy thiếu dữ liệu.
+  Phiên nào có quyền đọc `kafi-core` thì đổi engine sang VNDirect (tái dùng `coban_vnd.js`).
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
