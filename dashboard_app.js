@@ -764,6 +764,14 @@ async function lbLoad(){
   if (st && !lbRaw) st.innerHTML = '<span class="spin"></span> Đang tải dữ liệu…';
   try {
     lbRaw = await lbFetchAll((d,n)=>{ if (st && !lbRaw && d%25===0) st.innerHTML = '<span class="spin"></span> Đang xử lý ' + d + '/' + n + ' mã…'; });
+    /* Tai hong mot phan (mang, API) -> KHONG tinh diem, KHONG ghi cache — ghi la ca phien "0 ma" / bang lech ma khong bao gi
+       (cung ho loi voi So sanh truoc day). Bao ro va cho bam tai lai. */
+    const soCo = Object.keys(lbRaw).length;
+    if (soCo < LB_SYMS.length * 0.8) {
+      lbRaw = null;
+      if (st) st.innerHTML = 'Chỉ tải được ' + soCo + '/' + LB_SYMS.length + ' mã — chưa tính điểm. <a href="#" onclick="lbLoad();return false">Thử lại</a>';
+      lbLoading = false; return;
+    }
     let ngay = '';
     const any = Object.values(lbRaw)[0];
     if (any) { const d = new Date(any[any.length-1].t*1000); ngay = ('0'+d.getDate()).slice(-2)+'/'+('0'+(d.getMonth()+1)).slice(-2); }

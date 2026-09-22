@@ -1,0 +1,29 @@
+name: kiem-version
+# Chan loi "sua JS ma quen tang ?v=" hoac "dat version lui" (21/09 co phien dat dashboard_app.js?v=20260921b sau khi
+# da len toi ...o -> service worker tra JS cu cho ai da ghe trong ngay). Chi doc, khong ghi gi.
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  kiem:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with: { fetch-depth: 2 }
+    - name: So ?v= cua file JS co sua voi commit truoc
+      run: |
+        set -e
+        if ! git rev-parse HEAD~1 >/dev/null 2>&1; then echo "commit dau, bo qua"; exit 0; fi
+        loi=0
+        for f in $(git diff --name-only HEAD~1 HEAD | grep -E '\.js$' | grep -vE '^(dashboard_data|signals_data|bstar_live|sw)\.js$|^scripts/'); do
+          the=$(grep -o "$f?v=[0-9a-z]*" index.html | head -1 | sed 's/.*?v=//')
+          cu=$(git show HEAD~1:index.html 2>/dev/null | grep -o "$f?v=[0-9a-z]*" | head -1 | sed 's/.*?v=//')
+          [ -z "$the" ] && { echo "  $f: khong co ?v= trong index.html (file du lieu hoac khong cache) - bo qua"; continue; }
+          if [ "$the" = "$cu" ]; then echo "::error::$f co sua nhung ?v= van la $the - service worker se tra ban cu"; loi=1;
+          elif [ "$the" \< "$cu" ]; then echo "::error::$f: ?v= $the LUI so voi $cu - dat version moi hon"; loi=1;
+          else echo "  $f: $cu -> $the OK"; fi
+        done
+        exit $loi
