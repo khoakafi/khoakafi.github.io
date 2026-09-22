@@ -75,6 +75,10 @@ cap, dte, gm, dy) mà autorun vẫn PUT vì chỉ kiểm độ dài file; tab Ch
   trả đúng hình dạng vietcap); **thiếu BCTC >15% mã thì ném lỗi, không phát hành**. Lý do bắt buộc: `gradeAt()` (lọc "cơ bản quý
   không đạt", LNST YoY 0–25% → W) đọc `qsAv`; rỗng là mọi mã "đạt" → bộ tín hiệu 21/09 lệch (X 131→163, thêm BCM/ORS/HHP 2026,
   hiệu suất 602%→579%). Test: `node scratchpad/engine-test.mjs` (fetch giả, 650 mã) — mã yếu phải ra W, VNDirect hỏng phải ném lỗi.
+  Phát hành lại 22/09 15:09 (run 20): MSB về "HẠNG YẾU", HHP/BCM/ORS biến mất, hero +602.2% / 126 deal hiện ngay (bstar_live as_of 22/09).
+  **Lệch nguồn đã biết:** ngày "as-of" BCTC lấy `createdDate` của VNDirect (ngày họ nhập), không phải ngày công bố như vietcap →
+  11 marker cũ (2021–2026) đổi W↔B/X quanh ngày ra BCTC (REE, EIB, PVP, VHM, KHG, IJC, CSV, DCM, PVS, CTI). Không đụng deal B★ 2026
+  và số hero; chỉ lịch sử tín hiệu từng mã lệch vài chỗ. Chưa có nguồn ngày công bố chính thức thay thế.
 
 ### Hai máy phát hành (sửa lại ghi chú cũ)
 
