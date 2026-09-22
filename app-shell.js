@@ -795,7 +795,14 @@
     if (!LB){
       fx.innerHTML = '<div class="knFxL">Tiêu điểm hôm nay</div><div class="knSkel" style="height:26px;width:60%;margin-top:8px"></div><div class="knSkel" style="height:14px;width:90%;margin-top:8px"></div><div class="knSkel" style="height:10px;margin-top:14px"></div>';
       strip.innerHTML = [1,2,3,4,5,6,7,8].map(function(){ return '<div class="knSr"><div class="knSkel" style="width:80px;height:14px"></div><div class="knSrT" style="background:none"><div class="knSkel" style="position:absolute;left:0;right:0;top:12px;height:10px"></div></div><div class="knSkel" style="width:30px;height:14px"></div></div>'; }).join('');
-      var note = document.getElementById('knLbNote'); if (note) note.textContent = 'Đang tính điểm 133 mã (lần đầu trong phiên, khoảng 20–40 giây)…';
+      var note = document.getElementById('knLbNote');
+      if (note) {
+        /* Web tai hong (mang/API) thi noi that + cho bam tai lai, dung treo "dang tinh" mai */
+        var stW = document.getElementById('lbStatus'); var tx = stW ? (stW.textContent || '') : '';
+        if (/Chỉ tải được|Lỗi tải/.test(tx)) { note.innerHTML = tx.replace(/Thử lại\s*$/, '') + ' <a href="#" id="knLbLai">Thử lại</a>';
+          var a = document.getElementById('knLbLai'); if (a) a.onclick = function(ev){ ev.preventDefault(); try { var K = KN(); K.lbLoad(); note.textContent = 'Đang tải lại…'; } catch(e){} }; }
+        else note.textContent = 'Đang tính điểm 133 mã (lần đầu trong phiên, khoảng 20–40 giây)…';
+      }
       return;
     }
     var uniq = {}, secOf = {}; LB.forEach(function(s){ s.rows.forEach(function(r){ uniq[r[0]] = r[1]; if (!secOf[r[0]] || !/VN30|MID/.test(s.n)) secOf[r[0]] = s.n; }); });
