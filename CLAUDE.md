@@ -81,7 +81,7 @@ cap, dte, gm, dy) mà autorun vẫn PUT vì chỉ kiểm độ dài file; tab Ch
 Ngoài Chrome của anh Khoa (`autorun.js`), kho `kafi-core` còn workflow **`phat-hanh.yml`** (`run.mjs`, lịch 08:50 UTC = 15:50 VN,
 hay chạy trễ nhiều giờ — 21/09 chạy 22:21) PUT `dashboard_data.js` + `signals_data.js` bằng secret `WEB_TOKEN`. Các commit
 `[AUTO]` buổi tối là của nó. **dchart VNDirect gọi được từ runner GitHub** (run 19 kéo đủ 693 mã) — ghi chú "VNDirect chặn IP
-runner" trước đây sai với `run.mjs`; chỉ `bstar_live.js` chưa có bước chạy trên runner. Hai máy chạy cùng engine nên sửa
+runner" trước đây sai với `run.mjs`. Từ 22/09 `run.mjs` cũng nướng `bstar_live.js` (bước 4, hỏng không ảnh hưởng tín hiệu). Hai máy chạy cùng engine nên sửa
 `engine.js` là sửa cả hai; muốn phát hành lại tay: Actions → `Phat hanh tin hieu` → Run workflow (chỉ chạy **sau 14:45**, engine
 lấy cả nến hôm nay).
 
@@ -106,7 +106,7 @@ chạy ngay sau đó trong cùng trình duyệt (gọi được VNDirect): giá 
 bù nếu tín hiệu đã phát hành mà file chưa có / hỏng. Kiểm tra tay trong console: `__knBstarLive(localStorage.kafi_gh_token)`.
 Client: `bstarLoadPrices` ưu tiên `window.BSTAR_LIVE.px` nếu `lastd` ≥ phiên trước → `ready` + vẽ ngay. File cũ
 bị bỏ qua, trang tự tải như trước. `sw.js` xếp `bstar_live.js` vào nhóm dữ liệu; thẻ script không có `?v=`.
-`bstar_live.js` chưa có bước chạy trên GitHub Actions (xem mục *Hai máy phát hành*) và **không bao giờ commit file sinh từ dữ liệu giả**.
+Cả hai máy phát hành đều nướng `bstar_live.js` (Chrome: `autorun.js`; runner: `run.mjs` bước 4) và **không bao giờ commit file sinh từ dữ liệu giả**.
 
 ## Cách anh Khoa thích làm việc
 
