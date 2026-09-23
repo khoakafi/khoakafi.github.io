@@ -1396,6 +1396,16 @@ async function retroScanSignals(){
     if (changed) { saveLiveDeals(store); if (tpn.recent.length > 12) tpn.recent = tpn.recent.slice(0,12); refreshOpenDeals(); }
   } catch(e){}
 }
+/* Ma dang co vi the mo (marker cuoi la B/X/T hoac A chua co S) -> khong ve mui ten trong phien lan nua.
+   23/09/2026: PET B* hom 22/09, sang 23/09 gia vuot nguong kich hoat (tinh tu gia dong cua hom truoc) -> ve them "B" thu hai. */
+function knDangGiu(t){
+  try {
+    const m = (window.SIGS && window.SIGS.t && window.SIGS.t[t] && window.SIGS.t[t].m) || [];
+    for (let i = m.length - 1; i >= 0; i--) { const k = m[i][1]; if (k === 'S') return false; if (k === 'B' || k === 'X' || k === 'T' || k === 'A') return true; }
+  } catch(e){}
+  return false;
+}
+window.knDangGiu = knDangGiu;
 function __nenOk(t){
   try {
     const o = window.SIGS && window.SIGS.t && window.SIGS.t[t];
@@ -1438,6 +1448,7 @@ function checkWatchAlerts(){
     if (!liveWatch.inSession()) return;
     ROWS().forEach(r=>{
       if (!r.watch || r.wgrade === 'weak' || r.chg == null) return;
+      if (knDangGiu(r.t)) return;                    // da mua roi -> khong bao "sat diem mua" lan nua
       const g = (window.SIGS && window.SIGS.trig && window.SIGS.trig[r.t]) || null;
       if (g && r.p != null && r.p >= g[0]) return;  // da co thong bao TIN HIEU MUA lo
       if (g && r.p != null && r.p >= g[0]*0.985)
@@ -2234,7 +2245,7 @@ window.__rebuildBadges = function(){
     // Mui ten trong phien: cung cua voi cuoi phien (nen/co ban phai dat) va phan biet B\u2605 / B theo co wstar cua bep
     // Ma "mong" (TB20 10-15 ty): luat tin hieu can TB20 gom ca phien nay >= 15 ty -> uoc tinh (19 phien cu + phien nay) truoc khi ve
     const duTK = !r.wmong || (r.val20 != null && ((r.val20/1000)*19 + px*lv/1e6)/20 >= 15);
-    if (g && lv != null && px != null && !daCoTinHieu && nenKhopMa() && duTK
+    if (g && lv != null && px != null && !daCoTinHieu && !knDangGiu(curT) && nenKhopMa() && duTK
         && liveWatch.inSession() && px >= g[0] && lv >= g[1]
         && (typeof __nenOk !== 'function' || __nenOk(curT))) {
       const sao = (r.wstar === 1) || (((window.SUMMARY||{}).rows||[]).some(x => x && x.t === curT && x.wstar === 1));
@@ -3652,7 +3663,7 @@ const liveWatch = {
       const cell = document.getElementById('lv_'+m.t);
       if (cell) { cell.textContent = (chg>=0?'+':'')+chg.toFixed(1)+'%' + (volR>=1.5?' · KL x'+volR.toFixed(1):''); cell.className = chg>=3?'up':(chg<=-2?'down':'mut'); }
       const g = (window.SIGS && window.SIGS.trig && window.SIGS.trig[m.t]) || null;
-      if (g && px >= g[2] && m.v20 && (v[v.length-1]/elapsed) >= g[3]) { hot++; this.notify('L2'+m.t, m.t+' '+(chg>=0?'+':'')+chg.toFixed(1)+'% kèm dòng tiền mạnh', 'Tín hiệu MUA có thể kích hoạt cuối phiên — mở dashboard kiểm tra ngay.', 5*60000); }
+      if (g && !knDangGiu(m.t) && px >= g[2] && m.v20 && (v[v.length-1]/elapsed) >= g[3]) { hot++; this.notify('L2'+m.t, m.t+' '+(chg>=0?'+':'')+chg.toFixed(1)+'% kèm dòng tiền mạnh', 'Tín hiệu MUA có thể kích hoạt cuối phiên — mở dashboard kiểm tra ngay.', 5*60000); }
       else if (chg >= 4) { hot++; this.notify('W4'+m.t, m.t+' +'+chg.toFixed(1)+'% — NÓNG MÁY', 'Mã trong vùng theo dõi đang tăng tốc mạnh. Canh chặt tới cuối phiên.', 10*60000); }
       else if (chg >= 2) { hot++; this.notify('W2'+m.t, m.t+' +'+chg.toFixed(1)+'% — khởi động', 'Mã trong vùng theo dõi bắt đầu chạy. Để mắt.', 15*60000); }
     } catch(e){} };
