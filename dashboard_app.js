@@ -2895,10 +2895,35 @@ function computeTPN(oh, boardCode, qsAv){
   return {markers, state: _st};
 }
 let curMarkers = [];
+/* "TÍN HIỆU MUA HÔM NAY" la chu engine viet luc phat hanh; sang phien sau file chua doi thi van in "hom nay" (PET 23/09).
+   Trinh duyet tu doi thanh "ĐANG NẮM GIỮ — T+n" theo dung luat engine (T+3 dong cua <= gia von la ban; sau T+3 dung cat lo 7%). */
+function knTpnCapNhat(s){
+  try {
+    if (!s || !s.c || !s.ts || String(s.c[0]).indexOf('TÍN HIỆU MUA HÔM NAY') < 0) return s;
+    const nv = new Date(), lb = new Date(s.ts*1000);
+    if (lb.toDateString() === nv.toDateString()) return s;
+    // dem so phien (thu 2-6) sau ngay mua, tinh ca hom nay khi da vao gio giao dich
+    let n = 0; const d = new Date(lb.getFullYear(), lb.getMonth(), lb.getDate());
+    while (true) { d.setDate(d.getDate() + 1); if (d > nv) break; const w = d.getDay(); if (w >= 1 && w <= 5) n++; }
+    if (n <= 0) return s;
+    // gia von = so dau tien trong cau "Vào lệnh ngay trong phiên tại 41.50. T+3 ..." (khong bat theo chu 'tại' vi dau tieng Viet co the khac ma Unicode)
+    const fill = +(((String(s.dL || s.dA || '').match(/(\d+(?:[.,]\d+)?)/) || [])[1] || '').replace(',', '.'));
+    const r = byT[curT] || {}; const px = (r.p != null && isFinite(r.p)) ? r.p : null;
+    const pnl = (fill && px) ? (px / fill - 1) * 100 : null;
+    const chip = ['ĐANG NẮM GIỮ — T+' + n + (pnl != null ? ', ' + (pnl > 0 ? '+' : '') + pnl.toFixed(1) + '%' : ''),
+                  pnl != null && pnl < 0 ? '#fdecec' : '#e7f6ec', pnl != null && pnl < 0 ? '#e5484d' : '#128a3e'];
+    const f2 = x => x >= 100 ? x.toFixed(1) : x.toFixed(2);
+    const tx = fill ? ('Giá vốn ' + f2(fill) + '. ' + (n < 3 ? 'Chờ hàng về — T+3: đóng cửa ≤ ' + f2(fill) + ' là BÁN toàn bộ.'
+                                                       : 'BÁN nếu hôm nay đóng cửa dưới ' + f2(fill*0.93) + ' (mốc MA tính lại sau phiên).'))
+                    : 'Đã vào lệnh phiên trước. Bản cập nhật sau phiên sẽ tính lại mốc giữ/bán.';
+    return { c: chip, dL: tx, dA: tx, ts: s.ts };
+  } catch(e) { return s; }
+}
 function renderTPN(s){
   const el = document.getElementById('dTpn');
   if (!el) return;
   let chip, desc;
+  s = knTpnCapNhat(s);
   if (s && s.c) {
     chip = s.c; desc = s.dA || '';
     try {
