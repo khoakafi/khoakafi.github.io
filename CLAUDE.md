@@ -89,6 +89,15 @@ runner" trước đây sai với `run.mjs`. Từ 22/09 `run.mjs` cũng nướng 
 `engine.js` là sửa cả hai; muốn phát hành lại tay: Actions → `Phat hanh tin hieu` → Run workflow (chỉ chạy **sau 14:45**, engine
 lấy cả nến hôm nay).
 
+### Watchlist 10 tỷ, tín hiệu 15 tỷ (23/09/2026, anh Khoa chốt)
+
+Luật B★ cần GTGD TB20 ≥ 15 tỷ **tính cả phiên nổ**. 14/134 deal lịch sử (PET 22/09/2026, DPR, HVN, HDC, PPC, TNH…) có TB20 phiên
+trước chỉ 10–15 tỷ, đủ 15 nhờ chính phiên nổ → trước đây không vào watchlist, tín hiệu chỉ hiện sau 15:09. Nhóm này: 5/13 thắng,
+TB +5,6%/deal (chung: 58/133, +7,7%). **Luật tín hiệu không đổi** (giữ số 602%). Chỉ đổi hiển thị: engine cho vào watchlist từ
+`val20 ≥ 10000`, gắn `wmong=1` khi < 15000, chip "CHỜ ĐIỂM MUA · TK MỎNG" kèm điều kiện; web/app vẽ nhãn "mỏng" (`__wmong`, `.knMong`),
+mũi tên trong phiên chỉ vẽ khi ước tính TB20 gồm phiên nay ≥ 15 tỷ (`duTK`). Kiểm lại lịch sử: workflow `kiem-bstar.yml`
+(`scripts/kiem-bstar-thanh-khoan.mjs`, chỉ đọc, chạy trên runner vì cần dchart).
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`

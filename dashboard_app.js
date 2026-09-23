@@ -565,7 +565,7 @@ if(up){const dt=new Date(up+'T12:00:00');const wd=dt.getDay();dt.setDate(dt.getD
 const chip=r=>{const ch=(r._lv!=null?r._lv:r.chg);
 const txt=ch!=null?((ch>0?'+':'')+(+ch).toFixed(1)+'%'):'\u2014';
 const col=ch==null?'#7A828E':(ch>0?'#18A34B':(ch<0?'#E5484D':'#7A828E'));
-return '<span class="wchip" data-t="'+r.t+'" style="display:inline-flex;align-items:center;gap:3px;padding:1px 7px;border:1px solid #E8EAEF;border-radius:999px;cursor:pointer;background:#fff;font-weight:700;font-size:11.5px;color:#1F2937;white-space:nowrap">'+(r.wstar?'<span style="color:#B45309;font-size:10px">\u2605</span>':'')+r.t+'<span id="wlv_'+r.t+'" style="color:'+col+';font-weight:600;font-size:10.5px">'+txt+'</span></span>';};
+return '<span class="wchip" data-t="'+r.t+'" style="display:inline-flex;align-items:center;gap:3px;padding:1px 7px;border:1px solid #E8EAEF;border-radius:999px;cursor:pointer;background:#fff;font-weight:700;font-size:11.5px;color:#1F2937;white-space:nowrap">'+(r.wstar?'<span style="color:#B45309;font-size:10px">\u2605</span>':'')+r.t+(r.wmong?'<span title="Thanh khoản mỏng" style="font-size:9px;font-weight:700;color:#B45309;background:#FFF4E5;border-radius:3px;padding:0 3px">mỏng</span>':'')+'<span id="wlv_'+r.t+'" style="color:'+col+';font-weight:600;font-size:10.5px">'+txt+'</span></span>';};
 const el=document.createElement('div');el.id='watchStrip';
 el.style.cssText='display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E8EAEF;border-radius:9px;padding:5px 10px;margin-bottom:8px;overflow-x:auto;scrollbar-width:none';
 el.innerHTML='<span style="font-weight:700;font-size:11.5px;color:#7A828E;white-space:nowrap;flex:0 0 auto">Watchlist '+lab+'</span>'+ws.map(chip).join('');
@@ -1646,13 +1646,17 @@ inits.screener = function(){
   renderSc();
 };
 let activePreset = null;
+/* nhan "mong": thanh khoan TB20 10-15 ty (engine dat wmong=1). Van vao watchlist, van ve mui ten, nhung ghi ro de tu can nhac. */
+function __wmong(r){
+  return (r && r.wmong) ? ' <span title="Thanh khoản mỏng: GTGD TB20 dưới 15 tỷ — tín hiệu chỉ hợp lệ nếu phiên nổ kéo TB20 lên ≥ 15 tỷ" style="font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309;vertical-align:1px">mỏng</span>' : '';
+}
 /* nhan trang thai watchlist: B★ (nen siet, tren MA50) hoac B thuong */
 function __wchip(r){
   if (!r || !r.watch || r.wgrade==='weak') return '';
   const sao = r.wstar===1;
   return ' <span style="font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;vertical-align:1px;'
     + (sao ? 'background:#E9F7EF;color:#127A3B' : 'background:#EEF2F6;color:#5B6470') + '">'
-    + (sao ? 'B★' : 'B') + '</span>';
+    + (sao ? 'B★' : 'B') + '</span>' + __wmong(r);
 }
 function renderSc(){
   ROWS().forEach(scDerive);
@@ -2228,11 +2232,13 @@ window.__rebuildBadges = function(){
     const px = (r.p != null && isFinite(r.p) && r.p > 0) ? r.p : null;
     const daCoTinHieu = out.some(b => b.i === n-1 && b.below);
     // Mui ten trong phien: cung cua voi cuoi phien (nen/co ban phai dat) va phan biet B\u2605 / B theo co wstar cua bep
-    if (g && lv != null && px != null && !daCoTinHieu && nenKhopMa()
+    // Ma "mong" (TB20 10-15 ty): luat tin hieu can TB20 gom ca phien nay >= 15 ty -> uoc tinh (19 phien cu + phien nay) truoc khi ve
+    const duTK = !r.wmong || (r.val20 != null && ((r.val20/1000)*19 + px*lv/1e6)/20 >= 15);
+    if (g && lv != null && px != null && !daCoTinHieu && nenKhopMa() && duTK
         && liveWatch.inSession() && px >= g[0] && lv >= g[1]
         && (typeof __nenOk !== 'function' || __nenOk(curT))) {
       const sao = (r.wstar === 1) || (((window.SUMMARY||{}).rows||[]).some(x => x && x.t === curT && x.wstar === 1));
-      out.push({ i: n-1, below: true, text: sao ? '\u25B2 B\u2605' : '\u25B2 B', color: '#18a34b',
+      out.push({ i: n-1, below: true, text: (sao ? '\u25B2 B\u2605' : '\u25B2 B') + (r.wmong ? ' mỏng' : ''), color: '#18a34b',
                  value: Math.min(curOhlc.l[n-1], px) });
     }
   } catch(e){}
@@ -2866,7 +2872,8 @@ function computeTPN(oh, boardCode, qsAv){
     if (_r.watch && _g && +_g[0] > 0 && +_g[1] > 0) {
       const _px = (+_g[0]).toFixed(2), _kl = (+_g[1]/1e6).toFixed(1);
       const _yeu = (_r.wgrade === 'weak');
-      const _duoi = _yeu ? ' triệu cp — cơ bản quý không đạt, chỉ quan sát.' : ' triệu cp.';
+      const _mong = _r.wmong ? ' · thanh khoản mỏng (TB20 ' + ((_r.val20||0)/1000).toFixed(1) + ' tỷ, tín hiệu cần ≥ 15 tỷ tính cả phiên nổ)' : '';
+      const _duoi = (_yeu ? ' triệu cp — cơ bản quý không đạt, chỉ quan sát' : ' triệu cp') + _mong + '.';
       let _ts = null;
       try { const _tt = window.SIGS.t || {}; for (const _k2 in _tt) { if (_tt[_k2] && _tt[_k2].st && _tt[_k2].st.ts) { _ts = _tt[_k2].st.ts; break; } } } catch(e){}
       _st = { c: _yeu ? ['CHỜ ĐIỂM MUA — HẠNG YẾU', '#f3f5f7', '#6b7280'] : ['CHỜ ĐIỂM MUA', '#fef9e7', '#b45309'],
@@ -3563,7 +3570,7 @@ inits.watch = function(){
   const rowHtml = r=>{
     const qlab=r._q?('Q'+r._q[1]+'/'+r._q[0]):'';
     return `<tr class="row" data-t="${r.t}" onclick="openDetail('${r.t}')">
-      <td style="text-align:left"><b>${r.t}</b>${r.wstar?' <span style="color:#B45309" title="Nền thắt chặt">★</span>':''}</td>
+      <td style="text-align:left"><b>${r.t}</b>${r.wstar?' <span style="color:#B45309" title="Nền thắt chặt">★</span>':''}${__wmong(r)}</td>
       <td>${fmt(r.p,2)}</td>
       <td id="lv_${r.t}" class="${cls(r.chg)}">${pct(r.chg)}</td>
       <td>${fmt(r._kl,0)}</td>
@@ -3578,7 +3585,7 @@ inits.watch = function(){
   const tableHtml = (list, sortable)=>`<div style="overflow:auto"><table>${headRow(sortable)}${list.map(rowHtml).join('')}</table></div>`;
   el.innerHTML = `<div class="card">
     <h2 style="margin-bottom:3px">Watchlist ${lab}</h2>
-    <div class="mini" style="margin-bottom:10px">Mã có <span style="color:#B45309">★</span> là nền thắt chặt.</div>
+    <div class="mini" style="margin-bottom:10px">Mã có <span style="color:#B45309">★</span> là nền thắt chặt. Nhãn <span style="font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309">mỏng</span> = GTGD TB20 10–15 tỷ: vẫn canh được, nhưng tín hiệu chỉ hợp lệ khi phiên nổ kéo TB20 lên ≥ 15 tỷ.</div>
     ${strong.length?tableHtml(strong,true):'<div class="mini" style="padding:8px 0">Chưa có mã đạt chuẩn cơ bản — cập nhật cuối phiên để quét lại.</div>'}
     <div class="mini" style="margin-top:9px;color:#7A828E">+/- LN, DT/TOI quý = tăng trưởng quý gần nhất so với cùng kỳ (cùng số với mục Chỉ số cơ bản trong Chi tiết mã; ngân hàng dùng TOI thay doanh thu). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div>
   </div>

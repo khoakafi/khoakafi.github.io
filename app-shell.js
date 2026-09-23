@@ -210,7 +210,7 @@
   + '.knRow:first-of-type{border-top:0}.knRow:active{background:var(--ksunk)}'
   + '.knRowL{flex:1;min-width:0}'
   + '.knTick{font-size:15px;font-weight:700;letter-spacing:-.01em;display:flex;align-items:center;gap:5px}'
-  + '.knStar{color:var(--kfl);font-size:12px;line-height:1}'
+  + '.knStar{color:var(--kfl);font-size:12px;line-height:1}.knMong{display:inline-block;margin-left:5px;font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309;vertical-align:1px}'
   + '.knHot{display:inline-block;font-size:10px;font-weight:700;padding:1px 5px;border-radius:5px;background:var(--kbs);color:var(--kbd);vertical-align:1px;margin-left:4px}'
   + '.knSub{font-size:11.5px;font-weight:500;color:var(--kink2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}'
   + '.knSpark{flex:none;width:64px;height:26px}.knSpark svg{display:block;width:64px;height:26px;overflow:visible}'
@@ -482,7 +482,7 @@
     var K = KN(); if (!K) return {strong:[], weak:[]};
     var all = K.ROWS().filter(function(r){ return r.watch; });
     var enrich = function(r){ return {
-      t:r.t, n:r.n || '', b:r.b, p:r.p, chg:r.chg, star:r.wstar === 1,
+      t:r.t, n:r.n || '', b:r.b, p:r.p, chg:r.chg, star:r.wstar === 1, mong:r.wmong === 1,
       pkl: r.vx != null ? Math.round(r.vx * 100) : null,
       kl: (r.v20 != null && r.vx != null) ? Math.round(r.v20 * r.vx) : (r.v20 || null),
       val20:r.val20, weak: r.wgrade === 'weak' }; };
@@ -638,7 +638,7 @@
   }
   function rowHtml(r, dim){
     return '<button class="knRow' + (dim ? ' dim' : '') + '" data-t="' + r.t + '">'
-      + '<div class="knRowL"><div class="knTick">' + r.t + (r.star ? '<span class="knStar" title="Nền thắt chặt">★</span>' : '') + (r.pkl != null && r.pkl >= 150 ? '<span class="knHot">KL ' + r.pkl + '%</span>' : '') + '</div>'
+      + '<div class="knRowL"><div class="knTick">' + r.t + (r.star ? '<span class="knStar" title="Nền thắt chặt">★</span>' : '') + (r.mong ? '<span class="knMong" title="Thanh khoản mỏng: TB20 10–15 tỷ">mỏng</span>' : '') + (r.pkl != null && r.pkl >= 150 ? '<span class="knHot">KL ' + r.pkl + '%</span>' : '') + '</div>'
       + '<div class="knSub">' + esc(shortName(r.n)) + '</div></div>'
       + '<div class="knSpark" data-t="' + r.t + '">' + sparkSvg(SPARK && SPARK[r.t]) + '</div>'
       + '<div class="knRowR"><div class="knPx">' + (r.p == null ? '—' : vn(r.p, r.p >= 100 ? 1 : 2)) + '</div><span class="knPill ' + cls(r.chg) + '">' + pct(r.chg) + '</span></div></button>';
