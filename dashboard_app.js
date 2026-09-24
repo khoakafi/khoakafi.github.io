@@ -2678,6 +2678,10 @@ inits.detail = function(t){
       </div>
     </div>
   `;
+    /* innerHTML vua xoa dai watchlist chen luc nap trang -> dung lai NGAY (truoc day doi nhip 5 giay moi hien,
+       chart phai co lai sau khi dai chen vao) va dua khoi tai chinh / chip tin hieu ve dung cho truoc khi ve chart. */
+    try { buildWatchStrip(); } catch(e){}
+    try { if (window.__knFbxMove) window.__knFbxMove(); } catch(e){}
       // eslint-disable-next-line
   const dq = $('#dQ');
     dq.addEventListener('input', () => {
@@ -4521,6 +4525,7 @@ function pinNameBar(){
   }
   window.__knCmpFit = __cmpTranMan;
   addEventListener('resize', function(){ __chartTranMan(); __perfTranMan(); __cmpTranMan(); });
+  window.__knFbxMove = function(){ __fbxMove(); };
   function __fbxMove(){
     try{
       /* Tai chinh tro lai thanh mot khoi RONG NGANG nam duoi chart (nhu ban cu).
