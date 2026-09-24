@@ -583,6 +583,8 @@ el.innerHTML='<span style="font-weight:700;font-size:11.5px;color:#7A828E;white-
 el.addEventListener('click',e=>{const c2=e.target.closest('.wchip');if(c2&&window.openDetail)window.openDetail(c2.dataset.t);});
 /* Cham xuong la bat dau tai luon, khong doi nha tay -> tiet kiem ~150-300ms moi lan bam */
 el.addEventListener('pointerdown',e=>{const c2=e.target.closest('.wchip');if(c2)knDtNap(c2.dataset.t);},{passive:true});
+/* Re chuot qua chip (may tinh) la nap truoc -> bam vao hien ngay nhu FireAnt/AmiBroker */
+el.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const c2=e.target.closest('.wchip');if(c2)knDtNap(c2.dataset.t);},{passive:true});
 vd.insertBefore(el,vd.firstChild);
 }catch(e){}
 }
