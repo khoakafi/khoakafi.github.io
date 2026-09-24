@@ -6,7 +6,7 @@ let SUM = window.SUMMARY;
 try { const ls = localStorage.getItem('summary_v1'); if (ls) { const p = JSON.parse(ls); if (p && p.rows && p.rows.length > 500 && (p.updated||'') > ((window.SUMMARY&&window.SUMMARY.updated)||'')) { if (!p.tpn && window.SUMMARY.tpn) p.tpn = window.SUMMARY.tpn; if (!p.rows.some(r=>r.watch) && window.SUMMARY.rows.some(r=>r.watch)) { const wm={}; window.SUMMARY.rows.forEach(r=>{ if(r.watch) wm[r.t]=r; }); p.rows.forEach(r=>{ const w=wm[r.t]; if(w){ r.watch=1; r.wrng=w.wrng; r.wdb=w.wdb; r.wgrade=w.wgrade; } }); } SUM = p; } } } catch(e){}
 const BO_CUNG = new Set(['DCL','VC3','SSB','KHG','VPI']);
 // 24/09/2026 anh Khoa chot: chi con B* — bo B thuong, B!, Weak khoi watchlist (ban phat hanh cu van gui ca nhom do)
-SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t) || (r.watch && !(r.wstar===1 && r.wgrade!=='weak'))) r.watch=0; });
+SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t) || (r.watch && !(r.wstar===1 && r.wgrade!=='weak' && !(r.wrng < 5)))) r.watch=0; });   // nen < 5% -> engine ra B!, khong thanh B*
 if(SUM.tpn&&SUM.tpn.recent) SUM.tpn.recent=SUM.tpn.recent.filter(x=>!BO_CUNG.has(x.t));
 const ROWS = () => SUM.rows;
 const byT = {}; SUM.rows.forEach(r => byT[r.t] = r);
@@ -43,6 +43,15 @@ const pct = (x,d=1) => x==null||isNaN(x) ? '—' : (x>0?'+':'')+Number(x).toFixe
 const cls = x => x==null ? 'mut' : x>0 ? 'up' : x<0 ? 'down' : 'mut';
 const toast = m => { const t = $('#toast'); t.textContent = m; t.style.display='block'; setTimeout(()=>t.style.display='none', 3500); };
 const NOW = () => Math.floor(Date.now()/1000);
+/* Gio VN (UTC+7) bat ke may khach dat mui gio nao. ATO 9:00-9:15 va ATC 14:30-14:45: bang gia chi co GIA DU KHOP,
+   chua co khoi luong khop that -> KHONG coi la gia that: khong bao, khong ve mui ten, khong doi gia/% tren bang. */
+function knGioVN(){ const d = new Date(Date.now() + 7*3600e3); return { h: d.getUTCHours() + d.getUTCMinutes()/60, w: d.getUTCDay(), ngay: d.toISOString().slice(0,10) }; }
+function knDuKhop(){ const g = knGioVN(); if (g.w < 1 || g.w > 5) return null; if (g.h >= 9 && g.h < 9.25) return 'ATO'; if (g.h >= 14.5 && g.h < 14.75) return 'ATC'; return null; }
+/* Bang gia (liveQuote) da la phien HOM NAY chua — truoc lan khop dau tien nguon tra phien hom qua, %thay doi la cua hom qua. */
+function knGiaHomNay(){ return !!window.LIVE_DATE && String(window.LIVE_DATE).slice(0,10) === knGioVN().ngay; }
+window.knDuKhop = knDuKhop;
+/* Luat tin hieu: gia * TB KL 20 phien (GOM phien no) >= 15 ty. v20 cua bang = TB 20 phien den hom qua -> 19 phien cu ~ 19*v20. */
+function knDuTK(r, px, vol){ return !!(r && r.v20 && px > 0 && vol >= 0 && px*(19*r.v20 + vol)/20/1e6 >= 15); }
 
 const REV = ['isa3','isb27','isi64','nos689','nos693'], NPAT = ['isa22','isa20'];
 const pick = (row, codes) => { for (const c of codes) if (row[c]!=null) return row[c]; return null; };
@@ -906,6 +915,11 @@ async function liveQuote(){
       if (!row) { try { const _c = (d.pctChange!=null) ? +(+d.pctChange).toFixed(2) : null; const _x = XTRA[d.code];
         if (_x && _x.b === 'UP') { _x.p = d.close; _x.chg = _c; }
         else if (!_x && (d.floor === 'UPCOM' || d.floor === 'OTC') && d.type === 'STOCK') XTRA[d.code] = {t:d.code, b:'UP', n:'', p:d.close, chg:_c}; } catch(e){} return; }
+      const _dk = knDuKhop();
+      if (_dk === 'ATC' && row.__pNay === d.date) { n++; return; }            // ATC: giu gia khop lien tuc truoc 14:30
+      if (d.date === knGioVN().ngay && !(+d.nmVolume > 0)) {                    // chua khop lenh nao hom nay -> gia tham chieu, 0%
+        if (+d.basicPrice > 0) { row.p = +d.basicPrice; row.chg = 0; row.vx = 0; } n++; return; }
+      if (!_dk) row.__pNay = d.date;
       if (d.close!=null) { const _op=row.p; row.p = d.close; if (_op>0 && d.close>0) { const _k=d.close/_op; ['cap','pe','pb'].forEach(_f=>{ if (typeof row[_f]==='number' && isFinite(row[_f]) && row[_f]!==0) row[_f]=row[_f]*_k; }); } }
       if (d.pctChange!=null) row.chg = +(+d.pctChange).toFixed(2);
       if (row.v20 && d.nmVolume!=null) row.vx = +(d.nmVolume/row.v20).toFixed(6);
@@ -1042,13 +1056,9 @@ function bstarRecent(){
     rows.push({ t:d.t, bd:fmt(d.bdate), bdate:d.bdate, bp:+bp.toFixed(2), sp:+sp.toFixed(2), sd: open ? '—' : fmt(d.sdate), ret:+(open ? gross : gross-0.4).toFixed(1), open, buy:knBuyOf(d.t, d.bdate) });
   });
   // tín hiệu ★ mới trong phiên (đã qua scanNewSignals) — chỉ nhận nếu nền siết (a10/a30 < 0.6 tính trên 30 phiên trước hôm nay)
-  const tpn = SUM.tpn; const today = new Date().toISOString().slice(0,10);
+  const tpn = SUM.tpn; const today = knGioVN().ngay;
   ((tpn && tpn.recent) || []).filter(x => x.open && x.today && x.bdate === today).forEach(x => {
-    const p = BSTAR.px[x.t]; if (!p) return;
-    const c = p.ds.filter(d => d < today).map(d => p.mp[d]); if (c.length < 31) return;
-    const w10 = c.slice(-10), w30 = c.slice(-30);
-    const a10 = (Math.max(...w10)-Math.min(...w10))/Math.min(...w10), a30 = (Math.max(...w30)-Math.min(...w30))/Math.min(...w30);
-    if (!(a30 > 0) || a10/a30 >= 0.6) return;
+    if (!(byT[x.t] && byT[x.t].watch)) return;   // watch da loc: B* (nen chat, MA50, co ban dat, nen >= 5%)
     if (rows.some(r => r.t === x.t && r.open)) return;
     rows.unshift({ t:x.t, bd:x.bd, bdate:x.bdate, bp:x.bp, sp:x.bp*(1+x.ret/100), sd:'—', ret:x.ret, open:true, today:true, buy:(byT[x.t] && byT[x.t].wbuy) || null });
   });
@@ -1322,7 +1332,7 @@ function mergeLiveDeals(){
   store.forEach(x => {
     if (BO_CUNG.has(x.t)) return;
     if (tpn.recent.some(y => y.t === x.t && y.bdate === x.bdate)) return;
-    tpn.recent.unshift({t:x.t, bd:x.bd, bdate:x.bdate, bp:x.bp, sd:'—', ret:-0.15, open:true});
+    tpn.recent.unshift({t:x.t, bd:x.bd, bdate:x.bdate, bp:x.bp, sd:'—', ret:-0.15, open:true, today: x.bdate === knGioVN().ngay ? 1 : 0});
   });
   saveLiveDeals(store);
 }
@@ -1427,13 +1437,14 @@ function __nenOk(t){
 }
 function scanNewSignals(){
   const tpn = SUM.tpn; if (!tpn || !tpn.recent) return;
-  const now = new Date();
-  const dstr = ('0'+now.getDate()).slice(-2)+'/'+('0'+(now.getMonth()+1)).slice(-2)+'/'+String(now.getFullYear()).slice(2);
-  const biso = now.toISOString().slice(0,10);
-  const qualify = t => { if (BO_CUNG.has(t)) return false; const r = byT[t]; if (!r) return false;
+  // ATO/ATC chi co gia du khop; bang gia chua phai phien hom nay (truoc khop lenh dau, ngay nghi) -> khong xet
+  if (knDuKhop() || !knGiaHomNay()) return;
+  const biso = knGioVN().ngay;
+  const dstr = biso.slice(8,10)+'/'+biso.slice(5,7)+'/'+biso.slice(2,4);
+  const qualify = t => { if (BO_CUNG.has(t)) return false; const r = byT[t]; if (!r || !r.watch) return false;   // watch = da loc chi con B*
     const g = (window.SIGS && window.SIGS.trig && window.SIGS.trig[t]) || null; if (!g) return false;
     if (!__nenOk(t)) return false;
-    return r.p != null && r.p >= g[0] && r.vx != null && r.v20 && (r.vx * r.v20) >= g[1]; };
+    return r.p != null && r.p >= g[0] && r.vx != null && r.v20 && (r.vx * r.v20) >= g[1] && knDuTK(r, r.p, r.vx * r.v20); };
   // tin hieu trong phien rot chuan -> tu rut khoi bang + so
   tpn.recent = tpn.recent.filter(x => !(x.today && x.bdate === biso && !qualify(x.t)));
   const ddB = __ngayBep(); let store = loadLiveDeals().filter(x => !(x.bdate === biso && !qualify(x.t)) && (!ddB || x.bdate > ddB));
@@ -1455,7 +1466,7 @@ function checkWatchAlerts(){
        W4  : tang >= 4%  — nong may (W2 da bao van bao them W4 vi la nguong moi)
        NEAR: gia cham 98.5% diem kich hoat nhung chua vuot — sat diem mua */
   try {
-    if (!liveWatch.inSession()) return;
+    if (!liveWatch.inSession() || knDuKhop() || !knGiaHomNay()) return;   // ATO/ATC gia du khop, hoac bang gia con la phien truoc
     ROWS().forEach(r=>{
       if (!r.watch || r.wgrade === 'weak' || r.chg == null) return;
       if (knDangGiu(r.t)) return;                    // da mua roi -> khong bao "sat diem mua" lan nua
@@ -2066,7 +2077,7 @@ function renderMatch(){
           const prev = window.__vpsQ; window.__vpsQ = q;
           const kl = (+q.lot || 0) * 10, ref = +q.r || 0, p = +q.lastPrice;
           const row = byT[curT], nb = curOhlc.t.length;
-          if (row && row.v20 && liveVolOf(curT, curOhlc.t[nb-1]) !== null) {
+          if (row && row.v20 && !knDuKhop() && kl > 0 && liveVolOf(curT, curOhlc.t[nb-1]) !== null) {
             const base = ref > 0 ? ref : curOhlc.c[nb-2];
             row.p = p;
             if (base > 0) row.chg = +((p / base - 1) * 100).toFixed(2);
@@ -2254,10 +2265,10 @@ window.__rebuildBadges = function(){
     const daCoTinHieu = out.some(b => b.i === n-1 && b.below);
     // Mui ten trong phien: cung cua voi cuoi phien (nen/co ban phai dat) va phan biet B\u2605 / B theo co wstar cua bep
     // Ma "mong" (TB20 10-15 ty): luat tin hieu can TB20 gom ca phien nay >= 15 ty -> uoc tinh (19 phien cu + phien nay) truoc khi ve
-    const duTK = !r.wmong || (r.val20 != null && ((r.val20/1000)*19 + px*lv/1e6)/20 >= 15);
+    const duTK = knDuTK(r, px, lv);   // cung cong thuc voi thong bao (scanNewSignals)
     const laSao = (r.wstar === 1) && r.watch;
     if (g && lv != null && px != null && laSao && !daCoTinHieu && !knDangGiu(curT) && nenKhopMa() && duTK
-        && liveWatch.inSession() && px >= g[0] && lv >= g[1]
+        && liveWatch.inSession() && !knDuKhop() && knGiaHomNay() && px >= g[0] && lv >= g[1]
         && (typeof __nenOk !== 'function' || __nenOk(curT))) {
       const sao = (r.wstar === 1) || (((window.SUMMARY||{}).rows||[]).some(x => x && x.t === curT && x.wstar === 1));
       out.push({ i: n-1, below: true, text: (sao ? (r.wbuy ? '\u25B2 Buy ' + r.wbuy + '%' : '\u25B2 B\u2605') : '\u25B2 B') + (r.wmong ? ' mỏng' : ''), color: '#18a34b',
@@ -2917,14 +2928,14 @@ function computeTPN(oh, boardCode, qsAv){
   // Tin hieu tinh san tren may phat hanh, cong bo qua signals_data.js — trinh duyet chi hien thi
   const S = (window.SIGS && window.SIGS.t && window.SIGS.t[curT]) || null;
   const markers = [];
-  if (S && S.m) knChiSao(S.m).forEach(x => {
+  if (S && S.m && !BO_CUNG.has(curT)) knChiSao(S.m).forEach(x => {   // ma cam: khong ve B*
     const ts = x[0], k = x[1], tx = x[2];
     if (k === 'S') markers.push({time: ts, position:'aboveBar', color:'#e5484d', shape:'arrowDown', text: tx || ''});
     else { const MP = {B:['#18a34b','BUY'], X:['#18a34b','BUY\u2605'], T:['#b45309','THIN'], A:['#67c98b','ADD'], W:['#b45309','WEAK']};
       const mm = MP[k] || MP.B;
       markers.push({time: ts, position:'belowBar', color: mm[0], shape:'arrowUp', text: mm[1], buy: (k === 'X' && tx > 0) ? +tx : null}); }
   });
-  let _st = knStSao(S);
+  let _st = BO_CUNG.has(curT) ? null : knStSao(S);
   // Ma nam trong vung theo doi nhung bep chua kem trang thai -> dung ngay nguong da cong bo
   if (!_st) { try {
     const _r = byT[curT] || {};
@@ -3686,7 +3697,7 @@ inits.watch = function(){
 // ===== TRỰC CHIẾN TRONG PHIÊN: poll giá realtime các mã vùng theo dõi, báo khi bùng nổ =====
 const liveWatch = {
   timer: null, list: [],
-  inSession(){ const h = new Date().getHours()+new Date().getMinutes()/60; const d = new Date().getDay(); return d>=1 && d<=5 && ((h>=9 && h<11.5) || (h>=13 && h<14.83)); },
+  inSession(){ const g = knGioVN(), h = g.h, d = g.w; return d>=1 && d<=5 && ((h>=9 && h<11.5) || (h>=13 && h<14.83)); },
   paint(){ const b = document.getElementById('btnLive'), st = document.getElementById('liveSt'); if(!b) return;
     b.classList.toggle('active', !!this.timer);
     b.textContent = this.timer ? 'Đang trực chiến — bấm để tắt' : 'Bật trực chiến trong phiên';
@@ -3727,12 +3738,15 @@ const liveWatch = {
   async tick(){
     const st = document.getElementById('liveSt');
     if (!this.inSession()) { if (st) st.textContent = 'Ngoài giờ giao dịch — chờ phiên sau (quét tự động 9:00-11:30, 13:00-14:50).'; return; }
+    const dk = knDuKhop();
+    if (dk) { if (st) st.textContent = dk + ' — bảng giá chỉ có giá dự khớp, chưa khớp thật. Tạm dừng báo, quét lại sau ' + (dk === 'ATO' ? '9:15.' : '14:45.'); return; }
     const now = NOW(); let hot = 0;
-    const h = new Date().getHours()+new Date().getMinutes()/60;
+    const h = knGioVN().h;
     const elapsed = Math.max(0.08, Math.min(1, (h<11.5 ? (h-9) : (h<13 ? 2.5 : 2.5+(h-13))) / 4.33));
     const one = async m => { try {
       const d = await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${m.t}&resolution=D&from=${now-86400*7}&to=${now}`);
       const c = d.c||[], v = d.v||[]; if (c.length < 2) return;
+      if (new Date((d.t[d.t.length-1] + 7*3600)*1000).toISOString().slice(0,10) !== knGioVN().ngay) return;   // chua co nen hom nay -> c cuoi la hom qua
       const px = c[c.length-1], chg = (px/c[c.length-2]-1)*100;
       const volR = m.v20 ? (v[v.length-1]/elapsed)/m.v20 : 0;
       const rw = byT[m.t]; if (rw) { rw._lv = chg; rw._lvv = volR; }
