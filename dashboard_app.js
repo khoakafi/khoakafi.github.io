@@ -1017,7 +1017,9 @@ async function bstarLoadPrices(onlyOpen){
   const khoa = 'v2';
   const phienTruoc = knNgayStr(knPhienTruoc(new Date(Date.now() + 7*3600*1000)));
   const kho = knDocCache(KN_BS_KHO, khoa) || {};
-  const conTot = r => r && r.lastd && r.lastd >= phienTruoc && r.mp && r.ds && r.ds.length > 100;
+  // Du lich su = bat dau tu thang 12 nam truoc (may phat hanh giu tu 01/12). Truoc: 'ds.length > 100' -> thang 1 den ~cuoi thang 4 moi nam
+  // bstar_live.js luon bi bo qua, trang dau hien 'dang tinh'.
+  const conTot = r => r && r.lastd && r.lastd >= phienTruoc && r.mp && r.ds && r.ds.length > 15 && r.ds[0] <= (y-1)+'-12-15';
   /* 0) Gia nuong san tu may phat hanh (bstar_live.js, scripts/bstar-live.js): co va con moi thi
         dung ngay -> 602% hien tuc thi ke ca tab an danh, khong phai "dang tinh". */
   try { const L = window.BSTAR_LIVE && window.BSTAR_LIVE.px;

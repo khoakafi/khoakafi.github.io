@@ -82,6 +82,7 @@
       }));
     }
     if(!px.VNINDEX) throw new Error('khong co VN-Index'+(hong.length?' ('+hong.join('; ')+')':''));
+    if(hong.length>syms.length*0.3) throw new Error('hong '+hong.length+'/'+syms.length+' ma — khong ghi de file tot bang file thieu');   // giong run.mjs
     var out={as_of:px.VNINDEX.lastd, ghi_luc:new Date().toISOString(), px:px};
     await putFile(tok,'bstar_live.js','window.BSTAR_LIVE='+JSON.stringify(out)+';\n','[AUTO] gia B* '+new Date().toISOString().slice(0,10));
     return {so:Object.keys(px).length, tong:syms.length, hong:hong, as_of:out.as_of};
@@ -135,7 +136,7 @@
     var lc=lastCloseMs(); if(!lc) return;
     if(sigsMs()<lc) return;                                   // tin hieu hom nay chua co -> run() lo
     if(+(ls('kafi_lastlive')||0)>=lc) return;
-    var L=window.BSTAR_LIVE; if(L&&L.as_of&&Date.parse(L.as_of+'T08:45:00+07:00')>=lc){ lsSet('kafi_lastlive',String(Date.now())); return; }
+    var L=window.BSTAR_LIVE; if(L&&L.as_of&&Date.parse(L.as_of+'T08:45:00Z')>=lc){ /* lc = 08:45 UTC nhu lastCloseMs; truoc ghi +07:00 -> khong bao gio khop, nuong lai moi ngay */ lsSet('kafi_lastlive',String(Date.now())); return; }
     var lk=+(ls('kafi_live_lock')||0); if(Date.now()-lk<300000) return;
     lsSet('kafi_live_lock',String(Date.now()));
     try{ badge('Đang nướng giá B★ năm nay…','#b45309'); var kq=await phatHanhBstarLive(ls(TOKK)); lsSet('kafi_lastlive',String(Date.now()));
