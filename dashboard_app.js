@@ -2358,7 +2358,11 @@ function loadProChart(){
   if (!window.LightweightCharts) { toast('Không tải được thư viện chart'); return; }
   proLoadedFor = curT;
   const wrap = document.getElementById('chartProWrap');
-  wrap.innerHTML = '<div id="proK" style="position:relative">'
+  /* Doi ma: GIU NGUYEN khung (chieu cao da canh theo man hinh), chi thay chart ben trong.
+     Truoc day dung lai innerHTML moi lan -> khung ve 360px roi nhay lai ~479px: giat khi bam sang ma khac. */
+  const _k0 = document.getElementById('proK');
+  const giuKhung = !!(_k0 && wrap.contains(_k0) && document.getElementById('proPx') && document.getElementById('proVolPane'));
+  if (!giuKhung) wrap.innerHTML = '<div id="proK" style="position:relative">'
     + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas></div>'
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
     + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
@@ -2372,7 +2376,7 @@ function loadProChart(){
     autoSize: true,
     layout: { background: { color: '#ffffff' }, textColor: '#787B86', fontSize: 12 },
     grid: { horzLines: { color: '#F0F3FA' }, vertLines: { color: '#F0F3FA' } },
-    rightPriceScale: { borderColor: '#DDE1E6', ticksVisible: false },
+    rightPriceScale: { borderColor: '#DDE1E6', ticksVisible: false, minimumWidth: 72 },   // co dinh be rong truc gia -> doi ma khong xo lech chart
     timeScale: { borderColor: '#DDE1E6', rightOffset: 2, barSpacing: 9, timeVisible: false },
     crosshair: { mode: 0,
       horzLine: { color: '#9598A1', labelBackgroundColor: '#131722' },
@@ -2409,9 +2413,9 @@ function loadProChart(){
       ts.setVisibleLogicalRange({ from: r.from + d, to: r.to + d });
     } catch(x){}
   };
-  try {
-    document.getElementById('proPx').addEventListener('wheel', __wheelPan, { capture: true, passive: false });
-    document.getElementById('proVolPane').addEventListener('wheel', __wheelPan, { capture: true, passive: false });
+  try { window.__knWheelPan = __wheelPan;   // khung giu qua cac ma -> chi gan su kien 1 lan, goi ham cua chart hien tai
+    ['proPx','proVolPane'].forEach(function(id){ const el = document.getElementById(id); if (el && !el.__knWheel) { el.__knWheel = 1;
+      el.addEventListener('wheel', function(e){ if (window.__knWheelPan) window.__knWheelPan(e); }, { capture: true, passive: false }); } });
   } catch(e){}
   proCandle = proChart.addCandlestickSeries({ upColor: UP, downColor: DOWN, borderUpColor: UP, borderDownColor: DOWN, wickUpColor: UP, wickDownColor: DOWN });
   const n0 = curOhlc.t.length - 1;
@@ -2505,7 +2509,9 @@ function loadProChart(){
   };
   window.__paintBadges = paintBadges;
   proChart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(paintBadges));
-  try { new ResizeObserver(() => { requestAnimationFrame(paintBadges); alignScales(); }).observe(document.getElementById('proPx')); } catch(e){}
+  window.__knAlign = alignScales;
+  try { const _pe = document.getElementById('proPx'); if (!_pe.__knRO) { _pe.__knRO = 1;
+    new ResizeObserver(() => { if (window.__paintBadges) requestAnimationFrame(window.__paintBadges); if (window.__knAlign) window.__knAlign(); }).observe(_pe); } } catch(e){}
   addProBadges();
   const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 }); } catch(e){} };
   __setRange(); setTimeout(__setRange, 150); setTimeout(__setRange, 600);
@@ -2827,7 +2833,8 @@ async function loadDetail(t){
   try {
     const _w = veNgay ? null : document.getElementById('chartProWrap');
     if (_w) {
-      _w.style.opacity = '.45';
+      clearTimeout(window.__knMoCho);   // chi lam mo khi tai lau (> 250ms); tai nhanh thi doi thang, khong nhap nhay
+      window.__knMoCho = setTimeout(function(){ if (!curOhlc) { _w.style.transition = 'opacity .15s'; _w.style.opacity = '.45'; } }, 250);
       /* Chốt chặn: mạng hỏng / tab bị treo giữa chừng cũng không để chart mờ mãi */
       clearTimeout(window.__knMoTimer);
       window.__knMoTimer = setTimeout(function(){ try { _w.style.opacity = ''; } catch(e){} }, 8000);
@@ -2856,7 +2863,7 @@ async function loadDetail(t){
     /* Ban cu qua han: ve bang ban cu cho muot, dong thoi tai lai ngam cho lan sau. */
     if (Date.now() - _kho.ohTs >= KN_DT_TTL) { _kho.ohTs = 0; knDtTai(t, isX).catch(function(){}); }
     setTimeout(function(){ knDtNapKeBen(t); }, 1200);
-    try { clearTimeout(window.__knMoTimer); const _w = document.getElementById('chartProWrap'); if (_w) _w.style.opacity = ''; } catch(e){}
+    try { clearTimeout(window.__knMoTimer); clearTimeout(window.__knMoCho); const _w = document.getElementById('chartProWrap'); if (_w) _w.style.opacity = ''; } catch(e){}
     // du lieu quy as-of (theo ngay cong bo) — dung cho ca bang KPI va engine tin hieu
     const qsAv = [];
     qs.forEach(q => {
