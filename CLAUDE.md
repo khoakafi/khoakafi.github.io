@@ -113,6 +113,24 @@ Watchlist có `wbuy` (nếu nổ phiên tới). Web/app: `knBuyOf(t, bdate)`, `k
 mũi tên trong phiên chỉ vẽ cho mã B★. **Engine vẫn tính B/B!/W như cũ** (B/B! chưa từng chặn B★ nào → tập B★ không đổi).
 Engine `wstar` thêm điều kiện giá nổ > MA50 (như luật X).
 
+### Rà soát toàn hệ thống 24–25/09/2026 (lỗi kiểu "PET": luật một đằng, watchlist/thông báo một nẻo)
+
+Đã sửa (có test — kafi-core `sh test/chay.sh`, web: Chromium đồng hồ giả + API giả):
+- **Giá dự khớp ATO (9:00–9:15) / ATC (14:30–14:45)** và **bảng giá còn là phiên trước** (trước khớp lệnh đầu, ngày nghỉ):
+  không báo, không vẽ mũi tên (`knDuKhop`, `knGiaHomNay`; push-scan `duKhop`, `duLieuMoi`). Giờ phiên theo **giờ VN**, không theo máy khách.
+- **Thông báo "TÍN HIỆU MUA" bỏ qua luật 15 tỷ gồm phiên nổ** (mã mỏng) → `knDuTK` / push-scan `duTK`, dùng `trig[4]` = tổng KL 19 phiên.
+- **push-scan gửi cả mã không phải B★** (MSN, ACB, VCB…) → `laSao()` lọc như web. Dry-run không ghi state. Tổng kết 14:48 quét lại giá đóng cửa (nổ ở ATC).
+- **Ngưỡng trig lệch luật**: giá làm tròn xuống (79/680 mã), KL 2× thay vì S19/9 (~2,11×), MA50 chỉ thử ở giá tối thiểu (bỏ sót VCG 29/06/2026),
+  nền < 5% vẫn gắn ★ (engine ra B!). Engine nay công bố `trig = [giá B★, KL, giá sắp tới, KL sắp tới, S19, giá nổ thường]`, test ngẫu nhiên 0 lỗi.
+- **Danh sách mã tự co lại** (mã lỗi tải bị xoá, không bao giờ quay lại: CMG, BTP, CDC, AME, V21, APH, VSA từ 07/09) → giữ bản cũ khi lỗi,
+  danh sách = bản trước ∪ `SEC_MAP`, sàn lấy từ bảng giá VNDirect. **BCTC lỗi không còn = "đạt"**. Ngân hàng có doanh thu (`isb38`).
+  Chặn phát hành khi dấu X lịch sử tụt > max(4, 3%). `SIGS.asof`/`SUMMARY.asof` = ngày nến thật.
+- Tab Chi tiết mã: watchlist + khung hiện ngay (trước 2,4 s). `bstar_live.js` dùng được cả tháng 1–4.
+
+**Còn mở (đổi lịch sử tín hiệu → cần anh Khoa quyết):** (1) lọc GTGD dùng giá đã điều chỉnh cổ tức → deal cũ tự biến mất (DGC, PTB);
+(2) `npYAt` để quý mới nhất có npY null đè giá trị cũ → coi là "đạt"; (3) lỗ → lãi (n0<0, n1>0) có thể rơi vào dải 0–25% → W;
+(4) ghi sổ tín hiệu kiểu append-only để giá điều chỉnh không xoá được dấu cũ.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
