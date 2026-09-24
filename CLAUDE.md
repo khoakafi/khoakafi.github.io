@@ -78,7 +78,11 @@ cap, dte, gm, dy) mà autorun vẫn PUT vì chỉ kiểm độ dài file; tab Ch
   Phát hành lại 22/09 15:09 (run 20): MSB về "HẠNG YẾU", HHP/BCM/ORS biến mất, hero +602.2% / 126 deal hiện ngay (bstar_live as_of 22/09).
   **Lệch nguồn đã biết:** ngày "as-of" BCTC lấy `createdDate` của VNDirect (ngày họ nhập), không phải ngày công bố như vietcap →
   11 marker cũ (2021–2026) đổi W↔B/X quanh ngày ra BCTC (REE, EIB, PVP, VHM, KHG, IJC, CSV, DCM, PVS, CTI). Không đụng deal B★ 2026
-  và số hero; chỉ lịch sử tín hiệu từng mã lệch vài chỗ. Chưa có nguồn ngày công bố chính thức thay thế.
+  và số hero; chỉ lịch sử tín hiệu từng mã lệch vài chỗ.
+  **Đã xác minh 24/09 (console Chrome anh Khoa trên trading.vietcap.com.vn):** `publicDate` của vietcap là ngày ra bản
+  **kiểm toán năm / soát xét bán niên** (Q4 → 11–24/03, Q2 → 05–22/08), còn VNDirect ghi ngày ra **BCTC quý đầu tiên**
+  (Q4 → 23–24/01, Q2 → 22–30/07). Số quý đã công khai từ ngày VNDirect → **VNDirect đúng hơn**; lịch sử kiểu vietcap dùng
+  số trễ 1–2 tháng. 5 deal 2025 (REE 19/02, IJC 10/03, CSV 23/07, DCM 06/08, PVS 08/08) nổ giữa hai mốc → vietcap ra W, VNDirect ra X.
 
 ### Hai máy phát hành (sửa lại ghi chú cũ)
 
