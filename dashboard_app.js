@@ -1459,7 +1459,7 @@ function scanNewSignals(){
     if (tpn.recent.some(x => x.t === r.t && (x.open || x.bdate === biso))) return;
     const nd = {t:r.t, bd:dstr, bdate:biso, bp:+(+r.p).toFixed(2), sd:'—', ret:-0.15, open:true, today:1};
     tpn.recent.unshift(nd);
-    notifyPush('SIG'+r.t+biso, r.t+' — TÍN HIỆU MUA KÍCH HOẠT', 'Cây bùng nổ đạt chuẩn kèm dòng tiền tại giá '+nd.bp+'. Mở dashboard xem chi tiết.', 0, r.t+' KÍCH HOẠT MUA');
+    notifyPush('SIG'+r.t, r.t+' — TÍN HIỆU MUA KÍCH HOẠT', 'Cây bùng nổ đạt chuẩn kèm dòng tiền tại giá '+nd.bp+'. Mở dashboard xem chi tiết.', 0, r.t+' KÍCH HOẠT MUA');
     if (!store.some(x => x.t === r.t && x.bdate === biso)) store.push({t:r.t, bd:dstr, bdate:biso, bp:nd.bp});
   });
   saveLiveDeals(store);
