@@ -108,6 +108,10 @@ Engine gắn `m[2]` vào dấu X: nền siêu chặt (biên độ 10 phiên ≤ 
 (TB KL 10 phiên < 0,8 × TB 50 phiên) → 50; chỉ siêu chặt → 25; còn lại → 12.5 (% vốn cuối năm trước, như đường B★).
 Watchlist có `wbuy` (nếu nổ phiên tới). Web/app: `knBuyOf(t, bdate)`, `knBuyTag`, `.knBuy`. Số nghiên cứu: kafi-core
 `research/sizing_exact.mjs` (sổ cũ: 614,5% → 1.311%, sụt −9,05% → −11,1%). **Đường B★ và con số hero vẫn tính mỗi deal 25%.**
+**Chỉ còn B★ (24/09, anh Khoa chốt):** web/app bỏ B, B!, Weak — `knChiSao(m)` lọc dấu (giữ X và A/S của chính vị thế X),
+`knStSao` bỏ chip Weak/Hạng yếu/vị thế B, watchlist chỉ giữ `wstar===1 && wgrade!=='weak'` (lọc ngay lúc nạp `SUM.rows`),
+mũi tên trong phiên chỉ vẽ cho mã B★. **Engine vẫn tính B/B!/W như cũ** (B/B! chưa từng chặn B★ nào → tập B★ không đổi).
+Engine `wstar` thêm điều kiện giá nổ > MA50 (như luật X).
 
 ## Số hiệu suất B★ tính ở đâu
 

@@ -365,11 +365,9 @@
       + '<div class="knCap"><b id="knDealCap">Tín hiệu B★</b><span id="knDealSum"></span></div>'
       + '<div class="knCard"><div class="knDealHd"><span>MÃ · MUA</span><span>GIÁ MUA</span><span>GIÁ BÁN</span><span>LỢI SUẤT</span></div><div id="knDeals"></div></div>',
     watch: '<div class="knKpis" id="knWKpi"></div>'
-      + '<div class="knChips" id="knWChips" style="padding-top:0"><button class="knChip on" data-f="all">Tất cả</button><button class="knChip" data-f="star">★ Nền thắt chặt</button><button class="knChip" data-f="up">Tăng giá</button><button class="knChip" data-f="vol">KL đột biến</button></div>'
+      + '<div class="knChips" id="knWChips" style="padding-top:0"><button class="knChip on" data-f="all">Tất cả</button><button class="knChip" data-f="star">Buy 50%</button><button class="knChip" data-f="up">Tăng giá</button><button class="knChip" data-f="vol">KL đột biến</button></div>'
       + '<div class="knCard"><div class="knColHd"><span>MÃ · KL SO TB20</span><span>1 THÁNG</span><button class="knSort" id="knWSort">% ngày ▾</button></div><div id="knWList"></div></div>'
-      + '<div class="knCap"><b>FA chưa đạt yêu cầu</b><span id="knWWeakN"></span></div>'
-      + '<div class="knCard"><div id="knWWeak"></div></div>'
-      + '<p class="knNote" id="knWNote">Đạt nền kỹ thuật nhưng FA chưa đạt — chỉ theo dõi, chưa phải mã mua.</p>',
+      + '<p class="knNote" id="knWNote">Chỉ còn mã B★ (nền thắt chặt, cơ bản đạt). Buy 50% / 25% / 12.5% = tỷ trọng nếu nổ phiên tới, tính trên vốn cuối năm trước.</p>',
     compare: '<div class="knSegW"><div class="knSeg" id="knVSeg"><button class="on" data-g="bank">Ngân hàng</button><button data-g="sec">Chứng khoán</button></div></div>'
       + '<div class="knCap" style="margin-top:8px"><b>ROE so với P/B hiện tại</b><span>trên-trái: rẻ mà tốt</span></div>'
       + '<div class="knCard" id="knVScat"></div>'
@@ -647,18 +645,16 @@
   function shortName(n){ return String(n || '').replace(/^(Tổng Công ty Cổ phần|Công ty Cổ phần|Tổng Công ty|Ngân hàng TMCP|Ngân hàng Thương mại Cổ phần|Công ty TNHH|Tập đoàn|Công ty)\s+/i, '').replace(/\s+[–-]\s+Công ty.*$/i, '').trim(); }
   function renderWatch(){
     var W = watchRows(); var S = W.strong;
-    var list = S.filter(function(r){ return wF === 'all' || (wF === 'star' && r.star) || (wF === 'up' && r.chg > 0) || (wF === 'vol' && r.pkl >= 150); }).sort(SORTS[wS][1]);
+    var list = S.filter(function(r){ return wF === 'all' || (wF === 'star' && r.buy === 50) || (wF === 'up' && r.chg > 0) || (wF === 'vol' && r.pkl >= 150); }).sort(SORTS[wS][1]);
     var el = document.getElementById('knWList'); if (!el) return;
     el.innerHTML = list.length ? list.map(function(r){ return rowHtml(r); }).join('') : '<p class="knNote" style="padding:14px 0">Không có mã nào trong nhóm này hôm nay.</p>';
     document.getElementById('knWSort').textContent = SORTS[wS][0] + ' ▾';
-    document.getElementById('knWWeak').innerHTML = W.weak.length ? W.weak.map(function(r){ return rowHtml(r, true); }).join('') : '<p class="knNote" style="padding:14px 0">Không có.</p>';
-    document.getElementById('knWWeakN').textContent = W.weak.length + ' mã';
-    var nStar = S.filter(function(r){ return r.star; }).length, nVol = S.filter(function(r){ return r.pkl >= 150; }).length;
+    var nStar = S.filter(function(r){ return r.buy === 50; }).length, nVol = S.filter(function(r){ return r.pkl >= 150; }).length;
     var K = KN(); var up = (K && K.SUM && K.SUM.updated || '').slice(0,10); var lab = up ? up.slice(8,10) + '/' + up.slice(5,7) : '';
     document.getElementById('knWKpi').innerHTML = '<div class="knKpi"><div class="l">MUA ĐƯỢC</div><div class="v">' + S.length + '</div><div class="s">đạt nền' + (lab ? ' ' + lab : '') + '</div></div>'
-      + '<div class="knKpi"><div class="l">★ THẮT CHẶT</div><div class="v">' + nStar + '</div><div class="s">ưu tiên theo dõi</div></div>'
+      + '<div class="knKpi"><div class="l">BUY 50%</div><div class="v">' + nStar + '</div><div class="s">siêu chặt + KL cạn</div></div>'
       + '<div class="knKpi"><div class="l">KL ĐỘT BIẾN</div><div class="v">' + nVol + '</div><div class="s">≥150% TB20</div></div>';
-    var note = document.getElementById('knWNote'); if (note && lab) note.textContent = 'Đạt nền kỹ thuật nhưng FA chưa đạt — chỉ theo dõi, chưa phải mã mua. Số liệu phiên ' + lab + '.';
+    var note = document.getElementById('knWNote'); if (note && lab) note.textContent = 'Chỉ còn mã B★ (nền thắt chặt, cơ bản đạt). Buy 50% / 25% / 12.5% = tỷ trọng nếu nổ phiên tới, tính trên vốn cuối năm trước. Số liệu phiên ' + lab + '.';
   }
   /* Sparkline 1 tháng: 22 phiên đóng cửa mỗi mã, tải 6 mã một lượt, cache theo phiên */
   function loadSparks(){

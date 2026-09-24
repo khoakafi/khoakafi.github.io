@@ -5,7 +5,8 @@
 let SUM = window.SUMMARY;
 try { const ls = localStorage.getItem('summary_v1'); if (ls) { const p = JSON.parse(ls); if (p && p.rows && p.rows.length > 500 && (p.updated||'') > ((window.SUMMARY&&window.SUMMARY.updated)||'')) { if (!p.tpn && window.SUMMARY.tpn) p.tpn = window.SUMMARY.tpn; if (!p.rows.some(r=>r.watch) && window.SUMMARY.rows.some(r=>r.watch)) { const wm={}; window.SUMMARY.rows.forEach(r=>{ if(r.watch) wm[r.t]=r; }); p.rows.forEach(r=>{ const w=wm[r.t]; if(w){ r.watch=1; r.wrng=w.wrng; r.wdb=w.wdb; r.wgrade=w.wgrade; } }); } SUM = p; } } } catch(e){}
 const BO_CUNG = new Set(['DCL','VC3','SSB','KHG','VPI']);
-SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t)) r.watch=0; });
+// 24/09/2026 anh Khoa chot: chi con B* — bo B thuong, B!, Weak khoi watchlist (ban phat hanh cu van gui ca nhom do)
+SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t) || (r.watch && !(r.wstar===1 && r.wgrade!=='weak'))) r.watch=0; });
 if(SUM.tpn&&SUM.tpn.recent) SUM.tpn.recent=SUM.tpn.recent.filter(x=>!BO_CUNG.has(x.t));
 const ROWS = () => SUM.rows;
 const byT = {}; SUM.rows.forEach(r => byT[r.t] = r);
@@ -2254,7 +2255,8 @@ window.__rebuildBadges = function(){
     // Mui ten trong phien: cung cua voi cuoi phien (nen/co ban phai dat) va phan biet B\u2605 / B theo co wstar cua bep
     // Ma "mong" (TB20 10-15 ty): luat tin hieu can TB20 gom ca phien nay >= 15 ty -> uoc tinh (19 phien cu + phien nay) truoc khi ve
     const duTK = !r.wmong || (r.val20 != null && ((r.val20/1000)*19 + px*lv/1e6)/20 >= 15);
-    if (g && lv != null && px != null && !daCoTinHieu && !knDangGiu(curT) && nenKhopMa() && duTK
+    const laSao = (r.wstar === 1) && r.watch;
+    if (g && lv != null && px != null && laSao && !daCoTinHieu && !knDangGiu(curT) && nenKhopMa() && duTK
         && liveWatch.inSession() && px >= g[0] && lv >= g[1]
         && (typeof __nenOk !== 'function' || __nenOk(curT))) {
       const sao = (r.wstar === 1) || (((window.SUMMARY||{}).rows||[]).some(x => x && x.t === curT && x.wstar === 1));
@@ -2884,23 +2886,46 @@ let __ixSD=null, __ixSI=null;
 function __ixMA50S(ts){ if(!__ixSD||!__ixSI) return null; const j2=__ixSI[ts]; if(j2==null||j2<49) return null; let s2=0; for(let k2=j2-49;k2<=j2;k2++) s2+=__ixSD.c[k2]; return {c:__ixSD.c[j2], ma:s2/50}; }
 function starTPN(mk, oh){ /* da tinh san tren may phat hanh */ }
 // ===== Khoa Nguyen Signal engine v2 =====
+/* 24/09/2026: chi hien B*. Giu dau X va A/S cua chinh vi the X; bo B, B! (T), Weak (W) va A/S cua vi the B/B!.
+   Engine khong doi (B/B! chua tung chan mot B* nao — research vong 2) nen tap B* va con so hieu suat giu nguyen. */
+function knChiSao(m){
+  const out = []; let moSao = null;
+  (m || []).forEach(x => { const k = x[1];
+    if (k === 'X') { moSao = true; out.push(x); }
+    else if (k === 'B' || k === 'T') moSao = false;
+    else if (k === 'A') { if (moSao) out.push(x); }
+    else if (k === 'S') { if (moSao) out.push(x); moSao = null; } });
+  return out;
+}
+function knStSao(S){
+  const st = S && S.st; if (!st || !st.c) return null;
+  const c0 = String(st.c[0]).toUpperCase();
+  if (c0.indexOf('YẾU') >= 0 || c0.indexOf('WEAK') >= 0) return null;
+  if (c0.indexOf('TÍN HIỆU MUA') >= 0 || c0.indexOf('ĐANG NẮM GIỮ') >= 0) {   // vi the dang mo phai la B*
+    let k = null; const m = S.m || []; for (let i = m.length - 1; i >= 0; i--) { const q = m[i][1]; if (q === 'X' || q === 'B' || q === 'T') { k = q; break; } }
+    return k === 'X' ? st : null; }
+  if (c0.indexOf('CHỜ ĐIỂM MUA') >= 0) { const r = byT[curT] || {}; if (!(r.watch && r.wstar === 1)) return null;
+    if (!r.wbuy) return st; const them = ' Nếu nổ: Buy ' + r.wbuy + '% tài khoản.';
+    return Object.assign({}, st, { c: [st.c[0] + ' · BUY ' + r.wbuy + '%', st.c[1], st.c[2]], dL: (st.dL || '') + them, dA: (st.dA || '') + them }); }
+  return st;
+}
 function computeTPN(oh, boardCode, qsAv){
   // Tin hieu tinh san tren may phat hanh, cong bo qua signals_data.js — trinh duyet chi hien thi
   const S = (window.SIGS && window.SIGS.t && window.SIGS.t[curT]) || null;
   const markers = [];
-  if (S && S.m) S.m.forEach(x => {
+  if (S && S.m) knChiSao(S.m).forEach(x => {
     const ts = x[0], k = x[1], tx = x[2];
     if (k === 'S') markers.push({time: ts, position:'aboveBar', color:'#e5484d', shape:'arrowDown', text: tx || ''});
     else { const MP = {B:['#18a34b','BUY'], X:['#18a34b','BUY\u2605'], T:['#b45309','THIN'], A:['#67c98b','ADD'], W:['#b45309','WEAK']};
       const mm = MP[k] || MP.B;
       markers.push({time: ts, position:'belowBar', color: mm[0], shape:'arrowUp', text: mm[1], buy: (k === 'X' && tx > 0) ? +tx : null}); }
   });
-  let _st = (S && S.st) || null;
+  let _st = knStSao(S);
   // Ma nam trong vung theo doi nhung bep chua kem trang thai -> dung ngay nguong da cong bo
   if (!_st) { try {
     const _r = byT[curT] || {};
     const _g = (window.SIGS && window.SIGS.trig && window.SIGS.trig[curT]) || null;
-    if (_r.watch && _g && +_g[0] > 0 && +_g[1] > 0) {
+    if (_r.watch && _r.wstar === 1 && _r.wgrade !== 'weak' && _g && +_g[0] > 0 && +_g[1] > 0) {
       const _px = (+_g[0]).toFixed(2), _kl = (+_g[1]/1e6).toFixed(1);
       const _yeu = (_r.wgrade === 'weak');
       const _mong = _r.wmong ? ' · thanh khoản mỏng (TB20 ' + ((_r.val20||0)/1000).toFixed(1) + ' tỷ, tín hiệu cần ≥ 15 tỷ tính cả phiên nổ)' : '';
@@ -3643,7 +3668,7 @@ inits.watch = function(){
   const tableHtml = (list, sortable)=>`<div style="overflow:auto"><table>${headRow(sortable)}${list.map(rowHtml).join('')}</table></div>`;
   el.innerHTML = `<div class="card">
     <h2 style="margin-bottom:3px">Watchlist ${lab}</h2>
-    <div class="mini" style="margin-bottom:10px">Mã có <span style="color:#B45309">★</span> là nền thắt chặt. Nhãn <span style="font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309">mỏng</span> = GTGD TB20 10–15 tỷ: vẫn canh được, nhưng tín hiệu chỉ hợp lệ khi phiên nổ kéo TB20 lên ≥ 15 tỷ.</div>
+    <div class="mini" style="margin-bottom:10px">Chỉ còn mã B★ (nền thắt chặt, cơ bản đạt). <b>Buy 50% / 25% / 12.5%</b> = tỷ trọng nếu nổ phiên tới (% vốn cuối năm trước). Nhãn <span style="font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309">mỏng</span> = GTGD TB20 10–15 tỷ: vẫn canh được, nhưng tín hiệu chỉ hợp lệ khi phiên nổ kéo TB20 lên ≥ 15 tỷ.</div>
     ${strong.length?tableHtml(strong,true):'<div class="mini" style="padding:8px 0">Chưa có mã đạt chuẩn cơ bản — cập nhật cuối phiên để quét lại.</div>'}
     <div class="mini" style="margin-top:9px;color:#7A828E">+/- LN, DT/TOI quý = tăng trưởng quý gần nhất so với cùng kỳ (cùng số với mục Chỉ số cơ bản trong Chi tiết mã; ngân hàng dùng TOI thay doanh thu). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div>
   </div>
