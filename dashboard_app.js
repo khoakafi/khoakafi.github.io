@@ -2715,7 +2715,18 @@ function renderND(t){
       document.head.appendChild(st); }
   }
   const r = D && D.t ? D.t[t] : null;
-  if (!r) { el.innerHTML = ''; el.style.display = 'none'; return; }
+  /* 24/09/2026: PET co B* 22/09, dang nam giu T+2 +8.4%, ma khung nay van in "MẤT MA20 → Đứng ngoài" cua ban 11/09.
+     - Dang co vi the mo (knDangGiu) -> khung "ĐANG NẮM GIỮ" o tren moi la luat dang chay, an nhan dinh de khong noi nguoc.
+     - Ban nhan dinh qua 5 phien giao dich chua tinh lai -> cung an (nhan_dinh.js hien la file tinh tay, chua co may chay moi phien). */
+  let cu = false;
+  try {
+    if (D && D.d) {
+      const a = new Date(D.d + 'T15:00:00+07:00'), b = new Date(); let n = 0; const d = new Date(a);
+      while (true) { d.setDate(d.getDate() + 1); if (d > b) break; const w = d.getDay(); if (w >= 1 && w <= 5) n++; }
+      cu = n > 5;
+    }
+  } catch(e){}
+  if (!r || cu || knDangGiu(t)) { el.innerHTML = ''; el.style.display = 'none'; return; }
   el.style.display = '';
   const dd = D.d ? D.d.slice(8,10) + '/' + D.d.slice(5,7) : '';
   const ctx = String(r.c||'').split('·').map((x,k) => k === 0 ? '<b>' + x.trim() + '</b>' : x.trim()).join(' · ');
