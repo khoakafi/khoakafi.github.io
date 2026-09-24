@@ -1207,12 +1207,12 @@ function renderRecentStar(){
     if (y !== lastY && y !== yNow) body.push(`<tr><td colspan="4" style="padding:10px 4px 4px;font-size:11px;letter-spacing:.06em;color:#6B7280;font-weight:700;border-bottom:1px solid #E5E7EB">NĂM ${y}</td></tr>`);
     lastY = y;
     body.push(`<tr class="row" onclick="openDetail('${d.t}')">
-      <td><div class="l1">${d.t} <span class="chip g" style="padding:0 5px">★</span>${knBuyTag(d.buy)} ${d.open?(d.today?'<span class="chip g">Mua hôm nay</span>':'<span class="chip a">Đang mở</span>'):''}</div><div class="l2">${d.bd}</div></td>
+      <td><div class="l1">${d.t} <span class="chip g" style="padding:0 5px">★</span></div><div class="l2">${d.bd}${knBuyTag(d.buy)}</div></td>
       <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
-      <td><div class="l1" style="font-size:13px">${typeof d.sp==='number'?(d.sp>=100?d.sp.toFixed(1):d.sp.toFixed(2)):d.sp}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
+      <td><div class="l1" style="font-size:13px">${typeof d.sp==='number'?(d.sp>=100?d.sp.toFixed(1):d.sp.toFixed(2)):d.sp}</div><div class="l2">${d.open?'<b style="color:'+(d.today?'#128a3e':'#B45309')+';font-weight:700">'+(d.today?'mua hôm nay':'đang mở')+'</b>':d.sd}</div></td>
       <td><span class="${d.ret==null?'mut':(d.ret>=0?'up':'down')}" style="font-size:14px">${d.ret==null?'…':(d.ret>=0?'+':'')+d.ret+'%'}</span></td></tr>`);
   });
-  el.innerHTML = `<table class="sigtb"><tr><th style="${thS}">Mã</th><th style="${thS}">Giá mua</th><th style="${thS}">Giá bán / TT</th><th style="${thS}">Lợi suất</th></tr>` + body.join('') + '</table>'
+  el.innerHTML = `<table class="sigtb"><tr><th style="${thS}">Mã</th><th style="${thS}">Giá mua</th><th style="${thS}">Giá bán</th><th style="${thS}">Lợi suất</th></tr>` + body.join('') + '</table>'
     + `<div class="hint" style="padding:8px 4px 0">Chỉ tín hiệu B★ (nền siết) · mua/bán giá đóng cửa · lợi suất đã trừ phí 0,4% với deal đã bán · các năm cũ lấy từ giá đã điều chỉnh cổ tức.</div>`;
   /* Chieu cao khung cuon do CSS lo: the phai keo bang the chart (align-self:stretch),
      ben trong la khung tuyet doi (position:absolute) nen tu co gian khi doi cua so /

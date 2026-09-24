@@ -588,7 +588,7 @@
       lastY = yr;
       var ret = d.ret == null ? null : (typeof d.ret === 'number' ? d.ret : parseFloat(String(d.ret).replace('%','').replace(',', '.')));
       var buy = d.buy || (K2 && K2.knBuyOf ? K2.knBuyOf(d.t, d.bdate) : null);
-      h += '<button class="knDeal" data-t="' + d.t + '"><div><div class="t">' + d.t + (buy ? '<span class="knBuy">Buy ' + buy + '%</span>' : '') + '</div><div class="s">' + d.bd + '</div></div>'
+      h += '<button class="knDeal" data-t="' + d.t + '"><div><div class="t">' + d.t + '</div><div class="s">' + d.bd + (buy ? '<span class="knBuy">Buy ' + buy + '%</span>' : '') + '</div></div>'
          + '<div><div class="n">' + (d.bp == null || d.bp === '…' ? '<span class="knSkel" style="display:inline-block;width:44px;height:14px"></span>' : vn(+d.bp, 2)) + '</div></div>'
          + '<div><div class="n">' + (d.open ? (d.sp == null || d.sp === '…' ? '…' : vn(+d.sp, 2)) : (d.sp == null || d.sp === '…' ? '<span class="knSkel" style="display:inline-block;width:44px;height:14px"></span>' : vn(+d.sp, 2))) + '</div><div class="s">' + (d.open ? 'đang mở' : d.sd) + '</div></div>'
          + '<div>' + (ret == null || isNaN(ret) ? '<span class="knSkel" style="display:inline-block;width:66px;height:24px"></span>' : '<span class="knPill ' + cls(ret) + '">' + pct(ret) + '</span>') + '</div></button>';
