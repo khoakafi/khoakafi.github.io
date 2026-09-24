@@ -79,7 +79,7 @@ self.addEventListener('push', function(e){
   e.waitUntil(self.registration.showNotification(title, {
     body: d.body || '',
     tag: d.tag || 'kn-push',
-    renotify: false,
+    renotify: (d.tag || 'kn-push') === 'kn-multi',   // tin gop nhieu ma dung chung tag -> phai reo lai, khong thi tin sau thay tin truoc trong im lang
     icon: '/icon-192.png',
     badge: '/icon-192.png',
     data: { url: d.url || '/', ma: d.ma || '' }

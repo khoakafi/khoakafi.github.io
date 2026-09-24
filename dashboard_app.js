@@ -261,7 +261,7 @@ function ntfFlush(){
 function ntfShow(title, body, tag){
   if (!('Notification' in window) || Notification.permission !== 'granted') return;
   const opt = {
-    body, tag, renotify: false,
+    body, tag, renotify: tag === 'kn-multi',   // tin gop dung chung tag -> phai reo lai
     icon: '/icon-192.png', badge: '/icon-192.png',
     data: { url: '/' }
   };
