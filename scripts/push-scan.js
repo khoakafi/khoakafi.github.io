@@ -59,6 +59,19 @@ function duDieuKien(ma) {
   return !/Y[EẾ]U/i.test(nhan);
 }
 
+/* 24/09/2026: web/app CHỈ còn B★ — máy chủ lọc y như web (dashboard_app.js lúc nạp SUM.rows):
+   watch && wstar===1 && wgrade!=='weak' && nền >= 5% (nền < 5% engine ra B!, không bao giờ thành B★). */
+function laSao(r) {
+  return !!(r && r.watch && r.wstar === 1 && r.wgrade !== 'weak' && !(r.wrng < 5) && !BO_CUNG.has(r.t) && duDieuKien(r.t));
+}
+/* Luật tín hiệu: giá × TB KL 20 phiên GỒM phiên nổ ≥ 15 tỷ (web: knDuTK). v20 = TB 20 phiên đến hôm qua ≈ 19 phiên cũ. */
+function duTK(r, p, vol) { return !!(r.v20 && p > 0 && p * (19 * r.v20 + (vol || 0)) / 20 / 1e6 >= 15); }
+/* Ngưỡng kích hoạt tính từ giá đóng cửa ngày dữ liệu. Dữ liệu cũ quá (máy phát hành lỡ ngày) -> ngưỡng sai -> không báo mua. */
+function duLieuMoi() {
+  const d = String(SUM.updated || '').slice(0, 10); if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return false;
+  const tre = (Date.parse(phienKey()) - Date.parse(d)) / 86400000;
+  return tre >= 1 && tre <= 4;
+}
 /* ---------- giờ phiên Việt Nam (UTC+7) ---------- */
 function nowVN() { return new Date(Date.now() + 7 * 3600 * 1000); }
 function gioVN() { const d = nowVN(); return d.getUTCHours() + d.getUTCMinutes() / 60; }
@@ -68,6 +81,12 @@ function inSession() {
   if (!ngayLamViec()) return false;
   const h = gioVN();
   return (h >= 9 && h < 11.5) || (h >= 13 && h < 14.84);
+}
+/* ATO 9:00-9:15, ATC 14:30-14:45: bảng giá chỉ có GIÁ DỰ KHỚP, chưa khớp thật -> không báo gì. */
+function duKhop() {
+  if (process.env.FORCE_RUN === '1') return null;
+  const h = gioVN();
+  return (h >= 9 && h < 9.25) ? 'ATO' : ((h >= 14.5 && h < 14.75) ? 'ATC' : null);
 }
 /* Tổng kết CHỈ được gửi ngay sau khi đóng cửa. GitHub Actions hay chạy trễ
    (có hôm trễ mấy tiếng) — không chặn thì khách nhận tổng kết lúc tối. */
@@ -109,7 +128,7 @@ async function layGia(codes) {
         if (!x || !x.sym) return;
         const gia = Number(x.lastPrice) || Number(x.r) || 0;
         const kl = Number(x.lot) || Number(x.totalVol) || 0;
-        if (gia > 0) out[String(x.sym).toUpperCase()] = { p: gia, vol: kl * (x.lot ? 10 : 1) };
+        if (gia > 0) out[String(x.sym).toUpperCase()] = { p: gia, vol: kl * (x.lot ? 10 : 1), ref: Number(x.r) || 0 };
       });
     } catch (e) { console.error('VPS lỗi:', e.message); }
   }
@@ -124,7 +143,7 @@ function docState() {
   } catch (e) {}
   return { phien: phienKey(), daBao: {} };
 }
-function ghiState(st) { fs.writeFileSync(STATE_FILE, JSON.stringify(st, null, 1)); }
+function ghiState(st) { if (DRY) { console.log('(DRY_RUN — không ghi state, không chiếm khóa chống trùng)'); return; } fs.writeFileSync(STATE_FILE, JSON.stringify(st, null, 1)); }
 /* Nhat ky lan chay gan nhat — commit len nhanh push-state de soi tu xa */
 function ghiNhatKy(o){
   try { fs.writeFileSync(path.join(path.dirname(STATE_FILE), '.push-run.json'),
@@ -143,18 +162,18 @@ function quet(gia, st) {
 
   for (const r of SUM.rows) {
     /* Cong kiem duy nhat cho ca 3 bac (SIG / NEAR / W2-W4) */
-    if (!r.watch || BO_CUNG.has(r.t)) continue;
-    if (!duDieuKien(r.t)) continue;
+    if (!laSao(r)) continue;
     const live = gia[r.t];
     if (!live) continue;
     const g = TRIG[r.t];
     const p = live.p;
-    const chg = r.p ? ((p / r.p) - 1) * 100 : null;   // r.p = giá tham chiếu phiên trước
+    const ref = live.ref > 0 ? live.ref : r.p;          // giá tham chiếu HÔM NAY từ VPS (r.p có thể là phiên cũ)
+    const chg = ref ? ((p / ref) - 1) * 100 : null;
 
-    if (g && g[0] > 0) {
+    if (g && g[0] > 0 && duLieuMoi()) {
       const nguong = +g[0], klNguong = +g[1] || 0;
       const duKL = !klNguong || live.vol >= klNguong;
-      if (p >= nguong && duKL && BAT.includes('signal')) {
+      if (p >= nguong && duKL && duTK(r, p, live.vol) && BAT.includes('signal')) {
         them('SIG' + r.t, r.t + ' — TÍN HIỆU MUA KÍCH HOẠT',
           'Giá ' + p.toFixed(2) + ' vượt ngưỡng ' + nguong.toFixed(2) + ' kèm dòng tiền đạt chuẩn.',
           r.t + ' KÍCH HOẠT MUA', r.t);
@@ -314,6 +333,12 @@ async function gui(tin) {
       ghiNhatKy({ ok: true, cheDo: 'SUMMARY', boQua: 'da gui' });
       return;
     }
+    /* Nổ ở phiên ATC (14:30-14:45) thì lần quét trong phiên không thấy -> quét lại TOÀN BỘ danh sách B★ bằng giá đóng cửa. */
+    if (duLieuMoi() && gioVN() >= 14.75) {
+      const ds = SUM.rows.filter(laSao), dong = await layGia(ds.map(r => r.t));
+      ds.forEach(r => { const g = TRIG[r.t], L = dong[r.t]; if (!g || !L || st0.daBao['SIG' + r.t]) return;
+        if (L.p >= +g[0] && (!+g[1] || L.vol >= +g[1]) && duTK(r, L.p, L.vol)) { st0.daBao['SIG' + r.t] = Date.now(); console.log('SIG lúc đóng cửa:', r.t); } });
+    }
     const cb = Object.keys(st0.daBao || {});
     const lay = pre => cb.filter(k => k.indexOf(pre) === 0).map(k => k.slice(pre.length));
     const sig = lay('SIG'), sat = lay('NEAR'), w4 = lay('W4'), w2 = lay('W2');
@@ -363,8 +388,10 @@ async function gui(tin) {
     return;
   }
   if (!inSession()) { console.log('Ngoài giờ phiên — bỏ qua.'); return; }
+  if (duKhop()) { console.log(duKhop() + ' — chỉ có giá dự khớp, chưa khớp thật — bỏ qua.'); ghiNhatKy({ ok: true, boQua: duKhop() }); return; }
+  if (!duLieuMoi()) console.log('Dữ liệu ' + SUM.updated + ' không phải phiên trước — chỉ báo +2%/+4%, không báo mua.');
   /* Chi hoi gia nhung ma thuc su co the bao -> nhe hon, va khop voi luat quet */
-  const codes = SUM.rows.filter(r => r.watch && !BO_CUNG.has(r.t) && duDieuKien(r.t)).map(r => r.t);
+  const codes = SUM.rows.filter(laSao).map(r => r.t);
   if (!codes.length) { console.log('Watchlist rỗng.'); return; }
   console.log('Quét', codes.length, 'mã:', codes.join(','));
 
