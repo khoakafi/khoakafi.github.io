@@ -210,7 +210,7 @@
   + '.knRow:first-of-type{border-top:0}.knRow:active{background:var(--ksunk)}'
   + '.knRowL{flex:1;min-width:0}'
   + '.knTick{font-size:15px;font-weight:700;letter-spacing:-.01em;display:flex;align-items:center;gap:5px}'
-  + '.knStar{color:var(--kfl);font-size:12px;line-height:1}.knMong{display:inline-block;margin-left:5px;font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309;vertical-align:1px}'
+  + '.knStar{color:var(--kfl);font-size:12px;line-height:1}.knBuy{display:inline-block;margin-left:5px;font-size:9.5px;font-weight:800;padding:0 5px;border-radius:4px;background:#E9F7EF;color:#127A3B;vertical-align:1px;white-space:nowrap}.knMong{display:inline-block;margin-left:5px;font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309;vertical-align:1px}'
   + '.knHot{display:inline-block;font-size:10px;font-weight:700;padding:1px 5px;border-radius:5px;background:var(--kbs);color:var(--kbd);vertical-align:1px;margin-left:4px}'
   + '.knSub{font-size:11.5px;font-weight:500;color:var(--kink2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}'
   + '.knSpark{flex:none;width:64px;height:26px}.knSpark svg{display:block;width:64px;height:26px;overflow:visible}'
@@ -482,7 +482,7 @@
     var K = KN(); if (!K) return {strong:[], weak:[]};
     var all = K.ROWS().filter(function(r){ return r.watch; });
     var enrich = function(r){ return {
-      t:r.t, n:r.n || '', b:r.b, p:r.p, chg:r.chg, star:r.wstar === 1, mong:r.wmong === 1,
+      t:r.t, n:r.n || '', b:r.b, p:r.p, chg:r.chg, star:r.wstar === 1, mong:r.wmong === 1, buy:(r.wstar === 1 && r.wbuy) ? r.wbuy : null,
       pkl: r.vx != null ? Math.round(r.vx * 100) : null,
       kl: (r.v20 != null && r.vx != null) ? Math.round(r.v20 * r.vx) : (r.v20 || null),
       val20:r.val20, weak: r.wgrade === 'weak' }; };
@@ -581,7 +581,7 @@
   function renderDeals(){
     var rows = dealRows(); var el = document.getElementById('knDeals'); if (!el) return;
     if (!rows || !rows.length){ el.innerHTML = '<p class="knNote" style="padding:14px 0">Chưa có dữ liệu lệnh.</p>'; return; }
-    var yNow = String(new Date().getFullYear()); var lastY = null, h = '';
+    var yNow = String(new Date().getFullYear()); var lastY = null, h = ''; var K2 = KN();
     var nNow = 0, wins = 0, sum = 0;
     rows.forEach(function(d){ if (d.bdate.slice(0,4) === yNow){ nNow++; if (d.ret != null){ sum += d.ret; if (d.ret > 0) wins++; } } });
     rows.forEach(function(d){
@@ -589,7 +589,8 @@
       if (yr !== lastY && yr !== yNow) h += '<div class="knYear">NĂM ' + yr + '</div>';
       lastY = yr;
       var ret = d.ret == null ? null : (typeof d.ret === 'number' ? d.ret : parseFloat(String(d.ret).replace('%','').replace(',', '.')));
-      h += '<button class="knDeal" data-t="' + d.t + '"><div><div class="t">' + d.t + '</div><div class="s">' + d.bd + '</div></div>'
+      var buy = d.buy || (K2 && K2.knBuyOf ? K2.knBuyOf(d.t, d.bdate) : null);
+      h += '<button class="knDeal" data-t="' + d.t + '"><div><div class="t">' + d.t + (buy ? '<span class="knBuy">Buy ' + buy + '%</span>' : '') + '</div><div class="s">' + d.bd + '</div></div>'
          + '<div><div class="n">' + (d.bp == null || d.bp === '…' ? '<span class="knSkel" style="display:inline-block;width:44px;height:14px"></span>' : vn(+d.bp, 2)) + '</div></div>'
          + '<div><div class="n">' + (d.open ? (d.sp == null || d.sp === '…' ? '…' : vn(+d.sp, 2)) : (d.sp == null || d.sp === '…' ? '<span class="knSkel" style="display:inline-block;width:44px;height:14px"></span>' : vn(+d.sp, 2))) + '</div><div class="s">' + (d.open ? 'đang mở' : d.sd) + '</div></div>'
          + '<div>' + (ret == null || isNaN(ret) ? '<span class="knSkel" style="display:inline-block;width:66px;height:24px"></span>' : '<span class="knPill ' + cls(ret) + '">' + pct(ret) + '</span>') + '</div></button>';
@@ -638,7 +639,7 @@
   }
   function rowHtml(r, dim){
     return '<button class="knRow' + (dim ? ' dim' : '') + '" data-t="' + r.t + '">'
-      + '<div class="knRowL"><div class="knTick">' + r.t + (r.star ? '<span class="knStar" title="Nền thắt chặt">★</span>' : '') + (r.mong ? '<span class="knMong" title="Thanh khoản mỏng: TB20 10–15 tỷ">mỏng</span>' : '') + (r.pkl != null && r.pkl >= 150 ? '<span class="knHot">KL ' + r.pkl + '%</span>' : '') + '</div>'
+      + '<div class="knRowL"><div class="knTick">' + r.t + (r.star ? '<span class="knStar" title="Nền thắt chặt">★</span>' : '') + (r.buy ? '<span class="knBuy" title="Nếu nổ: tỷ trọng ' + r.buy + '% tài khoản">Buy ' + r.buy + '%</span>' : '') + (r.mong ? '<span class="knMong" title="Thanh khoản mỏng: TB20 10–15 tỷ">mỏng</span>' : '') + (r.pkl != null && r.pkl >= 150 ? '<span class="knHot">KL ' + r.pkl + '%</span>' : '') + '</div>'
       + '<div class="knSub">' + esc(shortName(r.n)) + '</div></div>'
       + '<div class="knSpark" data-t="' + r.t + '">' + sparkSvg(SPARK && SPARK[r.t]) + '</div>'
       + '<div class="knRowR"><div class="knPx">' + (r.p == null ? '—' : vn(r.p, r.p >= 100 ? 1 : 2)) + '</div><span class="knPill ' + cls(r.chg) + '">' + pct(r.chg) + '</span></div></button>';

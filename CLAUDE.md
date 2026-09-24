@@ -102,6 +102,13 @@ TB +5,6%/deal (chung: 58/133, +7,7%). **Luật tín hiệu không đổi** (gi�
 mũi tên trong phiên chỉ vẽ khi ước tính TB20 gồm phiên nay ≥ 15 tỷ (`duTK`). Kiểm lại lịch sử: workflow `kiem-bstar.yml`
 (`scripts/kiem-bstar-thanh-khoan.mjs`, chỉ đọc, chạy trên runner vì cần dchart).
 
+### Tỷ trọng B★: Buy 50% / 25% / 12.5% (24/09/2026, anh Khoa chốt)
+
+Engine gắn `m[2]` vào dấu X: nền siêu chặt (biên độ 10 phiên ≤ 0,5 × 30 phiên, tính **trước** phiên nổ) + KL cạn
+(TB KL 10 phiên < 0,8 × TB 50 phiên) → 50; chỉ siêu chặt → 25; còn lại → 12.5 (% vốn cuối năm trước, như đường B★).
+Watchlist có `wbuy` (nếu nổ phiên tới). Web/app: `knBuyOf(t, bdate)`, `knBuyTag`, `.knBuy`. Số nghiên cứu: kafi-core
+`research/sizing_exact.mjs` (sổ cũ: 614,5% → 1.311%, sụt −9,05% → −11,1%). **Đường B★ và con số hero vẫn tính mỗi deal 25%.**
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`

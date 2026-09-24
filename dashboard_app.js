@@ -565,7 +565,7 @@ if(up){const dt=new Date(up+'T12:00:00');const wd=dt.getDay();dt.setDate(dt.getD
 const chip=r=>{const ch=(r._lv!=null?r._lv:r.chg);
 const txt=ch!=null?((ch>0?'+':'')+(+ch).toFixed(1)+'%'):'\u2014';
 const col=ch==null?'#7A828E':(ch>0?'#18A34B':(ch<0?'#E5484D':'#7A828E'));
-return '<span class="wchip" data-t="'+r.t+'" style="display:inline-flex;align-items:center;gap:3px;padding:1px 7px;border:1px solid #E8EAEF;border-radius:999px;cursor:pointer;background:#fff;font-weight:700;font-size:11.5px;color:#1F2937;white-space:nowrap">'+(r.wstar?'<span style="color:#B45309;font-size:10px">\u2605</span>':'')+r.t+(r.wmong?'<span title="Thanh khoản mỏng" style="font-size:9px;font-weight:700;color:#B45309;background:#FFF4E5;border-radius:3px;padding:0 3px">mỏng</span>':'')+'<span id="wlv_'+r.t+'" style="color:'+col+';font-weight:600;font-size:10.5px">'+txt+'</span></span>';};
+return '<span class="wchip" data-t="'+r.t+'" style="display:inline-flex;align-items:center;gap:3px;padding:1px 7px;border:1px solid #E8EAEF;border-radius:999px;cursor:pointer;background:#fff;font-weight:700;font-size:11.5px;color:#1F2937;white-space:nowrap">'+(r.wstar?'<span style="color:#B45309;font-size:10px">\u2605</span>':'')+r.t+(r.wstar&&r.wbuy?'<span title="Nếu nổ: Buy '+r.wbuy+'% tài khoản" style="font-size:9px;font-weight:800;color:#127A3B;background:#E9F7EF;border-radius:3px;padding:0 3px">'+r.wbuy+'%</span>':'')+(r.wmong?'<span title="Thanh khoản mỏng" style="font-size:9px;font-weight:700;color:#B45309;background:#FFF4E5;border-radius:3px;padding:0 3px">mỏng</span>':'')+'<span id="wlv_'+r.t+'" style="color:'+col+';font-weight:600;font-size:10.5px">'+txt+'</span></span>';};
 const el=document.createElement('div');el.id='watchStrip';
 el.style.cssText='display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E8EAEF;border-radius:9px;padding:5px 10px;margin-bottom:8px;overflow-x:auto;scrollbar-width:none';
 el.innerHTML='<span style="font-weight:700;font-size:11.5px;color:#7A828E;white-space:nowrap;flex:0 0 auto">Watchlist '+lab+'</span>'+ws.map(chip).join('');
@@ -946,6 +946,15 @@ function bstarDeals(){
   out.sort((a,b) => a.bdate < b.bdate ? 1 : -1);
   BSTAR.deals = out; return out;
 }
+/* Ty trong B* (engine 24/09/2026): dau X mang m[2] = 50 | 25 | 12.5 (% tai khoan). Tra null neu ban phat hanh cu chua co. */
+let __knBuyMap = null;
+function knBuyOf(t, bdate){
+  if (!__knBuyMap) { __knBuyMap = {}; const T = (window.SIGS && window.SIGS.t) || {};
+    const iso = ts => new Date((ts+7*3600)*1000).toISOString().slice(0,10);
+    Object.keys(T).forEach(k => (T[k].m || []).forEach(mk => { if (mk[1] === 'X' && mk[2] > 0) __knBuyMap[k + '|' + iso(mk[0])] = +mk[2]; })); }
+  return __knBuyMap[t + '|' + bdate] || null;
+}
+function knBuyTag(w){ return w ? ' <span title="Tỷ trọng gợi ý: ' + w + '% tài khoản (vốn cuối năm trước)" style="font-size:10px;font-weight:800;padding:0 5px;border-radius:4px;background:#E9F7EF;color:#127A3B;white-space:nowrap">Buy ' + w + '%</span>' : ''; }
 /* ===== Nap gia cho B* =====
    Truoc: 15 ma goi CUNG LUC, ma nao hong thi lang le thieu -> bstarCurve bo deal do
    khoi phep tinh -> con so thap hon that ma khong ai biet (486.9 / 592.9 / 600+ tuy
@@ -1029,7 +1038,7 @@ function bstarRecent(){
     const bp = p.mp[d.bdate]; if (!(bp > 0)) return;
     const open = !d.sdate; const sp = open ? p.last : p.mp[d.sdate]; if (!(sp > 0)) return;
     const gross = (sp/bp - 1)*100;
-    rows.push({ t:d.t, bd:fmt(d.bdate), bdate:d.bdate, bp:+bp.toFixed(2), sp:+sp.toFixed(2), sd: open ? '—' : fmt(d.sdate), ret:+(open ? gross : gross-0.4).toFixed(1), open });
+    rows.push({ t:d.t, bd:fmt(d.bdate), bdate:d.bdate, bp:+bp.toFixed(2), sp:+sp.toFixed(2), sd: open ? '—' : fmt(d.sdate), ret:+(open ? gross : gross-0.4).toFixed(1), open, buy:knBuyOf(d.t, d.bdate) });
   });
   // tín hiệu ★ mới trong phiên (đã qua scanNewSignals) — chỉ nhận nếu nền siết (a10/a30 < 0.6 tính trên 30 phiên trước hôm nay)
   const tpn = SUM.tpn; const today = new Date().toISOString().slice(0,10);
@@ -1040,11 +1049,11 @@ function bstarRecent(){
     const a10 = (Math.max(...w10)-Math.min(...w10))/Math.min(...w10), a30 = (Math.max(...w30)-Math.min(...w30))/Math.min(...w30);
     if (!(a30 > 0) || a10/a30 >= 0.6) return;
     if (rows.some(r => r.t === x.t && r.open)) return;
-    rows.unshift({ t:x.t, bd:x.bd, bdate:x.bdate, bp:x.bp, sp:x.bp*(1+x.ret/100), sd:'—', ret:x.ret, open:true, today:true });
+    rows.unshift({ t:x.t, bd:x.bd, bdate:x.bdate, bp:x.bp, sp:x.bp*(1+x.ret/100), sd:'—', ret:x.ret, open:true, today:true, buy:(byT[x.t] && byT[x.t].wbuy) || null });
   });
   // các năm đã khép: lấy từ bstar_books.js (giá đã chốt)
   (window.BSTAR_DEALS || []).filter(d => d.b < y0 && !BO_CUNG.has(d.t)).forEach(d => {
-    rows.push({ t:d.t, bd:fmt(d.b), bdate:d.b, bp:d.bp, sp:d.sp, sd:fmt(d.s), ret:+(((d.sp/d.bp-1)*100)-0.4).toFixed(1), open:false });
+    rows.push({ t:d.t, bd:fmt(d.b), bdate:d.b, bp:d.bp, sp:d.sp, sd:fmt(d.s), ret:+(((d.sp/d.bp-1)*100)-0.4).toFixed(1), open:false, buy:knBuyOf(d.t, d.b) });
   });
   rows.sort((a,b) => a.bdate < b.bdate ? 1 : (a.bdate > b.bdate ? -1 : 0));
   return rows;
@@ -1183,8 +1192,8 @@ function renderRecentStar(){
   else {
     // chưa có giá: vẽ ngay khung B★ (deal năm nay chờ giá, các năm cũ đã chốt) để không giật khi giá về
     const y0 = String(new Date().getFullYear())+'-01-01'; const fmt = d => d.slice(8,10)+'/'+d.slice(5,7)+'/'+d.slice(2,4);
-    rows = bstarDeals().filter(d => d.bdate >= y0).map(d => ({ t:d.t, bd:fmt(d.bdate), bdate:d.bdate, bp:'…', sp:'…', sd:d.sdate ? fmt(d.sdate) : '—', ret:null, open:!d.sdate }))
-      .concat((window.BSTAR_DEALS || []).filter(d => d.b < y0 && !BO_CUNG.has(d.t)).map(d => ({ t:d.t, bd:fmt(d.b), bdate:d.b, bp:d.bp, sp:d.sp, sd:fmt(d.s), ret:+(((d.sp/d.bp-1)*100)-0.4).toFixed(1), open:false })));
+    rows = bstarDeals().filter(d => d.bdate >= y0).map(d => ({ t:d.t, bd:fmt(d.bdate), bdate:d.bdate, bp:'…', sp:'…', sd:d.sdate ? fmt(d.sdate) : '—', ret:null, open:!d.sdate, buy:knBuyOf(d.t, d.bdate) }))
+      .concat((window.BSTAR_DEALS || []).filter(d => d.b < y0 && !BO_CUNG.has(d.t)).map(d => ({ t:d.t, bd:fmt(d.b), bdate:d.b, bp:d.bp, sp:d.sp, sd:fmt(d.s), ret:+(((d.sp/d.bp-1)*100)-0.4).toFixed(1), open:false, buy:knBuyOf(d.t, d.b) })));
   }
   if (!rows.length) return false;
   const yNow = String(new Date().getFullYear());
@@ -1197,7 +1206,7 @@ function renderRecentStar(){
     if (y !== lastY && y !== yNow) body.push(`<tr><td colspan="4" style="padding:10px 4px 4px;font-size:11px;letter-spacing:.06em;color:#6B7280;font-weight:700;border-bottom:1px solid #E5E7EB">NĂM ${y}</td></tr>`);
     lastY = y;
     body.push(`<tr class="row" onclick="openDetail('${d.t}')">
-      <td><div class="l1">${d.t} <span class="chip g" style="padding:0 5px">★</span> ${d.open?(d.today?'<span class="chip g">Mua hôm nay</span>':'<span class="chip a">Đang mở</span>'):''}</div><div class="l2">${d.bd}</div></td>
+      <td><div class="l1">${d.t} <span class="chip g" style="padding:0 5px">★</span>${knBuyTag(d.buy)} ${d.open?(d.today?'<span class="chip g">Mua hôm nay</span>':'<span class="chip a">Đang mở</span>'):''}</div><div class="l2">${d.bd}</div></td>
       <td><div class="l1" style="font-size:13px">${d.bp}</div></td>
       <td><div class="l1" style="font-size:13px">${typeof d.sp==='number'?(d.sp>=100?d.sp.toFixed(1):d.sp.toFixed(2)):d.sp}</div><div class="l2">${d.open?'giá TT':'bán '+d.sd}</div></td>
       <td><span class="${d.ret==null?'mut':(d.ret>=0?'up':'down')}" style="font-size:14px">${d.ret==null?'…':(d.ret>=0?'+':'')+d.ret+'%'}</span></td></tr>`);
@@ -1667,7 +1676,7 @@ function __wchip(r){
   const sao = r.wstar===1;
   return ' <span style="font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;vertical-align:1px;'
     + (sao ? 'background:#E9F7EF;color:#127A3B' : 'background:#EEF2F6;color:#5B6470') + '">'
-    + (sao ? 'B★' : 'B') + '</span>' + __wmong(r);
+    + (sao ? (r.wbuy ? 'Buy ' + r.wbuy + '%' : 'B★') : 'B') + '</span>' + __wmong(r);
 }
 function renderSc(){
   ROWS().forEach(scDerive);
@@ -2231,7 +2240,7 @@ window.__rebuildBadges = function(){
   const out = (curMarkers||[]).map(m => {
     const i = tix[m.time]; if (i == null) return null;
     const isBuy = m.position === 'belowBar';
-    const lbl = isBuy ? (m.text === 'ADD' ? '\u25B2 Add' : (m.text === 'WEAK' ? '\u25B2 Weak' : (m.text === 'THIN' ? '\u25B2 B!' : (m.text === 'BUY\u2605' ? '\u25B2 B\u2605' : '\u25B2 B')))) : '\u25BC S ' + m.text;
+    const lbl = isBuy ? (m.text === 'ADD' ? '\u25B2 Add' : (m.text === 'WEAK' ? '\u25B2 Weak' : (m.text === 'THIN' ? '\u25B2 B!' : (m.text === 'BUY\u2605' ? (m.buy ? '\u25B2 Buy ' + m.buy + '%' : '\u25B2 B\u2605') : '\u25B2 B')))) : '\u25BC S ' + m.text;
     return { i: i, below: isBuy, text: lbl, color: m.color, value: isBuy ? curOhlc.l[i] : curOhlc.h[i] };
   }).filter(Boolean);
   try {
@@ -2249,7 +2258,7 @@ window.__rebuildBadges = function(){
         && liveWatch.inSession() && px >= g[0] && lv >= g[1]
         && (typeof __nenOk !== 'function' || __nenOk(curT))) {
       const sao = (r.wstar === 1) || (((window.SUMMARY||{}).rows||[]).some(x => x && x.t === curT && x.wstar === 1));
-      out.push({ i: n-1, below: true, text: (sao ? '\u25B2 B\u2605' : '\u25B2 B') + (r.wmong ? ' mỏng' : ''), color: '#18a34b',
+      out.push({ i: n-1, below: true, text: (sao ? (r.wbuy ? '\u25B2 Buy ' + r.wbuy + '%' : '\u25B2 B\u2605') : '\u25B2 B') + (r.wmong ? ' mỏng' : ''), color: '#18a34b',
                  value: Math.min(curOhlc.l[n-1], px) });
     }
   } catch(e){}
@@ -2884,7 +2893,7 @@ function computeTPN(oh, boardCode, qsAv){
     if (k === 'S') markers.push({time: ts, position:'aboveBar', color:'#e5484d', shape:'arrowDown', text: tx || ''});
     else { const MP = {B:['#18a34b','BUY'], X:['#18a34b','BUY\u2605'], T:['#b45309','THIN'], A:['#67c98b','ADD'], W:['#b45309','WEAK']};
       const mm = MP[k] || MP.B;
-      markers.push({time: ts, position:'belowBar', color: mm[0], shape:'arrowUp', text: mm[1]}); }
+      markers.push({time: ts, position:'belowBar', color: mm[0], shape:'arrowUp', text: mm[1], buy: (k === 'X' && tx > 0) ? +tx : null}); }
   });
   let _st = (S && S.st) || null;
   // Ma nam trong vung theo doi nhung bep chua kem trang thai -> dung ngay nguong da cong bo
@@ -2927,7 +2936,9 @@ function knTpnCapNhat(s){
     const tx = fill ? ('Giá vốn ' + f2(fill) + '. ' + (n < 3 ? 'Chờ hàng về — T+3: đóng cửa ≤ ' + f2(fill) + ' là BÁN toàn bộ.'
                                                        : 'BÁN nếu hôm nay đóng cửa dưới ' + f2(fill*0.93) + ' (mốc MA tính lại sau phiên).'))
                     : 'Đã vào lệnh phiên trước. Bản cập nhật sau phiên sẽ tính lại mốc giữ/bán.';
-    return { c: chip, dL: tx, dA: tx, ts: s.ts };
+    const bm = String(s.dL || s.dA || '').match(/Buy (\d+(?:\.\d+)?)% tài khoản/);
+    const tx2 = bm ? tx + ' Tỷ trọng: Buy ' + bm[1] + '% tài khoản.' : tx;
+    return { c: chip, dL: tx2, dA: tx2, ts: s.ts };
   } catch(e) { return s; }
 }
 function renderTPN(s){
@@ -3617,7 +3628,7 @@ inits.watch = function(){
   const rowHtml = r=>{
     const qlab=r._q?('Q'+r._q[1]+'/'+r._q[0]):'';
     return `<tr class="row" data-t="${r.t}" onclick="openDetail('${r.t}')">
-      <td style="text-align:left"><b>${r.t}</b>${r.wstar?' <span style="color:#B45309" title="Nền thắt chặt">★</span>':''}${__wmong(r)}</td>
+      <td style="text-align:left"><b>${r.t}</b>${r.wstar?' <span style="color:#B45309" title="Nền thắt chặt">★</span>':''}${r.wstar?knBuyTag(r.wbuy):''}${__wmong(r)}</td>
       <td>${fmt(r.p,2)}</td>
       <td id="lv_${r.t}" class="${cls(r.chg)}">${pct(r.chg)}</td>
       <td>${fmt(r._kl,0)}</td>
@@ -4302,7 +4313,7 @@ window.KN = {
   LB_SECTORS, LB_BANDS, lbBand, lbLoad,
   get lbScores(){ return lbScores; }, get lbKhoa(){ return lbKhoa; }, get lbLoading(){ return lbLoading; }, get lbStamp(){ return lbStamp; },
   SEC_GROUPS, drawSec, get secCache(){ return secCache; }, get secGrp(){ return secGrp; }, set secGrp(v){ secGrp = v; },
-  BSTAR, bstarDeals, bstarRecent, bstarCurve, bstarGia, bstarNgayVN, knHieuSuatTuoi,
+  BSTAR, bstarDeals, bstarRecent, bstarCurve, bstarGia, bstarNgayVN, knHieuSuatTuoi, knBuyOf,
   knKhoaPhien, KN_MOC_LB, KN_MOC_SEC, knDocCache, knGhiCache,
   get curT(){ return curT; }, get curOhlc(){ return curOhlc; }, get curMarkers(){ return curMarkers; },
   get proChart(){ return proChart; }, get proVolChart(){ return proVolChart; }, get proLoadedFor(){ return proLoadedFor; },
