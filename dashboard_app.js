@@ -51,7 +51,9 @@ function knDuKhop(){ const g = knGioVN(); if (g.w < 1 || g.w > 5) return null; i
 function knGiaHomNay(){ return !!window.LIVE_DATE && String(window.LIVE_DATE).slice(0,10) === knGioVN().ngay; }
 window.knDuKhop = knDuKhop;
 /* Luat tin hieu: gia * TB KL 20 phien (GOM phien no) >= 15 ty. v20 cua bang = TB 20 phien den hom qua -> 19 phien cu ~ 19*v20. */
-function knDuTK(r, px, vol){ return !!(r && r.v20 && px > 0 && vol >= 0 && px*(19*r.v20 + vol)/20/1e6 >= 15); }
+function knDuTK(r, px, vol){ if (!r || !(px > 0) || !(vol >= 0)) return false;
+  const g = window.SIGS && window.SIGS.trig && window.SIGS.trig[r.t]; const S19 = (g && g[4] > 0) ? +g[4] : 19*(r.v20 || 0);   // engine >= 25/09 cong bo dung tong KL 19 phien
+  return S19 > 0 && px*(S19 + vol)/20/1e6 >= 15; }
 
 const REV = ['isa3','isb27','isi64','nos689','nos693'], NPAT = ['isa22','isa20'];
 const pick = (row, codes) => { for (const c of codes) if (row[c]!=null) return row[c]; return null; };

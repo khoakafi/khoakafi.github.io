@@ -65,7 +65,8 @@ function laSao(r) {
   return !!(r && r.watch && r.wstar === 1 && r.wgrade !== 'weak' && !(r.wrng < 5) && !BO_CUNG.has(r.t) && duDieuKien(r.t));
 }
 /* Luật tín hiệu: giá × TB KL 20 phiên GỒM phiên nổ ≥ 15 tỷ (web: knDuTK). v20 = TB 20 phiên đến hôm qua ≈ 19 phiên cũ. */
-function duTK(r, p, vol) { return !!(r.v20 && p > 0 && p * (19 * r.v20 + (vol || 0)) / 20 / 1e6 >= 15); }
+function duTK(r, p, vol) { const g = TRIG[r.t]; const S19 = (g && g[4] > 0) ? +g[4] : 19 * (r.v20 || 0);
+  return !!(S19 > 0 && p > 0 && p * (S19 + (vol || 0)) / 20 / 1e6 >= 15); }
 /* Ngưỡng kích hoạt tính từ giá đóng cửa ngày dữ liệu. Dữ liệu cũ quá (máy phát hành lỡ ngày) -> ngưỡng sai -> không báo mua. */
 function duLieuMoi() {
   const d = String(SUM.updated || '').slice(0, 10); if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return false;
