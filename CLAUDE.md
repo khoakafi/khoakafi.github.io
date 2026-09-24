@@ -124,6 +124,14 @@ Kho giá `kn_bstar_px` giữ **qua ngày** (khoá `v2`, không theo phiên): l�
 `bstarGia` lấy từ bảng giá; mã nào `lastd` < phiên trước mới tải lại. `thieu == null` = chưa tải xong lần đầu →
 trang đầu ghi "· đang tính 2026…" (mở tab ẩn danh mất vài giây, lần sau ~0.3s). Số đúng là số khi `thieu` rỗng.
 
+**Nướng lại 24/09/2026** (`kafi-core/research/nuong_bstar.mjs`, giá từ workflow `gia-bstar.yml` → nhánh `gia-bstar`):
+chế độ `kiem` tái tạo sổ cũ khớp từng số (486,93 vs 486,94); chế độ `sua` = sổ cũ + **chỉ** sửa phần do ngày BCTC VNDirect:
+thêm PVS/REE/DCM/CSV/IJC 2025, bỏ REE 18/08/2021 + PVP 30/07/2024 (nay là W). Kết quả: hết 2025 486,94 → 484,04%;
+đến 24/09/2026 614,54 → **611,04%**, maxdd −9,05% giữ nguyên. (Con số 577% nói trước đó là SAI — lấy từ bản mô phỏng gần đúng.)
+**Lỗi dữ liệu đã biết, chưa sửa:** engine lọc GTGD bằng giá dchart **đã điều chỉnh cổ tức** × KL → mỗi lần mã chia cổ tức,
+GTGD quá khứ tụt, deal cũ có thể biến mất khỏi tín hiệu (DGC 29/12/2020, DGC 04/05/2021 +24,4%, PTB 17/09/2021 mất từ 05/09→24/09).
+Vì vậy **đừng nướng sổ bằng chế độ `moi`** (lấy nguyên tín hiệu hiện tại) — nó dính luôn lỗi này. CMG không còn trong danh sách mã.
+
 ## bstar_live.js — giá năm nay nướng sẵn (602% hiện ngay, không "đang tính")
 
 **"Máy phát hành" = Chrome của anh Khoa.** `autorun.js` chạy trên site khi máy có token (`settoken.html` →
