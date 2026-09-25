@@ -2969,24 +2969,36 @@ function computeTPN(oh, boardCode, qsAv){
 let curMarkers = [];
 /* "TÍN HIỆU MUA HÔM NAY" la chu engine viet luc phat hanh; sang phien sau file chua doi thi van in "hom nay" (PET 23/09).
    Trinh duyet tu doi thanh "ĐANG NẮM GIỮ — T+n" theo dung luat engine (T+3 dong cua <= gia von la ban; sau T+3 dung cat lo 7%). */
+/* So phien (thu 2-6) sau ngay du lieu `ts` den hom nay theo gio VN; hom nay chi tinh tu 9:00. (Chua tru ngay le.) */
+setInterval(function(){ try { if (curT && window.__tpnSt && document.visibilityState === 'visible' && !window.__dHov) renderTPN(window.__tpnSt); } catch(e){} }, 15000);
+function knDemPhien(ts){
+  const g = knGioVN(); let n = 0; const d = new Date(ts*1000 + 7*3600e3);
+  for (let k = 0; k < 40; k++) { d.setUTCDate(d.getUTCDate() + 1); const x = d.toISOString().slice(0,10);
+    if (x > g.ngay || (x === g.ngay && g.h < 9)) break; const w = d.getUTCDay(); if (w >= 1 && w <= 5) n++; }
+  return n;
+}
+/* Khung trang thai lay tu may phat hanh (chot sau phien). Trong ngay hom sau no dung yen ("T+2, +8.4%" ca ngay 25/09).
+   Trinh duyet tu dem lai T+n va tinh lai lai/lo theo GIA SONG, theo dung luat engine:
+   T+3 dong cua <= gia von la ban; tu T+4 cat lo 7%. Muc MA10/MA20 may phat hanh tinh lai sau phien. */
 function knTpnCapNhat(s){
   try {
-    if (!s || !s.c || !s.ts || String(s.c[0]).indexOf('TÍN HIỆU MUA HÔM NAY') < 0) return s;
-    const nv = new Date(), lb = new Date(s.ts*1000);
-    if (lb.toDateString() === nv.toDateString()) return s;
-    // dem so phien (thu 2-6) sau ngay mua, tinh ca hom nay khi da vao gio giao dich
-    let n = 0; const d = new Date(lb.getFullYear(), lb.getMonth(), lb.getDate());
-    while (true) { d.setDate(d.getDate() + 1); if (d > nv) break; const w = d.getDay(); if (w >= 1 && w <= 5) n++; }
-    if (n <= 0) return s;
-    // gia von = so dau tien trong cau "Vào lệnh ngay trong phiên tại 41.50. T+3 ..." (khong bat theo chu 'tại' vi dau tieng Viet co the khac ma Unicode)
+    if (!s || !s.c || !s.ts) return s;
+    const c0 = String(s.c[0]);
+    const laMua = c0.indexOf('TÍN HIỆU MUA HÔM NAY') >= 0, mGiu = c0.match(/ĐANG NẮM GIỮ — T\+(\d+)/);
+    if (!laMua && !mGiu) return s;
+    const them = knDemPhien(s.ts), n = (laMua ? 0 : +mGiu[1]) + them;
+    if (laMua && them <= 0) return s;
+    // gia von = so dau tien trong dL ("Vào lệnh ngay trong phiên tại 41.50..." / "Giá vốn 41.50. ...")
     const fill = +(((String(s.dL || s.dA || '').match(/(\d+(?:[.,]\d+)?)/) || [])[1] || '').replace(',', '.'));
-    const r = byT[curT] || {}; const px = (r.p != null && isFinite(r.p)) ? r.p : null;
+    const r = byT[curT] || {}; const px = (r.p != null && isFinite(r.p) && r.p > 0) ? r.p : null;
     const pnl = (fill && px) ? (px / fill - 1) * 100 : null;
     const chip = ['ĐANG NẮM GIỮ — T+' + n + (pnl != null ? ', ' + (pnl > 0 ? '+' : '') + pnl.toFixed(1) + '%' : ''),
                   pnl != null && pnl < 0 ? '#fdecec' : '#e7f6ec', pnl != null && pnl < 0 ? '#e5484d' : '#128a3e'];
+    if (!laMua && them <= 0) return { c: chip, dL: s.dL, dA: s.dA, ts: s.ts };   // cung ngay du lieu: giu loi dan cua may, chi cap nhat %
     const f2 = x => x >= 100 ? x.toFixed(1) : x.toFixed(2);
     const tx = fill ? ('Giá vốn ' + f2(fill) + '. ' + (n < 3 ? 'Chờ hàng về — T+3: đóng cửa ≤ ' + f2(fill) + ' là BÁN toàn bộ.'
-                                                       : 'BÁN nếu hôm nay đóng cửa dưới ' + f2(fill*0.93) + ' (mốc MA tính lại sau phiên).'))
+                                                     : n === 3 ? 'Hôm nay T+3: đóng cửa ≤ ' + f2(fill) + ' là BÁN toàn bộ; trên giá vốn thì giữ, từ T+4 cắt lỗ dưới ' + f2(fill*0.93) + '.'
+                                                     : 'BÁN nếu hôm nay đóng cửa dưới ' + f2(fill*0.93) + ' (mốc MA tính lại sau phiên).'))
                     : 'Đã vào lệnh phiên trước. Bản cập nhật sau phiên sẽ tính lại mốc giữ/bán.';
     const bm = String(s.dL || s.dA || '').match(/Buy (\d+(?:\.\d+)?)% tài khoản/);
     const tx2 = bm ? tx + ' Tỷ trọng: Buy ' + bm[1] + '% tài khoản.' : tx;
@@ -2996,6 +3008,7 @@ function knTpnCapNhat(s){
 function renderTPN(s){
   const el = document.getElementById('dTpn');
   if (!el) return;
+  window.__tpnSt = s;   // giu ban goc de nhip gia song ve lai (knTpnCapNhat tinh T+n, lai/lo theo gia moi)
   let chip, desc;
   s = knTpnCapNhat(s);
   if (s && s.c) {
@@ -3962,6 +3975,7 @@ document.addEventListener('visibilitychange', () => {
     views.push('fund');
     const b = document.createElement('button');
     b.className = 'nav-link'; b.dataset.view = 'fund'; b.textContent = 'Fund Insight';
+    b.style.display = 'none';   // 25/09/2026 anh Khoa: tam an tab Fund Insight (chua on). Bo dong nay la hien lai.
     b.onclick = () => showView('fund');
     const nb = nav.querySelector('[data-view="detail"]');
     nb ? nav.insertBefore(b, nb) : nav.appendChild(b);
