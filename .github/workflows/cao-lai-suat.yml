@@ -13,6 +13,11 @@ on:
         required: false
         default: ""
         type: string
+      tu:
+        description: Thang bat dau cho script (YYYY-MM)
+        required: false
+        default: "2012-01"
+        type: string
 permissions:
   contents: write
 jobs:
@@ -27,6 +32,7 @@ jobs:
       env:
         URLS: ${{ inputs.urls }}
         SCRIPT: ${{ inputs.script }}
+        TU: ${{ inputs.tu }}
       run: |-
         set +e
         mkdir -p /tmp/out
