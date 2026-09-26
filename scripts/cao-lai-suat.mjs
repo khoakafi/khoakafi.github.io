@@ -13,14 +13,14 @@ const ngu = ms => new Promise(r => setTimeout(r, ms));
 // Dung curl (fetch cua Node bi sbv.gov.vn tu choi, curl thi qua) — ghi ma HTTP de do.
 const codes = [];
 async function tai(url, bin) {
-  for (let k = 0; k < 3; k++) {
+  for (let k = 0; k < 4; k++) {
     try {
       const f = '/tmp/_cao.bin';
       const out = execFileSync('curl', ['-s', '--compressed', '-L', '-m', '40', '-o', f, '-w', '%{http_code} %{url_effective}',
         '-H', 'User-Agent: ' + UA, '-H', 'Accept: text/html,application/pdf,*/*', '-H', 'Accept-Language: vi-VN,vi;q=0.9', url]).toString();
       const code = +out.slice(0, 3); codes.push(code + ' ' + url.slice(0, 160));
       if (code === 404) return null;
-      if (code !== 200) { await ngu(1500); continue; }
+      if (code !== 200) { await ngu(code === 403 ? 90000 : 3000); continue; }
       const b = fs.readFileSync(f);
       return bin ? b : { url: out.slice(4), text: b.toString('utf8') };
     } catch (e) { codes.push('ERR ' + e.message.slice(0, 80)); await ngu(1500); }
@@ -28,33 +28,39 @@ async function tai(url, bin) {
   return null;
 }
 const text = h => h.replace(/<(script|style)[\s\S]*?<\/\1>/g, '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ');
-const tu = process.env.TU || '2012-01';
 const log = [];
-const now = new Date();
-for (let y = +tu.slice(0, 4); y <= now.getUTCFullYear(); y++) for (let m = 1; m <= 12; m++) {
-  const key = `${y}-${String(m).padStart(2, '0')}`;
-  if (key < tu || key > `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, '0')}`) continue;
-  let got = null;
-  for (const mm of [String(m), String(m).padStart(2, '0')]) {
-    for (const pre of ['/vi/w/', '/w/']) {
-      const r = await tai(BASE + pre + SLUG + mm + '/' + y);
-      if (r && /<title>[^<]*Diễn biến lãi suất[^<]*<\/title>/i.test(r.text)) { got = r; break; }
-    }
-    if (got) break;
+const DELAY = +(process.env.DELAY || 8000);
+// Lan theo chuoi link: moi bai co link sang cac bai "Dien bien lai suat" khac (thang truoc).
+const seen = new Set(), queue = [BASE + '/vi/w/' + SLUG + '8/2026'];
+const RE_LINK = /href="((?:https:\/\/sbv\.gov\.vn)?\/(?:vi\/)?w\/di%E1%BB%85n-bi%E1%BA%BFn-l%C3%A3i-su%E1%BA%A5t[^"#?]*)"/gi;
+const MAX = +(process.env.MAX || 400);
+let n0 = 0;
+while (queue.length && n0++ < MAX) {
+  const url = queue.shift(); const k0 = decodeURIComponent(url).replace(/^https:\/\/sbv\.gov\.vn/, '').replace(/^\/vi/, '');
+  if (seen.has(k0) || /\/-\/categories\//.test(k0)) continue; seen.add(k0);
+  const got = await tai(url.startsWith('http') ? url : BASE + url);
+  await ngu(DELAY);
+  if (!got || !/<title>[^<]*Diễn biến lãi suất[^<]*<\/title>/i.test(got.text)) { log.push(`LOI ${k0}`); continue; }
+  for (const m of got.text.matchAll(RE_LINK)) {
+    const l = m[1].replace(/^https:\/\/sbv\.gov\.vn/, '');
+    const k = decodeURIComponent(l).replace(/^\/vi/, '');
+    if (!seen.has(k) && !/\/-\/categories\//.test(k)) queue.push(l);
   }
-  if (!got) { log.push(`${key} khong co bai`); continue; }
+  const tt = (got.text.match(/<title>([^<]*)<\/title>/i) || [])[1] || '';
+  const mt = tt.match(/tháng\s*(\d{1,2})\s*[\/.-]\s*(\d{4})/i) || tt.match(/(\d{1,2})\s*[\/.-]\s*(\d{4})/);
+  const key = mt ? `${mt[2]}-${String(+mt[1]).padStart(2, '0')}` : 'x' + n0;
   const pdfs = [...new Set([...got.text.matchAll(/(\/documents\/[^"'\s>]+?\.pdf[^"'\s>]*)/gi)].map(x => x[1].replace(/&amp;/g, '&')))];
   const t = text(got.text);
-  const i = t.search(/Diễn biến lãi suất của tổ chức tín dụng đối với khách hàng tháng/i);
-  fs.writeFileSync(`${OUT}/${key}.txt`, t.slice(Math.max(0, i), i + 6000));
+  const i = t.search(/Diễn biến lãi suất của tổ chức tín dụng/i);
+  fs.writeFileSync(`${OUT}/${key}.txt`, tt + '\n' + t.slice(Math.max(0, i), i + 6000));
   let n = 0;
   for (const p of pdfs) {
-    const b = await tai(BASE + p, true); if (!b) continue;
+    const b = await tai(BASE + p, true); await ngu(DELAY / 2); if (!b) continue;
     const f = `${OUT}/${key}${n ? '-' + n : ''}.pdf`; fs.writeFileSync(f, b); n++;
     try { execFileSync('pdftotext', ['-layout', f, f + '.txt']); } catch (e) { log.push(`${key} pdftotext loi ${e.message}`); }
   }
-  log.push(`${key} OK pdf=${n} ${got.url}`);
-  await ngu(400);
+  log.push(`${key} OK pdf=${n} ${k0}`);
+  console.log(log.at(-1));
 }
 fs.writeFileSync(`${OUT}/log.txt`, log.join('\n'));
 fs.writeFileSync(`${OUT}/http.txt`, codes.join('\n'));
