@@ -34,11 +34,36 @@ const text = h => h.replace(/<(script|style)[\s\S]*?<\/\1>/g, '').replace(/<[^>]
 const log = [];
 const DELAY = +(process.env.DELAY || 12000);
 // mo trang chu truoc de lay cookie nhu trinh duyet
-await tai(BASE + '/'); await ngu(3000);
+if (!process.env.THANG) { await tai(BASE + '/'); await ngu(3000); }
 // Quet lui tung thang theo slug (cham DELAY ms/lan de khong bi WAF 403). Dung khi MISS thang lien tiep khong co bai.
 const MISS = +(process.env.MISS || 14);
 let d = new Date(Date.UTC(+(process.env.DEN || '2026-08').slice(0, 4), +(process.env.DEN || '2026-08').slice(5) - 1, 1)), miss = 0;
 const tu = process.env.TU || '2008-01';
+const DS = (process.env.THANG || '').split(/[ ,]+/).filter(Boolean);
+async function mot(key) {
+  const y = +key.slice(0, 4), m = +key.slice(5);
+  let got = null;
+  for (const mm of m < 10 ? [String(m), '0' + m] : [String(m)]) {
+    const r = await tai(BASE + '/vi/w/' + SLUG + mm + '/' + y); await ngu(DELAY);
+    if (r && /<title>[^<]*Diễn biến lãi suất[^<]*<\/title>/i.test(r.text)) { got = r; break; }
+  }
+  if (!got) return false;
+  const pdfs = [...new Set([...got.text.matchAll(/(\/documents\/[^"'\s>]+?\.pdf[^"'\s>]*)/gi)].map(x => x[1].replace(/&amp;/g, '&')))];
+  const t = text(got.text), i = t.search(/Diễn biến lãi suất của tổ chức tín dụng/i);
+  fs.writeFileSync(`${OUT}/${key}.txt`, t.slice(Math.max(0, i), i + 6000));
+  let n = 0;
+  for (const p of pdfs) {
+    const b = await tai(BASE + p, true); await ngu(DELAY / 2); if (!b) continue;
+    const f = `${OUT}/${key}${n ? '-' + n : ''}.pdf`; fs.writeFileSync(f, b); n++;
+    try { execFileSync('pdftotext', ['-layout', f, f + '.txt']); } catch (e) {}
+  }
+  return 'pdf=' + n;
+}
+if (DS.length) {
+  for (const k of DS) { let r; try { r = await mot(k); } catch (e) { r = 'LOI ' + e.message; } log.push(`${k} ${r === false ? 'khong co' : 'OK ' + r}`); console.log(log.at(-1)); }
+  fs.writeFileSync(`${OUT}/log-${DS.join('_')}.txt`, log.join('\n') + '\n' + codes.join('\n'));
+  process.exit(0);
+}
 try {
 while (miss < MISS) {
   const y = d.getUTCFullYear(), m = d.getUTCMonth() + 1, key = `${y}-${String(m).padStart(2, '0')}`;
