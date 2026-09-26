@@ -31,7 +31,7 @@ for (let y = +tu.slice(0, 4); y <= now.getUTCFullYear(); y++) for (let m = 1; m 
   for (const mm of [String(m), String(m).padStart(2, '0')]) {
     for (const pre of ['/vi/w/', '/w/']) {
       const r = await tai(BASE + pre + encodeURI(SLUG + mm + '/' + y));
-      if (r && /Diễn biến lãi suất/i.test(r.text) && !/Trang Chủ - Ngân hàng/.test(r.text.slice(0, 3000))) { got = r; break; }
+      if (r && /<title>[^<]*Diễn biến lãi suất[^<]*<\/title>/i.test(r.text)) { got = r; break; }
     }
     if (got) break;
   }
