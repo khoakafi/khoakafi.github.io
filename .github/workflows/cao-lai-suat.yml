@@ -16,7 +16,7 @@ on:
       tu:
         description: Thang bat dau cho script (YYYY-MM)
         required: false
-        default: "2012-01"
+        default: "2008-01"
         type: string
 permissions:
   contents: write
