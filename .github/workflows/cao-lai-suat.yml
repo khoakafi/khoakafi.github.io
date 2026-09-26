@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Cai pdftotext
+      if: ${{ inputs.script != '' }}
+      run: sudo apt-get install -y -qq poppler-utils >/dev/null
     - name: Tai
       env:
         URLS: ${{ inputs.urls }}
