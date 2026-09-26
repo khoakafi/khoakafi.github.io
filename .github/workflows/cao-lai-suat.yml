@@ -18,11 +18,17 @@ on:
         required: false
         default: "2008-01"
         type: string
+      den:
+        description: Thang bat dau quet lui (YYYY-MM)
+        required: false
+        default: "2026-08"
+        type: string
 permissions:
   contents: write
 jobs:
   cao:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
     - uses: actions/checkout@v4
     - name: Cai pdftotext
@@ -33,6 +39,8 @@ jobs:
         URLS: ${{ inputs.urls }}
         SCRIPT: ${{ inputs.script }}
         TU: ${{ inputs.tu }}
+        DEN: ${{ inputs.den }}
+        GH_TOKEN: ${{ github.token }}
       run: |-
         set +e
         mkdir -p /tmp/out
@@ -44,11 +52,12 @@ jobs:
           code=$(curl -s --compressed -L -m 40 -o "$f.body" -w "%{http_code}" -H "User-Agent: $UA" -H "Accept: text/html,application/json,*/*" -H "Accept-Language: vi-VN,vi;q=0.9" "$U")
           echo "$i $code $(wc -c <"$f.body") $U" | tee -a /tmp/out/index.txt
         done <<< "$URLS"
-        if [ -n "$SCRIPT" ]; then OUT=/tmp/out node "scripts/$SCRIPT.mjs" 2>&1 | tee /tmp/out/script.log; fi
-    - name: Day len nhanh lai-suat
-      run: |-
-        cd /tmp/out
-        git init -q -b lai-suat
-        git config user.name "github-actions"; git config user.email "actions@github.com"
-        git add -A; git commit -qm "cao lai suat $(date -u +%FT%TZ)"
-        git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" lai-suat
+        day() { ( cd /tmp/out && { [ -d .git ] || { git init -q -b lai-suat; git config user.name github-actions; git config user.email actions@github.com; }; } \
+          && git add -A && git commit -qm "cao lai suat $(date -u +%FT%TZ)" >/dev/null 2>&1; \
+          git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" lai-suat ) ; }
+        if [ -n "$SCRIPT" ]; then
+          ( while sleep 180; do day; done ) & BG=$!
+          OUT=/tmp/out node "scripts/$SCRIPT.mjs" 2>&1 | tee /tmp/out/script.log
+          kill $BG 2>/dev/null
+        fi
+        day

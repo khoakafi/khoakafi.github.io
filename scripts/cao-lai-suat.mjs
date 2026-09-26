@@ -12,6 +12,7 @@ const SLUG = 'di%E1%BB%85n-bi%E1%BA%BFn-l%C3%A3i-su%E1%BA%A5t-c%E1%BB%A7a-t%E1%B
 const ngu = ms => new Promise(r => setTimeout(r, ms));
 // Dung curl (fetch cua Node bi sbv.gov.vn tu choi, curl thi qua) — ghi ma HTTP de do.
 const codes = [];
+let chan = 0;
 async function tai(url, bin) {
   for (let k = 0; k < 4; k++) {
     try {
@@ -19,11 +20,13 @@ async function tai(url, bin) {
       const out = execFileSync('curl', ['-s', '--compressed', '-L', '-m', '40', '-o', f, '-w', '%{http_code} %{url_effective}',
         '-H', 'User-Agent: ' + UA, '-H', 'Accept: text/html,application/pdf,*/*', '-H', 'Accept-Language: vi-VN,vi;q=0.9', url]).toString();
       const code = +out.slice(0, 3); codes.push(code + ' ' + url.slice(0, 160));
-      if (code === 404) return null;
-      if (code !== 200) { await ngu(code === 403 ? 90000 : 3000); continue; }
+      if (code === 404) { chan = 0; return null; }
+      if (code === 403) { chan++; if (chan >= 6) { console.log('BI CHAN 403 lien tuc -> dung'); throw new Error('CHAN'); } await ngu(60000); continue; }
+      if (code !== 200) { await ngu(3000); continue; }
+      chan = 0;
       const b = fs.readFileSync(f);
       return bin ? b : { url: out.slice(4), text: b.toString('utf8') };
-    } catch (e) { codes.push('ERR ' + e.message.slice(0, 80)); await ngu(1500); }
+    } catch (e) { if (e.message === 'CHAN') throw e; codes.push('ERR ' + e.message.slice(0, 80)); await ngu(1500); }
   }
   return null;
 }
@@ -34,6 +37,7 @@ const DELAY = +(process.env.DELAY || 8000);
 const MISS = +(process.env.MISS || 14);
 let d = new Date(Date.UTC(+(process.env.DEN || '2026-08').slice(0, 4), +(process.env.DEN || '2026-08').slice(5) - 1, 1)), miss = 0;
 const tu = process.env.TU || '2008-01';
+try {
 while (miss < MISS) {
   const y = d.getUTCFullYear(), m = d.getUTCMonth() + 1, key = `${y}-${String(m).padStart(2, '0')}`;
   if (key < tu) break;
@@ -45,7 +49,7 @@ while (miss < MISS) {
     if (r && /<title>[^<]*Diễn biến lãi suất[^<]*<\/title>/i.test(r.text)) { got = r; break; }
     if (m >= 10) break;
   }
-  if (!got) { miss++; log.push(`${key} khong co`); console.log(log.at(-1)); continue; }
+  if (!got) { miss++; log.push(`${key} khong co`); console.log(log.at(-1)); fs.writeFileSync(`${OUT}/log.txt`, log.join('\n')); continue; }
   miss = 0;
   const pdfs = [...new Set([...got.text.matchAll(/(\/documents\/[^"'\s>]+?\.pdf[^"'\s>]*)/gi)].map(x => x[1].replace(/&amp;/g, '&')))];
   const t = text(got.text);
@@ -58,7 +62,9 @@ while (miss < MISS) {
     try { execFileSync('pdftotext', ['-layout', f, f + '.txt']); } catch (e) { log.push(`${key} pdftotext loi ${e.message}`); }
   }
   log.push(`${key} OK pdf=${n}`); console.log(log.at(-1));
+  fs.writeFileSync(`${OUT}/log.txt`, log.join('\n'));
 }
+} catch (e) { log.push('DUNG: ' + e.message); }
 fs.writeFileSync(`${OUT}/log.txt`, log.join('\n'));
 fs.writeFileSync(`${OUT}/http.txt`, codes.join('\n'));
 console.log(log.join('\n'));
