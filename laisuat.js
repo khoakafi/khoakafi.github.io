@@ -1,5 +1,5 @@
 /* ===== laisuat.js — Lai suat tien gui & cho vay binh quan (NHNN) + so voi loi suat loi nhuan VN-Index =====
-   Dat o cuoi trang chinh (Hệ thống). 26/09/2026: truoc day gan vao tab Hang hoa — tab nay bi an tu 12/09 nen khong ai thay. So NHNN: can tren cua khoang cong bo, cap nhat tay moi thang (NHNN tre ~3 tuan).
+   Dat trong tab Hang hoa (dang an). 26/09/2026 anh Khoa: CHUA dua len trang chinh — chot y tuong/insight truoc. So NHNN: can tren cua khoang cong bo, cap nhat tay moi thang (NHNN tre ~3 tuan).
    P/E VN-Index lay song tu VNDirect finfo (fallback so chot san). */
 window.LS = {
   nguon: 'NHNN — cận trên khoảng công bố',
@@ -68,7 +68,7 @@ window.LS = {
   }
 
   function build(){
-    const host = document.getElementById('view-market'); if (!host || !window.Chart) return;
+    const host = document.getElementById('view-hh'); if (!host || !window.Chart) return;
     if (document.getElementById('lsCard')) return;
     css();
     const L = window.LS, n = L.m.length - 1;
@@ -136,7 +136,7 @@ window.LS = {
 
   async function tick(){
     try {
-      const host = document.getElementById('view-market'); if (!host) return;
+      const host = document.getElementById('view-hh'); if (!host) return;
       if (!document.getElementById('lsCard')) { await loadPE(); build(); }
       // mo tab khi canvas dang an -> ve lai cho du khung
       if (host.offsetParent && ch1 && ch1.width < 50) draw();
