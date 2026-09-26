@@ -1,0 +1,45 @@
+name: cao-lai-suat
+# Tai trang/API ve nhanh `lai-suat` de phan tich lai suat (chi doc nguon ngoai, khong dung du lieu web)
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: Danh sach URL, moi dong mot URL (hoac de trong va dung script)
+        required: false
+        default: ""
+        type: string
+      script:
+        description: Chay node scripts/<ten>.mjs (tuy chon, vd cao-lai-suat)
+        required: false
+        default: ""
+        type: string
+permissions:
+  contents: write
+jobs:
+  cao:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Tai
+      env:
+        URLS: ${{ inputs.urls }}
+        SCRIPT: ${{ inputs.script }}
+      run: |-
+        set +e
+        mkdir -p /tmp/out
+        UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+        i=0
+        while IFS= read -r U; do
+          [ -z "$U" ] && continue
+          i=$((i+1)); f=$(printf "/tmp/out/%03d" $i)
+          code=$(curl -s --compressed -L -m 40 -o "$f.body" -w "%{http_code}" -H "User-Agent: $UA" -H "Accept: text/html,application/json,*/*" -H "Accept-Language: vi-VN,vi;q=0.9" "$U")
+          echo "$i $code $(wc -c <"$f.body") $U" | tee -a /tmp/out/index.txt
+        done <<< "$URLS"
+        if [ -n "$SCRIPT" ]; then OUT=/tmp/out node "scripts/$SCRIPT.mjs" 2>&1 | tee /tmp/out/script.log; fi
+    - name: Day len nhanh lai-suat
+      run: |-
+        cd /tmp/out
+        git init -q -b lai-suat
+        git config user.name "github-actions"; git config user.email "actions@github.com"
+        git add -A; git commit -qm "cao lai suat $(date -u +%FT%TZ)"
+        git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" lai-suat
