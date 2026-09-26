@@ -17,8 +17,8 @@ async function tai(url, bin) {
   for (let k = 0; k < 4; k++) {
     try {
       const f = '/tmp/_cao.bin';
-      const out = execFileSync('curl', ['-s', '--compressed', '-L', '-m', '40', '-o', f, '-w', '%{http_code} %{url_effective}',
-        '-H', 'User-Agent: ' + UA, '-H', 'Accept: text/html,application/pdf,*/*', '-H', 'Accept-Language: vi-VN,vi;q=0.9', url]).toString();
+      const out = execFileSync('curl', ['-s', '--compressed', '-L', '-m', '40', '-c', '/tmp/_cao.jar', '-b', '/tmp/_cao.jar', '-e', BASE + '/', '-o', f, '-w', '%{http_code} %{url_effective}',
+        '-H', 'User-Agent: ' + UA, '-H', 'Accept: text/html,application/xhtml+xml,application/pdf,*/*;q=0.8', '-H', 'Sec-Fetch-Mode: navigate', '-H', 'Upgrade-Insecure-Requests: 1', '-H', 'Accept-Language: vi-VN,vi;q=0.9', url]).toString();
       const code = +out.slice(0, 3); codes.push(code + ' ' + url.slice(0, 160));
       if (code === 404) { chan = 0; return null; }
       if (code === 403) { chan++; if (chan >= 6) { console.log('BI CHAN 403 lien tuc -> dung'); throw new Error('CHAN'); } await ngu(60000); continue; }
@@ -32,7 +32,9 @@ async function tai(url, bin) {
 }
 const text = h => h.replace(/<(script|style)[\s\S]*?<\/\1>/g, '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ');
 const log = [];
-const DELAY = +(process.env.DELAY || 8000);
+const DELAY = +(process.env.DELAY || 12000);
+// mo trang chu truoc de lay cookie nhu trinh duyet
+await tai(BASE + '/'); await ngu(3000);
 // Quet lui tung thang theo slug (cham DELAY ms/lan de khong bi WAF 403). Dung khi MISS thang lien tiep khong co bai.
 const MISS = +(process.env.MISS || 14);
 let d = new Date(Date.UTC(+(process.env.DEN || '2026-08').slice(0, 4), +(process.env.DEN || '2026-08').slice(5) - 1, 1)), miss = 0;
