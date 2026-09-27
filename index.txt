@@ -1,0 +1,7 @@
+1 200 796 https://stooq.com/q/d/l/?s=usdvnd&i=d
+2 200 796 https://stooq.com/q/d/l/?s=10usy.b&i=d
+3 429 19 https://query2.finance.yahoo.com/v8/finance/chart/VND%3DX?range=10y&interval=1d
+4 404 23 https://api.frankfurter.app/2018-01-01..2018-01-10?from=USD&to=VND
+5 404 55 https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2020-12-01/v1/currencies/usd.min.json
+6 000  https://fred.stlouisfed.org/graph/fredgraph.csv?id=CCUSMA02VNM618N
+7 000  https://fred.stlouisfed.org/graph/fredgraph.csv?id=EXVNUS
