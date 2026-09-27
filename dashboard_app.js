@@ -2620,10 +2620,13 @@ function loadProChart(){
       const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
       if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, curOhlc.t[ci], proCandle);
     } catch(e){} mirroring = false; });
+  /* Khung #proK duoc GIU khi doi ma -> listener chi gan 1 lan. Truoc day no nho showLeg cua MA DAU TIEN:
+     roi chuot khoi chart (vd sang bang ben phai) la ghi de gia/GTGD cua ma cu len legend. Nay goi qua window.__proRoi (ma hien tai). */
+  window.__proRoi = () => { lastCi = -999; showLeg(null); updateKpis(null); updateDPx(null); };
   const kEl = document.getElementById('proK');
-  if (kEl && !kEl.dataset.hovfix) { kEl.dataset.hovfix = '1';
+  if (kEl && !kEl.dataset.hovfix2) { kEl.dataset.hovfix2 = '1';
     kEl.addEventListener('pointerenter', () => { window.__dHov = 1; });
-    kEl.addEventListener('pointerleave', () => { window.__dHov = 0; lastCi = -999; showLeg(null); updateKpis(null); updateDPx(null); });
+    kEl.addEventListener('pointerleave', () => { window.__dHov = 0; if (window.__proRoi) window.__proRoi(); });
   }
 }
 window.openDetail = t => { ga('view_ticker', {ticker: t}); showView('detail', true); $$('.nav-link').forEach(b=>b.classList.toggle('active', b.dataset.view==='detail')); inits.detail(t); };
