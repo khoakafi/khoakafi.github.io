@@ -41,19 +41,16 @@
 #view-tq .tqdk .ic.x{background:var(--red)} #view-tq .tqdk .ic.v{background:var(--green)}
 #view-tq .tqdk b{display:block;font-size:14px;color:#111827;margin-bottom:2px}
 #view-tq .tqdk span{font-size:12.5px;color:#4B5563;line-height:1.45}
-#view-tq .tqso{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
-#view-tq .tqso div{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px}
-#view-tq .tqso b{display:block;font-size:26px;font-weight:800;color:var(--green-dark);line-height:1.15}
-#view-tq .tqso span{font-size:12.5px;color:#4B5563}
-#view-tq .tqsong{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-#view-tq .tqsong div{background:var(--green-soft);border-radius:9px;padding:7px 11px;font-size:12px;color:#374151}
-#view-tq .tqsong div b{display:block;font-size:15px;color:var(--green-dark)}
-#view-tq .tqsong div.hong{background:var(--red-soft)} #view-tq .tqsong div.hong b{color:var(--red)}
 #view-tq .tqleg{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#374151;margin:0 0 6px}
 #view-tq .tqleg i{display:inline-block;width:14px;height:3px;vertical-align:3px;margin-right:6px;border-radius:2px}
 #view-tq .tqleg i.bx{width:12px;height:12px;vertical-align:-2px}
+#view-tq .tqleg2{gap:8px 18px;margin:0 0 10px}
+#view-tq .tqleg2 span{display:inline-flex;align-items:center;gap:7px}
+#view-tq .lgc{width:12px;height:12px;border-radius:50%;background:#18A34B;box-shadow:0 0 0 3px #fff,0 0 0 5px rgba(24,163,75,.3);display:inline-block}
+#view-tq .lgp{font-size:11px;font-weight:800;color:#128A3E;background:#fff;border:1px solid #9FD9B4;border-radius:10px;padding:1px 7px}
+#view-tq .lgp.lgx{color:#D93D42;border-color:#F4B4B6;background:#FFF5F5}
 #view-tq .ft{font-size:11.5px;color:${MUT};line-height:1.6;margin:4px 2px 0}
-@media(max-width:900px){#view-tq .tqdks{grid-template-columns:1fr}#view-tq .tqso{gap:8px}#view-tq .tqso div{padding:10px}#view-tq .tqso b{font-size:19px}#view-tq .tqso span{font-size:11.5px}#view-tq .tqhero h3{font-size:20px}#view-tq .tqc{height:250px}#view-tq .tqhero{padding:18px 16px}}`;
+@media(max-width:900px){#view-tq .tqdks{grid-template-columns:1fr}#view-tq .tqhero h3{font-size:20px}#view-tq .tqc{height:250px}#view-tq .tqhero{padding:18px 16px}}`;
     document.head.appendChild(s);
   }
 
@@ -77,8 +74,6 @@
   function html(T, X){
     const {N, kL, nL, ma50, gt20, can, k0, eps} = X;
     const pct = Math.round(nL[2] * 100), dk1 = nL[2] >= 1.2, dk2 = nL[1] > ma50[kL];
-    const co = eps.filter(e => e.f60 != null), ok = co.filter(e => e.f60 > 0);
-    const tb = co.reduce((a, e) => a + e.f60, 0) / co.length;
     const ls = T.ls, lsN = ls.m.length - 1;
     // thanh 3 vùng: 0% .. 200%
     const vt = v => Math.max(1, Math.min(99, v / 200 * 100));
@@ -103,20 +98,18 @@
   </div>
 </div>
 
-<div class="tqso">
-  <div><b>${eps.length} lần</b><span>tín hiệu tiền vào, từ 2018</span></div>
-  <div><b>${ok.length}/${co.length} lần</b><span>lần thị trường tăng sau 3 tháng</span></div>
-  <div><b>+${vn(tb)}%</b><span>bình quân 3 tháng sau tín hiệu</span></div>
-</div>
-
 <div class="card">
-  <div class="tqt">Mỗi con sóng lớn đều bắt đầu khi tiền vào mạnh</div>
-  <div class="tqs">Giá 150 cổ phiếu giao dịch nhiều nhất. Vùng xanh: lúc tiền vào mạnh và giá đi lên.</div>
-  <div class="tqleg"><span><i style="background:${EWC}"></i>Giá 150 cổ phiếu (2018 = 100)</span><span><i class="bx" style="background:${XANH}"></i>Tiền vào mạnh</span></div>
+  <div class="tqt">Mỗi lần tiền vào mạnh, thị trường đi lên sau đó</div>
+  <div class="tqs">Giá 150 cổ phiếu giao dịch nhiều nhất từ 2018. Nhìn chấm xanh và ô số trên chart để thấy những lần "chờ tiền vào" trước đây đã đáng chờ thế nào.</div>
+  <div class="tqleg tqleg2">
+    <span><b class="lgc"></b>Tiền vào mạnh + giá đi lên = <b>thời điểm mua</b></span>
+    <span><b class="lgp">+31%</b>thị trường tăng tới đỉnh sau đó</span>
+    <span><b class="lgp lgx">✕ hỏng</b>tín hiệu tắt nhanh, không thành sóng</span>
+    <span><i class="bx" style="background:${XANH}"></i>giai đoạn tiền còn vào</span>
+  </div>
   <div class="tqc"><canvas id="tqC1" aria-label="Giá 150 cổ phiếu giao dịch nhiều nhất, vùng xanh là lúc tiền vào mạnh"></canvas></div>
-  <div class="tqt" style="font-size:14px;margin-top:16px">Tiền giao dịch so với mức bình thường của năm</div>
+  <div class="tqt" style="font-size:14px;margin-top:16px">Tiền giao dịch so với mức bình thường của năm <span class="mini" style="font-weight:500">— chấm xanh: lúc vượt 120%</span></div>
   <div class="tqc sm"><canvas id="tqC2" aria-label="Thanh khoản so với mức bình thường của năm, %"></canvas></div>
-  <div class="tqsong">${eps.map(e => `${e.f60 != null && e.f60 <= 0 ? `<div class="hong">${ngay(N[e.a][0]).slice(3)}<b>Tín hiệu hỏng</b>tắt sau ${e.len} phiên</div>` : `<div>${ngay(N[e.a][0]).slice(3)}<b>+${vn(e.pk,0)}%</b>tới đỉnh sóng</div>`}`).join('')}</div>
 </div>
 
 <div class="card">
@@ -162,16 +155,27 @@ Nguồn: VNDirect, NHNN. Quy tắc cố định, không dùng mô hình học m�
         if (s === 'A') { const x0 = Math.max(c.left, x.getPixelForValue(k)), x1 = Math.min(c.right, x.getPixelForValue(j+1 < N.length ? j+1 : j));
           g.fillRect(x0, c.top, Math.max(1.5, x1 - x0), c.bottom - c.top); }
         k = j + 1; } g.restore(); }};
-    const nhan = {id:'tqNhan', afterDatasetsDraw(ch){ const {ctx:g, scales:{x, y}} = ch;
-      if (ch.width >= 560) eps.filter(e => e.pk >= 15).filter((e, i, arr) => !arr.some(o => o !== e && Math.abs(o.pkk - e.pkk) < 90 && o.pk > e.pk))
-        .forEach(e => pill(g, '+' + vn(e.pk, 0) + '%', x.getPixelForValue(e.pkk), y.getPixelForValue(N[e.pkk][1]) - 16, '#fff', '#128A3E', '#9FD9B4'));
-      const px = x.getPixelForValue(kL), py = y.getPixelForValue(nL[1]); cham(g, px, py, EWC);
-      pill(g, 'Hôm nay', px - 34, py - 22, '#111827', '#fff'); }};
+    const nhan = {id:'tqNhan', afterDatasetsDraw(ch){ const {ctx:g, chartArea:c, scales:{x, y}} = ch, nho = ch.width < 560, dat = [];
+      g.save(); g.font = '800 11.5px ' + FONT;
+      eps.forEach(e => { const hong = e.f60 != null && e.f60 <= 0, px = x.getPixelForValue(e.a), py = y.getPixelForValue(N[e.a][1]);
+        const t = hong ? '✕ hỏng' : '+' + vn(e.pk, 0) + '%', w = g.measureText(t).width + 16;
+        if (nho && !hong && e.pk < 30) { cham(g, px, py, '#18A34B'); return; }
+        let ty = Math.max(c.top + 12, py - 34);
+        while (dat.some(d => Math.abs(d.x - px) < (d.w + w) / 2 + 4 && Math.abs(d.y - ty) < 23)) ty -= 24;
+        if (ty < c.top + 10) { ty = py + 34; while (dat.some(d => Math.abs(d.x - px) < (d.w + w) / 2 + 4 && Math.abs(d.y - ty) < 23)) ty += 24; }
+        dat.push({x:px, y:ty, w});
+        g.strokeStyle = hong ? 'rgba(229,72,77,.6)' : 'rgba(24,163,75,.7)'; g.lineWidth = 1.2; g.setLineDash([2,2]);
+        g.beginPath(); g.moveTo(px, py); g.lineTo(px, ty + (ty < py ? 10 : -10)); g.stroke(); g.setLineDash([]);
+        cham(g, px, py, hong ? '#E5484D' : '#18A34B');
+        pill(g, t, px, ty, hong ? '#FFF5F5' : '#fff', hong ? '#D93D42' : '#128A3E', hong ? '#F4B4B6' : '#9FD9B4'); });
+      g.restore();
+      const px = x.getPixelForValue(kL), py = y.getPixelForValue(nL[1]); cham(g, px, py, '#111827');
+      const tn = nho ? 'Hôm nay' : (nL[3] === 'A' ? 'Hôm nay · tiền đang vào' : 'Hôm nay · đang chờ'); pill(g, tn, px - (nho ? 24 : 60), py + 24, '#111827', '#fff'); }};
     const c1 = new Chart(document.getElementById('tqC1'), {type:'line', plugins:[nen, nhan, doc_],
       data:{labels:lab, datasets:[{label:'Giá 150 cổ phiếu', data:N.map(r => r[1]), borderColor:EWC, borderWidth:2, pointRadius:0, pointHoverRadius:5,
         pointHoverBackgroundColor:EWC, pointHoverBorderColor:'#fff', pointHoverBorderWidth:2, tension:.25,
         fill:'start', backgroundColor:doc(EWC, 'rgba(31,111,178,.22)', 'rgba(31,111,178,0)')}]},
-      options:{responsive:true, maintainAspectRatio:false, animation:{duration:600}, interaction:{mode:'index', intersect:false}, layout:{padding:{top:24, right:4}},
+      options:{responsive:true, maintainAspectRatio:false, animation:{duration:600}, interaction:{mode:'index', intersect:false}, layout:{padding:{top:30, right:4}},
         plugins:{legend:{display:false}, tooltip:{...tip, callbacks:{title:it => ngay(it[0].label), label:it => ' Giá 150 cổ phiếu: ' + vn(it.parsed.y, 0),
           footer:it => { const r = N[it[0].dataIndex]; return 'Tiền giao dịch ' + Math.round(r[2] * 100) + '% mức bình thường' + (r[3] === 'A' ? ' · tiền vào mạnh' : ''); }}}},
         scales:{x:trucX(nam), y:trucY(v => vn(v, 0))}}});
@@ -187,6 +191,7 @@ Nguồn: VNDirect, NHNN. Quy tắc cố định, không dùng mô hình học m�
       g.fillStyle = '#128A3E'; g.fillText('TIỀN VÀO MẠNH · trên 120%', c.left + 8, c.top + 15);
       g.fillStyle = '#D93D42'; g.fillText('TIỀN RÚT · dưới 80%', c.left + 8, c.bottom - 8); g.restore(); },
       afterDatasetsDraw(ch){ const {ctx:g, scales:{x, y}} = ch, v = Math.round(nL[2] * 100), px = x.getPixelForValue(kL), py = y.getPixelForValue(v);
+        eps.forEach(e => cham(g, x.getPixelForValue(e.a), y.getPixelForValue(Math.round(N[e.a][2] * 100)), e.f60 != null && e.f60 <= 0 ? '#E5484D' : '#18A34B'));
         cham(g, px, py, mau(v)); pill(g, v + '%', px - 28, py - 18, mau(v), '#fff'); }};
     const c2 = new Chart(document.getElementById('tqC2'), {type:'line', plugins:[vung, doc_],
       data:{labels:lab, datasets:[{label:'Tiền giao dịch', data:N.map(r => Math.round(r[2] * 100)), borderWidth:2, pointRadius:0, pointHoverRadius:5,
