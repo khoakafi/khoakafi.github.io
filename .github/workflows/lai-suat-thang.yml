@@ -1,0 +1,27 @@
+name: lai-suat-thang
+# Moi ngay xem trang chu NHNN co bai "Dien bien lai suat ... thang M/YYYY" moi chua (NHNN dang ~17-18 thang sau).
+# Co thi tai PDF, doc so, them vao sbv-thang.json tren nhanh lai-suat-data. Chi 3 luot goi NHNN/lan chay.
+on:
+  schedule:
+    - cron: '23 2 * * *'   # 09:23 gio VN
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  lay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v4
+    - run: sudo apt-get install -y -qq poppler-utils >/dev/null
+    - name: Lay so thang moi
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |-
+        git clone -q --depth 1 -b lai-suat-data "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/data
+        FILE=/tmp/data/sbv-thang.json node scripts/lai-suat-thang.mjs
+        cd /tmp/data
+        if ! git diff --quiet; then
+          git config user.name github-actions; git config user.email actions@github.com
+          git commit -qam "NHNN lai suat thang $(date -u +%F)" && git push -q origin HEAD:lai-suat-data
+        fi
