@@ -131,6 +131,14 @@ Engine `wstar` thêm điều kiện giá nổ > MA50 (như luật X).
 (2) `npYAt` để quý mới nhất có npY null đè giá trị cũ → coi là "đạt"; (3) lỗ → lãi (n0<0, n1>0) có thể rơi vào dải 0–25% → W;
 (4) ghi sổ tín hiệu kiểu append-only để giá điều chỉnh không xoá được dấu cũ.
 
+## Tab "Toàn cảnh" (27/09/2026, anh Khoa duyệt)
+
+`tongquan.js` (tab thêm vào nav cạnh "Hệ thống", kiểu tab Hàng hoá; link chia sẻ `#toan-canh`) + `tongquan_data.js` (`window.TQ`, không `?v=`,
+sw.js xếp vào nhóm dữ liệu). Dữ liệu do kafi-core workflow **`tong-quan.yml`** (17:05 VN, T2–T6) dựng: `research/breadth.mjs` → `research/phat-tongquan.mjs`
+→ PUT bằng `WEB_TOKEN`; thiếu/hỏng (N<2000 phiên, phiên cuối cũ >10 ngày, NaN, lỗi tải >70 mã) thì **không ghi**.
+Chỉ báo dòng tiền = giá trị khớp THẬT TB20 ÷ TB250 toàn thị trường; A = ≥1,2 và rổ top 150 (EW, chọn theo thanh khoản tháng trước) > MA50; D = <0,8.
+**Không đưa B★ vào tab này** (anh Khoa: B★ cũng theo dòng tiền chung). Lãi suất: nền = cận trên NHNN (theo chart VnExpress), đè bằng `sbv-thang.json` (nhánh `lai-suat-data`).
+
 ## Lãi suất NHNN theo tháng (27/09/2026)
 
 Nguồn gốc số chart VnExpress = PDF "Diễn biến lãi suất của TCTD đối với khách hàng tháng M/YYYY" của NHNN (đăng ~17–18 tháng sau;
