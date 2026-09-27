@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: '23 2 * * *'   # 09:23 gio VN
   workflow_dispatch:
+    inputs:
+      thu:
+        description: Chay thu het chuoi (bo thang moi nhat khoi ban sao, doc lai PDF), khong ghi gi
+        type: boolean
+        default: false
 permissions:
   contents: write
 jobs:
@@ -19,6 +24,10 @@ jobs:
         GH_TOKEN: ${{ github.token }}
       run: |-
         git clone -q --depth 1 -b lai-suat-data "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/data
+        if [ "${{ inputs.thu }}" = "true" ]; then
+          node -e "const f=require('fs'),d=JSON.parse(f.readFileSync('/tmp/data/sbv-thang.json'));const k=Object.keys(d.thang).pop();console.log('THU: bo',k,JSON.stringify(d.thang[k]));delete d.thang[k];f.writeFileSync('/tmp/thu.json',JSON.stringify(d))"
+          FILE=/tmp/thu.json node scripts/lai-suat-thang.mjs; exit 0
+        fi
         FILE=/tmp/data/sbv-thang.json node scripts/lai-suat-thang.mjs
         cd /tmp/data
         if ! git diff --quiet; then
