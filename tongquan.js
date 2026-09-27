@@ -49,6 +49,39 @@
 #view-tq .lgc{width:12px;height:12px;border-radius:50%;background:#18A34B;box-shadow:0 0 0 3px #fff,0 0 0 5px rgba(24,163,75,.3);display:inline-block}
 #view-tq .lgp{font-size:11px;font-weight:800;color:#128A3E;background:#fff;border:1px solid #9FD9B4;border-radius:10px;padding:1px 7px}
 #view-tq .lgp.lgx{color:#D93D42;border-color:#F4B4B6;background:#FFF5F5}
+#view-tq .tqhd{display:flex;align-items:flex-start;gap:12px;justify-content:space-between}
+#view-tq .tqzoom,#tqModal .tqx{flex:none;border:1px solid var(--border);background:#fff;border-radius:8px;padding:6px 11px;font:600 12.5px Inter,system-ui,sans-serif;color:#374151;cursor:pointer}
+#view-tq .tqzoom:hover,#tqModal .tqx:hover{border-color:var(--green);color:var(--green-dark)}
+#view-tq .tqt2{font-size:14px;margin-top:16px}
+#view-tq .tqvh{font-size:12px;font-weight:500;color:#6B7280;margin-left:8px;white-space:nowrap}
+#view-tq .tqvh i{display:inline-block;width:16px;border-top:2px dashed;vertical-align:4px;margin:0 5px 0 8px}
+#view-tq .tqleg2 .sep,#tqModal .tqleg2 .sep{width:1px;height:14px;background:var(--border)}
+#view-tq .tqc,#tqModal .tqc{touch-action:pan-y}
+.tqvx{position:absolute;left:0;width:1px;background:rgba(17,24,39,.32);pointer-events:none;opacity:0;will-change:transform}
+.tqdot{position:absolute;left:0;top:0;width:12px;height:12px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.25);pointer-events:none;opacity:0;will-change:transform}
+.tqbox{position:absolute;left:0;top:6px;width:260px;box-sizing:border-box;background:rgba(17,24,39,.94);color:#E5E7EB;border-radius:10px;padding:9px 11px;font:12px Inter,system-ui,sans-serif;pointer-events:none;opacity:0;will-change:transform;box-shadow:0 6px 18px rgba(17,24,39,.22);z-index:2}
+.tqbox .d{font-weight:700;color:#fff;margin-bottom:5px}
+.tqbox .r{display:flex;justify-content:space-between;gap:8px;line-height:1.6;white-space:nowrap}
+.tqbox .r i,.tqbox .s i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.tqbox .r b{color:#fff;font-weight:700}
+.tqbox .s{margin-top:5px;padding-top:5px;border-top:1px solid rgba(255,255,255,.12);font-weight:700}
+#tqModal{position:fixed;inset:0;z-index:1000;background:rgba(17,24,39,.55);display:none;align-items:center;justify-content:center;padding:18px}
+#tqModal .tqmp{background:#fff;border-radius:14px;width:min(1500px,100%);height:min(900px,100%);display:flex;flex-direction:column;padding:16px 18px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+#tqModal .tqmh{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+#tqModal .tqmh b{font-size:16px}
+#tqModal .tqx{margin-left:auto}
+#tqModal .tqkh{display:inline-flex;background:var(--panel2);border-radius:9px;padding:3px;gap:2px}
+#tqModal .tqkh button{border:0;background:none;border-radius:7px;padding:5px 11px;font:600 12.5px Inter,system-ui,sans-serif;color:#4B5563;cursor:pointer}
+#tqModal .tqkh button.on{background:#fff;color:var(--green-dark);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+#tqModal .tqmb{flex:1;min-height:0;display:flex;flex-direction:column}
+#tqModal .tqmb .tqc{position:relative}
+#tqModal .tqleg2{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12px;color:#374151;margin:0 0 8px}
+#tqModal .tqleg2 span{display:inline-flex;align-items:center;gap:7px}
+#tqModal .tqleg2 i{display:inline-block;width:14px;height:3px;border-radius:2px}
+#tqModal .lgc{width:12px;height:12px;border-radius:50%;background:#18A34B;box-shadow:0 0 0 3px #fff,0 0 0 5px rgba(24,163,75,.3);display:inline-block}
+#tqModal .lgp{font-size:11px;font-weight:800;color:#128A3E;background:#fff;border:1px solid #9FD9B4;border-radius:10px;padding:1px 7px}
+#tqModal .lgp.lgx{color:#D93D42;border-color:#F4B4B6;background:#FFF5F5}
+@media(max-width:700px){#tqModal{padding:0}#tqModal .tqmp{border-radius:0;height:100%;padding:12px}#tqModal .tqmh{flex-wrap:wrap}}
 #view-tq .ft{font-size:11.5px;color:${MUT};line-height:1.6;margin:4px 2px 0}
 @media(max-width:900px){#view-tq .tqdks{grid-template-columns:1fr}#view-tq .tqhero h3{font-size:20px}#view-tq .tqc{height:250px}#view-tq .tqhero{padding:18px 16px}}`;
     document.head.appendChild(s);
@@ -99,132 +132,189 @@
 </div>
 
 <div class="card">
-  <div class="tqt">Mỗi lần tiền vào mạnh, thị trường đi lên sau đó</div>
-  <div class="tqs">Giá 150 cổ phiếu giao dịch nhiều nhất từ 2018. Nhìn chấm xanh và ô số trên chart để thấy những lần "chờ tiền vào" trước đây đã đáng chờ thế nào.</div>
-  <div class="tqleg tqleg2">
-    <span><b class="lgc"></b>Tiền vào mạnh + giá đi lên = <b>thời điểm mua</b></span>
-    <span><b class="lgp">+31%</b>thị trường tăng tới đỉnh sau đó</span>
-    <span><b class="lgp lgx">✕ hỏng</b>tín hiệu tắt nhanh, không thành sóng</span>
-    <span><i class="bx" style="background:${XANH}"></i>giai đoạn tiền còn vào</span>
-  </div>
-  <div class="tqc"><canvas id="tqC1" aria-label="Giá 150 cổ phiếu giao dịch nhiều nhất, vùng xanh là lúc tiền vào mạnh"></canvas></div>
-  <div class="tqt" style="font-size:14px;margin-top:16px">Tiền giao dịch so với mức bình thường của năm <span class="mini" style="font-weight:500">— chấm xanh: lúc vượt 120%</span></div>
-  <div class="tqc sm"><canvas id="tqC2" aria-label="Thanh khoản so với mức bình thường của năm, %"></canvas></div>
+  <div class="tqhd"><div><div class="tqt">Mỗi lần tiền vào mạnh, thị trường đi lên sau đó</div>
+    <div class="tqs">Giá 150 cổ phiếu giao dịch nhiều nhất từ 2018. Màu đường cho biết tiền đang vào hay rút; chấm xanh là điểm mua, ô số là kết quả sau đó.</div></div>
+    <button class="tqzoom" data-z="gia" aria-label="Phóng to chart giá và dòng tiền">⤢ Phóng to</button></div>
+  ${chuGiai()}
+  <div class="tqc" id="tqW1"><canvas id="tqC1" aria-label="Giá 150 cổ phiếu giao dịch nhiều nhất, tô màu theo trạng thái dòng tiền"></canvas></div>
+  <div class="tqt tqt2">Tiền giao dịch so với mức bình thường của năm <span class="tqvh"><i style="border-color:#18A34B"></i>120%: tiền vào mạnh <i style="border-color:#E5484D"></i>80%: tiền rút</span></div>
+  <div class="tqc sm" id="tqW2"><canvas id="tqC2" aria-label="Thanh khoản so với mức bình thường của năm, %"></canvas></div>
 </div>
 
 <div class="card">
-  <div class="tqt">Vì sao tiền rút: lãi tiết kiệm lên ${vn(ls.dep[lsN])}%</div>
-  <div class="tqs">Gửi ngân hàng lãi cao, không rủi ro — tiền nằm yên ở ngân hàng thay vì vào chứng khoán. Từ ${thang(ls.m[0])} lãi tiết kiệm tăng ${vn(ls.dep[lsN] - ls.dep[0])} điểm %, đúng lúc tiền rút khỏi thị trường. Số NHNN, cập nhật mỗi tháng.</div>
+  <div class="tqhd"><div><div class="tqt">Vì sao tiền rút: lãi tiết kiệm lên ${vn(ls.dep[lsN])}%</div>
+    <div class="tqs">Gửi ngân hàng lãi cao, không rủi ro — tiền nằm yên ở ngân hàng thay vì vào chứng khoán. Từ ${thang(ls.m[0])} lãi tiết kiệm tăng ${vn(ls.dep[lsN] - ls.dep[0])} điểm %, đúng lúc tiền rút khỏi thị trường. Số NHNN, cập nhật mỗi tháng.</div></div>
+    <button class="tqzoom" data-z="ls" aria-label="Phóng to chart lãi suất">⤢ Phóng to</button></div>
   <div class="tqleg"><span><i style="background:${DEP}"></i>Lãi tiết kiệm 6–12 tháng</span><span><i style="background:${LEND}"></i>Lãi cho vay</span></div>
-  <div class="tqc"><canvas id="tqC3" aria-label="Lãi suất tiết kiệm và cho vay theo tháng"></canvas></div>
+  <div class="tqc" id="tqW3"><canvas id="tqC3" aria-label="Lãi suất tiết kiệm và cho vay theo tháng"></canvas></div>
 </div>
 
 <div class="ft">Tiền giao dịch = giá trị khớp lệnh bình quân 1 tháng so với bình quân 1 năm, toàn thị trường. Giá đi lên = nhóm 150 cổ phiếu giao dịch nhiều nhất nằm trên đường trung bình 50 phiên.
 Nguồn: VNDirect, NHNN. Quy tắc cố định, không dùng mô hình học máy. Kết quả quá khứ không bảo đảm tương lai; chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>`;
   }
 
-  function veChart(T, X){
-    if (typeof Chart === 'undefined') return;
-    charts.forEach(c => { try { c.destroy(); } catch(e){} }); charts = [];
-    const {N, kL, nL, eps} = X, lab = N.map(r => r[0]);
-    const FONT = 'Inter, system-ui, sans-serif';
-    const tip = { backgroundColor:'rgba(17,24,39,.94)', titleColor:'#fff', bodyColor:'#E5E7EB', footerColor:'#9CA3AF', borderWidth:0, padding:11, cornerRadius:9,
-      boxPadding:5, usePointStyle:true, titleFont:{weight:'700', family:FONT}, bodyFont:{family:FONT}, footerFont:{family:FONT, weight:'500'} };
-    const nam = function(v){ const d = lab[v], p = lab[v-1]; if (!d || !p || d.slice(0,4) === p.slice(0,4)) return '';
-      return this.chart.width < 520 ? (+d.slice(0,4) % 2 ? '' : d.slice(0,4)) : d.slice(0,4); };
-    const trucX = cb => ({grid:{display:false}, border:{display:false}, ticks:{color:'#9CA3AF', maxRotation:0, autoSkip:false, callback:cb, font:{size:11, family:FONT}}});
-    const trucY = f => ({position:'right', grid:{color:'#F1F3F5', drawTicks:false}, border:{display:false}, ticks:{color:'#9CA3AF', padding:8, callback:f, font:{size:11, family:FONT}}});
-    const doc = (c, top, bot) => (ctx) => { const {chart} = ctx, {ctx:g, chartArea:a} = chart; if (!a) return null;
-      const gr = g.createLinearGradient(0, a.top, 0, a.bottom); gr.addColorStop(0, top); gr.addColorStop(1, bot); return gr; };
-    // viên thuốc chữ (nhãn đỉnh sóng, Hôm nay)
-    const pill = (g, text, x, y, bg, fg, bd) => { g.save(); g.font = '700 11.5px ' + FONT; const w = g.measureText(text).width + 14, h = 21;
-      x = Math.max(w/2 + 2, Math.min(g.canvas.width / (window.devicePixelRatio || 1) - w/2 - 2, x));
-      g.beginPath(); (g.roundRect ? g.roundRect(x - w/2, y - h/2, w, h, 10.5) : g.rect(x - w/2, y - h/2, w, h)); g.fillStyle = bg; g.fill();
-      if (bd) { g.strokeStyle = bd; g.lineWidth = 1; g.stroke(); }
-      g.fillStyle = fg; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(text, x, y + .5); g.restore(); };
-    const cham = (g, x, y, c) => { g.save(); g.fillStyle = c + '33'; g.beginPath(); g.arc(x, y, 9, 0, 7); g.fill();
-      g.fillStyle = '#fff'; g.beginPath(); g.arc(x, y, 5, 0, 7); g.fill(); g.fillStyle = c; g.beginPath(); g.arc(x, y, 3.5, 0, 7); g.fill(); g.restore(); };
-    // vạch dọc theo chuột
-    const doc_ = {id:'tqDoc', afterDatasetsDraw(ch){ const a = ch.tooltip && ch.tooltip.getActiveElements && ch.tooltip.getActiveElements(); if (!a || !a.length) return;
-      const x = a[0].element.x, {ctx:g, chartArea:c} = ch; g.save(); g.strokeStyle = 'rgba(17,24,39,.35)'; g.setLineDash([3,3]); g.lineWidth = 1;
-      g.beginPath(); g.moveTo(x, c.top); g.lineTo(x, c.bottom); g.stroke(); g.restore(); }};
-    // chart 1: nền xanh lúc tiền vào mạnh
-    const nen = {id:'tqNen', beforeDatasetsDraw(ch){ const {ctx:g, chartArea:c, scales:{x}} = ch; g.save(); let k = 0;
-      const gr = g.createLinearGradient(0, c.top, 0, c.bottom); gr.addColorStop(0, 'rgba(24,163,75,.16)'); gr.addColorStop(1, 'rgba(24,163,75,.04)'); g.fillStyle = gr;
-      while (k < N.length) { const s = N[k][3]; let j = k; while (j+1 < N.length && N[j+1][3] === s) j++;
-        if (s === 'A') { const x0 = Math.max(c.left, x.getPixelForValue(k)), x1 = Math.min(c.right, x.getPixelForValue(j+1 < N.length ? j+1 : j));
-          g.fillRect(x0, c.top, Math.max(1.5, x1 - x0), c.bottom - c.top); }
-        k = j + 1; } g.restore(); }};
+  /* ---- màu theo trạng thái (dùng CHUNG cho cả đường giá và đường dòng tiền nên hai chart luôn khớp màu) ---- */
+  const MAU = {A:'#18A34B', B:'#E08A00', C:'#A3AAB5', D:'#E5484D'};
+  const TENM = {A:'Tiền vào mạnh + giá lên', B:'Tiền vào mạnh nhưng giá giảm (bán tháo)', C:'Bình thường', D:'Tiền rút'};
+  function chuGiai(){
+    return `<div class="tqleg tqleg2">
+      <span><i style="background:${MAU.A}"></i>Tiền vào mạnh + giá lên</span>
+      <span><i style="background:${MAU.B}"></i>Tiền vào mạnh nhưng giá giảm (bán tháo)</span>
+      <span><i style="background:${MAU.C}"></i>Bình thường</span>
+      <span><i style="background:${MAU.D}"></i>Tiền rút</span>
+      <span class="sep"></span>
+      <span><b class="lgc"></b>điểm mua</span>
+      <span><b class="lgp">+31%</b>tăng tới đỉnh sau đó</span>
+      <span><b class="lgp lgx">✕ hỏng</b>tín hiệu tắt nhanh</span></div>`;
+  }
+  const FONT = 'Inter, system-ui, sans-serif';
+  const pill = (g, text, x, y, bg, fg, bd) => { g.save(); g.font = '700 11.5px ' + FONT; const w = g.measureText(text).width + 14, h = 21;
+    x = Math.max(w/2 + 2, Math.min(g.canvas.width / (window.devicePixelRatio || 1) - w/2 - 2, x));
+    g.beginPath(); (g.roundRect ? g.roundRect(x - w/2, y - h/2, w, h, 10.5) : g.rect(x - w/2, y - h/2, w, h)); g.fillStyle = bg; g.fill();
+    if (bd) { g.strokeStyle = bd; g.lineWidth = 1; g.stroke(); }
+    g.fillStyle = fg; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(text, x, y + .5); g.restore(); };
+  const cham = (g, x, y, c) => { g.save(); g.fillStyle = c + '33'; g.beginPath(); g.arc(x, y, 9, 0, 7); g.fill();
+    g.fillStyle = '#fff'; g.beginPath(); g.arc(x, y, 5, 0, 7); g.fill(); g.fillStyle = c; g.beginPath(); g.arc(x, y, 3.5, 0, 7); g.fill(); g.restore(); };
+  const trucX = cb => ({grid:{display:false}, border:{display:false}, ticks:{color:'#9CA3AF', maxRotation:0, autoSkip:false, callback:cb, font:{size:11, family:FONT}}});
+  const trucY = f => ({position:'right', grid:{color:'#F1F3F5', drawTicks:false}, border:{display:false}, afterFit:s => { s.width = 50; },
+    ticks:{color:'#9CA3AF', padding:8, callback:f, font:{size:11, family:FONT}}});
+  // nhãn trục x: theo năm; khung ngắn (≤ 300 phiên) thì theo tháng
+  function nhanX(lab){
+    const ngan = lab.length <= 300;
+    return function(v){ const d = lab[v], p = lab[v-1]; if (!d || !p) return '';
+      if (ngan) { if (d.slice(0,7) === p.slice(0,7)) return ''; return (this.chart.width < 520 && +d.slice(5,7) % 2) ? '' : d.slice(5,7) + '/' + d.slice(2,4); }
+      if (d.slice(0,4) === p.slice(0,4)) return ''; return this.chart.width < 520 ? (+d.slice(0,4) % 2 ? '' : d.slice(0,4)) : d.slice(0,4); };
+  }
+  const coBan = {responsive:true, maintainAspectRatio:false, animation:false, events:[], plugins:{legend:{display:false}, tooltip:{enabled:false}}};
+
+  // chart giá: đường tô màu theo trạng thái + chấm điểm mua + ô kết quả
+  function veGia(cv, X, i0){
+    const {N, kL, nL, eps} = X, R = N.slice(i0), lab = R.map(r => r[0]);
     const nhan = {id:'tqNhan', afterDatasetsDraw(ch){ const {ctx:g, chartArea:c, scales:{x, y}} = ch, nho = ch.width < 560, dat = [];
-      g.save(); g.font = '800 11.5px ' + FONT;
-      eps.forEach(e => { const hong = e.f60 != null && e.f60 <= 0, px = x.getPixelForValue(e.a), py = y.getPixelForValue(N[e.a][1]);
-        const t = hong ? '✕ hỏng' : '+' + vn(e.pk, 0) + '%', w = g.measureText(t).width + 16;
-        if (nho && !hong && e.pk < 30) { cham(g, px, py, '#18A34B'); return; }
+      eps.filter(e => e.a >= i0).forEach(e => { const hong = e.f60 != null && e.f60 <= 0, px = x.getPixelForValue(e.a - i0), py = y.getPixelForValue(N[e.a][1]);
+        g.save(); g.font = '800 11.5px ' + FONT; const t = hong ? '✕ hỏng' : '+' + vn(e.pk, 0) + '%', w = g.measureText(t).width + 16; g.restore();
+        if (nho && !hong && e.pk < 30) { cham(g, px, py, MAU.A); return; }
         let ty = Math.max(c.top + 12, py - 34);
         while (dat.some(d => Math.abs(d.x - px) < (d.w + w) / 2 + 4 && Math.abs(d.y - ty) < 23)) ty -= 24;
         if (ty < c.top + 10) { ty = py + 34; while (dat.some(d => Math.abs(d.x - px) < (d.w + w) / 2 + 4 && Math.abs(d.y - ty) < 23)) ty += 24; }
         dat.push({x:px, y:ty, w});
-        g.strokeStyle = hong ? 'rgba(229,72,77,.6)' : 'rgba(24,163,75,.7)'; g.lineWidth = 1.2; g.setLineDash([2,2]);
-        g.beginPath(); g.moveTo(px, py); g.lineTo(px, ty + (ty < py ? 10 : -10)); g.stroke(); g.setLineDash([]);
-        cham(g, px, py, hong ? '#E5484D' : '#18A34B');
+        g.save(); g.strokeStyle = hong ? 'rgba(229,72,77,.6)' : 'rgba(24,163,75,.7)'; g.lineWidth = 1.2; g.setLineDash([2,2]);
+        g.beginPath(); g.moveTo(px, py); g.lineTo(px, ty + (ty < py ? 10 : -10)); g.stroke(); g.restore();
+        cham(g, px, py, hong ? MAU.D : MAU.A);
         pill(g, t, px, ty, hong ? '#FFF5F5' : '#fff', hong ? '#D93D42' : '#128A3E', hong ? '#F4B4B6' : '#9FD9B4'); });
-      g.restore();
-      const px = x.getPixelForValue(kL), py = y.getPixelForValue(nL[1]); cham(g, px, py, '#111827');
+      const px = x.getPixelForValue(kL - i0), py = y.getPixelForValue(nL[1]); cham(g, px, py, '#111827');
       const tn = nho ? 'Hôm nay' : (nL[3] === 'A' ? 'Hôm nay · tiền đang vào' : 'Hôm nay · đang chờ'); pill(g, tn, px - (nho ? 24 : 60), py + 24, '#111827', '#fff'); }};
-    const c1 = new Chart(document.getElementById('tqC1'), {type:'line', plugins:[nen, nhan, doc_],
-      data:{labels:lab, datasets:[{label:'Giá 150 cổ phiếu', data:N.map(r => r[1]), borderColor:EWC, borderWidth:2, pointRadius:0, pointHoverRadius:5,
-        pointHoverBackgroundColor:EWC, pointHoverBorderColor:'#fff', pointHoverBorderWidth:2, tension:.25,
-        fill:'start', backgroundColor:doc(EWC, 'rgba(31,111,178,.22)', 'rgba(31,111,178,0)')}]},
-      options:{responsive:true, maintainAspectRatio:false, animation:{duration:600}, interaction:{mode:'index', intersect:false}, layout:{padding:{top:30, right:4}},
-        plugins:{legend:{display:false}, tooltip:{...tip, callbacks:{title:it => ngay(it[0].label), label:it => ' Giá 150 cổ phiếu: ' + vn(it.parsed.y, 0),
-          footer:it => { const r = N[it[0].dataIndex]; return 'Tiền giao dịch ' + Math.round(r[2] * 100) + '% mức bình thường' + (r[3] === 'A' ? ' · tiền vào mạnh' : ''); }}}},
-        scales:{x:trucX(nam), y:trucY(v => vn(v, 0))}}});
-    // chart 2: dòng tiền (%), đường đổi màu theo vùng
-    const mau = v => v >= 120 ? '#18A34B' : v < 80 ? '#E5484D' : '#9CA3AF';
-    const vung = {id:'tqVung', beforeDatasetsDraw(ch){ const {ctx:g, chartArea:c, scales:{y}} = ch; g.save();
-      const y120 = y.getPixelForValue(120), y80 = y.getPixelForValue(80);
-      g.fillStyle = 'rgba(24,163,75,.07)'; g.fillRect(c.left, c.top, c.width, y120 - c.top);
-      g.fillStyle = 'rgba(229,72,77,.06)'; g.fillRect(c.left, y80, c.width, c.bottom - y80);
-      g.setLineDash([4,4]); g.lineWidth = 1;
-      [[y120,'rgba(24,163,75,.55)'],[y80,'rgba(229,72,77,.55)']].forEach(([yy, cl]) => { g.strokeStyle = cl; g.beginPath(); g.moveTo(c.left, yy); g.lineTo(c.right, yy); g.stroke(); });
-      g.setLineDash([]); g.font = '700 11px ' + FONT; g.textAlign = 'left';
-      g.fillStyle = '#128A3E'; g.fillText('TIỀN VÀO MẠNH · trên 120%', c.left + 8, c.top + 15);
-      g.fillStyle = '#D93D42'; g.fillText('TIỀN RÚT · dưới 80%', c.left + 8, c.bottom - 8); g.restore(); },
-      afterDatasetsDraw(ch){ const {ctx:g, scales:{x, y}} = ch, v = Math.round(nL[2] * 100), px = x.getPixelForValue(kL), py = y.getPixelForValue(v);
-        eps.forEach(e => cham(g, x.getPixelForValue(e.a), y.getPixelForValue(Math.round(N[e.a][2] * 100)), e.f60 != null && e.f60 <= 0 ? '#E5484D' : '#18A34B'));
-        cham(g, px, py, mau(v)); pill(g, v + '%', px - 28, py - 18, mau(v), '#fff'); }};
-    const c2 = new Chart(document.getElementById('tqC2'), {type:'line', plugins:[vung, doc_],
-      data:{labels:lab, datasets:[{label:'Tiền giao dịch', data:N.map(r => Math.round(r[2] * 100)), borderWidth:2, pointRadius:0, pointHoverRadius:5,
-        pointHoverBorderColor:'#fff', pointHoverBorderWidth:2, tension:.3, borderColor:'#9CA3AF',
-        segment:{borderColor:c => mau((c.p0.parsed.y + c.p1.parsed.y) / 2)}}]},
-      options:{responsive:true, maintainAspectRatio:false, animation:{duration:600}, interaction:{mode:'index', intersect:false}, layout:{padding:{top:6, right:4}},
-        plugins:{legend:{display:false}, tooltip:{...tip, callbacks:{title:it => ngay(it[0].label),
-          label:it => ` ${it.parsed.y}% mức bình thường`, footer:it => vn(N[it[0].dataIndex][4]/1000, 1) + ' nghìn tỷ/phiên'}}},
-        scales:{x:trucX(nam), y:{...trucY(v => v + '%'), min:30, max:260}}}});
-    const dongBo = (a, b) => (e, act) => { try {
-      if (!act.length) { b.setActiveElements([]); b.tooltip.setActiveElements([], {x:0, y:0}); b.update('none'); return; }
-      const i = act[0].index, el = [{datasetIndex:0, index:i}], p = b.getDatasetMeta(0).data[i];
-      b.setActiveElements(el); b.tooltip.setActiveElements(el, {x:p.x, y:p.y}); b.update('none'); } catch(err){} };
-    c1.options.onHover = dongBo(c1, c2); c2.options.onHover = dongBo(c2, c1);
-    // chart 3: lãi suất NHNN theo tháng (liền mạch), ghi số hiện tại ở cuối đường
+    return new Chart(cv, {type:'line', plugins:[nhan],
+      data:{labels:lab, datasets:[{data:R.map(r => r[1]), borderWidth:2.2, pointRadius:0, tension:.2, borderCapStyle:'round',
+        borderColor:MAU.C, segment:{borderColor:c => MAU[R[c.p1DataIndex][3]]}}]},
+      options:{...coBan, layout:{padding:{top:30, right:4}}, scales:{x:trucX(nhanX(lab)), y:trucY(v => vn(v, 0))}}});
+  }
+  // chart dòng tiền (%): cùng màu trạng thái; vạch 120% / 80%
+  function veTien(cv, X, i0){
+    const {N, kL, nL, eps} = X, R = N.slice(i0), lab = R.map(r => r[0]);
+    const vach = {id:'tqVach', beforeDatasetsDraw(ch){ const {ctx:g, chartArea:c, scales:{y}} = ch; g.save(); g.setLineDash([5,4]); g.lineWidth = 1.2; g.font = '700 11px ' + FONT;
+        [[120, MAU.A, 'Tiền vào mạnh 120%', -6], [80, MAU.D, 'Tiền rút 80%', 14]].forEach(([v, cl, t, dy]) => { const yy = y.getPixelForValue(v);
+          g.strokeStyle = cl; g.globalAlpha = .7; g.beginPath(); g.moveTo(c.left, yy); g.lineTo(c.right, yy); g.stroke(); g.globalAlpha = 1;
+          }); g.restore(); },
+      afterDatasetsDraw(ch){ const {ctx:g, scales:{x, y}} = ch, v = Math.round(nL[2] * 100), px = x.getPixelForValue(kL - i0), py = y.getPixelForValue(v);
+        eps.filter(e => e.a >= i0).forEach(e => cham(g, x.getPixelForValue(e.a - i0), y.getPixelForValue(Math.round(N[e.a][2] * 100)), e.f60 != null && e.f60 <= 0 ? MAU.D : MAU.A));
+        cham(g, px, py, MAU[nL[3]]); pill(g, v + '%', px - 28, py - 18, MAU[nL[3]], '#fff'); }};
+    const vs = R.map(r => r[2] * 100), hi = Math.max(140, ...vs), lo = Math.min(60, ...vs), buoc = hi - lo > 150 ? 50 : 20;
+    const mx = Math.ceil(hi / buoc) * buoc, mn = Math.max(0, Math.floor(lo / buoc) * buoc);
+    return new Chart(cv, {type:'line', plugins:[vach],
+      data:{labels:lab, datasets:[{data:R.map(r => Math.round(r[2] * 100)), borderWidth:2, pointRadius:0, tension:.25, borderCapStyle:'round',
+        borderColor:MAU.C, segment:{borderColor:c => MAU[R[c.p1DataIndex][3]]}}]},
+      options:{...coBan, layout:{padding:{top:8, right:4}}, scales:{x:trucX(nhanX(lab)), y:(() => { const t = trucY(v => v + '%'); t.ticks.stepSize = buoc; return {...t, min:mn, max:mx}; })()}}});
+  }
+  // chart lãi suất theo tháng
+  function veLs(cv, T){
     const ls = T.ls, M = ls.m;
+    const doc = (top, bot) => (ctx) => { const {chart} = ctx, {ctx:g, chartArea:a} = chart; if (!a) return null;
+      const gr = g.createLinearGradient(0, a.top, 0, a.bottom); gr.addColorStop(0, top); gr.addColorStop(1, bot); return gr; };
     const cuoi = {id:'tqCuoi', afterDatasetsDraw(ch){ const g = ch.ctx;
       ch.data.datasets.forEach((d, i) => { const m = ch.getDatasetMeta(i), p = m.data[m.data.length-1]; if (!p) return;
         cham(g, p.x, p.y, d.borderColor); pill(g, vn(d.data[d.data.length-1], 1) + '%', p.x - 30, p.y - 18, d.borderColor, '#fff');
         const p0 = m.data[0]; g.save(); g.font = '600 11px ' + FONT; g.fillStyle = d.borderColor; g.textAlign = 'left';
         g.fillText(vn(d.data[0], 1) + '%', p0.x + 2, p0.y - 9); g.restore(); }); }};
-    const c3 = new Chart(document.getElementById('tqC3'), {type:'line', plugins:[cuoi, doc_],
+    return new Chart(cv, {type:'line', plugins:[cuoi],
       data:{labels:M, datasets:[
-        {label:'Lãi cho vay', data:ls.lend, borderColor:LEND, borderWidth:2.6, pointRadius:0, pointHoverRadius:5, pointHoverBorderColor:'#fff', pointHoverBorderWidth:2, pointHoverBackgroundColor:LEND,
-          tension:.35, fill:'start', backgroundColor:doc(LEND, 'rgba(15,122,61,.14)', 'rgba(15,122,61,0)')},
-        {label:'Lãi tiết kiệm 6–12 tháng', data:ls.dep, borderColor:DEP, borderWidth:2.6, pointRadius:0, pointHoverRadius:5, pointHoverBorderColor:'#fff', pointHoverBorderWidth:2, pointHoverBackgroundColor:DEP,
-          tension:.35, fill:'start', backgroundColor:doc(DEP, 'rgba(31,111,178,.16)', 'rgba(31,111,178,0)')}]},
-      options:{responsive:true, maintainAspectRatio:false, animation:{duration:600}, interaction:{mode:'index', intersect:false}, layout:{padding:{top:22, right:6}},
-        plugins:{legend:{display:false}, tooltip:{...tip, callbacks:{title:it => 'Tháng ' + thang(it[0].label), label:it => ` ${it.dataset.label}: ${vn(it.parsed.y, 1)}%`}}},
-        scales:{x:{...trucX(function(v){ const m = M[v]; if (!m) return ''; const nho = this.chart.width < 520;
-            return (nho ? (+m.slice(5) % 3 === 0 || v === 0) : true) ? (+m.slice(5)) + '/' + m.slice(2,4) : ''; })},
+        {label:'Lãi cho vay', data:ls.lend, borderColor:LEND, borderWidth:2.6, pointRadius:0, tension:.35, fill:'start', backgroundColor:doc('rgba(15,122,61,.14)', 'rgba(15,122,61,0)')},
+        {label:'Lãi tiết kiệm 6–12 tháng', data:ls.dep, borderColor:DEP, borderWidth:2.6, pointRadius:0, tension:.35, fill:'start', backgroundColor:doc('rgba(31,111,178,.16)', 'rgba(31,111,178,0)')}]},
+      options:{...coBan, layout:{padding:{top:22, right:6}},
+        scales:{x:trucX(function(v){ const m = M[v]; if (!m) return ''; const nho = this.chart.width < 520;
+            return (nho ? (+m.slice(5) % 3 === 0 || v === 0) : true) ? (+m.slice(5)) + '/' + m.slice(2,4) : ''; }),
           y:{...trucY(v => vn(v, 0) + '%'), min:4, max:12}}}});
+  }
+
+  /* ---- con trỏ: tự vẽ bằng lớp phủ (không vẽ lại chart) -> mượt; ô thông tin rộng cố định ---- */
+  function conTro(ds, noiDung){   // ds = [{chart, wrap, y:(i)=>giá trị, mau:(i)=>màu}]
+    const lop = ds.map(d => { const v = document.createElement('div'); v.className = 'tqvx'; const c = document.createElement('div'); c.className = 'tqdot';
+      d.wrap.appendChild(v); d.wrap.appendChild(c); return {v, c}; });
+    const box = document.createElement('div'); box.className = 'tqbox'; ds[0].wrap.appendChild(box);
+    let cho = null, xCuoi = null, wCuoi = null;
+    const an = () => { lop.forEach(l => { l.v.style.opacity = 0; l.c.style.opacity = 0; }); box.style.opacity = 0; };
+    const ve = () => { cho = null; const d0 = ds[0], ch = d0.chart, sx = ch.scales.x, n = ch.data.labels.length;
+      const rect = wCuoi.getBoundingClientRect(), xx = xCuoi - rect.left;
+      let i = Math.round(sx.getValueForPixel(xx)); if (!(i >= 0)) i = 0; if (i > n - 1) i = n - 1;
+      ds.forEach((d, k) => { const c = d.chart, a = c.chartArea, px = c.scales.x.getPixelForValue(i), py = c.scales.y.getPixelForValue(d.y(i));
+        const l = lop[k]; l.v.style.height = (a.bottom - a.top) + 'px'; l.v.style.top = a.top + 'px'; l.v.style.transform = `translateX(${px}px)`; l.v.style.opacity = 1;
+        l.c.style.transform = `translate(${px - 6}px, ${py - 6}px)`; l.c.style.background = d.mau(i); l.c.style.opacity = 1; });
+      const px = ch.scales.x.getPixelForValue(i), W = d0.wrap.clientWidth, bw = box.offsetWidth || 260;
+      box.innerHTML = noiDung(i); box.style.transform = `translateX(${px + bw + 22 > W - 50 ? px - bw - 14 : px + 14}px)`; box.style.opacity = 1; };
+    ds.forEach(d => {
+      d.wrap.addEventListener('pointermove', e => { xCuoi = e.clientX; wCuoi = d.wrap; if (!cho) cho = requestAnimationFrame(ve); });
+      d.wrap.addEventListener('pointerleave', () => { if (cho) { cancelAnimationFrame(cho); cho = null; } an(); });
+    });
+  }
+  function hopGia(X, i0){ const N = X.N;
+    return i => { const r = N[i0 + i]; return `<div class="d">${ngay(r[0])}</div>
+      <div class="r"><span>Giá 150 cổ phiếu</span><b>${vn(r[1], 1)}</b></div>
+      <div class="r"><span>Tiền giao dịch / bình thường</span><b>${Math.round(r[2] * 100)}%</b></div>
+      <div class="s" style="color:${MAU[r[3]]}"><i style="background:${MAU[r[3]]}"></i>${TENM[r[3]]}</div>`; }; }
+  function ganGia(X, i0, c1, w1, c2, w2){ const N = X.N;
+    conTro([{chart:c1, wrap:w1, y:i => N[i0 + i][1], mau:i => MAU[N[i0 + i][3]]}, {chart:c2, wrap:w2, y:i => Math.round(N[i0 + i][2] * 100), mau:i => MAU[N[i0 + i][3]]}], hopGia(X, i0)); }
+  function ganLs(T, c3, w3){ const ls = T.ls;
+    conTro([{chart:c3, wrap:w3, y:i => ls.lend[i], mau:() => LEND}], i => `<div class="d">Tháng ${thang(ls.m[i])}</div>
+      <div class="r"><span><i style="background:${LEND}"></i>Lãi cho vay</span><b>${vn(ls.lend[i], 1)}%</b></div>
+      <div class="r"><span><i style="background:${DEP}"></i>Lãi tiết kiệm 6–12T</span><b>${vn(ls.dep[i], 1)}%</b></div>`); }
+
+  function veChart(T, X){
+    if (typeof Chart === 'undefined') return;
+    charts.forEach(c => { try { c.destroy(); } catch(e){} }); charts = [];
+    const w1 = document.getElementById('tqW1'), w2 = document.getElementById('tqW2'), w3 = document.getElementById('tqW3');
+    const c1 = veGia(document.getElementById('tqC1'), X, 0), c2 = veTien(document.getElementById('tqC2'), X, 0), c3 = veLs(document.getElementById('tqC3'), T);
+    ganGia(X, 0, c1, w1, c2, w2); ganLs(T, c3, w3);
     charts = [c1, c2, c3];
+    document.querySelectorAll('#view-tq .tqzoom').forEach(b => b.onclick = () => phongTo(b.dataset.z, T, X));
+  }
+
+  /* ---- phóng to: khung lớn, chọn khoảng thời gian ---- */
+  let mcharts = [];
+  function phongTo(loai, T, X){
+    let m = document.getElementById('tqModal');
+    if (!m) { m = document.createElement('div'); m.id = 'tqModal'; document.body.appendChild(m);
+      m.addEventListener('click', e => { if (e.target === m) dong(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') dong(); }); }
+    const dong = () => { mcharts.forEach(c => { try { c.destroy(); } catch(e){} }); mcharts = []; m.style.display = 'none'; document.body.style.overflow = ''; };
+    const KH = [['6 tháng', 125], ['1 năm', 250], ['3 năm', 750], ['Tất cả', 0]];
+    const gia = loai === 'gia';
+    m.innerHTML = `<div class="tqmp"><div class="tqmh"><b>${gia ? 'Giá 150 cổ phiếu và dòng tiền' : 'Lãi suất NHNN theo tháng'}</b>
+      ${gia ? `<div class="tqkh">${KH.map(([t, n]) => `<button data-n="${n}">${t}</button>`).join('')}</div>` : ''}
+      <button class="tqx" aria-label="Đóng">✕</button></div>
+      ${gia ? chuGiai() : `<div class="tqleg2"><span><i style="background:${DEP}"></i>Lãi tiết kiệm 6–12 tháng</span><span><i style="background:${LEND}"></i>Lãi cho vay</span></div>`}
+      <div class="tqmb">${gia ? '<div class="tqc" id="tqMW1" style="height:58%"><canvas id="tqMC1"></canvas></div><div class="tqc" id="tqMW2" style="height:34%;margin-top:10px"><canvas id="tqMC2"></canvas></div>'
+        : '<div class="tqc" id="tqMW1" style="height:100%"><canvas id="tqMC1"></canvas></div>'}</div></div>`;
+    m.style.display = 'flex'; document.body.style.overflow = 'hidden';
+    m.querySelector('.tqx').onclick = dong;
+    const ve = n => { mcharts.forEach(c => { try { c.destroy(); } catch(e){} }); mcharts = [];
+      m.querySelectorAll('.tqvx,.tqdot,.tqbox').forEach(x => x.remove());
+      if (gia) { const i0 = n ? Math.max(0, X.N.length - n) : 0;
+        const a = veGia(document.getElementById('tqMC1'), X, i0), b = veTien(document.getElementById('tqMC2'), X, i0);
+        mcharts = [a, b]; ganGia(X, i0, a, document.getElementById('tqMW1'), b, document.getElementById('tqMW2'));
+        m.querySelectorAll('.tqkh button').forEach(x => x.classList.toggle('on', +x.dataset.n === n)); }
+      else { const a = veLs(document.getElementById('tqMC1'), T); mcharts = [a]; ganLs(T, a, document.getElementById('tqMW1')); } };
+    m.querySelectorAll('.tqkh button').forEach(x => x.onclick = () => ve(+x.dataset.n));
+    requestAnimationFrame(() => ve(gia ? 750 : 0));
   }
 
   function render(){
