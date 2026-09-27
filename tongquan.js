@@ -7,7 +7,7 @@
 (function(){
   const INK = '#14201C', EWC = '#1F6FB2', LEND = '#0F7A3D', DEP = '#1F6FB2', MUT = '#6B7280', GRID = '#EEF0F2',
         XANH = 'rgba(24,163,75,.13)', DO = 'rgba(229,72,77,.10)';
-  const TEN = {A:'Tiền vào + giá lên', B:'Tiền vào nhưng giá giảm (bán tháo)', C:'Ở giữa', D:'Tiền rút'};
+  const TEN = {A:'Tiền vào + giá lên', B:'Tiền vào nhưng giá giảm', C:'Ở giữa', D:'Tiền rút'};
   const vn = (x, d = 1) => x.toLocaleString('vi-VN', {minimumFractionDigits:d, maximumFractionDigits:d});
   const ngay = d => d.slice(8,10) + '/' + d.slice(5,7) + '/' + d.slice(0,4);
   const thang = m => m.slice(5) + '/' + m.slice(0,4);
@@ -155,11 +155,11 @@ Nguồn: VNDirect, NHNN. Quy tắc cố định, không dùng mô hình học m�
 
   /* ---- màu theo trạng thái (dùng CHUNG cho cả đường giá và đường dòng tiền nên hai chart luôn khớp màu) ---- */
   const MAU = {A:'#18A34B', B:'#E08A00', C:'#A3AAB5', D:'#E5484D'};
-  const TENM = {A:'Tiền vào mạnh + giá lên', B:'Tiền vào mạnh nhưng giá giảm (bán tháo)', C:'Bình thường', D:'Tiền rút'};
+  const TENM = {A:'Tiền vào mạnh + giá lên', B:'Tiền vào mạnh nhưng giá giảm — rung lắc hoặc phân phối, chờ xác nhận', C:'Bình thường', D:'Tiền rút'};
   function chuGiai(){
     return `<div class="tqleg tqleg2">
       <span><i style="background:${MAU.A}"></i>Tiền vào mạnh + giá lên</span>
-      <span><i style="background:${MAU.B}"></i>Tiền vào mạnh nhưng giá giảm (bán tháo)</span>
+      <span><i style="background:${MAU.B}"></i>Tiền vào mạnh nhưng giá giảm (chờ xác nhận)</span>
       <span><i style="background:${MAU.C}"></i>Bình thường</span>
       <span><i style="background:${MAU.D}"></i>Tiền rút</span>
       <span class="sep"></span>
