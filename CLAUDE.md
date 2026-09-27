@@ -147,6 +147,13 @@ tải PDF, `scripts/lai-suat-thang.mjs` đọc số → `sbv-thang.json` trên n
 NHNN chặn ~5 lượt/IP (403) → mỗi lần chạy chỉ 3 lượt. Trang NHNN mới chỉ còn bài từ ~giữa 2025; 2012–2024 không có (IMF, World Bank,
 web.archive không có số tháng VN). Năm 2019–2023 chỉ có World Bank bình quân năm (khác định nghĩa). Chưa có số tháng 2024 – 5/2025.
 
+## Nghiên cứu đỉnh/đáy lớn (27/09/2026, CHƯA lên web)
+
+kafi-core `research/dinh-day/` (`KET-QUA.md`, script Python, `bao-cao.html`). Rổ 150 mã, zigzag 15% (12 đỉnh, 12 đáy).
+Cơ hội đáy ≥3/5 → 6/6 đợt có nhịp tăng ≥11%/3 tháng, còn giảm thêm 4–18% từ ngày báo. Rủi ro đỉnh ≥2/4 có vĩ mô (US10Y, USD)
+→ 5/8 đợt gần đỉnh đúng, chỉ báo trước 4/12 đỉnh. Thanh khoản hợp để xác nhận/thoát, không để bắt đáy. Muốn đưa checklist
+Cơ hội đáy / Rủi ro đỉnh vào tab Toàn cảnh thì **hỏi anh Khoa trước**.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
