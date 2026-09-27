@@ -131,6 +131,14 @@ Engine `wstar` thêm điều kiện giá nổ > MA50 (như luật X).
 (2) `npYAt` để quý mới nhất có npY null đè giá trị cũ → coi là "đạt"; (3) lỗ → lãi (n0<0, n1>0) có thể rơi vào dải 0–25% → W;
 (4) ghi sổ tín hiệu kiểu append-only để giá điều chỉnh không xoá được dấu cũ.
 
+## Lãi suất NHNN theo tháng (27/09/2026)
+
+Nguồn gốc số chart VnExpress = PDF "Diễn biến lãi suất của TCTD đối với khách hàng tháng M/YYYY" của NHNN (đăng ~17–18 tháng sau;
+số trên chart = **cận trên** của khoảng). Workflow `lai-suat-thang.yml` chạy 09:23 VN mỗi ngày: đọc link mới nhất trên trang chủ NHNN,
+tải PDF, `scripts/lai-suat-thang.mjs` đọc số → `sbv-thang.json` trên nhánh **`lai-suat-data`** (không đụng web). Chạy thử: Run workflow, tick `thu`.
+NHNN chặn ~5 lượt/IP (403) → mỗi lần chạy chỉ 3 lượt. Trang NHNN mới chỉ còn bài từ ~giữa 2025; 2012–2024 không có (IMF, World Bank,
+web.archive không có số tháng VN). Năm 2019–2023 chỉ có World Bank bình quân năm (khác định nghĩa). Chưa có số tháng 2024 – 5/2025.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
