@@ -7,7 +7,6 @@
 (function(){
   const INK = '#14201C', EWC = '#1F6FB2', LEND = '#0F7A3D', DEP = '#1F6FB2', MUT = '#6B7280', GRID = '#EEF0F2',
         XANH = 'rgba(24,163,75,.13)', DO = 'rgba(229,72,77,.10)';
-  const WB = {2019:[7.71,4.98], 2020:[7.65,4.12], 2021:[7.81,3.38], 2022:[8.01,3.82], 2023:[9.32,4.78]}; // World Bank FR.INR.LEND / FR.INR.DPST (bình quân năm)
   const TEN = {A:'Tiền vào + giá lên', B:'Tiền vào nhưng giá giảm (bán tháo)', C:'Ở giữa', D:'Tiền rút'};
   const vn = (x, d = 1) => x.toLocaleString('vi-VN', {minimumFractionDigits:d, maximumFractionDigits:d});
   const ngay = d => d.slice(8,10) + '/' + d.slice(5,7) + '/' + d.slice(0,4);
@@ -18,7 +17,6 @@
     if (document.getElementById('tqcss')) return;
     const s = document.createElement('style'); s.id = 'tqcss';
     s.textContent = `
-#view-tq{max-width:1180px}
 #view-tq .tqh{display:flex;align-items:baseline;gap:10px;margin:2px 0 12px}
 #view-tq .tqh b{font-size:17px}
 #view-tq .tqt{font-size:16px;font-weight:800;color:#111827;margin:0 0 3px}
@@ -31,12 +29,12 @@
 #view-tq .tqhero .big{font-size:15px;color:#374151;margin:0 0 18px}
 #view-tq .tqhero .big b{font-size:15px}
 #view-tq .tqgau{position:relative;margin:46px 0 8px}
-#view-tq .tqgau .zn{display:flex;height:16px;border-radius:8px;overflow:hidden}
+#view-tq .tqgau .zn{display:flex;height:14px;border-radius:7px;overflow:hidden;box-shadow:inset 0 1px 2px rgba(0,0,0,.06)}
 #view-tq .tqgau .zn i{display:block;height:100%}
 #view-tq .tqgau .lb{display:flex;font-size:12px;font-weight:700;margin-top:7px}
 #view-tq .tqgau .lb span{text-align:center}
-#view-tq .tqgau .mk{position:absolute;top:-30px;transform:translateX(-50%);text-align:center;font-weight:800;font-size:13px;color:#111827;white-space:nowrap}
-#view-tq .tqgau .mk:after{content:'';display:block;margin:3px auto 0;width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:9px solid #111827}
+#view-tq .tqgau .mk{position:absolute;top:-36px;transform:translateX(-50%);text-align:center;font-weight:800;font-size:12.5px;color:#fff;background:#111827;border-radius:11px;padding:3px 10px;white-space:nowrap;box-shadow:0 2px 6px rgba(17,24,39,.25)}
+#view-tq .tqgau .mk:after{content:'';position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid #111827}
 #view-tq .tqdks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
 #view-tq .tqdk{border:1px solid var(--border);border-radius:10px;padding:12px 14px;display:flex;gap:11px;align-items:flex-start}
 #view-tq .tqdk .ic{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:800;color:#fff}
@@ -94,7 +92,7 @@
   <div class="tqbig">Tiền giao dịch 1 tháng qua ${pct < 100 ? 'chỉ bằng' : 'bằng'} <b>${pct}%</b> mức bình thường của cả năm.${nL[3] === 'D' ? ` Tiền rút kéo dài từ ${ngay(N[k0][0])}.` : ''}</div>
   <div class="tqgau" role="img" aria-label="Thanh khoản hiện ${pct}% mức bình thường">
     <div class="mk" style="left:${vt(pct)}%">Hôm nay ${pct}%</div>
-    <div class="zn"><i style="width:40%;background:#F6C9CB"></i><i style="width:20%;background:#E5E7EB"></i><i style="width:40%;background:#BFE6CD"></i></div>
+    <div class="zn"><i style="width:40%;background:linear-gradient(90deg,#F4A9AC,#F9D5D6)"></i><i style="width:20%;background:#E5E7EB"></i><i style="width:40%;background:linear-gradient(90deg,#CDEBD7,#7FCB9B)"></i></div>
     <div class="lb"><span style="width:40%;color:var(--red)">Tiền rút · dưới 80%</span><span style="width:20%;color:${MUT}">Bình thường</span><span style="width:40%;color:var(--green-dark)">Tiền vào mạnh · trên 120%</span></div>
   </div>
   <div class="tqdks">
@@ -106,9 +104,9 @@
 </div>
 
 <div class="tqso">
-  <div><b>${eps.length} lần</b><span>tiền vào mạnh + giá đi lên, từ 2018</span></div>
-  <div><b>${ok.length}/${co.length} lần</b><span>thị trường tăng trong 3 tháng sau đó</span></div>
-  <div><b>+${vn(tb)}%</b><span>tăng bình quân 3 tháng sau tín hiệu</span></div>
+  <div><b>${eps.length} lần</b><span>tín hiệu tiền vào, từ 2018</span></div>
+  <div><b>${ok.length}/${co.length} lần</b><span>lần thị trường tăng sau 3 tháng</span></div>
+  <div><b>+${vn(tb)}%</b><span>bình quân 3 tháng sau tín hiệu</span></div>
 </div>
 
 <div class="card">
@@ -123,78 +121,104 @@
 
 <div class="card">
   <div class="tqt">Vì sao tiền rút: lãi tiết kiệm lên ${vn(ls.dep[lsN])}%</div>
-  <div class="tqs">Gửi ngân hàng lãi cao, không rủi ro — tiền nằm yên ở ngân hàng thay vì vào chứng khoán. Con sóng lớn nhất (2020–2021) đến khi lãi thấp nhất.</div>
-  <div class="tqleg"><span><i style="background:${DEP}"></i>Lãi tiết kiệm 6–12 tháng</span><span><i style="background:${LEND}"></i>Lãi cho vay</span><span><i style="background:repeating-linear-gradient(90deg,#9CA3AF 0 4px,transparent 4px 7px)"></i>2019–2023: bình quân năm</span></div>
-  <div class="tqc"><canvas id="tqC3" aria-label="Lãi suất tiết kiệm và cho vay từ 2019"></canvas></div>
+  <div class="tqs">Gửi ngân hàng lãi cao, không rủi ro — tiền nằm yên ở ngân hàng thay vì vào chứng khoán. Từ ${thang(ls.m[0])} lãi tiết kiệm tăng ${vn(ls.dep[lsN] - ls.dep[0])} điểm %, đúng lúc tiền rút khỏi thị trường. Số NHNN, cập nhật mỗi tháng.</div>
+  <div class="tqleg"><span><i style="background:${DEP}"></i>Lãi tiết kiệm 6–12 tháng</span><span><i style="background:${LEND}"></i>Lãi cho vay</span></div>
+  <div class="tqc"><canvas id="tqC3" aria-label="Lãi suất tiết kiệm và cho vay theo tháng"></canvas></div>
 </div>
 
 <div class="ft">Tiền giao dịch = giá trị khớp lệnh bình quân 1 tháng so với bình quân 1 năm, toàn thị trường. Giá đi lên = nhóm 150 cổ phiếu giao dịch nhiều nhất nằm trên đường trung bình 50 phiên.
-Nguồn: VNDirect, NHNN, World Bank. Quy tắc cố định, không dùng mô hình học máy. Kết quả quá khứ không bảo đảm tương lai; chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>`;
+Nguồn: VNDirect, NHNN. Quy tắc cố định, không dùng mô hình học máy. Kết quả quá khứ không bảo đảm tương lai; chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</div>`;
   }
 
   function veChart(T, X){
     if (typeof Chart === 'undefined') return;
     charts.forEach(c => { try { c.destroy(); } catch(e){} }); charts = [];
     const {N, kL, nL, eps} = X, lab = N.map(r => r[0]);
-    const tip = { backgroundColor:'#fff', titleColor:'#111827', bodyColor:'#374151', footerColor:MUT, borderColor:'#E5E7EB', borderWidth:1, padding:10, boxPadding:4, usePointStyle:true };
+    const FONT = 'Inter, system-ui, sans-serif';
+    const tip = { backgroundColor:'rgba(17,24,39,.94)', titleColor:'#fff', bodyColor:'#E5E7EB', footerColor:'#9CA3AF', borderWidth:0, padding:11, cornerRadius:9,
+      boxPadding:5, usePointStyle:true, titleFont:{weight:'700', family:FONT}, bodyFont:{family:FONT}, footerFont:{family:FONT, weight:'500'} };
     const nam = function(v){ const d = lab[v], p = lab[v-1]; if (!d || !p || d.slice(0,4) === p.slice(0,4)) return '';
       return this.chart.width < 520 ? (+d.slice(0,4) % 2 ? '' : d.slice(0,4)) : d.slice(0,4); };
-    const trucX = cb => ({grid:{display:false}, ticks:{color:MUT, maxRotation:0, autoSkip:false, callback:cb, font:{size:11}}});
-    const trucY = f => ({grid:{color:GRID}, border:{display:false}, ticks:{color:MUT, callback:f, font:{size:11}}});
-    const nen = {id:'tqNen', beforeDatasetsDraw(ch){ const {ctx, chartArea:ca, scales:{x}} = ch; ctx.save(); ctx.fillStyle = XANH; let k = 0;
+    const trucX = cb => ({grid:{display:false}, border:{display:false}, ticks:{color:'#9CA3AF', maxRotation:0, autoSkip:false, callback:cb, font:{size:11, family:FONT}}});
+    const trucY = f => ({position:'right', grid:{color:'#F1F3F5', drawTicks:false}, border:{display:false}, ticks:{color:'#9CA3AF', padding:8, callback:f, font:{size:11, family:FONT}}});
+    const doc = (c, top, bot) => (ctx) => { const {chart} = ctx, {ctx:g, chartArea:a} = chart; if (!a) return null;
+      const gr = g.createLinearGradient(0, a.top, 0, a.bottom); gr.addColorStop(0, top); gr.addColorStop(1, bot); return gr; };
+    // viên thuốc chữ (nhãn đỉnh sóng, Hôm nay)
+    const pill = (g, text, x, y, bg, fg, bd) => { g.save(); g.font = '700 11.5px ' + FONT; const w = g.measureText(text).width + 14, h = 21;
+      x = Math.max(w/2 + 2, Math.min(g.canvas.width / (window.devicePixelRatio || 1) - w/2 - 2, x));
+      g.beginPath(); (g.roundRect ? g.roundRect(x - w/2, y - h/2, w, h, 10.5) : g.rect(x - w/2, y - h/2, w, h)); g.fillStyle = bg; g.fill();
+      if (bd) { g.strokeStyle = bd; g.lineWidth = 1; g.stroke(); }
+      g.fillStyle = fg; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(text, x, y + .5); g.restore(); };
+    const cham = (g, x, y, c) => { g.save(); g.fillStyle = c + '33'; g.beginPath(); g.arc(x, y, 9, 0, 7); g.fill();
+      g.fillStyle = '#fff'; g.beginPath(); g.arc(x, y, 5, 0, 7); g.fill(); g.fillStyle = c; g.beginPath(); g.arc(x, y, 3.5, 0, 7); g.fill(); g.restore(); };
+    // vạch dọc theo chuột
+    const doc_ = {id:'tqDoc', afterDatasetsDraw(ch){ const a = ch.tooltip && ch.tooltip.getActiveElements && ch.tooltip.getActiveElements(); if (!a || !a.length) return;
+      const x = a[0].element.x, {ctx:g, chartArea:c} = ch; g.save(); g.strokeStyle = 'rgba(17,24,39,.35)'; g.setLineDash([3,3]); g.lineWidth = 1;
+      g.beginPath(); g.moveTo(x, c.top); g.lineTo(x, c.bottom); g.stroke(); g.restore(); }};
+    // chart 1: nền xanh lúc tiền vào mạnh
+    const nen = {id:'tqNen', beforeDatasetsDraw(ch){ const {ctx:g, chartArea:c, scales:{x}} = ch; g.save(); let k = 0;
+      const gr = g.createLinearGradient(0, c.top, 0, c.bottom); gr.addColorStop(0, 'rgba(24,163,75,.16)'); gr.addColorStop(1, 'rgba(24,163,75,.04)'); g.fillStyle = gr;
       while (k < N.length) { const s = N[k][3]; let j = k; while (j+1 < N.length && N[j+1][3] === s) j++;
-        if (s === 'A') { const x0 = Math.max(ca.left, x.getPixelForValue(k)), x1 = Math.min(ca.right, x.getPixelForValue(j+1 < N.length ? j+1 : j));
-          ctx.fillRect(x0, ca.top, Math.max(1, x1 - x0), ca.bottom - ca.top); }
-        k = j + 1; } ctx.restore(); }};
-    const nhan = {id:'tqNhan', afterDatasetsDraw(ch){ const {ctx, scales:{x, y}} = ch; ctx.save(); ctx.font = '800 12px Inter, system-ui, sans-serif'; ctx.textAlign = 'center';
-      if (ch.width >= 560) eps.filter(e => e.pk >= 15).filter((e, i, arr) => !arr.some(o => o !== e && Math.abs(o.pkk - e.pkk) < 40 && o.pk > e.pk))
-        .forEach(e => { const t = '+' + vn(e.pk, 0) + '%', tx = x.getPixelForValue(e.pkk), ty = y.getPixelForValue(N[e.pkk][1]) - 9; ctx.lineWidth = 4; ctx.strokeStyle = '#fff'; ctx.strokeText(t, tx, ty); ctx.fillStyle = '#128A3E'; ctx.fillText('+' + vn(e.pk, 0) + '%', x.getPixelForValue(e.pkk), y.getPixelForValue(N[e.pkk][1]) - 9); });
-      const px = x.getPixelForValue(kL), py = y.getPixelForValue(nL[1]); ctx.fillStyle = '#111827'; ctx.beginPath(); ctx.arc(px, py, 4.5, 0, 7); ctx.fill();
-      ctx.textAlign = 'right'; ctx.lineWidth = 4; ctx.strokeStyle = '#fff'; ctx.strokeText('Hôm nay', px - 6, py - 12); ctx.fillText('Hôm nay', px - 6, py - 12); ctx.restore(); }};
-    // chart dòng tiền: dải ngang 3 vùng (dưới 80% đỏ, trên 120% xanh)
-    const vung = {id:'tqVung', beforeDatasetsDraw(ch){ const {ctx, chartArea:ca, scales:{y}} = ch; ctx.save();
-      const y120 = y.getPixelForValue(120), y80 = y.getPixelForValue(80);
-      ctx.fillStyle = 'rgba(24,163,75,.10)'; ctx.fillRect(ca.left, ca.top, ca.width, y120 - ca.top);
-      ctx.fillStyle = 'rgba(229,72,77,.08)'; ctx.fillRect(ca.left, y80, ca.width, ca.bottom - y80);
-      ctx.font = '700 11px Inter, system-ui'; ctx.textAlign = 'left';
-      ctx.fillStyle = '#128A3E'; ctx.fillText('Tiền vào mạnh · trên 120%', ca.left + 6, ca.top + 13);
-      ctx.fillStyle = '#E5484D'; ctx.fillText('Tiền rút · dưới 80%', ca.left + 6, ca.bottom - 6); ctx.restore(); }};
-    const tieuDe = it => 'Ngày ' + ngay(it[0].label);
-    const duong = (label, data, c, w = 1.6) => ({label, data, borderColor:c, backgroundColor:c, borderWidth:w, pointRadius:0, pointHoverRadius:4, tension:0, spanGaps:true});
-    const c1 = new Chart(document.getElementById('tqC1'), {type:'line', plugins:[nen, nhan],
-      data:{labels:lab, datasets:[duong('Giá 150 cổ phiếu', N.map(r => r[1]), EWC)]},
-      options:{responsive:true, maintainAspectRatio:false, animation:false, interaction:{mode:'index', intersect:false}, layout:{padding:{top:16}},
-        plugins:{legend:{display:false}, tooltip:{...tip, callbacks:{title:tieuDe, label:it => ' Giá 150 cổ phiếu: ' + vn(it.parsed.y, 0),
-          footer:it => 'Tiền giao dịch: ' + Math.round(N[it[0].dataIndex][2] * 100) + '% mức bình thường'}}},
+        if (s === 'A') { const x0 = Math.max(c.left, x.getPixelForValue(k)), x1 = Math.min(c.right, x.getPixelForValue(j+1 < N.length ? j+1 : j));
+          g.fillRect(x0, c.top, Math.max(1.5, x1 - x0), c.bottom - c.top); }
+        k = j + 1; } g.restore(); }};
+    const nhan = {id:'tqNhan', afterDatasetsDraw(ch){ const {ctx:g, scales:{x, y}} = ch;
+      if (ch.width >= 560) eps.filter(e => e.pk >= 15).filter((e, i, arr) => !arr.some(o => o !== e && Math.abs(o.pkk - e.pkk) < 90 && o.pk > e.pk))
+        .forEach(e => pill(g, '+' + vn(e.pk, 0) + '%', x.getPixelForValue(e.pkk), y.getPixelForValue(N[e.pkk][1]) - 16, '#fff', '#128A3E', '#9FD9B4'));
+      const px = x.getPixelForValue(kL), py = y.getPixelForValue(nL[1]); cham(g, px, py, EWC);
+      pill(g, 'Hôm nay', px - 34, py - 22, '#111827', '#fff'); }};
+    const c1 = new Chart(document.getElementById('tqC1'), {type:'line', plugins:[nen, nhan, doc_],
+      data:{labels:lab, datasets:[{label:'Giá 150 cổ phiếu', data:N.map(r => r[1]), borderColor:EWC, borderWidth:2, pointRadius:0, pointHoverRadius:5,
+        pointHoverBackgroundColor:EWC, pointHoverBorderColor:'#fff', pointHoverBorderWidth:2, tension:.25,
+        fill:'start', backgroundColor:doc(EWC, 'rgba(31,111,178,.22)', 'rgba(31,111,178,0)')}]},
+      options:{responsive:true, maintainAspectRatio:false, animation:{duration:600}, interaction:{mode:'index', intersect:false}, layout:{padding:{top:24, right:4}},
+        plugins:{legend:{display:false}, tooltip:{...tip, callbacks:{title:it => ngay(it[0].label), label:it => ' Giá 150 cổ phiếu: ' + vn(it.parsed.y, 0),
+          footer:it => { const r = N[it[0].dataIndex]; return 'Tiền giao dịch ' + Math.round(r[2] * 100) + '% mức bình thường' + (r[3] === 'A' ? ' · tiền vào mạnh' : ''); }}}},
         scales:{x:trucX(nam), y:trucY(v => vn(v, 0))}}});
-    const c2 = new Chart(document.getElementById('tqC2'), {type:'line', plugins:[vung],
-      data:{labels:lab, datasets:[duong('Tiền giao dịch', N.map(r => Math.round(r[2] * 100)), '#111827', 1.4)]},
-      options:{responsive:true, maintainAspectRatio:false, animation:false, interaction:{mode:'index', intersect:false},
-        plugins:{legend:{display:false}, tooltip:{...tip, callbacks:{title:tieuDe, label:it => ` ${it.parsed.y}% mức bình thường · ${vn(N[it.dataIndex][4]/1000, 1)} nghìn tỷ/phiên`}}},
+    // chart 2: dòng tiền (%), đường đổi màu theo vùng
+    const mau = v => v >= 120 ? '#18A34B' : v < 80 ? '#E5484D' : '#9CA3AF';
+    const vung = {id:'tqVung', beforeDatasetsDraw(ch){ const {ctx:g, chartArea:c, scales:{y}} = ch; g.save();
+      const y120 = y.getPixelForValue(120), y80 = y.getPixelForValue(80);
+      g.fillStyle = 'rgba(24,163,75,.07)'; g.fillRect(c.left, c.top, c.width, y120 - c.top);
+      g.fillStyle = 'rgba(229,72,77,.06)'; g.fillRect(c.left, y80, c.width, c.bottom - y80);
+      g.setLineDash([4,4]); g.lineWidth = 1;
+      [[y120,'rgba(24,163,75,.55)'],[y80,'rgba(229,72,77,.55)']].forEach(([yy, cl]) => { g.strokeStyle = cl; g.beginPath(); g.moveTo(c.left, yy); g.lineTo(c.right, yy); g.stroke(); });
+      g.setLineDash([]); g.font = '700 11px ' + FONT; g.textAlign = 'left';
+      g.fillStyle = '#128A3E'; g.fillText('TIỀN VÀO MẠNH · trên 120%', c.left + 8, c.top + 15);
+      g.fillStyle = '#D93D42'; g.fillText('TIỀN RÚT · dưới 80%', c.left + 8, c.bottom - 8); g.restore(); },
+      afterDatasetsDraw(ch){ const {ctx:g, scales:{x, y}} = ch, v = Math.round(nL[2] * 100), px = x.getPixelForValue(kL), py = y.getPixelForValue(v);
+        cham(g, px, py, mau(v)); pill(g, v + '%', px - 28, py - 18, mau(v), '#fff'); }};
+    const c2 = new Chart(document.getElementById('tqC2'), {type:'line', plugins:[vung, doc_],
+      data:{labels:lab, datasets:[{label:'Tiền giao dịch', data:N.map(r => Math.round(r[2] * 100)), borderWidth:2, pointRadius:0, pointHoverRadius:5,
+        pointHoverBorderColor:'#fff', pointHoverBorderWidth:2, tension:.3, borderColor:'#9CA3AF',
+        segment:{borderColor:c => mau((c.p0.parsed.y + c.p1.parsed.y) / 2)}}]},
+      options:{responsive:true, maintainAspectRatio:false, animation:{duration:600}, interaction:{mode:'index', intersect:false}, layout:{padding:{top:6, right:4}},
+        plugins:{legend:{display:false}, tooltip:{...tip, callbacks:{title:it => ngay(it[0].label),
+          label:it => ` ${it.parsed.y}% mức bình thường`, footer:it => vn(N[it[0].dataIndex][4]/1000, 1) + ' nghìn tỷ/phiên'}}},
         scales:{x:trucX(nam), y:{...trucY(v => v + '%'), min:30, max:260}}}});
     const dongBo = (a, b) => (e, act) => { try {
       if (!act.length) { b.setActiveElements([]); b.tooltip.setActiveElements([], {x:0, y:0}); b.update('none'); return; }
       const i = act[0].index, el = [{datasetIndex:0, index:i}], p = b.getDatasetMeta(0).data[i];
       b.setActiveElements(el); b.tooltip.setActiveElements(el, {x:p.x, y:p.y}); b.update('none'); } catch(err){} };
     c1.options.onHover = dongBo(c1, c2); c2.options.onHover = dongBo(c2, c1);
-    // lãi suất 2019 -> tháng NHNN mới nhất
-    const ls = T.ls, lsI = {}; ls.m.forEach((m, k) => lsI[m] = k);
-    const M = []; for (let y = 2019; ; y++) { let het = false; for (let m = 1; m <= 12; m++) { const k = y + '-' + String(m).padStart(2,'0'); if (k > ls.m[ls.m.length-1]) { het = true; break; } M.push(k); } if (het) break; }
-    const namT = function(v){ const m = M[v]; if (!m || !m.endsWith('-01')) return ''; return this.chart.width < 420 ? (+m.slice(0,4) % 2 ? '' : m.slice(0,4)) : m.slice(0,4); };
-    const net = d => ({...d, borderDash:[5,4], stepped:'middle', spanGaps:false, pointRadius:0});
-    const trong = {id:'tqTrong', afterDatasetsDraw(ch){ const {ctx, chartArea:ca, scales:{x}} = ch;
-      const a = M.indexOf('2024-01'), b = M.indexOf(ls.m[0]); if (a < 0 || b <= a) return;
-      const cx = (x.getPixelForValue(a) + x.getPixelForValue(b)) / 2; ctx.save(); ctx.font = '600 11px Inter, system-ui'; ctx.fillStyle = MUT; ctx.textAlign = 'center';
-      ctx.fillText('chưa có', cx, (ca.top + ca.bottom) / 2 - 7); ctx.fillText('số tháng', cx, (ca.top + ca.bottom) / 2 + 8); ctx.restore(); }};
-    const c3 = new Chart(document.getElementById('tqC3'), {type:'line', plugins:[trong],
+    // chart 3: lãi suất NHNN theo tháng (liền mạch), ghi số hiện tại ở cuối đường
+    const ls = T.ls, M = ls.m;
+    const cuoi = {id:'tqCuoi', afterDatasetsDraw(ch){ const g = ch.ctx;
+      ch.data.datasets.forEach((d, i) => { const m = ch.getDatasetMeta(i), p = m.data[m.data.length-1]; if (!p) return;
+        cham(g, p.x, p.y, d.borderColor); pill(g, vn(d.data[d.data.length-1], 1) + '%', p.x - 30, p.y - 18, d.borderColor, '#fff');
+        const p0 = m.data[0]; g.save(); g.font = '600 11px ' + FONT; g.fillStyle = d.borderColor; g.textAlign = 'left';
+        g.fillText(vn(d.data[0], 1) + '%', p0.x + 2, p0.y - 9); g.restore(); }); }};
+    const c3 = new Chart(document.getElementById('tqC3'), {type:'line', plugins:[cuoi, doc_],
       data:{labels:M, datasets:[
-        {...duong('Lãi tiết kiệm 6–12 tháng', M.map(m => m in lsI ? ls.dep[lsI[m]] : null), DEP, 2.4), spanGaps:false},
-        {...duong('Lãi cho vay', M.map(m => m in lsI ? ls.lend[lsI[m]] : null), LEND, 2.4), spanGaps:false},
-        net(duong('Tiết kiệm (bình quân năm)', M.map(m => WB[m.slice(0,4)] ? WB[m.slice(0,4)][1] : null), DEP, 1.5)),
-        net(duong('Cho vay (bình quân năm)', M.map(m => WB[m.slice(0,4)] ? WB[m.slice(0,4)][0] : null), LEND, 1.5))]},
-      options:{responsive:true, maintainAspectRatio:false, animation:false, interaction:{mode:'index', intersect:false},
-        plugins:{legend:{display:false}, tooltip:{...tip, filter:it => it.parsed.y != null, callbacks:{title:it => 'Tháng ' + thang(it[0].label), label:it => ` ${it.dataset.label}: ${vn(it.parsed.y, 1)}%`}}},
-        scales:{x:trucX(namT), y:{...trucY(v => vn(v, 0) + '%'), min:2, max:12}}}});
+        {label:'Lãi cho vay', data:ls.lend, borderColor:LEND, borderWidth:2.6, pointRadius:0, pointHoverRadius:5, pointHoverBorderColor:'#fff', pointHoverBorderWidth:2, pointHoverBackgroundColor:LEND,
+          tension:.35, fill:'start', backgroundColor:doc(LEND, 'rgba(15,122,61,.14)', 'rgba(15,122,61,0)')},
+        {label:'Lãi tiết kiệm 6–12 tháng', data:ls.dep, borderColor:DEP, borderWidth:2.6, pointRadius:0, pointHoverRadius:5, pointHoverBorderColor:'#fff', pointHoverBorderWidth:2, pointHoverBackgroundColor:DEP,
+          tension:.35, fill:'start', backgroundColor:doc(DEP, 'rgba(31,111,178,.16)', 'rgba(31,111,178,0)')}]},
+      options:{responsive:true, maintainAspectRatio:false, animation:{duration:600}, interaction:{mode:'index', intersect:false}, layout:{padding:{top:22, right:6}},
+        plugins:{legend:{display:false}, tooltip:{...tip, callbacks:{title:it => 'Tháng ' + thang(it[0].label), label:it => ` ${it.dataset.label}: ${vn(it.parsed.y, 1)}%`}}},
+        scales:{x:{...trucX(function(v){ const m = M[v]; if (!m) return ''; const nho = this.chart.width < 520;
+            return (nho ? (+m.slice(5) % 3 === 0 || v === 0) : true) ? (+m.slice(5)) + '/' + m.slice(2,4) : ''; })},
+          y:{...trucY(v => vn(v, 0) + '%'), min:4, max:12}}}});
     charts = [c1, c2, c3];
   }
 
