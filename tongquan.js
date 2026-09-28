@@ -23,6 +23,27 @@
 #view-tq .tqs{font-size:13px;color:${MUT};margin:0 0 12px;line-height:1.5}
 #view-tq .tqc{position:relative;height:300px}
 #view-tq .tqc.sm{height:190px}
+#view-tq .tqst{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 24px 16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
+#view-tq .tqst .tp{display:flex;gap:18px;align-items:center}
+#view-tq .tqst .ico{flex:none;width:64px;height:64px;border-radius:50%;display:grid;place-items:center}
+#view-tq .tqst .ey{font-size:11.5px;font-weight:800;letter-spacing:.6px;color:${MUT};text-transform:uppercase}
+#view-tq .tqst .ten{font-size:28px;font-weight:900;letter-spacing:.5px;line-height:1.15;margin:2px 0 2px}
+#view-tq .tqst .mt{font-size:15px;color:#374151}
+#view-tq .tqst .hd{font-size:13px;color:${MUT};margin-top:2px}
+#view-tq .tqst .nh{margin-top:14px;border-radius:10px;padding:10px 14px;font-size:13.5px;color:#374151;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+#view-tq .tqst .nh b{font-size:12px;font-weight:800;border-radius:9px;padding:2px 9px;color:#fff;white-space:nowrap}
+#view-tq .tqst .tl{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+#view-tq .tqst .tl>div{border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:12.5px;color:${MUT};min-width:0}
+#view-tq .tqst .tl b{display:block;font-size:13.5px;color:#111827;margin-bottom:2px}
+#view-tq .tqst .tl i{font-style:normal;font-weight:800}
+#view-tq .tqst .ls{margin-top:16px}
+#view-tq .tqst .ls .bar{display:flex;height:12px;border-radius:6px;overflow:hidden}
+#view-tq .tqst .ls .bar span{display:block;height:100%}
+#view-tq .tqst .ls .yr{position:relative;height:16px;font-size:11px;color:${MUT}}
+#view-tq .tqst .ls .yr span{position:absolute;transform:translateX(-50%);top:3px}
+#view-tq .tqst .ls .cap{font-size:12px;color:${MUT};display:flex;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+#view-tq .tqst .ls .cap i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+@media(max-width:700px){#view-tq .tqst .tl{grid-template-columns:1fr}#view-tq .tqst .ten{font-size:23px}#view-tq .tqst .ico{width:52px;height:52px}#view-tq .tqst{padding:16px}}
 #view-tq .tqhero{background:#fff;border:1px solid var(--border);border-radius:14px;padding:22px 24px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
 #view-tq .tqhero .ey{font-size:11.5px;font-weight:800;letter-spacing:.6px;color:${MUT};text-transform:uppercase}
 #view-tq .tqhero h3{font-size:24px;line-height:1.25;margin:6px 0 4px;color:#111827}
@@ -105,6 +126,41 @@
     return {N, kL, nL, ma50, gt20, can, k0, eps};
   }
 
+  /* ---- trạng thái thị trường: 3 trạng thái + 1 nhãn phụ (máy phát hành tính, không hiện điều kiện) ---- */
+  const TS = [
+    { ten: 'QUAN SÁT', mau: '#6B7280', nen: '#F3F4F6', mt: 'Chưa rõ xu hướng.', hd: 'Đứng ngoài quan sát, chờ tín hiệu.',
+      ico: '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>' },
+    { ten: 'TÍCH CỰC', mau: '#18A34B', nen: '#E8F6ED', mt: 'Dòng tiền xác nhận xu hướng tăng.', hd: 'Nắm giữ, đi theo xu hướng.',
+      ico: '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>' },
+    { ten: 'THẬN TRỌNG', mau: '#E5484D', nen: '#FDECEC', mt: 'Áp lực vĩ mô lớn, rủi ro điều chỉnh cao.', hd: 'Hạn chế giải ngân, ưu tiên bảo toàn vốn.',
+      ico: '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 10v4"/><path d="M12 17.5v.01"/></svg>' } ];
+  const NH = [null,
+    { ten: 'Lực bán cạn dần', mau: '#1F6FB2', nen: '#EAF2FA', mt: 'Bán tháo đã lan rộng, vùng đáy đang hình thành — có thể bắt đầu giải ngân từng phần.' },
+    { ten: 'Rủi ro đang tăng', mau: '#D97706', nen: '#FEF3E2', mt: 'Xu hướng còn tốt nhưng áp lực bên ngoài lớn dần — không mua đuổi, giữ kỷ luật chốt lời.' } ];
+  function trangThai(T, dkTien, pct){
+    const tt = T.tt; if (!tt || !tt.ht || !tt.S || !tt.S.length) return '';
+    const h = tt.ht, S = TS[h.st] || TS[0], nh = NH[h.nhan];
+    const ruiRo = h.rr >= 2 && h.c && h.c.d_vimo;
+    // dải lịch sử: gộp các đoạn liền nhau cùng trạng thái
+    const L = tt.S, n = L.length, seg = [];
+    L.forEach((r, i) => { const last = seg[seg.length - 1]; if (last && last.st === r[1]) last.n++; else seg.push({ st: r[1], n: 1, i }); });
+    const yr = []; L.forEach((r, i) => { if (i && r[0].slice(0,4) !== L[i-1][0].slice(0,4)) yr.push([i, r[0].slice(0,4)]); });
+    return `<div class="tqst">
+  <div class="tp"><div class="ico" style="background:${S.mau}">${S.ico}</div>
+    <div><div class="ey">Trạng thái thị trường · từ ${ngay(h.tu)}</div><div class="ten" style="color:${S.mau}">${S.ten}</div>
+    <div class="mt">${S.mt}</div><div class="hd">${S.hd}</div></div></div>
+  ${nh ? `<div class="nh" style="background:${nh.nen}"><b style="background:${nh.mau}">${nh.ten}</b><span>${nh.mt}</span></div>` : ''}
+  <div class="tl">
+    <div><b>Dòng tiền</b>${dkTien ? '<i style="color:#128A3E">Đã vào mạnh</i> — thị trường có lực.' : `<i style="color:#374151">Chưa</i> — tiền mới bằng ${pct}% mức bình thường.`}</div>
+    <div><b>Lực bán</b>${h.nhan === 1 ? '<i style="color:#1F6FB2">Đã cạn dần</i> — vùng đáy đang hình thành.' : '<i style="color:#374151">Chưa cạn</i> — chưa có dấu hiệu tạo đáy.'}</div>
+    <div><b>Áp lực vĩ mô</b>${ruiRo ? '<i style="color:#E5484D">Đang lớn</i> — lãi suất, USD thế giới tăng nhanh.' : '<i style="color:#374151">Bình thường</i>'}</div>
+  </div>
+  <div class="ls"><div class="cap"><span>Trạng thái các năm qua:</span>${[1,0,2].map(k => `<span><i style="background:${TS[k].mau}"></i>${TS[k].ten[0] + TS[k].ten.slice(1).toLowerCase()}</span>`).join('')}</div>
+    <div class="bar">${seg.map(g => `<span style="width:${g.n / n * 100}%;background:${TS[g.st].mau}" title="${TS[g.st].ten} ${ngay(L[g.i][0])} – ${ngay(L[g.i + g.n - 1][0])}"></span>`).join('')}</div>
+    <div class="yr">${yr.map(([i, y]) => `<span style="left:${i / n * 100}%">${y}</span>`).join('')}</div></div>
+</div>`;
+  }
+
   function html(T, X){
     const {N, kL, nL, ma50, gt20, can, k0, eps} = X;
     const pct = Math.round(nL[2] * 100), dk1 = nL[2] >= 1.2, dk2 = nL[1] > ma50[kL];
@@ -114,6 +170,7 @@
     const tieuDe = dk1 && dk2 ? 'Tiền đang vào mạnh — sóng đã bắt đầu' : nL[3] === 'D' ? 'Tiền đang rút khỏi thị trường — chờ tiền quay lại' : 'Tiền chưa vào đủ mạnh — tiếp tục chờ';
     return `
 <div class="tqh"><b>Toàn cảnh thị trường</b><span class="mini">cập nhật ${ngay(nL[0])}</span></div>
+${trangThai(T, dk1 && dk2, pct)}
 
 <div class="tqhero">
   <div class="ey">Hôm nay</div>
