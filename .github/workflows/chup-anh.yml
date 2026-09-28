@@ -1,0 +1,45 @@
+name: chup-anh
+# Chup anh web that (Chi tiet ma + Toan canh) de dang bai FB. Chay khi push nhanh claude/*, anh ghi vao anh-bai/.
+on:
+  push:
+    branches: ['claude/**']
+    paths: ['.github/workflows/chup-anh.yml', 'anh-bai/ma.txt']
+permissions:
+  contents: write
+jobs:
+  chup:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: npm i --no-save playwright@1.47.2 && npx playwright install --with-deps chromium
+    - name: Chup
+      run: |
+        cat > chup.mjs <<'JS'
+        import { chromium } from 'playwright';
+        import fs from 'fs';
+        const mas = fs.readFileSync('anh-bai/ma.txt','utf8').split(/\s+/).filter(Boolean);
+        const b = await chromium.launch();
+        const ctx = await b.newContext({ viewport:{width:1440,height:900}, deviceScaleFactor:2, locale:'vi-VN', timezoneId:'Asia/Ho_Chi_Minh' });
+        const ngay = new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Ho_Chi_Minh'});
+        const chup = async (url, ten) => {
+          const p = await ctx.newPage();
+          await p.goto(url, { waitUntil:'networkidle', timeout:90000 }).catch(e=>console.log('goto',e.message));
+          await p.waitForTimeout(15000);
+          await p.mouse.move(2, 2);           // chuot ra khoi chart, bang ben phai khong khoa theo ngay cu
+          await p.waitForTimeout(1500);
+          await p.screenshot({ path:`anh-bai/${ngay}-${ten}.png` });
+          await p.screenshot({ path:`anh-bai/${ngay}-${ten}-full.png`, fullPage:true });
+          await p.close();
+        };
+        for (const m of mas) await chup(`https://khoanguyeninvest.vn/?ma=${m}`, m);
+        await chup('https://khoanguyeninvest.vn/#toan-canh', 'toan-canh');
+        await b.close();
+        JS
+        node chup.mjs
+        ls -la anh-bai
+    - name: Ghi anh
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add anh-bai/*.png
+        git commit -m "[AUTO] anh bai $(date +%F)" && git push || echo "khong co anh moi"
