@@ -65,10 +65,11 @@
 .tqbox .r i,.tqbox .s i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
 .tqbox .r b{color:#fff;font-weight:700}
 .tqbox .s{margin-top:5px;padding-top:5px;border-top:1px solid rgba(255,255,255,.12);font-weight:700}
-#tqModal{position:fixed;inset:0;z-index:1000;background:rgba(17,24,39,.55);display:none;align-items:center;justify-content:center;padding:18px}
+#tqModal{position:fixed;inset:0;z-index:70;background:rgba(17,24,39,.55);display:none;align-items:center;justify-content:center;padding:18px}
 #tqModal .tqmp{background:#fff;border-radius:14px;width:min(1500px,100%);height:min(900px,100%);display:flex;flex-direction:column;padding:16px 18px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
 #tqModal .tqmh{display:flex;align-items:center;gap:14px;margin-bottom:10px}
 #tqModal .tqmh b{font-size:16px}
+#tqModal .tqms{font-size:12.5px;color:#6B7280;margin-top:2px}
 #tqModal .tqx{margin-left:auto}
 #tqModal .tqkh{display:inline-flex;background:var(--panel2);border-radius:9px;padding:3px;gap:2px}
 #tqModal .tqkh button{border:0;background:none;border-radius:7px;padding:5px 11px;font:600 12.5px Inter,system-ui,sans-serif;color:#4B5563;cursor:pointer}
@@ -142,8 +143,8 @@
 </div>
 
 <div class="card">
-  <div class="tqhd"><div><div class="tqt">Vì sao tiền rút: lãi tiết kiệm lên ${vn(ls.dep[lsN])}%</div>
-    <div class="tqs">Gửi ngân hàng lãi cao, không rủi ro — tiền nằm yên ở ngân hàng thay vì vào chứng khoán. Từ ${thang(ls.m[0])} lãi tiết kiệm tăng ${vn(ls.dep[lsN] - ls.dep[0])} điểm %, đúng lúc tiền rút khỏi thị trường. Số NHNN, cập nhật mỗi tháng.</div></div>
+  <div class="tqhd"><div><div class="tqt">Lãi suất tiết kiệm và cho vay</div>
+    <div class="tqs">Lãi suất bình quân của các tổ chức tín dụng theo tháng, từ ${thang(ls.m[0])}. Số NHNN, cập nhật mỗi tháng.</div></div>
     <button class="tqzoom" data-z="ls" aria-label="Phóng to chart lãi suất">⤢ Phóng to</button></div>
   <div class="tqleg"><span><i style="background:${DEP}"></i>Lãi tiết kiệm 6–12 tháng</span><span><i style="background:${LEND}"></i>Lãi cho vay</span></div>
   <div class="tqc" id="tqW3"><canvas id="tqC3" aria-label="Lãi suất tiết kiệm và cho vay theo tháng"></canvas></div>
@@ -298,12 +299,16 @@ Nguồn: VNDirect, NHNN. Quy tắc cố định, không dùng mô hình học m�
     const dong = () => { mcharts.forEach(c => { try { c.destroy(); } catch(e){} }); mcharts = []; m.style.display = 'none'; document.body.style.overflow = ''; };
     const KH = [['6 tháng', 125], ['1 năm', 250], ['3 năm', 750], ['Tất cả', 0]];
     const gia = loai === 'gia';
-    m.innerHTML = `<div class="tqmp"><div class="tqmh"><b>${gia ? 'Giá 150 cổ phiếu và dòng tiền' : 'Lãi suất NHNN theo tháng'}</b>
+    m.innerHTML = `<div class="tqmp"><div class="tqmh"><div><b>${gia ? 'Giá 150 cổ phiếu và dòng tiền' : 'Lãi suất tiết kiệm và cho vay'}</b>${gia ? '' : '<div class="tqms">Lãi suất bình quân của các tổ chức tín dụng theo tháng. Số NHNN, cập nhật mỗi tháng.</div>'}</div>
       ${gia ? `<div class="tqkh">${KH.map(([t, n]) => `<button data-n="${n}">${t}</button>`).join('')}</div>` : ''}
       <button class="tqx" aria-label="Đóng">✕</button></div>
       ${gia ? chuGiai() : `<div class="tqleg2"><span><i style="background:${DEP}"></i>Lãi tiết kiệm 6–12 tháng</span><span><i style="background:${LEND}"></i>Lãi cho vay</span></div>`}
       <div class="tqmb">${gia ? '<div class="tqc" id="tqMW1" style="height:58%"><canvas id="tqMC1"></canvas></div><div class="tqc" id="tqMW2" style="height:34%;margin-top:10px"><canvas id="tqMC2"></canvas></div>'
         : '<div class="tqc" id="tqMW1" style="height:100%"><canvas id="tqMC1"></canvas></div>'}</div></div>`;
+    const tb = document.querySelector('.topbar'), nb = document.getElementById('nameBar');
+    const tren = tb && tb.offsetParent ? Math.max(0, tb.getBoundingClientRect().bottom) : 0;
+    const duoi = nb && getComputedStyle(nb).display !== 'none' ? nb.getBoundingClientRect().height : 0;
+    m.style.top = tren + 'px'; m.style.bottom = duoi + 'px';
     m.style.display = 'flex'; document.body.style.overflow = 'hidden';
     m.querySelector('.tqx').onclick = dong;
     const ve = n => { mcharts.forEach(c => { try { c.destroy(); } catch(e){} }); mcharts = [];
