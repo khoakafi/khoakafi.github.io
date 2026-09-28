@@ -150,9 +150,11 @@ web.archive không có số tháng VN). Năm 2019–2023 chỉ có World Bank b�
 ## Nghiên cứu đỉnh/đáy lớn (27/09/2026, CHƯA lên web)
 
 kafi-core `research/dinh-day/` (`KET-QUA.md`, script Python, `bao-cao.html`). Rổ 150 mã, zigzag 15% (12 đỉnh, 12 đáy).
-Cơ hội đáy ≥3/5 → 6/6 đợt có nhịp tăng ≥11%/3 tháng, còn giảm thêm 4–18% từ ngày báo. Rủi ro đỉnh ≥2/4 có vĩ mô (US10Y, USD)
-→ 5/8 đợt gần đỉnh đúng, chỉ báo trước 4/12 đỉnh. Thanh khoản hợp để xác nhận/thoát, không để bắt đáy. Muốn đưa checklist
-Cơ hội đáy / Rủi ro đỉnh vào tab Toàn cảnh thì **hỏi anh Khoa trước**.
+Số đã sửa 28/09 (vĩ mô theo lịch công bố — **USD FRED DTWEXBGS công bố hàng tuần, trễ 4–8 ngày; DGS10 dùng số phiên trước**):
+Cơ hội đáy ≥3/5 → 94,5% ngày, 5/6 đợt tăng ≥10%, còn giảm thêm 4–18%. Rủi ro đỉnh ≥2/4 có vĩ mô → 49,4% ngày, gần đỉnh 6/9 đợt đúng,
+báo kịp rõ 3 đỉnh. Mô phỏng +319% / −18,4%. Vòng 2 (lợi nhuận, P/E–P/B, khối ngoại, ngành; `research/dinh-day/vong2/`): 46 quy tắc,
+không cái nào qua kiểm chéo → luật giữ nguyên. **P/E, P/B lịch sử của VNDirect dùng BCTC trước ngày công bố đến giữa 2022** — muốn
+kiểm định lịch sử phải tự tính. Muốn đưa checklist Cơ hội đáy / Rủi ro đỉnh vào tab Toàn cảnh thì **hỏi anh Khoa trước**.
 
 ## Số hiệu suất B★ tính ở đâu
 
