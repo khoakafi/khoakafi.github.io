@@ -145,7 +145,7 @@ Chỉ báo dòng tiền = giá trị khớp THẬT TB20 ÷ TB250 toàn thị tr�
 chống nhảy. Tính ở kafi-core `research/trang-thai.mjs` (khớp 100% bản nghiên cứu từ 10/2018), `breadth.mjs` kiểm độ mới (phiên = VN-Index,
 US10Y trễ ≤4 ngày, USD H.10 đúng tuần) → sai thì không phát hành. **Không hiện điều kiện/ngưỡng lên web** (anh Khoa: khách chỉ thấy tầng nổi).
 Chạy thử: `tong-quan.yml` tick `thu` → file ở nhánh `tongquan-thu` của kafi-core.
-**28/09: secret `WEB_TOKEN` của kafi-core bị 401 Bad credentials** → tong-quan.yml và phat-hanh.yml (runner) không ghi được web; anh Khoa phải tạo token mới.
+28/09: `WEB_TOKEN` cũ bị 401 → anh Khoa tạo token mới (fine-grained, chỉ repo web, Contents RW, không hết hạn); đã thử ghi thật OK (`[AUTO] toan canh` 5b77ec8).
 
 ## Lãi suất NHNN theo tháng (27/09/2026)
 
