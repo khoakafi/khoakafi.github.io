@@ -139,6 +139,14 @@ sw.js xếp vào nhóm dữ liệu). Dữ liệu do kafi-core workflow **`tong-q
 Chỉ báo dòng tiền = giá trị khớp THẬT TB20 ÷ TB250 toàn thị trường; A = ≥1,2 và rổ top 150 (EW, chọn theo thanh khoản tháng trước) > MA50; D = <0,8.
 **Không đưa B★ vào tab này** (anh Khoa: B★ cũng theo dòng tiền chung). Lãi suất: nền = cận trên NHNN (theo chart VnExpress), đè bằng `sbv-thang.json` (nhánh `lai-suat-data`).
 
+### Trạng thái thị trường trên tab Toàn cảnh (28/09/2026, anh Khoa chốt)
+3 trạng thái: **TÍCH CỰC** (tiền ≥1,2 & rổ > MA50, giữ đến khi tiền <1,2 VÀ < MA50) · **THẬN TRỌNG** (Rủi ro đỉnh ≥2/4 có vĩ mô) ·
+**QUAN SÁT** ("Chưa rõ xu hướng"). Nhãn phụ: "Lực bán cạn dần" (Cơ hội đáy ≥3/5), "Rủi ro đang tăng" (Tích cực + rủi ro). Giữ thêm 5 phiên
+chống nhảy. Tính ở kafi-core `research/trang-thai.mjs` (khớp 100% bản nghiên cứu từ 10/2018), `breadth.mjs` kiểm độ mới (phiên = VN-Index,
+US10Y trễ ≤4 ngày, USD H.10 đúng tuần) → sai thì không phát hành. **Không hiện điều kiện/ngưỡng lên web** (anh Khoa: khách chỉ thấy tầng nổi).
+Chạy thử: `tong-quan.yml` tick `thu` → file ở nhánh `tongquan-thu` của kafi-core.
+**28/09: secret `WEB_TOKEN` của kafi-core bị 401 Bad credentials** → tong-quan.yml và phat-hanh.yml (runner) không ghi được web; anh Khoa phải tạo token mới.
+
 ## Lãi suất NHNN theo tháng (27/09/2026)
 
 Nguồn gốc số chart VnExpress = PDF "Diễn biến lãi suất của TCTD đối với khách hàng tháng M/YYYY" của NHNN (đăng ~17–18 tháng sau;
