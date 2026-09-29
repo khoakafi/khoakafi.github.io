@@ -3,8 +3,8 @@
 //       CACHE TRUOC (doi phien ban = doi URL = tu tai moi) -> mo app tuc thi.
 //   * index.html (dieu huong): MANG TRUOC nhung chi cho toi da 1,2 giay,
 //       qua thi lay ban cache. Mang tot -> luon moi; mang cham -> van mo ngay.
-//   * 2 file du lieu (dashboard_data, signals_data): MANG TRUOC, cho toi da 4 giay
-//       roi moi lay cache (tranh xem tin hieu cu khi dang online).
+//   * File du lieu (dashboard_data, signals_data, bstar_live, tongquan_data): MANG TRUOC (bo qua cache HTTP), cho toi da
+//       4 giay roi tra cache — ban mang ve muon VAN DUOC LUU (khong ket o du lieu cu).
 //   * Con lai: mang truoc, loi thi cache.
 //   Web va app dung chung file nay; noi dung hien thi khong doi, chi nhanh hon.
 const CACHE = 'kn-shell-v2';
@@ -26,16 +26,20 @@ function luu(req, res){
   } catch(_){}
   return res;
 }
-function fetchCoHan(req, ms){
+// Mang truoc, cho toi da `ms`; qua han thi tra cache NGAY nhung van tai tiep va LUU ban moi cho lan sau.
+// (Ban cu bo ket qua ve muon -> mang cham hon han cho la ket o ban cache cu mai mai.)
+function mangTruoc(e, req, ms, tai){
+  var mang = (tai || fetch(req)).then(function(r){ return luu(req, r); });
+  e.waitUntil(mang.catch(function(){}));
   return new Promise(function(ok, loi){
-    var t = setTimeout(function(){ loi(new Error('timeout')); }, ms);
-    fetch(req).then(function(r){ clearTimeout(t); ok(r); }, function(e){ clearTimeout(t); loi(e); });
+    var xong = false;
+    var t = setTimeout(function(){ caches.match(req).then(function(c){ if (!xong && c){ xong = true; ok(c); } }); }, ms);
+    mang.then(function(r){ if (!xong){ xong = true; clearTimeout(t); ok(r); } },
+      function(err){ caches.match(req).then(function(c){ if (!xong){ xong = true; clearTimeout(t); c ? ok(c) : loi(err); } }); });
   });
 }
-function mangTruoc(req, ms){
-  return fetchCoHan(req, ms).then(function(r){ return luu(req, r); })
-    .catch(function(){ return caches.match(req).then(function(c){ return c || fetch(req); }); });
-}
+// Du lieu: luon hoi may chu ban moi (cache:'no-cache' -> bo qua cache HTTP cua trinh duyet).
+function duLieu(e, req, ms){ return mangTruoc(e, req, ms, fetch(req.url, {cache: 'no-cache', credentials: 'same-origin'})); }
 // Cache truoc, nhung van tai ngam ban moi de lan mo SAU co ban moi
 // (phong khi ai do sua file ma quen doi ?v=).
 function cacheTruoc(req){
@@ -53,21 +57,22 @@ self.addEventListener('fetch', function(e){
   try { u = new URL(req.url); } catch(_){ return; }
 
   // Mo app / tai lai trang
-  if (req.mode === 'navigate') { e.respondWith(mangTruoc(req, 1200)); return; }
+  if (req.mode === 'navigate') { e.respondWith(mangTruoc(e, req, 1200)); return; }
 
   // Thu vien + font ngoai: cache truoc
   if (CDN_RE.test(req.url)) { e.respondWith(cacheTruoc(req)); return; }
 
   if (u.origin !== location.origin) return; // API gia/BCTC... de trinh duyet tu lo
 
-  // 2 file du lieu: mang truoc (cho 4s)
-  if (DATA_RE.test(u.pathname)) { e.respondWith(mangTruoc(req, 4000)); return; }
+  // File du lieu: mang truoc (cho 4s). Mang cham hon 4s thi tra ban cache NHUNG van tai tiep va LUU ban moi
+  // (truoc 29/09: ban tai muon bi bo -> iPhone 5G ket o du lieu 23/09 suot 6 ngay).
+  if (DATA_RE.test(u.pathname)) { e.respondWith(duLieu(e, req, 4000)); return; }
 
   // File co ?v= : cache truoc
   if (/[?&]v=/.test(u.search)) { e.respondWith(cacheTruoc(req)); return; }
 
   // Con lai (icon, manifest, file khong co ?v=): mang truoc, loi thi cache
-  e.respondWith(mangTruoc(req, 6000));
+  e.respondWith(mangTruoc(e, req, 6000));
 });
 
 // Nhan Web Push tu may chu quet gia -> hien thong bao ke ca khi app da dong.

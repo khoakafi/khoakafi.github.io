@@ -27,6 +27,10 @@ File chính: `index.html` (layout + CSS + version cache), `dashboard_app.js` (we
 - Cache theo phiên (`knGhiCache` / `knDocCache`): **không bao giờ ghi cache khi tải hỏng**.
   Ghi kết quả rỗng là cả phiên hôm đó chart trống mà không báo gì — đã dính đúng lỗi này một lần.
 
+- **Service worker (sửa 29/09):** mạng trước có hạn chờ (trang 1,2 s, dữ liệu 4 s) — quá hạn trả cache nhưng **bản tải về muộn vẫn phải được lưu**.
+  Bản cũ bỏ kết quả về muộn → iPhone 5G kẹt ở `dashboard_data.js` 23/09 suốt 6 ngày ("Watchlist 24/09", "cũ 6 ngày", PET "T+1").
+  Dữ liệu tải với `cache:'no-cache'`. Test mạng chậm: scratchpad `tq/swt.js` (máy chủ trễ 6 s).
+
 ## Cách dò lỗi "server sống mà web không chạy"
 
 Máy chạy task thường bị chặn gọi ra ngoài. Đừng nhờ anh Khoa chụp màn hình để thay cho việc tự kiểm.
