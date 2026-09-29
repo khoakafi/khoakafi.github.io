@@ -106,7 +106,16 @@ TB +5,6%/deal (chung: 58/133, +7,7%). **Luật tín hiệu không đổi** (gi�
 mũi tên trong phiên chỉ vẽ khi ước tính TB20 gồm phiên nay ≥ 15 tỷ (`duTK`). Kiểm lại lịch sử: workflow `kiem-bstar.yml`
 (`scripts/kiem-bstar-thanh-khoan.mjs`, chỉ đọc, chạy trên runner vì cần dchart).
 
-### Tỷ trọng B★: Buy 50% / 25% / 12.5% (24/09/2026, anh Khoa chốt)
+### Tỷ trọng B★: Buy 35% / 25% / 15% + trần thanh khoản, Add chỉ khi lãi < 20% (29/09/2026, anh Khoa chốt — thay bản 24/09 bên dưới)
+
+Anh Khoa: 50% NAV "rén tay". kafi-core `research/add_sizing.mjs` (workflow `add-sizing.yml`): 35/25/15 → 833% / sụt −9,9%
+(50/25/12.5: 1.333% / −11,1%; đều 25%: 643% / −9,05%). Nhóm "thường" +3,8%/deal, 17/37 thắng — 12.5→15 thêm lãi, sụt lớn nhất không đổi.
+**Trần thanh khoản:** tài khoản mặc định **10 tỷ**, lệnh ≤ 20% GTGD TB20 trước phiên nổ → trần = 2×TB20 (%), làm tròn xuống bội 5, tối thiểu 5
+(`buyPct`, `BUY_NAV`, engine.js). 30 deal B★★: trung vị TB20 32 tỷ; DPR 12,9 tỷ → 25%. **Add:** chỉ khi lãi 10% đến **dưới 20%**
+(`ADD_TRAN`); lịch sử chỉ 1 lần Add ở lãi ≥20% (HDC 2023, −5%) + PET 28/09/2026. Chữ BỒI ghi khoảng giá. App: lọc/KPI "Buy 35%" = `buy >= 35`.
+Test: `sh test/chay.sh` (engine-test3: 35/25/15, T015 trần thanh khoản, T016/T017 Add).
+
+### (Cũ) Tỷ trọng B★: Buy 50% / 25% / 12.5% (24/09/2026)
 
 Engine gắn `m[2]` vào dấu X: nền siêu chặt (biên độ 10 phiên ≤ 0,5 × 30 phiên, tính **trước** phiên nổ) + KL cạn
 (TB KL 10 phiên < 0,8 × TB 50 phiên) → 50; chỉ siêu chặt → 25; còn lại → 12.5 (% vốn cuối năm trước, như đường B★).

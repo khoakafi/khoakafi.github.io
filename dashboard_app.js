@@ -964,7 +964,7 @@ function bstarDeals(){
   out.sort((a,b) => a.bdate < b.bdate ? 1 : -1);
   BSTAR.deals = out; return out;
 }
-/* Ty trong B* (engine 24/09/2026): dau X mang m[2] = 50 | 25 | 12.5 (% tai khoan). Tra null neu ban phat hanh cu chua co. */
+/* Ty trong B* (engine 29/09/2026): dau X mang m[2] = 35 | 25 | 15 (% tai khoan, co tran thanh khoan TK 10 ty -> co the 5-30). Tra null neu ban phat hanh cu chua co. */
 let __knBuyMap = null;
 function knBuyOf(t, bdate){
   if (!__knBuyMap) { __knBuyMap = {}; const T = (window.SIGS && window.SIGS.t) || {};
@@ -3711,7 +3711,7 @@ inits.watch = function(){
   const tableHtml = (list, sortable)=>`<div style="overflow:auto"><table>${headRow(sortable)}${list.map(rowHtml).join('')}</table></div>`;
   el.innerHTML = `<div class="card">
     <h2 style="margin-bottom:3px">Watchlist ${lab}</h2>
-    <div class="mini" style="margin-bottom:10px">Chỉ còn mã B★ (nền thắt chặt, cơ bản đạt). <b>Buy 50% / 25% / 12.5%</b> = tỷ trọng nếu nổ phiên tới (% vốn cuối năm trước). Nhãn <span style="font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309">mỏng</span> = GTGD TB20 10–15 tỷ: vẫn canh được, nhưng tín hiệu chỉ hợp lệ khi phiên nổ kéo TB20 lên ≥ 15 tỷ.</div>
+    <div class="mini" style="margin-bottom:10px">Chỉ còn mã B★ (nền thắt chặt, cơ bản đạt). <b>Buy 35% / 25% / 15%</b> = tỷ trọng nếu nổ phiên tới (% vốn cuối năm trước; mã thanh khoản thấp tự giảm để lệnh ≤ 20% GTGD, tính cho tài khoản 10 tỷ). Nhãn <span style="font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309">mỏng</span> = GTGD TB20 10–15 tỷ: vẫn canh được, nhưng tín hiệu chỉ hợp lệ khi phiên nổ kéo TB20 lên ≥ 15 tỷ.</div>
     ${strong.length?tableHtml(strong,true):'<div class="mini" style="padding:8px 0">Chưa có mã đạt chuẩn cơ bản — cập nhật cuối phiên để quét lại.</div>'}
     <div class="mini" style="margin-top:9px;color:#7A828E">+/- LN, DT/TOI quý = tăng trưởng quý gần nhất so với cùng kỳ (cùng số với mục Chỉ số cơ bản trong Chi tiết mã; ngân hàng dùng TOI thay doanh thu). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div>
   </div>
