@@ -168,6 +168,15 @@ báo kịp rõ 3 đỉnh. Mô phỏng +319% / −18,4%. Vòng 2 (lợi nhuận, 
 không cái nào qua kiểm chéo → luật giữ nguyên. **P/E, P/B lịch sử của VNDirect dùng BCTC trước ngày công bố đến giữa 2022** — muốn
 kiểm định lịch sử phải tự tính. Muốn đưa checklist Cơ hội đáy / Rủi ro đỉnh vào tab Toàn cảnh thì **hỏi anh Khoa trước**.
 
+## Nghiên cứu B★ v2 (29/09/2026, CHƯA áp dụng — chờ anh Khoa quyết)
+
+kafi-core nhánh `claude/vigilant-albattani-2mwupw`, `research/v2/KET-QUA-V2.md` (không merge nhánh đó vào main: có 25 MB dữ liệu).
+Bộ mô phỏng Python `research/v2/bstar.py` khớp engine 135/135 dấu B★, sổ +609,5%. Nến dchart đầy đủ lấy bằng workflow chạy trên chính nhánh đó.
+- 81% phiên B★ đóng cửa trần: số hero chỉ đạt khi **mua trong phiên khi chạm giá kích hoạt**; mua phiên sau còn +186–264%.
+- Đề xuất: tính BỒI (A) vào sổ, nền tối thiểu 7%, GTGD bằng giá trị khớp thật, không mở B★ mới khi Toàn cảnh = Thận trọng.
+- Đã thử, không dùng: đổi luật bán, vào lại sau khi bị cắt, thêm B thường, nghiêng tỷ trọng theo Tích cực/Quan sát.
+- Thiên lệch sống sót nhỏ (424 mã huỷ niêm yết chỉ có 3 B★, đều cắt T+3).
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
