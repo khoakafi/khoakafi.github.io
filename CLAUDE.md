@@ -31,6 +31,13 @@ File chính: `index.html` (layout + CSS + version cache), `dashboard_app.js` (we
   Bản cũ bỏ kết quả về muộn → iPhone 5G kẹt ở `dashboard_data.js` 23/09 suốt 6 ngày ("Watchlist 24/09", "cũ 6 ngày", PET "T+1").
   Dữ liệu tải với `cache:'no-cache'`. Test mạng chậm: scratchpad `tq/swt.js` (máy chủ trễ 6 s).
 
+## Tên miền mất DNS (29/09/2026)
+
+`khoanguyeninvest.vn` ủy quyền cho `ns1.matbao.vn` (13.250.228.99) + `ns2.matbao.vn` (103.138.89.11) — **Mắt Bão**. 29/09 cả hai không trả lời
+→ Google DNS SERVFAIL, runner GitHub `EAI_AGAIN` → `phat-hanh.yml` hỏng. Web vẫn "mở được" trên máy đã có cache (service worker trả bản cũ)
+nên trông như "không cập nhật". Kiểm: kafi-core workflow `dns-check.yml`. Engine/`run.mjs` nay đọc file web qua `webText()`
+(tên miền trước, lỗi thì raw GitHub); `breadth.mjs` đọc thẳng raw. Sửa DNS phải làm trong tài khoản Mắt Bão của anh Khoa (không tự thao tác).
+
 ## Cách dò lỗi "server sống mà web không chạy"
 
 Máy chạy task thường bị chặn gọi ra ngoài. Đừng nhờ anh Khoa chụp màn hình để thay cho việc tự kiểm.
