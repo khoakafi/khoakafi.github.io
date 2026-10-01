@@ -31,7 +31,11 @@
 #view-tq .tqst .ten{font-size:30px;font-weight:900;letter-spacing:.6px;line-height:1.1;margin:3px 0 10px}
 #view-tq .tqst .nd{display:grid;grid-template-columns:auto 1fr;gap:5px 12px;align-items:baseline;font-size:14px;color:#1F2937}
 #view-tq .tqst .nd span{font-size:10.5px;font-weight:800;letter-spacing:.6px;color:${MUT};text-transform:uppercase}
-#view-tq .tqst .tu{flex:none;align-self:flex-start;font-size:12px;font-weight:700;border-radius:999px;padding:5px 12px;background:#fff;border:1px solid var(--border);color:#374151;white-space:nowrap}
+#view-tq .tqst .mt{flex:none;align-self:flex-start;display:flex;flex-direction:column;align-items:flex-end;gap:7px}
+#view-tq .tqst .cn{font-size:12px;color:${MUT};white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+#view-tq .tqst .cn::before{content:'';width:7px;height:7px;border-radius:50%;background:#18A34B;box-shadow:0 0 0 3px rgba(24,163,75,.18)}
+#view-tq .tqst .cn b{color:#111827;font-weight:700}
+#view-tq .tqst .tu{font-size:12px;font-weight:700;border-radius:999px;padding:5px 12px;background:#fff;border:1px solid var(--border);color:#374151;white-space:nowrap}
 #view-tq .tqst .nh{margin:0 24px 16px;border-radius:10px;padding:10px 14px;font-size:13.5px;color:#374151;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
 #view-tq .tqst .nh b{font-size:12px;font-weight:800;border-radius:9px;padding:2px 9px;color:#fff;white-space:nowrap}
 #view-tq .tqst .tl{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border)}
@@ -51,7 +55,7 @@
 #view-tq .tqst .bl span{position:absolute;top:0}
 #view-tq .tqst .gc{font-size:12.5px;color:${MUT};margin-top:9px;line-height:1.45}
 #view-tq .tqst .gc b{color:#111827}
-@media(max-width:760px){#view-tq .tqst .tl{grid-template-columns:1fr}#view-tq .tqst .tl>div+div{border-left:0;border-top:1px solid var(--border)}#view-tq .tqst .ten{font-size:24px}#view-tq .tqst .ico{width:48px;height:48px}#view-tq .tqst .tp{padding:16px;gap:10px 14px;display:grid;grid-template-columns:auto 1fr;align-items:center}#view-tq .tqst .tu{grid-column:1/-1;justify-self:start}#view-tq .tqst .nh{margin:0 16px 14px}#view-tq .tqst .tl>div{padding:12px 16px 14px}}
+@media(max-width:760px){#view-tq .tqst .tl{grid-template-columns:1fr}#view-tq .tqst .tl>div+div{border-left:0;border-top:1px solid var(--border)}#view-tq .tqst .ten{font-size:24px}#view-tq .tqst .ico{width:48px;height:48px}#view-tq .tqst .tp{padding:16px;gap:10px 14px;display:grid;grid-template-columns:auto 1fr;align-items:center}#view-tq .tqst .mt{grid-column:1/-1;flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap:wrap;gap:6px 10px}#view-tq .tqst .cn,#view-tq .tqst .tu{font-size:11.5px}#view-tq .tqst .tu{padding:3px 9px}#view-tq .tqst .nh{margin:0 16px 14px}#view-tq .tqst .tl>div{padding:12px 16px 14px}}
 #view-tq .tqhero{background:#fff;border:1px solid var(--border);border-radius:14px;padding:22px 24px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
 #view-tq .tqhero .ey{font-size:11.5px;font-weight:800;letter-spacing:.6px;color:${MUT};text-transform:uppercase}
 #view-tq .tqhero h3{font-size:24px;line-height:1.25;margin:6px 0 4px;color:#111827}
@@ -171,9 +175,9 @@
     const chip = m => `<i style="color:${m[1]};background:${m[2]}">${m[0]}</i>`;
     return `<div class="tqst">
   <div class="tp" style="background:linear-gradient(180deg,${S.nen},#fff)"><div class="ico" style="background:${S.mau}">${S.ico}</div>
-    <div class="tx"><div class="ey">Trạng thái thị trường</div><div class="ten" style="color:${S.mau}">${S.ten}</div>
+    <div class="tx"><div class="ey">Toàn cảnh thị trường</div><div class="ten" style="color:${S.mau}">${S.ten}</div>
       <div class="nd"><span>Nhận định</span><div>${S.mt}</div><span>Hành động</span><div>${S.hd}</div></div></div>
-    <div class="tu">Từ ${ngay(h.tu)} · ${phien} phiên</div></div>
+    <div class="mt"><div class="cn">Cập nhật <b>${ngay(nL[0])}</b></div><div class="tu" title="Trạng thái hiện tại bắt đầu từ ngày này">Từ ${ngay(h.tu)} · ${phien} phiên</div></div></div>
   ${nh ? `<div class="nh" style="background:${nh.nen}"><b style="background:${nh.mau}">${nh.ten}</b><span>${nh.mt}</span></div>` : ''}
   <div class="tl">
     <div><div class="h"><b>Dòng tiền</b>${chip(mTien)}</div>
@@ -196,8 +200,7 @@
     const vt = v => Math.max(1, Math.min(99, v / 200 * 100));
     const tieuDe = dk1 && dk2 ? 'Tiền đang vào mạnh — sóng đã bắt đầu' : nL[3] === 'D' ? 'Tiền đang rút khỏi thị trường — chờ tiền quay lại' : 'Tiền chưa vào đủ mạnh — tiếp tục chờ';
     return `
-<div class="tqh"><b>Toàn cảnh thị trường</b><span class="mini">cập nhật ${ngay(nL[0])}</span></div>
-${trangThai(T, X)}
+${trangThai(T, X) || `<div class="tqh"><b>Toàn cảnh thị trường</b><span class="mini">cập nhật ${ngay(nL[0])}</span></div>`}
 
 <div class="card">
   <div class="tqhd"><div><div class="tqt">Trạng thái thị trường qua các năm</div>
