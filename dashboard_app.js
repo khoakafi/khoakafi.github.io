@@ -2999,14 +2999,14 @@ function knTpnCapNhat(s){
                   pnl != null && pnl < 0 ? '#fdecec' : '#e7f6ec', pnl != null && pnl < 0 ? '#e5484d' : '#128a3e'];
     if (!laMua && them <= 0) return { c: chip, dL: s.dL, dA: s.dA, ts: s.ts };   // cung ngay du lieu: giu loi dan cua may, chi cap nhat %
     // Tu T+4: giu loi dan cua may (moc MA10/MA20 + cat lo, engine 01/10/2026) — truoc day ghi de bang moc -7% nen PET lai 28% van hien 'BAN duoi 38.59'.
-    if (!laMua && n > 3 && /MA(10|20)/.test(String(s.dL || ''))) return { c: chip, dL: s.dL, dA: s.dA, ts: s.ts };
+    if (!laMua && n > 3 && /MA(10|20)|Giữ, bán khi|Bán nếu hôm nay đóng cửa dưới/.test(String(s.dL || ''))) return { c: chip, dL: s.dL, dA: s.dA, ts: s.ts };
     const f2 = x => x >= 100 ? x.toFixed(1) : x.toFixed(2);
     const tx = fill ? ('Giá vốn ' + f2(fill) + '. ' + (n < 3 ? 'Chờ hàng về — T+3: đóng cửa ≤ ' + f2(fill) + ' là BÁN toàn bộ.'
                                                      : n === 3 ? 'Hôm nay T+3: đóng cửa ≤ ' + f2(fill) + ' là BÁN toàn bộ; trên giá vốn thì giữ, từ T+4 cắt lỗ dưới ' + f2(fill*0.93) + '.'
-                                                     : 'Cắt lỗ cứng nếu đóng cửa dưới ' + f2(fill*0.93) + '; mốc giữ lãi theo MA được tính lại sau phiên.'))
+                                                     : 'Bán nếu đóng cửa dưới ' + f2(fill*0.93) + ' (mốc giữ cập nhật sau phiên).'))
                     : 'Đã vào lệnh phiên trước. Bản cập nhật sau phiên sẽ tính lại mốc giữ/bán.';
-    const bm = String(s.dL || s.dA || '').match(/Buy (\d+(?:\.\d+)?)% tài khoản/);
-    const tx2 = bm ? tx + ' Tỷ trọng: Buy ' + bm[1] + '% tài khoản.' : tx;
+    const bm = String(s.dL || s.dA || '').match(/Buy (\d+(?:\.\d+)?)%/);
+    const tx2 = bm ? tx + ' Buy ' + bm[1] + '%.' : tx;
     return { c: chip, dL: tx2, dA: tx2, ts: s.ts };
   } catch(e) { return s; }
 }
