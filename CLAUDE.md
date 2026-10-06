@@ -154,7 +154,7 @@ Engine `wstar` thêm điều kiện giá nổ > MA50 (như luật X).
 ## Tab "Toàn cảnh" (27/09/2026, anh Khoa duyệt)
 
 `tongquan.js` (tab thêm vào nav cạnh "Hệ thống", kiểu tab Hàng hoá; link chia sẻ `#toan-canh`) + `tongquan_data.js` (`window.TQ`, không `?v=`,
-sw.js xếp vào nhóm dữ liệu). Dữ liệu do kafi-core workflow **`tong-quan.yml`** (17:05 VN, T2–T6) dựng: `research/breadth.mjs` → `research/phat-tongquan.mjs`
+sw.js xếp vào nhóm dữ liệu). Dữ liệu do kafi-core workflow **`tong-quan.yml`** (4 mốc 16:37/17:13/18:41/20:19 VN, T2–T6 — GitHub xếp hàng lịch :05 trễ hàng giờ; mốc sau tự bỏ qua nếu web đã có `cap` = hôm nay) dựng: `research/breadth.mjs` → `research/phat-tongquan.mjs`
 → PUT bằng `WEB_TOKEN`; thiếu/hỏng (N<2000 phiên, phiên cuối cũ >10 ngày, NaN, lỗi tải >70 mã) thì **không ghi**.
 Chỉ báo dòng tiền = giá trị khớp THẬT TB20 ÷ TB250 toàn thị trường; A = ≥1,2 và rổ top 150 (EW, chọn theo thanh khoản tháng trước) > MA50; D = <0,8.
 **Không đưa B★ vào tab này** (anh Khoa: B★ cũng theo dòng tiền chung). Lãi suất: nền = cận trên NHNN (theo chart VnExpress), đè bằng `sbv-thang.json` (nhánh `lai-suat-data`).
