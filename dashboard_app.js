@@ -9,7 +9,30 @@ const BO_CUNG = new Set(['DCL','VC3','SSB','KHG','VPI']);
 SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t) || (r.watch && !(r.wstar===1 && r.wgrade!=='weak' && !(r.wrng < 5)))) r.watch=0; });   // nen < 5% -> engine ra B!, khong thanh B*
 if(SUM.tpn&&SUM.tpn.recent) SUM.tpn.recent=SUM.tpn.recent.filter(x=>!BO_CUNG.has(x.t));
 const ROWS = () => SUM.rows;
-const byT = {}; SUM.rows.forEach(r => byT[r.t] = r);
+const byT = {}; SUM.rows.forEach(r => { byT[r.t] = r; r.__pPub = r.p; });
+/* Chia/thuong co phieu (GMD 07/10/2026, 3:2): ngay GDKHQ gia tham chieu = gia dong cua da cong bo x k (k ~ 0,67).
+   Ban phat hanh truoc khi VNDirect dieu chinh van giu nguong cu (GMD 'dong cua >= 83.00' trong khi tham chieu 52).
+   Phat hien bang tham chieu hom nay / gia cong bo -> quy doi nguong gia (x k), nguong KL (/ k), va chu tren man hinh. */
+window.__knDC = window.__knDC || {};
+function knBuocGia(p, b){ return b === 'HN' || b === 'UP' ? 0.1 : (p < 10 ? 0.01 : (p < 50 ? 0.05 : 0.1)); }
+function knChiaTach(code, k){
+  if (window.__knDC[code]) return; window.__knDC[code] = k;
+  const row = byT[code]; const b = row && row.b;
+  const len = x => { const sb = knBuocGia(x, b); return +(Math.ceil(x/sb - 1e-9)*sb).toFixed(2); };
+  const g = window.SIGS && window.SIGS.trig && window.SIGS.trig[code];
+  if (g) { [0, 2, 5].forEach(i => { if (+g[i] > 0) g[i] = len(g[i]*k); }); [1, 3, 4].forEach(i => { if (+g[i] > 0) g[i] = Math.round(g[i]/k); }); }
+  if (row) { if (row.p > 0) row.p = row.p*k; ['hi52', 'lo52'].forEach(f => { if (row[f] > 0) row[f] = row[f]*k; }); if (row.v20 > 0) row.v20 = row.v20/k; }
+}
+/* Quy doi so tren chu (gia x k, "x triệu cp" / k) cho ma vua chia tach hom nay */
+function knQuyDoi(tx, code){
+  const k = window.__knDC[code]; if (!k || !tx) return tx;
+  const g = window.SIGS && window.SIGS.trig && window.SIGS.trig[code];   // nguong da quy doi + lam tron buoc gia (knChiaTach)
+  let t = String(tx);
+  if (g && +g[0] > 0 && +g[1] > 0) t = t.replace(/≥ \d+(?:\.\d+)? · KL ≥ \d+(?:\.\d+)? triệu cp/g, '≥ \u0000' + (+g[0]).toFixed(2) + ' · KL ≥ \u0000' + (g[1]/1e6).toFixed(2) + ' triệu cp');
+  t = t.replace(/(^|[^\u0000\d.])(\d+(?:\.\d+)?) triệu cp/g, (m, a, x) => a + '\u0000' + (x/k).toFixed(2) + ' triệu cp');
+  t = t.replace(/(^|[^\d\u0000.])(\d+\.\d{2})(?![\d%])/g, (m, a, x) => a + (x*k).toFixed(2)).replace(/\u0000/g, '');
+  return t + ' (đã quy đổi theo chia cổ phiếu hôm nay)';
+}
 // ==== Ma chi xem chart (KHONG vao ro tin hieu, khong sinh deal) ====
 const XTRA = {};
 [['VNINDEX','Chỉ số VN-Index'],['VN30','Chỉ số VN30'],['VN100','Chỉ số VN100'],['HNX','Chỉ số HNX-Index'],['HNX30','Chỉ số HNX30'],['UPCOM','Chỉ số UPCoM-Index'],['VNXALL','Chỉ số VNX Allshare']].forEach(x => { XTRA[x[0]] = {t:x[0], b:'IX', n:x[1]}; });
@@ -918,6 +941,8 @@ async function liveQuote(){
       if (!row) { try { const _c = (d.pctChange!=null) ? +(+d.pctChange).toFixed(2) : null; const _x = XTRA[d.code];
         if (_x && _x.b === 'UP') { _x.p = d.close; _x.chg = _c; }
         else if (!_x && (d.floor === 'UPCOM' || d.floor === 'OTC') && d.type === 'STOCK') XTRA[d.code] = {t:d.code, b:'UP', n:'', p:d.close, chg:_c}; } catch(e){} return; }
+      try { if (d.date === knGioVN().ngay && +d.basicPrice > 0 && row.__pPub > 0 && String(SUM.asof || '') < d.date) {
+        const _k = +d.basicPrice / row.__pPub; if (Math.abs(_k - 1) > 0.015) knChiaTach(d.code, _k); } } catch(e){}
       const _dk = knDuKhop();
       if (_dk === 'ATC' && row.__pNay === d.date) { n++; return; }            // ATC: giu gia khop lien tuc truoc 14:30
       if (d.date === knGioVN().ngay && !(+d.nmVolume > 0)) {                    // chua khop lenh nao hom nay -> gia tham chieu, 0%
@@ -2967,6 +2992,7 @@ function computeTPN(oh, boardCode, qsAv){
         dA: 'Đóng cửa phiên tới ≥ ' + _px + ' · KL ≥ ' + _kl + _duoi, ts: _ts };
     }
   } catch(e){} }
+  if (_st && window.__knDC[curT]) _st = Object.assign({}, _st, { dL: knQuyDoi(_st.dL, curT), dA: knQuyDoi(_st.dA, curT) });
   return {markers, state: _st};
 }
 let curMarkers = [];
