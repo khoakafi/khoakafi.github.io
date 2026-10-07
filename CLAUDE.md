@@ -147,6 +147,11 @@ Engine `wstar` thêm điều kiện giá nổ > MA50 (như luật X).
   Chặn phát hành khi dấu X lịch sử tụt > max(4, 3%). `SIGS.asof`/`SUMMARY.asof` = ngày nến thật.
 - Tab Chi tiết mã: watchlist + khung hiện ngay (trước 2,4 s). `bstar_live.js` dùng được cả tháng 1–4.
 
+**Chia/thưởng cổ phiếu (07/10/2026, GMD 3:2):** dchart điều chỉnh **giá** lịch sử nhưng **không điều chỉnh khối lượng** → ngưỡng KL theo
+cổ phiếu cũ (dễ đạt hơn thật), GTGD hụt. Engine: `CHIA` = finfo `close/adClose > 1,05` trong 90 ngày → KL × hệ số (test `test/chia-test.mjs`).
+Web: bản phát hành trước khi VNDirect điều chỉnh (GMD 17:48 ghi "≥ 83.00", tham chiếu 52) → `knChiaTach` (tham chiếu hôm nay / `__pPub` lệch > 1,5%)
+quy đổi `SIGS.trig` + `knQuyDoi` đổi số trên chữ. Lịch sử > 90 ngày vẫn dính lỗi cũ (mục (1) dưới).
+
 **Còn mở (đổi lịch sử tín hiệu → cần anh Khoa quyết):** (1) lọc GTGD dùng giá đã điều chỉnh cổ tức → deal cũ tự biến mất (DGC, PTB);
 (2) `npYAt` để quý mới nhất có npY null đè giá trị cũ → coi là "đạt"; (3) lỗ → lãi (n0<0, n1>0) có thể rơi vào dải 0–25% → W;
 (4) ghi sổ tín hiệu kiểu append-only để giá điều chỉnh không xoá được dấu cũ.
