@@ -189,6 +189,12 @@ báo kịp rõ 3 đỉnh. Mô phỏng +319% / −18,4%. Vòng 2 (lợi nhuận, 
 không cái nào qua kiểm chéo → luật giữ nguyên. **P/E, P/B lịch sử của VNDirect dùng BCTC trước ngày công bố đến giữa 2022** — muốn
 kiểm định lịch sử phải tự tính. Muốn đưa checklist Cơ hội đáy / Rủi ro đỉnh vào tab Toàn cảnh thì **hỏi anh Khoa trước**.
 
+## Mô hình T+ ngắn hạn (10/10/2026) — KHÔNG ĐẠT, không lên web
+
+kafi-core `research/tplus.mjs` + `research/tplus-KET-QUA.md` (workflow `tplus.yml`). 3 tầng: Toàn cảnh → mã xu hướng tăng + RS ≥ 80
+→ điểm vào chỉnh MA20 / nền ngắn vượt đỉnh. Kiểm tra 2023–26: −1,02%/lệnh, cả 30 cách thoát đều âm, thua mua bừa; danh mục −62% khi VNI +66%.
+Điểm vào còn tệ hơn chỉ lọc xu hướng ngay ở giai đoạn học. Muốn thử lại phải đổi hẳn ý tưởng — giai đoạn 2023–26 đã "dùng" một lần.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
