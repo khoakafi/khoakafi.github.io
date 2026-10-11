@@ -195,6 +195,11 @@ kafi-core `research/tplus.mjs` + `research/tplus-KET-QUA.md` (workflow `tplus.ym
 → điểm vào chỉnh MA20 / nền ngắn vượt đỉnh. Kiểm tra 2023–26: −1,02%/lệnh, cả 30 cách thoát đều âm, thua mua bừa; danh mục −62% khi VNI +66%.
 Điểm vào còn tệ hơn chỉ lọc xu hướng ngay ở giai đoạn học. Muốn thử lại phải đổi hẳn ý tưởng — giai đoạn 2023–26 đã "dùng" một lần.
 
+## B★ thực tế: vốn, đóng trần, vào sớm (11/10/2026, CHƯA đổi luật/web)
+
+kafi-core `research/breakout-thuc-te-KET-QUA.md`. 125 deal B★ từ 2019: TB20 trung vị 38 tỷ → 10 tỷ/deal chỉ vừa 37% deal (≤20% TB20).
+79% deal đóng trần: mua được trần +5,0%/deal, lỡ trần mua mở cửa hôm sau +1,8%. Vào sớm khi chạm ngưỡng: 1/3 xịt nhưng xịt chỉ −0,78%/lệnh.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
