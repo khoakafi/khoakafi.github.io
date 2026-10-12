@@ -30,7 +30,7 @@ jobs:
         thang: ${{ fromJSON(needs.chia.outputs.ds) }}
     steps:
     - uses: actions/checkout@v4
-    - run: sudo apt-get install -y -qq poppler-utils >/dev/null
+    - run: which pdftotext || (sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq poppler-utils >/dev/null)
     - env:
         THANG: ${{ matrix.thang }}
         DELAY: "5000"
