@@ -3573,7 +3573,9 @@ inits.compare = function(){
   drawSec();
 };
 // ===== DINH GIA THEO DONG (khoang P/B & ROE lich su, hien tai theo phien) =====
-const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB','TPB','VIB','MSB','OCB'], sec:['SSI','VND','VCI','HCM','MBS','VDS','BSI','SHS','VIX','FTS','ORS','TCX','VPX','VCK'] };
+const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB','TPB','VIB','MSB','OCB'], sec:['SSI','VND','VCI','HCM','MBS','VDS','BSI','SHS','VIX','FTS','ORS','TCX','VPX','VCK','KAI'] };
+/* Ma moi len san: khoang P/B chi tinh tu ngay niem yet -> ghi chu de nguoi xem khong hieu nham la '6 nam'. */
+const SEC_MOI = { KAI: '09/09/2026' };
 let secCache = {}, secChart = null, secGrp = 'bank', secLoi = null;
 /* Dem so ma thuc su ve duoc khoang P/B. Dung de biet mot lan tai la that bai hay thanh cong. */
 function secDemMuc(D, codes){
@@ -3595,6 +3597,8 @@ async function drawSec(){
     if (luu) { luu._k = khoa; secCache[secGrp] = cch = luu; }
   }
   /* Cache rong = lan tai truoc that bai. Bo di de tai lai, dung de ca phien chart trong. */
+  /* Cache cua danh sach ma cu (vd. truoc khi them KAI 13/10/2026) -> tai lai de co du ma. */
+  if (cch && cch._codes !== codes.join(',')) cch = null;
   if (cch && !secDemMuc(cch, codes)) {
     secCache[secGrp] = cch = null;
     try { localStorage.removeItem('kn_sec_' + secGrp); } catch(e){}
@@ -3633,7 +3637,7 @@ async function drawSec(){
         if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb;
       } catch(e){ if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb; }
     } catch(e){ if (!secLoi) secLoi = 'mã ' + t + ': ' + ((e && e.message) || 'không gọi được'); } }));
-    out._ts = Date.now(); out._k = khoa;
+    out._ts = Date.now(); out._k = khoa; out._codes = codes.join(',');
     secCache[secGrp] = out;
     /* Chi ghi cache khi ve du ma. Tai hong ma van ghi thi ca phien sau do chart trong. */
     const nOk = secDemMuc(out, codes);
@@ -3660,6 +3664,8 @@ async function drawSec(){
   }
   if (cv) cv.style.display = '';
   if (msg) msg.style.display = 'none';
+  { const moi = items.filter(c => SEC_MOI[c]); const st2 = $('#secSt');
+    if (st2 && moi.length && !/mới niêm yết/.test(st2.textContent)) st2.textContent += (st2.textContent ? ' · ' : '') + moi.map(c => c + ' mới niêm yết ' + SEC_MOI[c] + ' (khoảng P/B tính từ ngày lên sàn)').join(', '); }
   const secLbl = { id:'secLbl', afterDatasetsDraw(chart){ const ctx = chart.ctx; const meta = chart.getDatasetMeta(0);
     meta.data.forEach((bar,i)=>{ const d = D[items[i]];
       ctx.save(); ctx.font = '700 11px Inter, sans-serif'; ctx.fillStyle = '#1F2937'; ctx.textAlign = 'center';
@@ -3676,7 +3682,7 @@ async function drawSec(){
       plugins:{ legend:{display:false}, tooltip:{callbacks:{ label: c => { const d = D[items[c.dataIndex]];
         return c.datasetIndex===1 ? 'ROE hiện tại: '+(d.curRoe!=null?d.curRoe.toFixed(1)+'%':'--')
           : ['P/B cao nhất: '+d.pbHi.toFixed(2), 'P/B thấp nhất: '+d.pbLo.toFixed(2), 'P/B hiện tại: '+(d.curPb!=null?(+d.curPb).toFixed(2):'--'),
-             'Sổ sách/cp: '+(d.bvps!=null?(+d.bvps).toFixed(2)+' (VNDirect)':'--')]; } }} },
+             'Sổ sách/cp: '+(d.bvps!=null?(+d.bvps).toFixed(2)+' (VNDirect)':'--')].concat(SEC_MOI[items[c.dataIndex]] ? ['Niêm yết '+SEC_MOI[items[c.dataIndex]]+' — khoảng P/B chưa đủ 6 năm'] : []); } }} },
       scales:{ x:{grid:{display:false}, ticks:{color:'#1F2937', font:{weight:600, size:12, family:'Inter'}}},
                y:{beginAtZero:true, grid:{color:'#F1F3F6'}, ticks:{color:'#7A828E', font:{size:11}}, title:{display:true, text:'P/B', color:'#7A828E', font:{size:11}}},
                y2:{position:'right', beginAtZero:true, grid:{drawOnChartArea:false}, ticks:{color:'#D97706', font:{size:11}, callback:v=>v+'%'}, title:{display:true, text:'ROE', color:'#D97706', font:{size:11}}} } },
