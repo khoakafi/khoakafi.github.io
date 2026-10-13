@@ -177,6 +177,16 @@ Bộ mô phỏng Python `research/v2/bstar.py` khớp engine 135/135 dấu B★,
 - Đã thử, không dùng: đổi luật bán, vào lại sau khi bị cắt, thêm B thường, nghiêng tỷ trọng theo Tích cực/Quan sát.
 - Thiên lệch sống sót nhỏ (424 mã huỷ niêm yết chỉ có 3 B★, đều cắt T+3).
 
+## Nghiên cứu bắt đáy vốn hoá lớn + "rơi cây thông" (13/10/2026, KHÔNG áp dụng)
+
+kafi-core nhánh `claude/vigilant-albattani-2mwupw`, `research/v2/bat-day/KET-QUA-BAT-DAY.md`. Lệnh tính bằng `day_lib.lenh_tk`
+(phiên sàn trắng không bán được) — backtest thường đánh giá thấp lỗ (NVL 11/2022 −18,5% → thật −63%).
+- Cây thông CẠN (KL phiên sàn < 0,2×TB20, kiểu NVL/PDR 11/2022) và MỘT MÌNH (< 5% mã cùng sàn) bắt lúc nào cũng chết; chờ hết sàn hay cắt lỗ đều không cứu.
+  Hoảng loạn chung thì bật, nhưng không hơn mua rổ cùng ngày.
+- Chưa có cách bắt đáy vốn hoá lớn đáng tin: rổ ngày đầu "Cơ hội đáy" 6/6 nhưng nhãn nằm trong mẫu (hoảng loạn đặt trước chỉ +0,8%/đợt);
+  bộ lọc né (sàn trắng riêng mã 60 phiên / tăng nóng ≥3× / cây thông CẠN–MỘT MÌNH 120 phiên) thêm ROS thì vẫn 8 lệnh lỗ ≥30%. Không ghép B★.
+- Lỗi đo đã biết: `x_caythong.py` nhận sàn HNX ở −9,6% → sót sàn mã HNX giá thấp (bước giá 100đ). Dữ liệu chỉ mã còn niêm yết.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
