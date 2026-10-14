@@ -1,0 +1,18 @@
+name: do-toc-do
+on:
+  workflow_dispatch:
+    inputs:
+      ma:
+        description: Cac ma de doi lan luot
+        default: KDH,NVL,HPG,FPT,KDH
+        type: string
+jobs:
+  do:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v4
+    - run: npm i --no-save playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
+    - run: node scripts/do-toc-do.mjs
+      env:
+        MA: ${{ inputs.ma }}
