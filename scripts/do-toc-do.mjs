@@ -19,10 +19,12 @@ for (const ma of (process.env.MA || 'KDH,NVL').split(',')) {
   await p.waitForTimeout(1500);
 }
 const chan = await p.evaluate(async () => {
-  const o = {}; try { o.curT = curT; o.curOhlcFor = curOhlcFor; o.dangCho = [...knDtCho.keys()]; o.kho = [...knDtKho.keys()]; o.vcHong = knVcHong; } catch (e) { o.loi = String(e); }
-  const tg = async (ten, f) => { const s = performance.now(); try { const r = await Promise.race([f(), new Promise((_, j) => setTimeout(() => j(new Error('QUA 15s')), 15000))]); o[ten] = Math.round(performance.now() - s) + 'ms, ' + (Array.isArray(r) ? r.length + ' dong' : (r && r.t ? r.t.length + ' nen' : typeof r)); } catch (e) { o[ten] = 'LOI ' + Math.round(performance.now() - s) + 'ms ' + e.message; } };
-  await tg('ohlc HPG', () => api.ohlc('HPG', 5100)); await tg('kqkd HPG', () => api.kqkd('HPG')); await tg('ratios HPG', () => api.ratios('HPG'));
-  await tg('knDtTai SSI', () => knDtTai('SSI', false));
+  const o = { scripts: [...document.scripts].map(x => x.src.split('/').pop()).filter(Boolean).join(' '), sw: !!navigator.serviceWorker?.controller };
+  const tg = async (ten, u, opt) => { const s = performance.now(); try { const r = await Promise.race([fetch(u, opt), new Promise((_, j) => setTimeout(() => j(new Error('QUA 15s')), 15000))]); o[ten] = r.status + ' ' + Math.round(performance.now() - s) + 'ms'; } catch (e) { o[ten] = 'LOI ' + Math.round(performance.now() - s) + 'ms ' + e.message; } };
+  await tg('vietcap', 'https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/HPG/statistics-financial', { referrerPolicy: 'no-referrer' });
+  await tg('finfo BCTC', 'https://api-finfo.vndirect.com.vn/v4/financial_statements?q=code:HPG~reportType:QUARTER~itemCode:21001,23000&sort=fiscalDate:desc&size=150');
+  await tg('dchart', 'https://dchart-api.vndirect.com.vn/dchart/history?symbol=HPG&resolution=D&from=1351394069&to=1792034069');
+  try { o.coVc = sessionStorage.getItem('kn_vc_hong'); } catch (e) {}
   return o; });
 console.log('\nCHAN DOAN:', JSON.stringify(chan, null, 1));
 cham.sort((a, b) => (+String(b[0]).replace(/\D/g, '')) - (+String(a[0]).replace(/\D/g, '')));
