@@ -187,6 +187,16 @@ kafi-core nhánh `claude/vigilant-albattani-2mwupw`, `research/v2/bat-day/KET-QU
   bộ lọc né (sàn trắng riêng mã 60 phiên / tăng nóng ≥3× / cây thông CẠN–MỘT MÌNH 120 phiên) thêm ROS thì vẫn 8 lệnh lỗ ≥30%. Không ghép B★.
 - Lỗi đo đã biết: `x_caythong.py` nhận sàn HNX ở −9,6% → sót sàn mã HNX giá thấp (bước giá 100đ). Dữ liệu chỉ mã còn niêm yết.
 
+## Nghiên cứu cách đánh vô địch USIC (14/10/2026, KHÔNG áp dụng)
+
+kafi-core nhánh `claude/vigilant-albattani-2mwupw`, `research/v2/usic/KET-QUA-USIC.md` (khung `usic_lib.py`: T+2,5 nghiêm, trần/sàn trắng theo bước giá;
+khớp B★ 135/135, curve 609,53%; đặc tả đẩy lên trước khi chạy: `DAC-TA.md`, `DAC-TA-2.md`).
+- Luk pullback −0,83%/lệnh (948 lệnh); Kell, O'Neil/Ryan không lợi thế; Minervini lợi thế chỉ từ Trend Template + 2020–21. Không cách nào hơn B★.
+- Ở VN **mua pullback thua, mua phá nền mã dẫn dắt thắng**. Biên ±7% cắt đuôi lãi (payoff Luk 1,7 so với ~5 ở Mỹ). T+2,5 không giảm lãi TB nhưng làm đuôi lỗ dày.
+- Ghép vào B★: vào lại khi lỡ phiên nổ, mua thêm, đổi luật bán (10/10 thua E0), lọc chỉ số, nghiêng tỷ trọng theo RS/TT (0/120 qua Holm) → đều không dùng.
+- Manh mối duy nhất: breakout mã dẫn dắt kiểu Kullamägi (xếp hạng **hằng ngày**, danh sách tuần trễ 1 tuần thì mất lợi thế), ~1,4 lệnh/năm, lãi dồn vào 5 lệnh → chỉ theo dõi tiến, tách khỏi B★, nếu anh Khoa muốn.
+- Lưu ý kế toán: sổ **không margin** phụ thuộc thứ tự deal cùng ngày (`bstar.curve` xếp theo tên mã; B★ 35/25/15 không margin 427,6% → 515–611% với thứ tự khác). Số hero có margin không bị ảnh hưởng.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
