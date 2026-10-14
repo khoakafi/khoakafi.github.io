@@ -91,9 +91,17 @@ function __fTxtB(x){ return window.__FIN_BANK ? String(x).replace(/Doanh thu/g,'
    tot voi Referer suot may thang; bo Referer o do lam B* mat gia (15 loi goi
    dchart cung luc, mot so bi tu choi -> deal ra "..."). Khong dung
    <meta name="referrer"> cho ca site vi se mat Referer o link KAFI va GA. */
+/* Han cho (14/10/2026): truoc day khong co -> nguon nao treo la tab Chi tiet ma quay vong mai.
+   Vietcap 5 s (hong thi roi sang VNDirect), con lai 25 s (bang gia toan san co luc mat > 10 s). */
 async function jget(u){
-  const r = await fetch(u, /iq\.vietcap\.com\.vn/.test(u) ? { referrerPolicy: 'no-referrer' } : undefined);
-  if(!r.ok) throw new Error(r.status); return r.json(); }
+  const vc = /iq\.vietcap\.com\.vn/.test(u);
+  const ac = typeof AbortController === 'function' ? new AbortController() : null;
+  const hen = ac ? setTimeout(() => { try { ac.abort(); } catch(e){} }, vc ? 5000 : 25000) : null;
+  try {
+    const opt = {}; if (vc) opt.referrerPolicy = 'no-referrer'; if (ac) opt.signal = ac.signal;
+    const r = await fetch(u, opt);
+    if(!r.ok) throw new Error(r.status); return await r.json();
+  } finally { if (hen) clearTimeout(hen); } }
 const api = {
   ohlc: async (sym, days) => {
     try { const H = window.HH; const b = H && H.bars ? H.bars[sym] : null;
@@ -2821,6 +2829,17 @@ function knDtConTuoi(t){
   const v = knDtLay(t);
   return !!(v && Date.now() - v.ohTs < KN_DT_TTL);
 }
+/* Giu toi da 30 ma BCTC tren may; day bo nho thi xoa het kho nay (khong dung den du lieu khac). */
+function knCbLuu(t, khoa, qs, rts){
+  try {
+    let ds = []; try { ds = JSON.parse(localStorage.getItem('kn_cb__ds') || '[]'); } catch(e){}
+    ds = ds.filter(x => x !== t); ds.push(t);
+    while (ds.length > 30) { try { localStorage.removeItem('kn_cb_' + ds.shift()); } catch(e){} }
+    try { localStorage.setItem('kn_cb_' + t, JSON.stringify({ k: khoa, v: { qs, rts } })); }
+    catch(e){ ds.forEach(x => { try { localStorage.removeItem('kn_cb_' + x); } catch(e2){} }); ds = []; }
+    localStorage.setItem('kn_cb__ds', JSON.stringify(ds));
+  } catch(e){}
+}
 const knDtCho = new Map();   // ma -> lan tai dang chay do, de khong tai hai lan
 async function knDtTai(t, isX){
   const cu = knDtLay(t);
@@ -2829,12 +2848,16 @@ async function knDtTai(t, isX){
      luc cham tay moi co tac dung: nha tay ra la dung luon lan tai da chay. */
   const dangCho = knDtCho.get(t);
   if (dangCho) return dangCho;
+  /* BCTC + chi so chi doi sau phien -> luu tren may theo phien (14/10/2026): mo lai trang chi con cho gia.
+     Chi luu khi co du lieu (khong bao gio luu ket qua rong). */
+  const khoaCb = knKhoaPhien(KN_MOC_SEC), luuCb = (cu && cu.qs && cu.rts) ? null : knDocCache('kn_cb_' + t, khoaCb);
   const viec = (async function(){
     const [oh, qs, rts] = await Promise.all([
       api.ohlc(t, 5100),
-      isX ? Promise.resolve([]) : (cu && cu.qs  ? Promise.resolve(cu.qs)  : api.kqkd(t).catch(()=>[])),
-      isX ? Promise.resolve([]) : (cu && cu.rts ? Promise.resolve(cu.rts) : api.ratios(t).catch(()=>[]))
+      isX ? Promise.resolve([]) : (cu && cu.qs  ? Promise.resolve(cu.qs)  : luuCb ? Promise.resolve(luuCb.qs)  : api.kqkd(t).catch(()=>[])),
+      isX ? Promise.resolve([]) : (cu && cu.rts ? Promise.resolve(cu.rts) : luuCb ? Promise.resolve(luuCb.rts) : api.ratios(t).catch(()=>[]))
     ]);
+    if (!isX && !luuCb && qs && qs.length && rts && rts.length) knCbLuu(t, khoaCb, qs, rts);
     const v = { oh, qs, rts, ohTs: Date.now() };
     knDtGhi(t, v);
     return v;
