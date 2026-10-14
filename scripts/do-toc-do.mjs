@@ -3,7 +3,7 @@ import { chromium } from 'playwright';
 const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
 const req = new Map(), cham = [];
 p.on('request', r => req.set(r, Date.now()));
-p.on('requestfinished', async r => { const t0 = req.get(r); const ms = Date.now() - t0; if (ms > 250 || /dchart|finfo|vietcap/.test(r.url())) cham.push([ms, r.url().slice(0, 140)]); });
+const xong = new Set(); p.on('requestfailed', r => xong.add(r)); p.on('requestfinished', async r => { xong.add(r); const t0 = req.get(r); const ms = Date.now() - t0; if (ms > 250 || /dchart|finfo|vietcap/.test(r.url())) cham.push([ms, r.url().slice(0, 140)]); });
 p.on('requestfailed', r => cham.push(['LOI ' + (Date.now() - req.get(r)), r.url().slice(0, 140), r.failure()?.errorText]));
 const loiJs = []; p.on('pageerror', e => loiJs.push(String(e && e.stack || e).slice(0, 400))); p.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') loiJs.push('console.' + m.type() + ': ' + m.text().slice(0, 300)); });
 const t0 = Date.now();
@@ -20,5 +20,6 @@ for (const ma of (process.env.MA || 'KDH,NVL').split(',')) {
 }
 cham.sort((a, b) => (+String(b[0]).replace(/\D/g, '')) - (+String(a[0]).replace(/\D/g, '')));
 console.log('\nRequest > 400ms:'); cham.slice(0, 40).forEach(x => console.log('  ', ...x));
+console.log('\nDANG TREO (chua tra ve):'); for (const [r, t] of req) if (!xong.has(r)) console.log('  ', Date.now() - t, 'ms', r.url().slice(0, 200));
 console.log('\nLoi JS:'); loiJs.slice(0, 30).forEach(x => console.log('  ', x));
 await b.close();
