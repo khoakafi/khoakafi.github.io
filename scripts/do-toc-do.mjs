@@ -1,6 +1,6 @@
 // Do toc do tab Chi tiet ma tren trinh duyet that (Chromium tren runner): thoi gian doi ma + request cham.
 import { chromium } from 'playwright';
-const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+const b = await chromium.launch(); const ctx = await b.newContext({ viewport: { width: 1440, height: 900 }, userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', locale: 'vi-VN', timezoneId: 'Asia/Ho_Chi_Minh' }); const p = await ctx.newPage();
 const req = new Map(), cham = [];
 p.on('request', r => req.set(r, Date.now()));
 const xong = new Set(); p.on('requestfailed', r => xong.add(r)); p.on('requestfinished', async r => { xong.add(r); const t0 = req.get(r); const ms = Date.now() - t0; if (ms > 250 || /dchart|finfo|vietcap/.test(r.url())) cham.push([ms, r.url().slice(0, 140)]); });
