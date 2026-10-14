@@ -18,6 +18,13 @@ for (const ma of (process.env.MA || 'KDH,NVL').split(',')) {
   catch (e) { console.log('Doi ma', ma, ': QUA 30s | tieu de:', await p.evaluate(() => document.getElementById('dTitle')?.innerHTML.slice(0, 200)), '| hien:', await p.evaluate(() => getComputedStyle(document.getElementById('view-detail')||document.body).display)); }
   await p.waitForTimeout(1500);
 }
+const chan = await p.evaluate(async () => {
+  const o = {}; try { o.curT = curT; o.curOhlcFor = curOhlcFor; o.dangCho = [...knDtCho.keys()]; o.kho = [...knDtKho.keys()]; o.vcHong = knVcHong; } catch (e) { o.loi = String(e); }
+  const tg = async (ten, f) => { const s = performance.now(); try { const r = await Promise.race([f(), new Promise((_, j) => setTimeout(() => j(new Error('QUA 15s')), 15000))]); o[ten] = Math.round(performance.now() - s) + 'ms, ' + (Array.isArray(r) ? r.length + ' dong' : (r && r.t ? r.t.length + ' nen' : typeof r)); } catch (e) { o[ten] = 'LOI ' + Math.round(performance.now() - s) + 'ms ' + e.message; } };
+  await tg('ohlc HPG', () => api.ohlc('HPG', 5100)); await tg('kqkd HPG', () => api.kqkd('HPG')); await tg('ratios HPG', () => api.ratios('HPG'));
+  await tg('knDtTai SSI', () => knDtTai('SSI', false));
+  return o; });
+console.log('\nCHAN DOAN:', JSON.stringify(chan, null, 1));
 cham.sort((a, b) => (+String(b[0]).replace(/\D/g, '')) - (+String(a[0]).replace(/\D/g, '')));
 console.log('\nRequest > 400ms:'); cham.slice(0, 40).forEach(x => console.log('  ', ...x));
 console.log('\nDANG TREO (chua tra ve):'); for (const [r, t] of req) if (!xong.has(r)) console.log('  ', Date.now() - t, 'ms', r.url().slice(0, 200));
