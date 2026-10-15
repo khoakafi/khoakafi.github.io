@@ -632,6 +632,7 @@
     co: 'Lịch sử 2014 – 10/2026: 3.403 lần CÓ (333 mã) — trung bình <b>hơn thị trường +3,7% sau 3 tháng, +5,7% sau 6 tháng, +8,5% sau 12 tháng</b>; dương 11/12 năm (trừ 2021). Chỉ ~52% số lần thắng thị trường: lợi thế nằm ở trung bình nhiều mã, không phải mã nào CÓ cũng tăng.',
     dm: 'Danh mục mua đều mọi mã CÓ, xét lại hằng tháng, giữ 3 tháng, đã trừ phí + thuế: <b>+21,6%/năm</b> 2014 – nay (trung bình thị trường +6,5%/năm); riêng giai đoạn kiểm tra 2021 – nay +17,6%/năm (VN-Index +8,6%/năm). Sụt lớn nhất −40% (2022).',
     dat: 'Lịch sử 2014 – 10/2026: 6.628 lần ở nhóm này — trung bình <b>kém thị trường −2,8% sau 3 tháng, −6,5% sau 6 tháng, −10,7% sau 12 tháng</b>; âm cả 12/12 năm; 65% số lần thua thị trường.',
+    thap: 'Nhóm "P/E cao vì LN đang thấp" (P/E trên LN bình quân 5 năm < 25) kém thị trường ít hơn nhiều so với nhóm đắt thật (−5,5% sau 6 tháng giai đoạn 2014–20, ~0 từ 2021) — LN có thể phục hồi như MWG 2024, nhưng chưa có lợi thế để mua.',
     khac: 'Nhóm chưa đủ điều kiện lịch sử ngang thị trường (+0,8% sau 6 tháng) — không có lợi thế để mua lúc này.',
     dao: 'Mã rẻ + tăng trưởng nhưng giá đã rơi quá 20% từ đỉnh 12 tháng: lịch sử kém thị trường −2,4% sau 3 tháng (1.204 lần) — chưa nên bắt dao rơi.',
     lnq: 'Mã rẻ + tăng trưởng nhưng quý gần nhất LN giảm: lịch sử ngang thị trường (−0,4% sau 6 tháng, 2.131 lần).',
@@ -686,6 +687,9 @@
       if (mi != null && C[mi] && A[mi] && gGoc && gDc) { var r = (gDc / gGoc) / (A[mi] / C[mi]); if (r > 1.08) cp *= r; }
       return gGoc * cp / 1e6; }
     var g = function(a, b){ return (a != null && b != null && b > 0) ? a / b - 1 : null; };
+    // P/E chuan hoa (Anderson & Brooks): von hoa / LN 4 quy binh quan 20 quy gan nhat (can >= 12 quy)
+    function peChuan(kn, mc){ var a = []; for (var j = 0; j < 20; j++){ var v = ttm(kn - j, 'np'); if (v != null) a.push(v); }
+      if (a.length < 12 || !mc) return null; var tb = a.reduce(function(s2, v){ return s2 + v; }, 0) / a.length; return tb > 0 ? mc / (tb / 1e9) : null; }
     // dac trung tai thang i (gia goc gGoc, gia dieu chinh gDc, ngay xet) — lich su: gia cuoi thang; hien tai: gia song
     function dt(i, gGoc, gDc, ngay){
       var kn = knTai(ngay); if (kn == null || (new Date(ngay) - new Date(Q[kn].fd)) / 864e5 > 200) return null;
@@ -698,7 +702,7 @@
         gNPq: (Q[kn].np != null && Q[kn - 4] && Q[kn - 4].np > 0) ? Q[kn].np / Q[kn - 4].np - 1 : null, npQ: Q[kn].np, npQ4: Q[kn - 4] ? Q[kn - 4].np : null,
         decel: (gNP != null && gPrev.length) ? Math.max.apply(null, gPrev) - cap3(gNP) : null,
         hiTruoc: hiT, dHi52: hi ? gDc / hi - 1 : null, peakRatio: F.peakRatio, cycHist: F.cycHist, gm: F.gm, gmPct: F.gmPct,
-        recNP: F.recNP, recRev: F.recRev, streak: F.streak, bank: laNH };
+        recNP: F.recNP, recRev: F.recRev, streak: F.streak, bank: laNH, peNorm: peChuan(kn, mc) };
     }
     // lich su theo thang (P/E cho dai 5 nam + ket luan tung quy)
     var ls = [];
@@ -726,7 +730,9 @@
   function phanLoai(x, nganh){
     if (!x) return 'khong';
     if (x.pe != null && x.pe < 15 && x.peg != null && x.peg <= 1 && x.gNPq != null && x.gNPq >= 0 && x.dHi52 != null && x.dHi52 >= -0.2 && !laB(x, nganh)) return 'co';
-    return (laDat(x) && !x.bank) ? 'dat' : 'khong';
+    if (!laDat(x) || x.bank) return 'khong';
+    // P/E cao chi vi LN dang thap (P/E tren LN binh quan 5 nam < 25): van KHONG nhung khong goi la "dat"
+    return (x.peNorm != null && x.peNorm < 25) ? 'thap' : 'dat';
   }
   // vu tru kiem dinh: top 250 GTGD TB20 (SUMMARY, trieu dong) va >= 1 ty/phien
   function phamVi(t){
@@ -790,7 +796,8 @@
     if (ngoai) th('Thanh khoản trong phạm vi kiểm định', false, 'GTGD TB 20 phiên ' + f(pv.val, 1) + ' tỷ/phiên, hạng ' + pv.thu + ' — mô hình chỉ kiểm định trên top 250 thanh khoản và ≥ 1 tỷ/phiên.', '', false, true);
     var hong = dk.filter(function(z){ return !z.ok; });
     var sub = loai === 'co' ? 'Đạt cả 5 điều kiện của mô hình định giá – tăng trưởng (kiểm định 2014 – 2026).'
-      : (loai === 'dat' ? 'Định giá quá cao: P/E ' + f(x.pe, 1) + (x.pe >= 25 ? ' ≥ 25.' : ' ≥ 20 và PEG ' + f(x.peg, 1) + ' ≥ 2,5.')
+      : (loai === 'dat' ? 'Định giá quá cao: P/E ' + f(x.pe, 1) + (x.pe >= 25 ? ' ≥ 25' : ' ≥ 20 và PEG ' + f(x.peg, 1) + ' ≥ 2,5') + (x.peNorm != null ? ', và trên LN bình quân 5 năm vẫn ' + f(x.peNorm, 1) + '.' : '.')
+      : loai === 'thap' ? 'P/E ' + f(x.pe, 1) + ' cao vì LN 4 quý đang thấp — tính trên LN bình quân 5 năm P/E chỉ ' + f(x.peNorm, 1) + ': chưa hẳn đắt, nhưng chưa đủ điều kiện CÓ.'
       : 'Chưa đủ điều kiện — không đạt: ' + hong.map(function(z){ return thuong(z.ten); }).join('; ') + '.');
     var h = '<div class="kl ' + (loai === 'co' ? 'co' : (loai === 'dat' ? 'dat' : 'khong')) + '">' + tieuDe(loai === 'co' ? 'CÓ' : 'KHÔNG', sub);
     var dn = diemNhan(nm); if (dn.length) h += '<div class="klnh">' + dn.join(' ') + '</div>';
@@ -818,7 +825,7 @@
     // Thong tin ngoai: trang thai thi truong tab Toan canh (TQ.tt.S: 0 Quan sat, 1 Tich cuc, 2 Than trong) — chi kem ket luan CO
     var S = window.TQ && window.TQ.tt && window.TQ.tt.S, st = (S && S.length) ? S[S.length - 1][1] : null;
     if (loai === 'co' && st != null && KD.tt[st]) h += '<div class="kltt t' + st + '">Toàn cảnh thị trường hôm nay: <b class="pl" onclick="window.showView&&window.showView(\'tq\')">' + ['QUAN SÁT', 'TÍCH CỰC', 'THẬN TRỌNG'][st] + '</b> — ' + KD.tt[st] + '</div>';
-    h += '<div class="klkd">' + (loai === 'co' ? KD.co + '<br>' + KD.dm : (loai === 'dat' ? KD.dat : KD.khac)) + '</div>';
+    h += '<div class="klkd">' + (loai === 'co' ? KD.co + '<br>' + KD.dm : (loai === 'dat' ? KD.dat : (loai === 'thap' ? KD.thap : KD.khac))) + '</div>';
     // Lich su ket luan tren chinh ma: cuoi moi quy, 5 nam
     var ds = [];
     for (var i = Math.max(11, nm.iC - 63); i < nm.ls.length && i < nm.iC; i++) {
