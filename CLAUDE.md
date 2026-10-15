@@ -220,6 +220,12 @@ Mã CTCK (mô hình 89/90/91): 621110 DT môi giới, 700056 CP môi giới, 700
 Ngân hàng (101–103): 421900 NII, 423200 phí, 423300 FX, 423400/423500 CK, 421600 khác, 422900 dự phòng, 411400/412300 liên NH/CK đầu tư,
 413100 nợ CP & NHNN. **Nợ xấu, CASA, NIM chính thức: VNDirect có tên chỉ tiêu (mô hình 104/1610) nhưng không trả số** → NIM là ước tính.
 Thị phần môi giới = thị phần **doanh thu** môi giới trong CTCK niêm yết (không phải thị phần giá trị giao dịch HOSE).
+**Kết luận MUA: CÓ / KHÔNG (16/10, anh Khoa: "phải ra Yes/No, không nước đôi")** — `ptKetLuan`, đầu khối. CÓ chỉ khi đạt cả 5:
+(1) LNTT 4 quý **cốt lõi** (bỏ phần thay đổi của khoản không đều: DT tài chính + thu nhập khác DN / hoạt động khác NH / dự phòng CTCK) ≥ +10%
+và quý gần nhất không giảm quá 10%; (2) ROE 3 năm ≥ 10%, sức khỏe không Yếu, CTCK: hoàn nhập ≤ 20% & lãi chưa thực hiện ≤ 40% LNTT quý, quý không lỗ;
+(3) thị phần không giảm > 10% tương đối (ngành không đủ mã thì bỏ qua); (4) định giá không Yếu; (5) ≥ 2 báo cáo CTCK có giá mục tiêu trong
+**90 ngày** (Simplize, như tab CTCK KN), trung vị giá MT ≥ +15% so giá hiện tại, mua > bán. Thiếu số = không đạt. Có câu "đối chiếu" số BCTC
+vs dự báo CTCK + xu hướng giá MT (3 tháng vs 3–9 tháng trước) + tiêu đề "nâng/hạ dự phóng". **Chưa backtest.** Simplize tải hỏng → không ghi cache.
 Cache đổi sang `kn_pt2_` (bản cũ `kn_pt_` tự xoá). Số thật cho test: scratchpad `fake/store.json` (gom bằng `gom-log.py` từ log do-api2).
 
 ## Số hiệu suất B★ tính ở đâu

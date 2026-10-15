@@ -86,13 +86,17 @@
     var pr = dsPeer(t);
     var uPeer = pr ? ff + pr.ma.join(',') + '~reportType:QUARTER~itemCode:' + pr.items + '~fiscalDate:' + fd + '&size=' + (pr.ma.length * pr.items.split(',').length * 10 + 50) : null;
     var kq = await Promise.all([ K().jget(uNam), K().jget(uQuy).catch(function(){ return { data: [] }; }),
-      uPeer ? K().jget(uPeer).catch(function(){ return null; }) : Promise.resolve(null) ]);
+      uPeer ? K().jget(uPeer).catch(function(){ return null; }) : Promise.resolve(null),
+      // Bao cao phan tich CTCK (Simplize, nhu tab CTCK KN): ngay, CTCK, khuyen nghi, gia muc tieu, tieu de, PDF
+      K().jget('https://api2.simplize.vn/api/company/analysis-report/list?ticker=' + t + '&page=0&size=40&isWl=false').catch(function(){ return null; }) ]);
     var nam = gom(kq[0] && kq[0].data);
     // Moi nam tai chinh mot dong (doi nien do -> giu ky moi nhat)
     var theoNam = {}; nam.forEach(function(o){ theoNam[o.y] = o; });
     nam = Object.keys(theoNam).sort().map(function(k){ return theoNam[k]; }).slice(-7);
     var peer = (pr && kq[2] && kq[2].data && kq[2].data.length) ? { sec: pr.sec, d: gomPeer(kq[2].data) } : null;
-    return { nam: nam, quy: gom(kq[1] && kq[1].data).slice(-10), peer: peer };
+    var bc = (kq[3] && Array.isArray(kq[3].data)) ? kq[3].data.filter(function(x){ return x && x.issueDate; }).map(function(x){
+      return { d: x.issueDate, s: x.source || '', r: x.recommend || '', tp: +x.targetPrice > 0 ? +x.targetPrice : null, ti: x.title || '', l: x.attachedLink || '' }; }) : null;
+    return { nam: nam, quy: gom(kq[1] && kq[1].data).slice(-10), peer: peer, bc: bc };
   }
   function ptLuu(t, khoa, raw){
     try {
@@ -523,7 +527,16 @@
         if (isFinite(cc)) add(cc0 != null ? -Math.sign(cc - cc0) : 0, 64, 'Chi phí dự phòng 4 quý = ' + ph(cc, 2) + ' dư nợ bình quân' + (cc0 != null ? ' (cùng kỳ ' + ph(cc0, 2) + ')' : '') + '.'); }
     }
     out.sort(function(a, b){ return b.w - a.w; });
-    return { loai: loai, K: K, lb: lb, lbP: lbP, ds: out, cq: cq, ct: ct, m: m };
+    // Cho ket luan: tang truong LNTT 4 quy "loi" (bo phan thay doi cua khoan khong deu), co do, thi phan
+    var KD = { dn: ['Doanh thu tài chính', 'Thu nhập khác ròng'], nh: ['Hoạt động khác'], ck: ['Dự phòng (hoàn nhập +, trích −)'] }[loai];
+    var loi = null;
+    if (ct && ct.pb > 0) { var bt = ct.ds.filter(function(x){ return KD.indexOf(x.ten) >= 0; }).reduce(function(s2, x){ return s2 + x.d; }, 0);
+      loi = { g: ((ct.pa - ct.pb) - bt) / ct.pb * 100, gTho: (ct.pa / ct.pb - 1) * 100, bt: bt }; }
+    var gq = cq && cq.pb > 0 ? (cq.pa / cq.pb - 1) * 100 : (cq && cq.pb < 0 && cq.pa > 0 ? 100 : null);
+    var co2 = {};
+    if (loai === 'ck') { var pb2 = V(L, '23800'); if (pb2 > 0) { co2.hoanNhap = V(L, '700053') < 0 ? -V(L, '700053') / pb2 * 100 : 0; co2.chuaTH = V(L, '700073') != null ? V(L, '700073') / pb2 * 100 : null; } }
+    var bp = raw.__bangPeer, tp = (bp && bp.a && bp.b) ? { ten: bp.ten, a: bp.a.p, b: bp.b.p, k: bp.k } : null;
+    return { loai: loai, K: K, lb: lb, lbP: lbP, ds: out, cq: cq, ct: ct, m: m, loi: loi, gq: gq, co: co2, tp: tp };
   }
   function n(x){ return x == null ? 0 : x; }
 
@@ -575,14 +588,92 @@
       return '<tr><td>' + x.ten + '</td><td class="' + mau(x.d) + '" style="white-space:nowrap">' + tyD(x.d) + '</td><td style="width:42%"><div class="bar ' + (x.d >= 0 ? 'up' : 'dn') + '" style="width:' + w + '%"></div></td></tr>'; }).join('');
     return '<div class="ptb"><h4>' + ten + '</h4><div class="mini" style="margin-bottom:6px">LNTT ' + ty(cq.pb) + ' → <b>' + ty(cq.pa) + '</b> tỷ (' + tyD(cq.pa - cq.pb) + ')</div><table class="ptn ptcau">' + h + '</table></div>';
   }
-  function soiHtml(t, raw, d){
-    var s = null; try { s = ptSoi(t, raw, d.loai); } catch(e){ console.warn('ptSoi', e); }
+  function soiHtml(t, raw, d, s){
     if (!s || !s.ds.length) return '';
     var dot = function(x){ return '<span class="sd ' + (x > 0 ? 'up' : (x < 0 ? 'dn' : 'fl')) + '"></span>'; };
     var h = '<div class="soi"><h3>Soi BCTC ' + s.lb + ' — ' + (s.loai === 'ck' ? 'công ty chứng khoán' : (s.loai === 'nh' ? 'ngân hàng' : 'doanh nghiệp')) + '</h3><ul class="sl">'
       + s.ds.slice(0, 11).map(function(x){ return '<li>' + dot(x.s) + '<span>' + x.t + '</span></li>'; }).join('') + '</ul></div>';
     h += '<div class="pt3">' + bangCau(s.cq, 'Lợi nhuận đến từ đâu · ' + s.lb + ' so với ' + s.lbP) + bangCau(s.ct, 'Cộng 4 quý đến ' + s.lb + ' so với 4 quý trước') + bangPeer(t, raw.__bangPeer) + '</div>';
     h += '<div style="overflow-x:auto;margin-bottom:12px">' + bangQuy(s, raw, t) + '</div>';
+    return h;
+  }
+
+  /* ---------- Ket luan MUA: CO / KHONG (16/10/2026, anh Khoa: "phai ra Yes/No, khong nuoc doi") ----------
+     5 dieu kien co dinh, DAT CA 5 moi la CO. Thieu so de kiem mot dieu kien = KHONG DAT (khong cho qua vi thieu du lieu),
+     tru "vi the nganh" khi nganh khong du ma so sanh. Chua kiem dinh lich su (backtest) — ghi ro tren web. */
+  var NGAY90 = 90 * 86400000;
+  function ngayBc(s){ var p = String(s || '').split('/'); return p.length === 3 ? new Date(+p[2], +p[1] - 1, +p[0]).getTime() : 0; }
+  function loaiKN(s){ var u = String(s || '').toUpperCase();
+    if (/KÉM KHẢ QUAN|KEM KHA QUAN|GIẢM TỶ TRỌNG|UNDERPERFORM|UNDERWEIGHT|BÁN|SELL/.test(u)) return -1;
+    if (/MUA|KHẢ QUAN|TĂNG TỶ TRỌNG|OUTPERFORM|BUY|OVERWEIGHT|TÍCH CỰC/.test(u)) return 1; return 0; }
+  function ptBaoCao(raw, gia){
+    if (!raw.bc) return null;
+    var now = Date.now(), ds = raw.bc.map(function(x){ return Object.assign({ ts: ngayBc(x.d), k: loaiKN(x.r) }, x); }).sort(function(a, b){ return b.ts - a.ts; });
+    var g3 = ds.filter(function(x){ return now - x.ts <= NGAY90; }), co = g3.filter(function(x){ return x.tp; });
+    var truoc = ds.filter(function(x){ return now - x.ts > NGAY90 && now - x.ts <= 3 * NGAY90 && x.tp; });
+    var tv = trungVi(co.map(function(x){ return x.tp / 1000; })), tv0 = trungVi(truoc.map(function(x){ return x.tp / 1000; }));
+    var nang = g3.filter(function(x){ return /nâng (dự phóng|giá mục tiêu|khuyến nghị)/i.test(x.ti); }).length, ha = g3.filter(function(x){ return /hạ (dự phóng|giá mục tiêu|khuyến nghị)|giảm dự phóng/i.test(x.ti); }).length;
+    return { ds: ds, g3: g3, n: co.length, mua: g3.filter(function(x){ return x.k > 0; }).length, ban: g3.filter(function(x){ return x.k < 0; }).length,
+      tv: tv, up: (tv && gia > 0) ? (tv / gia - 1) * 100 : null, tv0: tv0, xuHuong: (tv && tv0) ? (tv / tv0 - 1) * 100 : null, nang: nang, ha: ha, cuoi: ds[0] || null };
+  }
+  function ptKetLuan(t, d, s, cham, raw){
+    var r = hang(t) || {}, gia = r.p, dk = [], th = function(ten, ok, txt){ dk.push({ ten: ten, ok: ok, txt: txt }); };
+    // 1. Loi nhuan loi
+    if (!s || !s.loi) th('Lợi nhuận cốt lõi tăng', false, 'Không đủ 8 quý BCTC để so 4 quý với 4 quý trước.');
+    else { var ok1 = s.loi.g >= 10 && (s.gq == null || s.gq >= -10);
+      th('Lợi nhuận cốt lõi tăng', ok1, 'LNTT 4 quý ' + dau(s.loi.gTho, 0) + (Math.abs(s.loi.bt) > 0 && Math.abs(s.loi.g - s.loi.gTho) >= 3 ? ', bỏ khoản không đều (' + tyD(s.loi.bt) + ' tỷ) còn ' + dau(s.loi.g, 0) : '')
+        + '; quý ' + s.lb + ' ' + (s.gq == null ? '—' : dau(s.gq, 0)) + ' so cùng kỳ. Cần: 4 quý cốt lõi ≥ +10% và quý gần nhất không giảm quá 10%.'); }
+    // 2. Nen tang + chat luong
+    var pil = {}; (cham || []).forEach(function(x){ pil[x.ten] = x; });
+    var loi2 = [];
+    if (pil['Sinh lời'] && pil['Sinh lời'].m === 'yeu') loi2.push('ROE bình quân 3 năm dưới 10%');
+    if (pil['Sức khỏe tài chính'] && pil['Sức khỏe tài chính'].m === 'yeu') loi2.push('sức khỏe tài chính yếu (nợ vay/khả năng trả lãi)');
+    if (s && s.co.hoanNhap > 20) loi2.push('hoàn nhập dự phòng = ' + f(s.co.hoanNhap, 0) + '% LNTT quý');
+    if (s && s.co.chuaTH > 40) loi2.push('lãi chưa thực hiện = ' + f(s.co.chuaTH, 0) + '% LNTT quý');
+    if (s && s.m && V(s.m[s.K], '23000') != null && V(s.m[s.K], '23000') < 0) loi2.push('quý gần nhất lỗ');
+    th('Nền tảng & chất lượng lãi', !loi2.length, loi2.length ? 'Vướng: ' + loi2.join('; ') + '.' : 'ROE 3 năm ≥ 10%, tài chính không yếu, lợi nhuận quý không dựa vào hoàn nhập/đánh giá lại.');
+    // 3. Vi the nganh
+    if (s && s.tp) { var dr = (s.tp.a / s.tp.b - 1) * 100;
+      th('Không mất thị phần', dr > -10, s.tp.ten + ': thị phần ' + ph(s.tp.a) + ' ' + lbQ(s.tp.k) + ' so với ' + ph(s.tp.b) + ' cùng kỳ (' + dau(dr, 0) + ' tương đối). Cần: không giảm quá 10%.'); }
+    else th('Không mất thị phần', true, 'Ngành không đủ mã niêm yết để tính thị phần — không xét.');
+    // 4. Dinh gia
+    var dg = pil['Định giá'];
+    th('Định giá không đắt', !!dg && dg.m !== 'yeu' && dg.m !== 'na', dg ? dg.y.replace(/<[^>]+>/g, '') + (dg.m === 'na' ? ' Không đủ số liệu định giá.' : '') + ' Cần: không đồng thời đắt hơn 15% so với trung vị ~4 năm của mã và trung vị ngành.' : 'Chưa có P/E, P/B.');
+    // 5. Du bao CTCK 3 thang
+    var b = ptBaoCao(raw, gia);
+    if (!b) th('CTCK dự báo còn dư địa', false, 'Không tải được báo cáo CTCK — chưa kiểm chứng được dự báo.');
+    else if (b.n < 2) th('CTCK dự báo còn dư địa', false, (b.n ? 'Chỉ 1 báo cáo có giá mục tiêu' : 'Không có báo cáo CTCK nào') + ' trong 3 tháng' + (b.cuoi ? ' (gần nhất: ' + esc(b.cuoi.s) + ' ' + esc(b.cuoi.d) + ')' : '') + ' — không đủ để kiểm chứng dự báo. Cần ≥ 2.');
+    else th('CTCK dự báo còn dư địa', b.up >= 15 && b.mua > b.ban, b.n + ' báo cáo 3 tháng: giá mục tiêu trung vị ' + f(b.tv, 1) + ' (' + dau(b.up, 0) + ' so với giá ' + f(gia, 2) + '), ' + b.mua + ' mua / ' + b.ban + ' bán'
+      + (b.xuHuong != null ? '; so với 3–9 tháng trước giá mục tiêu ' + dau(b.xuHuong, 0) : '') + '. Cần: dư địa ≥ +15% và mua nhiều hơn bán.');
+    var co = dk.every(function(x){ return x.ok; });
+    // Doi chieu: so lieu BCTC co ung ho du bao CTCK khong
+    var dc = '';
+    if (b && b.n >= 2) {
+      var lac = b.up >= 15 && b.mua > b.ban, ok1b = dk[0].ok;
+      if (lac && ok1b) dc = 'Số liệu BCTC <b>ủng hộ</b> dự báo của CTCK: lợi nhuận cốt lõi đang tăng đúng hướng các báo cáo kỳ vọng.';
+      else if (lac && !ok1b) dc = 'CTCK vẫn lạc quan (dư địa ' + dau(b.up, 0) + ') nhưng <b>lợi nhuận cốt lõi chưa xác nhận</b> — dự báo đang đi trước số liệu.';
+      else if (!lac && ok1b) dc = 'Lợi nhuận đang tăng nhưng giá đã gần/qua mục tiêu của CTCK — phần lớn kỳ vọng đã vào giá.';
+      else dc = 'Cả số liệu lẫn CTCK đều không cho thấy dư địa.';
+      if (b.xuHuong != null && Math.abs(b.xuHuong) >= 10) dc += ' Giá mục tiêu đang được ' + (b.xuHuong > 0 ? 'nâng' : 'hạ') + ' (' + dau(b.xuHuong, 0) + ' so với 3–9 tháng trước).';
+      if (b.nang || b.ha) dc += ' Tiêu đề báo cáo 3 tháng: ' + (b.nang ? b.nang + ' lần nâng dự phóng/mục tiêu' : '') + (b.nang && b.ha ? ', ' : '') + (b.ha ? b.ha + ' lần hạ' : '') + '.';
+    }
+    return { co: co, dk: dk, b: b, dc: dc };
+  }
+  function ketLuanHtml(t, kl){
+    var hong = kl.dk.filter(function(x){ return !x.ok; });
+    var h = '<div class="kl ' + (kl.co ? 'co' : 'khong') + '"><div class="klh"><div class="klv">MUA ' + esc(t) + ': <b>' + (kl.co ? 'CÓ' : 'KHÔNG') + '</b></div>'
+      + '<div class="kls">' + (kl.co ? 'Đạt đủ 5/5 điều kiện.' : 'Đạt ' + (5 - hong.length) + '/5 — không đạt: ' + hong.map(function(x){ return x.ten.toLowerCase(); }).join(', ') + '.') + '</div></div>'
+      + '<ul class="kld">' + kl.dk.map(function(x){ return '<li class="' + (x.ok ? 'ok' : 'no') + '"><b>' + (x.ok ? '✓ ' : '✗ ') + x.ten + '</b> — ' + x.txt + '</li>'; }).join('') + '</ul>';
+    if (kl.dc) h += '<div class="kldc">' + kl.dc + '</div>';
+    if (kl.b && kl.b.ds.length) {
+      var ds = kl.b.ds.slice(0, 6), gia = (hang(t) || {}).p;
+      h += '<details class="klbc"' + (kl.b.g3.length ? ' open' : '') + '><summary>Báo cáo CTCK gần nhất (' + kl.b.g3.length + ' trong 3 tháng)</summary><table class="ptn">'
+        + ds.map(function(x){ var up = (x.tp && gia > 0) ? (x.tp / 1000 / gia - 1) * 100 : null;
+          return '<tr' + (Date.now() - x.ts > NGAY90 ? ' class="cu"' : '') + '><td style="white-space:nowrap">' + esc(x.d) + '</td><td><b>' + esc(x.s) + '</b> · ' + esc(x.r) + '<div class="mini">'
+            + (x.l ? '<a href="' + esc(x.l) + '" target="_blank" rel="noopener">' + esc(x.ti) + ' ↗</a>' : esc(x.ti)) + '</div></td><td>' + (x.tp ? f(x.tp / 1000, 1) : '—') + '</td><td class="' + mau(up) + '">' + (up == null ? '' : dau(up, 0)) + '</td></tr>'; }).join('')
+        + '</table></details>';
+    }
+    h += '<div class="mini" style="margin-top:6px">Kết luận tự động theo 5 điều kiện cố định, phải đạt đủ cả 5 mới là CÓ; thiếu số liệu để kiểm một điều kiện thì tính là không đạt. Quy tắc này chưa được kiểm định trên dữ liệu lịch sử. Nguồn: BCTC VNDirect, báo cáo CTCK qua Simplize.</div></div>';
     return h;
   }
 
@@ -619,6 +710,11 @@
       + '#ptcs .bar{height:9px;border-radius:3px;min-width:2px}#ptcs .bar.up{background:var(--green)}#ptcs .bar.dn{background:var(--red);margin-left:auto}'
       + '#ptcs table.ptcau td{padding:4px 4px}#ptcs table.ptpeer td,#ptcs table.ptpeer th{text-align:right;padding:4px}#ptcs table.ptpeer td:first-child,#ptcs table.ptpeer th:first-child{text-align:left}'
       + '#ptcs table.ptpeer th{font-size:11px;color:var(--muted);font-weight:600}#ptcs tr.me td{background:#fff8e6;font-weight:700}'
+      + '#ptcs .kl{border-radius:12px;padding:12px 14px;margin-bottom:12px;border:2px solid}#ptcs .kl.co{border-color:var(--green);background:var(--green-soft)}#ptcs .kl.khong{border-color:var(--red);background:var(--red-soft)}'
+      + '#ptcs .klh{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}#ptcs .klv{font-size:22px;font-weight:800}#ptcs .kl.co .klv b{color:var(--green-dark)}#ptcs .kl.khong .klv b{color:var(--red)}'
+      + '#ptcs .kls{font-size:13px;font-weight:600}#ptcs ul.kld{list-style:none;margin:8px 0 0;padding:0}#ptcs ul.kld li{font-size:12.5px;line-height:1.55;padding:4px 0;border-top:1px dashed rgba(0,0,0,.08)}'
+      + '#ptcs ul.kld li.ok b{color:var(--green-dark)}#ptcs ul.kld li.no b{color:var(--red)}#ptcs .kldc{margin-top:8px;font-size:13px;line-height:1.55;background:#fff;border-radius:8px;padding:8px 10px}'
+      + '#ptcs details.klbc{margin-top:8px;background:#fff;border-radius:8px;padding:6px 10px;overflow-x:auto}#ptcs details.klbc td{word-break:break-word}#ptcs details.klbc td:nth-child(2){text-align:left}#ptcs .kl,#ptcs .soi{min-width:0;overflow-wrap:anywhere}#ptcs details.klbc summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs details.klbc td{vertical-align:top}#ptcs tr.cu{opacity:.55}#ptcs details.klbc a{color:var(--muted);text-decoration:none}'
       + '.kn-app #ptcs{border:0;border-radius:15px;padding:14px 16px;margin:0 14px 12px;box-shadow:var(--ksh)}';
     document.head.appendChild(st);
   }
@@ -696,7 +792,9 @@
     var h = '<div class="pth"><b>Phân tích cơ bản chuyên sâu</b><span class="mini">' + esc(t) + ' · BCTC năm FY' + C[Math.max(0, C.length - 5)].lb + '–FY' + L.lb
       + (d.ttm ? ' + 4 quý đến Q' + d.ttm.o.q + '/' + d.ttm.o.y : '') + ' · nguồn VNDirect'
       + (d.loai === 'nh' ? ' · mô hình ngân hàng' : (d.loai === 'khac' ? ' · mô hình CTCK/bảo hiểm' : '')) + '</span></div>';
-    if (raw) h += soiHtml(t, raw, d);
+    if (raw) { var sv = null; try { sv = ptSoi(t, raw, d.loai); } catch(e){ console.warn('ptSoi', e); }
+      try { h += ketLuanHtml(t, ptKetLuan(t, d, sv, cham, raw)); } catch(e){ console.warn('ketLuan', e); }
+      h += soiHtml(t, raw, d, sv); }
     h += '<h3 class="pth3">Chấm điểm 5 năm</h3><div class="ptp">' + cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC;
       return '<div class="ptc"><div class="pk"><span>' + x.ten + '</span><span class="pm ' + x.m + '">' + nh[x.m] + '</span></div><div class="py">' + x.y + '</div></div>'; }).join('') + '</div>';
     // Hang 2: F-score / diem manh-yeu / dinh gia & nganh
@@ -771,7 +869,7 @@
         var b = document.getElementById('ptLai'); if (b) b.onclick = function(){ ptMo(t); };
         return;                                   // KHONG ghi cache khi tai hong / thieu
       }
-      if (khoa) ptLuu(t, khoa, raw);
+      if (khoa && raw.bc) ptLuu(t, khoa, raw);   // bao cao CTCK tai hong -> khong luu, lan sau thu lai
     }
     try { ptVe(t, ptTinh(raw, t), raw); window.__ptLast = { t: t, raw: raw }; }
     catch(e){ console.warn('phantich', e); ptBao(t, 'Lỗi tính chỉ số: ' + esc(e.message)); }
