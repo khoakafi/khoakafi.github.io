@@ -207,7 +207,7 @@ xuất trạng thái qua `window.__knCt` (ngay sau `loadDetail`). Nguồn: VNDir
 37 mã chỉ tiêu ghi đầu file (dò bằng `do-api2` trên FPT/VCB/SSI/HPG). Chấm 5 trụ theo **ngưỡng cố định** (rule-based), Piotroski F-score
 (chỉ DN thường), cờ đỏ/điểm mạnh, so trung vị ngành (`SEC_MAP`, không gồm chính mã, cần ≥ 3 mã có số — ROE trong bảng giá gần như trống nên
 không so ROE ngành). Ngân hàng = có 421701; CTCK/bảo hiểm phân theo ngành (`Dịch vụ tài chính|Bảo hiểm`), không chấm sức khỏe/dòng tiền.
-LCTT quý ghi lũy kế → cột "4 quý gần nhất" không có dòng tiền; cộng 4 quý chỉ khi đủ cả 4 (EPS quý 0 = thiếu). Cache `kn_pt_<mã>` theo phiên,
+LCTT quý ghi lũy kế → cột "4 quý gần nhất" không có dòng tiền; cộng 4 quý chỉ khi đủ cả 4 (EPS quý 0 = thiếu). Cache theo phiên (nay `kn_pt3_<mã>`),
 chỉ ghi khi có ≥ 2 năm. Test: scratchpad `pt-test.js` (Chromium + API giả từ số thật của runner).
 
 **Soi BCTC (bản 2, 15/10 tối — anh Khoa: "phải soi kỹ BCTC, ra insight nhiều khía cạnh, vd VND thị phần giảm, môi giới giảm").**
@@ -220,13 +220,30 @@ Mã CTCK (mô hình 89/90/91): 621110 DT môi giới, 700056 CP môi giới, 700
 Ngân hàng (101–103): 421900 NII, 423200 phí, 423300 FX, 423400/423500 CK, 421600 khác, 422900 dự phòng, 411400/412300 liên NH/CK đầu tư,
 413100 nợ CP & NHNN. **Nợ xấu, CASA, NIM chính thức: VNDirect có tên chỉ tiêu (mô hình 104/1610) nhưng không trả số** → NIM là ước tính.
 Thị phần môi giới = thị phần **doanh thu** môi giới trong CTCK niêm yết (không phải thị phần giá trị giao dịch HOSE).
-**Kết luận MUA: CÓ / KHÔNG (16/10, anh Khoa: "phải ra Yes/No, không nước đôi")** — `ptKetLuan`, đầu khối. CÓ chỉ khi đạt cả 5:
-(1) LNTT 4 quý **cốt lõi** (bỏ phần thay đổi của khoản không đều: DT tài chính + thu nhập khác DN / hoạt động khác NH / dự phòng CTCK) ≥ +10%
-và quý gần nhất không giảm quá 10%; (2) ROE 3 năm ≥ 10%, sức khỏe không Yếu, CTCK: hoàn nhập ≤ 20% & lãi chưa thực hiện ≤ 40% LNTT quý, quý không lỗ;
-(3) thị phần không giảm > 10% tương đối (ngành không đủ mã thì bỏ qua); (4) định giá không Yếu; (5) ≥ 2 báo cáo CTCK có giá mục tiêu trong
-**90 ngày** (Simplize, như tab CTCK KN), trung vị giá MT ≥ +15% so giá hiện tại, mua > bán. Thiếu số = không đạt. Có câu "đối chiếu" số BCTC
-vs dự báo CTCK + xu hướng giá MT (3 tháng vs 3–9 tháng trước) + tiêu đề "nâng/hạ dự phóng". **Chưa backtest.** Simplize tải hỏng → không ghi cache.
-Cache đổi sang `kn_pt2_` (bản cũ `kn_pt_` tự xoá). Số thật cho test: scratchpad `fake/store.json` (gom bằng `gom-log.py` từ log do-api2).
+Số thật cho test Soi BCTC: scratchpad `fake/store.json` (gom bằng `gom-log.py` từ log do-api2).
+
+**Kết luận MUA: CÓ / KHÔNG theo giá hôm nay (16/10/2026, mô hình ĐÃ KIỂM ĐỊNH — anh Khoa: "Yes/No, không nước đôi", "backtest mô hình").**
+Thay quy tắc 5 điều kiện cũ (`ptKetLuan`: LN cốt lõi, nền tảng, thị phần, định giá, ≥ 2 báo cáo CTCK dư địa ≥ 15%) — backtest cho thấy
+nó **thất bại** (giai đoạn kiểm tra 2021–: −0,9%/6 tháng so với thị trường). Nghiên cứu: kafi-core `research/co-ban/` (`KET-QUA.md`,
+`GIA-THUYET.md` đăng ký trước, `chot.mjs`, `kiem-chot.mjs`); dữ liệu nhánh `co-ban-data` (workflow `co-ban-data.yml`): 1.582 mã gồm mã
+đã hủy niêm yết, BCTC quý point-in-time theo `createdDate` VNDirect, giá gốc + điều chỉnh cuối tháng 2012–nay, báo cáo CTCK Simplize (từ 2022).
+- **CÓ** = P/E < 15 & PEG ≤ 1 & LNST mẹ quý gần nhất ≥ cùng kỳ & giá ≥ 80% đỉnh 12 tháng (giá cuối tháng, điều chỉnh) & không "chu kỳ ở đỉnh"
+  (từng giảm LN 4 quý ≥ 50% từ đỉnh hoặc ngành chu kỳ; LN 4 quý ≥ 85% đỉnh; giảm tốc ≥ 25 điểm % hoặc biên gộp ≥ 85% lịch sử)
+  & thanh khoản top 250 GTGD TB20 và ≥ 1 tỷ/phiên (vũ trụ kiểm định — ngoài vũ trụ không bao giờ CÓ).
+- **KHÔNG (đắt)** = P/E ≥ 25 hoặc (P/E ≥ 20 & PEG ≥ 2,5); ngân hàng không xếp "đắt" (nhóm đó không kém thị trường). Còn lại: KHÔNG (chưa đủ điều kiện).
+- Số (vượt TB đều top 250 cùng tháng, t Newey-West): CÓ +3,7%/3T, +5,7%/6T, +8,5%/12T (3.403 lần, 333 mã, dương 11/12 năm, thắng ~52%);
+  học 2014–20 f6 +7,2% (t 4,5), kiểm tra 2021– +3,7% (t 1,6 — chưa có ý nghĩa riêng; f3 t 2,5). Danh mục CÓ giữ 3T sau phí +21,6%/năm vs +6,5%;
+  2021– +17,6% vs VN-Index +8,6%. ĐẮT (không NH) −6,5%/6T, −10,7%/12T, âm 12/12 năm. Dao rơi (rẻ + tăng nhưng < 80% đỉnh) −2,4%/3T.
+- **Web khớp backtest 250/250 mã tháng 10/2026** (`nmTinh` tính y hệt `dac-trung.mjs`; bỏ điều kiện giá hàng hóa vì trình duyệt không gọi được
+  FRED — chỉ đổi 0,8% số lần, tháng 10/2026 không đổi mã nào). Test: scratchpad `dg/dg-test.js` (Chromium, API giả từ dữ liệu thật `co-ban-data`;
+  `dg/xuat.mjs` xuất nhãn backtest; `BO_DOI=1` bỏ đối chiếu, `SONG=<giá>` thử vẽ lại theo giá, `LOWVAL=<mã>` thử ngoài vũ trụ).
+- Giao diện (đầu khối, nằm trong `#ptDgO` nên **vẽ lại mỗi khi giá đổi**, giữ `<details>` đang mở): 5 điều kiện ✓/✗ có số; **vùng giá CÓ**
+  (P/E, PEG tỉ lệ thuận giá; đỉnh 12 tháng cố định trong tháng); tháng điều kiện đỉnh tự đạt nếu giá đứng yên; bằng chứng lịch sử;
+  "Mô hình trên chính mã" (kết luận cuối mỗi quý 5 năm + giá 6 tháng sau); báo cáo CTCK chỉ để tham khảo (kiểm định: dư địa CTCK không thêm giá trị).
+- BCTC quý tải **đủ lịch sử** (`nmTai`, `size=1000`, ~870 dòng/mã) — cắt 700 làm lệch phân vị biên gộp (DHC đổi nhãn). Cache `kn_pt3_`
+  (lsQ dạng mảng gọn, tối đa 15 mã; `kn_pt2_`/`kn_pt_` tự xoá).
+- **Không** kết luận bằng "đắt/rẻ so với chính nó": phân vị P/E so với 5 năm của chính mã không dự báo được giá (kiểm định ~0).
+  Thẻ "Định giá theo giá hôm nay" chỉ mô tả, có ghi chú điều này. Muốn đổi ngưỡng → chạy lại kafi-core `chot.mjs`, không chỉnh tay trên web.
 
 ## Số hiệu suất B★ tính ở đâu
 
