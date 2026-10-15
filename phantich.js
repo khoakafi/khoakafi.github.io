@@ -869,7 +869,9 @@
       return h;
     }
     var ls = nm.peLs.filter(function(x){ return x != null; });
-    var lo = Math.min(nm.peP05 != null ? nm.peP05 : nm.pe, nm.pe), hi = Math.max(nm.peP95 != null ? nm.peP95 : nm.pe, nm.pe), w = hi - lo || 1;   // bo 5% dot bien moi dau
+    // thang do: P5 – min(P95, 3 x trung vi) — bo cac thang LN sap (P/E vai tram) de dai 20–80% con nhin thay
+    var hiTho = nm.peP95 != null ? nm.peP95 : nm.pe, tran = nm.peP50 != null ? 3 * nm.peP50 : hiTho, cat = hiTho > tran && nm.pe < tran;
+    var lo = Math.min(nm.peP05 != null ? nm.peP05 : nm.pe, nm.pe), hi = Math.max(cat ? tran : hiTho, nm.pe), w = hi - lo || 1;
     var vt = function(v){ return Math.max(0, Math.min(100, (v - lo) / w * 100)); };
     var muc = nm.pePct == null ? null : (nm.pePct <= 0.2 ? ['re', 'Thấp so với 5 năm của mã'] : (nm.pePct >= 0.8 ? ['dat', 'Cao so với 5 năm của mã'] : ['tb', 'Quanh mức thường của mã']));
     h += '<div class="dgv"><span class="dgpe">P/E ' + f(nm.pe, 1) + '</span>' + (muc ? '<span class="pm tb">' + muc[1] + '</span>' : '')
@@ -877,7 +879,7 @@
     if (ls.length >= 24) {
       h += '<div class="dgbar"><div class="dgband" style="left:' + vt(nm.peP20) + '%;width:' + (vt(nm.peP80) - vt(nm.peP20)) + '%"></div>'
         + '<div class="dgmed" style="left:' + vt(nm.peP50) + '%"></div><div class="dgnow" style="left:' + vt(nm.pe) + '%"></div></div>'
-        + '<div class="dgsc"><span>' + f(lo, 1) + '</span><span>20–80% thời gian: ' + f(nm.peP20, 1) + '–' + f(nm.peP80, 1) + ' · trung vị ' + f(nm.peP50, 1) + '</span><span>' + f(hi, 1) + '</span></div>';
+        + '<div class="dgsc"><span>' + f(lo, 1) + '</span><span>20–80% thời gian: ' + f(nm.peP20, 1) + '–' + f(nm.peP80, 1) + ' · trung vị ' + f(nm.peP50, 1) + '</span><span>' + f(hi, 1) + (cat ? '+' : '') + '</span></div>';
     }
     var cau = [];
     if (nm.decel != null && nm.decel >= 0.25 && nm.gNP != null) cau.push('Tăng trưởng LN 4 quý đang chậm lại: ' + dau(cap3(nm.gNP) * 100, 0) + ', thấp hơn ' + f(nm.decel * 100, 0) + ' điểm % so với mức cao nhất 3 quý trước.');
