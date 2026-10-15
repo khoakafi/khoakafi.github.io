@@ -200,6 +200,16 @@ kafi-core `research/tplus.mjs` + `research/tplus-KET-QUA.md` (workflow `tplus.ym
 kafi-core `research/breakout-thuc-te-KET-QUA.md`. 125 deal B★ từ 2019: TB20 trung vị 38 tỷ → 10 tỷ/deal chỉ vừa 37% deal (≤20% TB20).
 79% deal đóng trần: mua được trần +5,0%/deal, lỡ trần mua mở cửa hôm sau +1,8%. Vào sớm khi chạm ngưỡng: 1/3 xịt nhưng xịt chỉ −0,78%/lệnh.
 
+## Phân tích cơ bản chuyên sâu (15/10/2026)
+
+`phantich.js` (file riêng, `?v=`): khối dưới "Tài chính — 12 quý" ở tab Chi tiết mã (web + app). dashboard_app.js bọc trong IIFE nên
+xuất trạng thái qua `window.__knCt` (ngay sau `loadDetail`). Nguồn: VNDirect finfo `financial_statements` ANNUAL (size 350) + QUARTER (size 400),
+37 mã chỉ tiêu ghi đầu file (dò bằng `do-api2` trên FPT/VCB/SSI/HPG). Chấm 5 trụ theo **ngưỡng cố định** (rule-based), Piotroski F-score
+(chỉ DN thường), cờ đỏ/điểm mạnh, so trung vị ngành (`SEC_MAP`, không gồm chính mã, cần ≥ 3 mã có số — ROE trong bảng giá gần như trống nên
+không so ROE ngành). Ngân hàng = có 421701; CTCK/bảo hiểm phân theo ngành (`Dịch vụ tài chính|Bảo hiểm`), không chấm sức khỏe/dòng tiền.
+LCTT quý ghi lũy kế → cột "4 quý gần nhất" không có dòng tiền; cộng 4 quý chỉ khi đủ cả 4 (EPS quý 0 = thiếu). Cache `kn_pt_<mã>` theo phiên,
+chỉ ghi khi có ≥ 2 năm. Test: scratchpad `pt-test.js` (Chromium + API giả từ số thật của runner).
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
