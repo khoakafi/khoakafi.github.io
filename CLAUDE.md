@@ -225,16 +225,19 @@ Số thật cho test Soi BCTC: scratchpad `fake/store.json` (gom bằng `gom-log
 **Kết luận MUA: CÓ / KHÔNG theo giá hôm nay (16/10/2026, mô hình ĐÃ KIỂM ĐỊNH — anh Khoa: "Yes/No, không nước đôi", "backtest mô hình").**
 Thay quy tắc 5 điều kiện cũ (`ptKetLuan`: LN cốt lõi, nền tảng, thị phần, định giá, ≥ 2 báo cáo CTCK dư địa ≥ 15%) — backtest cho thấy
 nó **thất bại** (giai đoạn kiểm tra 2021–: −0,9%/6 tháng so với thị trường). Nghiên cứu: kafi-core `research/co-ban/` (`KET-QUA.md`,
-`GIA-THUYET.md` đăng ký trước, `chot.mjs`, `kiem-chot.mjs`); dữ liệu nhánh `co-ban-data` (workflow `co-ban-data.yml`): 1.582 mã gồm mã
+`GIA-THUYET.md` đăng ký trước, `chot.mjs`, `kiem-chot.mjs`); dữ liệu nhánh `co-ban-data` (workflow `co-ban-data.yml`, mặc định chỉ tải bổ sung mã thiếu; `tai_lai=1` tải lại ~60 phút): 1.628 mã gồm mã
 đã hủy niêm yết, BCTC quý point-in-time theo `createdDate` VNDirect, giá gốc + điều chỉnh cuối tháng 2012–nay, báo cáo CTCK Simplize (từ 2022).
 - **CÓ** = P/E < 15 & PEG ≤ 1 & LNST mẹ quý gần nhất ≥ cùng kỳ & giá ≥ 80% đỉnh 12 tháng (giá cuối tháng, điều chỉnh) & không "chu kỳ ở đỉnh"
   (từng giảm LN 4 quý ≥ 50% từ đỉnh hoặc ngành chu kỳ; LN 4 quý ≥ 85% đỉnh; giảm tốc ≥ 25 điểm % hoặc biên gộp ≥ 85% lịch sử)
   & thanh khoản top 250 GTGD TB20 và ≥ 1 tỷ/phiên (vũ trụ kiểm định — ngoài vũ trụ không bao giờ CÓ).
 - **KHÔNG (đắt)** = P/E ≥ 25 hoặc (P/E ≥ 20 & PEG ≥ 2,5); ngân hàng không xếp "đắt" (nhóm đó không kém thị trường). Còn lại: KHÔNG (chưa đủ điều kiện).
-- Số (vượt TB đều top 250 cùng tháng, t Newey-West): CÓ +3,7%/3T, +5,7%/6T, +8,5%/12T (3.403 lần, 333 mã, dương 11/12 năm, thắng ~52%);
-  học 2014–20 f6 +7,2% (t 4,5), kiểm tra 2021– +3,7% (t 1,6 — chưa có ý nghĩa riêng; f3 t 2,5). Danh mục CÓ giữ 3T sau phí +21,6%/năm vs +6,5%;
-  2021– +17,6% vs VN-Index +8,6%. ĐẮT (không NH) −6,5%/6T, −10,7%/12T, âm 12/12 năm. Dao rơi (rẻ + tăng nhưng < 80% đỉnh) −2,4%/3T.
-- **Web khớp backtest 250/250 mã tháng 10/2026** (`nmTinh` tính y hệt `dac-trung.mjs`; bỏ điều kiện giá hàng hóa vì trình duyệt không gọi được
+- Số (vượt TB đều top 250 cùng tháng, t Newey-West): CÓ +3,6%/3T, +5,7%/6T, +8,5%/12T (3.467 lần, 341 mã, dương 11/12 năm, thắng ~52%);
+  học 2014–20 f6 +7,3% (t 4,5), kiểm tra 2021– +3,7% (t 1,6 — chưa có ý nghĩa riêng; f3 t 2,5). Danh mục CÓ giữ 3T sau phí +21,3%/năm vs +6,6%;
+  2021– +17,4% vs VN-Index +8,6%. ĐẮT thật (không NH, P/E chuẩn hóa ≥ 25) −8,7%/6T, −15,6%/12T, âm 11/12 năm; "P/E cao vì LN thấp"
+  (P/E chuẩn hóa < 25, nhãn `thap`) −5,4% học / ~0 kiểm tra. Dao rơi (rẻ + tăng nhưng < 80% đỉnh) −2,4%/3T.
+- **Lần tải đầu thiếu 46 mã** (SSI, KBC, VPL, BMI…: mã chuyển sàn có bản ghi DELISTED ở sàn cũ trước 2013 bị ghi đè trạng thái) — đã sửa
+  `tai.mjs` (DELISTED trước, LISTED sau; mã web bỏ bản ghi hủy), số trên là sau khi bổ sung (gần như không đổi).
+- **Web khớp backtest 250/250 mã tháng 10/2026** (35 CÓ, 32 ĐẮT, 9 THẤP, 174 KHÔNG) (`nmTinh` tính y hệt `dac-trung.mjs`; bỏ điều kiện giá hàng hóa vì trình duyệt không gọi được
   FRED — chỉ đổi 0,8% số lần, tháng 10/2026 không đổi mã nào). Test: scratchpad `dg/dg-test.js` (Chromium, API giả từ dữ liệu thật `co-ban-data`;
   `dg/xuat.mjs` xuất nhãn backtest; `BO_DOI=1` bỏ đối chiếu, `SONG=<giá>` thử vẽ lại theo giá, `LOWVAL=<mã>` thử ngoài vũ trụ).
 - Giao diện (đầu khối, nằm trong `#ptDgO` nên **vẽ lại mỗi khi giá đổi**, giữ `<details>` đang mở): 5 điều kiện ✓/✗ có số; **vùng giá CÓ**
@@ -244,7 +247,7 @@ nó **thất bại** (giai đoạn kiểm tra 2021–: −0,9%/6 tháng so với
   (lsQ dạng mảng gọn, tối đa 15 mã; `kn_pt2_`/`kn_pt_` tự xoá).
 - **Thông tin ngoài — trạng thái Toàn cảnh** (`window.TQ.tt.S`, 0 Quan sát / 1 Tích cực / 2 Thận trọng): chỉ kèm kết luận CÓ, một dòng
   (kafi-core `theo-trang-thai.mjs`, 2018–): nhóm CÓ hơn thị trường ở cả 3 trạng thái, nhưng mua lúc **Thận trọng** thì tuyệt đối −5,1%/6T
-  (37% có lãi); danh mục CÓ không mua mới khi Thận trọng: sụt −29% thay vì −40%, lợi nhuận/năm không giảm. **Chưa** đổi CÓ thành KHÔNG
+  (38% có lãi); danh mục CÓ không mua mới khi Thận trọng: sụt −29% thay vì −40%, lợi nhuận/năm không giảm. **Chưa** đổi CÓ thành KHÔNG
   khi Thận trọng (mẫu chỉ 15 tháng) — nếu anh Khoa muốn đồng bộ với tab Toàn cảnh thì sửa ở `phanLoai`/`ketLuanHtml`.
 - "Điểm nhấn" đầu thẻ (`diemNhan`): LN 4 quý vs giá 12 tháng → P/E co/nở; chuỗi kỷ lục. LN quý giảm/lỗ thì không ghi "giá chưa theo kịp".
 - **Không** kết luận bằng "đắt/rẻ so với chính nó": phân vị P/E so với 5 năm của chính mã không dự báo được giá (kiểm định ~0).

@@ -614,7 +614,7 @@
   }
 
   /* ---------- Dinh gia + KET LUAN MUA CO / KHONG theo gia hom nay (16/10/2026) ----------
-     Mo hinh da kiem dinh o kafi-core research/co-ban (KET-QUA.md, chot.mjs): 1.582 ma (gom ma da huy niem yet), 2013 – 10/2026,
+     Mo hinh da kiem dinh o kafi-core research/co-ban (KET-QUA.md, chot.mjs): 1.628 ma (gom ma da huy niem yet), 2013 – 10/2026,
      BCTC point-in-time (ngay VNDirect nhap; lui ve han 45 ngay khi ngay nhap vo ly), vu tru top 250 thanh khoan va >= 1 ty/phien.
        CO          = P/E < 15 & PEG <= 1 & LN quy >= cung ky & gia >= 80% dinh 12 thang (gia cuoi thang) & khong "chu ky o dinh"
        KHONG (dat) = P/E >= 25, hoac P/E >= 20 & PEG >= 2,5. Ngan hang khong xep "dat" (nhom nay lich su khong kem thi truong).
@@ -629,19 +629,19 @@
     'Dịch vụ tài chính', 'Dịch vụ Đầu tư Bất Động Sản', 'Xây dựng & Vật liệu', 'Sản xuất giấy & Trồng rừng', 'Ôtô & phụ tùng ôtô'];
   // So lieu kiem dinh (loi nhuan VUOT trung binh deu top 250 cung thang, 2014 – 10/2026) — kafi-core chot.mjs + kiem-chot.mjs
   var KD = {
-    co: 'Lịch sử 2014 – 10/2026: 3.403 lần CÓ (333 mã) — trung bình <b>hơn thị trường +3,7% sau 3 tháng, +5,7% sau 6 tháng, +8,5% sau 12 tháng</b>; dương 11/12 năm (trừ 2021). Chỉ ~52% số lần thắng thị trường: lợi thế nằm ở trung bình nhiều mã, không phải mã nào CÓ cũng tăng.',
-    dm: 'Danh mục mua đều mọi mã CÓ, xét lại hằng tháng, giữ 3 tháng, đã trừ phí + thuế: <b>+21,6%/năm</b> 2014 – nay (trung bình thị trường +6,5%/năm); riêng giai đoạn kiểm tra 2021 – nay +17,6%/năm (VN-Index +8,6%/năm). Sụt lớn nhất −40% (2022).',
-    dat: 'Lịch sử 2014 – 10/2026: 6.628 lần ở nhóm này — trung bình <b>kém thị trường −2,8% sau 3 tháng, −6,5% sau 6 tháng, −10,7% sau 12 tháng</b>; âm cả 12/12 năm; 65% số lần thua thị trường.',
-    thap: 'Nhóm "P/E cao vì LN đang thấp" (P/E trên LN bình quân 5 năm < 25) kém thị trường ít hơn nhiều so với nhóm đắt thật (−5,5% sau 6 tháng giai đoạn 2014–20, ~0 từ 2021) — LN có thể phục hồi như MWG 2024, nhưng chưa có lợi thế để mua.',
-    khac: 'Nhóm chưa đủ điều kiện lịch sử ngang thị trường (+0,8% sau 6 tháng) — không có lợi thế để mua lúc này.',
-    dao: 'Mã rẻ + tăng trưởng nhưng giá đã rơi quá 20% từ đỉnh 12 tháng: lịch sử kém thị trường −2,4% sau 3 tháng (1.204 lần) — chưa nên bắt dao rơi.',
-    lnq: 'Mã rẻ + tăng trưởng nhưng quý gần nhất LN giảm: lịch sử ngang thị trường (−0,4% sau 6 tháng, 2.131 lần).',
+    co: 'Lịch sử 2014 – 10/2026: 3.467 lần CÓ (341 mã) — trung bình <b>hơn thị trường +3,6% sau 3 tháng, +5,7% sau 6 tháng, +8,5% sau 12 tháng</b>; dương 11/12 năm (trừ 2021). Chỉ ~52% số lần thắng thị trường: lợi thế nằm ở trung bình nhiều mã, không phải mã nào CÓ cũng tăng.',
+    dm: 'Danh mục mua đều mọi mã CÓ, xét lại hằng tháng, giữ 3 tháng, đã trừ phí + thuế: <b>+21,3%/năm</b> 2014 – nay (trung bình thị trường +6,6%/năm); riêng giai đoạn kiểm tra 2021 – nay +17,4%/năm (VN-Index +8,6%/năm). Sụt lớn nhất −40% (2022).',
+    dat: 'Lịch sử 2014 – 10/2026: 4.308 lần ở nhóm này (299 mã) — trung bình <b>kém thị trường −3,9% sau 3 tháng, −8,7% sau 6 tháng, −15,6% sau 12 tháng</b>; âm 11/12 năm; 66% số lần thua thị trường.',
+    thap: 'Nhóm "P/E cao vì LN đang thấp" (P/E trên LN bình quân 5 năm < 25) kém thị trường ít hơn nhiều so với nhóm đắt thật (−5,4% sau 6 tháng giai đoạn 2014–20, ~0 từ 2021) — LN có thể phục hồi như MWG 2024, nhưng chưa có lợi thế để mua.',
+    khac: 'Nhóm chưa đủ điều kiện lịch sử ngang thị trường (+0,7% sau 6 tháng) — không có lợi thế để mua lúc này.',
+    dao: 'Mã rẻ + tăng trưởng nhưng giá đã rơi quá 20% từ đỉnh 12 tháng: lịch sử kém thị trường −2,4% sau 3 tháng (1.220 lần) — chưa nên bắt dao rơi.',
+    lnq: 'Mã rẻ + tăng trưởng nhưng quý gần nhất LN giảm: lịch sử ngang thị trường (−0,7% sau 6 tháng, 2.172 lần).',
     b: 'Mã chu kỳ ở đỉnh lợi nhuận dù P/E thấp: 22% số lần giảm ≥ 30% trong 12 tháng sau (nhóm CÓ: 13%) — như HPG cuối 2021.',
-    bc: 'Kiểm định 2022 – 2026: trong nhóm CÓ, mã được CTCK dự báo dư địa ≥ 15% không tăng tốt hơn (+3,3% so với +7,3% sau 6 tháng) — mô hình không dùng giá mục tiêu.',
+    bc: 'Kiểm định 2022 – 2026: trong nhóm CÓ, mã được CTCK dự báo dư địa ≥ 15% không tăng tốt hơn (+3,3% so với +7,1% sau 6 tháng) — mô hình không dùng giá mục tiêu.',
     // nhom CO theo trang thai tab Toan canh tai thoi diem mua (2018 – 10/2026) — kafi-core theo-trang-thai.mjs
-    tt: ['Lịch sử 2018 – 2026 khi thị trường ở trạng thái này: nhóm CÓ hơn thị trường +3,6% sau 3 tháng; tính tuyệt đối +2,7% sau 3 tháng, +6,9% sau 6 tháng.',
-      'Lịch sử 2018 – 2026 khi thị trường Tích cực: nhóm CÓ hơn thị trường +3,7% sau 3 tháng; tính tuyệt đối +11,6% sau 3 tháng, 64% số lần có lãi — thời điểm thuận lợi nhất.',
-      'Lịch sử 2018 – 2026 khi thị trường Thận trọng: nhóm CÓ vẫn hơn thị trường (+1,6% sau 3 tháng) nhưng <b>tính tuyệt đối −5,1% sau 6 tháng, chỉ 37% số lần có lãi</b>. Danh mục CÓ không mua mới khi Thận trọng: sụt lớn nhất −29% thay vì −40%, lợi nhuận/năm không giảm — nên giải ngân từng phần hoặc chờ.']
+    tt: ['Lịch sử 2018 – 2026 khi thị trường ở trạng thái này: nhóm CÓ hơn thị trường +3,6% sau 3 tháng; tính tuyệt đối +2,8% sau 3 tháng, +7,0% sau 6 tháng.',
+      'Lịch sử 2018 – 2026 khi thị trường Tích cực: nhóm CÓ hơn thị trường +3,4% sau 3 tháng; tính tuyệt đối +11,3% sau 3 tháng, 64% số lần có lãi — thời điểm thuận lợi nhất.',
+      'Lịch sử 2018 – 2026 khi thị trường Thận trọng: nhóm CÓ vẫn hơn thị trường (+1,5% sau 3 tháng) nhưng <b>tính tuyệt đối −5,1% sau 6 tháng, chỉ 38% số lần có lãi</b>. Danh mục CÓ không mua mới khi Thận trọng: sụt lớn nhất −29% thay vì −40%, lợi nhuận/năm không giảm — nên giải ngân từng phần hoặc chờ.']
   };
   function nmCong(d, n){ var x = new Date(d + 'T00:00:00Z'); x.setUTCDate(x.getUTCDate() + n); return x.toISOString().slice(0, 10); }
   function nmKQ(fd){ return (+fd.slice(0, 4)) * 4 + Math.ceil(+fd.slice(5, 7) / 3); }
@@ -849,7 +849,7 @@
         + '</table><div class="mini">' + KD.bc + '</div></details>';
     }
     h += '<div class="mini" style="margin-top:6px">Kết luận tự động theo quy tắc cố định (rule-based), tính lại mỗi khi giá đổi và khi có BCTC quý mới; 77% số lần CÓ vẫn giữ CÓ sang tháng sau. '
-      + 'Kiểm định trên 1.582 mã (gồm mã đã hủy niêm yết) 2014 – 10/2026, chỉ dùng BCTC đã công bố tại từng thời điểm. Lịch sử không bảo đảm tương lai. Nguồn: BCTC + giá VNDirect, báo cáo CTCK qua Simplize.</div></div>';
+      + 'Kiểm định trên 1.628 mã (gồm mã đã hủy niêm yết) 2014 – 10/2026, chỉ dùng BCTC đã công bố tại từng thời điểm. Lịch sử không bảo đảm tương lai. Nguồn: BCTC + giá VNDirect, báo cáo CTCK qua Simplize.</div></div>';
     return h;
   }
 
