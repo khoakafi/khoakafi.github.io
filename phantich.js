@@ -632,7 +632,7 @@
     co: 'Lịch sử 2014 – 10/2026: 3.467 lần CÓ (341 mã) — trung bình <b>hơn thị trường +3,6% sau 3 tháng, +5,7% sau 6 tháng, +8,5% sau 12 tháng</b>; dương 11/12 năm (trừ 2021). Chỉ ~52% số lần thắng thị trường: lợi thế nằm ở trung bình nhiều mã, không phải mã nào CÓ cũng tăng.',
     dm: 'Danh mục mua đều mọi mã CÓ, xét lại hằng tháng, giữ 3 tháng, đã trừ phí + thuế: <b>+21,3%/năm</b> 2014 – nay (trung bình thị trường +6,6%/năm); riêng giai đoạn kiểm tra 2021 – nay +17,4%/năm (VN-Index +8,6%/năm). Sụt lớn nhất −40% (2022).',
     dat: 'Lịch sử 2014 – 10/2026: 4.308 lần ở nhóm này (299 mã) — trung bình <b>kém thị trường −3,9% sau 3 tháng, −8,7% sau 6 tháng, −15,6% sau 12 tháng</b>; âm 11/12 năm; 66% số lần thua thị trường.',
-    thap: 'Nhóm "P/E cao vì LN đang thấp" (P/E trên LN bình quân 5 năm < 25) kém thị trường ít hơn nhiều so với nhóm đắt thật (−5,4% sau 6 tháng giai đoạn 2014–20, ~0 từ 2021) — LN có thể phục hồi như MWG 2024, nhưng chưa có lợi thế để mua.',
+    thap: 'Nhóm "P/E cao vì LN đang thấp" (P/E trên LN bình quân 5 năm < 25) kém thị trường ít hơn nhiều so với nhóm đắt thật (−5,4% sau 6 tháng giai đoạn 2014–20, ~0 từ 2021) — LN có thể phục hồi như MWG cuối 2023, nhưng chưa có lợi thế để mua.',
     khac: 'Nhóm chưa đủ điều kiện lịch sử ngang thị trường (+0,7% sau 6 tháng) — không có lợi thế để mua lúc này.',
     dao: 'Mã rẻ + tăng trưởng nhưng giá đã rơi quá 20% từ đỉnh 12 tháng: lịch sử kém thị trường −2,4% sau 3 tháng (1.220 lần) — chưa nên bắt dao rơi.',
     lnq: 'Mã rẻ + tăng trưởng nhưng quý gần nhất LN giảm: lịch sử ngang thị trường (−0,7% sau 6 tháng, 2.172 lần).',
