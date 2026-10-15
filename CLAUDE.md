@@ -242,6 +242,11 @@ nó **thất bại** (giai đoạn kiểm tra 2021–: −0,9%/6 tháng so với
   "Mô hình trên chính mã" (kết luận cuối mỗi quý 5 năm + giá 6 tháng sau); báo cáo CTCK chỉ để tham khảo (kiểm định: dư địa CTCK không thêm giá trị).
 - BCTC quý tải **đủ lịch sử** (`nmTai`, `size=1000`, ~870 dòng/mã) — cắt 700 làm lệch phân vị biên gộp (DHC đổi nhãn). Cache `kn_pt3_`
   (lsQ dạng mảng gọn, tối đa 15 mã; `kn_pt2_`/`kn_pt_` tự xoá).
+- **Thông tin ngoài — trạng thái Toàn cảnh** (`window.TQ.tt.S`, 0 Quan sát / 1 Tích cực / 2 Thận trọng): chỉ kèm kết luận CÓ, một dòng
+  (kafi-core `theo-trang-thai.mjs`, 2018–): nhóm CÓ hơn thị trường ở cả 3 trạng thái, nhưng mua lúc **Thận trọng** thì tuyệt đối −5,1%/6T
+  (37% có lãi); danh mục CÓ không mua mới khi Thận trọng: sụt −29% thay vì −40%, lợi nhuận/năm không giảm. **Chưa** đổi CÓ thành KHÔNG
+  khi Thận trọng (mẫu chỉ 15 tháng) — nếu anh Khoa muốn đồng bộ với tab Toàn cảnh thì sửa ở `phanLoai`/`ketLuanHtml`.
+- "Điểm nhấn" đầu thẻ (`diemNhan`): LN 4 quý vs giá 12 tháng → P/E co/nở; chuỗi kỷ lục. LN quý giảm/lỗ thì không ghi "giá chưa theo kịp".
 - **Không** kết luận bằng "đắt/rẻ so với chính nó": phân vị P/E so với 5 năm của chính mã không dự báo được giá (kiểm định ~0).
   Thẻ "Định giá theo giá hôm nay" chỉ mô tả, có ghi chú điều này. Muốn đổi ngưỡng → chạy lại kafi-core `chot.mjs`, không chỉnh tay trên web.
 

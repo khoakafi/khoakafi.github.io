@@ -636,7 +636,11 @@
     dao: 'Mã rẻ + tăng trưởng nhưng giá đã rơi quá 20% từ đỉnh 12 tháng: lịch sử kém thị trường −2,4% sau 3 tháng (1.204 lần) — chưa nên bắt dao rơi.',
     lnq: 'Mã rẻ + tăng trưởng nhưng quý gần nhất LN giảm: lịch sử ngang thị trường (−0,4% sau 6 tháng, 2.131 lần).',
     b: 'Mã chu kỳ ở đỉnh lợi nhuận dù P/E thấp: 22% số lần giảm ≥ 30% trong 12 tháng sau (nhóm CÓ: 13%) — như HPG cuối 2021.',
-    bc: 'Kiểm định 2022 – 2026: trong nhóm CÓ, mã được CTCK dự báo dư địa ≥ 15% không tăng tốt hơn (+3,3% so với +7,3% sau 6 tháng) — mô hình không dùng giá mục tiêu.'
+    bc: 'Kiểm định 2022 – 2026: trong nhóm CÓ, mã được CTCK dự báo dư địa ≥ 15% không tăng tốt hơn (+3,3% so với +7,3% sau 6 tháng) — mô hình không dùng giá mục tiêu.',
+    // nhom CO theo trang thai tab Toan canh tai thoi diem mua (2018 – 10/2026) — kafi-core theo-trang-thai.mjs
+    tt: ['Lịch sử 2018 – 2026 khi thị trường ở trạng thái này: nhóm CÓ hơn thị trường +3,6% sau 3 tháng; tính tuyệt đối +2,7% sau 3 tháng, +6,9% sau 6 tháng.',
+      'Lịch sử 2018 – 2026 khi thị trường Tích cực: nhóm CÓ hơn thị trường +3,7% sau 3 tháng; tính tuyệt đối +11,6% sau 3 tháng, 64% số lần có lãi — thời điểm thuận lợi nhất.',
+      'Lịch sử 2018 – 2026 khi thị trường Thận trọng: nhóm CÓ vẫn hơn thị trường (+1,6% sau 3 tháng) nhưng <b>tính tuyệt đối −5,1% sau 6 tháng, chỉ 37% số lần có lãi</b>. Danh mục CÓ không mua mới khi Thận trọng: sụt lớn nhất −29% thay vì −40%, lợi nhuận/năm không giảm — nên giải ngân từng phần hoặc chờ.']
   };
   function nmCong(d, n){ var x = new Date(d + 'T00:00:00Z'); x.setUTCDate(x.getUTCDate() + n); return x.toISOString().slice(0, 10); }
   function nmKQ(fd){ return (+fd.slice(0, 4)) * 4 + Math.ceil(+fd.slice(5, 7) / 3); }
@@ -712,7 +716,7 @@
     var kn0 = cur.kn;
     return { cur: cur, kq: kn0, quy: 'Q' + (kn0 - Math.floor((kn0 - 1) / 4) * 4) + '/' + Math.floor((kn0 - 1) / 4), mcap: cur.mcap, pe: cur.pe,
       pePct: (cur.pe != null && ls5.length >= 24) ? nmPv(cur.pe, ls5) : null, peP05: q(0.05), peP20: q(0.2), peP50: q(0.5), peP80: q(0.8), peP95: q(0.95), peN: ls5.length,
-      pe12: i12 != null ? peLs[i12] : null, peLs: peLs.slice(Math.max(0, iC - 60), iC), gNP: cur.gNP, gRev: g(cur.revT, ttm(kn0 - 4, 'rev')), gNPq: cur.gNPq,
+      pe12: i12 != null ? peLs[i12] : null, np12: (i12 != null && ls[i12]) ? ls[i12].npT : null, peLs: peLs.slice(Math.max(0, iC - 60), iC), gNP: cur.gNP, gRev: g(cur.revT, ttm(kn0 - 4, 'rev')), gNPq: cur.gNPq,
       decel: cur.decel, peg: cur.peg, ret12: (i12 != null && A[i12]) ? gDc / A[i12] - 1 : null, recNP: cur.recNP, recRev: cur.recRev, streak: cur.streak,
       gm: cur.gm, gmPct: cur.gmPct, peakRatio: cur.peakRatio, cycHist: cur.cycHist, npT: cur.npT, revT: cur.revT,
       ls: ls, thang: thang, A: A, iC: iC, thC: thC, kAdj: kAdj, gDc: gDc };
@@ -737,6 +741,22 @@
     return 12;
   }
 
+  // Diem nhan dau the ket luan: LN 4 quy vs gia 12 thang (P/E co / no), chuoi ky luc
+  function diemNhan(nm){
+    var cau = [];
+    // cung cua so: gia 12 thang va LN 4 quy DA CONG BO tai hai moc (khop voi P/E hai moc)
+    var gLN = (nm.npT > 0 && nm.np12 > 0) ? nm.npT / nm.np12 - 1 : null;
+    if (gLN != null && nm.ret12 != null) {
+      var gap = gLN - nm.ret12;
+      cau.push('12 tháng qua giá ' + dau(nm.ret12 * 100, 0) + ', LNST 4 quý (số đã công bố) ' + ty(nm.np12) + ' → ' + ty(nm.npT) + ' tỷ (' + dau(gLN * 100, 0) + ')'
+        + (nm.pe12 != null && nm.pe != null ? ' → P/E từ ' + f(nm.pe12, 1) + ' ' + (nm.pe < nm.pe12 ? 'co về' : 'nở lên') + ' ' + f(nm.pe, 1) : '') + '.'
+        + (gap >= 0.2 ? (nm.gNPq != null && nm.gNPq < 0 ? ' Nhưng LN quý gần nhất ' + (nm.cur.npQ < 0 ? 'đã lỗ' : 'đã giảm so với cùng kỳ') + ' — giá có thể đang phản ánh sự đi xuống này, chưa phải "giá chưa theo kịp lợi nhuận".'
+          : (nm.cur.dHi52 != null && nm.cur.dHi52 < -0.2 ? ' <b>Giá giảm dù lợi nhuận tăng</b> — P/E co mạnh, nhưng giá vẫn đang rơi (quá 20% từ đỉnh 12 tháng): lịch sử kiểu này thường chưa phải đáy.'
+          : ' <b>Lợi nhuận đi nhanh hơn giá</b> — giá chưa phản ánh hết tăng trưởng.')) : (gap <= -0.3 ? ' <b>Giá đi nhanh hơn lợi nhuận</b> — kỳ vọng đã vào giá.' : '')));
+    }
+    if (nm.streak >= 2) cau.push('LN và doanh thu 4 quý cùng lập kỷ lục <b>' + nm.streak + ' quý liên tiếp</b>.');
+    return cau;
+  }
   /* Ket luan + vung gia + lich su ket luan tren chinh ma. Ve lai moi khi gia song doi. */
   function ketLuanHtml(t, nm, raw){
     var r = hang(t) || {}, p = r.p > 0 ? r.p : (raw.gia ? raw.gia[raw.gia.length - 1][2] : null), x = nm && nm.cur;
@@ -773,6 +793,7 @@
       : (loai === 'dat' ? 'Định giá quá cao: P/E ' + f(x.pe, 1) + (x.pe >= 25 ? ' ≥ 25.' : ' ≥ 20 và PEG ' + f(x.peg, 1) + ' ≥ 2,5.')
       : 'Chưa đủ điều kiện — không đạt: ' + hong.map(function(z){ return thuong(z.ten); }).join('; ') + '.');
     var h = '<div class="kl ' + (loai === 'co' ? 'co' : (loai === 'dat' ? 'dat' : 'khong')) + '">' + tieuDe(loai === 'co' ? 'CÓ' : 'KHÔNG', sub);
+    var dn = diemNhan(nm); if (dn.length) h += '<div class="klnh">' + dn.join(' ') + '</div>';
     h += '<ul class="kld">' + dk.map(function(z){ return '<li class="' + (z.ok ? 'ok' : 'no') + '"><b>' + (z.ok ? '✓ ' : '✗ ') + z.ten + '</b> — ' + z.txt
       + (z.kd && !z.ok ? '<div class="mini">' + z.kd + '</div>' : '') + '</li>'; }).join('') + '</ul>';
     if (x.bank && laDat(x)) h += '<div class="kldc">Ngân hàng P/E cao thường do lợi nhuận tạm giảm (trích lập dự phòng). Lịch sử nhóm này không kém thị trường nên mô hình không xếp vào "đắt" — nhưng vẫn chưa đạt điều kiện CÓ.</div>';
@@ -794,6 +815,9 @@
       else if (bc.length) vg = 'Kết luận không đổi theo giá cho tới khi có BCTC quý mới: vướng ' + bc.map(function(z){ return thuong(z.ten); }).join('; ') + '.';
     }
     if (vg) h += '<div class="kldc">' + vg + '</div>';
+    // Thong tin ngoai: trang thai thi truong tab Toan canh (TQ.tt.S: 0 Quan sat, 1 Tich cuc, 2 Than trong) — chi kem ket luan CO
+    var S = window.TQ && window.TQ.tt && window.TQ.tt.S, st = (S && S.length) ? S[S.length - 1][1] : null;
+    if (loai === 'co' && st != null && KD.tt[st]) h += '<div class="kltt t' + st + '">Toàn cảnh thị trường hôm nay: <b class="pl" onclick="window.showView&&window.showView(\'tq\')">' + ['QUAN SÁT', 'TÍCH CỰC', 'THẬN TRỌNG'][st] + '</b> — ' + KD.tt[st] + '</div>';
     h += '<div class="klkd">' + (loai === 'co' ? KD.co + '<br>' + KD.dm : (loai === 'dat' ? KD.dat : KD.khac)) + '</div>';
     // Lich su ket luan tren chinh ma: cuoi moi quy, 5 nam
     var ds = [];
@@ -848,16 +872,7 @@
         + '<div class="dgmed" style="left:' + vt(nm.peP50) + '%"></div><div class="dgnow" style="left:' + vt(nm.pe) + '%"></div></div>'
         + '<div class="dgsc"><span>' + f(lo, 1) + '</span><span>20–80% thời gian: ' + f(nm.peP20, 1) + '–' + f(nm.peP80, 1) + ' · trung vị ' + f(nm.peP50, 1) + '</span><span>' + f(hi, 1) + '</span></div>';
     }
-    // Cau chuyen: LN 4 quy vs gia 12 thang
     var cau = [];
-    if (nm.gNP != null && nm.ret12 != null) {
-      var gap = nm.gNP - nm.ret12;
-      cau.push('12 tháng qua LNST 4 quý ' + dau(nm.gNP * 100, 0) + ', giá ' + dau(nm.ret12 * 100, 0)
-        + (nm.pe12 != null ? ' → P/E từ ' + f(nm.pe12, 1) + ' ' + (nm.pe < nm.pe12 ? 'co về' : 'nở lên') + ' ' + f(nm.pe, 1) : '') + '.'
-        + (gap >= 0.2 ? (nm.gNPq != null && nm.gNPq < 0 ? ' Nhưng LN quý gần nhất ' + (nm.cur.npQ < 0 ? 'đã lỗ' : 'đã giảm so với cùng kỳ') + ' — giá có thể đang phản ánh sự đi xuống này, chưa phải "giá chưa theo kịp lợi nhuận".'
-          : ' <b>Lợi nhuận đi nhanh hơn giá</b> — giá chưa phản ánh hết tăng trưởng.') : (gap <= -0.3 ? ' <b>Giá đi nhanh hơn lợi nhuận</b> — kỳ vọng đã vào giá.' : '')));
-    }
-    if (nm.streak >= 2) cau.push('LN và doanh thu 4 quý cùng lập kỷ lục <b>' + nm.streak + ' quý liên tiếp</b>.');
     if (nm.decel != null && nm.decel >= 0.25 && nm.gNP != null) cau.push('Tăng trưởng LN 4 quý đang chậm lại: ' + dau(cap3(nm.gNP) * 100, 0) + ', thấp hơn ' + f(nm.decel * 100, 0) + ' điểm % so với mức cao nhất 3 quý trước.');
     if (cau.length) h += '<ul class="dgc">' + cau.map(function(x){ return '<li>' + x + '</li>'; }).join('') + '</ul>';
     h += '<div class="mini" style="margin-top:6px">P/E cao hay thấp so với lịch sử của chính mã <b>không</b> dự báo được giá (kiểm định 2014 – 2026: chênh lệch ~0); mô hình kết luận dùng P/E tuyệt đối và PEG.</div>';
@@ -917,7 +932,7 @@
       + '#ptcs .klh{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}#ptcs .klv{font-size:22px;font-weight:800}#ptcs .kl.co .klv b{color:var(--green-dark)}#ptcs .kl.khong .klv b,#ptcs .kl.dat .klv b{color:var(--red)}'
       + '#ptcs .kls{font-size:13px;font-weight:600}#ptcs ul.kld{list-style:none;margin:8px 0 0;padding:0}#ptcs ul.kld li{font-size:12.5px;line-height:1.55;padding:4px 0;border-top:1px dashed rgba(0,0,0,.08)}'
       + '#ptcs ul.kld li.ok b{color:var(--green-dark)}#ptcs ul.kld li.no b{color:var(--red)}#ptcs .kldc{margin-top:8px;font-size:13px;line-height:1.55;background:#fff;border-radius:8px;padding:8px 10px}'
-      + '#ptcs .klkd{margin-top:8px;font-size:12.5px;line-height:1.55;padding:8px 10px;border-left:3px solid var(--blue);background:#fff;border-radius:0 8px 8px 0}#ptcs details.klls{margin-top:8px;background:#fff;border-radius:8px;padding:6px 10px}#ptcs details.klls summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs .lks{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 6px}#ptcs .lk{font-size:11.5px;padding:3px 8px;border-radius:999px;background:#eef0f3;color:#4b5563;white-space:nowrap}#ptcs .lk.co{background:var(--green-soft);color:var(--green-dark)}#ptcs .lk.dat{background:var(--red-soft);color:var(--red)}#ptcs .lk i{font-style:normal;font-weight:700}#ptcs details.klbc{margin-top:8px;background:#fff;border-radius:8px;padding:6px 10px;overflow-x:auto}#ptcs details.klbc td{word-break:break-word}#ptcs details.klbc td:nth-child(2){text-align:left}#ptcs .kl,#ptcs .soi{min-width:0;overflow-wrap:anywhere}#ptcs details.klbc summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs details.klbc td{vertical-align:top}#ptcs tr.cu{opacity:.55}#ptcs details.klbc a{color:var(--muted);text-decoration:none}'
+      + '#ptcs .klnh{margin-top:6px;font-size:13px;line-height:1.55}#ptcs .kltt{margin-top:8px;font-size:12.5px;line-height:1.55;padding:8px 10px;border-radius:8px;background:#fff;border:1px solid var(--border)}#ptcs .kltt.t1{border-color:var(--green)}#ptcs .kltt.t2{border-color:var(--red);background:#fff7f7}#ptcs .klkd{margin-top:8px;font-size:12.5px;line-height:1.55;padding:8px 10px;border-left:3px solid var(--blue);background:#fff;border-radius:0 8px 8px 0}#ptcs details.klls{margin-top:8px;background:#fff;border-radius:8px;padding:6px 10px}#ptcs details.klls summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs .lks{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 6px}#ptcs .lk{font-size:11.5px;padding:3px 8px;border-radius:999px;background:#eef0f3;color:#4b5563;white-space:nowrap}#ptcs .lk.co{background:var(--green-soft);color:var(--green-dark)}#ptcs .lk.dat{background:var(--red-soft);color:var(--red)}#ptcs .lk i{font-style:normal;font-weight:700}#ptcs details.klbc{margin-top:8px;background:#fff;border-radius:8px;padding:6px 10px;overflow-x:auto}#ptcs details.klbc td{word-break:break-word}#ptcs details.klbc td:nth-child(2){text-align:left}#ptcs .kl,#ptcs .soi{min-width:0;overflow-wrap:anywhere}#ptcs details.klbc summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs details.klbc td{vertical-align:top}#ptcs tr.cu{opacity:.55}#ptcs details.klbc a{color:var(--muted);text-decoration:none}'
       + '#ptcs .dg{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:12px;background:#fff}#ptcs .dgh{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}'
       + '#ptcs .dgv{display:flex;gap:10px;align-items:center;flex-wrap:wrap}#ptcs .dgpe{font-size:22px;font-weight:800}'
       + '#ptcs .dgbar{position:relative;height:14px;margin:12px 4px 4px;background:var(--panel2);border-radius:7px}#ptcs .dgband{position:absolute;top:0;bottom:0;background:#dbe6f7;border-radius:7px}'
