@@ -210,6 +210,18 @@ không so ROE ngành). Ngân hàng = có 421701; CTCK/bảo hiểm phân theo ng
 LCTT quý ghi lũy kế → cột "4 quý gần nhất" không có dòng tiền; cộng 4 quý chỉ khi đủ cả 4 (EPS quý 0 = thiếu). Cache `kn_pt_<mã>` theo phiên,
 chỉ ghi khi có ≥ 2 năm. Test: scratchpad `pt-test.js` (Chromium + API giả từ số thật của runner).
 
+**Soi BCTC (bản 2, 15/10 tối — anh Khoa: "phải soi kỹ BCTC, ra insight nhiều khía cạnh, vd VND thị phần giảm, môi giới giảm").**
+Khung "Soi BCTC Qx" đầu khối: câu insight tự sinh (rule-based) + **cầu lợi nhuận** (LNTT kỳ này − cùng kỳ = tổng thay đổi từng mảng,
+khớp tới từng tỷ với VCB/HPG/VND) + thị phần trong nhóm niêm yết cùng ngành + bảng 8 quý theo ngành. Quý: ~62 mã chỉ tiêu, lọc
+`fiscalDate:<10 cuối quý>` (API nhận danh sách). Nhóm so sánh: 1 lời gọi `code:A,B,C…` (top 30 vốn hóa cùng ngành; CTCK 45 vì nhiều mã
+"Dịch vụ tài chính" không phải CTCK). Quý "đủ" = ≥ 80% mã đã báo cáo (đầu mùa BCTC không tính thị phần quý mới).
+Mã CTCK (mô hình 89/90/91): 621110 DT môi giới, 700056 CP môi giới, 700044 lãi cho vay & phải thu, 700039/700046 lãi/lỗ FVTPL,
+700043 lãi HTM, 700053 dự phòng (âm = hoàn nhập), 700001 dư nợ cho vay (margin), 700073 LNTT chưa thực hiện, 22509 lãi vay.
+Ngân hàng (101–103): 421900 NII, 423200 phí, 423300 FX, 423400/423500 CK, 421600 khác, 422900 dự phòng, 411400/412300 liên NH/CK đầu tư,
+413100 nợ CP & NHNN. **Nợ xấu, CASA, NIM chính thức: VNDirect có tên chỉ tiêu (mô hình 104/1610) nhưng không trả số** → NIM là ước tính.
+Thị phần môi giới = thị phần **doanh thu** môi giới trong CTCK niêm yết (không phải thị phần giá trị giao dịch HOSE).
+Cache đổi sang `kn_pt2_` (bản cũ `kn_pt_` tự xoá). Số thật cho test: scratchpad `fake/store.json` (gom bằng `gom-log.py` từ log do-api2).
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`

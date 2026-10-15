@@ -11,7 +11,7 @@
      Ngan hang: 421701 TOI, 421900 thu nhap lai thuan, 423200 lai thuan dich vu, 422900 chi phi du phong,
            88888 LN truoc du phong, 412100 cho vay KH, 412200 du phong cho vay (so am), 413300 tien gui KH
    LCTT theo quy o VN hay ghi LUY KE tu dau nam -> cot "4 quy gan nhat" khong tinh dong tien.
-   Cache theo phien (kn_pt_<ma>), CHI ghi khi tai duoc >= 2 nam BCTC (khong bao gio ghi ket qua rong). */
+   Cache theo phien (kn_pt2_<ma>; kn_pt_ la ban 15/10, tu xoa), CHI ghi khi tai duoc >= 2 nam BCTC (khong bao gio ghi ket qua rong). */
 (function(){
   'use strict';
   var MA = '11000,11100,11200,11300,11400,12700,13000,13100,13110,13340,14000,14110,14240,21001,22100,23100,22510,23110,23800,23003,23000,23001,21500,23300,32000,32100,33100,33600,421701,421900,423200,422900,88888,412100,412200,413300,22200';
@@ -50,23 +50,59 @@
     });
     return Object.keys(m).sort().map(function(k){ return m[k]; });
   }
+  /* Quy (dong 16/10/2026): them ~70 ma chi tiet de "soi" theo nganh — CTCK (moi gioi, margin, tu doanh, du phong),
+     ngan hang (NII, phi, FX, du phong, cho vay/tien gui, vay NHNN), DN thuong (CPBH, QLDN, tai chinh, nguoi mua tra truoc,
+     XDCB do dang). Loc fiscalDate = 10 cuoi quy gan nhat (API nhan danh sach) -> goi nho, khong keo ca lich su. */
+  var SAU = '21001,22100,23100,22110,22200,21500,22500,22510,22509,23300,21900,22900,23900,23800,23003,23000,23001,12700,14000,14240,11000,13100,13110,13340,11100,11200,11300,11400,13130,13199,12460,'
+    + '621110,700056,700044,700039,700046,700043,631243,610083,621160,610086,700053,700001,700072,700073,'
+    + '421701,421900,423200,423300,423400,423500,421600,421700,88888,422900,412100,412200,413300,411400,412300,413100,413200';
+  function cuoiQuy(n){
+    var out = [], now = new Date(), y = now.getFullYear(), q = Math.ceil((now.getMonth() + 1) / 3) - 1;
+    if (q < 1) { q = 4; y--; }
+    for (var i = 0; i < n; i++) { out.push(new Date(Date.UTC(y, q * 3, 0)).toISOString().slice(0, 10)); q--; if (q < 1) { q = 4; y--; } }
+    return out;
+  }
+  // Nhom so sanh: cung nganh (SEC_MAP), lay 30 ma von hoa lon nhat (CTCK: 45 vi nhieu ma "Dich vu tai chinh" khong phai CTCK)
+  function dsPeer(t){
+    var k = K(), sec = (k && k.SEC_MAP[t]) || ''; if (!sec) return null;
+    var ck = /Dịch vụ tài chính/.test(sec), nh = sec === 'Ngân hàng';
+    var rs = k.sum().rows.filter(function(r){ return k.SEC_MAP[r.t] === sec; }).sort(function(a, b){ return (b.cap || 0) - (a.cap || 0); });
+    var ma = rs.slice(0, ck ? 45 : 30).map(function(r){ return r.t; }); if (ma.indexOf(t) < 0) ma.push(t);
+    if (ma.length < 4) return null;
+    return { sec: sec, ma: ma, items: nh ? '421701,412100,413300,23000' : (ck ? '621110,700001,21001,23000' : '21001,23100,23000') };
+  }
+  function gomPeer(arr){
+    var m = {};
+    (arr || []).forEach(function(x){
+      var c = x.code, d = String(x.fiscalDate || '').slice(0, 10), v = so(x.numericValue); if (!c || v == null || !/^\d{4}-\d{2}-\d{2}$/.test(d)) return;
+      var a = m[c] || (m[c] = {}); var b = a[d] || (a[d] = {}); var ic = String(Math.round(+x.itemCode)); if (b[ic] == null) b[ic] = v;
+    });
+    return m;
+  }
   async function ptTai(t){
-    var u = function(r){ return K().KN_FF + 'financial_statements?q=code:' + t + '~reportType:' + r + '~itemCode:' + MA + '&sort=fiscalDate:desc&size=' + (r === 'ANNUAL' ? 350 : 400); };
-    var kq = await Promise.all([ K().jget(u('ANNUAL')), K().jget(u('QUARTER')).catch(function(){ return { data: [] }; }) ]);
+    var ff = K().KN_FF + 'financial_statements?q=code:', fd = cuoiQuy(10).join(',');
+    var uNam = ff + t + '~reportType:ANNUAL~itemCode:' + MA + '&sort=fiscalDate:desc&size=350';
+    var uQuy = ff + t + '~reportType:QUARTER~itemCode:' + SAU + '~fiscalDate:' + fd + '&size=1000';
+    var pr = dsPeer(t);
+    var uPeer = pr ? ff + pr.ma.join(',') + '~reportType:QUARTER~itemCode:' + pr.items + '~fiscalDate:' + fd + '&size=' + (pr.ma.length * pr.items.split(',').length * 10 + 50) : null;
+    var kq = await Promise.all([ K().jget(uNam), K().jget(uQuy).catch(function(){ return { data: [] }; }),
+      uPeer ? K().jget(uPeer).catch(function(){ return null; }) : Promise.resolve(null) ]);
     var nam = gom(kq[0] && kq[0].data);
     // Moi nam tai chinh mot dong (doi nien do -> giu ky moi nhat)
     var theoNam = {}; nam.forEach(function(o){ theoNam[o.y] = o; });
     nam = Object.keys(theoNam).sort().map(function(k){ return theoNam[k]; }).slice(-7);
-    return { nam: nam, quy: gom(kq[1] && kq[1].data).slice(-9) };
+    var peer = (pr && kq[2] && kq[2].data && kq[2].data.length) ? { sec: pr.sec, d: gomPeer(kq[2].data) } : null;
+    return { nam: nam, quy: gom(kq[1] && kq[1].data).slice(-10), peer: peer };
   }
   function ptLuu(t, khoa, raw){
     try {
-      var ds = []; try { ds = JSON.parse(localStorage.getItem('kn_pt__ds') || '[]'); } catch(e){}
+      try { var cu = JSON.parse(localStorage.getItem('kn_pt__ds') || 'null'); if (cu) { cu.forEach(function(x){ localStorage.removeItem('kn_pt_' + x); }); localStorage.removeItem('kn_pt__ds'); } } catch(e){}
+      var ds = []; try { ds = JSON.parse(localStorage.getItem('kn_pt2__ds') || '[]'); } catch(e){}
       ds = ds.filter(function(x){ return x !== t; }); ds.push(t);
-      while (ds.length > 20) { try { localStorage.removeItem('kn_pt_' + ds.shift()); } catch(e){} }
-      try { localStorage.setItem('kn_pt_' + t, JSON.stringify({ k: khoa, v: raw })); }
-      catch(e){ ds.forEach(function(x){ try { localStorage.removeItem('kn_pt_' + x); } catch(e2){} }); ds = []; }
-      localStorage.setItem('kn_pt__ds', JSON.stringify(ds));
+      while (ds.length > 20) { try { localStorage.removeItem('kn_pt2_' + ds.shift()); } catch(e){} }
+      try { localStorage.setItem('kn_pt2_' + t, JSON.stringify({ k: khoa, v: raw })); }
+      catch(e){ ds.forEach(function(x){ try { localStorage.removeItem('kn_pt2_' + x); } catch(e2){} }); ds = []; }
+      localStorage.setItem('kn_pt2__ds', JSON.stringify(ds));
     } catch(e){}
   }
 
@@ -284,6 +320,272 @@
     return { tot: tot, xau: xau };
   }
 
+  /* ---------- Soi BCTC: insight theo nganh (16/10/2026) ----------
+     Moi cau la mot phep so sanh tu so BCTC that: quy moi nhat vs cung ky, 4 quy vs 4 quy truoc, vs nhom niem yet cung nganh.
+     Cau truc "cau loi nhuan" (LNTT ky nay - ky truoc = tong thay doi tung mang) khop toi tung ty voi VCB/HPG/VND (do 16/10).
+     Khong doan nguyen nhan ngoai BCTC; thieu so thi bo cau do, khong dien. Ngan hang: nguon khong co no xau/CASA. */
+  var SODU = ['12700','14000','14240','11000','13100','13110','13340','11100','11200','11300','11400','13130','13199','12460','700001','412100','412200','413300','411400','412300','413100','413200'];
+  function kQ(o){ return o.y * 4 + o.q; }
+  function mapQ(Q){ var m = {}; Q.forEach(function(o){ m[kQ(o)] = o; }); return m; }
+  function lbQ(k){ var y = Math.floor((k - 1) / 4), q = k - y * 4; return 'Q' + q + '/' + String(y).slice(2); }
+  function fdQ(k){ var y = Math.floor((k - 1) / 4), q = k - y * 4; return new Date(Date.UTC(y, q * 3, 0)).toISOString().slice(0, 10); }
+  function g(c){ return function(o){ return V(o, c); }; }
+  function am(c){ return function(o){ var x = V(o, c); return x == null ? null : -x; }; }
+  function gop(){ var a = arguments; return function(o){ var s = null; for (var i = 0; i < a.length; i++){ var x = typeof a[i] === 'function' ? a[i](o) : V(o, a[i]); if (x != null) s = (s || 0) + x; } return s; }; }
+  function oTong(m, k){
+    var v = {};
+    for (var i = 0; i < 4; i++) { var o = m[k - i]; if (!o || V(o, '23800') == null) return null; Object.keys(o.v).forEach(function(c){ v[c] = (v[c] || 0) + o.v[c]; }); }
+    SODU.forEach(function(c){ if (m[k].v[c] != null) v[c] = m[k].v[c]; else delete v[c]; });
+    return { v: v };
+  }
+  function tyD(v){ return v == null ? '—' : (v > 0 ? '+' : (v < 0 ? '−' : '')) + ty(Math.abs(v)); }
+  function bien(a, b){                         // thay doi co dau ca khi ky truoc am
+    if (a == null || b == null) return '—';
+    if (b > 0) { var x = (a / b - 1) * 100; return dau(x, Math.abs(x) < 10 ? 1 : 0); }
+    if (b < 0 && a > 0) return 'từ lỗ sang lãi';
+    if (b < 0 && a < 0) return a > b ? 'lỗ ít hơn' : 'lỗ nhiều hơn';
+    return '—';
+  }
+  function diem(a, b, d){ return (a == null || b == null) ? '—' : (a - b > 0 ? '+' : (a - b < 0 ? '−' : '')) + f(Math.abs(a - b), d == null ? 1 : d) + ' điểm %'; }
+  function viTri(v, ds){ var x = ds.filter(function(z){ return z != null && isFinite(z); }); if (v == null || x.length < 5) return '';
+    if (x.every(function(z){ return v >= z; })) return 'cao nhất ' + x.length + ' quý';
+    if (x.every(function(z){ return v <= z; })) return 'thấp nhất ' + x.length + ' quý'; return ''; }
+  var CAU = {
+    dn: [['Lợi nhuận gộp', g('23100')], ['Chi phí bán hàng', am('22110')], ['Chi phí quản lý', am('22200')], ['Doanh thu tài chính', g('21500')],
+         ['Chi phí tài chính', am('22500')], ['Liên doanh, liên kết', g('23300')], ['Thu nhập khác ròng', g('23900')]],
+    ck: [['Môi giới (sau chi phí MG)', gop('621110', am('700056'))], ['Lãi cho vay margin', g('700044')], ['Tự doanh (lãi − lỗ FVTPL)', gop('700039', am('700046'))],
+         ['Lãi đầu tư giữ đến đáo hạn', g('700043')], ['Tư vấn, bảo lãnh, lưu ký, khác', gop('631243', '610083', '621160', '610086')],
+         ['Dự phòng (hoàn nhập +, trích −)', am('700053')], ['Chi phí lãi vay', am('22509')], ['Chi phí quản lý', am('22200')]],
+    nh: [['Thu nhập lãi thuần', g('421900')], ['Dịch vụ', g('423200')], ['Ngoại hối', g('423300')], ['Chứng khoán', gop('423400', '423500')],
+         ['Hoạt động khác', g('421600')], ['Góp vốn, mua cổ phần', g('421700')], ['Chi phí hoạt động', am('22200')], ['Chi phí dự phòng', am('422900')]]
+  };
+  function gon(x){ var s = x.ten.replace(/\s*\(.*\)\s*/, ''); return s.charAt(0).toLowerCase() + s.slice(1); }
+  function cauLN(loai, A, B){
+    if (!A || !B || !CAU[loai]) return null;
+    var pa = V(A, '23800'), pb = V(B, '23800'); if (pa == null || pb == null) return null;
+    var ds = CAU[loai].map(function(x){ var a = x[1](A), b = x[1](B); return { ten: x[0], a: a, b: b, d: (a == null && b == null) ? null : (a || 0) - (b || 0) }; })
+      .filter(function(x){ return x.d != null && (x.a || x.b); });
+    var con = (pa - pb) - ds.reduce(function(s, x){ return s + x.d; }, 0);
+    if (Math.abs(con) > Math.max(Math.abs(pa), Math.abs(pb), 1) * 0.01) ds.push({ ten: 'Khoản khác', a: null, b: null, d: con });
+    return { pa: pa, pb: pb, ds: ds };
+  }
+  /* Nhom cung nganh: quy "du" = so ma bao cao >= 80% so ma nhieu nhat (dau mua BCTC chi vai ma ra som -> khong tinh thi phan) */
+  function peerQ(peer, item){
+    if (!peer || !peer.d) return null;
+    var dem = {}, maxN = 0;
+    Object.keys(peer.d).forEach(function(c){ Object.keys(peer.d[c]).forEach(function(fd){ if (peer.d[c][fd][item] != null) dem[fd] = (dem[fd] || 0) + 1; }); });
+    Object.keys(dem).forEach(function(fd){ if (dem[fd] > maxN) maxN = dem[fd]; });
+    var du = Object.keys(dem).filter(function(fd){ return dem[fd] >= Math.max(3, maxN * 0.8); }).sort();
+    return { du: du, dem: dem };
+  }
+  function giaTri(peer, c, fd, item){ var a = peer.d[c] && peer.d[c][fd]; return a && a[item] != null ? a[item] : null; }
+  function ttmPeer(peer, c, k, item){ var s = 0; for (var i = 0; i < 4; i++){ var x = giaTri(peer, c, fdQ(k - i), item); if (x == null) return null; s += x; } return s; }
+  // Thi phan cua t trong nhom tai quy k: kieu 'q' (gia tri quy / so du) hoac 'ttm' (cong 4 quy)
+  function thiPhan(peer, t, k, item, kieu){
+    var ds = [];
+    Object.keys(peer.d).forEach(function(c){ var v = kieu === 'ttm' ? ttmPeer(peer, c, k, item) : giaTri(peer, c, fdQ(k), item); if (v != null && v > 0) ds.push({ c: c, v: v }); });
+    var tong = ds.reduce(function(s, x){ return s + x.v; }, 0), me = ds.filter(function(x){ return x.c === t; })[0];
+    if (!me || !tong || ds.length < 4) return null;
+    ds.sort(function(a, b){ return b.v - a.v; });
+    return { p: me.v / tong * 100, hang: ds.map(function(x){ return x.c; }).indexOf(t) + 1, n: ds.length, v: me.v, tong: tong, ds: ds };
+  }
+  function kDu(pq){ if (!pq || !pq.du.length) return null; var fd = pq.du[pq.du.length - 1]; return (+fd.slice(0, 4)) * 4 + Math.ceil(+fd.slice(5, 7) / 3); }
+
+  function ptSoi(t, raw, loai0){
+    var Q = raw.quy || []; if (Q.length < 5) return null;
+    var m = mapQ(Q), ks = Object.keys(m).map(Number).sort(function(a, b){ return a - b; });
+    var K = null; for (var i = ks.length - 1; i >= 0; i--) if (V(m[ks[i]], '23800') != null) { K = ks[i]; break; }
+    if (K == null) return null;
+    var ck = Q.some(function(o){ return V(o, '621110') != null || V(o, '700001') != null; });
+    var loai = loai0 === 'nh' ? 'nh' : (ck ? 'ck' : (Q.some(function(o){ return V(o, '23100') != null; }) ? 'dn' : null));
+    if (!loai) return null;
+    var L = m[K], P = m[K - 4], T = oTong(m, K), T0 = oTong(m, K - 4), peer = raw.peer;
+    var out = [], add = function(s, w, txt){ out.push({ s: s, w: w, t: txt }); };
+    var lb = lbQ(K), lbP = lbQ(K - 4);
+    // 1. Cau loi nhuan
+    var cq = cauLN(loai, L, P), ct = cauLN(loai, T, T0);
+    if (cq) {
+      var dd = cq.pa - cq.pb, ds = cq.ds.slice().sort(function(a, b){ return Math.abs(b.d) - Math.abs(a.d); });
+      var len = ds.filter(function(x){ return x.d > 0; }).slice(0, 2), xu = ds.filter(function(x){ return x.d < 0; }).slice(0, 2);
+      var chinh = ds[0] && Math.sign(ds[0].d) === Math.sign(dd) && Math.abs(ds[0].d) >= Math.abs(dd) * 0.6 ? ds[0] : null;
+      add(Math.sign(dd), 100, '<b>Lợi nhuận trước thuế ' + lb + ': ' + ty(cq.pa) + ' tỷ, ' + bien(cq.pa, cq.pb) + ' so với ' + lbP + ' (' + tyD(dd) + ' tỷ)'
+        + (chinh ? ', chủ yếu ' + (chinh.d > 0 ? 'nhờ' : 'do') + ' <u>' + gon(chinh) + '</u> (' + tyD(chinh.d) + ' tỷ)' : '') + '.</b>'
+        + (len.length ? ' Đẩy lên: ' + len.map(function(x){ return gon(x) + ' ' + tyD(x.d); }).join(', ') + '.' : '')
+        + (xu.length ? ' Kéo xuống: ' + xu.map(function(x){ return gon(x) + ' ' + tyD(x.d); }).join(', ') + '.' : ''));
+    }
+    // Khoan khong deu (thu nhap khac NH, DT tai chinh/thu nhap khac DN) gop > 30% phan tang LNTT -> canh bao
+    var batThuong = { nh: { 'Hoạt động khác': 'thu nhập hoạt động khác (chủ yếu thu hồi nợ đã xử lý, không đều theo quý)' },
+                      dn: { 'Doanh thu tài chính': 'doanh thu tài chính', 'Thu nhập khác ròng': 'thu nhập khác' } }[loai] || {};
+    [[cq, lb + ' so với ' + lbP, 0], [ct, '4 quý gần nhất', 1]].forEach(function(z){ var c = z[0]; if (!c) return; var dd2 = c.pa - c.pb; if (!(dd2 > 0)) return;
+      c.ds.forEach(function(x){ if (!batThuong[x.ten] || !(x.d > dd2 * 0.3) || !(x.d > 0)) return;
+        var dinh = null; if (z[2]) { for (var j = 0; j < 4; j++) { var oo = m[K - j], vv = CAU[loai].filter(function(c2){ return c2[0] === x.ten; })[0][1](oo); if (vv != null && (!dinh || vv > dinh.v)) dinh = { k: K - j, v: vv }; } }
+        add(-1, 93 - z[2], f(x.d / dd2 * 100, 0) + '% phần tăng LNTT ' + z[1] + ' (' + tyD(x.d) + ' tỷ) đến từ ' + batThuong[x.ten] + (dinh ? ' — riêng ' + lbQ(dinh.k) + ' ' + ty(dinh.v) + ' tỷ' : '') + '. Cần xem có lặp lại không.'); }); });
+    if (ct) add(Math.sign(ct.pa - ct.pb), 92, 'Cộng 4 quý đến ' + lb + ': LNTT ' + ty(ct.pa) + ' tỷ, ' + bien(ct.pa, ct.pb) + ' so với 4 quý trước đó'
+      + (T && T0 ? '; LNST công ty mẹ ' + ty(V(T, '23000')) + ' tỷ (' + bien(V(T, '23000'), V(T0, '23000')) + ')' : '') + '.');
+
+    if (loai === 'dn') {
+      var dt = V(L, '21001'), dt0 = V(P, '21001');
+      if (dt != null) add(Math.sign(n(tang(dt, dt0))), 88, 'Doanh thu ' + lb + ' ' + ty(dt) + ' tỷ (' + bien(dt, dt0) + ' cùng kỳ)' + (T && T0 ? '; 4 quý ' + bien(V(T, '21001'), V(T0, '21001')) : '') + '.');
+      var gmS = ks.map(function(k){ return chia(V(m[k], '23100'), V(m[k], '21001')); }).map(function(x){ return x == null ? null : x * 100; });
+      var gm = chia(V(L, '23100'), dt), gm0 = chia(V(P, '23100'), dt0);
+      if (gm != null && gm0 != null) { var vt = viTri(gm * 100, gmS);
+        if (Math.abs(gm - gm0) * 100 >= 1 || vt) add(Math.sign(gm - gm0), 80, 'Biên lợi nhuận gộp ' + ph(gm * 100) + ' (' + diem(gm * 100, gm0 * 100) + ' so với cùng kỳ' + (vt ? ', ' + vt : '') + ').'); }
+      var lk = V(L, '23300'), lk0 = V(P, '23300');
+      if (dt0 > 0 && dt < dt0 * 0.9 && lk > 0 && lk > Math.max(lk0 || 0, 0) * 3 && lk > Math.abs(V(L, '23800') || 0) * 0.1)
+        add(0, 87, 'Doanh thu giảm ' + bien(dt, dt0).replace('-', '') + ' trong khi lãi liên doanh, liên kết tăng từ ' + ty(lk0 || 0) + ' lên ' + ty(lk) + ' tỷ — dấu hiệu một công ty con có thể đã thôi hợp nhất (chuyển thành liên kết); so sánh cùng kỳ bị lệch cơ sở.');
+      var sg = chia(gop('22110', '22200')(L), dt), sg0 = chia(gop('22110', '22200')(P), dt0);
+      if (sg != null && sg0 != null && Math.abs(sg - sg0) * 100 >= 1) add(-Math.sign(sg - sg0), 60, 'Chi phí bán hàng + quản lý chiếm ' + ph(sg * 100) + ' doanh thu (cùng kỳ ' + ph(sg0 * 100) + ').');
+      var lv = V(L, '22510') || V(L, '22509'), lv0 = V(P, '22510') || V(P, '22509'), xd = V(L, '12460'), xd0 = V(P, '12460');
+      if (lv > 0 && lv0 > 0 && (lv / lv0 >= 1.5 || lv / lv0 <= 0.67) && lv > Math.abs(V(L, '23800') || 0) * 0.05) {
+        var tx = 'Chi phí lãi vay ' + lb + ' ' + ty(lv) + ' tỷ, ' + (lv > lv0 ? 'gấp ' + f(lv / lv0, 1) + ' lần' : 'giảm ' + f((1 - lv / lv0) * 100, 0) + '% so với') + ' cùng kỳ (' + ty(lv0) + ' tỷ).';
+        if (lv > lv0 && xd0 > 0 && xd != null && xd < xd0 * 0.6) tx += ' Cùng lúc xây dựng dở dang giảm từ ' + ty(xd0) + ' xuống ' + ty(xd) + ' tỷ — khớp với việc dự án đã đưa vào chạy: lãi vay thôi được vốn hóa, đi thẳng vào chi phí.';
+        add(lv > lv0 ? -1 : 1, 70, tx);
+      } else if (xd != null && xd0 != null && V(L, '12700') && Math.abs(xd - xd0) > V(L, '12700') * 0.02 && Math.abs(xd - xd0) > xd0 * 0.3)
+        add(0, 45, 'Xây dựng cơ bản dở dang ' + ty(xd) + ' tỷ (cùng kỳ ' + ty(xd0) + ') — ' + (xd > xd0 ? 'đang dồn vốn đầu tư, chưa tạo ra doanh thu.' : 'phần lớn đã chuyển thành tài sản hoạt động.'));
+      var vay = gop('13110', '13340'), tien = gop('11100', '11200');
+      var nd = (vay(L) || 0) - (tien(L) || 0), nd0 = (vay(P) || 0) - (tien(P) || 0), eq = V(L, '14000');
+      if (eq > 0 && P && Math.abs(nd - nd0) > eq * 0.1) add(nd > nd0 ? -1 : 1, 55, (nd >= 0 ? 'Nợ vay ròng ' + ty(nd) + ' tỷ' : 'Tiền ròng ' + ty(-nd) + ' tỷ') + ' cuối ' + lb + ' (cùng kỳ ' + (nd0 >= 0 ? 'nợ vay ròng ' + ty(nd0) : 'tiền ròng ' + ty(-nd0)) + ' tỷ)' + (nd > 0 ? ' = ' + lan(nd / eq) + ' lần vốn chủ' : '') + '.');
+      var gv = T && T0 ? tang(V(T, '22100'), V(T0, '22100')) : null, ht = tang(V(L, '11400'), V(P, '11400'));
+      if (ht != null && gv != null && ht - gv > 20 && V(L, '11400') > (V(L, '12700') || 0) * 0.08) add(-1, 65, 'Hàng tồn kho ' + ty(V(L, '11400')) + ' tỷ (' + dau(ht, 0) + ' YoY) tăng nhanh hơn giá vốn 4 quý (' + dau(gv, 0) + ').');
+      var dtT = T && T0 ? tang(V(T, '21001'), V(T0, '21001')) : null, pt = tang(V(L, '11300'), V(P, '11300'));
+      if (pt != null && dtT != null && pt - dtT > 25 && V(L, '11300') > (V(L, '12700') || 0) * 0.1) add(-1, 62, 'Phải thu ngắn hạn ' + ty(V(L, '11300')) + ' tỷ (' + dau(pt, 0) + ' YoY) trong khi doanh thu 4 quý ' + dau(dtT, 0) + ' — tiền chưa về theo doanh thu.');
+      var tt = V(L, '13130'), tt0 = V(P, '13130'), dtt = T ? V(T, '21001') : null;
+      if (tt != null && dtt > 0 && tt > dtt * 0.15) add(Math.sign(n(tang(tt, tt0))), 86, 'Người mua trả tiền trước ' + ty(tt) + ' tỷ (' + bien(tt, tt0) + ' YoY), bằng ' + f(tt / dtt, 1) + ' lần doanh thu 4 quý — tiền khách đã trả cho hàng/dự án chưa bàn giao, sẽ thành doanh thu các quý tới.');
+      var cth = V(L, '13199'), cth0 = V(P, '13199');
+      if (cth != null && dtt > 0 && cth > dtt * 0.05) add(Math.sign(n(tang(cth, cth0))), 50, 'Doanh thu chưa thực hiện ' + ty(cth) + ' tỷ (' + bien(cth, cth0) + ' YoY) — hợp đồng đã thu tiền, ghi nhận dần.');
+      if (T && V(T, '23800') > 0) { var ngoai = (V(T, '21500') || 0) + (V(T, '23300') || 0) + (V(T, '23900') || 0), tl = ngoai / V(T, '23800');
+        if (tl > 0.4) add(-1, 75, f(tl * 100, 0) + '% LNTT 4 quý đến từ doanh thu tài chính, liên doanh liên kết và thu nhập khác (' + ty(ngoai) + ' tỷ) — không phải từ bán hàng cốt lõi.'); }
+      var pq = peerQ(peer, '21001'), kc = kDu(pq);
+      if (kc) { var a = thiPhan(peer, t, kc, '21001', 'ttm'), b = thiPhan(peer, t, kc - 4, '21001', 'ttm');
+        if (a) { add(b ? Math.sign(a.p - b.p) : 0, 84, 'Doanh thu 4 quý đến ' + lbQ(kc) + ' chiếm <b>' + ph(a.p) + '</b> tổng ' + a.n + ' doanh nghiệp niêm yết cùng ngành' + (b ? ' (cùng kỳ ' + ph(b.p) + ', ' + diem(a.p, b.p) + ')' : '') + ' — đứng thứ ' + a.hang + '/' + a.n + '.');
+          var gs = a.ds.map(function(x){ return tang(x.v, ttmPeer(peer, x.c, kc - 4, '21001')); }), gMe = tang(a.v, ttmPeer(peer, t, kc - 4, '21001')), gMed = trungVi(gs);
+          if (gMe != null && gMed != null) add(Math.sign(gMe - gMed), 58, 'Tăng trưởng doanh thu 4 quý ' + dau(gMe, 0) + ' so với trung vị ngành ' + dau(gMed, 0) + '.');
+          var bg = a.ds.map(function(x){ var gp = ttmPeer(peer, x.c, kc, '23100'); return gp != null ? gp / x.v * 100 : null; }), me = ttmPeer(peer, t, kc, '23100');
+          if (me != null && trungVi(bg) != null) add(Math.sign(me / a.v * 100 - trungVi(bg)), 52, 'Biên gộp 4 quý ' + ph(me / a.v * 100) + ' so với trung vị ngành ' + ph(trungVi(bg)) + '.');
+          raw.__bangPeer = { ten: 'Doanh thu 4 quý', k: kc, a: a, b: b, item: '21001', kieu: 'ttm' };
+        } }
+    }
+
+    if (loai === 'ck') {
+      var mg = V(L, '621110'), mg0 = V(P, '621110'), pqm = peerQ(peer, '621110'), kcm = kDu(pqm);
+      if (mg != null) { var tx2 = 'Doanh thu môi giới ' + lb + ' ' + ty(mg) + ' tỷ (' + bien(mg, mg0) + ' cùng kỳ)' + (T && T0 ? ', 4 quý ' + bien(V(T, '621110'), V(T0, '621110')) : '') + '.';
+        var s2 = Math.sign(n(tang(mg, mg0)));
+        if (kcm) { var a2 = thiPhan(peer, t, kcm, '621110', 'q'), b2 = thiPhan(peer, t, kcm - 4, '621110', 'q');
+          if (a2) { tx2 += ' Thị phần doanh thu môi giới trong ' + a2.n + ' CTCK niêm yết: <b>' + ph(a2.p) + '</b> ' + lbQ(kcm) + (b2 ? ', cùng kỳ ' + ph(b2.p) + ' (' + diem(a2.p, b2.p) + ')' : '') + ' — đứng thứ ' + a2.hang + '.';
+            if (b2) s2 = Math.sign(a2.p - b2.p); raw.__bangPeer = { ten: 'Doanh thu môi giới quý', k: kcm, a: a2, b: b2, item: '621110', kieu: 'q' }; } }
+        add(s2, 96, tx2); }
+      var mr = V(L, '700001'), mr0 = V(P, '700001'), pqr = peerQ(peer, '700001'), kcr = kDu(pqr);
+      if (mr != null) { var tx3 = 'Dư nợ cho vay (margin) ' + ty(mr) + ' tỷ (' + bien(mr, mr0) + ' YoY)' + (V(L, '14000') ? ', bằng ' + lan(mr / V(L, '14000')) + ' lần vốn chủ' : '') + '.';
+        var s3 = Math.sign(n(tang(mr, mr0)));
+        if (kcr) { var a3 = thiPhan(peer, t, kcr, '700001', 'q'), b3 = thiPhan(peer, t, kcr - 4, '700001', 'q');
+          if (a3) { var gN = b3 ? tang(a3.tong, b3.tong) : null; tx3 += ' Thị phần margin ' + ph(a3.p) + ' ' + lbQ(kcr) + (b3 ? ' (cùng kỳ ' + ph(b3.p) + ')' : '') + (gN != null ? '; cả nhóm ' + dau(gN, 0) + ' YoY' : '') + '.'; if (b3) s3 = Math.sign(a3.p - b3.p); } }
+        add(s3, 90, tx3); }
+      var td = gop('700039', am('700046'))(L), td0 = gop('700039', am('700046'))(P);
+      if (td != null) add(Math.sign(td - (td0 || 0)), 72, 'Tự doanh (lãi − lỗ tài sản FVTPL) ' + tyD(td) + ' tỷ ' + lb + ' (cùng kỳ ' + tyD(td0) + ' tỷ)' + (V(L, '23800') > 0 ? ', bằng ' + f(td / V(L, '23800') * 100, 0) + '% LNTT' : '') + '.');
+      var cth2 = V(L, '700073'), pbt = V(L, '23800');
+      if (cth2 != null && pbt > 0 && cth2 / pbt > 0.2) add(-1, 74, f(cth2 / pbt * 100, 0) + '% LNTT ' + lb + ' (' + ty(cth2) + ' tỷ) là lãi <u>chưa thực hiện</u> — đánh giá lại danh mục, thị trường giảm là mất.');
+      var dp = V(L, '700053');
+      if (dp != null && pbt > 0 && Math.abs(dp) > pbt * 0.1) add(-1, 94, (dp < 0 ? '<b>Hoàn nhập dự phòng ' + ty(-dp) + ' tỷ = ' + f(-dp / pbt * 100, 0) + '% LNTT ' + lb + '</b> — khoản một lần, không lặp lại đều như doanh thu' : 'Trích dự phòng ' + ty(dp) + ' tỷ = ' + f(dp / pbt * 100, 0) + '% LNTT') + (V(P, '700053') != null ? ' (cùng kỳ ' + (V(P, '700053') < 0 ? 'hoàn nhập ' + ty(-V(P, '700053')) : 'trích ' + ty(V(P, '700053'))) + ' tỷ)' : '') + '.');
+      var dtk = V(L, '21001'), dtk0 = V(P, '21001');
+      if (dtk > 0 && dtk0 > 0 && mg != null && mg0 != null) {
+        var co = [['môi giới', '621110'], ['lãi margin', '700044'], ['lãi FVTPL', '700039']].map(function(x){ return x[0] + ' ' + ph(V(L, x[1]) / dtk * 100, 0) + ' (cùng kỳ ' + ph(V(P, x[1]) / dtk0 * 100, 0) + ')'; });
+        add(0, 50, 'Cơ cấu doanh thu ' + lb + ': ' + co.join(', ') + '.');
+      }
+      var lvm = V(L, '22509'), lm = V(L, '700044');
+      if (lvm > 0 && lm > 0) add(lm > lvm ? 1 : -1, 40, 'Lãi cho vay margin ' + ty(lm) + ' tỷ so với chi phí lãi vay ' + ty(lvm) + ' tỷ (' + f(lm / lvm, 2) + ' lần).');
+    }
+
+    if (loai === 'nh') {
+      var ln = V(L, '412100'), ln0 = V(P, '412100'), lnD = m[Math.floor((K - 1) / 4) * 4] ? V(m[Math.floor((K - 1) / 4) * 4], '412100') : null;
+      var pqn = peerQ(peer, '412100'), kcn = kDu(pqn), tx4 = 'Cho vay khách hàng ' + ty(ln) + ' tỷ: ' + (lnD ? dau(tang(ln, lnD), 1) + ' từ đầu năm, ' : '') + bien(ln, ln0) + ' YoY';
+      if (kcn) { var a4 = thiPhan(peer, t, kcn, '412100', 'q'), b4 = thiPhan(peer, t, kcn - 4, '412100', 'q');
+        if (a4) { var gs4 = trungVi(a4.ds.map(function(x){ return tang(x.v, giaTri(peer, x.c, fdQ(kcn - 4), '412100')); }));
+          tx4 += (gs4 != null ? ' (trung vị ' + a4.n + ' ngân hàng niêm yết ' + dau(gs4, 0) + ')' : '') + '. Thị phần tín dụng trong nhóm <b>' + ph(a4.p) + '</b>' + (b4 ? ', cùng kỳ ' + ph(b4.p) + ' (' + diem(a4.p, b4.p, 2) + ')' : '') + ' — đứng thứ ' + a4.hang;
+          raw.__bangPeer = { ten: 'Cho vay khách hàng', k: kcn, a: a4, b: b4, item: '412100', kieu: 'q' }; } }
+      if (ln != null) add(Math.sign(n(tang(ln, ln0))), 90, tx4 + '.');
+      var dep = V(L, '413300'), dep0 = V(P, '413300');
+      if (dep && dep0 && ln0) add(Math.sign(n(tang(dep, dep0)) - n(tang(ln, ln0))), 74, 'Tiền gửi khách hàng ' + bien(dep, dep0) + ' YoY ' + (tang(dep, dep0) < tang(ln, ln0) ? 'chậm hơn' : 'nhanh hơn') + ' cho vay → cho vay/tiền gửi ' + ph(ln / dep * 100, 0) + ' (cùng kỳ ' + ph(ln0 / dep0 * 100, 0) + ').');
+      var nn = V(L, '413100'), nn0 = V(P, '413100'), ta = V(L, '12700');
+      if (nn > 0 && nn0 > 0 && nn / nn0 > 1.5 && ta && nn > ta * 0.03) add(-1, 68, 'Nợ Chính phủ & NHNN ' + ty(nn) + ' tỷ, gấp ' + f(nn / nn0, 1) + ' lần cùng kỳ — nguồn vốn ngoài tiền gửi dân cư tăng mạnh.');
+      var ea = function(o){ return gop('412100', '411400', '412300')(o); };
+      var nim = (T && ea(L) && m[K - 4] && ea(m[K - 4])) ? V(T, '421900') / ((ea(L) + ea(m[K - 4])) / 2) * 100 : null;
+      var nim0 = (T0 && m[K - 4] && m[K - 8] && ea(m[K - 4]) && ea(m[K - 8])) ? V(T0, '421900') / ((ea(m[K - 4]) + ea(m[K - 8])) / 2) * 100 : null;
+      if (nim != null) add(nim0 != null ? Math.sign(nim - nim0) : 0, 86, 'Biên lãi thuần ước tính (thu nhập lãi thuần 4 quý ÷ cho vay + tiền gửi liên ngân hàng + chứng khoán đầu tư bình quân) <b>' + ph(nim, 2) + '</b>' + (nim0 != null ? ' (cùng kỳ ' + ph(nim0, 2) + ', ' + diem(nim, nim0, 2) + ')' : '') + '.');
+      var toi = V(L, '421701'), toi0 = V(P, '421701');
+      if (toi && toi0 && V(L, '421900') != null) { var ng1 = (1 - V(L, '421900') / toi) * 100, ng0 = (1 - V(P, '421900') / toi0) * 100;
+        add(0, 55, 'Thu nhập ngoài lãi chiếm ' + ph(ng1, 0) + ' TOI (cùng kỳ ' + ph(ng0, 0) + '); phí dịch vụ ' + bien(V(L, '423200'), V(P, '423200')) + ', ngoại hối ' + bien(V(L, '423300'), V(P, '423300')) + ' YoY.'); }
+      if (toi && toi0 && V(L, '22200') != null && V(P, '22200') != null) { var ci = V(L, '22200') / toi * 100, ci0 = V(P, '22200') / toi0 * 100;
+        if (Math.abs(ci - ci0) >= 2) add(-Math.sign(ci - ci0), 58, 'Chi phí hoạt động/TOI (CIR) ' + ph(ci, 0) + ' (cùng kỳ ' + ph(ci0, 0) + ').'); }
+      var dpr = V(L, '412200'), dpr0 = V(P, '412200');
+      if (dpr != null && dpr0 != null && ln && ln0) { var b1 = Math.abs(dpr) / ln * 100, b0 = Math.abs(dpr0) / ln0 * 100;
+        add(Math.sign(b1 - b0), 82, 'Quỹ dự phòng/dư nợ ' + ph(b1, 2) + ' (cùng kỳ ' + ph(b0, 2) + ')' + (b1 < b0 - 0.2 ? ' — bộ đệm mỏng đi, lợi nhuận đang được hỗ trợ bởi trích dự phòng ít hơn' : '') + '.'); }
+      if (T && T0 && ln && ln0 && m[K - 4]) { var cc = V(T, '422900') / ((ln + V(m[K - 4], '412100')) / 2) * 100, cc0 = (m[K - 8] && V(m[K - 8], '412100')) ? V(T0, '422900') / ((ln0 + V(m[K - 8], '412100')) / 2) * 100 : null;
+        if (isFinite(cc)) add(cc0 != null ? -Math.sign(cc - cc0) : 0, 64, 'Chi phí dự phòng 4 quý = ' + ph(cc, 2) + ' dư nợ bình quân' + (cc0 != null ? ' (cùng kỳ ' + ph(cc0, 2) + ')' : '') + '.'); }
+    }
+    out.sort(function(a, b){ return b.w - a.w; });
+    return { loai: loai, K: K, lb: lb, lbP: lbP, ds: out, cq: cq, ct: ct, m: m };
+  }
+  function n(x){ return x == null ? 0 : x; }
+
+  /* Bang quy chi tiet theo nganh — 8 quy gan nhat */
+  function bangQuy(s, raw, t){
+    var m = s.m, K = s.K, ks = []; for (var k = K - 7; k <= K; k++) if (m[k]) ks.push(k);
+    var peer = raw.peer, share = function(item){ return function(o, k){ var pq = peerQ(peer, item); if (!pq || pq.du.indexOf(fdQ(k)) < 0) return null; var a = thiPhan(peer, t, k, item, 'q'); return a ? a.p : null; }; };
+    var R;
+    if (s.loai === 'ck') R = [
+      ['Doanh thu môi giới', g('621110'), ty], ['Lãi cho vay margin', g('700044'), ty], ['Tự doanh ròng (lãi − lỗ FVTPL)', gop('700039', am('700046')), ty],
+      ['Lãi đầu tư giữ đến đáo hạn', g('700043'), ty], ['Dự phòng (+ trích, − hoàn nhập)', g('700053'), ty], ['Chi phí lãi vay', g('22509'), ty],
+      ['Lợi nhuận trước thuế', g('23800'), ty], ['  trong đó chưa thực hiện', g('700073'), ty], ['Dư nợ margin', g('700001'), ty],
+      ['Thị phần DT môi giới (%)', share('621110'), function(v){ return ph(v, 2); }], ['Thị phần margin (%)', share('700001'), function(v){ return ph(v, 2); }], ['Vốn chủ sở hữu', g('14000'), ty]];
+    else if (s.loai === 'nh') R = [
+      ['Tổng thu nhập hoạt động', g('421701'), ty], ['Thu nhập lãi thuần', g('421900'), ty], ['Dịch vụ', g('423200'), ty], ['Ngoại hối', g('423300'), ty],
+      ['Chi phí hoạt động', g('22200'), ty], ['Chi phí dự phòng', g('422900'), ty], ['Lợi nhuận trước thuế', g('23800'), ty],
+      ['Cho vay khách hàng', g('412100'), ty], ['Tiền gửi khách hàng', g('413300'), ty],
+      ['Cho vay/tiền gửi (%)', function(o){ return chia(V(o, '412100'), V(o, '413300')) == null ? null : V(o, '412100') / V(o, '413300') * 100; }, function(v){ return ph(v, 0); }],
+      ['Quỹ dự phòng/dư nợ (%)', function(o){ return (V(o, '412200') != null && V(o, '412100')) ? Math.abs(V(o, '412200')) / V(o, '412100') * 100 : null; }, function(v){ return ph(v, 2); }],
+      ['Nợ Chính phủ & NHNN', g('413100'), ty], ['Thị phần tín dụng (%)', share('412100'), function(v){ return ph(v, 2); }]];
+    else R = [
+      ['Doanh thu thuần', g('21001'), ty], ['Lợi nhuận gộp', g('23100'), ty],
+      ['Biên gộp (%)', function(o){ return chia(V(o, '23100'), V(o, '21001')) == null ? null : V(o, '23100') / V(o, '21001') * 100; }, ph],
+      ['CP bán hàng + quản lý/DT (%)', function(o){ var x = gop('22110', '22200')(o); return (x != null && V(o, '21001')) ? x / V(o, '21001') * 100 : null; }, ph],
+      ['Doanh thu tài chính', g('21500'), ty], ['Chi phí lãi vay', function(o){ return V(o, '22510') != null ? V(o, '22510') : V(o, '22509'); }, ty],
+      ['Lợi nhuận trước thuế', g('23800'), ty], ['LNST công ty mẹ', g('23000'), ty],
+      ['Hàng tồn kho', g('11400'), ty], ['Phải thu ngắn hạn', g('11300'), ty], ['Người mua trả tiền trước', g('13130'), ty],
+      ['Xây dựng dở dang', g('12460'), ty], ['Nợ vay', gop('13110', '13340'), ty]];
+    var h = '<tr><th></th>' + ks.map(function(k){ return '<th>' + lbQ(k) + '</th>'; }).join('') + '</tr>';
+    R.forEach(function(r){ var vs = ks.map(function(k){ return r[1](m[k], k); }); if (!vs.some(function(v){ return v != null && v !== 0; })) return;
+      h += '<tr><td>' + r[0] + '</td>' + vs.map(function(v){ return '<td>' + r[2](v) + '</td>'; }).join('') + '</tr>'; });
+    return '<table class="ptt">' + h + '</table>';
+  }
+  function bangPeer(t, bp){
+    if (!bp || !bp.a) return '';
+    var a = bp.a, cu = {}; if (bp.b) bp.b.ds.forEach(function(x){ cu[x.c] = x.v / bp.b.tong * 100; });
+    var ds = a.ds.slice(0, 8); if (ds.map(function(x){ return x.c; }).indexOf(t) < 0) ds.push(a.ds[a.hang - 1]);
+    var h = '<tr><th>Mã</th><th>' + esc(bp.ten) + ' (tỷ)</th><th>Thị phần</th><th>so cùng kỳ</th></tr>';
+    ds.forEach(function(x){ var p = x.v / a.tong * 100, p0 = cu[x.c];
+      h += '<tr' + (x.c === t ? ' class="me"' : '') + '><td><span class="pl" data-t="' + esc(x.c) + '">' + esc(x.c) + '</span></td><td>' + ty(x.v) + '</td><td>' + ph(p, 1) + '</td><td class="' + mau(p0 == null ? null : p - p0) + '">' + (p0 == null ? '—' : diem(p, p0).replace(' điểm %', '')) + '</td></tr>'; });
+    return '<div class="ptb"><h4>Thị phần trong nhóm niêm yết cùng ngành · ' + lbQ(bp.k) + (bp.kieu === 'ttm' ? ' (4 quý)' : '') + '</h4><table class="ptn ptpeer">' + h + '</table>'
+      + '<div class="mini" style="margin-top:6px">' + a.n + ' mã có số liệu; thị phần tính trong nhóm này, không phải toàn thị trường.</div></div>';
+  }
+  function bangCau(cq, ten){
+    if (!cq) return '';
+    var mx = Math.max.apply(null, cq.ds.map(function(x){ return Math.abs(x.d); }).concat([1]));
+    var h = cq.ds.slice().sort(function(a, b){ return Math.abs(b.d) - Math.abs(a.d); }).map(function(x){
+      var w = Math.round(Math.abs(x.d) / mx * 100);
+      return '<tr><td>' + x.ten + '</td><td class="' + mau(x.d) + '" style="white-space:nowrap">' + tyD(x.d) + '</td><td style="width:42%"><div class="bar ' + (x.d >= 0 ? 'up' : 'dn') + '" style="width:' + w + '%"></div></td></tr>'; }).join('');
+    return '<div class="ptb"><h4>' + ten + '</h4><div class="mini" style="margin-bottom:6px">LNTT ' + ty(cq.pb) + ' → <b>' + ty(cq.pa) + '</b> tỷ (' + tyD(cq.pa - cq.pb) + ')</div><table class="ptn ptcau">' + h + '</table></div>';
+  }
+  function soiHtml(t, raw, d){
+    var s = null; try { s = ptSoi(t, raw, d.loai); } catch(e){ console.warn('ptSoi', e); }
+    if (!s || !s.ds.length) return '';
+    var dot = function(x){ return '<span class="sd ' + (x > 0 ? 'up' : (x < 0 ? 'dn' : 'fl')) + '"></span>'; };
+    var h = '<div class="soi"><h3>Soi BCTC ' + s.lb + ' — ' + (s.loai === 'ck' ? 'công ty chứng khoán' : (s.loai === 'nh' ? 'ngân hàng' : 'doanh nghiệp')) + '</h3><ul class="sl">'
+      + s.ds.slice(0, 11).map(function(x){ return '<li>' + dot(x.s) + '<span>' + x.t + '</span></li>'; }).join('') + '</ul></div>';
+    h += '<div class="pt3">' + bangCau(s.cq, 'Lợi nhuận đến từ đâu · ' + s.lb + ' so với ' + s.lbP) + bangCau(s.ct, 'Cộng 4 quý đến ' + s.lb + ' so với 4 quý trước') + bangPeer(t, raw.__bangPeer) + '</div>';
+    h += '<div style="overflow-x:auto;margin-bottom:12px">' + bangQuy(s, raw, t) + '</div>';
+    return h;
+  }
+
   /* ---------- Ve ---------- */
   function css(){
     if (document.getElementById('ptCss')) return;
@@ -300,7 +602,7 @@
       + '#ptcs .pm.tot{background:var(--green-soft);color:var(--green-dark)}#ptcs .pm.tb{background:var(--amber-soft);color:#B45309}'
       + '#ptcs .pm.yeu{background:var(--red-soft);color:var(--red)}#ptcs .pm.na{background:#eef0f3;color:#6b7280}'
       + '#ptcs .pt3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}@media (max-width:900px){#ptcs .pt3{grid-template-columns:1fr}}'
-      + '#ptcs .ptb{border:1px solid var(--border);border-radius:10px;padding:10px 12px;min-width:0}'
+      + '#ptcs .ptb{border:1px solid var(--border);border-radius:10px;padding:10px 12px;min-width:0;overflow-x:auto}'
       + '#ptcs .ptb h4{margin:0 0 6px;font-size:13px}#ptcs .ptb ul{margin:0;padding-left:18px;font-size:12.5px;line-height:1.55}'
       + '#ptcs .ptb li.ok::marker{color:var(--green)}#ptcs .ptb li.no::marker{color:var(--red)}#ptcs .ptb li.na{color:var(--muted)}'
       + '#ptcs .fs{font-size:22px;font-weight:800}#ptcs .fs small{font-size:13px;color:var(--muted);font-weight:600}'
@@ -310,6 +612,13 @@
       + '#ptcs table.ptt td.g{font-size:11px}#ptcs table.ptt .ttm{background:#f6f9ff}'
       + '#ptcs table.ptn{width:100%;border-collapse:collapse;font-size:12.5px}#ptcs table.ptn td{padding:4px 4px;border-bottom:1px solid var(--border)}#ptcs table.ptn td+td{text-align:right}'
       + '#ptcs .pl{cursor:pointer;color:var(--blue);font-weight:700}'
+      + '#ptcs .soi{border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:10px;padding:10px 14px 6px;margin-bottom:12px;background:#fbfcff}'
+      + '#ptcs h3{margin:0 0 8px;font-size:14px}#ptcs .pth3{margin:4px 0 8px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}'
+      + '#ptcs ul.sl{list-style:none;margin:0;padding:0}#ptcs ul.sl li{display:flex;gap:9px;align-items:flex-start;font-size:13px;line-height:1.55;padding:5px 0;border-top:1px dashed var(--border)}#ptcs ul.sl li:first-child{border-top:0}'
+      + '#ptcs .sd{flex:none;width:9px;height:9px;border-radius:50%;margin-top:6px}#ptcs .sd.up{background:var(--green)}#ptcs .sd.dn{background:var(--red)}#ptcs .sd.fl{background:#9aa3ae}'
+      + '#ptcs .bar{height:9px;border-radius:3px;min-width:2px}#ptcs .bar.up{background:var(--green)}#ptcs .bar.dn{background:var(--red);margin-left:auto}'
+      + '#ptcs table.ptcau td{padding:4px 4px}#ptcs table.ptpeer td,#ptcs table.ptpeer th{text-align:right;padding:4px}#ptcs table.ptpeer td:first-child,#ptcs table.ptpeer th:first-child{text-align:left}'
+      + '#ptcs table.ptpeer th{font-size:11px;color:var(--muted);font-weight:600}#ptcs tr.me td{background:#fff8e6;font-weight:700}'
       + '.kn-app #ptcs{border:0;border-radius:15px;padding:14px 16px;margin:0 14px 12px;box-shadow:var(--ksh)}';
     document.head.appendChild(st);
   }
@@ -379,7 +688,7 @@
     });
     return '<table class="ptt">' + h + '</table>';
   }
-  function ptVe(t, d){
+  function ptVe(t, d, raw){
     var el = hop(); if (!el) return;
     var C = d.cols, L = C[C.length - 1], r = hang(t) || {};
     var cham = ptCham(t, d), fsc = d.loai === 'dn' ? ptFscore(C) : null, co = ptCo(d), ng = ptNganh(t), ls = ptLichSuDinhGia(t);
@@ -387,7 +696,8 @@
     var h = '<div class="pth"><b>Phân tích cơ bản chuyên sâu</b><span class="mini">' + esc(t) + ' · BCTC năm FY' + C[Math.max(0, C.length - 5)].lb + '–FY' + L.lb
       + (d.ttm ? ' + 4 quý đến Q' + d.ttm.o.q + '/' + d.ttm.o.y : '') + ' · nguồn VNDirect'
       + (d.loai === 'nh' ? ' · mô hình ngân hàng' : (d.loai === 'khac' ? ' · mô hình CTCK/bảo hiểm' : '')) + '</span></div>';
-    h += '<div class="ptp">' + cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC;
+    if (raw) h += soiHtml(t, raw, d);
+    h += '<h3 class="pth3">Chấm điểm 5 năm</h3><div class="ptp">' + cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC;
       return '<div class="ptc"><div class="pk"><span>' + x.ten + '</span><span class="pm ' + x.m + '">' + nh[x.m] + '</span></div><div class="py">' + x.y + '</div></div>'; }).join('') + '</div>';
     // Hang 2: F-score / diem manh-yeu / dinh gia & nganh
     var b1;
@@ -450,7 +760,7 @@
     var el = hop(); if (!el) return;
     if (!hang(t)) { el.style.display = 'none'; el.innerHTML = ''; return; }
     var k = K(), khoa = k ? k.knKhoaPhien(k.KN_MOC_SEC) : null;
-    var raw = khoa ? k.knDocCache('kn_pt_' + t, khoa) : null;
+    var raw = khoa ? k.knDocCache('kn_pt2_' + t, khoa) : null;
     if (!raw) {
       ptBao(t, 'Đang tải BCTC 5 năm… <span class="spin"></span>');
       var viec = ptTai(t); ptCho = viec;
@@ -463,7 +773,7 @@
       }
       if (khoa) ptLuu(t, khoa, raw);
     }
-    try { ptVe(t, ptTinh(raw, t)); window.__ptLast = { t: t, raw: raw }; }
+    try { ptVe(t, ptTinh(raw, t), raw); window.__ptLast = { t: t, raw: raw }; }
     catch(e){ console.warn('phantich', e); ptBao(t, 'Lỗi tính chỉ số: ' + esc(e.message)); }
   }
   window.__knPhanTich = ptMo;
@@ -476,7 +786,7 @@
       if (curT !== ptFor) { ptMo(curT); return; }
       hop();
       // Chi so quy (P/E lich su) ve sau BCTC nam -> ve lai mot lan cho o Dinh gia
-      if (ptDaVe === curT && !ptCoRts && ptLichSuDinhGia(curT) && window.__ptLast && window.__ptLast.t === curT) ptVe(curT, ptTinh(window.__ptLast.raw, curT));
+      if (ptDaVe === curT && !ptCoRts && ptLichSuDinhGia(curT) && window.__ptLast && window.__ptLast.t === curT) ptVe(curT, ptTinh(window.__ptLast.raw, curT), window.__ptLast.raw);
     } catch(e){}
   }, 700);
 })();
