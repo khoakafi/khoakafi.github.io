@@ -224,7 +224,7 @@ Số thật cho test Soi BCTC: scratchpad `fake/store.json` (gom bằng `gom-log
 
 **Kết luận MUA: CÓ / KHÔNG theo giá hôm nay (16/10/2026, mô hình ĐÃ KIỂM ĐỊNH — anh Khoa: "Yes/No, không nước đôi", "backtest mô hình").**
 Thay quy tắc 5 điều kiện cũ (`ptKetLuan`: LN cốt lõi, nền tảng, thị phần, định giá, ≥ 2 báo cáo CTCK dư địa ≥ 15%) — backtest cho thấy
-nó **thất bại** (giai đoạn kiểm tra 2021–: −0,9%/6 tháng so với thị trường). Nghiên cứu: kafi-core `research/co-ban/` (`KET-QUA.md`,
+nó **thất bại** (giai đoạn kiểm tra 2021–: −0,6%/6 tháng so với thị trường, t −0,3). Nghiên cứu: kafi-core `research/co-ban/` (`KET-QUA.md`,
 `GIA-THUYET.md` đăng ký trước, `chot.mjs`, `kiem-chot.mjs`); dữ liệu nhánh `co-ban-data` (workflow `co-ban-data.yml`, mặc định chỉ tải bổ sung mã thiếu; `tai_lai=1` tải lại ~60 phút): 1.628 mã gồm mã
 đã hủy niêm yết, BCTC quý point-in-time theo `createdDate` VNDirect, giá gốc + điều chỉnh cuối tháng 2012–nay, báo cáo CTCK Simplize (từ 2022).
 - **CÓ** = P/E < 15 & PEG ≤ 1 & LNST mẹ quý gần nhất ≥ cùng kỳ & giá ≥ 80% đỉnh 12 tháng (giá cuối tháng, điều chỉnh) & không "chu kỳ ở đỉnh"
