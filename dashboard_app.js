@@ -2958,6 +2958,8 @@ async function loadDetail(t){
     toast('Lỗi tải dữ liệu '+t+': '+e.message);
   }
 }
+/* phantich.js (khoi "Phan tich co ban chuyen sau", file rieng ngoai IIFE nay) doc trang thai tab Chi tiet ma qua day. Chi doc. */
+window.__knCt = { ma: () => curT, jget, KN_FF, byT, sum: () => SUM, SEC_MAP, kho: () => knDtKho, knKhoaPhien, knDocCache, KN_MOC_SEC, fmt, cls };
 // ===== B★: nang cap hien thi diem mua dat chuan nen co hep + thi truong thuan (display-only) =====
 let __ixSD=null, __ixSI=null;
 (async()=>{ try{ const to2=NOW()+86400; __ixSD=await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=VNINDEX&resolution=D&from=${to2-86400*5100}&to=${to2}`); __ixSI={}; __ixSD.t.forEach((ts,k2)=>__ixSI[ts]=k2); }catch(e){} })();
