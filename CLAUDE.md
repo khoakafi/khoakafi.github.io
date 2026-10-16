@@ -222,7 +222,14 @@ Ngân hàng (101–103): 421900 NII, 423200 phí, 423300 FX, 423400/423500 CK, 4
 Thị phần môi giới = thị phần **doanh thu** môi giới trong CTCK niêm yết (không phải thị phần giá trị giao dịch HOSE).
 Số thật cho test Soi BCTC: scratchpad `fake/store.json` (gom bằng `gom-log.py` từ log do-api2).
 
-**Kết luận MUA: CÓ / KHÔNG theo giá hôm nay (16/10/2026, mô hình ĐÃ KIỂM ĐỊNH — anh Khoa: "Yes/No, không nước đôi", "backtest mô hình").**
+**Khuyến nghị 3 mức TIÊU CỰC / KHẢ QUAN / TÍCH CỰC (16/10/2026 chiều, anh Khoa đổi từ CÓ/KHÔNG; "key tăng trưởng").** `phanLoai` trả
+`tc` | `dat` | `sap` | `thap` | `kq` → `muc3`: TÍCH CỰC = quy tắc CÓ bên dưới; TIÊU CỰC = đắt thật (`dat`) hoặc LNST quý gần nhất sụt ≥ 30% / lỗ
+(`sap`, `h0 = -1`); KHẢ QUAN = còn lại (`thap` = P/E cao vì LN thấp). kafi-core `research/co-ban/ba-muc.mjs` (4 ứng viên ghi trước, chọn C — xem
+KET-QUA.md mục 4b): 6 tháng TÍCH CỰC +5,7% > KHẢ QUAN +0,9% (t 2,8) > TIÊU CỰC −3,3% (t −5,3), thứ tự đúng cả 2014–20 và 2021–; TIÊU CỰC âm 12/12 năm.
+**Tăng trưởng một mình chưa đủ:** LN không giảm 2 quý liền chỉ +1,1% (2021– ≈ 0); lợi thế khi tăng trưởng đi cùng giá hợp lý. Web khớp backtest
+250/250 mã tháng 10/2026 (35 / 147 / 68). Ngoài vũ trụ thanh khoản: không bao giờ TÍCH CỰC.
+
+**Kết luận MUA: CÓ / KHÔNG theo giá hôm nay (16/10/2026, mô hình ĐÃ KIỂM ĐỊNH — anh Khoa: "Yes/No, không nước đôi", "backtest mô hình"; nay = mức TÍCH CỰC).**
 Thay quy tắc 5 điều kiện cũ (`ptKetLuan`: LN cốt lõi, nền tảng, thị phần, định giá, ≥ 2 báo cáo CTCK dư địa ≥ 15%) — backtest cho thấy
 nó **thất bại** (giai đoạn kiểm tra 2021–: −0,6%/6 tháng so với thị trường, t −0,3). Nghiên cứu: kafi-core `research/co-ban/` (`KET-QUA.md`,
 `GIA-THUYET.md` đăng ký trước, `chot.mjs`, `kiem-chot.mjs`); dữ liệu nhánh `co-ban-data` (workflow `co-ban-data.yml`, mặc định chỉ tải bổ sung mã thiếu; `tai_lai=1` tải lại ~60 phút): 1.628 mã gồm mã
