@@ -234,6 +234,11 @@ KET-QUA.md mục 4b): 6 tháng TÍCH CỰC +5,7% > KHẢ QUAN +0,9% (t 2,8) > TI
 "Soi BCTC" mở đầu bằng bảng 2 quý (`bang2Quy`), hai cột Điểm sáng / Điểm tối (từ `s.ds` + `tt.them`) và khung Nhận định (`tt.nd`: chất lượng tăng
 trưởng, nguồn ngoài cốt lõi lớn nhất, gợi ý hợp nhất/thoái vốn, dự phòng NH, tự doanh CTCK). LN cốt lõi (`loiQuy`): DN = LN gộp − CPBH − QLDN; NH = 88888;
 CTCK = môi giới ròng + margin + HTM − lãi vay − QL. Nhãn tăng trưởng chỉ **mô tả**, không đổi khuyến nghị.
+**Giao diện dạng số liệu (16/10 tối, anh Khoa: "nhìn toàn chữ", thích kiểu thẻ trắng + pill + bảng như phần Chấm điểm 5 năm).** Khối khuyến nghị:
+thang 3 mức (`thang3`, số lịch sử 6 tháng mỗi mức), 2 ô "Tăng trưởng 2 quý" / "12 tháng qua" (`diemNhan` trả số), 5 ô điều kiện có thanh đo (`thanhDo`, `oDieuKien`),
+thang giá (`thangGia`: vùng TÍCH CỰC + mức thành "đắt thật" = max(P/E 25 hoặc 20 & PEG 2,5, P/E chuẩn hóa 25) — LN quý sụt thì không vẽ), ô số kiểm định
+(`KD3`, `KD3P`, Toàn cảnh `TT3` — cùng số với bản chữ cũ), cột lịch sử trên chính mã (cao = Tích cực; màu đỏ/xanh không phân biệt được với người mù màu nên
+chiều cao + chữ là kênh chính). Màu KHẢ QUAN = xám trung tính #64748B. Ảnh test: `dg-test.js` (`FULL=1` chụp cả khối, ẩn thanh menu/footer khi chụp).
 
 **Kết luận MUA: CÓ / KHÔNG theo giá hôm nay (16/10/2026, mô hình ĐÃ KIỂM ĐỊNH — anh Khoa: "Yes/No, không nước đôi", "backtest mô hình"; nay = mức TÍCH CỰC).**
 Thay quy tắc 5 điều kiện cũ (`ptKetLuan`: LN cốt lõi, nền tảng, thị phần, định giá, ≥ 2 báo cáo CTCK dư địa ≥ 15%) — backtest cho thấy
