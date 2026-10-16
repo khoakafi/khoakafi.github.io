@@ -535,11 +535,15 @@
         add(0, 55, 'Thu nhập ngoài lãi chiếm ' + ph(ng1, 0) + ' TOI (cùng kỳ ' + ph(ng0, 0) + '); phí dịch vụ ' + bien(V(L, '423200'), V(P, '423200')) + ', ngoại hối ' + bien(V(L, '423300'), V(P, '423300')) + ' YoY.'); }
       if (toi && toi0 && V(L, '22200') != null && V(P, '22200') != null) { var ci = V(L, '22200') / toi * 100, ci0 = V(P, '22200') / toi0 * 100;
         if (Math.abs(ci - ci0) >= 2) add(-Math.sign(ci - ci0), 58, 'Chi phí hoạt động/TOI (CIR) ' + ph(ci, 0) + ' (cùng kỳ ' + ph(ci0, 0) + ').'); }
-      var dpr = V(L, '412200'), dpr0 = V(P, '412200');
-      if (dpr != null && dpr0 != null && ln && ln0) { var b1 = Math.abs(dpr) / ln * 100, b0 = Math.abs(dpr0) / ln0 * 100;
-        add(Math.sign(b1 - b0), 82, 'Quỹ dự phòng/dư nợ ' + ph(b1, 2) + ' (cùng kỳ ' + ph(b0, 2) + ')' + (b1 < b0 - 0.2 ? ' — bộ đệm mỏng đi, lợi nhuận đang được hỗ trợ bởi trích dự phòng ít hơn' : '') + '.'); }
-      if (T && T0 && ln && ln0 && m[K - 4]) { var cc = V(T, '422900') / ((ln + V(m[K - 4], '412100')) / 2) * 100, cc0 = (m[K - 8] && V(m[K - 8], '412100')) ? V(T0, '422900') / ((ln0 + V(m[K - 8], '412100')) / 2) * 100 : null;
+      var cc = null, cc0 = null;
+      if (T && T0 && ln && ln0 && m[K - 4]) { cc = V(T, '422900') / ((ln + V(m[K - 4], '412100')) / 2) * 100; cc0 = (m[K - 8] && V(m[K - 8], '412100')) ? V(T0, '422900') / ((ln0 + V(m[K - 8], '412100')) / 2) * 100 : null;
         if (isFinite(cc)) add(cc0 != null ? -Math.sign(cc - cc0) : 0, 64, 'Chi phí dự phòng 4 quý = ' + ph(cc, 2) + ' dư nợ bình quân' + (cc0 != null ? ' (cùng kỳ ' + ph(cc0, 2) + ')' : '') + '.'); }
+      var dpr = V(L, '412200'), dpr0 = V(P, '412200');
+      if (dpr != null && dpr0 != null && ln && ln0) { var b1 = Math.abs(dpr) / ln * 100, b0 = Math.abs(dpr0) / ln0 * 100, ghiDp = '';
+        // quy du phong mong di: do da dung xu ly no (quy giam tuyet doi) hay tang cham hon du no; "nho trich it hon" chi khi chi phi du phong 4 quy giam that
+        if (b1 < b0 - 0.2) ghiDp = ' — bộ đệm mỏng đi' + (Math.abs(dpr) < Math.abs(dpr0) ? ' (quỹ dự phòng ' + bien(Math.abs(dpr), Math.abs(dpr0)) + ' YoY: đã dùng xử lý nợ nhiều hơn mức trích thêm)' : ' (quỹ dự phòng tăng chậm hơn dư nợ)')
+          + ((cc != null && cc0 != null && isFinite(cc) && isFinite(cc0) && cc < cc0) ? ', lợi nhuận đang được hỗ trợ bởi trích dự phòng ít hơn' : '');
+        add(Math.sign(b1 - b0), 82, 'Quỹ dự phòng/dư nợ ' + ph(b1, 2) + ' (cùng kỳ ' + ph(b0, 2) + ')' + ghiDp + '.'); }
     }
     out.sort(function(a, b){ return b.w - a.w; });
     // Cho ket luan: tang truong LNTT 4 quy "loi" (bo phan thay doi cua khoan khong deu), co do, thi phan
