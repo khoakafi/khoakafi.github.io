@@ -228,6 +228,12 @@ Số thật cho test Soi BCTC: scratchpad `fake/store.json` (gom bằng `gom-log
 KET-QUA.md mục 4b): 6 tháng TÍCH CỰC +5,7% > KHẢ QUAN +0,9% (t 2,8) > TIÊU CỰC −3,3% (t −5,3), thứ tự đúng cả 2014–20 và 2021–; TIÊU CỰC âm 12/12 năm.
 **Tăng trưởng một mình chưa đủ:** LN không giảm 2 quý liền chỉ +1,1% (2021– ≈ 0); lợi thế khi tăng trưởng đi cùng giá hợp lý. Web khớp backtest
 250/250 mã tháng 10/2026 (35 / 147 / 68). Ngoài vũ trụ thanh khoản: không bao giờ TÍCH CỰC.
+**Điểm sáng / điểm tối 2 quý gần nhất + kết luận tăng trưởng (16/10 tối).** `tangTruong(sv)` (sv = `ptSoi`) → `raw.__tt`, tính **trước** khi vẽ
+`#ptDgO` để dòng "Tăng trưởng 2 quý gần nhất" nằm dưới khuyến nghị. Nhãn theo LNST mẹ 2 quý so cùng kỳ (`h0`/`h1` như backtest): LỢI NHUẬN SỤT MẠNH
+(= `laSap`) · SUY GIẢM · TĂNG TRƯỞNG MẠNH (cả 2 quý ≥ +20% & doanh thu không giảm) · ĐANG TĂNG TRƯỞNG · CHỮNG LẠI · CHƯA ĐỦ SỐ; nhịp tăng tốc/chậm lại ±10 điểm %.
+"Soi BCTC" mở đầu bằng bảng 2 quý (`bang2Quy`), hai cột Điểm sáng / Điểm tối (từ `s.ds` + `tt.them`) và khung Nhận định (`tt.nd`: chất lượng tăng
+trưởng, nguồn ngoài cốt lõi lớn nhất, gợi ý hợp nhất/thoái vốn, dự phòng NH, tự doanh CTCK). LN cốt lõi (`loiQuy`): DN = LN gộp − CPBH − QLDN; NH = 88888;
+CTCK = môi giới ròng + margin + HTM − lãi vay − QL. Nhãn tăng trưởng chỉ **mô tả**, không đổi khuyến nghị.
 
 **Kết luận MUA: CÓ / KHÔNG theo giá hôm nay (16/10/2026, mô hình ĐÃ KIỂM ĐỊNH — anh Khoa: "Yes/No, không nước đôi", "backtest mô hình"; nay = mức TÍCH CỰC).**
 Thay quy tắc 5 điều kiện cũ (`ptKetLuan`: LN cốt lõi, nền tảng, thị phần, định giá, ≥ 2 báo cáo CTCK dư địa ≥ 15%) — backtest cho thấy

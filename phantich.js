@@ -444,7 +444,7 @@
 
     if (loai === 'dn') {
       var dt = V(L, '21001'), dt0 = V(P, '21001');
-      if (dt != null) add(Math.sign(n(tang(dt, dt0))), 88, 'Doanh thu ' + lb + ' ' + ty(dt) + ' tỷ (' + bien(dt, dt0) + ' cùng kỳ)' + (T && T0 ? '; 4 quý ' + bien(V(T, '21001'), V(T0, '21001')) : '') + '.');
+      if (dt != null && T && T0) add(Math.sign(n(tang(V(T, '21001'), V(T0, '21001')))), 84, 'Doanh thu cộng 4 quý đến ' + lb + ' ' + ty(V(T, '21001')) + ' tỷ (' + bien(V(T, '21001'), V(T0, '21001')) + ' so với 4 quý trước).');
       var gmS = ks.map(function(k){ return chia(V(m[k], '23100'), V(m[k], '21001')); }).map(function(x){ return x == null ? null : x * 100; });
       var gm = chia(V(L, '23100'), dt), gm0 = chia(V(P, '23100'), dt0);
       if (gm != null && gm0 != null) { var vt = viTri(gm * 100, gmS);
@@ -603,11 +603,120 @@
       return '<tr><td>' + x.ten + '</td><td class="' + mau(x.d) + '" style="white-space:nowrap">' + tyD(x.d) + '</td><td style="width:42%"><div class="bar ' + (x.d >= 0 ? 'up' : 'dn') + '" style="width:' + w + '%"></div></td></tr>'; }).join('');
     return '<div class="ptb"><h4>' + ten + '</h4><div class="mini" style="margin-bottom:6px">LNTT ' + ty(cq.pb) + ' → <b>' + ty(cq.pa) + '</b> tỷ (' + tyD(cq.pa - cq.pb) + ')</div><table class="ptn ptcau">' + h + '</table></div>';
   }
+  /* ---------- Tang truong 2 quy gan nhat + DIEM SANG / DIEM TOI (16/10/2026, anh Khoa: "key tang truong") ----------
+     Rule-based tu BCTC quy (raw.quy): moi quy so voi cung ky nam truoc (YoY) cho 2 quy gan nhat; QoQ chi de tham khao.
+     Nhan tang truong de MO TA. Kiem dinh (kafi-core ba-muc.mjs): LN khong giam 2 quy lien mot minh chi hon thi truong +1,1%/6 thang
+     (2021– ~0) — loi the chi ro khi tang truong di cung gia hop ly (muc TICH CUC). */
+  function npQuy(o){ return o ? (V(o, '23000') != null ? V(o, '23000') : V(o, '23003')) : null; }
+  function dtQuy(loai, o){ return o ? (loai === 'nh' ? V(o, '421701') : V(o, '21001')) : null; }
+  // LN cot loi: DN = LN gop − ban hang − quan ly; NH = LN truoc du phong; CTCK = moi gioi rong + margin + dao han − lai vay − quan ly
+  function loiQuy(loai, o){
+    if (!o) return null;
+    if (loai === 'dn') { var gp = V(o, '23100'); return gp == null ? null : gp - (V(o, '22110') || 0) - (V(o, '22200') || 0); }
+    if (loai === 'nh') return V(o, '88888');
+    if (loai === 'ck') return V(o, '621110') == null ? null : gop('621110', am('700056'), '700044', '700043', am('22509'), am('22200'))(o);
+    return null;
+  }
+  var TEN_LOI = { dn: 'LN cốt lõi (LN gộp − chi phí bán hàng, quản lý)', nh: 'LN trước dự phòng', ck: 'LN mảng cốt lõi (môi giới ròng + margin + đáo hạn − lãi vay − quản lý)' };
+  function yoy(a, b){ return (a != null && b != null && b > 0) ? (a / b - 1) * 100 : null; }
+  // chu so sanh 1 quy: "+12%", "chuyen lai 50 ty (cung ky lo 20)", "lo 30 ty (cung ky lai 40)"...
+  function soCk(a, b){
+    if (a == null || b == null) return '—';
+    if (b > 0) return a >= 0 ? dau((a / b - 1) * 100, 0) : 'lỗ ' + ty(-a) + ' tỷ (cùng kỳ lãi ' + ty(b) + ')';
+    if (a > 0) return 'lãi ' + ty(a) + ' tỷ (cùng kỳ lỗ ' + ty(-b) + ')';
+    return 'lỗ ' + ty(-a) + ' tỷ (cùng kỳ lỗ ' + ty(-b) + ')';
+  }
+  function tangTruong(s){
+    if (!s || !s.m) return null;
+    var m = s.m, K = s.K, loai = s.loai;
+    var q = [K - 1, K].filter(function(k){ return m[k]; }).map(function(k){
+      var o = m[k], c = m[k - 4], np = npQuy(o), np0 = npQuy(c), rv = dtQuy(loai, o), rv0 = dtQuy(loai, c), lc = loiQuy(loai, o), lc0 = loiQuy(loai, c);
+      return { k: k, lb: lbQ(k), np: np, np0: np0, gNP: yoy(np, np0), h: (np != null && np0 != null) ? (np >= np0 ? 1 : -1) : null,
+        rv: rv, rv0: rv0, gRv: yoy(rv, rv0), lc: lc, lc0: lc0, gLc: yoy(lc, lc0), pbt: V(o, '23800'), pbt0: c ? V(c, '23800') : null,
+        gm: loai === 'dn' ? chia(V(o, '23100'), rv) : null, gm0: loai === 'dn' ? chia(V(c, '23100'), rv0) : null, gp: V(o, '23100'), gp0: c ? V(c, '23100') : null,
+        lk: V(o, '23300'), lk0: c ? V(c, '23300') : null,
+        dp: loai === 'nh' ? V(o, '422900') : null, dp0: (loai === 'nh' && c) ? V(c, '422900') : null,
+        td: loai === 'ck' ? gop('700039', am('700046'))(o) : null, td0: (loai === 'ck' && c) ? gop('700039', am('700046'))(c) : null };
+    });
+    if (!q.length) return null;
+    var A = q[q.length - 1], B = q.length > 1 ? q[0] : null;   // A = quy gan nhat, B = quy truoc do
+    var sap = A.h === -1 && (A.gNP == null || A.gNP <= -30);
+    var nhan, mau;
+    if (A.h == null) { nhan = 'CHƯA ĐỦ SỐ'; mau = 'kq'; }
+    else if (sap) { nhan = 'LỢI NHUẬN SỤT MẠNH'; mau = 'tcu'; }
+    else if (A.h === -1 && B && B.h === -1) { nhan = 'SUY GIẢM'; mau = 'tcu'; }
+    else if (A.h === 1 && B && B.h === 1) { nhan = (A.gNP != null && A.gNP >= 20 && B.gNP != null && B.gNP >= 20 && !(A.gRv != null && A.gRv < 0)) ? 'TĂNG TRƯỞNG MẠNH' : 'ĐANG TĂNG TRƯỞNG'; mau = 'tc'; }
+    else { nhan = 'CHỮNG LẠI'; mau = 'kq'; }
+    var nhip = (A.h === 1 && A.gNP != null && B && B.gNP != null) ? (A.gNP - B.gNP >= 10 ? 'tăng tốc' : (A.gNP - B.gNP <= -10 ? 'chậm lại' : '')) : '';
+    // diem sang / toi bo sung tu goc nhin 2 quy
+    var them = [], add = function(sg, w, txt){ them.push({ s: sg, w: w, t: txt }); };
+    var hai = function(f){ return (B ? B.lb + ' ' + f(B) + ', ' : '') + A.lb + ' ' + f(A); };
+    var dau2 = function(a, b){ return (a == null || b == null) ? 0 : (a > 0 && b > 0 ? 1 : (a < 0 && b < 0 ? -1 : Math.sign(a))); };
+    add(A.h == null ? 0 : (B && B.h != null ? (A.h + B.h > 0 ? 1 : (A.h + B.h < 0 ? -1 : A.h)) : A.h), 99,
+      '<b>LNST công ty mẹ ' + hai(function(z){ return soCk(z.np, z.np0); }) + ' so với cùng kỳ</b>' + (nhip ? ' — ' + nhip : '') + ' (quý gần nhất ' + ty(A.np) + ' tỷ).');
+    if (A.rv != null) add(dau2(A.gRv, B ? B.gRv : null), 97, (loai === 'nh' ? 'Tổng thu nhập hoạt động ' : 'Doanh thu ') + hai(function(z){ return z.gRv == null ? '—' : dau(z.gRv, 0); }) + ' so với cùng kỳ (quý gần nhất ' + ty(A.rv) + ' tỷ).');
+    if (A.lc != null && A.lc0 != null) add(dau2(A.gLc, B ? B.gLc : null), 95, TEN_LOI[loai] + ' ' + hai(function(z){ return soCk(z.lc, z.lc0); }) + ' so với cùng kỳ.');
+    // nhan dinh (tong hop)
+    var nd = [], pt = function(x){ return f(Math.abs(x), 0) + '%'; }, tenDt = loai === 'nh' ? 'tổng thu nhập hoạt động' : 'doanh thu', TenDt = loai === 'nh' ? 'Tổng thu nhập hoạt động' : 'Doanh thu';
+    var thoiHN = loai === 'dn' && A.gRv != null && A.gRv < -10 && A.lk > 0 && A.lk > Math.max(A.lk0 || 0, 0) * 3 && A.pbt && A.lk > Math.abs(A.pbt) * 0.1;
+    // khoan ngoai kinh doanh chinh dong gop nhieu nhat vao phan tang LNTT quy (tu "Loi nhuan den tu dau")
+    var NGOAI = { dn: ['Doanh thu tài chính', 'Liên doanh, liên kết', 'Thu nhập khác ròng', 'Chi phí tài chính'], nh: ['Hoạt động khác', 'Chi phí dự phòng', 'Chứng khoán'],
+      ck: ['Tự doanh (lãi − lỗ FVTPL)', 'Dự phòng (hoàn nhập +, trích −)'] }[loai] || [];
+    var ngoaiMax = (s.cq ? s.cq.ds : []).filter(function(z){ return NGOAI.indexOf(z.ten) >= 0 && z.d > 0; }).sort(function(a, b){ return b.d - a.d; })[0];
+    if (A.gm != null && A.gm < 0) nd.push('<b>Lỗ gộp ' + A.lb + '</b> (biên gộp ' + ph(A.gm * 100) + '): giá vốn vượt doanh thu — thường do giảm giá hàng tồn kho, bán dưới giá vốn hoặc giá đầu vào tăng đột biến; cần đọc thuyết minh BCTC.');
+    if (thoiHN) nd.push('<b>Doanh thu giảm ' + pt(A.gRv) + ' nhưng lãi liên doanh, liên kết tăng từ ' + ty(A.lk0 || 0) + ' lên ' + ty(A.lk) + ' tỷ</b> — dấu hiệu một công ty con đã thôi hợp nhất: so sánh cùng kỳ bị lệch cơ sở, chưa chắc kinh doanh đi xuống.');
+    if (A.gRv != null && A.h != null && !(A.gm != null && A.gm < 0) && !thoiHN) {
+      var gmUp = A.gm != null && A.gm0 != null && A.gm - A.gm0 >= 0.005, gmDn = A.gm != null && A.gm0 != null && A.gm0 - A.gm >= 0.005;
+      var bgm = (A.gm != null && A.gm0 != null) ? ' (biên gộp ' + ph(A.gm0 * 100) + ' → ' + ph(A.gm * 100) + ')' : '';
+      if (A.gRv > 0 && A.h === 1) nd.push(gmUp ? '<b>Tăng trưởng chất lượng:</b> doanh thu tăng ' + pt(A.gRv) + ' và biên lãi gộp mở rộng' + bgm + ' — lợi nhuận tăng nhanh hơn doanh thu.'
+        : (gmDn ? '<b>Lợi nhuận tăng nhờ quy mô</b> (doanh thu tăng ' + pt(A.gRv) + ') nhưng biên gộp thu hẹp' + bgm + ' — theo dõi giá bán và chi phí đầu vào các quý tới.'
+        : '<b>' + TenDt + ' và lợi nhuận cùng tăng</b> (' + tenDt + ' ' + dau(A.gRv, 0) + ', LNST ' + soCk(A.np, A.np0) + ').'));
+      else if (A.gRv > 0 && A.h === -1) nd.push('<b>' + TenDt + ' tăng ' + pt(A.gRv) + ' nhưng lợi nhuận giảm</b>' + bgm + ' — chi phí đang ăn mòn tăng trưởng (xem "Lợi nhuận đến từ đâu").');
+      else if (A.gRv < 0 && A.h === 1) nd.push('<b>Lợi nhuận tăng dù ' + tenDt + ' giảm ' + pt(A.gRv) + '</b>' + bgm + ' — nhờ biên/chi phí hoặc khoản ngoài kinh doanh chính; khó kéo dài nếu ' + tenDt + ' không hồi phục.');
+      else if (A.gRv < 0 && A.h === -1) nd.push('<b>' + TenDt + ' và lợi nhuận cùng giảm</b> (' + tenDt + ' ' + dau(A.gRv, 0) + ', LNST ' + soCk(A.np, A.np0) + ') — hoạt động kinh doanh đang co lại.');
+    }
+    if (A.gNP != null && A.gLc != null) {
+      if (A.gNP > 0 && A.gLc < 0 && !thoiHN) nd.push('<b>Chất lượng lợi nhuận thấp:</b> LNST tăng nhưng ' + TEN_LOI[loai].replace(/\s*\(.*\)/, '') + ' giảm ' + pt(A.gLc) + ' — phần tăng đến từ khoản ngoài kinh doanh chính'
+        + (ngoaiMax ? ' (nhiều nhất: ' + gon(ngoaiMax) + ' ' + tyD(ngoaiMax.d) + ' tỷ)' : '') + '.');
+      else if (A.gNP > 0 && A.gLc >= A.gNP - 10) nd.push('<b>Tăng trưởng đến từ kinh doanh cốt lõi</b> (' + TEN_LOI[loai].replace(/\s*\(.*\)/, '') + ' ' + dau(A.gLc, 0) + ') — bền hơn tăng nhờ khoản một lần.');
+      else if (A.gNP < 0 && A.gLc > 0) nd.push('<b>Nền kinh doanh chưa xấu đi:</b> LNST giảm nhưng ' + TEN_LOI[loai].replace(/\s*\(.*\)/, '') + ' vẫn tăng ' + pt(A.gLc) + ' — sụt do chi phí tài chính/khoản bất thường.');
+    }
+    if (nhip && B) nd.push('Nhịp tăng trưởng LNST <b>' + nhip + '</b>: ' + B.lb + ' ' + dau(B.gNP, 0) + ' → ' + A.lb + ' ' + dau(A.gNP, 0) + '.');
+    if (loai === 'nh' && A.dp != null && A.dp0 != null && A.dp0 !== 0) { var gdp = yoy(Math.abs(A.dp), Math.abs(A.dp0));
+      if (gdp != null && Math.abs(gdp) >= 20) nd.push('Chi phí dự phòng ' + A.lb + ' ' + (gdp < 0 ? 'giảm ' : 'tăng ') + pt(gdp) + ' so với cùng kỳ' + (gdp < 0 && A.h === 1 ? ' — một phần tăng lợi nhuận đến từ trích dự phòng ít hơn.' : (gdp > 0 ? ' — ngân hàng đang trích lập mạnh tay hơn, lợi nhuận bị kìm.' : '.'))); }
+    if (loai === 'ck' && A.td != null && A.pbt > 0 && Math.abs(A.td) > A.pbt * 0.3) nd.push('Tự doanh chiếm ' + f(A.td / A.pbt * 100, 0) + '% LNTT ' + A.lb + ' — lợi nhuận phụ thuộc nhiều vào diễn biến thị trường.');
+    return { q: q, A: A, B: B, nhan: nhan, mau: mau, nhip: nhip, them: them, nd: nd, loai: loai };
+  }
+  function bang2Quy(tt){
+    var q = tt.q, loai = tt.loai, R = [];
+    var dong = function(ten, get, get0){ R.push('<tr><td>' + ten + '</td>' + q.map(function(z){ var a = get(z), b = get0(z);
+      return '<td>' + ty(a) + '</td><td class="' + mau(yoy(a, b)) + '">' + soCk(a, b).replace(/ \(cùng kỳ[^)]*\)/, '') + '</td>'; }).join('') + '</tr>'); };
+    dong(loai === 'nh' ? 'Tổng thu nhập hoạt động' : 'Doanh thu', function(z){ return z.rv; }, function(z){ return z.rv0; });
+    if (loai === 'dn') { dong('Lợi nhuận gộp', function(z){ return z.gp; }, function(z){ return z.gp0; });
+      R.push('<tr><td class="mini">&nbsp;&nbsp;biên gộp</td>' + q.map(function(z){ return '<td class="mini">' + (z.gm != null ? ph(z.gm * 100) : '—') + '</td><td class="mini">' + (z.gm != null && z.gm0 != null ? diem(z.gm * 100, z.gm0 * 100) : '') + '</td>'; }).join('') + '</tr>'); }
+    if (loai === 'ck') dong('Tự doanh ròng', function(z){ return z.td; }, function(z){ return z.td0; });
+    if (loai === 'nh') dong('Chi phí dự phòng', function(z){ return z.dp == null ? null : Math.abs(z.dp); }, function(z){ return z.dp0 == null ? null : Math.abs(z.dp0); });
+    dong(TEN_LOI[loai].replace(/\s*\(.*\)/, ''), function(z){ return z.lc; }, function(z){ return z.lc0; });
+    dong('Lợi nhuận trước thuế', function(z){ return z.pbt; }, function(z){ return z.pbt0; });
+    dong('<b>LNST công ty mẹ</b>', function(z){ return z.np; }, function(z){ return z.np0; });
+    return '<table class="ptn pt2q"><tr><td class="mini">tỷ đồng</td>' + q.map(function(z){ return '<td class="mini"><b>' + z.lb + '</b></td><td class="mini">so cùng kỳ</td>'; }).join('') + '</tr>' + R.join('') + '</table>';
+  }
   function soiHtml(t, raw, d, s){
     if (!s || !s.ds.length) return '';
-    var dot = function(x){ return '<span class="sd ' + (x > 0 ? 'up' : (x < 0 ? 'dn' : 'fl')) + '"></span>'; };
-    var h = '<div class="soi"><h3>Soi BCTC ' + s.lb + ' — ' + (s.loai === 'ck' ? 'công ty chứng khoán' : (s.loai === 'nh' ? 'ngân hàng' : 'doanh nghiệp')) + '</h3><ul class="sl">'
-      + s.ds.slice(0, 11).map(function(x){ return '<li>' + dot(x.s) + '<span>' + x.t + '</span></li>'; }).join('') + '</ul></div>';
+    var tt = raw.__tt, ds = s.ds.concat(tt ? tt.them : []).sort(function(a, b){ return b.w - a.w; });
+    var sang = ds.filter(function(x){ return x.s > 0; }), toi = ds.filter(function(x){ return x.s < 0; }), ghi = ds.filter(function(x){ return !x.s; });
+    var li = function(a){ return a.map(function(x){ return '<li>' + x.t + '</li>'; }).join(''); };
+    var kieu = s.loai === 'ck' ? 'công ty chứng khoán' : (s.loai === 'nh' ? 'ngân hàng' : 'doanh nghiệp');
+    var h = '<div class="soi"><h3>Soi BCTC 2 quý gần nhất' + (tt && tt.B ? ' — ' + tt.B.lb + ' và ' + tt.A.lb : ' — ' + s.lb) + ' · ' + kieu
+      + (tt ? ' <span class="ttc ' + tt.mau + '">' + tt.nhan + (tt.nhip ? ' · ' + tt.nhip : '') + '</span>' : '') + '</h3>';
+    if (tt) h += '<div style="overflow-x:auto;margin-bottom:8px">' + bang2Quy(tt) + '</div>';
+    h += '<div class="st2"><div class="sang"><h4>Điểm sáng (' + sang.length + ')</h4>' + (sang.length ? '<ul>' + li(sang) + '</ul>' : '<div class="mini">Không có điểm sáng nổi bật theo bộ lọc.</div>') + '</div>'
+      + '<div class="toi"><h4>Điểm tối (' + toi.length + ')</h4>' + (toi.length ? '<ul>' + li(toi) + '</ul>' : '<div class="mini">Không có điểm tối nổi bật theo bộ lọc.</div>') + '</div></div>';
+    if (tt && tt.nd.length) h += '<div class="nd"><h4>Nhận định</h4><ul>' + tt.nd.map(function(x){ return '<li>' + x + '</li>'; }).join('') + '</ul>'
+      + '<div class="mini">Kết luận tăng trưởng: <b>' + tt.nhan.toLowerCase() + '</b>' + (tt.nhip ? ' (' + tt.nhip + ')' : '') + '. Kiểm định 2014 – 2026: lợi nhuận tăng 2 quý liền <u>một mình</u> chỉ hơn thị trường +1,1% sau 6 tháng;'
+      + ' lợi thế rõ khi tăng trưởng đi cùng giá hợp lý (mức TÍCH CỰC +5,7%).</div></div>';
+    if (ghi.length) h += '<details class="sgc"><summary>Ghi chú thêm (' + ghi.length + ')</summary><ul>' + li(ghi) + '</ul></details>';
+    h += '</div>';
     h += '<div class="pt3">' + bangCau(s.cq, 'Lợi nhuận đến từ đâu · ' + s.lb + ' so với ' + s.lbP) + bangCau(s.ct, 'Cộng 4 quý đến ' + s.lb + ' so với 4 quý trước') + bangPeer(t, raw.__bangPeer) + '</div>';
     h += '<div style="overflow-x:auto;margin-bottom:12px">' + bangQuy(s, raw, t) + '</div>';
     return h;
@@ -815,6 +924,9 @@
       : loai === 'thap' ? 'P/E ' + f(x.pe, 1) + ' cao vì LN 4 quý đang thấp — tính trên LN bình quân 5 năm P/E chỉ ' + f(x.peNorm, 1) + ': chưa hẳn đắt. Chưa đủ điều kiện TÍCH CỰC.'
       : 'Chưa đủ điều kiện TÍCH CỰC — vướng: ' + vuong + '.';
     var h = '<div class="kl ' + muc + '">' + tieuDe(TEN3[muc], sub);
+    var tg = raw && raw.__tt;
+    if (tg) h += '<div class="kltg">Tăng trưởng 2 quý gần nhất: <span class="ttc ' + tg.mau + '">' + tg.nhan + (tg.nhip ? ' · ' + tg.nhip : '') + '</span> LNST công ty mẹ '
+      + (tg.B ? tg.B.lb + ' ' + soCk(tg.B.np, tg.B.np0) + ', ' : '') + tg.A.lb + ' ' + soCk(tg.A.np, tg.A.np0) + ' so với cùng kỳ — điểm sáng, điểm tối ở phần Soi BCTC bên dưới.</div>';
     var dn = diemNhan(nm); if (dn.length) h += '<div class="klnh">' + dn.join(' ') + '</div>';
     h += '<ul class="kld">' + dk.map(function(z){ return '<li class="' + (z.ok ? 'ok' : 'no') + '"><b>' + (z.ok ? '✓ ' : '✗ ') + z.ten + '</b> — ' + z.txt
       + (z.kd && !z.ok ? '<div class="mini">' + z.kd + '</div>' : '') + '</li>'; }).join('') + '</ul>';
@@ -957,7 +1069,7 @@
       + '#ptcs .klh{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}#ptcs .klv{font-size:22px;font-weight:800}#ptcs .kl.tc .klv b{color:var(--green-dark)}#ptcs .kl.kq .klv b{color:#2f5597}#ptcs .kl.tcu .klv b{color:var(--red)}'
       + '#ptcs .kls{font-size:13px;font-weight:600}#ptcs ul.kld{list-style:none;margin:8px 0 0;padding:0}#ptcs ul.kld li{font-size:12.5px;line-height:1.55;padding:4px 0;border-top:1px dashed rgba(0,0,0,.08)}'
       + '#ptcs ul.kld li.ok b{color:var(--green-dark)}#ptcs ul.kld li.no b{color:var(--red)}#ptcs .kldc{margin-top:8px;font-size:13px;line-height:1.55;background:#fff;border-radius:8px;padding:8px 10px}'
-      + '#ptcs .klnh{margin-top:6px;font-size:13px;line-height:1.55}#ptcs .kltt{margin-top:8px;font-size:12.5px;line-height:1.55;padding:8px 10px;border-radius:8px;background:#fff;border:1px solid var(--border)}#ptcs .kltt.t1{border-color:var(--green)}#ptcs .kltt.t2{border-color:var(--red);background:#fff7f7}#ptcs .klkd{margin-top:8px;font-size:12.5px;line-height:1.55;padding:8px 10px;border-left:3px solid var(--blue);background:#fff;border-radius:0 8px 8px 0}#ptcs details.klls{margin-top:8px;background:#fff;border-radius:8px;padding:6px 10px}#ptcs details.klls summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs .lks{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 6px}#ptcs .lk{font-size:11.5px;padding:3px 8px;border-radius:999px;background:#eef0f3;color:#4b5563;white-space:nowrap}#ptcs .lk.tc{background:var(--green-soft);color:var(--green-dark)}#ptcs .lk.tcu{background:var(--red-soft);color:var(--red)}#ptcs .lk.kq{background:#eef3fb;color:#3b5b8c}#ptcs .lk i{font-style:normal;font-weight:700}#ptcs details.klbc{margin-top:8px;background:#fff;border-radius:8px;padding:6px 10px;overflow-x:auto}#ptcs details.klbc td{word-break:break-word}#ptcs details.klbc td:nth-child(2){text-align:left}#ptcs .kl,#ptcs .soi{min-width:0;overflow-wrap:anywhere}#ptcs details.klbc summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs details.klbc td{vertical-align:top}#ptcs tr.cu{opacity:.55}#ptcs details.klbc a{color:var(--muted);text-decoration:none}'
+      + '#ptcs .klnh{margin-top:6px;font-size:13px;line-height:1.55}#ptcs .kltg{margin-top:8px;font-size:13px;line-height:1.7}#ptcs .ttc{display:inline-block;font-size:11.5px;font-weight:800;padding:1px 9px;border-radius:999px;vertical-align:1px;white-space:nowrap}#ptcs .ttc.tc{background:var(--green-soft);color:var(--green-dark)}#ptcs .ttc.kq{background:#e8eef8;color:#2f5597}#ptcs .ttc.tcu{background:var(--red-soft);color:var(--red)}#ptcs .st2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:6px 0 8px}@media (max-width:760px){#ptcs .st2{grid-template-columns:1fr}}#ptcs .st2>div{border-radius:10px;padding:8px 12px;background:#fff;border:1px solid var(--border);min-width:0}#ptcs .st2 .sang{border-top:3px solid var(--green)}#ptcs .st2 .toi{border-top:3px solid var(--red)}#ptcs .st2 h4,#ptcs .nd h4{margin:0 0 4px;font-size:13px}#ptcs .st2 .sang h4{color:var(--green-dark)}#ptcs .st2 .toi h4{color:var(--red)}#ptcs .st2 ul,#ptcs .nd ul,#ptcs details.sgc ul{margin:0;padding-left:18px;font-size:12.8px;line-height:1.55}#ptcs .st2 li,#ptcs .nd li{margin:3px 0}#ptcs .nd{border-radius:10px;padding:8px 12px;background:#fff;border:1px solid var(--border);border-left:4px solid var(--blue);margin-bottom:8px}#ptcs details.sgc{margin-bottom:6px;font-size:12.5px}#ptcs details.sgc summary{cursor:pointer;color:var(--muted)}#ptcs table.pt2q td{text-align:right;white-space:nowrap}#ptcs table.pt2q td:first-child{text-align:left;white-space:normal;min-width:130px}@media (max-width:560px){#ptcs table.pt2q{font-size:11.5px}#ptcs table.pt2q td{padding:4px 3px}}#ptcs .kltt{margin-top:8px;font-size:12.5px;line-height:1.55;padding:8px 10px;border-radius:8px;background:#fff;border:1px solid var(--border)}#ptcs .kltt.t1{border-color:var(--green)}#ptcs .kltt.t2{border-color:var(--red);background:#fff7f7}#ptcs .klkd{margin-top:8px;font-size:12.5px;line-height:1.55;padding:8px 10px;border-left:3px solid var(--blue);background:#fff;border-radius:0 8px 8px 0}#ptcs details.klls{margin-top:8px;background:#fff;border-radius:8px;padding:6px 10px}#ptcs details.klls summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs .lks{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 6px}#ptcs .lk{font-size:11.5px;padding:3px 8px;border-radius:999px;background:#eef0f3;color:#4b5563;white-space:nowrap}#ptcs .lk.tc{background:var(--green-soft);color:var(--green-dark)}#ptcs .lk.tcu{background:var(--red-soft);color:var(--red)}#ptcs .lk.kq{background:#eef3fb;color:#3b5b8c}#ptcs .lk i{font-style:normal;font-weight:700}#ptcs details.klbc{margin-top:8px;background:#fff;border-radius:8px;padding:6px 10px;overflow-x:auto}#ptcs details.klbc td{word-break:break-word}#ptcs details.klbc td:nth-child(2){text-align:left}#ptcs .kl,#ptcs .soi{min-width:0;overflow-wrap:anywhere}#ptcs details.klbc summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs details.klbc td{vertical-align:top}#ptcs tr.cu{opacity:.55}#ptcs details.klbc a{color:var(--muted);text-decoration:none}'
       + '#ptcs .dg{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:12px;background:#fff}#ptcs .dgh{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}'
       + '#ptcs .dgv{display:flex;gap:10px;align-items:center;flex-wrap:wrap}#ptcs .dgpe{font-size:22px;font-weight:800}'
       + '#ptcs .dgbar{position:relative;height:14px;margin:12px 4px 4px;background:var(--panel2);border-radius:7px}#ptcs .dgband{position:absolute;top:0;bottom:0;background:#dbe6f7;border-radius:7px}'
@@ -1040,9 +1152,11 @@
     var h = '<div class="pth"><b>Phân tích cơ bản chuyên sâu</b><span class="mini">' + esc(t) + ' · BCTC năm FY' + C[Math.max(0, C.length - 5)].lb + '–FY' + L.lb
       + (d.ttm ? ' + 4 quý đến Q' + d.ttm.o.q + '/' + d.ttm.o.y : '') + ' · nguồn VNDirect'
       + (d.loai === 'nh' ? ' · mô hình ngân hàng' : (d.loai === 'khac' ? ' · mô hình CTCK/bảo hiểm' : '')) + '</span></div>';
+    var sv = null;
+    if (raw) { try { sv = ptSoi(t, raw, d.loai); } catch(e){ console.warn('ptSoi', e); }
+      try { raw.__tt = tangTruong(sv); } catch(e){ console.warn('tangTruong', e); raw.__tt = null; } }
     if (raw) h += '<div id="ptDgO">' + dinhGiaHtml(t, raw) + '</div>';
-    if (raw) { var sv = null; try { sv = ptSoi(t, raw, d.loai); } catch(e){ console.warn('ptSoi', e); }
-      h += soiHtml(t, raw, d, sv); }
+    if (raw) h += soiHtml(t, raw, d, sv);
     h += '<h3 class="pth3">Chấm điểm 5 năm</h3><div class="ptp">' + cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC;
       return '<div class="ptc"><div class="pk"><span>' + x.ten + '</span><span class="pm ' + x.m + '">' + nh[x.m] + '</span></div><div class="py">' + x.y + '</div></div>'; }).join('') + '</div>';
     // Hang 2: F-score / diem manh-yeu / dinh gia & nganh
