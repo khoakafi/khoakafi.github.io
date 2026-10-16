@@ -242,6 +242,13 @@ chiều cao + chữ là kênh chính). Màu KHẢ QUAN = xám trung tính #64748
 Soi BCTC: 4 ô KPI quý gần nhất kèm cột 8 quý (`oQuy`, `cotNho`: xanh đậm 2 quý đang soi, xám đậm cùng kỳ) thay bảng 2 quý; mỗi mục điểm sáng/tối là
 `{s, w, so, ten, ct}` (`add(s, w, so, ten, ct)` trong `ptSoi`, số chính ở cột trái, tên có chữ tăng/giảm, vượt/kém ngành để không phải đoán qua màu; khi
 xếp theo thị phần thì số chính là thị phần). Nhận định `tt.nd` = `{ic, ten, ct}` (ic: ok/no/canh/len/xuong). Mỗi cột hiện 6 mục, còn lại trong "Xem thêm".
+**Khung quyết định một màn hình (16/10 tối, anh Khoa xem trên web thật: "hơi nhiều thông tin, phức tạp", "đọc trên 1 mặt trang là hiểu", "tối ưu diện tích").**
+`ketLuanDL` tính một lần → `tomTatHtml` (khung trên cùng: khối kết luận màu + việc nên làm `HANH`, 5 điều kiện dạng nhãn, chỉ giải thích điều kiện chưa đạt,
+một dòng "Theo giá", ô tăng trưởng + cột LNST 8 quý, 3 điểm sáng / 3 điểm tối từ `raw.__sv` (không đếm khi lưu cache), tối đa 3 lưu ý: Toàn cảnh `TT_NGAN`
+cho mức TÍCH CỰC, bằng chứng điều kiện chưa đạt, nhận định BCTC đáng chú ý) + `chiTietKlHtml` (bản đầy đủ cũ). Mọi chi tiết nằm trong 3 mục gập
+`mucGap`: `ctkn` Chi tiết khuyến nghị (+ thẻ P/E 5 năm `peTheHtml`), `ctsoi` Soi BCTC chi tiết, `ct5n` Chấm điểm 5 năm (nhãn trụ hiện ngay ở dòng tiêu đề).
+Mở/đóng được nhớ theo người xem (`localStorage.kn_pt_mo`). Test đối chiếu 250 mã phải dùng **giá chốt của backtest** (`e.close`), không dùng bảng giá web
+(sang phiên sau giá đổi → lệch nhãn giả).
 
 **Kết luận MUA: CÓ / KHÔNG theo giá hôm nay (16/10/2026, mô hình ĐÃ KIỂM ĐỊNH — anh Khoa: "Yes/No, không nước đôi", "backtest mô hình"; nay = mức TÍCH CỰC).**
 Thay quy tắc 5 điều kiện cũ (`ptKetLuan`: LN cốt lõi, nền tảng, thị phần, định giá, ≥ 2 báo cáo CTCK dư địa ≥ 15%) — backtest cho thấy
