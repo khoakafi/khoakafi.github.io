@@ -410,6 +410,14 @@
   }
   function kDu(pq){ if (!pq || !pq.du.length) return null; var fd = pq.du[pq.du.length - 1]; return (+fd.slice(0, 4)) * 4 + Math.ceil(+fd.slice(5, 7) / 3); }
 
+  // so ngan cho cot so: % so voi ky truoc, ke ca khi ky truoc am
+  function soNgan(a, b){
+    if (a == null || b == null) return '—';
+    if (b > 0) return a >= 0 ? dau((a / b - 1) * 100, Math.abs(a / b - 1) < 0.1 ? 1 : 0) : 'Lỗ';
+    if (b < 0 && a > 0) return 'Có lãi';
+    if (b < 0 && a < 0) return a > b ? 'Lỗ ít hơn' : 'Lỗ nhiều hơn';
+    return '—';
+  }
   function ptSoi(t, raw, loai0){
     var Q = raw.quy || []; if (Q.length < 5) return null;
     var m = mapQ(Q), ks = Object.keys(m).map(Number).sort(function(a, b){ return a - b; });
@@ -419,131 +427,134 @@
     var loai = loai0 === 'nh' ? 'nh' : (ck ? 'ck' : (Q.some(function(o){ return V(o, '23100') != null; }) ? 'dn' : null));
     if (!loai) return null;
     var L = m[K], P = m[K - 4], T = oTong(m, K), T0 = oTong(m, K - 4), peer = raw.peer;
-    var out = [], add = function(s, w, txt){ out.push({ s: s, w: w, t: txt }); };
+    // moi muc: s dau (+1 diem sang, -1 diem toi, 0 ghi chu), w trong so, so = con so chinh, ten = noi dung ngan, ct = chi tiet
+    var out = [], add = function(s, w, so, ten, ct){ out.push({ s: s, w: w, so: so, ten: ten, ct: ct || '' }); };
     var lb = lbQ(K), lbP = lbQ(K - 4);
     // 1. Cau loi nhuan
     var cq = cauLN(loai, L, P), ct = cauLN(loai, T, T0);
     if (cq) {
       var dd = cq.pa - cq.pb, ds = cq.ds.slice().sort(function(a, b){ return Math.abs(b.d) - Math.abs(a.d); });
-      var len = ds.filter(function(x){ return x.d > 0; }).slice(0, 2), xu = ds.filter(function(x){ return x.d < 0; }).slice(0, 2);
       var chinh = ds[0] && Math.sign(ds[0].d) === Math.sign(dd) && Math.abs(ds[0].d) >= Math.abs(dd) * 0.6 ? ds[0] : null;
-      add(Math.sign(dd), 100, '<b>Lợi nhuận trước thuế ' + lb + ': ' + ty(cq.pa) + ' tỷ, ' + bien(cq.pa, cq.pb) + ' so với ' + lbP + ' (' + tyD(dd) + ' tỷ)'
-        + (chinh ? ', chủ yếu ' + (chinh.d > 0 ? 'nhờ' : 'do') + ' <u>' + gon(chinh) + '</u> (' + tyD(chinh.d) + ' tỷ)' : '') + '.</b>'
-        + (len.length ? ' Đẩy lên: ' + len.map(function(x){ return gon(x) + ' ' + tyD(x.d); }).join(', ') + '.' : '')
-        + (xu.length ? ' Kéo xuống: ' + xu.map(function(x){ return gon(x) + ' ' + tyD(x.d); }).join(', ') + '.' : ''));
+      add(Math.sign(dd), 100, soNgan(cq.pa, cq.pb), 'Lợi nhuận trước thuế ' + lb + ' · ' + ty(cq.pa) + ' tỷ',
+        tyD(dd) + ' tỷ so với ' + lbP + (chinh ? ', chủ yếu ' + (chinh.d > 0 ? 'nhờ ' : 'do ') + gon(chinh) + ' (' + tyD(chinh.d) + ')' : ''));
     }
     // Khoan khong deu (thu nhap khac NH, DT tai chinh/thu nhap khac DN) gop > 30% phan tang LNTT -> canh bao
-    var batThuong = { nh: { 'Hoạt động khác': 'thu nhập hoạt động khác (chủ yếu thu hồi nợ đã xử lý, không đều theo quý)' },
-                      dn: { 'Doanh thu tài chính': 'doanh thu tài chính', 'Thu nhập khác ròng': 'thu nhập khác' } }[loai] || {};
+    var batThuong = { nh: { 'Hoạt động khác': ['thu nhập hoạt động khác', 'chủ yếu thu hồi nợ đã xử lý, không đều theo quý'] },
+                      dn: { 'Doanh thu tài chính': ['doanh thu tài chính', 'không đều theo quý'], 'Thu nhập khác ròng': ['thu nhập khác', 'không đều theo quý'] } }[loai] || {};
     [[cq, lb + ' so với ' + lbP, 0], [ct, '4 quý gần nhất', 1]].forEach(function(z){ var c = z[0]; if (!c) return; var dd2 = c.pa - c.pb; if (!(dd2 > 0)) return;
       c.ds.forEach(function(x){ if (!batThuong[x.ten] || !(x.d > dd2 * 0.3) || !(x.d > 0)) return;
         var dinh = null; if (z[2]) { for (var j = 0; j < 4; j++) { var oo = m[K - j], vv = CAU[loai].filter(function(c2){ return c2[0] === x.ten; })[0][1](oo); if (vv != null && (!dinh || vv > dinh.v)) dinh = { k: K - j, v: vv }; } }
-        add(-1, 93 - z[2], f(x.d / dd2 * 100, 0) + '% phần tăng LNTT ' + z[1] + ' (' + tyD(x.d) + ' tỷ) đến từ ' + batThuong[x.ten] + (dinh ? ' — riêng ' + lbQ(dinh.k) + ' ' + ty(dinh.v) + ' tỷ' : '') + '. Cần xem có lặp lại không.'); }); });
-    if (ct) add(Math.sign(ct.pa - ct.pb), 92, 'Cộng 4 quý đến ' + lb + ': LNTT ' + ty(ct.pa) + ' tỷ, ' + bien(ct.pa, ct.pb) + ' so với 4 quý trước đó'
-      + (T && T0 ? '; LNST công ty mẹ ' + ty(V(T, '23000')) + ' tỷ (' + bien(V(T, '23000'), V(T0, '23000')) + ')' : '') + '.');
+        add(-1, 93 - z[2], f(x.d / dd2 * 100, 0) + '%', 'phần LNTT tăng thêm (' + z[1] + ') đến từ ' + batThuong[x.ten][0],
+          tyD(x.d) + ' tỷ' + (dinh ? ', riêng ' + lbQ(dinh.k) + ' ' + ty(dinh.v) + ' tỷ' : '') + ' — ' + batThuong[x.ten][1] + '; cần xem có lặp lại không'); }); });
+    if (ct) add(Math.sign(ct.pa - ct.pb), 92, soNgan(ct.pa, ct.pb), 'LNTT cộng 4 quý đến ' + lb + ' · ' + ty(ct.pa) + ' tỷ',
+      'so với 4 quý trước' + (T && T0 ? '; LNST công ty mẹ ' + ty(V(T, '23000')) + ' tỷ (' + bien(V(T, '23000'), V(T0, '23000')) + ')' : ''));
 
     if (loai === 'dn') {
       var dt = V(L, '21001'), dt0 = V(P, '21001');
-      if (dt != null && T && T0) add(Math.sign(n(tang(V(T, '21001'), V(T0, '21001')))), 84, 'Doanh thu cộng 4 quý đến ' + lb + ' ' + ty(V(T, '21001')) + ' tỷ (' + bien(V(T, '21001'), V(T0, '21001')) + ' so với 4 quý trước).');
+      if (dt != null && T && T0) add(Math.sign(n(tang(V(T, '21001'), V(T0, '21001')))), 84, soNgan(V(T, '21001'), V(T0, '21001')), 'Doanh thu cộng 4 quý · ' + ty(V(T, '21001')) + ' tỷ', 'so với 4 quý trước');
       var gmS = ks.map(function(k){ return chia(V(m[k], '23100'), V(m[k], '21001')); }).map(function(x){ return x == null ? null : x * 100; });
       var gm = chia(V(L, '23100'), dt), gm0 = chia(V(P, '23100'), dt0);
       if (gm != null && gm0 != null) { var vt = viTri(gm * 100, gmS);
-        if (Math.abs(gm - gm0) * 100 >= 1 || vt) add(Math.sign(gm - gm0), 80, 'Biên lợi nhuận gộp ' + ph(gm * 100) + ' (' + diem(gm * 100, gm0 * 100) + ' so với cùng kỳ' + (vt ? ', ' + vt : '') + ').'); }
+        if (Math.abs(gm - gm0) * 100 >= 1 || vt) add(Math.sign(gm - gm0), 80, ph(gm * 100), 'Biên lợi nhuận gộp ' + lb + (gm > gm0 ? ' mở rộng' : (gm < gm0 ? ' thu hẹp' : '')), diem(gm * 100, gm0 * 100) + ' so với cùng kỳ' + (vt ? ', ' + vt : '')); }
       var lk = V(L, '23300'), lk0 = V(P, '23300');
       if (dt0 > 0 && dt < dt0 * 0.9 && lk > 0 && lk > Math.max(lk0 || 0, 0) * 3 && lk > Math.abs(V(L, '23800') || 0) * 0.1)
-        add(0, 87, 'Doanh thu giảm ' + bien(dt, dt0).replace('-', '') + ' trong khi lãi liên doanh, liên kết tăng từ ' + ty(lk0 || 0) + ' lên ' + ty(lk) + ' tỷ — dấu hiệu một công ty con có thể đã thôi hợp nhất (chuyển thành liên kết); so sánh cùng kỳ bị lệch cơ sở.');
+        add(0, 87, bien(dt, dt0), 'Doanh thu giảm nhưng lãi liên doanh, liên kết tăng', 'lãi liên doanh, liên kết ' + ty(lk0 || 0) + ' → ' + ty(lk) + ' tỷ — có thể một công ty con đã thôi hợp nhất (chuyển thành liên kết); so sánh cùng kỳ bị lệch cơ sở');
       var sg = chia(gop('22110', '22200')(L), dt), sg0 = chia(gop('22110', '22200')(P), dt0);
-      if (sg != null && sg0 != null && Math.abs(sg - sg0) * 100 >= 1) add(-Math.sign(sg - sg0), 60, 'Chi phí bán hàng + quản lý chiếm ' + ph(sg * 100) + ' doanh thu (cùng kỳ ' + ph(sg0 * 100) + ').');
+      if (sg != null && sg0 != null && Math.abs(sg - sg0) * 100 >= 1) add(-Math.sign(sg - sg0), 60, ph(sg * 100), 'Chi phí bán hàng + quản lý / doanh thu ' + (sg > sg0 ? 'tăng' : 'giảm'), 'cùng kỳ ' + ph(sg0 * 100));
       var lv = V(L, '22510') || V(L, '22509'), lv0 = V(P, '22510') || V(P, '22509'), xd = V(L, '12460'), xd0 = V(P, '12460');
       if (lv > 0 && lv0 > 0 && (lv / lv0 >= 1.5 || lv / lv0 <= 0.67) && lv > Math.abs(V(L, '23800') || 0) * 0.05) {
-        var tx = 'Chi phí lãi vay ' + lb + ' ' + ty(lv) + ' tỷ, ' + (lv > lv0 ? 'gấp ' + f(lv / lv0, 1) + ' lần' : 'giảm ' + f((1 - lv / lv0) * 100, 0) + '% so với') + ' cùng kỳ (' + ty(lv0) + ' tỷ).';
-        if (lv > lv0 && xd0 > 0 && xd != null && xd < xd0 * 0.6) tx += ' Cùng lúc xây dựng dở dang giảm từ ' + ty(xd0) + ' xuống ' + ty(xd) + ' tỷ — khớp với việc dự án đã đưa vào chạy: lãi vay thôi được vốn hóa, đi thẳng vào chi phí.';
-        add(lv > lv0 ? -1 : 1, 70, tx);
+        var tx = 'cùng kỳ ' + ty(lv0) + ' tỷ';
+        if (lv > lv0 && xd0 > 0 && xd != null && xd < xd0 * 0.6) tx += '; xây dựng dở dang giảm ' + ty(xd0) + ' → ' + ty(xd) + ' tỷ — dự án đã đưa vào chạy: lãi vay thôi được vốn hóa, đi thẳng vào chi phí';
+        add(lv > lv0 ? -1 : 1, 70, lv > lv0 ? '×' + f(lv / lv0, 1) : '−' + f((1 - lv / lv0) * 100, 0) + '%', 'Chi phí lãi vay ' + lb + ' · ' + ty(lv) + ' tỷ', tx);
       } else if (xd != null && xd0 != null && V(L, '12700') && Math.abs(xd - xd0) > V(L, '12700') * 0.02 && Math.abs(xd - xd0) > xd0 * 0.3)
-        add(0, 45, 'Xây dựng cơ bản dở dang ' + ty(xd) + ' tỷ (cùng kỳ ' + ty(xd0) + ') — ' + (xd > xd0 ? 'đang dồn vốn đầu tư, chưa tạo ra doanh thu.' : 'phần lớn đã chuyển thành tài sản hoạt động.'));
+        add(0, 45, ty(xd), 'Xây dựng cơ bản dở dang (tỷ)', 'cùng kỳ ' + ty(xd0) + ' tỷ — ' + (xd > xd0 ? 'đang dồn vốn đầu tư, chưa tạo ra doanh thu' : 'phần lớn đã chuyển thành tài sản hoạt động'));
       var vay = gop('13110', '13340'), tien = gop('11100', '11200');
       var nd = (vay(L) || 0) - (tien(L) || 0), nd0 = (vay(P) || 0) - (tien(P) || 0), eq = V(L, '14000');
-      if (eq > 0 && P && Math.abs(nd - nd0) > eq * 0.1) add(nd > nd0 ? -1 : 1, 55, (nd >= 0 ? 'Nợ vay ròng ' + ty(nd) + ' tỷ' : 'Tiền ròng ' + ty(-nd) + ' tỷ') + ' cuối ' + lb + ' (cùng kỳ ' + (nd0 >= 0 ? 'nợ vay ròng ' + ty(nd0) : 'tiền ròng ' + ty(-nd0)) + ' tỷ)' + (nd > 0 ? ' = ' + lan(nd / eq) + ' lần vốn chủ' : '') + '.');
+      if (eq > 0 && P && Math.abs(nd - nd0) > eq * 0.1) add(nd > nd0 ? -1 : 1, 55, ty(Math.abs(nd)), (nd >= 0 ? 'Nợ vay ròng ' + (nd > nd0 ? 'tăng' : 'giảm') : 'Tiền ròng ' + (nd < nd0 ? 'tăng' : 'giảm')) + ' · cuối ' + lb + ' (tỷ)',
+        'cùng kỳ ' + (nd0 >= 0 ? 'nợ vay ròng ' + ty(nd0) : 'tiền ròng ' + ty(-nd0)) + ' tỷ' + (nd > 0 ? '; bằng ' + lan(nd / eq) + ' lần vốn chủ' : ''));
       var gv = T && T0 ? tang(V(T, '22100'), V(T0, '22100')) : null, ht = tang(V(L, '11400'), V(P, '11400'));
-      if (ht != null && gv != null && ht - gv > 20 && V(L, '11400') > (V(L, '12700') || 0) * 0.08) add(-1, 65, 'Hàng tồn kho ' + ty(V(L, '11400')) + ' tỷ (' + dau(ht, 0) + ' YoY) tăng nhanh hơn giá vốn 4 quý (' + dau(gv, 0) + ').');
+      if (ht != null && gv != null && ht - gv > 20 && V(L, '11400') > (V(L, '12700') || 0) * 0.08) add(-1, 65, dau(ht, 0), 'Hàng tồn kho YoY · ' + ty(V(L, '11400')) + ' tỷ', 'tăng nhanh hơn giá vốn 4 quý (' + dau(gv, 0) + ')');
       var dtT = T && T0 ? tang(V(T, '21001'), V(T0, '21001')) : null, pt = tang(V(L, '11300'), V(P, '11300'));
-      if (pt != null && dtT != null && pt - dtT > 25 && V(L, '11300') > (V(L, '12700') || 0) * 0.1) add(-1, 62, 'Phải thu ngắn hạn ' + ty(V(L, '11300')) + ' tỷ (' + dau(pt, 0) + ' YoY) trong khi doanh thu 4 quý ' + dau(dtT, 0) + ' — tiền chưa về theo doanh thu.');
+      if (pt != null && dtT != null && pt - dtT > 25 && V(L, '11300') > (V(L, '12700') || 0) * 0.1) add(-1, 62, dau(pt, 0), 'Phải thu ngắn hạn YoY · ' + ty(V(L, '11300')) + ' tỷ', 'doanh thu 4 quý chỉ ' + dau(dtT, 0) + ' — tiền chưa về theo doanh thu');
       var tt = V(L, '13130'), tt0 = V(P, '13130'), dtt = T ? V(T, '21001') : null;
-      if (tt != null && dtt > 0 && tt > dtt * 0.15) add(Math.sign(n(tang(tt, tt0))), 86, 'Người mua trả tiền trước ' + ty(tt) + ' tỷ (' + bien(tt, tt0) + ' YoY), bằng ' + f(tt / dtt, 1) + ' lần doanh thu 4 quý — tiền khách đã trả cho hàng/dự án chưa bàn giao, sẽ thành doanh thu các quý tới.');
+      if (tt != null && dtt > 0 && tt > dtt * 0.15) add(Math.sign(n(tang(tt, tt0))), 86, ty(tt), 'Người mua trả tiền trước (tỷ)', bien(tt, tt0) + ' YoY, bằng ' + f(tt / dtt, 1) + ' lần doanh thu 4 quý — tiền khách đã trả cho hàng/dự án chưa bàn giao, sẽ thành doanh thu các quý tới');
       var cth = V(L, '13199'), cth0 = V(P, '13199');
-      if (cth != null && dtt > 0 && cth > dtt * 0.05) add(Math.sign(n(tang(cth, cth0))), 50, 'Doanh thu chưa thực hiện ' + ty(cth) + ' tỷ (' + bien(cth, cth0) + ' YoY) — hợp đồng đã thu tiền, ghi nhận dần.');
+      if (cth != null && dtt > 0 && cth > dtt * 0.05) add(Math.sign(n(tang(cth, cth0))), 50, ty(cth), 'Doanh thu chưa thực hiện (tỷ)', bien(cth, cth0) + ' YoY — hợp đồng đã thu tiền, ghi nhận dần');
       if (T && V(T, '23800') > 0) { var ngoai = (V(T, '21500') || 0) + (V(T, '23300') || 0) + (V(T, '23900') || 0), tl = ngoai / V(T, '23800');
-        if (tl > 0.4) add(-1, 75, f(tl * 100, 0) + '% LNTT 4 quý đến từ doanh thu tài chính, liên doanh liên kết và thu nhập khác (' + ty(ngoai) + ' tỷ) — không phải từ bán hàng cốt lõi.'); }
+        if (tl > 0.4) add(-1, 75, f(tl * 100, 0) + '%', 'LNTT 4 quý đến từ ngoài kinh doanh chính', 'doanh thu tài chính, liên doanh liên kết và thu nhập khác ' + ty(ngoai) + ' tỷ'); }
       var pq = peerQ(peer, '21001'), kc = kDu(pq);
       if (kc) { var a = thiPhan(peer, t, kc, '21001', 'ttm'), b = thiPhan(peer, t, kc - 4, '21001', 'ttm');
-        if (a) { add(b ? Math.sign(a.p - b.p) : 0, 84, 'Doanh thu 4 quý đến ' + lbQ(kc) + ' chiếm <b>' + ph(a.p) + '</b> tổng ' + a.n + ' doanh nghiệp niêm yết cùng ngành' + (b ? ' (cùng kỳ ' + ph(b.p) + ', ' + diem(a.p, b.p) + ')' : '') + ' — đứng thứ ' + a.hang + '/' + a.n + '.');
+        if (a) { add(b ? Math.sign(a.p - b.p) : 0, 84, ph(a.p), 'Thị phần doanh thu 4 quý ' + (b ? (a.p > b.p ? 'tăng' : (a.p < b.p ? 'giảm' : 'giữ')) + ' · ' : '') + 'thứ ' + a.hang + '/' + a.n, (b ? 'cùng kỳ ' + ph(b.p) + ' (' + diem(a.p, b.p) + '), ' : '') + 'trong ' + a.n + ' doanh nghiệp niêm yết cùng ngành');
           var gs = a.ds.map(function(x){ return tang(x.v, ttmPeer(peer, x.c, kc - 4, '21001')); }), gMe = tang(a.v, ttmPeer(peer, t, kc - 4, '21001')), gMed = trungVi(gs);
-          if (gMe != null && gMed != null) add(Math.sign(gMe - gMed), 58, 'Tăng trưởng doanh thu 4 quý ' + dau(gMe, 0) + ' so với trung vị ngành ' + dau(gMed, 0) + '.');
+          if (gMe != null && gMed != null) add(Math.sign(gMe - gMed), 58, dau(gMe, 0), 'Tăng trưởng doanh thu 4 quý ' + (gMe >= gMed ? 'vượt' : 'kém') + ' ngành', 'trung vị ngành ' + dau(gMed, 0));
           var bg = a.ds.map(function(x){ var gp = ttmPeer(peer, x.c, kc, '23100'); return gp != null ? gp / x.v * 100 : null; }), me = ttmPeer(peer, t, kc, '23100');
-          if (me != null && trungVi(bg) != null) add(Math.sign(me / a.v * 100 - trungVi(bg)), 52, 'Biên gộp 4 quý ' + ph(me / a.v * 100) + ' so với trung vị ngành ' + ph(trungVi(bg)) + '.');
+          if (me != null && trungVi(bg) != null) add(Math.sign(me / a.v * 100 - trungVi(bg)), 52, ph(me / a.v * 100), 'Biên gộp 4 quý ' + (me / a.v * 100 >= trungVi(bg) ? 'cao hơn' : 'thấp hơn') + ' ngành', 'trung vị ngành ' + ph(trungVi(bg)));
           raw.__bangPeer = { ten: 'Doanh thu 4 quý', k: kc, a: a, b: b, item: '21001', kieu: 'ttm' };
         } }
     }
 
     if (loai === 'ck') {
       var mg = V(L, '621110'), mg0 = V(P, '621110'), pqm = peerQ(peer, '621110'), kcm = kDu(pqm);
-      if (mg != null) { var tx2 = 'Doanh thu môi giới ' + lb + ' ' + ty(mg) + ' tỷ (' + bien(mg, mg0) + ' cùng kỳ)' + (T && T0 ? ', 4 quý ' + bien(V(T, '621110'), V(T0, '621110')) : '') + '.';
-        var s2 = Math.sign(n(tang(mg, mg0)));
-        if (kcm) { var a2 = thiPhan(peer, t, kcm, '621110', 'q'), b2 = thiPhan(peer, t, kcm - 4, '621110', 'q');
-          if (a2) { tx2 += ' Thị phần doanh thu môi giới trong ' + a2.n + ' CTCK niêm yết: <b>' + ph(a2.p) + '</b> ' + lbQ(kcm) + (b2 ? ', cùng kỳ ' + ph(b2.p) + ' (' + diem(a2.p, b2.p) + ')' : '') + ' — đứng thứ ' + a2.hang + '.';
-            if (b2) s2 = Math.sign(a2.p - b2.p); raw.__bangPeer = { ten: 'Doanh thu môi giới quý', k: kcm, a: a2, b: b2, item: '621110', kieu: 'q' }; } }
-        add(s2, 96, tx2); }
+      if (mg != null) { var dtMg = 'doanh thu môi giới ' + lb + ' ' + ty(mg) + ' tỷ (' + bien(mg, mg0) + ' YoY' + (T && T0 ? ', 4 quý ' + bien(V(T, '621110'), V(T0, '621110')) : '') + ')';
+        var a2 = kcm ? thiPhan(peer, t, kcm, '621110', 'q') : null, b2 = kcm ? thiPhan(peer, t, kcm - 4, '621110', 'q') : null;
+        if (a2) raw.__bangPeer = { ten: 'Doanh thu môi giới quý', k: kcm, a: a2, b: b2, item: '621110', kieu: 'q' };
+        if (a2 && b2) add(Math.sign(a2.p - b2.p), 96, ph(a2.p), 'Thị phần môi giới ' + lbQ(kcm) + ' ' + (a2.p > b2.p ? 'tăng' : (a2.p < b2.p ? 'giảm' : 'giữ')) + ' · thứ ' + a2.hang + '/' + a2.n,
+          'cùng kỳ ' + ph(b2.p) + ' (' + diem(a2.p, b2.p) + '), tính theo doanh thu môi giới trong ' + a2.n + ' CTCK niêm yết; ' + dtMg);
+        else add(Math.sign(n(tang(mg, mg0))), 96, soNgan(mg, mg0), 'Doanh thu môi giới ' + lb + ' · ' + ty(mg) + ' tỷ', (T && T0 ? '4 quý ' + bien(V(T, '621110'), V(T0, '621110')) : '') + (a2 ? (T && T0 ? '; ' : '') + 'thị phần ' + ph(a2.p) + ', thứ ' + a2.hang + '/' + a2.n : '')); }
       var mr = V(L, '700001'), mr0 = V(P, '700001'), pqr = peerQ(peer, '700001'), kcr = kDu(pqr);
-      if (mr != null) { var tx3 = 'Dư nợ cho vay (margin) ' + ty(mr) + ' tỷ (' + bien(mr, mr0) + ' YoY)' + (V(L, '14000') ? ', bằng ' + lan(mr / V(L, '14000')) + ' lần vốn chủ' : '') + '.';
-        var s3 = Math.sign(n(tang(mr, mr0)));
-        if (kcr) { var a3 = thiPhan(peer, t, kcr, '700001', 'q'), b3 = thiPhan(peer, t, kcr - 4, '700001', 'q');
-          if (a3) { var gN = b3 ? tang(a3.tong, b3.tong) : null; tx3 += ' Thị phần margin ' + ph(a3.p) + ' ' + lbQ(kcr) + (b3 ? ' (cùng kỳ ' + ph(b3.p) + ')' : '') + (gN != null ? '; cả nhóm ' + dau(gN, 0) + ' YoY' : '') + '.'; if (b3) s3 = Math.sign(a3.p - b3.p); } }
-        add(s3, 90, tx3); }
+      if (mr != null) { var duNo = 'dư nợ ' + ty(mr) + ' tỷ (' + bien(mr, mr0) + ' YoY' + (V(L, '14000') ? ', bằng ' + lan(mr / V(L, '14000')) + ' lần vốn chủ' : '') + ')';
+        var a3 = kcr ? thiPhan(peer, t, kcr, '700001', 'q') : null, b3 = kcr ? thiPhan(peer, t, kcr - 4, '700001', 'q') : null;
+        if (a3 && b3) { var gN = tang(a3.tong, b3.tong);
+          add(Math.sign(a3.p - b3.p), 90, ph(a3.p), 'Thị phần cho vay margin ' + lbQ(kcr) + ' ' + (a3.p > b3.p ? 'tăng' : (a3.p < b3.p ? 'giảm' : 'giữ')) + ' · thứ ' + a3.hang + '/' + a3.n,
+            'cùng kỳ ' + ph(b3.p) + (gN != null ? '; cả nhóm ' + dau(gN, 0) + ' YoY' : '') + '; ' + duNo); }
+        else add(Math.sign(n(tang(mr, mr0))), 90, soNgan(mr, mr0), 'Dư nợ cho vay margin YoY · ' + ty(mr) + ' tỷ', V(L, '14000') ? 'bằng ' + lan(mr / V(L, '14000')) + ' lần vốn chủ' : ''); }
       var td = gop('700039', am('700046'))(L), td0 = gop('700039', am('700046'))(P);
-      if (td != null) add(Math.sign(td - (td0 || 0)), 72, 'Tự doanh (lãi − lỗ tài sản FVTPL) ' + tyD(td) + ' tỷ ' + lb + ' (cùng kỳ ' + tyD(td0) + ' tỷ)' + (V(L, '23800') > 0 ? ', bằng ' + f(td / V(L, '23800') * 100, 0) + '% LNTT' : '') + '.');
+      if (td != null) add(Math.sign(td - (td0 || 0)), 72, tyD(td), 'Tự doanh (lãi − lỗ FVTPL) ' + lb + ', tỷ', 'cùng kỳ ' + tyD(td0) + ' tỷ' + (V(L, '23800') > 0 ? '; bằng ' + f(td / V(L, '23800') * 100, 0) + '% LNTT' : ''));
       var cth2 = V(L, '700073'), pbt = V(L, '23800');
-      if (cth2 != null && pbt > 0 && cth2 / pbt > 0.2) add(-1, 74, f(cth2 / pbt * 100, 0) + '% LNTT ' + lb + ' (' + ty(cth2) + ' tỷ) là lãi <u>chưa thực hiện</u> — đánh giá lại danh mục, thị trường giảm là mất.');
+      if (cth2 != null && pbt > 0 && cth2 / pbt > 0.2) add(-1, 74, f(cth2 / pbt * 100, 0) + '%', 'LNTT ' + lb + ' là lãi chưa thực hiện', ty(cth2) + ' tỷ — đánh giá lại danh mục, thị trường giảm là mất');
       var dp = V(L, '700053');
-      if (dp != null && pbt > 0 && Math.abs(dp) > pbt * 0.1) add(-1, 94, (dp < 0 ? '<b>Hoàn nhập dự phòng ' + ty(-dp) + ' tỷ = ' + f(-dp / pbt * 100, 0) + '% LNTT ' + lb + '</b> — khoản một lần, không lặp lại đều như doanh thu' : 'Trích dự phòng ' + ty(dp) + ' tỷ = ' + f(dp / pbt * 100, 0) + '% LNTT') + (V(P, '700053') != null ? ' (cùng kỳ ' + (V(P, '700053') < 0 ? 'hoàn nhập ' + ty(-V(P, '700053')) : 'trích ' + ty(V(P, '700053'))) + ' tỷ)' : '') + '.');
+      if (dp != null && pbt > 0 && Math.abs(dp) > pbt * 0.1) add(-1, 94, f(Math.abs(dp) / pbt * 100, 0) + '%', dp < 0 ? 'LNTT ' + lb + ' đến từ hoàn nhập dự phòng' : 'Trích dự phòng so với LNTT ' + lb,
+        (dp < 0 ? 'hoàn nhập ' + ty(-dp) + ' tỷ — khoản một lần, không lặp lại đều như doanh thu' : 'trích ' + ty(dp) + ' tỷ') + (V(P, '700053') != null ? '; cùng kỳ ' + (V(P, '700053') < 0 ? 'hoàn nhập ' + ty(-V(P, '700053')) : 'trích ' + ty(V(P, '700053'))) + ' tỷ' : ''));
       var dtk = V(L, '21001'), dtk0 = V(P, '21001');
       if (dtk > 0 && dtk0 > 0 && mg != null && mg0 != null) {
         var co = [['môi giới', '621110'], ['lãi margin', '700044'], ['lãi FVTPL', '700039']].map(function(x){ return x[0] + ' ' + ph(V(L, x[1]) / dtk * 100, 0) + ' (cùng kỳ ' + ph(V(P, x[1]) / dtk0 * 100, 0) + ')'; });
-        add(0, 50, 'Cơ cấu doanh thu ' + lb + ': ' + co.join(', ') + '.');
+        add(0, 50, '', 'Cơ cấu doanh thu ' + lb, co.join(', '));
       }
       var lvm = V(L, '22509'), lm = V(L, '700044');
-      if (lvm > 0 && lm > 0) add(lm > lvm ? 1 : -1, 40, 'Lãi cho vay margin ' + ty(lm) + ' tỷ so với chi phí lãi vay ' + ty(lvm) + ' tỷ (' + f(lm / lvm, 2) + ' lần).');
+      if (lvm > 0 && lm > 0) add(lm > lvm ? 1 : -1, 40, f(lm / lvm, 2) + ' lần', 'Lãi cho vay margin / chi phí lãi vay', ty(lm) + ' / ' + ty(lvm) + ' tỷ');
     }
 
     if (loai === 'nh') {
       var ln = V(L, '412100'), ln0 = V(P, '412100'), lnD = m[Math.floor((K - 1) / 4) * 4] ? V(m[Math.floor((K - 1) / 4) * 4], '412100') : null;
-      var pqn = peerQ(peer, '412100'), kcn = kDu(pqn), tx4 = 'Cho vay khách hàng ' + ty(ln) + ' tỷ: ' + (lnD ? dau(tang(ln, lnD), 1) + ' từ đầu năm, ' : '') + bien(ln, ln0) + ' YoY';
+      var pqn = peerQ(peer, '412100'), kcn = kDu(pqn), ct4 = lnD ? dau(tang(ln, lnD), 1) + ' từ đầu năm' : '';
       if (kcn) { var a4 = thiPhan(peer, t, kcn, '412100', 'q'), b4 = thiPhan(peer, t, kcn - 4, '412100', 'q');
         if (a4) { var gs4 = trungVi(a4.ds.map(function(x){ return tang(x.v, giaTri(peer, x.c, fdQ(kcn - 4), '412100')); }));
-          tx4 += (gs4 != null ? ' (trung vị ' + a4.n + ' ngân hàng niêm yết ' + dau(gs4, 0) + ')' : '') + '. Thị phần tín dụng trong nhóm <b>' + ph(a4.p) + '</b>' + (b4 ? ', cùng kỳ ' + ph(b4.p) + ' (' + diem(a4.p, b4.p, 2) + ')' : '') + ' — đứng thứ ' + a4.hang;
+          ct4 += (gs4 != null ? (ct4 ? '; ' : '') + 'trung vị ' + a4.n + ' ngân hàng niêm yết ' + dau(gs4, 0) : '') + '; thị phần tín dụng ' + ph(a4.p) + (b4 ? ' (cùng kỳ ' + ph(b4.p) + ', ' + diem(a4.p, b4.p, 2) + ')' : '') + ', thứ ' + a4.hang;
           raw.__bangPeer = { ten: 'Cho vay khách hàng', k: kcn, a: a4, b: b4, item: '412100', kieu: 'q' }; } }
-      if (ln != null) add(Math.sign(n(tang(ln, ln0))), 90, tx4 + '.');
+      if (ln != null) add(Math.sign(n(tang(ln, ln0))), 90, soNgan(ln, ln0), 'Cho vay khách hàng YoY · ' + ty(ln) + ' tỷ', ct4);
       var dep = V(L, '413300'), dep0 = V(P, '413300');
-      if (dep && dep0 && ln0) add(Math.sign(n(tang(dep, dep0)) - n(tang(ln, ln0))), 74, 'Tiền gửi khách hàng ' + bien(dep, dep0) + ' YoY ' + (tang(dep, dep0) < tang(ln, ln0) ? 'chậm hơn' : 'nhanh hơn') + ' cho vay → cho vay/tiền gửi ' + ph(ln / dep * 100, 0) + ' (cùng kỳ ' + ph(ln0 / dep0 * 100, 0) + ').');
+      if (dep && dep0 && ln0) add(Math.sign(n(tang(dep, dep0)) - n(tang(ln, ln0))), 74, soNgan(dep, dep0), 'Tiền gửi khách hàng tăng ' + (tang(dep, dep0) < tang(ln, ln0) ? 'chậm hơn' : 'nhanh hơn') + ' cho vay',
+        'cho vay / tiền gửi ' + ph(ln / dep * 100, 0) + ' (cùng kỳ ' + ph(ln0 / dep0 * 100, 0) + ')');
       var nn = V(L, '413100'), nn0 = V(P, '413100'), ta = V(L, '12700');
-      if (nn > 0 && nn0 > 0 && nn / nn0 > 1.5 && ta && nn > ta * 0.03) add(-1, 68, 'Nợ Chính phủ & NHNN ' + ty(nn) + ' tỷ, gấp ' + f(nn / nn0, 1) + ' lần cùng kỳ — nguồn vốn ngoài tiền gửi dân cư tăng mạnh.');
+      if (nn > 0 && nn0 > 0 && nn / nn0 > 1.5 && ta && nn > ta * 0.03) add(-1, 68, '×' + f(nn / nn0, 1), 'Nợ Chính phủ & NHNN · ' + ty(nn) + ' tỷ', 'so với cùng kỳ — nguồn vốn ngoài tiền gửi dân cư tăng mạnh');
       var ea = function(o){ return gop('412100', '411400', '412300')(o); };
       var nim = (T && ea(L) && m[K - 4] && ea(m[K - 4])) ? V(T, '421900') / ((ea(L) + ea(m[K - 4])) / 2) * 100 : null;
       var nim0 = (T0 && m[K - 4] && m[K - 8] && ea(m[K - 4]) && ea(m[K - 8])) ? V(T0, '421900') / ((ea(m[K - 4]) + ea(m[K - 8])) / 2) * 100 : null;
-      if (nim != null) add(nim0 != null ? Math.sign(nim - nim0) : 0, 86, 'Biên lãi thuần ước tính (thu nhập lãi thuần 4 quý ÷ cho vay + tiền gửi liên ngân hàng + chứng khoán đầu tư bình quân) <b>' + ph(nim, 2) + '</b>' + (nim0 != null ? ' (cùng kỳ ' + ph(nim0, 2) + ', ' + diem(nim, nim0, 2) + ')' : '') + '.');
+      if (nim != null) add(nim0 != null ? Math.sign(nim - nim0) : 0, 86, ph(nim, 2), 'Biên lãi thuần (ước tính)' + (nim0 != null ? (nim > nim0 ? ' tăng' : (nim < nim0 ? ' giảm' : '')) : ''), (nim0 != null ? 'cùng kỳ ' + ph(nim0, 2) + ' (' + diem(nim, nim0, 2) + '); ' : '') + 'thu nhập lãi thuần 4 quý ÷ cho vay + tiền gửi liên ngân hàng + chứng khoán đầu tư bình quân');
       var toi = V(L, '421701'), toi0 = V(P, '421701');
       if (toi && toi0 && V(L, '421900') != null) { var ng1 = (1 - V(L, '421900') / toi) * 100, ng0 = (1 - V(P, '421900') / toi0) * 100;
-        add(0, 55, 'Thu nhập ngoài lãi chiếm ' + ph(ng1, 0) + ' TOI (cùng kỳ ' + ph(ng0, 0) + '); phí dịch vụ ' + bien(V(L, '423200'), V(P, '423200')) + ', ngoại hối ' + bien(V(L, '423300'), V(P, '423300')) + ' YoY.'); }
+        add(0, 55, ph(ng1, 0), 'Thu nhập ngoài lãi / TOI', 'cùng kỳ ' + ph(ng0, 0) + '; phí dịch vụ ' + bien(V(L, '423200'), V(P, '423200')) + ', ngoại hối ' + bien(V(L, '423300'), V(P, '423300')) + ' YoY'); }
       if (toi && toi0 && V(L, '22200') != null && V(P, '22200') != null) { var ci = V(L, '22200') / toi * 100, ci0 = V(P, '22200') / toi0 * 100;
-        if (Math.abs(ci - ci0) >= 2) add(-Math.sign(ci - ci0), 58, 'Chi phí hoạt động/TOI (CIR) ' + ph(ci, 0) + ' (cùng kỳ ' + ph(ci0, 0) + ').'); }
+        if (Math.abs(ci - ci0) >= 2) add(-Math.sign(ci - ci0), 58, ph(ci, 0), 'Chi phí hoạt động / TOI (CIR) ' + (ci > ci0 ? 'tăng' : 'giảm'), 'cùng kỳ ' + ph(ci0, 0)); }
       var cc = null, cc0 = null;
       if (T && T0 && ln && ln0 && m[K - 4]) { cc = V(T, '422900') / ((ln + V(m[K - 4], '412100')) / 2) * 100; cc0 = (m[K - 8] && V(m[K - 8], '412100')) ? V(T0, '422900') / ((ln0 + V(m[K - 8], '412100')) / 2) * 100 : null;
-        if (isFinite(cc)) add(cc0 != null ? -Math.sign(cc - cc0) : 0, 64, 'Chi phí dự phòng 4 quý = ' + ph(cc, 2) + ' dư nợ bình quân' + (cc0 != null ? ' (cùng kỳ ' + ph(cc0, 2) + ')' : '') + '.'); }
+        if (isFinite(cc)) add(cc0 != null ? -Math.sign(cc - cc0) : 0, 64, ph(cc, 2), 'Chi phí dự phòng 4 quý / dư nợ bình quân' + (cc0 != null ? (cc > cc0 ? ' tăng' : (cc < cc0 ? ' giảm' : '')) : ''), cc0 != null ? 'cùng kỳ ' + ph(cc0, 2) : ''); }
       var dpr = V(L, '412200'), dpr0 = V(P, '412200');
       if (dpr != null && dpr0 != null && ln && ln0) { var b1 = Math.abs(dpr) / ln * 100, b0 = Math.abs(dpr0) / ln0 * 100, ghiDp = '';
         // quy du phong mong di: do da dung xu ly no (quy giam tuyet doi) hay tang cham hon du no; "nho trich it hon" chi khi chi phi du phong 4 quy giam that
         if (b1 < b0 - 0.2) ghiDp = ' — bộ đệm mỏng đi' + (Math.abs(dpr) < Math.abs(dpr0) ? ' (quỹ dự phòng ' + bien(Math.abs(dpr), Math.abs(dpr0)) + ' YoY: đã dùng xử lý nợ nhiều hơn mức trích thêm)' : ' (quỹ dự phòng tăng chậm hơn dư nợ)')
           + ((cc != null && cc0 != null && isFinite(cc) && isFinite(cc0) && cc < cc0) ? ', lợi nhuận đang được hỗ trợ bởi trích dự phòng ít hơn' : '');
-        add(Math.sign(b1 - b0), 82, 'Quỹ dự phòng/dư nợ ' + ph(b1, 2) + ' (cùng kỳ ' + ph(b0, 2) + ')' + ghiDp + '.'); }
+        add(Math.sign(b1 - b0), 82, ph(b1, 2), 'Quỹ dự phòng / dư nợ' + (b1 > b0 ? ' tăng' : (b1 < b0 ? ' giảm' : '')), 'cùng kỳ ' + ph(b0, 2) + ghiDp); }
     }
     out.sort(function(a, b){ return b.w - a.w; });
     // Cho ket luan: tang truong LNTT 4 quy "loi" (bo phan thay doi cua khoan khong deu), co do, thi phan
@@ -652,74 +663,86 @@
     else if (A.h === 1 && B && B.h === 1) { nhan = (A.gNP != null && A.gNP >= 20 && B.gNP != null && B.gNP >= 20 && !(A.gRv != null && A.gRv < 0)) ? 'TĂNG TRƯỞNG MẠNH' : 'ĐANG TĂNG TRƯỞNG'; mau = 'tc'; }
     else { nhan = 'CHỮNG LẠI'; mau = 'kq'; }
     var nhip = (A.h === 1 && A.gNP != null && B && B.gNP != null) ? (A.gNP - B.gNP >= 10 ? 'tăng tốc' : (A.gNP - B.gNP <= -10 ? 'chậm lại' : '')) : '';
-    // diem sang / toi bo sung tu goc nhin 2 quy
-    var them = [], add = function(sg, w, txt){ them.push({ s: sg, w: w, t: txt }); };
-    var hai = function(f){ return (B ? B.lb + ' ' + f(B) + ', ' : '') + A.lb + ' ' + f(A); };
-    var dau2 = function(a, b){ return (a == null || b == null) ? 0 : (a > 0 && b > 0 ? 1 : (a < 0 && b < 0 ? -1 : Math.sign(a))); };
-    add(A.h == null ? 0 : (B && B.h != null ? (A.h + B.h > 0 ? 1 : (A.h + B.h < 0 ? -1 : A.h)) : A.h), 99,
-      '<b>LNST công ty mẹ ' + hai(function(z){ return soCk(z.np, z.np0); }) + ' so với cùng kỳ</b>' + (nhip ? ' — ' + nhip : '') + ' (quý gần nhất ' + ty(A.np) + ' tỷ).');
-    if (A.rv != null) add(dau2(A.gRv, B ? B.gRv : null), 97, (loai === 'nh' ? 'Tổng thu nhập hoạt động ' : 'Doanh thu ') + hai(function(z){ return z.gRv == null ? '—' : dau(z.gRv, 0); }) + ' so với cùng kỳ (quý gần nhất ' + ty(A.rv) + ' tỷ).');
-    if (A.lc != null && A.lc0 != null) add(dau2(A.gLc, B ? B.gLc : null), 95, TEN_LOI[loai] + ' ' + hai(function(z){ return soCk(z.lc, z.lc0); }) + ' so với cùng kỳ.');
-    // nhan dinh (tong hop)
-    var nd = [], pt = function(x){ return f(Math.abs(x), 0) + '%'; }, tenDt = loai === 'nh' ? 'tổng thu nhập hoạt động' : 'doanh thu', TenDt = loai === 'nh' ? 'Tổng thu nhập hoạt động' : 'Doanh thu';
+    // nhan dinh tong hop: { ic: 'ok' | 'no' | 'canh' | 'len' | 'xuong', ten, ct } — so lieu 2 quy da nam o 4 o KPI
+    var nd = [], y = function(ic, ten, ct){ nd.push({ ic: ic, ten: ten, ct: ct || '' }); };
+    var pt = function(x){ return f(Math.abs(x), 0) + '%'; }, tenDt = loai === 'nh' ? 'tổng thu nhập hoạt động' : 'doanh thu', TenDt = loai === 'nh' ? 'Tổng thu nhập hoạt động' : 'Doanh thu';
     var thoiHN = loai === 'dn' && A.gRv != null && A.gRv < -10 && A.lk > 0 && A.lk > Math.max(A.lk0 || 0, 0) * 3 && A.pbt && A.lk > Math.abs(A.pbt) * 0.1;
     // khoan ngoai kinh doanh chinh dong gop nhieu nhat vao phan tang LNTT quy (tu "Loi nhuan den tu dau")
     var NGOAI = { dn: ['Doanh thu tài chính', 'Liên doanh, liên kết', 'Thu nhập khác ròng', 'Chi phí tài chính'], nh: ['Hoạt động khác', 'Chi phí dự phòng', 'Chứng khoán'],
       ck: ['Tự doanh (lãi − lỗ FVTPL)', 'Dự phòng (hoàn nhập +, trích −)'] }[loai] || [];
     var ngoaiMax = (s.cq ? s.cq.ds : []).filter(function(z){ return NGOAI.indexOf(z.ten) >= 0 && z.d > 0; }).sort(function(a, b){ return b.d - a.d; })[0];
-    if (A.gm != null && A.gm < 0) nd.push('<b>Lỗ gộp ' + A.lb + '</b> (biên gộp ' + ph(A.gm * 100) + '): giá vốn vượt doanh thu — thường do giảm giá hàng tồn kho, bán dưới giá vốn hoặc giá đầu vào tăng đột biến; cần đọc thuyết minh BCTC.');
-    if (thoiHN) nd.push('<b>Doanh thu giảm ' + pt(A.gRv) + ' nhưng lãi liên doanh, liên kết tăng từ ' + ty(A.lk0 || 0) + ' lên ' + ty(A.lk) + ' tỷ</b> — dấu hiệu một công ty con đã thôi hợp nhất: so sánh cùng kỳ bị lệch cơ sở, chưa chắc kinh doanh đi xuống.');
+    if (A.gm != null && A.gm < 0) y('no', 'Lỗ gộp ' + A.lb, 'biên gộp ' + ph(A.gm * 100) + ': giá vốn vượt doanh thu — thường do giảm giá hàng tồn kho, bán dưới giá vốn hoặc giá đầu vào tăng đột biến; cần đọc thuyết minh BCTC');
+    if (thoiHN) y('canh', 'Có thể một công ty con đã thôi hợp nhất', 'doanh thu giảm ' + pt(A.gRv) + ' nhưng lãi liên doanh, liên kết tăng từ ' + ty(A.lk0 || 0) + ' lên ' + ty(A.lk) + ' tỷ — so sánh cùng kỳ bị lệch cơ sở, chưa chắc kinh doanh đi xuống');
     if (A.gRv != null && A.h != null && !(A.gm != null && A.gm < 0) && !thoiHN) {
       var gmUp = A.gm != null && A.gm0 != null && A.gm - A.gm0 >= 0.005, gmDn = A.gm != null && A.gm0 != null && A.gm0 - A.gm >= 0.005;
-      var bgm = (A.gm != null && A.gm0 != null) ? ' (biên gộp ' + ph(A.gm0 * 100) + ' → ' + ph(A.gm * 100) + ')' : '';
-      if (A.gRv > 0 && A.h === 1) nd.push(gmUp ? '<b>Tăng trưởng chất lượng:</b> doanh thu tăng ' + pt(A.gRv) + ' và biên lãi gộp mở rộng' + bgm + ' — lợi nhuận tăng nhanh hơn doanh thu.'
-        : (gmDn ? '<b>Lợi nhuận tăng nhờ quy mô</b> (doanh thu tăng ' + pt(A.gRv) + ') nhưng biên gộp thu hẹp' + bgm + ' — theo dõi giá bán và chi phí đầu vào các quý tới.'
-        : '<b>' + TenDt + ' và lợi nhuận cùng tăng</b> (' + tenDt + ' ' + dau(A.gRv, 0) + ', LNST ' + soCk(A.np, A.np0) + ').'));
-      else if (A.gRv > 0 && A.h === -1) nd.push('<b>' + TenDt + ' tăng ' + pt(A.gRv) + ' nhưng lợi nhuận giảm</b>' + bgm + ' — chi phí đang ăn mòn tăng trưởng (xem "Lợi nhuận đến từ đâu").');
-      else if (A.gRv < 0 && A.h === 1) nd.push('<b>Lợi nhuận tăng dù ' + tenDt + ' giảm ' + pt(A.gRv) + '</b>' + bgm + ' — nhờ biên/chi phí hoặc khoản ngoài kinh doanh chính; khó kéo dài nếu ' + tenDt + ' không hồi phục.');
-      else if (A.gRv < 0 && A.h === -1) nd.push('<b>' + TenDt + ' và lợi nhuận cùng giảm</b> (' + tenDt + ' ' + dau(A.gRv, 0) + ', LNST ' + soCk(A.np, A.np0) + ') — hoạt động kinh doanh đang co lại.');
+      var bgm = (A.gm != null && A.gm0 != null) ? 'biên gộp ' + ph(A.gm0 * 100) + ' → ' + ph(A.gm * 100) : '';
+      if (A.gRv > 0 && A.h === 1) {
+        if (gmUp) y('ok', 'Tăng trưởng chất lượng', tenDt + ' ' + dau(A.gRv, 0) + ', ' + bgm + ' — lợi nhuận tăng nhanh hơn ' + tenDt);
+        else if (gmDn) y('canh', 'Lợi nhuận tăng nhờ quy mô', tenDt + ' ' + dau(A.gRv, 0) + ' nhưng ' + bgm + ' — theo dõi giá bán và chi phí đầu vào các quý tới');
+        else y('ok', TenDt + ' và lợi nhuận cùng tăng', tenDt + ' ' + dau(A.gRv, 0) + ', LNST ' + soCk(A.np, A.np0));
+      }
+      else if (A.gRv > 0 && A.h === -1) y('no', TenDt + ' tăng nhưng lợi nhuận giảm', tenDt + ' ' + dau(A.gRv, 0) + (bgm ? ', ' + bgm : '') + ' — chi phí đang ăn mòn tăng trưởng (xem "Lợi nhuận đến từ đâu")');
+      else if (A.gRv < 0 && A.h === 1) y('canh', 'Lợi nhuận tăng dù ' + tenDt + ' giảm', tenDt + ' ' + dau(A.gRv, 0) + (bgm ? ', ' + bgm : '') + ' — nhờ biên/chi phí hoặc khoản ngoài kinh doanh chính; khó kéo dài nếu ' + tenDt + ' không hồi phục');
+      else if (A.gRv < 0 && A.h === -1) y('no', TenDt + ' và lợi nhuận cùng giảm', tenDt + ' ' + dau(A.gRv, 0) + ', LNST ' + soCk(A.np, A.np0) + ' — hoạt động kinh doanh đang co lại');
     }
     if (A.gNP != null && A.gLc != null) {
-      if (A.gNP > 0 && A.gLc < 0 && !thoiHN) nd.push('<b>Chất lượng lợi nhuận thấp:</b> LNST tăng nhưng ' + TEN_LOI[loai].replace(/\s*\(.*\)/, '') + ' giảm ' + pt(A.gLc) + ' — phần tăng đến từ khoản ngoài kinh doanh chính'
-        + (ngoaiMax ? ' (nhiều nhất: ' + gon(ngoaiMax) + ' ' + tyD(ngoaiMax.d) + ' tỷ)' : '') + '.');
-      else if (A.gNP > 0 && A.gLc >= A.gNP - 10) nd.push('<b>Tăng trưởng đến từ kinh doanh cốt lõi</b> (' + TEN_LOI[loai].replace(/\s*\(.*\)/, '') + ' ' + dau(A.gLc, 0) + ') — bền hơn tăng nhờ khoản một lần.');
-      else if (A.gNP < 0 && A.gLc > 0) nd.push('<b>Nền kinh doanh chưa xấu đi:</b> LNST giảm nhưng ' + TEN_LOI[loai].replace(/\s*\(.*\)/, '') + ' vẫn tăng ' + pt(A.gLc) + ' — sụt do chi phí tài chính/khoản bất thường.');
+      var tenLoi = TEN_LOI[loai].replace(/\s*\(.*\)/, '');
+      if (A.gNP > 0 && A.gLc < 0 && !thoiHN) y('no', 'Chất lượng lợi nhuận thấp', 'LNST tăng nhưng ' + tenLoi + ' giảm ' + pt(A.gLc) + ' — phần tăng đến từ khoản ngoài kinh doanh chính'
+        + (ngoaiMax ? ' (nhiều nhất: ' + gon(ngoaiMax) + ' ' + tyD(ngoaiMax.d) + ' tỷ)' : ''));
+      else if (A.gNP > 0 && A.gLc >= A.gNP - 10) y('ok', 'Tăng trưởng đến từ kinh doanh cốt lõi', tenLoi + ' ' + dau(A.gLc, 0) + ' — bền hơn tăng nhờ khoản một lần');
+      else if (A.gNP < 0 && A.gLc > 0) y('canh', 'Nền kinh doanh chưa xấu đi', 'LNST giảm nhưng ' + tenLoi + ' vẫn tăng ' + pt(A.gLc) + ' — sụt do chi phí tài chính/khoản bất thường');
     }
-    if (nhip && B) nd.push('Nhịp tăng trưởng LNST <b>' + nhip + '</b>: ' + B.lb + ' ' + dau(B.gNP, 0) + ' → ' + A.lb + ' ' + dau(A.gNP, 0) + '.');
+    if (nhip && B) y(nhip === 'tăng tốc' ? 'len' : 'xuong', 'Nhịp tăng trưởng LNST ' + nhip, B.lb + ' ' + dau(B.gNP, 0) + ' → ' + A.lb + ' ' + dau(A.gNP, 0));
     if (loai === 'nh' && A.dp != null && A.dp0 != null && A.dp0 !== 0) { var gdp = yoy(Math.abs(A.dp), Math.abs(A.dp0));
-      if (gdp != null && Math.abs(gdp) >= 20) nd.push('Chi phí dự phòng ' + A.lb + ' ' + (gdp < 0 ? 'giảm ' : 'tăng ') + pt(gdp) + ' so với cùng kỳ' + (gdp < 0 && A.h === 1 ? ' — một phần tăng lợi nhuận đến từ trích dự phòng ít hơn.' : (gdp > 0 ? ' — ngân hàng đang trích lập mạnh tay hơn, lợi nhuận bị kìm.' : '.'))); }
-    if (loai === 'ck' && A.td != null && A.pbt > 0 && Math.abs(A.td) > A.pbt * 0.3) nd.push('Tự doanh chiếm ' + f(A.td / A.pbt * 100, 0) + '% LNTT ' + A.lb + ' — lợi nhuận phụ thuộc nhiều vào diễn biến thị trường.');
-    return { q: q, A: A, B: B, nhan: nhan, mau: mau, nhip: nhip, them: them, nd: nd, loai: loai };
+      if (gdp != null && Math.abs(gdp) >= 20) y(gdp < 0 ? 'canh' : 'no', 'Chi phí dự phòng ' + A.lb + ' ' + (gdp < 0 ? 'giảm ' : 'tăng ') + pt(gdp) + ' so với cùng kỳ',
+        gdp < 0 && A.h === 1 ? 'một phần tăng lợi nhuận đến từ trích dự phòng ít hơn' : (gdp > 0 ? 'ngân hàng đang trích lập mạnh tay hơn, lợi nhuận bị kìm' : '')); }
+    if (loai === 'ck' && A.td != null && A.pbt > 0 && Math.abs(A.td) > A.pbt * 0.3) y('canh', 'Tự doanh chiếm ' + f(A.td / A.pbt * 100, 0) + '% LNTT ' + A.lb, 'lợi nhuận phụ thuộc nhiều vào diễn biến thị trường');
+    return { q: q, A: A, B: B, nhan: nhan, mau: mau, nhip: nhip, nd: nd, loai: loai };
   }
-  function bang2Quy(tt){
-    var q = tt.q, loai = tt.loai, R = [];
-    var dong = function(ten, get, get0){ R.push('<tr><td>' + ten + '</td>' + q.map(function(z){ var a = get(z), b = get0(z);
-      return '<td>' + ty(a) + '</td><td class="' + mau(yoy(a, b)) + '">' + soCk(a, b).replace(/ \(cùng kỳ[^)]*\)/, '') + '</td>'; }).join('') + '</tr>'); };
-    dong(loai === 'nh' ? 'Tổng thu nhập hoạt động' : 'Doanh thu', function(z){ return z.rv; }, function(z){ return z.rv0; });
-    if (loai === 'dn') { dong('Lợi nhuận gộp', function(z){ return z.gp; }, function(z){ return z.gp0; });
-      R.push('<tr><td class="mini">&nbsp;&nbsp;biên gộp</td>' + q.map(function(z){ return '<td class="mini">' + (z.gm != null ? ph(z.gm * 100) : '—') + '</td><td class="mini">' + (z.gm != null && z.gm0 != null ? diem(z.gm * 100, z.gm0 * 100) : '') + '</td>'; }).join('') + '</tr>'); }
-    if (loai === 'ck') dong('Tự doanh ròng', function(z){ return z.td; }, function(z){ return z.td0; });
-    if (loai === 'nh') dong('Chi phí dự phòng', function(z){ return z.dp == null ? null : Math.abs(z.dp); }, function(z){ return z.dp0 == null ? null : Math.abs(z.dp0); });
-    dong(TEN_LOI[loai].replace(/\s*\(.*\)/, ''), function(z){ return z.lc; }, function(z){ return z.lc0; });
-    dong('Lợi nhuận trước thuế', function(z){ return z.pbt; }, function(z){ return z.pbt0; });
-    dong('<b>LNST công ty mẹ</b>', function(z){ return z.np; }, function(z){ return z.np0; });
-    return '<table class="ptn pt2q"><tr><td class="mini">tỷ đồng</td>' + q.map(function(z){ return '<td class="mini"><b>' + z.lb + '</b></td><td class="mini">so cùng kỳ</td>'; }).join('') + '</tr>' + R.join('') + '</table>';
+  // cot nho 8 quy: hl = 2 quy dang soi, cmp = cung ky nam truoc; quy lo ve xuong duoi truc
+  function cotNho(vs, lbs){
+    var a = vs.map(function(v){ return v == null ? 0 : v; }), mx = Math.max.apply(null, a.concat([0])), mn = Math.min.apply(null, a.concat([0])), sp = mx - mn || 1, nen = -mn / sp * 100, n8 = vs.length;
+    return '<div class="ksw"><div class="ksp" aria-hidden="true">' + vs.map(function(v, i){
+      if (v == null) return '<span class="ksc"></span>';
+      var hh = Math.abs(v) / sp * 100, cls = 'ksb' + (i >= n8 - 2 ? ' hl' : (i === n8 - 6 || i === n8 - 5 ? ' cmp' : '')) + (v < 0 ? ' am' : '');
+      return '<span class="ksc" title="' + lbs[i] + ': ' + (v < 0 ? '−' + ty(-v) : ty(v)) + ' tỷ"><i class="' + cls + '" style="bottom:' + (v >= 0 ? nen : nen - hh).toFixed(1) + '%;height:' + Math.max(hh, 2).toFixed(1) + '%"></i></span>'; }).join('')
+      + '</div><div class="kspl"><span>' + lbs[0] + '</span><span>' + lbs[n8 - 1] + '</span></div></div>';
+  }
+  // 4 o so lieu quy gan nhat (gia tri, YoY, YoY quy truoc, 8 quy) theo mo hinh DN / ngan hang / CTCK
+  function oQuy(s, tt){
+    var m = s.m, K = s.K, loai = s.loai, ks = []; for (var k = K - 7; k <= K; k++) ks.push(k);
+    var M = loai === 'nh' ? [['Tổng thu nhập hoạt động', function(o){ return dtQuy('nh', o); }], ['LN trước dự phòng', function(o){ return loiQuy('nh', o); }],
+        ['Chi phí dự phòng', function(o){ var v = V(o, '422900'); return v == null ? null : Math.abs(v); }, 1], ['LNST công ty mẹ', npQuy]]
+      : loai === 'ck' ? [['Doanh thu', function(o){ return dtQuy('ck', o); }], ['Tự doanh ròng', gop('700039', am('700046'))], ['LN mảng cốt lõi', function(o){ return loiQuy('ck', o); }], ['LNST công ty mẹ', npQuy]]
+      : [['Doanh thu', function(o){ return dtQuy('dn', o); }], ['Lợi nhuận gộp', g('23100')], ['LN cốt lõi', function(o){ return loiQuy('dn', o); }], ['LNST công ty mẹ', npQuy]];
+    var h = '';
+    M.forEach(function(z){
+      var get = function(k){ return m[k] ? z[1](m[k]) : null; }, nguoc = !!z[2], a = get(K), a0 = get(K - 4), b = get(K - 1), b0 = get(K - 5);
+      var vs = ks.map(get); if (vs.every(function(v){ return v == null; })) return;
+      var huong = (a != null && a0 != null && a !== a0) ? (a > a0 ? 1 : -1) : 0, tot = huong * (nguoc ? -1 : 1);
+      var gm = (z[0] === 'Lợi nhuận gộp' && tt.A.gm != null) ? '<div class="kqs">biên gộp ' + ph(tt.A.gm * 100) + (tt.A.gm0 != null ? ' (' + diem(tt.A.gm * 100, tt.A.gm0 * 100) + ')' : '') + '</div>' : '';
+      h += '<div class="kqt"><span class="kik">' + z[0] + '</span><div class="kqv">' + (a == null ? '—' : (a < 0 ? '−' + ty(-a) : ty(a))) + ' <small>tỷ · ' + lbQ(K) + '</small></div>'
+        + '<span class="kqd ' + (tot > 0 ? 'up' : (tot < 0 ? 'down' : 'mut')) + '">' + (huong > 0 ? '▲ ' : (huong < 0 ? '▼ ' : '')) + soNgan(a, a0) + ' <small>so cùng kỳ</small></span>'
+        + (b != null && b0 != null ? '<div class="kqs">' + lbQ(K - 1) + ': ' + soNgan(b, b0) + ' so cùng kỳ</div>' : '') + gm + cotNho(vs, ks.map(lbQ)) + '</div>';
+    });
+    return h ? '<div class="kq4">' + h + '</div><div class="kqc">Cột: 8 quý gần nhất — xanh đậm là 2 quý đang soi, xám đậm là cùng kỳ năm trước. Rê vào cột để xem số.</div>' : '';
   }
   function soiHtml(t, raw, d, s){
     if (!s || !s.ds.length) return '';
-    var tt = raw.__tt, ds = s.ds.concat(tt ? tt.them : []).sort(function(a, b){ return b.w - a.w; });
+    var tt = raw.__tt, ds = s.ds.slice().sort(function(a, b){ return b.w - a.w; });
     var sang = ds.filter(function(x){ return x.s > 0; }), toi = ds.filter(function(x){ return x.s < 0; }), ghi = ds.filter(function(x){ return !x.s; });
-    var li = function(a){ return a.map(function(x){ return '<li>' + x.t + '</li>'; }).join(''); };
     var kieu = s.loai === 'ck' ? 'công ty chứng khoán' : (s.loai === 'nh' ? 'ngân hàng' : 'doanh nghiệp');
-    var h = '<div class="soi"><h3>Soi BCTC 2 quý gần nhất' + (tt && tt.B ? ' — ' + tt.B.lb + ' và ' + tt.A.lb : ' — ' + s.lb) + ' · ' + kieu
-      + (tt ? ' <span class="ttc ' + tt.mau + '">' + tt.nhan + (tt.nhip ? ' · ' + tt.nhip : '') + '</span>' : '') + '</h3>';
-    if (tt) h += '<div style="overflow-x:auto;margin-bottom:8px">' + bang2Quy(tt) + '</div>';
-    h += '<div class="st2"><div class="sang"><h4>Điểm sáng (' + sang.length + ')</h4>' + (sang.length ? '<ul>' + li(sang) + '</ul>' : '<div class="mini">Không có điểm sáng nổi bật theo bộ lọc.</div>') + '</div>'
-      + '<div class="toi"><h4>Điểm tối (' + toi.length + ')</h4>' + (toi.length ? '<ul>' + li(toi) + '</ul>' : '<div class="mini">Không có điểm tối nổi bật theo bộ lọc.</div>') + '</div></div>';
-    if (tt && tt.nd.length) h += '<div class="nd"><h4>Nhận định</h4><ul>' + tt.nd.map(function(x){ return '<li>' + x + '</li>'; }).join('') + '</ul>'
-      + '<div class="mini">Kết luận tăng trưởng: <b>' + tt.nhan.toLowerCase() + '</b>' + (tt.nhip ? ' (' + tt.nhip + ')' : '') + '. Kiểm định 2014 – 2026: lợi nhuận tăng 2 quý liền <u>một mình</u> chỉ hơn thị trường +1,1% sau 6 tháng;'
-      + ' lợi thế rõ khi tăng trưởng đi cùng giá hợp lý (mức TÍCH CỰC +5,7%).</div></div>';
-    if (ghi.length) h += '<details class="sgc"><summary>Ghi chú thêm (' + ghi.length + ')</summary><ul>' + li(ghi) + '</ul></details>';
+    var dong = function(x, cls){ return '<li title="' + esc(x.ten + (x.ct ? ' — ' + x.ct : '')) + '"><b class="sps ' + cls + '">' + (x.so || '') + '</b><div><div class="spt">' + x.ten + '</div>' + (x.ct ? '<div class="spc">' + x.ct + '</div>' : '') + '</div></li>'; };
+    var cot = function(a, cls, ten, rong){ var cs = cls === 'sang' ? 'up' : 'down', dau6 = a.slice(0, 6), con = a.slice(6);
+      return '<div class="' + cls + '"><h4>' + ten + ' <span>' + a.length + '</span></h4>' + (a.length ? '<ul class="spl">' + dau6.map(function(x){ return dong(x, cs); }).join('') + '</ul>'
+        + (con.length ? '<details class="spx"><summary>Xem thêm ' + con.length + '</summary><ul class="spl">' + con.map(function(x){ return dong(x, cs); }).join('') + '</ul></details>' : '') : '<div class="mini">' + rong + '</div>') + '</div>'; };
+    var h = '<div class="soi"><div class="soih"><span class="kh4">Soi BCTC 2 quý gần nhất · ' + (tt && tt.B ? tt.B.lb + ' và ' + tt.A.lb : s.lb) + ' · ' + kieu + '</span>'
+      + (tt ? '<span class="ttc ' + tt.mau + '">' + tt.nhan + (tt.nhip ? ' · ' + tt.nhip : '') + '</span>' : '') + '</div>';
+    if (tt) h += oQuy(s, tt);
+    h += '<div class="st2">' + cot(sang, 'sang', 'Điểm sáng', 'Không có điểm sáng nổi bật theo bộ lọc.') + cot(toi, 'toi', 'Điểm tối', 'Không có điểm tối nổi bật theo bộ lọc.') + '</div>';
+    if (tt && tt.nd.length) h += '<div class="nd"><h4>Nhận định</h4><ul class="ndl">' + tt.nd.map(function(x){ return '<li><i class="ndi ' + x.ic + '">' + ({ ok: '✓', no: '✕', canh: '!', len: '↑', xuong: '↓' }[x.ic] || '•') + '</i><div><b>' + x.ten + '</b>' + (x.ct ? ' — ' + x.ct : '') + '</div></li>'; }).join('') + '</ul>'
+      + '<div class="kir">Kết luận tăng trưởng: <b>' + tt.nhan.toLowerCase() + '</b>' + (tt.nhip ? ' (' + tt.nhip + ')' : '') + '. Tăng trưởng một mình chưa đủ: lịch sử 2014 – 2026, lợi nhuận tăng 2 quý liền chỉ hơn thị trường +1,1% sau 6 tháng; đi cùng giá hợp lý (mức TÍCH CỰC) +5,7%.</div></div>';
+    if (ghi.length) h += '<details class="sgc"><summary>Ghi chú thêm (' + ghi.length + ')</summary><ul class="spl">' + ghi.map(function(x){ return dong(x, ''); }).join('') + '</ul></details>';
     h += '</div>';
     h += '<div class="pt3">' + bangCau(s.cq, 'Lợi nhuận đến từ đâu · ' + s.lb + ' so với ' + s.lbP) + bangCau(s.ct, 'Cộng 4 quý đến ' + s.lb + ' so với 4 quý trước') + bangPeer(t, raw.__bangPeer) + '</div>';
     h += '<div style="overflow-x:auto;margin-bottom:12px">' + bangQuy(s, raw, t) + '</div>';
@@ -1126,7 +1149,7 @@
       + '#ptcs table.ptt td.g{font-size:11px}#ptcs table.ptt .ttm{background:#f6f9ff}'
       + '#ptcs table.ptn{width:100%;border-collapse:collapse;font-size:12.5px}#ptcs table.ptn td{padding:4px 4px;border-bottom:1px solid var(--border)}#ptcs table.ptn td+td{text-align:right}'
       + '#ptcs .pl{cursor:pointer;color:var(--blue);font-weight:700}'
-      + '#ptcs .soi{border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:10px;padding:10px 14px 6px;margin-bottom:12px;background:#fbfcff}'
+      + '#ptcs .soi{border:1px solid var(--border);border-radius:12px;padding:12px 16px;margin-bottom:12px;background:#fff}@media (max-width:560px){#ptcs .soi{padding:10px 10px}}#ptcs .soih{display:flex;align-items:center;gap:8px 10px;flex-wrap:wrap;margin-bottom:8px}#ptcs .soih .kh4{margin:0}#ptcs .kq4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}@media (max-width:900px){#ptcs .kq4{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:560px){#ptcs .kqt{padding:8px 9px}#ptcs .kqv{font-size:16px;white-space:normal}#ptcs .kqv small{display:block;font-size:11px}#ptcs .kqd{font-size:11.5px;padding:1px 6px}#ptcs .kqd small{display:none}#ptcs .ksp{height:30px}#ptcs .sps{min-width:56px;font-size:14px}}#ptcs .kqt{background:var(--panel2);border-radius:10px;padding:9px 11px;min-width:0;display:flex;flex-direction:column;align-items:flex-start}#ptcs .kqt .ksw{margin-top:auto;width:100%;padding-top:8px}#ptcs .kqt .kik{display:block}#ptcs .kqv{font-size:19px;font-weight:800;margin-top:3px;white-space:nowrap}#ptcs .kqv small{font-size:11.5px;font-weight:600;color:var(--muted)}#ptcs .kqd{display:inline-block;font-size:12px;font-weight:800;padding:1px 8px;border-radius:999px;margin-top:4px;white-space:nowrap}#ptcs .kqd small{font-weight:600;opacity:.8}#ptcs .kqd.up{background:var(--green-soft);color:var(--green-dark)}#ptcs .kqd.down{background:var(--red-soft);color:var(--red)}#ptcs .kqd.mut{background:#EDF0F4;color:#475569}#ptcs .kqs{font-size:11.5px;color:var(--muted);margin-top:4px}#ptcs .ksp{display:flex;gap:3px;height:36px}#ptcs .ksc{position:relative;flex:1}#ptcs .ksc:hover .ksb{filter:brightness(.92)}#ptcs .ksb{position:absolute;left:10%;right:10%;background:#D5DAE1;border-radius:3px 3px 0 0}#ptcs .ksb.cmp{background:#9AA3AF}#ptcs .ksb.hl{background:var(--blue)}#ptcs .ksb.am{border-radius:0 0 3px 3px;background:#F3A3A6}#ptcs .ksb.am.hl{background:var(--red)}#ptcs .kspl{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-top:2px}#ptcs .kqc{font-size:11.5px;color:var(--muted);margin:6px 0 10px}#ptcs ul.spl{list-style:none;margin:0;padding:0}#ptcs .spl li{display:flex;gap:10px;align-items:baseline;padding:6px 0;border-top:1px solid var(--border)}#ptcs .spl li:first-child{border-top:0}#ptcs .sps{flex:none;min-width:66px;font-size:15px;font-weight:800;white-space:nowrap}#ptcs .sps.up{color:var(--green-dark)}#ptcs .sps.down{color:var(--red)}#ptcs .spt{font-size:13px;font-weight:600;line-height:1.4}#ptcs .spc{font-size:12px;color:var(--muted);line-height:1.45;margin-top:1px}#ptcs details.spx summary{cursor:pointer;font-size:12px;color:var(--muted);padding-top:4px}#ptcs ul.ndl{list-style:none;margin:0 0 4px;padding:0}#ptcs .ndl li{display:flex;gap:9px;align-items:flex-start;font-size:12.8px;line-height:1.5;padding:3px 0}#ptcs .ndi{flex:none;width:18px;height:18px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-style:normal;font-size:11px;font-weight:800;color:#fff;margin-top:1px}#ptcs .ndi.ok{background:var(--green)}#ptcs .ndi.no{background:var(--red)}#ptcs .ndi.canh{background:#D97706}#ptcs .ndi.len{background:var(--blue)}#ptcs .ndi.xuong{background:#64748B}'
       + '#ptcs h3{margin:0 0 8px;font-size:14px}#ptcs .pth3{margin:4px 0 8px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}'
       + '#ptcs ul.sl{list-style:none;margin:0;padding:0}#ptcs ul.sl li{display:flex;gap:9px;align-items:flex-start;font-size:13px;line-height:1.55;padding:5px 0;border-top:1px dashed var(--border)}#ptcs ul.sl li:first-child{border-top:0}'
       + '#ptcs .sd{flex:none;width:9px;height:9px;border-radius:50%;margin-top:6px}#ptcs .sd.up{background:var(--green)}#ptcs .sd.dn{background:var(--red)}#ptcs .sd.fl{background:#9aa3ae}'
@@ -1152,7 +1175,7 @@
       + '#ptcs .khs{margin-top:14px}#ptcs .khlg{display:flex;gap:14px;font-size:11.5px;color:var(--muted);margin-bottom:6px}#ptcs .khw{overflow-x:auto;padding-bottom:2px;direction:rtl}#ptcs .khg{display:grid;gap:3px;direction:ltr;width:max-content;min-width:100%}#ptcs .khc{text-align:center;min-width:0;cursor:default}#ptcs .kha{position:relative;height:40px;border-bottom:1px solid var(--border)}'
       + '#ptcs .khb{position:absolute;left:20%;right:20%;bottom:0;border-radius:4px 4px 0 0}#ptcs .khb.tc{height:100%}#ptcs .khb.kq{height:58%}#ptcs .khb.tcu{height:26%}#ptcs .khb.tc,#ptcs .khlg i.tc{background:var(--green)}#ptcs .khb.kq,#ptcs .khlg i.kq{background:#64748B}#ptcs .khb.tcu,#ptcs .khlg i.tcu{background:var(--red)}'
       + '#ptcs .khc:hover .khb{filter:brightness(1.12)}#ptcs .khl{font-size:10px;color:var(--muted);margin-top:3px;white-space:nowrap}#ptcs .khv{font-size:11px;white-space:nowrap}#ptcs .kft{font-size:11.5px;color:var(--muted);font-style:italic;margin-top:10px;line-height:1.5}'
-      + '#ptcs .ttc{display:inline-block;font-size:11.5px;font-weight:800;padding:1px 9px;border-radius:999px;vertical-align:1px;white-space:nowrap}#ptcs .ttc.tc{background:var(--green-soft);color:var(--green-dark)}#ptcs .ttc.kq{background:#EDF0F4;color:#475569}#ptcs .ttc.tcu{background:var(--red-soft);color:var(--red)}#ptcs .st2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:6px 0 8px}@media (max-width:760px){#ptcs .st2{grid-template-columns:1fr}}#ptcs .st2>div{border-radius:10px;padding:8px 12px;background:#fff;border:1px solid var(--border);min-width:0}#ptcs .st2 .sang{border-top:3px solid var(--green)}#ptcs .st2 .toi{border-top:3px solid var(--red)}#ptcs .st2 h4,#ptcs .nd h4{margin:0 0 4px;font-size:13px}#ptcs .st2 .sang h4{color:var(--green-dark)}#ptcs .st2 .toi h4{color:var(--red)}#ptcs .st2 ul,#ptcs .nd ul,#ptcs details.sgc ul{margin:0;padding-left:18px;font-size:12.8px;line-height:1.55}#ptcs .st2 li,#ptcs .nd li{margin:3px 0}#ptcs .nd{border-radius:10px;padding:8px 12px;background:#fff;border:1px solid var(--border);border-left:4px solid var(--blue);margin-bottom:8px}#ptcs details.sgc{margin-bottom:6px;font-size:12.5px}#ptcs details.sgc summary{cursor:pointer;color:var(--muted)}#ptcs table.pt2q td{text-align:right;white-space:nowrap}#ptcs table.pt2q td:first-child{text-align:left;white-space:normal;min-width:130px}@media (max-width:560px){#ptcs table.pt2q{font-size:11.5px}#ptcs table.pt2q td{padding:4px 3px}}#ptcs details.klbc{margin-top:12px;background:var(--panel2);border-radius:10px;padding:7px 12px;overflow-x:auto}#ptcs details.klbc td{word-break:break-word}#ptcs details.klbc td:nth-child(2){text-align:left}#ptcs .kl,#ptcs .soi{min-width:0;overflow-wrap:anywhere}#ptcs details.klbc summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs details.klbc td{vertical-align:top}#ptcs tr.cu{opacity:.55}#ptcs details.klbc a{color:var(--muted);text-decoration:none}'
+      + '#ptcs .ttc{display:inline-block;font-size:11.5px;font-weight:800;padding:1px 9px;border-radius:999px;vertical-align:1px;white-space:nowrap}#ptcs .ttc.tc{background:var(--green-soft);color:var(--green-dark)}#ptcs .ttc.kq{background:#EDF0F4;color:#475569}#ptcs .ttc.tcu{background:var(--red-soft);color:var(--red)}#ptcs .st2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:6px 0 8px}@media (max-width:760px){#ptcs .st2{grid-template-columns:1fr}}#ptcs .st2>div{border-radius:10px;padding:8px 12px;background:#fff;border:1px solid var(--border);min-width:0}#ptcs .st2 .sang{border-top:3px solid var(--green)}#ptcs .st2 .toi{border-top:3px solid var(--red)}#ptcs .st2 h4,#ptcs .nd h4{margin:0 0 4px;font-size:13px}#ptcs .st2 h4 span{font-size:11.5px;padding:0 7px;border-radius:999px;margin-left:3px}#ptcs .st2 .sang h4 span{background:var(--green-soft)}#ptcs .st2 .toi h4 span{background:var(--red-soft)}#ptcs .st2 .sang h4{color:var(--green-dark)}#ptcs .st2 .toi h4{color:var(--red)}#ptcs .nd{border-radius:10px;padding:8px 12px;background:#fff;border:1px solid var(--border);border-left:4px solid var(--blue);margin-bottom:8px}#ptcs details.sgc{margin-bottom:6px;font-size:12.5px}#ptcs details.sgc summary{cursor:pointer;color:var(--muted)}#ptcs details.klbc{margin-top:12px;background:var(--panel2);border-radius:10px;padding:7px 12px;overflow-x:auto}#ptcs details.klbc td{word-break:break-word}#ptcs details.klbc td:nth-child(2){text-align:left}#ptcs .kl,#ptcs .soi{min-width:0;overflow-wrap:anywhere}#ptcs details.klbc summary{cursor:pointer;font-size:12.5px;font-weight:700}#ptcs details.klbc td{vertical-align:top}#ptcs tr.cu{opacity:.55}#ptcs details.klbc a{color:var(--muted);text-decoration:none}'
       + '#ptcs .dg{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:12px;background:#fff}#ptcs .dgh{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}'
       + '#ptcs .dgv{display:flex;gap:10px;align-items:center;flex-wrap:wrap}#ptcs .dgpe{font-size:22px;font-weight:800}'
       + '#ptcs .dgbar{position:relative;height:14px;margin:12px 4px 4px;background:var(--panel2);border-radius:7px}#ptcs .dgband{position:absolute;top:0;bottom:0;background:#dbe6f7;border-radius:7px}'
