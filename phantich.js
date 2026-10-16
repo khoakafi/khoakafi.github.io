@@ -745,7 +745,7 @@
     if (ghi.length) h += '<details class="sgc"><summary>Ghi chú thêm (' + ghi.length + ')</summary><ul class="spl">' + ghi.map(function(x){ return dong(x, ''); }).join('') + '</ul></details>';
     h += '</div>';
     h += '<div class="pt3">' + bangCau(s.cq, 'Lợi nhuận đến từ đâu · ' + s.lb + ' so với ' + s.lbP) + bangCau(s.ct, 'Cộng 4 quý đến ' + s.lb + ' so với 4 quý trước') + bangPeer(t, raw.__bangPeer) + '</div>';
-    h += '<div style="overflow-x:auto;margin-bottom:12px">' + bangQuy(s, raw, t) + '</div>';
+    h += '<div class="kh4">Số liệu 8 quý gần nhất · tỷ đồng</div><div style="overflow-x:auto;margin-bottom:12px">' + bangQuy(s, raw, t) + '</div>';
     return h;
   }
 
@@ -1082,7 +1082,7 @@
     var h = '';
     try { h += ketLuanHtml(t, nm, raw); } catch(e){ console.warn('ketLuan', e); }
     if (!nm) return h;
-    h += '<div class="dg" id="ptDg"><div class="dgh"><b>Định giá theo giá hôm nay</b><span class="mini">giá ' + f(gSong || raw.gia[raw.gia.length - 1][2], 2) + ' · LN 4 quý đến ' + nm.quy + '</span></div>';
+    h += '<div class="dg" id="ptDg"><div class="dgh"><span class="kh4" style="margin:0">Định giá theo giá hôm nay</span><span class="mini">giá ' + f(gSong || raw.gia[raw.gia.length - 1][2], 2) + ' · LN 4 quý đến ' + nm.quy + '</span></div>';
     if (nm.pe == null) {
       h += '<div class="mini">LNST công ty mẹ 4 quý ' + (nm.npT != null && nm.npT <= 0 ? 'âm' : 'chưa đủ số') + ' — không tính được P/E.</div></div>';
       return h;
