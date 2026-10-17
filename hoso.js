@@ -187,7 +187,6 @@
     return '<div class="hsBand"><span class="b1"><b>KHOA NGUYEN INVEST</b> · Báo cáo phân tích cổ phiếu</span><span class="b2">' + esc(p.ma) + ' · cập nhật ' + ngVn(p.cap_nhat)
       + (p.lan_sau ? ' · làm lại ' + esc(p.lan_sau) : '') + '</span><span class="b3">Trang ' + so + '/2 · ' + ten + '</span></div>';
   }
-  function muc(so, ten, phu){ return '<div class="hsSecH"><span class="so">' + so + '</span><h3>' + ten + '</h3>' + (phu ? '<span class="phu">' + phu + '</span>' : '') + '</div>'; }
   function nhan1(ten, phu){ return '<div class="hsL1"><span>' + ten + '</span>' + (phu ? '<small>' + phu + '</small>' : '') + '</div>'; }
   function kv(a, b, cls){ return '<div class="hsKv' + (cls ? ' ' + cls : '') + '"><span>' + a + '</span><b>' + b + '</b></div>'; }
 
@@ -215,7 +214,9 @@
   function oKn(o){
     var mo = o.mo;
     return '<div class="hsRb ' + (mo ? mo.muc : '') + '"><div class="hsRbT"><small>Khuyến nghị</small><b>' + (mo ? TEN3[mo.muc] || '—' : '…') + '</b><em>'
-      + (mo ? (mo.soDat != null && mo.tong ? 'Đạt ' + mo.soDat + '/' + mo.tong + ' điều kiện · ' : '') + 'mô hình định lượng, theo giá hôm nay' : 'đang tính theo giá hôm nay') + '</em></div><div class="hsRbG">'
+      + (mo ? (mo.soDat != null && mo.tong ? 'Đạt ' + mo.soDat + '/' + mo.tong + ' điều kiện · ' : '') + 'mô hình định lượng, theo giá hôm nay' : 'đang tính theo giá hôm nay') + '</em>'
+      + (mo && mo.chips ? '<div class="hsRbC">' + mo.chips.map(function(c){ return '<span class="' + (c[0] ? 'ok' : 'no') + '">' + (c[0] ? '✓ ' : '✗ ') + esc(c[1]) + '</span>'; }).join('') + '</div>' : '') + '</div><div class="hsRbG">'
+      + (mo && mo.tq != null ? '<div class="hsRbQ q' + mo.tq + '">Toàn cảnh thị trường: <b>' + ['QUAN SÁT', 'TÍCH CỰC', 'THẬN TRỌNG'][mo.tq] + '</b>' + (mo.tq === 2 ? ' — nên giải ngân từng phần' : '') + '</div>' : '')
       + kv('Giá hiện tại', o.gia > 0 ? f(o.gia, 2) : '—')
       + kv('Giá trị hợp lý 12 tháng', o.gt != null ? f(o.gt, 1) : '—', 'dam')
       + kv('Tiềm năng', o.up != null ? '<span class="' + lop(o.up) + '">' + pct(o.up) + '</span>' : '—')
@@ -293,8 +294,8 @@
       + '<i class="b" style="width:' + (100 - w).toFixed(1) + '%"><span>' + (o.conLai > 0 ? f(o.conLai, 0) + ' tỷ' : '—') + '</span></i></div>'
       + '<div class="hsStl"><span>Vốn hóa ' + esc(p.ma) + ' <b>' + f(o.von, 0) + ' tỷ</b> = ' + f(o.pctCon, 0) + '% là ' + esc(s.con.ma) + '</span><span>' + esc(s.conlai.ten) + '</span></div>';
     h += peKv(s, o);
-    h += '<div class="hsY">' + esc(s.con.ma) + ' ' + f(o.con.gia, 1) + ' (' + ngVn(o.con.ngay) + '), vốn hóa ' + f(o.vonCon, 0) + ' tỷ, giao dịch mỏng (~' + (s.con.gtgd || '—') + ' tỷ/phiên) — giá chưa phải thước đo ổn định. '
-      + 'LN 2027E theo mô hình cơ sở: ' + esc(s.con.ma) + ' ' + f(s.con.ln27, 0) + ' tỷ, phần còn lại ' + f(s.conlai.ln27, 0) + ' tỷ. ' + esc(s.ng || '') + '; ' + esc(s.kv_ng || '') + '.</div>';
+    h += '<div class="hsY">' + esc(s.con.ma) + ' ' + f(o.con.gia, 1) + ' (' + ngVn(o.con.ngay) + ') · vốn hóa ' + f(o.vonCon, 0) + ' tỷ · giao dịch mỏng ~' + (s.con.gtgd || '—') + ' tỷ/phiên. '
+      + 'LN 2027E cơ sở: ' + esc(s.con.ma) + ' ' + f(s.con.ln27, 0) + ' tỷ, phần còn lại ' + f(s.conlai.ln27, 0) + ' tỷ. ' + esc(s.kv_ng || '') + '.</div>';
     return h;
   }
   // P/E 2027E thi truong dang tra cho tung phan, dat canh P/E 2027F tung doanh nghiep cung nganh khu vuc (cham xam) va trung vi
@@ -319,33 +320,21 @@
     return h + '<div class="hsPkX"><span></span><div>' + [0, 5, 10, 15, 20].map(function(t){ return '<span style="left:' + X(t) + '%">' + t + '</span>'; }).join('') + '</div><span></span></div></div>';
   }
 
-  /* ---------- Trang 2: chi tiet. Muc 1-5 o day (ve lai khi gia doi); 6 (BCTC) va 7 (tin hieu dinh luong) do phantich.js chen; 8 = phanD ---------- */
+  /* ---------- Trang 2: chi tiet, gon trong mot trang (ve lai khi gia doi). Moi thu khac nam o Phu luc (phanD + phantich.js) ---------- */
   function trang2(p, cx){
-    var o = soLive(p, cx), h = '';
-    if (p.mo_hinh) h += mucDuPhong(p, o, cx);
-    if (p.dinh_gia || (p.gia_dinh && p.gia_dinh.length)) h += mucDinhGia(p, o);
-    if (p.mang && p.mang.length) {
-      h += '<div class="hsSec">' + muc(3, 'Động lực vận hành', 'số liệu vận hành từ doanh nghiệp và báo cáo CTCK, có ghi nguồn') + '<div class="hsMg">'
-        + p.mang.map(function(m){ return '<div class="hsMc"><div class="hsMt1">' + esc(m.ten) + '</div><div class="hsMt2">' + esc(m.phu || '') + '</div>'
-          + (m.so && m.so.length ? '<div class="hsMs">' + m.so.map(function(z){ return '<span><small>' + esc(z[0]) + '</small><b>' + esc(z[1]) + '</b>' + (z[2] ? '<em>' + esc(z[2]) + '</em>' : '') + '</span>'; }).join('') + '</div>' : '')
-          + '<ul>' + (m.y || []).map(function(z){ return '<li>' + esc(z.t) + nguon(z.ng) + '</li>'; }).join('') + '</ul></div>'; }).join('') + '</div>';
-      if (p.bieu_do && p.bieu_do.length) h += '<div class="hsBd">' + p.bieu_do.map(bieuDo).join('') + '</div>';
-      h += '</div>';
-    }
-    if (p.top_down && p.top_down.length) {
-      h += '<div class="hsSec">' + muc(4, 'Từ vĩ mô đến doanh nghiệp', '▲ thuận lợi · ▼ bất lợi · ◆ hai mặt') + '<div class="hsTd">'
-        + p.top_down.map(function(t, i){ return '<div class="hsTc"><div class="hsTh">' + (i + 1) + '. ' + esc(t.tang) + '</div><ul>' + t.y.map(function(z){
-          var ic = z.h > 0 ? ['up', '▲'] : (z.h < 0 ? ['dn', '▼'] : ['fl', '◆']);
-          return '<li><i class="' + ic[0] + '" title="' + (z.h > 0 ? 'Thuận lợi' : (z.h < 0 ? 'Bất lợi' : 'Hai mặt')) + '">' + ic[1] + '</i><span>' + esc(z.t) + nguon(z.ng) + '</span></li>'; }).join('') + '</ul></div>'; }).join('')
-        + '</div></div>';
-    }
-    if (p.ke_hoach && p.ke_hoach.ds) h += keHoach(p.ke_hoach);
-    return h;
+    var o = soLive(p, cx), ct = p.ctck || [], h = dauTrang(p, 2, 'Chi tiết') + '<div class="hsPgB">';
+    h += '<div class="hsR2"><div>' + nhan1('Dự phóng theo mảng', esc(p.ky || '')) + bangDuPhong(p, o) + '</div>'
+      + '<div>' + nhan1('Định giá tổng các phần', 'nghìn đ/cp, 12 tháng') + kichBan3(p, o, 1) + bangDinhGia(p, o) + '</div></div>';
+    if (p.gia_dinh && p.gia_dinh.length) h += '<div class="hsR1">' + nhan1('Giả định chính', 'xấu · cơ sở · tốt — làm lại mỗi quý khi có BCTC') + bangGiaDinh(p) + '</div>';
+    h += '<div class="hsR3"><div>' + cauLn(p) + '</div><div>' + doNhay(p) + '</div><div>' + theoDoi(p, cx) + '</div></div>';
+    if (p.bieu_do && p.bieu_do.length) h += '<div class="hsR1">' + nhan1('Động lực vận hành', 'số liệu doanh nghiệp công bố và báo cáo CTCK') + '<div class="hsR4">' + p.bieu_do.map(function(b){ return bieuDo(b, 1); }).join('') + '</div></div>';
+    h += '<div class="hsR2"><div>' + peLichSu(p) + '</div><div>' + (p.ke_hoach && p.ke_hoach.ds ? keHoach(p.ke_hoach) : '') + '</div></div>';
+    return h + '<div class="hsFoot">Nguồn: BCTC hợp nhất ' + esc(p.ma) + ' (VNDirect), công bố của doanh nghiệp' + (ct.length ? '; báo cáo CTCK, chỉ tham khảo: ' + ct.map(function(x){ return esc(x.ctck) + ' ' + ngVn(x.ngay).slice(0, 5); }).join(', ') : '')
+      + '; ' + (p.nguon || []).length + ' tài liệu có link ở Phụ lục. Mô hình và định giá do khoanguyeninvest.vn tự dựng; không phải khuyến nghị đầu tư.</div></div>';
   }
-  // Muc 1: bang du phong theo mang + cau LN + theo doi theo quy
-  function mucDuPhong(p, o, cx){
-    var M = p.mo_hinh, cot = M.cot || [], n = cot.length;
-    var t = '<table class="hsMh"><tr><th></th>' + cot.map(function(c){ return '<th>' + esc(c) + '</th>'; }).join('') + '</tr>';
+  function bangDuPhong(p, o){
+    var M = p.mo_hinh; if (!M) return '';
+    var cot = M.cot || [], n = cot.length, t = '<table class="hsMh"><tr><th></th>' + cot.map(function(c){ return '<th>' + esc(c) + '</th>'; }).join('') + '</tr>';
     M.dong.forEach(function(r){
       if (r.nhom) { t += '<tr class="g"><td colspan="' + (n + 1) + '">' + esc(r.nhom) + '</td></tr>'; return; }
       t += '<tr' + (r.dam ? ' class="dam"' : '') + '><td>' + esc(r.ten) + '</td>';
@@ -355,37 +344,29 @@
       t += '</tr>';
       if (r.eps && o.gia > 0) t += '<tr class="pe"><td>P/E tại giá hiện tại</td>' + r.v.map(function(e, i){ return '<td' + (i === 0 ? ' class="a"' : '') + '>' + (e > 0 ? f(o.gia * 1000 / e, 1) : '—') + '</td>'; }).join('') + '</tr>';
     });
-    t += '</table>';
-    return '<div class="hsSec">' + muc(1, 'Mô hình dự phóng', esc(p.ky || '') + ' · làm lại mỗi quý khi có BCTC')
-      + '<div class="hsMh2"><div><h5>Dự phóng theo mảng</h5>' + t + '<div class="hsY">' + esc(M.ghi || '') + '</div></div><div>' + cauLn(p) + theoDoi(p, cx) + '</div></div></div>';
+    return t + '</table>' + (M.ghi ? '<div class="hsY">' + esc(M.ghi) + '</div>' : '');
   }
-  // Muc 2: ba kich ban + bang cach tinh, P/E lich su + do nhay, gia dinh
-  function mucDinhGia(p, o){
-    var h = '<div class="hsSec">' + muc(2, 'Định giá', 'tổng các phần · ba kịch bản · P/E lịch sử · độ nhạy');
-    if (p.dinh_gia) h += '<div class="hsMh2"><div>' + kichBan3(p, o) + bangDinhGia(p, o) + '</div><div>' + peLichSu(p) + doNhay(p) + '</div></div>';
-    if (p.gia_dinh && p.gia_dinh.length) {
-      h += '<div class="hsGdw"><h5>Giả định chính theo kịch bản</h5><table class="hsGd"><colgroup><col style="width:23%"><col style="width:8%"><col style="width:8%"><col style="width:8%"><col></colgroup><tr><th>Biến số</th><th>Xấu</th><th>Cơ sở</th><th>Tốt</th><th>Căn cứ</th></tr>'
-        + p.gia_dinh.map(function(g){ return '<tr><td>' + esc(g.ten) + '</td>' + g.v.map(function(v, i){ return '<td class="' + (i === 1 ? 'cs' : 'v') + '">' + esc(v) + '</td>'; }).join('') + '<td class="ld">' + esc(g.ly_do || '') + '</td></tr>'; }).join('')
-        + '</table></div>';
-    }
-    return h + '</div>';
+  function bangGiaDinh(p){
+    return '<table class="hsGd"><colgroup><col style="width:22%"><col style="width:7%"><col style="width:7%"><col style="width:7%"><col></colgroup><tr><th>Biến số</th><th>Xấu</th><th>Cơ sở</th><th>Tốt</th><th>Căn cứ</th></tr>'
+      + p.gia_dinh.map(function(g){ return '<tr><td>' + esc(g.ten) + '</td>' + g.v.map(function(v, i){ return '<td class="' + (i === 1 ? 'cs' : 'v') + '">' + esc(v) + '</td>'; }).join('') + '<td class="ld">' + esc(g.ly_do || '') + '</td></tr>'; }).join('')
+      + '</table>';
   }
   // Ba kich ban: thanh chong gia tri tung phan (nghin dong/cp, da tru chiet khau cong ty me), vach gia hien tai
-  function kichBan3(p, o){
+  function kichBan3(p, o, gon){
     var D = p.dinh_gia; if (!D || !D.phan || !D.gia) return '';
     var ck = D.ck || 0, kb = p.kich_ban || [], TEN = ['Xấu', 'Cơ sở', 'Tốt'];
     var ph = D.phan.map(function(z){ return { ten: z.ten, mau: /^c[1-4]$/.test(z.mau || '') ? z.mau : 'c4', v: z.gt.map(function(g){ return g * (1 - ck) / D.cp; }) }; });
     var mx = Math.max.apply(null, D.gia.concat(o.gia > 0 ? [o.gia] : [])), st = nice(mx / 5), top = Math.ceil(mx / st) * st;
     var X = function(v){ return v / top * 100; };
-    var h = '<h5>Định giá: ba kịch bản, từng phần <small class="mut">nghìn đ/cp, 12 tháng</small></h5>'
+    var h = (gon ? '' : '<h5>Định giá: ba kịch bản, từng phần <small class="mut">nghìn đ/cp, 12 tháng</small></h5>')
       + '<div class="bdlg">' + ph.map(function(z){ return '<span><i class="' + z.mau + ' q"></i>' + esc(z.ten) + '</span>'; }).join('') + (o.gia > 0 ? '<span><i class="gia"></i>Giá hiện tại ' + f(o.gia, 1) + '</span>' : '') + '</div><div class="hsFf">';
     D.gia.forEach(function(g, i){ var d = o.gia > 0 ? (g / o.gia - 1) * 100 : null, k = kb[i] || {};
-      h += '<div class="hsFfR' + (i === 1 ? ' cs' : '') + '"><span class="hsFfT">' + (TEN[i] || '') + '</span><span class="hsFfB">';
+      h += '<div class="hsFfR' + (i === 1 ? ' cs' : '') + '"' + (k.mo_ta ? ' title="' + esc(k.mo_ta) + '"' : '') + '><span class="hsFfT">' + (TEN[i] || '') + '</span><span class="hsFfB">';
       ph.forEach(function(z){ var w = X(z.v[i]);
         h += '<i class="' + z.mau + '" style="width:' + w.toFixed(2) + '%" title="' + esc((TEN[i] || '') + ' · ' + z.ten + ': ' + f(z.v[i], 1) + ' nghìn đ/cp') + '">' + (w >= 7 ? '<span>' + f(z.v[i], 1) + '</span>' : '') + '</i>'; });
       if (o.gia > 0) h += '<s style="left:' + X(o.gia).toFixed(2) + '%"></s>';
       h += '</span><span class="hsFfV"><b>' + f(g, 1) + '</b>' + (d != null ? '<em class="' + lop(d) + '">' + pct(d) + '</em>' : '') + '</span></div>'
-        + (k.mo_ta ? '<div class="hsFfM">' + esc(k.mo_ta) + '</div>' : ''); });
+        + (k.mo_ta && !gon ? '<div class="hsFfM">' + esc(k.mo_ta) + '</div>' : ''); });
     var tk = []; for (var v = 0; v <= top + st / 2; v += st) tk.push('<span style="left:' + X(v).toFixed(2) + '%">' + f(v, 0) + '</span>');
     return h + '<div class="hsFfX"><span></span><span class="tk">' + tk.join('') + '</span><span></span></div></div>';
   }
@@ -408,20 +389,18 @@
   function peLichSu(p){
     var L = p.pe_ls; if (!L || !L.t || L.t.length < 24) return '';
     var tran = 30, v = L.v.map(function(x){ return x != null && x > 0 && x <= tran ? x : null; }), vuot = L.v.filter(function(x){ return x > tran; }).length;
-    var lbs = L.t.map(function(m){ return m.slice(5, 7) + '/' + m.slice(0, 4); });
-    var gd = (p.gia_dinh || []).filter(function(g){ return g.ten === 'P/E DMX'; })[0];
-    return '<h5>P/E của ' + esc(p.ma) + ' từ ' + L.t[0].slice(0, 4) + ' <small class="mut">P/E 4 quý, cuối mỗi tháng</small></h5><div class="hsPeL">'
-      + bdDuong([{ ten: 'P/E', v: v, cls: 'ink' }], lbs, { truc: 1, cao: 150, tu0: 1, fm: function(x){ return f(x, 1); }, fmTruc: function(x){ return f(x, 0); }, nhanCuoi: 1,
+    var lbs = L.t.map(function(m){ return m.slice(5, 7) + '/' + m.slice(0, 4); }), gd = (p.gia_dinh || []).filter(function(g){ return g.ten === 'P/E DMX'; })[0];
+    return nhan1('P/E của ' + esc(p.ma) + ' từ ' + L.t[0].slice(0, 4), 'P/E 4 quý, cuối mỗi tháng') + '<div class="hsPeL">'
+      + bdDuong([{ ten: 'P/E', v: v, cls: 'ink' }], lbs, { truc: 1, cao: 120, tu0: 1, fm: function(x){ return f(x, 1); }, fmTruc: function(x){ return f(x, 0); }, nhanCuoi: 1,
           ref: [{ v: L.p10, ten: 'thấp 10%: ' + f(L.p10, 1), trai: 1 }, { v: L.tv, ten: 'trung vị: ' + f(L.tv, 1), trai: 1 }] }) + '</div>'
-      + '<div class="hsY">' + (gd ? 'P/E dùng cho DMX: xấu <b>' + esc(gd.v[0]) + '</b> · cơ sở <b>' + esc(gd.v[1]) + '</b> · tốt <b>' + esc(gd.v[2]) + '</b> — từ mức thấp 10% đến dưới trung vị. ' : '')
-      + 'Thấp nhất ' + f(L.thap[1], 1) + ' (' + L.thap[0].slice(5, 7) + '/' + L.thap[0].slice(0, 4) + ')' + (vuot ? '; ' + vuot + ' tháng 2023–2024 LN gần bằng 0, P/E vượt ' + tran + ' nên bỏ trống' : '')
-      + '. Chỉ để chọn P/E cho kịch bản — kiểm định của trang: P/E so với lịch sử của chính mã không dự báo được giá.</div>';
+      + '<div class="hsY">' + (gd ? 'Kịch bản dùng P/E DMX <b>' + esc(gd.v[0]) + ' · ' + esc(gd.v[1]) + ' · ' + esc(gd.v[2]) + '</b> — từ mức thấp 10% đến dưới trung vị. ' : '')
+      + 'Thấp nhất ' + f(L.thap[1], 1) + ' (' + L.thap[0].slice(5, 7) + '/' + L.thap[0].slice(0, 4) + ')' + (vuot ? '; ' + vuot + ' tháng 2023–24 LN gần 0, P/E vượt ' + tran + ' bỏ trống' : '')
+      + '. P/E so với lịch sử không tự dự báo giá (kiểm định của trang).</div>';
   }
-  // Do nhay gia tri (nghin dong/cp) theo tung bien so — thanh hai phia
   function doNhay(p){
     var ds = p.nhay || []; if (!ds.length) return '';
     var mx = Math.max.apply(null, ds.map(function(z){ return z[2]; }).concat([1e-9]));
-    return '<h5 style="margin-top:14px">Giá trị cơ sở nhạy với gì nhất? <small class="mut">nghìn đ/cp</small></h5><div class="hsTn">' + ds.map(function(z){ var w = (z[2] / mx * 50).toFixed(1);
+    return nhan1('Độ nhạy giá trị cơ sở', 'nghìn đ/cp') + '<div class="hsTn">' + ds.map(function(z){ var w = (z[2] / mx * 50).toFixed(1);
       return '<div class="hsTnr" title="' + esc(z[0] + (z[1] != null ? ': ±' + f(z[1], 0) + ' tỷ LN về cổ đông' : '') + ': ±' + f(z[2], 1) + ' nghìn đ/cp') + '"><span>' + esc(z[0]) + '</span><span class="hsTnb"><i class="dn" style="width:' + w + '%"></i><i class="up" style="width:' + w + '%"></i></span><b>±' + f(z[2], 1) + '</b></div>'; }).join('')
       + '</div>';
   }
@@ -434,14 +413,14 @@
     var all = []; rows.forEach(function(r){ if (!r.z.fd || !r.z.ln) return; all.push(r.z.ln[0], r.z.ln[2]); if (r.z.ck) all.push(r.z.ck); if (r.tt != null) all.push(r.tt); });
     var lo = all.length ? Math.min.apply(null, all) : 0, hi = all.length ? Math.max.apply(null, all) : 1, pad = (hi - lo) * 0.08; lo -= pad; hi += pad;
     var X = function(v){ return ((v - lo) / (hi - lo) * 100).toFixed(1); };
-    var h = '<h5 style="margin-top:16px">Theo dõi dự phóng theo quý <small class="mut">LN cổ đông, tỷ đồng</small></h5><table class="hsTq"><tr><th>Kỳ</th><th>Doanh thu</th><th class="rg">Xấu – tốt · <b>cơ sở</b> · ○ cùng kỳ' + (rows.some(function(r){ return r.tt != null; }) ? ' · ◆ thực tế' : '') + '</th><th>Thực tế</th></tr>';
+    var h = nhan1('Theo dõi theo quý', 'LN cổ đông, tỷ đồng') + '<table class="hsTq"><tr><th>Kỳ</th><th class="rg">Xấu – tốt · <b>cơ sở</b> · ○ cùng kỳ' + (rows.some(function(r){ return r.tt != null; }) ? ' · ◆ thực tế' : '') + '</th><th>Thực tế</th></tr>';
     rows.forEach(function(r){ var z = r.z, lech = (r.tt != null && z.ln) ? (r.tt / z.ln[1] - 1) * 100 : null, ve = '';
       if (z.fd && z.ln) ve = '<div class="hsRg" title="' + esc(z.quy + ': xấu ' + f(z.ln[0], 0) + ' · cơ sở ' + f(z.ln[1], 0) + ' · tốt ' + f(z.ln[2], 0) + (z.ck ? ' · cùng kỳ ' + f(z.ck, 0) : '')) + '">'
         + '<i class="r" style="left:' + X(z.ln[0]) + '%;width:' + (X(z.ln[2]) - X(z.ln[0])).toFixed(1) + '%"></i><i class="c" style="left:' + X(z.ln[1]) + '%"></i>'
         + (z.ck ? '<i class="ck" style="left:' + X(z.ck) + '%"></i>' : '') + (r.tt != null ? '<i class="tt" style="left:' + X(r.tt) + '%"></i>' : '') + '</div>'
         + '<div class="hsRgL"><span>' + f(z.ln[0], 0) + '</span><b>' + f(z.ln[1], 0) + '</b><span>' + f(z.ln[2], 0) + '</span></div>';
       else if (z.ln) ve = '<div class="hsRgN">' + f(z.ln[0], 0) + ' · <b>' + f(z.ln[1], 0) + '</b> · ' + f(z.ln[2], 0) + '</div>';
-      h += '<tr><td>' + esc(z.quy) + (z.ck ? '<small>cùng kỳ ' + f(z.ck, 0) + '</small>' : '') + '</td><td>' + (r.dtt != null ? f(r.dtt, 0) : (z.dt ? f(z.dt, 0) + (z.dt_tt ? ' <small>sơ bộ</small>' : ' <small>ước</small>') : '—')) + '</td>'
+      h += '<tr><td>' + esc(z.quy) + (z.ck ? '<small>cùng kỳ ' + f(z.ck, 0) + '</small>' : '') + '</td>'
         + '<td class="rg">' + ve + '</td>'
         + '<td>' + (r.tt != null ? '<b>' + f(r.tt, 0) + '</b> <small class="' + lop(lech) + '">' + pct(lech) + ' so với cơ sở</small>' : (z.fd ? '<span class="mut">chờ BCTC</span>' : '')) + '</td></tr>'; });
     return h + '</table>';
@@ -455,46 +434,53 @@
     var d = c.cuoi[1] - c.dau[1]; mx = Math.max(mx, c.cuoi[1]);
     dong.push({ ten: c.cuoi[0], tu: 0, den: c.cuoi[1], cls: 'tong', so: f(c.cuoi[1], 0) + ' <em class="' + lop(d) + '">' + pct(d / c.dau[1] * 100, 1) + '</em>' });
     var X = function(v){ return v / (mx * 1.02) * 100; };
-    return '<h5>' + esc(c.ten) + ' <small class="mut">tỷ đồng</small></h5><div class="hsWf">' + dong.map(function(r){
+    return nhan1('LN cổ đông ' + esc(c.dau[0]) + ' → ' + esc(c.cuoi[0]), 'kịch bản cơ sở, tỷ đồng') + '<div class="hsWf">' + dong.map(function(r){
       return '<div class="hsWfR ' + r.cls + '" title="' + esc(r.ten) + ': ' + r.so.replace(/<[^>]+>/g, '') + '"><span class="hsWfT">' + esc(r.ten) + '</span><span class="hsWfB"><i style="left:' + X(r.tu).toFixed(2) + '%;width:' + Math.max(0.4, X(r.den) - X(r.tu)).toFixed(2) + '%"></i></span><b>' + r.so + '</b></div>'; }).join('')
       + '</div><div class="hsY">' + esc(c.y || '') + nguon(c.ng) + '</div>';
   }
-  function bieuDo(b){
+  function bieuDo(b, gon){
     var cot = b.kieu === 'cot' || b.kieu === 'cot_chong';
     var ss = b.ss.map(function(s, i){ return { ten: s.ten, v: s.v, cls: /^c[1-4]$/.test(s.mau || '') ? s.mau : MAU[i % MAU.length], net: !cot && (s.net != null ? !!s.net : i >= 2), cot: cot }; });   // mau co dinh theo doi tuong qua cac bieu do
-    var d = b.so_le == null ? 0 : b.so_le, fm = function(v){ return f(v, d); }, ve;
-    if (b.kieu === 'cot_chong') ve = chuGiai(ss) + bdChong(ss, b.nhan, { fm: fm, cao: 120 });
-    else if (b.kieu === 'cot') ve = chuGiai(ss) + bdCot(ss, b.nhan, { fm: fm, cao: 110, nhan: ss.length === 1, moiNhan: 1 });
-    else ve = chuGiai(ss, fm) + bdDuong(ss, b.nhan, { fm: fm, cao: 124, truc: 1, moiDiem: 1, moiNhan: 1 });
-    return '<div class="hsBc"><div class="hsBt">' + esc(b.ten) + (b.dv ? ' <small>(' + esc(b.dv) + ')</small>' : '') + '</div>' + ve + (b.y ? '<div class="hsY">' + esc(b.y) + nguon(b.ng) + '</div>' : nguon(b.ng)) + '</div>';
+    var d = b.so_le == null ? 0 : b.so_le, fm = function(v){ return f(v, d); }, ve, cao = gon ? 104 : 0;
+    if (b.kieu === 'cot_chong') ve = chuGiai(ss) + bdChong(ss, b.nhan, { fm: fm, cao: cao || 120 });
+    else if (b.kieu === 'cot') ve = chuGiai(ss) + bdCot(ss, b.nhan, { fm: fm, cao: cao || 110, nhan: ss.length === 1, moiNhan: 1 });
+    else ve = chuGiai(ss, fm) + bdDuong(ss, b.nhan, { fm: fm, cao: cao || 124, truc: 1, moiDiem: 1, moiNhan: !gon });
+    return '<div class="hsBc' + (gon ? ' gon' : '') + '"' + (gon && b.y ? ' title="' + esc(b.y) + '"' : '') + '><div class="hsBt">' + esc(b.ten) + (b.dv ? ' <small>(' + esc(b.dv) + ')</small>' : '') + '</div>' + ve
+      + (gon ? nguon(b.ng) : (b.y ? '<div class="hsY">' + esc(b.y) + nguon(b.ng) + '</div>' : nguon(b.ng))) + '</div>';
   }
   function keHoach(k){
-    var h = '<div class="hsSec">' + muc(5, 'Kế hoạch ' + k.nam + ' và tiến độ', 'vạch dọc = phần thời gian đã qua trong năm') + '<div class="hsKh">';
+    var h = nhan1('Kế hoạch ' + k.nam + ' và tiến độ', 'vạch dọc = phần thời gian đã qua') + '<div class="hsKh">';
     k.ds.forEach(function(z){ var r = z.kh > 0 ? z.th / z.kh * 100 : null, w = r == null ? 0 : Math.min(r, 100), vuot = r != null && z.tg != null && r >= z.tg;
-      h += '<div class="hsKr"><div class="hsKt"><b>' + esc(z.ten) + '</b><span class="mini">' + f(z.th, 0) + ' / ' + f(z.kh, 0) + ' ' + esc(z.dv || '') + ' · ' + esc(z.ky || '') + (z.chu ? ' · ' + esc(z.chu) : '') + '</span></div>'
+      h += '<div class="hsKr" title="' + esc(z.ng || '') + '"><div class="hsKt"><b>' + esc(z.ten) + '</b><span class="mini">' + f(z.th, 0) + ' / ' + f(z.kh, 0) + ' ' + esc(z.dv || '') + ' · ' + esc(z.ky || '') + '</span></div>'
         + '<div class="hsKb"><i class="' + (vuot ? 'ok' : 'cham') + '" style="width:' + w.toFixed(1) + '%"></i>' + (z.tg != null ? '<s style="left:' + z.tg + '%" title="Đã qua ' + z.tg + '% thời gian"></s>' : '') + '</div>'
-        + '<div class="hsKp ' + (vuot ? 'up' : '') + '">' + (r == null ? '—' : f(r, 0) + '%') + '</div>' + nguon(z.ng) + '</div>'; });
-    return h + '</div>' + (k.y ? '<div class="hsY">' + esc(k.y) + nguon(k.ng) + '</div>' : '') + '</div>';
+        + '<div class="hsKp ' + (vuot ? 'up' : '') + '">' + (r == null ? '—' : f(r, 0) + '%') + '</div></div>'; });
+    return h + '</div>' + (k.y ? '<div class="hsY">' + esc(k.y) + '</div>' : '');
   }
-
-  /* ---------- Trang 2, muc 8: tham khao CTCK, nguon (ve lai khi gia doi) ---------- */
+  /* ---------- Phu luc (khong thuoc 2 trang bao cao): van hanh tung mang, vi mo, bao cao CTCK, nguon (ve lai khi gia doi) ---------- */
   function phanD(p, cx){
-    var ct = p.ctck || [], gia = cx.gia, sg = soGia(p, gia), h = '<div class="hsSec">' + muc(8, 'Tham khảo: báo cáo CTCK và nguồn', ct.length ? ct.length + ' báo cáo gần nhất, mỗi công ty một bản · số trong báo cáo, lời tóm tắt của trang' : '');
+    var ct = p.ctck || [], gia = cx.gia, sg = soGia(p, gia), h = '';
+    if (p.mang && p.mang.length) h += '<h4 class="hsPlH">Vận hành từng mảng</h4><div class="hsMg">'
+      + p.mang.map(function(m){ return '<div class="hsMc"><div class="hsMt1">' + esc(m.ten) + '</div><div class="hsMt2">' + esc(m.phu || '') + '</div>'
+        + (m.so && m.so.length ? '<div class="hsMs">' + m.so.map(function(z){ return '<span><small>' + esc(z[0]) + '</small><b>' + esc(z[1]) + '</b>' + (z[2] ? '<em>' + esc(z[2]) + '</em>' : '') + '</span>'; }).join('') + '</div>' : '')
+        + '<ul>' + (m.y || []).map(function(z){ return '<li>' + esc(z.t) + nguon(z.ng) + '</li>'; }).join('') + '</ul></div>'; }).join('') + '</div>';
+    if (p.top_down && p.top_down.length) h += '<h4 class="hsPlH">Từ vĩ mô đến doanh nghiệp <small>▲ thuận lợi · ▼ bất lợi · ◆ hai mặt</small></h4><div class="hsTd">'
+      + p.top_down.map(function(t, i){ return '<div class="hsTc"><div class="hsTh">' + (i + 1) + '. ' + esc(t.tang) + '</div><ul>' + t.y.map(function(z){
+        var ic = z.h > 0 ? ['up', '▲'] : (z.h < 0 ? ['dn', '▼'] : ['fl', '◆']);
+        return '<li><i class="' + ic[0] + '">' + ic[1] + '</i><span>' + esc(z.t) + nguon(z.ng) + '</span></li>'; }).join('') + '</ul></div>'; }).join('') + '</div>';
     if (ct.length) {
-      h += '<div class="hsMh2"><div class="hsCt">';
+      h += '<h4 class="hsPlH">Báo cáo CTCK — chỉ tham khảo <small>' + ct.length + ' báo cáo gần nhất, mỗi công ty một bản · số trong báo cáo, lời tóm tắt của trang</small></h4><div class="hsMh2"><div class="hsCt">';
       ct.forEach(function(x){ var dc = tpDc(p, x), up = (dc && gia > 0) ? (dc / 1000 / gia - 1) * 100 : null;
         h += '<div class="hsCr"><div class="hsC1"><b>' + esc(x.ctck) + '</b><span class="mini">' + ngVn(x.ngay) + '</span><span class="hsKn">' + esc(x.kn) + '</span></div>'
           + '<div class="hsC2"><span><small>Giá mục tiêu</small><b>' + (x.tp ? f(x.tp / 1000, 1) : '—') + '</b>' + (x.tp && dc !== x.tp ? '<em title="Đã trừ cổ tức tiền mặt chi sau ngày ra báo cáo">sau cổ tức ' + f(dc / 1000, 1) + '</em>' : '') + '</span>'
           + '<span><small>So với giá hiện tại</small><b class="' + lop(up) + '">' + pct(up) + '</b></span>'
           + '<span><small>LN 2026F</small><b>' + (x.ln26 ? f(x.ln26, 0) : '—') + '</b></span><span><small>LN 2027F</small><b>' + (x.ln27 ? f(x.ln27, 0) : '—') + '</b></span></div>'
           + '<div class="hsC3">' + esc(x.y || '') + (x.pp ? ' <span class="mini">· ' + esc(x.pp) + '</span>' : '') + (x.link ? ' <a href="' + esc(x.link) + '" target="_blank" rel="noopener">báo cáo gốc</a>' : '') + '</div></div>'; });
-      h += '</div><div>' + duPhong(p) + (cx.raw ? tpLichSu(cx.raw, gia) : '') + '</div></div>';
-      h += '<div class="hsY">' + esc(p.ctck_chu || '') + (sg.tv ? ' Trung vị ' + sg.n + ' báo cáo: ' + f(sg.tv / 1000, 1) + ' (' + pct(sg.up) + ').' : '') + '</div>';
+      h += '</div><div>' + duPhong(p) + (cx.raw ? tpLichSu(cx.raw, gia) : '') + '</div></div>'
+        + '<div class="hsY">' + esc(p.ctck_chu || '') + (sg.tv ? ' Trung vị ' + sg.n + ' báo cáo: ' + f(sg.tv / 1000, 1) + ' (' + pct(sg.up) + ').' : '') + '</div>';
     }
-    if (p.nguon && p.nguon.length) h += '<div class="hsNg"><h5>Nguồn <small class="mut">bấm để mở bản gốc</small></h5><ol>'
+    if (p.nguon && p.nguon.length) h += '<h4 class="hsPlH">Nguồn <small>bấm để mở bản gốc</small></h4><div class="hsNg"><ol>'
       + p.nguon.map(function(z){ return '<li><a href="' + esc(z.link) + '" target="_blank" rel="noopener">' + esc(z.ten) + '</a> <span class="mini">' + esc(z.ngay || '') + '</span></li>'; }).join('') + '</ol></div>';
-    return h + '<div class="hsDisc">Báo cáo do khoanguyeninvest.vn tổng hợp và tự dựng mô hình từ BCTC, thông tin doanh nghiệp công bố và báo cáo CTCK (chỉ tham khảo); mỗi con số ghi nguồn. '
-      + 'Không phải khuyến nghị đầu tư. Tín hiệu định lượng là quy tắc cố định (rule-based), kiểm định trên dữ liệu 2014 – 2026.</div></div>';
+    return '<div class="hsPlB">' + h + '</div>';
   }
   // Du phong loi nhuan: tung CTCK va mo hinh cua trang (cot doi 2026 / 2027)
   function duPhong(p){
@@ -667,18 +653,22 @@
       + '#ptcs .hsEvR .eL{font-size:11.5px;font-weight:800;white-space:nowrap}#ptcs .hsEvR.len .eL{color:var(--green-dark)}#ptcs .hsEvR.xuong .eL{color:var(--red)}#ptcs .hsEvR.hai .eL{color:#B45309}'
       + '#ptcs .hsEvR .eL .mv{margin-left:6px;font-size:8px;letter-spacing:1px;vertical-align:2px}#ptcs .hsEvR .eL .mv0{font-size:8px;letter-spacing:1px;vertical-align:2px;color:#D5DAE0}#ptcs .hsEvR .eN{color:#475569}#ptcs .hsEvR .eN b{color:var(--text)}'
       + '#ptcs .hsEvR .eT b{display:block;font-size:13px;color:var(--text);white-space:nowrap}#ptcs .hsEvR .eT b.up{color:var(--green-dark)}#ptcs .hsEvR .eT b.down{color:var(--red)}#ptcs .hsEvR .eT small{display:block;font-size:11px;color:var(--muted);line-height:1.4}#ptcs .hsEvR .eT em{font-style:normal;color:#B8C0CB}#ptcs .hsEvR .eD{font-size:11.5px;color:var(--muted)}'
-      + '#ptcs .hsSec{padding:24px 0 6px;border-top:1px solid var(--border)}#ptcs .hsPgB>.hsSec:first-child,#ptcs .hsPgB>div:first-child>.hsSec:first-child{border-top:0;padding-top:0}#ptcs .hsSec .btg3{margin-bottom:6px}'
-      + '#ptcs .hsSecH{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;margin-bottom:14px}#ptcs .hsSecH .so{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:7px;background:var(--green);color:#fff;font-weight:800;font-size:13px;flex:none}'
-      + '#ptcs .hsSecH h3{margin:0;font-size:17px;font-weight:800;color:#0F172A;letter-spacing:-.005em}#ptcs .hsSecH .phu{font-size:12px;color:var(--muted)}'
       + '#ptcs .hsFoot{margin-top:22px;padding-top:10px;border-top:1px solid var(--border);font-size:11.5px;color:var(--muted);line-height:1.5}#ptcs .hsDisc{margin-top:16px;font-size:11.5px;color:var(--muted);line-height:1.5}'
-      + '#ptcs .hsNg{margin-top:16px}#ptcs .hsPl{font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:6px 2px 8px}'
+      + '#ptcs .hsNg{margin-top:16px}'
       + '@media (max-width:1000px){#ptcs .hsP1{grid-template-columns:1fr}#ptcs .hsEvH{display:none}#ptcs .hsEvR{grid-template-columns:86px minmax(0,1fr);gap:3px 12px}#ptcs .hsEvR .eN,#ptcs .hsEvR .eT,#ptcs .hsEvR .eD{grid-column:2}}'
+      + '#ptcs .hsR1{margin-top:26px}#ptcs .hsR2{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:32px;margin-top:26px}#ptcs .hsPgB>.hsR2:first-child{margin-top:0}'
+      + '#ptcs .hsR3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:26px}#ptcs .hsR4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}#ptcs .hsR2>*,#ptcs .hsR3>*,#ptcs .hsR4>*{min-width:0}#ptcs .hsR3 .hsTnr{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) 40px}#ptcs .hsR3 .hsWfR{grid-template-columns:minmax(0,1.1fr) minmax(0,1.2fr) 96px}'
+      + '#ptcs .hsBc.gon{border:0;border-radius:0;padding:0}#ptcs .hsBc.gon .hsBt{font-size:12.5px;margin-bottom:2px}#ptcs .hsBc.gon>.hsN{margin:4px 0 0}'
+      + '#ptcs .hsPlB h5{margin:0 0 6px;font-size:13px}#ptcs .hsPlH{font-size:12px;font-weight:800;color:var(--green-dark);letter-spacing:.05em;text-transform:uppercase;margin:20px 0 10px;padding-bottom:5px;border-bottom:2px solid var(--green)}#ptcs .hsPlH small{text-transform:none;letter-spacing:0;font-weight:400;color:var(--muted);margin-left:8px}#ptcs .ptab>.hsPlH:first-child{margin-top:8px}'
+      + '#ptcs .hsRbC{display:flex;flex-wrap:wrap;gap:4px;margin-top:9px}#ptcs .hsRbC span{font-size:10.5px;font-weight:700;background:rgba(255,255,255,.2);border-radius:999px;padding:1px 7px;white-space:nowrap}#ptcs .hsRbC span.no{background:rgba(0,0,0,.2)}'
+      + '#ptcs .hsRbQ{font-size:12px;padding:8px 0 7px;border-bottom:1px solid #F1F3F6;color:#475569;line-height:1.4}#ptcs .hsRbQ b{color:var(--text)}#ptcs .hsRbQ.q2 b{color:#B45309}#ptcs .hsRbQ.q1 b{color:var(--green-dark)}'
+      + '@media (max-width:1000px){#ptcs .hsR2,#ptcs .hsR3{grid-template-columns:1fr}#ptcs .hsR4{grid-template-columns:repeat(2,minmax(0,1fr))}}'
       + '@media (max-width:560px){#ptcs .bdx2.deu span.an{visibility:hidden}#ptcs .hsPgB{padding:14px 12px}#ptcs .hsBand{padding:8px 12px}#ptcs .hsHl{font-size:22px}#ptcs .hsSub{font-size:14px}#ptcs .hsLdR{grid-template-columns:1fr;gap:2px}#ptcs .hsLdS{display:flex;align-items:baseline;gap:8px}#ptcs .hsLdS small{margin:0}#ptcs .hsBand .b3{margin-left:0}#ptcs .hsSb{margin:10px 30px 0}#ptcs .caur{grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr) 52px;font-size:12px}}';
     document.head.appendChild(st);
   }
 
   window.__knHoSo = {
-    tai: tai, lay: function(t){ return HS[t] || null; }, css: css, nghe: function(fn){ NGHE = fn; }, muc: muc,
-    trang1: function(p, cx){ css(); return trang1(p, cx); }, dau2: function(p){ return dauTrang(p, 2, 'Chi tiết'); }, trang2: trang2, phanD: phanD
+    tai: tai, lay: function(t){ return HS[t] || null; }, css: css, nghe: function(fn){ NGHE = fn; },
+    trang1: function(p, cx){ css(); return trang1(p, cx); }, trang2: trang2, phanD: phanD
   };
 })();

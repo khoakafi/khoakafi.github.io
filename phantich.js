@@ -1462,12 +1462,13 @@
   // Boi canh cho ho so: gia song (nghin dong), du lieu BCTC/gia/bao cao CTCK, ket luan mo hinh vua tinh
   function hsCx(t, raw){ var r = hang(t) || {}, kl = (ptKL && ptKL.t === t) ? ptKL : null;
     return { gia: r.p > 0 ? r.p : null, raw: raw, val20: r.val20 != null ? r.val20 / 1000 : null,
-      mo: kl ? { muc: kl.muc, hanh: HANH[kl.loai] || '', soDat: kl.soDat, tong: kl.dk ? kl.dk.length : null, pe: kl.x ? kl.x.pe : null } : null }; }
+      mo: kl ? { muc: kl.muc, hanh: HANH[kl.loai] || '', soDat: kl.soDat, tong: kl.dk ? kl.dk.length : null, pe: kl.x ? kl.x.pe : null,
+        chips: kl.dk ? kl.dk.map(function(z){ return [z.ok, z.chip]; }) : null, tq: (kl.muc === 'tc' && kl.st != null) ? kl.st : null } : null }; }
   // Ve lai cac phan cua ho so phu thuoc gia (gia ma nay, gia cong ty con niem yet) — giu nguyen phan con lai
   function veLaiHs(t){
     var hs = window.__knHoSo, pf = hs && hs.lay(t); if (!pf || !window.__ptLast || window.__ptLast.t !== t) return;
     var cx = hsCx(t, window.__ptLast.raw);
-    [['hsT1', hs.trang1], ['hsB', hs.trang2], ['hsD', hs.phanD]].forEach(function(z){ var el = document.getElementById(z[0]);
+    [['hsT1', hs.trang1], ['hsT2', hs.trang2], ['hsD', hs.phanD]].forEach(function(z){ var el = document.getElementById(z[0]);
       if (el) try { el.innerHTML = z[1](pf, cx); } catch(e){ console.warn('hoso ve lai ' + z[0], e); } });
   }
   if (window.__knHoSo) window.__knHoSo.nghe(function(){ try { var t = K() && K().ma(); if (t && ptDaVe === t) veLaiHs(t); } catch(e){} });
@@ -1484,9 +1485,9 @@
     if (raw) { try { sv = ptSoi(t, raw, d.loai); } catch(e){ console.warn('ptSoi', e); }
       try { raw.__tt = tangTruong(sv); } catch(e){ console.warn('tangTruong', e); raw.__tt = null; }
       Object.defineProperty(raw, '__sv', { value: sv, configurable: true, writable: true, enumerable: false }); }   // khong luu vao cache
-    // Ma co ho so (hoso.js): bao cao 2 trang — trang 1 tong quan; trang 2 chi tiet: muc 1-5 cua ho so, 6 the BCTC, 7 tin hieu dinh luong, 8 CTCK + nguon.
-    // Ma chua co ho so: khung mo hinh -> 3 the BCTC nhu cu. Muc gap (Soi BCTC, Cham diem 5 nam) xuong cuoi lam phu luc.
-    var hs = window.__knHoSo, pf = hs ? hs.lay(t) : null, dg = raw ? dinhGiaHtml(t, raw) : '', cx = null, b3 = '';
+    // Ma co ho so (hoso.js): bao cao dung 2 trang (tong quan, chi tiet); moi thu khac (tin hieu dinh luong chi tiet, the BCTC, van hanh, CTCK, nguon,
+    // Soi BCTC, Cham diem 5 nam) gom vao MOT muc "Phu luc" gap lai. Ma chua co ho so: khung mo hinh -> 3 the BCTC -> muc gap nhu cu.
+    var hs = window.__knHoSo, pf = hs ? hs.lay(t) : null, dg = raw ? dinhGiaHtml(t, raw) : '', cx = null, b3 = '', pl = null;
     if (raw && sv) { var nmL = window.__nmLast && window.__nmLast.t === t ? window.__nmLast.nm : null;
       try { b3 += theQuy(sv, raw.__tt, nmL); } catch(e){ console.warn('theQuy', e); }
       try { b3 += theBien(sv, raw.__tt); } catch(e){ console.warn('theBien', e); }
@@ -1494,19 +1495,19 @@
     if (pf) {
       cx = hsCx(t, raw);
       try { h += '<div class="hsPg" id="hsT1">' + hs.trang1(pf, cx) + '</div>'; } catch(e){ console.warn('hoso trang 1', e); }
-      var t2 = '';
-      try { t2 += '<div id="hsB">' + hs.trang2(pf, cx) + '</div>'; } catch(e){ console.warn('hoso trang 2', e); }
-      if (b3) t2 += '<div class="hsSec">' + hs.muc(6, 'Sức khỏe tài chính', 'quý gần nhất · biên và chi phí · vay nợ — tính từ BCTC VNDirect') + '<div class="btg3">' + b3 + '</div></div>';
-      if (raw) t2 += '<div class="hsSec">' + hs.muc(7, 'Tín hiệu định lượng của trang', 'quy tắc cố định (rule-based), kiểm định 1.628 mã 2014–2026 · tính lại theo giá') + '<div id="ptDgO">' + dg + '</div></div>';
-      try { t2 += '<div id="hsD">' + hs.phanD(pf, cx) + '</div>'; } catch(e){ console.warn('hoso muc 8', e); }
-      h += '<div class="hsPg hsPg2">' + hs.dau2(pf) + '<div class="hsPgB">' + t2 + '</div></div><div class="hsPl">Phụ lục — số liệu chi tiết</div>';
+      try { h += '<div class="hsPg" id="hsT2">' + hs.trang2(pf, cx) + '</div>'; } catch(e){ console.warn('hoso trang 2', e); }
+      pl = '';
+      if (raw) pl += '<h4 class="hsPlH">Tín hiệu định lượng của trang <small>quy tắc cố định (rule-based), kiểm định 1.628 mã 2014–2026 · tính lại theo giá</small></h4><div id="ptDgO">' + dg + '</div>';
+      if (b3) pl += '<h4 class="hsPlH">Sức khỏe tài chính <small>quý gần nhất · biên và chi phí · vay nợ — từ BCTC VNDirect</small></h4><div class="btg3">' + b3 + '</div>';
+      try { pl += '<div id="hsD">' + hs.phanD(pf, cx) + '</div>'; } catch(e){ console.warn('hoso phu luc', e); }
     } else {
       if (raw) h += '<div id="ptDgO">' + dg + '</div>';
       if (b3) h += '<div class="btg3">' + b3 + '</div>';
       if (hs && raw) h += '<div class="mini hsChua">Chưa có hồ sơ phân tích (tổng hợp báo cáo CTCK, kế hoạch, tin doanh nghiệp) cho ' + esc(t) + '. Hồ sơ đang làm dần cho ~100 mã thanh khoản cao được nhiều CTCK theo dõi.</div>';
     }
     var soi = raw ? soiHtml(t, raw, d, sv) : '';
-    if (soi) h += mucGap('ctsoi', 'Soi BCTC chi tiết', (sv ? (raw.__tt && raw.__tt.B ? raw.__tt.B.lb + ' và ' : '') + sv.lb + ' · ' : '') + '4 chỉ số quý · điểm sáng, điểm tối đầy đủ · nhận định · lợi nhuận đến từ đâu · thị phần · số liệu 8 quý', soi);
+    var gap = '';
+    if (soi) gap += mucGap('ctsoi', 'Soi BCTC chi tiết', (sv ? (raw.__tt && raw.__tt.B ? raw.__tt.B.lb + ' và ' : '') + sv.lb + ' · ' : '') + '4 chỉ số quý · điểm sáng, điểm tối đầy đủ · nhận định · lợi nhuận đến từ đâu · thị phần · số liệu 8 quý', soi);
     var nam = '<div class="ptp">' + cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC;
       return '<div class="ptc"><div class="pk"><span>' + x.ten + '</span><span class="pm ' + x.m + '">' + nh[x.m] + '</span></div><div class="py">' + x.y + '</div></div>'; }).join('') + '</div>';
     // Hang 2: F-score / diem manh-yeu / dinh gia & nganh
@@ -1558,7 +1559,8 @@
       + 'Tăng trưởng: LNST mẹ ≥ 15%/năm và doanh thu ≥ 10%/năm trong 3 năm là Tốt. Sinh lời: ROE bình quân 3 năm ≥ 15% Tốt, &lt; 10% Yếu. '
       + 'Định giá so với trung vị ~4 năm của chính mã và trung vị ngành' + (d.loai !== 'dn' ? ' (dùng P/B cho ngân hàng, CTCK, bảo hiểm)' : '') + '. '
       + 'Cột 4 quý gần nhất không tính dòng tiền vì LCTT quý thường ghi lũy kế.</div>';
-    h += mucGap('ct5n', 'Chấm điểm 5 năm', cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC; return x.ten.charAt(0) + x.ten.slice(1).toLowerCase() + ' <span class="pm ' + x.m + '">' + nh[x.m] + '</span>'; }).join(' · ') + (fsc ? ' · Piotroski' : '') + ' · so với ngành · BCTC năm', nam);
+    gap += mucGap('ct5n', 'Chấm điểm 5 năm', cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC; return x.ten.charAt(0) + x.ten.slice(1).toLowerCase() + ' <span class="pm ' + x.m + '">' + nh[x.m] + '</span>'; }).join(' · ') + (fsc ? ' · Piotroski' : '') + ' · so với ngành · BCTC năm', nam);
+    h += pl != null ? mucGap('ctpl', 'Phụ lục', 'ngoài báo cáo · tín hiệu định lượng chi tiết · BCTC quý · vận hành, vĩ mô · báo cáo CTCK · nguồn · Soi BCTC · Chấm điểm 5 năm', pl + gap) : gap;
     el.innerHTML = h;
     el.style.display = '';
     el.querySelectorAll('.pl').forEach(function(a){ a.onclick = function(){ try { window.openDetail(a.dataset.t); window.scrollTo({ top: 0, behavior: 'smooth' }); } catch(e){} }; });

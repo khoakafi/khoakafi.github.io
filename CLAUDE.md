@@ -334,6 +334,12 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   Mục gập (Soi BCTC, Chấm điểm 5 năm) xuống "Phụ lục". Mã chưa có hồ sơ giữ bố cục cũ. Câu phụ thuộc giá có `dk: 'conlai_re'` (P/E phần ngoài
   công ty con < 90% trung vị khu vực) — sai thì hiện bản `khac`, để headline/luận điểm không nói ngược số khi giá chạy. Thẩm định CTCK đã bỏ;
   ý CTCK đúng (chất lượng LN, cầu kéo về sớm, biên dù iPhone, BHX ra Bắc) nằm trong luận điểm/sự kiện của trang.
+- **Bản 5 — đúng 2 trang (17/10 tối, anh Khoa xem trên web: "sao mô hình dự phóng từ 1 đến 8 luôn vậy, tui kêu tóm gọn trong 2 trang thui").**
+  Bỏ mục đánh số. `#hsT1` trang 1 như bản 4 (+ hộp khuyến nghị có 5 chip điều kiện và trạng thái Toàn cảnh khi TÍCH CỰC). `#hsT2` = `trang2`
+  **gọn một trang**: dự phóng theo mảng | định giá tổng các phần (thanh 3 kịch bản + bảng cách tính) · giả định chính · cầu LN | độ nhạy | theo dõi quý
+  · 4 biểu đồ vận hành (chế độ `gon`, ý của từng biểu đồ ở tooltip) · P/E lịch sử | kế hoạch & tiến độ · dòng nguồn. Mọi thứ khác gom vào **một**
+  mục gập "Phụ lục" (`mucGap('ctpl')`): khung tín hiệu định lượng `#ptDgO`, 3 thẻ BCTC, `#hsD` = `phanD` (vận hành từng mảng, vĩ mô → DN,
+  báo cáo CTCK, nguồn đầy đủ), Soi BCTC, Chấm điểm 5 năm. Trang web ~3.950 px cho cả 2 trang (bản 4: ~7.500 px).
 
 ## Số hiệu suất B★ tính ở đâu
 

@@ -233,7 +233,7 @@
     "eps": 1
    }
   ],
-  "ghi": "2025A: doanh thu theo mảng (Mirae Asset 03/09), lợi nhuận mảng theo MBS 13/10 (cộng đúng 7.034 tỷ). 2026E = 6 tháng thực tế + Q3 (doanh thu sơ bộ) + Q4 ước tính. Tính lại mỗi quý khi có BCTC; script kafi-core research/ho-so/mo-hinh/MWG.mjs."
+  "ghi": "2025A: doanh thu mảng theo Mirae Asset 03/09, lợi nhuận mảng theo MBS 13/10. 2026E = 6 tháng thực tế + Q3 sơ bộ + Q4 ước tính."
  },
  "cau_ln": {
   "ten": "LN cổ đông MWG 2026E → 2027E (kịch bản cơ sở)",
