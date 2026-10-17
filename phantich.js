@@ -17,7 +17,7 @@
   'use strict';
   var MA = '11000,11100,11200,11300,11400,12700,13000,13100,13110,13340,14000,14110,14240,21001,22100,23100,22510,23110,23800,23003,23000,23001,21500,23300,32000,32100,33100,33600,421701,421900,423200,422900,88888,412100,412200,413300,22200';
   var DONG = ['21001','22100','23100','22510','23110','23800','23003','23000','23001','21500','23300','22200','421701','421900','423200','422900','88888'];
-  var ptFor = null, ptCho = null, ptDaVe = null, ptCoRts = false;
+  var ptFor = null, ptCho = null, ptDaVe = null, ptCoRts = false, ptKL = null;
 
   function so(v){ var n = +v; return (v == null || v === '' || !isFinite(n)) ? null : n; }
   function V(o, c){ return o && o.v && o.v[c] != null ? o.v[c] : null; }
@@ -1131,7 +1131,7 @@
     var nm = null; try { nm = nmTinh(raw.lsQ, raw.gia, gSong, ngay); } catch(e){ console.warn('nmTinh', e); }
     window.__nmLast = { t: t, nm: nm };
     var o = null, h = '', ct = '';
-    try { o = ketLuanDL(t, nm, raw); h += tomTatHtml(o); } catch(e){ console.warn('ketLuan', e); }
+    try { o = ketLuanDL(t, nm, raw); ptKL = o; h += tomTatHtml(o); } catch(e){ console.warn('ketLuan', e); }
     try { if (o) ct += chiTietKlHtml(o); } catch(e){ console.warn('chiTiet', e); }
     if (nm) ct += peTheHtml(nm, gSong || raw.gia[raw.gia.length - 1][2]);
     if (ct) h += mucGap('ctkn', 'Chi tiết khuyến nghị', 'điều kiện có thanh đo · thang giá · lịch sử kiểm định · mô hình trên chính ' + esc(t) + ' · báo cáo CTCK · P/E so với 5 năm', ct);
@@ -1246,9 +1246,150 @@
       + '#ptcs .dgbar{position:relative;height:14px;margin:12px 4px 4px;background:var(--panel2);border-radius:7px}#ptcs .dgband{position:absolute;top:0;bottom:0;background:#dbe6f7;border-radius:7px}'
       + '#ptcs .dgmed{position:absolute;top:-3px;bottom:-3px;width:2px;background:#7A828E}#ptcs .dgnow{position:absolute;top:-5px;width:14px;height:24px;margin-left:-7px;border-radius:7px;background:var(--blue);border:2px solid #fff;box-shadow:0 0 0 1px var(--blue)}'
       + '#ptcs .dgsc{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--muted);margin:2px 4px 0}#ptcs ul.dgc{margin:10px 0 0;padding-left:18px;font-size:13px;line-height:1.55}'
+      /* the BCTC trai ra (quy nay, bien & chi phi, vay no) */
+      + '#ptcs .btg3{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:12px;margin-bottom:12px}@media (max-width:420px){#ptcs .btg3{grid-template-columns:1fr}}'
+      + '#ptcs .bt{background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px 14px;min-width:0}#ptcs .bth{display:flex;align-items:center;gap:6px 8px;flex-wrap:wrap;margin-bottom:8px}#ptcs .bth b{font-size:14px}'
+      + '#ptcs .bth .so{flex:none;width:20px;height:20px;border-radius:50%;background:var(--green);color:#fff;font-size:11.5px;font-weight:800;display:inline-flex;align-items:center;justify-content:center}'
+      + '#ptcs .btc{font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;white-space:nowrap}#ptcs .btc.ok{background:var(--green-soft);color:var(--green-dark)}#ptcs .btc.no{background:var(--red-soft);color:var(--red)}#ptcs .btc.tb{background:var(--amber-soft);color:#B45309}#ptcs .btc.na{background:#EDF0F4;color:#475569}'
+      + '#ptcs .bts{display:flex;flex-wrap:wrap;gap:6px 16px;margin-bottom:6px}#ptcs .bts span{display:flex;flex-direction:column;min-width:0}#ptcs .bts small{font-size:11px;color:var(--muted);line-height:1.3}#ptcs .bts b{font-size:16px;line-height:1.3}#ptcs .bts b.up{color:var(--green-dark)}#ptcs .bts b.down{color:var(--red)}#ptcs .bts em{font-style:normal;font-size:11px;color:var(--muted)}'
+      + '#ptcs ul.bti{list-style:none;margin:8px 0 0;padding:0}#ptcs .bti li{font-size:12.5px;line-height:1.5;padding:3px 0 3px 16px;position:relative}#ptcs .bti li:before{content:"•";position:absolute;left:3px;top:3px;color:#9AA3AE;font-weight:800}'
+      + '#ptcs .bti li.ok:before{content:"▲";color:var(--green);font-size:9px;top:7px}#ptcs .bti li.no:before{content:"▼";color:var(--red);font-size:9px;top:7px}#ptcs .bti li.canh:before{content:"!";color:#D97706;left:5px}'
+      + '#ptcs .btf{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.45}#ptcs .bt2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media (max-width:480px){#ptcs .bt2{grid-template-columns:1fr}}#ptcs .bt3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}'
+      + '#ptcs .kqv{font-size:18px;font-weight:800;margin:2px 0}#ptcs .kqv small{font-size:11px;color:var(--muted);font-weight:600}#ptcs .kqd{font-size:12px;font-weight:700}#ptcs .kqd.up{color:var(--green-dark)}#ptcs .kqd.down{color:var(--red)}#ptcs .kqd.mut{color:var(--muted)}'
+      + '#ptcs .hsChua{margin:0 0 12px;padding:8px 12px;border-radius:10px;background:var(--panel2)}'
       + '.kn-app #ptcs{border:0;border-radius:15px;padding:14px 16px;margin:0 14px 12px;box-shadow:var(--ksh)}';
     document.head.appendChild(st);
   }
+  /* ---------- The so lieu BCTC trai ra (17/10/2026): quy nay lam an the nao, bien & chi phi, vay no ----------
+     Anh Khoa: "trai ra, khong bam mo; doc vao biet quy nay lam an sao, vay no cao khong, chi phi the nao". Chi so lieu BCTC VNDirect.
+     Bieu do dung chung voi hoso.js (window.__knBd). */
+  function BD(){ return window.__knBd || null; }
+  function bdCot(ss, lbs, o){ var b = BD(); return b ? b.cot(ss, lbs, o) : ''; }
+  function bdDuong(ss, lbs, o){ var b = BD(); return b ? b.duong(ss, lbs, o) : ''; }
+  function chuGiai(ss, fm){ var b = BD(); return b ? b.chuGiai(ss, fm) : ''; }
+  function tyGon(v){ return v == null ? '—' : (v < 0 ? '−' + ty(-v) : ty(v)); }
+  function cauNho(cq, lb, lbP){
+    if (!cq) return '';
+    var ds = cq.ds.slice().sort(function(a, b){ return Math.abs(b.d) - Math.abs(a.d); }).slice(0, 5), mx = Math.max.apply(null, ds.map(function(z){ return Math.abs(z.d); }).concat([1]));
+    return '<div class="kik" style="margin-top:10px;display:block">LNTT ' + lb + ' so với ' + lbP + ': ' + tyD(cq.pa - cq.pb) + ' tỷ — đến từ đâu</div><div class="cau">' + ds.map(function(z){
+      return '<div class="caur" title="' + esc(z.ten + ': ' + tyD(z.d) + ' tỷ') + '"><span>' + z.ten + '</span><span class="caub"><i class="' + (z.d >= 0 ? 'up' : 'dn') + '" style="width:' + (Math.abs(z.d) / mx * 50).toFixed(1) + '%"></i></span><b class="' + (z.d >= 0 ? 'up' : 'down') + '">' + tyD(z.d) + '</b></div>'; }).join('') + '</div>';
+  }
+  function theTrong(so, tieuDe, chip, noiDung){
+    return '<div class="bth">' + (so ? '<span class="so">' + so + '</span>' : '') + '<b>' + tieuDe + '</b>' + (chip ? '<span class="btc ' + chip[0] + '">' + chip[1] + '</span>' : '') + '</div>' + noiDung;
+  }
+  function the(so, tieuDe, chip, noiDung, id){ return '<div class="bt"' + (id ? ' id="' + id + '"' : '') + '>' + theTrong(so, tieuDe, chip, noiDung) + '</div>'; }
+  function soLieu(ds){ ds = ds.filter(Boolean); return ds.length ? '<div class="bts">' + ds.map(function(z){ return '<span><small>' + z[0] + '</small><b' + (z[2] ? ' class="' + z[2] + '"' : '') + '>' + z[1] + '</b>' + (z[3] ? '<em>' + z[3] + '</em>' : '') + '</span>'; }).join('') + '</div>' : ''; }
+  function yDong(ds){ ds = ds.filter(function(z){ return z && z[1]; }); return ds.length ? '<ul class="bti">' + ds.map(function(z){ return '<li' + (z[0] ? ' class="' + z[0] + '"' : '') + '>' + z[1] + '</li>'; }).join('') + '</ul>' : ''; }
+  function chuoiQ(sv, get, nQ){ var ks = []; for (var k = sv.K - (nQ - 1); k <= sv.K; k++) ks.push(k);
+    return { ks: ks, lbs: ks.map(lbQ), v: ks.map(function(k){ return sv.m[k] ? get(sv.m[k], k) : null; }) }; }
+  var HL8 = [6, 7], CMP8 = [2, 3];   // 8 quy: 2 quy dang soi + cung ky nam truoc
+
+
+  // ② Quy nay lam an the nao — co gi dac biet
+  function theQuy(sv, tg, nm){
+    if (!sv || !tg) return '';
+    var A = tg.A, B = tg.B, loai = sv.loai, tenDt = loai === 'nh' ? 'Tổng thu nhập hoạt động' : 'Doanh thu';
+    var cDt = chuoiQ(sv, function(o){ return dtQuy(loai, o); }, 8), cNp = chuoiQ(sv, function(o){ return npQuy(o); }, 8);
+    var mot = function(c, ten, a, a0){ var hg = (a != null && a0 != null && a !== a0) ? (a > a0 ? 1 : -1) : 0;
+      return '<div><span class="kik">' + ten + ' ' + A.lb + '</span><div class="kqv">' + tyGon(a) + ' <small>tỷ</small> <span class="kqd ' + (hg > 0 ? 'up' : (hg < 0 ? 'down' : 'mut')) + '">'
+        + (hg > 0 ? '▲ ' : (hg < 0 ? '▼ ' : '')) + soNgan(a, a0) + '</span></div>' + bdCot([{ ten: ten, v: c.v }], c.lbs, { hl: HL8, cmp: CMP8, cao: 70 }) + '</div>'; };
+    var h = '<div class="bt2">' + mot(cDt, tenDt, A.rv, A.rv0) + mot(cNp, 'LNST công ty mẹ', A.np, A.np0) + '</div>'
+      + '<div class="btf">Cột xanh: ' + (B ? B.lb + ' và ' : '') + A.lb + ' · xám đậm: cùng kỳ năm trước · rê chuột vào cột để xem số.</div>';
+    h += cauNho(sv.cq, sv.lb, sv.lbP);
+    var y = [];
+    tg.nd.forEach(function(z){ if (y.length < 3) y.push([z.ic === 'ok' ? 'ok' : (z.ic === 'no' ? 'no' : (z.ic === 'canh' ? 'canh' : '')), '<b>' + z.ten + '</b>' + (z.ct ? ' — ' + z.ct : '') + '.']); });
+    var bt = sv.ds.filter(function(z){ return z.w === 93; })[0];
+    if (bt) y.push(['canh', '<b>' + bt.so + ' ' + bt.ten + '</b>' + (bt.ct ? ' — ' + bt.ct : '') + '.']);
+    if (nm && nm.streak >= 2) y.push(['ok', 'LN và doanh thu 4 quý cùng lập kỷ lục <b>' + nm.streak + ' quý liên tiếp</b>.']);
+    h += yDong(y);
+    return the('', 'Quý ' + A.lb.replace('Q', '').replace('/', '/20') + ' làm ăn thế nào?', [tg.mau === 'tc' ? 'ok' : (tg.mau === 'tcu' ? 'no' : 'na'), tg.nhan + (tg.nhip ? ' · ' + tg.nhip : '')], h);
+  }
+  // ③ Bien loi nhuan & chi phi
+  function theBien(sv, tg){
+    if (!sv || !tg) return '';
+    var loai = sv.loai, L = sv.m[sv.K], P = sv.m[sv.K - 4], A = tg.A, h = '', chip = null, y = [];
+    if (loai === 'dn') {
+      var cG = chuoiQ(sv, function(o){ var dt = V(o, '21001'), gp = V(o, '23100'); return (dt > 0 && gp != null) ? gp / dt * 100 : null; }, 8);
+      var cS = chuoiQ(sv, function(o){ var dt = V(o, '21001'), x = gop('22110', '22200')(o); return (dt > 0 && x != null) ? x / dt * 100 : null; }, 8);
+      var ss = [{ ten: 'Biên lợi nhuận gộp', v: cG.v, cls: 'c1' }, { ten: 'Chi phí bán hàng + quản lý / doanh thu', v: cS.v, cls: 'c2' }];
+      var dG = (A.gm != null && A.gm0 != null) ? (A.gm - A.gm0) * 100 : null;
+      chip = dG == null ? ['na', 'Thiếu số'] : (dG >= 1 ? ['ok', 'Biên mở rộng'] : (dG <= -1 ? ['no', 'Biên thu hẹp'] : ['tb', 'Biên ổn định']));
+      var sg = gop('22110', '22200')(L), sg0 = P ? gop('22110', '22200')(P) : null, lv = V(L, '22510') || V(L, '22509'), lv0 = P ? (V(P, '22510') || V(P, '22509')) : null;
+      h += soLieu([['Biên gộp ' + A.lb, A.gm != null ? ph(A.gm * 100) : '—', '', dG != null ? diem(A.gm * 100, A.gm0 * 100) + ' so cùng kỳ' : ''],
+        ['Bán hàng + quản lý / DT', cS.v[7] != null ? ph(cS.v[7]) : '—', '', cS.v[3] != null ? 'cùng kỳ ' + ph(cS.v[3]) : ''],
+        lv != null ? ['Chi phí lãi vay quý', ty(lv) + ' tỷ', '', lv0 ? soNgan(lv, lv0) + ' so cùng kỳ' : ''] : null]);
+      h += chuGiai(ss, function(v){ return ph(v); }) + bdDuong(ss, cG.lbs, { cao: 96, fm: function(v){ return ph(v); } });
+      var gGp = yoy(A.gp, A.gp0), gSg = yoy(sg, sg0);
+      if (gGp != null && gSg != null) y.push([gGp > gSg + 5 ? 'ok' : (gSg > gGp + 5 ? 'no' : ''), (gGp > gSg + 5 ? '<b>Đòn bẩy hoạt động:</b> ' : (gSg > gGp + 5 ? '<b>Chi phí tăng nhanh hơn lợi nhuận gộp:</b> ' : ''))
+        + 'LN gộp ' + dau(gGp, 0) + ', chi phí bán hàng + quản lý ' + dau(gSg, 0) + (A.lc != null && A.lc0 != null ? ' → LN cốt lõi ' + soCk(A.lc, A.lc0) : '') + ' so với cùng kỳ.']);
+      var lvi = sv.ds.filter(function(z){ return /^Chi phí lãi vay/.test(z.ten); })[0];
+      if (lvi) y.push([lvi.s < 0 ? 'no' : 'ok', '<b>' + lvi.ten + ' (' + lvi.so + ')</b>' + (lvi.ct ? ': ' + lvi.ct : '') + '.']);
+    } else if (loai === 'nh') {
+      var ea = function(o){ return gop('412100', '411400', '412300')(o); };
+      var cN = chuoiQ(sv, function(o, k){ var o0 = sv.m[k - 1]; return (V(o, '421900') != null && ea(o) && o0 && ea(o0)) ? V(o, '421900') * 4 / ((ea(o) + ea(o0)) / 2) * 100 : null; }, 8);
+      var cD = chuoiQ(sv, function(o){ var v = V(o, '422900'); return v == null ? null : Math.abs(v); }, 8);
+      var cC = chuoiQ(sv, function(o){ return (V(o, '421701') && V(o, '22200') != null) ? Math.abs(V(o, '22200')) / V(o, '421701') * 100 : null; }, 8);
+      var nA = cN.v[7], n0 = cN.v[3];
+      chip = (nA == null || n0 == null) ? ['na', 'Thiếu số'] : (nA - n0 >= 0.1 ? ['ok', 'NIM cải thiện'] : (n0 - nA >= 0.1 ? ['no', 'NIM thu hẹp'] : ['tb', 'NIM ổn định']));
+      h += soLieu([['NIM ước tính ' + A.lb, nA != null ? ph(nA, 2) : '—', '', n0 != null ? 'cùng kỳ ' + ph(n0, 2) : ''],
+        ['Chi phí / TOI (CIR)', cC.v[7] != null ? ph(cC.v[7], 0) : '—', '', cC.v[3] != null ? 'cùng kỳ ' + ph(cC.v[3], 0) : ''],
+        ['Chi phí dự phòng quý', cD.v[7] != null ? ty(cD.v[7]) + ' tỷ' : '—', '', cD.v[3] ? soNgan(cD.v[7], cD.v[3]) + ' so cùng kỳ' : '']]);
+      h += '<div class="bt2"><div><span class="kik">NIM ước tính, năm hóa (%)</span>' + bdDuong([{ ten: 'NIM', v: cN.v, cls: 'c1' }], cN.lbs, { cao: 76, fm: function(v){ return ph(v, 2); } }) + '</div>'
+        + '<div><span class="kik">Chi phí dự phòng (tỷ)</span>' + bdCot([{ ten: 'Chi phí dự phòng', v: cD.v }], cD.lbs, { hl: HL8, cmp: CMP8, cao: 76 }) + '</div></div>';
+      tg.nd.filter(function(z){ return /dự phòng/.test(z.ten); }).forEach(function(z){ y.push([z.ic === 'no' ? 'no' : 'canh', '<b>' + z.ten + '</b>' + (z.ct ? ' — ' + z.ct : '') + '.']); });
+      y.push(['', 'NIM là ước tính từ BCTC (thu nhập lãi thuần ÷ cho vay + tiền gửi liên ngân hàng + chứng khoán đầu tư); nguồn không có nợ xấu, CASA.']);
+    } else if (loai === 'ck') {
+      var cM = chuoiQ(sv, function(o){ return gop('621110', am('700056'))(o); }, 8), cL = chuoiQ(sv, function(o){ return V(o, '700044'); }, 8), cT = chuoiQ(sv, function(o){ return gop('700039', am('700046'))(o); }, 8);
+      var pbt = V(L, '23800'), td = cT.v[7];
+      chip = (td != null && pbt > 0 && Math.abs(td) > pbt * 0.3) ? ['tb', 'Phụ thuộc tự doanh'] : ['ok', 'Thu nhập đa dạng'];
+      var mini = function(c, ten){ return '<div><span class="kik">' + ten + '</span>' + bdCot([{ ten: ten, v: c.v }], c.lbs, { hl: HL8, cmp: CMP8, cao: 62 }) + '</div>'; };
+      h += soLieu([['Môi giới ròng ' + A.lb, tyGon(cM.v[7]) + ' tỷ', '', cM.v[3] != null ? soNgan(cM.v[7], cM.v[3]) + ' so cùng kỳ' : ''],
+        ['Lãi cho vay margin', tyGon(cL.v[7]) + ' tỷ', '', cL.v[3] != null ? soNgan(cL.v[7], cL.v[3]) + ' so cùng kỳ' : ''],
+        ['Tự doanh ròng', tyGon(td) + ' tỷ', '', pbt > 0 && td != null ? f(td / pbt * 100, 0) + '% LNTT' : '']]);
+      h += '<div class="bt3">' + mini(cM, 'Môi giới ròng (tỷ)') + mini(cL, 'Lãi margin (tỷ)') + mini(cT, 'Tự doanh ròng (tỷ)') + '</div>';
+      sv.ds.filter(function(z){ return z.w === 94 || z.w === 74; }).forEach(function(z){ y.push(['canh', '<b>' + z.so + ' ' + z.ten + '</b>' + (z.ct ? ' — ' + z.ct : '') + '.']); });
+    }
+    h += yDong(y);
+    return the('', loai === 'nh' ? 'Biên lãi & chi phí thế nào?' : (loai === 'ck' ? 'Thu nhập đến từ mảng nào?' : 'Biên lợi nhuận & chi phí thế nào?'), chip, h);
+  }
+  // ④ Vay no co cao khong?
+  function theNo(sv, d){
+    if (!sv) return '';
+    var loai = sv.loai, L = sv.m[sv.K], P = sv.m[sv.K - 4], h = '', chip = null, y = [];
+    var Ld = d && d.cols ? d.cols[d.cols.length - 1] : null, icr = (d && d.ttm && d.ttm.icr != null) ? d.ttm.icr : (Ld ? Ld.icr : null);
+    if (loai === 'dn') {
+      var cV = chuoiQ(sv, function(o){ return gop('13110', '13340')(o); }, 8), cT = chuoiQ(sv, function(o){ return gop('11100', '11200')(o); }, 8);
+      var vay = cV.v[7], tien = cT.v[7], eq = V(L, '14000'), nd = (vay || 0) - (tien || 0), ndE = eq > 0 ? nd / eq : null;
+      chip = ndE == null ? ['na', 'Thiếu số'] : (nd <= 0 ? ['ok', 'Tiền ròng'] : (ndE <= 0.3 ? ['ok', 'Nợ thấp'] : (ndE <= 1.5 ? ['tb', 'Nợ trung bình'] : ['no', 'Nợ cao'])));
+      h += soLieu([['Nợ vay', tyGon(vay) + ' tỷ', '', cV.v[3] ? soNgan(vay, cV.v[3]) + ' so cùng kỳ' : ''], ['Tiền + đầu tư ngắn hạn', tyGon(tien) + ' tỷ', '', ''],
+        [nd <= 0 ? 'Tiền ròng' : 'Nợ vay ròng / vốn chủ', nd <= 0 ? ty(-nd) + ' tỷ' : (ndE != null ? lan(ndE) + ' lần' : '—'), nd <= 0 ? 'up' : (ndE > 1.5 ? 'down' : ''), ''],
+        icr != null ? ['LN trước thuế & lãi vay / lãi vay', f(icr, 1) + ' lần', icr < 3 ? 'down' : '', '4 quý gần nhất'] : null]);
+      var ss = [{ ten: 'Nợ vay', v: cV.v, cls: 'c2', cot: 1 }, { ten: 'Tiền + đầu tư ngắn hạn', v: cT.v, cls: 'c1', cot: 1 }];
+      h += chuGiai(ss) + bdCot(ss, cV.lbs, { cao: 86 });
+      sv.ds.filter(function(z){ return /^(Nợ vay ròng|Tiền ròng|Xây dựng cơ bản)/.test(z.ten); }).forEach(function(z){ y.push([z.s > 0 ? 'ok' : (z.s < 0 ? 'no' : ''), '<b>' + z.ten + ': ' + z.so + '</b>' + (z.ct ? ' — ' + z.ct : '') + '.']); });
+      if (icr != null && icr < 3) y.push(['no', 'Lợi nhuận chỉ gấp ' + f(icr, 1) + ' lần chi phí lãi vay — nhạy với lãi suất.']);
+    } else if (loai === 'nh') {
+      var cL = chuoiQ(sv, function(o){ return V(o, '412100'); }, 8), cD = chuoiQ(sv, function(o){ return V(o, '413300'); }, 8);
+      var ldr = (cL.v[7] && cD.v[7]) ? cL.v[7] / cD.v[7] * 100 : null, ldr0 = (cL.v[3] && cD.v[3]) ? cL.v[3] / cD.v[3] * 100 : null;
+      var eqTa = (V(L, '14000') && V(L, '12700')) ? V(L, '14000') / V(L, '12700') * 100 : null, llr = (V(L, '412200') != null && cL.v[7]) ? Math.abs(V(L, '412200')) / cL.v[7] * 100 : null;
+      chip = ldr == null ? ['na', 'Thiếu số'] : (ldr > 100 ? ['tb', 'Cho vay vượt tiền gửi'] : ['ok', 'Cho vay trong tiền gửi']);
+      h += soLieu([['Cho vay / tiền gửi KH', ldr != null ? ph(ldr, 0) : '—', '', ldr0 != null ? 'cùng kỳ ' + ph(ldr0, 0) : ''], ['Vốn chủ / tổng tài sản', eqTa != null ? ph(eqTa, 1) : '—', eqTa != null && eqTa < 7 ? 'down' : '', ''],
+        ['Quỹ dự phòng / dư nợ', llr != null ? ph(llr, 2) : '—', '', '']]);
+      var ss2 = [{ ten: 'Cho vay khách hàng', v: cL.v, cls: 'c1', cot: 1 }, { ten: 'Tiền gửi khách hàng', v: cD.v, cls: 'c2', cot: 1 }];
+      h += chuGiai(ss2) + bdCot(ss2, cL.lbs, { cao: 86 });
+      sv.ds.filter(function(z){ return /^(Tiền gửi khách hàng|Nợ Chính phủ|Quỹ dự phòng)/.test(z.ten); }).forEach(function(z){ y.push([z.s > 0 ? 'ok' : (z.s < 0 ? 'no' : ''), '<b>' + z.ten + ': ' + z.so + '</b>' + (z.ct ? ' — ' + z.ct : '') + '.']); });
+    } else if (loai === 'ck') {
+      var cMg = chuoiQ(sv, function(o){ return V(o, '700001'); }, 8), cE = chuoiQ(sv, function(o){ return V(o, '14000'); }, 8), cVy = chuoiQ(sv, function(o){ return gop('13110', '13340')(o); }, 8);
+      var mE = (cMg.v[7] && cE.v[7]) ? cMg.v[7] / cE.v[7] : null;
+      chip = mE == null ? ['na', 'Thiếu số'] : (mE > 1.5 ? ['tb', 'Margin cao so với vốn'] : ['ok', 'Margin trong sức vốn']);
+      h += soLieu([['Dư nợ margin', tyGon(cMg.v[7]) + ' tỷ', '', cMg.v[3] ? soNgan(cMg.v[7], cMg.v[3]) + ' so cùng kỳ' : ''], ['Margin / vốn chủ', mE != null ? lan(mE) + ' lần' : '—', '', ''], ['Nợ vay', tyGon(cVy.v[7]) + ' tỷ', '', '']]);
+      var ss3 = [{ ten: 'Dư nợ margin', v: cMg.v, cls: 'c1', cot: 1 }, { ten: 'Vốn chủ sở hữu', v: cE.v, cls: 'c2', cot: 1 }];
+      h += chuGiai(ss3) + bdCot(ss3, cMg.lbs, { cao: 86 });
+    }
+    h += yDong(y);
+    return the('', loai === 'nh' ? 'Vốn & thanh khoản có vững?' : 'Vay nợ có cao không?', chip, h);
+  }
+
   function hop(){
     var el = document.getElementById('ptcs');
     var ff = document.getElementById('finFull');
@@ -1318,8 +1459,11 @@
     });
     return '<table class="ptt">' + h + '</table>';
   }
+  // Boi canh cho ho so: gia song (nghin dong), du lieu BCTC/gia/bao cao CTCK, ket luan mo hinh vua tinh
+  function hsCx(t, raw){ var r = hang(t) || {}; return { gia: r.p > 0 ? r.p : null, raw: raw, mo: (ptKL && ptKL.t === t) ? { muc: ptKL.muc, hanh: HANH[ptKL.loai] || '' } : null }; }
   function ptVe(t, d, raw){
     var el = hop(); if (!el) return;
+    if (window.__knHoSo) window.__knHoSo.css();       // CSS bieu do dung chung
     var C = d.cols, L = C[C.length - 1], r = hang(t) || {};
     var cham = ptCham(t, d), fsc = d.loai === 'dn' ? ptFscore(C) : null, co = ptCo(d), ng = ptNganh(t), ls = ptLichSuDinhGia(t);
     ptCoRts = !!ls;
@@ -1330,7 +1474,18 @@
     if (raw) { try { sv = ptSoi(t, raw, d.loai); } catch(e){ console.warn('ptSoi', e); }
       try { raw.__tt = tangTruong(sv); } catch(e){ console.warn('tangTruong', e); raw.__tt = null; }
       Object.defineProperty(raw, '__sv', { value: sv, configurable: true, writable: true, enumerable: false }); }   // khong luu vao cache
-    if (raw) h += '<div id="ptDgO">' + dinhGiaHtml(t, raw) + '</div>';
+    // Ho so phan tich (hoso.js, neu ma co): dau trang + can can -> khung mo hinh -> top-down, tung mang, ke hoach -> 3 the BCTC -> CTCK, rui ro, nguon
+    var hs = window.__knHoSo, pf = hs ? hs.lay(t) : null, dg = raw ? dinhGiaHtml(t, raw) : '', cx = null;
+    if (pf) { cx = hsCx(t, raw); try { h += '<div id="hsA">' + hs.phanA(pf, cx) + '</div>'; } catch(e){ console.warn('hoso A', e); } }
+    if (raw) h += '<div id="ptDgO">' + dg + '</div>';
+    if (pf) try { h += hs.phanB(pf); } catch(e){ console.warn('hoso B', e); }
+    if (raw && sv) { var nmL = window.__nmLast && window.__nmLast.t === t ? window.__nmLast.nm : null, b3 = '';
+      try { b3 += theQuy(sv, raw.__tt, nmL); } catch(e){ console.warn('theQuy', e); }
+      try { b3 += theBien(sv, raw.__tt); } catch(e){ console.warn('theBien', e); }
+      try { b3 += theNo(sv, d); } catch(e){ console.warn('theNo', e); }
+      if (b3) h += '<div class="btg3">' + b3 + '</div>'; }
+    if (pf) try { h += '<div id="hsC">' + hs.phanC(pf, cx) + '</div>' + hs.phanD(pf); } catch(e){ console.warn('hoso C/D', e); }
+    else if (hs && raw) h += '<div class="mini hsChua">Chưa có hồ sơ phân tích (tổng hợp báo cáo CTCK, kế hoạch, tin doanh nghiệp) cho ' + esc(t) + '. Hồ sơ đang làm dần cho ~100 mã thanh khoản cao được nhiều CTCK theo dõi.</div>';
     var soi = raw ? soiHtml(t, raw, d, sv) : '';
     if (soi) h += mucGap('ctsoi', 'Soi BCTC chi tiết', (sv ? (raw.__tt && raw.__tt.B ? raw.__tt.B.lb + ' và ' : '') + sv.lb + ' · ' : '') + '4 chỉ số quý · điểm sáng, điểm tối đầy đủ · nhận định · lợi nhuận đến từ đâu · thị phần · số liệu 8 quý', soi);
     var nam = '<div class="ptp">' + cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC;
@@ -1397,6 +1552,7 @@
     var el = hop(); if (!el) return;
     if (!hang(t)) { el.style.display = 'none'; el.innerHTML = ''; return; }
     var k = K(), khoa = k ? k.knKhoaPhien(k.KN_MOC_SEC) : null;
+    var hs = window.__knHoSo, hsViec = hs ? hs.tai(t) : null;        // ho so phan tich (neu ma co) tai song song voi BCTC
     var raw = khoa ? k.knDocCache('kn_pt3_' + t, khoa) : null;
     if (!raw) {
       ptBao(t, 'Đang tải BCTC 5 năm… <span class="spin"></span>');
@@ -1410,8 +1566,12 @@
       }
       if (khoa && raw.bc && raw.lsQ && raw.gia) ptLuu(t, khoa, raw);   // mot nguon tai hong -> khong luu, lan sau thu lai
     }
+    if (hsViec && !hs.lay(t)) { await Promise.race([hsViec, new Promise(function(ok){ setTimeout(ok, 2500); })]); if (ptFor !== t) return; }
     try { ptVe(t, ptTinh(raw, t), raw); window.__ptLast = { t: t, raw: raw }; }
     catch(e){ console.warn('phantich', e); ptBao(t, 'Lỗi tính chỉ số: ' + esc(e.message)); }
+    // Ho so ve cham hon 2,5 s -> ve lai mot lan khi co
+    if (hsViec) hsViec.then(function(pf){ if (pf && ptFor === t && ptDaVe === t && !document.getElementById('hsA') && window.__ptLast && window.__ptLast.t === t)
+      try { ptVe(t, ptTinh(window.__ptLast.raw, t), window.__ptLast.raw); } catch(e){ console.warn('hoso ve lai', e); } });
   }
   window.__knPhanTich = ptMo;
   window.__knPtTinh = function(raw, t){ return ptTinh(raw, t); };
@@ -1427,7 +1587,10 @@
       if (ptDaVe === curT && window.__ptLast && window.__ptLast.t === curT) { var rr = hang(curT); var pNow = rr && rr.p;
         if (pNow && pNow !== window.__ptGiaVe) { window.__ptGiaVe = pNow; var o2 = document.getElementById('ptDgO');
           if (o2) { var mo = {}; o2.querySelectorAll('details').forEach(function(x){ if (x.open) mo[x.className] = 1; });
-            o2.innerHTML = dinhGiaHtml(curT, window.__ptLast.raw); o2.querySelectorAll('details').forEach(function(x){ if (mo[x.className]) x.open = true; }); } } }
+            o2.innerHTML = dinhGiaHtml(curT, window.__ptLast.raw); o2.querySelectorAll('details').forEach(function(x){ if (mo[x.className]) x.open = true; }); }
+          var hs = window.__knHoSo, pf = hs && hs.lay(curT);
+          if (pf) { var cx = hsCx(curT, window.__ptLast.raw), a = document.getElementById('hsA'), c = document.getElementById('hsC');
+            try { if (a) a.innerHTML = hs.phanA(pf, cx); if (c) c.innerHTML = hs.phanC(pf, cx); } catch(e){ console.warn('hoso gia', e); } } } }
       // Chi so quy (P/E lich su) ve sau BCTC nam -> ve lai mot lan cho o Dinh gia
       if (ptDaVe === curT && !ptCoRts && ptLichSuDinhGia(curT) && window.__ptLast && window.__ptLast.t === curT) ptVe(curT, ptTinh(window.__ptLast.raw, curT), window.__ptLast.raw);
     } catch(e){}

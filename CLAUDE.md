@@ -281,6 +281,28 @@ nó **thất bại** (giai đoạn kiểm tra 2021–: −0,6%/6 tháng so với
 - **Không** kết luận bằng "đắt/rẻ so với chính nó": phân vị P/E so với 5 năm của chính mã không dự báo được giá (kiểm định ~0).
   Thẻ "Định giá theo giá hôm nay" chỉ mô tả, có ghi chú điều này. Muốn đổi ngưỡng → chạy lại kafi-core `chot.mjs`, không chỉnh tay trên web.
 
+## Hồ sơ phân tích từng mã (17/10/2026, làm thử MWG — chờ anh Khoa duyệt khung rồi mới nhân ra ~100 mã)
+
+Anh Khoa: "phân tích detail từng business như một analysis thật, P/E – PEG chỉ là một phần; mỗi mã đọc 3–5 báo cáo CTCK + bài báo
+(kế hoạch lợi nhuận, mục tiêu, tin); top-down; đánh giá risk/reward; ~100 mã top thanh khoản được CTCK theo dõi; mã không phân tích =
+không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa hàng, doanh thu/cửa hàng".
+- **Tải tài liệu** (máy task không gọi được web VN → luôn qua runner): kafi-core `research/ho-so/tai.py`, workflow `ho-so-tai.yml` tự chạy khi đẩy
+  `research/ho-so/**` lên `claude/co-ban-research`. `ma.txt` = danh sách mã; Simplize → ≤ 5 báo cáo mới nhất (≤ 240 ngày, mỗi CTCK 1 bản) PDF → chữ;
+  `them.txt` (MA⇥URL⇥ghi chú) = bài báo, ĐHĐCĐ, báo cáo trên web CTCK. Kết quả ở nhánh riêng `ho-so-data` (`out/<MA>/bc_*.txt`, `web_*.txt`, `ds_bao_cao.json`).
+- **Viết hồ sơ**: `hoso/<MA>.json` + `hoso/index.json` ({MA: ngày cập nhật}, client chỉ tải mã có trong index). Tự viết lại, không chép văn bản CTCK
+  (bản gốc chỉ nằm ở kho riêng); mỗi ý có `ng` (nguồn ngắn), đối chiếu từng con số với văn bản gốc trước khi đẩy. Số phụ thuộc giá tính ở client:
+  `{pe26}` trong `dong_mo`, ma trận `kich_ban` (LN 2027 dự phóng × P/E → giá), tiềm năng so với giá mục tiêu.
+- **Giá mục tiêu & cổ tức:** Simplize ghi giá MT đã trừ cổ tức tiền mặt chi sau ngày báo cáo (KAFI 94.400 → 93.400); bản PDF thì không.
+  Hồ sơ ghi giá trong báo cáo, so với giá hôm nay thì trừ `co_tuc` (ngày GDKHQ sau ngày báo cáo). MWG: cổ tức 2025 2 × 1.000 đ, GDKHQ 29/07 và 07/10/2026.
+- **Bẫy số đã gặp:** MBS ghi tiền 44.670 / nợ 22.404 tỷ (30/6) trong bảng DCF là của **riêng DMX**, không phải MWG hợp nhất; ACBS tự vênh trong báo cáo
+  (LN 2026F 11.122 ở thân bài/mô hình, 11.160 ở bảng tóm tắt) — dùng số thân bài.
+- **Vẽ**: `hoso.js` (`?v=`, nạp trước phantich.js): `phanA` đầu trang + cán cân (vẽ lại khi giá đổi, `#hsA`), `phanB` top-down / từng mảng / biểu đồ KPI /
+  kế hoạch & tiến độ, `phanC` CTCK + giá mục tiêu 16 tháng từ `raw.bc` + `raw.gia` (vẽ lại khi giá đổi, `#hsC`), `phanD` rủi ro / sự kiện / nguồn.
+  phantich.js `ptVe` xếp: hồ sơ A → khung mô hình (`#ptDgO`) → hồ sơ B → **3 thẻ BCTC trải ra** (`theQuy`, `theBien`, `theNo`, mọi mã) → hồ sơ C, D →
+  mục gập cũ. Mã chưa có hồ sơ: một dòng "Chưa có hồ sơ phân tích". Biểu đồ dùng chung `window.__knBd` (cột, cột chồng, đường có trục, thanh ngang).
+  Lớp CSS tránh `.up`/`.dn` cho khối lớn (trang có `.up{color:xanh}` toàn cục → cả khối chữ xanh).
+- Test: scratchpad `dg/dg-test.js` (`BO_DOI=1 MA=MWG FULL=1`, `W=390`, `APP=1`); Simplize giả lấy thêm `hs/out/<MA>/ds_bao_cao.json`.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
