@@ -188,42 +188,63 @@
       + o5('Tín hiệu định lượng của trang', mo ? (TEN3[mo.muc] || '—') : '—', mo && mo.hanh ? esc(mo.hanh) : 'P/E, PEG, tăng trưởng — khung bên dưới', 'mut', 'mo ' + (mo ? mo.muc : ''))
       + '</div>';
     h += thangKb(p, o);
-    h += '<div class="hs2 hsLd"><div><h5>Luận điểm đầu tư</h5><ol class="hsTT">' + (p.luan_diem || []).map(function(z){ return '<li>' + esc(z.t) + nguon(z.ng) + '</li>'; }).join('') + '</ol></div>'
+    h += '<div class="hs2 hsLd"><div><h5>Luận điểm đầu tư</h5><div class="hsLdL">' + (p.luan_diem || []).map(function(z){
+        return '<div class="hsLdR"><div class="hsLdS">' + (z.so ? '<b>' + esc(z.so) + '</b><small>' + esc(z.nhan || '') + '</small>' : '') + '</div>'
+          + '<div class="hsLdT">' + (z.tieu ? '<b>' + esc(z.tieu) + '</b>' : '') + '<span>' + esc(z.t) + nguon(z.ng) + '</span></div></div>'; }).join('') + '</div></div>'
       + '<div>' + sotpHtml(p, o) + '</div></div></div>';
     return h;
   }
-  // Thang gia: kich ban xau / co so / tot, gia hien tai, dai gia muc tieu CTCK (tham khao)
+  // Thang gia: day xau -> tot, vach co so, cham gia hien tai; lan tren la dai gia muc tieu CTCK (tham khao)
   function thangKb(p, o){
     if (o.xau == null || o.tot == null) return '';
     var sg = soGia(p, o.gia), vs = [o.xau, o.tot, o.gt].concat(o.gia > 0 ? [o.gia] : []).concat(sg.lo != null ? [sg.lo, sg.hi] : []);
-    var lo = Math.min.apply(null, vs), hi = Math.max.apply(null, vs), pad = (hi - lo) * 0.06; lo -= pad; hi += pad;
-    var X = function(v){ return ((v - lo) / (hi - lo) * 100).toFixed(2); };
-    var h = '<div class="hsSb"><div class="hsSbT"></div>';
-    if (sg.lo != null) h += '<div class="hsSbB" style="left:' + X(sg.lo) + '%;width:' + (X(sg.hi) - X(sg.lo)).toFixed(2) + '%" title="Giá mục tiêu ' + sg.n + ' CTCK (tham khảo)"><span>CTCK ' + f(sg.lo, 0) + '–' + f(sg.hi, 0) + '</span></div>';
-    [['x', 'Xấu', o.xau], ['c', 'Cơ sở', o.gt], ['t', 'Tốt', o.tot]].forEach(function(z){ if (z[2] == null) return;
-      h += '<div class="hsSbM ' + z[0] + '" style="left:' + X(z[2]) + '%"><i></i><span>' + z[1] + ' <b>' + f(z[2], 1) + '</b></span></div>'; });
-    if (o.gia > 0) h += '<div class="hsSbP" style="left:' + X(o.gia) + '%"><span>Giá hiện tại <b>' + f(o.gia, 1) + '</b></span><i></i></div>';
-    h += '</div><div class="hsY hsSbG">Cán cân lên/xuống ' + (o.rr != null ? '<b>' + f(o.rr, 1) + ' lần</b> (tốt ' + pct((o.tot / o.gia - 1) * 100) + ' / xấu ' + pct((o.xau / o.gia - 1) * 100) + ')' : '—')
-      + '. Giá trị theo tổng các phần, tính trên lợi nhuận 2027E; dải xám là giá mục tiêu của CTCK, chỉ để tham khảo.</div>';
+    var lo = Math.min.apply(null, vs), hi = Math.max.apply(null, vs), pad = (hi - lo) * 0.05; lo -= pad; hi += pad;
+    var X = function(v){ return (v - lo) / (hi - lo) * 100; };
+    var h = '<div class="hsSb">';
+    if (sg.lo != null) h += '<div class="hsSbB" style="left:' + X(sg.lo).toFixed(2) + '%;width:' + (X(sg.hi) - X(sg.lo)).toFixed(2) + '%" title="Giá mục tiêu ' + sg.n + ' báo cáo CTCK, đã trừ cổ tức (tham khảo)"></div>'
+      + '<span class="hsSbBl' + (X(sg.hi) > 70 ? ' tr' : '') + '" style="left:' + (X(sg.hi) > 70 ? X(sg.lo) : X(sg.hi)).toFixed(2) + '%">giá mục tiêu ' + sg.n + ' CTCK ' + f(sg.lo, 0) + '–' + f(sg.hi, 0) + ' (tham khảo)</span>';
+    h += '<div class="hsSbT"></div><div class="hsSbR" style="left:' + X(o.xau).toFixed(2) + '%;width:' + (X(o.tot) - X(o.xau)).toFixed(2) + '%"></div>';
+    [['x', 'Xấu', o.xau], ['c', 'Cơ sở', o.gt], ['t', 'Tốt', o.tot]].forEach(function(z){ if (z[2] == null) return; var d = o.gia > 0 ? (z[2] / o.gia - 1) * 100 : null;
+      h += '<div class="hsSbM ' + z[0] + '" style="left:' + X(z[2]).toFixed(2) + '%"><i></i><span>' + z[1] + ' <b>' + f(z[2], 1) + '</b>' + (d != null ? ' <em class="' + lop(d) + '">' + pct(d) + '</em>' : '') + '</span></div>'; });
+    if (o.gia > 0) h += '<div class="hsSbP" style="left:' + X(o.gia).toFixed(2) + '%"><span>Giá hiện tại <b>' + f(o.gia, 1) + '</b></span><i></i></div>';
+    h += '</div><div class="hsY hsSbG">Cán cân lên/xuống ' + (o.rr != null ? '<b>' + f(o.rr, 1) + ' lần</b>' : '—') + ' · giá trị 12 tháng theo tổng các phần, tính trên LN 2027E · cách tính ở phần mô hình bên dưới</div>';
     return h;
   }
-  // Thi truong dang tra bao nhieu cho tung phan: von hoa me - % cong ty con theo gia thi truong
+  // Thi truong dang tra bao nhieu cho tung phan: von hoa me - % cong ty con theo gia thi truong; P/E tung phan so voi cung nganh khu vuc
   function sotpHtml(p, o){
     var s = p.sotp; if (!s || !s.con) return '';
     var h = '<h5>Thị trường đang trả bao nhiêu cho từng phần?</h5>';
     if (!o.con || o.phanCon == null) return h + '<div class="hsY">Đang lấy giá ' + esc(s.con.ma) + '…</div>';
     var w = Math.max(0, Math.min(100, o.pctCon));
-    h += '<div class="hsSt"><i class="a" style="width:' + w.toFixed(1) + '%"><span>' + f(s.con.so_huu * 100, 0) + '% ' + esc(s.con.ma) + ' theo giá thị trường · ' + f(o.phanCon, 0) + ' tỷ</span></i>'
+    h += '<div class="hsSt"><i class="a" style="width:' + w.toFixed(1) + '%" title="' + esc(s.con.ma + ' ' + f(o.con.gia, 1) + ' × ' + f(s.con.cp_trieu, 1) + ' triệu cp × ' + f(s.con.so_huu * 100, 2) + '%') + '"><span>'
+      + f(s.con.so_huu * 100, 0) + '% ' + esc(s.con.ma) + ' theo giá thị trường · ' + f(o.phanCon, 0) + ' tỷ</span></i>'
       + '<i class="b" style="width:' + (100 - w).toFixed(1) + '%"><span>' + (o.conLai > 0 ? f(o.conLai, 0) + ' tỷ' : '—') + '</span></i></div>'
-      + '<div class="hsStl"><span>Vốn hóa ' + esc(p.ma) + ' <b>' + f(o.von, 0) + ' tỷ</b></span><span>' + esc(s.conlai.ten) + '</span></div>';
-    h += '<ul class="hsSo2">'
-      + '<li>' + esc(s.con.ten) + ' (' + esc(s.con.ma) + ') giá <b>' + f(o.con.gia, 1) + '</b> (' + ngVn(o.con.ngay) + ') → vốn hóa ' + f(o.vonCon, 0) + ' tỷ, P/E ' + (o.peCon26 != null ? f(o.peCon26, 1) : '—') + ' lần LN 2026E và '
-      + (o.peCon27 != null ? f(o.peCon27, 1) : '—') + ' lần 2027E của mô hình. Phần của ' + esc(p.ma) + ' (' + f(s.con.so_huu * 100, 1) + '%) bằng <b>' + f(o.pctCon, 0) + '%</b> vốn hóa ' + esc(p.ma) + '.</li>'
-      + '<li>Phần còn lại (' + esc(s.conlai.ten) + ') chỉ được trả <b>' + (o.conLai > 0 ? f(o.conLai, 0) + ' tỷ' : 'không đồng nào') + '</b>'
-      + (o.peConLai != null ? ', tức <b>' + f(o.peConLai, 1) + ' lần</b> lợi nhuận 2027E của phần này (' + f(s.conlai.ln27, 0) + ' tỷ)' : '') + '. Mô hình định giá phần này ' + f(s.conlai.gt, 0) + ' tỷ trước chiết khấu công ty mẹ.</li>'
-      + (s.con.gtgd ? '<li class="mut">' + esc(s.con.ma) + ' giao dịch mỏng (~' + s.con.gtgd + ' tỷ/phiên) — giá chưa phải thước đo ổn định; chưa tính chiết khấu công ty mẹ.</li>' : '') + '</ul>'
-      + '<div class="hsY">' + esc(s.ng || '') + '</div>';
+      + '<div class="hsStl"><span>Vốn hóa ' + esc(p.ma) + ' <b>' + f(o.von, 0) + ' tỷ</b> = ' + f(o.pctCon, 0) + '% là ' + esc(s.con.ma) + '</span><span>' + esc(s.conlai.ten) + '</span></div>';
+    h += peKv(s, o);
+    h += '<div class="hsY">' + esc(s.con.ma) + ' ' + f(o.con.gia, 1) + ' (' + ngVn(o.con.ngay) + '), vốn hóa ' + f(o.vonCon, 0) + ' tỷ, giao dịch mỏng (~' + (s.con.gtgd || '—') + ' tỷ/phiên) — giá chưa phải thước đo ổn định. '
+      + 'LN 2027E theo mô hình cơ sở: ' + esc(s.con.ma) + ' ' + f(s.con.ln27, 0) + ' tỷ, phần còn lại ' + f(s.conlai.ln27, 0) + ' tỷ. ' + esc(s.ng || '') + '; ' + esc(s.kv_ng || '') + '.</div>';
     return h;
+  }
+  // P/E 2027E thi truong dang tra cho tung phan, dat canh P/E 2027F tung doanh nghiep cung nganh khu vuc (cham xam) va trung vi
+  function peKv(s, o){
+    if (!s.con.kv || !s.conlai || !s.conlai.kv) return '';
+    var ds = [{ ten: s.con.ma, phu: s.con.kv_ten, v: o.peCon27, kv: s.con.kv, tv: s.con.kv_tv },
+              { ten: 'Phần còn lại', phu: s.conlai.kv_ten, v: o.peConLai, kv: s.conlai.kv, tv: s.conlai.kv_tv }];
+    var mx = 20, X = function(v){ return (Math.max(0, Math.min(v, mx)) / mx * 100).toFixed(1); };
+    var h = '<div class="hsPk"><div class="hsPkH">P/E trên LN 2027E: thị trường đang trả <i class="me"></i> so với doanh nghiệp cùng ngành khu vực <i class="kv"></i> (vạch: trung vị)</div>';
+    ds.forEach(function(r){
+      h += '<div class="hsPkR"><div class="hsPkT"><b>' + esc(r.ten) + '</b><small>' + esc(r.phu) + '</small></div><div class="hsPkB">';
+      r.kv.forEach(function(k){ h += '<i class="kv" style="left:' + X(k[1]) + '%" title="' + esc(k[0] + ': P/E 2027F ' + f(k[1], 1)) + '"></i>'; });
+      var vuot = r.kv.filter(function(k){ return k[1] > mx; });
+      if (vuot.length) h += '<em class="vuot">' + vuot.map(function(k){ return esc(k[0]) + ' ' + f(k[1], 1); }).join(', ') + ' ›</em>';
+      h += '<i class="tv" style="left:' + X(r.tv) + '%" title="Trung vị cùng ngành ' + f(r.tv, 1) + '"></i>';
+      if (r.v != null) { var lech = (r.v / r.tv - 1) * 100;
+        h += '<i class="me" style="left:' + X(r.v) + '%" title="' + esc(r.ten + ': ' + f(r.v, 1) + ' lần, ' + (Math.abs(lech) < 10 ? 'ngang' : (lech < 0 ? 'thấp hơn' : 'cao hơn') + ' trung vị ' + f(Math.abs(lech), 0) + '%')) + '"></i>'
+          + '<b class="mel" style="left:' + X(r.v) + '%">' + f(r.v, 1) + '</b>'; }
+      var lc = r.v != null ? (r.v / r.tv - 1) * 100 : null;
+      h += '</div><div class="hsPkV">' + (lc == null ? '…' : (Math.abs(lc) < 10 ? '<b>ngang</b>' : '<b>' + pct(lc) + '</b>') + '<small>so với trung vị ' + f(r.tv, 1) + '</small>') + '</div></div>';
+    });
+    return h + '<div class="hsPkX"><span></span><div>' + [0, 5, 10, 15, 20].map(function(t){ return '<span style="left:' + X(t) + '%">' + t + '</span>'; }).join('') + '</div><span></span></div></div>';
   }
 
   /* ---------- Phan B: mo hinh du phong, theo doi theo quy, dong luc van hanh, top-down, ke hoach ---------- */
@@ -262,47 +283,104 @@
       if (r.eps && o.gia > 0) t += '<tr class="pe"><td>P/E tại giá hiện tại</td>' + r.v.map(function(e, i){ return '<td' + (i === 0 ? ' class="a"' : '') + '>' + (e > 0 ? f(o.gia * 1000 / e, 1) : '—') + '</td>'; }).join('') + '</tr>';
     });
     t += '</table>';
-    var kb = (p.kich_ban || []).map(function(k, i){ var d = o.gia > 0 ? (k.gia / o.gia - 1) * 100 : null, cl = ['x', 'c', 't'][Math.min(i, 2)];
-      return '<div class="hsKbc ' + cl + '"><div class="hsKbh"><b>' + esc(k.ten) + '</b><span class="' + lop(d) + '">' + pct(d) + '</span></div><div class="hsKbv">' + f(k.gia, 1) + ' <small>nghìn đ/cp</small></div>'
-        + '<div class="hsKbl">LN cổ đông 2026E ' + f(k.ln26, 0) + ' · 2027E ' + f(k.ln27, 0) + ' tỷ</div><div class="hsKbm">' + esc(k.mo_ta || '') + '</div></div>'; }).join('');
     var h = '<div class="hs"><div class="hsH"><span class="hsK">Mô hình dự phóng của trang</span><span class="mini">' + esc(p.ky || '') + ' · làm lại mỗi quý khi có BCTC</span></div>'
-      + '<div class="hsMh2"><div>' + t + '<div class="hsY">' + esc(M.ghi || '') + '</div></div><div>' + cauLn(p) + '<h5 style="margin-top:14px">Ba kịch bản (12 tháng)</h5><div class="hsKb3">' + kb + '</div></div></div>';
+      + '<div class="hsMh2"><div><h5>Dự phóng theo mảng</h5>' + t + '<div class="hsY">' + esc(M.ghi || '') + '</div></div><div>' + cauLn(p) + theoDoi(p, cx) + '</div></div>';
+    if (p.dinh_gia) h += '<div class="hsMh2 hsGdw"><div>' + kichBan3(p, o) + bangDinhGia(p, o) + '</div><div>' + peLichSu(p) + doNhay(p) + '</div></div>';
     if (p.gia_dinh && p.gia_dinh.length) {
-      h += '<div class="hsMh2 hsGdw"><div><h5>Giả định chính</h5><table class="hsGd"><colgroup><col style="width:27%"><col style="width:10%"><col style="width:10%"><col style="width:10%"><col></colgroup><tr><th>Biến số</th><th>Xấu</th><th>Cơ sở</th><th>Tốt</th><th>Căn cứ</th></tr>'
+      h += '<div class="hsGdw"><h5>Giả định chính theo kịch bản</h5><table class="hsGd"><colgroup><col style="width:23%"><col style="width:8%"><col style="width:8%"><col style="width:8%"><col></colgroup><tr><th>Biến số</th><th>Xấu</th><th>Cơ sở</th><th>Tốt</th><th>Căn cứ</th></tr>'
         + p.gia_dinh.map(function(g){ return '<tr><td>' + esc(g.ten) + '</td>' + g.v.map(function(v, i){ return '<td class="' + (i === 1 ? 'cs' : 'v') + '">' + esc(v) + '</td>'; }).join('') + '<td class="ld">' + esc(g.ly_do || '') + '</td></tr>'; }).join('')
-        + '</table></div><div>' + doNhay(p) + theoDoi(p, cx) + '</div></div>';
+        + '</table></div>';
     }
     return h + '</div>';
+  }
+  // Ba kich ban: thanh chong gia tri tung phan (nghin dong/cp, da tru chiet khau cong ty me), vach gia hien tai
+  function kichBan3(p, o){
+    var D = p.dinh_gia; if (!D || !D.phan || !D.gia) return '';
+    var ck = D.ck || 0, kb = p.kich_ban || [], TEN = ['Xấu', 'Cơ sở', 'Tốt'];
+    var ph = D.phan.map(function(z){ return { ten: z.ten, mau: /^c[1-4]$/.test(z.mau || '') ? z.mau : 'c4', v: z.gt.map(function(g){ return g * (1 - ck) / D.cp; }) }; });
+    var mx = Math.max.apply(null, D.gia.concat(o.gia > 0 ? [o.gia] : [])), st = nice(mx / 5), top = Math.ceil(mx / st) * st;
+    var X = function(v){ return v / top * 100; };
+    var h = '<h5>Định giá: ba kịch bản, từng phần <small class="mut">nghìn đ/cp, 12 tháng</small></h5>'
+      + '<div class="bdlg">' + ph.map(function(z){ return '<span><i class="' + z.mau + ' q"></i>' + esc(z.ten) + '</span>'; }).join('') + (o.gia > 0 ? '<span><i class="gia"></i>Giá hiện tại ' + f(o.gia, 1) + '</span>' : '') + '</div><div class="hsFf">';
+    D.gia.forEach(function(g, i){ var d = o.gia > 0 ? (g / o.gia - 1) * 100 : null, k = kb[i] || {};
+      h += '<div class="hsFfR' + (i === 1 ? ' cs' : '') + '"><span class="hsFfT">' + (TEN[i] || '') + '</span><span class="hsFfB">';
+      ph.forEach(function(z){ var w = X(z.v[i]);
+        h += '<i class="' + z.mau + '" style="width:' + w.toFixed(2) + '%" title="' + esc((TEN[i] || '') + ' · ' + z.ten + ': ' + f(z.v[i], 1) + ' nghìn đ/cp') + '">' + (w >= 7 ? '<span>' + f(z.v[i], 1) + '</span>' : '') + '</i>'; });
+      if (o.gia > 0) h += '<s style="left:' + X(o.gia).toFixed(2) + '%"></s>';
+      h += '</span><span class="hsFfV"><b>' + f(g, 1) + '</b>' + (d != null ? '<em class="' + lop(d) + '">' + pct(d) + '</em>' : '') + '</span></div>'
+        + (k.mo_ta ? '<div class="hsFfM">' + esc(k.mo_ta) + '</div>' : ''); });
+    var tk = []; for (var v = 0; v <= top + st / 2; v += st) tk.push('<span style="left:' + X(v).toFixed(2) + '%">' + f(v, 0) + '</span>');
+    return h + '<div class="hsFfX"><span></span><span class="tk">' + tk.join('') + '</span><span></span></div></div>';
+  }
+  // Bang tinh: LN 2027E x P/E x ty le so huu cho tung phan -> tong -> tru chiet khau -> chia so co phieu
+  function bangDinhGia(p, o){
+    var D = p.dinh_gia; if (!D || !D.phan) return '';
+    var ck = D.ck || 0, tong = [0, 1, 2].map(function(i){ return D.phan.reduce(function(s, z){ return s + z.gt[i]; }, 0); });
+    var td = function(i, a, b){ return '<td' + (i === 1 ? ' class="cs"' : '') + '>' + a + (b ? '<small>' + b + '</small>' : '') + '</td>'; };
+    var t = '<table class="hsDgT"><tr><th>Cách tính <small>tỷ đồng</small></th><th>Xấu</th><th>Cơ sở</th><th>Tốt</th></tr>';
+    D.phan.forEach(function(z){
+      t += '<tr><td><i class="sw ' + (z.mau || 'c4') + '"></i>' + esc(z.ten) + '<small>LN 2027E × P/E' + (z.sh < 1 ? ' × ' + f(z.sh * 100, 2) + '%' : '') + '</small></td>'
+        + [0, 1, 2].map(function(i){ return td(i, f(z.gt[i], 0), f(z.ln[i], 0) + ' × ' + f(z.pe[i], 0)); }).join('') + '</tr>'; });
+    t += '<tr class="sum"><td>Tổng các phần</td>' + tong.map(function(v, i){ return td(i, f(v, 0)); }).join('') + '</tr>'
+      + '<tr><td>Trừ ' + f(ck * 100, 0) + '% chiết khấu công ty mẹ</td>' + D.von.map(function(v, i){ return td(i, f(v, 0)); }).join('') + '</tr>'
+      + '<tr class="dam"><td>Giá trị mỗi cổ phiếu<small>÷ ' + f(D.cp, 1) + ' triệu cp · nghìn đ</small></td>' + D.gia.map(function(v, i){ return td(i, f(v, 1)); }).join('') + '</tr>';
+    if (o.gia > 0) t += '<tr><td>So với giá hiện tại ' + f(o.gia, 1) + '</td>' + D.gia.map(function(v, i){ var d = (v / o.gia - 1) * 100; return td(i, '<span class="' + lop(d) + '">' + pct(d) + '</span>'); }).join('') + '</tr>';
+    return t + '</table>';
+  }
+  // P/E 4 quy cua chinh ma theo thang (mo ta) + vach muc thap 10% va trung vi; P/E vuot khung (LN gan 0) bo trong
+  function peLichSu(p){
+    var L = p.pe_ls; if (!L || !L.t || L.t.length < 24) return '';
+    var tran = 30, v = L.v.map(function(x){ return x != null && x > 0 && x <= tran ? x : null; }), vuot = L.v.filter(function(x){ return x > tran; }).length;
+    var lbs = L.t.map(function(m){ return m.slice(5, 7) + '/' + m.slice(0, 4); });
+    var gd = (p.gia_dinh || []).filter(function(g){ return g.ten === 'P/E DMX'; })[0];
+    return '<h5>P/E của ' + esc(p.ma) + ' từ ' + L.t[0].slice(0, 4) + ' <small class="mut">P/E 4 quý, cuối mỗi tháng</small></h5><div class="hsPeL">'
+      + bdDuong([{ ten: 'P/E', v: v, cls: 'ink' }], lbs, { truc: 1, cao: 150, tu0: 1, fm: function(x){ return f(x, 1); }, fmTruc: function(x){ return f(x, 0); }, nhanCuoi: 1,
+          ref: [{ v: L.p10, ten: 'thấp 10%: ' + f(L.p10, 1), trai: 1 }, { v: L.tv, ten: 'trung vị: ' + f(L.tv, 1), trai: 1 }] }) + '</div>'
+      + '<div class="hsY">' + (gd ? 'P/E dùng cho DMX: xấu <b>' + esc(gd.v[0]) + '</b> · cơ sở <b>' + esc(gd.v[1]) + '</b> · tốt <b>' + esc(gd.v[2]) + '</b> — từ mức thấp 10% đến dưới trung vị. ' : '')
+      + 'Thấp nhất ' + f(L.thap[1], 1) + ' (' + L.thap[0].slice(5, 7) + '/' + L.thap[0].slice(0, 4) + ')' + (vuot ? '; ' + vuot + ' tháng 2023–2024 LN gần bằng 0, P/E vượt ' + tran + ' nên bỏ trống' : '')
+      + '. Chỉ để chọn P/E cho kịch bản — kiểm định của trang: P/E so với lịch sử của chính mã không dự báo được giá.</div>';
   }
   // Do nhay gia tri (nghin dong/cp) theo tung bien so — thanh hai phia
   function doNhay(p){
     var ds = p.nhay || []; if (!ds.length) return '';
     var mx = Math.max.apply(null, ds.map(function(z){ return z[2]; }).concat([1e-9]));
-    return '<h5>Giá trị nhạy với gì nhất?</h5><div class="hsTn">' + ds.map(function(z){ var w = (z[2] / mx * 50).toFixed(1);
-      return '<div class="hsTnr" title="' + esc(z[0] + (z[1] != null ? ': ±' + f(z[1], 0) + ' tỷ LN' : '') + ': ±' + f(z[2], 1) + ' nghìn đ/cp') + '"><span>' + esc(z[0]) + '</span><span class="hsTnb"><i class="dn" style="width:' + w + '%"></i><i class="up" style="width:' + w + '%"></i></span><b>±' + f(z[2], 1) + '</b></div>'; }).join('')
-      + '</div><div class="hsY">Nghìn đ/cp giá trị cơ sở; LN tính phần về cổ đông.</div>';
+    return '<h5 style="margin-top:14px">Giá trị cơ sở nhạy với gì nhất? <small class="mut">nghìn đ/cp</small></h5><div class="hsTn">' + ds.map(function(z){ var w = (z[2] / mx * 50).toFixed(1);
+      return '<div class="hsTnr" title="' + esc(z[0] + (z[1] != null ? ': ±' + f(z[1], 0) + ' tỷ LN về cổ đông' : '') + ': ±' + f(z[2], 1) + ' nghìn đ/cp') + '"><span>' + esc(z[0]) + '</span><span class="hsTnb"><i class="dn" style="width:' + w + '%"></i><i class="up" style="width:' + w + '%"></i></span><b>±' + f(z[2], 1) + '</b></div>'; }).join('')
+      + '</div>';
   }
-  // Theo doi du phong theo quy: so thuc te tu BCTC VNDirect khi co
+  // Theo doi du phong theo quy: khoang xau -> tot, vach co so, cung ky nam truoc; so thuc te tu BCTC VNDirect khi co
   function theoDoi(p, cx){
     var ds = p.theo_doi || []; if (!ds.length) return '';
     var Q = (cx && cx.raw && cx.raw.quy) || [], tim = function(fd){ return Q.filter(function(o){ return o.fd === fd; })[0] || null; };
-    var h = '<h5 style="margin-top:14px">Theo dõi dự phóng theo quý</h5><table class="hsTq"><tr><th>Kỳ</th><th>Doanh thu</th><th>LN cổ đông dự phóng<small>xấu · cơ sở · tốt</small></th><th>Thực tế</th></tr>';
-    ds.forEach(function(z){ var o = z.fd ? tim(z.fd) : null, tt = o && o.v && o.v['23000'] != null ? o.v['23000'] / 1e9 : null, dtt = o && o.v && o.v['21001'] != null ? o.v['21001'] / 1e9 : null;
-      var lech = (tt != null && z.ln) ? (tt / z.ln[1] - 1) * 100 : null;
-      h += '<tr><td>' + esc(z.quy) + '</td><td>' + (dtt != null ? f(dtt, 0) : (z.dt ? f(z.dt, 0) + (z.dt_tt ? ' <small>sơ bộ</small>' : ' <small>ước</small>') : '—')) + '</td>'
-        + '<td>' + (z.ln ? f(z.ln[0], 0) + ' · <b>' + f(z.ln[1], 0) + '</b> · ' + f(z.ln[2], 0) : '—') + '</td>'
-        + '<td>' + (tt != null ? '<b>' + f(tt, 0) + '</b> <small class="' + lop(lech) + '">' + pct(lech) + ' so với cơ sở</small>' : (z.fd ? '<span class="mut">chờ BCTC</span>' : '')) + '</td></tr>'; });
+    var rows = ds.map(function(z){ var o = z.fd ? tim(z.fd) : null;
+      return { z: z, tt: o && o.v && o.v['23000'] != null ? o.v['23000'] / 1e9 : null, dtt: o && o.v && o.v['21001'] != null ? o.v['21001'] / 1e9 : null }; });
+    var all = []; rows.forEach(function(r){ if (!r.z.fd || !r.z.ln) return; all.push(r.z.ln[0], r.z.ln[2]); if (r.z.ck) all.push(r.z.ck); if (r.tt != null) all.push(r.tt); });
+    var lo = all.length ? Math.min.apply(null, all) : 0, hi = all.length ? Math.max.apply(null, all) : 1, pad = (hi - lo) * 0.08; lo -= pad; hi += pad;
+    var X = function(v){ return ((v - lo) / (hi - lo) * 100).toFixed(1); };
+    var h = '<h5 style="margin-top:16px">Theo dõi dự phóng theo quý <small class="mut">LN cổ đông, tỷ đồng</small></h5><table class="hsTq"><tr><th>Kỳ</th><th>Doanh thu</th><th class="rg">Xấu – tốt · <b>cơ sở</b> · ○ cùng kỳ' + (rows.some(function(r){ return r.tt != null; }) ? ' · ◆ thực tế' : '') + '</th><th>Thực tế</th></tr>';
+    rows.forEach(function(r){ var z = r.z, lech = (r.tt != null && z.ln) ? (r.tt / z.ln[1] - 1) * 100 : null, ve = '';
+      if (z.fd && z.ln) ve = '<div class="hsRg" title="' + esc(z.quy + ': xấu ' + f(z.ln[0], 0) + ' · cơ sở ' + f(z.ln[1], 0) + ' · tốt ' + f(z.ln[2], 0) + (z.ck ? ' · cùng kỳ ' + f(z.ck, 0) : '')) + '">'
+        + '<i class="r" style="left:' + X(z.ln[0]) + '%;width:' + (X(z.ln[2]) - X(z.ln[0])).toFixed(1) + '%"></i><i class="c" style="left:' + X(z.ln[1]) + '%"></i>'
+        + (z.ck ? '<i class="ck" style="left:' + X(z.ck) + '%"></i>' : '') + (r.tt != null ? '<i class="tt" style="left:' + X(r.tt) + '%"></i>' : '') + '</div>'
+        + '<div class="hsRgL"><span>' + f(z.ln[0], 0) + '</span><b>' + f(z.ln[1], 0) + '</b><span>' + f(z.ln[2], 0) + '</span></div>';
+      else if (z.ln) ve = '<div class="hsRgN">' + f(z.ln[0], 0) + ' · <b>' + f(z.ln[1], 0) + '</b> · ' + f(z.ln[2], 0) + '</div>';
+      h += '<tr><td>' + esc(z.quy) + (z.ck ? '<small>cùng kỳ ' + f(z.ck, 0) + '</small>' : '') + '</td><td>' + (r.dtt != null ? f(r.dtt, 0) : (z.dt ? f(z.dt, 0) + (z.dt_tt ? ' <small>sơ bộ</small>' : ' <small>ước</small>') : '—')) + '</td>'
+        + '<td class="rg">' + ve + '</td>'
+        + '<td>' + (r.tt != null ? '<b>' + f(r.tt, 0) + '</b> <small class="' + lop(lech) + '">' + pct(lech) + ' so với cơ sở</small>' : (z.fd ? '<span class="mut">chờ BCTC</span>' : '')) + '</td></tr>'; });
     return h + '</table>';
   }
-  // Cau loi nhuan: buoc thay doi tu nam truoc sang nam sau (thanh hai phia)
+  // Cau loi nhuan dang thac nuoc: tong dau -> tung buoc tang/giam -> tong cuoi (truc tu 0)
   function cauLn(p){
     var c = p.cau_ln; if (!c || !c.buoc) return '';
-    var mx = Math.max.apply(null, c.buoc.map(function(z){ return Math.abs(z[1]); }).concat([1])), d = c.cuoi[1] - c.dau[1];
-    return '<h5>' + esc(c.ten) + '</h5><div class="cau hsCau">' + c.buoc.map(function(z){
-      return '<div class="caur" title="' + esc(z[0] + ': ' + (z[1] > 0 ? '+' : '') + f(z[1], 0) + ' tỷ') + '"><span>' + esc(z[0]) + '</span><span class="caub"><i class="' + (z[1] >= 0 ? 'up' : 'dn') + '" style="width:'
-        + (Math.abs(z[1]) / mx * 50).toFixed(1) + '%"></i></span><b class="' + (z[1] >= 0 ? 'up' : 'down') + '">' + (z[1] > 0 ? '+' : (z[1] < 0 ? '−' : '')) + f(Math.abs(z[1]), 0) + '</b></div>'; }).join('')
-      + '<div class="caur tong"><span>' + esc(c.dau[0]) + ' ' + f(c.dau[1], 0) + ' → ' + esc(c.cuoi[0]) + ' ' + f(c.cuoi[1], 0) + ' tỷ</span><span></span><b class="' + lop(d) + '">' + pct(d / c.dau[1] * 100, 1) + '</b></div></div>'
-      + '<div class="hsY">' + esc(c.y || '') + nguon(c.ng) + '</div>';
+    var dong = [{ ten: c.dau[0], tu: 0, den: c.dau[1], cls: 'tong', so: f(c.dau[1], 0) }], cum = c.dau[1], mx = c.dau[1];
+    c.buoc.forEach(function(z){ var a = cum; cum += z[1]; mx = Math.max(mx, cum);
+      dong.push({ ten: z[0], tu: Math.min(a, cum), den: Math.max(a, cum), cls: z[1] >= 0 ? 'tang' : 'giam', so: (z[1] > 0 ? '+' : (z[1] < 0 ? '−' : '')) + f(Math.abs(z[1]), 0) }); });
+    var d = c.cuoi[1] - c.dau[1]; mx = Math.max(mx, c.cuoi[1]);
+    dong.push({ ten: c.cuoi[0], tu: 0, den: c.cuoi[1], cls: 'tong', so: f(c.cuoi[1], 0) + ' <em class="' + lop(d) + '">' + pct(d / c.dau[1] * 100, 1) + '</em>' });
+    var X = function(v){ return v / (mx * 1.02) * 100; };
+    return '<h5>' + esc(c.ten) + ' <small class="mut">tỷ đồng</small></h5><div class="hsWf">' + dong.map(function(r){
+      return '<div class="hsWfR ' + r.cls + '" title="' + esc(r.ten) + ': ' + r.so.replace(/<[^>]+>/g, '') + '"><span class="hsWfT">' + esc(r.ten) + '</span><span class="hsWfB"><i style="left:' + X(r.tu).toFixed(2) + '%;width:' + Math.max(0.4, X(r.den) - X(r.tu)).toFixed(2) + '%"></i></span><b>' + r.so + '</b></div>'; }).join('')
+      + '</div><div class="hsY">' + esc(c.y || '') + nguon(c.ng) + '</div>';
   }
   function bieuDo(b){
     var cot = b.kieu === 'cot' || b.kieu === 'cot_chong';
@@ -332,12 +410,15 @@
         + p.catalyst.map(function(z){ return '<li><b>' + esc(z.khi) + '</b><span>' + esc(z.t) + '</span></li>'; }).join('') + '</ul></div>';
       if (p.rui_ro && p.rui_ro.length) h += '<div><div class="hsH"><span class="hsK">Rủi ro chính</span><span class="mini">mức độ · tác động lên lợi nhuận và giá trị · cần theo dõi</span></div><ul class="hsRl">' + p.rui_ro.map(function(z){
         var m = Math.max(1, Math.min(3, z.muc || 1));
-        return '<li><span class="hsLv l' + m + '" title="Mức ' + ['', 'thấp', 'vừa', 'cao'][m] + '">' + '●●●'.slice(0, m) + '<s>' + '●●●'.slice(m) + '</s></span><div><b>' + esc(z.t) + '</b> <span class="mini">' + ['', 'thấp', 'vừa', 'cao'][m] + '</span>'
+        return '<li><span class="hsLv l' + m + '" title="Mức ' + ['', 'thấp', 'vừa', 'cao'][m] + '">' + '●●●'.slice(0, m) + '<s>' + '●●●'.slice(m) + '</s></span><div class="hsRc"><div class="hsRh"><b>' + esc(z.t) + '</b><span class="mini">' + ['', 'thấp', 'vừa', 'cao'][m] + '</span>'
+          + (z.tac ? '<span class="hsTac" title="Tác động lên giá trị cơ sở">' + esc(z.tac) + '</span>' : '') + '</div>'
           + (z.ct ? '<div>' + esc(z.ct) + '</div>' : '') + (z.theo_doi ? '<div class="hsTd2"><b>Theo dõi:</b> ' + esc(z.theo_doi) + '</div>' : '') + nguon(z.ng) + '</div></li>'; }).join('') + '</ul></div>';
       h += '</div></div>';
     }
     if (p.tham_dinh && p.tham_dinh.length) {
+      var dem = {}; p.tham_dinh.forEach(function(z){ var k = DG[String(z.dg)] ? String(z.dg) : '-1'; dem[k] = (dem[k] || 0) + 1; });
       h += '<div class="hs"><div class="hsH"><span class="hsK">Thẩm định quan điểm CTCK</span><span class="mini">mỗi luận điểm của CTCK được kiểm bằng số liệu thực tế và mô hình của trang</span></div>'
+        + '<div class="hsTgS">' + ['2', '1', '0', '-1'].filter(function(k){ return dem[k]; }).map(function(k){ return '<i class="' + DG[k][0] + '" style="flex:' + dem[k] + '"><span>' + dem[k] + ' ' + DG[k][1].slice(2).toLowerCase() + '</span></i>'; }).join('') + '</div>'
         + '<div class="hsTg"><div class="hsTgh"><span>Quan điểm</span><span>Đánh giá</span><span>Bằng chứng</span><span>Trong mô hình của trang</span></div>'
         + p.tham_dinh.map(function(z){ var d = DG[String(z.dg)] || DG['-1'];
           return '<div class="hsTgr"><div><b>' + esc(z.lq) + '</b><small>' + esc(z.ai || '') + '</small></div><div><span class="hsDg ' + d[0] + '">' + d[1] + '</span></div><div>' + dien(z.bc || '', o) + '</div><div class="mh">' + dien(z.mh || '', o) + '</div></div>'; }).join('')
@@ -391,12 +472,12 @@
     var X = function(t){ return (t - t0) / (now - t0) * 100; }, Y = function(v){ return 100 - (v - mn) / (mx - mn) * 100; };
     var svg = '<svg class="bds" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">';
     for (var g = mn; g <= mx + st / 2; g += st) svg += '<line class="bdg" x1="0" x2="100" y1="' + Y(g).toFixed(2) + '" y2="' + Y(g).toFixed(2) + '"/>';
-    svg += '<polyline class="bdp c4" points="' + gThang.map(function(z){ return X(z[0]).toFixed(2) + ',' + Y(z[1]).toFixed(2); }).join(' ') + '"/></svg>';
-    var h = '<h5 style="margin-top:12px">Giá mục tiêu từng báo cáo và giá cổ phiếu, 16 tháng</h5><div class="bdlg"><span><i class="c1 tron"></i>Giá mục tiêu (mỗi chấm một báo cáo)</span><span><i class="c4"></i>Giá cổ phiếu cuối tháng</span></div>'
+    svg += '<polyline class="bdp ink" points="' + gThang.map(function(z){ return X(z[0]).toFixed(2) + ',' + Y(z[1]).toFixed(2); }).join(' ') + '"/></svg>';
+    var h = '<h5 style="margin-top:12px">Giá mục tiêu từng báo cáo và giá cổ phiếu, 16 tháng</h5><div class="bdlg"><span><i class="c1 tron"></i>Giá mục tiêu (mỗi chấm một báo cáo)</span><span><i class="ink"></i>Giá cổ phiếu cuối tháng</span></div>'
       + '<div class="bdd bddt" style="height:150px">' + svg;
     for (var g2 = mn; g2 <= mx + st / 2; g2 += st) h += '<span class="bdgl" style="top:' + Y(g2).toFixed(1) + '%">' + f(g2, 0) + '</span>';
     bc.forEach(function(x){ h += '<i class="bdo tp c1" style="left:' + X(ts(x.d)).toFixed(1) + '%;top:' + Y(x.tp / 1000).toFixed(1) + '%" title="' + esc(x.d + ' · ' + x.s + ' · ' + (x.r || '') + ' · ' + f(x.tp / 1000, 1)) + '"></i>'; });
-    if (gia > 0) h += '<i class="bdo c4" style="left:100%;top:' + Y(gia).toFixed(1) + '%" title="Hôm nay ' + f(gia, 2) + '"></i>';
+    if (gia > 0) h += '<i class="bdo ink" style="left:100%;top:' + Y(gia).toFixed(1) + '%" title="Hôm nay ' + f(gia, 2) + '"></i>';
     var q = {}; bc.forEach(function(x){ var p = x.d.split('/'), k = p[2] + '-Q' + Math.ceil(+p[1] / 3); (q[k] = q[k] || []).push(x.tp / 1000); });
     var qs = Object.keys(q).sort();
     var mlb = []; for (var i = 0; i <= 4; i++) { var dd = new Date(t0 + (now - t0) * i / 4); mlb.push('<span>' + ('0' + (dd.getUTCMonth() + 1)).slice(-2) + '/' + String(dd.getUTCFullYear()).slice(2) + '</span>'); }
@@ -414,22 +495,22 @@
       /* bieu do chung */
       '#ptcs .bdc{margin:4px 0 2px}#ptcs .bdz{position:relative;display:flex;align-items:stretch;border-bottom:1px solid #D5DAE0}#ptcs .bdz.bdzn{margin-top:16px}#ptcs .bdk{position:relative;flex:1;min-width:0;cursor:default}#ptcs .bdk:hover{background:rgba(42,120,214,.06)}'
       + '#ptcs .bdb{position:absolute;border-radius:3px 3px 0 0;background:#C9CFD7}#ptcs .bdb.am{border-radius:0 0 3px 3px}#ptcs .bdb.hl{background:#2a78d6}#ptcs .bdb.cmp{background:#7A828E}'
-      + '#ptcs .bdb.c1,#ptcs .bdlg i.c1{background:#2a78d6}#ptcs .bdb.c2,#ptcs .bdlg i.c2{background:#eb6834}#ptcs .bdb.c3,#ptcs .bdlg i.c3{background:#1A9E77}#ptcs .bdb.c4,#ptcs .bdlg i.c4{background:#7B61C9}'
+      + '#ptcs .bdb.c1,#ptcs .bdlg i.c1{background:#2a78d6}#ptcs .bdb.c2,#ptcs .bdlg i.c2{background:#eb6834}#ptcs .bdb.c3,#ptcs .bdlg i.c3{background:#1A9E77}#ptcs .bdb.c4,#ptcs .bdlg i.c4{background:#8E98A6}'
       + '#ptcs .bd0{position:absolute;left:0;right:0;height:1px;background:#9AA3AE;z-index:1}#ptcs .bdv{position:absolute;transform:translate(-50%,-2px);font-style:normal;font-size:10.5px;font-weight:700;color:var(--text);white-space:nowrap;line-height:1;margin-bottom:2px}'
       + '#ptcs .bdx{display:flex}#ptcs .bdx span{flex:1;min-width:0;text-align:center;font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:visible;margin-top:3px}'
       + '#ptcs .bdd{position:relative;margin:6px 0 0}#ptcs .bdd.bddt{margin-left:34px}#ptcs .bds{position:absolute;inset:0;width:100%;height:100%;overflow:visible}'
-      + '#ptcs .bdp{fill:none;stroke-width:2.2;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}#ptcs .bdp.net{stroke-dasharray:5 3}#ptcs .bdp.c1{stroke:#2a78d6}#ptcs .bdp.c2{stroke:#eb6834}#ptcs .bdp.c3{stroke:#1A9E77}#ptcs .bdp.c4{stroke:#7B61C9}'
+      + '#ptcs .bdp{fill:none;stroke-width:2.2;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}#ptcs .bdp.net{stroke-dasharray:5 3}#ptcs .bdp.c1{stroke:#2a78d6}#ptcs .bdp.c2{stroke:#eb6834}#ptcs .bdp.c3{stroke:#1A9E77}#ptcs .bdp.c4{stroke:#8E98A6}'
       + '#ptcs .bdg{stroke:#E6E9EE;stroke-width:1;vector-effect:non-scaling-stroke}#ptcs .bdr{stroke:#9AA3AE;stroke-width:1;stroke-dasharray:4 3;vector-effect:non-scaling-stroke}'
       + '#ptcs .bdgl{position:absolute;left:-34px;width:30px;text-align:right;transform:translateY(-50%);font-size:10px;color:var(--muted);white-space:nowrap}'
       + '#ptcs .bdrl{position:absolute;right:0;transform:translateY(-110%);font-size:10px;color:var(--muted);white-space:nowrap}#ptcs .bdrl.l{right:auto;left:0}'
       + '#ptcs .bdo{position:absolute;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.08);z-index:2}#ptcs .bdo.nho{width:6px;height:6px;margin:-3px 0 0 -3px;border-width:1px;z-index:1}'
-      + '#ptcs .bdo.c1{background:#2a78d6}#ptcs .bdo.c2{background:#eb6834}#ptcs .bdo.c3{background:#1A9E77}#ptcs .bdo.c4{background:#7B61C9}#ptcs .bdo.tp{width:8px;height:8px;margin:-4px 0 0 -4px;border:1.5px solid #fff;opacity:.85;cursor:default}#ptcs .bdo.tp:hover{opacity:1;transform:scale(1.4)}'
-      + '#ptcs .bdvl{position:absolute;right:-6px;transform:translate(100%,-50%);font-size:10.5px;white-space:nowrap}#ptcs .bdvl.c1{color:#2a78d6}#ptcs .bdvl.c2{color:#c4501f}#ptcs .bdvl.c3{color:#13795B}#ptcs .bdvl.c4{color:#6A4FBF}'
+      + '#ptcs .bdo.c1{background:#2a78d6}#ptcs .bdo.c2{background:#eb6834}#ptcs .bdo.c3{background:#1A9E77}#ptcs .bdo.c4{background:#8E98A6}#ptcs .bdo.tp{width:8px;height:8px;margin:-4px 0 0 -4px;border:1.5px solid #fff;opacity:.85;cursor:default}#ptcs .bdo.tp:hover{opacity:1;transform:scale(1.4)}'
+      + '#ptcs .bdvl{position:absolute;right:-6px;transform:translate(100%,-50%);font-size:10.5px;white-space:nowrap}#ptcs .bdvl.c1{color:#2a78d6}#ptcs .bdvl.c2{color:#c4501f}#ptcs .bdvl.c3{color:#13795B}#ptcs .bdvl.c4{color:#5B6676}'
       + '#ptcs .bdol{position:absolute;transform:translate(-100%,-150%);font-size:11px;white-space:nowrap;background:rgba(255,255,255,.85);padding:0 3px;border-radius:3px}'
       + '#ptcs .bdh{position:absolute;inset:0;display:flex}#ptcs .bdh span{flex:1;cursor:default}#ptcs .bdh span:hover{background:rgba(42,120,214,.07)}'
       + '#ptcs .bdx2{display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted);margin-top:3px}#ptcs .bdx2.t{margin-left:34px}#ptcs .bdx2.deu span{flex:1;text-align:center}#ptcs .bdx2.deu span:first-child{text-align:left}#ptcs .bdx2.deu span:last-child{text-align:right}'
       + '#ptcs .bdlg{display:flex;flex-wrap:wrap;gap:3px 14px;font-size:11.5px;margin:4px 0 2px}#ptcs .bdlg i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:5px;vertical-align:3px}#ptcs .bdlg i.q,#ptcs .bdlg i.tron{width:9px;height:9px;vertical-align:0}#ptcs .bdlg i.tron{border-radius:50%}'
-      + '#ptcs .bdlg i.net{background:repeating-linear-gradient(90deg,currentColor 0 5px,transparent 5px 8px)!important}#ptcs .bdlg i.c1.net{color:#2a78d6}#ptcs .bdlg i.c2.net{color:#eb6834}#ptcs .bdlg i.c3.net{color:#1A9E77}#ptcs .bdlg i.c4.net{color:#7B61C9}'
+      + '#ptcs .bdlg i.net{background:repeating-linear-gradient(90deg,currentColor 0 5px,transparent 5px 8px)!important}#ptcs .bdlg i.c1.net{color:#2a78d6}#ptcs .bdlg i.c2.net{color:#eb6834}#ptcs .bdlg i.c3.net{color:#1A9E77}#ptcs .bdlg i.c4.net{color:#8E98A6}'
       + '#ptcs .bdn{display:flex;flex-direction:column;gap:4px}#ptcs .bdnr{display:grid;grid-template-columns:62px minmax(0,1fr) 54px;gap:8px;align-items:center;font-size:12px}#ptcs .bdnb{height:10px;background:#EEF1F4;border-radius:3px}#ptcs .bdnb i{display:block;height:100%;background:#9DB9DF;border-radius:3px}#ptcs .bdnr.me .bdnb i{background:#2a78d6}#ptcs .bdnr.me{font-weight:700}#ptcs .bdnv{text-align:right}'
       + '#ptcs .cau{display:flex;flex-direction:column;gap:3px}#ptcs .caur{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) 62px;gap:8px;align-items:center;font-size:12.5px}#ptcs .caub{position:relative;height:11px;background:linear-gradient(90deg,transparent calc(50% - .5px),#9AA3AE calc(50% - .5px),#9AA3AE calc(50% + .5px),transparent calc(50% + .5px))}'
       + '#ptcs .caub i{position:absolute;top:0;bottom:0;border-radius:2px}#ptcs .caub i.up{left:50%;background:var(--green)}#ptcs .caub i.dn{right:50%;background:var(--red)}#ptcs .caur b{text-align:right;white-space:nowrap}#ptcs .caur b.up{color:var(--green-dark)}#ptcs .caur b.down{color:var(--red)}#ptcs .caur.tong{border-top:1px solid var(--border);padding-top:4px;margin-top:2px;font-weight:700}'
@@ -474,11 +555,14 @@
       + '#ptcs .hsVo{background:var(--panel2);border-radius:10px;padding:10px 12px;min-width:0;display:flex;flex-direction:column;gap:2px;border:1px solid transparent}#ptcs .hsVo small{font-size:11.5px;color:var(--muted);font-weight:700;line-height:1.3}'
       + '#ptcs .hsVo b{font-size:22px;line-height:1.2}#ptcs .hsVo em{font-style:normal;font-size:12px;line-height:1.35;color:var(--muted)}#ptcs .hsVo em.up{color:var(--green-dark);font-weight:700}#ptcs .hsVo em.down{color:var(--red);font-weight:700}'
       + '#ptcs .hsVo.chinh{background:#F0FAF4;border-color:#BFE5CC}#ptcs .hsVo.mo.tc b{color:var(--green-dark)}#ptcs .hsVo.mo.kq b{color:#475569}#ptcs .hsVo.mo.tcu b{color:var(--red)}'
-      + '#ptcs .hsSb{position:relative;height:66px;margin:8px 52px 0}#ptcs .hsSbT{position:absolute;left:0;right:0;top:32px;height:4px;border-radius:2px;background:linear-gradient(90deg,#F3A3A6,#E1E5EA 45%,#9ED9B4)}'
-      + '#ptcs .hsSbB{position:absolute;top:27px;height:14px;background:rgba(100,116,139,.16);border:1px dashed #94A3B8;border-radius:4px}#ptcs .hsSbB span{position:absolute;bottom:100%;left:50%;transform:translate(-50%,-3px);font-size:10.5px;color:#64748B;white-space:nowrap}'
-      + '#ptcs .hsSbM{position:absolute;top:24px;transform:translateX(-50%)}#ptcs .hsSbM i{display:block;width:3px;height:20px;margin:0 auto;border-radius:2px;background:#475569}#ptcs .hsSbM.x i{background:var(--red)}#ptcs .hsSbM.t i{background:var(--green)}#ptcs .hsSbM.c i{background:var(--text);width:4px}'
-      + '#ptcs .hsSbM span{display:block;font-size:11.5px;white-space:nowrap;margin-top:3px;text-align:center}#ptcs .hsSbP{position:absolute;top:0;height:44px;width:0}#ptcs .hsSbP span{position:absolute;top:2px;left:0;transform:translateX(-50%);font-size:11.5px;white-space:nowrap;color:var(--blue)}'
-      + '#ptcs .hsSbP i{position:absolute;top:28px;left:-7px;width:14px;height:14px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px #fff}#ptcs .hsSbG{text-align:center}'
+      + '#ptcs .hsSb{position:relative;height:84px;margin:10px 64px 0}#ptcs .hsSbT{position:absolute;left:0;right:0;top:33px;height:2px;background:#E3E7EC;border-radius:1px}'
+      + '#ptcs .hsSbR{position:absolute;top:30px;height:8px;border-radius:4px;background:#CBD3DD}#ptcs .hsSbB{position:absolute;top:73px;height:6px;border-radius:3px;background:#D5DBE3}'
+      + '#ptcs .hsSbBl{position:absolute;top:69px;padding-left:7px;font-size:10.5px;color:var(--muted);white-space:nowrap}#ptcs .hsSbBl.tr{transform:translateX(-100%);padding:0 7px 0 0}'
+      + '#ptcs .hsSbM{position:absolute;top:24px;transform:translateX(-50%);text-align:center}#ptcs .hsSbM i{display:block;width:3px;height:20px;margin:0 auto;border-radius:2px;background:#64748B}'
+      + '#ptcs .hsSbM.x i{background:var(--red)}#ptcs .hsSbM.t i{background:var(--green)}#ptcs .hsSbM.c i{background:var(--text);width:4px}#ptcs .hsSbM span{display:block;font-size:11.5px;white-space:nowrap;margin-top:4px;color:#475569}'
+      + '#ptcs .hsSbM span b{color:var(--text)}#ptcs .hsSbM em{font-style:normal;font-weight:700;font-size:11px}#ptcs .hsSbM em.up{color:var(--green-dark)}#ptcs .hsSbM em.down{color:var(--red)}'
+      + '#ptcs .hsSbP{position:absolute;top:0;width:0;height:44px}#ptcs .hsSbP span{position:absolute;top:0;left:0;transform:translateX(-50%);font-size:11.5px;white-space:nowrap;color:var(--text)}'
+      + '#ptcs .hsSbP i{position:absolute;top:27px;left:-7px;width:14px;height:14px;border-radius:50%;background:var(--text);box-shadow:0 0 0 3px #fff;z-index:2}#ptcs .hsSbG{text-align:center}'
       + '#ptcs .hsLd{margin-top:12px;padding-top:12px;border-top:1px dashed var(--border)}#ptcs .hsSt{display:flex;height:30px;border-radius:6px;overflow:hidden;margin:4px 0 3px}'
       + '#ptcs .hsSt i{display:flex;align-items:center;justify-content:center;font-style:normal;font-size:11.5px;font-weight:700;white-space:nowrap;overflow:hidden;color:#fff;padding:0 6px}#ptcs .hsSt i.a{background:#2a78d6}#ptcs .hsSt i.b{background:#1A9E77}'
       + '#ptcs .hsStl{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;color:var(--muted)}#ptcs ul.hsSo2{margin:8px 0 0;padding-left:18px;font-size:12.5px;line-height:1.55}#ptcs .hsSo2 li{padding:2px 0}#ptcs .hsSo2 li.mut{color:var(--muted)}'
@@ -487,10 +571,39 @@
       + '#ptcs table.hsMh td{padding:4px 8px;text-align:right;border-bottom:1px solid #F1F3F6;white-space:nowrap;vertical-align:top}#ptcs table.hsMh td:first-child{text-align:left;white-space:normal;color:#334155}#ptcs table.hsMh td.a{color:var(--muted)}'
       + '#ptcs table.hsMh tr.g td{background:var(--panel2);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:#475569;padding-top:6px}#ptcs table.hsMh tr.dam td{font-weight:800;font-size:13.5px;border-top:1.5px solid var(--text);color:var(--text)}'
       + '#ptcs table.hsMh tr.pe td{color:#475569;font-style:italic}#ptcs table.hsMh small{display:block;font-size:10.5px;font-weight:700}#ptcs table.hsMh small.up{color:var(--green-dark)}#ptcs table.hsMh small.down{color:var(--red)}'
-      + '#ptcs .hsKb3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}#ptcs .hsKbc{border:1px solid var(--border);border-radius:10px;padding:9px 10px;border-top:4px solid #64748B;min-width:0}'
-      + '#ptcs .hsKbc.x{border-top-color:var(--red)}#ptcs .hsKbc.c{border-top-color:var(--text);background:#FAFBFC}#ptcs .hsKbc.t{border-top-color:var(--green)}#ptcs .hsKbh{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px}'
-      + '#ptcs .hsKbh span{font-weight:800}#ptcs .hsKbh span.up{color:var(--green-dark)}#ptcs .hsKbh span.down{color:var(--red)}#ptcs .hsKbv{font-size:20px;font-weight:800;margin:2px 0}#ptcs .hsKbv small{font-size:11px;color:var(--muted);font-weight:600}'
-      + '#ptcs .hsKbl{font-size:11.5px;color:#334155}#ptcs .hsKbm{font-size:11.5px;color:var(--muted);line-height:1.4;margin-top:4px}'
+      + '#ptcs .hs h5 small{font-weight:400;font-size:11.5px}#ptcs .bdp.ink{stroke:#334155}#ptcs .bdo.ink{background:#334155}#ptcs .bdvl.ink{color:#334155;font-weight:700}#ptcs .bdlg i.ink{background:#334155}'
+      + '#ptcs .bdrl{background:rgba(255,255,255,.85);padding:0 3px;border-radius:3px}#ptcs .hsPeL{padding-right:34px}'
+      + '#ptcs .hsLdL{display:flex;flex-direction:column}#ptcs .hsLdR{display:grid;grid-template-columns:112px minmax(0,1fr);gap:14px;padding:9px 0;border-top:1px solid #EEF0F3}#ptcs .hsLdR:first-child{border-top:0;padding-top:2px}'
+      + '#ptcs .hsLdS b{display:block;font-size:21px;font-weight:800;line-height:1.1;color:var(--text);letter-spacing:-.01em}#ptcs .hsLdS small{display:block;font-size:11px;color:var(--muted);line-height:1.3;margin-top:3px}'
+      + '#ptcs .hsLdT b{display:block;font-size:13.5px;margin-bottom:1px}#ptcs .hsLdT span{font-size:13px;line-height:1.55;color:#334155}'
+      + '#ptcs .hsPk{margin-top:14px}#ptcs .hsPkH{font-size:12px;color:#475569;margin-bottom:2px}#ptcs .hsPkH i{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:-1px;margin:0 1px}#ptcs .hsPkH i.me{background:var(--text)}#ptcs .hsPkH i.kv{background:#B8C0CB}'
+      + '#ptcs .hsPkR,#ptcs .hsPkX{display:grid;grid-template-columns:128px minmax(0,1fr) 118px;gap:12px;align-items:center}#ptcs .hsPkR{padding:3px 0}#ptcs .hsPkT b{display:block;font-size:12.5px}#ptcs .hsPkT small{display:block;font-size:11px;color:var(--muted);line-height:1.25}'
+      + '#ptcs .hsPkB{position:relative;height:32px;background:linear-gradient(#E3E7EC,#E3E7EC) 0 22px/100% 1px no-repeat}#ptcs .hsPkB i{position:absolute;top:22px}'
+      + '#ptcs .hsPkB i.kv{width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:#B8C0CB;box-shadow:0 0 0 1.5px #fff}#ptcs .hsPkB i.tv{width:2px;height:16px;margin:-8px 0 0 -1px;background:#64748B;border-radius:1px}'
+      + '#ptcs .hsPkB i.me{width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%;background:var(--text);box-shadow:0 0 0 2px #fff;z-index:2}#ptcs .hsPkB b.mel{position:absolute;top:0;transform:translateX(-50%);font-size:11.5px;font-weight:800;white-space:nowrap;line-height:1.2}'
+      + '#ptcs .hsPkB em.vuot{position:absolute;right:0;top:0;font-style:normal;font-size:10px;color:var(--muted)}#ptcs .hsPkV{text-align:right;padding-top:8px;line-height:1.25}#ptcs .hsPkV b{display:block;font-size:13px;color:var(--text)}#ptcs .hsPkV small{font-size:10.5px;color:var(--muted)}'
+      + '#ptcs .hsPkX>div{position:relative;height:14px}#ptcs .hsPkX>div span{position:absolute;transform:translateX(-50%);font-size:10px;color:var(--muted)}'
+      + '#ptcs .hsFf{margin-top:4px}#ptcs .hsFfR,#ptcs .hsFfX{display:grid;grid-template-columns:50px minmax(0,1fr) 96px;gap:10px;align-items:center}#ptcs .hsFfR{margin-top:9px}#ptcs .hsFfT{font-size:12.5px;color:#475569}#ptcs .hsFfR.cs .hsFfT{font-weight:800;color:var(--text)}'
+      + '#ptcs .hsFfB{position:relative;display:flex;height:24px}#ptcs .hsFfB i{display:flex;align-items:center;justify-content:center;height:100%;margin-right:2px;font-style:normal;font-size:11px;font-weight:700;color:#fff;overflow:hidden;white-space:nowrap;cursor:default}'
+      + '#ptcs .hsFfB i:first-child{border-radius:4px 0 0 4px}#ptcs .hsFfB i:last-of-type{border-radius:0 4px 4px 0;margin-right:0}#ptcs .hsFfB i.c1{background:#2a78d6}#ptcs .hsFfB i.c2{background:#eb6834}#ptcs .hsFfB i.c3{background:#1A9E77}#ptcs .hsFfB i.c4{background:#8E98A6}'
+      + '#ptcs .hsFfB s{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--text);border-radius:1px}#ptcs .hsFfV{display:flex;align-items:baseline;justify-content:flex-end;gap:6px}#ptcs .hsFfV b{font-size:15px}'
+      + '#ptcs .hsFfV em{font-style:normal;font-size:11.5px;font-weight:700}#ptcs .hsFfV em.up{color:var(--green-dark)}#ptcs .hsFfV em.down{color:var(--red)}#ptcs .hsFfM{margin:2px 0 0 60px;font-size:11px;color:var(--muted);line-height:1.35}'
+      + '#ptcs .hsFfX{margin-top:6px}#ptcs .hsFfX .tk{position:relative;height:15px;border-top:1px solid #D5DAE0}#ptcs .hsFfX .tk span{position:absolute;top:2px;transform:translateX(-50%);font-size:10px;color:var(--muted)}#ptcs .bdlg i.gia{width:2px;height:12px;background:var(--text);vertical-align:-2px;border-radius:0}'
+      + '#ptcs table.hsDgT{width:100%;border-collapse:collapse;font-size:12px;margin-top:14px}#ptcs table.hsDgT th{font-size:11px;color:var(--muted);text-align:right;padding:4px 8px;border-bottom:1px solid var(--border);text-transform:none;letter-spacing:0;font-weight:700}'
+      + '#ptcs table.hsDgT th:first-child{text-align:left}#ptcs table.hsDgT th small{font-weight:400}#ptcs table.hsDgT td{padding:4px 8px;text-align:right;border-bottom:1px solid #F1F3F6;white-space:nowrap;vertical-align:top}'
+      + '#ptcs table.hsDgT td:first-child{text-align:left;white-space:normal;color:#334155}#ptcs table.hsDgT td small{display:block;font-size:10.5px;color:var(--muted);font-weight:400}#ptcs table.hsDgT td.cs{background:#F6F8FA;font-weight:700}'
+      + '#ptcs table.hsDgT tr.sum td{border-top:1px solid #D5DAE0}#ptcs table.hsDgT tr.dam td{font-weight:800;font-size:13.5px;border-top:1.5px solid var(--text);color:var(--text)}#ptcs table.hsDgT span.up{color:var(--green-dark)}#ptcs table.hsDgT span.down{color:var(--red)}'
+      + '#ptcs table.hsDgT i.sw{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px}#ptcs table.hsDgT i.sw.c1{background:#2a78d6}#ptcs table.hsDgT i.sw.c2{background:#eb6834}#ptcs table.hsDgT i.sw.c3{background:#1A9E77}#ptcs table.hsDgT i.sw.c4{background:#8E98A6}'
+      + '#ptcs .hsWf{display:flex;flex-direction:column;gap:5px}#ptcs .hsWfR{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) 104px;gap:10px;align-items:center;font-size:12.5px;cursor:default}#ptcs .hsWfT{color:#334155}#ptcs .hsWfR.tong .hsWfT{font-weight:700;color:var(--text)}'
+      + '#ptcs .hsWfB{position:relative;height:14px}#ptcs .hsWfB i{position:absolute;top:0;bottom:0;border-radius:3px}#ptcs .hsWfR.tong i{background:#A3AFBF}#ptcs .hsWfR.tang i{background:var(--green)}#ptcs .hsWfR.giam i{background:var(--red)}'
+      + '#ptcs .hsWfR b{text-align:right;white-space:nowrap}#ptcs .hsWfR.tong b{font-weight:800}#ptcs .hsWfR b em{font-style:normal;font-size:11px;margin-left:4px}#ptcs .hsWfR b em.up{color:var(--green-dark)}#ptcs .hsWfR b em.down{color:var(--red)}'
+      + '#ptcs table.hsTq th.rg{text-align:center;font-weight:400}#ptcs table.hsTq th.rg b{font-weight:800;color:var(--text)}#ptcs table.hsTq td.rg{width:44%;padding-top:8px}#ptcs table.hsTq td:first-child small{display:block}'
+      + '#ptcs .hsRg{position:relative;height:14px;background:linear-gradient(#E3E7EC,#E3E7EC) 0 50%/100% 1px no-repeat}#ptcs .hsRg i{position:absolute;top:50%}#ptcs .hsRg i.r{height:8px;margin-top:-4px;border-radius:4px;background:#CBD3DD}'
+      + '#ptcs .hsRg i.c{width:3px;height:16px;margin:-8px 0 0 -1.5px;background:var(--text);border-radius:1px}#ptcs .hsRg i.ck{width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;border:2px solid #64748B;background:#fff;box-sizing:border-box}'
+      + '#ptcs .hsRg i.tt{width:11px;height:11px;margin:-5.5px 0 0 -5.5px;background:#2a78d6;transform:rotate(45deg);box-shadow:0 0 0 1.5px #fff;z-index:2}#ptcs .hsRgL{text-align:center;font-size:10.5px;color:var(--muted);margin-top:1px}#ptcs .hsRgL b{color:var(--text);margin:0 5px}#ptcs .hsRgN{text-align:center;font-size:11.5px;color:#475569}'
+      + '#ptcs .hsRc{flex:1;min-width:0}#ptcs .hsRh{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}#ptcs .hsTac{margin-left:auto;font-size:11.5px;font-weight:700;color:#334155;background:#F1F3F6;border-radius:6px;padding:1px 8px;white-space:nowrap}'
+      + '#ptcs .hsTgS{display:flex;gap:2px;height:24px;margin:2px 0 10px;border-radius:6px;overflow:hidden}#ptcs .hsTgS i{display:flex;align-items:center;justify-content:center;font-style:normal;font-size:11.5px;font-weight:800;white-space:nowrap;overflow:hidden;padding:0 6px}'
+      + '#ptcs .hsTgS i.ok{background:var(--green-soft);color:var(--green-dark)}#ptcs .hsTgS i.mot{background:var(--amber-soft);color:#B45309}#ptcs .hsTgS i.no{background:var(--red-soft);color:var(--red)}#ptcs .hsTgS i.tk{background:#EDF0F4;color:#475569}'
       + '#ptcs table.hsGd{width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed}#ptcs table.hsGd th{font-size:11px;color:var(--muted);text-align:left;padding:4px 6px;border-bottom:1px solid var(--border);text-transform:none;letter-spacing:0}'
       + '#ptcs table.hsGd td{padding:5px 6px;border-bottom:1px solid #F1F3F6;vertical-align:top}#ptcs table.hsGd td.v,#ptcs table.hsGd td.cs{white-space:nowrap;text-align:center}#ptcs table.hsGd td.cs{font-weight:800;background:#F6F8FA}#ptcs table.hsGd td.ld{color:var(--muted);font-size:11.5px;line-height:1.45;white-space:normal;overflow-wrap:anywhere}#ptcs table.hsGd td{white-space:normal;text-align:left}#ptcs table.hsGd td.v,#ptcs table.hsGd td.cs{text-align:center}'
       + '#ptcs .hsTn{display:flex;flex-direction:column;gap:5px}#ptcs .hsTnr{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) 46px;gap:8px;align-items:center;font-size:12px;cursor:default}'

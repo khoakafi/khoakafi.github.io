@@ -311,6 +311,19 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   theo dõi theo quý (thực tế tự điền từ BCTC VNDirect `raw.quy` khi có) → động lực vận hành → vĩ mô → kế hoạch → 3 thẻ BCTC → Catalyst / Rủi ro →
   **Thẩm định quan điểm CTCK** (đồng ý / một phần / không dùng / tham khảo + bằng chứng + trong mô hình) → Tham khảo CTCK (có cột "Mô hình trang") → Nguồn.
   Mỗi quý: cập nhật số thực tế trong script, chạy lại, dựng lại JSON, tăng ngày trong `hoso/index.json`.
+  Dựng JSON: `node MWG.mjs > m.json` → `python3 pe-lich-su.py <thư mục gia.json.gz + bctc.json.gz của co-ban-data> MWG > pe.json` →
+  `python3 dung-hoso-MWG.py m.json hoso/MWG.json pe.json` (tự kiểm tổng các phần = giá từng kịch bản).
+- **Kịch bản xấu đã sai (17/10 tối, anh Khoa: "48.1 tính kiểu gì ghê vậy").** Bản đầu lấy P/E DMX xấu = 9 = P/E dự phóng của **chính MWG**
+  (giá MWG đã gồm chiết khấu công ty mẹ) rồi trừ thêm 10% chiết khấu → đếm trùng; cộng LN xấu thành 8,4 lần LN 2027 — thấp hơn mọi tháng
+  từ 2015 trừ COVID (6,8). Sửa: P/E xấu = mức thấp 10% P/E 4 quý của chính mã (`research/ho-so/mo-hinh/pe-lich-su.py`, MWG 11,3; hiện 10,9)
+  → 55,2. Nguyên tắc cho các mã sau: không dùng P/E của công ty mẹ cho phần con rồi lại trừ chiết khấu; P/E kịch bản neo vào lịch sử chính mã
+  + P/E cùng ngành khu vực trong bảng CTCK (ghi rõ năm F; P/E năm hiện tại × LN năm sau = giá trị 12 tháng).
+- **Bản 3 — chart hóa (17/10 tối, anh Khoa: "chú ý design, màu; cái nào chart được thì chart, table okay, chữ gọn").** Luận điểm mở bằng con số
+  (`so`/`nhan`/`tieu`); thang kịch bản gọn (dải xấu→tốt, vạch cơ sở, chấm giá, giá mục tiêu CTCK ở làn dưới); `peKv`: P/E 2027E thị trường đang
+  trả cho DMX và phần còn lại so với từng doanh nghiệp cùng ngành khu vực (chấm xám, vạch trung vị — `sotp.*.kv`); `cauLn` thác nước;
+  `theoDoi` khoảng xấu–tốt + cùng kỳ + thực tế; `kichBan3` thanh chồng giá trị từng phần/cp + vạch giá hiện tại; `bangDinhGia` bảng cách tính
+  (LN × P/E × sở hữu → tổng → trừ chiết khấu → ÷ cp); `peLichSu`; rủi ro có chip tác động (`tac`); thẩm định có thanh đếm. Màu: c1 xanh dương,
+  c2 cam, c3 xanh lá đạt kiểm bảng màu (dataviz); **màu thứ 4 = xám** cho "khác"/bối cảnh — tím cũ gần trùng xanh dương (ΔE 10 mắt thường).
 
 ## Số hiệu suất B★ tính ở đâu
 
