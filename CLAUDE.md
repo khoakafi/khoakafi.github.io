@@ -341,6 +341,19 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   mục gập "Phụ lục" (`mucGap('ctpl')`): khung tín hiệu định lượng `#ptDgO`, 3 thẻ BCTC, `#hsD` = `phanD` (vận hành từng mảng, vĩ mô → DN,
   báo cáo CTCK, nguồn đầy đủ), Soi BCTC, Chấm điểm 5 năm. Trang web ~3.950 px cho cả 2 trang (bản 4: ~7.500 px).
 
+- **Làm hàng loạt top 30 (17/10 tối, anh Khoa: "làm top 30 mã trước").** Mỗi mã một file Python kafi-core `research/ho-so/mo-hinh/<MA>.py`
+  (`from chung import *`: `quy`, `cong_nam`, `so_cp(ma, True)`, `boi_so_lich_su(ma, 'P/E'|'P/B', cp_nay=)`, `dinh_gia`, `nhay_mot`, `pb_tu_roe`, `ghi`) →
+  `hoso/<MA>.json`; `ghi()` tự chạy `research/ho-so/kiem.py` (lỗi thì không ghi). Quy tắc + khóa JSON: `research/ho-so/HUONG-DAN.md`; gói số liệu khởi đầu
+  `research/ho-so/goi-so.py <MA>`. Mẫu theo loại: ngân hàng VCB (P/B × vốn chủ, kiểm chéo ROE), CTCK SSI, chu kỳ HPG, BĐS VHM, có liên kết niêm yết FPT,
+  bán lẻ MWG. Mỗi mã do một tác tử riêng làm (đọc 2–5 báo cáo CTCK ở nhánh `ho-so-data`), ~35 phút; xong thì thêm mã vào `hoso/index.json`.
+  Đợt thử 5 mã (FPT, VCB, SSI, VHM, HPG) xong 17/10. Bỏ VIC, VIX, VND, VCI, NVL, GEX (không có báo cáo CTCK trong 240 ngày).
+  **Số cổ phiếu:** vốn điều lệ quý (`14110`) trễ sau thưởng/chia tách, có khi VNDirect chưa cập nhật cả quý sau (HPG Q2/2026 thiếu 10% thưởng) →
+  `so_cp(ma, True)` chỉ **cảnh báo** (giá gốc/giá điều chỉnh, vốn hóa/giá bảng giá lệch), không tự quy đổi (vốn hóa/giá lệch ngày giá vài %: VHM chia 1:1
+  ra ×1,93); số đúng lấy từ công bố. Khung định lượng (`phantich.js`/backtest) dùng ngưỡng 1,08 nên vẫn lệch với thưởng có ngày GDKHQ trước ngày kết
+  thúc quý mà vốn điều lệ chưa đổi (HPG P/E 6,9 thay vì 7,55) — giữ nguyên để khớp backtest. `hoso.js`: `p.chia` [[ngày GDKHQ, hệ số]] tự quy đổi số trên
+  1 cổ phiếu (đợt sau `cap_nhat`) và giá mục tiêu CTCK (đợt sau ngày báo cáo); `sotp.con` nhận danh sách (nhiều công ty con/liên kết niêm yết, giá sống);
+  `ln_mang.tong_ten` cho cơ cấu thu nhập ngân hàng; `dk: 'up_duoi:x'` cho câu "đã vào giá". `23000` VNDirect có quý sai (SSI) — đối chiếu tài liệu.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
