@@ -1461,6 +1461,14 @@
   }
   // Boi canh cho ho so: gia song (nghin dong), du lieu BCTC/gia/bao cao CTCK, ket luan mo hinh vua tinh
   function hsCx(t, raw){ var r = hang(t) || {}; return { gia: r.p > 0 ? r.p : null, raw: raw, mo: (ptKL && ptKL.t === t) ? { muc: ptKL.muc, hanh: HANH[ptKL.loai] || '' } : null }; }
+  // Ve lai cac phan cua ho so phu thuoc gia (gia ma nay, gia cong ty con niem yet) — giu nguyen phan con lai
+  function veLaiHs(t){
+    var hs = window.__knHoSo, pf = hs && hs.lay(t); if (!pf || !window.__ptLast || window.__ptLast.t !== t) return;
+    var cx = hsCx(t, window.__ptLast.raw);
+    [['hsA', hs.phanA], ['hsB', hs.phanB], ['hsC', hs.phanC], ['hsD', hs.phanD]].forEach(function(z){ var el = document.getElementById(z[0]);
+      if (el) try { el.innerHTML = z[1](pf, cx); } catch(e){ console.warn('hoso ve lai ' + z[0], e); } });
+  }
+  if (window.__knHoSo) window.__knHoSo.nghe(function(){ try { var t = K() && K().ma(); if (t && ptDaVe === t) veLaiHs(t); } catch(e){} });
   function ptVe(t, d, raw){
     var el = hop(); if (!el) return;
     if (window.__knHoSo) window.__knHoSo.css();       // CSS bieu do dung chung
@@ -1478,13 +1486,13 @@
     var hs = window.__knHoSo, pf = hs ? hs.lay(t) : null, dg = raw ? dinhGiaHtml(t, raw) : '', cx = null;
     if (pf) { cx = hsCx(t, raw); try { h += '<div id="hsA">' + hs.phanA(pf, cx) + '</div>'; } catch(e){ console.warn('hoso A', e); } }
     if (raw) h += '<div id="ptDgO">' + dg + '</div>';
-    if (pf) try { h += hs.phanB(pf); } catch(e){ console.warn('hoso B', e); }
+    if (pf) try { h += '<div id="hsB">' + hs.phanB(pf, cx) + '</div>'; } catch(e){ console.warn('hoso B', e); }
     if (raw && sv) { var nmL = window.__nmLast && window.__nmLast.t === t ? window.__nmLast.nm : null, b3 = '';
       try { b3 += theQuy(sv, raw.__tt, nmL); } catch(e){ console.warn('theQuy', e); }
       try { b3 += theBien(sv, raw.__tt); } catch(e){ console.warn('theBien', e); }
       try { b3 += theNo(sv, d); } catch(e){ console.warn('theNo', e); }
       if (b3) h += '<div class="btg3">' + b3 + '</div>'; }
-    if (pf) try { h += '<div id="hsC">' + hs.phanC(pf, cx) + '</div>' + hs.phanD(pf); } catch(e){ console.warn('hoso C/D', e); }
+    if (pf) try { h += '<div id="hsC">' + hs.phanC(pf, cx) + '</div><div id="hsD">' + hs.phanD(pf, cx) + '</div>'; } catch(e){ console.warn('hoso C/D', e); }
     else if (hs && raw) h += '<div class="mini hsChua">Chưa có hồ sơ phân tích (tổng hợp báo cáo CTCK, kế hoạch, tin doanh nghiệp) cho ' + esc(t) + '. Hồ sơ đang làm dần cho ~100 mã thanh khoản cao được nhiều CTCK theo dõi.</div>';
     var soi = raw ? soiHtml(t, raw, d, sv) : '';
     if (soi) h += mucGap('ctsoi', 'Soi BCTC chi tiết', (sv ? (raw.__tt && raw.__tt.B ? raw.__tt.B.lb + ' và ' : '') + sv.lb + ' · ' : '') + '4 chỉ số quý · điểm sáng, điểm tối đầy đủ · nhận định · lợi nhuận đến từ đâu · thị phần · số liệu 8 quý', soi);
@@ -1588,9 +1596,7 @@
         if (pNow && pNow !== window.__ptGiaVe) { window.__ptGiaVe = pNow; var o2 = document.getElementById('ptDgO');
           if (o2) { var mo = {}; o2.querySelectorAll('details').forEach(function(x){ if (x.open) mo[x.className] = 1; });
             o2.innerHTML = dinhGiaHtml(curT, window.__ptLast.raw); o2.querySelectorAll('details').forEach(function(x){ if (mo[x.className]) x.open = true; }); }
-          var hs = window.__knHoSo, pf = hs && hs.lay(curT);
-          if (pf) { var cx = hsCx(curT, window.__ptLast.raw), a = document.getElementById('hsA'), c = document.getElementById('hsC');
-            try { if (a) a.innerHTML = hs.phanA(pf, cx); if (c) c.innerHTML = hs.phanC(pf, cx); } catch(e){ console.warn('hoso gia', e); } } } }
+          veLaiHs(curT); } }
       // Chi so quy (P/E lich su) ve sau BCTC nam -> ve lai mot lan cho o Dinh gia
       if (ptDaVe === curT && !ptCoRts && ptLichSuDinhGia(curT) && window.__ptLast && window.__ptLast.t === curT) ptVe(curT, ptTinh(window.__ptLast.raw, curT), window.__ptLast.raw);
     } catch(e){}

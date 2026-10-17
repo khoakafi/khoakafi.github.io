@@ -302,6 +302,15 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   mục gập cũ. Mã chưa có hồ sơ: một dòng "Chưa có hồ sơ phân tích". Biểu đồ dùng chung `window.__knBd` (cột, cột chồng, đường có trục, thanh ngang).
   Lớp CSS tránh `.up`/`.dn` cho khối lớn (trang có `.up{color:xanh}` toàn cục → cả khối chữ xanh).
 - Test: scratchpad `dg/dg-test.js` (`BO_DOI=1 MA=MWG FULL=1`, `W=390`, `APP=1`); Simplize giả lấy thêm `hs/out/<MA>/ds_bao_cao.json`.
+- **Bản 2 (17/10 chiều, anh Khoa: "CTCK chỉ tham khảo, phải tự dựng model để đánh giá insight; viết kiểu Catalyst / Risk bằng ngôn ngữ analyst,
+  không 'vì sao tăng/giảm'; cập nhật theo quý, luôn có giá"; "làm xong bản máy tính trước, điện thoại để sau").** Mô hình riêng từng mã: kafi-core
+  `research/ho-so/mo-hinh/<MA>.mjs` (số thực tế + giả định 3 kịch bản → LN theo mảng, giá trị tổng các phần, độ nhạy) → kafi-core `research/ho-so/mo-hinh/dung-hoso-MWG.py` dựng
+  `hoso/<MA>.json` (bản 2: `luan_diem`, `mo_hinh`, `cau_ln`, `gia_dinh`, `kich_ban`, `nhay`, `sotp`, `theo_doi`, `tham_dinh`, `catalyst`, `rui_ro`).
+  Trang: kết luận (giá trị mô hình cơ sở, xấu/tốt, cán cân lên/xuống, tín hiệu định lượng) → luận điểm đầu tư + "thị trường đang trả bao nhiêu cho từng
+  phần" (vốn hóa mẹ − % công ty con niêm yết theo giá **sống** dchart, MWG: 85,96% DMX, 1.267,7 triệu cp) → mô hình dự phóng + giả định + độ nhạy +
+  theo dõi theo quý (thực tế tự điền từ BCTC VNDirect `raw.quy` khi có) → động lực vận hành → vĩ mô → kế hoạch → 3 thẻ BCTC → Catalyst / Rủi ro →
+  **Thẩm định quan điểm CTCK** (đồng ý / một phần / không dùng / tham khảo + bằng chứng + trong mô hình) → Tham khảo CTCK (có cột "Mô hình trang") → Nguồn.
+  Mỗi quý: cập nhật số thực tế trong script, chạy lại, dựng lại JSON, tăng ngày trong `hoso/index.json`.
 
 ## Số hiệu suất B★ tính ở đâu
 

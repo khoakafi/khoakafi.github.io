@@ -1,11 +1,13 @@
 {
- "v": 1,
+ "v": 2,
  "ma": "MWG",
  "ten": "CTCP Đầu tư Thế Giới Di Động",
  "nganh": "Bán lẻ",
+ "ky": "BCTC Q2/2026 · doanh thu sơ bộ 9T/2026",
  "cap_nhat": "2026-10-17",
+ "lan_sau": "sau BCTC Q3/2026",
  "cp_trieu": 1475.8,
- "cp_ng": "KAFI 03/09, SHS 12/08",
+ "cp_ng": "VNDirect 16/10 (vốn hóa ÷ giá)",
  "co_tuc": [
   [
    "2026-07-29",
@@ -18,85 +20,463 @@
    "cổ tức 2025 đợt 2"
   ]
  ],
- "dong_mo": "Lợi nhuận 2026 lập kỷ lục, nhưng thị trường chỉ trả {pe26} lần lợi nhuận dự phóng 2026 — Mirae Asset tính mức này thấp hơn ~55% bình quân 5 năm. Thị trường đang cược chu kỳ thay máy sẽ qua đỉnh năm 2027.",
- "cau_hoi": "Năm 2027 điện máy giảm bao nhiêu, Bách Hóa Xanh bù được bao nhiêu?",
- "tom_tat": [
+ "dong_mo": "Thị trường đang định giá MWG theo đỉnh chu kỳ điện máy: trừ 86% DMX theo giá thị trường, phần Bách Hóa Xanh và các mảng khác chỉ còn được trả {pe_conlai} lần lợi nhuận 2027E. Mô hình cơ sở cho giá trị {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
   {
-   "t": "Quý 2/2026 lãi 3.303 tỷ — gấp đôi cùng kỳ, cao nhất lịch sử. 9 tháng doanh thu 147.953 tỷ (+30%), đạt 80% kế hoạch năm sau 75% thời gian.",
-   "ng": "MAS 03/09 · MWG công bố 9T"
+   "t": "Lợi nhuận 2026 lên mặt bằng mới. LN cổ đông 6 tháng 6.017 tỷ (+88%); mô hình ước cả năm 11.838 tỷ (+68%), vượt xa kế hoạch 9.200 tỷ. Động lực là biên lợi nhuận DMX — LNST/doanh thu 8,1% ở Q2, kỷ lục — nhờ hàng cao cấp, dịch vụ tài chính và Thợ Điện Máy Xanh.",
+   "ng": "BCTC Q2 · mô hình"
   },
   {
-   "t": "Động cơ 1 — điện thoại, điện máy (~80% lợi nhuận 6 tháng): gần như không mở thêm cửa hàng, doanh thu mỗi cửa hàng vẫn tăng ~30% nhờ chu kỳ thay máy sau Covid, giá đồ điện tử tăng 15–20% vì chip đắt và trả chậm (38% doanh thu).",
-   "ng": "MAS 03/09 · MBS 13/10 · MWG công bố 9T"
+   "t": "2027 là năm bản lề. Mô hình giả định doanh thu điện máy giảm 4% và biên LNST DMX lùi về 6,8% khi đòn bẩy hoạt động đảo chiều; Bách Hóa Xanh bù phần lớn với lãi ~3.225 tỷ (+52%) nhờ thêm ~750 cửa hàng. LN cổ đông 2027E 11.301 tỷ (−4,5%).",
+   "ng": "mô hình"
   },
   {
-   "t": "Động cơ 2 — Bách Hóa Xanh: thêm 1.345 cửa hàng trong 9 tháng (kế hoạch cả năm 1.000), cửa hàng mới có lãi ngay; lãi 6 tháng ~910 tỷ, biên lãi ròng quý 2 đạt 3,4% — cao nhất từ trước đến nay.",
-   "ng": "MWG công bố 9T · MAS 03/09"
+   "t": "Định giá theo tổng các phần: 86% DMX theo P/E 12 lần, Bách Hóa Xanh theo P/E 13 lần (trung vị bán lẻ tiêu dùng khu vực), mảng khác 10 lần, trừ 10% chiết khấu công ty mẹ → 83,9 nghìn đ/cp cho 12 tháng tới.",
+   "ng": "mô hình · P/E khu vực: MBS 13/10"
+  },
+  {
+   "t": "Tiền mặt về đều: cổ tức 2025 là 2.000 đ/cp, cao nhất từ trước đến nay; DMX tạm ứng 2.000 đ/cp vào 12/2026 — khoảng 2.180 tỷ về MWG; lãnh đạo sẽ xem xét mua cổ phiếu quỹ năm 2027.",
+   "ng": "PSI 04/2026 · Mirae Asset 03/09 · MWG họp NĐT 04/08"
   }
  ],
- "tang": [
-  {
-   "t": "Lợi nhuận đang vượt xa kế hoạch: 6 tháng đã đạt 66% kế hoạch 9.200 tỷ; ban lãnh đạo nói sẽ cán đích sớm 2–3 tháng.",
-   "ng": "MWG họp NĐT 04/08"
-  },
-  {
-   "t": "Bách Hóa Xanh thành động cơ thứ hai: MBS dự báo lãi 2.062 tỷ năm 2026 và 3.352 tỷ năm 2027, tức ~27% lợi nhuận MWG năm 2027.",
-   "ng": "MBS 13/10"
-  },
-  {
-   "t": "Tiền nhiều hơn nợ: riêng Điện Máy Xanh có 44.670 tỷ tiền và đầu tư ngắn hạn so với 22.404 tỷ nợ vay (30/6); cổ tức 2025 là 2.000 đ/cp — cao nhất từ trước đến nay.",
-   "ng": "MBS 13/10 · PSI 04/2026"
-  },
-  {
-   "t": "Vị thế khó lay: ~3.000 cửa hàng điện máy, gấp ~5 lần đối thủ gần nhất; thị phần Apple tăng từ 25% (2023) lên 53% (2026).",
-   "ng": "MBS 13/10 · MAS 03/09"
-  }
- ],
- "giam": [
-  {
-   "t": "Cầu điện máy bị kéo về sớm: người dùng thay máy cùng lúc và mua trước đợt tăng giá chip. MBS dự báo năm 2027 doanh thu điện thoại – điện máy giảm 6%, lợi nhuận mảng này về MWG giảm 15%.",
-   "ng": "MBS 13/10"
-  },
-  {
-   "t": "38% doanh thu khối điện máy là trả chậm: lãi suất cho vay tiêu dùng tăng thì ưu đãi trả góp bị rút ngắn, sức mua yếu đi.",
-   "ng": "MWG công bố 9T · MBS 13/10"
-  },
-  {
-   "t": "Ra Bắc làm loãng hiệu quả Bách Hóa Xanh: cửa hàng miền Bắc bán ~1 tỷ/tháng, bằng một nửa miền Nam (2,0–2,1 tỷ); doanh thu mỗi cửa hàng toàn chuỗi giảm 9–12% so với cùng kỳ.",
-   "ng": "MBS 13/10 · MAS 03/09"
-  },
-  {
-   "t": "Sau khi Điện Máy Xanh lên sàn, MWG chỉ còn ~86%: ~14% lãi của mảng chủ lực thuộc cổ đông khác; CTCK còn trừ thêm chiết khấu công ty mẹ (MBS: 5%).",
-   "ng": "MAS 03/09 · MBS 13/10"
-  }
- ],
+ "mo_hinh": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Điện thoại – điện máy (DMX, tính 100%)"
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     106.7,
+     134.4,
+     129.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LNST (tỷ)",
+    "v": [
+     5802,
+     9922,
+     8772
+    ]
+   },
+   {
+    "ten": "Biên LNST (%)",
+    "v": [
+     5.4,
+     7.4,
+     6.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "MWG sở hữu",
+    "s": [
+     "~99%",
+     "99% → 86% từ Q3",
+     "86%"
+    ]
+   },
+   {
+    "nhom": "Bách Hóa Xanh"
+   },
+   {
+    "ten": "Cửa hàng cuối kỳ",
+    "v": [
+     2559,
+     4150,
+     4900
+    ]
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     46.9,
+     65.5,
+     89.6
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LNST (tỷ)",
+    "v": [
+     569,
+     2119,
+     3225
+    ]
+   },
+   {
+    "ten": "Biên LNST (%)",
+    "v": [
+     1.2,
+     3.2,
+     3.6
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Mảng khác: tài chính, An Khang, AvaKids… (tỷ)",
+    "v": [
+     663,
+     599,
+     600
+    ]
+   },
+   {
+    "ten": "LN cổ đông MWG (tỷ)",
+    "v": [
+     7034,
+     11838,
+     11301
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     4766,
+     8021,
+     7658
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "2025A: doanh thu theo mảng (Mirae Asset 03/09), lợi nhuận mảng theo MBS 13/10 (cộng đúng 7.034 tỷ). 2026E = 6 tháng thực tế + Q3 (doanh thu sơ bộ) + Q4 ước tính. Tính lại mỗi quý khi có BCTC; script kafi-core research/ho-so/mo-hinh/MWG.mjs."
+ },
  "cau_ln": {
-  "ten": "Lợi nhuận về cổ đông MWG: 2026 → 2027 theo MBS",
+  "ten": "LN cổ đông MWG 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
-   "2026F",
-   12439
+   "2026E",
+   11838
   ],
   "cuoi": [
-   "2027F",
-   12228
+   "2027E",
+   11301
   ],
   "buoc": [
    [
-    "Điện thoại – điện máy",
-    -1489
+    "Điện thoại – điện máy (phần MWG)",
+    -1622
    ],
    [
     "Bách Hóa Xanh",
-    1290
+    1084
    ],
    [
-    "Khác (tài chính, An Khang, AvaKids)",
-    -11
+    "Mảng khác",
+    1
    ]
   ],
-  "y": "Kịch bản MBS: điện máy hụt ~1.500 tỷ, Bách Hóa Xanh bù ~1.300 tỷ — lợi nhuận 2027 đi ngang. Các CTCK khác vênh nhau rất xa về năm 2027 (biểu đồ bên cạnh): đó chính là chỗ thị trường chưa chắc.",
-  "ng": "MBS 13/10"
+  "y": "Điện máy về MWG giảm vì doanh thu chững và cả năm 2027 chỉ còn 86% (2026 có nửa năm 99%); Bách Hóa Xanh bù khoảng 2/3.",
+  "ng": "mô hình"
  },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu DMX Q4/2026 so với cùng kỳ",
+   "v": [
+    "+12%",
+    "+20%",
+    "+28%"
+   ],
+   "ly_do": "Q3 ~+25% (cùng cơ sở so sánh, sơ bộ), 6 tháng +31%; kế hoạch DMX cả năm +30%"
+  },
+  {
+   "ten": "Doanh thu DMX 2027",
+   "v": [
+    "−12%",
+    "−4%",
+    "+6%"
+   ],
+   "ly_do": "Chu kỳ thay máy qua đỉnh; giá chip còn tăng 15–20% năm 2027 (Counterpoint) đỡ giá bán"
+  },
+  {
+   "ten": "Biên LNST DMX 2027",
+   "v": [
+    "5,8%",
+    "6,8%",
+    "7,5%"
+   ],
+   "ly_do": "2026E 7,4%; doanh thu giảm thì chi phí cố định làm biên co (2023: doanh thu −11%, LN −96%)"
+  },
+  {
+   "ten": "Cửa hàng BHX cuối 2027",
+   "v": [
+    "4.550",
+    "4.900",
+    "5.250"
+   ],
+   "ly_do": "30/9/2026: 3.904; nhịp 9 tháng ~150 cửa hàng/tháng"
+  },
+  {
+   "ten": "Doanh thu/cửa hàng/tháng BHX 2027",
+   "v": [
+    "1,55 tỷ",
+    "1,65 tỷ",
+    "1,75 tỷ"
+   ],
+   "ly_do": "Q3/2026 ~1,65 dù mở 713 cửa hàng; cửa hàng cũ +6–8%/năm (MBS)"
+  },
+  {
+   "ten": "Biên LNST BHX 2027",
+   "v": [
+    "2,8%",
+    "3,6%",
+    "4,2%"
+   ],
+   "ly_do": "Q2/2026 3,4% — cao nhất; quy mô kho vận lớn hơn"
+  },
+  {
+   "ten": "P/E DMX",
+   "v": [
+    "9",
+    "12",
+    "14"
+   ],
+   "ly_do": "9 = P/E dự phóng MWG hiện nay (MBS); 12 ≈ P/E 4 quý của DMX ở giá 75.000; 14 = trung vị bán lẻ điện tử khu vực 2026F (MBS)"
+  },
+  {
+   "ten": "P/E Bách Hóa Xanh",
+   "v": [
+    "10",
+    "13",
+    "15"
+   ],
+   "ly_do": "Bán lẻ tiêu dùng khu vực 2026F: nhóm thấp ~9–10, trung vị 13, bình quân 15 (MBS)"
+  },
+  {
+   "ten": "Chiết khấu công ty mẹ",
+   "v": [
+    "10%",
+    "10%",
+    "10%"
+   ],
+   "ly_do": "MBS dùng 5%"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 11005,
+   "ln27": 8468,
+   "gia": 48.1,
+   "mo_ta": "Điện máy 2027 −12%, biên DMX 5,8%; BHX chậm lại (4.550 cửa hàng, biên 2,8%); P/E 9 và 10"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 11838,
+   "ln27": 11301,
+   "gia": 83.9,
+   "mo_ta": "Điện máy 2027 −4%, biên 6,8%; BHX 4.900 cửa hàng, biên 3,6%; P/E 12 và 13"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 12559,
+   "ln27": 14168,
+   "gia": 121.7,
+   "mo_ta": "Điện máy 2027 +6%, biên 7,5%; BHX 5.250 cửa hàng, biên 4,2%; P/E 14 và 15"
+  }
+ ],
+ "nhay": [
+  [
+   "Chiết khấu công ty mẹ ±10 điểm %",
+   null,
+   9.3
+  ],
+  [
+   "Biên LNST DMX 2027 ±1 điểm %",
+   1109,
+   8.1
+  ],
+  [
+   "P/E DMX ±1 lần",
+   null,
+   4.6
+  ],
+  [
+   "Biên LNST BHX 2027 ±0,5 điểm %",
+   439,
+   3.5
+  ],
+  [
+   "Doanh thu DMX 2027 ±5%",
+   393,
+   2.9
+  ]
+ ],
+ "sotp": {
+  "con": {
+   "ma": "DMX",
+   "ten": "Điện Máy Xanh",
+   "cp_trieu": 1267.722,
+   "so_huu": 0.8596,
+   "ln26": 9922,
+   "ln27": 8772,
+   "gtgd": 18
+  },
+  "conlai": {
+   "ten": "Bách Hóa Xanh + mảng khác",
+   "ln27": 3760,
+   "gt": 47092
+  },
+  "ng": "Số cổ phiếu và giá DMX: VNDirect; tỷ lệ sở hữu 85,96%: Mirae Asset 03/09"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 52648,
+   "dt_tt": 1,
+   "ln": [
+    2508,
+    2812,
+    3070
+   ]
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 55268,
+   "ln": [
+    2481,
+    3009,
+    3472
+   ]
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    11005,
+    11838,
+    12559
+   ]
+  }
+ ],
+ "tham_dinh": [
+  {
+   "lq": "Cầu điện máy đã bị kéo về sớm, doanh thu 2027 giảm",
+   "ai": "MBS (−6%), Mirae Asset",
+   "dg": 1,
+   "bc": "Có dấu hiệu: doanh thu khối Điện Máy Xanh (cùng cơ sở so sánh) chậm từ +31% (6T) xuống ~+25% (Q3) dù có iPhone 18; tăng trưởng cửa hàng cũ +30% nhưng phần lớn nhờ giá bán +15–20%.",
+   "mh": "Cơ sở −4%, xấu −12% — biến số lớn nhất của định giá."
+  },
+  {
+   "lq": "Biên điện máy 2027 giảm vì iPhone (biên thấp) chiếm tỷ trọng cao hơn",
+   "ai": "MBS",
+   "dg": 1,
+   "bc": "Chưa thấy trong số liệu: doanh thu iPhone +50% (7T) mà biên LNST DMX vẫn lên kỷ lục 8,1% (Q2) nhờ dịch vụ tài chính và Thợ Điện Máy Xanh.",
+   "mh": "Vẫn hạ biên 2027 (7,4% → 6,8%), nhưng vì đòn bẩy hoạt động khi doanh thu chững, không phải vì iPhone."
+  },
+  {
+   "lq": "Bách Hóa Xanh lãi ~2.000 tỷ năm 2026",
+   "ai": "MBS 2.062, KAFI 2.130; lãnh đạo 1.800",
+   "dg": 2,
+   "bc": "6 tháng đã 910 tỷ; Q3 doanh thu ~17.600 tỷ (~+50%), với biên 3,2–3,4% cho 560–600 tỷ/quý.",
+   "mh": "2.119 tỷ."
+  },
+  {
+   "lq": "Ra Bắc không làm hỏng hiệu quả Bách Hóa Xanh",
+   "ai": "KAFI, SHS, lãnh đạo MWG",
+   "dg": 2,
+   "bc": "Doanh thu/cửa hàng/tháng Q3 ~1,65 tỷ (Q2: 1,68) dù mở 713 cửa hàng trong quý; biên ròng Q2 3,4% cao nhất lịch sử.",
+   "mh": "Giữ 1,65 tỷ/cửa hàng/tháng cho 2027; rủi ro nằm ở tỷ trọng miền Bắc tăng."
+  },
+  {
+   "lq": "IPO Điện Máy Xanh mở khóa giá trị cho MWG",
+   "ai": "SSI, ABS",
+   "dg": 1,
+   "bc": "DMX đang ở {dmx_gia} (giá IPO 80.000); 86% DMX theo giá thị trường đã bằng {dmx_pct} vốn hóa MWG — thị trường chưa trả thêm cho phần còn lại.",
+   "mh": "Giá trị thật là tạo neo định giá: mua MWG lúc này gần như mua Bách Hóa Xanh với P/E thấp."
+  },
+  {
+   "lq": "P/E thấp hơn ~55% bình quân 5 năm nên hấp dẫn",
+   "ai": "Mirae Asset, MBS",
+   "dg": 0,
+   "bc": "Kiểm định của trang (1.628 mã, 2014–2026): P/E so với lịch sử của chính mã không dự báo được giá 6 tháng sau.",
+   "mh": "Không dùng. Tín hiệu định lượng của trang dựa trên P/E tuyệt đối và PEG: {mo}."
+  },
+  {
+   "lq": "Lợi nhuận đến từ kinh doanh cốt lõi, không phải lãi tiền gửi",
+   "ai": "SHS",
+   "dg": 2,
+   "bc": "Doanh thu tài chính/LNTT giảm từ 38% (Q2/25) xuống 24% (Q2/26); lợi nhuận hoạt động (LN gộp − chi phí bán hàng, quản lý) +111%.",
+   "mh": "Mô hình không cộng thêm lãi tiền gửi ngoài mức hiện tại."
+  },
+  {
+   "lq": "Giá mục tiêu 93.000–109.000, trung vị 98.000",
+   "ai": "5 CTCK",
+   "dg": -1,
+   "bc": "Kiểm định của trang: dư địa so với giá mục tiêu CTCK không thêm lợi thế dự báo; trung vị giá mục tiêu đã hạ từ ~109.000 (Q1/2026) dù dự phóng lợi nhuận tăng.",
+   "mh": "Giá trị mô hình cơ sở {gt}."
+  }
+ ],
+ "catalyst": [
+  {
+   "khi": "Tháng 10–11/2026",
+   "t": "KQKD Q3 — quý đầu tiên tách ~14% lãi DMX cho cổ đông thiểu số. Mô hình dự phóng LN cổ đông 2.812 tỷ (+59%); biên DMX từ 7% trở lên sẽ xác nhận mặt bằng lợi nhuận mới."
+  },
+  {
+   "khi": "Q4/2026",
+   "t": "Mùa iPhone 18 và mua sắm cuối năm: ~175–180 nghìn đơn đặt cọc bản Pro / Pro Max qua Thế Giới Di Động / Topzone, hơn 50% thị phần (MBS)."
+  },
+  {
+   "khi": "12/2026",
+   "t": "DMX tạm ứng cổ tức 2.000 đ/cp — khoảng 2.180 tỷ tiền mặt về MWG."
+  },
+  {
+   "khi": "2027",
+   "t": "Bách Hóa Xanh vượt 4.500 cửa hàng, lãi ~800 tỷ/quý: phần đang bị chiết khấu sâu trong giá MWG có cơ sở để được định giá lại."
+  },
+  {
+   "khi": "2027",
+   "t": "Nâng hạng thị trường: MWG đã kín room ngoại 49%, dòng vốn chủ động quay lại thường vào nhóm vốn hóa lớn, thanh khoản cao (MBS)."
+  },
+  {
+   "khi": "2028",
+   "t": "IPO Bách Hóa Xanh sau khi xóa ~7.000 tỷ lỗ lũy kế — định giá tách bạch cho mảng tăng trưởng."
+  }
+ ],
+ "rui_ro": [
+  {
+   "muc": 3,
+   "t": "Chu kỳ điện máy đảo chiều sớm",
+   "ct": "Đà tăng khối Điện Máy Xanh đã chậm từ +31% (6T) xuống ~+25% (Q3). Kịch bản xấu (doanh thu 2027 −12%, biên 5,8%) lấy đi ~1.750 tỷ LN về MWG so với cơ sở.",
+   "theo_doi": "Doanh thu tháng khối Điện Máy Xanh, tăng trưởng cửa hàng cũ."
+  },
+  {
+   "muc": 2,
+   "t": "Biên DMX đã ở đỉnh",
+   "ct": "Mỗi 1 điểm % biên LNST DMX 2027 ≈ 1.109 tỷ LN (~10% LN 2027E) ≈ 8,1 nghìn đ/cp giá trị — biến số kinh doanh nhạy nhất của định giá.",
+   "theo_doi": "Biên gộp quý, chi phí khuyến mãi."
+  },
+  {
+   "muc": 2,
+   "t": "Tín dụng tiêu dùng siết lại",
+   "ct": "38% doanh thu khối Điện Máy Xanh là trả chậm; lãi suất cho vay 6–28%/năm tùy hình thức. Đối tác tài chính rút ưu đãi sẽ đánh vào nhóm hàng giá trị cao.",
+   "theo_doi": "Tỷ trọng trả chậm, lãi suất cho vay tiêu dùng."
+  },
+  {
+   "muc": 2,
+   "t": "Bách Hóa Xanh loãng hiệu quả khi ra Bắc",
+   "ct": "Cửa hàng miền Bắc ~1 tỷ/tháng so với 2,0–2,1 tỷ ở miền Nam; mỗi 0,5 điểm % biên BHX 2027 ≈ 439 tỷ LN, 3,5 nghìn đ/cp.",
+   "theo_doi": "Doanh thu/cửa hàng, biên ròng BHX theo quý."
+  },
+  {
+   "muc": 1,
+   "t": "Cấu trúc holding",
+   "ct": "~14% lãi DMX thuộc cổ đông thiểu số; mỗi 10 điểm % chiết khấu công ty mẹ ≈ 9,3 nghìn đ/cp. DMX giao dịch mỏng (~18 tỷ/phiên) nên giá DMX chưa phải thước đo ổn định.",
+   "theo_doi": "Lợi ích cổ đông thiểu số trên BCTC, thanh khoản DMX."
+  }
+ ],
  "top_down": [
   {
    "tang": "Vĩ mô",
@@ -563,8 +943,8 @@
     "ng": "MAS 03/09 · MWG công bố 9T"
    }
   ],
-  "y": "Lợi nhuận 6 tháng đã 66% kế hoạch — kế hoạch đặt thấp. Từ quý 3, ~14% lãi Điện Máy Xanh thuộc cổ đông thiểu số nên lãi quý về MWG có thể thấp hơn quý 2 dù doanh thu cao hơn (MBS dự báo Q3: 3.164 tỷ, +79% so với cùng kỳ).",
-  "ng": "MBS 13/10"
+  "y": "Lợi nhuận 6 tháng đã 66% kế hoạch — kế hoạch đặt thấp so với đà thực tế. Từ quý 3, ~14% lãi Điện Máy Xanh thuộc cổ đông thiểu số nên lãi quý về MWG có thể thấp hơn quý 2 dù doanh thu cao hơn.",
+  "ng": ""
  },
  "ctck": [
   {
@@ -621,101 +1001,6 @@
    "pp": "P/E, P/B, DCF · 3 kịch bản",
    "y": "Thận trọng nhất: gán 45% xác suất cho kịch bản xấu; nếu chỉ dùng kịch bản cơ sở, giá mục tiêu là 107.196.",
    "link": "https://cdn.simplize.vn/simplizevn/report/MWG/mwg_bao_cao_cap_nhat_kqkd.pdf"
-  }
- ],
- "ctck_chu": "Giá mục tiêu so với giá hôm nay đã trừ cổ tức đợt 2 (1.000 đ, giao dịch không hưởng quyền 07/10/2026) cho các báo cáo ra trước ngày đó. Giá mục tiêu do CTCK đưa ra, không phải của trang này.",
- "kich_ban": {
-  "ln27": [
-   [
-    "Thấp nhất (SHS)",
-    9597
-   ],
-   [
-    "Trung vị 4 CTCK",
-    12018
-   ],
-   [
-    "Cao nhất (ACBS)",
-    13186
-   ]
-  ],
-  "pe": [
-   [
-    "now",
-    "P/E thị trường đang trả (giá hôm nay ÷ LN 2027 trung vị)",
-    "hôm nay"
-   ],
-   [
-    "tp",
-    "P/E mà giá mục tiêu trung vị của CTCK hàm ý",
-    "giá mục tiêu"
-   ],
-   [
-    14,
-    "Trung vị P/E 2026 các nhà bán lẻ điện tử khu vực (MBS)",
-    "khu vực"
-   ]
-  ],
-  "y": "Mỗi ô = lợi nhuận 2027 dự phóng × P/E ÷ số cổ phiếu. Cột là độ vênh của CTCK về lợi nhuận, hàng là mức giá thị trường chịu trả.",
-  "ng": "Lợi nhuận 2027 dự phóng: SHS 12/08, Mirae Asset 03/09, MBS 13/10, ACBS 17/08 · số cổ phiếu 1.475,8 triệu"
- },
- "rui_ro": [
-  {
-   "muc": 3,
-   "t": "Điện máy qua đỉnh chu kỳ năm 2027",
-   "ct": "Nền so sánh 2026 rất cao (cửa hàng cũ +30%). MBS: doanh thu chuỗi Điện Máy Xanh 2027 −10%.",
-   "theo_doi": "Doanh thu tháng khối Điện Máy Xanh (MWG công bố hàng tháng), tăng trưởng cửa hàng cũ.",
-   "ng": "MBS 13/10 · ACBS 17/08"
-  },
-  {
-   "muc": 2,
-   "t": "Lãi suất làm hụt trả góp",
-   "ct": "38% doanh thu điện máy là trả chậm; lãi vay tiêu dùng đang 6–28%/năm.",
-   "theo_doi": "Tỷ trọng trả chậm, lãi suất cho vay tiêu dùng của các công ty tài chính.",
-   "ng": "MWG công bố 9T · KAFI 03/09"
-  },
-  {
-   "muc": 2,
-   "t": "Biên lợi nhuận đang ở đỉnh",
-   "ct": "Biên gộp quý 2 22,2% — kỷ lục; một phần nhờ hàng tồn nhập trước đợt tăng giá (MWG nói tác động không đáng kể).",
-   "theo_doi": "Biên gộp quý 3–4; số ngày tồn kho (Q2: 72 ngày, nhóm điện máy).",
-   "ng": "MAS 03/09 · MBS 13/10"
-  },
-  {
-   "muc": 2,
-   "t": "Bách Hóa Xanh mở nhanh nhưng loãng",
-   "ct": "Doanh thu mỗi cửa hàng −9 đến −12%; Mirae Asset lưu ý thói quen tiêu dùng và cạnh tranh (WinMart) ở miền Bắc.",
-   "theo_doi": "Doanh thu mỗi cửa hàng, biên lãi ròng BHX theo quý (Q2: 3,4%).",
-   "ng": "MAS 03/09 · MBS 13/10"
-  },
-  {
-   "muc": 1,
-   "t": "Phần lãi chảy ra ngoài MWG",
-   "ct": "Cổ đông thiểu số DMX hưởng ~14% lãi mảng điện máy; MBS ước 912 tỷ năm 2026, 1.460 tỷ năm 2027.",
-   "theo_doi": "Dòng “lợi ích cổ đông thiểu số” trên BCTC.",
-   "ng": "MBS 13/10"
-  }
- ],
- "lich": [
-  {
-   "khi": "Tháng 10–11/2026",
-   "t": "BCTC quý 3: quý đầu tiên có cổ đông thiểu số ở Điện Máy Xanh (MBS dự báo lãi về MWG 3.164 tỷ)."
-  },
-  {
-   "khi": "Hàng tháng",
-   "t": "Doanh thu tháng: mùa iPhone 18 — Thế Giới Di Động nhận ~175–180 nghìn đơn đặt cọc bản Pro / Pro Max, hơn 50% thị phần (MBS)."
-  },
-  {
-   "khi": "12/2026",
-   "t": "Điện Máy Xanh tạm ứng cổ tức 2026 đợt 1 (2.000 đ/cp DMX) — MWG nhận theo tỷ lệ ~86%."
-  },
-  {
-   "khi": "2027",
-   "t": "ĐHĐCĐ xem xét cổ tức tiền / cổ phiếu hoặc mua cổ phiếu quỹ (lãnh đạo nói không mua trong 2026)."
-  },
-  {
-   "khi": "2028",
-   "t": "IPO Bách Hóa Xanh, sau khi xoá ~7.000 tỷ lỗ lũy kế."
   }
  ],
  "nguon": [
@@ -789,5 +1074,6 @@
    "ngay": "24/09/2024",
    "link": "https://mekongasean.vn/mwg-manh-tay-mo-moi-bach-hoa-xanh-chua-ket-thuc-don-dep-hai-chuoi-dien-may-33694.html"
   }
- ]
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Giá mục tiêu so với giá hiện tại đã trừ cổ tức đợt 2 (1.000 đ, giao dịch không hưởng quyền 07/10/2026) cho báo cáo ra trước ngày đó."
 }
