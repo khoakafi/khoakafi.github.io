@@ -1,0 +1,1502 @@
+{
+ "v": 2,
+ "ma": "FPT",
+ "ten": "Công ty Cổ phần FPT",
+ "nganh": "Công nghệ thông tin",
+ "ky": "BCTC Q2/2026 · KQKD sơ bộ 7T/2026",
+ "cap_nhat": "2026-10-17",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 1879.2,
+ "cp_ng": "VNDirect 16/10 (vốn hóa ÷ giá), đã gồm 10% cổ phiếu thưởng tháng 9/2026",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "AI đang ăn vào mảng gia công cũ, chuyển đổi số bù đủ — giá mới phản ánh vế đầu",
+  "dk": "up_tren:15",
+  "khac": "AI đang ăn vào mảng gia công cũ, chuyển đổi số bù đủ để lợi nhuận tăng hai chữ số"
+ },
+ "dong_mo": "Gia công truyền thống — gần nửa doanh thu CNTT nước ngoài — chỉ còn tăng 4,3%, nhưng chuyển đổi số +23,8% giữ cả mảng tăng 13,4%. Ở giá 16/10, P/E 4 quý 10,9 lần, ngang mức thấp nhất từ giữa 2020. Mô hình từng phần cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "+23,8%",
+   "nhan": "doanh thu chuyển đổi số 6T/2026",
+   "tieu": "AI đổi cơ cấu doanh thu, chưa làm doanh thu giảm",
+   "t": "Chuyển đổi số lần đầu vượt nửa doanh thu CNTT nước ngoài (9.610 tỷ, 50,8%); AI & dữ liệu +54%. Phần gia công truyền thống chỉ +4,3% (2025: +11,6%, 2024: +20,4%) — nơi AI đang làm giảm khối lượng và giá. Ký mới 6T 26.338 tỷ (+32,3%), book-to-bill 1,39 lần, nhưng hợp đồng 2–3 năm nên doanh thu vào dần: mô hình cho CNTT nước ngoài +13,5% năm 2026, +12,3% năm 2027.",
+   "ng": "MAS 26/08 · ACBS 07/08 · mô hình"
+  },
+  {
+   "so": "+11,8%",
+   "nhan": "LN cổ đông 2026E",
+   "tieu": "Nửa sau khó giữ nhịp +14%",
+   "t": "6T: LN cổ đông 5.055 tỷ (+14,1%), LNTT +18,1%, trong đó lãi liên kết +40,8%. Nửa sau nền cao hơn: lãi liên kết 2H/2025 ~1.220 tỷ so với 1.011 tỷ ở 1H/2025; thuế trên phần lợi nhuận tự làm đã lên 15,5% (2H/2025: 12,5%) do một số chi nhánh FPT Software hết ưu đãi. Mô hình: 2H +9,8%, cả năm 10.486 tỷ — thấp hơn bình quân 5 CTCK 3%; 2027E 11.565 tỷ (+10,3%).",
+   "ng": "BCTC Q2 · MAS 26/08 · MBS 31/07 · mô hình"
+  },
+  {
+   "so": "28%",
+   "nhan": "vốn hóa là phần FOX + FRT (giá 15–16/10)",
+   "tieu": "Gần 30% vốn hóa nằm ở FPT Telecom và FRT",
+   "dk": "up_tren:10",
+   "t": "Từ 1/1/2026 FPT Telecom (45,66%) là công ty liên kết sau khi Bộ Công an nhận 50,2% từ SCIC: doanh thu hợp nhất giảm ~29%, LN cổ đông không đổi. Theo giá 15–16/10, phần FPT nắm ở FOX và FRT (46,54%) đáng ~30.600 tỷ; trừ đi, phần còn lại — CNTT, giáo dục, tiền ròng ~10.500 tỷ — chỉ được trả ~9,7 lần LN 2026E. FRT lãi gấp 2,2 lần nhờ Long Châu.",
+   "ng": "MAS 26/08 · BCTC FOX, FRT · giá VNDirect",
+   "khac": {
+    "so": "28%",
+    "nhan": "LNST 6T/2026 từ công ty liên kết",
+    "tieu": "FPT Telecom và FRT: phần lợi nhuận ngoài câu chuyện AI",
+    "t": "Từ 1/1/2026 FPT Telecom (45,66%) là công ty liên kết sau khi Bộ Công an nhận 50,2% từ SCIC: doanh thu hợp nhất giảm ~29%, LN cổ đông không đổi. Lãi liên kết 6T 1.423 tỷ: FOX LNTT +14%, FRT (46,54%) lãi gấp 2,2 lần nhờ Long Châu. Theo giá 15–16/10, phần FPT nắm ở FOX và FRT đáng ~30.600 tỷ."
+   }
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Định giá từng phần: {up_so} so với giá hiện tại",
+   "t": "CNTT, giáo dục & khác × P/E 12 (giữa mức thấp 25% là 10,9 và trung vị 13,1 của FPT từ 2015), FPT Telecom × 11 (P/E hiện tại 11,3), FRT × 16 (trung vị lịch sử 21,9). Kịch bản xấu 48,8: gia công truyền thống 2027 −8%, biên 13,5%, P/E 10 — mức thấp 10% lịch sử; tốt 101,8. Dịch vụ CNTT Ấn Độ: P/E trung vị 19,3 (ACBS 07/08).",
+   "ng": "mô hình · P/E: BCTC VNDirect, ACBS 07/08"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   9376,
+   10486,
+   11565
+  ],
+  "ln_truoc": 7857,
+  "eps": [
+   4989,
+   5580,
+   6154
+  ],
+  "co_tuc_nam": 2000,
+  "them": [
+   {
+    "ten": "LNTT (tỷ, cơ sở mới)",
+    "v": [
+     10240,
+     11869,
+     13100
+    ]
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC; LNTT 2025 theo cơ sở mới tự tính; EPS theo 1.879 triệu cổ phiếu hiện tại"
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo phần",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "CNTT nước ngoài",
+    "mau": "c1",
+    "v": [
+     4833,
+     5215,
+     5833
+    ]
+   },
+   {
+    "ten": "Trong nước, giáo dục & khác",
+    "mau": "c3",
+    "v": [
+     2612,
+     2893,
+     3054
+    ]
+   },
+   {
+    "ten": "FPT Telecom (45,66%)",
+    "mau": "c2",
+    "v": [
+     1561,
+     1754,
+     1929
+    ]
+   },
+   {
+    "ten": "FRT (46,54%)",
+    "mau": "c4",
+    "v": [
+     370,
+     624,
+     749
+    ]
+   }
+  ],
+  "nhan": "CNTT nước ngoài",
+  "ng": "Cơ sở mới (FPT Telecom là liên kết); thuế phân bổ theo tỷ lệ; 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E (ACBS 07/08)",
+  "nhom": "dịch vụ CNTT, chủ yếu Ấn Độ",
+  "kv": [
+   [
+    "TCS",
+    17.7
+   ],
+   [
+    "Infosys",
+    15.8
+   ],
+   [
+    "HCLTech",
+    21.0
+   ],
+   [
+    "Wipro",
+    14.8
+   ],
+   [
+    "EXL",
+    21.3
+   ],
+   [
+    "Mphasis",
+    25.2
+   ]
+  ],
+  "tv": 19.3,
+  "moi_cp": 5321,
+  "max": 30,
+  "y": "Cả nhóm đã bị định giá lại vì lo ngại AI: từ đầu năm đến 15/09, TCS −28,8%, Infosys −33,3%, Wipro −35% (KBSV).",
+  "ng": "P/E cùng ngành: bảng so sánh ACBS 07/08 (Bloomberg); FPT: LN cổ đông 4 quý đến Q2/2026 trên số cổ phiếu hiện tại"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo mảng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "CNTT nước ngoài"
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     35.4,
+     40.2,
+     45.1
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "— chuyển đổi số (nghìn tỷ)",
+    "v": [
+     16.8,
+     20.8,
+     25.3
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Biên LNTT (%)",
+    "v": [
+     15.5,
+     15.4,
+     15.3
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     5470,
+     6174,
+     6903
+    ]
+   },
+   {
+    "nhom": "CNTT trong nước"
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     9.1,
+     10.8,
+     12.3
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     410,
+     667,
+     798
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Giáo dục, đầu tư & khác"
+   },
+   {
+    "ten": "LNTT, không gồm liên kết (tỷ)",
+    "v": [
+     2142,
+     2116,
+     2200
+    ]
+   },
+   {
+    "nhom": "Công ty liên kết — phần của FPT"
+   },
+   {
+    "ten": "FPT Telecom 45,66% (tỷ)",
+    "v": [
+     1561,
+     1754,
+     1929
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "FRT 46,54% và liên kết khác (tỷ)",
+    "v": [
+     658,
+     1157,
+     1269
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     10240,
+     11869,
+     13100
+    ]
+   },
+   {
+    "ten": "Thuế / LNTT ngoài liên kết (%)",
+    "v": [
+     11.6,
+     15.5,
+     15.5
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN cổ đông FPT (tỷ)",
+    "v": [
+     9376,
+     10486,
+     11565
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     4989,
+     5580,
+     6154
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Cơ sở mới: FPT Telecom là công ty liên kết từ 2026. 2025A tự tính theo quý (BCTC FPT − BCTC FOX + 45,66% LN FOX); doanh thu mảng: KBSV 15/09; LNTT nước ngoài 2025 suy từ KBSV, trong nước từ kế hoạch khối công nghệ (+25%). 2026E = 6 tháng thực tế + 6 tháng ước tính."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông FPT 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   10486
+  ],
+  "cuoi": [
+   "2027E",
+   11565
+  ],
+  "buoc": [
+   [
+    "CNTT nước ngoài",
+    617
+   ],
+   [
+    "CNTT trong nước",
+    111
+   ],
+   [
+    "Giáo dục, đầu tư & khác",
+    51
+   ],
+   [
+    "FPT Telecom (45,66%)",
+    175
+   ],
+   [
+    "FRT (46,54%)",
+    125
+   ]
+  ],
+  "y": "57% phần tăng đến từ CNTT nước ngoài, 28% từ FPT Telecom và FRT; trong nước và giáo dục chỉ góp 15%.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Chuyển đổi số nước ngoài: 2H/2026 · 2027",
+   "v": [
+    "+17%/+12%",
+    "+24%/+22%",
+    "+28%/+26%"
+   ],
+   "ly_do": "6T/2026 +23,8%, 2H/2025 +18,9%; AI & dữ liệu +54%, 14 hợp đồng trên 10 triệu USD (MAS 26/08)"
+  },
+  {
+   "ten": "Gia công truyền thống: 2H/2026 · 2027",
+   "v": [
+    "−3%/−8%",
+    "+4%/+2%",
+    "+8%/+6%"
+   ],
+   "ly_do": "6T/2026 +4,3%; 2025 +11,6%, 2024 +20,4% — phần AI làm giảm khối lượng và giá (MAS 26/08)"
+  },
+  {
+   "ten": "Biên LNTT CNTT nước ngoài: 2H/2026 · 2027",
+   "v": [
+    "14,0/13,5%",
+    "14,9/15,3%",
+    "15,5/15,9%"
+   ],
+   "ly_do": "6T/2026 15,9% (6T/2025 16,1%), 2H/2025 ~14,9%, cả 2025 15,5%; chuyển sang hợp đồng trọn gói, năng suất +10% nhờ AI (MBS)"
+  },
+  {
+   "ten": "CNTT trong nước 2027: doanh thu · biên LNTT",
+   "v": [
+    "+5%/4,5%",
+    "+14%/6,5%",
+    "+20%/7,5%"
+   ],
+   "ly_do": "6T/2026 doanh thu +22,5%, biên 7,3% (2025 ~4,5%); nhà máy AI lấp đầy ~90%; Shinhan 15–20%/năm, KBSV 10%"
+  },
+  {
+   "ten": "LNTT giáo dục, đầu tư & khác 2027",
+   "v": [
+    "−5%",
+    "+4%",
+    "+8%"
+   ],
+   "ly_do": "6T/2026 −1,4%, doanh thu khối −2,1%; cơ sở mới ở Vinh, Huế, Hà Nam, Bình Dương, Hải Phòng (2027)"
+  },
+  {
+   "ten": "LN FPT Telecom · FRT 2027",
+   "v": [
+    "+3%/0%",
+    "+10%/+20%",
+    "+14%/+30%"
+   ],
+   "ly_do": "FOX: LNTT 6T +14%, kế hoạch 5.100 tỷ, biên gộp Q2 thấp nhất 10 quý; FRT: LN 6T gấp 2,2 lần, Shinhan dự báo +20–25%/năm"
+  },
+  {
+   "ten": "Thuế / LNTT ngoài công ty liên kết",
+   "v": [
+    "16,5%",
+    "15,5%",
+    "14,5%"
+   ],
+   "ly_do": "6T/2026 15,5%, 2025 11,6%: năm trước có hoàn thuế Nhật, một số chi nhánh FPT Software hết ưu đãi (MBS 31/07)"
+  },
+  {
+   "ten": "P/E CNTT, giáo dục & khác",
+   "v": [
+    "10",
+    "12",
+    "15"
+   ],
+   "ly_do": "10 = mức thấp 10% của FPT từ 2015 (hiện 10,9); 12 giữa mức thấp 25% (10,9) và trung vị 13,1; 15 vẫn dưới CNTT Ấn Độ (trung vị 19,3, ACBS 07/08)"
+  },
+  {
+   "ten": "P/E FPT Telecom · FRT",
+   "v": [
+    "9 · 12",
+    "11 · 16",
+    "12,5 · 20"
+   ],
+   "ly_do": "FOX từ 2017: thấp 10% 9,1, hiện 11,3, trung vị 12,3; FRT từ 2018: thấp 25% 12,9, trung vị 21,9, hiện 22,2"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 9812,
+   "ln27": 9238,
+   "gia": 48.8,
+   "mo_ta": "Gia công truyền thống 2027 −8%, chuyển đổi số +12%, biên nước ngoài 13,5%; FOX +3%, FRT đi ngang; P/E 10 · 9 · 12"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 10486,
+   "ln27": 11565,
+   "gia": 74.4,
+   "mo_ta": "Chuyển đổi số 2027 +22%, truyền thống +2%, biên 15,3%; trong nước +14%; FOX +10%, FRT +20%; P/E 12 · 11 · 16"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 10971,
+   "ln27": 12814,
+   "gia": 101.8,
+   "mo_ta": "Chuyển đổi số 2027 +26%, truyền thống +6%, biên 15,9%; trong nước +20%; FOX +14%, FRT +30%; P/E 15 · 12,5 · 20"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo từng phần",
+  "phu": "P/E × LN 2027E từng phần",
+  "ck": 0,
+  "cp": 1879.2,
+  "phan": [
+   {
+    "ten": "CNTT nước ngoài",
+    "mau": "c1",
+    "x": [
+     4483,
+     5833,
+     6470
+    ],
+    "boi": [
+     10,
+     12,
+     15
+    ],
+    "sh": 1,
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "gt": [
+     44830,
+     69996,
+     97050
+    ]
+   },
+   {
+    "ten": "Trong nước, giáo dục & khác",
+    "mau": "c3",
+    "x": [
+     2442,
+     3054,
+     3442
+    ],
+    "boi": [
+     10,
+     12,
+     15
+    ],
+    "sh": 1,
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "gt": [
+     24420,
+     36648,
+     51630
+    ]
+   },
+   {
+    "ten": "45,66% FPT Telecom",
+    "mau": "c2",
+    "sh": 0.4566,
+    "x": [
+     3829,
+     4225,
+     4480
+    ],
+    "boi": [
+     9,
+     11,
+     12.5
+    ],
+    "x_ten": "LN 2027E của FOX",
+    "boi_ten": "P/E",
+    "gt": [
+     15735,
+     21220,
+     25570
+    ]
+   },
+   {
+    "ten": "46,54% FRT",
+    "mau": "c4",
+    "sh": 0.4654,
+    "x": [
+     1213,
+     1608,
+     1842
+    ],
+    "boi": [
+     12,
+     16,
+     20
+    ],
+    "x_ten": "LN 2027E của FRT",
+    "boi_ten": "P/E",
+    "gt": [
+     6774,
+     11974,
+     17145
+    ]
+   }
+  ],
+  "von": [
+   91759,
+   139838,
+   191395
+  ],
+  "gia": [
+   48.8,
+   74.4,
+   101.8
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   9.9,
+   10.3,
+   10.2,
+   10.9,
+   10.7,
+   11.1,
+   11.3,
+   10.2,
+   10.3,
+   11.4,
+   11.2,
+   11.2,
+   10.7,
+   9.8,
+   9.7,
+   10.0,
+   10.3,
+   10.5,
+   10.3,
+   10.5,
+   11.2,
+   10.4,
+   10.0,
+   10.1,
+   10.4,
+   10.6,
+   10.9,
+   10.7,
+   11.3,
+   12.3,
+   12.7,
+   12.5,
+   12.6,
+   13.0,
+   14.3,
+   14.0,
+   15.4,
+   10.8,
+   11.0,
+   10.3,
+   9.5,
+   8.6,
+   8.9,
+   8.7,
+   9.1,
+   8.3,
+   8.1,
+   8.0,
+   8.2,
+   10.4,
+   10.7,
+   11.6,
+   11.1,
+   11.5,
+   12.2,
+   12.3,
+   13.4,
+   13.4,
+   12.1,
+   12.5,
+   11.1,
+   11.9,
+   8.9,
+   11.0,
+   11.8,
+   11.2,
+   10.9,
+   11.6,
+   11.7,
+   12.1,
+   13.1,
+   14.0,
+   14.8,
+   16.9,
+   17.2,
+   17.9,
+   20.8,
+   21.7,
+   23.2,
+   22.0,
+   22.1,
+   23.0,
+   22.0,
+   21.0,
+   20.2,
+   19.5,
+   22.4,
+   22.0,
+   21.4,
+   20.3,
+   19.7,
+   19.3,
+   18.0,
+   16.9,
+   15.6,
+   16.1,
+   17.5,
+   16.7,
+   16.4,
+   16.1,
+   16.6,
+   17.0,
+   19.7,
+   21.6,
+   20.8,
+   18.6,
+   19.2,
+   20.0,
+   19.9,
+   21.4,
+   22.9,
+   24.2,
+   25.2,
+   28.3,
+   27.9,
+   27.6,
+   27.5,
+   27.8,
+   28.1,
+   29.7,
+   29.9,
+   26.3,
+   22.7,
+   20.5,
+   20.8,
+   21.1,
+   21.6,
+   20.1,
+   18.4,
+   20.5,
+   18.5,
+   18.2,
+   19.9,
+   16.9,
+   13.6,
+   13.7,
+   12.6,
+   12.3,
+   11.8,
+   12.5,
+   11.8,
+   10.9
+  ],
+  "p10": 10.0,
+  "p25": 10.9,
+  "tv": 13.1,
+  "thap": [
+   "2018-12",
+   8.0
+  ],
+  "nay": [
+   "2026-10",
+   10.9
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); quy đổi cổ phiếu thưởng; dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/E 10 · 12 · 15 cho CNTT, giáo dục & khác — từ mức thấp 10% đến trên trung vị; FPT Telecom 9 · 11 · 12,5, FRT 12 · 16 · 20 theo lịch sử từng mã. Tháng 9–10/2026 đã quy đổi 10% cổ phiếu thưởng."
+ },
+ "nhay": [
+  [
+   "P/E CNTT, giáo dục & khác ±1 lần",
+   null,
+   4.7
+  ],
+  [
+   "Biên LNTT CNTT nước ngoài 2027 ±1 điểm %",
+   381,
+   2.4
+  ],
+  [
+   "Thuế suất ±2 điểm %",
+   198,
+   1.3
+  ],
+  [
+   "P/E FPT Telecom ±1 lần",
+   null,
+   1.0
+  ],
+  [
+   "Tỷ giá yên ±5% (biên giữ nguyên)",
+   137,
+   0.9
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    2355,
+    2688,
+    2928
+   ],
+   "ck": 2435
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    2402,
+    2743,
+    2988
+   ],
+   "ck": 2510
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    9812,
+    10486,
+    10971
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Mô hình dự phóng LN cổ đông 2.688 tỷ (+10,4%); 7 tháng LNTT +18,3%, doanh thu +13,6%.",
+   "tac": [
+    "≥ 2.690 tỷ",
+    "giữ kịch bản cơ sở; dưới 2.350 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "gia công truyền thống, thuế suất"
+  },
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "Số tuyển sinh năm học mới",
+   "ct": "Doanh thu giáo dục, đầu tư & khác 6T −2,1%; FPT chờ số tuyển sinh tháng 10 để đánh giá cả năm.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi 10% LNTT giáo dục, đầu tư & khác 2027"
+   ],
+   "theo_doi": "số sinh viên nhập học"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Ký mới chuyển thành doanh thu",
+   "ct": "Book-to-bill 1,39 lần, ký mới 6T +32,3%; hợp đồng 2–3 năm và dự án lớn khởi động lâu nên doanh thu đến chậm hơn ký mới.",
+   "tac": [
+    "+2,0 nghìn đ/cp",
+    "nếu CNTT nước ngoài 2027 tăng như kịch bản tốt"
+   ],
+   "theo_doi": "doanh thu nước ngoài theo quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "AI làm giảm giá gia công truyền thống",
+   "ct": "Phần ngoài chuyển đổi số (49% doanh thu nước ngoài) chỉ +4,3% ở 6T; cổ phiếu CNTT Ấn Độ −29–35% từ đầu năm (KBSV).",
+   "tac": [
+    "−5,8 nghìn đ/cp",
+    "nếu phần này −8% năm 2027 và biên nước ngoài 13,5%"
+   ],
+   "theo_doi": "doanh thu ngoài chuyển đổi số"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Tỷ giá yên",
+   "ct": "Nhật chiếm 47% doanh thu CNTT nước ngoài; doanh thu ghi nhận bằng VND.",
+   "tac": [
+    "±0,9 nghìn đ/cp",
+    "mỗi 5% JPY/VND, biên giữ nguyên"
+   ],
+   "theo_doi": "JPY/VND"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thuế suất tiếp tục tăng",
+   "ct": "Thuế trên lợi nhuận ngoài liên kết đã lên 15,5% (2025: 11,6%) khi ưu đãi ở một số chi nhánh FPT Software hết hạn.",
+   "tac": [
+    "±1,3 nghìn đ/cp",
+    "mỗi 2 điểm % thuế suất"
+   ],
+   "theo_doi": "thuế suất hiệu dụng theo quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Mỹ và APAC hồi phục",
+   "ct": "Mỹ +5,8%, APAC −6,1% ở 6T; một khách hàng năng lượng tái tạo lớn ở Mỹ đang xem xét mở rộng (MBS); Mirae Asset giả định APAC +10% năm 2027.",
+   "tac": "",
+   "theo_doi": "doanh thu Mỹ, APAC"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Mua lại cổ phiếu quỹ",
+   "ct": "Ban lãnh đạo nói có thể mua khi tạo giá trị tốt nhất, chưa cam kết thời gian; tiền ròng ~10.500 tỷ (30/6).",
+   "tac": "",
+   "theo_doi": "nghị quyết HĐQT"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "FPT không còn kiểm soát FPT Telecom",
+   "ct": "Bộ Công an nắm 50,2%; biên gộp FOX Q2 45,7% — thấp nhất 10 quý. FPT nói không có kế hoạch thoái vốn.",
+   "tac": [
+    "±1,0 nghìn đ/cp",
+    "mỗi 1 lần P/E FOX"
+   ],
+   "theo_doi": "biên gộp, cổ tức FOX"
+  },
+  {
+   "khi": "5–10 năm",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Tổ hợp công viên công nghệ ~2 tỷ USD",
+   "ct": "Đầu tư từng bước: văn phòng, trung tâm dữ liệu, AI, bán dẫn và một phần nhà ở cho nhân viên — vốn bị giữ lâu, chưa có số hoàn vốn.",
+   "tac": "",
+   "theo_doi": "vốn đầu tư hằng năm"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu CNTT nước ngoài theo thị trường",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Nhật Bản",
+    "Mỹ",
+    "Châu Âu",
+    "APAC"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2025",
+     "v": [
+      7311,
+      4017,
+      1555,
+      3781
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "6T/2026",
+     "v": [
+      8927,
+      4259,
+      2180,
+      3536
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Nhật +22% (47% doanh thu mảng), châu Âu +40%; Mỹ +5,8%, APAC −6,1%. Nhật 7 tháng +23,9%.",
+   "ng": "KBSV 15/09 · MAS 26/08"
+  },
+  {
+   "ten": "Chuyển đổi số vượt nửa doanh thu nước ngoài",
+   "dv": "nghìn tỷ",
+   "kieu": "cot_chong",
+   "nhan": [
+    "1H/25",
+    "2H/25",
+    "1H/26"
+   ],
+   "ss": [
+    {
+     "ten": "Chuyển đổi số",
+     "v": [
+      7.8,
+      9.0,
+      9.6
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Gia công truyền thống",
+     "v": [
+      8.9,
+      9.7,
+      9.3
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 1,
+   "y": "Chuyển đổi số +23,8%, phần còn lại +4,3%. AI & dữ liệu 1.842 tỷ (+54%) — 19% doanh thu chuyển đổi số.",
+   "ng": "MAS 26/08 · 2H/25 = KBSV 15/09 trừ 6T"
+  },
+  {
+   "ten": "Ký mới CNTT nước ngoài theo quý",
+   "dv": "nghìn tỷ",
+   "kieu": "cot",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Ký mới",
+     "v": [
+      11.3,
+      8.6,
+      13.8,
+      12.5
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 1,
+   "y": "6T/2026 26.338 tỷ (+32,3%), 14 hợp đồng trên 10 triệu USD; book-to-bill 1,39 lần (6T/2025: 1,19). Q1–Q2/2025 suy từ tăng trưởng công bố.",
+   "ng": "TTTC 04/2026 · MAS 26/08 · Q1–Q2/25 suy từ % tăng công bố"
+  },
+  {
+   "ten": "Lãi từ FPT Telecom và FRT (phần của FPT)",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "FPT Telecom",
+     "v": [
+      349,
+      404,
+      404,
+      404,
+      405,
+      453
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "FRT",
+     "v": [
+      78,
+      55,
+      102,
+      135,
+      134,
+      159
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "FRT lãi gấp đôi nhờ Long Châu; FPT Telecom đi ngang 3 quý rồi +12% ở Q2/2026.",
+   "ng": "BCTC FOX, FRT (VNDirect) × tỷ lệ sở hữu"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 58580,
+    "th": 30784,
+    "ky": "7T",
+    "tg": 58,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 16/4 · Shinhan 14/09"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 11629,
+    "th": 6659,
+    "ky": "7T",
+    "tg": 58,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 16/4 · Shinhan 14/09"
+   },
+   {
+    "ten": "LNTT khối công nghệ",
+    "kh": 7350,
+    "th": 3314,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ · MAS 26/08"
+   },
+   {
+    "ten": "LNTT giáo dục, đầu tư & khác",
+    "kh": 4279,
+    "th": 2399.83781981,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ · MAS 26/08",
+    "chu": "gồm lãi liên kết"
+   },
+   {
+    "ten": "LNTT FPT Telecom (liên kết)",
+    "kh": 5100,
+    "th": 2392,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ FOX · Mekong ASEAN 27/07"
+   }
+  ],
+  "y": "LNTT 7 tháng đạt 57% kế hoạch — sát tiến độ thời gian. Khối công nghệ mới 45% kế hoạch (+25%) dù CNTT trong nước tăng gấp đôi; giáo dục & khác vượt nhờ lãi liên kết.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-09-15",
+   "kn": "MUA",
+   "tp": 86000,
+   "ln26": 10932,
+   "ln27": 12782,
+   "pp": "FCFF + P/E (50:50)",
+   "y": "Giá mục tiêu tính trên 1.885 triệu cổ phiếu (đã gồm thưởng 10%). Giữ biên LNTT nước ngoài 15,4% cho 2026–2027; Nhật +19%/+21%, APAC đi ngang.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/20260915_ctcp_tap_doan_fpt_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-09-14",
+   "kn": "MUA",
+   "tp": 84000,
+   "ln26": 10832,
+   "ln27": 12474,
+   "pp": "DCF + P/E 15 lần (50:50)",
+   "y": "Giá mục tiêu 92.400 trong báo cáo, trước thưởng 10% cổ phiếu. Khách hàng thận trọng ký dài hạn vì AI; FPT chuyển sang tính phí theo năng lực cố định và theo kết quả.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/fpt_mua_gia_mt_vnd_92_400_27_6_chu_dong_thich_nghi.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-08-26",
+   "kn": "MUA",
+   "tp": 81049,
+   "ln26": 10842,
+   "ln27": 12447,
+   "pp": "FCFF",
+   "y": "Giá mục tiêu 89.154 trong báo cáo, trước thưởng. Giữ nhịp 6T cho từng thị trường; 2027 cần APAC đảo chiều lên +10%. Tách rõ chuyển đổi số và phần truyền thống.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/cong_ty_cp_fpt_fpt_vn_mua_tp_vnd89_154_thi_truong_nhat_va_chau_au_dan_dat.pdf"
+  },
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-08-07",
+   "kn": "MUA",
+   "tp": 90909,
+   "ln26": 10596,
+   "ln27": 12097,
+   "pp": "SOTP",
+   "y": "Giá mục tiêu 100.000 trong báo cáo (trước thưởng), hạ 17% vì P/E cùng ngành giảm và chi phí vốn tăng. Ký mới Q2 +46%; bỏ hợp đồng 2–3 năm chỉ còn ~+20%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/cap_nhat_fpt_mua_2026_08_07.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-08-03",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": 10817,
+   "ln27": 12777,
+   "pp": "tổng hợp họp nhà đầu tư 31/07",
+   "y": "Họp nhà đầu tư: kỳ vọng 2H doanh thu +13%, LNST ~+15%; FPT Software có thể quay lại ~15% từ 2027; nhà máy AI lấp đầy ~90% nhưng lãi chưa đáng kể.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/fpt_tong_hop_cuoc_hop_nha_dau_tu_31_07_2026.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. FPT thưởng 10% cổ phiếu tháng 9/2026: giá mục tiêu của ACBS, Mirae Asset, Shinhan (ra trước đợt thưởng) đã chia 1,1 để so với giá hiện tại; KBSV đã tính trên số cổ phiếu mới.",
+ "nguon": [
+  {
+   "ten": "KBSV — Báo cáo cập nhật 2Q2026",
+   "ngay": "15/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/20260915_ctcp_tap_doan_fpt_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ten": "Shinhan — Chủ động thích nghi",
+   "ngay": "14/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/fpt_mua_gia_mt_vnd_92_400_27_6_chu_dong_thich_nghi.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Thị trường Nhật và châu Âu dẫn dắt",
+   "ngay": "26/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/cong_ty_cp_fpt_fpt_vn_mua_tp_vnd89_154_thi_truong_nhat_va_chau_au_dan_dat.pdf"
+  },
+  {
+   "ten": "ACBS — Cập nhật FPT",
+   "ngay": "07/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/cap_nhat_fpt_mua_2026_08_07.pdf"
+  },
+  {
+   "ten": "MBS — Tổng hợp họp nhà đầu tư 31/07/2026",
+   "ngay": "03/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FPT/fpt_tong_hop_cuoc_hop_nha_dau_tu_31_07_2026.pdf"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — kế hoạch 2026, cổ tức",
+   "ngay": "03/2026",
+   "link": "https://thitruongtaichinhtiente.vn/fpt-len-ke-hoach-loi-nhuan-tang-truong-15-tiep-tuc-chia-co-tuc-tien-mat-20-80516.html"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — KQKD quý I/2026",
+   "ngay": "04/2026",
+   "link": "https://thitruongtaichinhtiente.vn/fpt-bao-lai-hon-2-800-ty-dong-trong-quy-i-hoan-thanh-24-ke-hoach-nam-82361.html"
+  },
+  {
+   "ten": "Mekong ASEAN — FPT Telecom 6 tháng 2026",
+   "ngay": "27/07/2026",
+   "link": "https://mekongasean.vn/fpt-telecom-dat-gan-nua-ke-hoach-loi-nhuan-nam-tai-san-vuot-31000-ty-57751.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 0,
+     "t": "Gartner (7/2026): chi tiêu dịch vụ CNTT toàn cầu 2026 ~1.857 tỷ USD (+8,1%), hạ từ +9,0% dự báo tháng 4.",
+     "ng": "Gartner, theo KBSV 15/09"
+    },
+    {
+     "h": 1,
+     "t": "Nhật thiếu nhân lực công nghệ, thâm hụt kỹ thuật số ~6.000 tỷ yên/năm; doanh nghiệp Nhật giảm phụ thuộc nhà cung cấp Trung Quốc.",
+     "ng": "KBSV 15/09 · MBS 31/07"
+    },
+    {
+     "h": 1,
+     "t": "Châu Âu: nhu cầu cắt giảm chi phí và chủ quyền dữ liệu, AI — không muốn phụ thuộc một quốc gia hay một nhà cung cấp.",
+     "ng": "MBS 31/07"
+    },
+    {
+     "h": 0,
+     "t": "Giá dịch vụ AI giảm nhanh (giá token giảm hơn 50% từ đỉnh tháng 5): khách hàng tự động hóa nhiều hơn, còn chi phí AI của FPT rẻ đi.",
+     "ng": "Bloomberg, theo KBSV 15/09"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "Dịch vụ CNTT truyền thống (phát triển ứng dụng, hỗ trợ, vận hành hạ tầng — ~40% thị trường) chỉ tăng 2–3%/năm; dịch vụ gắn AI (~60%) 15–30%/năm.",
+     "ng": "HCLTech, theo KBSV 15/09"
+    },
+    {
+     "h": -1,
+     "t": "Cổ phiếu CNTT Ấn Độ bị định giá lại từ đầu 2026: TCS −28,8%, Infosys −33,3%, Wipro −35%.",
+     "ng": "KBSV 15/09"
+    },
+    {
+     "h": 0,
+     "t": "Cách tính phí chuyển từ giờ công sang trọn gói/theo kết quả: giữ biên khi giá thầu giảm, nhưng nhà cung cấp gánh rủi ro năng suất.",
+     "ng": "Shinhan 14/09 · MBS 31/07"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 0,
+     "t": "Từ 1/1/2026 FPT Telecom là công ty liên kết (Bộ Công an nắm 50,2% thay SCIC): doanh thu hợp nhất giảm ~29%, LN cổ đông không đổi.",
+     "ng": "MAS 26/08"
+    },
+    {
+     "h": 1,
+     "t": "100% kỹ sư FPT Software dùng trợ lý AI, năng suất +10%; không cắt giảm nhân sự hàng loạt mà đào tạo lại, luân chuyển.",
+     "ng": "MBS 31/07"
+    },
+    {
+     "h": 1,
+     "t": "Lên vị trí tổng thầu: dự án hiện đại hóa hệ thống kế toán cho một hãng ô tô tại Nhật, FPT làm nhà thầu chính, Hitachi điều phối.",
+     "ng": "ACBS 07/08"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "CNTT nước ngoài",
+   "phu": "FPT Software · Nhật 47%, Mỹ 22%, APAC 19%, châu Âu 12% doanh thu 6T/2026",
+   "so": [
+    [
+     "Doanh thu 6T",
+     "18.902 tỷ",
+     "+13,4%"
+    ],
+    [
+     "LNTT 6T",
+     "3.006 tỷ",
+     "biên 15,9%"
+    ],
+    [
+     "Ký mới 6T",
+     "26.338 tỷ",
+     "+32,3%"
+    ],
+    [
+     "AI & dữ liệu 6T",
+     "1.842 tỷ",
+     "+54%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Nhật: hiện đại hóa hệ thống cũ (mainframe, COBOL), thiếu nhân lực, giảm phụ thuộc nhà cung cấp Trung Quốc; ký mới Nhật tăng hơn 40%.",
+     "ng": "MBS 31/07"
+    },
+    {
+     "t": "Châu Âu ký mới tăng hơn 50% (Đức, Pháp, Bắc Âu); Mỹ có dấu hiệu hồi phục; APAC yếu vì Hàn Quốc, Malaysia cắt ngân sách CNTT.",
+     "ng": "MBS 31/07"
+    },
+    {
+     "t": "Doanh thu bình quân mỗi nhân sự mảng nước ngoài tăng ~10%; AI & dữ liệu chiếm 10% doanh thu mảng.",
+     "ng": "ACBS 07/08"
+    }
+   ]
+  },
+  {
+   "ten": "CNTT trong nước",
+   "phu": "FPT IS, FPT Smart Cloud, nhà máy AI tại Việt Nam",
+   "so": [
+    [
+     "Doanh thu 6T",
+     "4.236 tỷ",
+     "+22,5%"
+    ],
+    [
+     "LNTT 6T",
+     "308 tỷ",
+     "gấp 2 lần"
+    ],
+    [
+     "Nhà máy AI 6T",
+     ">12 triệu USD",
+     "lấp đầy ~90%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Nhà máy AI: ~60% doanh thu cho thuê GPU, 30–40% dịch vụ giá trị gia tăng; mục tiêu 25–30 triệu USD/năm, lãi chưa đáng kể.",
+     "ng": "MBS 31/07"
+    },
+    {
+     "t": "Đơn hàng khu vực công và doanh nghiệp nhà nước tăng nhờ đầu tư hạ tầng số, AI; sản phẩm Made-by-FPT Q2 665 tỷ (+7%).",
+     "ng": "MBS 31/07 · KBSV 15/09"
+    }
+   ]
+  },
+  {
+   "ten": "Giáo dục và công ty liên kết",
+   "phu": "FPT Education 100% · FPT Telecom 45,66% · FRT 46,54% · Synnex FPT 48% · FPT Online 49,5%",
+   "so": [
+    [
+     "Doanh thu GD-ĐT-khác 6T",
+     "3.131 tỷ",
+     "−2,1%"
+    ],
+    [
+     "Lãi liên kết 6T",
+     "1.423 tỷ",
+     "+40,8%"
+    ],
+    [
+     "LNTT FOX 6T",
+     "2.392 tỷ",
+     "+14%"
+    ],
+    [
+     "LNTT FRT 6T",
+     "1.038 tỷ",
+     "67% KH"
+    ]
+   ],
+   "y": [
+    {
+     "t": "FPT Telecom: doanh thu Q2 +17,6% nhưng LNTT chỉ +12,1% vì biên gộp xuống 45,7%; kế hoạch LNTT 2026 5.100 tỷ.",
+     "ng": "MAS 26/08 · Mekong ASEAN 27/07"
+    },
+    {
+     "t": "FRT: Long Châu mở thêm 222 nhà thuốc, 13 trung tâm tiêm chủng trong 6T/2026; FPT Shop tăng nhờ giá trị đơn hàng.",
+     "ng": "Shinhan 14/09"
+    },
+    {
+     "t": "Giáo dục đang giảm ngắn hạn, chờ số tuyển sinh tháng 10; cơ sở Hải Phòng (5.800 học sinh, sinh viên) mở năm 2027.",
+     "ng": "MBS 31/07 · TTTC 04/2026"
+    }
+   ]
+  }
+ ]
+}

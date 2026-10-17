@@ -439,7 +439,7 @@
         tyD(dd) + ' tỷ so với ' + lbP + (chinh ? ', chủ yếu ' + (chinh.d > 0 ? 'nhờ ' : 'do ') + gon(chinh) + ' (' + tyD(chinh.d) + ')' : ''));
     }
     // Khoan khong deu (thu nhap khac NH, DT tai chinh/thu nhap khac DN) gop > 30% phan tang LNTT -> canh bao
-    var batThuong = { nh: { 'Hoạt động khác': ['thu nhập hoạt động khác', 'chủ yếu thu hồi nợ đã xử lý, không đều theo quý'] },
+    var batThuong = { nh: { 'Hoạt động khác': ['thu nhập hoạt động khác', 'thường là thu hồi nợ đã xử lý, có thể gồm khoản một lần — không đều theo quý'] },
                       dn: { 'Doanh thu tài chính': ['doanh thu tài chính', 'không đều theo quý'], 'Thu nhập khác ròng': ['thu nhập khác', 'không đều theo quý'] } }[loai] || {};
     [[cq, lb + ' so với ' + lbP, 0], [ct, '4 quý gần nhất', 1]].forEach(function(z){ var c = z[0]; if (!c) return; var dd2 = c.pa - c.pb; if (!(dd2 > 0)) return;
       c.ds.forEach(function(x){ if (!batThuong[x.ten] || !(x.d > dd2 * 0.3) || !(x.d > 0)) return;
