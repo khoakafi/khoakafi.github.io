@@ -305,7 +305,9 @@
       2839,
       3191,
       3904
-     ]
+     ],
+     "mau": "c3",
+     "net": false
     },
     {
      "ten": "TGDĐ + Điện Máy Xanh",
@@ -317,7 +319,9 @@
       3020,
       3013,
       3003
-     ]
+     ],
+     "mau": "c1",
+     "net": false
     },
     {
      "ten": "An Khang",
@@ -329,7 +333,9 @@
       409,
       415,
       438
-     ]
+     ],
+     "mau": "c4",
+     "net": true
     },
     {
      "ten": "EraBlue",
@@ -341,7 +347,9 @@
       212,
       261,
       337
-     ]
+     ],
+     "mau": "c2",
+     "net": true
     }
    ],
    "y": "Bách Hóa Xanh +1.345 cửa hàng trong 9 tháng; MBS dự báo 4.191 cuối 2026 và 4.991 cuối 2027. Q3/26 của TGDĐ + ĐMX và EraBlue là số ước (tổng 3.340 trừ EraBlue 181 + 156).",
@@ -370,7 +378,9 @@
       3.0,
       3.6,
       3.68
-     ]
+     ],
+     "mau": "c1",
+     "net": false
     },
     {
      "ten": "TGDĐ + Topzone",
@@ -381,7 +391,9 @@
       3.7,
       3.6,
       3.48
-     ]
+     ],
+     "mau": "c2",
+     "net": false
     },
     {
      "ten": "Bách Hóa Xanh",
@@ -392,7 +404,9 @@
       1.7,
       1.62,
       1.62
-     ]
+     ],
+     "mau": "c3",
+     "net": false
     }
    ],
    "y": "Điện máy: mỗi cửa hàng bán nhiều hơn ~30% so với cùng kỳ — đây là chu kỳ, không phải mở rộng. Bách Hóa Xanh: −12% vì cửa hàng mới ở Bắc – Trung còn nhỏ; MAS thấy đà giảm đã chững lại.",
@@ -421,7 +435,9 @@
       23.8,
       24.6,
       25.1
-     ]
+     ],
+     "mau": "c3",
+     "net": false
     },
     {
      "ten": "Điện thoại – điện máy",
@@ -432,7 +448,9 @@
       19.2,
       19.2,
       20.3
-     ]
+     ],
+     "mau": "c1",
+     "net": false
     }
    ],
    "y": "Biên điện máy lên đỉnh nhờ bán hàng cao cấp hơn và dịch vụ (Thợ Điện Máy Xanh, tài chính). MBS dự báo năm 2027 biên này giảm ~1 điểm % vì iPhone — nhóm biên thấp — chiếm tỷ trọng cao hơn.",
@@ -461,7 +479,9 @@
       29.2,
       32.7,
       32.9
-     ]
+     ],
+     "mau": "c1",
+     "net": false
     },
     {
      "ten": "Bách Hóa Xanh",
@@ -472,7 +492,9 @@
       12.5,
       13.1,
       15.2
-     ]
+     ],
+     "mau": "c3",
+     "net": false
     },
     {
      "ten": "Khác",
@@ -483,7 +505,9 @@
       0.7,
       0.7,
       0.7
-     ]
+     ],
+     "mau": "c4",
+     "net": false
     }
    ],
    "y": "Quý 3/2026 (sơ bộ): tổng doanh thu 52.648 tỷ, +32% — cao nhất từ trước đến nay; riêng Bách Hóa Xanh ~17.600 tỷ (9 tháng 45.900 trừ 6 tháng 28.300).",
