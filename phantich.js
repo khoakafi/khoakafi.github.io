@@ -1460,12 +1460,14 @@
     return '<table class="ptt">' + h + '</table>';
   }
   // Boi canh cho ho so: gia song (nghin dong), du lieu BCTC/gia/bao cao CTCK, ket luan mo hinh vua tinh
-  function hsCx(t, raw){ var r = hang(t) || {}; return { gia: r.p > 0 ? r.p : null, raw: raw, mo: (ptKL && ptKL.t === t) ? { muc: ptKL.muc, hanh: HANH[ptKL.loai] || '' } : null }; }
+  function hsCx(t, raw){ var r = hang(t) || {}, kl = (ptKL && ptKL.t === t) ? ptKL : null;
+    return { gia: r.p > 0 ? r.p : null, raw: raw, val20: r.val20 != null ? r.val20 / 1000 : null,
+      mo: kl ? { muc: kl.muc, hanh: HANH[kl.loai] || '', soDat: kl.soDat, tong: kl.dk ? kl.dk.length : null, pe: kl.x ? kl.x.pe : null } : null }; }
   // Ve lai cac phan cua ho so phu thuoc gia (gia ma nay, gia cong ty con niem yet) — giu nguyen phan con lai
   function veLaiHs(t){
     var hs = window.__knHoSo, pf = hs && hs.lay(t); if (!pf || !window.__ptLast || window.__ptLast.t !== t) return;
     var cx = hsCx(t, window.__ptLast.raw);
-    [['hsA', hs.phanA], ['hsB', hs.phanB], ['hsC', hs.phanC], ['hsD', hs.phanD]].forEach(function(z){ var el = document.getElementById(z[0]);
+    [['hsT1', hs.trang1], ['hsB', hs.trang2], ['hsD', hs.phanD]].forEach(function(z){ var el = document.getElementById(z[0]);
       if (el) try { el.innerHTML = z[1](pf, cx); } catch(e){ console.warn('hoso ve lai ' + z[0], e); } });
   }
   if (window.__knHoSo) window.__knHoSo.nghe(function(){ try { var t = K() && K().ma(); if (t && ptDaVe === t) veLaiHs(t); } catch(e){} });
@@ -1482,18 +1484,27 @@
     if (raw) { try { sv = ptSoi(t, raw, d.loai); } catch(e){ console.warn('ptSoi', e); }
       try { raw.__tt = tangTruong(sv); } catch(e){ console.warn('tangTruong', e); raw.__tt = null; }
       Object.defineProperty(raw, '__sv', { value: sv, configurable: true, writable: true, enumerable: false }); }   // khong luu vao cache
-    // Ho so phan tich (hoso.js, neu ma co): dau trang + can can -> khung mo hinh -> top-down, tung mang, ke hoach -> 3 the BCTC -> CTCK, rui ro, nguon
-    var hs = window.__knHoSo, pf = hs ? hs.lay(t) : null, dg = raw ? dinhGiaHtml(t, raw) : '', cx = null;
-    if (pf) { cx = hsCx(t, raw); try { h += '<div id="hsA">' + hs.phanA(pf, cx) + '</div>'; } catch(e){ console.warn('hoso A', e); } }
-    if (raw) h += '<div id="ptDgO">' + dg + '</div>';
-    if (pf) try { h += '<div id="hsB">' + hs.phanB(pf, cx) + '</div>'; } catch(e){ console.warn('hoso B', e); }
-    if (raw && sv) { var nmL = window.__nmLast && window.__nmLast.t === t ? window.__nmLast.nm : null, b3 = '';
+    // Ma co ho so (hoso.js): bao cao 2 trang — trang 1 tong quan; trang 2 chi tiet: muc 1-5 cua ho so, 6 the BCTC, 7 tin hieu dinh luong, 8 CTCK + nguon.
+    // Ma chua co ho so: khung mo hinh -> 3 the BCTC nhu cu. Muc gap (Soi BCTC, Cham diem 5 nam) xuong cuoi lam phu luc.
+    var hs = window.__knHoSo, pf = hs ? hs.lay(t) : null, dg = raw ? dinhGiaHtml(t, raw) : '', cx = null, b3 = '';
+    if (raw && sv) { var nmL = window.__nmLast && window.__nmLast.t === t ? window.__nmLast.nm : null;
       try { b3 += theQuy(sv, raw.__tt, nmL); } catch(e){ console.warn('theQuy', e); }
       try { b3 += theBien(sv, raw.__tt); } catch(e){ console.warn('theBien', e); }
-      try { b3 += theNo(sv, d); } catch(e){ console.warn('theNo', e); }
-      if (b3) h += '<div class="btg3">' + b3 + '</div>'; }
-    if (pf) try { h += '<div id="hsC">' + hs.phanC(pf, cx) + '</div><div id="hsD">' + hs.phanD(pf, cx) + '</div>'; } catch(e){ console.warn('hoso C/D', e); }
-    else if (hs && raw) h += '<div class="mini hsChua">Chưa có hồ sơ phân tích (tổng hợp báo cáo CTCK, kế hoạch, tin doanh nghiệp) cho ' + esc(t) + '. Hồ sơ đang làm dần cho ~100 mã thanh khoản cao được nhiều CTCK theo dõi.</div>';
+      try { b3 += theNo(sv, d); } catch(e){ console.warn('theNo', e); } }
+    if (pf) {
+      cx = hsCx(t, raw);
+      try { h += '<div class="hsPg" id="hsT1">' + hs.trang1(pf, cx) + '</div>'; } catch(e){ console.warn('hoso trang 1', e); }
+      var t2 = '';
+      try { t2 += '<div id="hsB">' + hs.trang2(pf, cx) + '</div>'; } catch(e){ console.warn('hoso trang 2', e); }
+      if (b3) t2 += '<div class="hsSec">' + hs.muc(6, 'Sức khỏe tài chính', 'quý gần nhất · biên và chi phí · vay nợ — tính từ BCTC VNDirect') + '<div class="btg3">' + b3 + '</div></div>';
+      if (raw) t2 += '<div class="hsSec">' + hs.muc(7, 'Tín hiệu định lượng của trang', 'quy tắc cố định (rule-based), kiểm định 1.628 mã 2014–2026 · tính lại theo giá') + '<div id="ptDgO">' + dg + '</div></div>';
+      try { t2 += '<div id="hsD">' + hs.phanD(pf, cx) + '</div>'; } catch(e){ console.warn('hoso muc 8', e); }
+      h += '<div class="hsPg hsPg2">' + hs.dau2(pf) + '<div class="hsPgB">' + t2 + '</div></div><div class="hsPl">Phụ lục — số liệu chi tiết</div>';
+    } else {
+      if (raw) h += '<div id="ptDgO">' + dg + '</div>';
+      if (b3) h += '<div class="btg3">' + b3 + '</div>';
+      if (hs && raw) h += '<div class="mini hsChua">Chưa có hồ sơ phân tích (tổng hợp báo cáo CTCK, kế hoạch, tin doanh nghiệp) cho ' + esc(t) + '. Hồ sơ đang làm dần cho ~100 mã thanh khoản cao được nhiều CTCK theo dõi.</div>';
+    }
     var soi = raw ? soiHtml(t, raw, d, sv) : '';
     if (soi) h += mucGap('ctsoi', 'Soi BCTC chi tiết', (sv ? (raw.__tt && raw.__tt.B ? raw.__tt.B.lb + ' và ' : '') + sv.lb + ' · ' : '') + '4 chỉ số quý · điểm sáng, điểm tối đầy đủ · nhận định · lợi nhuận đến từ đâu · thị phần · số liệu 8 quý', soi);
     var nam = '<div class="ptp">' + cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC;
@@ -1578,7 +1589,7 @@
     try { ptVe(t, ptTinh(raw, t), raw); window.__ptLast = { t: t, raw: raw }; }
     catch(e){ console.warn('phantich', e); ptBao(t, 'Lỗi tính chỉ số: ' + esc(e.message)); }
     // Ho so ve cham hon 2,5 s -> ve lai mot lan khi co
-    if (hsViec) hsViec.then(function(pf){ if (pf && ptFor === t && ptDaVe === t && !document.getElementById('hsA') && window.__ptLast && window.__ptLast.t === t)
+    if (hsViec) hsViec.then(function(pf){ if (pf && ptFor === t && ptDaVe === t && !document.getElementById('hsT1') && window.__ptLast && window.__ptLast.t === t)
       try { ptVe(t, ptTinh(window.__ptLast.raw, t), window.__ptLast.raw); } catch(e){ console.warn('hoso ve lai', e); } });
   }
   window.__knPhanTich = ptMo;

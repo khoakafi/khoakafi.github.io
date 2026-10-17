@@ -324,6 +324,16 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   `theoDoi` khoảng xấu–tốt + cùng kỳ + thực tế; `kichBan3` thanh chồng giá trị từng phần/cp + vạch giá hiện tại; `bangDinhGia` bảng cách tính
   (LN × P/E × sở hữu → tổng → trừ chiết khấu → ÷ cp); `peLichSu`; rủi ro có chip tác động (`tac`); thẩm định có thanh đếm. Màu: c1 xanh dương,
   c2 cam, c3 xanh lá đạt kiểm bảng màu (dataviz); **màu thứ 4 = xám** cho "khác"/bối cảnh — tím cũ gần trùng xanh dương (ΔE 10 mắt thường).
+- **Bản 4 — báo cáo 2 trang (17/10 tối, anh Khoa: "bỏ đồng tình/không đồng tình với CTCK — tự kiểm bằng model rồi đẩy ý hợp lý lên; gộp Catalyst
+  với Rủi ro; chung quy 2 trang: 1 tổng quan, 1 chi tiết; gửi ai cũng phải thấy như analyst thực thụ; nhớ tone màu của mình; chú ý headline").**
+  Mã có hồ sơ: `#hsT1` = **Trang 1 Tổng quan** (`trang1`: dải xanh đầu trang, headline `tieu_de`, tiêu đề phụ `dong_mo`, luận điểm mở bằng con số,
+  hộp khuyến nghị = mức của mô hình định lượng + giá trị hợp lý hồ sơ, thông tin cổ phiếu, tóm tắt dự phóng `tom_tat`, thang định giá, thị trường
+  đang trả, LN theo mảng `ln_mang`, bảng **Catalyst & rủi ro** gộp `su_kien` theo thời gian, cột tác động `tac = [số, giải thích]`).
+  **Trang 2 Chi tiết** đánh số: 1 mô hình dự phóng, 2 định giá, 3 vận hành, 4 vĩ mô → DN, 5 kế hoạch (`#hsB` = `trang2`), 6 sức khỏe tài chính
+  (3 thẻ BCTC), 7 tín hiệu định lượng (`#ptDgO`) — 6 và 7 do `ptVe` chèn bằng `hs.muc()`; 8 tham khảo CTCK + nguồn (`#hsD` = `phanD`).
+  Mục gập (Soi BCTC, Chấm điểm 5 năm) xuống "Phụ lục". Mã chưa có hồ sơ giữ bố cục cũ. Câu phụ thuộc giá có `dk: 'conlai_re'` (P/E phần ngoài
+  công ty con < 90% trung vị khu vực) — sai thì hiện bản `khac`, để headline/luận điểm không nói ngược số khi giá chạy. Thẩm định CTCK đã bỏ;
+  ý CTCK đúng (chất lượng LN, cầu kéo về sớm, biên dù iPhone, BHX ra Bắc) nằm trong luận điểm/sự kiện của trang.
 
 ## Số hiệu suất B★ tính ở đâu
 
