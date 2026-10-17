@@ -1461,7 +1461,7 @@
   }
   // Boi canh cho ho so: gia song (nghin dong), du lieu BCTC/gia/bao cao CTCK, ket luan mo hinh vua tinh
   function hsCx(t, raw){ var r = hang(t) || {}, kl = (ptKL && ptKL.t === t) ? ptKL : null;
-    return { gia: r.p > 0 ? r.p : null, raw: raw, val20: r.val20 != null ? r.val20 / 1000 : null,
+    return { gia: r.p > 0 ? r.p : null, raw: raw, val20: r.val20 != null ? r.val20 / 1000 : null, pb: r.pb > 0 ? r.pb : null,
       mo: kl ? { muc: kl.muc, hanh: HANH[kl.loai] || '', soDat: kl.soDat, tong: kl.dk ? kl.dk.length : null, pe: kl.x ? kl.x.pe : null,
         chips: kl.dk ? kl.dk.map(function(z){ return [z.ok, z.chip]; }) : null, tq: (kl.muc === 'tc' && kl.st != null) ? kl.st : null } : null }; }
   // Ve lai cac phan cua ho so phu thuoc gia (gia ma nay, gia cong ty con niem yet) — giu nguyen phan con lai

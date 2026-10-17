@@ -180,7 +180,13 @@
     return esc(s).replace(/\{(\w+)\}/g, function(a, k){ return m[k] == null ? a : (tron || !m[k] ? m[k] : '<b>' + m[k] + '</b>'); });
   }
   // Cau phu thuoc gia song. 'conlai_re': phan ngoai cong ty con re ro so voi trung vi khu vuc (chua co gia cong ty con thi giu cau chinh, khong nhay chu)
-  function dkDung(dk, o){ return dk !== 'conlai_re' || o.peConLai == null || !o.kvTv || o.peConLai < o.kvTv * 0.9; }
+  function dkDung(dk, o){
+    if (!dk) return true;
+    if (dk === 'conlai_re') return o.peConLai == null || !o.kvTv || o.peConLai < o.kvTv * 0.9;
+    if (dk === 'up_duong') return o.up == null || o.up > 0;
+    var m = /^up_tren:(-?[\d.]+)$/.exec(dk); if (m) return o.up == null || o.up >= +m[1];
+    return true;
+  }
 
   /* ---------- Khung bao cao 2 trang ---------- */
   function dauTrang(p, so, ten){
@@ -199,12 +205,13 @@
       + '<h2 class="hsHl">' + esc(tieu || '') + '</h2><p class="hsSub">' + dien(p.dong_mo || '', o) + '</p>'
       + nhan1('Luận điểm đầu tư') + luanDiem(p, o) + '</div>'
       + '<aside class="hsP1s">' + oKn(o) + thongTin(p, o, cx) + tomTat(p, o) + '</aside></div>'
-      + '<div class="hsP1r">' + nhan1('Định giá 12 tháng', 'tổng các phần trên LN 2027E · cách tính ở trang 2') + thangKb(p, o) + '</div>'
-      + '<div class="hs2 hsP1r hsP1c"><div>' + sotpHtml(p, o) + '</div><div>' + lnMang(p) + '</div></div>'
+      + '<div class="hsP1r">' + nhan1('Định giá 12 tháng', esc((p.dinh_gia && p.dinh_gia.phu) || 'tổng các phần trên LN 2027E') + ' · cách tính ở trang 2') + thangKb(p, o) + '</div>'
+      + hang2(p.sotp ? sotpHtml(p, o) : soSanhHtml(p, o), lnMang(p))
       + '<div class="hsP1r">' + suKien(p, o) + '</div>'
       + '<div class="hsFoot">Kỳ số liệu: ' + esc(p.ky || '') + ' · tổng hợp từ BCTC, công bố của doanh nghiệp và ' + soTl + ' tài liệu (' + soBc + ' báo cáo CTCK, chỉ tham khảo) · '
       + 'mô hình, định giá và số liệu chi tiết ở trang 2 · không phải khuyến nghị đầu tư.</div></div>';
   }
+  function hang2(a, b){ return a && b ? '<div class="hs2 hsP1r hsP1c"><div>' + a + '</div><div>' + b + '</div></div>' : (a || b ? '<div class="hsP1r">' + (a || b) + '</div>' : ''); }
   function luanDiem(p, o){
     return '<div class="hsLdL">' + (p.luan_diem || []).map(function(z){ if (!dkDung(z.dk, o)) z = z.khac; if (!z) return '';
       return '<div class="hsLdR"><div class="hsLdS">' + (z.so ? '<b>' + dien(z.so, o, 1) + '</b><small>' + esc(z.nhan || '') + '</small>' : '') + '</div>'
@@ -229,6 +236,7 @@
     r.push(kv('Cổ phiếu lưu hành', f(p.cp_trieu, 1) + ' triệu'));
     if (cx.val20 != null) r.push(kv('GTGD bình quân 20 phiên', f(cx.val20, 0) + ' tỷ'));
     if (mo.pe != null) r.push(kv('P/E 4 quý gần nhất', f(mo.pe, 1) + ' lần'));
+    if (cx.pb > 0) r.push(kv('P/B', f(cx.pb, 2) + ' lần'));
     if (t && t.co_tuc_nam && o.gia > 0) r.push(kv('Tỷ suất cổ tức', f(t.co_tuc_nam / (o.gia * 1000) * 100, 1) + '% <small>· ' + f(t.co_tuc_nam, 0) + ' đ/cp</small>'));
     if (D && D.phan) D.phan.forEach(function(z){ if (z.sh < 1) { var v = z.sh * 100; r.push(kv('Sở hữu ' + esc(z.ten.replace(/^[\d,.]+% /, '')), f(v, Math.round(v) === v ? 0 : 2) + '%')); } });
     return '<div class="hsKd"><div class="hsKdH">Thông tin cổ phiếu</div>' + r.join('') + '</div>';
@@ -242,6 +250,8 @@
       + dong('Tăng trưởng', g.map(function(v){ return '<td class="' + lop(v) + '">' + pct(v, v != null && Math.abs(v) < 10 ? 1 : 0) + '</td>'; }))
       + dong('EPS (đ)', t.eps.map(function(v){ return '<td>' + f(v, 0) + '</td>'; }))
       + (o.gia > 0 ? dong('P/E tại giá hiện tại', t.eps.map(function(e){ return '<td>' + (e > 0 ? f(o.gia * 1000 / e, 1) : '—') + '</td>'; })) : '')
+      + (t.bv ? dong('BVPS (đ)', t.bv.map(function(v){ return '<td>' + (v > 0 ? f(v, 0) : '—') + '</td>'; })) + (o.gia > 0 ? dong('P/B tại giá hiện tại', t.bv.map(function(v){ return '<td>' + (v > 0 ? f(o.gia * 1000 / v, 2) : '—') + '</td>'; })) : '') : '')
+      + (t.them || []).map(function(r){ return dong(esc(r.ten), r.v.map(function(v){ return '<td>' + (v == null ? '—' : f(v, r.d == null ? 0 : r.d) + (r.pt ? '%' : '')) + '</td>'; })); }).join('')
       + '</table><div class="hsY">' + esc(t.ng || '') + '</div></div>';
   }
   // LN co dong theo mang: cot chong, mau co dinh theo mang; ghi ty trong mang can nhan manh (nhan)
@@ -249,7 +259,7 @@
     var L = p.ln_mang; if (!L || !L.ss) return '';
     var ss = L.ss.map(function(s){ return { ten: s.ten, v: s.v, cls: /^c[1-4]$/.test(s.mau || '') ? s.mau : 'c4', cot: 1 }; });
     var tong = L.cot.map(function(c, i){ return ss.reduce(function(a, s){ return a + (s.v[i] || 0); }, 0); }), b = ss.filter(function(s){ return s.ten === L.nhan; })[0];
-    return nhan1('Lợi nhuận cổ đông theo mảng', 'tỷ đồng') + chuGiai(ss) + bdChong(ss, L.cot, { fm: function(v){ return f(v, 0); }, cao: 150 })
+    return nhan1(esc(L.tieu || 'Lợi nhuận cổ đông theo mảng'), esc(L.dv || 'tỷ đồng')) + chuGiai(ss) + bdChong(ss, L.cot, { fm: function(v){ return f(v, 0); }, cao: 150 })
       + '<div class="hsY">' + (b ? esc(b.ten) + ' chiếm ' + tong.map(function(t, i){ return '<b>' + f(b.v[i] / t * 100, 0) + '%</b> (' + esc(L.cot[i]) + ')'; }).join(' → ') + ' lợi nhuận cổ đông. ' : '') + esc(L.ng || '') + '</div>';
   }
   // Catalyst va rui ro gop mot bang theo thoi gian
@@ -301,30 +311,41 @@
   // P/E 2027E thi truong dang tra cho tung phan, dat canh P/E 2027F tung doanh nghiep cung nganh khu vuc (cham xam) va trung vi
   function peKv(s, o){
     if (!s.con.kv || !s.conlai || !s.conlai.kv) return '';
-    var ds = [{ ten: s.con.ma, phu: s.con.kv_ten, v: o.peCon27, kv: s.con.kv, tv: s.con.kv_tv },
-              { ten: 'Phần còn lại', phu: s.conlai.kv_ten, v: o.peConLai, kv: s.conlai.kv, tv: s.conlai.kv_tv }];
-    var mx = 20, X = function(v){ return (Math.max(0, Math.min(v, mx)) / mx * 100).toFixed(1); };
-    var h = '<div class="hsPk"><div class="hsPkH">P/E trên LN 2027E: thị trường đang trả <i class="me"></i> so với doanh nghiệp cùng ngành khu vực <i class="kv"></i> (vạch: trung vị)</div>';
+    return daiKv([{ ten: s.con.ma, phu: s.con.kv_ten, v: o.peCon27, kv: s.con.kv, tv: s.con.kv_tv },
+                  { ten: 'Phần còn lại', phu: s.conlai.kv_ten, v: o.peConLai, kv: s.conlai.kv, tv: s.conlai.kv_tv }], 'P/E trên LN 2027E', 'P/E 2027F', 20);
+  }
+  // Ma khong co cong ty con niem yet: boi so dang tra (theo gia song) so voi doanh nghiep cung nganh (bang trong bao cao CTCK)
+  function soSanhHtml(p, o){
+    var s = p.so_sanh; if (!s || !s.kv || !s.kv.length) return '';
+    var v = (o.gia > 0 && s.moi_cp > 0) ? o.gia * 1000 / s.moi_cp : null;
+    return nhan1(esc(s.tieu || 'Định giá so với doanh nghiệp cùng ngành'), esc(s.phu || 'theo giá hôm nay'))
+      + daiKv([{ ten: p.ma, phu: s.nhom || '', v: v, kv: s.kv, tv: s.tv }], s.chi_so || 'P/E', s.chi_so_kv || s.chi_so || 'P/E', s.max || 20)
+      + (s.y || s.ng ? '<div class="hsY">' + dien(s.y || '', o) + (s.ng ? ' ' + esc(s.ng) + '.' : '') + '</div>' : '');
+  }
+  function daiKv(ds, chiSo, chiSoKv, mx){
+    var X = function(v){ return (Math.max(0, Math.min(v, mx)) / mx * 100).toFixed(1); }, buoc = mx <= 4 ? 1 : (mx <= 10 ? 2 : 5), tk = [];
+    for (var t0 = 0; t0 <= mx + 1e-9; t0 += buoc) tk.push(t0);
+    var h = '<div class="hsPk"><div class="hsPkH">' + esc(chiSo) + ': thị trường đang trả <i class="me"></i> so với doanh nghiệp cùng ngành <i class="kv"></i> (vạch: trung vị)</div>';
     ds.forEach(function(r){
       h += '<div class="hsPkR"><div class="hsPkT"><b>' + esc(r.ten) + '</b><small>' + esc(r.phu) + '</small></div><div class="hsPkB">';
-      r.kv.forEach(function(k){ h += '<i class="kv" style="left:' + X(k[1]) + '%" title="' + esc(k[0] + ': P/E 2027F ' + f(k[1], 1)) + '"></i>'; });
+      r.kv.forEach(function(k){ h += '<i class="kv" style="left:' + X(k[1]) + '%" title="' + esc(k[0] + ': ' + chiSoKv + ' ' + f(k[1], mx <= 4 ? 2 : 1)) + '"></i>'; });
       var vuot = r.kv.filter(function(k){ return k[1] > mx; });
       if (vuot.length) h += '<em class="vuot">' + vuot.map(function(k){ return esc(k[0]) + ' ' + f(k[1], 1); }).join(', ') + ' ›</em>';
       h += '<i class="tv" style="left:' + X(r.tv) + '%" title="Trung vị cùng ngành ' + f(r.tv, 1) + '"></i>';
       if (r.v != null) { var lech = (r.v / r.tv - 1) * 100;
         h += '<i class="me" style="left:' + X(r.v) + '%" title="' + esc(r.ten + ': ' + f(r.v, 1) + ' lần, ' + (Math.abs(lech) < 10 ? 'ngang' : (lech < 0 ? 'thấp hơn' : 'cao hơn') + ' trung vị ' + f(Math.abs(lech), 0) + '%')) + '"></i>'
-          + '<b class="mel" style="left:' + X(r.v) + '%">' + f(r.v, 1) + '</b>'; }
+          + '<b class="mel" style="left:' + X(r.v) + '%">' + f(r.v, mx <= 4 ? 2 : 1) + '</b>'; }
       var lc = r.v != null ? (r.v / r.tv - 1) * 100 : null;
-      h += '</div><div class="hsPkV">' + (lc == null ? '…' : (Math.abs(lc) < 10 ? '<b>ngang</b>' : '<b>' + pct(lc) + '</b>') + '<small>so với trung vị ' + f(r.tv, 1) + '</small>') + '</div></div>';
+      h += '</div><div class="hsPkV">' + (lc == null ? '…' : (Math.abs(lc) < 10 ? '<b>ngang</b>' : '<b>' + pct(lc) + '</b>') + '<small>so với trung vị ' + f(r.tv, mx <= 4 ? 2 : 1) + '</small>') + '</div></div>';
     });
-    return h + '<div class="hsPkX"><span></span><div>' + [0, 5, 10, 15, 20].map(function(t){ return '<span style="left:' + X(t) + '%">' + t + '</span>'; }).join('') + '</div><span></span></div></div>';
+    return h + '<div class="hsPkX"><span></span><div>' + tk.map(function(t){ return '<span style="left:' + X(t) + '%">' + f(t, 0) + '</span>'; }).join('') + '</div><span></span></div></div>';
   }
 
   /* ---------- Trang 2: chi tiet, gon trong mot trang (ve lai khi gia doi). Moi thu khac nam o Phu luc (phanD + phantich.js) ---------- */
   function trang2(p, cx){
     var o = soLive(p, cx), ct = p.ctck || [], h = dauTrang(p, 2, 'Chi tiết') + '<div class="hsPgB">';
-    h += '<div class="hsR2"><div>' + nhan1('Dự phóng theo mảng', esc(p.ky || '')) + bangDuPhong(p, o) + '</div>'
-      + '<div>' + nhan1('Định giá tổng các phần', 'nghìn đ/cp, 12 tháng') + kichBan3(p, o, 1) + bangDinhGia(p, o) + '</div></div>';
+    h += '<div class="hsR2"><div>' + nhan1(esc((p.mo_hinh && p.mo_hinh.tieu) || 'Dự phóng theo mảng'), esc(p.ky || '')) + bangDuPhong(p, o) + '</div>'
+      + '<div>' + nhan1(esc((p.dinh_gia && p.dinh_gia.tieu) || 'Định giá tổng các phần'), 'nghìn đ/cp, 12 tháng') + kichBan3(p, o, 1) + bangDinhGia(p, o) + '</div></div>';
     if (p.gia_dinh && p.gia_dinh.length) h += '<div class="hsR1">' + nhan1('Giả định chính', 'xấu · cơ sở · tốt — làm lại mỗi quý khi có BCTC') + bangGiaDinh(p) + '</div>';
     h += '<div class="hsR3"><div>' + cauLn(p) + '</div><div>' + doNhay(p) + '</div><div>' + theoDoi(p, cx) + '</div></div>';
     if (p.bieu_do && p.bieu_do.length) h += '<div class="hsR1">' + nhan1('Động lực vận hành', 'số liệu doanh nghiệp công bố và báo cáo CTCK') + '<div class="hsR4">' + p.bieu_do.map(function(b){ return bieuDo(b, 1); }).join('') + '</div></div>';
@@ -377,10 +398,11 @@
     var td = function(i, a, b){ return '<td' + (i === 1 ? ' class="cs"' : '') + '>' + a + (b ? '<small>' + b + '</small>' : '') + '</td>'; };
     var t = '<table class="hsDgT"><tr><th>Cách tính <small>tỷ đồng</small></th><th>Xấu</th><th>Cơ sở</th><th>Tốt</th></tr>';
     D.phan.forEach(function(z){
-      t += '<tr><td><i class="sw ' + (z.mau || 'c4') + '"></i>' + esc(z.ten) + '<small>LN 2027E × P/E' + (z.sh < 1 ? ' × ' + f(z.sh * 100, 2) + '%' : '') + '</small></td>'
-        + [0, 1, 2].map(function(i){ return td(i, f(z.gt[i], 0), f(z.ln[i], 0) + ' × ' + f(z.pe[i], 0)); }).join('') + '</tr>'; });
+      var xs = z.x || z.ln, bs = z.boi || z.pe, bd = z.boi_d == null ? (bs.some(function(b){ return Math.round(b) !== b; }) ? 1 : 0) : z.boi_d;
+      t += '<tr><td><i class="sw ' + (z.mau || 'c4') + '"></i>' + esc(z.ten) + '<small>' + esc(z.x_ten || 'LN 2027E') + ' × ' + esc(z.boi_ten || 'P/E') + (z.sh < 1 ? ' × ' + f(z.sh * 100, 2) + '%' : '') + '</small></td>'
+        + [0, 1, 2].map(function(i){ return td(i, f(z.gt[i], 0), f(xs[i], 0) + ' × ' + f(bs[i], bd)); }).join('') + '</tr>'; });
     t += '<tr class="sum"><td>Tổng các phần</td>' + tong.map(function(v, i){ return td(i, f(v, 0)); }).join('') + '</tr>'
-      + '<tr><td>Trừ ' + f(ck * 100, 0) + '% chiết khấu công ty mẹ</td>' + D.von.map(function(v, i){ return td(i, f(v, 0)); }).join('') + '</tr>'
+      + (ck > 0 ? '<tr><td>Trừ ' + f(ck * 100, 0) + '% chiết khấu công ty mẹ</td>' + D.von.map(function(v, i){ return td(i, f(v, 0)); }).join('') + '</tr>' : '')
       + '<tr class="dam"><td>Giá trị mỗi cổ phiếu<small>÷ ' + f(D.cp, 1) + ' triệu cp · nghìn đ</small></td>' + D.gia.map(function(v, i){ return td(i, f(v, 1)); }).join('') + '</tr>';
     if (o.gia > 0) t += '<tr><td>So với giá hiện tại ' + f(o.gia, 1) + '</td>' + D.gia.map(function(v, i){ var d = (v / o.gia - 1) * 100; return td(i, '<span class="' + lop(d) + '">' + pct(d) + '</span>'); }).join('') + '</tr>';
     return t + '</table>';
@@ -390,12 +412,14 @@
     var L = p.pe_ls; if (!L || !L.t || L.t.length < 24) return '';
     var tran = 30, v = L.v.map(function(x){ return x != null && x > 0 && x <= tran ? x : null; }), vuot = L.v.filter(function(x){ return x > tran; }).length;
     var lbs = L.t.map(function(m){ return m.slice(5, 7) + '/' + m.slice(0, 4); }), gd = (p.gia_dinh || []).filter(function(g){ return g.ten === 'P/E DMX'; })[0];
-    return nhan1('P/E của ' + esc(p.ma) + ' từ ' + L.t[0].slice(0, 4), 'P/E 4 quý, cuối mỗi tháng') + '<div class="hsPeL">'
-      + bdDuong([{ ten: 'P/E', v: v, cls: 'ink' }], lbs, { truc: 1, cao: 120, tu0: 1, fm: function(x){ return f(x, 1); }, fmTruc: function(x){ return f(x, 0); }, nhanCuoi: 1,
-          ref: [{ v: L.p10, ten: 'thấp 10%: ' + f(L.p10, 1), trai: 1 }, { v: L.tv, ten: 'trung vị: ' + f(L.tv, 1), trai: 1 }] }) + '</div>'
-      + '<div class="hsY">' + (gd ? 'Kịch bản dùng P/E DMX <b>' + esc(gd.v[0]) + ' · ' + esc(gd.v[1]) + ' · ' + esc(gd.v[2]) + '</b> — từ mức thấp 10% đến dưới trung vị. ' : '')
-      + 'Thấp nhất ' + f(L.thap[1], 1) + ' (' + L.thap[0].slice(5, 7) + '/' + L.thap[0].slice(0, 4) + ')' + (vuot ? '; ' + vuot + ' tháng 2023–24 LN gần 0, P/E vượt ' + tran + ' bỏ trống' : '')
-      + '. P/E so với lịch sử không tự dự báo giá (kiểm định của trang).</div>';
+    var ten = L.loai || 'P/E', d = ten === 'P/B' ? 2 : 1;
+    if (ten === 'P/B') { tran = 10; v = L.v.map(function(x){ return x != null && x > 0 && x <= tran ? x : null; }); vuot = 0; }
+    return nhan1(ten + ' của ' + esc(p.ma) + ' từ ' + L.t[0].slice(0, 4), ten === 'P/B' ? 'P/B cuối mỗi tháng' : 'P/E 4 quý, cuối mỗi tháng') + '<div class="hsPeL">'
+      + bdDuong([{ ten: ten, v: v, cls: 'ink' }], lbs, { truc: 1, cao: 120, tu0: 1, fm: function(x){ return f(x, d); }, fmTruc: function(x){ return f(x, ten === 'P/B' ? 1 : 0); }, nhanCuoi: 1,
+          ref: [{ v: L.p10, ten: 'thấp 10%: ' + f(L.p10, d), trai: 1 }, { v: L.tv, ten: 'trung vị: ' + f(L.tv, d), trai: 1 }] }) + '</div>'
+      + '<div class="hsY">' + (L.dung ? esc(L.dung) + ' ' : (gd ? 'Kịch bản dùng P/E DMX <b>' + esc(gd.v[0]) + ' · ' + esc(gd.v[1]) + ' · ' + esc(gd.v[2]) + '</b> — từ mức thấp 10% đến dưới trung vị. ' : ''))
+      + 'Thấp nhất ' + f(L.thap[1], d) + ' (' + L.thap[0].slice(5, 7) + '/' + L.thap[0].slice(0, 4) + ')' + (vuot ? '; ' + vuot + ' tháng P/E vượt ' + tran + ' (LN quá thấp) bỏ trống' : '')
+      + '. ' + ten + ' so với lịch sử không tự dự báo giá (kiểm định của trang).</div>';
   }
   function doNhay(p){
     var ds = p.nhay || []; if (!ds.length) return '';
@@ -409,7 +433,7 @@
     var ds = p.theo_doi || []; if (!ds.length) return '';
     var Q = (cx && cx.raw && cx.raw.quy) || [], tim = function(fd){ return Q.filter(function(o){ return o.fd === fd; })[0] || null; };
     var rows = ds.map(function(z){ var o = z.fd ? tim(z.fd) : null;
-      return { z: z, tt: o && o.v && o.v['23000'] != null ? o.v['23000'] / 1e9 : null, dtt: o && o.v && o.v['21001'] != null ? o.v['21001'] / 1e9 : null }; });
+      var mc = z.ma_ln || '23000'; return { z: z, tt: o && o.v && o.v[mc] != null ? o.v[mc] / 1e9 : null, dtt: o && o.v && o.v['21001'] != null ? o.v['21001'] / 1e9 : null }; });
     var all = []; rows.forEach(function(r){ if (!r.z.fd || !r.z.ln) return; all.push(r.z.ln[0], r.z.ln[2]); if (r.z.ck) all.push(r.z.ck); if (r.tt != null) all.push(r.tt); });
     var lo = all.length ? Math.min.apply(null, all) : 0, hi = all.length ? Math.max.apply(null, all) : 1, pad = (hi - lo) * 0.08; lo -= pad; hi += pad;
     var X = function(v){ return ((v - lo) / (hi - lo) * 100).toFixed(1); };
