@@ -194,7 +194,8 @@
     o.kvTv = (s && s.conlai && s.conlai.kv_tv) || null; o.maCon = ds.map(function(c){ return c.ma; }).join(' + ');
     if (ds.length) { var gs = ds.map(function(c){ return giaCon(c.ma); }); o.con = gs[0];
       if (o.von && gs.every(function(g){ return g; })) {
-        o.dsCon = ds.map(function(c, i){ var v = gs[i].gia * c.cp_trieu;
+        var hn = new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10);
+        o.dsCon = ds.map(function(c, i){ var k = (c.chia || []).reduce(function(a, z){ return z && z[0] > (p.cap_nhat || '') && z[0] <= hn && z[1] > 1 ? a * z[1] : a; }, 1), v = gs[i].gia * c.cp_trieu * k;
           return { c: c, g: gs[i], von: v, phan: v * c.so_huu, pe26: c.ln26 > 0 ? v / c.ln26 : null, pe27: c.ln27 > 0 ? v / c.ln27 : null }; });
         o.phanCon = o.dsCon.reduce(function(a, z){ return a + z.phan; }, 0); o.vonCon = o.dsCon[0].von;
         o.conLai = o.von - o.phanCon; o.pctCon = o.phanCon / o.von * 100;
@@ -357,13 +358,16 @@
     var s = p.sotp, ds = dsCon(s); if (!ds.length) return '';
     var h = nhan1('Thị trường đang trả bao nhiêu cho từng phần?', 'theo giá thị trường hôm nay');
     if (!o.dsCon) return h + '<div class="hsY">Đang lấy giá ' + esc(o.maCon) + '…</div>';
-    var mot = ds.length === 1, con = 100;
-    h += '<div class="hsSt">';
-    o.dsCon.forEach(function(z, i){ var w = Math.max(0, Math.min(con, z.phan / o.von * 100)); con -= w;
+    var mot = ds.length === 1, goc = Math.max(o.von, o.phanCon), con = 100, vuot = o.phanCon > o.von;
+    h += '<div class="hsSt' + (vuot ? ' vuot' : '') + '">';
+    o.dsCon.forEach(function(z, i){ var w = Math.max(0, Math.min(con, z.phan / goc * 100)); con -= w;
       h += '<i style="width:' + w.toFixed(1) + '%;background:' + (MAU_HEX[z.c.mau] || ['#2a78d6', '#eb6834', '#8E98A6'][i % 3]) + '" title="'
         + esc(z.c.ma + ' ' + f(z.g.gia, 1) + ' × ' + f(z.c.cp_trieu, 1) + ' triệu cp × ' + f(z.c.so_huu * 100, 2) + '% = ' + f(z.phan, 0) + ' tỷ') + '"><span>'
         + (mot && w >= 45 ? f(z.c.so_huu * 100, 0) + '% ' + esc(z.c.ma) + ' theo giá thị trường · ' + f(z.phan, 0) + ' tỷ' : esc(z.c.ma) + ' · ' + f(z.phan, 0) + ' tỷ') + '</span></i>'; });
-    h += '<i style="width:' + Math.max(0, con).toFixed(1) + '%;background:' + (MAU_HEX[s.conlai && s.conlai.mau] || '#1A9E77') + '"><span>' + (o.conLai > 0 ? f(o.conLai, 0) + ' tỷ' : '—') + '</span></i></div>'
+    if (vuot) h += '<u style="left:' + (o.von / goc * 100).toFixed(1) + '%" title="Vốn hóa ' + esc(p.ma) + '"></u></div>'
+      + '<div class="hsStl"><span>Vốn hóa ' + esc(p.ma) + ' <b>' + f(o.von, 0) + ' tỷ</b> (vạch) chỉ bằng ' + f(o.von / o.phanCon * 100, 0) + '% giá trị thị trường phần ' + esc(o.maCon) + ' đang nắm</span>'
+        + '<span>' + esc((s.conlai && s.conlai.ten) || 'Phần còn lại') + ': thị trường trả <b>' + f(o.conLai, 0) + ' tỷ</b></span></div>';
+    else h += '<i style="width:' + Math.max(0, con).toFixed(1) + '%;background:' + (MAU_HEX[s.conlai && s.conlai.mau] || '#1A9E77') + '"><span>' + (o.conLai > 0 ? f(o.conLai, 0) + ' tỷ' : '—') + '</span></i></div>'
       + '<div class="hsStl"><span>Vốn hóa ' + esc(p.ma) + ' <b>' + f(o.von, 0) + ' tỷ</b> = ' + f(o.pctCon, 0) + '% là ' + esc(o.maCon) + '</span><span>' + esc((s.conlai && s.conlai.ten) || 'Phần còn lại') + '</span></div>';
     h += peKv(s, o);
     h += '<div class="hsY">' + o.dsCon.map(function(z){ return esc(z.c.ma) + ' ' + f(z.g.gia, 1) + ' (' + ngVn(z.g.ngay) + ') · vốn hóa ' + f(z.von, 0) + ' tỷ'
@@ -442,14 +446,16 @@
     var D = p.dinh_gia; if (!D || !D.phan || !D.gia) return '';
     var ck = D.ck || 0, kb = p.kich_ban || [], TEN = ['Xấu', 'Cơ sở', 'Tốt'];
     var ph = D.phan.map(function(z){ return { ten: z.ten, mau: /^c[1-4]$/.test(z.mau || '') ? z.mau : 'c4', v: z.gt.map(function(g){ return g * (1 - ck) / D.cp; }) }; });
-    var mx = Math.max.apply(null, D.gia.concat(o.gia > 0 ? [o.gia] : [])), st = nice(mx / 5), top = Math.ceil(mx / st) * st;
+    var tru = (D.no_rong || 0) / D.cp, tp = D.gia.map(function(g){ return g + tru; });
+    var mx = Math.max.apply(null, tp.concat(o.gia > 0 ? [o.gia] : [])), st = nice(mx / 5), top = Math.ceil(mx / st) * st;
     var X = function(v){ return v / top * 100; };
     var h = (gon ? '' : '<h5>Định giá: ba kịch bản, từng phần <small class="mut">nghìn đ/cp, 12 tháng</small></h5>')
-      + '<div class="bdlg">' + ph.map(function(z){ return '<span><i class="' + z.mau + ' q"></i>' + esc(z.ten) + '</span>'; }).join('') + (o.gia > 0 ? '<span><i class="gia"></i>Giá hiện tại ' + f(o.gia, 1) + '</span>' : '') + '</div><div class="hsFf">';
+      + '<div class="bdlg">' + ph.map(function(z){ return '<span><i class="' + z.mau + ' q"></i>' + esc(z.ten) + '</span>'; }).join('') + ((D.no_rong || 0) > 0 ? '<span><i class="tru q"></i>Trừ nợ vay ròng ' + f(D.no_rong / D.cp, 1) + '</span>' : '') + (o.gia > 0 ? '<span><i class="gia"></i>Giá hiện tại ' + f(o.gia, 1) + '</span>' : '') + '</div><div class="hsFf">';
     D.gia.forEach(function(g, i){ var d = o.gia > 0 ? (g / o.gia - 1) * 100 : null, k = kb[i] || {};
       h += '<div class="hsFfR' + (i === 1 ? ' cs' : '') + '"' + (k.mo_ta ? ' title="' + esc(k.mo_ta) + '"' : '') + '><span class="hsFfT">' + (TEN[i] || '') + '</span><span class="hsFfB">';
       ph.forEach(function(z){ var w = X(z.v[i]);
         h += '<i class="' + z.mau + '" style="width:' + w.toFixed(2) + '%" title="' + esc((TEN[i] || '') + ' · ' + z.ten + ': ' + f(z.v[i], 1) + ' nghìn đ/cp') + '">' + (w >= 7 ? '<span>' + f(z.v[i], 1) + '</span>' : '') + '</i>'; });
+      if (tru > 0) h += '<b class="tru" style="left:' + X(g).toFixed(2) + '%;width:' + (X(tp[i]) - X(g)).toFixed(2) + '%" title="' + esc('Trừ nợ vay ròng công ty mẹ: ' + f(tru, 1) + ' nghìn đ/cp') + '"></b>';
       if (o.gia > 0) h += '<s style="left:' + X(o.gia).toFixed(2) + '%"></s>';
       h += '</span><span class="hsFfV"><b>' + f(g, 1) + '</b>' + (d != null ? '<em class="' + lop(d) + '">' + pct(d) + '</em>' : '') + '</span></div>'
         + (k.mo_ta && !gon ? '<div class="hsFfM">' + esc(k.mo_ta) + '</div>' : ''); });
@@ -467,9 +473,11 @@
       var bd = z.boi_d != null ? z.boi_d : (/P\/B/.test(z.boi_ten || '') ? (le(10) ? 2 : 1) : (le(1) ? 1 : 0));
       t += '<tr><td><i class="sw ' + (z.mau || 'c4') + '"></i>' + esc(z.ten) + '<small>' + esc(z.x_ten || 'LN 2027E') + ' × ' + esc(z.boi_ten || 'P/E') + (z.sh < 1 ? ' × ' + f(z.sh * 100, 2) + '%' : '') + '</small></td>'
         + [0, 1, 2].map(function(i){ return td(i, f(z.gt[i], 0), f(xs[i], 0) + ' × ' + f(bs[i], bd)); }).join('') + '</tr>'; });
-    if (D.phan.length > 1 || ck > 0) t += '<tr class="sum"><td>' + (D.phan.length > 1 ? 'Tổng các phần' : 'Giá trị') + '</td>' + tong.map(function(v, i){ return td(i, f(v, 0)); }).join('') + '</tr>';
+    var nr = D.no_rong || 0;
+    if (D.phan.length > 1 || ck > 0 || nr) t += '<tr class="sum"><td>' + (D.phan.length > 1 ? 'Tổng các phần' : 'Giá trị') + '</td>' + tong.map(function(v, i){ return td(i, f(v, 0)); }).join('') + '</tr>';
     t += ''
-      + (ck > 0 ? '<tr><td>Trừ ' + f(ck * 100, 0) + '% chiết khấu công ty mẹ</td>' + D.von.map(function(v, i){ return td(i, f(v, 0)); }).join('') + '</tr>' : '')
+      + (ck > 0 ? '<tr><td>Trừ ' + f(ck * 100, 0) + '% chiết khấu công ty mẹ</td>' + tong.map(function(v, i){ return td(i, f(v * (1 - ck), 0)); }).join('') + '</tr>' : '')
+      + (nr ? '<tr><td>' + esc(D.no_rong_ten || 'Trừ nợ vay ròng công ty mẹ') + ' <small>' + f(nr, 0) + ' tỷ, mọi kịch bản</small></td>' + D.von.map(function(v, i){ return td(i, f(v, 0)); }).join('') + '</tr>' : '')
       + '<tr class="dam"><td>Giá trị mỗi cổ phiếu<small>÷ ' + f(D.cp, 1) + ' triệu cp · nghìn đ</small></td>' + D.gia.map(function(v, i){ return td(i, f(v, 1)); }).join('') + '</tr>';
     if (o.gia > 0) t += '<tr><td>So với giá hiện tại ' + f(o.gia, 1) + '</td>' + D.gia.map(function(v, i){ var d = (v / o.gia - 1) * 100; return td(i, '<span class="' + lop(d) + '">' + pct(d) + '</span>'); }).join('') + '</tr>';
     return t + '</table>';
@@ -687,7 +695,7 @@
       + '#ptcs .hsSbP i{position:absolute;top:27px;left:-7px;width:14px;height:14px;border-radius:50%;background:var(--text);box-shadow:0 0 0 3px #fff;z-index:2}#ptcs .hsSbG{text-align:center}'
       + '#ptcs .hsLd{margin-top:12px;padding-top:12px;border-top:1px dashed var(--border)}#ptcs .hsSt{display:flex;height:30px;border-radius:6px;overflow:hidden;margin:4px 0 3px}'
       + '#ptcs .hsSt i{display:flex;align-items:center;justify-content:center;font-style:normal;font-size:11.5px;font-weight:700;white-space:nowrap;overflow:hidden;color:#fff;padding:0 6px}#ptcs .hsSt i.a{background:#2a78d6}#ptcs .hsSt i.b{background:#1A9E77}'
-      + '#ptcs .hsStl{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;color:var(--muted)}'
+      + '#ptcs .hsSt.vuot{position:relative;overflow:visible}#ptcs .hsSt.vuot u{position:absolute;top:-4px;bottom:-4px;width:3px;margin-left:-1px;background:var(--text);border-radius:2px}#ptcs .hsStl{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;color:var(--muted)}'
       + '#ptcs .hsMh2{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px}@media (max-width:1000px){#ptcs .hsMh2{grid-template-columns:1fr}}#ptcs .hsMh2>*{min-width:0}#ptcs .hsGdw{margin-top:16px;padding-top:12px;border-top:1px dashed var(--border)}'
       + '#ptcs table.hsMh{width:100%;border-collapse:collapse;font-size:12.5px}#ptcs table.hsMh th{font-size:11.5px;color:var(--muted);text-align:right;padding:4px 8px;border-bottom:1px solid var(--border);text-transform:none;letter-spacing:0}'
       + '#ptcs table.hsMh td{padding:4px 8px;text-align:right;border-bottom:1px solid #F1F3F6;white-space:nowrap;vertical-align:top}#ptcs table.hsMh td:first-child{text-align:left;white-space:normal;color:#334155}#ptcs table.hsMh td.a{color:var(--muted)}'
@@ -708,7 +716,7 @@
       + '#ptcs .hsFf{margin-top:4px}#ptcs .hsFfR,#ptcs .hsFfX{display:grid;grid-template-columns:50px minmax(0,1fr) 96px;gap:10px;align-items:center}#ptcs .hsFfR{margin-top:9px}#ptcs .hsFfT{font-size:12.5px;color:#475569}#ptcs .hsFfR.cs .hsFfT{font-weight:800;color:var(--text)}'
       + '#ptcs .hsFfB{position:relative;display:flex;height:24px}#ptcs .hsFfB i{display:flex;align-items:center;justify-content:center;height:100%;margin-right:2px;font-style:normal;font-size:11px;font-weight:700;color:#fff;overflow:hidden;white-space:nowrap;cursor:default}'
       + '#ptcs .hsFfB i:first-child{border-radius:4px 0 0 4px}#ptcs .hsFfB i:last-of-type{border-radius:0 4px 4px 0;margin-right:0}#ptcs .hsFfB i.c1{background:#2a78d6}#ptcs .hsFfB i.c2{background:#eb6834}#ptcs .hsFfB i.c3{background:#1A9E77}#ptcs .hsFfB i.c4{background:#8E98A6}'
-      + '#ptcs .hsFfB s{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--text);border-radius:1px;z-index:1}#ptcs .hsFfB i span{position:relative;z-index:2;text-shadow:0 0 3px rgba(0,0,0,.35)}#ptcs .hsFfV{display:flex;align-items:baseline;justify-content:flex-end;gap:6px}#ptcs .hsFfV b{font-size:15px}'
+      + '#ptcs .hsFfB b.tru{position:absolute;top:0;bottom:0;border-radius:0 4px 4px 0;background:repeating-linear-gradient(135deg,rgba(200,30,30,.62) 0 4px,rgba(255,255,255,.62) 4px 8px)}#ptcs .bdlg i.tru{background:repeating-linear-gradient(135deg,rgba(200,30,30,.75) 0 3px,#fff 3px 6px)}#ptcs .hsFfB s{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--text);border-radius:1px;z-index:1}#ptcs .hsFfB i span{position:relative;z-index:2;text-shadow:0 0 3px rgba(0,0,0,.35)}#ptcs .hsFfV{display:flex;align-items:baseline;justify-content:flex-end;gap:6px}#ptcs .hsFfV b{font-size:15px}'
       + '#ptcs .hsFfV em{font-style:normal;font-size:11.5px;font-weight:700}#ptcs .hsFfV em.up{color:var(--green-dark)}#ptcs .hsFfV em.down{color:var(--red)}#ptcs .hsFfM{margin:2px 0 0 60px;font-size:11px;color:var(--muted);line-height:1.35}'
       + '#ptcs .hsFfX{margin-top:6px}#ptcs .hsFfX .tk{position:relative;height:15px;border-top:1px solid #D5DAE0}#ptcs .hsFfX .tk span{position:absolute;top:2px;transform:translateX(-50%);font-size:10px;color:var(--muted)}#ptcs .bdlg i.gia{width:2px;height:12px;background:var(--text);vertical-align:-2px;border-radius:0}'
       + '#ptcs table.hsDgT{width:100%;border-collapse:collapse;font-size:12px;margin-top:14px}#ptcs table.hsDgT th{font-size:11px;color:var(--muted);text-align:right;padding:4px 8px;border-bottom:1px solid var(--border);text-transform:none;letter-spacing:0;font-weight:700}'
