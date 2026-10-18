@@ -16,9 +16,9 @@
   ]
  ],
  "tieu_de": {
-  "t": "Lãi đỉnh nhờ Hormuz đã vào giá; 2027 lãi lùi về mặt bằng 2025",
+  "t": "Lãi đỉnh nhờ Hormuz đã vào giá; 2027 cước lùi về mặt bằng 2025",
   "dk": "up_duoi:5",
-  "khac": "Giá đã chiết khấu việc lãi 2027 lùi về mặt bằng trước Hormuz"
+  "khac": "Giá đã chiết khấu việc cước 2027 lùi về mặt bằng trước Hormuz"
  },
  "dong_mo": "Cước Hormuz đẩy LN cổ đông 2026E lên ~1.630 tỷ (+56%), nhưng ban lãnh đạo dự báo cước tàu dầu 2027 giảm ~30%. Chi phí đội tàu gần như cố định nên mỗi 1% doanh thu vận tải/DWT là ±1,4 nghìn đ/cp. P/E 9 × LN 2027E cơ sở (lãi gộp/DWT về mức 2025) cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
@@ -26,7 +26,7 @@
    "so": "~+12%",
    "nhan": "doanh thu vận tải/DWT 6T/2026 so với cùng kỳ",
    "tieu": "PVT chỉ hưởng một phần cơn sốt cước",
-   "t": "Giá thuê định hạn 7 tháng 2026 tăng 74% (Aframax), 38% (MR), 32% (tàu hóa chất) so với cùng kỳ; doanh thu vận tải 6 tháng của PVT +31% nhưng trọng tải đội tàu đã lớn hơn ~17%, nên mỗi DWT chỉ thu thêm ~12%. 30–40% doanh thu vận tải là hợp đồng nội địa giá ổn định (dầu thô cho Dung Quất, LPG), phần quốc tế tái ký dần theo hợp đồng định hạn 6–12 tháng và pool. Chiều xuống năm 2027 cũng sẽ trễ như vậy.",
+   "t": "Giá thuê định hạn 7 tháng 2026 tăng 74% (Aframax), 38% (MR), 32% (tàu hóa chất) so với cùng kỳ; doanh thu vận tải 6 tháng của PVT +31% nhưng trọng tải đội tàu đã lớn hơn ~17%, nên mỗi DWT chỉ thu thêm ~12%. 30–40% doanh thu vận tải là hợp đồng nội địa giá ổn định (dầu thô cho Dung Quất, LPG); phần quốc tế chỉ lên giá khi hợp đồng định hạn đến hạn tái ký (Poseidon: 6 tháng) hoặc qua pool. Chiều xuống năm 2027 cũng trễ như vậy.",
    "ng": "Vietcap 03/08 · SHS 24/05 · MBS 17/09 · mô hình"
   },
   {
@@ -39,7 +39,7 @@
   {
    "so": "−30%",
    "nhan": "cước tàu dầu 2027 theo ban lãnh đạo",
-   "tieu": "2026 là đỉnh; 2027 lãi lùi về mặt bằng 2025",
+   "tieu": "2026 là đỉnh; 2027 cước lùi về mặt bằng 2025",
    "t": "Ban lãnh đạo (họp nhà đầu tư 31/07) dự báo cước tàu dầu 2027 giảm ~30% khi Hormuz thông thương; Clarksons dự báo đội tàu dầu 2027 +11,1%, cầu +2,0%. Kế hoạch 2026–2030 chỉ 6.500–7.000 tỷ LNST (~1.300–1.400 tỷ/năm), thấp hơn 2026E ~1.990 tỷ. Mô hình cơ sở: lãi gộp vận tải/DWT 2027 về 1,17 triệu đ (2025: 1,15), LN cổ đông 1.355 tỷ (−17%) dù đội tàu +7%.",
    "ng": "Vietcap 03/08 · SBBS 21/05 · Mekong ASEAN · mô hình"
   },
@@ -48,7 +48,7 @@
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Giá đã phản ánh đỉnh lãi 2026",
    "dk": "up_duoi:5",
-   "t": "P/E 9 × LN 2027E cơ sở (≈ trung vị P/E 8,8 từ 2015; ≈ P/B 1,19 vốn chủ cuối 2026E) = {gt}. Xấu 17,8: lãi gộp/DWT 0,91 (dưới đáy đầu 2025), P/E 10; tốt 30,6: lãi gộp/DWT 1,59 (≈ nửa đầu 2026), P/E 7,5. Bảng cân đối không là rủi ro: nợ vay ròng ~1.160 tỷ, 9% vốn chủ.",
+   "t": "P/E 9 × LN 2027E cơ sở (≈ trung vị P/E 8,8 từ 2015; ≈ P/B 1,19 vốn chủ cuối 2026E) = {gt}. Xấu 17,8: lãi gộp/DWT 0,91 (dưới đáy đầu 2025), P/E 10; tốt 30,6: lãi gộp/DWT 1,59 (cước chỉ hạ nhẹ từ đỉnh Q2), P/E 7,5. Bảng cân đối không là rủi ro: nợ vay ròng ~1.160 tỷ, 9% vốn chủ.",
    "ng": "mô hình · P/E lịch sử: BCTC VNDirect",
    "khac": {
     "so": "{gt_so}",
@@ -417,7 +417,7 @@
    "ln26": 1885,
    "ln27": 2110,
    "gia": 30.6,
-   "mo_ta": "Cước giữ gần nửa đầu 2026: lãi gộp 1,59 triệu đ/DWT; 2,3 triệu DWT; P/E 7,5"
+   "mo_ta": "Cước chỉ hạ nhẹ từ đỉnh Q2/2026 (doanh thu/DWT −3%): lãi gộp 1,59 triệu đ/DWT; 2,3 triệu DWT; P/E 7,5"
   }
  ],
  "dinh_gia": {
@@ -877,6 +877,29 @@
    "theo_doi": "giá thuê định hạn 1 năm Aframax, MR"
   },
   {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Mở rộng đội tàu",
+   "ct": "Kế hoạch 2026: 3.445 tỷ cho 3–5 tàu (62,5% vay), mục tiêu 100 tàu năm 2030. 6T chưa mua tàu nào trong kế hoạch vì giá tàu cũ cao — cước hạ sẽ mua rẻ hơn.",
+   "tac": [
+    "±1,3 nghìn đ/cp",
+    "mỗi ±100 nghìn DWT bình quân 2027 (~1 Aframax)"
+   ],
+   "theo_doi": "thông báo mua tàu"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Mua tàu ở vùng giá đỉnh",
+   "ct": "Giá tàu cũ tăng theo cước; mua nhanh để đạt 100 tàu sẽ đẩy khấu hao, lãi vay lên đúng lúc cước hạ. Dư nợ 7.008 tỷ, lãi vay Q2 114 tỷ (~6,5%/năm).",
+   "tac": [
+    "±0,8 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất vay 2027"
+   ],
+   "theo_doi": "giá mua tàu, nợ vay"
+  },
+  {
    "khi": "2027",
    "loai": "xuong",
    "muc": 3,
@@ -901,6 +924,14 @@
    "theo_doi": "giao tàu mới, giá thuê định hạn"
   },
   {
+   "khi": "2027–2028",
+   "loai": "len",
+   "tieu": "Hợp đồng dài hạn với Nghi Sơn, tàu VLCC đầu tiên",
+   "ct": "Đang đàm phán vận chuyển dầu thô nhập khẩu cho Nghi Sơn (~10 triệu tấn/năm); chỉ đầu tư VLCC khi hợp đồng đủ hiệu quả — chưa có trong mô hình.",
+   "tac": "",
+   "theo_doi": "thỏa thuận với Nghi Sơn"
+  },
+  {
    "khi": "Liên tục",
    "loai": "xuong",
    "muc": 2,
@@ -913,25 +944,6 @@
    "theo_doi": "giá vốn mảng vận tải"
   },
   {
-   "khi": "2026–2027",
-   "loai": "len",
-   "tieu": "Mở rộng đội tàu",
-   "ct": "Kế hoạch 2026: 3.445 tỷ cho 3–5 tàu (62,5% vay), mục tiêu 100 tàu năm 2030. 6T chưa mua tàu nào trong kế hoạch vì giá tàu cũ cao — cước hạ sẽ mua rẻ hơn.",
-   "tac": [
-    "±1,3 nghìn đ/cp",
-    "mỗi ±100 nghìn DWT bình quân 2027 (~1 Aframax)"
-   ],
-   "theo_doi": "thông báo mua tàu"
-  },
-  {
-   "khi": "2027–2028",
-   "loai": "len",
-   "tieu": "Hợp đồng dài hạn với Nghi Sơn, tàu VLCC đầu tiên",
-   "ct": "Đang đàm phán vận chuyển dầu thô nhập khẩu cho Nghi Sơn (~10 triệu tấn/năm); chỉ đầu tư VLCC khi hợp đồng đủ hiệu quả — chưa có trong mô hình.",
-   "tac": "",
-   "theo_doi": "thỏa thuận với Nghi Sơn"
-  },
-  {
    "khi": "Liên tục",
    "loai": "xuong",
    "muc": 1,
@@ -942,14 +954,6 @@
     "mỗi ±2 điểm % tỷ lệ thiểu số"
    ],
    "theo_doi": "LN cổ đông / LNST"
-  },
-  {
-   "khi": "7–8/2026",
-   "loai": "hai",
-   "tieu": "Thay Tổng giám đốc",
-   "ct": "TGĐ bổ nhiệm 21/4 từ nhiệm từ 1/7; ông Nguyễn Thanh Bình (đại diện PVN) làm TGĐ từ 3/8. Vietcap ghi nhận hoạt động không bị ảnh hưởng.",
-   "tac": "",
-   "theo_doi": "kế hoạch đầu tư tàu của ban điều hành mới"
   }
  ],
  "top_down": [
@@ -958,7 +962,7 @@
    "y": [
     {
      "h": 1,
-     "t": "Xung đột Mỹ – Iran từ 28/2/2026: lưu lượng qua Hormuz còn ~10% bình thường, Brent đỉnh >130 USD/thùng; cước VLCC, Aframax tăng 60–300% lúc đỉnh 3–4/2026.",
+     "t": "Xung đột Mỹ – Iran từ 28/2/2026: có lúc chỉ ~10 tàu/ngày qua Hormuz (trước đó 125–140), Brent đỉnh >130 USD/thùng; cước VLCC, Aframax tăng 60–300% lúc đỉnh 3–4/2026.",
      "ng": "SHS 24/05"
     },
     {
@@ -1020,6 +1024,11 @@
      "h": 0,
      "t": "PVN sở hữu 51%; 9 công ty con, trong đó PVP, GSP, PDV niêm yết — phần PVT sở hữu theo giá 16/10 ~2.360 tỷ (19% vốn hóa PVT).",
      "ng": "SHS 24/05 · giá VNDirect 16/10"
+    },
+    {
+     "h": 0,
+     "t": "Ban điều hành thay đổi: TGĐ bổ nhiệm 21/4 từ nhiệm từ 1/7; ông Nguyễn Thanh Bình (đại diện vốn PVN) làm TGĐ từ 3/8/2026. Vietcap: hoạt động không bị ảnh hưởng.",
+     "ng": "Mekong ASEAN · Báo Pháp luật · Vietcap 03/08"
     }
    ]
   }
@@ -1027,7 +1036,7 @@
  "mang": [
   {
    "ten": "Vận tải dầu thô (Aframax)",
-   "phu": "Đội Aframax 3 → 4 tàu (2026); 100% vận chuyển dầu thô nội địa cho Dung Quất, phần lớn cho Nghi Sơn",
+   "phu": "4 tàu dầu thô, chủ lực PVT Poseidon (114.542 DWT) và PVT Apollo (105.000 DWT); 100% vận chuyển dầu thô nội địa cho Dung Quất, phần đáng kể cho Nghi Sơn",
    "so": [
     [
      "Doanh thu 2025",
@@ -1272,10 +1281,6 @@
    "kieu": "cot",
    "dv": "tỷ đồng",
    "nhan": [
-    "Q1/24",
-    "Q2/24",
-    "Q3/24",
-    "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
@@ -1287,10 +1292,6 @@
     {
      "ten": "LN cổ đông",
      "v": [
-      231,
-      288,
-      365,
-      209,
       215,
       295,
       263,
@@ -1302,8 +1303,8 @@
     }
    ],
    "so_le": 0,
-   "y": "Q3/2024 có lãi bán tàu (thu nhập khác 170 tỷ); Q2/2026 579 tỷ — gấp đôi bình quân quý 2025 (260 tỷ).",
-   "ng": "BCTC (VNDirect)"
+   "y": "Q2/2026 579 tỷ — gấp đôi bình quân quý 2025 (260 tỷ); Q1/2026 có 56 tỷ thu nhập khác, phần lớn là bồi thường cho tàu kẹt ở Hormuz.",
+   "ng": "BCTC (VNDirect) · SHS 24/05"
   }
  ],
  "ke_hoach": {
@@ -1389,7 +1390,7 @@
    "tp": 28500,
    "ln26": 1319,
    "ln27": 1350,
-   "pp": "Định giá 1 năm",
+   "pp": "",
    "y": "Trước KQ Q2: 2027 chỉ +2,3% vì dư cung (số liệu Clarksons); đây là báo cáo nêu rủi ro cung tàu 2027 rõ nhất.",
    "link": "https://cdn.simplize.vn/simplizevn/report/PVT/Buoc_vao_giai_oan_tang_truong_moi.pdf"
   },
@@ -1400,7 +1401,7 @@
    "tp": 26000,
    "ln26": null,
    "ln27": null,
-   "pp": "P/E dự phóng",
+   "pp": "",
    "y": "Báo cáo ngắn: LNST 2026F 1.610 tỷ (+21%), biên gộp phục hồi lên 16,2%; P/E dự phóng 8,4 lần.",
    "link": "https://cdn.simplize.vn/simplizevn/report/PVT/bao_cao_ngan_tong_ctcp_van_tai_dau_khi_pvt_vn_mua_doanh_thu_tu_doi_tau_moi.pdf"
   }
@@ -1444,7 +1445,7 @@
   },
   {
    "ten": "Mekong ASEAN — Vận tải biển quý 2/2026",
-   "ngay": "08/2026",
+   "ngay": "2026",
    "link": "https://mekongasean.vn/van-tai-bien-quy-22026-nguoi-thang-lon-ke-hut-hoi-58346.html"
   },
   {
