@@ -280,13 +280,22 @@
     var ln = Q.reduce(function(a, x){ return a + x.v['23000']; }, 0) / 1e9;
     return ln > 0 ? o.von / ln : null;
   }
+  // P/B theo gia hom nay va so co phieu cua ho so: von chu so huu cong ty me quy BCTC gan nhat (bang gia VNDirect dung gia phien truoc)
+  function pbSong(o, cx){
+    var Q = ((cx && cx.raw && cx.raw.quy) || []).filter(function(x){ return x && x.fd && x.v && x.v['14000'] > 0; })
+      .sort(function(a, b){ return a.fd < b.fd ? -1 : 1; }), L = Q[Q.length - 1];
+    if (!L || !(o.von > 0)) return null;
+    var vc = (L.v['14000'] - (L.v['14240'] || 0)) / 1e9;
+    return vc > 0 ? o.von / vc : null;
+  }
   function thongTin(p, o, cx){
     var r = [], pe = pe4q(o, cx), D = p.dinh_gia, t = p.tom_tat;
     r.push(kv('Vốn hóa', o.von ? f(o.von, 0) + ' tỷ' : '—'));
     r.push(kv('Cổ phiếu lưu hành', f(p.cp_trieu, 1) + ' triệu'));
     if (cx.val20 != null) r.push(kv('GTGD bình quân 20 phiên', f(cx.val20, 0) + ' tỷ'));
     if (pe != null) r.push(kv('P/E 4 quý gần nhất', f(pe, 1) + ' lần'));
-    if (cx.pb > 0) r.push(kv('P/B', f(cx.pb, 2) + ' lần'));
+    var pb = pbSong(o, cx) || (cx.pb > 0 ? cx.pb : null);
+    if (pb) r.push(kv('P/B', f(pb, 2) + ' lần'));
     if (t && t.co_tuc_nam && o.gia > 0) r.push(kv('Tỷ suất cổ tức', f(t.co_tuc_nam / (o.gia * 1000) * 100, 1) + '% <small>· ' + f(t.co_tuc_nam, 0) + ' đ/cp</small>'));
     if (D && D.phan) D.phan.forEach(function(z){ if (z.sh < 1) { var v = z.sh * 100; r.push(kv('Sở hữu ' + esc(z.ten.replace(/^[\d,.]+% /, '')), f(v, Math.round(v) === v ? 0 : 2) + '%')); } });
     return '<div class="hsKd"><div class="hsKdH">Thông tin cổ phiếu</div>' + r.join('') + '</div>';
