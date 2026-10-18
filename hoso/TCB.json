@@ -46,13 +46,13 @@
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/B 1,35 × vốn chủ giữa 2027: {up_so}",
    "dk": "up_tren:10",
-   "t": "P/B 1,35 ≈ trung vị từ 2018 (1,32), khớp ROE 2027E 15,2% với r 12,5%, g 5%. TCX chiếm {con_pct} vốn hóa TCB dù chỉ góp ~18% LN cổ đông 4 quý (P/B TCX 2,0 ngày 16/10); mô hình tính phần này ở 1,35 lần như ngân hàng — theo giá TCX thì +3,4 nghìn đ/cp. Xấu 24,9 (P/B 0,9, ROE 2027 11,4%), tốt 47,3 (P/B 1,6).",
-   "ng": "mô hình · P/B lịch sử: BCTC VNDirect · giá TCX sống",
+   "t": "P/B 1,35 ≈ trung vị từ 2018 (1,32), khớp ROE 2027E 15,2% với r 12,5%, g 5%. Theo giá 16/10, 79,81% TCX đáng ~73 nghìn tỷ — 31% vốn hóa TCB — dù chỉ góp ~18% LN cổ đông 4 quý (P/B TCX 2,0); mô hình tính phần này ở 1,35 lần như ngân hàng — theo giá TCX thì +3,4 nghìn đ/cp. Xấu 24,9 (P/B 0,9, ROE 2027 11,4%), tốt 47,3 (P/B 1,6).",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect · giá TCX: VNDirect 16/10",
    "khac": {
     "so": "{gt_so}",
     "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
     "tieu": "Giá đã gần giá trị cơ sở",
-    "t": "P/B 1,35 × vốn chủ 30/6/2027E cho {gt} ({up}); 1,35 ≈ trung vị từ 2018, khớp ROE 2027E 15,2%. TCX chiếm {con_pct} vốn hóa TCB dù chỉ góp ~18% LN cổ đông 4 quý (P/B TCX 2,0 ngày 16/10). Phần còn lại phụ thuộc chi phí vốn và dự phòng: mỗi 10 điểm cơ bản NIM 2027 ≈ ±2,1, mỗi 0,1 điểm % chi phí tín dụng ≈ ±1,4 nghìn đ/cp. Xấu 24,9, tốt 47,3."
+    "t": "P/B 1,35 × vốn chủ 30/6/2027E cho {gt} ({up}); 1,35 ≈ trung vị từ 2018, khớp ROE 2027E 15,2%. Theo giá 16/10, 79,81% TCX đáng ~73 nghìn tỷ — 31% vốn hóa TCB — dù chỉ góp ~18% LN cổ đông 4 quý (P/B TCX 2,0). Phần còn lại phụ thuộc chi phí vốn và dự phòng: mỗi 10 điểm cơ bản NIM 2027 ≈ ±2,1, mỗi 0,1 điểm % chi phí tín dụng ≈ ±1,4 nghìn đ/cp. Xấu 24,9, tốt 47,3."
    }
   }
  ],
@@ -347,29 +347,29 @@
    "ly_do": "2025: 3,77%; CTCK 3,6–3,7%. Xấu: chi phí vốn lên tiếp, CASA chưa hồi; tốt: lãi huy động hạ nhiệt, thu hồi lãi Flexible Pricing (KBSV)"
   },
   {
-   "ten": "Phí dịch vụ nửa cuối 2026 · 2027",
+   "ten": "Tăng phí dịch vụ nửa cuối 2026 · 2027 (%)",
    "v": [
-    "+15% · 0%",
-    "+35% · +12%",
-    "+50% · +20%"
+    "+15 · 0",
+    "+35 · +12",
+    "+50 · +20"
    ],
    "ly_do": "6T +73% (BCTC); nửa cuối 2025: 4.837 tỷ. Tốt ≈ giữ nhịp Q2 (3.662 tỷ/quý); phí IB dao động. 2027: SHS +18%, MBS +8%, KAFI +12%"
   },
   {
-   "ten": "Ngoài lãi khác nửa cuối 2026 · 2027",
+   "ten": "Tăng ngoài lãi khác nửa cuối 2026 · 2027 (%)",
    "v": [
-    "−60% · −10%",
-    "−40% · +10%",
-    "−15% · +25%"
+    "−60 · −10",
+    "−40 · +10",
+    "−15 · +25"
    ],
    "ly_do": "6T −49% (thu hồi nợ, chứng khoán đầu tư, vàng); nửa cuối 2025: 3.487 tỷ; 2025: 6.464 tỷ"
   },
   {
-   "ten": "CIR nửa cuối 2026 · 2027",
+   "ten": "CIR nửa cuối 2026 · 2027 (%)",
    "v": [
-    "34% · 33%",
-    "32% · 31%",
-    "30,5% · 29,5%"
+    "34 · 33",
+    "32 · 31",
+    "30 · 29,5"
    ],
    "ly_do": "Nửa cuối 2025: 32,1%; 6T/2026 29,7%; 2025 30,8%. CTCK 2027: SHS 30,5%, MBS 30,5%, KAFI 30,1%"
   },
@@ -418,7 +418,7 @@
   },
   {
    "ten": "Tốt",
-   "ln26": 30686,
+   "ln26": 30815,
    "ln27": 38482,
    "gia": 47.3,
    "mo_ta": "Cho vay +20% / +18%, NIM 3,85%, phí 2027 +20%, chi phí tín dụng 0,45%, CIR 29,5%; ROE 2027 18,1%; P/B 1,6"
@@ -459,7 +459,7 @@
     "x": [
      17197,
      24404,
-     30176
+     30305
     ],
     "boi": [
      0.9,
@@ -473,14 +473,14 @@
     "gt": [
      15477,
      32945,
-     48282
+     48488
     ]
    }
   ],
   "von": [
    176723,
    274814,
-   334941
+   335147
   ],
   "gia": [
    24.9,
@@ -737,84 +737,71 @@
    1.0
   ]
  ],
- "sotp": {
-  "con": [
-   {
-    "ma": "TCX",
-    "ten": "Chứng khoán Kỹ Thương (TCBS)",
-    "cp_trieu": 3329.3,
-    "so_huu": 0.7981,
-    "ln26": 6092,
-    "ln27": 6580,
-    "gtgd": 64,
-    "mau": "c2"
-   }
-  ],
-  "conlai": {
-   "ten": "Ngân hàng và các công ty con khác",
-   "ln27": 26186,
-   "mau": "c1",
-   "kv": [
-    [
-     "ACB",
-     5.7
-    ],
-    [
-     "BID",
-     6.6
-    ],
-    [
-     "CTG",
-     5.0
-    ],
-    [
-     "EIB",
-     20.2
-    ],
-    [
-     "HDB",
-     4.4
-    ],
-    [
-     "LPB",
-     10.3
-    ],
-    [
-     "MBB",
-     4.8
-    ],
-    [
-     "OCB",
-     5.8
-    ],
-    [
-     "STB",
-     14.4
-    ],
-    [
-     "TPB",
-     4.0
-    ],
-    [
-     "VCB",
-     9.4
-    ],
-    [
-     "VIB",
-     4.3
-    ],
-    [
-     "VPB",
-     5.4
-    ]
+ "so_sanh": {
+  "tieu": "P/B so với ngân hàng niêm yết lớn",
+  "phu": "theo giá hôm nay",
+  "chi_so": "P/B (vốn chủ 30/6/2026)",
+  "chi_so_kv": "P/B (VNDirect 16/10)",
+  "nhom": "13 ngân hàng vốn hóa > 50 nghìn tỷ",
+  "kv": [
+   [
+    "VCB",
+    1.9
    ],
-   "kv_tv": 5.7,
-   "kv_ten": "Ngân hàng niêm yết"
-  },
-  "kv_chi_so": "P/E 2027F",
-  "kv_max": 15,
-  "kv_ng": "P/E 2027F ngân hàng: MBS 22/09/2026 (FiinPro, giá 22/09); TCX: vốn điều lệ 33.293 tỷ sau cổ tức cổ phiếu 20% (GDKHQ 17/9/2026)",
-  "ng": "TCB sở hữu 79,81% TCX (báo Pháp luật 08/2026; Shinhan 12/08: 79,82%); LN TCX 2026E = 6T thực tế + nửa cuối 2025, 2027E +8% (mô hình)"
+   [
+    "BID",
+    1.34
+   ],
+   [
+    "CTG",
+    1.16
+   ],
+   [
+    "VPB",
+    1.37
+   ],
+   [
+    "MBB",
+    1.34
+   ],
+   [
+    "LPB",
+    2.58
+   ],
+   [
+    "STB",
+    1.88
+   ],
+   [
+    "ACB",
+    1.2
+   ],
+   [
+    "HDB",
+    1.73
+   ],
+   [
+    "SHB",
+    0.74
+   ],
+   [
+    "SSB",
+    1.31
+   ],
+   [
+    "VIB",
+    1.08
+   ],
+   [
+    "MSB",
+    1.21
+   ]
+  ],
+  "tv": 1.34,
+  "moi_cp": 25283,
+  "max": 3,
+  "y": "ROE 4 quý 16,1% đã thấp hơn trung vị nhóm (18,0%) nên P/B quanh trung vị là hợp lý — năm 2021, ROE 21,7% được trả P/B ~2,1. Tách 79,81% TCX theo giá 16/10 (~73 nghìn tỷ), phần ngân hàng còn lại ~1,1 lần giá sổ sách.",
+  "ng": "P/B nhóm: VNDirect (dữ liệu trang 16/10/2026); ROE 4 quý: BCTC, LN cổ đông ÷ vốn chủ công ty mẹ bình quân"
  },
  "theo_doi": [
   {
@@ -823,7 +810,7 @@
    "ln": [
     5783,
     7245,
-    8402
+    8465
    ],
    "ck": 6419
   },
@@ -833,7 +820,7 @@
    "ln": [
     5504,
     7030,
-    8262
+    8329
    ],
    "ck": 6676
   },
@@ -842,7 +829,7 @@
    "ln": [
     25308,
     28296,
-    30686
+    30815
    ]
   }
  ],
@@ -859,7 +846,7 @@
    "theo_doi": "NIM, phí dịch vụ, dự phòng"
   },
   {
-   "khi": "Q4/2026–Q1/2027",
+   "khi": "Q4/26–Q1/27",
    "loai": "hai",
    "tieu": "Thưởng cổ phiếu 50% và ESOP",
    "ct": "NHNN chấp thuận 13/10/2026: vốn điều lệ 70.862 → 106.593 tỷ (3.543 triệu cp thưởng, 30 triệu cp ESOP giá 10.000 đ). Giá, EPS, BVPS cùng chia 1,5 — không đổi giá trị.",
@@ -1067,13 +1054,13 @@
     {
      "ten": "Thẻ, ngoại hối, khác",
      "v": [
-      779,
-      739,
-      701,
+      778,
+      738,
+      702,
       738,
       816,
       772,
-      774
+      775
      ],
      "mau": "c4"
     }
