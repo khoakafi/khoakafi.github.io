@@ -22,9 +22,9 @@
   ]
  ],
  "tieu_de": {
-  "t": "Lãi lõi +11%, NIM bật khỏi đáy — nhưng P/B lại về thấp nhất từ 2020",
+  "t": "Lãi lõi +11%, NIM bật khỏi đáy — P/B lại về thấp nhất từ 2020",
   "dk": "up_tren:25",
-  "khac": "Lãi lõi +11%, NIM bật khỏi đáy — định giá đã rời đáy, phép thử là chi phí vốn"
+  "khac": "Lãi lõi +11%, NIM bật khỏi đáy — phép thử tiếp theo là chi phí vốn"
  },
  "dong_mo": "Ở giá 20,6 (16/10), ACB giao dịch 1,20 lần giá sổ sách — thấp nhất từ 3/2020 — dù NIM đã bật từ 2,77% lên 3,03% và LNTT cốt lõi 6T +11%; khối ngoại đã bán ròng 234 triệu cp từ đầu năm. P/B 1,35 × vốn chủ 30/6/2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
@@ -280,8 +280,7 @@
      16284,
      18618,
      21244
-    ],
-    "eps": 1
+    ]
    },
    {
     "ten": "ROE (%)",
@@ -1261,7 +1260,7 @@
     "ng": "ĐHĐCĐ 09/04 · BCTC Q2 · SHS 13/08"
    },
    {
-    "ten": "Dư nợ tăng thêm (ĐHĐCĐ 16%)",
+    "ten": "Tín dụng (ĐHĐCĐ +16%)",
     "kh": 109884,
     "th": 58982,
     "ky": "6T",
@@ -1270,7 +1269,7 @@
     "ng": "ĐHĐCĐ · BCTC Q2"
    },
    {
-    "ten": "Dư nợ theo hạn mức đầu năm (12%)",
+    "ten": "Tín dụng (hạn mức +12%)",
     "kh": 82413,
     "th": 58982,
     "ky": "6T",
@@ -1279,13 +1278,13 @@
     "ng": "SHS 13/08 · BCTC Q2"
    },
    {
-    "ten": "Cổ tức 2025: 13% cổ phiếu + 7% tiền",
+    "ten": "Cổ tức 2025: 20%",
     "kh": 20,
     "th": 20,
     "ky": "GDKHQ 15/6",
     "tg": 50,
     "dv": "% mệnh giá",
-    "ng": "ĐHĐCĐ · công bố chốt quyền 16/6"
+    "ng": "13% cổ phiếu + 7% tiền mặt · ĐHĐCĐ, công bố chốt quyền 16/6"
    }
   ],
   "y": "LNTT 6T đạt 48% kế hoạch +14%; cơ sở cả năm 21.736 tỷ ≈ 97% kế hoạch. Dư nợ đã dùng 72% hạn mức 12% đầu năm — nửa cuối phụ thuộc NHNN nới room.",

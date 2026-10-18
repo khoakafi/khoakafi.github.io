@@ -26,22 +26,22 @@
    "so": "+39,5%",
    "nhan": "dư nợ 30/6/2026 so với cùng kỳ",
    "tieu": "Room tín dụng từ MBV: tăng gấp 1,5 lần ngành",
-   "t": "Nhận chuyển giao bắt buộc OceanBank (nay MBV) cho MBB hạn mức tín dụng ~35% năm 2026 — phần lớn ngân hàng khác 11–13% — và không bị giới hạn cho vay bất động sản. 6T dư nợ +13,2% (ngân hàng trên HOSE +8,7%), lãi thuần Q2 +36,5%. Mô hình cơ sở: dư nợ +28% năm 2026, +22% năm 2027 — dưới kế hoạch ~30% vì tiền gửi không theo kịp. Mỗi 3 điểm % tín dụng 2027 chỉ ±0,3 nghìn đ/cp.",
-   "ng": "SHS 18/08 · KAFI 26/08 · Shinhan 12/08 · mô hình"
+   "t": "Nhận chuyển giao bắt buộc OceanBank (nay MBV) cho MBB hạn mức tín dụng ~35% năm 2026 — phần lớn ngân hàng khác 11–13% — và không bị giới hạn cho vay bất động sản. 6T dư nợ +13,2% (ngân hàng trên HOSE +8,7%), lãi thuần Q2 +36,5%. Mô hình cơ sở: dư nợ +28% năm 2026, +22% năm 2027 — dưới kế hoạch ~30% vì tiền gửi không theo kịp. Giá trị 12 tháng nhạy với NIM hơn tốc độ: mỗi 3 điểm % tín dụng 2027 chỉ ±0,3 nghìn đ/cp.",
+   "ng": "SHS 19/08 · KAFI 26/08 · Shinhan 12/08 · mô hình"
   },
   {
    "so": "127%",
    "nhan": "dư nợ / tiền gửi khách hàng 30/6",
    "tieu": "Tiền gửi là nút thắt — NIM vẫn giữ được",
    "t": "Tiền gửi chỉ +23% so với cùng kỳ (6T +4,6%); phần thiếu bù bằng liên ngân hàng (+118%) và giấy tờ có giá (+37%). CASA 34,6% (−3,3 điểm), chi phí vốn 12 tháng +79 điểm cơ bản — nhưng NIM chỉ −8 điểm vì 67% dư nợ định lại lãi suất trong 3 tháng. NIM quý tự tính 3,81% → 4,17%; mô hình giữ 3,90% nửa cuối 2026, 3,80% năm 2027: mỗi 10 điểm cơ bản ≈ ±1,7 nghìn đ/cp.",
-   "ng": "BCTC · MAS 25/09 · SHS 18/08 · mô hình"
+   "ng": "BCTC · MAS 29/09 · SHS 19/08 · mô hình"
   },
   {
    "so": "+27%",
    "nhan": "nợ xấu tuyệt đối trong 6T/2026",
    "tieu": "Nợ xấu 1,45% đẹp nhờ mẫu số",
-   "t": "Nợ xấu 14.028 → 17.797 tỷ trong 6 tháng, nhanh gấp đôi dư nợ; nhóm 5 +60% so với cùng kỳ, chủ yếu bán lẻ và xây lắp nhỏ. Cho vay kinh doanh bất động sản gần gấp đôi (167.468 tỷ, 13,6% dư nợ, trần nội bộ 15%), chưa có nợ xấu vì còn mới. 6T chỉ xử lý ~4.200 tỷ nợ (2025: ~12.200); để đưa bao phủ lên ~100%, mô hình trích 10.000 tỷ nửa cuối năm (6T: 7.702) và 1,45% dư nợ năm 2027.",
-   "ng": "MAS 25/09 · KBSV 18/09 · SHS 18/08 · BCTC · mô hình"
+   "t": "Nợ xấu 14.028 → 17.797 tỷ trong 6 tháng, nhanh gấp đôi dư nợ; nhóm 5 +60% so với cùng kỳ; nợ xấu mới chủ yếu ở bán lẻ và xây lắp nhỏ. Cho vay kinh doanh bất động sản gần gấp đôi (167.468 tỷ, 13,6% dư nợ, trần nội bộ 15%): MB báo chưa có nợ xấu, nhưng một nửa mới giải ngân trong 12 tháng. 6T chỉ xử lý ~4.200 tỷ nợ (2025: ~12.200); để bao phủ lên ~100%, mô hình trích 10.000 tỷ nửa cuối năm (6T: 7.702) và 1,45% dư nợ năm 2027.",
+   "ng": "MAS 29/09 · KBSV 18/09 · SHS 19/08 · BCTC · mô hình"
   },
   {
    "so": "{gt_so}",
@@ -298,11 +298,7 @@
    ],
    [
     "Dự phòng",
-    -3612
-   ],
-   [
-    "Làm tròn",
-    3
+    -3609
    ]
   ],
   "y": "Lãi thuần (+20%, dư nợ +22% nhưng NIM −11 điểm cơ bản) gánh gần hết; dự phòng (+26%) và chi phí hoạt động lấy lại khoảng 2/3 phần tăng.",
@@ -370,7 +366,7 @@
     "10.000 tỷ",
     "9.000 tỷ"
    ],
-   "ly_do": "6T 7.702 tỷ; mục tiêu bao phủ ~100% (SHS), hiện 94%. Số CTCK ngụ ý 10.100–11.400 tỷ cho nửa cuối năm"
+   "ly_do": "6T 7.702 tỷ; mục tiêu bao phủ ~100% (SHS), hiện 94%. MAS, KAFI, SHS, KBSV ngụ ý 10.100–11.400 tỷ cho nửa cuối năm"
   },
   {
    "ten": "Chi phí tín dụng 2027",
@@ -946,7 +942,7 @@
    "tieu": "Bán cổ phần cho nhà đầu tư nước ngoài",
    "ct": "Nghị định 69/2025 cho ngân hàng nhận chuyển giao bắt buộc nâng room ngoại tới 49%; MBB đang giới hạn 23,2%, khối ngoại giữ 22,2%. ĐHĐCĐ duyệt phát hành riêng lẻ tối đa 200 triệu cp, giá ≥ giá sổ sách.",
    "tac": [
-    "−1,9% BVPS",
+    "+0,6% BVPS",
     "nếu bán 200 triệu cp ở 1,3 lần giá sổ sách; giá trị chính ở room ngoại"
    ],
    "theo_doi": "room ngoại, nhà đầu tư chiến lược"
@@ -955,7 +951,7 @@
    "khi": "2027",
    "loai": "len",
    "tieu": "Công ty con: MCredit, MBS, bảo hiểm",
-   "ct": "MCredit (MB sở hữu 50%) LN 6T/2026 +67%, có thể IPO trong trung hạn (KAFI); nhóm công ty thành viên LN 6T +13%; MIC và MB Ageas Life doanh thu ~5.000 tỷ (+16%).",
+   "ct": "MCredit (MB sở hữu 50%) LN 6T/2026 +67% và có thể IPO trong trung hạn (KAFI). MB còn sở hữu MBS 66,4% (chứng khoán, niêm yết), MIC 67,7%, MB Ageas Life 61% (Shinhan).",
    "tac": "",
    "theo_doi": "kế hoạch IPO MCredit"
   },
@@ -987,7 +983,7 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Nợ xấu bán lẻ và bất động sản",
-   "ct": "Nhóm 5 8.747 tỷ (+60%); cho vay kinh doanh bất động sản +96% so với cùng kỳ, chưa qua một chu kỳ lãi suất cao; 6T chỉ xử lý ~4.200 tỷ nợ.",
+   "ct": "Nhóm 5 8.747 tỷ (+60%); cho vay kinh doanh bất động sản +96% so với cùng kỳ — một nửa mới giải ngân trong 12 tháng; 6T chỉ xử lý ~4.200 tỷ nợ.",
    "tac": [
     "−1,3 nghìn đ/cp",
     "mỗi 0,1 điểm % chi phí tín dụng 2027"
@@ -1151,7 +1147,7 @@
     }
    ],
    "y": "Gấp 4,5 lần từ 2022, từ 10,4% lên 17,5% dư nợ; riêng kinh doanh bất động sản 167.468 tỷ (+95,8% so với cùng kỳ), trần nội bộ 15% dư nợ.",
-   "ng": "KAFI 26/08 (biểu đồ dư nợ BĐS và xây dựng), MAS 25/09; tỷ trọng tự tính trên dư nợ BCTC"
+   "ng": "KAFI 26/08 (biểu đồ dư nợ BĐS và xây dựng), MAS 29/09; tỷ trọng tự tính trên dư nợ BCTC"
   },
   {
    "ten": "Nợ xấu, nhóm 5 và quỹ dự phòng",
@@ -1201,7 +1197,7 @@
     }
    ],
    "y": "Nợ xấu đi ngang 1,3–1,9% vì dư nợ tăng nhanh, còn nhóm 5 lên 0,71%; quỹ dự phòng (1,36% dư nợ) vẫn thấp hơn nợ xấu — bao phủ 94%.",
-   "ng": "Nợ xấu, nhóm 5: MAS 25/09; quỹ dự phòng: BCTC"
+   "ng": "Nợ xấu, nhóm 5: MAS 29/09; quỹ dự phòng: BCTC"
   }
  ],
  "ke_hoach": {
@@ -1249,13 +1245,13 @@
  "ctck": [
   {
    "ctck": "MAS",
-   "ngay": "2026-09-25",
+   "ngay": "2026-09-29",
    "kn": "MUA",
    "tp": 28200,
    "ln26": 30746,
    "ln27": 36895,
    "pp": "P/B 1,69 lần vốn chủ 2026F (≈ 9,5 lần EPS 2026F)",
-   "y": "Thận trọng nhất về NIM (3,80% năm 2026) và bao phủ (79,5%): nợ xấu 2026 +52,5% trong khi quỹ dự phòng chỉ +29%. Hạ giá mục tiêu 16%.",
+   "y": "Thận trọng về bộ đệm: nợ xấu 2026 +52,5% trong khi quỹ dự phòng chỉ +29%, bao phủ còn 79,5%; NIM 3,80%. Hạ giá mục tiêu 16% (từ 33.300 trước chia).",
    "link": "https://cdn.simplize.vn/simplizevn/report/MBB/20260925_ngan_hang_tmcp_quan_doi_mbb_vn_mua_tp_vnd28_200_tang_truong_van_vuot_ap_luc_trich_lap.pdf"
   },
   {
@@ -1282,7 +1278,7 @@
   },
   {
    "ctck": "SHS",
-   "ngay": "2026-08-18",
+   "ngay": "2026-08-19",
    "kn": "TĂNG TỶ TRỌNG",
    "tp": 26000,
    "ln26": 31965,
@@ -1307,7 +1303,7 @@
  "nguon": [
   {
    "ten": "MAS — Tăng trưởng vẫn vượt áp lực trích lập",
-   "ngay": "25/09/2026",
+   "ngay": "29/09/2026",
    "link": "https://cdn.simplize.vn/simplizevn/report/MBB/20260925_ngan_hang_tmcp_quan_doi_mbb_vn_mua_tp_vnd28_200_tang_truong_van_vuot_ap_luc_trich_lap.pdf"
   },
   {
@@ -1322,7 +1318,7 @@
   },
   {
    "ten": "SHS — Cập nhật KQKD Q2/2026",
-   "ngay": "18/08/2026",
+   "ngay": "19/08/2026",
    "link": "https://cdn.simplize.vn/simplizevn/report/MBB/mbb_cap_nhat_kqkd_q2_2026_loi_nhuan_tang_truong_tich_cuc_nho_tin_dung_mo_rong_va_bien_lai_rong_phuc_hoi.pdf"
   },
   {
@@ -1398,7 +1394,7 @@
     {
      "h": -1,
      "t": "Lãi suất neo cao: nợ xấu bán lẻ tăng, giá đất địa phương sau sáp nhập và thanh khoản bất động sản chậm lại.",
-     "ng": "SHS 18/08 · KBSV 18/09"
+     "ng": "SHS 19/08 · KBSV 18/09"
     }
    ]
   },
@@ -1408,7 +1404,7 @@
     {
      "h": -1,
      "t": "Cạnh tranh huy động gay gắt: NIM nhóm 12 ngân hàng lớn −28 điểm cơ bản so với cùng kỳ (MBB −8).",
-     "ng": "MAS 25/09"
+     "ng": "MAS 29/09"
     },
     {
      "h": 1,
@@ -1428,7 +1424,7 @@
     {
      "h": 1,
      "t": "Nhận chuyển giao bắt buộc OceanBank (10/2024, nay MBV): hạn mức tín dụng ~35% năm 2026 và room ngoại được phép tới 49% (hiện giới hạn 23,2%).",
-     "ng": "SHS 18/08 · Báo Pháp luật"
+     "ng": "SHS 19/08 · Báo Pháp luật"
     },
     {
      "h": 0,
@@ -1472,7 +1468,7 @@
    "y": [
     {
      "t": "Kinh doanh bất động sản 167.468 tỷ (+95,8% so với cùng kỳ), 24% phần dư nợ tăng thêm; gộp xây dựng 17,5% dư nợ. MB: dự án nhà ở đã đủ pháp lý, chưa phát sinh nợ xấu.",
-     "ng": "MAS 25/09 · SHS 18/08 · Shinhan 12/08"
+     "ng": "MAS 29/09 · SHS 19/08 · Shinhan 12/08"
     },
     {
      "t": "Lập khối khách hàng FDI riêng; tài trợ hạ tầng (tổ hợp phục vụ APEC), xem xét sân bay, đường sắt. 37,8 triệu khách hàng bán lẻ (+7,7% từ đầu năm), mục tiêu 40 triệu.",
@@ -1480,7 +1476,7 @@
     },
     {
      "t": "Cho vay dịch vụ tài chính 9.523 → 42.675 tỷ trong 12 tháng (+348%), chiếm 9,5% phần tăng thêm.",
-     "ng": "MAS 25/09"
+     "ng": "MAS 29/09"
     }
    ]
   },
@@ -1512,15 +1508,15 @@
    "y": [
     {
      "t": "Trong ~400 nghìn tỷ nguồn vốn chịu lãi tăng thêm 12 tháng: 39% liên ngân hàng, 16% giấy tờ có giá; chi phí tiền gửi 2,70% → 3,55% (12 tháng).",
-     "ng": "MAS 25/09"
+     "ng": "MAS 29/09"
     },
     {
      "t": "67% dư nợ định lại lãi suất trong 3 tháng, so với 60% tiền gửi và 10% giấy tờ có giá — NIM phản ứng nhanh khi lãi cho vay tăng.",
-     "ng": "SHS 18/08"
+     "ng": "SHS 19/08"
     },
     {
      "t": "Tỷ lệ vốn ngắn hạn cho vay trung dài hạn 27,5% (Q1: 29%) nhờ vay quốc tế; dự kiến phát hành thêm trái phiếu quốc tế và 10–15 nghìn tỷ trái phiếu cấp 2.",
-     "ng": "SHS 18/08 · KBSV 18/09"
+     "ng": "SHS 19/08 · KBSV 18/09"
     }
    ]
   },
@@ -1556,7 +1552,7 @@
     },
     {
      "t": "Q1/2026 lỗ ngoại hối 32 tỷ và chứng khoán đầu tư 331 tỷ, Q2 dương trở lại; thu hồi nợ đã xử lý 734–1.230 tỷ mỗi quý.",
-     "ng": "MAS 25/09"
+     "ng": "MAS 29/09"
     }
    ]
   },
@@ -1588,7 +1584,7 @@
    "y": [
     {
      "t": "Nợ xấu tăng ở bán lẻ và doanh nghiệp xây lắp nhỏ; nợ xấu mới hình thành ở Q2 ~4.142 tỷ. Mục tiêu nợ xấu riêng lẻ 1–1,2%, hợp nhất dưới 1,5%.",
-     "ng": "KBSV 18/09 · SHS 18/08"
+     "ng": "KBSV 18/09 · SHS 19/08"
     },
     {
      "t": "Vốn điều lệ lên 100.687 tỷ (cổ tức cổ phiếu 15% + chào bán 10:1 thu 8.055 tỷ, hoàn tất 25/09); còn phát hành riêng lẻ tối đa 200 triệu cp.",

@@ -11,7 +11,8 @@
   function K(){ return window.__knCt || null; }
   function f(v, d){ var k = K(); d = d == null ? 1 : d; return (k && k.fmt) ? k.fmt(v, d) : (v == null || !isFinite(v) ? '—' : (+v).toFixed(d)); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-  function pct(v, d){ return (v == null || !isFinite(v)) ? '—' : (v > 0 ? '+' : (v < 0 ? '−' : '')) + f(Math.abs(v), d == null ? 0 : d) + '%'; }
+  function pct(v, d){ if (v == null || !isFinite(v)) return '—'; var k = d == null ? 0 : d, r = Math.round(Math.abs(v) * Math.pow(10, k));
+    return (r === 0 ? '' : (v > 0 ? '+' : '−')) + f(Math.abs(v), k) + '%'; }
   function lop(v){ return v == null || !isFinite(v) ? 'mut' : (v > 0 ? 'up' : (v < 0 ? 'down' : 'mut')); }
   function ngVn(iso){ var s = String(iso || ''); return /^\d{4}-\d{2}-\d{2}/.test(s) ? s.slice(8, 10) + '/' + s.slice(5, 7) + '/' + s.slice(0, 4) : s; }
   function trungVi(a){ var x = a.filter(function(v){ return v != null && isFinite(v); }).sort(function(p, q){ return p - q; }); if (!x.length) return null; var m = x.length >> 1; return x.length % 2 ? x[m] : (x[m - 1] + x[m]) / 2; }
@@ -465,6 +466,14 @@
     return t + '</table>';
   }
   // P/E 4 quy cua chinh ma theo thang (mo ta) + vach muc thap 10% va trung vi; P/E vuot khung (LN gan 0) bo trong
+  // Vach tham chieu cho P/E-P/B lich su: L.ref [{v, ten}] (vd moc tu 2024 khi ma da dinh gia lai) hoac thap 10% + trung vi; gan nhau (< 7% bien do) thi gop nhan
+  function refLs(L, d, v){
+    var ds = (L.ref && L.ref.length ? L.ref : [{ v: L.p10, ten: 'thấp 10%' }, { v: L.tv, ten: 'trung vị' }]).filter(function(r){ return r && r.v != null; })
+      .map(function(r){ return { v: r.v, ten: r.ten + ': ' + f(r.v, d), trai: 1 }; });
+    var co = v.filter(function(x){ return x != null; }), bd = co.length ? Math.max.apply(null, co) - Math.min(0, Math.min.apply(null, co)) : 0;
+    for (var i = 1; i < ds.length; i++) if (bd > 0 && Math.abs(ds[i].v - ds[i - 1].v) / bd < 0.07) { ds[i].ten = ds[i - 1].ten + ' · ' + ds[i].ten; ds[i - 1].ten = ''; }
+    return ds;
+  }
   function peLichSu(p){
     var L = p.pe_ls; if (!L || !L.t || L.t.length < 24) return '';
     var tran = 30, v = L.v.map(function(x){ return x != null && x > 0 && x <= tran ? x : null; }), vuot = L.v.filter(function(x){ return x > tran; }).length;
@@ -473,7 +482,7 @@
     if (ten === 'P/B') { tran = 10; v = L.v.map(function(x){ return x != null && x > 0 && x <= tran ? x : null; }); vuot = 0; }
     return nhan1(ten + ' của ' + esc(p.ma) + ' từ ' + L.t[0].slice(0, 4), ten === 'P/B' ? 'P/B cuối mỗi tháng' : 'P/E 4 quý, cuối mỗi tháng') + '<div class="hsPeL">'
       + bdDuong([{ ten: ten, v: v, cls: 'ink' }], lbs, { truc: 1, cao: 120, tu0: 1, fm: function(x){ return f(x, d); }, fmTruc: function(x){ return f(x, ten === 'P/B' ? 1 : 0); }, nhanCuoi: 1,
-          ref: [{ v: L.p10, ten: 'thấp 10%: ' + f(L.p10, d), trai: 1 }, { v: L.tv, ten: 'trung vị: ' + f(L.tv, d), trai: 1 }] }) + '</div>'
+          ref: refLs(L, d, v) }) + '</div>'
       + '<div class="hsY">' + (L.dung ? esc(L.dung) + ' ' : (gd ? 'Kịch bản dùng P/E DMX <b>' + esc(gd.v[0]) + ' · ' + esc(gd.v[1]) + ' · ' + esc(gd.v[2]) + '</b> — từ mức thấp 10% đến dưới trung vị. ' : ''))
       + 'Thấp nhất ' + f(L.thap[1], d) + ' (' + L.thap[0].slice(5, 7) + '/' + L.thap[0].slice(0, 4) + ')' + (vuot ? '; ' + vuot + ' tháng P/E vượt ' + tran + ' (LN quá thấp) bỏ trống' : '')
       + '. ' + ten + ' so với lịch sử không tự dự báo giá (kiểm định của trang).</div>';
@@ -690,7 +699,7 @@
       + '#ptcs .hsFf{margin-top:4px}#ptcs .hsFfR,#ptcs .hsFfX{display:grid;grid-template-columns:50px minmax(0,1fr) 96px;gap:10px;align-items:center}#ptcs .hsFfR{margin-top:9px}#ptcs .hsFfT{font-size:12.5px;color:#475569}#ptcs .hsFfR.cs .hsFfT{font-weight:800;color:var(--text)}'
       + '#ptcs .hsFfB{position:relative;display:flex;height:24px}#ptcs .hsFfB i{display:flex;align-items:center;justify-content:center;height:100%;margin-right:2px;font-style:normal;font-size:11px;font-weight:700;color:#fff;overflow:hidden;white-space:nowrap;cursor:default}'
       + '#ptcs .hsFfB i:first-child{border-radius:4px 0 0 4px}#ptcs .hsFfB i:last-of-type{border-radius:0 4px 4px 0;margin-right:0}#ptcs .hsFfB i.c1{background:#2a78d6}#ptcs .hsFfB i.c2{background:#eb6834}#ptcs .hsFfB i.c3{background:#1A9E77}#ptcs .hsFfB i.c4{background:#8E98A6}'
-      + '#ptcs .hsFfB s{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--text);border-radius:1px}#ptcs .hsFfV{display:flex;align-items:baseline;justify-content:flex-end;gap:6px}#ptcs .hsFfV b{font-size:15px}'
+      + '#ptcs .hsFfB s{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--text);border-radius:1px;z-index:1}#ptcs .hsFfB i span{position:relative;z-index:2;text-shadow:0 0 3px rgba(0,0,0,.35)}#ptcs .hsFfV{display:flex;align-items:baseline;justify-content:flex-end;gap:6px}#ptcs .hsFfV b{font-size:15px}'
       + '#ptcs .hsFfV em{font-style:normal;font-size:11.5px;font-weight:700}#ptcs .hsFfV em.up{color:var(--green-dark)}#ptcs .hsFfV em.down{color:var(--red)}#ptcs .hsFfM{margin:2px 0 0 60px;font-size:11px;color:var(--muted);line-height:1.35}'
       + '#ptcs .hsFfX{margin-top:6px}#ptcs .hsFfX .tk{position:relative;height:15px;border-top:1px solid #D5DAE0}#ptcs .hsFfX .tk span{position:absolute;top:2px;transform:translateX(-50%);font-size:10px;color:var(--muted)}#ptcs .bdlg i.gia{width:2px;height:12px;background:var(--text);vertical-align:-2px;border-radius:0}'
       + '#ptcs table.hsDgT{width:100%;border-collapse:collapse;font-size:12px;margin-top:14px}#ptcs table.hsDgT th{font-size:11px;color:var(--muted);text-align:right;padding:4px 8px;border-bottom:1px solid var(--border);text-transform:none;letter-spacing:0;font-weight:700}'
