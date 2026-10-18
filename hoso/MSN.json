@@ -18,14 +18,14 @@
  "luan_diem": [
   {
    "so": "{con_pct}",
-   "nhan": "vốn hóa MSN là giá trị phần nắm ở TCB, MSR, MCH (giá sàn)",
+   "nhan": "giá trị phần nắm ở TCB, MSR, MCH so với vốn hóa MSN (giá sàn)",
    "tieu": "Thị trường không trả tiền cho Masan Consumer và WinCommerce",
    "dk": "up_tren:15",
    "t": "Theo giá 16/10, 19,7% TCB (~46.300 tỷ) và 87,5% MSR (~63.400 tỷ) đã xấp xỉ vốn hóa MSN (~109.600 tỷ, tính cả cp ưu đãi chuyển đổi). Như vậy 65,7% Masan Consumer (~120.000 tỷ), WinCommerce, MML, Phúc Long trừ nợ ròng công ty mẹ ~40.100 tỷ được định giá bằng 0 — chiết khấu sâu hơn mức nợ và chi phí tập đoàn biện minh.",
    "ng": "giá VNDirect 15–16/10 · BCTC 30/6 · VDS 17/04",
    "khac": {
     "so": "{con_pct}",
-    "nhan": "vốn hóa MSN là giá trị phần nắm ở TCB, MSR, MCH (giá sàn)",
+    "nhan": "giá trị phần nắm ở TCB, MSR, MCH so với vốn hóa MSN (giá sàn)",
     "tieu": "Chiết khấu so với các phần niêm yết đã hẹp lại",
     "t": "Phần MSN nắm ở TCB (19,7%), MSR (87,5%) và Masan Consumer (65,7%) theo giá sàn bằng {con_pct} vốn hóa. Trừ nợ ròng công ty mẹ ~40.100 tỷ (30/6) và chi phí tập đoàn, mức chiết khấu đã về gần mức mô hình tính (~26% tổng các phần)."
    }
