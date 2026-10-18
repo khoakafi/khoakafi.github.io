@@ -1,0 +1,1545 @@
+{
+ "v": 2,
+ "ma": "TCB",
+ "ten": "Ngân hàng TMCP Kỹ Thương Việt Nam (Techcombank)",
+ "nganh": "Ngân hàng",
+ "ky": "BCTC Q2/2026 · giá 16/10/2026",
+ "cap_nhat": "2026-10-17",
+ "lan_sau": "sau BCTC Q3/2026 hoặc khi chia cổ phiếu thưởng 50%",
+ "cp_trieu": 7086.2,
+ "cp_ng": "vốn điều lệ 70.862 tỷ ÷ 10.000 đ (chưa gồm 3.543 triệu cp thưởng 50% và 30 triệu cp ESOP — NHNN chấp thuận 13/10/2026, chưa có ngày GDKHQ)",
+ "co_tuc": [
+  [
+   "2026-05-19",
+   700,
+   "cổ tức tiền mặt 7% năm 2025: đăng ký cuối cùng 20/05/2026, trả 10/06/2026 (~4.960 tỷ)"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Phí dịch vụ đã thành động cơ thứ hai, nhưng 2027 phải trả lại phần dự phòng thấp"
+ },
+ "dong_mo": "Ở giá 33,2 (16/10), TCB giao dịch 1,31 lần giá sổ sách — sát trung vị từ khi niêm yết (1,32) — với ROE 4 quý 16,1%. LNTT 6T +22,5%, phí dịch vụ góp ngang lãi thuần. Khi chi phí tín dụng về 0,65%, LN cổ đông 2027E chỉ +11%. P/B 1,35 × vốn chủ giữa 2027 cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "+2.876 tỷ",
+   "nhan": "phí dịch vụ tăng thêm 6T/2026",
+   "tieu": "Phí dịch vụ góp ngang lãi thuần",
+   "t": "LNTT 6T tăng 3.405 tỷ: phí dịch vụ +2.876, lãi thuần +2.843, dự phòng giảm thêm +517; ngược lại ngoài lãi khác −1.457 (thu hồi nợ, chứng khoán đầu tư) và chi phí −1.374. LC, thanh toán gấp 2,5 lần cùng kỳ (1.694 tỷ ở Q2), bảo hiểm +137% nhờ Techcom Life; phí lên 24% thu nhập (2025: 16%). Mô hình giữ phí 2027 +12%, chậm hẳn lại.",
+   "ng": "BCTC · SHS 28/09 · MBS 22/09 · mô hình"
+  },
+  {
+   "so": "4,8%",
+   "nhan": "chi phí vốn Q2/2026 (cùng kỳ 3,5%)",
+   "tieu": "CASA không còn che được chi phí vốn",
+   "t": "CASA từ 42,5% (Q3/2025) còn 38,3% khi tiền gửi bán lẻ chuyển sang kỳ hạn; lãi tiền gửi bình quân 3,1% → 4,4% chỉ trong hai quý. NIM (BCTC) vẫn giữ 3,68% ở Q2 (cùng kỳ 3,80%) nhờ lợi suất tài sản 7,0% → 8,1%: tín chấp +40%, SME +28%, hạ tầng, trái phiếu doanh nghiệp — lợi suất cao đi kèm rủi ro cao. Mô hình cơ sở giữ NIM 2027 3,60%, không giả định chi phí vốn hạ.",
+   "ng": "BCTC · SHS 28/09 · mô hình"
+  },
+  {
+   "so": "0,39%",
+   "nhan": "chi phí tín dụng 6T/2026 (năm hóa)",
+   "tieu": "Dự phòng thấp đang đỡ lợi nhuận 2026",
+   "t": "Bình quân 2019–2025 là 0,72%/năm (0,47–1,03%). Dự phòng 6T giảm 25% trong khi nợ nhóm 2 +46% từ đầu năm, NPL bán lẻ lên 2,26% (vay mua nhà 1,97%); bao phủ 125% đủ đệm thêm vài quý. Tín chấp, SME tăng nhanh thường đẩy chi phí tín dụng lên sau 12–18 tháng. Mô hình cơ sở: 0,55% nửa cuối 2026, 0,65% năm 2027 — LN cổ đông 2027E +11% dù thu nhập hoạt động +16%.",
+   "ng": "BCTC · SHS 28/09 · MBS 22/09 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 1,35 × vốn chủ giữa 2027: {up_so}",
+   "dk": "up_tren:10",
+   "t": "P/B 1,35 ≈ trung vị từ 2018 (1,32), khớp ROE 2027E 15,2% với r 12,5%, g 5%. TCX chiếm {con_pct} vốn hóa TCB dù chỉ góp ~18% LN cổ đông 4 quý (P/B TCX 2,0 ngày 16/10); mô hình tính phần này ở 1,35 lần như ngân hàng — theo giá TCX thì +3,4 nghìn đ/cp. Xấu 24,9 (P/B 0,9, ROE 2027 11,4%), tốt 47,3 (P/B 1,6).",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect · giá TCX sống",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "Giá đã gần giá trị cơ sở",
+    "t": "P/B 1,35 × vốn chủ 30/6/2027E cho {gt} ({up}); 1,35 ≈ trung vị từ 2018, khớp ROE 2027E 15,2%. TCX chiếm {con_pct} vốn hóa TCB dù chỉ góp ~18% LN cổ đông 4 quý (P/B TCX 2,0 ngày 16/10). Phần còn lại phụ thuộc chi phí vốn và dự phòng: mỗi 10 điểm cơ bản NIM 2027 ≈ ±2,1, mỗi 0,1 điểm % chi phí tín dụng ≈ ±1,4 nghìn đ/cp. Xấu 24,9, tốt 47,3."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   25290,
+   28296,
+   31437
+  ],
+  "ln_truoc": 21523,
+  "eps": [
+   3569,
+   3993,
+   4436
+  ],
+  "bv": [
+   23997,
+   27298,
+   31034
+  ],
+  "co_tuc_nam": 700,
+  "them": [
+   {
+    "ten": "ROE (%)",
+    "v": [
+     16.0,
+     15.6,
+     15.2
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2024–2025: BCTC. EPS, BVPS theo 7.086,2 triệu cp, chưa gồm thưởng 50% (sau thưởng chia 1,5)."
+ },
+ "ln_mang": {
+  "tieu": "Thu nhập hoạt động theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "thu nhập hoạt động",
+  "ss": [
+   {
+    "ten": "Lãi thuần",
+    "mau": "c1",
+    "v": [
+     38155,
+     42842,
+     50189
+    ]
+   },
+   {
+    "ten": "Phí dịch vụ",
+    "mau": "c3",
+    "v": [
+     8772,
+     13341,
+     14942
+    ]
+   },
+   {
+    "ten": "Ngoài lãi khác",
+    "mau": "c4",
+    "v": [
+     6464,
+     3612,
+     3974
+    ]
+   }
+  ],
+  "nhan": "Phí dịch vụ",
+  "ng": "Ngoài lãi khác (thu hồi nợ, chứng khoán đầu tư, ngoại hối) giảm từ 6.464 tỷ còn ~3.600 tỷ: phí dịch vụ đang thay chỗ. 2025A: BCTC; 2026E–2027E: mô hình."
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: tín dụng → NIM → lợi nhuận",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Tín dụng và thu nhập"
+   },
+   {
+    "ten": "Dư nợ cho vay (nghìn tỷ)",
+    "v": [
+     767.6,
+     898.1,
+     1032.8
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "NIM (%)",
+    "v": [
+     3.77,
+     3.56,
+     3.6
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Thu nhập lãi thuần (tỷ)",
+    "v": [
+     38155,
+     42842,
+     50189
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Phí dịch vụ thuần (tỷ)",
+    "v": [
+     8772,
+     13341,
+     14942
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Ngoài lãi khác (tỷ)",
+    "v": [
+     6464,
+     3612,
+     3974
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "CIR (%)",
+    "v": [
+     30.8,
+     30.9,
+     31.0
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Dự phòng"
+   },
+   {
+    "ten": "Chi phí dự phòng (tỷ)",
+    "v": [
+     4421,
+     3987,
+     6276
+    ]
+   },
+   {
+    "ten": "Chi phí tín dụng (% dư nợ bq)",
+    "v": [
+     0.63,
+     0.48,
+     0.65
+    ],
+    "d": 2
+   },
+   {
+    "nhom": "Lợi nhuận và vốn"
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     32538,
+     37342,
+     41407
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     25290,
+     28296,
+     31437
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "trong đó 79,81% TCX (tỷ)",
+    "v": [
+     4536,
+     4862,
+     5251
+    ]
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     3569,
+     3993,
+     4436
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     23997,
+     27298,
+     31034
+    ]
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     16.0,
+     15.6,
+     15.2
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "2025A: BCTC; phí dịch vụ theo BCTC (SHS 28/09). 2026E = 6T thực tế + 6T ước. NIM = lãi thuần ÷ 95% tổng tài sản bình quân (khớp NIM KBSV, MBS công bố). Thuế 20,5%, cổ đông thiểu số 4,5% LNST (như 6T/2026). Dòng TCX tính 79,81% cả 3 năm (trước IPO 10/2025 TCB sở hữu ~89%)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   28296
+  ],
+  "cuoi": [
+   "2027E",
+   31437
+  ],
+  "buoc": [
+   [
+    "Lãi thuần",
+    5578
+   ],
+   [
+    "Phí dịch vụ",
+    1215
+   ],
+   [
+    "Ngoài lãi khác",
+    274
+   ],
+   [
+    "Chi phí hoạt động",
+    -2244
+   ],
+   [
+    "Dự phòng",
+    -1738
+   ],
+   [
+    "Thuế, khác",
+    56
+   ]
+  ],
+  "y": "Lãi thuần (+17%) gánh gần hết phần tăng; dự phòng về 0,65% lấy lại ~1.700 tỷ, nhiều hơn phần phí dịch vụ đóng góp thêm (+1.215).",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Tăng trưởng cho vay 2026 · 2027",
+   "v": [
+    "14% · 11%",
+    "17% · 15%",
+    "20% · 18%"
+   ],
+   "ly_do": "6T +10,4% (tín dụng gồm TPDN +15,2%), ~20 nghìn tỷ hạ tầng ngoài room; ĐHĐCĐ +12%. 2027: SHS 16%, KAFI 18,6%, KBSV 19%"
+  },
+  {
+   "ten": "NIM nửa cuối 2026",
+   "v": [
+    "3,40%",
+    "3,60%",
+    "3,75%"
+   ],
+   "ly_do": "Q1 3,37%, Q2 3,68% (BCTC); chi phí vốn 4,2% → 4,8% và lãi huy động còn tăng ở Q3 (SHS); MBS 3,6–3,7%"
+  },
+  {
+   "ten": "NIM 2027",
+   "v": [
+    "3,30%",
+    "3,60%",
+    "3,85%"
+   ],
+   "ly_do": "2025: 3,77%; CTCK 3,6–3,7%. Xấu: chi phí vốn lên tiếp, CASA chưa hồi; tốt: lãi huy động hạ nhiệt, thu hồi lãi Flexible Pricing (KBSV)"
+  },
+  {
+   "ten": "Phí dịch vụ nửa cuối 2026 · 2027",
+   "v": [
+    "+15% · 0%",
+    "+35% · +12%",
+    "+50% · +20%"
+   ],
+   "ly_do": "6T +73% (BCTC); nửa cuối 2025: 4.837 tỷ. Tốt ≈ giữ nhịp Q2 (3.662 tỷ/quý); phí IB dao động. 2027: SHS +18%, MBS +8%, KAFI +12%"
+  },
+  {
+   "ten": "Ngoài lãi khác nửa cuối 2026 · 2027",
+   "v": [
+    "−60% · −10%",
+    "−40% · +10%",
+    "−15% · +25%"
+   ],
+   "ly_do": "6T −49% (thu hồi nợ, chứng khoán đầu tư, vàng); nửa cuối 2025: 3.487 tỷ; 2025: 6.464 tỷ"
+  },
+  {
+   "ten": "CIR nửa cuối 2026 · 2027",
+   "v": [
+    "34% · 33%",
+    "32% · 31%",
+    "30,5% · 29,5%"
+   ],
+   "ly_do": "Nửa cuối 2025: 32,1%; 6T/2026 29,7%; 2025 30,8%. CTCK 2027: SHS 30,5%, MBS 30,5%, KAFI 30,1%"
+  },
+  {
+   "ten": "Dự phòng nửa cuối 2026",
+   "v": [
+    "3.600 tỷ",
+    "2.400 tỷ",
+    "1.700 tỷ"
+   ],
+   "ly_do": "6T 1.587 tỷ (0,39%/năm); nửa cuối 2025: 2.317 tỷ. Cơ sở ≈ 0,55%/năm, cả năm ≈ MBS (4.080 tỷ)"
+  },
+  {
+   "ten": "Chi phí tín dụng 2027",
+   "v": [
+    "1,05%",
+    "0,65%",
+    "0,45%"
+   ],
+   "ly_do": "2019–2025 bình quân 0,72% (0,47–1,03%); SHS 0,70% (xấu 1,15%); mục tiêu của TCB < 1%"
+  },
+  {
+   "ten": "P/B (× vốn chủ 30/6/2027E)",
+   "v": [
+    "0,9",
+    "1,35",
+    "1,6"
+   ],
+   "ly_do": "Từ 2018: thấp 10% 0,90, trung vị 1,32; hiện 1,30. Kiểm (ROE − 5%) ÷ (12,5% − 5%): 0,85 · 1,36 · 1,75. MBS 1,6"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 25308,
+   "ln27": 22647,
+   "gia": 24.9,
+   "mo_ta": "Cho vay +14% / +11%, NIM 2027 3,30%, phí 2027 đi ngang, chi phí tín dụng 1,05%, CIR 33%; ROE 2027 11,4%; P/B 0,9"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 28296,
+   "ln27": 31437,
+   "gia": 38.8,
+   "mo_ta": "Cho vay +17% / +15%, NIM 3,60%, phí 2027 +12%, chi phí tín dụng 0,65%, CIR 31%; ROE 2027 15,2%; P/B 1,35"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 30686,
+   "ln27": 38482,
+   "gia": 47.3,
+   "mo_ta": "Cho vay +20% / +18%, NIM 3,85%, phí 2027 +20%, chi phí tín dụng 0,45%, CIR 29,5%; ROE 2027 18,1%; P/B 1,6"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ 30/6/2027E",
+  "ck": 0,
+  "cp": 7086.2,
+  "phan": [
+   {
+    "ten": "Vốn chủ 30/6/2026",
+    "mau": "c1",
+    "x": [
+     179162,
+     179162,
+     179162
+    ],
+    "boi": [
+     0.9,
+     1.35,
+     1.6
+    ],
+    "x_ten": "đã công bố",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     161246,
+     241869,
+     286659
+    ]
+   },
+   {
+    "ten": "Lợi nhuận giữ lại 12 tháng",
+    "mau": "c3",
+    "x": [
+     17197,
+     24404,
+     30176
+    ],
+    "boi": [
+     0.9,
+     1.35,
+     1.6
+    ],
+    "x_ten": "7/2026–6/2027E, trừ cổ tức",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     15477,
+     32945,
+     48282
+    ]
+   }
+  ],
+  "von": [
+   176723,
+   274814,
+   334941
+  ],
+  "gia": [
+   24.9,
+   38.8,
+   47.3
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   2.84,
+   0.86,
+   1.94,
+   2.15,
+   1.98,
+   1.84,
+   1.83,
+   1.87,
+   1.79,
+   1.73,
+   1.63,
+   1.47,
+   1.32,
+   1.34,
+   1.34,
+   1.45,
+   1.47,
+   1.36,
+   1.4,
+   1.29,
+   1.26,
+   0.85,
+   0.97,
+   1.13,
+   1.07,
+   0.99,
+   1.11,
+   1.18,
+   1.11,
+   1.2,
+   1.57,
+   1.6,
+   1.86,
+   1.91,
+   1.94,
+   2.4,
+   2.35,
+   2.28,
+   2.04,
+   2.09,
+   2.17,
+   2.08,
+   2.0,
+   2.12,
+   1.92,
+   1.89,
+   1.68,
+   1.33,
+   1.28,
+   1.36,
+   1.32,
+   1.1,
+   0.83,
+   0.84,
+   0.84,
+   0.95,
+   0.83,
+   0.89,
+   0.92,
+   0.9,
+   0.97,
+   1.03,
+   1.0,
+   0.98,
+   0.8,
+   0.82,
+   0.89,
+   0.97,
+   1.14,
+   1.29,
+   1.26,
+   1.21,
+   1.24,
+   1.24,
+   1.2,
+   1.24,
+   1.23,
+   1.16,
+   1.21,
+   1.22,
+   1.27,
+   1.34,
+   1.28,
+   1.42,
+   1.6,
+   1.59,
+   1.78,
+   1.7,
+   1.57,
+   1.45,
+   1.5,
+   1.55,
+   1.51,
+   1.28,
+   1.41,
+   1.31,
+   1.34,
+   1.16,
+   1.32,
+   1.29,
+   1.3
+  ],
+  "p10": 0.9,
+  "p25": 1.14,
+  "tv": 1.32,
+  "thap": [
+   "2023-10",
+   0.8
+  ],
+  "nay": [
+   "2026-10",
+   1.3
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,9 · 1,35 · 1,6: xấu = mức thấp 10% từ 2018, cơ sở ≈ trung vị (1,32) và trung vị 12 tháng qua (1,33), tốt = P/B mục tiêu MBS, ứng với ROE ~17%."
+ },
+ "nhay": [
+  [
+   "P/B ±0,1 lần",
+   null,
+   2.9
+  ],
+  [
+   "Phí dịch vụ 2027 ±10%",
+   1134,
+   2.2
+  ],
+  [
+   "NIM 2027 ±10 điểm cơ bản",
+   1058,
+   2.1
+  ],
+  [
+   "Chi phí tín dụng 2027 ±0,1 điểm %",
+   733,
+   1.4
+  ],
+  [
+   "CIR 2027 ±1 điểm %",
+   525,
+   1.0
+  ]
+ ],
+ "sotp": {
+  "con": [
+   {
+    "ma": "TCX",
+    "ten": "Chứng khoán Kỹ Thương (TCBS)",
+    "cp_trieu": 3329.3,
+    "so_huu": 0.7981,
+    "ln26": 6092,
+    "ln27": 6580,
+    "gtgd": 64,
+    "mau": "c2"
+   }
+  ],
+  "conlai": {
+   "ten": "Ngân hàng và các công ty con khác",
+   "ln27": 26186,
+   "mau": "c1",
+   "kv": [
+    [
+     "ACB",
+     5.7
+    ],
+    [
+     "BID",
+     6.6
+    ],
+    [
+     "CTG",
+     5.0
+    ],
+    [
+     "EIB",
+     20.2
+    ],
+    [
+     "HDB",
+     4.4
+    ],
+    [
+     "LPB",
+     10.3
+    ],
+    [
+     "MBB",
+     4.8
+    ],
+    [
+     "OCB",
+     5.8
+    ],
+    [
+     "STB",
+     14.4
+    ],
+    [
+     "TPB",
+     4.0
+    ],
+    [
+     "VCB",
+     9.4
+    ],
+    [
+     "VIB",
+     4.3
+    ],
+    [
+     "VPB",
+     5.4
+    ]
+   ],
+   "kv_tv": 5.7,
+   "kv_ten": "Ngân hàng niêm yết"
+  },
+  "kv_chi_so": "P/E 2027F",
+  "kv_max": 15,
+  "kv_ng": "P/E 2027F ngân hàng: MBS 22/09/2026 (FiinPro, giá 22/09); TCX: vốn điều lệ 33.293 tỷ sau cổ tức cổ phiếu 20% (GDKHQ 17/9/2026)",
+  "ng": "TCB sở hữu 79,81% TCX (báo Pháp luật 08/2026; Shinhan 12/08: 79,82%); LN TCX 2026E = 6T thực tế + nửa cuối 2025, 2027E +8% (mô hình)"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    5783,
+    7245,
+    8402
+   ],
+   "ck": 6419
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    5504,
+    7030,
+    8262
+   ],
+   "ck": 6676
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    25308,
+    28296,
+    30686
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "20–31/10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Mô hình cơ sở LN cổ đông 7.245 tỷ (+13%), LNTT ~9.540 tỷ. GTGD thị trường Q3 thấp hơn Q2 23% — lãi TCX khó giữ nhịp.",
+   "tac": [
+    "NIM ≥ 3,6%",
+    "giữ mặt bằng Q2; dưới 3,4% nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "NIM, phí dịch vụ, dự phòng"
+  },
+  {
+   "khi": "Q4/2026–Q1/2027",
+   "loai": "hai",
+   "tieu": "Thưởng cổ phiếu 50% và ESOP",
+   "ct": "NHNN chấp thuận 13/10/2026: vốn điều lệ 70.862 → 106.593 tỷ (3.543 triệu cp thưởng, 30 triệu cp ESOP giá 10.000 đ). Giá, EPS, BVPS cùng chia 1,5 — không đổi giá trị.",
+   "tac": "",
+   "theo_doi": "ngày GDKHQ"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Cho vay dự án hạ tầng ngoài room",
+   "ct": "18 dự án trọng điểm không tính vào hạn mức (CV 5386): ~20 nghìn tỷ cuối Q2, MBS ước 40–50 nghìn tỷ cuối 2026; biên thấp hơn cho vay BĐS thương mại (KBSV).",
+   "tac": [
+    "+0,6 nghìn đ/cp",
+    "mỗi 3 điểm % tăng trưởng cho vay 2027"
+   ],
+   "theo_doi": "dư nợ hạ tầng"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "len",
+   "tieu": "Bảo hiểm và thanh toán",
+   "ct": "Techcom Life: APE Q2 552 tỷ (+119%), thị phần banca 21%; LC, thanh toán 1.694 tỷ/quý nhờ CASA doanh nghiệp +23% từ đầu năm. Cơ sở chỉ cho phí 2027 +12%.",
+   "tac": [
+    "±2,2 nghìn đ/cp",
+    "mỗi 10% phí dịch vụ 2027"
+   ],
+   "theo_doi": "phí theo mảng, APE"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Vay hợp vốn quốc tế ~1 tỷ USD",
+   "ct": "Đang đàm phán sau khoản vay dài hạn từ EIB Global: nguồn trung dài hạn cho tín dụng hạ tầng, đỡ áp lực cạnh tranh tiền gửi và LDR (80,1%, trần 85%).",
+   "tac": "",
+   "theo_doi": "chi phí vốn"
+  },
+  {
+   "khi": "2027–2030",
+   "loai": "hai",
+   "tieu": "Sân bay Gia Bình",
+   "ct": "Masterise 80%, ~196 nghìn tỷ, phục vụ APEC 10/2027; SHS ước TCB có thể tài trợ phần lớn ~167 nghìn tỷ vốn vay — dư địa tín dụng lớn nhưng dồn vào một nhóm khách hàng.",
+   "tac": "",
+   "theo_doi": "quy mô tài trợ công bố"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Chi phí vốn còn tăng",
+   "ct": "Chi phí vốn 3,5% → 4,8% trong một năm, lãi huy động 12 tháng ~7,9% (tháng 9); CASA 38,3% (đỉnh 42,5%). Tín dụng hạ tầng biên thấp làm loãng NIM.",
+   "tac": [
+    "−2,1 nghìn đ/cp",
+    "mỗi 10 điểm cơ bản NIM 2027"
+   ],
+   "theo_doi": "chi phí vốn, CASA"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Chi phí tín dụng bình thường hóa",
+   "ct": "6T/2026 chỉ 0,39%/năm so với bình quân 0,72% (2019–2025); NPL bán lẻ 2,26%, nợ nhóm 2 +46% từ đầu năm, tín chấp +40%. Kịch bản xấu 1,05%.",
+   "tac": [
+    "−1,4 nghìn đ/cp",
+    "mỗi 0,1 điểm % chi phí tín dụng 2027"
+   ],
+   "theo_doi": "nợ nhóm 2, NPL bán lẻ"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Tập trung bất động sản và trái phiếu",
+   "ct": "BĐS 32% tín dụng (Q1: 29%), tín dụng doanh nghiệp BĐS +21% từ đầu năm; trái phiếu doanh nghiệp 102 nghìn tỷ (+80% trong Q2); quan hệ lớn với Masterise, Vingroup.",
+   "tac": "",
+   "theo_doi": "tỷ trọng BĐS, TPDN phân phối qua TCX"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "TCX và bội số ngân hàng",
+   "ct": "TCX đang được trả P/B ~2,0 (10 CTCK lớn: trung vị 1,3); TCX về 1,3 lần thì giá TCB mất ~3,6 nghìn đ/cp dù giá trị mô hình không đổi. P/B ngân hàng đang giảm.",
+   "tac": [
+    "−2,9 nghìn đ/cp",
+    "mỗi 0,1 lần P/B"
+   ],
+   "theo_doi": "giá TCX, P/B ngành"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "NIM giữ nhờ lợi suất, chi phí vốn tăng nhanh",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 2,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "NIM (BCTC)",
+     "v": [
+      3.8,
+      3.55,
+      3.8,
+      3.86,
+      3.91,
+      3.37,
+      3.68
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chi phí vốn",
+     "v": [
+      3.4,
+      3.4,
+      3.5,
+      3.4,
+      3.6,
+      4.2,
+      4.8
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Lợi suất tài sản",
+     "v": [
+      7.0,
+      6.9,
+      7.0,
+      7.0,
+      7.1,
+      7.2,
+      8.1
+     ],
+     "mau": "c4",
+     "net": 1
+    }
+   ],
+   "y": "Chi phí vốn 3,5% → 4,8% trong 4 quý; lợi suất tài sản nhảy 7,2% → 8,1% ở Q2 (định giá lại, tín chấp, TPDN) nên NIM hồi từ 3,37% lên 3,68%.",
+   "ng": "NIM: BCTC (lãi thuần × 4 ÷ 95% tổng tài sản bq); lợi suất, chi phí vốn: TCB qua SHS 28/09"
+  },
+  {
+   "ten": "Phí dịch vụ: thanh toán, bảo hiểm lên ngôi",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LC, thanh toán",
+     "v": [
+      592,
+      616,
+      686,
+      748,
+      1001,
+      1593,
+      1694
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Bảo hiểm",
+     "v": [
+      12,
+      211,
+      246,
+      377,
+      409,
+      429,
+      583
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Ngân hàng đầu tư",
+     "v": [
+      915,
+      921,
+      1412,
+      1049,
+      797,
+      624,
+      1142
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Thẻ, ngoại hối, khác",
+     "v": [
+      779,
+      739,
+      701,
+      738,
+      816,
+      772,
+      774
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "NFI Q2/2026 4.194 tỷ (+38%): LC, thanh toán gấp 2,5 lần, bảo hiểm gấp 2,4 lần cùng kỳ; ngân hàng đầu tư −19% — nguồn phí bớt phụ thuộc trái phiếu.",
+   "ng": "TCB (thu nhập phí thuần gồm ngoại hối) qua SHS 28/09"
+  },
+  {
+   "ten": "Tín dụng hợp nhất: doanh nghiệp và TPDN dẫn dắt",
+   "kieu": "cot_chong",
+   "dv": "nghìn tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Bán lẻ",
+     "v": [
+      316,
+      342,
+      372,
+      395,
+      407
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Cho vay doanh nghiệp",
+     "v": [
+      394,
+      425,
+      396,
+      402,
+      440
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Trái phiếu doanh nghiệp",
+     "v": [
+      49,
+      38,
+      56,
+      56,
+      102
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Tín dụng +15,2% từ đầu năm lên 949 nghìn tỷ; riêng Q2 trái phiếu doanh nghiệp gần gấp đôi (56 → 102), bán lẻ chỉ +3%.",
+   "ng": "TCB qua SHS 28/09; TPDN = tín dụng doanh nghiệp (cho vay + TPDN) − cho vay doanh nghiệp"
+  },
+  {
+   "ten": "Nợ xấu bán lẻ nhích lên, chi phí tín dụng giảm",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 2,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "NPL bán lẻ",
+     "v": [
+      2.3,
+      2.59,
+      2.59,
+      2.37,
+      2.14,
+      2.15,
+      2.26
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "NPL toàn ngân hàng",
+     "v": [
+      1.17,
+      1.23,
+      1.32,
+      1.23,
+      1.13,
+      1.16,
+      1.15
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chi phí tín dụng 12 tháng",
+     "v": [
+      0.8,
+      0.7,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.5
+     ],
+     "mau": "c4",
+     "net": 1
+    }
+   ],
+   "y": "NPL bán lẻ 2,14% → 2,26% trong 2 quý (vay mua nhà 1,97%) trong khi chi phí tín dụng 12 tháng xuống 0,5% — khoảng cách cần thu hẹp.",
+   "ng": "TCB (riêng lẻ) qua SHS 28/09"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "LNTT (kịch bản 1)",
+    "kh": 37500,
+    "th": 18540,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 25/04 · BCTC Q2"
+   },
+   {
+    "ten": "Dư nợ cho vay thuần tăng thêm (+12%)",
+    "kh": 91881,
+    "th": 78695,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ (849 nghìn tỷ, theo hạn mức NHNN) · BCTC Q2"
+   },
+   {
+    "ten": "Thưởng 50% + ESOP",
+    "kh": 3573.1,
+    "th": 0,
+    "ky": "NHNN duyệt 13/10",
+    "dv": "triệu cp",
+    "ng": "HĐQT 15/09 · NHNN 13/10"
+   }
+  ],
+  "y": "LNTT 6T đạt 49% kịch bản 1 (37.500 tỷ, +15%); kịch bản 2 (35.000 tỷ) nếu xung đột Iran kéo dài. Mô hình cơ sở 37.300 tỷ ≈ kịch bản 1. Dư nợ đã gần chạm kế hoạch nhờ phần hạ tầng ngoài room.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "SHS",
+   "ngay": "2026-09-28",
+   "kn": "TĂNG TỶ TRỌNG",
+   "tp": 41300,
+   "ln26": 28665,
+   "ln27": 30633,
+   "pp": "RI 50% + P/B theo ROE 30% + P/B 5 năm 20%",
+   "y": "Thận trọng nhất về 2027: LNTT chỉ +6,9% vì chi phí tín dụng lên 0,70%; P/B hợp lý 1,35 lần theo ROE bền vững 15,3%. Chưa tính tài trợ sân bay Gia Bình.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/20260928_tcb_bao_cao_cap_nhat_kqkd_q2_2026.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-09-22",
+   "kn": "KHẢ QUAN",
+   "tp": 44300,
+   "ln26": 29425,
+   "ln27": 34613,
+   "pp": "RI 50% + P/B 1,6 lần 50%",
+   "y": "Lạc quan nhất về tín dụng: 2026 +22,9%, gồm 40–50 nghìn tỷ cho các đại dự án hạ tầng; P/B mục tiêu 1,6 lần trên vốn chủ bình quân 2026–2027.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/20260922_tcb_bcpt_bo_sung_dong_luc_tang_truong_tu_cac_du_an_ha_tang.pdf"
+  },
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-09-10",
+   "kn": "MUA",
+   "tp": 38750,
+   "ln26": 29784,
+   "ln27": 35846,
+   "pp": "RI 50% + P/B 1,5 lần 50%",
+   "y": "NIM 2026 giảm 11 điểm cơ bản vì cho vay hạ tầng biên thấp và lãi huy động cao, hồi từ 2027 khi thu hồi lãi Flexible Pricing. Dải kịch bản 32,8 – 40,5.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/ngan_hang_tmcp_ky_thuong_viet_nam_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ctck": "KAFI",
+   "ngay": "2026-09-07",
+   "kn": "KHẢ QUAN",
+   "tp": 42700,
+   "ln26": null,
+   "ln27": null,
+   "pp": "RI 80% + P/B 1,27 lần 20%",
+   "y": "Nhấn mạnh mô hình khởi tạo – phân phối TPDN qua TCX và Techcom Life; LNTT 2026–2027 +14,4% / +17,3% (37.221 / 43.665 tỷ), dự phòng tăng ở nửa cuối năm.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/20260904_nhtmcp_ky_thuong_viet_nam_hsx_tcb_vung_nen_tang_da_dang_dong_luc_loi_nhuan.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-08-12",
+   "kn": "MUA",
+   "tp": 42000,
+   "ln26": 29638,
+   "ln27": 34916,
+   "pp": "RI 60% + P/B 40% (ngân hàng 1,3 lần, TCBS 2 lần)",
+   "y": "Định giá riêng TCBS ở P/B 2 lần; chi phí tín dụng 2026 giả định 0,7% — cao nhất nhóm. TCX LNTT 2026F 7.535 tỷ (+18%).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/tcb_mua_gia_mt_vnd_42_000_35_day_manh_cho_vay.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. LN 2026F–2027F là LNST cổ đông công ty mẹ; KAFI không công bố số này. Giá mục tiêu tính trên 7.086 triệu cp, chưa quy đổi đợt thưởng 50%.",
+ "nguon": [
+  {
+   "ten": "SHS — Báo cáo cập nhật KQKD Q2/2026: Chờ gió thuận để ra khơi",
+   "ngay": "28/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/20260928_tcb_bao_cao_cap_nhat_kqkd_q2_2026.pdf"
+  },
+  {
+   "ten": "MBS — Bổ sung động lực tăng trưởng từ các dự án hạ tầng",
+   "ngay": "22/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/20260922_tcb_bcpt_bo_sung_dong_luc_tang_truong_tu_cac_du_an_ha_tang.pdf"
+  },
+  {
+   "ten": "KBSV — Báo cáo cập nhật 2Q2026: Hưởng lợi từ chính sách",
+   "ngay": "10/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/ngan_hang_tmcp_ky_thuong_viet_nam_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ten": "KAFI — Vững nền tảng, đa dạng động lực lợi nhuận",
+   "ngay": "07/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/20260904_nhtmcp_ky_thuong_viet_nam_hsx_tcb_vung_nen_tang_da_dang_dong_luc_loi_nhuan.pdf"
+  },
+  {
+   "ten": "Shinhan — Đẩy mạnh cho vay",
+   "ngay": "12/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TCB/tcb_mua_gia_mt_vnd_42_000_35_day_manh_cho_vay.pdf"
+  },
+  {
+   "ten": "Thời báo Tài chính — ĐHĐCĐ: hai kịch bản kinh doanh, tín dụng +12%",
+   "ngay": "04/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/techcombank-vach-hai-kich-ban-kinh-doanh-du-kien-tang-truong-tin-dung-12-195136.html"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ Techcombank 2026",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-techcombank-tcb-2026-von-dieu-le-lap-dinh-he-thong-quy-1-lai-8-900-ty-cung-muc-chia-co-tuc-khung-len-toi-67.html"
+  },
+  {
+   "ten": "Báo Mới — chốt ngày trả cổ tức tiền mặt 7% (đăng ký cuối cùng 20/05/2026)",
+   "ngay": "05/2026",
+   "link": "https://baomoi.com/techcombank-chot-ngay-chi-hon-4960-ty-dong-tra-co-tuc-tien-mat-c55103158.epi"
+  },
+  {
+   "ten": "VietnamPlus — NHNN chấp thuận tăng vốn điều lệ lên 106.593 tỷ",
+   "ngay": "10/2026",
+   "link": "https://www.vietnamplus.vn/techcombank-duoc-chap-thuan-tang-von-dieu-le-len-106000-ty-dong-post1141769.vnp"
+  },
+  {
+   "ten": "Báo Pháp luật — TCX chia cổ tức cổ phiếu 5:1, vốn điều lệ lên 33.293 tỷ",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/chung-khoan-ky-thuong-tcx-chia-co-tuc-ty-le-5-1-von-dieu-le-sap-vuot-moc-33-000-ty-dong.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Lãi huy động 12 tháng lên ~7,9% (tháng 9/2026); chi phí vốn trung vị ngành 5,7% ở Q2 — TCB 4,8%, vẫn thấp hơn nhưng khoảng cách hẹp lại.",
+     "ng": "SHS 28/09"
+    },
+    {
+     "h": 0,
+     "t": "ĐHĐCĐ đặt hai kịch bản: LNTT +15% nếu xung đột Iran sớm kết thúc, +7,6% nếu kéo dài — giá năng lượng và lãi suất là biến số ngoài tầm kiểm soát.",
+     "ng": "Thời báo Tài chính 04/2026"
+    },
+    {
+     "h": 1,
+     "t": "Đầu tư công tăng tốc: tín dụng xây dựng của TCB +56,3% từ đầu năm lên 41,3 nghìn tỷ.",
+     "ng": "SHS 28/09 · MBS 22/09"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "NHNN loại khỏi hạn mức tín dụng: 18 dự án hạ tầng trọng điểm (CV 5386), BĐS khu công nghiệp và nhà ở xã hội (CV 4551, đến 31/12/2026), BĐS du lịch – khách sạn (CV 8509).",
+     "ng": "KBSV 10/09 · MBS 22/09"
+    },
+    {
+     "h": -1,
+     "t": "Tín dụng hệ thống +8,51% đến 30/6, room ngành ~15% năm 2026; tín dụng tăng nhanh hơn huy động giữ lãi suất tiền gửi ở mức cao.",
+     "ng": "SHS 28/09"
+    },
+    {
+     "h": -1,
+     "t": "Căn hộ Q2/2026: lượng bán Hà Nội −4%, TP.HCM −11% dù giá sơ cấp +21% / +16% — giải ngân vay mua nhà của TCB thấp nhất 9 quý.",
+     "ng": "CBRE qua SHS 28/09"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 0,
+     "t": "Masan sở hữu 14,8%; hệ sinh thái Masterise, Vingroup giúp tiếp cận dự án hạ tầng — đồng thời là rủi ro tập trung.",
+     "ng": "MBS 22/09 · KBSV 10/09"
+    },
+    {
+     "h": 1,
+     "t": "CAR 15,0% (Basel II) sau ~5.000 tỷ cổ tức tiền mặt; LDR 80,1% (trần 85%), vốn ngắn hạn cho vay trung dài hạn 27,8% (trần 30%).",
+     "ng": "SHS 28/09"
+    },
+    {
+     "h": 0,
+     "t": "TCX (79,81%): thị phần môi giới HOSE 9,4% (top 3), tư vấn phát hành TPDN 48% (top 1); TPDN khởi tạo ở ngân hàng được phân phối qua TCX.",
+     "ng": "MBS 22/09 · KAFI 07/09"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Tín dụng — doanh nghiệp và hạ tầng dẫn dắt",
+   "phu": "Tín dụng hợp nhất 949 nghìn tỷ (30/6/2026) · +15,2% từ đầu năm",
+   "so": [
+    [
+     "Doanh nghiệp (gồm TPDN)",
+     "+20%",
+     "BĐS +21%, xây dựng +56%"
+    ],
+    [
+     "Bán lẻ",
+     "+9%",
+     "tín chấp +40%, SME +28%"
+    ],
+    [
+     "Trái phiếu doanh nghiệp",
+     "102 nghìn tỷ",
+     "+80% trong Q2"
+    ],
+    [
+     "Hạ tầng ngoài room",
+     "~20 nghìn tỷ",
+     "18 dự án trọng điểm"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Giải ngân vay mua nhà Q2 chỉ 18,6 nghìn tỷ — thấp nhất 9 quý — trong khi khách trả nợ trước hạn 19,1 nghìn tỷ; LTV bình quân 43,7%.",
+     "ng": "SHS 28/09"
+    },
+    {
+     "t": "Cho vay ký quỹ qua TCX 51.522 tỷ (+52% so với cùng kỳ); TPDN tăng mạnh ở Q2 một phần chờ phân phối lại qua TCX.",
+     "ng": "SHS 28/09 · KBSV 10/09 · KAFI 07/09"
+    }
+   ]
+  },
+  {
+   "ten": "Nguồn vốn và NIM",
+   "phu": "CASA 38,3% · chi phí vốn 4,8% (Q2/2026)",
+   "so": [
+    [
+     "NIM Q2 (BCTC)",
+     "3,68%",
+     "cùng kỳ 3,80%"
+    ],
+    [
+     "Chi phí vốn",
+     "4,8%",
+     "Q2/2025: 3,5%"
+    ],
+    [
+     "CASA",
+     "38,3%",
+     "đỉnh 42,5% (Q3/2025)"
+    ],
+    [
+     "LDR (NHNN)",
+     "80,1%",
+     "trần 85%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "CASA doanh nghiệp 119 nghìn tỷ (+17% trong quý) bù cho CASA bán lẻ giảm từ 172 xuống 148 nghìn tỷ khi người gửi chuyển sang kỳ hạn.",
+     "ng": "SHS 28/09"
+    },
+    {
+     "t": "Tiền gửi khách hàng 6T +7%, giấy tờ có giá −1,5%: TCB dựa nhiều hơn vào liên ngân hàng và vay quốc tế thay vì đua lãi suất.",
+     "ng": "KBSV 10/09 · KAFI 07/09"
+    }
+   ]
+  },
+  {
+   "ten": "Phí dịch vụ và hệ sinh thái",
+   "phu": "Thu nhập phí thuần 6T 7.613 tỷ (+38%) · 26,6% thu nhập hoạt động",
+   "so": [
+    [
+     "LC, thanh toán Q2",
+     "1.694 tỷ",
+     "gấp 2,5 lần"
+    ],
+    [
+     "Bảo hiểm Q2",
+     "583 tỷ",
+     "+137%"
+    ],
+    [
+     "Ngân hàng đầu tư Q2",
+     "1.142 tỷ",
+     "−19%"
+    ],
+    [
+     "TCX LNTT 6T",
+     "3.555 tỷ",
+     "+17%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Thị phần banca 21% (dẫn đầu), Techcom Life đứng thứ 5 nhân thọ (9%); APE Q2 552 tỷ (+119%).",
+     "ng": "SHS 28/09"
+    },
+    {
+     "t": "Khách hàng ưu tiên: tài sản quản lý ~877 nghìn tỷ (gấp đôi cùng kỳ), 307 nghìn khách (+50%).",
+     "ng": "MBS 22/09"
+    }
+   ]
+  },
+  {
+   "ten": "Chất lượng tài sản và vốn",
+   "phu": "NPL 1,15% · bao phủ 125,5% · CAR 15,0% (30/6/2026)",
+   "so": [
+    [
+     "NPL bán lẻ",
+     "2,26%",
+     "Q4/2025: 2,14%"
+    ],
+    [
+     "Vay mua nhà",
+     "1,97%",
+     "+13 điểm cơ bản trong quý"
+    ],
+    [
+     "NPL doanh nghiệp",
+     "0,26%",
+     "giảm tiếp"
+    ],
+    [
+     "Nợ nhóm 2",
+     "5,6 nghìn tỷ",
+     "+46% từ đầu năm"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q2: nợ xấu phát sinh mới 1.672 tỷ, thu hồi và xử lý 949 tỷ; chi phí dự phòng cụ thể chỉ 326 tỷ. Mục tiêu: NPL < 1,5%, chi phí tín dụng < 1%.",
+     "ng": "SHS 28/09"
+    },
+    {
+     "t": "Kịch bản 2 của ĐHĐCĐ (xung đột kéo dài) nới mục tiêu nợ xấu lên dưới 2%.",
+     "ng": "Thời báo Tài chính 04/2026"
+    }
+   ]
+  }
+ ]
+}
