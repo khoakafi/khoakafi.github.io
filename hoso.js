@@ -365,7 +365,7 @@
     o.dsCon.forEach(function(z, i){ var w = Math.max(0, Math.min(con, z.phan / goc * 100)); con -= w;
       h += '<i style="width:' + w.toFixed(1) + '%;background:' + (MAU_HEX[z.c.mau] || ['#2a78d6', '#eb6834', '#8E98A6'][i % 3]) + '" title="'
         + esc(z.c.ma + ' ' + f(z.g.gia, 1) + ' × ' + f(z.c.cp_trieu, 1) + ' triệu cp × ' + f(z.c.so_huu * 100, 2) + '% = ' + f(z.phan, 0) + ' tỷ') + '"><span>'
-        + (mot && w >= 45 ? f(z.c.so_huu * 100, 0) + '% ' + esc(z.c.ma) + ' theo giá thị trường · ' + f(z.phan, 0) + ' tỷ' : esc(z.c.ma) + ' · ' + f(z.phan, 0) + ' tỷ') + '</span></i>'; });
+        + (mot && w >= 45 ? f(z.c.so_huu * 100, 0) + '% ' + esc(z.c.ma) + ' theo giá thị trường · ' + f(z.phan, 0) + ' tỷ' : (w >= 20 ? esc(z.c.ma) + ' · ' + f(z.phan, 0) + ' tỷ' : (w >= 9 ? esc(z.c.ma) : ''))) + '</span></i>'; });
     if (vuot) h += '<u style="left:' + (o.von / goc * 100).toFixed(1) + '%" title="Vốn hóa ' + esc(p.ma) + '"></u></div>'
       + '<div class="hsStl"><span>Vốn hóa ' + esc(p.ma) + ' <b>' + f(o.von, 0) + ' tỷ</b> (vạch) chỉ bằng ' + f(o.von / o.phanCon * 100, 0) + '% giá trị thị trường phần ' + esc(o.maCon) + ' đang nắm</span>'
         + '<span>' + esc((s.conlai && s.conlai.ten) || 'Phần còn lại') + ': thị trường trả <b>' + f(o.conLai, 0) + ' tỷ</b></span></div>';
