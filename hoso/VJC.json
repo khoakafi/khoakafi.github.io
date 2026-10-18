@@ -1,0 +1,1363 @@
+{
+ "v": 2,
+ "ma": "VJC",
+ "ten": "CTCP Hàng không Vietjet",
+ "nganh": "Hàng không",
+ "ky": "BCTC Q2/2026 · khách 6T/2026",
+ "cap_nhat": "2026-10-18",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 769.1,
+ "cp_ng": "Vốn điều lệ 30/6/2026 (7.690,9 tỷ) sau thưởng 30% cổ phiếu, GDKHQ 16/6/2026",
+ "co_tuc": [],
+ "chia": [
+  [
+   "2026-06-16",
+   1.3
+  ]
+ ],
+ "tieu_de": {
+  "t": "Bỏ lãi bán tàu bay, Vietjet lỗ ngay cả khi nhiên liệu rẻ — giá đã đi trước sự phục hồi",
+  "dk": "up_duoi:-5",
+  "khac": "Bỏ lãi bán tàu bay, Vietjet lỗ ngay cả khi nhiên liệu rẻ — nhiên liệu 2027 quyết định giá trị"
+ },
+ "dong_mo": "Bỏ ~3,4 nghìn tỷ lãi bán & thuê lại tàu bay, VJC đã lỗ trước thuế năm 2025 khi nhiên liệu chỉ ~86 USD/thùng; nay ~150. Mô hình cơ sở: lỗ cả năm 2026, LN 2027 ~1,9 nghìn tỷ (ROE ~7%). P/B 3,30 × vốn chủ 30/6/2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "−798 tỷ",
+   "nhan": "LNTT 2025 nếu bỏ lãi bán & thuê lại tàu bay",
+   "tieu": "Lãi đến từ bán tàu bay, không từ đường bay",
+   "t": "Năm 2025, khi nhiên liệu ~86 USD/thùng, thương mại tàu bay (bán & thuê lại tàu mới, bán quyền mua) cho ~3,4 nghìn tỷ lãi gộp — hơn cả LNTT 2.630 tỷ. Vận tải lãi gộp 5,0 nghìn tỷ (biên 7,5%) nhưng chi phí bán hàng, quản lý 4,5 và tài chính ròng 1,5 nghìn tỷ lấy hết. 6T/2026 lặp lại: lãi gộp bán & thuê lại 2,15 nghìn tỷ, LNTT 1,56 nghìn tỷ. Bán & thuê lại còn đẩy tiền thuê tàu về sau lên.",
+   "ng": "BCTC · FPTS 07/09 · VNDS 04/05"
+  },
+  {
+   "so": "76%",
+   "nhan": "phần nhiên liệu tăng thêm vào được giá vé (6T/2026)",
+   "tieu": "Nhiên liệu gần gấp đôi, giá vé chỉ bù ba phần tư",
+   "t": "Dầu hỏa hàng không Singapore bình quân 6T/2026 ~145 USD/thùng (+69%), tháng 8–9 vẫn 159. VJC cắt 9% số chuyến, khách −7%, doanh thu mỗi khách +15%: chỉ ~76% chi phí nhiên liệu tăng thêm vào được giá vé. Lãi gộp vận tải 6T −46%, Q2 lỗ gộp 227 tỷ. Vé nội địa còn chịu giá trần, phụ thu nhiên liệu chưa được duyệt; Q4 là mùa thấp điểm. Mô hình cơ sở: lỗ trước thuế cả năm ~0,5 nghìn tỷ, kế hoạch lãi 2.421 tỷ.",
+   "ng": "JAL · FPTS 07/09 · VJC · mô hình"
+  },
+  {
+   "so": "−11%",
+   "nhan": "LN 2027E cơ sở so với 2025",
+   "tieu": "Nhiên liệu về 100 USD vẫn chưa đưa lãi về mức 2025",
+   "t": "Cơ sở: nhiên liệu 2027 100 USD/thùng (EIA: Brent ~84), 29 triệu khách (2025: 28,2), lãi gộp vận tải 5,2 nghìn tỷ — ngang 2025; cộng 3,4 nghìn tỷ lãi bán & thuê lại, LN 1,9 nghìn tỷ, ROE ~7%. Chỉ khi hòa bình kéo nhiên liệu về 85 USD, khách 31 triệu, biên gộp vận tải 11% (6T/2025: 12,4%), LN mới lên ~5,2 nghìn tỷ — ngang kỷ lục 5,2 nghìn tỷ (2018).",
+   "ng": "EIA 10/2026 · BCTC · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Giá đang trả cho mức lãi VJC chưa lấy lại: {up_so}",
+   "dk": "up_duoi:-5",
+   "t": "Từ 2020 thị trường trả VJC 2,65–5,07 lần vốn chủ (trung vị 3,73) dù ROE chỉ −14% đến 11%. Cơ sở dùng P/B 3,30 — bình quân 1/2024–6/2025, khi ROE 5–10% như 2027E — trên vốn chủ 30/6/2027E ~25,4 nghìn tỷ, tương đương P/E 2027E ~45 lần. Ở P/E 15 (2018–2019: 12–15), giá hiện tại cần LN ~6,5 nghìn tỷ — gấp 3 lần 2025, cao hơn kỷ lục 2018.",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "P/B theo ROE: {up_so} so với giá hiện tại",
+    "t": "Cơ sở dùng P/B 3,30 — bình quân 1/2024–6/2025, khi ROE 5–10% như 2027E — trên vốn chủ 30/6/2027E ~25,4 nghìn tỷ. Xấu 70,5 (lỗ 2026–2027, P/B 2,65 — thấp nhất từ 2017); tốt 152,6 (ROE 2027E ~18%, P/B 4,13 — trung vị từ 2017) nghìn đ/cp."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   2123,
+   -503,
+   1880
+  ],
+  "ln_truoc": 1403,
+  "eps": [
+   2760,
+   -654,
+   2444
+  ],
+  "bv": [
+   32200,
+   31826,
+   34271
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Trong đó: bán & thuê lại tàu bay, sau thuế (tỷ)",
+    "v": [
+     2743,
+     3264,
+     2720
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     10.1,
+     -2.0,
+     7.4
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS, BVPS theo 769,1 triệu cp hiện tại (sau thưởng 30% cổ phiếu 6/2026); cổ tức 2025 trả bằng cổ phiếu."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận gộp theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "lợi nhuận gộp",
+  "ss": [
+   {
+    "ten": "Vận tải hàng không",
+    "mau": "c1",
+    "v": [
+     5040,
+     1188,
+     5201
+    ]
+   },
+   {
+    "ten": "Bán & thuê lại tàu bay",
+    "mau": "c2",
+    "v": [
+     3429,
+     4080,
+     3400
+    ]
+   }
+  ],
+  "nhan": "Bán & thuê lại tàu bay",
+  "ng": "2025A: lãi gộp thương mại tàu bay suy từ FPTS 07/09 (2026F 4.080 tỷ, +19%); 2026E–2027E: mô hình cơ sở."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: khách × (doanh thu − nhiên liệu − chi phí khác)",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Vận tải hàng không (mỗi khách: nghìn đồng)"
+   },
+   {
+    "ten": "Hành khách (triệu)",
+    "v": [
+     28.2,
+     26.2,
+     29.0
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Giá nhiên liệu Singapore (USD/thùng)",
+    "v": [
+     86,
+     147,
+     100
+    ]
+   },
+   {
+    "ten": "Doanh thu mỗi khách",
+    "v": [
+     2392,
+     2784,
+     2539
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Nhiên liệu mỗi khách",
+    "v": [
+     725,
+     1240,
+     842
+    ]
+   },
+   {
+    "ten": "Chi phí khác mỗi khách",
+    "v": [
+     1488,
+     1498,
+     1517
+    ]
+   },
+   {
+    "ten": "Lãi gộp mỗi khách",
+    "v": [
+     179,
+     45,
+     179
+    ],
+    "dam": 1
+   },
+   {
+    "ten": "Lãi gộp vận tải (tỷ)",
+    "v": [
+     5040,
+     1188,
+     5201
+    ]
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Lãi gộp bán & thuê lại tàu bay",
+    "v": [
+     3429,
+     4080,
+     3400
+    ]
+   },
+   {
+    "ten": "Chi phí bán hàng + quản lý",
+    "v": [
+     4538,
+     4307,
+     4495
+    ]
+   },
+   {
+    "ten": "Tài chính ròng",
+    "v": [
+     -1542,
+     -1488,
+     -1800
+    ]
+   },
+   {
+    "ten": "LNTT nếu bỏ bán & thuê lại",
+    "v": [
+     -798,
+     -4538,
+     -994
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     2630,
+     -458,
+     2406
+    ],
+    "dam": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     2123,
+     -503,
+     1880
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     2760,
+     -654,
+     2444
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Mỗi khách = số tỷ đồng ÷ triệu khách. Nhiên liệu = giá Singapore × hệ số hiệu chỉnh để nhiên liệu bằng 45,7% giá vốn vận tải 6T/2026 (FPTS). 2026E = 6 tháng thực tế + Q3–Q4 ước tính theo cùng quý 2025."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2025A → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2025A",
+   2123
+  ],
+  "cuoi": [
+   "2027E",
+   1880
+  ],
+  "buoc": [
+   [
+    "Lãi gộp vận tải",
+    129
+   ],
+   [
+    "Bán & thuê lại tàu bay",
+    -23
+   ],
+   [
+    "Chi phí bán hàng, quản lý",
+    34
+   ],
+   [
+    "Tài chính ròng",
+    -206
+   ],
+   [
+    "Khác, thuế, CĐTS",
+    -177
+   ]
+  ],
+  "y": "2026E lỗ nên cầu đi từ 2025. Nhiên liệu 2027 (100 USD) vẫn cao hơn 2025 ~16% nên lãi gộp vận tải chỉ ngang 2025; nợ vay lớn hơn đẩy chi phí tài chính lên.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Giá nhiên liệu Singapore Q4/2026 · 2027 (USD/thùng)",
+   "v": [
+    "164 · 135",
+    "150 · 100",
+    "135 · 85"
+   ],
+   "ly_do": "8–9/2026: 159 (JAL); EIA 10/2026: Brent Q4 105, 2027 ~84 USD. Chênh lệch nhiên liệu bay – Brent cuối 2025 ~22–26, 6–9/2026 ~48–58. FPTS: 2027 −32,6% (hòa bình)"
+  },
+  {
+   "ten": "Khách 6T cuối 2026 so với cùng kỳ",
+   "v": [
+    "−11%",
+    "−7%",
+    "−2%"
+   ],
+   "ly_do": "6T/2026 −7% (Q2 −18% khi cắt chuyến); FPTS giả định Q3 −5%. Xấu: Q3 −12%, Q4 −10%; tốt: Q3 −4%, Q4 đi ngang"
+  },
+  {
+   "ten": "Nhiên liệu tăng thêm vào được giá vé (6T cuối 2026 · 2027)",
+   "v": [
+    "70% · 76%",
+    "76% · 85%",
+    "85% · 85%"
+   ],
+   "ly_do": "6T/2026 thực tế 76%, riêng Q2 ~93%; vé nội địa chịu giá trần, phụ thu nhiên liệu chưa được duyệt"
+  },
+  {
+   "ten": "Hành khách 2027 (triệu)",
+   "v": [
+    "26,5",
+    "29",
+    "31"
+   ],
+   "ly_do": "2025: 28,2 (+9%); 2026E ~26,2; đội 108 tàu (3/2026), đơn hàng 100 A321neo + 20 A330neo; FPTS: khách +10,3%/năm 2026–2030"
+  },
+  {
+   "ten": "Doanh thu ngoài nhiên liệu · chi phí khác mỗi khách 2027 so với 2025",
+   "v": [
+    "0% · +5%",
+    "+2% · +2%",
+    "+4% · 0%"
+   ],
+   "ly_do": "6T/2026 chi phí khác/khách +0,7% dù khách −7%; khách quốc tế tăng tỷ trọng (167/213 đường bay); FPTS: phụ trợ/khách +5,1%/năm"
+  },
+  {
+   "ten": "Lãi gộp bán & thuê lại tàu bay (6T cuối 2026 · 2027, tỷ)",
+   "v": [
+    "1.300 · 2.500",
+    "1.929 · 3.400",
+    "2.600 · 4.000"
+   ],
+   "ly_do": "2025 ~3.430; 6T/2026 2.151; FPTS 2026F 4.080; lãi ~16% giá bán tàu (VNDS: Q1 16,9%; FPTS: Q2 15,9%)"
+  },
+  {
+   "ten": "Chi phí bán hàng + quản lý mỗi khách 2027 (nghìn đ)",
+   "v": [
+    "162",
+    "155",
+    "148"
+   ],
+   "ly_do": "2025: 161 (QLDN Q4 tăng vọt 1.152 tỷ); 6T/2026: 148 (6T/2025: 134) — hoa hồng, quảng cáo tăng theo đường bay mới (VNDS)"
+  },
+  {
+   "ten": "Tài chính ròng 2027 (tỷ)",
+   "v": [
+    "−2.300",
+    "−1.800",
+    "−1.500"
+   ],
+   "ly_do": "2025: −1.542; 6T/2026: −987; nợ vay 72,3 nghìn tỷ (30/6/2026), chi phí lãi vay 2025 3.620 tỷ"
+  },
+  {
+   "ten": "P/B trên vốn chủ 30/6/2027E",
+   "v": [
+    "2,65",
+    "3,30",
+    "4,13"
+   ],
+   "ly_do": "Thấp nhất từ 2017: 2,65 (5/2025); bình quân 1/2024–6/2025 (ROE 5–10%): 3,30; trung vị từ 2017: 4,13; hiện 3,72"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": -2546,
+   "ln27": -3922,
+   "gia": 70.5,
+   "mo_ta": "Chiến sự kéo dài: nhiên liệu Q4/2026 164, 2027 135 USD; khách 2027 26,5 triệu; vé bù 76% nhiên liệu tăng thêm; lỗ 2026–2027; P/B 2,65"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": -503,
+   "ln27": 1880,
+   "gia": 109.1,
+   "mo_ta": "Nhiên liệu 2027 100 USD; khách 29 triệu; lãi gộp vận tải ≈ 2025; bán & thuê lại 3,4 nghìn tỷ; ROE 2027E ~7%; P/B 3,30"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 818,
+   "ln27": 5231,
+   "gia": 152.6,
+   "mo_ta": "Hòa bình: nhiên liệu 2027 85 USD; khách 31 triệu, doanh thu/khách ngoài nhiên liệu +4%; biên gộp vận tải 11%; ROE ~18%; P/B 4,13"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ cổ đông 30/6/2027E",
+  "ck": 0,
+  "cp": 769.1,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông 30/6/2027E",
+    "mau": "c1",
+    "x": [
+     20473,
+     25418,
+     28415
+    ],
+    "boi": [
+     2.65,
+     3.3,
+     4.13
+    ],
+    "x_ten": "Vốn chủ 30/6/2027E",
+    "boi_ten": "P/B",
+    "sh": 1,
+    "gt": [
+     54253,
+     83879,
+     117354
+    ]
+   }
+  ],
+  "von": [
+   54253,
+   83879,
+   117354
+  ],
+  "gia": [
+   70.5,
+   109.1,
+   152.6
+  ]
+ },
+ "nhay": [
+  [
+   "P/B ±0,3 lần",
+   null,
+   9.9
+  ],
+  [
+   "Lãi bán & thuê lại tàu bay 6T cuối 2026 ±1 nghìn tỷ",
+   946,
+   4.1
+  ],
+  [
+   "Chi phí ngoài nhiên liệu mỗi khách 2027 ±2%",
+   690,
+   1.5
+  ],
+  [
+   "Giá nhiên liệu 2027 ±10 USD/thùng",
+   293,
+   0.6
+  ],
+  [
+   "Giá nhiên liệu Q4/2026 ±10 USD/thùng",
+   126,
+   0.5
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   6.85,
+   8.12,
+   8.1,
+   5.99,
+   5.92,
+   5.83,
+   5.5,
+   6.78,
+   7.07,
+   7.35,
+   7.99,
+   10.5,
+   8.99,
+   10.07,
+   8.41,
+   5.83,
+   6.7,
+   6.83,
+   5.99,
+   5.82,
+   5.13,
+   5.7,
+   5.22,
+   5.37,
+   4.63,
+   4.53,
+   4.51,
+   4.35,
+   4.47,
+   4.66,
+   4.6,
+   4.8,
+   5.06,
+   5.29,
+   5.33,
+   4.75,
+   4.31,
+   3.44,
+   4.09,
+   4.45,
+   4.25,
+   3.72,
+   3.73,
+   3.79,
+   3.66,
+   4.55,
+   4.84,
+   4.87,
+   4.89,
+   4.69,
+   4.52,
+   4.08,
+   4.51,
+   4.2,
+   4.04,
+   4.08,
+   4.21,
+   3.92,
+   4.11,
+   3.9,
+   4.5,
+   4.51,
+   4.17,
+   4.15,
+   4.12,
+   3.98,
+   3.83,
+   3.5,
+   3.39,
+   3.19,
+   3.39,
+   3.6,
+   3.81,
+   4.0,
+   3.69,
+   3.49,
+   3.38,
+   3.65,
+   3.57,
+   3.62,
+   3.61,
+   3.63,
+   3.84,
+   3.72,
+   3.58,
+   3.57,
+   3.61,
+   3.62,
+   3.43,
+   3.58,
+   3.46,
+   3.45,
+   3.45,
+   3.32,
+   3.24,
+   3.24,
+   3.04,
+   3.01,
+   2.72,
+   2.65,
+   2.68,
+   3.69,
+   3.61,
+   3.24,
+   4.67,
+   4.94,
+   5.07,
+   4.14,
+   4.2,
+   3.73,
+   4.3,
+   3.92,
+   4.13,
+   3.7,
+   3.65,
+   3.86,
+   3.72
+  ],
+  "p10": 3.39,
+  "p25": 3.62,
+  "tv": 4.13,
+  "thap": [
+   "2025-05",
+   2.65
+  ],
+  "nay": [
+   "2026-10",
+   3.72
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 2,65 · 3,30 · 4,13 trên vốn chủ 30/6/2027E: thấp nhất từ 2017 · bình quân 1/2024–6/2025 (ROE 5–10%) · trung vị. Không dùng P/E: P/E 4 quý trên 30 lần ở 74/82 tháng từ 2020."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -1149,
+    -355,
+    255
+   ],
+   "ck": 319
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -2745,
+    -1495,
+    -784
+   ],
+   "ck": 510
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    -2546,
+    -503,
+    818
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Nhiên liệu Q3 ~150 USD (Q3/2025: 86). Mô hình cơ sở: lãi gộp vận tải ~653 tỷ, lãi bán & thuê lại ~675 tỷ, LN −355 tỷ; FPTS dự báo lỗ 508 tỷ.",
+   "tac": [
+    "Biên gộp vận tải ≥ 3%",
+    "giữ cơ sở; âm như Q2 thì nghiêng về xấu"
+   ],
+   "theo_doi": "biên gộp vận tải, số khách"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Nhiên liệu neo cao đúng mùa thấp điểm",
+   "ct": "Dầu hỏa Singapore 8–9/2026 bình quân 159 USD/thùng; EIA nâng dự báo Brent Q4 lên 105 USD. Q4/2025 vận tải đã lỗ gộp ~1 nghìn tỷ dù nhiên liệu chỉ 88 USD.",
+   "tac": [
+    "±126 tỷ LN",
+    "mỗi ±10 USD/thùng nhiên liệu Q4"
+   ],
+   "theo_doi": "giá dầu hỏa Singapore, giá vé Tết"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Bán & thuê lại tàu bay cuối năm",
+   "ct": "2025 lập kỷ lục nhận 22 tàu trong một quý; thương mại tàu bay Q4/2025 cho ~2,6 nghìn tỷ lãi gộp. Mỗi tàu bán & thuê lại lãi ~16% giá bán. Cơ sở giữ 1,9 nghìn tỷ cho 6T cuối (FPTS).",
+   "tac": [
+    "±4,1 nghìn đ/cp",
+    "mỗi ±1 nghìn tỷ lãi gộp bán & thuê lại 6T cuối 2026"
+   ],
+   "theo_doi": "số tàu nhận, thương vụ bán & thuê lại"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Phụ thu nhiên liệu cho vé nội địa",
+   "ct": "Cục Hàng không đề xuất phụ thu theo giá Jet A1, ngoài giá trần (27/3/2026); Bộ Xây dựng yêu cầu làm rõ cơ sở pháp lý (3/4). Chưa được duyệt.",
+   "tac": [
+    "+1,1 nghìn tỷ LN 2026",
+    "nếu 6T cuối chuyển được 95% (thay 76%) chi phí nhiên liệu tăng thêm vào vé"
+   ],
+   "theo_doi": "quyết định của Bộ Xây dựng, Chính phủ"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Hòa bình, nhiên liệu về ~85 USD",
+   "ct": "FPTS giả định Mỹ – Iran ký hòa bình, nhiên liệu 2027 −32,6%; EIA dự báo Brent 2027 ~84 USD. Kịch bản tốt cần 31 triệu khách và biên gộp vận tải ~11%.",
+   "tac": [
+    "+43,5 nghìn đ/cp",
+    "kịch bản tốt so với cơ sở"
+   ],
+   "theo_doi": "Brent, giá dầu hỏa Singapore"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Đường bay quốc tế, tàu thân rộng",
+   "ct": "167 đường bay quốc tế (+58 so với cùng kỳ); khách quốc tế 2025 9,9 triệu (+9,3%); đơn hàng 100 A321neo (+50 quyền chọn) và 20 A330neo — nguồn cho bán & thuê lại các năm tới.",
+   "tac": "",
+   "theo_doi": "tỷ trọng khách quốc tế, doanh thu mỗi khách"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Cạnh tranh nội địa",
+   "ct": "Sun PhuQuoc Airways có 17 tàu (đầu 8/2026), đưa A330 vào khai thác từ 9/2026, mục tiêu 32 tàu cuối 2026.",
+   "tac": [
+    "±2,4 nghìn đ/cp",
+    "mỗi ±2% doanh thu mỗi khách 2027 (±1,1 nghìn tỷ LN)"
+   ],
+   "theo_doi": "thị phần nội địa, giá vé"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lãi phụ thuộc lịch nhận tàu",
+   "ct": "Q3/2025 LN −44% chủ yếu vì doanh thu bán & thuê lại, quyền mua tàu thấp hơn dự kiến (Vietcap). Lãi gộp thương mại tàu bay 2025 ~3,4 nghìn tỷ, lớn hơn LNTT.",
+   "tac": [
+    "±1,7 nghìn đ/cp",
+    "mỗi ±1 nghìn tỷ lãi gộp bán & thuê lại 2027"
+   ],
+   "theo_doi": "lịch nhận tàu Airbus"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Đòn bẩy và phải thu lớn",
+   "ct": "30/6/2026: nợ vay 72,3 nghìn tỷ (2,7 lần vốn chủ), phải thu ngắn hạn 40,4 nghìn tỷ (154% vốn chủ); chi phí lãi vay 2025 3,6 nghìn tỷ.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất nợ vay 2027"
+   ],
+   "theo_doi": "nợ vay ròng, phải thu, dòng tiền"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Chiến sự Mỹ – Iran từ 28/2/2026: dầu hỏa hàng không Singapore lập đỉnh 231 USD/thùng đầu tháng 3, bình quân 4–5/2026 178, 8–9/2026 159 USD (2025: ~86).",
+     "ng": "Reuters/Platts 05/03 · JAL"
+    },
+    {
+     "h": -1,
+     "t": "EIA (10/2026) nâng dự báo Brent Q4/2026 lên 105 USD (tháng 9 bình quân 114), cả năm 2026 ~98; dự báo 2027 ~84 USD.",
+     "ng": "EIA STEO 10/2026"
+    },
+    {
+     "h": 0,
+     "t": "Tỷ giá USD/VND đi ngang quanh 26.000–26.400 từ 9/2025 đến 9/2026 — chưa cộng thêm áp lực lên chi phí bằng USD.",
+     "ng": "dữ liệu hàng hóa của trang"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Thị trường hàng không Việt Nam Q1/2026: 24,19 triệu khách (+16,4%); các hãng Việt Nam 15,26 triệu (+9,7%).",
+     "ng": "Cục Hàng không, theo Tạp chí Kinh tế Tài chính"
+    },
+    {
+     "h": -1,
+     "t": "Vé nội địa hạng phổ thông vẫn quản lý bằng giá trần; đề xuất phụ thu nhiên liệu ngoài trần (27/3/2026) chưa được duyệt.",
+     "ng": "Mekong ASEAN · Tuổi Trẻ"
+    },
+    {
+     "h": -1,
+     "t": "Sun PhuQuoc Airways mở rộng nhanh: 17 tàu đầu 8/2026, mục tiêu 32 tàu cuối năm, khai thác A330 từ 9/2026.",
+     "ng": "FPTS 07/09"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 0,
+     "t": "2025: 28,2 triệu khách (+9%), 153 nghìn chuyến (+11,2%), quốc tế 9,9 triệu (+9,3%); 254 đường bay (52 nội địa, 202 quốc tế).",
+     "ng": "VJC giải trình BCTC Q4/2025"
+    },
+    {
+     "h": -1,
+     "t": "Vốn chủ 26,3 nghìn tỷ đỡ nợ vay 72,3 nghìn tỷ và phải thu ngắn hạn 40,4 nghìn tỷ (30/6/2026).",
+     "ng": "BCTC Q2/2026"
+    },
+    {
+     "h": 1,
+     "t": "Đơn hàng 100 A321neo (+50 quyền chọn) và 20 A330neo: nguồn cho đường bay xa và bán & thuê lại các năm tới.",
+     "ng": "ĐHĐCĐ 2026, theo Thời báo Tài chính"
+    },
+    {
+     "h": 0,
+     "t": "2025 phát hành 50 triệu cổ phiếu (thêm 5.000 tỷ vốn chủ); cổ tức 2025 trả bằng cổ phiếu 30% (GDKHQ 16/6/2026).",
+     "ng": "Thị trường Tài chính Tiền tệ · Stockbiz"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Vận tải hành khách",
+   "phu": "VietJet Air: 108 tàu (3/2026) · 213 đường bay: 46 nội địa, 167 quốc tế (30/6/2026)",
+   "so": [
+    [
+     "Khách 2025",
+     "28,2 triệu",
+     "+9%"
+    ],
+    [
+     "Khách quốc tế 2025",
+     "9,9 triệu",
+     "+9,3%"
+    ],
+    [
+     "Khách 6T/2026",
+     "13,4 triệu",
+     "−7%"
+    ],
+    [
+     "Chuyến bay 6T/2026",
+     "72 nghìn",
+     "−9%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q2/2026 khách −17,3%: VJC chủ động cắt chuyến khi nhiên liệu neo cao; doanh thu vận chuyển hành khách vẫn +26,3% nhờ tăng giá vé.",
+     "ng": "FPTS 07/09"
+    },
+    {
+     "t": "Q1/2026: 7,2 triệu khách (+5,1%), quốc tế 2,6 triệu (+8%); biên gộp vận tải 12,3% (Q1/2025: 13,4%) vì nhiên liệu.",
+     "ng": "VNDS 04/05"
+    },
+    {
+     "t": "ĐHĐCĐ 2026 hạ kế hoạch: doanh thu hợp nhất 86.774 tỷ (cũ 101.407), LNTT 2.421 tỷ (cũ 3.011).",
+     "ng": "VietnamBiz, DNSE 24/04"
+    }
+   ]
+  },
+  {
+   "ten": "Phụ trợ và hàng hóa",
+   "phu": "Dịch vụ phụ trợ và vận chuyển hàng hóa — gắn với số khách",
+   "so": [
+    [
+     "Doanh thu Q2/2026",
+     "5.357 tỷ",
+     "−22%"
+    ],
+    [
+     "Doanh thu 6T/2026",
+     "11.563 tỷ",
+     "−12%"
+    ],
+    [
+     "Phụ trợ Q1/2026",
+     "6,2 nghìn tỷ",
+     "> 31% DT vận tải"
+    ],
+    [
+     "Hàng hóa 2025",
+     "113.923 tấn",
+     ""
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q2/2026 giảm vì hàng hóa vận chuyển −30% và khách −17%; FPTS dự báo cả năm 2026 −11%, sau đó doanh thu phụ trợ mỗi khách +5,1%/năm (2027–2030).",
+     "ng": "FPTS 07/09"
+    }
+   ]
+  },
+  {
+   "ten": "Thương mại tàu bay",
+   "phu": "Bán & thuê lại tàu mới nhận, bán quyền mua tàu — lãi theo lịch nhận tàu",
+   "so": [
+    [
+     "Lãi gộp 2025",
+     "~3.430 tỷ",
+     "suy từ FPTS"
+    ],
+    [
+     "Lãi gộp 6T/2026",
+     "2.151 tỷ",
+     "Q2: 1.928"
+    ],
+    [
+     "Biên gộp",
+     "16–17%",
+     "Q1, Q2/2026"
+    ],
+    [
+     "Đơn hàng Airbus",
+     "120 tàu",
+     "100 A321neo, 20 A330neo"
+    ]
+   ],
+   "y": [
+    {
+     "t": "FPTS: không phải hoạt động cốt lõi, chỉ là giải pháp tạm thời lúc khó khăn; lãi bán & thuê lại cao làm tiền thuê tàu về sau tăng.",
+     "ng": "FPTS 07/09"
+    },
+    {
+     "t": "Q3/2025 LN giảm 44% chủ yếu vì doanh thu bán & thuê lại, quyền mua tàu thấp hơn dự kiến — lãi quý dao động theo lịch nhận tàu.",
+     "ng": "Vietcap, theo Finhay"
+    },
+    {
+     "t": "Q2/2026 doanh thu thương mại tàu bay 12.157 tỷ (gấp ~28 lần cùng kỳ), lãi gộp 1.928 tỷ — giữ cho quý có lãi khi vận tải lỗ gộp.",
+     "ng": "FPTS 07/09"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Hành khách theo quý",
+   "kieu": "cot",
+   "dv": "triệu",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "so_le": 1,
+   "ss": [
+    {
+     "ten": "Hành khách",
+     "v": [
+      6.87,
+      7.53,
+      7.1,
+      6.7,
+      7.2,
+      6.2
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Q2/2026 −18% so với cùng kỳ khi VJC cắt chuyến (gần 33 nghìn chuyến); 6T −7%. Q3, Q4/2025 suy từ số 9 tháng và cả năm.",
+   "ng": "VJC công bố (VnEconomy, SGGP, TBTC) · VNDS"
+  },
+  {
+   "ten": "Giá dầu hỏa hàng không Singapore",
+   "kieu": "duong",
+   "dv": "USD/thùng, bình quân 2 tháng",
+   "nhan": [
+    "12–1/25",
+    "2–3/25",
+    "4–5/25",
+    "6–7/25",
+    "8–9/25",
+    "10–11/25",
+    "12–1/26",
+    "2–3/26",
+    "4–5/26",
+    "6–7/26",
+    "8–9/26"
+   ],
+   "so_le": 0,
+   "ss": [
+    {
+     "ten": "Dầu hỏa hàng không",
+     "v": [
+      90.96,
+      88.25,
+      79.6,
+      85.96,
+      85.72,
+      89.86,
+      84.26,
+      146.99,
+      178.21,
+      132.5,
+      159.19
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "y": "Chiến sự từ 28/2/2026 đẩy giá lên 178 USD (4–5/2026); 8–9/2026 vẫn 159 — gần gấp đôi bình quân 2025 (~86).",
+   "ng": "JAL (công bố phụ thu nhiên liệu)"
+  },
+  {
+   "ten": "Lãi gộp theo quý: vận tải và thương mại tàu bay",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "so_le": 0,
+   "ss": [
+    {
+     "ten": "Vận tải",
+     "v": [
+      2404,
+      1989,
+      1695,
+      -1047,
+      2591,
+      -227
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Bán & thuê lại tàu bay",
+     "v": [
+      0,
+      428,
+      400,
+      2600,
+      223,
+      1928
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "Q2/2026 vận tải lỗ gộp 227 tỷ; quý vẫn lãi nhờ 1.928 tỷ từ thương mại tàu bay. Q4 là quý yếu nhất của vận tải.",
+   "ng": "BCTC; tách theo VNDS 04/05, FPTS 07/09 (Q2–Q4/2025 suy từ tăng trưởng FPTS nêu)"
+  },
+  {
+   "ten": "Doanh thu vận tải mỗi khách",
+   "kieu": "duong",
+   "dv": "triệu đồng",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "so_le": 2,
+   "ss": [
+    {
+     "ten": "Doanh thu mỗi khách",
+     "v": [
+      2.61,
+      2.32,
+      2.32,
+      2.32,
+      2.74,
+      2.96
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "y": "Q2/2026 +28% so với cùng kỳ: giá vé tăng (vận chuyển hành khách +26%) bù nhiên liệu, phụ trợ −22% vì ít khách.",
+   "ng": "BCTC · VNDS · FPTS · số khách VJC công bố"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu hợp nhất",
+    "kh": 86774,
+    "th": 51536,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 24/4/2026 · BCTC Q2"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 2421,
+    "th": 1562,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ (đã hạ từ 3.011) · BCTC Q2"
+   }
+  ],
+  "y": "6 tháng đạt 65% kế hoạch LNTT, nhưng 2,15 nghìn tỷ là lãi gộp bán & thuê lại; bỏ khoản này LNTT 6T âm ~0,6 nghìn tỷ. 6T cuối năm là mùa thấp điểm: mô hình cơ sở cả năm lỗ trước thuế ~0,5 nghìn tỷ.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "FPTS",
+   "ngay": "2026-09-07",
+   "kn": "THEO DÕI",
+   "tp": 136200,
+   "ln26": 1152,
+   "ln27": null,
+   "pp": "FCFF",
+   "y": "Giả định Mỹ – Iran ký hòa bình: nhiên liệu 2027 −32,6%, lãi gộp vận tải và LNST tăng ~69%/năm 2027–2030. 2026 vẫn lãi nhờ thương mại tàu bay (lãi gộp 4.080 tỷ); dự báo Q3 lỗ 508 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VJC/theo_doi_bao_cao_cap_nhat_nhanh_fpts_07_09_2026.pdf"
+  },
+  {
+   "ctck": "VNDS",
+   "ngay": "2026-05-04",
+   "kn": "KHÁC",
+   "tp": 113600,
+   "ln26": 6066,
+   "ln27": null,
+   "pp": "",
+   "y": "Q1/2026 thấp hơn kỳ vọng (16,7% dự phóng năm — LN 2026F ~6,1 nghìn tỷ) vì giả định bàn giao tàu mạnh hơn; biên gộp vận tải 12,3% (Q1/2025: 13,4%), chi phí bán hàng, quản lý +28,5%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VJC/Luong_hanh_khach_tang_truong_khiem_ton.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Giá mục tiêu VNDS 113.600 đ ghi trước đợt thưởng 30% cổ phiếu (GDKHQ 16/6/2026) nên trang quy đổi ÷1,3 (~87.400 đ). VNDS chưa tính cú sốc nhiên liệu từ quý 2.",
+ "nguon": [
+  {
+   "ten": "FPTS — Báo cáo cập nhật nhanh VJC",
+   "ngay": "07/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VJC/theo_doi_bao_cao_cap_nhat_nhanh_fpts_07_09_2026.pdf"
+  },
+  {
+   "ten": "VNDS — Lượng hành khách tăng trưởng khiêm tốn (KQKD Q1/2026)",
+   "ngay": "04/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VJC/Luong_hanh_khach_tang_truong_khiem_ton.pdf"
+  },
+  {
+   "ten": "Vietjet — Giải trình BCTC Q4/2025 (khách, chuyến bay, đường bay 2025)",
+   "ngay": "01/2026",
+   "link": "https://ir.vietjetair.com/File_Upload/financial-information/financial-reports/2025/CV%20Giai%20trinh%20BCTC%20Q4%202025-v8%203001.pdf"
+  },
+  {
+   "ten": "VnEconomy — VJC lãi quý 2/2026 giảm dù doanh thu tăng (khách, chuyến 6T/2026)",
+   "ngay": "07/2026",
+   "link": "https://vneconomy.vn/vjc-ghi-nhan-lai-quy-22026-giam-du-tang-truong-doanh-thu.htm"
+  },
+  {
+   "ten": "VietnamBiz — ĐHĐCĐ Vietjet: doanh thu 86.774 tỷ, lợi nhuận 2.421 tỷ năm 2026",
+   "ngay": "24/04/2026",
+   "link": "https://vietnambiz.vn/live-dhdcd-vietjet-muc-tieu-doanh-thu-hop-nhat-86774-ty-dong-loi-nhuan-2421-ty-dong-nam-2026-202642415598671.htm"
+  },
+  {
+   "ten": "DNSE — ĐHĐCĐ Vietjet hạ mục tiêu lợi nhuận 2026 vì xung đột Trung Đông",
+   "ngay": "24/04/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/live-hc-vietjet-ieu-chinh-muc-tieu-loi-nhuan-2026-con-2421-ty-ong-vi-xung-ot-trung-ong-35220235"
+  },
+  {
+   "ten": "Stockbiz — Chốt quyền 16/6/2026: Vietjet cổ tức cổ phiếu 30%",
+   "ngay": "06/2026",
+   "link": "https://stockbiz.vn/tin-tuc/chot-quyen-ngay-1662026-loat-doanh-nghiep-chia-co-tuc-vietjet-noi-bat-voi-ty-le-co-phieu-30/40483459"
+  },
+  {
+   "ten": "Mekong ASEAN — Vietjet phát hành hơn 177 triệu cổ phiếu trả cổ tức",
+   "ngay": "05/2026",
+   "link": "https://mekongasean.vn/vietjet-sap-phat-hanh-hon-177-trieu-co-phieu-tra-co-tuc-55442.html"
+  },
+  {
+   "ten": "SGGP — Vietjet 6 tháng 2025 (14,4 triệu khách, 79 nghìn chuyến)",
+   "ngay": "08/2025",
+   "link": "https://www.sggp.org.vn/vietjet-but-pha-manh-me-trong-6-thang-dau-nam-2025-doanh-thu-loi-nhuan-tang-truong-vuot-bac-post811005.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — Quý I/2025 (6,87 triệu khách)",
+   "ngay": "04/2025",
+   "link": "https://thoibaotaichinhvietnam.vn/quy-i2025-vietjet-dat-loi-nhuan-hop-nhat-tang-24-so-voi-cung-ky-175836.html"
+  },
+  {
+   "ten": "VnEconomy — Quý 3/2025 (9 tháng 21,5 triệu khách)",
+   "ngay": "10/2025",
+   "link": "https://vneconomy.vn/vietjet-tang-truong-manh-trong-quy-32025-chia-co-tuc-20-bang-co-phieu.htm"
+  },
+  {
+   "ten": "CAPA — VietJet Air có 108 tàu cuối Q1/2026",
+   "ngay": "05/2026",
+   "link": "https://centreforaviation.com/news/vietjet-air-reports-108-aircraft-at-end-of-1q2026-1363569"
+  },
+  {
+   "ten": "JAL — phụ thu nhiên liệu: dầu hỏa Singapore 8–9/2026 bình quân 159,19 USD/thùng",
+   "ngay": "10/2026",
+   "link": "https://press.jal.co.jp/en/release/202610/009766.html"
+  },
+  {
+   "ten": "JAL — phụ thu nhiên liệu: 6–7/2026 bình quân 132,50 USD/thùng",
+   "ngay": "08/2026",
+   "link": "https://press.jal.co.jp/en/release/202608/009670.html"
+  },
+  {
+   "ten": "Reuters/Platts (Engineering News) — nhiên liệu bay lập kỷ lục 231,42 USD/thùng",
+   "ngay": "05/03/2026",
+   "link": "https://www.engineeringnews.co.za/print-version/global-jet-fuel-prices-soar-on-supply-concerns-platts-says-2026-03-05"
+  },
+  {
+   "ten": "EIA — Short-Term Energy Outlook 10/2026",
+   "ngay": "10/2026",
+   "link": "https://www.eia.gov/outlooks/steo/archives/oct26.pdf"
+  },
+  {
+   "ten": "Mekong ASEAN — Bộ Xây dựng yêu cầu làm rõ phụ thu nhiên liệu bay nội địa",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/bo-xay-dung-yeu-cau-lam-ro-phuong-an-phu-thu-nhien-lieu-bay-noi-dia-53495.html"
+  },
+  {
+   "ten": "Tuổi Trẻ — Cục Hàng không tiếp tục đề xuất phụ thu nhiên liệu",
+   "ngay": "23/04/2026",
+   "link": "https://tuoitre.vn/vi-sao-cuc-hang-khong-tiep-tuc-de-xuat-phu-thu-nhien-lieu-voi-gia-ve-may-bay-20260423114914802.htm"
+  },
+  {
+   "ten": "Tạp chí Kinh tế Tài chính — thị trường hàng không Q1/2026",
+   "ngay": "04/2026",
+   "link": "https://tapchikinhtetaichinh.vn/moi-thang-nganh-hang-khong-phuc-vu-hon-8-trieu-luot-khach-153356.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — ĐHĐCĐ Vietjet 2026 (đơn hàng A321neo, A330neo)",
+   "ngay": "04/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/dhdcd-vietjet-2026-chia-co-tuc-30-tiep-tuc-mo-rong-mang-bay-thu-hut-dau-tu-quoc-te-196439.html"
+  },
+  {
+   "ten": "Báo Pháp luật — 2025 vượt kế hoạch, kỷ lục nhận 22 tàu trong một quý",
+   "ngay": "01/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vietjet-vjc-loi-nhuan-vuot-120-ke-hoach-xac-lap-ky-luc-tiep-nhan-22-tau-bay-trong-mot-quy.html"
+  },
+  {
+   "ten": "Finhay — tổng hợp KQKD VJC (Vietcap về Q3/2025)",
+   "ngay": "2026",
+   "link": "https://www.finhay.com.vn/en/co-phieu-vjc"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — Vietjet năm 2025 (phát hành 50 triệu cổ phiếu)",
+   "ngay": "01/2026",
+   "link": "https://thitruongtaichinhtiente.vn/doanh-thu-quy-iv-tang-47-vietjet-tang-truong-manh-me-mo-rong-mang-bay-quoc-te-trong-nam-2025-77539.html"
+  }
+ ]
+}
