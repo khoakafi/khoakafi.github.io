@@ -1496,9 +1496,10 @@
       cx = hsCx(t, raw);
       try { h += '<div class="hsPg" id="hsT1">' + hs.trang1(pf, cx) + '</div>'; } catch(e){ console.warn('hoso trang 1', e); }
       try { h += '<div class="hsPg" id="hsT2">' + hs.trang2(pf, cx) + '</div>'; } catch(e){ console.warn('hoso trang 2', e); }
+      // Ma co ho so: chi con bao cao (khong hien mo hinh dinh luong cu, the BCTC tu sinh, Soi BCTC, Cham diem 5 nam — tranh hai ket luan tren mot trang)
+      h = '<div class="pth"><b>Phân tích cơ bản chuyên sâu</b><span class="mini">' + esc(t) + ' · báo cáo phân tích · cập nhật '
+        + esc(String(pf.cap_nhat || '').split('-').reverse().join('/')) + '</span></div>' + h.replace(/^<div class="pth">[\s\S]*?<\/div>/, '');
       pl = '';
-      if (raw) pl += '<h4 class="hsPlH">Tín hiệu định lượng của trang <small>quy tắc cố định (rule-based), kiểm định 1.628 mã 2014–2026 · tính lại theo giá</small></h4><div id="ptDgO">' + dg + '</div>';
-      if (b3) pl += '<h4 class="hsPlH">Sức khỏe tài chính <small>quý gần nhất · biên và chi phí · vay nợ — từ BCTC VNDirect</small></h4><div class="btg3">' + b3 + '</div>';
       try { pl += '<div id="hsD">' + hs.phanD(pf, cx) + '</div>'; } catch(e){ console.warn('hoso phu luc', e); }
     } else {
       if (raw) h += '<div id="ptDgO">' + dg + '</div>';
@@ -1560,7 +1561,7 @@
       + 'Định giá so với trung vị ~4 năm của chính mã và trung vị ngành' + (d.loai !== 'dn' ? ' (dùng P/B cho ngân hàng, CTCK, bảo hiểm)' : '') + '. '
       + 'Cột 4 quý gần nhất không tính dòng tiền vì LCTT quý thường ghi lũy kế.</div>';
     gap += mucGap('ct5n', 'Chấm điểm 5 năm', cham.map(function(x){ var nh = x.dinhGia ? MUC_DG : MUC; return x.ten.charAt(0) + x.ten.slice(1).toLowerCase() + ' <span class="pm ' + x.m + '">' + nh[x.m] + '</span>'; }).join(' · ') + (fsc ? ' · Piotroski' : '') + ' · so với ngành · BCTC năm', nam);
-    h += pl != null ? mucGap('ctpl', 'Phụ lục', 'ngoài báo cáo · tín hiệu định lượng chi tiết · BCTC quý · vận hành, vĩ mô · báo cáo CTCK · nguồn · Soi BCTC · Chấm điểm 5 năm', pl + gap) : gap;
+    h += pl != null ? mucGap('ctpl', 'Phụ lục', 'vận hành từng mảng · vĩ mô → doanh nghiệp · báo cáo CTCK · nguồn', pl) : gap;
     el.innerHTML = h;
     el.style.display = '';
     el.querySelectorAll('.pl').forEach(function(a){ a.onclick = function(){ try { window.openDetail(a.dataset.t); window.scrollTo({ top: 0, behavior: 'smooth' }); } catch(e){} }; });

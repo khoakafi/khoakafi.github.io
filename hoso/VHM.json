@@ -45,7 +45,7 @@
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/B 1,5 lần vốn chủ: {up_so} so với giá hiện tại",
-   "t": "Giá trị = P/B × vốn chủ cổ đông 30/6/2027E (39,1 nghìn đ/cp); 1,5 lần ≈ trung vị P/B từ 2022 (1,58), hợp với ROE 2027E 18,5%. Xấu 36,9 (P/B 1,0 như 2024, doanh số 2027 170 nghìn tỷ); tốt 85,6 (P/B 2,0, doanh số 340 nghìn tỷ nhờ lô lớn mới). Tín hiệu định lượng ({mo}) đọc P/E 4 quý và LN quý — cả hai đang phình vì lô lớn; theo LN 2027E, P/E cao hơn 34%.",
+   "t": "Giá trị = P/B × vốn chủ cổ đông 30/6/2027E (39,1 nghìn đ/cp); 1,5 lần ≈ trung vị P/B từ 2022 (1,58), hợp với ROE 2027E 18,5%. Xấu 36,9 (P/B 1,0 như 2024, doanh số 2027 170 nghìn tỷ); tốt 85,6 (P/B 2,0, doanh số 340 nghìn tỷ nhờ lô lớn mới). P/E 4 quý trông rẻ vì lô lớn đẩy LN lên; tính trên LN 2027E, P/E cao hơn 34%.",
    "ng": "mô hình · P/B lịch sử: BCTC, giá cuối tháng"
   }
  ],
