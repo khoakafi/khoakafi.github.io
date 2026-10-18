@@ -295,7 +295,7 @@
   ],
   "buoc": [
    [
-    "Lãi bán SFinance 2026",
+    "Lãi SFinance 2026",
     -800
    ],
    [
@@ -969,7 +969,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "750 triệu cổ phiếu mới lên sàn",
-   "ct": "~434 triệu cp quyền mua (giá 12.500 đ, cao hơn giá 16/10) giao dịch tự do; 200 triệu cp riêng lẻ và 25 triệu cp nhóm PVI hạn chế 1 năm, ESOP 18 tháng.",
+   "ct": "~434 triệu cp quyền mua (giá 12.500 đ, cao hơn giá 16/10) phần lớn giao dịch tự do; 200 triệu cp riêng lẻ, 25 triệu cp nhóm PVI hạn chế 1 năm, ESOP 18 tháng.",
    "tac": [
     "ngắn hạn",
     "áp lực cung, không đổi giá trị"
@@ -1305,7 +1305,7 @@
    "ln26": null,
    "ln27": null,
    "pp": "P/B 2026F 1,2 lần",
-   "y": "Viết trước đợt hạ bội số ngân hàng: LNTT 2026F 16.632 tỷ (+10,7%) ở thân bài, 17.284 tỷ ở phụ lục; NIM 2,56%, tín dụng 14,7%; BVPS 2026F 16.714 đ đã gồm đợt tăng vốn.",
+   "y": "Viết khi giá 15.000 đ: LNTT 2026F 16.632 tỷ (+10,7%) ở thân bài, 17.284 tỷ ở phụ lục; NIM 2,56%, tín dụng 14,7%; BVPS 2026F 16.714 đ đã gồm đợt tăng vốn.",
    "link": "https://cdn.simplize.vn/simplizevn/report/SHB/Thu_hoi_no_xau_va_thoai_von_cong_ty_con_la_ong_luc_tang_truong.pdf"
   }
  ],

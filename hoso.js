@@ -239,7 +239,7 @@
     var tieu = typeof td === 'string' ? td : (dkDung(td.dk, o) ? td.t : (td.khac || td.t));
     return dauTrang(p, 1, 'Tổng quan') + '<div class="hsPgB"><div class="hsP1"><div class="hsP1m">'
       + '<div class="hsKick">' + esc(p.ma) + ' · ' + esc(p.ten) + (p.nganh ? ' · ' + esc(p.nganh) : '') + '</div>'
-      + '<h2 class="hsHl">' + esc(tieu || '') + '</h2><p class="hsSub">' + dien(p.dong_mo || '', o) + '</p>'
+      + '<h2 class="hsHl">' + esc(tieu || '') + '</h2><p class="hsSub">' + dien(dongMo(p, o), o) + '</p>'
       + nhan1('Luận điểm đầu tư') + luanDiem(p, o) + '</div>'
       + '<aside class="hsP1s">' + oKn(o) + thongTin(p, o, cx) + tomTat(p, o) + '</aside></div>'
       + '<div class="hsP1r">' + nhan1('Định giá 12 tháng', esc((p.dinh_gia && p.dinh_gia.phu) || 'tổng các phần trên LN 2027E') + ' · cách tính ở trang 2') + thangKb(p, o) + '</div>'
@@ -250,6 +250,8 @@
       + '<div class="hsFoot">Kỳ số liệu: ' + esc(p.ky || '') + ' · tổng hợp từ BCTC, công bố của doanh nghiệp và ' + soTl + ' tài liệu (' + soBc + ' báo cáo CTCK, chỉ tham khảo) · '
       + 'mô hình, định giá và số liệu chi tiết ở trang 2 · không phải khuyến nghị đầu tư.</div></div>';
   }
+  // dong_mo: chuoi hoac {t, dk, khac} nhu tieu_de (cau phu thuoc gia)
+  function dongMo(p, o){ var d = p.dong_mo; if (!d) return ''; if (typeof d === 'string') return d; return dkDung(d.dk, o) ? (d.t || '') : (d.khac || d.t || ''); }
   function hang2(a, b){ return a && b ? '<div class="hs2 hsP1r hsP1c"><div>' + a + '</div><div>' + b + '</div></div>' : (a || b ? '<div class="hsP1r">' + (a || b) + '</div>' : ''); }
   function luanDiem(p, o){
     return '<div class="hsLdL">' + (p.luan_diem || []).map(function(z){ if (!dkDung(z.dk, o)) z = z.khac; if (!z) return '';
@@ -437,7 +439,10 @@
     return t + '</table>' + (M.ghi ? '<div class="hsY">' + esc(M.ghi) + '</div>' : '');
   }
   function bangGiaDinh(p){
-    return '<table class="hsGd"><colgroup><col style="width:22%"><col style="width:7%"><col style="width:7%"><col style="width:7%"><col></colgroup><tr><th>Biến số</th><th>Xấu</th><th>Cơ sở</th><th>Tốt</th><th>Căn cứ</th></tr>'
+    // cot gia tri rong theo chuoi dai nhat (vd "2,75% · 2,85%"), qua dai thi xuong dong thay vi de sang cot ben
+    var mx = Math.max.apply(null, p.gia_dinh.map(function(g){ return Math.max.apply(null, (g.v || []).map(function(v){ return String(v).length; }).concat([0])); })),
+      cw = mx > 11 ? 10 : (mx > 8 ? 8.5 : 7);
+    return '<table class="hsGd"><colgroup><col style="width:22%">' + [0, 1, 2].map(function(){ return '<col style="width:' + cw + '%">'; }).join('') + '<col></colgroup><tr><th>Biến số</th><th>Xấu</th><th>Cơ sở</th><th>Tốt</th><th>Căn cứ</th></tr>'
       + p.gia_dinh.map(function(g){ return '<tr><td>' + esc(g.ten) + '</td>' + g.v.map(function(v, i){ return '<td class="' + (i === 1 ? 'cs' : 'v') + '">' + esc(v) + '</td>'; }).join('') + '<td class="ld">' + esc(g.ly_do || '') + '</td></tr>'; }).join('')
       + '</table>';
   }
@@ -733,7 +738,7 @@
       + '#ptcs .hsRg i.tt{width:11px;height:11px;margin:-5.5px 0 0 -5.5px;background:#2a78d6;transform:rotate(45deg);box-shadow:0 0 0 1.5px #fff;z-index:2}#ptcs .hsRgL{text-align:center;font-size:10.5px;color:var(--muted);margin-top:1px}#ptcs .hsRgL b{color:var(--text);margin:0 5px}#ptcs .hsRgN{text-align:center;font-size:11.5px;color:#475569}'
       + '#ptcs .hsRc{flex:1;min-width:0}#ptcs .hsRh{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}#ptcs .hsTac{margin-left:auto;font-size:11.5px;font-weight:700;color:#334155;background:#F1F3F6;border-radius:6px;padding:1px 8px;white-space:nowrap}'
       + '#ptcs table.hsGd{width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed}#ptcs table.hsGd th{font-size:11px;color:var(--muted);text-align:left;padding:4px 6px;border-bottom:1px solid var(--border);text-transform:none;letter-spacing:0}'
-      + '#ptcs table.hsGd td{padding:5px 6px;border-bottom:1px solid #F1F3F6;vertical-align:top}#ptcs table.hsGd td.v,#ptcs table.hsGd td.cs{white-space:nowrap;text-align:center}#ptcs table.hsGd td.cs{font-weight:800;background:#F6F8FA}#ptcs table.hsGd td.ld{color:var(--muted);font-size:11.5px;line-height:1.45;white-space:normal;overflow-wrap:anywhere}#ptcs table.hsGd td{white-space:normal;text-align:left}#ptcs table.hsGd td.v,#ptcs table.hsGd td.cs{text-align:center}'
+      + '#ptcs table.hsGd td{padding:5px 6px;border-bottom:1px solid #F1F3F6;vertical-align:top}#ptcs table.hsGd td.v,#ptcs table.hsGd td.cs{white-space:normal;text-align:center}#ptcs table.hsGd td.cs{font-weight:800;background:#F6F8FA}#ptcs table.hsGd td.ld{color:var(--muted);font-size:11.5px;line-height:1.45;white-space:normal;overflow-wrap:anywhere}#ptcs table.hsGd td{white-space:normal;text-align:left}#ptcs table.hsGd td.v,#ptcs table.hsGd td.cs{text-align:center}'
       + '#ptcs .hsTn{display:flex;flex-direction:column;gap:5px}#ptcs .hsTnr{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) 46px;gap:8px;align-items:center;font-size:12px;cursor:default}'
       + '#ptcs .hsTnb{position:relative;height:12px;background:linear-gradient(90deg,transparent calc(50% - .5px),#9AA3AE calc(50% - .5px),#9AA3AE calc(50% + .5px),transparent calc(50% + .5px))}#ptcs .hsTnb i{position:absolute;top:0;bottom:0}'
       + '#ptcs .hsTnb i.dn{right:50%;background:#F3A3A6;border-radius:3px 0 0 3px}#ptcs .hsTnb i.up{left:50%;background:#9ED9B4;border-radius:0 3px 3px 0}#ptcs .hsTnr b{text-align:right}'

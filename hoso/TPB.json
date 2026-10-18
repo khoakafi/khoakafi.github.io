@@ -32,7 +32,7 @@
    "so": "2,95%",
    "nhan": "NIM 4 quý (Q2/2024: 4,03%)",
    "tieu": "Tín dụng chạy trước nguồn vốn, NIM giảm 8 quý liền",
-   "t": "Dư nợ 6T +10,6% nhưng tiền gửi khách hàng chỉ +3,4%: dư nợ/tiền gửi từ 103% (cuối 2024) lên 117%, phần thiếu bù bằng liên ngân hàng (~24% nợ phải trả) và giấy tờ có giá; CASA 22,5% → 21,0%. Cho vay trung dài hạn lên 64,6% chưa bù được chi phí vốn 4 quý (+61 điểm cơ bản). Cơ sở giữ NIM 2,8% — mức Q1–Q2/2026 — đến hết 2027; mỗi 10 điểm cơ bản ≈ ±1,9 nghìn đ/cp.",
+   "t": "Dư nợ 6T +10,6% nhưng tiền gửi khách hàng chỉ +3,4%: dư nợ/tiền gửi từ 103% (cuối 2024) lên 117%; nguồn bù là liên ngân hàng (~24% nợ phải trả cuối 2025) và giấy tờ có giá; CASA 22,5% → 21,0%. Cho vay trung dài hạn lên 64,6% chưa bù được chi phí vốn 4 quý (+61 điểm cơ bản đến Q1/2026). Cơ sở giữ NIM 2,8% — mức Q1–Q2/2026 — đến hết 2027; mỗi 10 điểm cơ bản ≈ ±1,9 nghìn đ/cp.",
    "ng": "BCTC · MBS 05/10 · MAS 25/06 · SSI 24/03 · mô hình"
   },
   {
@@ -989,7 +989,7 @@
   {
    "ten": "Dư nợ vượt tiền gửi khách hàng ngày càng xa",
    "kieu": "duong",
-   "dv": "% (dư nợ ÷ tiền gửi khách hàng)",
+   "dv": "%",
    "so_le": 0,
    "nhan": [
     "Q4/23",
@@ -1421,7 +1421,7 @@
      "ng": "SSI 24/03"
     },
     {
-     "t": "Chứng khoán Tiên Phong hợp nhất từ 12/2025 (sở hữu 51%); vốn điều lệ TPS 6.239 tỷ, 60% dành cho cho vay ký quỹ.",
+     "t": "Chứng khoán Tiên Phong hợp nhất từ 12/2025 (sở hữu 51%); đợt tăng vốn đưa vốn điều lệ TPS lên 6.239 tỷ, 60% tiền thu dành cho cho vay ký quỹ.",
      "ng": "MAS 25/06"
     }
    ]

@@ -345,7 +345,7 @@
     "1,5",
     "1,85"
    ],
-   "ly_do": "Hiện 1,88. 1,1 = đáy từ 2023 (05/2024); 1,5 ≈ (ROE 2027E − 7%) ÷ (13,5% − 7%); 1,85 ≈ hiện tại, trên trung vị từ 2025 (1,77)"
+   "ly_do": "Hiện 1,88. Kiểm (ROE 2027E − 7%) ÷ (13,5% − 7%): xấu 0,64 — lấy 1,1 = đáy từ 2023 vì đấu giá vẫn còn sau 12 tháng; cơ sở 1,48; tốt 2,1 — lấy 1,85"
   }
  ],
  "kich_ban": [
@@ -760,7 +760,7 @@
    1.88
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Kịch bản dùng P/B 1,1 · 1,5 · 1,85: xấu = đáy từ 2023 (1,10); cơ sở giữa trung vị từ 2023 (1,35) và từ 2025 (1,77), khớp ROE 2027E 16,6%; tốt ≈ hiện tại 1,88. Trung vị từ 2015 (1,15) thuộc giai đoạn tái cơ cấu nặng nhất."
+  "dung": "Kịch bản dùng P/B 1,1 · 1,5 · 1,85: xấu = đáy từ 2023 (1,10); cơ sở giữa trung vị từ 2023 (1,35) và từ 2025 (1,77), khớp ROE 2027E 16,6%; tốt thấp hơn mức ROE 20,7% cho phép (2,1). Trung vị từ 2015 (1,15) thuộc giai đoạn tái cơ cấu nặng nhất."
  },
  "nhay": [
   [
@@ -1458,7 +1458,7 @@
    "y": [
     {
      "h": -1,
-     "t": "Nghị định 86/2024 buộc trích lập thêm cho nợ xử lý tài sản bảo đảm kéo dài; chính sách giãn nợ hết hiệu lực làm lộ nợ xấu thật của 2022–2023.",
+     "t": "Nghị định 86/2024 làm áp lực trích lập tăng đột biến; chính sách giãn nợ hết hiệu lực làm lộ nợ xấu thật từ giai đoạn khó khăn 2022–2023.",
      "ng": "MBS 15/04 · SHS 12/03"
     },
     {
