@@ -354,6 +354,17 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   1 cổ phiếu (đợt sau `cap_nhat`) và giá mục tiêu CTCK (đợt sau ngày báo cáo); `sotp.con` nhận danh sách (nhiều công ty con/liên kết niêm yết, giá sống);
   `ln_mang.tong_ten` cho cơ cấu thu nhập ngân hàng; `dk: 'up_duoi:x'` cho câu "đã vào giá". `23000` VNDirect có quý sai (SSI) — đối chiếu tài liệu.
 
+- **Đủ top 30 trên web (18/10/2026 tối).** MWG, FPT, VCB, HPG, SSI, VHM, ACB, MBB, BSR, VNM, PLX, CTG, TCB, VPB, BID, PNJ, MSN, VJC, HDB, MSB,
+  SHB, STB, TPB, FRT, PVT, PVS, DCM, DXG, VSC, GVR (giá 16/10: 16 TÍCH CỰC · 8 KHẢ QUAN · 6 TIÊU CỰC). Làm lại mỗi quý sau BCTC (chạy lại
+  `mo-hinh/<MA>.py`, tăng ngày trong `hoso/index.json`); PNJ phải làm lại sau ĐHĐCĐ bất thường 21/10 (dự phòng kim cương 7.071 tỷ, chào bán 550 triệu cp).
+  **Anh Khoa 18/10: mã có hồ sơ bỏ hẳn khung cũ** (chip định lượng, Soi BCTC, Chấm điểm 5 năm, thẻ BCTC tự sinh) — hộp khuyến nghị = mức theo giá trị cơ
+  sở của chính báo cáo (`mucHs`: tiềm năng ≥ +15% TÍCH CỰC, < −5% TIÊU CỰC, còn lại KHẢ QUAN, tính lại theo giá; ngưỡng là em chọn, anh Khoa chưa duyệt
+  số); Phụ lục chỉ còn `phanD`. P/E 4 quý, P/B trên trang tính theo số cp của báo cáo (`pe4q`, `pbSong`). Nội dung không nhắc "mô hình định lượng".
+  `dinh_gia.no_rong` (nợ vay ròng công ty mẹ cố định, MSN, VSC), `sotp.con[]` nhiều công ty con (vượt vốn hóa thì vẽ vạch), `dong_mo` có điều kiện,
+  `pe_ls.ref` (mốc tham chiếu riêng). Bộ chụp thử + bản giao việc lưu ở kafi-core `research/ho-so/test/` và `GIAO-VIEC.md` (thư mục tạm mất khi hết phiên).
+  **Giới hạn sử dụng:** 12–14 tác tử chạy song song chạm giới hạn phiên sau ~3,5 giờ (2 lần); tác tử dừng giữa chừng tiếp tục bằng SendMessage sau giờ mở lại.
+  Tin nhạy cảm (PNJ: vụ P-Lab) đối chiếu bản gốc bài báo qua runner (`them.txt` → nhánh `ho-so-data`) trước khi đưa lên.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
