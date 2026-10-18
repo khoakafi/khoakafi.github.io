@@ -14,7 +14,7 @@
   "dk": "up_tren:15",
   "khac": "Vonfram trả bớt nợ, tiêu dùng tăng hai chữ số: chiết khấu holding đã thu hẹp"
  },
- "dong_mo": "Theo giá thị trường, phần MSN nắm ở TCB, MSR và Masan Consumer đáng {con_pct} vốn hóa — chiết khấu sâu hơn nhiều so với nợ ròng công ty mẹ (~40.100 tỷ). Vonfram đưa LN cổ đông 2026E lên ~10.450 tỷ, gấp 2,5 lần. Tổng các phần trừ 35% chiết khấu: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Theo giá thị trường, phần MSN nắm ở TCB, MSR và Masan Consumer đáng {con_pct} vốn hóa — chiết khấu sâu hơn nhiều so với nợ ròng công ty mẹ (~40.100 tỷ). Vonfram đưa LN cổ đông 2026E lên ~10.450 tỷ, gấp 2,5 lần. Tổng các phần trừ nợ công ty mẹ và chi phí tập đoàn: {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
    "so": "{con_pct}",
@@ -27,7 +27,7 @@
     "so": "{con_pct}",
     "nhan": "vốn hóa MSN là giá trị phần nắm ở TCB, MSR, MCH (giá sàn)",
     "tieu": "Chiết khấu so với các phần niêm yết đã hẹp lại",
-    "t": "Phần MSN nắm ở TCB (19,7%), MSR (87,5%) và Masan Consumer (65,7%) theo giá sàn bằng {con_pct} vốn hóa. Trừ nợ ròng công ty mẹ ~40.100 tỷ (30/6) và chi phí tập đoàn, mức chiết khấu còn lại đã về gần mức mô hình dùng (35%)."
+    "t": "Phần MSN nắm ở TCB (19,7%), MSR (87,5%) và Masan Consumer (65,7%) theo giá sàn bằng {con_pct} vốn hóa. Trừ nợ ròng công ty mẹ ~40.100 tỷ (30/6) và chi phí tập đoàn, mức chiết khấu đã về gần mức mô hình tính (~26% tổng các phần)."
    }
   },
   {
@@ -47,8 +47,8 @@
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
-   "tieu": "Tổng các phần, chiết khấu 35%: {up_so} so với giá hiện tại",
-   "t": "65,7% Masan Consumer × P/E 17 (trung vị lịch sử 16,1; thị trường đang trả ~22,3 lần LN 2027E), 19,7% TCB × 7,5, 87,5% MSR × 15 (Elmet trả ~16,9 lần LN 2027E cơ sở), bán lẻ, thịt, Phúc Long × 18; trừ 35% chiết khấu công ty mẹ, gồm ~36.800 tỷ nợ ròng sau tiền Elmet. Xấu 58,3 (APT 1.300 USD, P/E MCH 13), tốt 125,5.",
+   "tieu": "Tổng các phần trừ nợ công ty mẹ: {up_so} so với giá hiện tại",
+   "t": "65,7% Masan Consumer × P/E 17 (trung vị lịch sử 16,1; thị trường đang trả ~22,3 lần LN 2027E), 19,7% TCB × 7,5, 87,5% MSR × 15 (Elmet trả ~16,9 lần LN 2027E cơ sở), bán lẻ, thịt, Phúc Long × 18; trừ 10% chi phí tập đoàn và 36.764 tỷ nợ ròng công ty mẹ (30/6, sau tiền Elmet). Xấu 56,7 (APT 1.300 USD, P/E MCH 13), tốt 149,8.",
    "ng": "mô hình · P/E lịch sử MCH, TCB: BCTC VNDirect"
   }
  ],
@@ -412,13 +412,22 @@
    "ly_do": "TCB từ 2018: thấp 10% 5,5, trung vị 8,6; MSR: Elmet trả 2,5 tỷ USD (~16,9 lần LN 2027E cơ sở), chu kỳ nên LN đáy được trả P/E cao hơn"
   },
   {
-   "ten": "Chiết khấu công ty mẹ",
+   "ten": "Chi phí tập đoàn ngoài lãi vay (% tổng các phần)",
    "v": [
-    "35%",
-    "35%",
-    "35%"
+    "10%",
+    "10%",
+    "10%"
    ],
-   "ly_do": "Nợ ròng công ty mẹ ~36.800 tỷ sau tiền Elmet ≈ 16% tổng các phần + chi phí tập đoàn; VDS: nợ ròng rồi trừ 15% ≈ 31%"
+   "ly_do": "2.037 tỷ năm 2025, 776 tỷ 6T/2026 (~1.800 tỷ/năm) × P/E bình quân các phần ~13; lãi vay đã nằm trong nợ ròng trừ riêng"
+  },
+  {
+   "ten": "Nợ vay ròng công ty mẹ (tỷ, mọi kịch bản)",
+   "v": [
+    "36.764",
+    "36.764",
+    "36.764"
+   ],
+   "ly_do": "40.058 tỷ 30/6/2026 = BCTC hợp nhất − BCTC MCH, MSR, MML; trừ 3.293 tỷ bán 4,99% MSR cho Elmet (10/2026). Chưa trừ đợt 5,01%"
   }
  ],
  "kich_ban": [
@@ -426,28 +435,28 @@
    "ten": "Xấu",
    "ln26": 8631,
    "ln27": 5956,
-   "gia": 58.3,
-   "mo_ta": "APT 2027 1.300 USD, MCH +2%, WinCommerce biên 1,6%, LN TCB theo kịch bản xấu; P/E MCH 13, TCB 6, MSR 16; chiết khấu 35%"
+   "gia": 56.7,
+   "mo_ta": "APT 2027 1.300 USD, MCH +2%, WinCommerce biên 1,6%, LN TCB theo kịch bản xấu; P/E MCH 13, TCB 6, MSR 16; trừ nợ ròng công ty mẹ"
   },
   {
    "ten": "Cơ sở",
    "ln26": 10450,
    "ln27": 11160,
-   "gia": 95.1,
-   "mo_ta": "APT 2.000 USD, MCH +11%, WinCommerce +17% biên 2,2%; P/E MCH 17, TCB 7,5, MSR 15, bán lẻ & khác 18; chiết khấu 35%"
+   "gia": 107.8,
+   "mo_ta": "APT 2.000 USD, MCH +11%, WinCommerce +17% biên 2,2%; P/E MCH 17, TCB 7,5, MSR 15, bán lẻ & khác 18; trừ nợ ròng công ty mẹ"
   },
   {
    "ten": "Tốt",
    "ln26": 11869,
    "ln27": 15922,
-   "gia": 125.5,
-   "mo_ta": "APT 2.800 USD, MCH +15%, WinCommerce biên 2,8%; P/E MCH 21, TCB 8,6, MSR 11, bán lẻ & khác 22; chiết khấu 35%"
+   "gia": 149.8,
+   "mo_ta": "APT 2.800 USD, MCH +15%, WinCommerce biên 2,8%; P/E MCH 21, TCB 8,6, MSR 11, bán lẻ & khác 22; trừ nợ ròng công ty mẹ"
   }
  ],
  "dinh_gia": {
   "tieu": "Định giá theo từng phần",
-  "phu": "P/E × LN 2027E từng phần, trừ chiết khấu công ty mẹ",
-  "ck": 0.35,
+  "phu": "P/E × LN 2027E từng phần, trừ chi phí tập đoàn và nợ vay ròng công ty mẹ",
+  "ck": 0.1,
   "cp": 1535.0,
   "phan": [
    {
@@ -540,15 +549,17 @@
    }
   ],
   "von": [
-   89465,
-   146016,
-   192572
+   87111,
+   165412,
+   229874
   ],
   "gia": [
-   58.3,
-   95.1,
-   125.5
-  ]
+   56.7,
+   107.8,
+   149.8
+  ],
+  "no_rong": 36764,
+  "no_rong_ten": "Trừ nợ vay ròng công ty mẹ (30/6/2026, sau tiền Elmet)"
  },
  "pe_ls": {
   "loai": "P/E",
@@ -856,29 +867,29 @@
  },
  "nhay": [
   [
-   "Chiết khấu công ty mẹ ±5 điểm %",
+   "Giá APT 2027 ±500 USD/mtu",
+   1093,
+   9.6
+  ],
+  [
+   "Chi phí tập đoàn ±5 điểm %",
    null,
    7.3
   ],
   [
-   "Giá APT 2027 ±500 USD/mtu",
-   1093,
-   6.9
-  ],
-  [
    "P/E Masan Consumer ±2 lần",
    null,
-   4.6
+   6.3
   ],
   [
    "P/E Techcombank ±1 lần",
    null,
-   2.6
+   3.6
   ],
   [
-   "P/E bán lẻ, thịt, Phúc Long ±3 lần",
+   "Nợ ròng công ty mẹ ±5.000 tỷ",
    null,
-   2.5
+   3.3
   ]
  ],
  "theo_doi": [
@@ -929,8 +940,8 @@
    "tieu": "Bán tiếp tối đa 5,01% MSR",
    "ct": "Tối đa 55,36 triệu cp cho nhà đầu tư tổ chức (1–30/10), giá bằng thương vụ Elmet; ~3.300 tỷ về công ty mẹ, sở hữu MSR còn ~82,5%.",
    "tac": [
-    "−3.300 tỷ nợ ròng",
-    "khoảng −8% nợ ròng công ty mẹ (40.058 tỷ, 30/6)"
+    "+0,4 nghìn đ/cp",
+    "−3.300 tỷ nợ ròng (−9%), bán cao hơn giá trị MSR trong mô hình"
    ],
    "theo_doi": "kết quả bán, nợ ròng Q4"
   },
@@ -941,7 +952,7 @@
    "tieu": "Giá vonfram quay đầu",
    "ct": "APT gấp ~3 lần từ đầu năm vì Trung Quốc siết xuất khẩu; tháng 8 hiệp hội vonfram Cám Châu hạ dự báo giá, châu Âu chững quanh 3.000 USD/mtu.",
    "tac": [
-    "−9,7 nghìn đ/cp",
+    "−13,5 nghìn đ/cp",
     "nếu APT 2027 bình quân 1.300 USD thay vì 2.000"
    ],
    "theo_doi": "giá APT Rotterdam, biên gộp MSR"
@@ -953,8 +964,8 @@
    "tieu": "Nợ công ty mẹ chưa giảm",
    "ct": "Nợ ròng ngoài MCH, MSR, MML 40.058 tỷ (30/6), tăng 8.800 tỷ trong 3 quý; lãi vay và chi phí tập đoàn 2025 bằng 61% LN các mảng về MSN.",
    "tac": [
-    "±7,3 nghìn đ/cp",
-    "mỗi 5 điểm % chiết khấu công ty mẹ"
+    "±3,3 nghìn đ/cp",
+    "mỗi 5.000 tỷ nợ ròng công ty mẹ"
    ],
    "theo_doi": "nợ ròng hợp nhất, cổ tức MCH và TCB"
   },
@@ -965,7 +976,7 @@
    "tieu": "Masan Consumer giảm định giá",
    "ct": "MCH đang được trả ~22,3 lần LN 2027E (trung vị lịch sử 16,1) sau khi lên HOSE và vào VN30; mô hình dùng 17.",
    "tac": [
-    "±4,6 nghìn đ/cp",
+    "±6,3 nghìn đ/cp",
     "mỗi 2 lần P/E MCH"
    ],
    "theo_doi": "LN MCH theo quý"
@@ -976,7 +987,7 @@
    "tieu": "WinCommerce nâng biên",
    "ct": "Biên lãi ròng 1,2–2,4% theo quý; mục tiêu 2030 lãi 7.200 tỷ trên 120.000 tỷ doanh thu. Mỗi 0,5 điểm % biên 2027 ≈ 243 tỷ LN về MSN.",
    "tac": [
-    "+2,2 nghìn đ/cp",
+    "+3,1 nghìn đ/cp",
     "nếu biên 2027 đạt 2,8% thay vì 2,2%"
    ],
    "theo_doi": "biên lãi ròng, doanh thu cửa hàng cũ"
