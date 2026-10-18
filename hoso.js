@@ -483,12 +483,12 @@
     return t + '</table>';
   }
   // P/E 4 quy cua chinh ma theo thang (mo ta) + vach muc thap 10% va trung vi; P/E vuot khung (LN gan 0) bo trong
-  // Vach tham chieu cho P/E-P/B lich su: L.ref [{v, ten}] (vd moc tu 2024 khi ma da dinh gia lai) hoac thap 10% + trung vi; gan nhau (< 7% bien do) thi gop nhan
+  // Vach tham chieu cho P/E-P/B lich su: L.ref [{v, ten}] (vd moc tu 2024 khi ma da dinh gia lai) hoac thap 10% + trung vi; gan nhau (< 12% bien do) thi gop nhan
   function refLs(L, d, v){
     var ds = (L.ref && L.ref.length ? L.ref : [{ v: L.p10, ten: 'thấp 10%' }, { v: L.tv, ten: 'trung vị' }]).filter(function(r){ return r && r.v != null; })
       .map(function(r){ return { v: r.v, ten: r.ten + ': ' + f(r.v, d), trai: 1 }; });
     var co = v.filter(function(x){ return x != null; }), bd = co.length ? Math.max.apply(null, co) - Math.min(0, Math.min.apply(null, co)) : 0;
-    for (var i = 1; i < ds.length; i++) if (bd > 0 && Math.abs(ds[i].v - ds[i - 1].v) / bd < 0.07) { ds[i].ten = ds[i - 1].ten + ' · ' + ds[i].ten; ds[i - 1].ten = ''; }
+    for (var i = 1; i < ds.length; i++) if (bd > 0 && Math.abs(ds[i].v - ds[i - 1].v) / bd < 0.12) { ds[i].ten = ds[i - 1].ten + ' · ' + ds[i].ten; ds[i - 1].ten = ''; }
     return ds;
   }
   function peLichSu(p){
