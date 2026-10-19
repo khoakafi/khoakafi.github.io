@@ -36,12 +36,20 @@ export function docPdf(t) {
 if (process.argv[1] && process.argv[1].endsWith('lai-suat-thang.mjs') && !process.env.CHI_THU) {
   const db = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, 'utf8')) : { nguon: 'NHNN — Diễn biến lãi suất của TCTD đối với khách hàng (PDF hằng tháng)', thang: {} };
   const home = tai(BASE + '/').toString('utf8'); await ngu(4000);
-  const l = (home.match(/href="((?:https:\/\/sbv\.gov\.vn)?\/(?:vi\/)?w\/di%E1%BB%85n-bi%E1%BA%BFn-l%C3%A3i-su%E1%BA%A5t[^"#?]*)"/i) || [])[1];
-  if (!l) { console.log('Trang chu NHNN khong co link "Dien bien lai suat" — khong doi gi'); process.exit(0); }
+  let baiSan = null;
+  let l = (home.match(/href="((?:https:\/\/sbv\.gov\.vn)?\/(?:vi\/)?w\/di%E1%BB%85n-bi%E1%BA%BFn-l%C3%A3i-su%E1%BA%A5t[^"#?]*)"/i) || [])[1];
+  if (!l) {
+    // 19/10/2026: bai thuong khong len trang chu -> thu thang link thang KE TIEP (cung mau link bai 8/2026). 404 = NHNN chua dang.
+    const cuoi = Object.keys(db.thang).sort().pop() || '2026-08';
+    let [y, m] = cuoi.split('-').map(Number); m++; if (m > 12) { m = 1; y++; }
+    l = '/w/' + encodeURIComponent(`diễn-biến-lãi-suất-của-tổ-chức-tín-dụng-đối-với-khách-hàng-tháng-${m}`).replace(/%2F/g, '/') + '/' + y;
+    try { baiSan = tai(BASE + l, '/tmp/_ls_thu.html').toString('utf8'); } catch (e) { console.log('Trang chu khong co link; bai thang', `${m}/${y}`, 'chua co (', e.message.split(' ')[1], ') — khong doi gi'); process.exit(0); }
+    await ngu(4000);
+  }
   const km = decodeURIComponent(l).match(/tháng-(\d{1,2})\/(\d{4})/);
   const key = km ? `${km[2]}-${km[1].padStart(2, '0')}` : null;
   if (key && db.thang[key]) { console.log('Da co', key, '— khong doi gi'); process.exit(0); }
-  const bai = tai(l.startsWith('http') ? l : BASE + l).toString('utf8'); await ngu(4000);
+  const bai = baiSan || tai(l.startsWith('http') ? l : BASE + l).toString('utf8'); if (!baiSan) await ngu(4000);
   const p = (bai.match(/(\/documents\/[^"'\s>]+?\.pdf[^"'\s>]*)/i) || [])[1];
   if (!p) throw new Error('Bai khong co PDF: ' + l);
   tai(BASE + p.replace(/&amp;/g, '&'), '/tmp/_ls.pdf');
