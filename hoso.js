@@ -88,18 +88,19 @@
     z += '</div><div class="bdx">' + lbs.map(function(lb, i){ return '<span>' + ((o.moiNhan || hien[i]) ? esc(lb) : '') + '</span>'; }).join('') + '</div>';
     return '<div class="bdc">' + z + '</div>';
   }
-  // Cot chong: ss cung don vi, moi chuoi mot mau; tong ghi tren dinh cot
+  // Cot chong: ss cung don vi, moi chuoi mot mau; tong (rong) ghi tren dinh cot. Phan am (mang lo) chong xuong duoi vach 0
   function bdChong(ss, lbs, o){
-    o = o || {}; var n = lbs.length, fm = o.fm || function(v){ return f(v, 1); }, tong = [];
-    for (var i = 0; i < n; i++) tong.push(ss.reduce(function(s, x){ var v = x.v[i]; return s + (v > 0 ? v : 0); }, 0));
-    var mx = Math.max.apply(null, tong.concat([1e-9]));
-    var z = '<div class="bdz bdzn" style="height:' + (o.cao || 110) + 'px">';
+    o = o || {}; var n = lbs.length, fm = o.fm || function(v){ return f(v, 1); }, duong = [], am = [], tong = [];
+    for (var i = 0; i < n; i++) { var p = 0, q = 0; ss.forEach(function(x){ var v = x.v[i]; if (v > 0) p += v; else if (v < 0) q += v; }); duong.push(p); am.push(q); tong.push(p + q); }
+    var mx = Math.max.apply(null, duong.concat([1e-9])), mn = Math.min.apply(null, am.concat([0])), sp = mx - mn, nen = -mn / sp * 100;
+    var z = '<div class="bdz bdzn" style="height:' + (o.cao || 110) + 'px">' + (mn < 0 ? '<i class="bd0" style="bottom:' + nen.toFixed(1) + '%"></i>' : '');
     for (var j = 0; j < n; j++) {
       var tip = lbs[j] + ': ' + ss.map(function(s){ return s.ten + ' ' + (s.v[j] == null ? '—' : fm(s.v[j])); }).join(' · ') + ' · tổng ' + fm(tong[j]);
-      z += '<div class="bdk" title="' + esc(tip) + '">'; var day = 0;
-      ss.forEach(function(s){ var v = s.v[j]; if (!(v > 0)) return; var hh = v / mx * 100;
-        z += '<i class="bdb ' + s.cls + '" style="left:19%;width:62%;bottom:' + day.toFixed(2) + '%;height:' + hh.toFixed(2) + '%"></i>'; day += hh; });
-      z += '<em class="bdv" style="left:50%;bottom:' + day.toFixed(1) + '%">' + fm(tong[j]) + '</em></div>';
+      z += '<div class="bdk" title="' + esc(tip) + '">'; var len = nen, xuong = nen;
+      ss.forEach(function(s){ var v = s.v[j]; if (!v || !isFinite(v)) return; var hh = Math.abs(v) / sp * 100;
+        if (v > 0) { z += '<i class="bdb ' + s.cls + '" style="left:19%;width:62%;bottom:' + len.toFixed(2) + '%;height:' + hh.toFixed(2) + '%"></i>'; len += hh; }
+        else { xuong -= hh; z += '<i class="bdb am ' + s.cls + '" style="left:19%;width:62%;bottom:' + xuong.toFixed(2) + '%;height:' + hh.toFixed(2) + '%"></i>'; } });
+      z += '<em class="bdv" style="left:50%;bottom:' + len.toFixed(1) + '%">' + fm(tong[j]) + '</em></div>';
     }
     z += '</div><div class="bdx">' + lbs.map(function(lb){ return '<span>' + esc(lb) + '</span>'; }).join('') + '</div>';
     return '<div class="bdc">' + z + '</div>';
@@ -354,7 +355,7 @@
     var X = function(v){ return (v - lo) / (hi - lo) * 100; };
     var h = '<div class="hsSb">';
     if (sg.lo != null) h += '<div class="hsSbB" style="left:' + X(sg.lo).toFixed(2) + '%;width:' + (X(sg.hi) - X(sg.lo)).toFixed(2) + '%" title="Giá mục tiêu ' + sg.n + ' báo cáo CTCK, đã trừ cổ tức (tham khảo)"></div>'
-      + '<span class="hsSbBl' + (X(sg.hi) > 70 ? ' tr' : '') + '" style="left:' + (X(sg.hi) > 70 ? X(sg.lo) : X(sg.hi)).toFixed(2) + '%"><i class="dai">giá mục tiêu </i>' + sg.n + ' CTCK ' + f(sg.lo, 0) + '–' + f(sg.hi, 0) + '<i class="dai"> (tham khảo)</i></span>';
+      + '<span class="hsSbBl' + (X(sg.hi) > 70 ? ' tr' : '') + '" style="left:' + (X(sg.hi) > 70 ? X(sg.lo) : X(sg.hi)).toFixed(2) + '%"><i class="dai">giá mục tiêu </i>' + sg.n + ' CTCK ' + f(sg.lo, 0) + (f(sg.hi, 0) !== f(sg.lo, 0) ? '–' + f(sg.hi, 0) : '') + '<i class="dai"> (tham khảo)</i></span>';
     h += '<div class="hsSbT"></div><div class="hsSbR" style="left:' + X(o.xau).toFixed(2) + '%;width:' + (X(o.tot) - X(o.xau)).toFixed(2) + '%"></div>';
     [['x', 'Xấu', o.xau], ['c', 'Cơ sở', o.gt], ['t', 'Tốt', o.tot]].forEach(function(z){ if (z[2] == null) return; var d = o.gia > 0 ? (z[2] / o.gia - 1) * 100 : null;
       h += '<div class="hsSbM ' + z[0] + '" style="left:' + X(z[2]).toFixed(2) + '%"><i></i><span>' + z[1] + ' <b>' + f(z[2], 1) + '</b>' + (d != null ? ' <em class="' + lop(d) + '">' + pct(d) + '</em>' : '') + '</span></div>'; });
@@ -514,7 +515,7 @@
       + bdDuong([{ ten: ten, v: v, cls: 'ink' }], lbs, { truc: 1, cao: 120, tu0: 1, fm: function(x){ return f(x, d); }, fmTruc: function(x){ return f(x, ten === 'P/B' ? 1 : 0); }, nhanCuoi: 1,
           ref: refLs(L, d, v) }) + '</div>'
       + '<div class="hsY">' + (L.dung ? esc(L.dung) + ' ' : (gd ? 'Kịch bản dùng P/E DMX <b>' + esc(gd.v[0]) + ' · ' + esc(gd.v[1]) + ' · ' + esc(gd.v[2]) + '</b> — từ mức thấp 10% đến dưới trung vị. ' : ''))
-      + 'Thấp nhất ' + f(L.thap[1], d) + ' (' + L.thap[0].slice(5, 7) + '/' + L.thap[0].slice(0, 4) + ')' + (vuot ? '; ' + vuot + ' tháng P/E vượt ' + tran + ' (LN quá thấp) bỏ trống' : '')
+      + 'Thấp nhất ' + f(L.thap[1], d) + ' (' + L.thap[0].slice(5, 7) + '/' + L.thap[0].slice(0, 4) + ')' + (vuot ? '; ' + vuot + ' tháng P/E vượt ' + tran + ' bỏ trống cho dễ đọc trục' : '')
       + '. ' + ten + ' so với lịch sử không tự dự báo giá (kiểm định của trang).</div>';
   }
   function doNhay(p){
