@@ -85,10 +85,17 @@
         if (o.nhan) z += '<em class="bdv" style="left:' + (left + w / 2).toFixed(1) + '%;bottom:' + (v >= 0 ? bot + Math.max(hh, 1.5) : bot - 12).toFixed(1) + '%">' + fm(v) + '</em>'; });
       z += '</div>';
     }
-    var hien = {}; hien[0] = 1; hien[n - 1] = 1; [cmp[0], hl[0]].forEach(function(i){ if (i != null && !hien[i - 1] && !hien[i + 1]) hien[i] = 1; });
-    z += '</div><div class="bdx">' + lbs.map(function(lb, i){ return '<span>' + (((o.moiNhan && (n <= 8 || (n - 1 - i) % 2 === 0)) || hien[i]) ? esc(lb) : '') + '</span>'; }).join('') + '</div>';
+    // moiNhan: ghi moi nhan; qua 8 cot hoac nhan dai trong bieu do gon thi cach mot nhan tinh tu cot cuoi (khong ep nhan dau de khoi de nhau)
+    var cn = chatNhan(lbs, o.gon), cach = o.moiNhan ? ((n > 8 || cn === 1) ? 2 : 1) : 0, hien = {};
+    if (cach) for (var q = n - 1; q >= 0; q -= cach) hien[q] = 1; else { hien[0] = 1; hien[n - 1] = 1; }
+    [cmp[0], hl[0]].forEach(function(i){ if (i != null && !hien[i] && !hien[i - 1] && !hien[i + 1]) hien[i] = 1; });
+    z += '</div><div class="bdx' + (cn === 2 ? ' boc' : '') + '">' + lbs.map(function(lb, i){ return '<span>' + (hien[i] ? esc(lb) : '') + '</span>'; }).join('') + '</div>';
     return '<div class="bdc">' + z + '</div>';
   }
+  // Bieu do gon (4 bieu do/hang, ~270px), nhan rong hon cot: 1 = nhan ky (Q3/25, 2026E) -> cach mot nhan; 2 = ten danh muc -> xuong dong (an nhan la mat ten)
+  function chatNhan(lbs, gon){ var d = 0; lbs.forEach(function(lb){ d = Math.max(d, String(lb).length); });
+    if (!gon || lbs.length * (d * 5.8 + 4) <= 270) return 0;
+    return lbs.every(function(lb){ return /(^|\D)\d{2,4}(\D|$)/.test(String(lb)) || /^[QH]\d/i.test(String(lb)); }) ? 1 : 2; }
   // Cot chong: ss cung don vi, moi chuoi mot mau; tong (rong) ghi tren dinh cot. Phan am (mang lo) chong xuong duoi vach 0
   function bdChong(ss, lbs, o){
     o = o || {}; var n = lbs.length, fm = o.fm || function(v){ return f(v, 1); }, duong = [], am = [], tong = [];
@@ -103,7 +110,8 @@
         else { xuong -= hh; z += '<i class="bdb am ' + s.cls + '" style="left:19%;width:62%;bottom:' + xuong.toFixed(2) + '%;height:' + hh.toFixed(2) + '%"></i>'; } });
       z += '<em class="bdv" style="left:50%;bottom:' + len.toFixed(1) + '%">' + fm(tong[j]) + '</em></div>';
     }
-    z += '</div><div class="bdx">' + lbs.map(function(lb){ return '<span>' + esc(lb) + '</span>'; }).join('') + '</div>';
+    var cn = chatNhan(lbs, o.gon);
+    z += '</div><div class="bdx' + (cn === 2 ? ' boc' : '') + '">' + lbs.map(function(lb, i){ return '<span>' + (cn !== 1 || (n - 1 - i) % 2 === 0 ? esc(lb) : '') + '</span>'; }).join('') + '</div>';
     return '<div class="bdc">' + z + '</div>';
   }
   function nice(v){ var e = Math.pow(10, Math.floor(Math.log10(Math.abs(v) || 1))), m = v / e; return (m <= 1 ? 1 : m <= 2 ? 2 : m <= 2.5 ? 2.5 : m <= 5 ? 5 : 10) * e; }
@@ -410,18 +418,20 @@
       + (s.y || s.ng ? '<div class="hsY">' + dien(s.y || '', o) + (s.ng ? ' ' + esc(s.ng) + '.' : '') + '</div>' : '');
   }
   function daiKv(ds, chiSo, chiSoKv, mx){
-    var X = function(v){ return (Math.max(0, Math.min(v, mx)) / mx * 100).toFixed(1); }, buoc = mx <= 4 ? 1 : (mx <= 10 ? 2 : 5), tk = [];
+    // diem cua chinh ma vuot truc (den 3 lan) thi noi truc; xa hon thi ghim o mep phai, chu "vuot" chuyen sang trai de khong de len so
+    ds.forEach(function(r){ if (r.v != null && r.v > mx && r.v <= 3 * mx) { var t = r.v * 1.08, b = t <= 4 ? 1 : (t <= 10 ? 2 : (t <= 40 ? 5 : 10)); mx = Math.ceil(t / b) * b; } });
+    var X = function(v){ return (Math.max(0, Math.min(v, mx)) / mx * 100).toFixed(1); }, buoc = mx <= 4 ? 1 : (mx <= 10 ? 2 : (mx <= 40 ? 5 : 10)), tk = [];
     for (var t0 = 0; t0 <= mx + 1e-9; t0 += buoc) tk.push(t0);
     var h = '<div class="hsPk"><div class="hsPkH">' + esc(chiSo) + ': thị trường đang trả <i class="me"></i> so với doanh nghiệp cùng ngành <i class="kv"></i> (vạch: trung vị)</div>';
     ds.forEach(function(r){
       h += '<div class="hsPkR"><div class="hsPkT"><b>' + esc(r.ten) + '</b><small>' + esc(r.phu) + '</small></div><div class="hsPkB">';
       r.kv.forEach(function(k){ h += '<i class="kv" style="left:' + X(k[1]) + '%" title="' + esc(k[0] + ': ' + chiSoKv + ' ' + f(k[1], mx <= 4 ? 2 : 1)) + '"></i>'; });
-      var vuot = r.kv.filter(function(k){ return k[1] > mx; });
-      if (vuot.length) h += '<em class="vuot">' + vuot.map(function(k){ return esc(k[0]) + ' ' + f(k[1], 1); }).join(', ') + ' ›</em>';
+      var vuot = r.kv.filter(function(k){ return k[1] > mx; }), ngoai = r.v != null && r.v > mx;
+      if (vuot.length) h += '<em class="vuot' + (ngoai ? ' trai' : '') + '">' + (ngoai ? 'ngoài trục: ' : '') + vuot.map(function(k){ return esc(k[0]) + ' ' + f(k[1], 1); }).join(', ') + (ngoai ? '' : ' ›') + '</em>';
       h += '<i class="tv" style="left:' + X(r.tv) + '%" title="Trung vị cùng ngành ' + f(r.tv, 1) + '"></i>';
       if (r.v != null) { var lech = (r.v / r.tv - 1) * 100;
         h += '<i class="me" style="left:' + X(r.v) + '%" title="' + esc(r.ten + ': ' + f(r.v, 1) + ' lần, ' + (Math.abs(lech) < 10 ? 'ngang' : (lech < 0 ? 'thấp hơn' : 'cao hơn') + ' trung vị ' + f(Math.abs(lech), 0) + '%')) + '"></i>'
-          + '<b class="mel" style="left:' + X(r.v) + '%">' + f(r.v, mx <= 4 ? 2 : 1) + '</b>'; }
+          + '<b class="mel' + (ngoai ? ' ngoai' : '') + '" style="left:' + X(r.v) + '%">' + f(r.v, mx <= 4 ? 2 : 1) + (ngoai ? ' ›' : '') + '</b>'; }
       var lc = r.v != null ? (r.v / r.tv - 1) * 100 : null;
       h += '</div><div class="hsPkV">' + (lc == null ? '…' : (Math.abs(lc) < 10 ? '<b>ngang</b>' : '<b>' + pct(lc) + '</b>') + '<small>so với trung vị ' + f(r.tv, mx <= 4 ? 2 : 1) + '</small>') + '</div></div>';
     });
@@ -573,8 +583,8 @@
     var cot = b.kieu === 'cot' || b.kieu === 'cot_chong';
     var ss = b.ss.map(function(s, i){ return { ten: s.ten, v: s.v, cls: /^c[1-4]$/.test(s.mau || '') ? s.mau : MAU[i % MAU.length], net: !cot && (s.net != null ? !!s.net : i >= 2), cot: cot }; });   // mau co dinh theo doi tuong qua cac bieu do
     var d = b.so_le == null ? 0 : b.so_le, fm = function(v){ return f(v, d); }, ve, cao = gon ? 104 : 0;
-    if (b.kieu === 'cot_chong') ve = chuGiai(ss) + bdChong(ss, b.nhan, { fm: fm, cao: cao || 120 });
-    else if (b.kieu === 'cot') ve = chuGiai(ss) + bdCot(ss, b.nhan, { fm: fm, cao: cao || 110, nhan: ss.length === 1, moiNhan: 1 });
+    if (b.kieu === 'cot_chong') ve = chuGiai(ss) + bdChong(ss, b.nhan, { fm: fm, cao: cao || 120, gon: gon });
+    else if (b.kieu === 'cot') ve = chuGiai(ss) + bdCot(ss, b.nhan, { fm: fm, cao: cao || 110, nhan: ss.length === 1, moiNhan: 1, gon: gon });
     else ve = chuGiai(ss, fm) + bdDuong(ss, b.nhan, { fm: fm, cao: cao || 124, truc: 1, moiDiem: 1, moiNhan: !gon });
     return '<div class="hsBc' + (gon ? ' gon' : '') + '"' + (gon && b.y ? ' title="' + esc(b.y) + '"' : '') + '><div class="hsBt">' + esc(b.ten) + (b.dv ? ' <small>(' + esc(b.dv) + ')</small>' : '') + '</div>' + ve
       + (gon ? nguon(b.ng) : (b.y ? '<div class="hsY">' + esc(b.y) + nguon(b.ng) + '</div>' : nguon(b.ng))) + '</div>';
@@ -663,7 +673,7 @@
       + '#ptcs .bdb{position:absolute;border-radius:3px 3px 0 0;background:#C9CFD7}#ptcs .bdb.am{border-radius:0 0 3px 3px}#ptcs .bdb.hl{background:#18A34B}#ptcs .bdb.cmp{background:#7A828E}'
       + '#ptcs .bdb.c1,#ptcs .bdlg i.c1{background:#18A34B}#ptcs .bdb.c2,#ptcs .bdlg i.c2{background:#475569}#ptcs .bdb.c3,#ptcs .bdlg i.c3{background:#7C8BA1}#ptcs .bdb.c4,#ptcs .bdlg i.c4{background:#C3CCD8}'
       + '#ptcs .bd0{position:absolute;left:0;right:0;height:1px;background:#9AA3AE;z-index:1}#ptcs .bdv{position:absolute;transform:translate(-50%,-2px);font-style:normal;font-size:10.5px;font-weight:700;color:var(--text);white-space:nowrap;line-height:1;margin-bottom:2px}'
-      + '#ptcs .bdx{display:flex}#ptcs .bdx span{flex:1;min-width:0;text-align:center;font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:visible;margin-top:3px}'
+      + '#ptcs .bdx{display:flex}#ptcs .bdx span{flex:1;min-width:0;text-align:center;font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:visible;margin-top:3px}#ptcs .bdx.boc span{white-space:normal;line-height:1.15;overflow-wrap:anywhere;padding:0 1px}'
       + '#ptcs .bdd{position:relative;margin:6px 0 0}#ptcs .bdd.bddt{margin-left:34px}#ptcs .bds{position:absolute;inset:0;width:100%;height:100%;overflow:visible}'
       + '#ptcs .bdp{fill:none;stroke-width:2.2;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}#ptcs .bdp.net{stroke-dasharray:5 3}#ptcs .bdp.c1{stroke:#18A34B}#ptcs .bdp.c2{stroke:#475569}#ptcs .bdp.c3{stroke:#7C8BA1}#ptcs .bdp.c4{stroke:#A9B4C2}'
       + '#ptcs .bdg{stroke:#E6E9EE;stroke-width:1;vector-effect:non-scaling-stroke}#ptcs .bdr{stroke:#9AA3AE;stroke-width:1;stroke-dasharray:4 3;vector-effect:non-scaling-stroke}'
@@ -735,7 +745,7 @@
       + '#ptcs .hsPkB{position:relative;height:32px;background:linear-gradient(#E3E7EC,#E3E7EC) 0 22px/100% 1px no-repeat}#ptcs .hsPkB i{position:absolute;top:22px}'
       + '#ptcs .hsPkB i.kv{width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:#B8C0CB;box-shadow:0 0 0 1.5px #fff}#ptcs .hsPkB i.tv{width:2px;height:16px;margin:-8px 0 0 -1px;background:#64748B;border-radius:1px}'
       + '#ptcs .hsPkB i.me{width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%;background:var(--text);box-shadow:0 0 0 2px #fff;z-index:2}#ptcs .hsPkB b.mel{position:absolute;top:0;transform:translateX(-50%);font-size:11.5px;font-weight:800;white-space:nowrap;line-height:1.2}'
-      + '#ptcs .hsPkB em.vuot{position:absolute;right:0;top:0;font-style:normal;font-size:10px;color:var(--muted)}#ptcs .hsPkV{text-align:right;padding-top:8px;line-height:1.25}#ptcs .hsPkV b{display:block;font-size:13px;color:var(--text)}#ptcs .hsPkV small{font-size:10.5px;color:var(--muted)}'
+      + '#ptcs .hsPkB em.vuot{position:absolute;right:0;top:0;font-style:normal;font-size:10px;color:var(--muted)}#ptcs .hsPkB em.vuot.trai{right:auto;left:0}#ptcs .hsPkB b.mel.ngoai{transform:translateX(-100%)}#ptcs .hsPkV{text-align:right;padding-top:8px;line-height:1.25}#ptcs .hsPkV b{display:block;font-size:13px;color:var(--text)}#ptcs .hsPkV small{font-size:10.5px;color:var(--muted)}'
       + '#ptcs .hsPkX>div{position:relative;height:14px}#ptcs .hsPkX>div span{position:absolute;transform:translateX(-50%);font-size:10px;color:var(--muted)}'
       + '#ptcs .hsFf{margin-top:4px}#ptcs .hsFfR,#ptcs .hsFfX{display:grid;grid-template-columns:50px minmax(0,1fr) 96px;gap:10px;align-items:center}#ptcs .hsFfR{margin-top:9px}#ptcs .hsFfT{font-size:12.5px;color:#475569}#ptcs .hsFfR.cs .hsFfT{font-weight:800;color:var(--text)}'
       + '#ptcs .hsFfB{position:relative;display:flex;height:24px}#ptcs .hsFfB i{display:flex;align-items:center;justify-content:center;height:100%;margin-right:2px;font-style:normal;font-size:11px;font-weight:700;color:#fff;overflow:hidden;white-space:nowrap;cursor:default}'
