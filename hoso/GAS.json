@@ -1,0 +1,1468 @@
+{
+ "v": 2,
+ "ma": "GAS",
+ "ten": "Tổng Công ty Khí Việt Nam (PV GAS)",
+ "nganh": "Khí: khí khô, LNG, LPG",
+ "ky": "BCTC Q2/2026 · LNTT 9T/2026 sơ bộ",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 2412.9,
+ "cp_ng": "Vốn điều lệ 24.129,5 tỷ (BCTC Q2/2026) = 2.412,9 triệu cp, khớp số lưu hành trong báo cáo CTCK (2.413 triệu). Giá điều chỉnh lệch ×1,029 là cổ tức tiền 2.500 đ (GDKHQ 22/09/2026), không đổi số cp.",
+ "co_tuc": [
+  [
+   "2026-09-22",
+   2500,
+   "cổ tức tiền mặt 2025 (25%), thanh toán 20/11/2026"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Hơn một phần tư lãi kỷ lục năm 2026 đến từ giá dầu — Brent 2027 quyết định giá trị GAS"
+ },
+ "dong_mo": "9 tháng 2026 LNTT trên 16,6 nghìn tỷ (+31%), gấp 1,5 lần kế hoạch năm, nhờ lãi gộp khí mỗi m³ chạy theo giá dầu. Cơ sở: Brent 2027 bình quân 78 USD, LN cổ đông lùi về ~13,8 nghìn tỷ (−17%); P/E 14 cho {gt} ({up}), cán cân lên/xuống {rr} lần. Mỗi ±10 USD Brent đổi ±9,8 nghìn đ/cp.",
+ "luan_diem": [
+  {
+   "so": "+80%",
+   "nhan": "lãi gộp khí khô & LNG quý 2/2026",
+   "tieu": "Chênh lệch giá dầu – giá miệng giếng là cỗ máy lãi 2026",
+   "t": "Khí mỏ cũ mua theo giá miệng giếng cố định nhưng bán theo giá dầu nhiên liệu: Brent bình quân 6 tháng từ 71 lên 90 USD đưa lãi gộp mỗi m³ từ 1.735 lên 2.332 đ; trên 3 nửa năm gần nhất, mỗi 1 USD ≈ 29 đ/m³. Quý 2 lãi gộp khí khô & LNG 5.525 tỷ (+80%); 9 tháng LNTT trên 16,6 nghìn tỷ. Mô hình: ~4,6 nghìn tỷ LN 2026E (27%) là phần vượt mức dầu năm 2025.",
+   "ng": "KBSV 11/09 · Beta 28/05 · TC Kinh tế Tài chính · PV GAS 12/10 · mô hình"
+  },
+  {
+   "so": "+26%",
+   "nhan": "khí bán cho điện 6T/2026",
+   "tieu": "Sản lượng tăng nhờ điện khí, LNG làm mỏng biên",
+   "t": "6 tháng khí khô & LNG 3,62 tỷ m³ (+16%): điện +26%, đạm −5%, công nghiệp đi ngang; 9 tháng +18%, vượt kế hoạch 3–5%. Nguồn bù mỏ cũ suy giảm: Hải Thạch – Mộc Tinh, Sư Tử Trắng 2B (0,54 tỷ m³/năm từ Q3/2026), Thiên Nga – Hải Âu (Q4/2026), LNG 0,9 tỷ m³. LNG chỉ lãi gộp 6–7%, mỏ mới giá miệng giếng cao: biên mảng khí Q1/2026 13,9% so với 21,3% cùng kỳ.",
+   "ng": "KBSV 11/09 · BSC 28/05 · SSI 27/05 · TC Kinh tế Tài chính"
+  },
+  {
+   "so": "±9,8",
+   "nhan": "nghìn đ/cp mỗi ±10 USD Brent 2027",
+   "tieu": "Năm 2027 là phép thử eo Hormuz",
+   "t": "Ngày 16/10 Brent chốt 109,86 USD, cao nhất từ tháng 5, khi căng thẳng quanh Hormuz chưa hạ. Cơ sở: Brent 2027 bình quân 78 USD, lãi gộp ~1.930 đ/m³, LN cổ đông ~13,8 nghìn tỷ (−17%). Hormuz thông, Brent 65: ~9,5 nghìn tỷ; gián đoạn kéo dài, Brent 92: ~17,7 nghìn tỷ. LPG cũng hưởng lợi tạm thời: thị phần nội địa 80% (trước ~70%) khi đối thủ thiếu hàng.",
+   "ng": "Reuters 16/10 · BSC 28/05 · SSI 27/05 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/E 14 × LN 2027E: {up_so} so với giá hiện tại",
+   "t": "P/E 14 ≈ trung vị 2023–2025 (14,4) — giai đoạn khí nội địa suy giảm, LNG pha loãng biên — thấp hơn trung vị từ 2015 (15,5); giá 20/10 tương ứng Brent 2027 ~74 USD. Xấu 60,9: Brent 65, P/E 15,5 trên lãi đáy; tốt 87,9: Brent 92, P/E 12. Đệm: tiền ròng ~36,5 nghìn tỷ (15,1 nghìn đ/cp) sau cổ tức 2.500 đ trả 20/11; cổ tức kế hoạch 2026 2.000 đ/cp.",
+   "ng": "mô hình · P/E lịch sử: BCTC VNDirect"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   11414,
+   16673,
+   13772
+  ],
+  "ln_truoc": 10398,
+  "eps": [
+   4731,
+   6910,
+   5708
+  ],
+  "bv": [
+   27475,
+   31760,
+   35344
+  ],
+  "co_tuc_nam": 2500,
+  "them": [
+   {
+    "ten": "Khí khô & LNG (tỷ m³)",
+    "v": [
+     6.2,
+     7.19,
+     7.48
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Lãi gộp khí (đ/m³)",
+    "v": [
+     1685,
+     2497,
+     1927
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     18.0,
+     23.3,
+     17.0
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS, BVPS theo 2.412,9 triệu cp. 2026E = 6 tháng BCTC + quý 3 từ LNTT 9 tháng sơ bộ + quý 4 ước tính. Cổ tức: 2.500 đ/cp năm 2025 (GDKHQ 22/09/2026)."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo nguồn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Khí khô & LNG",
+    "mau": "c1",
+    "v": [
+     6393,
+     11363,
+     8823
+    ]
+   },
+   {
+    "ten": "LPG, vận chuyển & khác",
+    "mau": "c2",
+    "v": [
+     4040,
+     4453,
+     4042
+    ]
+   },
+   {
+    "ten": "Tài chính ròng & khác",
+    "mau": "c4",
+    "v": [
+     981,
+     857,
+     907
+    ]
+   }
+  ],
+  "nhan": "Khí khô & LNG",
+  "ng": "Lãi gộp theo mảng (Beta, KBSV, TC Kinh tế Tài chính); chi phí chia theo lãi gộp, thuế và thiểu số theo LNTT; 2026E–2027E: mô hình."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: sản lượng khí × lãi gộp mỗi m³",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Khí khô & LNG"
+   },
+   {
+    "ten": "Brent bình quân (USD/thùng)",
+    "v": [
+     68,
+     90,
+     78
+    ]
+   },
+   {
+    "ten": "Sản lượng (tỷ m³)",
+    "v": [
+     6.2,
+     7.19,
+     7.48
+    ],
+    "d": 2,
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp mỗi m³ (đ)",
+    "v": [
+     1685,
+     2497,
+     1927
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp khí khô & LNG",
+    "v": [
+     10448,
+     17946,
+     14407
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Lãi gộp LPG, vận chuyển & khác",
+    "v": [
+     6603,
+     7033,
+     6600
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tổng lãi gộp",
+    "v": [
+     17051,
+     24979,
+     21007
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí bán hàng + QLDN (gồm dự phòng)",
+    "v": [
+     3926,
+     4885,
+     4700
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tài chính ròng, liên kết & khác",
+    "v": [
+     1235,
+     1089,
+     1150
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     14359,
+     21182,
+     17457
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Thuế và cổ đông thiểu số",
+    "v": [
+     2945,
+     4509,
+     3685
+    ]
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     11414,
+     16673,
+     13772
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     4731,
+     6910,
+     5708
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Lãi gộp mỗi m³ = lãi gộp khí khô & LNG ÷ sản lượng. 2026E = 6 tháng BCTC + quý 3 từ LNTT 9 tháng sơ bộ (trên 16,6 nghìn tỷ) + quý 4 ước tính; Brent 2026 ~90 USD là ước. Doanh thu chạy theo giá dầu nên không dùng để dự phóng lãi; thuế 19,5% LNTT, thiểu số 2% LNST."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   16673
+  ],
+  "cuoi": [
+   "2027E",
+   13772
+  ],
+  "buoc": [
+   [
+    "Sản lượng khí",
+    566
+   ],
+   [
+    "Lãi gộp mỗi m³ (giá dầu)",
+    -3320
+   ],
+   [
+    "LPG, vận chuyển & khác",
+    -341
+   ],
+   [
+    "Chi phí, dự phòng",
+    146
+   ],
+   [
+    "Tài chính & khác",
+    48
+   ]
+  ],
+  "y": "Lãi gộp mỗi m³ lùi từ 2.500 về 1.930 đ (Brent ~90 → 78 USD) lấy đi ~3,3 nghìn tỷ; sản lượng +4% bù ~0,6 nghìn tỷ, LPG trả lại một phần lợi thế tạm thời của năm 2026.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Brent bình quân 2027 (USD/thùng)",
+   "v": [
+    "65",
+    "78",
+    "92"
+   ],
+   "ly_do": "16/10: 109,86 USD (Reuters), đường kỳ hạn dốc xuống mạnh; xấu = thỏa thuận Mỹ – Iran, cung dư; tốt = gián đoạn kéo dài sang 2027"
+  },
+  {
+   "ten": "Lãi gộp khí mỗi m³ 2027 (đ)",
+   "v": [
+    "1.550",
+    "1.930",
+    "2.330"
+   ],
+   "ly_do": "~29 đ mỗi 1 USD Brent: 1.634 · 1.735 · 2.332 đ ở 65 · 71 · 90 USD (2H/25, 6T/25, 6T/26); trừ 50 đ do LNG (biên 6–7%) và mỏ mới"
+  },
+  {
+   "ten": "Sản lượng khí khô & LNG 2027",
+   "v": [
+    "−4%",
+    "+4%",
+    "+8%"
+   ],
+   "ly_do": "9T/2026 +18%; Sư Tử Trắng 2B, Thiên Nga – Hải Âu đủ năm bù mỏ cũ suy giảm; Lô B – Ô Môn cuối 2027 chưa đóng góp"
+  },
+  {
+   "ten": "Quý 4/2026: lãi gộp khí · sản lượng",
+   "v": [
+    "2.150 · +4%",
+    "2.650 · +10%",
+    "2.950 · +15%"
+   ],
+   "ly_do": "Quý 3 ước ~2.680 đ/m³ (từ số 9 tháng), quý 2 2.625 đ khi Brent 93 USD; xấu = dầu hạ nhanh cuối năm"
+  },
+  {
+   "ten": "Lãi gộp LPG, vận chuyển & khác 2027 (tỷ)",
+   "v": [
+    "5.900",
+    "6.600",
+    "7.100"
+   ],
+   "ly_do": "2025 6.603, 2026E 7.033: thị phần LPG 80% khi đối thủ thiếu hàng; cước PM3 Cà Mau chuyển sang mua bán trực tiếp"
+  },
+  {
+   "ten": "Chi phí + dự phòng (nghìn tỷ): Q4/2026 · 2027",
+   "v": [
+    "2,7 · 5,4",
+    "2,0 · 4,7",
+    "1,5 · 4,3"
+   ],
+   "ly_do": "Q4/2024 1.767, Q4/2025 2.506 (chi phí quản lý vọt cuối năm); cả năm 2023 4.019, 2024 5.612, 2025 3.926 (Q2/2025 hoàn nhập ~1.600)"
+  },
+  {
+   "ten": "Tài chính ròng & khác 2027 (tỷ)",
+   "v": [
+    "950",
+    "1.150",
+    "1.300"
+   ],
+   "ly_do": "2025 1.235, 6T/2026 539; trả 6.032 tỷ cổ tức 20/11, giải ngân đầu tư 2026 dự kiến 9.196 tỷ (×4,1)"
+  },
+  {
+   "ten": "P/E trên LN 2027E",
+   "v": [
+    "15,5",
+    "14",
+    "12"
+   ],
+   "ly_do": "Lãi đáy được trả P/E cao: 15,5 ≈ trung vị từ 2015 (15,5); 14 ≈ trung vị 2023–2025 (14,4); 12 giữa mức thấp 10% (10,2) và 25% (13,2)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 15075,
+   "ln27": 9485,
+   "gia": 60.9,
+   "mo_ta": "Hormuz thông, Brent 2027 65 USD: lãi gộp ~1.550 đ/m³, sản lượng −4%, LPG trả thị phần, dự phòng phải thu; P/E 15,5 trên lãi đáy"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 16673,
+   "ln27": 13772,
+   "gia": 79.9,
+   "mo_ta": "Brent 2027 78 USD: lãi gộp ~1.930 đ/m³, sản lượng +4%; LN lùi −17% từ đỉnh 2026; P/E 14"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 17809,
+   "ln27": 17665,
+   "gia": 87.9,
+   "mo_ta": "Gián đoạn kéo dài, Brent 92 USD: lãi gộp ~2.330 đ/m³, sản lượng +8% (El Niño, LNG); P/E 12 trên lãi đỉnh"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá P/E theo chu kỳ giá dầu",
+  "phu": "P/E × LN 2027E; lãi đáy được trả P/E cao hơn",
+  "ck": 0,
+  "cp": 2412.9,
+  "phan": [
+   {
+    "ten": "LN cổ đông 2027E",
+    "mau": "c1",
+    "x": [
+     9485,
+     13772,
+     17665
+    ],
+    "boi": [
+     15.5,
+     14,
+     12
+    ],
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     147018,
+     192808,
+     211980
+    ]
+   }
+  ],
+  "von": [
+   147018,
+   192808,
+   211980
+  ],
+  "gia": [
+   60.9,
+   79.9,
+   87.9
+  ]
+ },
+ "nhay": [
+  [
+   "Brent bình quân 2027 ±10 USD",
+   1697,
+   9.8
+  ],
+  [
+   "P/E ±1 lần",
+   null,
+   5.7
+  ],
+  [
+   "Sản lượng khí khô & LNG 2027 ±5%",
+   546,
+   3.2
+  ],
+  [
+   "Lãi gộp LPG, vận chuyển & khác ±10%",
+   521,
+   3.0
+  ],
+  [
+   "Chi phí, dự phòng 2027 ±500 tỷ",
+   394,
+   2.3
+  ]
+ ],
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 20/10)",
+  "nhom": "11 mã cùng ngành vốn hóa lớn nhất",
+  "kv": [
+   [
+    "REE",
+    10.6
+   ],
+   [
+    "BWE",
+    9.7
+   ],
+   [
+    "TDM",
+    46.6
+   ],
+   [
+    "PGS",
+    30.2
+   ],
+   [
+    "PGD",
+    17.5
+   ],
+   [
+    "PGC",
+    6.4
+   ],
+   [
+    "GSP",
+    9.4
+   ],
+   [
+    "CNG",
+    8.8
+   ],
+   [
+    "CLW",
+    10.7
+   ],
+   [
+    "ASP",
+    4.5
+   ],
+   [
+    "BTW",
+    12.0
+   ]
+  ],
+  "tv": 10.6,
+  "moi_cp": 5270,
+  "max": 25,
+  "y": "Nhóm cùng ngành phần lớn là doanh nghiệp phân phối khí, điện, nước quy mô nhỏ, giao dịch mỏng; GAS nắm hạ tầng khí gần như độc quyền và tiền ròng lớn. EPS 4 quý đến Q2/2026 chưa gồm quý 3 lãi cao.",
+  "ng": "BCTC VNDirect, giá 20/10/2026"
+ },
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   12.7,
+   10.6,
+   8.9,
+   8.9,
+   8.7,
+   8.7,
+   8.3,
+   7.2,
+   6.7,
+   6.9,
+   6.4,
+   5.6,
+   6.1,
+   9.5,
+   9.1,
+   11.3,
+   15.8,
+   16.5,
+   15.4,
+   19.3,
+   21.3,
+   19.9,
+   24.5,
+   23.2,
+   23.1,
+   16.5,
+   15.0,
+   15.1,
+   13.5,
+   14.2,
+   15.2,
+   14.9,
+   16.5,
+   17.0,
+   17.0,
+   20.8,
+   26.6,
+   22.8,
+   26.3,
+   22.3,
+   17.3,
+   16.9,
+   16.8,
+   17.5,
+   19.7,
+   17.7,
+   13.8,
+   13.2,
+   13.4,
+   15.5,
+   15.5,
+   17.8,
+   15.9,
+   14.9,
+   16.7,
+   15.4,
+   16.3,
+   15.9,
+   15.8,
+   14.8,
+   13.6,
+   12.1,
+   8.8,
+   10.2,
+   12.7,
+   11.7,
+   11.1,
+   14.2,
+   13.6,
+   13.5,
+   17.5,
+   18.1,
+   16.0,
+   21.9,
+   22.0,
+   20.5,
+   21.1,
+   23.7,
+   22.8,
+   21.4,
+   23.2,
+   29.8,
+   22.4,
+   21.9,
+   24.9,
+   26.0,
+   23.9,
+   23.4,
+   22.4,
+   21.9,
+   20.4,
+   17.4,
+   16.3,
+   16.5,
+   15.6,
+   14.4,
+   15.1,
+   13.4,
+   13.2,
+   12.0,
+   12.1,
+   12.1,
+   13.2,
+   14.8,
+   16.9,
+   14.3,
+   12.1,
+   11.9,
+   11.9,
+   15.3,
+   15.9,
+   14.5,
+   17.1,
+   16.3,
+   17.0,
+   17.5,
+   16.9,
+   16.3,
+   14.7,
+   14.4,
+   14.4,
+   15.3,
+   15.0,
+   13.1,
+   14.3,
+   14.9,
+   14.9,
+   12.4,
+   11.7,
+   12.0,
+   12.6,
+   14.4,
+   23.3,
+   22.8,
+   16.6,
+   15.9,
+   18.2,
+   16.1,
+   14.3,
+   16.0,
+   15.6,
+   14.5
+  ],
+  "p10": 10.2,
+  "p25": 13.2,
+  "tv": 15.5,
+  "thap": [
+   "2015-12",
+   5.6
+  ],
+  "nay": [
+   "2026-10",
+   14.5
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/E 15,5 · 14 · 12 trên LN 2027E: xấu ≈ trung vị từ 2015 (15,5), cơ sở ≈ trung vị 2023–2025 (14,4), tốt giữa mức thấp 10% (10,2) và 25% (13,2)."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    4254,
+    4254,
+    4254
+   ],
+   "ck": 2549
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    2017,
+    3615,
+    4751
+   ],
+   "ck": 1361
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    15075,
+    16673,
+    17809
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026",
+   "loai": "hai",
+   "tieu": "BCTC quý 3/2026",
+   "ct": "LNTT 9 tháng trên 16,6 nghìn tỷ (sơ bộ 12/10) → quý 3 ~5,4 nghìn tỷ (+68%). Mô hình: LN cổ đông quý 3 ~4,3 nghìn tỷ (Q3/2025: 2.549 tỷ).",
+   "tac": [
+    "LN quý 3 ~4,3 nghìn tỷ",
+    "thấp hơn rõ: dự phòng phải thu hoặc lãi gộp khí yếu hơn mô hình"
+   ],
+   "theo_doi": "lãi gộp khí khô, chi phí quản lý"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dự phòng phải thu cuối năm",
+   "ct": "Chi phí quản lý Q4/2024, Q4/2025 vọt lên 1,1 và 1,8 nghìn tỷ (quý thường ~0,4); nợ quá hạn của POW, PGV đã được trích lập đủ (BSC). Phải thu ngắn hạn 30/6 27,6 nghìn tỷ (+39%).",
+   "tac": [
+    "−0,6 nghìn tỷ LN",
+    "nếu chi phí quý 4 như kịch bản xấu (2,7 nghìn tỷ)"
+   ],
+   "theo_doi": "phải thu, chi phí quản lý quý 4"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Hormuz thông, Brent về 65 USD",
+   "ct": "Thỏa thuận Mỹ – Iran có thể xóa phần bù rủi ro địa chính trị; IEA còn có thể xả thêm ~100 triệu thùng dự trữ khẩn cấp. Mỏ cũ bán theo giá dầu nên lãi gộp khí giảm ngay khi dầu hạ.",
+   "tac": [
+    "−12,8 nghìn đ/cp",
+    "Brent 2027 65 thay vì 78 USD (sản lượng, P/E cơ sở)"
+   ],
+   "theo_doi": "Brent, FO Singapore"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Mỏ mới vào dòng",
+   "ct": "Thiên Nga – Hải Âu đón khí thương mại Q4/2026; Sư Tử Trắng 2B cấp 540 triệu m³/năm giai đoạn chuyển tiếp từ Q3/2026; Dầu Đôi thêm hơn 1 triệu m³/ngày.",
+   "tac": [
+    "±3,2 nghìn đ/cp",
+    "mỗi ±5% sản lượng khí 2027"
+   ],
+   "theo_doi": "sản lượng khí hằng quý"
+  },
+  {
+   "khi": "12/2026–2027",
+   "loai": "hai",
+   "tieu": "PVN bán vốn để khôi phục free float",
+   "ct": "Cổ đông nhỏ chỉ 4,24% (102,2 triệu cp): GAS không còn đủ điều kiện công ty đại chúng từ 8/2026. PVN dự kiến bán 2–5%, định giá xong chậm nhất 12/2026; cần thêm ≥ 5,8% (~139 triệu cp) mới đạt 10%.",
+   "tac": [
+    "~10,6 nghìn tỷ",
+    "giá trị phần cần bán theo giá 20/10 — ~130 phiên GTGD bình quân"
+   ],
+   "theo_doi": "phương án đấu giá, giá khởi điểm"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thị phần LPG trả lại",
+   "ct": "Thị phần LPG nội địa lên 80% trong 5T/2026 (trước ~70%) khi đối thủ đứt nguồn Trung Đông; kế hoạch LPG 2026 −19% vì kinh doanh quốc tế khó. Nguồn cung bình thường lại sẽ kéo biên và thị phần về.",
+   "tac": [
+    "−3,2 nghìn đ/cp",
+    "nếu lãi gộp LPG, vận chuyển & khác 2027 chỉ 5,9 nghìn tỷ"
+   ],
+   "theo_doi": "sản lượng, biên LPG"
+  },
+  {
+   "khi": "Mùa khô 2027",
+   "loai": "len",
+   "tieu": "El Niño, huy động điện khí",
+   "ct": "ACBS kỳ vọng El Niño mạnh giữa – cuối 2026 giảm huy động thủy điện, khí khô & LNG tăng ~12%/năm. 6 tháng 2026 khí bán cho điện đã +26%.",
+   "tac": "",
+   "theo_doi": "huy động điện khí, thủy văn"
+  },
+  {
+   "khi": "Cuối 2027",
+   "loai": "len",
+   "tieu": "Lô B – Ô Môn đón dòng khí đầu tiên",
+   "ct": "Đường ống cấp khí cho 4 nhà máy điện Ô Môn; GAS đang làm các gói EPC bờ, PC1, PC2 (~15 nghìn tỷ). Sư Tử Trắng 2B lên 1,4 tỷ m³/năm từ 2028; kho LNG Thị Vải lên 3 triệu tấn/năm năm 2029.",
+   "tac": "",
+   "theo_doi": "tiến độ đường ống, cước vận chuyển"
+  },
+  {
+   "khi": "2026–2030",
+   "loai": "hai",
+   "tieu": "Chu kỳ đầu tư 60–120 nghìn tỷ",
+   "ct": "Giải ngân 2026 dự kiến 9.196 tỷ (×4,1): Lô B – Ô Môn, LNG Thị Vải giai đoạn 2, kho LNG Vũng Áng (26,7 nghìn tỷ), kho LPG Hải Phòng. Tiền ròng giảm dần, thu nhập tài chính đi xuống trước khi dự án ra lãi.",
+   "tac": [
+    "±2,3 nghìn đ/cp",
+    "mỗi ±500 tỷ chi phí hoặc thu nhập tài chính 2027"
+   ],
+   "theo_doi": "giải ngân, vay mới"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Xung đột Mỹ – Iran quanh Hormuz: Brent quý 2/2026 bình quân 93 USD (cùng kỳ 67), FO 593 USD/tấn (+39%); ngày 16/10 Brent chốt 109,86 USD.",
+     "ng": "KBSV 11/09 · Reuters 16/10"
+    },
+    {
+     "h": 0,
+     "t": "Giá LNG châu Á tháng 3/2026 lên hơn 20 USD/MMBtu, gần gấp đôi cuối tháng 2; phụ phí vận chuyển LPG/LNG tăng hơn 10 lần.",
+     "ng": "SSI 27/05"
+    },
+    {
+     "h": 1,
+     "t": "El Niño mạnh giữa – cuối 2026 làm giảm huy động thủy điện, tăng nhu cầu điện khí.",
+     "ng": "ACBS 04/08"
+    },
+    {
+     "h": -1,
+     "t": "Thỏa thuận Mỹ – Iran có thể xóa phần bù rủi ro; IEA đã xả ~325 triệu thùng dự trữ khẩn cấp, còn có thể xả thêm ~100 triệu.",
+     "ng": "TradeArabia 10/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Luật Dầu khí sửa đổi tăng ưu đãi mỏ cận biên, cho hợp nhất phát hiện ở lô liền kề — thêm khí đấu nối vào hạ tầng hiện có (trung, dài hạn).",
+     "ng": "KBSV 11/09"
+    },
+    {
+     "h": -1,
+     "t": "Mỏ khí hiện hữu suy giảm tự nhiên; LNG nhập khẩu (lãi gộp 6–7%) và mỏ mới giá miệng giếng cao làm mỏng biên mảng khí.",
+     "ng": "SSI 27/05 · KBSV 11/09"
+    },
+    {
+     "h": 0,
+     "t": "GAS giữ 100% thị phần LNG, trên 80% LPG nội địa (5T/2026); cạnh tranh LPG/LNG sẽ tăng khi nguồn cung bình thường.",
+     "ng": "SSI 27/05 · BSC 28/05"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Tiền và đầu tư ngắn hạn 45,5 nghìn tỷ, nợ vay 2,9 nghìn tỷ (30/6/2026); dư nợ vay USD đã về 0.",
+     "ng": "BCTC · BSC 28/05"
+    },
+    {
+     "h": 1,
+     "t": "PM3 Cà Mau chuyển từ nhận cước vận chuyển sang mua bán trực tiếp: thêm ~1.000 tỷ doanh thu mỗi tháng.",
+     "ng": "BSC 28/05 · KBSV 11/09"
+    },
+    {
+     "h": 0,
+     "t": "PVN nắm 95,76%; ĐHĐCĐ bất thường 14/9/2026 kiện toàn HĐQT nhiệm kỳ 2026–2031 và thông qua cổ tức 2025 25%.",
+     "ng": "Znews · Báo Pháp luật"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Khí khô & LNG",
+   "phu": "~40% doanh thu, 61% lãi gộp 2025 · đường ống Đông Nam Bộ (Cửu Long, Nam Côn Sơn), Tây Nam Bộ (PM3 – Cà Mau), kho LNG Thị Vải 1 triệu tấn/năm",
+   "so": [
+    [
+     "Sản lượng 2025",
+     "6,2 tỷ m³",
+     "LNG 0,54"
+    ],
+    [
+     "6T/2026",
+     "3,62 tỷ m³",
+     "+16%"
+    ],
+    [
+     "Lãi gộp mỗi m³ 6T/2026",
+     "2.332 đ",
+     "6T/25: 1.735"
+    ],
+    [
+     "Khách hàng điện 6T",
+     "2,54 tỷ m³",
+     "+26%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Khí mỏ cũ bể Cửu Long, Nam Côn Sơn mua theo giá miệng giếng cố định, bán theo công thức tham chiếu giá dầu: dầu càng cao, chênh lệch càng rộng.",
+     "ng": "KBSV 11/09"
+    },
+    {
+     "t": "Biên gộp mảng Q1/2026 13,9% (Q1/2025 21,3%) vì LNG nhập khẩu biên thấp và giá khí đầu vào nội địa tăng.",
+     "ng": "BSC 28/05"
+    },
+    {
+     "t": "Kế hoạch 2026: 7,1 tỷ m³ (+15%), trong đó LNG 0,9 tỷ m³; khí tự nhiên 6,2 tỷ m³ (+10%).",
+     "ng": "SSI 27/05"
+    }
+   ]
+  },
+  {
+   "ten": "LPG",
+   "phu": "~53% doanh thu, 22% lãi gộp 2025 · bán buôn nội địa (thị phần 80% 5T/2026), kinh doanh quốc tế",
+   "so": [
+    [
+     "Sản lượng 2025",
+     "4,46 triệu tấn",
+     "SSI"
+    ],
+    [
+     "6T/2026",
+     "1,82 triệu tấn",
+     "+7%"
+    ],
+    [
+     "Biên gộp Q1/2026",
+     "5,3%",
+     "Q1/25: 7,5%"
+    ],
+    [
+     "Kế hoạch 2026",
+     "3,62 triệu tấn",
+     "−19%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Khoảng 2/3 sản lượng LPG quý 1/2026 là xuất khẩu; biên gộp thu hẹp vì chia sẻ biến động giá với khách hàng.",
+     "ng": "Beta 28/05"
+    },
+    {
+     "t": "Đa dạng nguồn nhập (Mỹ, Úc, Đông Nam Á) giữ hàng khi đối thủ thiếu nguồn Trung Đông; ACBS kỳ vọng biên 7–8% cuối 2026.",
+     "ng": "SSI 27/05 · ACBS 04/08"
+    }
+   ]
+  },
+  {
+   "ten": "Vận chuyển, CNG, condensate & khác",
+   "phu": "~7% doanh thu, 17% lãi gộp 2025 · cước đường ống biên ~80%, CNG, condensate",
+   "so": [
+    [
+     "Doanh thu vận chuyển 2025",
+     "2.389 tỷ",
+     "KBSV"
+    ],
+    [
+     "Biên vận chuyển Q1/2026",
+     "83,6%",
+     "BSC"
+    ],
+    [
+     "CNG quý 2/2026",
+     "1.750 tỷ",
+     "×7,3"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Doanh thu vận chuyển 2026 giảm vì PM3-CAA không còn tính cước — phần lãi chuyển sang mua bán khí trực tiếp.",
+     "ng": "KBSV 11/09"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi gộp theo mảng",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Khí khô & LNG",
+     "v": [
+      2347,
+      3072,
+      2633,
+      2396,
+      2911,
+      5525
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "LPG, vận chuyển & khác",
+     "v": [
+      1743,
+      1882,
+      1469,
+      1509,
+      1597,
+      2268
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Quý 2/2026 lãi gộp khí khô & LNG 5.525 tỷ (+80%) khi Brent 93 USD; phần LPG, vận chuyển & khác dao động 1,5–2,3 nghìn tỷ/quý.",
+   "ng": "Beta 28/05, TC Kinh tế Tài chính (mảng khí), BCTC (tổng)"
+  },
+  {
+   "ten": "Lãi gộp khí khô & LNG mỗi m³",
+   "kieu": "cot",
+   "dv": "đ/m³",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp mỗi m³",
+     "v": [
+      1503,
+      1968,
+      1797,
+      1485,
+      1927,
+      2625
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Quý 2/2025 1.968 đ khi Brent 67 USD → quý 2/2026 2.625 đ khi Brent 93 USD; thấp nhất 1.485 đ ở quý 4/2025.",
+   "ng": "Lãi gộp mảng (Beta, TC Kinh tế Tài chính) ÷ sản lượng (Beta, KBSV)"
+  },
+  {
+   "ten": "Khí khô 6 tháng theo khách hàng",
+   "kieu": "cot",
+   "dv": "triệu m³",
+   "nhan": [
+    "Điện",
+    "Đạm",
+    "Công nghiệp"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2025",
+     "v": [
+      2014,
+      606,
+      503
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "6T/2026",
+     "v": [
+      2540,
+      575,
+      502
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Toàn bộ mức tăng 6 tháng (+494 triệu m³) đến từ điện: +526 triệu m³ (+26%); đạm −5%, công nghiệp đi ngang.",
+   "ng": "KBSV 11/09"
+  },
+  {
+   "ten": "Tiền, đầu tư ngắn hạn và phải thu",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      44804,
+      33062,
+      37003,
+      41108,
+      44147,
+      39767,
+      40176,
+      45457
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Phải thu ngắn hạn",
+     "v": [
+      19498,
+      19098,
+      16943,
+      19778,
+      22912,
+      24881,
+      25128,
+      27567
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Tiền và đầu tư ngắn hạn 45,5 nghìn tỷ trước khi trả 6,0 nghìn tỷ cổ tức (20/11); phải thu ngắn hạn 27,6 nghìn tỷ, tăng cùng nhịp doanh thu (0,64 lần doanh thu quý).",
+   "ng": "BCTC GAS (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Tổng doanh thu (gồm tài chính, khác)",
+    "kh": 142000,
+    "th": 120900,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · PV GAS 12/10 (sơ bộ)"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 11285,
+    "th": 16600,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · PV GAS 12/10 (sơ bộ)"
+   },
+   {
+    "ten": "Khí khô & LNG",
+    "kh": 7100,
+    "th": 3617,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "triệu m³",
+    "ng": "ĐHĐCĐ 2026 (SSI 27/05) · KBSV 11/09"
+   },
+   {
+    "ten": "LPG",
+    "kh": 3620,
+    "th": 1818,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "nghìn tấn",
+    "ng": "ĐHĐCĐ 2026 (SSI 27/05) · KBSV 11/09"
+   }
+  ],
+  "y": "9 tháng LNTT đạt 147% kế hoạch năm; kế hoạch của GAS luôn thận trọng — 2019–2025 bình quân đạt 169% kế hoạch LNST (Beta). Mô hình cơ sở cả năm LNTT ~21,2 nghìn tỷ, gấp 1,9 lần kế hoạch.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-09-11",
+   "kn": "MUA",
+   "tp": 96300,
+   "ln26": 12977,
+   "ln27": 13614,
+   "pp": "FCFF + EV/EBITDA 11,5 lần (50:50)",
+   "y": "Brent cơ sở 2026 85 USD, khí khô 6,2 tỷ m³; biên độ 75.000 (Brent 70) – 110.900 (Brent 100). LNTT 2026F 16.338 tỷ — số 9 tháng đã vượt.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/ctcp_tct_khi_viet_nam_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-08-04",
+   "kn": "MUA",
+   "tp": 99800,
+   "tp_sau_ct": 1,
+   "ln26": null,
+   "ln27": null,
+   "pp": "giá mục tiêu cuối 2026, sau cổ tức",
+   "y": "LNST hợp nhất 2026F 13.735 tỷ (+19%), 2027F 14.181 tỷ; khí khô & LNG tăng ~12%/năm, biên 19–20%; LPG +10%, biên 7–8%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/gas_cap_nhat_nhanh_04_08_2026.pdf"
+  },
+  {
+   "ctck": "BSC",
+   "ngay": "2026-05-28",
+   "kn": "MUA",
+   "tp": 96800,
+   "ln26": 13783,
+   "ln27": null,
+   "pp": "DCF + P/E (50:50)",
+   "y": "P/E dự phóng 2026 14,4 lần, thấp hơn trung vị 5 năm 25%; PM3 Cà Mau thêm ~12 nghìn tỷ doanh thu/năm, thị phần LPG 80%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/Cap_nhat_KQKD_Q12026.pdf"
+  },
+  {
+   "ctck": "Beta",
+   "ngay": "2026-05-28",
+   "kn": "KHÁC",
+   "tp": null,
+   "ln26": 13357,
+   "ln27": null,
+   "pp": "cập nhật KQKD, không định giá",
+   "y": "Biên gộp quý 1 11,9% (cùng kỳ 15,9%) vì tăng LNG nhập khẩu; kế hoạch thận trọng — 2019–2025 bình quân đạt 169% kế hoạch LNST.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/Cap_nhat_KQKD_Q1.2026.pdf"
+  },
+  {
+   "ctck": "SSI",
+   "ngay": "2026-05-27",
+   "kn": "TRUNG LẬP",
+   "tp": 86000,
+   "ln26": 13322,
+   "ln27": null,
+   "pp": "P/E 16 lần × LN 2026F",
+   "y": "Khí nội địa biên cao hơn LNG, LPG giữ lãi 2026; rủi ro thiếu khí, trì hoãn điện LNG. Cổ tức kế hoạch 2025 2.500 đ, 2026 2.000 đ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/Khi_noi_ia_va_LNG__Loi_the_ve_linh_hoat_nguon_khi.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Cổ tức 2025 (2.500 đ/cp) có GDKHQ 22/09/2026: giá mục tiêu các báo cáo ra trước ngày này được trừ 2.500 đ (ACBS ghi 99.800 đ là giá cuối 2026 sau cổ tức). Các dự phóng làm trước số 9 tháng (LNTT trên 16,6 nghìn tỷ); ACBS chỉ công bố LNST hợp nhất.",
+ "nguon": [
+  {
+   "ten": "KBSV — Báo cáo cập nhật 2Q2026",
+   "ngay": "11/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/ctcp_tct_khi_viet_nam_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ten": "ACBS — Cập nhật nhanh GAS",
+   "ngay": "04/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/gas_cap_nhat_nhanh_04_08_2026.pdf"
+  },
+  {
+   "ten": "BSC — Cập nhật KQKD Q1/2026, ĐHĐCĐ 2026",
+   "ngay": "28/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/Cap_nhat_KQKD_Q12026.pdf"
+  },
+  {
+   "ten": "Beta — Cập nhật KQKD Q1/2026",
+   "ngay": "28/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/Cap_nhat_KQKD_Q1.2026.pdf"
+  },
+  {
+   "ten": "SSI — Khí nội địa và LNG: lợi thế linh hoạt nguồn khí",
+   "ngay": "27/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GAS/Khi_noi_ia_va_LNG__Loi_the_ve_linh_hoat_nguon_khi.pdf"
+  },
+  {
+   "ten": "Người Quan Sát — PV GAS 9 tháng: doanh thu 120.900 tỷ, LNTT trên 16.600 tỷ",
+   "ngay": "10/2026",
+   "link": "https://nguoiquansat.vn/pv-gas-bao-lai-9-thang-gap-doi-ke-hoach-ca-nam-321947.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Đảng bộ PV GAS đánh giá 9 tháng (12/10)",
+   "ngay": "10/2026",
+   "link": "https://mekongasean.vn/dang-bo-pv-gas-kien-toan-nhan-su-cap-uy-trien-khai-nhiem-vu-3-thang-cuoi-nam-60686.html"
+  },
+  {
+   "ten": "Tạp chí Kinh tế Tài chính — Lãi gộp khí khô & LNG quý 2/2026 5.525 tỷ",
+   "ngay": "08/2026",
+   "link": "https://tapchikinhtetaichinh.vn/gas-tang-toc-loi-nhuan-nhung-con-phu-thuoc-gia-dau-165174.html"
+  },
+  {
+   "ten": "BVSC (Vietstock) — Cập nhật quý 2/2026, hoàn nhập dự phòng 495 tỷ",
+   "ngay": "08/2026",
+   "link": "https://finance.vietstock.vn/downloadedoc/21992"
+  },
+  {
+   "ten": "Báo Pháp luật — Cổ tức 2025: 2.500 đ/cp, GDKHQ 22/09/2026",
+   "ngay": "09/2026",
+   "link": "https://doanhnhan.baophapluat.vn/lich-co-tuc-tuan-21-25-9-pv-gas-vpbank-transimex-dong-loat-chot-quyen.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Thanh toán cổ tức 20/11/2026",
+   "ngay": "09/2026",
+   "link": "https://mekongasean.vn/pv-gas-chot-ngay-tra-co-tuc-pvn-du-kien-nhan-gan-5800-ty-dong-59622.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Free float 4,24%, không còn đủ điều kiện công ty đại chúng",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/ty-le-co-phieu-tu-do-chuyen-nhuong-roi-xuong-4-24-pv-gas-khong-con-dap-ung-dieu-kien-cong-ty-dai-chung.html"
+  },
+  {
+   "ten": "elibook — PVN dự kiến bán 2–5% tại GAS, BSR",
+   "ngay": "18/08/2026",
+   "link": "https://elibook.vn/2026/08/18/song-thoai-von-nha-nuoc-tai-gas-va-bsr-khi-nhung-co-may-in-tien-mo-hoi-tai-dinh-gia/"
+  },
+  {
+   "ten": "Znews — ĐHĐCĐ bất thường 14/9/2026, nhân sự nhiệm kỳ 2026–2031",
+   "ngay": "09/2026",
+   "link": "https://znews.vn/pv-gas-kien-toan-nhan-su-lanh-dao-cho-nhiem-ky-2026-2031-post1682925.html"
+  },
+  {
+   "ten": "FinanceFeeds (Reuters) — Brent chốt 109,86 USD ngày 16/10, cao nhất từ tháng 5",
+   "ngay": "20/10/2026",
+   "link": "https://financefeeds.com/brent-crude-oil-price-110-houthi-saudi-attacks-hormuz-mine-bull-113-bear-104/"
+  },
+  {
+   "ten": "TradeArabia — IEA: ~325 triệu thùng dự trữ khẩn cấp đã xả, có thể thêm ~100 triệu",
+   "ngay": "10/2026",
+   "link": "https://tradearabia.com/News/487672/IEA-members-back-faster-oil-stock-releases-amid-market-tightness"
+  }
+ ]
+}

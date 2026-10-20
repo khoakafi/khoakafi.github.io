@@ -155,7 +155,8 @@
   /* ---------- So tinh theo gia song ---------- */
   // gia: nghin dong/cp; cp: trieu cp; ln: ty dong -> von hoa (ty) = gia * cp; P/E = gia * cp / ln
   function peTu(gia, cp, ln){ return (gia > 0 && cp > 0 && ln > 0) ? gia * cp / ln : null; }
-  function tpDc(p, x){ var tru = 0; (p.co_tuc || []).forEach(function(c){ if (c[0] > x.ngay) tru += +c[1] || 0; }); return x.tp ? x.tp - tru : null; }   // dong
+  // tp_sau_ct: bao cao ghi ro gia muc tieu da tru co tuc (vd ACBS GAS 'cuoi 2026, sau co tuc') -> khong tru lan nua
+  function tpDc(p, x){ var tru = 0; if (!x.tp_sau_ct) (p.co_tuc || []).forEach(function(c){ if (c[0] > x.ngay) tru += +c[1] || 0; }); return x.tp ? x.tp - tru : null; }   // dong
   function soGia(p, gia){
     var ct = p.ctck || [], tps = ct.map(function(x){ return tpDc(p, x); }).filter(function(v){ return v > 0; });
     var tv = trungVi(tps);
