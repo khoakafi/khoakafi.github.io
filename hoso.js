@@ -48,7 +48,8 @@
     var ds = (p.chia || []).filter(function(c){ return c && /^\d{4}-\d{2}-\d{2}$/.test(c[0]) && c[1] > 1 && c[0] <= hn; });
     if (!ds.length) return p;
     var k = function(sau){ return ds.reduce(function(a, c){ return c[0] > sau ? a * c[1] : a; }, 1); }, K = k(p.cap_nhat || '');
-    (p.ctck || []).forEach(function(c){ var x = k(c.ngay || ''); if (x > 1 && c.tp > 0) { c.tp = Math.round(c.tp / x); c.tp_qd = x; } });
+    // tp_sau_chia: bao cao da tinh gia muc tieu tren so cp sau dot chia/thuong (vd VNDS BAF) -> khong chia lan nua
+    (p.ctck || []).forEach(function(c){ var x = k(c.ngay || ''); if (x > 1 && c.tp > 0 && !c.tp_sau_chia) { c.tp = Math.round(c.tp / x); c.tp_qd = x; } });
     if (K > 1) {
       var d0 = function(v){ return v == null ? v : Math.round(v / K); }, d1 = function(v){ return v == null ? v : Math.round(v / K * 10) / 10; };
       p.cp_trieu = Math.round(p.cp_trieu * K * 10) / 10;
@@ -476,7 +477,7 @@
       + '<div class="bdlg">' + ph.map(function(z){ return '<span><i class="' + z.mau + ' q"></i>' + esc(z.ten) + '</span>'; }).join('') + ((D.no_rong || 0) > 0 ? '<span><i class="tru q"></i>Trừ nợ vay ròng ' + f(D.no_rong / D.cp, 1) + '</span>' : '') + (o.gia > 0 ? '<span><i class="gia"></i>Giá hiện tại ' + f(o.gia, 1) + '</span>' : '') + '</div><div class="hsFf">';
     D.gia.forEach(function(g, i){ var d = o.gia > 0 ? (g / o.gia - 1) * 100 : null, k = kb[i] || {};
       h += '<div class="hsFfR' + (i === 1 ? ' cs' : '') + '"' + (k.mo_ta ? ' title="' + esc(k.mo_ta) + '"' : '') + '><span class="hsFfT">' + (TEN[i] || '') + '</span><span class="hsFfB">';
-      ph.forEach(function(z){ var w = X(z.v[i]);
+      ph.forEach(function(z){ var w = Math.max(0, X(z.v[i]));   // phan am (lo) khong ve thanh, so van o tooltip
         h += '<i class="' + z.mau + '" style="width:' + w.toFixed(2) + '%" title="' + esc((TEN[i] || '') + ' · ' + z.ten + ': ' + f(z.v[i], 1) + ' nghìn đ/cp') + '">' + (w >= 7 ? '<span>' + f(z.v[i], 1) + '</span>' : '') + '</i>'; });
       if (tru > 0) h += '<b class="tru" style="left:' + X(g).toFixed(2) + '%;width:' + (X(tp[i]) - X(g)).toFixed(2) + '%" title="' + esc('Trừ nợ vay ròng công ty mẹ: ' + f(tru, 1) + ' nghìn đ/cp') + '"></b>';
       if (o.gia > 0) h += '<s style="left:' + X(o.gia).toFixed(2) + '%"></s>';
