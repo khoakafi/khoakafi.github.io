@@ -213,7 +213,7 @@
   function dien(s, o, tron){
     var kv = o.kvTv, lc = (o.peConLai != null && kv) ? (o.peConLai / kv - 1) * 100 : null;
     var m = { pe_conlai: o.peConLai != null ? f(o.peConLai, 1) : '…', gt: o.gt != null ? f(o.gt, 1) + ' nghìn đ/cp' : '—', up: o.up != null ? pct(o.up) + ' so với giá hiện tại' : '—',
-      rr: o.rr != null ? f(o.rr, 1) : '—', dmx_gia: o.con ? f(o.con.gia * 1000, 0) : '…', dmx_pct: o.pctCon != null ? f(o.pctCon, 0) + '%' : '…', con_pct: o.pctCon != null ? f(o.pctCon, 0) + '%' : '…', ma_con: o.maCon || '', mo: o.muc ? TEN3[o.muc] : '—',
+      rr: o.rr != null ? f(o.rr, o.rr < 3 ? 2 : 1) : '—', dmx_gia: o.con ? f(o.con.gia * 1000, 0) : '…', dmx_pct: o.pctCon != null ? f(o.pctCon, 0) + '%' : '…', con_pct: o.pctCon != null ? f(o.pctCon, 0) + '%' : '…', ma_con: o.maCon || '', mo: o.muc ? TEN3[o.muc] : '—',
       gt_so: o.gt != null ? f(o.gt, 1) : '—', up_so: o.up != null ? pct(o.up) : '—', kv_tv: kv != null ? f(kv, 1) : '—',
       so_kv: lc == null ? 'so với' : (Math.abs(lc) < 10 ? 'ngang' : (lc < 0 ? 'thấp hơn ' + f(-lc, 0) + '% so với' : 'cao hơn ' + f(lc, 0) + '% so với')),
       rerate: o.rerate > 0 ? '+' + f(o.rerate, 1) + ' nghìn đ/cp nếu phần ngoài ' + o.maCon + ' được trả bằng trung vị khu vực' : '', rerate_so: o.rerate > 0 ? '+' + f(o.rerate, 1) + ' nghìn đ/cp' : '' };
@@ -366,7 +366,7 @@
     [['x', 'Xấu', o.xau], ['c', 'Cơ sở', o.gt], ['t', 'Tốt', o.tot]].forEach(function(z){ if (z[2] == null) return; var d = o.gia > 0 ? (z[2] / o.gia - 1) * 100 : null;
       h += '<div class="hsSbM ' + z[0] + (z[0] === 'c' && sat ? ' h2' : '') + '" style="left:' + X(z[2]).toFixed(2) + '%"><i></i><span>' + z[1] + ' <b>' + f(z[2], 1) + '</b>' + (d != null ? ' <em class="' + lop(d) + '">' + pct(d) + '</em>' : '') + '</span></div>'; });
     if (o.gia > 0) h += '<div class="hsSbP" style="left:' + X(o.gia).toFixed(2) + '%"><span>Giá hiện tại <b>' + f(o.gia, 1) + '</b></span><i></i></div>';
-    h += '</div><div class="hsY hsSbG">Cán cân lên/xuống ' + (o.rr != null ? '<b>' + f(o.rr, 1) + ' lần</b>' : '—') + ' = (tốt − giá hiện tại) ÷ (giá hiện tại − xấu)' + (sg.lo != null ? ' · dải xám dưới: giá mục tiêu CTCK, chỉ tham khảo' : '') + '</div>';
+    h += '</div><div class="hsY hsSbG">Cán cân lên/xuống ' + (o.rr != null ? '<b>' + f(o.rr, o.rr < 3 ? 2 : 1) + ' lần</b>' : '—') + ' = (tốt − giá hiện tại) ÷ (giá hiện tại − xấu)' + (sg.lo != null ? ' · dải xám dưới: giá mục tiêu CTCK, chỉ tham khảo' : '') + '</div>';
     return h;
   }
   // Thi truong dang tra bao nhieu cho tung phan: von hoa me - % cong ty con theo gia thi truong; P/E tung phan so voi cung nganh khu vuc
