@@ -1,0 +1,1619 @@
+{
+ "v": 2,
+ "ma": "PDR",
+ "ten": "CTCP Phát triển Bất động sản Phát Đạt",
+ "nganh": "Bất động sản nhà ở, nghỉ dưỡng",
+ "ky": "BCTC Q2/2026 · 35% Lotte Thủ Thiêm trả xong 10/8/2026",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026 hoặc khi Thuận An 2 hoàn tất",
+ "cp_trieu": 997.8,
+ "cp_ng": "Vốn điều lệ 9.978,1 tỷ (BCTC Q2/2026) = 997,8 triệu cp; chưa gồm cổ tức cổ phiếu 10% và chào bán 5:1 (tối đa 199,56 triệu cp) đã được ĐHĐCĐ 2026 thông qua nhưng chưa thực hiện",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "61% vốn chủ dồn vào 35% Thủ Thiêm: lãi vay trả ngay, lãi dự án chờ đến 2029"
+ },
+ "dong_mo": "6T/2026 lãi 213 tỷ nhờ 1,4 nghìn tỷ lãi bán dự án; kinh doanh cốt lõi lỗ 240 tỷ. Tiền bán dự án và vay MB đã vào 35% Lotte Thủ Thiêm (7.666 tỷ), mở bán sớm nhất 2029. Cơ sở: 2026E lỗ 123 tỷ, 2027E lãi ~397 tỷ nhờ Thuận An 2. Theo tài sản: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "61%",
+   "nhan": "vốn chủ 30/6/2026 nằm ở 35% Lotte Thủ Thiêm (giá vốn)",
+   "tieu": "Một khoản góp vốn, chưa có dòng tiền trước 2029",
+   "t": "10/8/2026 PDR trả xong 7.666 tỷ cho 35% Lotte Properties HCMC (định giá vốn chủ ~21,9 nghìn tỷ), bằng 61% vốn chủ cổ đông 30/6 (12,59 nghìn tỷ). Vay MB tối đa 8.835 tỷ, 96 tháng: 6.108 tỷ trả chuyển nhượng, 2.727 tỷ góp thêm khi dự án tăng vốn lên 12 nghìn tỷ. Khối thương mại khởi công 23/10/2026, xong 10/2029; MBS ước mở bán nhà ở (1.634 căn) từ 2029.",
+   "ng": "MBS 14/10 · nghị quyết HĐQT 29/6/2026 (báo chí) · BCTC Q2"
+  },
+  {
+   "so": "−240 tỷ",
+   "nhan": "kinh doanh cốt lõi 6T/2026 (lãi gộp − bán hàng − quản lý)",
+   "tieu": "Lợi nhuận là tiền bán dự án",
+   "t": "6T/2026 LNST 213 tỷ nhờ 1.381 tỷ thu nhập tài chính từ bán 80% Thuận An 1 (giá 1.901 tỷ, Mitsubishi), 99,34% Serenity (giá 2.500 tỷ, lãi 465 tỷ), 30% Tam Hiệp. Doanh thu 158 tỷ, dự phòng ~504 tỷ. Q3 không bàn giao, không bán dự án (MBS) mà lãi vay Lotte chạy từ 10/8: cơ sở Q3 lỗ ~200 tỷ, 2026E lỗ 123 tỷ — kế hoạch 868 tỷ cần Thuận An 2 ghi nhận ngay Q4.",
+   "ng": "BCTC Q1–Q2/2026 · MBS 14/10 · Vietnamfinance 31/07 · mô hình"
+  },
+  {
+   "so": "850 tỷ",
+   "nhan": "lãi vay 2027E cơ sở (2025: 347 tỷ)",
+   "tieu": "Lãi vay vượt lãi kinh doanh đến khi Thủ Thiêm mở bán",
+   "t": "Nợ vay 5,2 nghìn tỷ (30/6) lên ~11,4 nghìn tỷ nếu giải ngân đủ gói vay MB 6,1 nghìn tỷ; MBS: nợ vay/vốn chủ 45% → 84%, lãi vay 617 / 767 tỷ (2026F/27F), khả năng trả lãi 0,5–0,6 lần. Cơ sở 2027E: bàn giao ~1,0 nghìn tỷ (lãi gộp ~477 tỷ) + lãi bán Thuận An 2 (≥ 3.000 tỷ, giá sổ 1.576 tỷ) → LN ~397 tỷ. Thuận An 2 dời sang 2028 thì 2027 lỗ ~1,3 nghìn tỷ.",
+   "ng": "BCTC Q2 · MBS 14/10 · HĐQT 10/6/2026 (báo chí) · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Định giá theo tài sản: {up_so} so với giá hiện tại",
+   "t": "Thủ Thiêm 7.666 tỷ × 0,85 (thiểu số, rủi ro tiến độ) + lãi Thuận An 2 sau thuế ~1,11 nghìn tỷ × 0,8 + vốn chủ phần còn lại 4,92 nghìn tỷ × P/B 0,70 — phần này gánh ~11,4 nghìn tỷ nợ vay, 2,3 lần vốn chủ. Tương đương P/B 0,86 cả công ty. Giá mục tiêu CTCK 17,1–20 nghìn đ dựa trên RNAV: DCF Bắc Hà Thanh, Poulo Condor, 239 CMT8 và Lotte đủ giá vốn.",
+   "ng": "mô hình · P/B cùng ngành giá 20/10 · MBS 14/10, Shinhan 13/03, VCBS 18/03"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   515,
+   -123,
+   397
+  ],
+  "ln_truoc": 155,
+  "eps": [
+   516,
+   -123,
+   398
+  ],
+  "bv": [
+   12400,
+   12281,
+   12679
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Lãi bán dự án & tài chính (tỷ)",
+    "v": [
+     638,
+     1396,
+     1444
+    ],
+    "d": 0
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     4.4,
+     -1.0,
+     3.2
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN, vốn chủ 2024–2025: BCTC; EPS, BVPS theo 997,8 triệu cp (chưa gồm cổ tức cổ phiếu 10%, chào bán 5:1). Không chia cổ tức tiền mặt."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Lãi bán dự án & tài chính",
+    "mau": "c1",
+    "v": [
+     638,
+     1396,
+     1444
+    ]
+   },
+   {
+    "ten": "Kinh doanh cốt lõi",
+    "mau": "c2",
+    "v": [
+     459,
+     -99,
+     177
+    ]
+   },
+   {
+    "ten": "Lãi vay",
+    "mau": "c3",
+    "v": [
+     -347,
+     -617,
+     -850
+    ]
+   },
+   {
+    "ten": "Dự phòng, liên kết & khác",
+    "mau": "c4",
+    "v": [
+     -99,
+     -509,
+     -60
+    ]
+   }
+  ],
+  "ng": "Kinh doanh cốt lõi = lãi gộp − bán hàng − quản lý. 2026E: 6T thực tế (lãi bán Thuận An 1, Serenity, Tam Hiệp; dự phòng ~504 tỷ) + 6T cuối mô hình; 2027E: lãi bán Thuận An 2 (cơ sở)."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với chủ đầu tư nhà ở niêm yết",
+  "phu": "giá hôm nay; vốn chủ cổ đông 30/6/2026, 997,8 triệu cp",
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 20/10)",
+  "nhom": "8 chủ đầu tư nhà ở niêm yết",
+  "kv": [
+   [
+    "VHM",
+    1.88
+   ],
+   [
+    "CEO",
+    1.03
+   ],
+   [
+    "TCH",
+    0.97
+   ],
+   [
+    "KDH",
+    0.94
+   ],
+   [
+    "DXG",
+    0.91
+   ],
+   [
+    "NLG",
+    0.83
+   ],
+   [
+    "DIG",
+    0.8
+   ],
+   [
+    "NVL",
+    0.61
+   ]
+  ],
+  "tv": 0.93,
+  "moi_cp": 12618,
+  "max": 2.5,
+  "y": "Trừ VHM (ROE 4 quý 34%), cả nhóm ở 0,61–1,03 lần với ROE 1–10%. PDR ~0,9 lần, ngang trung vị (0,93), ROE 4 quý 5% gần như toàn bộ từ bán dự án; 61% sổ sách là khoản góp vốn chưa sinh lời — không có lý do trả hơn nhóm.",
+  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ BCTC gần nhất (bảng giá VNDirect 20/10/2026); NVL theo bảng giá, đã gồm tiền chào bán 3:1"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: bàn giao + bán dự án − lãi vay",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Kinh doanh"
+   },
+   {
+    "ten": "Doanh thu bàn giao BĐS (tỷ)",
+    "v": [
+     949,
+     600,
+     1000
+    ]
+   },
+   {
+    "ten": "Biên gộp bàn giao (%)",
+    "v": [
+     38.3,
+     45.0,
+     45.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     1325,
+     838,
+     1030
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp (tỷ)",
+    "v": [
+     720,
+     446,
+     477
+    ]
+   },
+   {
+    "ten": "Bán hàng + quản lý (tỷ)",
+    "v": [
+     -261,
+     -545,
+     -300
+    ]
+   },
+   {
+    "ten": "Kinh doanh cốt lõi (tỷ)",
+    "v": [
+     459,
+     -99,
+     177
+    ]
+   },
+   {
+    "nhom": "Tài chính và thuế"
+   },
+   {
+    "ten": "Lãi bán dự án & thu nhập tài chính (tỷ)",
+    "v": [
+     638,
+     1396,
+     1444
+    ]
+   },
+   {
+    "ten": "Lãi vay (tỷ)",
+    "v": [
+     -347,
+     -617,
+     -850
+    ]
+   },
+   {
+    "ten": "Dự phòng, liên kết & khác (tỷ)",
+    "v": [
+     -99,
+     -509,
+     -60
+    ]
+   },
+   {
+    "ten": "LN trước thuế (tỷ)",
+    "v": [
+     651,
+     171,
+     711
+    ]
+   },
+   {
+    "ten": "Thuế & cổ đông thiểu số (tỷ)",
+    "v": [
+     -136,
+     -294,
+     -314
+    ]
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     515,
+     -123,
+     397
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     516,
+     -123,
+     398
+    ],
+    "eps": 1
+   },
+   {
+    "nhom": "Vốn"
+   },
+   {
+    "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
+    "v": [
+     12.4,
+     12.3,
+     12.7
+    ],
+    "d": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     4.4,
+     -1.0,
+     3.2
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "2026E = 6T thực tế + 6T cuối mô hình (Q3 không bàn giao, Q4 giao Bắc Hà Thanh). Lãi bán Thuận An 2 = 3.000 − 1.576 tỷ giá sổ; thuế ~21% lãi bán dự án (6T/2026: 292/1.381 tỷ), lỗ kinh doanh và lãi vay không được trừ. Chưa tính chào bán 5:1."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2025A → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2025A",
+   515
+  ],
+  "cuoi": [
+   "2027E",
+   397
+  ],
+  "buoc": [
+   [
+    "Lãi bán dự án",
+    806
+   ],
+   [
+    "Kinh doanh cốt lõi",
+    -282
+   ],
+   [
+    "Lãi vay",
+    -503
+   ],
+   [
+    "Dự phòng & khác",
+    39
+   ],
+   [
+    "Thuế",
+    -178
+   ]
+  ],
+  "y": "Lãi bán dự án 2027E gấp 2,3 lần 2025 (Thuận An 2) nhưng lãi vay tăng thêm ~503 tỷ và kinh doanh cốt lõi giảm khi Bắc Hà Thanh gần bán hết: LN vẫn dưới 2025. Đi từ 2026E (lỗ) thì phần cải thiện chủ yếu là không lặp lại ~504 tỷ dự phòng.",
+  "ng": "BCTC 2025 · mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu bàn giao Q4/2026 (tỷ)",
+   "v": [
+    "200",
+    "600",
+    "1.100"
+   ],
+   "ly_do": "Bắc Hà Thanh (1.422 sản phẩm, GĐ2 chờ pháp lý); Q3 không bàn giao (MBS); MBS cả năm 1.120 tỷ (611 căn 6T cuối)"
+  },
+  {
+   "ten": "Doanh thu bàn giao 2027 (tỷ)",
+   "v": [
+    "500",
+    "1.000",
+    "1.500"
+   ],
+   "ly_do": "MBS 1.506 tỷ; 2025: 949 tỷ. 239 CMT8, Poulo Condor mở bán 2027 nhưng giao từ 2028 (MBS)"
+  },
+  {
+   "ten": "Biên gộp bàn giao 2026 · 2027",
+   "v": [
+    "40% · 40%",
+    "45% · 45%",
+    "48,5% · 47%"
+   ],
+   "ly_do": "2025: 38,3%; MBS 2026F 48,5% (nhiều đất nền, shophouse), 2027F 44,5%"
+  },
+  {
+   "ten": "Thuận An 2 (99,9% Cao ốc Hòa Phú)",
+   "v": [
+    "dời 2028",
+    "3.000 tỷ 2027",
+    "3.000 tỷ 2027"
+   ],
+   "ly_do": "HĐQT 10/6/2026: giá không thấp hơn 3.000 tỷ, chốt theo BCTC kiểm toán; giá sổ 1.576 tỷ (MBS); MBS dự kiến 2027"
+  },
+  {
+   "ten": "Lãi vay 6T cuối 2026 · 2027 (tỷ)",
+   "v": [
+    "470 · 1.000",
+    "430 · 850",
+    "320 · 650"
+   ],
+   "ly_do": "MBS 617 (2026F) → 6T cuối 430, 2027F 767; nợ vay ~11 nghìn tỷ, ~8%/năm vào chi phí. Tốt: một phần lãi vay Lotte được vốn hóa"
+  },
+  {
+   "ten": "Bán hàng + quản lý 6T cuối · 2027 (tỷ)",
+   "v": [
+    "260 · 340",
+    "200 · 300",
+    "160 · 260"
+   ],
+   "ly_do": "6T/2026 345 tỷ (197 tỷ dự phòng); 2025 261 tỷ; MBS 2027F 271 tỷ"
+  },
+  {
+   "ten": "Hệ số Thủ Thiêm (trên giá vốn)",
+   "v": [
+    "0,70",
+    "0,85",
+    "1,00"
+   ],
+   "ly_do": "1,0 = giá mua 8/2026; 0,85 ≈ chậm ~1,4 năm, 0,70 ≈ chậm 3 năm ở chi phí vốn 12,5% (MBS); PDR thiểu số 35%, Lotte 65%"
+  },
+  {
+   "ten": "Hệ số lãi Thuận An 2",
+   "v": [
+    "0,4",
+    "0,8",
+    "1,0"
+   ],
+   "ly_do": "Chưa hoàn tất; bên mua theo báo chí thuộc hệ sinh thái Bcons; xấu: dời sang 2028 hoặc giảm giá"
+  },
+  {
+   "ten": "P/B vốn chủ phần còn lại",
+   "v": [
+    "0,45",
+    "0,70",
+    "0,95"
+   ],
+   "ly_do": "Phần này gánh nợ vay ~2,3 lần vốn chủ; NVL 0,61, DIG 0,80, NLG 0,83, KDH 0,94 (giá 20/10)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": -543,
+   "ln27": -1268,
+   "gia": 8.0,
+   "mo_ta": "Q4 giao 200 tỷ, Thuận An 2 dời sang 2028, lãi vay 2027 1.000 tỷ; Thủ Thiêm × 0,70, Thuận An 2 × 0,4, phần còn lại P/B 0,45"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": -123,
+   "ln27": 397,
+   "gia": 10.9,
+   "mo_ta": "Q4 giao 600 tỷ, Thuận An 2 ghi nhận 2027, lãi vay 2027 850 tỷ; Thủ Thiêm × 0,85, Thuận An 2 × 0,8, phần còn lại P/B 0,70"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 364,
+   "ln27": 966,
+   "gia": 13.5,
+   "mo_ta": "Q4 giao 1.100 tỷ (như MBS), bàn giao 2027 1.500 tỷ, một phần lãi vay Lotte vốn hóa; Thủ Thiêm × 1,0, Thuận An 2 × 1,0, phần còn lại P/B 0,95"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo tài sản (NAV điều chỉnh)",
+  "phu": "Thủ Thiêm theo giá vốn × hệ số + lãi Thuận An 2 × hệ số + vốn chủ phần còn lại × P/B",
+  "ck": 0,
+  "cp": 997.8,
+  "phan": [
+   {
+    "ten": "Thủ Thiêm (35% Lotte Properties HCMC)",
+    "mau": "c1",
+    "x": [
+     7666,
+     7666,
+     7666
+    ],
+    "boi": [
+     0.7,
+     0.85,
+     1.0
+    ],
+    "x_ten": "Giá vốn 35% (trả xong 10/8/2026)",
+    "boi_ten": "hệ số",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     5366,
+     6516,
+     7666
+    ]
+   },
+   {
+    "ten": "Lãi Thuận An 2 chờ ghi nhận",
+    "mau": "c3",
+    "x": [
+     1114,
+     1114,
+     1114
+    ],
+    "boi": [
+     0.4,
+     0.8,
+     1.0
+    ],
+    "x_ten": "Lãi sau thuế (giá ≥ 3.000 tỷ − giá sổ 1.576 tỷ)",
+    "boi_ten": "hệ số",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     446,
+     891,
+     1114
+    ]
+   },
+   {
+    "ten": "Vốn chủ phần còn lại",
+    "mau": "c2",
+    "x": [
+     4924,
+     4924,
+     4924
+    ],
+    "boi": [
+     0.45,
+     0.7,
+     0.95
+    ],
+    "x_ten": "Vốn chủ cổ đông 30/6/2026 − giá vốn Thủ Thiêm",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     2216,
+     3447,
+     4678
+    ]
+   }
+  ],
+  "von": [
+   8028,
+   10854,
+   13458
+  ],
+  "gia": [
+   8.0,
+   10.9,
+   13.5
+  ]
+ },
+ "nhay": [
+  [
+   "Hệ số Thủ Thiêm ±0,1 (≈ sớm/chậm ~1 năm)",
+   null,
+   0.8
+  ],
+  [
+   "Trích lập thêm 1.000 tỷ (phải thu, dự án BT)",
+   1000,
+   0.7
+  ],
+  [
+   "P/B vốn chủ phần còn lại ±0,1 lần",
+   null,
+   0.5
+  ],
+  [
+   "Giá bán Thuận An 2 ±300 tỷ",
+   235,
+   0.2
+  ],
+  [
+   "Lãi suất ±1 điểm % trên ~11 nghìn tỷ nợ vay (1 năm)",
+   110,
+   0.1
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.54,
+   1.52,
+   1.58,
+   1.58,
+   1.58,
+   1.66,
+   2.03,
+   1.7,
+   1.53,
+   1.35,
+   1.24,
+   1.22,
+   1.2,
+   1.16,
+   1.32,
+   1.28,
+   1.31,
+   1.22,
+   1.13,
+   1.11,
+   1.12,
+   1.17,
+   1.17,
+   1.13,
+   1.2,
+   1.2,
+   1.48,
+   2.13,
+   2.14,
+   2.55,
+   2.5,
+   2.48,
+   2.69,
+   2.79,
+   3.01,
+   3.02,
+   3.33,
+   2.78,
+   3.2,
+   3.12,
+   2.71,
+   2.77,
+   2.38,
+   2.23,
+   2.41,
+   2.31,
+   2.24,
+   2.16,
+   2.18,
+   2.02,
+   2.2,
+   2.23,
+   2.17,
+   2.34,
+   2.39,
+   2.36,
+   2.33,
+   2.33,
+   2.22,
+   2.24,
+   2.23,
+   1.98,
+   1.9,
+   2.04,
+   2.51,
+   2.2,
+   2.2,
+   2.52,
+   3.43,
+   3.65,
+   3.33,
+   4.14,
+   4.49,
+   4.89,
+   5.3,
+   6.7,
+   7.04,
+   8.54,
+   8.46,
+   7.67,
+   7.14,
+   8.38,
+   7.37,
+   7.49,
+   7.15,
+   5.94,
+   6.25,
+   5.91,
+   5.04,
+   4.77,
+   4.84,
+   4.81,
+   4.45,
+   3.81,
+   1.09,
+   1.08,
+   1.1,
+   0.83,
+   1.03,
+   1.16,
+   1.2,
+   1.38,
+   1.78,
+   1.97,
+   1.9,
+   1.66,
+   2.13,
+   2.18,
+   2.19,
+   2.25,
+   2.47,
+   2.05,
+   2.15,
+   2.02,
+   1.62,
+   1.72,
+   1.79,
+   1.68,
+   1.68,
+   1.64,
+   1.52,
+   1.58,
+   1.54,
+   1.22,
+   1.35,
+   1.43,
+   1.64,
+   2.04,
+   1.95,
+   1.87,
+   1.86,
+   1.55,
+   1.46,
+   1.32,
+   1.32,
+   1.33,
+   1.28,
+   1.18,
+   0.91,
+   0.98,
+   0.89,
+   0.9
+  ],
+  "p10": 1.16,
+  "p25": 1.39,
+  "tv": 2.04,
+  "thap": [
+   "2023-02",
+   0.83
+  ],
+  "nay": [
+   "2026-10",
+   0.9
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,45 · 0,70 · 0,95 cho vốn chủ phần còn lại (Thủ Thiêm tính riêng theo giá vốn × hệ số): dưới đáy lịch sử (0,83, 2/2023) vì phần này gánh ~11,4 nghìn tỷ nợ vay. Cả công ty ở giá trị cơ sở ≈ P/B 0,86. P/B từ 1,18 (6/2026) còn 0,90 sau thương vụ Lotte; 2023–2025: 0,83–2,5 lần dù ROE 1,5–7%."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -300,
+    -200,
+    26
+   ],
+   "ck": 86
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -456,
+    -136,
+    125
+   ],
+   "ck": 314
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    -543,
+    -123,
+    364
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "20–30/10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "MBS dự báo LN 26 tỷ (−70%); không bàn giao, không bán dự án mà lãi vay Lotte chạy từ 10/8. Xem nợ vay, phải thu khác 30/9 và cách hạch toán 35% Lotte.",
+   "tac": [
+    "−200 tỷ",
+    "cơ sở; lãi như MBS (+26 tỷ) là kịch bản tốt"
+   ],
+   "theo_doi": "LN cổ đông, lãi vay, phải thu"
+  },
+  {
+   "khi": "23/10/2026",
+   "loai": "len",
+   "tieu": "Khởi công khối thương mại Lotte Thủ Thiêm",
+   "ct": "2 cao ốc + khối đế (~171.580 m² sàn) PDR phát triển toàn bộ, xong 10/2029; đồng phát triển ~6 tháp, 1.634 căn hộ. Tiến độ thi công là thước đo cho hệ số Thủ Thiêm.",
+   "tac": [
+    "±0,8 nghìn đ/cp",
+    "mỗi 0,1 hệ số Thủ Thiêm (≈ sớm/chậm ~1 năm)"
+   ],
+   "theo_doi": "tiến độ thi công, giấy phép bán"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "hai",
+   "tieu": "Thuận An 2: ghi nhận Q4/2026 hay 2027",
+   "ct": "Kế hoạch tổng doanh thu 8.830 tỷ ≈ giá 4 thương vụ (8.039 tỷ) + ~0,8 nghìn tỷ vận hành — hàm ý tính Thuận An 2 trong 2026; MBS dời sang 2027. Chỉ đổi năm ghi nhận.",
+   "tac": [
+    "+1.114 tỷ LN",
+    "năm hoàn tất (≥ 3.000 tỷ, giá sổ 1.576 tỷ, thuế ~21%)"
+   ],
+   "theo_doi": "công bố hoàn tất chuyển nhượng"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Bàn giao Bắc Hà Thanh",
+   "ct": "Mục tiêu bán dứt điểm trong 2026 (1.422 sản phẩm; 627 đủ điều kiện bán ở GĐ1, GĐ2 chờ pháp lý). Nguồn lãi gộp gần như duy nhất trước 2028.",
+   "tac": [
+    "+45 tỷ lãi gộp",
+    "mỗi 100 tỷ doanh thu bàn giao (biên 45%)"
+   ],
+   "theo_doi": "doanh thu chuyển nhượng BĐS"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi vay vượt lãi kinh doanh",
+   "ct": "Nợ vay ~11,4 nghìn tỷ sau gói vay MB (96 tháng), thêm tối đa 2.727 tỷ khi Lotte Properties HCMC tăng vốn lên 12 nghìn tỷ. MBS: khả năng trả lãi 0,5–0,6 lần 2026–2027.",
+   "tac": [
+    "±110 tỷ LN/năm",
+    "mỗi 1 điểm % lãi suất trên ~11 nghìn tỷ nợ vay"
+   ],
+   "theo_doi": "nợ vay, lãi vay mỗi quý"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thủ Thiêm chậm tiến độ, PDR là cổ đông thiểu số",
+   "ct": "Lotte nắm 65% (Lotte Shopping 30,59%, Hotel Lotte 22,94%, Lotte E&C 11,47%); dự án từng đình trệ nhiều năm trước khi nộp đủ ~17.569 tỷ tiền sử dụng đất (7/2026).",
+   "tac": [
+    "−1,2 nghìn đ/cp",
+    "hệ số 0,85 → 0,70 (chậm thêm ~1,5 năm)"
+   ],
+   "theo_doi": "mốc mở bán nhà ở"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Chất lượng phải thu",
+   "ct": "Phải thu khác gần 5.000 tỷ (gấp ~4,7 lần đầu năm), ~1.700 tỷ phải thu cá nhân; bên mua Serenity (Fortis) lập 3/2026, PDR còn ~694 tỷ phải thu dài hạn (MBS).",
+   "tac": [
+    "−0,2 nghìn đ/cp",
+    "nếu trích lập 20% phần phải thu cá nhân"
+   ],
+   "theo_doi": "phải thu khác, dự phòng"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Chào bán 5:1 giá 10.000 đ, cổ tức cổ phiếu 10%",
+   "ct": "Tối đa 199,56 triệu cp thu 1.996 tỷ (Hàn River 1.550, 239 CMT8 300, vốn lưu động 146), giá dưới giá trị sổ sách ~12,6 nghìn đ/cp; cả hai chưa thực hiện.",
+   "tac": [
+    "−0,1 nghìn đ/cp",
+    "nếu chào bán đủ ở 10.000 đ (dưới giá trị cơ sở)"
+   ],
+   "theo_doi": "ngày đăng ký cuối cùng"
+  },
+  {
+   "khi": "2027–2029",
+   "loai": "len",
+   "tieu": "239 CMT8, Poulo Condor mở bán",
+   "ct": "MBS: doanh số ký bán 2027F 5.222 tỷ (239 CMT8, PDR 50%) và 2.211 tỷ (Poulo Condor); bàn giao 2028–2029, LN 2028F 3.594 tỷ. Mô hình chỉ tính theo giá sổ sách.",
+   "tac": "",
+   "theo_doi": "giấy phép, tỷ lệ hấp thụ"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "hai",
+   "tieu": "Mức P/B thị trường trả",
+   "ct": "P/B từ 1,18 (6/2026) xuống 0,90 sau khi công bố vay MB mua Lotte; đáy lịch sử 0,83 (2/2023); 2023–2025: 0,83–2,5 lần dù ROE 1,5–7%.",
+   "tac": [
+    "±0,5 nghìn đ/cp",
+    "mỗi 0,1 lần P/B phần còn lại"
+   ],
+   "theo_doi": "P/B so với ROE"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi bán dự án và kinh doanh cốt lõi",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Thu nhập tài chính (chủ yếu lãi bán dự án)",
+     "v": [
+      194,
+      4,
+      2,
+      226,
+      2,
+      408,
+      907,
+      474
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Kinh doanh cốt lõi",
+     "v": [
+      -47,
+      144,
+      130,
+      -36,
+      196,
+      170,
+      -7,
+      -233
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "8 quý: 2,2 nghìn tỷ thu nhập tài chính (gần hết là lãi bán dự án) so với 316 tỷ lãi cốt lõi; Q2/2026 cốt lõi lỗ 233 tỷ (gồm ~164 tỷ dự phòng).",
+   "ng": "BCTC (VNDirect); cốt lõi = lãi gộp − bán hàng − quản lý"
+  },
+  {
+   "ten": "Bán 4 dự án, mua 35% Thủ Thiêm",
+   "kieu": "cot_chong",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Thuận An 1",
+    "Tam Hiệp",
+    "Serenity",
+    "Thuận An 2",
+    "Lotte 35%"
+   ],
+   "ss": [
+    {
+     "ten": "Đã bán",
+     "v": [
+      1901,
+      638,
+      2500,
+      0,
+      0
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Chờ hoàn tất",
+     "v": [
+      0,
+      0,
+      0,
+      3000,
+      0
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Mua 35% Lotte",
+     "v": [
+      0,
+      0,
+      0,
+      0,
+      7666
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Giá 4 thương vụ cộng lại ~8,04 nghìn tỷ ≈ giá mua 35% Lotte (7.666 tỷ), chưa gồm ~2.727 tỷ góp thêm khi dự án tăng vốn.",
+   "ng": "Công bố PDR qua báo chí 2–6/2026 (Thuận An 2: giá tối thiểu, HĐQT 10/6); Tam Hiệp ~638 tỷ, Lotte: MBS 14/10"
+  },
+  {
+   "ten": "Nợ vay và tiền",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      4.4,
+      5.3,
+      5.3,
+      5.7,
+      5.9,
+      5.5,
+      4.4,
+      5.2
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      0.2,
+      0.5,
+      0.2,
+      0.1,
+      0.1,
+      0.4,
+      0.2,
+      2.6
+     ],
+     "mau": "c4",
+     "net": 0
+    }
+   ],
+   "y": "30/6/2026 nợ vay 5,2 nghìn tỷ, tiền 2,6 nghìn tỷ nhờ bán dự án — trước khi trả 7.666 tỷ cho Lotte (10/8) bằng gói vay MB 6.108 tỷ và tiền mặt; MBS ước nợ vay cuối 2026 10,6 nghìn tỷ.",
+   "ng": "BCTC (VNDirect); MBS 14/10"
+  },
+  {
+   "ten": "Phải thu và hàng tồn kho",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Phải thu ngắn hạn",
+     "v": [
+      6.4,
+      6.9,
+      6.4,
+      6.6,
+      6.1,
+      7.0,
+      8.1,
+      7.0
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Hàng tồn kho",
+     "v": [
+      12.9,
+      14.1,
+      14.0,
+      14.1,
+      15.0,
+      16.7,
+      15.1,
+      13.6
+     ],
+     "mau": "c2",
+     "net": 0
+    }
+   ],
+   "y": "Phải thu ngắn hạn 7,0 nghìn tỷ (30/6) = 56% vốn chủ, chưa giảm dù đã bán nhiều dự án; tồn kho giảm khi Serenity thôi hợp nhất.",
+   "ng": "BCTC (VNDirect); MBS 14/10"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "LNST cổ đông công ty mẹ",
+    "kh": 868,
+    "th": 213,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 16/4/2026 · BCTC Q2"
+   },
+   {
+    "ten": "Chào bán 5:1 cho cổ đông (tiền thu)",
+    "kh": 1996,
+    "th": 0,
+    "ky": "10/2026",
+    "tg": 80,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 16/4/2026"
+   }
+  ],
+  "y": "6T đạt 25% kế hoạch LNST dù đã có 1,4 nghìn tỷ lãi bán dự án. Kế hoạch tổng doanh thu 8.830 tỷ ≈ giá 4 thương vụ (8.039 tỷ) + vận hành: muốn đạt, Thuận An 2 phải ghi nhận ngay Q4. Mô hình cơ sở: 2026E lỗ 123 tỷ.",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "Lotte Eco Smart City Thủ Thiêm — 35%, tài sản lớn nhất",
+   "phu": "Khu chức năng 2A Thủ Thiêm ~7,45 ha · tổng vốn đầu tư ~60.000 tỷ · PDR 35%, nhóm Lotte 65%",
+   "so": [
+    [
+     "Giá mua 35%",
+     "7.666 tỷ",
+     "trả xong 10/8/2026"
+    ],
+    [
+     "Góp thêm",
+     "~2.727 tỷ",
+     "khi tăng vốn lên 12.000 tỷ"
+    ],
+    [
+     "Tiền sử dụng đất",
+     "~17.569 tỷ",
+     "nộp đủ 7/2026"
+    ],
+    [
+     "Khối thương mại",
+     "~171.580 m² sàn",
+     "xong 10/2029"
+    ]
+   ],
+   "y": [
+    {
+     "t": "PDR phát triển toàn bộ 2 khối thương mại (lô 2-1, 2-3), đồng phát triển khối nhà ở lô 2-2, 2-4, 2-6 (~6 tháp, 1.634 căn hộ); MBS ước mở bán từ 2029.",
+     "ng": "MBS 14/10"
+    },
+    {
+     "t": "Vay MB tối đa 8.835 tỷ, 96 tháng: gói 1 tối đa 6.108 tỷ trả tiền nhận chuyển nhượng, gói 2 tối đa 2.727 tỷ góp vốn (nghị quyết HĐQT 29/6/2026).",
+     "ng": "Mekong ASEAN, Doanh nhân 6/2026"
+    },
+    {
+     "t": "MBS đưa Lotte vào RNAV theo giá vốn (29% tổng giá trị dự án) và chưa tính lợi nhuận trước 2028.",
+     "ng": "MBS 14/10"
+    }
+   ]
+  },
+  {
+   "ten": "Bán dự án 2025–2027 — nguồn lợi nhuận chính",
+   "phu": "Bán dự án đã đầu tư phần lớn để dồn vốn cho dự án lõi",
+   "so": [
+    [
+     "Thuận An 1 (80%)",
+     "1.901 tỷ",
+     "Mitsubishi, thu tiền đầu 2026"
+    ],
+    [
+     "Tam Hiệp (30%)",
+     "~638 tỷ",
+     "hoàn tất 15/5/2026"
+    ],
+    [
+     "Serenity (99,34%)",
+     "2.500 tỷ",
+     "Fortis, 6/2026, lãi 465 tỷ"
+    ],
+    [
+     "Thuận An 2 (99,9%)",
+     "≥ 3.000 tỷ",
+     "HĐQT 10/6/2026, chờ hoàn tất"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q4/2025 bán Bắc Cường (khu đất 223 Trần Phú, Đà Nẵng): thu nhập tài chính quý 408 tỷ.",
+     "ng": "VCBS 18/03 · BCTC"
+    },
+    {
+     "t": "PDR bơm 982 tỷ vào Serenity 1/2026 rồi bán sau 5 tháng; bên mua Fortis lập 3/2026, còn ~694 tỷ phải thu dài hạn.",
+     "ng": "MBS 14/10"
+    },
+    {
+     "t": "6T/2026 lãi thanh lý đầu tư 1.381 tỷ đưa LNTT lên 505 tỷ trong khi kinh doanh chính lỗ 241 tỷ.",
+     "ng": "MBS 14/10 · BCTC"
+    }
+   ]
+  },
+  {
+   "ten": "Dự án tự phát triển",
+   "phu": "Bắc Hà Thanh · 239 CMT8 · Poulo Condor · Tropicana · The EverRich 2, 3 · quỹ đất Đồng Nai, Bình Dương cũ",
+   "so": [
+    [
+     "Bắc Hà Thanh",
+     "1.422 sản phẩm",
+     "43,2 ha, đang bàn giao"
+    ],
+    [
+     "239 CMT8 (50%)",
+     "363 căn",
+     "mở bán cuối 2026–2027"
+    ],
+    [
+     "Poulo Condor",
+     "12 ha",
+     "tổng vốn 8.282 tỷ"
+    ],
+    [
+     "The EverRich 2",
+     "5.975 tỷ",
+     "giá sổ sách (MBS)"
+    ]
+   ],
+   "y": [
+    {
+     "t": "MBS: doanh số ký bán 2027F 239 CMT8 5.222 tỷ, Poulo Condor 2.211 tỷ; doanh thu bàn giao 2028F 11.923 tỷ, LN 3.594 tỷ.",
+     "ng": "MBS 14/10"
+    },
+    {
+     "t": "Hai dự án thí điểm Nghị quyết 171 ở Bình Dương cũ (Phú Hòa 28,3 ha, Tương Bình Hiệp) và khu đất trúng đấu giá Trấn Biên (Đồng Nai, 1,92 ha, 690 tỷ, 12/2025).",
+     "ng": "VPBS 29/04 · VCBS 18/03"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn — nợ vay, phải thu, cổ phiếu",
+   "phu": "Bảng cân đối hợp nhất 30/6/2026 (trước khoản vay MB)",
+   "so": [
+    [
+     "Nợ vay",
+     "5,2 nghìn tỷ",
+     "trước gói vay MB"
+    ],
+    [
+     "Tiền + đầu tư NH",
+     "2,6 nghìn tỷ",
+     "30/6/2026"
+    ],
+    [
+     "Phải thu ngắn hạn",
+     "7,0 nghìn tỷ",
+     "phải thu khác ~5 nghìn tỷ"
+    ],
+    [
+     "Vốn chủ cổ đông",
+     "12,59 nghìn tỷ",
+     "BVPS 12.618 đ"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Chào bán tối đa 199,56 triệu cp (5:1) giá 10.000 đ → 1.996 tỷ (Hàn River 1.550, cổ phần AKYN/239 CMT8 300, vốn lưu động 146); cổ tức cổ phiếu 10%.",
+     "ng": "ĐHĐCĐ 16/4/2026 · VPBS 29/04"
+    },
+    {
+     "t": "Cuối 2023 PDR đưa dư nợ trái phiếu về 0 (đầu 2022 hơn 3.000 tỷ, gần 70% nợ vay), chuyển sang vay ngân hàng.",
+     "ng": "Shinhan 13/03"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "Lãi suất cho vay mua nhà và phát triển dự án bật tăng từ Q1/2026; tín dụng bất động sản bị kiểm soát.",
+     "h": -1,
+     "ng": "Shinhan 13/03 · MBS 14/10"
+    },
+    {
+     "t": "Đầu tư công 2026–2030 mục tiêu 8,3 triệu tỷ, gấp 2,5 lần 2021–2025.",
+     "h": 1,
+     "ng": "Shinhan 13/03"
+    },
+    {
+     "t": "Nghị quyết 171 (nhà ở thương mại qua thỏa thuận đất) mở đường cho hai dự án ở Bình Dương cũ.",
+     "h": 1,
+     "ng": "VCBS 18/03"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "MBS: 2027 là giai đoạn chuyển tiếp — giá nhà cao, lãi vay mua nhà tăng, nguồn cung tăng; phục hồi rõ hơn từ cuối 2027.",
+     "h": -1,
+     "ng": "MBS 14/10"
+    },
+    {
+     "t": "Nguồn cung TP.HCM 2026–2028 dự báo tăng mạnh (CBRE): cạnh tranh cho 239 CMT8 và khối nhà ở Thủ Thiêm.",
+     "h": 0,
+     "ng": "Shinhan 13/03"
+    },
+    {
+     "t": "Nghỉ dưỡng, đất nền, shophouse vùng ven phục hồi chậm hơn nhà ở thực — nhóm sản phẩm của Poulo Condor, Bắc Hà Thanh.",
+     "h": -1,
+     "ng": "Shinhan 13/03"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Từ nhiều dự án tỉnh sang một dự án lõi Thủ Thiêm (35%): chất lượng quỹ đất tăng, nhưng phụ thuộc đối tác Lotte về tiến độ.",
+     "h": 0,
+     "ng": "MBS 14/10"
+    },
+    {
+     "t": "Phân phối qua Realty Holdings (do thành viên nội bộ PDR lập) từ 2024 thay Danh Khôi; phải thu liên quan Danh Khôi còn ~800 tỷ cuối 2025.",
+     "h": 0,
+     "ng": "Shinhan 13/03"
+    },
+    {
+     "t": "Chủ tịch Nguyễn Văn Đạt sở hữu 29,54%, Phát Đạt Holdings (của ông Đạt) 8,55%; nước ngoài 6,9%.",
+     "h": 0,
+     "ng": "MBS 14/10 (FiinPro)"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "MBS",
+   "ngay": "2026-10-14",
+   "kn": "KHẢ QUAN",
+   "tp": 17100,
+   "ln26": 458,
+   "ln27": 732,
+   "pp": "RNAV (DCF dự án có kế hoạch, còn lại giá sổ sách)",
+   "y": "Hạ giá mục tiêu 16% từ 20.400: bỏ Serenity, Thuận An 2 về giá sổ sách, nợ vay tăng; Lotte theo giá vốn. Dự báo Q3 LN 26 tỷ, lãi vay 617 / 767 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PDR/20261014_pdr_bcpt_thu_thiem_mo_chu_ky_moi_loi_nhuan_ngan_han_chiu_ap_luc_lai_vay.pdf"
+  },
+  {
+   "ctck": "VPBS",
+   "ngay": "2026-04-29",
+   "kn": "KHÁC",
+   "tp": 25600,
+   "ln26": null,
+   "ln27": null,
+   "pp": "không nêu (báo cáo ĐHĐCĐ)",
+   "y": "Kế hoạch 2026: tổng doanh thu 8.830 tỷ gồm chuyển nhượng cổ phần, LNTT 1.788 tỷ trước ~700 tỷ dự phòng dự án BT, LNST 868 tỷ; cổ tức cổ phiếu 10%, chào bán 5:1.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PDR/Ke_hoach_kinh_doanh_tham_vong_cho_2026_don_luc_trien_khai_BT_e_mo_rong_quy_at_.pdf"
+  },
+  {
+   "ctck": "VCBS",
+   "ngay": "2026-03-18",
+   "kn": "MUA",
+   "tp": 19317,
+   "ln26": 1739,
+   "ln27": null,
+   "pp": "RNAV 17.621 đ và P/B 1,59 × BVPS 2026 (50:50)",
+   "y": "Ra trước thương vụ Lotte: kỳ vọng dòng tiền từ Thuận An 1 và 2, LNST 2026F 1.739 tỷ; P/B tham chiếu trung bình TAL, KDH, VPI, CEO, TCH.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PDR/Dong_tien_cai_thien_tich_cuc.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-03-13",
+   "kn": "MUA",
+   "tp": 20000,
+   "ln26": 593,
+   "ln27": 707,
+   "pp": "RNAV, chiết khấu 15%, WACC 12,6%",
+   "y": "Báo cáo lần đầu, trước thương vụ Lotte và các đợt bán dự án: doanh thu 2026–2027F 2.989 / 4.130 tỷ nhờ 6 dự án; nợ vay/vốn chủ ~52–54%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PDR/pdr_mua_gia_mt_vnd_20_000_30_7_thu_thach_niem_tin.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. VCBS, Shinhan, VPBS ra trước thương vụ Lotte (6/2026); MBS 14/10 là bản duy nhất đã tính khoản vay MB. PDR không chia cổ tức tiền mặt trong 12 tháng qua.",
+ "nguon": [
+  {
+   "ten": "MBS — Thủ Thiêm mở chu kỳ mới, lợi nhuận ngắn hạn chịu áp lực lãi vay",
+   "ngay": "14/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PDR/20261014_pdr_bcpt_thu_thiem_mo_chu_ky_moi_loi_nhuan_ngan_han_chiu_ap_luc_lai_vay.pdf"
+  },
+  {
+   "ten": "VPBS — Báo cáo ĐHĐCĐ 2026: kế hoạch kinh doanh, BT, phát hành",
+   "ngay": "29/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PDR/Ke_hoach_kinh_doanh_tham_vong_cho_2026_don_luc_trien_khai_BT_e_mo_rong_quy_at_.pdf"
+  },
+  {
+   "ten": "VCBS — Dòng tiền cải thiện tích cực",
+   "ngay": "18/03/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PDR/Dong_tien_cai_thien_tich_cuc.pdf"
+  },
+  {
+   "ten": "Shinhan — Thử thách niềm tin (báo cáo lần đầu)",
+   "ngay": "13/03/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PDR/pdr_mua_gia_mt_vnd_20_000_30_7_thu_thach_niem_tin.pdf"
+  },
+  {
+   "ten": "Vietnamfinance — ĐHĐCĐ Phát Đạt: LNST mục tiêu 868 tỷ, 6 dự án",
+   "ngay": "04/2026",
+   "link": "https://vietnamfinance.vn/dhdcd-phat-dat-chot-muc-tieu-lai-sau-thue-868-ty-trien-khai-6-du-an-d143493.html"
+  },
+  {
+   "ten": "Doanh nhân — chào bán hơn 199 triệu cổ phiếu, vốn điều lệ lên hơn 11.900 tỷ",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/phat-trien-bat-dong-san-phat-dat-pdr-chao-ban-hon-199-trieu-co-phieu-du-tang-von-dieu-le-vuot-11-900-ty-dong.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Phát Đạt muốn chào bán cổ phiếu cho cổ đông hiện hữu",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/phat-dat-muon-cha-o-ban-co-phieu-cho-co-dong-hien-huu-53008.html"
+  },
+  {
+   "ten": "Mekong ASEAN — vay MB 8.835 tỷ mua cổ phần Lotte HCMC Properties",
+   "ngay": "06/2026",
+   "link": "https://mekongasean.vn/phat-dat-muon-vay-mb-8835-ty-do-ng-de-mua-co-pha-n-lotte-hcmc-properties-56769.html"
+  },
+  {
+   "ten": "Doanh nhân — vay hơn 8.800 tỷ thâu tóm 35% chủ đầu tư Thủ Thiêm Eco Smart City",
+   "ngay": "06/2026",
+   "link": "https://doanhnhan.baophapluat.vn/phat-dat-pdr-vay-hon-8-800-ty-dong-thau-tom-35-co-phan-chu-dau-tu-du-an-thu-thiem-eco-smart-city.html"
+  },
+  {
+   "ten": "Vietstock — Lotte, Phát Đạt hợp tác dự án Thủ Thiêm",
+   "ngay": "06/2026",
+   "link": "https://en.vietstock.vn/2026/06/lotte-phat-dat-join-forces-on-thu-thiem-smart-city-project-973-636674.htm"
+  },
+  {
+   "ten": "Việt Nam News — dự án Thủ Thiêm hồi sinh với kế hoạch đầu tư 2,27 tỷ USD",
+   "ngay": "2026",
+   "link": "https://vietnamnews.vn/economy/1784384/long-delayed-thu-thiem-project-revived-with-2-27-billion-investment-plan.html"
+  },
+  {
+   "ten": "Nhà Đầu Tư — Cần tiền cho siêu dự án 60.000 tỷ tại Thủ Thiêm",
+   "ngay": "2026",
+   "link": "https://nhadautu.vn/can-tien-cho-sieu-du-an-60000-ty-tai-thu-thiem-nguon-luc-phat-dat-dang-phan-bo-ra-sao-d106936.html"
+  },
+  {
+   "ten": "Vietnamfinance — KQKD Q2/2026: lãi tăng 24%, tiền mặt gấp 4 lần nhờ thoái vốn",
+   "ngay": "31/07/2026",
+   "link": "https://vietnamfinance.vn/phat-dat-bao-lai-tang-24-tien-mat-gap-4-lan-nho-loat-thuong-vu-thoai-von-d148419.html"
+  },
+  {
+   "ten": "Doanh nhân — thoái toàn bộ 99,34% vốn tại Đầu tư Serenity",
+   "ngay": "06/2026",
+   "link": "https://doanhnhan.baophapluat.vn/phat-dat-pdr-thoai-toan-bo-99-34-von-tai-dau-tu-serenity-uoc-thu-3-000-ty-dong.html"
+  },
+  {
+   "ten": "Mekong ASEAN — chuyển nhượng toàn bộ vốn tại chủ đầu tư Thuận An 2",
+   "ngay": "06/2026",
+   "link": "https://mekongasean.vn/phat-dat-muon-chuyen-nhuong-toa-n-bo-von-tai-chu-da-u-tu-du-an-thuan-an-2-56121.html"
+  },
+  {
+   "ten": "24hMoney — dự kiến thu tối thiểu 3.000 tỷ từ Thuận An 2",
+   "ngay": "06/2026",
+   "link": "https://24hmoney.vn/news/phat-dat-du-kien-thu-toi-thieu-3-000-ty-tu-chuyen-nhuong-chu-dau-tu-du-an-thuan-an-2-c3a2792916.html"
+  },
+  {
+   "ten": "Znews — Bcons chi hơn 3.000 tỷ cho dự án 2,65 ha của Phát Đạt",
+   "ngay": "06/2026",
+   "link": "https://znews.vn/bcons-chi-hon-3000-ty-thau-tom-du-an-2-65-ha-cua-phat-dat-tai-tphcm-post1659601.html"
+  },
+  {
+   "ten": "Doanh nhân — thoái thành công 30% vốn tại Phát triển Đô thị Tam Hiệp",
+   "ngay": "05/2026",
+   "link": "https://doanhnhan.baophapluat.vn/phat-trien-bat-dong-san-phat-dat-pdr-thoai-thanh-cong-30-von-tai-cong-ty-phat-trien-do-thi-tam-hiep.html"
+  },
+  {
+   "ten": "Doanh nhân — chiến lược 2026–2030 (HĐQT 12/12/2025)",
+   "ngay": "12/2025",
+   "link": "https://doanhnhan.baophapluat.vn/phat-dat-pdr-cong-bo-chien-luoc-lai-12000-ty-dong-giai-doan-toi-khi-thi-gia-co-phieu-giam-sau-89734.html"
+  }
+ ]
+}

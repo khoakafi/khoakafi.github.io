@@ -563,7 +563,7 @@
     c.buoc.forEach(function(z){ var a = cum; cum += z[1]; mx = Math.max(mx, cum);
       dong.push({ ten: z[0], tu: Math.min(a, cum), den: Math.max(a, cum), cls: z[1] >= 0 ? 'tang' : 'giam', so: (z[1] > 0 ? '+' : (z[1] < 0 ? '−' : '')) + f(Math.abs(z[1]), 0) }); });
     var d = c.cuoi[1] - c.dau[1]; mx = Math.max(mx, c.cuoi[1]);
-    dong.push({ ten: c.cuoi[0], tu: 0, den: c.cuoi[1], cls: 'tong', so: f(c.cuoi[1], 0) + ' <em class="' + lop(d) + '">' + pct(d / c.dau[1] * 100, 1) + '</em>' });
+    dong.push({ ten: c.cuoi[0], tu: 0, den: c.cuoi[1], cls: 'tong', so: f(c.cuoi[1], 0) + (c.dau[1] > 0 ? ' <em class="' + lop(d) + '">' + pct(d / c.dau[1] * 100, 1) + '</em>' : '') });   // diem dau am/0: % vo nghia
     var X = function(v){ return v / (mx * 1.02) * 100; };
     return nhan1('LN cổ đông ' + esc(c.dau[0]) + ' → ' + esc(c.cuoi[0]), 'kịch bản cơ sở, tỷ đồng') + '<div class="hsWf">' + dong.map(function(r){
       return '<div class="hsWfR ' + r.cls + '" title="' + esc(r.ten) + ': ' + r.so.replace(/<[^>]+>/g, '') + '"><span class="hsWfT">' + esc(r.ten) + '</span><span class="hsWfB"><i style="left:' + X(r.tu).toFixed(2) + '%;width:' + Math.max(0.4, X(r.den) - X(r.tu)).toFixed(2) + '%"></i></span><b>' + r.so + '</b></div>'; }).join('')
