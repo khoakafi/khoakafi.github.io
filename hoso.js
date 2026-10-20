@@ -86,7 +86,7 @@
       z += '</div>';
     }
     var hien = {}; hien[0] = 1; hien[n - 1] = 1; [cmp[0], hl[0]].forEach(function(i){ if (i != null && !hien[i - 1] && !hien[i + 1]) hien[i] = 1; });
-    z += '</div><div class="bdx">' + lbs.map(function(lb, i){ return '<span>' + ((o.moiNhan || hien[i]) ? esc(lb) : '') + '</span>'; }).join('') + '</div>';
+    z += '</div><div class="bdx">' + lbs.map(function(lb, i){ return '<span>' + (((o.moiNhan && (n <= 8 || (n - 1 - i) % 2 === 0)) || hien[i]) ? esc(lb) : '') + '</span>'; }).join('') + '</div>';
     return '<div class="bdc">' + z + '</div>';
   }
   // Cot chong: ss cung don vi, moi chuoi mot mau; tong (rong) ghi tren dinh cot. Phan am (mang lo) chong xuong duoi vach 0
