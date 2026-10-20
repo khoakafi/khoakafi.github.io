@@ -1,0 +1,1460 @@
+{
+ "v": 2,
+ "ma": "CII",
+ "ten": "Công ty Cổ phần Đầu tư Hạ tầng Kỹ thuật TP.HCM",
+ "nganh": "Hạ tầng giao thông (BOT) và bất động sản",
+ "ky": "BCTC Q2/2026 · công bố đến 10/2026",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026 và kết quả chào bán CII426001",
+ "cp_trieu": 1544.0,
+ "cp_ng": "672,0 triệu cp lưu hành (vốn điều lệ 6.719,9 tỷ, BCTC Q2/2026) + 200 triệu từ trái phiếu CII425002 (2.500 tỷ, giá chuyển đổi 12.500 đ) + 672 triệu từ CII426001 (6.720 tỷ chào cổ đông 10:1, giá chuyển đổi 10.000 đ, chốt quyền 27/8/2026), giả định bán hết và chuyển đổi hết. Giá đã giao dịch không hưởng quyền nên tính trên số cp pha loãng",
+ "vc_them": 9220,
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Số cổ phiếu sẽ gấp 2,3 lần, lãi cổ đông gần 0: giá đang trả trước cho Thủ Thiêm",
+  "dk": "up_duoi:0",
+  "khac": "Số cổ phiếu sẽ gấp 2,3 lần, lãi cổ đông gần 0: giá trị nằm ở Thủ Thiêm và tuyến mở rộng"
+ },
+ "dong_mo": "Phí BOT 6T/2026 +6% nhưng lãi vay khối BOT +25%: LN cổ đông chỉ 33 tỷ. Hai đợt trái phiếu chuyển đổi 9.220 tỷ giá 10.000–12.500 đ, dưới sổ sách 14.400 đ/cp, đưa số cổ phiếu lên 1.544 triệu. P/B 0,95 trên vốn chủ pha loãng cho {gt} ({up}); cán cân lên/xuống {rr} lần. Cửa tăng: 5 lô Thủ Thiêm, NBB Garden III.",
+ "luan_diem": [
+  {
+   "so": "×2,3",
+   "nhan": "số cổ phiếu khi chuyển đổi hết hai đợt trái phiếu",
+   "tieu": "Vốn cho tuyến mở rộng đến từ trái phiếu chuyển đổi dưới sổ sách",
+   "t": "Đợt 2.500 tỷ CII425002 (chào từ 1/4/2026, đặt mua 324%) giá chuyển đổi 12.500 đ; đợt 6.720 tỷ CII426001 chào cổ đông 10:1, giá 10.000 đ — dưới giá trị sổ sách 14.400 đ/cp. Chuyển đổi hết: 1.544 triệu cp, sổ sách mỗi cp còn ~12.240 đ (−15%). Không chuyển đổi thì sau 12 kỳ lãi 0%, CII trả 14,5%/năm (~974 tỷ) — gấp đôi phần lãi BOT về tay CII năm 2025 (475 tỷ).",
+   "ng": "vneconomy 06/2026 · mekongasean 08/2026 · BCTC Q2/2026 · mô hình"
+  },
+  {
+   "so": "33 tỷ",
+   "nhan": "LN cổ đông 6T/2026 (−30%)",
+   "tieu": "Trạm thu phí lãi, cổ đông CII nhận phần mỏng",
+   "t": "Doanh thu phí 6T 1.409,5 tỷ (+6%) nhờ giá vé Trung Lương – Mỹ Thuận +12%; biên gộp khối BOT (LGC) 66,8%. Nhưng lãi vay khối BOT 586 tỷ (+25%), thu nhập tài chính −61%: LNST khối BOT 261 tỷ (−37%). Metro Pacific nhận ~45% LN cổ đông LGC; công ty mẹ, BĐS & khác lỗ 165 tỷ (phân bổ lợi thế thương mại 2025: ~217 tỷ). Mô hình: 2026E 31 tỷ, 2027E 165 tỷ.",
+   "ng": "BCTC Q2/2026 CII, LGC · CII giải trình 07/2026 · mô hình"
+  },
+  {
+   "so": "24,5",
+   "nhan": "nghìn tỷ nợ vay 30/6/2026 (+22% từ đầu năm)",
+   "tieu": "Nợ tăng trước, dòng tiền tuyến mới về sau 2028",
+   "t": "Mở rộng cao tốc TP.HCM – Trung Lương – Mỹ Thuận (~41.000 tỷ, nhóm CII 55%, phương án vay 27.000 tỷ) và đường trên cao QL51 (13.000 tỷ) thông xe sớm nhất cuối 2028–2029. Nợ vay đã 2,5 lần vốn chủ cổ đông; lãi vay hợp nhất 6T bằng 80% lãi gộp. Cùng lúc nhóm CII mua ~13% PC1: phần mua trong Q2 giá vốn 20.029 đ/cp, nay 18,6 nghìn (−7%).",
+   "ng": "BVSC 05/02/2026 · baophapluat · BCTC Q2/2026 · mekongasean 08/2026"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ/cp pha loãng)",
+   "tieu": "P/B trên cổ phiếu pha loãng: {up_so} so với giá hiện tại",
+   "t": "P/B 0,95 × (vốn chủ 30/6/2027E + 9.220 tỷ gốc trái phiếu) ÷ 1.544 triệu cp. 0,95 nằm giữa trung vị từ 2023 (0,91) và từ 2020 (0,99); 7 mã BOT, hạ tầng trung vị 0,74. Giá 20/10 bằng 1,08 lần sổ sách pha loãng — đã trả trước cho Thủ Thiêm. Xấu 8,5 (P/B 0,70); tốt 15,6 (P/B 1,25, cần nhận 5 lô Thủ Thiêm theo giá đất 2015–2016).",
+   "ng": "mô hình · P/B: BCTC VNDirect, giá 20/10/2026"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   124,
+   31,
+   165
+  ],
+  "ln_truoc": 261,
+  "eps": [
+   80,
+   20,
+   107
+  ],
+  "bv": [
+   null,
+   12238,
+   12345
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "LN trước phân bổ LTTM (tỷ)",
+    "v": [
+     341,
+     248,
+     382
+    ]
+   },
+   {
+    "ten": "Doanh thu khối BOT (nghìn tỷ)",
+    "v": [
+     2.6,
+     2.79,
+     2.93
+    ],
+    "d": 2
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC; LN trước phân bổ lợi thế thương mại 2025: công ty công bố (2026E–2027E giả định phân bổ ~217 tỷ/năm). EPS, BVPS theo 1.544 triệu cp pha loãng; BVPS gồm 9.220 tỷ gốc trái phiếu chuyển đổi. Không chia cổ tức tiền mặt 2025."
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông CII theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Phần của CII trong khối BOT (LGC)",
+    "mau": "c1",
+    "v": [
+     475,
+     386,
+     435
+    ]
+   },
+   {
+    "ten": "Công ty mẹ, BĐS & khác",
+    "mau": "c3",
+    "v": [
+     -351,
+     -355,
+     -270
+    ]
+   }
+  ],
+  "ng": "Khối BOT = LGC hợp nhất trừ phần thiểu số (Metro Pacific ~45% LGC). Phần còn lại = hợp nhất CII − LGC: lãi vay, chi phí tầng công ty mẹ, NBB, đầu tư tài chính và ~217 tỷ/năm phân bổ lợi thế thương mại. 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với 7 mã hạ tầng giao thông, BOT",
+  "phu": "giá hôm nay; CII: vốn chủ 30/6 + 9.220 tỷ trái phiếu, 1.544 triệu cp",
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 20/10)",
+  "nhom": "7 mã BOT, hạ tầng niêm yết",
+  "kv": [
+   [
+    "HHV",
+    0.47
+   ],
+   [
+    "IJC",
+    0.54
+   ],
+   [
+    "CTI",
+    0.66
+   ],
+   [
+    "HTI",
+    0.74
+   ],
+   [
+    "VCG",
+    0.92
+   ],
+   [
+    "DPG",
+    1.11
+   ],
+   [
+    "HUT",
+    1.18
+   ]
+  ],
+  "tv": 0.74,
+  "moi_cp": 12239,
+  "max": 2,
+  "y": "Tính trên 672 triệu cp hiện hữu thì P/B 0,92; cộng cổ phiếu và tiền trái phiếu: 1,08 — cao hơn 5/7 mã (trừ DPG, HUT). Nhóm BOT có ROE 5–9% (HHV, CTI, IJC) chỉ được trả 0,47–0,66; LN cổ đông 4 quý của CII bằng 1,1% vốn chủ. Nhóm bất động sản lớn (phân ngành của trang) trung vị 1,87 không dùng: hơn 90% lãi gộp của CII là phí BOT.",
+  "ng": "Vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất, giá 20/10/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình hai khối: thu phí BOT và công ty mẹ",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Khối BOT — LGC (CII B&R) hợp nhất"
+   },
+   {
+    "ten": "Doanh thu (tỷ)",
+    "v": [
+     2598,
+     2791,
+     2930
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     63.3,
+     65.4,
+     65.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Chi phí tài chính, chủ yếu lãi vay (tỷ)",
+    "v": [
+     -1033,
+     -1176,
+     -1180
+    ]
+   },
+   {
+    "ten": "Thu nhập tài chính (tỷ)",
+    "v": [
+     433,
+     211,
+     240
+    ]
+   },
+   {
+    "ten": "LNST khối BOT (tỷ)",
+    "v": [
+     719,
+     519,
+     616
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Thiểu số, chủ yếu Metro Pacific (tỷ)",
+    "v": [
+     -244,
+     -132,
+     -181
+    ]
+   },
+   {
+    "ten": "Phần của CII (tỷ)",
+    "v": [
+     475,
+     386,
+     435
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Công ty mẹ, BĐS & khác (hợp nhất CII − LGC)"
+   },
+   {
+    "ten": "LNST, gồm phân bổ lợi thế thương mại (tỷ)",
+    "v": [
+     -351,
+     -355,
+     -270
+    ]
+   },
+   {
+    "nhom": "Cổ đông CII"
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     124,
+     31,
+     165
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LN trước phân bổ lợi thế thương mại (tỷ)",
+    "v": [
+     341,
+     248,
+     382
+    ]
+   },
+   {
+    "ten": "EPS (đ, 1.544 triệu cp pha loãng)",
+    "v": [
+     80,
+     20,
+     107
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
+    "v": [
+     8.9,
+     9.7,
+     9.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Nợ vay cuối kỳ (nghìn tỷ)",
+    "s": [
+     "20,2",
+     "24,5 (30/6)",
+     "—"
+    ]
+   }
+  ],
+  "ghi": "2026E = 6T thực tế + 6T cuối ước tính. Thiểu số hợp nhất = 45,2% LN cổ đông LGC (Metro Pacific); thiểu số trong LGC (~105 tỷ/nửa năm, chủ yếu 49% Xa lộ Hà Nội, Rạch Miễu do CII nắm trực tiếp) vẫn về CII. Thuế khối BOT 10%. Vốn chủ chưa gồm 9.220 tỷ trái phiếu (cộng khi định giá)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông CII 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   31
+  ],
+  "cuoi": [
+   "2027E",
+   165
+  ],
+  "buoc": [
+   [
+    "Lãi gộp BOT",
+    80
+   ],
+   [
+    "Chi phí tài chính BOT",
+    -4
+   ],
+   [
+    "Thu nhập tài chính BOT",
+    29
+   ],
+   [
+    "Quản lý, thuế BOT",
+    -6
+   ],
+   [
+    "Thiểu số (Metro Pacific)",
+    -49
+   ],
+   [
+    "Công ty mẹ, BĐS & khác",
+    84
+   ]
+  ],
+  "y": "Lãi gộp BOT tăng 80 tỷ nhưng chi phí tài chính, thuế và phần Metro Pacific lấy lại 59 tỷ; cải thiện lớn nhất đến từ công ty mẹ (lãi tiền gửi từ trái phiếu chưa giải ngân).",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu khối BOT 2H/2026 · 2027",
+   "v": [
+    "+3% · 0%",
+    "+6% · +5%",
+    "+8% · +8%"
+   ],
+   "ly_do": "6T/2026 +8,9% (LGC), doanh thu phí +6%: giá vé Trung Lương – Mỹ Thuận +12% từ 11/2025 (Q4/2025 đã có 2 tháng); XLHN tăng 18% năm 2024"
+  },
+  {
+   "ten": "Biên gộp khối BOT 2H/2026 · 2027",
+   "v": [
+    "61% · 62%",
+    "64% · 65%",
+    "66% · 67%"
+   ],
+   "ly_do": "6T/2026 66,8%, 2H/2025 62,4% (Q3/2025 59,8%), cả 2025 63,3%"
+  },
+  {
+   "ten": "Chi phí tài chính khối BOT 2H/2026 · 2027 (tỷ)",
+   "v": [
+    "610 · 1.260",
+    "590 · 1.180",
+    "570 · 1.120"
+   ],
+   "ly_do": "Nợ vay LGC 15,5 nghìn tỷ (30/6, +22% từ đầu năm); Q2/2026 284,6 tỷ; 2025 1.033 tỷ"
+  },
+  {
+   "ten": "Thu nhập tài chính khối BOT 2H/2026 · 2027",
+   "v": [
+    "90 · 180",
+    "120 · 240",
+    "150 · 300"
+   ],
+   "ly_do": "2025 433 tỷ, 6T/2026 chỉ 91 tỷ (Q2 68); tiền và đầu tư ngắn hạn LGC 1,2 nghìn tỷ (30/6)"
+  },
+  {
+   "ten": "Công ty mẹ, BĐS & khác 2H/2026 · 2027 (tỷ)",
+   "v": [
+    "−240 · −420",
+    "−190 · −270",
+    "−120 · −150"
+   ],
+   "ly_do": "6T/2026 −165, 2025 −351 (gồm ~217 tỷ phân bổ LTTM); 2027 có lãi tiền gửi từ 6.720 tỷ trái phiếu chưa giải ngân"
+  },
+  {
+   "ten": "Số cổ phiếu (triệu)",
+   "v": [
+    "1.544",
+    "1.544",
+    "1.544"
+   ],
+   "ly_do": "672 lưu hành + 200 (2.500 tỷ ÷ 12.500 đ) + 672 (6.720 tỷ ÷ 10.000 đ), giả định chuyển đổi hết; đợt 6.720 tỷ chỉ bán 50%: +0,6 nghìn đ/cp"
+  },
+  {
+   "ten": "P/B vốn chủ pha loãng",
+   "v": [
+    "0,70",
+    "0,95",
+    "1,25"
+   ],
+   "ly_do": "CII từ 2023: thấp 10% 0,71, trung vị 0,91; từ 2020 trung vị 0,99; từ 2015 1,26. 7 mã BOT, hạ tầng: trung vị 0,74"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": -76,
+   "ln27": -157,
+   "gia": 8.5,
+   "mo_ta": "Doanh thu BOT 2027 đi ngang, biên 62%, chi phí tài chính khối BOT 1.260 tỷ; công ty mẹ, BĐS lỗ 420 tỷ; P/B 0,70 — không nhận được 5 lô Thủ Thiêm"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 31,
+   "ln27": 165,
+   "gia": 11.7,
+   "mo_ta": "Doanh thu BOT 2027 +5%, biên 65%; lãi tiền gửi từ trái phiếu bù một phần lãi vay; P/B 0,95 trên vốn chủ pha loãng"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 148,
+   "ln27": 415,
+   "gia": 15.6,
+   "mo_ta": "Doanh thu BOT 2027 +8%, biên 67%; NBB Garden III bắt đầu ghi nhận; nhận 5 lô Thủ Thiêm theo giá đất 2015–2016; P/B 1,25"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B trên cổ phiếu pha loãng",
+  "phu": "P/B × (vốn chủ 30/6/2027E + gốc trái phiếu chuyển đổi) ÷ 1.544 triệu cp",
+  "ck": 0,
+  "cp": 1544.0,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông 30/6/2027E",
+    "mau": "c1",
+    "x": [
+     9489,
+     9758,
+     10000
+    ],
+    "boi": [
+     0.7,
+     0.95,
+     1.25
+    ],
+    "x_ten": "vốn chủ 30/6/2026 + LN 12 tháng",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     6642,
+     9270,
+     12500
+    ]
+   },
+   {
+    "ten": "Gốc hai đợt trái phiếu chuyển đổi",
+    "mau": "c4",
+    "x": [
+     9220,
+     9220,
+     9220
+    ],
+    "boi": [
+     0.7,
+     0.95,
+     1.25
+    ],
+    "x_ten": "2.500 + 6.720 tỷ khi chuyển đổi",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     6454,
+     8759,
+     11525
+    ]
+   }
+  ],
+  "von": [
+   13096,
+   18029,
+   24025
+  ],
+  "gia": [
+   8.5,
+   11.7,
+   15.6
+  ]
+ },
+ "nhay": [
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.2
+  ],
+  [
+   "Mỗi 1.000 tỷ giá trị Thủ Thiêm thị trường cộng thêm",
+   null,
+   0.7
+  ],
+  [
+   "Đợt 6.720 tỷ chỉ bán và chuyển đổi 50% (giá trị tăng)",
+   null,
+   0.6
+  ],
+  [
+   "Lãi suất ±1 điểm % trên ~25 nghìn tỷ nợ vay (12 tháng)",
+   164,
+   0.1
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.22,
+   1.27,
+   1.29,
+   1.48,
+   1.31,
+   1.57,
+   1.72,
+   1.43,
+   1.4,
+   1.49,
+   1.42,
+   1.43,
+   1.48,
+   1.66,
+   1.68,
+   1.76,
+   1.67,
+   1.74,
+   1.72,
+   1.85,
+   1.91,
+   1.85,
+   2.24,
+   2.14,
+   2.34,
+   2.73,
+   2.92,
+   2.96,
+   2.32,
+   2.21,
+   1.93,
+   1.96,
+   1.8,
+   1.79,
+   1.87,
+   1.99,
+   2.13,
+   2.03,
+   1.76,
+   1.79,
+   1.6,
+   1.5,
+   1.43,
+   1.5,
+   1.53,
+   1.34,
+   1.49,
+   1.49,
+   1.3,
+   1.36,
+   1.41,
+   1.3,
+   1.31,
+   1.28,
+   1.25,
+   1.19,
+   1.25,
+   1.36,
+   1.25,
+   1.18,
+   1.28,
+   1.08,
+   0.91,
+   0.99,
+   1.02,
+   0.96,
+   0.92,
+   1.02,
+   0.99,
+   0.91,
+   0.94,
+   1.17,
+   1.14,
+   1.23,
+   1.48,
+   1.18,
+   1.19,
+   1.14,
+   0.96,
+   1.05,
+   1.06,
+   1.34,
+   1.77,
+   2.77,
+   1.67,
+   1.88,
+   1.78,
+   1.37,
+   1.18,
+   0.85,
+   1.07,
+   1.23,
+   1.0,
+   0.79,
+   0.75,
+   0.68,
+   0.8,
+   0.68,
+   0.76,
+   0.76,
+   0.93,
+   0.96,
+   1.09,
+   1.07,
+   0.92,
+   0.66,
+   0.81,
+   0.82,
+   0.86,
+   0.93,
+   0.96,
+   0.81,
+   0.85,
+   0.77,
+   0.76,
+   0.79,
+   0.79,
+   0.78,
+   0.72,
+   0.71,
+   0.68,
+   0.75,
+   0.73,
+   0.7,
+   1.01,
+   0.97,
+   1.08,
+   1.71,
+   1.98,
+   1.86,
+   1.88,
+   1.47,
+   1.29,
+   1.24,
+   1.3,
+   1.35,
+   1.22,
+   1.24,
+   0.94,
+   1.02,
+   0.84,
+   0.9
+  ],
+  "p10": 0.78,
+  "p25": 0.96,
+  "tv": 1.26,
+  "thap": [
+   "2023-10",
+   0.66
+  ],
+  "nay": [
+   "2026-10",
+   0.9
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "ref": [
+   {
+    "v": 0.71,
+    "ten": "thấp 10% từ 2023"
+   },
+   {
+    "v": 1.26,
+    "ten": "trung vị từ 2015"
+   }
+  ],
+  "dung": "Kịch bản dùng P/B 0,70 · 0,95 · 1,25 trên vốn chủ pha loãng: 0,70 ≈ thấp 10% từ 2023 (0,71); 0,95 giữa trung vị từ 2023 (0,91) và từ 2020 (0,99); 1,25 ≈ trung vị từ 2015 (1,26), bình quân 6 tháng đầu 2026 (1,27) khi thị trường kỳ vọng Thủ Thiêm. Điểm 10/2026 tính trên 672 triệu cp; trên cổ phiếu pha loãng: 1,08."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -66,
+    -10,
+    52
+   ],
+   "ck": 11
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -42,
+    9,
+    64
+   ],
+   "ck": 66
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    -76,
+    31,
+    148
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "≤ 30/10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Cơ sở: LN cổ đông −10 tỷ (Q3/2025: 11 tỷ) — khối BOT +94, công ty mẹ, BĐS & khác −105. PC1 30/9 ở 20,75 nghìn, sát giá vốn Q2 nên chưa phải trích lớn.",
+   "tac": [
+    "≥ −10 tỷ",
+    "giữ kịch bản cơ sở; dưới −66 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "lãi vay, thu nhập tài chính"
+  },
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "Kết quả chào bán CII426001 (6.720 tỷ)",
+   "ct": "HFIC (4,08%) chào 27,4 triệu quyền mua từ 10/9 đến 6/10 nhưng không ai mua. Phần cổ đông bỏ quyền do HĐQT phân phối; số bán được quyết định mức pha loãng.",
+   "tac": [
+    "+0,6 nghìn đ/cp",
+    "giá trị cơ sở nếu chỉ bán và chuyển đổi 50%"
+   ],
+   "theo_doi": "tỷ lệ đặt mua, giá chuyển đổi so với thị giá"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Danh mục PC1, HUT bằng vốn vay",
+   "ct": "Chứng khoán kinh doanh 30/6 giá vốn ~1.026 tỷ (PC1, HUT); phần PC1 mua trong Q2 giá vốn 738 tỷ, bình quân 20.029 đ — giá 20/10 18,6 nghìn (−7%). Dự phòng tính theo giá 31/12.",
+   "tac": [
+    "−53 tỷ",
+    "dự phòng riêng phần mua Q2 nếu PC1 giữ 18,6 nghìn"
+   ],
+   "theo_doi": "giá PC1, HUT cuối quý"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "TP.HCM rà soát giá đất thanh toán BT Thủ Thiêm",
+   "ct": "Nghị định 91/2025 chốt giá theo thời điểm 2015–2016; 7/2026 TP.HCM rà soát lại giá đất thanh toán. Giá cao hơn → CII làm thêm hoặc nộp chênh lệch; kéo dài → 5 lô có thể đưa ra đấu giá.",
+   "tac": [
+    "−3,2 nghìn đ/cp",
+    "từ cơ sở xuống xấu (P/B 0,70)"
+   ],
+   "theo_doi": "quyết định giá đất 5 lô còn lại"
+  },
+  {
+   "khi": "Q2/2027",
+   "loai": "len",
+   "tieu": "Hoàn thành BT Bắc Thủ Thiêm (2.642 tỷ)",
+   "ct": "Điều kiện quyết toán để nhận 5 lô còn chờ giao (4.8, 3.6, 3.13, 3.16, 1.18; ~5,1 ha); 25/3/2026 công ty con nhận thêm mặt bằng. Hai lô 3.13, 3.16 chiếm hơn 60% giá trị (BVSC).",
+   "tac": [
+    "+0,7 nghìn đ/cp",
+    "mỗi 1.000 tỷ giá trị lô đất thị trường cộng thêm"
+   ],
+   "theo_doi": "tiến độ BT, quyết định giao đất"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "len",
+   "tieu": "NBB Garden II, III bắt đầu ghi nhận",
+   "ct": "Ban lãnh đạo: NBB II, III chỉ hạch toán 2027–2028, chưa có trong kế hoạch 2026. NBB Garden III (Quận 8, 5,3 ha) đã chỉnh quy hoạch 1/500 tháng 6/2025.",
+   "tac": "",
+   "theo_doi": "giấy phép xây dựng, mở bán"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Nợ vay theo hai dự án BOT mới",
+   "ct": "Mở rộng TL-MT (~41.000 tỷ, phương án vay 27.000 tỷ) và QL51 (13.000 tỷ); nợ vay 24,5 nghìn tỷ (30/6), lãi vay hợp nhất 6T 733 tỷ.",
+   "tac": [
+    "±0,10 nghìn đ/cp",
+    "mỗi 1 điểm % lãi suất trong 12 tháng"
+   ],
+   "theo_doi": "nợ vay, lãi vốn hóa"
+  },
+  {
+   "khi": "2028–2029",
+   "loai": "len",
+   "tieu": "Thông xe mở rộng TL-MT và QL51",
+   "ct": "Riêng mở rộng TL-MT có vốn gấp 1,8 lần quy mô BOT hiện hữu; làm trên tuyến có sẵn lưu lượng nên có doanh thu ngay khi thông xe (BVSC, VCBS). Luật PPP mới không cam kết tỷ suất sinh lời.",
+   "tac": "",
+   "theo_doi": "tiến độ thi công"
+  },
+  {
+   "khi": "Từ 2029",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi 14,5% nếu trái phiếu không chuyển đổi",
+   "ct": "CII426001 lãi 0% 12 kỳ đầu (3 tháng/kỳ), sau đó 14,5%/năm. Giá dưới 10.000 đ thì người giữ trái phiếu không chuyển đổi: 6.720 tỷ thành nợ đắt nhất của CII.",
+   "tac": [
+    "~974 tỷ/năm",
+    "lãi phải trả nếu không chuyển đổi"
+   ],
+   "theo_doi": "thị giá so với 10.000 đ"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "BOT nhỏ bị tuyến mới chia lưu lượng",
+   "ct": "Ninh Thuận 2 (cao tốc Cam Lâm – Vĩnh Hảo), Rạch Miễu (cầu Rạch Miễu 2 không thu phí), ĐT741 (tài xế phản đối); nhóm này đóng góp ~800–1.000 tỷ phí/năm (VCBS).",
+   "tac": "",
+   "theo_doi": "doanh thu từng trạm"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Khối BOT (LGC): doanh thu và lãi gộp",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Doanh thu",
+     "v": [
+      604,
+      615,
+      635,
+      642,
+      672,
+      650,
+      696,
+      694
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      407,
+      406,
+      409,
+      412,
+      401,
+      424,
+      472,
+      456
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Doanh thu 6T/2026 +8,9%, biên gộp 66,8% nhờ giá vé Trung Lương – Mỹ Thuận +12% từ 11/2025.",
+   "ng": "BCTC LGC (VNDirect)"
+  },
+  {
+   "ten": "Lãi vay so với lãi gộp hợp nhất",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      419,
+      371,
+      425,
+      419,
+      348,
+      470,
+      448,
+      465
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Chi phí lãi vay",
+     "v": [
+      314,
+      313,
+      299,
+      314,
+      324,
+      342,
+      342,
+      391
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi vay 6T/2026 733 tỷ = 80% lãi gộp; Q2/2026 391 tỷ, cao nhất 8 quý.",
+   "ng": "BCTC CII (VNDirect)"
+  },
+  {
+   "ten": "LN cổ đông theo nguồn",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Phần của CII trong khối BOT",
+     "v": [
+      52,
+      58,
+      133,
+      144,
+      112,
+      87,
+      91,
+      107
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Công ty mẹ, BĐS & khác",
+     "v": [
+      -46,
+      -70,
+      -115,
+      -115,
+      -101,
+      -21,
+      -70,
+      -95
+     ],
+     "mau": "c3"
+    }
+   ],
+   "so_le": 0,
+   "y": "Khối BOT mang về 50–145 tỷ/quý cho CII; tầng công ty mẹ (lãi vay, phân bổ lợi thế thương mại, NBB) lấy lại 20–115 tỷ.",
+   "ng": "BCTC CII, LGC (VNDirect): phần BOT = LNST LGC − thiểu số hợp nhất CII"
+  },
+  {
+   "ten": "Nợ vay và tiền, đầu tư ngắn hạn",
+   "dv": "nghìn tỷ",
+   "kieu": "cot",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      19.3,
+      20.3,
+      20.8,
+      22.5,
+      20.4,
+      20.2,
+      21.7,
+      24.5
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      1.1,
+      2.4,
+      2.4,
+      4.2,
+      3.8,
+      3.4,
+      4.2,
+      7.8
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 1,
+   "y": "Q2/2026 nợ vay +2,8 nghìn tỷ, cùng lúc phát hành 2.500 tỷ trái phiếu chuyển đổi; đầu tư ngắn hạn (gồm PC1) +2,7 nghìn tỷ.",
+   "ng": "BCTC CII (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thu phí",
+    "kh": 2800,
+    "th": 1409.5,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 28/4/2026 · CII giải trình 07/2026"
+   },
+   {
+    "ten": "Tổng doanh thu (thuần + tài chính)",
+    "kh": 3720,
+    "th": 1822,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 28/4/2026 · BCTC Q2 (chưa gồm thu nhập khác)"
+   }
+  ],
+  "y": "Doanh thu phí đúng tiến độ. Kế hoạch LN cổ đông 225 tỷ tính trước phân bổ lợi thế thương mại (2025: 341 trước, 124 sau, chênh ~217 tỷ) — theo BCTC chỉ ~8 tỷ nếu phân bổ giữ như 2025; mô hình cơ sở 2026E 31 tỷ.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "BVSC",
+   "ngay": "2026-02-05",
+   "kn": "OUTPERFORM",
+   "tp": 24200,
+   "ln26": 245,
+   "pp": "SOTP 70% (DCF BOT, RNAV BĐS) + P/B 1,57 lần 30%",
+   "y": "Báo cáo lần đầu, trên 625 triệu cp — trước hai đợt trái phiếu chuyển đổi 2026. Cộng 9.220 tỷ tiền trái phiếu vào vốn chủ SOTP 15.639 tỷ rồi chia 1.544 triệu cp: ~16.100 đ. Thủ Thiêm tính 50% (6.046 tỷ), BOT mới 7.122 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/CII/ay_manh_trien_khai_cac_du_an_BOT_lon_moi_Quy_at_Thu_Thiem_la_ong_luc_trung_han_du_can_thoi_gian_hoan_thien_phap_ly_va_ton_ong_nhieu_rui_ro.pdf"
+  },
+  {
+   "ctck": "VCBS",
+   "ngay": "2025-08-01",
+   "kn": "MUA",
+   "tp": 18814,
+   "pp": "SOTP 50% + P/B 1,18 lần 50%",
+   "y": "Cũ hơn 14 tháng, trên 548 triệu cp (trước thưởng 76,7 triệu cp và các đợt chuyển đổi). LNST hợp nhất 2026F 667 tỷ — 6T/2026 thực tế 96 tỷ. Giá mục tiêu theo báo cáo (Simplize ghi 16.000).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/CII/a_tang_tich_cuc_ho_tro_boi_mang_bot.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. Hai báo cáo ra trước hai đợt trái phiếu chuyển đổi 2026 (548–625 triệu cp) nên giá mục tiêu không so trực tiếp được với giá trên 1.544 triệu cp pha loãng; chưa có CTCK cập nhật sau BCTC Q2/2026.",
+ "nguon": [
+  {
+   "ten": "BVSC — Báo cáo lần đầu CII",
+   "ngay": "05/02/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/CII/ay_manh_trien_khai_cac_du_an_BOT_lon_moi_Quy_at_Thu_Thiem_la_ong_luc_trung_han_du_can_thoi_gian_hoan_thien_phap_ly_va_ton_ong_nhieu_rui_ro.pdf"
+  },
+  {
+   "ten": "VCBS — Đà tăng tích cực hỗ trợ bởi mảng BOT",
+   "ngay": "01/08/2025",
+   "link": "https://cdn.simplize.vn/simplizevn/report/CII/a_tang_tich_cuc_ho_tro_boi_mang_bot.pdf"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ 2026: mục tiêu lãi 225 tỷ, chính sách cổ tức",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dau-tu-ha-tang-ky-thuat-tp-hcm-cii-dat-muc-tieu-lai-225-ty-trong-nam-2026-dieu-chinh-chinh-sach-co-tuc-theo-huong-linh-hoat.html"
+  },
+  {
+   "ten": "Stockbiz — Kế hoạch 2026, doanh thu thu phí 2.800 tỷ",
+   "ngay": "04/2026",
+   "link": "https://stockbiz.vn/tin-tuc/cii-loi-nhuan-2026-du-kien-giam-34-cii-don-luc-cho-danh-muc-ha-tang-21-ty-usd/39372321"
+  },
+  {
+   "ten": "Báo Đầu tư — ĐHĐCĐ CII dừng cổ tức hằng quý",
+   "ngay": "04/2026",
+   "link": "https://baodautu.vn/dhdcd-cii-dung-ke-hoach-tra-co-tuc-hang-quy-de-tap-trung-von-dau-tu-d579361"
+  },
+  {
+   "ten": "Vneconomy — Đặt mua trái phiếu CII đạt 324%",
+   "ngay": "06/2026",
+   "link": "https://vneconomy.vn/quy-mo-dat-mua-trai-phieu-cii-dat-324-gia-chao-ban.htm"
+  },
+  {
+   "ten": "Mekong ASEAN — Chào bán 6.720 tỷ trái phiếu chuyển đổi cho cổ đông",
+   "ngay": "08/2026",
+   "link": "https://mekongasean.vn/cii-chao-ban-hon-6700-ty-dong-trai-phieu-chuyen-doi-cho-co-dong-hien-huu-58547.html"
+  },
+  {
+   "ten": "Stockbiz — Chốt ngày chào bán 67,2 triệu trái phiếu chuyển đổi",
+   "ngay": "08/2026",
+   "link": "https://stockbiz.vn/tin-tuc/cii-chot-ngay-chao-ban-hon-67-trieu-trai-phieu-chuyen-doi-cho-co-dong/41447142"
+  },
+  {
+   "ten": "CafeF — HFIC bán bất thành quyền mua trái phiếu CII",
+   "ngay": "13/10/2026",
+   "link": "https://cafef.vn/hfic-ban-bat-thanh-quyen-mua-trai-phieu-chuyen-doi-cua-cii-188261013143027103.chn"
+  },
+  {
+   "ten": "DNSE — KQKD Q2/2026, lãi tạm tính PC1",
+   "ngay": "08/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/cii-tam-lai-hon-113-ty-dong-tu-khoan-dau-tu-pc1-loi-nhuan-van-giam-manh-35260263"
+  },
+  {
+   "ten": "Stockbiz — Lãi Q2 giảm, chi ~4 tỷ lãi vay mỗi ngày",
+   "ngay": "08/2026",
+   "link": "https://stockbiz.vn/tin-tuc/cii-bao-lai-boc-hoi-gan-mot-nua-chi-4-ty-dong-lai-vay-moi-ngay/41216577"
+  },
+  {
+   "ten": "Mekong ASEAN — Lợi nhuận giảm, tạm lãi PC1",
+   "ngay": "08/2026",
+   "link": "https://mekongasean.vn/loi-nhuan-cii-sut-gia-m-tam-lai-hon-100-ty-do-ng-khi-bat-day-pc1-57935.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Nhóm CII nâng sở hữu PC1 lên gần 13%",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/nhom-cii-tiep-tuc-mua-co-phieu-pc1-nang-so-huu-len-gan-13-59076.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Phương án vay 27.000 tỷ mở rộng TP.HCM – Trung Lương – Mỹ Thuận",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/cii-chot-phuong-an-vay-27-000-ty-dong-mo-rong-tuyen-cao-toc-nghin-ty-tp-hcm-trung-luong-my-thuan.html"
+  },
+  {
+   "ten": "Doanh nghiệp Hội nhập — TP.HCM định giá lại đất các dự án BT Thủ Thiêm",
+   "ngay": "20/07/2026",
+   "link": "https://doanhnghiephoinhap.vn/tp-ho-chi-minh-se-dinh-gia-lai-dat-cac-du-an-bt-tai-thu-thiem-114180.html"
+  },
+  {
+   "ten": "Người Quan sát — BT Thủ Thiêm dự kiến hoàn thành Q2/2027",
+   "ngay": "2026",
+   "link": "https://nguoiquansat.vn/du-an-hon-2-600-ty-dong-tren-dat-vang-thu-thiem-cua-cii-tang-toc-du-kien-hoan-thanh-vao-quy-ii-2027-317324.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — CII nhận bàn giao mặt bằng Thủ Thiêm",
+   "ngay": "03/2026",
+   "link": "https://nhadautu.vn/cii-nhan-ban-giao-mat-bang-tai-thu-thiem-co-phieu-kich-tran-d103789.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 0,
+     "t": "Luật PPP 2024 (hiệu lực 2025) không còn cam kết tỷ suất sinh lời cho BOT mới: mở rộng trên đường hiện hữu dễ huy động vốn hơn, nhưng nhà đầu tư tự gánh rủi ro lưu lượng.",
+     "ng": "VCBS 01/08/2025"
+    },
+    {
+     "h": 1,
+     "t": "Sáp nhập TP.HCM – Bình Dương – Bà Rịa Vũng Tàu kéo theo nhu cầu hạ tầng kết nối vùng; cơ chế đặc thù Nghị quyết 98 mở rộng phạm vi.",
+     "ng": "VCBS 01/08/2025"
+    },
+    {
+     "h": -1,
+     "t": "Gần 1.000 km cao tốc thông xe 2025 – 1H/2026: các BOT cũ có tuyến thay thế bị chia lưu lượng.",
+     "ng": "BVSC 05/02/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Trung Lương – Mỹ Thuận là một trong hai tuyến cao tốc nối miền Tây với TP.HCM; Cao Lãnh – Vàm Cống chưa nối thẳng TP.HCM. BVSC dự báo lưu lượng tự nhiên +7–10%/năm đến 2030.",
+     "ng": "BVSC 05/02/2026"
+    },
+    {
+     "h": -1,
+     "t": "BOT nhỏ chịu cạnh tranh: Ninh Thuận 2 (cao tốc Cam Lâm – Vĩnh Hảo từ 4/2024), Rạch Miễu (cầu Rạch Miễu 2 không thu phí), ĐT741 (tài xế phản đối).",
+     "ng": "VCBS 01/08/2025"
+    },
+    {
+     "h": 0,
+     "t": "7 mã BOT, hạ tầng niêm yết giao dịch 0,47–1,18 lần sổ sách (trung vị 0,74); CII 1,08 lần trên cổ phiếu pha loãng.",
+     "ng": "BCTC VNDirect, giá 20/10/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": -1,
+     "t": "Tập đoàn nhiều tầng, sở hữu chéo giữa CII B&R, CII Service, CII Invest — khó bóc tách giao dịch nội bộ; nợ vay/tổng tài sản cao nhất nhóm xây dựng hạ tầng.",
+     "ng": "BVSC 05/02/2026"
+    },
+    {
+     "h": -1,
+     "t": "ĐHĐCĐ 28/4/2026: không chia cổ tức 2025, dừng cổ tức hằng quý để giữ vốn cho đầu tư.",
+     "ng": "Báo Đầu tư · Báo Pháp luật 04/2026"
+    },
+    {
+     "h": 0,
+     "t": "HFIC (4,08%) chào 27,4 triệu quyền mua trái phiếu CII426001 (giá khởi điểm 3.490 đ/quyền) từ 10/9 đến 6/10/2026 nhưng không ai mua.",
+     "ng": "CafeF 13/10/2026"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Thu phí BOT",
+   "phu": "LGC (CII B&R) hợp nhất: Xa lộ Hà Nội, Trung Lương – Mỹ Thuận, Rạch Miễu, Ninh Thuận 2, ĐT741, Cổ Chiên; Metro Pacific Tollways ~45% LGC",
+   "so": [
+    [
+     "Doanh thu phí 6T/2026",
+     "1.409,5 tỷ",
+     "+6%"
+    ],
+    [
+     "Biên gộp khối BOT 6T",
+     "66,8%",
+     "6T/2025 64,3%"
+    ],
+    [
+     "Chi phí tài chính khối BOT 6T",
+     "586 tỷ",
+     "+24%"
+    ],
+    [
+     "LNST khối BOT 6T",
+     "261 tỷ",
+     "−37%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Doanh thu 2024: Trung Lương – Mỹ Thuận 1.165,5 tỷ, Xa lộ Hà Nội 767,6 tỷ, Rạch Miễu 279 tỷ, Ninh Thuận 2 245,7 tỷ, ĐT741 160,7 tỷ, Cổ Chiên 146,2 tỷ.",
+     "ng": "BVSC 05/02/2026"
+    },
+    {
+     "t": "Trung Lương – Mỹ Thuận tăng giá vé bình quân 12% từ 11/2025; Xa lộ Hà Nội đã tăng 18% năm 2024, BVSC không kỳ vọng tăng tiếp trong 2 năm.",
+     "ng": "BVSC 05/02/2026"
+    },
+    {
+     "t": "Kế hoạch 2026: doanh thu thu phí 2.800 tỷ, mảng chủ lực; 6T đạt 1.409,5 tỷ.",
+     "ng": "ĐHĐCĐ 28/4/2026 · CII 07/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Dự án BOT mới",
+   "phu": "Mở rộng cao tốc TP.HCM – Trung Lương – Mỹ Thuận (95 km) · đường trên cao QL51 (5,5 km, Đồng Nai) — nhóm CII 55%",
+   "so": [
+    [
+     "Tổng vốn hai dự án",
+     "~54.000 tỷ",
+     "41.000 + 13.000"
+    ],
+    [
+     "Vay mở rộng TL-MT",
+     "27.000 tỷ",
+     "phương án vay"
+    ],
+    [
+     "Thông xe dự kiến",
+     "2028–2029",
+     "BVSC"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Mở rộng TL-MT khởi công 11/2025; tiền đợt trái phiếu 6.720 tỷ dùng cho các dự án, trong đó có mở rộng cao tốc phía Nam.",
+     "ng": "BVSC 05/02 · Mekong ASEAN 08/2026"
+    },
+    {
+     "t": "Đang nghiên cứu thêm: mở rộng trục Bắc – Nam (Nguyễn Văn Linh – cầu Bà Chiêm), cải tạo QL22 (4.190 tỷ), mở rộng Nguyễn Hữu Thọ (9.900 tỷ).",
+     "ng": "BVSC 05/02 · VCBS 01/08/2025"
+    }
+   ]
+  },
+  {
+   "ten": "Bất động sản",
+   "phu": "Thủ Thiêm (BT Bắc Thủ Thiêm, 9 lô đất đối ứng) · NBB (74,9% biểu quyết) · cao ốc 152 Điện Biên Phủ",
+   "so": [
+    [
+     "Lô Thủ Thiêm chờ giao",
+     "5 lô",
+     "~5,1 ha"
+    ],
+    [
+     "Hợp đồng BT",
+     "2.642 tỷ",
+     "xong dự kiến Q2/2027"
+    ],
+    [
+     "NBB Garden II, III",
+     "13,2 ha",
+     "ghi nhận 2027–2028"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Đã nhận và chuyển nhượng 4 lô (3.1, 3.2, 4.7, 3.15); 5 lô còn lại chờ giao đất. 25/3/2026 công ty con Khu Bắc Thủ Thiêm nhận thêm mặt bằng.",
+     "ng": "BVSC 05/02 · Nhà Đầu tư 03/2026"
+    },
+    {
+     "t": "Nghị định 91/2025: giá đất thanh toán theo thời điểm ký tắt (4/2015) và ký chính thức (4/2016); 7/2026 TP.HCM rà soát lại giá đất thanh toán các hợp đồng BT Thủ Thiêm.",
+     "ng": "Nhà Đầu tư · DNHN 20/07/2026"
+    },
+    {
+     "t": "Doanh thu BĐS 2025 chủ yếu cho thuê CII Tower; NBB II, III chưa ghi nhận trong 2026.",
+     "ng": "BVSC 05/02 · ĐHĐCĐ 2026"
+    }
+   ]
+  }
+ ]
+}
