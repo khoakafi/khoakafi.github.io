@@ -580,7 +580,7 @@
   }
   function keHoach(k){
     var h = nhan1('Kế hoạch ' + k.nam + ' và tiến độ', 'vạch dọc = phần thời gian đã qua') + '<div class="hsKh">';
-    k.ds.forEach(function(z){ var r = z.kh > 0 ? z.th / z.kh * 100 : null, w = r == null ? 0 : Math.min(r, 100), vuot = r != null && z.tg != null && r >= z.tg;
+    k.ds.forEach(function(z){ var r = z.kh > 0 ? z.th / z.kh * 100 : null, w = r == null ? 0 : Math.max(0, Math.min(r, 100)), vuot = r != null && z.tg != null && r >= z.tg;
       h += '<div class="hsKr" title="' + esc(z.ng || '') + '"><div class="hsKt"><b>' + esc(z.ten) + '</b><span class="mini">' + f(z.th, z.th % 1 ? 1 : 0) + ' / ' + f(z.kh, z.kh % 1 ? 1 : 0) + ' ' + esc(z.dv || '') + ' · ' + esc(z.ky || '') + '</span></div>'
         + '<div class="hsKb"><i class="' + (vuot ? 'ok' : 'cham') + '" style="width:' + w.toFixed(1) + '%"></i>' + (z.tg != null ? '<s style="left:' + z.tg + '%" title="Đã qua ' + z.tg + '% thời gian"></s>' : '') + '</div>'
         + '<div class="hsKp ' + (vuot ? 'up' : '') + '">' + (r == null ? '—' : f(r, 0) + '%') + '</div></div>'; });
