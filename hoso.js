@@ -158,8 +158,10 @@
   function peTu(gia, cp, ln){ return (gia > 0 && cp > 0 && ln > 0) ? gia * cp / ln : null; }
   // tp_sau_ct: bao cao ghi ro gia muc tieu da tru co tuc (vd ACBS GAS 'cuoi 2026, sau co tuc') -> khong tru lan nua
   function tpDc(p, x){ var tru = 0; if (!x.tp_sau_ct) (p.co_tuc || []).forEach(function(c){ if (c[0] > x.ngay) tru += +c[1] || 0; }); return x.tp ? x.tp - tru : null; }   // dong
+  // Thang gia + trung vi chi dung bao cao CTCK trong 8 thang (ban cu van liet ke o Phu luc, ghi ngay)
   function soGia(p, gia){
-    var ct = p.ctck || [], tps = ct.map(function(x){ return tpDc(p, x); }).filter(function(v){ return v > 0; });
+    var ct = (p.ctck || []).filter(function(x){ var t = Date.parse(x.ngay || ''); return !(t > 0) || (Date.now() - t) / 864e5 <= 245; }),
+      tps = ct.map(function(x){ return tpDc(p, x); }).filter(function(v){ return v > 0; });
     var tv = trungVi(tps);
     return { tv: tv, up: (tv && gia > 0) ? (tv / 1000 / gia - 1) * 100 : null, n: tps.length,
       lo: tps.length ? Math.min.apply(null, tps) / 1000 : null, hi: tps.length ? Math.max.apply(null, tps) / 1000 : null };
