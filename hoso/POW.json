@@ -1,0 +1,1446 @@
+{
+ "v": 2,
+ "ma": "POW",
+ "ten": "Tổng Công ty Điện lực Dầu khí Việt Nam (PV Power)",
+ "nganh": "Sản xuất điện",
+ "ky": "BCTC soát xét 6T/2026 · ước LNTT 9T/2026",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026 (hạn 30/10)",
+ "cp_trieu": 3067.8,
+ "cp_ng": "Vốn điều lệ 30.678 tỷ (3.067.845.688 cp, SHS 27/08): 444,9 triệu cp thưởng/cổ tức quý 4/2025 và 280,9 triệu cp phát hành thêm quý 1/2026 (vốn chủ +2,8 nghìn tỷ)",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Quý 2 kỷ lục nhờ ~2,5 nghìn tỷ hồi tố, quý 3 lãi mỏng — lãi lõi 2027 ~3,1 nghìn tỷ đã vào giá",
+  "dk": "up_duoi:10",
+  "khac": "Bỏ ~2,5 nghìn tỷ hồi tố, lãi lõi 2027 ~3,1 nghìn tỷ — giá chưa trả đủ cho Qc của Nhơn Trạch 3&4"
+ },
+ "dong_mo": "6 tháng LN cổ đông 4.719 tỷ, trong đó ~2,5 nghìn tỷ là thu nhập hồi tố (chủ yếu giá khí Cà Mau, tỷ giá Vũng Áng 1 giai đoạn 2019–2021); công ty ước LNTT 9 tháng 5.464 tỷ, thấp hơn 6 tháng soát xét (5.560). Lãi lõi 2027E ~3,1 nghìn tỷ: Nhơn Trạch 3&4 (Qc 65%) bù cho mùa khô hạ nhiệt. P/E 12,5 cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "~2,5",
+   "nhan": "nghìn tỷ thu nhập hồi tố trong quý 2/2026",
+   "tieu": "Lãi kỷ lục quý 2 là hồi tố; quý 3 chỉ còn lãi mỏng",
+   "t": "Quý 2 LN cổ đông 3.519 tỷ (×5,8) gồm 1.121 tỷ chênh lệch giá khí Cà Mau (10/2019–12/2021) và 1.028 tỷ chênh lệch tỷ giá Vũng Áng 1 (2019–2021), tổng thu nhập hồi tố ~2,5 nghìn tỷ. Công ty ước LNTT 9 tháng 5.464 tỷ, thấp hơn 6 tháng soát xét 5.560: quý 3 gần hòa vốn (Q3/2025: 1.012). Bỏ hồi tố, lãi 4 quý đến Q2 ~3,9 nghìn tỷ — P/E lõi ~10 lần (giá 20/10), không phải 6.",
+   "ng": "KBSV 15/09 · TC Kinh tế Tài chính · Vietnambiz 15/10 · BCTC"
+  },
+  {
+   "so": "65%",
+   "nhan": "Qc tối thiểu 10 năm của Nhơn Trạch 3&4",
+   "tieu": "Nhơn Trạch 3&4: lãi có hợp đồng, kể cả khi không được huy động",
+   "t": "1.624 MW, ~1,4 tỷ USD, vận hành 11–12/2025: 6T/2026 phát 2,6 tỷ kWh (~20% sản lượng), doanh thu ~9,3 nghìn tỷ (3.582 đ/kWh, gồm phần bù Qc). Giá bán thực ~2.850 đ, gần gấp đôi giá thị trường ~1.500, nên hay bị xếp cuối thứ tự huy động; NĐ 100/2025 bảo đảm Qc 65% (~5,3 tỷ kWh/năm), phần thiếu trả theo giá công suất. Mô hình: lãi gộp ~2,1 nghìn tỷ/năm; dự thảo Qc 75%/15 năm chưa tính.",
+   "ng": "SHS 27/08 · MAS 21/08 · KBSV 15/09 · mô hình"
+  },
+  {
+   "so": "80%",
+   "nhan": "công suất Vũng Áng 1 6T/2026 — đỉnh mùa khô",
+   "tieu": "Đỉnh El Niño đã nằm trong số 6 tháng",
+   "t": "Vũng Áng 1 phát 4,18 tỷ kWh (+13%), giá thị trường mùa khô thường chạm trần 1.725 đ/kWh; Nhơn Trạch 1&2 +53% nhờ NĐ 100 cho khí nội địa chạy tối đa. Từ 20/7 có trần giá chào mới; quý 3 mưa nhiều, là mùa đại tu tổ máy. 2027: El Niño kéo đến đầu năm (IRI) nhưng Quảng Trạch 1 cạnh tranh Vũng Áng 1 — mô hình giữ lãi gộp nhà máy cũ 235 đ/kWh (2025: 258), sản lượng −3%.",
+   "ng": "SHS 27/08 · KBSV 15/09 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/E 12,5 × lãi lõi 2027E: {up_so} so với giá hiện tại",
+   "t": "P/E 12,5 ≈ trung vị 2018–2021 (12,6) khi lãi ở mức bình thường; ≈ P/B 0,92 vốn chủ cuối 2026E, sát mức thấp 25% từ 2018 (0,91). Xấu 9,9: Qc về 55%, mùa mưa dài, P/E 17 trên lãi đáy; tốt 16,1: Qc 75%, El Niño kéo dài, P/E 10,5. Không chia cổ tức tiền 5 năm liền: dòng tiền dành cho LNG Quỳnh Lập, Quảng Ninh.",
+   "ng": "mô hình · P/E, P/B lịch sử: BCTC VNDirect · ĐHĐCĐ 20/05"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   2427,
+   5673,
+   3101
+  ],
+  "ln_truoc": 1112,
+  "eps": [
+   791,
+   1849,
+   1011
+  ],
+  "bv": [
+   11153,
+   13764,
+   14775
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Sản lượng điện (tỷ kWh)",
+    "v": [
+     17.4,
+     24.1,
+     24.2
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN lõi, bỏ hồi tố (tỷ)",
+    "v": [
+     2427,
+     3445,
+     3101
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     7.3,
+     14.8,
+     7.1
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2025: cộng 4 quý BCTC; 6T/2026 theo bản soát xét (KBSV 15/09: LN cổ đông 4.719 tỷ; BCTC quý 2 ghi 4.575). EPS, BVPS theo 3.067,8 triệu cp hiện tại. Không chia cổ tức tiền (ĐHĐCĐ 20/05/2026)."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Kinh doanh điện (lãi gộp − QLDN)",
+    "mau": "c1",
+    "v": [
+     3231,
+     5156,
+     4971
+    ]
+   },
+   {
+    "ten": "Thu nhập hồi tố",
+    "mau": "c4",
+    "v": [
+     0,
+     2475,
+     0
+    ]
+   },
+   {
+    "ten": "Tài chính ròng & khác",
+    "mau": "c3",
+    "v": [
+     3,
+     -878,
+     -1100
+    ]
+   }
+  ],
+  "nhan": "Thu nhập hồi tố",
+  "ng": "BCTC (6T/2026 soát xét); tài chính ròng = tiền gửi − lãi vay − tỷ giá; 2026E–2027E: mô hình."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: sản lượng × lãi gộp mỗi kWh + Nhơn Trạch 3&4",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Sản lượng điện (tỷ kWh)"
+   },
+   {
+    "ten": "Nhà máy hiện hữu (khí nội địa, than, thủy điện)",
+    "v": [
+     17.4,
+     19.1,
+     18.6
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Nhơn Trạch 3&4 (LNG)",
+    "s": [
+     "chạy thử",
+     "5,0",
+     "5,6"
+    ]
+   },
+   {
+    "nhom": "Lãi gộp (tỷ đồng)"
+   },
+   {
+    "ten": "Lãi gộp mỗi kWh nhà máy hiện hữu (đ)",
+    "v": [
+     258,
+     243,
+     235
+    ]
+   },
+   {
+    "ten": "Lãi gộp nhà máy hiện hữu",
+    "v": [
+     4479,
+     4652,
+     4371
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp Nhơn Trạch 3&4 (ước tính)",
+    "v": [
+     0,
+     1982,
+     2100
+    ]
+   },
+   {
+    "ten": "Thu nhập hồi tố (Cà Mau, Vũng Áng 1)",
+    "v": [
+     0,
+     2475,
+     0
+    ]
+   },
+   {
+    "ten": "Lãi gộp",
+    "v": [
+     4479,
+     9109,
+     6471
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     34306,
+     58435,
+     54190
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí QLDN",
+    "v": [
+     1247,
+     1478,
+     1500
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tài chính ròng & khác (tiền gửi − lãi vay − tỷ giá)",
+    "v": [
+     3,
+     -878,
+     -1100
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     3234,
+     6753,
+     3871
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Cổ đông thiểu số",
+    "v": [
+     580,
+     410,
+     383
+    ]
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     2427,
+     5673,
+     3101
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     791,
+     1849,
+     1011
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "2026E = 6 tháng soát xét + 2H ước tính. BCTC không tách lãi theo nhà máy: 6T/2026 nhà máy hiện hữu tính 275 đ/kWh (6T/2025: 220), phần còn lại là Nhơn Trạch 3&4. Sản lượng 2025A không gồm 1,2 tỷ kWh chạy thử NT3&4. Thuế ~10% LNTT."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   5673
+  ],
+  "cuoi": [
+   "2027E",
+   3101
+  ],
+  "buoc": [
+   [
+    "Bỏ thu nhập hồi tố 2026",
+    -2228
+   ],
+   [
+    "Nhà máy hiện hữu",
+    -253
+   ],
+   [
+    "Nhơn Trạch 3&4",
+    106
+   ],
+   [
+    "Chi phí QLDN",
+    -20
+   ],
+   [
+    "Lãi vay, tỷ giá, tiền gửi",
+    -200
+   ],
+   [
+    "Thuế, cổ đông thiểu số",
+    23
+   ]
+  ],
+  "y": "Gần như toàn bộ mức giảm là khoản hồi tố ~2,5 nghìn tỷ không lặp lại; phần kinh doanh đi ngang — Nhơn Trạch 3&4 cả năm bình thường bù cho nhà máy cũ hạ nhiệt và lỗ tỷ giá cao hơn 2026.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Lãi gộp mỗi kWh nhà máy cũ 2H/2026 (đ)",
+   "v": [
+    "150",
+    "205",
+    "225"
+   ],
+   "ly_do": "6T/2026 ~275 (ước), 2H/2025 299; quý 3 mưa nhiều, mùa đại tu, trần giá chào từ 20/7; ước LNTT 9T 5.464 < 6T soát xét"
+  },
+  {
+   "ten": "Lãi gộp Nhơn Trạch 3&4 2H/2026 · 2027 (tỷ)",
+   "v": [
+    "700 · 1.600",
+    "800 · 2.100",
+    "950 · 2.800"
+   ],
+   "ly_do": "6T/2026 ước ~1.182; Qc 65% (~5,3 tỷ kWh/năm) trả theo giá công suất; xấu = Qc 55% (KBSV), tốt = Qc 75%/15 năm (dự thảo)"
+  },
+  {
+   "ten": "Sản lượng nhà máy cũ 2H/2026 · 2027 (tỷ kWh)",
+   "v": [
+    "8,2 · 17,6",
+    "8,7 · 18,6",
+    "9,2 · 19,2"
+   ],
+   "ly_do": "2H/2025 8,35; 2027: Vũng Áng 1 −3% (Quảng Trạch 1), thủy điện −13% (KBSV), Cà Mau −5%, Nhơn Trạch 1 +9% (SHS)"
+  },
+  {
+   "ten": "Lãi gộp mỗi kWh nhà máy cũ 2027 (đ)",
+   "v": [
+    "210",
+    "235",
+    "265"
+   ],
+   "ly_do": "2025A 258 (mưa nhiều, giá thị trường thấp), 2026E ~243; El Niño đến đầu 2027 (IRI) nhưng có trần giá chào"
+  },
+  {
+   "ten": "Chi phí QLDN 2027 (tỷ)",
+   "v": [
+    "1.600",
+    "1.500",
+    "1.420"
+   ],
+   "ly_do": "2025 1.247 (quý 4 530 gồm dự phòng), 2026E 1.478; phải thu EVN 25,0 nghìn tỷ (30/6) có thể cần thêm dự phòng"
+  },
+  {
+   "ten": "Lãi vay · lỗ tỷ giá 2027 (tỷ)",
+   "v": [
+    "2.200 · 500",
+    "2.050 · 350",
+    "1.900 · 150"
+   ],
+   "ly_do": "Lãi vay 6T/2026 953 (quý 2 539) trên 38,2 nghìn tỷ nợ thả nổi; 16,1 nghìn tỷ vay USD, VND −3,5% năm 2025 (SHS)"
+  },
+  {
+   "ten": "Thu nhập tài chính 2027 (tỷ)",
+   "v": [
+    "1.250",
+    "1.300",
+    "1.400"
+   ],
+   "ly_do": "2025 1.032, 6T/2026 665 trên 26,6 nghìn tỷ tiền và tiền gửi; giữ tiền cho dự án LNG mới"
+  },
+  {
+   "ten": "P/E trên LN 2027E",
+   "v": [
+    "17",
+    "12,5",
+    "10,5"
+   ],
+   "ly_do": "Lãi đáy được trả P/E cao: 17 ≈ trung vị từ 2018 (17,0); 12,5 ≈ trung vị 2018–2021 (12,6); 10,5 ≈ mức thấp 10% (10,9)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 4828,
+   "ln27": 1779,
+   "gia": 9.9,
+   "mo_ta": "Quý 3 lỗ, Qc NT3&4 về 55%, mùa mưa dài (nhà máy cũ 210 đ/kWh), VND −4%; P/E 17 trên lãi đáy"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 5673,
+   "ln27": 3101,
+   "gia": 12.6,
+   "mo_ta": "Lãi lõi 2027 ≈ 2026: NT3&4 Qc 65% (lãi gộp 2,1 nghìn tỷ), nhà máy cũ 235 đ/kWh, sản lượng −3%; P/E 12,5"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 6215,
+   "ln27": 4713,
+   "gia": 16.1,
+   "mo_ta": "Qc 75% từ 2027, El Niño kéo dài (nhà máy cũ 265 đ/kWh), lãi suất giảm; P/E 10,5"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá P/E trên lãi lõi 2027E",
+  "phu": "P/E × LN 2027E (không còn thu nhập hồi tố); lãi đáy được trả P/E cao hơn",
+  "ck": 0,
+  "cp": 3067.8,
+  "phan": [
+   {
+    "ten": "LN cổ đông 2027E",
+    "mau": "c1",
+    "x": [
+     1779,
+     3101,
+     4713
+    ],
+    "boi": [
+     17,
+     12.5,
+     10.5
+    ],
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     30243,
+     38762,
+     49486
+    ]
+   }
+  ],
+  "von": [
+   30243,
+   38762,
+   49486
+  ],
+  "gia": [
+   9.9,
+   12.6,
+   16.1
+  ]
+ },
+ "nhay": [
+  [
+   "Lãi gộp Nhơn Trạch 3&4 ±500 tỷ (≈ Qc ±7 điểm)",
+   400,
+   1.6
+  ],
+  [
+   "Lãi suất vay ±1 điểm %",
+   306,
+   1.2
+  ],
+  [
+   "Lãi gộp nhà máy cũ ±20 đ/kWh",
+   298,
+   1.2
+  ],
+  [
+   "P/E ±1 lần",
+   null,
+   1.0
+  ],
+  [
+   "Sản lượng nhà máy cũ ±5%",
+   175,
+   0.7
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.45,
+   1.19,
+   1.18,
+   1.11,
+   1.11,
+   1.38,
+   1.63,
+   1.36,
+   1.43,
+   1.55,
+   1.59,
+   1.54,
+   1.45,
+   1.41,
+   1.41,
+   1.41,
+   1.3,
+   1.16,
+   1.16,
+   1.18,
+   1.12,
+   1.0,
+   0.92,
+   0.86,
+   0.62,
+   0.92,
+   0.88,
+   0.83,
+   0.78,
+   0.84,
+   0.86,
+   0.78,
+   0.84,
+   1.13,
+   0.99,
+   1.04,
+   1.09,
+   1.02,
+   0.95,
+   0.98,
+   0.87,
+   0.93,
+   0.94,
+   1.0,
+   1.05,
+   1.36,
+   1.3,
+   1.37,
+   1.25,
+   1.04,
+   1.09,
+   1.09,
+   1.07,
+   1.11,
+   0.98,
+   0.82,
+   0.92,
+   0.84,
+   0.98,
+   0.93,
+   1.02,
+   1.01,
+   1.03,
+   1.01,
+   1.03,
+   0.97,
+   0.88,
+   0.8,
+   0.85,
+   0.85,
+   0.85,
+   0.87,
+   0.85,
+   0.78,
+   0.94,
+   1.12,
+   1.01,
+   1.0,
+   0.97,
+   0.89,
+   0.91,
+   0.88,
+   0.84,
+   0.9,
+   0.94,
+   0.87,
+   0.95,
+   0.94,
+   1.04,
+   1.17,
+   1.02,
+   1.02,
+   1.06,
+   1.07,
+   1.15,
+   1.18,
+   1.06,
+   1.03,
+   1.1,
+   1.18,
+   1.09,
+   0.97,
+   0.97,
+   0.91
+  ],
+  "p10": 0.84,
+  "p25": 0.91,
+  "tv": 1.02,
+  "thap": [
+   "2020-03",
+   0.62
+  ],
+  "nay": [
+   "2026-10",
+   0.91
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/E 17 · 12,5 · 10,5 trên LN 2027E — tương đương P/B 0,73 · 0,92 · 1,16 vốn chủ cuối 2026E: cơ sở ≈ mức thấp 25% (0,91), tốt ≈ đỉnh 06/2026 (1,18)."
+ },
+ "so_sanh": {
+  "chi_so": "P/B (vốn chủ 30/6/2026)",
+  "chi_so_kv": "P/B (giá 20/10)",
+  "nhom": "11 mã điện vốn hóa lớn nhất",
+  "kv": [
+   [
+    "PGV",
+    1.35
+   ],
+   [
+    "VSH",
+    1.9
+   ],
+   [
+    "DTK",
+    0.8
+   ],
+   [
+    "NT2",
+    1.34
+   ],
+   [
+    "GEG",
+    0.99
+   ],
+   [
+    "HNA",
+    1.54
+   ],
+   [
+    "CHP",
+    2.03
+   ],
+   [
+    "TMP",
+    1.94
+   ],
+   [
+    "SHP",
+    2.52
+   ],
+   [
+    "PPC",
+    0.63
+   ],
+   [
+    "VPD",
+    1.53
+   ]
+  ],
+  "tv": 1.53,
+  "moi_cp": 13453,
+  "max": 3,
+  "y": "Thủy điện (VSH, HNA, CHP, TMP, SHP, VPD) ROE 16–24% được trả 1,5–2,5 lần; nhiệt điện (PGV, NT2, DTK, PPC) trung vị ~1,1. POW ROE lõi 2027E ~7% nên dưới 1 lần là hợp lý.",
+  "ng": "BCTC VNDirect, giá 20/10/2026"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -130,
+    255,
+    415
+   ],
+   "ck": 809
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    239,
+    699,
+    1081
+   ],
+   "ck": 570
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    4828,
+    5673,
+    6215
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026",
+   "loai": "hai",
+   "tieu": "BCTC quý 3/2026 (hạn 30/10)",
+   "ct": "Công ty ước LNTT 9 tháng 5.464 tỷ (15/10), thấp hơn 6 tháng soát xét 5.560: quý 3 lỗ nhẹ hoặc lãi vài trăm tỷ (Q3/2025: 1.012). Cần tách lỗ tỷ giá, dự phòng phải thu, lãi gộp NT3&4.",
+   "tac": [
+    "LN cổ đông ≥ 255 tỷ",
+    "giữ kịch bản cơ sở; lỗ thì nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "lãi gộp, lỗ tỷ giá, dự phòng"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Nâng Qc điện khí LNG lên 75%, 15 năm",
+   "ct": "Bộ Công Thương dự thảo sửa NĐ 56, 100/2025: Qc tối thiểu từ 65%/10 năm lên 75%/15 năm; chủ đầu tư đề xuất 90–95%, EVN lo chi phí mua điện — chưa có lộ trình (SHS).",
+   "tac": [
+    "+2,3 nghìn đ/cp",
+    "nếu áp dụng từ 2027 (lãi gộp NT3&4 +700 tỷ/năm)"
+   ],
+   "theo_doi": "nghị định sửa đổi"
+  },
+  {
+   "khi": "Mùa khô 2027",
+   "loai": "len",
+   "tieu": "Mùa khô El Niño",
+   "ct": "IRI: xác suất El Niño 77–100% từ 8/2026 đến 4/2027 (KBSV) — thủy điện yếu, Vũng Áng 1 và điện khí được huy động cao, giá thị trường mùa khô sát trần như 6T/2026.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi ±20 đ/kWh lãi gộp nhà máy cũ 2027"
+   ],
+   "theo_doi": "giá thị trường điện, thủy văn"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Phải thu EVN và dòng tiền",
+   "ct": "Phải thu ngắn hạn 25,0 nghìn tỷ (30/6) từ 14,6 cuối 2025, 99,5% từ EVN; dòng tiền kinh doanh 6T 2,9 nghìn tỷ so với LNST 5,0; quý 2 trích thêm dự phòng phải thu EVN (KBSV).",
+   "tac": [
+    "−0,3 nghìn đ/cp",
+    "mỗi 1 nghìn tỷ dự phòng (một lần)"
+   ],
+   "theo_doi": "phải thu, dòng tiền kinh doanh"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Quảng Trạch 1 cạnh tranh Vũng Áng 1",
+   "ct": "Nhiệt điện than Quảng Trạch 1 của EVN vào vận hành làm giảm huy động Vũng Áng 1: KBSV dự 2027 sản lượng than −3%, doanh thu −16%; 6T/2026 Vũng Áng 1 đã chạy ~80% công suất.",
+   "tac": [
+    "−0,7 nghìn đ/cp",
+    "mỗi −5% sản lượng nhà máy cũ 2027"
+   ],
+   "theo_doi": "sản lượng Vũng Áng 1"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lãi suất thả nổi và tỷ giá",
+   "ct": "Nợ vay 38,2 nghìn tỷ (30/6), dài hạn thả nổi theo lãi tiền gửi 12 tháng + 1,5–3,5%; 16,1 nghìn tỷ vay USD (SHS): mỗi 1% VND mất giá ~160 tỷ lỗ tỷ giá.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất vay"
+   ],
+   "theo_doi": "lãi suất, USD/VND"
+  },
+  {
+   "khi": "2027–2031",
+   "loai": "len",
+   "tieu": "LNG theo hợp đồng thay vì giao ngay",
+   "ct": "PV GAS ký hợp đồng LNG định hạn với Shell 2027–2031, ~400 nghìn tấn/năm (~70% nhu cầu NT3&4); giá thấp hơn LNG giao ngay giúp NT3&4 được huy động nhiều hơn (SHS, FPTS).",
+   "tac": "",
+   "theo_doi": "giá LNG, sản lượng NT3&4"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Khí mới cho Nhơn Trạch 1&2",
+   "ct": "Sư Tử Trắng 2B đón dòng khí đầu 29/6/2026, Thiên Nga – Hải Âu từ quý 4/2026: SHS ước Nhơn Trạch 1 từ 1,38 lên 1,50 tỷ kWh năm 2027; 6T/2026 Nhơn Trạch 1&2 đã +53%.",
+   "tac": "",
+   "theo_doi": "cấp khí Đông Nam Bộ"
+  },
+  {
+   "khi": "2028–2029",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Khí Cà Mau suy giảm",
+   "ct": "Lô PM3-CAA suy giảm từ 2020, Petronas dừng bán khí bổ sung từ 2028; Khánh Mỹ – Đầm Dơi, Nam Du – U Minh bổ sung từ ~2029 (SHS). Cà Mau 1&2 ~37% doanh thu bán điện.",
+   "tac": "",
+   "theo_doi": "cấp khí PM3-CAA"
+  },
+  {
+   "khi": "2026–2030",
+   "loai": "hai",
+   "tieu": "Chu kỳ đầu tư LNG mới, không cổ tức tiền",
+   "ct": "ĐHĐCĐ 20/5/2026: không chia cổ tức tiền năm thứ 5 liền, ưu tiên cổ tức cổ phiếu đến 2030; giữ vốn cho LNG Quỳnh Lập 1.500 MW (51%), Quảng Ninh 1.500 MW (30%), Vũng Áng 3.",
+   "tac": "",
+   "theo_doi": "tiến độ, cơ cấu vốn dự án"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Tiêu thụ điện 6T/2026 +8,8%; QHĐ VIII điều chỉnh đặt điện thương phẩm 2030 500–558 tỷ kWh (~10–12%/năm).",
+     "ng": "SHS 27/08"
+    },
+    {
+     "h": 1,
+     "t": "IRI: xác suất El Niño 77–100% từ 8/2026 đến 4/2027 — thủy văn kém, nhiệt điện được huy động cao.",
+     "ng": "KBSV 15/09"
+    },
+    {
+     "h": -1,
+     "t": "Xung đột quanh Hormuz đẩy giá LNG giao ngay: giá bán thực của NT3&4 ~2.850 đ/kWh, gần gấp đôi giá thị trường ~1.500 đ.",
+     "ng": "SHS 27/08"
+    },
+    {
+     "h": -1,
+     "t": "VND mất giá 3,5% năm 2025; 16,1 nghìn tỷ nợ vay USD của POW (30/6/2026), dư nợ dài hạn thả nổi.",
+     "ng": "SHS 27/08"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "NĐ 100/2025: điện khí nội địa huy động tối đa theo khả năng cấp khí (từ 5/2025, Qc nhóm khí ~102% năm 2025); LNG Qc tối thiểu 65%/10 năm.",
+     "ng": "SHS 27/08 · FPTS 29/06"
+    },
+    {
+     "h": 1,
+     "t": "Khung giá điện khí 2026 (QĐ 1882/QĐ-BCT ngày 23/7/2026) 3.410,64 đ/kWh, +11% — cơ sở đàm phán giá cho dự án mới.",
+     "ng": "KBSV 15/09"
+    },
+    {
+     "h": 0,
+     "t": "Trần giá chào thị trường điện áp dụng từ 20/7/2026 giảm biên độ giá mùa khô.",
+     "ng": "SHS 27/08"
+    },
+    {
+     "h": 1,
+     "t": "Đường dây 500 kV mạch 3 giải tỏa công suất miền Trung, giảm cạnh tranh cho điện khí miền Nam.",
+     "ng": "KBSV 15/09"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "5.854 MW (~6,2% công suất cả nước): khí nội địa 2.700 MW, LNG 1.624 MW, than 1.200 MW, thủy điện & tái tạo 330 MW.",
+     "ng": "SHS 27/08"
+    },
+    {
+     "h": -1,
+     "t": "Suất hao nhiệt thực tế cao hơn thiết kế PPA: Cà Mau +2,6%, Nhơn Trạch 2 +7,3% — phần nhiên liệu này POW tự chịu.",
+     "ng": "FPTS 29/06"
+    },
+    {
+     "h": 0,
+     "t": "PVN 79,9%; không chia cổ tức tiền 5 năm liền, ưu tiên cổ tức cổ phiếu đến 2030 để giữ vốn cho dự án LNG.",
+     "ng": "ĐHĐCĐ 20/05/2026"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Điện khí nội địa",
+   "phu": "Cà Mau 1&2 1.500 MW, Nhơn Trạch 1 450 MW, Nhơn Trạch 2 750 MW (sở hữu 59,37%) · ~60% doanh thu bán điện 2025",
+   "so": [
+    [
+     "Sản lượng 6T/2026",
+     "5,57 tỷ kWh",
+     "Cà Mau −4%, NT1&2 +53%"
+    ],
+    [
+     "Giá bán bình quân 6T",
+     "2.329 đ/kWh",
+     "6T/2025 2.166; không gồm hồi tố"
+    ],
+    [
+     "Hệ số công suất 6T",
+     "Cà Mau ~42%, NT2 ~66%",
+     "SHS"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Cà Mau 1&2 nhận khí PM3-CAA: sản lượng khí 2023–2025 vẫn thấp hơn 17,5% bình quân 2018–2020.",
+     "ng": "SHS 27/08"
+    },
+    {
+     "t": "Giá khí ~66% chi phí (46% giá dầu FO Singapore hoặc 12,7% Brent, sàn là giá miệng giếng), chuyển ngang vào giá Pc theo suất hao thiết kế.",
+     "ng": "SHS 27/08"
+    }
+   ]
+  },
+  {
+   "ten": "Điện khí LNG — Nhơn Trạch 3&4",
+   "phu": "1.624 MW, ~1,4 tỷ USD, vận hành 11–12/2025 · Qc 65% trong 10 năm (NĐ 100/2025)",
+   "so": [
+    [
+     "Sản lượng 6T/2026",
+     "2,60 tỷ kWh",
+     "~20% tổng"
+    ],
+    [
+     "Doanh thu 6T",
+     "~9,3 nghìn tỷ",
+     "SHS ước"
+    ],
+    [
+     "Doanh thu ÷ sản lượng",
+     "3.582 đ/kWh",
+     "gồm bù Qc; giá bán thực ~2.850 (SHS)"
+    ],
+    [
+     "Hệ số công suất",
+     "~37%",
+     "theo khối lượng LNG hợp đồng"
+    ]
+   ],
+   "y": [
+    {
+     "t": "6T/2026 nhận 17,15 triệu MMBtu LNG qua 6 chuyến tại kho Thị Vải.",
+     "ng": "MAS 21/08"
+    },
+    {
+     "t": "Khối lượng khí hợp đồng với PV GAS đủ cho ~7 tỷ kWh/năm; hợp đồng Shell 2027–2031 ~70% nhu cầu.",
+     "ng": "SHS 27/08"
+    }
+   ]
+  },
+  {
+   "ten": "Nhiệt điện than — Vũng Áng 1",
+   "phu": "1.200 MW, Hà Tĩnh, vận hành 2015 · ~1/3 doanh thu bán điện",
+   "so": [
+    [
+     "Sản lượng 6T/2026",
+     "4,18 tỷ kWh",
+     "+13%"
+    ],
+    [
+     "Hệ số công suất",
+     "~80%",
+     "6T/2026"
+    ],
+    [
+     "Giá bán bình quân 6T",
+     "1.882 đ/kWh",
+     "6T/2025 1.860; không gồm hồi tố"
+    ],
+    [
+     "Than nhận 6T",
+     "1,99 triệu tấn",
+     "MAS"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Qc 70–75%, giá Pc điều chỉnh theo giá than; phần bán thị trường hưởng giá cao mùa khô.",
+     "ng": "SHS 27/08 · FPTS 29/06"
+    },
+    {
+     "t": "Quý 2/2026 thu hồi 1.028 tỷ chênh lệch tỷ giá 2019–2021 từ EVN.",
+     "ng": "KBSV 15/09"
+    }
+   ]
+  },
+  {
+   "ten": "Thủy điện",
+   "phu": "Hủa Na 180 MW (80,72%), Đakđrinh 125 MW (95,27%), Nậm Nơn 20 MW · ~5% doanh thu, biên cao nhất",
+   "so": [
+    [
+     "Sản lượng 6T/2026",
+     "0,67 tỷ kWh",
+     "+9%"
+    ],
+    [
+     "Giá bán bình quân 6T",
+     "1.398 đ/kWh",
+     "6T/2025 1.300"
+    ]
+   ],
+   "y": [
+    {
+     "t": "El Niño 2026–2027 làm thủy văn kém: KBSV dự sản lượng thủy điện 2026 −8%, 2027 −13%.",
+     "ng": "KBSV 15/09"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Sản lượng điện 6 tháng theo nhà máy",
+   "kieu": "cot",
+   "dv": "tỷ kWh",
+   "nhan": [
+    "Vũng Áng",
+    "Cà Mau",
+    "NT1&2",
+    "NT3&4",
+    "Thủy điện"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2025",
+     "v": [
+      3.7,
+      2.84,
+      1.86,
+      0,
+      0.62
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "6T/2026",
+     "v": [
+      4.18,
+      2.73,
+      2.84,
+      2.6,
+      0.67
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 2,
+   "y": "Tổng +4,0 tỷ kWh: Nhơn Trạch 3&4 góp 2,6; Nhơn Trạch 1&2 +53% nhờ NĐ 100; Cà Mau −4% vì thiếu khí.",
+   "ng": "POW (SHS 27/08, KBSV 15/09); Cà Mau 6T/2025 suy từ mức −4%"
+  },
+  {
+   "ten": "Lãi gộp theo quý: lõi và hồi tố",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp lõi",
+     "v": [
+      296,
+      590,
+      816,
+      1168,
+      1291,
+      1204,
+      1804,
+      2246
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Thu nhập hồi tố",
+     "v": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2475
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Bỏ ~2,5 nghìn tỷ hồi tố, lãi gộp quý 2/2026 còn 2.246 tỷ — gấp 1,9 lần cùng kỳ nhờ Nhơn Trạch 3&4 và mùa khô.",
+   "ng": "BCTC VNDirect; quý 2/2026 theo bản soát xét (KBSV 15/09)"
+  },
+  {
+   "ten": "Phải thu, tiền và nợ vay",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Phải thu ngắn hạn",
+     "v": [
+      12390,
+      11873,
+      13752,
+      13558,
+      10365,
+      14578,
+      17669,
+      24952
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Nợ vay",
+     "v": [
+      19962,
+      22659,
+      23459,
+      27870,
+      27734,
+      28887,
+      33420,
+      38200
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Tiền & tiền gửi",
+     "v": [
+      15759,
+      15676,
+      14010,
+      17976,
+      20798,
+      19269,
+      23401,
+      26553
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Phải thu 25,0 nghìn tỷ (30/6) từ 14,6 cuối 2025: lãi 6 tháng chưa thành tiền; vay ngắn hạn tăng 7,7 nghìn tỷ.",
+   "ng": "BCTC VNDirect"
+  },
+  {
+   "ten": "Giá bán điện bình quân 6 tháng",
+   "kieu": "cot",
+   "dv": "đ/kWh",
+   "nhan": [
+    "Khí nội địa",
+    "Than",
+    "Thủy điện",
+    "LNG"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2025",
+     "v": [
+      2166,
+      1860,
+      1300,
+      null
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "6T/2026",
+     "v": [
+      2329,
+      1882,
+      1398,
+      3582
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "LNG (NT3&4) = doanh thu ÷ sản lượng, gồm phần bù Qc; giá bán thực ~2.850 đ/kWh, gần gấp đôi giá thị trường ~1.500 (SHS). Khí nội địa, than không gồm hồi tố.",
+   "ng": "KBSV 15/09 (doanh thu ÷ sản lượng), MAS 21/08 (LNG), SHS 27/08 (doanh thu NT3&4)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Sản lượng điện thương phẩm",
+    "kh": 21610,
+    "th": 15250,
+    "ky": "7T",
+    "tg": 58,
+    "dv": "triệu kWh",
+    "ng": "ĐHĐCĐ 20/05 · báo cáo 7 tháng"
+   },
+   {
+    "ten": "Doanh thu toàn tổng công ty",
+    "kh": 49887,
+    "th": 38540,
+    "ky": "7T",
+    "tg": 58,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 20/05 · báo cáo 7 tháng"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 1328,
+    "th": 5464,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 20/05 · ước 9 tháng (15/10)"
+   }
+  ],
+  "y": "9 tháng ước LNTT 5.464 tỷ = 411% kế hoạch (đặt trước khoản hồi tố); kế hoạch 2H chỉ 1.028 tỷ. Mô hình cơ sở cả năm LNTT 6,8 nghìn tỷ.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-09-15",
+   "kn": "MUA",
+   "tp": 18100,
+   "ln26": 5330,
+   "ln27": 2236,
+   "pp": "DCF từng nhà máy + EV/EBITDA 8 lần (50:50)",
+   "y": "Lãi 2027 giảm 58% khi hết khoản hồi tố và Vũng Áng 1 chịu cạnh tranh Quảng Trạch 1 (doanh thu than −16%); NT3&4 ~17,6 nghìn tỷ doanh thu/năm nhờ bù sản lượng theo giá công suất.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/POW/20260915_ctcp_tong_cong_ty_dien_luc_dau_khi_viet_nam_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ctck": "SHS",
+   "ngay": "2026-08-27",
+   "kn": "TĂNG TỶ TRỌNG",
+   "tp": 18000,
+   "ln26": 6023,
+   "ln27": 5220,
+   "pp": "DCF FCFF, WACC 10,2%",
+   "y": "Coi khoản bù Qc từ EVN (~2,2 nghìn tỷ năm 2026) là thu nhập mang tính cấu trúc nên lãi 2027 chỉ giảm 13%; mỗi 1% VND mất giá −300 đ/cp giá mục tiêu.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/POW/pow_ky_nguyen_lng_mo_ra_chu_ky_tang_truong_moi.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-08-21",
+   "kn": "MUA",
+   "tp": 16900,
+   "ln26": 6068,
+   "ln27": null,
+   "pp": "bản ngắn không nêu phương pháp",
+   "y": "NT3&4 ~4,55 tỷ kWh (~32% công suất) năm 2026; giá thị trường 2026 +50–60% khi El Niño làm thủy điện suy giảm.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/POW/bao_cao_ngan_tong_cong_ty_dien_luc_dau_khi_viet_nam_pow_vn_mua_dong_dien_moi_dong_luc_moi.pdf"
+  },
+  {
+   "ctck": "FPTS",
+   "ngay": "2026-06-29",
+   "kn": "THEO DÕI",
+   "tp": 16950,
+   "ln26": 4286,
+   "ln27": 2213,
+   "pp": "FCFF + FCFE (50:50), WACC 15%",
+   "y": "2026 gồm 1.105 tỷ bù Qc và 1.967 tỷ thu hồi tiền điện chạy thử NT3&4; lãi 2027–2030 thấp hơn khi hết khoản một lần, NT3&4 giữ ~7 tỷ kWh theo khí hợp đồng.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/POW/theo_doi_bao_cao_dinh_gia_lan_dau_fpts_29_06_2026.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. POW không chia cổ tức tiền mặt nên giá mục tiêu không trừ cổ tức. ACBS (06/08, MUA 18.400) chưa có bản đọc được.",
+ "nguon": [
+  {
+   "ten": "KBSV — Báo cáo cập nhật 2Q2026",
+   "ngay": "15/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/POW/20260915_ctcp_tong_cong_ty_dien_luc_dau_khi_viet_nam_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ten": "SHS — Kỷ nguyên LNG mở ra chu kỳ tăng trưởng mới",
+   "ngay": "27/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/POW/pow_ky_nguyen_lng_mo_ra_chu_ky_tang_truong_moi.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Dòng điện mới, động lực mới",
+   "ngay": "21/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/POW/bao_cao_ngan_tong_cong_ty_dien_luc_dau_khi_viet_nam_pow_vn_mua_dong_dien_moi_dong_luc_moi.pdf"
+  },
+  {
+   "ten": "FPTS — Báo cáo định giá lần đầu",
+   "ngay": "29/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/POW/theo_doi_bao_cao_dinh_gia_lan_dau_fpts_29_06_2026.pdf"
+  },
+  {
+   "ten": "Vietnambiz — Lợi nhuận 9 tháng của PV Power gấp 2,3 lần cùng kỳ (ước LNTT 5.464 tỷ)",
+   "ngay": "15/10/2026",
+   "link": "https://vietnambiz.vn/loi-nhuan-9-thang-cua-pv-power-gap-23-lan-cung-ky-20261015144949959.htm"
+  },
+  {
+   "ten": "Vietstock — PV Power ước lãi trước thuế gần 5,5 nghìn tỷ sau 9 tháng",
+   "ngay": "10/2026",
+   "link": "https://vietstock.vn/2026/10/tong-cong-ty-pv-power-uoc-lai-truoc-thue-gan-55-ngan-ty-sau-9-thang-737-1502591.htm"
+  },
+  {
+   "ten": "24hmoney — Doanh thu tăng 70%, lợi nhuận quý 3 giảm mạnh",
+   "ngay": "10/2026",
+   "link": "https://24hmoney.vn/posts/-c55a2845514.html"
+  },
+  {
+   "ten": "Tạp chí Kinh tế Tài chính — Vượt kế hoạch nhờ gần 2.500 tỷ hồi tố",
+   "ngay": "08/2026",
+   "link": "https://tapchikinhtetaichinh.vn/pv-power-vuot-ke-hoach-loi-nhuan-nho-gan-2-500-ty-dong-hoi-to-165075.html"
+  },
+  {
+   "ten": "Elibook — Thu nhập không thường xuyên 2.475 tỷ quý 2",
+   "ngay": "07/08/2026",
+   "link": "https://elibook.vn/2026/08/07/pow-khong-chi-dot-bien-loi-nhuan-nho-khoan-thu-nhap-khong-thuong-xuyen-2475-ty-loi-nhuan-cot-loi-quy-2-van-tang-truong-30-so-voi-cung-ky-san-luong-qc-cao-cho-nt3-4-se-tiep-tuc-cung-co-tang-truong/"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — 6 tháng: doanh thu 33.520 tỷ, LNTT ước 5.002 tỷ",
+   "ngay": "07/2026",
+   "link": "https://thitruongtaichinhtiente.vn/pv-power-thu-33-520-ty-dong-trong-nua-dau-nam-lai-vuot-5-000-ty-84403.html"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — 7 tháng: doanh thu 38.540 tỷ, 15,25 tỷ kWh",
+   "ngay": "08/2026",
+   "link": "https://thitruongtaichinhtiente.vn/pv-power-dat-38-540-ty-dong-doanh-thu-sau-7-thang-hoan-thanh-77-ke-hoach-nam-84950.html"
+  },
+  {
+   "ten": "Mekong ASEAN — ĐHĐCĐ 2026: 5 năm liền không chia cổ tức",
+   "ngay": "05/2026",
+   "link": "https://mekongasean.vn/dhdcd-pv-power-muc-tieu-doanh-thu-ky-luc-5-nam-lien-khong-chia-co-tuc-55376.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Cổ tức cổ phiếu 1–2 lần đến 2030",
+   "ngay": "05/2026",
+   "link": "https://mekongasean.vn/pv-power-du-kien-tra-co-tuc-bang-co-phieu-khoang-2-lan-tu-nay-den-2030-55391.html"
+  },
+  {
+   "ten": "DNSE — Phát hành gần 726 triệu cổ phiếu tăng vốn",
+   "ngay": "2025",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/pv-power-muon-phat-hanh-gan-726-trieu-co-phieu-de-tang-von-dieu-le-35126500"
+  }
+ ]
+}
