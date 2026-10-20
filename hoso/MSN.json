@@ -27,7 +27,7 @@
     "so": "{con_pct}",
     "nhan": "giá trị phần nắm ở TCB, MSR, MCH so với vốn hóa MSN (giá sàn)",
     "tieu": "Chiết khấu so với các phần niêm yết đã hẹp lại",
-    "t": "Phần MSN nắm ở TCB (19,7%), MSR (87,5%) và Masan Consumer (65,7%) theo giá sàn bằng {con_pct} vốn hóa. Trừ nợ ròng công ty mẹ ~40.100 tỷ (30/6) và chi phí tập đoàn, mức chiết khấu đã về gần mức mô hình tính (~26% tổng các phần)."
+    "t": "Phần MSN nắm ở TCB (19,7%), MSR (87,5%) và Masan Consumer (65,7%) theo giá sàn bằng {con_pct} vốn hóa. Trừ nợ ròng công ty mẹ ~40.100 tỷ (30/6) và chi phí tập đoàn, mức chiết khấu đã về gần mức mô hình tính (~25% tổng các phần)."
    }
   },
   {
@@ -48,7 +48,7 @@
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Tổng các phần trừ nợ công ty mẹ: {up_so} so với giá hiện tại",
-   "t": "65,7% Masan Consumer × P/E 17 (trung vị lịch sử 16,1; thị trường đang trả ~22,3 lần LN 2027E), 19,7% TCB × 7,5, 87,5% MSR × 15 (Elmet trả ~16,9 lần LN 2027E cơ sở), bán lẻ, thịt, Phúc Long × 18; trừ 10% chi phí tập đoàn và 36.764 tỷ nợ ròng công ty mẹ (30/6, sau tiền Elmet). Xấu 56,7 (APT 1.300 USD, P/E MCH 13), tốt 149,8.",
+   "t": "65,7% Masan Consumer × P/E 20 (như hồ sơ MCH: trung vị 2024–2025; từ 2017 16,1; thị trường đang trả ~22,3 lần LN 2027E), 19,7% TCB × 7,5, 87,5% MSR × 15 (Elmet trả ~16,9 lần LN 2027E cơ sở), bán lẻ, thịt, Phúc Long × 18; trừ 10% chi phí tập đoàn và 36.764 tỷ nợ ròng công ty mẹ (30/6, sau tiền Elmet). Xấu 65,1 (APT 1.300 USD, P/E MCH 16), tốt 163,1.",
    "ng": "mô hình · P/E lịch sử MCH, TCB: BCTC VNDirect"
   }
  ],
@@ -396,9 +396,9 @@
   {
    "ten": "P/E Masan Consumer",
    "v": [
-    "13",
-    "17",
-    "21"
+    "16",
+    "20",
+    "25"
    ],
    "ly_do": "MCH từ 2017: thấp 25% 12,6, trung vị 16,1, hiện 25,8 (lên HOSE 12/2025, vào VN30 8/2026)"
   },
@@ -418,7 +418,7 @@
     "10%",
     "10%"
    ],
-   "ly_do": "2.037 tỷ năm 2025, 776 tỷ 6T/2026 (~1.800 tỷ/năm) × P/E bình quân các phần ~13; lãi vay đã nằm trong nợ ròng trừ riêng"
+   "ly_do": "2.037 tỷ năm 2025, 776 tỷ 6T/2026 (~1.800 tỷ/năm) × P/E bình quân các phần ~14; lãi vay đã nằm trong nợ ròng trừ riêng"
   },
   {
    "ten": "Nợ vay ròng công ty mẹ (tỷ, mọi kịch bản)",
@@ -435,22 +435,22 @@
    "ten": "Xấu",
    "ln26": 8631,
    "ln27": 5956,
-   "gia": 56.7,
-   "mo_ta": "APT 2027 1.300 USD, MCH +2%, WinCommerce biên 1,6%, LN TCB theo kịch bản xấu; P/E MCH 13, TCB 6, MSR 16; trừ nợ ròng công ty mẹ"
+   "gia": 65.1,
+   "mo_ta": "APT 2027 1.300 USD, MCH +2%, WinCommerce biên 1,6%, LN TCB theo kịch bản xấu; P/E MCH 16, TCB 6, MSR 16; trừ nợ ròng công ty mẹ"
   },
   {
    "ten": "Cơ sở",
    "ln26": 10450,
    "ln27": 11160,
-   "gia": 107.8,
-   "mo_ta": "APT 2.000 USD, MCH +11%, WinCommerce +17% biên 2,2%; P/E MCH 17, TCB 7,5, MSR 15, bán lẻ & khác 18; trừ nợ ròng công ty mẹ"
+   "gia": 117.2,
+   "mo_ta": "APT 2.000 USD, MCH +11%, WinCommerce +17% biên 2,2%; P/E MCH 20, TCB 7,5, MSR 15, bán lẻ & khác 18; trừ nợ ròng công ty mẹ"
   },
   {
    "ten": "Tốt",
    "ln26": 11869,
    "ln27": 15922,
-   "gia": 149.8,
-   "mo_ta": "APT 2.800 USD, MCH +15%, WinCommerce biên 2,8%; P/E MCH 21, TCB 8,6, MSR 11, bán lẻ & khác 22; trừ nợ ròng công ty mẹ"
+   "gia": 163.1,
+   "mo_ta": "APT 2.800 USD, MCH +15%, WinCommerce biên 2,8%; P/E MCH 25, TCB 8,6, MSR 11, bán lẻ & khác 22; trừ nợ ròng công ty mẹ"
   }
  ],
  "dinh_gia": {
@@ -469,16 +469,16 @@
      8660
     ],
     "boi": [
-     13,
-     17,
-     21
+     16,
+     20,
+     25
     ],
     "x_ten": "LN 2027E của MCH",
     "boi_ten": "P/E",
     "gt": [
-     61999,
-     91496,
-     119482
+     76307,
+     107643,
+     142240
     ]
    },
    {
@@ -549,14 +549,14 @@
    }
   ],
   "von": [
-   87111,
-   165412,
-   229874
+   99988,
+   179944,
+   250356
   ],
   "gia": [
-   56.7,
-   107.8,
-   149.8
+   65.1,
+   117.2,
+   163.1
   ],
   "no_rong": 36764,
   "no_rong_ten": "Trừ nợ vay ròng công ty mẹ (30/6/2026, sau tiền Elmet)"
@@ -863,7 +863,7 @@
    15.2
   ],
   "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Không dùng P/E của chính MSN (đã gồm chiết khấu holding — tránh đếm trùng): bội số áp riêng từng phần theo lịch sử từng mã — MCH 13 · 17 · 21 (thấp 25% 12,6, trung vị 16,1), TCB 6 · 7,5 · 8,6 (thấp 10% 5,5, trung vị 8,6)."
+  "dung": "Không dùng P/E của chính MSN (đã gồm chiết khấu holding — tránh đếm trùng): bội số áp riêng từng phần theo lịch sử từng mã — MCH 16 · 20 · 25 như hồ sơ MCH (trung vị từ 2017 16,1, 2024–2025 19,7, thấp nhất từ khi lên HOSE 25,3), TCB 6 · 7,5 · 8,6 (thấp 10% 5,5, trung vị 8,6)."
  },
  "nhay": [
   [
@@ -874,7 +874,7 @@
   [
    "Chi phí tập đoàn ±5 điểm %",
    null,
-   7.3
+   7.8
   ],
   [
    "P/E Masan Consumer ±2 lần",
@@ -974,7 +974,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Masan Consumer giảm định giá",
-   "ct": "MCH đang được trả ~22,3 lần LN 2027E (trung vị lịch sử 16,1) sau khi lên HOSE và vào VN30; mô hình dùng 17.",
+   "ct": "MCH đang được trả ~22,3 lần LN 2027E (trung vị lịch sử 16,1) sau khi lên HOSE và vào VN30; mô hình dùng 20.",
    "tac": [
     "±6,3 nghìn đ/cp",
     "mỗi 2 lần P/E MCH"
