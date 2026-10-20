@@ -248,7 +248,7 @@
       + '<div class="hsP1r">' + suKien(p, o) + '</div>'
       + (p.__qd ? '<div class="hsFoot"><b>Đã quy đổi theo chia/thưởng cổ phiếu</b> ' + p.__qd.ds.map(function(c){ return '×' + f(c[1], 4) + ' (GDKHQ ' + ngVn(c[0]) + ')'; }).join(', ')
         + ': giá trị, EPS, giá mục tiêu tính trên số cổ phiếu mới; con số trong lời văn viết trước ngày chia vẫn theo số cổ phiếu cũ.</div>' : '')
-      + '<div class="hsFoot">Kỳ số liệu: ' + esc(p.ky || '') + ' · tổng hợp từ BCTC, công bố của doanh nghiệp và ' + soTl + ' tài liệu (' + soBc + ' báo cáo CTCK, chỉ tham khảo) · '
+      + '<div class="hsFoot">Kỳ số liệu: ' + esc(p.ky || '') + ' · tổng hợp từ BCTC, công bố của doanh nghiệp và ' + soTl + ' tài liệu (' + (soBc ? soBc + ' báo cáo CTCK, chỉ tham khảo' : 'chưa có báo cáo CTCK trong 8 tháng — mô hình tự dựng từ BCTC, công bố và so sánh cùng ngành') + ') · '
       + 'mô hình, định giá và số liệu chi tiết ở trang 2 · không phải khuyến nghị đầu tư.</div></div>';
   }
   // dong_mo: chuoi hoac {t, dk, khac} nhu tieu_de (cau phu thuoc gia)
@@ -358,7 +358,7 @@
     [['x', 'Xấu', o.xau], ['c', 'Cơ sở', o.gt], ['t', 'Tốt', o.tot]].forEach(function(z){ if (z[2] == null) return; var d = o.gia > 0 ? (z[2] / o.gia - 1) * 100 : null;
       h += '<div class="hsSbM ' + z[0] + '" style="left:' + X(z[2]).toFixed(2) + '%"><i></i><span>' + z[1] + ' <b>' + f(z[2], 1) + '</b>' + (d != null ? ' <em class="' + lop(d) + '">' + pct(d) + '</em>' : '') + '</span></div>'; });
     if (o.gia > 0) h += '<div class="hsSbP" style="left:' + X(o.gia).toFixed(2) + '%"><span>Giá hiện tại <b>' + f(o.gia, 1) + '</b></span><i></i></div>';
-    h += '</div><div class="hsY hsSbG">Cán cân lên/xuống ' + (o.rr != null ? '<b>' + f(o.rr, 1) + ' lần</b>' : '—') + ' = (tốt − giá hiện tại) ÷ (giá hiện tại − xấu) · dải xám dưới: giá mục tiêu CTCK, chỉ tham khảo</div>';
+    h += '</div><div class="hsY hsSbG">Cán cân lên/xuống ' + (o.rr != null ? '<b>' + f(o.rr, 1) + ' lần</b>' : '—') + ' = (tốt − giá hiện tại) ÷ (giá hiện tại − xấu)' + (sg.lo != null ? ' · dải xám dưới: giá mục tiêu CTCK, chỉ tham khảo' : '') + '</div>';
     return h;
   }
   // Thi truong dang tra bao nhieu cho tung phan: von hoa me - % cong ty con theo gia thi truong; P/E tung phan so voi cung nganh khu vuc
