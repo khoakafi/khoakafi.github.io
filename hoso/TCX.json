@@ -1,0 +1,1202 @@
+{
+ "v": 2,
+ "ma": "TCX",
+ "ten": "CTCP Chứng khoán Kỹ Thương (TCBS)",
+ "nganh": "Chứng khoán",
+ "ky": "BCTC Q2/2026 · KQKD Q3/2026 (TCBS công bố 18/10)",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau KQKD Q4/2026",
+ "cp_trieu": 3329.3,
+ "cp_ng": "Vốn điều lệ 33.293 tỷ sau cổ tức cổ phiếu 2025 (20%, ĐKCC 18/9/2026) theo TCBS công bố; khớp vốn hóa VNDirect 92.556 tỷ ở giá 27,8. BCTC Q2/2026: 2.773,9 triệu cp (đã gồm đợt 20% GDKHQ 25/5/2026).",
+ "co_tuc": [
+  [
+   "2026-04-07",
+   347,
+   "5% tiền mặt = 500 đ/cp cũ ≈ 347 đ/cp hiện nay (sau hai đợt cổ phiếu 20%); ĐKCC 8/4, trả 8/5/2026"
+  ]
+ ],
+ "chia": [
+  [
+   "2026-05-25",
+   1.2
+  ],
+  [
+   "2026-09-17",
+   1.2
+  ]
+ ],
+ "tieu_de": {
+  "t": "LNTT quý 3 kỷ lục mà chỉ +6%: lãi margin tăng bao nhiêu, chi phí vốn ăn bấy nhiêu"
+ },
+ "dong_mo": "Cho vay ký quỹ tạo 44% thu nhập thuần Q3/2026, ngân hàng đầu tư 21%, môi giới chỉ 2%. Chênh lệch lợi suất cho vay − chi phí vốn co từ 2,5 xuống 1,7 điểm %. Mô hình: LNST 2026E +8%, 2027E +14%, ROE 13,3%. P/B 1,5 lần cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "+6%",
+   "nhan": "LNTT Q3/2026 so với cùng kỳ — dư nợ margin +31%",
+   "tieu": "Đòn bẩy tăng thêm bị chi phí vốn ăn hết",
+   "t": "Q3/2026 lãi cho vay ký quỹ 1.548 tỷ, +549 tỷ so với cùng kỳ; chi phí tài chính và quản lý ròng 1.355 tỷ, +619 tỷ. Dư nợ +13.000 tỷ trong 12 tháng, nợ vay +16.700 tỷ: lợi suất cho vay 11,7% chỉ hơn chi phí vốn ~10,0% 1,7 điểm % (Q3/2025: 2,5). Mô hình: thêm 5.000 tỷ dư nợ bình quân bằng tiền vay chỉ mang về ~60 tỷ LNST.",
+   "ng": "TCBS công bố Q3/2026 · BCTC quý · mô hình"
+  },
+  {
+   "so": "+35%",
+   "nhan": "thu nhập IB 9T/2026 so với cùng kỳ",
+   "tieu": "Tăng trưởng thật nằm ở ngân hàng đầu tư",
+   "t": "LNTT 9 tháng +640 tỷ so với cùng kỳ: IB +550, lãi cho vay trừ phần chi phí tài chính tăng thêm chỉ +233, nguồn vốn & phân phối TP −92. IB 9 tháng 2.103 tỷ đã vượt cả năm 2025 (2.018); TCBS tư vấn ~118.700 tỷ trái phiếu, 46–86% thị phần TPDN ngoài ngân hàng từng quý. Mô hình cơ sở: IB 2027 3.000 tỷ (+9%), không giả định đột biến tiếp.",
+   "ng": "TCBS công bố Q1–Q3/2026, năm 2025 · BCTC quý"
+  },
+  {
+   "so": "13,3%",
+   "nhan": "ROE 2027E (cơ sở)",
+   "tieu": "Vốn IPO kéo ROE từ 16,8% về 13–14%",
+   "t": "VCSH 26.297 tỷ (cuối 2024) → ~47.500 tỷ (30/9/2026) sau IPO Q3/2025; dư nợ mới 1,15 lần VCSH (trần 2). Kế hoạch 2026: LNTT 7.535 tỷ (+6%; +18% nếu bỏ ~720 tỷ một lần Q4/2025), 9 tháng đạt 76%. Mô hình: LNTT 2026E 7.658 tỷ (102% kế hoạch); LNST 2027E 7.003 tỷ (+14%) khi LN giữ lại tài trợ phần dư nợ tăng thêm, ROE 13,3%.",
+   "ng": "BCTC quý · ĐHĐCĐ 25/04/2026 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 1,5 lần cho ROE ~13%: {up_so} so với giá hiện tại",
+   "t": "P/B 1,5 × BVPS cuối 2027E 16.848 đ: trung vị P/B ÷ ROE của 10 CTCK lớn (0,111) nhân ROE 13,3% ra 1,48, ngang SSI (1,46 lần, ROE 13,4%). Ngày 20/10 TCX 2,02 lần, cao thứ hai sau VCK (2,18; ROE 17,2%); trung vị nhóm 1,28. Xấu 19,2 (P/B 1,2, ROE 9%), tốt 34,9 (giữ P/B 2,0 khi ROE 16%).",
+   "ng": "mô hình · bảng cùng ngành 20/10/2026"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   5683,
+   6148,
+   7003
+  ],
+  "ln_truoc": 3850,
+  "eps": [
+   1707,
+   1847,
+   2103
+  ],
+  "bv": [
+   13246,
+   14745,
+   16848
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "ROE",
+    "v": [
+     16.8,
+     13.3,
+     13.3
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "EPS, BVPS theo 3.329,3 triệu cp hiện tại. 2025A gồm ~576 tỷ LNST một lần (Q4). Cổ tức 2025 trả 100% bằng cổ phiếu (20%); năm 2024: 5% tiền mặt + 20% cổ phiếu."
+ },
+ "ln_mang": {
+  "tieu": "LNST theo mảng (ước tính)",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Cho vay ký quỹ",
+    "mau": "c1",
+    "v": [
+     1854,
+     2670,
+     3119
+    ]
+   },
+   {
+    "ten": "Ngân hàng đầu tư",
+    "mau": "c2",
+    "v": [
+     1613,
+     2210,
+     2400
+    ]
+   },
+   {
+    "ten": "Nguồn vốn & phân phối TP",
+    "mau": "c3",
+    "v": [
+     2422,
+     1529,
+     1799
+    ]
+   },
+   {
+    "ten": "Môi giới, quản lý & khác",
+    "mau": "c4",
+    "v": [
+     -206,
+     -261,
+     -315
+    ]
+   }
+  ],
+  "nhan": "Ngân hàng đầu tư",
+  "ng": "Thu nhập thuần 4 mảng TCBS công bố; chi phí tài chính phân bổ cho cho vay ký quỹ và nguồn vốn theo dư nợ : danh mục bình quân; chi phí quản lý vào \"khác\"; sau thuế. 2025A nguồn vốn gồm khoản một lần Q4."
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo mảng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Cho vay ký quỹ"
+   },
+   {
+    "ten": "Dư nợ cuối kỳ (tỷ)",
+    "v": [
+     43860,
+     55500,
+     61000
+    ]
+   },
+   {
+    "ten": "Thu nhập thuần cho vay (tỷ)",
+    "v": [
+     3664,
+     5724,
+     6699
+    ]
+   },
+   {
+    "ten": "Lợi suất cho vay (% dư nợ BQ)",
+    "v": [
+     10.4,
+     11.4,
+     11.5
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Phí và nguồn vốn"
+   },
+   {
+    "ten": "Ngân hàng đầu tư (tỷ)",
+    "v": [
+     2018,
+     2753,
+     3000
+    ]
+   },
+   {
+    "ten": "Nguồn vốn & phân phối trái phiếu (tỷ)",
+    "v": [
+     3966,
+     3646,
+     4000
+    ]
+   },
+   {
+    "ten": "Môi giới, lưu ký (tỷ)",
+    "v": [
+     356,
+     278,
+     280
+    ]
+   },
+   {
+    "nhom": "Chi phí"
+   },
+   {
+    "ten": "Chi phí tài chính (tỷ)",
+    "v": [
+     2282,
+     4138,
+     4550
+    ]
+   },
+   {
+    "ten": "Chi phí vốn (% nợ vay BQ)",
+    "v": [
+     8.5,
+     9.5,
+     10.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Chi phí quản lý (tỷ)",
+    "v": [
+     659,
+     651,
+     720
+    ]
+   },
+   {
+    "nhom": "Kết quả"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế (tỷ)",
+    "v": [
+     7109,
+     7658,
+     8753
+    ]
+   },
+   {
+    "ten": "LNST (tỷ)",
+    "v": [
+     5683,
+     6148,
+     7003
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     13246,
+     14745,
+     16848
+    ]
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     16.8,
+     13.3,
+     13.3
+    ],
+    "d": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     1707,
+     1847,
+     2103
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "2025A: BCTC hợp nhất + thu nhập thuần 4 mảng TCBS công bố. 2026E = 9 tháng thực tế (Q3 theo KQKD công bố; chi phí quản lý Q3 ước 160 tỷ) + Q4 ước tính. Nợ vay = kỳ trước + tăng dư nợ − LN giữ lại; thuế 20%; không giả định cổ tức tiền mặt."
+ },
+ "cau_ln": {
+  "ten": "LNST 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   6148
+  ],
+  "cuoi": [
+   "2027E",
+   7003
+  ],
+  "buoc": [
+   [
+    "Cho vay ký quỹ",
+    975
+   ],
+   [
+    "Ngân hàng đầu tư",
+    247
+   ],
+   [
+    "Nguồn vốn & phân phối TP",
+    354
+   ],
+   [
+    "Môi giới, lưu ký",
+    2
+   ],
+   [
+    "Chi phí tài chính",
+    -412
+   ],
+   [
+    "Quản lý, khác",
+    -69
+   ],
+   [
+    "Thuế",
+    -242
+   ]
+  ],
+  "y": "Dư nợ bình quân 58.200 so với 50.200 tỷ; LN giữ lại tài trợ phần dư nợ tăng thêm nên nợ vay bình quân gần đi ngang và chi phí tài chính chỉ +412 tỷ (chi phí vốn giữ ~10%).",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Dư nợ margin cuối 2026 · 2027 (nghìn tỷ)",
+   "v": [
+    "52 · 50",
+    "55,5 · 61",
+    "58 · 70"
+   ],
+   "ly_do": "30/9/2026: 54,7 (+31% so với cùng kỳ; 1,15 lần VCSH, trần 2); GTGD 1–20/10 12.677 tỷ/phiên, thấp nhất từ 2023"
+  },
+  {
+   "ten": "Lợi suất cho vay ký quỹ",
+   "v": [
+    "11,0%",
+    "11,5%",
+    "11,7%"
+   ],
+   "ly_do": "Thu nhập thuần ÷ dư nợ BQ: 2025 10,4%; Q1–Q3/2026 10,9 · 11,5 · 11,7%"
+  },
+  {
+   "ten": "Chi phí vốn 2027 (% nợ vay BQ)",
+   "v": [
+    "11,0%",
+    "10,0%",
+    "9,0%"
+   ],
+   "ly_do": "Chi phí tài chính ÷ nợ vay BQ: 2025 8,5%; Q2/2026 9,3%, Q3 ~10,0% (ước); huy động (cận trên NHNN) 8,0% (08/2026)"
+  },
+  {
+   "ten": "Ngân hàng đầu tư 2027 (tỷ)",
+   "v": [
+    "2.200",
+    "3.000",
+    "3.500"
+   ],
+   "ly_do": "2025 2.018 (+50%); 9T/2026 2.103 (+35%); Q4/2026: 450 · 650 · 800 (cùng kỳ ~465)"
+  },
+  {
+   "ten": "Nguồn vốn & phân phối TP 2027 (tỷ)",
+   "v": [
+    "3.000",
+    "4.000",
+    "4.600"
+   ],
+   "ly_do": "2025 3.966 (gồm ~720 một lần); 9T/2026 2.646; Q2–Q3/2026 964 · 1.155/quý"
+  },
+  {
+   "ten": "Môi giới, lưu ký 2027 (tỷ)",
+   "v": [
+    "220",
+    "280",
+    "360"
+   ],
+   "ly_do": "2025 356; 9T/2026 218 (−18%) dù thị phần HOSE Q3 lên 10,03%"
+  },
+  {
+   "ten": "P/B mục tiêu (lần)",
+   "v": [
+    "1,20",
+    "1,50",
+    "2,00"
+   ],
+   "ly_do": "Trung vị 11 mã cùng ngành 1,28; trung vị P/B÷ROE 10 CTCK × ROE 2027E = 1,48; TCX 2,02 — thấp nhất từ khi niêm yết (10/2025)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 5671,
+   "ln27": 4778,
+   "gia": 19.2,
+   "mo_ta": "Dư nợ cuối 2027 50 nghìn tỷ, IB 2.200 tỷ, nguồn vốn 3.000 tỷ, chi phí vốn 11,0%; ROE 9,4%; P/B 1,20"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 6148,
+   "ln27": 7003,
+   "gia": 25.3,
+   "mo_ta": "Dư nợ 61 nghìn tỷ, IB 3.000 tỷ, nguồn vốn 4.000 tỷ, chi phí vốn 10,0%; ROE 13,3%; P/B 1,50"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 6473,
+   "ln27": 8609,
+   "gia": 34.9,
+   "mo_ta": "Nâng hạng kéo dư nợ lên 70 nghìn tỷ, IB 3.500 tỷ, chi phí vốn 9,0%; ROE 16,0%; giữ P/B 2,00"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × VCSH cuối 2027E",
+  "ck": 0,
+  "cp": 3329.3,
+  "phan": [
+   {
+    "ten": "Vốn chủ sở hữu cổ đông",
+    "mau": "c1",
+    "x": [
+     53392,
+     56093,
+     58025
+    ],
+    "boi": [
+     1.2,
+     1.5,
+     2.0
+    ],
+    "x_ten": "VCSH cuối 2027E",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     64070,
+     84140,
+     116050
+    ]
+   }
+  ],
+  "von": [
+   64070,
+   84140,
+   116050
+  ],
+  "gia": [
+   19.2,
+   25.3,
+   34.9
+  ]
+ },
+ "nhay": [
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.7
+  ],
+  [
+   "Ngân hàng đầu tư 2027 ±500 tỷ",
+   417,
+   1.6
+  ],
+  [
+   "Nguồn vốn & phân phối TP ±500 tỷ",
+   417,
+   1.6
+  ],
+  [
+   "Chi phí vốn 2027 ±0,5 điểm %",
+   190,
+   0.7
+  ],
+  [
+   "Dư nợ margin BQ 2027 ±5.000 tỷ",
+   62,
+   0.2
+  ]
+ ],
+ "so_sanh": {
+  "tieu": "P/B so với 11 CTCK vốn hóa lớn nhất",
+  "phu": "theo giá hôm nay, VCSH 30/6/2026",
+  "chi_so": "P/B (VCSH 30/6/2026)",
+  "chi_so_kv": "P/B (giá 20/10)",
+  "nhom": "11 mã cùng ngành vốn hóa lớn nhất",
+  "kv": [
+   [
+    "VCK",
+    2.18
+   ],
+   [
+    "SSI",
+    1.46
+   ],
+   [
+    "VPX",
+    1.19
+   ],
+   [
+    "VIX",
+    0.95
+   ],
+   [
+    "HCM",
+    1.82
+   ],
+   [
+    "VCI",
+    1.28
+   ],
+   [
+    "VND",
+    0.96
+   ],
+   [
+    "MBS",
+    1.37
+   ],
+   [
+    "SHS",
+    0.9
+   ],
+   [
+    "DSE",
+    1.62
+   ],
+   [
+    "EVF",
+    0.84
+   ]
+  ],
+  "tv": 1.28,
+  "moi_cp": 13751,
+  "max": 2.5,
+  "y": "TCX 2,02 lần, cao thứ hai sau VCK (2,18; ROE 17,2%); trung vị nhóm 1,28 lần với ROE 12,3%. ROE 4 quý của TCX 13,7%: P/B ÷ ROE 0,147 so với trung vị 10 CTCK 0,111.",
+  "ng": "BCTC VNDirect, giá 20/10/2026 (bảng cùng ngành)"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ma_ln": "23000",
+   "ln": [
+    1084,
+    1560,
+    1886
+   ],
+   "ck": 1633
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    5671,
+    6148,
+    6473
+   ]
+  },
+  {
+   "quy": "Cả năm 2027",
+   "ln": [
+    4778,
+    7003,
+    8609
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "BCTC Q3/2026 đầy đủ",
+   "ct": "Thông cáo mới có LNTT và thu nhập 4 mảng. Cần chi phí lãi vay và nợ vay 30/9 để kiểm chi phí vốn ~10%/năm mà mô hình dùng cho Q4.",
+   "tac": [
+    "~1.210 tỷ",
+    "chi phí tài chính Q3 ước (Q2: 1.023)"
+   ],
+   "theo_doi": "chi phí lãi vay, nợ vay cuối quý"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "IB cuối năm",
+   "ct": "Q2/2026 TCBS tư vấn ~61.000 tỷ trái phiếu (+138%), IB thu 837 tỷ; Q3 29.700 tỷ, 740 tỷ. Mô hình Q4: 650 tỷ (cùng kỳ ~465).",
+   "tac": [
+    "±1,6 nghìn đ/cp",
+    "mỗi ±500 tỷ IB 2027 (±420 tỷ LNST)"
+   ],
+   "theo_doi": "giá trị trái phiếu tư vấn phát hành, thị phần"
+  },
+  {
+   "khi": "01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026: nền cùng kỳ có khoản một lần",
+   "ct": "Q4/2025 LNST 1.633 tỷ gồm ~720 tỷ thu nhập một lần (trước thuế). Mô hình Q4/2026 ~1.560 tỷ: −4% so với báo cáo, +48% so với phần cốt lõi.",
+   "tac": [
+    "−4%",
+    "LNST Q4 so với cùng kỳ báo cáo (cơ sở)"
+   ],
+   "theo_doi": "LNST quý, thu nhập mảng nguồn vốn"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Chi phí vốn còn tăng",
+   "ct": "Chi phí tài chính ÷ nợ vay BQ 8,1% (Q3/2025) → ~10,0% (Q3/2026); huy động (cận trên NHNN) 8,0% (08/2026). Nợ vay ~47.000 tỷ, gần như toàn bộ ngắn hạn.",
+   "tac": [
+    "±0,7 nghìn đ/cp",
+    "mỗi ±0,5 điểm % chi phí vốn 2027 (±190 tỷ LNST)"
+   ],
+   "theo_doi": "chi phí lãi vay ÷ nợ vay, lãi suất huy động"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Dòng vốn sau nâng hạng FTSE",
+   "ct": "Hiệu lực 21/9/2026. Dư nợ mới 1,15 lần VCSH (trần 2) nên TCBS còn chỗ cho vay khi thanh khoản quay lại; thị phần HOSE Q3 lần đầu vượt 10%.",
+   "tac": [
+    "+9,6 nghìn đ/cp",
+    "kịch bản tốt: dư nợ 70 nghìn tỷ, IB 3.500 tỷ, P/B 2,0"
+   ],
+   "theo_doi": "GTGD, dư nợ cuối quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Margin khi thị trường giảm sâu",
+   "ct": "TCX dẫn đầu dư nợ: 51.522 tỷ, 15,4% của 40 CTCK trên sàn (30/6). GTGD 1–20/10 12.677 tỷ/phiên, Toàn cảnh THẬN TRỌNG từ 14/9.",
+   "tac": [
+    "−6,1 nghìn đ/cp",
+    "kịch bản xấu: dư nợ 50 nghìn tỷ, P/B 1,2"
+   ],
+   "theo_doi": "dư nợ, tỷ lệ dư nợ/VCSH"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Phụ thuộc thị trường trái phiếu doanh nghiệp",
+   "ct": "IB và nguồn vốn & phân phối TP = 52% thu nhập thuần 9T/2026. Sự cố tín dụng của tổ chức phát hành lớn hay siết quy định nhà đầu tư trái phiếu tác động thẳng vào hai mảng.",
+   "tac": [
+    "±1,6 nghìn đ/cp",
+    "mỗi ±500 tỷ nguồn vốn & phân phối 2027 (±420 tỷ LNST)"
+   ],
+   "theo_doi": "phát hành, phân phối trái phiếu"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Mức P/B cao hơn nhóm",
+   "ct": "TCX 2,02 lần so với trung vị 1,28 của 11 CTCK lớn, trong khi ROE 4 quý 13,7% chỉ hơn trung vị 12,3%.",
+   "tac": [
+    "±1,7 nghìn đ/cp",
+    "mỗi ±0,1 lần P/B"
+   ],
+   "theo_doi": "P/B so với nhóm"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Mảng tài sản mã hóa",
+   "ct": "TCBS chờ cấp phép hoạt động liên quan tài sản mã hóa (VietnamPlus, 04/2026). Mô hình chưa tính doanh thu từ mảng này.",
+   "tac": "",
+   "theo_doi": "giấy phép, kế hoạch triển khai"
+  },
+  {
+   "khi": "Q2/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: cổ tức",
+   "ct": "2024 trả 5% tiền mặt + 20% cổ phiếu, 2025 trả 20% cổ phiếu. Mô hình không giả định cổ tức tiền mặt năm 2027.",
+   "tac": "",
+   "theo_doi": "phương án phân phối lợi nhuận 2026"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Thu nhập thuần theo mảng",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "so_le": 0,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Cho vay ký quỹ",
+     "v": [
+      717,
+      831,
+      999,
+      1117,
+      1211,
+      1380,
+      1548
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Ngân hàng đầu tư",
+     "v": [
+      414,
+      629,
+      510,
+      465,
+      526,
+      837,
+      740
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "Nguồn vốn & phân phối TP",
+     "v": [
+      693,
+      901,
+      1144,
+      1225,
+      527,
+      964,
+      1155
+     ],
+     "mau": "c3",
+     "net": false
+    },
+    {
+     "ten": "Môi giới, lưu ký",
+     "v": [
+      73,
+      87,
+      105,
+      91,
+      85,
+      69,
+      64
+     ],
+     "mau": "c4",
+     "net": false
+    }
+   ],
+   "y": "Cho vay ký quỹ 36% → 44% thu nhập thuần (Q3/2025 → Q3/2026); môi giới còn 2%. Q4/2025 mảng nguồn vốn gồm ~720 tỷ một lần.",
+   "ng": "TCBS công bố; Q1–Q3/2025 suy từ mức tăng công bố, Q4/2025 = cả năm − 9 tháng"
+  },
+  {
+   "ten": "Dư nợ margin và nợ vay cuối quý",
+   "dv": "nghìn tỷ",
+   "kieu": "cot",
+   "so_le": 1,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Dư nợ cho vay ký quỹ",
+     "v": [
+      25.9,
+      30.5,
+      33.8,
+      41.7,
+      43.9,
+      44.8,
+      51.5,
+      54.7
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Nợ vay",
+     "v": [
+      20.5,
+      23.2,
+      27.4,
+      30.4,
+      31.1,
+      38.4,
+      49.4,
+      47.1
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "y": "12 tháng đến 30/9/2026 dư nợ +13.000 tỷ, nợ vay +16.700 tỷ: tăng trưởng margin sau IPO đi bằng tiền vay.",
+   "ng": "BCTC hợp nhất quý; 30/9/2026: TCBS công bố (nợ vay ước từ tỷ lệ nợ vay/VCSH 0,99)"
+  },
+  {
+   "ten": "Lợi suất cho vay và chi phí vốn",
+   "dv": "%/năm",
+   "kieu": "duong",
+   "so_le": 1,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lợi suất cho vay ký quỹ",
+     "v": [
+      10.2,
+      10.3,
+      10.6,
+      10.4,
+      10.9,
+      11.5,
+      11.7
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Chi phí vốn (nợ vay)",
+     "v": [
+      8.4,
+      9.0,
+      8.1,
+      8.7,
+      8.5,
+      9.3,
+      10.0
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "y": "Chênh lệch 2,5 điểm % (Q3/2025) → 1,7 (Q3/2026): lợi suất tăng chậm hơn chi phí vốn.",
+   "ng": "thu nhập thuần cho vay ÷ dư nợ BQ; chi phí tài chính ÷ nợ vay BQ (Q3/2026 ước); năm hóa"
+  },
+  {
+   "ten": "Thu nhập ngân hàng đầu tư",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "so_le": 0,
+   "nhan": [
+    "Q1",
+    "Q2",
+    "Q3"
+   ],
+   "ss": [
+    {
+     "ten": "2025",
+     "v": [
+      414,
+      629,
+      510
+     ],
+     "mau": "c4",
+     "net": false
+    },
+    {
+     "ten": "2026",
+     "v": [
+      526,
+      837,
+      740
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "y": "+27%, +33%, +45% so với cùng kỳ; 9 tháng 2.103 tỷ đã vượt cả năm 2025.",
+   "ng": "TCBS công bố (2025 suy từ mức tăng công bố)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 13227,
+    "th": 10062,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 25/04 · BCTC Q1–Q2, Q3 theo VNDirect"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 7535,
+    "th": 5707,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 25/04 · TCBS công bố 9T"
+   }
+  ],
+  "y": "9 tháng đạt 76% kế hoạch LNTT. Mô hình cơ sở: cả năm 7.658 tỷ, ~102% kế hoạch.",
+  "ng": ""
+ },
+ "ctck": [],
+ "ctck_chu": "Chưa có CTCK theo dõi trong 8 tháng; mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành.",
+ "nguon": [
+  {
+   "ten": "TCBS — Thông cáo KQKD Q3/2026",
+   "ngay": "18/10/2026",
+   "link": "https://www.tcbs.com.vn/tin-tuc/thong-cao-bao-chi/tcbc-tcbs-bao-lai-quy-3-2026-cao-nhat-lich-su-loi-nhuan-vuot-2-100-ty-dong/"
+  },
+  {
+   "ten": "VnEconomy — thị phần môi giới HOSE vượt 10% (Q3/2026)",
+   "ngay": "10/2026",
+   "link": "https://vneconomy.vn/tcbs-tang-thi-phan-moi-gioi-len-hon-10-trong-quy-32026.htm"
+  },
+  {
+   "ten": "Nhịp sống nhà đất — dư nợ cho vay vượt 54.700 tỷ",
+   "ngay": "10/2026",
+   "link": "https://nhipsongnhadat.vn/tcbs-lai-ky-luc-quy-3-du-no-cho-vay-vuot-54-700-ty-dong.html"
+  },
+  {
+   "ten": "Doanh nghiệp & Kinh tế xanh — LNTT 9 tháng 5.708 tỷ, 76% kế hoạch",
+   "ngay": "10/2026",
+   "link": "https://doanhnghiepkinhtexanh.vn/loi-nhuan-9-thang-dau-nam-tcbs-dat-5708-ty-dong-hoan-thanh-76-ke-hoach-a54774.html"
+  },
+  {
+   "ten": "TCBS — Press release 2Q2026",
+   "ngay": "07/2026",
+   "link": "https://www.tcbs.com.vn/wp-content/uploads/2026/07/Press-Release_2Q2026_EN_FINAL-1.pdf"
+  },
+  {
+   "ten": "VietnamBiz — TCBS báo lãi quý II/2026",
+   "ngay": "15/07/2026",
+   "link": "https://vietnambiz.vn/tcbs-bao-lai-quy-ii2026-cao-nhat-lich-su-loi-nhuan-vuot-2000-ty-dong-202671573823315.htm"
+  },
+  {
+   "ten": "Người Quan sát — tài sản 100.000 tỷ, 5 tỷ cổ phiếu niêm yết",
+   "ngay": "07/2026",
+   "link": "https://nguoiquansat.vn/tai-san-hon-100-000-ty-dong-tcbs-chi-dau-tu-5-ty-vao-co-phieu-niem-yet-304431.html"
+  },
+  {
+   "ten": "VietnamFinance — TCBS quý I/2026",
+   "ngay": "04/2026",
+   "link": "https://vietnamfinance.vn/tcbs-lai-truoc-thue-gan-1500-ty-dong-trong-quy-i-2026-d143457.html"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — TCBS quý I/2026",
+   "ngay": "04/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/loi-nhuan-truoc-thue-quy-i2026-cua-tcbs-tcx-dat-1458-ty-dong-post388881.html"
+  },
+  {
+   "ten": "TCBS — Công bố KQKD quý 4 và năm 2025",
+   "ngay": "01/2026",
+   "link": "https://www.tcbs.com.vn/wp-content/uploads/2026/01/TCBS-Cong-bo-KQKD-quy-4-nam-2025.pdf"
+  },
+  {
+   "ten": "Vietstock — lợi nhuận 2025 hơn 7.100 tỷ",
+   "ngay": "01/2026",
+   "link": "https://vietstock.vn/2026/01/tcbs-loi-nhuan-nam-2025-dat-ky-luc-hon-7100-ty-dong-737-1390730.htm"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ 2026: kế hoạch 7.535 tỷ, huy động nửa tỷ USD",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-chung-khoan-ky-thuong-tcx-2026-tu-tin-huong-moc-loi-nhuan-7-535-ty-dong-huy-dong-ky-luc-nua-ty-usd-don-song-margin.html"
+  },
+  {
+   "ten": "Mekong ASEAN — mục tiêu lợi nhuận 2026",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/tcbs-dat-muc-tieu-loi-nhuan-hon-7500-ty-do-ng-nang-von-vuot-nguong-ty-usd-53578.html"
+  },
+  {
+   "ten": "VietnamPlus — doanh thu mục tiêu 13.227 tỷ, tài sản mã hóa chờ cấp phép",
+   "ngay": "04/2026",
+   "link": "https://www.vietnamplus.vn/tcbs-huong-toi-13227-ty-dong-doanh-thu-tai-san-ma-hoa-dang-cho-cap-phep-post1107027.vnp"
+  },
+  {
+   "ten": "DNSE — chốt quyền cổ tức tiền mặt 500 đ/cp (ĐKCC 8/4/2026)",
+   "ngay": "04/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/loat-doanh-nghiep-chot-quyen-tra-co-tuc-trong-tuan-tu-ngay-64-104-35212216"
+  },
+  {
+   "ten": "Báo Pháp luật — phát hành 462 triệu cp trả cổ tức 2024",
+   "ngay": "05/2026",
+   "link": "https://doanhnhan.baophapluat.vn/tcbs-tcx-phat-hanh-hon-462-trieu-co-phieu-tra-co-tuc-von-dieu-le-tien-sat-moc-28-000-ty-dong.html"
+  },
+  {
+   "ten": "Người Quan sát — chốt ngày trả cổ tức 20% (ĐKCC 18/9/2026)",
+   "ngay": "09/2026",
+   "link": "https://nguoiquansat.vn/tcbs-tcx-chot-ngay-tra-co-tuc-ty-le-20-314904.html"
+  },
+  {
+   "ten": "Mekong ASEAN — phát hành gần 555 triệu cp, vốn điều lệ 33.293 tỷ",
+   "ngay": "09/2026",
+   "link": "https://mekongasean.vn/tcbs-sap-phat-hanh-gan-555-trieu-co-phieu-de-tra-co-tuc-59347.html"
+  },
+  {
+   "ten": "khoanguyeninvest.vn — Toàn cảnh: thanh khoản, lãi suất NHNN, trạng thái thị trường",
+   "ngay": "20/10/2026",
+   "link": "https://khoanguyeninvest.vn/#toan-canh"
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Cho vay ký quỹ",
+   "phu": "Lớn nhất thị trường: 15,4% dư nợ của 40 CTCK trên sàn (30/6/2026)",
+   "so": [
+    [
+     "Dư nợ 30/9/2026",
+     "54.740 tỷ",
+     "+31% so với cùng kỳ"
+    ],
+    [
+     "Thu nhập thuần 9T",
+     "4.139 tỷ",
+     "+63%"
+    ],
+    [
+     "Lợi suất Q3/2026",
+     "11,7%",
+     "chi phí vốn ~10,0%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "30/6/2026 TCX 51.522 tỷ, SSI 40.473, VPX 38.177; dư nợ 40 CTCK +52% trong một năm, thị phần TCX 15,4% → 15,4%.",
+     "ng": "BCTC các CTCK (VNDirect)"
+    },
+    {
+     "t": "Dư nợ/VCSH 1,15 lần ở 30/9 (trần 2 lần): giới hạn không nằm ở vốn mà ở chi phí và lượng tiền vay.",
+     "ng": "TCBS công bố Q3/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Ngân hàng đầu tư",
+   "phu": "Tư vấn phát hành trái phiếu doanh nghiệp ngoài ngân hàng — dẫn đầu thị phần",
+   "so": [
+    [
+     "Thu nhập thuần 9T",
+     "2.103 tỷ",
+     "+35%"
+    ],
+    [
+     "Trái phiếu tư vấn 9T",
+     "~118.700 tỷ",
+     "Q1 28.000 · Q2 61.000 · Q3 29.700"
+    ],
+    [
+     "Thị phần TPDN ngoài NH",
+     "86% · 48% · 46%",
+     "Q1 · Q2 · Q3/2026"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Thu nhập IB không tỷ lệ thuận với giá trị phát hành từng quý (Q2 61.000 tỷ → 837 tỷ; Q3 29.700 tỷ → 740 tỷ): phí phụ thuộc cấu trúc thương vụ.",
+     "ng": "TCBS công bố Q1–Q3/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Nguồn vốn & phân phối trái phiếu",
+   "phu": "Danh mục trái phiếu, chứng chỉ tiền gửi; gần như không giữ cổ phiếu niêm yết",
+   "so": [
+    [
+     "Thu nhập thuần 9T",
+     "2.646 tỷ",
+     "−3%"
+    ],
+    [
+     "Phân phối TPDN Q3",
+     "45.600 tỷ",
+     "+144%"
+    ],
+    [
+     "Danh mục 30/6/2026",
+     "36.432 tỷ",
+     "tài sản tài chính trừ cho vay"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q3/2026 khối lượng phân phối tăng 144% (mở rộng sang khách tổ chức) nhưng thu nhập chỉ +1%: lãi suất tăng làm hẹp chênh lệch.",
+     "ng": "TCBS công bố Q3/2026"
+    },
+    {
+     "t": "Tài sản hơn 100.000 tỷ (30/6) mà cổ phiếu niêm yết chỉ ~5 tỷ: rủi ro thị trường cổ phiếu của danh mục rất nhỏ, rủi ro lãi suất là chính.",
+     "ng": "Người Quan sát 07/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Môi giới, lưu ký",
+   "phu": "Thị phần HOSE 10,03%, HNX 9,96% (Q3/2026) — nhưng chỉ 2% thu nhập thuần",
+   "so": [
+    [
+     "Thu nhập thuần 9T",
+     "218 tỷ",
+     "−18%"
+    ],
+    [
+     "Doanh thu môi giới Q2/2026",
+     "227 tỷ",
+     "SSI 462 tỷ (thị phần HOSE 11,2%)"
+    ],
+    [
+     "GTGD thị trường Q3/2026",
+     "14.724 tỷ/phiên",
+     "Q3/2025: 39.687"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Thị phần HOSE 10,03% (Q3) gần SSI (11,17%, Q2) nhưng doanh thu môi giới Q2 chỉ 227 tỷ so với 462: môi giới là kênh kéo khách cho margin và trái phiếu, không phải nguồn lãi.",
+     "ng": "BCTC Q2/2026 · VnEconomy 10/2026 · SSI công bố 6T"
+    },
+    {
+     "t": "Q3/2026 thu nhập môi giới, hoa hồng, lưu ký −39% do phân phối chứng chỉ quỹ chậm lại khi lãi suất cao.",
+     "ng": "TCBS công bố Q3/2026"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Lãi suất huy động (cận trên NHNN công bố) 5,5% (06/2025) → 8,0% (08/2026): chi phí vay ngắn hạn của CTCK tăng theo.",
+     "ng": "NHNN, tab Toàn cảnh"
+    },
+    {
+     "h": 1,
+     "t": "FTSE Russell nâng Việt Nam lên thị trường mới nổi thứ cấp, hiệu lực 21/9/2026.",
+     "ng": "tab Toàn cảnh"
+    },
+    {
+     "h": -1,
+     "t": "Toàn cảnh thị trường THẬN TRỌNG từ 14/9/2026; tiền giao dịch 20 phiên chỉ ~0,6 lần bình quân năm (20/10).",
+     "ng": "tab Toàn cảnh 20/10"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "GTGD khớp lệnh ~700 mã: 39.687 tỷ/phiên (Q3/2025) → 14.724 (Q3/2026) → 12.677 (1–20/10).",
+     "ng": "tab Toàn cảnh"
+    },
+    {
+     "h": -1,
+     "t": "Dư nợ margin 40 CTCK trên sàn 219.947 → 333.605 tỷ (+52%) khi GTGD đi xuống: đòn bẩy hệ thống cao.",
+     "ng": "BCTC các CTCK (VNDirect)"
+    },
+    {
+     "h": 1,
+     "t": "Phát hành trái phiếu doanh nghiệp phục hồi: riêng TCBS tư vấn ~118.700 tỷ trong 9 tháng 2026.",
+     "ng": "TCBS công bố"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 0,
+     "t": "Techcombank sở hữu 79,81%: cổ phiếu tự do chỉ ~20%, GTGD bình quân 20 phiên ~69 tỷ (SSI 373 tỷ).",
+     "ng": "Mekong ASEAN 09/2026 · bảng giá 20/10"
+    },
+    {
+     "h": 0,
+     "t": "Cơ cấu thu nhập thuần 9T/2026: cho vay ký quỹ 45%, nguồn vốn & phân phối TP 29%, IB 23%, môi giới 2%.",
+     "ng": "TCBS công bố"
+    },
+    {
+     "h": -1,
+     "t": "Huy động kỷ lục nửa tỷ USD vốn vay để đón nhu cầu margin (ĐHĐCĐ 2026): tăng trưởng dư nợ tiếp tục dựa vào tiền vay.",
+     "ng": "Báo Pháp luật 04/2026"
+    }
+   ]
+  }
+ ]
+}

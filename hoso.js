@@ -435,7 +435,10 @@
     if (p.gia_dinh && p.gia_dinh.length) h += '<div class="hsR1">' + nhan1('Giả định chính', 'xấu · cơ sở · tốt — làm lại mỗi quý khi có BCTC') + bangGiaDinh(p) + '</div>';
     h += '<div class="hsR3"><div>' + cauLn(p) + '</div><div>' + doNhay(p) + '</div><div>' + theoDoi(p, cx) + '</div></div>';
     if (p.bieu_do && p.bieu_do.length) h += '<div class="hsR1">' + nhan1('Động lực vận hành', 'số liệu doanh nghiệp công bố và báo cáo CTCK') + '<div class="hsR4">' + p.bieu_do.map(function(b){ return bieuDo(b, 1); }).join('') + '</div></div>';
-    h += '<div class="hsR2"><div>' + peLichSu(p) + '</div><div>' + (p.ke_hoach && p.ke_hoach.ds ? keHoach(p.ke_hoach) : '') + '</div></div>';
+    // thieu mot ben (ma moi niem yet chua du 24 thang gia, khong co ke hoach DHDCD) thi ben con lai chiem ca hang
+    var pls = peLichSu(p), khs = p.ke_hoach && p.ke_hoach.ds ? keHoach(p.ke_hoach) : '';
+    if (pls && khs) h += '<div class="hsR2"><div>' + pls + '</div><div>' + khs + '</div></div>';
+    else if (pls || khs) h += '<div class="hsR1">' + (pls || khs) + '</div>';
     return h + '<div class="hsFoot">Nguồn: BCTC hợp nhất ' + esc(p.ma) + ' (VNDirect), công bố của doanh nghiệp' + (ct.length ? '; báo cáo CTCK, chỉ tham khảo: ' + ct.map(function(x){ return esc(x.ctck) + ' ' + ngVn(x.ngay).slice(0, 5); }).join(', ') : '')
       + '; ' + (p.nguon || []).length + ' tài liệu có link ở Phụ lục. Mô hình và định giá do khoanguyeninvest.vn tự dựng; không phải khuyến nghị đầu tư.</div></div>';
   }
@@ -783,7 +786,7 @@
       + '#ptcs .hsFoot{margin-top:22px;padding-top:10px;border-top:1px solid var(--border);font-size:11.5px;color:var(--muted);line-height:1.5}#ptcs .hsDisc{margin-top:16px;font-size:11.5px;color:var(--muted);line-height:1.5}'
       + '#ptcs .hsNg{margin-top:16px}'
       + '@media (max-width:1000px){#ptcs .hsP1{grid-template-columns:1fr}#ptcs .hsEvH{display:none}#ptcs .hsEvR{grid-template-columns:86px minmax(0,1fr);gap:3px 12px}#ptcs .hsEvR .eN,#ptcs .hsEvR .eT,#ptcs .hsEvR .eD{grid-column:2}}'
-      + '#ptcs .hsR1{margin-top:26px}#ptcs .hsR2{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:32px;margin-top:26px}#ptcs .hsPgB>.hsR2:first-child{margin-top:0}'
+      + '#ptcs .hsR1{margin-top:26px}#ptcs .hsR2{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:32px;margin-top:26px}#ptcs .hsR1{margin-top:26px}#ptcs .hsPgB>.hsR2:first-child{margin-top:0}'
       + '#ptcs .hsR3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:26px}#ptcs .hsR4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}#ptcs .hsR2>*,#ptcs .hsR3>*,#ptcs .hsR4>*{min-width:0}#ptcs .hsR3 .hsTnr{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) 40px}#ptcs .hsR3 .hsWfR{grid-template-columns:minmax(0,1.1fr) minmax(0,1.2fr) 96px}'
       + '#ptcs .hsBc.gon{border:0;border-radius:0;padding:0}#ptcs .hsBc.gon .hsBt{font-size:12.5px;margin-bottom:2px}#ptcs .hsBc.gon>.hsN{margin:4px 0 0}'
       + '#ptcs .hsPlB h5{margin:0 0 6px;font-size:13px}#ptcs .hsPlH{font-size:12px;font-weight:800;color:var(--green-dark);letter-spacing:.05em;text-transform:uppercase;margin:20px 0 10px;padding-bottom:5px;border-bottom:2px solid var(--green)}#ptcs .hsPlH small{text-transform:none;letter-spacing:0;font-weight:400;color:var(--muted);margin-left:8px}#ptcs .ptab>.hsPlH:first-child{margin-top:8px}'
