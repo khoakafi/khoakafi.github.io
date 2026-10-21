@@ -1,0 +1,1571 @@
+{
+ "v": 2,
+ "ma": "VIC",
+ "ten": "Tập đoàn Vingroup – Công ty Cổ phần",
+ "nganh": "Đa ngành: bất động sản, xe điện, du lịch, y tế – giáo dục",
+ "ky": "BCTC Q2/2026 (soát xét) · VinFast 6-K Q2/2026, giao xe 9T",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "cp_trieu": 7733.5,
+ "cp_ng": "Vốn điều lệ 77.335 tỷ đ (30/6/2026) sau thưởng 1:1 (GDKHQ 5/12/2025), gồm 27,5 triệu cp ưu đãi chuyển đổi; bảng giá VNDirect tính ~7.632 triệu",
+ "co_tuc": [],
+ "chia": [
+  [
+   "2025-12-05",
+   2.0
+  ]
+ ],
+ "tieu_de": {
+  "t": "Tổng các phần chỉ {gt_so} nghìn đ: giá VIC đang trả trước cho VinFast và mảng chưa có lãi",
+  "dk": "up_duoi:-15",
+  "khac": "Giá VIC đã về gần tổng các phần; rủi ro còn lại là lỗ VinFast và nợ ngoài VHM"
+ },
+ "dong_mo": "Phần VIC nắm ở VHM, VPL, VRE theo giá thị trường chỉ bằng {con_pct} vốn hóa; phần còn lại — VinFast (lỗ 97,2 nghìn tỷ năm 2025), Vinmec, Vinschool, mảng mới — sổ sách âm 64 nghìn tỷ. LN cổ đông 2026E ~17,9 nghìn tỷ nhờ lô lớn VHM, 2027E ~10,3. Tổng các phần trừ nợ: {gt} ({up}); kịch bản tốt cũng chỉ 81,4 nghìn đ.",
+ "luan_diem": [
+  {
+   "so": "{con_pct}",
+   "nhan": "vốn hóa VIC là phần nắm ở VHM, VPL, VRE (giá sàn)",
+   "tieu": "Giá 20/10 trả ~1.140 nghìn tỷ cho phần ngoài VHM, VPL, VRE",
+   "dk": "up_duoi:-15",
+   "t": "Theo giá 20/10, 71,6% VHM (~340 nghìn tỷ), 81,7% VPL (~123) và 18,4% VRE (~10) cộng lại ~473 nghìn tỷ. Phần còn lại — VinFast, Vinmec, Vinschool, BĐS riêng, mảng mới, trừ nợ — được trả ~1.140 nghìn tỷ, gấp hơn 6 lần vốn hóa toàn bộ VinFast trên Nasdaq (6,74 tỷ USD, 3/2026), trong khi sổ sách phần này âm 64 nghìn tỷ (30/6/2026).",
+   "ng": "giá 20/10 · BCTC 30/6 · Robinhood 18/3",
+   "khac": {
+    "so": "{con_pct}",
+    "nhan": "vốn hóa VIC là phần nắm ở VHM, VPL, VRE (giá sàn)",
+    "tieu": "Chênh lệch với tổng các phần đã thu hẹp",
+    "t": "Phần VIC nắm ở VHM (71,6%), VPL (81,7%) và VRE (18,4%) theo giá sàn bằng {con_pct} vốn hóa. Phần còn lại có sổ sách âm 64 nghìn tỷ (30/6/2026) và lỗ 41,0 nghìn tỷ trong 4 quý — giá đã về gần mức mô hình tính."
+   }
+  },
+  {
+   "so": "−41,0",
+   "nhan": "nghìn tỷ: phần ngoài VHM, VPL, VRE lỗ 4 quý đến Q2/2026 (VIC hưởng)",
+   "tieu": "VinFast lấy đi phần lớn lãi Vinhomes",
+   "t": "4 quý đến Q2/2026, VIC hưởng 58,4 nghìn tỷ từ VHM nhưng phần ngoài VHM, VPL, VRE lỗ 41,0 nghìn tỷ — LN cổ đông chỉ giữ 34% phần lãi từ công ty con niêm yết, dù doanh thu tài chính hợp nhất đột biến (33,5 nghìn tỷ Q3/2025, 23,0 nghìn tỷ Q2/2026 — cùng quý bán VFTP). VinFast lỗ ròng 97,2 nghìn tỷ năm 2025; biên gộp Q2/2026 −62,8% dù doanh thu xe +92,7%.",
+   "ng": "BCTC VIC, VHM, VPL, VRE · VinFast 6-K"
+  },
+  {
+   "so": "−23%",
+   "nhan": "LN Vinhomes 2027E so với 2026E (hồ sơ VHM)",
+   "tieu": "Nguồn lãi chính đang ở đỉnh chu kỳ lô lớn",
+   "t": "VIC hưởng ~55,9 nghìn tỷ từ VHM năm 2026E — gấp 3,1 lần LN cổ đông VIC — nhờ bán lô lớn (trên 70% doanh số 6T). Khi lô lớn thưa, LN VHM 2027E lùi về 59,7 nghìn tỷ, phần VIC hưởng giảm 13,1 nghìn tỷ; LN cổ đông VIC 2027E còn ~10,3 nghìn tỷ, P/E ~157 lần theo giá 20/10.",
+   "ng": "hồ sơ VHM 17/10 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Tổng các phần: {up_so} so với giá hiện tại",
+   "t": "71,6% VHM theo P/B 1,5 vốn chủ giữa 2027 (hồ sơ VHM), 81,7% VPL × P/E 25, 18,4% VRE × P/E 10,6 (hồ sơ VRE), phần còn lại 0,5 lần sổ sách trước nợ (lỗ 12 tháng tới ăn bớt); trừ 94,5 nghìn tỷ nợ vay ròng ngoài VHM, VPL. Kịch bản tốt — VHM P/B 2,0, cộng 51% VinFast theo giá Nasdaq — chỉ 81,4 nghìn đ; xấu 18,8.",
+   "ng": "mô hình · hồ sơ VHM · P/E lịch sử VRE"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   11350,
+   17938,
+   10291
+  ],
+  "ln_truoc": 11893,
+  "eps": [
+   1468,
+   2320,
+   1331
+  ],
+  "bv": [
+   19081,
+   22364,
+   23695
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Phần hưởng từ VHM (tỷ)",
+    "v": [
+     30793,
+     55889,
+     42758
+    ]
+   },
+   {
+    "ten": "Phần còn lại (tỷ)",
+    "v": [
+     -21569,
+     -41569,
+     -35000
+    ]
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC (VNDirect); EPS, BVPS theo 7.733,5 triệu cp sau thưởng 1:1 (12/2025); VIC không chia cổ tức tiền mặt. Phần còn lại = VinFast, công ty mẹ, Vinmec, Vinschool, mảng mới"
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông VIC theo phần",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Từ Vinhomes",
+    "mau": "c1",
+    "v": [
+     30793,
+     55889,
+     42758
+    ]
+   },
+   {
+    "ten": "Từ Vinpearl, Vincom Retail",
+    "mau": "c2",
+    "v": [
+     2126,
+     3619,
+     2533
+    ]
+   },
+   {
+    "ten": "VinFast, công ty mẹ & khác",
+    "mau": "c4",
+    "v": [
+     -21569,
+     -41570,
+     -35000
+    ]
+   }
+  ],
+  "nhan": "",
+  "ng": "Phần hưởng = LN cổ đông công ty con × tỷ lệ sở hữu (VHM 73,5% → 71,6%; VPL ~85,5% → 81,7%; VRE 18,4%); phần còn lại = LN cổ đông VIC trừ các phần đó. 2026E–2027E: mô hình, LN VHM theo hồ sơ VHM."
+ },
+ "sotp": {
+  "con": [
+   {
+    "ma": "VHM",
+    "ten": "Vinhomes",
+    "cp_trieu": 8214.8,
+    "so_huu": 0.7158,
+    "ln26": 77238,
+    "ln27": 59734,
+    "gtgd": 481,
+    "mau": "c1"
+   },
+   {
+    "ma": "VPL",
+    "ten": "Vinpearl",
+    "cp_trieu": 1877.5,
+    "so_huu": 0.8168,
+    "ln26": 3003,
+    "ln27": 1734,
+    "gtgd": 55,
+    "mau": "c2"
+   },
+   {
+    "ma": "VRE",
+    "ten": "Vincom Retail",
+    "cp_trieu": 2272.0,
+    "so_huu": 0.1837,
+    "ln26": 6033,
+    "ln27": 6080,
+    "gtgd": 73,
+    "mau": "c3"
+   }
+  ],
+  "conlai": {
+   "ten": "VinFast, Vinmec, Vinschool, mảng mới, trừ nợ",
+   "mau": "c4",
+   "ln27": -35000
+  },
+  "kv_ng": "Sở hữu: VHM 71,58% sau khi chuyển ~20 triệu cp (trước chia) 6–7/2026, VPL 81,68%, VRE 18,37% (MBS 10/2026); phần còn lại dự phóng lỗ — không tính được P/E",
+  "ng": "Số cp: VHM 8.214,8 triệu sau chia 1:1 (8/2026), VPL vốn điều lệ 30/6/2026, VRE 2.272 triệu lưu hành (Vietcap 9/2025)"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo phần",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Vinhomes (hồ sơ VHM của trang)"
+   },
+   {
+    "ten": "LN cổ đông VHM (tỷ)",
+    "v": [
+     41895,
+     77238,
+     59734
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "VIC sở hữu",
+    "s": [
+     "73,5%",
+     "73,5% → 71,6%",
+     "71,6%"
+    ]
+   },
+   {
+    "ten": "Phần VIC hưởng (tỷ)",
+    "v": [
+     30793,
+     55889,
+     42758
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Vinpearl (81,7%), Vincom Retail (18,4%)"
+   },
+   {
+    "ten": "LN Vinpearl (tỷ)",
+    "v": [
+     1102,
+     3003,
+     1734
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN Vincom Retail (tỷ)",
+    "v": [
+     6446,
+     6033,
+     6080
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Phần VIC hưởng (tỷ)",
+    "v": [
+     2126,
+     3619,
+     2533
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "VinFast, công ty mẹ, Vinmec, Vinschool, mảng mới"
+   },
+   {
+    "ten": "VinFast giao xe (nghìn)",
+    "s": [
+     "196,9",
+     "KH ≥300",
+     "—"
+    ]
+   },
+   {
+    "ten": "Phần còn lại, VIC hưởng (tỷ)",
+    "v": [
+     -21569,
+     -41569,
+     -35000
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "LN cổ đông VIC (tỷ)",
+    "v": [
+     11350,
+     17938,
+     10291
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     1468,
+     2320,
+     1331
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "Vốn chủ cổ đông (nghìn tỷ)",
+    "v": [
+     147.6,
+     173.0,
+     183.2
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Nợ vay ròng ngoài VHM, VPL (nghìn tỷ)",
+    "s": [
+     "165,2",
+     "94,5 (30/6)",
+     "—"
+    ]
+   }
+  ],
+  "ghi": "Phần hưởng = LN cổ đông từng công ty × tỷ lệ sở hữu theo quý; phần còn lại = LN cổ đông VIC trừ các phần đó (đã gồm thu nhập khác, lãi bán tài sản). 2026E = 6 tháng thực tế + 6 tháng ước tính."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông VIC 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   17938
+  ],
+  "cuoi": [
+   "2027E",
+   10291
+  ],
+  "buoc": [
+   [
+    "Phần hưởng từ Vinhomes",
+    -13131
+   ],
+   [
+    "Vinpearl, Vincom Retail",
+    -1085
+   ],
+   [
+    "VinFast, công ty mẹ & khác",
+    6569
+   ]
+  ],
+  "y": "Phần hưởng từ VHM giảm 13,1 nghìn tỷ khi lô lớn thưa; lỗ phần còn lại thu hẹp 6,6 nghìn tỷ nhờ VinFast bỏ nhà máy — chưa đủ bù: LN cổ đông 2027E −43%.",
+  "ng": "mô hình · hồ sơ VHM"
+ },
+ "gia_dinh": [
+  {
+   "ten": "LN Vinhomes 2026E · 2027E (nghìn tỷ)",
+   "v": [
+    "68,8 · 38,8",
+    "77,2 · 59,7",
+    "91,9 · 92,1"
+   ],
+   "ly_do": "Hồ sơ VHM (17/10): 6T/2026 48,2 nghìn tỷ, trên 70% doanh số là lô lớn; doanh số 2027 170–340 nghìn tỷ, biên về mức bán lẻ"
+  },
+  {
+   "ten": "P/B Vinhomes (vốn chủ 30/6/2027E)",
+   "v": [
+    "1,0",
+    "1,5",
+    "2,0"
+   ],
+   "ly_do": "VHM từ 2015: thấp 10% 0,99, trung vị 2,34, hiện 1,84; vốn chủ 303,3 · 321,5 · 351,8 nghìn tỷ (hồ sơ VHM)"
+  },
+  {
+   "ten": "Vinpearl 2027E: LN (tỷ) · P/E",
+   "v": [
+    "892 · 20",
+    "1.734 · 25",
+    "2.963 · 35"
+   ],
+   "ly_do": "2025 lãi 1.102 tỷ; 6T/2026 2.180 gồm 1.728 thu nhập khác Q1; kế hoạch 2026 3.000. Niêm yết từ 5/2025, P/E 4 quý hiện ~50 lần"
+  },
+  {
+   "ten": "Vincom Retail 2027E: LN (tỷ) · P/E",
+   "v": [
+    "5.030 · 9",
+    "6.080 · 10,6",
+    "6.590 · 11,9"
+   ],
+   "ly_do": "6T/2026 lãi 3.215 tỷ (+33%); P/E từ 2015: thấp 10% 9,9, thấp 25% 13,7, hiện 7,3 — thấp nhất lịch sử"
+  },
+  {
+   "ten": "Phần còn lại, VIC hưởng: 6T cuối 2026 · 2027 (nghìn tỷ)",
+   "v": [
+    "−28 · −50",
+    "−20 · −35",
+    "−12 · −20"
+   ],
+   "ly_do": "6T cuối 2025: −19,4; 6T/2026: −21,6 dù thu nhập khác ròng 13,3. VinFast lỗ 97,2 nghìn tỷ 2025, bỏ nhà máy (VFTP) từ 7/2026"
+  },
+  {
+   "ten": "Phần còn lại: hệ số trên sổ sách trước nợ (30,4 nghìn tỷ)",
+   "v": [
+    "0,0",
+    "0,5",
+    "4,0"
+   ],
+   "ly_do": "Sổ sách phần VIC −64,1 + nợ ròng 94,5. Xấu: lỗ 12 tháng xóa hết; tốt: cộng 51% VinFast theo giá Nasdaq (~90,7 nghìn tỷ)"
+  },
+  {
+   "ten": "Nợ vay ròng ngoài VHM, VPL (tỷ, mọi kịch bản)",
+   "v": [
+    "94.480",
+    "94.480",
+    "94.480"
+   ],
+   "ly_do": "BCTC 30/6/2026: hợp nhất 242.969 − VHM 147.091 − VPL 1.398; 31/3/2026: 172.948. Gồm công ty mẹ, VinFast, Vinmec, Vinschool"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 3446,
+   "ln27": -20551,
+   "gia": 18.8,
+   "mo_ta": "VHM LN 2027E 38,8 nghìn tỷ, P/B 1,0; VPL P/E 20; VRE P/E 9,0; phần còn lại lỗ 50 nghìn tỷ, sổ sách về 0; trừ nợ ròng ngoài VHM, VPL"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 17938,
+   "ln27": 10291,
+   "gia": 40.5,
+   "mo_ta": "VHM 59,7 nghìn tỷ, P/B 1,5 (hồ sơ VHM); VPL P/E 25; VRE P/E 10,6; phần còn lại lỗ 35 nghìn tỷ, tính nửa sổ sách"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 36845,
+   "ln27": 49577,
+   "gia": 81.4,
+   "mo_ta": "VHM 92,1 nghìn tỷ, P/B 2,0; VPL P/E 35; VRE P/E 11,9; lỗ phần còn lại 20 nghìn tỷ; cộng 51% VinFast theo giá Nasdaq"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo từng phần",
+  "phu": "VHM theo hồ sơ VHM, VPL và VRE theo P/E 2027E, phần còn lại theo sổ sách; trừ nợ vay ròng ngoài VHM, VPL",
+  "ck": 0,
+  "cp": 7733.5,
+  "phan": [
+   {
+    "ten": "71,6% Vinhomes",
+    "mau": "c1",
+    "sh": 0.7158,
+    "x": [
+     303275,
+     321525,
+     351783
+    ],
+    "boi": [
+     1.0,
+     1.5,
+     2.0
+    ],
+    "x_ten": "Vốn chủ VHM 30/6/2027E (hồ sơ VHM)",
+    "boi_ten": "P/B",
+    "gt": [
+     217084,
+     345221,
+     503613
+    ]
+   },
+   {
+    "ten": "81,7% Vinpearl",
+    "mau": "c2",
+    "sh": 0.8168,
+    "x": [
+     892,
+     1734,
+     2963
+    ],
+    "boi": [
+     20,
+     25,
+     35
+    ],
+    "x_ten": "LN 2027E của VPL",
+    "boi_ten": "P/E",
+    "gt": [
+     14572,
+     35408,
+     84706
+    ]
+   },
+   {
+    "ten": "18,4% Vincom Retail",
+    "mau": "c3",
+    "sh": 0.1837,
+    "x": [
+     5030,
+     6080,
+     6590
+    ],
+    "boi": [
+     9.0,
+     10.6,
+     11.9
+    ],
+    "x_ten": "LN 2027E của VRE",
+    "boi_ten": "P/E",
+    "gt": [
+     8316,
+     11839,
+     14406
+    ]
+   },
+   {
+    "ten": "VinFast, Vinmec, Vinschool & mảng mới",
+    "mau": "c4",
+    "x": [
+     30379,
+     30379,
+     30379
+    ],
+    "boi": [
+     0.0,
+     0.5,
+     4.0
+    ],
+    "x_ten": "Sổ sách trước nợ vay, phần VIC (30/6/2026)",
+    "boi_ten": "hệ số",
+    "sh": 1,
+    "gt": [
+     0,
+     15190,
+     121516
+    ]
+   }
+  ],
+  "von": [
+   145492,
+   313178,
+   629761
+  ],
+  "gia": [
+   18.8,
+   40.5,
+   81.4
+  ],
+  "no_rong": 94480,
+  "no_rong_ten": "Trừ nợ vay ròng ngoài VHM, VPL (công ty mẹ, VinFast, mảng khác; 30/6/2026)"
+ },
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   3.72,
+   3.53,
+   3.35,
+   3.46,
+   3.32,
+   3.82,
+   3.79,
+   2.78,
+   2.79,
+   3.05,
+   3.56,
+   3.8,
+   3.96,
+   3.6,
+   3.85,
+   4.28,
+   3.93,
+   4.11,
+   4.24,
+   3.92,
+   4.45,
+   4.25,
+   4.25,
+   4.25,
+   4.25,
+   4.5,
+   4.18,
+   4.09,
+   4.05,
+   4.29,
+   4.47,
+   4.8,
+   5.02,
+   5.73,
+   7.11,
+   7.37,
+   8.2,
+   8.02,
+   9.9,
+   10.65,
+   9.22,
+   10.33,
+   10.23,
+   6.52,
+   6.2,
+   6.13,
+   6.39,
+   5.99,
+   6.53,
+   7.0,
+   7.12,
+   6.98,
+   6.83,
+   6.9,
+   7.27,
+   5.26,
+   5.11,
+   5.07,
+   5.16,
+   5.13,
+   5.12,
+   4.73,
+   3.74,
+   4.13,
+   4.29,
+   3.94,
+   3.87,
+   3.82,
+   3.88,
+   4.52,
+   4.36,
+   4.54,
+   4.17,
+   4.75,
+   5.14,
+   5.71,
+   4.98,
+   5.05,
+   4.54,
+   4.09,
+   3.82,
+   4.16,
+   4.08,
+   3.7,
+   3.77,
+   2.99,
+   3.15,
+   3.11,
+   2.98,
+   2.78,
+   2.42,
+   2.33,
+   2.01,
+   2.03,
+   2.43,
+   1.88,
+   1.99,
+   1.86,
+   1.94,
+   1.84,
+   1.81,
+   1.77,
+   1.92,
+   2.13,
+   1.6,
+   1.39,
+   1.31,
+   1.4,
+   1.34,
+   1.44,
+   1.52,
+   1.42,
+   1.3,
+   1.23,
+   1.26,
+   1.32,
+   1.26,
+   1.24,
+   1.17,
+   1.17,
+   1.16,
+   1.16,
+   1.64,
+   1.92,
+   2.64,
+   2.57,
+   2.83,
+   3.45,
+   4.7,
+   5.13,
+   6.93,
+   9.03,
+   7.48,
+   9.01,
+   7.07,
+   11.22,
+   11.0,
+   11.46,
+   11.15,
+   10.67,
+   10.31,
+   9.86
+  ],
+  "p10": 1.42,
+  "p25": 2.67,
+  "tv": 4.09,
+  "thap": [
+   "2025-01",
+   1.16
+  ],
+  "nay": [
+   "2026-10",
+   9.86
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Không dùng bội số của chính VIC (P/B hiện 9,9, gấp 2,4 lần trung vị từ 2015 4,09): mỗi phần theo lịch sử của chính nó — VHM P/B 1,0 · 1,5 · 2,0 (thấp 10% 0,99, trung vị 2,34), VRE P/E 9,0 · 10,6 · 11,9 theo hồ sơ VRE (lịch sử VRE: thấp 10% 9,9, thấp 25% 13,7)."
+ },
+ "nhay": [
+  [
+   "P/B Vinhomes ±0,5 lần",
+   null,
+   14.9
+  ],
+  [
+   "Phần còn lại ±0,5 lần sổ sách",
+   null,
+   2.0
+  ],
+  [
+   "Nợ vay ròng ngoài VHM, VPL ±10.000 tỷ",
+   null,
+   1.3
+  ],
+  [
+   "P/E Vinpearl ±5 lần",
+   null,
+   0.9
+  ],
+  [
+   "P/E Vincom Retail ±3 lần",
+   null,
+   0.4
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -7900,
+    -1384,
+    6896
+   ],
+   "ck": 640
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -4643,
+    3335,
+    13961
+   ],
+   "ck": 4672
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    3446,
+    17938,
+    36845
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "28–30/10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Mô hình: LN cổ đông Q3 −1.400 tỷ (cùng kỳ 640): VIC hưởng ~8,3 nghìn tỷ từ VHM, phần còn lại lỗ ~10 nghìn tỷ/quý.",
+   "tac": [
+    "≈ −1.400 tỷ",
+    "cơ sở; dưới −7.900 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "thu nhập khác, lỗ VinFast"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "hai",
+   "tieu": "VinFast: mục tiêu 300.000 xe",
+   "ct": "6T giao 128.662 xe (+78%); 9T riêng Việt Nam 177.697 xe. Biên gộp Q2/2026 −62,8%: giao thêm xe chưa làm giảm lỗ.",
+   "tac": "",
+   "theo_doi": "xe giao, biên gộp VinFast"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "VinFast nhẹ tài sản sau bán VFTP",
+   "ct": "Cuối 6/2026 VinFast bán VFTP (nhà máy) ~13,3 nghìn tỷ cho Tương Lai, Ngọc Quý, ông Vượng (công bố 5/2026). Nợ vay ròng ngoài VHM, VPL giảm 78 nghìn tỷ trong Q2.",
+   "tac": [
+    "+15 nghìn tỷ LN",
+    "2027E, nếu lỗ phần còn lại chỉ 20 nghìn tỷ (tốt)"
+   ],
+   "theo_doi": "lỗ gộp, chi phí VinFast"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Vinhomes: lô lớn mới, mở bán Cam Lâm",
+   "ct": "Hồ sơ VHM: chuyển nhượng cổ phần Global Sportia, mở bán Cam Lâm, Phước Vĩnh Tây có thể giữ LN 2027E ~92 nghìn tỷ thay vì 59,7.",
+   "tac": [
+    "+20,5 nghìn đ/cp",
+    "VHM theo kịch bản tốt (P/B 2,0)"
+   ],
+   "theo_doi": "doanh số, lô lớn VHM"
+  },
+  {
+   "khi": "11/2026",
+   "loai": "hai",
+   "tieu": "Trái phiếu đổi sang cổ phiếu VHM",
+   "ct": "250 triệu USD, trái chủ có quyền bán lại 11/2026 (Vietcap 9/2025). 6/2026 VIC chuyển 15,2 triệu cp VHM (trước chia) cho BNP Paribas, HSBC; 7/2026 đăng ký chuyển thêm 4,8 triệu: sở hữu còn 71,58%.",
+   "tac": [
+    "−0,6 nghìn đ/cp",
+    "mỗi 1 điểm % sở hữu VHM"
+   ],
+   "theo_doi": "sở hữu VHM"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Giá đã vượt xa tổng các phần",
+   "ct": "P/B 9,5 lần vốn chủ 30/6 (trung vị từ 2015: 4,1); phần ngoài VHM, VPL, VRE được trả ~1.140 nghìn tỷ theo giá 20/10. Cổ phiếu tự do chuyển nhượng 29,5% (MAS 11/2025).",
+   "tac": [
+    "{up_so}",
+    "nếu giá về tổng các phần (cơ sở)"
+   ],
+   "theo_doi": "chênh lệch giá với tổng các phần"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lỗ VinFast, phụ thuộc hỗ trợ",
+   "ct": "VinFast lỗ ròng 97,2 nghìn tỷ 2025; ông Vượng đã giải ngân 1,1/2 tỷ USD cam kết, VinFast vay thêm 413 triệu USD từ Vingroup. Thu nhập khác ròng 6T/2026 của VIC 13,3 nghìn tỷ.",
+   "tac": [
+    "−97%",
+    "LN 2027E cơ sở, mỗi 10 nghìn tỷ lỗ thêm"
+   ],
+   "theo_doi": "lỗ VinFast, hỗ trợ của Chủ tịch"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Vinhomes qua đỉnh lô lớn",
+   "ct": "Hồ sơ VHM: LN 2027E 59,7 nghìn tỷ (−23%), xấu 38,8. VHM là nguồn lãi duy nhất đủ lớn để bù VinFast.",
+   "tac": [
+    "−16,6 nghìn đ/cp",
+    "VHM theo kịch bản xấu (P/B 1,0)"
+   ],
+   "theo_doi": "doanh số, biên gộp VHM"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Nợ vay cho mảng mới",
+   "ct": "Nợ vay hợp nhất 355,8 nghìn tỷ (30/6/2026, +6% từ đầu năm); ĐHĐCĐ 2026 đẩy mạnh hạ tầng, năng lượng xanh, văn hóa — vốn lớn, hoàn vốn dài.",
+   "tac": [
+    "−1,3 nghìn đ/cp",
+    "mỗi 10.000 tỷ nợ vay ròng thêm"
+   ],
+   "theo_doi": "nợ vay, dòng tiền đầu tư"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "LN cổ đông VIC theo quý: từ công ty con niêm yết và phần còn lại",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Từ VHM",
+     "v": [
+      1976,
+      5518,
+      3075,
+      20223,
+      18781,
+      16348
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Từ VPL, VRE",
+     "v": [
+      294,
+      371,
+      398,
+      1064,
+      1584,
+      844
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Phần còn lại",
+     "v": [
+      4709,
+      -6830,
+      -2833,
+      -16615,
+      -13089,
+      -8480
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "4 quý đến Q2/2026: VIC hưởng 62,3 nghìn tỷ từ công ty con niêm yết, phần còn lại lỗ 41,0 — LN cổ đông chỉ giữ 34%.",
+   "ng": "BCTC VIC, VHM, VPL, VRE (VNDirect); sở hữu VHM 73,5% → 72,1% (Q2/2026), VPL ~85,5% → 81,7%, VRE 18,4%"
+  },
+  {
+   "ten": "Vốn hóa VIC và giá trị phần nắm ở VHM, VPL, VRE",
+   "dv": "nghìn tỷ",
+   "kieu": "duong",
+   "nhan": [
+    "6/25",
+    "9/25",
+    "12/25",
+    "3/26",
+    "6/26",
+    "9/26",
+    "20/10"
+   ],
+   "ss": [
+    {
+     "ten": "Vốn hóa VIC",
+     "v": [
+      371,
+      679,
+      1312,
+      1044,
+      1701,
+      1762,
+      1616
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Phần VHM, VPL, VRE theo giá",
+     "v": [
+      387,
+      447,
+      533,
+      450,
+      597,
+      534,
+      473
+     ],
+     "mau": "c3",
+     "net": false
+    }
+   ],
+   "so_le": 0,
+   "y": "Từ 6/2025 vốn hóa VIC tăng 4,4 lần, phần nắm ở công ty con niêm yết chỉ +22%; giữa 2025 VIC còn giao dịch dưới tổng phần nắm ở VHM, VPL, VRE.",
+   "ng": "Giá cuối quý (co-ban-data), 20/10 (bảng giá); số cp và sở hữu từng thời điểm, VPL trước 6/2026 ước ~85,5%"
+  },
+  {
+   "ten": "Nợ vay ròng: hợp nhất, Vinhomes và phần ngoài VHM, VPL",
+   "dv": "nghìn tỷ",
+   "kieu": "duong",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Hợp nhất",
+     "v": [
+      207.8,
+      194.6,
+      241.9,
+      252.0,
+      283.9,
+      243.0
+     ],
+     "mau": "c4",
+     "net": false
+    },
+    {
+     "ten": "Vinhomes",
+     "v": [
+      63.1,
+      38.3,
+      90.6,
+      78.9,
+      115.9,
+      147.1
+     ],
+     "mau": "c3",
+     "net": false
+    },
+    {
+     "ten": "Ngoài VHM, VPL",
+     "v": [
+      136.3,
+      147.6,
+      145.7,
+      165.2,
+      172.9,
+      94.5
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Nợ ròng ngoài VHM, VPL giảm từ 172,9 xuống 94,5 nghìn tỷ trong Q2/2026 (cùng quý bán VFTP); nợ ròng VHM tăng từ 38,3 lên 147,1 nghìn tỷ trong 4 quý.",
+   "ng": "BCTC VIC, VHM, VPL (VNDirect): vay ngắn + dài hạn − tiền − đầu tư ngắn hạn"
+  },
+  {
+   "ten": "VinFast: xe điện giao theo nửa năm",
+   "dv": "nghìn xe",
+   "kieu": "cot",
+   "nhan": [
+    "6T/25",
+    "6T cuối 25",
+    "6T/26"
+   ],
+   "ss": [
+    {
+     "ten": "Xe giao",
+     "v": [
+      72.3,
+      124.6,
+      128.7
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 1,
+   "y": "2025 giao 196.919 xe (+102%), 6T/2026 128.662 (+78%). Mục tiêu 2026 ≥300.000 — 6T cuối cần ~171.000; lỗ ròng 2025 97,2 nghìn tỷ trên doanh thu 90,4.",
+   "ng": "VinFast 6-K, Technode 3/2026; 6T/2025 suy từ mức tăng 78%"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu hợp nhất (KH ~485.000)",
+    "kh": 485000,
+    "th": 221920,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 22/4 · BCTC soát xét"
+   },
+   {
+    "ten": "LNST hợp nhất (KH ~35.000)",
+    "kh": 35000,
+    "th": 20905,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 22/4 · BCTC soát xét"
+   },
+   {
+    "ten": "VinFast giao xe (KH ≥300.000)",
+    "kh": 300000,
+    "th": 128662,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "xe",
+    "ng": "ĐHĐCĐ 22/4 · VinFast 6-K"
+   },
+   {
+    "ten": "LNST Vinhomes (KH 60.000)",
+    "kh": 60000,
+    "th": 52038,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "hồ sơ VHM · BCTC VHM"
+   },
+   {
+    "ten": "LNST Vinpearl (KH 3.000)",
+    "kh": 3000,
+    "th": 2180,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "MBS 08/10 · BCTC VPL"
+   }
+  ],
+  "y": "LNST 6T đạt 60% kế hoạch, nhờ VHM (87% kế hoạch riêng). Mô hình cơ sở: LN cổ đông cả năm ~17,9 nghìn tỷ — 6T cuối chỉ ~2,0 khi lô lớn VHM chậm lại và VinFast còn lỗ.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2025-11-17",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "ghi chép Investor Day",
+   "y": "Ghi chép Investor Day 11/2025: kế hoạch 5 năm, VinFast công suất ~600.000 xe/năm, hướng tới hòa vốn; tỷ lệ nợ vay đạt đỉnh 2025–2026. Dự phóng trong báo cáo là đồng thuận Bloomberg (LN 2026 12.729 tỷ).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VIC/tap_doan_vingroup_vic_vn_khong_khuyen_nghi_cap_nhap_thong_tin_tu_hoi_nghi_nha_dau_tu_vingroup_2025.pdf"
+  },
+  {
+   "ctck": "Vietcap",
+   "ngay": "2025-09-05",
+   "kn": "TRUNG LẬP",
+   "tp": 127900,
+   "ln26": 13327,
+   "ln27": 16839,
+   "pp": "SOTP (RNAV VHM, DCF VPL, VinFast theo sổ sách)",
+   "y": "Trước thưởng 1:1 (trang tự quy đổi). Mảng công nghiệp tính theo giá trị tài sản 211 nghìn tỷ × 51%; trừ nợ vay ròng bình quân 2025–26 ngoài VHM 60 nghìn tỷ. Giá khi đó 128.300 (trước thưởng).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VIC/Loi_nhuan_mang_bat_ong_san_tich_cuc_nguon_von_ho_tro_manh_me_tu_Chu_tich_trong_nua_cuoi_nam_2025.pdf"
+  }
+ ],
+ "ctck_chu": "Chưa có CTCK theo dõi trong 8 tháng; mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành. Hai báo cáo cũ (9 và 11/2025) chỉ dùng cho mô tả doanh nghiệp; giá mục tiêu Vietcap ra trước đợt thưởng 1:1.",
+ "nguon": [
+  {
+   "ten": "Mekong ASEAN — ĐHĐCĐ Vingroup 2026: kế hoạch, ba lĩnh vực mới",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/dhdcd-vingroup-ke-hoach-doanh-thu-gan-nua-trieu-ty-dong-day-manh-3-linh-vuc-54343.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Vingroup điều chỉnh mục tiêu doanh thu, lợi nhuận",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/vingroup-die-u-chi-nh-muc-tieu-doanh-thu-len-gan-nua-trieu-ty-dong-54241.html"
+  },
+  {
+   "ten": "Doanh nhân — KQKD bán niên 2026 sau soát xét",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vingroup-vic-bao-lai-ban-nien-hon-20-900-ty-dong-sau-soat-xet-von-hoa-thi-truong-lap-dinh-lich-su.html"
+  },
+  {
+   "ten": "Doanh nhân — KQKD Quý I/2026",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vingroup-vic-loi-nhuan-quy-i-2026-tang-150-doanh-thu-vuot-104-000-ty-dong.html"
+  },
+  {
+   "ten": "VietnamFinance — thưởng cổ phiếu 1:1, GDKHQ 5/12/2025",
+   "ngay": "12/2025",
+   "link": "https://vietnamfinance.vn/bo-ba-vic--vhm--vpl-thang-hoa-trong-ngay-chot-thuong-co-phieu-vic-ty-le-11-d136798.html"
+  },
+  {
+   "ten": "Doanh nhân — Vingroup chốt quyền thưởng 1:1",
+   "ngay": "12/2025",
+   "link": "https://doanhnhan.baophapluat.vn/vingroup-vic-chot-quyen-nhan-doi-luong-co-phieu-tai-san-ty-phu-pham-nhat-vuong-thang-hang-toan-cau-89467.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — Vingroup chuyển 15,2 triệu cp VHM, sở hữu còn 71,7%",
+   "ngay": "06/2026",
+   "link": "https://nhadautu.vn/vingroup-hoan-tat-chuyen-quyen-so-huu-hon-152-trieu-co-phieu-vhm-d105928.html"
+  },
+  {
+   "ten": "Vietnam News — VinFast bán đơn vị sản xuất VFTP",
+   "ngay": "05/2026",
+   "link": "https://vietnamnews.vn/economy/1781285/vinfast-to-sell-vietnamese-manufacturing-unit-in-530-million-restructuring-move.html"
+  },
+  {
+   "ten": "Technode — điều khoản bán VFTP, trả nợ Vingroup và VIG",
+   "ngay": "13/05/2026",
+   "link": "https://technode.global/2026/05/13/vietnams-ev-maker-vinfast-to-sell-production-lines-allocate-530m-gain-to-pay-400m-debt/"
+  },
+  {
+   "ten": "Technode — VinFast lỗ ròng năm 2025",
+   "ngay": "17/03/2026",
+   "link": "https://technode.global/2026/03/17/vietnams-ev-manufacturer-vinfast-reports-3-9b-net-loss-in-2025/"
+  },
+  {
+   "ten": "VinFast 6-K — KQKD Q2/2026 (doanh thu xe, lỗ gộp)",
+   "ngay": "2026",
+   "link": "https://www.sec.gov/Archives/edgar/data/0001913510/000118518526004821/vfsex99-1.htm"
+  },
+  {
+   "ten": "VinFast 6-K — xe giao 9 tháng tại Việt Nam",
+   "ngay": "10/2026",
+   "link": "https://www.sec.gov/Archives/edgar/data/0001913510/000118518526004691/vfs6k101126.htm"
+  },
+  {
+   "ten": "Doanh nhân — VinFast Quý I/2026",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/ban-giao-gan-60-000-o-to-dien-doanh-thu-vinfast-vuot-moc-23-100-ty-dong-trong-quy-i-2026.html"
+  },
+  {
+   "ten": "Robinhood — vốn hóa VFS (18/3/2026)",
+   "ngay": "03/2026",
+   "link": "https://robinhood.com/us/en/stocks/VFS/"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — tái cấu trúc VinFast 11/2024 (sở hữu 61,06%)",
+   "ngay": "11/2024",
+   "link": "https://thitruongtaichinhtiente.vn/print/64101.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Vinpearl nâng kế hoạch lợi nhuận 2026",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/vinpearl-bo-sung-11-nga-nh-nghe-moi-du-kien-lai-1500-ty-dong-nam-2026-53641.html"
+  },
+  {
+   "ten": "MBS — VPL, gặp nhà đầu tư 10/2026 (sở hữu 81,68%)",
+   "ngay": "08/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VPL/20261008_vpl_bcpt_bao_cao_gap_go_nha_dau_tu_thang_10_2026.pdf"
+  },
+  {
+   "ten": "MBS — VRE, gặp nhà đầu tư 10/2026 (sở hữu 18,37%)",
+   "ngay": "06/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VRE/20261006_vre_bcpt_bao_cao_gap_go_nha_dau_tu_thang_10_2026.pdf"
+  },
+  {
+   "ten": "Vietcap — VHM 02/06/2026 (VIC sở hữu 72,07%)",
+   "ngay": "02/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/Hoat_ong_ban_lo_lon_se_la_ong_luc_tang_truong_cua_nam_2026.pdf"
+  },
+  {
+   "ten": "Vietcap — VIC, VHM, VRE cập nhật",
+   "ngay": "05/09/2025",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VIC/Loi_nhuan_mang_bat_ong_san_tich_cuc_nguon_von_ho_tro_manh_me_tu_Chu_tich_trong_nua_cuoi_nam_2025.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Investor Day Vingroup 2025",
+   "ngay": "17/11/2025",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VIC/tap_doan_vingroup_vic_vn_khong_khuyen_nghi_cap_nhap_thong_tin_tu_hoi_nghi_nha_dau_tu_vingroup_2025.pdf"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Mục tiêu tăng trưởng hai chữ số, đô thị hóa 50% vào 2030; đẩy đầu tư hạ tầng giao thông, năng lượng — nền cho đô thị và du lịch của hệ sinh thái.",
+     "ng": "MAS 17/11/2025"
+    },
+    {
+     "h": -1,
+     "t": "Nợ vay USD chưa phòng ngừa 20,4% tổng nợ (6/2025); trái phiếu trong nước của VIC, VinFast lãi 12,5–15%/năm.",
+     "ng": "Vietcap 05/09/2025"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "VinFast chiếm 33% sản lượng xe du lịch Việt Nam 7T/2025; chủ trương chuyển đổi xanh (Chỉ thị 20/CT-TTg) mở đường cho ưu đãi xe điện.",
+     "ng": "Vietcap 05/09/2025"
+    },
+    {
+     "h": 0,
+     "t": "Bất động sản: bán lô lớn chiếm trên 70% doanh số VHM 6T/2026 — lãi kỷ lục nhưng khó lặp lại.",
+     "ng": "hồ sơ VHM"
+    },
+    {
+     "h": 1,
+     "t": "Du lịch: mục tiêu 50 triệu lượt khách quốc tế năm 2030; khách nội địa chiếm 70–80% lượt khách VinWonders.",
+     "ng": "MAS 17/11/2025 · MBS 08/10/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": -1,
+     "t": "Phần ngoài VHM, VPL, VRE có sổ sách âm ~64 nghìn tỷ (30/6/2026, phần VIC) và lỗ 41,0 nghìn tỷ trong 4 quý.",
+     "ng": "BCTC · mô hình"
+    },
+    {
+     "h": 0,
+     "t": "ĐHĐCĐ 22/4/2026 bổ sung trọng tâm hạ tầng, năng lượng xanh, văn hóa; kế hoạch doanh thu ~485.000 tỷ, LNST ~35.000 tỷ.",
+     "ng": "Mekong ASEAN"
+    },
+    {
+     "h": 0,
+     "t": "VinEnergo (VIC 19%, không hợp nhất) hướng tới 20 GW điện gió, mặt trời đến 2030; VinMetal (98%) cấp thép cho VHM, VinFast.",
+     "ng": "MAS 17/11/2025"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Vinhomes (VHM) — bất động sản nhà ở",
+   "phu": "VIC sở hữu 71,58% · có hồ sơ riêng trên trang",
+   "so": [
+    [
+     "LN cổ đông 6T/2026",
+     "48.235 tỷ",
+     "+373%"
+    ],
+    [
+     "Phần VIC hưởng 2026E",
+     "55,9 nghìn tỷ",
+     "cơ sở"
+    ],
+    [
+     "LN 2027E",
+     "59,7 nghìn tỷ",
+     "−23%"
+    ],
+    [
+     "Giá trị cơ sở",
+     "58,7 nghìn đ",
+     "hồ sơ VHM"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Trên 70% doanh số 6T/2026 là bán lô lớn (Green Paradise, Saigon Park, Global Gate); LNST 6T đã bằng 87% kế hoạch 60 nghìn tỷ.",
+     "ng": "hồ sơ VHM"
+    },
+    {
+     "t": "Một số dự án pháp nhân VIC (Royal Island, Wonder City, Quang Hanh) chuyển lợi ích kinh tế cho VHM qua hợp đồng hợp tác kinh doanh.",
+     "ng": "Vietcap 05/09/2025"
+    }
+   ]
+  },
+  {
+   "ten": "Vinpearl (VPL) — nghỉ dưỡng, vui chơi giải trí",
+   "phu": "VIC sở hữu 81,68% · niêm yết HOSE từ 5/2025",
+   "so": [
+    [
+     "Doanh thu 6T/2026",
+     "6.795 tỷ",
+     "+15%"
+    ],
+    [
+     "Biên gộp 6T",
+     "34,2%",
+     "6T/2025: 26,8%"
+    ],
+    [
+     "LNST 6T",
+     "2.180 tỷ",
+     "73% KH 3.000"
+    ],
+    [
+     "Thu nhập khác Q1",
+     "1.728 tỷ",
+     "một lần"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Khách nội địa 70–80% lượt khách VinWonders; tỷ lệ lấp đầy 6T +11 điểm %. Cụm mới Mỹ Lâm, Cần Giờ, Hạ Long; dưỡng lão Vin New Horizon từ Q4/2026.",
+     "ng": "MBS 08/10/2026"
+    },
+    {
+     "t": "Kế hoạch lãi 2026 nâng từ 1.500 lên 3.000 tỷ; 6T đã 73%, chưa điều chỉnh tiếp.",
+     "ng": "Mekong ASEAN · MBS 08/10/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Vincom Retail (VRE) — trung tâm thương mại",
+   "phu": "VIC sở hữu 18,37% (liên kết) · CTCP Sado 40,5%",
+   "so": [
+    [
+     "LN 6T/2026",
+     "3.215 tỷ",
+     "+33%"
+    ],
+    [
+     "Doanh thu 6T",
+     "4.667 tỷ",
+     "+9%"
+    ],
+    [
+     "P/E 4 quý",
+     "7,3",
+     "thấp nhất từ 2015"
+    ],
+    [
+     "Phần VIC theo giá",
+     "9,7 nghìn tỷ",
+     "20/10"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Doanh thu khách thuê +20–25%; đặt cọc ~10.000 tỷ quỹ đất shophouse, mở bán từ nửa sau 2027; thêm 600.000–700.000 m² sàn trong 5 năm.",
+     "ng": "MBS 06/10/2026"
+    }
+   ]
+  },
+  {
+   "ten": "VinFast — xe điện",
+   "phu": "Niêm yết Nasdaq (VFS) · VIC hưởng ~51% (Vietcap 9/2025) · bán nhà máy VFTP 6/2026",
+   "so": [
+    [
+     "Xe giao 2025",
+     "196.919",
+     "+102%"
+    ],
+    [
+     "Lỗ ròng 2025 (IFRS)",
+     "97,2 nghìn tỷ",
+     "doanh thu 90,4"
+    ],
+    [
+     "Xe giao 6T/2026",
+     "128.662",
+     "+78%"
+    ],
+    [
+     "Biên gộp Q2/2026",
+     "−62,8%",
+     "doanh thu xe +92,7%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Cuối 6/2026 bán VFTP (sản xuất tại Việt Nam) ~13,3 nghìn tỷ cho Tương Lai (49%), Ngọc Quý (46,5%), ông Vượng (4,4%); ~405 triệu USD trả khoản nợ với Vingroup, VIG.",
+     "ng": "Vietnam News · Technode 05/2026"
+    },
+    {
+     "t": "VinFast giữ nghiên cứu phát triển, thương hiệu, bán hàng, hậu mãi; ông Vượng cam kết tài trợ 2 tỷ USD, đã giải ngân 1,1 tỷ.",
+     "ng": "Technode 03–05/2026"
+    },
+    {
+     "t": "Tỷ lệ lợi ích của VIC: ~51% theo Vietcap (9/2025); đợt tái cấu trúc 11/2024 ghi 61,06%.",
+     "ng": "Vietcap · TTTC-TT"
+    }
+   ]
+  }
+ ]
+}

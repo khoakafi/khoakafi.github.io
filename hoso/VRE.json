@@ -1,0 +1,1452 @@
+{
+ "v": 2,
+ "ma": "VRE",
+ "ten": "CTCP Vincom Retail",
+ "nganh": "Bất động sản bán lẻ cho thuê",
+ "ky": "BCTC Q2/2026 · vận hành 6T/2026",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 2272.3,
+ "cp_ng": "Vốn điều lệ 23.288 tỷ (2.328,8 triệu cp) trừ ~56,5 triệu cổ phiếu quỹ = 2.272,3 triệu cp lưu hành (BSC; cổ tức 2025: 2.272 tỷ cho 1.000 đ/cp)",
+ "co_tuc": [
+  [
+   "2026-06-30",
+   1000,
+   "cổ tức tiền mặt 2025 (10%), ĐKCC 01/07, trả 22/07/2026"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Rẻ vì 25 nghìn tỷ tiền cọc ở Vingroup bị chiết khấu, trong khi chuỗi Vincom tăng tốc lại",
+  "dk": "up_tren:10",
+  "khac": "25 nghìn tỷ tiền cọc ở Vingroup quyết định giá trị; chuỗi Vincom đang tăng tốc lại"
+ },
+ "dong_mo": "Giá trị cơ sở {gt} ({up}): chuỗi TTTM 11 lần LN cho thuê 2027E, tiền cọc tại bên liên quan 0,9 lần sổ sách, cộng tiền mặt; xấu 20,0 (cọc 0,6 lần, P/E 9), tốt 34,5; cán cân lên/xuống {rr} lần. LN cổ đông 2026E ~6,0 nghìn tỷ (cốt lõi +19%), 2027E chỉ +1% vì lãi tiền cọc đi ngang.",
+ "luan_diem": [
+  {
+   "so": "70%",
+   "nhan": "phần LNTT tăng thêm 2019–2025 từ tài chính",
+   "tieu": "Lợi nhuận tăng nhờ lãi tiền cọc, không nhờ TTTM",
+   "t": "LNTT 2025 trừ lãi thoái vốn VCC Nguyễn Chí Thanh (~1,9 nghìn tỷ) cao hơn 2019 2,6 nghìn tỷ; 70% đến từ tài chính ròng (−37 tỷ → 1,8 nghìn tỷ), LN HĐKD cho thuê chỉ +9% dù diện tích sàn +22%. 6T/2026 thu nhập tài chính 1.680 tỷ (+29%) bằng 42% LNTT — phần lớn là lãi trên tiền cọc tại các công ty Vingroup để giữ quỹ TTTM, shophouse trong dự án Vinhomes.",
+   "ng": "BCTC 2019–Q2/2026 · Vietcap 02/06 · MAS 19/06"
+  },
+  {
+   "so": "+16%",
+   "nhan": "LN HĐKD cốt lõi 6T/2026",
+   "tieu": "Chuỗi TTTM tăng tốc sau sáu năm đi ngang",
+   "t": "Doanh thu cho thuê 6T/2026 +9,4% (2024: +1%, 2025: +7%), lấp đầy 88,6% (+2,3 điểm), lượt khách +11,6%; biên HĐKD 53,0% (+2,9 điểm). Doanh thu trên m² đã thuê 2025 (5,0 triệu đ) vẫn ngang 2019 (5,0). 80% doanh thu là hợp đồng giá cố định điều chỉnh theo CPI; cơ sở: DT cho thuê 2027E +9%, LN HĐKD +8%.",
+   "ng": "BCTC · VRE 29/07 · MBS 06/10 · Vietcap 02/06 · mô hình"
+  },
+  {
+   "so": "52%",
+   "nhan": "vốn chủ là tiền cọc tại bên liên quan",
+   "tieu": "Lợi suất và rủi ro nằm cùng một chỗ",
+   "t": "Tiền cọc cho bên liên quan 25,5 nghìn tỷ (30/6/2026), từ 18,7 nghìn tỷ một năm trước; thu nhập tài chính quy năm ≈ 13% số dư. Cọc giữ ~737.000 m² sàn cho 5 năm tới và ~10 nghìn tỷ shophouse hoãn mở bán tới 6T cuối 2027. Khi TTTM bàn giao, lãi cọc dừng, thay bằng tiền thuê của TTTM mới cần thời gian lấp đầy; trang tính cọc 0,9 lần sổ sách (xấu 0,6).",
+   "ng": "BCTC Q2/2026 (báo chí 29/07) · ACBS 27/08/2025 · MBS 06/10"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Chuỗi TTTM 11 lần LN: {up_so} so với giá hiện tại",
+   "t": "Giá trị = chuỗi TTTM 11 lần LN cho thuê 2027E (3,4 nghìn tỷ, đã trừ lãi vay, không gồm thu nhập tài chính) + cọc 0,9 lần sổ sách + tiền mặt sau cổ tức, tương đương P/E 10,6 lần LN 2027E. Ở giá 20/10, trừ cọc theo sổ sách và tiền mặt, thị trường trả ~24 nghìn tỷ cho chuỗi TTTM — 7,0 lần LN cho thuê 2027E, dưới giá trị còn lại của BĐS đầu tư trên sổ (27,2 nghìn tỷ).",
+   "ng": "mô hình · BCTC · MBS 06/10 (BĐS đầu tư cuối 2025)"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   6446,
+   6033,
+   6080
+  ],
+  "ln_truoc": 4096,
+  "eps": [
+   2837,
+   2655,
+   2676
+  ],
+  "bv": [
+   21286,
+   22941,
+   24617
+  ],
+  "co_tuc_nam": 1000,
+  "them": [
+   {
+    "ten": "LN cốt lõi (trừ khoản một lần)",
+    "v": [
+     4931,
+     5885,
+     6080
+    ],
+    "d": 0
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     14.3,
+     12.0,
+     11.3
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN, vốn chủ 2024–2025: BCTC; EPS, BVPS theo 2.272,3 triệu cp lưu hành. Một lần: lãi thoái vốn VCC Nguyễn Chí Thanh 2025, lãi bán BĐS đầu tư Q1/2026. Cổ tức 1.000 đ là đợt 2025 (trả 22/07/2026)."
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Cho thuê TTTM",
+    "mau": "c1",
+    "v": [
+     2657,
+     3180,
+     3440
+    ]
+   },
+   {
+    "ten": "Lãi tiền cọc, tiền gửi",
+    "mau": "c2",
+    "v": [
+     2274,
+     2705,
+     2640
+    ]
+   },
+   {
+    "ten": "Một lần",
+    "mau": "c4",
+    "v": [
+     1515,
+     148,
+     0
+    ]
+   }
+  ],
+  "nhan": "Cho thuê TTTM",
+  "ng": "Cho thuê = (LN HĐKD + thu nhập khác − chi phí tài chính) sau thuế; lãi tiền cọc, tiền gửi = thu nhập tài chính sau thuế. 2025A: BCTC; còn lại: mô hình."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với bất động sản niêm yết",
+  "phu": "giá hôm nay, vốn chủ 30/6/2026",
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 20/10)",
+  "nhom": "11 mã BĐS vốn hóa lớn nhất cùng ngành",
+  "kv": [
+   [
+    "VIC",
+    9.33
+   ],
+   [
+    "VHM",
+    1.88
+   ],
+   [
+    "BCM",
+    1.85
+   ],
+   [
+    "NVL",
+    0.71
+   ],
+   [
+    "KBC",
+    0.94
+   ],
+   [
+    "VGC",
+    2.36
+   ],
+   [
+    "VPI",
+    3.27
+   ],
+   [
+    "KDH",
+    0.94
+   ],
+   [
+    "SJS",
+    4.22
+   ],
+   [
+    "IDC",
+    2.09
+   ],
+   [
+    "DXG",
+    0.91
+   ]
+  ],
+  "tv": 1.88,
+  "moi_cp": 21701,
+  "max": 4,
+  "y": "ROE 4 quý 15% (11% nếu trừ khoản một lần), trên trung vị nhóm 9,5%, nhưng P/B thấp hơn: 52% vốn chủ là tiền cọc tại bên liên quan, phần thị trường đang chiết khấu.",
+  "ng": "BCTC VNDirect 4 quý gần nhất, giá 20/10/2026; VRE: vốn chủ 30/6/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: cho thuê, tài chính, lợi nhuận",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Chuỗi TTTM (tỷ đồng)"
+   },
+   {
+    "ten": "Diện tích sàn cuối kỳ (nghìn m²)",
+    "s": [
+     "1.914",
+     "~1.939",
+     "~2.039"
+    ]
+   },
+   {
+    "ten": "Tỷ lệ lấp đầy",
+    "s": [
+     "87% (TB)",
+     "88,6% (30/6)",
+     "89–90%"
+    ]
+   },
+   {
+    "ten": "Doanh thu cho thuê",
+    "v": [
+     8400,
+     9192,
+     10019
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên LN HĐKD / DT cho thuê (%)",
+    "v": [
+     46.3,
+     48.9,
+     48.5
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN HĐKD cốt lõi",
+    "v": [
+     3893,
+     4494,
+     4859
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Tài chính và khác (tỷ đồng)"
+   },
+   {
+    "ten": "Thu nhập tài chính (2025 trừ lãi thoái vốn)",
+    "v": [
+     2851,
+     3370,
+     3300
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí tài chính",
+    "v": [
+     1065,
+     865,
+     860.0
+    ]
+   },
+   {
+    "ten": "Thu nhập khác",
+    "v": [
+     503,
+     333,
+     300
+    ]
+   },
+   {
+    "ten": "Khoản một lần",
+    "v": [
+     1900,
+     185,
+     0
+    ]
+   },
+   {
+    "nhom": "Lợi nhuận"
+   },
+   {
+    "ten": "LN trước thuế (tỷ)",
+    "v": [
+     8083,
+     7517,
+     7599
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     6446,
+     6033,
+     6080
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LN cốt lõi, trừ một lần (tỷ)",
+    "v": [
+     4931,
+     5885,
+     6080
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     2837,
+     2655,
+     2676
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     14.3,
+     12.0,
+     11.3
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "LN HĐKD cốt lõi = LN gộp − chi phí bán hàng − QLDN. 2026E = 6T thực tế (BCTC) + 6T cuối. Một lần: lãi thoái vốn VCC Nguyễn Chí Thanh (Q4/2025), bán BĐS đầu tư (Q1/2026). Thuế 20%. Chưa tính bán shophouse (MBS: mở bán từ 6T cuối 2027). Vốn chủ 2027E trừ cổ tức 1.000 đ/cp. Diện tích 2026–2027: Vietcap 02/06."
+ },
+ "gia_dinh": [
+  {
+   "ten": "DT cho thuê 6T cuối 2026 (so cùng kỳ)",
+   "v": [
+    "+7,0%",
+    "+9,5%",
+    "+12,0%"
+   ],
+   "ly_do": "6T/2026 +9,4% (Q2 +9,7%, trừ VCC Nguyễn Chí Thanh +11,5%); VCP Đan Phượng mở 8/2026, đã cho thuê 93% trước khai trương"
+  },
+  {
+   "ten": "DT cho thuê 2027",
+   "v": [
+    "+5%",
+    "+9%",
+    "+12%"
+   ],
+   "ly_do": "Ban lãnh đạo: tăng hữu cơ 10–12%/năm (CPI, nâng cấp, khách thuê cao cấp); Vietcap +7,5%; doanh thu khách thuê chậm lại 20–25% (MBS)"
+  },
+  {
+   "ten": "Biên LN HĐKD/DT cho thuê 6T cuối 2026",
+   "v": [
+    "42,8%",
+    "45,0%",
+    "46,5%"
+   ],
+   "ly_do": "6T cuối 2025 42,8% (quý 4 chi phí QLDN cao); 6T/2026 53,0%, +2,9 điểm"
+  },
+  {
+   "ten": "Biên LN HĐKD/DT cho thuê 2027",
+   "v": [
+    "46,0%",
+    "48,5%",
+    "50,0%"
+   ],
+   "ly_do": "2025 46,3%, 2026E 48,9%; điện điều hòa tăng (MBS), TTTM mới cần thời gian lấp đầy"
+  },
+  {
+   "ten": "Thu nhập tài chính 2027 (nghìn tỷ)",
+   "v": [
+    "2,6",
+    "3,3",
+    "3,5"
+   ],
+   "ly_do": "6T/2026 1,68 (≈13%/năm trên số dư cọc); xấu: một phần cọc ngừng tính lãi khi TTTM bàn giao; MBS 3,0, Vietcap 2,9"
+  },
+  {
+   "ten": "Chi phí tài chính 2027 (tỷ)",
+   "v": [
+    "900",
+    "860",
+    "820"
+   ],
+   "ly_do": "Nợ vay 6,4 nghìn tỷ (30/6); lãi vay 6T/2026 409 tỷ (+51%); Vietcap: trả phần lớn năm 2028"
+  },
+  {
+   "ten": "P/E chuỗi TTTM (LN cho thuê 2027E)",
+   "v": [
+    "9",
+    "11",
+    "13"
+   ],
+   "ly_do": "P/E 4 quý từ 2018: thấp 10% 9,7, 25% 13,3; TTTM khu vực 12,2 lần 2027F (Vietcap); giá 20/10 ngầm ~7 lần"
+  },
+  {
+   "ten": "Tiền cọc tại bên liên quan (lần sổ sách)",
+   "v": [
+    "0,6",
+    "0,9",
+    "1,0"
+   ],
+   "ly_do": "Xấu: ngừng sinh lãi, thành TTTM sau 4 năm, chiết khấu 15%/năm ≈ 0,57; cơ sở: lãi ~12% tới khi bàn giao (5 năm) ≈ 0,91; tốt: như sổ sách"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 5801,
+   "ln27": 5030,
+   "gia": 20.0,
+   "mo_ta": "DT cho thuê 2027 +5%, biên 46%; thu nhập tài chính 2,6 nghìn tỷ; P/E chuỗi TTTM 9, cọc 0,6 lần sổ sách"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 6033,
+   "ln27": 6080,
+   "gia": 28.3,
+   "mo_ta": "DT cho thuê 2027 +9%, biên 48,5%; thu nhập tài chính 3,3 nghìn tỷ; P/E 11, cọc 0,9 lần"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 6217,
+   "ln27": 6590,
+   "gia": 34.5,
+   "mo_ta": "DT cho thuê 2027 +12%, biên 50%; thu nhập tài chính 3,5 nghìn tỷ; P/E 13, cọc như sổ sách"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "chuỗi TTTM theo P/E · tiền cọc theo sổ sách · tiền mặt",
+  "ck": 0,
+  "cp": 2272.3,
+  "phan": [
+   {
+    "ten": "Chuỗi TTTM",
+    "mau": "c1",
+    "x": [
+     2950,
+     3440,
+     3790
+    ],
+    "boi": [
+     9,
+     11,
+     13
+    ],
+    "x_ten": "LN cho thuê 2027E (sau lãi vay)",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     26550,
+     37840,
+     49270
+    ]
+   },
+   {
+    "ten": "Tiền cọc tại bên liên quan",
+    "mau": "c2",
+    "x": [
+     25467,
+     25467,
+     25467
+    ],
+    "boi": [
+     0.6,
+     0.9,
+     1.0
+    ],
+    "x_ten": "Số dư 30/6/2026",
+    "boi_ten": "lần sổ sách",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     15280,
+     22920,
+     25467
+    ]
+   },
+   {
+    "ten": "Tiền mặt sau cổ tức",
+    "mau": "c4",
+    "x": [
+     3571,
+     3571,
+     3571
+    ],
+    "boi": [
+     1,
+     1,
+     1
+    ],
+    "x_ten": "Tiền + ĐT ngắn hạn 30/6 − cổ tức",
+    "boi_ten": "lần",
+    "sh": 1,
+    "gt": [
+     3571,
+     3571,
+     3571
+    ]
+   }
+  ],
+  "von": [
+   45401,
+   64331,
+   78308
+  ],
+  "gia": [
+   20.0,
+   28.3,
+   34.5
+  ]
+ },
+ "nhay": [
+  [
+   "P/E chuỗi TTTM ±1 lần",
+   null,
+   1.5
+  ],
+  [
+   "Tiền cọc ±0,1 lần sổ sách",
+   null,
+   1.1
+  ],
+  [
+   "DT cho thuê 2027 ±3%",
+   107,
+   0.5
+  ],
+  [
+   "Biên HĐKD 2027 ±1 điểm %",
+   80,
+   0.4
+  ],
+  [
+   "Chi phí tài chính 2027 ±100 tỷ",
+   80,
+   0.4
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    1345,
+    1465,
+    1561
+   ],
+   "ck": 1376
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    1241,
+    1353,
+    1441
+   ],
+   "ck": 2659
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    5801,
+    6033,
+    6217
+   ]
+  }
+ ],
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   6033
+  ],
+  "cuoi": [
+   "2027E",
+   6080
+  ],
+  "buoc": [
+   [
+    "LN HĐKD cho thuê",
+    292
+   ],
+   [
+    "Thu nhập tài chính",
+    -56
+   ],
+   [
+    "Khác, chi phí tài chính, thuế",
+    -41
+   ],
+   [
+    "Không lặp lại lãi bán BĐS đầu tư",
+    -148
+   ]
+  ],
+  "y": "Cho thuê đóng góp +292 tỷ; lãi tiền cọc đi ngang và khoản lãi bán BĐS đầu tư Q1/2026 không lặp lại nên LN chỉ +1%.",
+  "ng": "mô hình"
+ },
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   44.3,
+   40.0,
+   41.8,
+   36.3,
+   38.6,
+   33.6,
+   31.9,
+   29.0,
+   30.3,
+   31.9,
+   33.5,
+   34.8,
+   32.7,
+   31.8,
+   34.7,
+   32.1,
+   30.9,
+   31.0,
+   30.2,
+   29.8,
+   25.7,
+   22.7,
+   15.3,
+   18.4,
+   22.9,
+   20.7,
+   20.9,
+   25.2,
+   25.8,
+   23.6,
+   28.0,
+   31.2,
+   31.8,
+   31.7,
+   31.2,
+   30.5,
+   25.0,
+   27.0,
+   23.5,
+   22.8,
+   24.4,
+   26.1,
+   31.2,
+   31.6,
+   36.6,
+   57.9,
+   57.8,
+   53.4,
+   75.2,
+   71.2,
+   69.8,
+   48.5,
+   49.1,
+   43.1,
+   33.6,
+   28.9,
+   32.7,
+   22.2,
+   24.6,
+   23.0,
+   18.2,
+   18.0,
+   19.9,
+   19.1,
+   16.4,
+   14.0,
+   12.2,
+   12.8,
+   12.3,
+   13.7,
+   13.3,
+   11.6,
+   11.1,
+   10.4,
+   9.5,
+   9.7,
+   9.7,
+   9.0,
+   10.0,
+   9.6,
+   9.2,
+   9.7,
+   10.6,
+   13.1,
+   14.9,
+   13.4,
+   15.2,
+   15.7,
+   16.6,
+   17.2,
+   16.0,
+   15.7,
+   14.1,
+   10.2,
+   9.1,
+   11.4,
+   10.7,
+   9.4,
+   8.2,
+   8.2,
+   7.6,
+   7.1
+  ],
+  "p10": 9.7,
+  "p25": 13.3,
+  "tv": 23.2,
+  "thap": [
+   "2026-10",
+   7.1
+  ],
+  "nay": [
+   "2026-10",
+   7.1
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Giá trị cơ sở tương đương P/E 10,6 lần LN 2027E (xấu 9,0, tốt 11,9) — quanh mức thấp 10% (9,7), dưới mức 25% (13,3); trung vị 23,2 thuộc giai đoạn 2018–2022 khi LN còn thấp. P/E 4 quý hiện thấp nhất từ 2018 nhưng gồm lãi thoái vốn Q4/2025."
+ },
+ "su_kien": [
+  {
+   "khi": "Cuối 10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Cơ sở: LN cổ đông ~1.465 tỷ (Q3/2025: 1.376, có 273 tỷ thu nhập khác). Cần thấy DT cho thuê +9–10%, thu nhập tài chính giữ ~0,85 nghìn tỷ/quý.",
+   "tac": [
+    "≥ 1.465 tỷ",
+    "khớp cơ sở; dưới 1.345 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "DT cho thuê, thu nhập tài chính"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "VCP Đan Phượng đủ quý, J-Town Mỹ Lâm",
+   "ct": "VCP Đan Phượng (~25.000 m²) khai trương 8/2026, 93% diện tích cho thuê trước; J-Town là khu phố thương mại đầu tiên mô hình Vincom Collection — thu phí quản lý, ít vốn.",
+   "tac": [
+    "+1,3%",
+    "diện tích sàn"
+   ],
+   "theo_doi": "lấp đầy, lượt khách"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "len",
+   "tieu": "VMM Long An, nâng cấp VCP Cộng Hòa, 3–5 TTTM mới",
+   "ct": "Vietcap ước diện tích sàn cuối 2027 ~2,04 triệu m² (+5%); 2028 thêm 3–5 TTTM ở Cần Giờ, Cổ Loa, Hạ Long Xanh. Ban lãnh đạo: tăng hữu cơ 10–12%/năm chưa cần TTTM mới.",
+   "tac": [
+    "~2,04 triệu m²",
+    "diện tích sàn cuối 2027 (Vietcap)"
+   ],
+   "theo_doi": "tiến độ khai trương"
+  },
+  {
+   "khi": "6T cuối 2027",
+   "loai": "len",
+   "tieu": "Mở bán lại shophouse",
+   "ct": "Đã cọc ~10 nghìn tỷ giữ quỹ shophouse (Royal Island, Golden Avenue, Cần Giờ), hoãn mở bán tới 6T cuối 2027 tùy thanh khoản thị trường; lợi nhuận chủ yếu từ 2028, chưa có trong mô hình.",
+   "tac": "",
+   "theo_doi": "lịch mở bán"
+  },
+  {
+   "khi": "Hằng năm",
+   "loai": "len",
+   "tieu": "Cổ tức tiền mặt",
+   "ct": "Trả 1.000 đ/cp cho năm 2025 (lần đầu từ 2019, 2.272 tỷ, trả 22/07/2026); ban lãnh đạo định hướng duy trì, mức xét từng năm. Vietcap giả định không trả 2026–2028.",
+   "tac": [
+    "1.000 đ/cp",
+    "≈ 38% LN 2026E"
+   ],
+   "theo_doi": "ĐHĐCĐ 2027"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Tiền cọc tập trung ở bên liên quan",
+   "ct": "25,5 nghìn tỷ (52% vốn chủ) đặt cọc cho các công ty Vingroup, lãi ghi nhận dồn tích. Kịch bản xấu tính cọc 0,6 lần sổ sách: ngừng sinh lãi, 4 năm sau mới thành TTTM.",
+   "tac": [
+    "−3,4 nghìn đ/cp",
+    "cọc 0,6 thay vì 0,9 lần sổ sách"
+   ],
+   "theo_doi": "tiền lãi thực thu, số dư cọc"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lãi cọc dừng khi TTTM bàn giao",
+   "ct": "Thu nhập tài chính ~3,4 nghìn tỷ/năm (≈13% số dư cọc) sẽ chuyển thành tiền thuê của TTTM mới, cần thời gian lấp đầy. Xấu: thu nhập tài chính 2027 2,6 nghìn tỷ.",
+   "tac": [
+    "−560 tỷ LN 2027",
+    "thu nhập tài chính xấu so với cơ sở"
+   ],
+   "theo_doi": "thu nhập tài chính quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Sức mua chậm lại, khách thuê nhỏ khó vay",
+   "ct": "Doanh thu khách thuê +20–25% (hai quý đầu 25–30%); lãi suất cao cản khách thuê nhỏ lẻ mở rộng, nhóm mỏ neo chiếm 60–70% diện tích vẫn vững (MBS 06/10).",
+   "tac": [
+    "±0,5 nghìn đ/cp",
+    "mỗi 3% DT cho thuê 2027"
+   ],
+   "theo_doi": "lấp đầy, doanh thu khách thuê"
+  },
+  {
+   "khi": "Mùa nóng",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Chi phí điện",
+   "ct": "Hạ nhiệt độ điều hòa 26°C → 25°C làm tăng điện tiêu thụ; điện mặt trời mới đáp ứng ~4% nhu cầu, thay thiết bị hiệu suất cao theo lộ trình (MBS 06/10).",
+   "tac": [
+    "±0,4 nghìn đ/cp",
+    "mỗi 1 điểm % biên HĐKD 2027"
+   ],
+   "theo_doi": "biên gộp quý 3"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "hai",
+   "tieu": "Mức P/E thị trường trả cho chuỗi TTTM",
+   "ct": "Ở giá 20/10, trừ cọc (sổ sách) và tiền mặt, chuỗi TTTM được trả ~7 lần LN cho thuê 2027E; cơ sở dùng 11 lần (P/E 4 quý lịch sử: thấp 10% 9,7).",
+   "tac": [
+    "±1,5 nghìn đ/cp",
+    "mỗi 1 lần P/E"
+   ],
+   "theo_doi": "P/E, P/B"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "LN trước thuế theo nguồn",
+   "kieu": "cot_chong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "ss": [
+    {
+     "ten": "HĐKD cốt lõi",
+     "v": [
+      3.59,
+      3.09,
+      1.76,
+      3.22,
+      4.57,
+      3.77,
+      3.89
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tài chính ròng",
+     "v": [
+      -0.04,
+      -0.19,
+      -0.1,
+      0.18,
+      0.82,
+      0.95,
+      1.79
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Khác",
+     "v": [
+      0.03,
+      0.09,
+      0.03,
+      0.07,
+      0.14,
+      0.41,
+      0.5
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Một lần",
+     "v": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.9
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "2019 → 2025: HĐKD cốt lõi +9%, tài chính ròng −37 tỷ → 1,8 nghìn tỷ; 6T/2026 thu nhập tài chính bằng 42% LNTT.",
+   "ng": "BCTC (VNDirect); một lần = lãi thoái vốn VCC Nguyễn Chí Thanh (Vietcap 02/06)"
+  },
+  {
+   "ten": "Tỷ lệ lấp đầy",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 1,
+   "nhan": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "6/2026"
+   ],
+   "ss": [
+    {
+     "ten": "Lấp đầy",
+     "v": [
+      90.0,
+      84.0,
+      83.0,
+      84.0,
+      85.0,
+      84.0,
+      87.0,
+      88.6
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Lên 88,6% cuối Q2/2026 (+2,3 điểm), cao nhất từ 2019 (90%).",
+   "ng": "Vietcap 02/06 (2019–2025) · VRE 29/07 (30/6/2026)"
+  },
+  {
+   "ten": "Doanh thu cho thuê trên m² đã thuê",
+   "kieu": "cot",
+   "dv": "triệu đ/m²/năm",
+   "so_le": 1,
+   "nhan": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "ss": [
+    {
+     "ten": "DT/m² đã thuê",
+     "v": [
+      4.96,
+      4.39,
+      3.48,
+      4.68,
+      5.25,
+      5.09,
+      5.04
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "2025 (5,0) ngang 2019 (5,0): tăng trưởng 6 năm đến từ diện tích mới; 6T/2026 doanh thu +9,4% khi diện tích chỉ thêm ~1%.",
+   "ng": "Tính từ doanh thu cho thuê, diện tích sàn cuối năm, lấp đầy (Vietcap 02/06)"
+  },
+  {
+   "ten": "Thu nhập tài chính và lãi vay theo quý",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "so_le": 0,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Thu nhập tài chính",
+     "v": [
+      383,
+      547,
+      625,
+      677,
+      802,
+      747,
+      836,
+      845
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chi phí lãi vay",
+     "v": [
+      140,
+      147,
+      149,
+      123,
+      172,
+      185,
+      195,
+      214
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Thu nhập tài chính quý gấp 2,2 lần sau 2 năm; Q4/2025 đã trừ ~1,9 nghìn tỷ lãi thoái vốn.",
+   "ng": "BCTC (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 10132,
+    "th": 4667,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 4/2026 · BCTC Q2"
+   },
+   {
+    "ten": "LNST cổ đông",
+    "kh": 5375,
+    "th": 3215,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 4/2026 · BCTC Q2"
+   }
+  ],
+  "y": "LNST 6T đạt 60% kế hoạch (gồm ~0,15 nghìn tỷ lãi bán BĐS đầu tư), doanh thu thuần mới 46% vì mảng bán BĐS gần như chưa ghi nhận. Kế hoạch LN thấp hơn đà thực tế; cơ sở cả năm 6.033 tỷ.",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "Cho thuê TTTM",
+   "phu": "4 mô hình: Vincom Center, Mega Mall, Plaza, Vincom+ · diện tích sàn 1,91 triệu m² (cuối 2025)",
+   "so": [
+    [
+     "DT cho thuê 6T/2026",
+     "4.476 tỷ",
+     "+9,4%"
+    ],
+    [
+     "Lấp đầy 30/6",
+     "88,6%",
+     "+2,3 điểm"
+    ],
+    [
+     "Lượt khách 6T",
+     "112 triệu",
+     "+11,6%"
+    ],
+    [
+     "LN gộp cho thuê Q1/2026",
+     "1.240 tỷ",
+     "biên 56,2%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "80% doanh thu cho thuê từ hợp đồng giá cố định, điều chỉnh theo CPI; khách thuê mỏ neo chiếm 60–70% diện tích. Cải tạo TTTM cũ đưa lấp đầy từ 55–56% lên trên 95%.",
+     "ng": "MBS 06/10"
+    },
+    {
+     "t": "Doanh thu khách thuê +25–30% hai quý đầu 2026, chậm lại còn 20–25%; trừ ~5% tăng giá, sản lượng tăng ~15%. VRE hỗ trợ khách thuê bằng voucher, giảm giá thuê khi cần, không cho vay.",
+     "ng": "MBS 06/10"
+    },
+    {
+     "t": "Vietcap ước NOI cho thuê 2025 5,8 nghìn tỷ (biên 69%), định giá TTTM với tỷ suất vốn hóa 6,5% (VCC), 7,5% (VMM), 11,5% (VCP, VC+).",
+     "ng": "Vietcap 02/06"
+    }
+   ]
+  },
+  {
+   "ten": "Tiền cọc và dự án mới",
+   "phu": "Cọc giữ quỹ TTTM trong đại đô thị Vinhomes và shophouse để bán",
+   "so": [
+    [
+     "Cọc bên liên quan 30/6/2026",
+     "25.467 tỷ",
+     "52% vốn chủ"
+    ],
+    [
+     "Thu nhập tài chính 6T",
+     "1.680 tỷ",
+     "+29%"
+    ],
+    [
+     "Shophouse đã cọc",
+     "~10 nghìn tỷ",
+     "mở bán từ 6T cuối 2027"
+    ],
+    [
+     "Quỹ diện tích 5 năm",
+     "~737.000 m²",
+     "đã cọc"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Cuối Q2/2025 tổng cọc 21,5 nghìn tỷ, 87% cho bên liên quan; Green Paradise (Cần Giờ) 1,8 nghìn tỷ cho 4 TTTM.",
+     "ng": "ACBS 27/08/2025"
+    },
+    {
+     "t": "Q1/2026 lãi vay và đặt cọc từ Vinhomes Green Paradise 305 tỷ (+454%). BSC: dự kiến cọc thêm 1,5–2 nghìn tỷ trong 2026 cho quỹ đất mới.",
+     "ng": "MAS 19/06 · BSC 07/05"
+    },
+    {
+     "t": "Quỹ dài hạn ~980.000 m² sau 5 năm; đang đánh giá mở rộng ra nước ngoài (Ấn Độ, Congo) qua quỹ đất hợp tác với Vinhomes, VinFast — ngoài danh mục đã cọc.",
+     "ng": "MBS 06/10"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn và cổ tức",
+   "phu": "Bảng cân đối hợp nhất 30/6/2026",
+   "so": [
+    [
+     "Nợ vay",
+     "6.406 tỷ",
+     "chủ yếu dài hạn"
+    ],
+    [
+     "Tiền + ĐT ngắn hạn",
+     "5.843 tỷ",
+     "trước trả cổ tức 2.272"
+    ],
+    [
+     "Cổ tức 2025",
+     "1.000 đ/cp",
+     "trả 22/07/2026"
+    ],
+    [
+     "Sở hữu",
+     "Sado 40,5%",
+     "Vingroup 18,4%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q3/2025 vay ngắn hạn 4,4 nghìn tỷ được thay bằng nợ dài hạn ~6,4 nghìn tỷ; Vietcap dự phóng trả phần lớn năm 2028.",
+     "ng": "BCTC · Vietcap 02/06"
+    },
+    {
+     "t": "Lưu chuyển tiền kinh doanh 2025 âm 3,3 nghìn tỷ do vốn lưu động tăng 7,2 nghìn tỷ; dòng tiền đầu tư dương 3,0 nghìn tỷ.",
+     "ng": "Vietcap 02/06 · MBS 06/10"
+    },
+    {
+     "t": "ĐHĐCĐ 4/2026: kế hoạch doanh thu 10.132 tỷ, LNST 5.375 tỷ (+15% nếu trừ khoản bất thường); một số dự án lùi sang 2028 nên đủ tiền trả cổ tức.",
+     "ng": "BSC 07/05 · MAS 19/06"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "Sức mua ổn định: doanh thu khách thuê +20–25%, sản lượng thực ~+15% sau ~5% tăng giá.",
+     "h": 1,
+     "ng": "MBS 06/10"
+    },
+    {
+     "t": "Lãi suất cao là trở ngại lớn nhất cho khách thuê nhỏ lẻ mở cửa hàng mới.",
+     "h": -1,
+     "ng": "MBS 06/10"
+    },
+    {
+     "t": "Nắng nóng kéo chi phí điện điều hòa lên.",
+     "h": -1,
+     "ng": "MBS 06/10"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "Doanh nghiệp TTTM cùng khu vực: P/E 2026F/2027F trung vị 13,0/12,2 lần, P/B 1,8 lần (đồng thuận Bloomberg).",
+     "h": 0,
+     "ng": "Vietcap 02/06"
+    },
+    {
+     "t": "Đại đô thị Vinhomes (Cần Giờ, Cổ Loa, Long An, Hạ Long Xanh) tạo quỹ TTTM mới, khách đến theo tiến độ dân cư.",
+     "h": 1,
+     "ng": "BSC 07/05"
+    },
+    {
+     "t": "Khu phố thương mại (Vincom Collection) cho thị trường tỉnh: VRE thu phí quản lý, ít vốn.",
+     "h": 1,
+     "ng": "BSC 07/05 · MAS 19/06"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Chủ TTTM hàng đầu Việt Nam: 4 mô hình, 1,91 triệu m² sàn; Vietcap ước thêm ~109.000 m²/năm giai đoạn 2026–2030.",
+     "h": 1,
+     "ng": "Vietcap 02/06"
+    },
+    {
+     "t": "25,5 nghìn tỷ tiền cọc tại bên liên quan (52% vốn chủ) — nguồn lãi lớn và rủi ro tập trung.",
+     "h": -1,
+     "ng": "BCTC Q2/2026 (báo chí)"
+    },
+    {
+     "t": "Cổ đông lớn: CTCP Kinh doanh Thương mại Sado 40,5%, Vingroup 18,4%; nước ngoài ~11%.",
+     "h": 0,
+     "ng": "MBS 06/10 (FiinPro)"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "MBS",
+   "ngay": "2026-10-06",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": 6030,
+   "ln27": 7043,
+   "pp": "ghi chú gặp nhà đầu tư",
+   "y": "Doanh thu khách thuê chậm lại 20–25%, tăng hữu cơ 10–12%/năm; shophouse đã cọc ~10 nghìn tỷ, hoãn mở bán tới 6T cuối 2027; chi phí điện tăng.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VRE/20261006_vre_bcpt_bao_cao_gap_go_nha_dau_tu_thang_10_2026.pdf"
+  },
+  {
+   "ctck": "MAS",
+   "ngay": "2026-06-19",
+   "kn": "MUA",
+   "tp": 36800,
+   "ln26": 6258,
+   "ln27": null,
+   "pp": "P/E (EPS 2026F 2.754 đ)",
+   "y": "Kỳ vọng lấp đầy bình quân 90% năm 2026, thu nhập tài chính 3.776 tỷ; mảng BĐS thương mại đóng góp lại từ 2027; cổ tức 1.000 đ/cp.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VRE/bao_cao_ngan_ctcp_vincom_retail_vre_vn_mua_mo_rong_quy_mo_nang_cao_hieu_suat.pdf"
+  },
+  {
+   "ctck": "Vietcap",
+   "ngay": "2026-05-29",
+   "kn": "PHÙ HỢP THỊ TRƯỜNG",
+   "tp": 34200,
+   "ln26": 5530,
+   "ln27": 5836,
+   "pp": "SOTP tỷ suất vốn hóa 6,5–11,5%, RNAV chiết khấu 15%",
+   "y": "Hạ khuyến nghị: LN cốt lõi 2026 +8%, NOI cho thuê +10%; giả định không trả cổ tức 2026–2028; bán BĐS đóng góp từ 2027.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VRE/Hoat_ong_cho_thue_ban_le_on_inh_se_ho_tro_loi_nhuan_cot_loi_tang_truong_trong_nam_2026_.pdf"
+  },
+  {
+   "ctck": "BSC",
+   "ngay": "2026-05-07",
+   "kn": "THEO DÕI",
+   "tp": 40100,
+   "ln26": 5558,
+   "ln27": null,
+   "pp": "tỷ suất vốn hóa (cho thuê) + so sánh (bán BĐS)",
+   "y": "Cho thuê 86,6 nghìn tỷ, bán BĐS 5,8 nghìn tỷ, không chiết khấu; EV/EBITDA ngang trung bình 5 năm.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VRE/Cap_nhat_KQKD_Q12026.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Giá mục tiêu ra trước 30/06/2026 còn gồm cổ tức 1.000 đ/cp (giao dịch không hưởng quyền 30/06) — trang trừ khi so với giá hiện tại.",
+ "nguon": [
+  {
+   "ten": "MBS — Gặp gỡ nhà đầu tư tháng 10/2026",
+   "ngay": "06/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VRE/20261006_vre_bcpt_bao_cao_gap_go_nha_dau_tu_thang_10_2026.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Mở rộng quy mô, nâng cao hiệu suất",
+   "ngay": "19/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VRE/bao_cao_ngan_ctcp_vincom_retail_vre_vn_mua_mo_rong_quy_mo_nang_cao_hieu_suat.pdf"
+  },
+  {
+   "ten": "Vietcap — Cho thuê bán lẻ ổn định hỗ trợ LN cốt lõi 2026",
+   "ngay": "29/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VRE/Hoat_ong_cho_thue_ban_le_on_inh_se_ho_tro_loi_nhuan_cot_loi_tang_truong_trong_nam_2026_.pdf"
+  },
+  {
+   "ten": "BSC — Cập nhật KQKD Q1/2026",
+   "ngay": "07/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VRE/Cap_nhat_KQKD_Q12026.pdf"
+  },
+  {
+   "ten": "CafeF — Vincom Retail báo lãi hơn 1.600 tỷ quý 2/2026",
+   "ngay": "29/07/2026",
+   "link": "https://cafef.vn/vincom-retail-bao-lai-hon-1600-ty-dong-trong-quy-2-2026-188260729113111771.chn"
+  },
+  {
+   "ten": "VietnamFinance — KQKD Q2/2026, lượt khách 6T",
+   "ngay": "29/07/2026",
+   "link": "https://vietnamfinance.vn/vincom-retail-bao-lai-sau-thue-quy-ii-hon-1600-ty-tang-30-d148294.html"
+  },
+  {
+   "ten": "Mekong ASEAN — tiền cọc bên liên quan 30/6/2026",
+   "ngay": "07/2026",
+   "link": "https://mekongasean.vn/vincom-retail-lai-hon-1600-ty-dong-quy-2-hoan-thanh-gan-60-ke-hoach-nam-57859.html"
+  },
+  {
+   "ten": "CafeF — VCP Đan Phượng khai trương 8/2026",
+   "ngay": "29/07/2026",
+   "link": "https://cafef.vn/vincom-retail-bao-lai-sau-thue-hon-1600-ty-dong-trong-quy-2-2026-tang-30-so-voi-cung-ky-188260729113457144.chn"
+  },
+  {
+   "ten": "Báo Pháp luật — cổ tức 1.000 đ/cp, ĐKCC 01/07",
+   "ngay": "06/2026",
+   "link": "https://doanhnhan.baophapluat.vn/co-dong-cua-vincom-retail-vre-sap-nhan-duoc-hon-2-200-ty-dong-tien-tra-co-tuc.html"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ 2026, mục tiêu LN 5.375 tỷ",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vincom-retail-vre-chot-muc-tieu-lai-5-375-ty-dong-giu-nguyen-27-000-ty-dong-loi-nhuan-luy-ke.html"
+  },
+  {
+   "ten": "ACBS — Cập nhật VRE (tiền cọc 30/6/2025)",
+   "ngay": "27/08/2025",
+   "link": "https://acbs.com.vn/acbsmedia/2025/08/VRE_Cap-Nhat_27.8.2025-.pdf"
+  },
+  {
+   "ten": "BSC — Hồ sơ VRE (số cp lưu hành)",
+   "ngay": "10/2026",
+   "link": "https://new.bsc.com.vn/en/Companies/Overview/VRE"
+  }
+ ]
+}

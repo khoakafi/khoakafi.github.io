@@ -1,0 +1,1520 @@
+{
+ "v": 2,
+ "ma": "PVD",
+ "ten": "Tổng CTCP Khoan và Dịch vụ khoan Dầu khí (PV Drilling)",
+ "nganh": "Dịch vụ khoan dầu khí",
+ "ky": "BCTC Q2/2026 · ACBS 04/08, MAS 31/07/2026",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 927.76,
+ "cp_ng": "555,88 triệu cp lưu hành + 371,88 triệu cp thưởng 66,9% từ quỹ đầu tư phát triển (GDKHQ 14/7/2026; vốn điều lệ 9.281,8 tỷ); VNDirect 20/10: vốn hóa ÷ giá = 927,7 triệu",
+ "chia": [
+  [
+   "2026-07-14",
+   1.669
+  ]
+ ],
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Thêm giàn nhưng lãi mỗi giàn giảm: giá thuê tái ký 2027 quyết định PVD"
+ },
+ "dong_mo": "Giàn tự nâng hoạt động bình quân từ ~4,1 (2025) lên ~5,5 (2026E) nhưng lãi gộp khoan mỗi giàn-năm giảm ~289 → ~249 tỷ; kỹ thuật giếng khoan gánh tăng trưởng. LN 2026E 1.012 tỷ, 2027E 1.238 tỷ với giá thuê 93 nghìn USD/ngày; P/E 15 cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "−14%",
+   "nhan": "lãi gộp khoan mỗi giàn-năm, 2026E so với 2025",
+   "tieu": "Thêm giàn, nhưng lãi mỗi giàn giảm",
+   "t": "Giàn tự nâng sở hữu hoạt động từ ~4,1 (2025) lên 4,8 (Q1/2026) và ~5,5 (Q2, PVD IX vào việc tháng 4), nhưng lãi gộp khoan Q2 chỉ ~243 tỷ, Q1 365 tỷ: khấu hao giàn mới mua 85–88 triệu USD/chiếc và chi phí tăng theo xung đột Trung Đông, trong khi giá thuê ~90 nghìn USD/ngày ngang cùng kỳ. Lãi vay Q2 111 tỷ, gấp 2,4 lần cùng kỳ.",
+   "ng": "VPBS 07/05 · ACBS 04/08 · NHSV (Vietstock) · BCTC · mô hình"
+  },
+  {
+   "so": "~45%",
+   "nhan": "lãi gộp 6T/2026 từ kỹ thuật giếng khoan",
+   "tieu": "Kỹ thuật giếng khoan đang gánh tăng trưởng",
+   "t": "Lãi gộp kỹ thuật giếng khoan 6T/2026 ~530 tỷ (+43%), biên ~28% so với khoan ~15%; quý 2 (287 tỷ) vượt cả khoan cộng thương mại (259 tỷ). Lô B – Ô Môn cần ~911 giếng, 40–50 giếng/năm, gấp 3–7 lần 2022–2024 (BSC). Cơ sở 2027: doanh thu 5,2 nghìn tỷ, biên 23%; ±2 điểm % biên = ±1,2 nghìn đ/cp.",
+   "ng": "VPBS 07/05 · NHSV (Vietstock) · BSC 23/04 · mô hình"
+  },
+  {
+   "so": "±3,4",
+   "nhan": "nghìn đ/cp mỗi ±5 nghìn USD/ngày giá thuê 2027",
+   "tieu": "Giá thuê tái ký là đòn bẩy lớn nhất",
+   "t": "PVD cho thuê ~90 nghìn USD/ngày (6T/2026) khi giàn cùng loại ở Đông Nam Á 100–110 nghìn, Trung Đông 140–185 nghìn (SSI 25/05); Brent 16/10 ~110 USD. Hợp đồng PVD II, III, VIII đến hạn cuối 2026 (BSC), TAD (Brunei) năm 2027; IX cố định đến 2028. Cơ sở 93 nghìn bình quân 2027; mỗi ±5 nghìn = ±211 tỷ LN — gần 17% LN 2027E.",
+   "ng": "ACBS 04/08 · SSI 25/05 · BSC 23/04 · Reuters 16/10 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Giá đã phản ánh phần lớn kịch bản cơ sở",
+   "dk": "up_duoi:15",
+   "t": "P/E 15 × LN 2027E 1.238 tỷ ra {gt}; P/E 4 quý 2025–2026 dao động 14–21 lần. Tương đương P/B ~1,04 khi ROE chỉ ~7%; trung vị P/B từ 2015 là 0,70. Xấu 9,5 (giá thuê 88 nghìn USD, 5,9 giàn-năm, biên giếng khoan 20%, P/E 18), tốt 26,2 (98 nghìn, Lô B đúng hạn, P/E 12): cán cân lên/xuống {rr} lần.",
+   "ng": "BCTC (VNDirect) · mô hình",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "P/E 15 lần LN 2027E: giá trị cơ sở {up_so}",
+    "t": "P/E 15 × LN 2027E 1.238 tỷ ra {gt}; P/E 4 quý 2025–2026 dao động 14–21 lần, P/B tương ứng ~1,04 khi ROE ~7%. Xấu 9,5 (giá thuê 88 nghìn USD, 5,9 giàn-năm, biên giếng khoan 20%, P/E 18), tốt 26,2 (98 nghìn, P/E 12): cán cân lên/xuống {rr} lần."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1036,
+   1012,
+   1238
+  ],
+  "ln_truoc": 698,
+  "eps": [
+   1117,
+   1091,
+   1334
+  ],
+  "bv": [
+   18152,
+   19250,
+   20584
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Lãi gộp (tỷ)",
+    "v": [
+     2072,
+     2589,
+     2995
+    ]
+   },
+   {
+    "ten": "Giàn hoạt động (giàn-năm)",
+    "v": [
+     4.1,
+     5.5,
+     6.2
+    ],
+    "d": 1
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     6.3,
+     5.8,
+     6.7
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS, BVPS theo 927,76 triệu cp (sau thưởng 66,9%, GDKHQ 14/7/2026). Cổ tức tiền gần nhất 5% (500 đ/cp cũ, 9/2025); 2026 không chia tiền (ĐHĐCĐ). 2025 có ~185 tỷ thu nhập khác (chủ yếu hoàn thuế Malaysia)."
+ },
+ "ln_mang": {
+  "tieu": "Lãi gộp theo mảng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "lãi gộp",
+  "ss": [
+   {
+    "ten": "Khoan (giàn sở hữu, TAD, giàn thuê)",
+    "mau": "c1",
+    "v": [
+     1196,
+     1362,
+     1729
+    ]
+   },
+   {
+    "ten": "Kỹ thuật giếng khoan & dịch vụ",
+    "mau": "c2",
+    "v": [
+     861,
+     1146,
+     1196
+    ]
+   },
+   {
+    "ten": "Thương mại",
+    "mau": "c4",
+    "v": [
+     15,
+     81,
+     70
+    ]
+   }
+  ],
+  "nhan": "Kỹ thuật giếng khoan & dịch vụ",
+  "ng": "2025: ước tính từ số quý của VPBS, ACBS, BSC, NHSV (tổng khớp BCTC). 2026E = 6 tháng thực tế + mô hình."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: giàn-năm × lãi gộp mỗi giàn, cộng kỹ thuật giếng khoan",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Vận hành"
+   },
+   {
+    "ten": "Giàn tự nâng sở hữu hoạt động (giàn-năm)",
+    "v": [
+     4.1,
+     5.5,
+     6.2
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Giá thuê ngày bình quân (nghìn USD)",
+    "v": [
+     90,
+     90,
+     93
+    ]
+   },
+   {
+    "ten": "Lãi gộp khoan mỗi giàn-năm (tỷ)",
+    "v": [
+     289,
+     249,
+     279
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Doanh thu (tỷ đồng)"
+   },
+   {
+    "ten": "Khoan (giàn sở hữu, TAD, giàn thuê)",
+    "v": [
+     6006,
+     8347,
+     9169
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Kỹ thuật giếng khoan, thương mại",
+    "v": [
+     4861,
+     5395,
+     5900
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tổng doanh thu",
+    "v": [
+     10867,
+     13742,
+     15069
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "nhom": "Lợi nhuận (tỷ đồng)"
+   },
+   {
+    "ten": "Lãi gộp khoan",
+    "v": [
+     1196,
+     1362,
+     1729
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp kỹ thuật giếng khoan, thương mại",
+    "v": [
+     876,
+     1227,
+     1266
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí bán hàng, quản lý",
+    "v": [
+     -853,
+     -1016,
+     -1060
+    ]
+   },
+   {
+    "ten": "Tài chính ròng (lãi vay, tỷ giá)",
+    "v": [
+     -165,
+     -352,
+     -450
+    ]
+   },
+   {
+    "ten": "Liên doanh, thu nhập khác",
+    "v": [
+     328,
+     178,
+     210
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     1382,
+     1398,
+     1695
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     1036,
+     1012,
+     1238
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     1117,
+     1091,
+     1334
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Lãi gộp khoan chia cho giàn tự nâng sở hữu hoạt động (gồm phần TAD, giàn thuê ngoài, khấu hao); 2025 theo mảng là ước tính. Giá thuê: ACBS (6T/2026 ngang cùng kỳ), Vietcap. 2027: mỗi 1 nghìn USD/ngày = 9,6 tỷ/giàn-năm (26.300 đ/USD). Thuế 29% LNTT ngoài liên doanh."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1012
+  ],
+  "cuoi": [
+   "2027E",
+   1238
+  ],
+  "buoc": [
+   [
+    "Thêm giàn (IX, X)",
+    180
+   ],
+   [
+    "Giá thuê, chi phí/giàn",
+    186
+   ],
+   [
+    "Giếng khoan & khác",
+    39
+   ],
+   [
+    "Bán hàng, quản lý",
+    -44
+   ],
+   [
+    "Tài chính ròng",
+    -98
+   ],
+   [
+    "Liên doanh, khác",
+    32
+   ],
+   [
+    "Thuế, thiểu số",
+    -69
+   ]
+  ],
+  "y": "LN 2027E +22%: thêm giàn và giá thuê bình quân +3 nghìn USD đóng góp chính; lãi vay, chi phí quản lý ăn bớt. Ngang ACBS (1.256 tỷ), thấp hơn SSI (1.598 tỷ: 4 giàn mới đến 2029).",
+  "ng": "mô hình · SSI 25/05, ACBS 04/08"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Giàn tự nâng sở hữu hoạt động 2027 (giàn-năm)",
+   "v": [
+    "5,9",
+    "6,2",
+    "6,5"
+   ],
+   "ly_do": "2025 ~4,1; 2026E ~5,5 (IX từ 4/2026). 6 giàn × 95–98% + PVD X từ quý 2/2027; xấu: X trễ, một giàn chờ việc giữa hai hợp đồng"
+  },
+  {
+   "ten": "Giá thuê ngày bình quân 2027 (nghìn USD)",
+   "v": [
+    "88",
+    "93",
+    "98"
+   ],
+   "ly_do": "Nay ~90 (ACBS), mục tiêu 2026 90,5 (Vietcap). Spot Đông Nam Á quý 1 ~99 (BSC), 100–110 (SSI). II, III, VIII, TAD tái ký; IX cố định đến 2028"
+  },
+  {
+   "ten": "Lãi gộp khoan mỗi giàn-năm H2/2026 (tỷ)",
+   "v": [
+    "205",
+    "260",
+    "300"
+   ],
+   "ly_do": "2025 ~289; Q1/2026 304, Q2 ~177 (khấu hao giàn mới, chi phí theo xung đột Trung Đông). 2027 cộng thay đổi giá thuê, trừ chi phí tăng"
+  },
+  {
+   "ten": "Kỹ thuật giếng khoan 2027: doanh thu · biên",
+   "v": [
+    "4,7 · 20%",
+    "5,2 · 23%",
+    "5,8 · 25%"
+   ],
+   "ly_do": "2025: 4,2 nghìn tỷ, biên ~20%; 6T/2026 ~28% (Q4/2025 chỉ 14%). BSC: 4–5 nghìn tỷ, ~1 nghìn tỷ lãi gộp/năm nhờ Lô B"
+  },
+  {
+   "ten": "Chi phí bán hàng, quản lý 2027 (tỷ)",
+   "v": [
+    "1.070",
+    "1.060",
+    "1.020"
+   ],
+   "ly_do": "2025: 853; 6T/2026 436 (quản lý +36%: nhân sự, mở rộng đội giàn); 2026E 1.016"
+  },
+  {
+   "ten": "Tài chính ròng 2027 (tỷ)",
+   "v": [
+    "−480",
+    "−450",
+    "−390"
+   ],
+   "ly_do": "2025: −165; 6T/2026 −162 (lãi vay Q2 111). Nợ vay 5,5 nghìn tỷ + vay mua X (~85 triệu USD), lãi ~7,5%"
+  },
+  {
+   "ten": "Liên doanh · thu nhập khác 2027 (tỷ)",
+   "v": [
+    "170 · 0",
+    "190 · 20",
+    "210 · 40"
+   ],
+   "ly_do": "Liên doanh 2025 143, 6T/2026 89. Thu nhập khác 2025 185 (chủ yếu hoàn thuế Malaysia — BSC), 6T/2026 −17"
+  },
+  {
+   "ten": "P/E trên LN 2027E",
+   "v": [
+    "18",
+    "15",
+    "12"
+   ],
+   "ly_do": "P/E 4 quý 2025–2026: 14–21; mức 25% từ 2015: 14,7. Chu kỳ: năm 2015 (sau đỉnh LN 2014) chỉ 4,6–7,4 lần. Tương đương P/B 0,50 · 1,04 · 1,34"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 714,
+   "ln27": 489,
+   "gia": 9.5,
+   "mo_ta": "Giá thuê 2027 88 nghìn USD/ngày khi Brent hạ, 5,9 giàn-năm (X trễ, giàn chờ việc); lãi gộp mỗi giàn H2/2026 205 tỷ; giếng khoan 4,7 nghìn tỷ, biên 20%; P/E 18"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1012,
+   "ln27": 1238,
+   "gia": 20.0,
+   "mo_ta": "Giá thuê 93 nghìn, 6,2 giàn-năm (X từ quý 2/2027); lãi gộp mỗi giàn H2/2026 260 tỷ; giếng khoan 5,2 nghìn tỷ, biên 23%; P/E 15"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 1270,
+   "ln27": 2022,
+   "gia": 26.2,
+   "mo_ta": "Giá thuê 98 nghìn (tái ký theo mặt bằng khu vực), 6,5 giàn-năm; lãi gộp mỗi giàn H2/2026 300 tỷ; Lô B đúng hạn: giếng khoan 5,8 nghìn tỷ, biên 25%; P/E 12"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá P/E theo chu kỳ khoan",
+  "phu": "P/E × LN cổ đông 2027E; LN đáy được trả P/E cao hơn",
+  "ck": 0,
+  "cp": 927.76,
+  "phan": [
+   {
+    "ten": "LN cổ đông 2027E",
+    "mau": "c1",
+    "x": [
+     489,
+     1238,
+     2022
+    ],
+    "boi": [
+     18,
+     15,
+     12
+    ],
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     8802,
+     18570,
+     24264
+    ]
+   }
+  ],
+  "von": [
+   8802,
+   18570,
+   24264
+  ],
+  "gia": [
+   9.5,
+   20.0,
+   26.2
+  ]
+ },
+ "nhay": [
+  [
+   "Giá thuê 2027 ±5 nghìn USD/ngày",
+   211,
+   3.4
+  ],
+  [
+   "P/E ±1 lần",
+   null,
+   1.3
+  ],
+  [
+   "Biên giếng khoan 2027 ±2 điểm %",
+   74,
+   1.2
+  ],
+  [
+   "Chi phí tài chính ±100 tỷ",
+   71,
+   1.1
+  ],
+  [
+   "PVD X sớm/muộn 1 quý",
+   49,
+   0.8
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.57,
+   1.54,
+   1.19,
+   1.44,
+   1.3,
+   1.32,
+   1.31,
+   1.03,
+   0.97,
+   1.05,
+   0.84,
+   0.71,
+   0.62,
+   0.67,
+   0.63,
+   0.65,
+   0.85,
+   0.83,
+   0.69,
+   0.68,
+   0.72,
+   0.65,
+   0.65,
+   0.61,
+   0.62,
+   0.64,
+   0.58,
+   0.51,
+   0.46,
+   0.41,
+   0.39,
+   0.41,
+   0.42,
+   0.44,
+   0.55,
+   0.69,
+   0.81,
+   0.67,
+   0.56,
+   0.49,
+   0.4,
+   0.4,
+   0.39,
+   0.46,
+   0.61,
+   0.49,
+   0.46,
+   0.42,
+   0.47,
+   0.48,
+   0.51,
+   0.53,
+   0.53,
+   0.53,
+   0.53,
+   0.58,
+   0.56,
+   0.51,
+   0.48,
+   0.47,
+   0.41,
+   0.36,
+   0.21,
+   0.28,
+   0.32,
+   0.3,
+   0.27,
+   0.34,
+   0.35,
+   0.33,
+   0.4,
+   0.49,
+   0.54,
+   0.72,
+   0.69,
+   0.59,
+   0.67,
+   0.68,
+   0.56,
+   0.6,
+   0.7,
+   0.87,
+   0.85,
+   0.92,
+   0.95,
+   1.08,
+   1.06,
+   0.76,
+   0.85,
+   0.62,
+   0.63,
+   0.84,
+   0.8,
+   0.7,
+   0.63,
+   0.71,
+   0.84,
+   0.85,
+   0.82,
+   0.84,
+   0.97,
+   0.98,
+   1.05,
+   1.01,
+   1.02,
+   0.93,
+   1.07,
+   1.08,
+   1.05,
+   1.17,
+   1.23,
+   1.13,
+   1.17,
+   1.06,
+   1.02,
+   0.99,
+   0.99,
+   0.92,
+   0.87,
+   0.85,
+   0.86,
+   0.87,
+   0.77,
+   0.62,
+   0.64,
+   0.7,
+   0.73,
+   0.72,
+   0.74,
+   0.73,
+   0.88,
+   0.93,
+   1.02,
+   1.28,
+   1.15,
+   1.02,
+   0.99,
+   1.06,
+   0.98,
+   1.03,
+   0.98,
+   0.95
+  ],
+  "p10": 0.41,
+  "p25": 0.53,
+  "tv": 0.7,
+  "thap": [
+   "2020-03",
+   0.21
+  ],
+  "nay": [
+   "2026-10",
+   0.95
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Ba kịch bản tương đương P/B 0,50 · 1,04 · 1,34 vốn chủ cuối 2026E. Từ 2015 trung vị 0,70, mức 25% 0,53; 2023–2026, khi ROE 4–6%, dao động 0,62–1,28. Xấu nằm giữa mức thấp 10% và 25%; cơ sở cao hơn P/B hiện tại (0,95) một chút."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với 4 mã cùng ngành",
+  "phu": "theo giá hôm nay, vốn chủ 30/6/2026",
+  "chi_so": "P/B (vốn chủ 30/6/2026)",
+  "chi_so_kv": "P/B (giá 20/10)",
+  "nhom": "PVS, PVC, PVB, PPY",
+  "kv": [
+   [
+    "PVS",
+    1.26
+   ],
+   [
+    "PVC",
+    0.98
+   ],
+   [
+    "PVB",
+    0.97
+   ],
+   [
+    "PPY",
+    0.58
+   ]
+  ],
+  "tv": 0.975,
+  "moi_cp": 18664,
+  "max": 2,
+  "y": "Ngang trung vị nhóm, nhưng ROE 4 quý của PVD chỉ 6,5% so với PVS 14,0% (P/B 1,26), PVB 19,9%, PPY 11,2%; chỉ PVC (3,3%) thấp hơn. Nhóm là dịch vụ, ống, phân phối dầu khí — không có nhà khoan khác niêm yết.",
+  "ng": "BCTC VNDirect, giá 20/10/2026 (bảng cùng ngành)"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 3512,
+   "ln": [
+    140,
+    278,
+    398
+   ],
+   "ck": 278
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 3792,
+   "ln": [
+    104,
+    265,
+    403
+   ],
+   "ck": 365
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    714,
+    1012,
+    1270
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Cơ sở LN 278 tỷ (cùng kỳ 278). Xem lãi gộp khoan đã về mức Q1 (365 tỷ) khi PVD IX chạy đủ quý chưa, và lãi vay sau mức 111 tỷ của Q2.",
+   "tac": [
+    "≥ 280 tỷ",
+    "giữ cơ sở; dưới 210 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "lãi gộp khoan, lãi vay"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Tái ký PVD II, III, VIII và TAD",
+   "ct": "Hợp đồng II, III, VIII đến hạn cuối 2026 (BSC), TAD (Brunei) năm 2027, khi spot Đông Nam Á quý 1 ~99 nghìn USD, Trung Đông 140–185 nghìn. Cơ sở bình quân đội giàn 93 nghìn.",
+   "tac": [
+    "±3,4 nghìn đ/cp",
+    "mỗi ±5 nghìn USD/ngày bình quân 2027"
+   ],
+   "theo_doi": "giá thuê hợp đồng mới"
+  },
+  {
+   "khi": "Q4/26–Q2/27",
+   "loai": "len",
+   "tieu": "PVD X về Việt Nam, vào việc",
+   "ct": "Giàn thứ 8 (~85 triệu USD) kéo về tháng 10/2026 để tái khởi động, kiểm định, nâng cấp; cung cấp dịch vụ từ quý 2/2027 (SGGP; ACBS: giữa 2027). Cơ sở tính 0,5 giàn-năm cho 2027.",
+   "tac": [
+    "±0,8 nghìn đ/cp",
+    "mỗi quý vào việc sớm/muộn"
+   ],
+   "theo_doi": "ngày nhận hợp đồng đầu"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Khoan phát triển Lô B – Ô Môn",
+   "ct": "~911 giếng (40–50 giếng/năm) cho kỹ thuật giếng khoan; giàn VI tham gia chiến dịch khoan (MAS). Luật Dầu khí sửa đổi cho PVN tự duyệt kế hoạch phát triển mỏ (BSC).",
+   "tac": [
+    "±1,6 nghìn đ/cp",
+    "mỗi ±600 tỷ doanh thu giếng khoan 2027"
+   ],
+   "theo_doi": "số giếng Lô B"
+  },
+  {
+   "khi": "2026–2030",
+   "loai": "hai",
+   "tieu": "Mua thêm 2–3 giàn đã qua sử dụng",
+   "ct": "Ban lãnh đạo nhắm IRR ~12%, hoàn vốn ~5 năm (Vietcap); giàn đóng mới > 300 triệu USD cần giá thuê > 200 nghìn USD/ngày (SSI). Mỗi giàn 85–100 triệu USD, chủ yếu vay nợ.",
+   "tac": "",
+   "theo_doi": "giá mua, hợp đồng kèm theo"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Brent hạ khi căng thẳng Mỹ – Iran lắng",
+   "ct": "Brent 109,86 USD ngày 16/10 (Reuters); kế hoạch PVD dựa trên 56–60 USD (SSI, BSC). Tỷ lệ dùng giàn Đông Nam Á ~74%, thấp hơn 80–90% của 2 năm trước (SSI): dầu hạ thì giá tái ký hạ.",
+   "tac": [
+    "−10,5 nghìn đ/cp",
+    "kịch bản xấu so với cơ sở"
+   ],
+   "theo_doi": "Brent, giá thuê spot"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lãi vay, khấu hao giàn mới",
+   "ct": "Nợ vay 5,5 nghìn tỷ (30/6/2026), +2,4 nghìn tỷ trong 4 quý; lãi vay Q2 gấp 2,4 lần cùng kỳ khi PVD IX vào sổ tài sản. Mua X ~2.200 tỷ. Cơ sở tài chính ròng 2027 −450 tỷ.",
+   "tac": [
+    "±1,1 nghìn đ/cp",
+    "mỗi ±100 tỷ chi phí tài chính"
+   ],
+   "theo_doi": "nợ vay, lãi suất"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Phải thu tăng nhanh hơn doanh thu",
+   "ct": "Phải thu ngắn hạn 5,8 nghìn tỷ (30/6/2026), +66% so với cuối 2024; số ngày phải thu 87 → 118 (2024 → 2025, SSI). Tiền và đầu tư ngắn hạn còn 2,8 nghìn tỷ; không chia cổ tức tiền 2026.",
+   "tac": "",
+   "theo_doi": "dòng tiền kinh doanh"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Biên kỹ thuật giếng khoan về mức thường",
+   "ct": "6T/2026 ~28%, nhưng Q4/2025 chỉ 14% vì chi phí nhân công cuối năm (BSC); 2025 ~20%. Cơ sở 2027: 23%.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi ±2 điểm % biên 2027"
+   ],
+   "theo_doi": "biên gộp theo mảng"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "hai",
+   "tieu": "Tỷ giá USD/VND",
+   "ct": "Doanh thu chủ yếu bằng USD, nhưng nợ vay ngoại tệ đánh giá lại theo quý: Q1/2026 lỗ tỷ giá 90 tỷ (VPBS).",
+   "tac": "",
+   "theo_doi": "USD/VND cuối quý"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi gộp theo mảng: quý 1 và quý 2",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Khoan, thương mại",
+     "v": [
+      132,
+      289,
+      395,
+      259
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Kỹ thuật giếng khoan",
+     "v": [
+      138,
+      231,
+      243,
+      287
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Quý 2/2026 khoan cộng thương mại lãi gộp ít hơn cùng kỳ dù PVD IX vào việc từ tháng 4; kỹ thuật giếng khoan +24%, vượt mảng khoan.",
+   "ng": "VPBS 07/05 (Q1, Q1/2025 suy từ tăng trưởng) · NHSV qua Vietstock (Q2) · BCTC"
+  },
+  {
+   "ten": "Lãi gộp, chi phí quản lý và lãi vay theo quý",
+   "kieu": "duong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      449,
+      376,
+      270,
+      520,
+      609,
+      672,
+      638,
+      546
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Chi phí bán hàng, quản lý",
+     "v": [
+      172,
+      190,
+      116,
+      209,
+      208,
+      320,
+      207,
+      230
+     ],
+     "mau": "c3",
+     "net": false
+    },
+    {
+     "ten": "Lãi vay",
+     "v": [
+      51,
+      48,
+      51,
+      47,
+      46,
+      45,
+      66,
+      111
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi gộp Q2/2026 546 tỷ, thấp hơn Q3/2025–Q1/2026; lãi vay 111 tỷ khi PVD IX chuyển từ xây dựng dở dang (2,5 → 0,4 nghìn tỷ) vào tài sản.",
+   "ng": "BCTC PVD (VNDirect)"
+  },
+  {
+   "ten": "Nợ vay, tiền và phải thu",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      3.05,
+      3.05,
+      3.03,
+      3.11,
+      4.11,
+      4.41,
+      5.52,
+      5.47
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Phải thu ngắn hạn",
+     "v": [
+      3.51,
+      3.47,
+      3.52,
+      4.31,
+      4.65,
+      5.32,
+      5.79,
+      5.75
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "Tiền, đầu tư ngắn hạn",
+     "v": [
+      4.05,
+      2.97,
+      2.61,
+      2.62,
+      2.03,
+      2.51,
+      3.13,
+      2.8
+     ],
+     "mau": "c4",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Nợ vay +2,4 nghìn tỷ trong 4 quý (mua VIII, IX); phải thu 5,8 nghìn tỷ, +66% so với cuối 2024, trong khi tiền giảm.",
+   "ng": "BCTC PVD (VNDirect)"
+  },
+  {
+   "ten": "Giá thuê ngày giàn tự nâng",
+   "kieu": "cot",
+   "dv": "nghìn USD/ngày",
+   "nhan": [
+    "PVD 6T/26",
+    "Spot Q1/26",
+    "ĐNA 5/26",
+    "Borr 2026",
+    "Trung Đông"
+   ],
+   "ss": [
+    {
+     "ten": "Giá thuê ngày (nghìn USD)",
+     "v": [
+      90,
+      99.2,
+      105,
+      134,
+      162.5
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "PVD cho thuê thấp hơn mặt bằng khu vực 9–14%: dư địa khi tái ký. Spot: giàn 301–360 ft khu vực; ĐNA 5/2026, Trung Đông: điểm giữa 100–110, 140–185.",
+   "ng": "ACBS 04/08 · BSC 23/04 · SSI 25/05 (RigLogix) · Borr Drilling Q2/2026 (đã ký 73% ngày 2026)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 11185,
+    "th": 6437,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 (VPBS, BSC) · BCTC"
+   },
+   {
+    "ten": "LN trước thuế",
+    "kh": 1085,
+    "th": 658,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 (VPBS) · BCTC"
+   },
+   {
+    "ten": "LNST",
+    "kh": 800,
+    "th": 479,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC"
+   }
+  ],
+  "y": "Kế hoạch dựa trên Brent 56–60 USD/thùng (SSI, BSC) nên thấp; 6 tháng đạt 58% doanh thu, 60% LNST. Cơ sở cả năm LNST ~1.032 tỷ.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-08-04",
+   "kn": "MUA",
+   "tp": 24200,
+   "ln26": 1199,
+   "ln27": 1256,
+   "pp": "không nêu (cập nhật nhanh)",
+   "y": "Giữ dự báo 2026 (doanh thu +16%, LN +14%); 6T đạt 40%. Giàn tự nâng hoạt động gần 6 (cùng kỳ 3,7), giàn thuê 2,6 (1,3); giá thuê ~90 nghìn USD/ngày, ngang cùng kỳ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/pvd_cap_nhat_nhanh_04_08_2026.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-07-31",
+   "kn": "MUA",
+   "tp": 21600,
+   "ln26": 1150,
+   "ln27": null,
+   "pp": "không nêu (báo cáo ngắn)",
+   "y": "Ba năm mua giàn liên tiếp (VIII, IX, X) đúng lúc vốn thượng nguồn tăng; 6T LN chỉ +22% vì chi phí lãi vay Q2 gấp đôi (110,6 tỷ). Dự báo 2026: doanh thu 13.054 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/bao_cao_ngan_tong_ctcp_khoan_va_dich_vu_khoan_dau_khi_pvd_vn_mua_ba_nam_mua_gian_don_lan_song_lon.pdf"
+  },
+  {
+   "ctck": "SSI",
+   "ngay": "2026-05-25",
+   "kn": "TRUNG LẬP",
+   "tp": 34000,
+   "ln26": 1374,
+   "ln27": 1598,
+   "pp": "DCF (WACC 14%, tăng trưởng dài hạn 3%)",
+   "y": "Giả định thêm 4 giàn 2026–2029, giá thuê 90–100 nghìn USD/ngày đến 2029; kịch bản giá thuê 80 · 95 · 110 nghìn cho LN 2027 602 · 1.598 · 2.742 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/Mo_rong_oi_gian_thuc_ay_tang_truong_loi_nhuan.pdf"
+  },
+  {
+   "ctck": "VPBS",
+   "ngay": "2026-05-07",
+   "kn": "TRUNG LẬP",
+   "tp": 33800,
+   "ln26": null,
+   "ln27": null,
+   "pp": "không nêu (cập nhật KQKD)",
+   "y": "Q1/2026: giàn sở hữu hoạt động 4,8 (cùng kỳ 3,0), giàn thuê 3,5 (1,0), giá thuê +4%; biên gộp khoan 16,9%, kỹ thuật giếng khoan 24,2%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/Bao_cao_cap_nhat_nhanh_KQKD_Q12026.pdf"
+  },
+  {
+   "ctck": "BSC",
+   "ngay": "2026-04-23",
+   "kn": "MUA",
+   "tp": 39450,
+   "ln26": 1154,
+   "ln27": null,
+   "pp": "DCF 50% (WACC 12,8%) + EV/EBITDA 8,5 lần 50%",
+   "y": "Kỹ thuật giếng khoan 4–5 nghìn tỷ doanh thu, ~1 nghìn tỷ lãi gộp/năm nhờ Lô B; giá thuê +6%. Sau đó BSC hạ khuyến nghị, giảm 9% dự báo LN 2026 (vnbusiness).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/Khang_inh_vi_the_but_pha_cung_chu_ky_tai_san_moi.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. SSI, VPBS, BSC ra trước đợt thưởng 66,9% (GDKHQ 14/7/2026): giá mục tiêu trong báo cáo tính trên 556 triệu cp, trang tự chia 1,669. ACBS, Mirae Asset tính trên 928 triệu cp.",
+ "nguon": [
+  {
+   "ten": "ACBS — Cập nhật nhanh PVD",
+   "ngay": "04/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/pvd_cap_nhat_nhanh_04_08_2026.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Ba năm mua giàn, đón làn sóng lớn",
+   "ngay": "31/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/bao_cao_ngan_tong_ctcp_khoan_va_dich_vu_khoan_dau_khi_pvd_vn_mua_ba_nam_mua_gian_don_lan_song_lon.pdf"
+  },
+  {
+   "ten": "SSI — Mở rộng đội giàn thúc đẩy tăng trưởng lợi nhuận",
+   "ngay": "25/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/Mo_rong_oi_gian_thuc_ay_tang_truong_loi_nhuan.pdf"
+  },
+  {
+   "ten": "VPBS — Cập nhật nhanh KQKD Q1/2026",
+   "ngay": "07/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/Bao_cao_cap_nhat_nhanh_KQKD_Q12026.pdf"
+  },
+  {
+   "ten": "BSC — Khẳng định vị thế, bứt phá cùng chu kỳ tài sản mới",
+   "ngay": "23/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVD/Khang_inh_vi_the_but_pha_cung_chu_ky_tai_san_moi.pdf"
+  },
+  {
+   "ten": "Báo Pháp luật — Chốt quyền thưởng 66,9% (GDKHQ 14/7, ĐKCC 15/7/2026)",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/pv-drilling-pvd-chot-quyen-phat-hanh-gan-372-trieu-co-phieu-thuong-loi-nhuan-quy-i-tang-bang-lan.html"
+  },
+  {
+   "ten": "24hMoney — Thưởng 371,88 triệu cp, vốn điều lệ ~9.282 tỷ",
+   "ngay": "07/2026",
+   "link": "https://24hmoney.vn/news/nong-pv-drilling-pvd-chot-quyen-nhan-co-phieu-thuong-ty-le-67-tang-von-len-gan-9-300-ty-c30a2801290.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Mua thêm 2–3 giàn, giá thuê 2026 90.500 USD/ngày (Vietcap)",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/pv-drilling-pvd-len-ke-hoach-mua-them-2-3-gian-khoan-du-bao-gia-thue-nam-2026-dat-90-500-usd-ngay.html"
+  },
+  {
+   "ten": "SGGP — PVD X về Việt Nam 10/2026, dịch vụ từ quý 2/2027",
+   "ngay": "2026",
+   "link": "https://www.sggp.org.vn/pv-drilling-dau-tu-them-gian-khoan-tu-nang-post855551.html"
+  },
+  {
+   "ten": "NHSV (Vietstock) — KQKD Q2/2026: kỹ thuật giếng khoan ~287 tỷ lãi gộp",
+   "ngay": "08/2026",
+   "link": "https://finance.vietstock.vn/downloadedoc/22094"
+  },
+  {
+   "ten": "Doanh nghiệp Hội nhập — Lãi gộp quý II/2026",
+   "ngay": "06/08/2026",
+   "link": "https://doanhnghiephoinhap.vn/lai-gop-quy-ii-cua-dich-vu-khoan-dau-khi-pv-drilling-tang-gap-doi.html"
+  },
+  {
+   "ten": "vnbusiness — BSC hạ khuyến nghị, giảm 9% dự báo LN 2026",
+   "ngay": "08/2026",
+   "link": "https://vnbusiness.vn/bsc-ha-khuyen-nghi-pv-drilling-dieu-chinh-giam-9-du-bao-loi-nhuan-nam-2026.html"
+  },
+  {
+   "ten": "FinanceFeeds (Reuters) — Brent chốt 109,86 USD ngày 16/10",
+   "ngay": "20/10/2026",
+   "link": "https://financefeeds.com/brent-crude-oil-price-110-houthi-saudi-attacks-hormuz-mine-bull-113-bear-104/"
+  },
+  {
+   "ten": "Borr Drilling — KQKD Q2/2026 (73% ngày 2026 đã ký, ~134 nghìn USD/ngày)",
+   "ngay": "08/2026",
+   "link": "https://www.sec.gov/Archives/edgar/data/0001715497/000114036126032598/ef20080031_ex99-2.htm"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Xung đột Mỹ – Iran quanh Hormuz: Brent chốt 109,86 USD ngày 16/10, cao nhất từ tháng 5.",
+     "ng": "Reuters 16/10"
+    },
+    {
+     "h": 1,
+     "t": "Châu Á phụ thuộc dầu khí Trung Đông → nhu cầu tự chủ năng lượng; SSI kéo dài giả định giá thuê cao đến 2030 (trước: 2028).",
+     "ng": "SSI 25/05"
+    },
+    {
+     "h": -1,
+     "t": "Kế hoạch PVD dựa trên Brent 56–60 USD/thùng: giá dầu về vùng này khi căng thẳng lắng sẽ kéo giá thuê lúc tái ký.",
+     "ng": "SSI 25/05 · BSC 23/04"
+    },
+    {
+     "h": 0,
+     "t": "Doanh thu bằng USD nhưng nợ vay ngoại tệ đánh giá lại: Q1/2026 lỗ tỷ giá 90 tỷ.",
+     "ng": "VPBS 07/05"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Giàn tự nâng 361–400 ft: Đông Nam Á 100–110 nghìn USD/ngày, Trung Đông 140–185 nghìn; spot khu vực quý 1/2026 ~99,2 nghìn (+33% so với bình quân 2025).",
+     "ng": "SSI 25/05 (RigLogix) · BSC 23/04"
+    },
+    {
+     "h": -1,
+     "t": "Tỷ lệ sử dụng giàn Đông Nam Á ~74%, thấp hơn 80–90% của 2 năm trước — dư cung khi tái ký nếu nhu cầu chững.",
+     "ng": "SSI 25/05"
+    },
+    {
+     "h": 1,
+     "t": "Lô B – Ô Môn ~911 giếng (2026–2045), Sư Tử Trắng 2B, Lạc Đà Vàng, Đại Hùng Nam; Luật Dầu khí sửa đổi phân cấp cho PVN duyệt kế hoạch mỏ.",
+     "ng": "BSC 23/04 · MAS 31/07"
+    },
+    {
+     "h": 0,
+     "t": "Borr Drilling (toàn cầu) đã ký 73% số ngày 2026 ở ~134 nghìn USD/ngày; giàn đóng mới > 300 triệu USD cần > 200 nghìn/ngày.",
+     "ng": "Borr Q2/2026 · SSI 25/05"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Ba năm mua ba giàn (VIII 2024, IX 2025, X 2026): đội giàn sở hữu từ 5 lên 8 chiếc; mục tiêu thêm 2–3 giàn 2026–2030.",
+     "ng": "MAS 31/07"
+    },
+    {
+     "h": -1,
+     "t": "Không chia cổ tức tiền 2026 để dồn cho đầu tư (4,2 nghìn tỷ kế hoạch 2026); nợ vay 5,5 nghìn tỷ (30/6/2026).",
+     "ng": "BSC 23/04 · SSI 25/05 · BCTC"
+    },
+    {
+     "h": 0,
+     "t": "Thưởng 66,9% từ quỹ đầu tư phát triển (GDKHQ 14/7/2026): vốn điều lệ 9.282 tỷ — không thu tiền, không đổi giá trị doanh nghiệp.",
+     "ng": "BSC 23/04 · Báo Pháp luật"
+    },
+    {
+     "h": 1,
+     "t": "Room ngoại xác lập 50%; PVN nắm 50,42%.",
+     "ng": "BSC 23/04 · ACBS 04/08"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Dịch vụ khoan — 6 giàn tự nâng, 1 giàn TAD, giàn thuê ngoài",
+   "phu": "~55% doanh thu 2025; PVD X (giàn thứ 8) từ quý 2/2027",
+   "so": [
+    [
+     "Doanh thu 2025",
+     "6.006 tỷ",
+     "BSC"
+    ],
+    [
+     "Giàn tự nâng hoạt động Q1/2026",
+     "4,8",
+     "cùng kỳ 3,0"
+    ],
+    [
+     "Giá thuê 6T/2026",
+     "~90 nghìn USD/ngày",
+     "ngang cùng kỳ"
+    ],
+    [
+     "Giàn thuê ngoài Q1/2026",
+     "3,5",
+     "cùng kỳ 1,0"
+    ]
+   ],
+   "y": [
+    {
+     "t": "PVD VIII vào việc 9/2025 (Vietsovpetro, sau đó Malaysia đến hết 2027); PVD IX (> 88 triệu USD) làm cho Vietsovpetro từ 4/2026, hợp đồng 2026–2028.",
+     "ng": "BSC 23/04 · ACBS 04/08"
+    },
+    {
+     "t": "PVD I đã khấu hao hết; PVD VI chạy đủ năm sau đợt bảo dưỡng quý 1/2025.",
+     "ng": "SSI 25/05"
+    },
+    {
+     "t": "Đầu tư 2026 kế hoạch 4.229 tỷ: PVD X, cụm thiết bị sửa giếng (HWU). Ưu tiên giàn đã qua sử dụng (~90–100 triệu USD).",
+     "ng": "SSI 25/05"
+    }
+   ]
+  },
+  {
+   "ten": "Kỹ thuật giếng khoan & dịch vụ liên quan",
+   "phu": "~39% doanh thu 2025; ~45% lãi gộp 6T/2026",
+   "so": [
+    [
+     "Doanh thu 2025",
+     "4.221 tỷ",
+     "BSC"
+    ],
+    [
+     "Lãi gộp 6T/2026",
+     "~530 tỷ",
+     "+43%"
+    ],
+    [
+     "Biên Q1 · Q2/2026",
+     "24% · ~32%",
+     "VPBS · NHSV"
+    ],
+    [
+     "Lô B – Ô Môn",
+     "~911 giếng",
+     "40–50 giếng/năm"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Mở rộng dịch vụ kỹ thuật giếng khoan tại Malaysia với đối tác: đầu tư không lớn, biên cao.",
+     "ng": "ACBS 04/08"
+    },
+    {
+     "t": "Q4/2025 biên chỉ 14% (−5,9 điểm %) vì chi phí nhân công cuối năm — biên mảng này biến động mạnh theo quý.",
+     "ng": "BSC 23/04"
+    }
+   ]
+  },
+  {
+   "ten": "Thương mại, liên doanh",
+   "phu": "Cung ứng vật tư thiết bị; liên doanh dịch vụ kỹ thuật",
+   "so": [
+    [
+     "Doanh thu thương mại 2025",
+     "~640 tỷ",
+     "phần còn lại"
+    ],
+    [
+     "Lãi gộp thương mại Q1/2026",
+     "30 tỷ",
+     "~5% lãi gộp"
+    ],
+    [
+     "Lãi liên doanh 2025",
+     "143 tỷ",
+     "6T/2026: 89"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Doanh thu thương mại Q1/2026 233 tỷ (+455%) chủ yếu theo giá hàng hóa đầu vào, biên giảm.",
+     "ng": "SSI 25/05"
+    }
+   ]
+  }
+ ]
+}

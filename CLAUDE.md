@@ -365,6 +365,26 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   **Giới hạn sử dụng:** 12–14 tác tử chạy song song chạm giới hạn phiên sau ~3,5 giờ (2 lần); tác tử dừng giữa chừng tiếp tục bằng SendMessage sau giờ mở lại.
   Tin nhạy cảm (PNJ: vụ P-Lab) đối chiếu bản gốc bài báo qua runner (`them.txt` → nhánh `ho-so-data`) trước khi đưa lên.
 
+- **Giao diện 20/10/2026 (anh Khoa: "tone màu của mình — xanh, xám đậm, xám lợt"; "định giá 12 tháng lên trên cùng"; "thanh headline đóng băng như Excel").**
+  Bảng màu biểu đồ hồ sơ: c1 `#18A34B` xanh (mảng chính / kỳ này), c2 `#475569` xám đậm, c3 `#7C8BA1` xám vừa, c4 `#C3CCD8` xám nhạt (khác / kỳ trước;
+  đường/chấm c4 đậm hơn một bậc `#A9B4C2`) — đã chạy bộ kiểm màu dataviz (mù màu đạt; xám nhạt < 3:1 nên luôn có nhãn/chú giải). Biểu đồ Tài chính 12 quý
+  (`dashboard_app.js`, mọi mã): doanh thu, P/E xám đậm thay xanh dương. Trang 1: `hsTop` = hộp khuyến nghị gọn (`oKn`) + thang định giá 12 tháng ở đầu;
+  cột phải chỉ còn Thông tin cổ phiếu + Tóm tắt dự phóng. Thanh dính `#hsBar` (`hoso.thanh`: mã, tên, "Phân tích chuyên sâu · cập nhật", giá, giá trị cơ sở,
+  mức) thay dòng tiêu đề cũ, `top: var(--hs-top)` = chiều cao `.topbar` (tính lại khi đổi cỡ). Trên điện thoại `.card{overflow-x:auto}` làm sticky
+  chết → khi có hồ sơ `.card:has(> #ptcs .hsBar){overflow-x:clip}`. Lớp `.tt` trùng CSS toàn trang (điểm thực tế ở bảng theo dõi quý thành khối xanh to) → `.thuc`.
+
+- **Mở rộng 150 mã (20/10/2026, anh Khoa: "mục tiêu là 150 mã thanh khoản; mã chưa có CTCK viết thì tự rà soát báo cáo của nó + các mã trong ngành").**
+  Top 150 GTGD TB20 ngày 20/10 (120 mã mới; danh sách + loại + mẫu trong `kafi-core research/ho-so/ma.txt`). Runner tải thêm tối đa 2 báo cáo cũ (≤ 730 ngày)
+  khi mã không có bản nào trong 240 ngày. Gói số liệu có bảng **cùng ngành** (`goi-so.py`), tài liệu đọc bản gọn (`gon.py`, ~45% ký tự).
+  HUONG-DAN mục "Mã ít hoặc không có báo cáo CTCK": BCTC + công bố (ĐHĐCĐ 2026, Q3/2026) + hồ sơ/báo cáo của mã cùng ngành; định giá neo lịch sử chính mã
+  + trung vị cùng ngành; `ctck: []` thì chân trang tự ghi "chưa có báo cáo CTCK trong 8 tháng — mô hình tự dựng".
+  **Đồng bộ mẹ–con (21/10):** `mo-hinh/<mẹ>.py` đọc thẳng `hoso/<con>.json` (LN 2026E/2027E từng kịch bản, P/E = giá trị vốn ÷ LN 2027E, số cp):
+  FPT←FRT, VSC←HAH (21,9% sau ESOP), VIC←VRE, VPL←VIC (giá trị cơ sở), MSN←MCH; GEX←GEE (GEL, VGC: chờ đồng bộ GEL←VGC rồi GEX←GEL).
+  Làm con trước, mẹ sau; làm lại con thì chạy lại mẹ. Kiểm chéo: so `sotp.con[].ln26/ln27/cp_trieu` với `kich_ban` của hồ sơ con.
+  Mã mới niêm yết chỉ 1 năm BCTC (GEL) vẫn vẽ hồ sơ (phantich.js `ptMo`, không ghi cache). Bộ chụp scratchpad `dg/`: `ky.json` thêm mã thiếu từ
+  `/tmp/cbd` (co-ban-data), `dg-test.js` có `SEL=<css>` (chụp phần tử) và `EVAL=<biểu thức>`. Quy trình giao việc: `research/ho-so/GIAO-VIEC.md`
+  (mục "Bài học"), tác tử dừng vì giới hạn phiên thì `SendMessage` cho chạy tiếp sau giờ mở lại.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`

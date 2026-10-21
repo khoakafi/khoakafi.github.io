@@ -1,0 +1,1203 @@
+{
+ "v": 2,
+ "ma": "VPL",
+ "ten": "CTCP Vinpearl",
+ "nganh": "Nghỉ dưỡng & vui chơi giải trí",
+ "ky": "BCTC Q2/2026 · công bố 6T/2026 (KQKD Q3/2026 chưa ra)",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026 (~cuối 10/2026)",
+ "cp_trieu": 1877.5,
+ "cp_ng": "Vốn điều lệ 18.774,5 tỷ (BCTC 30/6/2026) = 1.793,3 triệu cp phổ thông + 84,15 triệu cổ phiếu ưu đãi cổ tức chuyển đổi (CDPS, 6/2026) — tính như đã chuyển đổi 1:1",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Lãi cốt lõi đã đảo chiều, nhưng giá đang trả {pe_conlai} lần LN 2027E cho khách sạn – vui chơi",
+  "dk": "up_duoi:-15",
+  "khac": "Lãi cốt lõi đã đảo chiều; giá đã về gần giá trị theo lợi nhuận 2027E"
+ },
+ "dong_mo": "EBIT cốt lõi 6T/2026 đạt 933 tỷ (cùng kỳ ≈ 0) khi doanh thu khách sạn – vui chơi +32% và biên gộp lên 34,2%. LN 2027E ~1,7 nghìn tỷ, −42% so với 2026E vì không còn lãi thanh lý tài sản. P/E 25 cộng 69,7 triệu cp VIC cho {gt} ({up}); kịch bản tốt — doanh thu +25%, P/E 35 — cũng chỉ 63,0 nghìn đ.",
+ "luan_diem": [
+  {
+   "so": "933 tỷ",
+   "nhan": "EBIT cốt lõi 6T/2026 (cùng kỳ ≈ 0)",
+   "tieu": "Đòn bẩy vận hành đã chạy",
+   "t": "Doanh thu khách sạn – vui chơi 6T/2026 +32% lên 6.795 tỷ (Q2: khách sạn 1.596 tỷ, tăng ~40%; VinWonders 1.561 tỷ, +26%); công suất phòng 63–65%, +11–12 điểm % nhờ khách Nga/CIS, Ấn Độ, châu Âu. Biên gộp cốt lõi 21,5% → 34,2%, chi phí bán hàng + quản lý chỉ +16% (6T/2025: LN gộp cốt lõi 1.107 tỷ chưa đủ trả 1.200 tỷ chi phí). Mô hình: EBIT cốt lõi 1,9 nghìn tỷ năm 2026E, 2,5 nghìn tỷ 2027E.",
+   "ng": "BCTC Q2/2026 · công bố DN · MBS 08/10 · mô hình"
+  },
+  {
+   "so": "67%",
+   "nhan": "LNTT 6T/2026 là thu nhập khác một lần",
+   "tieu": "Lợi nhuận báo cáo cao hơn nhiều lợi nhuận lặp lại",
+   "t": "LNST 6T 2.180 tỷ = 73% kế hoạch 3.000 tỷ (nâng từ 1.500 sau Q1), nhưng 1.728 tỷ là lãi thanh lý tài sản Q1/2026. Q4/2025 có 3.409 tỷ doanh thu BĐS đi kèm 1,9 nghìn tỷ chi phí tài chính ngoài lãi vay; Hải Vân Bay do VPL đứng tên nhưng VHM hưởng 100% lợi ích qua BCC. Bỏ các khoản này, LN 2027E ~1,7 nghìn tỷ, −42% so với 2026E.",
+   "ng": "BCTC (VNDirect) · báo chí 4–7/2026 · MBS 06/10 (VHM) · mô hình"
+  },
+  {
+   "so": "20,9",
+   "nhan": "nghìn tỷ nợ vay 30/6/2026 (31/3: 9,2)",
+   "tieu": "Vốn cho cụm mới đã về, nhưng không rẻ",
+   "t": "Q2/2026 VPL bán 84,15 triệu cổ phiếu ưu đãi chuyển đổi giá 80.000 đ cho SeaTown, VIAC (6.732 tỷ, cổ tức 6%/năm ≈ 404 tỷ) và 4.907 tỷ trái phiếu 12%, 5 năm cho Làng Vân. Tiền + đầu tư ngắn hạn lên 19,5 nghìn tỷ; ĐHĐCĐ duyệt dùng vốn chào bán cho dự án trọng điểm — Mỹ Lâm mở Q4/2026, sau đó Cần Giờ, Hạ Long. Mô hình tính tài chính ròng 2027E −500 tỷ khi tiền gửi rót vào dự án và lãi vay thôi vốn hóa.",
+   "ng": "BCTC Q2/2026 · HNX · công bố 6/2026 · MBS 08/10"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/E 25 lần LN 2027E cộng cổ phiếu VIC: {up_so} so với giá hiện tại",
+   "t": "Giá trị = 25 × LN 2027E (1,7 nghìn tỷ) + 69,7 triệu cp VIC theo giá thị trường (14,6 nghìn tỷ, ≈ 7,8 nghìn đ/cp). 25 lần cao hơn trung vị khách sạn – giải trí khu vực (17,8; MINT 12,1, Genting 12,3, CENTEL 23,2) vì tăng trưởng; Disney Tokyo (Oriental Land) 36,3. Theo giá hôm nay thị trường trả {pe_conlai} lần LN 2027E cho phần khách sạn – vui chơi; free float chỉ ~14% (VIC 81,7%, CDPS 4,5%).",
+   "ng": "mô hình · MarketScreener, HALO 8–10/2026 · MBS 08/10",
+   "dk": "up_duoi:-15",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "P/E 25 lần LN 2027E cộng cổ phiếu VIC: {up_so}",
+    "t": "Giá trị = 25 × LN 2027E (1,7 nghìn tỷ) + 69,7 triệu cp VIC theo giá thị trường (14,6 nghìn tỷ). Giá đã về gần mức này: thị trường trả {pe_conlai} lần LN 2027E cho phần khách sạn – vui chơi, so với trung vị khu vực 17,8 và Disney Tokyo 36,3. Cửa tăng tiếp nằm ở biên: mỗi 2 điểm % biên gộp 2027 ±3,7 nghìn đ/cp.",
+    "ng": "mô hình · MarketScreener, HALO 8–10/2026"
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1102,
+   3003,
+   1734
+  ],
+  "ln_truoc": 2550,
+  "eps": [
+   587,
+   1599,
+   924
+  ],
+  "bv": [
+   19491,
+   24597,
+   25305
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Doanh thu cốt lõi (nghìn tỷ)",
+    "v": [
+     11.4,
+     14.2,
+     16.4
+    ],
+    "d": 1
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     3.2,
+     7.3,
+     3.7
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS, BVPS theo 1.877,5 triệu cp (gồm CDPS quy đổi 1:1). 2026E gồm 1.694 tỷ thu nhập khác Q1. Chưa chia cổ tức tiền (ĐHĐCĐ 2026 giữ lại toàn bộ LN 2025)."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Kinh doanh (LN gộp − bán hàng − quản lý)",
+    "mau": "c1",
+    "v": [
+     2800,
+     1902,
+     2540
+    ]
+   },
+   {
+    "ten": "Tài chính ròng",
+    "mau": "c2",
+    "v": [
+     -1724,
+     -108,
+     -500
+    ]
+   },
+   {
+    "ten": "Thu nhập khác",
+    "mau": "c4",
+    "v": [
+     -59,
+     1694,
+     0
+    ]
+   }
+  ],
+  "ng": "2025A: kinh doanh gồm lãi gộp BĐS Q4 (doanh thu 3.409 tỷ), tài chính ròng gồm 1,9 nghìn tỷ chi phí ngoài lãi vay cùng quý. 2026E: thu nhập khác là lãi thanh lý tài sản Q1 — chiếm 49% LNTT; 2027E không giả định khoản một lần."
+ },
+ "sotp": {
+  "con": [
+   {
+    "ma": "VIC",
+    "ten": "Cổ phiếu VIC",
+    "cp_trieu": 7733.5,
+    "so_huu": 0.009013,
+    "ln26": 17938,
+    "ln27": 10291,
+    "gtgd": 569,
+    "mau": "c2"
+   }
+  ],
+  "conlai": {
+   "ten": "Khách sạn – vui chơi (hoạt động VPL)",
+   "mau": "c1",
+   "ln27": 1734,
+   "kv": [
+    [
+     "Minor International (Thái Lan)",
+     12.1
+    ],
+    [
+     "Genting Bhd (Malaysia)",
+     12.3
+    ],
+    [
+     "Central Plaza Hotel (Thái Lan)",
+     23.2
+    ],
+    [
+     "Oriental Land – Disney Tokyo (Nhật)",
+     36.3
+    ]
+   ],
+   "kv_tv": 17.8,
+   "kv_ten": "khách sạn – giải trí khu vực"
+  },
+  "kv_chi_so": "P/E 2026F",
+  "kv_max": 40,
+  "kv_ng": "VPL nắm 69,7 triệu cp VIC (0,90%) sau đợt chuyển 19/5/2026; LN VIC theo hồ sơ VIC của trang. Khu vực: P/E 2026F MINT 12,1 (MarketScreener 12/10), Genting Bhd 12,3 (20/08), Oriental Land 36,3; CENTEL 23,2 là P/E 4 quý (HALO 10/2026)",
+  "ng": "Số cp VIC 7.733,5 triệu (VDL 30/6/2026); VPL 1.877,5 triệu (gồm CDPS)"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: doanh thu cốt lõi → biên → lợi nhuận",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Doanh thu (tỷ đồng)"
+   },
+   {
+    "ten": "Khách sạn – vui chơi (cốt lõi)",
+    "v": [
+     11362,
+     14247,
+     16384
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chuyển nhượng BĐS",
+    "s": [
+     "4.177",
+     "—",
+     "—"
+    ]
+   },
+   {
+    "ten": "Biên gộp cốt lõi (%)",
+    "s": [
+     "9T: 23,4",
+     "6T: 34,2 · 6T cuối: 34",
+     "35"
+    ]
+   },
+   {
+    "ten": "Bán hàng + quản lý (% DT cốt lõi)",
+    "s": [
+     "22,8",
+     "20,5 · 21",
+     "19,5"
+    ]
+   },
+   {
+    "nhom": "Lợi nhuận (tỷ đồng)"
+   },
+   {
+    "ten": "Kinh doanh (LN gộp − BH − QL)",
+    "v": [
+     2800,
+     1902,
+     2540
+    ]
+   },
+   {
+    "ten": "Tài chính ròng",
+    "v": [
+     -1724,
+     -108,
+     -500
+    ]
+   },
+   {
+    "ten": "Thu nhập khác",
+    "v": [
+     -59,
+     1694,
+     0
+    ]
+   },
+   {
+    "ten": "LN trước thuế",
+    "v": [
+     1017,
+     3488,
+     2040
+    ]
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     1102,
+     3003,
+     1734
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     587,
+     1599,
+     924
+    ],
+    "eps": 1
+   },
+   {
+    "nhom": "Bảng cân đối"
+   },
+   {
+    "ten": "Vốn chủ cuối kỳ (nghìn tỷ)",
+    "v": [
+     36.6,
+     46.2,
+     47.5
+    ],
+    "d": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     3.2,
+     7.3,
+     3.7
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Nợ vay − tiền, ĐTNH (nghìn tỷ)",
+    "s": [
+     "7,9",
+     "1,4 (30/6)",
+     "—"
+    ]
+   }
+  ],
+  "ghi": "Cốt lõi = khách sạn, VinWonders, golf, dịch vụ (không gồm chuyển nhượng BĐS). 2025A: cốt lõi Q1–Q3 theo công bố DN, Q4 = tổng − 3.409 tỷ BĐS; 2025A \"kinh doanh\" gồm lãi gộp BĐS. 2026E = 6T thực tế + 6T cuối; 2027E không giả định BĐS, thanh lý tài sản. Vốn chủ 2027E trừ cổ tức CDPS 6%."
+ },
+ "gia_dinh": [
+  {
+   "ten": "DT cốt lõi 6T cuối 2026 so cùng kỳ",
+   "v": [
+    "+12%",
+    "+20%",
+    "+28%"
+   ],
+   "ly_do": "6T/2026 +32% (Q1 +43%, Q2 +22%); 6T cuối 2025 6.210 tỷ; khách quốc tế 9T/2026 +14,5%, tháng 9 +16%"
+  },
+  {
+   "ten": "Biên gộp cốt lõi 6T cuối 2026",
+   "v": [
+    "32%",
+    "34%",
+    "37%"
+   ],
+   "ly_do": "6T/2026 34,2% (Q1 33,5, Q2 35,0); 2025: Q1 18,5, Q2 24,2, Q3 26,4 — quý 3 cao hơn nửa đầu năm"
+  },
+  {
+   "ten": "Bán hàng + quản lý / DT cốt lõi (6T cuối 2026 · 2027)",
+   "v": [
+    "22 · 21%",
+    "21 · 19,5%",
+    "20 · 18%"
+   ],
+   "ly_do": "6T/2026 20,5% (chi phí +16% khi doanh thu +32%); 6T cuối 2025 22,5%"
+  },
+  {
+   "ten": "Tăng trưởng DT cốt lõi 2027",
+   "v": [
+    "+6%",
+    "+15%",
+    "+25%"
+   ],
+   "ly_do": "2025 +34%, 6T/2026 +32%; cụm Mỹ Lâm (khách sạn, VinWonders, golf, onsen) từ Q4/2026; Cần Giờ, Hạ Long sau đó"
+  },
+  {
+   "ten": "Biên gộp cốt lõi 2027",
+   "v": [
+    "33%",
+    "35%",
+    "38%"
+   ],
+   "ly_do": "Cơ sở +1 điểm % so với 2026E nhờ công suất phòng; tốt: thêm khách quốc tế giá phòng cao; xấu: dừng ở mức 2026, cụm mới kéo biên năm đầu"
+  },
+  {
+   "ten": "Tài chính ròng (6T cuối 2026 · 2027, tỷ)",
+   "v": [
+    "−300 · −700",
+    "0 · −500",
+    "+200 · −200"
+   ],
+   "ly_do": "Q1–Q3/2025 ròng ~0; Q2/2026 +225; nợ vay 20,9 nghìn tỷ, trái phiếu 12%; 6,7 nghìn tỷ CDPS rót vào dự án, lãi vay thôi vốn hóa khi vận hành"
+  },
+  {
+   "ten": "Thuế suất thực tế",
+   "v": [
+    "15%",
+    "15%",
+    "15%"
+   ],
+   "ly_do": "6T/2026 13,5% (339/2.519 tỷ); 2025 thuế âm do thuế hoãn lại"
+  },
+  {
+   "ten": "P/E trên LN 2027E",
+   "v": [
+    "20",
+    "25",
+    "35"
+   ],
+   "ly_do": "Khu vực: MINT 12,1, Genting 12,3, CENTEL 23,2, Oriental Land 36,3 (trung vị 17,8); VPL niêm yết 5/2025, chưa đủ 24 tháng P/E lịch sử; hồ sơ VIC dùng 25 cho VPL"
+  },
+  {
+   "ten": "Giá VIC cho 69,7 triệu cp (nghìn đ)",
+   "v": [
+    "146",
+    "209",
+    "209"
+   ],
+   "ly_do": "Giá 20/10; xấu −30%. Hồ sơ VIC của trang định giá cơ sở 40,5 nghìn đ — rủi ro giảm lớn hơn"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 2516,
+   "ln27": 892,
+   "gia": 14.9,
+   "mo_ta": "DT cốt lõi 2027 +6%, biên gộp 33%, BH+QL 21%, tài chính ròng −700 tỷ; P/E 20; VIC −30%"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 3003,
+   "ln27": 1734,
+   "gia": 30.8,
+   "mo_ta": "DT cốt lõi 2027 +15%, biên gộp 35%, BH+QL 19,5%, tài chính ròng −500 tỷ; P/E 25; VIC giá 20/10"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 3499,
+   "ln27": 2963,
+   "gia": 63.0,
+   "mo_ta": "DT cốt lõi 2027 +25%, biên gộp 38%, BH+QL 18%, tài chính ròng −200 tỷ; P/E 35 như Disney Tokyo"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "P/E × LN 2027E + 69,7 triệu cp VIC theo giá thị trường",
+  "ck": 0,
+  "cp": 1877.5,
+  "phan": [
+   {
+    "ten": "Khách sạn – vui chơi",
+    "mau": "c1",
+    "x": [
+     892,
+     1734,
+     2963
+    ],
+    "boi": [
+     20,
+     25,
+     35
+    ],
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     17840,
+     43350,
+     103705
+    ]
+   },
+   {
+    "ten": "69,7 triệu cp VIC",
+    "mau": "c2",
+    "x": [
+     146,
+     209,
+     209
+    ],
+    "boi": [
+     69.7,
+     69.7,
+     69.7
+    ],
+    "x_ten": "Giá VIC (nghìn đ)",
+    "boi_ten": "triệu cp",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     10176,
+     14567,
+     14567
+    ]
+   }
+  ],
+  "von": [
+   28016,
+   57917,
+   118272
+  ],
+  "gia": [
+   14.9,
+   30.8,
+   63.0
+  ]
+ },
+ "nhay": [
+  [
+   "P/E ±5 lần",
+   null,
+   4.6
+  ],
+  [
+   "Biên gộp cốt lõi 2027 ±2 điểm %",
+   278,
+   3.7
+  ],
+  [
+   "Tài chính ròng 2027 ±300 tỷ",
+   255,
+   3.4
+  ],
+  [
+   "Tăng trưởng DT cốt lõi 2027 ±10 điểm %",
+   188,
+   2.5
+  ],
+  [
+   "Giá VIC ±30%",
+   null,
+   2.3
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    168,
+    412,
+    660
+   ],
+   "ck": 169
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    168,
+    411,
+    659
+   ],
+   "ck": 674
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    2516,
+    3003,
+    3499
+   ]
+  }
+ ],
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   3003
+  ],
+  "cuoi": [
+   "2027E",
+   1734
+  ],
+  "buoc": [
+   [
+    "EBIT cốt lõi +34%",
+    638
+   ],
+   [
+    "Tài chính ròng",
+    -392
+   ],
+   [
+    "Bỏ lãi thanh lý tài sản Q1/2026",
+    -1694
+   ],
+   [
+    "Thuế",
+    179
+   ]
+  ],
+  "y": "Kinh doanh cốt lõi thêm 638 tỷ nhưng không bù được 1.694 tỷ lãi thanh lý tài sản của 2026 và chi phí tài chính tăng khi vốn được rót vào dự án: LN 2027E −42%.",
+  "ng": "mô hình"
+ },
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Quý cao điểm hè. Cơ sở: LN ~412 tỷ (Q3/2025: 169), biên gộp cốt lõi ~34%; xem thêm tài chính ròng sau đợt CDPS và trái phiếu 12%.",
+   "tac": [
+    "≥ 412 tỷ",
+    "khớp cơ sở; dưới 168 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "biên gộp, tài chính ròng"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Cụm Mỹ Lâm (Tuyên Quang) vận hành",
+   "ct": "Khách sạn, VinWonders, sân golf, onsen và dưỡng lão Vin New Horizon 222 phòng — cụm mới đầu tiên sau Nha Trang, Phú Quốc, Nam Hội An.",
+   "tac": [
+    "+1,3 nghìn đ/cp",
+    "mỗi 5 điểm % tăng trưởng doanh thu 2027"
+   ],
+   "theo_doi": "ngày mở cửa, công suất phòng"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Khách quốc tế tăng nhanh",
+   "ct": "9T/2026 17,7 triệu lượt (+14,5%), tháng 9 +16%, mục tiêu 25 triệu; VPL đẩy nguồn Nga/CIS, Ấn Độ, châu Âu, Mỹ để bớt phụ thuộc mùa thấp điểm.",
+   "tac": [
+    "±2,5 nghìn đ/cp",
+    "mỗi 10 điểm % tăng trưởng DT cốt lõi 2027"
+   ],
+   "theo_doi": "khách quốc tế, công suất phòng"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Biên tiếp tục mở rộng",
+   "ct": "Biên gộp cốt lõi đã lên 34,2% (6T/2025: 21,5%); kịch bản tốt: 38% và bán hàng + quản lý 18% doanh thu → LN 2027E 3,0 nghìn tỷ.",
+   "tac": [
+    "+3,7 nghìn đ/cp",
+    "mỗi 2 điểm % biên gộp 2027"
+   ],
+   "theo_doi": "biên gộp theo quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Định giá cao, free float mỏng",
+   "ct": "P/E 4 quý ~50 trên LN có 1,7 nghìn tỷ một lần; VIC 81,7%, CDPS 4,5% khóa 1 năm, GTGD ~55 tỷ/phiên — giá dễ biến động mạnh khi cung tăng.",
+   "tac": [
+    "{up_so}",
+    "nếu giá về giá trị cơ sở"
+   ],
+   "theo_doi": "P/E trên LN cốt lõi"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Trái phiếu VIC đổi được cổ phiếu VPL",
+   "ct": "VIC phát hành 325 triệu USD trái phiếu quốc tế 5 năm (16/12/2025) kèm quyền nhận cổ phiếu VPL — ~8,6 nghìn tỷ, ≈ 5,7% vốn hóa VPL; nguồn cung tiềm năng vào free float.",
+   "tac": "",
+   "theo_doi": "giá hoán đổi, thời điểm thực hiện"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Giao dịch trong tập đoàn, khoản một lần",
+   "ct": "Phải thu ngắn hạn 17,9 → 5,8 nghìn tỷ trong Q1/2026 khi tiền gửi tăng 10,5; Hải Vân Bay đi qua BCC với VHM; LN 2026 dựa vào 1.728 tỷ lãi thanh lý tài sản.",
+   "tac": [
+    "±3,4 nghìn đ/cp",
+    "mỗi 300 tỷ tài chính ròng 2027"
+   ],
+   "theo_doi": "thuyết minh BCTC: bên liên quan"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Chi phí vốn tăng",
+   "ct": "Nợ vay 20,9 nghìn tỷ (31/3: 9,2), trái phiếu 12%; cổ tức CDPS 6% ≈ 404 tỷ/năm trả trước cổ đông phổ thông; chưa chia cổ tức tiền.",
+   "tac": [
+    "−404 tỷ/năm",
+    "cổ tức CDPS, trả trước cổ đông phổ thông"
+   ],
+   "theo_doi": "lãi vay, phần lãi vay vốn hóa"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "hai",
+   "tieu": "Giá cổ phiếu VIC",
+   "ct": "69,7 triệu cp VIC ≈ 7,8 nghìn đ/cp VPL theo giá 20/10; hồ sơ VIC của trang định giá cơ sở 40,5 nghìn đ — nếu VIC về mức đó, phần này còn 2,8 nghìn tỷ.",
+   "tac": [
+    "±2,3 nghìn đ/cp",
+    "mỗi 30% giá VIC"
+   ],
+   "theo_doi": "giá VIC, số cp VIC còn nắm"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu theo quý: cốt lõi và BĐS",
+   "kieu": "cot_chong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Khách sạn – vui chơi",
+     "v": [
+      2.44,
+      2.72,
+      3.09,
+      3.12,
+      3.48,
+      3.31
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chuyển nhượng BĐS",
+     "v": [
+      0.54,
+      0.23,
+      0.01,
+      3.41,
+      0.0,
+      0.0
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Cốt lõi 6T/2026 +32%; Q4/2025 có 3,4 nghìn tỷ BĐS, 6T/2026 không có.",
+   "ng": "Cốt lõi 2025: công bố DN (báo chí); BĐS Q4/2025: báo chí; còn lại BCTC"
+  },
+  {
+   "ten": "Biên gộp cốt lõi: 2026 so với 2025",
+   "kieu": "cot",
+   "dv": "%",
+   "so_le": 1,
+   "nhan": [
+    "Q1",
+    "Q2",
+    "Q3"
+   ],
+   "ss": [
+    {
+     "ten": "2025",
+     "v": [
+      18.5,
+      24.2,
+      26.4
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "2026",
+     "v": [
+      33.5,
+      35.0,
+      null
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Q1 18,5% → 33,5%, Q2 24,2% → 35,0%; Q3/2025 26,4% là mốc so sánh cho Q3/2026.",
+   "ng": "LN gộp cốt lõi 2025: công bố DN; 2026: BCTC"
+  },
+  {
+   "ten": "LN trước thuế theo nguồn",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "so_le": 0,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Kinh doanh",
+     "v": [
+      143,
+      243,
+      146,
+      2268,
+      425,
+      508
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tài chính ròng",
+     "v": [
+      85,
+      -37,
+      -1,
+      -1771,
+      -333,
+      225
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Thu nhập khác",
+     "v": [
+      -61,
+      8,
+      0,
+      -6,
+      1728,
+      -34
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Kinh doanh tăng từ 143 lên 508 tỷ/quý (Q4/2025 có lãi gộp BĐS); tài chính và thanh lý tài sản quyết định LN của Q4/2025, Q1/2026.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "Nợ vay, tiền gửi và phải thu",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      12.9,
+      12.1,
+      12.9,
+      12.5,
+      11.6,
+      9.2,
+      20.9
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      3.5,
+      3.6,
+      4.1,
+      6.9,
+      3.7,
+      14.2,
+      19.5
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Phải thu ngắn hạn",
+     "v": [
+      15.6,
+      15.4,
+      19.0,
+      17.7,
+      17.9,
+      5.8,
+      4.1
+     ],
+     "mau": "c4",
+     "net": false
+    }
+   ],
+   "y": "Q1/2026 phải thu 17,9 → 5,8 nghìn tỷ, tiền gửi tăng tương ứng; Q2/2026 CDPS + trái phiếu + vay mới đưa nợ vay lên 20,9 nghìn tỷ.",
+   "ng": "BCTC (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 16000,
+    "th": 6795,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 24/04/2026 · BCTC Q2"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 3000,
+    "th": 2180,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 24/04/2026 · BCTC Q2"
+   }
+  ],
+  "y": "LNST 6T đã 73% kế hoạch nhưng 1.728 tỷ là lãi thanh lý tài sản; doanh thu mới 42%. Cơ sở: LN cả năm 3,0 nghìn tỷ — đạt kế hoạch nhờ khoản một lần; doanh thu 14,2 nghìn tỷ (89% kế hoạch) nếu không có doanh thu BĐS.",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "Khách sạn – nghỉ dưỡng",
+   "phu": "33 khách sạn, khu nghỉ dưỡng, hơn 16.500 phòng (Vietcap 9/2025); thương hiệu mới Vinpearl Legendlux (6 sao), VinFun (lifestyle)",
+   "so": [
+    [
+     "Doanh thu Q2/2026",
+     "1.596 tỷ",
+     "~+40%"
+    ],
+    [
+     "Công suất phòng Q1/2026",
+     "65%",
+     "+12 điểm %"
+    ],
+    [
+     "Công suất phòng 6T/2026",
+     "63%",
+     "+11 điểm %"
+    ],
+    [
+     "Thị phần khách sạn 5 sao",
+     "~20%",
+     "theo số phòng, 2023"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Nguồn khách quốc tế đa dạng hơn: Nga/CIS, Ấn Độ, châu Âu, Mỹ, Trung Đông bên cạnh Trung Quốc, Hàn Quốc — đỡ áp lực mùa thấp điểm.",
+     "ng": "MBS 08/10/2026 · báo chí 4/2026"
+    },
+    {
+     "t": "Cần Giờ: hợp tác thương hiệu quản lý khách sạn quốc tế cho một phần tổ hợp; Vietcap ước VPL nắm gần 20% phòng 5 sao cả nước (2023).",
+     "ng": "MBS 08/10/2026 · Vietcap 05/09/2025"
+    }
+   ]
+  },
+  {
+   "ten": "VinWonders – vui chơi giải trí",
+   "phu": "12 công viên và khu vui chơi; khách nội địa 70–80% lượt khách",
+   "so": [
+    [
+     "Doanh thu Q2/2026",
+     "1.561 tỷ",
+     "+26%"
+    ],
+    [
+     "Khách nội địa",
+     "70–80%",
+     "lượt khách"
+    ],
+    [
+     "Doanh thu cốt lõi 2025",
+     "11,4 nghìn tỷ",
+     "+34%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Mục tiêu đưa VinWonders vào nhóm thương hiệu vui chơi hàng đầu thế giới; khách nội địa ổn định giữ doanh thu đều quanh năm.",
+     "ng": "ĐHĐCĐ 24/04/2026 · MBS 08/10/2026"
+    },
+    {
+     "t": "Siêu cụm (khách sạn + VinWonders + golf trong một điểm đến) dự kiến chiếm ~50% số phòng, 70% công suất golf, 60% mảng công viên vào 2030.",
+     "ng": "Mirae Asset 17/11/2025 (Vingroup Investor Day)"
+    }
+   ]
+  },
+  {
+   "ten": "Dự án mới và vốn",
+   "phu": "Mỹ Lâm (Q4/2026), Cần Giờ, Hạ Long; dưỡng lão Vin New Horizon; ra nước ngoài là hướng dài hạn",
+   "so": [
+    [
+     "CDPS 6/2026",
+     "6.732 tỷ",
+     "cổ tức 6%"
+    ],
+    [
+     "Trái phiếu VPL12601",
+     "4.907 tỷ",
+     "12%, 5 năm"
+    ],
+    [
+     "Nợ vay 30/6",
+     "20,9 nghìn tỷ",
+     "31/3: 9,2"
+    ],
+    [
+     "Cổ phiếu VIC",
+     "69,7 triệu",
+     "0,90% VIC"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Vin New Horizon Mỹ Lâm 222 phòng, ra mắt Q4/2026; mở rộng sang Cần Giờ, Hạ Long.",
+     "ng": "MBS 08/10/2026"
+    },
+    {
+     "t": "Hải Vân Bay (Làng Vân, Đà Nẵng, 512 ha) do VPL đứng tên, VHM hưởng 100% lợi ích qua hợp đồng BCC; trái phiếu 4.907 tỷ dùng cho dự án này.",
+     "ng": "MBS 06/10/2026 (VHM) · HNX"
+    },
+    {
+     "t": "Cổ phiếu VIC: 174,9 triệu (3/2026); ~85 triệu chuyển cho trái chủ trái phiếu 150 triệu USD 9,5% (16 và 26/3/2026); sau các đợt chuyển đến 19/5/2026 còn 69,7 triệu (0,90% VIC).",
+     "ng": "Báo Pháp luật 3/2026 · Nhà Đầu Tư 5/2026"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "9T/2026 khách quốc tế 17,7 triệu lượt (+14,5%), tháng 9 +16%; mục tiêu 25 triệu cả năm — du lịch toàn cầu 6T/2026 chỉ +0,4%.",
+     "h": 1,
+     "ng": "Cục Du lịch Quốc gia, UN Tourism qua VietnamPlus 10/2026"
+    },
+    {
+     "t": "Trung Quốc (3,9 triệu) và Hàn Quốc (~3 triệu) chiếm gần 40% khách quốc tế — rủi ro tập trung nguồn khách.",
+     "h": -1,
+     "ng": "VietnamPlus 10/2026"
+    },
+    {
+     "t": "Mục tiêu 50 triệu khách quốc tế năm 2030, mở rộng 14 cảng hàng không quốc tế; thị thực thông thoáng hơn.",
+     "h": 1,
+     "ng": "Mirae Asset 17/11/2025"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "Khách sạn – giải trí khu vực: P/E 2026F MINT 12,1, Genting 12,3; CENTEL 23,2 (4 quý); Disney Tokyo 36,3 — trung vị 17,8.",
+     "h": 0,
+     "ng": "MarketScreener, HALO 8–10/2026"
+    },
+    {
+     "t": "Mã du lịch niêm yết trong nước nhỏ (VNG, OCH, SGH, DSN: vốn hóa dưới 2,5 nghìn tỷ, P/E 4 quý 6–22) — không đủ làm nhóm so sánh.",
+     "h": 0,
+     "ng": "BCTC VNDirect, giá 20/10/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Siêu cụm khách sạn + VinWonders + golf trong hệ sinh thái Vingroup: chia sẻ hạ tầng, khách lưu trú dài hơn, chi tiêu nhiều hơn.",
+     "h": 1,
+     "ng": "MBS 08/10/2026 · Mirae Asset 17/11/2025"
+    },
+    {
+     "t": "VIC 81,7%, CDPS 4,5% (khóa 1 năm): free float ~14%; VIC có trái phiếu quốc tế đổi được cổ phiếu VPL.",
+     "h": -1,
+     "ng": "MBS 08/10/2026 · Mekong ASEAN 6/2026 · The Leader 3/2026"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "MBS",
+   "ngay": "2026-10-08",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "ghi chú gặp nhà đầu tư",
+   "y": "Biên LN +7 điểm %, công suất phòng +11 điểm % trong 6T/2026; giữ kế hoạch 16.000 / 3.000 tỷ dù đã đạt 71% LN; cụm Mỹ Lâm, Cần Giờ, Hạ Long; dưỡng lão Vin New Horizon từ Q4/2026.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VPL/20261008_vpl_bcpt_bao_cao_gap_go_nha_dau_tu_thang_10_2026.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ một ghi chú gặp nhà đầu tư (MBS 08/10/2026) trong 8 tháng, không có dự phóng hay giá mục tiêu; mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh khách sạn – giải trí khu vực.",
+ "nguon": [
+  {
+   "ten": "MBS — VPL, gặp gỡ nhà đầu tư tháng 10/2026",
+   "ngay": "08/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VPL/20261008_vpl_bcpt_bao_cao_gap_go_nha_dau_tu_thang_10_2026.pdf"
+  },
+  {
+   "ten": "MBS — VHM, gặp gỡ nhà đầu tư (Hải Vân Bay qua BCC)",
+   "ngay": "06/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/20261006_vhm_bcpt_bao_cao_gap_go_nha_dau_tu_thang_10_2026.pdf"
+  },
+  {
+   "ten": "Vietcap — VIC: mảng khách sạn nghỉ dưỡng, trái phiếu hoán đổi Vinpearl",
+   "ngay": "05/09/2025",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VIC/Loi_nhuan_mang_bat_ong_san_tich_cuc_nguon_von_ho_tro_manh_me_tu_Chu_tich_trong_nua_cuoi_nam_2025.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Vingroup Investor Day 2025 (siêu cụm Vinpearl)",
+   "ngay": "17/11/2025",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VIC/tap_doan_vingroup_vic_vn_khong_khuyen_nghi_cap_nhap_thong_tin_tu_hoi_nghi_nha_dau_tu_vingroup_2025.pdf"
+  },
+  {
+   "ten": "VietnamFinance — ĐHĐCĐ 2026: lãi 3.000 tỷ, tối đa 100 triệu cổ phiếu ưu đãi",
+   "ngay": "04/2026",
+   "link": "https://vietnamfinance.vn/dhdcd-vinpearl-dat-muc-tieu-lai-3000-ty-chao-ban-toi-da-100-trieu-co-phieu-uu-dai-d143894.html"
+  },
+  {
+   "ten": "VietnamFinance — cổ phiếu ưu đãi giá 80.000 đ, cổ tức 6%",
+   "ngay": "06/2026",
+   "link": "https://vietnamfinance.vn/vinpearl-muon-chao-ban-100-trieu-co-phieu-uu-dai-gia-80000-dong-d146506.html"
+  },
+  {
+   "ten": "VietnamFinance — 255 triệu USD từ SeaTown, Oman (CDPS)",
+   "ngay": "06/2026",
+   "link": "https://vietnamfinance.vn/vinpearl-thu-hut-255-trieu-usd-tu-cac-nha-dau-tu-quoc-te-khang-dinh-trien-vong-tang-truong-dai-han-d146675.html"
+  },
+  {
+   "ten": "Mekong ASEAN — hoàn tất chào bán, thu 6.732 tỷ",
+   "ngay": "06/2026",
+   "link": "https://mekongasean.vn/vinpearl-hoan-tat-chao-ban-co-phieu-thu-ve-6732-ty-dong-56607.html"
+  },
+  {
+   "ten": "Báo Pháp luật — trái phiếu 4.907 tỷ, lãi 12%",
+   "ngay": "06/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vinpearl-vpl-vua-huy-dong-duoc-hon-4-900-ty-dong-qua-kenh-trai-phieu.html"
+  },
+  {
+   "ten": "MBS — báo cáo trái phiếu VPL12601",
+   "ngay": "30/07/2026",
+   "link": "https://mbs.com.vn/files/uploads/2026/07/VPL12601_BCtraiphieu_20260730.pdf"
+  },
+  {
+   "ten": "Báo Pháp luật — Q1/2026: lãi 1.508 tỷ, lấp đầy 65%",
+   "ngay": "04/2026",
+   "link": "https://baophapluat.vn/vinpearl-vpl-bao-lai-sau-thue-quy-i-dat-1-508-ty-dong-ty-le-lap-day-he-thong-luu-tru-tang-len-muc-65.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Q1/2026: tài chính, thu nhập khác",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/vinpearl-hoan-thanh-50-ke-hoach-loi-nhuan-nam-sau-quy-1-54635.html"
+  },
+  {
+   "ten": "Người Quan Sát — 6T/2026: doanh thu cốt lõi +33%",
+   "ngay": "07/2026",
+   "link": "https://nguoiquansat.vn/vinpearl-duy-tri-da-tang-truong-manh-doanh-thu-kinh-doanh-cot-loi-tang-33-trong-6-thang-dau-nam-307433.html"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — 6T/2026: khách sạn, VinWonders",
+   "ngay": "07/2026",
+   "link": "https://thitruongtaichinhtiente.vn/vinpearl-lai-hon-2-100-ty-dong-trong-nua-dau-nam-gap-8-lan-cung-ky-84624.html"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — Q1/2025: doanh thu, LN gộp cốt lõi",
+   "ngay": "04/2025",
+   "link": "https://thitruongtaichinhtiente.vn/quy-i-doanh-thu-dich-vu-khach-san-vinpearl-tang-45-so-voi-cung-ky-2024-len-hon-2-400-ty-dong-67419.html"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — Q2/2025: LN gộp cốt lõi 657 tỷ",
+   "ngay": "07/2025",
+   "link": "https://thitruongtaichinhtiente.vn/quy-ii-2025-loi-nhuan-gop-tu-hoat-dong-kinh-doanh-cot-loi-cua-vinpearl-tang-183-so-voi-cung-ky-69293.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Q3/2025: doanh thu cốt lõi 3.094 tỷ",
+   "ngay": "10/2025",
+   "link": "https://doanhnhan.baophapluat.vn/vinpearl-vpl-bao-lai-quy-32025-169-ty-dong-loi-nhuan-gop-kinh-doanh-cot-loi-tang-vot-669-88404.html"
+  },
+  {
+   "ten": "Báo Pháp luật — 2025: khách sạn +34%, BĐS Q4 3.409 tỷ",
+   "ngay": "01/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vinpearl-vpl-doanh-thu-nam-2025-vuot-15-500-ty-dong-mang-khach-san-tang-truong-34.html"
+  },
+  {
+   "ten": "Báo Pháp luật — hoán đổi 90 triệu cp VIC cho trái chủ",
+   "ngay": "03/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vinpearl-vpl-hoan-doi-90-trieu-co-phieu-vic-cho-trai-chu-quoc-te-truoc-them-dhdcd-2026.html"
+  },
+  {
+   "ten": "Nhà Đầu Tư — 15 triệu cp VIC sang HSBC, VPL còn 69,7 triệu",
+   "ngay": "05/2026",
+   "link": "https://nhadautu.vn/gan-15-trieu-co-phieu-vic-sang-tay-cho-hsbc-d105141.html"
+  },
+  {
+   "ten": "The Leader — VIC trái phiếu quốc tế kèm quyền nhận cổ phiếu VPL",
+   "ngay": "03/2026",
+   "link": "https://theleader.vn/vingroup-muon-huy-dong-350-trieu-usd-trai-phieu-quoc-te-d44519.html"
+  },
+  {
+   "ten": "Mekong ASEAN — dự án mới, Mỹ Lâm Q4/2026",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/vinpearl-he-lo-loat-du-an-moi-muc-tieu-dua-vinwonders-len-so-mot-the-gioi-54477.html"
+  },
+  {
+   "ten": "VietnamPlus — 17,7 triệu khách quốc tế 9T/2026",
+   "ngay": "10/2026",
+   "link": "https://www.vietnamplus.vn/du-lich-viet-don-177-trieu-khach-sau-9-thang-thi-truong-nao-dang-tang-toc-post1139852.vnp"
+  },
+  {
+   "ten": "MarketScreener — Minor International, P/E dự phóng",
+   "ngay": "12/10/2026",
+   "link": "https://ca.marketscreener.com/quote/stock/MINOR-INTERNATIONAL-6491674/valuation/"
+  },
+  {
+   "ten": "MarketScreener — Genting Bhd, P/E dự phóng",
+   "ngay": "20/08/2026",
+   "link": "https://in.marketscreener.com/quote/stock/GENTING-6491224/valuation/"
+  },
+  {
+   "ten": "MarketScreener — Oriental Land, P/E dự phóng",
+   "ngay": "2026",
+   "link": "https://uk.marketscreener.com/quote/stock/ORIENTAL-LAND-CO-LTD-6492067/"
+  },
+  {
+   "ten": "HALO — Central Plaza Hotel, P/E 4 quý",
+   "ngay": "10/2026",
+   "link": "https://www.halo-technologies.com/markets/shares/bkk/centel"
+  }
+ ]
+}

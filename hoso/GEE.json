@@ -1,0 +1,1248 @@
+{
+ "v": 2,
+ "ma": "GEE",
+ "ten": "CTCP Điện lực Gelex (Gelex Electric)",
+ "nganh": "Thiết bị điện",
+ "ky": "BCTC Q2/2026 · kế hoạch ĐHĐCĐ 2026",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "cp_trieu": 640.5,
+ "cp_ng": "Vốn điều lệ 6.405 tỷ (BCTC Q2/2026), sau thưởng 75% cổ phiếu phát hành 6/5/2026",
+ "co_tuc": [
+  [
+   "2026-03-19",
+   2500,
+   "tạm ứng đợt 2/2025 — 2.500 đ trên số cổ phiếu trước thưởng 75%"
+  ],
+  [
+   "2026-06-09",
+   500,
+   "tạm ứng đợt 1/2026"
+  ],
+  [
+   "2026-09-17",
+   500,
+   "tạm ứng đợt 2/2026"
+  ]
+ ],
+ "tieu_de": {
+  "t": "P/E bảng giá thấp nhờ lãi bán Gelex Hạ tầng; trên lợi nhuận lõi, GEE chưa rẻ",
+  "dk": "up_duoi:15",
+  "khac": "Trừ lãi bán Gelex Hạ tầng, giá đã dưới giá trị lõi: biên gộp quyết định nhịp hồi"
+ },
+ "dong_mo": "LN lõi 6T/2026 +32% nhờ chu kỳ hạ tầng, nhưng giá đồng kéo biên gộp về 14,3% và nợ vay gần gấp đôi. P/E 15 × LN 2027E cơ sở (2.913 tỷ) cho {gt} ({up}); kịch bản xấu là biên co tiếp, doanh thu chững — cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "+32%",
+   "nhan": "LN cổ đông 6T/2026",
+   "tieu": "Chu kỳ hạ tầng vẫn kéo sản lượng",
+   "t": "6T/2026 doanh thu 16.621 tỷ (+41%), LN cổ đông 1.289 tỷ (+32%); riêng Q2 +34%. Trừ giá đồng, khối lượng ước tăng 20–25%: giải ngân đầu tư công 8T +18,5%, Cadivi giành thị phần miền Bắc (~20% so với ~80% miền Nam), kênh chủ đầu tư – tổng thầu tăng nhanh nhất. Mô hình: LN 2026E 2.631 tỷ (lõi +30%), 2027E 2.913 tỷ (+11%) khi giá đồng thôi tăng.",
+   "ng": "BCTC Q2 · MBS 16/09 · BSC 10/04 · mô hình"
+  },
+  {
+   "so": "14,3%",
+   "nhan": "biên gộp 6T/2026 (2025: 16,1%)",
+   "tieu": "Giá đồng ăn vào biên, lãi gộp tuyệt đối vẫn tăng",
+   "t": "Đồng ~50% nguyên liệu, nguyên liệu ~84% doanh thu; giá đồng +40% so với cùng kỳ (MBS). Cáp bán theo giá vốn cộng lãi nên LN gộp 6T vẫn +28%, nhưng biên co 1,8 điểm %. Mô hình giữ biên 13,8% H2/2026 và 14,0% 2027; mỗi ±0,5 điểm % = ±3,5 nghìn đ/cp. Rủi ro hai chiều: đồng giảm nhanh thì lỗ trên 6.351 tỷ hàng tồn kho.",
+   "ng": "BCTC Q2 · MBS 16/09 · mô hình"
+  },
+  {
+   "so": "8.467 tỷ",
+   "nhan": "nợ vay 30/6/2026 (cùng kỳ: 4.393)",
+   "tieu": "Tăng trưởng đang ăn vốn lưu động — và tiền cho công ty mẹ vay",
+   "t": "Vay ngắn hạn 7.614 tỷ, gấp 2,6 lần cùng kỳ; tồn kho +45%; lãi vay Q2 123 tỷ, gấp đôi. Trong ~5.611 tỷ tiền và đầu tư tài chính ngắn hạn có ~2.605 tỷ cho Gelex, Gelex Hạ tầng vay ở 6,8–7,9%/năm, thấp hơn lãi tiền gửi 7,1–8,9% (MBS). Năm 2025 dòng tiền kinh doanh âm 472 tỷ, cổ tức chi 2.144 tỷ. Mô hình: lãi vay 2027 ~598 tỷ (2025: 231).",
+   "ng": "BCTC Q2 · MBS 16/09 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Trên lợi nhuận lõi, GEE không còn rẻ",
+   "dk": "up_duoi:15",
+   "t": "LN 4 quý 3.567 tỷ gồm ~1.240 tỷ lãi bán Gelex Hạ tầng (Q3/2025, ước tính sau thuế); LN lõi 2.325 tỷ — ở giá 20/10, P/E lõi ~18 lần, không phải 11,9. Định giá P/E 15 × LN 2027E (≈ ROE ~30%, chi trả ~70%, chi phí vốn 14%) cho {gt} ({up}). Xấu 12 lần (≈ trung vị lịch sử 12,9) × 2.158 tỷ; tốt 17 lần × 3.502 tỷ. Cổ tức 3.000 đ/cp và lệnh đăng ký mua 10 triệu cp của Felicitas đỡ giá ngắn hạn.",
+   "ng": "BCTC · MBS 16/09 · mô hình",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "Giá đã xuống dưới giá trị lõi: {up_so}",
+    "t": "Trừ ~1.240 tỷ lãi bán Gelex Hạ tầng, LN lõi 4 quý 2.325 tỷ. P/E 15 × LN 2027E cơ sở 2.913 tỷ (≈ ROE ~30%, chi trả ~70%, chi phí vốn 14%) cho {gt}. Xấu 12 lần × 2.158 tỷ; tốt 17 lần × 3.502 tỷ. Cổ tức 3.000 đ/cp hỗ trợ."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   3257,
+   2631,
+   2913
+  ],
+  "ln_truoc": 1596,
+  "eps": [
+   5086,
+   4108,
+   4548
+  ],
+  "bv": [
+   12531,
+   14177,
+   15725
+  ],
+  "co_tuc_nam": 3000,
+  "them": [
+   {
+    "ten": "LN lõi, trừ lãi bán GEL (tỷ)",
+    "v": [
+     2016,
+     2631,
+     2913
+    ]
+   },
+   {
+    "ten": "ROE lõi",
+    "v": [
+     28.0,
+     30.8,
+     30.4
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC; 2025 gồm ~1.240 tỷ lãi bán Gelex Hạ tầng (ước tính sau thuế). EPS, BVPS theo 640,5 triệu cp (sau thưởng 75%). Cổ tức 2026 kế hoạch 30% tiền mặt (3.000 đ/cp), đã tạm ứng 1.000 đ."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Thiết bị điện (hợp nhất)",
+    "mau": "c1",
+    "v": [
+     1874,
+     2472,
+     2760
+    ]
+   },
+   {
+    "ten": "Liên doanh, liên kết (EEMC, Melia…)",
+    "mau": "c3",
+    "v": [
+     143,
+     159,
+     153
+    ]
+   },
+   {
+    "ten": "Lãi bán Gelex Hạ tầng",
+    "mau": "c4",
+    "v": [
+     1241,
+     0,
+     0
+    ]
+   }
+  ],
+  "nhan": "Thiết bị điện (hợp nhất)",
+  "ng": "Thiết bị điện gồm Cadivi (~60% doanh thu, ~65–70% LNTT các công ty con — MBS), Thibidi, CFT, EMIC, MEE, HEM; sau lãi vay và thiểu số."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: doanh thu × biên gộp − chi phí, lãi vay",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Kinh doanh (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     25463,
+     35921,
+     40232
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên lợi nhuận gộp (%)",
+    "v": [
+     16.1,
+     14.0,
+     14.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Lợi nhuận gộp",
+    "v": [
+     4111,
+     5045,
+     5632
+    ]
+   },
+   {
+    "ten": "Chi phí bán hàng + QLDN",
+    "v": [
+     1174,
+     1324,
+     1489
+    ]
+   },
+   {
+    "ten": "LN hoạt động cốt lõi",
+    "v": [
+     2937,
+     3721,
+     4144
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "nhom": "Tài chính, liên kết, khác (tỷ đồng)"
+   },
+   {
+    "ten": "Thu nhập tài chính (trừ lãi bán GEL)",
+    "v": [
+     215,
+     389,
+     400
+    ]
+   },
+   {
+    "ten": "Chi phí lãi vay",
+    "v": [
+     231,
+     472,
+     598
+    ]
+   },
+   {
+    "ten": "Chi phí tài chính khác",
+    "v": [
+     308,
+     259,
+     260
+    ]
+   },
+   {
+    "ten": "LN liên doanh, liên kết",
+    "v": [
+     150,
+     167,
+     160
+    ]
+   },
+   {
+    "ten": "Lãi bán Gelex Hạ tầng (trước thuế)",
+    "v": [
+     1500,
+     null,
+     null
+    ]
+   },
+   {
+    "ten": "LN trước thuế",
+    "v": [
+     4262,
+     3474,
+     3845
+    ],
+    "dam": 1
+   },
+   {
+    "nhom": "Cổ đông công ty mẹ"
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     3257,
+     2631,
+     2913
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông lõi (trừ lãi bán GEL)",
+    "v": [
+     2016,
+     2631,
+     2913
+    ]
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     5086,
+     4108,
+     4548
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "2026E = 6 tháng thực tế + Q3–Q4 ước tính. Lãi bán Gelex Hạ tầng ~1.500 tỷ trước thuế (MBS), ~1.240 tỷ sau thuế (ước tính theo thuế suất các quý khác). Chi phí bán hàng + QLDN theo % doanh thu; thuế 21,5% trên LN trước thuế trừ LN liên kết; thiểu số 4,6% LNST."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   2631
+  ],
+  "cuoi": [
+   "2027E",
+   2913
+  ],
+  "buoc": [
+   [
+    "Doanh thu +12%",
+    453
+   ],
+   [
+    "Biên gộp",
+    -14
+   ],
+   [
+    "Chi phí BH + QLDN",
+    -123
+   ],
+   [
+    "Lãi vay",
+    -94
+   ],
+   [
+    "Khác, liên kết",
+    60
+   ]
+  ],
+  "y": "Doanh thu +12% (khối lượng, giá đồng đi ngang) gần như là nguồn tăng duy nhất; chi phí bán hàng + QLDN và lãi vay (nợ vay neo ~8,8 nghìn tỷ) ăn 48% phần tăng đó.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu Q3 + Q4/2026 (nghìn tỷ)",
+   "v": [
+    "17,9",
+    "19,3",
+    "20,6"
+   ],
+   "ly_do": "Q2/2026 9,5 nghìn tỷ (+46%); Q3 thường ngang Q2, Q4 cao hơn Q3 10–15% (2024, 2025); MBS ước thiết bị điện 8,5–9 nghìn tỷ/quý"
+  },
+  {
+   "ten": "Biên gộp H2/2026",
+   "v": [
+    "13,0%",
+    "13,8%",
+    "14,4%"
+   ],
+   "ly_do": "Q1, Q2/2026 cùng 14,3% (2025: 16,1%); đồng LME ~14.000 USD/tấn đầu 8/2026 (Cochilco), ~6,4 USD/pound giữa 9 (MBS)"
+  },
+  {
+   "ten": "Doanh thu 2027 so với 2026E",
+   "v": [
+    "+2%",
+    "+12%",
+    "+18%"
+   ],
+   "ly_do": "Thị trường thiết bị điện +10–12%/năm 2026–30 (Roland Berger, theo MBS); đồng ~42% doanh thu. Khối lượng / giá đồng: xấu +6% / −10%, cơ sở +12% / 0, tốt +15% / +6%"
+  },
+  {
+   "ten": "Biên gộp 2027",
+   "v": [
+    "13,2%",
+    "14,0%",
+    "14,6%"
+   ],
+   "ly_do": "ING, UBS dự báo đồng 2027 ~13.000–13.500 USD/tấn (MBS); xấu: đồng giảm nhanh gây lỗ tồn kho, cạnh tranh miền Bắc; MBS 2027F 14,3%"
+  },
+  {
+   "ten": "Chi phí bán hàng + QLDN / doanh thu 2027",
+   "v": [
+    "3,9%",
+    "3,7%",
+    "3,6%"
+   ],
+   "ly_do": "2025 4,6%; 6T/2026 3,4% (doanh thu phình theo giá đồng); 2026E 3,7%"
+  },
+  {
+   "ten": "Lãi suất vay bình quân 2027",
+   "v": [
+    "7,4%",
+    "6,8%",
+    "6,3%"
+   ],
+   "ly_do": "Q2/2026 ~6,5%/năm (lãi vay 123 tỷ); nợ vay 30/6 8,5 nghìn tỷ, giả định bình quân 2027 8,6 · 8,8 · 9,2 nghìn tỷ"
+  },
+  {
+   "ten": "LN liên doanh, liên kết 2027 (tỷ)",
+   "v": [
+    "120",
+    "160",
+    "200"
+   ],
+   "ly_do": "2025: 150 tỷ (EEMC 47% × 218 tỷ ≈ 102); 6T/2026 87 tỷ — LN EEMC −25% khi EVN chững đầu tư (MBS)"
+  },
+  {
+   "ten": "P/E trên LN 2027E",
+   "v": [
+    "12",
+    "15",
+    "17"
+   ],
+   "ly_do": "15 ≈ Gordon (ROE ~30%, chi trả ~70%, chi phí vốn 14%); 12 ≈ trung vị lịch sử 12,9, cáp Đài Loan 12,8–13,9; 17 < nhóm khu vực 2026F (19–42)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 2371,
+   "ln27": 2158,
+   "gia": 40.4,
+   "mo_ta": "Biên gộp 13,0% H2/2026, 13,2% 2027; doanh thu 2027 +2% (đồng −10%); lãi suất vay 7,4%; P/E 12"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 2631,
+   "ln27": 2913,
+   "gia": 68.2,
+   "mo_ta": "Biên gộp 13,8% H2/2026, 14,0% 2027; doanh thu 2027 +12% (khối lượng, đồng đi ngang); lãi suất vay 6,8%; P/E 15"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 2860,
+   "ln27": 3502,
+   "gia": 92.9,
+   "mo_ta": "Biên gộp hồi 14,6% (2025: 16,1%); doanh thu 2027 +18%; LN liên kết 200 tỷ; P/E 17"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá P/E",
+  "phu": "P/E × LN cổ đông 2027E",
+  "ck": 0,
+  "cp": 640.5,
+  "phan": [
+   {
+    "ten": "LN cổ đông 2027E",
+    "mau": "c1",
+    "x": [
+     2158,
+     2913,
+     3502
+    ],
+    "boi": [
+     12.0,
+     15.0,
+     17.0
+    ],
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     25896,
+     43695,
+     59534
+    ]
+   }
+  ],
+  "von": [
+   25896,
+   43695,
+   59534
+  ],
+  "gia": [
+   40.4,
+   68.2,
+   92.9
+  ]
+ },
+ "nhay": [
+  [
+   "P/E ±1 lần",
+   null,
+   4.5
+  ],
+  [
+   "Doanh thu 2027 ±5%",
+   155,
+   3.6
+  ],
+  [
+   "Biên gộp 2027 ±0,5 điểm %",
+   151,
+   3.5
+  ],
+  [
+   "Lãi suất vay 2027 ±1 điểm %",
+   66,
+   1.5
+  ],
+  [
+   "LN liên doanh, liên kết ±50 tỷ",
+   48,
+   1.1
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   13.4,
+   11.6,
+   10.2,
+   9.2,
+   8.7,
+   12.5,
+   11.8,
+   9.3,
+   11.6,
+   15.0,
+   12.9,
+   8.5,
+   8.7,
+   8.5,
+   12.9,
+   13.0,
+   12.8,
+   12.7,
+   12.2,
+   12.7,
+   8.0,
+   8.9,
+   7.1,
+   11.3,
+   13.0,
+   11.6,
+   12.1,
+   14.0,
+   16.5,
+   8.2,
+   8.2,
+   8.4,
+   8.8,
+   9.2,
+   9.5,
+   11.6,
+   13.1,
+   18.2,
+   18.8,
+   18.8,
+   24.5,
+   21.7,
+   23.8,
+   33.0,
+   34.9,
+   43.4,
+   32.0,
+   34.1,
+   35.9,
+   31.8,
+   30.5,
+   27.8,
+   20.1,
+   17.8,
+   20.9,
+   18.1
+  ],
+  "p10": 8.5,
+  "p25": 9.4,
+  "tv": 12.9,
+  "thap": [
+   "2024-01",
+   7.1
+  ],
+  "nay": [
+   "2026-10",
+   18.1
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. Từ 11/2025 trừ ~1.240 tỷ lãi bán Gelex Hạ tầng (Q3/2025) khỏi LN 4 quý.",
+  "dung": "Kịch bản dùng P/E 12 · 15 · 17 trên LN 2027E. Trừ lãi bán Gelex Hạ tầng, P/E 4 quý hiện ~18 lần (báo cáo: 11,9); trung vị từ 2022 12,9 — khi ROE 2022–2023 chỉ 14–17%, nay ~30%. Các tháng trống (10/2025–5/2026) là lúc giá đỉnh, P/E lõi 30–43 lần."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý (LN lõi)",
+  "chi_so_kv": "P/E TTM (MBS 16/09)",
+  "nhom": "Dây cáp, máy biến áp khu vực",
+  "kv": [
+   [
+    "Ta Ya (Đài Loan)",
+    13.9
+   ],
+   [
+    "I-Sheng (Đài Loan)",
+    12.8
+   ],
+   [
+    "Gunkul (Thái Lan)",
+    23.0
+   ],
+   [
+    "Finolex (Ấn Độ)",
+    25.6
+   ],
+   [
+    "TARIL (Ấn Độ)",
+    32.9
+   ],
+   [
+    "Voltamp (Ấn Độ)",
+    36.2
+   ],
+   [
+    "PIE (Malaysia)",
+    45.7
+   ],
+   [
+    "KEI (Ấn Độ)",
+    48.1
+   ],
+   [
+    "Hunan Valin (Trung Quốc)",
+    82.8
+   ]
+  ],
+  "tv": 32.9,
+  "moi_cp": 3631,
+  "max": 50,
+  "y": "GEE tính trên LN lõi 4 quý (2.325 tỷ, trừ lãi bán Gelex Hạ tầng). Trung vị bị nhóm Ấn Độ (26–48 lần) kéo lên; hai hãng cáp Đài Loan gần mô hình GEE nhất ở 12,8–13,9 lần với ROE 12–13%.",
+  "ng": "P/E TTM cùng ngành: MBS 16/09 (Bloomberg)"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 9300,
+   "ln": [
+    547,
+    668,
+    770
+   ]
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 10000,
+   "ln": [
+    536,
+    674,
+    801
+   ],
+   "ck": 533
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    2371,
+    2631,
+    2860
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Cùng kỳ có ~1.240 tỷ lãi bán Gelex Hạ tầng nên LN báo cáo sẽ giảm ~62%; so với LN lõi Q3/2025 (~503 tỷ), mô hình cơ sở 668 tỷ (+33%).",
+   "tac": [
+    "Biên gộp ≥ 13,8%",
+    "giữ cơ sở; dưới 13% nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "biên gộp, chi phí lãi vay"
+  },
+  {
+   "khi": "9–10/2026",
+   "loai": "len",
+   "tieu": "Nhóm Gelex mua lại cổ phiếu",
+   "ct": "Felicitas (100% vốn Đầu tư Gelex) đăng ký mua 10 triệu cp (1,56%) từ 29/9 đến 28/10, ~700 tỷ theo giá 70.900 đ; 17/12/2025 GEX bán 10 triệu cp (trước thưởng 75%) thu ~1.550 tỷ.",
+   "tac": [
+    "~700 tỷ",
+    "≈ 7 phiên GTGD bình quân 20 phiên"
+   ],
+   "theo_doi": "kết quả giao dịch của Felicitas"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Đầu tư công, ưu tiên hàng nội",
+   "ct": "Kế hoạch vốn đầu tư công 2026 ~1,01–1,02 triệu tỷ, 8T giải ngân +18,5%; Nghị định 344/2026 ưu tiên nhà cung cấp trong nước cho dự án điện lực (MBS).",
+   "tac": [
+    "±3,6 nghìn đ/cp",
+    "mỗi ±5% doanh thu 2027"
+   ],
+   "theo_doi": "giải ngân đầu tư công, đơn hàng EVN"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Cadivi ra Bắc, máy biến áp cao thế",
+   "ct": "Thị phần Cadivi miền Bắc ~18–20% so với 60–80% miền Nam; GEE tự chủ máy biến áp 500kV (BSC), MEE làm máy 220kV–250MVA (MBS).",
+   "tac": "",
+   "theo_doi": "doanh thu miền Bắc, hợp đồng 220/500kV"
+  },
+  {
+   "khi": "Q1/2027",
+   "loai": "len",
+   "tieu": "Phần cổ tức 2026 còn lại",
+   "ct": "ĐHĐCĐ duyệt cổ tức tiền mặt 30% (3.000 đ/cp); đã tạm ứng 500 đ (GDKHQ 9/6) và 500 đ (17/9), còn 2.000 đ/cp (~1.281 tỷ).",
+   "tac": [
+    "3.000 đ/cp",
+    "cổ tức tiền mặt 2026 theo kế hoạch"
+   ],
+   "theo_doi": "nghị quyết HĐQT về tạm ứng"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Giá đồng neo đỉnh hoặc giảm nhanh",
+   "ct": "Đồng ~42% doanh thu (MBS: nguyên liệu 84% doanh thu, đồng 50% nguyên liệu); tăng thì biên co, giảm nhanh thì lỗ trên 6.351 tỷ tồn kho.",
+   "tac": [
+    "−3,5 nghìn đ/cp",
+    "mỗi −0,5 điểm % biên gộp 2027"
+   ],
+   "theo_doi": "giá đồng LME, biên gộp quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Nợ vay và lãi suất",
+   "ct": "Vay ngắn hạn 7.614 tỷ (30/6), gấp 2,6 lần cùng kỳ; lãi vay Q2 123 tỷ, gấp đôi; lãi suất cho vay của ngân hàng 8,8% (6/2025) → 10,7% (8/2026, NHNN).",
+   "tac": [
+    "±1,5 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất vay 2027"
+   ],
+   "theo_doi": "nợ vay, chi phí lãi vay quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Tiền cho công ty mẹ vay",
+   "ct": "~2.605 tỷ (14% tổng tài sản) cho Gelex, Gelex Hạ tầng vay ở 6,8–7,9%, thấp hơn lãi tiền gửi 7,1–8,9% (MBS); GEX vừa vay hợp vốn 200 triệu USD (3/2026, BSC).",
+   "tac": [
+    "~4,1 nghìn đ/cp",
+    "khoản cho vay ÷ số cổ phiếu"
+   ],
+   "theo_doi": "thuyết minh cho vay bên liên quan"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "EVN chậm đầu tư lưới",
+   "ct": "LN EEMC (liên kết 47%) 6T/2026 −25% (BCTC TBD) khi EVN chững đầu tư vì rủi ro pháp lý (MBS); Thibidi, MEE, EMIC cũng bán nhiều cho ngành điện.",
+   "tac": [
+    "±1,1 nghìn đ/cp",
+    "mỗi ±50 tỷ LN liên kết 2027"
+   ],
+   "theo_doi": "giải ngân EVN, LN của TBD (EEMC)"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Cạnh tranh miền Bắc, hàng Trung Quốc",
+   "ct": "Trần Phú, Cadisun bán rẻ hơn ở cáp dân dụng; LS-Vina mạnh cao thế; TBEA (Trung Quốc) đã thắng thầu thiết bị 220/500kV (MBS).",
+   "tac": "",
+   "theo_doi": "biên gộp, thị phần miền Bắc"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Kế hoạch vốn đầu tư công 2026 ~1,01–1,02 triệu tỷ đồng; 8T/2026 vốn ngân sách giải ngân 546,8 nghìn tỷ, +18,5%. Đường sắt tốc độ cao, sân bay Gia Bình, metro chuẩn bị triển khai.",
+     "ng": "MBS 16/09"
+    },
+    {
+     "h": -1,
+     "t": "Lãi suất đi lên: tiền gửi 5,5% (6/2025) → 8,0% (8/2026), cho vay 8,8% → 10,7% — đẩy chi phí vốn lưu động và kéo mặt bằng P/E xuống.",
+     "ng": "NHNN, tab Toàn cảnh"
+    },
+    {
+     "h": -1,
+     "t": "Giá đồng LME ~14.000 USD/tấn, +40% so với cùng kỳ, sát đỉnh lịch sử; ING, UBS dự báo 2027 về 13.000–13.500 USD/tấn.",
+     "ng": "MBS 16/09 · Cochilco 07/08"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Thị trường thiết bị điện Việt Nam ~5 tỷ USD (2025), có thể tăng 10–12%/năm 2026–2030; IIP dây cáp phục hồi rõ từ 2024.",
+     "ng": "Roland Berger, theo MBS 16/09"
+    },
+    {
+     "h": 1,
+     "t": "Nghị định 344/2026/NĐ-CP ưu tiên nhà cung cấp trong nước cho dự án điện lực; hàng nhập khẩu nặng, chi phí vận chuyển cao.",
+     "ng": "MBS 16/09"
+    },
+    {
+     "h": 0,
+     "t": "Biên co là chuyện chung của ngành: Taya (TYA) biên gộp Q2/2026 9,7% so với 11,1% cùng kỳ dù doanh thu +21%.",
+     "ng": "BCTC TYA (VNDirect)"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Cadivi ~31% thị phần dây cáp cả nước (~80% miền Nam, ~20% miền Bắc); Thibidi 21% máy biến áp phân phối; cung cấp đồng bộ cáp – máy biến áp – công tơ.",
+     "ng": "MBS 16/09"
+    },
+    {
+     "h": -1,
+     "t": "Cho Gelex, Gelex Hạ tầng vay ~2.605 tỷ ở lãi thấp hơn tiền gửi trong khi tự đi vay ngắn hạn 7.614 tỷ.",
+     "ng": "MBS 16/09 · BCTC Q2"
+    },
+    {
+     "h": 0,
+     "t": "GEX sở hữu 75,95% sau khi bán 10 triệu cp (17/12/2025); Felicitas thuộc nhóm Gelex đăng ký mua 10 triệu cp từ 29/9/2026.",
+     "ng": "Báo Pháp luật · Mekong ASEAN"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Cadivi — dây cáp điện (GEE sở hữu ~97%)",
+   "phu": "3 nhà máy ~2 triệu km/năm, ~400 đại lý cấp 1; ~60% doanh thu, ~65–70% LNTT các công ty con",
+   "so": [
+    [
+     "Doanh thu 2025",
+     "15.697 tỷ",
+     "+20%"
+    ],
+    [
+     "Thị phần cả nước",
+     "~31%",
+     "2025"
+    ],
+    [
+     "Miền Nam / miền Bắc",
+     "~80% / ~20%",
+     ""
+    ],
+    [
+     "MBS dự phóng 2026",
+     "21.191 tỷ",
+     "+35%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Lập Cadivi Bắc Ninh (2023) để vào miền Bắc, đối đầu Trần Phú, Cadisun, LS-Vina; lợi thế dải sản phẩm rộng (ACCC®, TR-XLPE, cáp sân bay) và năng lực dự án lớn.",
+     "ng": "MBS 16/09"
+    },
+    {
+     "t": "Ba kênh bán: EVN và điện lực (~15%), chủ đầu tư – tổng thầu (tăng nhanh nhất: Vingroup, Masterise, Sungroup, KCN của Gelex), đại lý dân dụng.",
+     "ng": "MBS 16/09"
+    }
+   ]
+  },
+  {
+   "ten": "Máy biến áp — Thibidi (~98%), MEE, EEMC (liên kết 47%)",
+   "phu": "Thibidi 2,6 triệu kVA/năm; MEE máy 220kV; EEMC nhà máy máy biến áp siêu cao áp duy nhất trong nước",
+   "so": [
+    [
+     "Doanh thu Thibidi 2025",
+     "1.461 tỷ",
+     "+16%"
+    ],
+    [
+     "Doanh thu MEE 2025",
+     "626 tỷ",
+     "+28%"
+    ],
+    [
+     "LN EEMC (TBD) 6T/2026",
+     "66 tỷ",
+     "−25%"
+    ],
+    [
+     "Giá trị sổ sách EEMC",
+     "1.291 tỷ",
+     "47%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "GEE tự chủ công nghệ máy biến áp 500kV – 3×300MVA (trước đây nhập khẩu hoàn toàn); dự thảo yêu cầu nội địa hóa tối thiểu 60% cho dự án điện quan trọng.",
+     "ng": "BSC 10/04"
+    },
+    {
+     "t": "EEMC và Melia (S.A.S, 35%) đóng góp ~90% LN liên doanh, liên kết.",
+     "ng": "MBS 16/09"
+    }
+   ]
+  },
+  {
+   "ten": "Dây đồng CFT, thiết bị đo EMIC, động cơ HEM",
+   "phu": "CFT 54 nghìn tấn/năm, đầu vào chính của Cadivi; EMIC 2,5 triệu sản phẩm/năm",
+   "so": [
+    [
+     "Doanh thu CFT 2025",
+     "6.418 tỷ",
+     "+31%"
+    ],
+    [
+     "Doanh thu EMIC 2025",
+     "1.170 tỷ",
+     "−1%"
+    ],
+    [
+     "Phát điện còn lại",
+     "~100 tỷ/năm",
+     "sau thoái vốn"
+    ]
+   ],
+   "y": [
+    {
+     "t": "CFT chiếm ~24% doanh thu hợp nhất nhưng chưa tới 1% LNTT vì biên mỏng; GEE mua nguyên liệu tập trung cho cả nhóm.",
+     "ng": "MBS 16/09"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu thuần theo quý",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Doanh thu thuần",
+     "v": [
+      5619,
+      6481,
+      5281,
+      6510,
+      6444,
+      7228,
+      7097,
+      9524
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q2/2026 9.524 tỷ, +46%: cả khối lượng lẫn giá đồng; Q4 thường là quý cao nhất năm.",
+   "ng": "BCTC GEE (VNDirect)"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp theo quý",
+   "kieu": "duong",
+   "dv": "%",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      14.5,
+      16.8,
+      15.8,
+      15.9,
+      16.6,
+      16.2,
+      14.3,
+      14.3
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Đỉnh 16,8% rồi về 14,3% hai quý 2026 khi giá đồng +30–40% so với cùng kỳ.",
+   "ng": "BCTC GEE (VNDirect)"
+  },
+  {
+   "ten": "LN cổ đông theo quý: lõi và lãi bán GEL",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN lõi",
+     "v": [
+      388,
+      587,
+      452,
+      528,
+      503,
+      533,
+      579,
+      710
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Lãi bán Gelex Hạ tầng",
+     "v": [
+      0,
+      0,
+      0,
+      0,
+      1241,
+      0,
+      0,
+      0
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Bỏ khoản lãi một lần Q3/2025, LN lõi đi lên đều: Q2/2026 710 tỷ (+34%).",
+   "ng": "BCTC GEE (VNDirect) · MBS 16/09 · ước tính sau thuế"
+  },
+  {
+   "ten": "Nợ vay và tiền, đầu tư ngắn hạn",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      4577,
+      3425,
+      4346,
+      4393,
+      4385,
+      5515,
+      6718,
+      8467
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      683,
+      771,
+      1031,
+      1426,
+      1265,
+      1942,
+      5498,
+      5523
+     ],
+     "mau": "c3"
+    }
+   ],
+   "so_le": 0,
+   "y": "Nợ vay 30/6/2026 8.467 tỷ, gần gấp đôi cùng kỳ; ~2.605 tỷ trong phần tiền và đầu tư là khoản cho bên liên quan vay (MBS).",
+   "ng": "BCTC GEE (VNDirect) · MBS 16/09"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 27242,
+    "th": 16621,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 2705,
+    "th": 1705,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+   }
+  ],
+  "y": "6 tháng đạt 61% kế hoạch doanh thu, 63% LNTT. Mô hình cơ sở cả năm: doanh thu ~35,9 nghìn tỷ, LNTT ~3,5 nghìn tỷ (128% kế hoạch) — kế hoạch đặt thấp vì 2025 có lãi bán Gelex Hạ tầng.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "MBS",
+   "ngay": "2026-09-16",
+   "kn": "KHẢ QUAN",
+   "tp": 82200,
+   "ln26": 2507,
+   "ln27": 3109,
+   "pp": "DCF 10 năm + SOTP P/E (mỗi cách 50%)",
+   "y": "Doanh thu 2026–27 +35%/+19%, biên gộp 13,9%/14,3%; SOTP dùng P/E 19–20 cho Cadivi, Thibidi, EMIC. Lưu ý rủi ro cho bên liên quan vay lãi thấp và giá đồng.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GEE/gee_bcpt_huong_loi_toan_dien_tu_chu_ky_phat_trien_ha_tang.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — MBS là CTCK duy nhất có báo cáo trong 8 tháng; mô hình và định giá của trang ở các phần trên. Giá mục tiêu 82.200 đ ghi trong báo cáo (16/09) gồm cổ tức 500 đ có GDKHQ 17/09.",
+ "nguon": [
+  {
+   "ten": "MBS — Hưởng lợi toàn diện từ chu kỳ phát triển hạ tầng",
+   "ngay": "16/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GEE/gee_bcpt_huong_loi_toan_dien_tu_chu_ky_phat_trien_ha_tang.pdf"
+  },
+  {
+   "ten": "BSC — Cập nhật ĐHĐCĐ GEX, triển vọng 2026–2027 (phần thiết bị điện)",
+   "ngay": "10/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GEX/Cap_nhat_HC_2025_va_trien_vong_kinh_doanh_2026-2027.pdf"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ 2026: thưởng 75%, kế hoạch LNTT 2.705 tỷ",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-2026-chot-phuong-an-chia-co-phieu-thuong-ty-le-75-gelex-electric-gee-len-ke-hoach-lai-2-705-ty-dong.html"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — mục tiêu doanh thu 27.242 tỷ, cổ tức 30%",
+   "ngay": "04/2026",
+   "link": "https://thitruongtaichinhtiente.vn/gelex-electric-dat-muc-tieu-doanh-thu-hon-27-200-ty-dong-ty-le-co-tuc-30-80427.html"
+  },
+  {
+   "ten": "Tạp chí Công Thương — lãi 6 tháng 2026 tăng 28%",
+   "ngay": "07/2026",
+   "link": "https://tapchicongthuong.vn/gelex-electric--gee-lai-nua-dau-nam-tang-28-don-du-dia-tang-truong-lon-535052.htm"
+  },
+  {
+   "ten": "Mekong ASEAN — tạm ứng cổ tức 25% đợt 2/2025 (ĐKCC 20/3/2026)",
+   "ngay": "03/2026",
+   "link": "https://mekongasean.vn/gelex-electric-chot-ngay-chi-915-ty-dong-tam-ung-co-tuc-tien-mat-ty-le-25-52557.html"
+  },
+  {
+   "ten": "Mekong ASEAN — tạm ứng cổ tức 5% đợt 1/2026 (ĐKCC 10/6)",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/gelex-electric-chot-ngay-tam-ung-co-tuc-bang-tien-mat-55763.html"
+  },
+  {
+   "ten": "CafeF — tạm ứng cổ tức 5% đợt 2/2026 (ĐKCC 18/9)",
+   "ngay": "08/09/2026",
+   "link": "https://cafef.vn/gelex-electric-sap-chi-hon-320-ty-dong-tam-ung-co-tuc-188260908194527401.chn"
+  },
+  {
+   "ten": "Mekong ASEAN — Felicitas đăng ký mua 10 triệu cổ phiếu GEE",
+   "ngay": "24/09/2026",
+   "link": "https://mekongasean.vn/cong-ty-chau-cua-gelex-dang-ky-mua-10-trieu-co-phieu-gee-59976.html"
+  },
+  {
+   "ten": "Báo Pháp luật — GEX bán thành công 2,74% vốn GEE (17/12/2025)",
+   "ngay": "12/2025",
+   "link": "https://doanhnhan.baophapluat.vn/gelex-thoai-thanh-cong-274-co-phan-tai-gelex-electric-89904.html"
+  },
+  {
+   "ten": "Cochilco — La Rueda, giá đồng LME",
+   "ngay": "07/08/2026",
+   "link": "https://www.cochilco.cl/web/download/1032/agosto-2026/16728/rueda-07-08-2026.pdf"
+  },
+  {
+   "ten": "Lãi suất NHNN theo tháng (tab Toàn cảnh)",
+   "ngay": "08/2026",
+   "link": "https://khoanguyeninvest.vn/#toan-canh"
+  }
+ ]
+}

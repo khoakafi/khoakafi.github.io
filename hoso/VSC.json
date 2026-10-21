@@ -4,7 +4,7 @@
  "ten": "CTCP Container Việt Nam (Viconship)",
  "nganh": "Cảng biển, logistics",
  "ky": "BCTC Q2/2026 · sản lượng 6T/2026",
- "cap_nhat": "2026-10-18",
+ "cap_nhat": "2026-10-20",
  "lan_sau": "sau BCTC Q3/2026 và khi chốt quyền phát hành",
  "cp_trieu": 374.4,
  "cp_ng": "Vốn điều lệ 3.743,7 tỷ (BCTC Q2/2026; MBS 14/07: 374,37 triệu cp). Chưa gồm 18,7 triệu cp cổ tức 5% và 187,2 triệu cp chào bán 2:1 (HĐQT 4/9/2026, chưa có ngày chốt quyền)",
@@ -17,10 +17,10 @@
  "dong_mo": "Theo giá thị trường, phần VSC nắm ở Cảng Xanh VIP (VGR) và Hải An (HAH) đáng {con_pct} vốn hóa — nhưng VGR giao dịch rất mỏng, còn công ty mẹ gánh 6.504 tỷ nợ vay: lãi vay ~583 tỷ/năm, lớn hơn cả LN hoạt động (~414 tỷ) của NHĐV, Cảng Xanh, logistics và đội tàu. Tổng các phần trừ nợ cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "143%",
+   "so": "144%",
    "nhan": "LN cổ đông 2026E đến từ VGR + HAH",
    "tieu": "Lợi nhuận đến từ hai cổ phần, không phải từ cảng tự vận hành",
-   "t": "54,35% Cảng Xanh VIP (VGR: 800 nghìn TEU công suất, không vay nợ, LNST 6T/2026 252 tỷ, +6,5%) và 22,3% Hải An (42 triệu cp HAH, giá vốn 2.496 tỷ) mang về ~577 tỷ năm 2026E. Phần tự vận hành (NHĐV, Cảng Xanh, logistics, đội tàu) có LN hoạt động ~414 tỷ nhưng chịu ~583 tỷ lãi vay: sau thuế và thiểu số lỗ ~175 tỷ.",
+   "t": "54,35% Cảng Xanh VIP (VGR: 800 nghìn TEU công suất, không vay nợ, LNST 6T/2026 252 tỷ, +6,5%) và 21,9% Hải An (42 triệu cp HAH sau ESOP 8/2026, giá vốn 2.496 tỷ) mang về ~565 tỷ năm 2026E. Phần tự vận hành (NHĐV, Cảng Xanh, logistics, đội tàu) có LN hoạt động ~414 tỷ nhưng chịu ~583 tỷ lãi vay: sau thuế và thiểu số lỗ ~172 tỷ.",
    "ng": "BCTC VSC, VGR, HAH · FPTS 18/09 · mô hình"
   },
   {
@@ -34,14 +34,14 @@
    "so": "6.504 tỷ",
    "nhan": "nợ vay 30/6/2026, gấp 3,3 lần cuối 2024",
    "tieu": "Đòn bẩy và pha loãng: tăng vốn 10.000 đ/cp để trả nợ",
-   "t": "Nợ tăng cùng các khoản mua: 22,3% HAH, tàu cho HAGSL, 65% Harbour City (914 tỷ, dự án BĐS ~6.000 m²), 1% Eximbank; 722 tỷ là vay ký quỹ tại CTCK. Lãi suất ~9,3% (Q2), trái phiếu mới 11%. Phương án: 5% cổ tức cổ phiếu + chào bán 2:1 giá 10.000 đ (1.872 tỷ, 1.582 tỷ trả nợ) → 580 triệu cp (+55%); lãi vay giảm ~149 tỷ/năm nhưng EPS 2027E giảm ~18%.",
+   "t": "Nợ tăng cùng các khoản mua: 22,3% HAH, tàu cho HAGSL, 65% Harbour City (914 tỷ, dự án BĐS ~6.000 m²), 1% Eximbank; 722 tỷ là vay ký quỹ tại CTCK. Lãi suất ~9,3% (Q2), trái phiếu mới 11%. Phương án: 5% cổ tức cổ phiếu + chào bán 2:1 giá 10.000 đ (1.872 tỷ, 1.582 tỷ trả nợ) → 580 triệu cp (+55%); lãi vay giảm ~149 tỷ/năm nhưng EPS 2027E giảm ~16%.",
    "ng": "BCTC · ĐHĐCĐ 20/5, HĐQT 4/9/2026 · Vietnambiz, Smartly · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Tổng các phần trừ nợ: {up_so} so với giá hiện tại",
-   "t": "VGR × P/E 11 (trung vị VGR 10,6; giá UPCoM ~20 lần trên ~2,5 tỷ/phiên — không dùng), HAH × 7,5 (hiện 7,1), phần tự vận hành × 9,5 LN hoạt động sau thuế (trung vị P/E VSC 2015–2022, khi gần như không nợ: 9,6), Harbour City 80% vốn góp; trừ 5.803 tỷ nợ vay ròng. Ứng với P/B ~0,73 vì ROE chỉ ~7% (2019–2021: 14–16%). Sau phát hành (580 triệu cp, tiền vào ngang giá): ~10,5 nghìn đ/cp — sát giá chào bán.",
+   "t": "VGR × P/E 11 (trung vị VGR 10,6; giá UPCoM ~20 lần trên ~2,5 tỷ/phiên — không dùng), HAH × 7,5 (hiện 7,1), phần tự vận hành × 9,5 LN hoạt động sau thuế (trung vị P/E VSC 2015–2022, khi gần như không nợ: 9,6), Harbour City 80% vốn góp; trừ 5.803 tỷ nợ vay ròng. Ứng với P/B ~0,66 vì ROE chỉ ~7% (2019–2021: 14–16%). Sau phát hành (580 triệu cp, tiền vào ngang giá): ~9,8 nghìn đ/cp — sát giá chào bán.",
    "ng": "mô hình · P/E, P/B lịch sử: BCTC VNDirect"
   }
  ],
@@ -53,19 +53,19 @@
   ],
   "ln": [
    341,
-   402,
-   422
+   393,
+   370
   ],
   "ln_truoc": 336,
   "eps": [
    911,
-   1074,
-   1127
+   1050,
+   988
   ],
   "bv": [
    14462,
-   15460,
-   16586
+   15437,
+   16424
   ],
   "them": [
    {
@@ -80,14 +80,14 @@
     "ten": "ROE",
     "v": [
      6.9,
-     7.2,
-     7.0
+     7.0,
+     6.2
     ],
     "d": 1,
     "pt": 1
    }
   ],
-  "ng": "LN 2024–2025: BCTC; 2026E–2027E giữ cơ cấu vốn hiện tại (374,4 triệu cp). Nếu cổ tức 5% cổ phiếu và chào bán 2:1 xong cuối Q1/2027: 580 triệu cp, EPS 2027E ~919 đ. Cổ tức 2025 trả bằng cổ phiếu."
+  "ng": "LN 2024–2025: BCTC; 2026E–2027E giữ cơ cấu vốn hiện tại (374,4 triệu cp). Nếu cổ tức 5% cổ phiếu và chào bán 2:1 xong cuối Q1/2027: 580 triệu cp, EPS 2027E ~829 đ. Cổ tức 2025 trả bằng cổ phiếu."
  },
  "ln_mang": {
   "tieu": "LN trước lãi vay công ty mẹ, theo nguồn",
@@ -112,8 +112,8 @@
     "mau": "c2",
     "v": [
      122,
-     356,
-     363
+     347,
+     312
     ]
    },
    {
@@ -128,7 +128,7 @@
   ],
   "nhan": "Cảng NHĐV, Cảng Xanh, logistics, tàu",
   "tong_ten": "LN trước lãi vay",
-  "ng": "Lãi vay ròng và chi phí tài chính khác lấy đi 190 → 537 → 583 tỷ; còn lại là LN cổ đông 341 → 402 → 422 tỷ. Phần tự vận hành sau thuế 20%, đội tàu theo 60% sở hữu."
+  "ng": "Lãi vay ròng và chi phí tài chính khác lấy đi 190 → 537 → 583 tỷ; còn lại là LN cổ đông 341 → 393 → 370 tỷ. Phần tự vận hành sau thuế 20%, đội tàu theo 60% sở hữu."
  },
  "sotp": {
   "con": [
@@ -181,10 +181,10 @@
    {
     "ma": "HAH",
     "ten": "Hải An",
-    "cp_trieu": 188.3,
-    "so_huu": 0.223,
-    "ln26": 1352,
-    "ln27": 1450,
+    "cp_trieu": 191.84,
+    "so_huu": 0.2189,
+    "ln26": 1324,
+    "ln27": 1241,
     "gtgd": 61,
     "mau": "c2"
    }
@@ -195,7 +195,7 @@
    "mau": "c3"
   },
   "kv_chi_so": "P/E 2025",
-  "kv_ng": "P/E 2025 cảng biển: MBS 14/07 (Bloomberg). Sở hữu VGR 54,35% (BCTC Q2/2026), HAH 22,3% gồm công ty con (42 triệu cp, FPTS 18/09). Phần còn lại lỗ sau lãi vay nên không tính được P/E"
+  "kv_ng": "P/E 2025 cảng biển: MBS 14/07 (Bloomberg). Sở hữu VGR 54,35% (BCTC Q2/2026), HAH 21,9% — 42 triệu cp gồm công ty con (FPTS 18/09) trên 191,84 triệu cp sau ESOP. LN, P/E HAH theo hồ sơ HAH. Phần còn lại lỗ sau lãi vay nên không tính được P/E"
  },
  "mo_hinh": {
   "tieu": "Mô hình: hai cổ phần + phần tự vận hành gánh nợ",
@@ -226,14 +226,14 @@
     "tang": 1
    },
    {
-    "nhom": "Hải An (HAH) — 22,3%"
+    "nhom": "Hải An (HAH) — 21,9%"
    },
    {
     "ten": "LN cổ đông HAH (tỷ)",
     "v": [
      1207,
-     1352,
-     1450
+     1324,
+     1241
     ],
     "tang": 1
    },
@@ -299,8 +299,8 @@
     "ten": "LN cổ đông (tỷ)",
     "v": [
      341,
-     402,
-     422
+     393,
+     370
     ],
     "dam": 1,
     "tang": 1
@@ -309,8 +309,8 @@
     "ten": "EPS (đ)",
     "v": [
      911,
-     1074,
-     1127
+     1050,
+     988
     ],
     "eps": 1
    },
@@ -319,7 +319,7 @@
     "v": [
      null,
      null,
-     919
+     829
     ]
    }
   ],
@@ -329,11 +329,11 @@
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   402
+   393
   ],
   "cuoi": [
    "2027E",
-   422
+   370
   ],
   "buoc": [
    [
@@ -342,7 +342,7 @@
    ],
    [
     "Công ty liên kết",
-    7
+    -35
    ],
    [
     "Cảng, logistics, tàu (trước lãi vay)",
@@ -350,7 +350,7 @@
    ],
    [
     "Lãi vay và tài chính",
-    -44
+    -45
    ]
   ],
   "y": "Lãi lõi thêm ~55 tỷ (đủ 3 tàu cho thuê, NHĐV đầy) nhưng lãi vay tăng ~84 tỷ (trái phiếu 11%, tàu Buxmelody) nuốt gần hết.",
@@ -396,9 +396,9 @@
   {
    "ten": "LN cổ đông HAH 2027 (tỷ)",
    "v": [
-    "1.200",
-    "1.450",
-    "1.700"
+    "941",
+    "1.241",
+    "1.468"
    ],
    "ly_do": "4 quý đến Q2/2026: 1.284; kế hoạch 2026 LNST 1.250 (6T: 818); tàu đóng mới, giá thuê định hạn neo cao"
   },
@@ -451,24 +451,24 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 277,
-   "ln27": 151,
-   "gia": 5.9,
-   "mo_ta": "NHĐV 500 nghìn TEU, LN/TEU giữ mức 6T/2026; VGR sản lượng −6%; HAH 1.200 tỷ; thuê tàu 360 tỷ, biên 25%; P/E 10 · 8,5 · 9; Harbour City 60% vốn góp"
+   "ln26": 274,
+   "ln27": 89,
+   "gia": 4.5,
+   "mo_ta": "NHĐV 500 nghìn TEU, LN/TEU giữ mức 6T/2026; VGR sản lượng −6%; HAH 941 tỷ; thuê tàu 360 tỷ, biên 25%; P/E 10 · 8,5 · 9; Harbour City 60% vốn góp"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 402,
-   "ln27": 422,
-   "gia": 11.3,
-   "mo_ta": "NHĐV 535, LN/TEU 480 nghìn đ; VGR LNST 510 tỷ; HAH 1.450; thuê tàu 415 tỷ; P/E 11 · 7,5 · 9,5; Harbour City 80%"
+   "ln26": 393,
+   "ln27": 370,
+   "gia": 10.3,
+   "mo_ta": "NHĐV 535, LN/TEU 480 nghìn đ; VGR LNST 510 tỷ; HAH 1.241; thuê tàu 415 tỷ; P/E 11 · 7,5 · 9,5; Harbour City 80%"
   },
   {
    "ten": "Tốt",
-   "ln26": 470,
-   "ln27": 655,
-   "gia": 18.1,
-   "mo_ta": "NHĐV 555, LN/TEU 530 nghìn đ; VGR 567; HAH 1.700; thuê tàu 475 tỷ, biên 42%; P/E 12,5 · 7 · 10,5"
+   "ln26": 462,
+   "ln27": 597,
+   "gia": 17.0,
+   "mo_ta": "NHĐV 555, LN/TEU 530 nghìn đ; VGR 567; HAH 1.468; thuê tàu 475 tỷ, biên 42%; P/E 12,5 · 7 · 10,5"
   }
  ],
  "dinh_gia": {
@@ -500,13 +500,13 @@
     ]
    },
    {
-    "ten": "22,3% Hải An (HAH)",
+    "ten": "21,9% Hải An (HAH)",
     "mau": "c2",
-    "sh": 0.223,
+    "sh": 0.2189,
     "x": [
-     1200,
-     1450,
-     1700
+     941,
+     1241,
+     1468
     ],
     "boi": [
      8.5,
@@ -516,9 +516,9 @@
     "x_ten": "LN 2027E của HAH",
     "boi_ten": "P/E",
     "gt": [
-     2275,
-     2425,
-     2654
+     1751,
+     2037,
+     2249
     ]
    },
    {
@@ -567,14 +567,14 @@
    }
   ],
   "von": [
-   2204,
-   4230,
-   6783
+   1680,
+   3842,
+   6378
   ],
   "gia": [
-   5.9,
-   11.3,
-   18.1
+   4.5,
+   10.3,
+   17.0
   ],
   "no_rong": 5803,
   "no_rong_ten": "Trừ nợ vay ròng ngoài VGR (30/6/2026) và 60% tàu Buxmelody"
@@ -597,8 +597,8 @@
   ],
   [
    "LN 2027E của HAH ±10%",
-   32,
-   0.6
+   27,
+   0.5
   ],
   [
    "Giá trị Harbour City ±20%",
@@ -908,16 +908,16 @@
    0.86
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Giá trị cơ sở ≈ P/B 0,73 lần vốn chủ cuối 2026E (xấu 0,39, tốt 1,16) — dưới mức thấp 10% (0,96) vì ROE 2025–2027E chỉ ~7%, so với 14–16% năm 2019–2021."
+  "dung": "Giá trị cơ sở ≈ P/B 0,66 lần vốn chủ cuối 2026E (xấu 0,30, tốt 1,09) — dưới mức thấp 10% (0,96) vì ROE 2025–2027E chỉ ~7%, so với 14–16% năm 2019–2021."
  },
  "theo_doi": [
   {
    "quy": "Q3/2026",
    "fd": "2026-09-30",
    "ln": [
-    37,
-    97,
-    129
+    36,
+    93,
+    125
    ],
    "ck": 79
   },
@@ -925,18 +925,18 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    40,
-    106,
-    142
+    39,
+    102,
+    138
    ],
    "ck": 65
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    277,
-    402,
-    470
+    274,
+    393,
+    462
    ]
   }
  ],
@@ -945,9 +945,9 @@
    "khi": "10–11/2026",
    "loai": "hai",
    "tieu": "KQKD Q3/2026",
-   "ct": "Mô hình cơ sở LN cổ đông 97 tỷ (Q3/2025: 79): LNST VGR ~125, LN HAH ~335 tỷ (100%); lãi vay quý ~158 tỷ (thêm trái phiếu 500 tỷ, 11%).",
+   "ct": "Mô hình cơ sở LN cổ đông 93 tỷ (Q3/2025: 79): LNST VGR ~125, LN HAH ~319 tỷ (100%); lãi vay quý ~158 tỷ (thêm trái phiếu 500 tỷ, 11%).",
    "tac": [
-    "LN ≥ 90 tỷ",
+    "LN ≥ 80 tỷ",
     "giữ kịch bản cơ sở; dưới 50 tỷ nghiêng về xấu"
    ],
    "theo_doi": "LN hoạt động ngoài VGR, lãi vay"
@@ -959,8 +959,8 @@
    "tieu": "Phát hành 206 triệu cổ phiếu",
    "ct": "Cổ tức 5% bằng cổ phiếu và chào bán 2:1 giá 10.000 đ (187 triệu cp, 1.872 tỷ): vốn điều lệ 3.744 → 5.803 tỷ; 1.582 tỷ trả nợ HDBank và vay ký quỹ.",
    "tac": [
-    "−18% EPS",
-    "EPS 2027E ~919 đ so với 1.127 đ nếu giữ cơ cấu vốn"
+    "−16% EPS",
+    "EPS 2027E ~829 đ so với 988 đ nếu giữ cơ cấu vốn"
    ],
    "theo_doi": "ngày chốt quyền, tỷ lệ thực hiện quyền"
   },
@@ -972,7 +972,7 @@
    "ct": "Nợ vay 6.504 tỷ, lãi suất ~9,3% (Q2); khoản vay ưu đãi 7% hết hạn chuyển sang thả nổi; FPTS: +1 điểm % lãi suất = +65 tỷ chi phí/năm.",
    "tac": [
     "±65 tỷ LN/năm",
-    "≈ 15% LN cổ đông 2027E, mỗi ±1 điểm % lãi suất"
+    "≈ 18% LN cổ đông 2027E, mỗi ±1 điểm % lãi suất"
    ],
    "theo_doi": "lãi suất cho vay, dư nợ"
   },
@@ -1198,7 +1198,7 @@
    ]
   },
   {
-   "ten": "Đội tàu HAGSL (60%) và 22,3% Hải An (HAH)",
+   "ten": "Đội tàu HAGSL (60%) và 21,9% Hải An (HAH)",
    "phu": "HAGSL vốn ban đầu 1.000 tỷ (VSC 60%, HAH 40%), mục tiêu 22.000 TEU đến 2028",
    "so": [
     [
@@ -1505,7 +1505,7 @@
     "ng": "HAH ĐHĐCĐ 6/6/2026 · Mekong ASEAN"
    }
   ],
-  "y": "6 tháng đạt 51% kế hoạch LNTT; mô hình cơ sở cả năm ~802 tỷ (107%). Kế hoạch của VGR (−34%) và HAH (−11%) đặt thấp: 6 tháng đã 75% và 65%.",
+  "y": "6 tháng đạt 51% kế hoạch LNTT; mô hình cơ sở cả năm ~793 tỷ (106%). Kế hoạch của VGR (−34%) và HAH (−11%) đặt thấp: 6 tháng đã 75% và 65%.",
   "ng": ""
  },
  "ctck": [

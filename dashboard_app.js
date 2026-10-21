@@ -2719,7 +2719,7 @@ inits.detail = function(t){
 #finCharts .fd.dn{color:var(--red);background:var(--red-soft)}
 #finCharts .fd.fl{color:var(--muted);background:var(--panel2)}
 #finCharts .fbox{height:215px;position:relative}
-#finCharts .fins{font-size:12.5px;line-height:1.6;color:var(--muted);margin-top:10px;padding:9px 12px;background:var(--panel2);border-radius:8px;border-left:3px solid var(--blue)}
+#finCharts .fins{font-size:12.5px;line-height:1.6;color:var(--muted);margin-top:10px;padding:9px 12px;background:var(--panel2);border-radius:8px;border-left:3px solid var(--green)}
 #finCharts .fins b{color:var(--text);font-weight:700}
           </style>
           <div id="finCharts">
@@ -3316,7 +3316,7 @@ var __finPlug = {
 function drawFundCharts(cols){
   try{
     if(typeof Chart === 'undefined' || !cols || !cols.length) return;
-    var C = { dt:'#2563EB', ln:'#18A34B', roe:'#18A34B', pe:'#2563EB', pb:'#18A34B' };
+    var C = { dt:'#475569', ln:'#18A34B', roe:'#18A34B', pe:'#475569', pb:'#18A34B' };   // tone trang: xanh + xam dam (20/10)
     var INK=__FUI.ink, MUT=__FUI.mut, GRID=__FUI.grid;
     var L = cols.map(function(c){ return c.lb; }), last = cols.length-1;
     var V = function(k){ return cols.map(function(c){ return c[k]; }); };
@@ -3447,7 +3447,7 @@ function __finCss(){
    '#finModalHead .fd.dn{color:var(--red);background:var(--red-soft)}',
    '#finModalHead .fd.fl{color:var(--muted);background:var(--panel2)}',
    '#finModal .fbox{height:min(56vh,470px);position:relative}',
-   '#finModalIns{font-size:14px;line-height:1.65;color:var(--muted);margin-top:12px;padding:11px 14px;background:var(--panel2);border-radius:9px;border-left:3px solid var(--blue)}',
+   '#finModalIns{font-size:14px;line-height:1.65;color:var(--muted);margin-top:12px;padding:11px 14px;background:var(--panel2);border-radius:9px;border-left:3px solid var(--green)}',
    '#finModalIns b{color:var(--text);font-weight:700}',
    '#finModalFoot{margin-top:11px;font-size:11.5px;color:var(--muted);text-align:right;letter-spacing:.2px}'
   ].join('');
@@ -3560,7 +3560,7 @@ function drawKq(qs){
   if (kqChart) kqChart.destroy();
   kqChart = new Chart($('#cvKq'), { data: { labels, datasets: [
     {type:'bar', label:'Doanh thu', data:rev, backgroundColor:'rgba(24,163,75,.45)', yAxisID:'y'},
-    {type:'line', label:'LNST', data:np, borderColor:'#2563eb', backgroundColor:'#2563eb', yAxisID:'y2', tension:.25}
+    {type:'line', label:'LNST', data:np, borderColor:'#475569', backgroundColor:'#475569', yAxisID:'y2', tension:.25}
   ]}, options: chartJsOpts(2) });
   // bảng 12 quý
   const yoy = (arr,i) => { const j = last12.length-12+i; const q = last12[i]; const prevIdx = qs.findIndex(x=>x.yearReport===q.yearReport-1 && x.lengthReport===q.lengthReport); const cur = pick(q,NPAT); const prev = prevIdx>=0?pick(qs[prevIdx],NPAT):null; return (cur!=null&&prev!=null&&prev!==0)?(cur/Math.abs(prev)-1)*100:null; };
@@ -3572,8 +3572,8 @@ function drawRt(rts){
   const labels = rts.map(x=>x.yearReport+'Q'+x.quarter);
   if (rtChart) rtChart.destroy();
   rtChart = new Chart($('#cvRt'), { data: { labels, datasets: [
-    {type:'line', label:'P/E', data:rts.map(x=>x.pe), borderColor:'#2563eb', yAxisID:'y', tension:.25},
-    {type:'line', label:'P/B', data:rts.map(x=>x.pb), borderColor:'#d97706', yAxisID:'y2', tension:.25},
+    {type:'line', label:'P/E', data:rts.map(x=>x.pe), borderColor:'#475569', yAxisID:'y', tension:.25},
+    {type:'line', label:'P/B', data:rts.map(x=>x.pb), borderColor:'#94A3B8', yAxisID:'y2', tension:.25},
     {type:'line', label:'ROE %', data:rts.map(x=>x.roe!=null?x.roe*100:null), borderColor:'#18a34b', yAxisID:'y2', tension:.25}
   ]}, options: chartJsOpts(2) });
 }

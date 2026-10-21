@@ -1,0 +1,1513 @@
+{
+ "v": 2,
+ "ma": "DGW",
+ "ten": "CTCP Thế Giới Số (Digiworld)",
+ "nganh": "Phân phối thiết bị công nghệ, gia dụng, hàng tiêu dùng",
+ "ky": "BCTC Q2/2026 · doanh thu Q3/2026 sơ bộ · giá 20/10/2026",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "cp_trieu": 223.4,
+ "cp_ng": "221.161.000 cp lưu hành (KAFI 24/08) + 2,2 triệu cp ESOP giá 10.000 đ (đợt phát hành kết thúc 26/08/2026); vốn điều lệ Q2/2026 trên VNDirect (2.213,2 tỷ) chưa gồm ESOP",
+ "co_tuc": [
+  [
+   "2026-05-13",
+   1000,
+   "cổ tức 2025 (10%), ĐKCC 14/5/2026"
+  ],
+  [
+   "2026-10-05",
+   1000,
+   "tạm ứng đợt 1/3 cổ tức 2026 (10%), ĐKCC 06/10, trả 16/10/2026"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Chip đắt nhân đôi lãi 2026, nhưng biên lợi nhuận co lại năm 2027 giới hạn dư địa tăng giá",
+  "dk": "up_duoi:15",
+  "khac": "Chip đắt nhân đôi lãi 2026; giá đã trừ hao quá mức cho biên lợi nhuận co lại năm 2027"
+ },
+ "dong_mo": "6T/2026 lãi 510 tỷ (+130%), biên gộp quý 2 13,0% — cao nhất lịch sử; quý 3 doanh thu kỷ lục 10.757 tỷ (+46%, sơ bộ). Mô hình: LN 2026E 1.097 tỷ, 2027E 924 tỷ khi biên gộp lùi về 9,8%. P/E 12 × LN 2027E: {gt} ({up}), chưa gồm 2.000 đ cổ tức còn nhận; cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "+46%",
+   "nhan": "doanh thu Q3/2026 (sơ bộ), cao nhất lịch sử",
+   "tieu": "Máy chủ thay laptop làm đầu kéo tăng trưởng",
+   "t": "Q3 10.757 tỷ; 9 tháng 26.531 tỷ (+42%), đã 84% kế hoạch năm. Thiết bị văn phòng (máy chủ AI, lưu trữ, Shell) 3.363 tỷ, gấp 2,0 lần cùng kỳ, lên 31% doanh thu (Q3/2025: 22%); laptop chậm dần: +101% (Q1) → +37% → +21% (Q3). Mô hình: doanh thu 2026E 36,1 nghìn tỷ (+36%) — trên mọi dự phóng CTCK (31,2–32,9 nghìn tỷ).",
+   "ng": "DGW công bố 10/2026 · VDS 17/06 · KAFI 24/08 · mô hình"
+  },
+  {
+   "so": "13,0%",
+   "nhan": "biên gộp Q2/2026, cao nhất từ 2014",
+   "tieu": "Biên quý 2 là lãi hàng tồn kho, không phải mặt bằng mới",
+   "t": "DGW bán hàng tồn mua rẻ đầu năm với giá đã cộng phần RAM tăng (KAFI); chi phí bán hàng lên 7,3% doanh thu (chiết khấu đại lý, chuỗi lớn). Biên HĐKD 6T 3,8% so với 2,2–3,6% giai đoạn 2019–2025; lần gần nhất biên gộp quý trên 11% là Q4/2022 (11,5%), ngay trước năm LN −48%. Mô hình: biên gộp 10,5% quý 3, 10,0% quý 4, 9,8% năm 2027 — LN 2027E −16% dù doanh thu +6%.",
+   "ng": "BCTC Q2 · KAFI 24/08 · VDS 17/06 · mô hình"
+  },
+  {
+   "so": "×2,1",
+   "nhan": "tồn kho trong quý 2/2026 (2.681 → 5.731 tỷ)",
+   "tieu": "Vốn lưu động phóng đại cả hai chiều của chu kỳ chip",
+   "t": "Hàng mua vào khi giá chip đang lên; phải trả nhà cung cấp & nợ khác tăng 1.998 tỷ bù phần lớn, vay ngắn hạn 3.215 tỷ, nợ vay ròng 781 tỷ (30/6). Chiều ngược đã có: năm 2023, sau đỉnh 2021–2022, doanh thu −15%, LN −48% (684 → 354 tỷ). Kịch bản xấu lặp lại mẫu đó: laptop 2027 −15%, biên HĐKD 2,2% → LN 2027E 490 tỷ, giá trị 30,7 nghìn đ.",
+   "ng": "BCTC hợp nhất (VNDirect) · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/E 12 × LN 2027E: {up_so} so với giá hiện tại",
+   "t": "P/E 12 ≈ trung vị P/E 4 quý của DGW từ 2016 (12,4); nhóm phân phối khu vực 10,8 (VDS). Thị trường trả P/E thấp cho LN đỉnh (12/2022: 7,2 lần), cao cho LN đáy (2024: 21–31 lần) nên xấu dùng 14, tốt 11. Cổ tức 2026 3.000 đ/cp chia 3 đợt (đợt 1 GDKHQ 05/10/2026; quý 1, quý 2/2027) — ~61% LN 2026E, lấy từ 1.449 tỷ LN chưa phân phối (30/6).",
+   "ng": "mô hình · ĐHĐCĐ 2026 · KAFI 24/08 · VDS 17/06"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   547,
+   1097,
+   924
+  ],
+  "ln_truoc": 444,
+  "eps": [
+   2449,
+   4910,
+   4136
+  ],
+  "co_tuc_nam": 3000,
+  "them": [
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     26.6,
+     36.1,
+     38.2
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Biên gộp",
+    "v": [
+     8.7,
+     10.6,
+     9.8
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS trên 223,4 triệu cp (sau ESOP 8/2026); CTCK tính trên 221,2 triệu cp. 2026E = 6 tháng BCTC + quý 3 (doanh thu sơ bộ, biên theo giả định) + quý 4 ước tính. Cổ tức 2026: 3.000 đ/cp, 3 đợt."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E trượt 2025 (VDS 17/06, Bloomberg)",
+  "nhom": "nhà phân phối CNTT khu vực",
+  "kv": [
+   [
+    "SiS Distribution (Thái Lan)",
+    7.7
+   ],
+   [
+    "Synnex Thailand",
+    10.9
+   ],
+   [
+    "VSTECS (Malaysia)",
+    14.7
+   ],
+   [
+    "Com7 (Thái Lan)",
+    10.9
+   ],
+   [
+    "Petrosetco (PET)",
+    14.9
+   ]
+  ],
+  "tv": 10.9,
+  "moi_cp": 3739,
+  "max": 20,
+  "y": "Trung vị 10 năm của nhóm 10,8 lần (VDS); DGW khi đó 15,6. EPS 4 quý của DGW chưa gồm quý 3 kỷ lục: ở giá 20/10, P/E LN 2026E của mô hình chỉ 9,4 lần, LN 2027E 11,1 lần.",
+  "ng": "P/E trượt 2025 cùng ngành: VDS 17/06 (Bloomberg); DGW: EPS 4 quý đến Q2/2026 (BCTC VNDirect) trên 223,4 triệu cp"
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "HĐKD ở biên 2025 (2,7%)",
+    "mau": "c2",
+    "v": [
+     584,
+     769,
+     811
+    ]
+   },
+   {
+    "ten": "Phần biên vượt 2025",
+    "mau": "c1",
+    "v": [
+     0,
+     296,
+     121
+    ]
+   },
+   {
+    "ten": "Tài chính ròng & khác",
+    "mau": "c4",
+    "v": [
+     -37,
+     32,
+     -8
+    ]
+   }
+  ],
+  "nhan": "Phần biên vượt 2025",
+  "ng": "HĐKD = LN gộp − chi phí bán hàng, quản lý; phần ở biên 2025 = doanh thu × 2,70%; thuế, cổ đông thiểu số chia theo LNTT. 2026E–2027E: mô hình."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1097
+  ],
+  "cuoi": [
+   "2027E",
+   924
+  ],
+  "buoc": [
+   [
+    "Doanh thu +6%",
+    61
+   ],
+   [
+    "Biên gộp 10,6 → 9,8%",
+    -245
+   ],
+   [
+    "Chi phí 6,9 → 6,7%",
+    54
+   ],
+   [
+    "Tài chính & khác",
+    -40
+   ],
+   [
+    "Thuế, thiểu số",
+    -3
+   ]
+  ],
+  "y": "Doanh thu vẫn tăng nhưng biên gộp lùi 0,8 điểm % lấy đi 245 tỷ — gấp 4 lần phần doanh thu đem lại.",
+  "ng": "mô hình"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo ngành hàng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Doanh thu theo ngành hàng (nghìn tỷ)"
+   },
+   {
+    "ten": "Laptop & máy tính bảng",
+    "v": [
+     8.4,
+     11.4,
+     10.8
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Điện thoại di động",
+    "v": [
+     9.4,
+     10.6,
+     11.0
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Thiết bị văn phòng (máy chủ, IoT, Shell)",
+    "v": [
+     6.2,
+     10.7,
+     12.6
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Gia dụng & tiêu dùng",
+    "v": [
+     2.7,
+     3.4,
+     3.9
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     26.6,
+     36.1,
+     38.2
+    ],
+    "d": 1,
+    "tang": 1,
+    "dam": 1
+   },
+   {
+    "nhom": "Biên và lợi nhuận"
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     8.7,
+     10.6,
+     9.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Chi phí BH&QL / doanh thu (%)",
+    "v": [
+     6.0,
+     6.9,
+     6.7
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Biên HĐKD (%)",
+    "v": [
+     2.7,
+     3.7,
+     3.1
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN HĐKD (tỷ)",
+    "v": [
+     719,
+     1350,
+     1185
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tài chính ròng & khác (tỷ)",
+    "v": [
+     -45,
+     41,
+     -10
+    ]
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     673,
+     1391,
+     1175
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     547,
+     1097,
+     924
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     2449,
+     4910,
+     4136
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "Cổ tức tiền mặt (đ/cp)",
+    "s": [
+     "1.000",
+     "3.000",
+     "—"
+    ]
+   }
+  ],
+  "ghi": "Doanh thu ngành hàng: VDS 17/06, KAFI 24/08, DGW công bố quý 3 (sơ bộ); thiết bị văn phòng gồm Shell, bảo hộ lao động. 2026E = 6 tháng BCTC + quý 3 (doanh thu sơ bộ, biên theo giả định) + quý 4 ước tính. Thuế 20,5%, cổ đông thiểu số 1%."
+ },
+ "gia_dinh": [
+  {
+   "ten": "Laptop & máy tính bảng: Q4/2026 · 2027",
+   "v": [
+    "−5% · −15%",
+    "+10% · −5%",
+    "+20% · +5%"
+   ],
+   "ly_do": "Q4 so cùng kỳ, 2027 so 2026E. Tăng chậm dần: +101% → +37% → +21% (Q1–Q3); 2026 có phần mua trước đợt tăng giá RAM; KAFI 2027 +7%, VDS +3%"
+  },
+  {
+   "ten": "Điện thoại: Q4/2026 · 2027",
+   "v": [
+    "0% · −5%",
+    "+10% · +3%",
+    "+20% · +8%"
+   ],
+   "ly_do": "Q3 +42% (sơ bộ) sau 6T chỉ +6% khi phần phân phối Apple chuyển dần sang MWG, FRT; nền Q4/2025 3.210 tỷ cao nhất năm; MBS 2027 +5%"
+  },
+  {
+   "ten": "Thiết bị văn phòng: Q4/2026 · 2027",
+   "v": [
+    "+25% · +5%",
+    "+50% · +18%",
+    "+70% · +30%"
+   ],
+   "ly_do": "Q1 +92%, Q2 +47%, Q3 +105% (máy chủ AI, Shell); Shinhan: máy chủ +20%/năm trong 5 năm; KAFI 2027 +14%, MBS +30%"
+  },
+  {
+   "ten": "Gia dụng & tiêu dùng: Q4/2026 · 2027",
+   "v": [
+    "+5% · 0%",
+    "+15% · +12%",
+    "+25% · +20%"
+   ],
+   "ly_do": "Q3 +25% (gia dụng +22%, tiêu dùng +32%); thêm Cuckoo, Hisense năm 2026; KAFI 2027: gia dụng +22%, tiêu dùng +13%"
+  },
+  {
+   "ten": "Biên gộp Q3 · Q4/2026",
+   "v": [
+    "9,5% · 9,0%",
+    "10,5% · 10,0%",
+    "11,5% · 11,0%"
+   ],
+   "ly_do": "Q1/2026 9,5%, Q2 13,0% gồm lãi hàng tồn kho mua rẻ (KAFI); quý có doanh thu cao nhất 2023–2025: 8,7% (Q4/2025)"
+  },
+  {
+   "ten": "Biên gộp 2027",
+   "v": [
+    "9,0%",
+    "9,8%",
+    "10,4%"
+   ],
+   "ly_do": "2019–2025: 6,3–9,3% (2025: 8,7%). Cơ sở giữ một phần nhờ cơ cấu (máy chủ, gia dụng, Shell); KAFI: biên laptop 11,5% (2026) → 10,7% (2027)"
+  },
+  {
+   "ten": "Chi phí BH&QL/doanh thu: 2H/2026 · 2027",
+   "v": [
+    "6,8% · 6,8%",
+    "6,6% · 6,7%",
+    "6,5% · 6,6%"
+   ],
+   "ly_do": "2023–2025: 6,0–6,9%; Q1/2026 6,4%, Q2 8,2%; năm 2023 thị trường đi xuống, tỷ lệ này tăng từ 3,9% lên 6,1%"
+  },
+  {
+   "ten": "Tài chính & khác (tỷ): quý 2H/26 · 2027",
+   "v": [
+    "−20 · −110",
+    "0 · −10",
+    "+15 · +55"
+   ],
+   "ly_do": "6T/2026 +41 tỷ; 2025 −45 (dự phòng chứng khoán); lãi vay Q2 54 tỷ, lãi suất 7,1% (VDS); đầu tư ngắn hạn 442 tỷ (30/6)"
+  },
+  {
+   "ten": "P/E (× LN 2027E)",
+   "v": [
+    "14",
+    "12",
+    "11"
+   ],
+   "ly_do": "12 ≈ trung vị DGW từ 2016 (12,4); LN đỉnh được trả P/E thấp (12/2022: 7,2), LN đáy cao (2024: 21–31) nên xấu 14, tốt 11; nhóm khu vực 10,8 (VDS)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 852,
+   "ln27": 490,
+   "gia": 30.7,
+   "mo_ta": "Q4/2026 doanh thu +5%; 2027 laptop −15%, văn phòng +5%; biên gộp 9,0%, chi phí 6,8% (như 2023); P/E 14"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1097,
+   "ln27": 924,
+   "gia": 49.6,
+   "mo_ta": "Q4/2026 doanh thu +20%; 2027 doanh thu +6% (văn phòng +18%, laptop −5%); biên gộp 9,8%; P/E 12"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 1332,
+   "ln27": 1317,
+   "gia": 64.8,
+   "mo_ta": "Q4/2026 doanh thu +32%; 2027 doanh thu +15% (văn phòng +30%); biên gộp 10,4% — gần mức 2026; P/E 11"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/E",
+  "phu": "P/E × LN cổ đông 2027E",
+  "ck": 0,
+  "cp": 223.4,
+  "phan": [
+   {
+    "ten": "DGW (hợp nhất)",
+    "mau": "c1",
+    "x": [
+     490,
+     924,
+     1317
+    ],
+    "boi": [
+     14,
+     12,
+     11
+    ],
+    "x_ten": "LN cổ đông 2027E",
+    "sh": 1,
+    "boi_ten": "P/E",
+    "gt": [
+     6860,
+     11088,
+     14487
+    ]
+   }
+  ],
+  "von": [
+   6860,
+   11088,
+   14487
+  ],
+  "gia": [
+   30.7,
+   49.6,
+   64.8
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   8.8,
+   8.5,
+   7.9,
+   7.5,
+   7.4,
+   6.3,
+   6.4,
+   8.1,
+   9.0,
+   9.1,
+   8.6,
+   8.5,
+   6.7,
+   7.5,
+   6.5,
+   10.3,
+   10.6,
+   11.2,
+   10.4,
+   10.7,
+   11.8,
+   12.6,
+   12.3,
+   13.6,
+   11.7,
+   12.7,
+   14.0,
+   12.0,
+   11.8,
+   10.7,
+   11.5,
+   12.1,
+   10.6,
+   9.6,
+   9.2,
+   9.4,
+   8.6,
+   8.3,
+   8.4,
+   7.9,
+   7.5,
+   8.0,
+   7.7,
+   8.2,
+   8.4,
+   6.9,
+   6.8,
+   6.9,
+   6.6,
+   4.6,
+   6.5,
+   6.3,
+   8.9,
+   9.0,
+   10.1,
+   12.0,
+   11.8,
+   15.2,
+   16.9,
+   13.7,
+   16.1,
+   20.1,
+   19.0,
+   16.6,
+   17.7,
+   20.4,
+   20.2,
+   27.6,
+   26.4,
+   27.5,
+   26.4,
+   22.4,
+   16.6,
+   19.1,
+   18.7,
+   14.9,
+   13.5,
+   12.4,
+   15.1,
+   13.6,
+   12.9,
+   8.4,
+   7.2,
+   8.4,
+   8.7,
+   6.9,
+   8.2,
+   10.5,
+   12.3,
+   16.0,
+   19.0,
+   19.0,
+   13.8,
+   19.6,
+   20.3,
+   21.0,
+   26.3,
+   31.2,
+   27.8,
+   29.6,
+   27.9,
+   27.0,
+   27.7,
+   27.5,
+   25.3,
+   23.9,
+   22.2,
+   21.0,
+   19.7,
+   18.6,
+   16.1,
+   15.6,
+   21.1,
+   20.4,
+   19.0,
+   18.7,
+   18.1,
+   18.1,
+   16.2,
+   20.3,
+   20.7,
+   18.5,
+   17.6,
+   14.1,
+   13.9,
+   12.6,
+   11.2,
+   12.1,
+   12.0
+  ],
+  "p10": 7.4,
+  "p25": 8.6,
+  "tv": 12.4,
+  "thap": [
+   "2020-03",
+   4.6
+  ],
+  "nay": [
+   "2026-10",
+   12.0
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "P/E 4 quý của DGW đi ngược chu kỳ: LN đỉnh 2022 được trả 7,2 lần (12/2022), LN đáy 2023–2024 được trả 21–31 lần (2024). Hiện 12,0, dưới trung vị 12,4. Kịch bản dùng P/E 14 · 12 · 11 (xấu · cơ sở · tốt) cho LN 2027E. Từ 9/2026 dùng 223,4 triệu cp (sau ESOP)."
+ },
+ "nhay": [
+  [
+   "Biên gộp 2027 ±0,5 điểm %",
+   150,
+   8.1
+  ],
+  [
+   "Chi phí BH&QL ±0,3 điểm %",
+   90,
+   4.8
+  ],
+  [
+   "P/E ±1 lần",
+   null,
+   4.1
+  ],
+  [
+   "Doanh thu 2027 ±5%",
+   47,
+   2.5
+  ],
+  [
+   "Lãi suất vay ±1 điểm %",
+   28,
+   1.5
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    213,
+    330,
+    435
+   ],
+   "ck": 166
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    130,
+    257,
+    387
+   ],
+   "ck": 159
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    852,
+    1097,
+    1332
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "BCTC Q3/2026: biên gộp sau quý kỷ lục",
+   "ct": "Doanh thu sơ bộ 10.757 tỷ (+46%); mô hình dự phóng LN cổ đông 330 tỷ (+98%) với biên gộp 10,5%. Biên dưới 9,5% là dấu hiệu lãi tồn kho đã hết.",
+   "tac": [
+    "≥ 330 tỷ",
+    "giữ kịch bản cơ sở; dưới 210 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "biên gộp, tồn kho, nợ vay"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "hai",
+   "tieu": "Mùa iPhone và cuối năm",
+   "ct": "Q4/2025 điện thoại 3.210 tỷ — quý cao nhất năm, nền so sánh cao. Mô hình: doanh thu quý 4 +20%, biên gộp 10%.",
+   "tac": [
+    "±76 tỷ LN",
+    "mỗi 1 điểm % biên gộp quý 4"
+   ],
+   "theo_doi": "doanh thu tháng 10–12, biên gộp"
+  },
+  {
+   "khi": "Q1–Q2/2027",
+   "loai": "len",
+   "tieu": "Hai đợt cổ tức tiền mặt còn lại",
+   "ct": "1.000 đ/cp mỗi đợt (ĐHĐCĐ thông qua 30% cho năm 2026); ~447 tỷ, từ 1.449 tỷ LN chưa phân phối.",
+   "tac": [
+    "+2.000 đ/cp",
+    "tiền mặt nhận trong 12 tháng, ngoài giá trị cơ sở"
+   ],
+   "theo_doi": "ngày ĐKCC"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Máy chủ AI, trung tâm dữ liệu",
+   "ct": "Thị trường máy chủ, lưu trữ Việt Nam ~1 tỷ USD, DGW ~8% (Shinhan); phân phối Supermicro, Asus, Gigabyte, H3C. 9T/2026 thiết bị văn phòng gấp 1,8 lần cùng kỳ.",
+   "tac": [
+    "+1,7 nghìn đ/cp",
+    "nếu văn phòng 2027 +30% (biên HĐKD 3,1%)"
+   ],
+   "theo_doi": "doanh thu máy chủ, thị phần"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Thương hiệu mới: Shell, Intel, Xerox, Hisense",
+   "ct": "Shell dầu nhờn + bảo hộ lao động 330 tỷ quý 3 (+146%); KAFI ước Shell ~400 tỷ năm 2026, tăng mạnh từ 2027.",
+   "tac": "",
+   "theo_doi": "doanh thu ngành hàng mới"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Giá chip đảo chiều, biên co về mức 2025",
+   "ct": "Biên gộp 2025: 8,7%. RAM ngừng tăng giá thì lãi hàng tồn kho mất, đại lý giảm nhập; kịch bản xấu: biên gộp 9,0%, chi phí 6,8%.",
+   "tac": [
+    "−12,9 nghìn đ/cp",
+    "nếu biên gộp 2027 9,0% thay vì 9,8%"
+   ],
+   "theo_doi": "giá DRAM hợp đồng, biên gộp quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Laptop trả giá cho năm mua sớm",
+   "ct": "Q1/2026 thị trường laptop +28,7% giá trị, +14,5% số lượng (GfK, theo VDS) khi khách mua trước đợt tăng giá RAM; cầu 2027 có thể hụt.",
+   "tac": [
+    "−4,5 nghìn đ/cp",
+    "mỗi 10% doanh thu laptop 2027 nếu chi phí không giảm theo"
+   ],
+   "theo_doi": "doanh thu laptop theo tháng"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Mất dần phân phối Apple",
+   "ct": "Apple, Xiaomi >90% doanh thu điện thoại (Shinhan); Apple bán thẳng qua MWG, FRT — Q1/2026 điện thoại DGW +1,9% khi thị trường +22% (GfK).",
+   "tac": "",
+   "theo_doi": "doanh thu điện thoại, thị phần Apple"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Nợ vay và danh mục cổ phiếu",
+   "ct": "Vay 3.215 tỷ (30/6), lãi suất bình quân 7,1% (Q1, VDS); đầu tư ngắn hạn 442 tỷ (31/3: 825 tỷ, chủ yếu cổ phiếu TCB, HPG, VPB) vẫn làm nhiễu LN.",
+   "tac": [
+    "−1,5 nghìn đ/cp",
+    "mỗi 1 điểm % lãi suất vay"
+   ],
+   "theo_doi": "chi phí lãi vay, dự phòng chứng khoán"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu theo ngành hàng",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26*"
+   ],
+   "ss": [
+    {
+     "ten": "Thiết bị văn phòng",
+     "v": [
+      1273,
+      1368,
+      1643,
+      1910,
+      2447,
+      2014,
+      3363
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Laptop & máy tính bảng",
+     "v": [
+      1391,
+      1832,
+      3166,
+      2008,
+      2803,
+      2511,
+      3834
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Điện thoại",
+     "v": [
+      2235,
+      1960,
+      1953,
+      3210,
+      2278,
+      2054,
+      2771
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Gia dụng & tiêu dùng",
+     "v": [
+      621,
+      572,
+      629,
+      862,
+      972,
+      694,
+      788
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Thiết bị văn phòng từ 22% lên 31% doanh thu (Q3/2025 → Q3/2026), điện thoại xuống 26%. *Q3/2026: số sơ bộ DGW công bố.",
+   "ng": "VDS 17/06 · KAFI 24/08 · *Q3/26: DGW công bố sơ bộ 10/2026; Q2–Q3/2025 tự tính từ tăng trưởng cùng kỳ và tổng năm"
+  },
+  {
+   "ten": "Biên gộp và chi phí bán hàng, quản lý",
+   "dv": "% doanh thu",
+   "kieu": "duong",
+   "nhan": [
+    "Q3/23",
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      7.1,
+      10.7,
+      7.8,
+      9.3,
+      9.7,
+      10.4,
+      8.7,
+      8.5,
+      8.8,
+      8.7,
+      9.5,
+      13.0
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Chi phí BH&QL",
+     "v": [
+      4.8,
+      9.0,
+      5.4,
+      6.9,
+      7.9,
+      7.2,
+      5.3,
+      7.5,
+      6.3,
+      5.1,
+      6.4,
+      8.2
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Khoảng cách hai đường là biên HĐKD: 1,0–3,6% từ Q3/2023 đến Q4/2025, lên 4,8% ở quý 2/2026.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "Tồn kho, phải thu và vay ngắn hạn cuối quý",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tồn kho",
+     "v": [
+      2860,
+      3501,
+      3189,
+      3515,
+      3017,
+      4436,
+      2681,
+      5731
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Phải thu",
+     "v": [
+      2925,
+      2634,
+      2527,
+      2846,
+      4658,
+      3517,
+      4776,
+      3498
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Vay ngắn hạn",
+     "v": [
+      2726,
+      2487,
+      2699,
+      2865,
+      3182,
+      2899,
+      2790,
+      3215
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Tồn kho gấp 2,1 lần trong quý 2; phải trả nhà cung cấp & nợ khác tăng 1.998 tỷ cùng quý, vay chỉ thêm 425 tỷ.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "LN cổ đông theo quý: 2026 so với 2025",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+   ],
+   "ss": [
+    {
+     "ten": "2025",
+     "v": [
+      106,
+      116,
+      166,
+      159
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "2026",
+     "v": [
+      200,
+      309,
+      null,
+      null
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "2026E (mô hình cơ sở)",
+     "v": [
+      null,
+      null,
+      330,
+      257
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "6 tháng +130%; mô hình cơ sở cho quý 3 +98%, quý 4 +61%.",
+   "ng": "BCTC hợp nhất (VNDirect) · mô hình"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 31500,
+    "th": 26531,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · DGW công bố 10/2026 (sơ bộ)"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 660,
+    "th": 511,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+   }
+  ],
+  "y": "Doanh thu 9 tháng đã 84% kế hoạch, LNST 6 tháng 77%; mô hình cho LN 2026E 1.097 tỷ, gấp 1,7 lần kế hoạch.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "KAFI",
+   "ngay": "2026-08-24",
+   "kn": "KHẢ QUAN",
+   "tp": 52220,
+   "ln26": 850,
+   "ln27": 1024,
+   "pp": "Theo dự phóng 2026",
+   "y": "Nâng dự phóng sau quý 2: biên gộp laptop 11,5% (2026) rồi 10,7% (2027); LNST 2026 850 tỷ — tức nửa cuối năm chỉ ~340 tỷ. Cổ tức 3.000 đ/cp.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/20260824_ctcp_the_gioi_so_hsx_dgw_gia_tang_trien_vong_nho_kqkd_q2_2026_vuot_troi.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-08-04",
+   "kn": "MUA",
+   "tp": 45300,
+   "ln26": 746,
+   "ln27": 894,
+   "pp": "DCF (WACC 11,4%, tăng trưởng dài hạn 2%)",
+   "y": "Báo cáo lần đầu: máy chủ +20%/năm, gia dụng +30%/năm trong 5 năm. Rủi ro: sức mua, thiếu chip, tỷ giá, mất độc quyền phân phối.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/dgw_mua_gia_mt_vnd_45_300_23_dinh_vi_doanh_nghiep_phan_phoi_hang_dau.pdf"
+  },
+  {
+   "ctck": "VDS",
+   "ngay": "2026-06-17",
+   "kn": "TÍCH LŨY",
+   "tp": 46300,
+   "ln26": 696,
+   "ln27": 802,
+   "pp": "FCFF 5 năm, WACC 12%, EV/EBITDA cuối kỳ 9,8",
+   "y": "Hạ 20% giá mục tiêu: DGW đổi chi phí chiết khấu lấy thị phần, lãi vay tăng; số ngày phải thu lên 46 (Điện Máy Xanh, ITC, Intekcom).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/ong_luc_tang_truong_khong_thay_oi.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-06-09",
+   "kn": "TĂNG TỶ TRỌNG",
+   "tp": 46600,
+   "ln26": 654,
+   "ln27": null,
+   "pp": "Báo cáo ngắn, P/E 2026F 13,3 lần",
+   "y": "Nghị định 70/2025 siết hàng xách tay đẩy cầu về kênh chính hãng; giá bộ nhớ cao có thể kéo dài đến cuối 2027 (IDC).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/bao_cao_ngan_ctcp_the_gioi_so_dgw_vn_tang_ty_trong_tang_truong_duoc_cung_co.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-05-26",
+   "kn": "KHẢ QUAN",
+   "tp": 57300,
+   "ln26": 721,
+   "ln27": 872,
+   "pp": "50% DCF (WACC 10,6%) + 50% P/E 16",
+   "y": "Thiết bị văn phòng +50% năm 2026 nhờ giá máy chủ tăng ~30%; điện thoại gần như đi ngang vì mất lợi thế với Apple, Xiaomi.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/dgw_bcpt_dinh_gia_hap_dan_cung_tiem_nang_tang_truong_loi_nhuan_lon.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. LN 2026F, 2027F: LN cổ đông (KAFI: LNST). Giá mục tiêu ghi đúng báo cáo, tính trên ~221,2 triệu cp, trước tạm ứng cổ tức 1.000 đ/cp (GDKHQ 05/10/2026). Báo cáo đều ra trước doanh thu quý 3.",
+ "nguon": [
+  {
+   "ten": "KAFI — Gia tăng triển vọng nhờ KQKD Q2/2026 vượt trội",
+   "ngay": "24/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/20260824_ctcp_the_gioi_so_hsx_dgw_gia_tang_trien_vong_nho_kqkd_q2_2026_vuot_troi.pdf"
+  },
+  {
+   "ten": "Shinhan — Định vị doanh nghiệp phân phối hàng đầu",
+   "ngay": "04/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/dgw_mua_gia_mt_vnd_45_300_23_dinh_vi_doanh_nghiep_phan_phoi_hang_dau.pdf"
+  },
+  {
+   "ten": "VDS (Rồng Việt) — Động lực tăng trưởng không thay đổi",
+   "ngay": "17/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/ong_luc_tang_truong_khong_thay_oi.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Tăng trưởng được củng cố",
+   "ngay": "09/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/bao_cao_ngan_ctcp_the_gioi_so_dgw_vn_tang_ty_trong_tang_truong_duoc_cung_co.pdf"
+  },
+  {
+   "ten": "MBS — Định giá hấp dẫn cùng tiềm năng tăng trưởng lợi nhuận lớn",
+   "ngay": "26/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGW/dgw_bcpt_dinh_gia_hap_dan_cung_tiem_nang_tang_truong_loi_nhuan_lon.pdf"
+  },
+  {
+   "ten": "Người Quan sát — doanh thu quý 3 kỷ lục, 9 tháng vượt 1 tỷ USD (số sơ bộ)",
+   "ngay": "10/2026",
+   "link": "https://nguoiquansat.vn/digiworld-lap-ky-luc-doanh-thu-quy-9-thang-vuot-moc-1-ty-usd-320270.html"
+  },
+  {
+   "ten": "Stockbiz — DGW quý 3: doanh thu theo ngành hàng",
+   "ngay": "10/2026",
+   "link": "https://stockbiz.vn/tin-tuc/dgw-quy-3-lap-ky-luc-doanh-thu-digiworld-vuot-1-ty-usd-sau-9-thang/42298510"
+  },
+  {
+   "ten": "Tạp chí Kinh tế Tài chính — Digiworld ước doanh thu 9 tháng 26.500 tỷ",
+   "ngay": "10/2026",
+   "link": "https://tapchikinhtetaichinh.vn/tai-chinh-doanh-nghiep-24-7-digiworld-uoc-dat-doanh-thu-26-500-ty-dong-gemadept-thanh-lap-cong-ty-con-von-498-ty-dong-168792.html"
+  },
+  {
+   "ten": "Báo Pháp luật — kế hoạch cổ tức 2026: 30% tiền mặt, 3 đợt",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/digiworld-dgw-cong-bo-ke-hoach-tra-co-tuc-nam-2026-du-kien-tra-het-trong-nua-dau-2027.html"
+  },
+  {
+   "ten": "Thương hiệu & Công luận — chốt quyền tạm ứng cổ tức đợt 1 (GDKHQ 05/10)",
+   "ngay": "09/2026",
+   "link": "https://thuonghieucongluan.com.vn/digiworld-an-dinh-ngay-chot-quyen-nhan-co-tuc-tien-mat-dot-1-a335369.html"
+  },
+  {
+   "ten": "24hMoney — chi hơn 220 tỷ trả cổ tức đợt 1",
+   "ngay": "09/2026",
+   "link": "https://24hmoney.vn/news/digiworld-du-chi-hon-220-ty-tra-co-tuc-cho-co-dong-c1a2835885.html"
+  },
+  {
+   "ten": "VnEconomy — cổ tức 2025 1.000 đ/cp, ĐKCC 14/5/2026",
+   "ngay": "05/2026",
+   "link": "https://vneconomy.vn/dgw-bao-lai-200-ty-du-chi-221-ty-tra-co-tuc-nam-2025.htm"
+  },
+  {
+   "ten": "Mekong ASEAN — ESOP 2,2 triệu cp, kết thúc 26/8, tiền trả nợ vay",
+   "ngay": "09/2026",
+   "link": "https://mekongasean.vn/digiworld-dung-hon-22-ty-dong-tu-dot-phat-hanh-esop-de-tra-no-vay-59689.html"
+  },
+  {
+   "ten": "Báo Pháp luật — triển khai ESOP 2026",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/digiworld-dgw-trien-khai-esop-2026-du-kien-thu-ve-22-ty-dong.html"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ 2026: kế hoạch doanh thu 31.500 tỷ, LNST 660 tỷ",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-digiworld-dgw-2026-lai-quy-1-vuot-200-ty-dong-he-lo-ly-do-chua-ban-xe-dien-ma-chon-kinh-doanh-dau-nhot.html"
+  },
+  {
+   "ten": "Mekong ASEAN — tổ chức liên quan Chủ tịch mua 2 triệu cp DGW",
+   "ngay": "08/2026",
+   "link": "https://mekongasean.vn/to-chuc-lien-quan-den-chu-tich-digiworld-hoan-tat-mua-2-trieu-co-phieu-dgw-59439.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Tổng mức bán lẻ hàng hóa và dịch vụ 5T/2026 +11,2%; CPI 5 tháng +4,31% làm giảm sức mua thực.",
+     "ng": "MAS 09/06"
+    },
+    {
+     "h": 1,
+     "t": "Nghị định 70/2025 (hóa đơn điện tử, siết hàng xách tay): cầu chuyển về kênh chính hãng; DGW giành thị phần từ nhà bán sỉ chưa chuẩn hóa hóa đơn từ 1/1/2026.",
+     "ng": "MAS 09/06 · VDS 17/06"
+    },
+    {
+     "h": -1,
+     "t": "Lãi suất vay bình quân của DGW Q1/2026 7,1%, tăng 2,8 điểm % so với cùng kỳ — mô hình biên mỏng nhạy với lãi vay.",
+     "ng": "VDS 17/06"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Thiếu chip nhớ: giá DRAM hợp đồng Q1/2026 +90–95% so với quý trước, Q2 thêm ~70%; thiếu hụt có thể kéo dài đến 2027 — giá laptop +10–15%, điện thoại +8–10% năm 2026.",
+     "ng": "TrendForce, DigiTimes, IDC theo Shinhan 04/08"
+    },
+    {
+     "h": 1,
+     "t": "Máy chủ, lưu trữ Việt Nam ~1 tỷ USD, tăng 10–15%/năm; chuyển đổi số khu vực công và trung tâm dữ liệu.",
+     "ng": "Statista theo Shinhan 04/08"
+    },
+    {
+     "h": -1,
+     "t": "Apple tăng thị phần điện thoại từ ~9% (2021) lên 22% (Q1/2026) nhưng ngày càng bán thẳng qua chuỗi lớn — phần của nhà phân phối co lại.",
+     "ng": "Omdia theo Shinhan · VDS 17/06"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "~40% thị phần phân phối laptop; hơn 45 thương hiệu, dịch vụ phát triển thị trường (MES) cho hơn 30 hãng; hơn 16.000 điểm bán.",
+     "ng": "Shinhan 04/08 · MBS 26/05"
+    },
+    {
+     "h": 0,
+     "t": "Created Future nắm ~31,4%; tổ chức liên quan Chủ tịch hoàn tất mua 2 triệu cp tháng 8/2026.",
+     "ng": "Shinhan · Mekong ASEAN"
+    },
+    {
+     "h": 0,
+     "t": "ESOP 2,2 triệu cp giá 10.000 đ (~1% vốn) cho 105 người, hạn chế chuyển nhượng 1 năm; 22 tỷ dùng trả nợ HSBC.",
+     "ng": "Mekong ASEAN · Báo Pháp luật"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Laptop & máy tính bảng",
+   "phu": "~40% thị phần phân phối · Asus, Acer, MSI, Gigabyte, HP, Dell, Lenovo",
+   "so": [
+    [
+     "Q3/2026 (sơ bộ)",
+     "3.834 tỷ",
+     "+21%"
+    ],
+    [
+     "9T/2026",
+     "9.148 tỷ",
+     "+43%"
+    ],
+    [
+     "2025",
+     "8.397 tỷ",
+     "32% doanh thu"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q2/2026: giá bán +20%, sản lượng +14% so với cùng kỳ; khách doanh nghiệp thay máy, đại lý trữ hàng trước đợt tăng giá RAM.",
+     "ng": "KAFI 24/08"
+    },
+    {
+     "t": "Chu kỳ thay máy: Windows 10 hết hỗ trợ, laptop AI (NPU) từ 1–2% lên 15–20% thị trường trong 3–5 năm.",
+     "ng": "Shinhan 04/08"
+    }
+   ]
+  },
+  {
+   "ten": "Thiết bị văn phòng",
+   "phu": "máy chủ, lưu trữ, IoT, bảo hộ lao động, dầu nhờn Shell, phần mềm Synopsys",
+   "so": [
+    [
+     "Q3/2026 (sơ bộ)",
+     "3.363 tỷ",
+     "+105%"
+    ],
+    [
+     "9T/2026",
+     "7.824 tỷ",
+     "+83%"
+    ],
+    [
+     "Shell & bảo hộ Q3",
+     "330 tỷ",
+     "+146%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Máy chủ AI: Supermicro, Asus bán chạy nhất quý 2; khách là doanh nghiệp viễn thông, trung tâm dữ liệu, bảo mật dữ liệu là lý do mua chính.",
+     "ng": "KAFI 24/08"
+    },
+    {
+     "t": "Nhà phân phối độc quyền phần mềm thiết kế chip Synopsys tại Việt Nam.",
+     "ng": "Shinhan 04/08"
+    }
+   ]
+  },
+  {
+   "ten": "Điện thoại di động",
+   "phu": "Xiaomi, Apple (>90%), TCL, ZTE, Motorola",
+   "so": [
+    [
+     "Q3/2026 (sơ bộ)",
+     "2.771 tỷ",
+     "+42%"
+    ],
+    [
+     "9T/2026",
+     "7.103 tỷ",
+     "+16%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Mất độc quyền Xiaomi từ 1/2022; với Apple, chuỗi lớn (MWG, FRT) nhập thẳng ngày càng nhiều.",
+     "ng": "Shinhan 04/08 · VDS 17/06"
+    }
+   ]
+  },
+  {
+   "ten": "Gia dụng & tiêu dùng",
+   "phu": "Xiaomi, Philips, Whirlpool, Cuckoo, Hòa Phát · bia AB InBev, dược",
+   "so": [
+    [
+     "Q3/2026 (sơ bộ)",
+     "788 tỷ",
+     "+25%"
+    ],
+    [
+     "9T/2026",
+     "2.454 tỷ",
+     "+35%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "TV Xiaomi mùa World Cup 2026 kéo gia dụng; tiêu dùng là mảng duy nhất giảm ở quý 2 (−3,5%) vì dược yếu.",
+     "ng": "VDS 17/06 · KAFI 24/08"
+    }
+   ]
+  }
+ ]
+}

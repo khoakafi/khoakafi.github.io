@@ -1,0 +1,1331 @@
+{
+ "v": 2,
+ "ma": "HHV",
+ "ten": "Công ty Cổ phần Đầu tư Hạ tầng Giao thông Đèo Cả",
+ "nganh": "Hạ tầng giao thông: thu phí BOT và xây lắp",
+ "ky": "BCTC Q2/2026 · doanh thu phí 9T/2026 sơ bộ",
+ "cap_nhat": "2026-10-21",
+ "lan_sau": "sau BCTC Q3/2026 và quyết định hỗ trợ theo NĐ 122/2026",
+ "cp_trieu": 574.51,
+ "cp_ng": "574,51 triệu cp: vốn điều lệ 5.471,7 tỷ (BCTC Q1–Q2/2026, sau quyền mua 10:1 giá 10.000 đ cuối 2025) + 27,36 triệu cp cổ tức 5% (20:1, GDKHQ 09/07/2026) = 5.745,1 tỷ (Shinhan 24/09: 574.511.888 cp; Báo Pháp luật). Không có cổ phiếu quỹ.",
+ "co_tuc": [],
+ "chia": [
+  [
+   "2026-07-09",
+   1.05
+  ]
+ ],
+ "tieu_de": {
+  "t": "Doanh thu phí +17% nhưng 41,5% thành lãi vay: LN 2027 đi ngang, chờ 6.880 tỷ hỗ trợ BOT"
+ },
+ "dong_mo": "Lãi vay BOT ghi nhận luôn ~41,5% doanh thu phí: phí 6T/2026 +17% thì LN cổ đông cũng chỉ +17%, dù dư nợ giảm. Sang 2027 Bắc Hải Vân hết phân luồng, An Dân mất xe: LN 2027E 603 tỷ, ngang 2026E. P/E 10 cho {gt} ({up}); cán cân lên/xuống {rr} lần. Cửa tăng: 6.880 tỷ hỗ trợ theo NĐ 122/2026.",
+ "luan_diem": [
+  {
+   "so": "41,5%",
+   "nhan": "doanh thu phí thành lãi vay trên KQKD (6T/2026)",
+   "tieu": "Lãi vay đi theo doanh thu phí, không theo dư nợ",
+   "t": "Doanh thu phí 6T/2026 1.247 tỷ (+16,8%), biên gộp BOT 68,4%; lãi vay ghi nhận 517 tỷ = 41,5% doanh thu phí, như 1H/2025 (41,4%) và 2H/2025 (41,7%) — lãi vay BOT phân bổ theo tỷ lệ doanh thu thực tế/PATC. Dư nợ −10% từ Q3/2024, lãi vay quý vẫn +22%. Theo dư nợ 17,9 nghìn tỷ × 10,5%, lãi phát sinh ~1,9 nghìn tỷ/năm, gần gấp đôi phần ghi nhận 4 quý (981 tỷ).",
+   "ng": "BCTC VNDirect · FPTS 23/09/2026 · ACBS 07/08/2026"
+  },
+  {
+   "so": "+4%",
+   "nhan": "doanh thu phí 2027E (cơ sở), sau +12% năm 2026E",
+   "tieu": "Hai trạm đổi chiều: Bắc Hải Vân hết phân luồng, An Dân mất xe",
+   "t": "Bắc Hải Vân +32% trong 6T/2026 nhờ cao tốc song hành La Sơn – Túy Loan bị hạn chế đến hết 2026 để mở rộng 4 làn (xong dự kiến 31/12/2026). An Dân −45% từ Q2 khi cao tốc Quy Nhơn – Chí Thạnh thông xe. Doanh thu phí Q1 +24%, Q2 +9,5%, Q3 ~588 tỷ (9T 1.835) ngang Q2. Bù lại: Cù Mông dự kiến tăng phí ~16,8% năm 2027, Hữu Nghị – Chi Lăng nối cao tốc BG-LS. LN cổ đông 2027E 603 tỷ, 2026E 629 tỷ.",
+   "ng": "ACBS 07/08 · FPTS 23/09 · Analyst Meeting 10/2026 · mô hình"
+  },
+  {
+   "so": "6.880 tỷ",
+   "nhan": "hỗ trợ đề xuất theo NĐ 122/2026, bằng 38% nợ vay",
+   "tieu": "Biến số lớn nhất: ngân sách bù phần doanh thu hụt so với PATC",
+   "t": "Doanh thu 2021–2025 chỉ đạt 28–41% phương án tài chính (PATC) ở BG-LS, 65–78% ở cụm hầm Đèo Cả. NĐ 122/2026 (3/4/2026) mở đường: đề xuất ~4.600 tỷ cho BG-LS, 2.280 tỷ cho hầm Đèo Cả. Phần của HHV theo sở hữu (65,07%, 74,49%) ~4,7 nghìn tỷ = 86% vốn hóa; trả nợ ở 10,5% bớt ~720 tỷ lãi/năm. Chưa phê duyệt nên kịch bản cơ sở chưa tính; được duyệt: P/E 12 (kịch bản tốt).",
+   "ng": "FPTS 23/09/2026 · Agriseco 02/06/2026 · Bộ Xây dựng 04/2026"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ/cp)",
+   "tieu": "P/E 10 × LN 2027E: {up_so} so với giá hiện tại",
+   "t": "P/E 10 ≈ giá trị dòng LN thu phí 20–23 năm còn lại (chi phí vốn 13%, tăng 5%/năm: 9,6–10,2 lần), thấp 10% lịch sử từ 2023 (10,3). Không cao hơn vì pha loãng: số cp 329 triệu (cuối 2023) → 574,5 triệu; LN cổ đông 4 quý +97% nhưng EPS điều chỉnh chỉ +30%, còn kế hoạch bán riêng lẻ 57,5 triệu cp. Xấu 6,5 (P/E 8), tốt 15,9 (P/E 12).",
+   "ng": "mô hình · P/E: BCTC VNDirect, giá 20/10/2026"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   581,
+   629,
+   603
+  ],
+  "ln_truoc": 426,
+  "eps": [
+   1011,
+   1095,
+   1050
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Doanh thu phí BOT (tỷ)",
+    "v": [
+     2179,
+     2448,
+     2546
+    ]
+   },
+   {
+    "ten": "Lãi vay ghi nhận (tỷ)",
+    "v": [
+     905,
+     1016,
+     1057
+    ]
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS theo 574,5 triệu cp hiện hành (sau cổ tức cổ phiếu 5%, GDKHQ 09/07/2026). Doanh thu phí 2025 ~2.179 tỷ suy từ FPTS (2026F 2.462 = +13,0%). Cổ tức trả bằng cổ phiếu, không có tiền mặt."
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Thu phí BOT (sau lãi vay, thuế, thiểu số)",
+    "mau": "c1",
+    "v": [
+     403,
+     449,
+     464
+    ]
+   },
+   {
+    "ten": "Xây lắp & dịch vụ (sau quản lý)",
+    "mau": "c2",
+    "v": [
+     56,
+     106,
+     64
+    ]
+   },
+   {
+    "ten": "Liên kết, tài chính & khác",
+    "mau": "c4",
+    "v": [
+     122,
+     74,
+     75
+    ]
+   }
+  ],
+  "nhan": "Thu phí BOT (sau lãi vay, thuế, thiểu số)",
+  "ng": "Thu phí = lãi gộp BOT − lãi vay ghi nhận, sau thuế và phần thiểu số (CTCP Đầu tư Đèo Cả 25,5%, BOT BG-LS 34,9%). Xây lắp & dịch vụ = lãi gộp còn lại − quản lý. 2025A tách mảng theo FPTS; 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "tieu": "P/E so với 5 mã có BOT giao thông",
+  "phu": "giá hôm nay; HHV: LN cổ đông 4 quý, 574,5 triệu cp",
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 20/10)",
+  "nhom": "5 mã có BOT giao thông niêm yết",
+  "kv": [
+   [
+    "HTI",
+    3.4
+   ],
+   [
+    "IJC",
+    6.7
+   ],
+   [
+    "CTI",
+    7.1
+   ],
+   [
+    "HUT",
+    24.0
+   ],
+   [
+    "CII",
+    79.0
+   ]
+  ],
+  "tv": 7.1,
+  "moi_cp": 1094,
+  "max": 20,
+  "y": "Nhóm BOT được trả thấp vì nợ cao và nhượng quyền có hạn; CII, HUT có mảng khác lớn (bất động sản, ô tô) nên P/E không so trực tiếp. 11 mã hạ tầng giao thông (cảng, vận tải; phân ngành của trang) trung vị 10,0. HHV P/B 0,47 — thấp nhất nhóm, ROE 4 quý ~5,5%.",
+  "ng": "BCTC VNDirect, giá 20/10/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình hai mảng: thu phí BOT và xây lắp & dịch vụ",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Thu phí BOT (3 công ty con)"
+   },
+   {
+    "ten": "Doanh thu phí (tỷ)",
+    "v": [
+     2179,
+     2448,
+     2546
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     67.6,
+     68.0,
+     67.5
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Lãi vay ghi nhận (tỷ)",
+    "v": [
+     -905,
+     -1016,
+     -1057
+    ]
+   },
+   {
+    "ten": "Lãi vay / doanh thu phí (%)",
+    "v": [
+     41.5,
+     41.5,
+     41.5
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Xây lắp & dịch vụ"
+   },
+   {
+    "ten": "Doanh thu (tỷ)",
+    "v": [
+     1622,
+     1780,
+     1900
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     8.8,
+     11.2,
+     8.5
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     3801,
+     4228,
+     4446
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Quản lý, tài chính khác ròng (tỷ)",
+    "v": [
+     -28,
+     -83,
+     -92
+    ]
+   },
+   {
+    "ten": "Lãi liên doanh, liên kết (tỷ)",
+    "v": [
+     91,
+     89,
+     90
+    ]
+   },
+   {
+    "ten": "LN trước thuế (tỷ)",
+    "v": [
+     773,
+     853,
+     821
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Thiểu số (tỷ)",
+    "v": [
+     -90,
+     -119,
+     -116
+    ]
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     581,
+     629,
+     603
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ, 574,5 triệu cp)",
+    "v": [
+     1011,
+     1095,
+     1050
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "Nợ vay cuối kỳ (nghìn tỷ)",
+    "s": [
+     "18,5",
+     "17,9 (30/6)",
+     "—"
+    ]
+   }
+  ],
+  "ghi": "2026E = 6T thực tế + Q3 (doanh thu phí sơ bộ 588 tỷ) + Q4 ước tính. Doanh thu phí 2025 suy từ FPTS; xây lắp & dịch vụ = hợp nhất − thu phí. Lãi vay = tỷ lệ × doanh thu phí; thiểu số = 20% LN thu phí sau thuế."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   629
+  ],
+  "cuoi": [
+   "2027E",
+   603
+  ],
+  "buoc": [
+   [
+    "Lãi gộp thu phí",
+    55
+   ],
+   [
+    "Lãi vay ghi nhận",
+    -41
+   ],
+   [
+    "Xây lắp & dịch vụ",
+    -38
+   ],
+   [
+    "Liên doanh, liên kết",
+    1
+   ],
+   [
+    "Quản lý, tài chính",
+    -9
+   ],
+   [
+    "Thuế, thiểu số",
+    6
+   ]
+  ],
+  "y": "Lãi gộp thu phí thêm 55 tỷ nhưng lãi vay ghi nhận lấy lại 41 tỷ; xây lắp & dịch vụ về biên 8,5% (6T/2026: 16%) bớt 38 tỷ.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu phí 2H/2026 · 2027",
+   "v": [
+    "+5% · −1%",
+    "+8% · +4%",
+    "+11% · +9%"
+   ],
+   "ly_do": "Q2/2026 +9,5%, Q3 ~588 tỷ ≈ Q2; 2H/2025 ~1.112 tỷ. 2027: Bắc Hải Vân mất phân luồng, An Dân nền thấp từ Q2; Cù Mông +16,8% phí"
+  },
+  {
+   "ten": "Biên gộp BOT 2H/2026 · 2027",
+   "v": [
+    "66% · 66,5%",
+    "67,5% · 67,5%",
+    "68,5% · 69%"
+   ],
+   "ly_do": "6T/2026 68,4%, 2025 67,6% (FPTS); khấu hao BOT phân bổ theo doanh thu/PATC nên biên ít biến động"
+  },
+  {
+   "ten": "Lãi vay ghi nhận / doanh thu phí",
+   "v": [
+    "42%",
+    "41,5%",
+    "41%"
+   ],
+   "ly_do": "1H/2025 41,4%, 2H/2025 41,7%, 1H/2026 41,5%: phân bổ theo doanh thu thực tế/PATC (FPTS), không theo dư nợ"
+  },
+  {
+   "ten": "Xây lắp & dịch vụ 2H/2026 · 2027 (tỷ)",
+   "v": [
+    "950 · 1.700",
+    "1.150 · 1.900",
+    "1.300 · 2.200"
+   ],
+   "ly_do": "2H/2025 ~1.007, 2025 1.622 tỷ; backlog 3,0–3,7 nghìn tỷ (Shinhan, FPTS, ACBS) ≈ 2,3–2,8 lần doanh thu xây lắp 2025"
+  },
+  {
+   "ten": "Biên gộp xây lắp & dịch vụ",
+   "v": [
+    "6%",
+    "8,5%",
+    "10%"
+   ],
+   "ly_do": "6T/2026 16% (hầm, cầu; xây lắp 11,9%), 2025 8,8%; 2H nghiệm thu mặt đường, vật liệu tăng"
+  },
+  {
+   "ten": "Lãi liên doanh, liên kết 2027 (tỷ)",
+   "v": [
+    "75",
+    "90",
+    "110"
+   ],
+   "ly_do": "2025 91, 6T/2026 44 (−13%); phí Cam Lâm – Vĩnh Hảo +~20% (Analyst Meeting); Đồng Đăng – Trà Lĩnh mới khai thác"
+  },
+  {
+   "ten": "Thuế · thiểu số / LN thu phí",
+   "v": [
+    "12,5% · 21%",
+    "12,5% · 20%",
+    "12,5% · 19%"
+   ],
+   "ly_do": "2025: 13,2% · 18%; 6T/2026: 12,2% · 22%"
+  },
+  {
+   "ten": "P/E (LN 2027E)",
+   "v": [
+    "8",
+    "10",
+    "12"
+   ],
+   "ly_do": "Dòng LN 20–23 năm: r 13%, g 3% → 8,4; g 5% → 9,6–10,2; r 11% → 12,0. HHV từ 2023: thấp 10% 10,3, đáy 8,3; 5 mã BOT trung vị 7,1"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 556,
+   "ln27": 464,
+   "gia": 6.5,
+   "mo_ta": "Doanh thu phí 2027 −1% (Bắc Hải Vân mất phân luồng, chưa tăng phí), biên BOT 66,5%; xây lắp 1.700 tỷ biên 6%; P/E 8 — chưa có hỗ trợ"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 629,
+   "ln27": 603,
+   "gia": 10.5,
+   "mo_ta": "Doanh thu phí 2027 +4%, biên BOT 67,5%, lãi vay 41,5% doanh thu phí; xây lắp & dịch vụ 1.900 tỷ biên 8,5%; P/E 10"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 691,
+   "ln27": 759,
+   "gia": 15.9,
+   "mo_ta": "Doanh thu phí 2027 +9% (BG-LS hết cao tốc cụt, Cù Mông tăng phí), biên 69%; xây lắp 2.200 tỷ biên 10%; hỗ trợ được duyệt, P/E 12"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/E",
+  "phu": "P/E × LN cổ đông 2027E ÷ 574,5 triệu cp",
+  "ck": 0,
+  "cp": 574.51,
+  "phan": [
+   {
+    "ten": "LN cổ đông 2027E",
+    "mau": "c1",
+    "x": [
+     464,
+     603,
+     759
+    ],
+    "boi": [
+     8.0,
+     10.0,
+     12.0
+    ],
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     3712,
+     6030,
+     9108
+    ]
+   }
+  ],
+  "von": [
+   3712,
+   6030,
+   9108
+  ],
+  "gia": [
+   6.5,
+   10.5,
+   15.9
+  ]
+ },
+ "nhay": [
+  [
+   "P/E ±1 lần",
+   null,
+   1.0
+  ],
+  [
+   "Biên xây lắp 2027 ±2 điểm %",
+   33,
+   0.6
+  ],
+  [
+   "Doanh thu phí 2027 ±5%",
+   23,
+   0.4
+  ],
+  [
+   "Biên BOT, lãi vay/phí ±1 điểm %",
+   18,
+   0.3
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   521.8,
+   551.0,
+   551.0,
+   38.5,
+   42.7,
+   35.6,
+   30.4,
+   24.5,
+   23.7,
+   24.5,
+   22.9,
+   23.5,
+   23.6,
+   24.8,
+   20.9,
+   22.7,
+   23.5,
+   18.2,
+   15.0,
+   10.8,
+   13.5,
+   13.8,
+   12.6,
+   9.5,
+   8.9,
+   10.4,
+   15.0,
+   13.7,
+   15.1,
+   14.4,
+   16.2,
+   18.0,
+   18.8,
+   16.6,
+   17.1,
+   13.8,
+   14.1,
+   15.4,
+   15.3,
+   15.8,
+   19.9,
+   16.2,
+   15.8,
+   14.6,
+   14.2,
+   14.2,
+   14.7,
+   14.2,
+   13.1,
+   14.0,
+   14.7,
+   12.8,
+   12.4,
+   12.0,
+   11.0,
+   12.3,
+   13.3,
+   14.8,
+   16.3,
+   14.8,
+   13.6,
+   12.5,
+   11.6,
+   10.7,
+   11.5,
+   11.8,
+   10.4,
+   10.2,
+   9.3,
+   9.2,
+   8.3,
+   8.7
+  ],
+  "p10": 10.4,
+  "p25": 12.5,
+  "tv": 14.7,
+  "thap": [
+   "2026-09",
+   8.3
+  ],
+  "nay": [
+   "2026-10",
+   8.7
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "ref": [
+   {
+    "v": 10.3,
+    "ten": "thấp 10% từ 2023"
+   },
+   {
+    "v": 11.9,
+    "ten": "trung vị từ 2025"
+   }
+  ],
+  "dung": "Kịch bản dùng P/E 8 · 10 · 12: 8 ≈ đáy 09/2026 (8,3); 10 ≈ thấp 10% từ 2023 (10,3); 12 ≈ trung vị từ 2025 (11,9). Đã sửa tay số cp các tháng sau cổ tức cổ phiếu, phát hành thêm mà vốn điều lệ BCTC chưa cập nhật; từ 07/2026 dùng 574,5 triệu cp."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    113,
+    144,
+    170
+   ],
+   "ck": 129
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    118,
+    160,
+    197
+   ],
+   "ck": 175
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    556,
+    629,
+    691
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "≤ 30/10/2026",
+   "loai": "hai",
+   "tieu": "BCTC Q3/2026",
+   "ct": "Cơ sở: LN cổ đông 144 tỷ (Q3/2025: 129). Doanh thu phí 9T 1.835 tỷ (Analyst Meeting) → Q3 ~588 tỷ, ngang Q2: đà tăng đã chậm.",
+   "tac": [
+    "≥ 144 tỷ",
+    "giữ cơ sở; dưới 113 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "biên gộp BOT, lãi vay/doanh thu phí"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Chào bán riêng lẻ 57,5 triệu cp (10%)",
+   "ct": "ĐHĐCĐ 2026: giá ≥ mệnh giá 10.000 đ, khóa 1 năm; ~575 tỷ trả tiền mua cổ phần Cam Lâm – Vĩnh Hảo, ICV và bổ sung vốn lưu động. Thị giá đang dưới mệnh giá.",
+   "tac": [
+    "−9% EPS",
+    "nếu phát hành hết mà tiền chưa sinh lãi"
+   ],
+   "theo_doi": "chấp thuận của UBCK, giá chào bán"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Cam Lâm – Vĩnh Hảo từ 38% lên 57,42%",
+   "ct": "Chủ trương từ 7/2025: mua thêm 20 triệu cp giá 10.000 đ (200 tỷ) từ CTCP Xây dựng Đèo Cả, chưa hoàn tất (Agriseco 6/2026). Xong thì thành công ty con; phí trạm này tăng gần 20%.",
+   "tac": "",
+   "theo_doi": "hoàn tất chuyển nhượng (giao dịch bên liên quan)"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "hai",
+   "tieu": "Xây lắp: backlog lớn, biên khó giữ",
+   "ct": "Backlog 3,0–3,7 nghìn tỷ (≈ 2,3–2,8 lần doanh thu 2025); biên xây lắp 6T 11,9% nhờ hầm, cầu, 2H nghiệm thu mặt đường (FPTS). NĐ 206/2026 cập nhật giá vật liệu.",
+   "tac": [
+    "±0,6 nghìn đ/cp",
+    "mỗi 2 điểm % biên xây lắp & dịch vụ 2027"
+   ],
+   "theo_doi": "biên gộp theo quý"
+  },
+  {
+   "khi": "Tết 2027",
+   "loai": "len",
+   "tieu": "Hữu Nghị – Chi Lăng nối cao tốc BG-LS",
+   "ct": "Nhà đầu tư đặt đích 30/9/2026; Bộ Xây dựng nghiên cứu khai thác tạm miễn phí cùng Đồng Đăng – Trà Lĩnh dịp Tết 2027. FPTS: lưu lượng cao tốc BG-LS +25% năm 2027, Km93+160 −15%.",
+   "tac": "",
+   "theo_doi": "ngày thông xe, tỷ trọng xe tải nặng"
+  },
+  {
+   "khi": "Q1/2027",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "An Dân còn kéo tăng trưởng đến hết Q1/2027",
+   "ct": "Cao tốc Quy Nhơn – Chí Thạnh thông xe 5/2026 (thu phí từ 8/2026): An Dân Q2/2026 −45%. Nền so sánh thấp từ Q2/2027.",
+   "tac": "",
+   "theo_doi": "lưu lượng An Dân"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Bắc Hải Vân mất lưu lượng phân luồng",
+   "ct": "Đoạn La Sơn – Hòa Liên mở rộng 4 làn, dự kiến xong 31/12/2026; 6T/2026 Bắc Hải Vân +32% nhờ tuyến song hành bị hạn chế đến hết 2026. FPTS giả định lưu lượng 2027 −10%.",
+   "tac": [
+    "−23 tỷ LN",
+    "mỗi 5% doanh thu phí 2027"
+   ],
+   "theo_doi": "lưu lượng Bắc Hải Vân theo quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Hỗ trợ ngân sách theo NĐ 122/2026",
+   "ct": "Đề xuất ~4.600 tỷ cho BG-LS (doanh thu 28–41% PATC) và 2.280 tỷ cho hầm Đèo Cả (65–78%); Bộ Tài chính đã có văn bản bố trí vốn cho BG-LS. FPTS kỳ vọng nhận trong 2027.",
+   "tac": [
+    "+4,7 nghìn tỷ",
+    "phần của HHV theo sở hữu; được duyệt: P/E 12, 15,9 nghìn đ/cp"
+   ],
+   "theo_doi": "quyết định của Thủ tướng, Bộ Tài chính"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Cù Mông dự kiến tăng phí ~16,8%",
+   "ct": "Theo lộ trình PATC (FPTS ước tính). Đèo Cả, Bắc Hải Vân, An Dân đã chạm trần giá (TT 60/2018): sau 2027 cụm hầm hết dư địa tăng phí nếu khung trần không đổi.",
+   "tac": "",
+   "theo_doi": "quyết định giá vé, khung trần mới"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi thực phát sinh cao hơn phần ghi nhận",
+   "ct": "Dư nợ 17,9 nghìn tỷ × 10,5% ≈ 1,9 nghìn tỷ/năm; KQKD 4 quý ghi 981 tỷ. Hỗ trợ chậm 1 năm: chi phí vay tiền mặt tăng tới 722 tỷ trong 2 năm (FPTS).",
+   "tac": [
+    "~0,9 nghìn tỷ/năm",
+    "chênh lệch chưa vào KQKD (ước tính)"
+   ],
+   "theo_doi": "lãi vay đã trả trên lưu chuyển tiền tệ"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi gộp và lãi vay ghi nhận",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      330,
+      329,
+      386,
+      387,
+      390,
+      453,
+      513,
+      441
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Lãi vay ghi nhận",
+     "v": [
+      199,
+      194,
+      218,
+      224,
+      234,
+      230,
+      275,
+      242
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Dư nợ −10% từ Q3/2024 mà lãi vay quý +22%: lãi vay phân bổ theo doanh thu phí (~41,5%), không theo dư nợ.",
+   "ng": "BCTC HHV (VNDirect)"
+  },
+  {
+   "ten": "Lưu lượng xe qua trạm so cùng kỳ",
+   "dv": "%",
+   "kieu": "cot",
+   "nhan": [
+    "Cù Mông",
+    "Hải Vân",
+    "BG-LS",
+    "Đèo Cả",
+    "Km93",
+    "An Dân"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2026",
+     "v": [
+      35,
+      32,
+      27,
+      16,
+      -3,
+      -16
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Q2/2026",
+     "v": [
+      63,
+      20,
+      24,
+      15,
+      -7,
+      -45
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q2 đổi chiều: An Dân −45% (cao tốc Quy Nhơn – Chí Thạnh), Bắc Hải Vân chậm lại còn +20%; Cù Mông, BG-LS vẫn tăng mạnh.",
+   "ng": "HHV qua ACBS 07/08/2026"
+  },
+  {
+   "ten": "LN cổ đông, số cp và EPS (2022 = 100)",
+   "dv": "chỉ số",
+   "kieu": "duong",
+   "nhan": [
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "4Q 6/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN cổ đông",
+     "v": [
+      100,
+      116,
+      155,
+      211,
+      229
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Số cp (quy về hiện nay)",
+     "v": [
+      100,
+      100,
+      125,
+      137,
+      151
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "EPS điều chỉnh",
+     "v": [
+      100,
+      116,
+      124,
+      154,
+      152
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Từ 2023 LN cổ đông +97%, EPS điều chỉnh +30%: 3 đợt phát hành thêm thu tiền (2024, 2025, 12/2025). Số cp đã quy đổi các đợt cổ tức cổ phiếu.",
+   "ng": "BCTC VNDirect; 4Q 6/26 = 4 quý đến Q2/2026, 574,5 triệu cp"
+  },
+  {
+   "ten": "Nợ vay và vốn chủ cổ đông",
+   "dv": "nghìn tỷ",
+   "kieu": "cot",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      19.9,
+      19.0,
+      18.8,
+      18.7,
+      18.6,
+      18.5,
+      18.2,
+      17.9
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Vốn chủ cổ đông",
+     "v": [
+      8.6,
+      9.5,
+      9.8,
+      10.3,
+      10.4,
+      10.6,
+      11.3,
+      11.4
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 1,
+   "y": "Nợ vay giảm 2,0 nghìn tỷ trong 7 quý; vốn chủ cổ đông tăng 2,8 nghìn tỷ (LN giữ lại, phát hành thêm): nợ vay/vốn chủ 2,30 → 1,57 lần.",
+   "ng": "BCTC HHV (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu hợp nhất",
+    "kh": 4468,
+    "th": 1877,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2/2026"
+   },
+   {
+    "ten": "LNST (gồm thiểu số)",
+    "kh": 766,
+    "th": 389,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2/2026"
+   }
+  ],
+  "y": "9T/2026 doanh thu gần 3.000 tỷ (~66% kế hoạch, Analyst Meeting). Mô hình cơ sở: doanh thu 2026E 4.228 tỷ (95% kế hoạch), LNST 748 tỷ (98%).",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-09-24",
+   "kn": "MUA",
+   "tp": 15500,
+   "ln26": 671,
+   "ln27": 931,
+   "pp": "SOTP: DCF thu phí 5.508 + xây dựng 2.787 + dịch vụ 638 tỷ",
+   "y": "Lãi vay 2026F 948 tỷ ngụ ý 2H/2026 chỉ 431 tỷ (2H/2025: 464) dù doanh thu phí tăng; LN cổ đông 2027F 931 tỷ (+39%) dựa vào lãi vay giảm. Giá mục tiêu đã tính cổ tức cổ phiếu 20:1.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/20260924_hhv_mua_gia_mt_vnd_15_500_69_dong_luc_kep_tu_bot_va_backlog_xay_dung_doi_dao.pdf"
+  },
+  {
+   "ctck": "FPTS",
+   "ngay": "2026-09-23",
+   "kn": "MUA",
+   "tp": 11400,
+   "pp": "SOTP: DCF thu phí 5.062 + xây lắp P/E 6,26 (523) + liên kết 75% sổ sách (955) tỷ",
+   "y": "Chi tiết nhất: cơ chế lãi vay theo PATC, lưu lượng từng trạm, 6.880 tỷ hỗ trợ (giả định nhận 2027). LNST 2026F 769 tỷ gồm thiểu số; 575 triệu cp.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/20260923_mua_bao_cao_cap_nhat_dinh_gia_fpts_23_09_2026.pdf"
+  },
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-08-07",
+   "kn": "MUA",
+   "tp": 15700,
+   "ln26": 630,
+   "ln27": 713,
+   "y": "Giữ dự phóng, hạ giá mục tiêu 5% theo cổ tức cổ phiếu; thu phí tăng 8–10%/năm, backlog xây lắp >3.500 tỷ. Số xây lắp Q2/2025 (139 tỷ) vênh với 6T/2025 (524).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/hhv_bao_cao_nhanh.pdf"
+  },
+  {
+   "ctck": "Agriseco",
+   "ngay": "2026-06-04",
+   "kn": "MUA",
+   "tp": 13700,
+   "y": "Sau Q1/2026 (doanh thu phí 657 tỷ, +25%): nêu NĐ 122/2026, hỗ trợ 2.280 + 4.580 tỷ và kế hoạch nâng Cam Lâm – Vĩnh Hảo lên 57,42%. Giá mục tiêu trước cổ tức cổ phiếu 9/7/2026.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/Hoat_ong_thu_phi_BOT_tiep_tuc_dan_dat_tang_truong_doanh_thu.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-02-27",
+   "kn": "MUA",
+   "tp": 16000,
+   "y": "Báo cáo ngắn đầu năm: doanh thu 2026F 4.211 tỷ, lãi ròng 632 tỷ; doanh thu phí 2025 ghi 2.106 tỷ (FPTS, Shinhan ~2.180). Giá mục tiêu trước cổ tức cổ phiếu.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/bao_cao_ngan_ctcp_dau_tu_ha_tang_giao_thong_deo_ca_hhv_vn_mua_bot_tao_nen_xay_dung_tang_toc.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. Mirae Asset và Agriseco ra trước đợt cổ tức cổ phiếu 5% (GDKHQ 09/07/2026): trang quy đổi giá mục tiêu theo hệ số 1,05.",
+ "nguon": [
+  {
+   "ten": "Shinhan — Động lực kép từ BOT và backlog xây dựng",
+   "ngay": "24/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/20260924_hhv_mua_gia_mt_vnd_15_500_69_dong_luc_kep_tu_bot_va_backlog_xay_dung_doi_dao.pdf"
+  },
+  {
+   "ten": "FPTS — Báo cáo cập nhật định giá HHV",
+   "ngay": "23/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/20260923_mua_bao_cao_cap_nhat_dinh_gia_fpts_23_09_2026.pdf"
+  },
+  {
+   "ten": "ACBS — Cập nhật nhanh KQKD Q2/2026",
+   "ngay": "07/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/hhv_bao_cao_nhanh.pdf"
+  },
+  {
+   "ten": "Agriseco — Thu phí BOT dẫn dắt tăng trưởng",
+   "ngay": "02/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/Hoat_ong_thu_phi_BOT_tiep_tuc_dan_dat_tang_truong_doanh_thu.pdf"
+  },
+  {
+   "ten": "Mirae Asset — BOT tạo nền, xây dựng tăng tốc",
+   "ngay": "27/02/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHV/bao_cao_ngan_ctcp_dau_tu_ha_tang_giao_thong_deo_ca_hhv_vn_mua_bot_tao_nen_xay_dung_tang_toc.pdf"
+  },
+  {
+   "ten": "Báo Pháp luật — Hoàn tất phát hành 27,3 triệu cp trả cổ tức, vốn điều lệ 5.745 tỷ",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dau-tu-ha-tang-giao-thong-deo-ca-hhv-hoan-tat-phat-hanh-27-3-trieu-co-phieu-tra-co-tuc-nang-von-dieu-le-len-hon-5-740-ty.html"
+  },
+  {
+   "ten": "Stockbiz — Chốt ngày phát hành 27,3 triệu cp trả cổ tức",
+   "ngay": "06/2026",
+   "link": "https://stockbiz.vn/tin-tuc/hhv-ha-tang-giao-thong-deo-ca-chot-ngay-phat-hanh-273-trieu-co-phieu-tra-co-tuc/40639969"
+  },
+  {
+   "ten": "Báo Pháp luật — Kế hoạch 2026: LNST 766 tỷ, tăng vốn lên 6.320 tỷ",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/ha-tang-giao-thong-deo-ca-hhv-dat-muc-tieu-lai-ky-luc-766-ty-dong-phat-hanh-co-phieu-tang-von-len-6-320-ty.html"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ thường niên 2026 bất thành",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-thuong-nien-2026-cua-ha-tang-giao-thong-deo-ca-hhv-to-chuc-bat-thanh.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Phát hành gần 50 triệu cp cho cổ đông giá 10.000 đ",
+   "ngay": "2025",
+   "link": "https://doanhnhan.baophapluat.vn/ha-tang-deo-ca-hhv-sap-phat-hanh-gan-50-trieu-co-phieu-cho-co-dong-87201.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Analyst Meeting: 9T/2026 doanh thu gần 3.000 tỷ, thu phí 1.835 tỷ",
+   "ngay": "10/2026",
+   "link": "https://doanhnhan.baophapluat.vn/deo-ca-hhv-thu-ve-gan-3-000-ty-dong-don-luc-cho-loat-dai-du-an-ha-tang.html"
+  },
+  {
+   "ten": "Vietnam Finance — LN 6T/2026 tăng 20%",
+   "ngay": "08/2026",
+   "link": "https://vietnamfinance.vn/deo-ca-loi-nhuan-tang-truong-20-rong-du-dia-tang-truong-d148411.html"
+  },
+  {
+   "ten": "Bộ Xây dựng — Thông cáo Nghị định 122/2026/NĐ-CP xử lý dự án BOT",
+   "ngay": "21/04/2026",
+   "link": "https://moc.gov.vn/Images/editor/files/Truy%E1%BB%81n%20th%C3%B4ng%20cs/2026/BXD_5883-BXD-CDBVN_21042026_TCBC%20ND%20122-2026-ND-CP%20du%20an%20BOT.pdf"
+  },
+  {
+   "ten": "Tin nhanh Chứng khoán — Xử lý giảm doanh thu BOT Bắc Giang – Lạng Sơn",
+   "ngay": "2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/them-bien-bao-xu-ly-giam-doanh-thu-du-an-bot-cao-toc-bac-giang-lang-son-post389856.html"
+  },
+  {
+   "ten": "Vneconomy — HHV tăng góp vốn Cam Lâm – Vĩnh Hảo lên 57,42%",
+   "ngay": "07/2025",
+   "link": "https://vneconomy.vn/hhv-tang-ty-le-gop-von-vao-du-an-cao-toc-cam-lam-vinh-hao-len-57-42.htm"
+  },
+  {
+   "ten": "Vietnam Finance — La Sơn – Hòa Liên sau mở rộng 4 làn",
+   "ngay": "30/08/2026",
+   "link": "https://vietnamfinance.vn/toan-canh-cao-toc-la-son-hoa-lien-sau-khi-mo-rong-4-lan-xe-d149839.html"
+  },
+  {
+   "ten": "Báo Đấu thầu — Khai thác tạm Hữu Nghị – Chi Lăng, Đồng Đăng – Trà Lĩnh dịp Tết 2027",
+   "ngay": "2026",
+   "link": "https://baodauthau.vn/nghien-cuu-khai-thac-tam-mien-phi-2-tuyen-cao-toc-dip-tet-2027-post208527.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Kế hoạch đầu tư công 2026–2030 khoảng 8,22 triệu tỷ đồng (gấp 2,8 lần giai đoạn trước), mục tiêu 5.000 km cao tốc năm 2030.",
+     "ng": "FPTS 23/09/2026"
+    },
+    {
+     "h": 1,
+     "t": "Vận tải hành khách +18,8%, hàng hóa +13,2% trong 1H/2026: nhu cầu đi lại liên vùng tăng cùng sản xuất, du lịch.",
+     "ng": "GSO qua FPTS 23/09/2026"
+    },
+    {
+     "h": -1,
+     "t": "Lãi suất vay quanh 10,5–11%; HHV có thể đàm phán lịch trả nợ theo dòng tiền dự án, nhưng chậm nhận hỗ trợ thì phải giữ nợ lâu hơn.",
+     "ng": "FPTS 23/09/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "Cao tốc Bắc – Nam phía Đông thông dần tạo tuyến song hành: An Dân mất xe cho Quy Nhơn – Chí Thạnh, Bắc Hải Vân cạnh tranh với La Sơn – Túy Loan.",
+     "ng": "FPTS 23/09/2026"
+    },
+    {
+     "h": 0,
+     "t": "Khung giá trần phí giữ từ 2018 (TT 28/2021, TT 32/2024 không đổi); lạm phát cộng dồn từ 2019 ~31% đến 2027 nên có thể điều chỉnh trần.",
+     "ng": "FPTS 23/09/2026"
+    },
+    {
+     "h": 1,
+     "t": "NĐ 122/2026 (3/4/2026) xử lý BOT ký trước 2021 có phương án tài chính không bảo đảm; NĐ 206/2026, TT 37/2026 cập nhật giá vật liệu sát thị trường từ 1/7/2026.",
+     "ng": "Bộ Xây dựng 04/2026 · FPTS"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Nguồn việc từ hệ sinh thái Đèo Cả: mở rộng TP.HCM – Trung Lương – Mỹ Thuận (phần HHV 988 tỷ), Đồng Đăng – Trà Lĩnh GĐ2 (709 tỷ), Quy Nhơn – Pleiku (>600 tỷ).",
+     "ng": "Shinhan 24/09/2026"
+    },
+    {
+     "h": -1,
+     "t": "ĐHĐCĐ 2026 lần đầu bất thành (khoảng 33% cổ phần dự họp); Tập đoàn Đèo Cả và bên liên quan nắm 20,7% nhưng chi phối HĐQT.",
+     "ng": "Báo Pháp luật 04/2026 · FPTS"
+    },
+    {
+     "h": -1,
+     "t": "Mua cổ phần dự án từ các công ty trong hệ sinh thái (Cam Lâm – Vĩnh Hảo: 39,14 triệu cp từ Tập đoàn Đèo Cả, thêm 20 triệu cp từ CTCP Xây dựng Đèo Cả).",
+     "ng": "Vneconomy 07/2025"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Thu phí BOT",
+   "phu": "CTCP Đầu tư Đèo Cả 74,49% (hầm Đèo Cả – Cổ Mã – Cù Mông – Hải Vân), BOT Bắc Giang – Lạng Sơn 65,07%, Phước Tượng Phú Gia BOT 99,37%",
+   "so": [
+    [
+     "Doanh thu phí 6T/2026",
+     "1.247 tỷ",
+     "+16,8%"
+    ],
+    [
+     "Biên gộp BOT 6T",
+     "68,4%",
+     "+1,1 điểm %"
+    ],
+    [
+     "Cụm hầm Đèo Cả, Phước Tượng – Phú Gia 6T",
+     "916 tỷ",
+     "+15,9%"
+    ],
+    [
+     "Bắc Giang – Lạng Sơn 6T",
+     "326 tỷ",
+     "+17,9%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Doanh thu thực tế/PATC 2021–2025: cụm hầm Đèo Cả 65–78%, BG-LS 28–41% (cao tốc cụt, xe tải nặng đi QL1, trạm Km24+800 bị bỏ).",
+     "ng": "FPTS 23/09/2026"
+    },
+    {
+     "t": "Tăng phí: Km93+160 +15% từ 4/2025; Cù Mông dự kiến +16,8% năm 2027; BG-LS không chịu trần, PATC cho tăng 15% mỗi 3 năm.",
+     "ng": "FPTS 23/09/2026"
+    },
+    {
+     "t": "Lãi vay BOT ghi nhận = tổng lãi vay PATC × doanh thu thực tế ÷ tổng doanh thu PATC; 95% dư nợ đầu 2026 là vay dài hạn dự án BOT.",
+     "ng": "FPTS 23/09/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Xây lắp & dịch vụ",
+   "phu": "Thi công hầm, cầu, cao tốc (chủ yếu dự án PPP của hệ sinh thái Đèo Cả); quản lý vận hành, bảo dưỡng hầm đường",
+   "so": [
+    [
+     "Doanh thu xây lắp 6T/2026",
+     "517 tỷ",
+     "−1,3%"
+    ],
+    [
+     "Biên gộp xây lắp 6T",
+     "11,9%",
+     "+7,5 điểm %"
+    ],
+    [
+     "Backlog 30/6/2026",
+     "~1.700 tỷ",
+     "+~2.000 tỷ ký mới (FPTS)"
+    ],
+    [
+     "Vận hành, bảo dưỡng 6T",
+     "76 tỷ",
+     "+42%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q1/2026 trúng gói mở rộng TP.HCM – Trung Lương – Mỹ Thuận (phần HHV 988 tỷ) và Đồng Đăng – Trà Lĩnh GĐ2 (709 tỷ); 9/2026 ký Quy Nhơn – Pleiku >600 tỷ.",
+     "ng": "Shinhan 24/09/2026"
+    },
+    {
+     "t": "Liên danh do HHV đứng đầu vận hành hai đoạn cao tốc Quảng Ngãi – Hoài Nhơn, Chí Thạnh – Vân Phong (136 km).",
+     "ng": "Mirae Asset 27/02 · ACBS 07/08/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Liên doanh, liên kết",
+   "phu": "Cam Lâm – Vĩnh Hảo 38%, BOT Đèo Cả Khánh Hòa 47% (Ninh Lộc), BG-LS – Hữu Nghị 31%, Đồng Đăng – Trà Lĩnh 42%",
+   "so": [
+    [
+     "Giá trị sổ sách 30/6/2026",
+     "1.273 tỷ",
+     "FPTS"
+    ],
+    [
+     "Lãi liên kết 2025",
+     "91 tỷ",
+     ""
+    ],
+    [
+     "Lãi liên kết 6T/2026",
+     "44 tỷ",
+     "−13%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Lưu lượng 6T/2026: Cam Lâm – Vĩnh Hảo +27%, Ninh Lộc −29%; doanh thu phí Cam Lâm – Vĩnh Hảo tăng gần 20% (Analyst Meeting).",
+     "ng": "ACBS 07/08 · Analyst Meeting 10/2026"
+    }
+   ]
+  }
+ ]
+}

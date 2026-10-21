@@ -1,0 +1,1540 @@
+{
+ "v": 2,
+ "ma": "HAG",
+ "ten": "CTCP Hoàng Anh Gia Lai",
+ "nganh": "Nông nghiệp (chuối, sầu riêng, cà phê, heo)",
+ "ky": "BCTC soát xét 6T/2026 · KQKD Q2/2026",
+ "cap_nhat": "2026-10-21",
+ "lan_sau": "sau BCTC Q3/2026 và kết quả IPO HGI",
+ "cp_trieu": 1267.4,
+ "cp_ng": "1.267.399.283 cp lưu hành (vốn điều lệ 12.675 tỷ; vốn hóa ÷ giá VNDirect 20/10 khớp)",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Lãi kỷ lục là tiền được xóa lãi; lãi lõi 6 tháng giảm 41% và còn phải chia cho cổ đông HGI"
+ },
+ "dong_mo": "Bỏ 1.534 tỷ lãi trái phiếu được DATC miễn, LN cổ đông 6T/2026 chỉ 492 tỷ (−41%); sau IPO, ~24% lãi của HGI (chuối, sầu riêng tại Lào) thuộc cổ đông ngoài. P/E 11 × LN cốt lõi 2027E, cộng vườn chưa thu hoạch (0,75 lần sổ sách) và tiền IPO HGI, cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "71%",
+   "nhan": "LN cổ đông 2026E là khoản miễn lãi",
+   "tieu": "Lãi kỷ lục đến từ xóa lãi, không phải từ chuối",
+   "t": "DATC miễn 1.534 tỷ lãi lô trái phiếu HAGLBOND16.26 sau khi HAG trả gốc trước hạn (26/3/2026); Q4/2025 đã có ~1,1 nghìn tỷ hoàn nhập lãi vay. Bỏ hai khoản này, LN cổ đông 6T/2026 còn 492 tỷ (−41%), 4 quý gần nhất 725 tỷ thay vì 3.315: P/E 5,5 lần (giá 20/10) thực chất ~25 lần. Kế hoạch LNST 4.202 tỷ: phần ngoài khoản miễn lãi mới đạt 25%.",
+   "ng": "BCTC soát xét 6T/2026 · ĐHĐCĐ 17/4/2026 · báo chí"
+  },
+  {
+   "so": "−12%",
+   "nhan": "lãi gộp 6T/2026",
+   "tieu": "Chuối qua đỉnh giá 2025, sầu riêng chưa đủ bù",
+   "t": "Q2/2026 doanh thu trái cây 1.381 tỷ (−31%), biên gộp 33,9% (cùng kỳ 38,1%), lãi gộp 652 tỷ (−26,5%) — Q2/2025 là đỉnh giá chuối. Sầu riêng 2.140 ha mới thu ~600 ha (3.824 tấn 9T/2025, giá thành 5–15 nghìn đ/kg) nên là nguồn tăng chính. Mô hình: lãi gộp 2026E 2.469 tỷ (−9%), 2027E +12% chưa tính cà phê.",
+   "ng": "BCTC Q2/2026 (tự lập) · KAFI 03/12/2025 · mô hình"
+  },
+  {
+   "so": "~24%",
+   "nhan": "LN HGI thuộc cổ đông ngoài sau IPO",
+   "tieu": "Bán bớt HGI giá P/E 5–6 để trồng cà phê",
+   "t": "HGI lãi 1.604 tỷ năm 2025 và ~1.070 tỷ 6T/2026 — hơn cả LNST cốt lõi hợp nhất (670 tỷ). HAG bán 8,7% HGI giá 45.652 đ (~4,8 lần LN 2025), IPO 18,8 triệu cp giá 60.600 (~6,4 lần): sở hữu 93,13% → ~76%. Cổ đông ngoài nhận ~589 tỷ LN 2027E (2025: 117); tiền thu dùng cho 14.220 tỷ vốn 2026–2028, chủ yếu cà phê.",
+   "ng": "Báo Đầu tư · Mekong ASEAN · KAFI 03/12/2025 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Giá đang trả trước cho cà phê; giá trị cơ sở {up_so}",
+   "dk": "up_duoi:0",
+   "t": "P/E 11 (≈ trung vị 11 mã thực phẩm 11,2) × LN cốt lõi 2027E 699 tỷ = 6,1 nghìn đ/cp; vườn cà phê, sầu riêng chưa thu hoạch (9,8 nghìn tỷ sổ sách × 0,75) 5,8; tiền IPO HGI phần HAG 0,7. Riêng 76% HGI theo giá IPO ≈ 6,8 nghìn đ/cp. Xấu 7,4: lãi gộp đi ngang, vườn × 0,6; tốt 18,1: lãi gộp 2027 +25%.",
+   "ng": "mô hình · BCTC VNDirect · IPO HGI",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "Giá đã về dưới giá trị cơ sở: {up_so}",
+    "t": "P/E 11 × LN cốt lõi 2027E 699 tỷ (6,1 nghìn đ/cp), cộng vườn chưa thu hoạch × 0,75 (5,8) và tiền IPO HGI (0,7). Riêng 76% HGI theo giá IPO ≈ 6,8 nghìn đ/cp. Xấu 7,4, tốt 18,1."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   2123,
+   2152,
+   699
+  ],
+  "ln_truoc": 1013,
+  "eps": [
+   1675,
+   1698,
+   552
+  ],
+  "bv": [
+   10424,
+   12482,
+   12534
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "LN cốt lõi (bỏ miễn, hoàn nhập lãi vay)",
+    "v": [
+     1066,
+     618,
+     699
+    ]
+   },
+   {
+    "ten": "ROE cốt lõi",
+    "v": [
+     9.7,
+     4.3,
+     4.4
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2025A: BCTC; khoản một lần: hoàn nhập lãi vay Q4/2025 ~1.056 tỷ, DATC miễn lãi 1.534 tỷ (6T/2026). Chưa trả cổ tức tiền mặt; 500 đ/cp dự kiến trình ĐHĐCĐ 2027 (đã trừ vào BVPS 2027E)."
+ },
+ "ln_mang": {
+  "tieu": "Từ lãi kinh doanh đến LN cổ đông",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Lãi HĐKD cốt lõi",
+    "mau": "c1",
+    "v": [
+     2093,
+     1941,
+     2157
+    ]
+   },
+   {
+    "ten": "Miễn, hoàn nhập lãi vay",
+    "mau": "c3",
+    "v": [
+     1057,
+     1534,
+     0
+    ]
+   },
+   {
+    "ten": "Lãi vay, khác, thuế",
+    "mau": "c2",
+    "v": [
+     -910,
+     -925,
+     -869
+    ]
+   },
+   {
+    "ten": "Cổ đông thiểu số",
+    "mau": "c4",
+    "v": [
+     -117,
+     -397,
+     -589
+    ]
+   }
+  ],
+  "nhan": "Miễn, hoàn nhập lãi vay",
+  "ng": "Lãi HĐKD cốt lõi = lãi gộp − chi phí bán hàng, QLDN. 2025A: BCTC; 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "tieu": "P/E so với 11 mã thực phẩm vốn hóa lớn nhất",
+  "phu": "giá hôm nay; HAG tính trên LN cổ đông cốt lõi 4 quý",
+  "chi_so": "P/E 4 quý (LN cốt lõi)",
+  "chi_so_kv": "P/E 4 quý (giá 20/10)",
+  "nhom": "11 mã cùng ngành vốn hóa lớn nhất",
+  "kv": [
+   [
+    "MCH",
+    26.1
+   ],
+   [
+    "VNM",
+    11.0
+   ],
+   [
+    "MSN",
+    15.8
+   ],
+   [
+    "SBT",
+    25.0
+   ],
+   [
+    "KDC",
+    25.0
+   ],
+   [
+    "BAF",
+    120.7
+   ],
+   [
+    "VHC",
+    7.4
+   ],
+   [
+    "DBC",
+    5.8
+   ],
+   [
+    "ANV",
+    5.8
+   ],
+   [
+    "PAN",
+    3.8
+   ],
+   [
+    "MCM",
+    11.2
+   ]
+  ],
+  "tv": 11.2,
+  "moi_cp": 572,
+  "max": 40,
+  "y": "Trên LN báo cáo 4 quý (3.315 tỷ, gồm 2.591 tỷ miễn, hoàn nhập lãi vay) P/E HAG ở giá 20/10 chỉ 5,5 — thấp nhất nhóm sau PAN; LN cốt lõi 4 quý 725 tỷ (EPS 572 đ). VHC, DBC, ANV, PAN có ROE 14–24% vẫn chỉ 3,8–7,4 lần.",
+  "ng": "Bảng cùng ngành: vốn hóa VNDirect, LNST mẹ 4 quý BCTC đến Q2/2026, giá 20/10/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: lãi kinh doanh → LN cổ đông",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Lãi gộp",
+    "v": [
+     2705,
+     2469,
+     2765
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí bán hàng + QLDN",
+    "v": [
+     612,
+     528,
+     608
+    ]
+   },
+   {
+    "ten": "Lãi HĐKD cốt lõi",
+    "v": [
+     2093,
+     1941,
+     2157
+    ],
+    "dam": 1
+   },
+   {
+    "ten": "Doanh thu tài chính",
+    "v": [
+     295,
+     314,
+     300
+    ]
+   },
+   {
+    "ten": "Chi phí tài chính (trừ khoản một lần)",
+    "v": [
+     772,
+     823,
+     852
+    ]
+   },
+   {
+    "ten": "Thu nhập (chi phí) khác ròng",
+    "v": [
+     -472,
+     -303,
+     -220
+    ]
+   },
+   {
+    "ten": "LN trước thuế cốt lõi",
+    "v": [
+     1145,
+     1129,
+     1385
+    ],
+    "dam": 1
+   },
+   {
+    "ten": "Miễn, hoàn nhập lãi vay (một lần)",
+    "v": [
+     1057,
+     1534,
+     null
+    ]
+   },
+   {
+    "ten": "LNST hợp nhất",
+    "v": [
+     2240,
+     2550,
+     1288
+    ]
+   },
+   {
+    "nhom": "Phần của cổ đông HAG"
+   },
+   {
+    "ten": "Sở hữu HGI cuối kỳ",
+    "s": [
+     "93,13%",
+     "75,95%",
+     "75,95%"
+    ]
+   },
+   {
+    "ten": "LNST của HGI (100%)",
+    "v": [
+     1604,
+     2070,
+     2200
+    ]
+   },
+   {
+    "ten": "Cổ đông thiểu số",
+    "v": [
+     117,
+     397,
+     589
+    ]
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     2123,
+     2152,
+     699
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông cốt lõi",
+    "v": [
+     1066,
+     618,
+     699
+    ],
+    "dam": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     1675,
+     1698,
+     552
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "2026E = 6 tháng soát xét + Q3–Q4 ước tính. Lãi vay tính trên dư nợ 30/6/2026; vốn vay mới cho cà phê sau 30/6 không tính lãi lẫn giá trị; IPO HGI giả định bán hết 18,8 triệu cp từ Q4/2026. HGI 2025: số HAG công bố (KAFI 12/2025); 6T/2026 ~1.070 tỷ (báo chí)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   2152
+  ],
+  "cuoi": [
+   "2027E",
+   699
+  ],
+  "buoc": [
+   [
+    "Miễn lãi DATC 2026",
+    -1534
+   ],
+   [
+    "Lãi HĐKD cốt lõi",
+    216
+   ],
+   [
+    "Tài chính ròng",
+    -43
+   ],
+   [
+    "Thiểu số (IPO HGI)",
+    -192
+   ],
+   [
+    "Khác, thuế",
+    100
+   ]
+  ],
+  "y": "Bỏ khoản miễn lãi, LN cốt lõi 2027E 699 tỷ so với 618 tỷ năm 2026E: lãi HĐKD tăng 216 tỷ nhưng phần chia cho cổ đông ngoài HGI tăng 192 tỷ.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Lãi gộp H2/2026 so với H2/2025",
+   "v": [
+    "−18%",
+    "−5%",
+    "+8%"
+   ],
+   "ly_do": "6T/2026 −12% (Q1 +11%, Q2 −26,5% khi Q2/2025 là đỉnh giá chuối); H2 có mùa sầu riêng Gia Lai (8–9), Lào (10–11) với diện tích cho trái tăng"
+  },
+  {
+   "ten": "Lãi gộp 2027 so với 2026E",
+   "v": [
+    "+3%",
+    "+12%",
+    "+25%"
+   ],
+   "ly_do": "Sầu riêng 2.140 ha (2025 thu ~600 ha), thêm ~2.000 ha chuối, tơ tằm (KAFI); kế hoạch HAG cho HGI 2027: +30%. Cà phê không tính ở đây"
+  },
+  {
+   "ten": "Chi phí bán hàng + QLDN / lãi gộp",
+   "v": [
+    "23%",
+    "22%",
+    "21%"
+   ],
+   "ly_do": "2025: 22,6%; 6T/2026: 20,8%"
+  },
+  {
+   "ten": "Lãi suất trên nợ vay 30/6",
+   "v": [
+    "10,8%",
+    "9,8%",
+    "8,8%"
+   ],
+   "ly_do": "Nợ vay 30/6 8.691 tỷ; lãi vay 6T/2026 390 tỷ ≈ 10%/năm; BSC 11/2025: 7,95–9,2%. Vốn mới cho cà phê sau 30/6 không tính lãi lẫn giá trị"
+  },
+  {
+   "ten": "Chi phí khác ròng 2027 (tỷ)",
+   "v": [
+    "−320",
+    "−220",
+    "−120"
+   ],
+   "ly_do": "Quý 4 hằng năm ghi chi phí khác lớn: 2023 −254, 2024 −111, 2025 −369 tỷ; 6T/2026 (trừ khoản miễn lãi) −22 tỷ"
+  },
+  {
+   "ten": "LNST HGI 2027E (tỷ, 100%)",
+   "v": [
+    "1.900",
+    "2.200",
+    "2.500"
+   ],
+   "ly_do": "2025: 1.604; 6T/2026 ~1.070; kế hoạch HAG cho HGI 2026–2027: 2.085 · 2.710. HAG giữ 75,9% nếu IPO bán hết 18,8 triệu cp"
+  },
+  {
+   "ten": "P/E trên LN cổ đông cốt lõi 2027E",
+   "v": [
+    "12",
+    "11",
+    "10"
+   ],
+   "ly_do": "12 = thấp nhất 2/2025–1/2026 (12,0), khi LN 4 quý không có khoản một lần; 11 ≈ trung vị 11 mã thực phẩm (11,2); 10 ≈ trung vị lịch sử 9,8"
+  },
+  {
+   "ten": "Vườn chưa thu hoạch (lần sổ sách)",
+   "v": [
+    "0,6",
+    "0,75",
+    "0,94"
+   ],
+   "ly_do": "P/B trung vị lịch sử HAG 0,94 chiết khấu 12%/năm cho số năm chờ thu hoạch: 4 năm (0,6), 2 năm (0,75), không chờ (0,94)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1841,
+   "ln27": 221,
+   "gia": 7.4,
+   "mo_ta": "Lãi gộp H2/2026 −18%, 2027 +3%; lãi suất 10,8%; HGI lãi 1,9 nghìn tỷ; LN cốt lõi 2027E 221 tỷ × P/E 12; vườn × 0,6"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 2152,
+   "ln27": 699,
+   "gia": 12.5,
+   "mo_ta": "Lãi gộp H2/2026 −5%, 2027 +12% (sầu riêng, chuối mới); lãi suất 9,8%; HGI lãi 2,2 nghìn tỷ; P/E 11; vườn × 0,75"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 2432,
+   "ln27": 1290,
+   "gia": 18.1,
+   "mo_ta": "Lãi gộp 2027 +25%, chi phí bán hàng + QLDN 21%; lãi suất 8,8%; LN cốt lõi 1.290 tỷ × P/E 10; vườn × 0,94 (≈ giá vốn)"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "P/E × LN cổ đông cốt lõi 2027E + vườn chưa thu hoạch theo sổ sách + tiền IPO HGI",
+  "ck": 0,
+  "cp": 1267.4,
+  "phan": [
+   {
+    "ten": "LN cổ đông cốt lõi 2027E",
+    "mau": "c1",
+    "x": [
+     221,
+     699,
+     1290
+    ],
+    "boi": [
+     12,
+     11,
+     10
+    ],
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     2652,
+     7689,
+     12900
+    ]
+   },
+   {
+    "ten": "Vườn chưa thu hoạch (cà phê, sầu riêng)",
+    "mau": "c3",
+    "x": [
+     9771,
+     9771,
+     9771
+    ],
+    "boi": [
+     0.6,
+     0.75,
+     0.94
+    ],
+    "x_ten": "Tài sản dở dang 30/6",
+    "boi_ten": "lần sổ sách",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     5863,
+     7328,
+     9185
+    ]
+   },
+   {
+    "ten": "Tiền IPO HGI thuộc HAG",
+    "mau": "c4",
+    "x": [
+     865,
+     865,
+     865
+    ],
+    "boi": [
+     1,
+     1,
+     1
+    ],
+    "x_ten": "Tiền IPO × 75,95%",
+    "boi_ten": "lần",
+    "boi_d": 0,
+    "sh": 1,
+    "gt": [
+     865,
+     865,
+     865
+    ]
+   }
+  ],
+  "von": [
+   9380,
+   15882,
+   22950
+  ],
+  "gia": [
+   7.4,
+   12.5,
+   18.1
+  ]
+ },
+ "nhay": [
+  [
+   "Sở hữu HGI ±5 điểm %",
+   110,
+   1.0
+  ],
+  [
+   "Lãi gộp 2027 ±5%",
+   100,
+   0.9
+  ],
+  [
+   "Hệ số vườn chưa thu hoạch ±0,1",
+   null,
+   0.8
+  ],
+  [
+   "Lãi suất vay ±1 điểm %",
+   81,
+   0.7
+  ],
+  [
+   "P/E ±1 lần",
+   null,
+   0.6
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   9.1,
+   11.0,
+   9.9,
+   9.7,
+   8.9,
+   9.2,
+   8.4,
+   6.4,
+   6.4,
+   6.1,
+   7.6,
+   6.5,
+   5.1,
+   10.0,
+   9.6,
+   9.8,
+   17.7,
+   16.6,
+   14.6,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   19.2,
+   19.0,
+   18.2,
+   12.7,
+   12.1,
+   13.5,
+   9.2,
+   9.7,
+   7.8,
+   6.6,
+   7.7,
+   11.3,
+   232.3,
+   209.7,
+   173.8,
+   15.4,
+   14.6,
+   15.0,
+   44.4,
+   44.7,
+   44.0,
+   31.6,
+   33.3,
+   31.6,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   12.0,
+   9.3,
+   13.2,
+   28.6,
+   32.6,
+   23.8,
+   4.5,
+   4.8,
+   4.8,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   51.6,
+   66.0,
+   51.4,
+   17.4,
+   15.7,
+   21.0,
+   17.3,
+   17.7,
+   11.5,
+   8.1,
+   8.2,
+   8.5,
+   5.9,
+   5.8,
+   6.0,
+   6.2,
+   6.2,
+   6.7,
+   8.2,
+   6.9,
+   7.2,
+   10.4,
+   12.3,
+   13.3,
+   6.9,
+   7.1,
+   6.7,
+   8.2,
+   6.9,
+   6.9,
+   6.2,
+   6.4,
+   6.1,
+   7.0,
+   7.0,
+   7.1,
+   13.6,
+   12.7,
+   13.7,
+   13.0,
+   12.0,
+   12.9,
+   12.7,
+   12.6,
+   13.2,
+   15.2,
+   15.3,
+   15.0,
+   9.5,
+   9.8,
+   9.7,
+   6.7,
+   6.7,
+   6.1,
+   5.4,
+   5.4,
+   5.5
+  ],
+  "p10": 6.1,
+  "p25": 6.9,
+  "tv": 9.8,
+  "thap": [
+   "2020-08",
+   4.5
+  ],
+  "nay": [
+   "2026-10",
+   5.5
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "P/E 4 quý hiện 5,5 lần vì 4 quý gần nhất có 2.591 tỷ miễn, hoàn nhập lãi vay. Giai đoạn 2/2025–1/2026 (LN 4 quý không có khoản một lần) thị trường trả 12,0–15,3 lần. Kịch bản: 12 · 11 · 10 lần LN cốt lõi 2027E; tổng giá trị ≈ P/B 0,60 · 1,00 · 1,43 vốn chủ cuối 2026E (trung vị lịch sử 0,94)."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    140,
+    259,
+    374
+   ],
+   "ck": 416
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -324,
+    -133,
+    32
+   ],
+   "ck": 873
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1841,
+    2152,
+    2432
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Quý đầu không còn khoản miễn lãi. Mô hình cơ sở: lãi gộp 724 tỷ, LN cổ đông 259 tỷ (Q3/2025: 416); mùa sầu riêng Gia Lai bù một phần giá chuối.",
+   "tac": [
+    "Lãi gộp ≥ 720 tỷ",
+    "giữ cơ sở; dưới 630 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "lãi gộp, biên gộp trái cây"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "hai",
+   "tieu": "HGI lên UPCoM",
+   "ct": "IPO 18,8 triệu cp giá 60.600 đ (≈ 2,5 lần giá sổ sách) qua OCBS; đăng ký giao dịch UPCoM Q3–Q4/2026. 76% của HAG theo giá IPO ≈ 6,8 nghìn đ/cp HAG.",
+   "tac": [
+    "±1,1 nghìn đ/cp",
+    "mỗi ±10.000 đ giá HGI (tham chiếu, 142 triệu cp HAG nắm)"
+   ],
+   "theo_doi": "kết quả IPO, giá HGI"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Chi phí khác cuối năm",
+   "ct": "Quý 4 các năm 2023–2025 ghi chi phí khác ròng 254, 111, 369 tỷ; Q4/2025 có ~1,1 nghìn tỷ hoàn nhập lãi vay bù lại, Q4/2026 thì không.",
+   "tac": [
+    "−133 tỷ",
+    "LN cổ đông Q4/2026E cơ sở"
+   ],
+   "theo_doi": "thu nhập, chi phí khác"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Sầu riêng, chuối mở rộng",
+   "ct": "Sầu riêng 2.140 ha, 2025 mới thu ~600 ha (3.824 tấn 9T/2025, giá thành 5–15 nghìn đ/kg); kế hoạch thêm ~2.000 ha chuối và 1.000 ha sầu riêng.",
+   "tac": [
+    "+1,8 nghìn đ/cp",
+    "mỗi +10% lãi gộp 2027"
+   ],
+   "theo_doi": "sản lượng, giá bán sầu riêng"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "len",
+   "tieu": "Cà phê cho thu hoạch",
+   "ct": "3.040 ha trồng 2024–2025 cho vụ đầu 2027; năm 2026 trồng mới 7.000 ha (3.500 tỷ), mục tiêu 20.000 ha năm 2028; 70% Arabica tại Paksong (Lào).",
+   "tac": [
+    "±0,8 nghìn đ/cp",
+    "mỗi ±0,1 lần hệ số vườn chưa thu hoạch"
+   ],
+   "theo_doi": "diện tích trồng, năng suất vụ đầu"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi HGI chảy ra ngoài",
+   "ct": "Sau IPO cổ đông ngoài hưởng ~24% LN HGI (2025: 6,87%); HGI cam kết chia 50% LN bằng tiền — ~265 tỷ/năm ra khỏi tập đoàn.",
+   "tac": [
+    "−1,0 nghìn đ/cp",
+    "mỗi 5 điểm % HGI bán thêm"
+   ],
+   "theo_doi": "tỷ lệ sở hữu HGI"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Vốn đầu tư 14.220 tỷ",
+   "ct": "Riêng 2026 cần 5.420 tỷ; nợ vay 30/6 8.691 tỷ (+1.893 tỷ trong Q2), lãi suất ~10%/năm, 66,5% nợ vay từ nhóm OCB–OCBS (BSC 11/2025).",
+   "tac": [
+    "−1,0 nghìn đ/cp",
+    "ròng mỗi 5.000 tỷ vay thêm để trồng (lãi 9,8%, vườn mới × 0,75)"
+   ],
+   "theo_doi": "nợ vay ròng, lãi vay"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Giá chuối, sầu riêng xuất khẩu",
+   "ct": "Q2/2026 doanh thu trái cây −31%, biên gộp 33,9% (38,1%); Trung Quốc áp Lệnh 280 với 2.589 mặt hàng nông sản từ 1/6/2026.",
+   "tac": [
+    "−0,9 nghìn đ/cp",
+    "mỗi −5% lãi gộp 2027"
+   ],
+   "theo_doi": "giá chuối Trung Quốc, biên gộp"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Cổ tức tiền mặt trở lại",
+   "ct": "Lần đầu sau hơn 10 năm: 500 đ/cp từ LN 2026 trình ĐHĐCĐ 2027; ông Đức cam kết không phát hành cổ phiếu \"kiểu tờ A4\".",
+   "tac": [
+    "500 đ/cp",
+    "~3,5% giá 20/10"
+   ],
+   "theo_doi": "nghị quyết ĐHĐCĐ 2027"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Heo tái đàn lúc giá giảm",
+   "ct": "Giá heo hơi giữa 10/2026 còn 50–54 nghìn đ/kg (tháng 7: 61–66); HAG không tái đàn 2024–2025, doanh thu heo Q2/2026 ~77 tỷ.",
+   "tac": "",
+   "theo_doi": "giá heo hơi, số nái"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Trung Quốc siết nhập khẩu nông sản: Lệnh 280 từ 1/6/2026 áp yêu cầu hồ sơ mới cho 2.589 mặt hàng; đầu 2025 kiểm tra cadimi, vàng O làm xuất khẩu sầu riêng có lúc giảm 80%.",
+     "ng": "VietNamNet · KAFI 03/12/2025"
+    },
+    {
+     "h": -1,
+     "t": "Chi phí vốn cao với doanh nghiệp đang đầu tư: lãi vay của HAG 6T/2026 ≈ 10%/năm dư nợ; BSC (11/2025) ghi lãi suất 7,95–9,2%.",
+     "ng": "BCTC soát xét · BSC 25/11/2025"
+    },
+    {
+     "h": 1,
+     "t": "Xử lý nợ cũ qua kênh nhà nước: DATC nhận lô trái phiếu từ BIDV cuối 12/2025 rồi miễn 96% nghĩa vụ lãi khi HAG trả gốc.",
+     "ng": "Báo Pháp luật · Mekong ASEAN"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Chuối Việt Nam có giá ~418 USD/tấn so với Philippines ~560, Ecuador ~667; bệnh Panama làm giảm sản lượng Philippines.",
+     "ng": "KAFI 03/12/2025 (Hiệp hội Rau quả)"
+    },
+    {
+     "h": 1,
+     "t": "Sầu riêng: xuất khẩu 2024 hơn 3,3 tỷ USD (46% kim ngạch rau quả); sầu riêng đông lạnh 6T/2025 gấp 3 lần — HAG có kho lạnh 20.000 m², bán trái vụ.",
+     "ng": "KAFI 03/12/2025"
+    },
+    {
+     "h": -1,
+     "t": "Giá heo hơi giữa 10/2026 còn 50–54 nghìn đ/kg sau 61–66 nghìn tháng 7.",
+     "ng": "Báo Lào Cai 10/7, 15/10/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Quỹ đất 14.060 ha ở độ cao trên 700 m (Việt Nam 5.380, Lào 6.280, Campuchia 2.400 ha): chuối 7.030, cà phê 3.040, sầu riêng 2.140 ha.",
+     "ng": "BSC 25/11/2025 · KAFI 03/12/2025"
+    },
+    {
+     "h": -1,
+     "t": "Lợi nhuận nhiều năm dựa vào xóa, miễn lãi: Eximbank xóa hơn 1.400 tỷ lãi (2023), hoàn nhập Q4/2025, DATC miễn 1.534 tỷ (2026).",
+     "ng": "KAFI 03/12/2025 · BCTC · báo chí"
+    },
+    {
+     "h": 0,
+     "t": "Gia đình ông Đoàn Nguyên Đức nắm 30,25% (12/5/2026); nhóm OCB–OCBS là chủ nợ lớn nhất và cổ đông qua Hướng Việt (4,74%).",
+     "ng": "Mekong ASEAN · BSC · KAFI"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Trái cây: chuối, sầu riêng",
+   "phu": "Chuối 7.030 ha, sầu riêng 2.140 ha — chủ yếu ở Lào (HGI), Gia Lai, Campuchia",
+   "so": [
+    [
+     "Doanh thu trái cây Q2/2026",
+     "1.381 tỷ",
+     "−31%"
+    ],
+    [
+     "Biên gộp Q2/2026",
+     "33,9%",
+     "cùng kỳ 38,1%"
+    ],
+    [
+     "Chuối 9T/2025",
+     ">365 nghìn tấn",
+     "+17%"
+    ],
+    [
+     "Sầu riêng 9T/2025",
+     "3.824 tấn",
+     "2024: 3.174"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Chuối bán Nhật (chốt giá năm) và Trung Quốc (chốt giá tuần, 7–14 USD/thùng); sầu riêng bán trái vụ nhờ vùng cao và kho lạnh.",
+     "ng": "BSC 25/11/2025 · KAFI 03/12/2025"
+    },
+    {
+     "t": "Q2/2026 lãi gộp 652 tỷ (−26,5%); hàng hóa thương mại 461 tỷ (+73%) biên thấp kéo cơ cấu doanh thu.",
+     "ng": "BCTC Q2/2026 (tự lập)"
+    }
+   ]
+  },
+  {
+   "ten": "Cà phê, tơ tằm (đang đầu tư)",
+   "phu": "Chưa có doanh thu đáng kể; nằm trong tài sản dở dang dài hạn 9.771 tỷ (30/6/2026)",
+   "so": [
+    [
+     "Cà phê đã trồng",
+     "3.040 ha",
+     "vụ đầu 2027"
+    ],
+    [
+     "Trồng mới 2026",
+     "7.000 ha",
+     "~3.500 tỷ"
+    ],
+    [
+     "Mục tiêu 2028",
+     "20.000 ha",
+     "cà phê"
+    ],
+    [
+     "Công suất tơ",
+     "1.280 tấn/năm",
+     "2 nhà máy"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Cà phê 70% Arabica tại Paksong (Lào), chi phí ~0,5 tỷ/ha, năng suất mục tiêu 4–5 tấn/ha; dự kiến 2 nhà máy chế biến.",
+     "ng": "KAFI 03/12/2025"
+    },
+    {
+     "t": "Tơ tằm xuất Ấn Độ; 11/2025 hai nhà máy mới lắp 6/36 máy ươm tơ.",
+     "ng": "KAFI 03/12/2025"
+    }
+   ]
+  },
+  {
+   "ten": "HGI và cấu trúc tập đoàn",
+   "phu": "CTCP Đầu tư Quốc tế Hoàng Anh Gia Lai — công ty con lãi nhất, vốn điều lệ 1.685 tỷ",
+   "so": [
+    [
+     "HAG sở hữu 30/6/2026",
+     "84,42%",
+     "đầu năm 93,13%"
+    ],
+    [
+     "Sau IPO 18,8 triệu cp",
+     "~75,9%",
+     "nếu bán hết"
+    ],
+    [
+     "Giá IPO",
+     "60.600 đ",
+     "≈ 2,5 lần sổ sách"
+    ],
+    [
+     "Bán trước IPO",
+     "45.652 đ/cp",
+     "~14,7 triệu cp, ~670 tỷ"
+    ]
+   ],
+   "y": [
+    {
+     "t": "HGI: doanh thu 2025 6.885 tỷ, LNST 1.604 tỷ; kế hoạch 2026–2027 LNST 2.085 · 2.710 tỷ (HAG công bố); cam kết cổ tức tiền 50% LN.",
+     "ng": "KAFI 03/12/2025 · Thị trường Tài chính Tiền tệ"
+    },
+    {
+     "t": "Tiền IPO (tối đa 1.139 tỷ) dùng mở rộng sản xuất, trả nợ và thanh toán vật tư, cây giống; đăng ký mua 18/8–7/9/2026.",
+     "ng": "VietnamFinance · DNSE"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "LN cổ đông theo quý: báo cáo và cốt lõi",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Báo cáo",
+     "v": [
+      332,
+      204,
+      341,
+      493,
+      416,
+      873,
+      1126,
+      900
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Bỏ miễn, hoàn nhập lãi vay",
+     "v": [
+      332,
+      204,
+      341,
+      493,
+      416,
+      -183,
+      376,
+      116
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "4 quý gần nhất: báo cáo 3.315 tỷ, cốt lõi 725 tỷ. Q2/2026 cốt lõi 116 tỷ (cùng kỳ 493); Q4/2025 âm vì chi phí khác 369 tỷ.",
+   "ng": "BCTC HAG (VNDirect, Q2/2026 theo bản soát xét) · khoản miễn lãi: ĐHĐCĐ, BCTC Q2/2026"
+  },
+  {
+   "ten": "Lãi gộp theo quý",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      609,
+      582,
+      564,
+      887,
+      762,
+      492,
+      626,
+      652
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "6T/2026 1.277 tỷ (−12%): Q1 +11%, Q2 −26,5% so với đỉnh giá chuối Q2/2025. Quý 4 thường thấp nhất năm.",
+   "ng": "BCTC HAG (VNDirect)"
+  },
+  {
+   "ten": "Phần LN của cổ đông thiểu số",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Cổ đông thiểu số",
+     "v": [
+      19,
+      5,
+      20,
+      26,
+      16,
+      55,
+      47,
+      131
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q2/2026 131 tỷ, gấp 5 lần cùng kỳ sau khi HAG bán 8,7% HGI; sau IPO sở hữu HGI còn ~76%.",
+   "ng": "BCTC HAG (VNDirect): LNST − LNST cổ đông công ty mẹ"
+  },
+  {
+   "ten": "Tài sản dở dang và nợ vay",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tài sản dở dang dài hạn",
+     "v": [
+      5240,
+      5959,
+      6611,
+      8471,
+      9070,
+      9771
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Nợ vay",
+     "v": [
+      7504,
+      9320,
+      8371,
+      7902,
+      6798,
+      8691
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Vườn chưa thu hoạch, nhà máy tăng 4,5 nghìn tỷ trong 5 quý lên 9,8 nghìn tỷ; nợ vay tăng 1.893 tỷ trong Q2/2026.",
+   "ng": "BCTC HAG (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 8624,
+    "th": 3707,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 17/4/2026 · BCTC Q2 tự lập"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 4202,
+    "th": 2204,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC soát xét"
+   },
+   {
+    "ten": "LNST trừ khoản miễn lãi DATC",
+    "kh": 2668,
+    "th": 670,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC soát xét · mô hình"
+   }
+  ],
+  "y": "LNST 6T đạt 52% kế hoạch nhưng 1.534 tỷ là khoản miễn lãi; phần còn lại đạt 25%. Mô hình cơ sở cả năm LNST hợp nhất 2.550 tỷ, 61% kế hoạch.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "KAFI",
+   "ngay": "2025-12-03",
+   "kn": "NẮM GIỮ",
+   "tp": 17344,
+   "ln26": 1929,
+   "ln27": null,
+   "pp": "DCF (60%) + P/E ngành 19,1 lần × EPS 2024 (40%)",
+   "y": "Dự phóng LN cổ đông 2026 1.929 tỷ nhờ chuối (+13%), sầu riêng, tơ tằm; viết trước khoản miễn lãi DATC và IPO HGI. Trang dùng LN cốt lõi thấp hơn nhiều.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAG/ctcp_hoang_anh_gia_lai_hsx_hag_tang_truong_on_dinh_nho_chien_luoc_4_cay_2_con.pdf"
+  },
+  {
+   "ctck": "BSC",
+   "ngay": "2025-11-25",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "cập nhật doanh nghiệp",
+   "y": "Ước LNST 2025 ~2.800 tỷ nhưng phần lớn là bất thường; chờ hiệu quả sầu riêng, tơ tằm, cà phê, heo trước khi khuyến nghị.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAG/Cap_nhat_Hoat_ong_kinh_doanh_sau_tai_cau_truc.pdf"
+  }
+ ],
+ "ctck_chu": "Chưa có báo cáo CTCK mới trong 8 tháng; hai báo cáo cuối 2025 dưới đây chỉ dùng phần mô tả doanh nghiệp. Mô hình tự dựng từ BCTC 2026, công bố của HAG, HGI và so sánh cùng ngành.",
+ "nguon": [
+  {
+   "ten": "Doanh nghiệp & Hội nhập — ĐHĐCĐ 2026: kế hoạch lãi kỷ lục 4.200 tỷ",
+   "ngay": "26/06/2026",
+   "link": "https://doanhnghiephoinhap.vn/cong-ty-co-phan-hoang-anh-gia-lai-dat-ke-hoach-lai-ky-luc-4200-ty-dong-130966.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Tham vọng lãi kỷ lục, chia cổ tức sau hơn 10 năm",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/hoang-anh-gia-lai-tham-vong-lai-ky-luc-chia-co-tuc-sau-hon-10-nam-53267.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Bầu Đức: không phát hành cổ phiếu \"kiểu tờ A4\"",
+   "ngay": "17/04/2026",
+   "link": "https://mekongasean.vn/bau-duc-toi-con-dieu-hanh-hagl-se-khong-phat-hanh-co-phieu-kieu-to-a4-54147.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Bầu Đức nâng sở hữu tại HAGL lên hơn 25%",
+   "ngay": "05/2026",
+   "link": "https://mekongasean.vn/bau-duc-nang-so-huu-tai-hagl-len-hon-25-55131.html"
+  },
+  {
+   "ten": "Báo Pháp luật — HAG tất toán trái phiếu trước hạn, DATC miễn hơn 1.500 tỷ lãi",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/hoang-anh-gia-lai-hag-tat-toan-no-trai-phieu-truoc-han-duoc-datc-mien-giam-hon-1-500-ty-dong-tien-lai.html"
+  },
+  {
+   "ten": "Mekong ASEAN — HAGL được miễn giảm hơn 1.500 tỷ lãi trái phiếu",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/hoang-anh-gia-lai-duoc-mien-giam-hon-1500-ty-dong-lai-trai-phieu-53420.html"
+  },
+  {
+   "ten": "DNSE — HAG báo lãi nghìn tỷ sau cú đảo chiều tài chính (Q2/2026)",
+   "ngay": "07/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/hoang-anh-gia-lai-bao-lai-nghin-ty-sau-cu-dao-chieu-hoat-dong-tai-chinh-35253958"
+  },
+  {
+   "ten": "Thời báo Tài chính — LN 6 tháng vượt 2.290 tỷ",
+   "ngay": "07/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/loi-nhuan-cua-hoang-anh-gia-lai-tang-vot-vuot-2-290-ty-dong-sau-6-thang-201344.html"
+  },
+  {
+   "ten": "VnBusiness — Lãi nghìn tỷ quý thứ 2 liên tiếp, điểm đáng lo trong BCTC",
+   "ngay": "07/2026",
+   "link": "https://vnbusiness.vn/bao-lai-nghin-ty-quy-thu-2-lien-tiep-hoang-anh-gia-lai-van-de-lo-mot-diem-dang-lo-trong-bao-cao-tai-chinh.html"
+  },
+  {
+   "ten": "Người Quan sát — Chuối, sầu riêng sa sút, HAGL vẫn lãi nhờ được xóa nợ",
+   "ngay": "07/2026",
+   "link": "https://nguoiquansat.vn/kinh-doanh-chuoi-sau-rieng-sa-sut-hagl-cua-bau-duc-van-lai-dam-nho-duoc-bo-tai-chinh-xoa-no-306669.html"
+  },
+  {
+   "ten": "Báo Đầu tư — HAGL giảm LN sau soát xét, đã bán 8,7% HGI giá 45.652 đ",
+   "ngay": "08/2026",
+   "link": "https://baodautu.vn/hagl-giam-loi-nhuan-sau-soat-xet-da-ban-87-hgi-voi-gia-45652-dongco-phan-d693077.html"
+  },
+  {
+   "ten": "Mekong ASEAN — HAGL chuyển nhượng gần 15 triệu cp HGI",
+   "ngay": "08/2026",
+   "link": "https://mekongasean.vn/hagl-chuyen-nhuong-gan-15-trieu-co-phan-hgi-voi-gia-thap-hon-ipo-59114.html"
+  },
+  {
+   "ten": "VietnamFinance — HGI chào bán IPO, kỳ vọng thu hơn 1.100 tỷ",
+   "ngay": "08/2026",
+   "link": "https://vietnamfinance.vn/cong-ty-cua-bau-duc-chao-ban-ipo-ky-vong-thu-ve-hon-1100-ty-dong-d148701.html"
+  },
+  {
+   "ten": "DNSE — HGI chốt thời gian IPO 18,8 triệu cổ phiếu",
+   "ngay": "08/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/cong-ty-con-cua-hagl-chot-thoi-gian-ipo-188-trieu-co-phieu-35261439"
+  },
+  {
+   "ten": "Báo Pháp luật — HGI: IPO 1.140 tỷ, lãi bán niên gần 1.070 tỷ",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dau-tu-quoc-te-hoang-anh-gia-lai-hgi-ke-hoach-ipo-huy-dong-1-140-ty-dong-lai-ban-nien-dat-gan-1-070-ty.html"
+  },
+  {
+   "ten": "Stockbiz — Bầu Đức giải thích giá IPO 60.600 đ (≈ 2,5 lần giá sổ sách)",
+   "ngay": "08/2026",
+   "link": "https://stockbiz.vn/tin-tuc/hag-bau-duc-giai-thich-muc-gia-60600-dongcp-gap-25-lan-gia-so-sach-cua-ga-vang-sap-chao-ban/41482469"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — Roadshow IPO HGI: cổ tức tiền 50%, cà phê Arabica tại Lào",
+   "ngay": "08/2026",
+   "link": "https://thitruongtaichinhtiente.vn/roadshow-ipo-hgi-bau-duc-cam-ket-co-tuc-tien-mat-50-nam-he-lo-quan-bai-chien-luoc-ca-phe-arabica-tai-lao-85034.html"
+  },
+  {
+   "ten": "VietNamNet — Trung Quốc áp Lệnh mới với 2.589 mặt hàng nông sản",
+   "ngay": "2026",
+   "link": "https://vietnamnet.vn/viet-nam-tang-toc-xuat-khau-trung-quoc-ap-lenh-moi-voi-2-589-mat-hang-nong-san-2522220.html"
+  },
+  {
+   "ten": "Báo Lào Cai — Giá lợn hơi 15/10/2026: thấp nhất 50.000 đ/kg",
+   "ngay": "15/10/2026",
+   "link": "https://baolaocai.vn/gia-lon-hoi-hom-nay-15102026-thap-nhat-50000-dongkg-post911971.html"
+  },
+  {
+   "ten": "KAFI — Tăng trưởng ổn định nhờ chiến lược \"4 cây 2 con\"",
+   "ngay": "03/12/2025",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAG/ctcp_hoang_anh_gia_lai_hsx_hag_tang_truong_on_dinh_nho_chien_luoc_4_cay_2_con.pdf"
+  },
+  {
+   "ten": "BSC — Cập nhật hoạt động kinh doanh sau tái cấu trúc",
+   "ngay": "25/11/2025",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAG/Cap_nhat_Hoat_ong_kinh_doanh_sau_tai_cau_truc.pdf"
+  }
+ ]
+}

@@ -1,0 +1,1381 @@
+{
+ "v": 2,
+ "ma": "PVP",
+ "ten": "CTCP Vận tải Dầu khí Thái Bình Dương (PV Trans Pacific)",
+ "nganh": "Vận tải biển dầu khí",
+ "ky": "BCTC Q2/2026 · công bố, báo chí đến 21/10/2026 (KQKD Q3 chưa ra)",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 103.7,
+ "cp_ng": "Vốn điều lệ 1.037 tỷ (BCTC Q2/2026, không đổi từ Q3/2024); vốn hóa ÷ giá VNDirect 102,8 triệu. Hệ số điều chỉnh giá 1,054 từ 9/2026 là cổ tức tiền 2025 (1.000 đ/cp), không đổi số cổ phiếu.",
+ "co_tuc": [
+  [
+   "2025-11-05",
+   1000,
+   "cổ tức 2024, 10% tiền (ĐKCC 06/11/2025, VSD)"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Lãi gấp ba nhờ một tàu Aframax 20 tuổi tái ký giá đỉnh — giá đã đi trước lúc cước 2027 hạ",
+  "dk": "up_duoi:5",
+  "khac": "Lãi gấp ba nhờ một tàu Aframax 20 tuổi tái ký giá đỉnh; giá đã chiết khấu việc cước 2027 hạ"
+ },
+ "dong_mo": "Apollo — tàu Aframax ~20 tuổi — tái ký ~70.000 USD/ngày (cũ 38.000) đưa LN Q2 lên 135 tỷ, gần gấp 3 cùng kỳ; 2026E ~460 tỷ. Khi hợp đồng hết hạn trong thị trường đã hạ nhiệt, 2027E lùi về ~260 tỷ. 5,6 lần LN lõi + tiền ròng 712 tỷ cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "+77 tỷ",
+   "nhan": "lãi gộp mỗi quý từ hợp đồng mới của Apollo",
+   "tieu": "Một tàu tạo gần hết phần lãi tăng thêm",
+   "t": "Apollo (Aframax ~105.000 DWT, 19 tuổi đầu 2025) tái ký ~70.000 USD/ngày từ Q2/2026, gần gấp đôi hợp đồng 38.000 từ 2/2024: thêm ~77 tỷ lãi gộp mỗi quý. Lãi gộp Q2 tăng 71 tỷ so với Q1, lên 170 tỷ; LN cổ đông 135 tỷ, gấp 2,9 lần cùng kỳ. Trừ phần này, lãi gộp còn ~93 tỷ, gần mức Q1 (99): 2 tàu MR, FSO và quản lý tàu chỉ nhích theo cước MR.",
+   "ng": "BCTC Q2 · SBBS, SHS 05/2026 · Tạp chí Công Thương · mô hình"
+  },
+  {
+   "so": "42.000",
+   "nhan": "USD/ngày — cước Apollo bình quân 2027E (cơ sở)",
+   "tieu": "Hợp đồng giá đỉnh hết hạn trong thị trường đã hạ nhiệt",
+   "t": "Giá thuê 1 năm Aframax từ ~61.000 USD/ngày (5/2026) còn 55.000 (8/2026); ban lãnh đạo PVT dự báo cước tàu dầu 2027 −30%; Clarksons: đội tàu dầu 2027 +11,1%, cầu +2,0%. Cơ sở: Apollo bình quân 42.000 (−30% so với 60.000 năm 2026E), phần nền về mức 2025 +3% → LN 2027E ~260 tỷ (−43%). Mỗi ±5.000 USD/ngày = ±2,0 nghìn đ/cp.",
+   "ng": "SHS 24/05 · ACBS 06/08 · Vietcap 03/08 · SBBS 21/05 · mô hình"
+  },
+  {
+   "so": "7,9 nghìn đ",
+   "nhan": "tiền ròng mỗi cổ phiếu (30/6/2026)",
+   "tieu": "Tiền ròng ~1/3 thị giá sắp đổi thành tàu mua giá cao",
+   "t": "Tiền và tiền gửi 1.458 tỷ, nợ vay 642 tỷ. Kế hoạch 2026 chi 116 triệu USD (~3.040 tỷ, 1,5 lần vốn chủ) cho Aframax số 2, MR và Aframax số 3 (ĐHĐCĐ bất thường 23/10), 70% vay. Ở cước 45.000 USD/ngày, một Aframax 50,5 triệu USD thêm ~90 tỷ LN/năm; hòa vốn ở ~33.000 USD/ngày. Chưa tính vào định giá.",
+   "ng": "BCTC Q2 · ĐHĐCĐ 2026 (Báo Pháp luật) · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Giá đã đi trước lợi nhuận 2027",
+   "dk": "up_duoi:5",
+   "t": "5,6 lần LN lõi 2027E (trung vị (vốn hóa − tiền ròng)/LN lõi từ 2022) + tiền ròng 712 tỷ = {gt}, tương đương P/E 7,6 lần LN 2027E (trung vị từ 2022: 7,7). Xấu 16,2: Apollo 34.000 USD/ngày, 6,7 lần; tốt 24,0: hợp đồng đỉnh kéo sang 2027, 4,7 lần. Giá 20/10 ứng với P/B 1,17 — cao nhất từ cuối 2021.",
+   "ng": "mô hình · bội số lịch sử: BCTC VNDirect",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "Lãi lõi 2027E × bội số trung vị, cộng tiền ròng: {up_so}",
+    "t": "5,6 lần LN lõi 2027E (trung vị (vốn hóa − tiền ròng)/LN lõi từ 2022) + tiền ròng 712 tỷ = {gt}. Lãi đáy được trả bội số cao hơn: xấu 6,7 lần (p75) → 16,2; tốt 4,7 lần (p25) → 24,0 nghìn đ/cp."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   199,
+   463,
+   263
+  ],
+  "ln_truoc": 207,
+  "eps": [
+   1922,
+   4465,
+   2536
+  ],
+  "bv": [
+   18624,
+   21863,
+   23221
+  ],
+  "co_tuc_nam": 1000,
+  "them": [
+   {
+    "ten": "ROE",
+    "v": [
+     10.5,
+     22.1,
+     11.2
+    ],
+    "d": 1,
+    "pt": 1
+   },
+   {
+    "ten": "Cước Apollo bình quân (nghìn USD/ngày)",
+    "v": [
+     38.0,
+     60.1,
+     42.0
+    ],
+    "d": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS, BVPS theo 103,7 triệu cp. Cổ tức tiền 1.000 đ/cp cho 2024 (trả 28/11/2025) và 2025 (chốt quyền 9/2026); BVPS 2027E giả định cổ tức 2026 cũng 1.000 đ."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Cước Apollo tăng thêm (so với 38.000 USD/ngày)",
+    "mau": "c1",
+    "v": [
+     0,
+     212,
+     37
+    ]
+   },
+   {
+    "ten": "Phần nền (MR, FSO, quản lý tàu) − chi phí quản lý",
+    "mau": "c2",
+    "v": [
+     245,
+     331,
+     250
+    ]
+   },
+   {
+    "ten": "Tài chính ròng & khác",
+    "mau": "c4",
+    "v": [
+     4,
+     37,
+     42
+    ]
+   }
+  ],
+  "nhan": "Cước Apollo tăng thêm (so với 38.000 USD/ngày)",
+  "ng": "Phần Apollo = (cước − 38.000) × ngày khai thác × tỷ giá (hợp đồng mới tính từ đầu Q2/2026); phần nền = lãi gộp còn lại − quản lý. Tài chính ròng 2025 âm vì lỗ tỷ giá, lãi vay sau khi mua tàu Q4/2024."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 20/10)",
+  "nhom": "12 mã cùng ngành vốn hóa lớn nhất",
+  "kv": [
+   [
+    "GMD",
+    13.7
+   ],
+   [
+    "PVT",
+    8.7
+   ],
+   [
+    "HAH",
+    7.3
+   ],
+   [
+    "VTP",
+    27.0
+   ],
+   [
+    "TMS",
+    10.2
+   ],
+   [
+    "HHV",
+    8.5
+   ],
+   [
+    "VSC",
+    14.3
+   ],
+   [
+    "PDN",
+    10.0
+   ],
+   [
+    "SCS",
+    5.5
+   ],
+   [
+    "STG",
+    10.5
+   ],
+   [
+    "DVP",
+    8.3
+   ],
+   [
+    "CDN",
+    6.0
+   ]
+  ],
+  "tv": 9.4,
+  "moi_cp": 3120,
+  "max": 28,
+  "y": "Nhóm gồm cảng, logistics, cao tốc; hai mã vận tải biển: PVT 8,7, HAH 7,3. PVP tính trên LN 4 quý đến Q2/2026 (3.120 đ/cp), mới có một quý Apollo giá mới — LN 2027E cơ sở thấp hơn, nên P/E trên lãi bình thường cao hơn con số này.",
+  "ng": "Bảng cùng ngành: vốn hóa VNDirect, LNST mẹ 4 quý BCTC gần nhất, giá 20/10/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: phần nền + cước Apollo",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Tàu Apollo (Aframax ~105.000 DWT)"
+   },
+   {
+    "ten": "Cước bình quân (USD/ngày)",
+    "v": [
+     38000,
+     60100.0,
+     42000
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp tăng thêm so với 38.000",
+    "v": [
+     0,
+     212,
+     37
+    ],
+    "dam": 1
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Lãi gộp phần nền (MR, FSO, quản lý tàu)",
+    "v": [
+     289,
+     376,
+     296
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp",
+    "v": [
+     289,
+     588,
+     333
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí quản lý",
+    "v": [
+     43.5,
+     44.6,
+     46
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Tài chính ròng & khác",
+    "v": [
+     4.3,
+     36.8,
+     42
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN trước thuế",
+    "v": [
+     250,
+     580,
+     329
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     199,
+     463,
+     263
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     1922,
+     4465,
+     2536
+    ],
+    "eps": 1
+   },
+   {
+    "nhom": "Định giá"
+   },
+   {
+    "ten": "LN lõi (sau thuế, không gồm tài chính)",
+    "v": [
+     196,
+     434,
+     229
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     18624,
+     21863,
+     23221
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     10.5,
+     22.1,
+     11.2
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "2026E = 6 tháng thực tế + Q3–Q4 ước tính. Tỷ giá 26.200 đ/USD; Apollo khai thác 350 ngày năm 2027; thuế 20%. Chưa tính tàu mua thêm (chưa có hợp đồng)."
+ },
+ "gia_dinh": [
+  {
+   "ten": "Cước Apollo Q3/2026 (USD/ngày)",
+   "v": [
+    "64.000",
+    "70.000",
+    "70.000"
+   ],
+   "ly_do": "Tái ký ~70.000 từ Q2/2026 (SBBS 21/05, SHS 24/05), thời hạn chưa công bố; xấu: hết hạn sớm, tái ký thấp hơn trong quý"
+  },
+  {
+   "ten": "Cước Apollo Q4/2026 (USD/ngày)",
+   "v": [
+    "50.000",
+    "62.000",
+    "70.000"
+   ],
+   "ly_do": "Giá thuê 1 năm Aframax 55.000 (8/2026, ACBS), đã giảm từ đỉnh 3–4/2026; cơ sở: hợp đồng mới từ giữa quý"
+  },
+  {
+   "ten": "Cước Apollo bình quân 2027 (USD/ngày)",
+   "v": [
+    "34.000",
+    "42.000",
+    "56.000"
+   ],
+   "ly_do": "Ban lãnh đạo PVT: cước tàu dầu 2027 −30% (cơ sở: −30% so với 2026E). Hợp đồng cũ 38.000 ≈ thị trường đầu 2026. Tàu ~21 tuổi nhận giá thấp hơn tàu trẻ"
+  },
+  {
+   "ten": "Lãi gộp phần nền H2/2026 (tỷ/quý)",
+   "v": [
+    "84",
+    "92",
+    "100"
+   ],
+   "ly_do": "Q1/2026 98,7, Q2 93,2 (trừ phần Apollo tăng thêm); 2025 bình quân 72,2. Thuê 1 năm MR 27.000 USD (8/2026, +20% từ đầu năm)"
+  },
+  {
+   "ten": "Lãi gộp phần nền 2027 (tỷ/quý)",
+   "v": [
+    "66",
+    "74",
+    "88"
+   ],
+   "ly_do": "Cơ sở = 2025 +3%, như hồ sơ PVT (cước 2027 về mặt bằng trước Hormuz). MBS: đội tàu MR/LR2 +6,4% DWT, cầu +1,0–1,9%/năm"
+  },
+  {
+   "ten": "Tỷ giá (đ/USD)",
+   "v": [
+    "26.200",
+    "26.200",
+    "26.200"
+   ],
+   "ly_do": "USD/VND bình quân 1/7–4/9/2026 26.214, Q2 26.304 (dữ liệu hàng hóa của web); doanh thu cước bằng USD"
+  },
+  {
+   "ten": "EV/LN lõi (lần)",
+   "v": [
+    "6,7",
+    "5,6",
+    "4,7"
+   ],
+   "ly_do": "(Vốn hóa − tiền ròng)/LN lõi 4 quý, cuối tháng từ 2022: p25 4,7, trung vị 5,6, p75 6,7; lãi đáy được trả bội số cao hơn. Khác P/E của hồ sơ PVT vì tiền ròng PVP ~1/3 vốn hóa"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 416,
+   "ln27": 179,
+   "gia": 16.2,
+   "mo_ta": "Hormuz thông, dư cung: Apollo tái ký sớm, bình quân 2027 34.000 USD/ngày (dưới hợp đồng 2024); phần nền dưới mức 2025; 6,7 lần LN lõi + tiền ròng"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 463,
+   "ln27": 263,
+   "gia": 19.2,
+   "mo_ta": "Apollo tái ký cuối 2026, bình quân 2027 42.000 (−30% so với 2026E); phần nền = 2025 +3%; 5,6 lần LN lõi + tiền ròng"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 492,
+   "ln27": 410,
+   "gia": 24.0,
+   "mo_ta": "Gián đoạn kéo dài, hợp đồng ~70.000 chạy đến giữa 2027: Apollo bình quân 56.000; phần nền gần mức 6T/2026; 4,7 lần"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá: hoạt động + tiền ròng",
+  "phu": "EV/LN lõi × LN lõi 2027E (neo lịch sử từ 2022), cộng tiền ròng",
+  "ck": 0,
+  "cp": 103.7,
+  "phan": [
+   {
+    "ten": "Vận tải, FSO, quản lý tàu",
+    "mau": "c1",
+    "x": [
+     145,
+     229,
+     377
+    ],
+    "boi": [
+     6.7,
+     5.6,
+     4.7
+    ],
+    "x_ten": "LN lõi 2027E (sau thuế, không gồm tài chính ròng)",
+    "boi_ten": "EV/LN lõi",
+    "sh": 1,
+    "gt": [
+     972,
+     1282,
+     1772
+    ]
+   },
+   {
+    "ten": "Tiền ròng",
+    "mau": "c4",
+    "x": [
+     712,
+     712,
+     712
+    ],
+    "boi": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "x_ten": "tiền + tiền gửi − nợ vay 30/6/2026, trừ cổ tức 2025",
+    "boi_ten": "hệ số",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     712,
+     712,
+     712
+    ]
+   }
+  ],
+  "von": [
+   1684,
+   1994,
+   2484
+  ],
+  "gia": [
+   16.2,
+   19.2,
+   24.0
+  ]
+ },
+ "nhay": [
+  [
+   "EV/LN lõi ±1 lần",
+   null,
+   2.2
+  ],
+  [
+   "Cước Apollo bình quân 2027 ±5.000 USD/ngày",
+   37,
+   2.0
+  ],
+  [
+   "Lãi gộp phần nền 2027 ±10 tỷ/quý",
+   32,
+   1.7
+  ],
+  [
+   "Ngày khai thác Apollo 2027 ±30 (lên đà, kiểm định)",
+   26,
+   1.4
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   15.1,
+   9.3,
+   13.7,
+   13.9,
+   10.8,
+   15.5,
+   16.6,
+   14.8,
+   14.0,
+   11.4,
+   9.4,
+   11.9,
+   10.2,
+   19.6,
+   8.6,
+   8.2,
+   7.9,
+   6.3,
+   7.4,
+   6.3,
+   4.9,
+   5.6,
+   4.7,
+   5.7,
+   6.9,
+   6.8,
+   4.0,
+   4.2,
+   5.5,
+   4.6,
+   5.7,
+   5.4,
+   3.6,
+   3.9,
+   3.6,
+   3.1,
+   3.0,
+   2.8,
+   3.5,
+   2.9,
+   3.5,
+   4.1,
+   4.0,
+   4.4,
+   5.7,
+   5.9,
+   6.8,
+   5.3,
+   5.4,
+   6.6,
+   5.6,
+   6.2,
+   5.6,
+   5.6,
+   6.4,
+   5.9,
+   6.3,
+   5.9,
+   6.5,
+   7.6,
+   7.5,
+   6.7,
+   8.7,
+   8.7,
+   6.6,
+   6.8,
+   6.3,
+   6.1,
+   12.4,
+   11.3,
+   9.7,
+   3.7,
+   5.3,
+   4.9,
+   4.9,
+   4.6,
+   5.1,
+   4.8,
+   5.2,
+   5.6,
+   4.7,
+   5.0,
+   4.3,
+   7.6,
+   7.7,
+   7.6,
+   7.1,
+   7.1,
+   7.7,
+   9.0,
+   8.8,
+   9.7,
+   10.2,
+   9.3,
+   9.3,
+   8.3,
+   9.1,
+   8.7,
+   8.4,
+   7.8,
+   6.8,
+   7.5,
+   8.0,
+   8.1,
+   8.3,
+   8.3,
+   8.6,
+   8.0,
+   7.7,
+   8.1,
+   8.3,
+   7.7,
+   9.4,
+   7.9,
+   8.1,
+   7.5,
+   5.9,
+   6.7,
+   7.1
+  ],
+  "p10": 4.1,
+  "p25": 5.4,
+  "tv": 6.8,
+  "thap": [
+   "2020-01",
+   2.8
+  ],
+  "nay": [
+   "2026-10",
+   7.1
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "ref": [
+   {
+    "v": 6.8,
+    "ten": "trung vị từ 2016"
+   },
+   {
+    "v": 7.7,
+    "ten": "trung vị từ 2022"
+   }
+  ],
+  "dung": "Kịch bản dùng 6,7 · 5,6 · 4,7 lần LN lõi + tiền ròng — p75, trung vị, p25 của (vốn hóa − tiền ròng)/LN lõi từ 2022 (từ khi PVP có tiền ròng); tương đương P/E 9,4 · 7,6 · 6,1 lần LN 2027E."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    116,
+    134,
+    141
+   ],
+   "ck": 69
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    89,
+    119,
+    141
+   ],
+   "ck": 44
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    416,
+    463,
+    492
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "23/10/2026",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ bất thường: mua Aframax số 3",
+   "ct": "Kế hoạch 2026: 116 triệu USD cho Aframax số 2 (50,5), MR (30,5), Aframax số 3 hoặc MR (35); 70% vay. Tài sản dài hạn 6T giảm — chưa nhận tàu nào.",
+   "tac": [
+    "+90 tỷ LN/năm",
+    "mỗi Aframax 50,5 triệu USD ở cước 45.000 USD/ngày; hòa vốn ~33.000"
+   ],
+   "theo_doi": "giá mua, tuổi tàu, hợp đồng cho thuê đi kèm"
+  },
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Apollo chạy giá mới cả quý, cước MR còn cao. Mô hình cơ sở LN 134 tỷ, ngang Q2 (135) và gấp 1,9 lần cùng kỳ (69).",
+   "tac": [
+    "Lãi gộp ~169 tỷ",
+    "giữ cơ sở; ≤ 147 là xấu, ≥ 177 là tốt"
+   ],
+   "theo_doi": "lãi gộp, thông tin tái ký Apollo"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Apollo hết hợp đồng ~70.000 USD/ngày",
+   "ct": "Thời hạn hợp đồng chưa công bố. Tái ký theo giá thuê 1 năm (55.000 tháng 8/2026, đang giảm); tàu ~21 tuổi khó qua kiểm định của các hãng dầu lớn, giá thấp hơn tàu trẻ.",
+   "tac": [
+    "±2,0 nghìn đ/cp",
+    "mỗi ±5.000 USD/ngày cước Apollo bình quân 2027"
+   ],
+   "theo_doi": "giá thuê định hạn 1 năm Aframax"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Hormuz thông thương, cước tàu dầu −30%",
+   "ct": "Ban lãnh đạo PVT dự báo cước tàu dầu 2027 −30%; Vietcap giả định −30% (dầu thô), −41% (sản phẩm). Cơ sở đã tính; xấu là cước về dưới hợp đồng 2024.",
+   "tac": [
+    "−4,6 nghìn đ/cp",
+    "nếu cước Apollo, phần nền 2027 theo kịch bản xấu (bội số cơ sở)"
+   ],
+   "theo_doi": "lưu lượng tàu qua Hormuz, Biển Đỏ"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Gián đoạn kéo dài, hợp đồng đỉnh chạy sang 2027",
+   "ct": "Nếu hợp đồng ~70.000 có thời hạn 12 tháng, Apollo giữ giá cao đến giữa 2027; 2 tàu MR hưởng cước MR 27.000 USD/ngày (+20% từ đầu năm).",
+   "tac": [
+    "+8,0 nghìn đ/cp",
+    "nếu cước Apollo, phần nền 2027 theo kịch bản tốt (bội số cơ sở)"
+   ],
+   "theo_doi": "thông báo tái ký, cước MR"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dư cung tàu dầu",
+   "ct": "Clarksons: 2027 đội tàu dầu +11,1% so với cầu +2,0%; MBS: đội MR/LR2 +6,4% DWT so với cầu +1,0–1,9%/năm. Tàu già như Apollo bị ép giá trước.",
+   "tac": [
+    "±1,7 nghìn đ/cp",
+    "mỗi ±10 tỷ/quý lãi gộp phần nền 2027"
+   ],
+   "theo_doi": "giao tàu mới, giá thuê MR"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "len",
+   "tieu": "Tiền ròng ~1/3 thị giá, cổ tức tiền đều",
+   "ct": "30/6/2026: tiền và tiền gửi 1.458 tỷ, nợ vay 642 tỷ. Cổ tức tiền 1.000 đ/cp cho 2024 và 2025; lãi tiền gửi ~21 tỷ/quý.",
+   "tac": [
+    "+6,9 nghìn đ/cp",
+    "tiền ròng sau cổ tức 2025, cộng vào giá trị mọi kịch bản"
+   ],
+   "theo_doi": "dòng tiền chi mua tàu"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Apollo ~20 tuổi: lên đà, kiểm định",
+   "ct": "PVP (2025) nhận định Apollo ở cuối chu kỳ khai thác thuận lợi, cần tàu thay thế. Ngày ngừng khai thác mất trọn cước, chi phí sửa chữa tăng theo tuổi tàu.",
+   "tac": [
+    "±1,4 nghìn đ/cp",
+    "mỗi ±30 ngày khai thác Apollo 2027"
+   ],
+   "theo_doi": "lịch lên đà, thông báo bán/thay tàu"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "FSO Đại Hùng Queen gắn với một mỏ",
+   "ct": "Cho PVEP thuê tàu trần, hợp đồng gia hạn cuối 2022 giữ điều khoản; 8,6% doanh thu kế hoạch 2026. Sản lượng mỏ trong nước suy giảm là rủi ro gia hạn.",
+   "tac": "",
+   "theo_doi": "gia hạn hợp đồng FSO"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Xung đột Mỹ – Iran từ 28/2/2026: có lúc chỉ ~10 tàu/ngày qua Hormuz (trước đó 125–140); cước tàu dầu lập đỉnh 3–4/2026.",
+     "ng": "SHS 24/05 (PVT) · ACBS 06/08"
+    },
+    {
+     "h": 1,
+     "t": "Trừng phạt \"đội tàu bóng tối\" của Nga: ~18% đội Aframax toàn cầu bị cấm vận — nguồn cung hiệu dụng thiếu.",
+     "ng": "SHS 24/05 (PVT)"
+    },
+    {
+     "h": 0,
+     "t": "Doanh thu cước bằng USD; tỷ giá bình quân 1/7–4/9/2026 26.214 đ/USD, thấp hơn Q2 (26.304).",
+     "ng": "dữ liệu hàng hóa của web"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "Giá thuê 1 năm đã hạ từ đỉnh: Aframax 55.000 USD/ngày (8/2026, +41% từ đầu năm), MR 27.000 (+20%), hóa chất Handy 25.000 (+25%).",
+     "ng": "ACBS 06/08"
+    },
+    {
+     "h": -1,
+     "t": "Ban lãnh đạo PVT: cước tàu dầu 2027 −30%; Clarksons: đội tàu dầu 2027 +11,1% so với cầu +2,0%.",
+     "ng": "Vietcap 03/08 · SBBS 21/05"
+    },
+    {
+     "h": 0,
+     "t": "MBS (PVT, 17/09) thận trọng với MR/LR2: đội tàu +6,4% DWT so với cầu +1,0–1,9%/năm.",
+     "ng": "MBS 17/09"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 0,
+     "t": "PVT sở hữu 64,92%. Đội tàu: Apollo (Aframax ~105.000 DWT), 2 tàu MR (khai thác từ cuối 2023–đầu 2024), FSO Đại Hùng Queen cho PVEP thuê tàu trần.",
+     "ng": "SHS 24/05 (PVT) · Báo Pháp luật 2025"
+    },
+    {
+     "h": 1,
+     "t": "6T/2026: doanh thu 1.367 tỷ, LNTT 264 tỷ — 98% kế hoạch cả năm 270 tỷ.",
+     "ng": "BCTC Q2 · ĐHĐCĐ 2026"
+    },
+    {
+     "h": -1,
+     "t": "Kế hoạch đầu tư 2026: 116 triệu USD, 70% vay — gấp ~1,5 lần vốn chủ, đưa PVP từ tiền ròng sang nợ ròng nếu làm đủ.",
+     "ng": "Báo Pháp luật · BCTC Q2"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Tàu Apollo (Aframax)",
+   "phu": "Tàu dầu thô ~105.465 DWT, 19 tuổi đầu 2025; cho thuê định hạn quốc tế",
+   "so": [
+    [
+     "Hợp đồng từ 2/2024",
+     "~38.000 USD/ngày",
+     "Tạp chí Công Thương"
+    ],
+    [
+     "Tái ký Q2/2026",
+     "~70.000 USD/ngày",
+     "SBBS, SHS 05/2026"
+    ],
+    [
+     "Lãi gộp thêm mỗi quý",
+     "~77 tỷ",
+     "32.000 USD × 91 ngày"
+    ],
+    [
+     "Cước bình quân 2027E",
+     "42.000 USD/ngày",
+     "cơ sở"
+    ]
+   ],
+   "y": [
+    {
+     "t": "PVP (kế hoạch 2025) nhận định Apollo ở cuối chu kỳ khai thác thuận lợi, đề xuất mua 1–2 Aframax dưới 15 tuổi để giữ chỗ trong phân khúc.",
+     "ng": "Báo Pháp luật · Tạp chí Công Thương 2025"
+    }
+   ]
+  },
+  {
+   "ten": "Tàu MR, FSO, quản lý tàu",
+   "phu": "Phần nền: 2 tàu MR (~50.000 DWT), FSO Đại Hùng Queen, dịch vụ quản lý tàu cho tập đoàn",
+   "so": [
+    [
+     "Cơ cấu doanh thu KH 2026",
+     "vận tải 32%",
+     "quản lý tàu 22,6%, FSO 8,6%"
+    ],
+    [
+     "Lãi gộp phần nền 2025",
+     "289 tỷ",
+     "~72 tỷ/quý"
+    ],
+    [
+     "Lãi gộp phần nền 6T/2026",
+     "192 tỷ",
+     "sau khi trừ phần Apollo tăng thêm"
+    ],
+    [
+     "Thuê 1 năm MR 8/2026",
+     "27.000 USD/ngày",
+     "+20% từ đầu năm (ACBS)"
+    ]
+   ],
+   "y": [
+    {
+     "t": "FSO Đại Hùng Queen: hợp đồng thuê tàu trần với PVEP gia hạn cuối 2022, giữ nguyên điều khoản.",
+     "ng": "Tạp chí Công Thương"
+    }
+   ]
+  },
+  {
+   "ten": "Kế hoạch đầu tư tàu 2026",
+   "phu": "116 triệu USD; 30% vốn chủ, 70% vay; chưa nhận tàu nào đến 30/6/2026",
+   "so": [
+    [
+     "Aframax số 2 (≤ 120.000 DWT, ≤ 15 tuổi)",
+     "50,5 triệu USD",
+     ""
+    ],
+    [
+     "MR1/MR2 (≤ 55.000 DWT)",
+     "30,5 triệu USD",
+     ""
+    ],
+    [
+     "Aframax số 3 hoặc MR",
+     "35 triệu USD",
+     "ĐHĐCĐ bất thường 23/10"
+    ],
+    [
+     "Aframax số 2 ở cước 45.000",
+     "+89 tỷ LN/năm",
+     "hòa vốn ~33.000 USD/ngày"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Giả định cho tàu mới: chi phí vận hành 9.000 USD/ngày, khấu hao 10 năm, 350 ngày khai thác, vay 70% lãi 6,5%/năm, mất lãi tiền gửi 5,8% trên phần vốn chủ. Lãi hoạt động ~194 tỷ/năm trên ~1.320 tỷ vốn bỏ ra.",
+     "ng": "mô hình · ĐHĐCĐ 2026"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi gộp theo quý",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Phần nền",
+     "v": [
+      78.8,
+      90.0,
+      88.6,
+      80.5,
+      67.0,
+      71.2,
+      85.3,
+      65.4,
+      98.7,
+      93.2
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Cước Apollo tăng thêm (ước)",
+     "v": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      76.6
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q2/2026 170 tỷ, +71 so với Q1 — khớp phần cước Apollo tăng thêm ~77 tỷ (32.000 USD/ngày × 91 ngày); phần nền ~93 tỷ, gần mức Q1.",
+   "ng": "BCTC (VNDirect) · phần Apollo: mô hình"
+  },
+  {
+   "ten": "Cước Apollo (HĐ) và thuê 1 năm (TT)",
+   "kieu": "cot",
+   "dv": "nghìn USD/ngày",
+   "nhan": [
+    "HĐ 2/24",
+    "TT 1/26",
+    "TT 5/26",
+    "HĐ Q2/26",
+    "TT 8/26"
+   ],
+   "ss": [
+    {
+     "ten": "Cước",
+     "v": [
+      38,
+      39,
+      61,
+      70,
+      55
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Đỉnh 3–4/2026; tháng 8 còn 55.000. TT 1/26 suy từ ACBS (55.000, +41% từ đầu năm). Cơ sở 2027: Apollo bình quân 42.000.",
+   "ng": "Tạp chí Công Thương · SHS 24/05 · SBBS 21/05 · ACBS 06/08"
+  },
+  {
+   "ten": "Tiền ròng cuối quý",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền + tiền gửi − nợ vay",
+     "v": [
+      698,
+      79,
+      167,
+      365,
+      510,
+      590,
+      745,
+      816
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "30/6/2026: tiền và tiền gửi 1.458 tỷ, nợ vay 642 tỷ. Q4/2024 nợ vay dài hạn +385 tỷ, tài sản dài hạn +508 tỷ.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "LN cổ đông theo quý",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN cổ đông",
+     "v": [
+      46.4,
+      59.1,
+      68.9,
+      32.7,
+      40.4,
+      45.8,
+      69.2,
+      43.9,
+      75.5,
+      135.0
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q2/2026 135 tỷ, gấp 2,9 lần cùng kỳ; 6 tháng 210,5 tỷ = 97% kế hoạch LNST cả năm.",
+   "ng": "BCTC (VNDirect) · ĐHĐCĐ 2026"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 2700,
+    "th": 1367,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 270,
+    "th": 264,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 216,
+    "th": 210.5,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+   },
+   {
+    "ten": "Đầu tư tàu",
+    "kh": 116,
+    "th": 0,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "triệu USD",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2 (tài sản dài hạn giảm)"
+   }
+  ],
+  "y": "6 tháng đã đạt 97% kế hoạch LNST — kế hoạch lập trước khi Apollo tái ký. Mô hình cơ sở cả năm ~460 tỷ (214% kế hoạch). Kế hoạch mua tàu chưa thực hiện."
+ },
+ "ctck": [],
+ "ctck_chu": "Chưa có CTCK theo dõi trong 8 tháng (bản gần nhất trên Simplize: VDSC 19/01/2023); mô hình tự dựng từ BCTC, công bố của doanh nghiệp, báo cáo CTCK về công ty mẹ PVT và so sánh cùng ngành.",
+ "nguon": [
+  {
+   "ten": "Báo Pháp luật — PVP triệu tập ĐHĐCĐ bất thường, muốn mua thêm tàu Aframax thứ 3",
+   "ngay": "09/2026",
+   "link": "https://doanhnhan.baophapluat.vn/van-tai-dau-khi-thai-binh-duong-pvp-trieu-tap-dhdcd-bat-thuong-muon-mua-them-tau-aframax-thu-3.html"
+  },
+  {
+   "ten": "Báo Pháp luật — PVTrans Pacific đặt mục tiêu lãi trước thuế 270 tỷ năm 2026",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/pvtrans-pacific-pvp-dat-muc-tieu-lai-truoc-thue-270-ty-dong-trong-nam-2026.html"
+  },
+  {
+   "ten": "24hmoney — PVP lên kế hoạch lãi sau thuế 216 tỷ, tăng 8,5%",
+   "ngay": "2026",
+   "link": "https://24hmoney.vn/news/pvp-len-ke-hoach-lai-sau-thue-216-ty-tang-8-5-c1a2738831.html"
+  },
+  {
+   "ten": "Báo Pháp luật — PVP báo lãi quý II/2026 tăng gấp 3 lần",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/van-tai-dau-khi-thai-binh-duong-pvp-bao-lai-quy-ii-2026-tang-gap-3-lan-hoan-thanh-gan-80-ke-hoach-nam.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Cổ phiếu PVP lập đỉnh lịch sử nhờ KQKD tăng vọt",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/co-phieu-pvtrans-pacific-pvp-lap-dinh-lich-su-nho-ket-qua-kinh-doanh-tang-vot.html"
+  },
+  {
+   "ten": "Báo Pháp luật — PVP kế hoạch 2025, rót 112 triệu USD mở rộng đội tàu (Apollo 19 tuổi, FSO, 2 tàu MR)",
+   "ngay": "2025",
+   "link": "https://doanhnhan.baophapluat.vn/pv-trans-pacific-pvp-len-ke-hoach-lai-245-ty-dong-chuan-bi-rot-112-trieu-usd-mo-rong-doi-tau-trong-nam-2025-82051.html"
+  },
+  {
+   "ten": "Tạp chí Công Thương — PVP dự chi 112 triệu USD để \"trẻ hóa\" đội tàu",
+   "ngay": "2025",
+   "link": "https://tapchicongthuong.vn/pv-trans-pacific--pvp--du-chi-112-trieu-usd-de--tre-hoa--doi-tau-139280.htm"
+  },
+  {
+   "ten": "Tạp chí Công Thương — Giá thuê tàu của PVP lên tới 38.000 USD/ngày",
+   "ngay": "2024",
+   "link": "https://tapchicongthuong.vn/gia-thue-tau-cua-pv-trans-pacific--pvp--pha-ky-luc-nam-2023--len-toi-38-000-usd-ngay-121977.htm"
+  },
+  {
+   "ten": "VSD — PVP: chi trả cổ tức 2024 bằng tiền (10%, ĐKCC 06/11/2025)",
+   "ngay": "10/2025",
+   "link": "https://www.vsd.vn/en/ad/188180"
+  },
+  {
+   "ten": "Vietstock — PVP: ngày chốt quyền cổ tức tiền 2025",
+   "ngay": "09/2026",
+   "link": "https://en.vietstock.vn/2026/09/pvp-record-date-for-2025-cash-dividend-payment-963-642685.htm"
+  },
+  {
+   "ten": "elibook — Cước Aframax neo cao quý 2, tàu Apollo tái ký 70.000 USD/ngày",
+   "ngay": "25/05/2026",
+   "link": "https://elibook.vn/2026/05/25/pvt-gia-cuoc-thue-tau-dau-tho-aframax-van-neo-cao-trong-quy-2-tau-apollo-tai-ky-hop-dong-70000-dola-ngay-gap-doi-gia-thue-cu/"
+  },
+  {
+   "ten": "SBBS — PVT: Bước vào giai đoạn tăng trưởng mới (Apollo ~70.000 USD/ngày)",
+   "ngay": "21/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVT/Buoc_vao_giai_oan_tang_truong_moi.pdf"
+  },
+  {
+   "ten": "SHS — PVT: Hưởng lợi từ chu kỳ vận tải biển toàn cầu (công ty con, đội tàu)",
+   "ngay": "24/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVT/pvt_huong_loi_tu_chu_ky_van_tai_bien_toan_cau_va_mo_rong_doi_tau.pdf"
+  },
+  {
+   "ten": "ACBS — Cập nhật PVT (giá thuê Aframax, MR, hóa chất 8/2026)",
+   "ngay": "06/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVT/cap_nhat_pvt_mua_2026_08_06.pdf"
+  },
+  {
+   "ten": "MBS — PVT: Từ nền tảng vững chãi đến chu kỳ tăng trưởng mới",
+   "ngay": "17/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVT/pvt_bcpt_tu_nen_tang_vung_chai_den_chu_ky_tang_truong_moi.pdf"
+  },
+  {
+   "ten": "Vietcap — PVT: họp nhà đầu tư 31/07, cước 2027 bình thường hóa",
+   "ngay": "03/08/2026",
+   "link": "https://www.vietcap.com.vn/en/research-center/pvt-hormuz-driven-tailwinds-firmly-support-2026-earnings-growth-2027-rate-normalization-expected-analyst-meeting-note"
+  }
+ ],
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   463
+  ],
+  "cuoi": [
+   "2027E",
+   263
+  ],
+  "buoc": [
+   [
+    "Cước Apollo 60,1 → 42,0 nghìn USD/ngày",
+    -140
+   ],
+   [
+    "Lãi gộp phần nền (MR, FSO, quản lý)",
+    -64
+   ],
+   [
+    "Quản lý, tài chính & khác",
+    4
+   ]
+  ],
+  "y": "70% mức giảm đến từ một con tàu: cước Apollo về 42.000 USD/ngày lấy đi 140 tỷ; phần nền về mức 2025 +3% lấy thêm 64 tỷ.",
+  "ng": "mô hình"
+ }
+}

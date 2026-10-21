@@ -1465,10 +1465,15 @@
       mo: kl ? { muc: kl.muc, hanh: HANH[kl.loai] || '', soDat: kl.soDat, tong: kl.dk ? kl.dk.length : null, pe: kl.x ? kl.x.pe : null,
         chips: kl.dk ? kl.dk.map(function(z){ return [z.ok, z.chip]; }) : null, tq: (kl.muc === 'tc' && kl.st != null) ? kl.st : null } : null }; }
   // Ve lai cac phan cua ho so phu thuoc gia (gia ma nay, gia cong ty con niem yet) — giu nguyen phan con lai
+  // Thanh tieu de ho so dinh ngay duoi thanh menu cua trang (menu cao hon khi xuong dong tren dien thoai)
+  function hsTop(el){
+    try { var tb = document.querySelector('.topbar'); el.style.setProperty('--hs-top', (tb && getComputedStyle(tb).position === 'sticky' ? tb.offsetHeight : 0) + 'px'); } catch(e){}
+  }
+  window.addEventListener('resize', function(){ var el = document.getElementById('ptcs'); if (el) hsTop(el); });
   function veLaiHs(t){
     var hs = window.__knHoSo, pf = hs && hs.lay(t); if (!pf || !window.__ptLast || window.__ptLast.t !== t) return;
     var cx = hsCx(t, window.__ptLast.raw);
-    [['hsT1', hs.trang1], ['hsT2', hs.trang2], ['hsD', hs.phanD]].forEach(function(z){ var el = document.getElementById(z[0]);
+    [['hsBar', hs.thanh], ['hsT1', hs.trang1], ['hsT2', hs.trang2], ['hsD', hs.phanD]].forEach(function(z){ var el = document.getElementById(z[0]);
       if (el) try { el.innerHTML = z[1](pf, cx); } catch(e){ console.warn('hoso ve lai ' + z[0], e); } });
   }
   if (window.__knHoSo) window.__knHoSo.nghe(function(){ try { var t = K() && K().ma(); if (t && ptDaVe === t) veLaiHs(t); } catch(e){} });
@@ -1497,8 +1502,8 @@
       try { h += '<div class="hsPg" id="hsT1">' + hs.trang1(pf, cx) + '</div>'; } catch(e){ console.warn('hoso trang 1', e); }
       try { h += '<div class="hsPg" id="hsT2">' + hs.trang2(pf, cx) + '</div>'; } catch(e){ console.warn('hoso trang 2', e); }
       // Ma co ho so: chi con bao cao (khong hien mo hinh dinh luong cu, the BCTC tu sinh, Soi BCTC, Cham diem 5 nam — tranh hai ket luan tren mot trang)
-      h = '<div class="pth"><b>Phân tích cơ bản chuyên sâu</b><span class="mini">' + esc(t) + ' · báo cáo phân tích · cập nhật '
-        + esc(String(pf.cap_nhat || '').split('-').reverse().join('/')) + '</span></div>' + h.replace(/^<div class="pth">[\s\S]*?<\/div>/, '');
+      var bar = ''; try { bar = hs.thanh(pf, cx); } catch(e){ console.warn('hoso thanh', e); }
+      h = '<div class="hsBar" id="hsBar">' + bar + '</div>' + h.replace(/^<div class="pth">[\s\S]*?<\/div>/, '');
       pl = '';
       try { pl += '<div id="hsD">' + hs.phanD(pf, cx) + '</div>'; } catch(e){ console.warn('hoso phu luc', e); }
     } else {
@@ -1564,6 +1569,8 @@
     h += pl != null ? mucGap('ctpl', 'Phụ lục', 'vận hành từng mảng · vĩ mô → doanh nghiệp · báo cáo CTCK · nguồn', pl) : gap;
     el.innerHTML = h;
     el.style.display = '';
+    // thanh tieu de ho so dinh ngay duoi thanh menu (topbar sticky) khi cuon
+    hsTop(el);
     el.querySelectorAll('.pl').forEach(function(a){ a.onclick = function(){ try { window.openDetail(a.dataset.t); window.scrollTo({ top: 0, behavior: 'smooth' }); } catch(e){} }; });
     ptDaVe = t;
   }
@@ -1581,12 +1588,15 @@
       var viec = ptTai(t); ptCho = viec;
       try { raw = await viec; } catch(e){ raw = null; }
       if (ptFor !== t) return;
-      if (!raw || raw.nam.length < 2) {
+      // ma moi niem yet chi co 1 nam BCTC (GEL): van ve neu ma co ho so phan tich (khong ghi cache, lan sau tai lai)
+      var moi = raw && raw.nam.length === 1 && hsViec ? await hsViec : null;
+      if (ptFor !== t) return;
+      if (!raw || (raw.nam.length < 2 && !moi)) {
         ptBao(t, 'Chưa tải được BCTC năm từ VNDirect' + (raw ? ' (nguồn chỉ có ' + raw.nam.length + ' năm)' : '') + '. <span class="pl" id="ptLai">Thử lại</span>');
         var b = document.getElementById('ptLai'); if (b) b.onclick = function(){ ptMo(t); };
         return;                                   // KHONG ghi cache khi tai hong / thieu
       }
-      if (khoa && raw.bc && raw.lsQ && raw.gia) ptLuu(t, khoa, raw);   // mot nguon tai hong -> khong luu, lan sau thu lai
+      if (!moi && khoa && raw.bc && raw.lsQ && raw.gia) ptLuu(t, khoa, raw);   // mot nguon tai hong -> khong luu, lan sau thu lai
     }
     if (hsViec && !hs.lay(t)) { await Promise.race([hsViec, new Promise(function(ok){ setTimeout(ok, 2500); })]); if (ptFor !== t) return; }
     try { ptVe(t, ptTinh(raw, t), raw); window.__ptLast = { t: t, raw: raw }; }

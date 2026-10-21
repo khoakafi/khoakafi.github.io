@@ -1,0 +1,1299 @@
+{
+ "v": 2,
+ "ma": "BAF",
+ "ten": "CTCP Nông nghiệp BAF Việt Nam",
+ "nganh": "Chăn nuôi heo – thức ăn chăn nuôi (3F)",
+ "ky": "BCTC Q2/2026 · sản lượng 6T/2026 · giá heo đến 15/10/2026",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 364.8,
+ "cp_ng": "Vốn điều lệ 3.648 tỷ sau cổ tức 10% + thưởng 10% bằng cổ phiếu (chốt 22/6/2026); VNDirect 20/10: vốn hóa ÷ giá = 364,8 triệu",
+ "co_tuc": [],
+ "chia": [
+  [
+   "2026-06-19",
+   1.2
+  ]
+ ],
+ "tieu_de": {
+  "t": "Sản lượng heo tăng 61%, nhưng giá heo 50–54 nghìn/kg đã dưới điểm hòa vốn ~58 nghìn"
+ },
+ "dong_mo": "Chi phí sản xuất mỗi con đứng yên ~5,9 triệu đ qua 3 nửa năm; cộng QLDN và lãi vay, BAF cần ~58 nghìn đ/kg mới có lãi. Cơ sở (giá heo 2027 58 nghìn, 1,7 triệu con): LN 2027E 332 tỷ; P/B 1,85 × vốn chủ 30/6/2027E → {gt} ({up}), cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "~58 nghìn",
+   "nhan": "đ/kg — giá heo hòa vốn trước thuế 6T cuối 2026",
+   "tieu": "Điểm hòa vốn đã nằm trên giá heo",
+   "t": "Giá vốn + bán hàng mỗi con đứng yên ~5,9 triệu đ suốt 3 nửa năm (5,87 · 5,93 · 5,91), còn doanh thu mỗi con chạy theo giá heo (7,61 → 5,99 → 7,31 triệu). Cộng QLDN, lãi vay ~0,7 triệu đ/con, BAF cần ~58 nghìn đ/kg mới có lãi trước thuế; giá giữa tháng 10 chỉ 50–54 nghìn. 6T cuối 2025, doanh thu mỗi con 5,99 triệu, BAF lỗ 216 tỷ.",
+   "ng": "BCTC VNDirect · KIS 11/05 · BAF 6T/2026 · Báo Lào Cai · mô hình"
+  },
+  {
+   "so": "+61%",
+   "nhan": "sản lượng heo 6T/2026",
+   "tieu": "Sản lượng tăng nhanh, nợ vay tăng nhanh hơn",
+   "t": "6T/2026 bán ~532 nghìn con (+61%) nhờ M&A 16 cụm trại; kế hoạch cả năm 1,247 triệu. Nợ vay 6.237 tỷ (30/6, +57% từ đầu năm, 1,43 lần vốn chủ), lãi vay Q2 134 tỷ (+136%). QLDN + lãi vay 2027E ~1,0 nghìn tỷ là chi phí cố định: với 1,7 triệu con năm 2027, giá heo phải ~56 nghìn đ/kg mới hòa vốn trước thuế.",
+   "ng": "BAF 6T/2026 · VNDS 15/05 · BCTC Q2 · VnBusiness · mô hình"
+  },
+  {
+   "so": "142 tỷ",
+   "nhan": "LN 2026E cơ sở — kế hoạch 793 tỷ",
+   "tieu": "Kế hoạch 2026 khó đạt; 2027 do giá heo quyết định",
+   "t": "6T đạt 309 tỷ (39% kế hoạch) khi giá heo ~64 nghìn. Mô hình: Q3 23 tỷ ở giá ~59 nghìn, Q4 lỗ 191 tỷ nếu giá 53,5 nghìn → cả năm 142 tỷ (18% kế hoạch). 2027E cơ sở 332 tỷ (giá 58 nghìn, 1,7 triệu con); mỗi ±1.000 đ/kg = ±175 tỷ LN. VNDS (15/05) dự báo 744 / 1.247 tỷ khi giả định giá heo 2026 ~62 nghìn.",
+   "ng": "BCTC Q2 · ĐHĐCĐ 2026 · VNDS 15/05 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 2,6 lần vẫn định giá theo giá heo nửa đầu năm",
+   "dk": "up_duoi:-5",
+   "t": "Giá 20/10 = P/B 2,6 lần vốn chủ 30/6, P/E 4 quý 121 lần; chăn nuôi khu vực P/B trung vị 1,05 (Dabaco 1,0, CP Foods 0,7). Định giá P/B × vốn chủ 30/6/2027E: cơ sở 1,85 (phân vị 25% từ 2021; năm giá heo đáy 2023: 1,54–1,92) → {gt} ({up}), ≈ P/E 24 lần LN 2027E — đúng trung vị P/E của BAF từ 2022 (24,2); xấu 1,45 (thấp nhất, 11/2022) khi giá heo 2027 53 nghìn: 13,5; tốt 2,6 khi 63 nghìn: 38,4.",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect · VNDS 15/05 (Bloomberg)",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "P/B theo chu kỳ giá heo: {up_so} so với giá hiện tại",
+    "t": "P/B × vốn chủ 30/6/2027E: cơ sở 1,85 lần (phân vị 25% từ 2021; năm giá heo đáy 2023: 1,54–1,92); xấu 1,45 (thấp nhất, 11/2022) khi giá heo 2027 53 nghìn: 13,5; tốt 2,6 khi 63 nghìn: 38,4 nghìn đ/cp. Chăn nuôi khu vực P/B trung vị 1,05."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   127,
+   142,
+   332
+  ],
+  "ln_truoc": 317,
+  "eps": [
+   347,
+   389,
+   910
+  ],
+  "bv": [
+   11128,
+   11518,
+   12427
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Heo bán ra (nghìn con)",
+    "v": [
+     752,
+     1237,
+     1700
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     3.6,
+     3.4,
+     7.6
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS, BVPS theo 364,8 triệu cp (sau cổ tức 10% + thưởng 10% bằng cổ phiếu, GDKHQ 19/6/2026); BAF không trả cổ tức tiền mặt."
+ },
+ "ln_mang": {
+  "tieu": "Lãi sản xuất và chi phí cố định",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Lãi sản xuất (doanh thu − giá vốn − bán hàng)",
+    "mau": "c1",
+    "v": [
+     597,
+     1069,
+     1407
+    ]
+   },
+   {
+    "ten": "QLDN",
+    "mau": "c3",
+    "v": [
+     -241,
+     -316,
+     -350
+    ]
+   },
+   {
+    "ten": "Lãi vay",
+    "mau": "c2",
+    "v": [
+     -258,
+     -544,
+     -649
+    ]
+   },
+   {
+    "ten": "Tài chính, khác",
+    "mau": "c4",
+    "v": [
+     2,
+     -37,
+     -40
+    ]
+   }
+  ],
+  "ng": "QLDN + lãi vay ăn 84% lãi sản xuất 2025, 80% năm 2026E, 71% năm 2027E (cơ sở). 2025A: BCTC; 2026E = 6T thực tế + mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/B (vốn chủ 30/6/2026)",
+  "chi_so_kv": "P/B trượt 12 tháng (13/05/2026)",
+  "nhom": "Chăn nuôi – thực phẩm khu vực",
+  "kv": [
+   [
+    "CP Foods",
+    0.7
+   ],
+   [
+    "Thai Union",
+    1.1
+   ],
+   [
+    "Dabaco",
+    1.0
+   ],
+   [
+    "Masan MEATLife",
+    2.2
+   ],
+   [
+    "Tangrenshen",
+    1.1
+   ],
+   [
+    "Wellhope",
+    1.0
+   ]
+  ],
+  "tv": 1.05,
+  "moi_cp": 11976,
+  "max": 3,
+  "y": "BAF tính trên vốn chủ 30/6/2026 (11.976 đ/cp sau thưởng). ROE trượt của nhóm: trung vị 7,6%, Dabaco 17,5%; BAF 4 quý gần nhất ~2,2%.",
+  "ng": "VNDS 15/05/2026 (Bloomberg, dữ liệu 13/05)"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: số heo × (doanh thu − chi phí mỗi con)",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Mỗi con heo bán ra (triệu đồng)"
+   },
+   {
+    "ten": "Heo thịt bán ra (nghìn con)",
+    "v": [
+     752,
+     1237,
+     1700
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Giá heo hơi quy đổi (nghìn đ/kg)",
+    "v": [
+     58.7,
+     59.5,
+     58.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Doanh thu mỗi con",
+    "v": [
+     6.7,
+     6.8,
+     6.62
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Giá vốn + bán hàng mỗi con",
+    "v": [
+     5.91,
+     5.93,
+     5.8
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Lãi sản xuất mỗi con",
+    "v": [
+     0.79,
+     0.86,
+     0.83
+    ],
+    "d": 2,
+    "dam": 1
+   },
+   {
+    "ten": "QLDN + lãi vay mỗi con",
+    "v": [
+     0.66,
+     0.7,
+     0.59
+    ],
+    "d": 2
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     5038,
+     8407,
+     11261
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi sản xuất (sau bán hàng)",
+    "v": [
+     597,
+     1069,
+     1407
+    ]
+   },
+   {
+    "ten": "Chi phí QLDN",
+    "v": [
+     241,
+     316,
+     350
+    ]
+   },
+   {
+    "ten": "Chi phí lãi vay",
+    "v": [
+     258,
+     544,
+     649
+    ]
+   },
+   {
+    "ten": "LN trước thuế",
+    "v": [
+     100,
+     172,
+     369
+    ]
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     127,
+     142,
+     332
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     347,
+     389,
+     910
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     3.6,
+     3.4,
+     7.6
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "Giá vốn + bán hàng theo BCTC (BAF chuyển chi phí bán hàng sang giá vốn ở Q2, Q4) ÷ số heo bán. Doanh thu mỗi con tỷ lệ với giá heo: 7,31 triệu đ ở ~64 nghìn đ/kg (6T/2026). 2026E = 6 tháng thực tế + Q3–Q4 ước tính."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   142
+  ],
+  "cuoi": [
+   "2027E",
+   332
+  ],
+  "buoc": [
+   [
+    "Sản lượng +463 nghìn con",
+    400
+   ],
+   [
+    "Giá heo 59,5 → 58 nghìn",
+    -292
+   ],
+   [
+    "Chi phí mỗi con",
+    230
+   ],
+   [
+    "QLDN",
+    -34
+   ],
+   [
+    "Lãi vay",
+    -104
+   ],
+   [
+    "Thuế, khác",
+    -10
+   ]
+  ],
+  "y": "Thêm ~463 nghìn con và chi phí mỗi con −2% bù giá heo thấp hơn 1,5 nghìn đ/kg; lãi vay thêm 104 tỷ. LN 2027E 332 tỷ vẫn chỉ bằng 42% kế hoạch lãi 2026.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Giá heo hơi Q4/2026 (nghìn đ/kg)",
+   "v": [
+    "51",
+    "53,5",
+    "56,5"
+   ],
+   "ly_do": "Giữa 10/2026 cả nước 50–54 nghìn (tháng 7: 61–66; tháng 8: 55–62; 10/9 cao nhất 60); giá thường hồi từ tháng 12 trước Tết (6/2/2027)"
+  },
+  {
+   "ten": "Giá heo hơi bình quân 2027 (nghìn đ/kg)",
+   "v": [
+    "53",
+    "58",
+    "63"
+   ],
+   "ly_do": "Cơ sở ≈ bình quân 2025–2026 (2025 ~59, 6T/2026 ~64, Q3 ~59, tháng 10 ~52); BAF (theo BSC): cân bằng dài hạn ~55 nghìn khi đàn nái đạt 2,4 triệu"
+  },
+  {
+   "ten": "Heo bán ra 2026 (nghìn con)",
+   "v": [
+    "1.187",
+    "1.237",
+    "1.277"
+   ],
+   "ly_do": "6T ~532 nghìn (+61%); kế hoạch 1.247; 16 cụm trại M&A (+724 nghìn heo thịt công suất) chạy từ Q2, tăng tốc nửa cuối năm (VNDS)"
+  },
+  {
+   "ten": "Heo bán ra 2027 (triệu con)",
+   "v": [
+    "1,45",
+    "1,7",
+    "1,9"
+   ],
+   "ly_do": "Nái 120 nghìn (BSC, cơ sở) – 145 nghìn (ĐHĐCĐ) cuối 2026; Giai Xuân ra heo thịt Q3–Q4/2027; Tây Ninh từ 2028 (VNDS); VNDS 2027 ~+50%"
+  },
+  {
+   "ten": "Giá vốn + bán hàng mỗi con 2027 so với 6T/2026",
+   "v": [
+    "+2%",
+    "−2%",
+    "−5%"
+   ],
+   "ly_do": "6T/2026 5,91 triệu đ, ổn định 3 nửa năm; quy mô, TACN Tân Long rẻ hơn thị trường 10–15%; mục tiêu giá thành 35–38 nghìn đ/kg (BSC)"
+  },
+  {
+   "ten": "Giá vốn + bán hàng mỗi con 6T cuối 2026",
+   "v": [
+    "+2%",
+    "+0,5%",
+    "−1%"
+   ],
+   "ly_do": "Q2: giá vốn +70% khi doanh thu +54% — trại mới chưa tối ưu, tăng chi phí phòng ASF, tái đàn; TACN tăng từ 3/2026 (KIS)"
+  },
+  {
+   "ten": "Lãi vay 2027 (tỷ)",
+   "v": [
+    "737",
+    "649",
+    "592"
+   ],
+   "ly_do": "Nợ 6.237 tỷ (30/6), lãi suất ~9,5%/năm (Q2: 134 tỷ); trái phiếu 10%; nợ bình quân 2027 7,6 · 6,9 · 6,5 nghìn tỷ"
+  },
+  {
+   "ten": "P/B trên vốn chủ 30/6/2027E",
+   "v": [
+    "1,45",
+    "1,85",
+    "2,6"
+   ],
+   "ly_do": "1,45 = thấp nhất từ 2021 (11/2022); 1,85 = phân vị 25% (2023: 1,54–1,92); 2,6 ≈ 2025–2026; chăn nuôi khu vực 1,05"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": -95,
+   "ln27": -1128,
+   "gia": 13.5,
+   "mo_ta": "Giá heo Q4 51, 2027 53 nghìn đ/kg; 1,45 triệu con, chi phí mỗi con +2%: lỗ 1.128 tỷ năm 2027; P/B 1,45"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 142,
+   "ln27": 332,
+   "gia": 22.2,
+   "mo_ta": "Giá heo Q4 53,5, 2027 58 nghìn đ/kg; 1,7 triệu con, chi phí mỗi con −2%; P/B 1,85"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 413,
+   "ln27": 1830,
+   "gia": 38.4,
+   "mo_ta": "Giá heo Q4 56,5, 2027 63 nghìn đ/kg (≈ 6T/2026); 1,9 triệu con, chi phí −5%; P/B 2,6"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ 30/6/2027E; P/B theo giá heo",
+  "ck": 0,
+  "cp": 364.8,
+  "phan": [
+   {
+    "ten": "Vốn chủ 30/6/2027E",
+    "mau": "c1",
+    "x": [
+     3400,
+     4368,
+     5387
+    ],
+    "boi": [
+     1.45,
+     1.85,
+     2.6
+    ],
+    "x_ten": "vốn chủ 30/6/2026 + LN 12 tháng",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     4930,
+     8081,
+     14006
+    ]
+   }
+  ],
+  "von": [
+   4930,
+   8081,
+   14006
+  ],
+  "gia": [
+   13.5,
+   22.2,
+   38.4
+  ]
+ },
+ "nhay": [
+  [
+   "P/B ±0,2 lần",
+   null,
+   2.4
+  ],
+  [
+   "Giá heo 2027 ±2.000 đ/kg",
+   350,
+   0.9
+  ],
+  [
+   "Chi phí sản xuất mỗi con 2027 ±2%",
+   181,
+   0.5
+  ],
+  [
+   "Giá heo Q4/2026 ±2.000 đ/kg",
+   85,
+   0.4
+  ],
+  [
+   "Sản lượng 2027 ±100 nghìn con",
+   74,
+   0.2
+  ],
+  [
+   "Lãi suất vay 2027 ±1 điểm %",
+   62,
+   0.2
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   2.34,
+   3.06,
+   3.07,
+   3.34,
+   3.13,
+   3.3,
+   3.1,
+   3.12,
+   2.7,
+   2.05,
+   2.57,
+   1.45,
+   1.52,
+   1.54,
+   1.65,
+   1.65,
+   1.68,
+   1.83,
+   1.74,
+   1.8,
+   1.56,
+   1.68,
+   1.73,
+   1.89,
+   1.92,
+   1.85,
+   2.04,
+   2.16,
+   2.15,
+   2.3,
+   1.97,
+   1.84,
+   1.49,
+   1.76,
+   1.88,
+   2.1,
+   2.38,
+   2.34,
+   2.7,
+   2.6,
+   2.8,
+   2.78,
+   2.75,
+   2.7,
+   2.48,
+   2.47,
+   2.28,
+   2.23,
+   2.65,
+   2.54,
+   2.82,
+   2.61,
+   2.7,
+   2.47,
+   2.54,
+   2.54,
+   2.72,
+   2.63,
+   2.59
+  ],
+  "p10": 1.65,
+  "p25": 1.85,
+  "tv": 2.34,
+  "thap": [
+   "2022-11",
+   1.45
+  ],
+  "nay": [
+   "2026-10",
+   2.59
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 1,45 · 1,85 · 2,6 trên vốn chủ 30/6/2027E: từ mức thấp nhất (11/2022) qua phân vị 25% (vùng năm giá heo đáy 2023) đến mức 2025–2026; giá 20/10 ứng với 2,58."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 2257,
+   "ln": [
+    -68,
+    23,
+    105
+   ],
+   "ck": 21
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 2261,
+   "ln": [
+    -337,
+    -191,
+    -2
+   ],
+   "ck": -237
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    -95,
+    142,
+    413
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Giá heo Q3 ~59 nghìn (6T: ~64), lãi vay ~150 tỷ/quý: mô hình cơ sở LN 23 tỷ (Q3/2025: 21 tỷ). Doanh thu mỗi con và giá vốn mỗi con là hai số cần xem.",
+   "tac": [
+    "LN Q3 ≥ 100 tỷ",
+    "nghiêng về kịch bản tốt; lỗ thì nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "doanh thu mỗi con, giá vốn mỗi con"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Giá heo về 50–54 nghìn đ/kg",
+   "ct": "Giữa tháng 10 cả nước 50–54 nghìn, dưới điểm hòa vốn ~58 nghìn. Cơ sở lỗ Q4 191 tỷ; 6T cuối 2025, doanh thu mỗi con chỉ 5,99 triệu, BAF lỗ 216 tỷ.",
+   "tac": [
+    "±85 tỷ LN",
+    "mỗi ±2.000 đ/kg giá heo Q4/2026"
+   ],
+   "theo_doi": "giá heo hơi hằng tuần"
+  },
+  {
+   "khi": "Q1/2027",
+   "loai": "len",
+   "tieu": "Mùa Tết, đàn nái cả nước còn thiếu",
+   "ct": "Tết 6/2/2027; đàn nái ~2,0 triệu con (Q2/2026) so với nhu cầu 2,4–2,6 triệu (BAF, theo BSC); tái đàn 10–12 tháng mới ra heo thịt.",
+   "tac": [
+    "±175 tỷ LN",
+    "mỗi ±1.000 đ/kg giá heo bình quân 2027"
+   ],
+   "theo_doi": "giá heo tháng 12–1"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Sản lượng 2026E +64%, 2027E +37%",
+   "ct": "M&A 16 cụm trại (+724 nghìn heo thịt, +39.700 nái công suất); kế hoạch 1,247 triệu con 2026, 6T đạt ~532 nghìn (+61%); nái mục tiêu 145 nghìn.",
+   "tac": [
+    "±74 tỷ LN",
+    "mỗi ±100 nghìn con 2027 (giá heo cơ sở)"
+   ],
+   "theo_doi": "số heo bán mỗi quý"
+  },
+  {
+   "khi": "Q3–Q4/2027",
+   "loai": "len",
+   "tieu": "Giai Xuân (Nghệ An) ra heo thịt",
+   "ct": "5.000 nái, ~900 tỷ, công nghệ Muyuan; nhập nái từ 7/2026, 140–150 nghìn heo thịt/năm (850–900 tỷ doanh thu); mục tiêu giá thành 35–38 nghìn đ/kg.",
+   "tac": [
+    "+140–150 nghìn con/năm",
+    "khi đủ công suất, ≈ 9% sản lượng 2027E"
+   ],
+   "theo_doi": "tiến độ nhập nái, giá thành"
+  },
+  {
+   "khi": "2028+",
+   "loai": "hai",
+   "tieu": "Chung cư heo Tây Ninh",
+   "ct": "64.000 nái, 1,6 triệu heo/năm, ~12.000 tỷ; khởi công Q3–Q4/2026, chạy từng phần sau 12–15 tháng (BSC) — tăng trưởng lớn nhưng thêm nợ vay.",
+   "tac": [
+    "~12.000 tỷ",
+    "vốn đầu tư ≈ 2,7 lần vốn chủ 30/6/2026"
+   ],
+   "theo_doi": "tiến độ, cơ cấu vốn"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Đòn bẩy và lãi vay",
+   "ct": "Nợ vay 6.237 tỷ (1,43 lần vốn chủ), lãi vay Q2 134 tỷ (+136%); trái phiếu 1.000 tỷ lãi cố định 10%/năm.",
+   "tac": [
+    "±62 tỷ LN",
+    "mỗi ±1 điểm % lãi suất vay 2027"
+   ],
+   "theo_doi": "nợ vay ròng, lãi suất"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dịch tả heo châu Phi, lở mồm long móng",
+   "ct": "2025: hơn 1,2 triệu con bị tiêu hủy (~3,8% tổng đàn); 2026 có lở mồm long móng mùa hè lần đầu, mùa mưa Q3 làm dịch khó kiểm soát (BSC).",
+   "tac": [
+    "−74 tỷ LN",
+    "mỗi 100 nghìn con mất đi năm 2027"
+   ],
+   "theo_doi": "ổ dịch, tỷ lệ chết"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Pha loãng: trái phiếu chuyển đổi, ESOP",
+   "ct": "Phương án trái phiếu chuyển đổi 1.200 tỷ (36 tháng, 10%/năm; giá chuyển đổi chưa công bố) dự kiến Q3–Q4/2026, kèm 8 triệu cp ESOP.",
+   "tac": [
+    "8 triệu cp ESOP",
+    "≈ 2,2% số cp hiện tại; chưa gồm phần chuyển đổi trái phiếu"
+   ],
+   "theo_doi": "nghị quyết HĐQT, giá chuyển đổi"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Giá thức ăn chăn nuôi",
+   "ct": "Ngô, khô đậu tương Q1/2026 +7,4% / +4% so với cùng kỳ, cước vận chuyển nguyên liệu nhập khẩu tăng (Trung Đông); KIS: TACN tăng nhanh từ 3/2026.",
+   "tac": [
+    "±181 tỷ LN",
+    "mỗi ±2% chi phí sản xuất mỗi con 2027"
+   ],
+   "theo_doi": "giá ngô, khô đậu tương"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Xung đột Trung Đông (eo Hormuz) đẩy giá ngô, khô đậu tương Q1/2026 lên 7,4% và 4% so với cùng kỳ, cước vận chuyển nguyên liệu nhập khẩu tăng.",
+     "ng": "VNDS 15/05 · KIS 11/05"
+    },
+    {
+     "h": -1,
+     "t": "Chi phí vốn cao: BAF trả ~9,5%/năm trên dư nợ (lãi vay Q2 134 tỷ), trái phiếu lãi cố định 10%.",
+     "ng": "BCTC Q2 · Báo Pháp luật"
+    },
+    {
+     "h": 1,
+     "t": "Thu nhập, dân số, du lịch tăng giữ nhu cầu thịt heo tăng đều; USDA dự báo tiêu thụ thịt heo Việt Nam 2026 +3%.",
+     "ng": "BSC 18/06 · VNDS 15/05"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "Giá heo hơi từ 61–66 nghìn (tháng 7/2026) xuống 50–54 nghìn đ/kg (giữa tháng 10).",
+     "ng": "Báo Lào Cai 10/07, 15/10/2026"
+    },
+    {
+     "h": 1,
+     "t": "Đàn nái cả nước ~1,9 triệu cuối 2025, ~2,0 triệu Q2/2026 so với nhu cầu 2,4–2,6 triệu; một con nái cần 10–12 tháng mới ra heo thịt.",
+     "ng": "BSC 18/06 (theo BAF)"
+    },
+    {
+     "h": 1,
+     "t": "Chăn nuôi nông hộ giảm từ 80–90% (2016–2018) còn ~50%, dự kiến 25–30% năm 2030 — phần thị trường chuyển về doanh nghiệp quy mô lớn.",
+     "ng": "BSC 18/06"
+    },
+    {
+     "h": -1,
+     "t": "Dịch bệnh: 2025 hơn 1,2 triệu con bị tiêu hủy; 2026 xuất hiện lở mồm long móng mùa hè; cấp phép trại mới mất 6–12 tháng.",
+     "ng": "VNDS 15/05 · BSC 18/06"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Hệ sinh thái Tân Long (nhập khẩu nguyên liệu TACN hàng đầu): chi phí TACN thấp hơn đối thủ 10–15% theo ban lãnh đạo.",
+     "ng": "VNDS 15/05"
+    },
+    {
+     "h": 0,
+     "t": "Từ 2025 chuyển hẳn sang 3F (99,9% doanh thu); thịt mát Anfarm, mục tiêu 2.000 điểm bán năm 2026 (từ 800).",
+     "ng": "VNDS 15/05"
+    },
+    {
+     "h": -1,
+     "t": "Mở rộng bằng vốn vay: nợ vay gấp 3,3 lần trong 8 quý; Tây Ninh ~12.000 tỷ, Giai Xuân ~900 tỷ; trình phương án trái phiếu chuyển đổi 1.200 tỷ.",
+     "ng": "BCTC VNDirect · BSC 18/06 · Vietbao"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Chăn nuôi heo (Farm)",
+   "phu": "Tổng đàn ~900 nghìn con (6/2026); mục tiêu 145 nghìn nái, 1,247 triệu heo thịt bán ra năm 2026",
+   "so": [
+    [
+     "Heo bán 6T/2026",
+     "~532 nghìn con",
+     "+61%"
+    ],
+    [
+     "Giá bán bình quân Q1/2026",
+     "69.900 đ/kg",
+     "+5% (KIS)"
+    ],
+    [
+     "Giá bán Q2/2026",
+     "63–65 nghìn đ/kg",
+     "cùng kỳ 65–70"
+    ],
+    [
+     "Doanh thu mỗi con 6T/2026",
+     "7,31 triệu đ",
+     "6T cuối 2025: 5,99"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Quý 1 bán ~240 nghìn con (+50%) nhờ M&A trang trại; 16 cụm trại mua thêm chạy từ Q2 và tăng tốc nửa cuối năm.",
+     "ng": "KIS 11/05 · VNDS 15/05"
+    },
+    {
+     "t": "Q2: giá vốn +70% trong khi doanh thu +54% — trại mới chưa tối ưu, tăng ngân sách phòng ASF và tái đàn.",
+     "ng": "CafeF 03/08 · Diễn đàn Doanh nghiệp"
+    }
+   ]
+  },
+  {
+   "ten": "Thức ăn chăn nuôi (Feed), thực phẩm (Food)",
+   "phu": "3 nhà máy TACN; thịt mát thương hiệu Anfarm",
+   "so": [
+    [
+     "Chi phí TACN so với đối thủ",
+     "thấp hơn 10–15%",
+     "nhờ Tân Long"
+    ],
+    [
+     "Ngô / khô đậu tương Q1/2026",
+     "+7,4% / +4%",
+     "so với cùng kỳ"
+    ],
+    [
+     "Điểm bán Anfarm",
+     "800 → 2.000",
+     "mục tiêu 2026"
+    ]
+   ],
+   "y": [
+    {
+     "t": "KIS: biên gộp Q1/2026 25,6% (−0,2 điểm %) dù giá bán +5% vì cước vận chuyển nguyên liệu nhập khẩu tăng.",
+     "ng": "KIS 11/05"
+    }
+   ]
+  },
+  {
+   "ten": "Dự án mới",
+   "phu": "Giai Xuân (Nghệ An), chung cư heo 6 tầng Tây Ninh",
+   "so": [
+    [
+     "Giai Xuân",
+     "5.000 nái",
+     "~900 tỷ; 140–150 nghìn heo/năm"
+    ],
+    [
+     "Tây Ninh 6 tầng",
+     "64.000 nái",
+     "~12.000 tỷ; 1,6 triệu heo/năm"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Giai Xuân nhập nái từ 7/2026, heo thịt ra Q3–Q4/2027; suất đầu tư gấp 1,7–2 lần mô hình cũ.",
+     "ng": "BSC 18/06"
+    },
+    {
+     "t": "Tây Ninh khởi công Q3–Q4/2026, vận hành từng phần sau 12–15 tháng, đủ công suất sau 2 năm; VNDS chỉ tính đóng góp từ 2028.",
+     "ng": "BSC 18/06 · VNDS 15/05"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Heo thịt bán ra theo quý",
+   "kieu": "cot",
+   "dv": "nghìn con",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Heo bán ra",
+     "v": [
+      160,
+      170,
+      188,
+      234,
+      240,
+      292
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "6T/2026 bán ~532 nghìn con (+61%); kế hoạch 1,247 triệu cả năm cần ~715 nghìn con trong nửa cuối năm.",
+   "ng": "KIS 11/05 (Q1/25–Q1/26) · BAF 6T/2026 (Q2/26 = 532 − 240)"
+  },
+  {
+   "ten": "Mỗi con heo: doanh thu và giá vốn + bán hàng",
+   "kieu": "cot",
+   "dv": "triệu đồng",
+   "nhan": [
+    "6T/25",
+    "6T cuối 25",
+    "6T/26"
+   ],
+   "ss": [
+    {
+     "ten": "Doanh thu mỗi con",
+     "v": [
+      7.61,
+      5.99,
+      7.31
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Giá vốn + bán hàng mỗi con",
+     "v": [
+      5.87,
+      5.93,
+      5.91
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 2,
+   "y": "Chi phí mỗi con đứng yên ~5,9 triệu đ; doanh thu mỗi con theo giá heo — 6T cuối 2025 chênh lệch gần bằng 0.",
+   "ng": "BCTC VNDirect · KIS 11/05 · BAF 6T/2026"
+  },
+  {
+   "ten": "LN hoạt động và lãi vay theo quý",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN hoạt động (gộp − BH − QLDN)",
+     "v": [
+      202,
+      267,
+      86,
+      -199,
+      314,
+      274
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chi phí lãi vay",
+     "v": [
+      62,
+      57,
+      60,
+      79,
+      100,
+      134
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi vay Q2/2026 134 tỷ, gấp 2,4 lần cùng kỳ; Q4/2025 giá heo thấp kéo LN hoạt động âm 199 tỷ.",
+   "ng": "BCTC BAF (VNDirect)"
+  },
+  {
+   "ten": "Nợ vay và vốn chủ",
+   "kieu": "duong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      1867,
+      2104,
+      2210,
+      2583,
+      3013,
+      3977,
+      5040,
+      6237
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Vốn chủ",
+     "v": [
+      2823,
+      2926,
+      3059,
+      4275,
+      4296,
+      4060,
+      4266,
+      4369
+     ],
+     "mau": "c4",
+     "net": false
+    }
+   ],
+   "so_le": 0,
+   "y": "Nợ vay gấp 3,3 lần trong 8 quý, vượt vốn chủ từ Q1/2026 (1,43 lần ở 30/6).",
+   "ng": "BCTC BAF (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 8431,
+    "th": 3889,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 793,
+    "th": 310,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+   },
+   {
+    "ten": "Heo thịt bán ra",
+    "kh": 1247,
+    "th": 532,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "nghìn con",
+    "ng": "ĐHĐCĐ 2026 · BAF 6T/2026"
+   }
+  ],
+  "y": "6 tháng đạt 46% doanh thu, 39% lãi và 43% sản lượng kế hoạch khi giá heo ~64 nghìn. Mô hình cơ sở cả năm 8.407 tỷ doanh thu, 142 tỷ LN (18% kế hoạch) vì giá heo Q4 về 50–54 nghìn.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "BSC",
+   "ngay": "2026-06-18",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "tiêu điểm sự kiện (tham quan trại)",
+   "y": "Tham quan Giai Xuân (Nghệ An): 5.000 nái, ~900 tỷ, công nghệ Muyuan; heo thịt ra từ Q3–Q4/2027. BAF đặt mục tiêu giá thành 35–38 nghìn đ/kg (ngành 45–48 nghìn ở 6T/2026) và kỳ vọng giá heo còn tốt trong 2026.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BAF/To_hop_chan_nuoi_Giai_Xuan_cong_nghe_dan_dat_tang_truong.pdf"
+  },
+  {
+   "ctck": "VNDS",
+   "ngay": "2026-05-15",
+   "kn": "TRUNG LẬP",
+   "tp": 40100,
+   "tp_sau_chia": 1,
+   "ln26": 744,
+   "ln27": 1247,
+   "pp": "FCFF + EV/EBITDA 14,5 lần (50/50)",
+   "y": "Hạ từ Khả quan: giá heo 2026 ~62.000 đ/kg (+5,5%), ~1,2 triệu con (+54%), biên gộp 20,1%; Tây Ninh tính từ 2028. Bảng định giá chia cho 364,8 triệu cp (sau thưởng) nhưng tiềm năng 13,1% so với giá trước thưởng — trang quy đổi theo giá trước thưởng.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BAF/Ghi_nhan_loi_nhuan_tang_truong_sau_tai_cau_truc.pdf"
+  },
+  {
+   "ctck": "KIS",
+   "ngay": "2026-05-11",
+   "kn": "KHÔNG XẾP HẠNG",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "tin vắn KQKD Q1/2026",
+   "y": "Q1/2026: giá bán bình quân 69.900 đ/kg (+5%), ~240 nghìn con (+50%), biên gộp 25,6%. Cảnh báo Q2 khó hơn: nền giá cao, TACN tăng từ tháng 3, lãi vay 120–135 tỷ (thực tế 134).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BAF/baf_tin_van_khong_xep_hang_lnst_1q26_tang_truong_nhung_cac_chi_phi_cung_tang_nhanh.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Cổ tức 10% và thưởng 10% bằng cổ phiếu (GDKHQ 19/6/2026) sau ngày báo cáo của KIS và VNDS nên giá mục tiêu VNDS được chia cho 1,2.",
+ "nguon": [
+  {
+   "ten": "BSC — Tổ hợp chăn nuôi Giai Xuân công nghệ dẫn dắt tăng trưởng",
+   "ngay": "18/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BAF/To_hop_chan_nuoi_Giai_Xuan_cong_nghe_dan_dat_tang_truong.pdf"
+  },
+  {
+   "ten": "VNDS — Ghi nhận lợi nhuận tăng trưởng sau tái cấu trúc",
+   "ngay": "15/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BAF/Ghi_nhan_loi_nhuan_tang_truong_sau_tai_cau_truc.pdf"
+  },
+  {
+   "ten": "KIS — LNST 1Q26 tăng trưởng nhưng các chi phí cũng tăng nhanh",
+   "ngay": "11/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BAF/baf_tin_van_khong_xep_hang_lnst_1q26_tang_truong_nhung_cac_chi_phi_cung_tang_nhanh.pdf"
+  },
+  {
+   "ten": "Báo Pháp luật — BAF dự chi cổ tức tổng tỷ lệ 20%, mục tiêu lãi kỷ lục 2026",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/nong-nghiep-baf-viet-nam-baf-du-chi-co-tuc-voi-tong-ty-le-20-dat-muc-tieu-lai-ky-luc-nam-2026.html"
+  },
+  {
+   "ten": "VietnamFinance — Kế hoạch 2026: doanh thu 8.431 tỷ, LNST 793 tỷ, 145 nghìn nái",
+   "ngay": "04/2026",
+   "link": "https://vietnamfinance.vn/co-phieu-baf-giao-dich-tram-lang-du-loi-nhuan-du-kien-tang-manh-d144933.html"
+  },
+  {
+   "ten": "Báo Đấu thầu — BAF chốt quyền nhận cổ phiếu thưởng và cổ tức tổng tỷ lệ 20%",
+   "ngay": "06/2026",
+   "link": "https://baodauthau.vn/baf-chot-quyen-nhan-co-phieu-thuong-va-co-tuc-tong-ty-le-20-post200246.html"
+  },
+  {
+   "ten": "Doanh nghiệp Hội nhập — BAF chia cổ tức, thưởng cổ phiếu 20%, tăng vốn lên 3.648 tỷ",
+   "ngay": "26/07/2026",
+   "link": "https://doanhnghiephoinhap.vn/baf-viet-nam-chia-co-tuc-thuong-co-phieu-20-tang-von-len-3648-ty-139425.html"
+  },
+  {
+   "ten": "CafeF — BAF 6 tháng 2026: sản lượng heo +61%",
+   "ngay": "31/07/2026",
+   "link": "https://cafef.vn/baf-6-thang-dau-nam-2026-tang-61-san-luong-heo-so-voi-cung-ky-nam-truoc-day-manh-dau-tu-cho-chu-ky-tang-truong-moi-188260731093241592.chn"
+  },
+  {
+   "ten": "CafeF — Doanh thu bứt phá, lãi ròng Q2/2026 giảm 50%",
+   "ngay": "03/08/2026",
+   "link": "https://cafef.vn/doanh-thu-but-pha-baf-viet-nam-van-bao-lai-rong-quy-ii-2026-boc-hoi-50-188260803152012487.chn"
+  },
+  {
+   "ten": "Diễn đàn Doanh nghiệp — BAF xoay xở huy động vốn (trại mới, chi phí phòng ASF)",
+   "ngay": "08/2026",
+   "link": "https://diendandoanhnghiep.vn/baf-xoay-xo-huy-dong-von-10183030.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Q2/2026: doanh thu +54%, lợi nhuận giảm một nửa",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/baf-viet-nam-baf-doanh-thu-tang-hon-54-nhung-loi-nhuan-quy-ii-giam-mot-nua-do-chi-phi-tai-chinh-va-mo-rong-trang-trai.html"
+  },
+  {
+   "ten": "VnBusiness — nợ vay 6.237 tỷ, lãi vay Q2 +136%",
+   "ngay": "08/2026",
+   "link": "https://vnbusiness.vn/baf-them-lanh-dao-moi-lap-cong-ty-100-ty-khi-ap-luc-no-vay-va-dinh-gia-cao.html"
+  },
+  {
+   "ten": "Báo Pháp luật — BAF huy động 1.000 tỷ trái phiếu",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/baf-viet-nam-baf-hut-thanh-cong-1-000-ty-dong-trai-phieu-ap-luc-no-vay-gia-tang-dong-tien-kinh-doanh-am-ky-luc.html"
+  },
+  {
+   "ten": "Vietbao — BAF chuẩn bị huy động 1.200 tỷ (trái phiếu chuyển đổi)",
+   "ngay": "06/2026",
+   "link": "https://vietbao.vn/baf-chot-quyen-phat-hanh-co-phieu-ti-le-20-chuan-bi-huy-dong-them-1200-ty-dong-594437.html"
+  },
+  {
+   "ten": "Báo Lào Cai — Giá lợn hơi 10/7/2026: miền Bắc giữ đỉnh 66.000 đ/kg",
+   "ngay": "10/07/2026",
+   "link": "https://baolaocai.vn/gia-lon-hoi-hom-nay-1072026-mien-bac-giu-dinh-66000-dongkg-post903578.html"
+  },
+  {
+   "ten": "Báo Lào Cai — Giá lợn hơi 31/8/2026",
+   "ngay": "31/08/2026",
+   "link": "https://baolaocai.vn/gia-lon-hoi-hom-nay-318-chi-con-3-dia-phuong-dat-60000-dongkg-post907332.html"
+  },
+  {
+   "ten": "Báo Lào Cai — Giá lợn hơi 15/10/2026: thấp nhất 50.000 đ/kg",
+   "ngay": "15/10/2026",
+   "link": "https://baolaocai.vn/gia-lon-hoi-hom-nay-15102026-thap-nhat-50000-dongkg-post911971.html"
+  }
+ ]
+}
