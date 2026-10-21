@@ -378,6 +378,12 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   khi mã không có bản nào trong 240 ngày. Gói số liệu có bảng **cùng ngành** (`goi-so.py`), tài liệu đọc bản gọn (`gon.py`, ~45% ký tự).
   HUONG-DAN mục "Mã ít hoặc không có báo cáo CTCK": BCTC + công bố (ĐHĐCĐ 2026, Q3/2026) + hồ sơ/báo cáo của mã cùng ngành; định giá neo lịch sử chính mã
   + trung vị cùng ngành; `ctck: []` thì chân trang tự ghi "chưa có báo cáo CTCK trong 8 tháng — mô hình tự dựng".
+  **Đồng bộ mẹ–con (21/10):** `mo-hinh/<mẹ>.py` đọc thẳng `hoso/<con>.json` (LN 2026E/2027E từng kịch bản, P/E = giá trị vốn ÷ LN 2027E, số cp):
+  FPT←FRT, VSC←HAH (21,9% sau ESOP), VIC←VRE, VPL←VIC (giá trị cơ sở), MSN←MCH; GEX←GEE (GEL, VGC: chờ đồng bộ GEL←VGC rồi GEX←GEL).
+  Làm con trước, mẹ sau; làm lại con thì chạy lại mẹ. Kiểm chéo: so `sotp.con[].ln26/ln27/cp_trieu` với `kich_ban` của hồ sơ con.
+  Mã mới niêm yết chỉ 1 năm BCTC (GEL) vẫn vẽ hồ sơ (phantich.js `ptMo`, không ghi cache). Bộ chụp scratchpad `dg/`: `ky.json` thêm mã thiếu từ
+  `/tmp/cbd` (co-ban-data), `dg-test.js` có `SEL=<css>` (chụp phần tử) và `EVAL=<biểu thức>`. Quy trình giao việc: `research/ho-so/GIAO-VIEC.md`
+  (mục "Bài học"), tác tử dừng vì giới hạn phiên thì `SendMessage` cho chạy tiếp sau giờ mở lại.
 
 ## Số hiệu suất B★ tính ở đâu
 
