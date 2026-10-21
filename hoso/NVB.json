@@ -1,0 +1,1464 @@
+{
+ "v": 2,
+ "ma": "NVB",
+ "ten": "Ngân hàng TMCP Quốc Dân (NCB)",
+ "nganh": "Ngân hàng",
+ "ky": "BCTC Q2/2026 · công bố đến 10/2026 · giá 20/10/2026",
+ "cap_nhat": "2026-10-21",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 2928.0,
+ "cp_ng": "vốn điều lệ 29.280 tỷ ÷ 10.000 đ: 1.928 triệu cp (BCTC Q2/2026) + 1 tỷ cp chào bán riêng lẻ (kết thúc 26/6/2026, 10.000 đ/cp); khớp vốn hóa VNDirect. Chưa gồm đợt 3,3 tỷ cp dự kiến Q1–Q3/2027",
+ "vc_them": 10000,
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Vốn mới làm NCB lớn nhanh, nhưng lợi nhuận đến 2027 vẫn trả cho tái cơ cấu: giá đã đi trước",
+  "dk": "up_duoi:-15",
+  "khac": "Vốn mới làm NCB lớn nhanh, nhưng lợi nhuận đến 2027 vẫn trả cho tái cơ cấu"
+ },
+ "dong_mo": "Lãi trước PACCL 2025 947 tỷ dùng hết cho xử lý tồn đọng; 2026 cam kết như vậy dù 6T lãi 727 tỷ (+57%). Ở 13,5 (20/10), P/B 1,63 trên vốn chủ đã gồm 10.000 tỷ mới, ~19 lần LN trước PACCL 2027E. P/B 1,0 × vốn chủ 30/6/2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "947 tỷ",
+   "nhan": "lãi trước PACCL 2025 — giữ lại ≈ 0",
+   "tieu": "Có lãi thật, nhưng chưa về cổ đông",
+   "t": "9T/2025 lãi 652 tỷ, Q4 lỗ 652 tỷ (thoái lãi dự thu, trích lập theo PACCL): cả năm ≈ 0. ĐHĐCĐ 2/4/2026 cam kết dùng toàn bộ lợi nhuận cho PACCL; 6T/2026 lãi 727 tỷ nên cơ sở lặp lại: LN cổ đông 2026E ≈ 0, 2027E giữ một nửa (1.055 tỷ). Lỗ lũy kế ~4.960 tỷ: vốn chủ = 83% vốn điều lệ, cổ phiếu còn diện cảnh báo.",
+   "ng": "BCTC · VietnamFinance 1/2026 · ĐHĐCĐ 2/4/2026 · mô hình"
+  },
+  {
+   "so": "+37%",
+   "nhan": "dư nợ 6T/2026 (tiền gửi +13,5%)",
+   "tieu": "Lớn nhanh bằng vốn mới, biên lãi mới bắt đầu hồi",
+   "t": "Dư nợ 97,5 → 133,5 nghìn tỷ trong 6 tháng, vượt kế hoạch cả năm (131,7); dư nợ/tiền gửi khách hàng 77% → 92%. Lãi thuần 6T +45%, LN trước dự phòng +76%, CIR 58,6% (9T/2025) → 46,6%. Lãi thuần/tổng tài sản Q2 2,22%; cơ sở 2,25% nửa cuối nhờ 10.000 tỷ vốn chủ không trả lãi, 2,30% năm 2027.",
+   "ng": "BCTC · ĐHĐCĐ 2/4/2026 · mô hình"
+  },
+  {
+   "so": "~9%",
+   "nhan": "ROE trước PACCL 2027E (2025: 12%)",
+   "tieu": "Vốn tăng nhanh hơn lợi nhuận",
+   "t": "Ba đợt phát hành ở mệnh giá 10.000 đ từ 12/2024 nâng vốn điều lệ 5.602 → 29.280 tỷ; 3,3 tỷ cp nữa (Q1–Q3/2027, NHNN đã chấp thuận) đưa lên 62.280 tỷ. ROE trước PACCL 12,1% (2025) → 9,1% (2026E) → 8,8% (2027E). Với vốn chủ ~57 nghìn tỷ sau đợt mới, ROE 12% cần LN ~6.900 tỷ — gấp 3,2 lần LN trước PACCL 2027E.",
+   "ng": "BCTC · The Leader 18/8 · Mekong ASEAN 2026 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Giá đã trả cho kịch bản tốt",
+   "dk": "up_duoi:-15",
+   "t": "P/B 1,63 (20/10) cao hơn trung vị 12 ngân hàng lớn (1,34; ROE 17,8%) dù ROE 4 quý chỉ 2,2%; giá bằng ~19 lần LN trước PACCL 2027E, gấp 2,2 lần P/E trung vị (8,4). Theo (ROE − 7%) ÷ (12,5% − 7%), giá ngầm định ROE dài hạn ~16%. Cơ sở P/B 1,0 ≈ trung vị lịch sử (0,96); xấu 0,7; tốt 1,7 = mức đang trả.",
+   "ng": "mô hình · P/B lịch sử, cùng ngành: BCTC VNDirect",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "P/B 1,0 × vốn chủ giữa 2027: {up_so}",
+    "t": "Giá đã về gần giá trị cơ sở: P/B 1,0 ≈ trung vị lịch sử (0,96) × vốn chủ 30/6/2027E cho {gt} ({up}). Phần còn lại phụ thuộc thời điểm xong PACCL và biên lãi: mỗi 10 điểm cơ bản lãi thuần/tổng tài sản 2027 ≈ ±1,2 nghìn đ/cp. Xấu 5,6 (P/B 0,7), tốt 14,9 (P/B 1,7)."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   0,
+   0,
+   1055
+  ],
+  "ln_truoc": -5129,
+  "eps": [
+   0,
+   0,
+   360
+  ],
+  "bv": [
+   7050,
+   8058,
+   8418
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "LN trước PACCL (tỷ)",
+    "v": [
+     947,
+     1633,
+     2111
+    ],
+    "d": 0
+   },
+   {
+    "ten": "ROE trước PACCL (%)",
+    "v": [
+     12.1,
+     9.1,
+     8.8
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2025A: BCTC (LN ≈ 0 sau PACCL; lãi trước PACCL 947 tỷ theo NCB). EPS, BVPS 2025A theo 1.928,0 triệu cp; 2026E–2027E theo 2.928,0 triệu cp (gồm đợt 1 tỷ cp 6/2026). Không chia cổ tức (lỗ lũy kế)."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận trước PACCL: giữ lại và dùng xử lý tồn đọng",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "lợi nhuận trước PACCL",
+  "nhan": "Dùng cho PACCL",
+  "ss": [
+   {
+    "ten": "Giữ lại (LN cổ đông)",
+    "mau": "c1",
+    "v": [
+     0,
+     0,
+     1055
+    ]
+   },
+   {
+    "ten": "Dùng cho PACCL",
+    "mau": "c4",
+    "v": [
+     947,
+     1633,
+     1055
+    ]
+   }
+  ],
+  "ng": "PACCL: phương án cơ cấu lại NHNN duyệt 6/2024 (thoái lãi dự thu, trích lập tồn đọng). 2025A: NCB công bố; 2026E: cam kết ĐHĐCĐ; 2027E: cơ sở xong PACCL trong năm."
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: tín dụng → lãi thuần → LN trước PACCL → LN cổ đông",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Tín dụng và thu nhập"
+   },
+   {
+    "ten": "Dư nợ cho vay (nghìn tỷ)",
+    "v": [
+     97.5,
+     140.2,
+     168.2
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Lãi thuần / tổng tài sản bq (%)",
+    "v": [
+     1.67,
+     2.17,
+     2.3
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Thu nhập lãi thuần (tỷ)",
+    "v": [
+     2371,
+     4112,
+     5250
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Ngoài lãi (tỷ)",
+    "v": [
+     376,
+     479,
+     551
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "CIR (%)",
+    "v": [
+     74.4,
+     46.0,
+     45.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Chi phí dự phòng (tỷ)",
+    "v": [
+     702,
+     846,
+     1080
+    ]
+   },
+   {
+    "nhom": "PACCL và lợi nhuận"
+   },
+   {
+    "ten": "LN trước PACCL (tỷ)",
+    "v": [
+     947,
+     1633,
+     2111
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Dùng cho PACCL (tỷ)",
+    "v": [
+     -947,
+     -1633,
+     -1055
+    ]
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     0,
+     0,
+     1055
+    ],
+    "dam": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     0,
+     0,
+     360
+    ],
+    "eps": 1
+   },
+   {
+    "nhom": "Vốn"
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     7050,
+     8058,
+     8418
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE trước PACCL (%)",
+    "v": [
+     12.1,
+     9.1,
+     8.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "ROE báo cáo (%)",
+    "v": [
+     0.0,
+     0.0,
+     4.4
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "2025A: các dòng thu nhập–chi phí theo BCTC, đã gồm ~947 tỷ PACCL quý 4 (thoái lãi dự thu làm lãi thuần Q4 chỉ 424 tỷ). 2026E–2027E: dòng cốt lõi, PACCL tách riêng; thuế ≈ 0 nhờ chuyển lỗ 2023–2024. ROE trên vốn chủ bình quân các quý."
+ },
+ "gia_dinh": [
+  {
+   "ten": "Tín dụng nửa cuối 2026 · 2027",
+   "v": [
+    "0% · 12%",
+    "5% · 20%",
+    "10% · 28%"
+   ],
+   "ly_do": "6T +36,9%, vượt kế hoạch năm (+35%); 2025 +37%; hệ thống 9T/2026 +11,59% (MBS 16/10); 33.000 tỷ vốn mới cho 2027–2028"
+  },
+  {
+   "ten": "Lãi thuần/tổng tài sản nửa cuối 2026",
+   "v": [
+    "2,05%",
+    "2,25%",
+    "2,45%"
+   ],
+   "ly_do": "Q1 1,88%, Q2 2,22%; 10.000 tỷ vốn chủ thay vốn huy động phải trả lãi; tiền gửi không kỳ hạn ~9% tiền gửi (cuối 2025)"
+  },
+  {
+   "ten": "Lãi thuần/tổng tài sản 2027",
+   "v": [
+    "2,00%",
+    "2,30%",
+    "2,60%"
+   ],
+   "ly_do": "9T/2025 1,90%; 6T/2026 2,04%. Lãi huy động giữ vùng cao đến ~Q2/2027 (ban lãnh đạo SHB, MBS 16/10)"
+  },
+  {
+   "ten": "Ngoài lãi nửa cuối 2026 · 2027",
+   "v": [
+    "150 tỷ · 0%",
+    "200 tỷ · +15%",
+    "260 tỷ · +30%"
+   ],
+   "ly_do": "6T/2026 279 tỷ; nửa cuối 2025 137 tỷ; 2025 376 tỷ — thu phí còn nhỏ"
+  },
+  {
+   "ten": "Chi phí hoạt động nửa cuối 2026 · CIR 2027",
+   "v": [
+    "1.200 · 50%",
+    "1.130 · 45%",
+    "1.080 · 41%"
+   ],
+   "ly_do": "6T 982 tỷ (CIR 46,6%); nửa cuối 2025 1.181 tỷ (Q4 717 gồm phần PACCL); 9T/2025 CIR 58,6%"
+  },
+  {
+   "ten": "Dự phòng ngoài PACCL nửa cuối 2026",
+   "v": [
+    "600 tỷ",
+    "450 tỷ",
+    "350 tỷ"
+   ],
+   "ly_do": "6T 396 tỷ (0,69%/năm dư nợ bq); nợ xấu khoản giải ngân mới 0,31%, ngoài PACCL 1,1% (cuối 2025)"
+  },
+  {
+   "ten": "Chi phí tín dụng 2027 (ngoài PACCL)",
+   "v": [
+    "1,0%",
+    "0,7%",
+    "0,5%"
+   ],
+   "ly_do": "6T/2026 0,69%/năm; dư nợ ×2,1 trong 7 quý — nợ mới chưa qua chu kỳ"
+  },
+  {
+   "ten": "Phần LN trước PACCL dùng cho PACCL 2026 · 2027",
+   "v": [
+    "100% · 100%",
+    "100% · 50%",
+    "85% · 0%"
+   ],
+   "ly_do": "2025: 947/947 tỷ; ĐHĐCĐ 2026: toàn bộ LN cho PACCL. Cơ sở: xong trong 2027 (“trở lại đường đua sau 2027”)"
+  },
+  {
+   "ten": "P/B (× vốn chủ 30/6/2027E)",
+   "v": [
+    "0,70",
+    "1,00",
+    "1,70"
+   ],
+   "ly_do": "Lịch sử 2015–2026: thấp 25% 0,69, trung vị 0,96; hiện tại 1,63. Theo ROE (r 12,5%, g 7%): 1,0 ↔ ROE 12,5%, 1,7 ↔ ROE ~16%"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 0,
+   "ln27": 0,
+   "gia": 5.6,
+   "mo_ta": "Dư nợ đi ngang nửa cuối 2026, +12% năm 2027; lãi thuần/tổng tài sản 2,0%; chi phí tín dụng 1,0%; PACCL dùng hết LN đến hết 2027; P/B 0,7 (thấp 25% lịch sử)"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 0,
+   "ln27": 1055,
+   "gia": 8.2,
+   "mo_ta": "Dư nợ +5% / +20%; lãi thuần/tổng tài sản 2027 2,30%; CIR 45%; PACCL dùng hết LN 2026 và một nửa 2027; ROE trước PACCL 2027 8,8%; P/B 1,0"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 316,
+   "ln27": 3378,
+   "gia": 14.9,
+   "mo_ta": "Dư nợ +10% / +28%; lãi thuần/tổng tài sản 2,60%; CIR 41%; PACCL xong trong 2026, giữ toàn bộ LN 2027 (3.378 tỷ); P/B 1,7 ≈ mức đang trả"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ 30/6/2027E (chưa tính đợt 3,3 tỷ cp)",
+  "ck": 0,
+  "cp": 2928.0,
+  "phan": [
+   {
+    "ten": "Vốn chủ 31/12/2025 + 10.000 tỷ phát hành",
+    "mau": "c1",
+    "x": [
+     23593,
+     23593,
+     23593
+    ],
+    "boi": [
+     0.7,
+     1.0,
+     1.7
+    ],
+    "x_ten": "BCTC 2025 + đợt 1 tỷ cp (6/2026)",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     16515,
+     23593,
+     40108
+    ]
+   },
+   {
+    "ten": "LN giữ lại sau PACCL",
+    "mau": "c3",
+    "x": [
+     0,
+     528,
+     2005
+    ],
+    "boi": [
+     0.7,
+     1.0,
+     1.7
+    ],
+    "x_ten": "1/2026–6/2027E",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     0,
+     528,
+     3408
+    ]
+   }
+  ],
+  "von": [
+   16515,
+   24121,
+   43516
+  ],
+  "gia": [
+   5.6,
+   8.2,
+   14.9
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   0.69,
+   0.61,
+   0.6,
+   0.63,
+   0.63,
+   0.64,
+   0.65,
+   0.65,
+   0.63,
+   0.63,
+   0.62,
+   0.62,
+   0.61,
+   0.55,
+   0.53,
+   0.54,
+   0.56,
+   0.52,
+   0.55,
+   0.55,
+   0.54,
+   0.53,
+   0.54,
+   0.45,
+   0.4,
+   0.41,
+   0.43,
+   0.42,
+   0.53,
+   0.67,
+   0.72,
+   0.67,
+   0.67,
+   0.62,
+   0.75,
+   0.68,
+   0.77,
+   0.75,
+   0.93,
+   0.89,
+   0.7,
+   0.71,
+   0.61,
+   0.77,
+   0.86,
+   0.89,
+   0.97,
+   0.89,
+   0.78,
+   0.8,
+   0.84,
+   0.86,
+   0.76,
+   0.74,
+   0.72,
+   0.69,
+   0.8,
+   0.86,
+   0.87,
+   0.9,
+   0.86,
+   0.83,
+   0.75,
+   0.75,
+   0.78,
+   0.81,
+   0.82,
+   0.79,
+   0.87,
+   0.84,
+   0.8,
+   0.96,
+   1.24,
+   1.41,
+   1.46,
+   1.63,
+   2.23,
+   1.85,
+   2.15,
+   2.72,
+   2.55,
+   2.71,
+   2.77,
+   2.96,
+   3.71,
+   3.72,
+   4.41,
+   4.66,
+   3.54,
+   3.1,
+   2.76,
+   2.28,
+   1.75,
+   1.42,
+   1.82,
+   1.96,
+   1.95,
+   1.54,
+   1.49,
+   1.31,
+   1.28,
+   1.49,
+   1.43,
+   1.38,
+   1.27,
+   0.96,
+   1.09,
+   1.06,
+   1.09,
+   1.23,
+   1.17,
+   0.98,
+   1.08,
+   1.15,
+   1.03,
+   1.02,
+   1.01,
+   0.98,
+   1.0,
+   0.99,
+   0.99,
+   2.2,
+   2.24,
+   1.95,
+   2.08,
+   2.25,
+   2.89,
+   2.82,
+   2.59,
+   2.62,
+   2.43,
+   2.38,
+   2.18,
+   1.74,
+   1.55,
+   1.49,
+   1.59,
+   2.02,
+   1.4,
+   1.5,
+   1.72,
+   1.66
+  ],
+  "p10": 0.55,
+  "p25": 0.69,
+  "tv": 0.96,
+  "thap": [
+   "2017-01",
+   0.4
+  ],
+  "nay": [
+   "2026-10",
+   1.66
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,70 · 1,00 · 1,70: cơ sở ≈ trung vị 2015–2026 (0,96), mức 2023–2024; tốt ≈ mức đang trả. P/B 2025 cao (2–2,9) vì vốn chủ bị lỗ 2024 bào mòn; từ 7/2026 tính lại trên vốn chủ gồm 10.000 tỷ mới."
+ },
+ "nhay": [
+  [
+   "Lãi thuần/tổng tài sản 2027 ±10 điểm cơ bản",
+   228,
+   1.2
+  ],
+  [
+   "Chi phí tín dụng 2027 ±0,1 điểm %",
+   154,
+   0.8
+  ],
+  [
+   "P/B ±0,1 lần",
+   null,
+   0.8
+  ],
+  [
+   "CIR 2027 ±1 điểm %",
+   58,
+   0.3
+  ],
+  [
+   "Tín dụng 2027 ±5 điểm %",
+   41,
+   0.2
+  ]
+ ],
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   0
+  ],
+  "cuoi": [
+   "2027E",
+   1055
+  ],
+  "buoc": [
+   [
+    "Lãi thuần",
+    1138
+   ],
+   [
+    "Ngoài lãi",
+    72
+   ],
+   [
+    "Chi phí hoạt động",
+    -499
+   ],
+   [
+    "Dự phòng",
+    -233
+   ],
+   [
+    "PACCL dùng ít hơn",
+    577
+   ]
+  ],
+  "y": "LN trước PACCL tăng 478 tỷ nhờ lãi thuần (tài sản +23%); phần còn lại là PACCL giảm từ 1.633 xuống 1.055 tỷ.",
+  "ng": "mô hình"
+ },
+ "so_sanh": {
+  "tieu": "P/B so với 12 ngân hàng vốn hóa lớn nhất",
+  "phu": "theo giá hôm nay, vốn chủ 30/6/2026 + 10.000 tỷ phát hành",
+  "chi_so": "P/B (vốn chủ 30/6/2026 + 10.000 tỷ)",
+  "chi_so_kv": "P/B (giá 20/10)",
+  "nhom": "12 mã cùng ngành vốn hóa lớn nhất",
+  "kv": [
+   [
+    "VCB",
+    1.89
+   ],
+   [
+    "BID",
+    1.36
+   ],
+   [
+    "VPB",
+    1.35
+   ],
+   [
+    "CTG",
+    1.19
+   ],
+   [
+    "TCB",
+    1.32
+   ],
+   [
+    "MBB",
+    1.33
+   ],
+   [
+    "HDB",
+    1.72
+   ],
+   [
+    "ACB",
+    1.18
+   ],
+   [
+    "STB",
+    1.85
+   ],
+   [
+    "LPB",
+    2.67
+   ],
+   [
+    "MSB",
+    1.22
+   ],
+   [
+    "SSB",
+    1.31
+   ]
+  ],
+  "tv": 1.34,
+  "moi_cp": 8306,
+  "max": 3,
+  "y": "ROE 4 quý NVB 2,2% so với trung vị nhóm 17,8%; chỉ 4 ngân hàng được trả cao hơn: VCB, HDB, LPB (ROE 18–25%) và STB (ROE 5%, tái cơ cấu nhưng lợi nhuận trước dự phòng lớn). Bảng giá ghi P/B 2,72 vì chưa cộng 10.000 tỷ vào vốn chủ.",
+  "ng": "BCTC VNDirect, giá 20/10/2026 (bảng cùng ngành); NVB: vốn chủ 30/6/2026 + 10.000 tỷ đợt 6/2026"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    259,
+    497,
+    711
+   ],
+   "ck": 190
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    0,
+    0,
+    316
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Cơ sở: LN 497 tỷ (cùng kỳ 190); 9T ~1.220 tỷ ≈ 86% kế hoạch LN trước PACCL 1.416 tỷ. Năm 2025 khoản lỗ dồn vào quý 4 — quý 3 là phép thử sạch cho lợi nhuận lõi.",
+   "tac": [
+    "≥ 2,2%",
+    "lãi thuần/tổng tài sản giữ mức Q2; dưới 2,05% nghiêng về xấu"
+   ],
+   "theo_doi": "lãi thuần, dự phòng, dư nợ"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Quý 4 trả cho PACCL",
+   "ct": "2025: 9T lãi 652 tỷ, Q4 lỗ 652 tỷ → cả năm ≈ 0. Cơ sở 2026: dùng hết ~1.630 tỷ LN trước PACCL, Q4 lỗ ~1.220 tỷ.",
+   "tac": [
+    "≈ 0 tỷ",
+    "LN cổ đông 2026E (cơ sở)"
+   ],
+   "theo_doi": "thoái lãi dự thu, trích lập"
+  },
+  {
+   "khi": "Q1–Q3/2027",
+   "loai": "hai",
+   "tieu": "Phát hành 3,3 tỷ cp giá 10.000 đ",
+   "ct": "Vốn điều lệ 29.280 → 62.280 tỷ, số cp ×2,13; NHNN đã chấp thuận, hạn chế chuyển nhượng 1 năm. BVPS lên ~9,2 nghìn đ nhưng LN trước PACCL 2027E chỉ bằng 3,7% vốn chủ mới.",
+   "tac": [
+    "+1,0 nghìn đ/cp",
+    "nếu P/B giữ 1,0 — ROE giảm thì không"
+   ],
+   "theo_doi": "danh sách nhà đầu tư, giá chào bán"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Giá đã trả cho ROE ~16%",
+   "ct": "P/B 1,63 ngầm định ROE dài hạn ~16% (r 12,5%, g 7%); ROE trước PACCL 2027E cơ sở 8,8%, tốt 13,2% (trước thuế, còn chuyển lỗ).",
+   "tac": [
+    "−0,8 nghìn đ/cp",
+    "mỗi −0,1 lần P/B"
+   ],
+   "theo_doi": "ROE, P/B"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dư nợ +37% trong 6 tháng",
+   "ct": "Dư nợ/tiền gửi khách hàng 77% → 92%; nợ xấu khoản giải ngân mới 0,31% (cuối 2025) nhưng phần lớn dư nợ mới chưa qua một chu kỳ. Xấu: chi phí tín dụng 2027 1,0%.",
+   "tac": [
+    "−0,8 nghìn đ/cp",
+    "mỗi +0,1 điểm % chi phí tín dụng 2027"
+   ],
+   "theo_doi": "nợ xấu, nợ nhóm 2"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Cơ cấu cổ đông mới chưa rõ",
+   "ct": "Đợt 1 tỷ cp (6/2026): 22 nhà đầu tư — 20 cá nhân, Phú Gia Investment, Hưng Thịnh Finance; tỷ lệ sở hữu sau phát hành chưa rõ. Đợt 3,3 tỷ cp cũng bán riêng lẻ.",
+   "tac": "",
+   "theo_doi": "cổ đông lớn, giao dịch bên liên quan"
+  },
+  {
+   "khi": "Nhiều năm",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Diện cảnh báo, không ký quỹ",
+   "ct": "LNST chưa phân phối vẫn âm (vốn chủ thấp hơn vốn điều lệ ~4.960 tỷ) nên HNX giữ diện cảnh báo; cổ phiếu cảnh báo không được giao dịch ký quỹ. LN giữ lại chỉ bắt đầu từ 2027 (cơ sở).",
+   "tac": "",
+   "theo_doi": "quyết định của HNX"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Hoàn tất PACCL sớm",
+   "ct": "Vốn điều lệ đạt mục tiêu PACCL sớm 3 năm. Tốt: PACCL xong trong 2026, giữ toàn bộ LN 2027 (3.378 tỷ), ROE trước PACCL 13,2%.",
+   "tac": [
+    "+6,7 nghìn đ/cp",
+    "kịch bản tốt so với cơ sở"
+   ],
+   "theo_doi": "quy mô PACCL quý 4"
+  },
+  {
+   "khi": "Q3/2026–2027",
+   "loai": "len",
+   "tieu": "10.000 tỷ vốn chủ hạ chi phí vốn",
+   "ct": "Vốn mới ≈ 5% tổng tài sản, không phải trả lãi; tiền gửi không kỳ hạn 11.430 tỷ (cuối 2025). Cơ sở lãi thuần/tổng tài sản 2,22% (Q2) → 2,30% (2027).",
+   "tac": [
+    "+1,2 nghìn đ/cp",
+    "mỗi +10 điểm cơ bản lãi thuần/tổng tài sản 2027"
+   ],
+   "theo_doi": "lãi suất huy động"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Dư nợ gấp đôi, tiền gửi chậm hơn",
+   "kieu": "cot",
+   "dv": "nghìn tỷ đồng",
+   "so_le": 0,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Dư nợ cho vay",
+     "v": [
+      64.4,
+      71.2,
+      78.0,
+      86.8,
+      95.0,
+      97.5,
+      116.9,
+      133.5
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tiền gửi khách hàng",
+     "v": [
+      90.4,
+      96.1,
+      102.5,
+      115.2,
+      119.3,
+      127.4,
+      134.9,
+      144.6
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Dư nợ ×2,07 trong 7 quý, tiền gửi ×1,60: dư nợ/tiền gửi 71% → 92%.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "LNTT theo quý: lãi 3 quý, quý 4 trả PACCL",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "so_le": 0,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LNTT",
+     "v": [
+      151,
+      311,
+      191,
+      -653,
+      216,
+      511
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "9T/2025 lãi 654 tỷ, Q4 lỗ 653 tỷ: cả năm ≈ 0. Q2/2026 511 tỷ là quý lãi cao nhất lịch sử NCB.",
+   "ng": "BCTC (VNDirect); NCB 7/2026"
+  },
+  {
+   "ten": "Lãi thuần tăng nhanh hơn chi phí",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "so_le": 0,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi thuần",
+     "v": [
+      505,
+      758,
+      685,
+      424,
+      792,
+      1034
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chi phí hoạt động",
+     "v": [
+      382,
+      481,
+      464,
+      717,
+      459,
+      523
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "Lãi thuần 6T/2026 +45%, chi phí +14%; Q4/2025 lãi thuần chỉ 424 tỷ vì thoái lãi dự thu theo PACCL.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "Vốn chủ vẫn thấp hơn vốn điều lệ",
+   "kieu": "duong",
+   "dv": "nghìn tỷ đồng",
+   "so_le": 1,
+   "nhan": [
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "6/26*"
+   ],
+   "ss": [
+    {
+     "ten": "Vốn điều lệ",
+     "v": [
+      5.6,
+      5.6,
+      5.6,
+      5.6,
+      11.8,
+      11.8,
+      11.8,
+      11.8,
+      19.3,
+      19.3,
+      19.3,
+      29.3
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Vốn chủ sở hữu",
+     "v": [
+      5.1,
+      5.1,
+      5.1,
+      5.0,
+      6.1,
+      6.2,
+      6.6,
+      6.7,
+      13.6,
+      13.8,
+      14.3,
+      24.3
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Ba đợt phát hành ở mệnh giá từ 12/2024 nâng vốn điều lệ 5.602 → 29.280 tỷ; lỗ 2024 (5.129 tỷ) để lại khoảng cách ~5.000 tỷ: BVPS ~8.310 đ, dưới mệnh giá.",
+   "ng": "BCTC (VNDirect); * 30/6/2026 cộng 10.000 tỷ đợt 1 tỷ cp (kết thúc 26/6, chưa vào vốn chủ BCTC Q2)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "LN trước PACCL",
+    "kh": 1416,
+    "th": 727,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2/4/2026 · BCTC Q2"
+   },
+   {
+    "ten": "Tăng dư nợ cho vay (+35%)",
+    "kh": 34141,
+    "th": 35982,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2/4/2026: dư nợ 131.686 tỷ · BCTC Q2"
+   },
+   {
+    "ten": "Tăng tổng tài sản (+16%)",
+    "kh": 26297,
+    "th": 35281,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2/4/2026: 189.912 tỷ · BCTC Q2"
+   },
+   {
+    "ten": "Vốn điều lệ lên 29.280 tỷ",
+    "kh": 10000,
+    "th": 10000,
+    "ky": "6/2026",
+    "tg": 50,
+    "dv": "tỷ tăng thêm",
+    "ng": "1 tỷ cp riêng lẻ, kết thúc 26/6/2026"
+   }
+  ],
+  "y": "LN trước PACCL 6T đạt 51% kế hoạch; dư nợ và tổng tài sản đã vượt mục tiêu cả năm từ tháng 6 — tăng thêm nửa cuối phụ thuộc room tín dụng. LN cổ đông không có chỉ tiêu riêng: toàn bộ dùng cho PACCL.",
+  "ng": ""
+ },
+ "ctck": [],
+ "ctck_chu": "Chưa có CTCK theo dõi trong 8 tháng; mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành.",
+ "nguon": [
+  {
+   "ten": "Mekong ASEAN — NCB được chấp thuận tăng vốn lên hơn 62.000 tỷ đồng (văn bản 8807/NHNN-QLGS)",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/ncb-duoc-chap-thuan-tang-von-len-hon-62000-ty-dong-60103.html"
+  },
+  {
+   "ten": "The Leader — NCB muốn tăng gấp đôi vốn điều lệ lên gần 62.280 tỷ đồng trong năm tới",
+   "ngay": "18/8/2026",
+   "link": "https://theleader.vn/ncb-muon-tang-gap-doi-von-dieu-le-len-gan-62280-ty-dong-trong-nam-toi-d47337.html"
+  },
+  {
+   "ten": "VNBA — NCB trình kế hoạch tăng vốn điều lệ thêm 33.000 tỷ đồng trong năm 2027",
+   "ngay": "19/8/2026",
+   "link": "https://vnba.org.vn/vi/ncb-trinh-ke-hoach-tang-von-dieu-le-them-33-000-ty-dong-trong-nam-2027-23181.htm"
+  },
+  {
+   "ten": "Doanh nhân (Báo Pháp luật) — NCB sắp phát hành 3,3 tỷ cổ phiếu, vốn điều lệ lên 62.280 tỷ",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/ngan-hang-quoc-dan-ncb-sap-phat-hanh-3-3-ty-co-phieu-dua-von-dieu-le-vot-len-muc-62-280-ty-dong.html"
+  },
+  {
+   "ten": "Báo Đấu thầu — Chào bán thành công 1 tỷ cổ phiếu, NCB nâng vốn điều lệ lên gần 29.280 tỷ đồng",
+   "ngay": "7/2026",
+   "link": "https://baodauthau.vn/chao-ban-thanh-cong-1-ty-co-phieu-ngan-hang-ncb-nang-von-dieu-le-len-gan-29280-ty-dong-post201829.html"
+  },
+  {
+   "ten": "VietnamFinance — 22 nhà đầu tư đăng ký mua cổ phiếu riêng lẻ tăng vốn điều lệ NCB",
+   "ngay": "6/2026",
+   "link": "https://vietnamfinance.vn/22-nha-dau-tu-dang-ky-mua-co-phieu-rieng-le-tang-von-dieu-le-ncb-d145145.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — ĐHĐCĐ NCB: vạch loạt kế hoạch lớn, sẵn sàng trở lại “đường đua” sau năm 2027",
+   "ngay": "4/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/dai-hoi-dong-co-dong-ncb-vach-loat-ke-hoach-lon-san-sang-tro-lai-duong-dua-sau-nam-2027-194894.html"
+  },
+  {
+   "ten": "Mekong ASEAN — NCB đặt mục tiêu tài sản tiệm cận 190.000 tỷ đồng (kế hoạch 2026)",
+   "ngay": "4/2026",
+   "link": "https://mekongasean.vn/ncb-dat-muc-tieu-ta-i-sa-n-tiem-can-190000-ty-do-ng-52756.html"
+  },
+  {
+   "ten": "Diễn đàn Doanh nghiệp — NCB tăng tốc mạnh mẽ trong nửa đầu 2026",
+   "ngay": "7–8/2026",
+   "link": "https://diendandoanhnghiep.vn/ncb-tang-toc-manh-me-trong-nua-dau-2026-san-sang-nang-luc-cho-giai-doan-tang-truong-moi-10182599.html"
+  },
+  {
+   "ten": "VnEconomy — NCB bứt phá sau 5 năm tái cơ cấu, tiến gần mục tiêu hoàn thành sớm PACCL",
+   "ngay": "2026",
+   "link": "https://vneconomy.vn/ncb-but-pha-ngoan-muc-sau-5-nam-tai-co-cau-tien-gan-muc-tieu-hoan-thanh-som-phuong-an-co-cau-lai.htm"
+  },
+  {
+   "ten": "VietnamFinance — NCB bứt tốc năm 2025 (lãi trước PACCL 947 tỷ, tiền gửi không kỳ hạn, nợ xấu khoản vay mới)",
+   "ngay": "1/2026",
+   "link": "https://vietnamfinance.vn/ncb-but-toc-nam-2025-kinh-doanh-vuot-ke-hoach-tang-von-som-d139580.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — NCB đảo chiều lợi nhuận năm 2025, tăng vốn điều lệ sớm vượt 19.000 tỷ đồng",
+   "ngay": "1/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/ncb-dao-chieu-loi-nhuan-nam-2025-tang-von-dieu-le-som-vuot-19000-ty-dong-191598.html"
+  },
+  {
+   "ten": "VnEconomy — NVB hoàn tất phát hành 750 triệu cổ phiếu riêng lẻ; diện cảnh báo",
+   "ngay": "2025",
+   "link": "https://vneconomy.vn/nvb-hoan-tat-phat-hanh-750-trieu-co-phieu-rieng-le.htm"
+  },
+  {
+   "ten": "The Leader — “Cắt một lần cho hết đau”: NCB thoái lãi dự thu, trích lập sau khi tăng vốn 12/2024",
+   "ngay": "2025",
+   "link": "https://theleader.vn/cat-mot-lan-cho-het-dau-ncb-tu-tin-co-lai-tu-nam-nay-d39530.html"
+  },
+  {
+   "ten": "NCB — NCB exceeds all 2024 targets (PACCL được duyệt 6/2024 theo QĐ 689/QĐ-TTg)",
+   "ngay": "1/2025",
+   "link": "https://www.ncb-bank.vn/en/news/ncb-exceeds-all-2024-targets-achieves-positive-business-growth-n65278"
+  },
+  {
+   "ten": "CafeLand — NCB thông tin về cổ phiếu bị cảnh báo và kiểm soát",
+   "ngay": "3/2025",
+   "link": "https://cafeland.vn/tin-tuc/ngan-hang-ncb-thong-tin-ve-co-phieu-bi-canh-bao-va-kiem-soat-137885.html"
+  },
+  {
+   "ten": "MBS — SHB: gặp gỡ nhà đầu tư 10/2026 (tín dụng hệ thống, lãi suất huy động)",
+   "ngay": "16/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/SHB/20261016_shb_bao_cao_gap_go_nha_dau_tu_thang_10_2026_cap_nhat_kqkd_so_bo_9t26_trien_vong_nam_2026.pdf"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Lãi huy động lên vùng cao từ Q3/2025; ban lãnh đạo SHB kỳ vọng đi ngang đến ~Q2/2027 — bất lợi cho ngân hàng dựa vào tiền gửi kỳ hạn.",
+     "ng": "MBS 16/10/2026"
+    },
+    {
+     "h": 1,
+     "t": "Tín dụng toàn hệ thống 9T/2026 +11,59%, huy động +9,78%: cầu vốn tốt, ngân hàng có vốn chủ mới mở rộng được nhanh.",
+     "ng": "MBS 16/10/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 0,
+     "t": "Trung vị 12 ngân hàng lớn: P/B 1,34, ROE 4 quý 17,8%, P/E 8,4 (giá 20/10). Ngân hàng ROE thấp được trả cao chỉ có STB (P/B 1,85, ROE 5%) nhờ lợi nhuận trước dự phòng lớn sau tái cơ cấu.",
+     "ng": "BCTC VNDirect, giá 20/10/2026"
+    },
+    {
+     "h": 1,
+     "t": "NCB là tổ chức tín dụng đầu tiên được duyệt phương án cơ cấu lại theo QĐ 689/QĐ-TTg (6/2024): lộ trình xử lý tồn đọng rõ, có giám sát.",
+     "ng": "NCB 1/2025"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "6T/2026: LN 726,7 tỷ (+57%), Q2 510,7 tỷ — quý cao nhất lịch sử; nợ xấu khoản giải ngân mới 0,31% (cuối 2025).",
+     "ng": "Diễn đàn Doanh nghiệp 7–8/2026 · VietnamFinance 1/2026"
+    },
+    {
+     "h": -1,
+     "t": "Lợi nhuận dồn cho PACCL đến hết 2026 (cam kết ĐHĐCĐ); lỗ lũy kế giữ cổ phiếu ở diện cảnh báo.",
+     "ng": "ĐHĐCĐ 2/4/2026 · VnEconomy"
+    },
+    {
+     "h": 0,
+     "t": "Vốn điều lệ ×5,2 từ 12/2024 qua 3 đợt ở mệnh giá 10.000 đ; đợt 3,3 tỷ cp nữa đưa lên 62.280 tỷ — vào nhóm vốn điều lệ lớn nhất hệ thống.",
+     "ng": "Báo Đấu thầu 7/2026 · Mekong ASEAN"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Tín dụng và nguồn vốn",
+   "phu": "Dư nợ 133,5 nghìn tỷ (30/6/2026) · 6T +36,9% (hệ thống 9T +11,59%)",
+   "so": [
+    [
+     "Dư nợ",
+     "+53,8%",
+     "so với 30/6/2025"
+    ],
+    [
+     "Tiền gửi khách hàng",
+     "+25,4%",
+     "từ đầu năm +13,5%"
+    ],
+    [
+     "Dư nợ / tiền gửi KH",
+     "92%",
+     "cuối 2025: 77%"
+    ],
+    [
+     "Tiền gửi không kỳ hạn",
+     "11.430 tỷ",
+     "cuối 2025, +22%; kế hoạch 2026 15.312"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Phần dư nợ vượt tiền gửi tài trợ bằng giấy tờ có giá, liên ngân hàng và vốn chủ: tổng tài sản − tiền gửi − vốn chủ = 40.000 tỷ (30/6/2026, gồm cả tiền mua cổ phần chờ tăng vốn).",
+     "ng": "BCTC"
+    },
+    {
+     "t": "Kế hoạch huy động 2026 158.685 tỷ (+20%) thấp hơn tốc độ tín dụng (+35%): biên lãi phụ thuộc vốn chủ mới.",
+     "ng": "ĐHĐCĐ 2/4/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Lợi nhuận trước PACCL",
+   "phu": "947 tỷ năm 2025 · kế hoạch 2026 1.416 tỷ",
+   "so": [
+    [
+     "2025",
+     "947 tỷ",
+     "giữ lại ≈ 0"
+    ],
+    [
+     "6T/2026",
+     "727 tỷ",
+     "+57% so với cùng kỳ"
+    ],
+    [
+     "LN trước dự phòng 6T",
+     "1.123 tỷ",
+     "+76%"
+    ],
+    [
+     "CIR 6T/2026",
+     "46,6%",
+     "9T/2025: 58,6%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q4/2025: lãi thuần 424 tỷ (Q3 685), chi phí 717 tỷ, dự phòng 421 tỷ — dấu vết thoái lãi dự thu và trích lập theo PACCL.",
+     "ng": "BCTC"
+    },
+    {
+     "t": "Q4/2024: sau khi tăng vốn lên ~11.800 tỷ (12/2024), NCB thoái lãi dự thu và trích lập một lần: LNTT quý −5.070 tỷ.",
+     "ng": "The Leader 2025 · BCTC"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn và tái cơ cấu",
+   "phu": "Vốn điều lệ 29.280 tỷ (6/2026) · vốn chủ ~24.300 tỷ",
+   "so": [
+    [
+     "Vốn chủ / vốn điều lệ",
+     "83%",
+     "sau đợt 6/2026"
+    ],
+    [
+     "BVPS",
+     "8.310 đ",
+     "dưới mệnh giá"
+    ],
+    [
+     "Đợt tiếp theo",
+     "33.000 tỷ",
+     "3,3 tỷ cp, Q1–Q3/2027"
+    ],
+    [
+     "Nợ xấu ngoài PACCL",
+     "1,1%",
+     "cuối 2025"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Đợt 1 tỷ cp (giá 10.000 đ, kết thúc 26/6/2026): 22 nhà đầu tư chuyên nghiệp trong nước; danh sách đăng ký có Chủ tịch Bùi Thị Thanh Hương và thành viên HĐQT Dương Thế Bằng.",
+     "ng": "VietnamFinance 6/2026 · Báo Đấu thầu 7/2026"
+    },
+    {
+     "t": "Đợt 3,3 tỷ cp: Nghị quyết ĐHĐCĐ 9/2026, NHNN chấp thuận (8807/NHNN-QLGS), dùng cho kinh doanh 2027–2028, hạn chế chuyển nhượng 1 năm.",
+     "ng": "Mekong ASEAN · VNBA 19/8/2026"
+    }
+   ]
+  }
+ ]
+}
