@@ -1,0 +1,1495 @@
+{
+ "v": 2,
+ "ma": "HSG",
+ "ten": "CTCP Tập đoàn Hoa Sen",
+ "nganh": "Tôn mạ, ống thép",
+ "ky": "BCTC quý 3 NĐ2026 (4–6/2026) · niên độ 1/10–30/9",
+ "cap_nhat": "2026-10-21",
+ "lan_sau": "sau BCTC quý 4 NĐ2026 (7–9/2026)",
+ "cp_trieu": 807.3,
+ "cp_ng": "Vốn điều lệ 8.072,6 tỷ (BCTC 30/6/2026) sau cổ tức 30% bằng cổ phiếu (186,3 triệu cp, chốt quyền 05/05/2026); không có cổ phiếu quỹ",
+ "chia": [
+  [
+   "2026-05-04",
+   1.3
+  ]
+ ],
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Lãi quý 3 là lãi tồn kho; bỏ phần đó, lãi vay ăn gần nửa lãi hoạt động"
+ },
+ "dong_mo": "Biên gộp 15,3% quý 3 NĐ2026 đến từ HRC tích giá thấp bán ra khi giá tăng; HRC đã giảm ~10% từ đỉnh tháng 6, xuất khẩu −45%, lãi vay gấp đôi. Cơ sở NĐ2027 (10/2026–9/2027): LN 382 tỷ, ROE ~3%; P/B theo ROE cho {gt} ({up}), cán cân lên/xuống {rr} lần — cổ phiếu đi theo giá HRC, chưa có lý do định giá lại.",
+ "luan_diem": [
+  {
+   "so": "15,3%",
+   "nhan": "biên gộp quý 3 NĐ2026 (4–6/2026)",
+   "tieu": "Lãi quý 3 là lãi tồn kho, chiều giá đã đảo",
+   "t": "HSG tích HRC giá thấp cuối 2025 (tồn kho +1.200 tỷ trong quý 1 NĐ, trên 100 ngày) rồi bán ra khi HRC lên ~600 USD/tấn (5/2026, +19% từ đầu năm): biên gộp 15,3%, LN 382 tỷ, gấp ba quý trước. HRC kỳ hạn T9 đã thấp hơn đỉnh T6 10,2% trong khi tồn kho 8.268 tỷ (30/6) mang giá vốn cao. Cơ sở quý 4 (7–9/2026): biên 11,2%, LN ~8 tỷ; xấu (biên 9%) lỗ 242 tỷ.",
+   "ng": "BCTC VNDirect · VDS 17/04 · BSC 06/05 · MAS 12/08 (hồ sơ HPG) · mô hình"
+  },
+  {
+   "so": "+104%",
+   "nhan": "chi phí lãi vay 9 tháng NĐ2026",
+   "tieu": "Lãi vay ăn gần nửa lãi hoạt động",
+   "t": "9 tháng NĐ2026 lãi hoạt động (LN gộp − bán hàng, QLDN) +38% nhưng LN trước thuế −2%, LNST −12%: lãi vay 281 tỷ vì vay ngắn hạn tài trợ tồn kho (7,3 nghìn tỷ, 30/6) và lãi suất bình quân lên ~6,2% (NĐ2025 ~3,8%); doanh thu tài chính còn 69 tỷ (−69%) khi xuất khẩu giảm, tỷ giá đứng yên. Bỏ lãi tồn kho, 6 tháng đầu NĐ lãi vay = 47% lãi hoạt động; NĐ2027E cơ sở 50%.",
+   "ng": "BCTC VNDirect · BSC 06/05 · mô hình"
+  },
+  {
+   "so": "−45%",
+   "nhan": "xuất khẩu tôn + ống 6T NĐ2026",
+   "tieu": "Mất xuất khẩu, nội địa thêm đối thủ",
+   "t": "Xuất khẩu từng là 37% sản lượng tôn + ống (NĐ2025), nay ~105 nghìn tấn/quý: EU tính phí CBAM từ 2026, Úc điều tra chống bán phá giá thép mạ kẽm Việt Nam từ 4/2026. Nội địa 9 tháng +6% (~883 nghìn tấn) nhưng NKG, GDA thêm 1,4 triệu tấn công suất, thị phần HSG 2025 còn 24,1%. Cơ sở NĐ2027: 1,80 triệu tấn, lãi gộp 2,40 triệu đ/tấn ≈ NĐ2025 → LN 382 tỷ; MBS 901, VDS 1.236 giả định giá tôn còn tăng.",
+   "ng": "BSC 06/05 · FPTS 20/03 · MBS 14/04 · 24hmoney · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B theo ROE: {up_so} so với giá hiện tại",
+   "t": "Giá trị = P/B × vốn chủ 30/9/2027E (BVPS ~15,2 nghìn đ), P/B = 0,55 + 0,05 × ROE: ROE NĐ2027E ~3,2% → 0,71, sát trung vị 11 mã cùng ngành (0,72) và NKG (0,68); tương đương P/E ~23 lần LN NĐ2027E. Mỗi ±100 đ/kg chênh lệch tôn – HRC = ±149 tỷ LN, ±1,1 nghìn đ/cp. Xấu 7,7: lỗ, P/B 0,55 (đáy 2018–2019); tốt 15,5: HRC đi lên, ROE ~8%.",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect · cùng ngành: giá 20/10/2026"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "NĐ2025A",
+   "NĐ2026E",
+   "NĐ2027E"
+  ],
+  "ln": [
+   735,
+   577,
+   382
+  ],
+  "ln_truoc": 515,
+  "eps": [
+   910,
+   714,
+   473
+  ],
+  "bv": [
+   14025,
+   14684,
+   15157
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Lãi gộp mỗi tấn (triệu đ)",
+    "v": [
+     2.45,
+     2.57,
+     2.4
+    ],
+    "d": 2
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     6.6,
+     5.0,
+     3.2
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "Niên độ 1/10–30/9 (NĐ2026 = 10/2025–9/2026). NĐ2024–2025: BCTC. EPS, BVPS theo 807,3 triệu cp sau cổ tức 30% bằng cổ phiếu (5/2026); NĐ2025 không trả cổ tức tiền mặt."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "cot": [
+   "NĐ2025A",
+   "NĐ2026E",
+   "NĐ2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Lãi hoạt động",
+    "mau": "c1",
+    "v": [
+     745,
+     980,
+     720
+    ]
+   },
+   {
+    "ten": "Lãi vay",
+    "mau": "c2",
+    "v": [
+     -185,
+     -391,
+     -360
+    ]
+   },
+   {
+    "ten": "Tài chính khác, thu nhập khác",
+    "mau": "c4",
+    "v": [
+     265,
+     115,
+     100
+    ]
+   }
+  ],
+  "ng": "Lãi hoạt động = LN gộp − chi phí bán hàng, QLDN; tài chính khác = doanh thu tài chính − chi phí tài chính ngoài lãi vay (chủ yếu tỷ giá). NĐ2025: BCTC; NĐ2026E–2027E: mô hình."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: sản lượng × lãi gộp mỗi tấn − chi phí − lãi vay",
+  "cot": [
+   "NĐ2025A",
+   "NĐ2026E",
+   "NĐ2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Sản lượng và kinh tế mỗi tấn"
+   },
+   {
+    "ten": "Sản lượng tiêu thụ (nghìn tấn)",
+    "v": [
+     1845,
+     1760,
+     1800
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Doanh thu mỗi tấn (triệu đ)",
+    "v": [
+     19.8,
+     20.63,
+     20.34
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Lãi gộp mỗi tấn (triệu đ)",
+    "v": [
+     2.45,
+     2.57,
+     2.4
+    ],
+    "d": 2,
+    "dam": 1
+   },
+   {
+    "ten": "Bán hàng + QLDN mỗi tấn (triệu đ)",
+    "v": [
+     2.05,
+     2.01,
+     2.0
+    ],
+    "d": 2
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     36538,
+     36303,
+     36619
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên lợi nhuận gộp (%)",
+    "v": [
+     12.4,
+     12.4,
+     11.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Lãi hoạt động",
+    "v": [
+     745,
+     980,
+     720
+    ]
+   },
+   {
+    "ten": "Chi phí lãi vay",
+    "v": [
+     185,
+     391,
+     360
+    ]
+   },
+   {
+    "ten": "Tài chính khác + thu nhập khác",
+    "v": [
+     265,
+     115,
+     100
+    ]
+   },
+   {
+    "ten": "LN trước thuế",
+    "v": [
+     825,
+     703,
+     460
+    ]
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     735,
+     577,
+     382
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     910,
+     714,
+     473
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "BVPS cuối niên độ (đ)",
+    "v": [
+     14025,
+     14684,
+     15157
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     6.6,
+     5.0,
+     3.2
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "Niên độ 1/10–30/9. Sản lượng HSG công bố (tôn, ống thép, ống nhựa…); NĐ2025 theo MBS, khớp kế hoạch ĐHĐCĐ. NĐ2026E = 9 tháng BCTC + quý 4 (7–9/2026) ước tính. Doanh thu mỗi tấn gồm hàng hóa thương mại. Thuế NĐ2027E 17%."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông NĐ2026E → NĐ2027E (kịch bản cơ sở)",
+  "dau": [
+   "NĐ2026E",
+   577
+  ],
+  "cuoi": [
+   "NĐ2027E",
+   382
+  ],
+  "buoc": [
+   [
+    "Lãi gộp/tấn về mức thường",
+    -303
+   ],
+   [
+    "Sản lượng",
+    23
+   ],
+   [
+    "Bán hàng, QLDN/tấn",
+    20
+   ],
+   [
+    "Lãi vay",
+    31
+   ],
+   [
+    "Tài chính, khác",
+    -15
+   ],
+   [
+    "Thuế TNDN",
+    49
+   ]
+  ],
+  "y": "Lãi gộp mỗi tấn về 2,40 triệu đ (NĐ2026E 2,57 nhờ quý 3) lấy đi ~303 tỷ trước thuế; sản lượng, chi phí và lãi vay chỉ bù ~74 tỷ.",
+  "ng": "mô hình (bước trước thuế; thuế tách riêng)"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Biên gộp quý 4 NĐ2026 (7–9/2026)",
+   "v": [
+    "9,0%",
+    "11,2%",
+    "12,4%"
+   ],
+   "ly_do": "HRC T9 thấp hơn đỉnh T6 10,2% (MAS) khi giá vốn còn tồn kho mua quý 2; 11,2% = quý 1 NĐ2026 (không lãi tồn kho); 12,4% = bình quân NĐ2025"
+  },
+  {
+   "ten": "Doanh thu/tấn H2/2026 so với quý 2",
+   "v": [
+    "−7,5%",
+    "−6%",
+    "−4,5%"
+   ],
+   "ly_do": "Cùng giả định giá thép hồ sơ HPG: HPG chào HRC T7/T8/T9 −2,2%/−8,0%/−10,2% so với đỉnh T6 (MAS 12/08); NĐ2027 −1% · 0% · +1%"
+  },
+  {
+   "ten": "Sản lượng NĐ2027 (nghìn tấn)",
+   "v": [
+    "1.690",
+    "1.800",
+    "1.900"
+   ],
+   "ly_do": "NĐ2026E ~1.760; nội địa 9T +6%, xuất khẩu 6T −45%; NKG, GDA thêm 1,4 triệu tấn công suất; MBS 2027F 1.833"
+  },
+  {
+   "ten": "Lãi gộp mỗi tấn NĐ2027 (triệu đ)",
+   "v": [
+    "2,15",
+    "2,40",
+    "2,65"
+   ],
+   "ly_do": "NĐ2025 2,45; 6T NĐ2026 2,32 (không lãi tồn kho); quý 3 3,31 (lãi tồn kho). MBS: chênh lệch tôn – HRC 130–134 USD/tấn"
+  },
+  {
+   "ten": "Bán hàng + QLDN mỗi tấn (triệu đ)",
+   "v": [
+    "2,08",
+    "2,00",
+    "1,95"
+   ],
+   "ly_do": "NĐ2025 2,05; 9T NĐ2026 2,00 (quý 3: 2,13 vì cước vận chuyển); thêm cửa hàng Hoa Sen Home"
+  },
+  {
+   "ten": "Nợ vay bình quân · lãi suất NĐ2027",
+   "v": [
+    "6.500 · 6,5%",
+    "6.000 · 6,0%",
+    "5.200 · 5,5%"
+   ],
+   "ly_do": "Vay ngắn hạn 7.252 tỷ (30/6/2026), lãi suất bình quân quý 2/2026 ~6,2% (NĐ2025 ~3,8%); HRC thấp hơn kéo vốn lưu động xuống"
+  },
+  {
+   "ten": "Tài chính ngoài lãi vay + khác (tỷ)",
+   "v": [
+    "30",
+    "100",
+    "150"
+   ],
+   "ly_do": "NĐ2025 265 (lãi tỷ giá từ xuất khẩu); 9T NĐ2026 95 khi xuất khẩu giảm, USD/VND đi ngang (BSC)"
+  },
+  {
+   "ten": "Thuế TNDN hiệu dụng NĐ2027",
+   "v": [
+    "25%",
+    "17%",
+    "15%"
+   ],
+   "ly_do": "NĐ2025 10,8%; 9T NĐ2026 17,9% (quý 1: 35% vì lỗ công ty con chưa ghi thuế hoãn lại — VDS); năm lỗ không ghi tài sản thuế"
+  },
+  {
+   "ten": "P/B = 0,55 + 0,05 × ROE (%)",
+   "v": [
+    "0,55",
+    "0,71",
+    "0,96"
+   ],
+   "ly_do": "Sàn 0,55 ≈ đáy 2018–2019 (0,49–0,70); ROE 3% → 0,70 ≈ trung vị 11 mã cùng ngành (0,72), NKG 0,68; ROE 8% → 0,95 ≈ bình quân 2025 (0,95)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 326,
+   "ln27": -274,
+   "gia": 7.7,
+   "mo_ta": "Quý 4 biên 9% (lỗ 242 tỷ); NĐ2027 1,69 triệu tấn, lãi gộp 2,15 triệu đ/tấn, lãi vay 422 tỷ → lỗ 274 tỷ; P/B 0,55"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 577,
+   "ln27": 382,
+   "gia": 10.8,
+   "mo_ta": "Quý 4 biên 11,2% (hòa vốn); NĐ2027 1,80 triệu tấn, 2,40 triệu đ/tấn ≈ NĐ2025, lãi vay 360 tỷ; ROE ~3,2%, P/B 0,71"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 732,
+   "ln27": 1015,
+   "gia": 15.5,
+   "mo_ta": "HRC đi lên: lãi gộp 2,65 triệu đ/tấn, 1,90 triệu tấn, nợ vay giảm; ROE ~8%, P/B 0,96"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ cuối NĐ2027 (30/9/2027E); P/B = 0,55 + 0,05 × ROE",
+  "ck": 0,
+  "cp": 807.3,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông 30/9/2027E",
+    "mau": "c1",
+    "x": [
+     11329,
+     12236,
+     13024
+    ],
+    "boi": [
+     0.55,
+     0.71,
+     0.96
+    ],
+    "x_ten": "cuối NĐ2027E",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     6231,
+     8688,
+     12503
+    ]
+   }
+  ],
+  "von": [
+   6231,
+   8688,
+   12503
+  ],
+  "gia": [
+   7.7,
+   10.8,
+   15.5
+  ]
+ },
+ "nhay": [
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.5
+  ],
+  [
+   "Lãi gộp mỗi tấn NĐ2027 ±0,1 triệu đ",
+   149,
+   1.1
+  ],
+  [
+   "Bán hàng + QLDN mỗi tấn ±0,05 triệu đ",
+   75,
+   0.5
+  ],
+  [
+   "Lãi suất vay NĐ2027 ±1 điểm %",
+   50,
+   0.4
+  ],
+  [
+   "Sản lượng NĐ2027 ±5%",
+   30,
+   0.2
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.83,
+   1.57,
+   1.36,
+   1.52,
+   1.45,
+   1.68,
+   1.68,
+   1.56,
+   1.53,
+   1.75,
+   1.43,
+   1.42,
+   1.29,
+   1.27,
+   1.41,
+   1.92,
+   2.07,
+   2.42,
+   2.31,
+   2.31,
+   2.24,
+   2.13,
+   2.31,
+   2.42,
+   2.37,
+   2.04,
+   2.13,
+   2.08,
+   2.43,
+   2.4,
+   2.07,
+   2.12,
+   2.03,
+   1.64,
+   1.62,
+   1.67,
+   1.78,
+   1.56,
+   1.46,
+   1.07,
+   0.77,
+   0.88,
+   0.82,
+   0.8,
+   0.93,
+   0.68,
+   0.5,
+   0.49,
+   0.5,
+   0.65,
+   0.7,
+   0.65,
+   0.66,
+   0.6,
+   0.6,
+   0.54,
+   0.53,
+   0.56,
+   0.6,
+   0.61,
+   0.63,
+   0.57,
+   0.34,
+   0.55,
+   0.72,
+   0.83,
+   0.69,
+   0.82,
+   1.13,
+   1.09,
+   1.22,
+   1.5,
+   1.58,
+   1.66,
+   1.78,
+   1.99,
+   2.4,
+   2.52,
+   2.25,
+   1.8,
+   2.1,
+   2.14,
+   1.8,
+   1.71,
+   1.38,
+   1.68,
+   1.53,
+   1.24,
+   0.98,
+   0.69,
+   0.73,
+   0.87,
+   0.75,
+   0.58,
+   0.62,
+   0.64,
+   0.85,
+   0.86,
+   0.95,
+   0.91,
+   0.89,
+   0.95,
+   1.11,
+   1.16,
+   1.16,
+   0.98,
+   1.23,
+   1.3,
+   1.31,
+   1.29,
+   1.34,
+   1.1,
+   1.2,
+   1.32,
+   1.2,
+   1.16,
+   1.18,
+   1.12,
+   1.07,
+   1.04,
+   0.99,
+   1.07,
+   0.96,
+   0.77,
+   0.9,
+   0.91,
+   1.03,
+   1.01,
+   1.05,
+   0.93,
+   0.92,
+   0.86,
+   0.88,
+   0.88,
+   0.81,
+   0.87,
+   0.88,
+   0.82,
+   0.75,
+   0.74,
+   0.68,
+   0.71
+  ],
+  "p10": 0.62,
+  "p25": 0.82,
+  "tv": 1.12,
+  "thap": [
+   "2020-03",
+   0.34
+  ],
+  "nay": [
+   "2026-10",
+   0.71
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,55 · 0,71 · 0,96 theo ROE NĐ2027E: từ vùng đáy 2018–2019 (0,49–0,70) qua quanh p10–p25 (0,62–0,82) đến bình quân 2025 (0,95) — dưới trung vị 1,12 vì ROE chưa về mức 2016–2021."
+ },
+ "so_sanh": {
+  "chi_so": "P/B (vốn chủ 30/6/2026)",
+  "chi_so_kv": "P/B (giá 20/10)",
+  "nhom": "11 mã kim loại công nghiệp vốn hóa lớn nhất",
+  "kv": [
+   [
+    "HPG",
+    1.23
+   ],
+   [
+    "NKG",
+    0.68
+   ],
+   [
+    "VGS",
+    0.78
+   ],
+   [
+    "SMC",
+    0.68
+   ],
+   [
+    "DTL",
+    1.31
+   ],
+   [
+    "TKU",
+    1.14
+   ],
+   [
+    "TLH",
+    0.29
+   ],
+   [
+    "HMC",
+    0.72
+   ],
+   [
+    "TNI",
+    0.39
+   ],
+   [
+    "KMT",
+    0.92
+   ],
+   [
+    "MEL",
+    0.38
+   ]
+  ],
+  "tv": 0.72,
+  "moi_cp": 14673,
+  "max": 1.5,
+  "y": "NKG — đối thủ tôn mạ trực tiếp — P/B 0,68 với ROE 4 quý 2,2%; HPG 1,23 với ROE 17,4%. ROE 4 quý của HSG 5,7% gồm lãi tồn kho quý 3; NĐ2027E cơ sở ~3%.",
+  "ng": "BCTC VNDirect quý 2/2026, giá 20/10/2026 (vốn hóa VNDirect)"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026 (quý 4 NĐ)",
+   "fd": "2026-09-30",
+   "dt": 8951,
+   "ln": [
+    -242,
+    8,
+    164
+   ],
+   "ck": 88
+  },
+  {
+   "quy": "Q4/2026 (quý 1 NĐ27)",
+   "fd": "2026-12-31",
+   "ln": [
+    -67,
+    101,
+    265
+   ],
+   "ck": 62
+  },
+  {
+   "quy": "Cả NĐ2026",
+   "ln": [
+    326,
+    577,
+    732
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD quý 4 NĐ2026 (7–9/2026)",
+   "ct": "HRC giảm ~10% từ đỉnh T6 khi giá vốn còn tồn kho mua quý 2. Cơ sở: biên 11,2%, LN ~8 tỷ; xấu lỗ 242 tỷ; tốt 164 tỷ; cùng kỳ 88 tỷ.",
+   "tac": [
+    "Biên gộp ≥ 12,4%",
+    "nghiêng về kịch bản tốt; dưới 10% là xấu"
+   ],
+   "theo_doi": "biên gộp, dự phòng giảm giá tồn kho"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Mùa xây dựng, đầu tư công, nhà ở xã hội",
+   "ct": "Sản lượng nội địa (tôn + ống) 9 tháng +6% lên ~883 nghìn tấn; MBS dự báo tiêu thụ tôn mạ toàn ngành 2026 +10%, nhà ở xã hội +45%, đầu tư công +18%.",
+   "tac": [
+    "±0,2 nghìn đ/cp",
+    "mỗi ±5% sản lượng NĐ2027 (±30 tỷ LN)"
+   ],
+   "theo_doi": "sản lượng hằng tháng HSG công bố"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Giá HRC đi lên lại",
+   "ct": "HSG giữ trên 100 ngày tồn kho: HRC tăng thì lặp lại lãi tồn kho như quý 3 NĐ2026. Kịch bản tốt: lãi gộp 2,65 triệu đ/tấn.",
+   "tac": [
+    "±1,1 nghìn đ/cp",
+    "mỗi ±100 đ/kg chênh lệch tôn – HRC (±149 tỷ LN)"
+   ],
+   "theo_doi": "giá HRC HPG chào hằng tháng"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Hoa Sen Home",
+   "ct": "Doanh thu NĐ2025 16.000 tỷ (+19,9%), lần đầu có lãi 78 tỷ; định hướng thành công ty độc lập, thêm 25–30 cửa hàng 2026–2030.",
+   "tac": [
+    "~4,5 nghìn đ/cp",
+    "VDS định giá 3.600 tỷ (P/S 1,5) — mô hình không tách riêng"
+   ],
+   "theo_doi": "KQKD Hoa Sen Home, kế hoạch tách công ty"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "HRC giảm tiếp, lỗ tồn kho",
+   "ct": "HRC Ấn Độ, Indonesia chào 534–535 USD/tấn; tồn kho 8.268 tỷ (30/6) chịu lỗ khi giá giảm — như NĐ2022–2023 (biên gộp 9,7–9,9%, LN 251 và 30 tỷ).",
+   "tac": [
+    "−3,1 nghìn đ/cp",
+    "về kịch bản xấu (lãi gộp 2,15 triệu đ/tấn, P/B 0,55)"
+   ],
+   "theo_doi": "giá HRC, biên gộp quý"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Rào cản xuất khẩu",
+   "ct": "Xuất khẩu tôn + ống 6T NĐ2026 −45%; EU tính phí CBAM từ 2026, đề xuất cắt hạn ngạch 47% và thuế ngoài hạn ngạch 50%; Úc điều tra chống bán phá giá thép mạ kẽm Việt Nam từ 4/2026.",
+   "tac": "",
+   "theo_doi": "kết luận điều tra của Úc, hạn ngạch EU"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dư cung tôn mạ trong nước",
+   "ct": "NKG chạy nhà máy 800 nghìn tấn từ Q1/2026; NKG + GDA thêm 1,4 triệu tấn (55% công suất HSG). Thị phần HSG 2025 24,1% (−2,6 điểm); chiết khấu đại lý lên 2,8%.",
+   "tac": [
+    "±0,5 nghìn đ/cp",
+    "mỗi ±50 đ/kg chi phí bán hàng, khuyến mại"
+   ],
+   "theo_doi": "thị phần VSA, chiết khấu đại lý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lãi vay",
+   "ct": "Vay ngắn hạn 7.252 tỷ (30/6/2026), lãi suất bình quân ~6,2% (NĐ2025 ~3,8%); lãi vay 9 tháng +104%.",
+   "tac": [
+    "±0,4 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất (±50 tỷ LN)"
+   ],
+   "theo_doi": "lãi suất, nợ vay ròng"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Đầu tư mới: Phú Mỹ, nhà ở xã hội",
+   "ct": "Xây dựng dở dang 1.487 tỷ (31/3/2026, +114%) cho nhà máy tôn Hoa Sen Phú Mỹ, Hoa Sen Home; ĐHĐCĐ 3/2026 nêu hướng 20.000 căn nhà ở xã hội — thêm nhu cầu vốn.",
+   "tac": "",
+   "theo_doi": "đầu tư, nợ vay ròng"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Đầu tư công 2026 dự kiến +18% lên hơn 1,02 triệu tỷ, nhà ở xã hội +45% — nguồn cầu tôn, ống thép nội địa.",
+     "ng": "MBS 14/04"
+    },
+    {
+     "h": -1,
+     "t": "Lãi suất cho vay tăng từ 3/2026; lãi suất bình quân của HSG lên ~6,2% (NĐ2025 ~3,8%).",
+     "ng": "FPTS 20/03 · BCTC"
+    },
+    {
+     "h": 0,
+     "t": "Xung đột Trung Đông đẩy giá dầu, cước vận chuyển: giá bán quý 2 NĐ +15% nhưng chi phí bán hàng quý 3 lên 2,13 triệu đ/tấn; USD/VND đi ngang nên mất lãi tỷ giá.",
+     "ng": "BSC 06/05 · BCTC"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 0,
+     "t": "Thuế chống lẩn tránh 27,83% với HRC khổ rộng Trung Quốc (tạm thời 2/4/2026): giá HRC nội tăng (chi phí đầu vào) nhưng giá tôn có dư địa tăng theo.",
+     "ng": "VDS 17/04 · FPTS 20/03"
+    },
+    {
+     "h": -1,
+     "t": "Xuất khẩu tôn khó: EU cắt hạn ngạch, tính CBAM; Úc điều tra chống bán phá giá; chênh lệch giá tôn Việt Nam ở EU, Mỹ sau thuế chỉ còn 60–80 USD/tấn.",
+     "ng": "FPTS 20/03 · BSC 06/05 · MBS 14/04"
+    },
+    {
+     "h": -1,
+     "t": "Dư cung trong nước: NKG, GDA thêm 1,4 triệu tấn công suất tôn mạ; doanh nghiệp chuyển hàng xuất khẩu về nội địa, tăng chiết khấu.",
+     "ng": "FPTS 20/03"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Hoa Sen Home có lãi lần đầu (78 tỷ NĐ2025), doanh thu 16.000 tỷ — kênh bán lẻ riêng giữ thị phần nội địa.",
+     "ng": "FPTS 20/03"
+    },
+    {
+     "h": -1,
+     "t": "Vốn lưu động nặng: tồn kho trên 100 ngày (108 ngày quý 1 NĐ), vay ngắn hạn 7.252 tỷ; dòng tiền kinh doanh âm hai quý đầu NĐ2026.",
+     "ng": "VDS 17/04 · NHSV 12/05"
+    },
+    {
+     "h": 0,
+     "t": "Cổ tức NĐ2025 trả 30% bằng cổ phiếu (186,3 triệu cp), không tiền mặt; vốn điều lệ lên 8.072,6 tỷ.",
+     "ng": "vietnamfinance · BCTC"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Tôn mạ",
+   "phu": "Thị phần nội địa 24,1% năm 2025 (VSA, −2,6 điểm); ~3/4 sản lượng tôn + ống",
+   "so": [
+    [
+     "Bán 6T NĐ2026",
+     "583 nghìn tấn",
+     "−19%"
+    ],
+    [
+     "Xuất khẩu quý 1 NĐ2026",
+     "99,9 nghìn tấn",
+     "−52%"
+    ],
+    [
+     "Sản xuất quý 2 NĐ2026",
+     "247 nghìn tấn",
+     "−30,8%"
+    ],
+    [
+     "Giá bán bình quân quý 2 NĐ",
+     "23.697 đ/kg",
+     "+15%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q2 NĐ2026 sản xuất cầm chừng khi cầu yếu; bán nội địa miền Nam +21,4% để bù xuất khẩu −32,6%.",
+     "ng": "NHSV 12/05"
+    },
+    {
+     "t": "Xuất khẩu sang EU chậm vì chờ giá carbon CBAM; Úc điều tra chống bán phá giá từ 4/2026; xuất khẩu 100–110 nghìn tấn/quý.",
+     "ng": "BSC 06/05"
+    }
+   ]
+  },
+  {
+   "ten": "Ống thép, ống nhựa",
+   "phu": "Ống thép ~100–106 nghìn tấn/quý, gần như toàn bộ bán trong nước",
+   "so": [
+    [
+     "Ống thép quý 1 NĐ2026",
+     "105 nghìn tấn",
+     "+6%"
+    ],
+    [
+     "Nội địa",
+     "102,5 nghìn tấn",
+     "+11%"
+    ],
+    [
+     "Xuất khẩu",
+     "2,9 nghìn tấn",
+     "−60%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Quý 2 NĐ2026 ống thép nội địa +8,5% (miền Nam +16%), xuất khẩu ống −69,8%; tổng ống thép +3,5%.",
+     "ng": "NHSV 12/05"
+    }
+   ]
+  },
+  {
+   "ten": "Hoa Sen Home",
+   "phu": "Chuỗi bán lẻ vật liệu xây dựng, nội thất; lần đầu có lãi NĐ2025",
+   "so": [
+    [
+     "Doanh thu NĐ2025",
+     "16.000 tỷ",
+     "+19,9%"
+    ],
+    [
+     "LN NĐ2025",
+     "78 tỷ",
+     "10,6% LNST"
+    ],
+    [
+     "Kế hoạch",
+     "+25–30 cửa hàng",
+     "2026–2030"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Định hướng thành công ty độc lập; xây dựng dở dang tăng vì mở rộng Hoa Sen Home và nhà máy Phú Mỹ.",
+     "ng": "NHSV 12/05"
+    },
+    {
+     "t": "VDS định giá 3.600 tỷ theo P/S 1,5 × doanh thu 2026F 2.400 tỷ (phần hàng ngoài); mô hình trang không tách riêng mảng này.",
+     "ng": "VDS 17/04"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Tôn + ống thép theo thị trường",
+   "kieu": "cot_chong",
+   "dv": "nghìn tấn",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nội địa",
+     "v": [
+      282,
+      255,
+      295,
+      294,
+      297,
+      280
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Xuất khẩu",
+     "v": [
+      217,
+      166,
+      166,
+      121,
+      103,
+      109
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Xuất khẩu từ 217 nghìn tấn (10–12/2024) còn 103–109 nghìn tấn/quý; nội địa đi ngang 255–297 nghìn tấn, không bù được.",
+   "ng": "BSC 06/05, VDS 17/04 · quý dương lịch (Q4/24 = quý 1 NĐ2025)"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp theo quý",
+   "kieu": "duong",
+   "dv": "%",
+   "nhan": [
+    "Q3/23",
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      13.3,
+      10.5,
+      12.1,
+      12.3,
+      8.5,
+      11.8,
+      12.7,
+      12.8,
+      12.3,
+      11.2,
+      11.7,
+      15.3
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Q2/26 (quý 3 NĐ) 15,3% là lãi tồn kho; 11 quý trước dao động 8,5–13,3%, trung vị 12,1%.",
+   "ng": "BCTC HSG (VNDirect), quý dương lịch"
+  },
+  {
+   "ten": "Lãi vay và doanh thu tài chính",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Chi phí lãi vay",
+     "v": [
+      40,
+      49,
+      46,
+      43,
+      47,
+      52,
+      108,
+      121
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Doanh thu tài chính",
+     "v": [
+      129,
+      43,
+      120,
+      61,
+      56,
+      39,
+      26,
+      4
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi vay gấp 2,5 lần từ Q1/26 khi vay ngắn hạn tài trợ tồn kho; doanh thu tài chính (tỷ giá xuất khẩu) gần như mất.",
+   "ng": "BCTC HSG (VNDirect)"
+  },
+  {
+   "ten": "Tồn kho và vay ngắn hạn",
+   "kieu": "duong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Hàng tồn kho",
+     "v": [
+      9712,
+      9749,
+      8029,
+      8042,
+      8204,
+      9440,
+      10180,
+      8268
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Vay ngắn hạn",
+     "v": [
+      5364,
+      6410,
+      3532,
+      4630,
+      4404,
+      6143,
+      8268,
+      7252
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "so_le": 0,
+   "y": "Tích HRC giá thấp đẩy tồn kho lên 10.180 tỷ (31/3/2026), vay ngắn hạn 8.268 tỷ; quý 3 NĐ bán bớt tồn kho, vay còn 7.252 tỷ.",
+   "ng": "BCTC HSG (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": "niên độ 2025–2026",
+  "ds": [
+   {
+    "ten": "Sản lượng",
+    "kh": 1750,
+    "th": 1319.5,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "nghìn tấn",
+    "ng": "ĐHĐCĐ 7/3/2026 (phương án 1) · HSG ước tính 13/7"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 35000,
+    "th": 27351,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 7/3/2026 · BCTC"
+   },
+   {
+    "ten": "LNST (phương án 1)",
+    "kh": 500,
+    "th": 568,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 7/3/2026 · BCTC"
+   },
+   {
+    "ten": "LNST (phương án 2)",
+    "kh": 600,
+    "th": 568,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 7/3/2026 · BCTC"
+   }
+  ],
+  "y": "9 tháng đã vượt LNST phương án 1 nhờ riêng quý 3 (382 tỷ); cơ sở cả niên độ 577 tỷ ≈ phương án 2 khi quý 4 về hòa vốn. Sản lượng, doanh thu chậm nhịp (75%, 78%)."
+ },
+ "ctck": [
+  {
+   "ctck": "NHSV",
+   "ngay": "2026-05-12",
+   "kn": "TRUNG LẬP",
+   "tp": 12420,
+   "ln26": 477,
+   "ln27": 363,
+   "pp": "P/E 50% + FCFF 50%",
+   "y": "Thận trọng nhất: doanh thu NĐ2026–27 −9%/−6%, biên gộp 11,3%/10,8% vì cạnh tranh, xuất khẩu đóng; lưu ý vay ngắn hạn +35% trong quý, dòng tiền kinh doanh âm hai quý.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/Nguyen_vat_lieu_tang_gia_lam_ay_gia_ton_ma_gia_tang_no_ngan_han.pdf"
+  },
+  {
+   "ctck": "BSC",
+   "ngay": "2026-05-06",
+   "kn": "THEO DÕI",
+   "tp": 14300,
+   "ln26": 507,
+   "pp": "P/B 0,95 × BVPS 2026F 15.056 đ",
+   "y": "Nâng giá bán bình quân 13% (cước, HRC), giữ quan điểm xuất khẩu khó (100–110 nghìn tấn/quý); kỳ vọng quý 3 NĐ tốt nhờ tồn kho giá rẻ — đã đúng.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/Song_hoi_tu_ay_inh_gia.pdf"
+  },
+  {
+   "ctck": "VDS",
+   "ngay": "2026-04-17",
+   "kn": "MUA",
+   "tp": 20200,
+   "ln26": 898,
+   "ln27": 1236,
+   "pp": "SOTP: FCFF mảng truyền thống + P/S 1,5 Hoa Sen Home",
+   "y": "Lạc quan nhất: doanh thu NĐ2026–27 +11%/+13%, biên gộp 12,9%/13,4%; Hoa Sen Home 3.600 tỷ. Giá mục tiêu tính trên 621 triệu cp (trước cổ tức cổ phiếu).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/Chiu_ap_luc_tu_tieu_thu_yeu_tai_noi_ia_ky_vong_khoi_sac_hon_tu_quy_3_.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-04-14",
+   "kn": "KHẢ QUAN",
+   "tp": 20000,
+   "ln26": 782,
+   "ln27": 901,
+   "pp": "FCFF 50% + P/B 1,2 lần 50%",
+   "y": "Giả định giá tôn nội địa +7%/+6% (845/896 USD/tấn), chênh lệch tôn – HRC 130–134 USD/tấn; xuất khẩu −31% rồi đi ngang 410 nghìn tấn.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/hsg_bcpt_gia_ton_ma_phuc_hoi_tro_thanh_dong_luc_tang_truong.pdf"
+  },
+  {
+   "ctck": "FPTS",
+   "ngay": "2026-03-20",
+   "kn": "THEO DÕI",
+   "tp": 13300,
+   "ln26": 620,
+   "pp": "FCFE + FCFF",
+   "y": "Lợi nhuận dài hạn giảm vì phải dùng HRC nội giá cao và vay ngắn hạn tài trợ vốn lưu động; NKG, GDA thêm 1,4 triệu tấn công suất.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/theo_doi_bao_cao_cap_nhat_nhanh_fpts_20_03_2026.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu, quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. LN là niên độ 1/10–30/9. FPTS, MBS, VDS ra trước đợt cổ tức 30% bằng cổ phiếu (GDKHQ 04/05/2026) nên giá mục tiêu được quy đổi theo hệ số 1,3.",
+ "nguon": [
+  {
+   "ten": "NHSV — Nguyên vật liệu tăng giá đẩy giá tôn mạ, tăng nợ ngắn hạn",
+   "ngay": "12/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/Nguyen_vat_lieu_tang_gia_lam_ay_gia_ton_ma_gia_tang_no_ngan_han.pdf"
+  },
+  {
+   "ten": "BSC — Sóng hồi từ đáy định giá",
+   "ngay": "06/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/Song_hoi_tu_ay_inh_gia.pdf"
+  },
+  {
+   "ten": "VDS — Chịu áp lực từ tiêu thụ yếu tại nội địa",
+   "ngay": "17/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/Chiu_ap_luc_tu_tieu_thu_yeu_tai_noi_ia_ky_vong_khoi_sac_hon_tu_quy_3_.pdf"
+  },
+  {
+   "ten": "MBS — Giá tôn mạ phục hồi trở thành động lực tăng trưởng",
+   "ngay": "14/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/hsg_bcpt_gia_ton_ma_phuc_hoi_tro_thanh_dong_luc_tang_truong.pdf"
+  },
+  {
+   "ten": "FPTS — Báo cáo cập nhật nhanh",
+   "ngay": "20/03/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/theo_doi_bao_cao_cap_nhat_nhanh_fpts_20_03_2026.pdf"
+  },
+  {
+   "ten": "Mekong ASEAN — Hoa Sen vượt kế hoạch lợi nhuận năm sau 9 tháng",
+   "ngay": "07/2026",
+   "link": "https://mekongasean.vn/hoa-sen-vuot-ke-hoach-loi-nhuan-nam-chi-sau-9-thang-57303.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — Hoa Sen ước lãi 568 tỷ đồng sau 9 tháng",
+   "ngay": "07/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/hoa-sen-uoc-lai-568-ty-dong-sau-9-thang-200651.html"
+  },
+  {
+   "ten": "DNSE — Hoa Sen báo lãi hơn 568 tỷ đồng sau 9 tháng",
+   "ngay": "2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/hoa-sen-bao-lai-hon-568-ty-dong-sau-9-thang-tong-tai-san-vuot-22200-ty-dong-35253730"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — ĐHĐCĐ Hoa Sen: lợi nhuận 500–600 tỷ, 20.000 căn nhà ở xã hội",
+   "ngay": "03/2026",
+   "link": "https://thitruongtaichinhtiente.vn/dhdcd-hoa-sen-dat-muc-tieu-loi-nhuan-500-600-ty-dong-du-kien-trien-khai-20-000-can-nha-o-xa-hoi-79153.html"
+  },
+  {
+   "ten": "VietnamFinance — Hoa Sen phát hành hơn 186 triệu cổ phiếu trả cổ tức",
+   "ngay": "2026",
+   "link": "https://vietnamfinance.vn/hoa-sen-phat-hanh-hon-186-trieu-co-phieu-tra-co-tuc-tang-von-len-hon-8000-ty-dong-d141682.html"
+  },
+  {
+   "ten": "Báo Pháp luật — HSG chuẩn bị phát hành 186 triệu cổ phiếu trả cổ tức",
+   "ngay": "05/2026",
+   "link": "https://doanhnhan.baophapluat.vn/tap-doan-hoa-sen-hsg-loi-nhuan-phuc-hoi-chuan-bi-phat-hanh-186-trieu-co-phieu-tra-co-tuc.html"
+  },
+  {
+   "ten": "24hmoney — HSG: sản lượng nội địa 9 tháng, thị phần",
+   "ngay": "2026",
+   "link": "https://24hmoney.vn/posts/-c55a2844420.html"
+  },
+  {
+   "ten": "Mirae Asset (hồ sơ HPG) — giá HRC kỳ hạn T7–T9",
+   "ngay": "12/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HPG/ctcp_tap_doan_hoa_phat_hpg_mua_gmt_30_000_buoc_qua_giai_doan_thuan_loi.pdf"
+  },
+  {
+   "ten": "KBSV (hồ sơ HPG) — giá HRC tháng 9/2026",
+   "ngay": "07/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HPG/ctcp_tap_doan_hoa_phat_bao_cao_cap_nhat_2q2026.pdf"
+  }
+ ]
+}
