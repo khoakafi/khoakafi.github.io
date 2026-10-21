@@ -146,8 +146,8 @@
     "ten": "Cổ phiếu VIC",
     "cp_trieu": 7733.5,
     "so_huu": 0.009013,
-    "ln26": 18024,
-    "ln27": 10885,
+    "ln26": 17938,
+    "ln27": 10291,
     "gtgd": 569,
     "mau": "c2"
    }
@@ -392,7 +392,7 @@
     "209",
     "209"
    ],
-   "ly_do": "Giá 20/10; xấu −30%. Hồ sơ VIC của trang định giá cơ sở 42,1 nghìn đ — rủi ro giảm lớn hơn"
+   "ly_do": "Giá 20/10; xấu −30%. Hồ sơ VIC của trang định giá cơ sở 40,5 nghìn đ — rủi ro giảm lớn hơn"
   }
  ],
  "kich_ban": [
@@ -663,7 +663,7 @@
    "khi": "Liên tục",
    "loai": "hai",
    "tieu": "Giá cổ phiếu VIC",
-   "ct": "69,7 triệu cp VIC ≈ 7,8 nghìn đ/cp VPL theo giá 20/10; hồ sơ VIC của trang định giá cơ sở 42,1 nghìn đ — nếu VIC về mức đó, phần này còn 2,9 nghìn tỷ.",
+   "ct": "69,7 triệu cp VIC ≈ 7,8 nghìn đ/cp VPL theo giá 20/10; hồ sơ VIC của trang định giá cơ sở 40,5 nghìn đ — nếu VIC về mức đó, phần này còn 2,8 nghìn tỷ.",
    "tac": [
     "±2,3 nghìn đ/cp",
     "mỗi 30% giá VIC"
