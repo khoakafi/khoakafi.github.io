@@ -1,0 +1,1437 @@
+{
+ "v": 2,
+ "ma": "SBT",
+ "ten": "Công ty Cổ phần Thành Thành Công – Biên Hòa (AgriS)",
+ "nganh": "Mía đường, thực phẩm",
+ "ky": "BCTC Q2/2026 (quý 4 niên độ 2025/26, khớp số kiểm toán) · KQKD 7–9/2026 chưa công bố",
+ "cap_nhat": "2026-10-21",
+ "lan_sau": "sau BCTC quý 1 niên độ 2026/27 (cuối 10/2026)",
+ "cp_trieu": 941.0,
+ "cp_ng": "906,4 triệu cp phổ thông (vốn điều lệ 9.280 tỷ gồm 21,6 triệu CP ưu đãi cổ tức; đã gồm cổ tức CP 6% GDKHQ 4/2026) + 34,6 triệu cp từ chuyển đổi CP ưu đãi (ĐHĐCĐ bất thường 7/2026). Chưa gồm cổ tức CP 6% niên độ 2025/26 trình ĐHĐCĐ 2/11/2026.",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Biên đường hồi phục chỉ đủ bù khoản lãi bất thường năm qua, giá đã đi trước",
+  "dk": "up_duoi:5",
+  "khac": "Biên đường hồi phục chỉ đủ bù khoản lãi bất thường năm qua; giá đã về dưới giá trị"
+ },
+ "dong_mo": "Niên độ 2025/26 (7/2025–6/2026) LN cổ đông 842 tỷ (+4%) nhưng 56% LNTT đến từ liên doanh liên kết và thu nhập khác. Đường thô thế giới hồi 43% từ đáy, biên gộp quý 2/2026 lên 13,8%: cơ sở niên độ 2026/27 LN 908 tỷ (+8%). P/E 18 cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "13,8%",
+   "nhan": "biên gộp Q2/2026, cao nhất 12 quý",
+   "tieu": "Giá đường đã qua đáy, biên gộp quay lên",
+   "t": "Đường thô thế giới từ 14 US cent/lb (3/2026, thấp nhất 5 năm) lên gần 20 (2/10, đỉnh 18 tháng); thuế chống bán phá giá đường Thái Lan gia hạn đến 6/2031. Biên gộp từ đáy 7,8% (Q4/2025) lên 13,8%. Giá nội địa đi khoảng nửa biên độ thế giới: cơ sở giá bán niên độ 2026/27 +6%, biên gộp 11,2% (+1,2% điểm), lãi gộp +21%.",
+   "ng": "BCTC VNDirect · FPTS 13/05 · Reuters 2/10 · QĐ 1309/QĐ-BCT · mô hình"
+  },
+  {
+   "so": "56%",
+   "nhan": "LNTT niên độ 2025/26 từ LDLK và thu nhập khác",
+   "tieu": "Lãi đi ngang nhờ khoản ngoài cốt lõi",
+   "t": "LNTT niên độ 2025/26 911 tỷ (−4%) nhưng HĐKD cốt lõi (lãi gộp − bán hàng − QLDN) chỉ 988 tỷ (−35%): chi phí bán hàng +32% (cước xuất khẩu, kênh FBMC). Đỡ lại là LDLK 300 tỷ và thu nhập khác 210 tỷ — ba niên độ trước tổng hai khoản này âm. Gạo đã vượt 2,6 nghìn tỷ doanh thu nhưng biên mỏng. Cơ sở 2026/27: cốt lõi +37%, LDLK & khác về 250 tỷ.",
+   "ng": "BCTC VNDirect · 24hMoney · Pháp luật · mô hình"
+  },
+  {
+   "so": "1,6 lần",
+   "nhan": "lãi vay so với lãi cốt lõi niên độ 2025/26",
+   "tieu": "Đòn bẩy ăn phần lớn lãi gộp",
+   "t": "Vay 16,9 nghìn tỷ (30/6/2026, 1,4 lần vốn chủ, 71% ngắn hạn) song song 9,1 nghìn tỷ tiền + tiền gửi và 10,2 nghìn tỷ phải thu. Lãi vay 1.553 tỷ gấp 1,6 lần lãi cốt lõi; thu nhập tài chính 1.482 tỷ (quý 1/2026: 59% là lãi tiền gửi) mới bù được. +1 điểm % lãi suất ≈ −170 tỷ LNTT. Thanh tra 2/2026 kết luận sai phạm khi phát hành và dùng 1.067 tỷ vốn trái phiếu.",
+   "ng": "BCTC Q2/2026 · FPTS 13/05"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị cơ sở 12 tháng (nghìn đ)",
+   "tieu": "Giá đã trả trước cho vụ đường thuận lợi",
+   "dk": "up_duoi:5",
+   "t": "Giá 20/10 bằng 23,6 lần LN 4 quý, 21,9 lần LN niên độ 2026/27E cơ sở; 4 mã mía đường niêm yết quanh 11,5 lần. P/E 18 (giữa mức 25% và trung vị từ 2015) × LN 908 tỷ cho {gt} ({up}) — sát DCF của FPTS quy ra 941 triệu cp (~17,6). Tốt 23,8 (giá đường +10%, P/E 16); xấu 11,4 (giá đi ngang, LDLK về 120 tỷ, P/B 0,88, sát đáy 0,85 năm 2024).",
+   "ng": "mô hình · BCTC, giá VNDirect · FPTS 13/05",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị cơ sở 12 tháng (nghìn đ)",
+    "tieu": "Giá đã về dưới giá trị cơ sở: {up_so}",
+    "t": "P/E 18 (giữa mức 25% và trung vị từ 2015) × LN niên độ 2026/27E 908 tỷ trên 941 triệu cp. LN đáy được trả P/E cao nên xấu dùng 30 lần (P/B 0,88), tốt 16 lần. Xấu 11,4, tốt 23,8 nghìn đ/cp; 4 mã mía đường niêm yết giao dịch quanh 11,5 lần LN."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "NĐ 24/25",
+   "NĐ 25/26",
+   "NĐ 26/27E"
+  ],
+  "ln": [
+   812,
+   842,
+   908
+  ],
+  "ln_truoc": 748,
+  "eps": [
+   863,
+   895,
+   965
+  ],
+  "bv": [
+   11358,
+   12546,
+   13511
+  ],
+  "them": [
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     10.5,
+     10.0,
+     11.2
+    ],
+    "d": 1,
+    "pt": 1
+   },
+   {
+    "ten": "HĐKD cốt lõi (tỷ)",
+    "v": [
+     1525,
+     988,
+     1354
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     7.8,
+     7.5,
+     7.4
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "Niên độ 1/7–30/6. Số niên độ = cộng 4 quý BCTC VNDirect (2025/26 khớp kiểm toán: DT 26.733, LNTT 911). EPS, BVPS trên 941,0 triệu cp (sau chuyển đổi CP ưu đãi). Chưa trả cổ tức tiền cho cổ phiếu phổ thông; cổ tức bằng cổ phiếu."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "NĐ 24/25",
+   "NĐ 25/26",
+   "NĐ 26/27E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "HĐKD cốt lõi (lãi gộp − BH − QLDN)",
+    "mau": "c1",
+    "v": [
+     1525,
+     988,
+     1354
+    ]
+   },
+   {
+    "ten": "Tài chính ròng",
+    "mau": "c2",
+    "v": [
+     -549,
+     -588,
+     -580
+    ]
+   },
+   {
+    "ten": "LDLK & thu nhập khác",
+    "mau": "c4",
+    "v": [
+     -26,
+     510,
+     250
+    ]
+   }
+  ],
+  "ng": "Niên độ 2025/26: cốt lõi −35% nhưng LDLK & khác +510 tỷ giữ LNTT gần như đi ngang. 2026/27E: mô hình cơ sở."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 20/10)",
+  "nhom": "4 mã mía đường + 10 mã thực phẩm vốn hóa lớn",
+  "kv": [
+   [
+    "QNS",
+    9.5
+   ],
+   [
+    "LSS",
+    13.4
+   ],
+   [
+    "SLS",
+    7.6
+   ],
+   [
+    "KTS",
+    18.8
+   ],
+   [
+    "MCH",
+    26.1
+   ],
+   [
+    "VNM",
+    11.0
+   ],
+   [
+    "MSN",
+    15.8
+   ],
+   [
+    "HAG",
+    5.5
+   ],
+   [
+    "KDC",
+    25.0
+   ],
+   [
+    "VHC",
+    7.4
+   ],
+   [
+    "DBC",
+    5.8
+   ],
+   [
+    "ANV",
+    5.8
+   ],
+   [
+    "PAN",
+    3.8
+   ],
+   [
+    "MCM",
+    11.2
+   ]
+  ],
+  "tv": 10.3,
+  "moi_cp": 895,
+  "max": 30,
+  "y": "SBT tính trên EPS 4 quý 895 đ (941,0 triệu cp); bỏ BAF (P/E 120,7 vì LN gần 0). Riêng 4 mã mía đường: P/E trung vị 11,5, P/B 0,4–1,7 (QNS 1,72 nhờ sữa đậu nành) — SBT P/B 1,68 với ROE ~7,5%.",
+  "ng": "BCTC VNDirect, giá 20/10/2026 (QNS giá 15/10)"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: doanh thu đường × biên gộp theo giá đường",
+  "cot": [
+   "NĐ 24/25",
+   "NĐ 25/26",
+   "NĐ 26/27E"
+  ],
+  "dong": [
+   {
+    "nhom": "Doanh thu (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu đường (ước theo tỷ trọng)",
+    "v": [
+     26204,
+     21654,
+     22953
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Giá bán đường so với niên độ trước",
+    "s": [
+     "—",
+     "−11,7% (9T)",
+     "+6%"
+    ]
+   },
+   {
+    "ten": "Doanh thu ngoài đường (gạo, FBMC, phụ phẩm)",
+    "v": [
+     2278,
+     5079,
+     5841
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     28482,
+     26733,
+     28794
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Lợi nhuận (tỷ đồng)"
+   },
+   {
+    "ten": "Biên lợi nhuận gộp (%)",
+    "v": [
+     10.5,
+     10.0,
+     11.2
+    ],
+    "d": 1,
+    "dam": 1
+   },
+   {
+    "ten": "Lợi nhuận gộp",
+    "v": [
+     2984,
+     2674,
+     3226
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí bán hàng + QLDN",
+    "v": [
+     1460,
+     1686,
+     1872
+    ]
+   },
+   {
+    "ten": "HĐKD cốt lõi",
+    "v": [
+     1525,
+     988,
+     1354
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tài chính ròng (thu − chi phí tài chính)",
+    "v": [
+     -549,
+     -588,
+     -580
+    ]
+   },
+   {
+    "ten": "LDLK & thu nhập khác",
+    "v": [
+     -26,
+     510,
+     250
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     950,
+     911,
+     1024
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     812,
+     842,
+     908
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     863,
+     895,
+     965
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     11358,
+     12546,
+     13511
+    ],
+    "ps": 1
+   }
+  ],
+  "ghi": "Biên gộp = 10,0% (niên độ 2025/26) + 0,2 điểm mỗi 1% giá bán đường (9T 2025/26: giá −11,7%, biên −2,4 điểm — FPTS). Doanh thu đường theo tỷ trọng 92% (2024/25, FPTS) và ~81% (2025/26, báo chí). Thuế 10%, CĐTS 1,5% LNST."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông niên độ 2025/26 → 2026/27E (cơ sở)",
+  "dau": [
+   "NĐ 25/26",
+   842
+  ],
+  "cuoi": [
+   "NĐ 26/27E",
+   908
+  ],
+  "buoc": [
+   [
+    "Giá đường +6%, biên +1,2 điểm",
+    422
+   ],
+   [
+    "Gạo, FBMC +15%",
+    68
+   ],
+   [
+    "CP bán hàng + QLDN",
+    -165
+   ],
+   [
+    "Tài chính ròng",
+    7
+   ],
+   [
+    "LDLK & khác về mức thường",
+    -231
+   ],
+   [
+    "Thuế suất 10%, CĐTS",
+    -35
+   ]
+  ],
+  "y": "Giá và biên đường thêm ~420 tỷ, nhưng LDLK & thu nhập khác về 250 tỷ lấy đi ~230 tỷ và chi phí bán hàng + QLDN thêm ~160 tỷ: LN chỉ +8%.",
+  "ng": "mô hình (sau thuế, CĐTS)"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Giá bán đường so với NĐ 25/26",
+   "v": [
+    "0%",
+    "+6%",
+    "+10%"
+   ],
+   "ly_do": "Đường thô TG 14 → gần 20 US cent/lb (3/2026 → 2/10); giá nội địa đi ~nửa biên độ TG (2025/26: TG −23%, SBT −11,7%). FPTS 2026/27F +9,9%"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp",
+   "v": [
+    "10,0%",
+    "11,2%",
+    "12,0%"
+   ],
+   "ly_do": "= 10,0% (2025/26) + 0,2 điểm mỗi 1% giá đường (9T 2025/26: giá −11,7% → biên −2,4 điểm, FPTS). Q2/2026: 13,8%"
+  },
+  {
+   "ten": "Sản lượng đường",
+   "v": [
+    "−2%",
+    "0%",
+    "+3%"
+   ],
+   "ly_do": "9T 2025/26 ~1 triệu tấn (−2,1%: xuất khẩu −37%, nội địa +8,5%); nội địa dư cung 1,72 vs cầu 1,35 triệu tấn (Agromonitor qua FPTS)"
+  },
+  {
+   "ten": "Doanh thu ngoài đường",
+   "v": [
+    "+5%",
+    "+15%",
+    "+25%"
+   ],
+   "ly_do": "2025/26 ~5,1 nghìn tỷ (~19%), gấp ~2,2 lần 2024/25; gạo >2,6 nghìn tỷ, biên gộp mỏng. Mục tiêu FBMC 40% doanh thu 2030"
+  },
+  {
+   "ten": "CP bán hàng + QLDN / doanh thu",
+   "v": [
+    "6,6%",
+    "6,5%",
+    "6,4%"
+   ],
+   "ly_do": "2024/25: 5,1%; 2025/26: 6,3% (bán hàng +32%: cước xuất khẩu, kênh FBMC); 6T cuối 2025/26: 6,9%"
+  },
+  {
+   "ten": "Tài chính ròng (tỷ)",
+   "v": [
+    "−620",
+    "−580",
+    "−500"
+   ],
+   "ly_do": "2025/26: −588 (lãi vay 1.553, thu tài chính 1.482); 2024/25: −549. Vay 16,9 nghìn tỷ (30/6)"
+  },
+  {
+   "ten": "LDLK & thu nhập khác (tỷ)",
+   "v": [
+    "120",
+    "250",
+    "350"
+   ],
+   "ly_do": "2025/26: 510 (LDLK 62–93 tỷ/quý, khác 210); 2022/23–2024/25: −46 · −7 · −25. Đã thoái vốn VNG, CCN Tân Hội..."
+  },
+  {
+   "ten": "P/E trên LN NĐ 2026/27E",
+   "v": [
+    "30",
+    "18",
+    "16"
+   ],
+   "ly_do": "P/E 4 quý từ 2015: thấp 10% 13,1 · 25% 16,7 · trung vị 20,9; LN đáy 2019–2020 được trả phần lớn 25–40 lần; 4 mã mía đường: ~11,5"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 842,
+   "ln27": 358,
+   "gia": 11.4,
+   "mo_ta": "Giá đường đi ngang (dư cung, nhập lậu): biên 10,0%; sản lượng −2%; LDLK & khác 120 tỷ; LN 358 tỷ; P/E 30 (≈ P/B 0,88, sát đáy 2024)"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 842,
+   "ln27": 908,
+   "gia": 17.4,
+   "mo_ta": "Giá đường +6%: biên 11,2%; ngoài đường +15%; LDLK & khác 250 tỷ; LN 908 tỷ; P/E 18 (≈ P/B 1,29)"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 842,
+   "ln27": 1401,
+   "gia": 23.8,
+   "mo_ta": "Giá đường +10%, sản lượng +3%: biên 12,0%; ngoài đường +25%; LDLK & khác 350 tỷ; LN 1.401 tỷ; P/E 16 (LN đỉnh trả P/E thấp)"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/E",
+  "phu": "P/E × LN niên độ 2026/27E (7/2026–6/2027)",
+  "ck": 0,
+  "cp": 941.0,
+  "phan": [
+   {
+    "ten": "Mía đường, ngoài đường",
+    "mau": "c1",
+    "x": [
+     358,
+     908,
+     1401
+    ],
+    "boi": [
+     30,
+     18,
+     16
+    ],
+    "x_ten": "LN NĐ 2026/27E",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     10740,
+     16344,
+     22416
+    ]
+   }
+  ],
+  "von": [
+   10740,
+   16344,
+   22416
+  ],
+  "gia": [
+   11.4,
+   17.4,
+   23.8
+  ]
+ },
+ "nhay": [
+  [
+   "Giá bán đường NĐ 26/27 ±5%",
+   300,
+   5.7
+  ],
+  [
+   "Lãi suất vay ±1 điểm %",
+   149,
+   2.9
+  ],
+  [
+   "LDLK & thu nhập khác ±150 tỷ",
+   133,
+   2.5
+  ],
+  [
+   "CP bán hàng + QLDN ±0,5 điểm % doanh thu",
+   128,
+   2.4
+  ],
+  [
+   "P/E ±2 lần",
+   null,
+   1.9
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   8.9,
+   14.0,
+   13.4,
+   12.8,
+   14.0,
+   15.7,
+   18.4,
+   11.1,
+   10.8,
+   12.4,
+   15.4,
+   20.4,
+   22.7,
+   18.6,
+   18.9,
+   21.6,
+   20.1,
+   19.8,
+   20.8,
+   23.2,
+   20.5,
+   22.6,
+   19.6,
+   19.7,
+   19.6,
+   20.2,
+   20.8,
+   23.0,
+   22.5,
+   26.2,
+   30.3,
+   28.1,
+   22.7,
+   18.1,
+   37.4,
+   38.5,
+   37.8,
+   26.6,
+   26.2,
+   26.9,
+   19.0,
+   20.0,
+   21.5,
+   19.2,
+   21.4,
+   20.9,
+   23.4,
+   23.1,
+   23.9,
+   36.1,
+   33.5,
+   33.3,
+   23.4,
+   22.3,
+   21.6,
+   34.7,
+   37.5,
+   39.4,
+   40.8,
+   40.3,
+   40.4,
+   40.9,
+   24.0,
+   26.0,
+   85.2,
+   76.3,
+   75.5,
+   24.0,
+   24.7,
+   24.6,
+   25.8,
+   30.0,
+   25.8,
+   25.5,
+   26.3,
+   23.5,
+   19.2,
+   20.3,
+   17.9,
+   24.0,
+   22.3,
+   23.3,
+   22.8,
+   24.1,
+   20.5,
+   19.0,
+   20.2,
+   16.0,
+   14.5,
+   15.4,
+   14.9,
+   14.3,
+   12.7,
+   10.5,
+   10.5,
+   11.8,
+   12.0,
+   13.7,
+   13.5,
+   16.0,
+   16.8,
+   16.9,
+   17.8,
+   23.0,
+   20.8,
+   18.4,
+   19.9,
+   19.9,
+   20.2,
+   17.9,
+   16.7,
+   14.7,
+   14.4,
+   14.5,
+   15.9,
+   12.8,
+   13.1,
+   12.6,
+   12.2,
+   13.0,
+   13.4,
+   13.6,
+   14.9,
+   17.1,
+   18.0,
+   19.5,
+   23.9,
+   25.2,
+   24.8,
+   26.1,
+   26.2,
+   26.4,
+   25.1,
+   28.6,
+   26.9,
+   25.9,
+   24.9,
+   26.0,
+   26.0,
+   25.5,
+   25.4,
+   25.3
+  ],
+  "p10": 13.1,
+  "p25": 16.7,
+  "tv": 20.9,
+  "thap": [
+   "2015-01",
+   8.9
+  ],
+  "nay": [
+   "2026-10",
+   25.3
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/E 30 · 18 · 16 trên LN niên độ 2026/27E — tương đương P/B 0,88 · 1,29 · 1,70 vốn chủ cuối niên độ. P/E đã từ 10–23 (1/2022–6/2025) lên 24–29 từ 7/2025 khi LN đi ngang. Từ 4/2026 tính trên 941,0 triệu cp."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026 (quý 1 NĐ)",
+   "fd": "2026-09-30",
+   "ln": [
+    91,
+    230,
+    354
+   ],
+   "ck": 201
+  },
+  {
+   "quy": "Q4/2026 (quý 2 NĐ)",
+   "fd": "2026-12-31",
+   "ln": [
+    82,
+    208,
+    322
+   ],
+   "ck": 161
+  },
+  {
+   "quy": "Cả niên độ 2026/27",
+   "ln": [
+    358,
+    908,
+    1401
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "Cuối 10/2026",
+   "loai": "hai",
+   "tieu": "KQKD quý 1 niên độ 2026/27 (7–9/2026)",
+   "ct": "Tồn kho 4,2 nghìn tỷ (30/6) mua lúc giá đường đáy gặp giá bán đi lên. Mô hình cơ sở LN quý 230 tỷ (cùng kỳ 201); xem biên gộp có giữ trên 12% như Q2/2026.",
+   "tac": [
+    "≥ 300 tỷ",
+    "nghiêng về kịch bản tốt; dưới 150 tỷ: kịch bản xấu"
+   ],
+   "theo_doi": "biên gộp, LDLK"
+  },
+  {
+   "khi": "2/11/2026",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ thường niên niên độ 2025/26",
+   "ct": "Kế hoạch 2026/27: doanh thu 28.000 tỷ, LNTT 956 tỷ (+5%); cổ tức 6% bằng cổ phiếu; bầu bổ sung 2 thành viên HĐQT độc lập.",
+   "tac": [
+    "−5,7%",
+    "giá trị mỗi cp khi phát hành cổ tức CP 6% (tổng giá trị không đổi)"
+   ],
+   "theo_doi": "ngày GDKHQ cổ tức cổ phiếu"
+  },
+  {
+   "khi": "Từ 11/2026",
+   "loai": "len",
+   "tieu": "Vụ ép 2026/27 gặp giá đường thế giới cao",
+   "ct": "Đường thô thế giới gần 20 US cent/lb (2/10, đỉnh 18 tháng) từ 14 (3/2026); Ấn Độ pha 20% ethanol, Brazil giảm tỷ lệ làm đường; ISO dự báo thiếu ~1,5 triệu tấn niên vụ 2026/27.",
+   "tac": [
+    "±5,7 nghìn đ/cp",
+    "mỗi ±5% giá bán đường niên độ 2026/27"
+   ],
+   "theo_doi": "giá đường nội địa, giá mua mía vụ mới"
+  },
+  {
+   "khi": "Đến 6/2031",
+   "loai": "len",
+   "tieu": "Gia hạn thuế phòng vệ với đường Thái Lan",
+   "ct": "QĐ 1309/QĐ-BCT (2/6/2026) kéo dài thuế chống bán phá giá và chống trợ cấp đường mía Thái Lan đến 15/6/2031 — giữ giá nội địa trên giá nhập.",
+   "tac": "",
+   "theo_doi": "lẩn tránh thuế qua nước ASEAN"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Dư cung nội địa, đường nhập lậu",
+   "ct": "9T 2025/26: cung 1,72 triệu tấn (nhập lậu ~0,4) so với cầu 1,35 (Agromonitor qua FPTS); giá nội địa thấp nhất 3 năm, có thể không theo thế giới.",
+   "tac": [
+    "−6,6 nghìn đ/cp",
+    "nếu giá bán đường 2026/27 chỉ đi ngang (biên 10,0%)"
+   ],
+   "theo_doi": "giá đường bán buôn, tồn kho ngành"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lãi suất và đòn bẩy",
+   "ct": "Vay 16,9 nghìn tỷ, 71% ngắn hạn; lãi vay 2025/26 1.553 tỷ. Thu tài chính 1.482 tỷ (phần lớn lãi tiền gửi) giảm theo khi dùng tiền gửi trả nợ.",
+   "tac": [
+    "±2,9 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất vay"
+   ],
+   "theo_doi": "chi phí lãi vay mỗi quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "LDLK và thu nhập khác không lặp lại",
+   "ct": "2025/26: 510 tỷ (56% LNTT) sau ba niên độ âm. Cơ sở 2026/27 giữ 250 tỷ (LDLK 62–93 tỷ/quý); xấu 120 tỷ.",
+   "tac": [
+    "±2,5 nghìn đ/cp",
+    "mỗi ±150 tỷ LDLK & thu nhập khác"
+   ],
+   "theo_doi": "lãi LDLK, lãi thoái vốn"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Thoái vốn ngoài ngành, giảm nợ",
+   "ct": "Đã thoái VNG, CCN Tân Hội, Tân Định, Toàn Hải Vân; giảm sở hữu KCN Đặng Huỳnh, Điện Gia Lai (GEG). Tiền thu về có thể dùng giảm nợ vay.",
+   "tac": "",
+   "theo_doi": "tiền thu thoái vốn, dư nợ vay"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Tuân thủ trái phiếu, phải thu lớn",
+   "ct": "Thanh tra 2/2026: phát hành trái phiếu không thông báo Bộ Tài chính, dùng 1.067 tỷ chưa đúng phương án (FPTS). Phải thu 10,2 nghìn tỷ = 38% doanh thu năm.",
+   "tac": "",
+   "theo_doi": "thuyết minh phải thu, bên liên quan"
+  },
+  {
+   "khi": "2026–2030",
+   "loai": "hai",
+   "tieu": "Mở rộng FBMC: gạo, dừa, chuối",
+   "ct": "Gạo >2,6 nghìn tỷ doanh thu 2025/26 (~10%) nhưng biên gộp mỏng; mục tiêu FBMC 40% doanh thu năm 2030. Quy mô tăng trước, lãi chưa thấy.",
+   "tac": "",
+   "theo_doi": "biên gộp mảng ngoài đường"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Thuế chống bán phá giá, chống trợ cấp đường mía Thái Lan gia hạn đến 15/6/2031 (QĐ 1309/QĐ-BCT ngày 2/6/2026).",
+     "ng": "Bộ Công Thương"
+    },
+    {
+     "h": -1,
+     "t": "Vay 16,9 nghìn tỷ: mỗi +1 điểm % lãi suất ≈ −170 tỷ LNTT (FPTS ước ~190 tỷ chi phí lãi vay).",
+     "ng": "BCTC · FPTS 13/05"
+    },
+    {
+     "h": 0,
+     "t": "El Niño từ 6/2026 có thể giảm năng suất mía khu vực; ISO dự báo thế giới từ dư ~1,2 triệu tấn (2025/26) sang thiếu ~1,5 triệu tấn (2026/27).",
+     "ng": "FPTS 13/05 (ISO)"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Đường thô thế giới gần 20 US cent/lb (2/10/2026, đỉnh 18 tháng) từ 14 (3/2026, thấp nhất 5 năm).",
+     "ng": "Reuters · FPTS"
+    },
+    {
+     "h": -1,
+     "t": "Nội địa dư cung: 9T 2025/26 cung 1,72 triệu tấn (nhập lậu ~0,4) so với cầu 1,35; cả nước sản xuất gần 1,3 triệu tấn, giá thấp nhất 3 năm.",
+     "ng": "FPTS · VnEconomy"
+    },
+    {
+     "h": -1,
+     "t": "Indonesia cắt hạn ngạch nhập khẩu đường 4,2 → 3,1 triệu tấn (2026); đường Thái giá rẻ cạnh tranh ở ASEAN — thị trường xuất khẩu chính của SBT.",
+     "ng": "FPTS 13/05"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "~46% thị phần ngành đường nội địa; 72.000 ha vùng nguyên liệu (Việt Nam, Lào, Campuchia, Úc), 11 nhà máy; B2B với Pepsi, Coca-Cola, Vinamilk.",
+     "ng": "FPTS 13/05"
+    },
+    {
+     "h": -1,
+     "t": "Phải thu 10,2 nghìn tỷ, vay 16,9 nghìn tỷ (30/6/2026); thanh tra 2/2026 kết luận sai phạm phát hành và dùng vốn trái phiếu.",
+     "ng": "BCTC · FPTS 13/05"
+    },
+    {
+     "h": 0,
+     "t": "Chuyển giao thế hệ: Chủ tịch Đặng Huỳnh Ức My nhận 42,76 triệu cp (5–6/2026, thỏa thuận), nắm 11,87%; đăng ký thêm 11 triệu cp (9–10/2026).",
+     "ng": "Nhà Đầu tư · VnBusiness"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Mía đường",
+   "phu": "~46% thị phần ngành đường nội địa; chuỗi vùng mía – tinh luyện – phân phối (FPTS)",
+   "so": [
+    [
+     "Doanh thu đường 9T 2025/26",
+     "17.535 tỷ",
+     "−13,6%"
+    ],
+    [
+     "Giá bán bình quân 9T",
+     "~17,2 nghìn đ/kg",
+     "−11,7%"
+    ],
+    [
+     "Sản lượng 9T",
+     "~1 triệu tấn",
+     "−2,1%"
+    ],
+    [
+     "Giá mía nguyên liệu",
+     "1,17 triệu đ/tấn",
+     "−6,6%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Đường thô nhập khẩu ~62% nguyên liệu, mía ~38%: giá mía chốt theo vụ nên biên co lại khi giá đường giảm nhanh (9T 2025/26: −2,4 điểm).",
+     "ng": "FPTS 13/05"
+    },
+    {
+     "t": "Xuất khẩu 9T −37,4% khi giá nội địa cao hơn thế giới 1–3%; nội địa +8,5% (kênh thương mại +15,3%, B2B ổn định).",
+     "ng": "FPTS 13/05"
+    }
+   ]
+  },
+  {
+   "ten": "Ngoài đường: gạo, FBMC, phụ phẩm",
+   "phu": "Gạo, dừa, chuối, mật rỉ, điện sinh khối, phân bón; mục tiêu FBMC 40% doanh thu 2030",
+   "so": [
+    [
+     "Doanh thu ngoài đường 9T",
+     "2.801 tỷ",
+     "+106%"
+    ],
+    [
+     "Gạo 9T",
+     "~1.500 tỷ",
+     "94 nghìn tấn"
+    ],
+    [
+     "Gạo cả niên độ 2025/26",
+     ">2.600 tỷ",
+     "~10% doanh thu"
+    ],
+    [
+     "Tỷ trọng đường",
+     "~81%",
+     "2024/25: ~92%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Gạo xuất khẩu sang Philippines từ cuối 2025, hợp tác Lộc Trời (giống, tổ chức sản xuất); dừa, chuối mới vào kênh siêu thị.",
+     "ng": "FPTS 13/05"
+    },
+    {
+     "t": "24hMoney (9/2026): gạo gần như không tạo lãi gộp đáng kể — tăng doanh thu nhưng kéo biên gộp chung xuống.",
+     "ng": "24hMoney"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Biên lợi nhuận gộp theo quý",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 1,
+   "nhan": [
+    "Q3/23",
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      10.9,
+      10.4,
+      12.8,
+      10.0,
+      12.3,
+      11.0,
+      10.2,
+      8.3,
+      9.3,
+      7.8,
+      9.4,
+      13.8
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "y": "Đáy 7,8% (Q4/2025) khi giá đường thấp nhất 5 năm; Q2/2026 lên 13,8% — cao nhất 12 quý.",
+   "ng": "BCTC SBT (VNDirect)"
+  },
+  {
+   "ten": "Lãi cốt lõi và lãi vay theo niên độ",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "NĐ 20/21",
+    "NĐ 21/22",
+    "NĐ 22/23",
+    "NĐ 23/24",
+    "NĐ 24/25",
+    "NĐ 25/26"
+   ],
+   "so_le": 0,
+   "ss": [
+    {
+     "ten": "HĐKD cốt lõi",
+     "v": [
+      1088,
+      1005,
+      1445,
+      1646,
+      1525,
+      988
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chi phí lãi vay",
+     "v": [
+      686,
+      802,
+      1499,
+      1725,
+      1522,
+      1553
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "Từ niên độ 2022/23 lãi vay xấp xỉ lãi cốt lõi; 2025/26 lãi vay 1.553 tỷ gấp 1,6 lần.",
+   "ng": "BCTC SBT (VNDirect): cốt lõi = lãi gộp − bán hàng − QLDN"
+  },
+  {
+   "ten": "Doanh thu: đường và ngoài đường",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "NĐ 21/22",
+    "NĐ 22/23",
+    "NĐ 23/24",
+    "NĐ 24/25",
+    "NĐ 25/26"
+   ],
+   "so_le": 0,
+   "ss": [
+    {
+     "ten": "Đường",
+     "v": [
+      16854,
+      23011,
+      26700,
+      26204,
+      21654
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Ngoài đường",
+     "v": [
+      1466,
+      1732,
+      2321,
+      2278,
+      5079
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Ngoài đường gấp ~2,2 lần trong niên độ 2025/26 (gạo >2,6 nghìn tỷ); doanh thu đường giảm ~17%.",
+   "ng": "Doanh thu BCTC × tỷ trọng đường (FPTS 13/05; 2025/26 ~81% theo báo chí)"
+  },
+  {
+   "ten": "Nợ vay, tiền gửi và phải thu",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "so_le": 0,
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      16645,
+      17002,
+      17809,
+      16913,
+      17303,
+      18481,
+      19282,
+      16863
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Tiền + tiền gửi",
+     "v": [
+      8357,
+      8776,
+      8545,
+      7103,
+      7349,
+      8284,
+      9033,
+      9069
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Phải thu ngắn hạn",
+     "v": [
+      12131,
+      9260,
+      8219,
+      9197,
+      10151,
+      10817,
+      11297,
+      10203
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "30/6/2026: vay 16,9 nghìn tỷ, tiền + tiền gửi 9,1, phải thu 10,2 nghìn tỷ.",
+   "ng": "BCTC SBT (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": "niên độ 2025/26",
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 26500,
+    "th": 26733,
+    "ky": "12T",
+    "tg": 100,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ · BCTC kiểm toán"
+   },
+   {
+    "ten": "LN trước thuế",
+    "kh": 951,
+    "th": 911,
+    "ky": "12T",
+    "tg": 100,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ · BCTC kiểm toán"
+   }
+  ],
+  "y": "Đạt 101% doanh thu, 96% LNTT dù có 510 tỷ LDLK & thu nhập khác. Kế hoạch 2026/27 (trình ĐHĐCĐ 2/11): doanh thu 28.000, LNTT 956 tỷ; mô hình cơ sở LNTT 1.024 tỷ.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "FPTS",
+   "ngay": "2026-05-13",
+   "kn": "THEO DÕI",
+   "tp": 19400,
+   "pp": "FCFE 50% + FCFF 50% (WACC 11%)",
+   "y": "LN niên độ 2025/26F 814 tỷ (thực tế 842), 2026/27F 884 tỷ: giá đường +9,9%, biên gộp 12,5%. Giá mục tiêu chia cho 855,1 triệu cp — trước cổ tức CP 6% (4/2026), chưa gồm CP ưu đãi; trên 941,0 triệu cp ≈ 17.600 đ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/SBT/theo_doi_bao_cao_cap_nhat_tin_tuc_fpts_13_05_2026.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo. Trong 8 tháng chỉ có FPTS (13/05/2026, trước BCTC quý 4 niên độ); mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành.",
+ "nguon": [
+  {
+   "ten": "FPTS — Báo cáo cập nhật tin tức SBT (THEO DÕI, 19.400 đ)",
+   "ngay": "13/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/SBT/theo_doi_bao_cao_cap_nhat_tin_tuc_fpts_13_05_2026.pdf"
+  },
+  {
+   "ten": "Vietstock — AgriS tổ chức ĐHĐCĐ niên độ 2025–2026",
+   "ngay": "10/2026",
+   "link": "https://vietstock.vn/2026/10/agris-to-chuc-dai-hoi-dong-co-dong-nien-do-2025-2026-huong-toi-cac-dong-luc-tang-truong-moi-737-1498755.htm"
+  },
+  {
+   "ten": "Doanh nghiệp & Kinh tế xanh — Kế hoạch doanh thu 28.000 tỷ niên độ 2026–2027",
+   "ngay": "10/2026",
+   "link": "https://doanhnghiepkinhtexanh.vn/agris-dat-muc-tieu-doanh-thu-28000-ty-dong-trong-nien-do-2026-2027-a54278.html"
+  },
+  {
+   "ten": "Doanh nghiệp & Kinh tế xanh — Cổ tức bằng cổ phiếu 5–7%",
+   "ngay": "10/2026",
+   "link": "https://doanhnghiepkinhtexanh.vn/agris-dat-muc-tieu-doanh-thu-28000-ty-dong-nien-do-moi-chia-co-tuc-bang-co-phieu-5-7-a54254.html"
+  },
+  {
+   "ten": "Báo Mới (Doanh Nhân) — Thoái vốn loạt khoản đầu tư ngoài ngành",
+   "ngay": "10/2026",
+   "link": "https://baomoi.com/agris-len-ke-hoach-doanh-thu-28-000-ty-dong-thoai-von-loat-khoan-dau-tu-ngoai-nganh-c56199956.epi"
+  },
+  {
+   "ten": "24hMoney — Lợi nhuận quý 4 tăng nhờ biên gộp, cốt lõi cả niên độ giảm hơn một nửa",
+   "ngay": "2026",
+   "link": "https://24hmoney.vn/news/sbt-loi-nhuan-quy-4-tang-nho-bien-lai-gop-cai-thien-nhung-loi-nhuan-tu-hoat-dong-kinh-doanh-cot-loi-ca-nien-do-giam-hon-mot-nua-c30a2822674.html"
+  },
+  {
+   "ten": "Pháp luật — Doanh thu AgriS vượt kế hoạch, gạo đóng góp hơn 2.600 tỷ",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/doanh-thu-agris-sbt-vuot-ke-hoach-mang-gao-dong-gop-hon-2-600-ty-dong.html"
+  },
+  {
+   "ten": "TheLEADER — AgriS vượt kế hoạch doanh thu niên độ 2025–2026",
+   "ngay": "2026",
+   "link": "https://theleader.vn/agris-vuot-ke-hoach-doanh-thu-nien-do-2025--2026-d47151.html"
+  },
+  {
+   "ten": "Bộ Công Thương — Kết quả rà soát cuối kỳ thuế CBPG, CTC đường mía Thái Lan (QĐ 1309/QĐ-BCT)",
+   "ngay": "06/2026",
+   "link": "https://moit.gov.vn/tin-tuc/bo-cong-thuong-ban-hanh-quyet-dinh-ve-ket-qua-ra-soat-cuoi-ky-viec-ap-dung-bien-phap-chong-ban-pha-gia-va-chong-tro-cap-.html"
+  },
+  {
+   "ten": "Reuters (qua The Daily Guardian) — Raw sugar hits 18-month peak",
+   "ngay": "02/10/2026",
+   "link": "https://thedailyguardian.com/world/softs-raw-sugar-hits-18-month-peak-coffee-also-gains-762552/"
+  },
+  {
+   "ten": "Diễn đàn Doanh nghiệp — SBT chuyển đổi cổ phiếu ưu đãi, vốn điều lệ lên hơn 9.400 tỷ",
+   "ngay": "27/07/2026",
+   "link": "https://diendandoanhnghiep.vn/sbt-se-chuyen-doi-co-phieu-tang-von-dieu-le-len-hon-9-400-ty-dong-10182490.html"
+  },
+  {
+   "ten": "Pháp luật — SBT chốt ngày trả cổ tức tiền cho cổ phiếu ưu đãi (4.536 đ/CP)",
+   "ngay": "06/2026",
+   "link": "https://doanhnhan.baophapluat.vn/thanh-thanh-cong-bien-hoa-sbt-chot-ngay-tra-co-tuc-bang-tien-cho-co-dong-so-huu-co-phieu-uu-dai.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — Chủ tịch AgriS đăng ký mua gần 43 triệu cổ phiếu SBT",
+   "ngay": "05/2026",
+   "link": "https://nhadautu.vn/chu-tich-agris-dang-ky-mua-gan-43-trieu-co-phieu-sbt-d105034.html"
+  },
+  {
+   "ten": "VnBusiness — Chủ tịch AgriS gom cổ phiếu SBT giữa kế hoạch chuyển giao thế hệ",
+   "ngay": "09/2026",
+   "link": "https://vnbusiness.vn/chu-tich-agris-manh-tay-gom-co-phieu-sbt-giua-ke-hoach-chuyen-giao-the-he.html"
+  },
+  {
+   "ten": "VnEconomy — Thị trường đường thừa nguồn cung, giá bán dưới giá thành",
+   "ngay": "2026",
+   "link": "https://vneconomy.vn/thi-truong-duong-thua-nguon-cung-gia-ban-duoi-gia-thanh-san-xuat.htm"
+  }
+ ]
+}
