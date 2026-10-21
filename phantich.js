@@ -1588,12 +1588,15 @@
       var viec = ptTai(t); ptCho = viec;
       try { raw = await viec; } catch(e){ raw = null; }
       if (ptFor !== t) return;
-      if (!raw || raw.nam.length < 2) {
+      // ma moi niem yet chi co 1 nam BCTC (GEL): van ve neu ma co ho so phan tich (khong ghi cache, lan sau tai lai)
+      var moi = raw && raw.nam.length === 1 && hsViec ? await hsViec : null;
+      if (ptFor !== t) return;
+      if (!raw || (raw.nam.length < 2 && !moi)) {
         ptBao(t, 'Chưa tải được BCTC năm từ VNDirect' + (raw ? ' (nguồn chỉ có ' + raw.nam.length + ' năm)' : '') + '. <span class="pl" id="ptLai">Thử lại</span>');
         var b = document.getElementById('ptLai'); if (b) b.onclick = function(){ ptMo(t); };
         return;                                   // KHONG ghi cache khi tai hong / thieu
       }
-      if (khoa && raw.bc && raw.lsQ && raw.gia) ptLuu(t, khoa, raw);   // mot nguon tai hong -> khong luu, lan sau thu lai
+      if (!moi && khoa && raw.bc && raw.lsQ && raw.gia) ptLuu(t, khoa, raw);   // mot nguon tai hong -> khong luu, lan sau thu lai
     }
     if (hsViec && !hs.lay(t)) { await Promise.race([hsViec, new Promise(function(ok){ setTimeout(ok, 2500); })]); if (ptFor !== t) return; }
     try { ptVe(t, ptTinh(raw, t), raw); window.__ptLast = { t: t, raw: raw }; }

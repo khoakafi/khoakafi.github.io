@@ -1,0 +1,1210 @@
+{
+ "v": 2,
+ "ma": "GEL",
+ "ten": "Công ty Cổ phần Hạ tầng GELEX",
+ "nganh": "Hạ tầng: khu công nghiệp, vật liệu xây dựng, nước sạch, sân bay",
+ "ky": "BCTC Q2/2026 (chưa có KQKD Q3/2026)",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026 của GEL, VGC hoặc khi hoàn tất chào bán riêng lẻ",
+ "cp_trieu": 890.0,
+ "cp_ng": "Vốn điều lệ 8.900 tỷ (BCTC Q2/2026) = 890 triệu cp sau IPO 100 triệu cp cuối 2025 (MBS, VPBS: 890 triệu cp lưu hành; bảng giá VNDirect tính ~901 triệu). Chưa gồm 100 triệu cp chào bán riêng lẻ đang chờ UBCK.",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Ngoài 50% Viglacera, GEL là 20% sân bay Gia Bình mua bằng nợ: lãi vay ăn hết lợi nhuận"
+ },
+ "dong_mo": "50,21% Viglacera theo giá thị trường bằng {con_pct} vốn hóa GEL; phần còn lại là 8.070 tỷ góp sân bay Gia Bình cùng nước sạch, KCN, BĐS — gánh 14.827 tỷ nợ vay ròng, lãi ~330 tỷ/quý. LN cổ đông 2026E −8 tỷ, 2027E −149 tỷ nếu chưa giảm nợ. Tổng các phần: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "{con_pct}",
+   "nhan": "giá trị thị trường 50,21% VGC so với vốn hóa GEL",
+   "tieu": "Bỏ VGC ra, giá GEL trả cao hơn sổ sách cho khoản góp sân bay bằng nợ",
+   "dk": "up_duoi:-5",
+   "t": "Theo giá 20/10, 50,21% Viglacera đáng ~10.100 tỷ, 42% vốn hóa GEL (~24.300 tỷ). Phần còn lại được trả ~14.100 tỷ, gấp 1,7 lần sổ sách (8.371 tỷ, 30/6). Sổ sách đó gần như chỉ là 8.070 tỷ góp 20% sân bay Gia Bình (2/2026): nước sạch, KCN, BĐS cộng lại xấp xỉ 14.827 tỷ nợ vay ròng ngoài VGC.",
+   "ng": "giá 20/10 · BCTC GEL, VGC (VNDirect) · Doanh nhân",
+   "khac": {
+    "so": "{con_pct}",
+    "nhan": "giá trị thị trường 50,21% VGC so với vốn hóa GEL",
+    "tieu": "Giá đã về gần tổng các phần",
+    "t": "50,21% VGC theo giá thị trường bằng {con_pct} vốn hóa GEL. Phần còn lại — 8.070 tỷ góp sân bay Gia Bình, nước sạch, KCN, BĐS trừ 14.827 tỷ nợ vay ròng — có sổ sách 8.371 tỷ (30/6); giá hiện tại đã gần mức mô hình cho là hợp lý khi lãi vay còn ăn hết phần lợi nhuận VGC mang về."
+   }
+  },
+  {
+   "so": "9%",
+   "nhan": "LN cổ đông so với LNTT hợp nhất 6T/2026",
+   "tieu": "Lợi nhuận hợp nhất vượt kế hoạch, phần của cổ đông GEL rất mỏng",
+   "t": "LNTT hợp nhất 6T/2026 1.182 tỷ, đã vượt kế hoạch năm (1.158), nhưng LN cổ đông chỉ 111 tỷ. VGC hợp nhất 100% nên 49,8% lãi của VGC thuộc cổ đông khác (2025: cổ đông thiểu số nhận 913 tỷ, cổ đông GEL 481 tỷ); lãi vay ngoài VGC thì GEL chịu trọn. Kế hoạch LNTT 2026 của GEL (1.158) thấp hơn của riêng VGC (1.820): phần ngoài VGC dự kiến lỗ ~660 tỷ trước thuế.",
+   "ng": "BCTC GEL, VGC · ĐHĐCĐ GEL (MBS 26/06), VGC (BSC 01/06)"
+  },
+  {
+   "so": "×5,4",
+   "nhan": "lãi vay ngoài VGC Q2/2026 so với Q1/2025",
+   "tieu": "Sân bay mua bằng nợ: lãi vay ăn hết phần VGC mang về đến 2027",
+   "t": "Nợ vay ròng ngoài VGC tăng từ 3.508 tỷ (3/2025) lên 14.827 tỷ (6/2026): vay hợp vốn 200 triệu USD (HSBC, 3/2026) và góp 8.062,5 tỷ cho 20% Hạ tầng Hàng không Masterise. Lãi vay ngoài VGC 331 tỷ/quý, gấp 2,3 lần lợi nhuận gộp phần này. Mô hình: phần ngoài VGC lỗ ~1.010 tỷ năm 2027, lớn hơn phần VGC đem về (861); sân bay mới phục vụ chuyên cơ từ giữa 2027, nhà ga 30 triệu khách thuộc giai đoạn 2028–2030.",
+   "ng": "BCTC GEL, VGC · Thời báo Tài chính · Znews · MBS 26/06"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Tổng các phần: {up_so} so với giá hiện tại",
+   "t": "50,21% VGC × P/E 13 trên LN VGC 2027E 1.715 tỷ (VGC từ 2015: thấp 25% 12,8, trung vị 15,5) + sân bay theo giá góp + nước sạch, KCN, BĐS theo sổ sách (P/B 1,0 như KBC, SZC — KCN ROE thấp) − 14.827 tỷ nợ vay ròng ngoài VGC; không trừ thêm chiết khấu holding. Xấu 10,9 (VGC P/E 10, sân bay 0,7 lần giá góp), tốt 32,7. Chào bán 100 triệu cp giá 28.600 đ nếu hoàn tất: +0,7 nghìn đ/cp.",
+   "ng": "mô hình · P/E lịch sử VGC: BCTC VNDirect"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   481,
+   -8,
+   -149
+  ],
+  "eps": [
+   540,
+   -9,
+   -167
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Doanh thu hợp nhất (nghìn tỷ)",
+    "v": [
+     14.3,
+     16.9,
+     18.2
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN cổ đông VGC (tỷ)",
+    "v": [
+     1403,
+     1559,
+     1715
+    ]
+   }
+  ],
+  "ng": "LN 2025: BCTC; EPS theo 890 triệu cp hiện nay (cuối 2025 là 790 triệu, trước IPO); không chia cổ tức 2025; chưa tính chào bán riêng lẻ"
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông GEL theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "50,21% Viglacera",
+    "mau": "c1",
+    "v": [
+     705,
+     783,
+     861
+    ]
+   },
+   {
+    "ten": "Ngoài VGC: lãi vay, nước sạch, KCN, BĐS",
+    "mau": "c4",
+    "v": [
+     -224,
+     -791,
+     -1010
+    ]
+   }
+  ],
+  "ng": "Ngoài VGC = LN cổ đông GEL − 50,21% LN cổ đông VGC (BCTC VNDirect). 2026E gồm ~270 tỷ thu tài chính bất thường Q2; 2026E–2027E: mô hình, chưa tính chào bán riêng lẻ."
+ },
+ "sotp": {
+  "con": [
+   {
+    "ma": "VGC",
+    "ten": "Viglacera",
+    "cp_trieu": 448.35,
+    "so_huu": 0.5021,
+    "ln26": 1559,
+    "ln27": 1715,
+    "gtgd": 29,
+    "mau": "c1"
+   }
+  ],
+  "conlai": {
+   "ten": "Sân bay 20%, nước sạch, KCN, BĐS trừ nợ vay",
+   "mau": "c4",
+   "ln27": -1010
+  },
+  "kv_ng": "Sở hữu VGC 50,21% (BSC, VPBS); VGC 448,35 triệu cp. Phần còn lại lỗ vì lãi vay nên không tính P/E",
+  "ng": "VGC: 448,35 triệu cp (SHS 29/07), GEL nắm 50,21%; LN 2026E–2027E của VGC theo mô hình trang này"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo hai phần",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Viglacera (VGC, 100%)"
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     13.3,
+     15.7,
+     16.9
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông VGC (tỷ)",
+    "v": [
+     1403,
+     1559,
+     1715
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Phần của GEL 50,21% (tỷ)",
+    "v": [
+     705,
+     783,
+     861
+    ]
+   },
+   {
+    "nhom": "Ngoài VGC (hợp nhất GEL trừ VGC)"
+   },
+   {
+    "ten": "Doanh thu (tỷ)",
+    "v": [
+     987,
+     1201,
+     1300
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lợi nhuận gộp (tỷ)",
+    "v": [
+     328,
+     503,
+     620
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Bán hàng & quản lý (tỷ)",
+    "v": [
+     -329,
+     -369,
+     -390
+    ]
+   },
+   {
+    "ten": "Thu tài chính, liên kết, khác (tỷ)",
+    "v": [
+     234,
+     567,
+     300
+    ]
+   },
+   {
+    "ten": "Lãi vay & chi phí tài chính (tỷ)",
+    "v": [
+     -406,
+     -1452,
+     -1440
+    ]
+   },
+   {
+    "ten": "Thuế, cổ đông thiểu số (tỷ)",
+    "v": [
+     -51,
+     -40,
+     -100
+    ]
+   },
+   {
+    "ten": "LN ngoài VGC về GEL (tỷ)",
+    "v": [
+     -224,
+     -791,
+     -1010
+    ]
+   },
+   {
+    "nhom": "GEL"
+   },
+   {
+    "ten": "Doanh thu hợp nhất (nghìn tỷ)",
+    "v": [
+     14.3,
+     16.9,
+     18.2
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông GEL (tỷ)",
+    "v": [
+     481,
+     -8,
+     -149
+    ],
+    "dam": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     540,
+     -9,
+     -167
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Ngoài VGC = BCTC hợp nhất GEL − BCTC hợp nhất VGC, từng chỉ tiêu (VNDirect). 2026E = 6 tháng thực tế + 6 tháng ước tính. Chưa tính 100 triệu cp chào bán riêng lẻ (−2.860 tỷ nợ nếu hoàn tất)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông GEL 2025A → 2026E (kịch bản cơ sở)",
+  "dau": [
+   "2025A",
+   481
+  ],
+  "cuoi": [
+   "2026E",
+   -8
+  ],
+  "buoc": [
+   [
+    "Phần VGC",
+    78
+   ],
+   [
+    "Lãi gộp ngoài VGC",
+    175
+   ],
+   [
+    "Thu tài chính",
+    334
+   ],
+   [
+    "Bán hàng, quản lý",
+    -40
+   ],
+   [
+    "Lãi vay, tỷ giá",
+    -1046
+   ],
+   [
+    "Thuế, thiểu số",
+    10
+   ]
+  ],
+  "y": "Lãi vay, tỷ giá ngoài VGC tăng 1.046 tỷ, xóa hết phần VGC thêm (78), lãi gộp nước sạch và ~270 tỷ thu tài chính bất thường Q2. 2027E còn −149 tỷ khi không có khoản bất thường.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "LN cổ đông VGC: 2H/2026 · 2027 (tỷ)",
+   "v": [
+    "600 · 1.310",
+    "780 · 1.715",
+    "950 · 2.040"
+   ],
+   "ly_do": "2H/2025 644; 6T/2026 779 (+2,6%), Q2 +28%. CTCK 2026F: BSC 1.441, Mirae 1.803, SHS 2.201; VGC đặt LNTT −17%"
+  },
+  {
+   "ten": "Lãi vay ngoài VGC: 2H/2026 · 2027 (tỷ)",
+   "v": [
+    "700 · 1.450",
+    "670 · 1.360",
+    "620 · 1.050"
+   ],
+   "ly_do": "Q2/2026 331 tỷ trên 18.021 tỷ nợ vay ngoài VGC (~7,3%/năm). Tốt: lãi suất giảm, trả bớt nợ; xấu: góp thêm cho sân bay, KCN"
+  },
+  {
+   "ten": "Lợi nhuận gộp ngoài VGC: 2H/2026 · 2027",
+   "v": [
+    "230 · 520",
+    "260 · 620",
+    "290 · 800"
+   ],
+   "ly_do": "Chủ yếu nước sạch Sông Đà: 600.000 m³/ngày từ Q4/2025, giá bán buôn 7.767 đ/m³; 6T/2026 243 tỷ. Tốt: KCN Long Sơn, Trấn Dương bắt đầu cho thuê"
+  },
+  {
+   "ten": "Thu tài chính & liên kết ngoài VGC: 2H/2026 · 2027",
+   "v": [
+    "130 · 230",
+    "160 · 300",
+    "200 · 420"
+   ],
+   "ly_do": "Doanh thu tài chính bình quân 5 quý đến Q1/2026 ~57 tỷ/quý; Q2/2026 331 tỷ không lặp lại đều. Sân bay, liên doanh với Frasers chưa có lãi đáng kể"
+  },
+  {
+   "ten": "P/E VGC (× LN VGC 2027E)",
+   "v": [
+    "10",
+    "13",
+    "16"
+   ],
+   "ly_do": "VGC từ 2015: thấp 10% 10,2, thấp 25% 12,8, trung vị 15,5, hiện 13,7; BSC: TB 2021–2025 15,8. 8 mã KCN lớn nhất: P/E 4 quý trung vị 9,1"
+  },
+  {
+   "ten": "Sân bay Gia Bình (× giá góp 8.070 tỷ)",
+   "v": [
+    "0,7",
+    "1,0",
+    "1,3"
+   ],
+   "ly_do": "Góp 2/2026 cho 20%, dự án ~196.000 tỷ; nhà ga 30 triệu khách 2028–2030. Xấu: chậm tiến độ, gọi thêm vốn, chiết khấu 2 năm chưa có dòng tiền"
+  },
+  {
+   "ten": "P/B nước sạch, KCN, BĐS (× sổ sách trước nợ vay)",
+   "v": [
+    "0,85",
+    "1,0",
+    "1,15"
+   ],
+   "ly_do": "Chưa có lãi đủ trả lãi vay. KCN ROE thấp: KBC 0,94, SZC 0,98 lần; ROE 20–30% (IDC, SIP, NTC) 2,1–2,4 lần. Tốt ≈ nước sạch theo DCF của BSC (4.660 tỷ, 100%)"
+  },
+  {
+   "ten": "Nợ vay ròng ngoài VGC (tỷ, mọi kịch bản)",
+   "v": [
+    "14.827",
+    "14.827",
+    "14.827"
+   ],
+   "ly_do": "30/6/2026 = nợ vay ròng hợp nhất GEL 15.269 − VGC 442. Chưa trừ 2.860 tỷ chào bán riêng lẻ (chờ UBCK)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": -278,
+   "ln27": -672,
+   "gia": 10.9,
+   "mo_ta": "LN VGC 2027 1.310 tỷ, P/E 10; sân bay 0,7 lần giá góp; nước sạch, KCN, BĐS 0,85 lần sổ sách; lãi vay ngoài VGC 1.450 tỷ/năm"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": -8,
+   "ln27": -149,
+   "gia": 21.4,
+   "mo_ta": "LN VGC 2027 1.715 tỷ (+10%), P/E 13; sân bay theo giá góp; phần còn lại theo sổ sách; chưa tính chào bán riêng lẻ"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 248,
+   "ln27": 654,
+   "gia": 32.7,
+   "mo_ta": "LN VGC 2027 2.040 tỷ, P/E 16; sân bay 1,3 lần giá góp; nước sạch, KCN, BĐS 1,15 lần sổ sách; lãi vay giảm còn 1.050 tỷ"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo từng phần",
+  "phu": "VGC theo P/E × LN 2027E; sân bay theo giá góp; nước sạch, KCN, BĐS theo sổ sách; trừ nợ vay ròng ngoài VGC",
+  "ck": 0,
+  "cp": 890.0,
+  "phan": [
+   {
+    "ten": "50,21% Viglacera",
+    "mau": "c1",
+    "sh": 0.5021,
+    "x": [
+     1310,
+     1715,
+     2040
+    ],
+    "boi": [
+     10,
+     13,
+     16
+    ],
+    "x_ten": "LN 2027E của VGC",
+    "boi_ten": "P/E",
+    "gt": [
+     6578,
+     11194,
+     16389
+    ]
+   },
+   {
+    "ten": "20% sân bay Gia Bình (Masterise)",
+    "mau": "c2",
+    "x": [
+     8070,
+     8070,
+     8070
+    ],
+    "boi": [
+     0.7,
+     1.0,
+     1.3
+    ],
+    "x_ten": "Giá gốc khoản góp (BCTC Q1/2026)",
+    "boi_ten": "lần giá gốc",
+    "sh": 1,
+    "gt": [
+     5649,
+     8070,
+     10491
+    ]
+   },
+   {
+    "ten": "Nước sạch, KCN, BĐS ngoài VGC",
+    "mau": "c3",
+    "x": [
+     14439,
+     14619,
+     14789
+    ],
+    "boi": [
+     0.85,
+     1.0,
+     1.15
+    ],
+    "x_ten": "Sổ sách cuối 2026E, trước nợ vay",
+    "boi_ten": "P/B",
+    "sh": 1,
+    "gt": [
+     12273,
+     14619,
+     17007
+    ]
+   }
+  ],
+  "von": [
+   9673,
+   19056,
+   29060
+  ],
+  "gia": [
+   10.9,
+   21.4,
+   32.7
+  ],
+  "no_rong": 14827,
+  "no_rong_ten": "Trừ nợ vay ròng ngoài VGC (30/6/2026)"
+ },
+ "nhay": [
+  [
+   "P/E VGC ±2 lần",
+   null,
+   1.9
+  ],
+  [
+   "Sân bay ±0,2 lần giá góp",
+   null,
+   1.8
+  ],
+  [
+   "P/B nước sạch, KCN, BĐS ±0,1",
+   null,
+   1.6
+  ],
+  [
+   "LN VGC 2027 ±10%",
+   86,
+   1.3
+  ],
+  [
+   "Nợ vay ròng ±1.000 tỷ",
+   null,
+   1.1
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -282,
+    -173,
+    -70
+   ],
+   "ck": 27
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -107,
+    54,
+    207
+   ],
+   "ck": 43
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    -278,
+    -8,
+    248
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Q3 thường là quý thấp của VGC (Q3/2025: 92 tỷ), lãi vay ngoài VGC ~330 tỷ/quý. Mô hình: LN cổ đông GEL Q3 −173 tỷ (cùng kỳ 27).",
+   "tac": [
+    "≥ −170 tỷ",
+    "giữ kịch bản cơ sở; dưới −280 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "lãi vay, thu tài chính ngoài VGC"
+  },
+  {
+   "khi": "Q4/26–Q2/27",
+   "loai": "len",
+   "tieu": "Chào bán riêng lẻ 100 triệu cp giá 28.600 đ",
+   "ct": "HĐQT duyệt 17/9: thu 2.860 tỷ trả nợ GELEX (2.431 tỷ) và GELEX Đầu tư (429 tỷ); quỹ An Bình, Công Thương Việt mỗi bên 49 triệu cp. Giá chào bán cao hơn giá trị cơ sở.",
+   "tac": [
+    "+0,7 nghìn đ/cp",
+    "lãi vay giảm ~210 tỷ/năm; pha loãng 11,2%"
+   ],
+   "theo_doi": "chấp thuận của UBCK"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "VGC bàn giao KCN nửa cuối năm",
+   "ct": "Ký mới 111 ha trong 4 tháng (kế hoạch 125 ha), mục tiêu bàn giao 150 ha; Q1 mới bàn giao ~22 ha — phần lớn ghi nhận nửa cuối năm.",
+   "tac": [
+    "±1,3 nghìn đ/cp",
+    "mỗi 10% LN VGC 2027"
+   ],
+   "theo_doi": "diện tích bàn giao, biên gộp KCN"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi vay ngoài VGC",
+   "ct": "Nợ vay ròng ngoài VGC 14.827 tỷ (30/6), gấp 4,2 lần 3/2025; lãi vay 331 tỷ/quý, gấp 2,3 lần lợi nhuận gộp phần ngoài VGC.",
+   "tac": [
+    "−180 tỷ LN/năm",
+    "mỗi 1 điểm % lãi suất trên 18.021 tỷ nợ vay"
+   ],
+   "theo_doi": "nợ vay, lãi suất cho vay"
+  },
+  {
+   "khi": "2027–2030",
+   "loai": "len",
+   "tieu": "Sân bay Gia Bình vào khai thác",
+   "ct": "Giai đoạn 1.1 (giữa 2027) phục vụ chuyên cơ; 1.2 (2028–2030) hoàn thiện nhà ga, nâng lên 30 triệu khách; dài hạn 50–100 triệu khách.",
+   "tac": [
+    "±1,8 nghìn đ/cp",
+    "mỗi 0,2 lần giá góp"
+   ],
+   "theo_doi": "tiến độ thi công, đối tác khai thác"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Góp thêm vốn cho sân bay",
+   "ct": "Vốn điều lệ doanh nghiệp dự án ~40.300 tỷ so với tổng vốn ~196.000 tỷ; nếu tăng vốn chủ, GEL phải góp 20% — thêm nợ hoặc phát hành.",
+   "tac": [
+    "−367 tỷ LN/năm",
+    "mỗi 5.000 tỷ góp thêm bằng vốn vay"
+   ],
+   "theo_doi": "nghị quyết tăng vốn Masterise"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Tỷ giá trên khoản vay 200 triệu USD",
+   "ct": "Vay hợp vốn 5 năm do HSBC thu xếp (19 tổ chức, 3/2026); Q1/2026 đã ghi lỗ chênh lệch tỷ giá trong chi phí tài chính.",
+   "tac": [
+    "−53 tỷ LN",
+    "mỗi 1% USD/VND tăng"
+   ],
+   "theo_doi": "tỷ giá, phòng ngừa"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "len",
+   "tieu": "Kính xây dựng phục hồi nhờ thuế chống bán phá giá",
+   "ct": "Kính Q1/2026 doanh thu 792 tỷ (gấp 3), biên gộp 12% từ −5,3% Q4/2025; VGC giữ ~40% thị phần kính xây dựng.",
+   "tac": "",
+   "theo_doi": "biên gộp VLXD của VGC"
+  },
+  {
+   "khi": "2027",
+   "loai": "hai",
+   "tieu": "KCN, BĐS ngoài VGC: Long Sơn, Trấn Dương, Đồng Nai",
+   "ct": "KCN Long Sơn (850 ha) điều chỉnh quy hoạch cho công nghệ cao, trung tâm dữ liệu; Trấn Dương đang đền bù ~50 ha; Đồng Nai 113 ha chia 6–7 giai đoạn.",
+   "tac": "",
+   "theo_doi": "hợp đồng thuê đất, chuyển nhượng dự án Cần Giờ"
+  },
+  {
+   "khi": "Chưa định",
+   "loai": "hai",
+   "tieu": "Nhà nước thoái 38,6% VGC",
+   "ct": "Bộ Xây dựng còn 38,6% VGC; thoái vốn vướng định giá tài sản ở Cuba. Nếu GEL mua thêm, cần thêm vốn khi đòn bẩy đã cao.",
+   "tac": "",
+   "theo_doi": "phương án thoái vốn"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "LN cổ đông GEL theo quý: phần VGC và phần ngoài VGC",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "50,21% LN VGC",
+     "v": [
+      161,
+      220,
+      46,
+      277,
+      108,
+      283
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Ngoài VGC",
+     "v": [
+      -70,
+      99,
+      -19,
+      -234,
+      -308,
+      28
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Phần VGC đem về 391 tỷ 6T/2026; phần ngoài VGC lỗ 280 tỷ dù Q2 có ~270 tỷ thu tài chính bất thường.",
+   "ng": "BCTC GEL, VGC (VNDirect)"
+  },
+  {
+   "ten": "Ngoài VGC: lãi vay và lợi nhuận gộp",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi vay",
+     "v": [
+      61,
+      75,
+      90,
+      130,
+      233,
+      331
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Lợi nhuận gộp",
+     "v": [
+      9,
+      125,
+      74,
+      119,
+      101,
+      142
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi vay ngoài VGC gấp 5,4 lần trong 5 quý; từ Q1/2026 vượt xa lợi nhuận gộp (chủ yếu nước sạch).",
+   "ng": "BCTC GEL − BCTC VGC (VNDirect)"
+  },
+  {
+   "ten": "Nợ vay ròng: ngoài VGC và VGC",
+   "dv": "nghìn tỷ",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Ngoài VGC",
+     "v": [
+      3.5,
+      3.9,
+      5.5,
+      8.2,
+      15.6,
+      14.8
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "VGC",
+     "v": [
+      2.3,
+      2.1,
+      1.7,
+      1.0,
+      1.0,
+      0.4
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 1,
+   "y": "VGC gần như hết nợ ròng; phần ngoài VGC tăng hơn 4 lần sau khoản vay 200 triệu USD và góp vốn sân bay Gia Bình.",
+   "ng": "BCTC GEL, VGC (VNDirect)"
+  },
+  {
+   "ten": "Viglacera: LN cổ đông theo quý",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN cổ đông VGC",
+     "v": [
+      321,
+      438,
+      92,
+      552,
+      216,
+      563
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q2/2026 563 tỷ (+28%) nhờ KCN và kính; Q3 thường thấp (2025: 92 tỷ) vì bàn giao KCN dồn về quý 2 và quý 4.",
+   "ng": "BCTC VGC (VNDirect) · SHS 29/07"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu hợp nhất (KH 16.649)",
+    "kh": 16649,
+    "th": 8318,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 26/06 (MBS) · BCTC"
+   },
+   {
+    "ten": "LNTT hợp nhất (KH 1.158)",
+    "kh": 1158,
+    "th": 1182,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 26/06 (MBS) · BCTC"
+   },
+   {
+    "ten": "VGC: LNTT (KH 1.820)",
+    "kh": 1820,
+    "th": 1452,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "BSC 01/06 · BCTC VGC"
+   },
+   {
+    "ten": "VGC: ký mới KCN (KH 125 ha)",
+    "kh": 125,
+    "th": 111,
+    "ky": "4T",
+    "tg": 33,
+    "dv": "ha",
+    "ng": "BSC 01/06"
+   }
+  ],
+  "y": "6 tháng LNTT hợp nhất đã vượt kế hoạch năm nhờ VGC (1.452 tỷ, 80% kế hoạch riêng VGC). Kế hoạch ngầm định phần ngoài VGC lỗ ~390 tỷ trước thuế nửa cuối năm; mô hình cơ sở ~480 tỷ.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "MBS",
+   "ngay": "2026-06-26",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "tóm tắt ĐHĐCĐ",
+   "y": "Kế hoạch 2026: doanh thu 16.649 tỷ, LNTT 1.158 tỷ (−42%); 6T sơ bộ LNTT ~980 tỷ. Kế hoạch 5 năm LN +25–30%/năm; chào bán 100 triệu cp; tiến độ 7 KCN, Anmaison, Đồng Nai, sân bay Gia Bình.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GEL/gel_tong_hop_dai_hoi_co_dong_thuong_nien_26_06_2026.pdf"
+  },
+  {
+   "ctck": "VPBS",
+   "ngay": "2026-05-11",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "cập nhật KQKD Q1",
+   "y": "Q1/2026: doanh thu +19,3% (VLXD +48,9%, kính gấp 3, nước +88,4%), LNTT −63,4% vì lãi vay gấp 2,4 lần. Không đưa giá mục tiêu (40.600 trên Simplize là giá cao nhất 52 tuần).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GEL/Hoat_ong_kinh_doanh_cot_loi_tich_cuc_nhung_LN_bi_anh_huong_do_chi_phi_tai_chinh_t_u_cac_du_an_au_tu_moi_.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo. MBS, VPBS chỉ tóm tắt ĐHĐCĐ và KQKD, không có giá mục tiêu; mô hình và định giá của trang tự dựng từ BCTC GEL, VGC và công bố của doanh nghiệp. Phần VGC đối chiếu dự phóng của BSC (01/06), SHS (29/07), Mirae Asset (14/09).",
+ "nguon": [
+  {
+   "ten": "MBS — Tổng hợp ĐHĐCĐ GEL",
+   "ngay": "26/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GEL/gel_tong_hop_dai_hoi_co_dong_thuong_nien_26_06_2026.pdf"
+  },
+  {
+   "ten": "VPBS — KQKD Q1/2026 GEL",
+   "ngay": "11/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GEL/Hoat_ong_kinh_doanh_cot_loi_tich_cuc_nhung_LN_bi_anh_huong_do_chi_phi_tai_chinh_t_u_cac_du_an_au_tu_moi_.pdf"
+  },
+  {
+   "ten": "Mirae Asset — VGC: KCN dẫn dắt, VLXD cải thiện",
+   "ngay": "14/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/bao_cao_ngan_tong_cong_ty_viglacera_vgc_vn_mua_khu_cong_nghiep_dan_dat_vat_lieu_xay_dung_cai_thien.pdf"
+  },
+  {
+   "ten": "SHS — VGC cập nhật KQKD Q2/2026",
+   "ngay": "29/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/vgc_cap_nhat_kqkd_quy_2_2026.pdf"
+  },
+  {
+   "ten": "BSC — VGC cập nhật Q1/2026 và ĐHCĐ 2026",
+   "ngay": "01/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/Cap_nhat_KQKD_Q12026_va_HC_2026.pdf"
+  },
+  {
+   "ten": "BSC — GEX: định giá từng phần (VCW, Titan Hải Phòng, Long Sơn)",
+   "ngay": "10/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/GEX/Cap_nhat_HC_2025_va_trien_vong_kinh_doanh_2026-2027.pdf"
+  },
+  {
+   "ten": "Mekong ASEAN — ĐHĐCĐ Gelex Infra: kế hoạch, chào bán 100 triệu cp",
+   "ngay": "06/2026",
+   "link": "https://mekongasean.vn/dhdcd-gelex-infra-ke-hoach-doanh-thu-ky-luc-cha-o-ban-100-trieu-co-phieu-56665.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Kế hoạch doanh thu 16.600 tỷ năm 2026",
+   "ngay": "06/2026",
+   "link": "https://mekongasean.vn/ha-ta-ng-gelex-dat-muc-tieu-doanh-thu-hon-16600-ty-do-ng-nam-2026-55423.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Chào bán riêng lẻ 100 triệu cp giá 28.600 đ",
+   "ngay": "09/2026",
+   "link": "https://mekongasean.vn/ha-tang-gelex-chuan-bi-huy-dong-gan-2900-ty-dong-qua-co-phieu-59714.html"
+  },
+  {
+   "ten": "Doanh nhân — Phát hành riêng lẻ để trả nợ công ty mẹ",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/ha-tang-gelex-gel-du-thu-3-330-ty-dong-tu-phat-hanh-rieng-le-de-thanh-toan-no-vay-cong-ty-me.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — Vay hợp vốn 200 triệu USD (HSBC)",
+   "ngay": "03/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/ha-tang-gelex-cong-bo-hoan-tat-khoan-vay-hop-von-200-trieu-usd-voi-hsbc-194714.html"
+  },
+  {
+   "ten": "Znews — Góp 20% vốn làm sân bay Gia Bình",
+   "ngay": "02/2026",
+   "link": "https://znews.vn/ha-tang-gelex-gop-20-von-lam-san-bay-gia-binh-post1628169.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Rót hơn 8.000 tỷ vào sân bay Gia Bình",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/gelex-infra-can-dich-loi-nhuan-nam-rot-hon-8000-ty-do-ng-va-o-san-bay-gia-bi-nh-57884.html"
+  },
+  {
+   "ten": "VCCI — Công ty hạ tầng hàng không ~40.300 tỷ mang thương hiệu Masterise",
+   "ngay": "2026",
+   "link": "https://www.vcci.com.vn/tin-tuc/xuat-hien-cong-ty-ha-tang-hang-khong-40300-ty-mang-thuong-hieu-masterise"
+  },
+  {
+   "ten": "Doanh nhân — Lập công ty con, không chia cổ tức 2025",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/gelex-infra-gel-lap-cong-ty-con-moi-chot-ke-hoach-giu-lai-loi-nhuan-don-luc-cho-du-an-san-bay-gia-binh.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — 6 tháng 2026",
+   "ngay": "07/2026",
+   "link": "https://nhadautu.vn/ha-tang-gelex-hoan-thanh-85-ke-hoach-loi-nhuan-sau-nua-dau-nam-d105892.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — Trước thềm IPO: cơ cấu công ty con",
+   "ngay": "2025",
+   "link": "https://nhadautu.vn/su-hap-dan-cua-gelex-infra-truoc-them-ipo-d101096.html"
+  },
+  {
+   "ten": "The Leader — Vị thế Hạ tầng Gelex trước IPO",
+   "ngay": "2025",
+   "link": "https://theleader.vn/vi-the-cua-ha-tang-gelex-truoc-them-ipo-d41871.html"
+  },
+  {
+   "ten": "Doanh nhân — Chấp thuận niêm yết HOSE",
+   "ngay": "01/2026",
+   "link": "https://doanhnhan.baophapluat.vn/ha-tang-gelex-gel-chinh-thuc-duoc-chap-thuan-niem-yet-hose-dinh-gia-doanh-nghiep-vuot-moc-1-ty-usd.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — 890 triệu cp niêm yết HOSE",
+   "ngay": "01/2026",
+   "link": "https://nhadautu.vn/890-trieu-co-phieu-ha-tang-gelex-chinh-thuc-duoc-chap-thuan-niem-yet-tren-hose-d102630.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Bất động sản, mũi nhọn mới của Gelex Infra",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/bat-dong-sa-n-mui-nhon-chien-luoc-moi-cu-a-gelex-infra-56700.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — Viglacera đặt mục tiêu lãi 1.800 tỷ 2026",
+   "ngay": "2026",
+   "link": "https://nhadautu.vn/viglacera-dat-muc-tieu-lai-1800-ty-dong-trong-nam-2026-d102037.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Dòng FDI vào miền Bắc giữ nhịp: VGC ký mới 111 ha trong 4 tháng, gần đủ kế hoạch 125 ha cả năm.",
+     "ng": "BSC 01/06"
+    },
+    {
+     "h": -1,
+     "t": "Lãi suất cao hơn 2025 (BSC nâng WACC định giá GEX từ 10,7% lên 11,6%); GEL vay ~18.000 tỷ ngoài VGC, mỗi 1 điểm % ≈ 180 tỷ/năm.",
+     "ng": "BSC 10/04 · BCTC"
+    },
+    {
+     "h": -1,
+     "t": "Khoản vay 200 triệu USD chịu rủi ro tỷ giá; Q1/2026 đã ghi lỗ chênh lệch tỷ giá.",
+     "ng": "VPBS 11/05 · Thời báo Tài chính"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "BĐS phục hồi kéo VLXD: 113 dự án nhà ở thương mại được cấp phép Q2/2026 (+95% so với quý trước); kính được bảo vệ bằng thuế chống bán phá giá.",
+     "ng": "Mirae 14/09"
+    },
+    {
+     "h": 0,
+     "t": "KCN niêm yết được định giá theo ROE: KBC 0,94 lần, SZC 0,98 lần sổ sách; IDC, SIP, NTC (ROE 20–30%) 2,1–2,4 lần (giá 20/10).",
+     "ng": "BCTC VNDirect, giá 20/10/2026"
+    },
+    {
+     "h": 1,
+     "t": "Nước sạch Sông Đà: giá bán buôn tăng 53,2% lên 7.767 đ/m³ (2025), công suất gấp đôi lên 600.000 m³/ngày từ Q4/2025.",
+     "ng": "VPBS 11/05"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Chiến lược 2026–2030: doanh thu +10–12%/năm, LN +25–30%/năm, thêm trên 2.000 ha đất KCN đến 2030.",
+     "ng": "MBS 26/06"
+    },
+    {
+     "h": -1,
+     "t": "Không chia cổ tức 2025 để dồn vốn cho sân bay Gia Bình; còn vay GELEX 2.431 tỷ, GELEX Đầu tư 429 tỷ.",
+     "ng": "Doanh nhân · Mekong ASEAN 09/2026"
+    },
+    {
+     "h": 0,
+     "t": "GEX nắm 70,2% sau IPO 100 triệu cp (cuối 2025, giá bình quân 28.820 đ); chào bán riêng lẻ sẽ hạ còn ~63,1%.",
+     "ng": "hồ sơ GEX · Mekong ASEAN"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Viglacera (VGC) — vật liệu xây dựng, KCN, nhà ở",
+   "phu": "GEL nắm 50,21% · HOSE · Nhà nước còn 38,6% (SHS 29/07)",
+   "so": [
+    [
+     "Doanh thu 6T",
+     "7.737 tỷ",
+     "+27%"
+    ],
+    [
+     "LN cổ đông 6T",
+     "779 tỷ",
+     "+2,6%"
+    ],
+    [
+     "Ký mới KCN 4T",
+     "111 ha",
+     "KH 125 ha"
+    ],
+    [
+     "Kính Q1/2026",
+     "792 tỷ",
+     "×3"
+    ]
+   ],
+   "y": [
+    {
+     "t": "KCN: Sông Công II GĐ2 (296 ha), Dốc Đá Trắng (288 ha), Trấn Yên GĐ1 (256 ha) và 3 KCN mới (867 ha) đã được chấp thuận.",
+     "ng": "Mirae 14/09"
+    },
+    {
+     "t": "VLXD 6T/2026 doanh thu 4.616 tỷ (+29%); BĐS KCN 2.499 tỷ (+27%); nhà ở 329 tỷ (+148%), 479 căn NOXH tiêu thụ.",
+     "ng": "Mirae 14/09"
+    },
+    {
+     "t": "Biên gộp KCN Q1/2026 55%, VLXD thấp hơn: LN cổ đông VGC dao động theo quý có bàn giao đất KCN.",
+     "ng": "BSC 01/06"
+    }
+   ]
+  },
+  {
+   "ten": "Sân bay Gia Bình — 20% CTCP Hạ tầng Hàng không Masterise",
+   "phu": "Góp 8.062,5 tỷ ngày 13/2/2026 · dự án sân bay tư nhân lớn nhất Việt Nam",
+   "so": [
+    [
+     "Vốn góp của GEL",
+     "8.062,5 tỷ",
+     "20%"
+    ],
+    [
+     "Tổng vốn dự án",
+     "~196.000 tỷ",
+     ""
+    ],
+    [
+     "Giai đoạn 1.1",
+     "giữa 2027",
+     "chuyên cơ"
+    ],
+    [
+     "Giai đoạn 1.2",
+     "2028–2030",
+     "30 triệu khách"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Quy mô dài hạn 50–100 triệu khách, 2,5–4 triệu tấn hàng hóa/năm.",
+     "ng": "MBS 26/06"
+    },
+    {
+     "t": "Tiền chào bán riêng lẻ (2.860 tỷ) dùng tái cơ cấu các khoản vay đã dùng góp vốn sân bay.",
+     "ng": "Doanh nhân · Mekong ASEAN"
+    }
+   ]
+  },
+  {
+   "ten": "Nước sạch Sông Đà (VCW)",
+   "phu": "GEL nắm 62,46% · cấp nước khu vực Hà Nội",
+   "so": [
+    [
+     "Công suất",
+     "600.000 m³/ngày",
+     "gấp đôi từ Q4/2025"
+    ],
+    [
+     "Giá bán buôn",
+     "7.767 đ/m³",
+     "+53,2%"
+    ],
+    [
+     "Doanh thu Q1/2026",
+     "245 tỷ",
+     "+88,4%"
+    ],
+    [
+     "Nợ vay 9/2025",
+     "3.509 tỷ",
+     "BCTC VCW"
+    ]
+   ],
+   "y": [
+    {
+     "t": "VCW kỳ vọng LN 2026 ngang 2025, tăng mạnh hơn 2027 khi nhà máy giai đoạn 2 vận hành ổn định.",
+     "ng": "MBS 26/06"
+    },
+    {
+     "t": "BSC (10/04) định giá VCW bằng DCF 4.660 tỷ (100%) — cao hơn nhiều sổ sách; trang này để nước sạch trong phần định giá theo sổ sách.",
+     "ng": "BSC 10/04"
+    }
+   ]
+  },
+  {
+   "ten": "KCN, BĐS ngoài VGC",
+   "phu": "PXL 65% (KCN Long Sơn) · Titan Hải Phòng 70% (Trấn Dương) · FIH 100% (226 Lê Lai) · 49% Titan Corporation",
+   "so": [
+    [
+     "KCN Long Sơn",
+     "850 ha",
+     "GĐ1 300 ha"
+    ],
+    [
+     "Vốn chủ PXL 6/2026",
+     "1.762 tỷ",
+     ""
+    ],
+    [
+     "IPO góp Titan HP, FIH",
+     "~2.800 tỷ",
+     "Q1/2026"
+    ],
+    [
+     "Đồng Nai",
+     "113 ha",
+     "6–7 giai đoạn"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Anmaison Hải Phòng (19 ha): chuyển 51% cho Frasers trong 6T/2026, dự kiến đủ điều kiện mở bán cuối năm.",
+     "ng": "MBS 26/06 · BSC 10/04"
+    },
+    {
+     "t": "Dự án Cần Giờ (với Fideco) là đầu tư ngắn hạn: tiếp tục phát triển hoặc chuyển nhượng trong 2026.",
+     "ng": "MBS 26/06"
+    }
+   ]
+  }
+ ]
+}
