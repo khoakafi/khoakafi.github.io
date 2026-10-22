@@ -10,12 +10,15 @@ on:
         description: Chay thu het chuoi (bo thang moi nhat khoi ban sao, doc lai PDF), khong ghi gi
         type: boolean
         default: false
+      thang:
+        description: Chay bu cac thang (vd "2025-06,2025-08"), thu link VN roi EN; tick thu = chi doc, khong ghi
+        default: ''
 permissions:
   contents: write
 jobs:
   lay:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
     - uses: actions/checkout@v4
     - run: which pdftotext || (sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq poppler-utils >/dev/null)
@@ -24,11 +27,15 @@ jobs:
         GH_TOKEN: ${{ github.token }}
       run: |-
         git clone -q --depth 1 -b lai-suat-data "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/data
-        if [ "${{ inputs.thu }}" = "true" ]; then
+        if [ -n "${{ inputs.thang }}" ]; then
+          F=/tmp/data/sbv-thang.json; [ "${{ inputs.thu }}" = "true" ] && { cp $F /tmp/thu.json; F=/tmp/thu.json; }
+          FILE=$F THANG="${{ inputs.thang }}" IN_PDF=1500 DELAY=12000 node scripts/lai-suat-thang.mjs
+        elif [ "${{ inputs.thu }}" = "true" ]; then
           node -e "const f=require('fs'),d=JSON.parse(f.readFileSync('/tmp/data/sbv-thang.json'));const k=Object.keys(d.thang).pop();console.log('THU: bo',k,JSON.stringify(d.thang[k]));delete d.thang[k];f.writeFileSync('/tmp/thu.json',JSON.stringify(d))"
           FILE=/tmp/thu.json node scripts/lai-suat-thang.mjs; exit 0
+        else
+          FILE=/tmp/data/sbv-thang.json node scripts/lai-suat-thang.mjs
         fi
-        FILE=/tmp/data/sbv-thang.json node scripts/lai-suat-thang.mjs
         cd /tmp/data
         if ! git diff --quiet; then
           git config user.name github-actions; git config user.email actions@github.com
