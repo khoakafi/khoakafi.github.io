@@ -23,9 +23,10 @@ function tai(url, f = '/tmp/_ls.bin') {
 const EN = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
 const DELAY = +(process.env.DELAY || 6000);
 const linkVn = (y, m) => '/w/' + encodeURIComponent(`diễn-biến-lãi-suất-của-tổ-chức-tín-dụng-đối-với-khách-hàng-tháng-${m}`) + '/' + y;
-const linkEn = (y, m) => `/en/w/developments-of-interest-rates-applied-by-credit-institutions-${EN[m - 1]}-${y}-`;
+// co thang co dau '-' cuoi (november-2025-), co thang khong (july-2026)
+const linkEn = (y, m) => [`/en/w/developments-of-interest-rates-applied-by-credit-institutions-${EN[m - 1]}-${y}-`, `/en/w/developments-of-interest-rates-applied-by-credit-institutions-${EN[m - 1]}-${y}`];
 async function timBai(y, m) {
-  for (const l of [linkVn(y, m), linkEn(y, m)]) {
+  for (const l of [linkVn(y, m), ...linkEn(y, m)]) {
     let h = null;
     try { h = tai(BASE + l, '/tmp/_ls_thu.html').toString('utf8'); } catch (e) { if (!/HTTP 404/.test(e.message)) throw e; }
     await ngu(DELAY);
