@@ -42,7 +42,7 @@ export function docPdfEn(t) {
   const o = {}, n = String.raw`(\d+(?:\.\d+)?)\s*%?`, dep = t.split(/interest rates? in USD/i)[0];
   for (const m of dep.matchAll(new RegExp(n + String.raw`(?:\s*[-–]\s*` + n + String.raw`)?\s*(?:p\.a\.\s*)?for ([^;%]*?terms)`, 'gi'))) {
     const a = +m[1], b = m[2] != null ? +m[2] : a, lab = m[3];
-    const k = /24-month plus|over 24|above 24/i.test(lab) ? 'd24' : /12-month to (below )?24/i.test(lab) ? 'd12_24' : /6-month to (below )?12/i.test(lab) ? 'd6_12'
+    const k = /24-month plus|over 24|above 24/i.test(lab) ? 'd24' : /12-month( plus)? to (below )?24/i.test(lab) ? 'd12_24' : /6-month to (below )?12/i.test(lab) ? 'd6_12'
       : /1-month to below 6/i.test(lab) ? 'd1_6' : /demand|below 1-month/i.test(lab) ? 'kkh' : null;
     if (k && !o[k]) o[k] = [a, b];
   }
