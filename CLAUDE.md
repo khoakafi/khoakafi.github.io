@@ -177,7 +177,12 @@ Chạy thử: `tong-quan.yml` tick `thu` → file ở nhánh `tongquan-thu` củ
 Nguồn gốc số chart VnExpress = PDF "Diễn biến lãi suất của TCTD đối với khách hàng tháng M/YYYY" của NHNN (đăng ~17–18 tháng sau;
 số trên chart = **cận trên** của khoảng). Workflow `lai-suat-thang.yml` chạy 09:23 VN mỗi ngày: đọc link mới nhất trên trang chủ NHNN,
 tải PDF, `scripts/lai-suat-thang.mjs` đọc số → `sbv-thang.json` trên nhánh **`lai-suat-data`** (không đụng web). Chạy thử: Run workflow, tick `thu`.
-NHNN chặn ~5 lượt/IP (403) → mỗi lần chạy chỉ 3 lượt. Trang NHNN mới chỉ còn bài từ ~giữa 2025; 2012–2024 không có (IMF, World Bank,
+NHNN chặn ~5 lượt/IP (403) → mỗi lần chạy chỉ 3 lượt.
+**Link bài không đều (22/10/2026):** nhiều tháng bản tiếng Việt 404 dù đúng mẫu (`tháng-M` lẫn `tháng-0M`) → script thử thêm **bản tiếng Anh**
+`/en/w/developments-of-interest-rates-applied-by-credit-institutions-<month>-<year>-` (có tháng không có `-` cuối, vd july-2026); PDF bản EN là
+tiếng Anh → `docPdfEn`. Chạy bù: Run workflow, ô `thang` = `2026-01` (**mỗi lượt 1 tháng** — nhiều tháng một lượt dính 403). Quá hạn (từ ngày 25
+tháng M+2) mà không thấy tháng M thì tự thử tháng sau, khỏi kẹt. Đã lấy từ PDF: 10/2025, 1, 3, 5, 6/2026 (khớp VnExpress). Không có trên NHNN:
+6/2025, 8/2025 (404 cả hai bản), 11/2025 (bản EN không kèm PDF) → vẫn dùng số VnExpress. Trang NHNN mới chỉ còn bài từ ~giữa 2025; 2012–2024 không có (IMF, World Bank,
 web.archive không có số tháng VN). Năm 2019–2023 chỉ có World Bank bình quân năm (khác định nghĩa). Chưa có số tháng 2024 – 5/2025.
 
 ## Nghiên cứu đỉnh/đáy lớn (27/09/2026, CHƯA lên web)
