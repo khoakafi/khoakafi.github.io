@@ -36,7 +36,25 @@ async function timBai(y, m) {
 }
 const so = x => +x.replace(',', '.');
 const R = String.raw`(\d+(?:,\d+)?)\s*[-–]\s*(\d+(?:,\d+)?)\s*%`;
+// PDF ban tieng Anh ("Developments of interest rates applied by credit institutions <Month> YYYY")
+export function docPdfEn(t) {
+  t = t.replace(/\s+/g, ' ');
+  const o = {}, n = String.raw`(\d+(?:\.\d+)?)\s*%?`, dep = t.split(/interest rates? in USD/i)[0];
+  for (const m of dep.matchAll(new RegExp(n + String.raw`(?:\s*[-–]\s*` + n + String.raw`)?\s*(?:p\.a\.\s*)?for ([^;%]*?terms)`, 'gi'))) {
+    const a = +m[1], b = m[2] != null ? +m[2] : a, lab = m[3];
+    const k = /24-month plus|over 24|above 24/i.test(lab) ? 'd24' : /12-month to (below )?24/i.test(lab) ? 'd12_24' : /6-month to (below )?12/i.test(lab) ? 'd6_12'
+      : /1-month to below 6/i.test(lab) ? 'd1_6' : /demand|below 1-month/i.test(lab) ? 'kkh' : null;
+    if (k && !o[k]) o[k] = [a, b];
+  }
+  const cv = t.slice(t.search(/Lending interest rates/i) + 1);
+  const mv = cv.match(new RegExp(String.raw`average lending interest rates were between ` + n + String.raw`\s*[-–]\s*` + n, 'i')); if (mv) o.vay = [+mv[1], +mv[2]];
+  const mu = cv.match(/priority sectors and areas was (\d+(?:\.\d+)?)\s*%/i); if (mu) o.uutien = +mu[1];
+  const mt = t.match(/credit institutions\s*\(?\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i);
+  if (mt) o.thang = `${mt[2]}-${String(EN.indexOf(mt[1].toLowerCase()) + 1).padStart(2, '0')}`;
+  return o;
+}
 export function docPdf(t) {
+  if (/Developments of interest rates/i.test(t) && !/Lãi suất/.test(t)) return docPdfEn(t);
   t = t.replace(/\s+/g, ' ');
   const o = {}, dep = t.split('Lãi suất USD')[0];
   for (const m of dep.matchAll(new RegExp(R + String.raw`/năm,? (?:đối với|cho) (?:tiền gửi )?(?:có )?(kỳ hạn(?:(?!%| và \d)[^;])*|tiền gửi không kỳ hạn(?:(?!%| và \d)[^;])*)`, 'g'))) {
