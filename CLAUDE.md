@@ -205,6 +205,11 @@ kafi-core `research/tplus.mjs` + `research/tplus-KET-QUA.md` (workflow `tplus.ym
 kafi-core `research/breakout-thuc-te-KET-QUA.md`. 125 deal B★ từ 2019: TB20 trung vị 38 tỷ → 10 tỷ/deal chỉ vừa 37% deal (≤20% TB20).
 79% deal đóng trần: mua được trần +5,0%/deal, lỡ trần mua mở cửa hôm sau +1,8%. Vào sớm khi chạm ngưỡng: 1/3 xịt nhưng xịt chỉ −0,78%/lệnh.
 
+## Ngưỡng nền chặt B★ 0,6 — giữ nguyên (22/10/2026)
+
+ORS 21/10 trượt B★ vì biên độ 10/30 phiên = 0,63. kafi-core `research/nen-chat-KET-QUA.md`: deal sát ngưỡng 0,60–0,65 thắng 3/11, TB −0,6%/deal
+(B★ +7,9%); 0,65–0,80 cũng âm; nới ngưỡng chỉ tăng sụt. Đừng nới. (ORS Q3/2026 LNST −35% YoY — luật hiện cho qua YoY âm, mục còn mở.)
+
 ## Phân tích cơ bản chuyên sâu (15/10/2026)
 
 `phantich.js` (file riêng, `?v=`): khối dưới "Tài chính — 12 quý" ở tab Chi tiết mã (web + app). dashboard_app.js bọc trong IIFE nên
