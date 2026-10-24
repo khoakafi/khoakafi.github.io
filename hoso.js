@@ -166,7 +166,9 @@
   // gia: nghin dong/cp; cp: trieu cp; ln: ty dong -> von hoa (ty) = gia * cp; P/E = gia * cp / ln
   function peTu(gia, cp, ln){ return (gia > 0 && cp > 0 && ln > 0) ? gia * cp / ln : null; }
   // tp_sau_ct: bao cao ghi ro gia muc tieu da tru co tuc (vd ACBS GAS 'cuoi 2026, sau co tuc') -> khong tru lan nua
-  function tpDc(p, x){ var tru = 0; if (!x.tp_sau_ct) (p.co_tuc || []).forEach(function(c){ if (c[0] > x.ngay) tru += +c[1] || 0; }); return x.tp ? x.tp - tru : null; }   // dong
+  // chi tru co tuc da qua ngay GDKHQ (gia hom nay da tach co tuc) va sau ngay bao cao; truoc GDKHQ gia con gom co tuc nen so thang
+  function tpDc(p, x){ var tru = 0, nay = new Date(Date.now() + 7 * 36e5).toISOString().slice(0, 10);
+    if (!x.tp_sau_ct) (p.co_tuc || []).forEach(function(c){ if (c[0] > x.ngay && c[0] <= nay) tru += +c[1] || 0; }); return x.tp ? x.tp - tru : null; }   // dong
   // Thang gia + trung vi chi dung bao cao CTCK trong 8 thang (ban cu van liet ke o Phu luc, ghi ngay)
   function soGia(p, gia){
     var ct = (p.ctck || []).filter(function(x){ var t = Date.parse(x.ngay || ''); return !(t > 0) || (Date.now() - t) / 864e5 <= 245; }),
