@@ -3,8 +3,8 @@
  "ma": "MBS",
  "ten": "CTCP Chứng khoán MB",
  "nganh": "Chứng khoán",
- "ky": "BCTC Q3/2026 (công bố 15/10) · thanh khoản thị trường đến 20/10/2026 · giá 20/10/2026",
- "cap_nhat": "2026-10-20",
+ "ky": "BCTC Q3/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
  "lan_sau": "sau BCTC Q4/2026 (01/2027)",
  "cp_trieu": 1001.0,
  "cp_ng": "Vốn điều lệ 30/9/2026 (10.010 tỷ), sau chào bán 333,6 triệu cp tỷ lệ 2:1 (hoàn tất 21/5/2026)",
@@ -23,15 +23,15 @@
   {
    "so": "−2,8 tỷ",
    "nhan": "LN gộp môi giới Q3/2026 (cùng kỳ +76 tỷ)",
-   "tieu": "Môi giới đã sang lỗ: dưới ~15.800 tỷ/phiên là không có lãi",
-   "t": "Doanh thu môi giới Q3/2026 127,6 tỷ (−65%), chi phí ~130 tỷ. Từ Q3/2025 và Q3/2026: chi phí ~44 tỷ/quý cố định + 67% doanh thu → hòa vốn ở ~136 tỷ/quý, tức GTGD ~15.800 tỷ/phiên với tỷ lệ 1,38 phần vạn hiện nay. 1–20/10 chỉ 12.677 tỷ/phiên; thị phần HOSE 5,61% → 4,84% (thứ 6), xa mục tiêu ≥ 6%.",
+   "tieu": "Q3 xác nhận môi giới sang lỗ: dưới ~15.800 tỷ/phiên là không có lãi",
+   "t": "Doanh thu môi giới Q3/2026 127,6 tỷ (−65%), chi phí ~130 tỷ. Từ Q3/2025 và Q3/2026: chi phí ~44 tỷ/quý cố định + 67% doanh thu → hòa vốn ở ~136 tỷ/quý, tức GTGD ~15.800 tỷ/phiên với tỷ lệ 1,38 phần vạn hiện nay. 1–23/10 chỉ 13.198 tỷ/phiên; thị phần HOSE 5,61% → 4,84% (thứ 6), xa mục tiêu ≥ 6%.",
    "ng": "BCTC Q3 · Stockbiz, Mekong ASEAN 10/2026 · tab Toàn cảnh"
   },
   {
    "so": "6,2 điểm",
    "nhan": "lãi cho vay − chi phí vốn, Q3/2026",
    "tieu": "Cho vay ký quỹ gánh lợi nhuận, chênh lệch thuộc nhóm rộng nhất",
-   "t": "Lãi cho vay 9T/2026 1.392 tỷ (+40%), gấp 1,5 lần chi phí lãi vay. Lợi suất 11,6%, chi phí vốn 5,4% (lãi vay ÷ nợ phải trả BQ); Q2/2026 chênh lệch 5,9 điểm, thứ 3 trong 9 CTCK niêm yết cho vay lớn có đủ số liệu, sau VCK (8,5), VND (6,6); SSI 5,3, TCX 4,4. Mô hình: ~79% LNST 2027E đến từ cho vay.",
+   "t": "Lãi cho vay 9T/2026 1.392 tỷ (+40%), gấp 1,5 lần chi phí lãi vay. Lợi suất 11,6%, chi phí vốn 5,4% (lãi vay ÷ nợ phải trả BQ): thứ 3 trong 8 CTCK cho vay lớn đã có BCTC Q3, sau VCK (8,2), VND (6,5); TCX 5,0, SSI Q2 5,3. Mô hình: ~79% LNST 2027E đến từ cho vay.",
    "ng": "BCTC MBS và các CTCK (VNDirect)"
   },
   {
@@ -45,7 +45,7 @@
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/B 1,2 lần cho ROE ~11%: {up_so} so với giá hiện tại",
-   "t": "P/B 1,2 × VCSH/cp cuối 2027E 11.866 đ — P/B÷ROE như trung vị 11 mã cùng ngành (0,11), giữa mức 25% (1,09) và trung vị (1,48) từ 2016. Giá 20/10 = P/B 1,36 trên VCSH 30/9. Xấu 10,7 (GTGD 11.000 tỷ/phiên, chi phí vốn 6,6%, P/B 0,95), tốt 18,5 (GTGD 21.000, dư nợ 22,5 nghìn tỷ, P/B 1,5). Cổ tức 1.000 đ/cp ≈ 6,5% giá 20/10.",
+   "t": "P/B 1,2 × VCSH/cp cuối 2027E 11.866 đ — ≈ trung vị P/B 11 mã cùng ngành (1,23, ROE 9,7%), giữa mức 25% (1,09) và trung vị (1,48) từ 2016. Giá 23/10 = P/B 1,40 trên VCSH 30/9. Xấu 10,7 (GTGD 11.000 tỷ/phiên, chi phí vốn 6,6%, P/B 0,95), tốt 18,5 (GTGD 21.000, dư nợ 22,5 nghìn tỷ, P/B 1,5). Cổ tức 1.000 đ/cp ≈ 6,4% giá 23/10.",
    "ng": "mô hình · P/B lịch sử từ 2016 · bảng cùng ngành"
   }
  ],
@@ -323,7 +323,7 @@
     "12.500",
     "14.500"
    ],
-   "ly_do": "Q3/2026 14.724; 1–20/10 12.677 — thấp nhất từ Q2/2023; đáy Q1/2023: 9.326"
+   "ly_do": "Q3/2026 14.724; 1–23/10 13.198 — thấp nhất từ Q1/2023 (9.326)"
   },
   {
    "ten": "GTGD thị trường 2027 (tỷ/phiên)",
@@ -386,7 +386,7 @@
     "1,20",
     "1,50"
    ],
-   "ly_do": "Đáy 12/2022 0,86; mức 25% từ 2016 1,09, trung vị 1,48; P/B÷ROE trung vị 11 mã cùng ngành 0,11 × ROE ~11% ≈ 1,2"
+   "ly_do": "Đáy 12/2022 0,86; mức 25% từ 2016 1,09, trung vị 1,48; 11 mã cùng ngành trung vị 1,23 (ROE 9,7%); MBS ROE 2027E ~11%"
   }
  ],
  "kich_ban": [
@@ -740,7 +740,7 @@
    1.54,
    1.64,
    1.43,
-   1.39
+   1.44
   ],
   "p10": 0.64,
   "p25": 1.09,
@@ -751,7 +751,7 @@
   ],
   "nay": [
    "2026-10",
-   1.39
+   1.44
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. 04–07/2026 tính theo 1.001 triệu cp và VCSH cộng 3.336 tỷ chào bán; 08–10/2026 VCSH 30/6 trừ cổ tức 1.001 tỷ.",
   "dung": "Kịch bản dùng P/B 0,95 · 1,20 · 1,50: gần đáy 12/2022 (0,86); giữa mức 25% (1,09) và trung vị (1,48) vì ROE 2027E chỉ ~11%; ≈ trung vị khi ROE về ~14%. 2023–2025 P/B trung vị 2,3 lần lúc ROE 12–16% và kỳ vọng tăng trưởng cao."
@@ -760,36 +760,36 @@
   "tieu": "P/B so với 11 CTCK vốn hóa lớn nhất",
   "phu": "theo giá hôm nay, VCSH 30/9/2026",
   "chi_so": "P/B (VCSH 30/9/2026)",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "chi_so_kv": "P/B (giá 23/10)",
   "nhom": "11 mã cùng ngành vốn hóa lớn nhất",
   "kv": [
    [
     "TCX",
-    2.02
+    2.1
    ],
    [
     "VCK",
-    2.18
+    2.14
    ],
    [
     "SSI",
-    1.46
+    1.4
    ],
    [
     "VPX",
-    1.19
-   ],
-   [
-    "VIX",
-    0.95
+    1.23
    ],
    [
     "HCM",
-    1.82
+    2.28
+   ],
+   [
+    "VIX",
+    0.98
    ],
    [
     "VCI",
-    1.28
+    1.33
    ],
    [
     "VND",
@@ -797,22 +797,22 @@
    ],
    [
     "SHS",
-    0.9
+    0.93
    ],
    [
-    "DSE",
-    1.62
+    "ORS",
+    1.23
    ],
    [
     "EVF",
-    0.84
+    0.85
    ]
   ],
-  "tv": 1.28,
+  "tv": 1.23,
   "moi_cp": 11245,
   "max": 2.5,
-  "y": "Trung vị nhóm 1,28 lần với ROE trung vị 12,8%. MBS: ROE 4 quý 12,3% trên vốn chủ bình quân, nhưng chỉ 10,9% (năm hóa Q3) trên vốn chủ sau chào bán. VCSH của nhóm tính đến 30/6/2026.",
-  "ng": "BCTC VNDirect, giá 20/10/2026 (bảng cùng ngành)"
+  "y": "Trung vị nhóm 1,23 lần với ROE trung vị 9,7%. MBS: ROE 4 quý 12,3% trên vốn chủ bình quân, nhưng chỉ 10,9% (năm hóa Q3) trên vốn chủ sau chào bán. VCSH của nhóm tính đến 30/9/2026 (SSI 30/6).",
+  "ng": "BCTC VNDirect, giá 23/10/2026 (bảng cùng ngành)"
  },
  "theo_doi": [
   {
@@ -860,7 +860,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Thanh khoản dưới ngưỡng hòa vốn môi giới",
-   "ct": "1–20/10 chỉ 12.677 tỷ/phiên (Q3/2025: 39.687); Toàn cảnh THẬN TRỌNG từ 14/9. Dưới ~15.800 tỷ/phiên môi giới MBS lỗ gộp.",
+   "ct": "1–23/10 chỉ 13.198 tỷ/phiên (Q3/2025: 39.687); Toàn cảnh QUAN SÁT từ 23/10 (trước đó THẬN TRỌNG). Dưới ~15.800 tỷ/phiên môi giới MBS lỗ gộp.",
    "tac": [
     "±0,3 nghìn đ/cp",
     "mỗi ±3.000 tỷ/phiên GTGD 2027 (±28 tỷ LNST)"
@@ -941,7 +941,7 @@
    "ct": "Năm 2025: 1.000 đ/cp (~1.001 tỷ, ~89% LNST), GDKHQ 17/8, trả 17/9/2026. Giả định giữ 1.000 đ/cp cho LN 2026 (~81% LNST 2026E).",
    "tac": [
     "1.000 đ/cp",
-    "≈ 6,5% giá 20/10; giả định, chưa công bố"
+    "≈ 6,4% giá 23/10; giả định, chưa công bố"
    ],
    "theo_doi": "ĐHĐCĐ 2027"
   },
@@ -1154,7 +1154,7 @@
     }
    ],
    "y": "Thứ 6 ở Q4/2025 và Q3/2026; mục tiêu ĐHĐCĐ 2026 tối thiểu 6%, hướng tới 6,5%.",
-   "ng": "HOSE công bố, qua VietnamNews 01/2026, CSI 10/04, Thời báo Tài chính 07/2026, Stockbiz 10/2026"
+   "ng": "HOSE công bố, qua VietnamNews 01/2026, CSI 10/04, Thời báo Tài chính 07/2026 và 10/2026, Stockbiz 10/2026"
   }
  ],
  "ke_hoach": {
@@ -1213,6 +1213,16 @@
    "link": "https://mekongasean.vn/loi-nhuan-mbs-giam-nhe-mang-moi-gioi-va-tu-doanh-cung-di-xuong-60681.html"
   },
   {
+   "ten": "Thời báo Tài chính — Thị phần môi giới quý III: VPS giữ ngôi đầu, SSI và TCBS bám sát (MBS thứ 6, 4,84%)",
+   "ngay": "10/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/thi-phan-moi-gioi-quy-iii-vps-giu-ngoi-dau-ssi-va-tcbs-bam-sat-204889.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — Dần lộ diện kết quả kinh doanh quý III/2026 của nhóm chứng khoán",
+   "ngay": "10/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/dan-lo-dien-ket-qua-kinh-doanh-quy-iii-2026-cua-nhom-chung-khoan-205433.html"
+  },
+  {
    "ten": "Thời báo Tài chính — MBS báo lãi quý II tăng 38%",
    "ngay": "07/2026",
    "link": "https://thoibaotaichinhvietnam.vn/mbs-bao-lai-quy-ii-tang-38-hoan-thanh-40-ke-hoach-nam-200317.html"
@@ -1269,7 +1279,7 @@
   },
   {
    "ten": "khoanguyeninvest.vn — Toàn cảnh: thanh khoản, lãi suất NHNN, trạng thái thị trường",
-   "ngay": "20/10/2026",
+   "ngay": "23/10/2026",
    "link": "https://khoanguyeninvest.vn/#toan-canh"
   }
  ],
@@ -1414,9 +1424,9 @@
      "ng": "tab Toàn cảnh · báo chí"
     },
     {
-     "h": -1,
-     "t": "Toàn cảnh thị trường THẬN TRỌNG từ 14/9/2026; tiền giao dịch 20 phiên chỉ ~0,6 lần bình quân năm.",
-     "ng": "tab Toàn cảnh 20/10"
+     "h": 0,
+     "t": "Toàn cảnh chuyển từ THẬN TRỌNG (14/9–22/10) sang QUAN SÁT ngày 23/10/2026; tiền giao dịch 20 phiên vẫn chỉ ~0,63 lần bình quân năm.",
+     "ng": "tab Toàn cảnh 23/10"
     }
    ]
   },
@@ -1425,7 +1435,7 @@
    "y": [
     {
      "h": -1,
-     "t": "GTGD khớp lệnh ~700 mã: 25.646 tỷ/phiên (2025) → 14.724 (Q3/2026) → 12.677 (1–20/10).",
+     "t": "GTGD khớp lệnh ~700 mã: 25.646 tỷ/phiên (2025) → 14.724 (Q3/2026) → 13.198 (1–23/10).",
      "ng": "tab Toàn cảnh"
     },
     {
@@ -1435,7 +1445,7 @@
     },
     {
      "h": 0,
-     "t": "Chênh lệch cho vay − chi phí vốn Q2/2026 của 9 CTCK cho vay lớn: 3,8–8,5 điểm; MBS 5,9.",
+     "t": "Chênh lệch cho vay − chi phí vốn Q3/2026 của 8 CTCK cho vay lớn: 2,5–8,2 điểm; MBS 6,2.",
      "ng": "BCTC các CTCK (VNDirect)"
     }
    ]
