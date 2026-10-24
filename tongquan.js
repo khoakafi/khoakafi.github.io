@@ -37,7 +37,7 @@
 .tqngm{font-size:12.5px;color:#374151;font-weight:600}
 .tqngv{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:#374151}
 .tqngv i{width:8px;height:8px;border-radius:50%;display:inline-block}
-.tqngv b,#tqModal .tqngv b{color:#111827;font-size:12.5px;font-weight:700}
+.tqngv b,#tqModal .tqmh .tqngv b{color:#111827;font-size:12.5px;font-weight:700}
 .tqngd{font-weight:700;color:#111827}
 .tqngs{font-size:12px;color:#6B7280}
 #tqModal .tqng{margin:6px 0 0}
