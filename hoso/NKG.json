@@ -1,0 +1,1510 @@
+{
+ "v": 2,
+ "ma": "NKG",
+ "ten": "CTCP Thép Nam Kim",
+ "nganh": "Tôn mạ (thép phủ)",
+ "ky": "BCTC Q2/2026 · Q3/2026 chưa công bố · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q3/2026 (hạn 30/10)",
+ "cp_trieu": 492.3,
+ "cp_ng": "Vốn điều lệ 4.923,2 tỷ (BCTC 30/6/2026) sau cổ tức 10% bằng cổ phiếu (44,8 triệu cp, chốt quyền 18/6/2026); không có cổ phiếu quỹ. Chưa gồm chào bán 124,6 triệu cp giá 12.000 đ và ESOP 6 triệu cp (chưa thực hiện).",
+ "chia": [
+  [
+   "2026-06-17",
+   1.1
+  ]
+ ],
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Lãi quý 2 là lãi tồn kho; Phú Mỹ thêm ~300 tỷ chi phí cố định/năm vào thị trường dư cung"
+ },
+ "dong_mo": "Biên gộp 10,5% quý 2/2026 đến từ tồn kho HRC giá thấp; HRC đã giảm ~10% từ đỉnh tháng 6 khi tồn kho còn 5.637 tỷ. Từ quý 3, Phú Mỹ (5,1 nghìn tỷ dở dang) bắt đầu khấu hao, lãi vay dự án vào chi phí. Cơ sở 2027: LN 54 tỷ, ROE ~0,7%; P/B theo ROE cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "10,5%",
+   "nhan": "biên gộp Q2/2026 — lãi tồn kho",
+   "tieu": "Lãi quý 2 là lãi tồn kho, chiều giá đã đảo",
+   "t": "Quý 2 NKG bán tồn kho HRC mua giá thấp (Q4/25–Q1/26: ~527–537 USD/tấn, tồn kho 31/3 4.345 tỷ) khi HRC lên ~600 USD/tấn (5/2026): biên gộp 10,5% (Q4/25–Q1/26: 2,3–2,6%), LN 104 tỷ = 82% LN 6 tháng. HRC kỳ hạn T9 thấp hơn đỉnh T6 10,2% khi tồn kho 5.637 tỷ (30/6, ~138 ngày giá vốn) mang giá quý 2. Cơ sở quý 3: biên 5,5%, lỗ ~30 tỷ; xấu lỗ 130 tỷ.",
+   "ng": "BCTC VNDirect · BSI · VDS, BSC, MAS (hồ sơ HSG, HPG) · mô hình"
+  },
+  {
+   "so": "5.149 tỷ",
+   "nhan": "tài sản dở dang Phú Mỹ (30/6/2026)",
+   "tieu": "Phú Mỹ: chi phí cố định đến trước sản lượng",
+   "t": "Nhà máy 6.200 tỷ, 1,2–1,3 triệu tấn/năm dự kiến chạy từ quý 3/2026 (chậm ~6 tháng); DSC: 2–3 quý mới đạt 50–60% công suất. Vào sử dụng, 5.149 tỷ dở dang (67% vốn chủ) khấu hao ~220 tỷ/năm; lãi vay dự án thôi vốn hóa (lãi suất ngầm định Q2 chỉ ~3,5%): lãi vay 2027E 304 tỷ (2025: 220). Cộng ~300 tỷ/năm, hơn LNTT 2025 (241 tỷ, gồm 114 tỷ thu nhập một lần). Nợ vay 8.554 tỷ = 1,12 lần vốn chủ.",
+   "ng": "BCTC VNDirect · ACBS 28/04 · DSC 27/02 · FPTS 04/03 · mô hình"
+  },
+  {
+   "so": "−54%",
+   "nhan": "sản lượng xuất khẩu 2025",
+   "tieu": "Mất xuất khẩu, giành nội địa bằng giá",
+   "t": "Xuất khẩu từ ~70% sản lượng (2024: 621 nghìn tấn) còn 288 nghìn tấn: Mỹ áp thuế CBPG tôn mạ, EU siết hạn ngạch + CBAM, Úc (18% xuất khẩu 2025) điều tra CBPG, báo cáo cuối dự kiến 23/11/2026. Nội địa +89% lên 495 nghìn tấn, thị phần 15,8% nhờ hạ giá, chiết khấu — đúng lúc GDA (+600 nghìn tấn), TVN (+355) và chính Phú Mỹ thêm công suất. Cơ sở 2027: 920 nghìn tấn, lãi gộp 1,25 triệu đ/tấn (2025: 1,00).",
+   "ng": "DSC 27/02 · FPTS 04/03 · KIS 14/05 · SMM · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B theo ROE: {up_so} so với giá hiện tại",
+   "t": "Giá trị = P/B × vốn chủ 31/12/2027E (BVPS ~15,5 nghìn đ), cùng đường P/B theo ROE với HSG (0,55 + 0,05 × ROE): ROE 2027E ~0,7% → 0,59, dưới trung vị 11 mã cùng ngành (0,72). Mỗi ±0,1 triệu đ/tấn lãi gộp = ±72 tỷ LN, ±0,8 nghìn đ/cp. Xấu 6,4: lỗ hai năm, P/B 0,45 (p10 của NKG); tốt 14,5: HRC đi lên, Phú Mỹ bán được hàng cao cấp, ROE ~6%.",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect · cùng ngành: giá 23/10/2026"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   197,
+   55,
+   54
+  ],
+  "ln_truoc": 453,
+  "eps": [
+   400,
+   112,
+   109
+  ],
+  "bv": [
+   15479,
+   15371,
+   15481
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Lãi gộp mỗi tấn* (triệu đ)",
+    "v": [
+     1.0,
+     1.19,
+     1.25
+    ],
+    "d": 2
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     2.9,
+     0.7,
+     0.7
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2024–2025: BCTC. EPS, BVPS theo 492,3 triệu cp sau cổ tức 10% bằng cổ phiếu (6/2026); không trả cổ tức tiền mặt. *Trước khấu hao Phú Mỹ."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Lãi hoạt động trước khấu hao Phú Mỹ",
+    "mau": "c1",
+    "v": [
+     230,
+     355,
+     506
+    ]
+   },
+   {
+    "ten": "Khấu hao Phú Mỹ",
+    "mau": "c3",
+    "v": [
+     0,
+     -100,
+     -220
+    ]
+   },
+   {
+    "ten": "Lãi vay",
+    "mau": "c2",
+    "v": [
+     -220,
+     -278,
+     -304
+    ]
+   },
+   {
+    "ten": "Tài chính khác, thu nhập khác",
+    "mau": "c4",
+    "v": [
+     230,
+     117,
+     90
+    ]
+   }
+  ],
+  "ng": "Lãi hoạt động = LN gộp − bán hàng, QLDN; tài chính khác = doanh thu tài chính − chi phí tài chính ngoài lãi vay (tiền gửi, tỷ giá) + thu nhập khác (2025 gồm 114 tỷ một lần). 2025: BCTC; 2026E–2027E: mô hình."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: sản lượng × lãi gộp mỗi tấn − khấu hao Phú Mỹ − lãi vay",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Sản lượng và kinh tế mỗi tấn"
+   },
+   {
+    "ten": "Sản lượng tiêu thụ (nghìn tấn)",
+    "v": [
+     782,
+     809,
+     920
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Doanh thu mỗi tấn (triệu đ)",
+    "v": [
+     18.93,
+     19.15,
+     19.22
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Lãi gộp mỗi tấn trước KH Phú Mỹ",
+    "v": [
+     1.0,
+     1.19,
+     1.25
+    ],
+    "d": 2,
+    "dam": 1
+   },
+   {
+    "ten": "Bán hàng + QLDN mỗi tấn (triệu đ)",
+    "v": [
+     0.71,
+     0.76,
+     0.7
+    ],
+    "d": 2
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     14808,
+     15483,
+     17680
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên lợi nhuận gộp (%)",
+    "v": [
+     5.3,
+     5.6,
+     5.3
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Lãi hoạt động trước KH Phú Mỹ",
+    "v": [
+     230,
+     355,
+     506
+    ]
+   },
+   {
+    "ten": "Khấu hao Phú Mỹ",
+    "v": [
+     0,
+     100,
+     220
+    ]
+   },
+   {
+    "ten": "Chi phí lãi vay",
+    "v": [
+     220,
+     278,
+     304
+    ]
+   },
+   {
+    "ten": "Tài chính khác + thu nhập khác",
+    "v": [
+     230,
+     117,
+     90
+    ]
+   },
+   {
+    "ten": "LN trước thuế",
+    "v": [
+     241,
+     93,
+     72
+    ]
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     197,
+     55,
+     54
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     400,
+     112,
+     109
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "BVPS cuối năm (đ)",
+    "v": [
+     15479,
+     15371,
+     15481
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     2.9,
+     0.7,
+     0.7
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "Sản lượng 2025 theo NKG (DSC); 6T/2026 ~388,7 nghìn tấn = Q1 ~186 (KIS ước) + Q2 203 (BSI) — nguồn khác ghi 6T 335, không khớp doanh thu Q1. 2026E = 6 tháng BCTC + Q3–Q4 ước tính. Khấu hao Phú Mỹ tách riêng (biên gộp đã trừ). Thuế 2027E 25%."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   55
+  ],
+  "cuoi": [
+   "2027E",
+   54
+  ],
+  "buoc": [
+   [
+    "Lãi gộp/tấn",
+    51
+   ],
+   [
+    "Sản lượng",
+    49
+   ],
+   [
+    "Bán hàng, QLDN/tấn",
+    52
+   ],
+   [
+    "Khấu hao Phú Mỹ",
+    -120
+   ],
+   [
+    "Lãi vay",
+    -26
+   ],
+   [
+    "Tài chính, khác",
+    -27
+   ],
+   [
+    "Thuế TNDN",
+    20
+   ]
+  ],
+  "y": "Sản lượng, lãi gộp và chi phí bán hàng mỗi tấn thêm ~151 tỷ trước thuế, nhưng khấu hao Phú Mỹ cả năm và lãi vay lấy lại ~146 tỷ.",
+  "ng": "mô hình (bước trước thuế; thuế tách riêng)"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Biên gộp H2/2026 (trước KH Phú Mỹ)",
+   "v": [
+    "3,5%",
+    "5,5%",
+    "7,5%"
+   ],
+   "ly_do": "Q2/2026 10,5% là lãi tồn kho; HRC T9 thấp hơn đỉnh T6 10,2% (MAS); 5,5% ≈ cả 2025 (5,3%), Q3/2025 4,8%; 3,5% ≈ Q4/25–Q1/26 (2,3–2,6%)"
+  },
+  {
+   "ten": "Doanh thu/tấn H2/2026 so với Q2",
+   "v": [
+    "−7,5%",
+    "−6%",
+    "−4,5%"
+   ],
+   "ly_do": "Cùng giả định giá thép hồ sơ HPG, HSG: HPG chào HRC T7/T8/T9 −2,2%/−8,0%/−10,2% so với đỉnh T6 (MAS 12/08); 2027 −1% · 0% · +1%"
+  },
+  {
+   "ten": "Sản lượng H2/2026 · 2027 (nghìn tấn)",
+   "v": [
+    "390 · 840",
+    "420 · 920",
+    "450 · 1.050"
+   ],
+   "ly_do": "2025 782; Q2/2026 203; kế hoạch 2026 1.100; Phú Mỹ 2–3 quý đạt 50–60% công suất (DSC); GDA, TVN thêm 955 nghìn tấn"
+  },
+  {
+   "ten": "Lãi gộp mỗi tấn 2027 (triệu đ)",
+   "v": [
+    "0,95",
+    "1,25",
+    "1,55"
+   ],
+   "ly_do": "Trước KH Phú Mỹ. 2025 1,00; 4 quý gần nhất ~1,01; 6T/2026 1,34 (gồm lãi tồn kho Q2); biên gộp trung vị 2016–2025 ~7% ≈ 1,35; 2024 2,08"
+  },
+  {
+   "ten": "Bán hàng + QLDN mỗi tấn 2027",
+   "v": [
+    "0,74",
+    "0,70",
+    "0,64"
+   ],
+   "ly_do": "2025 0,71; 6T/2026 0,76 (Q2 0,96: cước xuất khẩu, QLDN Phú Mỹ); H2/2026 0,70–0,82"
+  },
+  {
+   "ten": "Khấu hao Phú Mỹ 2027 (tỷ)",
+   "v": [
+    "220",
+    "220",
+    "220"
+   ],
+   "ly_do": "≈ 4,3%/năm × 5.149 tỷ dở dang (30/6/2026), nhà xưởng + dây chuyền; H2/2026 100 tỷ; giữ nguyên 3 kịch bản"
+  },
+  {
+   "ten": "Nợ vay bình quân · lãi suất 2027",
+   "v": [
+    "8.600 · 4,5%",
+    "7.800 · 3,9%",
+    "7.000 · 3,5%"
+   ],
+   "ly_do": "Nợ vay 8.554 tỷ (30/6/2026); lãi suất ngầm định Q2/2026 ~3,5%, 2025 ~3,4% khi lãi dự án còn vốn hóa; chưa tính chào bán 1.495 tỷ"
+  },
+  {
+   "ten": "Tài chính khác + khác 2027 (tỷ)",
+   "v": [
+    "30",
+    "90",
+    "140"
+   ],
+   "ly_do": "6T/2026 77 (Q1 90, Q2 −13); 2025 230 gồm 114 tỷ một lần; lãi tiền gửi ~3.290 tỷ (30/6)"
+  },
+  {
+   "ten": "Thuế TNDN 2027",
+   "v": [
+    "30%",
+    "25%",
+    "20%"
+   ],
+   "ly_do": "2025 18%; 6T/2026 34% (lỗ công ty con không trừ được); năm lỗ không ghi tài sản thuế"
+  },
+  {
+   "ten": "P/B = 0,55 + 0,05 × ROE, sàn 0,45",
+   "v": [
+    "0,45",
+    "0,59",
+    "0,86"
+   ],
+   "ly_do": "Cùng đường với HSG; sàn 0,45 = p10 P/B của NKG (2019: 0,34–0,47 khi ROE ~2%); ROE 3% → 0,70; trung vị 11 mã cùng ngành 0,72"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": -151,
+   "ln27": -401,
+   "gia": 6.4,
+   "mo_ta": "H2/2026 biên 3,5% (lỗ 278 tỷ); 2027 840 nghìn tấn, lãi gộp 0,95 triệu đ/tấn ≈ 2025, lãi vay 387 tỷ → lỗ 401 tỷ; P/B 0,45"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 55,
+   "ln27": 54,
+   "gia": 9.1,
+   "mo_ta": "H2/2026 biên 5,5% (lỗ 71 tỷ); 2027 920 nghìn tấn, 1,25 triệu đ/tấn, khấu hao Phú Mỹ 220, lãi vay 304 tỷ; ROE ~0,7%, P/B 0,59"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 257,
+   "ln27": 504,
+   "gia": 14.5,
+   "mo_ta": "HRC đi lên, Phú Mỹ bán được hàng cao cấp: 1,05 triệu tấn, lãi gộp 1,55 triệu đ/tấn, nợ vay giảm; ROE ~6%, P/B 0,86"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ 31/12/2027E; P/B = 0,55 + 0,05 × ROE 2027E, sàn 0,45",
+  "ck": 0,
+  "cp": 492.3,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông 31/12/2027E",
+    "mau": "c1",
+    "x": [
+     6960,
+     7621,
+     8273
+    ],
+    "boi": [
+     0.45,
+     0.59,
+     0.86
+    ],
+    "x_ten": "cuối 2027E",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     3132,
+     4496,
+     7115
+    ]
+   }
+  ],
+  "von": [
+   3132,
+   4496,
+   7115
+  ],
+  "gia": [
+   6.4,
+   9.1,
+   14.5
+  ]
+ },
+ "nhay": [
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.5
+  ],
+  [
+   "Lãi gộp mỗi tấn 2027 ±0,1 triệu đ",
+   72,
+   0.8
+  ],
+  [
+   "Lãi suất vay 2027 ±1 điểm %",
+   59,
+   0.7
+  ],
+  [
+   "Khấu hao Phú Mỹ ±50 tỷ/năm",
+   38,
+   0.4
+  ],
+  [
+   "Bán hàng + QLDN mỗi tấn ±0,05 triệu đ",
+   35,
+   0.4
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.24,
+   1.18,
+   1.16,
+   1.08,
+   0.98,
+   1.14,
+   1.21,
+   0.9,
+   1.03,
+   1.21,
+   0.96,
+   0.89,
+   0.95,
+   0.92,
+   1.01,
+   1.37,
+   1.24,
+   1.77,
+   1.87,
+   2.17,
+   2.19,
+   1.91,
+   1.7,
+   1.61,
+   1.62,
+   1.53,
+   1.69,
+   1.78,
+   1.94,
+   1.89,
+   1.82,
+   1.72,
+   1.83,
+   1.8,
+   1.82,
+   1.83,
+   1.95,
+   1.49,
+   1.4,
+   1.02,
+   0.87,
+   0.93,
+   0.84,
+   0.77,
+   0.86,
+   0.58,
+   0.44,
+   0.46,
+   0.35,
+   0.47,
+   0.45,
+   0.41,
+   0.39,
+   0.4,
+   0.39,
+   0.38,
+   0.34,
+   0.37,
+   0.37,
+   0.42,
+   0.5,
+   0.5,
+   0.27,
+   0.39,
+   0.46,
+   0.42,
+   0.37,
+   0.45,
+   0.51,
+   0.5,
+   0.7,
+   0.89,
+   0.92,
+   1.01,
+   1.37,
+   1.49,
+   1.71,
+   1.85,
+   1.75,
+   1.84,
+   2.11,
+   2.6,
+   1.78,
+   1.6,
+   1.3,
+   1.68,
+   1.8,
+   1.43,
+   1.05,
+   0.78,
+   0.78,
+   0.91,
+   0.78,
+   0.58,
+   0.51,
+   0.56,
+   0.73,
+   0.69,
+   0.75,
+   0.71,
+   0.78,
+   0.86,
+   0.99,
+   0.94,
+   0.97,
+   0.86,
+   1.12,
+   1.2,
+   1.18,
+   1.16,
+   1.25,
+   1.06,
+   1.15,
+   1.11,
+   1.07,
+   0.99,
+   1.01,
+   0.94,
+   0.87,
+   0.83,
+   0.77,
+   0.86,
+   0.81,
+   0.64,
+   0.79,
+   0.79,
+   0.96,
+   0.94,
+   1.04,
+   0.94,
+   0.95,
+   0.87,
+   0.89,
+   0.93,
+   0.81,
+   0.84,
+   0.8,
+   0.77,
+   0.71,
+   0.71,
+   0.61,
+   0.77
+  ],
+  "p10": 0.44,
+  "p25": 0.73,
+  "tv": 0.94,
+  "thap": [
+   "2020-03",
+   0.27
+  ],
+  "nay": [
+   "2026-10",
+   0.77
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,45 · 0,59 · 0,86 theo ROE 2027E: sàn ≈ p10 (0,44) và vùng 2019 (0,34–0,47, ROE ~2%); cơ sở dưới p25 (0,73); tốt dưới trung vị (0,94) — trung vị gồm các năm ROE 30–50% (2016–2017, 2021)."
+ },
+ "so_sanh": {
+  "chi_so": "P/B (vốn chủ 30/6/2026)",
+  "chi_so_kv": "P/B (bảng giá 23/10)",
+  "nhom": "11 mã kim loại công nghiệp vốn hóa lớn nhất",
+  "kv": [
+   [
+    "HPG",
+    1.25
+   ],
+   [
+    "HSG",
+    0.72
+   ],
+   [
+    "VGS",
+    0.77
+   ],
+   [
+    "SMC",
+    0.68
+   ],
+   [
+    "DTL",
+    1.29
+   ],
+   [
+    "TKU",
+    1.18
+   ],
+   [
+    "TLH",
+    0.29
+   ],
+   [
+    "HMC",
+    0.7
+   ],
+   [
+    "TNI",
+    0.4
+   ],
+   [
+    "KMT",
+    0.92
+   ],
+   [
+    "MEL",
+    0.4
+   ]
+  ],
+  "tv": 0.72,
+  "moi_cp": 15516,
+  "max": 1.5,
+  "y": "HSG — đối thủ tôn mạ trực tiếp, nợ vay 0,61 lần vốn chủ — P/B 0,72 với ROE 4 quý 5,7%; HPG 1,25 với ROE 17,4%. ROE 4 quý của NKG 2,2% gồm lãi tồn kho Q2; 2027E cơ sở ~0,7%.",
+  "ng": "BCTC VNDirect quý 2/2026, bảng giá 23/10/2026 (vốn hóa VNDirect)"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 3874,
+   "ln": [
+    -130,
+    -30,
+    68
+   ],
+   "ck": 50
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -148,
+    -41,
+    63
+   ],
+   "ck": -9
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    -151,
+    55,
+    257
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD quý 3/2026",
+   "ct": "HRC giảm ~10% từ đỉnh T6 khi tồn kho mua giá quý 2; Phú Mỹ bắt đầu khấu hao. Cơ sở: biên 5,5%, lỗ ~30 tỷ; xấu lỗ 130; tốt lãi 68; cùng kỳ lãi 50 tỷ.",
+   "tac": [
+    "Biên gộp ≥ 7,5%",
+    "nghiêng về kịch bản tốt; dưới 3,5% là xấu"
+   ],
+   "theo_doi": "biên gộp, dự phòng giảm giá tồn kho"
+  },
+  {
+   "khi": "23/11/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Úc kết luận điều tra CBPG thép mạ",
+   "ct": "Vụ 706 khởi xướng lại 19/6/2026 với HSG, NKG, POSCO; báo cáo cuối dự kiến 23/11. Úc = 18,3% xuất khẩu 2025 (52,6 nghìn tấn), 6,7% sản lượng; 56,21% là biên độ bên yêu cầu cáo buộc.",
+   "tac": [
+    "−0,3 nghìn đ/cp",
+    "nếu mất 6,7% sản lượng 2027 (−25 tỷ LN)"
+   ],
+   "theo_doi": "kết luận cuối của ADC Úc"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Phú Mỹ bán được hàng cao cấp",
+   "ct": "Dòng mạ chất lượng cao cho ô tô, gia dụng, bao bì, vỏ pin xe điện, tôn silic — ít cạnh tranh hơn tôn xây dựng; kịch bản tốt: 1,05 triệu tấn, lãi gộp 1,55 triệu đ/tấn.",
+   "tac": [
+    "+0,6 nghìn đ/cp",
+    "nếu bán 1,05 triệu tấn với lãi gộp cơ sở (+54 tỷ LN)"
+   ],
+   "theo_doi": "sản lượng, công suất Phú Mỹ theo quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Giá HRC đi lên lại",
+   "ct": "Tồn kho ~138 ngày: HRC tăng thì lặp lại lãi tồn kho như quý 2/2026 (biên 10,5%). Thuế CBPG HRC Trung Quốc 27,83% giữ giá HRC nội.",
+   "tac": [
+    "±0,8 nghìn đ/cp",
+    "mỗi ±0,1 triệu đ/tấn lãi gộp 2027 (±72 tỷ LN)"
+   ],
+   "theo_doi": "giá HRC HPG chào hằng tháng"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "HRC giảm tiếp, lỗ tồn kho",
+   "ct": "HRC Ấn Độ, Indonesia chào 534–535 USD/tấn; tồn kho 5.637 tỷ (30/6) chịu lỗ khi giá giảm — như Q4/2025 (biên 2,3%, lỗ 9 tỷ).",
+   "tac": [
+    "−2,7 nghìn đ/cp",
+    "về kịch bản xấu (lãi gộp 0,95 triệu đ/tấn, P/B 0,45)"
+   ],
+   "theo_doi": "giá HRC, biên gộp quý"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Dư cung tôn mạ nội địa",
+   "ct": "GDA Phú Mỹ 600 nghìn tấn (Q2/2026), TVN Phú Mỹ 355 nghìn tấn (cuối Q3/2025), NKG Phú Mỹ; tôn mạ toàn ngành 6T/2026 −9,5%, xuất khẩu −29,4% (VSA qua BSI).",
+   "tac": [
+    "±0,4 nghìn đ/cp",
+    "mỗi ±50 đ/kg chi phí bán hàng, chiết khấu"
+   ],
+   "theo_doi": "thị phần VSA, chiết khấu đại lý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lãi vay, nợ vay",
+   "ct": "Nợ vay 8.554 tỷ (30/6/2026) = 1,12 lần vốn chủ; lãi suất ngầm định Q2 ~3,5% khi lãi dự án còn vốn hóa — cơ sở 2027 3,9% trên 7.800 tỷ.",
+   "tac": [
+    "±0,7 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất (±59 tỷ LN)"
+   ],
+   "theo_doi": "lãi suất, nợ vay ròng"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "hai",
+   "tieu": "Chào bán 124,6 triệu cp giá 12.000 đ",
+   "ct": "Tỷ lệ 4:1, thu ~1.495 tỷ góp vốn Phú Mỹ, chờ UBCKNN; kèm ESOP 6 triệu cp giá 10.000 đ. Giá chào bán dưới BVPS ~15,5 nghìn đ, nợ vay giảm tương ứng.",
+   "tac": [
+    "−4,6% BVPS",
+    "nếu chào bán đủ; lãi vay giảm ~60 tỷ/năm (mô hình chưa tính)"
+   ],
+   "theo_doi": "chấp thuận UBCKNN, giá cổ phiếu so với 12.000 đ"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Mùa xây dựng, đầu tư công",
+   "ct": "MBS dự báo tiêu thụ tôn mạ toàn ngành 2026 +10%, nhà ở xã hội +45%, đầu tư công +18%; quý 4 là cao điểm tiêu thụ nội địa.",
+   "tac": [
+    "±0,2 nghìn đ/cp",
+    "mỗi ±5% sản lượng 2027 (±19 tỷ LN) — lãi mỗi tấn mỏng"
+   ],
+   "theo_doi": "sản lượng VSA hằng tháng"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Đầu tư công 2026 dự kiến +18%, nhà ở xã hội +45%; MBS dự báo tiêu thụ tôn mạ toàn ngành 2026 +10%.",
+     "ng": "MBS 14/04 (ngành)"
+    },
+    {
+     "h": -1,
+     "t": "Lãi suất tăng có thể làm xây dựng chậm lại (KIS); NKG vay 8.554 tỷ, 1,12 lần vốn chủ.",
+     "ng": "KIS 14/05 · BCTC"
+    },
+    {
+     "h": 0,
+     "t": "Xuất khẩu ít đi nên lãi tỷ giá giảm: doanh thu tài chính 2025 −37%; tiền gửi ~3.300 tỷ (30/6/2026) bù một phần lãi vay.",
+     "ng": "FPTS 04/03 · BCTC"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 0,
+     "t": "Thuế CBPG HRC Trung Quốc 27,83% (7/2025), chống lẩn tránh HRC khổ rộng: NKG phải dùng HRC nội giá cao hơn, nhưng tôn mạ nội cũng được bảo hộ (CBPG tôn mạ Trung Quốc, Hàn Quốc từ 8/2025).",
+     "ng": "FPTS 04/03 · DSC 27/02"
+    },
+    {
+     "h": -1,
+     "t": "Xuất khẩu tôn mạ: Mỹ áp thuế CBPG đến 88%; EU đề xuất cắt hạn ngạch 47%, thuế ngoài hạn ngạch 50%, tính CBAM từ 2026; Úc điều tra CBPG.",
+     "ng": "DSC 27/02 · FPTS 04/03 · ADC Úc"
+    },
+    {
+     "h": -1,
+     "t": "Dư cung nội địa: TVN, GDA, NKG cùng mở nhà máy ở Phú Mỹ; tôn mạ toàn ngành 6T/2026 −9,5%, xuất khẩu −29,4%.",
+     "ng": "FPTS 04/03 · VSA qua BSI"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Thị phần tôn mạ nội địa 15,8% năm 2025 (sản lượng nội địa +89%); ngừng ống thép để tập trung tôn mạ.",
+     "ng": "FPTS 04/03 · DSC 27/02"
+    },
+    {
+     "h": -1,
+     "t": "Vốn lưu động nặng: tồn kho 5.637 tỷ (~138 ngày giá vốn), vay ngắn hạn 6.294 tỷ (30/6/2026).",
+     "ng": "BCTC VNDirect"
+    },
+    {
+     "h": 0,
+     "t": "Tổng giám đốc mua 1 triệu cp (27/7–13/8/2026); cổ tức 2025 trả 10% bằng cổ phiếu, không trả tiền mặt từ 2022.",
+     "ng": "DNSE · baophapluat · ACBS 28/04"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Tôn mạ nội địa",
+   "phu": "Thị phần 15,8% năm 2025 (VSA, qua FPTS); ~63% sản lượng 2025",
+   "so": [
+    [
+     "Sản lượng 2025",
+     "494,7 nghìn tấn",
+     "+89,1%"
+    ],
+    [
+     "Doanh thu 2025",
+     "8.827 tỷ",
+     "+21%"
+    ],
+    [
+     "Doanh thu Q1/2026",
+     "2.164 tỷ",
+     "+10%"
+    ],
+    [
+     "Sản lượng Q2/2026",
+     "111 nghìn tấn",
+     "−7%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Giành thị phần bằng hạ giá bán, tăng chiết khấu cho nhà phân phối; ngừng sản xuất ống thép từ Q4/2025 để tập trung tôn mạ.",
+     "ng": "FPTS 04/03"
+    },
+    {
+     "t": "Từ cuối 3/2026 NKG tăng giá tôn, ống trong nước ba lần nhưng bám sát giá HRC đầu vào.",
+     "ng": "KIS 14/05"
+    }
+   ]
+  },
+  {
+   "ten": "Xuất khẩu",
+   "phu": "Từ ~70% sản lượng (2024) còn 37% (2025)",
+   "so": [
+    [
+     "Sản lượng 2025",
+     "287,6 nghìn tấn",
+     "−53,7%"
+    ],
+    [
+     "Doanh thu 2025",
+     "6.072 tỷ",
+     "−54,7%"
+    ],
+    [
+     "Doanh thu Q1/2026",
+     "1.098 tỷ",
+     "−48%"
+    ],
+    [
+     "Sang Úc 2025",
+     "52,6 nghìn tấn",
+     "18,3% xuất khẩu"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Mỹ áp thuế CBPG tôn mạ đến 88%; EU đề xuất cắt hạn ngạch 47%, thuế ngoài hạn ngạch 50%, tính phí CBAM từ 1/1/2026.",
+     "ng": "DSC 27/02 · FPTS 04/03"
+    },
+    {
+     "t": "Úc khởi xướng lại điều tra CBPG thép mạ 19/6/2026; 18/9 dừng với Dongkuk Steel, tiếp tục với HSG, NKG, POSCO; báo cáo cuối dự kiến 23/11/2026.",
+     "ng": "ADC Úc · SMM"
+    }
+   ]
+  },
+  {
+   "ten": "Nam Kim Phú Mỹ",
+   "phu": "Tổng đầu tư 6.200 tỷ, 1,2–1,3 triệu tấn/năm, hai giai đoạn (2026, 2027)",
+   "so": [
+    [
+     "Dở dang 30/6/2026",
+     "5.149 tỷ",
+     "30/6/2025: 3.010"
+    ],
+    [
+     "Vay dài hạn 30/6/2026",
+     "2.261 tỷ",
+     ""
+    ],
+    [
+     "Vận hành",
+     "từ Q3/2026",
+     "chậm ~6 tháng"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Thép mạ chất lượng cao cho ô tô, đồ gia dụng, bao bì, vỏ pin xe điện, tôn silic.",
+     "ng": "Tạp chí Công Thương"
+    },
+    {
+     "t": "Cần 2–3 quý để đạt 50–60% công suất, kỳ vọng chạy hết công suất năm 2027; vay dài hạn gây áp lực chi phí tài chính 2026–2027.",
+     "ng": "DSC 27/02"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Biên lợi nhuận gộp theo quý",
+   "kieu": "duong",
+   "dv": "%",
+   "nhan": [
+    "Q3/23",
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      4.8,
+      6.1,
+      10.7,
+      9.0,
+      8.7,
+      6.7,
+      6.4,
+      7.1,
+      4.8,
+      2.3,
+      2.6,
+      10.5
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Q2/26 10,5% là lãi tồn kho; ba quý trước chỉ 2,3–4,8%; 4 quý gần nhất bình quân 5,4%.",
+   "ng": "BCTC NKG (VNDirect)"
+  },
+  {
+   "ten": "Dở dang Phú Mỹ và nợ vay",
+   "kieu": "duong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tài sản dở dang",
+     "v": [
+      486,
+      286,
+      1097,
+      3010,
+      3902,
+      4443,
+      4851,
+      5149
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Nợ vay",
+     "v": [
+      6044,
+      6312,
+      5750,
+      6857,
+      6956,
+      6867,
+      6972,
+      8554
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "so_le": 0,
+   "y": "Dở dang từ 486 lên 5.149 tỷ trong 2 năm; nợ vay 6.044 → 8.554 tỷ dù đã tăng vốn ~1,6 nghìn tỷ đầu 2025.",
+   "ng": "BCTC NKG (VNDirect)"
+  },
+  {
+   "ten": "LN trước thuế và lãi vay",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN trước thuế",
+     "v": [
+      82,
+      16,
+      81,
+      112,
+      59,
+      -11,
+      25,
+      163
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chi phí lãi vay",
+     "v": [
+      49,
+      67,
+      56,
+      60,
+      55,
+      49,
+      47,
+      67
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Bỏ Q2/26 (lãi tồn kho) và 94 tỷ thu nhập một lần Q2/25, 7 quý còn lại LN trước thuế 270 tỷ < lãi vay 383 tỷ — chưa có khấu hao Phú Mỹ.",
+   "ng": "BCTC NKG (VNDirect)"
+  },
+  {
+   "ten": "Sản lượng theo thị trường",
+   "kieu": "cot_chong",
+   "dv": "nghìn tấn",
+   "nhan": [
+    "2024",
+    "2025"
+   ],
+   "ss": [
+    {
+     "ten": "Nội địa",
+     "v": [
+      262,
+      495
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Xuất khẩu",
+     "v": [
+      621,
+      288
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Xuất khẩu −54%, nội địa +89% không bù đủ: tổng −11%.",
+   "ng": "DSC 27/02 (số NKG)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Sản lượng",
+    "kh": 1100,
+    "th": 389,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "nghìn tấn",
+    "ng": "ĐHĐCĐ 24/4/2026 · KIS, BSI (ước)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 22000,
+    "th": 7412,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 24/4/2026 · BCTC"
+   },
+   {
+    "ten": "LN trước thuế",
+    "kh": 400,
+    "th": 188,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 24/4/2026 · BCTC"
+   }
+  ],
+  "y": "6 tháng đạt 47% LNTT nhờ riêng quý 2 (163 tỷ); doanh thu 34%. Cơ sở cả năm LNTT 93 tỷ (23% kế hoạch) khi H2 lỗ."
+ },
+ "ctck": [
+  {
+   "ctck": "KIS",
+   "ngay": "2026-05-14",
+   "kn": "KHÔNG XẾP HẠNG",
+   "pp": "Tin vắn Q1/2026",
+   "y": "Ước sản lượng Q1/2026 ~186 nghìn tấn (−10%), giá bán 671 USD/tấn (−15%); cảnh báo Úc (6,7% sản lượng) điều tra CBPG. Dự báo biên Q2 chưa cải thiện — thực tế 10,5% nhờ tồn kho giá thấp.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/NKG/nkg_tin_van_khong_xep_hang_1q26_van_con_nhieu_kho_khan.pdf"
+  },
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-04-28",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "pp": "Cập nhật ĐHĐCĐ",
+   "y": "Tóm tắt ĐHĐCĐ: kế hoạch 1,1 triệu tấn, doanh thu 22.000 tỷ, LNTT 400 tỷ; Phú Mỹ 6.200 tỷ chậm ~6 tháng; chào bán 25% giá 12.000 đ. Kế hoạch phụ thuộc hiệu quả Phú Mỹ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/NKG/cap_nhat_nhanh_nkg_khong_danh_gia_2026_04_28.pdf"
+  },
+  {
+   "ctck": "FPTS",
+   "ngay": "2026-03-04",
+   "kn": "THEO DÕI",
+   "tp": 14200,
+   "ln26": 544,
+   "pp": "FCFE + FCFF",
+   "y": "Lạc quan nhất: 2026F 882 nghìn tấn (+15,8%), biên gộp 8,6%, LNTT 680 tỷ khi Phú Mỹ chạy từ Q1 (nay lùi sang Q3); lãi vay 2026F 273 tỷ (+24,5%).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/NKG/theo_doi_bao_cao_cap_nhat_nhanh_fpts_04_03_2026.pdf"
+  },
+  {
+   "ctck": "DSC",
+   "ngay": "2026-02-27",
+   "kn": "THEO DÕI",
+   "tp": 15400,
+   "pp": "P/B 0,9 lần (trung bình 5 năm)",
+   "y": "2026F doanh thu 15.472 tỷ, LNTT 278 tỷ; lưu ý vay dài hạn cho Phú Mỹ gây áp lực chi phí tài chính 2026–2027, cần 2–3 quý đạt 50–60% công suất.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/NKG/Cho_oi_nha_may_moi.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu, quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. DSC, FPTS ra trước đợt cổ tức 10% bằng cổ phiếu (GDKHQ 17/06/2026) nên giá mục tiêu được quy đổi theo hệ số 1,1; KIS, ACBS không đưa giá mục tiêu.",
+ "nguon": [
+  {
+   "ten": "KIS — NKG 1Q26: Vẫn còn nhiều khó khăn",
+   "ngay": "14/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/NKG/nkg_tin_van_khong_xep_hang_1q26_van_con_nhieu_kho_khan.pdf"
+  },
+  {
+   "ten": "ACBS — Cập nhật nhanh NKG (ĐHĐCĐ 2026)",
+   "ngay": "28/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/NKG/cap_nhat_nhanh_nkg_khong_danh_gia_2026_04_28.pdf"
+  },
+  {
+   "ten": "FPTS — Báo cáo cập nhật nhanh NKG",
+   "ngay": "04/03/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/NKG/theo_doi_bao_cao_cap_nhat_nhanh_fpts_04_03_2026.pdf"
+  },
+  {
+   "ten": "DSC — Chờ đợi nhà máy mới",
+   "ngay": "27/02/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/NKG/Cho_oi_nha_may_moi.pdf"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ NKG 2026: nhà máy Phú Mỹ sắp vận hành, kế hoạch LN 400 tỷ",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-thep-nam-kim-nkg-2026-nha-may-phu-my-sap-van-hanh-chot-ke-hoach-loi-nhuan-400-ty-dong.html"
+  },
+  {
+   "ten": "Báo Pháp luật — NKG muốn chào bán hơn 124,58 triệu cổ phiếu",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/thep-nam-kim-nkg-dat-muc-tieu-lai-nam-2026-tang-manh-muon-chao-ban-hon-124-58-trieu-co-phieu.html"
+  },
+  {
+   "ten": "Báo Pháp luật — NKG phát hành gần 44,8 triệu cổ phiếu trả cổ tức",
+   "ngay": "25/06/2026",
+   "link": "https://doanhnhan.baophapluat.vn/thep-nam-kim-nkg-phat-hanh-gan-44-8-trieu-co-phieu-tra-co-tuc-nang-von-dieu-le-len-hon-4-900-ty-dong.html"
+  },
+  {
+   "ten": "Báo Pháp luật — NKG báo lãi quý II hơn 100 tỷ, dư nợ vay vượt vốn chủ",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/thep-nam-kim-nkg-bao-lai-quy-ii-hon-100-ty-dong-du-no-vay-vuot-von-chu-so-huu.html"
+  },
+  {
+   "ten": "24hmoney (BSI) — NKG lợi nhuận quý 2/2026, sản lượng 203 nghìn tấn",
+   "ngay": "07/2026",
+   "link": "https://24hmoney.vn/news/ctcp-thep-nam-kim-ghi-nhan-loi-nhuan-quy-2-2026-tang-manh-nho-san-luong-phuc-hoi-va-bien-loi-nhuan-cai-thien-song-ket-qua-luy-ke-6-thang-van-thap-hon-ky-vong-ca-nam-c30a2816072.html"
+  },
+  {
+   "ten": "Tạp chí Công Thương — Chuẩn bị vận hành dự án Phú Mỹ, NKG kỳ vọng bứt tốc từ quý 3/2026",
+   "ngay": "2026",
+   "link": "https://tapchicongthuong.vn/chuan-bi-van-hanh--sieu--du-an-phu-my--thep-nam-kim--nkg--ky-vong-but-toc-tu-quy-3-2026-518977.htm"
+  },
+  {
+   "ten": "SMM — Úc ra phán quyết cuối một phần vụ CBPG tôn mạ Hàn Quốc, Việt Nam",
+   "ngay": "09/2026",
+   "link": "https://news.metal.com/newscontent/104124654-australia-issues-partial-final-ruling-on-anti-dumping-investigation-into-galvanized-sheet-from-south-korea-and-vietnam"
+  },
+  {
+   "ten": "ADC Úc — Thông báo ADN 2026/126 (vụ 706, dừng một phần)",
+   "ngay": "09/2026",
+   "link": "https://www.industry.gov.au/sites/default/files/adc/public-record/2026-09/706-17-notice-adn-adn-2026-126-termination-of-part-of-an-investigation.pdf"
+  },
+  {
+   "ten": "Viet Nam News — Hoa Sen phản hồi điều tra CBPG của Úc (56,21% là cáo buộc)",
+   "ngay": "05/2026",
+   "link": "https://vietnamnews.vn/economy/1781110/hoa-sen-responds-to-australia-s-anti-dumping-probe-into-galvanised-steel.html"
+  },
+  {
+   "ten": "DNSE — Tổng giám đốc Thép Nam Kim mua vào 1 triệu cổ phiếu NKG",
+   "ngay": "08/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/tong-giam-doc-thep-nam-kim-mua-vao-1-trieu-co-phieu-nkg-35270439"
+  },
+  {
+   "ten": "Mirae Asset (hồ sơ HPG) — giá HRC kỳ hạn T7–T9",
+   "ngay": "12/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HPG/ctcp_tap_doan_hoa_phat_hpg_mua_gmt_30_000_buoc_qua_giai_doan_thuan_loi.pdf"
+  },
+  {
+   "ten": "MBS (hồ sơ HSG) — tiêu thụ tôn mạ toàn ngành 2026",
+   "ngay": "14/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HSG/hsg_bcpt_gia_ton_ma_phuc_hoi_tro_thanh_dong_luc_tang_truong.pdf"
+  }
+ ]
+}

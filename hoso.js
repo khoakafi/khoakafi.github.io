@@ -343,7 +343,8 @@
     var ss = L.ss.map(function(s){ return { ten: s.ten, v: s.v, cls: /^c[1-4]$/.test(s.mau || '') ? s.mau : 'c4', cot: 1 }; });
     var tong = L.cot.map(function(c, i){ return ss.reduce(function(a, s){ return a + (s.v[i] || 0); }, 0); }), b = ss.filter(function(s){ return s.ten === L.nhan; })[0];
     return nhan1(esc(L.tieu || 'Lợi nhuận cổ đông theo mảng'), esc(L.dv || 'tỷ đồng')) + chuGiai(ss) + bdChong(ss, L.cot, { fm: function(v){ return f(v, 0); }, cao: 150 })
-      + '<div class="hsY">' + (b ? esc(b.ten) + ' chiếm ' + tong.map(function(t, i){ return '<b>' + f(b.v[i] / t * 100, 0) + '%</b> (' + esc(L.cot[i]) + ')'; }).join(' → ') + ' ' + esc(L.tong_ten || 'lợi nhuận cổ đông') + '. ' : '') + esc(L.ng || '') + '</div>';
+      // ty trong ngoai 0–100% (LN nam nho, mang khac lo) thi khong ghi cau "chiem" de khoi ra "chiem 228%"
+      + '<div class="hsY">' + (b && tong.every(function(t, i){ var r = b.v[i] / t; return t > 0 && r >= 0 && r <= 1.005; }) ? esc(b.ten) + ' chiếm ' + tong.map(function(t, i){ return '<b>' + f(b.v[i] / t * 100, 0) + '%</b> (' + esc(L.cot[i]) + ')'; }).join(' → ') + ' ' + esc(L.tong_ten || 'lợi nhuận cổ đông') + '. ' : '') + esc(L.ng || '') + '</div>';
   }
   // Catalyst va rui ro gop mot bang theo thoi gian
   var LOAI = { len: ['▲', 'Catalyst'], xuong: ['▼', 'Rủi ro'], hai: ['◆', 'Hai chiều'] };
