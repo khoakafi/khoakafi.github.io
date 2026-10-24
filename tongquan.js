@@ -11,6 +11,10 @@
   const vn = (x, d = 1) => x.toLocaleString('vi-VN', {minimumFractionDigits:d, maximumFractionDigits:d});
   const ngay = d => d.slice(8,10) + '/' + d.slice(5,7) + '/' + d.slice(0,4);
   const thang = m => m.slice(5) + '/' + m.slice(0,4);
+  // Nguồn lãi suất: nhãn xanh đậm cho thấy số chính thức của NHNN (anh Khoa 24/10: "để họ thấy nguồn NHNN cho chất lượng")
+  const BANK = '<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></svg>';
+  const nguonLs = ls => `<div class="tqng"><span class="tqngp">${BANK}Nguồn: Ngân hàng Nhà nước Việt Nam</span>`
+    + (ls && ls.m && ls.m.length ? `<span class="tqngm">Số mới nhất: tháng ${+ls.m[ls.m.length-1].slice(5)}/${ls.m[ls.m.length-1].slice(0,4)}</span>` : '') + '</div>';
   let charts = [], ve = false;
 
   function css(){
@@ -22,6 +26,10 @@
 #view-tq .tqt{font-size:16px;font-weight:800;color:#111827;margin:0 0 3px}
 #view-tq .tqs{font-size:13px;color:${MUT};margin:0 0 12px;line-height:1.5}
 #view-tq .tqc{position:relative;height:300px}
+.tqng{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:-4px 0 12px}
+.tqngp{display:inline-flex;align-items:center;gap:6px;background:#E8F6EE;color:#0F7A3D;border:1px solid #BFE5CC;border-radius:999px;padding:3px 11px;font-size:12.5px;font-weight:700}
+.tqngm{font-size:12.5px;color:#374151;font-weight:600}
+#tqModal .tqng{margin:6px 0 0}
 #view-tq .tqc.sm{height:190px}
 #view-tq .tqst{background:#fff;border:1px solid var(--border);border-radius:14px;margin-bottom:16px;box-shadow:0 1px 3px rgba(16,24,40,.05);overflow:hidden}
 #view-tq .tqst .tp{display:flex;gap:18px;align-items:center;padding:20px 24px}
@@ -214,7 +222,7 @@ ${trangThai(T, X) || `<div class="tqh"><b>Toàn cảnh thị trường</b><span 
 
 <div class="card">
   <div class="tqhd"><div><div class="tqt">Lãi suất tiết kiệm và cho vay</div>
-    <div class="tqs">Lãi suất bình quân của các tổ chức tín dụng theo tháng, từ ${thang(ls.m[0])}. Số NHNN, cập nhật mỗi tháng.</div></div>
+    <div class="tqs">Lãi suất bình quân của các tổ chức tín dụng theo tháng, từ ${+ls.m[0].slice(5)}/${ls.m[0].slice(0,4)}.</div>${nguonLs(ls)}</div>
     <button class="tqzoom" data-z="ls" aria-label="Phóng to chart lãi suất">⤢ Phóng to</button></div>
   <div class="tqleg"><span><i style="background:${DEP}"></i>Lãi tiết kiệm 6–12 tháng</span><span><i style="background:${LEND}"></i>Lãi cho vay</span></div>
   <div class="tqc" id="tqW3"><canvas id="tqC3" aria-label="Lãi suất tiết kiệm và cho vay theo tháng"></canvas></div>
@@ -378,7 +386,7 @@ Nguồn: VNDirect, NHNN. Quy tắc cố định, không dùng mô hình học m�
     const dong = () => { mcharts.forEach(c => { try { c.destroy(); } catch(e){} }); mcharts = []; m.style.display = 'none'; document.body.style.overflow = ''; };
     const KH = [['6 tháng', 125], ['1 năm', 250], ['3 năm', 750], ['Tất cả', 0]];
     const gia = loai === 'gia';
-    m.innerHTML = `<div class="tqmp"><div class="tqmh"><div><b>${gia ? 'Trạng thái thị trường qua các năm' : 'Lãi suất tiết kiệm và cho vay'}</b>${gia ? '' : '<div class="tqms">Lãi suất bình quân của các tổ chức tín dụng theo tháng. Số NHNN, cập nhật mỗi tháng.</div>'}</div>
+    m.innerHTML = `<div class="tqmp"><div class="tqmh"><div><b>${gia ? 'Trạng thái thị trường qua các năm' : 'Lãi suất tiết kiệm và cho vay'}</b>${gia ? '' : '<div class="tqms">Lãi suất bình quân của các tổ chức tín dụng theo tháng.</div>' + nguonLs((window.TQ || {}).ls)}</div>
       ${gia ? `<div class="tqkh">${KH.map(([t, n]) => `<button data-n="${n}">${t}</button>`).join('')}</div>` : ''}
       <button class="tqx" aria-label="Đóng">✕</button></div>
       ${gia ? chuGiai() : `<div class="tqleg2"><span><i style="background:${DEP}"></i>Lãi tiết kiệm 6–12 tháng</span><span><i style="background:${LEND}"></i>Lãi cho vay</span></div>`}
