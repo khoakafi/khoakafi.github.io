@@ -3,46 +3,46 @@
  "ma": "ORS",
  "ten": "CTCP Chứng khoán Tiên Phong (TPS)",
  "nganh": "Chứng khoán",
- "ky": "BCTC Q2/2026 (Q3/2026 chưa công bố đến 20/10) · thanh khoản thị trường đến 20/10/2026 · giá 20/10/2026",
- "cap_nhat": "2026-10-21",
- "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "ky": "BCTC Q3/2026 · thanh khoản thị trường đến 23/10/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q4/2026 (cuối 01/2027)",
  "cp_trieu": 623.9,
- "cp_ng": "Vốn điều lệ 30/6/2026 (6.239,3 tỷ), sau phát hành riêng lẻ 287,9 triệu cp cho TPBank giá 12.500 đ (hoàn tất 31/12/2025)",
+ "cp_ng": "Vốn điều lệ 30/9/2026 (6.239,3 tỷ), sau phát hành riêng lẻ 287,9 triệu cp cho TPBank giá 12.500 đ (hoàn tất 31/12/2025)",
  "co_tuc": [],
  "tieu_de": {
-  "t": "88% tài sản sinh lời dưới chi phí vốn: vốn TPBank chưa thành ROE mà giá đã trả trước",
-  "dk": "up_duoi:0",
-  "khac": "88% tài sản sinh lời dưới chi phí vốn: vốn TPBank chưa thành ROE, giá đã dưới giá trị cơ sở"
+  "t": "Giá đã ngang kịch bản tốt: ký quỹ tăng 48% trong Q3, 84% tài sản vẫn lãi dưới chi phí vốn",
+  "dk": "up_duoi:-15",
+  "khac": "Ký quỹ tăng 48% trong Q3, nhưng 84% tài sản vẫn sinh lời dưới chi phí vốn"
  },
- "dong_mo": "Trái phiếu, CCTG, phải thu và tiền chiếm 88% tài sản nhưng 6T/2026 chỉ sinh 6,2%/năm, dưới chi phí vốn 7,0%. TPBank đã rót 3.599 tỷ, ký quỹ mới 0,24 lần vốn chủ; ROE 2027E ~6%. P/B 0,95 × VCSH cuối 2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 LNST 86 tỷ (−35% YoY): ký quỹ 1.885 → 2.790 tỷ nhưng FVTPL ròng chỉ 4 tỷ; 9T tài sản ngoài ký quỹ sinh 6,0%/năm, dưới chi phí vốn 6,9%. ROE 2027E ~5%. P/B 0,95 × VCSH cuối 2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "−0,8 điểm",
-   "nhan": "lợi suất tài sản ngoài ký quỹ − chi phí vốn, 6T/2026",
-   "tieu": "88% tài sản sinh lời dưới chi phí vốn: lợi nhuận đến từ vốn chủ, không từ đòn bẩy",
-   "t": "Trái phiếu, CCTG, phải thu, tiền — 13.385 tỷ — 6T/2026 mang về 6,2%/năm sau chi phí hoạt động (2024: 11,1%), dưới chi phí vốn 7,0% của 7.468 tỷ nợ phải trả. Đồng vốn vay thêm vào đây đang lỗ; lãi đến từ 7.801 tỷ vốn chủ không trả lãi và chênh lệch ký quỹ. ROE năm hóa 6T 4,2%; FVTPL ròng 191 tỷ ≈ 94% LNTT, môi giới chỉ 27 tỷ doanh thu.",
-   "ng": "BCTC hợp nhất Q1–Q2/2026 (VNDirect)"
+   "so": "−0,9 điểm",
+   "nhan": "lợi suất tài sản ngoài ký quỹ − chi phí vốn, 9T/2026",
+   "tieu": "Q3 xác nhận: 84% tài sản sinh lời dưới chi phí vốn, vay thêm để mở rộng chỉ bào mòn lãi",
+   "t": "Trái phiếu, CCTG, phải thu, tiền — 14.523 tỷ (+1.139 trong Q3) — 9T mang về 6,0%/năm (Q3 5,8%, Q2 7,7%), dưới chi phí vốn 6,9%. Q3 nợ phải trả +1.958 tỷ, lãi vay 142 tỷ; lỗ FVTPL 191 tỷ ăn gần hết lãi FVTPL khi lãi suất huy động lên 8%. ROE năm hóa 9T 4,3%.",
+   "ng": "BCTC hợp nhất Q1–Q3/2026 (VNDirect)"
   },
   {
-   "so": "34%",
-   "nhan": "phải thu / tổng tài sản, 30/6/2026",
-   "tieu": "Phải thu 5.192 tỷ, bằng 67% vốn chủ — CTCK lớn khác chỉ ~2% tài sản",
-   "t": "Trung vị 14 CTCK vốn chủ > 5.000 tỷ khác: 2,1% tổng tài sản. Phải thu ORS 1.690 tỷ (cuối 2024) → 6.819 (Q3/2025; chủ tịch xác nhận khoản lớn gắn hợp tác đầu tư với nhóm Bamboo Capital, nơi TPS từng thu xếp ~22 lô trái phiếu) → 3.329 sau khi thu hồi > 3.400 tỷ cuối 2025 → 5.192 (30/6/2026). Mỗi 10% phải trích lập: −0,67 nghìn đ VCSH/cp.",
+   "so": "0,35 lần",
+   "nhan": "dư nợ ký quỹ / vốn chủ, 30/9/2026",
+   "tieu": "Kênh TPBank bắt đầu chạy: ký quỹ +905 tỷ trong Q3 khi CTCK lớn đi ngang",
+   "t": "Dư nợ 1.885 → 2.790 tỷ trong Q3 (11 CTCK vốn chủ > 5.000 tỷ đã có BCTC Q3: −0,4%); thị phần dư nợ (CTCK đã có BCTC Q3) 0,70% → 1,04%. Lãi ký quỹ 66 tỷ (+34% QoQ), môi giới 24,7 tỷ (+81%) dù GTGD/phiên −23%. Chênh lệch 4,6 điểm: mỗi 1.000 tỷ dư nợ thêm ~37 tỷ LNST — vẫn chỉ 0,35 lần vốn chủ (CTCK lớn ~1,1).",
+   "ng": "BCTC Q3/2026 (VNDirect) · MAS 25/06/2026"
+  },
+  {
+   "so": "29%",
+   "nhan": "phải thu / tổng tài sản, 30/9/2026",
+   "tieu": "Phải thu 5.094 tỷ, bằng 65% vốn chủ — CTCK lớn khác chỉ ~2% tài sản",
+   "t": "Trung vị 14 CTCK vốn chủ > 5.000 tỷ khác: 1,7% tổng tài sản. Phải thu ORS 1.690 tỷ (cuối 2024) → 6.819 (Q3/2025; khoản lớn gắn hợp tác đầu tư với nhóm Bamboo Capital, nơi TPS từng thu xếp ~22 lô trái phiếu) → 3.329 cuối 2025 → 5.192 (30/6) → 5.094 (30/9/2026). Mỗi 10% phải trích lập: −0,65 nghìn đ VCSH/cp.",
    "ng": "BCTC (VNDirect) · Nhà Đầu tư 01/2026 · Viettimes"
-  },
-  {
-   "so": "0,24 lần",
-   "nhan": "dư nợ ký quỹ / vốn chủ, 30/6/2026",
-   "tieu": "Vốn TPBank mới vào ký quỹ ~20% phần dự kiến; môi giới không theo thị trường",
-   "t": "TPBank mua 287,9 triệu cp mới giá 12.500 đ (3.599 tỷ, xong 31/12/2025), sở hữu 9,01% → 51%; 60% tiền dành cho ký quỹ. Sáu tháng sau dư nợ chỉ 1.460 → 1.885 tỷ (CTCK lớn khác: trung vị 1,0 lần vốn chủ). Chênh lệch ký quỹ 4,5 điểm (11,1% − 6,6%, Q2): mỗi 1.000 tỷ dư nợ thêm ~36 tỷ LNST. Doanh thu môi giới 12,5–18,9 tỷ/quý dù GTGD/phiên Q3/2025 gấp 2,9 lần Q4/2024.",
-   "ng": "Báo Pháp luật, VnEconomy 01/2026 · MAS 25/06/2026 · BCTC"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
-   "tieu": "P/B 0,95 lần cho ROE ~6%: {up_so} so với giá hiện tại",
-   "t": "P/B 0,95 × VCSH/cp cuối 2027E 13.634 đ: dưới giá TPBank mua (1,02 lần VCSH sau phát hành), giữa mức 25% (0,89) và trung vị (1,08) từ 2015; P/B÷ROE như trung vị 12 CTCK lớn chỉ ra ~0,64. Giá 20/10 = P/B 1,10, P/E 4 quý 21,7. Xấu 10,5 (lợi suất 5,5%, chi phí vốn 7,6%, P/B 0,80), tốt 16,2 (ký quỹ 4.000 tỷ, lợi suất 8,5%, P/B 1,15).",
-   "ng": "mô hình · P/B lịch sử từ 2015 · bảng cùng ngành"
+   "tieu": "P/B 0,95 lần cho ROE ~5%: {up_so} so với giá hiện tại",
+   "t": "P/B 0,95 × VCSH/cp cuối 2027E 13.488 đ: dưới giá TPBank mua (1,02 lần VCSH sau phát hành), giữa mức 25% (0,89) và trung vị (1,08) từ 2015; P/B÷ROE như trung vị 11 CTCK lớn chỉ ra ~0,82. Giá 23/10 = P/B 1,27, P/E 4 quý 28,7 — ngang kịch bản tốt 16,1 (ký quỹ 4.500 tỷ, lợi suất 8,0%, P/B 1,15); xấu 10,4.",
+   "ng": "mô hình · P/B lịch sử từ 2015 · bảng cùng ngành 23/10"
   }
  ],
  "tom_tat": {
@@ -53,19 +53,19 @@
   ],
   "ln": [
    118,
-   392,
-   476
+   343,
+   435
   ],
   "ln_truoc": 379,
   "eps": [
    190,
-   629,
-   763
+   549,
+   697
   ],
   "bv": [
    12242,
-   12871,
-   13634
+   12791,
+   13488
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -73,8 +73,8 @@
     "ten": "ROE",
     "v": [
      2.7,
-     5.0,
-     5.8
+     4.4,
+     5.3
     ],
     "d": 1,
     "pt": 1
@@ -96,8 +96,8 @@
     "mau": "c1",
     "v": [
      96,
-     344,
-     387
+     277,
+     316
     ]
    },
    {
@@ -105,8 +105,8 @@
     "mau": "c2",
     "v": [
      76,
-     113,
-     161
+     128,
+     191
     ]
    },
    {
@@ -114,7 +114,7 @@
     "mau": "c4",
     "v": [
      -54,
-     -65,
+     -62,
      -72
     ]
    }
@@ -137,32 +137,32 @@
     "ten": "Vốn chủ sở hữu",
     "v": [
      7638,
-     8030,
-     8506
+     7981,
+     8415
     ]
    },
    {
     "ten": "Dư nợ cho vay ký quỹ",
     "v": [
      1460,
-     2300,
-     3000
+     3000,
+     3600
     ]
    },
    {
     "ten": "Tài sản ngoài ký quỹ (đầu tư, phải thu, tiền)",
     "v": [
      12876,
-     13385,
-     13385
+     14523,
+     14523
     ]
    },
    {
     "ten": "Nợ phải trả",
     "v": [
      6698,
-     7654,
-     7878
+     9543,
+     9708
     ]
    },
    {
@@ -172,24 +172,24 @@
     "ten": "Lãi cho vay ký quỹ",
     "v": [
      164,
-     204,
-     292
+     235,
+     363
     ]
    },
    {
     "ten": "Đầu tư & dịch vụ, ròng",
     "v": [
      604,
-     869,
-     937
+     821,
+     944
     ]
    },
    {
     "ten": "Lợi suất tài sản ngoài ký quỹ (%)",
     "v": [
      5.7,
-     6.6,
-     7.0
+     6.0,
+     6.5
     ],
     "d": 1
    },
@@ -197,8 +197,8 @@
     "ten": "Chi phí lãi vay",
     "v": [
      554,
-     502,
-     544
+     548,
+     674
     ]
    },
    {
@@ -214,7 +214,7 @@
     "ten": "Chi phí quản lý",
     "v": [
      72,
-     80,
+     79,
      90
     ]
    },
@@ -225,16 +225,16 @@
     "ten": "Lợi nhuận trước thuế (tỷ)",
     "v": [
      148,
-     491,
-     595
+     429,
+     543
     ]
    },
    {
     "ten": "LNST (tỷ)",
     "v": [
      118,
-     392,
-     476
+     343,
+     435
     ],
     "dam": 1,
     "tang": 1
@@ -243,8 +243,8 @@
     "ten": "BVPS (đ)",
     "v": [
      12242,
-     12871,
-     13634
+     12791,
+     13488
     ],
     "ps": 1
    },
@@ -252,8 +252,8 @@
     "ten": "ROE (%)",
     "v": [
      2.7,
-     5.0,
-     5.8
+     4.4,
+     5.3
     ],
     "d": 1
    },
@@ -261,58 +261,58 @@
     "ten": "EPS (đ)",
     "v": [
      190,
-     629,
-     763
+     549,
+     697
     ],
     "eps": 1
    }
   ],
-  "ghi": "2025A, 6T/2026: BCTC hợp nhất. 2026E = 6 tháng thực tế + 6 tháng ước tính. Tài sản ngoài ký quỹ giữ bằng 30/6/2026 (13.385 tỷ), dư nợ tăng bằng vốn vay; thuế 20%; không chia cổ tức. EPS, BVPS trên 623,9 triệu cp."
+  "ghi": "2025A, 9T/2026: BCTC hợp nhất. 2026E = 9 tháng thực tế + Q4 ước tính. Tài sản ngoài ký quỹ giữ bằng 30/9/2026 (14.523 tỷ), dư nợ tăng bằng vốn vay; thuế 20%; không chia cổ tức. EPS, BVPS trên 623,9 triệu cp."
  },
  "cau_ln": {
   "ten": "LNST 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   392
+   343
   ],
   "cuoi": [
    "2027E",
-   476
+   435
   ],
   "buoc": [
    [
     "Lãi cho vay ký quỹ",
-    87
+    128
    ],
    [
     "Đầu tư & dịch vụ, ròng",
-    68
+    123
    ],
    [
     "Chi phí lãi vay",
-    -41
+    -126
    ],
    [
     "Quản lý & khác",
-    -10
+    -12
    ],
    [
     "Thuế",
-    -20
+    -21
    ]
   ],
-  "y": "Lợi suất tài sản ngoài ký quỹ 7,0% cả năm (6T/2026: 6,2%) và dư nợ ký quỹ bình quân 2,6 nghìn tỷ là phần tăng; chi phí vốn giữ 7,0%.",
+  "y": "Lợi suất tài sản ngoài ký quỹ 6,5% cả năm (9T/2026: 6,0%) và dư nợ ký quỹ bình quân 3,3 nghìn tỷ là phần tăng; chi phí vốn giữ 7,0%.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
    "ten": "Dư nợ ký quỹ cuối 2026 · 2027 (nghìn tỷ)",
    "v": [
-    "1,9 · 2,0",
-    "2,3 · 3,0",
-    "2,7 · 4,0"
+    "2,6 · 2,5",
+    "3,0 · 3,6",
+    "3,3 · 4,5"
    ],
-   "ly_do": "30/6/2026: 1,88 = 0,24 lần VCSH (CTCK lớn ~1,0, trần 2); 60% của 3.599 tỷ TPBank rót dành cho ký quỹ (MAS)"
+   "ly_do": "30/9/2026: 2,79 = 0,35 lần VCSH (+905 tỷ trong Q3; CTCK lớn ~1,1); 60% của 3.599 tỷ TPBank dành cho ký quỹ (MAS) → ~3,6 nghìn tỷ"
   },
   {
    "ten": "Lãi suất cho vay ký quỹ",
@@ -321,25 +321,25 @@
     "11,0%",
     "11,0%"
    ],
-   "ly_do": "2024 10,2%, 2025 11,0%, 6T/2026 10,6% (Q2: 11,1%)"
+   "ly_do": "2024 10,2%, 2025 11,0%, 9T/2026 10,9% (Q3: 11,3%)"
   },
   {
-   "ten": "Lợi suất tài sản ngoài ký quỹ, 6T cuối 2026",
+   "ten": "Lợi suất tài sản ngoài ký quỹ, Q4/2026",
    "v": [
-    "5,5%",
-    "7,0%",
-    "8,0%"
+    "5,0%",
+    "6,0%",
+    "7,2%"
    ],
-   "ly_do": "Kết quả hoạt động trừ lãi ký quỹ ÷ tài sản ngoài ký quỹ BQ: Q1/2026 4,6%, Q2 7,7% (sau khi tiền chuyển vào trái phiếu, CCTG)"
+   "ly_do": "Kết quả hoạt động trừ lãi ký quỹ ÷ tài sản ngoài ký quỹ BQ: Q1/2026 4,6%, Q2 7,7%, Q3 5,8% (FVTPL ròng 4 tỷ)"
   },
   {
    "ten": "Lợi suất tài sản ngoài ký quỹ 2027",
    "v": [
-    "5,5%",
-    "7,0%",
-    "8,5%"
+    "5,0%",
+    "6,5%",
+    "8,0%"
    ],
-   "ly_do": "2023 10,2%, 2024 11,1%, 2025 5,7% (lỗ liên quan nhóm Bamboo Capital), 6T/2026 6,2%; tốt: thu hồi phải thu, tái đầu tư"
+   "ly_do": "2023 10,2%, 2024 11,1%, 2025 5,7% (lỗ liên quan nhóm Bamboo Capital), 9T/2026 6,0%; cơ sở hạ 7,0 → 6,5% sau Q3; tốt: thu hồi phải thu, tái đầu tư"
   },
   {
    "ten": "Chi phí vốn 2027 (% nợ phải trả)",
@@ -348,7 +348,7 @@
     "7,0%",
     "6,4%"
    ],
-   "ly_do": "2024 7,9%, 2025 7,3%, 6T/2026 7,0%; huy động NHNN 5,5% → 8,0% (06/2025–08/2026); tốt: vốn TPBank. Cuối 2026: 7,2 · 6,8 · 6,5%"
+   "ly_do": "2024 7,9%, 2025 7,3%, 9T/2026 6,9%; huy động NHNN 5,5% → 8,0% (06/2025–08/2026); tốt: vốn TPBank. Q4/2026: 7,2 · 6,8 · 6,5%"
   },
   {
    "ten": "Chi phí quản lý 2027 (tỷ)",
@@ -357,7 +357,7 @@
     "90",
     "90"
    ],
-   "ly_do": "2024 135, 2025 72 (nhân sự còn 164, −50%), 6T/2026 40"
+   "ly_do": "2024 135, 2025 72 (nhân sự còn 164, −50%), 9T/2026 59"
   },
   {
    "ten": "P/B mục tiêu (lần)",
@@ -366,30 +366,30 @@
     "0,95",
     "1,15"
    ],
-   "ly_do": "Từ 2015: thấp 10% 0,82, mức 25% 0,89, trung vị 1,08; TPBank mua 1,02 lần VCSH sau phát hành; P/B÷ROE trung vị nhóm 0,111/điểm ROE"
+   "ly_do": "Từ 2015: thấp 10% 0,82, mức 25% 0,89, trung vị 1,08; TPBank mua 1,02 lần VCSH sau phát hành; P/B÷ROE trung vị nhóm 0,154/điểm ROE"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 292,
-   "ln27": 229,
-   "gia": 10.5,
-   "mo_ta": "Lợi suất tài sản ngoài ký quỹ 5,5%, chi phí vốn 7,6% (lãi suất tiếp tục tăng), ký quỹ đứng ở 2.000 tỷ; ROE 2,9%; P/B 0,80 (thấp 10% lịch sử)"
+   "ln26": 301,
+   "ln27": 165,
+   "gia": 10.4,
+   "mo_ta": "Lợi suất tài sản ngoài ký quỹ 5,0%, chi phí vốn 7,6% (lãi suất tiếp tục tăng), ký quỹ đứng ở 2.500 tỷ; ROE 2,1%; P/B 0,80 (thấp 10% lịch sử)"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 392,
-   "ln27": 476,
-   "gia": 13.0,
-   "mo_ta": "Ký quỹ 3.000 tỷ cuối 2027, lợi suất tài sản ngoài ký quỹ 7,0% ngang chi phí vốn 7,0%; ROE 5,8%; P/B 0,95"
+   "ln26": 343,
+   "ln27": 435,
+   "gia": 12.8,
+   "mo_ta": "Ký quỹ 3.600 tỷ cuối 2027, lợi suất tài sản ngoài ký quỹ 6,5% ngang chi phí vốn 7,0%; ROE 5,3%; P/B 0,95"
   },
   {
    "ten": "Tốt",
-   "ln26": 459,
-   "ln27": 709,
-   "gia": 16.2,
-   "mo_ta": "Ký quỹ 4.000 tỷ qua tệp khách TPBank, lợi suất 8,5% nhờ thu hồi phải thu, vốn 6,4%; ROE 8,4%; P/B 1,15"
+   "ln26": 385,
+   "ln27": 686,
+   "gia": 16.1,
+   "mo_ta": "Ký quỹ 4.500 tỷ qua tệp khách TPBank, lợi suất 8,0% nhờ thu hồi phải thu, vốn 6,4%; ROE 8,2%; P/B 1,15"
   }
  ],
  "dinh_gia": {
@@ -402,9 +402,9 @@
     "ten": "Vốn chủ sở hữu",
     "mau": "c1",
     "x": [
-     8159,
-     8506,
-     8806
+     8104,
+     8415,
+     8709
     ],
     "boi": [
      0.8,
@@ -416,43 +416,43 @@
     "boi_d": 2,
     "sh": 1,
     "gt": [
-     6527,
-     8081,
-     10127
+     6483,
+     7994,
+     10015
     ]
    }
   ],
   "von": [
-   6527,
-   8081,
-   10127
+   6483,
+   7994,
+   10015
   ],
   "gia": [
-   10.5,
-   13.0,
-   16.2
+   10.4,
+   12.8,
+   16.1
   ]
  },
  "nhay": [
   [
-   "P/B ±0,1 lần",
-   null,
-   1.4
+   "Lợi suất tài sản ngoài ký quỹ 2027 ±0,5 điểm %",
+   60,
+   1.6
   ],
   [
-   "Lợi suất tài sản ngoài ký quỹ 2027 ±0,5 điểm %",
-   55,
-   1.1
+   "P/B ±0,1 lần",
+   null,
+   1.3
   ],
   [
    "Chi phí vốn 2027 ±0,5 điểm %",
-   32,
-   0.6
+   40,
+   1.0
   ],
   [
    "Dư nợ ký quỹ BQ 2027 ±1.000 tỷ",
    33,
-   0.6
+   0.9
   ]
  ],
  "pe_ls": {
@@ -743,7 +743,7 @@
    1.13,
    1.11,
    1.05,
-   1.08
+   1.28
   ],
   "p10": 0.82,
   "p25": 0.89,
@@ -754,45 +754,45 @@
   ],
   "nay": [
    "2026-10",
-   1.08
+   1.28
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. 12/2025–01/2026 tính theo 623,9 triệu cp và VCSH 31/12/2025 (đã gồm tiền TPBank).",
-  "dung": "Kịch bản dùng P/B 0,80 · 0,95 · 1,15: gần mức thấp 10% (0,82) · giữa mức 25% (0,89) và trung vị (1,08) · trên trung vị. Từ khi TPBank vào (12/2025–10/2026) thị trường trả 1,05–1,16 lần khi ROE chỉ ~4–6%; 2023–2024 trung vị 1,25 lúc ROE 9–11%."
+  "dung": "Kịch bản dùng P/B 0,80 · 0,95 · 1,15: gần mức thấp 10% (0,82) · giữa mức 25% (0,89) và trung vị (1,08) · trên trung vị. Từ khi TPBank vào (12/2025–10/2026) thị trường trả 1,05–1,28 lần khi ROE chỉ ~4–6%; 2023–2024 trung vị 1,25 lúc ROE 9–11%."
  },
  "so_sanh": {
-  "tieu": "P/B so với 12 CTCK vốn hóa lớn nhất",
-  "phu": "theo giá hôm nay, VCSH 30/6/2026",
-  "chi_so": "P/B (VCSH 30/6/2026)",
-  "chi_so_kv": "P/B (giá 20/10)",
-  "nhom": "12 mã cùng ngành vốn hóa lớn nhất",
+  "tieu": "P/B so với 11 CTCK vốn hóa lớn nhất",
+  "phu": "theo giá hôm nay, VCSH 30/9/2026",
+  "chi_so": "P/B (VCSH 30/9/2026)",
+  "chi_so_kv": "P/B (giá 23/10)",
+  "nhom": "11 mã cùng ngành vốn hóa lớn nhất",
   "kv": [
    [
     "TCX",
-    2.02
+    2.1
    ],
    [
     "VCK",
-    2.18
+    2.14
    ],
    [
     "SSI",
-    1.46
+    1.4
    ],
    [
     "VPX",
-    1.19
-   ],
-   [
-    "VIX",
-    0.95
+    1.23
    ],
    [
     "HCM",
-    1.82
+    2.28
+   ],
+   [
+    "VIX",
+    0.98
    ],
    [
     "VCI",
-    1.28
+    1.33
    ],
    [
     "VND",
@@ -800,26 +800,22 @@
    ],
    [
     "MBS",
-    1.37
+    1.39
    ],
    [
     "SHS",
-    0.9
-   ],
-   [
-    "DSE",
-    1.62
+    0.93
    ],
    [
     "EVF",
-    0.84
+    0.85
    ]
   ],
   "tv": 1.33,
-  "moi_cp": 12504,
+  "moi_cp": 12642,
   "max": 2.5,
-  "y": "Trung vị 1,33 lần với ROE trung vị 12,6%; ORS ROE 4 quý 5,8% nên P/B÷ROE 0,19, gần gấp đôi trung vị nhóm (0,11). P/E 4 quý 21,7 so với trung vị 12,6.",
-  "ng": "BCTC VNDirect, giá 20/10/2026 (bảng cùng ngành)"
+  "y": "Trung vị 1,33 lần với ROE trung vị 9,8%; ORS ROE 4 quý 4,5% nên P/B÷ROE 0,27, gấp 1,8 lần trung vị nhóm (0,15). P/E 4 quý 28,7 so với trung vị 15,9.",
+  "ng": "BCTC VNDirect (Q3/2026; SSI Q2/2026), giá 23/10/2026 (bảng cùng ngành)"
  },
  "theo_doi": [
   {
@@ -838,73 +834,74 @@
    "fd": "2026-12-31",
    "ma_ln": "23000",
    "ln": [
-    65,
-    116,
-    151
+    52,
+    93,
+    135
    ],
    "ck": 98
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    292,
-    392,
-    459
+    301,
+    343,
+    385
    ]
   },
   {
    "quy": "Cả năm 2027",
    "ln": [
-    229,
-    476,
-    709
+    165,
+    435,
+    686
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "Cuối 10/2026",
-   "loai": "hai",
-   "tieu": "BCTC Q3/2026",
-   "ct": "Q3/2025 LNST 133 tỷ. Mô hình Q3/2026 ~113 tỷ; GTGD/phiên Q3 −23% so với Q2, lãi suất huy động lên 8,0% (08/2026) — áp lực lên giá trái phiếu FVTPL.",
+   "khi": "10/2026 (đã ra)",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Q3/2026: LNST 86 tỷ, −24% so với mô hình cũ",
+   "ct": "Mô hình 21/10 cơ sở 113 tỷ (xấu 64, tốt 145); −35% YoY. Hụt ở FVTPL ròng (4 tỷ, Q2 136) và lãi vay 142 tỷ; bù một phần nhờ ký quỹ +905 tỷ, môi giới 24,7 tỷ.",
    "tac": [
-    "LNST < 60 tỷ",
-    "nghiêng về xấu; > 150 tỷ nghiêng về tốt"
+    "−0,2 nghìn đ/cp",
+    "giá trị cơ sở 13,0 → 12,8 (lợi suất 2027 hạ 0,5 điểm, ký quỹ nâng)"
    ],
-   "theo_doi": "LNST quý, FVTPL ròng, phải thu 30/9"
+   "theo_doi": "FVTPL ròng, lãi vay/nợ bình quân"
   },
   {
    "khi": "01/2027",
    "loai": "hai",
-   "tieu": "Cả năm 2026 so với kế hoạch",
-   "ct": "Kế hoạch LNTT 428 tỷ, LNST 343 tỷ (+190%); 6T đạt 48%. Mô hình cơ sở: LNTT 491 tỷ, LNST 392 tỷ.",
+   "tieu": "BCTC Q4/2026 · cả năm so với kế hoạch",
+   "ct": "Kế hoạch LNTT 428 tỷ, LNST 343 tỷ (+190%); 9T đạt 73%. Mô hình cơ sở Q4 LNST 93 tỷ (Q4/2025 98); GTGD/phiên 1–23/10 −10% so với Q3.",
    "tac": [
-    "115% kế hoạch",
-    "LNTT 2026E, kịch bản cơ sở"
+    "LNST Q4 < 50 tỷ",
+    "nghiêng về xấu; > 140 tỷ nghiêng về tốt"
    ],
-   "theo_doi": "LNTT quý IV"
+   "theo_doi": "LNTT quý IV, dư nợ 31/12"
   },
   {
    "khi": "Liên tục",
    "loai": "xuong",
    "muc": 3,
-   "tieu": "Chất lượng khoản phải thu 5.192 tỷ",
-   "ct": "34% tài sản, 67% vốn chủ. Quý I–II/2025 lỗ 113 tỷ, liên quan nhóm Bamboo Capital; kiểm toán 2024 ngoại trừ, cổ phiếu bị cảnh báo 16/4–28/8/2025.",
+   "tieu": "Chất lượng khoản phải thu 5.094 tỷ",
+   "ct": "29% tài sản, 65% vốn chủ (30/9). Quý I–II/2025 lỗ 113 tỷ, liên quan nhóm Bamboo Capital; kiểm toán 2024 ngoại trừ, cổ phiếu bị cảnh báo 16/4–28/8/2025.",
    "tac": [
     "−0,6 nghìn đ/cp",
-    "mỗi 10% phải thu phải trích lập (−415 tỷ LNST)"
+    "mỗi 10% phải thu phải trích lập (−408 tỷ LNST)"
    ],
-   "theo_doi": "thuyết minh phải thu, ý kiến kiểm toán"
+   "theo_doi": "thuyết minh phải thu, ý kiến kiểm toán 2026"
   },
   {
    "khi": "2026–2027",
    "loai": "xuong",
    "muc": 2,
    "tieu": "Lãi suất tăng: chi phí vốn và giá trái phiếu",
-   "ct": "Huy động (cận trên NHNN) 5,5% → 8,0% (06/2025–08/2026). Nợ phải trả 7.468 tỷ; danh mục FVTPL > 5.500 tỷ, chủ yếu trái phiếu và CCTG (30/6).",
+   "ct": "Huy động (cận trên NHNN) 5,5% → 8,0% (06/2025–08/2026); Q3 lỗ FVTPL 191 tỷ. Nợ phải trả 9.426 tỷ (+1.958 trong Q3), vay ngắn hạn 3.740 tỷ.",
    "tac": [
-    "±0,6 nghìn đ/cp",
-    "mỗi ±0,5 điểm % chi phí vốn 2027 (±32 tỷ LNST)"
+    "±1,0 nghìn đ/cp",
+    "mỗi ±0,5 điểm % chi phí vốn 2027 (±40 tỷ LNST)"
    ],
    "theo_doi": "lãi vay/nợ bình quân, lãi/lỗ FVTPL"
   },
@@ -913,10 +910,10 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Lợi nhuận dựa vào tự doanh trái phiếu",
-   "ct": "Lợi suất tài sản ngoài ký quỹ theo quý 0,8–12,2%/năm (2024–6T/2026); 6T/2026 FVTPL ròng 191 tỷ ≈ 94% LNTT.",
+   "ct": "Lợi suất tài sản ngoài ký quỹ theo quý 0,8–12,2%/năm (2024–Q3/2026); 9T/2026 FVTPL ròng 195 tỷ ≈ 63% LNTT, Q3 chỉ 4 tỷ.",
    "tac": [
-    "±1,1 nghìn đ/cp",
-    "mỗi ±0,5 điểm % lợi suất 2027 (±55 tỷ LNST)"
+    "±1,6 nghìn đ/cp",
+    "mỗi ±0,5 điểm % lợi suất 2027 (±60 tỷ LNST)"
    ],
    "theo_doi": "lãi/lỗ FVTPL, thu nhập HTM"
   },
@@ -924,9 +921,9 @@
    "khi": "2027",
    "loai": "len",
    "tieu": "Cho vay ký quỹ qua tệp khách TPBank",
-   "ct": "Dư nợ 1.885 tỷ = 0,24 lần vốn chủ (trần 2 lần); 60% tiền phát hành dành cho ký quỹ. Kịch bản tốt: 4.000 tỷ cuối 2027.",
+   "ct": "Dư nợ 2.790 tỷ = 0,35 lần vốn chủ, thị phần 1,04% (30/6: 0,70%). Cơ sở 3.600 tỷ cuối 2027 (dùng hết 60% tiền TPBank), tốt 4.500.",
    "tac": [
-    "±0,6 nghìn đ/cp",
+    "±0,9 nghìn đ/cp",
     "mỗi ±1.000 tỷ dư nợ bình quân 2027 (±33 tỷ LNST)"
    ],
    "theo_doi": "dư nợ cuối quý"
@@ -935,12 +932,20 @@
    "khi": "2027",
    "loai": "len",
    "tieu": "Thu hồi phải thu, tái đầu tư",
-   "ct": "Cuối 2025 đã thu hồi > 3.400 tỷ. Kịch bản tốt: lợi suất tài sản ngoài ký quỹ 8,5% (2023–2024: 10–11%), vốn vay 6,4% nhờ TPBank.",
+   "ct": "Cuối 2025 đã thu hồi > 3.400 tỷ. Kịch bản tốt: lợi suất tài sản ngoài ký quỹ 8,0% (2023–2024: 10–11%), vốn vay 6,4% nhờ TPBank.",
    "tac": [
-    "+3,2 nghìn đ/cp",
+    "+3,3 nghìn đ/cp",
     "kịch bản tốt so với cơ sở"
    ],
    "theo_doi": "phải thu, lợi suất quý"
+  },
+  {
+   "khi": "12/2026",
+   "loai": "hai",
+   "tieu": "Hết hạn chế chuyển nhượng cổ phần TPBank",
+   "ct": "287,9 triệu cp TPBank mua 12/2025 bị hạn chế chuyển nhượng 1 năm. TPBank nắm 51% và là bên định hướng (trụ sở ra Hà Nội, khách hàng TPBank) — mốc này chủ yếu là thủ tục.",
+   "tac": "",
+   "theo_doi": "thay đổi sở hữu cổ đông lớn"
   },
   {
    "khi": "Q2/2027",
@@ -967,7 +972,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -982,7 +988,8 @@
       9.5,
       8.1,
       4.6,
-      7.7
+      7.7,
+      5.8
      ],
      "mau": "c1",
      "net": false
@@ -999,7 +1006,8 @@
       6.6,
       8.0,
       7.4,
-      6.6
+      6.6,
+      6.7
      ],
      "mau": "c2",
      "net": false
@@ -1016,13 +1024,14 @@
       11.4,
       12.0,
       10.1,
-      11.1
+      11.1,
+      11.3
      ],
      "mau": "c3",
      "net": false
     }
    ],
-   "y": "Từ 2025 tài sản ngoài ký quỹ (88% tổng tài sản) sinh lời dưới chi phí vốn: 6T/2026 6,2% so với 7,0%; 2024 là 11,1% so với 7,9%.",
+   "y": "Từ 2025 tài sản ngoài ký quỹ (84% tổng tài sản) sinh lời dưới chi phí vốn: 9T/2026 6,0% so với 6,9% (Q3 5,8% vs 6,7%); 2024 là 11,1% so với 7,9%.",
    "ng": "BCTC hợp nhất quý: kết quả hoạt động trừ lãi ký quỹ, năm hóa ÷ tài sản ngoài ký quỹ BQ; chi phí vốn = lãi vay ÷ nợ phải trả BQ"
   },
   {
@@ -1031,27 +1040,27 @@
    "kieu": "cot_chong",
    "so_le": 1,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Đầu tư (FVTPL, HTM, AFS)",
      "v": [
-      4.0,
       6.0,
       4.3,
       3.6,
       2.8,
       3.4,
       3.5,
-      7.1
+      7.1,
+      8.7
      ],
      "mau": "c1",
      "net": false
@@ -1059,14 +1068,14 @@
     {
      "ten": "Phải thu",
      "v": [
-      2.8,
       1.7,
       5.1,
       5.9,
       6.8,
       3.3,
       5.6,
-      5.2
+      5.2,
+      5.1
      ],
      "mau": "c2",
      "net": false
@@ -1074,14 +1083,14 @@
     {
      "ten": "Cho vay ký quỹ",
      "v": [
-      2.3,
       2.9,
       1.9,
       0.9,
       1.0,
       1.5,
       1.7,
-      1.9
+      1.9,
+      2.8
      ],
      "mau": "c3",
      "net": false
@@ -1089,20 +1098,20 @@
     {
      "ten": "Tiền & khác",
      "v": [
-      2.3,
       0.6,
       1.2,
       0.7,
       1.1,
       6.2,
       3.8,
-      1.1
+      1.1,
+      0.8
      ],
      "mau": "c4",
      "net": false
     }
    ],
-   "y": "Phải thu 1,7 → 6,8 nghìn tỷ (Q3/2025) → 3,3 → 5,2; tiền TPBank rót cuối 2025 chuyển sang trái phiếu, CCTG trong Q2/2026.",
+   "y": "Phải thu 1,7 → 6,8 nghìn tỷ (Q3/2025) → 3,3 → 5,1 (30/9/2026); tiền TPBank chuyển sang trái phiếu, CCTG (Q2), Q3 ký quỹ +905 tỷ.",
    "ng": "BCTC hợp nhất quý (VNDirect); đầu tư = tài sản tài chính trừ cho vay ký quỹ"
   },
   {
@@ -1111,7 +1120,6 @@
    "kieu": "cot",
    "so_le": 0,
    "nhan": [
-    "Q3/23",
     "Q4/23",
     "Q1/24",
     "Q2/24",
@@ -1122,13 +1130,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "LNST",
      "v": [
-      59,
       59,
       75,
       101,
@@ -1139,7 +1147,8 @@
       133,
       98,
       34,
-      129
+      129,
+      86
      ],
      "mau": "c1",
      "net": false
@@ -1147,7 +1156,6 @@
     {
      "ten": "Lãi − lỗ FVTPL",
      "v": [
-      -74,
       4,
       183,
       78,
@@ -1158,17 +1166,37 @@
       114,
       124,
       55,
-      136
+      136,
+      4
      ],
      "mau": "c4",
      "net": false
+    },
+    {
+     "ten": "Lãi cho vay ký quỹ",
+     "v": [
+      30,
+      31,
+      41,
+      59,
+      65,
+      69,
+      30,
+      27,
+      38,
+      40,
+      49,
+      66
+     ],
+     "mau": "c3",
+     "net": false
     }
    ],
-   "y": "Quý I–II/2025 lỗ 113 tỷ (liên quan nhóm Bamboo Capital); từ Q3/2025 lãi trở lại nhưng đi theo lãi/lỗ FVTPL.",
+   "y": "Quý I–II/2025 lỗ 113 tỷ (Bamboo Capital); LNST đi theo FVTPL ròng — Q3/2026 chỉ 4 tỷ — còn lãi ký quỹ tăng đều lên 66 tỷ.",
    "ng": "BCTC hợp nhất quý"
   },
   {
-   "ten": "Dư nợ ký quỹ / vốn chủ, 30/6/2026",
+   "ten": "Dư nợ ký quỹ / vốn chủ, 30/9/2026",
    "dv": "lần",
    "kieu": "cot_chong",
    "so_le": 2,
@@ -1176,13 +1204,12 @@
     "ORS",
     "VIX",
     "VND",
+    "VCK",
     "SHS",
     "SSI",
     "VCI",
-    "VCK",
     "VPX",
     "TCX",
-    "DSE",
     "MBS",
     "HCM"
    ],
@@ -1190,8 +1217,7 @@
     {
      "ten": "ORS",
      "v": [
-      0.24,
-      0,
+      0.35,
       0,
       0,
       0,
@@ -1210,24 +1236,23 @@
      "ten": "CTCK vốn hóa lớn",
      "v": [
       0,
-      0.43,
-      0.6,
-      0.93,
+      0.38,
+      0.56,
+      0.8,
       0.99,
-      1.0,
-      1.0,
-      1.07,
-      1.13,
-      1.16,
-      1.41,
-      1.98
+      0.99,
+      1.02,
+      1.1,
+      1.15,
+      1.48,
+      2.01
      ],
      "mau": "c4",
      "net": false
     }
    ],
-   "y": "ORS 0,24 lần, thấp nhất trong 12 CTCK vốn hóa lớn (trung vị 1,0); trần pháp lý 2 lần.",
-   "ng": "BCTC 30/6/2026 (VNDirect)"
+   "y": "ORS 0,35 lần dù đã tăng từ 0,24 (30/6), vẫn thấp nhất trong 11 CTCK vốn hóa lớn (trung vị 1,0); trần pháp lý 2 lần.",
+   "ng": "BCTC 30/9/2026 (VNDirect; SSI 30/6/2026)"
   }
  ],
  "ke_hoach": {
@@ -1236,32 +1261,32 @@
    {
     "ten": "Doanh thu hoạt động",
     "kh": 2250,
-    "th": 636,
-    "ky": "6T",
-    "tg": 50,
+    "th": 1125,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 22/4/2026 · BCTC Q2/2026"
+    "ng": "ĐHĐCĐ 22/4/2026 · BCTC Q3/2026"
    },
    {
     "ten": "Lợi nhuận trước thuế",
     "kh": 428,
-    "th": 204,
-    "ky": "6T",
-    "tg": 50,
+    "th": 313,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 22/4/2026 · BCTC Q2/2026"
+    "ng": "ĐHĐCĐ 22/4/2026 · BCTC Q3/2026"
    },
    {
     "ten": "Lợi nhuận sau thuế",
     "kh": 343,
-    "th": 163,
-    "ky": "6T",
-    "tg": 50,
+    "th": 250,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 22/4/2026 · BCTC Q2/2026"
+    "ng": "ĐHĐCĐ 22/4/2026 · BCTC Q3/2026"
    }
   ],
-  "y": "Doanh thu 6T mới đạt 28% (lãi/lỗ FVTPL ghi gộp giảm), LNTT 48%. Mô hình cơ sở: LNTT cả năm 491 tỷ (~115% kế hoạch), ROE 5,0%.",
+  "y": "Doanh thu 9T mới đạt 50% (lãi/lỗ FVTPL ghi gộp giảm), LNTT 73% — đúng nhịp thời gian. Mô hình cơ sở: LNTT cả năm 429 tỷ (~100% kế hoạch), ROE 4,4%.",
   "ng": ""
  },
  "ctck": [],
@@ -1353,29 +1378,34 @@
    "link": "https://nhadautu.vn/co-phieu-chung-khoan-tps-don-2-tin-vui-d98688.html"
   },
   {
+   "ten": "BCTC hợp nhất Q3/2026 Chứng khoán Tiên Phong (số liệu VNDirect finfo)",
+   "ngay": "10/2026",
+   "link": "https://finfo-api.vndirect.com.vn/v4/financial_statements?q=code:ORS"
+  },
+  {
    "ten": "khoanguyeninvest.vn — Toàn cảnh: thanh khoản, lãi suất NHNN, trạng thái thị trường",
-   "ngay": "20/10/2026",
+   "ngay": "23/10/2026",
    "link": "https://khoanguyeninvest.vn/#toan-canh"
   }
  ],
  "mang": [
   {
    "ten": "Đầu tư & dịch vụ",
-   "phu": "Trái phiếu, CCTG (FVTPL > 5.500 tỷ), HTM, thu xếp vốn — 82% thu nhập hoạt động ròng 6T/2026",
+   "phu": "Trái phiếu, CCTG (FVTPL > 5.500 tỷ), HTM, thu xếp vốn — 80% thu nhập hoạt động ròng 9T/2026",
    "so": [
     [
-     "Danh mục đầu tư 30/6/2026",
-     "7.134 tỷ",
-     "+102% từ 31/3"
+     "Danh mục đầu tư 30/9/2026",
+     "8.659 tỷ",
+     "+21% từ 30/6"
     ],
     [
-     "Lãi − lỗ FVTPL 6T/2026",
-     "191 tỷ",
-     "Q2: 136 tỷ"
+     "Lãi − lỗ FVTPL 9T/2026",
+     "195 tỷ",
+     "Q3: 4 tỷ"
     ],
     [
-     "Lợi suất ròng 6T/2026",
-     "6,2%",
+     "Lợi suất ròng 9T/2026",
+     "6,0%",
      "2024: 11,1%"
     ]
    ],
@@ -1392,22 +1422,22 @@
   },
   {
    "ten": "Cho vay ký quỹ",
-   "phu": "0,24 lần vốn chủ — thấp nhất trong các CTCK vốn hóa lớn",
+   "phu": "0,35 lần vốn chủ — thấp nhất trong các CTCK vốn hóa lớn",
    "so": [
     [
-     "Dư nợ 30/6/2026",
-     "1.885 tỷ",
-     "0,24 lần VCSH"
+     "Dư nợ 30/9/2026",
+     "2.790 tỷ",
+     "+905 tỷ trong Q3"
     ],
     [
-     "Lãi cho vay 6T/2026",
-     "89 tỷ",
-     "−10%"
+     "Lãi cho vay 9T/2026",
+     "155 tỷ",
+     "+23% YoY"
     ],
     [
      "Thị phần dư nợ (CTCK trên sàn)",
-     "0,56%",
-     "30/6/2025: 0,40%"
+     "1,04%",
+     "30/9/2025: 0,46%"
     ]
    ],
    "y": [
@@ -1419,7 +1449,7 @@
   },
   {
    "ten": "Khoản phải thu",
-   "phu": "5.192 tỷ, 34% tài sản (30/6/2026)",
+   "phu": "5.094 tỷ, 29% tài sản (30/9/2026)",
    "so": [
     [
      "Cuối 2024",
@@ -1432,9 +1462,9 @@
      "58% tài sản"
     ],
     [
-     "30/6/2026",
-     "5.192 tỷ",
-     "67% VCSH"
+     "30/9/2026",
+     "5.094 tỷ",
+     "65% VCSH"
     ]
    ],
    "y": [
@@ -1453,18 +1483,18 @@
    "phu": "TPBank 51% từ 31/12/2025; không chia cổ tức 2025",
    "so": [
     [
-     "VCSH 30/6/2026",
-     "7.801 tỷ",
-     "+98% từ 30/9/2025"
+     "VCSH 30/9/2026",
+     "7.888 tỷ",
+     "+100% từ 30/9/2025"
     ],
     [
-     "Nợ phải trả",
-     "7.468 tỷ",
-     "vay ngắn hạn 2.339 tỷ"
+     "Nợ phải trả 30/9/2026",
+     "9.426 tỷ",
+     "vay ngắn hạn 3.740 tỷ"
     ],
     [
-     "Chi phí vốn 6T/2026",
-     "7,0%",
+     "Chi phí vốn 9T/2026",
+     "6,9%",
      "2024: 7,9%"
     ]
    ],
@@ -1487,8 +1517,8 @@
     },
     {
      "h": -1,
-     "t": "Toàn cảnh thị trường THẬN TRỌNG từ 14/9/2026; tiền giao dịch 20 phiên ~0,6 lần bình quân năm.",
-     "ng": "tab Toàn cảnh 20/10"
+     "t": "Toàn cảnh thị trường THẬN TRỌNG 14/9–22/10/2026, chuyển QUAN SÁT từ 23/10; tiền giao dịch 20 phiên ~0,6 lần bình quân năm.",
+     "ng": "tab Toàn cảnh 23/10"
     }
    ]
   },
@@ -1497,18 +1527,18 @@
    "y": [
     {
      "h": -1,
-     "t": "GTGD khớp lệnh ~700 mã: 25.646 tỷ/phiên (2025) → 14.724 (Q3/2026) → 12.677 (1–20/10).",
+     "t": "GTGD khớp lệnh ~700 mã: 25.646 tỷ/phiên (2025) → 14.724 (Q3/2026) → 13.198 (1–23/10).",
      "ng": "tab Toàn cảnh"
     },
     {
      "h": 0,
-     "t": "CTCK thuộc ngân hàng (TCX, VPX, MBS): ROE 4 quý 12–16%, P/B 1,2–2,0 lần, ký quỹ 1,1–1,4 lần vốn chủ.",
-     "ng": "BCTC VNDirect, giá 20/10/2026"
+     "t": "CTCK thuộc ngân hàng (TCX, VPX, MBS): ROE 4 quý 11–14%, P/B 1,2–2,1 lần, ký quỹ 1,1–1,5 lần vốn chủ.",
+     "ng": "BCTC VNDirect Q3/2026, giá 23/10/2026"
     },
     {
      "h": -1,
-     "t": "Phải thu ở 14 CTCK vốn chủ > 5.000 tỷ khác: trung vị 2,1% tổng tài sản; ORS 34%.",
-     "ng": "BCTC 30/6/2026 (VNDirect)"
+     "t": "Phải thu ở 14 CTCK vốn chủ > 5.000 tỷ khác: trung vị 1,7% tổng tài sản; ORS 29%.",
+     "ng": "BCTC 30/9/2026 (VNDirect; SSI 30/6)"
     }
    ]
   },
