@@ -1,0 +1,1459 @@
+{
+ "v": 2,
+ "ma": "HDC",
+ "ten": "CTCP Phát triển Nhà Bà Rịa – Vũng Tàu (Hodeco)",
+ "nganh": "Bất động sản nhà ở (Bà Rịa – Vũng Tàu, nay thuộc TP.HCM)",
+ "ky": "BCTC Q2/2026 · công bố đến 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "cp_trieu": 279.62,
+ "vc_them": 499,
+ "cp_ng": "229,72 triệu cp lưu hành (vốn điều lệ 2.297,2 tỷ sau cổ tức 15% bằng cổ phiếu, ĐKCC 22/06/2026; BCTC Q2 chưa cập nhật) + 49,9 triệu cp từ 4,99 triệu trái phiếu HDC425001 bắt buộc chuyển đổi 1:10 (40% sau 1 năm, 60% khi đáo hạn cuối 2027). Tính trên số cp pha loãng, vốn chủ cộng 499 tỷ gốc trái phiếu",
+ "co_tuc": [],
+ "chia": [
+  [
+   "2026-06-19",
+   1.15
+  ]
+ ],
+ "tieu_de": {
+  "t": "Lãi vay ~170 tỷ/năm nuốt lãi kinh doanh; giá ≈ sổ sách sau pha loãng vẫn chưa rẻ",
+  "dk": "up_duoi:5",
+  "khac": "Lãi vay ~170 tỷ/năm nuốt lãi kinh doanh; giá đã dưới mức 0,85 lần vốn chủ pha loãng"
+ },
+ "dong_mo": "Lãi kỷ lục 639 tỷ năm 2025 đến từ thoái vốn Đại Dương (~862 tỷ doanh thu tài chính); kinh doanh BĐS lỗ 7 tỷ trước lãi vay. 6T/2026 lãi vay 84 tỷ. Cơ sở: LN 2026E 148 tỷ, 2027E 22 tỷ; P/B 0,85 × vốn chủ 30/6/2027E cộng 499 tỷ trái phiếu chuyển đổi: {gt} ({up}); cán cân lên/xuống {rr}.",
+ "luan_diem": [
+  {
+   "so": "−7 tỷ",
+   "nhan": "lãi kinh doanh BĐS 2025, trước lãi vay",
+   "tieu": "Lãi kỷ lục 2025 là tiền bán dự án",
+   "t": "LN cổ đông 2025 639 tỷ (gấp 9,7 lần 2024) gần như toàn bộ từ ~862 tỷ doanh thu tài chính Q2–Q4, chủ yếu lãi thoái vốn Công ty Đại Dương Vũng Tàu. Phần kinh doanh: doanh thu 456 tỷ (−16%), biên gộp 21,1%, lãi gộp 97 tỷ không đủ bù 104 tỷ chi phí bán hàng + quản lý; 2019–2024 phần này lãi 163–423 tỷ/năm. P/E 4 quý dưới 5 lần hôm nay chứa 538 tỷ lãi Q3/2025: sau Q3/2026, LN 4 quý còn ~149 tỷ (cơ sở).",
+   "ng": "BCTC VNDirect · Doanh Nhân 10/2025 · mô hình"
+  },
+  {
+   "so": "~170 tỷ",
+   "nhan": "lãi vay mỗi năm (6T/2026 × 2)",
+   "tieu": "Lãi vay đã lớn hơn lãi kinh doanh",
+   "t": "Chi phí lãi vay tăng từ 12–20 tỷ/quý (6T/2025) lên 39–44 tỷ (Q1–Q2/2026): trái phiếu chuyển đổi 10%/năm, trái phiếu 2025 và vay ngân hàng cho quỹ đất chưa bán được. 4 quý gần nhất lãi kinh doanh 76 tỷ — riêng Q1/2026 có 165,9 tỷ doanh thu từ bên liên quan HUB — còn lãi vay 132 tỷ. Bỏ khoản một lần, 4/5 quý gần nhất lỗ trước thuế. Hòa vốn cần ~710 tỷ doanh thu/năm ở biên gộp 35%, gấp 1,6 lần 2025.",
+   "ng": "BCTC VNDirect · VCBS 20/05 · mô hình"
+  },
+  {
+   "so": "+22%",
+   "nhan": "số cổ phiếu khi trái phiếu chuyển đổi xong",
+   "tieu": "Pha loãng ở 10.000 đ/cp, dưới giá sổ sách",
+   "t": "4,99 triệu trái phiếu HDC425001 (499 tỷ, lãi 10%/năm) bắt buộc chuyển đổi 1:10 = 10.000 đ/cp: 40% sau 1 năm, 60% khi đáo hạn cuối 2027. Cổ phiếu 229,7 → 279,6 triệu; BVPS 12.663 → 12.188 đ. Vốn chủ thêm 499 tỷ, lãi vay giảm ~50 tỷ/năm. HDC không trả cổ tức tiền mặt (thưởng 12% năm 2025, cổ tức 15% bằng cổ phiếu 6/2026, kế hoạch 15% cho 2026); kế hoạch đầu tư 2026 hơn 3.550 tỷ — lớn hơn vốn chủ — sẽ cần thêm vay hoặc phát hành.",
+   "ng": "Doanh Nhân 11–12/2025, 6/2026 · ĐHĐCĐ 2026 · BCTC Q2"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 0,85 lần vốn chủ pha loãng: {up_so} so với giá hiện tại",
+   "t": "Vốn chủ 30/6/2027E + 499 tỷ trái phiếu ≈ 3,47 nghìn tỷ × P/B 0,85: dưới trung vị 9 chủ đầu tư nhà ở (0,89) vì ROE 2027E cơ sở chỉ 0,6%, sát thấp 10% lịch sử HDC (0,89); 23/10 thị trường trả 0,97 lần. Xấu 7,5 (doanh thu 2027 450 tỷ, P/B 0,65 = đáy 2015), tốt 15,5 (1.200 tỷ, bán thêm dự án, P/B 1,15). Quỹ đất Light City GĐ2, Long Điền, Wonderland chỉ tính theo sổ sách.",
+   "ng": "mô hình · P/B lịch sử HDC (BCTC VNDirect) · bảng giá 23/10/2026"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   639,
+   148,
+   22
+  ],
+  "ln_truoc": 66,
+  "eps": [
+   2285,
+   529,
+   79
+  ],
+  "bv": [
+   12118,
+   12358,
+   12437
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "ROE",
+    "v": [
+     24.9,
+     5.1,
+     0.6
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN, vốn chủ 2024–2025: BCTC; EPS, BVPS pha loãng theo 279,6 triệu cp (gồm 49,9 triệu cp từ trái phiếu chuyển đổi, BVPS cộng 499 tỷ gốc trái phiếu). Không trả cổ tức tiền mặt."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Kinh doanh BĐS & hàng hóa",
+    "mau": "c1",
+    "v": [
+     -7,
+     177,
+     171
+    ]
+   },
+   {
+    "ten": "Bán dự án, thoái vốn, khác một lần",
+    "mau": "c2",
+    "v": [
+     862,
+     169,
+     0
+    ]
+   },
+   {
+    "ten": "Lãi vay ròng",
+    "mau": "c3",
+    "v": [
+     -80,
+     -165,
+     -155
+    ]
+   },
+   {
+    "ten": "Liên kết & khác",
+    "mau": "c4",
+    "v": [
+     38,
+     16,
+     12
+    ]
+   }
+  ],
+  "nhan": "Bán dự án, thoái vốn, khác một lần",
+  "ng": "Kinh doanh = lãi gộp − bán hàng − quản lý; một lần = thoái vốn Đại Dương 2025 (doanh thu tài chính), thu nhập khác 109 tỷ Q2/2026 và chuyển nhượng 6T cuối 2026 (ước). BCTC VNDirect; 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với chủ đầu tư nhà ở niêm yết",
+  "phu": "giá hôm nay; vốn chủ 30/6/2026 + 499 tỷ trái phiếu, 279,6 triệu cp",
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 23/10)",
+  "nhom": "9 chủ đầu tư nhà ở niêm yết",
+  "kv": [
+   [
+    "VHM",
+    1.9
+   ],
+   [
+    "CEO",
+    1.01
+   ],
+   [
+    "TCH",
+    0.94
+   ],
+   [
+    "KDH",
+    0.9
+   ],
+   [
+    "DXG",
+    0.89
+   ],
+   [
+    "PDR",
+    0.88
+   ],
+   [
+    "NLG",
+    0.82
+   ],
+   [
+    "DIG",
+    0.8
+   ],
+   [
+    "NVL",
+    0.61
+   ]
+  ],
+  "tv": 0.89,
+  "moi_cp": 12188,
+  "max": 2.5,
+  "y": "Trừ VHM (ROE 4 quý 33%), nhóm được trả 0,61–1,01 lần với ROE 4 quý 1–10%. ROE 4 quý của HDC 23% nhờ 538 tỷ lãi thoái vốn Q3/2025; bỏ khoản này còn ~4,5% — P/B ngang hoặc trên nhóm là chưa rẻ.",
+  "ng": "Vốn hóa VNDirect ÷ vốn chủ cổ đông mẹ 30/6/2026 (bảng giá 23/10/2026, BCTC VNDirect); NVL gồm tiền chào bán 3:1 (như hồ sơ KDH); HDC: vốn chủ + 499 tỷ trái phiếu trên 279,6 triệu cp"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: kinh doanh, khoản một lần, lãi vay",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Kinh doanh BĐS & hàng hóa"
+   },
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     456,
+     743,
+     800
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     21.1,
+     38.1,
+     35.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Bán hàng + quản lý (tỷ)",
+    "v": [
+     104,
+     106,
+     109
+    ]
+   },
+   {
+    "ten": "Lãi kinh doanh (tỷ)",
+    "v": [
+     -7,
+     177,
+     171
+    ]
+   },
+   {
+    "nhom": "Ngoài kinh doanh chính"
+   },
+   {
+    "ten": "Bán dự án, thoái vốn, khác một lần (tỷ)",
+    "v": [
+     862,
+     169,
+     0
+    ]
+   },
+   {
+    "ten": "Lãi vay ròng (tỷ)",
+    "v": [
+     -80,
+     -165,
+     -155
+    ]
+   },
+   {
+    "ten": "Liên kết & khác (tỷ)",
+    "v": [
+     38,
+     16,
+     12
+    ]
+   },
+   {
+    "nhom": "Lợi nhuận và vốn"
+   },
+   {
+    "ten": "LN trước thuế (tỷ)",
+    "v": [
+     813,
+     197,
+     28
+    ]
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     639,
+     148,
+     22
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS pha loãng (đ)",
+    "v": [
+     2285,
+     529,
+     79
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "Vốn chủ + 499 tỷ trái phiếu (tỷ)",
+    "v": [
+     3388,
+     3456,
+     3478
+    ]
+   },
+   {
+    "ten": "BVPS pha loãng (đ)",
+    "v": [
+     12118,
+     12358,
+     12437
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     24.9,
+     5.1,
+     0.6
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "2026E = 6T thực tế + 6T cuối ước. LNTT = lãi kinh doanh + một lần + lãi vay ròng + liên kết & khác; thuế 20% khi LNTT dương, thiểu số ~1%. EPS, BVPS trên 279,6 triệu cp pha loãng; ROE 2027E trên vốn chủ gồm trái phiếu chuyển đổi."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   148
+  ],
+  "cuoi": [
+   "2027E",
+   22
+  ],
+  "buoc": [
+   [
+    "Lãi kinh doanh",
+    -6
+   ],
+   [
+    "Khoản một lần",
+    -169
+   ],
+   [
+    "Lãi vay ròng",
+    10
+   ],
+   [
+    "Liên kết & khác",
+    -4
+   ],
+   [
+    "Thuế, thiểu số",
+    43
+   ]
+  ],
+  "y": "2027E mất 169 tỷ khoản một lần của 2026E (109 tỷ Q2 + 60 tỷ chuyển nhượng ước 6T cuối). Doanh thu 800 tỷ, biên gộp 35% chỉ đủ trả chi phí và lãi vay.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu 6T cuối 2026 (tỷ)",
+   "v": [
+    "250",
+    "400",
+    "600"
+   ],
+   "ly_do": "6T/2026 343 tỷ (Q1 có 165,9 tỷ từ HUB); 6T cuối 2025: 277; VCBS dự phóng cả năm 1.096 tỷ"
+  },
+  {
+   "ten": "Doanh thu 2027 (tỷ)",
+   "v": [
+    "450",
+    "800",
+    "1.200"
+   ],
+   "ly_do": "2025: 456; 2019–2022: 822–1.357; VCBS 1.171. Light City GĐ1 mở bán lại Q2/2026, Ecotown CC1 340 căn, Ngọc Tước 2, Tây đường 3/2"
+  },
+  {
+   "ten": "Biên gộp 6T cuối 2026 · 2027",
+   "v": [
+    "22% · 25%",
+    "33% · 35%",
+    "40% · 40%"
+   ],
+   "ly_do": "6T/2026 44% (Q1 54%, Q2 18%); 2025 21%; 2019–2024 29–45%. Nhà ở xã hội Ecotown có lợi nhuận định mức tối đa 10% kéo biên xuống"
+  },
+  {
+   "ten": "Quản lý doanh nghiệp 2027 (tỷ)",
+   "v": [
+    "90",
+    "85",
+    "80"
+   ],
+   "ly_do": "2024: 40; 2025: 80; 6T/2026: 41. Bán hàng 3% doanh thu (6T/2026 3,2%)"
+  },
+  {
+   "ten": "Lãi một lần trước thuế: 6T cuối 2026 · 2027",
+   "v": [
+    "0 · 0",
+    "60 · 0",
+    "150 · 150"
+   ],
+   "ly_do": "VCBS: chuyển nhượng Thống Nhất 180 tỷ, phần còn lại Đại Dương ~194 tỷ trong 2026; Q2 đã ghi 109 tỷ. Doanh thu tài chính 2022: 260 tỷ, 2025: ~862 tỷ"
+  },
+  {
+   "ten": "Lãi vay ròng 2027 (tỷ)",
+   "v": [
+    "180",
+    "155",
+    "130"
+   ],
+   "ly_do": "Q2/2026 42 tỷ/quý; 40% trái phiếu (lãi 10%) chuyển đổi đầu 2027 bớt ~20 tỷ/năm; quỹ đất mới cần vay thêm"
+  },
+  {
+   "ten": "P/B vốn chủ pha loãng 30/6/2027E",
+   "v": [
+    "0,65",
+    "0,85",
+    "1,15"
+   ],
+   "ly_do": "HDC từ 2015: đáy 0,65 (2/2015), thấp 10% 0,89, thấp 25% 0,96; từ 2019 thấp 10% 1,04; 9 chủ đầu tư nhà ở: trung vị 0,89"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 16,
+   "ln27": -171,
+   "gia": 7.5,
+   "mo_ta": "Không có chuyển nhượng mới; doanh thu 2027 450 tỷ, biên gộp 25%, lãi vay 180 tỷ → lỗ 171 tỷ; P/B 0,65 (đáy 2015)"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 148,
+   "ln27": 22,
+   "gia": 10.5,
+   "mo_ta": "6T cuối 2026: 400 tỷ doanh thu + 60 tỷ chuyển nhượng; 2027 doanh thu 800 tỷ, biên 35%, hòa vốn; P/B 0,85"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 310,
+   "ln27": 324,
+   "gia": 15.5,
+   "mo_ta": "Bán hàng Light City, Ecotown nhanh: doanh thu 2027 1.200 tỷ, biên 40%, thêm 150 tỷ lãi bán dự án; P/B 1,15"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B trên cổ phiếu pha loãng",
+  "phu": "P/B × (vốn chủ 30/6/2027E + 499 tỷ trái phiếu chuyển đổi) ÷ 279,6 triệu cp",
+  "ck": 0,
+  "cp": 279.62,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông",
+    "mau": "c1",
+    "x": [
+     2739,
+     2968,
+     3280
+    ],
+    "boi": [
+     0.65,
+     0.85,
+     1.15
+    ],
+    "x_ten": "Vốn chủ cổ đông 30/6/2027E",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     1780,
+     2523,
+     3772
+    ]
+   },
+   {
+    "ten": "Trái phiếu chuyển thành vốn",
+    "mau": "c4",
+    "x": [
+     499,
+     499,
+     499
+    ],
+    "boi": [
+     0.65,
+     0.85,
+     1.15
+    ],
+    "x_ten": "Gốc trái phiếu chuyển đổi HDC425001",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     324,
+     424,
+     574
+    ]
+   }
+  ],
+  "von": [
+   2104,
+   2947,
+   4346
+  ],
+  "gia": [
+   7.5,
+   10.5,
+   15.5
+  ]
+ },
+ "nhay": [
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.2
+  ],
+  [
+   "Trái phiếu đổi 1:11,5 (điều chỉnh theo cổ tức 15%)",
+   null,
+   0.3
+  ],
+  [
+   "Lãi một lần ±100 tỷ trước thuế (trước 30/6/2027)",
+   79,
+   0.2
+  ],
+  [
+   "Trích lập 10% phải thu ngắn hạn",
+   66,
+   0.2
+  ],
+  [
+   "Doanh thu 2027 ±200 tỷ (biên gộp 35%)",
+   51,
+   0.1
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.0,
+   0.65,
+   0.67,
+   0.65,
+   0.96,
+   0.94,
+   0.94,
+   0.94,
+   0.92,
+   0.94,
+   1.01,
+   0.97,
+   0.96,
+   0.89,
+   0.88,
+   0.87,
+   0.93,
+   0.91,
+   0.93,
+   0.92,
+   0.87,
+   0.79,
+   0.83,
+   0.79,
+   0.8,
+   0.76,
+   0.76,
+   0.74,
+   0.89,
+   1.11,
+   1.16,
+   1.27,
+   1.31,
+   1.28,
+   1.12,
+   1.1,
+   1.01,
+   0.9,
+   1.0,
+   1.12,
+   1.04,
+   1.01,
+   1.0,
+   0.91,
+   0.99,
+   0.9,
+   0.96,
+   0.97,
+   0.97,
+   0.91,
+   1.02,
+   0.96,
+   1.04,
+   1.09,
+   1.17,
+   1.46,
+   1.51,
+   1.57,
+   1.56,
+   1.65,
+   1.46,
+   1.25,
+   0.96,
+   1.07,
+   1.11,
+   1.06,
+   1.06,
+   1.22,
+   1.54,
+   1.55,
+   1.73,
+   2.45,
+   2.36,
+   2.44,
+   2.56,
+   2.34,
+   2.86,
+   3.54,
+   4.07,
+   4.35,
+   4.85,
+   7.03,
+   5.78,
+   6.03,
+   5.02,
+   5.2,
+   6.09,
+   4.37,
+   3.47,
+   2.63,
+   3.31,
+   3.69,
+   2.74,
+   1.91,
+   2.4,
+   1.87,
+   2.21,
+   1.77,
+   1.88,
+   2.05,
+   2.11,
+   2.02,
+   2.67,
+   2.66,
+   2.25,
+   2.17,
+   2.34,
+   2.35,
+   2.22,
+   2.21,
+   2.5,
+   2.19,
+   2.43,
+   2.21,
+   2.18,
+   1.97,
+   2.15,
+   2.08,
+   2.02,
+   1.99,
+   1.92,
+   1.96,
+   2.19,
+   1.72,
+   2.0,
+   2.03,
+   2.75,
+   2.73,
+   2.79,
+   2.58,
+   1.9,
+   1.59,
+   1.52,
+   1.44,
+   1.3,
+   1.32,
+   1.19,
+   1.17,
+   0.89,
+   0.96,
+   0.84,
+   0.93
+  ],
+  "p10": 0.89,
+  "p25": 0.96,
+  "tv": 1.45,
+  "thap": [
+   "2015-02",
+   0.65
+  ],
+  "nay": [
+   "2026-10",
+   0.93
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,65 · 0,85 · 1,15 trên vốn chủ pha loãng: đáy 2/2015 (0,65), dưới thấp 10% (0,89), trên thấp 10% từ 2019 (1,04) nhưng dưới trung vị (1,45). 2024–2025 HDC được trả 1,59–2,79 lần; số cp từ 6/2026 đã gồm cổ tức 15%."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -34,
+    19,
+    84
+   ],
+   "ck": 538
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -50,
+    29,
+    125
+   ],
+   "ck": 30
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    16,
+    148,
+    310
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Cùng kỳ 538 tỷ (lãi thoái vốn Đại Dương ~700 tỷ) nên LN 4 quý sẽ giảm mạnh. Xem doanh thu ngoài bên liên quan, lãi vay và dòng tiền kinh doanh.",
+   "tac": [
+    "≥ 19 tỷ",
+    "khớp cơ sở; lỗ thì nghiêng về xấu"
+   ],
+   "theo_doi": "LN, lãi vay, LCTT kinh doanh"
+  },
+  {
+   "khi": "10–11/2026",
+   "loai": "len",
+   "tieu": "Lãnh đạo đăng ký mua 2 triệu cp",
+   "ct": "Đăng ký mua 9/10–7/11/2026, sau đợt bị bán giải chấp 3/2026 (gia đình Chủ tịch hơn 2,6 triệu cp) và Tổng giám đốc bán 700.000 cp trong 9–10/2026; 2 triệu cp ≈ 0,9% lưu hành.",
+   "tac": "",
+   "theo_doi": "kết quả giao dịch nội bộ"
+  },
+  {
+   "khi": "Cuối 2026",
+   "loai": "hai",
+   "tieu": "Chuyển đổi đợt 1 trái phiếu (40%)",
+   "ct": "~20 triệu cp mới ở 10.000 đ/cp; vốn chủ +200 tỷ, lãi vay bớt ~20 tỷ/năm. Đã tính trong số cp pha loãng; nếu tỷ lệ điều chỉnh theo cổ tức 15% thì thêm 7,5 triệu cp.",
+   "tac": [
+    "−0,3 nghìn đ/cp",
+    "nếu đổi theo tỷ lệ 1:11,5"
+   ],
+   "theo_doi": "thông báo chuyển đổi, tỷ lệ"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Ghi nhận chuyển nhượng Thống Nhất, Đại Dương",
+   "ct": "VCBS: Thống Nhất giá chuyển nhượng 180 tỷ, phần còn lại Đại Dương ~194 tỷ; Q2/2026 đã ghi 109 tỷ thu nhập khác. Cơ sở tính thêm 60 tỷ lãi trước thuế 6T cuối 2026.",
+   "tac": [
+    "+0,2 nghìn đ/cp",
+    "mỗi 100 tỷ lãi trước thuế ghi nhận trước 30/6/2027"
+   ],
+   "theo_doi": "thu nhập tài chính, thu nhập khác"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Ecotown CC1, Light City đợt 3–4",
+   "ct": "ĐHĐCĐ 2026: hoàn tất mở bán CC1 Ecotown Phú Mỹ (870 căn nhà ở xã hội), chuyển mục đích đất và mở bán đợt 3–4 Light City GĐ1 (409 liền kề, 213 biệt thự).",
+   "tac": [
+    "±51 tỷ LN 2027",
+    "mỗi 200 tỷ doanh thu (biên gộp 35%)"
+   ],
+   "theo_doi": "doanh số, người mua trả trước"
+  },
+  {
+   "khi": "Cuối 2027",
+   "loai": "hai",
+   "tieu": "Đáo hạn trái phiếu; Light City GĐ2",
+   "ct": "60% trái phiếu còn lại (~30 triệu cp) chuyển đổi khi đáo hạn. VCBS kỳ vọng GĐ2 (21,8 ha) khởi động cuối 2027, dòng tiền ~5,5 nghìn tỷ các năm sau — ngoài mô hình.",
+   "tac": "",
+   "theo_doi": "pháp lý GĐ2, kế hoạch vốn"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi vay lớn hơn lãi kinh doanh",
+   "ct": "4 quý gần nhất: lãi kinh doanh 76 tỷ, lãi vay 132 tỷ. Hòa vốn cần ~710 tỷ doanh thu/năm (biên gộp 35%); 2025 chỉ 456 tỷ.",
+   "tac": [
+    "−171 tỷ LN 2027",
+    "kịch bản xấu: doanh thu 450 tỷ, biên gộp 25%"
+   ],
+   "theo_doi": "doanh thu quý, chi phí lãi vay"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Doanh thu bên liên quan, dòng tiền âm",
+   "ct": "Q1/2026: 165,9/248,7 tỷ doanh thu từ HUB (bên liên quan); lưu chuyển tiền kinh doanh -276 tỷ. Phải thu ngắn hạn 832 tỷ (30/6).",
+   "tac": [
+    "−0,2 nghìn đ/cp",
+    "nếu trích lập 10% phải thu ngắn hạn"
+   ],
+   "theo_doi": "phải thu, giao dịch bên liên quan"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Cổ phiếu cầm cố, công bố thông tin",
+   "ct": "Giá giảm hơn 50% (10/2025–3/2026) kéo theo bán giải chấp cổ phiếu lãnh đạo; HOSE nhắc chậm công bố tài liệu ĐHĐCĐ 2026; KTNN (2022) nêu việc chỉ định chủ đầu tư Light City chưa phù hợp.",
+   "tac": "",
+   "theo_doi": "giao dịch nội bộ, kết luận thanh tra"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "hai",
+   "tieu": "Mức P/B thị trường trả",
+   "ct": "P/B pha loãng ~0,97 lần (23/10) ≈ thấp 25% từ 2015 (0,96); 2024–2025 HDC được trả 1,59–2,79 lần khi còn lãi kinh doanh.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi 0,1 lần P/B"
+   ],
+   "theo_doi": "P/B so với ROE"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "LN trước thuế theo nguồn, từng quý",
+   "kieu": "cot_chong",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Kinh doanh",
+     "v": [
+      44,
+      48,
+      22,
+      -7,
+      -10,
+      -13,
+      109,
+      -10
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Một lần",
+     "v": [
+      -15,
+      -25,
+      0,
+      72,
+      700,
+      90,
+      0,
+      109
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Lãi vay ròng",
+     "v": [
+      -11,
+      -15,
+      -9,
+      -21,
+      -20,
+      -30,
+      -39,
+      -42
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Liên kết & khác",
+     "v": [
+      1,
+      1,
+      4,
+      24,
+      3,
+      9,
+      3,
+      7
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "8 quý: một lần 931 tỷ, kinh doanh 184 tỷ, lãi vay ròng -186 tỷ. Bỏ khoản một lần, 4/5 quý gần nhất lỗ; quý lãi Q1/2026 có 165,9 tỷ doanh thu từ HUB.",
+   "ng": "BCTC VNDirect; một lần = doanh thu tài chính > 20 tỷ/quý (thoái vốn Đại Dương) và thu nhập khác > 10 tỷ"
+  },
+  {
+   "ten": "Doanh thu thuần và lãi gộp theo năm",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "ss": [
+    {
+     "ten": "Doanh thu thuần",
+     "v": [
+      822,
+      842,
+      1357,
+      1298,
+      666,
+      546,
+      456
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      239,
+      374,
+      486,
+      479,
+      298,
+      220,
+      97
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Doanh thu giảm 4 năm liền từ 1.357 tỷ (2021) về 456 tỷ (2025); lãi gộp 2025 97 tỷ, thấp nhất ít nhất từ 2017.",
+   "ng": "BCTC VNDirect (cộng 4 quý)"
+  },
+  {
+   "ten": "Nợ vay, tiền và người mua trả trước",
+   "kieu": "duong",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      1651,
+      1598,
+      1586,
+      1430,
+      1626,
+      1702,
+      1605,
+      1545
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Người mua trả trước",
+     "v": [
+      224,
+      274,
+      324,
+      346,
+      293,
+      373,
+      282,
+      278
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tiền và tiền gửi",
+     "v": [
+      27,
+      15,
+      15,
+      19,
+      285,
+      503,
+      53,
+      123
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "30/6/2026 nợ vay 1.545 tỷ (gồm 499 tỷ trái phiếu chuyển đổi), tiền 123 tỷ; người mua trả trước chỉ 278 tỷ — chưa có lượng hàng đã bán chờ giao đáng kể.",
+   "ng": "BCTC VNDirect"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "LNST",
+    "kh": 493,
+    "th": 102,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q2/2026"
+   }
+  ],
+  "y": "6T đạt 21% kế hoạch, trong đó 109 tỷ thu nhập khác một lần. Đạt 493 tỷ cần ~391 tỷ trong 6T cuối — cỡ một thương vụ như Đại Dương; mô hình cơ sở 148 tỷ (30%).",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "The Light City (Khu nhà ở Hải Đăng) — dự án trọng điểm",
+   "phu": "Vũng Tàu cũ · GĐ1 27 ha · GĐ2 21,8 ha",
+   "so": [
+    [
+     "GĐ1",
+     "409 LK · 213 BT",
+     "+ 400 căn hộ; đang bán ~100 sản phẩm"
+    ],
+    [
+     "GĐ2",
+     "21,8 ha",
+     "VCBS: khởi động cuối 2027"
+    ],
+    [
+     "Doanh thu 2026 (VCBS)",
+     "~47 tỷ",
+     "sau chuyển mục đích đất xen kẹt"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Bán hàng GĐ1 từng tạm dừng vì thị trường yếu và vướng chuyển mục đích sử dụng các lô đất xen kẹt; HDC tái khởi động bán từ Q2/2026. Phần lớn tiền sử dụng đất đã nộp, hạ tầng cơ bản xong.",
+     "ng": "VCBS 20/05"
+    },
+    {
+     "t": "Kiểm toán Nhà nước (2022) nêu việc chỉ định HDC làm chủ đầu tư dự án chưa phù hợp quy định; chưa thấy công bố kết luận cuối cùng.",
+     "ng": "VietnamFinance 2022"
+    }
+   ]
+  },
+  {
+   "ten": "Hàng bán 2026–2027: Ecotown, Ngọc Tước 2, Tây đường 3/2",
+   "phu": "Phú Mỹ · Vũng Tàu cũ",
+   "so": [
+    [
+     "Ecotown Phú Mỹ",
+     "870 căn",
+     "nhà ở xã hội 6,3 ha; mở 340 căn CC1 2026"
+    ],
+    [
+     "Ngọc Tước 2",
+     "165 biệt thự",
+     "~30% đã bán; 105–115 triệu/m²"
+    ],
+    [
+     "Tây đường 3/2",
+     "96 LK · 114 BT",
+     "xây thô 52/96 LK, 6/114 BT"
+    ]
+   ],
+   "y": [
+    {
+     "t": "VCBS ước Ecotown đóng góp ~301 tỷ doanh thu 2026 từ nhà liền kề đã xây thô và CC1; Ngọc Tước 2 còn 2 trường hợp bồi thường trên tuyến đường quy hoạch.",
+     "ng": "VCBS 20/05"
+    },
+    {
+     "t": "Ban lãnh đạo cảnh báo chi phí vật liệu, nhân công cao và cạnh tranh giữa chủ đầu tư tăng có thể ảnh hưởng biên lợi nhuận.",
+     "ng": "ĐHĐCĐ 2026 (Doanh Nhân)"
+    }
+   ]
+  },
+  {
+   "ten": "Quỹ đất tích lũy — cần vốn trước khi có doanh số",
+   "phu": "Phước Thắng · Cỏ Mây · Long Điền · Wonderland",
+   "so": [
+    [
+     "Phước Thắng",
+     "52,6 ha",
+     "đã nhận 12,5 ha"
+    ],
+    [
+     "Cỏ Mây",
+     "36 ha",
+     "đã nhận 11,5 ha"
+    ],
+    [
+     "Long Điền",
+     "40,8 ha",
+     "đã nhận 24 ha (thí điểm NQ 171)"
+    ],
+    [
+     "Wonderland",
+     "234 ha",
+     "đang tích lũy"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Các dự án chưa đủ điều kiện mở bán hay thế chấp vay ngân hàng nên HDC huy động bằng trái phiếu chuyển đổi (2025). Tài sản dài hạn 30/6/2026: 3.153 tỷ, hàng tồn kho 1.465 tỷ.",
+     "ng": "VCBS 20/05 · BCTC Q2"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn — nợ vay, trái phiếu, cổ phiếu",
+   "phu": "Bảng cân đối hợp nhất 30/6/2026 và công bố đến 10/2026",
+   "so": [
+    [
+     "Nợ vay",
+     "1.545 tỷ",
+     "tiền + tiền gửi 123 tỷ"
+    ],
+    [
+     "Trái phiếu chuyển đổi",
+     "499 tỷ",
+     "10%/năm, đổi 1:10"
+    ],
+    [
+     "Trái phiếu HDC12501",
+     "170,6 tỷ",
+     "mua lại trước hạn 31 tỷ 8/2026"
+    ],
+    [
+     "Cổ phiếu lưu hành",
+     "229,7 triệu",
+     "sau cổ tức 15% (6/2026)"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Trái phiếu chuyển đổi chào cổ đông 35.671:1.000 (11–12/2025), phần còn lại bán cho 115 nhà đầu tư; tiền dùng trả nợ ngân hàng. VCBS: dư nợ ngân hàng giảm từ 1.517 tỷ xuống 1.013 tỷ.",
+     "ng": "Doanh Nhân 12/2025 · VCBS 20/05"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "Bà Rịa – Vũng Tàu nhập vào TP.HCM từ 1/7/2025: quỹ đất HDC nằm trong đô thị lớn nhất nước, thủ tục đất đai chuyển cấp quản lý.",
+     "h": 0,
+     "ng": "Nghị quyết 202/2025/QH15"
+    },
+    {
+     "t": "Tín dụng BĐS bị giới hạn không vượt tốc độ tín dụng chung; lãi vay mua nhà tăng từ cuối 2025.",
+     "h": -1,
+     "ng": "VNDS 05/03 (báo cáo DXG)"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "9 chủ đầu tư nhà ở niêm yết: P/B trung vị 0,89 (giá 23/10); trừ VHM, cả nhóm 0,61–1,01 lần với ROE 4 quý 1–10%.",
+     "h": 0,
+     "ng": "BCTC VNDirect, bảng giá 23/10/2026"
+    },
+    {
+     "t": "Nhà ở xã hội có lợi nhuận định mức tối đa 10%: Ecotown giúp doanh thu nhiều hơn lợi nhuận.",
+     "h": 0,
+     "ng": "Luật Nhà ở 2023"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Lãi 2025 (~862 tỷ doanh thu tài chính, thoái vốn Đại Dương) và Q2/2026 (109 tỷ thu nhập khác) không đến từ bán nhà — HDC kiếm tiền từ quỹ đất nhiều hơn từ bán hàng.",
+     "h": 0,
+     "ng": "BCTC VNDirect · Doanh Nhân 10/2025"
+    },
+    {
+     "t": "Lãnh đạo bị bán giải chấp 3/2026 rồi đăng ký mua lại; Tổng giám đốc mua 300.000 cp (7–8/2026), bán 700.000 cp (9–10/2026).",
+     "h": -1,
+     "ng": "VnBusiness, Doanh Nhân, Mekong ASEAN 2026"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "VCBS",
+   "ngay": "2026-05-20",
+   "kn": "MUA",
+   "tp": 23827,
+   "ln26": 471,
+   "ln27": 247,
+   "pp": "RNAV 22.175 đ (50%) + P/B trung vị 1,73 lần (50%)",
+   "y": "Kỳ vọng doanh thu 2026 gấp 2,4 lần nhờ Ecotown (~301 tỷ), Light City GĐ1, Ngọc Tước 2 và lãi chuyển nhượng Thống Nhất, Đại Dương; giá trị dự án 5.972 tỷ. Chưa tính cổ phiếu từ trái phiếu chuyển đổi.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HDC/Phuc_hoi_doanh_so_ban_hang.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — một báo cáo trong 8 tháng (VCBS 20/05/2026), ra trước cổ tức 15% bằng cổ phiếu (ĐKCC 22/06/2026) nên trang chia giá mục tiêu cho 1,15; VCBS chưa tính 49,9 triệu cp từ trái phiếu chuyển đổi bắt buộc. HDC không trả cổ tức tiền mặt trong 12 tháng qua.",
+ "nguon": [
+  {
+   "ten": "VCBS — Phục hồi doanh số bán hàng",
+   "ngay": "20/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HDC/Phuc_hoi_doanh_so_ban_hang.pdf"
+  },
+  {
+   "ten": "Doanh Nhân — ĐHĐCĐ 2026: mục tiêu lãi 493 tỷ, đầu tư hơn 3.550 tỷ, huy động trái phiếu",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/hodeco-hdc-dat-muc-tieu-lai-nam-2026-than-trong-muon-huy-dong-von-qua-kenh-trai-phieu.html"
+  },
+  {
+   "ten": "Doanh Nhân — chốt cổ tức 15% bằng cổ phiếu, KQKD Q1/2026",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/hodeco-hdc-chot-phuong-an-chia-co-tuc-15-bang-co-phieu-lai-rong-quy-i-2026-tang-gap-4-3-lan.html"
+  },
+  {
+   "ten": "Doanh Nhân — phát hành gần 30 triệu cp trả cổ tức, vốn điều lệ 2.297 tỷ",
+   "ngay": "06/2026",
+   "link": "https://doanhnhan.baophapluat.vn/hodeco-hdc-chot-ngay-phat-hanh-gan-30-trieu-co-phieu-tra-co-tuc-nang-von-dieu-le-len-hon-2-290-ty-dong.html"
+  },
+  {
+   "ten": "Mekong ASEAN — chốt quyền cổ tức bằng cổ phiếu (22/06/2026)",
+   "ngay": "06/2026",
+   "link": "https://mekongasean.vn/hodeco-chot-quye-n-tra-co-tuc-ba-ng-co-phieu-55920.html"
+  },
+  {
+   "ten": "Doanh Nhân — chào bán thành công gần 500 tỷ trái phiếu chuyển đổi",
+   "ngay": "12/2025",
+   "link": "https://doanhnhan.baophapluat.vn/phat-trien-nha-ba-ria--vung-tau-hdc-chao-ban-thanh-cong-gan-500-ty-dong-trai-phieu-chuyen-doi-90188.html"
+  },
+  {
+   "ten": "Doanh Nhân — thưởng 21,39 triệu cp; trái phiếu chuyển đổi 1:10, 40%/60%",
+   "ngay": "11/2025",
+   "link": "https://doanhnhan.baophapluat.vn/phat-hanh-thanh-cong-2139-trieu-co-phieu-thuong-hodeco-hdc-tang-von-dieu-le-len-gan-2000-ty-dong-88968.html"
+  },
+  {
+   "ten": "Doanh Nhân — điều chỉnh phương án sử dụng vốn trái phiếu 500 tỷ",
+   "ngay": "2025",
+   "link": "https://doanhnhan.baophapluat.vn/hodeco-hdc-dieu-chinh-phuong-an-su-dung-von-tu-dot-phat-hanh-500-ty-dong-trai-phieu-90512.html"
+  },
+  {
+   "ten": "Mekong ASEAN — lợi nhuận Q2/2026 đi lùi do hụt thu tài chính",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/loi-nhuan-quy-22026-cua-hodeco-di-lui-do-hut-thu-mang-tai-chinh-57920.html"
+  },
+  {
+   "ten": "Doanh Nhân — 6T/2026, góp thêm 220 tỷ vào công ty con",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/hodeco-hdc-hodeco-gop-them-220-ty-dong-vao-cong-ty-con-tong-giam-doc-ban-700-000-co-phieu-hdc.md"
+  },
+  {
+   "ten": "VnBusiness — gia đình Chủ tịch bị call margin 2,6 triệu cp",
+   "ngay": "03/2026",
+   "link": "https://vnbusiness.vn/gia-dinh-chu-tich-hodeco-bi-call-margin-hon-26-trieu-co-phieu-hdc-khi-thi-gia-giam-hon-50.html"
+  },
+  {
+   "ten": "VnBusiness — dòng tiền kinh doanh Q1/2026 âm 276 tỷ",
+   "ngay": "2026",
+   "link": "https://vnbusiness.vn/hdc-vua-giam-sau-vua-am-dong-tien-cha-con-chu-tich-hodeco-van-manh-tay-mua-vao.html"
+  },
+  {
+   "ten": "Doanh Nhân — Tổng giám đốc mua 300.000 cp, tất toán sớm 31 tỷ trái phiếu",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/tong-giam-doc-mua-300-000-co-phieu-hodeco-hdc-tat-toan-som-31-ty-dong-trai-phieu.html"
+  },
+  {
+   "ten": "Mekong ASEAN — lãnh đạo đăng ký mua 2 triệu cp (9/10–7/11/2026)",
+   "ngay": "10/2026",
+   "link": "https://mekongasean.vn/ba-lanh-dao-hodeco-cung-dang-ky-mua-co-phieu-hdc-60374.html"
+  },
+  {
+   "ten": "Doanh Nhân — Q3/2025 lãi kỷ lục nhờ thoái vốn, doanh thu BĐS −87%",
+   "ngay": "10/2025",
+   "link": "https://doanhnhan.baophapluat.vn/doanh-thu-bat-dong-san-giam-87-hodeco-hdc-van-bao-lai-ky-luc-gan-550-ty-dong-trong-quy-3-87747.html"
+  },
+  {
+   "ten": "Elibook — lợi nhuận từ chuyển nhượng dự án, thưởng 12%",
+   "ngay": "01/10/2025",
+   "link": "https://elibook.vn/2025/10/01/hdc-loi-nhuan-but-pha-nho-chuyen-nhuong-du-an-chuan-bi-chu-ky-bung-hang-moi-va-cung-co-von/"
+  },
+  {
+   "ten": "VietnamFinance — KTNN về chỉ định chủ đầu tư The Light City",
+   "ngay": "2022",
+   "link": "https://vietnamfinance.vn/chi-dinh-hodeco-lam-chu-dau-tu-the-light-city-vung-tau-la-chua-phu-hop-quy-dinh-phap-luat-d84752.html"
+  },
+  {
+   "ten": "VNDIRECT — báo cáo DXG (chính sách tín dụng BĐS)",
+   "ngay": "05/03/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/Tiem_can_giai_oan_but_pha_loi_nhuan.pdf"
+  }
+ ]
+}
