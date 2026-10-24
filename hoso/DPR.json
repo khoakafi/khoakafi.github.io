@@ -1,0 +1,1450 @@
+{
+ "v": 2,
+ "ma": "DPR",
+ "ten": "Công ty Cổ phần Cao su Đồng Phú",
+ "nganh": "Cao su tự nhiên, khu công nghiệp",
+ "ky": "BCTC Q2/2026 · KQKD Q3/2026 chưa công bố (24/10)",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 86.9,
+ "cp_ng": "Vốn điều lệ 868,9 tỷ đồng (BCTC Q2/2026), không có cổ phiếu quỹ (FPTS); thưởng 1:1 năm 2023. GVR nắm 55,24%",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Thị giá mới trả cho tiền gửi và mảng mủ; 797 ha KCN mở rộng, 1.500 ha đất đền bù chưa được tính",
+  "dk": "up_tren:24",
+  "khac": "Giá mủ đỉnh 13 năm và 2.300 tỷ tiền gửi đã vào giá; còn lại là KCN mở rộng và đất đền bù"
+ },
+ "dong_mo": "LN cổ đông 2026E ~430 tỷ (+49%) nhờ giá mủ đỉnh 13 năm trên giá vốn gần như cố định; 2027E nhích nhẹ ở giá 56 triệu đ/tấn. Tiền gửi phần DPR ~1.770 tỷ, không vay. Định giá từng phần — lõi P/E 8, tiền, KCN mở rộng, đất chuyển đổi — cho {gt} ({up}); cán cân {rr}. Giá mủ về 47 triệu: 34,1 nghìn đ/cp.",
+ "luan_diem": [
+  {
+   "so": "+58%",
+   "nhan": "LN cổ đông 6T/2026 so với cùng kỳ",
+   "tieu": "Giá mủ đỉnh 13 năm đi thẳng vào lãi vì giá vốn gần như cố định",
+   "t": "Chi phí mủ theo định mức — nhân công 43,5%, nguyên vật liệu 24,2%, khấu hao 13,2%; 86% mủ tự khai thác — nên biên gộp mủ chạy theo giá: 15% năm 2023, 30,8% năm 2025. 6T/2026 LN gộp +59%. Giá XK tháng 9 2.323 USD/tấn, cao nhất 13 năm. Mô hình 2027: giá 56 triệu đ/tấn (như hồ sơ GVR), giá vốn 34,2 → biên mủ 39%; mỗi 1 triệu đ/tấn ≈ 16 tỷ LN gộp.",
+   "ng": "FPTS 15/05 · BCTC 6T/2026 · Hải quan · mô hình"
+  },
+  {
+   "so": "2.313 tỷ",
+   "nhan": "tiền + tiền gửi 30/6/2026, không vay nợ",
+   "dk": "up_tren:15",
+   "tieu": "Trừ tiền gửi, mảng mủ chỉ được trả ~6 lần lãi",
+   "t": "Tiền + tiền gửi 2.313 tỷ; trừ phần thiểu số ở Kratie (41,6%) và KCN Bắc Đồng Phú (49%) còn ~1.770 tỷ ≈ 20,4 nghìn đ/cp. Theo giá 23/10, phần còn lại của vốn hóa bằng 5,9 lần LN kinh doanh 4 quý — mức thấp 25% từ 2016 (trung vị 9,2) — chưa trả gì cho KCN mở rộng và đất chuyển đổi. Lãi tiền gửi ~26% LNTT 2025.",
+   "ng": "BCTC VNDirect · giá 23/10 · tính của trang",
+   "khac": {
+    "so": "2.313 tỷ",
+    "nhan": "tiền + tiền gửi 30/6/2026, không vay nợ",
+    "tieu": "Tiền gửi gánh gần một nửa giá trị hợp lý",
+    "t": "Tiền + tiền gửi 2.313 tỷ; trừ phần thiểu số ở Kratie (41,6%) và KCN Bắc Đồng Phú (49%) còn ~1.770 tỷ ≈ 20,4 nghìn đ/cp. P/E phần lõi (trừ tiền) từ 2016: trung vị 9,2, thấp 25% 6,0; mô hình dùng 8 cho LN ở giá mủ đỉnh chu kỳ. Lãi tiền gửi ~26% LNTT 2025, giảm dần khi rót vốn KCN mở rộng.",
+    "ng": "BCTC VNDirect · tính của trang"
+   }
+  },
+  {
+   "so": "797 ha",
+   "nhan": "hai KCN mở rộng có chủ trương năm 2025 (DPR 51%)",
+   "tieu": "Quỹ đất chuyển đổi lớn, nhưng giá thuê thấp nên định giá thận trọng",
+   "t": "Bắc Đồng Phú MR 317 ha (chủ trương 16/01/2025, chờ quy hoạch 1/2000), Nam Đồng Phú MR 480 ha (27/06/2025): 575 ha thương phẩm; FPTS ước vốn 7.392 tỷ (93% vay), giá thuê 70–80 USD/m², lấp đầy ~12 năm. Thêm 1.500 ha vườn cây giao cho dự án nông nghiệp công nghệ cao (khởi động 03/02/2026), đền bù 2027–2029. Mô hình: KCN 1,5 tỷ/ha, đất 0,25 tỷ/ha ròng → 9,4 nghìn đ/cp.",
+   "ng": "FPTS 15/05 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Định giá từng phần: {up_so} so với giá hiện tại",
+   "t": "Lõi (mủ, thanh lý tái canh, gỗ, nệm) 202 tỷ LN 2027E × P/E 8; tiền phần DPR 1.773 tỷ; KCN mở rộng 575 ha × 51% × 1,5 tỷ/ha; đất 1.500 ha × 0,25 tỷ/ha. Giá mủ 47 triệu, P/E 10: 34,1; giá 62, đất 3.000 ha: 69,0 nghìn đ/cp. Tiền gửi ~42% giá trị cơ sở.",
+   "ng": "mô hình · BCTC VNDirect"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   289,
+   432,
+   455
+  ],
+  "ln_truoc": 262,
+  "eps": [
+   3326,
+   4971,
+   5236
+  ],
+  "co_tuc_nam": 2000,
+  "them": [
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     425,
+     627,
+     648
+    ]
+   },
+   {
+    "ten": "Biên gộp mủ",
+    "v": [
+     30.8,
+     39.1,
+     38.9
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2025: BCTC (VNDirect), khớp FPTS. 2026E gồm 6T thực tế. EPS theo 86,9 triệu cp; cổ tức tiền gần nhất 2.000 đ/cp (năm 2024, chi 29/09/2025). Biên gộp mủ 2025 theo FPTS."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Cao su, thanh lý cây & mảng khác",
+    "mau": "c1",
+    "v": [
+     189,
+     312,
+     276
+    ]
+   },
+   {
+    "ten": "Đền bù đất (thu nhập khác)",
+    "mau": "c2",
+    "v": [
+     33,
+     46,
+     112
+    ]
+   },
+   {
+    "ten": "Lãi tiền gửi",
+    "mau": "c3",
+    "v": [
+     67,
+     74,
+     67
+    ]
+   }
+  ],
+  "nhan": "Lãi tiền gửi",
+  "ng": "Thuế 20%; cổ đông thiểu số ~13% phần kinh doanh, ~25% lãi tiền gửi (ước, khớp 2025). 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 23/10)",
+  "nhom": "3 mã cao su trong nhóm Hóa chất",
+  "kv": [
+   [
+    "PHR",
+    8.4
+   ],
+   [
+    "TRC",
+    10.6
+   ],
+   [
+    "GVR",
+    17.9
+   ]
+  ],
+  "tv": 10.6,
+  "moi_cp": 4114,
+  "max": 20,
+  "y": "P/E 4 quý của DPR gồm cả tiền gửi ≈ 70% vốn hóa (giá 23/10); trừ tiền phần DPR, phần lõi ~5,9 lần. PHR 4 quý có tiền đền bù VSIP III (LN +84%); GVR gồm phần bù quỹ đất.",
+  "ng": "BCTC VNDirect, giá 23/10/2026 (gói số liệu); DPR: LN cổ đông 4 quý đến Q2/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: sản lượng × (giá mủ − giá vốn) + thanh lý, đền bù + tiền gửi",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Cao su tự nhiên (tiêu thụ, hợp nhất)"
+   },
+   {
+    "ten": "Sản lượng (nghìn tấn)",
+    "v": [
+     21.4,
+     21.0,
+     20.5
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Giá bán (triệu đ/tấn)",
+    "v": [
+     44.1,
+     54.7,
+     56.0
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Giá vốn (triệu đ/tấn)",
+    "v": [
+     30.5,
+     33.3,
+     34.2
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Biên gộp mủ (%)",
+    "v": [
+     30.8,
+     39.1,
+     38.9
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "LN gộp mủ",
+    "v": [
+     291,
+     449,
+     446
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN gộp khác (thanh lý cây, gỗ, KCN cũ, nệm)",
+    "v": [
+     171,
+     208,
+     175
+    ]
+   },
+   {
+    "ten": "Chi phí bán hàng + QLDN",
+    "v": [
+     189,
+     210,
+     225
+    ]
+   },
+   {
+    "ten": "Lãi tiền gửi ròng",
+    "v": [
+     111,
+     123,
+     112
+    ]
+   },
+   {
+    "ten": "Thu nhập khác (đền bù đất)",
+    "v": [
+     41,
+     58,
+     140
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LNTT",
+    "v": [
+     425,
+     627,
+     648
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     289,
+     432,
+     455
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     3326,
+     4971,
+     5236
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "2025A: BCTC (VNDirect); mủ 2025 theo FPTS (21.439 tấn, giá suy từ dự báo +4,8%, biên 30,8%). 2026E = 6T thực tế + quý 3, 4 ước; tách mủ/khác 6T là ước của trang (9.000 tấn × 49,5 triệu). Giá vốn = phần cố định (+3%/năm) + 20% giá bán."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   432
+  ],
+  "cuoi": [
+   "2027E",
+   455
+  ],
+  "buoc": [
+   [
+    "Giá bán mủ",
+    15
+   ],
+   [
+    "Sản lượng, giá vốn mủ",
+    -17
+   ],
+   [
+    "Đền bù đất",
+    66
+   ],
+   [
+    "Lãi tiền gửi",
+    -7
+   ],
+   [
+    "Thanh lý cây, chi phí, khác",
+    -34
+   ]
+  ],
+  "y": "Giá 2027 (56 triệu) nhích so với bình quân 2026E (54,7) nhưng sản lượng giảm vì chuyển đổi đất; phần tăng chủ yếu từ đền bù dự án nông nghiệp. Thanh lý cây ít hơn 2026E, chi phí quản lý tăng.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Giá bán mủ 2027 (triệu đ/tấn)",
+   "v": [
+    "47",
+    "56",
+    "62"
+   ],
+   "ly_do": "Cùng giả định hồ sơ GVR (giá 2025: DPR 44,1, GVR 43,8). GVR quý 3/2026 ~60,8 (suy từ 9T); giá XK 9/2026 2.323 USD/tấn, đỉnh 13 năm"
+  },
+  {
+   "ten": "Sản lượng tiêu thụ 2027 (nghìn tấn)",
+   "v": [
+    "19,5",
+    "20,5",
+    "21,5"
+   ],
+   "ly_do": "2025: 21,4. Kế hoạch 2026 công ty mẹ tiêu thụ 14.000 tấn (+ Kratie). FPTS: −1,9%/năm 2025–2028 vì thanh lý 898 ha cây già, 797 ha sang KCN"
+  },
+  {
+   "ten": "Giá vốn mủ 2027 (triệu đ/tấn)",
+   "v": [
+    "32,4",
+    "34,2",
+    "35,4"
+   ],
+   "ly_do": "2025: 30,5 (biên 30,8%). Chi phí định mức; trang giả định 23,0 triệu cố định + 20% giá bán (khoán theo giá, 14% mủ mua ngoài)"
+  },
+  {
+   "ten": "LN gộp khác thường xuyên (tỷ)",
+   "v": [
+    "75",
+    "85",
+    "95"
+   ],
+   "ly_do": "Thanh lý tái canh, gỗ, nệm, KCN cũ (~27 tỷ/năm, đã thu tiền trước). 2025: ~171 gồm thanh lý ~116 tỷ doanh thu; FPTS: thanh lý ~57 tỷ/năm từ 2028"
+  },
+  {
+   "ten": "Thanh lý theo đợt + đền bù 2027 (tỷ)",
+   "v": [
+    "70",
+    "230",
+    "440"
+   ],
+   "ly_do": "Kế hoạch 2026 công ty mẹ: thu nhập khác 221 tỷ. FPTS 2027F thanh lý 648 ha (~0,3 tỷ/ha), giải phóng 199 ha/năm cho KCN; đền bù 1.500 ha 2027–2029"
+  },
+  {
+   "ten": "Chi phí bán hàng + QLDN 2027 (tỷ)",
+   "v": [
+    "210",
+    "225",
+    "240"
+   ],
+   "ly_do": "2024: 160; 2025: 189 (quý 4 riêng 111); 6T/2026: 50. QLDN dồn quý 4, tăng theo lợi nhuận (2024: 74, 2025: 107)"
+  },
+  {
+   "ten": "P/E phần lõi",
+   "v": [
+    "10",
+    "8",
+    "8"
+   ],
+   "ly_do": "P/E 4 quý DPR (gồm tiền gửi): trung vị 10,1, thấp 25% 7,4. Trừ tiền, P/E lõi từ 2016: trung vị 9,2, thấp 25% 6,0. LN ở giá đỉnh chu kỳ → 8; giá 47 → 10"
+  },
+  {
+   "ten": "KCN mở rộng (tỷ đ/ha thương phẩm)",
+   "v": [
+    "0,6",
+    "1,5",
+    "2,5"
+   ],
+   "ly_do": "Giá thuê 70–80 USD/m², vốn 12,3–13,2 tỷ/ha (93% vay), lấp đầy ~12 năm; FPTS DCF ~1,1 tỷ/ha. Hồ sơ GVR dùng 4,5 cho 7 KCN mới (giá thuê cao hơn)"
+  },
+  {
+   "ten": "Đất giao dự án ngoài đến 2030",
+   "v": [
+    "800 × 0,1",
+    "1.500 × 0,25",
+    "3.000 × 0,4"
+   ],
+   "ly_do": "ha × tỷ/ha ròng (đền bù sau thuế, chiết khấu, trừ lãi mủ mất đi). 1.500 ha dự án nông nghiệp; Elibook ước ~3.500 ha giai đoạn 2026–2030"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 329,
+   "ln27": 219,
+   "gia": 34.1,
+   "mo_ta": "Giá mủ 2027 47 triệu đ/tấn, 19,5 nghìn tấn; P/E lõi 10; KCN mở rộng 0,6 tỷ/ha; đất 800 ha × 0,1 tỷ/ha"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 432,
+   "ln27": 455,
+   "gia": 48.4,
+   "mo_ta": "Giá 56 triệu, 20,5 nghìn tấn, giá vốn 34,2; P/E lõi 8; tiền phần DPR 1.773 tỷ; KCN 1,5 tỷ/ha; đất 1.500 ha × 0,25 tỷ/ha"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 593,
+   "ln27": 706,
+   "gia": 69.0,
+   "mo_ta": "Giá 62 triệu, 21,5 nghìn tấn; P/E lõi 8; KCN 2,5 tỷ/ha (lấp đầy nhanh); đất 3.000 ha × 0,4 tỷ/ha"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo từng phần",
+  "phu": "Lõi: P/E × LN 2027E; cộng tiền, KCN mở rộng, đất chuyển đổi",
+  "ck": 0,
+  "cp": 86.9,
+  "phan": [
+   {
+    "ten": "Cao su & mảng thường xuyên",
+    "mau": "c1",
+    "x": [
+     93,
+     202,
+     286
+    ],
+    "boi": [
+     10,
+     8,
+     8
+    ],
+    "x_ten": "LN lõi 2027E về DPR (không gồm lãi tiền gửi, đền bù, KCN cũ)",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     930,
+     1616,
+     2288
+    ]
+   },
+   {
+    "ten": "Tiền + tiền gửi phần DPR",
+    "mau": "c4",
+    "x": [
+     1773,
+     1773,
+     1773
+    ],
+    "boi": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "x_ten": "30/6/2026 × 77% (tỷ lệ vốn chủ của cổ đông DPR)",
+    "boi_ten": "hệ số",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     1773,
+     1773,
+     1773
+    ]
+   },
+   {
+    "ten": "KCN Bắc & Nam Đồng Phú mở rộng",
+    "mau": "c3",
+    "sh": 0.51,
+    "x": [
+     575.3,
+     575.3,
+     575.3
+    ],
+    "boi": [
+     0.6,
+     1.5,
+     2.5
+    ],
+    "x_ten": "ha đất thương phẩm (100%), DPR nắm 51%",
+    "boi_ten": "tỷ đ/ha sau thuế, chiết khấu",
+    "boi_d": 1,
+    "gt": [
+     176,
+     440,
+     734
+    ]
+   },
+   {
+    "ten": "Đất giao cho dự án ngoài",
+    "mau": "c2",
+    "x": [
+     800,
+     1500,
+     3000
+    ],
+    "boi": [
+     0.1,
+     0.25,
+     0.4
+    ],
+    "x_ten": "ha đến 2030 (dự án nông nghiệp 1.500 ha…)",
+    "boi_ten": "tỷ đ/ha ròng",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     80,
+     375,
+     1200
+    ]
+   }
+  ],
+  "von": [
+   2959,
+   4204,
+   5995
+  ],
+  "gia": [
+   34.1,
+   48.4,
+   69.0
+  ]
+ },
+ "nhay": [
+  [
+   "Giá bán mủ 2027 ±5%",
+   32,
+   2.9
+  ],
+  [
+   "P/E phần lõi ±1 lần",
+   null,
+   2.3
+  ],
+  [
+   "KCN mở rộng ±0,5 tỷ/ha",
+   null,
+   1.7
+  ],
+  [
+   "Đất chuyển đổi ±0,1 tỷ/ha",
+   null,
+   1.7
+  ],
+  [
+   "Sản lượng mủ 2027 ±1 nghìn tấn",
+   15,
+   1.4
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   5.8,
+   7.5,
+   6.9,
+   6.8,
+   7.1,
+   7.0,
+   7.0,
+   5.4,
+   5.7,
+   5.6,
+   6.5,
+   7.4,
+   6.6,
+   10.8,
+   10.1,
+   11.5,
+   11.2,
+   10.5,
+   10.5,
+   14.8,
+   14.4,
+   16.1,
+   16.7,
+   17.6,
+   18.0,
+   11.8,
+   10.8,
+   11.6,
+   8.7,
+   8.5,
+   8.3,
+   7.8,
+   7.4,
+   7.2,
+   6.2,
+   6.2,
+   6.6,
+   7.8,
+   7.6,
+   7.4,
+   7.0,
+   6.9,
+   6.9,
+   6.7,
+   6.9,
+   6.9,
+   7.8,
+   7.9,
+   8.8,
+   7.2,
+   6.8,
+   6.9,
+   9.7,
+   10.1,
+   9.8,
+   10.1,
+   9.3,
+   9.1,
+   11.0,
+   11.8,
+   11.5,
+   9.0,
+   8.1,
+   8.6,
+   11.3,
+   11.4,
+   11.1,
+   12.0,
+   12.8,
+   13.5,
+   10.2,
+   9.9,
+   10.5,
+   11.9,
+   12.1,
+   11.4,
+   11.1,
+   13.3,
+   12.8,
+   14.7,
+   14.8,
+   17.2,
+   17.3,
+   15.6,
+   14.0,
+   7.4,
+   8.2,
+   8.1,
+   7.5,
+   6.9,
+   6.7,
+   6.8,
+   5.9,
+   5.0,
+   4.4,
+   4.6,
+   4.9,
+   9.2,
+   9.2,
+   9.2,
+   9.4,
+   9.7,
+   10.3,
+   13.1,
+   12.4,
+   11.6,
+   14.8,
+   15.8,
+   16.5,
+   14.7,
+   18.0,
+   15.7,
+   18.2,
+   17.5,
+   17.4,
+   14.8,
+   15.2,
+   13.6,
+   13.0,
+   13.2,
+   14.1,
+   15.7,
+   16.1,
+   11.7,
+   12.1,
+   13.0,
+   12.7,
+   12.7,
+   12.8,
+   13.3,
+   9.7,
+   9.5,
+   10.3,
+   12.8,
+   12.0,
+   12.4,
+   11.0,
+   10.3,
+   9.5,
+   9.0,
+   9.4,
+   9.2
+  ],
+  "p10": 6.7,
+  "p25": 7.4,
+  "tv": 10.1,
+  "thap": [
+   "2022-11",
+   4.4
+  ],
+  "nay": [
+   "2026-10",
+   9.2
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. Từ 9/2023 theo 86,9 triệu cp (thưởng 1:1).",
+  "dung": "Ba kịch bản tương đương P/E 13,5 · 9,2 · 8,5 lần LN 2027E (tiền gửi ~42% giá trị cơ sở); cơ sở dưới trung vị 10,1."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    101,
+    134,
+    181
+   ],
+   "ck": 137
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    42,
+    111,
+    226
+   ],
+   "ck": 34
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    329,
+    432,
+    593
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026",
+   "loai": "hai",
+   "tieu": "BCTC quý 3/2026",
+   "ct": "Giá mủ quý 3 cao nhất 13 năm, nhưng GVR ước LNTT quý 3 giảm ~62% vì khai thác chậm, mua mủ ngoài giá cao. Mô hình: LN cổ đông quý 3 ~130 tỷ (cùng kỳ 137).",
+   "tac": [
+    "≥ 130 tỷ",
+    "giữ kịch bản cơ sở; dưới 100 tỷ — sản lượng, giá vốn xấu hơn giả định"
+   ],
+   "theo_doi": "sản lượng tiêu thụ, LN gộp"
+  },
+  {
+   "khi": "9/11/2026",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ bất thường",
+   "ct": "Tài liệu đại hội: miễn nhiệm Chủ tịch HĐQT Mai Huỳnh Nhật. GVR nắm 55,24% nên nhân sự và lộ trình chuyển đổi đất đi theo định hướng tập đoàn.",
+   "tac": "",
+   "theo_doi": "nhân sự HĐQT, kế hoạch KCN"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Mùa cạo chính, giá mủ đỉnh 13 năm",
+   "ct": "Tháng 8–12 là mùa cạo chính; giá XK tháng 9 2.323 USD/tấn (+29,8%), SGX TSR20 kỳ hạn 11/2026 ~2,56 USD/kg. Giá vốn gần như cố định: mỗi 1 triệu đ/tấn giá bán ≈ 16 tỷ LN gộp/năm.",
+   "tac": [
+    "±2,9 nghìn đ/cp",
+    "mỗi ±5% giá bán mủ 2027"
+   ],
+   "theo_doi": "giá SVR10, TSR20"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Thanh lý cây, thu nhập khác cuối năm",
+   "ct": "Kế hoạch 2026 công ty mẹ: LNST 398 tỷ, có 221 tỷ thu nhập khác (thanh lý cây, dự án); 6T hợp nhất mới ghi 2,5 tỷ. Phần nào bán cho KCN mở rộng (công ty con) sẽ bị loại khi hợp nhất.",
+   "tac": [
+    "±460 đ EPS",
+    "mỗi ±50 tỷ thu nhập khác"
+   ],
+   "theo_doi": "thu nhập khác quý 4"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "KCN Bắc & Nam Đồng Phú mở rộng",
+   "ct": "797 ha (575 ha thương phẩm), DPR 51%: Bắc Đồng Phú MR đã xong ĐTM, chờ quy hoạch 1/2000; cho thuê dự kiến từ 2027, giá 70–80 USD/m² (FPTS).",
+   "tac": [
+    "+5,1 nghìn đ/cp",
+    "575 ha × 51% × 1,5 tỷ/ha trong giá trị cơ sở"
+   ],
+   "theo_doi": "quy hoạch 1/2000, giấy phép, khách thuê"
+  },
+  {
+   "khi": "2027–2029",
+   "loai": "len",
+   "tieu": "Đền bù 1.500 ha cho dự án nông nghiệp",
+   "ct": "Dự án ở xã Thuận Lợi khởi động 03/02/2026, vận hành Q2/2029; đất chủ yếu là vườn cây DPR (15,7% diện tích Bình Phước cũ). Chưa có chủ đầu tư chính thức — FPTS chưa đưa vào định giá.",
+   "tac": [
+    "±1,7 nghìn đ/cp",
+    "mỗi ±0,1 tỷ/ha giá trị ròng trên 1.500 ha"
+   ],
+   "theo_doi": "chủ đầu tư, quyết định thu hồi, đơn giá"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Giá cao su quay đầu",
+   "ct": "Giá đang ở đỉnh 13 năm nhờ thiếu cung, giá dầu (eo Hormuz) và thời tiết. Cung Thái Lan, Indonesia hồi phục hoặc dầu hạ nhiệt kéo giá về gần mức 2025 (44,1 triệu đ/tấn).",
+   "tac": [
+    "−9,5 nghìn đ/cp",
+    "nếu giá 2027 47 triệu (giữ sản lượng, P/E 8)"
+   ],
+   "theo_doi": "giá TSR20, Brent"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Khô hạn, rụng lá, thiếu công nhân cạo",
+   "ct": "GVR 9 tháng mới khai thác 60% kế hoạch. DPR phải giữ đơn giá khoán cao vì KCN hút lao động; thanh lý 898 ha cây già, chuyển 797 ha sang KCN kéo sản lượng xuống đến 2028.",
+   "tac": [
+    "±1,4 nghìn đ/cp",
+    "mỗi ±1 nghìn tấn sản lượng 2027"
+   ],
+   "theo_doi": "sản lượng khai thác"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thông tư 99: tiền thuê KCN ghi nhận dần",
+   "ct": "TT99/2025 (hiệu lực 01/01/2026) có thể buộc ghi nhận tiền thuê KCN theo thời hạn thuê thay vì một lần: LN báo cáo của KCN mở rộng chậm hơn FPTS dự phóng (LN 2027F 480 tỷ).",
+   "tac": "",
+   "theo_doi": "chính sách kế toán KCN"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Tiền mặt ít được trả ra",
+   "ct": "Cổ tức 2026 kế hoạch 14% (1.400 đ/cp) so với EPS 2026E ~5.000 đ. QLDN dồn quý 4 (2025: 107 tỷ, các quý khác 20–25 tỷ); lãi tiền gửi giảm khi rót vốn KCN.",
+   "tac": [
+    "±1,3 nghìn đ/cp",
+    "mỗi ±20 tỷ chi phí 2027"
+   ],
+   "theo_doi": "QLDN quý 4, cổ tức"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "LNTT theo quý: kinh doanh, tiền gửi, thu nhập khác",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Kinh doanh (LN gộp − chi phí)",
+     "v": [
+      61,
+      23,
+      48,
+      98,
+      69,
+      44,
+      155,
+      5,
+      122,
+      87
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Lãi tiền gửi ròng",
+     "v": [
+      19,
+      24,
+      18,
+      27,
+      23,
+      24,
+      34,
+      30,
+      28,
+      37
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Thu nhập khác",
+     "v": [
+      5,
+      44,
+      4,
+      6,
+      2,
+      11,
+      3,
+      25,
+      1,
+      2
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi tiền gửi đều 18–37 tỷ mỗi quý; phần kinh doanh 6T/2026 208 tỷ, gấp 1,8 lần cùng kỳ. Quý 4 thấp vì chi phí quản lý dồn cuối năm (quý 4/2025: 107 tỷ).",
+   "ng": "BCTC DPR (VNDirect)"
+  },
+  {
+   "ten": "Doanh thu và LN gộp theo quý",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Doanh thu thuần",
+     "v": [
+      187,
+      233,
+      348,
+      457,
+      203,
+      202,
+      482,
+      302,
+      379,
+      280
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "LN gộp",
+     "v": [
+      82,
+      47,
+      82,
+      179,
+      96,
+      67,
+      183,
+      116,
+      147,
+      112
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "6T/2026 doanh thu +63%, LN gộp +59%. Mùa cạo chính tháng 8–12; quý 3/2025 là mốc so sánh cao (482 tỷ doanh thu).",
+   "ng": "BCTC DPR (VNDirect) · FPTS 15/05 (mùa vụ)"
+  },
+  {
+   "ten": "Tiền + tiền gửi và nợ dài hạn",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền + tiền gửi",
+     "v": [
+      1825,
+      1870,
+      1938,
+      1964,
+      1990,
+      2095,
+      2272,
+      2313
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Nợ dài hạn (không phải vay)",
+     "v": [
+      967,
+      998,
+      1000,
+      1005,
+      1001,
+      1074,
+      1067,
+      1060
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Không vay ngân hàng. Tiền + tiền gửi 2.313 tỷ ≈ 70% vốn hóa (giá 23/10); nợ dài hạn ~1.060 tỷ chủ yếu là tiền thuê KCN đã thu trước, ghi nhận dần.",
+   "ng": "BCTC DPR (VNDirect) · FPTS 15/05"
+  },
+  {
+   "ten": "Đất đã và sắp chuyển đổi",
+   "dv": "ha",
+   "kieu": "cot",
+   "nhan": [
+    "KCN cũ",
+    "BĐP MR",
+    "NĐP MR",
+    "Dự án NN"
+   ],
+   "ss": [
+    {
+     "ten": "Diện tích",
+     "v": [
+      258,
+      317,
+      480,
+      1500
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "KCN cũ 258 ha lấp đầy từ 2019–2021; 797 ha KCN mở rộng có chủ trương năm 2025, cho thuê từ 2027; 1.500 ha dự án nông nghiệp công nghệ cao — 15,7% vườn cây Bình Phước cũ.",
+   "ng": "FPTS 15/05/2026"
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "FPTS",
+   "ngay": "2026-05-15",
+   "kn": "MUA",
+   "tp": 49400,
+   "ln26": 320,
+   "ln27": 480,
+   "pp": "SOTP: FCFE mảng cao su + 2 KCN mở rộng",
+   "y": "Giá mủ 2026F 46,22 triệu đ/tấn (+4,8%), thấp xa giá hiện tại; KCN mở rộng ghi nhận một lần từ 2027 (doanh thu ~1.194 tỷ/năm 2027–2030); chưa tính đền bù 1.500 ha.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DPR/mua_bao_cao_dinh_gia_lan_dau_fpts_15_05_2026.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ một báo cáo CTCK trong 8 tháng (FPTS 15/05, trước khi giá mủ lên đỉnh 13 năm); mô hình tự dựng từ BCTC, công bố của doanh nghiệp và hồ sơ GVR. Cổ tức 2025 chưa chốt quyền nên giá mục tiêu chưa phải điều chỉnh.",
+ "nguon": [
+  {
+   "ten": "FPTS — Báo cáo định giá lần đầu DPR",
+   "ngay": "15/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DPR/mua_bao_cao_dinh_gia_lan_dau_fpts_15_05_2026.pdf"
+  },
+  {
+   "ten": "Nhà Đầu tư — ĐHĐCĐ 2026: kế hoạch, cổ tức 14%",
+   "ngay": "06/2026",
+   "link": "https://nhadautu.vn/dpr-ky-vong-lai-tang-gan-58-gia-ban-cao-su-da-vuot-kich-ban-dau-nam-d105965.html"
+  },
+  {
+   "ten": "Mekong ASEAN — lãi quý 2/2026 tăng 60%",
+   "ngay": "28/07/2026",
+   "link": "https://mekongasean.vn/huong-loi-tu-gia-ban-lai-quy-22026-cua-cao-su-dong-phu-tang-60-57810.html"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — ĐHĐCĐ bất thường, miễn nhiệm Chủ tịch",
+   "ngay": "10/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/cao-su-dong-phu-dpr-sap-mien-nhiem-chu-tich-mai-huynh-nhat-post399772.html"
+  },
+  {
+   "ten": "Báo Pháp luật — cổ tức 2024 2.000 đ/cp, GVR 55,24%",
+   "ngay": "08/2025",
+   "link": "https://doanhnhan.baophapluat.vn/cao-su-dong-phu-dpr-sap-chi-gan-174-ty-dong-tien-tra-co-tuc-mot-co-dong-huong-loi-lon-nhan-ve-hon-96-ty-dong-85165.html"
+  },
+  {
+   "ten": "Vietstock — chia cổ tức 20%, gần 2.000 tỷ tiền gửi",
+   "ngay": "08/2025",
+   "link": "https://vietstock.vn/2025/08/mot-doanh-nghiep-cao-su-chia-co-tuc-20-giu-gan-2000-ty-dong-tien-gui-738-1339392.htm"
+  },
+  {
+   "ten": "Elibook — ước đất chuyển đổi 2026–2030",
+   "ngay": "17/08/2026",
+   "link": "https://elibook.vn/2026/08/17/dpr-co-may-in-tien-tham-lang-giua-mua-cao-su-ruc-ro/"
+  },
+  {
+   "ten": "VRG — sơ kết 9 tháng 2026 (khai thác 60% kế hoạch)",
+   "ngay": "02/10/2026",
+   "link": "https://news.vrg.vn/tin-noi-bat/vrg-tang-toc-hoan-thanh-cao-nhat-muc-tieu-nam-2026/"
+  },
+  {
+   "ten": "Dân trí — VRG lãi hơn 6.800 tỷ sau 9 tháng",
+   "ngay": "23/10/2026",
+   "link": "https://dantri.com.vn/kinh-doanh/gia-cao-su-phuc-hoi-vrg-lai-hon-6800-ty-dong-sau-9-thang-20261023095501639.htm"
+  },
+  {
+   "ten": "Thương Trường — giá XK cao su cao nhất gần 13 năm",
+   "ngay": "17/10/2026",
+   "link": "https://thuongtruong.com.vn/news/gia-cao-su-hom-nay-1710-gia-xuat-khau-viet-nam-cao-nhat-gan-13-nam-170788.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — giá cao su thế giới 18/10",
+   "ngay": "18/10/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/ngay-18-10-gia-cao-su-the-gioi-bien-dong-trai-chieu-205547.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Giá dầu 4T/2026 +76% (~117 USD/thùng) khi eo Hormuz đóng: cao su tổng hợp đắt lên, hỗ trợ cao su tự nhiên.",
+     "ng": "FPTS 15/05"
+    },
+    {
+     "h": 1,
+     "t": "FDI đăng ký Q1/2026 +38,4% (15,2 tỷ USD); thuế Mỹ với hàng Việt ~16% sau phán quyết 20/02/2026.",
+     "ng": "FPTS 15/05"
+    },
+    {
+     "h": 1,
+     "t": "Bình Phước sáp nhập Đồng Nai (01/07/2025); cầu Mã Đà (duyệt 29/07/2025) nối về Long Thành, Cái Mép.",
+     "ng": "FPTS 15/05"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Cao su thiếu cung từ 2021; FPTS dự báo thiếu 600–800 nghìn tấn/năm 2026–2030, cây mới cần 6–7 năm mới cho mủ.",
+     "ng": "FPTS 15/05 · ANRPC"
+    },
+    {
+     "h": 1,
+     "t": "Giá XK cao su Việt Nam tháng 9/2026 2.323 USD/tấn (+29,8%), cao nhất từ 10/2013.",
+     "ng": "Hải quan, theo Thương Trường 17/10"
+    },
+    {
+     "h": -1,
+     "t": "GVR ước LNTT quý 3/2026 giảm ~62%: khô hạn, rụng lá, thiếu công nhân, mua mủ ngoài giá cao.",
+     "ng": "VRG 2/10 · hồ sơ GVR"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 0,
+     "t": "15.576 ha cao su (Bình Phước cũ 9.533, Kratie 5.108, Đắk Nông 935); 2025 tiêu thụ 21.439 tấn.",
+     "ng": "FPTS 15/05"
+    },
+    {
+     "h": 1,
+     "t": "Không vay; tiền + tiền gửi 2.313 tỷ (30/6/2026), lãi tiền gửi ~1/4 LNTT.",
+     "ng": "BCTC Q2/2026"
+    },
+    {
+     "h": 0,
+     "t": "GVR nắm 55,24%, nước ngoài 3,64%: chuyển đổi đất, nhân sự theo định hướng tập đoàn.",
+     "ng": "FPTS 15/05"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Cao su tự nhiên",
+   "phu": "15.576 ha; ~80% doanh thu, ~63% LN gộp 2025",
+   "so": [
+    [
+     "Tiêu thụ 2025",
+     "21.439 tấn",
+     "−1,0%"
+    ],
+    [
+     "Giá bán 2025",
+     "~44,1 triệu đ/tấn",
+     "cao hơn ngành ~12%"
+    ],
+    [
+     "Biên gộp mủ 2025",
+     "30,8%",
+     "2023: 15%"
+    ],
+    [
+     "Công suất chế biến",
+     "25.000 tấn/năm",
+     "2025 dùng 54%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Giá bán cao hơn bình quân ngành ~12,3% (2020–2025) nhờ SVR CV, RSS chiếm 27% sản phẩm.",
+     "ng": "FPTS 15/05"
+    },
+    {
+     "t": "Kế hoạch 2026 công ty mẹ: khai thác 11.900 tấn, tiêu thụ 14.000 tấn.",
+     "ng": "ĐHĐCĐ 29/06/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Khu công nghiệp",
+   "phu": "CTCP KCN Bắc Đồng Phú (DPR 51%, NTC 40%)",
+   "so": [
+    [
+     "KCN cũ",
+     "189,7 ha thương phẩm",
+     "lấp đầy 100%"
+    ],
+    [
+     "Doanh thu KCN cũ",
+     "~54 tỷ/năm",
+     "biên ~50%"
+    ],
+    [
+     "KCN mở rộng",
+     "575,3 ha thương phẩm",
+     "thuê từ 2027"
+    ],
+    [
+     "Vốn KCN mở rộng",
+     "7.392 tỷ",
+     "FPTS ước, 93% vay"
+    ]
+   ],
+   "y": [
+    {
+     "t": "FPTS dự báo giá thuê 80 và 70 USD/m², thấp hơn ~21% so với Minh Hưng–Sikico, Becamex Bình Phước (90–100).",
+     "ng": "FPTS 15/05"
+    },
+    {
+     "t": "Bình Phước cũ mới lấp đầy ~33% (Bình Dương cũ 97%, Đồng Nai cũ 93%); Đồng Nai cũ thêm 2.580 ha nguồn cung từ 2030.",
+     "ng": "FPTS 15/05"
+    }
+   ]
+  },
+  {
+   "ten": "Đất chuyển đổi, thanh lý",
+   "phu": "Thanh lý vườn cây già, giao đất cho KCN và dự án",
+   "so": [
+    [
+     "Dự án nông nghiệp",
+     "1.500 ha",
+     "vận hành Q2/2029"
+    ],
+    [
+     "Thanh lý 2026F–2027F",
+     "449 / 648 ha",
+     "~0,3 tỷ/ha"
+    ],
+    [
+     "KH thu nhập khác 2026",
+     "221 tỷ",
+     "công ty mẹ"
+    ],
+    [
+     "Thu nhập khác 6T/2026",
+     "2,5 tỷ",
+     "hợp nhất"
+    ]
+   ],
+   "y": [
+    {
+     "t": "FPTS chưa đưa đền bù 1.500 ha vào định giá vì dự án chưa có chủ đầu tư chính thức.",
+     "ng": "FPTS 15/05"
+    },
+    {
+     "t": "Elibook ước ~3.500 ha chuyển đổi giai đoạn 2026–2030, hơn 3.000 tỷ thu nhập đền bù.",
+     "ng": "Elibook 17/08/2026"
+    }
+   ]
+  }
+ ]
+}
