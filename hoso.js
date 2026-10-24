@@ -484,15 +484,21 @@
     var ck = D.ck || 0, kb = p.kich_ban || [], TEN = ['Xấu', 'Cơ sở', 'Tốt'];
     var ph = D.phan.map(function(z){ return { ten: z.ten, mau: /^c[1-4]$/.test(z.mau || '') ? z.mau : 'c4', v: z.gt.map(function(g){ return g * (1 - ck) / D.cp; }) }; });
     var tru = (D.no_rong || 0) / D.cp, tp = D.gia.map(function(g){ return g + tru; });
-    var mx = Math.max.apply(null, tp.concat(o.gia > 0 ? [o.gia] : [])), st = nice(mx / 5), top = Math.ceil(mx / st) * st;
+    // tong cac phan duong (thanh chong); phan am (mang lo) + no vay rong ve thanh gach tu gia tri rong den het phan duong
+    var duong = D.gia.map(function(g, i){ var s = 0; ph.forEach(function(z){ if (z.v[i] > 0) s += z.v[i]; }); return s; }),
+      coAm = ph.some(function(z){ return z.v.some(function(v){ return v < 0; }); });
+    var mx = Math.max.apply(null, tp.concat(duong, o.gia > 0 ? [o.gia] : [])), st = nice(mx / 5), top = Math.ceil(mx / st) * st;
     var X = function(v){ return v / top * 100; };
     var h = (gon ? '' : '<h5>Định giá: ba kịch bản, từng phần <small class="mut">nghìn đ/cp, 12 tháng</small></h5>')
-      + '<div class="bdlg">' + ph.map(function(z){ return '<span><i class="' + z.mau + ' q"></i>' + esc(z.ten) + '</span>'; }).join('') + ((D.no_rong || 0) > 0 ? '<span><i class="tru q"></i>Trừ nợ vay ròng ' + f(D.no_rong / D.cp, 1) + '</span>' : '') + (o.gia > 0 ? '<span><i class="gia"></i>Giá hiện tại ' + f(o.gia, 1) + '</span>' : '') + '</div><div class="hsFf">';
+      + '<div class="bdlg">' + ph.map(function(z){ return '<span><i class="' + z.mau + ' q"></i>' + esc(z.ten) + '</span>'; }).join('') + (coAm ? '<span><i class="tru q"></i>Phần lỗ' + ((D.no_rong || 0) > 0 ? ', nợ vay ròng' : '') + ' (trừ)</span>' : ((D.no_rong || 0) > 0 ? '<span><i class="tru q"></i>Trừ nợ vay ròng ' + f(D.no_rong / D.cp, 1) + '</span>' : '')) + (o.gia > 0 ? '<span><i class="gia"></i>Giá hiện tại ' + f(o.gia, 1) + '</span>' : '') + '</div><div class="hsFf">';
     D.gia.forEach(function(g, i){ var d = o.gia > 0 ? (g / o.gia - 1) * 100 : null, k = kb[i] || {};
       h += '<div class="hsFfR' + (i === 1 ? ' cs' : '') + '"' + (k.mo_ta ? ' title="' + esc(k.mo_ta) + '"' : '') + '><span class="hsFfT">' + (TEN[i] || '') + '</span><span class="hsFfB">';
-      ph.forEach(function(z){ var w = Math.max(0, X(z.v[i]));   // phan am (lo) khong ve thanh, so van o tooltip
+      ph.forEach(function(z){ var w = Math.max(0, X(z.v[i]));   // phan am (lo) ve o thanh gach phia sau
         h += '<i class="' + z.mau + '" style="width:' + w.toFixed(2) + '%" title="' + esc((TEN[i] || '') + ' · ' + z.ten + ': ' + f(z.v[i], 1) + ' nghìn đ/cp') + '">' + (w >= 7 ? '<span>' + f(z.v[i], 1) + '</span>' : '') + '</i>'; });
-      if (tru > 0) h += '<b class="tru" style="left:' + X(g).toFixed(2) + '%;width:' + (X(tp[i]) - X(g)).toFixed(2) + '%" title="' + esc('Trừ nợ vay ròng công ty mẹ: ' + f(tru, 1) + ' nghìn đ/cp') + '"></b>';
+      var ghi = ph.filter(function(z){ return z.v[i] < 0; }).map(function(z){ return z.ten + ' ' + f(z.v[i], 1); });
+      if (tru > 0) ghi.push('trừ nợ vay ròng công ty mẹ −' + f(tru, 1));
+      var g0 = Math.max(g, 0);
+      if (duong[i] - g0 > 0.05 && ghi.length) h += '<b class="tru" style="left:' + X(g0).toFixed(2) + '%;width:' + (X(duong[i]) - X(g0)).toFixed(2) + '%" title="' + esc('Phần trừ: ' + ghi.join('; ') + ' nghìn đ/cp') + '"></b>';
       if (o.gia > 0) h += '<s style="left:' + X(o.gia).toFixed(2) + '%"></s>';
       h += '</span><span class="hsFfV"><b>' + f(g, 1) + '</b>' + (d != null ? '<em class="' + lop(d) + '">' + pct(d) + '</em>' : '') + '</span></div>'
         + (k.mo_ta && !gon ? '<div class="hsFfM">' + esc(k.mo_ta) + '</div>' : ''); });
