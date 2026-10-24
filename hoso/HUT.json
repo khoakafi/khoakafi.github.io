@@ -1,0 +1,1559 @@
+{
+ "v": 2,
+ "ma": "HUT",
+ "ten": "Công ty Cổ phần Tasco",
+ "nganh": "Ô tô, thu phí giao thông, bảo hiểm, dịch vụ thiết yếu",
+ "ky": "BCTC Q2/2026 (soát xét) · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 1424.4,
+ "cp_ng": "1.068,3 triệu cp lưu hành (vốn điều lệ 10.682,9 tỷ, BCTC Q2/2026; khớp tỷ lệ quyền 30:1 × 35.609.519 trái phiếu) + 356,1 triệu cp khi chuyển đổi hết trái phiếu HUT426001 (3.561 tỷ chào cổ đông, giá chuyển đổi 10.000 đ, chốt quyền 15/10/2026), giả định bán hết và chuyển đổi hết. Giá đã giao dịch không hưởng quyền nên tính trên số cp pha loãng",
+ "vc_them": 3561,
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Lớn nhanh nhờ mua lại, nhưng cổ đông Tasco chỉ giữ 3/10 đồng lãi — giá còn trên giá trị",
+  "dk": "up_duoi:-5",
+  "khac": "Lớn nhanh nhờ mua lại, nhưng cổ đông Tasco chỉ giữ 3/10 đồng lãi hợp nhất"
+ },
+ "dong_mo": "6T/2026 doanh thu +44,6%, LNST gấp 2,7 lần, nhưng LN cổ đông Tasco chỉ 91 tỷ: Savico, DNP chia lãi với cổ đông thiểu số, lãi vay 931 tỷ vượt lợi nhuận kinh doanh. Trái phiếu chuyển đổi 3.561 tỷ thêm 33% cổ phiếu ở 10.000 đ. Định giá từng phần, pha loãng: {gt} ({up}).",
+ "luan_diem": [
+  {
+   "so": "29%",
+   "nhan": "LNST 6T/2026 thuộc cổ đông Tasco",
+   "tieu": "Hợp nhất lớn, phần của cổ đông mẹ nhỏ",
+   "t": "Doanh thu 6T 22.191 tỷ (+44,6%), LNST 310,5 tỷ (gấp 2,7 lần), nhưng LN cổ đông Tasco 91 tỷ — 0,4% doanh thu. Ô tô (64,5% doanh thu) chủ yếu qua Savico, Tasco nắm 54,07%; DNP Holding (công ty con từ 24/12/2025) 51,4%, và DNP còn chia lãi với cổ đông các công ty con của nó. Q2/2026: 193 trong 257 tỷ LNST thuộc cổ đông thiểu số.",
+   "ng": "BCTC Q2/2026 (VNDirect) · cafef 24/12/2025"
+  },
+  {
+   "so": "931 tỷ",
+   "nhan": "lãi vay 6T/2026 (+129%)",
+   "tieu": "Lãi vay lớn hơn lợi nhuận kinh doanh",
+   "t": "Nợ vay 23.730 tỷ (30/6) gấp 1,9 lần một năm trước, chủ yếu do hợp nhất DNP (nợ vay 9.356 tỷ). 6T: LN gộp trừ bán hàng, quản lý (gồm phân bổ lợi thế thương mại) còn 360 tỷ, lãi vay 931 tỷ; LNTT 400 tỷ nhờ 948 tỷ doanh thu tài chính — riêng Q2 759 tỷ, chưa tách được phần một lần. Dòng tiền kinh doanh 6T âm 951 tỷ.",
+   "ng": "BCTC Q2/2026 · TNCK, Doanh nghiệp Hội nhập 08/2026"
+  },
+  {
+   "so": "75%",
+   "nhan": "thị phần thu phí không dừng của VETC (2025)",
+   "tieu": "VETC là phần giá trị rõ nhất",
+   "t": "VETC (99,3%) lãi ~140 tỷ năm 2025 (gấp 4 lần), 6T/2026 53,2 tỷ (+9%), doanh thu +17%. Phí duy trì ví 6.600 đ/tháng trên ~3 triệu ví là nguồn thu định kỳ mới: mỗi 10% số ví trả phí thêm ~19 tỷ LNST. Ở P/E 13, VETC đóng góp 1,9 nghìn đ/cp — nhiều hơn phần Savico và DNP cộng lại (1,6).",
+   "ng": "cafef 18/08/2026 · nguoiquansat 08/2026 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị cơ sở 12 tháng (nghìn đ, pha loãng)",
+   "tieu": "Định giá từng phần: {up_so} so với giá hiện tại",
+   "t": "Savico P/B 0,8, DNP P/E 10, VETC 13, bảo hiểm–BOT–BĐS–công ty mẹ 10 lần LN trước phân bổ lợi thế thương mại, cộng 3.561 tỷ trái phiếu, chia 1.424 triệu cp — tương đương P/B 0,78, sát trung vị 0,85 của 15 mã cùng mảng. Theo giá 23/10, ngoài phần Savico, DNP, thị trường trả ~22 lần LN 2027E trước phân bổ cho phần còn lại.",
+   "ng": "mô hình · BCTC VNDirect, giá 23/10/2026"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   492,
+   255,
+   329
+  ],
+  "ln_truoc": 156,
+  "eps": [
+   345,
+   179,
+   231
+  ],
+  "bv": [
+   null,
+   10443,
+   10674
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "LN trước phân bổ LTTM (tỷ, ước)",
+    "v": [
+     739,
+     621,
+     696
+    ]
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS, BVPS theo 1.424 triệu cp pha loãng; BVPS gồm 3.561 tỷ gốc trái phiếu chuyển đổi. LN trước phân bổ: cộng lại 2/3 phần phân bổ lợi thế thương mại và đánh giá lại Tasco công bố (370 tỷ năm 2025, 275 tỷ 6T/2026). Không thấy công bố cổ tức tiền mặt."
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông Tasco theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "99,3% VETC",
+    "mau": "c1",
+    "v": [
+     139,
+     152,
+     205
+    ]
+   },
+   {
+    "ten": "51,4% DNP",
+    "mau": "c2",
+    "v": [
+     0,
+     127,
+     142
+    ]
+   },
+   {
+    "ten": "54,07% Savico",
+    "mau": "c3",
+    "v": [
+     243,
+     41,
+     49
+    ]
+   },
+   {
+    "ten": "Bảo hiểm, BOT, BĐS & mẹ (sau phân bổ)",
+    "mau": "c4",
+    "v": [
+     110,
+     -65,
+     -67
+    ]
+   }
+  ],
+  "nhan": "99,3% VETC",
+  "ng": "Tỷ lệ sở hữu × LN cổ đông Savico, DNP (BCTC) và LNST VETC (công bố); phần còn lại = LN cổ đông Tasco trừ ba phần trên, gồm lãi vay công ty mẹ và phân bổ lợi thế thương mại. DNP hợp nhất từ 24/12/2025. 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với 15 mã cùng mảng kinh doanh",
+  "phu": "giá hôm nay; HUT: vốn chủ 30/6 + 3.561 tỷ trái phiếu, 1.424 triệu cp",
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 23/10)",
+  "nhom": "15 mã đại lý xe, nước, BOT, bảo hiểm",
+  "kv": [
+   [
+    "HHV",
+    0.45
+   ],
+   [
+    "IJC",
+    0.52
+   ],
+   [
+    "CTI",
+    0.64
+   ],
+   [
+    "BMI",
+    0.67
+   ],
+   [
+    "PTI",
+    0.77
+   ],
+   [
+    "SVC",
+    0.81
+   ],
+   [
+    "HAX",
+    0.82
+   ],
+   [
+    "CII",
+    0.85
+   ],
+   [
+    "BIC",
+    1.15
+   ],
+   [
+    "DNP",
+    1.18
+   ],
+   [
+    "MIG",
+    1.25
+   ],
+   [
+    "PGI",
+    1.27
+   ],
+   [
+    "BWE",
+    1.69
+   ],
+   [
+    "PVI",
+    1.74
+   ],
+   [
+    "CTF",
+    1.84
+   ]
+  ],
+  "tv": 0.85,
+  "moi_cp": 10328,
+  "max": 2.5,
+  "y": "Đại lý xe SVC, HAX ~0,8; BOT 0,45–0,85; bảo hiểm 0,67–1,74. HUT (pha loãng) 1,21 — cao hơn 10/15 mã, trong khi ROE 4 quý ~6% (gồm khoản lãi một lần Q3/2025).",
+  "ng": "Vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất, giá 23/10/2026"
+ },
+ "mo_hinh": {
+  "tieu": "LN cổ đông Tasco theo nguồn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     36.3,
+     50.3,
+     55.3
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "nhom": "Công ty con — 100% lợi nhuận (tỷ)"
+   },
+   {
+    "ten": "Savico: LN cổ đông",
+    "v": [
+     449,
+     75,
+     90
+    ]
+   },
+   {
+    "ten": "DNP: LN cổ đông",
+    "v": [
+     145,
+     246,
+     276
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "VETC: LNST",
+    "v": [
+     140,
+     154,
+     207
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Phần của cổ đông Tasco (tỷ)"
+   },
+   {
+    "ten": "54,07% Savico",
+    "v": [
+     243,
+     41,
+     49
+    ]
+   },
+   {
+    "ten": "51,4% DNP",
+    "v": [
+     0,
+     127,
+     142
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "99,3% VETC",
+    "v": [
+     139,
+     152,
+     205
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Bảo hiểm, BOT, BĐS & mẹ, trước phân bổ",
+    "v": [
+     357,
+     302,
+     300
+    ]
+   },
+   {
+    "ten": "Phân bổ lợi thế thương mại (ước 2/3)",
+    "v": [
+     -247,
+     -367,
+     -367
+    ]
+   },
+   {
+    "ten": "LN cổ đông Tasco",
+    "v": [
+     492,
+     255,
+     329
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LN trước phân bổ",
+    "v": [
+     739,
+     621,
+     696
+    ]
+   },
+   {
+    "ten": "EPS pha loãng (đ)",
+    "v": [
+     345,
+     179,
+     231
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "2025A: Savico gồm khoản lãi tài chính Q3 (LN cổ đông quý 364 tỷ). Phân bổ lợi thế thương mại và đánh giá lại tài sản theo Tasco công bố (370 tỷ 2025, 275 tỷ 6T/2026 trên LNST hợp nhất), ước 2/3 thuộc cổ đông mẹ. 2026E = 6 tháng thực tế + 6 tháng ước tính; lãi trái phiếu chuyển đổi không tính (giả định chuyển đổi)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông Tasco 2026E → 2027E (cơ sở)",
+  "dau": [
+   "2026E",
+   255
+  ],
+  "cuoi": [
+   "2027E",
+   329
+  ],
+  "buoc": [
+   [
+    "Savico (54,07%)",
+    8
+   ],
+   [
+    "DNP (51,4%)",
+    15
+   ],
+   [
+    "VETC (99,3%)",
+    53
+   ],
+   [
+    "Bảo hiểm, BOT, BĐS & mẹ",
+    -2
+   ]
+  ],
+  "y": "VETC góp 72% phần tăng (phí ví 38 tỷ); phần còn lại đi ngang vì lãi vay và phân bổ lợi thế thương mại giữ nguyên.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "LN cổ đông Savico 2027 (tỷ)",
+   "v": [
+    "40",
+    "90",
+    "150"
+   ],
+   "ly_do": "2024: 100; 2025: 449 gồm lãi tài chính Q3; 6T/2026: 40 — LN bán xe 24 tỷ, lãi vay 213 tỷ, thu nhập tài chính 305 tỷ."
+  },
+  {
+   "ten": "P/B Savico",
+   "v": [
+    "0,6",
+    "0,8",
+    "1,0"
+   ],
+   "ly_do": "SVC từ 10/2023: thấp nhất 0,71, trung vị 0,95; hiện 0,81. HAX (đại lý xe) 0,82."
+  },
+  {
+   "ten": "LN cổ đông DNP 2H/2026 · 2027",
+   "v": [
+    "−5% · −5%",
+    "+25% · +12%",
+    "+45% · +22%"
+   ],
+   "ly_do": "2H/2025: 106 tỷ; 6T/2026: 113 tỷ (+195%) khi dự án nước, nhựa mở rộng xong; 4 quý đến Q2/2026: 220 tỷ."
+  },
+  {
+   "ten": "P/E DNP",
+   "v": [
+    "8",
+    "10",
+    "12"
+   ],
+   "ly_do": "DNP hiện 12,8 (4 quý); nước sạch, ống nhựa: BWE 9,5, BMP 9,0, NTP 8,9."
+  },
+  {
+   "ten": "VETC: LNST 2027 (tỷ) · ví trả phí",
+   "v": [
+    "149 · 0%",
+    "207 · 20%",
+    "261 · 40%"
+   ],
+   "ly_do": "2025 ~140 tỷ (gấp 4), 6T/2026 53,2 tỷ (+9%); phí 6.600 đ/tháng, ~3 triệu ví: mỗi 10% số ví trả phí ≈ 19 tỷ LNST; tăng trưởng gốc +3/+10/+15%."
+  },
+  {
+   "ten": "P/E VETC",
+   "v": [
+    "10",
+    "13",
+    "16"
+   ],
+   "ly_do": "Không có doanh nghiệp thu phí tự động niêm yết. 10 ≈ BOT (HHV 8,3, IJC 8,1); 13 ≈ CTR 13,4; 16 cho nền tảng có phí định kỳ."
+  },
+  {
+   "ten": "Bảo hiểm, BOT, BĐS & mẹ: LN 2027 trước phân bổ (tỷ)",
+   "v": [
+    "120",
+    "300",
+    "450"
+   ],
+   "ly_do": "2025 ~357, 6T/2026 ~142 tỷ (ước, sau lãi vay công ty mẹ); Q2/2026 riêng phần này có ~397 tỷ doanh thu tài chính chưa rõ phần một lần."
+  },
+  {
+   "ten": "P/E phần còn lại",
+   "v": [
+    "8",
+    "10",
+    "12"
+   ],
+   "ly_do": "Bảo hiểm phi nhân thọ trung vị 9,2 (BMI, PGI, MIG, PTI, BIC, PVI); BOT ~8 (HHV, IJC, CTI)."
+  },
+  {
+   "ten": "Gốc trái phiếu (lần vốn)",
+   "v": [
+    "0,8",
+    "1,0",
+    "1,0"
+   ],
+   "ly_do": "Tasco Land 1.360, Tasco Investment 1.200, cao tốc Mỹ Thuận 500, Việt Trì Legacy Lakeside 501 tỷ; xấu: dự án lãi dưới chi phí vốn."
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 96,
+   "ln27": 27,
+   "gia": 4.8,
+   "mo_ta": "Savico 40 tỷ, P/B 0,6; DNP 204 tỷ × 8; VETC không thu được phí ví, × 10; phần còn lại 120 tỷ × 8; vốn trái phiếu 0,8 lần"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 255,
+   "ln27": 329,
+   "gia": 8.1,
+   "mo_ta": "Savico 90 tỷ, P/B 0,8; DNP 276 tỷ × 10; VETC 207 tỷ (20% ví trả phí) × 13; phần còn lại 300 tỷ × 10"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 386,
+   "ln27": 591,
+   "gia": 11.4,
+   "mo_ta": "Savico 150 tỷ, P/B 1,0; DNP 326 tỷ × 12; VETC 261 tỷ (40% ví) × 16; phần còn lại 450 tỷ × 12"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá từng phần trên cổ phiếu pha loãng",
+  "phu": "P/E × LN 2027E (Savico: P/B) + gốc trái phiếu ÷ 1.424 triệu cp",
+  "ck": 0,
+  "cp": 1424.4,
+  "phan": [
+   {
+    "ten": "99,3% VETC",
+    "mau": "c1",
+    "sh": 0.993,
+    "x": [
+     149,
+     207,
+     261
+    ],
+    "boi": [
+     10,
+     13,
+     16
+    ],
+    "x_ten": "LNST 2027E của VETC",
+    "boi_ten": "P/E",
+    "gt": [
+     1480,
+     2672,
+     4147
+    ]
+   },
+   {
+    "ten": "Bảo hiểm, BOT, BĐS & công ty mẹ",
+    "mau": "c4",
+    "x": [
+     120,
+     300,
+     450
+    ],
+    "boi": [
+     8,
+     10,
+     12
+    ],
+    "x_ten": "LN 2027E trước phân bổ lợi thế thương mại",
+    "sh": 1,
+    "boi_ten": "P/E",
+    "gt": [
+     960,
+     3000,
+     5400
+    ]
+   },
+   {
+    "ten": "51,4% DNP Holding",
+    "mau": "c2",
+    "sh": 0.514,
+    "x": [
+     204,
+     276,
+     326
+    ],
+    "boi": [
+     8,
+     10,
+     12
+    ],
+    "x_ten": "LN 2027E của DNP",
+    "boi_ten": "P/E",
+    "gt": [
+     839,
+     1419,
+     2011
+    ]
+   },
+   {
+    "ten": "54,07% Savico",
+    "mau": "c3",
+    "sh": 0.5407,
+    "x": [
+     2065,
+     2090,
+     2115
+    ],
+    "boi": [
+     0.6,
+     0.8,
+     1.0
+    ],
+    "x_ten": "Vốn chủ Savico cuối 2026E",
+    "boi_ten": "P/B",
+    "boi_d": 1,
+    "gt": [
+     670,
+     904,
+     1144
+    ]
+   },
+   {
+    "ten": "Gốc trái phiếu chuyển đổi",
+    "mau": "c4",
+    "x": [
+     3561,
+     3561,
+     3561
+    ],
+    "boi": [
+     0.8,
+     1.0,
+     1.0
+    ],
+    "x_ten": "3.561 tỷ khi chuyển đổi",
+    "boi_ten": "lần vốn",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     2849,
+     3561,
+     3561
+    ]
+   }
+  ],
+  "von": [
+   6798,
+   11556,
+   16263
+  ],
+  "gia": [
+   4.8,
+   8.1,
+   11.4
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.21,
+   1.07,
+   1.13,
+   1.11,
+   1.0,
+   0.96,
+   0.95,
+   0.79,
+   0.89,
+   0.92,
+   0.93,
+   0.91,
+   0.86,
+   0.75,
+   0.74,
+   0.7,
+   0.69,
+   0.73,
+   0.78,
+   0.96,
+   1.02,
+   0.97,
+   0.92,
+   0.86,
+   0.91,
+   0.89,
+   1.01,
+   0.97,
+   0.93,
+   0.97,
+   0.93,
+   0.89,
+   0.93,
+   0.82,
+   0.95,
+   0.87,
+   0.85,
+   0.67,
+   0.72,
+   0.61,
+   0.48,
+   0.47,
+   0.44,
+   0.41,
+   0.45,
+   0.42,
+   0.37,
+   0.34,
+   0.31,
+   0.31,
+   0.33,
+   0.31,
+   0.26,
+   0.2,
+   0.2,
+   0.2,
+   0.2,
+   0.2,
+   0.21,
+   0.2,
+   0.19,
+   0.17,
+   0.11,
+   0.15,
+   0.18,
+   0.22,
+   0.17,
+   0.21,
+   0.23,
+   0.21,
+   0.22,
+   0.36,
+   0.4,
+   0.45,
+   0.6,
+   0.55,
+   0.59,
+   0.72,
+   0.76,
+   0.83,
+   0.96,
+   1.2,
+   1.58,
+   1.97,
+   2.03,
+   2.84,
+   3.18,
+   2.74,
+   2.73,
+   2.2,
+   2.61,
+   2.53,
+   1.95,
+   1.46,
+   1.41,
+   1.25,
+   1.48,
+   1.29,
+   1.43,
+   1.45,
+   1.66,
+   1.73,
+   1.89,
+   2.34,
+   2.19,
+   1.48,
+   2.11,
+   2.14,
+   2.04,
+   2.03,
+   2.05,
+   1.79,
+   2.01,
+   1.78,
+   1.76,
+   1.77,
+   1.72,
+   1.69,
+   1.61,
+   1.61,
+   1.6,
+   1.74,
+   1.54,
+   1.29,
+   1.32,
+   1.34,
+   1.88,
+   1.84,
+   1.82,
+   1.82,
+   1.67,
+   1.59,
+   1.58,
+   1.59,
+   1.72,
+   1.58,
+   1.58,
+   1.51,
+   1.46,
+   1.26,
+   1.21,
+   1.2
+  ],
+  "p10": 0.21,
+  "p25": 0.59,
+  "tv": 0.96,
+  "thap": [
+   "2020-03",
+   0.11
+  ],
+  "nay": [
+   "2026-10",
+   1.2
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "ref": [
+   {
+    "v": 1.67,
+    "ten": "trung vị từ 10/2023"
+   },
+   {
+    "v": 0.84,
+    "ten": "trung vị 2015–6/2023"
+   }
+  ],
+  "dung": "Giá trị cơ sở tương đương P/B 0,78 trên vốn chủ pha loãng — gần trung vị 0,84 giai đoạn 2015–6/2023 (Tasco chủ yếu là BOT) và 0,85 của 15 mã cùng mảng; từ khi hợp nhất Savico (10/2023) HUT chưa từng dưới 1,20 (trung vị 1,67). Điểm 10/2026 tính trên 1.068 triệu cp; pha loãng: 1,21."
+ },
+ "nhay": [
+  [
+   "Lãi suất ±1 điểm % (nợ vay ngoài Savico, DNP)",
+   66,
+   0.5
+  ],
+  [
+   "P/E bảo hiểm, BOT, BĐS & công ty mẹ ±1 lần",
+   null,
+   0.2
+  ],
+  [
+   "Phí ví VETC: ±10% số ví trả phí",
+   19,
+   0.2
+  ],
+  [
+   "P/E VETC ±1 lần",
+   null,
+   0.1
+  ],
+  [
+   "P/E DNP ±1 lần",
+   null,
+   0.1
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    2,
+    65,
+    118
+   ],
+   "ck": 303
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    3,
+    98,
+    177
+   ],
+   "ck": 155
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    96,
+    255,
+    386
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Mô hình: LN cổ đông Q3 ~65 tỷ (Q3/2025: 303 tỷ nhờ khoản lãi tài chính một lần ở Savico); 6T đạt 37% kế hoạch LNTT 1.083 tỷ.",
+   "tac": [
+    "≥ 65 tỷ",
+    "giữ kịch bản cơ sở; dưới 10 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "lãi vay, doanh thu tài chính"
+  },
+  {
+   "khi": "10–11/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Trái phiếu chuyển đổi 3.561 tỷ",
+   "ct": "Đăng ký mua 20/10–9/11. 35,6 triệu trái phiếu, 1 trái phiếu = 10 cp (10.000 đ): thêm 356 triệu cp (+33%), bắt buộc chuyển đổi khi đáo hạn 5 năm; lãi 10% năm đầu (~356 tỷ/năm nếu chưa chuyển đổi).",
+   "tac": [
+    "+33% số cp",
+    "giá chuyển đổi dưới giá thị trường 20%"
+   ],
+   "theo_doi": "tỷ lệ đặt mua, lịch chuyển đổi"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "VETC thu phí duy trì ví",
+   "ct": "6.600 đ/tháng trên ~3 triệu ví điện tử, VETC giữ ~75% thị phần thu phí không dừng; chưa có số khách hàng chịu phí và tỷ lệ rời bỏ.",
+   "tac": [
+    "±0,2 nghìn đ/cp",
+    "mỗi 10% số ví trả phí, P/E 13"
+   ],
+   "theo_doi": "số ví, doanh thu VETC"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Bảo hiểm Tasco tăng gấp đôi",
+   "ct": "Phí gốc 6T 1.263,5 tỷ (gần gấp đôi), doanh thu bảo hiểm 952 tỷ (2,2 lần); 2025: 1.564 tỷ (+141%); mục tiêu 2026 3.000 tỷ.",
+   "tac": "",
+   "theo_doi": "tỷ lệ bồi thường, LN bảo hiểm"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "DNP Holding sau chu kỳ đầu tư",
+   "ct": "LN cổ đông DNP 6T 113 tỷ (+195%) khi dự án nước, nhựa mở rộng xong; nợ vay DNP 9.356 tỷ.",
+   "tac": [
+    "±0,1 nghìn đ/cp",
+    "mỗi 1 lần P/E DNP"
+   ],
+   "theo_doi": "LN quý DNP"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi vay",
+   "ct": "Nợ vay 23.730 tỷ (30/6), gấp 1,9 lần một năm trước; lãi vay vượt LN kinh doanh cốt lõi ở 7/8 quý gần nhất.",
+   "tac": [
+    "±0,5 nghìn đ/cp",
+    "mỗi 1 điểm % trên ~8.300 tỷ nợ ngoài Savico, DNP"
+   ],
+   "theo_doi": "lãi vay quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Cổ đông thiểu số giữ phần lớn lợi nhuận",
+   "ct": "Thiểu số nhận 71% LNST 6T/2026 (219/310 tỷ): 45,9% Savico, 48,6% DNP và cổ đông các công ty con của DNP.",
+   "tac": "",
+   "theo_doi": "LN cổ đông mẹ / LNST"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Phân bổ lợi thế thương mại",
+   "ct": "LNST 6T 310,5 tỷ, trước phân bổ lợi thế thương mại và đánh giá lại 585,5 tỷ: ~550 tỷ/năm chi phí kế toán, kéo dài nhiều năm.",
+   "tac": [
+    "−257 đ EPS",
+    "phần cổ đông mẹ ước 2/3"
+   ],
+   "theo_doi": "thuyết minh lợi thế thương mại"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dòng tiền kinh doanh âm",
+   "ct": "Dòng tiền kinh doanh 6T âm 951 tỷ; Q2 đầu tư ngắn hạn tăng lên 10.045 tỷ khi phải thu giảm còn 7.254 tỷ — cần thuyết minh để tách tiền gửi và cho vay.",
+   "tac": "",
+   "theo_doi": "phải thu, đầu tư ngắn hạn"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "hai",
+   "tieu": "Tasco Land và cao tốc Mỹ Thuận",
+   "ct": "Tiền trái phiếu: 1.360 tỷ góp vào Tasco Land, 501 tỷ dự án Việt Trì Legacy Lakeside, 500 tỷ dự án cao tốc Mỹ Thuận, 1.200 tỷ Tasco Investment.",
+   "tac": [
+    "±0,5 nghìn đ/cp",
+    "giữa định giá vốn 0,8 và 1,0 lần"
+   ],
+   "theo_doi": "tiến độ dự án"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "LNST hợp nhất: phần cổ đông Tasco và thiểu số",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Cổ đông Tasco",
+     "v": [
+      18,
+      108,
+      28,
+      6,
+      303,
+      155,
+      27,
+      64
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Cổ đông thiểu số",
+     "v": [
+      19,
+      69,
+      9,
+      71,
+      184,
+      -126,
+      27,
+      193
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "6T/2026 thiểu số nhận 219/310 tỷ LNST; Q3/2025 phần mẹ cao nhờ khoản lãi một lần, Q4/2025 thiểu số lỗ.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "LN kinh doanh cốt lõi và lãi vay",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN gộp − bán hàng − quản lý",
+     "v": [
+      37,
+      142,
+      132,
+      93,
+      183,
+      22,
+      298,
+      62
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Lãi vay",
+     "v": [
+      150,
+      183,
+      189,
+      218,
+      180,
+      345,
+      410,
+      521
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi vay vượt LN kinh doanh cốt lõi ở 7/8 quý; chi phí quản lý gồm phân bổ lợi thế thương mại.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "Doanh thu 6T/2026 theo mảng",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Ô tô",
+    "Thiết yếu",
+    "Bảo hiểm",
+    "Thu phí"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2026",
+     "v": [
+      14305,
+      6072,
+      952,
+      447
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Ô tô 64,5% doanh thu (+20% nếu loại phần đã thoái vốn); dịch vụ thiết yếu (DNP) 6.072 tỷ; bảo hiểm 2,2 lần cùng kỳ; thu phí −30% nhưng biên gộp 54,0%.",
+   "ng": "Tasco công bố 6T/2026 (nguoiquansat, vietstock, Doanh nghiệp Hội nhập)"
+  },
+  {
+   "ten": "Nợ vay và tiền, đầu tư ngắn hạn",
+   "dv": "nghìn tỷ",
+   "kieu": "cot",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      9.2,
+      10.2,
+      11.0,
+      12.4,
+      13.6,
+      21.9,
+      22.3,
+      23.7
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      2.6,
+      3.4,
+      3.1,
+      3.5,
+      4.1,
+      6.6,
+      7.4,
+      13.3
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 1,
+   "y": "Nợ vay 23,7 nghìn tỷ, gấp 1,9 lần một năm trước; Q4/2025 tăng vọt khi hợp nhất DNP (nợ vay DNP 9,4 nghìn tỷ).",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 54918,
+    "th": 22191,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 20/4/2026 · BCTC Q2"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 1083,
+    "th": 400,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 20/4/2026 · BCTC Q2"
+   },
+   {
+    "ten": "Phí bảo hiểm gốc",
+    "kh": 3000,
+    "th": 1263.5,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "Tasco công bố 08/2026"
+   }
+  ],
+  "y": "6T đạt 40% kế hoạch doanh thu, 37% LNTT; năm 2025 nửa sau chiếm 78% LNTT, phần lớn nhờ khoản lãi tài chính Q3.",
+  "ng": ""
+ },
+ "ctck": [],
+ "ctck_chu": "Chưa có CTCK theo dõi trong 8 tháng; mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành.",
+ "nguon": [
+  {
+   "ten": "Vietstock — Tasco báo lãi hợp nhất 6 tháng",
+   "ngay": "08/2026",
+   "link": "https://vietstock.vn/2026/08/tasco-bao-lai-hop-nhat-6-thang-tang-gan-3-lan-doanh-thu-vuot-21900-ty-dong-830-1478360.htm"
+  },
+  {
+   "ten": "CafeF — Tasco 6 tháng 2026",
+   "ngay": "09/2026",
+   "link": "https://cafef.vn/tasco-cai-thien-hieu-qua-kinh-doanh-loi-nhuan-6-thang-tang-gan-3-lan-cung-ky-188260904180749513.chn"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — giải trình LN Q2/2026",
+   "ngay": "08/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/tasco-hut-giai-trinh-loi-nhuan-hop-nhat-quy-ii2026-gap-hon-35-lan-cung-ky-post395285.html"
+  },
+  {
+   "ten": "Doanh nghiệp Hội nhập — dòng tiền kinh doanh âm",
+   "ngay": "04/08/2026",
+   "link": "https://doanhnghiephoinhap.vn/tasco-tang-truong-loi-nhuan-nhung-dong-tien-kinh-doanh-tiep-tuc-am-gan-1000-ty-dong-145192.html"
+  },
+  {
+   "ten": "Người Quan sát — doanh thu 6T/2026 theo mảng",
+   "ngay": "08/2026",
+   "link": "https://nguoiquansat.vn/tasco-dat-hon-22-300-ty-dong-doanh-thu-nua-dau-2026-mang-o-to-tiep-tuc-giu-vai-tro-chu-luc-314057.html"
+  },
+  {
+   "ten": "VietnamFinance — Tasco 6 tháng",
+   "ngay": "08/2026",
+   "link": "https://vietnamfinance.vn/tasco-6-thang-lai-gan-gap-3-lan-hieu-qua-kinh-doanh-cai-thien-tren-nhieu-mang-d150070.html"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ 2026",
+   "ngay": "04/2026",
+   "link": "https://baophapluat.vn/dhdcd-2026-tasco-hut-but-pha-doanh-thu-tu-mang-xe-dien-don-luc-cho-ha-tang-va-bat-dong-san.html"
+  },
+  {
+   "ten": "Mekong ASEAN — ĐHĐCĐ, trái phiếu cho cổ đông",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/dhdcd-tasco-doanh-thu-55000-ty-do-ng-phat-ha-nh-3560-ty-do-ng-trai-phieu-cho-co-dong-54249.html"
+  },
+  {
+   "ten": "Vietstock — lịch chào bán trái phiếu chuyển đổi",
+   "ngay": "10/2026",
+   "link": "https://vietstock.vn/2026/10/tasco-an-dinh-lich-chao-ban-356-ngan-ty-dong-trai-phieu-chuyen-doi-3118-1500147.htm"
+  },
+  {
+   "ten": "CafeF — chốt ngày chào bán trái phiếu",
+   "ngay": "07/10/2026",
+   "link": "https://cafef.vn/tasco-chot-ngay-chao-ban-hon-35-trieu-trai-phieu-chuyen-doi-18826100715395986.chn"
+  },
+  {
+   "ten": "Báo Pháp luật — điều khoản trái phiếu chuyển đổi",
+   "ngay": "10/2026",
+   "link": "https://doanhnhan.baophapluat.vn/tasco-hut-chao-ban-hon-35-6-trieu-trai-phieu-chuyen-doi-du-kien-huy-dong-3-561-ty-dong.html"
+  },
+  {
+   "ten": "Đại biểu Nhân dân — nợ vay, mục đích trái phiếu",
+   "ngay": "10/2026",
+   "link": "https://daibieunhandan.vn/tasco-hut-no-vay-hon-23-700-ty-dong-tiep-tuc-huy-dong-3-560-ty-dong-trai-phieu-de-lam-gi-10433234.html"
+  },
+  {
+   "ten": "CafeF — tài chính VETC, phí ví 6.600 đ/tháng",
+   "ngay": "18/08/2026",
+   "link": "https://cafef.vn/buc-tranh-tai-chinh-vetc-truoc-them-thu-phi-them-6600-dong-thang-co-3-trieu-khach-hang-su-dung-vi-loi-nhuan-2025-tang-gap-4-lan-len-140-ty-188260818105113671.chn"
+  },
+  {
+   "ten": "VietNamNet — VETC thu phí duy trì ví",
+   "ngay": "08/2026",
+   "link": "https://vietnamnet.vn/vetc-thu-phi-duy-tri-vi-dien-tu-gan-80-000-dong-nam-tasco-huong-loi-ra-sao-2546627.html"
+  },
+  {
+   "ten": "CafeF — Tasco nắm quyền kiểm soát DNP Holding",
+   "ngay": "24/12/2025",
+   "link": "https://cafef.vn/tasco-chinh-thuc-nam-quyen-kiem-soat-dnp-holding-tro-thanh-ong-lon-trong-loat-linh-vuc-tu-o-to-den-nuoc-sach-nhua-188251224195007677.chn"
+  },
+  {
+   "ten": "Báo Đấu thầu — DNP thành công ty con",
+   "ngay": "12/2025",
+   "link": "https://baodauthau.vn/dnp-holding-chinh-thuc-tro-thanh-cong-ty-con-cua-tasco-post191398.html"
+  },
+  {
+   "ten": "Vietstock — SVC Holdings về tay Tasco",
+   "ngay": "09/2023",
+   "link": "https://vietstock.vn/2023/09/svc-holdings-chinh-thuc-ve-tay-tasco-764-1106645.htm"
+  },
+  {
+   "ten": "Người Quan sát — KQKD 2025",
+   "ngay": "01/2026",
+   "link": "https://nguoiquansat.vn/doanh-thu-ca-nam-vuot-37-000-ty-dong-tasco-bao-lai-gap-2-lan-nam-truoc-272317.html"
+  },
+  {
+   "ten": "Vietstock — Tasco Auto 2025",
+   "ngay": "04/2026",
+   "link": "https://vietstock.vn/2026/04/tasco-auto-tang-manh-ve-quy-mo-va-dau-tu-he-thong-doanh-thu-2025-dat-37300-ty-dong-tong-tai-san-vuot-18700-ty-dong-737-1426183.htm"
+  },
+  {
+   "ten": "Báo Mới — LN thuộc cổ đông không kiểm soát",
+   "ngay": "08/2026",
+   "link": "https://baomoi.com/tasco-vi-sao-loi-nhuan-tang-bang-lan-nhung-hon-90-so-nay-lai-thuoc-ve-co-dong-khong-kiem-soat-c55775658.epi"
+  },
+  {
+   "ten": "Báo Đấu thầu — ĐHĐCĐ 2025, nhà máy với Geely",
+   "ngay": "2025",
+   "link": "https://baodauthau.vn/dhdcd-tasco-2025-khoi-cong-nha-may-o-to-voi-geely-day-manh-mang-bao-hiem-post179375.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Nợ vay hợp nhất 23,7 nghìn tỷ: mỗi 1 điểm % lãi suất ≈ 237 tỷ chi phí lãi/năm trước thuế.",
+     "ng": "BCTC Q2/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Thu phí không dừng: VETC giữ ~75% thị phần năm 2025; phí duy trì ví là nguồn thu định kỳ đầu tiên ngoài phí dịch vụ.",
+     "ng": "cafef 18/08/2026"
+    },
+    {
+     "h": 0,
+     "t": "Bảo hiểm phi nhân thọ niêm yết: P/E trung vị 9,2 (6 mã, giá 23/10); đại lý xe SVC, HAX được trả ~0,8 lần sổ sách.",
+     "ng": "BCTC VNDirect, giá 23/10/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 0,
+     "t": "24/12/2025: Tasco Investment nhận 72,5 triệu cp (51,4%) DNP Holding — nước sạch, nhựa, vật liệu xây dựng.",
+     "ng": "cafef, Báo Đấu thầu 12/2025"
+    },
+    {
+     "h": 0,
+     "t": "Kế hoạch 2026: doanh thu 54.918 tỷ, LNTT 1.083 tỷ (+37,5%); ra mắt nền tảng số Tasco Mobility.",
+     "ng": "ĐHĐCĐ 20/4/2026"
+    },
+    {
+     "h": -1,
+     "t": "Trái phiếu chuyển đổi 3.561 tỷ ở 10.000 đ: không chuyển đổi thì bắt buộc chuyển đổi khi đáo hạn — pha loãng chắc chắn, chỉ khác thời điểm.",
+     "ng": "Vietstock 10/2026"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Phân phối ô tô",
+   "phu": "Tasco Auto (100%) · Savico 54,07% · Geely, xe điện",
+   "so": [
+    [
+     "Doanh thu 6T",
+     "14.305 tỷ",
+     "64,5% hợp nhất"
+    ],
+    [
+     "LN cổ đông Savico 6T",
+     "40 tỷ",
+     "2025: 449"
+    ],
+    [
+     "Lãi vay Savico Q2",
+     "150 tỷ",
+     "Q1: 63"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Loại phần đã thoái vốn, doanh thu ô tô 6T/2026 tăng ~20%; Tasco Auto 2025 LNST trước phân bổ ~682 tỷ (+187%).",
+     "ng": "nguoiquansat 08/2026 · Vietstock 04/2026"
+    },
+    {
+     "t": "ĐHĐCĐ 2025: khởi công nhà máy lắp ráp với Geely; ĐHĐCĐ 2026: doanh thu tăng nhờ xe điện.",
+     "ng": "Báo Đấu thầu 2025 · Báo Pháp luật 04/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Dịch vụ thiết yếu",
+   "phu": "DNP Holding 51,4% — nước sạch, nhựa, đồ gia dụng, vật liệu xây dựng",
+   "so": [
+    [
+     "Doanh thu 6T",
+     "6.072 tỷ",
+     "hợp nhất từ 24/12/2025"
+    ],
+    [
+     "LN cổ đông DNP 6T",
+     "113 tỷ",
+     "+195%"
+    ],
+    [
+     "Nợ vay DNP 30/6",
+     "9.356 tỷ",
+     ""
+    ]
+   ],
+   "y": [
+    {
+     "t": "DNP Holding bước vào chu kỳ hiệu quả sau khi hoàn tất đầu tư mở rộng hạ tầng; LNST hợp nhất 6T bằng 242% cùng kỳ.",
+     "ng": "nguoiquansat 08/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Thu phí giao thông",
+   "phu": "VETC 99,3% (thu phí không dừng) · các dự án BOT",
+   "so": [
+    [
+     "Doanh thu thu phí 6T",
+     "447 tỷ",
+     "6T/2025: 642"
+    ],
+    [
+     "Biên gộp thu phí",
+     "54,0%",
+     "6T/2025: 42,5%"
+    ],
+    [
+     "VETC LNST 6T",
+     "53,2 tỷ",
+     "+9%"
+    ],
+    [
+     "VETC doanh thu 2025",
+     "666 tỷ",
+     "+35%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "VETC còn lỗ lũy kế ~468 tỷ cuối 2025 dù lãi ~140 tỷ trong năm; ~3 triệu khách hàng dùng ví.",
+     "ng": "cafef 18/08/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Bảo hiểm",
+   "phu": "Bảo hiểm Tasco — phi nhân thọ",
+   "so": [
+    [
+     "Phí gốc 6T",
+     "1.263,5 tỷ",
+     "gần gấp đôi"
+    ],
+    [
+     "Doanh thu bảo hiểm 6T",
+     "952 tỷ",
+     "2,2 lần"
+    ],
+    [
+     "Phí gốc 2025",
+     "1.564 tỷ",
+     "+141%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Mục tiêu phí gốc 2026: 3.000 tỷ; chưa có số lợi nhuận riêng của mảng trong tài liệu đã đọc.",
+     "ng": "Tasco công bố 08/2026"
+    }
+   ]
+  }
+ ]
+}
