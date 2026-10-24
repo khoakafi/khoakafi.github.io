@@ -400,7 +400,7 @@
       + '<div class="hsStl"><span>Vốn hóa ' + esc(p.ma) + ' <b>' + f(o.von, 0) + ' tỷ</b> = ' + f(o.pctCon, 0) + '% là ' + esc(o.maCon) + '</span><span>' + esc((s.conlai && s.conlai.ten) || 'Phần còn lại') + '</span></div>';
     h += peKv(s, o);
     h += '<div class="hsY">' + o.dsCon.map(function(z){ return esc(z.c.ma) + ' ' + f(z.g.gia, 1) + ' (' + ngVn(z.g.ngay) + ') · vốn hóa ' + f(z.von, 0) + ' tỷ'
-        + (z.c.gtgd ? ' · ' + (z.c.gtgd < 30 ? 'giao dịch mỏng ~' : 'GTGD ~') + f(z.c.gtgd, 0) + ' tỷ/phiên' : ''); }).join('; ') + '. '
+        + (z.c.gtgd ? ' · ' + (z.c.gtgd < 30 ? 'giao dịch mỏng ~' : 'GTGD ~') + f(z.c.gtgd, z.c.gtgd < 10 ? 1 : 0) + ' tỷ/phiên' : ''); }).join('; ') + '. '
       + 'LN 2027E cơ sở: ' + o.dsCon.map(function(z){ return esc(z.c.ma) + ' ' + f(z.c.ln27, 0) + ' tỷ'; }).join(', ')
       + (s.conlai && s.conlai.ln27 ? ', phần còn lại ' + f(s.conlai.ln27, 0) + ' tỷ' : '') + '. ' + esc(s.kv_ng || '') + (s.kv_ng ? '.' : '') + '</div>';
     return h;
@@ -799,7 +799,7 @@
       + '#ptcs table.hsTt tr.dam td{font-weight:800;color:var(--text)}#ptcs table.hsTt td.up{color:var(--green-dark);font-weight:700}#ptcs table.hsTt td.down{color:var(--red);font-weight:700}'
       + '#ptcs .hsEv{display:flex;flex-direction:column}#ptcs .hsEvH,#ptcs .hsEvR{display:grid;grid-template-columns:86px 104px minmax(0,1fr) 236px 176px;gap:14px;align-items:baseline}'
       + '#ptcs .hsEvH{font-size:11px;font-weight:700;color:var(--muted);padding:2px 0 6px 13px;border-bottom:1px solid var(--border)}#ptcs .hsEvR{padding:9px 0 9px 10px;border-left:3px solid #CBD5E1;border-bottom:1px solid #F1F3F6;font-size:12.5px;line-height:1.5}'
-      + '#ptcs .hsEvR.len{border-left-color:var(--green)}#ptcs .hsEvR.xuong{border-left-color:var(--red)}#ptcs .hsEvR.hai{border-left-color:#D97706}#ptcs .hsEvR .eK{font-weight:800;color:var(--text);white-space:nowrap}'
+      + '#ptcs .hsEvR.len{border-left-color:var(--green)}#ptcs .hsEvR.xuong{border-left-color:var(--red)}#ptcs .hsEvR.hai{border-left-color:#D97706}#ptcs .hsEvR .eK{font-weight:800;color:var(--text);line-height:1.3}'
       + '#ptcs .hsEvR .eL{font-size:11.5px;font-weight:800;white-space:nowrap}#ptcs .hsEvR.len .eL{color:var(--green-dark)}#ptcs .hsEvR.xuong .eL{color:var(--red)}#ptcs .hsEvR.hai .eL{color:#B45309}'
       + '#ptcs .hsEvR .eL .mv{margin-left:6px;font-size:8px;letter-spacing:1px;vertical-align:2px}#ptcs .hsEvR .eL .mv0{font-size:8px;letter-spacing:1px;vertical-align:2px;color:#D5DAE0}#ptcs .hsEvR .eN{color:#475569}#ptcs .hsEvR .eN b{color:var(--text)}'
       + '#ptcs .hsEvR .eT b{display:block;font-size:13px;color:var(--text);white-space:nowrap}#ptcs .hsEvR .eT b.up{color:var(--green-dark)}#ptcs .hsEvR .eT b.down{color:var(--red)}#ptcs .hsEvR .eT small{display:block;font-size:11px;color:var(--muted);line-height:1.4}#ptcs .hsEvR .eT em{font-style:normal;color:#B8C0CB}#ptcs .hsEvR .eD{font-size:11.5px;color:var(--muted)}'
