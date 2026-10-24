@@ -14,7 +14,13 @@
   // Nguồn lãi suất: nhãn xanh đậm cho thấy số chính thức của NHNN (anh Khoa 24/10: "để họ thấy nguồn NHNN cho chất lượng")
   const BANK = '<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></svg>';
   const nguonLs = ls => `<div class="tqng"><span class="tqngp">${BANK}Nguồn: Ngân hàng Nhà nước Việt Nam</span>`
-    + (ls && ls.m && ls.m.length ? `<span class="tqngm">Số mới nhất: tháng ${+ls.m[ls.m.length-1].slice(5)}/${ls.m[ls.m.length-1].slice(0,4)}</span>` : '') + '</div>';
+    + (ls && ls.m && ls.m.length ? `<span class="tqngm">Tháng ${+ls.m[ls.m.length-1].slice(5)}/${ls.m[ls.m.length-1].slice(0,4)}:</span>${doiLs(ls)}` : '') + '</div>';
+  // Thay đổi so với tháng trước (anh Khoa 24/10): ▲/▼ + điểm %, chấm màu theo đường trên chart
+  function doiLs(ls){ const n = ls.m.length - 1, tr = n ? `${+ls.m[n-1].slice(5)}/${ls.m[n-1].slice(0,4)}` : '';
+    const mot = (ten, a, mau) => { if (!a || a[n] == null) return ''; const d = n && a[n-1] != null ? Math.round((a[n] - a[n-1])*10)/10 : null;
+      const dd = d == null ? '' : (d === 0 ? '<span class="tqngd">không đổi</span>' : `<span class="tqngd">${d > 0 ? '▲' : '▼'} ${vn(Math.abs(d))} điểm</span>`);
+      return `<span class="tqngv"><i style="background:${mau}"></i>${ten} <b>${vn(a[n])}%</b>${dd}</span>`; };
+    return mot('Tiết kiệm', ls.dep, DEP) + mot('Cho vay', ls.lend, LEND) + (tr ? `<span class="tqngs">so với tháng ${tr}</span>` : ''); }
   let charts = [], ve = false;
 
   function css(){
@@ -29,6 +35,11 @@
 .tqng{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:-4px 0 12px}
 .tqngp{display:inline-flex;align-items:center;gap:6px;background:#E8F6EE;color:#0F7A3D;border:1px solid #BFE5CC;border-radius:999px;padding:3px 11px;font-size:12.5px;font-weight:700}
 .tqngm{font-size:12.5px;color:#374151;font-weight:600}
+.tqngv{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:#374151}
+.tqngv i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.tqngv b,#tqModal .tqngv b{color:#111827;font-size:12.5px;font-weight:700}
+.tqngd{font-weight:700;color:#111827}
+.tqngs{font-size:12px;color:#6B7280}
 #tqModal .tqng{margin:6px 0 0}
 #view-tq .tqc.sm{height:190px}
 #view-tq .tqst{background:#fff;border:1px solid var(--border);border-radius:14px;margin-bottom:16px;box-shadow:0 1px 3px rgba(16,24,40,.05);overflow:hidden}
