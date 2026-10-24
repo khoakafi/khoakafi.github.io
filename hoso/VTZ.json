@@ -1,0 +1,1276 @@
+{
+ "v": 2,
+ "ma": "VTZ",
+ "ten": "CTCP Sản xuất và Thương mại Nhựa Việt Thành",
+ "nganh": "Nhựa (đồ nhựa gia dụng, thương mại nguyên liệu nhựa)",
+ "ky": "BCTC Q2/2026 · giá 23/10/2026 (Q3/2026 chưa công bố)",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q3/2026 (hạn 30/10/2026)",
+ "cp_trieu": 76.16,
+ "cp_ng": "76.159.833 cp: vốn điều lệ 761,6 tỷ sau phát hành riêng lẻ 28 triệu cp (đăng ký 23/12/2024, BSC/HNX); vốn hóa ÷ giá VNDirect 75,8 triệu (lệch ngày giá). Không có cổ tức tiền, thưởng hay chia tách sau tháng 7/2024.",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "ROE vẫn quanh 7% như 2023, P/B đã từ 0,7 lên 1,7 lần: giá đi trước lợi nhuận",
+  "dk": "up_duoi:-15",
+  "khac": "Doanh thu gấp 5 lần từ 2021 nhờ vay nợ, EPS vẫn dưới năm 2021"
+ },
+ "dong_mo": "VTZ kiếm biên gộp ~5% như một nhà thương mại nguyên liệu nhựa, tài trợ bằng vay (nợ vay 2,8 lần vốn chủ): 4 quý gần nhất doanh thu +35% nhưng lãi vay +68%, LNST −7%. Cơ sở (biên 5,0%, lãi suất 8%): LNST 2026E ~80 tỷ, 2027E ~68 tỷ; P/B 0,8 lần vốn chủ cho {gt} ({up}). Kịch bản tốt (biên 5,6%, lãi suất 7%): 16,7 nghìn đ/cp.",
+ "luan_diem": [
+  {
+   "so": "−7%",
+   "nhan": "LNST 4 quý, khi doanh thu +35%",
+   "tieu": "Doanh thu chạy, lợi nhuận đứng: lãi vay ăn phần tăng trưởng",
+   "t": "4 quý đến Q2/2026: doanh thu 5.528 tỷ (+35%), nợ vay 2.578 tỷ (+33%), lãi vay 164 tỷ (+68%), LNST 67,8 tỷ (−7%). Lãi vay đã bằng 73% lợi nhuận hoạt động (lãi gộp − bán hàng − QLDN). Doanh thu gấp 5,2 lần 2021 nhưng EPS 4 quý 890 đ vẫn dưới 2021 (~1.000 đ sau điều chỉnh cổ tức cổ phiếu): 2 đợt phát hành riêng lẻ thêm 48 triệu cp.",
+   "ng": "BCTC VNDirect · BSC (HNX)"
+  },
+  {
+   "so": "4,9%",
+   "nhan": "biên gộp 4 quý — biên thương mại",
+   "tieu": "Thương mại nguyên liệu nhựa, vốn lưu động vay ngắn hạn",
+   "t": "Nhà máy Long An 28.560 tấn/năm: kể cả bán 50 triệu đ/tấn cũng chỉ ~1.430 tỷ/năm, ~1/4 doanh thu; biên gộp quý 3,9–7,0% là biên thương mại. Phải thu + tồn kho 2.031 tỷ (37% doanh thu 4 quý) vay ngắn hạn: nợ vay/vốn chủ 2,8 lần (nhóm nhựa niêm yết: 0,58). 18 tháng qua LNST 105 tỷ, vay thêm 1.079 tỷ; dòng tiền tự do ước −822 tỷ.",
+   "ng": "Vietstock (hồ sơ DN) · BCTC VNDirect · mô hình"
+  },
+  {
+   "so": "9,2%",
+   "nhan": "lãi suất vay quy năm Q2/2026 (2025: 6,6%)",
+   "tieu": "Lãi suất và biên gộp quyết định có lãi hay hòa vốn",
+   "t": "Lãi vay Q2/2026 56,8 tỷ, gấp 1,5 lần Q1. Biên gộp Q1 lên 6,6% khi Brent từ 63 lên 79–97 USD/thùng — khó giữ khi giá dầu đi ngang. Mỗi ±0,5 điểm % biên gộp = ±27 tỷ LNST 2027E, mỗi ±1 điểm % lãi suất = ±22 tỷ — trên nền cơ sở chỉ 68 tỷ. Biên như 2025 (4,5%) cùng lãi suất 9%: 2027 về hòa vốn (LNST ~3 tỷ).",
+   "ng": "BCTC VNDirect · giá dầu: dữ liệu hàng hóa của web · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 1,7 lần cho ROE 7%: giá đã đi trước lợi nhuận",
+   "dk": "up_duoi:-15",
+   "t": "ROE 2023 6,5%, 2025 6,9%, nhưng P/B từ trung vị 0,73 (trước 6/2024) lên 1,69; nhóm nhựa niêm yết 0,62. P/B 0,8 × vốn chủ 30/6/2027E = {gt} (≈ P/E 11,5 lần LN 2027E — trung vị của chính VTZ trước 2024). Giữ giá hiện tại ở P/E đó cần LNST ~135 tỷ/năm, gấp đôi 4 quý gần nhất: chỉ có ở kịch bản tốt (biên 5,6%, lãi suất 7%).",
+   "ng": "mô hình · bội số: BCTC VNDirect, giá 23/10/2026",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "P/B × vốn chủ 30/6/2027E: {up_so} so với giá hiện tại",
+    "t": "P/B 0,8 lần vốn chủ 30/6/2027E cơ sở (≈ P/E 11,5 lần LN 2027E, trung vị của VTZ trước 2024; nhóm nhựa niêm yết P/B 0,62). Xấu 0,6 lần khi lợi nhuận về hòa vốn → 7,2; tốt 1,2 lần khi ROE ~14% → 16,7 nghìn đ/cp."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   58,
+   80,
+   68
+  ],
+  "ln_truoc": 61,
+  "eps": [
+   763,
+   1049,
+   898
+  ],
+  "bv": [
+   11384,
+   12449,
+   13347
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     4920,
+     6367,
+     7004
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     6.9,
+     8.8,
+     7.0
+    ],
+    "d": 1,
+    "pt": 1
+   },
+   {
+    "ten": "Nợ vay/vốn chủ (lần)",
+    "v": [
+     2.52,
+     2.98,
+     2.93
+    ],
+    "d": 2
+   }
+  ],
+  "ng": "2024–2025: cộng 4 quý BCTC tự lập (kiểm toán: 2024 58,7, 2025 52,0 tỷ — Simply Wall St, MarketScreener). EPS, BVPS theo 76,16 triệu cp. Không có cổ tức tiền từ khi niêm yết."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Lợi nhuận hoạt động (lãi gộp − bán hàng − QLDN)",
+    "mau": "c1",
+    "v": [
+     172,
+     282,
+     287
+    ]
+   },
+   {
+    "ten": "Chi phí lãi vay",
+    "mau": "c2",
+    "v": [
+     -125,
+     -209,
+     -232
+    ]
+   },
+   {
+    "ten": "Tài chính khác & thu nhập khác",
+    "mau": "c4",
+    "v": [
+     33,
+     43,
+     40
+    ]
+   }
+  ],
+  "ng": "Tài chính khác = doanh thu tài chính (lãi tiền gửi, tỷ giá) − chi phí tài chính ngoài lãi vay + thu nhập khác ròng. 2026E–2027E: mô hình cơ sở; lãi vay ăn 73% lợi nhuận hoạt động 2025, 81% năm 2027E."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với 11 mã nhựa niêm yết",
+  "phu": "giá hôm nay, vốn chủ cổ đông 30/6/2026, 76,16 triệu cp",
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 23/10)",
+  "nhom": "11 mã nhựa niêm yết",
+  "kv": [
+   [
+    "AAA",
+    0.5
+   ],
+   [
+    "APH",
+    0.64
+   ],
+   [
+    "HII",
+    0.61
+   ],
+   [
+    "BMP",
+    3.56
+   ],
+   [
+    "NTP",
+    2.35
+   ],
+   [
+    "DNP",
+    1.18
+   ],
+   [
+    "NHH",
+    0.59
+   ],
+   [
+    "PLP",
+    0.29
+   ],
+   [
+    "TPC",
+    0.62
+   ],
+   [
+    "HCD",
+    0.53
+   ],
+   [
+    "PBP",
+    0.75
+   ]
+  ],
+  "tv": 0.62,
+  "moi_cp": 12019,
+  "max": 4,
+  "y": "ROE 4 quý VTZ 7,4%, nhóm trung vị 9,2%; nợ vay/vốn chủ 2,8 lần (nhóm 0,58). Mặt bằng nhóm: mỗi 1 điểm % ROE ≈ 0,08 lần P/B — ở ROE của VTZ là ~0,59 lần. Web xếp VTZ vào 'Hàng hóa cá nhân' (chủ yếu dệt may, P/B trung vị 0,72).",
+  "ng": "BCTC VNDirect (quý gần nhất), vốn hóa VNDirect giá 23/10/2026; VTZ: vốn chủ cổ đông 30/6/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: doanh thu × biên gộp − lãi vay",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Kinh doanh (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     4920,
+     6367,
+     7004
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên lợi nhuận gộp (%)",
+    "v": [
+     4.48,
+     5.31,
+     5.0
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Lãi gộp",
+    "v": [
+     220,
+     338,
+     350
+    ]
+   },
+   {
+    "ten": "Bán hàng + QLDN",
+    "v": [
+     48,
+     56,
+     63
+    ]
+   },
+   {
+    "ten": "Lợi nhuận hoạt động",
+    "v": [
+     172,
+     282,
+     287
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "nhom": "Nợ vay và tài chính"
+   },
+   {
+    "ten": "Nợ vay bình quân",
+    "v": [
+     1890,
+     2536,
+     2903
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi suất vay (%)",
+    "v": [
+     6.6,
+     8.2,
+     8.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Chi phí lãi vay",
+    "v": [
+     125,
+     209,
+     232
+    ]
+   },
+   {
+    "ten": "Tài chính khác & khác",
+    "v": [
+     32.9,
+     42.6,
+     40.0
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Lợi nhuận"
+   },
+   {
+    "ten": "LN trước thuế",
+    "v": [
+     79.6,
+     116.0,
+     95.0
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     58.1,
+     79.9,
+     68.4
+    ],
+    "d": 1,
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     763,
+     1049,
+     898
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     11384,
+     12449,
+     13347
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     6.9,
+     8.8,
+     7.0
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "2026E = 6 tháng thực tế + Q3–Q4 ước tính. Nợ vay = 30/6/2026 + 0,34 đồng vốn lưu động cho mỗi đồng doanh thu năm tăng thêm − LN giữ lại; thuế 28%. Độ nhạy quy đổi theo P/E tương đương cơ sở (11,5 lần — P/B đi theo ROE)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   80
+  ],
+  "cuoi": [
+   "2027E",
+   68
+  ],
+  "buoc": [
+   [
+    "Doanh thu +10%",
+    20
+   ],
+   [
+    "Biên 5,3→5,0%",
+    -16
+   ],
+   [
+    "Lãi vay",
+    -17
+   ],
+   [
+    "Khác & thuế",
+    1
+   ]
+  ],
+  "y": "Phần biên cao của 6T/2026 (5,7%) không lặp lại và lãi vay cả năm ở dư nợ cao hơn lấy đi nhiều hơn phần doanh thu +10% mang lại: LNST 2027E 68 tỷ, thấp hơn 2026E.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu Q3 · Q4/2026 (tỷ)",
+   "v": [
+    "1.550 · 1.600",
+    "1.650 · 1.800",
+    "1.750 · 1.950"
+   ],
+   "ly_do": "Q2/2026 1.713 (+43%); Q3/2025 bằng Q2/2025; Q4 cao nhất năm 2023–2025 (Q4/2025 +18% so với Q3). Brent bình quân 1/7–4/9/2026 87 USD/thùng, Q2 97"
+  },
+  {
+   "ten": "Biên gộp H2/2026 và 2027",
+   "v": [
+    "4,5%",
+    "5,0%",
+    "5,6%"
+   ],
+   "ly_do": "2024 5,7%; 2025 4,5%; 6T/2026 5,7% (Q1 6,6% khi Brent từ 63 lên 79–97 USD/thùng); quý: 3,9–7,0% từ Q3/2023"
+  },
+  {
+   "ten": "Lãi suất vay quy năm H2/2026",
+   "v": [
+    "9,3%",
+    "8,5%",
+    "7,5%"
+   ],
+   "ly_do": "Lãi vay ÷ dư nợ bình quân: 2025 6,6%; Q1/2026 6,6%; Q2/2026 9,2%"
+  },
+  {
+   "ten": "Lãi suất vay 2027",
+   "v": [
+    "9,0%",
+    "8,0%",
+    "7,0%"
+   ],
+   "ly_do": "Cơ sở giữa mức 2025 và Q2/2026; tốt: về mức 2025; xấu: giữ mức Q2/2026"
+  },
+  {
+   "ten": "Doanh thu 2027",
+   "v": [
+    "0%",
+    "+10%",
+    "+20%"
+   ],
+   "ly_do": "2025 +39%, 6T/2026 +26%. Mỗi đồng doanh thu năm tăng thêm cần ~0,34 đồng vốn lưu động, vay ngắn hạn"
+  },
+  {
+   "ten": "Vốn lưu động / doanh thu năm",
+   "v": [
+    "0,34",
+    "0,34",
+    "0,34"
+   ],
+   "ly_do": "(Phải thu + tồn kho + tài sản ngắn hạn khác − nợ ngoài vay) ÷ doanh thu 4 quý, 30/6/2026; không chia cổ tức tiền"
+  },
+  {
+   "ten": "Bán hàng + QLDN / doanh thu",
+   "v": [
+    "0,9%",
+    "0,9%",
+    "0,9%"
+   ],
+   "ly_do": "2025 0,98%; 6T/2026 0,85%"
+  },
+  {
+   "ten": "Thuế TNDN hiệu dụng",
+   "v": [
+    "28%",
+    "28%",
+    "28%"
+   ],
+   "ly_do": "2024 21%; 2025 27%; 6T/2026 33%"
+  },
+  {
+   "ten": "P/B trên vốn chủ 30/6/2027E",
+   "v": [
+    "0,6",
+    "0,8",
+    "1,2"
+   ],
+   "ly_do": "Nhóm nhựa 0,62 (ROE 9,2%); VTZ trước 6/2024 0,73, toàn kỳ 1,07. Cơ sở 0,8 ≈ P/E 11,5 lần LN 2027E = trung vị P/E của VTZ trước 2024"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 50,
+   "ln27": 3,
+   "gia": 7.2,
+   "mo_ta": "Biên gộp như 2025 (4,5%), lãi suất giữ ~9%, doanh thu 2027 đi ngang: lợi nhuận 2027 về hòa vốn; P/B 0,6 (nhóm nhựa)"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 80,
+   "ln27": 68,
+   "gia": 10.3,
+   "mo_ta": "Biên 5,0%, lãi suất 8%, doanh thu 2027 +10% (vay thêm vốn lưu động); ROE ~7%; P/B 0,8 ≈ P/E 11,5"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 115,
+   "ln27": 149,
+   "gia": 16.7,
+   "mo_ta": "Biên 5,6% (như 2024, 6T/2026), lãi suất về 7%, doanh thu 2027 +20%; ROE ~14%; P/B 1,2"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ cổ đông 30/6/2027E",
+  "ck": 0,
+  "cp": 76.16,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông",
+    "mau": "c1",
+    "x": [
+     920,
+     982,
+     1058
+    ],
+    "boi": [
+     0.6,
+     0.8,
+     1.2
+    ],
+    "x_ten": "Vốn chủ cổ đông 30/6/2027E",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     552,
+     786,
+     1270
+    ]
+   }
+  ],
+  "von": [
+   552,
+   786,
+   1270
+  ],
+  "gia": [
+   7.2,
+   10.3,
+   16.7
+  ]
+ },
+ "nhay": [
+  [
+   "Biên gộp ±0,5 điểm %",
+   27,
+   4.0
+  ],
+  [
+   "Lãi suất vay 2027 ±1 điểm %",
+   22,
+   3.2
+  ],
+  [
+   "Doanh thu 2027 ±10%",
+   13,
+   2.0
+  ],
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.3
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.41,
+   1.0,
+   0.99,
+   1.04,
+   1.1,
+   0.97,
+   0.9,
+   0.8,
+   0.76,
+   0.69,
+   0.78,
+   0.73,
+   0.65,
+   0.63,
+   0.65,
+   0.64,
+   0.69,
+   0.82,
+   0.76,
+   0.69,
+   0.73,
+   0.71,
+   0.72,
+   0.7,
+   0.73,
+   0.71,
+   0.71,
+   0.7,
+   0.73,
+   0.75,
+   0.73,
+   0.97,
+   1.34,
+   1.37,
+   1.5,
+   1.56,
+   1.59,
+   1.58,
+   1.6,
+   1.61,
+   1.64,
+   1.61,
+   1.51,
+   1.54,
+   1.68,
+   1.66,
+   1.66,
+   1.64,
+   1.61,
+   1.72,
+   1.78,
+   1.78,
+   1.77,
+   1.76,
+   1.76,
+   1.75,
+   1.75,
+   1.71,
+   1.68,
+   1.69
+  ],
+  "p10": 0.69,
+  "p25": 0.73,
+  "tv": 1.07,
+  "thap": [
+   "2022-12",
+   0.63
+  ],
+  "nay": [
+   "2026-10",
+   1.69
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "ref": [
+   {
+    "v": 0.73,
+    "ten": "trung vị trước 6/2024"
+   },
+   {
+    "v": 0.62,
+    "ten": "trung vị nhóm nhựa"
+   }
+  ],
+  "dung": "Kịch bản dùng P/B 0,6 · 0,8 · 1,2 lần vốn chủ 30/6/2027E: từ trung vị nhóm nhựa (0,62) qua trung vị của VTZ trước 6/2024 (0,73) đến trên trung vị toàn kỳ (1,07). Từ 7/2024 P/B 1,34–1,78 lần, ROE không cao hơn (2025: 6,9%)."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 1650,
+   "ln": [
+    1,
+    14,
+    31
+   ],
+   "ck": 10
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 1800,
+   "ln": [
+    2,
+    19,
+    37
+   ],
+   "ck": 11
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    50,
+    80,
+    115
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "30/10/2026",
+   "loai": "hai",
+   "tieu": "BCTC Q3/2026",
+   "ct": "Cơ sở: LNST ~14 tỷ (Q3/2025: 10,0), biên gộp 5,0%, lãi vay ~57 tỷ. Biên dưới 4,5% mà lãi vay giữ mức Q2 thì quý về hòa vốn.",
+   "tac": [
+    "Biên gộp ≥ 5%",
+    "giữ cơ sở; dưới 4,5% nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "biên gộp, chi phí lãi vay, nợ vay"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Mùa cao điểm cuối năm",
+   "ct": "Q4 là quý doanh thu cao nhất 2023–2025 (Q4/2025 1.413 tỷ, +18% so với Q3). Cơ sở Q4/2026: doanh thu 1.800 tỷ, LNST ~19 tỷ (Q4/2025: 10,7).",
+   "tac": [
+    "~19 tỷ",
+    "LNST Q4/2026E cơ sở"
+   ],
+   "theo_doi": "doanh thu, biên gộp Q4"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Doanh thu tiếp tục tăng",
+   "ct": "6T/2026 doanh thu +26%, Q2 +43%. Mỗi +10% doanh thu 2027 thêm ~13 tỷ LNST sau khi trả lãi cho ~0,34 đồng vốn lưu động vay thêm trên mỗi đồng doanh thu.",
+   "tac": [
+    "+2,0 nghìn đ/cp",
+    "mỗi +10% doanh thu 2027"
+   ],
+   "theo_doi": "doanh thu quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Lãi suất hạ về mức 2025",
+   "ct": "Lãi suất vay bình quân 2025 ~6,6%. Về 7% năm 2027 (kịch bản tốt) thêm ~22 tỷ LNST so với cơ sở 8% — gần 1/3 lợi nhuận cơ sở.",
+   "tac": [
+    "+3,2 nghìn đ/cp",
+    "mỗi −1 điểm % lãi suất vay 2027"
+   ],
+   "theo_doi": "lãi suất cho vay ngắn hạn"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi suất vay neo cao",
+   "ct": "Lãi vay Q2/2026 56,8 tỷ (+78% cùng kỳ), ~9,2%/năm; nợ vay 2.578 tỷ = 2,8 lần vốn chủ, gần hết ngắn hạn. Lãi suất 9% cả 2027 cùng biên gộp 2025 → hòa vốn.",
+   "tac": [
+    "±3,2 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất vay 2027"
+   ],
+   "theo_doi": "chi phí lãi vay quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Biên gộp mỏng, đi theo giá nguyên liệu",
+   "ct": "Biên gộp quý dao động 3,9–7,0% (Q3/2023–Q2/2026). Q1/2026 6,6% khi Brent tăng từ 63 lên 79 USD/thùng; giá dầu đi ngang hoặc giảm thì phần biên này mất.",
+   "tac": [
+    "±4,0 nghìn đ/cp",
+    "mỗi ±0,5 điểm % biên gộp"
+   ],
+   "theo_doi": "biên gộp quý, giá dầu"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Tăng trưởng đốt tiền",
+   "ct": "1/2025–6/2026: LNST 105 tỷ, nợ vay +1.079 tỷ; tiền đi vào phải thu + tồn kho (+643), tài sản dài hạn (+378), tiền và đầu tư ngắn hạn (+249 tỷ).",
+   "tac": [
+    "−822 tỷ",
+    "dòng tiền tự do ước 6 quý: LNST − tăng vốn lưu động − tăng tài sản dài hạn"
+   ],
+   "theo_doi": "nợ vay, phải thu, tồn kho"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Số kiểm toán thấp hơn số tự lập",
+   "ct": "LNST kiểm toán 2025 52,0 tỷ so với 58,1 tỷ cộng 4 quý; 2024 58,7 so với 61,2. BCTC kiểm toán 2023 phải điều chỉnh lại; Thanh tra Chứng khoán phạt 150 triệu đồng (31/12/2025).",
+   "tac": [
+    "−6,1 tỷ",
+    "LNST 2025: kiểm toán so với cộng 4 quý"
+   ],
+   "theo_doi": "BCTC kiểm toán, soát xét"
+  },
+  {
+   "khi": "Từ 12/2025",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Cổ phiếu giá vốn 10.000 đ",
+   "ct": "2 đợt phát hành riêng lẻ giá 10.000 đ (6/2023: 20 triệu cp; 12/2024: 28 triệu cp, khi thị giá ~17.000) = 66% số cp lưu hành; đợt 2024 giao dịch tự do từ 15/12/2025.",
+   "tac": [
+    "66%",
+    "số cp lưu hành đến từ 2 đợt phát hành giá 10.000 đ"
+   ],
+   "theo_doi": "giao dịch cổ đông lớn, nội bộ"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thanh khoản lớn, giá gần như đứng yên",
+   "ct": "GTGD TB20 19,5 tỷ/phiên — 1,3% vốn hóa, gấp ~4 lần AAA — nhưng giá đóng cửa tháng 2026 chỉ 20,0–20,5 dù LNST quý −52% đến +29% cùng kỳ.",
+   "tac": "",
+   "theo_doi": "GTGD, biên độ giá"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Lãi suất vay tăng: chi phí vay bình quân của VTZ từ ~6,6% (2025) lên 9,2% quy năm trong Q2/2026.",
+     "ng": "BCTC VNDirect (tính toán)"
+    },
+    {
+     "h": 0,
+     "t": "Brent bình quân Q4/2025 63, Q2/2026 97, 1/7–4/9/2026 87 USD/thùng — giá nguyên liệu nhựa và doanh thu thương mại đi theo; biên gộp Q1/2026 lên 6,6%.",
+     "ng": "dữ liệu hàng hóa của web · BCTC"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 0,
+     "t": "11 mã nhựa niêm yết: P/B trung vị 0,62, P/E 7,5, ROE 9,2%, nợ vay/vốn chủ 0,58, biên gộp 15,1%.",
+     "ng": "BCTC VNDirect, giá 23/10/2026"
+    },
+    {
+     "h": -1,
+     "t": "Mã nhựa có mảng thương mại lớn giao dịch rẻ: AAA P/B 0,50, P/E 5,1; HII P/B 0,61, P/E 2,9.",
+     "ng": "BCTC VNDirect, giá 23/10/2026"
+    },
+    {
+     "h": 0,
+     "t": "Web xếp VTZ vào 'Hàng hóa cá nhân' (chủ yếu dệt may, P/B trung vị 0,72); hồ sơ so với nhóm nhựa — sát mô hình kinh doanh hơn.",
+     "ng": "bảng cùng ngành của web"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "2024 đạt kế hoạch: doanh thu 3.543/3.500 tỷ, LNST 61,2/60 tỷ (cộng 4 quý BCTC).",
+     "ng": "Vietstock 07/2024 · BCTC"
+    },
+    {
+     "h": -1,
+     "t": "Vốn điều lệ 150 → 761,6 tỷ trong 2021–2024: đấu giá 5 triệu cp (2021), cổ tức cổ phiếu 15% (2022), 12% (2024), phát hành riêng lẻ 20 triệu (6/2023) và 28 triệu cp (12/2024) giá 10.000 đ.",
+     "ng": "Kinh tế Chứng khoán · Vietstock · BSC"
+    },
+    {
+     "h": 0,
+     "t": "Cổ đông lớn Nguyễn Phúc Lợi 24,12% (11/12/2024): mua 8,8 triệu cp (6/2023) và 8 triệu cp (12/2024) trong 2 đợt riêng lẻ.",
+     "ng": "BSC (HNX)"
+    },
+    {
+     "h": -1,
+     "t": "31/8–26/9/2023 hai lãnh đạo chủ chốt (Phan Văn Quân 4,2 triệu, Nguyễn Văn Tuấn 2,7 triệu cp) bán quanh 8.000 đ/cp.",
+     "ng": "24hmoney · BSC"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Mô hình kinh doanh",
+   "phu": "Sản xuất đồ nhựa gia dụng, công nghiệp (nhà máy Long An 28.560 tấn/năm) và thương mại nguyên liệu nhựa",
+   "so": [
+    [
+     "Doanh thu 4 quý",
+     "5.528 tỷ",
+     "+35%"
+    ],
+    [
+     "Biên gộp 4 quý",
+     "4,9%",
+     "nhóm nhựa: 15,1%"
+    ],
+    [
+     "Phải thu + tồn kho 30/6",
+     "2.031 tỷ",
+     "~1/3 doanh thu năm"
+    ],
+    [
+     "Nợ vay 30/6",
+     "2.578 tỷ",
+     "2,8 lần vốn chủ"
+    ],
+    [
+     "Tiền + đầu tư ngắn hạn 30/6",
+     "1.015 tỷ",
+     "giữ song song nợ vay"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Sản phẩm: tủ, bàn ghế, tấm nhựa sóng từ nhựa nguyên sinh; thị trường chính miền Nam, miền Trung.",
+     "ng": "Vietstock (hồ sơ doanh nghiệp)"
+    },
+    {
+     "t": "Ngành nghề phụ: bán buôn nguyên liệu nhựa, máy móc thiết bị ngành nhựa.",
+     "ng": "Eulerpool (hồ sơ doanh nghiệp)"
+    },
+    {
+     "t": "Vốn chủ 30/6/2026 thấp hơn 8,2 tỷ so với vốn chủ cuối 2024 cộng LNST 6 quý — cùng chiều với phần LNST 2025 kiểm toán giảm (6,1 tỷ).",
+     "ng": "BCTC VNDirect · Simply Wall St"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn và cổ đông",
+   "phu": "Vốn điều lệ 150 → 761,6 tỷ (2021–2024); 66% số cp từ 2 đợt riêng lẻ giá 10.000 đ",
+   "so": [
+    [
+     "Phát hành riêng lẻ 6/2023",
+     "20 triệu cp",
+     "10.000 đ/cp"
+    ],
+    [
+     "Phát hành riêng lẻ 12/2024",
+     "28 triệu cp",
+     "10.000 đ; thị giá ~17.000"
+    ],
+    [
+     "Nguyễn Phúc Lợi",
+     "24,12%",
+     "sau 11/12/2024"
+    ],
+    [
+     "Phạt công bố thông tin",
+     "150 triệu đ",
+     "QĐ 561/QĐ-XPHC, 31/12/2025"
+    ]
+   ],
+   "y": [
+    {
+     "t": "7/2024 UBCKNN dừng xem xét hồ sơ phát hành riêng lẻ 28 triệu cp; đợt này hoàn tất 12/2024, niêm yết bổ sung, giao dịch từ 15/12/2025.",
+     "ng": "Vietstock 07/2024 · BSC"
+    },
+    {
+     "t": "ĐHĐCĐ thường niên 2026 chốt danh sách 24/04/2026, bầu HĐQT nhiệm kỳ 2026–2031; năm 2026 có thêm một ĐHĐCĐ bất thường.",
+     "ng": "Stockbiz · CafeF"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu, nợ vay và EPS (2021 = 100)",
+   "kieu": "duong",
+   "dv": "chỉ số",
+   "nhan": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "EPS điều chỉnh",
+     "v": [
+      100,
+      106,
+      67,
+      125,
+      76,
+      89
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Doanh thu",
+     "v": [
+      100,
+      168,
+      249,
+      332,
+      461,
+      518
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "Nợ vay cuối kỳ",
+     "v": [
+      100,
+      125,
+      178,
+      318,
+      464,
+      546
+     ],
+     "mau": "c3",
+     "net": false
+    }
+   ],
+   "so_le": 0,
+   "y": "Doanh thu và nợ vay cùng gấp ~5 lần; EPS (bình quân số cp, quy đổi cổ tức cổ phiếu) 4 quý đến Q2/2026 890 đ, dưới 2021 (999 đ). Q2/26 = 4 quý gần nhất, nợ vay 30/6.",
+   "ng": "BCTC VNDirect · số cp: BSC (HNX)"
+  },
+  {
+   "ten": "Lợi nhuận hoạt động và lãi vay theo quý",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN hoạt động",
+     "v": [
+      44.2,
+      44.3,
+      37.6,
+      51.8,
+      40.3,
+      42.5,
+      66.9,
+      73.9
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Lãi vay",
+     "v": [
+      17.8,
+      24.4,
+      23.4,
+      31.9,
+      34.6,
+      35.5,
+      37.1,
+      56.8
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi vay Q2/2026 56,8 tỷ, bằng 77% lợi nhuận hoạt động; Q4/2025 là 84%.",
+   "ng": "BCTC VNDirect"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp theo quý",
+   "kieu": "duong",
+   "dv": "%",
+   "nhan": [
+    "Q3/23",
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      7.0,
+      3.9,
+      4.8,
+      5.5,
+      6.1,
+      6.2,
+      4.4,
+      5.3,
+      4.3,
+      4.0,
+      6.6,
+      5.0
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Dải 3,9–7,0%. Q1/2026 6,6% khi Brent tăng từ 63 (Q4/2025) lên 79 USD/thùng; Q2 về 5,0% dù Brent bình quân 97 (đỉnh tháng 5, giảm tháng 6).",
+   "ng": "BCTC VNDirect · giá dầu: dữ liệu hàng hóa của web"
+  },
+  {
+   "ten": "Nguồn và sử dụng vốn 1/2025–6/2026",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Nguồn",
+    "Sử dụng"
+   ],
+   "ss": [
+    {
+     "ten": "LNST 6 quý",
+     "v": [
+      105,
+      0
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Vay thêm, nợ khác",
+     "v": [
+      1164,
+      0
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Phải thu, tồn kho",
+     "v": [
+      0,
+      643
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "TS dài hạn, tiền & ĐT",
+     "v": [
+      0,
+      627
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "6 quý: LNST 105 tỷ, chưa bằng 1/10 phần vay thêm (1.079 tỷ). Sử dụng: phải thu + tồn kho + TS ngắn hạn khác +643, tài sản dài hạn +378, tiền và đầu tư ngắn hạn +249 tỷ.",
+   "ng": "BCTC VNDirect (31/12/2024 → 30/6/2026)"
+  }
+ ],
+ "ctck": [],
+ "ctck_chu": "Chưa có CTCK theo dõi trong 8 tháng; mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành.",
+ "nguon": [
+  {
+   "ten": "BSC (HNX) — VTZ: thay đổi số cổ phiếu có quyền biểu quyết (vốn điều lệ 761,6 tỷ)",
+   "ngay": "12/2024",
+   "link": "https://www.bsc.com.vn/en/tin-tuc/tin-tuc-ma-co-phieu/1223317-vtz-change-in-number-of-outstanding-voting-shares"
+  },
+  {
+   "ten": "BSC (HNX) — VTZ: 15/12/2025 ngày giao dịch đầu tiên cổ phiếu niêm yết bổ sung",
+   "ngay": "12/2025",
+   "link": "https://www.bsc.com.vn/en/tin-tuc/tin-tuc-ma-co-phieu/1298784-vtz-15-12-2025-the-first-trading-day-of-additional-listed-shares"
+  },
+  {
+   "ten": "BSC (HNX) — VTZ: thay đổi sở hữu cổ đông lớn Nguyễn Phúc Lợi (24,12%)",
+   "ngay": "12/2024",
+   "link": "https://www.bsc.com.vn/en/tin-tuc/tin-tuc-ma-co-phieu/1228561-vtz-change-in-shareholding-of-principal-shareholder-mr-nguyen-phuc-loi"
+  },
+  {
+   "ten": "BSC (HNX) — VTZ: cổ đông lớn mới Nguyễn Phúc Lợi (21,53%)",
+   "ngay": "06/2023",
+   "link": "https://www.bsc.com.vn/en/tin-tuc/tin-tuc-ma-co-phieu/965695-vtz-new-principal-shareholder-mr-nguyen-phuc-loi"
+  },
+  {
+   "ten": "BSC (HNX) — VTZ: giao dịch của ông Phan Văn Quân, Nguyễn Văn Tuấn",
+   "ngay": "2023",
+   "link": "https://www.bsc.com.vn/en/tin-tuc/tin-tuc-ma-co-phieu/970985-vtz-notice-of-transactions-of-directors-pdmr-mr-phan-van-quan-mr-nguyen-van-tuan"
+  },
+  {
+   "ten": "24hmoney — Hai lãnh đạo chủ chốt của VTZ đồng loạt bán cổ phiếu",
+   "ngay": "09/2023",
+   "link": "https://24hmoney.vn/news/hai-lanh-dao-chu-chot-cua-vtz-dong-loat-ban-co-phieu-c1a2054150.html"
+  },
+  {
+   "ten": "Vietstock — Nhựa Việt Thành sắp trả cổ tức 12%, tạm dừng chào bán 28 triệu cp (kế hoạch 2024)",
+   "ngay": "07/2024",
+   "link": "https://vietstock.vn/2024/07/nhua-viet-thanh-sap-tra-co-tuc-ty-le-12-tam-dung-phuong-an-chao-ban-28-trieu-cp-738-1204431.htm"
+  },
+  {
+   "ten": "Báo Pháp luật — Công bố sai lệch BCTC, Nhựa Việt Thành (VTZ) bị phạt",
+   "ngay": "01/2026",
+   "link": "https://doanhnhan.baophapluat.vn/cong-bo-sai-lech-bao-cao-tai-chinh-san-xuat-va-thuong-mai-nhua-viet-thanh-vtz-bi-phat-90408.html"
+  },
+  {
+   "ten": "Stockbiz — VTZ: ngày đăng ký cuối cùng ĐHĐCĐ thường niên 2026",
+   "ngay": "04/2026",
+   "link": "https://stockbiz.vn/tin-tuc/vtz-ngay-dang-ky-cuoi-cung-dai-hoi-dong-co-dong-thuong-nien-nam-2026/39386276"
+  },
+  {
+   "ten": "24hmoney — VTZ: sự kiện (ứng viên HĐQT, BKS nhiệm kỳ 2026–2031; ĐHĐCĐ 2026)",
+   "ngay": "2026",
+   "link": "https://24hmoney.vn/stock/VTZ/events"
+  },
+  {
+   "ten": "CafeF — VTZ: Nghị quyết HĐQT tổ chức ĐHĐCĐ thường niên 2026",
+   "ngay": "07/04/2026",
+   "link": "https://cafef.vn/du-lieu/vtz-2661478/vtz-nghi-quyet-hdqt-to-chuc-dhcd-thuong-nien-nam-2026.chn"
+  },
+  {
+   "ten": "Kinh tế Chứng khoán — Nhựa Việt Thành chào bán 5 triệu cp qua đấu giá trên HNX",
+   "ngay": "2021",
+   "link": "https://kinhtechungkhoan.vn/nhua-viet-thanh-chao-ban-5-trieu-co-phieu-qua-dau-gia-tren-hnx-1338117.html"
+  },
+  {
+   "ten": "Vietstock — hồ sơ doanh nghiệp VTZ (nhà máy Long An 28.560 tấn/năm, sản phẩm)",
+   "ngay": "2026",
+   "link": "https://finance.vietstock.vn/VTZ-ctcp-san-xuat-va-thuong-mai-nhua-viet-thanh.htm"
+  },
+  {
+   "ten": "Simply Wall St — VTZ: kết quả kinh doanh (LNST 2025 52,0 tỷ, doanh thu 4.916,5 tỷ)",
+   "ngay": "2026",
+   "link": "https://simplywall.st/stocks/vn/consumer-durables/hnx-vtz/viet-thanh-plastic-trading-and-manufacturing-shares/past"
+  },
+  {
+   "ten": "MarketScreener — VTZ: doanh thu, LNST 2024–2025",
+   "ngay": "2026",
+   "link": "https://www.marketscreener.com/quote/stock/VIET-THANH-PLASTIC-TRADIN-128061011/"
+  },
+  {
+   "ten": "Eulerpool — hồ sơ VTZ (ngành nghề kinh doanh)",
+   "ngay": "2026",
+   "link": "https://eulerpool.com/stock/Viet-Thanh-Plastic-Trading-and-Manufacturing-JSC-Stock-VN000000VTZ7"
+  }
+ ]
+}
