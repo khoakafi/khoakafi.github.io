@@ -47,9 +47,10 @@
     var hn = new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10);
     var ds = (p.chia || []).filter(function(c){ return c && /^\d{4}-\d{2}-\d{2}$/.test(c[0]) && c[1] > 1 && c[0] <= hn; });
     if (!ds.length) return p;
-    var k = function(sau){ return ds.reduce(function(a, c){ return c[0] > sau ? a * c[1] : a; }, 1); }, K = k(p.cap_nhat || '');
+    // bao cao CTCK ra dung ngay GDKHQ van dung gia truoc dot chia (gia phien truoc) -> tinh ca ngay bang (>=)
+    var k = function(sau, bang){ return ds.reduce(function(a, c){ return (c[0] > sau || (bang && c[0] === sau)) ? a * c[1] : a; }, 1); }, K = k(p.cap_nhat || '');
     // tp_sau_chia: bao cao da tinh gia muc tieu tren so cp sau dot chia/thuong (vd VNDS BAF) -> khong chia lan nua
-    (p.ctck || []).forEach(function(c){ var x = k(c.ngay || ''); if (x > 1 && c.tp > 0 && !c.tp_sau_chia) { c.tp = Math.round(c.tp / x); c.tp_qd = x; } });
+    (p.ctck || []).forEach(function(c){ var x = k(c.ngay || '', 1); if (x > 1 && c.tp > 0 && !c.tp_sau_chia) { c.tp = Math.round(c.tp / x); c.tp_qd = x; } });
     if (K > 1) {
       var d0 = function(v){ return v == null ? v : Math.round(v / K); }, d1 = function(v){ return v == null ? v : Math.round(v / K * 10) / 10; };
       p.cp_trieu = Math.round(p.cp_trieu * K * 10) / 10;
@@ -310,7 +311,10 @@
     var Q = ((cx && cx.raw && cx.raw.quy) || []).filter(function(x){ return x && x.fd && x.v && x.v['14000'] > 0; })
       .sort(function(a, b){ return a.fd < b.fd ? -1 : 1; }), L = Q[Q.length - 1];
     if (!L || !(o.von > 0)) return null;
-    var vc = (L.v['14000'] - (L.v['14240'] || 0)) / 1e9 + ((p && +p.vc_them) || 0);
+    // co tuc tien da qua GDKHQ sau quy BCTC gan nhat thi tru khoi von chu (DGC 8.000 d/cp 9/2026)
+    var cp = (p && p.dinh_gia && +p.dinh_gia.cp) || 0, nay = new Date(Date.now() + 7 * 36e5).toISOString().slice(0, 10), ct = 0;
+    ((p && p.co_tuc) || []).forEach(function(c){ if (c[0] > L.fd && c[0] <= nay) ct += (+c[1] || 0) * cp / 1000; });
+    var vc = (L.v['14000'] - (L.v['14240'] || 0)) / 1e9 + ((p && +p.vc_them) || 0) - ct;
     return vc > 0 ? o.von / vc : null;
   }
   function thongTin(p, o, cx){
