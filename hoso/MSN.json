@@ -3,26 +3,26 @@
  "ma": "MSN",
  "ten": "Công ty Cổ phần Tập đoàn Masan",
  "nganh": "Hàng tiêu dùng, bán lẻ, khai khoáng",
- "ky": "BCTC Q2/2026 · KQKD sơ bộ 8T/2026",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 hoặc khi TCB chia thưởng 50%",
+ "ky": "BCTC Q3/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q4/2026; sớm hơn khi có kết quả mua thêm MCH, bán 5,01% MSR",
  "cp_trieu": 1535.0,
  "cp_ng": "1.460,4 triệu cp phổ thông niêm yết (gồm 14,46 triệu ESOP 2026) + 74,6 triệu cp ưu đãi chuyển đổi 1:1 của Bain Capital (Vietstock: lưu hành 1.534.951.081); bảng giá VNDirect chỉ tính ~1.440 triệu",
  "co_tuc": [],
  "tieu_de": {
-  "t": "Vốn hóa MSN chỉ ngang phần TCB và MSR: Masan Consumer, WinCommerce đang không được trả tiền",
+  "t": "Q3 lãi gấp ba, vốn hóa MSN vẫn chỉ ngang phần TCB và MSR — Masan Consumer chưa được trả tiền",
   "dk": "up_tren:15",
-  "khac": "Vonfram trả bớt nợ, tiêu dùng tăng hai chữ số: chiết khấu holding đã thu hẹp"
+  "khac": "Q3 lãi gấp ba, tiêu dùng tăng hai chữ số: chiết khấu holding đã thu hẹp"
  },
- "dong_mo": "Theo giá thị trường, phần MSN nắm ở TCB, MSR và Masan Consumer đáng {con_pct} vốn hóa — chiết khấu sâu hơn nhiều so với nợ ròng công ty mẹ (~40.100 tỷ). Vonfram đưa LN cổ đông 2026E lên ~10.430 tỷ, gấp 2,5 lần. Tổng các phần trừ nợ công ty mẹ và chi phí tập đoàn: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 LN cổ đông 3.671 tỷ, gấp 3,0 lần, vượt mô hình 18% nhờ sản lượng vonfram. Theo giá thị trường, phần MSN nắm ở TCB, MSR và Masan Consumer đáng {con_pct} vốn hóa — chiết khấu sâu hơn nhiều so với nợ ròng công ty mẹ (~40.100 tỷ). Tổng các phần trừ nợ và chi phí tập đoàn: {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
    "so": "{con_pct}",
    "nhan": "giá trị phần nắm ở TCB, MSR, MCH so với vốn hóa MSN (giá sàn)",
    "tieu": "Thị trường không trả tiền cho Masan Consumer và WinCommerce",
    "dk": "up_tren:15",
-   "t": "Theo giá 16/10, 19,7% TCB (~46.300 tỷ) và 87,5% MSR (~63.400 tỷ) đã xấp xỉ vốn hóa MSN (~109.600 tỷ, tính cả cp ưu đãi chuyển đổi). Như vậy 65,7% Masan Consumer (~120.000 tỷ), WinCommerce, MML, Phúc Long trừ nợ ròng công ty mẹ ~40.100 tỷ được định giá bằng 0 — chiết khấu sâu hơn mức nợ và chi phí tập đoàn biện minh.",
-   "ng": "giá VNDirect 15–16/10 · BCTC 30/6 · VDS 17/04",
+   "t": "Theo giá 23/10, 19,7% TCB (~47.700 tỷ) và 87,5% MSR (~63.400 tỷ) đã xấp xỉ vốn hóa MSN (~113.900 tỷ, tính cả cp ưu đãi chuyển đổi). Như vậy 65,7% Masan Consumer (~122.000 tỷ), WinCommerce, MML, Phúc Long trừ nợ ròng công ty mẹ ~40.100 tỷ được định giá bằng 0 — chiết khấu sâu hơn mức nợ và chi phí tập đoàn biện minh.",
+   "ng": "giá 23/10 (MSR 15/10) · BCTC 30/6 · VDS 17/04",
    "khac": {
     "so": "{con_pct}",
     "nhan": "giá trị phần nắm ở TCB, MSR, MCH so với vốn hóa MSN (giá sàn)",
@@ -31,24 +31,24 @@
    }
   },
   {
-   "so": "×2,5",
-   "nhan": "LN cổ đông 2026E so với 2025",
-   "tieu": "Vonfram nhân đôi lợi nhuận năm nay — phần khó lặp lại",
-   "t": "MSR lãi 2.202 tỷ 6T/2026 (cả 2025: 11 tỷ) khi giá bán vonfram bình quân Q2 lên 3.245 USD/mtu, gấp 5 lần cùng kỳ. 8 tháng LNST trước CĐTS của MSN 8.518 tỷ, đã bằng 85% mức thấp kế hoạch mới. Mô hình: LN cổ đông 2026E 10.434 tỷ; 2027E 11.131 tỷ khi APT về 2.000 USD — MSR giảm còn 3.900 tỷ, tiêu dùng – bán lẻ và TCB bù lại.",
-   "ng": "BCTC Q2 · MAS 30/09 · MSN công bố 8T · mô hình"
+   "so": "2.148 tỷ",
+   "nhan": "LNST Masan High-Tech Q3/2026 (Q2: 1.666)",
+   "tieu": "Q3 xác nhận vonfram lãi nhờ sản lượng, không chỉ nhờ giá",
+   "t": "Giá APT đi ngang quanh 3.000 USD/mtu nhưng doanh thu MSR Q3 14.557 tỷ, gấp 1,8 lần Q2 — sản lượng tăng sau khi giấy phép 28 triệu tấn được điều chỉnh. MSR lãi 2.148 tỷ, cao hơn mô hình cũ 298 tỷ. 9T LNST trước CĐTS 10.325 tỷ, đã vượt mức thấp kế hoạch. LN cổ đông 2026E 11.373 tỷ (×2,8); 2027E 11.874 tỷ khi APT về 2.000 USD.",
+   "ng": "BCTC Q3 (VNDirect) · thông cáo 22/10 (CafeF, Lao Động) · mô hình"
   },
   {
    "so": "61%",
    "nhan": "LN các mảng về MSN bị lãi vay, chi phí công ty mẹ lấy đi (2025)",
-   "tieu": "Nợ công ty mẹ — nơi chiết khấu nằm — chưa giảm",
-   "t": "Tách BCTC hợp nhất khỏi BCTC MCH, MSR, MML: nợ ròng phần công ty mẹ, WinCommerce và mảng chưa niêm yết 40.058 tỷ (30/6), tăng 8.800 tỷ trong 3 quý. Lãi vay, phí phòng ngừa và chi phí tập đoàn lấy 6.453 tỷ năm 2025, 3.327 tỷ 6T/2026. Tiền bán 4,99% MSR cho Elmet (124,75 triệu USD) và tối đa 5,01% cho tổ chức (10/2026) có thể giảm ~6.600 tỷ nợ.",
-   "ng": "BCTC hợp nhất − BCTC MCH, MSR, MML (VNDirect) · Vietnam News · BBW"
+   "tieu": "Nợ công ty mẹ — nơi chiết khấu nằm — chưa giảm, tiền bán MSR quay sang mua MCH",
+   "t": "Nợ ròng phần công ty mẹ, WinCommerce và mảng chưa niêm yết 40.058 tỷ (30/6), tăng 8.800 tỷ trong 3 quý; hợp nhất 30/9 48.400 tỷ, cao hơn đầu năm. Lãi vay và chi phí công ty mẹ lấy 4.758 tỷ 9T/2026. Tiền Elmet (~3.300 tỷ) nhỏ hơn khoản mua thêm tối đa 73 triệu cp MCH (~10.300 tỷ, 9–23/10).",
+   "ng": "BCTC hợp nhất − BCTC MCH, MSR, MML (VNDirect) · BBW 22/10 · VnExpress"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Tổng các phần trừ nợ công ty mẹ: {up_so} so với giá hiện tại",
-   "t": "65,7% Masan Consumer × P/E 20 (như hồ sơ MCH: trung vị 2024–2025; từ 2017 16,1; thị trường đang trả ~22,5 lần LN 2027E), 19,7% TCB × 7,5, 87,5% MSR × 15 (Elmet trả ~16,9 lần LN 2027E cơ sở), bán lẻ, thịt, Phúc Long × 18; trừ 10% chi phí tập đoàn và 36.764 tỷ nợ ròng công ty mẹ (30/6, sau tiền Elmet). Xấu 61,7 (APT 1.300 USD, P/E MCH 16), tốt 166,4.",
+   "t": "65,7% Masan Consumer × P/E 20 (như hồ sơ MCH: trung vị 2024–2025; từ 2017 16,1; thị trường đang trả ~22,6 lần LN 2027E), 19,7% TCB × 7,5, 87,5% MSR × 15 (Elmet trả ~14,1 lần LN 2027E cơ sở), bán lẻ, thịt, Phúc Long × 18; trừ 10% chi phí tập đoàn và 36.764 tỷ nợ ròng công ty mẹ (30/6, sau tiền Elmet). Xấu 67,1, tốt 171,9; bản 20/10 cơ sở 116,9 — nâng vì LN MSR theo sản lượng Q3.",
    "ng": "mô hình · P/E lịch sử MCH, TCB: BCTC VNDirect"
   }
  ],
@@ -60,14 +60,14 @@
   ],
   "ln": [
    4108,
-   10434,
-   11131
+   11373,
+   11874
   ],
   "ln_truoc": 1999,
   "eps": [
    2676,
-   6797,
-   7251
+   7409,
+   7736
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -75,12 +75,12 @@
     "ten": "LNST trước CĐTS (tỷ)",
     "v": [
      6764,
-     13747,
-     14867
+     14762,
+     15729
     ]
    }
   ],
-  "ng": "LN 2024–2025: BCTC; EPS theo 1.535 triệu cp, gồm cp ưu đãi chuyển đổi của Bain; MSN không chia cổ tức tiền mặt"
+  "ng": "LN 2024–2025: BCTC; 2026E gồm 9T thực tế. EPS theo 1.535 triệu cp, gồm cp ưu đãi chuyển đổi của Bain; MSN không chia cổ tức tiền mặt"
  },
  "ln_mang": {
   "tieu": "LN các mảng về cổ đông MSN",
@@ -97,8 +97,8 @@
     "mau": "c1",
     "v": [
      4380,
-     4833,
-     5353
+     4879,
+     5395
     ]
    },
    {
@@ -106,8 +106,8 @@
     "mau": "c2",
     "v": [
      5080,
-     5679,
-     6303
+     5691,
+     6305
     ]
    },
    {
@@ -115,8 +115,8 @@
     "mau": "c3",
     "v": [
      11,
-     4961,
-     3411
+     5630,
+     4093
     ]
    },
    {
@@ -124,13 +124,13 @@
     "mau": "c4",
     "v": [
      1090,
-     1438,
-     1864
+     1531,
+     1881
     ]
    }
   ],
   "nhan": "Masan High-Tech",
-  "ng": "Trừ lãi vay & chi phí công ty mẹ (−6.453; −6.477; −5.800 tỷ) ra LN cổ đông MSN. 2026E–2027E: mô hình."
+  "ng": "Trừ lãi vay & chi phí công ty mẹ (−6.453; −6.358; −5.800 tỷ) ra LN cổ đông MSN. 2026E–2027E: mô hình."
  },
  "sotp": {
   "con": [
@@ -139,18 +139,24 @@
     "ten": "Techcombank",
     "cp_trieu": 7086.2,
     "so_huu": 0.197,
-    "ln26": 28296,
-    "ln27": 31437,
-    "gtgd": 603,
-    "mau": "c2"
+    "ln26": 29143,
+    "ln27": 31446,
+    "gtgd": 608,
+    "mau": "c2",
+    "chia": [
+     [
+      "2026-10-29",
+      1.5
+     ]
+    ]
    },
    {
     "ma": "MSR",
     "ten": "Masan High-Tech Materials",
     "cp_trieu": 1099.8,
     "so_huu": 0.8746,
-    "ln26": 5402,
-    "ln27": 3900,
+    "ln26": 6150,
+    "ln27": 4680,
     "gtgd": 126,
     "mau": "c3"
    },
@@ -159,19 +165,19 @@
     "ten": "Masan Consumer",
     "cp_trieu": 1307.4,
     "so_huu": 0.657,
-    "ln26": 7356,
-    "ln27": 8148,
-    "gtgd": 78,
+    "ln26": 7426,
+    "ln27": 8212,
+    "gtgd": 89,
     "mau": "c1"
    }
   ],
   "conlai": {
    "ten": "WinCommerce, MML, Phúc Long trừ nợ và chi phí công ty mẹ",
    "mau": "c4",
-   "ln27": -3826
+   "ln27": -3809
   },
-  "kv_ng": "Sở hữu: TCB 19,7%, MCH 65,7% (VDS 17/04), MSR 87,46% sau khi bán 4,99% cho Elmet; số cp TCB chưa gồm thưởng 50% (NHNN duyệt 13/10), vốn hóa MSN gồm 74,6 triệu cp ưu đãi chuyển đổi",
-  "ng": "Số cp: TCB vốn điều lệ 30/6 (chưa gồm thưởng 50% NHNN duyệt 13/10), MSR vốn điều lệ, MCH vốn hóa ÷ giá 16/10. Sở hữu: TCB 19,7%, MCH 65,7% (VDS 17/04), MSR 87,46% sau khi bán 4,99% cho Elmet"
+  "kv_ng": "Sở hữu: TCB 19,7%, MCH 65,7% (VDS 17/04; chưa gồm đợt mua thêm 9–23/10), MSR 87,46% sau khi bán 4,99% cho Elmet; vốn hóa MSN gồm 74,6 triệu cp ưu đãi chuyển đổi",
+  "ng": "Số cp: TCB 7.086,2 triệu (từ GDKHQ 29/10 trang tự nhân 1,5 — thưởng 50%), MSR vốn điều lệ, MCH như hồ sơ MCH. Sở hữu: TCB 19,7%, MCH 65,7% (VDS 17/04, chưa gồm đợt mua thêm 9–23/10), MSR 87,46% sau khi bán 4,99% cho Elmet"
  },
  "mo_hinh": {
   "tieu": "Dự phóng theo mảng",
@@ -188,8 +194,8 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      30.6,
-     34.4,
-     38.6
+     34.8,
+     38.9
     ],
     "d": 1,
     "tang": 1
@@ -198,8 +204,8 @@
     "ten": "LN cổ đông MCH (tỷ)",
     "v": [
      6667,
-     7356,
-     8148
+     7426,
+     8212
     ],
     "tang": 1
    },
@@ -218,8 +224,8 @@
     "ten": "LNST (tỷ)",
     "v": [
      11,
-     5402,
-     3900
+     6150,
+     4680
     ]
    },
    {
@@ -237,8 +243,8 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      39.0,
-     48.7,
-     57.0
+     48.5,
+     56.7
     ],
     "d": 1,
     "tang": 1
@@ -247,7 +253,7 @@
     "ten": "Biên lãi ròng (%)",
     "v": [
      1.3,
-     1.8,
+     2.0,
      2.2
     ],
     "d": 1
@@ -259,8 +265,8 @@
     "ten": "TCB 19,7% & liên kết khác (tỷ)",
     "v": [
      5080,
-     5679,
-     6303
+     5691,
+     6305
     ],
     "tang": 1
    },
@@ -268,8 +274,8 @@
     "ten": "LN các mảng về MSN (tỷ)",
     "v": [
      10561,
-     16911,
-     16931
+     17731,
+     17674
     ],
     "tang": 1
    },
@@ -277,7 +283,7 @@
     "ten": "Lãi vay & chi phí công ty mẹ (tỷ)",
     "v": [
      -6453,
-     -6477,
+     -6358,
      -5800
     ]
    },
@@ -285,8 +291,8 @@
     "ten": "LN cổ đông MSN (tỷ)",
     "v": [
      4108,
-     10434,
-     11131
+     11373,
+     11874
     ],
     "dam": 1,
     "tang": 1
@@ -295,47 +301,47 @@
     "ten": "EPS (đ)",
     "v": [
      2676,
-     6797,
-     7251
+     7409,
+     7736
     ],
     "eps": 1
    }
   ],
-  "ghi": "LN mảng: BCTC MCH, MSR, MML (VNDirect), WinCommerce và Phúc Long theo công bố (Phúc Long Q2/2026 ước theo EBITDA); tỷ lệ lợi ích VDS 17/04. Lãi vay & chi phí công ty mẹ = LN cổ đông − tổng các mảng. 2026E = 6 tháng thực tế + 6 tháng ước tính."
+  "ghi": "LN mảng: BCTC MCH, MSR, MML (VNDirect), Q3 của MSR, WinCommerce, MML theo thông cáo 22/10; Phúc Long Q2, Q3 và LN cổ đông MML Q3 là ước tính; tỷ lệ lợi ích VDS 17/04. Lãi vay & chi phí công ty mẹ = LN cổ đông − tổng các mảng. 2026E = 9 tháng thực tế + Q4 ước tính."
  },
  "cau_ln": {
   "ten": "LN cổ đông MSN 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   10434
+   11373
   ],
   "cuoi": [
    "2027E",
-   11131
+   11874
   ],
   "buoc": [
    [
     "Masan Consumer",
-    520
+    516
    ],
    [
     "Techcombank & liên kết",
-    624
+    614
    ],
    [
     "Masan High-Tech",
-    -1550
+    -1536
    ],
    [
     "Bán lẻ, thịt, Phúc Long",
-    426
+    349
    ],
    [
     "Lãi vay & chi phí công ty mẹ",
-    677
+    558
    ]
   ],
-  "y": "MSR mất 1.550 tỷ khi giá APT về 2.000 USD; Masan Consumer, TCB, bán lẻ và chi phí công ty mẹ thấp hơn (sau khi bán bớt MSR) bù đủ — LN cổ đông 2027E vẫn +6,7%.",
+  "y": "MSR mất 1.536 tỷ khi giá APT về 2.000 USD; Masan Consumer, TCB, bán lẻ và chi phí công ty mẹ thấp hơn (sau khi bán bớt MSR) bù đủ — LN cổ đông 2027E vẫn +4,4%.",
   "ng": "mô hình"
  },
  "gia_dinh": [
@@ -346,25 +352,25 @@
     "2.800 · 2.000",
     "3.100 · 2.800"
    ],
-   "ly_do": "Q1/2026 ~1.865, Q2 3.245 (gấp 5 cùng kỳ); châu Âu 2.900–3.250 tháng 7, ~3.000 tháng 9; Trung Quốc chỉ cấp phép 15 doanh nghiệp xuất khẩu 2026–2027"
+   "ly_do": "Q2 3.245, Q3 ~3.000 (đi ngang); châu Âu 23/10: giao ngay 2.500–2.900, hợp đồng dài hạn trên 3.000; Trung Quốc chỉ cấp phép 15 DN xuất khẩu 2026–2027"
   },
   {
-   "ten": "LN Masan High-Tech: 2H/2026 · 2027 (tỷ)",
+   "ten": "LN Masan High-Tech: Q4/2026 · 2027 (tỷ)",
    "v": [
-    "2.400 · 2.150",
-    "3.200 · 3.900",
-    "3.800 · 5.900"
+    "1.200 · 2.580",
+    "1.800 · 4.680",
+    "2.150 · 7.080"
    ],
-   "ly_do": "Q2/2026 1.666; doanh thu 7–8/2026 9.882 tỷ. 2027 ≈ 2,5 tỷ × (APT − 440 USD): khớp 2025 (lãi ~0) và nhịp nửa cuối 2026"
+   "ly_do": "Q3 2.148 (Q2 1.666) nhờ sản lượng. 2027 ≈ 3,0 tỷ × (APT − 440 USD); bản 20/10 dùng 2,5 — Q3 hàm ý 3,4 nhưng biên gộp giảm vì tinh quặng mua ngoài"
   },
   {
-   "ten": "LN Masan Consumer: 2H/2026 · 2027",
+   "ten": "LN Masan Consumer 2026E · 2027E (hồ sơ MCH)",
    "v": [
-    "+3% · +2%",
-    "+10% · +11%",
-    "+14% · +15%"
+    "7.155 · 6.822",
+    "7.426 · 8.212",
+    "7.625 · 9.035"
    ],
-   "ly_do": "6T/2026 +11,6%, doanh thu +13,6%; kế hoạch 2026 +10–15%; mục tiêu doanh thu 2030 gấp 2,3 lần 2025 (SHS 13/05)"
+   "ly_do": "9T 5.178 tỷ (+12,9%), Q3 1.929 tỷ, doanh thu Q3 +16,3% (cao nhất 3 năm); tăng giá một số sản phẩm từ Q4"
   },
   {
    "ten": "WinCommerce 2027: doanh thu · biên lãi ròng",
@@ -373,16 +379,16 @@
     "+17% · 2,2%",
     "+22% · 2,8%"
    ],
-   "ly_do": "6T/2026 doanh thu +28%, biên 1,5% (Q4/2025 2,4%); kế hoạch 2026 lãi 1.000 tỷ, mở 1.000–1.500 cửa hàng"
+   "ly_do": "9T doanh thu +26%, biên 9T 1,9%, Q3 2,5%; 5.486 cửa hàng (9T mở ròng 894); KH 2026 lãi 1.000 tỷ"
   },
   {
    "ten": "LN Techcombank 2027 (hồ sơ TCB của trang)",
    "v": [
-    "22.647",
-    "31.437",
-    "38.482"
+    "23.537",
+    "31.446",
+    "37.485"
    ],
-   "ly_do": "Hồ sơ TCB 17/10: cho vay +11–18%, NIM 3,3–3,85%, chi phí tín dụng 0,45–1,05%; lãi liên kết về MSN ≈ 19,7% LN TCB"
+   "ly_do": "Hồ sơ TCB 24/10: Q3 7.943 tỷ; Q3 TCB đóng góp 1.410 tỷ cho MSN (+13,5%). Mô hình giữ 19,7% LN TCB"
   },
   {
    "ten": "Lãi vay & chi phí công ty mẹ 2027 (tỷ)",
@@ -391,7 +397,7 @@
     "−5.800",
     "−5.000"
    ],
-   "ly_do": "2025: −6.453; 6T/2026: −3.327; tiền bán 10% MSR giảm ~6.600 tỷ nợ. Chỉ dùng cho LN cổ đông — định giá trừ nợ ròng và chi phí tập đoàn riêng"
+   "ly_do": "2025: −6.453; 9T/2026: −4.758 (Q3 −1.432). Chưa tính đợt mua thêm MCH. Chỉ dùng cho LN cổ đông — định giá trừ nợ ròng và chi phí tập đoàn riêng"
   },
   {
    "ten": "P/E Masan Consumer",
@@ -400,7 +406,7 @@
     "20",
     "25"
    ],
-   "ly_do": "MCH từ 2017: thấp 25% 12,6, trung vị 16,1, hiện 25,8 (lên HOSE 12/2025, vào VN30 8/2026)"
+   "ly_do": "MCH từ 2017: thấp 25% 12,6, trung vị 16,1, hiện 26,2 (lên HOSE 12/2025, vào VN30 8/2026)"
   },
   {
    "ten": "P/E TCB · MSR · bán lẻ, thịt, Phúc Long",
@@ -409,7 +415,7 @@
     "7,5 · 15 · 18",
     "8,6 · 11 · 22"
    ],
-   "ly_do": "TCB từ 2018: thấp 10% 5,5, trung vị 8,6; MSR: Elmet trả 2,5 tỷ USD (~16,9 lần LN 2027E cơ sở), chu kỳ nên LN đáy được trả P/E cao hơn"
+   "ly_do": "TCB từ 2018: thấp 10% 5,5, trung vị 8,6; MSR: Elmet trả 2,5 tỷ USD (~14,1 lần LN 2027E cơ sở), chu kỳ nên LN đáy được trả P/E cao hơn"
   },
   {
    "ten": "Chi phí tập đoàn ngoài lãi vay (% tổng các phần)",
@@ -427,30 +433,30 @@
     "36.764",
     "36.764"
    ],
-   "ly_do": "40.058 tỷ 30/6/2026 = BCTC hợp nhất − BCTC MCH, MSR, MML; trừ 3.293 tỷ bán 4,99% MSR cho Elmet (10/2026). Chưa trừ đợt 5,01%"
+   "ly_do": "40.058 tỷ 30/6/2026 = hợp nhất − MCH, MSR, MML (BCTC Q3 của MSR, MML chưa có); trừ 3.293 tỷ tiền Elmet. Chưa tính đợt 5,01% MSR và khoản mua thêm MCH"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 8495,
-   "ln27": 5585,
-   "gia": 61.7,
-   "mo_ta": "APT 2027 1.300 USD, MCH −3%, WinCommerce biên 1,6%, LN TCB theo kịch bản xấu; P/E MCH 16, TCB 6, MSR 16; trừ nợ ròng công ty mẹ"
+   "ln26": 10094,
+   "ln27": 6286,
+   "gia": 67.1,
+   "mo_ta": "APT 2027 1.300 USD, MCH −5%, WinCommerce biên 1,6%, LN TCB kịch bản xấu; P/E MCH 16, TCB 6, MSR 16; trừ nợ ròng công ty mẹ"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 10434,
-   "ln27": 11131,
-   "gia": 116.9,
+   "ln26": 11373,
+   "ln27": 11874,
+   "gia": 123.6,
    "mo_ta": "APT 2.000 USD, MCH +11%, WinCommerce +17% biên 2,2%; P/E MCH 20, TCB 7,5, MSR 15, bán lẻ & khác 18; trừ nợ ròng công ty mẹ"
   },
   {
    "ten": "Tốt",
-   "ln26": 11979,
-   "ln27": 16150,
-   "gia": 166.4,
-   "mo_ta": "APT 2.800 USD, MCH +17%, WinCommerce biên 2,8%; P/E MCH 25, TCB 8,6, MSR 11, bán lẻ & khác 22; trừ nợ ròng công ty mẹ"
+   "ln26": 12290,
+   "ln27": 16966,
+   "gia": 171.9,
+   "mo_ta": "APT 2.800 USD, MCH +18%, WinCommerce biên 2,8%; P/E MCH 25, TCB 8,6, MSR 11, bán lẻ & khác 22; trừ nợ ròng công ty mẹ"
   }
  ],
  "dinh_gia": {
@@ -464,9 +470,9 @@
     "mau": "c1",
     "sh": 0.657,
     "x": [
-     6694,
-     8148,
-     9006
+     6822,
+     8212,
+     9035
     ],
     "boi": [
      16,
@@ -476,9 +482,9 @@
     "x_ten": "LN 2027E của MCH",
     "boi_ten": "P/E",
     "gt": [
-     70367,
-     107065,
-     147924
+     71713,
+     107906,
+     148400
     ]
    },
    {
@@ -486,9 +492,9 @@
     "mau": "c2",
     "sh": 0.197,
     "x": [
-     22647,
-     31437,
-     38482
+     23537,
+     31446,
+     37485
     ],
     "boi": [
      6.0,
@@ -498,9 +504,9 @@
     "x_ten": "LN 2027E của TCB",
     "boi_ten": "P/E",
     "gt": [
-     26769,
-     46448,
-     65196
+     27821,
+     46461,
+     63507
     ]
    },
    {
@@ -508,9 +514,9 @@
     "mau": "c3",
     "sh": 0.8746,
     "x": [
-     2150,
-     3900,
-     5900
+     2580,
+     4680,
+     7080
     ],
     "boi": [
      16,
@@ -520,18 +526,18 @@
     "x_ten": "LN 2027E của MSR",
     "boi_ten": "P/E",
     "gt": [
-     30086,
-     51164,
-     56762
+     36103,
+     61397,
+     68114
     ]
    },
    {
     "ten": "Bán lẻ, thịt, Phúc Long & khác",
     "mau": "c4",
     "x": [
-     1445,
-     1974,
-     2492
+     1510,
+     1991,
+     2454
     ],
     "boi": [
      13,
@@ -542,21 +548,21 @@
     "sh": 1,
     "boi_ten": "P/E",
     "gt": [
-     18785,
-     35532,
-     54824
+     19630,
+     35838,
+     53988
     ]
    }
   ],
   "von": [
-   94642,
-   179424,
-   255471
+   102976,
+   189678,
+   263844
   ],
   "gia": [
-   61.7,
-   116.9,
-   166.4
+   67.1,
+   123.6,
+   171.9
   ],
   "no_rong": 36764,
   "no_rong_ten": "Trừ nợ vay ròng công ty mẹ (30/6/2026, sau tiền Elmet)"
@@ -849,7 +855,7 @@
    20.3,
    15.1,
    14.9,
-   15.2
+   16.0
   ],
   "p10": 15.2,
   "p25": 19.0,
@@ -860,7 +866,7 @@
   ],
   "nay": [
    "2026-10",
-   15.2
+   16.0
   ],
   "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
   "dung": "Không dùng P/E của chính MSN (đã gồm chiết khấu holding — tránh đếm trùng): bội số áp riêng từng phần theo lịch sử từng mã — MCH 16 · 20 · 25 như hồ sơ MCH (trung vị từ 2017 16,1, 2024–2025 19,7, thấp nhất từ khi lên HOSE 25,3), TCB 6 · 7,5 · 8,6 (thấp 10% 5,5, trung vị 8,6)."
@@ -868,13 +874,13 @@
  "nhay": [
   [
    "Giá APT 2027 ±500 USD/mtu",
-   1093,
-   9.6
+   1312,
+   11.5
   ],
   [
    "Chi phí tập đoàn ±5 điểm %",
    null,
-   7.8
+   8.2
   ],
   [
    "P/E Masan Consumer ±2 lần",
@@ -907,43 +913,66 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    1838,
-    2961,
-    3839
+    2052,
+    3331,
+    4249
    ],
    "ck": 1474
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    8495,
-    10434,
-    11979
+    10094,
+    11373,
+    12290
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "20–30/10/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Tháng 7–8 LNST trước CĐTS 2.745 tỷ, doanh thu MSR 9.882 tỷ; mô hình dự phóng LN cổ đông Q3 3.102 tỷ (cùng kỳ 1.209).",
+   "khi": "22/10/2026",
+   "loai": "len",
+   "tieu": "Q3/2026 vượt mô hình 18%",
+   "ct": "LN cổ đông 3.671 tỷ (+204%) so với cơ sở 3.102: MSR 2.148 tỷ (mô hình 1.850) nhờ sản lượng, WinCommerce 325 tỷ (+86%), MCH 1.929 tỷ (+15%).",
    "tac": [
-    "≥ 3.100 tỷ",
-    "giữ kịch bản cơ sở; dưới 2.300 tỷ nghiêng về kịch bản xấu"
+    "+6,7 nghìn đ/cp",
+    "giá trị cơ sở 116,9 → 123,6, chủ yếu do nâng LN MSR 2027 theo sản lượng"
    ],
-   "theo_doi": "LN và biên gộp MSR"
+   "theo_doi": "BCTC MSR Q3, biên gộp"
   },
   {
-   "khi": "10/2026",
+   "khi": "9–23/10/2026",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Mua thêm tối đa 73 triệu cp MCH",
+   "ct": "Nâng sở hữu MCH 69,4% → 74,9%, ~10.300 tỷ theo giá 6/10 (P/E ~22,5 lần LN 2027E); nợ ròng/EBITDA 1,98 lần (30/9) về ~2,4 lần. Chưa có kết quả — mô hình chưa tính.",
+   "tac": [
+    "−1,6 nghìn đ/cp",
+    "nếu mua đủ: +5,3 điểm % lợi ích MCH, LN 2027 về MSN −287 tỷ sau lãi vay"
+   ],
+   "theo_doi": "báo cáo kết quả giao dịch"
+  },
+  {
+   "khi": "1–30/10/2026",
    "loai": "len",
    "tieu": "Bán tiếp tối đa 5,01% MSR",
-   "ct": "Tối đa 55,36 triệu cp cho nhà đầu tư tổ chức (1–30/10), giá bằng thương vụ Elmet; ~3.300 tỷ về công ty mẹ, sở hữu MSR còn ~82,5%.",
+   "ct": "Tối đa 55,36 triệu cp cho nhà đầu tư tổ chức, giá bằng thương vụ Elmet (đã xong 1/10); ~3.300 tỷ về công ty mẹ, sở hữu MSR còn ~82,5%.",
    "tac": [
-    "+0,4 nghìn đ/cp",
-    "−3.300 tỷ nợ ròng (−9%), bán cao hơn giá trị MSR trong mô hình"
+    "+0,1 nghìn đ/cp",
+    "−3.300 tỷ nợ ròng; giá bán xấp xỉ giá trị MSR trong mô hình"
    ],
    "theo_doi": "kết quả bán, nợ ròng Q4"
+  },
+  {
+   "khi": "Q1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026, kế hoạch 2027",
+   "ct": "9T LNST trước CĐTS 10.325 tỷ đã vượt mức thấp kế hoạch (10.000–11.500); mô hình Q4 LN cổ đông 3.331 tỷ (cùng kỳ 1.474). ĐHĐCĐ 2027 cho biết mục tiêu khi vonfram hạ nhiệt.",
+   "tac": [
+    "≥ 3.300 tỷ",
+    "giữ cơ sở; dưới 2.100 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "LN MSR Q4, kế hoạch 2027"
   },
   {
    "khi": "Q4/2026–2027",
@@ -952,7 +981,7 @@
    "tieu": "Giá vonfram quay đầu",
    "ct": "APT gấp ~3 lần từ đầu năm vì Trung Quốc siết xuất khẩu; tháng 8 hiệp hội vonfram Cám Châu hạ dự báo giá, châu Âu chững quanh 3.000 USD/mtu.",
    "tac": [
-    "−13,5 nghìn đ/cp",
+    "−16,2 nghìn đ/cp",
     "nếu APT 2027 bình quân 1.300 USD thay vì 2.000"
    ],
    "theo_doi": "giá APT Rotterdam, biên gộp MSR"
@@ -962,7 +991,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Nợ công ty mẹ chưa giảm",
-   "ct": "Nợ ròng ngoài MCH, MSR, MML 40.058 tỷ (30/6), tăng 8.800 tỷ trong 3 quý; lãi vay và chi phí tập đoàn 2025 bằng 61% LN các mảng về MSN.",
+   "ct": "Nợ ròng ngoài MCH, MSR, MML 40.058 tỷ (30/6), tăng 8.800 tỷ trong 3 quý; hợp nhất 30/9 48.400 tỷ. Lãi vay, chi phí tập đoàn 2025 bằng 61% LN các mảng về MSN.",
    "tac": [
     "±3,3 nghìn đ/cp",
     "mỗi 5.000 tỷ nợ ròng công ty mẹ"
@@ -974,7 +1003,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Masan Consumer giảm định giá",
-   "ct": "MCH đang được trả ~22,5 lần LN 2027E (trung vị lịch sử 16,1) sau khi lên HOSE và vào VN30; mô hình dùng 20.",
+   "ct": "MCH đang được trả ~22,6 lần LN 2027E (trung vị lịch sử 16,1) sau khi lên HOSE, vào VN30 và có MSN mua vào; mô hình dùng 20.",
    "tac": [
     "±6,3 nghìn đ/cp",
     "mỗi 2 lần P/E MCH"
@@ -985,7 +1014,7 @@
    "khi": "2027",
    "loai": "len",
    "tieu": "WinCommerce nâng biên",
-   "ct": "Biên lãi ròng 1,2–2,4% theo quý; mục tiêu 2030 lãi 7.200 tỷ trên 120.000 tỷ doanh thu. Mỗi 0,5 điểm % biên 2027 ≈ 243 tỷ LN về MSN.",
+   "ct": "Biên lãi ròng 1,2–2,5% theo quý (Q3 2,5%); mục tiêu 2030 lãi 7.200 tỷ trên 120.000 tỷ doanh thu. Mỗi 0,5 điểm % biên 2027 ≈ 242 tỷ LN về MSN.",
    "tac": [
     "+3,1 nghìn đ/cp",
     "nếu biên 2027 đạt 2,8% thay vì 2,2%"
@@ -1007,15 +1036,6 @@
    "ct": "Kế hoạch IPO WinCommerce 2028–2029 — mốc định giá thị trường cho mảng bán lẻ hiện đang nằm trong chiết khấu holding.",
    "tac": "",
    "theo_doi": ""
-  },
-  {
-   "khi": "Liên tục",
-   "loai": "xuong",
-   "muc": 1,
-   "tieu": "Cấu trúc vốn nhiều tầng",
-   "ct": "74,6 triệu cp ưu đãi chuyển đổi 1:1 của Bain (cổ tức tối đa 10%/năm từ năm thứ 6); SK còn 9,2% WinCommerce với quyền bán lại cho Masan.",
-   "tac": "",
-   "theo_doi": ""
   }
  ],
  "bieu_do": [
@@ -1029,7 +1049,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1040,14 +1061,15 @@
       5,
       222,
       537,
-      1666
+      1666,
+      2148
      ],
      "mau": "c3"
     }
    ],
    "so_le": 0,
-   "y": "Giá bán vonfram bình quân Q2/2026 3.245 USD/mtu, gấp 5 lần cùng kỳ; doanh thu MSR tháng 7–8 đạt 9.882 tỷ — gần bằng cả 6 tháng đầu năm (11.131).",
-   "ng": "BCTC MSR (VNDirect) · MAS 30/09 · MSN công bố 8T"
+   "y": "Q3 lãi 2.148 tỷ, +29% so với Q2 dù giá APT đi ngang ~3.000 USD/mtu: doanh thu 14.557 tỷ (×7,1 cùng kỳ) — sản lượng là động lực mới.",
+   "ng": "BCTC MSR (VNDirect) · Q3: thông cáo 22/10 (Lao Động, CafeF)"
   },
   {
    "ten": "LN cổ đông Masan Consumer theo quý",
@@ -1059,7 +1081,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1070,13 +1093,14 @@
       1676,
       2079,
       1778,
-      1471
+      1471,
+      1929
      ],
      "mau": "c1"
     }
    ],
    "so_le": 0,
-   "y": "Tăng lại hai quý liền (+12%, +11%) sau tái cấu trúc kênh truyền thống: 430.000 điểm bán (+90%), 5,5 mã hàng mỗi đơn (+17%).",
+   "y": "Q3 1.929 tỷ (+15%), doanh thu +16,3% — nhanh nhất 3 năm; 9T +12,9%. Tái cấu trúc kênh truyền thống xong, 430.000 điểm bán.",
    "ng": "BCTC MCH (VNDirect) · SHS 13/05"
   },
   {
@@ -1089,7 +1113,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1100,14 +1125,15 @@
       175,
       257,
       204,
-      142
+      142,
+      325
      ],
      "mau": "c4"
     }
    ],
    "so_le": 0,
-   "y": "Doanh thu Q2/2026 11.629 tỷ (+27%), 5.141 cửa hàng; biên lãi ròng Q2 1,2%, Q4/2025 2,4% — biên là biến số lớn nhất của mảng.",
-   "ng": "SHS 13/05 · VDS 17/04 · MSN công bố Q2"
+   "y": "Q3 lãi 325 tỷ (+86%) trên doanh thu 12.775 tỷ (+21%), biên 2,5%; 5.486 cửa hàng, cùng cửa hàng +7%. Biên là biến số lớn nhất.",
+   "ng": "SHS 13/05 · VDS 17/04 · MSN công bố Q2, Q3"
   },
   {
    "ten": "Nợ vay ròng: hợp nhất và phần công ty mẹ",
@@ -1119,7 +1145,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1130,7 +1157,8 @@
       46.2,
       47.4,
       51.0,
-      51.5
+      51.5,
+      48.4
      ],
      "mau": "c4",
      "net": false
@@ -1143,15 +1171,16 @@
       31.2,
       35.3,
       38.8,
-      40.1
+      40.1,
+      null
      ],
      "mau": "c2",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Nợ ròng ngoài các công ty con niêm yết tăng 8.800 tỷ trong 3 quý dù lợi nhuận tăng; tiền bán 10% MSR (~6.600 tỷ) về từ Q4/2026.",
-   "ng": "BCTC MSN, MCH, MSR, MML (VNDirect)"
+   "y": "Hợp nhất 30/9 48,4 nghìn tỷ, chưa giảm dù lãi kỷ lục; phần công ty mẹ tăng 8.800 tỷ trong 3 quý đến 30/6. Q4: tiền MSR về, tiền mua MCH ra.",
+   "ng": "BCTC MSN, MCH, MSR, MML (VNDirect); Q3 của MSR, MML chưa có"
   }
  ],
  "ke_hoach": {
@@ -1160,50 +1189,50 @@
    {
     "ten": "Doanh thu (KH mới 98.000–105.000)",
     "kh": 98000,
-    "th": 77023,
-    "ky": "8T",
-    "tg": 67,
+    "th": 89118,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "MSN 29/07 · công bố 8T"
+    "ng": "MSN 29/07 · BCTC Q3"
    },
    {
     "ten": "LNST trước CĐTS (KH mới 10.000–11.500)",
     "kh": 10000,
-    "th": 8518,
-    "ky": "8T",
-    "tg": 67,
+    "th": 10325,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "MSN 29/07 · công bố 8T"
+    "ng": "MSN 29/07 · BCTC Q3"
    },
    {
     "ten": "Doanh thu Masan High-Tech (KH 16.000–20.300)",
     "kh": 20300,
-    "th": 21013,
-    "ky": "8T",
-    "tg": 67,
+    "th": 25688,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ (SHS 13/05) · công bố 8T"
+    "ng": "ĐHĐCĐ (SHS 13/05) · thông cáo Q3"
    },
    {
     "ten": "Doanh thu WinCommerce (KH 45.000–47.000)",
     "kh": 45000,
-    "th": 22992,
-    "ky": "6T",
-    "tg": 50,
+    "th": 35767,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ (SHS 13/05) · MSN Q2"
+    "ng": "ĐHĐCĐ (SHS 13/05) · thông cáo Q3"
    },
    {
     "ten": "Doanh thu Masan Consumer (KH 33.800–35.000)",
     "kh": 33800,
-    "th": 15637,
-    "ky": "6T",
-    "tg": 50,
+    "th": 24380,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ (SHS 13/05) · BCTC MCH"
    }
   ],
-  "y": "8 tháng LNST trước CĐTS đã 85% mức thấp kế hoạch mới; MSR đã vượt kế hoạch doanh thu cả năm. Kế hoạch mới ngầm định nửa cuối thấp hơn nửa đầu (5.773 tỷ) — mô hình cơ sở cho cả năm ~13.700 tỷ.",
+  "y": "9T LNST trước CĐTS 10.325 tỷ đã vượt mức thấp kế hoạch; MSR đạt 127% kế hoạch doanh thu. WinCommerce 79%, MCH 72% — Q4 thường là quý doanh thu cao nhất. Mô hình cơ sở cả năm ~14.800 tỷ.",
   "ng": ""
  },
  "ctck": [
@@ -1263,8 +1292,58 @@
    "link": "https://cdn.simplize.vn/simplizevn/report/MSN/iem_bung_no_moi_tu_HKD_khi_hiem_Tungsten_.pdf"
   }
  ],
- "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. MSN không chia cổ tức tiền mặt nên giá mục tiêu so thẳng với giá hiện tại. Sau thương vụ Elmet, J.P. Morgan (21/9) và HSBC đặt giá mục tiêu 110.000 đ (theo Tiền Phong).",
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. MSN không chia cổ tức tiền mặt nên giá mục tiêu so thẳng với giá hiện tại. Sau thương vụ Elmet, J.P. Morgan (21/9) và HSBC đặt giá mục tiêu 110.000 đ (theo Tiền Phong). Chưa có báo cáo CTCK cập nhật Q3/2026 đến 24/10.",
  "nguon": [
+  {
+   "ten": "CafeF — Masan lãi hơn 10.300 tỷ sau 9 tháng (thông cáo Q3)",
+   "ngay": "22/10/2026",
+   "link": "https://cafef.vn/masan-lai-hon-10300-ty-dong-sau-9-thang-gap-15-lan-ca-nam-2025-188261022090437674.chn"
+  },
+  {
+   "ten": "Vietstock — Lợi nhuận Masan vượt kế hoạch cơ sở sau 9 tháng",
+   "ngay": "22/10/2026",
+   "link": "https://vietstock.vn/2026/10/loi-nhuan-masan-tang-hon-gap-doi-vuot-ke-hoach-co-so-ca-nam-sau-9-thang-737-1505385.htm"
+  },
+  {
+   "ten": "Lao Động — Masan High-Tech lãi hơn 2.100 tỷ Q3",
+   "ngay": "10/2026",
+   "link": "https://laodongdoanthe.vn/mang-vat-lieu-chien-luoc-cua-masan-lai-hon-2100-ty-dong-trong-quy-iii-tang-29-so-voi-quy-truoc-118565.html"
+  },
+  {
+   "ten": "Doanh nghiệp Hội nhập — Masan Q3: tiêu dùng, bán lẻ, MML, Phúc Long",
+   "ngay": "10/2026",
+   "link": "https://doanhnghiephoinhap.vn/masan-quy-iii-mang-tieu-dung-ban-le-tang-truong-hai-chu-so-msr-dong-gop-hon-2100-ty-dong-loi-nhuan-152275.html"
+  },
+  {
+   "ten": "BBW — Lãi quý III gấp ba, nợ ròng vẫn tăng",
+   "ngay": "10/2026",
+   "link": "https://bbw.vn/masan-lai-quy-iii-gap-ba-no-rong-van-tang-61128.html"
+  },
+  {
+   "ten": "VnExpress — Masan tăng sở hữu MCH lên gần 75%",
+   "ngay": "10/2026",
+   "link": "https://vnexpress.net/masan-tang-so-huu-tai-mch-len-gan-75-5130190.html"
+  },
+  {
+   "ten": "BBW — Masan dự kiến nâng sở hữu Masan Consumer lên 74,9%",
+   "ngay": "10/2026",
+   "link": "https://bbw.vn/masan-du-kien-nang-so-huu-tai-masan-consumer-len-749-60798.html"
+  },
+  {
+   "ten": "Dân trí — Nguồn tiền mua thêm MCH",
+   "ngay": "09/10/2026",
+   "link": "https://dantri.com.vn/kinh-doanh/nguon-tien-giup-masan-mua-them-mch-nhung-van-giam-don-bay-20261009114824091.htm"
+  },
+  {
+   "ten": "CafeF — Elmet đã mua xong 4,99% MSR",
+   "ngay": "01/10/2026",
+   "link": "https://cafef.vn/tap-doan-my-da-mua-xong-499-co-phan-masan-high-tech-materials-188261001114751078.chn"
+  },
+  {
+   "ten": "Ruixin — Giá APT châu Âu",
+   "ngay": "23/10/2026",
+   "link": "https://ruixintungstencarbide.com/tungsten-prices/"
+  },
   {
    "ten": "Mirae Asset — MSR dẫn dắt chu kỳ tăng trưởng",
    "ngay": "30/09/2026",
@@ -1392,8 +1471,8 @@
     },
     {
      "h": 0,
-     "t": "Giá APT châu Âu 2.900–3.250 USD/mtu tháng 7, ~3.000 tháng 9; hiệp hội vonfram Cám Châu hạ dự báo giá tháng 8.",
-     "ng": "SMM · MAS 30/09"
+     "t": "Giá APT châu Âu 2.900–3.250 USD/mtu tháng 7, ~3.000 tháng 9; 23/10 giao ngay 2.500–2.900, hợp đồng dài hạn trên 3.000.",
+     "ng": "SMM · MAS 30/09 · Ruixin 23/10"
     },
     {
      "h": 0,
@@ -1426,9 +1505,9 @@
    "tang": "Doanh nghiệp",
    "y": [
     {
-     "h": 1,
-     "t": "Dùng tiền vonfram để giảm nợ: bán 4,99% MSR cho Elmet (124,75 triệu USD) và tối đa 5,01% cho tổ chức trong tháng 10/2026.",
-     "ng": "Vietnam News · BBW"
+     "h": 0,
+     "t": "Bán 4,99% MSR cho Elmet (124,75 triệu USD, xong 1/10), tối đa 5,01% cho tổ chức trong tháng 10 — nhưng cùng lúc mua thêm tối đa 73 triệu cp MCH (~10.300 tỷ).",
+     "ng": "CafeF 01/10 · BBW · VnExpress"
     },
     {
      "h": -1,
@@ -1449,18 +1528,18 @@
    "phu": "Chin-su, Nam Ngư, Omachi, Kokomi, Wake-up 247, Vinacafé, Homey · MSN hưởng 65,7% · HOSE từ 12/2025, VN30 từ 8/2026",
    "so": [
     [
-     "Doanh thu 6T",
-     "15.637 tỷ",
-     "+13,6%"
+     "Doanh thu 9T",
+     "24.380 tỷ",
+     "Q3 +16,3%"
     ],
     [
-     "LN cổ đông 6T",
-     "3.249 tỷ",
-     "+11,6%"
+     "LN cổ đông 9T",
+     "5.178 tỷ",
+     "+12,9%"
     ],
     [
-     "Biên gộp Q2",
-     "44,6%",
+     "Biên gộp Q3",
+     "45,4%",
      ""
     ],
     [
@@ -1489,24 +1568,24 @@
    "phu": "MSN hưởng 85,4% · SK còn 9,2% · IPO dự kiến 2028–2029",
    "so": [
     [
-     "Cửa hàng 30/6",
-     "5.141",
-     "+549 trong 6T"
+     "Cửa hàng 30/9",
+     "5.486",
+     "+894 trong 9T"
     ],
     [
-     "Doanh thu 6T",
-     "22.992 tỷ",
-     "+28%"
+     "Doanh thu 9T",
+     "35.767 tỷ",
+     "+26%"
     ],
     [
-     "LNST 6T",
-     "346 tỷ",
-     "6T/2025: 68 tỷ"
+     "LNST 9T",
+     "671 tỷ",
+     "9T/2025: 243 tỷ"
     ],
     [
-     "Tăng trưởng cửa hàng cũ Q1",
-     "+14,3%",
-     "2025: +9%"
+     "Cùng cửa hàng Q3",
+     "+7%",
+     "Q1: +14,3%"
     ]
    ],
    "y": [
@@ -1529,13 +1608,13 @@
    "phu": "Mỏ Núi Pháo + nhà máy tinh luyện 9.345 tấn WO3/năm · MSN còn ~87,5% sau khi bán 4,99% cho Elmet",
    "so": [
     [
-     "Doanh thu 6T",
-     "11.131 tỷ",
-     "+270%"
+     "Doanh thu 9T",
+     "25.688 tỷ",
+     "Q3 ×7,1"
     ],
     [
-     "LNST 6T",
-     "2.202 tỷ",
+     "LNST 9T",
+     "4.350 tỷ",
      "2025: 11 tỷ"
     ],
     [
@@ -1544,9 +1623,9 @@
      "×5 cùng kỳ"
     ],
     [
-     "Doanh thu 8T",
-     "21.013 tỷ",
-     "×5,1"
+     "LNST Q3",
+     "2.148 tỷ",
+     "+29% so Q2"
     ]
    ],
    "y": [
@@ -1569,29 +1648,29 @@
    "phu": "TCB 19,7% (liên kết) · MML 91,2% · Phúc Long 85%",
    "so": [
     [
-     "LN TCB 6T",
-     "14.021 tỷ",
+     "LN TCB 9T",
+     "21.964 tỷ",
+     "+18%"
+    ],
+    [
+     "Lãi liên kết về MSN 9T",
+     "4.252 tỷ",
      "+15%"
     ],
     [
-     "Lãi liên kết về MSN 6T",
-     "2.817 tỷ",
-     "+16%"
+     "LNST MML 9T",
+     "436 tỷ",
+     "vượt trần KH 300"
     ],
     [
-     "Doanh thu MML 6T",
-     "5.162 tỷ",
-     "+17%"
-    ],
-    [
-     "Doanh thu Phúc Long 6T",
-     "1.119 tỷ",
-     "+30,4%"
+     "Doanh thu Phúc Long Q3",
+     "589 tỷ",
+     "+14,2%"
     ]
    ],
    "y": [
     {
-     "t": "TCB: mỗi 10% tăng LN đem về MSN ~560 tỷ/năm; hồ sơ TCB của trang dự phóng LN 2027E 31.437 tỷ (cơ sở).",
+     "t": "TCB: mỗi 10% tăng LN đem về MSN ~570 tỷ/năm; hồ sơ TCB của trang dự phóng LN 2027E 31.446 tỷ (cơ sở).",
      "ng": "BCTC TCB · hồ sơ TCB"
     },
     {
