@@ -1,0 +1,1492 @@
+{
+ "v": 2,
+ "ma": "VHC",
+ "ten": "Công ty Cổ phần Vĩnh Hoàn",
+ "nganh": "Thủy sản – cá tra, collagen & gelatin",
+ "ky": "BCTC Q2/2026 · doanh thu tháng 7–9/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 209.45,
+ "cp_ng": "209,45 triệu cp đang lưu hành sau khi mua 15 triệu cp quỹ (20/4–15/5/2026, giá bình quân 61.988 đ); vốn điều lệ Q2/2026 2.094,5 tỷ (VNDirect), cp có quyền biểu quyết 224,45 → 209,45 triệu (VnEconomy)",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Thoát thuế CBPG Mỹ khi đối thủ chịu tới 1 USD/kg: đủ đỡ biên, chưa đủ để LN 2027 tăng"
+ },
+ "dong_mo": "6T/2026 LN cổ đông 741 tỷ (+5%), biên gộp Q2 20,7% cao nhất từ Q2/2023; nhưng doanh thu Mỹ tháng 7–9 −16% sau thuế Section 301 12,5%. VHC nằm ngoài lệnh CBPG Mỹ khi đối thủ bị nâng lên 0,38–1 USD/kg; 2027 giá cá ngành dự báo −6,5%. P/E 9,5 × LN 2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "0 USD/kg",
+   "nhan": "thuế CBPG Mỹ của VHC; đối thủ 0,38–1,00",
+   "tieu": "Duy nhất ngoài lệnh CBPG Mỹ, đúng lúc đối thủ bị nâng thuế",
+   "t": "Mỹ rút VHC khỏi lệnh CBPG cá tra (hiệu lực từ 1/8/2021, theo thỏa thuận vụ WTO DS536 1/2025), không rà soát VHC ở POR21; kết quả cuối 8/2026 nâng Navico, Caseamex lên 0,84 USD/kg, Biển Đông 1,00, NTSF 0,38; mức toàn quốc giữ 2,39. Mỹ là ~35% doanh thu 6T/2026, giá bán cao hơn thị trường xuất khẩu khác trên 50% (FPTS). Mô hình vì thế cho giá bán 2027 của VHC −3%, nhẹ hơn giá cá ngành −6,5%: mỗi 1% giữ được ≈ 100 tỷ LN.",
+   "ng": "Federal Register 24/01/2025 · VASEP · FPTS 18/06 · mô hình"
+  },
+  {
+   "so": "−16%",
+   "nhan": "doanh thu Mỹ tháng 7–9/2026",
+   "tieu": "Mỹ chững sau nửa năm tích trữ, tăng trưởng chuyển sang châu Âu",
+   "t": "Mỹ Q1 +39,5%, Q2 +10,3% khi nhà nhập khẩu tích trữ; từ 24/7 hàng Việt Nam chịu thuế Section 301 12,5%, Mỹ tháng 7 −36%, tháng 8 −15%, tháng 9 +22%: cả quý −16%, tỷ trọng 31% → 26%. Châu Âu bù (tháng 7 +19%, tháng 9 +41%), Trung Quốc tháng 9 −82%. Doanh thu tháng 7–9 +0,4%; mô hình LN Q3 400 tỷ (−8%), 2026E 1.448 tỷ (+2%), 90% kế hoạch 1.600 tỷ.",
+   "ng": "Báo cáo doanh thu tháng VHC · FPTS 18/06 · MAS 10/08 · mô hình"
+  },
+  {
+   "so": "−6,5%",
+   "nhan": "giá cá tra ngành 2027 (FPTS)",
+   "tieu": "Năm 2027 dư cung: VHC giảm ít hơn ngành nhưng LN vẫn đi xuống",
+   "t": "Cá nguyên liệu kỷ lục 33–35 nghìn đ/kg sẽ kéo hộ nuôi thả lại vào mùa giống cuối 2026; FPTS dự báo giá cá tra 2027 −6,5%. VHC tự chủ ~70% cá giống và thức ăn, mua ngoài ~30% cá nguyên liệu nên hưởng một phần giá cá rẻ. Cơ sở: sản lượng +2%, giá bán −3%, giá thành −1,5% → biên gộp 16,7% (2026E 17,9%), LN 2027E 1.254 tỷ (−13%); xấu: biên 13,4%, LN 757 tỷ, dưới đáy 2023 (897 tỷ).",
+   "ng": "FPTS 18/06 · KBSV 23/06 · Shinhan 10/06 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/E 9,5 × LN 2027E: {up_so} so với giá hiện tại",
+   "t": "Giá 23/10: P/E 4 quý 7,5 ở ROE 15,5%, dưới mức thấp 10% (8,0) của chính VHC khi ROE 14–18%; P/B 1,16 — từ 2015 chỉ 3–4/2020 và 7, 9/2026 thấp hơn. Nhưng đó đã là 8,7 lần LN 2027E cơ sở; P/E 9,5 ≈ trung vị 9,2. Xấu: P/E 12 trên LN đáy → 43,4 (P/B ~1,0); tốt: P/E 8,5 → 72,8. Đỡ giá: cổ tức 3.000 đ (5,8%), giá thấp hơn 16% giá mua cp quỹ.",
+   "ng": "mô hình · P/E, P/B: BCTC VNDirect · VnEconomy"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1418,
+   1448,
+   1254
+  ],
+  "ln_truoc": 1226,
+  "eps": [
+   6770,
+   6913,
+   5987
+  ],
+  "bv": [
+   45887,
+   45197,
+   48183
+  ],
+  "co_tuc_nam": 3000,
+  "them": [
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     12.02,
+     12.69,
+     12.56
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Biên gộp",
+    "v": [
+     17.0,
+     17.9,
+     16.7
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2025: BCTC. EPS, BVPS tính trên 209,45 triệu cp đang lưu hành (sau mua 15 triệu cp quỹ 5/2026) cho cả 3 năm; BVPS là vốn chủ công ty mẹ cuối năm, 2026E–2027E đã trừ cổ tức 3.000 đ/cp mỗi năm. Cổ tức: kế hoạch 2026 (ĐHĐCĐ 5/2026), chưa chốt ngày; 2025 là 2.000 đ."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Kinh doanh cốt lõi (LN gộp − CPBH − QLDN)",
+    "mau": "c1",
+    "v": [
+     1475,
+     1674,
+     1503
+    ]
+   },
+   {
+    "ten": "Tài chính ròng, liên kết & khác",
+    "mau": "c4",
+    "v": [
+     274,
+     106,
+     40
+    ]
+   }
+  ],
+  "nhan": "Kinh doanh cốt lõi",
+  "ng": "BCTC hợp nhất (VNDirect); 2026E = 6T thực tế + Q3, Q4 mô hình; 2027E: mô hình. VHC công bố doanh thu theo mảng nhưng không công bố LN theo mảng; 2025 tài chính có lãi chênh lệch tỷ giá lớn."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 23/10)",
+  "nhom": "10 mã cùng ngành vốn hóa lớn nhất (bỏ BAF, P/E > 100)",
+  "kv": [
+   [
+    "MCH",
+    25.4
+   ],
+   [
+    "VNM",
+    11.0
+   ],
+   [
+    "MSN",
+    11.3
+   ],
+   [
+    "SBT",
+    25.1
+   ],
+   [
+    "HAG",
+    5.5
+   ],
+   [
+    "KDC",
+    25.0
+   ],
+   [
+    "DBC",
+    6.8
+   ],
+   [
+    "ANV",
+    6.4
+   ],
+   [
+    "PAN",
+    3.8
+   ],
+   [
+    "MCM",
+    10.4
+   ]
+  ],
+  "tv": 10.7,
+  "moi_cp": 6931,
+  "max": 30,
+  "y": "P/E 4 quý 7,5 thấp hơn trung vị ngành 10,7; ANV 6,4 thấp hơn nhưng vừa bị nâng thuế CBPG lên 0,84 USD/kg. P/B 1,16 thấp hơn ANV 1,24 vì ROE 4 quý 15,5% so với 20,8%.",
+  "ng": "BCTC VNDirect, giá 23/10/2026 (gói số liệu); VHC: LN cổ đông 4 quý đến Q2/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo chênh lệch giá bán – giá thành",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Doanh thu (2026E = 6T thực tế + Q3, Q4 ước)"
+   },
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     12021,
+     12692,
+     12557
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Doanh thu Q3 · Q4 so cùng kỳ",
+    "s": [
+     "—",
+     "0% · +6%",
+     "—"
+    ]
+   },
+   {
+    "ten": "Sản lượng · giá bán · giá thành/kg",
+    "s": [
+     "—",
+     "—",
+     "+2% · −3% · −1,5%"
+    ]
+   },
+   {
+    "nhom": "Biên và chi phí"
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     17.0,
+     17.9,
+     16.7
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Chi phí bán hàng & QLDN / doanh thu (%)",
+    "v": [
+     4.7,
+     4.7,
+     4.7
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Tài chính ròng, liên kết & khác (tỷ)",
+    "v": [
+     274,
+     106,
+     40
+    ]
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     1749,
+     1780,
+     1543
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     1418,
+     1448,
+     1254
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     6770,
+     6913,
+     5987
+    ],
+    "eps": 1
+   },
+   {
+    "nhom": "Vốn chủ và cổ tức"
+   },
+   {
+    "ten": "BVPS cuối năm (đ)",
+    "v": [
+     45887,
+     45197,
+     48183
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     15.5,
+     15.2,
+     12.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Cổ tức tiền mặt (đ/cp)",
+    "s": [
+     "2.000",
+     "3.000 (kế hoạch)",
+     "3.000 (giả định)"
+    ]
+   }
+  ],
+  "ghi": "Doanh thu thuần VNDirect. Biên gộp 2027 = 1 − (1 − biên 2026E) × (1 + giá thành) ÷ (1 + giá bán). Thuế 14%, cổ đông thiểu số 5,5% LNST (Sa Giang, Feed One, Thành Ngọc). Q3/2026: doanh thu theo báo cáo tháng ≈ cùng kỳ, biên gộp giả định."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1448
+  ],
+  "cuoi": [
+   "2027E",
+   1254
+  ],
+  "buoc": [
+   [
+    "Sản lượng +2%",
+    37
+   ],
+   [
+    "Giá bán bình quân −3%",
+    -316
+   ],
+   [
+    "Giá thành/kg −1,5%",
+    130
+   ],
+   [
+    "Chi phí bán hàng & QLDN",
+    10
+   ],
+   [
+    "Tài chính & khác",
+    -55
+   ]
+  ],
+  "y": "Giá bán −3% lấy đi 316 tỷ, giá thành −1,5% chỉ bù 130 tỷ; sản lượng +2% thêm 37 tỷ. Chênh lệch giá bán – giá thành quyết định năm 2027.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu Q3 · Q4/2026 so cùng kỳ",
+   "v": [
+    "−2% · −4%",
+    "0% · +6%",
+    "+2% · +12%"
+   ],
+   "ly_do": "Tháng 7–9: 1.148 · 1.099 · 1.038 tỷ (−10% · +2% · +13%), cả quý ≈ cùng kỳ; Q4/2025 2.710 tỷ (−15%); tháng 9 Mỹ +22%"
+  },
+  {
+   "ten": "Biên gộp Q3 · Q4/2026",
+   "v": [
+    "16,0% · 15,5%",
+    "18,0% · 18,0%",
+    "19,5% · 19,5%"
+   ],
+   "ly_do": "Q1 14,6%, Q2 20,7%; Q3/2025 16,8%, Q4/2025 17,9%; tỷ trọng Mỹ (giá cao nhất) Q3 giảm từ 31% xuống 26%"
+  },
+  {
+   "ten": "Sản lượng tiêu thụ 2027",
+   "v": [
+    "−5%",
+    "+2%",
+    "+5%"
+   ],
+   "ly_do": "KBSV: cá tra 2027 +2%; dây chuyền Feed One 2, nhà máy Sa Giang mới (đầu tư 2026); Mỹ chững sau thuế Section 301"
+  },
+  {
+   "ten": "Giá bán bình quân 2027 (đ/kg)",
+   "v": [
+    "−5%",
+    "−3%",
+    "−1%"
+   ],
+   "ly_do": "FPTS: giá cá tra ngành 2027 −6,5% do dư cung; VHC giảm ít hơn vì Mỹ (~35% doanh thu) không chịu CBPG, phụ phẩm theo giá bột cá cao"
+  },
+  {
+   "ten": "Giá thành/kg 2027",
+   "v": [
+    "−1%",
+    "−1,5%",
+    "−3%"
+   ],
+   "ly_do": "Cá mua ngoài ~30% (KBSV) rẻ theo ngành; thức ăn ~70% giá thành nuôi, bã đậu +3%/năm (FPTS), bột cá neo đỉnh, El Niño (Shinhan)"
+  },
+  {
+   "ten": "Biên gộp 2027 (kết quả)",
+   "v": [
+    "13,4%",
+    "16,7%",
+    "20,3%"
+   ],
+   "ly_do": "2020 14,2%, 2023 14,4%, 2025 17,0%, 6T/2026 17,9%; CTCK 2027F: KBSV 16,1%, Shinhan 17%, FPTS 17,3%, MAS 14,1%"
+  },
+  {
+   "ten": "Chi phí bán hàng & QLDN / doanh thu 2027",
+   "v": [
+    "5,0%",
+    "4,7%",
+    "4,5%"
+   ],
+   "ly_do": "2025 4,7%, 6T/2026 4,6%; cước tàu còn cao do xung đột Trung Đông (KBSV, MAS)"
+  },
+  {
+   "ten": "Tài chính ròng & khác 2027 (tỷ)",
+   "v": [
+    "0",
+    "40",
+    "80"
+   ],
+   "ly_do": "2025 274 (lãi tỷ giá), 6T/2026 71; tiền và đầu tư ngắn hạn 3.137, vay 2.470 tỷ (30/6)"
+  },
+  {
+   "ten": "P/E (× LN 2027E)",
+   "v": [
+    "12",
+    "9,5",
+    "8,5"
+   ],
+   "ly_do": "P/E VHC từ 2015 theo ROE: 10–14% thấp 10% 11,5; 12–16% thấp 25% 9,3, trung vị 10,4; ≥ 20% trung vị 7,7. Trung vị chung 9,2"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1259,
+   "ln27": 757,
+   "gia": 43.4,
+   "mo_ta": "Dư cung sâu, Mỹ yếu tiếp: sản lượng −5%, giá bán −5%, giá thành −1% → biên gộp 13,4%, LN dưới đáy 2023; P/E 12 trên LN đáy (P/B ~1,0)"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1448,
+   "ln27": 1254,
+   "gia": 56.9,
+   "mo_ta": "Dư cung 2027 nhưng Mỹ đỡ giá: giá bán −3%, giá thành −1,5%, sản lượng +2% → biên gộp 16,7%; P/E 9,5"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 1590,
+   "ln27": 1795,
+   "gia": 72.8,
+   "mo_ta": "Lợi thế thuế Mỹ phát huy, thức ăn hạ: giá bán −1%, giá thành −3%, sản lượng +5% → biên gộp 20,3%; P/E 8,5 trên LN gần đỉnh"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/E",
+  "phu": "P/E × LN 2027E",
+  "ck": 0,
+  "cp": 209.45,
+  "phan": [
+   {
+    "ten": "LN cổ đông 2027E",
+    "mau": "c1",
+    "x": [
+     757,
+     1254,
+     1795
+    ],
+    "boi": [
+     12,
+     9.5,
+     8.5
+    ],
+    "sh": 1,
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "gt": [
+     9084,
+     11913,
+     15258
+    ]
+   }
+  ],
+  "von": [
+   9084,
+   11913,
+   15258
+  ],
+  "gia": [
+   43.4,
+   56.9,
+   72.8
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   10.4,
+   9.3,
+   8.4,
+   8.0,
+   7.2,
+   7.4,
+   7.8,
+   6.8,
+   6.6,
+   6.6,
+   11.0,
+   9.2,
+   9.0,
+   8.4,
+   7.9,
+   8.3,
+   9.8,
+   13.1,
+   15.1,
+   11.2,
+   11.9,
+   11.1,
+   8.2,
+   10.1,
+   9.9,
+   7.7,
+   9.0,
+   8.8,
+   9.4,
+   9.9,
+   8.7,
+   9.6,
+   10.0,
+   9.2,
+   9.7,
+   9.7,
+   10.1,
+   8.0,
+   10.9,
+   9.2,
+   8.2,
+   9.1,
+   10.9,
+   9.1,
+   11.3,
+   11.2,
+   7.7,
+   7.2,
+   7.0,
+   6.0,
+   5.7,
+   6.0,
+   5.1,
+   4.9,
+   4.9,
+   4.2,
+   4.3,
+   4.3,
+   5.0,
+   5.2,
+   4.6,
+   4.8,
+   3.2,
+   4.6,
+   6.0,
+   6.3,
+   6.1,
+   8.4,
+   9.7,
+   9.0,
+   10.8,
+   10.1,
+   9.3,
+   10.4,
+   10.1,
+   9.6,
+   10.7,
+   12.2,
+   11.0,
+   12.6,
+   13.2,
+   16.1,
+   14.0,
+   14.4,
+   14.0,
+   12.7,
+   15.8,
+   17.3,
+   12.4,
+   11.3,
+   10.0,
+   8.4,
+   7.6,
+   6.5,
+   5.6,
+   5.7,
+   5.8,
+   5.2,
+   5.0,
+   5.6,
+   6.5,
+   7.2,
+   8.4,
+   10.9,
+   11.1,
+   8.9,
+   11.7,
+   13.1,
+   13.5,
+   19.0,
+   20.2,
+   19.1,
+   16.3,
+   15.5,
+   15.7,
+   22.8,
+   22.4,
+   22.0,
+   19.1,
+   18.5,
+   17.9,
+   13.2,
+   11.4,
+   9.1,
+   10.0,
+   10.7,
+   10.2,
+   8.8,
+   8.6,
+   9.2,
+   8.3,
+   8.1,
+   9.3,
+   9.7,
+   9.3,
+   9.7,
+   8.2,
+   8.4,
+   7.4,
+   7.5,
+   7.0,
+   7.5
+  ],
+  "p10": 5.6,
+  "p25": 7.4,
+  "tv": 9.2,
+  "thap": [
+   "2020-03",
+   3.2
+  ],
+  "nay": [
+   "2026-10",
+   7.5
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Ba kịch bản dùng P/E 12 · 9,5 · 8,5 theo mức ROE 2027E (~8% · 13% · 18%): VHC được trả P/E cao khi LN đáy (ROE 10–14%: thấp 10% 11,5) và thấp khi LN đỉnh (ROE ≥ 20%: trung vị 7,7). Hiện 7,5 ở ROE 15%, dưới thấp 10% (8,0) của vùng ROE 14–18%."
+ },
+ "nhay": [
+  [
+   "Giá bán bình quân 2027 ±3%",
+   301,
+   13.6
+  ],
+  [
+   "Giá thành/kg 2027 ±3% (cá mua ngoài, thức ăn)",
+   -259,
+   11.7
+  ],
+  [
+   "P/E ±1 lần",
+   null,
+   6.0
+  ],
+  [
+   "Sản lượng 2027 ±5%",
+   60,
+   2.7
+  ],
+  [
+   "Chi phí bán hàng & QLDN ±0,5 điểm % doanh thu",
+   -51,
+   2.3
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    312,
+    400,
+    469
+   ],
+   "ck": 433,
+   "dt": 3471
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    205,
+    306,
+    380
+   ],
+   "ck": 277,
+   "dt": 2872
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1259,
+    1448,
+    1590
+   ]
+  },
+  {
+   "quy": "Cả năm 2027",
+   "ln": [
+    757,
+    1254,
+    1795
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "30/10–11/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Doanh thu tháng 7–9 3.285 tỷ ≈ cùng kỳ; mô hình LN 400 tỷ (−8% so Q3/2025), biên gộp 18%. VHC hay nộp BCTC trễ vì trùng lịch làm việc với DOC (FPTS).",
+   "tac": [
+    "≥ 400 tỷ",
+    "giữ cơ sở; dưới 310 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "biên gộp, LN tài chính"
+  },
+  {
+   "khi": "Từ 8/2026",
+   "loai": "len",
+   "tieu": "Đối thủ chịu thuế CBPG mới (POR21)",
+   "ct": "Kết quả cuối POR21: Navico, Caseamex 0,84 USD/kg, Biển Đông 1,00, NTSF 0,38 (sơ bộ 0,07–0,29); VHC ngoài lệnh. Tháng 9 doanh thu Mỹ của VHC +22%.",
+   "tac": [
+    "+4,5 nghìn đ/cp",
+    "mỗi 1% giá bán bình quân 2027 giữ được nhờ Mỹ"
+   ],
+   "theo_doi": "doanh thu Mỹ hàng tháng"
+  },
+  {
+   "khi": "Từ 24/7/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thuế Section 301 12,5% vào Mỹ",
+   "ct": "Áp cho hàng Việt Nam 4 năm (Ấn Độ, Indonesia 10%) sau khi thuế Section 122 10% hết hạn. Doanh thu Mỹ tháng 7 −36%, Q3 −16% sau nửa năm tích trữ.",
+   "tac": [
+    "−2,7 nghìn đ/cp",
+    "nếu sản lượng 2027 −3% thay vì +2%"
+   ],
+   "theo_doi": "doanh thu Mỹ tháng 10–12"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dư cung cá tra",
+   "ct": "Cá nguyên liệu 33–35 nghìn đ/kg kéo hộ nuôi thả lại vào mùa giống cuối 2026; FPTS dự báo giá cá tra ngành 2027 −6,5%.",
+   "tac": [
+    "±4,5 nghìn đ/cp",
+    "mỗi 1% giá bán bình quân 2027"
+   ],
+   "theo_doi": "giá cá nguyên liệu, diện tích thả nuôi"
+  },
+  {
+   "khi": "Cuối 2026–2027",
+   "loai": "len",
+   "tieu": "Cổ tức 2026: 3.000 đ/cp",
+   "ct": "ĐHĐCĐ 2026 nâng cổ tức tiền mặt lên 30% (2025: 20%, tạm ứng chi 15/10/2025); chưa chốt ngày. 5,8% thị giá 23/10, ~628 tỷ — VHC có tiền và đầu tư ngắn hạn 3.137 tỷ (30/6).",
+   "tac": [
+    "3.000 đ/cp",
+    "tiền mặt; giá trị 12 tháng chưa cộng khoản này"
+   ],
+   "theo_doi": "nghị quyết HĐQT về ngày chốt"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "EU siết hải sản Nga",
+   "ct": "EC đề xuất gói trừng phạt 21 (9/6/2026) cấm cá tuyết Nga; minh thái Nga chiếm phần lớn minh thái nhập EU, lách qua Trung Quốc. EU của VHC tháng 9 +41%.",
+   "tac": "",
+   "theo_doi": "27 nước EU thông qua gói 21"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thức ăn, cá giống, El Niño",
+   "ct": "Bột cá neo đỉnh vì nguồn cung Peru gián đoạn; El Niño xác suất 80–90% từ 6–8/2026, có thể kéo sang 2027 (Shinhan); bã đậu (~60% giá thành thức ăn) +3%/năm.",
+   "tac": [
+    "±11,7 nghìn đ/cp",
+    "mỗi 3% giá thành/kg"
+   ],
+   "theo_doi": "giá bột cá Peru, bã đậu nành"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Trung Quốc suy yếu",
+   "ct": "Biến động mạnh: tháng 7 +80% nhưng tháng 9 chỉ 14 tỷ (−82%); cạnh tranh rô phi nội địa và minh thái Nga. FPTS dự báo 2026 −13,5%, tỷ trọng ~5%.",
+   "tac": "",
+   "theo_doi": "doanh thu Trung Quốc hàng tháng"
+  },
+  {
+   "khi": "11/2026–2/2027",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Điều tra Section 301 về sở hữu trí tuệ",
+   "ct": "USTR khởi xướng 29/5/2026 với Việt Nam; quyết định khoảng cuối 11/2026, có thể gia hạn tới cuối 2/2027 — rủi ro thêm thuế lên hàng xuất khẩu.",
+   "tac": "",
+   "theo_doi": "quyết định của USTR"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "hai",
+   "tieu": "Đầu tư 1.520 tỷ năm 2026",
+   "ct": "Mở rộng collagen, dây chuyền Feed One 2 (~300 tỷ), nhà máy Sa Giang (>600 tỷ), vùng nuôi. Tăng khấu hao trước khi có doanh thu.",
+   "tac": "",
+   "theo_doi": "tiến độ nhà máy, biên collagen"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu thị trường Mỹ theo quý",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q1",
+    "Q2",
+    "Q3"
+   ],
+   "ss": [
+    {
+     "ten": "2025",
+     "v": [
+      690,
+      1153,
+      1024
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "2026",
+     "v": [
+      962,
+      1272,
+      856
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q1 +39,5%, Q2 +10,3% rồi Q3 −16% khi thuế Section 301 12,5% có hiệu lực 24/7; riêng tháng 9 Mỹ +22%.",
+   "ng": "FPTS 18/06 (Q1), MAS 10/08 (Q2), báo cáo doanh thu tháng VHC (Q3); số 2025 suy từ tốc độ tăng công bố"
+  },
+  {
+   "ten": "Biên gộp và chi phí bán hàng & QLDN",
+   "dv": "% doanh thu",
+   "kieu": "duong",
+   "nhan": [
+    "Q3/23",
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      10.6,
+      8.2,
+      9.3,
+      14.7,
+      17.7,
+      18.3,
+      12.7,
+      19.8,
+      16.8,
+      17.9,
+      14.6,
+      20.7
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "CPBH & QLDN",
+     "v": [
+      5.0,
+      6.2,
+      4.6,
+      4.5,
+      4.9,
+      6.8,
+      4.6,
+      4.5,
+      4.2,
+      5.6,
+      4.8,
+      4.5
+     ],
+     "mau": "c4",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Biên gộp đáy 8,2% (Q4/2023), Q2/2026 20,7% cao nhất từ Q2/2023; chi phí bán hàng & QLDN dao động 4–7% doanh thu.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "LN cổ đông theo năm",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "4Q tới Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN cổ đông",
+     "v": [
+      1180,
+      705,
+      1101,
+      1977,
+      897,
+      1226,
+      1418,
+      1452
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Chu kỳ 3 năm: đỉnh 2019, 2022 xen đáy 2020, 2023; 2025 hồi chưa bằng đỉnh. Mô hình: 2026E 1.448, 2027E 1.254 tỷ.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "Thuế CBPG cá tra vào Mỹ, kết quả cuối POR21",
+   "dv": "USD/kg",
+   "kieu": "cot",
+   "nhan": [
+    "VHC",
+    "NTSF",
+    "Navico",
+    "Cần Thơ",
+    "Biển Đông",
+    "Toàn quốc"
+   ],
+   "ss": [
+    {
+     "ten": "Thuế CBPG",
+     "v": [
+      0.0,
+      0.38,
+      0.84,
+      0.84,
+      1.0,
+      2.39
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 2,
+   "y": "VHC nằm ngoài lệnh CBPG từ 2025 (hiệu lực ngược về 1/8/2021); đối thủ bị nâng từ 0,07–0,29 (sơ bộ) lên 0,38–1,00 USD/kg. Cần Thơ = Caseamex.",
+   "ng": "Federal Register 24/01/2025 (VHC) · VASEP, SeafoodSource (POR21, DOC 8/2026)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 14000,
+    "th": 6349,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 5/2026 · BCTC Q2"
+   },
+   {
+    "ten": "LN cổ đông",
+    "kh": 1600,
+    "th": 741,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 5/2026 · BCTC Q2"
+   }
+  ],
+  "y": "ĐHĐCĐ nâng kế hoạch LN từ 1.500 lên 1.600 tỷ. 6T đạt 45% kế hoạch doanh thu, 46% kế hoạch LN; doanh thu tháng 7–9 ≈ cùng kỳ. Mô hình cơ sở cả năm 1.448 tỷ ≈ 90% kế hoạch. Cổ tức 2026 kế hoạch 3.000 đ/cp, đầu tư 1.520 tỷ.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-08-10",
+   "kn": "MUA",
+   "tp": 69900,
+   "ln26": 1433,
+   "ln27": 926,
+   "pp": "FCFF (r 13%, g 1%)",
+   "y": "Bi quan nhất về 2027: doanh thu −10%, biên LN hoạt động 8,8%, LN 926 tỷ (−35%); nâng lên MUA vì giá đã giảm 15% từ báo cáo trước.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/ctcp_vinh_hoan_vhc_mua_tp_69_900_vnd_vung_manh_trong_q2_2026.pdf"
+  },
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-06-23",
+   "kn": "TRUNG LẬP",
+   "tp": 60300,
+   "ln26": 1572,
+   "ln27": 1519,
+   "pp": "P/B 1,2 theo ROE 15% (r 12,6%, g 2%)",
+   "y": "Giá bán cá tra +10% năm 2026 bù chi phí, biên gộp giữ ~16%; P/B mục tiêu thấp vì ROE 15–16% chưa bứt phá.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/ctcp_vinh_hoan_bao_cao_cap_nhat_1q2026.pdf"
+  },
+  {
+   "ctck": "FPTS",
+   "ngay": "2026-06-18",
+   "kn": "THEO DÕI",
+   "tp": 63400,
+   "ln26": 1721,
+   "ln27": 1406,
+   "pp": "FCFE + FCFF (50:50)",
+   "y": "Biên gộp 2026 20,6% nhờ giá xuất khẩu +8,1%, 2027 17,3% khi dư cung (giá cá ngành −6,5%); vùng chờ mua 52.800 đ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/theo_doi_bao_cao_cap_nhat_dinh_gia_fpts_18_06_2026.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-06-10",
+   "kn": "MUA",
+   "tp": 69400,
+   "ln26": 1523,
+   "ln27": 1351,
+   "pp": "FCFF + P/E 11 (50:50)",
+   "y": "Động lực Mỹ: tồn kho thấp, cá thịt trắng tự nhiên thiếu; VHC giữ CBPG 0 trong khi đối thủ bị nâng ở POR21 sơ bộ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/vhc_mua_gia_mt_vnd_69_400_21_5_dong_luc_tu_thi_truong_my.pdf"
+  },
+  {
+   "ctck": "NHSV",
+   "ngay": "2026-06-06",
+   "kn": "MUA",
+   "tp": 75000,
+   "ln26": 1600,
+   "ln27": 1800,
+   "pp": "P/E, P/B",
+   "y": "Lạc quan nhất: LN 2026 1.600–1.700 tỷ, 2027 1.800 tỷ nhờ giá cá neo đỉnh; nhấn mạnh mua cp quỹ và cổ tức 3.000 đ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/Ca_tra_vuot_vu_mon.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Cả 5 báo cáo ra trước kết quả cuối POR21 (8/2026) và trước số liệu doanh thu Mỹ tháng 7–9; đều tính trên ~209,5 triệu cp sau đợt mua cp quỹ. Không có cổ tức tiền mặt nào GDKHQ sau ngày các báo cáo nên trang giữ nguyên giá mục tiêu.",
+ "nguon": [
+  {
+   "ten": "Mirae Asset — Vững mạnh trong Q2 2026",
+   "ngay": "10/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/ctcp_vinh_hoan_vhc_mua_tp_69_900_vnd_vung_manh_trong_q2_2026.pdf"
+  },
+  {
+   "ten": "KBSV — Báo cáo cập nhật 1Q2026",
+   "ngay": "23/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/ctcp_vinh_hoan_bao_cao_cap_nhat_1q2026.pdf"
+  },
+  {
+   "ten": "FPTS — Báo cáo cập nhật định giá",
+   "ngay": "18/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/theo_doi_bao_cao_cap_nhat_dinh_gia_fpts_18_06_2026.pdf"
+  },
+  {
+   "ten": "Shinhan — Động lực từ thị trường Mỹ",
+   "ngay": "10/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/vhc_mua_gia_mt_vnd_69_400_21_5_dong_luc_tu_thi_truong_my.pdf"
+  },
+  {
+   "ten": "NHSV — Cá tra vượt vũ môn",
+   "ngay": "06/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHC/Ca_tra_vuot_vu_mon.pdf"
+  },
+  {
+   "ten": "Federal Register 90 FR 8120 — Partial revocation, Vinh Hoan (DS536)",
+   "ngay": "24/01/2025",
+   "link": "https://www.govinfo.gov/content/pkg/FR-2025-01-24/pdf/2025-01654.pdf"
+  },
+  {
+   "ten": "Federal Register — Kết quả cuối rà soát 2023–2024 cá tra Việt Nam",
+   "ngay": "13/08/2026",
+   "link": "https://public-inspection.federalregister.gov/2026-16553.pdf"
+  },
+  {
+   "ten": "SeafoodSource — DOC: Biển Đông 1,00, NTSF 0,38 USD/kg",
+   "ngay": "08/2026",
+   "link": "https://www.seafoodsource.com/news/us-department-of-commerce-determines-certain-vietnamese-companies-dumped-fish-fillets"
+  },
+  {
+   "ten": "VnBusiness — Kết quả cuối POR21: thuế CBPG tăng mạnh",
+   "ngay": "08/2026",
+   "link": "https://vnbusiness.vn/xuat-khau-ca-tra-sang-my-gap-kho-khi-thue-chong-ban-pha-gia-tang-manh.html"
+  },
+  {
+   "ten": "Trung tâm WTO — Thuế cá tra, basa sang Mỹ đảo chiều",
+   "ngay": "08/2026",
+   "link": "https://trungtamwto.vn/tin-tuc/33256-thue-ca-tra-basa-sang-my-dao-chieu"
+  },
+  {
+   "ten": "24HMoney — VHC hưởng lợi khi thuế CBPG POR21 tăng mạnh",
+   "ngay": "08/2026",
+   "link": "https://24hmoney.vn/news/vhc-huong-loi-khi-thue-chong-ban-pha-gia-por21-tang-manh-khoang-cach-canh-tranh-voi-cac-doanh-nghiep-cung-nganh-ngay-cang-noi-rong-c30a2820904.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Doanh thu tháng 7/2026 giảm 10%",
+   "ngay": "08/2026",
+   "link": "https://mekongasean.vn/vinh-hoan-co-thang-giam-doanh-thu-dau-tien-trong-nam-2026-58562.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Doanh thu tháng 8/2026",
+   "ngay": "09/2026",
+   "link": "https://mekongasean.vn/doanh-thu-vinh-hoan-lay-lai-da-tang-trong-thang-82026-59560.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Doanh thu tháng 8/2026, cá tra vẫn chịu sức ép",
+   "ngay": "09/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vinh-hoan-vhc-lay-lai-da-tang-truong-doanh-thu-ca-tra-van-chiu-suc-ep.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Doanh thu tháng 9/2026, Trung Quốc −82%",
+   "ngay": "10/2026",
+   "link": "https://mekongasean.vn/xuat-khau-cua-vinh-hoan-sang-thi-truong-trung-quoc-sut-giam-manh-60761.html"
+  },
+  {
+   "ten": "VnEconomy — VHC chi gần 930 tỷ mua cổ phiếu quỹ",
+   "ngay": "05/2026",
+   "link": "https://vneconomy.vn/vhc-chi-gan-930-ty-mua-co-phieu-quy-tiep-tuc-thu-hep-danh-muc-chung-khoan-ngoai-nganh.htm"
+  },
+  {
+   "ten": "Mekong ASEAN — Vĩnh Hoàn chi hơn 900 tỷ mua lại cổ phiếu",
+   "ngay": "05/2026",
+   "link": "https://mekongasean.vn/vinh-hoa-n-chi-hon-900-ty-do-ng-mua-lai-co-phieu-55341.html"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — ĐHĐCĐ: kế hoạch LN 1.600 tỷ",
+   "ngay": "05/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/post-295739.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Kế hoạch 2026: lãi 1.600 tỷ, đầu tư hơn 1.500 tỷ",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vinh-hoan-vhc-dat-muc-tieu-lai-1-600-ty-dong-rot-hon-1-500-ty-mo-rong-vung-nuoi-va-nang-cap-ha-tang.html"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ 2026: hơn 1.100 tỷ mở rộng chuỗi sản xuất",
+   "ngay": "05/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-vinh-hoan-vhc-2026-ca-tra-don-co-hoi-thay-the-ca-thit-trang-tai-chau-au-don-hon-1-100-ty-dong-mo-rong-chuoi-san-xuat.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — Kế hoạch doanh thu 14.000 tỷ, cổ tức 30%",
+   "ngay": "04/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/vinh-hoan-len-ke-hoach-doanh-thu-vuot-14000-ty-dong-195452.html"
+  },
+  {
+   "ten": "VnEconomy — Tạm ứng cổ tức 2025: 2.000 đ/cp",
+   "ngay": "09/2025",
+   "link": "https://vneconomy.vn/vhc-sap-chi-gan-450-ty-dong-tam-ung-co-tuc-2025.htm"
+  },
+  {
+   "ten": "VCCI — Xuất khẩu cá tra chậm lại trước sức ép thuế CBPG",
+   "ngay": "08/2026",
+   "link": "https://vcci.com.vn/tin-tuc/xuat-khau-ca-tra-cham-lai-truoc-suc-ep-thue-chong-ban-pha-gia-tai-my"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Mỹ áp thuế Section 301 12,5% với hàng Việt Nam từ 24/7/2026, thời hạn 4 năm; Ấn Độ, Indonesia 10%.",
+     "ng": "MAS 10/08 · FPTS 18/06"
+    },
+    {
+     "h": 1,
+     "t": "Hạn ngạch minh thái Alaska −26%, cá tuyết Barents −16%, biển Bắc −44% (2026); Mỹ cấm cá Nga chế biến qua nước thứ ba.",
+     "ng": "FPTS 18/06 · KBSV 23/06"
+    },
+    {
+     "h": 1,
+     "t": "EU đề xuất gói trừng phạt 21 (9/6/2026) lần đầu nhắm vào hải sản Nga; cá tra hưởng thuế 0% theo EVFTA, UKVFTA.",
+     "ng": "FPTS 18/06 · KBSV 23/06"
+    },
+    {
+     "h": -1,
+     "t": "USTR điều tra Section 301 về sở hữu trí tuệ với Việt Nam (29/5/2026), quyết định khoảng 11/2026–2/2027.",
+     "ng": "FPTS 18/06"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Xuất khẩu cá tra 9T/2026 ~1,7 tỷ USD (+11%), chậm lại từ tháng 7; VASEP dự báo cả năm ~2,3 tỷ USD.",
+     "ng": "VASEP · VCCI"
+    },
+    {
+     "h": -1,
+     "t": "Thả nuôi 3 tỉnh chính −5,5% (5T/2026), cá nguyên liệu 33–35 nghìn đ/kg; FPTS dự báo giá cá tra 2027 −6,5% khi hộ nuôi thả lại.",
+     "ng": "FPTS 18/06 · KBSV 23/06"
+    },
+    {
+     "h": 1,
+     "t": "POR21 (8/2026): Navico, Caseamex 0,84, Biển Đông 1,00, NTSF 0,38 USD/kg, toàn quốc 2,39 — VHC ngoài lệnh.",
+     "ng": "VASEP · Federal Register"
+    },
+    {
+     "h": -1,
+     "t": "Cá giống tăng 2–3 lần (28 → 58–90 nghìn đ/kg) đầu 2026; bột cá neo đỉnh, El Niño có thể kéo sang 2027.",
+     "ng": "KBSV 23/06 · Shinhan 10/06"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Chuỗi khép kín: tự chủ ~70% cá giống và thức ăn (Feed One), mua ngoài ~30% cá nguyên liệu.",
+     "ng": "Shinhan 10/06 · KBSV 23/06"
+    },
+    {
+     "h": 1,
+     "t": "Mua 15 triệu cp quỹ (6,7%) giá 61.988 đ, nâng cổ tức lên 3.000 đ; tiền ròng 670 tỷ (30/6).",
+     "ng": "VnEconomy · NHSV 06/06 · BCTC"
+    },
+    {
+     "h": 0,
+     "t": "Gia đình Chủ tịch Trương Thị Lệ Khanh nắm 100,68 triệu cp (~48% cp lưu hành sau mua cp quỹ); Mitsubishi, Dragon Capital mỗi bên ~6–7%.",
+     "ng": "FPTS 18/06 · Báo Pháp luật"
+    },
+    {
+     "h": -1,
+     "t": "Hay nộp BCTC quý trễ hạn vì trùng lịch làm việc với DOC; HOSE nhiều lần nhắc nhở.",
+     "ng": "FPTS 18/06"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Cá tra phi lê & giá trị gia tăng",
+   "phu": "~54% doanh thu 2025 (6.498 tỷ); Mỹ, châu Âu, Trung Quốc, nội địa (BASAmaster)",
+   "so": [
+    [
+     "Sản lượng 2025",
+     "87,7 nghìn tấn",
+     "Mỹ 45,7; châu Âu 18,7; TQ 7,6"
+    ],
+    [
+     "Giá bán Q1/2026",
+     "3,1 USD/kg",
+     "+11%; Mỹ 3,3 (+14%)"
+    ],
+    [
+     "Thuế CBPG Mỹ",
+     "0 USD/kg",
+     "ngoài lệnh từ 1/8/2021"
+    ],
+    [
+     "Q1/2026",
+     "1.546 tỷ",
+     "+14%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Mỹ là thị trường lớn nhất: Q1/2026 962 tỷ (+39,5%), Q2 1.272 tỷ (+10,3%), Q3 856 tỷ (−16%).",
+     "ng": "FPTS · MAS · báo cáo tháng"
+    },
+    {
+     "t": "Trung Quốc giảm mạnh vì ưu tiên cá nguyên con giá rẻ; châu Âu tăng nhờ thay thế cá thịt trắng biển.",
+     "ng": "KBSV 23/06 · báo cáo tháng"
+    }
+   ]
+  },
+  {
+   "ten": "Phụ phẩm, collagen & gelatin",
+   "phu": "Phụ phẩm (bột, mỡ cá) 16%, collagen & gelatin ~6,5% doanh thu 2025",
+   "so": [
+    [
+     "Phụ phẩm 2025",
+     "1.953 tỷ",
+     "Q1/2026 +17%"
+    ],
+    [
+     "Collagen & gelatin 2025",
+     "780 tỷ",
+     "Q1/2026 198 tỷ (+21%)"
+    ],
+    [
+     "Sản lượng C&G Q1/2026",
+     "700 tấn",
+     "+34%; giá 10,8 USD/kg (−10%)"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Phụ phẩm hưởng lợi khi giá bột cá, mỡ cá thế giới neo cao (Q1/2026 +17%).",
+     "ng": "Shinhan 10/06 · KBSV 23/06"
+    },
+    {
+     "t": "Collagen chịu cạnh tranh giá từ Ấn Độ; VHC ra Collagen Tripeptide GPX-4 cao cấp, mở rộng nhà máy trong kế hoạch đầu tư 2026.",
+     "ng": "KBSV 23/06 · ĐHĐCĐ 2026"
+    }
+   ]
+  },
+  {
+   "ten": "Sa Giang và khác",
+   "phu": "Sa Giang (bánh phồng, sản phẩm gạo, sở hữu 76,7%); thức ăn, trái cây Thành Ngọc, cá thương mại",
+   "so": [
+    [
+     "Sa Giang 2025",
+     "732 tỷ",
+     "Q1/2026 +16%"
+    ],
+    [
+     "Khác 2025",
+     "2.069 tỷ",
+     "thức ăn, trái cây"
+    ],
+    [
+     "Đầu tư 2026",
+     "1.520 tỷ",
+     "Sa Giang > 600, Feed One 2 ~300"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Nhà máy Sa Giang mới và dây chuyền Feed One 2 là phần lớn vốn đầu tư 2026.",
+     "ng": "Báo Pháp luật (ĐHĐCĐ 2026)"
+    }
+   ]
+  }
+ ]
+}
