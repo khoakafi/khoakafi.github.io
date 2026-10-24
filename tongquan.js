@@ -19,7 +19,7 @@
     const n = ls.m.length - 1;
     const o = (ten, ngan, a, mau) => { if (!a || a[n] == null) return '';
       const d = n && a[n-1] != null ? Math.round((a[n] - a[n-1])*10)/10 : null;
-      const dd = d == null ? '' : `<span class="tqkc">${d === 0 ? 'không đổi' : (d > 0 ? '▲ ' : '▼ ') + vn(Math.abs(d)) + ' điểm'}</span>so với tháng ${thg(ls.m[n-1])}`;
+      const dd = d == null ? '' : `<span class="tqkc" style="background:${mau}14;color:${mau};border:1px solid ${mau}33">${d === 0 ? 'không đổi' : (d > 0 ? '▲ ' : '▼ ') + vn(Math.abs(d)) + ' điểm'}</span>so với tháng ${thg(ls.m[n-1])}`;
       return `<div class="tqk"><div class="tqkl"><i style="background:${mau}"></i><span class="tqkx">${ten}</span><span class="tqkn">${ngan}</span></div><div class="tqkv">${vn(a[n])}%</div><div class="tqkd">${dd}</div></div>`; };
     return `<div class="tqls">${o('Lãi tiết kiệm 6–12 tháng', 'Tiết kiệm 6–12 tháng', ls.dep, DEP)}${o('Lãi cho vay', 'Cho vay', ls.lend, LEND)}
       <div class="tqsrc"><span class="tqngp">${BANK}Nguồn: Ngân hàng Nhà nước Việt Nam</span><span class="tqsrcm">Số liệu tháng ${thg(ls.m[n])}</span></div></div>`; }
