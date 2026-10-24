@@ -395,6 +395,13 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   `/tmp/cbd` (co-ban-data), `dg-test.js` có `SEL=<css>` (chụp phần tử) và `EVAL=<biểu thức>`. Quy trình giao việc: `research/ho-so/GIAO-VIEC.md`
   (mục "Bài học"), tác tử dừng vì giới hạn phiên thì `SendMessage` cho chạy tiếp sau giờ mở lại.
 
+- **Cập nhật sau BCTC Q3/2026 (24/10, anh Khoa: "tuần này ra KQKD quý 3 — xem kĩ, update hết").** Quy trình: kafi-core (nhánh `claude/co-ban-research`)
+  `research/ho-so/GIAO-VIEC-Q3.md` — một agent/mã: Q3 thực tế vào `A`, 2026E = 9T + Q4 ước, xem lại giả định 2027, sửa lời văn, `ky`/`cap_nhat`/`lan_sau`;
+  index.json ngày `2026-10-24a`. Dữ liệu: `co-ban-data.yml` input **`lai=web`** (tải lại giá + BCTC mọi mã, lỗi thì giữ số cũ). VNDirect nhập BCTC trễ vài ngày
+  → mã đã công bố mà chưa có trên VNDirect thì dùng số công bố (≥ 2 nguồn, ghi `ky` "KQKD Q3/2026 công bố"). Đợt 24/10: 18 mã có BCTC VNDirect + FPT, PNJ
+  (PNJ viết lại sau ĐHĐCĐ bất thường: dự phòng kim cương 7.071 tỷ là tổng cả năm gồm ~822 tỷ đã ghi 6T; P/B theo ROE 2029E). Mẹ sau con (MSN sau MCH + TCB,
+  VSC chạy lại sau HAH). SSI, VGC chờ BCTC hợp nhất. `ho-so-tai.yml` cần `apt-get update` trước khi cài poppler (mirror 404).
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
