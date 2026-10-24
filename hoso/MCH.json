@@ -3,9 +3,9 @@
  "ma": "MCH",
  "ten": "Công ty Cổ phần Hàng tiêu dùng Masan (Masan Consumer)",
  "nganh": "Hàng tiêu dùng nhanh – thực phẩm, đồ uống",
- "ky": "BCTC Q2/2026 · Q3/2026 chưa công bố",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026",
+ "ky": "BCTC Q3/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q4/2026",
  "cp_trieu": 1307.4,
  "cp_ng": "Vốn điều lệ 12.944,9 tỷ (BCTC Q2/2026, sau thưởng 1.000:225 chốt 12/01/2026) + 12,94 triệu cp ESOP 2026; khớp FPTS 24/08 (1.307,4 triệu) và tiền tạm ứng cổ tức đợt 1/2026 (~2.615 tỷ ÷ 2.000 đ)",
  "vc_them": 129,
@@ -17,45 +17,45 @@
   ]
  ],
  "tieu_de": {
-  "t": "Lãi cốt lõi lập đỉnh nhờ gia vị, nhưng giá đã trả trước cả tăng trưởng 2027",
+  "t": "Q3 tăng tốc đúng kịch bản, nhưng giá đã trả trước cả tăng trưởng 2027",
   "dk": "up_duoi:0",
-  "khac": "Lãi cốt lõi lập đỉnh nhờ gia vị và Retail Supreme; giá đã về dưới giá trị cơ sở"
+  "khac": "Q3 tăng tốc đúng kịch bản nhờ gia vị và mì cao cấp; giá đã về dưới giá trị cơ sở"
  },
- "dong_mo": "6T/2026 doanh thu +13,6%, LN cổ đông +11,6%: gia vị +17%, điểm bán Retail Supreme 230.000 → 550.000. Nhưng so với 2024, doanh thu 2026E chỉ tăng 5,4%/năm — phần lớn là hồi nền thấp. Mô hình: LN 2027E 8.148 tỷ (+11%); P/E 20 cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 doanh thu +16,3% — nhanh nhất 3 năm, gia vị +18,8%, mì +19,3% — nhưng LN cổ đông +15,1% chỉ cao hơn mô hình 2% vì logistics lên 4,0% doanh thu. So với 2024, doanh thu 2026E chỉ tăng 5,9%/năm. Mô hình: LN 2027E 8.212 tỷ (+11%); P/E 20 cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "+17,1%",
-   "nhan": "doanh thu gia vị 6T/2026",
-   "tieu": "Gia vị và Retail Supreme đưa lãi cốt lõi lên đỉnh mới",
-   "t": "Gia vị — 35% doanh thu, 42% LN gộp, biên 54,8% — tăng 17,1%, nước mắm góp 80% phần tăng ở Q1. Retail Supreme đưa điểm bán giao dịch thường xuyên từ 230.000 lên 550.000, 5,8 SKU mỗi đơn (trước 4,7), chi phí phục vụ còn 5,2% doanh thu. Mô hình: LN HĐKD cốt lõi 2026E 7.954 tỷ, vượt đỉnh 2024 (7.525); LNST 7.442 tỷ, sát mức thấp kế hoạch 7.450–7.800.",
-   "ng": "FPTS 24/08 · MAS 19/08 · SHS 13/05 · mô hình"
+   "so": "+18,8%",
+   "nhan": "doanh thu gia vị Q3/2026",
+   "tieu": "Q3 xác nhận: gia vị và Retail Supreme đưa lãi cốt lõi lên đỉnh mới",
+   "t": "Gia vị — ~35% doanh thu, ~42% LN gộp 9T, biên ~55% — tăng 17,1% ở 6T và 18,8% ở Q3. Retail Supreme đưa điểm bán giao dịch thường xuyên từ 230.000 lên 550.000 (30/6); kênh truyền thống Q3 +17,3% (Q2 +10,6%). 9T: LNST 5.222 tỷ, 70% mức thấp kế hoạch. Mô hình: LN HĐKD cốt lõi 2026E 7.934 tỷ, vượt đỉnh 2024 (7.525); LNST 7.490 tỷ, sát mức thấp kế hoạch 7.450–7.800.",
+   "ng": "BCTC Q3/2026 · công bố 22/10 · FPTS 24/08 · mô hình"
   },
   {
-   "so": "+5,4%",
+   "so": "+5,9%",
    "nhan": "doanh thu/năm, 2024 → 2026E",
    "tieu": "2026 chủ yếu là hồi nền thấp; 2027 mới là phép thử",
-   "t": "2025 doanh thu −1,1%, LN −14,6% khi hộ kinh doanh chuyển sang kê khai thuế và kênh sỉ bị cắt từ 50–60% xuống 20–30% doanh thu. Tính từ 2024, doanh thu 2026E chỉ +5,4%/năm; LN cổ đông vẫn dưới đỉnh 7.803 tỷ vì thu nhập tài chính ròng từ 1.423 tỷ còn ~610 tỷ sau 23.070 tỷ cổ tức năm 2024. Mục tiêu 2030 gấp 2,3 lần doanh thu 2025 cần ~18%/năm; cơ sở 2027: doanh thu +7,7%, LN +10,8%.",
+   "t": "2025 doanh thu −1,1%, LN −14,6% khi hộ kinh doanh chuyển sang kê khai thuế và kênh sỉ bị cắt còn 20–30% doanh thu. Q3/2026 +16,3% trên nền Q3/2025 −5,9%: so với Q3/2024 chỉ +9,5%. Doanh thu 2026E chỉ +5,9%/năm từ 2024; LN cổ đông vẫn dưới đỉnh 7.803 tỷ vì thu nhập tài chính ròng từ 1.423 tỷ còn ~700 tỷ sau 23.070 tỷ cổ tức năm 2024. Mục tiêu 2030 gấp 2,3 lần doanh thu 2025 cần ~18%/năm; cơ sở 2027: doanh thu +7,7%, LN +10,6%.",
    "ng": "BCTC · FPTS 24/08 · SSI 17/04 · SHS 13/05 · mô hình"
   },
   {
-   "so": "45,7%",
-   "nhan": "biên gộp 6T/2026",
-   "tieu": "Biên gộp giữ được; rủi ro dồn vào đồ uống và nguyên liệu gốc dầu",
-   "t": "Biên gộp đứng trong 44–47% suốt 12 quý nhờ gia vị và đợt tăng giá bán 1–12% ở Q1/2026. Hai điểm yếu: chăm sóc gia đình còn 31,8% ở Q2 (−10,3 điểm %) vì hóa chất gốc dầu; đồ uống (16% doanh thu) chịu thuế TTĐB 8% từ 2027 nếu chưa giảm đường — FPTS ước mất 5–7 điểm % biên ngành hàng. Mô hình: −6 điểm % ≈ −270 tỷ LN, −4,2 nghìn đ/cp.",
-   "ng": "BCTC · FPTS 24/08 · ACBS 08/05 · mô hình"
+   "so": "45,6%",
+   "nhan": "biên gộp 9T/2026",
+   "tieu": "Biên gộp giữ được; áp lực chuyển sang logistics, đồ uống gánh thuế 2027",
+   "t": "Biên gộp đứng trong 44–47% suốt 12 quý; Q3 45,4% (Q3/2025 45,6%) nhờ giá bán bình quân +4–5% (tăng giá từ Q2); thêm đợt tăng giá đồ uống, mì từ đầu Q4. Áp lực sang chi phí: logistics 4,0% doanh thu (3,3%), CPBH & QLDN Q3 22,1% (21,7%). Đồ uống (16% doanh thu) chịu thuế TTĐB 8% từ 2027 — FPTS ước mất 5–7 điểm % biên; mô hình: −6 điểm % ≈ −270 tỷ LN, −4,2 nghìn đ/cp.",
+   "ng": "BCTC Q3/2026 · công bố 22/10 · FPTS 24/08 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/E 20 × LN 2027E: {up_so} so với giá hiện tại",
    "dk": "up_duoi:0",
-   "t": "P/E 4 quý 26,1 lần (giá 20/10), trung vị từ 2017 16,1, VNM 11,0: mặt bằng mới có từ khi lên HOSE (25/12/2025) và vào VN30 (03/08/2026). Thị trường đang trả 22,4 lần LN 2027E. Cơ sở dùng 20 — trung vị 2024–2025 (19,7), trước đợt lên sàn; xấu 16 (trung vị dài hạn) → 81,9; tốt 25 (đáy từ khi lên HOSE) → 172,2. Cổ tức 5.000 đ/cp ≈ 3,6%.",
-   "ng": "mô hình · P/E: BCTC VNDirect · gói số liệu 20/10",
+   "t": "P/E 4 quý 25,6 lần (giá 23/10), trung vị từ 2017 16,1, VNM 11,0: mặt bằng mới có từ khi lên HOSE (25/12/2025) và vào VN30 (03/08/2026). Thị trường đang trả 22,6 lần LN 2027E. Cơ sở dùng 20 — trung vị 2024–2025 (19,7), trước đợt lên sàn; xấu 16 (trung vị dài hạn) → 83,5; tốt 25 (đáy từ khi lên HOSE) → 172,8. Cổ tức 5.000 đ/cp ≈ 3,5%.",
+   "ng": "mô hình · P/E: BCTC VNDirect · gói số liệu 23/10",
    "khac": {
     "so": "{gt_so}",
     "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
     "tieu": "P/E 20 × LN 2027E: {up_so} so với giá hiện tại",
-    "t": "Định giá MCH đổi mặt bằng từ khi lên HOSE (25/12/2025) và vào VN30 (03/08/2026): P/E 4 quý 25,3–34,3 lần, trung vị từ 2017 chỉ 16,1. Cơ sở dùng 20 — trung vị 2024–2025 (19,7), trước đợt lên sàn; xấu 16 (trung vị dài hạn) → 81,9; tốt 25 (đáy từ khi lên HOSE) → 172,2. Cổ tức kế hoạch 2026 5.000 đ/cp."
+    "t": "Định giá MCH đổi mặt bằng từ khi lên HOSE (25/12/2025) và vào VN30 (03/08/2026): P/E 4 quý 25,3–34,3 lần, trung vị từ 2017 chỉ 16,1. Cơ sở dùng 20 — trung vị 2024–2025 (19,7), trước đợt lên sàn; xấu 16 (trung vị dài hạn) → 83,5; tốt 25 (đáy từ khi lên HOSE) → 172,8. Cổ tức kế hoạch 2026 5.000 đ/cp."
    }
   }
  ],
@@ -67,14 +67,14 @@
   ],
   "ln": [
    6667,
-   7356,
-   8148
+   7426,
+   8212
   ],
   "ln_truoc": 7803,
   "eps": [
    5099,
-   5626,
-   6232
+   5680,
+   6281
   ],
   "co_tuc_nam": 5000,
   "them": [
@@ -82,8 +82,8 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      30.6,
-     34.3,
-     37.0
+     34.7,
+     37.3
     ],
     "d": 1
    },
@@ -91,7 +91,7 @@
     "ten": "Biên gộp",
     "v": [
      45.5,
-     45.8,
+     45.5,
      46.2
     ],
     "d": 1,
@@ -115,8 +115,8 @@
     "mau": "c1",
     "v": [
      5567,
-     6560,
-     7198
+     6612,
+     7234
     ]
    },
    {
@@ -124,8 +124,8 @@
     "mau": "c2",
     "v": [
      3711,
-     4119,
-     4429
+     4227,
+     4545
     ]
    },
    {
@@ -133,8 +133,8 @@
     "mau": "c4",
     "v": [
      4628,
-     5031,
-     5473
+     4950,
+     5474
     ]
    }
   ],
@@ -180,10 +180,10 @@
    ]
   ],
   "tv": 23.1,
-  "moi_cp": 5358,
+  "moi_cp": 5551,
   "max": 35,
-  "y": "Biên LNST ~22% của MCH cao hơn cả 8 doanh nghiệp, ROE 4 quý ~40% chỉ sau Unilever (53%). Nhưng P/E ~23 của nhóm đi cùng lãi suất thấp ở Nhật, Mỹ, châu Âu; ở Việt Nam VNM giao dịch 11,0 lần (giá 20/10).",
-  "ng": "P/E trượt cùng ngành: bảng so sánh VPBS 27/03 (Bloomberg; trung vị 22 doanh nghiệp 23,1). MCH: LN cổ đông 4 quý đến Q2/2026 ÷ 1.307,4 triệu cp; VNM: gói số liệu, giá 20/10/2026"
+  "y": "Biên LNST ~22% của MCH cao hơn cả 8 doanh nghiệp, ROE 4 quý ~41% chỉ sau Unilever (53%). Nhưng P/E ~23 của nhóm đi cùng lãi suất thấp ở Nhật, Mỹ, châu Âu; ở Việt Nam VNM giao dịch 11,0 lần (giá 23/10).",
+  "ng": "P/E trượt cùng ngành: bảng so sánh VPBS 27/03 (Bloomberg; trung vị 22 doanh nghiệp 23,1). MCH: LN cổ đông 4 quý đến Q3/2026 ÷ 1.307,4 triệu cp; VNM: gói số liệu, giá 23/10/2026"
  },
  "mo_hinh": {
   "tieu": "Dự phóng theo ngành hàng",
@@ -194,14 +194,14 @@
   ],
   "dong": [
    {
-    "nhom": "Gia vị — Chin-su, Nam Ngư (35% doanh thu, 42% LN gộp 6T/2026)"
+    "nhom": "Gia vị — Chin-su, Nam Ngư (35% doanh thu, 42% LN gộp 9T/2026, ước)"
    },
    {
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      10.4,
-     12.01,
-     13.09
+     12.07,
+     13.15
     ],
     "d": 1,
     "tang": 1
@@ -210,7 +210,7 @@
     "ten": "Biên gộp (%)",
     "v": [
      53.5,
-     54.6,
+     54.8,
      55.0
     ],
     "d": 1
@@ -222,8 +222,8 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      9.33,
-     10.3,
-     11.02
+     10.57,
+     11.31
     ],
     "d": 1,
     "tang": 1
@@ -244,7 +244,7 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      10.82,
-     12.03,
+     12.04,
      12.88
     ],
     "d": 1,
@@ -254,7 +254,7 @@
     "ten": "Biên gộp (%)",
     "v": [
      42.8,
-     41.8,
+     41.1,
      42.5
     ],
     "d": 1
@@ -266,8 +266,8 @@
     "ten": "Doanh thu thuần (nghìn tỷ)",
     "v": [
      30.6,
-     34.3,
-     37.0
+     34.7,
+     37.3
     ],
     "d": 1,
     "tang": 1
@@ -276,7 +276,7 @@
     "ten": "Biên gộp (%)",
     "v": [
      45.5,
-     45.8,
+     45.5,
      46.2
     ],
     "d": 1
@@ -285,7 +285,7 @@
     "ten": "Chi phí bán hàng & QLDN / doanh thu (%)",
     "v": [
      22.2,
-     22.6,
+     22.7,
      22.3
     ],
     "d": 1
@@ -294,8 +294,8 @@
     "ten": "LN HĐKD cốt lõi (tỷ)",
     "v": [
      7137,
-     7954,
-     8853
+     7934,
+     8926
     ],
     "tang": 1
    },
@@ -303,7 +303,7 @@
     "ten": "Tài chính, liên kết & khác (tỷ)",
     "v": [
      628,
-     708,
+     801,
      750
     ]
    },
@@ -311,8 +311,8 @@
     "ten": "LNTT (tỷ)",
     "v": [
      7765,
-     8662,
-     9603
+     8735,
+     9676
     ],
     "tang": 1
    },
@@ -320,8 +320,8 @@
     "ten": "LN cổ đông (tỷ)",
     "v": [
      6667,
-     7356,
-     8148
+     7426,
+     8212
     ],
     "dam": 1,
     "tang": 1
@@ -330,111 +330,111 @@
     "ten": "EPS (đ)",
     "v": [
      5099,
-     5626,
-     6232
+     5680,
+     6281
     ],
     "eps": 1
    }
   ],
-  "ghi": "Doanh thu theo ngành hàng: SSI 17/04, FPTS 24/08, MAS 19/08 (thực phẩm tiện lợi 6T ước theo tỷ trọng 30%). LN HĐKD cốt lõi = LN gộp − CPBH − QLDN. 2026E = 6 tháng thực tế + 6 tháng ước tính; thuế 14%."
+  "ghi": "Doanh thu theo ngành hàng: SSI 17/04, FPTS 24/08, MAS 19/08 (thực phẩm tiện lợi 6T ước theo tỷ trọng 30%); Q3/2026 theo % tăng công bố 22/10 trên nền Q3/2025 ước theo tỷ trọng 2H/2025. LN HĐKD cốt lõi = LN gộp − CPBH − QLDN. 2026E = 9 tháng thực tế (BCTC Q3) + Q4 ước tính; thuế 14%."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   7356
+   7426
   ],
   "cuoi": [
    "2027E",
-   8148
+   8212
   ],
   "buoc": [
    [
     "Doanh thu gia vị +9%",
-    507
+    512
    ],
    [
     "TP tiện lợi +7%",
-    248
+    254
    ],
    [
     "Đồ uống & khác +7%",
-    303
+    298
    ],
    [
     "Biên gộp cao hơn",
-    136
+    195
    ],
    [
     "CPBH & QLDN",
-    -422
+    -406
    ],
    [
     "Tài chính & khác",
-    36
+    -44
    ],
    [
     "Thuế, CĐ thiểu số",
-    -16
+    -23
    ]
   ],
-  "y": "Ba ngành hàng góp 1.058 tỷ, riêng gia vị 507 tỷ; chi phí bán hàng & QLDN tăng theo doanh thu lấy lại 422 tỷ.",
+  "y": "Ba ngành hàng góp 1.064 tỷ, riêng gia vị 512 tỷ; chi phí bán hàng & QLDN tăng theo doanh thu lấy lại 406 tỷ.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Doanh thu gia vị: 2H/2026 · 2027",
+   "ten": "Doanh thu gia vị: Q4/2026 · 2027",
    "v": [
-    "+8 / +4%",
-    "+14 / +9%",
-    "+17 / +12%"
+    "+6% / +4%",
+    "+12% / +9%",
+    "+16% / +12%"
    ],
-   "ly_do": "6T/2026 +17,1%; nền Q3/2025 −13,8%, Q4/2025 +15,9%; FPTS 2026F +16%, 2027–2033 +5%/năm; ngành +2,6%/năm (Euromonitor)"
+   "ly_do": "6T +17,1%, Q3 +18,8% trên nền Q3/2025 −13,8%; nền Q4/2025 cao hơn (+15,9%); FPTS 2027–2033 +5%/năm; ngành +2,6%/năm (Euromonitor)"
   },
   {
-   "ten": "Doanh thu thực phẩm tiện lợi: 2H/2026 · 2027",
+   "ten": "Doanh thu thực phẩm tiện lợi: Q4/2026 · 2027",
    "v": [
-    "+5 / +2%",
-    "+10 / +7%",
-    "+13 / +10%"
+    "+6% / +2%",
+    "+12% / +7%",
+    "+16% / +10%"
    ],
-   "ly_do": "6T/2026 +10,9% (Omachi +15,2%); FPTS 2026F +10%, sau đó +4%/năm; VPBS 2027F +11,4%; giá trị ngành mì +1,4%/năm"
+   "ly_do": "6T +10,9%, Q3 +19,3% (cao cấp ~+30%); tăng giá chọn lọc từ đầu Q4; FPTS sau 2026 +4%/năm; VPBS 2027F +11,4%; giá trị ngành mì +1,4%/năm"
   },
   {
-   "ten": "Đồ uống, cà phê, CSGĐ & khác: 2H/2026 · 2027",
+   "ten": "Đồ uống, cà phê, CSGĐ & khác: Q4/2026 · 2027",
    "v": [
-    "+5 / 0%",
-    "+10 / +7%",
-    "+13 / +11%"
+    "+4% / 0%",
+    "+9% / +7%",
+    "+12% / +11%"
    ],
-   "ly_do": "6T/2026 +12,6% (CSGĐ +33%, đồ uống +7%, cà phê +5%); FPTS 2026F nhóm +10,5%; thuế TTĐB đồ uống có đường từ 2027"
+   "ly_do": "6T +12,6%; Q3 ~+11% (đồ uống +14%, Chanté đi ngang); tăng giá đồ uống từ đầu Q4; thuế TTĐB đồ uống có đường từ 2027"
   },
   {
-   "ten": "Biên gộp hợp nhất: 2H/2026 · 2027",
+   "ten": "Biên gộp hợp nhất: Q4/2026 · 2027",
    "v": [
-    "44,8 / 44,3%",
-    "45,8 / 46,2%",
-    "46,4 / 46,9%"
+    "44,3 / 44,3%",
+    "45,4 / 46,2%",
+    "46,0 / 46,9%"
    ],
-   "ly_do": "6T/2026 45,7%, 2H/2025 45,5%, 2024 46,6%; xấu: đồ uống gánh thuế TTĐB, CSGĐ giữ biên Q2 31,8%"
+   "ly_do": "9T/2026 45,6%, Q3 45,4%, Q4/2025 45,4%, 2024 46,6%; xấu: đồ uống gánh thuế TTĐB, CSGĐ giữ biên Q2 31,8%"
   },
   {
-   "ten": "Chi phí bán hàng & QLDN / doanh thu: 2H/2026 · 2027",
+   "ten": "Chi phí bán hàng & QLDN / doanh thu: Q4/2026 · 2027",
    "v": [
-    "22,2 / 22,8%",
+    "22,3 / 22,8%",
     "21,8 / 22,3%",
     "21,3 / 21,8%"
    ],
-   "ly_do": "2H/2025 21,5%, 6T/2026 23,5% (6T/2025 23,0%); 2024–2025 22,2–22,3%; phục vụ Retail Supreme 5,2–5,5% doanh thu"
+   "ly_do": "Q4/2025 21,3%, Q3/2026 22,1% (Q3/2025 21,7%), logistics 4,0% doanh thu (3,3%); 2024–2025 22,2–22,3%"
   },
   {
-   "ten": "Tài chính, liên kết & khác (tỷ): 2H/2026 · 2027",
+   "ten": "Tài chính, liên kết & khác (tỷ): Q4/2026 · 2027",
    "v": [
-    "300 / 550",
-    "350 / 750",
-    "400 / 900"
+    "170 / 550",
+    "210 / 750",
+    "240 / 900"
    ],
-   "ly_do": "6T/2026 358; 2025 628; tiền + đầu tư ngắn hạn 9,9 nghìn tỷ, nợ vay 9,0 nghìn tỷ (30/6)"
+   "ly_do": "9T/2026 591, Q3 233; tiền + đầu tư ngắn hạn 10,8 nghìn tỷ, nợ vay 9,6 nghìn tỷ (30/9); 2027 thấp hơn 2026E vì còn ~3.900 tỷ cổ tức 2026 phải chi"
   },
   {
    "ten": "P/E (× LN 2027E)",
@@ -449,23 +449,23 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 6910,
-   "ln27": 6694,
-   "gia": 81.9,
+   "ln26": 7155,
+   "ln27": 6822,
+   "gia": 83.5,
    "mo_ta": "Gia vị 2027 +4%, thực phẩm tiện lợi +2%, nhóm còn lại đi ngang; biên gộp 44,3% (đồ uống gánh thuế TTĐB), chi phí bán hàng 22,8%; P/E 16 như trung vị dài hạn"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 7356,
-   "ln27": 8148,
-   "gia": 124.6,
+   "ln26": 7426,
+   "ln27": 8212,
+   "gia": 125.6,
    "mo_ta": "Gia vị 2027 +9%, thực phẩm tiện lợi +7%, nhóm còn lại +7%; biên gộp 46,2%, chi phí bán hàng 22,3%; P/E 20"
   },
   {
    "ten": "Tốt",
-   "ln26": 7697,
-   "ln27": 9006,
-   "gia": 172.2,
+   "ln26": 7625,
+   "ln27": 9035,
+   "gia": 172.8,
    "mo_ta": "Gia vị +12%, thực phẩm tiện lợi +10%, nhóm còn lại +11% (doanh thu +11%, đúng mục tiêu 10–15%/năm); biên gộp 46,9%; P/E 25 như từ khi lên HOSE"
   }
  ],
@@ -479,9 +479,9 @@
     "ten": "LN cổ đông 2027E",
     "mau": "c1",
     "x": [
-     6694,
-     8148,
-     9006
+     6822,
+     8212,
+     9035
     ],
     "boi": [
      16,
@@ -492,21 +492,21 @@
     "x_ten": "LN 2027E",
     "boi_ten": "P/E",
     "gt": [
-     107104,
-     162960,
-     225150
+     109152,
+     164240,
+     225875
     ]
    }
   ],
   "von": [
-   107104,
-   162960,
-   225150
+   109152,
+   164240,
+   225875
   ],
   "gia": [
-   81.9,
-   124.6,
-   172.2
+   83.5,
+   125.6,
+   172.8
   ]
  },
  "pe_ls": {
@@ -749,7 +749,7 @@
    26.6,
    26.7,
    25.9,
-   26.1
+   26.5
   ],
   "p10": 9.6,
   "p25": 12.6,
@@ -760,7 +760,7 @@
   ],
   "nay": [
    "2026-10",
-   26.1
+   26.5
   ],
   "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
   "dung": "Kịch bản dùng 16 · 20 · 25: 16 ≈ trung vị từ 2017 (16,1); 20 ≈ trung vị 2024–2025 (19,7), trước khi lên HOSE; 25 ≈ thấp nhất từ khi lên HOSE (25,3). Vùng thấp 10% (9,6) là thời UPCoM thanh khoản mỏng, không dùng.",
@@ -779,11 +779,11 @@
   [
    "P/E ±2 lần",
    null,
-   12.5
+   12.6
   ],
   [
    "Biên gộp hợp nhất 2027 ±1 điểm %",
-   318,
+   321,
    4.9
   ],
   [
@@ -793,13 +793,13 @@
   ],
   [
    "Doanh thu gia vị 2027 ±5%",
-   169,
+   170,
    2.6
   ],
   [
    "CPBH & QLDN ±0,5 điểm % doanh thu",
-   159,
-   2.4
+   161,
+   2.5
   ]
  ],
  "theo_doi": [
@@ -818,31 +818,42 @@
    "fd": "2026-12-31",
    "ln": [
     1977,
-    2218,
-    2402
+    2248,
+    2448
    ],
    "ck": 2079
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    6910,
-    7356,
-    7697
+    7155,
+    7426,
+    7625
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "10–11/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Mô hình: LN cổ đông 1.889 tỷ (+13%) trên nền Q3/2025 thấp (LN −19%, doanh thu −5,9%). Theo dõi chi phí bán hàng sau khi mở rộng trưng bày Retail Supreme.",
+   "khi": "22/10/2026",
+   "loai": "len",
+   "tieu": "Đã ra KQKD Q3/2026: khớp kịch bản cơ sở",
+   "ct": "LN cổ đông 1.929 tỷ (+15,1%), cao hơn mô hình cũ 2% (1.889); doanh thu +16,3% vượt dự phóng nhưng logistics 4,0% doanh thu ăn phần chênh. Mô hình giữ giả định 2027.",
    "tac": [
-    "≥ 1.890 tỷ",
-    "giữ kịch bản cơ sở; dưới 1.680 tỷ nghiêng về kịch bản xấu"
+    "+1,0 nghìn đ/cp",
+    "giá trị cơ sở 124,6 → 125,6 (2026E cao hơn kéo theo 2027E)"
    ],
-   "theo_doi": "doanh thu gia vị, biên gộp, CPBH"
+   "theo_doi": "doanh thu gia vị, logistics, CPBH"
+  },
+  {
+   "khi": "01–02/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026 và kế hoạch 2027",
+   "ct": "Mô hình: Q4 LN cổ đông 2.248 tỷ (+8%); LNST cả năm 7.490 tỷ, ngang mức thấp kế hoạch. Đợt tăng giá đồ uống, mì từ đầu Q4 phải giữ được sản lượng mùa Tết.",
+   "tac": [
+    "≥ 2.250 tỷ",
+    "giữ kịch bản cơ sở; dưới 1.980 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "giá bán, sản lượng, logistics"
   },
   {
    "khi": "Q4/26–Q1/27",
@@ -856,7 +867,7 @@
    "khi": "Cuối 2026",
    "loai": "len",
    "tieu": "Retail Supreme: 700.000 điểm bán, 7 SKU mỗi đơn",
-   "ct": "6T/2026 đạt 550.000 điểm và 5,8 SKU — dưới mức 600.000 và 6,2 công ty nêu sau Q1 (SHS). Từ 2026 mở rộng sang kênh tiêu dùng tại chỗ cho đồ uống.",
+   "ct": "30/6 đạt 550.000 điểm và 5,8 SKU — dưới mức 600.000 và 6,2 công ty nêu sau Q1 (SHS). Kênh truyền thống Q3 +17,3% (Q2 +10,6%); chưa công bố số điểm bán 30/9.",
    "tac": [
     "+3,6 nghìn đ/cp",
     "nếu doanh thu 2027 theo kịch bản tốt (gia vị +12%)"
@@ -882,7 +893,7 @@
    "tieu": "Phần thưởng VN30 co lại",
    "ct": "P/E 4 quý 25,3–34,3 lần từ khi lên HOSE, trung vị 2017–2026 16,1. HOSE tính free float 20%; ETF mô phỏng VN30 ước cần mua ~3 triệu cp (BSC).",
    "tac": [
-    "±12,5 nghìn đ/cp",
+    "±12,6 nghìn đ/cp",
     "mỗi 2 lần P/E"
    ],
    "theo_doi": "khối ngoại, P/E"
@@ -900,7 +911,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Nguyên liệu gốc dầu và cà phê",
-   "ct": "Biên gộp chăm sóc gia đình Q2/2026 31,8% (−10,3 điểm %) vì hóa chất gốc dầu; Robusta có thể về 5 USD/kg năm 2027 nếu El Niño quay lại (FPTS).",
+   "ct": "Biên CSGĐ Q2/2026 31,8% (−10,3 điểm %); Q3 Chanté đi ngang vì cắt khuyến mãi bù chi phí gốc dầu, MCH tăng giá đồ uống, mì từ đầu Q4. Robusta có thể về 5 USD/kg năm 2027 (FPTS).",
    "tac": [
     "±4,9 nghìn đ/cp",
     "mỗi 1 điểm % biên gộp hợp nhất 2027"
@@ -918,14 +929,6 @@
     "mỗi 5% doanh thu gia vị 2027"
    ],
    "theo_doi": "doanh thu gia vị theo quý"
-  },
-  {
-   "khi": "2026–2030",
-   "loai": "len",
-   "tieu": "Cao cấp hóa và xuất khẩu",
-   "ct": "Nam Ngư Phú Quốc ~200.000 đ/lít, Omachi thành bữa ăn tiện lợi; xuất khẩu 2025 1.647 tỷ (+27%) qua Magnit, Woolworths, Costco, mục tiêu 10–20% doanh thu năm 2030.",
-   "tac": "",
-   "theo_doi": "biên gộp gia vị, xuất khẩu"
   },
   {
    "khi": "Liên tục",
@@ -963,7 +966,7 @@
       6721,
       7525,
       7137,
-      7503
+      7740
      ],
      "mau": "c1"
     },
@@ -977,44 +980,50 @@
       1378,
       1480,
       628,
-      707
+      791
      ],
      "mau": "c4"
     }
    ],
    "so_le": 0,
-   "y": "Lãi cốt lõi gần gấp đôi 2019–2024, hụt năm 2022 và 2025; 2023–2024 có thêm ~1,4 nghìn tỷ/năm lãi tài chính từ khoản cho vay hợp đồng đầu tư — đã thu về để chi cổ tức. 4 quý = Q3/2025–Q2/2026.",
+   "y": "Lãi cốt lõi gần gấp đôi 2019–2024, hụt năm 2022 và 2025; 2023–2024 có thêm ~1,4 nghìn tỷ/năm lãi tài chính từ khoản cho vay hợp đồng đầu tư — đã thu về để chi cổ tức. 4 quý = Q4/2025–Q3/2026.",
    "ng": "BCTC hợp nhất (VNDirect); cốt lõi = LN gộp − CPBH − QLDN"
   },
   {
-   "ten": "Tăng doanh thu 6T/2026 theo ngành hàng",
-   "dv": "% so với 6T/2025",
+   "ten": "Tăng doanh thu theo ngành hàng: 6T và Q3/2026",
+   "dv": "% so với cùng kỳ",
    "kieu": "cot",
    "nhan": [
     "Gia vị",
     "Tiện lợi",
     "Đồ uống",
-    "Cà phê",
-    "CSGĐ",
     "Tổng"
    ],
    "ss": [
     {
-     "ten": "Tăng so với cùng kỳ",
+     "ten": "6T/2026",
      "v": [
       17.1,
       10.9,
       7.0,
-      5.3,
-      33.4,
       13.6
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Q3/2026",
+     "v": [
+      18.8,
+      19.3,
+      14.0,
+      16.3
      ],
      "mau": "c1"
     }
    ],
    "so_le": 1,
-   "y": "Gia vị và chăm sóc gia đình (CSGĐ) hưởng lợi nhất khi Retail Supreme phủ lại kênh tạp hóa; đồ uống, cà phê chậm vì thiếu sản phẩm khác biệt.",
-   "ng": "FPTS 24/08 · BCTC Q2/2026"
+   "y": "Q3 tăng tốc ở cả ba ngành hàng lớn: mì +19,3% (cao cấp ~+30%), đồ uống đóng chai +14% sau +7% ở 6T; kênh truyền thống +17,3%. Cà phê, chăm sóc gia đình chưa công bố số Q3 (Chanté đi ngang).",
+   "ng": "FPTS 24/08 · BCTC Q3/2026 · công bố 22/10"
   },
   {
    "ten": "Retail Supreme: điểm bán giao dịch thường xuyên",
@@ -1047,7 +1056,6 @@
    "dv": "% doanh thu",
    "kieu": "duong",
    "nhan": [
-    "Q3/23",
     "Q4/23",
     "Q1/24",
     "Q2/24",
@@ -1058,13 +1066,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Biên gộp",
      "v": [
-      46.6,
       47.3,
       46.7,
       46.2,
@@ -1075,7 +1083,8 @@
       45.6,
       45.4,
       46.7,
-      44.6
+      44.6,
+      45.4
      ],
      "mau": "c1",
      "net": false
@@ -1083,7 +1092,6 @@
     {
      "ten": "CPBH & QLDN",
      "v": [
-      22.7,
       21.2,
       23.7,
       24.1,
@@ -1094,14 +1102,15 @@
       21.7,
       21.3,
       24.2,
-      22.7
+      22.7,
+      22.1
      ],
      "mau": "c4",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Biên gộp đi ngang 44–47% kể cả năm tái cấu trúc 2025; chi phí bán hàng 6T/2026 23,5% doanh thu (6T/2025 23,0%) vì trưng bày và ra mắt sản phẩm.",
+   "y": "Biên gộp đi ngang 44–47% kể cả năm tái cấu trúc 2025; CPBH & QLDN Q3/2026 22,1% doanh thu (Q3/2025 21,7%) — logistics 4,0% (3,3%), trưng bày Retail Supreme.",
    "ng": "BCTC hợp nhất (VNDirect)"
   }
  ],
@@ -1111,20 +1120,20 @@
    {
     "ten": "Doanh thu",
     "kh": 33800,
-    "th": 15637,
-    "ky": "6T",
-    "tg": 50,
+    "th": 24380,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
    },
    {
     "ten": "LNST",
     "kh": 7450,
-    "th": 3284,
-    "ky": "6T",
-    "tg": 50,
+    "th": 5222,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
    },
    {
     "ten": "Điểm bán Retail Supreme",
@@ -1139,13 +1148,13 @@
     "ten": "Cổ tức tiền mặt",
     "kh": 5000,
     "th": 2000,
-    "ky": "20/10",
+    "ky": "24/10",
     "tg": 80,
     "dv": "đ/cp",
     "ng": "ĐHĐCĐ 2026 · thông báo 8/2026"
    }
   ],
-  "y": "Kế hoạch 33.800–35.000 tỷ doanh thu, 7.450–7.800 tỷ LNST (thanh đo theo mức thấp). Doanh thu 6T đạt 46% mức thấp, LNST 44%; quý 4 mùa Tết thường lớn nhất (2025: 30% doanh thu năm). Mô hình cơ sở: LNST cả năm 7.442 tỷ (−0,1% so với mức thấp).",
+  "y": "Kế hoạch 33.800–35.000 tỷ doanh thu, 7.450–7.800 tỷ LNST (thanh đo theo mức thấp). Doanh thu 9T đạt 72% mức thấp, LNST 70%; quý 4 mùa Tết thường lớn nhất (2025: 30% doanh thu năm). Mô hình cơ sở: LNST cả năm 7.490 tỷ (+0,5% so với mức thấp).",
   "ng": ""
  },
  "ctck": [
@@ -1207,6 +1216,36 @@
  ],
  "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. VPBS, SSI ra trước đợt tạm ứng 2.000 đ/cp (GDKHQ 10/08/2026) nên giá mục tiêu được trừ phần này. LN dự phóng là LNST cổ đông công ty mẹ.",
  "nguon": [
+  {
+   "ten": "CafeF — MCH lãi hơn 5.200 tỷ sau 9 tháng, doanh thu Q3 tăng mạnh nhất 3 năm",
+   "ngay": "22/10/2026",
+   "link": "https://cafef.vn/masan-consumer-lai-hon-5200-ty-dong-sau-9-thang-doanh-thu-quy-3-tang-manh-nhat-trong-3-nam-188261022091444563.chn"
+  },
+  {
+   "ten": "VietnamNet (Báo Mới) — Q3/2026: gia vị +18,8%, thực phẩm tiện lợi +19,3%, đồ uống +14%",
+   "ngay": "22/10/2026",
+   "link": "https://baomoi.com/quy-3-2026-masan-consumer-dat-ky-luc-tang-truong-doanh-thu-c56335730.epi"
+  },
+  {
+   "ten": "Index.vn — Thực phẩm tiện lợi cao cấp tăng gần 30%",
+   "ngay": "10/2026",
+   "link": "https://index.vn/tin-tuc/masan-consumer-tang-truong-manh-nhat-3-nam-thuc-pham-tien-loi-cao-cap-tang-gan-30"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — Doanh thu 9T 24.380 tỷ, +14,6%",
+   "ngay": "10/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/9-thang-dau-2026-masan-consumer-mch-dat-doanh-thu-24380-ty-dong-tang-146-so-voi-cung-ky-post399989.html"
+  },
+  {
+   "ten": "CafeF — Phủ điểm bán, củng cố thương hiệu (Chanté Q3 đi ngang)",
+   "ngay": "23/10/2026",
+   "link": "https://cafef.vn/phu-diem-ban-cung-co-thuong-hieu-masan-consumer-dat-ky-luc-tang-truong-doanh-thu-188261023170200702.chn"
+  },
+  {
+   "ten": "Znews — MCH điều chỉnh giá một số sản phẩm từ quý IV",
+   "ngay": "10/2026",
+   "link": "https://znews.vn/masan-consumer-dieu-chinh-gia-mot-so-san-pham-tu-quy-iv-post1691188.html"
+  },
   {
    "ten": "FPTS — Báo cáo cập nhật: triển vọng tích cực, định giá vượt kỳ vọng",
    "ngay": "24/08/2026",
@@ -1349,8 +1388,8 @@
     },
     {
      "h": 1,
-     "t": "Tăng giá bán 1–12% ở Q1/2026 để giữ biên gộp; mục tiêu biên gộp ~45% năm 2026.",
-     "ng": "ACBS 08/05"
+     "t": "Tăng giá bán 1–12% ở Q1/2026, giá bình quân +4–5%; thêm đợt tăng giá đồ uống, mì từ đầu Q4; mục tiêu biên gộp ~45%.",
+     "ng": "ACBS 08/05 · công bố 22/10"
     },
     {
      "h": 0,
@@ -1376,6 +1415,11 @@
      "+17,1%"
     ],
     [
+     "Doanh thu Q3",
+     "+18,8%",
+     "nền Q3/25 −13,8%"
+    ],
+    [
      "Biên gộp 6T",
      "54,8%",
      "2025: 53,5%"
@@ -1384,11 +1428,6 @@
      "Thị phần 2025",
      "31,9%",
      "số 1"
-    ],
-    [
-     "LN gộp 2025",
-     "5.568 tỷ",
-     "40% hợp nhất"
     ]
    ],
    "y": [
@@ -1422,9 +1461,9 @@
      "tỷ trọng +2,1 điểm %"
     ],
     [
-     "Mục tiêu 2026",
-     "+1–2 điểm %",
-     "thị phần (ACBS)"
+     "Doanh thu Q3",
+     "+19,3%",
+     "cao cấp ~+30%"
     ]
    ],
    "y": [
@@ -1454,9 +1493,9 @@
      "+33,4%"
     ],
     [
-     "Xuất khẩu Q1/2026",
-     "431 tỷ",
-     "+11,4%"
+     "Đồ uống đóng chai Q3",
+     "+14%",
+     "Chanté đi ngang"
     ]
    ],
    "y": [
@@ -1465,8 +1504,8 @@
      "ng": "FPTS 24/08"
     },
     {
-     "t": "Chăm sóc gia đình: Chanté, Homey vào kênh tạp hóa; biên gộp Q2/2026 31,8% (−10,3 điểm %), MAS kỳ vọng hồi từ Q3.",
-     "ng": "FPTS 24/08 · MAS 19/08"
+     "t": "Chăm sóc gia đình: Chanté, Homey vào kênh tạp hóa; biên gộp Q2/2026 31,8% (−10,3 điểm %); Q3 Chanté đi ngang vì cắt khuyến mãi bù chi phí.",
+     "ng": "FPTS 24/08 · MAS 19/08 · CafeF 23/10"
     },
     {
      "t": "Xuất khẩu 2025 1.647 tỷ (+27%): Magnit (Nga), Woolworths (Úc), Costco.",
