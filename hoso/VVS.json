@@ -1,0 +1,1137 @@
+{
+ "v": 2,
+ "ma": "VVS",
+ "ten": "CTCP Đầu tư Phát triển Máy Việt Nam (VIMID)",
+ "nganh": "Phân phối xe tải nặng Sinotruk (HOWO)",
+ "ky": "BCTC Q3/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q4/2026",
+ "cp_trieu": 43.05,
+ "cp_ng": "Vốn điều lệ 430,5 tỷ (BCTC Q3/2026) = 21,525 triệu cp cũ + 21,525 triệu cp chào bán quyền mua 1:1 giá 25.000 đ (VSD; chuyển nhượng quyền 25/6–10/7/2026, thu 538 tỷ); vốn hóa/giá trên bảng giá VNDirect lệch ngày giá",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Lãi xe tải Howo đang ở đỉnh chu kỳ; quý 3 hơn nửa lợi nhuận trước thuế là thu nhập tài chính"
+ },
+ "dong_mo": "9T/2026 doanh thu 9.973 tỷ (+83%), LNST 638 tỷ (+275%). Nhưng quý 3 doanh thu giảm 30% so với quý 2, biên gộp còn 7,2% và 54% LNTT là thu nhập tài chính ròng. Mô hình cho LN 2027E 630 tỷ (−20%); P/E 6,0 lần cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "−30%",
+   "nhan": "doanh thu Q3/2026 so với Q2",
+   "tieu": "Quý 3 cho thấy nhịp tăng đã qua đỉnh",
+   "t": "Doanh thu từ 2.265 tỷ (2023) lên 8.051 tỷ (2025) và 9.973 tỷ sau 9T/2026, trong làn sóng đầu tư công và chuyển lên HOSE. Quý 3: doanh thu 2.966 tỷ (Q2 4.256), biên gộp 7,2% (Q2 8,3%), lãi hoạt động 131 tỷ (−49% so với quý trước). LNST quý vẫn +155% so với cùng kỳ nhờ tài chính. Mô hình: LN 2026E 790 tỷ (+146%), 2027E 630 tỷ.",
+   "ng": "BCTC Q3/2026 · mô hình"
+  },
+  {
+   "so": "54%",
+   "nhan": "LNTT Q3/2026 từ tài chính ròng",
+   "tieu": "Phần lãi tăng thêm dựa vào bảng cân đối, không chỉ vào bán xe",
+   "t": "Tài chính ròng 9T/2026 250 tỷ = 31% LNTT (9T/2025: 9%). Nguồn là ~6,0 nghìn tỷ tiền gửi (30/9) — gấp 3,3 lần vốn chủ, đứng đối ứng 8,2 nghìn tỷ nợ ngắn hạn ngoài vay (phần lớn phải trả người bán). Tiền gửi cầm cố đảm bảo khoản vay tăng từ 1.148 tỷ đầu 2025 lên 3.317 tỷ (30/9/2025): tiền gắn với vòng nhập xe, sẽ co lại khi bán ít xe.",
+   "ng": "BCTC Q3/2026 · Báo Pháp luật 12/2025 · Người Quan Sát"
+  },
+  {
+   "so": "−72%",
+   "nhan": "LNST 2016 của HHS — chu kỳ xe tải Trung Quốc trước",
+   "tieu": "P/E thấp ở đỉnh chu kỳ không phải là rẻ",
+   "t": "HHS (nhập khẩu DongFeng, mua đại lý Howo Hoàng Giang năm 2015): LNST 501 tỷ (2015) → 140 → 92 tỷ (2017), biên gộp 10,9% → 1,2%. Cuối 2015 P/E 4 quý chỉ 2,8 lần, rồi giá điều chỉnh −77% (10/2015 → 1/2017). TMT: 187 → 49 → 9 tỷ. VVS: P/E 4 quý 4,6 lần (giá 23/10).",
+   "ng": "BCTC VNDirect (HHS, TMT) · Viettimes · Vietnam News"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Định giá P/E {up_so} so với giá hiện tại",
+   "t": "P/E 6,0 × LN 2027E 630 tỷ (≈ trung vị nhóm phân phối, lắp ráp ô tô 5,8; phân vị 25% của VVS 5,7); ~28% giá trị đến từ thu nhập tài chính. Xấu 42,0: doanh thu 2027 −35%, biên 5,5%, P/E 7,5; tốt 140,1: doanh thu +12%, biên 8,2%. Số cp đã gấp đôi sau chào bán 1:1 giá 25.000 đ (thu 538 tỷ để trả nợ ngân hàng).",
+   "ng": "mô hình · BCTC VNDirect giá 23/10 · VSD"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   321,
+   790,
+   630
+  ],
+  "ln_truoc": 68,
+  "eps": [
+   7456,
+   18351,
+   14634
+  ],
+  "co_tuc_nam": 1000,
+  "them": [
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     8.1,
+     13.0,
+     12.3
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Tài chính ròng / LNTT",
+    "v": [
+     16,
+     31,
+     28
+    ],
+    "pt": 1
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     63.9,
+     60.0,
+     27.4
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2024–2025: cộng 4 quý BCTC. EPS trên 43,05 triệu cp (sau chào bán 1:1, 7/2026) cho cả 3 cột; EPS 2025 công bố tính trên 21,5 triệu cp. Cổ tức tiền gần nhất: 10% cho năm 2024 (ĐKCC 24/7/2025)."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Lãi hoạt động (gộp − BH − QLDN) & khác",
+    "mau": "c1",
+    "v": [
+     338,
+     681,
+     567
+    ]
+   },
+   {
+    "ten": "Tài chính ròng (DT tài chính − CP tài chính)",
+    "mau": "c2",
+    "v": [
+     63,
+     310,
+     220
+    ]
+   }
+  ],
+  "nhan": "Tài chính ròng",
+  "ng": "BCTC; 2026E = 9T thực tế + Q4 ước, 2027E: mô hình cơ sở. DT tài chính chủ yếu lãi tiền gửi; CP tài chính gồm lãi vay (38 tỷ 9T/2026) và chi phí tài chính khác."
+ },
+ "so_sanh": {
+  "tieu": "P/E so với 4 mã phân phối, lắp ráp ô tô niêm yết",
+  "phu": "giá hôm nay, LN 4 quý đến Q3/2026, 43,05 triệu cp",
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 23/10)",
+  "nhom": "4 mã phân phối, lắp ráp ô tô",
+  "kv": [
+   [
+    "TMT",
+    6.2
+   ],
+   [
+    "HTL",
+    5.5
+   ],
+   [
+    "SVC",
+    4.2
+   ],
+   [
+    "HAX",
+    16.6
+   ]
+  ],
+  "tv": 5.8,
+  "moi_cp": 18334,
+  "max": 20,
+  "y": "TMT (lắp ráp xe tải) 6,2, HTL (đại lý xe tải Hino) 5,5; SVC gồm khoản lãi lớn quý 3/2025, HAX có 2 quý lỗ. Nhóm săm lốp cùng ngành trên web (DRC 15,3, CSM 22,6, SRC 24,2) là sản xuất, không dùng để so. P/E của nhà phân phối xe tải thấp vì lợi nhuận theo chu kỳ.",
+  "ng": "BCTC VNDirect (4 quý gần nhất), vốn hóa VNDirect giá 23/10/2026; VVS: LN Q4/2025–Q3/2026"
+ },
+ "cau_ln": {
+  "ten": "LNST 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   790
+  ],
+  "cuoi": [
+   "2027E",
+   630
+  ],
+  "buoc": [
+   [
+    "Doanh thu (−5%)",
+    -27
+   ],
+   [
+    "Biên gộp",
+    -52
+   ],
+   [
+    "Chi phí BH&QL",
+    -11
+   ],
+   [
+    "Tài chính ròng",
+    -73
+   ],
+   [
+    "Thuế & khác",
+    3
+   ]
+  ],
+  "y": "Cơ sở không giả định chu kỳ đảo chiều: LN giảm vì 2026 có hai khoản khó lặp lại — doanh thu quý 2 (4.256 tỷ), thu nhập tài chính quý 3 (180 tỷ) — và biên gộp về mức quý 3 (7,2%).",
+  "ng": "mô hình"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: doanh thu × biên gộp − chi phí + tài chính ròng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Kinh doanh xe tải (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     8051,
+     12973,
+     12324
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     7.1,
+     7.8,
+     7.3
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Chi phí BH&QL (% doanh thu)",
+    "v": [
+     2.9,
+     2.6,
+     2.7
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Lãi hoạt động (gộp − BH − QLDN)",
+    "v": [
+     339,
+     680,
+     567
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Tài chính và lợi nhuận"
+   },
+   {
+    "ten": "Tài chính ròng",
+    "v": [
+     63,
+     310,
+     220
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tài chính ròng / LNTT (%)",
+    "v": [
+     16,
+     31,
+     28
+    ]
+   },
+   {
+    "ten": "LN trước thuế",
+    "v": [
+     401,
+     991,
+     787
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LNST cổ đông",
+    "v": [
+     321,
+     790,
+     630
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ, 43,05 triệu cp)",
+    "v": [
+     7456,
+     18351,
+     14634
+    ],
+    "eps": 1
+   },
+   {
+    "nhom": "Vốn"
+   },
+   {
+    "ten": "Vốn chủ cuối kỳ",
+    "v": [
+     652,
+     1980,
+     2609
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     15149,
+     45983,
+     60607
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     63.9,
+     60.0,
+     27.4
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "BCTC hợp nhất (VNDirect) đến Q3/2026; 2026E = 9T thực tế + Q4 ước. Vốn chủ 2026 gồm 538 tỷ chào bán quyền mua; giả định không chia cổ tức tiền. BVPS 2025 tính trên số cp sau chào bán. Thuế TNDN 20%."
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu Q4/2026 (tỷ)",
+   "v": [
+    "2.400",
+    "3.000",
+    "3.500"
+   ],
+   "ly_do": "Q4/2025 2.606, Q3/2026 2.966 (quý 2 đỉnh 4.256); cơ sở ≈ nhịp quý 3"
+  },
+  {
+   "ten": "Doanh thu 2027 so với 2026E",
+   "v": [
+    "−35%",
+    "−5%",
+    "+12%"
+   ],
+   "ly_do": "Cơ sở = nhịp 6 tháng cuối 2026 quy năm (11.932 tỷ) +3%; xấu theo chu kỳ trước (HHS 2016 −55%)"
+  },
+  {
+   "ten": "Biên gộp Q4/2026 · 2027",
+   "v": [
+    "6,5% · 5,5%",
+    "7,3% · 7,3%",
+    "8,0% · 8,2%"
+   ],
+   "ly_do": "2024 7,2%, 2025 7,1%, 9T/2026 8,0%, Q3/2026 7,2%; HHS 2016: 5,6%"
+  },
+  {
+   "ten": "Chi phí BH&QL / doanh thu 2027",
+   "v": [
+    "3,0%",
+    "2,7%",
+    "2,5%"
+   ],
+   "ly_do": "2025 2,9%, 9T/2026 2,5%, Q3/2026 2,8%; doanh thu giảm thì tỷ lệ tăng"
+  },
+  {
+   "ten": "Tài chính ròng Q4/2026 · 2027 (tỷ)",
+   "v": [
+    "40 · 100",
+    "60 · 220",
+    "90 · 300"
+   ],
+   "ly_do": "Q1/2026 44, Q2 53, Q3 154 tỷ; tiền gửi 5.977 tỷ (30/9) — lãi ~5–6%/năm trừ lãi vay, chi phí tài chính khác"
+  },
+  {
+   "ten": "Thuế TNDN",
+   "v": [
+    "20%",
+    "20%",
+    "20%"
+   ],
+   "ly_do": "9T/2026 hiệu dụng 20,4%"
+  },
+  {
+   "ten": "P/E",
+   "v": [
+    "7,5",
+    "6,0",
+    "6,5"
+   ],
+   "ly_do": "Cơ sở ≈ trung vị 4 mã phân phối, lắp ráp ô tô (5,8), phân vị 25% của VVS (5,7); xấu cao hơn vì LN đáy chu kỳ được trả bội số cao (HHS 2016–2017: 5,7–17,5)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 738,
+   "ln27": 241,
+   "gia": 42.0,
+   "mo_ta": "Chu kỳ đảo chiều như 2016: Q4 2.400 tỷ; doanh thu 2027 −35%, biên gộp 5,5%, tài chính ròng 100 tỷ; P/E 7,5"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 790,
+   "ln27": 630,
+   "gia": 87.8,
+   "mo_ta": "Nhu cầu đứng ở nhịp quý 3: doanh thu 2027 −5%, biên gộp 7,3%, tài chính ròng 220 tỷ; P/E 6,0"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 856,
+   "ln27": 928,
+   "gia": 140.1,
+   "mo_ta": "Đầu tư công kéo dài chu kỳ: doanh thu 2027 +12%, biên gộp 8,2%, tài chính ròng 300 tỷ; P/E 6,5"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/E",
+  "phu": "P/E × LN 2027E (tách phần từ thu nhập tài chính)",
+  "ck": 0,
+  "cp": 43.05,
+  "phan": [
+   {
+    "ten": "Lãi hoạt động (gộp − BH − QLDN)",
+    "mau": "c1",
+    "x": [
+     161,
+     454,
+     688
+    ],
+    "boi": [
+     7.5,
+     6.0,
+     6.5
+    ],
+    "x_ten": "LN sau thuế 2027E",
+    "sh": 1,
+    "boi_ten": "P/E",
+    "gt": [
+     1208,
+     2724,
+     4472
+    ]
+   },
+   {
+    "ten": "Tài chính ròng (lãi tiền gửi − chi phí TC)",
+    "mau": "c2",
+    "x": [
+     80,
+     176,
+     240
+    ],
+    "boi": [
+     7.5,
+     6.0,
+     6.5
+    ],
+    "x_ten": "LN sau thuế 2027E",
+    "sh": 1,
+    "boi_ten": "P/E",
+    "gt": [
+     600,
+     1056,
+     1560
+    ]
+   }
+  ],
+  "von": [
+   1808,
+   3780,
+   6032
+  ],
+  "gia": [
+   42.0,
+   87.8,
+   140.1
+  ]
+ },
+ "nhay": [
+  [
+   "P/E ±1 lần",
+   null,
+   14.6
+  ],
+  [
+   "Tài chính ròng 2027 ±100 tỷ",
+   80,
+   11.1
+  ],
+  [
+   "Biên gộp 2027 ±0,5 điểm %",
+   49,
+   6.8
+  ],
+  [
+   "Doanh thu 2027 ±10%",
+   45,
+   6.3
+  ],
+  [
+   "Chi phí BH&QL ±0,3 điểm % doanh thu",
+   30,
+   4.2
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   11.4,
+   11.9,
+   11.7,
+   18.3,
+   16.3,
+   18.8,
+   24.4,
+   24.9,
+   25.8,
+   17.1,
+   15.6,
+   14.5,
+   11.9,
+   12.0,
+   13.3,
+   4.7,
+   4.5,
+   4.5,
+   5.3,
+   5.5,
+   5.9,
+   5.2,
+   5.0,
+   7.1,
+   5.7,
+   6.7,
+   10.2,
+   7.5,
+   8.0,
+   9.9,
+   8.2,
+   7.2,
+   7.6,
+   5.4,
+   7.7,
+   9.4,
+   6.0,
+   5.6,
+   4.6
+  ],
+  "p10": 5.2,
+  "p25": 5.7,
+  "tv": 8.0,
+  "thap": [
+   "2024-12",
+   4.5
+  ],
+  "nay": [
+   "2026-10",
+   4.6
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "P/E 4 quý từ 8/2023 (UPCoM đến 12/2025): trung vị 8,0, thấp 10% 5,2; tháng 10/2026 4,6 (đã gồm LN quý 3). Kịch bản dùng 7,5 · 6,0 · 6,5 — xấu cao hơn cơ sở vì LN đáy chu kỳ được trả bội số cao. Từ 6/2026 dùng 43,05 triệu cp (sau chào bán 1:1)."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 3000,
+   "ln": [
+    99,
+    151,
+    218
+   ],
+   "ck": 151
+  },
+  {
+   "quy": "Q1/2027",
+   "fd": "2027-03-31",
+   "ln": [
+    51,
+    133,
+    196
+   ],
+   "ck": 166
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    738,
+    790,
+    856
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Mô hình cơ sở: doanh thu 3.000 tỷ, biên gộp 7,3%, LNST 151 tỷ (Q4/2025: 151). Doanh thu dưới 2.400 tỷ là dấu hiệu chu kỳ đảo chiều.",
+   "tac": [
+    "≥ 150 tỷ",
+    "giữ kịch bản cơ sở; dưới 100 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "doanh thu, biên gộp, tồn kho"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "len",
+   "tieu": "Đầu tư công giữ cầu xe ben, đầu kéo",
+   "ct": "Kế hoạch đầu tư công trung hạn ~8,22 triệu tỷ đồng; cao tốc, sân bay, vành đai cần xe ben, đầu kéo, xe trộn — phân khúc xe tải nặng của HOWO.",
+   "tac": [
+    "+6,3 nghìn đ/cp",
+    "mỗi +10% doanh thu 2027"
+   ],
+   "theo_doi": "giải ngân đầu tư công, doanh thu quý"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "len",
+   "tieu": "Nhà máy lắp ráp VMASS (Hải Phòng)",
+   "ct": "Hợp tác Sinotruk, 10.000 xe/năm, ~50 triệu USD, động thổ 23/7/2026 tại khu thương mại tự do Hải Phòng. Lắp ráp trong nước có thể giảm giá vốn; chưa có số tiến độ, chưa đưa vào mô hình.",
+   "tac": "",
+   "theo_doi": "tiến độ xây dựng, vốn đầu tư"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Chu kỳ xe tải đảo chiều",
+   "ct": "Chu kỳ trước HHS mất 72% LNST trong một năm, biên gộp về 1,2% năm 2017. Tồn kho VVS 2.716 tỷ (30/9) gấp 3,5 lần đầu năm.",
+   "tac": [
+    "−45,8 nghìn đ/cp",
+    "kịch bản xấu: doanh thu 2027 −35%, biên 5,5%"
+   ],
+   "theo_doi": "doanh thu quý, tồn kho, biên gộp"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thu nhập tài chính co lại",
+   "ct": "Tài chính ròng = 31% LNTT 9T/2026. Tiền gửi gắn với vòng nhập xe (đối ứng phải trả người bán): bán ít xe hoặc lãi suất tiền gửi giảm thì phần này giảm theo.",
+   "tac": [
+    "−11,1 nghìn đ/cp",
+    "mỗi −100 tỷ tài chính ròng 2027"
+   ],
+   "theo_doi": "thu nhập tài chính, tiền gửi"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Cạnh tranh giá, biên gộp mỏng",
+   "ct": "Biên gộp chỉ 8,0% (9T/2026), quý 3 còn 7,2%; các thương hiệu xe tải Trung Quốc khác cùng nhắm nhu cầu công trình.",
+   "tac": [
+    "±6,8 nghìn đ/cp",
+    "mỗi ±0,5 điểm % biên gộp 2027"
+   ],
+   "theo_doi": "biên gộp quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Phụ thuộc một hãng và tín dụng nhà cung cấp",
+   "ct": "Toàn bộ kinh doanh là đại lý ủy quyền Sinotruk; nợ ngắn hạn ngoài vay 8,2 nghìn tỷ, gấp 4,5 lần vốn chủ. Điều khoản thanh toán của hãng siết lại sẽ hút tiền gửi.",
+   "tac": "",
+   "theo_doi": "phải trả người bán, tiền gửi, vay ngân hàng"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Cổ phiếu chào bán giá thấp, sở hữu tập trung",
+   "ct": "21,5 triệu cp mới giá vốn 25.000 đ (~30% thị giá); Chủ tịch và vợ nắm 58,1% (12/2025), GTGD ~16 tỷ/phiên.",
+   "tac": "",
+   "theo_doi": "giao dịch cổ đông lớn, nội bộ"
+  },
+  {
+   "khi": "4/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: kế hoạch, cổ tức",
+   "ct": "Kế hoạch thường đặt thấp: LNTT 2025 kế hoạch 90 tỷ, thực hiện 401; 2026 kế hoạch 460, 9T đã 802. Chỉ trả cổ tức tiền một lần (10%, 2024).",
+   "tac": "",
+   "theo_doi": "kế hoạch 2027, chính sách cổ tức"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu theo quý",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Doanh thu thuần",
+     "v": [
+      1210,
+      1136,
+      2078,
+      2230,
+      2606,
+      2751,
+      4256,
+      2966
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Quý 2/2026 đỉnh 4.256 tỷ; quý 3 2.966 tỷ (−30% so với quý trước, +33% so với cùng kỳ).",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "Biên gộp và chi phí BH&QL",
+   "dv": "% doanh thu",
+   "kieu": "duong",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      6.9,
+      5.9,
+      5.9,
+      6.7,
+      9.0,
+      8.3,
+      8.3,
+      7.2
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Chi phí BH&QL",
+     "v": [
+      4.3,
+      3.2,
+      2.4,
+      2.6,
+      3.4,
+      2.4,
+      2.3,
+      2.8
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Biên gộp lên 9,0% ở quý 4/2025 rồi lùi về 7,2% quý 3/2026; chi phí BH&QL đi ngang ~2,5–3% doanh thu.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "LN trước thuế theo nguồn",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi hoạt động & khác",
+     "v": [
+      28,
+      30,
+      71,
+      92,
+      145,
+      164,
+      256,
+      131
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tài chính ròng",
+     "v": [
+      -17,
+      2,
+      -2,
+      20,
+      44,
+      44,
+      53,
+      154
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi hoạt động quý 3 131 tỷ (−49% so với quý 2); tài chính ròng 154 tỷ — lần đầu lớn hơn lãi hoạt động.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "Bảng cân đối cuối quý",
+   "dv": "nghìn tỷ",
+   "kieu": "duong",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ ngắn hạn ngoài vay",
+     "v": [
+      1.69,
+      2.11,
+      3.08,
+      4.15,
+      3.91,
+      5.36,
+      8.19,
+      8.19
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Tiền, tiền gửi & phải thu",
+     "v": [
+      1.52,
+      1.94,
+      2.68,
+      3.89,
+      4.3,
+      4.89,
+      6.68,
+      6.96
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "Tồn kho",
+     "v": [
+      0.75,
+      0.85,
+      1.17,
+      1.21,
+      0.78,
+      1.79,
+      2.58,
+      2.72
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Vốn chủ",
+     "v": [
+      0.35,
+      0.38,
+      0.43,
+      0.5,
+      0.65,
+      0.82,
+      1.06,
+      1.83
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 1,
+   "y": "9T/2026 tồn kho +1.940 tỷ, lớn hơn LNST 9T cộng tiền chào bán (1.176 tỷ); phần còn lại do nợ ngắn hạn ngoài vay tài trợ. Tiền, tiền gửi & phải thu trừ mọi khoản nợ: −169 tỷ (31/12/2025) → −1.667 tỷ (30/9/2026).",
+   "ng": "BCTC hợp nhất (VNDirect); phải thu đến Q1/2026 gồm tiền gửi cầm cố"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 460,
+    "th": 802,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 (Mekong ASEAN) · BCTC Q3"
+   }
+  ],
+  "y": "LNTT 9T đã gấp 1,7 lần kế hoạch năm; 6T đạt 74% kế hoạch doanh thu (Stockbiz). Năm 2025 cũng vậy: kế hoạch doanh thu 4.200 tỷ, LNTT 90 tỷ — thực hiện 8.051 và 401 tỷ.",
+  "ng": ""
+ },
+ "ctck": [],
+ "ctck_chu": "Chưa có CTCK theo dõi trong 8 tháng; mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành.",
+ "nguon": [
+  {
+   "ten": "BCTC hợp nhất VVS Q4/2023–Q3/2026 (VNDirect; Q3/2026 nhập 23/10/2026)",
+   "ngay": "23/10/2026",
+   "link": "https://finance.vietstock.vn/VVS-ctcp-dau-tu-phat-trien-may-viet-nam.htm"
+  },
+  {
+   "ten": "Báo Pháp luật — VIMID chào sàn HOSE, dẫn đầu thị phần xe tải hạng trung–nặng; cơ cấu sở hữu",
+   "ngay": "12/2025",
+   "link": "https://doanhnhan.baophapluat.vn/vimid-vvs-chinh-thuc-chao-san-hose-loi-nhuan-9-thang-vuot-37-ke-hoach-dan-dau-thi-phan-xe-tai-hang-trung--nang-89616.html"
+  },
+  {
+   "ten": "Báo Pháp luật — VIMID chốt ngày chào sàn HOSE, tài sản phần lớn là phải thu (tiền gửi thế chấp)",
+   "ngay": "12/2025",
+   "link": "https://doanhnhan.baophapluat.vn/vimid-vvs-chot-ngay-chao-san-hose-gia-tham-chieu-58000-dong-tai-san-hon-5200-ty-dong-phan-lon-la-khoan-phai-thu-89427.html"
+  },
+  {
+   "ten": "Báo Pháp luật — VIMID chào bán cổ phiếu giá 25.000 đ để trả nợ ngân hàng",
+   "ngay": "05/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vimid-vvs-chao-ban-co-phieu-gia-25-000-dong-cp-de-tra-no-ngan-hang-loi-nhuan-quy-i-tang-vot.html"
+  },
+  {
+   "ten": "VSD — VVS: thực hiện quyền mua 1:1, 21.525.000 cp",
+   "ngay": "06/2026",
+   "link": "https://www.vsd.vn/en/ad/196809"
+  },
+  {
+   "ten": "Mekong ASEAN — Vimid huy động 538 tỷ để trả nợ; kế hoạch LNTT 2026",
+   "ngay": "05/2026",
+   "link": "https://mekongasean.vn/vimid-muon-huy-dong-hon-538-ty-dong-tu-co-dong-de-tra-no-55209.html"
+  },
+  {
+   "ten": "Stockbiz — VVS BCTC quý II/2026: 6T đạt 74% kế hoạch doanh thu, 112% LNTT",
+   "ngay": "07/2026",
+   "link": "https://stockbiz.vn/tin-tuc/vvs-cong-bo-bao-cao-tai-chinh-quy-ii-tiep-tuc-but-pha-ghi-nhan-doanh-thu-va-loi-nhuan-ky-luc/41087927"
+  },
+  {
+   "ten": "Người Quan Sát — vượt kế hoạch lợi nhuận sau 6 tháng; động thổ nhà máy VMASS 23/7/2026",
+   "ngay": "07/2026",
+   "link": "https://nguoiquansat.vn/co-phieu-vvs-co-luc-tang-hon-40-vimid-vuot-ke-hoach-loi-nhuan-ca-nam-chi-sau-6-thang-306566.html"
+  },
+  {
+   "ten": "DNSE — BCTC quý 2/2026 VVS",
+   "ngay": "07/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/bctc-quy-22026-vvs-loi-nhuan-sau-thue-cong-ty-me-quy-2-gap-3-lan-so-voi-cung-ky-dat-24459-ty-dong-35250447"
+  },
+  {
+   "ten": "Tin nhanh Chứng khoán — VIMID chuyển sàn HOSE; nhà máy lắp ráp Hải Phòng 10.000 xe/năm",
+   "ngay": "12/2025",
+   "link": "https://www.tinnhanhchungkhoan.vn/bat-song-dau-tu-cong-vimid-vvs-chuyen-san-sang-hose-post371332.html"
+  },
+  {
+   "ten": "24hMoney — Nhà phân phối xe tải Howo lên HOSE (đại lý Sinotruk từ 2010)",
+   "ngay": "11/2025",
+   "link": "https://24hmoney.vn/news/co-phieu-nha-phan-phoi-xe-tai-howo-sap-len-hose-c1a2684906.html"
+  },
+  {
+   "ten": "Simplize — hồ sơ VVS (thị phần xe tải hạng trung–nặng mới ~18–20%)",
+   "ngay": "2026",
+   "link": "https://simplize.vn/co-phieu/VVS"
+  },
+  {
+   "ten": "Báo Pháp luật — VVS lần đầu trả cổ tức tiền 10%; kế hoạch 2025",
+   "ngay": "07/2025",
+   "link": "https://doanhnhan.baophapluat.vn/dau-tu-phat-trien-may-viet-nam-vvs-lan-dau-tra-co-tuc-bang-tien-mat-nop-ho-so-niem-yet-tren-hose-84390.md"
+  },
+  {
+   "ten": "Stockbiz — VVS: kế hoạch 8,22 triệu tỷ đầu tư công",
+   "ngay": "2026",
+   "link": "https://stockbiz.vn/tin-tuc/vvs-suc-nong-tu-ke-hoach-822-trieu-ty-dau-tu-cong-dai-gia-ban-xe-tai-ho-vo-lai-chua-tung-co/40162534"
+  },
+  {
+   "ten": "BSC — Ông Nguyễn Vũ Trụ mua 123.800 cp ESOP",
+   "ngay": "11/2023",
+   "link": "https://www.bsc.com.vn/en/tin-tuc/tin-tuc-ma-co-phieu/1025984-vvs-result-of-rights-exercise-by-director-pdmr-nguyen-vu-tru"
+  },
+  {
+   "ten": "Viettimes — Hoàng Huy (HHS) và thị phần nhập khẩu xe tải Trung Quốc",
+   "ngay": "2015",
+   "link": "https://viettimes.vn/hoang-huy-hhs-chiem-24-thi-phan-nhap-khau-xe-tai-tu-trung-quoc-post10356.html"
+  },
+  {
+   "ten": "Vietnam News — HHS: LNST quý 1/2016 giảm 72%",
+   "ngay": "04/2016",
+   "link": "https://vietnamnews.vn/economy/295622/truck-seller-hhs-announces-lower-profits-in-q1.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Kế hoạch đầu tư công trung hạn ~8,22 triệu tỷ đồng — cầu xe ben, đầu kéo, trộn bê tông cho công trình.",
+     "ng": "Stockbiz 2026"
+    },
+    {
+     "h": 0,
+     "t": "Lãi suất tiền gửi VND quyết định thu nhập tài chính: ~6,0 nghìn tỷ tiền gửi (30/9/2026), mỗi 1 điểm % ≈ 60 tỷ/năm trước thuế.",
+     "ng": "BCTC Q3/2026 · tự tính"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Sinotruk (HOWO) chiếm ~30–35% xe tải hạng trung–nặng theo VVS; VVS ~18–20% xe mới phân khúc này (Simplize).",
+     "ng": "24hMoney 11/2025 · Simplize"
+    },
+    {
+     "h": -1,
+     "t": "Chu kỳ 2015–2017: HHS doanh thu 3.508 → 1.235 tỷ, LNST 501 → 92 tỷ; TMT 187 → 9 tỷ.",
+     "ng": "BCTC VNDirect"
+    },
+    {
+     "h": 0,
+     "t": "Nhà máy lắp ráp trong khu thương mại tự do (VMASS) — hướng nội địa hóa thay nhập nguyên chiếc.",
+     "ng": "Người Quan Sát 07/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Đại lý ủy quyền Sinotruk từ 2010; 23 trạm dịch vụ 3S và đại lý ở 34 tỉnh thành; chuyển từ UPCoM lên HOSE 10/12/2025.",
+     "ng": "Báo Pháp luật 12/2025 · 24hMoney"
+    },
+    {
+     "h": -1,
+     "t": "Chủ tịch Nguyễn Vũ Trụ 47,8%, vợ 10,3% (12/2025); ông Trụ mua 123.800 cp ESOP năm 2023.",
+     "ng": "Báo Pháp luật · BSC"
+    },
+    {
+     "h": 0,
+     "t": "Chào bán 1:1 giá 25.000 đ (thị giá 14/5/2026: 110.400 đ), thu 538 tỷ trả nợ 5 ngân hàng: vay ngắn hạn 705 → 437 tỷ.",
+     "ng": "Báo Pháp luật · VSD · BCTC Q3"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Phân phối xe tải nặng Sinotruk (HOWO)",
+   "phu": "xe ben, đầu kéo, xe trộn, phụ tùng và dịch vụ 3S · toàn bộ hoạt động (BCTC không tách mảng)",
+   "so": [
+    [
+     "Doanh thu 9T/2026",
+     "9.973 tỷ",
+     "+83%"
+    ],
+    [
+     "Biên gộp 9T/2026",
+     "8,0%",
+     "Q3: 7,2%"
+    ],
+    [
+     "Lãi hoạt động 9T",
+     "551 tỷ",
+     "+185%"
+    ],
+    [
+     "Tồn kho 30/9",
+     "2.716 tỷ",
+     "đầu năm 776"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Lãi hoạt động quý 3 chỉ +42% so với cùng kỳ, trong khi LNST +155%: khoảng cách là thu nhập tài chính.",
+     "ng": "BCTC Q3/2026"
+    },
+    {
+     "t": "Tiền gửi cầm cố tại ngân hàng (trong phải thu đến Q1/2026, từ Q2/2026 trình bày ở đầu tư ngắn hạn) đi cùng quy mô nhập xe.",
+     "ng": "Báo Pháp luật 12/2025 · BCTC"
+    },
+    {
+     "t": "Nhà máy VMASS 10.000 xe/năm, ~50 triệu USD — vốn đầu tư lớn so với vốn chủ 1.828 tỷ.",
+     "ng": "Tin nhanh Chứng khoán · Người Quan Sát"
+    }
+   ]
+  }
+ ]
+}
