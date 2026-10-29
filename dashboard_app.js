@@ -2281,6 +2281,37 @@ async function loadRecs(){
   } catch(e){ box.innerHTML = '<div class="mini">Không tải được dữ liệu khuyến nghị.</div>'; }
 }
 let proLoadedFor = null, proChart = null, proVolChart = null, proCandle = null, proVol = null, proSm = null, proMa = null, useLog = false;
+/* 29/10/2026 (anh Khoa: "thêm MA50 - MA200, cái đo % kéo từ giá này đến giá kia, RSI"): công cụ chart Chi tiết mã.
+   Bật/tắt nhớ theo người xem (localStorage kn_ind). RSI là khung riêng dưới khối lượng (lightweight-charts 4 không có pane). */
+let proRsiChart = null, proRsi = null, proMa50 = null, proMa200 = null;
+const KN_IND = (function(){ let o = { ma20: 1, ma50: 0, ma200: 0, rsi: 0 };
+  try { const j = JSON.parse(localStorage.getItem('kn_ind') || 'null'); if (j && typeof j === 'object') o = Object.assign(o, j); } catch(e){}
+  return o; })();
+window.__knRsiH = function(){ return KN_IND.rsi ? ((window.innerWidth || 999) < 620 ? 84 : 110) : 0; };
+window.__knDo = { on: false, a: null, b: null, xong: false };
+function knVeTools(){
+  const box = document.getElementById('dTools'); if (!box) return;
+  const DS = [['ma20', 'MA20', '#2962FF'], ['ma50', 'MA50', '#FF9800'], ['ma200', 'MA200', '#9C27B0'], ['rsi', 'RSI', '#7E57C2']];
+  const nut = (k, ten, mau, bat) => `<button type="button" data-k="${k}" class="knTool${bat ? ' on' : ''}" style="--m:${mau}"><i></i>${ten}</button>`;
+  box.innerHTML = DS.map(d => nut(d[0], d[1], d[2], !!KN_IND[d[0]])).join('')
+    + `<button type="button" data-k="do" class="knTool knDo${window.__knDo.on ? ' on' : ''}" title="Bấm điểm đầu rồi điểm cuối trên chart để đo % (Esc để xoá)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17 17 3l4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg>Đo %</button>`;
+  if (!document.getElementById('knToolCss')) { const st = document.createElement('style'); st.id = 'knToolCss';
+    st.textContent = '#dTools{display:flex;gap:6px;flex-wrap:wrap;align-items:center}'
+      + '.knTool{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 10px;border:1px solid #DDE1E6;border-radius:7px;background:#fff;color:#6B7280;font:600 12.5px Inter,sans-serif;cursor:pointer}'
+      + '.knTool i{width:12px;height:3px;border-radius:2px;background:#C3CCD8}.knTool.on{color:#111827;border-color:#B8C2CF;background:#F6F8FA}.knTool.on i{background:var(--m)}'
+      + '.knTool.knDo.on{color:#fff;background:#18A34B;border-color:#18A34B}.knTool:hover{border-color:#9AA4B2}'
+      + '#proK.coRsi{height:auto!important}';
+    document.head.appendChild(st); }
+  box.onclick = function(e){ const b = e.target.closest('.knTool'); if (!b) return; const k = b.dataset.k;
+    if (k === 'do') { const D = window.__knDo; D.on = !D.on; D.a = D.b = null; D.xong = false; b.classList.toggle('on', D.on); if (window.__knVeDo) window.__knVeDo(); return; }
+    KN_IND[k] = KN_IND[k] ? 0 : 1; b.classList.toggle('on', !!KN_IND[k]);
+    try { localStorage.setItem('kn_ind', JSON.stringify(KN_IND)); } catch(x){}
+    if (k === 'rsi') { proLoadedFor = null; loadProChart(); if (window.__knTranMan) setTimeout(window.__knTranMan, 30); return; }
+    const sr = k === 'ma20' ? proMa : k === 'ma50' ? proMa50 : proMa200;
+    try { if (sr) sr.applyOptions({ visible: !!KN_IND[k] }); } catch(x){}
+    if (window.__proLegend) window.__proLegend(null);
+  };
+}
 // Dung lai toan bo mui tren chart = tin hieu DA CHOT + tin hieu DANG DAT TRONG PHIEN.
 // Trong phien: gia >= nguong gia va volume >= nguong volume (bep da phat hanh trong SIGS.trig)
 // -> ve mui tren; neu gia tut xuong duoi nguong thi mui tu bien mat o lan ve ke tiep.
@@ -2396,16 +2427,25 @@ function loadProChart(){
   /* Doi ma: GIU NGUYEN khung (chieu cao da canh theo man hinh), chi thay chart ben trong.
      Truoc day dung lai innerHTML moi lan -> khung ve 360px roi nhay lai ~479px: giat khi bam sang ma khac. */
   const _k0 = document.getElementById('proK');
-  const giuKhung = !!(_k0 && wrap.contains(_k0) && document.getElementById('proPx') && document.getElementById('proVolPane'));
+  const giuKhung = !!(_k0 && wrap.contains(_k0) && document.getElementById('proPx') && document.getElementById('proVolPane') && document.getElementById('proRsiPane'));
   if (!giuKhung) wrap.innerHTML = '<div id="proK" style="position:relative">'
-    + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas></div>'
+    + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas><canvas id="proDoCv" style="position:absolute;left:0;top:0;z-index:4;pointer-events:none"></canvas></div>'
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
+    + '<div id="proRsiPane" style="height:0;display:none;border-top:1px solid #F0F3FA;position:relative"><div id="proRsiLegend" style="position:absolute;top:4px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#7E57C2;pointer-events:none;background:rgba(255,255,255,.85);padding:0 6px;border-radius:4px"></div></div>'
     + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
     + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:none;padding:3px 9px;text-shadow:0 1px 0 #fff,0 -1px 0 #fff,1px 0 0 #fff,-1px 0 0 #fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
     + '<button id="proFsBtn" title="Phóng to toàn màn hình" style="position:absolute;top:6px;right:8px;z-index:6;width:30px;height:30px;border:1px solid #DDE1E6;border-radius:6px;background:rgba(255,255,255,.92);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;color:#787B86"></button>'
     + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
   try { if (proVolChart && proVolChart.remove) proVolChart.remove(); } catch(e){}
+  try { if (proRsiChart && proRsiChart.remove) proRsiChart.remove(); } catch(e){}
+  proRsiChart = proRsi = null;
+  knVeTools();
+  { const rp = document.getElementById('proRsiPane'), pk = document.getElementById('proK'), rh = window.__knRsiH();
+    if (rp) { rp.style.display = rh ? '' : 'none'; rp.style.height = rh + 'px'; }
+    if (pk) pk.classList.toggle('coRsi', !!rh);
+    const px0 = document.getElementById('proPx');
+    if (px0 && !window.__proFS && !px0.dataset.knTm) px0.style.height = (360 - rh) + 'px'; }
   const UP = '#18A34B', DOWN = '#F23645';
   const baseOpts = {
     autoSize: true,
@@ -2504,14 +2544,43 @@ function loadProChart(){
   for (let i = 0; i < curOhlc.c.length; i++){ s += curOhlc.c[i]; if (i >= 20) s -= curOhlc.c[i-20]; if (i >= 19) ma.push({ time: curOhlc.t[i], value: +(s/20).toFixed(2) }); }
   proMa = proChart.addLineSeries({ color: '#2962FF', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false });
   proMa.setData(ma);
+  if (!KN_IND.ma20) proMa.applyOptions({ visible: false });
+  const smaN = (n) => { const o = []; let t = 0; for (let i = 0; i < candData.length; i++){ t += candData[i].close; if (i >= n) t -= candData[i-n].close; o.push(i >= n-1 ? +(t/n).toFixed(2) : null); } return o; };
+  const ma50a = smaN(50), ma200a = smaN(200);
+  const toS = a => a.map((v,i) => v == null ? null : { time: curOhlc.t[i], value: v }).filter(Boolean);
+  proMa50 = proChart.addLineSeries({ color: '#FF9800', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false, visible: !!KN_IND.ma50 });
+  proMa50.setData(toS(ma50a));
+  proMa200 = proChart.addLineSeries({ color: '#9C27B0', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false, visible: !!KN_IND.ma200 });
+  proMa200.setData(toS(ma200a));
+  // RSI(14) kieu Wilder tren gia dong cua (nen cuoi gom gia trong phien)
+  const rsiA = (function(){ const N = 14, o = new Array(candData.length).fill(null); let g = 0, l = 0;
+    for (let i = 1; i < candData.length; i++){ const d = candData[i].close - candData[i-1].close, up = Math.max(d, 0), dn = Math.max(-d, 0);
+      if (i <= N) { g += up; l += dn; if (i === N) { g /= N; l /= N; o[i] = l === 0 ? 100 : 100 - 100/(1 + g/l); } }
+      else { g = (g*(N-1) + up)/N; l = (l*(N-1) + dn)/N; o[i] = l === 0 ? 100 : 100 - 100/(1 + g/l); } }
+    return o; })();
+  window.__knRsiA = rsiA;
+  if (KN_IND.rsi) {
+    const o3 = JSON.parse(JSON.stringify(baseOpts));
+    o3.timeScale.visible = true; o3.layout.attributionLogo = false;
+    try { proVolChart.applyOptions({ timeScale: { visible: false } }); } catch(e){}   // truc thoi gian chuyen xuong khung RSI (duoi cung, nhu TradingView)
+    o3.rightPriceScale.scaleMargins = { top: 0.12, bottom: 0.08 };
+    o3.handleScale = { mouseWheel: true, pinch: true, axisPressedMouseMove: false };
+    proRsiChart = LightweightCharts.createChart(document.getElementById('proRsiPane'), o3);
+    proRsi = proRsiChart.addLineSeries({ color: '#7E57C2', lineWidth: 1.5, priceLineVisible: false, lastValueVisible: true, crosshairMarkerVisible: false,
+      autoscaleInfoProvider: () => ({ priceRange: { minValue: 0, maxValue: 100 } }) });
+    proRsi.setData(rsiA.map((v,i) => v == null ? null : { time: curOhlc.t[i], value: +v.toFixed(2) }).filter(Boolean));
+    [70, 30].forEach(v => proRsi.createPriceLine({ price: v, color: '#B0B7C3', lineWidth: 1, lineStyle: 2, axisLabelVisible: false }));
+    proRsi.createPriceLine({ price: 50, color: '#E3E6EA', lineWidth: 1, lineStyle: 1, axisLabelVisible: false });
+  }
   // dong bo truc thoi gian 2 khung
   const syncTS = (a,b) => a.timeScale().subscribeVisibleLogicalRangeChange(r => { if (r) try { b.timeScale().setVisibleLogicalRange(r); } catch(e){} });
   syncTS(proChart, proVolChart); syncTS(proVolChart, proChart);
+  if (proRsiChart) { syncTS(proChart, proRsiChart); syncTS(proRsiChart, proChart); }
   // ep do rong truc gia 2 khung bang nhau -> nen va cot volume thang hang
   const alignScales = () => { try {
-    const w1 = proChart.priceScale('right').width(), w2 = proVolChart.priceScale('right').width();
-    const w = Math.max(w1, w2);
-    if (w > 0) { proChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); proVolChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); }
+    const w1 = proChart.priceScale('right').width(), w2 = proVolChart.priceScale('right').width(), w3 = proRsiChart ? proRsiChart.priceScale('right').width() : 0;
+    const w = Math.max(w1, w2, w3);
+    if (w > 0) { proChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); proVolChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); if (proRsiChart) proRsiChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); }
   } catch(e){} };
   setTimeout(alignScales, 80); setTimeout(alignScales, 400); setTimeout(alignScales, 1000);
   // ==== mui ten + nhan mau (ve tay nhu ban cu) ====
@@ -2544,9 +2613,49 @@ function loadProChart(){
   };
   window.__paintBadges = paintBadges;
   proChart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(paintBadges));
+  // ==== Thuoc do %: bam diem dau -> re chuot -> bam diem cuoi (Esc / bam lan nua de do lai) ====
+  const veDo = () => {
+    try {
+      const cv = document.getElementById('proDoCv'), px = document.getElementById('proPx'); if (!cv || !px || !proChart) return;
+      const w = px.clientWidth, h = px.clientHeight, dpr = window.devicePixelRatio || 1;
+      if (cv.width !== Math.round(w*dpr) || cv.height !== Math.round(h*dpr)) { cv.width = Math.round(w*dpr); cv.height = Math.round(h*dpr); cv.style.width = w+'px'; cv.style.height = h+'px'; }
+      const g = cv.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0); g.clearRect(0,0,w,h);
+      const D = window.__knDo; px.style.cursor = D.on ? 'crosshair' : '';
+      if (!D.on || !D.a || !D.b) return;
+      const ts = proChart.timeScale();
+      const x1 = ts.logicalToCoordinate(D.a.l), x2 = ts.logicalToCoordinate(D.b.l), y1 = proCandle.priceToCoordinate(D.a.p), y2 = proCandle.priceToCoordinate(D.b.p);
+      if (x1 == null || x2 == null || y1 == null || y2 == null) return;
+      const pct = (D.b.p / D.a.p - 1) * 100, len = pct >= 0, mau = len ? '#18A34B' : '#F23645';
+      g.fillStyle = len ? 'rgba(24,163,75,.12)' : 'rgba(242,54,69,.12)';
+      g.fillRect(Math.min(x1,x2), Math.min(y1,y2), Math.abs(x2-x1), Math.abs(y2-y1));
+      g.strokeStyle = mau; g.lineWidth = 1.5; g.setLineDash([]);
+      const xm = (x1 + x2) / 2, ym = (y1 + y2) / 2;
+      g.beginPath(); g.moveTo(xm, y1); g.lineTo(xm, y2); g.moveTo(x1, ym); g.lineTo(x2, ym); g.stroke();
+      const mui = (x, y, dx, dy) => { g.beginPath(); g.moveTo(x, y); g.lineTo(x - 5*dx - 4*dy, y - 5*dy - 4*dx); g.lineTo(x - 5*dx + 4*dy, y - 5*dy + 4*dx); g.closePath(); g.fillStyle = mau; g.fill(); };
+      if (Math.abs(y2 - y1) > 10) mui(xm, y2, 0, y2 > y1 ? 1 : -1);
+      if (Math.abs(x2 - x1) > 10) mui(x2, ym, x2 > x1 ? 1 : -1, 0);
+      const n = Math.round(D.b.l - D.a.l), dp = D.b.p - D.a.p;
+      const t1 = (pct >= 0 ? '+' : '') + pct.toFixed(2) + '%  (' + (dp >= 0 ? '+' : '') + dp.toFixed(2) + ')';
+      const t2 = Math.abs(n) + ' phiên · ' + D.a.p.toFixed(2) + ' → ' + D.b.p.toFixed(2);
+      g.font = '600 12.5px Inter, sans-serif'; const bw = Math.max(g.measureText(t1).width, g.measureText(t2).width) + 18, bh = 40;
+      let bx = xm - bw/2, by = len ? Math.min(y1,y2) - bh - 6 : Math.max(y1,y2) + 6;
+      bx = Math.max(4, Math.min(w - bw - 4, bx)); by = Math.max(4, Math.min(h - bh - 4, by));
+      g.fillStyle = mau; g.beginPath(); if (g.roundRect) g.roundRect(bx, by, bw, bh, 6); else g.rect(bx, by, bw, bh); g.fill();
+      g.fillStyle = '#fff'; g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillText(t1, bx + bw/2, by + 13); g.font = '500 11.5px Inter, sans-serif'; g.fillText(t2, bx + bw/2, by + 28);
+    } catch(e){}
+  };
+  window.__knVeDo = veDo;
+  proChart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(veDo));
+  const diemDo = p => { if (!p || !p.point || p.logical == null) return null; const pr = proCandle.coordinateToPrice(p.point.y); return pr == null ? null : { l: p.logical, p: +pr }; };
+  proChart.subscribeClick(p => { const D = window.__knDo; if (!D.on) return; const d = diemDo(p); if (!d) return;
+    if (!D.a || D.xong) { D.a = d; D.b = null; D.xong = false; } else { D.b = d; D.xong = true; } veDo(); });
+  proChart.subscribeCrosshairMove(p => { const D = window.__knDo; if (!D.on || !D.a || D.xong) return; const d = diemDo(p); if (d) { D.b = d; veDo(); } });
+  if (!window.__knDoEsc) { window.__knDoEsc = 1; document.addEventListener('keydown', e => { if (e.key === 'Escape' && window.__knDo.a) { window.__knDo.a = window.__knDo.b = null; window.__knDo.xong = false; if (window.__knVeDo) window.__knVeDo(); } }); }
+  veDo();
   window.__knAlign = alignScales;
   try { const _pe = document.getElementById('proPx'); if (!_pe.__knRO) { _pe.__knRO = 1;
-    new ResizeObserver(() => { if (window.__paintBadges) requestAnimationFrame(window.__paintBadges); if (window.__knAlign) window.__knAlign(); }).observe(_pe); } } catch(e){}
+    new ResizeObserver(() => { if (window.__paintBadges) requestAnimationFrame(window.__paintBadges); if (window.__knVeDo) requestAnimationFrame(window.__knVeDo); if (window.__knAlign) window.__knAlign(); }).observe(_pe); } } catch(e){}
   addProBadges();
   const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 }); } catch(e){} };
   __setRange(); setTimeout(__setRange, 150); setTimeout(__setRange, 600);
@@ -2570,8 +2679,8 @@ function loadProChart(){
       w2.style.cssText = 'position:fixed;left:0;right:0;top:' + topY + 'px;bottom:' + botH + 'px;z-index:70;background:#fff;padding:8px 12px;overflow:hidden';
       if (pk2) pk2.style.setProperty('height','auto','important');
       const vh2 = window.innerHeight - topY - botH - 16;
-      const volH = Math.max(110, Math.round(vh2 * 0.20));
-      const pxH = Math.max(200, vh2 - volH);
+      const volH = Math.max(110, Math.round(vh2 * 0.20)), rsH = window.__knRsiH();
+      const pxH = Math.max(200, vh2 - volH - rsH);
       px2.style.height = pxH + 'px';
       vp2.style.height = volH + 'px';
       if (vl2) vl2.style.top = (pxH + 6) + 'px';
@@ -2579,7 +2688,7 @@ function loadProChart(){
     } else {
       w2.style.cssText = '';
       if (pk2) pk2.style.removeProperty('height');
-      px2.style.height = '360px';
+      px2.style.height = (360 - window.__knRsiH()) + 'px'; delete px2.dataset.knTm;
       vp2.style.height = '145px';
       if (vl2) vl2.style.top = '366px';
       document.body.style.overflow = '';
@@ -2623,7 +2732,11 @@ function loadProChart(){
     const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
     const dsh = NAR ? dstr.slice(0,5) : dstr;
     const head = '';
-    if (leg) leg.innerHTML = head + (NAR ? '' : dsh + SP) + L.o + d.open + SP + L.h + d.high + SP + L.l + d.low + SP + L.c + '<span style="color:' + (chg < 0 ? '#F23645' : '#18A34B') + '">' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(NAR ? 1 : 2) + '%)</span>' + SP + L.m + (maV == null ? '—' : maV);
+    const maX = (on, ten, arr, mau) => on ? SP + '<span style="color:' + mau + '">' + ten + (NAR ? ' ' : ' = ') + (arr[ii] == null ? '—' : arr[ii]) + '</span>' : '';
+    if (leg) leg.innerHTML = head + (NAR ? '' : dsh + SP) + L.o + d.open + SP + L.h + d.high + SP + L.l + d.low + SP + L.c + '<span style="color:' + (chg < 0 ? '#F23645' : '#18A34B') + '">' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(NAR ? 1 : 2) + '%)</span>'
+      + (KN_IND.ma20 ? SP + '<span style="color:#2962FF">' + L.m + (maV == null ? '—' : maV) + '</span>' : '') + maX(KN_IND.ma50, 'MA50', ma50a, '#FF9800') + maX(KN_IND.ma200, 'MA200', ma200a, '#9C27B0');
+    const rleg = document.getElementById('proRsiLegend');
+    if (rleg) { const rv = rsiA[ii]; rleg.innerHTML = 'RSI(14) = ' + (rv == null ? '—' : rv.toFixed(1)) + (rv != null && rv >= 70 ? ' · quá mua' : rv != null && rv <= 30 ? ' · quá bán' : ''); }
     const _isIx = ((XROW(curT)||{}).b === 'IX');
     const fV = x => x == null ? '—' : (NAR ? (x >= 1e6 ? (x/1e6).toFixed(2) + 'tr' : Math.round(x/1e3) + 'k') : Math.round(x).toLocaleString('en-US'));
     if (vleg && _isIx) vleg.innerHTML = dsh + SP + L.v + fV(vv) + (pct == null ? '' : SP + pct + '%');
@@ -2643,6 +2756,13 @@ function loadProChart(){
   };
   proChart.subscribeCrosshairMove(onCross);
   proVolChart.subscribeCrosshairMove(onCross);
+  if (proRsiChart) { proRsiChart.subscribeCrosshairMove(onCross);
+    let mr = false;
+    proChart.subscribeCrosshairMove(p => { if (mr) return; mr = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
+      if (ci == null || rsiA[ci] == null) proRsiChart.clearCrosshairPosition(); else proRsiChart.setCrosshairPosition(rsiA[ci], curOhlc.t[ci], proRsi); } catch(e){} mr = false; });
+    proRsiChart.subscribeCrosshairMove(p => { if (mr) return; mr = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
+      if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, curOhlc.t[ci], proCandle); } catch(e){} mr = false; });
+  }
   // soi guong con tro giua 2 khung
   let mirroring = false;
   proChart.subscribeCrosshairMove(p => { if (mirroring) return; mirroring = true; try {
@@ -2671,6 +2791,7 @@ inits.detail = function(t){
         <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:9px">
           <div class="search-wrap"><input id="dQ" placeholder="Nhập mã hoặc tên công ty…" style="width:206px;padding:6px 11px"><div id="sugg"></div></div>
           <div id="dTitle" style="font-size:15.5px;font-weight:700"></div>
+          <div id="dTools"></div>
           <div id="dRanges" style="display:none"></div>
           <div id="dTpn" style="margin-left:auto"></div>
         </div>
@@ -4546,7 +4667,9 @@ function pinNameBar(){
       var dinh = k.getBoundingClientRect().top + window.scrollY;   // vi tri chart trong trang
       var CHAN = 66;                                               // chua dai lien he ghim duoi
       var tong = Math.max(430, Math.round(window.innerHeight - dinh - CHAN));
-      var hPx  = Math.round(tong * 0.74), hVol = tong - hPx;
+      var rsH = window.__knRsiH ? window.__knRsiH() : 0;
+      var hPx  = Math.round(tong * 0.74) - rsH, hVol = tong - hPx - rsH;
+      px.dataset.knTm = '1';
       /* Do lai moi nhip va chi sua khi lech >6px: lan dau chart duoc dung truoc
          khi dai watchlist ve xong nen vi tri con xe dich; cach nay tu chinh lai. */
       if (Math.abs(parseFloat(px.style.height || 0) - hPx) > 6){
@@ -4564,6 +4687,7 @@ function pinNameBar(){
     }catch(e){}
   }
   var __tmLai = 0;
+  window.__knTranMan = __chartTranMan;
   /* Mo mot ma -> chart duoc dung lai tu dau, canh lai ngay thay vi doi nhip */
   try {
     var __od = window.openDetail;
