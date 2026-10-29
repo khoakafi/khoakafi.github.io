@@ -170,6 +170,8 @@ Chỉ báo dòng tiền = giá trị khớp THẬT TB20 ÷ TB250 toàn thị tr�
 chống nhảy. Tính ở kafi-core `research/trang-thai.mjs` (khớp 100% bản nghiên cứu từ 10/2018), `breadth.mjs` kiểm độ mới (phiên = VN-Index,
 US10Y trễ ≤4 ngày, USD H.10 đúng tuần) → sai thì không phát hành. **Không hiện điều kiện/ngưỡng lên web** (anh Khoa: khách chỉ thấy tầng nổi).
 Chạy thử: `tong-quan.yml` tick `thu` → file ở nhánh `tongquan-thu` của kafi-core.
+**29/10/2026: FRED từ chối runner GitHub** (curl 92 / node `fetch failed`) → `tong-quan.yml` hỏng cả 28/10. `trang-thai.mjs` `taiFred` nay thử FRED trước, hỏng thì
+  DGS10 ← Bộ Tài chính Mỹ (CSV lợi suất theo năm, cột `10 Yr`), DTWEXBGS ← Fed H.10 (Nominal Broad, `JRXWTFB_N.B`); chạy thử khớp 2.198/2.198 phiên.
 28/09: `WEB_TOKEN` cũ bị 401 → anh Khoa tạo token mới (fine-grained, chỉ repo web, Contents RW, không hết hạn); đã thử ghi thật OK (`[AUTO] toan canh` 5b77ec8).
 
 ## Lãi suất NHNN theo tháng (27/09/2026)
