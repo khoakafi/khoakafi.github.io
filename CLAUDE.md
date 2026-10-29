@@ -211,6 +211,8 @@ kafi-core `research/breakout-thuc-te-KET-QUA.md`. 125 deal B★ từ 2019: TB20 
 
 ORS 21/10 trượt B★ vì biên độ 10/30 phiên = 0,63. kafi-core `research/nen-chat-KET-QUA.md`: deal sát ngưỡng 0,60–0,65 thắng 3/11, TB −0,6%/deal
 (B★ +7,9%); 0,65–0,80 cũng âm; nới ngưỡng chỉ tăng sụt. Đừng nới. (ORS Q3/2026 LNST −35% YoY — luật hiện cho qua YoY âm, mục còn mở.)
+**Sổ deal hụt** (29/10, anh Khoa: "lưu ý để back-test ngày càng thông minh"): kafi-core `research/deal-hut.md` — mỗi mã nổ đẹp mà không ra B★
+ghi luật chặn + số đo + kết quả 10/20 phiên; giả thuyết ghi trước (H1 phiên bật lẻ, H2 LNST quý âm), chỉ kiểm khi đủ ≥ 20 ca. VSC 21/10: nền 0,77.
 
 ## Phân tích cơ bản chuyên sâu (15/10/2026)
 
