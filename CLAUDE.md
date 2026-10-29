@@ -407,6 +407,16 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   (PNJ viết lại sau ĐHĐCĐ bất thường: dự phòng kim cương 7.071 tỷ là tổng cả năm gồm ~822 tỷ đã ghi 6T; P/B theo ROE 2029E). Mẹ sau con (MSN sau MCH + TCB,
   VSC chạy lại sau HAH). SSI, VGC chờ BCTC hợp nhất. `ho-so-tai.yml` cần `apt-get update` trước khi cài poppler (mirror 404).
 
+## KQKD công bố trước VNDirect — `bctc_cong_bo.json` (29/10/2026)
+
+Anh Khoa: "KQKD Q3 ra rồi — cập nhật số cho kĩ, không bị mất deal". VNDirect nhập BCTC trễ (FPT công bố 21/10, 29/10 vẫn chưa có;
+29/10 chỉ 367/700 mã có Q3) → `gradeAt` chấm theo quý cũ: mã Q2 tăng 0–25% bị W (ẩn khỏi watchlist) dù Q3 có thể tăng mạnh, và ngược lại.
+Engine (`boSungCongBo`, test `cong-bo-test.mjs`) đọc file web `bctc_cong_bo.json`: chỉ THÊM quý VNDirect chưa có, VNDirect nhập rồi thì số
+VNDirect thắng (as-of lùi về ngày công bố nếu số khớp ±10%). Dựng file: kafi-core `research/cong-bo/dung.py <thư mục kq*.json + ds.json> bctc_cong_bo.json`
+— chỉ nhận số ≥ 2 nguồn, LNST cổ đông mẹ hợp nhất, cùng kỳ khớp VNDirect ±5%. **Không ước tính** (số ước ĐHĐCĐ, LNTT, BCTC riêng → bỏ).
+Nguồn tự động: đã dò KBS, 24hmoney (cũng chỉ đến Q2 khi FPT đã công bố), Simplize, CafeF, Vietstock, FireAnt (401), TCBS — chưa có nguồn
+nào nhanh hơn VNDirect; hiện gom tay bằng tác tử WebSearch (máy task không mở được báo VN, chỉ đọc đoạn trích; hạn ~200 lượt/tác tử).
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
