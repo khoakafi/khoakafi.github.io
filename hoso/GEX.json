@@ -3,11 +3,11 @@
  "ma": "GEX",
  "ten": "Công ty Cổ phần Tập đoàn GELEX",
  "nganh": "Thiết bị điện, hạ tầng khu công nghiệp, vật liệu xây dựng",
- "ky": "BCTC Q2/2026 (chưa có KQKD Q3/2026)",
- "cap_nhat": "2026-10-24",
- "lan_sau": "sau BCTC Q3/2026 của GEX, GEE, GEL",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 của GEX, GEE, GEL (cuối 01/2027)",
  "cp_trieu": 1308.5,
- "cp_ng": "Vốn điều lệ 13.084,7 tỷ (BCTC Q2/2026) ÷ 10.000 đ = 1.308,5 triệu cp, sau cổ tức 25% và thưởng 20% bằng cổ phiếu (chốt quyền 06/05/2026); vốn hóa ÷ giá trên bảng giá VNDirect khớp",
+ "cp_ng": "Vốn điều lệ 13.084,7 tỷ (BCTC Q2, Q3/2026) ÷ 10.000 đ = 1.308,5 triệu cp, sau cổ tức 25% và thưởng 20% bằng cổ phiếu (chốt quyền 06/05/2026). Bảng giá VNDirect 30/10 tính ~1.356 triệu cp (+3,6%); chưa thấy công bố phát hành mới nên dùng vốn điều lệ",
  "chia": [
   [
    "2026-05-05",
@@ -16,45 +16,52 @@
  ],
  "co_tuc": [],
  "tieu_de": {
-  "t": "Mua GEX là mua GEE với giá chiết khấu; GEL, Eximbank và Fairmont gần như được cho không",
+  "t": "Q3: GEE vượt dự báo nhưng GEL và công ty mẹ ăn hết; giá GEX vẫn thấp hơn riêng phần GEE",
   "dk": "up_tren:15",
-  "khac": "GEE vẫn là động cơ của GEX; chiết khấu so với phần GEE, GEL đã hẹp, còn chờ GEL giảm nợ"
+  "khac": "Q3: GEE vượt dự báo nhưng GEL và công ty mẹ ăn hết; chiết khấu holding có lý do"
  },
- "dong_mo": "GEE — GEX nắm 76% — lãi 6T/2026 +32%, nhưng LN cổ đông GEX −12%: lãi vay ở GEL tăng 2,6 lần, phần lãi của cổ đông thiểu số +55%. Định giá từng phần (GEE P/E 15 theo hồ sơ GEE, GEL theo hồ sơ GEL, Eximbank P/B 1,0, trừ 14% chi phí tập đoàn): {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3 LN cổ đông 246 tỷ (−60%), thấp hơn mô hình cũ 31%: GEE lãi 774 tỷ (vượt), nhưng GEL lỗ 37 tỷ và công ty mẹ & khác −316 tỷ. Mô hình hạ LN 2027E còn 1.466 tỷ, tăng chi phí tập đoàn lên 22%: tổng các phần {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
    "so": "{con_pct}",
    "nhan": "giá trị thị trường phần GEE, GEL do GEX nắm so với vốn hóa GEX",
    "tieu": "Mua GEX là mua GEE giá chiết khấu, GEL và Eximbank đi kèm",
    "dk": "up_tren:15",
-   "t": "Theo giá 23/10, 76% GEE (~35.300 tỷ) đã lớn hơn vốn hóa GEX (~31.500 tỷ); cộng 70,2% GEL (~18.000 tỷ) và ~10% Eximbank (~3.300 tỷ). Nợ vay ròng ngoài GEE, GEL gần bằng 0 (30/6: vay 3.294, tiền và đầu tư ngắn hạn 3.535 tỷ) nên chiết khấu không đến từ nợ công ty mẹ. Vốn hóa GEX bằng 0,6–0,9 lần phần GEE từ cuối 2025; quý 1–3/2025 là 1,2–1,4 lần.",
-   "ng": "giá 23/10 · BCTC hợp nhất − BCTC GEE, GEL (VNDirect) · MBS 16/09",
+   "t": "Theo giá 30/10, 76% GEE (~32.300 tỷ) lớn hơn vốn hóa GEX (~29.000 tỷ); cộng 70,2% GEL (~16.900 tỷ) và ~10% Eximbank (~3.000 tỷ). Nợ vay ròng ngoài GEE, GEL tăng lên ~1.650 tỷ (30/9; 30/6 gần 0) — chỉ ~6% vốn hóa. Vốn hóa GEX bằng 0,6–0,9 lần phần GEE từ cuối 2025; quý 1–3/2025 là 1,2–1,4 lần.",
+   "ng": "giá 30/10 · BCTC hợp nhất − BCTC GEE, GEL (VNDirect) · MBS 16/09",
    "khac": {
     "so": "{con_pct}",
     "nhan": "giá trị thị trường phần GEE, GEL do GEX nắm so với vốn hóa GEX",
-    "tieu": "Chiết khấu so với phần GEE, GEL đã hẹp lại",
-    "t": "Phần GEX nắm ở GEE (76%) và GEL (70,2%) theo giá thị trường bằng {con_pct} vốn hóa GEX. Nợ vay ròng ngoài GEE, GEL gần bằng 0 (30/6/2026); chi phí ròng công ty mẹ ~540 tỷ/năm — mức chiết khấu còn lại đã gần mức mô hình trừ (14% tổng các phần)."
+    "tieu": "Chiết khấu so với phần GEE, GEL có lý do",
+    "t": "Phần GEX nắm ở GEE (76%) và GEL (70,2%) theo giá thị trường bằng {con_pct} vốn hóa GEX. Nhưng chi phí ròng công ty mẹ & khác 9T/2026 đã 588 tỷ (~780 tỷ/năm) và nợ vay ròng ngoài GEE, GEL tăng lên ~1.650 tỷ (30/9) — mô hình trừ 22% tổng các phần cho khoản này."
    }
   },
   {
-   "so": "+32%",
-   "nhan": "LN cổ đông GEE 6T/2026",
-   "tieu": "GEE là động cơ: phần 76% GEE lớn hơn cả LN cổ đông GEX",
-   "t": "Doanh thu GEE 6T/2026 16.621 tỷ (+41%), Q2 +46%; LN cổ đông 1.289 tỷ, LN cốt lõi Q2 +42% dù biên gộp còn 14,3% (cùng kỳ 15,9%) vì giá đồng. 76% GEE (~980 tỷ) lớn hơn LN cổ đông GEX 6T (786 tỷ). Hồ sơ GEE của trang: 2026E ~2.840 tỷ, 2027E ~3.100 tỷ nhờ lưới điện, KCN, trung tâm dữ liệu.",
-   "ng": "BCTC GEE (VNDirect) · MBS 16/09 · hồ sơ GEE"
+   "so": "−31%",
+   "nhan": "LN cổ đông GEX Q3/2026 so với mô hình cũ (357 tỷ)",
+   "tieu": "Q3 bác bỏ giả định chi phí công ty mẹ ổn định",
+   "t": "GEE Q3 lãi 774 tỷ, cao hơn hồ sơ GEE cũ (668); GEL lỗ 37 tỷ (cũ −22). Phần lệch nằm ở công ty mẹ & khác: −316 tỷ (Q1 −54, Q2 −217; mô hình cũ ~−135). Ngoài GEE, GEL: tài chính ròng ngoài lãi vay −151 tỷ, quản lý 124 tỷ/quý (Fairmont, văn phòng tập đoàn); nợ vay ròng tăng ~1.900 tỷ trong quý. Mô hình coi một phần là mức mới: 2027E −750 tỷ (cũ −450).",
+   "ng": "BCTC GEX, GEE, GEL (VNDirect) · Thời báo Tài chính, CafeF 28/10"
   },
   {
-   "so": "−12%",
-   "nhan": "LN cổ đông GEX 6T/2026 (LNTT hợp nhất +19%)",
-   "tieu": "Lãi vay GEL và cổ đông thiểu số ăn hết phần tăng",
-   "t": "LNTT hợp nhất 6T/2026 +19% nhưng LN cổ đông −12%: phần của cổ đông thiểu số tăng từ 743 lên 1.149 tỷ (24% GEE, 49,8% VGC, 29,8% GEL). GEL vay hợp vốn 200 triệu USD (Q1/2026): nợ vay ròng GEL 15.269 tỷ (9/2025: 7.121), lãi vay 6T 692 tỷ; ngoài VGC, GEL lỗ ~280 tỷ. Công ty mẹ và khác lấy thêm 272 tỷ.",
-   "ng": "BCTC GEX, GEE, GEL, VGC (VNDirect) · Thời báo Tài chính"
+   "so": "+39%",
+   "nhan": "LN cổ đông GEE 9T/2026 (2025 trừ lãi một lần)",
+   "tieu": "GEE là động cơ: phần 76% GEE lớn hơn cả LN cổ đông GEX",
+   "t": "Doanh thu GEE 9T/2026 26.293 tỷ (+44%), Q3 +50%; LN cổ đông 2.064 tỷ, LN cốt lõi Q3 +42% dù biên gộp 14,6% (cùng kỳ 16,6%) vì giá đồng. 76% GEE 9T (~1.570 tỷ) gấp 1,5 lần LN cổ đông GEX 9T (1.032 tỷ). Hồ sơ GEE: 2026E ~2.840 tỷ, 2027E ~3.100 tỷ.",
+   "ng": "BCTC GEE (VNDirect) · hồ sơ GEE 29/10"
+  },
+  {
+   "so": "−32%",
+   "nhan": "LN cổ đông GEX 9T/2026 (LNTT hợp nhất +14%)",
+   "tieu": "Vượt kế hoạch LNTT, nhưng cổ đông GEX nhận ít hơn năm trước",
+   "t": "LNTT 9T 3.931 tỷ = 109% kế hoạch năm, nhưng LN cổ đông −32%: phần cổ đông thiểu số tăng từ 902 lên 1.785 tỷ (24% GEE, 49,8% VGC, 29,8% GEL). Lãi vay GEL 9T 1.112 tỷ (×2,6; khoản góp sân bay Gia Bình, vay 200 triệu USD); ngoài VGC, GEL lỗ ~550 tỷ.",
+   "ng": "BCTC GEX, GEL, VGC (VNDirect) · hồ sơ GEL 30/10"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Định giá từng phần: {up_so} so với giá hiện tại",
-   "t": "76% GEE × P/E 15 (hồ sơ GEE; thị trường trả ~15,0 lần LN 2027E) + 70,2% GEL theo hồ sơ GEL (18,5 nghìn đ/cp, 1,31 lần sổ sách; giá GEL 2,03 lần) + 10% Eximbank × P/B 1,0 + phần còn lại theo sổ sách × 0,8, trừ 14% chi phí tập đoàn — vẫn thấp hơn 25% giá thị trường các phần (hiện 46%). Xấu 19,2, tốt 45,4. Theo P/E của chính GEX (trung vị 15,2 × LN 2027E) chỉ ~21,2: cách này coi GEL, Eximbank như không có.",
+   "t": "76% GEE × P/E 15 (hồ sơ GEE; thị trường trả ~13,7 lần LN 2027E) + 70,2% GEL theo hồ sơ GEL (18,5 nghìn đ/cp, 1,31 lần sổ sách; giá GEL 1,92 lần) + 10% Eximbank × P/B 1,0 + phần còn lại × 0,8 sổ sách, trừ 22% chi phí tập đoàn — thấp hơn 26% giá thị trường các phần (hiện 46%). Xấu 17,4, tốt 41,1. Theo P/E của chính GEX (trung vị 15,2 × LN 2027E) chỉ ~17,0.",
    "ng": "mô hình · P/E, P/B lịch sử: BCTC VNDirect"
   }
  ],
@@ -66,14 +73,14 @@
   ],
   "ln": [
    1478,
-   1693,
-   1823
+   1391,
+   1466
   ],
   "ln_truoc": 1631,
   "eps": [
    1130,
-   1294,
-   1393
+   1063,
+   1120
   ],
   "co_tuc_nam": 552,
   "them": [
@@ -86,7 +93,7 @@
     ]
    }
   ],
-  "ng": "LN 2024–2025: BCTC; EPS theo 1.308,5 triệu cp (sau chia 45% cổ phiếu, 5/2026); cổ tức tiền gần nhất 800 đ/cp cũ (chốt quyền 11/09/2025) ≈ 552 đ/cp mới; LN GEE 2025 trừ lãi một lần quý 3"
+  "ng": "LN 2024–2025: BCTC; 2026E = 9T thực tế + Q4 ước; EPS theo 1.308,5 triệu cp (sau chia 45% cổ phiếu, 5/2026); cổ tức tiền gần nhất 800 đ/cp cũ (chốt quyền 11/09/2025) ≈ 552 đ/cp mới; LN GEE 2025 trừ lãi một lần quý 3"
  },
  "ln_mang": {
   "tieu": "LN các phần về cổ đông GEX",
@@ -112,13 +119,13 @@
     "mau": "c2",
     "v": [
      380,
-     74,
-     -85
+     39,
+     -141
     ]
    }
   ],
   "nhan": "GEE (79% → 76%)",
-  "ng": "Trừ công ty mẹ & khác (−495; −542; −450 tỷ: Fairmont, GELEX Tower, chi phí tập đoàn) ra LN cổ đông GEX. GEE 2025 trừ lãi một lần quý 3; 2026E–2027E: hồ sơ GEE, GEL."
+  "ng": "Trừ công ty mẹ & khác (−495; −808; −750 tỷ: Fairmont, GELEX Tower, chi phí tập đoàn) ra LN cổ đông GEX. GEE 2025 trừ lãi một lần quý 3; 2026E–2027E: hồ sơ GEE, GEL."
  },
  "sotp": {
   "con": [
@@ -129,7 +136,7 @@
     "so_huu": 0.76,
     "ln26": 2843,
     "ln27": 3102,
-    "gtgd": 96,
+    "gtgd": 94,
     "mau": "c1"
    },
    {
@@ -137,8 +144,8 @@
     "ten": "Hạ tầng GELEX",
     "cp_trieu": 890.0,
     "so_huu": 0.702,
-    "ln26": 105,
-    "ln27": -121,
+    "ln26": 55,
+    "ln27": -201,
     "gtgd": 40,
     "mau": "c2"
    }
@@ -146,10 +153,10 @@
   "conlai": {
    "ten": "~10% Eximbank, Fairmont, GELEX Tower, trừ chi phí công ty mẹ",
    "mau": "c4",
-   "ln27": -450
+   "ln27": -750
   },
-  "kv_ng": "Sở hữu: GEE 76% (MBS 16/09/2026), GEL 70,2% (79,1% trên 7.900 tỷ trước IPO 100 triệu cp, 1/2026); số cp theo vốn điều lệ 30/6/2026",
-  "ng": "Số cp GEE, GEL: vốn điều lệ 30/6/2026 (bảng giá VNDirect tính GEL ~901 triệu cp). Sở hữu: GEE 76% (MBS 16/09/2026), GEL 70,2%"
+  "kv_ng": "Sở hữu: GEE 76% (MBS 16/09/2026), GEL 70,2% (79,1% trên 7.900 tỷ trước IPO 100 triệu cp, 1/2026); số cp theo vốn điều lệ 30/9/2026",
+  "ng": "Số cp GEE, GEL: vốn điều lệ 30/9/2026 (bảng giá VNDirect tính GEL ~901 triệu cp). Sở hữu: GEE 76% (MBS 16/09/2026), GEL 70,2%"
  },
  "mo_hinh": {
   "tieu": "Dự phóng theo phần",
@@ -206,16 +213,16 @@
     "ten": "GEL ngoài VGC: lãi vay, dự án (tỷ)",
     "v": [
      -224,
-     -790,
-     -1010
+     -840,
+     -1090
     ]
    },
    {
     "ten": "LN cổ đông GEL (tỷ)",
     "v": [
      481,
-     105,
-     -121
+     55,
+     -201
     ],
     "tang": 1
    },
@@ -223,8 +230,8 @@
     "ten": "Vốn chủ GEL cuối năm (tỷ)",
     "v": [
      9629,
-     12584,
-     12463
+     12531,
+     12330
     ],
     "tang": 1
    },
@@ -244,8 +251,8 @@
     "ten": "Phần GEL (tỷ)",
     "v": [
      380,
-     74,
-     -85
+     39,
+     -141
     ],
     "tang": 1
    },
@@ -253,16 +260,16 @@
     "ten": "Công ty mẹ & khác (tỷ)",
     "v": [
      -495,
-     -542,
-     -450
+     -808,
+     -750
     ]
    },
    {
     "ten": "LN cổ đông GEX (tỷ)",
     "v": [
      1478,
-     1693,
-     1823
+     1391,
+     1466
     ],
     "dam": 1,
     "tang": 1
@@ -271,23 +278,23 @@
     "ten": "EPS (đ)",
     "v": [
      1130,
-     1294,
-     1393
+     1063,
+     1120
     ],
     "eps": 1
    }
   ],
-  "ghi": "BCTC GEX, GEE, GEL, VGC (VNDirect); GEE, GEL, VGC 2026E–2027E theo hồ sơ từng mã của trang. Sở hữu 2025: GEE 79%, GEL 79,1%; 2026: 76%, 70,2%. Công ty mẹ & khác = LN cổ đông GEX − phần GEE − phần GEL. GEE 2025 trừ ~1.240 tỷ lãi bán Gelex Hạ tầng (giao dịch nội bộ, không có trong hợp nhất GEX)."
+  "ghi": "BCTC GEX, GEE, GEL, VGC (VNDirect) đến Q3/2026; 2026E = 9T thực tế + Q4 ước; GEE, GEL, VGC 2026E–2027E theo hồ sơ từng mã của trang (cập nhật Q3). Sở hữu 2025: GEE 79%, GEL 79,1%; 2026: 76%, 70,2%. Công ty mẹ & khác = LN cổ đông GEX − phần GEE − phần GEL. GEE 2025 trừ ~1.240 tỷ lãi bán Gelex Hạ tầng (giao dịch nội bộ, không có trong hợp nhất GEX)."
  },
  "cau_ln": {
   "ten": "LN cổ đông GEX 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   1693
+   1391
   ],
   "cuoi": [
    "2027E",
-   1823
+   1466
   ],
   "buoc": [
    [
@@ -296,14 +303,14 @@
    ],
    [
     "GEL (70,2%)",
-    -159
+    -180
    ],
    [
     "Công ty mẹ & khác",
-    92
+    58
    ]
   ],
-  "y": "GEE +197 tỷ, GEL −159 tỷ: theo hồ sơ GEL, lãi vay ngoài VGC (lỗ ~1.010 tỷ năm 2027) vẫn lớn hơn phần VGC mang về; GEL chỉ cải thiện khi giảm nợ.",
+  "y": "GEE +197 tỷ, GEL −180 tỷ: theo hồ sơ GEL, lãi vay ngoài VGC (lỗ ~1.090 tỷ năm 2027) vẫn lớn hơn phần VGC mang về; công ty mẹ & khác giữ ~750 tỷ/năm.",
   "ng": "mô hình"
  },
  "gia_dinh": [
@@ -314,34 +321,34 @@
     "2.843 · 3.102",
     "2.975 · 3.614"
    ],
-   "ly_do": "Theo hồ sơ GEE: biên gộp 2027 13,2–14,6% (6T/2026 14,3%), doanh thu 2027 +2% đến +18%; 6T/2026 lãi 1.289 tỷ (+32%), doanh thu +41%"
+   "ly_do": "Theo hồ sơ GEE (29/10): biên gộp 2027 13,2–14,8% (9T/2026 14,4%), doanh thu 2027 +2% đến +18%; 9T/2026 lãi 2.064 tỷ (+39%), Q3 774 tỷ vượt hồ sơ cũ (668)"
   },
   {
-   "ten": "LN VGC (100%, tỷ): 2H/2026 · 2027",
+   "ten": "LN VGC (100%, tỷ): Q4/2026 · 2027",
    "v": [
-    "742 · 974",
-    "1.004 · 1.770",
-    "1.313 · 2.427"
+    "279 · 974",
+    "541 · 1.770",
+    "850 · 2.427"
    ],
-   "ly_do": "Theo hồ sơ VGC, dùng chung với hồ sơ GEL. VGC 2025 1.403 tỷ, 6T/2026 779 (+3%); thuế chống bán phá giá kính 15–63% từ 02/2026"
+   "ly_do": "Theo hồ sơ VGC, dùng chung với hồ sơ GEL. VGC 2025 1.403 tỷ, 9T/2026 1.242 (+46%); Q4 là quý bàn giao KCN"
   },
   {
-   "ten": "GEL ngoài VGC (tỷ): 2H/2026 · 2027",
+   "ten": "GEL ngoài VGC (tỷ): Q4/2026 · 2027",
    "v": [
-    "−690 · −1.330",
-    "−510 · −1.010",
-    "−340 · −370"
+    "−410 · −1.420",
+    "−290 · −1.090",
+    "−185 · −460"
    ],
-   "ly_do": "Theo hồ sơ GEL. 6T/2026 −280; lãi vay GEL Q2/2026 394 tỷ/quý; vay 200 triệu USD 5 năm; kế hoạch LNTT GEL 2026 1.158 tỷ (2025: 2.028)"
+   "ly_do": "Theo hồ sơ GEL (30/10). 9T/2026 −551; lãi vay GEL Q3/2026 420 tỷ/quý (khoản góp sân bay Gia Bình, vay 200 triệu USD)"
   },
   {
-   "ten": "Công ty mẹ & khác (tỷ): 2H/2026 · 2027",
+   "ten": "Công ty mẹ & khác (tỷ): Q4/2026 · 2027",
    "v": [
-    "−330 · −650",
-    "−270 · −450",
-    "−220 · −300"
+    "−320 · −1.050",
+    "−220 · −750",
+    "−140 · −450"
    ],
-   "ly_do": "6T/2026 −272; 2025 −495 (GEE trừ lãi một lần); Fairmont vào hoạt động sớm, BSC ước hòa vốn 2028"
+   "ly_do": "Q1–Q3/2026: −54 · −217 · −316 (bản cũ: 2027 −450). Cơ sở 2027 ≈ 9T năm hóa; xấu = nhịp Q2–Q3; tốt: GEL trả nợ GELEX, Fairmont giảm lỗ"
   },
   {
    "ten": "P/E GEE (× LN 2027E)",
@@ -350,16 +357,16 @@
     "15",
     "17"
    ],
-   "ly_do": "Như hồ sơ GEE: 15 ≈ Gordon (ROE ~30%, chi trả ~70%, chi phí vốn 14%); lịch sử GEE từ 2022: trung vị 12,7; thị trường đang trả ~15,0 lần LN 2027E"
+   "ly_do": "Như hồ sơ GEE: 15 ≈ Gordon (ROE ~30%, chi trả ~70%, chi phí vốn 14%); lịch sử GEE từ 2022: trung vị 12,7; thị trường đang trả ~13,7 lần LN 2027E"
   },
   {
    "ten": "Giá trị GEL (nghìn đ/cp) · P/B ngầm",
    "v": [
-    "9,4 · 0,68",
+    "9,5 · 0,69",
     "18,5 · 1,31",
-    "27,9 · 1,92"
+    "27,7 · 1,93"
    ],
-   "ly_do": "Hồ sơ GEL: 50,21% VGC theo hồ sơ VGC + sân bay theo giá góp + nước sạch, KCN, BĐS theo sổ sách − nợ vay ròng ngoài VGC. Giá GEL đang 2,03 lần sổ sách"
+   "ly_do": "Hồ sơ GEL: 50,21% VGC theo hồ sơ VGC + sân bay theo giá góp + nước sạch, KCN, BĐS theo sổ sách − nợ vay ròng ngoài VGC. Giá GEL đang 1,92 lần sổ sách"
   },
   {
    "ten": "P/B Eximbank · phần còn lại",
@@ -368,45 +375,45 @@
     "1,0 · 0,8",
     "1,3 · 1,0"
    ],
-   "ly_do": "EIB từ 2015: thấp 10% 1,02, trung vị 1,35, hiện 1,26. Phần còn lại sổ sách 1.540 tỷ: Fairmont, GELEX Tower, đầu tư khác trừ nợ"
+   "ly_do": "EIB từ 2015: thấp 10% 1,02, trung vị 1,35, hiện 1,14. Phần còn lại sổ sách 1.467 tỷ: Fairmont, GELEX Tower, đầu tư khác trừ nợ"
   },
   {
    "ten": "Chi phí tập đoàn (% tổng các phần)",
    "v": [
-    "14%",
-    "14%",
-    "14%"
+    "22%",
+    "22%",
+    "22%"
    ],
-   "ly_do": "Chi phí ròng công ty mẹ & khác ~450 tỷ/năm (2027E) × P/E 15 ≈ 14% tổng các phần; nợ vay ròng ngoài GEE, GEL ≈ 0 (30/6/2026)"
+   "ly_do": "Chi phí ròng công ty mẹ & khác 750 tỷ/năm (2027E cơ sở) × P/E 15 ≈ 22% tổng các phần (bản 24/10: 450 tỷ, 14%); nợ vay ròng ngoài GEE, GEL ~1.650 tỷ (30/9) đã nằm trong sổ sách phần còn lại"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 1273,
-   "ln27": 464,
-   "gia": 19.2,
-   "mo_ta": "LN GEE 2027 2.242 tỷ × P/E 12; GEL 9,4 nghìn đ/cp (hồ sơ GEL, ngoài VGC lỗ 1.330 tỷ 2027); Eximbank P/B 0,8; trừ 14% chi phí tập đoàn (chiết khấu giữ 40% như từ cuối 2025: ~13,4)"
+   "ln26": 974,
+   "ln27": 0,
+   "gia": 17.4,
+   "mo_ta": "LN GEE 2027 2.242 tỷ × P/E 12; GEL 9,5 nghìn đ/cp (hồ sơ GEL, ngoài VGC lỗ 1.420 tỷ 2027); Eximbank P/B 0,8; trừ 22% chi phí tập đoàn (chiết khấu giữ 40% như từ cuối 2025: ~13,4)"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 1693,
-   "ln27": 1823,
-   "gia": 33.4,
-   "mo_ta": "LN GEE 2027 3.102 tỷ × P/E 15 (hồ sơ GEE); GEL 18,5 nghìn đ/cp (hồ sơ GEL, LN 2027E −121 tỷ); Eximbank P/B 1,0; trừ 14% chi phí tập đoàn"
+   "ln26": 1391,
+   "ln27": 1466,
+   "gia": 30.2,
+   "mo_ta": "LN GEE 2027 3.102 tỷ × P/E 15 (hồ sơ GEE); GEL 18,5 nghìn đ/cp (hồ sơ GEL, LN 2027E −201 tỷ); Eximbank P/B 1,0; công ty mẹ & khác −750 tỷ; trừ 22% chi phí tập đoàn"
   },
   {
    "ten": "Tốt",
-   "ln26": 2071,
-   "ln27": 3043,
-   "gia": 45.4,
-   "mo_ta": "LN GEE 2027 3.614 tỷ × P/E 17; GEL 27,9 nghìn đ/cp (hồ sơ GEL, ≈ giá GEL 23/10); Eximbank P/B 1,3; trừ 14% chi phí tập đoàn"
+   "ln26": 1754,
+   "ln27": 2829,
+   "gia": 41.1,
+   "mo_ta": "LN GEE 2027 3.614 tỷ × P/E 17; GEL 27,7 nghìn đ/cp (hồ sơ GEL, ≈ giá GEL 30/10); Eximbank P/B 1,3; công ty mẹ & khác −450 tỷ; trừ 22% chi phí tập đoàn"
   }
  ],
  "dinh_gia": {
   "tieu": "Định giá theo từng phần",
   "phu": "GEE theo P/E × LN 2027E (hồ sơ GEE); GEL theo giá trị hồ sơ GEL; Eximbank, phần còn lại theo P/B; trừ chi phí tập đoàn",
-  "ck": 0.14,
+  "ck": 0.22,
   "cp": 1308.5,
   "phan": [
    {
@@ -436,22 +443,22 @@
     "mau": "c2",
     "sh": 0.702,
     "x": [
-     12272,
-     12584,
-     12909
+     12279,
+     12531,
+     12791
     ],
     "boi": [
-     0.6844,
-     1.3106,
-     1.9244
+     0.6899,
+     1.3118,
+     1.9262
     ],
     "boi_d": 2,
     "x_ten": "Vốn chủ GEL cuối 2026E",
     "boi_ten": "P/B ngầm theo hồ sơ GEL",
     "gt": [
-     5896,
-     11578,
-     17439
+     5947,
+     11540,
+     17296
     ]
    },
    {
@@ -480,34 +487,34 @@
     "ten": "Fairmont, GELEX Tower, đầu tư khác trừ nợ công ty mẹ",
     "mau": "c4",
     "x": [
-     1540,
-     1540,
-     1540
+     1467,
+     1467,
+     1467
     ],
     "boi": [
      0.5,
      0.8,
      1.0
     ],
-    "x_ten": "Sổ sách phần còn lại 30/6/2026",
+    "x_ten": "Sổ sách phần còn lại 30/9/2026",
     "boi_ten": "P/B",
     "sh": 1,
     "gt": [
-     770,
-     1232,
-     1540
+     734,
+     1174,
+     1467
     ]
    }
   ],
   "von": [
-   25140,
-   43707,
-   59439
+   22813,
+   39566,
+   53741
   ],
   "gia": [
-   19.2,
-   33.4,
-   45.4
+   17.4,
+   30.2,
+   41.1
   ]
  },
  "pe_ls": {
@@ -780,7 +787,7 @@
    19.8,
    25.2,
    23.0,
-   21.9
+   21.7
   ],
   "p10": 9.5,
   "p25": 11.7,
@@ -791,21 +798,21 @@
   ],
   "nay": [
    "2026-10",
-   21.9
+   21.7
   ],
   "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Không dùng P/E của chính GEX (đã gồm chiết khấu holding): GEE theo hồ sơ GEE (P/E 12 · 15 · 17; trung vị lịch sử 12,7), GEL theo hồ sơ GEL, Eximbank theo P/B. Giá trị cơ sở tương đương ~24,0 lần LN cổ đông GEX 2027E — cao hơn trung vị 15,2 vì GEL, Eximbank có tài sản lớn nhưng lãi nhỏ hoặc lỗ."
+  "dung": "Không dùng P/E của chính GEX (đã gồm chiết khấu holding): GEE theo hồ sơ GEE (P/E 12 · 15 · 17; trung vị lịch sử 12,7), GEL theo hồ sơ GEL, Eximbank theo P/B. Giá trị cơ sở tương đương ~26,9 lần LN cổ đông GEX 2027E — cao hơn trung vị 15,2 vì GEL, Eximbank có tài sản lớn nhưng lãi nhỏ hoặc lỗ."
  },
  "nhay": [
   [
    "P/E GEE ±2 lần",
    null,
-   3.1
+   2.8
   ],
   [
    "Biên gộp GEE 2027 ±1 điểm %",
    319,
-   2.4
+   2.2
   ],
   [
    "Chi phí tập đoàn ±5 điểm %",
@@ -838,32 +845,44 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    315,
-    550,
-    766
+    -58,
+    359,
+    722
    ],
    "ck": -35
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    1273,
-    1693,
-    2071
+    974,
+    1391,
+    1754
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "25–31/10/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Mô hình cơ sở LN cổ đông Q3 ~360 tỷ; cùng kỳ 622 tỷ nhờ doanh thu tài chính hợp nhất 756 tỷ. Biến số chính: doanh thu, biên gộp GEE.",
+   "khi": "28/10/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Đã ra: KQKD Q3/2026 thấp hơn mô hình",
+   "ct": "LN cổ đông 246 tỷ (cùng kỳ 622; mô hình cũ 357, xấu 172): GEE 774 tỷ (cũ 668), GEL −37 (cũ −22), công ty mẹ & khác −316 (cũ ~−135). LNTT 9T 3.931 tỷ = 109% kế hoạch.",
    "tac": [
-    "≥ 360 tỷ",
-    "giữ kịch bản cơ sở; dưới 170 tỷ nghiêng về kịch bản xấu"
+    "−3,2 nghìn đ/cp",
+    "giá trị cơ sở so với bản 24/10 (33,4): hạ chi phí công ty mẹ, GEL"
    ],
-   "theo_doi": "LN GEE, lãi vay GEL"
+   "theo_doi": "công ty mẹ & khác theo quý"
+  },
+  {
+   "khi": "Cuối 01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Mô hình cơ sở LN cổ đông Q4 ~360 tỷ (cùng kỳ −35): GEE ~780 tỷ (hồ sơ GEE), GEL −18, công ty mẹ & khác −220. Cả năm 2026E 1.391 tỷ.",
+   "tac": [
+    "−60 đến 720 tỷ",
+    "LN Q4 xấu – tốt; lệch chủ yếu ở công ty mẹ & khác và VGC bàn giao KCN"
+   ],
+   "theo_doi": "chi phí tài chính ngoài GEE, GEL"
   },
   {
    "khi": "Q4/2026–2027",
@@ -871,7 +890,7 @@
    "tieu": "GEE: lưới điện, KCN, trung tâm dữ liệu",
    "ct": "Vốn đầu tư công 2026 ~1,01–1,02 triệu tỷ; EVN đẩy đầu tư lưới theo Quy hoạch điện VIII; GEE tự sản xuất máy biến áp 500 kV.",
    "tac": [
-    "+3,8 nghìn đ/cp",
+    "+3,5 nghìn đ/cp",
     "nếu LN GEE 2027 đạt ~3.600 tỷ (kịch bản tốt)"
    ],
    "theo_doi": "doanh thu GEE theo quý"
@@ -881,9 +900,9 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Giá đồng",
-   "ct": "Đồng +40% so cùng kỳ (MBS 16/09), nguyên vật liệu ~84% doanh thu GEE; biên gộp GEE Q2/2026 14,3% (cùng kỳ 15,9%).",
+   "ct": "Đồng LME lập đỉnh ~14.800 USD/tấn giữa 10/2026 (Westmetall), nguyên vật liệu ~84% doanh thu GEE; biên gộp GEE Q3/2026 14,6% (cùng kỳ 16,6%): chuyển được giá khi đồng tăng, chiều giảm chưa thử.",
    "tac": [
-    "±2,4 nghìn đ/cp",
+    "±2,2 nghìn đ/cp",
     "mỗi 1 điểm % biên gộp GEE 2027 (~320 tỷ LN)"
    ],
    "theo_doi": "giá đồng LME, biên gộp GEE"
@@ -893,9 +912,9 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Nợ và tỷ giá ở GEL",
-   "ct": "Nợ vay ròng GEL 15.269 tỷ (6/2026, gấp 2,1 lần 9/2025), gồm 200 triệu USD vay HSBC 5 năm; lãi vay GEL 394 tỷ quý 2.",
+   "ct": "Nợ vay ròng GEL 16.098 tỷ (30/9, gấp 2,3 lần 9/2025), gồm 200 triệu USD vay HSBC 5 năm và khoản góp sân bay Gia Bình; lãi vay GEL Q3 420 tỷ, GEL lỗ 37 tỷ dù VGC lãi 464 tỷ.",
    "tac": [
-    "−0,5 nghìn đ/cp",
+    "−0,4 nghìn đ/cp",
     "mỗi 1.000 tỷ GEL lỗ thêm (hồ sơ GEL: trừ thẳng vào giá trị)"
    ],
    "theo_doi": "lãi vay, chênh lệch tỷ giá GEL"
@@ -912,7 +931,7 @@
    "khi": "Q4/2026–2027",
    "loai": "hai",
    "tieu": "GEL chào bán riêng lẻ 100 triệu cp",
-   "ct": "HĐQT GEL (17/9) duyệt chào bán riêng lẻ 100 triệu cp giá 28.600 đ (2.860 tỷ, trả nợ GELEX và GELEX Đầu tư); GEX không mua thì sở hữu GEL từ 70,2% xuống ~63%.",
+   "ct": "HĐQT GEL (17/9) duyệt 100 triệu cp giá 28.600 đ: 2.860 tỷ trả nợ GELEX 2.431 tỷ, GELEX Đầu tư 429 tỷ; 30/10 chưa có chấp thuận UBCK. Sở hữu GEL 70,2% → ~63%, công ty mẹ thu tiền giảm nợ.",
    "tac": [
     "+0,4 nghìn đ/cp",
     "giá phát hành trên giá trị cơ sở GEL (18,5): phần của GEX tăng dù tỷ lệ giảm"
@@ -924,10 +943,10 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Chiết khấu holding kéo dài",
-   "ct": "Từ cuối 2025 vốn hóa GEX chỉ bằng 0,6–0,9 lần phần GEE; mô hình chỉ trừ 14% chi phí tập đoàn.",
+   "ct": "Từ cuối 2025 vốn hóa GEX chỉ bằng 0,6–0,9 lần phần GEE; mô hình trừ 22% chi phí tập đoàn.",
    "tac": [
-    "−10,1 nghìn đ/cp",
-    "nếu thị trường giữ chiết khấu 40% thay vì 14%"
+    "−7,0 nghìn đ/cp",
+    "nếu thị trường giữ chiết khấu 40% thay vì 22%"
    ],
    "theo_doi": "vốn hóa GEX ÷ phần GEE, GEL"
   },
@@ -936,7 +955,7 @@
    "loai": "xuong",
    "muc": 1,
    "tieu": "Giao dịch trong tập đoàn",
-   "ct": "GEE cho Gelex, Gelex Hạ tầng vay ~2.605 tỷ ở 6,8–7,9%/năm (MBS); GEX bán 2,74% GEE (12/2025, ~1.550 tỷ) rồi công ty cháu Felicitas đăng ký mua lại 1,56% (10/2026, ~700 tỷ).",
+   "ct": "GEE cho Gelex, Gelex Hạ tầng vay ~2.605 tỷ ở 6,8–7,9%/năm (MBS); GEX bán 2,74% GEE (12/2025, ~1.550 tỷ) rồi công ty cháu Felicitas đăng ký mua lại 1,56% (29/9–28/10/2026, ~700 tỷ; mô hình chưa tính).",
    "tac": "",
    "theo_doi": "thuyết minh bên liên quan"
   },
@@ -944,9 +963,9 @@
    "khi": "2027–2028",
    "loai": "len",
    "tieu": "Fairmont Hà Nội hòa vốn",
-   "ct": "Khách sạn vào hoạt động sớm một năm, BSC ước hòa vốn 2028; công ty mẹ & khác đang lỗ 272 tỷ 6T/2026.",
+   "ct": "Khách sạn vào hoạt động sớm một năm, BSC ước hòa vốn 2028; công ty mẹ & khác lỗ 588 tỷ 9T/2026 (Q3 316).",
    "tac": [
-    "+1,5 nghìn đ/cp",
+    "+1,3 nghìn đ/cp",
     "nếu chi phí công ty mẹ & khác giảm 150 tỷ/năm"
    ],
    "theo_doi": "LN công ty mẹ & khác"
@@ -955,7 +974,7 @@
    "khi": "2026–2027",
    "loai": "hai",
    "tieu": "Eximbank: lên 15%",
-   "ct": "GEX coi EIB là đầu tư dài hạn, có thể nâng sở hữu từ ~10% lên 15% khi luật cho phép (ĐHĐCĐ 1/4/2026): thêm ~5% ≈ 1.700 tỷ theo giá hiện tại; EIB lãi 6T/2026 520 tỷ.",
+   "ct": "GEX coi EIB là đầu tư dài hạn, có thể nâng sở hữu từ ~10% lên 15% khi luật cho phép (ĐHĐCĐ 1/4/2026): thêm ~5% ≈ 1.500 tỷ theo giá hiện tại; EIB lãi 6T/2026 520 tỷ; giá EIB 21.000 → 17.050 đ trong Q3.",
    "tac": "",
    "theo_doi": "tỷ lệ sở hữu EIB"
   }
@@ -973,7 +992,7 @@
     "Q1/26",
     "Q2/26",
     "Q3/26",
-    "23/10"
+    "30/10"
    ],
    "ss": [
     {
@@ -986,7 +1005,7 @@
       33.4,
       41.2,
       31.5,
-      31.5
+      29.0
      ],
      "mau": "c1",
      "net": false
@@ -1001,18 +1020,18 @@
       54.9,
       44.9,
       36.8,
-      35.3
+      32.3
      ],
      "mau": "c4",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Phần GEE vượt vốn hóa GEX từ cuối 2025; từ đó giá GEE giảm 47%, GEX giảm 20% — GEX vẫn chỉ bằng 0,9 lần phần GEE.",
-   "ng": "Giá cuối quý × vốn điều lệ cùng quý (VNDirect); 23/10: bảng giá"
+   "y": "Phần GEE vượt vốn hóa GEX từ cuối 2025; từ đó giá GEE giảm 51%, GEX giảm 26% — GEX vẫn chỉ bằng 0,9 lần phần GEE.",
+   "ng": "Giá cuối quý × vốn điều lệ cùng quý (VNDirect); 30/10: bảng giá"
   },
   {
-   "ten": "Lợi nhuận 6 tháng: hợp nhất và phần cổ đông GEX",
+   "ten": "Lợi nhuận 9 tháng: hợp nhất và phần cổ đông GEX",
    "dv": "tỷ đồng",
    "kieu": "cot",
    "nhan": [
@@ -1023,28 +1042,28 @@
    ],
    "ss": [
     {
-     "ten": "6T/2025",
+     "ten": "9T/2025",
      "v": [
-      2190,
-      1634,
-      743,
-      891
+      3443,
+      2415,
+      902,
+      1513
      ],
      "mau": "c4"
     },
     {
-     "ten": "6T/2026",
+     "ten": "9T/2026",
      "v": [
-      2616,
-      1935,
-      1149,
-      786
+      3931,
+      2817,
+      1785,
+      1032
      ],
      "mau": "c1"
     }
    ],
    "so_le": 0,
-   "y": "LNTT +19%, phần cổ đông thiểu số +55%, LN cổ đông GEX −12%: tăng trưởng nằm ở GEE, VGC — nơi GEX chỉ nắm 76% và ~35%.",
+   "y": "LNTT +14%, phần cổ đông thiểu số +98%, LN cổ đông GEX −32%: tăng trưởng nằm ở GEE, VGC — nơi GEX chỉ nắm 76% và ~35% — còn lãi vay GEL và chi phí công ty mẹ GEX chịu gần trọn.",
    "ng": "BCTC GEX (VNDirect)"
   },
   {
@@ -1057,7 +1076,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1068,7 +1088,8 @@
       9.8,
       10.2,
       18.4,
-      18.0
+      18.0,
+      18.1
      ],
      "mau": "c4",
      "net": false
@@ -1081,7 +1102,8 @@
       7.1,
       9.2,
       16.6,
-      15.3
+      15.3,
+      16.1
      ],
      "mau": "c1",
      "net": false
@@ -1094,14 +1116,15 @@
       3.1,
       3.6,
       1.2,
-      2.9
+      2.9,
+      0.3
      ],
      "mau": "c2",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Nợ vay ròng hợp nhất tăng từ 9,8 lên 18,0 nghìn tỷ trong 3 quý, gần hết ở GEL (KCN, nhà ở, khoản vay 200 triệu USD); GEE và công ty mẹ gần như không tăng nợ.",
+   "y": "Nợ vay ròng hợp nhất tăng từ 9,8 lên 18,1 nghìn tỷ trong 4 quý, phần lớn ở GEL (góp sân bay Gia Bình, KCN, khoản vay 200 triệu USD); Q3 GEE giảm nợ, ngoài GEE, GEL tăng ~1.900 tỷ.",
    "ng": "BCTC GEX, GEE, GEL (VNDirect): vay ngắn + dài hạn − tiền − đầu tư ngắn hạn"
   },
   {
@@ -1114,7 +1137,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1125,13 +1149,14 @@
       766,
       801,
       764,
-      1058
+      1058,
+      1085
      ],
      "mau": "c1"
     }
    ],
    "so_le": 0,
-   "y": "Quý 2/2026 +42% so cùng kỳ, doanh thu +46% — biên gộp giảm từ 15,9% xuống 14,3% vì giá đồng nhưng quy mô bù đủ.",
+   "y": "Quý 3/2026 +42% so cùng kỳ, doanh thu +50% — biên gộp 14,6% (cùng kỳ 16,6%) vì giá đồng nhưng quy mô bù đủ; hai quý liền trên 1.000 tỷ.",
    "ng": "BCTC GEE (VNDirect)"
   }
  ],
@@ -1141,51 +1166,51 @@
    {
     "ten": "Doanh thu GEX (KH 44.712)",
     "kh": 44712,
-    "th": 25202,
-    "ky": "6T",
-    "tg": 50,
+    "th": 39158,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ 1/4/2026 · BCTC"
    },
    {
     "ten": "LNTT GEX (KH 3.615)",
     "kh": 3615,
-    "th": 2616,
-    "ky": "6T",
-    "tg": 50,
+    "th": 3931,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ 1/4/2026 · BCTC"
    },
    {
     "ten": "LNTT GEE (KH 2.705)",
     "kh": 2705,
-    "th": 1705,
-    "ky": "6T",
-    "tg": 50,
+    "th": 2718,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ GEE · BCTC"
    },
    {
     "ten": "Doanh thu GEL (KH 16.649)",
     "kh": 16649,
-    "th": 8318,
-    "ky": "6T",
-    "tg": 50,
+    "th": 12421,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ GEL · BCTC"
    },
    {
     "ten": "LNTT GEL (KH 1.158)",
     "kh": 1158,
-    "th": 1182,
-    "ky": "6T",
-    "tg": 50,
+    "th": 1760,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ GEL · BCTC"
    }
   ],
-  "y": "6 tháng GEX đạt 72% kế hoạch LNTT, GEL đã vượt kế hoạch cả năm. Kế hoạch LNTT 2026 của GEX thấp hơn 22% năm 2025 vì chi phí tài chính các dự án mới; mô hình cơ sở vượt kế hoạch.",
-  "ng": ""
+  "y": "9 tháng GEX đạt 109% kế hoạch LNTT, GEE 100%, GEL 152%. Kế hoạch tính bằng LNTT hợp nhất; LN về cổ đông GEX 9T vẫn −32% vì phần cổ đông thiểu số và chi phí công ty mẹ.",
+  "ng": "ĐHĐCĐ 2026 · BCTC Q3/2026"
  },
  "ctck": [
   {
@@ -1283,6 +1308,36 @@
    "link": "https://nhadautu.vn/quy-iii-lai-ky-luc-gelex-electric-da-ve-dich-chi-tieu-loi-nhuan-nam-2025-d99744.html"
   },
   {
+   "ten": "Thời báo Tài chính Việt Nam — GELEX vượt 8,8% kế hoạch lợi nhuận năm 2026 sau 9 tháng",
+   "ngay": "28/10/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/gelex-vuot-8-8-ke-hoach-loi-nhuan-nam-2026-sau-9-thang-206017.html"
+  },
+  {
+   "ten": "Tiền Phong — Kết thúc quý III, GELEX vượt 8,8% kế hoạch lợi nhuận năm 2026",
+   "ngay": "28/10/2026",
+   "link": "https://tienphong.vn/ket-thuc-quy-iii-gelex-vuot-88-ke-hoach-loi-nhuan-nam-2026-post1889139.tpo"
+  },
+  {
+   "ten": "CafeF — Kết thúc quý III, GELEX vượt 8,8% kế hoạch lợi nhuận năm 2026",
+   "ngay": "28/10/2026",
+   "link": "https://cafef.vn/ket-thuc-quy-iii-gelex-vuot-88-ke-hoach-loi-nhuan-nam-2026-188261028120043735.chn"
+  },
+  {
+   "ten": "VnBusiness — Nghịch lý GELEX: doanh thu tăng 42%, lãi cổ đông mẹ giảm 60%",
+   "ngay": "10/2026",
+   "link": "https://vnbusiness.vn/nghich-ly-gelex-doanh-thu-tang-42-lai-co-dong-me-giam-60.html"
+  },
+  {
+   "ten": "CafeF — Hạ tầng GELEX vượt 52% kế hoạch lợi nhuận năm sau 9 tháng",
+   "ngay": "28/10/2026",
+   "link": "https://cafef.vn/ha-tang-gelex-vuot-52-ke-hoach-loi-nhuan-nam-sau-9-thang-188261028172219718.chn"
+  },
+  {
+   "ten": "Westmetall — giá đồng LME (cash settlement)",
+   "ngay": "10/2026",
+   "link": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash"
+  },
+  {
    "ten": "Doanh nhân — GEX lãi 2.611 tỷ sau 6 tháng",
    "ngay": "07/2026",
    "link": "https://doanhnhan.baophapluat.vn/gelex-gex-lai-2-611-ty-dong-sau-6-thang-tiep-tuc-dau-tu-cho-chu-ky-tang-truong-moi.html"
@@ -1324,8 +1379,8 @@
     },
     {
      "h": -1,
-     "t": "Giá đồng +40% so cùng kỳ, gần đỉnh; ING, UBS dự báo 2027 về ~13.000–13.500 USD/tấn (−9%).",
-     "ng": "MBS 16/09"
+     "t": "Giá đồng LME lập đỉnh ~14.800 USD/tấn giữa 10/2026; ING, UBS dự báo 2027 về ~13.000–13.500 USD/tấn.",
+     "ng": "Westmetall · MBS 16/09"
     },
     {
      "h": -1,
@@ -1364,7 +1419,7 @@
     },
     {
      "h": -1,
-     "t": "Nợ vay ròng hợp nhất 18,0 nghìn tỷ (6/2026), gần hết ở GEL; lãi vay hợp nhất 6T +91%.",
+     "t": "Nợ vay ròng hợp nhất 18,1 nghìn tỷ (30/9), phần lớn ở GEL; lãi vay hợp nhất 9T +87%.",
      "ng": "BCTC VNDirect"
     },
     {
@@ -1381,24 +1436,24 @@
    "phu": "CADIVI, THIBIDI, EMIC, CFT, MEEPOWER, EEMC, HEM · GEX nắm 76% · HOSE",
    "so": [
     [
-     "Doanh thu 6T",
-     "16.621 tỷ",
-     "+41%"
+     "Doanh thu 9T",
+     "26.293 tỷ",
+     "+44%"
     ],
     [
-     "LN cổ đông 6T",
-     "1.289 tỷ",
-     "+32%"
+     "LN cổ đông 9T",
+     "2.064 tỷ",
+     "+39%"
     ],
     [
-     "Biên gộp Q2",
-     "14,3%",
-     "Q2/25: 15,9%"
+     "Biên gộp Q3",
+     "14,6%",
+     "Q3/25: 16,6%"
     ],
     [
      "Kế hoạch LNTT 2026",
      "2.705 tỷ",
-     "6T: 63%"
+     "9T: 100%"
     ]
    ],
    "y": [
@@ -1421,23 +1476,23 @@
    "phu": "VGC 50,21%, nước sạch VCW, KCN Long Sơn, Titan Hải Phòng, 226 Lê Lai · GEX nắm 70,2% · HOSE từ 2/2026",
    "so": [
     [
-     "Doanh thu 6T",
-     "8.318 tỷ",
-     "+28%"
+     "Doanh thu 9T",
+     "12.421 tỷ",
+     "+24%"
     ],
     [
-     "LN cổ đông 6T",
-     "111 tỷ",
-     "6T/25: 410"
+     "LN cổ đông 9T",
+     "73 tỷ",
+     "9T/25: 437"
     ],
     [
-     "Nợ vay ròng 30/6",
-     "15.269 tỷ",
+     "Nợ vay ròng 30/9",
+     "16.098 tỷ",
      "9/2025: 7.121"
     ],
     [
-     "Lãi vay 6T",
-     "692 tỷ",
+     "Lãi vay 9T",
+     "1.112 tỷ",
      "×2,6"
     ]
    ],
@@ -1462,23 +1517,23 @@
    "so": [
     [
      "Nợ vay ròng ngoài GEE, GEL",
-     "−241 tỷ",
-     "30/6/2026"
+     "1.649 tỷ",
+     "30/9 (30/6: −241)"
     ],
     [
-     "Công ty mẹ & khác 6T",
-     "−272 tỷ",
-     "2025: −495"
+     "Công ty mẹ & khác 9T",
+     "−588 tỷ",
+     "Q3: −316"
     ],
     [
-     "Eximbank theo giá 23/10",
-     "~3.300 tỷ",
-     "P/B 1,3"
+     "Eximbank theo giá 30/10",
+     "~3.000 tỷ",
+     "P/B 1,1"
     ],
     [
      "Sổ sách phần còn lại",
-     "1.540 tỷ",
-     "30/6/2026"
+     "1.467 tỷ",
+     "30/9/2026"
     ]
    ],
    "y": [
