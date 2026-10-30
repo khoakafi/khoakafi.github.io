@@ -3,52 +3,52 @@
  "ma": "HPG",
  "ten": "CTCP Tập đoàn Hòa Phát",
  "nganh": "Thép",
- "ky": "BCTC Q2/2026 · sản lượng 6T/2026",
- "cap_nhat": "2026-10-17",
- "lan_sau": "sau BCTC Q3/2026",
+ "ky": "BCTC Q3/2026 · giá 29/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026",
  "cp_trieu": 8443.0,
- "cp_ng": "VNDirect 16/10 (vốn hóa ÷ giá), sau chia 10% cổ phiếu tháng 5/2026",
+ "cp_ng": "Vốn điều lệ 30/09/2026 (84.430 tỷ), sau chia 10% cổ phiếu tháng 5/2026",
  "co_tuc": [],
  "tieu_de": {
-  "t": "Định giá đã về vùng đáy chu kỳ, lợi nhuận lõi thì chưa",
+  "t": "Quý 3 lãi kỷ lục, biên không co như lo ngại — giá vẫn ở P/B vùng đáy chu kỳ",
   "dk": "up_tren:10",
-  "khac": "Dung Quất 2 đã chạy hết công suất: lãi 2027 do chênh lệch giá thép quyết định"
+  "khac": "Quý 3 lãi kỷ lục; lãi 2027 do chênh lệch giá thép – than quyết định"
  },
- "dong_mo": "Dung Quất 2 đã chạy gần hết công suất, nên lãi lõi 2027 (cơ sở 23.003 tỷ, ROE ~14%) chỉ nhích nhờ sản lượng cả năm và phụ thuộc chênh lệch giá bán – than, quặng. Mô hình P/E theo chu kỳ cho {gt} ({up}); kịch bản xấu là lãi gộp/tấn về dưới mức 2025, cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3 lãi 8.217 tỷ (+106%), biên gộp 19,2% — không co như CTCK dự báo. Mô hình vẫn hạ lãi gộp/tấn 2027 về mức Q2 (LN cơ sở 28.009 tỷ, ROE ~17%), cho {gt} ({up}); kịch bản xấu là lãi gộp/tấn về dưới mức 2025, cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "~100%",
-   "nhan": "công suất HRC từ Q3/2026",
+   "so": "~96%",
+   "nhan": "công suất HRC Q3/2026",
    "tieu": "Pha tăng sản lượng đã xong",
-   "t": "HRC Q2 kỷ lục 1,93 triệu tấn (+64%) khi Dung Quất 2 chạy ~88% công suất; T6–T7 trên 700 nghìn tấn/tháng. Mô hình: HRC 2026E 7,65 triệu tấn, 2027E 8,5 — sát công suất 8,6. Sản lượng 2027 (+9%) chỉ là hiệu ứng cả năm của nhịp H2/2026 cộng ~0,3 triệu tấn ray, thép chất lượng cao; nhịp tăng mới phải chờ Phú Yên (6 triệu tấn, tầm nhìn 2030).",
-   "ng": "KAFI 25/09 · MAS 12/08 · VDSC · mô hình"
+   "t": "HRC Q3 kỷ lục 2,07 triệu tấn (+64%), năm hóa ~96% công suất 8,6; cả nhóm thép bán 3,8 triệu tấn (+54%). Mô hình: HRC 2026E 7,57 triệu tấn, 2027E 8,5. Sản lượng 2027 (+9%) chỉ là hiệu ứng cả năm của nhịp Q3 cộng ~0,3 triệu tấn ray, thép chất lượng cao; nhịp tăng mới phải chờ Phú Yên (6 triệu tấn, tầm nhìn 2030).",
+   "ng": "HPG công bố Q3 (báo chí) · MAS 12/08 · mô hình"
   },
   {
-   "so": "−6%",
-   "nhan": "giá bán thép H2 so với Q2",
-   "tieu": "Chênh lệch giá bán – nguyên liệu quyết định lãi 2027",
-   "t": "Biên gộp Q2 lên 19% một phần nhờ tồn kho nguyên liệu mua trước đợt tăng giá — lợi thế một lần. Giá HRC kỳ hạn T9 thấp hơn đỉnh T6 10,2%; HRC Ấn Độ, Indonesia chào 534–535 USD/tấn, ngang giá HPG. Mô hình giữ giá H2/2026 cho 2027: lãi gộp 2,31 triệu đ/tấn (6T/2026: 2,57; 2025: 1,86). Mỗi ±3% giá bán = ±5.598 tỷ LN, ±6,0 nghìn đ/cp.",
-   "ng": "MAS 12/08 · KAFI 25/09 · KBSV 07/09 · mô hình"
+   "so": "19,2%",
+   "nhan": "biên gộp Q3/2026 (Q2: 19,0%)",
+   "tieu": "Q3 bác bỏ kịch bản biên co lại — mới một quý",
+   "t": "CTCK dự báo biên Q3 16,3–17,8% vì giá HRC kỳ hạn T9 thấp hơn đỉnh T6 10,2%; thực tế 19,2%: doanh thu thép/tấn ước không giảm so với Q2, than, quặng rẻ hơn đã vào giá vốn. Lãi gộp thép ước 3,01 triệu đ/tấn (Q2: 2,79; 2025: 1,86). Mô hình cho Q4 giá bán, giá vốn cùng −4%; 2027 2,74 ≈ Q2. Mỗi ±3% giá bán = ±6.192 tỷ LN, ±6,6 nghìn đ/cp.",
+   "ng": "BCTC Q3 · MAS 12/08 · VDSC, VCBS · mô hình"
   },
   {
-   "so": "+4%",
+   "so": "+5%",
    "nhan": "LN lõi 2027E so với 2026E",
-   "tieu": "Lãi lõi đi ngang, thấp hơn cả 5 CTCK",
-   "t": "2026E 26.021 tỷ gồm ~4,0 nghìn tỷ lãi thoái vốn Phố Nối; phần lõi 22.034 tỷ (+43%). 2027E cơ sở 23.003 tỷ: sản lượng +9% bị lãi gộp/tấn −5% ăn phần lớn; lãi vay vẫn ~5,9 nghìn tỷ — gần gấp đôi 2025 vì Dung Quất 2 thôi vốn hóa lãi vay. 5 CTCK dự báo 24,3–28,2 nghìn tỷ: MBS, KBSV giả định giá thép còn tăng ~5–7%; KAFI, Mirae Asset giả định chi phí bán hàng + QLDN ~2,6% doanh thu (6T/2026: 3,5%).",
-   "ng": "BCTC Q2 · MAS 12/08 · CTCK · mô hình"
+   "tieu": "Lãi lõi đi ngang ở nền cao; lãi vay ăn bớt",
+   "t": "9T LN cổ đông 23.582 tỷ, gồm ~4,0 nghìn tỷ lãi Phố Nối. 2026E 30.761 tỷ, lõi 26.774 (+73%). 2027E cơ sở 28.009 tỷ: sản lượng +9% bù lãi gộp/tấn −1%; lãi vay ~7,1 nghìn tỷ (Q3 1.774 tỷ, ~6,9%/năm trên 105,7 nghìn tỷ nợ). Cao hơn cả 5 CTCK (24,3–28,2 nghìn tỷ) — các báo cáo đều ra trước Q3.",
+   "ng": "BCTC Q3 · KBSV 07/09 · CTCK · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Giá ở vùng P/B đáy chu kỳ; giá trị cơ sở {up_so}",
    "dk": "up_tren:10",
-   "t": "Giá hiện tại ứng với P/B trong vùng đáy chu kỳ 2022–2023 (0,7–1,33 lần), khi ROE chỉ 6,9–9,1%; ROE 2027E cơ sở ~14%. Định giá: P/E 9 × LN 2027E (≈ trung vị 8,5 từ 2015; ≈ P/B 1,37). Xấu 17,6: lãi gộp 1,75 triệu đ/tấn, P/E 12 ≈ P/B 1,0; tốt 29,7. P/E 2026E lõi vẫn dưới trung vị thép khu vực (10,6).",
+   "t": "Giá hiện tại ứng với P/B trong vùng đáy chu kỳ 2022–2023 (0,7–1,33 lần), khi ROE chỉ 6,9–9,1%; ROE 2027E cơ sở ~17%. Định giá: P/E 9 × LN 2027E (≈ trung vị 8,5 từ 2015; ≈ P/B 1,62). Xấu 16,5: lãi gộp 1,76 triệu đ/tấn, P/E 12 ≈ P/B 0,91; tốt 34,5. P/E 2026E lõi vẫn dưới trung vị thép khu vực (10,6).",
    "ng": "mô hình · P/B lịch sử: BCTC VNDirect · MBS 18/09",
    "khac": {
     "so": "{gt_so}",
     "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
     "tieu": "P/E theo chu kỳ: {up_so} so với giá hiện tại",
-    "t": "P/E 9 × LN 2027E cơ sở (≈ trung vị 8,5 từ 2015). Lãi đáy chu kỳ được trả P/E cao hơn nên kịch bản xấu dùng 12 lần (≈ P/B 1,0, vùng đáy 2022–2023), tốt 7,5 lần (≈ P/B trung vị 1,62). Xấu 17,6, tốt 29,7 nghìn đ/cp."
+    "t": "P/E 9 × LN 2027E cơ sở (≈ trung vị 8,5 từ 2015). Lãi đáy chu kỳ được trả P/E cao hơn nên kịch bản xấu dùng 12 lần (≈ P/B 0,91, vùng đáy 2022–2023), tốt 7,5 lần (≈ P/B 1,85, ROE 22%). Xấu 16,5, tốt 34,5 nghìn đ/cp."
    }
   }
  ],
@@ -60,19 +60,19 @@
   ],
   "ln": [
    15453,
-   26021,
-   23003
+   30761,
+   28009
   ],
   "ln_truoc": 12021,
   "eps": [
    1830,
-   3082,
-   2725
+   3643,
+   3317
   ],
   "bv": [
    15300,
-   17922,
-   20146
+   18474,
+   21291
   ],
   "co_tuc_nam": 455,
   "them": [
@@ -80,16 +80,16 @@
     "ten": "LN lõi, trừ Phố Nối (tỷ)",
     "v": [
      15453,
-     22034,
-     23003
+     26774,
+     28009
     ]
    },
    {
     "ten": "ROE",
     "v": [
      12.7,
-     18.6,
-     14.3
+     21.6,
+     16.7
     ],
     "d": 1,
     "pt": 1
@@ -110,8 +110,8 @@
     "mau": "c1",
     "v": [
      12770,
-     20030,
-     20935
+     24719,
+     25917
     ]
    },
    {
@@ -119,8 +119,8 @@
     "mau": "c3",
     "v": [
      2683,
-     2004,
-     2068
+     2055,
+     2092
     ]
    },
    {
@@ -151,7 +151,7 @@
     "ten": "Thép xây dựng",
     "v": [
      4853,
-     5439,
+     5473,
      5550
     ]
    },
@@ -159,7 +159,7 @@
     "ten": "HRC (Dung Quất 1 + 2)",
     "v": [
      5076,
-     7646,
+     7570,
      8500
     ]
    },
@@ -167,7 +167,7 @@
     "ten": "Ống thép + tôn mạ",
     "v": [
      1264,
-     1242,
+     1264,
      1200
     ]
    },
@@ -183,7 +183,7 @@
     "ten": "Tổng",
     "v": [
      11194,
-     14327,
+     14307,
      15550
     ],
     "dam": 1,
@@ -196,8 +196,8 @@
     "ten": "Doanh thu",
     "v": [
      13.07,
-     14.78,
-     14.23
+     15.65,
+     15.41
     ],
     "d": 2
    },
@@ -205,8 +205,8 @@
     "ten": "Giá vốn",
     "v": [
      11.21,
-     12.35,
-     11.92
+     12.88,
+     12.67
     ],
     "d": 2
    },
@@ -214,8 +214,8 @@
     "ten": "Lãi gộp",
     "v": [
      1.86,
-     2.43,
-     2.31
+     2.77,
+     2.74
     ],
     "d": 2,
     "dam": 1
@@ -227,8 +227,8 @@
     "ten": "Doanh thu thuần",
     "v": [
      156116,
-     219127,
-     228941
+     231380,
+     247230
     ],
     "tang": 1
    },
@@ -236,8 +236,8 @@
     "ten": "Biên lợi nhuận gộp (%)",
     "v": [
      15.7,
-     17.2,
-     17.0
+     18.4,
+     18.4
     ],
     "d": 1
    },
@@ -245,8 +245,8 @@
     "ten": "Chi phí lãi vay",
     "v": [
      3115,
-     5973,
-     5890
+     6457,
+     7140
     ]
    },
    {
@@ -261,8 +261,8 @@
     "ten": "LN cổ đông",
     "v": [
      15453,
-     26021,
-     23003
+     30761,
+     28009
     ],
     "dam": 1,
     "tang": 1
@@ -271,23 +271,23 @@
     "ten": "EPS (đ)",
     "v": [
      1830,
-     3082,
-     2725
+     3643,
+     3317
     ],
     "eps": 1
    }
   ],
-  "ghi": "Mỗi tấn = doanh thu, giá vốn mảng thép (MAS) ÷ sản lượng 4 sản phẩm chính; 2025 theo biên gộp thép ~14,2% (BVSC), ngoài thép giữ biên ~38%. 2026E = 6 tháng thực tế + Q3–Q4 ước tính."
+  "ghi": "Mỗi tấn = doanh thu, giá vốn mảng thép (MAS) ÷ sản lượng 4 sản phẩm chính; 2025 theo biên gộp thép ~14,2% (BVSC), ngoài thép giữ biên ~38%. 2026E = 9 tháng thực tế + Q4 ước tính; Q3 chưa có số bộ phận — doanh thu ngoài thép ước ~1,9 nghìn tỷ."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   26021
+   30761
   ],
   "cuoi": [
    "2027E",
-   23003
+   28009
   ],
   "buoc": [
    [
@@ -296,38 +296,38 @@
    ],
    [
     "Sản lượng thép",
-    2590
+    3031
    ],
    [
     "Lãi gộp mỗi tấn",
-    -1667
+    -486
    ],
    [
     "Chi phí và khác",
-    46
+    -1310
    ]
   ],
-  "y": "Bỏ lãi Phố Nối, lãi lõi 2027 chỉ nhích: sản lượng +1,2 triệu tấn (cả năm Dung Quất 2) bù phần lãi gộp/tấn co từ 2,43 về 2,31 triệu đ theo mặt bằng giá H2/2026.",
+  "y": "Bỏ lãi Phố Nối, lãi lõi 2027 chỉ nhích: sản lượng +1,2 triệu tấn (cả năm Dung Quất 2) bù phần lãi gộp/tấn co từ 2,77 về 2,74 triệu đ (≈ Q2/2026); lãi vay cao hơn ăn phần còn lại.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Giá bán thép H2/2026 so với Q2",
+   "ten": "Giá bán thép Q4/2026 so với Q3",
    "v": [
     "−7,5%",
-    "−6%",
-    "−4,5%"
+    "−4%",
+    "−2,5%"
    ],
-   "ly_do": "Giá HRC kỳ hạn T7/T8/T9 −2,2%/−8,0%/−10,2% so với đỉnh T6 (MAS); MBS, VDSC ước Q3 −6–7%; vài nhà máy tăng 100–200 đ/kg đầu T9 (KBSV)"
+   "ly_do": "Q3 doanh thu thép/tấn ước không giảm so với Q2; HRC kỳ hạn T9 thấp hơn đỉnh T6 10,2% (MAS) nên Q4 giao giá thấp hơn; KBSV kỳ vọng hồi từ Q4"
   },
   {
-   "ten": "Giá vốn/tấn H2/2026 so với Q2",
+   "ten": "Giá vốn/tấn Q4/2026 so với Q3",
    "v": [
-    "−2,5%",
-    "−3,5%",
+    "−2%",
+    "−4%",
     "−4,5%"
    ],
-   "ly_do": "Than, quặng giao ngay −8–10% trong Q3 (VDSC) nhưng tồn kho mua khi than +23% (Q2, MAS) vào giá vốn; cơ sở ≈ biên gộp Q3 17% (MBS)"
+   "ly_do": "Than, quặng giao ngay −8–10% trong Q3 (VDSC) vào giá vốn Q4; cơ sở: lãi gộp/tấn −4%, biên gộp Q4 ~19% (Q3 19,2%)"
   },
   {
    "ten": "Sản lượng HRC 2027 (triệu tấn)",
@@ -336,7 +336,7 @@
     "8,5",
     "8,8"
    ],
-   "ly_do": "Công suất 8,6 (Dung Quất 1: 3,0; Dung Quất 2: 5,6); nhịp H2/2026 ~2,1 triệu tấn/quý; KAFI 8,6, MBS 9,0"
+   "ly_do": "Công suất 8,6 (Dung Quất 1: 3,0; Dung Quất 2: 5,6); Q3/2026 2,07 triệu tấn (~96%); KAFI 8,6, MBS 9,0"
   },
   {
    "ten": "Sản lượng thép xây dựng 2027 (triệu tấn)",
@@ -345,7 +345,7 @@
     "5,55",
     "5,8"
    ],
-   "ly_do": "2026E 5,44, công suất 5,8; hạ tầng trọng điểm 2026–2030 cần 7–11 triệu tấn thép (KBSV), BĐS còn yếu"
+   "ly_do": "2026E 5,47, công suất 5,8; hạ tầng trọng điểm 2026–2030 cần 7–11 triệu tấn thép (KBSV), BĐS còn yếu"
   },
   {
    "ten": "Ray, thép chất lượng cao 2027 (nghìn tấn)",
@@ -357,16 +357,16 @@
    "ly_do": "Nhà máy ray 0,7 triệu tấn/năm ra ray Q1/2027, bán thương mại Q2/2027; dây chuyền 0,5 triệu tấn chạy thử 9/2026"
   },
   {
-   "ten": "Giá bán thép 2027 so với H2/2026",
+   "ten": "Giá bán thép 2027 so với Q4/2026",
    "v": [
+    "−1,5%",
     "−1%",
-    "0%",
-    "+1%"
+    "0%"
    ],
-   "ly_do": "HRC Ấn Độ, Indonesia chào ngang giá HPG (trần); chống lẩn tránh 27,83% đến 7/2030 (sàn). MBS, KBSV giả định 2027 tăng 5–7%"
+   "ly_do": "HRC Ấn Độ, Indonesia chào ngang giá HPG (trần); chống lẩn tránh 27,83% đến 7/2030 (sàn). Cơ sở: lãi gộp/tấn ≈ Q2/2026, dưới Q3"
   },
   {
-   "ten": "Chi phí than + quặng 2027 so với H2/2026",
+   "ten": "Chi phí than + quặng 2027 so với Q4/2026",
    "v": [
     "+1%",
     "0%",
@@ -377,11 +377,11 @@
   {
    "ten": "Lãi suất vay bình quân 2027",
    "v": [
+    "7,2%",
     "6,8%",
-    "6,2%",
-    "5,9%"
+    "6,4%"
    ],
-   "ly_do": "Q2/2026 6,4% (Q1 5,8%, KAFI); dư nợ 30/6 98,5 nghìn tỷ, giả định 2027 bình quân 100 · 95 · 90 nghìn tỷ"
+   "ly_do": "Q3/2026 ~6,9% (Q2 6,4%, Q1 5,8% — KAFI); dư nợ 30/9 105,7 nghìn tỷ, giả định 2027 bình quân 110 · 105 · 100 nghìn tỷ"
   },
   {
    "ten": "P/E trên LN 2027E",
@@ -390,30 +390,30 @@
     "9",
     "7,5"
    ],
-   "ly_do": "Lãi đáy được trả P/E cao: 12 ≈ P/B 1,0 (đáy 2022–23: 0,7–1,33); 9 ≈ trung vị P/E từ 2015 (8,5); 7,5 ≈ P/B trung vị 1,62"
+   "ly_do": "Lãi đáy được trả P/E cao: 12 ≈ P/B 0,91 (đáy 2022–23: 0,7–1,33); 9 ≈ trung vị P/E từ 2015 (8,5), P/B 1,62; 7,5 ≈ P/B 1,85"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 22785,
-   "ln27": 12368,
-   "gia": 17.6,
-   "mo_ta": "Giá bán H2 −7,5%, lãi gộp 2027 1,75 triệu đ/tấn (dưới 2025); HRC 8,0, thép xây dựng 5,1 triệu tấn; P/E 12"
+   "ln26": 27420,
+   "ln27": 11606,
+   "gia": 16.5,
+   "mo_ta": "Giá bán Q4 −7,5% so với Q3, lãi gộp 2027 1,76 triệu đ/tấn (dưới 2025); HRC 8,0, thép xây dựng 5,1 triệu tấn; P/E 12"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 26021,
-   "ln27": 23003,
-   "gia": 24.5,
-   "mo_ta": "Giá giữ mặt bằng H2/2026, lãi gộp 2,31 triệu đ/tấn; HRC 8,5, thép xây dựng 5,55 triệu tấn; P/E 9"
+   "ln26": 30761,
+   "ln27": 28009,
+   "gia": 29.9,
+   "mo_ta": "Q4 giá bán, giá vốn cùng −4%; lãi gộp 2027 2,74 triệu đ/tấn (≈ Q2/2026); HRC 8,5, thép xây dựng 5,55 triệu tấn; P/E 9"
   },
   {
    "ten": "Tốt",
-   "ln26": 29007,
-   "ln27": 33418,
-   "gia": 29.7,
-   "mo_ta": "Lãi gộp 2,88 triệu đ/tấn (≈ Q2/2026); HRC 8,8, thép xây dựng 5,8, ray + thép chất lượng cao 0,5 triệu tấn; P/E 7,5"
+   "ln26": 32334,
+   "ln27": 38788,
+   "gia": 34.5,
+   "mo_ta": "Lãi gộp 3,27 triệu đ/tấn (trên Q3/2026); HRC 8,8, thép xây dựng 5,8, ray + thép chất lượng cao 0,5 triệu tấn; P/E 7,5"
   }
  ],
  "dinh_gia": {
@@ -426,9 +426,9 @@
     "ten": "LN cổ đông 2027E",
     "mau": "c1",
     "x": [
-     12368,
-     23003,
-     33418
+     11606,
+     28009,
+     38788
     ],
     "boi": [
      12.0,
@@ -439,48 +439,48 @@
     "boi_ten": "P/E",
     "sh": 1,
     "gt": [
-     148416,
-     207027,
-     250635
+     139272,
+     252081,
+     290910
     ]
    }
   ],
   "von": [
-   148416,
-   207027,
-   250635
+   139272,
+   252081,
+   290910
   ],
   "gia": [
-   17.6,
-   24.5,
-   29.7
+   16.5,
+   29.9,
+   34.5
   ]
  },
  "nhay": [
   [
    "Giá bán thép 2027 ±3%",
-   5598,
-   6.0
+   6192,
+   6.6
   ],
   [
    "Chi phí than + quặng 2027 ±5%",
-   4767,
-   5.1
+   5125,
+   5.5
   ],
   [
    "P/E ±1 lần",
    null,
-   2.7
+   3.3
   ],
   [
    "Sản lượng HRC 2027 ±0,5 triệu tấn",
-   813,
-   0.9
+   993,
+   1.1
   ],
   [
    "Lãi suất vay 2027 ±1 điểm %",
-   826,
-   0.9
+   924,
+   1.0
   ]
  ],
  "pe_ls": {
@@ -742,8 +742,8 @@
    1.75,
    1.71,
    1.61,
-   1.58,
-   1.56,
+   1.73,
+   1.72,
    1.65,
    1.5,
    1.55,
@@ -771,21 +771,21 @@
    1.32,
    1.33,
    1.21,
-   1.25
+   1.27
   ],
   "p10": 1.28,
   "p25": 1.45,
-  "tv": 1.62,
+  "tv": 1.63,
   "thap": [
    "2022-10",
    0.7
   ],
   "nay": [
    "2026-10",
-   1.25
+   1.27
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. Từ 05/2026 tính theo 8.443 triệu cp (sau chia 10% cổ phiếu).",
-  "dung": "Kịch bản dùng P/E 12 · 9 · 7,5 trên LN 2027E — tương đương P/B 1,00 · 1,37 · 1,62 lần vốn chủ cuối 2026E, từ vùng đáy 2022–2023 (0,7–1,33) đến trung vị."
+  "dung": "Kịch bản dùng P/E 12 · 9 · 7,5 trên LN 2027E — tương đương P/B 0,91 · 1,62 · 1,85 lần vốn chủ cuối 2026E: từ vùng đáy 2022–2023 (0,7–1,33), qua trung vị (1,63), đến mức cao hơn khi ROE ~22%."
  },
  "so_sanh": {
   "chi_so": "P/E 2026F",
@@ -818,9 +818,9 @@
    ]
   ],
   "tv": 10.6,
-  "moi_cp": 2610,
+  "moi_cp": 3171,
   "max": 20,
-  "y": "HPG tính trên EPS 2026E lõi (trừ lãi Phố Nối) 2.610 đ của mô hình. Theo P/B 2026F nhóm này rẻ hơn (0,5–1,4 lần, trung vị 0,6) nhưng ROE 2026F chỉ 5–13% (bình quân 7,8%), HPG ~16% (lõi).",
+  "y": "HPG tính trên EPS 2026E lõi (trừ lãi Phố Nối) 3.171 đ của mô hình. Theo P/B 2026F nhóm này rẻ hơn (0,5–1,4 lần, trung vị 0,6) nhưng ROE 2026F chỉ 5–13% (bình quân 7,8%), HPG ~19% (lõi).",
   "ng": "P/E 2026F: MBS 18/09 (Bloomberg)"
  },
  "theo_doi": [
@@ -838,20 +838,20 @@
   {
    "quy": "Q4/2026",
    "fd": "2026-12-31",
-   "dt": 56601,
+   "dt": 61106,
    "ln": [
-    3736,
-    5447,
-    6964
+    3838,
+    7178,
+    8752
    ],
    "ck": 3864
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    22785,
-    26021,
-    29007
+    27420,
+    30761,
+    32334
    ]
   }
  ],
@@ -868,24 +868,24 @@
    "theo_doi": "thị phần HRC, giá chào HRC nhập khẩu"
   },
   {
-   "khi": "10/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Giá bán giảm ~6% so với Q2 trong khi giá vốn còn mang tồn kho than giá cao. Mô hình cơ sở LN 5.209 tỷ (+31%); VDSC 5.400, MBS 5.600.",
+   "khi": "Đã ra 10/2026",
+   "loai": "len",
+   "tieu": "KQKD Q3/2026 vượt xa mô hình",
+   "ct": "LN cổ đông 8.217 tỷ (+106%) so với 5.209 tỷ của mô hình cơ sở cũ, CTCK 5.400–6.500; biên gộp 19,2% (giả định ~17%). Chênh lệch giá – than giữ thêm một quý; thu nhập tài chính ròng 827 tỷ, thuế 9%.",
    "tac": [
-    "Biên gộp ≥ 17%",
-    "giữ kịch bản cơ sở; dưới 15% nghiêng về kịch bản xấu"
+    "+5,4 nghìn đ/cp",
+    "giá trị cơ sở so với bản 17/10 (24,5): lãi gộp/tấn 2027 nâng về mức Q2, lãi vay cao hơn"
    ],
    "theo_doi": "biên gộp, lãi gộp/tấn"
   },
   {
-   "khi": "Q4/2026",
-   "loai": "len",
-   "tieu": "Mùa xây dựng, giá thép hồi lại",
-   "ct": "Vài nhà máy tăng giá 100–200 đ/kg từ đầu T9; KBSV kỳ vọng giá tăng lại từ Q4 khi hạ nguồn tích trữ cho mùa cao điểm.",
+   "khi": "01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026, mùa xây dựng",
+   "ct": "Mô hình cơ sở Q4 LN 7.178 tỷ (+86%), biên ~19%: giá HRC giao Q4 thấp hơn đỉnh T6, bù bằng than, quặng rẻ hơn. KBSV kỳ vọng giá thép hồi khi hạ nguồn tích trữ cho mùa cao điểm.",
    "tac": [
-    "±6,0 nghìn đ/cp",
-    "mỗi ±3% giá bán thép 2027"
+    "Biên gộp ≥ 18%",
+    "giữ kịch bản cơ sở; dưới 16% nghiêng về kịch bản xấu"
    ],
    "theo_doi": "giá HRC, thép xây dựng hằng tháng"
   },
@@ -915,8 +915,8 @@
    "tieu": "Chênh lệch giá thép – than co lại",
    "ct": "Than cốc ~39% chi phí luyện thép, MAS cho rằng còn neo cao; HRC Ấn Độ, Indonesia chào ngang giá HPG — giá bán khó tăng theo chi phí.",
    "tac": [
-    "−7,9 nghìn đ/cp",
-    "nếu lãi gộp 2027 về 1,75 triệu đ/tấn (giá, chi phí kịch bản xấu)"
+    "−14,0 nghìn đ/cp",
+    "nếu lãi gộp 2027 về 1,76 triệu đ/tấn (giá, chi phí kịch bản xấu)"
    ],
    "theo_doi": "giá than cốc, quặng; giá HRC"
   },
@@ -927,7 +927,7 @@
    "tieu": "Bất động sản chưa hồi",
    "ct": "Giao dịch BĐS Q2/2026 ~100 nghìn (−28,5% so với Q1), lãi vay mua nhà cao; BĐS dân dụng dùng hơn 30% lượng thép trong nước.",
    "tac": [
-    "±0,5 nghìn đ/cp",
+    "±0,6 nghìn đ/cp",
     "mỗi ±5% sản lượng thép xây dựng 2027"
    ],
    "theo_doi": "tiêu thụ thép xây dựng hằng tháng"
@@ -937,9 +937,9 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Rào cản xuất khẩu",
-   "ct": "Xuất khẩu ~21% doanh thu 6T/2026; EU áp hạn ngạch ~142 nghìn tấn/quý với Việt Nam và có đơn đề nghị điều tra chống bán phá giá HRC Việt Nam.",
+   "ct": "Xuất khẩu 24,6% sản lượng HRC Q3/2026; EU áp hạn ngạch ~142 nghìn tấn/quý với Việt Nam và có đơn đề nghị điều tra chống bán phá giá HRC Việt Nam.",
    "tac": [
-    "±0,9 nghìn đ/cp",
+    "±1,1 nghìn đ/cp",
     "mỗi ±0,5 triệu tấn HRC 2027"
    ],
    "theo_doi": "quyết định của EC, xuất khẩu HRC"
@@ -949,9 +949,9 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Lãi vay",
-   "ct": "Dư nợ 98,5 nghìn tỷ, lãi suất bình quân 6,4% (Q1: 5,8%); chi phí lãi vay Q2 +246% vì Dung Quất 2 thôi vốn hóa lãi vay từ 9/2025.",
+   "ct": "Dư nợ 105,7 nghìn tỷ (30/9, +7,2 nghìn tỷ trong quý); lãi vay Q3 1.774 tỷ (+118%), ~6,9%/năm; Dung Quất 2 thôi vốn hóa lãi vay từ 9/2025.",
    "tac": [
-    "±0,9 nghìn đ/cp",
+    "±1,0 nghìn đ/cp",
     "mỗi ±1 điểm % lãi suất vay 2027"
    ],
    "theo_doi": "lãi suất, nợ vay ròng"
@@ -977,8 +977,8 @@
     },
     {
      "h": -1,
-     "t": "Lãi suất cao: vay mua nhà đắt làm giao dịch BĐS Q2/2026 giảm 28,5% so với Q1; lãi suất vay bình quân của HPG lên 6,4%.",
-     "ng": "KBSV 07/09 · KAFI 25/09"
+     "t": "Lãi suất cao: vay mua nhà đắt làm giao dịch BĐS Q2/2026 giảm 28,5% so với Q1; lãi suất vay bình quân của HPG lên ~6,9% trong Q3/2026.",
+     "ng": "KBSV 07/09 · BCTC Q3"
     },
     {
      "h": 0,
@@ -1044,14 +1044,14 @@
    "phu": "Công suất 8,6 triệu tấn/năm; Dung Quất 2 (5,6 triệu tấn) chạy đủ hai lò cao từ 9/2025",
    "so": [
     [
-     "Tiêu thụ 6T/2026",
-     "3,40 triệu tấn",
-     "+57%"
+     "Tiêu thụ 9T/2026",
+     "5,47 triệu tấn",
+     "+59%"
     ],
     [
-     "Q2/2026",
-     "1,93 triệu tấn",
-     "kỷ lục"
+     "Q3/2026",
+     "2,07 triệu tấn",
+     "kỷ lục, +64%"
     ],
     [
      "Thị phần trong nhóm sản xuất nội",
@@ -1059,9 +1059,9 @@
      "Q2; T7 68,7%"
     ],
     [
-     "Hiệu suất Dung Quất 2",
-     "~88%",
-     "Q2 (Q1: 55%)"
+     "Xuất khẩu Q3",
+     "24,6%",
+     "sản lượng HRC"
     ]
    ],
    "y": [
@@ -1089,9 +1089,9 @@
      "+17%"
     ],
     [
-     "Q2/2026",
-     "1,31 triệu tấn",
-     "+2%"
+     "Q3/2026 (gồm thép cuộn CLC)",
+     ">1,3 triệu tấn",
+     "+2% so với Q2"
     ],
     [
      "Thị phần Q2",
@@ -1117,12 +1117,12 @@
   },
   {
    "ten": "Ống thép, tôn mạ, nông nghiệp, bất động sản",
-   "phu": "Nông nghiệp + BĐS: 3,5% doanh thu 6T/2026, ~9% LN cổ đông 2027E (mô hình)",
+   "phu": "Nông nghiệp + BĐS: ~3,3% doanh thu 9T/2026, ~7% LN cổ đông 2027E (mô hình)",
    "so": [
     [
-     "Ống thép 6T",
-     "453 nghìn tấn",
-     "+13%"
+     "Ống thép 9T",
+     "681 nghìn tấn",
+     "+9%"
     ],
     [
      "Tôn mạ 6T",
@@ -1130,9 +1130,9 @@
      "−5%"
     ],
     [
-     "Doanh thu nông nghiệp 6T",
-     "3.286 tỷ",
-     "−22%"
+     "Doanh thu HPA (nông nghiệp) Q3",
+     "1.685 tỷ",
+     "−19%"
     ],
     [
      "Doanh thu BĐS 6T",
@@ -1167,7 +1167,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1178,7 +1179,8 @@
       1266,
       1642,
       1471,
-      1925
+      1925,
+      2074
      ],
      "mau": "c1"
     },
@@ -1190,7 +1192,8 @@
       1063,
       1322,
       1431,
-      1308
+      1308,
+      1334
      ],
      "mau": "c2"
     },
@@ -1202,14 +1205,15 @@
       345,
       316,
       347,
-      296
+      296,
+      312
      ],
      "mau": "c4"
     }
    ],
    "so_le": 0,
-   "y": "HRC Q2/2026 kỷ lục 1,93 triệu tấn (+64%) khi Dung Quất 2 chạy ~88% công suất; thép xây dựng quanh 1,3 triệu tấn/quý.",
-   "ng": "KAFI 25/09 · KBSV 07/09"
+   "y": "HRC Q3/2026 kỷ lục 2,07 triệu tấn (+64%), ~96% công suất; thép xây dựng quanh 1,3 triệu tấn/quý. Tôn mạ Q3 ước bằng Q2.",
+   "ng": "KAFI 25/09 · KBSV 07/09 · HPG công bố Q3 (báo chí)"
   },
   {
    "ten": "HRC: Hòa Phát bán trong nước và nhập khẩu",
@@ -1273,7 +1277,7 @@
     "2023",
     "2024",
     "2025",
-    "6T/26"
+    "9T/26"
    ],
    "ss": [
     {
@@ -1291,13 +1295,13 @@
       10.9,
       13.3,
       15.7,
-      17.4
+      18.1
      ],
      "mau": "c1",
      "net": false
     }
    ],
-   "y": "6 tháng 2026: 17,4% — vẫn dưới trung vị 20,3% của 2014–2025; đỉnh chu kỳ trước 27,5% (2021), đáy 10,9% (2023).",
+   "y": "9 tháng 2026: 18,1% (Q3 19,2%) — vẫn dưới trung vị 20,3% của 2014–2025; đỉnh chu kỳ trước 27,5% (2021), đáy 10,9% (2023).",
    "ng": "BCTC HPG (VNDirect)"
   },
   {
@@ -1310,7 +1314,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1321,13 +1326,14 @@
       812,
       1237,
       1333,
-      1520
+      1520,
+      1774
      ],
      "mau": "c2"
     }
    ],
    "so_le": 0,
-   "y": "Q2/2026 gấp 3,5 lần cùng kỳ: Dung Quất 2 giai đoạn 2 thôi vốn hóa lãi vay từ 9/2025, lãi suất bình quân lên 6,4%.",
+   "y": "Q3/2026 1.774 tỷ (+118%): Dung Quất 2 thôi vốn hóa lãi vay từ 9/2025, dư nợ và lãi suất (~6,9%) cùng tăng.",
    "ng": "BCTC HPG (VNDirect) · KAFI 25/09"
   }
  ],
@@ -1337,29 +1343,29 @@
    {
     "ten": "Doanh thu",
     "kh": 210000,
-    "th": 108060,
-    "ky": "6T",
-    "tg": 50,
+    "th": 170274,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
    },
    {
     "ten": "Lợi nhuận sau thuế",
     "kh": 22000,
-    "th": 15480,
-    "ky": "6T",
-    "tg": 50,
+    "th": 23746,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
    },
    {
     "ten": "LNST trừ lãi Phố Nối",
     "kh": 22000,
-    "th": 11538,
-    "ky": "6T",
-    "tg": 50,
+    "th": 19803,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "KBSV 07/09"
+    "ng": "KBSV 07/09 (6T) · BCTC Q3"
    },
    {
     "ten": "Nhà máy ray và thép đặc biệt",
@@ -1370,7 +1376,7 @@
     "ng": "Shinhan 21/08"
    }
   ],
-  "y": "6 tháng đạt 70% kế hoạch LNST nhưng ~4,0 nghìn tỷ là lãi thoái vốn Phố Nối; phần lõi đạt 52% — đúng nhịp. Mô hình cơ sở cả năm 26.021 tỷ LN cổ đông, vượt kế hoạch ~19%.",
+  "y": "9 tháng LNST 23.746 tỷ, đã vượt kế hoạch năm (108%) nhưng ~4,0 nghìn tỷ là lãi Phố Nối; phần lõi đạt 90% — vượt nhịp. Mô hình cơ sở cả năm LNST 30.979 tỷ, vượt kế hoạch ~41%.",
   "ng": ""
  },
  "ctck": [
@@ -1432,6 +1438,26 @@
  ],
  "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Cổ tức 2025 (500 đ/cp tiền mặt và 10% cổ phiếu) giao dịch không hưởng quyền tháng 5/2026, trước mọi báo cáo dưới đây nên giá mục tiêu không cần điều chỉnh.",
  "nguon": [
+  {
+   "ten": "Báo Đấu thầu — Hòa Phát bán hơn 10,3 triệu tấn thép trong 9 tháng",
+   "ngay": "10/2026",
+   "link": "https://baodauthau.vn/hoa-phat-ban-hon-103-trieu-tan-thep-trong-9-thang-nam-2026-post209725.html"
+  },
+  {
+   "ten": "VCCI — HRC 9 tháng 5,47 triệu tấn (+59%)",
+   "ngay": "10/2026",
+   "link": "https://vcci.com.vn/news/hoa-phat-ban-hon-10-3-trieu-tan-thep-trong-9-thang-tang-39"
+  },
+  {
+   "ten": "Thời báo Tài chính — thép xây dựng + CLC Q3 >1,3 triệu tấn",
+   "ngay": "10/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/hoa-phat-ban-hon-10-3-trieu-tan-thep-trong-9-thang-205266.html"
+  },
+  {
+   "ten": "Znews — HPA (nông nghiệp Hòa Phát) KQKD Q3/2026",
+   "ngay": "10/2026",
+   "link": "https://znews.vn/hoa-phat-lai-gan-nghin-ty-nho-trung-ga-thit-bo-heo-post1692117.html"
+  },
   {
    "ten": "KAFI — Nâng dự phóng KQKD 2026, nâng giá mục tiêu",
    "ngay": "25/09/2026",
