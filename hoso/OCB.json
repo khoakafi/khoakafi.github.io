@@ -3,11 +3,11 @@
  "ma": "OCB",
  "ten": "Ngân hàng TMCP Phương Đông (OCB)",
  "nganh": "Ngân hàng",
- "ky": "BCTC Q2/2026 · giá 23/10/2026",
- "cap_nhat": "2026-10-24",
- "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 (cuối 1/2027)",
  "cp_trieu": 3062.5,
- "cp_ng": "vốn điều lệ 30.625 tỷ ÷ 10.000 đ: 2.663,1 triệu cp (BCTC Q2/2026) + 399,5 triệu cp thưởng 15% (chốt quyền 01/7/2026, GDKHQ 30/6) — BCTC Q2 chưa cập nhật; vốn hóa trên bảng giá VNDirect chưa khớp",
+ "cp_ng": "vốn điều lệ 30.625 tỷ ÷ 10.000 đ: 2.663,1 triệu cp + 399,5 triệu cp thưởng 15% (chốt quyền 01/7/2026, GDKHQ 30/6); vốn hóa trên bảng giá VNDirect chưa khớp số cp sau thưởng",
  "co_tuc": [],
  "chia": [
   [
@@ -16,37 +16,37 @@
   ]
  ],
  "tieu_de": {
-  "t": "Lãi trước dự phòng +33%, nhưng nợ nhóm 2 +50% và bao phủ 59% giữ ROE quanh 13%"
+  "t": "Q3 vượt dự phóng nhờ biên lãi, nhưng nợ xấu lên 3,99% và tiền gửi co lại giữ ROE quanh 12%"
  },
- "dong_mo": "6T/2026 lãi trước dự phòng +33% nhờ ngoài lãi +78% và chi phí gần như đứng yên; LNTT +30,5% mới bằng 35,5% kế hoạch 6.960 tỷ. Cho vay +18% so với tiền gửi +4%, nợ nhóm 2 +50% từ đầu năm. Cơ sở: LNTT 2026E 5.767 tỷ (83% kế hoạch), ROE 2027E 13,1%; P/B 0,90 × vốn chủ 30/6/2027E cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 LN cổ đông 1.314 tỷ (+7,0%), cao hơn cơ sở cũ 1.111 tỷ nhờ lãi thuần +14% và dự phòng chỉ 495 tỷ; 9T LNTT 4.123 tỷ (+20,2%), 59% kế hoạch. Nợ xấu 3,99% (bao phủ 58%), tiền gửi −4,8% trong quý. Cơ sở: LNTT 2026E 5.727 tỷ (82% kế hoạch), ROE 2027E 12,0%; P/B 0,85 × vốn chủ 30/9/2027E cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "+33%",
-   "nhan": "lãi trước dự phòng 6T/2026",
-   "tieu": "Lãi tăng nhờ ngoài lãi và chi phí đứng yên; biên lãi vẫn co",
-   "t": "6T/2026 lãi thuần +13% dù cho vay +18% so với cùng kỳ: lãi thuần/dư nợ bình quân từ 5,08% (Q3/2025) về 4,76%. Phần tăng đến từ ngoài lãi 1.020 tỷ (+78%) và chi phí hoạt động chỉ +2,6% (CIR 34,8%). Dự phòng 1.394 tỷ (+38%) lấy bớt, LNTT +30,5%. Cơ sở: LN cổ đông 2026E +14%, 2027E +18%.",
-   "ng": "BCTC · Thời báo Tài chính 8/2026 · mô hình"
+   "so": "+18%",
+   "nhan": "LN cổ đông Q3/2026 so với cơ sở cũ (1.111 tỷ)",
+   "tieu": "Q3 xác nhận sức kiếm lãi, chưa xác nhận chất lượng tài sản",
+   "t": "Q3 LN cổ đông 1.314 tỷ (+7,0% so với cùng kỳ). Lãi thuần +14% dù cho vay đi ngang trong quý: lãi thuần/dư nợ bình quân bật lên 5,03% từ 4,76% (chi phí lãi +57,3%, thu nhập lãi +38,2%). Ngoài lãi chỉ +3% sau 6T +78%: đà ngoài lãi đã hết. Dự phòng 495 tỷ thấp hơn cơ sở cũ ~640 tỷ là chênh lệch thời điểm — nợ xấu cùng quý tăng. Cơ sở LN cổ đông 2026E 4.537 tỷ (+13%), 2027E +8%.",
+   "ng": "BCTC Q3 · Tạp chí KTTC, Báo Pháp luật 10/2026 · mô hình"
   },
   {
-   "so": "138%",
-   "nhan": "dư nợ / tiền gửi khách hàng 30/6/2026 (cuối 2024: 120%)",
-   "tieu": "Tín dụng chạy nhanh gấp năm lần tiền gửi",
-   "t": "Cho vay +18,3% so với cùng kỳ, tiền gửi khách hàng +3,7%: dư nợ đã bằng 138% tiền gửi, phần thiếu bù bằng giấy tờ có giá, liên ngân hàng — nguồn đắt hơn khi lãi huy động hệ thống ở vùng cao. 6T cho vay đã +10,9%, kế hoạch cả năm +15% chỉ còn ~4 điểm %. Cơ sở giữ lãi thuần/dư nợ 4,65% cho 2027 (4,99% năm 2025); mỗi 10 điểm cơ bản ≈ ±0,9 nghìn đ/cp.",
-   "ng": "BCTC · DSC 22/08 · KIS 15/04 · MBS 16/10"
+   "so": "145%",
+   "nhan": "dư nợ / tiền gửi khách hàng 30/9/2026 (cuối 2024: 120%)",
+   "tieu": "Tiền gửi co lại, tín dụng phải chậm",
+   "t": "Tiền gửi khách hàng 152,0 nghìn tỷ (−4,8% trong Q3, −2,1% so với cùng kỳ) trong khi cho vay +12,3%: dư nợ bằng 145% tiền gửi. Cho vay Q3 đứng yên (9T +10,6%) — nguồn vốn đã là giới hạn. Cơ sở cả năm +14% (Q4 ~+3%), dưới kế hoạch +15%; biên 2027 4,70% (2026E 4,85%) vì phải trả giá cao hơn cho nguồn vốn; mỗi 10 điểm cơ bản ≈ ±1,0 nghìn đ/cp.",
+   "ng": "BCTC Q3 · Tạp chí KTTC 10/2026 · MBS 16/10"
   },
   {
-   "so": "59%",
-   "nhan": "bao phủ nợ xấu 30/6/2026",
-   "tieu": "Nợ xấu 3,5%, nhóm 2 +50%: dự phòng chưa thể hạ",
-   "t": "Nợ xấu 3,2% (cuối 2025) → 3,49% (6/2026), nhóm 5 chiếm 71% nợ xấu; nợ nhóm 2 5.209 tỷ, +49,9% từ đầu năm (ngành +31,6%), lên 2,36% dư nợ. Quỹ dự phòng chỉ 2,07% dư nợ. Thanh tra NHNN đã xử phạt về cấp tín dụng, phân loại tài sản có. Cơ sở chi phí tín dụng 1,4% (2026E), 1,3% (2027E); mỗi 0,1 điểm % ≈ ±0,9 nghìn đ/cp.",
-   "ng": "BCTC · Tạp chí KTTC 8/2026, 03/10 · DSC 22/08 · Elibook"
+   "so": "3,99%",
+   "nhan": "nợ xấu 30/9/2026 (cuối 2025: 3,2%)",
+   "tieu": "Nhóm 2 giảm vì đã chuyển thành nợ xấu; bao phủ 58%",
+   "t": "Nợ xấu 8.769 tỷ, +38% từ đầu năm; nhóm 2 về ~3.700 tỷ (1,7% dư nợ, −28% so với 30/6) — phần lớn đã xuống nhóm dưới, nhóm 5 5.852 tỷ (~67% nợ xấu). Quỹ dự phòng 2,32% dư nợ. Cơ sở dự phòng Q4 1.100 tỷ (Q4/2025 1.029), chi phí tín dụng 2027 1,4% (cũ 1,3%); mỗi 0,1 điểm % ≈ ±1,0 nghìn đ/cp.",
+   "ng": "BCTC Q3 · Viettimes, Tạp chí KTTC 10/2026"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
-   "tieu": "P/B thật 0,92 (23/10), không phải 0,85: giá trị nằm ở vốn chủ tích lũy",
-   "t": "Sau thưởng 15% (GDKHQ 30/6/2026) OCB có 3.062,5 triệu cp: ở giá 10,8 (23/10) P/B là 0,92, cao hơn trung vị 9 ngân hàng vốn hóa dưới 60 nghìn tỷ (0,88, ROE 15,7%) dù ROE 4 quý OCB 13,0%. Cơ sở 0,90 ≈ thấp 25% lịch sử (0,91); kiểm (ROE 2027E 13,1% − 7%) ÷ (14% − 7%) = 0,87. {gt} ({up}); xấu 9,5 (P/B 0,75), tốt 15,3 (P/B 1,1).",
-   "ng": "mô hình · P/B lịch sử, cùng ngành: BCTC VNDirect, giá 23/10"
+   "tieu": "P/B 0,87 cho ROE ~12%: giá đã gần giá trị",
+   "t": "Ở giá 10,6 (30/10) P/B theo vốn chủ 30/9 là 0,87, ngang trung vị 9 ngân hàng vốn hóa dưới 60 nghìn tỷ (0,88) dù ROE 4 quý OCB 12,8% thấp hơn và nợ xấu cao nhất nhóm. Cơ sở hạ P/B 0,90 → 0,85 vì ROE 2027E còn 12,0% (kiểm (ROE − 7%) ÷ (14% − 7%) = 0,71). {gt} ({up}); xấu 9,7 (P/B 0,75), tốt 15,7 (P/B 1,1).",
+   "ng": "mô hình · P/B lịch sử, cùng ngành: BCTC VNDirect"
   }
  ],
  "tom_tat": {
@@ -57,19 +57,19 @@
   ],
   "ln": [
    4010,
-   4569,
-   5370
+   4537,
+   4894
   ],
   "ln_truoc": 3173,
   "eps": [
    1309,
-   1492,
-   1754
+   1482,
+   1598
   ],
   "bv": [
    11077,
-   12553,
-   14287
+   12537,
+   14115
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -78,7 +78,7 @@
     "v": [
      12.2,
      12.6,
-     13.1
+     12.0
     ],
     "d": 1,
     "pt": 1
@@ -87,8 +87,8 @@
     "ten": "Lãi trước dự phòng (tỷ)",
     "v": [
      7387,
-     8761,
-     9950
+     8715,
+     9566
     ],
     "d": 0
    }
@@ -110,8 +110,8 @@
     "mau": "c1",
     "v": [
      9249,
-     10183,
-     11426
+     10382,
+     11449
     ]
    },
    {
@@ -119,12 +119,12 @@
     "mau": "c3",
     "v": [
      2341,
-     2965,
-     3261
+     2741,
+     2878
     ]
    }
   ],
-  "ng": "2025: BCTC; 2026E–2027E: mô hình. Ngoài lãi 20% thu nhập 2025, 23% năm 2026E — 6T/2026 +78%, BCTC không tách phí, ngoại hối, thu hồi nợ."
+  "ng": "2025: BCTC; 2026E–2027E: mô hình. Ngoài lãi 20% thu nhập 2025, 21% năm 2026E — 9T/2026 +43% nhưng Q3 chỉ +3%; công bố: dịch vụ, ngoại hối, chứng khoán."
  },
  "mo_hinh": {
   "tieu": "Dự phóng: tín dụng → biên lãi → lợi nhuận",
@@ -141,8 +141,8 @@
     "ten": "Dư nợ cho vay (nghìn tỷ)",
     "v": [
      198.8,
-     228.6,
-     262.9
+     226.6,
+     260.6
     ],
     "d": 1,
     "tang": 1
@@ -151,8 +151,8 @@
     "ten": "Lãi thuần / dư nợ bq (%)",
     "v": [
      4.99,
-     4.73,
-     4.65
+     4.85,
+     4.7
     ],
     "d": 2
    },
@@ -160,8 +160,8 @@
     "ten": "Thu nhập lãi thuần (tỷ)",
     "v": [
      9249,
-     10183,
-     11426
+     10382,
+     11449
     ],
     "tang": 1
    },
@@ -169,8 +169,8 @@
     "ten": "Thu nhập ngoài lãi (tỷ)",
     "v": [
      2341,
-     2965,
-     3261
+     2741,
+     2878
     ],
     "tang": 1
    },
@@ -178,8 +178,8 @@
     "ten": "CIR (%)",
     "v": [
      36.3,
-     33.4,
-     32.3
+     33.6,
+     33.2
     ],
     "d": 1
    },
@@ -187,8 +187,8 @@
     "ten": "Lãi trước dự phòng (tỷ)",
     "v": [
      7387,
-     8761,
-     9950
+     8715,
+     9566
     ],
     "tang": 1
    },
@@ -199,16 +199,16 @@
     "ten": "Chi phí dự phòng (tỷ)",
     "v": [
      2365,
-     2994,
-     3194
+     2988,
+     3410
     ]
    },
    {
     "ten": "Chi phí tín dụng (% dư nợ bq)",
     "v": [
      1.28,
-     1.4,
-     1.3
+     1.41,
+     1.4
     ],
     "d": 2
    },
@@ -219,8 +219,8 @@
     "ten": "LNTT (tỷ)",
     "v": [
      5022,
-     5767,
-     6755
+     5727,
+     6156
     ],
     "tang": 1
    },
@@ -228,8 +228,8 @@
     "ten": "LN cổ đông (tỷ)",
     "v": [
      4010,
-     4569,
-     5370
+     4537,
+     4894
     ],
     "dam": 1,
     "tang": 1
@@ -238,8 +238,8 @@
     "ten": "EPS (đ)",
     "v": [
      1309,
-     1492,
-     1754
+     1482,
+     1598
     ],
     "eps": 1
    },
@@ -247,8 +247,8 @@
     "ten": "BVPS (đ)",
     "v": [
      11077,
-     12553,
-     14287
+     12537,
+     14115
     ],
     "ps": 1
    },
@@ -257,118 +257,118 @@
     "v": [
      12.2,
      12.6,
-     13.1
+     12.0
     ],
     "d": 1
    }
   ],
-  "ghi": "2025A: BCTC. 2026E = 6T thực tế + 6T ước (Q3/2026 chưa công bố tại 24/10). Biên = lãi thuần ÷ dư nợ cho vay bình quân. Không chia cổ tức tiền mặt; EPS, BVPS theo 3.062,5 triệu cp."
+  "ghi": "2025A: BCTC. 2026E = 9T thực tế (BCTC Q3/2026) + Q4 ước. Biên = lãi thuần ÷ dư nợ cho vay bình quân. Không chia cổ tức tiền mặt; EPS, BVPS theo 3.062,5 triệu cp."
  },
  "gia_dinh": [
   {
    "ten": "Tăng trưởng cho vay 2026 · 2027",
    "v": [
-    "13% · 12%",
-    "15% · 15%",
-    "17% · 17%"
+    "12% · 12%",
+    "14% · 15%",
+    "16% · 17%"
    ],
-   "ly_do": "6T +10,9%; kế hoạch dư nợ +15% (ĐHĐCĐ). 2023–2025: +20,4% · +18,4% · +16,3%; hệ thống 9T/2026 +11,59% (MBS 16/10)"
+   "ly_do": "9T +10,6%, Q3 đi ngang vì tiền gửi −4,8%; Q4 2022–2025 +1,6% đến +9,7%; kế hoạch +15%. 2023–2025: +20,4% · +18,4% · +16,3%"
   },
   {
-   "ten": "Lãi thuần / dư nợ: nửa cuối 2026 · 2027",
+   "ten": "Lãi thuần / dư nợ: Q4/2026 · 2027",
    "v": [
-    "4,55% · 4,45%",
-    "4,70% · 4,65%",
-    "4,80% · 4,80%"
+    "4,60% · 4,45%",
+    "4,85% · 4,70%",
+    "5,00% · 4,85%"
    ],
-   "ly_do": "2024 5,54%, 2025 4,99%, Q1/2026 4,73%, Q2 4,76%. Tiền gửi chỉ +3,7%/năm; lãi huy động giữ vùng cao đến ~Q2/2027 (MBS 16/10)"
+   "ly_do": "2024 5,54%, 2025 4,99%; Q1–Q3/2026 4,73 · 4,76 · 5,03%. Chi phí lãi Q3 +57,3%, tiền gửi giảm: 2027 cơ sở −15 điểm cơ bản như 2025 → 2026"
   },
   {
-   "ten": "Ngoài lãi: nửa cuối 2026 · 2027",
+   "ten": "Ngoài lãi: Q4/2026 · 2027",
    "v": [
-    "−15% · −5%",
-    "+10% · +10%",
-    "+30% · +15%"
+    "−25% · −10%",
+    "−5% · +5%",
+    "+10% · +15%"
    ],
-   "ly_do": "Nửa cuối 2026 so với cùng kỳ (1.769 tỷ, riêng Q4/2025 1.262 tỷ); 2027 so với 2026E. 6T/2026 +78%; ĐHĐCĐ đặt trọng tâm ngoài lãi, thu hồi nợ"
+   "ly_do": "Q4/2026 so với Q4/2025 (1.262 tỷ, cao nhất lịch sử); 2027 so với 2026E. 9T +43% nhưng Q3 chỉ +3%: cơ sở 2027 hạ +10% → +5%"
   },
   {
-   "ten": "Chi phí hoạt động: nửa cuối 2026 · 2027",
+   "ten": "Chi phí hoạt động: Q4/2026 · 2027",
    "v": [
     "+12% · +12%",
-    "+6% · +8%",
+    "+7% · +8%",
     "+3% · +5%"
    ],
-   "ly_do": "6T/2026 +2,6%; 2025 +10,5%. CIR 2025 36,3%, 6T/2026 34,8% → cơ sở 2027E 32,3%"
+   "ly_do": "9T +4,1%, Q3 +6,9%; 2025 +10,5%. CIR 2025 36,3%, 9T/2026 34,8% → cơ sở 2027E 33,2%"
   },
   {
-   "ten": "Dự phòng nửa cuối 2026",
+   "ten": "Dự phòng Q4/2026",
    "v": [
-    "2.400 tỷ",
-    "1.600 tỷ",
-    "1.200 tỷ"
+    "1.700 tỷ",
+    "1.100 tỷ",
+    "800 tỷ"
    ],
-   "ly_do": "6T 1.394 tỷ (Q2 905); nửa cuối 2025 1.353 tỷ. Nhóm 2 +50%, bao phủ 59%: cơ sở cao hơn cùng kỳ +18%"
+   "ly_do": "9T 1.888 tỷ (+41%; Q3 495); Q4/2025 1.029 tỷ. Nợ xấu 3,99%, bao phủ 58%: cơ sở cao hơn cùng kỳ +7%"
   },
   {
    "ten": "Chi phí tín dụng 2027",
    "v": [
-    "1,70%",
-    "1,30%",
-    "1,05%"
+    "1,80%",
+    "1,40%",
+    "1,10%"
    ],
-   "ly_do": "Dự phòng ÷ dư nợ bq: 2024 1,43%, 2025 1,28%, 6T/2026 1,33%/năm, 2026E cơ sở 1,40%"
+   "ly_do": "Dự phòng ÷ dư nợ bq: 2024 1,43%, 2025 1,28%, 9T/2026 1,20%/năm, 2026E cơ sở 1,41%. Cơ sở nâng 1,3% → 1,4% sau khi nợ xấu lên 3,99%"
   },
   {
-   "ten": "P/B (× vốn chủ 30/6/2027E)",
+   "ten": "P/B (× vốn chủ 30/9/2027E)",
    "v": [
     "0,75",
-    "0,90",
+    "0,85",
     "1,10"
    ],
-   "ly_do": "Lịch sử: đáy 0,78 (10/2022), thấp 25% 0,91, trung vị 0,98, đỉnh 8/2025 1,10; 9 ngân hàng nhỏ 0,88. Kiểm ROE (r 14%, g 7%): cơ sở 0,87"
+   "ly_do": "Lịch sử: đáy 0,78 (10/2022), thấp 10% 0,88, trung vị 0,98, đỉnh 8/2025 1,10; 9 ngân hàng nhỏ 0,88. Kiểm ROE (r 14%, g 7%): cơ sở 0,71. Cơ sở hạ 0,90 → 0,85 vì ROE 2027E giảm 13,1% → 12,0%"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 3308,
-   "ln27": 3087,
-   "gia": 9.5,
-   "mo_ta": "Cho vay +13% / +12%, biên 4,45%, dự phòng nửa cuối 2.400 tỷ, chi phí tín dụng 2027 1,7%; ROE 2027 8,0%; P/B 0,75 < đáy 10/2022"
+   "ln26": 3686,
+   "ln27": 2777,
+   "gia": 9.7,
+   "mo_ta": "Cho vay +12%/năm, biên 2027 4,45%, dự phòng Q4 1.700 tỷ, chi phí tín dụng 2027 1,8%; ROE 2027 7,1%; P/B 0,75 < đáy 10/2022"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 4569,
-   "ln27": 5370,
-   "gia": 12.1,
-   "mo_ta": "Cho vay +15%/năm, biên 4,65%, chi phí tín dụng 2027 1,3%, CIR ~32%; ROE 2027 13,1%; P/B 0,90 ≈ thấp 25% lịch sử"
+   "ln26": 4537,
+   "ln27": 4894,
+   "gia": 11.7,
+   "mo_ta": "Cho vay +14% / +15%, biên 2027 4,7%, chi phí tín dụng 2027 1,4%, CIR ~33%; ROE 2027 12,0%; P/B 0,85 ≈ trung vị ngân hàng nhỏ"
   },
   {
    "ten": "Tốt",
-   "ln26": 5348,
-   "ln27": 6949,
-   "gia": 15.3,
-   "mo_ta": "Cho vay +17%/năm, biên 4,8%, ngoài lãi +30% nửa cuối 2026, chi phí tín dụng 2027 1,05%; ROE 2027 16,3%; P/B 1,10 ≈ đỉnh 8/2025"
+   "ln26": 5048,
+   "ln27": 6495,
+   "gia": 15.7,
+   "mo_ta": "Cho vay +16% / +17%, biên 2027 4,85%, dự phòng Q4 800 tỷ, chi phí tín dụng 2027 1,1%; ROE 2027 15,4%; P/B 1,10 ≈ đỉnh 8/2025"
   }
  ],
  "dinh_gia": {
   "tieu": "Định giá theo P/B",
-  "phu": "P/B × vốn chủ 30/6/2027E",
+  "phu": "P/B × vốn chủ 30/9/2027E",
   "ck": 0,
   "cp": 3062.5,
   "phan": [
    {
-    "ten": "Vốn chủ 30/6/2026",
+    "ten": "Vốn chủ 30/9/2026",
     "mau": "c1",
     "x": [
-     35822,
-     35822,
-     35822
+     37120,
+     37120,
+     37120
     ],
     "boi": [
      0.75,
-     0.9,
+     0.85,
      1.1
     ],
     "x_ten": "đã công bố",
@@ -376,44 +376,44 @@
     "boi_d": 2,
     "sh": 1,
     "gt": [
-     26866,
-     32240,
-     39404
+     27840,
+     31552,
+     40832
     ]
    },
    {
     "ten": "Lợi nhuận giữ lại 12 tháng",
     "mau": "c3",
     "x": [
-     2843,
-     5247,
-     6815
+     2447,
+     4886,
+     6597
     ],
     "boi": [
      0.75,
-     0.9,
+     0.85,
      1.1
     ],
-    "x_ten": "7/2026–6/2027E",
+    "x_ten": "10/2026–9/2027E",
     "boi_ten": "P/B",
     "boi_d": 2,
     "sh": 1,
     "gt": [
-     2132,
-     4722,
-     7497
+     1835,
+     4153,
+     7257
     ]
    }
   ],
   "von": [
-   28998,
-   36962,
-   46901
+   29675,
+   35705,
+   48089
   ],
   "gia": [
-   9.5,
-   12.1,
-   15.3
+   9.7,
+   11.7,
+   15.7
   ]
  },
  "pe_ls": {
@@ -560,7 +560,7 @@
    0.89,
    0.94,
    0.86,
-   0.92
+   0.91
   ],
   "p10": 0.88,
   "p25": 0.91,
@@ -571,35 +571,35 @@
   ],
   "nay": [
    "2026-10",
-   0.92
+   0.91
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); số cổ phiếu theo lịch thưởng (25% 8/2021, 50% 9/2023, 20% 8/2024, 8% 8/2025, 15% 6/2026) vì vốn điều lệ trên BCTC cập nhật trễ một quý; dữ liệu nhánh co-ban-data.",
-  "dung": "Kịch bản dùng P/B 0,75 · 0,90 · 1,10: xấu dưới đáy 10/2022 (0,78); cơ sở ≈ thấp 25% (0,91), dưới trung vị từ 2023 (0,96) vì ROE 2027E chỉ 13,1% và nợ xấu 3,5%; tốt ≈ đỉnh 8/2025 (1,10)."
+  "dung": "Kịch bản dùng P/B 0,75 · 0,85 · 1,10: xấu dưới đáy 10/2022 (0,78); cơ sở dưới thấp 10% (0,88) vì ROE 2027E chỉ 12,0% và nợ xấu 3,99% — lịch sử gồm 2021–2023 ROE 15–22%; tốt ≈ đỉnh 8/2025 (1,10)."
  },
  "nhay": [
   [
    "P/B ±0,1 lần",
    null,
-   1.3
+   1.4
   ],
   [
    "Ngoài lãi 2027 ±10%",
-   259,
-   1.2
+   229,
+   1.1
   ],
   [
    "Biên lãi 2027 ±10 điểm cơ bản",
-   195,
-   0.9
+   194,
+   1.0
   ],
   [
    "Chi phí tín dụng 2027 ±0,1 điểm %",
-   195,
-   0.9
+   194,
+   1.0
   ],
   [
    "Tín dụng 2027 ±3 điểm %",
-   91,
+   89,
    0.4
   ]
  ],
@@ -607,41 +607,41 @@
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   4569
+   4537
   ],
   "cuoi": [
    "2027E",
-   5370
+   4894
   ],
   "buoc": [
    [
     "Lãi thuần",
-    988
+    848
    ],
    [
     "Ngoài lãi",
-    236
+    109
    ],
    [
     "Chi phí hoạt động",
-    -279
+    -280
    ],
    [
     "Dự phòng",
-    -160
+    -335
    ],
    [
     "Thuế, khác",
-    16
+    15
    ]
   ],
-  "y": "Lãi thuần (+12%: cho vay +15%, biên 4,65%) là động lực chính; chi phí hoạt động và dự phòng lấy lại ~36% phần tăng thu nhập.",
+  "y": "Lãi thuần (+10%: cho vay +15%, biên 4,70%) là động lực chính; chi phí hoạt động và dự phòng lấy lại ~64% phần tăng thu nhập.",
   "ng": "mô hình"
  },
  "so_sanh": {
   "tieu": "P/B so với ngân hàng vốn hóa dưới 60 nghìn tỷ",
-  "phu": "theo giá hôm nay, vốn chủ 30/6/2026, số cp sau thưởng 15%",
-  "chi_so": "P/B (vốn chủ 30/6/2026)",
+  "phu": "theo giá hôm nay, vốn chủ 30/9/2026, số cp sau thưởng 15%",
+  "chi_so": "P/B (vốn chủ 30/9/2026)",
   "chi_so_kv": "P/B (giá 23/10)",
   "nhom": "9 ngân hàng vốn hóa dưới 60 nghìn tỷ",
   "kv": [
@@ -683,10 +683,10 @@
    ]
   ],
   "tv": 0.88,
-  "moi_cp": 11697,
+  "moi_cp": 12121,
   "max": 2,
-  "y": "ROE 4 quý OCB 13,0% so với trung vị nhóm 15,7%; 10 ngân hàng trên 100 nghìn tỷ trung vị P/B 1,31. Bảng giá ghi P/B OCB 0,85 (vốn hóa VNDirect lệch số cp sau thưởng); theo 3.062,5 triệu cp là 0,92.",
-  "ng": "BCTC VNDirect, giá 23/10/2026 (cách tính như bảng cùng ngành; bỏ EIB, NVB đang tái cơ cấu, ROE < 3%); OCB: 3.062,5 triệu cp sau thưởng 15%"
+  "y": "ROE 4 quý OCB 12,8% so với trung vị nhóm 15,7%; 10 ngân hàng trên 100 nghìn tỷ trung vị P/B 1,31 (giá 30/10). Bảng giá ghi P/B OCB 0,89 (vốn hóa VNDirect lệch số cp sau thưởng); theo 3.062,5 triệu cp và vốn chủ 30/9 là 0,87.",
+  "ng": "BCTC VNDirect, giá 23/10/2026 cho 9 ngân hàng nhỏ (cách tính như bảng cùng ngành; bỏ EIB, NVB đang tái cơ cấu, ROE < 3%); OCB: 3.062,5 triệu cp sau thưởng 15%, giá 30/10"
  },
  "theo_doi": [
   {
@@ -703,51 +703,70 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    730,
-    1510,
-    2002
+    424,
+    1275,
+    1786
    ],
    "ck": 1277
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    3308,
-    4569,
-    5348
+    3686,
+    4537,
+    5048
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "Cuối 10/2026",
-   "loai": "hai",
-   "tieu": "BCTC Q3/2026",
-   "ct": "Cơ sở LN cổ đông Q3 ~1.110 tỷ (−10%) vì dự phòng ~640 tỷ so với 324 tỷ Q3/2025; cần xem nợ nhóm 2, bao phủ và lãi thuần/dư nợ (Q2 4,76%).",
+   "khi": "Đã ra 10/2026",
+   "loai": "len",
+   "tieu": "KQKD Q3/2026: LN cổ đông 1.314 tỷ (+7,0%)",
+   "ct": "Cao hơn cơ sở cũ 1.111 tỷ (+18%), gần tốt 1.398 tỷ: lãi thuần +14% (biên 5,03%), dự phòng 495 tỷ. Ngoài lãi chỉ +3%. Dự phòng thấp là lệch thời điểm — nợ xấu cùng quý lên 3,99%.",
    "tac": [
-    "629–1.398 tỷ",
-    "LN cổ đông Q3, xấu–tốt"
+    "+203 tỷ",
+    "LN Q3 so với cơ sở cũ"
    ],
-   "theo_doi": "nợ nhóm 2, dự phòng, biên lãi"
+   "theo_doi": "biên lãi Q4, dự phòng Q4"
   },
   {
    "khi": "Q4/2026",
    "loai": "hai",
    "tieu": "Kế hoạch LNTT 6.960 tỷ",
-   "ct": "Nửa cuối cần 4.490 tỷ, gấp 1,43 lần nửa cuối 2025. Cơ sở LNTT 2026E 5.767 tỷ; tốt 6.747 tỷ (97%) nếu ngoài lãi quý 4 lặp lại 2025 và dự phòng giảm.",
+   "ct": "9T đạt 59%; Q4 cần 2.837 tỷ, gấp 1,78 lần Q4/2025. Cơ sở LNTT 2026E 5.727 tỷ (82%); tốt 6.369 tỷ (92%) — khó hoàn thành nếu không có khoản thu hồi nợ lớn.",
    "tac": [
-    "83% kế hoạch",
+    "82% kế hoạch",
     "LNTT 2026E kịch bản cơ sở"
    ],
    "theo_doi": "LNTT quý 4, thu hồi nợ"
   },
   {
+   "khi": "Cuối 1/2027",
+   "loai": "hai",
+   "tieu": "BCTC Q4/2026",
+   "ct": "Cơ sở LN cổ đông Q4 1.275 tỷ (−0,1%) với dự phòng 1.100 tỷ; xem nợ xấu có dừng ở ~4%, tiền gửi có hồi lại và biên lãi có giữ trên 4,8%.",
+   "tac": [
+    "424–1.786 tỷ",
+    "LN cổ đông Q4, xấu–tốt"
+   ],
+   "theo_doi": "nợ xấu, tiền gửi, biên lãi"
+  },
+  {
+   "khi": "4/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: kế hoạch 2027, cổ tức",
+   "ct": "Cơ sở LN cổ đông 2027E 4.894 tỷ (+8%), ROE 12,0% — dưới mục tiêu ROE > 15% của ban lãnh đạo. Kế hoạch 2027 và hình thức chia lợi nhuận 2026 (2025: cổ phiếu) là phép thử cho chiến lược của ban điều hành mới.",
+   "tac": "",
+   "theo_doi": "kế hoạch LNTT 2027, cổ tức"
+  },
+  {
    "khi": "2026–2027",
    "loai": "len",
    "tieu": "Bán thêm ~10% vốn cho nhà đầu tư nước ngoài",
-   "ct": "ĐHĐCĐ 15/4 nêu kế hoạch bán vốn hoặc phát hành trái phiếu chuyển đổi để nâng sở hữu ngoại thêm 10% (hiện 19,6%, Aozora 15%). Bán trên giá sổ sách sẽ nâng BVPS, CAR.",
+   "ct": "ĐHĐCĐ 15/4 nêu kế hoạch bán vốn hoặc phát hành trái phiếu chuyển đổi để nâng sở hữu ngoại thêm 10% (hiện 19,6%, Aozora 15%). Bán trên giá sổ sách sẽ nâng BVPS, CAR và bù nguồn vốn đang thiếu.",
    "tac": [
-    "+1,3 nghìn đ/cp",
+    "+1,4 nghìn đ/cp",
     "mỗi +0,1 lần P/B"
    ],
    "theo_doi": "chấp thuận NHNN, giá chào bán"
@@ -755,42 +774,34 @@
   {
    "khi": "2026–2027",
    "loai": "len",
-   "tieu": "Thu hồi nợ, ngoài lãi",
-   "ct": "Tăng thu ngoài lãi và thu hồi, kiểm soát nợ xấu là hai trong ba động lực của kế hoạch 2026 (ĐHĐCĐ); nhóm 5 chiếm 71% nợ xấu là nguồn thu hồi khi xử lý được tài sản bảo đảm.",
+   "tieu": "Thu hồi nợ nhóm 5",
+   "ct": "Nhóm 5 5.852 tỷ (~67% nợ xấu) là nguồn hoàn nhập, thu nhập khác khi xử lý được tài sản bảo đảm; ĐHĐCĐ đặt thu hồi nợ là một trong ba động lực 2026.",
    "tac": [
-    "±1,2 nghìn đ/cp",
+    "±1,1 nghìn đ/cp",
     "mỗi ±10% ngoài lãi 2027"
    ],
    "theo_doi": "thu nhập khác, nợ nhóm 5"
   },
   {
-   "khi": "2026–2027",
-   "loai": "len",
-   "tieu": "OCBS thành công ty con, mua công ty quản lý quỹ",
-   "ct": "Kế hoạch ĐHĐCĐ 2026: đưa Chứng khoán OCBS (dư nợ margin > 2.800 tỷ cuối Q2/2026) thành công ty con và mua một công ty quản lý quỹ.",
-   "tac": "",
-   "theo_doi": "thương vụ OCBS, phí dịch vụ"
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Nợ xấu 3,99%, bao phủ 58%",
+   "ct": "Nợ xấu +38% trong 9T lên 8.769 tỷ; nhóm 2 giảm về ~3.700 tỷ chủ yếu do chuyển nhóm. Xấu: dự phòng Q4 1.700 tỷ, chi phí tín dụng 2027 1,8%.",
+   "tac": [
+    "−1,0 nghìn đ/cp",
+    "mỗi 0,1 điểm % chi phí tín dụng 2027"
+   ],
+   "theo_doi": "nợ xấu mới, nợ nhóm 2"
   },
   {
    "khi": "Liên tục",
    "loai": "xuong",
    "muc": 3,
-   "tieu": "Nợ nhóm 2 chuyển thành nợ xấu",
-   "ct": "Nhóm 2 5.209 tỷ (2,36% dư nợ), +49,9% từ đầu năm; bao phủ 59%. Xấu: dự phòng nửa cuối 2.400 tỷ, chi phí tín dụng 2027 1,7%.",
+   "tieu": "Tiền gửi co lại, dư nợ/tiền gửi 145%",
+   "ct": "Tiền gửi khách hàng −4,8% trong Q3 (−2,1% so với cùng kỳ), chi phí lãi Q3 +57,3%. Thiếu tiền gửi rẻ buộc OCB chậm tín dụng hoặc trả lãi cao hơn — cả hai đều kéo lợi nhuận 2027.",
    "tac": [
-    "−0,9 nghìn đ/cp",
-    "mỗi 0,1 điểm % chi phí tín dụng 2027"
-   ],
-   "theo_doi": "nợ nhóm 2, nợ xấu mới"
-  },
-  {
-   "khi": "Liên tục",
-   "loai": "xuong",
-   "muc": 2,
-   "tieu": "Tín dụng vượt xa huy động",
-   "ct": "Dư nợ/tiền gửi khách hàng 138% (cuối 2024: 120%); cho vay +18% so với tiền gửi +3,7%. Thiếu tiền gửi rẻ, biên lãi chịu sức ép khi lãi huy động còn cao.",
-   "tac": [
-    "−0,9 nghìn đ/cp",
+    "−1,0 nghìn đ/cp",
     "mỗi 10 điểm cơ bản biên lãi 2027"
    ],
    "theo_doi": "tiền gửi, lãi huy động"
@@ -800,7 +811,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Kết luận thanh tra NHNN",
-   "ct": "Chỉ ra tồn tại ở cấp tín dụng, kiểm soát nội bộ, cơ cấu nợ, ngoại hối, lãi suất huy động; phạt về cấp tín dụng, phân loại tài sản có (nộp 18/8/2026). Phân loại lại nợ có thể đẩy nợ xấu lên.",
+   "ct": "Chỉ ra tồn tại ở cấp tín dụng, kiểm soát nội bộ, cơ cấu nợ, ngoại hối, lãi suất huy động; phạt về cấp tín dụng, phân loại tài sản có (nộp 18/8/2026). Nợ xấu tăng mạnh ở Q3 phù hợp với việc phân loại lại.",
    "tac": "",
    "theo_doi": "nợ xấu, nợ cơ cấu"
   },
@@ -808,19 +819,18 @@
    "khi": "2026–2027",
    "loai": "hai",
    "tieu": "Đổi Tổng giám đốc",
-   "ct": "Ông Phạm Hồng Hải từ nhiệm (công bố 11/5/2026) sau hai năm tái cấu trúc, đẩy mạnh ngân hàng số; chiến lược \"tái định vị\" (ĐHĐCĐ) cần ban điều hành mới chứng minh.",
+   "ct": "Ông Phạm Hồng Hải từ nhiệm (công bố 11/5/2026) sau hai năm tái cấu trúc; chiến lược \"tái định vị\" (ĐHĐCĐ) và OCBS thành công ty con cần ban điều hành mới chứng minh.",
    "tac": "",
    "theo_doi": "bổ nhiệm, chiến lược 2026–2030"
   }
  ],
  "bieu_do": [
   {
-   "ten": "Lãi thuần / dư nợ: thấp nhất hai năm",
+   "ten": "Lãi thuần / dư nợ bật lên 5,03% ở Q3",
    "kieu": "duong",
    "dv": "%",
    "so_le": 2,
    "nhan": [
-    "Q1/24",
     "Q2/24",
     "Q3/24",
     "Q4/24",
@@ -829,13 +839,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Lãi thuần / dư nợ bq",
      "v": [
-      5.15,
       5.23,
       5.32,
       6.46,
@@ -844,14 +854,14 @@
       5.08,
       5.03,
       4.73,
-      4.76
+      4.76,
+      5.03
      ],
      "mau": "c1"
     },
     {
      "ten": "Lãi thuần / tổng tài sản bq",
      "v": [
-      3.19,
       3.34,
       3.27,
       3.89,
@@ -860,21 +870,21 @@
       3.11,
       3.11,
       2.86,
-      2.9
+      2.9,
+      3.09
      ],
      "mau": "c3"
     }
    ],
-   "y": "Lãi thuần quý × 4 trên dư nợ bình quân từ 5,08% (Q3/2025) về 4,73–4,76% trong 6T/2026 (Q4/2024 cao bất thường); tính trên tổng tài sản ~2,9%.",
+   "y": "Lãi thuần quý × 4 trên dư nợ bình quân 4,73–4,76% ở 6T/2026 lên 5,03% ở Q3 (tổng tài sản 3,09%) dù chi phí lãi +57,3%; Q4/2024 cao bất thường.",
    "ng": "BCTC (VNDirect): lãi thuần quý × 4 ÷ bình quân đầu–cuối quý"
   },
   {
-   "ten": "Cho vay +18%, tiền gửi chỉ +4%",
+   "ten": "Cho vay +12%, tiền gửi −2%",
    "kieu": "duong",
    "dv": "% so với cùng kỳ",
    "so_le": 1,
    "nhan": [
-    "Q1/24",
     "Q2/24",
     "Q3/24",
     "Q4/24",
@@ -883,13 +893,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Cho vay khách hàng",
      "v": [
-      23.9,
       19.7,
       20.1,
       18.4,
@@ -898,14 +908,14 @@
       23.9,
       16.3,
       16.8,
-      18.3
+      18.3,
+      12.3
      ],
      "mau": "c1"
     },
     {
      "ten": "Tiền gửi khách hàng",
      "v": [
-      20.0,
       19.1,
       18.6,
       13.1,
@@ -914,64 +924,65 @@
       13.7,
       5.3,
       5.0,
-      3.7
+      3.7,
+      -2.1
      ],
      "mau": "c2"
     }
    ],
-   "y": "Từ Q2/2025 cho vay tăng ~16–18%/năm còn tiền gửi chậm dần về +3,7%: dư nợ/tiền gửi 120% (cuối 2024) → 138% (6/2026).",
+   "y": "Tiền gửi tăng chậm dần rồi giảm (−2,1% ở Q3), cho vay hạ tốc về +12,3%: dư nợ/tiền gửi 120% (cuối 2024) → 145% (9/2026).",
    "ng": "BCTC (VNDirect)"
   },
   {
-   "ten": "Lãi trước dự phòng và dự phòng theo quý",
+   "ten": "LNTT và dự phòng theo quý",
    "kieu": "cot_chong",
    "dv": "tỷ đồng",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "LNTT",
      "v": [
-      440,
       1453,
       893,
       999,
       1538,
       1592,
       1224,
-      1246
+      1246,
+      1653
      ],
      "mau": "c1"
     },
     {
      "ten": "Dự phòng",
      "v": [
-      933,
       703,
       378,
       634,
       324,
       1029,
       489,
-      905
+      905,
+      495
      ],
      "mau": "c2"
     }
    ],
-   "y": "Lãi trước dự phòng Q2/2026 2.151 tỷ (+32% so với cùng kỳ); dự phòng 905 tỷ (gấp 1,9 lần Q1) giữ LNTT đi ngang so với Q1.",
+   "y": "Lãi trước dự phòng Q3/2026 2.147 tỷ (+15% so với cùng kỳ), ngang Q2; dự phòng giảm từ 905 về 495 tỷ nên LNTT cao nhất 8 quý — Q4 hằng năm thường dự phòng nhiều.",
    "ng": "BCTC (VNDirect)"
   },
   {
-   "ten": "Bộ đệm dự phòng so với nợ xấu, nhóm 2",
+   "ten": "Nợ xấu tăng, nhóm 2 giảm: nợ đã chuyển nhóm",
    "kieu": "duong",
    "dv": "% dư nợ",
    "so_le": 2,
@@ -982,7 +993,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -994,7 +1006,8 @@
       1.5,
       1.8,
       1.96,
-      2.07
+      2.07,
+      2.32
      ],
      "mau": "c1"
     },
@@ -1007,7 +1020,8 @@
       null,
       3.2,
       3.52,
-      3.49
+      3.49,
+      3.99
      ],
      "mau": "c2"
     },
@@ -1020,13 +1034,14 @@
       null,
       1.7,
       1.93,
-      2.36
+      2.36,
+      1.68
      ],
      "mau": "c3"
     }
    ],
-   "y": "Quỹ dự phòng lên 2,07% dư nợ nhưng vẫn dưới nợ xấu 3,49% (bao phủ 59%); nợ nhóm 2 1,7% → 2,36% trong 6 tháng.",
-   "ng": "Dự phòng: BCTC; nợ xấu, nhóm 2: DSC 22/08, Tạp chí KTTC 8/2026 (2024–Q3/2025 không có số)"
+   "y": "Nhóm 2 lên 2,36% ở 6/2026 rồi về ~1,7% ở 9/2026 khi nợ xấu lên 3,99%; quỹ dự phòng 2,32% dư nợ, bao phủ 58%.",
+   "ng": "Dự phòng: BCTC; nợ xấu, nhóm 2: DSC 22/08, Tạp chí KTTC 8/2026 và 10/2026, Viettimes 10/2026 (2024–Q3/2025 không có số)"
   }
  ],
  "ke_hoach": {
@@ -1035,41 +1050,41 @@
    {
     "ten": "Lợi nhuận trước thuế (+39%)",
     "kh": 6960,
-    "th": 2470,
-    "ky": "6T",
-    "tg": 50,
+    "th": 4123,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 15/4 (KIS) · BCTC Q2"
+    "ng": "ĐHĐCĐ 15/4 (KIS) · BCTC Q3"
    },
    {
     "ten": "Cho vay (kế hoạch dư nợ +15%)",
     "kh": 29815,
-    "th": 21580,
-    "ky": "6T",
-    "tg": 50,
+    "th": 21034,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ tăng thêm",
-    "ng": "ĐHĐCĐ: dư nợ thị trường 1 +15% · BCTC Q2: cho vay khách hàng"
+    "ng": "ĐHĐCĐ: dư nợ thị trường 1 +15% · BCTC Q3: cho vay khách hàng"
    },
    {
     "ten": "Tổng tài sản lên 354.214 tỷ",
     "kh": 31265,
-    "th": 28792,
-    "ky": "6T",
-    "tg": 50,
+    "th": 40776,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ tăng thêm",
-    "ng": "ĐHĐCĐ (KIS) · BCTC Q2"
+    "ng": "ĐHĐCĐ (KIS) · BCTC Q3"
    },
    {
     "ten": "Vốn điều lệ lên 30.625 tỷ",
     "kh": 3994,
     "th": 3994,
     "ky": "7/2026",
-    "tg": 50,
+    "tg": 75,
     "dv": "tỷ tăng thêm",
     "ng": "thưởng 15% cổ phiếu, chốt quyền 01/7/2026"
    }
   ],
-  "y": "LNTT 6T đạt 35,5% kế hoạch; cơ sở cả năm 5.767 tỷ ≈ 83%. Cho vay 6T đã dùng 72% phần tăng kế hoạch, tổng tài sản 92%: nửa cuối năm còn ít dư địa mở rộng bảng cân đối.",
+  "y": "LNTT 9T đạt 59,2% kế hoạch (thời gian 75%); cơ sở cả năm 5.727 tỷ ≈ 82%. Cho vay 9T dùng 71% phần tăng kế hoạch; tổng tài sản 363,7 nghìn tỷ đã vượt kế hoạch cả năm.",
   "ng": ""
  },
  "ctck": [
@@ -1085,8 +1100,28 @@
    "link": "https://cdn.simplize.vn/simplizevn/report/OCB/ocb_tin_van_khong_xep_hang_dhcd_tai_dinh_vi_hoat_dong_kinh_doanh.pdf"
   }
  ],
- "ctck_chu": "Chỉ KIS (15/04/2026, tin vắn ĐHĐCĐ, không xếp hạng) có trong kho tài liệu trong 8 tháng; DSC (22/08), TCBS (19/08), HSC, VDSC có báo cáo sau KQKD Q2/2026 nhưng chưa có bản gốc ở đây. Mô hình tự dựng từ BCTC, công bố của OCB và so sánh 22 ngân hàng niêm yết.",
+ "ctck_chu": "Chỉ KIS (15/04/2026, tin vắn ĐHĐCĐ, không xếp hạng) có trong kho tài liệu trong 8 tháng; DSC (22/08), TCBS, HSC, VDSC có báo cáo sau KQKD Q2/2026, SSI Research dự báo LNTT Q3 ~1.650 tỷ (khớp thực tế 1.653) nhưng chưa có bản gốc ở đây. Mô hình tự dựng từ BCTC, công bố của OCB và so sánh 22 ngân hàng niêm yết.",
  "nguon": [
+  {
+   "ten": "Tạp chí Kinh tế Tài chính — OCB lãi hơn 4.100 tỷ sau 9 tháng, một mảng kinh doanh đảo chiều (nhóm 2, nhóm 5, bao phủ, tiền gửi)",
+   "ngay": "10/2026",
+   "link": "https://tapchikinhtetaichinh.vn/ocb-lai-hon-4-100-ty-dong-sau-9-thang-mot-mang-kinh-doanh-dao-chieu-170670.html"
+  },
+  {
+   "ten": "Viettimes — Nợ xấu OCB tăng 38%, hơn 5.800 tỷ là nợ có khả năng mất vốn",
+   "ngay": "10/2026",
+   "link": "https://viettimes.vn/no-xau-ocb-tang-38-hon-5800-ty-dong-la-no-co-kha-nang-mat-von-post207520.html"
+  },
+  {
+   "ten": "Báo Pháp luật — OCB công bố kết quả kinh doanh quý III/2026",
+   "ngay": "10/2026",
+   "link": "https://baophapluat.vn/ocb-cong-bo-ket-qua-kinh-doanh-quy-iii-2026.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — OCB lãi hơn 4.100 tỷ sau 9 tháng, quy mô tổng tài sản \"về đích\" sớm",
+   "ngay": "10/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/ocb-lai-hon-4-100-ty-dong-sau-9-thang-quy-mo-tong-tai-san-ve-dich-som-205932.html"
+  },
   {
    "ten": "KIS — OCB: ĐHĐCĐ, tái định vị hoạt động kinh doanh (tin vắn, không xếp hạng)",
    "ngay": "15/04/2026",
@@ -1179,17 +1214,17 @@
    "y": [
     {
      "h": -1,
-     "t": "Nợ nhóm 2 toàn ngành +31,6% từ đầu năm đến 6/2026 — chất lượng tài sản xấu đi chung, OCB nhanh hơn ngành.",
+     "t": "Nợ nhóm 2 toàn ngành +31,6% từ đầu năm đến 6/2026 — chất lượng tài sản xấu đi chung; OCB nhanh hơn ngành và đến Q3 nhóm 2 đã chuyển thành nợ xấu (3,99%).",
      "ng": "Tạp chí KTTC 8/2026"
     },
     {
      "h": 0,
      "t": "P/B trung vị 10 ngân hàng trên 100 nghìn tỷ 1,31, 9 ngân hàng dưới 60 nghìn tỷ 0,88: ngân hàng nhỏ ROE ≥ 17% vẫn dưới 1 lần (SHB 0,73, TPB 0,81, KLB 0,88).",
-     "ng": "BCTC VNDirect, giá 23/10/2026"
+     "ng": "BCTC VNDirect, giá 23/10/2026 (ngân hàng nhỏ)"
     },
     {
      "h": 0,
-     "t": "Bảng so sánh MBS 05/10 (OCB ngoài danh mục MBS theo dõi): LN 2026F +19,6%, 2027F +14,4%, ROE 13,2% — cao hơn cơ sở của trang cho 2026 (+14%).",
+     "t": "Bảng so sánh MBS 05/10 (OCB ngoài danh mục MBS theo dõi): LN 2026F +19,6%, 2027F +14,4%, ROE 13,2% — cao hơn cơ sở của trang cho 2026 (+13%).",
      "ng": "MBS 05/10/2026"
     }
    ]
@@ -1218,33 +1253,33 @@
  "mang": [
   {
    "ten": "Tín dụng và nguồn vốn",
-   "phu": "Cho vay 220,3 nghìn tỷ · tiền gửi khách hàng 159,7 nghìn tỷ (30/6/2026)",
+   "phu": "Cho vay 219,8 nghìn tỷ · tiền gửi khách hàng 152,0 nghìn tỷ (30/9/2026)",
    "so": [
     [
-     "Cho vay 6T",
-     "+10,9%",
+     "Cho vay 9T",
+     "+10,6%",
      "so với cuối 2025"
     ],
     [
-     "Tiền gửi 6T",
-     "+6,4%",
-     ""
+     "Tiền gửi 9T",
+     "+1,3%",
+     "Q3: −4,8%"
     ],
     [
      "Dư nợ / tiền gửi",
-     "138%",
+     "145%",
      "cuối 2024 120%"
     ],
     [
      "Tổng tài sản",
-     "351,7 nghìn tỷ",
+     "363,7 nghìn tỷ",
      "kế hoạch 354,2"
     ]
    ],
    "y": [
     {
-     "t": "DSC: tín dụng tăng tốc mạnh nhưng vượt xa huy động, tạo áp lực lên thanh khoản.",
-     "ng": "DSC 22/08/2026"
+     "t": "Q3 cho vay đi ngang, tiền gửi giảm 4,8%: tăng trưởng 9T chủ yếu đến từ nửa đầu năm, tổng tài sản vượt kế hoạch nhờ liên ngân hàng, chứng khoán.",
+     "ng": "BCTC Q3 · Tạp chí KTTC 10/2026"
     },
     {
      "t": "Kế hoạch 2026: huy động thị trường 1 +14% lên 251.919 tỷ, dư nợ thị trường 1 +15% lên 235.875 tỷ.",
@@ -1254,30 +1289,34 @@
   },
   {
    "ten": "Thu nhập và chi phí",
-   "phu": "Thu nhập hoạt động 6T 5.928 tỷ (+21%)",
+   "phu": "Thu nhập hoạt động 9T 9.219 tỷ (+17%)",
    "so": [
     [
-     "Lãi thuần 6T",
-     "4.908 tỷ",
+     "Lãi thuần 9T",
+     "7.676 tỷ",
      "+13%"
     ],
     [
-     "Ngoài lãi 6T",
-     "1.020 tỷ",
-     "+78%"
+     "Ngoài lãi 9T",
+     "1.543 tỷ",
+     "+43%"
     ],
     [
-     "CIR 6T",
+     "CIR 9T",
      "34,8%",
      "2025: 36,3%"
     ],
     [
      "Lãi trước dự phòng",
-     "3.864 tỷ",
-     "+33%"
+     "6.011 tỷ",
+     "+26%"
     ]
    ],
    "y": [
+    {
+     "t": "Q3: thu nhập lãi +38,2%, chi phí lãi +57,3% lên 4.784 tỷ; ngoài lãi 9T nhờ dịch vụ, ngoại hối, chứng khoán (chứng khoán kinh doanh từ lỗ sang lãi).",
+     "ng": "Báo Pháp luật · Tạp chí KTTC 10/2026"
+    },
     {
      "t": "Ban lãnh đạo: động lực 2026 là tăng thu ngoài lãi, thu hồi và kiểm soát nợ xấu, tối ưu chi phí bằng công nghệ; ROE mục tiêu > 15%.",
      "ng": "KIS 15/04/2026"
@@ -1286,33 +1325,33 @@
   },
   {
    "ten": "Chất lượng tài sản",
-   "phu": "Nợ xấu 3,49% · bao phủ 59% (30/6/2026)",
+   "phu": "Nợ xấu 3,99% · bao phủ 58% (30/9/2026)",
    "so": [
     [
      "Nợ xấu",
-     "3,49%",
+     "3,99%",
      "cuối 2025 3,2%"
     ],
     [
      "Nợ nhóm 2",
-     "2,36%",
-     "5.209 tỷ"
+     "~1,7%",
+     "~3.700 tỷ"
     ],
     [
      "Quỹ dự phòng",
-     "2,07%",
+     "2,32%",
      "dư nợ"
     ],
     [
-     "Dự phòng Q2",
-     "905 tỷ",
-     "+42,8%"
+     "Dự phòng 9T",
+     "1.888 tỷ",
+     "+41,4%"
     ]
    ],
    "y": [
     {
-     "t": "Nhóm 5 chiếm 70,8% nợ xấu (Q1: 63,2%): phần lớn nợ xấu đã ở nhóm phải trích 100%, bao phủ thấp nghĩa là dựa nhiều vào tài sản bảo đảm.",
-     "ng": "Elibook 23/08/2026"
+     "t": "Nợ xấu 8.769 tỷ (+38% từ đầu năm), nhóm 5 5.852 tỷ ~67%: phần lớn đã ở nhóm phải trích 100%, bao phủ thấp nghĩa là dựa nhiều vào tài sản bảo đảm.",
+     "ng": "Viettimes · Tạp chí KTTC 10/2026"
     }
    ]
   }
