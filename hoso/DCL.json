@@ -3,46 +3,53 @@
  "ma": "DCL",
  "ten": "Công ty Cổ phần Dược phẩm Cửu Long",
  "nganh": "Dược phẩm – vỏ nang, thiết bị y tế",
- "ky": "BCTC Q2/2026 · kế hoạch ĐHĐCĐ 2026",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "ky": "BCTC Q3/2026 · giá 29/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 (cuối 1/2027) · kế hoạch ĐHĐCĐ 2027",
  "cp_trieu": 73.0,
- "cp_ng": "Vốn điều lệ 730,4 tỷ ÷ 10.000 đ (BCTC Q2/2026), khớp 73 triệu cổ phiếu lưu hành DSC công bố; không có thưởng, chia tách hay cổ tức từ 6/2018 (giá điều chỉnh VNDirect)",
+ "cp_ng": "Vốn điều lệ 730,4 tỷ ÷ 10.000 đ (BCTC Q3/2026), khớp 73 triệu cổ phiếu lưu hành DSC công bố; không có thưởng, chia tách hay cổ tức từ 6/2018 (giá điều chỉnh VNDirect)",
  "co_tuc": [],
  "tieu_de": {
-  "t": "Phần lõi vẫn lãi, nhà máy mới ăn hết lợi nhuận; giá đã vượt cả kịch bản tốt",
-  "dk": "up_duoi:-39.9",
-  "khac": "Phần lõi vẫn lãi, nhà máy mới ăn hết lợi nhuận; giá trị còn neo vào vốn chủ"
+  "t": "Q3 lỗ 18,5 tỷ dù doanh thu +19%: chi phí bán hàng, lãi vay ăn hết; giá vẫn trên cả kịch bản tốt",
+  "dk": "up_duoi:-45.1",
+  "khac": "Q3 lỗ 18,5 tỷ dù doanh thu +19%: chi phí bán hàng, lãi vay ăn hết; giá trị neo vào vốn chủ"
  },
- "dong_mo": "LN cổ đông 4 quý đến Q2/2026 −2,3 tỷ; thuế vẫn bằng 97% LNTT 6T/2026 vì lỗ ở nhà máy mới không được trừ thuế. Kế hoạch LNTT 2026 (100,2 tỷ) mới đạt 10% sau 6 tháng; Tây Ninh 2.500 tỷ còn ở phía trước. P/B × vốn chủ 6/2027E cho {gt} ({up}); kịch bản tốt — Benovas có lãi, biên gộp 18% — 45,1 nghìn đ.",
+ "dong_mo": "LN cổ đông Q3/2026 −18,5 tỷ (Q3/2025 −5,9), lũy kế 9T −18,5 tỷ (9T/2025 +15,9): doanh thu Q3 +18,8% nhưng chi phí bán hàng +68%, lãi vay tăng 7 tỷ khi nợ vay thêm 200 tỷ. Công ty vẫn nộp 10,8 tỷ thuế 9T trên LNTT −7,2 tỷ — phần lỗ không được trừ. P/B 1,2 × vốn chủ 6/2027E cho {gt} ({up}); kịch bản tốt — Benovas có lãi, biên gộp 18% — 44,1 nghìn đ.",
  "luan_diem": [
   {
-   "so": "97%",
-   "nhan": "thuế TNDN ÷ LNTT 6T/2026",
-   "tieu": "Phần lõi vẫn lãi, nhà máy mới ăn hết",
-   "t": "LN cổ đông 4 quý đến Q2/2026 −2,3 tỷ, nhưng thuế 6T/2026 vẫn 9,4 tỷ trên LNTT 9,8 tỷ. Quy về thuế suất 20%, phần có lãi (chủ yếu dược, vỏ nang) làm ra ~73 tỷ LNTT mỗi năm 2024–2025 và 47 tỷ trong 6T/2026; phần lỗ không được trừ thuế — nhà máy thiết bị y tế Benovas chạy từ 3/2025 và dự phòng — từ −4 tỷ (2024) lên −38 tỷ (2025), −37 tỷ chỉ trong 6T/2026.",
+   "so": "−18,5 tỷ",
+   "nhan": "LN cổ đông Q3/2026 (Q3/2025 −5,9)",
+   "tieu": "Q3 bác bỏ kỳ vọng hồi phục: doanh thu tăng, lỗ sâu hơn",
+   "t": "Doanh thu Q3 339,4 tỷ (+18,8%) nhưng LN gộp chỉ thêm 4,9 tỷ (biên 11,7%, Q2 16,8%); chi phí bán hàng 32,4 tỷ (+68%, 9,5% doanh thu so với 6,7%) lấy thêm 13,2 tỷ, lãi vay thêm 7,3 tỷ. LNTT −16,9 tỷ; mô hình 20/10 cơ sở +3,3 tỷ, xấu −4,9. Chưa có giải trình; doanh thu tăng cùng chi phí bán hàng gợi ý chiết khấu, hoa hồng để đẩy hàng — chờ thuyết minh. Mô hình hạ biên gộp, nâng chi phí và lãi vay 2027E.",
+   "ng": "BCTC Q3/2026 hợp nhất (VNDirect) · mô hình"
+  },
+  {
+   "so": "10,8 tỷ",
+   "nhan": "thuế TNDN 9T/2026 trên LNTT −7,2 tỷ",
+   "tieu": "Phần lõi vẫn lãi, phần lỗ ngày càng sâu",
+   "t": "Quy về thuế suất 20%, phần có lãi (chủ yếu dược, vỏ nang) làm ra ~73 tỷ LNTT mỗi năm 2024–2025, 54 tỷ 9T/2026 (Q3 chỉ 6,8); phần lỗ không được trừ thuế — nhà máy thiết bị y tế Benovas chạy từ 3/2025 và dự phòng — từ −4 tỷ (2024) lên −38 tỷ (2025), −61 tỷ 9T/2026 (Q3 −23,8).",
    "ng": "BCTC hợp nhất (VNDirect) · DSC 17/06 · ước tính của trang"
   },
   {
-   "so": "15,5%",
-   "nhan": "biên gộp 2025 (2021: 29,9%)",
+   "so": "13,3%",
+   "nhan": "biên gộp 9T/2026 (2021: 29,9%)",
    "tieu": "Doanh thu gần gấp đôi từ 2021, lãi gộp đứng yên",
-   "t": "Doanh thu 2021→2025 từ 704 lên 1.322 tỷ (+88%) nhưng LN gộp từ 210 xuống 204 tỷ: biên gộp 29,9% → 15,5% (6T/2026 14,2%), chi phí bán hàng & QLDN chỉ giảm từ 17,5% còn 11,0%. DCL đang cắt hàng giá trị thấp, dồn vào kháng sinh Cefixim, Cefuroxim, chuyển sang vỏ nang thực vật (DSC). Mỗi 1 điểm % biên gộp 2027 ≈ ±11 tỷ LN; thêm 5% doanh thu chỉ ±3 tỷ.",
+   "t": "Doanh thu 2021→2025 từ 704 lên 1.322 tỷ (+88%) nhưng LN gộp từ 210 xuống 204 tỷ: biên gộp 29,9% → 15,5% → 13,3% (9T/2026). DCL đang cắt hàng giá trị thấp, dồn vào kháng sinh Cefixim, Cefuroxim, chuyển sang vỏ nang thực vật (DSC) — 3 quý 2026 chưa thấy biên cải thiện. Mỗi 1 điểm % biên gộp 2027 ≈ ±11 tỷ LN; thêm 5% doanh thu chỉ ±2 tỷ.",
    "ng": "BCTC hợp nhất (VNDirect) · DSC 17/06 · mô hình"
   },
   {
-   "so": "2.500 tỷ",
-   "nhan": "vốn đầu tư nhà máy EU-GMP Tây Ninh",
-   "tieu": "Benovas cho thấy giá của nhà máy mới; Tây Ninh lớn hơn nhiều",
-   "t": "Q1/2025 xây dựng dở dang giảm 288 tỷ khi Benovas vào vận hành; lãi vay quý tăng từ 6 lên 13–15 tỷ dù nợ vay vẫn ~760 tỷ — lãi vay thôi được vốn hóa, cùng lúc với khấu hao. Tây Ninh nâng vốn từ 1.396 lên 2.500 tỷ (≥ 20% vốn tự có), bằng 1,7 lần vốn chủ; WHO-GMP 2027–2028, EU-GMP thêm 12–24 tháng (DSC); trước đó Tây Ninh chưa có doanh thu. Năm 2025 không chia cổ tức.",
-   "ng": "BCTC hợp nhất (VNDirect) · DSC 17/06 · Stockbiz 2026"
+   "so": "960 tỷ",
+   "nhan": "nợ vay 30/9/2026 (30/6: 760)",
+   "tieu": "Vay thêm trong Q3; lãi vay bằng một nửa LN gộp quý",
+   "t": "Vay ngắn hạn tăng 211 tỷ trong Q3, đầu tư ngắn hạn cùng lúc tăng 169 tỷ lên 719 tỷ; lãi vay Q3 20,3 tỷ (~9%/năm trên dư nợ bình quân) = 51% LN gộp quý, doanh thu tài chính 11,0 tỷ. Từ Q1/2025 lãi vay Benovas thôi được vốn hóa (xây dựng dở dang giảm 288 tỷ). Tây Ninh 2.500 tỷ (≥ 20% vốn tự có) = 1,7 lần vốn chủ còn ở phía trước; năm 2025 không chia cổ tức.",
+   "ng": "BCTC Q3/2026 hợp nhất (VNDirect) · DSC 17/06 · Stockbiz 2026"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
-   "tieu": "P/B 1,3 × vốn chủ 6/2027E: {up_so} so với giá hiện tại",
-   "t": "Giá ×2,4 từ 21 nghìn (8/2025) khi LN 4 quý về ≈ 0; ở giá 20/10, P/B 2,48 — trên trung vị 11 mã dược (2,08) dù ROE nhóm 15,6%. Với P/E trung vị lịch sử 18,8, giá 20/10 cần LN ~200 tỷ/năm, 1,8 lần đỉnh 2022 (112 tỷ); LN 2027E tốt (85 tỷ) × 18,8 chỉ ra 21,9 nghìn đ. Cơ sở P/B 1,3 ≈ trung vị 2023–8/2025 khi ROE 1–4%; tốt 2,1 (≈ trung vị ngành) → 45,1; xấu 1,0 → 20,2.",
-   "ng": "mô hình · P/B, P/E: BCTC VNDirect · bảng cùng ngành 20/10"
+   "tieu": "P/B 1,2 × vốn chủ 6/2027E: {up_so} so với giá hiện tại",
+   "t": "Giá ×2,2 từ 21 nghìn (8/2025) trong khi LN 4 quý về −14,8 tỷ; ở giá 29/10, P/B 2,26 — trên trung vị 11 mã dược (2,02) dù ROE nhóm 15,5%. Với P/E trung vị lịch sử 18,8, giá 29/10 cần LN ~180 tỷ/năm, 1,6 lần đỉnh 2022 (112 tỷ); LN 2027E tốt (83 tỷ) × 18,8 chỉ ra 21,5 nghìn đ. Cơ sở hạ P/B 1,3 → 1,2 (≈ thấp 25% lịch sử 1,24) vì ROE 2027E −0,5% thay vì ~1%; tốt 2,1 (≈ trung vị ngành) → 44,1; xấu 1,0 → 19,7.",
+   "ng": "mô hình · P/B, P/E: BCTC VNDirect · bảng cùng ngành 29/10"
   }
  ],
  "tom_tat": {
@@ -53,19 +60,19 @@
   ],
   "ln": [
    20,
-   8,
-   20
+   -25,
+   -8
   ],
   "ln_truoc": 54,
   "eps": [
    274,
-   110,
-   274
+   -342,
+   -110
   ],
   "bv": [
    20571,
-   20676,
-   20948
+   20232,
+   20126
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -73,8 +80,8 @@
     "ten": "Doanh thu (tỷ)",
     "v": [
      1322,
-     1268,
-     1344
+     1340,
+     1420
     ],
     "d": 0
    },
@@ -82,8 +89,8 @@
     "ten": "Biên gộp",
     "v": [
      15.5,
-     14.6,
-     15.5
+     13.4,
+     14.5
     ],
     "d": 1,
     "pt": 1
@@ -92,14 +99,14 @@
     "ten": "ROE",
     "v": [
      1.3,
-     0.5,
-     1.3
+     -1.7,
+     -0.5
     ],
     "d": 1,
     "pt": 1
    }
   ],
-  "ng": "LN 2024–2025: BCTC hợp nhất. EPS = LN cổ đông ÷ 73,0 triệu cp; BVPS = vốn chủ cổ đông cuối năm. Không chia cổ tức từ 2018."
+  "ng": "LN 2024–2025: BCTC hợp nhất; 2026E = 9T thực tế + Q4 ước. EPS = LN cổ đông ÷ 73,0 triệu cp; BVPS = vốn chủ cổ đông cuối năm. Không chia cổ tức từ 2018."
  },
  "ln_mang": {
   "tieu": "LN trước thuế theo nguồn",
@@ -116,8 +123,8 @@
     "mau": "c1",
     "v": [
      59,
-     49,
-     60
+     21,
+     43
     ]
    },
    {
@@ -125,8 +132,8 @@
     "mau": "c2",
     "v": [
      -18,
-     -26,
-     -25
+     -32,
+     -35
     ]
    },
    {
@@ -139,65 +146,65 @@
     ]
    }
   ],
-  "ng": "HĐKD cốt lõi = LN gộp − chi phí bán hàng − QLDN; tài chính ròng = doanh thu tài chính − chi phí tài chính (chủ yếu lãi vay). 2025A: BCTC; 2026E–2027E: mô hình cơ sở."
+  "ng": "HĐKD cốt lõi = LN gộp − chi phí bán hàng − QLDN; tài chính ròng = doanh thu tài chính − chi phí tài chính (chủ yếu lãi vay). 2025A: BCTC; 2026E (9T thực tế + Q4) – 2027E: mô hình cơ sở."
  },
  "so_sanh": {
   "tieu": "P/B so với 11 mã dược vốn hóa lớn nhất",
-  "phu": "giá hôm nay, vốn chủ cổ đông 30/6/2026, 73,0 triệu cp",
+  "phu": "giá hôm nay, vốn chủ cổ đông 30/9/2026, 73,0 triệu cp",
   "chi_so": "P/B",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "chi_so_kv": "P/B (giá 29/10)",
   "nhom": "11 mã cùng ngành vốn hóa lớn nhất",
   "kv": [
    [
     "DHG",
-    3.43
+    3.25
    ],
    [
     "IMP",
-    2.34
+    2.24
    ],
    [
     "DHT",
-    4.47
+    4.54
    ],
    [
     "DBD",
-    2.5
+    2.38
    ],
    [
     "TRA",
-    2.03
+    2.02
    ],
    [
     "OPC",
-    1.63
+    1.66
    ],
    [
     "DP3",
-    2.08
+    1.99
    ],
    [
     "PMC",
-    4.57
+    4.41
    ],
    [
     "VDP",
-    1.28
+    1.21
    ],
    [
     "DBT",
-    1.01
+    1.0
    ],
    [
     "MED",
-    0.67
+    0.65
    ]
   ],
-  "tv": 2.08,
-  "moi_cp": 20571,
+  "tv": 2.02,
+  "moi_cp": 20318,
   "max": 5,
-  "y": "ROE 4 quý của DCL ≈ 0, nhóm trung vị 15,6%. Nhóm ROE dưới 10% (VDP, DBT, MED) chỉ 0,67–1,28 lần; ngoại lệ DHT (ROE 3,7%, P/B 4,47). Mặt bằng 10 mã (trừ DHT): mỗi 1 điểm % ROE ≈ 0,09 lần P/B.",
-  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC Q2/2026, giá 20/10/2026; DCL: vốn chủ cổ đông 30/6/2026 trên 73,0 triệu cp"
+  "y": "ROE 4 quý của DCL −1,0%, nhóm trung vị 15,5%. Nhóm ROE dưới 10% (VDP, DBT, MED) chỉ 0,65–1,21 lần; ngoại lệ DHT (ROE 3,7%, P/B 4,54). Mặt bằng 10 mã (trừ DHT): mỗi 1 điểm % ROE ≈ 0,09 lần P/B.",
+  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất (Q3/2026 nếu đã có), giá 29/10/2026; DCL: vốn chủ cổ đông 30/9/2026 trên 73,0 triệu cp"
  },
  "mo_hinh": {
   "tieu": "Dự phóng hợp nhất",
@@ -214,8 +221,8 @@
     "ten": "Doanh thu thuần (tỷ)",
     "v": [
      1322,
-     1268,
-     1344
+     1340,
+     1420
     ],
     "tang": 1
    },
@@ -223,8 +230,8 @@
     "ten": "Biên gộp (%)",
     "v": [
      15.5,
-     14.6,
-     15.5
+     13.4,
+     14.5
     ],
     "d": 1
    },
@@ -232,8 +239,8 @@
     "ten": "Chi phí bán hàng & QLDN / doanh thu (%)",
     "v": [
      11.0,
-     10.8,
-     11.0
+     11.8,
+     11.5
     ],
     "d": 1
    },
@@ -241,8 +248,8 @@
     "ten": "HĐKD cốt lõi (tỷ)",
     "v": [
      59,
-     49,
-     60
+     21,
+     43
     ],
     "tang": 1
    },
@@ -250,16 +257,16 @@
     "ten": "Tài chính ròng & khác (tỷ)",
     "v": [
      -24,
-     -26,
-     -25
+     -32,
+     -35
     ]
    },
    {
     "ten": "LNTT (tỷ)",
     "v": [
      35,
-     23,
-     35
+     -11,
+     8
     ],
     "tang": 1
    },
@@ -270,7 +277,7 @@
     "ten": "Phần có lãi chịu thuế (tỷ)",
     "v": [
      73,
-     74,
+     64,
      75
     ]
    },
@@ -278,8 +285,8 @@
     "ten": "Phần lỗ không trừ thuế (tỷ)",
     "v": [
      -38,
-     -51,
-     -40
+     -75,
+     -67
     ],
     "tang": 1
    },
@@ -287,7 +294,7 @@
     "ten": "Thuế TNDN (tỷ)",
     "v": [
      15,
-     15,
+     13,
      15
     ]
    },
@@ -298,8 +305,8 @@
     "ten": "LN cổ đông (tỷ)",
     "v": [
      20,
-     8,
-     20
+     -25,
+     -8
     ],
     "dam": 1,
     "tang": 1
@@ -308,8 +315,8 @@
     "ten": "EPS (đ)",
     "v": [
      274,
-     110,
-     274
+     -342,
+     -110
     ],
     "eps": 1
    },
@@ -317,23 +324,23 @@
     "ten": "ROE (%)",
     "v": [
      1.3,
-     0.5,
-     1.3
+     -1.7,
+     -0.5
     ],
     "d": 1
    }
   ],
-  "ghi": "2026E = 6 tháng thực tế + 6 tháng ước tính. Phần có lãi = thuế ÷ 20% (2016–2024 thuế/LNTT 20–21%); phần lỗ = LNTT − phần có lãi. Không chia cổ tức."
+  "ghi": "2026E = 9 tháng thực tế (BCTC Q3/2026) + Q4 ước tính. Phần có lãi = thuế ÷ 20% (2016–2024 thuế/LNTT 20–21%); phần lỗ = LNTT − phần có lãi. 2026E → 2027E: doanh thu và biên gộp +27 tỷ, chi phí bán hàng & QLDN −5, tài chính −3, thuế −2 — chưa thoát lỗ nếu lãi vay giữ mức Q3. Không chia cổ tức."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   8
+   -25
   ],
   "cuoi": [
    "2027E",
-   20
+   -8
   ],
   "buoc": [
    [
@@ -341,102 +348,102 @@
     11
    ],
    [
-    "Biên gộp 14,6 → 15,5%",
-    12
+    "Biên gộp 13,4 → 14,5%",
+    16
    ],
    [
     "Chi phí bán hàng & QLDN",
-    -12
+    -5
    ],
    [
     "Tài chính ròng & khác",
-    1
+    -3
    ],
    [
     "Thuế TNDN",
-    0
+    -2
    ]
   ],
-  "y": "Doanh thu và biên gộp góp 23 tỷ nhưng chi phí bán hàng & QLDN lấy lại 12 tỷ: LN 2027E cơ sở 20 tỷ, ROE ~1,3%.",
+  "y": "Doanh thu và biên gộp góp 27 tỷ, chi phí bán hàng & QLDN −5, tài chính −3 tỷ: LN 2027E cơ sở −8 tỷ, ROE −0,5% — chưa thoát lỗ nếu lãi vay giữ mức Q3/2026.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Doanh thu: 2H/2026 · 2027",
+   "ten": "Doanh thu: Q4/2026 · 2027",
    "v": [
-    "−8% · −3%",
-    "0% · +6%",
-    "+8% · +15%"
+    "−5% · −3%",
+    "+5% · +6%",
+    "+15% · +15%"
    ],
-   "ly_do": "6T/2026 −8,1% (Q2 −11,7%); 2022–2025 +9%/năm, 2025 +1,1%; kế hoạch 2026 1.817 tỷ (+38%); DSC 2026F 1.400 tỷ; thiết bị y tế KH 2026 188 tỷ"
+   "ly_do": "Q3/2026 +18,8%, 9T ngang cùng kỳ (6T −8,1%); 2022–2025 +9%/năm; kế hoạch 2026 1.817 tỷ (+38%); DSC 2026F 1.400 tỷ; thiết bị y tế KH 2026 188 tỷ"
   },
   {
-   "ten": "Biên gộp: 2H/2026 · 2027",
+   "ten": "Biên gộp: Q4/2026 · 2027",
    "v": [
-    "13,0 · 13,0%",
-    "15,0 · 15,5%",
-    "16,5 · 18,0%"
+    "11,5 · 12,5%",
+    "13,5 · 14,5%",
+    "15,5 · 18,0%"
    ],
-   "ly_do": "6T/2026 14,2% (Q1 12,0%, Q2 16,8%), 2H/2025 13,5%; 2023 18,3%, 2021 29,9%; tốt: vỏ nang thực vật, Benovas đủ tải"
+   "ly_do": "9T/2026 13,3% (Q1 12,0, Q2 16,8, Q3 11,7), Q4/2025 14,6%; 2024 15,7%, 2025 15,5%. Cơ sở 2027 hạ 15,5 → 14,5% vì 3 quý 2026 đều dưới 2025; tốt = 2023 (18,3%), vỏ nang thực vật, Benovas đủ tải"
   },
   {
-   "ten": "Chi phí bán hàng & QLDN / doanh thu",
+   "ten": "Chi phí bán hàng & QLDN / doanh thu: Q4 · 2027",
    "v": [
-    "11,5 · 11,5%",
-    "11,0 · 11,0%",
-    "10,5 · 10,0%"
+    "13,5 · 12,0%",
+    "12,0 · 11,5%",
+    "11,0 · 10,0%"
    ],
-   "ly_do": "6T/2026 10,5%, 2H/2025 11,7%, 2025 11,0%, 2023 12,2%; QLDN từ 51 tỷ (2023) lên 65 tỷ (2025) khi thêm nhà máy"
+   "ly_do": "Q3/2026 13,9%, 9T 11,7%, Q4/2025 11,3%, 2025 11,0%. Cơ sở 2027 nâng 11,0 → 11,5%: chi phí bán hàng Q3 chưa rõ một lần hay để giữ doanh thu"
   },
   {
-   "ten": "Tài chính ròng (tỷ): 2H/2026 · 2027",
+   "ten": "Tài chính ròng (tỷ): Q4/2026 · 2027",
    "v": [
-    "−16 · −35",
-    "−13 · −25",
-    "−11 · −18"
+    "−12 · −45",
+    "−10 · −35",
+    "−8 · −25"
    ],
-   "ly_do": "6T/2026 −13,3 (lãi vay 28,3); nợ vay 760 tỷ, lãi ~8%/năm; Tây Ninh vốn hóa lãi vay khi xây; xấu: vay thêm vốn lưu động"
+   "ly_do": "Q3/2026 −9,3 (lãi vay 20,3, ~9%/năm); nợ vay 960 tỷ (+200 trong Q3). Cơ sở 2027 hạ −25 → −35 ≈ mức Q3 × 4; xấu: vay thêm cho Tây Ninh"
   },
   {
-   "ten": "Phần có lãi chịu thuế (tỷ): 2H/2026 · 2027",
+   "ten": "Phần có lãi chịu thuế (tỷ): Q4/2026 · 2027",
    "v": [
-    "20 · 65",
-    "27 · 75",
-    "35 · 90"
+    "5 · 65",
+    "10 · 75",
+    "18 · 90"
    ],
-   "ly_do": "Thuế ÷ 20%: 2023 80, 2024 73, 2025 73 (2H/2025 21), 6T/2026 47; thuế = 20% phần này"
+   "ly_do": "Thuế ÷ 20%: 2023 80, 2024 73, 2025 73, 9T/2026 54 (Q3 6,8, Q4/2025 18,9); thuế = 20% phần này"
   },
   {
    "ten": "P/B (× vốn chủ 30/6/2027E)",
    "v": [
     "1,0",
-    "1,3",
+    "1,2",
     "2,1"
    ],
-   "ly_do": "Từ 2015: thấp 10% 1,06, trung vị 1,39; 2023–8/2025 (ROE 1–4%) trung vị 1,26, đáy 1,02; 11 mã dược trung vị 2,08 (ROE 15,6%)"
+   "ly_do": "Từ 2015: thấp 10% 1,06, 25% 1,24, trung vị 1,39; 2023–8/2025 trung vị 1,26, đáy 1,02; 11 mã dược 2,02 (ROE 15,5%). Cơ sở hạ 1,3 → 1,2: ROE 2027E −0,5%, mỗi điểm % ROE ≈ 0,09 lần P/B trong ngành"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": -11,
-   "ln27": -31,
-   "gia": 20.2,
-   "mo_ta": "Doanh thu 2027 −3%, biên gộp 13% (như Q1/2026), lãi vay tăng khi vay cho Tây Ninh; lỗ nhà máy mới sâu thêm (-82 tỷ); P/B 1,0 ≈ đáy 2025"
+   "ln26": -39,
+   "ln27": -52,
+   "gia": 19.7,
+   "mo_ta": "Q4 lỗ như Q3; doanh thu 2027 −3%, biên gộp 12,5% (≈ Q3/2026), tài chính −45 tỷ khi vay thêm cho Tây Ninh; lỗ nhà máy mới -104 tỷ; P/B 1,0 ≈ đáy 2025"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 8,
-   "ln27": 20,
-   "gia": 27.1,
-   "mo_ta": "Doanh thu 2027 +6%, biên gộp 15,5%; lỗ không trừ thuế thu hẹp còn -40 tỷ; ROE ~1,3%; P/B 1,3 ≈ trung vị 2023–8/2025"
+   "ln26": -25,
+   "ln27": -8,
+   "gia": 24.2,
+   "mo_ta": "Doanh thu 2027 +6%, biên gộp 14,5%, lãi vay giữ mức Q3; LNTT 8 tỷ, ROE −0,5%; P/B 1,2 ≈ thấp 25% lịch sử"
   },
   {
    "ten": "Tốt",
-   "ln26": 24,
-   "ln27": 85,
-   "gia": 45.1,
-   "mo_ta": "Doanh thu 2027 +15%, biên gộp 18% (≈ 2023), Benovas có lãi; LNTT 103 tỷ ≈ kế hoạch 2026; P/B 2,1 ≈ trung vị 11 mã dược"
+   "ln26": -11,
+   "ln27": 83,
+   "gia": 44.1,
+   "mo_ta": "Doanh thu 2027 +15%, biên gộp 18% (≈ 2023), Benovas có lãi; LNTT 102 tỷ ≈ kế hoạch 2026; P/B 2,1 ≈ trung vị 11 mã dược"
   }
  ],
  "dinh_gia": {
@@ -450,34 +457,34 @@
     "mau": "c1",
     "sh": 1,
     "x": [
-     1475,
-     1519,
-     1568
+     1437,
+     1473,
+     1532
     ],
     "boi": [
      1.0,
-     1.3,
+     1.2,
      2.1
     ],
     "x_ten": "Vốn chủ cổ đông 30/6/2027E",
     "boi_ten": "P/B",
     "boi_d": 2,
     "gt": [
-     1475,
-     1975,
-     3293
+     1437,
+     1768,
+     3217
     ]
    }
   ],
   "von": [
-   1475,
-   1975,
-   3293
+   1437,
+   1768,
+   3217
   ],
   "gia": [
-   20.2,
-   27.1,
-   45.1
+   19.7,
+   24.2,
+   44.1
   ]
  },
  "pe_ls": {
@@ -768,7 +775,7 @@
    1.87,
    1.87,
    2.12,
-   2.28
+   2.14
   ],
   "p10": 1.06,
   "p25": 1.24,
@@ -779,16 +786,16 @@
   ],
   "nay": [
    "2026-10",
-   2.28
+   2.14
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "LN 2027E cơ sở ~20 tỷ không đủ làm mốc P/E nên neo P/B: 1,0 ≈ đáy 2023–8/2025 (1,02), thấp 10% (1,06) · 1,3 ≈ trung vị 2023–8/2025 (1,26, ROE 1–4%) · 2,1 ≈ trung vị 11 mã dược (2,08). 2015–2022 (ROE phần lớn 8–15%) trung vị 1,48; từ 9/2025 1,88."
+  "dung": "LN 2027E cơ sở -8 tỷ không làm mốc P/E được nên neo P/B: 1,0 ≈ đáy 2023–8/2025 (1,02), thấp 10% (1,06) · 1,2 ≈ thấp 25% (1,24), dưới trung vị 2023–8/2025 (1,26, ROE 1–4%) vì ROE 2027E âm · 2,1 ≈ trung vị 11 mã dược (2,02). 2015–2022 (ROE phần lớn 8–15%) trung vị 1,48; từ 9/2025 1,88."
  },
  "nhay": [
   [
    "P/B ±0,1 lần",
    null,
-   2.1
+   2.0
   ],
   [
    "Biên gộp 2027 ±1 điểm %",
@@ -798,17 +805,17 @@
   [
    "Lỗ ở nhà máy mới 2027 ±10 tỷ",
    10,
-   1.4
+   1.3
   ],
   [
    "Lãi suất vay ±1 điểm %",
-   6,
-   0.8
+   8,
+   1.0
   ],
   [
    "Doanh thu 2027 ±5% (giữ biên)",
-   3,
-   0.4
+   2,
+   0.3
   ]
  ],
  "theo_doi": [
@@ -826,43 +833,63 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    -6.3,
-    4.3,
-    13.8
+    -20.2,
+    -6.2,
+    7.6
    ],
    "ck": 3.7
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    -11,
-    8,
-    24
+    -39,
+    -25,
+    -11
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "Cuối 10/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Mô hình cơ sở LN cổ đông 3,3 tỷ (Q3/2025 −5,9 tỷ). Thuế/LNTT cho biết lỗ ở nhà máy mới đã thu hẹp chưa (6T/2026: 97%).",
+   "khi": "29/10/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Đã ra KQKD Q3/2026: lỗ 18,5 tỷ",
+   "ct": "Mô hình 20/10 cơ sở +3,3 tỷ, xấu −4,9. Doanh thu +18,8% nhưng chi phí bán hàng +68%, lãi vay +7,3 tỷ; thuế vẫn 1,4 tỷ dù LNTT −16,9. 9T: LN −18,5 tỷ (9T/2025 +15,9).",
    "tac": [
-    "≥ 3,3 tỷ",
-    "giữ kịch bản cơ sở; dưới −4,9 tỷ nghiêng về kịch bản xấu"
+    "−21,8 tỷ",
+    "so với mô hình cũ cơ sở; dưới cả kịch bản xấu"
    ],
-   "theo_doi": "thuế/LNTT, biên gộp"
+   "theo_doi": "thuyết minh chi phí bán hàng"
+  },
+  {
+   "khi": "Cuối 1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Q4 thường cao nhất năm (Q4/2025 LN 3,7 tỷ). Mô hình cơ sở −6,2 tỷ, tốt 7,6. Chi phí bán hàng về ~7% doanh thu mới cho thấy Q3 là một lần.",
+   "tac": [
+    "≥ −6,2 tỷ",
+    "giữ kịch bản cơ sở; có lãi nghiêng về kịch bản tốt"
+   ],
+   "theo_doi": "chi phí bán hàng/doanh thu, lãi vay"
   },
   {
    "khi": "2H/2026–2027",
    "loai": "len",
    "tieu": "Benovas lên 80% công suất",
-   "ct": "DSC kỳ vọng nhà máy thiết bị y tế (chạy từ 3/2025) đạt 80% công suất nửa cuối 2026; kế hoạch mảng 2026: 188 tỷ doanh thu, 26 tỷ xuất khẩu.",
+   "ct": "DSC kỳ vọng nhà máy thiết bị y tế (chạy từ 3/2025) đạt 80% công suất nửa cuối 2026; kế hoạch mảng 2026: 188 tỷ doanh thu, 26 tỷ xuất khẩu. Q3 phần lỗ không trừ thuế vẫn −23,8 tỷ.",
    "tac": [
-    "+1,4 nghìn đ/cp",
+    "+1,3 nghìn đ/cp",
     "mỗi 10 tỷ lỗ của nhà máy mới thu hẹp"
    ],
    "theo_doi": "thuế/LNTT, biên gộp quý"
+  },
+  {
+   "khi": "Q2/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: kế hoạch, cổ tức, vốn cho Tây Ninh",
+   "ct": "Kế hoạch 2026 (LNTT 100,2 tỷ) 9T mới −7%; năm 2025 đạt 43%. Kế hoạch 2027 và phương án huy động vốn Tây Ninh (vay hay phát hành) quyết định mức pha loãng.",
+   "tac": "",
+   "theo_doi": "tài liệu ĐHĐCĐ, nghị quyết HĐQT"
   },
   {
    "khi": "2026–2027",
@@ -876,7 +903,7 @@
    "khi": "2026–2027",
    "loai": "len",
    "tieu": "Vỏ nang thực vật, kháng sinh chủ lực",
-   "ct": "Vỏ nang ~80% thị phần sản xuất trong nước, 11,6 tỷ nang/năm; chuyển sang nang thực vật để nâng biên; dược phẩm dồn vào Cefixim, Cefuroxim, kênh bệnh viện, xuất khẩu Myanmar (DSC).",
+   "ct": "Vỏ nang ~80% thị phần sản xuất trong nước, 11,6 tỷ nang/năm; chuyển sang nang thực vật để nâng biên; dược phẩm dồn vào Cefixim, Cefuroxim, kênh bệnh viện (DSC). Biên gộp 9T/2026 13,3%, chưa thấy cải thiện.",
    "tac": [
     "±1,5 nghìn đ/cp",
     "mỗi 1 điểm % biên gộp 2027"
@@ -898,35 +925,23 @@
   {
    "khi": "Liên tục",
    "loai": "xuong",
-   "muc": 2,
-   "tieu": "Lãi vay ăn gần 1/3 LN gộp",
-   "ct": "Lãi vay 6T/2026 28,3 tỷ (6T/2025 23,6 tỷ) = 33% LN gộp; nợ vay 760 tỷ, tiền và đầu tư ngắn hạn 557 tỷ.",
+   "muc": 3,
+   "tieu": "Lãi vay ăn một nửa LN gộp",
+   "ct": "Lãi vay Q3 20,3 tỷ = 51% LN gộp quý (9T 38%); nợ vay 960 tỷ (30/6: 760), tiền và đầu tư ngắn hạn 729 tỷ.",
    "tac": [
-    "−0,8 nghìn đ/cp",
+    "−1,0 nghìn đ/cp",
     "mỗi +1 điểm % lãi suất"
    ],
    "theo_doi": "chi phí lãi vay quý"
-  },
-  {
-   "khi": "Q4/2026",
-   "loai": "xuong",
-   "muc": 2,
-   "tieu": "Kế hoạch 2026 khó đạt",
-   "ct": "6T đạt 34% kế hoạch doanh thu (1.817 tỷ), 10% LNTT (100,2 tỷ). Tháng 4/2026 giá mất 34% sau khi kế hoạch công bố — giảm mạnh nhất HOSE (DNSE).",
-   "tac": [
-    "23%",
-    "LNTT 2026E cơ sở so với kế hoạch"
-   ],
-   "theo_doi": "KQKD Q3, Q4"
   },
   {
    "khi": "Liên tục",
    "loai": "xuong",
    "muc": 3,
    "tieu": "Giá đi trước lợi nhuận",
-   "ct": "Giá ×2,4 từ 8/2025; đỉnh 60.900 đ (02/04/2026) rồi −34% trong tháng 4; 16/09 tăng trần, thanh khoản cao nhất hơn một năm, khi LN 6T −98,5% (VnBusiness).",
+   "ct": "Giá ×2,2 từ 8/2025; đỉnh 60.900 đ (02/04/2026) rồi −34% trong tháng 4; 16/09 tăng trần khi LN 6T −98,5% (VnBusiness). LN 4 quý đến Q3/2026 −14,8 tỷ.",
    "tac": [
-    "20,2 nghìn đ/cp",
+    "19,7 nghìn đ/cp",
     "nếu P/B về 1,0 (đáy 2025)"
    ],
    "theo_doi": "P/B, thanh khoản"
@@ -935,9 +950,9 @@
    "khi": "Liên tục",
    "loai": "hai",
    "tieu": "F.I.T 58% và số dư phải thu",
-   "ct": "F.I.T nắm 58,05%. Phải thu ngắn hạn 662–848 tỷ (2023 – Q1/2026) còn 356 tỷ ở 30/6/2026, đầu tư ngắn hạn tăng lên 550 tỷ — chờ thuyết minh Q3.",
+   "ct": "F.I.T nắm 58,05%. Phải thu ngắn hạn 662–848 tỷ (2023 – Q1/2026) còn 356 tỷ ở 30/9/2026; đầu tư ngắn hạn 719 tỷ trong khi vay ngắn hạn 769 tỷ — chờ thuyết minh.",
    "tac": "",
-   "theo_doi": "thuyết minh phải thu, giao dịch bên liên quan"
+   "theo_doi": "thuyết minh phải thu, đầu tư ngắn hạn, bên liên quan"
   }
  ],
  "bieu_do": [
@@ -946,33 +961,33 @@
    "dv": "tỷ đồng",
    "kieu": "cot",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Doanh thu thuần",
      "v": [
-      236,
       510,
       340,
       323,
       286,
       373,
       324,
-      285
+      285,
+      339
      ],
      "mau": "c1"
     }
    ],
    "so_le": 0,
-   "y": "Q4 luôn cao nhất năm; 6T/2026 −8,1%, Q2 −11,7%. Doanh thu 4 quý 1.268 tỷ, bằng 70% kế hoạch 2026.",
+   "y": "Q4 luôn cao nhất năm; Q3/2026 +18,8% sau 6T −8,1%, 9T ngang cùng kỳ. Doanh thu 4 quý 1.321 tỷ, bằng 73% kế hoạch 2026.",
    "ng": "BCTC hợp nhất (VNDirect)"
   },
   {
@@ -987,7 +1002,7 @@
     "2023",
     "2024",
     "2025",
-    "6T/26"
+    "9T/26"
    ],
    "ss": [
     {
@@ -1000,7 +1015,7 @@
       18.3,
       15.7,
       15.5,
-      14.2
+      13.3
      ],
      "mau": "c1",
      "net": false
@@ -1015,14 +1030,14 @@
       12.2,
       11.1,
       11.0,
-      10.5
+      11.7
      ],
      "mau": "c4",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Khoảng cách biên gộp − chi phí từ 12,3 điểm % (2021) còn 4,4 (2025), 3,8 (6T/2026).",
+   "y": "Khoảng cách biên gộp − chi phí từ 12,3 điểm % (2021) còn 4,4 (2025), 1,6 (9T/2026); Q3/2026 âm 2,3 điểm.",
    "ng": "BCTC hợp nhất (VNDirect)"
   },
   {
@@ -1035,7 +1050,7 @@
     "2023",
     "2024",
     "2025",
-    "6T/26"
+    "9T/26"
    ],
    "ss": [
     {
@@ -1046,7 +1061,7 @@
       80,
       73,
       73,
-      47
+      54
      ],
      "mau": "c1"
     },
@@ -1058,13 +1073,13 @@
       -2,
       -4,
       -38,
-      -37
+      -61
      ],
      "mau": "c2"
     }
    ],
    "so_le": 0,
-   "y": "Phần lỗ (nhà máy mới, dự phòng) sâu dần: −10,9 tỷ ở Q1/2025, −20,2 tỷ ở Q2/2026. Số trên cột là LNTT.",
+   "y": "Phần lỗ (nhà máy mới, dự phòng) sâu dần: −10,9 tỷ ở Q1/2025, −20,2 tỷ ở Q2/2026, −23,8 tỷ ở Q3/2026. Số trên cột là LNTT.",
    "ng": "Ước từ thuế TNDN và LNTT hợp nhất (VNDirect), thuế suất 20%"
   },
   {
@@ -1072,33 +1087,33 @@
    "dv": "tỷ đồng",
    "kieu": "cot",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Chi phí lãi vay",
      "v": [
       6.0,
-      6.0,
       10.1,
       13.5,
       13.0,
       12.6,
       13.0,
-      15.3
+      15.3,
+      20.3
      ],
      "mau": "c1"
     }
    ],
    "so_le": 1,
-   "y": "Gấp đôi từ Q1/2025 dù nợ vay quanh 760 tỷ: Benovas vào vận hành, xây dựng dở dang giảm 288 tỷ — lãi vay thôi được vốn hóa.",
+   "y": "Gấp đôi từ Q1/2025 khi Benovas vào vận hành (xây dựng dở dang giảm 288 tỷ — lãi vay thôi được vốn hóa); Q3/2026 20,3 tỷ khi nợ vay tăng 200 tỷ lên 960 tỷ.",
    "ng": "BCTC hợp nhất (VNDirect)"
   }
  ],
@@ -1108,24 +1123,24 @@
    {
     "ten": "Doanh thu thuần",
     "kh": 1817,
-    "th": 609,
-    "ky": "6T",
-    "tg": 50,
+    "th": 949,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "Kế hoạch trình ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "Kế hoạch trình ĐHĐCĐ 2026 · BCTC Q3"
    },
    {
     "ten": "Lợi nhuận trước thuế",
     "kh": 100.2,
-    "th": 9.8,
-    "ky": "6T",
-    "tg": 50,
+    "th": -7.2,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "Kế hoạch trình ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "Kế hoạch trình ĐHĐCĐ 2026 · BCTC Q3"
    }
   ],
-  "y": "6T đạt 34% kế hoạch doanh thu, 10% LNTT; mô hình cơ sở cả năm 70% và 23%. Năm 2025 đạt 79% doanh thu, 43% LNTT kế hoạch (DSC). Không chia cổ tức 2025.",
-  "ng": "Stockbiz 2026 · DNSE · DSC 17/06"
+  "y": "9T đạt 52% kế hoạch doanh thu, LNTT âm 7,2 tỷ; mô hình cơ sở cả năm 74% doanh thu, LNTT −11,3 tỷ. Năm 2025 đạt 79% doanh thu, 43% LNTT kế hoạch (DSC). Không chia cổ tức 2025.",
+  "ng": "Stockbiz 2026 · DNSE · DSC 17/06 · BCTC Q3/2026"
  },
  "ctck": [
   {
@@ -1142,6 +1157,11 @@
  ],
  "ctck_chu": "Chỉ một CTCK theo dõi trong 8 tháng (DSC, 17/06/2026) — tham khảo; mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành. DSC dự phóng LNTT, không công bố LN cổ đông. Không có cổ tức tiền mặt nào sau ngày ra báo cáo.",
  "nguon": [
+  {
+   "ten": "BCTC hợp nhất Q3/2026 — số liệu VNDirect finfo (doanh thu, chi phí, lãi vay, nợ vay 30/9)",
+   "ngay": "30/10/2026",
+   "link": "https://finfo-api.vndirect.com.vn/v4/financial_statements?q=code:DCL~reportType:QUARTER~modelType:1,2,3~fiscalDate:2026-09-30&size=200"
+  },
   {
    "ten": "DSC — Tình hình kinh doanh không khả quan",
    "ngay": "17/06/2026",
@@ -1189,13 +1209,13 @@
    "y": [
     {
      "h": 1,
-     "t": "11 mã dược vốn hóa lớn nhất: trung vị ROE 15,6%, P/E 12,5, P/B 2,08; biên gộp DHG 48,8%, TRA 56,3%, DP3 66,2% so với DCL 13,9% (4 quý).",
-     "ng": "Bảng cùng ngành, BCTC Q2/2026 (VNDirect)"
+     "t": "11 mã dược vốn hóa lớn nhất: trung vị ROE 15,5%, P/E 13,4, P/B 2,02; biên gộp DHG 49,2%, TRA 56,3%, DP3 65,4% so với DCL 13,7% (4 quý).",
+     "ng": "Bảng cùng ngành 29/10 (BCTC Q3/2026 nếu đã có, VNDirect)"
     },
     {
      "h": 0,
-     "t": "LN 4 quý của nhóm phân hóa: DP3 +63%, OPC +19%, DHG +11%; DHT −45%, PMC −15%, VDP −12%, DCL −105% (về ≈ 0).",
-     "ng": "Bảng cùng ngành, BCTC Q2/2026 (VNDirect)"
+     "t": "LN 4 quý của nhóm phân hóa: DP3 +67%, OPC +19%, TRA +10%, DBD +8%; DHT −45%, PMC −9%, DHG −7%; DCL lỗ 14,8 tỷ (4 quý trước lãi).",
+     "ng": "Bảng cùng ngành 29/10 (BCTC Q3/2026 nếu đã có, VNDirect)"
     }
    ]
   },

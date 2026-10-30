@@ -582,12 +582,12 @@
   // Cau loi nhuan dang thac nuoc: tong dau -> tung buoc tang/giam -> tong cuoi (truc tu 0)
   function cauLn(p){
     var c = p.cau_ln; if (!c || !c.buoc) return '';
-    var dong = [{ ten: c.dau[0], tu: 0, den: c.dau[1], cls: 'tong', so: f(c.dau[1], 0) }], cum = c.dau[1], mx = c.dau[1];
-    c.buoc.forEach(function(z){ var a = cum; cum += z[1]; mx = Math.max(mx, cum);
+    var dong = [{ ten: c.dau[0], tu: Math.min(0, c.dau[1]), den: Math.max(0, c.dau[1]), cls: 'tong', so: f(c.dau[1], 0) }], cum = c.dau[1], mx = Math.max(0, c.dau[1]), mn = Math.min(0, c.dau[1]);   // LN am (DCL 30/10/2026): truc tu mn
+    c.buoc.forEach(function(z){ var a = cum; cum += z[1]; mx = Math.max(mx, cum); mn = Math.min(mn, cum);
       dong.push({ ten: z[0], tu: Math.min(a, cum), den: Math.max(a, cum), cls: z[1] >= 0 ? 'tang' : 'giam', so: (z[1] > 0 ? '+' : (z[1] < 0 ? '−' : '')) + f(Math.abs(z[1]), 0) }); });
-    var d = c.cuoi[1] - c.dau[1]; mx = Math.max(mx, c.cuoi[1]);
-    dong.push({ ten: c.cuoi[0], tu: 0, den: c.cuoi[1], cls: 'tong', so: f(c.cuoi[1], 0) + (c.dau[1] > 0 ? ' <em class="' + lop(d) + '">' + pct(d / c.dau[1] * 100, 1) + '</em>' : '') });   // diem dau am/0: % vo nghia
-    var X = function(v){ return v / (mx * 1.02) * 100; };
+    var d = c.cuoi[1] - c.dau[1]; mx = Math.max(mx, c.cuoi[1]); mn = Math.min(mn, c.cuoi[1]);
+    dong.push({ ten: c.cuoi[0], tu: Math.min(0, c.cuoi[1]), den: Math.max(0, c.cuoi[1]), cls: 'tong', so: f(c.cuoi[1], 0) + (c.dau[1] > 0 ? ' <em class="' + lop(d) + '">' + pct(d / c.dau[1] * 100, 1) + '</em>' : '') });   // diem dau am/0: % vo nghia
+    var X = function(v){ return (v - mn) / ((mx - mn) * 1.02 || 1) * 100; };
     return nhan1('LN cổ đông ' + esc(c.dau[0]) + ' → ' + esc(c.cuoi[0]), 'kịch bản cơ sở, tỷ đồng') + '<div class="hsWf">' + dong.map(function(r){
       return '<div class="hsWfR ' + r.cls + '" title="' + esc(r.ten) + ': ' + r.so.replace(/<[^>]+>/g, '') + '"><span class="hsWfT">' + esc(r.ten) + '</span><span class="hsWfB"><i style="left:' + X(r.tu).toFixed(2) + '%;width:' + Math.max(0.4, X(r.den) - X(r.tu)).toFixed(2) + '%"></i></span><b>' + r.so + '</b></div>'; }).join('')
       + '</div><div class="hsY">' + esc(c.y || '') + nguon(c.ng) + '</div>';
