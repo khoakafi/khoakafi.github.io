@@ -3,11 +3,11 @@
  "ma": "DHC",
  "ten": "Công ty Cổ phần Đông Hải Bến Tre",
  "nganh": "Giấy bao bì",
- "ky": "BCTC Q2/2026 · chưa có KQKD Q3/2026 (24/10)",
- "cap_nhat": "2026-10-24",
- "lan_sau": "sau BCTC Q3/2026",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 (cuối 1/2027)",
  "cp_trieu": 106.25,
- "cp_ng": "96.591.206 cp (CSI 20/03/2026) + cổ tức cổ phiếu 10% chốt quyền 19/06/2026 (phát hành hơn 9,6 triệu cp) = 106,25 triệu; vốn điều lệ Q2/2026 trên VNDirect chưa đổi (965,9 tỷ)",
+ "cp_ng": "96.591.206 cp (CSI 20/03/2026) + cổ tức cổ phiếu 10% chốt quyền 19/06/2026 (phát hành hơn 9,6 triệu cp) = 106,25 triệu; vốn điều lệ Q3/2026 trên VNDirect 1.062,5 tỷ khớp",
  "chia": [
   [
    "2026-06-19",
@@ -23,42 +23,42 @@
   [
    "2026-10-01",
    1000,
-   "cổ tức tiền 1.000 đ/cp, GDKHQ trong 1–23/10/2026 (suy từ giá điều chỉnh VNDirect; ngày chính xác chưa đối chiếu)"
+   "cổ tức tiền 1.000 đ/cp, GDKHQ trong 10/2026 (suy từ giá điều chỉnh VNDirect ×1,026; ngày chính xác chưa đối chiếu)"
   ]
  ],
  "tieu_de": {
-  "t": "Biên giấy kỷ lục nhờ Phong Khê đóng cửa đã gần hết vào giá; Giao Long 3 thì chưa",
+  "t": "Q3 xác nhận biên giấy đã qua đỉnh; Giao Long 3 chưa vào giá nhưng dư địa còn dưới 15%",
   "dk": "up_duoi:15",
-  "khac": "Biên giấy kỷ lục sẽ co lại năm 2027, nhưng giá đã xuống dưới giá trị lãi bình thường hóa"
+  "khac": "Biên giấy đã qua đỉnh từ Q3, nhưng giá đã xuống dưới giá trị lãi bình thường hóa"
  },
- "dong_mo": "Phong Khê đóng cửa và OCC tồn kho giá rẻ đẩy biên gộp Q2/2026 lên 25,2%, cao nhất 16 năm; LN 6T 315 tỷ = 90% kế hoạch năm. Năm 2027 ~820 nghìn tấn công suất mới, OCC và cước tăng kéo lãi gộp mỗi tấn giấy từ 2,72 về 2,25 triệu đ: LN 469 tỷ (−23%). P/E 9,5 cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 LN 149 tỷ (+50% YoY, −16% QoQ): hết OCC tồn kho rẻ, biên gộp lùi từ 25,2% về 20,8%; 9T đạt 133% kế hoạch năm. 2027 cung mới ~820 nghìn tấn, giá vốn giữ mức Q3 kéo lãi gộp mỗi tấn giấy từ 2,62 về 2,25 triệu đ: LN 469 tỷ (−21%). P/E 9,5 cho {gt} ({up}); cán cân {rr} lần.",
  "luan_diem": [
   {
-   "so": "25,2%",
-   "nhan": "biên gộp Q2/2026 — cao nhất 16 năm",
-   "tieu": "Lãi kỷ lục đến từ cú sốc cung, không từ sản lượng",
-   "t": "Phong Khê (Bắc Ninh) dừng 336/338 cơ sở vì môi trường, rút 1,5–2 triệu tấn (~20% công suất ngành): giá giấy cuộn Q1/2026 10.200 đ/kg (+13%) trong khi DHC còn dùng OCC tích trữ giá thấp từ cuối 2025. Sản lượng chỉ +2% vì Giao Long 1–2 đã chạy tối đa. Lãi gộp mỗi tấn giấy ~3,0 triệu đ ở Q2, gấp đôi 2025 (1,53); LN Q2 178 tỷ, gấp 2,1 lần cùng kỳ.",
-   "ng": "PHS 21/05 · BSC 20/05 · MAS 18/06 · BCTC Q2/2026 · mô hình"
+   "so": "20,8%",
+   "nhan": "biên gộp Q3/2026 (Q2: 25,2%)",
+   "tieu": "Q3 xác nhận: giá bán còn giữ, lợi thế OCC rẻ đã hết",
+   "t": "Phong Khê dừng 336/338 cơ sở (~20% công suất ngành) giữ giá giấy: Q3 ước ~11,5 nghìn đ/kg (+5% QoQ). Nhưng đây là quý đầu hết OCC tích trữ giá rẻ: giá vốn mỗi tấn ~8,96 triệu đ (+13%), lãi gộp/tấn ~2,56 (Q2 3,05; 2025 1,53). LN 149 tỷ, +50% YoY, thấp hơn 5% so với cơ sở cũ (157) — đỉnh biên là Q2.",
+   "ng": "BCTC Q3/2026 · TCBS 05/08 · PHS 21/05 · mô hình (tách ước 76,5 nghìn tấn)"
   },
   {
    "so": "820",
    "nhan": "nghìn tấn công suất giấy bao bì mới trong 2026",
-   "tieu": "2027: cung mới và giá vốn kéo biên về ~20%",
-   "t": "Cheng Loong Bình Dương (300), GĐT Nam Định (300), Miza Nghi Sơn (220 nghìn tấn) vào trong 2026 — xấp xỉ một năm tăng cầu (VPPA: +12%). Hết OCC tồn kho rẻ: OCC Q2–Q3 ~189 USD/tấn (+7%), cước Mỹ–châu Á +28–30%. Cơ sở 2027: giá giấy 10,3 nghìn đ/kg (−3%), giá vốn 8,05 triệu đ/tấn → lãi gộp 2,25 triệu đ/tấn, biên gộp 20,4%, LN 469 tỷ (−23%); BSC dự báo 472 tỷ.",
-   "ng": "PHS 21/05 · SSI 19/05 · BSC 20/05 · mô hình"
+   "tieu": "2027: cung mới và giá vốn mới kéo biên về ~19%",
+   "t": "Cheng Loong Bình Dương (300), GĐT Nam Định (300), Miza Nghi Sơn (220 nghìn tấn) vào trong 2026 — xấp xỉ một năm tăng cầu (VPPA: +12%). Giá vốn Q3 là mặt bằng OCC thị trường; cơ sở 2027 giữ mức đó (8,95 triệu đ/tấn), giá giấy 11,2 nghìn đ/kg (−2% so với H2/2026) → lãi gộp 2,25 triệu đ/tấn, biên gộp 19,0%, LN 469 tỷ (−21%); BSC dự báo 472 tỷ.",
+   "ng": "PHS 21/05 · BSC 20/05 · BCTC Q3/2026 · mô hình"
   },
   {
    "so": "2.250",
    "nhan": "tỷ đồng Giao Long 3, 390 nghìn tấn/năm",
    "tieu": "Giao Long 3 hơn gấp đôi công suất, nhưng trước hết là nợ vay",
-   "t": "Khởi công 30/12/2025, kraftliner 25–30%; suất đầu tư ~5,8 triệu đ/tấn công suất, thấp ~2,6 lần dự án tham chiếu (PHS). 30/6/2026 dở dang mới 195 tỷ, tiền ròng 339 tỷ: ~2.050 tỷ còn lại rơi vào H2/2026–2027, mô hình nợ vay ròng ~1,3 nghìn tỷ cuối 2027. Chạy 90% với lãi gộp/tấn như 2025: thêm ~180 tỷ LN/năm sau khấu hao, lãi vay — ngoài 3 kịch bản.",
-   "ng": "BSC 20/05 · SSI 19/05 · PHS 21/05 · BCTC Q2/2026 · mô hình"
+   "t": "Khởi công 30/12/2025, kraftliner 25–30%; suất đầu tư ~5,8 triệu đ/tấn công suất, thấp ~2,6 lần dự án tham chiếu (PHS). 30/9/2026 dở dang 367 tỷ (+171 trong Q3), tiền ròng 399 tỷ: ~1.880 tỷ còn lại rơi vào Q4/2026–2027, mô hình nợ vay ròng ~1,1 nghìn tỷ cuối 2027. Chạy 90% với lãi gộp/tấn như 2025: thêm ~190 tỷ LN/năm sau khấu hao, lãi vay — ngoài 3 kịch bản.",
+   "ng": "BSC 20/05 · SSI 19/05 · PHS 21/05 · BCTC Q3/2026 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/E 9,5 lần lãi 2027 bình thường hóa: {up_so}",
-   "t": "Giá 23/10 trả 6,7 lần LN 2026E (đỉnh) và 8,7 lần LN 2027E cơ sở. P/E 9,5 — giữa p25 (8,9) và trung vị (10,7) từ 2015 — × LN 2027E 469 tỷ: {gt} ({up}), P/B ngầm định 1,56 lần vốn chủ cuối 2027E. Xấu 28,5 (lãi gộp/tấn 1,4 triệu đ, P/E 12,5 — mức trên của năm LN đáy 2024, P/B ≈ đáy lịch sử), tốt 48,6 (giữ biên 2026, P/E 8).",
+   "t": "Giá 30/10 trả 6,6 lần LN 2026E (đỉnh) và 8,3 lần LN 2027E cơ sở. P/E 9,5 — giữa p25 (8,9) và trung vị (10,7) từ 2015 — × LN 2027E 469 tỷ: {gt} ({up}), P/B ngầm định 1,56 lần vốn chủ cuối 2027E. Xấu 28,5 (lãi gộp/tấn 1,4 triệu đ, P/E 12,5 — mức trên của năm LN đáy 2024, P/B ≈ đáy lịch sử), tốt 45,0 (giữ giá Q3, P/E 8).",
    "ng": "mô hình · giá, BCTC VNDirect"
   }
  ],
@@ -70,19 +70,19 @@
   ],
   "ln": [
    393,
-   610,
+   592,
    469
   ],
   "ln_truoc": 242,
   "eps": [
    3699,
-   5741,
+   5572,
    4414
   ],
   "bv": [
    20812,
-   24525,
-   26941
+   24362,
+   26778
   ],
   "co_tuc_nam": 1909,
   "them": [
@@ -90,7 +90,7 @@
     "ten": "Lãi gộp mỗi tấn giấy (triệu đ)",
     "v": [
      1.53,
-     2.72,
+     2.62,
      2.25
     ],
     "d": 2
@@ -99,8 +99,8 @@
     "ten": "Biên gộp",
     "v": [
      16.2,
-     23.4,
-     20.4
+     22.0,
+     19.0
     ],
     "d": 1,
     "pt": 1
@@ -109,8 +109,8 @@
     "ten": "ROE",
     "v": [
      18.7,
-     25.3,
-     17.2
+     24.7,
+     17.3
     ],
     "d": 1,
     "pt": 1
@@ -131,7 +131,7 @@
     "mau": "c1",
     "v": [
      468,
-     827,
+     797,
      688
     ]
    },
@@ -151,7 +151,7 @@
  },
  "so_sanh": {
   "chi_so": "P/E 4 quý",
-  "chi_so_kv": "P/E 4 quý (giá 23/10)",
+  "chi_so_kv": "P/E 4 quý (giá 30/10)",
   "nhom": "6 mã cùng ngành có lãi, vốn hóa lớn nhất",
   "kv": [
    [
@@ -180,10 +180,10 @@
    ]
   ],
   "tv": 17.6,
-  "moi_cp": 5172,
+  "moi_cp": 5638,
   "max": 40,
-  "y": "DHC tính trên EPS 4 quý 5.172 đ (106,25 triệu cp). Nhóm niêm yết nhỏ, LN mỏng (ROE 2–12% trừ CAP) nên trung vị không dùng làm neo; DHC ROE 23,8%, nợ vay 0,43 lần vốn chủ so với MZG 2,45 và HHP 2,34.",
-  "ng": "BCTC VNDirect, giá 23/10/2026 (bảng cùng ngành; bỏ HAP, VID lỗ)"
+  "y": "DHC tính trên EPS 4 quý 5.638 đ (106,25 triệu cp). Nhóm niêm yết nhỏ, LN mỏng (ROE 2–12% trừ CAP) nên trung vị không dùng làm neo; DHC ROE 24,9%, nợ vay 0,42 lần vốn chủ so với MZG 2,45 và HHP 2,34.",
+  "ng": "BCTC VNDirect, giá 30/10/2026 (bảng cùng ngành; DHC đến Q3, mã khác đến Q2; bỏ HAP, VID lỗ)"
  },
  "mo_hinh": {
   "tieu": "Mô hình: sản lượng × chênh lệch giá giấy – giá vốn",
@@ -210,8 +210,8 @@
     "ten": "Giá bán bình quân (nghìn đ/kg)",
     "v": [
      9.27,
-     10.65,
-     10.3
+     11.0,
+     11.2
     ],
     "d": 2
    },
@@ -219,8 +219,8 @@
     "ten": "Giá vốn mỗi tấn (triệu đ)",
     "v": [
      7.74,
-     7.93,
-     8.05
+     8.39,
+     8.95
     ],
     "d": 2
    },
@@ -228,7 +228,7 @@
     "ten": "Lãi gộp mỗi tấn (triệu đ)",
     "v": [
      1.53,
-     2.72,
+     2.62,
      2.25
     ],
     "d": 2,
@@ -238,7 +238,7 @@
     "ten": "Lãi gộp giấy cuộn",
     "v": [
      468,
-     827,
+     797,
      688
     ],
     "tang": 1
@@ -259,8 +259,8 @@
     "ten": "Doanh thu thuần",
     "v": [
      3631,
-     4080,
-     4032
+     4188,
+     4307
     ],
     "tang": 1
    },
@@ -268,8 +268,8 @@
     "ten": "Biên lợi nhuận gộp (%)",
     "v": [
      16.2,
-     23.4,
-     20.4
+     22.0,
+     19.0
     ],
     "d": 1
    },
@@ -277,7 +277,7 @@
     "ten": "Chi phí bán hàng + QLDN",
     "v": [
      164,
-     207,
+     208,
      200
     ]
    },
@@ -285,7 +285,7 @@
     "ten": "Tài chính ròng",
     "v": [
      26,
-     8,
+     16,
      -40
     ]
    },
@@ -293,7 +293,7 @@
     "ten": "Lợi nhuận trước thuế",
     "v": [
      457,
-     759,
+     736,
      586
     ],
     "tang": 1
@@ -302,7 +302,7 @@
     "ten": "LN cổ đông",
     "v": [
      393,
-     610,
+     592,
      469
     ],
     "dam": 1,
@@ -312,7 +312,7 @@
     "ten": "EPS (đ)",
     "v": [
      3699,
-     5741,
+     5572,
      4414
     ],
     "eps": 1
@@ -321,18 +321,18 @@
     "ten": "Nợ vay ròng cuối kỳ (âm = tiền ròng)",
     "v": [
      -254,
-     489,
-     1272
+     -42,
+     1120
     ]
    }
   ],
-  "ghi": "Giấy cuộn bán ngoài theo BSC (2025 suy từ 2026F: giấy +8%, bao bì +9%). Bao bì & khác giả định biên gộp 15%; giấy là phần còn lại của lãi gộp hợp nhất. 2026E = 6T thực tế (Q2 tách ước: 76,5 nghìn tấn, bao bì 207 tỷ) + H2 ước tính. Giao Long 3: chi 2.250 tỷ, lãi vay, khấu hao vốn hóa đến khi vận hành."
+  "ghi": "Giấy cuộn bán ngoài theo BSC (2025 suy từ 2026F: giấy +8%, bao bì +9%). Bao bì & khác giả định biên gộp 15%; giấy là phần còn lại của lãi gộp hợp nhất. 2026E = 9T thực tế (Q2, Q3 tách ước: 76,5 nghìn tấn/quý, bao bì 207, 212 tỷ) + Q4 ước tính. Giao Long 3: chi 2.250 tỷ, lãi vay, khấu hao vốn hóa đến khi vận hành."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   610
+   592
   ],
   "cuoi": [
    "2027E",
@@ -341,11 +341,11 @@
   "buoc": [
    [
     "Giá bán giấy",
-    -84
+    48
    ],
    [
     "Giá vốn mỗi tấn",
-    -29
+    -138
    ],
    [
     "Sản lượng",
@@ -357,48 +357,48 @@
    ],
    [
     "Chi phí, tài chính",
-    -36
+    -41
    ]
   ],
-  "y": "Giá giấy 10,65 → 10,3 nghìn đ/kg lấy đi ~84 tỷ, giá vốn 7,93 → 8,05 triệu đ/tấn thêm 29 tỷ; lãi tiền gửi mất dần khi tiền chuyển sang Giao Long 3.",
+  "y": "Giá vốn 8,39 → 8,95 triệu đ/tấn (cả năm ở mức Q3, không còn OCC rẻ của Q1–Q2) lấy đi 138 tỷ; giá giấy 11,00 → 11,2 nghìn đ/kg chỉ bù 48 tỷ; lãi tiền gửi mất dần khi tiền chuyển sang Giao Long 3.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Giá bán giấy Q3 · Q4/2026 (nghìn đ/kg)",
+   "ten": "Giá bán giấy Q4/2026 (nghìn đ/kg)",
    "v": [
-    "10,5 · 10,2",
-    "10,8 · 10,6",
-    "11,0 · 10,9"
+    "11,0",
+    "11,3",
+    "11,5"
    ],
-   "ly_do": "Q1: 10,2 (+13%, BSC); Q2 ước ~11,0. TCBS (8/2026): biên gộp nhiều khả năng đã đỉnh; ~820 nghìn tấn công suất mới vào trong 2026 (PHS)"
+   "ly_do": "Q1 10,2 (BSC); Q2 ước ~11,0; Q3 ước ~11,5 (TCBS: giá bán +3–5%). Agriseco 01/10: giá giấy vẫn ở mặt bằng cao; ~820 nghìn tấn công suất mới vào dần (PHS)"
   },
   {
-   "ten": "Giá vốn mỗi tấn giấy Q3 · Q4/2026 (triệu đ)",
+   "ten": "Giá vốn mỗi tấn giấy Q4/2026 (triệu đ)",
    "v": [
-    "8,15 · 8,25",
-    "8,05 · 8,10",
-    "7,95 · 8,00"
+    "9,15",
+    "9,00",
+    "8,90"
    ],
-   "ly_do": "Q1: 7,64 nhờ OCC tồn kho rẻ, dùng đến 6–7/2026 (BSC, MAS); 2025: 7,74. OCC Q2–Q3 ~189 USD/tấn, +7% (VPPA qua PHS); cước +28–30% (SSI)"
+   "ly_do": "Q3 ước 8,96: quý đầu hết OCC tồn kho rẻ (TCBS: hết 7/2026); Q1 7,64, Q2 ~7,93. OCC nhập +10–15 USD/tấn, cước châu Á – châu Âu +40% (TCBS)"
   },
   {
    "ten": "Giá bán giấy 2027 (nghìn đ/kg)",
    "v": [
-    "9,7",
-    "10,3",
-    "10,8"
+    "10,6",
+    "11,2",
+    "11,5"
    ],
-   "ly_do": "2025: 9,27; 2026E 10,65. Xấu: cung mới + Phong Khê quay lại; tốt: cầu +10–12%/năm (VPPA) hấp thụ cung mới, giữ mặt bằng 2026. BSC 2027F: +2%"
+   "ly_do": "H2/2026E ~11,4; 2026E 11,00; 2025 9,27. Xấu: cung mới + Phong Khê quay lại; cơ sở −2% so với H2; tốt: cầu +10–12%/năm (VPPA) hấp thụ cung mới, giữ mức Q3"
   },
   {
    "ten": "Giá vốn mỗi tấn giấy 2027 (triệu đ)",
    "v": [
-    "8,30",
-    "8,05",
-    "7,90"
+    "9,20",
+    "8,95",
+    "8,80"
    ],
-   "ly_do": "OCC ~68% giá thành, 70–80% nhập khẩu bằng USD (PHS). 2026E 7,93; xấu: OCC, cước tăng tiếp (+7% so với 2025)"
+   "ly_do": "Q3/2026 ~8,96 — quý đầu theo giá OCC thị trường (2025: 7,74). Cơ sở giữ mức Q3; xấu +3% (OCC, cước); tốt −2% khi cước hạ. OCC ~68% giá thành (PHS)"
   },
   {
    "ten": "Sản lượng giấy bán ngoài 2027 (nghìn tấn)",
@@ -425,7 +425,7 @@
     "−40",
     "−30"
    ],
-   "ly_do": "Lãi vay vốn lưu động ~1.085 tỷ × 6,4% (Q2: 17,2 tỷ/quý); tiền gửi giảm khi chi ~2.050 tỷ cho Giao Long 3. 2025: +26"
+   "ly_do": "Vay vốn lưu động ~1.075 tỷ × 6,4% (Q3 lãi vay 19,0 tỷ); tiền gửi giảm khi chi ~1.880 tỷ cho Giao Long 3. 2025: +26; 9T/2026: +16"
   },
   {
    "ten": "P/E trên LN 2027E",
@@ -440,24 +440,24 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 551,
+   "ln26": 565,
    "ln27": 242,
    "gia": 28.5,
-   "mo_ta": "Cung mới + Phong Khê quay lại: giá giấy 9,7 nghìn đ/kg, giá vốn 8,30 triệu đ/tấn → lãi gộp 1,4 triệu đ/tấn, biên gộp 14,6%; P/E 12,5"
+   "mo_ta": "Cung mới + Phong Khê quay lại: giá giấy 10,6 nghìn đ/kg, giá vốn 9,20 triệu đ/tấn → lãi gộp 1,4 triệu đ/tấn, biên gộp 13,6%; P/E 12,5"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 610,
+   "ln26": 592,
    "ln27": 469,
    "gia": 41.9,
-   "mo_ta": "Giá giấy 10,3 nghìn đ/kg (−3%), giá vốn 8,05: lãi gộp 2,25 triệu đ/tấn, biên gộp 20,4%; P/E 9,5"
+   "mo_ta": "Giá giấy 11,2 nghìn đ/kg (−2% so với H2/2026), giá vốn giữ mức Q3 8,95: lãi gộp 2,25 triệu đ/tấn, biên gộp 19,0%; P/E 9,5"
   },
   {
    "ten": "Tốt",
-   "ln26": 652,
-   "ln27": 646,
-   "gia": 48.6,
-   "mo_ta": "Cầu hấp thụ cung mới, giữ giá 2026: 10,8 nghìn đ/kg, giá vốn 7,90 → lãi gộp 2,9 triệu đ/tấn, biên gộp 24,3%; P/E 8"
+   "ln26": 611,
+   "ln27": 597,
+   "gia": 45.0,
+   "mo_ta": "Cầu hấp thụ cung mới, giữ giá Q3: 11,5 nghìn đ/kg, giá vốn 8,80 → lãi gộp 2,7 triệu đ/tấn, biên gộp 21,7%; P/E 8"
   }
  ],
  "dinh_gia": {
@@ -472,7 +472,7 @@
     "x": [
      242,
      469,
-     646
+     597
     ],
     "boi": [
      12.5,
@@ -485,19 +485,19 @@
     "gt": [
      3025,
      4456,
-     5168
+     4776
     ]
    }
   ],
   "von": [
    3025,
    4456,
-   5168
+   4776
   ],
   "gia": [
    28.5,
    41.9,
-   48.6
+   45.0
   ]
  },
  "nhay": [
@@ -815,7 +815,7 @@
    7.7,
    7.1,
    7.7,
-   7.5
+   7.0
   ],
   "p10": 7.7,
   "p25": 8.9,
@@ -826,10 +826,10 @@
   ],
   "nay": [
    "2026-10",
-   7.5
+   7.0
   ],
   "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Ba kịch bản dùng P/E 12,5 · 9,5 · 8 trên LN 2027E; P/B ngầm định cuối 2027E 1,18 · 1,56 · 1,68 (P/B từ 2015: thấp nhất 1,15, trung vị 1,79). Số cổ phiếu 106,25 triệu từ 6/2026."
+  "dung": "Ba kịch bản dùng P/E 12,5 · 9,5 · 8 trên LN 2027E; P/B ngầm định cuối 2027E 1,17 · 1,56 · 1,60 (P/B từ 2015: thấp nhất 1,15, trung vị 1,79). Số cổ phiếu 106,25 triệu từ 6/2026."
  },
  "theo_doi": [
   {
@@ -846,45 +846,56 @@
   {
    "quy": "Q4/2026",
    "fd": "2026-12-31",
-   "dt": 1028,
+   "dt": 1081,
    "ln": [
-    104,
-    138,
-    162
+    100,
+    128,
+    146
    ],
    "ck": 135
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    551,
-    610,
-    652
+    565,
+    592,
+    611
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "Cuối 10/2026",
+   "khi": "10/2026",
    "loai": "hai",
-   "tieu": "KQKD Q3/2026 — quý đầu hết OCC giá rẻ",
-   "ct": "Cơ sở: giá giấy 10,8 nghìn đ/kg, giá vốn 8,05 triệu đ/tấn, biên gộp ~23% → LN 157 tỷ (+57% so với 99,6 tỷ cùng kỳ).",
+   "tieu": "Đã ra: KQKD Q3/2026 — LN 149 tỷ, biên gộp 20,8%",
+   "ct": "Doanh thu 1.093 tỷ (mô hình cũ 1.038) nhờ giá bán, nhưng giá vốn/tấn ~8,96 triệu đ vượt giả định 8,05: LN giữa kịch bản xấu (132) và cơ sở (157). Mô hình nâng giá vốn 2027 lên mức Q3.",
    "tac": [
-    "≥ 170 tỷ",
-    "nghiêng về kịch bản tốt; dưới 130 tỷ: kịch bản xấu"
+    "−5%",
+    "so với cơ sở cũ 157 tỷ; +50% YoY — biên đã qua đỉnh Q2"
+   ],
+   "theo_doi": "giá vốn mỗi tấn giấy"
+  },
+  {
+   "khi": "Cuối 1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026 — LN có thể giảm lần đầu sau 7 quý tăng",
+   "ct": "Cơ sở: giá giấy 11,3 nghìn đ/kg, giá vốn 9,00 triệu đ/tấn, biên gộp ~19% → LN 128 tỷ (−5% so với 135 tỷ cùng kỳ).",
+   "tac": [
+    "≥ 150 tỷ",
+    "nghiêng về kịch bản tốt; dưới 100 tỷ: kịch bản xấu"
    ],
    "theo_doi": "biên gộp, giá bán giấy/kg"
   },
   {
-   "khi": "Q4/2026",
-   "loai": "len",
-   "tieu": "Nâng kế hoạch 2026",
-   "ct": "Kế hoạch LNST 350 tỷ (−11%) đặt vì lo cước, OCC; 6T đã đạt 90%. Tổng Giám đốc nói có thể nâng kế hoạch nếu 6 tháng tích cực (SSI). Mô hình cơ sở cả năm 610 tỷ.",
+   "khi": "Q2/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: kế hoạch lợi nhuận, cổ tức",
+   "ct": "9T/2026 đã đạt 133% kế hoạch LNST 350 tỷ (đặt thấp vì lo cước, OCC). Kế hoạch 2027 cho thấy ban lãnh đạo nhìn biên giấy ra sao khi cung mới vào và Giao Long 3 sắp chạy.",
    "tac": [
-    "610 tỷ",
-    "LN 2026E cơ sở = 1,74 lần kế hoạch"
+    "469 tỷ",
+    "LN 2027E cơ sở (−21% so với 2026E 592 tỷ)"
    ],
-   "theo_doi": "nghị quyết điều chỉnh kế hoạch"
+   "theo_doi": "kế hoạch LN 2027, cổ tức tiền"
   },
   {
    "khi": "Q4/2026–2027",
@@ -915,7 +926,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "OCC, cước vận tải, tỷ giá",
-   "ct": "OCC ~68% giá thành, 70–80% nhập khẩu bằng USD (PHS); cước Mỹ–châu Á +28–30% từ đầu năm (SSI). Mô hình 2027: giá vốn 8,05 triệu đ/tấn giấy (2025: 7,74).",
+   "ct": "OCC ~68% giá thành, 70–80% nhập khẩu bằng USD (PHS); cước Mỹ–châu Á +28–30% từ đầu năm (SSI). Mô hình 2027: giá vốn 8,95 triệu đ/tấn giấy (2025: 7,74).",
    "tac": [
     "±4,4 nghìn đ/cp",
     "mỗi ±0,2 triệu đ/tấn giá vốn giấy 2027"
@@ -934,13 +945,13 @@
    "theo_doi": "tiêu thụ giấy bao bì (VPPA)"
   },
   {
-   "khi": "H2/2026–2027",
+   "khi": "Q4/2026–2027",
    "loai": "xuong",
    "muc": 2,
    "tieu": "Chi tiêu vốn Giao Long 3",
-   "ct": "Còn ~2.050 tỷ phải chi; tiền ròng 339 tỷ (30/6) thành nợ vay ròng ~1,3 nghìn tỷ cuối 2027E. Khi vận hành, khấu hao (PHS: 326 tỷ năm 2028; 2025: 111) và lãi vay vào chi phí.",
+   "ct": "Còn ~1.880 tỷ phải chi; tiền ròng 399 tỷ (30/9) thành nợ vay ròng ~1,1 nghìn tỷ cuối 2027E. Khi vận hành, khấu hao (PHS: 326 tỷ năm 2028; 2025: 111) và lãi vay vào chi phí.",
    "tac": [
-    "~300 tỷ/năm",
+    "~290 tỷ/năm",
     "khấu hao tăng thêm + lãi vay khi Giao Long 3 vận hành (ước tính)"
    ],
    "theo_doi": "vay dài hạn, dở dang"
@@ -951,7 +962,7 @@
    "tieu": "Giao Long 3 vận hành",
    "ct": "390 nghìn tấn/năm, kraftliner 25–30%; kế hoạch lắp máy Q3/2026, chạy thử 6/2027. SSI dự kiến vận hành 5/2027, MAS 9/2027, BSC từ 2H2028.",
    "tac": [
-    "+180 tỷ LN/năm",
+    "+190 tỷ LN/năm",
     "chạy 90% với lãi gộp/tấn như 2025, sau khấu hao, lãi vay — chưa vào định giá"
    ],
    "theo_doi": "tiến độ lắp máy, chạy thử"
@@ -963,7 +974,7 @@
    "ct": "6/2026 thưởng cổ phiếu 10% kèm 1.000 đ/cp tiền; 10/2026 thêm 1.000 đ/cp. Mô hình giữ 2.000 đ/cp năm 2027 dù Giao Long 3 cần tiền.",
    "tac": [
     "~1.909 đ/cp",
-    "cổ tức tiền 2026 quy đổi sau thưởng ≈ 4,9% giá 23/10"
+    "cổ tức tiền 2026 quy đổi sau thưởng ≈ 5,2% giá 30/10"
    ],
    "theo_doi": "nghị quyết cổ tức"
   }
@@ -1019,13 +1030,13 @@
     },
     {
      "h": 1,
-     "t": "Tích hợp dọc: giấy tự sản xuất đáp ứng 50–60% nhu cầu của mảng bao bì carton; ROE 4 quý 23,8%, cao nhất nhóm giấy niêm yết trừ CAP (38%).",
+     "t": "Tích hợp dọc: giấy tự sản xuất đáp ứng 50–60% nhu cầu của mảng bao bì carton; ROE 4 quý 24,9%, cao nhất nhóm giấy niêm yết trừ CAP (38%).",
      "ng": "PHS 21/05 · BCTC"
     },
     {
      "h": -1,
-     "t": "Giao Long 3 (2.250 tỷ) ≈ 89% vốn chủ 30/6/2026; tiền ròng 339 tỷ chuyển thành nợ vay ròng ~1,3 nghìn tỷ cuối 2027E.",
-     "ng": "BCTC Q2/2026 · mô hình"
+     "t": "Giao Long 3 (2.250 tỷ) ≈ 88% vốn chủ 30/9/2026; tiền ròng 399 tỷ chuyển thành nợ vay ròng ~1,1 nghìn tỷ cuối 2027E.",
+     "ng": "BCTC Q3/2026 · mô hình"
     }
    ]
   }
@@ -1046,13 +1057,13 @@
      "+13%"
     ],
     [
-     "Doanh thu Q1/2026",
-     "765 tỷ",
-     "+15%"
+     "Biên gộp Q3/2026",
+     "20,8%",
+     "Q2 25,2%"
     ],
     [
-     "Biên gộp 6T/2026",
-     "24,2%",
+     "Biên gộp 9T/2026",
+     "23,0%",
      "hợp nhất"
     ]
    ],
@@ -1118,8 +1129,8 @@
      "SSI, BSC 5/2026"
     ],
     [
-     "Dở dang 30/6/2026",
-     "195 tỷ",
+     "Dở dang 30/9/2026",
+     "367 tỷ",
      "BCTC"
     ],
     [
@@ -1158,7 +1169,7 @@
     "2023",
     "2024",
     "2025",
-    "6T/26"
+    "9T/26"
    ],
    "ss": [
     {
@@ -1175,13 +1186,13 @@
       15.5,
       11.8,
       16.2,
-      24.2
+      23.0
      ],
      "mau": "c1",
      "net": false
     }
    ],
-   "y": "6T/2026 24,2% — trên mọi năm từ 2015; vùng 2018–2020 là 19–22%, đáy 11,8% (2024).",
+   "y": "9T/2026 23,0% — trên mọi năm từ 2015 (Q3 riêng 20,8%); vùng 2018–2020 là 19–22%, đáy 11,8% (2024).",
    "ng": "BCTC DHC (VNDirect)"
   },
   {
@@ -1189,7 +1200,6 @@
    "kieu": "cot",
    "dv": "tỷ đồng",
    "nhan": [
-    "Q3/23",
     "Q4/23",
     "Q1/24",
     "Q2/24",
@@ -1200,13 +1210,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Lãi gộp",
      "v": [
-      107,
       112,
       104,
       110,
@@ -1217,14 +1227,14 @@
       146,
       191,
       223,
-      264
+      264,
+      227
      ],
      "mau": "c4"
     },
     {
      "ten": "LN cổ đông",
      "v": [
-      56,
       75,
       56,
       60,
@@ -1235,13 +1245,14 @@
       100,
       135,
       137,
-      178
+      178,
+      149
      ],
      "mau": "c1"
     }
    ],
    "so_le": 0,
-   "y": "Q2/2026 LN 178 tỷ — kỷ lục, gấp 2,1 lần cùng kỳ; lãi gộp 264 tỷ.",
+   "y": "Q2/2026 LN 178 tỷ là đỉnh; Q3 149 tỷ (−16% QoQ) khi lãi gộp lùi từ 264 về 227 tỷ.",
    "ng": "BCTC DHC (VNDirect)"
   },
   {
@@ -1291,47 +1302,47 @@
    "kieu": "cot",
    "dv": "tỷ đồng",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Tiền ròng",
      "v": [
-      -105,
       137,
       98,
       184,
       304,
       254,
       296,
-      339
+      339,
+      399
      ],
      "mau": "c3"
     },
     {
      "ten": "Dở dang dài hạn",
      "v": [
-      20,
       17,
       2,
       5,
       14,
       52,
       88,
-      195
+      195,
+      367
      ],
      "mau": "c1"
     }
    ],
    "so_le": 0,
-   "y": "Dở dang 195 tỷ (30/6/2026) trên tổng mức 2.250 tỷ; mô hình nợ vay ròng ~1,3 nghìn tỷ cuối 2027E.",
+   "y": "Dở dang 367 tỷ (30/9/2026) trên tổng mức 2.250 tỷ; mô hình nợ vay ròng ~1,1 nghìn tỷ cuối 2027E.",
    "ng": "BCTC DHC (VNDirect): tiền + đầu tư ngắn hạn − vay; tài sản dở dang dài hạn"
   }
  ],
@@ -1341,23 +1352,23 @@
    {
     "ten": "Doanh thu",
     "kh": 3800,
-    "th": 2013,
-    "ky": "6T",
-    "tg": 50,
+    "th": 3107,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 (BSC, SSI) · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 (BSC, SSI) · BCTC Q3"
    },
    {
     "ten": "Lợi nhuận sau thuế",
     "kh": 350,
-    "th": 315,
-    "ky": "6T",
-    "tg": 50,
+    "th": 464,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 (BSC, SSI) · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 (BSC, SSI) · BCTC Q3"
    }
   ],
-  "y": "6 tháng đạt 90% kế hoạch LNST và 53% doanh thu. Kế hoạch (−11%) đặt khi lo cước, OCC, lãi suất; BSC: 6 năm qua DHC có 3 năm vượt 120–190% kế hoạch. Mô hình cơ sở cả năm 610 tỷ.",
+  "y": "9 tháng đạt 133% kế hoạch LNST (vượt cả năm từ Q3) và 82% doanh thu. Kế hoạch (−11%) đặt khi lo cước, OCC, lãi suất. Mô hình cơ sở cả năm 592 tỷ = 1,69 lần kế hoạch.",
   "ng": ""
  },
  "ctck": [
@@ -1445,6 +1456,11 @@
    "ten": "TCBS — Cập nhật KQKD Q2/2026 (biên gộp 25,2%, giá vốn +4,8%)",
    "ngay": "05/08/2026",
    "link": "https://www.tcbs.com.vn/wp-content/uploads/2026/08/20260805_DHC_Bao_cao_cap_nhat_KQKD_Q2_2026.pdf"
+  },
+  {
+   "ten": "Agriseco — Danh mục khuyến nghị tháng 10/2026 (DHC: LN Q3 kỳ vọng +30% YoY, giá giấy ở mặt bằng cao)",
+   "ngay": "01/10/2026",
+   "link": "https://finance.vietstock.vn/downloadedoc/22370"
   },
   {
    "ten": "Báo Pháp luật — DHC phát hành hơn 9,6 triệu cổ phiếu trả cổ tức, vốn lên hơn 1.061 tỷ",
