@@ -3,11 +3,11 @@
  "ma": "VCG",
  "ten": "Tổng CTCP Xuất nhập khẩu và Xây dựng Việt Nam (Vinaconex)",
  "nganh": "Xây dựng hạ tầng, bất động sản",
- "ky": "BCTC Q2/2026 · bán niên soát xét · FPTS 30/06/2026",
- "cap_nhat": "2026-10-21",
- "lan_sau": "sau BCTC Q3/2026",
+ "ky": "BCTC Q3/2026 · giá 29/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 (1–2/2027)",
  "cp_trieu": 698.18,
- "cp_ng": "646,47 triệu cp (vốn điều lệ 6.464,7 tỷ, BCTC Q2/2026) + 51,71 triệu cp cổ tức 8% (GDKHQ 14/7/2026) = 698,18 triệu; vốn điều lệ 6.981,9 tỷ. Vốn hóa ÷ giá trên bảng giá VNDirect (677,9 triệu) chưa cập nhật",
+ "cp_ng": "698,18 triệu cp = vốn điều lệ 6.981,9 tỷ (BCTC Q3/2026), gồm 51,71 triệu cp cổ tức 8% (GDKHQ 14/7/2026). Vốn hóa ÷ giá trên bảng giá VNDirect (~648 triệu) chưa cập nhật",
  "chia": [
   [
    "2026-07-14",
@@ -22,45 +22,45 @@
   ]
  ],
  "tieu_de": {
-  "t": "Hết lãi Cát Bà, ROE ~6%: P/B gần đáy lịch sử vẫn chưa rẻ",
+  "t": "Q3 lãi gấp 2,3 lần dự phóng, nhưng ROE 2027E ~6%: giá chưa rẻ",
   "dk": "up_duoi:5",
-  "khac": "Hết lãi Cát Bà, ROE ~6% — giá đã xuống dưới giá trị tài sản điều chỉnh"
+  "khac": "Q3 lãi gấp 2,3 lần dự phóng; giá đã dưới giá trị tài sản điều chỉnh"
  },
- "dong_mo": "Bỏ lãi bán Cát Bà, LN 2025 ~1,2 nghìn tỷ; 2026E 871 tỷ, 2027E 659 tỷ khi Chợ Mơ đã bàn giao hết, xây lắp lãi gộp ~3% và lãi tiền gửi, cho vay giảm. Tiền ròng 3,1 nghìn tỷ cộng phần kinh doanh 0,8 lần sổ sách cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "9T/2026 lãi 878 tỷ (85% kế hoạch); 2026E 1.023 tỷ, 2027E 672 tỷ khi Chợ Mơ đã bàn giao hết, lãi tiền gửi, cho vay giảm và biên xây lắp chưa chắc giữ được mức Q3. Tiền ròng 3,1 nghìn tỷ cộng phần kinh doanh 0,8 lần sổ sách cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
    "so": "~6%",
    "nhan": "ROE 2027E khi hết lãi một lần",
    "tieu": "Hết lãi bán Cát Bà, ROE về ~6%",
-   "t": "LN cổ đông 2025 3.665 tỷ (kiểm toán) có ~2,5 nghìn tỷ lãi bán Cát Bà Amatina sau thuế; bỏ ra còn ~1,2 nghìn tỷ. 6T/2026 lãi 572 tỷ nhờ 677 tỷ doanh thu BĐS (540 tỷ phần cuối Chợ Mơ) và 273 tỷ tài chính ròng — cả hai đều cạn dần. Cơ sở 2026E 871 tỷ (84% kế hoạch), 2027E 659 tỷ: ROE 5,6%, ngang các năm yếu 2021, 2023.",
-   "ng": "BCTC kiểm toán 2025 (FPTS, MBS) · MAS 24/03 · BCTC Q2/2026 · mô hình"
+   "t": "LN cổ đông 2025 3.665 tỷ (kiểm toán) có ~2,5 nghìn tỷ lãi bán Cát Bà Amatina sau thuế; bỏ ra còn ~1,2 nghìn tỷ. 9T/2026 lãi 878 tỷ nhờ Chợ Mơ (6T, 540 tỷ doanh thu) và 363 tỷ tài chính ròng — cả hai đều cạn dần. Cơ sở 2026E 1.023 tỷ (99% kế hoạch), 2027E 672 tỷ: ROE 5,6%, ngang các năm yếu 2021, 2023.",
+   "ng": "BCTC kiểm toán 2025 (FPTS, MBS) · MAS 24/03 · BCTC Q3/2026 · mô hình"
   },
   {
-   "so": "2,9%",
-   "nhan": "biên gộp xây lắp Q1/2026 (cùng kỳ 4,4%)",
-   "tieu": "Xây lắp làm 72% doanh thu, lãi gộp chỉ bằng nửa chi phí chung",
-   "t": "Xây lắp 6T/2026 5,2 nghìn tỷ, ~72% doanh thu, lãi gộp ước ~154 tỷ — chỉ bằng nửa chi phí bán hàng, quản lý (313 tỷ). Vật liệu, diesel tăng đột biến từ 3/2026; ban lãnh đạo đặt mục tiêu xây lắp 2026 hòa vốn. Backlog 16,75 nghìn tỷ (4/2026), Q1 chỉ ký mới 160 tỷ sau vụ án đấu thầu. Cơ sở 2027: 9,0 nghìn tỷ, biên 3,0%.",
-   "ng": "MBS 15/06 · KBSV 28/04 · BCTC bán niên · FPTS 30/06 · mô hình"
+   "so": "306 tỷ",
+   "nhan": "LN cổ đông Q3/2026 (dự phóng cũ 135)",
+   "tieu": "Q3 vượt dự phóng nhờ lãi gộp — chưa rõ một lần hay xu hướng",
+   "t": "Doanh thu Q3 −26% nhưng lãi gộp 439 tỷ, biên 13,3% (Q2 9,2%). BCTC quý không tách mảng; nếu nước – điện (mùa thủy điện) và BĐS như ước, xây lắp Q3 đạt biên ~8% so với 2,9% ở Q1 — có thể là quyết toán, điều chỉnh giá. Q3 bác bỏ kịch bản xây lắp hòa vốn; mô hình nâng biên 2027 lên 3,5% (từ 3%), chưa coi ~8% là mức mới.",
+   "ng": "BCTC Q3/2026 (VNDirect) · MBS 15/06 · KBSV 28/04 · mô hình"
   },
   {
-   "so": "34%",
-   "nhan": "LNTT 6T/2026 là tài chính ròng",
-   "tieu": "Một phần ba lợi nhuận là lãi tiền — gắn với khoản cho vay 5,46 nghìn tỷ",
-   "t": "Tài chính ròng 6T/2026 273 tỷ; lãi tiền gửi và cho vay 428 tỷ. Sau khi thu tiền bán Cát Bà, VCG cho 3 pháp nhân vay > 5,46 nghìn tỷ (lãi 9,6–12,5%, đáo hạn Q2–Q4/2026, thế chấp cổ phiếu một ngân hàng niêm yết — FPTS), bằng 48% vốn chủ. Thu về rồi rót vào KCN Đông Anh (6,3 nghìn tỷ), Capital One: tài chính ròng 2027E còn 220 tỷ.",
-   "ng": "BCTC bán niên (cafeland, DNSE) · FPTS 30/06 · KBSV 28/04 · mô hình"
+   "so": "29%",
+   "nhan": "LNTT 9T/2026 là tài chính ròng",
+   "tieu": "Gần một phần ba lợi nhuận là lãi tiền — gắn với khoản cho vay 5,46 nghìn tỷ",
+   "t": "Tài chính ròng 9T/2026 363 tỷ, riêng Q3 90 tỷ (Q2 164). Sau khi thu tiền bán Cát Bà, VCG cho 3 pháp nhân vay > 5,46 nghìn tỷ (lãi 9,6–12,5%, đáo hạn Q2–Q4/2026, thế chấp cổ phiếu một ngân hàng niêm yết — FPTS), bằng 47% vốn chủ. Thu về rồi rót vào KCN Đông Anh (6,3 nghìn tỷ), Capital One: tài chính ròng 2027E còn 220 tỷ.",
+   "ng": "BCTC Q3/2026 (VNDirect) · FPTS 30/06 · KBSV 28/04 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/B gần đáy lịch sử vẫn chưa rẻ: giá trị cơ sở {up_so}",
    "dk": "up_duoi:5",
-   "t": "Tiền ròng 30/6 sau cổ tức 3,1 nghìn tỷ (~4,5 nghìn đ/cp) tính đủ. Phần còn lại 8,5 nghìn tỷ vốn chủ — xây lắp, nước, điện, giáo dục, quỹ đất BĐS và KCN — ROE 2027E ~5,7%, nhận P/B 0,8 ≈ trung vị 8 nhà thầu (0,81; ROE trung vị 5,7%). Ra {gt} ≈ P/B 0,85 cả công ty. Xấu 9,5 (mất 20% khoản cho vay, P/B 0,55), tốt 19,1.",
-   "ng": "BCTC Q2/2026 (VNDirect) · bảng giá 20/10/2026 · mô hình",
+   "t": "Tiền ròng 30/9 3,1 nghìn tỷ (~4,4 nghìn đ/cp) tính đủ. Phần còn lại 8,8 nghìn tỷ vốn chủ — xây lắp, nước, điện, giáo dục, quỹ đất BĐS và KCN — ROE 2027E ~5,7%, nhận P/B 0,8 ≈ trung vị 8 nhà thầu (0,79; ROE trung vị 5,7%). Ra {gt} ≈ P/B 0,85 cả công ty. Xấu 9,6 (mất 20% khoản cho vay, P/B 0,55), tốt 19,2.",
+   "ng": "BCTC Q3/2026 (VNDirect) · bảng giá 29/10/2026 · mô hình",
    "khac": {
     "so": "{gt_so}",
     "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
     "tieu": "Tiền ròng cộng 0,8 lần sổ sách phần kinh doanh: {up_so}",
-    "t": "Tiền ròng 30/6 sau cổ tức 3,1 nghìn tỷ (~4,5 nghìn đ/cp) tính đủ. Phần còn lại 8,5 nghìn tỷ vốn chủ — xây lắp, nước, điện, giáo dục, quỹ đất BĐS và KCN — ROE 2027E ~5,7%, nhận P/B 0,8 ≈ trung vị 8 nhà thầu (0,81; ROE trung vị 5,7%). Ra {gt} ≈ P/B 0,85 cả công ty. Xấu 9,5 (mất 20% khoản cho vay, P/B 0,55), tốt 19,1."
+    "t": "Tiền ròng 30/9 3,1 nghìn tỷ (~4,4 nghìn đ/cp) tính đủ. Phần còn lại 8,8 nghìn tỷ vốn chủ — xây lắp, nước, điện, giáo dục, quỹ đất BĐS và KCN — ROE 2027E ~5,7%, nhận P/B 0,8 ≈ trung vị 8 nhà thầu (0,79; ROE trung vị 5,7%). Ra {gt} ≈ P/B 0,85 cả công ty. Xấu 9,6 (mất 20% khoản cho vay, P/B 0,55), tốt 19,2."
    }
   }
  ],
@@ -72,19 +72,19 @@
   ],
   "ln": [
    3665,
-   871,
-   659
+   1023,
+   672
   ],
   "ln_truoc": 927,
   "eps": [
    5249,
-   1248,
-   944
+   1465,
+   963
   ],
   "bv": [
    16620,
-   16749,
-   16893
+   16966,
+   17129
   ],
   "co_tuc_nam": 741,
   "them": [
@@ -92,15 +92,15 @@
     "ten": "LN không gồm lãi bán Cát Bà (tỷ)",
     "v": [
      1206,
-     871,
-     659
+     1023,
+     672
     ]
    },
    {
     "ten": "ROE không gồm lãi bán Cát Bà",
     "v": [
      12.2,
-     7.5,
+     8.7,
      5.6
     ],
     "d": 1,
@@ -123,8 +123,8 @@
     "mau": "c1",
     "v": [
      426,
-     307,
-     270
+     487,
+     315
     ]
    },
    {
@@ -141,7 +141,7 @@
     "mau": "c3",
     "v": [
      921,
-     615,
+     635,
      648
     ]
    },
@@ -150,7 +150,7 @@
     "mau": "c4",
     "v": [
      3326,
-     483,
+     448,
      220
     ]
    }
@@ -160,49 +160,49 @@
  },
  "so_sanh": {
   "tieu": "P/B so với nhà thầu xây dựng, hạ tầng niêm yết",
-  "phu": "giá hôm nay; VCG: vốn chủ cổ đông 30/6/2026 (đã trừ cổ tức tiền), 698,18 triệu cp",
+  "phu": "giá hôm nay; VCG: vốn chủ cổ đông 30/9/2026, 698,18 triệu cp",
   "chi_so": "P/B",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "chi_so_kv": "P/B (giá 29/10)",
   "nhom": "8 nhà thầu xây dựng, hạ tầng niêm yết",
   "kv": [
    [
     "HHV",
-    0.47
+    0.45
    ],
    [
     "LCG",
-    0.51
+    0.5
    ],
    [
     "FCN",
-    0.64
+    0.62
    ],
    [
     "CTD",
-    0.73
+    0.74
    ],
    [
     "CII",
-    0.9
+    0.85
    ],
    [
     "DPG",
-    1.11
+    1.09
    ],
    [
     "PC1",
-    1.14
+    1.12
    ],
    [
     "HUT",
-    1.18
+    1.17
    ]
   ],
-  "tv": 0.81,
-  "moi_cp": 16320,
+  "tv": 0.79,
+  "moi_cp": 16758,
   "max": 2,
-  "y": "Nhóm ở 0,47–1,18 lần, trung vị 0,81 với ROE 4 quý trung vị 5,7%; trên 1 lần là PC1, DPG (ROE > 12%) và HUT. VCG ROE 4 quý 36% là nhờ lãi bán Cát Bà; ROE 2027E ~6% ngang trung vị nhóm — P/B ~0,8 là mức tương xứng.",
-  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ BCTC Q2/2026 (bảng giá VNDirect 20/10/2026, BCTC VNDirect); ROE = LNST cổ đông 4 quý ÷ vốn chủ"
+  "y": "Nhóm ở 0,45–1,17 lần, trung vị 0,79 với ROE 4 quý trung vị 5,7%; trên 1 lần là PC1, DPG (ROE > 12%) và HUT. VCG ROE 4 quý ~10% còn nhờ Chợ Mơ và lãi tiền; ROE 2027E ~6% ngang trung vị nhóm — P/B ~0,8 là mức tương xứng.",
+  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ quý BCTC gần nhất (bảng giá VNDirect 29/10/2026, BCTC VNDirect); ROE = LNST cổ đông 4 quý ÷ vốn chủ"
  },
  "mo_hinh": {
   "tieu": "Mô hình: lãi gộp ba mảng − chi phí + tài chính ròng",
@@ -219,7 +219,7 @@
     "ten": "Xây lắp",
     "v": [
      11469,
-     10525,
+     10752,
      9000
     ],
     "tang": 1
@@ -237,7 +237,7 @@
     "ten": "Nước, điện, giáo dục, khác",
     "v": [
      3021,
-     2658,
+     2657,
      2700
     ],
     "tang": 1
@@ -246,7 +246,7 @@
     "ten": "Tổng doanh thu thuần",
     "v": [
      16071,
-     14110,
+     14336,
      12600
     ],
     "dam": 1,
@@ -259,8 +259,8 @@
     "ten": "Xây lắp",
     "v": [
      3.7,
-     2.9,
-     3.0
+     4.5,
+     3.5
     ],
     "d": 1
    },
@@ -277,7 +277,7 @@
     "ten": "Nước, điện, giáo dục, khác",
     "v": [
      30.5,
-     23.1,
+     23.9,
      24.0
     ],
     "d": 1
@@ -289,8 +289,8 @@
     "ten": "Lãi HĐKD cốt lõi (sau bán hàng, quản lý)",
     "v": [
      1595,
-     670,
-     688
+     893,
+     733
     ],
     "tang": 1
    },
@@ -298,7 +298,7 @@
     "ten": "Tài chính ròng (lãi tiền gửi, cho vay − lãi vay)",
     "v": [
      252,
-     483,
+     448,
      220
     ],
     "tang": 1
@@ -315,8 +315,8 @@
     "ten": "Lợi nhuận trước thuế",
     "v": [
      4876,
-     1223,
-     948
+     1450,
+     1003
     ],
     "tang": 1
    },
@@ -324,8 +324,8 @@
     "ten": "LN cổ đông",
     "v": [
      3665,
-     871,
-     659
+     1023,
+     672
     ],
     "dam": 1,
     "tang": 1
@@ -334,8 +334,8 @@
     "ten": "EPS (đ)",
     "v": [
      5249,
-     1248,
-     944
+     1465,
+     963
     ],
     "eps": 1
    },
@@ -343,28 +343,28 @@
     "ten": "BVPS (đ)",
     "v": [
      16620,
-     16749,
-     16893
+     16966,
+     17129
     ],
     "ps": 1
    }
   ],
-  "ghi": "2025: BCTC kiểm toán, mảng theo MBS 15/06; liên doanh, khác −45 tỷ. 6T/2026 (BCTC quý): xây lắp 5.225 tỷ theo BCTC bán niên × biên Q1 2,9%; BĐS = Q1 437 tỷ (MBS) + 240 tỷ Chợ Mơ Q2; mảng còn lại = phần dư. 2026E = 6 tháng thực tế + 6 tháng ước tính; thuế 21%."
+  "ghi": "2025: BCTC kiểm toán, mảng theo MBS 15/06; liên doanh, khác −45 tỷ. 6T/2026: xây lắp 5.225 tỷ (BCTC bán niên) × biên Q1 2,9%; BĐS = Q1 437 tỷ (MBS) + 240 tỷ Chợ Mơ Q2; còn lại = nước, điện, giáo dục. Q3 (BCTC quý không tách mảng, ước): nước, điện… 669 tỷ biên 27%, BĐS 100 tỷ, xây lắp = phần dư. 2026E = 9 tháng thực tế + Q4 ước tính; thuế 21%."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   871
+   1023
   ],
   "cuoi": [
    "2027E",
-   659
+   672
   ],
   "buoc": [
    [
     "Lãi gộp xây lắp",
-    -37
+    -172
    ],
    [
     "Lãi gộp BĐS",
@@ -372,26 +372,26 @@
    ],
    [
     "Lãi gộp nước, điện, giáo dục",
-    33
+    13
    ],
    [
     "Chi phí bán hàng, quản lý",
-    3
+    -21
    ],
    [
     "Tài chính ròng",
-    -263
+    -228
    ],
    [
     "Liên doanh, khác",
-    -31
+    -60
    ],
    [
     "Thuế, cổ đông thiểu số",
-    63
+    97
    ]
   ],
-  "y": "LN 2027E −24% chủ yếu vì tài chính ròng −263 tỷ: khoản cho vay đáo hạn, tiền rót vào KCN Đông Anh, Capital One. Lãi gộp ba mảng gần đi ngang (Vera Móng Cái thay Chợ Mơ). CTCK dự báo 1,2–1,35 nghìn tỷ (MBS, FPTS) với biên BĐS 52–63%.",
+  "y": "LN 2027E −34%: tài chính ròng −228 tỷ (cho vay đáo hạn, tiền rót KCN Đông Anh, Capital One) và lãi gộp xây lắp −172 tỷ (doanh thu −16%, biên về 3,5% sau Q3 cao). BĐS: Vera Móng Cái thay Chợ Mơ. CTCK dự báo 1,2–1,35 nghìn tỷ (MBS, FPTS) với biên BĐS 52–63%.",
   "ng": "mô hình · MBS 15/06 · FPTS 30/06"
  },
  "gia_dinh": [
@@ -402,16 +402,16 @@
     "9,0",
     "11,0"
    ],
-   "ly_do": "2026E 10,5; backlog 16,75 (4/2026), ký mới Q1 160 tỷ; FPTS −23%, MBS +3% (12,4). Tốt: gói nền, cầu đường sắt"
+   "ly_do": "2026E 10,8 (9T ước 7,8); backlog 16,75 (4/2026); FPTS −23%, MBS +3% (12,4). Tốt: đường sắt"
   },
   {
    "ten": "Biên gộp xây lắp 2027",
    "v": [
     "2,0%",
-    "3,0%",
-    "4,0%"
+    "3,5%",
+    "4,5%"
    ],
-   "ly_do": "2025 3,7%; Q1/2026 2,9% (cùng kỳ 4,4%); ban lãnh đạo: hòa vốn 2026; FPTS kỳ vọng hồi phục từ 2027 khi giá vật liệu ổn định"
+   "ly_do": "2025 3,7%; Q1/2026 2,9%; Q3 ước ~8% (không tách mảng) → cơ sở 3,0 → 3,5%, tốt 4,0 → 4,5%; FPTS: hồi phục từ 2027"
   },
   {
    "ten": "BĐS 2027: doanh thu (nghìn tỷ) · biên",
@@ -438,7 +438,7 @@
     "680",
     "660"
    ],
-   "ly_do": "2025: 676 (kiểm toán); 6T/2026 313; quản lý Q4 thường cao (2025: 240)"
+   "ly_do": "2025: 676 (kiểm toán); 9T/2026 439; quản lý Q4 thường cao (2025: 240)"
   },
   {
    "ten": "Tài chính ròng 2027 (tỷ)",
@@ -447,7 +447,7 @@
     "220",
     "320"
    ],
-   "ly_do": "6T/2026 273: lãi tiền gửi, cho vay 428 − lãi vay 228; cho vay đáo hạn 2026, tiền rót KCN Đông Anh, Capital One"
+   "ly_do": "9T/2026 363 (Q3 90); lãi vay 9T 341; cho vay đáo hạn 2026, tiền rót KCN Đông Anh, Capital One"
   },
   {
    "ten": "Khoản cho vay 5,46 nghìn tỷ thu hồi",
@@ -465,30 +465,30 @@
     "0,80",
     "1,15"
    ],
-   "ly_do": "8 nhà thầu: 0,47–1,18, trung vị 0,81 (ROE 5,7%); HHV, LCG ~0,5; PC1, DPG ~1,1; VCG thấp 25% từ 2015: 1,20"
+   "ly_do": "8 nhà thầu: 0,45–1,17, trung vị 0,79 (ROE 5,7%); HHV, LCG ~0,5; PC1, DPG ~1,1; VCG thấp 25% từ 2015: 1,20"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 628,
-   "ln27": 256,
-   "gia": 9.5,
+   "ln26": 861,
+   "ln27": 234,
+   "gia": 9.6,
    "mo_ta": "Xây lắp 2027 8 nghìn tỷ, biên 2,0%; BĐS 0,5 nghìn tỷ; mất 20% khoản cho vay; P/B phần kinh doanh 0,55 (≈ HHV, LCG)"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 871,
-   "ln27": 659,
-   "gia": 14.3,
-   "mo_ta": "Xây lắp 9 nghìn tỷ, biên 3,0%; BĐS 0,9 nghìn tỷ (Vera); cho vay thu đủ; P/B 0,8 ≈ trung vị nhà thầu"
+   "ln26": 1023,
+   "ln27": 672,
+   "gia": 14.4,
+   "mo_ta": "Xây lắp 9 nghìn tỷ, biên 3,5%; BĐS 0,9 nghìn tỷ (Vera); cho vay thu đủ; P/B 0,8 ≈ trung vị nhà thầu"
   },
   {
    "ten": "Tốt",
-   "ln26": 1158,
-   "ln27": 1223,
-   "gia": 19.1,
-   "mo_ta": "Xây lắp 11 nghìn tỷ (gói đường sắt), biên 4,0%; BĐS 1,4 nghìn tỷ; P/B 1,15 (≈ PC1, DPG)"
+   "ln26": 1238,
+   "ln27": 1252,
+   "gia": 19.2,
+   "mo_ta": "Xây lắp 11 nghìn tỷ (gói đường sắt), biên 4,5%; BĐS 1,4 nghìn tỷ; P/B 1,15 (≈ PC1, DPG)"
   }
  ],
  "dinh_gia": {
@@ -501,32 +501,32 @@
     "ten": "Tiền ròng (gồm khoản cho vay 5,46 nghìn tỷ)",
     "mau": "c3",
     "x": [
-     2055,
-     3147,
-     3147
+     1970,
+     3062,
+     3062
     ],
     "boi": [
      1.0,
      1.0,
      1.0
     ],
-    "x_ten": "Tiền + đầu tư ngắn hạn − nợ vay 30/6/2026, sau cổ tức 8/2026; xấu: mất 20% khoản cho vay",
+    "x_ten": "Tiền + đầu tư ngắn hạn − nợ vay 30/9/2026 (cổ tức tiền đã trả 14/8); xấu: mất 20% khoản cho vay",
     "boi_ten": "hệ số",
     "boi_d": 1,
     "sh": 1,
     "gt": [
-     2055,
-     3147,
-     3147
+     1970,
+     3062,
+     3062
     ]
    },
    {
     "ten": "Phần kinh doanh, quỹ đất (sổ sách)",
     "mau": "c1",
     "x": [
-     8303,
-     8546,
-     8833
+     8621,
+     8783,
+     8998
     ],
     "boi": [
      0.55,
@@ -537,28 +537,28 @@
     "boi_ten": "P/B",
     "sh": 1,
     "gt": [
-     4567,
-     6837,
-     10158
+     4742,
+     7026,
+     10348
     ]
    }
   ],
   "von": [
-   6622,
-   9984,
-   13305
+   6712,
+   10088,
+   13410
   ],
   "gia": [
-   9.5,
-   14.3,
-   19.1
+   9.6,
+   14.4,
+   19.2
   ]
  },
  "nhay": [
   [
    "P/B phần kinh doanh, quỹ đất ±0,1 lần",
    null,
-   1.2
+   1.3
   ],
   [
    "Khoản cho vay 5,46 nghìn tỷ: mỗi 10% không thu hồi",
@@ -571,7 +571,7 @@
    0.7
   ],
   [
-   "Vốn chủ cuối 2026E ±500 tỷ (LN quý 3–4, điều chỉnh kiểm toán)",
+   "Vốn chủ cuối 2026E ±500 tỷ (LN Q4, điều chỉnh kiểm toán)",
    null,
    0.6
   ]
@@ -864,7 +864,7 @@
    0.93,
    0.98,
    0.84,
-   0.92
+   0.93
   ],
   "p10": 0.98,
   "p25": 1.2,
@@ -875,10 +875,10 @@
   ],
   "nay": [
    "2026-10",
-   0.92
+   0.93
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Ba kịch bản ≈ P/B 0,64 · 0,85 · 1,11 cả công ty (vốn chủ cuối 2026E); thấp 10% từ 2015 là 0,98. Vùng cũ đi với ROE trung vị ~10% (2016–2024); 2027E ~6%. Cơ sở ≈ 15,2 lần LN 2027E."
+  "dung": "Ba kịch bản ≈ P/B 0,63 · 0,85 · 1,11 cả công ty (vốn chủ cuối 2026E); thấp 10% từ 2015 là 0,98. Vùng cũ đi với ROE trung vị ~10% (2016–2024); 2027E ~6%. Cơ sở ≈ 15,0 lần LN 2027E."
  },
  "theo_doi": [
   {
@@ -889,51 +889,74 @@
     25,
     135,
     264
-   ]
+   ],
+   "ck": 3282
   },
   {
    "quy": "Q4/2026",
    "fd": "2026-12-31",
-   "dt": 3779,
+   "dt": 3800,
    "ln": [
-    31,
-    165,
-    322
+    -17,
+    145,
+    360
    ],
    "ck": 244
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    628,
-    871,
-    1158
+    861,
+    1023,
+    1238
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "10–11/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Cơ sở LN 135 tỷ; cùng kỳ 3.282 tỷ có lãi bán Cát Bà nên LN sẽ giảm ~96%. Xem biên xây lắp và doanh thu tài chính (lãi khoản cho vay).",
+   "khi": "10/2026",
+   "loai": "len",
+   "tieu": "Đã ra: KQKD Q3/2026 lãi 306 tỷ",
+   "ct": "Gấp 2,3 lần dự phóng cơ sở 135 tỷ: lãi gộp 439 tỷ (biên 13,3%) dù doanh thu 3.296 tỷ −26%; tài chính ròng chỉ 90 tỷ. 9T 878 tỷ = 85% kế hoạch.",
    "tac": [
-    "135 tỷ",
-    "LN Q3 cơ sở; dưới 80 tỷ nghiêng về xấu"
+    "1.023 tỷ",
+    "LN 2026E cơ sở (dự phóng cũ 871 tỷ)"
    ],
-   "theo_doi": "biên gộp xây lắp, lãi tài chính"
+   "theo_doi": "thuyết minh mảng, khoản cho vay"
   },
   {
    "khi": "Q4/2026",
    "loai": "xuong",
    "muc": 3,
    "tieu": "Khoản cho vay 5,46 nghìn tỷ đáo hạn",
-   "ct": "Cho 3 pháp nhân vay ngay sau khi thu tiền bán Cát Bà; họ dùng mua lại trái phiếu trước hạn (FPTS). Bằng 48% vốn chủ; gia hạn hay thu về quyết định phần lớn tiền ròng.",
+   "ct": "Cho 3 pháp nhân vay ngay sau khi thu tiền bán Cát Bà; họ dùng mua lại trái phiếu trước hạn (FPTS). Bằng 47% vốn chủ; gia hạn hay thu về quyết định phần lớn tiền ròng.",
    "tac": [
     "−0,8 nghìn đ/cp",
     "mỗi 10% không thu hồi"
    ],
    "theo_doi": "thuyết minh BCTC Q3, Q4"
+  },
+  {
+   "khi": "1–2/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Cơ sở LN 145 tỷ (cùng kỳ 244); Q4 thường có nghiệm thu, quyết toán. Biên xây lắp giữ được trên 4% là dấu hiệu Q3 không phải một lần.",
+   "tac": [
+    "145 tỷ",
+    "LN Q4 cơ sở; xấu −17, tốt 360 tỷ"
+   ],
+   "theo_doi": "biên gộp, tài chính ròng"
+  },
+  {
+   "khi": "4/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: kế hoạch, cổ tức",
+   "ct": "Kế hoạch 2027 cho biết ban lãnh đạo nhìn biên xây lắp và nguồn việc mới thế nào sau vụ án đấu thầu; cổ tức 2024, 2025 đều 8% tiền (2025 thêm 8% cổ phiếu).",
+   "tac": [
+    "672 tỷ",
+    "LN 2027E cơ sở để so với kế hoạch"
+   ],
+   "theo_doi": "kế hoạch LN, cổ tức 2026"
   },
   {
    "khi": "2026–2027",
@@ -965,8 +988,8 @@
    "tieu": "Gói thầu đường sắt",
    "ct": "Đường sắt chiếm > 1,2 triệu tỷ nhu cầu vốn đầu tư công 2026–2030; nhà thầu trong nước làm nền, cầu, hầm (FPTS). VCG đã đào tạo 34 kỹ sư đường sắt tốc độ cao (KBSV).",
    "tac": [
-    "+134 tỷ LN",
-    "nếu xây lắp 2027 đạt 11 nghìn tỷ, biên 4%"
+    "+142 tỷ LN",
+    "nếu xây lắp 2027 đạt 11 nghìn tỷ, biên 4,5%"
    ],
    "theo_doi": "kết quả đấu thầu"
   },
@@ -1113,27 +1136,27 @@
    "kieu": "duong",
    "dv": "nghìn tỷ",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Tiền + đầu tư ngắn hạn",
      "v": [
-      2.5,
       4.3,
       3.4,
       3.9,
       5.3,
       5.2,
       9.9,
-      9.4
+      9.4,
+      9.1
      ],
      "mau": "c1",
      "net": false
@@ -1141,14 +1164,14 @@
     {
      "ten": "Phải thu ngắn hạn (gồm cho vay)",
      "v": [
-      6.7,
       5.9,
       6.1,
       6.0,
       12.2,
       12.3,
       6.8,
-      5.6
+      5.6,
+      5.3
      ],
      "mau": "c3",
      "net": false
@@ -1156,21 +1179,21 @@
     {
      "ten": "Nợ vay",
      "v": [
-      8.9,
       8.8,
       8.8,
       9.5,
       7.1,
       7.4,
       7.1,
-      5.7
+      5.7,
+      6.1
      ],
      "mau": "c2",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Q3/2025 phải thu ngắn hạn +6,1 nghìn tỷ (cho vay sau khi bán Cát Bà); Q1/2026 phải thu −5,5, đầu tư ngắn hạn +4,9 nghìn tỷ — BCTC tóm tắt không tách được thu hồi hay phân loại lại.",
+   "y": "Q3/2025 phải thu ngắn hạn +6,1 nghìn tỷ (cho vay sau khi bán Cát Bà); Q1/2026 phải thu −5,5, đầu tư ngắn hạn +4,9 nghìn tỷ — BCTC tóm tắt không tách được thu hồi hay phân loại lại. 30/9: tiền ròng 3,1 nghìn tỷ sau trả cổ tức, nợ vay 6,1.",
    "ng": "BCTC VCG (VNDirect) · FPTS 30/06"
   },
   {
@@ -1178,7 +1201,6 @@
    "kieu": "cot",
    "dv": "tỷ đồng",
    "nhan": [
-    "Q1/24",
     "Q2/24",
     "Q3/24",
     "Q4/24",
@@ -1187,13 +1209,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Lãi gộp",
      "v": [
-      754,
       318,
       391,
       517,
@@ -1202,14 +1224,14 @@
       611,
       539,
       432,
-      350
+      350,
+      439
      ],
      "mau": "c1"
     },
     {
      "ten": "Tài chính ròng (trừ lãi bán Cát Bà)",
      "v": [
-      -64,
       -50,
       -59,
       60,
@@ -1218,13 +1240,14 @@
       -27,
       182,
       108,
-      164
+      164,
+      90
      ],
      "mau": "c2"
     }
    ],
    "so_le": 0,
-   "y": "Từ Q4/2025 tài chính ròng 108–182 tỷ/quý nhờ lãi tiền gửi, cho vay; lãi gộp Q2/2026 350 tỷ (−38% cùng kỳ).",
+   "y": "Tài chính ròng từ Q4/2025 90–182 tỷ/quý, Q3/2026 thấp nhất; lãi gộp Q3/2026 439 tỷ (−28% cùng kỳ) cao hơn Q1, Q2 dù không còn Chợ Mơ.",
    "ng": "BCTC VCG (VNDirect); lãi bán Cát Bà Q3/2025 3.074 tỷ (MAS)"
   }
  ],
@@ -1234,23 +1257,23 @@
    {
     "ten": "Tổng doanh thu (thuần + tài chính)",
     "kh": 15423,
-    "th": 7749,
-    "ky": "6T",
-    "tg": 50,
+    "th": 11264,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ 4/2026 (KBSV, ACBS) · BCTC"
    },
    {
     "ten": "LNST cổ đông công ty mẹ",
     "kh": 1037,
-    "th": 572,
-    "ky": "6T",
-    "tg": 50,
+    "th": 878,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ 4/2026 · BCTC quý"
    }
   ],
-  "y": "LN 6T đạt 55% kế hoạch nhờ phần cuối Chợ Mơ và lãi tài chính; 6 tháng cuối không còn Chợ Mơ — cơ sở cả năm 871 tỷ (84% kế hoạch). Soát xét bán niên: LNST 6T 596 tỷ (BCTC quý 644).",
+  "y": "LN 9T đạt 85% kế hoạch (6T 55%); doanh thu chậm hơn (73%). Q4 cơ sở 145 tỷ → cả năm 1.023 tỷ (99% kế hoạch). Soát xét bán niên: LNST 6T 596 tỷ (BCTC quý 644) — số quý có thể bị kiểm toán điều chỉnh.",
   "ng": ""
  },
  "ctck": [
@@ -1476,9 +1499,9 @@
      "biên 3,7%"
     ],
     [
-     "6T/2026",
-     "5.225 tỷ",
-     "~72% doanh thu"
+     "Biên gộp Q3/2026",
+     "~8%",
+     "ước, BCTC quý không tách mảng"
     ],
     [
      "Biên gộp Q1/2026",
