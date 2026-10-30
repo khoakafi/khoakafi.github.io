@@ -3,38 +3,38 @@
  "ma": "DPR",
  "ten": "Công ty Cổ phần Cao su Đồng Phú",
  "nganh": "Cao su tự nhiên, khu công nghiệp",
- "ky": "BCTC Q2/2026 · KQKD Q3/2026 chưa công bố (24/10)",
- "cap_nhat": "2026-10-24",
- "lan_sau": "sau BCTC Q3/2026",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 · ĐHĐCĐ bất thường 9/11/2026",
  "cp_trieu": 86.9,
- "cp_ng": "Vốn điều lệ 868,9 tỷ đồng (BCTC Q2/2026), không có cổ phiếu quỹ (FPTS); thưởng 1:1 năm 2023. GVR nắm 55,24%",
+ "cp_ng": "Vốn điều lệ 868,9 tỷ đồng (BCTC Q3/2026), không có cổ phiếu quỹ (FPTS); thưởng 1:1 năm 2023. GVR nắm 55,24%",
  "co_tuc": [],
  "tieu_de": {
-  "t": "Thị giá mới trả cho tiền gửi và mảng mủ; 797 ha KCN mở rộng, 1.500 ha đất đền bù chưa được tính",
+  "t": "Giá mủ 63 triệu đẩy lãi Q3 +45%; thị giá chưa trả cho 797 ha KCN và 1.500 ha đất đền bù",
   "dk": "up_tren:24",
   "khac": "Giá mủ đỉnh 13 năm và 2.300 tỷ tiền gửi đã vào giá; còn lại là KCN mở rộng và đất đền bù"
  },
- "dong_mo": "LN cổ đông 2026E ~430 tỷ (+49%) nhờ giá mủ đỉnh 13 năm trên giá vốn gần như cố định; 2027E nhích nhẹ ở giá 56 triệu đ/tấn. Tiền gửi phần DPR ~1.770 tỷ, không vay. Định giá từng phần — lõi P/E 8, tiền, KCN mở rộng, đất chuyển đổi — cho {gt} ({up}); cán cân {rr}. Giá mủ về 47 triệu: 34,1 nghìn đ/cp.",
+ "dong_mo": "LN cổ đông 2026E ~540 tỷ (+85%): giá mủ đỉnh 13 năm cộng 133 tỷ thu nhập khác 9T; 2027E về ~440 tỷ khi bớt khoản một lần. Tiền ròng phần DPR ~2.020 tỷ. Định giá từng phần — lõi P/E 8, tiền, KCN mở rộng, đất chuyển đổi — cho {gt} ({up}); cán cân {rr}. Giá mủ về 47 triệu: 36,9 nghìn đ/cp.",
  "luan_diem": [
   {
-   "so": "+58%",
-   "nhan": "LN cổ đông 6T/2026 so với cùng kỳ",
-   "tieu": "Giá mủ đỉnh 13 năm đi thẳng vào lãi vì giá vốn gần như cố định",
-   "t": "Chi phí mủ theo định mức — nhân công 43,5%, nguyên vật liệu 24,2%, khấu hao 13,2%; 86% mủ tự khai thác — nên biên gộp mủ chạy theo giá: 15% năm 2023, 30,8% năm 2025. 6T/2026 LN gộp +59%. Giá XK tháng 9 2.323 USD/tấn, cao nhất 13 năm. Mô hình 2027: giá 56 triệu đ/tấn (như hồ sơ GVR), giá vốn 34,2 → biên mủ 39%; mỗi 1 triệu đ/tấn ≈ 16 tỷ LN gộp.",
-   "ng": "FPTS 15/05 · BCTC 6T/2026 · Hải quan · mô hình"
+   "so": "+45%",
+   "nhan": "LN cổ đông Q3/2026 (199 tỷ) so với cùng kỳ",
+   "tieu": "Q3 xác nhận giá mủ đi thẳng vào lãi gộp; phần vượt mô hình là khoản một lần",
+   "t": "Q3 bán 5.571 tấn (−3%) giá 63,2 triệu đ/tấn (+30%): LN gộp +30% — giá vốn theo định mức, 86% mủ tự khai thác. LN cổ đông 199 tỷ vượt mô hình cũ (134) nhờ 131 tỷ thu nhập khác (thanh lý cây, dự án), bù QLDN 135 tỷ (thường ~25, chưa giải trình). QLDN ở mức thường thì LN kinh doanh Q3 ~210 tỷ (+35%). 2027: giá 56 triệu, biên mủ 39%; mỗi 1 triệu đ/tấn ≈ 16 tỷ LN gộp.",
+   "ng": "BCTC Q3/2026 · giải trình 28/10 · FPTS 15/05 · mô hình"
   },
   {
-   "so": "2.313 tỷ",
-   "nhan": "tiền + tiền gửi 30/6/2026, không vay nợ",
+   "so": "2.741 tỷ",
+   "nhan": "tiền + tiền gửi 30/9/2026; vay ngắn hạn 142 tỷ",
    "dk": "up_tren:15",
    "tieu": "Trừ tiền gửi, mảng mủ chỉ được trả ~6 lần lãi",
-   "t": "Tiền + tiền gửi 2.313 tỷ; trừ phần thiểu số ở Kratie (41,6%) và KCN Bắc Đồng Phú (49%) còn ~1.770 tỷ ≈ 20,4 nghìn đ/cp. Theo giá 23/10, phần còn lại của vốn hóa bằng 5,9 lần LN kinh doanh 4 quý — mức thấp 25% từ 2016 (trung vị 9,2) — chưa trả gì cho KCN mở rộng và đất chuyển đổi. Lãi tiền gửi ~26% LNTT 2025.",
-   "ng": "BCTC VNDirect · giá 23/10 · tính của trang",
+   "t": "Tiền + tiền gửi 2.741 tỷ, trừ vay 142 tỷ và phần thiểu số ở Kratie (41,6%), KCN Bắc Đồng Phú (49%) còn ~2.020 tỷ ≈ 23,2 nghìn đ/cp. Theo giá 30/10, phần còn lại của vốn hóa bằng 6,1 lần LN kinh doanh 4 quý — mức thấp 25% từ 2016 (trung vị 9,6) — chưa trả gì cho KCN mở rộng và đất chuyển đổi. Lãi tiền gửi ~26% LNTT 2025.",
+   "ng": "BCTC VNDirect · giá 30/10 · tính của trang",
    "khac": {
-    "so": "2.313 tỷ",
-    "nhan": "tiền + tiền gửi 30/6/2026, không vay nợ",
+    "so": "2.741 tỷ",
+    "nhan": "tiền + tiền gửi 30/9/2026; vay ngắn hạn 142 tỷ",
     "tieu": "Tiền gửi gánh gần một nửa giá trị hợp lý",
-    "t": "Tiền + tiền gửi 2.313 tỷ; trừ phần thiểu số ở Kratie (41,6%) và KCN Bắc Đồng Phú (49%) còn ~1.770 tỷ ≈ 20,4 nghìn đ/cp. P/E phần lõi (trừ tiền) từ 2016: trung vị 9,2, thấp 25% 6,0; mô hình dùng 8 cho LN ở giá mủ đỉnh chu kỳ. Lãi tiền gửi ~26% LNTT 2025, giảm dần khi rót vốn KCN mở rộng.",
+    "t": "Tiền + tiền gửi 2.741 tỷ, trừ vay 142 tỷ và phần thiểu số ở Kratie (41,6%), KCN Bắc Đồng Phú (49%) còn ~2.020 tỷ ≈ 23,2 nghìn đ/cp. P/E phần lõi (trừ tiền) từ 2016: trung vị 9,6, thấp 25% 6,2; mô hình dùng 8 cho LN ở giá mủ đỉnh chu kỳ. Lãi tiền gửi ~26% LNTT 2025, giảm dần khi rót vốn KCN mở rộng.",
     "ng": "BCTC VNDirect · tính của trang"
    }
   },
@@ -49,7 +49,7 @@
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Định giá từng phần: {up_so} so với giá hiện tại",
-   "t": "Lõi (mủ, thanh lý tái canh, gỗ, nệm) 202 tỷ LN 2027E × P/E 8; tiền phần DPR 1.773 tỷ; KCN mở rộng 575 ha × 51% × 1,5 tỷ/ha; đất 1.500 ha × 0,25 tỷ/ha. Giá mủ 47 triệu, P/E 10: 34,1; giá 62, đất 3.000 ha: 69,0 nghìn đ/cp. Tiền gửi ~42% giá trị cơ sở.",
+   "t": "Lõi (mủ, thanh lý tái canh, gỗ, nệm) 181 tỷ LN 2027E × P/E 8; tiền phần DPR 2.017 tỷ; KCN mở rộng 575 ha × 51% × 1,5 tỷ/ha; đất 1.500 ha × 0,25 tỷ/ha. Giá mủ 47 triệu, P/E 10: 36,9; giá 62, đất 3.000 ha: 67,9 nghìn đ/cp. Tiền gửi ~47% giá trị cơ sở.",
    "ng": "mô hình · BCTC VNDirect"
   }
  ],
@@ -61,14 +61,14 @@
   ],
   "ln": [
    289,
-   432,
-   455
+   536,
+   442
   ],
   "ln_truoc": 262,
   "eps": [
    3326,
-   4971,
-   5236
+   6168,
+   5086
   ],
   "co_tuc_nam": 2000,
   "them": [
@@ -76,22 +76,22 @@
     "ten": "LNTT (tỷ)",
     "v": [
      425,
-     627,
-     648
+     760,
+     631
     ]
    },
    {
     "ten": "Biên gộp mủ",
     "v": [
      30.8,
-     39.1,
+     40.6,
      38.9
     ],
     "d": 1,
     "pt": 1
    }
   ],
-  "ng": "2025: BCTC (VNDirect), khớp FPTS. 2026E gồm 6T thực tế. EPS theo 86,9 triệu cp; cổ tức tiền gần nhất 2.000 đ/cp (năm 2024, chi 29/09/2025). Biên gộp mủ 2025 theo FPTS."
+  "ng": "2025: BCTC (VNDirect), khớp FPTS. 2026E gồm 9T thực tế. EPS theo 86,9 triệu cp; cổ tức tiền gần nhất 2.000 đ/cp (năm 2024, chi 29/09/2025). Biên gộp mủ 2025 theo FPTS."
  },
  "ln_mang": {
   "tieu": "Lợi nhuận cổ đông theo nguồn",
@@ -107,8 +107,8 @@
     "mau": "c1",
     "v": [
      189,
-     312,
-     276
+     303,
+     255
     ]
    },
    {
@@ -116,7 +116,7 @@
     "mau": "c2",
     "v": [
      33,
-     46,
+     147,
      112
     ]
    },
@@ -125,8 +125,8 @@
     "mau": "c3",
     "v": [
      67,
-     74,
-     67
+     86,
+     75
     ]
    }
   ],
@@ -135,7 +135,7 @@
  },
  "so_sanh": {
   "chi_so": "P/E 4 quý",
-  "chi_so_kv": "P/E 4 quý (giá 23/10)",
+  "chi_so_kv": "P/E 4 quý (giá 30/10)",
   "nhom": "3 mã cao su trong nhóm Hóa chất",
   "kv": [
    [
@@ -144,18 +144,18 @@
    ],
    [
     "TRC",
-    10.6
+    9.7
    ],
    [
     "GVR",
     17.9
    ]
   ],
-  "tv": 10.6,
-  "moi_cp": 4114,
+  "tv": 9.7,
+  "moi_cp": 4821,
   "max": 20,
-  "y": "P/E 4 quý của DPR gồm cả tiền gửi ≈ 70% vốn hóa (giá 23/10); trừ tiền phần DPR, phần lõi ~5,9 lần. PHR 4 quý có tiền đền bù VSIP III (LN +84%); GVR gồm phần bù quỹ đất.",
-  "ng": "BCTC VNDirect, giá 23/10/2026 (gói số liệu); DPR: LN cổ đông 4 quý đến Q2/2026"
+  "y": "P/E 4 quý của DPR gồm cả tiền gửi ≈ 83% vốn hóa (giá 30/10) và 131 tỷ thu nhập khác Q3; trừ tiền phần DPR, phần lõi ~6,1 lần. PHR 4 quý có tiền đền bù VSIP III (LN +84%); GVR gồm phần bù quỹ đất.",
+  "ng": "BCTC VNDirect, giá 30/10/2026 (gói số liệu); DPR: LN cổ đông 4 quý đến Q3/2026; PHR, GVR đến Q2/2026"
  },
  "mo_hinh": {
   "tieu": "Mô hình: sản lượng × (giá mủ − giá vốn) + thanh lý, đền bù + tiền gửi",
@@ -172,7 +172,7 @@
     "ten": "Sản lượng (nghìn tấn)",
     "v": [
      21.4,
-     21.0,
+     21.1,
      20.5
     ],
     "d": 1,
@@ -182,7 +182,7 @@
     "ten": "Giá bán (triệu đ/tấn)",
     "v": [
      44.1,
-     54.7,
+     56.7,
      56.0
     ],
     "d": 1,
@@ -192,7 +192,7 @@
     "ten": "Giá vốn (triệu đ/tấn)",
     "v": [
      30.5,
-     33.3,
+     33.7,
      34.2
     ],
     "d": 1
@@ -201,7 +201,7 @@
     "ten": "Biên gộp mủ (%)",
     "v": [
      30.8,
-     39.1,
+     40.6,
      38.9
     ],
     "d": 1
@@ -213,7 +213,7 @@
     "ten": "LN gộp mủ",
     "v": [
      291,
-     449,
+     484,
      446
     ],
     "tang": 1
@@ -222,7 +222,7 @@
     "ten": "LN gộp khác (thanh lý cây, gỗ, KCN cũ, nệm)",
     "v": [
      171,
-     208,
+     230,
      175
     ]
    },
@@ -230,23 +230,23 @@
     "ten": "Chi phí bán hàng + QLDN",
     "v": [
      189,
-     210,
-     225
+     280,
+     255
     ]
    },
    {
     "ten": "Lãi tiền gửi ròng",
     "v": [
      111,
-     123,
-     112
+     142,
+     125
     ]
    },
    {
     "ten": "Thu nhập khác (đền bù đất)",
     "v": [
      41,
-     58,
+     183,
      140
     ],
     "tang": 1
@@ -255,8 +255,8 @@
     "ten": "LNTT",
     "v": [
      425,
-     627,
-     648
+     760,
+     631
     ],
     "dam": 1,
     "tang": 1
@@ -265,8 +265,8 @@
     "ten": "LN cổ đông",
     "v": [
      289,
-     432,
-     455
+     536,
+     442
     ],
     "dam": 1,
     "tang": 1
@@ -275,47 +275,47 @@
     "ten": "EPS (đ)",
     "v": [
      3326,
-     4971,
-     5236
+     6168,
+     5086
     ],
     "eps": 1
    }
   ],
-  "ghi": "2025A: BCTC (VNDirect); mủ 2025 theo FPTS (21.439 tấn, giá suy từ dự báo +4,8%, biên 30,8%). 2026E = 6T thực tế + quý 3, 4 ước; tách mủ/khác 6T là ước của trang (9.000 tấn × 49,5 triệu). Giá vốn = phần cố định (+3%/năm) + 20% giá bán."
+  "ghi": "2025A: BCTC (VNDirect); mủ 2025 theo FPTS (21.439 tấn, giá suy từ dự báo +4,8%, biên 30,8%). 2026E = 9T thực tế + quý 4 ước; tách mủ/khác: 6T ước của trang (9.000 tấn × 49,5 triệu), Q3 theo sản lượng, giá công bố (5.571 tấn × 63,16 triệu). Giá vốn = phần cố định (+3%/năm) + 20% giá bán."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   432
+   536
   ],
   "cuoi": [
    "2027E",
-   455
+   442
   ],
   "buoc": [
    [
     "Giá bán mủ",
-    15
+    -8
    ],
    [
     "Sản lượng, giá vốn mủ",
-    -17
+    -19
    ],
    [
     "Đền bù đất",
-    66
+    -34
    ],
    [
     "Lãi tiền gửi",
-    -7
+    -11
    ],
    [
     "Thanh lý cây, chi phí, khác",
-    -34
+    -22
    ]
   ],
-  "y": "Giá 2027 (56 triệu) nhích so với bình quân 2026E (54,7) nhưng sản lượng giảm vì chuyển đổi đất; phần tăng chủ yếu từ đền bù dự án nông nghiệp. Thanh lý cây ít hơn 2026E, chi phí quản lý tăng.",
+  "y": "2026E có 133 tỷ thu nhập khác 9T (thanh lý, dự án) và giá mủ bình quân 56,7 triệu; 2027E giá 56 triệu, sản lượng giảm vì chuyển đổi đất, đền bù 1.500 ha mới bắt đầu, chi phí quản lý tăng theo lợi nhuận — LN lùi lại dù mảng mủ vẫn lãi cao.",
   "ng": "mô hình"
  },
  "gia_dinh": [
@@ -326,7 +326,7 @@
     "56",
     "62"
    ],
-   "ly_do": "Cùng giả định hồ sơ GVR (giá 2025: DPR 44,1, GVR 43,8). GVR quý 3/2026 ~60,8 (suy từ 9T); giá XK 9/2026 2.323 USD/tấn, đỉnh 13 năm"
+   "ly_do": "Cùng giả định hồ sơ GVR (giá 2025: DPR 44,1, GVR 43,8). DPR Q3/2026 thực tế 63,2, GVR ~60,8; giá XK 9/2026 2.323 USD/tấn, đỉnh 13 năm"
   },
   {
    "ten": "Sản lượng tiêu thụ 2027 (nghìn tấn)",
@@ -368,10 +368,10 @@
    "ten": "Chi phí bán hàng + QLDN 2027 (tỷ)",
    "v": [
     "210",
-    "225",
-    "240"
+    "255",
+    "300"
    ],
-   "ly_do": "2024: 160; 2025: 189 (quý 4 riêng 111); 6T/2026: 50. QLDN dồn quý 4, tăng theo lợi nhuận (2024: 74, 2025: 107)"
+   "ly_do": "2024: 160; 2025: 189; 9T/2026: 190 (Q3 riêng 139). ~30% LN trước chi phí (2024–2026E), quỹ lương theo lợi nhuận"
   },
   {
    "ten": "P/E phần lõi",
@@ -380,7 +380,7 @@
     "8",
     "8"
    ],
-   "ly_do": "P/E 4 quý DPR (gồm tiền gửi): trung vị 10,1, thấp 25% 7,4. Trừ tiền, P/E lõi từ 2016: trung vị 9,2, thấp 25% 6,0. LN ở giá đỉnh chu kỳ → 8; giá 47 → 10"
+   "ly_do": "P/E 4 quý DPR (gồm tiền gửi): trung vị 10,1, thấp 25% 7,4. Trừ tiền, P/E lõi từ 2016: trung vị 9,6, thấp 25% 6,2. LN ở giá đỉnh chu kỳ → 8; giá 47 → 10"
   },
   {
    "ten": "KCN mở rộng (tỷ đ/ha thương phẩm)",
@@ -404,23 +404,23 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 329,
-   "ln27": 219,
-   "gia": 34.1,
+   "ln26": 445,
+   "ln27": 225,
+   "gia": 36.9,
    "mo_ta": "Giá mủ 2027 47 triệu đ/tấn, 19,5 nghìn tấn; P/E lõi 10; KCN mở rộng 0,6 tỷ/ha; đất 800 ha × 0,1 tỷ/ha"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 432,
-   "ln27": 455,
-   "gia": 48.4,
-   "mo_ta": "Giá 56 triệu, 20,5 nghìn tấn, giá vốn 34,2; P/E lõi 8; tiền phần DPR 1.773 tỷ; KCN 1,5 tỷ/ha; đất 1.500 ha × 0,25 tỷ/ha"
+   "ln26": 536,
+   "ln27": 442,
+   "gia": 49.3,
+   "mo_ta": "Giá 56 triệu, 20,5 nghìn tấn, giá vốn 34,2; P/E lõi 8; tiền phần DPR 2.017 tỷ; KCN 1,5 tỷ/ha; đất 1.500 ha × 0,25 tỷ/ha"
   },
   {
    "ten": "Tốt",
-   "ln26": 593,
-   "ln27": 706,
-   "gia": 69.0,
+   "ln26": 626,
+   "ln27": 675,
+   "gia": 67.9,
    "mo_ta": "Giá 62 triệu, 21,5 nghìn tấn; P/E lõi 8; KCN 2,5 tỷ/ha (lấp đầy nhanh); đất 3.000 ha × 0,4 tỷ/ha"
   }
  ],
@@ -435,8 +435,8 @@
     "mau": "c1",
     "x": [
      93,
-     202,
-     286
+     181,
+     244
     ],
     "boi": [
      10,
@@ -448,31 +448,31 @@
     "sh": 1,
     "gt": [
      930,
-     1616,
-     2288
+     1448,
+     1952
     ]
    },
    {
     "ten": "Tiền + tiền gửi phần DPR",
     "mau": "c4",
     "x": [
-     1773,
-     1773,
-     1773
+     2017,
+     2017,
+     2017
     ],
     "boi": [
      1.0,
      1.0,
      1.0
     ],
-    "x_ten": "30/6/2026 × 77% (tỷ lệ vốn chủ của cổ đông DPR)",
+    "x_ten": "(tiền − vay) 30/9/2026 × 78% (tỷ lệ vốn chủ của cổ đông DPR)",
     "boi_ten": "hệ số",
     "boi_d": 1,
     "sh": 1,
     "gt": [
-     1773,
-     1773,
-     1773
+     2017,
+     2017,
+     2017
     ]
    },
    {
@@ -523,14 +523,14 @@
    }
   ],
   "von": [
-   2959,
-   4204,
-   5995
+   3203,
+   4280,
+   5903
   ],
   "gia": [
-   34.1,
-   48.4,
-   69.0
+   36.9,
+   49.3,
+   67.9
   ]
  },
  "nhay": [
@@ -542,7 +542,7 @@
   [
    "P/E phần lõi ±1 lần",
    null,
-   2.3
+   2.1
   ],
   [
    "KCN mở rộng ±0,5 tỷ/ha",
@@ -848,7 +848,7 @@
    9.5,
    9.0,
    9.4,
-   9.2
+   9.3
   ],
   "p10": 6.7,
   "p25": 7.4,
@@ -859,10 +859,10 @@
   ],
   "nay": [
    "2026-10",
-   9.2
+   9.3
   ],
   "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. Từ 9/2023 theo 86,9 triệu cp (thưởng 1:1).",
-  "dung": "Ba kịch bản tương đương P/E 13,5 · 9,2 · 8,5 lần LN 2027E (tiền gửi ~42% giá trị cơ sở); cơ sở dưới trung vị 10,1."
+  "dung": "Ba kịch bản tương đương P/E 14,3 · 9,7 · 8,8 lần LN 2027E (tiền gửi ~47% giá trị cơ sở); cơ sở dưới trung vị 10,1."
  },
  "theo_doi": [
   {
@@ -879,32 +879,32 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    42,
-    111,
-    226
+    59,
+    151,
+    241
    ],
    "ck": 34
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    329,
-    432,
-    593
+    445,
+    536,
+    626
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "10/2026",
-   "loai": "hai",
-   "tieu": "BCTC quý 3/2026",
-   "ct": "Giá mủ quý 3 cao nhất 13 năm, nhưng GVR ước LNTT quý 3 giảm ~62% vì khai thác chậm, mua mủ ngoài giá cao. Mô hình: LN cổ đông quý 3 ~130 tỷ (cùng kỳ 137).",
+   "khi": "28/10/2026",
+   "loai": "len",
+   "tieu": "KQKD Q3/2026: lãi 199 tỷ, vượt mô hình",
+   "ct": "LN cổ đông 199 tỷ (+45%), mô hình cũ 134. Giá bán 63,2 triệu/tấn (+30%) xác nhận luận điểm giá; phần vượt đến từ 131 tỷ thu nhập khác một lần, bị QLDN 135 tỷ ăn bớt.",
    "tac": [
-    "≥ 130 tỷ",
-    "giữ kịch bản cơ sở; dưới 100 tỷ — sản lượng, giá vốn xấu hơn giả định"
+    "+104 tỷ",
+    "LN 2026E so với bản 24/10 (432 tỷ); 2027E gần như giữ nguyên"
    ],
-   "theo_doi": "sản lượng tiêu thụ, LN gộp"
+   "theo_doi": "nguyên nhân QLDN, nguồn thu nhập khác"
   },
   {
    "khi": "9/11/2026",
@@ -929,12 +929,23 @@
    "khi": "Q4/2026",
    "loai": "len",
    "tieu": "Thanh lý cây, thu nhập khác cuối năm",
-   "ct": "Kế hoạch 2026 công ty mẹ: LNST 398 tỷ, có 221 tỷ thu nhập khác (thanh lý cây, dự án); 6T hợp nhất mới ghi 2,5 tỷ. Phần nào bán cho KCN mở rộng (công ty con) sẽ bị loại khi hợp nhất.",
+   "ct": "Kế hoạch 2026 công ty mẹ: LNST 398 tỷ, có 221 tỷ thu nhập khác (thanh lý cây, dự án); 9T hợp nhất đã ghi 133 tỷ (Q3 131). Phần bán cho KCN mở rộng (công ty con) bị loại khi hợp nhất.",
    "tac": [
     "±460 đ EPS",
     "mỗi ±50 tỷ thu nhập khác"
    ],
    "theo_doi": "thu nhập khác quý 4"
+  },
+  {
+   "khi": "1–4/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026 và kế hoạch 2027",
+   "ct": "Q4 là mùa cạo chính nhưng thường gánh quỹ lương (Q4/2025 QLDN 107 tỷ). Mô hình Q4 LN cổ đông 59 · 151 · 241 tỷ; ĐHĐCĐ 2027 công bố kế hoạch thanh lý, đền bù và cổ tức.",
+   "tac": [
+    "≥ 150 tỷ",
+    "giữ cơ sở; dưới 60 tỷ nếu QLDN Q4 lặp lại mức Q3"
+   ],
+   "theo_doi": "QLDN quý 4, kế hoạch 2027"
   },
   {
    "khi": "2026–2027",
@@ -996,7 +1007,7 @@
    "loai": "xuong",
    "muc": 1,
    "tieu": "Tiền mặt ít được trả ra",
-   "ct": "Cổ tức 2026 kế hoạch 14% (1.400 đ/cp) so với EPS 2026E ~5.000 đ. QLDN dồn quý 4 (2025: 107 tỷ, các quý khác 20–25 tỷ); lãi tiền gửi giảm khi rót vốn KCN.",
+   "ct": "Cổ tức 2026 kế hoạch 14% (1.400 đ/cp) so với EPS 2026E ~6.200 đ. QLDN Q3/2026 135 tỷ (thường 20–25) chưa được giải trình; vay ngắn hạn 142 tỷ lần đầu dù tiền gửi lớn.",
    "tac": [
     "±1,3 nghìn đ/cp",
     "mỗi ±20 tỷ chi phí 2027"
@@ -1010,7 +1021,6 @@
    "dv": "tỷ đồng",
    "kieu": "cot_chong",
    "nhan": [
-    "Q1/24",
     "Q2/24",
     "Q3/24",
     "Q4/24",
@@ -1019,13 +1029,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Kinh doanh (LN gộp − chi phí)",
      "v": [
-      61,
       23,
       48,
       98,
@@ -1034,14 +1044,14 @@
       155,
       5,
       122,
-      87
+      87,
+      99
      ],
      "mau": "c1"
     },
     {
      "ten": "Lãi tiền gửi ròng",
      "v": [
-      19,
       24,
       18,
       27,
@@ -1050,14 +1060,14 @@
       34,
       30,
       28,
-      37
+      37,
+      40
      ],
      "mau": "c3"
     },
     {
      "ten": "Thu nhập khác",
      "v": [
-      5,
       44,
       4,
       6,
@@ -1066,13 +1076,14 @@
       3,
       25,
       1,
-      2
+      2,
+      131
      ],
      "mau": "c4"
     }
    ],
    "so_le": 0,
-   "y": "Lãi tiền gửi đều 18–37 tỷ mỗi quý; phần kinh doanh 6T/2026 208 tỷ, gấp 1,8 lần cùng kỳ. Quý 4 thấp vì chi phí quản lý dồn cuối năm (quý 4/2025: 107 tỷ).",
+   "y": "Lãi tiền gửi 18–40 tỷ mỗi quý. Q3/2026: kinh doanh chỉ 99 tỷ vì QLDN 135 tỷ, bù bằng 131 tỷ thu nhập khác. Quý 4 thường thấp vì chi phí quản lý dồn cuối năm (quý 4/2025: 107 tỷ).",
    "ng": "BCTC DPR (VNDirect)"
   },
   {
@@ -1080,7 +1091,6 @@
    "dv": "tỷ đồng",
    "kieu": "cot",
    "nhan": [
-    "Q1/24",
     "Q2/24",
     "Q3/24",
     "Q4/24",
@@ -1089,13 +1099,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Doanh thu thuần",
      "v": [
-      187,
       233,
       348,
       457,
@@ -1104,14 +1114,14 @@
       482,
       302,
       379,
-      280
+      280,
+      559
      ],
      "mau": "c4"
     },
     {
      "ten": "LN gộp",
      "v": [
-      82,
       47,
       82,
       179,
@@ -1120,13 +1130,14 @@
       183,
       116,
       147,
-      112
+      112,
+      239
      ],
      "mau": "c1"
     }
    ],
    "so_le": 0,
-   "y": "6T/2026 doanh thu +63%, LN gộp +59%. Mùa cạo chính tháng 8–12; quý 3/2025 là mốc so sánh cao (482 tỷ doanh thu).",
+   "y": "9T/2026 doanh thu +38%, LN gộp +44%. Q3 vượt mốc cao của cùng kỳ: doanh thu 559 tỷ, LN gộp 239 tỷ (+30%) dù sản lượng giảm 3%. Mùa cạo chính tháng 8–12.",
    "ng": "BCTC DPR (VNDirect) · FPTS 15/05 (mùa vụ)"
   },
   {
@@ -1134,47 +1145,47 @@
    "dv": "tỷ đồng",
    "kieu": "cot",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Tiền + tiền gửi",
      "v": [
-      1825,
       1870,
       1938,
       1964,
       1990,
       2095,
       2272,
-      2313
+      2313,
+      2741
      ],
      "mau": "c1"
     },
     {
      "ten": "Nợ dài hạn (không phải vay)",
      "v": [
-      967,
       998,
       1000,
       1005,
       1001,
       1074,
       1067,
-      1060
+      1060,
+      1154
      ],
      "mau": "c4"
     }
    ],
    "so_le": 0,
-   "y": "Không vay ngân hàng. Tiền + tiền gửi 2.313 tỷ ≈ 70% vốn hóa (giá 23/10); nợ dài hạn ~1.060 tỷ chủ yếu là tiền thuê KCN đã thu trước, ghi nhận dần.",
+   "y": "Tiền + tiền gửi 2.741 tỷ ≈ 83% vốn hóa (giá 30/10), tăng 428 tỷ trong Q3; vay ngắn hạn 142 tỷ (lần đầu từ 2023). Nợ dài hạn ~1.150 tỷ chủ yếu là tiền thuê KCN đã thu trước, ghi nhận dần.",
    "ng": "BCTC DPR (VNDirect) · FPTS 15/05"
   },
   {
@@ -1217,7 +1228,7 @@
    "link": "https://cdn.simplize.vn/simplizevn/report/DPR/mua_bao_cao_dinh_gia_lan_dau_fpts_15_05_2026.pdf"
   }
  ],
- "ctck_chu": "Chỉ một báo cáo CTCK trong 8 tháng (FPTS 15/05, trước khi giá mủ lên đỉnh 13 năm); mô hình tự dựng từ BCTC, công bố của doanh nghiệp và hồ sơ GVR. Cổ tức 2025 chưa chốt quyền nên giá mục tiêu chưa phải điều chỉnh.",
+ "ctck_chu": "Một báo cáo CTCK đã tải về đối chiếu (FPTS 15/05, trước khi giá mủ lên đỉnh 13 năm); các bản cập nhật khác (DSC sau Q2, VDSC 6/2026) chưa tải được. Mô hình tự dựng từ BCTC, công bố của doanh nghiệp và hồ sơ GVR. Cổ tức 2025 chưa chốt quyền nên giá mục tiêu chưa phải điều chỉnh.",
  "nguon": [
   {
    "ten": "FPTS — Báo cáo định giá lần đầu DPR",
@@ -1273,6 +1284,16 @@
    "ten": "Thời báo Tài chính — giá cao su thế giới 18/10",
    "ngay": "18/10/2026",
    "link": "https://thoibaotaichinhvietnam.vn/ngay-18-10-gia-cao-su-the-gioi-bien-dong-trai-chieu-205547.html"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — DPR lãi 433,7 tỷ 9 tháng 2026",
+   "ngay": "10/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/cao-su-dong-phu-dpr-lai-4337-ty-dong-trong-9-thang-dau-nam-2026-post400389.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — phía sau lợi nhuận đột biến của doanh nghiệp cao su (Q3/2026)",
+   "ngay": "10/2026",
+   "link": "https://nhadautu.vn/phia-sau-nhung-khoan-loi-nhuan-dot-bien-cua-doanh-nghiep-cao-su-d108252.html"
   }
  ],
  "top_down": [
@@ -1326,8 +1347,8 @@
     },
     {
      "h": 1,
-     "t": "Không vay; tiền + tiền gửi 2.313 tỷ (30/6/2026), lãi tiền gửi ~1/4 LNTT.",
-     "ng": "BCTC Q2/2026"
+     "t": "Tiền + tiền gửi 2.741 tỷ (30/9/2026), vay ngắn hạn 142 tỷ; lãi tiền gửi ~1/4 LNTT 2025.",
+     "ng": "BCTC Q3/2026"
     },
     {
      "h": 0,
@@ -1358,9 +1379,9 @@
      "2023: 15%"
     ],
     [
-     "Công suất chế biến",
-     "25.000 tấn/năm",
-     "2025 dùng 54%"
+     "Q3/2026",
+     "5.571 tấn · 63,2 tr/tấn",
+     "−3% · +30%"
     ]
    ],
    "y": [
@@ -1430,9 +1451,9 @@
      "công ty mẹ"
     ],
     [
-     "Thu nhập khác 6T/2026",
-     "2,5 tỷ",
-     "hợp nhất"
+     "Thu nhập khác 9T/2026",
+     "133 tỷ",
+     "hợp nhất, Q3 131"
     ]
    ],
    "y": [
