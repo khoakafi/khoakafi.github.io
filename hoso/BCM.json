@@ -3,43 +3,43 @@
  "ma": "BCM",
  "ten": "Tập đoàn Đầu tư và Phát triển Công nghiệp Becamex – CTCP",
  "nganh": "Khu công nghiệp, đất đô thị, hạ tầng (Bình Dương cũ – TP.HCM)",
- "ky": "BCTC bán niên 2026 · KQKD Q3/2026 chưa công bố · giá 23/10/2026",
- "cap_nhat": "2026-10-24",
- "lan_sau": "sau BCTC Q3/2026 (hạn 30/10/2026)",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 (hoặc khi có ngày chốt cổ tức cổ phiếu 14%)",
  "cp_trieu": 1035.0,
  "cp_ng": "Vốn điều lệ 10.350 tỷ = 1.035 triệu cp, không có cổ phiếu quỹ (SHS 10/08/2026, ACBS 26/06/2026). Giá gốc = giá điều chỉnh từ 2/2026 (sau cổ tức tiền 1.100 đ/cp); vốn hóa trên bảng giá VNDirect lệch, không phải thưởng/chia tách. Cổ tức 2025 bằng cổ phiếu 14% (~144,9 triệu cp) chưa có ngày chốt.",
  "co_tuc": [],
  "tieu_de": {
-  "t": "Quỹ đất lớn nhưng bán chậm: lãi vay 6T/2026 đã vượt toàn bộ lãi từ VSIP và liên kết"
+  "t": "Q3 lãi nhờ liên kết, đất đô thị vẫn bán chậm: 9 tháng mới đạt 23% kế hoạch lợi nhuận"
  },
- "dong_mo": "6T/2026 LNST 307 tỷ (8% kế hoạch); lãi vay 881 tỷ (+33%) vượt LN liên kết 733 tỷ. Định giá quỹ đất theo nhịp bán thật (~3,5 nghìn tỷ đất đô thị, 70 ha KCN mỗi năm) + VSIP + liên kết − nợ: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 LN cổ đông 563 tỷ (+35%) nhưng thấp hơn mô hình cũ 807 tỷ: đợt Hòa Lợi chưa ghi nhận. Hạ đất đô thị 2027E xuống 3,0 nghìn tỷ theo nhịp bán thật; giá trị VSIP + liên kết + quỹ đất − nợ: {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "881 tỷ",
-   "nhan": "lãi vay 6T/2026 (+33%) — LN liên kết 733 tỷ",
-   "tieu": "Nợ vay 26 nghìn tỷ ăn hết phần lãi VSIP mang về",
-   "t": "Nợ vay 26,3 nghìn tỷ ngày 30/6/2026 (1,2 lần vốn chủ), lãi vay Q2 539 tỷ (+46%). 63% LN 2019–2025 đến từ liên doanh liên kết; phần BCM tự làm (LN trừ liên kết) bình quân 0,8 nghìn tỷ/năm và lỗ 441 tỷ trong 6T/2026. Mỗi 1 điểm % lãi suất vay ≈ 211 tỷ LN 2027E.",
-   "ng": "BCTC VNDirect · mô hình"
+   "so": "563 tỷ",
+   "nhan": "LN cổ đông Q3/2026 (+35%) — mô hình cũ 807 tỷ",
+   "tieu": "Q3 xác nhận: liên kết gánh lãi vay, đất đô thị chưa bật",
+   "t": "Liên kết Q3 707 tỷ (+33%), lãi vay 373 tỷ (Q2 539). Đất đô thị chỉ ~616 tỷ so với ước 1,5 nghìn tỷ — ~400 căn Hòa Lợi MBS ước cho Q3 chưa ghi nhận. 9T: lãi vay 1.255 tỷ (+30%) gần bằng liên kết 1.440 tỷ, phần BCM tự làm lỗ 584 tỷ; LNST 23% kế hoạch. Mỗi 1 điểm % lãi suất vay ≈ 210 tỷ LN 2027E.",
+   "ng": "BCTC Q3/2026 (VNDirect) · Người Quan sát 10/2026 · mô hình"
   },
   {
    "so": "1.164 ha",
    "nhan": "đất đô thị thương phẩm còn lại (thêm 718 ha KCN)",
    "tieu": "Quỹ đất có giá khi bán được, không phải khi được định giá",
-   "t": "CTCK định giá đất đô thị 39–62 nghìn tỷ theo giá chuyển nhượng (BVSC, MBS). BCM bán ~3–4 nghìn tỷ đất đô thị/năm (ước 2022–2025): Q1/2026 169 căn Hòa Lợi giá 752 tỷ cho BCE. Ở nhịp 3,5 nghìn tỷ/năm, biên gộp 65%, chiết khấu 12%: lãi chưa ghi nhận của đất 22,0 nghìn tỷ, giá vốn tồn kho 23,1 nghìn tỷ tính 0,55 lần.",
+   "t": "CTCK định giá đất đô thị 39–62 nghìn tỷ theo giá chuyển nhượng (BVSC, MBS). BCM bán ~3–4 nghìn tỷ đất đô thị/năm 2022–2025, 4 quý gần nhất ~2,7 nghìn tỷ. Ở nhịp 3,0 nghìn tỷ/năm, biên gộp 65%, chiết khấu 12%: lãi chưa ghi nhận của đất 19,8 nghìn tỷ, giá vốn tồn kho 23,5 nghìn tỷ tính 0,55 lần.",
    "ng": "BVSC 12/03 · MBS 13/05 · mô hình"
   },
   {
    "so": "49%",
    "nhan": "vốn VSIP — LNST 2025 3.746 tỷ (+14%)",
    "tieu": "VSIP là tài sản đáng giá nhất",
-   "t": "VSIP 6T/2026 lãi 976,6 tỷ (−13%); 5 KCN mới hơn 2.300 ha được cấp phép 29/5/2026, danh mục 26 dự án. BCM nhận 1.607 tỷ năm 2025 (MBS) = 43% LNST VSIP. P/E 11 lần LN 2027E phần BCM (1.600 tỷ): 17,6 nghìn tỷ, 28% tổng giá trị các phần trước khi trừ nợ.",
+   "t": "VSIP 6T/2026 lãi 976,6 tỷ (−13%); 5 KCN mới hơn 2.300 ha được cấp phép 29/5/2026, danh mục 26 dự án. BCM nhận 1.607 tỷ năm 2025 (MBS) = 43% LNST VSIP. P/E 11 lần LN 2027E phần BCM (1.600 tỷ): 17,6 nghìn tỷ, 29% tổng giá trị các phần trước khi trừ nợ.",
    "ng": "Báo chí (BCTC VSIP) · SHS 10/08 · MBS 13/05 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý (nghìn đ/cp)",
    "tieu": "NAV điều chỉnh: {up_so} so với giá hiện tại",
-   "t": "VSIP 17,6 + liên kết khác 10,6 + lãi chưa ghi nhận của đất 22,0 + giá vốn tồn kho 12,7 − nợ vay ròng và phải trả ròng 25,3 nghìn tỷ. Tương đương P/E 13,1 lần LN 2027E (trung vị 8 DN KCN: 13,5 lần LN 4 quý), P/B 1,72 (thấp 10% từ 2018: 1,84). Xấu 19,2, tốt 61,3.",
+   "t": "VSIP 17,6 + liên kết khác 10,6 + lãi chưa ghi nhận của đất 19,8 + giá vốn tồn kho 12,9 − nợ vay ròng và phải trả ròng 25,2 nghìn tỷ. Tương đương P/E 13,0 lần LN 2027E (trung vị 8 DN KCN: 11,6 lần LN 4 quý), P/B 1,59 (thấp 10% từ 2018: 1,84). Xấu 17,9, tốt 58,7.",
    "ng": "mô hình · BCTC VNDirect"
   }
  ],
@@ -51,19 +51,19 @@
   ],
   "ln": [
    3488,
-   2032,
-   2885
+   2050,
+   2745
   ],
   "ln_truoc": 2187,
   "eps": [
    3370,
-   1963,
-   2787
+   1981,
+   2652
   ],
   "bv": [
    21946,
-   22825,
-   24472
+   22795,
+   24307
   ],
   "co_tuc_nam": 1100,
   "them": [
@@ -71,7 +71,7 @@
     "ten": "LN liên doanh liên kết (tỷ)",
     "v": [
      2628,
-     2383,
+     2440,
      2400
     ],
     "d": 0
@@ -80,8 +80,8 @@
     "ten": "Lãi vay (tỷ)",
     "v": [
      1376,
-     1961,
-     2050
+     1650,
+     1900
     ],
     "d": 0
    }
@@ -103,7 +103,7 @@
     "mau": "c1",
     "v": [
      2628,
-     2383,
+     2440,
      2400
     ]
    },
@@ -112,8 +112,8 @@
     "mau": "c2",
     "v": [
      2362,
-     1494,
-     2574
+     1147,
+     2249
     ]
    },
    {
@@ -121,17 +121,17 @@
     "mau": "c4",
     "v": [
      -1255,
-     -1839,
-     -1930
+     -1534,
+     -1780
     ]
    }
   ],
   "nhan": "Liên doanh liên kết (VSIP, IJC, BW…)",
-  "ng": "BCTC VNDirect (2025A, 6T/2026); H2/2026E, 2027E theo mô hình cơ sở. LN liên kết đã sau thuế ở công ty liên kết."
+  "ng": "BCTC VNDirect (2025A, 9T/2026); Q4/2026E, 2027E theo mô hình cơ sở. LN liên kết đã sau thuế ở công ty liên kết."
  },
  "so_sanh": {
   "chi_so": "P/E 4 quý",
-  "chi_so_kv": "P/E 4 quý (giá 23/10)",
+  "chi_so_kv": "P/E 4 quý (giá 30/10)",
   "nhom": "8 doanh nghiệp KCN niêm yết vốn hóa lớn",
   "kv": [
    [
@@ -140,19 +140,19 @@
    ],
    [
     "SZC",
-    22.0
+    21.8
    ],
    [
     "KBC",
-    14.6
+    14.3
    ],
    [
     "VGC",
-    13.8
+    10.6
    ],
    [
     "NTC",
-    13.2
+    12.5
    ],
    [
     "PHR",
@@ -164,14 +164,14 @@
    ],
    [
     "IDC",
-    6.5
+    7.7
    ]
   ],
-  "tv": 13.5,
-  "moi_cp": 1881,
+  "tv": 11.6,
+  "moi_cp": 2023,
   "max": 25,
-  "y": "BCM 22,1 lần LN 4 quý, cao nhất nhóm (SZC 22,0) dù LN 4 quý đang ở vùng thấp (1.947 tỷ). Theo LN 2027E cơ sở giá hiện tại tương đương P/E 14,9.",
-  "ng": "BCTC VNDirect (LNST cổ đông 4 quý đến Q2/2026; KBC, SZC, NTC đến Q3/2026), vốn hóa VNDirect, giá 23/10/2026"
+  "y": "BCM 19,0 lần LN 4 quý, chỉ sau SZC (21,8) và gấp 1,6 lần trung vị dù LN 4 quý đang ở vùng thấp (2.094 tỷ). Theo LN 2027E cơ sở giá hiện tại tương đương P/E 14,5.",
+  "ng": "BCTC VNDirect (LNST cổ đông 4 quý đến quý BCTC mới nhất; BCM đến Q3/2026), vốn hóa VNDirect, giá 30/10/2026"
  },
  "mo_hinh": {
   "tieu": "Dự phóng: bán đất đô thị, KCN + liên doanh liên kết − lãi vay",
@@ -188,8 +188,8 @@
     "ten": "Doanh thu đất đô thị, nhà ở (tỷ)",
     "s": [
      "–",
-     "3.200",
-     "3.500"
+     "2.616",
+     "3.000"
     ]
    },
    {
@@ -215,8 +215,8 @@
     "ten": "Doanh thu thuần (tỷ)",
     "v": [
      6951,
-     4900,
-     7272
+     4316,
+     6772
     ],
     "tang": 1
    },
@@ -224,8 +224,8 @@
     "ten": "Lãi gộp (tỷ)",
     "v": [
      4162,
-     2930,
-     4304
+     2556,
+     3979
     ],
     "tang": 1
    },
@@ -233,7 +233,7 @@
     "ten": "Chi phí bán hàng + quản lý (tỷ)",
     "v": [
      1736,
-     1436,
+     1418,
      1700
     ]
    },
@@ -241,15 +241,15 @@
     "ten": "Lãi vay (tỷ)",
     "v": [
      1376,
-     1961,
-     2050
+     1650,
+     1900
     ]
    },
    {
     "ten": "LN liên doanh liên kết (tỷ)",
     "v": [
      2628,
-     2383,
+     2440,
      2400
     ],
     "tang": 1
@@ -258,7 +258,7 @@
     "ten": "trong đó từ VSIP (tỷ, ước)",
     "v": [
      1607,
-     1574,
+     1614,
      1600
     ]
    },
@@ -266,8 +266,8 @@
     "ten": "LNTT (tỷ)",
     "v": [
      3734,
-     2038,
-     3044
+     2053,
+     2869
     ],
     "tang": 1
    },
@@ -275,8 +275,8 @@
     "ten": "LN cổ đông (tỷ)",
     "v": [
      3488,
-     2032,
-     2885
+     2050,
+     2745
     ],
     "dam": 1,
     "tang": 1
@@ -285,8 +285,8 @@
     "ten": "EPS (đ)",
     "v": [
      3370,
-     1963,
-     2787
+     1981,
+     2652
     ],
     "eps": 1
    },
@@ -294,28 +294,28 @@
     "ten": "ROE (%)",
     "v": [
      16.5,
-     8.8,
-     11.8
+     8.9,
+     11.3
     ],
     "d": 1
    }
   ],
-  "ghi": "2026E = 6T thực tế (BCTC bán niên) + Q3, Q4 ước; 2025A không tách được KCN/đô thị (CTCK ước khác nhau). Thuế 20% trên phần lãi ngoài liên kết; VSIP H2/2026 ước 70% LN liên kết."
+  "ghi": "2026E = 9T thực tế (BCTC bán niên + Q3) + Q4 ước; 2025A không tách được KCN/đô thị (CTCK ước khác nhau). Thuế 20% trên phần lãi ngoài liên kết; VSIP Q3, Q4/2026 ước 70% LN liên kết."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   2032
+   2050
   ],
   "cuoi": [
    "2027E",
-   2885
+   2745
   ],
   "buoc": [
    [
     "Đất đô thị",
-    105
+    144
    ],
    [
     "Đất KCN",
@@ -323,29 +323,29 @@
    ],
    [
     "Liên doanh liên kết",
-    17
+    -40
    ],
    [
     "Lãi vay",
-    -77
+    -210
    ],
    [
     "Chi phí, dịch vụ, thuế",
-    -187
+    -194
    ]
   ],
-  "y": "Tăng chủ yếu từ đất KCN (60 ha so với 10); đất đô thị 3,5 so với 3,2 nghìn tỷ, liên kết đi ngang, lãi vay 2,0 nghìn tỷ kéo lại. Các mảng tính sau thuế 20%.",
+  "y": "Tăng chủ yếu từ đất KCN (60 ha so với 10); đất đô thị 3,0 so với 2,6 nghìn tỷ, liên kết đi ngang, lãi vay 1,9 nghìn tỷ kéo lại. Các mảng tính sau thuế 20%.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Đất đô thị: doanh thu H2/2026 · 2027 (tỷ)",
+   "ten": "Đất đô thị: doanh thu Q4/2026 · 2027 (tỷ)",
    "v": [
-    "1.200 · 2.500",
-    "2.200 · 3.500",
-    "3.800 · 4.500"
+    "500 · 2.000",
+    "1.000 · 3.000",
+    "2.000 · 4.000"
    ],
-   "ly_do": "6T/2026 ~1,0 nghìn tỷ (169 căn Hòa Lợi 752 tỷ); MBS ước Q3 ~400 căn Hòa Lợi; 2022–2025 ~3–4 nghìn tỷ/năm (ước từ BVSC)"
+   "ly_do": "9T/2026 ~1,6 nghìn tỷ (Q3 ~616 tỷ; ~400 căn Hòa Lợi MBS ước cho Q3 chưa ghi nhận); 4 quý gần nhất ~2,7 nghìn tỷ; 2022–2025 ~3–4 nghìn tỷ/năm (ước từ BVSC)"
   },
   {
    "ten": "Đất KCN bàn giao: Q4/2026 · 2027 (ha)",
@@ -368,11 +368,11 @@
   {
    "ten": "Lãi vay 2027 (tỷ)",
    "v": [
-    "2.250",
-    "2.050",
-    "1.850"
+    "2.100",
+    "1.900",
+    "1.700"
    ],
-   "ly_do": "Q2/2026 539 tỷ (×4 ≈ 2,2 nghìn tỷ); nợ vay 26,3 nghìn tỷ; MBS dự phóng nợ vay 28,8 nghìn tỷ cuối 2027"
+   "ly_do": "9T/2026 1.255 tỷ (Q2 539, Q3 373; ×4/3 ≈ 1,7 nghìn tỷ); nợ vay 26,3 nghìn tỷ, MBS dự phóng 28,8 nghìn tỷ cuối 2027 — bản cũ neo Q2 ×4 nên hạ 150 tỷ"
   },
   {
    "ten": "LN liên kết 2027: VSIP · khác (tỷ)",
@@ -381,7 +381,7 @@
     "1.600 · 800",
     "1.850 · 950"
    ],
-   "ly_do": "VSIP về BCM 1.607 tỷ 2025 (MBS), VSIP 6T/2026 −13%; liên kết khác 2025 1.021 tỷ, 6T/2026 ~314 tỷ"
+   "ly_do": "VSIP về BCM 1.607 tỷ 2025 (MBS), VSIP 6T/2026 −13%; liên kết khác 2025 1.021 tỷ, 6T/2026 ~314 tỷ; liên kết Q3 707 tỷ (+33%)"
   },
   {
    "ten": "Định giá VSIP (P/E)",
@@ -390,7 +390,7 @@
     "11",
     "13"
    ],
-   "ly_do": "Trung vị 8 DN KCN niêm yết 13,5 lần LN 4 quý; phần vốn liên doanh không niêm yết, Sembcorp nắm 51% nên thấp hơn"
+   "ly_do": "Trung vị 8 DN KCN niêm yết 11,6 lần LN 4 quý; phần vốn liên doanh không niêm yết, Sembcorp nắm 51% nên thấp hơn"
   },
   {
    "ten": "Quỹ đất: chiết khấu · giá đất tăng/năm",
@@ -408,30 +408,30 @@
     "0,55 · 0,70",
     "0,65 · 0,85"
    ],
-   "ly_do": "Giá vốn đất ~2 nghìn tỷ/năm → 23,1 nghìn tỷ thu về trong 10–15 năm; IJC, TDC, BCE, BWE giao dịch 0,76 lần sổ sách"
+   "ly_do": "Giá vốn đất ~2 nghìn tỷ/năm → 23,5 nghìn tỷ thu về trong 10–15 năm; IJC, TDC, BCE, BWE giao dịch 0,73 lần sổ sách"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 800,
-   "ln27": 755,
-   "gia": 19.2,
-   "mo_ta": "Đất đô thị 2,5 nghìn tỷ/năm, KCN 30 ha 2027 (50 ha/năm khi định giá), biên 60/57%; lãi vay 2,2 nghìn tỷ; VSIP 1.350 tỷ × P/E 9; chiết khấu 12,5%; tồn kho × 0,50"
+   "ln26": 1321,
+   "ln27": 605,
+   "gia": 17.9,
+   "mo_ta": "Đất đô thị 2,0 nghìn tỷ/năm, KCN 30 ha 2027 (50 ha/năm khi định giá), biên 60/57%; lãi vay 2,1 nghìn tỷ; VSIP 1.350 tỷ × P/E 9; chiết khấu 12,5%; tồn kho × 0,50"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 2032,
-   "ln27": 2885,
-   "gia": 36.4,
-   "mo_ta": "Đất đô thị 3,5 nghìn tỷ/năm, KCN 60 ha 2027 (70 ha/năm khi định giá), biên 65/60%; lãi vay 2,0 nghìn tỷ; VSIP 1.600 tỷ × P/E 11; chiết khấu 12,0%; tồn kho × 0,55"
+   "ln26": 2050,
+   "ln27": 2745,
+   "gia": 34.5,
+   "mo_ta": "Đất đô thị 3,0 nghìn tỷ/năm, KCN 60 ha 2027 (70 ha/năm khi định giá), biên 65/60%; lãi vay 1,9 nghìn tỷ; VSIP 1.600 tỷ × P/E 11; chiết khấu 12,0%; tồn kho × 0,55"
   },
   {
    "ten": "Tốt",
-   "ln26": 3590,
-   "ln27": 4905,
-   "gia": 61.3,
-   "mo_ta": "Đất đô thị 4,5 nghìn tỷ/năm, KCN 90 ha 2027 (90 ha/năm khi định giá), biên 68/63%; lãi vay 1,9 nghìn tỷ; VSIP 1.850 tỷ × P/E 13; chiết khấu 11,0%; tồn kho × 0,65"
+   "ln26": 3137,
+   "ln27": 4753,
+   "gia": 58.7,
+   "mo_ta": "Đất đô thị 4,0 nghìn tỷ/năm, KCN 90 ha 2027 (90 ha/năm khi định giá), biên 68/63%; lãi vay 1,7 nghìn tỷ; VSIP 1.850 tỷ × P/E 13; chiết khấu 11,0%; tồn kho × 0,65"
   }
  ],
  "dinh_gia": {
@@ -489,32 +489,32 @@
     "ten": "Quỹ đất: lãi chưa ghi nhận",
     "mau": "c2",
     "x": [
-     1257,
-     2106,
-     3095
+     1109,
+     1930,
+     2899
     ],
     "boi": [
-     9.82,
-     10.46,
-     11.91
+     9.66,
+     10.25,
+     11.64
     ],
     "boi_d": 1,
     "x_ten": "LN sau thuế/năm từ bán đất: đô thị + KCN",
     "boi_ten": "hệ số hiện giá (KCN 718 ha, đô thị 40 năm)",
     "sh": 1,
     "gt": [
-     12344,
-     22029,
-     36861
+     10713,
+     19782,
+     33744
     ]
    },
    {
     "ten": "Giá vốn đất đã chi",
     "mau": "c4",
     "x": [
-     23058,
-     23058,
-     23058
+     23497,
+     23497,
+     23497
     ],
     "boi": [
      0.5,
@@ -522,28 +522,28 @@
      0.65
     ],
     "boi_d": 2,
-    "x_ten": "hàng tồn kho 30/6/2026, thu về khi bán đất",
+    "x_ten": "hàng tồn kho 30/9/2026, thu về khi bán đất",
     "boi_ten": "hệ số hiện giá",
     "sh": 1,
     "gt": [
-     11529,
-     12682,
-     14988
+     11748,
+     12923,
+     15273
     ]
    }
   ],
   "von": [
-   19825,
-   37625,
-   63481
+   18488,
+   35694,
+   60724
   ],
   "gia": [
-   19.2,
-   36.4,
-   61.3
+   17.9,
+   34.5,
+   58.7
   ],
-  "no_rong": 25269,
-  "no_rong_ten": "Trừ nợ vay ròng 24,8 nghìn tỷ và phải trả ròng khác 0,5 nghìn tỷ (30/6/2026)"
+  "no_rong": 25194,
+  "no_rong_ten": "Trừ nợ vay ròng 24,6 nghìn tỷ và phải trả ròng khác 0,6 nghìn tỷ (30/9/2026)"
  },
  "nhay": [
   [
@@ -554,7 +554,7 @@
   [
    "Chiết khấu quỹ đất ±1 điểm %",
    null,
-   1.8
+   1.6
   ],
   [
    "P/E VSIP ±1 lần",
@@ -780,7 +780,7 @@
    1.69,
    2.05,
    1.88,
-   1.97
+   1.87
   ],
   "p10": 1.84,
   "p25": 2.26,
@@ -791,10 +791,10 @@
   ],
   "nay": [
    "2026-10",
-   1.97
+   1.87
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Giá trị cơ sở ≈ P/B 1,72 lần vốn chủ 30/6/2026 — dưới thấp 10% từ 2018 (1,84), trên đáy 3/2020 (1,24), ngang 2018–2020 (1,7–2,2); hiện 1,97. P/B bình quân 3,4–5,0 lần năm 2021–2025, khi lãi vay 0,8–1,4 nghìn tỷ/năm. Theo LN: P/E 13,1 lần LN 2027E."
+  "dung": "Giá trị cơ sở ≈ P/B 1,59 lần vốn chủ 30/9/2026 — dưới thấp 10% từ 2018 (1,84), trên đáy 3/2020 (1,24), ngang 2018–2020 (1,7–2,2); hiện 1,77. P/B bình quân 3,4–5,0 lần năm 2021–2025, khi lãi vay 0,8–1,4 nghìn tỷ/năm. Theo LN: P/E 13,0 lần LN 2027E."
  },
  "theo_doi": [
   {
@@ -811,38 +811,38 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    284,
-    933,
-    1624
+    466,
+    1195,
+    2282
    ],
    "ck": 1239
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    800,
-    2032,
-    3590
+    1321,
+    2050,
+    3137
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "27–31/10/2026",
+   "khi": "10/2026 (đã ra)",
    "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Cùng kỳ LN cổ đông 416 tỷ. MBS (28/9) ước 1.817 tỷ nhờ ~400 căn khu tái định cư Hòa Lợi; mô hình cơ sở 807 tỷ. Xem doanh thu BĐS, lãi vay.",
+   "tieu": "KQKD Q3/2026: 563 tỷ, dưới mô hình cũ",
+   "ct": "LN cổ đông 563 tỷ (+35%) so với mô hình cơ sở cũ 807 tỷ và MBS 1.817 tỷ: Hòa Lợi chưa ghi nhận, đất đô thị ~616 tỷ. Liên kết 707 tỷ, lãi vay 373 tỷ tốt hơn ước. Hạ đất đô thị 2027E 500 tỷ, lãi vay 150 tỷ.",
    "tac": [
-    "≥ 807 tỷ",
-    "khớp cơ sở; dưới 224 tỷ nghiêng về xấu"
+    "−1,9 nghìn đ/cp",
+    "giá trị cơ sở 36,4 → 34,5"
    ],
    "theo_doi": "LN cổ đông, lãi vay quý"
   },
   {
-   "khi": "Q4/2026",
+   "khi": "1/2027 (KQKD Q4)",
    "loai": "len",
-   "tieu": "Bán sỉ đất đô thị cuối năm",
-   "ct": "6T/2026 chỉ ~1,0 nghìn tỷ đất đô thị; kế hoạch LNST 3.883 tỷ cần ~3,6 nghìn tỷ ở H2. Green City 1.394 căn mở bán 4/2026; chung cư Lê Lợi 4.222 căn.",
+   "tieu": "Hòa Lợi, bán sỉ đất đô thị Q4",
+   "ct": "9T/2026 ~1,6 nghìn tỷ đất đô thị; đợt ~400 căn Hòa Lợi (MBS ước cho Q3) chưa ghi nhận — nếu vào Q4 là kịch bản tốt (Q4 2,0 nghìn tỷ). Kế hoạch LNST 3.883 tỷ cần ~3,0 nghìn tỷ ở Q4: gần như không đạt.",
    "tac": [
     "±2,2 nghìn đ/cp",
     "mỗi ±500 tỷ doanh thu đất đô thị/năm (LN ±260 tỷ)"
@@ -904,9 +904,9 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Lãi vay và nợ đến hạn",
-   "ct": "Nợ vay 26,3 nghìn tỷ, lãi vay Q2 +46%; nợ đến hạn 2026 ~5,8, 2028 ~7,7 nghìn tỷ (MBS). Kế hoạch đầu tư 127 nghìn tỷ 2026–2030, vốn chủ BCM góp 12,2 nghìn tỷ.",
+   "ct": "Nợ vay 26,3 nghìn tỷ (30/9), lãi vay 9T +30%; nợ đến hạn 2026 ~5,8, 2028 ~7,7 nghìn tỷ (MBS). Kế hoạch đầu tư 127 nghìn tỷ 2026–2030, vốn chủ BCM góp 12,2 nghìn tỷ.",
    "tac": [
-    "±211 tỷ LN",
+    "±210 tỷ LN",
     "mỗi 1 điểm % lãi suất vay (LN 2027E)"
    ],
    "theo_doi": "lãi vay quý, trái phiếu"
@@ -928,50 +928,50 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Liên doanh liên kết",
      "v": [
-      243,
       1182,
       271,
       543,
       530,
       1283,
       220,
-      513
+      513,
+      707
      ],
      "mau": "c1"
     },
     {
      "ten": "BCM tự làm (sau lãi vay, thuế)",
      "v": [
-      101,
       269,
       87,
       932,
       -114,
       -44,
       60,
-      -501
+      -501,
+      -143
      ],
      "mau": "c3"
     }
    ],
-   "y": "Phần tự làm lỗ 441 tỷ 6T/2026; 8 quý gần nhất liên kết mang về 4.786 tỷ, tổng LN 5.576 tỷ.",
+   "y": "Phần tự làm lỗ 584 tỷ 9T/2026 (Q3 −144); 8 quý gần nhất liên kết mang về 5.250 tỷ, tổng LN 5.795 tỷ.",
    "ng": "BCTC (VNDirect): LN cổ đông − LN liên doanh liên kết"
   },
   {
-   "ten": "6T/2025 và 6T/2026",
+   "ten": "9T/2025 và 9T/2026",
    "kieu": "cot",
    "dv": "tỷ",
    "so_le": 0,
@@ -984,30 +984,30 @@
    ],
    "ss": [
     {
-     "ten": "6T/2025",
+     "ten": "9T/2025",
      "v": [
-      4746,
-      2612,
-      661,
-      815,
-      1834
+      5574,
+      3122,
+      968,
+      1344,
+      2250
      ],
      "mau": "c4"
     },
     {
-     "ten": "6T/2026",
+     "ten": "9T/2026",
      "v": [
-      1650,
-      987,
-      881,
-      733,
-      292
+      2591,
+      1530,
+      1255,
+      1440,
+      855
      ],
      "mau": "c1"
     }
    ],
-   "y": "Doanh thu −65%, lãi vay +33%, liên kết −10%: LN cổ đông còn 292 tỷ (−84%).",
-   "ng": "BCTC bán niên (VNDirect)"
+   "y": "Doanh thu −54%, lãi vay +30%, liên kết +7%: LN cổ đông còn 855 tỷ (−62%).",
+   "ng": "BCTC bán niên + Q3/2026 (VNDirect)"
   },
   {
    "ten": "Nợ vay và hàng tồn kho",
@@ -1015,26 +1015,26 @@
    "dv": "nghìn tỷ",
    "so_le": 1,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Nợ vay",
      "v": [
-      20.7,
       23.6,
       23.4,
       22.3,
       22.2,
       23.9,
       25.5,
+      26.3,
       26.3
      ],
      "mau": "c1"
@@ -1042,19 +1042,19 @@
     {
      "ten": "Hàng tồn kho",
      "v": [
-      20.9,
       21.1,
       21.8,
       21.3,
       22.2,
       22.2,
       22.6,
-      23.1
+      23.1,
+      23.5
      ],
      "mau": "c3"
     }
    ],
-   "y": "Nợ vay +5,7 nghìn tỷ từ 9/2024, tồn kho +2,2; đầu tư liên doanh liên kết tăng 5,2 nghìn tỷ trong 2025 (MBS), có 735 tỷ góp thêm vào VSIP.",
+   "y": "Nợ vay +5,6 nghìn tỷ từ 9/2024, tồn kho +2,6; đầu tư liên doanh liên kết tăng 5,2 nghìn tỷ trong 2025 (MBS), có 735 tỷ góp thêm vào VSIP.",
    "ng": "BCTC (VNDirect) · MBS 13/05 · VietnamFinance"
   },
   {
@@ -1106,32 +1106,32 @@
    {
     "ten": "Tổng doanh thu (gồm tài chính, liên kết)",
     "kh": 10230,
-    "th": 2467,
-    "ky": "6T",
-    "tg": 50,
+    "th": 4134,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ 25/6/2026 · BCTC"
    },
    {
     "ten": "Lợi nhuận trước thuế",
     "kh": 4130,
-    "th": 255,
-    "ky": "6T",
-    "tg": 50,
+    "th": 796,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "MBS 13/05 · BCTC"
    },
    {
     "ten": "Lợi nhuận sau thuế",
     "kh": 3883,
-    "th": 307,
-    "ky": "6T",
-    "tg": 50,
+    "th": 886,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
     "ng": "ĐHĐCĐ 25/6/2026 · BCTC"
    }
   ],
-  "y": "6T đạt 8% LNST kế hoạch. Mô hình cơ sở: LNST 2026E ~2,1 nghìn tỷ (53% kế hoạch); kịch bản tốt 3,6 nghìn tỷ.",
+  "y": "9T đạt 23% LNST kế hoạch (Q3 thuế âm 38 tỷ: LNST 579 > LNTT 542). Mô hình cơ sở: LNST 2026E ~2,1 nghìn tỷ (54% kế hoạch); kịch bản tốt 3,2 nghìn tỷ.",
   "ng": ""
  },
  "mang": [
@@ -1238,14 +1238,14 @@
      "ng": "MBS 13/05 · BVSC 03/2026"
     },
     {
-     "t": "4 mã niêm yết (IJC, BWE, TDC, BCE) phần BCM trị giá 4,6 nghìn tỷ theo giá 23/10, 0,76 lần sổ sách.",
-     "ng": "giá 23/10 · BCTC VNDirect"
+     "t": "4 mã niêm yết (IJC, BWE, TDC, BCE) phần BCM trị giá 4,7 nghìn tỷ theo giá 30/10, 0,73 lần sổ sách. Q3: IJC −47%, BWE, BCE tăng.",
+     "ng": "giá 30/10 · BCTC VNDirect"
     }
    ]
   },
   {
    "ten": "Vốn, nợ, cổ đông",
-   "phu": "Bảng cân đối hợp nhất 30/6/2026",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026",
    "so": [
     [
      "Nợ vay",
@@ -1259,7 +1259,7 @@
     ],
     [
      "Hàng tồn kho",
-     "23,1 nghìn tỷ",
+     "23,5 nghìn tỷ",
      ""
     ],
     [
@@ -1315,7 +1315,7 @@
    "tang": "Doanh nghiệp",
    "y": [
     {
-     "t": "Lãi vay 6T/2026 881 tỷ vượt LN liên kết 733 tỷ; nợ vay 26,3 nghìn tỷ.",
+     "t": "Lãi vay 9T/2026 1.255 tỷ (+30%) gần bằng LN liên kết 1.440 tỷ; nợ vay 26,3 nghìn tỷ.",
      "h": -1,
      "ng": "BCTC VNDirect"
     },
@@ -1325,7 +1325,7 @@
      "ng": "Báo chí (BCTC VSIP)"
     },
     {
-     "t": "P/E 4 quý 22,1 lần so với trung vị 13,5 của 8 doanh nghiệp KCN niêm yết.",
+     "t": "P/E 4 quý 19,0 lần so với trung vị 11,6 của 8 doanh nghiệp KCN niêm yết.",
      "h": 0,
      "ng": "BCTC VNDirect"
     }
@@ -1415,6 +1415,16 @@
    "ten": "BVSC — Báo cáo lần đầu: quỹ đất công nghiệp và đô thị lớn tại Bình Dương",
    "ngay": "12/03/2026",
    "link": "https://cdn.simplize.vn/simplizevn/report/BCM/Quy_at_cong_nghiep_va_o_thi_lon_tai_Binh_Duong_trien_vong_tich_cuc_nho_vao_ong_gop_tu_cong_ty_lien_doanh_lien_ket.pdf"
+  },
+  {
+   "ten": "Doanh nhân — Becamex IJC giảm 47% lợi nhuận quý 3/2026",
+   "ngay": "10/2026",
+   "link": "https://doanhnhan.baophapluat.vn/becamex-ijc-ijc-giam-47-loi-nhuan-quy-3-dong-tien-kinh-doanh-am-hon-1-000-ty-dong.html"
+  },
+  {
+   "ten": "Doanh nhân — Becamex BCE báo lãi quý 3/2026 đột biến nhờ Green City",
+   "ngay": "10/2026",
+   "link": "https://doanhnhan.baophapluat.vn/becamex-bce-bce-bao-lai-quy-3-dot-bien-nho-du-an-green-city-dong-tien-kinh-doanh-am-nang.html"
   },
   {
    "ten": "Người Quan sát — MBS dự báo LN Q3/2026 1.817 tỷ nhờ Hòa Lợi",
