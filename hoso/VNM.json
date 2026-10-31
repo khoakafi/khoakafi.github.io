@@ -3,9 +3,9 @@
  "ma": "VNM",
  "ten": "Công ty Cổ phần Sữa Việt Nam (Vinamilk)",
  "nganh": "Thực phẩm – sữa",
- "ky": "BCTC Q2/2026 · họp nhà đầu tư 07/08/2026",
- "cap_nhat": "2026-10-17",
- "lan_sau": "sau BCTC Q3/2026",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026 (biên gộp Q4, hợp đồng sữa bột 2027)",
  "cp_trieu": 2090.0,
  "cp_ng": "Vốn điều lệ 20.899,6 tỷ ÷ 10.000 đ (BCTC Q2/2026), không có cổ phiếu quỹ; khớp số lưu hành của MAS, Shinhan, FPTS",
  "co_tuc": [
@@ -16,31 +16,31 @@
   ]
  ],
  "tieu_de": {
-  "t": "Lãi về sát đỉnh 2020, P/E về vùng thấp nhất từ 2015: giá đã trừ hao rủi ro sữa bột 2027",
+  "t": "Lãi 4 quý vượt đỉnh 2020, P/E thấp nhất từ 2015: giá đã trừ hao rủi ro sữa bột 2027",
   "dk": "up_tren:15",
-  "khac": "Lãi về sát đỉnh 2020 nhờ biên gộp; 2027 là phép thử khi mua sữa bột giá mới"
+  "khac": "Lãi vượt đỉnh 2020 nhưng biên gộp Q3 đã hạ: 2027 là phép thử sữa bột giá mới"
  },
- "dong_mo": "6 tháng 2026, LN cổ đông 5.596 tỷ (+38,4%) nhờ biên gộp 43,1% và doanh thu nước ngoài +39%. Nguyên liệu đã chốt giá đến cuối năm, nên rủi ro dồn vào 2027 khi mua sữa bột giá mới. P/E × LN 2027E cho {gt} ({up}); kịch bản xấu — biên gộp về mức 2022 — 50,2; cán cân lên/xuống {rr} lần.",
+ "dong_mo": "9 tháng 2026, LN cổ đông 8.560 tỷ (+30,3%); 4 quý đến Q3 vượt đỉnh 2020. Q3 lãi 2.964 tỷ (+17,3%) nhưng biên gộp lùi về 41,4% (Q2 43,5%): sữa bột giá mới đã vào giá vốn, rủi ro 2027 là có thật. P/E × LN 2027E cho {gt} ({up}); kịch bản xấu — biên gộp về mức 2022 — 51,9; cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "+38%",
-   "nhan": "LN cổ đông 6T/2026",
-   "tieu": "Lợi nhuận thoát vùng đi ngang 5 năm",
-   "t": "6T: 5.596 tỷ; 4 quý đến Q2 đạt 10.963 tỷ, sát đỉnh 2020 (11.099). Doanh thu +17,8% — nội địa +12,4% (Q1 nền thấp sau tái cấu trúc kênh, Q2 +6,5%), nước ngoài +39% — và biên gộp 43,1% (+2,1 điểm %) nhờ sữa bột mua giá thấp. Mô hình: 2026E 11.342 tỷ (+20,5%), cao hơn bình quân Shinhan, FPTS, Mirae Asset 9% vì giữ biên gộp 2H 42,3% — ban lãnh đạo nói \"ổn định\".",
-   "ng": "BCTC Q2 · MBS 07/08 · Shinhan 11/08 · mô hình"
+   "so": "+30%",
+   "nhan": "LN cổ đông 9T/2026",
+   "tieu": "Lợi nhuận vượt đỉnh 2020 sau 5 năm đi ngang",
+   "t": "9T: 8.560 tỷ; 4 quý đến Q3 đạt 11.400 tỷ, lần đầu vượt đỉnh 2020 (11.099). Q3: 2.964 tỷ (+17,3%), doanh thu +8,9%; bỏ lỗ liên kết 194 tỷ ở Q3/2025 thì LNTT chỉ +10%, một phần nhờ doanh thu tài chính 600 tỷ (cao nhất 12 quý). Mô hình: 2026E 11.468 tỷ (+21,9%), cao hơn bình quân Shinhan, FPTS, Mirae Asset 10%; Q4 cơ sở 2.908 tỷ (+2%): chi phí bán hàng về mức thường (Q4/2025 chỉ 21,9% doanh thu).",
+   "ng": "BCTC Q3 (VNDirect) · Shinhan 11/08 · mô hình"
   },
   {
    "so": "±9%",
    "nhan": "LN 2027E mỗi 10% giá sữa bột",
-   "tieu": "2027: biên gộp mới là phép thử",
-   "t": "2020→2022 doanh thu gần như đứng yên (59,6 → 60,0 nghìn tỷ) nhưng biên gộp rơi từ 46,4% xuống 39,9% khi sữa bột tăng giá, LN cổ đông −23%. Sữa bột ~29% giá vốn; giá đã chốt đến hết 2026, cao hơn cùng kỳ. Mỗi 10% giá sữa bột ≈ 1,7 điểm % biên gộp, 1.020 tỷ LN. Cơ sở: biên 2027 41,8%, LN đi ngang; xấu: 39,6% như 2022, LN 8.747 tỷ.",
-   "ng": "BCTC · FPTS 14/08 · KAFI 13/08 · mô hình"
+   "tieu": "2027: biên gộp mới là phép thử — Q3 đã hé lộ",
+   "t": "Q3 xác nhận rủi ro đến sớm: biên gộp 41,4%, giảm 2,2 điểm % so với Q2, 0,4 điểm % so với cùng kỳ. 2020→2022 doanh thu gần như đứng yên (59,6 → 60,0 nghìn tỷ) nhưng biên gộp rơi từ 46,4% xuống 39,9% khi sữa bột tăng giá, LN cổ đông −23%. Sữa bột ~29% giá vốn; mỗi 10% giá ≈ 1,7 điểm % biên gộp, 1.040 tỷ LN. Cơ sở: biên 2027 41,3% (trước 41,8%), LN đi ngang; xấu: 39,6% như 2022, LN 9.047 tỷ.",
+   "ng": "BCTC Q3 · FPTS 14/08 · KAFI 13/08 · mô hình"
   },
   {
    "so": "+39%",
    "nhan": "doanh thu nước ngoài 6T/2026",
    "tieu": "Nước ngoài thành động cơ thứ hai — nhưng phần \"trúng\" Campuchia sẽ nhạt",
-   "t": "Nước ngoài 8.400 tỷ, 24% doanh thu 6T. Angkor Milk lấp chỗ hàng Thái bị tẩy chay sau xung đột biên giới 7/2025: doanh thu Q2 +242%, LN +210%. Xuất khẩu (Iraq ~68%) vẫn tăng dù eo Hormuz gián đoạn, nhưng đi vòng Biển Đỏ – Jordan và nguyên liệu đắt hơn kéo biên gộp nước ngoài Q2 xuống 41,1% (−2,2 điểm %). Nền Q3–Q4/2025 đã cao (+33%, +21%): mô hình +15% cho 2H/2026, +8% cho 2027.",
+   "t": "Nước ngoài 8.400 tỷ, 24% doanh thu 6T. Angkor Milk lấp chỗ hàng Thái bị tẩy chay sau xung đột biên giới 7/2025: doanh thu Q2 +242%, LN +210%. Xuất khẩu (Iraq ~68%) vẫn tăng dù eo Hormuz gián đoạn, nhưng đi vòng Biển Đỏ – Jordan và nguyên liệu đắt hơn kéo biên gộp nước ngoài Q2 xuống 41,1% (−2,2 điểm %). Nền Q3–Q4/2025 đã cao (+33%, +21%): mô hình +15% cho Q4/2026, +8% cho 2027. VNM chưa công bố tách Q3/2026.",
    "ng": "MBS 07/08 · Shinhan 11/08 · FPTS 14/08 · mô hình"
   },
   {
@@ -48,13 +48,13 @@
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/E 13 × LN 2027E: {up_so} so với giá hiện tại",
    "dk": "up_tren:15",
-   "t": "P/E của VNM giảm dần theo tăng trưởng: bình quân 24,7 (2018), 15,3 (2024), 14,0 (2025), tháng 10/2026 còn 10,9 — thấp nhất từ 2015. Ở giá 16/10, thị trường trả 13,8 lần cho LN 2027E kịch bản xấu. Cơ sở dùng 13, dưới mức thấp 25% từ 2024 (13,4); xấu 12 → 50,2, tốt 14,5 → 90,6. Tiền ròng 18.000 tỷ (~8,6 nghìn đ/cp); cổ tức 2025 4.350 đ/cp.",
-   "ng": "mô hình · P/E: BCTC VNDirect · BCTC Q2",
+   "t": "P/E của VNM giảm dần theo tăng trưởng: bình quân 24,7 (2018), 15,3 (2024), 14,0 (2025), tháng 10/2026 còn 10,8 — thấp nhất từ 2015. Ở giá 30/10, thị trường trả 13,1 lần cho LN 2027E kịch bản xấu. Cơ sở dùng 13, dưới mức thấp 25% từ 2024 (13,4); xấu 12 → 51,9, tốt 14,5 → 90,3. Tiền ròng 18.100 tỷ (~8,6 nghìn đ/cp); cổ tức 2025 4.350 đ/cp.",
+   "ng": "mô hình · P/E: BCTC VNDirect · BCTC Q3",
    "khac": {
     "so": "{gt_so}",
     "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
     "tieu": "P/E 13 × LN 2027E: {up_so} so với giá hiện tại",
-    "t": "P/E của VNM giảm dần theo tăng trưởng: bình quân 24,7 (2018), 15,3 (2024), 14,0 (2025). Cơ sở dùng 13, dưới mức thấp 25% từ 2024 (13,4); xấu 12 → 50,2, tốt 14,5 → 90,6. Tiền ròng 18.000 tỷ (~8,6 nghìn đ/cp) và cổ tức 2025 4.350 đ/cp là phần đỡ giá nếu biên gộp 2027 giảm sâu hơn kịch bản cơ sở."
+    "t": "P/E của VNM giảm dần theo tăng trưởng: bình quân 24,7 (2018), 15,3 (2024), 14,0 (2025). Cơ sở dùng 13, dưới mức thấp 25% từ 2024 (13,4); xấu 12 → 51,9, tốt 14,5 → 90,3. Tiền ròng 18.100 tỷ (~8,6 nghìn đ/cp) và cổ tức 2025 4.350 đ/cp là phần đỡ giá nếu biên gộp 2027 giảm sâu hơn kịch bản cơ sở."
    }
   }
  ],
@@ -66,14 +66,14 @@
   ],
   "ln": [
    9410,
-   11342,
-   11418
+   11468,
+   11416
   ],
   "ln_truoc": 9392,
   "eps": [
    4502,
-   5427,
-   5463
+   5487,
+   5462
   ],
   "co_tuc_nam": 4350,
   "them": [
@@ -81,8 +81,8 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      63.6,
-     70.8,
-     74.5
+     71.4,
+     75.2
     ],
     "d": 1
    },
@@ -90,8 +90,8 @@
     "ten": "Biên gộp",
     "v": [
      41.2,
-     42.7,
-     41.8
+     42.1,
+     41.3
     ],
     "d": 1,
     "pt": 1
@@ -114,8 +114,8 @@
     "mau": "c1",
     "v": [
      21013,
-     23665,
-     24204
+     23485,
+     24176
     ]
    },
    {
@@ -123,8 +123,8 @@
     "mau": "c2",
     "v": [
      5196,
-     6583,
-     6931
+     6565,
+     6844
     ]
    }
   ],
@@ -154,10 +154,10 @@
    ]
   ],
   "tv": 16.3,
-  "moi_cp": 5245,
+  "moi_cp": 5455,
   "max": 30,
-  "y": "ROE 4 quý của VNM ~34%, cao hơn cả nhóm (11–32%); P/E thấp hơn vì doanh thu 2021–2025 chỉ tăng 1,1%/năm và LN chưa vượt đỉnh 2020.",
-  "ng": "P/E, ROE cùng ngành: bảng so sánh Shinhan 11/08 (Bloomberg, bình quân 16,8); VNM: LN cổ đông 4 quý đến Q2/2026"
+  "y": "ROE 4 quý của VNM ~35%, cao hơn cả nhóm (11–32%); P/E thấp hơn vì doanh thu 2021–2025 chỉ tăng 1,1%/năm và LN 4 quý mới vượt đỉnh 2020 ở Q3/2026.",
+  "ng": "P/E, ROE cùng ngành: bảng so sánh Shinhan 11/08 (Bloomberg, bình quân 16,8); VNM: LN cổ đông 4 quý đến Q3/2026"
  },
  "mo_hinh": {
   "tieu": "Dự phóng theo thị trường",
@@ -174,8 +174,8 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      51.0,
-     54.8,
-     57.2
+     55.3,
+     57.8
     ],
     "d": 1,
     "tang": 1
@@ -184,8 +184,8 @@
     "ten": "Biên gộp (%)",
     "v": [
      41.2,
-     43.2,
-     42.3
+     42.4,
+     41.8
     ],
     "d": 1
    },
@@ -206,8 +206,8 @@
     "ten": "Biên gộp (%)",
     "v": [
      41.0,
-     41.0,
-     40.0
+     40.9,
+     39.5
     ],
     "d": 1
    },
@@ -218,8 +218,8 @@
     "ten": "Doanh thu thuần (nghìn tỷ)",
     "v": [
      63.6,
-     70.8,
-     74.5
+     71.4,
+     75.2
     ],
     "d": 1,
     "tang": 1
@@ -228,8 +228,8 @@
     "ten": "Biên gộp (%)",
     "v": [
      41.2,
-     42.7,
-     41.8
+     42.1,
+     41.3
     ],
     "d": 1
    },
@@ -237,7 +237,7 @@
     "ten": "Chi phí bán hàng & QLDN / doanh thu (%)",
     "v": [
      24.4,
-     24.6,
+     24.3,
      24.3
     ],
     "d": 1
@@ -246,16 +246,16 @@
     "ten": "Tài chính, liên kết & khác (tỷ)",
     "v": [
      986,
-     1223,
-     1200
+     1504,
+     1400
     ]
    },
    {
     "ten": "LNTT (tỷ)",
     "v": [
      11650,
-     14069,
-     14220
+     14198,
+     14155
     ],
     "tang": 1
    },
@@ -263,8 +263,8 @@
     "ten": "LN cổ đông (tỷ)",
     "v": [
      9410,
-     11342,
-     11418
+     11468,
+     11416
     ],
     "dam": 1,
     "tang": 1
@@ -273,107 +273,107 @@
     "ten": "EPS (đ)",
     "v": [
      4502,
-     5427,
-     5463
+     5487,
+     5462
     ],
     "eps": 1
    }
   ],
-  "ghi": "Doanh thu theo thị trường: VNM công bố; biên gộp theo thị trường: Shinhan 11/08 (2025 suy từ % tăng). 2026E = 6 tháng thực tế + 6 tháng ước tính; thuế 19%. 2025 có lỗ liên kết −194 tỷ ở Q3."
+  "ghi": "Doanh thu theo thị trường: VNM công bố; biên gộp theo thị trường: Shinhan 11/08 (2025 suy từ % tăng). 2026E = 9 tháng thực tế + Q4 ước tính; Q3/2026 tách theo thị trường là ước tính (VNM chưa công bố). Thuế 19%. 2025 có lỗ liên kết −194 tỷ ở Q3."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   11342
+   11468
   ],
   "cuoi": [
    "2027E",
-   11418
+   11416
   ],
   "buoc": [
    [
     "Doanh thu nội địa +4,5%",
-    862
+    857
    ],
    [
     "Doanh thu nước ngoài +8%",
-    427
+    425
    ],
    [
     "Biên gộp (sữa bột giá mới)",
-    -571
+    -496
    ],
    [
     "Chi phí bán hàng & QLDN",
-    -578
+    -736
    ],
    [
     "Tài chính, liên kết & khác",
-    -18
+    -84
    ],
    [
     "Thuế suất, cổ đông thiểu số",
-    -46
+    -18
    ]
   ],
-  "y": "Doanh thu tăng góp thêm 1.289 tỷ, nhưng biên gộp (−571 tỷ, sữa bột giá mới) và chi phí bán hàng (−578 tỷ) lấy lại gần hết — LN 2027 đi ngang.",
+  "y": "Doanh thu tăng góp thêm 1.282 tỷ, nhưng biên gộp (−496 tỷ, sữa bột giá mới) và chi phí bán hàng (−736 tỷ) lấy lại gần hết — LN 2027 đi ngang.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Doanh thu nội địa: 2H/2026 · 2027",
+   "ten": "Doanh thu nội địa: Q4/2026 · 2027",
    "v": [
     "−2 / 0%",
     "+3 / +4,5%",
-    "+6,5 / +6,5%"
+    "+6 / +6,5%"
    ],
-   "ly_do": "6T/2026 +12,4% (Q2 +6,5%, Q1 nền thấp sau tái cấu trúc kênh); 2H/2025 +6%; FPTS: 2H/2026 −2%, 2027–2030 +4,6%/năm"
+   "ly_do": "6T/2026 +12,4% (Q2 +6,6%); Q3 hợp nhất +8,9%; Q4/2025 +7,8%; FPTS: 2H/2026 −2%, 2027–2030 +4,6%/năm"
   },
   {
-   "ten": "Doanh thu nước ngoài: 2H/2026 · 2027",
+   "ten": "Doanh thu nước ngoài: Q4/2026 · 2027",
    "v": [
     "+5 / −3%",
     "+15 / +8%",
     "+25 / +12%"
    ],
-   "ly_do": "6T/2026 +39,1%; nền Q3/2025 +32,6%, Q4/2025 +21%; FPTS, Shinhan 2H/2026 +13–14%; Angkor Milk hết nền thấp"
+   "ly_do": "6T/2026 +39,1%; nền Q4/2025 +21%; FPTS, Shinhan 2H/2026 +13–14%; Angkor Milk hết nền thấp"
   },
   {
-   "ten": "Biên gộp nội địa: 2H/2026 · 2027",
+   "ten": "Biên gộp nội địa: Q4/2026 · 2027",
    "v": [
-    "41,5 / 40,0%",
-    "42,8 / 42,3%",
-    "43,6 / 43,2%"
+    "39,5 / 40,0%",
+    "41,0 / 41,8%",
+    "42,0 / 42,8%"
    ],
-   "ly_do": "6T/2026 43,7%, 2H/2025 41,7%; nguyên liệu chốt giá đến cuối 2026, cao hơn cùng kỳ (Shinhan); 2022 hợp nhất 39,9%"
+   "ly_do": "Q3 hợp nhất 41,4% (Q2 43,5%); Q4 thường thấp hơn Q3 ~1 điểm %; 2027 hạ 0,5 điểm % sau Q3; 2022 39,9%"
   },
   {
-   "ten": "Biên gộp nước ngoài: 2H/2026 · 2027",
+   "ten": "Biên gộp nước ngoài: Q4/2026 · 2027",
    "v": [
-    "38,5 / 38,0%",
-    "40,5 / 40,0%",
-    "41,5 / 41,0%"
+    "38,0 / 38,0%",
+    "40,0 / 39,5%",
+    "41,0 / 40,5%"
    ],
-   "ly_do": "6T/2026 41,5%, Q2 41,1% (−2,2 điểm % vì vận chuyển vòng Biển Đỏ); 2H/2025 39,1%"
+   "ly_do": "6T/2026 41,5%, Q2 41,1% (−2,2 điểm % vì vận chuyển vòng Biển Đỏ); 2H/2025 39,1%; 2027 hạ 0,5 điểm % sau Q3"
   },
   {
-   "ten": "Chi phí bán hàng & QLDN / doanh thu: 2H/2026 · 2027",
+   "ten": "Chi phí bán hàng & QLDN / doanh thu: Q4/2026 · 2027",
    "v": [
-    "25,0 / 25,0%",
-    "24,0 / 24,3%",
-    "23,0 / 23,5%"
+    "24,5 / 25,0%",
+    "23,0 / 24,3%",
+    "22,0 / 23,5%"
    ],
-   "ly_do": "6T/2026 25,2% (6T/2025 26,2%), 2H/2025 22,9%, 2024 24,6%; quảng cáo, khuyến mại kỷ niệm 50 năm dồn vào 2026"
+   "ly_do": "Q3 24,0%, 9T 24,8% (9T/2025 25,3%); Q4/2025 21,9%, Q4/2024 25,2%; 2024 24,6%"
   },
   {
-   "ten": "Tài chính, liên kết & khác (tỷ): 2H/2026 · 2027",
+   "ten": "Tài chính, liên kết & khác (tỷ): Q4/2026 · 2027",
    "v": [
-    "450 / 950",
-    "600 / 1.200",
-    "700 / 1.300"
+    "250 / 1.050",
+    "400 / 1.400",
+    "500 / 1.550"
    ],
-   "ly_do": "6T/2026 623 (lãi tiền gửi trên ~26,5 nghìn tỷ tiền và đầu tư ngắn hạn); 2025 986 gồm lỗ liên kết −194 tỷ; CTCK 2027F 0,9–1,3 nghìn tỷ"
+   "ly_do": "9T/2026 1.104 (Q3 481, tiền và đầu tư ngắn hạn ~26,5 nghìn tỷ); 2025 986; CTCK 2027F 0,9–1,3 nghìn tỷ"
   },
   {
    "ten": "P/E (× LN 2027E)",
@@ -388,24 +388,24 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 10254,
-   "ln27": 8747,
-   "gia": 50.2,
+   "ln26": 10777,
+   "ln27": 9047,
+   "gia": 51.9,
    "mo_ta": "Nội địa 2027 đi ngang, nước ngoài −3%; biên gộp về 39,6% (như 2022), chi phí bán hàng 25% doanh thu; P/E 12"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 11342,
-   "ln27": 11418,
+   "ln26": 11468,
+   "ln27": 11416,
    "gia": 71.0,
-   "mo_ta": "Nội địa 2027 +4,5%, nước ngoài +8%; biên gộp 41,8%, chi phí bán hàng 24,3%; P/E 13"
+   "mo_ta": "Nội địa 2027 +4,5%, nước ngoài +8%; biên gộp 41,3%, chi phí bán hàng 24,3%; P/E 13"
   },
   {
    "ten": "Tốt",
-   "ln26": 12216,
-   "ln27": 13054,
-   "gia": 90.6,
-   "mo_ta": "Nội địa 2027 +6,5%, nước ngoài +12%; biên gộp 42,7% (giữ mức 2026), chi phí bán hàng 23,5%; P/E 14,5"
+   "ln26": 11956,
+   "ln27": 13013,
+   "gia": 90.3,
+   "mo_ta": "Nội địa 2027 +6,5%, nước ngoài +12%; biên gộp 42,3% (giữ mức 2026), chi phí bán hàng 23,5%; P/E 14,5"
   }
  ],
  "dinh_gia": {
@@ -418,9 +418,9 @@
     "ten": "LN cổ đông 2027E",
     "mau": "c1",
     "x": [
-     8747,
-     11418,
-     13054
+     9047,
+     11416,
+     13013
     ],
     "boi": [
      12,
@@ -431,21 +431,21 @@
     "x_ten": "LN 2027E",
     "boi_ten": "P/E",
     "gt": [
-     104964,
-     148434,
-     189283
+     108564,
+     148408,
+     188688
     ]
    }
   ],
   "von": [
-   104964,
-   148434,
-   189283
+   108564,
+   148408,
+   188688
   ],
   "gia": [
-   50.2,
+   51.9,
    71.0,
-   90.6
+   90.3
   ]
  },
  "pe_ls": {
@@ -736,18 +736,18 @@
    12.4,
    11.9,
    11.3,
-   10.9
+   10.8
   ],
   "p10": 13.8,
   "p25": 15.9,
   "tv": 18.2,
   "thap": [
    "2026-10",
-   10.9
+   10.8
   ],
   "nay": [
    "2026-10",
-   10.9
+   10.8
   ],
   "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
   "dung": "P/E của VNM giảm dần theo tăng trưởng (bình quân 24,7 năm 2018, 14,0 năm 2025) nên kịch bản neo vào vùng từ 2024: 12 ≈ thấp 10% (11,9), 13 dưới thấp 25% (13,4), 14,5 ≈ bình quân 2024–2025."
@@ -755,8 +755,8 @@
  "nhay": [
   [
    "Giá sữa bột 2027 ±10% (giữ giá bán)",
-   1020,
-   6.3
+   1037,
+   6.4
   ],
   [
    "P/E ±1 lần",
@@ -765,18 +765,18 @@
   ],
   [
    "Chi phí bán hàng & QLDN ±0,5 điểm % doanh thu",
-   302,
+   304,
    1.9
   ],
   [
    "Doanh thu nội địa 2027 ±3%",
-   240,
+   235,
    1.5
   ],
   [
    "Doanh thu nước ngoài 2027 ±10%",
-   204,
-   1.3
+   198,
+   1.2
   ]
  ],
  "theo_doi": [
@@ -794,38 +794,49 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    2329,
-    2873,
-    3310
+    2217,
+    2908,
+    3396
    ],
    "ck": 2840
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    10254,
-    11342,
-    12216
+    10777,
+    11468,
+    11956
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "10/2026",
+   "khi": "Đã ra 10/2026",
    "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Mô hình dự phóng LN cổ đông 2.873 tỷ (+14%; Q3/2025 có lỗ liên kết 194 tỷ). Từ quý này giá vốn bắt đầu phản ánh sữa bột chốt giá cao hơn (FPTS).",
+   "tieu": "KQKD Q3/2026: lãi vượt dự phóng, biên gộp hụt",
+   "ct": "LN cổ đông 2.964 tỷ (+17,3%), vượt mô hình cũ (2.873) 3% nhờ doanh thu tài chính và nền lỗ liên kết; biên gộp 41,4% thấp hơn giả định 2H (42,4%). Mô hình hạ biên gộp 2027 0,5 điểm %, nâng thu nhập tài chính.",
    "tac": [
-    "≥ 2.870 tỷ",
-    "giữ kịch bản cơ sở; dưới 2.330 tỷ nghiêng về kịch bản xấu"
+    "71,0 nghìn đ/cp",
+    "giá trị cơ sở giữ nguyên: biên gộp hạ, thu nhập tài chính bù lại"
+   ],
+   "theo_doi": "biên gộp Q4"
+  },
+  {
+   "khi": "01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Mô hình cơ sở LN cổ đông 2.908 tỷ (+2% so với Q4/2025), biên gộp 40,8%. Q4 thường thấp hơn Q3 ~1 điểm % biên gộp; dưới 40% là dấu hiệu nghiêng về kịch bản xấu cho 2027.",
+   "tac": [
+    "≥ 2.910 tỷ",
+    "giữ kịch bản cơ sở; dưới 2.220 tỷ nghiêng về kịch bản xấu"
    ],
    "theo_doi": "biên gộp, chi phí bán hàng"
   },
   {
-   "khi": "10–12/2026",
+   "khi": "11–12/2026",
    "loai": "len",
    "tieu": "Tạm ứng cổ tức 2026",
-   "ct": "ĐHĐCĐ đặt tối thiểu 50% LNST 2026; 2022–2025 VNM chi 91–97% (KAFI). Năm 2025 tạm ứng 2.500 đ/cp, GDKHQ 16/10/2025.",
+   "ct": "ĐHĐCĐ đặt tối thiểu 50% LNST 2026; 2022–2025 VNM chi 91–97% (KAFI). Năm 2025 tạm ứng 2.500 đ/cp, GDKHQ 16/10/2025; năm nay đến 30/10 chưa có nghị quyết tạm ứng.",
    "tac": "",
    "theo_doi": "nghị quyết HĐQT"
   },
@@ -834,9 +845,9 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Hợp đồng sữa bột cho 2027",
-   "ct": "Giá đã chốt đến hết 2026, cao hơn cùng kỳ (KAFI, Shinhan); giá SMP thế giới 6T/2026 +14,7% (FPTS). Biên gộp phản ánh trễ 1–2 quý.",
+   "ct": "Giá đã chốt đến hết 2026, cao hơn cùng kỳ (KAFI, Shinhan); giá SMP thế giới 6T/2026 +14,7% (FPTS). Biên gộp Q3 41,4% (Q2 43,5%): giá vốn mới đã vào.",
    "tac": [
-    "−6,3 nghìn đ/cp",
+    "−6,4 nghìn đ/cp",
     "mỗi 10% giá sữa bột nếu không tăng giá bán"
    ],
    "theo_doi": "giá GDT (WMP, SMP), biên gộp Q1/2027"
@@ -870,7 +881,7 @@
    "tieu": "Eo Hormuz và thị trường Iraq",
    "ct": "Iraq ~68% doanh thu xuất khẩu; Hormuz gián đoạn từ 3/2026 (đến 8/2026 chưa thông suốt), hàng đi vòng Biển Đỏ – Jordan; IMF dự báo GDP Iraq 2026 −6,8% (FPTS).",
    "tac": [
-    "±1,3 nghìn đ/cp",
+    "±1,2 nghìn đ/cp",
     "mỗi 10% doanh thu nước ngoài 2027"
    ],
    "theo_doi": "doanh thu, biên gộp nước ngoài"
@@ -951,7 +962,7 @@
     }
    ],
    "so_le": 1,
-   "y": "Nước ngoài từ 17% lên 23% doanh thu trong 8 quý; nội địa Q2/2026 cao nhất 8 quý. Q1/2025 thấp vì tái cấu trúc kênh phân phối.",
+   "y": "Nước ngoài từ 17% lên 23% doanh thu trong 8 quý; nội địa Q2/2026 cao nhất 8 quý. Q1/2025 thấp vì tái cấu trúc kênh phân phối. VNM chưa công bố tách Q3/2026.",
    "ng": "VNM công bố theo quý (Q3/24–Q1/25 suy từ % tăng cùng kỳ) · MBS 07/08, KAFI 13/08"
   },
   {
@@ -966,7 +977,7 @@
     "2023",
     "2024",
     "2025",
-    "6T/26"
+    "9T/26"
    ],
    "ss": [
     {
@@ -979,7 +990,7 @@
       40.7,
       41.4,
       41.2,
-      43.1
+      42.5
      ],
      "mau": "c1",
      "net": false
@@ -994,14 +1005,14 @@
       24.5,
       24.6,
       24.4,
-      25.2
+      24.8
      ],
      "mau": "c4",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Biên gộp đi theo giá sữa bột (trễ 1–2 quý): 2020→2022 mất 6,5 điểm %, LN −23% dù doanh thu đứng yên.",
+   "y": "Biên gộp đi theo giá sữa bột (trễ 1–2 quý): 2020→2022 mất 6,5 điểm %, LN −23% dù doanh thu đứng yên. Q3/2026 41,4% (Q2 43,5%).",
    "ng": "BCTC hợp nhất (VNDirect)"
   },
   {
@@ -1016,7 +1027,7 @@
     "2023",
     "2024",
     "2025",
-    "4Q tới Q2/26"
+    "4Q tới Q3/26"
    ],
    "ss": [
     {
@@ -1029,13 +1040,13 @@
       8874,
       9392,
       9410,
-      10963
+      11400
      ],
      "mau": "c1"
     }
    ],
    "so_le": 0,
-   "y": "Năm năm đi ngang dưới đỉnh 2020; 4 quý đến Q2/2026 10.963 tỷ. Mô hình 2026E 11.342 tỷ.",
+   "y": "Năm năm đi ngang dưới đỉnh 2020; 4 quý đến Q3/2026 11.400 tỷ, vượt đỉnh. Mô hình 2026E 11.468 tỷ.",
    "ng": "BCTC hợp nhất (VNDirect)"
   },
   {
@@ -1102,29 +1113,29 @@
    {
     "ten": "Doanh thu",
     "kh": 66477,
-    "th": 34996,
-    "ky": "6T",
-    "tg": 50,
+    "th": 53461,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 22/04 · BCTC Q2"
+    "ng": "ĐHĐCĐ 22/04 · BCTC Q3"
    },
    {
     "ten": "Lợi nhuận trước thuế",
     "kh": 12197,
-    "th": 6914,
-    "ky": "6T",
-    "tg": 50,
+    "th": 10608,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ · MBS 07/08"
+    "ng": "ĐHĐCĐ · MBS 07/08 · BCTC Q3"
    },
    {
     "ten": "Lợi nhuận sau thuế",
     "kh": 9828,
-    "th": 5643,
-    "ky": "6T",
-    "tg": 50,
+    "th": 8605,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ · BCTC Q2"
+    "ng": "ĐHĐCĐ · BCTC Q3"
    },
    {
     "ten": "Cửa hàng Vinamilk",
@@ -1136,7 +1147,7 @@
     "ng": "MBS 07/08"
    }
   ],
-  "y": "LNST 6 tháng đã 57% kế hoạch; mô hình cơ sở cho cả năm vượt kế hoạch 16%. Cổ tức 2026 tối thiểu 50% LNST.",
+  "y": "LNST 9 tháng đã 88% kế hoạch; mô hình cơ sở cho cả năm vượt kế hoạch 17%. Cổ tức 2026 tối thiểu 50% LNST.",
   "ng": ""
  },
  "ctck": [
