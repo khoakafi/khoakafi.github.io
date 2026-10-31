@@ -3,11 +3,11 @@
  "ma": "NLG",
  "ten": "CTCP Đầu tư Nam Long",
  "nganh": "Bất động sản nhà ở vừa túi tiền (TP.HCM và vùng lân cận)",
- "ky": "BCTC Q2/2026 · doanh số 6T/2026",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026 (doanh số, số căn bàn giao Q4)",
  "cp_trieu": 485.1,
- "cp_ng": "Vốn điều lệ 4.851 tỷ (BCTC Q2/2026) = 485,1 triệu cp, sau chào bán quyền mua 100:26 giá 25.000 đ (ĐKCC 20/10/2025, nộp tiền xong 12/2025); khớp vốn hóa/giá trên bảng giá 20/10/2026",
+ "cp_ng": "Vốn điều lệ 4.851 tỷ (BCTC Q3/2026) = 485,1 triệu cp, sau chào bán quyền mua 100:26 giá 25.000 đ (ĐKCC 20/10/2025, nộp tiền xong 12/2025); vốn hóa VNDirect 30/10 (10.284 tỷ) tính theo giá phiên trước, lệch giá 22,0 ~3,6%",
  "co_tuc": [
   [
    "2026-06-12",
@@ -16,37 +16,37 @@
   ]
  ],
  "tieu_de": {
-  "t": "Bán gấp đôi nhưng lãi về chậm hai năm; tiền ròng dương nên rủi ro là thời gian, không phải nợ"
+  "t": "Q3 lãi 5 tỷ, bàn giao lại lùi: lãi dồn sang 2027; tiền ròng dương, rủi ro là thời gian"
  },
- "dong_mo": "Doanh số 2025 gấp 2,3 lần nhưng khách trả theo lịch 24–36 tháng: LN cổ đông 2026E ~650 tỷ (−7%), 2027E ~963 tỷ khi Southgate, Izumi, Mizuki bàn giao. Vốn chủ × P/B 0,8 + ~1,9 nghìn tỷ lãi đã bán × 0,85: {gt} ({up}); xấu 16,6, tốt 31,3, cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 chỉ giao ~238 tỷ BĐS hợp nhất, liên doanh gần như không giao; LN cổ đông 5 tỷ (Q3/2025: 146), 9T 128 tỷ = 18% kế hoạch. Mô hình hạ 2026E còn ~477 tỷ (bản 20/10: 650), 2027E ~1.061 tỷ khi Southgate, Izumi, Mizuki bàn giao. Vốn chủ × P/B 0,8 + ~1,9 nghìn tỷ lãi đã bán × 0,80: {gt} ({up}); xấu 16,6, tốt 31,5, cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "+52%",
-   "nhan": "doanh số 6T/2026 (5.080 tỷ)",
-   "tieu": "Bán nhanh, giao chậm: lãi 2026 đi ngang, 2027 mới bật",
-   "t": "6T/2026 bán 1.074 sản phẩm nhưng chỉ giao 307 (doanh thu bàn giao 1.022 tỷ); LN cổ đông 123 tỷ (−41%), mới 17% kế hoạch 720 tỷ. Doanh số kỷ lục 2025 (11,9 nghìn tỷ, riêng Q4 6,85 nghìn tỷ) trả góp 24–36 tháng nên phần lớn thành doanh thu 2027. Mô hình: 2026E ~650 tỷ, 2027E ~963 tỷ (+48%) — thấp hơn Shinhan (770; 1.181) vì 6T cuối chỉ giao 3.200 tỷ, không phải 4.244.",
-   "ng": "BCTC Q2 · SHS 08/08 · Shinhan 19/08 · mô hình"
+   "so": "5 tỷ",
+   "nhan": "LN cổ đông Q3/2026 (Q3/2025: 146 tỷ)",
+   "tieu": "Q3 xác nhận rủi ro thời gian: bán được nhưng chưa giao được",
+   "t": "Q3 doanh thu 328 tỷ, trong đó chỉ ~238 tỷ bàn giao BĐS; lãi liên doanh 4 tỷ (Elyse, Mizuki chưa giao); LN trước thuế 38 tỷ nhưng thuế ~33 tỷ. 9T LN cổ đông 128 tỷ (−64%), 18% kế hoạch 720 tỷ. Doanh số 6T 5.080 tỷ (+52%) và kỷ lục 2025 (11,9 nghìn tỷ) trả góp 24–36 tháng. Mô hình: Q4 ~349 tỷ (giao ~1,8 nghìn tỷ hợp nhất + Elyse), 2026E ~477 tỷ, 2027E ~1.061 tỷ (+122%).",
+   "ng": "BCTC Q3 (VNDirect) · Vietstock 30/10 · SHS 08/08 · mô hình"
   },
   {
    "so": "~64%",
    "nhan": "doanh số 6T/2026 từ dự án liên doanh",
    "tieu": "Lãi dịch sang liên doanh, NLG chỉ giữ một nửa",
-   "t": "Sol Garden (1.250 tỷ), Mizuki (1.030), Izumi (910), Akari — NLG giữ 45–50% — chiếm ~64% doanh số 6T. Izumi thôi hợp nhất từ Q4/2025 sau khi bán 15,1% (65,1% → 50%); Nam Long ADC (EHome) đã ký bán 49% cho Nishi Nippon Railroad. Lãi liên doanh, liên kết từ 76 tỷ (6% LN trước thuế 2025) lên ~510 tỷ (38%) 2027E: doanh thu hợp nhất không còn phản ánh quy mô, tiền về qua cổ tức liên doanh.",
-   "ng": "Shinhan 19/08 · Vietcap 11/05 · Thị trường Tài chính Tiền tệ 04/2026 · mô hình"
+   "t": "Sol Garden (1.250 tỷ), Mizuki (1.030), Izumi (910), Akari — NLG giữ 45–50% — chiếm ~64% doanh số 6T. Izumi thôi hợp nhất từ Q4/2025 (65,1% → 50%). Q3/2026 lợi ích thiểu số tăng 748 tỷ, vốn chủ cổ đông +~198 tỷ ngoài lãi — khớp việc bán 49% Nam Long ADC cho Nishi Nippon Railroad (chờ thuyết minh). Lãi liên doanh, liên kết từ 76 tỷ (6% LN trước thuế 2025) lên ~510 tỷ (34%) 2027E.",
+   "ng": "BCTC Q3 · Shinhan 19/08 · Vietcap 11/05 · Thị trường Tài chính Tiền tệ 04/2026 · mô hình"
   },
   {
-   "so": "1.005 tỷ",
-   "nhan": "tiền ròng 30/6 (cuối 2025: 2.670 tỷ)",
-   "tieu": "Tiền ròng còn dương nhưng mỏng nhanh",
-   "t": "Tiền + đầu tư ngắn hạn 6.200 tỷ vẫn hơn nợ vay 5.196 tỷ nhờ ~2.500 tỷ chào bán 100:26 giá 25.000 đ (12/2025). Nhưng 6T/2026 dòng tiền kinh doanh −1.087 tỷ, tiền giảm 1.991 tỷ khi nhiều dự án cùng xây; người mua trả trước 2.937 tỷ. Nợ vay chỉ 0,42 lần vốn chủ — rủi ro là chi phí chờ: mỗi năm bàn giao trễ, chi phí chung và lãi vay ~660 tỷ ≈ 0,9 nghìn đ/cp.",
-   "ng": "BCTC Q2 · SHS 08/08 · Doanh Nhân 12/2025 · mô hình"
+   "so": "1.079 tỷ",
+   "nhan": "tiền ròng 30/9 (30/6: 1.005; cuối 2025: 2.670 tỷ)",
+   "tieu": "Tiền ròng đứng lại sau nửa năm giảm mạnh",
+   "t": "Tiền + đầu tư ngắn hạn 6.131 tỷ vẫn hơn nợ vay 5.052 tỷ. 6T/2026 dòng tiền kinh doanh −1.087 tỷ, tiền giảm 1.991 tỷ; Q3 tiền gần như giữ nguyên, nợ vay giảm 144 tỷ, người mua trả trước lên 3.192 tỷ (+255) — có thể nhờ tiền đối tác vào ADC. Nợ vay 0,40 lần vốn chủ — rủi ro là chi phí chờ: mỗi năm bàn giao trễ, chi phí chung và lãi vay ~660 tỷ ≈ 0,9 nghìn đ/cp.",
+   "ng": "BCTC Q3 · SHS 08/08 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
-   "tieu": "Vốn chủ × 0,8 + lãi đã bán × 0,85: {up_so} so với giá hiện tại",
-   "t": "Vốn chủ cổ đông 12,5 nghìn tỷ (25,8 nghìn đ/cp) × 0,8 + ~1,9 nghìn tỷ lãi sau thuế phần NLG của ~14 nghìn tỷ doanh số đã bán chờ giao × 0,85 ≈ 0,93 lần vốn chủ, ngang trung vị 8 chủ đầu tư nhà ở (0,93). Giá 20/10 ngầm định chỉ ~0,7 lần vốn chủ sau khi cộng phần lãi này. Xấu 16,6 (P/B 0,55); tốt 31,3 (P/B 1,05, cả công ty ~1,2 ≈ thấp 10% lịch sử).",
-   "ng": "mô hình · P/B lịch sử: BCTC VNDirect, giá cuối tháng · bảng giá 20/10"
+   "tieu": "Vốn chủ × 0,8 + lãi đã bán × 0,80: {up_so} so với giá hiện tại",
+   "t": "Vốn chủ cổ đông 30/9 12,7 nghìn tỷ (26,2 nghìn đ/cp) × 0,8 + ~1,9 nghìn tỷ lãi sau thuế phần NLG của ~14 nghìn tỷ doanh số đã bán chờ giao × 0,80 (hạ từ 0,85 vì giao lùi) ≈ 0,92 lần vốn chủ, trung vị 8 chủ đầu tư nhà ở 0,90. Giá 30/10 ngầm định ~0,7 lần vốn chủ sau khi cộng phần lãi này. Xấu 16,6 (P/B 0,55); tốt 31,5 (P/B 1,05, cả công ty ~1,2).",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect, giá cuối tháng · bảng giá 30/10"
   }
  ],
  "tom_tat": {
@@ -57,19 +57,19 @@
   ],
   "ln": [
    701,
-   650,
-   963
+   477,
+   1061
   ],
   "ln_truoc": 518,
   "eps": [
    1445,
-   1340,
-   1985
+   983,
+   2187
   ],
   "bv": [
    26102,
-   26850,
-   28335
+   26901,
+   28589
   ],
   "co_tuc_nam": 500,
   "them": [
@@ -77,7 +77,7 @@
     "ten": "Lãi liên doanh, liên kết (tỷ)",
     "v": [
      76,
-     184,
+     162,
      510
     ],
     "d": 0
@@ -86,8 +86,8 @@
     "ten": "ROE",
     "v": [
      6.3,
-     5.1,
-     7.2
+     3.7,
+     7.9
     ],
     "d": 1,
     "pt": 1
@@ -110,8 +110,8 @@
     "mau": "c2",
     "v": [
      1065,
-     935,
-     920
+     663,
+     1100
     ]
    },
    {
@@ -119,7 +119,7 @@
     "mau": "c1",
     "v": [
      76,
-     184,
+     162,
      510
     ]
    },
@@ -128,44 +128,44 @@
     "mau": "c4",
     "v": [
      47,
-     -9,
+     17,
      -90
     ]
    }
   ],
   "nhan": "Liên doanh, liên kết (Izumi, Mizuki, Elyse…)",
-  "ng": "2025A: BCTC (kinh doanh = LN gộp − bán hàng − quản lý; tài chính 2025 gồm lãi bán vốn Izumi và ~357 tỷ chi phí một lần). 2026E: 6T thực tế + 6T cuối; 2027E: mô hình."
+  "ng": "2025A: BCTC (kinh doanh = LN gộp − bán hàng − quản lý; tài chính 2025 gồm lãi bán vốn Izumi và ~357 tỷ chi phí một lần). 2026E: 9T thực tế + Q4; 2027E: mô hình."
  },
  "so_sanh": {
   "tieu": "P/B so với chủ đầu tư nhà ở niêm yết",
-  "phu": "giá hôm nay; vốn chủ cổ đông 30/6/2026",
+  "phu": "giá hôm nay; vốn chủ cổ đông 30/9/2026",
   "chi_so": "P/B",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "chi_so_kv": "P/B (giá 30/10)",
   "nhom": "8 chủ đầu tư nhà ở niêm yết",
   "kv": [
    [
     "VHM",
-    1.88
+    1.9
    ],
    [
     "CEO",
-    1.03
+    1.01
    ],
    [
     "TCH",
-    0.97
-   ],
-   [
-    "KDH",
     0.94
    ],
    [
+    "KDH",
+    0.9
+   ],
+   [
     "DXG",
-    0.91
+    0.89
    ],
    [
     "PDR",
-    0.89
+    0.88
    ],
    [
     "DIG",
@@ -176,11 +176,11 @@
     0.61
    ]
   ],
-  "tv": 0.93,
-  "moi_cp": 25764,
+  "tv": 0.9,
+  "moi_cp": 26182,
   "max": 2.5,
-  "y": "Trừ VHM (ROE 4 quý 33%), cả nhóm 0,6–1,05 lần. NLG 0,83 lần (20/10) với ROE 4 quý ~5% nhưng nợ vay chỉ 0,42 lần vốn chủ (KDH 0,90, NVL 1,50) và còn tiền ròng.",
-  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ 30/6/2026 (bảng giá VNDirect 20/10/2026, BCTC VNDirect); NVL theo bảng giá, đã gồm tiền chào bán 3:1"
+  "y": "Trừ VHM (ROE 4 quý 33%), cả nhóm 0,6–1,05 lần. NLG 0,84 lần (30/10) với ROE 4 quý ~4% nhưng nợ vay chỉ 0,40 lần vốn chủ (KDH 0,90, NVL 1,50) và còn tiền ròng.",
+  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ quý gần nhất (bảng giá VNDirect 30/10/2026, BCTC VNDirect); NVL theo bảng giá, đã gồm tiền chào bán 3:1"
  },
  "mo_hinh": {
   "tieu": "Dự phóng: kinh doanh hợp nhất + liên doanh − chi phí chung",
@@ -197,24 +197,24 @@
     "ten": "Doanh thu thuần (tỷ)",
     "v": [
      5645,
-     5075,
-     5160
+     3912,
+     5760
     ]
    },
    {
     "ten": "Bàn giao BĐS (tỷ)",
     "v": [
      5395,
-     4222,
-     4800
+     3060,
+     5400
     ]
    },
    {
     "ten": "Biên gộp (%)",
     "v": [
      41.8,
-     38.4,
-     38.9
+     38.8,
+     39.1
     ],
     "d": 1
    },
@@ -222,16 +222,16 @@
     "ten": "Bán hàng + quản lý (tỷ)",
     "v": [
      1292,
-     1015,
-     1088
+     853,
+     1154
     ]
    },
    {
     "ten": "LN kinh doanh hợp nhất (tỷ)",
     "v": [
      1065,
-     935,
-     920
+     663,
+     1100
     ]
    },
    {
@@ -241,7 +241,7 @@
     "ten": "Bàn giao, 100% dự án (tỷ)",
     "s": [
      "—",
-     "~1.200 (6T cuối)",
+     "~1.000 (Q4)",
      "4.000"
     ]
    },
@@ -249,7 +249,7 @@
     "ten": "Lãi liên doanh, liên kết (tỷ)",
     "v": [
      76,
-     184,
+     162,
      510
     ]
    },
@@ -260,7 +260,7 @@
     "ten": "Tài chính ròng & khác (tỷ)",
     "v": [
      47,
-     -9,
+     17,
      -90
     ]
    },
@@ -268,24 +268,24 @@
     "ten": "LN trước thuế (tỷ)",
     "v": [
      1188,
-     1109,
-     1340
+     842,
+     1520
     ]
    },
    {
     "ten": "Lợi ích cổ đông thiểu số (tỷ)",
     "v": [
      245,
-     213,
-     194
+     148,
+     236
     ]
    },
    {
     "ten": "LN cổ đông (tỷ)",
     "v": [
      701,
-     650,
-     963
+     477,
+     1061
     ],
     "dam": 1,
     "tang": 1
@@ -294,8 +294,8 @@
     "ten": "EPS (đ)",
     "v": [
      1445,
-     1340,
-     1985
+     983,
+     2187
     ],
     "eps": 1
    },
@@ -304,7 +304,7 @@
     "v": [
      12.7,
      13.0,
-     13.7
+     13.9
     ],
     "d": 1
    },
@@ -312,8 +312,8 @@
     "ten": "ROE (%)",
     "v": [
      6.3,
-     5.1,
-     7.2
+     3.7,
+     7.9
     ],
     "d": 1
    },
@@ -326,48 +326,48 @@
     ]
    }
   ],
-  "ghi": "Hợp nhất: bàn giao × biên gộp − bán hàng − quản lý; thuế 22% trên phần không gồm liên doanh; cổ đông thiểu số 30% (đối tác 50% Southgate). Liên doanh: bàn giao 100% dự án × biên LNST × ~51%. 2026E = 6T thực tế + 6T cuối; 2026E doanh thu gồm 489 tỷ chuyển nhượng gần như không lãi (Q1); doanh số 6T cuối giả định ngang 6T đầu. Cổ tức 2026 500 đ/cp trừ vào vốn chủ 2027."
+  "ghi": "Hợp nhất: bàn giao × biên gộp − bán hàng − quản lý; thuế 22% trên phần không gồm liên doanh; cổ đông thiểu số 30% (đối tác 50% Southgate). Liên doanh: bàn giao 100% dự án × biên LNST × ~51%. 2026E = 9T thực tế + Q4; bàn giao 2026E gồm Q3 ước ~238 tỷ (doanh thu trừ ~90 tỷ dịch vụ); doanh thu gồm 489 tỷ chuyển nhượng gần như không lãi (Q1); doanh số 6T cuối giả định ngang 6T đầu. Cổ tức 2026 500 đ/cp trừ vào vốn chủ 2027."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   650
+   477
   ],
   "cuoi": [
    "2027E",
-   963
+   1061
   ],
   "buoc": [
    [
     "Liên doanh bàn giao (Izumi, Mizuki, Elyse)",
-    326
+    348
    ],
    [
     "Kinh doanh hợp nhất",
-    -8
+    238
    ],
    [
     "Tài chính ròng & khác",
-    -44
+    -58
    ],
    [
-    "Thuế, thiểu số 6T/26 cao",
-    39
+    "Thuế, thiểu số",
+    56
    ]
   ],
-  "y": "2027E tăng ~313 tỷ gần như hoàn toàn nhờ liên doanh (+326 tỷ); kinh doanh hợp nhất đi ngang vì Southgate giao bù phần đất nền Cần Thơ biên cao của 2026, còn tiền mặt giảm làm chi phí tài chính ròng tăng.",
+  "y": "2027E tăng ~584 tỷ: liên doanh bắt đầu giao Izumi Canaria, Mizuki, Elyse (+348 tỷ) và hợp nhất nhận phần bàn giao lùi từ 2026 (+238 tỷ, giao 5,4 nghìn tỷ); tiền mặt giảm làm tài chính ròng xấu đi (−58 tỷ).",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Bàn giao BĐS hợp nhất: 6T cuối 2026 · 2027 (tỷ)",
+   "ten": "Bàn giao BĐS hợp nhất: Q4/2026 · 2027 (tỷ)",
    "v": [
-    "2.200 · 3.600",
-    "3.200 · 4.800",
-    "4.000 · 6.000"
+    "1.000 · 3.600",
+    "1.800 · 5.400",
+    "2.400 · 6.600"
    ],
-   "ly_do": "6T/2026: 1.022 tỷ (307 SP); Shinhan cả năm 5.266 (6T cuối 4.244); An Zen, Cần Thơ, Southgate; khách trả 24–36 tháng (SHS)"
+   "ly_do": "9T/2026 ~1.260 tỷ (Q3 chỉ ~238); Q4/2025 doanh thu 1.704; Q4: An Zen, EHomeS Cần Thơ, Southgate. 2027 cơ sở +600 tỷ so với bản 20/10 = khoảng nửa phần 2026 bị lùi"
   },
   {
    "ten": "Biên gộp BĐS hợp nhất",
@@ -394,16 +394,16 @@
     "280",
     "260"
    ],
-   "ly_do": "2025: 593 tỷ; 6T/2026: 270 tỷ (Q2 riêng 184 tỷ)"
+   "ly_do": "2025: 593 tỷ; 9T/2026: 359 tỷ (Q2 184, Q3 89); Q4 = một nửa mức này"
   },
   {
-   "ten": "Bàn giao liên doanh, 100% dự án: 6T cuối 2026 · 2027",
+   "ten": "Bàn giao liên doanh, 100% dự án: Q4/2026 · 2027",
    "v": [
-    "600 · 2.800",
-    "1.200 · 4.000",
-    "1.800 · 5.200"
+    "400 · 2.800",
+    "1.000 · 4.000",
+    "1.600 · 5.200"
    ],
-   "ly_do": "Q4/2026: Elyse (49 căn ~1,6 nghìn tỷ), Mizuki LK11 (24 căn); 2027: Izumi Canaria (461 căn), Mizuki CC5 (817 căn); Vietcap: lãi LDLK 2027 880 tỷ"
+   "ly_do": "Q3/2026 lãi liên doanh chỉ 4 tỷ; Q4: Elyse (49 căn ~1,6 nghìn tỷ), Mizuki LK11 (24 căn); 2027: Izumi Canaria (461 căn), Mizuki CC5 (817 căn); Vietcap: lãi LDLK 2027 880 tỷ"
   },
   {
    "ten": "Biên LNST liên doanh × phần NLG",
@@ -415,22 +415,22 @@
    "ly_do": "Biên gộp ~45% trừ bán hàng, quản lý ~14%, thuế 20%; NLG 50% Izumi, Mizuki, Akari, 59% Elyse, ~45% Sol Garden"
   },
   {
-   "ten": "Tài chính ròng: 6T cuối 2026 · 2027 (tỷ)",
+   "ten": "Tài chính ròng: Q4/2026 · 2027 (tỷ)",
    "v": [
-    "−50 · −200",
-    "−20 · −100",
+    "−30 · −200",
+    "−10 · −100",
     "0 · 0"
    ],
-   "ly_do": "6T/2026 −1 tỷ khi tiền + ĐTNH 6–8 nghìn tỷ; tiền giảm 1.991 tỷ trong 6T, lãi vay vốn hóa vào chi phí khi dự án xong"
+   "ly_do": "9T/2026 −2 tỷ khi tiền + ĐTNH ~6 nghìn tỷ; lãi vay vốn hóa vào chi phí khi dự án xong"
   },
   {
    "ten": "Hệ số lãi đã bán chờ bàn giao",
    "v": [
-    "0,70",
-    "0,85",
-    "0,95"
+    "0,65",
+    "0,80",
+    "0,90"
    ],
-   "ly_do": "~14 nghìn tỷ đã bán chưa ghi nhận (Vietcap ~12,9 nghìn tỷ đầu 5/2026 + bán 5–6/2026 − giao Q2), NLG ~57%; ghi nhận 2026–2028"
+   "ly_do": "~14 nghìn tỷ đã bán chưa ghi nhận 30/6 (Vietcap ~12,9 nghìn tỷ đầu 5/2026 + bán 5–6/2026 − giao Q2; Q3 giao ít, chưa có doanh số Q3), NLG ~57%; hạ 0,85 → 0,80 vì ghi nhận dồn về 2027–2028"
   },
   {
    "ten": "P/B vốn chủ cổ đông",
@@ -439,30 +439,30 @@
     "0,80",
     "1,05"
    ],
-   "ly_do": "NLG từ 2015: thấp nhất 0,83 (10/2026), thấp 10% 1,16; 8 chủ đầu tư nhà ở (20/10): trung vị 0,93; giá hôm nay ngầm định ~0,7 sau khi cộng lãi đã bán"
+   "ly_do": "NLG từ 2015: thấp nhất 0,84 (09/2026), thấp 10% 1,16; 8 chủ đầu tư nhà ở (30/10): trung vị 0,90; giá hôm nay ngầm định ~0,7 sau khi cộng lãi đã bán"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 322,
+   "ln26": 222,
    "ln27": 410,
    "gia": 16.6,
-   "mo_ta": "Giao hợp nhất 2.200 + 3.600 tỷ (6T cuối 2026, 2027), liên doanh 2.800 tỷ 2027; biên gộp 38%; P/B 0,55; hệ số lãi đã bán 0,7"
+   "mo_ta": "Giao hợp nhất 1.000 + 3.600 tỷ (Q4/2026, 2027), liên doanh 2.800 tỷ 2027; biên gộp 38%; P/B 0,55; hệ số lãi đã bán 0,7"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 650,
-   "ln27": 963,
-   "gia": 24.0,
-   "mo_ta": "Giao hợp nhất 3.200 + 4.800 tỷ, liên doanh 4.000 tỷ 2027; biên gộp 41%; P/B 0,8; hệ số 0,85"
+   "ln26": 477,
+   "ln27": 1061,
+   "gia": 24.1,
+   "mo_ta": "Giao hợp nhất 1.800 + 5.400 tỷ, liên doanh 4.000 tỷ 2027; biên gộp 41%; P/B 0,8; hệ số 0,80"
   },
   {
    "ten": "Tốt",
-   "ln26": 997,
-   "ln27": 1605,
-   "gia": 31.3,
-   "mo_ta": "Giao hợp nhất 4.000 + 6.000 tỷ, liên doanh 5.200 tỷ 2027; biên gộp 44%; bán vốn Waterpoint GĐ2; P/B 1,05; hệ số 0,95"
+   "ln26": 742,
+   "ln27": 1717,
+   "gia": 31.5,
+   "mo_ta": "Giao hợp nhất 2.400 + 6.600 tỷ, liên doanh 5.200 tỷ 2027; biên gộp 44%; bán vốn Waterpoint GĐ2; P/B 1,05; hệ số 0,90"
   }
  ],
  "dinh_gia": {
@@ -475,22 +475,22 @@
     "ten": "Vốn chủ cổ đông (quỹ đất theo giá sổ sách)",
     "mau": "c2",
     "x": [
-     12498,
-     12498,
-     12498
+     12701,
+     12701,
+     12701
     ],
     "boi": [
      0.55,
      0.8,
      1.05
     ],
-    "x_ten": "Vốn chủ cổ đông 30/6/2026",
+    "x_ten": "Vốn chủ cổ đông 30/9/2026",
     "boi_ten": "P/B",
     "sh": 1,
     "gt": [
-     6874,
-     9998,
-     13123
+     6986,
+     10161,
+     13336
     ]
    },
    {
@@ -502,30 +502,30 @@
      2171
     ],
     "boi": [
-     0.7,
-     0.85,
-     0.95
+     0.65,
+     0.8,
+     0.9
     ],
     "x_ten": "LNST phần NLG",
     "boi_ten": "hệ số",
     "boi_d": 2,
     "sh": 1,
     "gt": [
-     1162,
-     1628,
-     2062
+     1079,
+     1532,
+     1954
     ]
    }
   ],
   "von": [
-   8036,
-   11626,
-   15185
+   8065,
+   11693,
+   15290
   ],
   "gia": [
    16.6,
-   24.0,
-   31.3
+   24.1,
+   31.5
   ]
  },
  "nhay": [
@@ -843,21 +843,21 @@
    0.85,
    0.94,
    0.84,
-   0.83
+   0.85
   ],
   "p10": 1.16,
   "p25": 1.35,
   "tv": 1.52,
   "thap": [
-   "2026-10",
-   0.83
+   "2026-09",
+   0.84
   ],
   "nay": [
    "2026-10",
-   0.83
+   0.85
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. 10/2025–01/2026 sửa tay: 485,1 triệu cp và vốn chủ cộng 2.500,6 tỷ chào bán quyền mua 100:26 (GDKHQ 17/10/2025) — công thức tự động chỉ nhân số cp nên đẩy P/B lên ~9%.",
-  "dung": "Kịch bản dùng P/B 0,55 · 0,8 · 1,05 cho vốn chủ cổ đông (lãi đã bán chờ giao tính riêng): cả công ty ở giá trị cơ sở ≈ 0,93 lần ≈ trung vị 8 chủ đầu tư nhà ở (0,93); tốt ≈ 1,21 ≈ thấp 10% lịch sử (1,16); xấu ≈ 0,64, thấp hơn mọi tháng từ 2015. Trước 2026, kể cả đáy 10/2022, P/B chưa từng dưới 1,01; ROE 2022–2025 chỉ 5–6%."
+  "dung": "Kịch bản dùng P/B 0,55 · 0,8 · 1,05 cho vốn chủ cổ đông (lãi đã bán chờ giao tính riêng): cả công ty ở giá trị cơ sở ≈ 0,92 lần ≈ trung vị 8 chủ đầu tư nhà ở (0,90); tốt ≈ 1,20 (thấp 10% lịch sử 1,16); xấu ≈ 0,63, thấp hơn mọi tháng từ 2015. Trước 2026, kể cả đáy 10/2022, P/B chưa từng dưới 1,01; ROE 2022–2025 chỉ 5–6%."
  },
  "theo_doi": [
   {
@@ -874,38 +874,50 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    139,
-    369,
-    612
+    94,
+    349,
+    614
    ],
    "ck": 348
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    322,
-    650,
-    997
+    222,
+    477,
+    742
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "Cuối 10/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Cơ sở ~158 tỷ LN cổ đông (Q3/2025: 146). Xem tiền + ĐTNH sau 6T giảm 1.991 tỷ và người mua trả trước (2.937 tỷ 30/6).",
+   "khi": "30/10/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Đã ra KQKD Q3/2026: lãi 5 tỷ, dưới kịch bản xấu",
+   "ct": "Mô hình 20/10: cơ sở 158, xấu 60 (Q3/2025: 146). Giao BĐS chỉ ~238 tỷ — không phải chi phí bất thường mà bàn giao lùi quý thứ hai liên tiếp → 2026E còn ~477 tỷ, một phần sang 2027.",
    "tac": [
-    "≥ 158 tỷ",
-    "khớp cơ sở; dưới 60 tỷ nghiêng về xấu"
+    "−173 tỷ LN 2026E",
+    "giá trị cơ sở 24,0 → 24,1: định giá theo tài sản, lãi chậm chứ chưa mất"
    ],
-   "theo_doi": "LN cổ đông, tiền, người mua trả trước"
+   "theo_doi": "thuyết minh BCTC Q3 (giao dịch ADC)"
+  },
+  {
+   "khi": "Cuối 1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026: quý quyết định",
+   "ct": "Cơ sở ~349 tỷ LN cổ đông (Q4/2025: 348) cần giao ~1,8 nghìn tỷ hợp nhất (An Zen, EHomeS Cần Thơ, Southgate) + Elyse. Dưới 94 tỷ = lùi tiếp, 2027 cũng phải hạ.",
+   "tac": [
+    "≥ 349 tỷ",
+    "khớp cơ sở; dưới 94 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "LN cổ đông, số căn giao, doanh số cả năm"
   },
   {
    "khi": "Q4/2026",
    "loai": "len",
    "tieu": "Đợt bàn giao lớn cuối năm",
-   "ct": "An Zen (452/887 căn đã bán), đất nền và EHomeS Cần Thơ, Southgate; liên doanh: Elyse Island (49 căn ~1,6 nghìn tỷ), Mizuki LK11 (24 căn). Q4 thường chiếm phần lớn lãi cả năm.",
+   "ct": "An Zen (452/887 căn đã bán), đất nền và EHomeS Cần Thơ, Southgate; liên doanh: Elyse Island (49 căn ~1,6 nghìn tỷ), Mizuki LK11 (24 căn). 9T mới có lãi 128 tỷ nên Q4 quyết định gần như cả năm.",
    "tac": [
     "+164 tỷ LN",
     "mỗi 1.000 tỷ bàn giao hợp nhất (biên gộp 41%)"
@@ -935,19 +947,19 @@
    "theo_doi": "đối tác, giá bán"
   },
   {
-   "khi": "2026",
+   "khi": "Q3/2026",
    "loai": "len",
    "tieu": "Nishi Nippon Railroad mua 49% Nam Long ADC",
-   "ct": "Ký 24/04/2026: liên doanh EHome, EHomeS (NLG 51%), mục tiêu hơn 22.000 căn đến 2035. Có vốn đối tác cho nhà ở vừa túi tiền nhưng NLG chỉ còn 51% phần lãi.",
+   "ct": "Ký 24/04/2026: EHome, EHomeS, mục tiêu 22.000 căn đến 2035. Q3 lợi ích thiểu số +748 tỷ, vốn chủ +~198 tỷ ngoài lãi — nhiều khả năng đã ghi nhận (chờ thuyết minh). Có vốn đối tác, NLG còn 51% lãi.",
    "tac": "",
-   "theo_doi": "ngày hoàn tất, giá bán vốn"
+   "theo_doi": "thuyết minh Q3: giá bán vốn, phần ghi vào vốn chủ"
   },
   {
    "khi": "Liên tục",
    "loai": "xuong",
    "muc": 3,
    "tieu": "Đốt tiền khi nhiều dự án cùng xây",
-   "ct": "6T/2026 dòng tiền kinh doanh −1.087 tỷ; tiền ròng 1.005 tỷ (cuối 2025: 2.670). Giữ nhịp này, NLG chuyển sang nợ ròng trong 2027 trước khi tiền bàn giao về.",
+   "ct": "6T/2026 dòng tiền kinh doanh −1.087 tỷ; tiền ròng 30/9 1.079 tỷ (cuối 2025: 2.670), Q3 đứng lại có thể nhờ tiền đối tác ADC — một lần. Bàn giao tiếp tục lùi thì NLG chuyển sang nợ ròng trong 2027.",
    "tac": [
     "±2,6 nghìn đ/cp",
     "mỗi 0,1 lần P/B vốn chủ"
@@ -962,16 +974,16 @@
    "ct": "Kế hoạch doanh số 23,5 nghìn tỷ (+98%), 6T đạt 22%; SHS dự báo 8,7 nghìn tỷ. NLG phải hỗ trợ ân hạn gốc 3–4 năm, miễn phạt trả chậm qua ngân hàng.",
    "tac": [
     "−0,6 nghìn đ/cp",
-    "nếu hệ số lãi đã bán 0,85 → 0,7"
+    "nếu hệ số lãi đã bán 0,80 → 0,65"
    ],
    "theo_doi": "doanh số mỗi quý, tỷ lệ hấp thụ đợt mở bán"
   },
   {
-   "khi": "6T cuối 2026",
+   "khi": "Q4/2026",
    "loai": "xuong",
-   "muc": 2,
-   "tieu": "Bàn giao dời sang 2027",
-   "ct": "6T/2026 LN mới 17% kế hoạch; HĐQT không điều chỉnh kế hoạch (NLG Day 08/2026). Mô hình cơ sở đã thấp hơn kế hoạch ~70 tỷ.",
+   "muc": 3,
+   "tieu": "Bàn giao tiếp tục dời sang 2027",
+   "ct": "9T LN mới 18% kế hoạch; HĐQT chưa điều chỉnh kế hoạch. Mô hình cơ sở thấp hơn kế hoạch ~243 tỷ; Q2 và Q3 đều lùi nên khả năng Q4 lùi tiếp không nhỏ.",
    "tac": [
     "−164 tỷ LN 2026",
     "mỗi 1.000 tỷ bàn giao hợp nhất dời sang năm sau"
@@ -983,7 +995,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Thay tổng giám đốc giữa chu kỳ bàn giao",
-   "ct": "Bà Nguyễn Thanh Hương quyền tổng giám đốc từ 28/07/2026 thay ông Lucas Loh, đúng lúc dồn bàn giao 6T cuối và tìm đối tác Waterpoint GĐ2.",
+   "ct": "Bà Nguyễn Thanh Hương quyền tổng giám đốc từ 28/07/2026 thay ông Lucas Loh, đúng lúc dồn bàn giao Q4 và tìm đối tác Waterpoint GĐ2.",
    "tac": "",
    "theo_doi": "bổ nhiệm chính thức, tiến độ giao"
   }
@@ -1004,7 +1016,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1019,7 +1032,8 @@
       1670,
       6850,
       2070,
-      3010
+      3010,
+      null
      ],
      "mau": "c1"
     },
@@ -1035,13 +1049,14 @@
       1877,
       1704,
       1279,
-      415
+      415,
+      328
      ],
      "mau": "c4"
     }
    ],
-   "y": "4 quý gần nhất bán 13,6 nghìn tỷ nhưng ghi nhận 5,3 nghìn tỷ doanh thu: phần chênh nằm ở lịch trả góp 24–36 tháng và ở liên doanh (không hợp nhất).",
-   "ng": "Vietcap 11/05 (doanh số Q1/2024–Q1/2026), Shinhan 19/08 (Q2/2026) · BCTC (doanh thu)"
+   "y": "Q3/2025–Q2/2026 bán 13,6 nghìn tỷ nhưng ghi nhận 5,3 nghìn tỷ doanh thu; Q3/2026 doanh thu chỉ 328 tỷ: phần chênh nằm ở lịch trả góp 24–36 tháng, bàn giao lùi và liên doanh (không hợp nhất).",
+   "ng": "Vietcap 11/05 (doanh số Q1/2024–Q1/2026), Shinhan 19/08 (Q2/2026); doanh số Q3/2026 chưa công bố · BCTC (doanh thu)"
   },
   {
    "ten": "Doanh số theo dự án: 2025 và 6T/2026",
@@ -1095,7 +1110,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1108,7 +1124,8 @@
       3.9,
       8.2,
       7.4,
-      6.2
+      6.2,
+      6.1
      ],
      "mau": "c1"
     },
@@ -1122,7 +1139,8 @@
       7.0,
       5.5,
       5.5,
-      5.2
+      5.2,
+      5.1
      ],
      "mau": "c2"
     },
@@ -1136,12 +1154,13 @@
       2.4,
       2.6,
       2.6,
-      2.9
+      2.9,
+      3.2
      ],
      "mau": "c4"
     }
    ],
-   "y": "Tiền + ĐTNH 6,2 nghìn tỷ vẫn trên nợ vay 5,2 nghìn tỷ, nhưng đã giảm 2,0 nghìn tỷ trong 6T/2026 dù vừa thu 2,5 nghìn tỷ chào bán cuối 2025.",
+   "y": "Tiền + ĐTNH 6,1 nghìn tỷ vẫn trên nợ vay 5,1 nghìn tỷ; giảm 2,0 nghìn tỷ trong 6T/2026 (dù vừa thu 2,5 nghìn tỷ chào bán cuối 2025) rồi đứng lại ở Q3, người mua trả trước tăng lên 3,2 nghìn tỷ.",
    "ng": "BCTC (VNDirect)"
   },
   {
@@ -1150,7 +1169,6 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q3/23",
     "Q4/23",
     "Q1/24",
     "Q2/24",
@@ -1161,13 +1179,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "LN cổ đông",
      "v": [
-      66,
       290,
       -77,
       145,
@@ -1178,12 +1196,13 @@
       146,
       348,
       68,
-      55
+      55,
+      5
      ],
      "mau": "c1"
     }
    ],
-   "y": "Lãi dồn vào Q4: 2024 Q4 502/518 tỷ cả năm, 2025 348/701; 6T/2026 mới 123 tỷ.",
+   "y": "Lãi dồn vào Q4: 2024 Q4 502/518 tỷ cả năm, 2025 348/701; 9T/2026 mới 128 tỷ (Q3 5).",
    "ng": "BCTC (VNDirect)"
   }
  ],
@@ -1202,23 +1221,23 @@
    {
     "ten": "Doanh thu thuần",
     "kh": 7630,
-    "th": 1695,
-    "ky": "6T",
-    "tg": 50,
+    "th": 2022,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
    },
    {
     "ten": "LNST cổ đông",
     "kh": 720,
-    "th": 123,
-    "ky": "6T",
-    "tg": 50,
+    "th": 128,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
    }
   ],
-  "y": "6T đạt 22% doanh số, 22% doanh thu, 17% LN; HĐQT giữ kế hoạch. Mô hình: LN ~650 tỷ (90% kế hoạch), doanh số ~10,1 nghìn tỷ (43%).",
+  "y": "Doanh số 6T đạt 22% (chưa có số 9T); 9T đạt 27% doanh thu, 18% LN; HĐQT chưa điều chỉnh kế hoạch. Mô hình: LN ~477 tỷ (66% kế hoạch), doanh số ~10,1 nghìn tỷ (43%).",
   "ng": ""
  },
  "mang": [
@@ -1304,22 +1323,22 @@
   },
   {
    "ten": "Vốn — tiền, nợ vay, cổ phiếu",
-   "phu": "Bảng cân đối hợp nhất 30/6/2026",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026",
    "so": [
     [
      "Tiền + ĐTNH",
-     "6.200 tỷ",
-     "−1.991 tỷ trong 6T"
+     "6.131 tỷ",
+     "−1.991 tỷ trong 6T, Q3 đứng lại"
     ],
     [
      "Nợ vay",
-     "5.196 tỷ",
-     "0,42 lần vốn chủ"
+     "5.052 tỷ",
+     "0,40 lần vốn chủ"
     ],
     [
      "Người mua trả trước",
-     "2.937 tỷ",
-     "+349 tỷ từ đầu năm"
+     "3.192 tỷ",
+     "+604 tỷ từ đầu năm"
     ],
     [
      "Dòng tiền kinh doanh 6T",
@@ -1373,9 +1392,9 @@
      "ng": "SHS 08/08"
     },
     {
-     "t": "Trừ VHM, chủ đầu tư nhà ở niêm yết giao dịch 0,6–1,05 lần giá trị sổ sách (trung vị 8 mã 0,93).",
+     "t": "Trừ VHM, chủ đầu tư nhà ở niêm yết giao dịch 0,6–1,05 lần giá trị sổ sách (trung vị 8 mã 0,90).",
      "h": 0,
-     "ng": "bảng giá 20/10/2026"
+     "ng": "bảng giá 30/10/2026"
     },
     {
      "t": "Ban lãnh đạo NLG cho rằng lãi suất chưa tăng tới mức đóng băng nhu cầu, nhưng vẫn phải cùng ngân hàng ân hạn gốc 3–4 năm cho người mua.",
@@ -1453,6 +1472,16 @@
  ],
  "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. Giá mục tiêu theo bản PDF; báo cáo ra trước 12/06/2026 được trang trừ cổ tức 500 đ (ĐKCC 15/06/2026). Vietcap, VPBS viết trước KQKD Q2/2026; ACBS (07/08, 29.800 đ) không có bản chữ.",
  "nguon": [
+  {
+   "ten": "Vietstock — doanh thu NLG hơn 2 nghìn tỷ sau 9 tháng (KQKD Q3/2026)",
+   "ngay": "30/10/2026",
+   "link": "https://vietstock.vn/2026/10/doanh-thu-nlg-hon-2-ngan-ty-sau-9-thang-loat-du-an-buoc-vao-giai-doan-ban-giao-737-1509267.htm"
+  },
+  {
+   "ten": "Người Quan Sát — NLG doanh thu 2.022 tỷ sau 9 tháng",
+   "ngay": "31/10/2026",
+   "link": "https://nguoiquansat.vn/nam-long-nlg-doanh-thu-dat-2-022-ty-dong-sau-9-thang-loat-du-an-buoc-vao-giai-doan-ban-giao-325193.html"
+  },
   {
    "ten": "Shinhan — Dự án bàn giao tập trung vào H2/2026",
    "ngay": "19/08/2026",
