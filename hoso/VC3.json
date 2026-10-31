@@ -3,9 +3,9 @@
  "ma": "VC3",
  "ten": "CTCP Tập đoàn Nam Mê Kông (Vinaconex 3 cũ)",
  "nganh": "Bất động sản nhà ở (Đồng Hới, Bình Dương)",
- "ky": "BCTC Q2/2026 · công bố, báo chí đến 20/10/2026 (KQKD Q3 chưa ra)",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 hoặc khi Grand Plaza công bố giá bán, doanh số",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026, khi bàn giao tòa T1 nhà ở xã hội hoặc Grand Plaza công bố giá bán, doanh số",
  "cp_trieu": 148.8,
  "cp_ng": "Vốn điều lệ 1.384,1 tỷ (BCTC Q2/2026) = 138,41 triệu cp + 10.381.069 cp cổ tức 2025 tỷ lệ 7,5% (ĐKCC 28/08/2026, GDKHQ 27/08/2026) = 148,8 triệu cp; khớp vốn hóa bảng giá VNDirect (3.452 tỷ ÷ giá tham chiếu 23.200 đ).",
  "co_tuc": [],
@@ -20,35 +20,35 @@
   "dk": "up_duoi:-5",
   "khac": "Bảo Ninh 2 đang cạn, Grand Plaza chưa tới: lãi 2026–2027 chỉ ứng với ROE 3–5%"
  },
- "dong_mo": "LN cổ đông 4 quý 71 tỷ, ROE 4,7%; người mua trả trước còn 127 tỷ (12/2022: 1.581). Grand Plaza (TMĐT 3,7 nghìn tỷ, gấp 2,4 lần vốn chủ) khởi công 4/2026, lãi vào sổ từ 2028. Sổ sách 30/6/2027E × 1,0 + lãi Grand Plaza × 0,65: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 LN cổ đông 9,7 tỷ (+3%); 4 quý 71 tỷ, ROE 4,7%; người mua trả trước 138 tỷ (12/2022: 1.581). Grand Plaza (TMĐT 3,7 nghìn tỷ, gấp 2,4 lần vốn chủ) khởi công 4/2026, lãi vào sổ từ 2028. Sổ sách 30/6/2027E × 1,0 + lãi Grand Plaza × 0,65: {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "127 tỷ",
-   "nhan": "người mua trả trước 30/6/2026 (12/2022: 1.581 tỷ)",
-   "tieu": "Bảo Ninh 2 đã qua đỉnh: hụt khối lượng, không phải giá",
-   "t": "Tiền người mua trả trước — đơn đã ký chờ giao — từ 1.581 tỷ (12/2022) còn 127 tỷ: phần lớn lô Bảo Ninh 2 đã bán đã vào sổ. 6T/2026 doanh thu 269 tỷ (−35%), LN cổ đông 50 tỷ (−36%) dù biên gộp 32,7% (2025: 31,5%); Q2 có 17 tỷ thu nhập khác. Kế hoạch LNST 118 tỷ (+18%) cần 68 tỷ nửa cuối, gấp 3,3 lần 6T cuối 2025.",
-   "ng": "BCTC (VNDirect) · ĐHĐCĐ 2026 (Vietstock, Công Luận 04/2026)"
+   "so": "138 tỷ",
+   "nhan": "người mua trả trước 30/9/2026 (12/2022: 1.581 tỷ)",
+   "tieu": "Q3 xác nhận: Bảo Ninh 2 hụt khối lượng, không phải giá",
+   "t": "Tiền người mua trả trước — đơn đã ký chờ giao — từ 1.581 tỷ (12/2022) còn 138 tỷ: phần lớn lô Bảo Ninh 2 đã bán đã vào sổ. Q3/2026 doanh thu 86 tỷ (−29%), LN cổ đông 9,7 tỷ (+3%), biên gộp 29,5%. 9T: doanh thu 355 tỷ (−34%), LN 60 tỷ (−32%), gồm 17 tỷ thu nhập khác Q2. Kế hoạch LNST 118 tỷ cần 58 tỷ trong Q4, gấp 5,3 lần Q4/2025.",
+   "ng": "BCTC Q3/2026 (VNDirect) · ĐHĐCĐ 2026 (Vietstock, Công Luận 04/2026)"
   },
   {
    "so": "2,4 lần",
-   "nhan": "TMĐT Grand Plaza so với vốn chủ VC3 (30/6/2026)",
+   "nhan": "TMĐT Grand Plaza so với vốn chủ VC3 (30/9/2026)",
    "tieu": "Grand Plaza quyết định giá trị, nhưng lãi chỉ vào sổ từ 2028",
-   "t": "Lô A4 cạnh vòng xoay WTC Gateway (phường Bình Dương), 1,3 ha, 2 tòa 30 tầng, ~1.622 căn, TMĐT 3.733 tỷ; khởi công 22/4/2026, nhà mẫu 11/8/2026. Biên gộp 25% → doanh thu ~5,0 nghìn tỷ, LNST ~796 tỷ ≈ 5,3 nghìn đ/cp, ghi nhận khi bàn giao (trang dự án: 6/2028). Luật KD BĐS 2024 buộc vốn chủ ≥ 20% TMĐT (~747 tỷ, 48% vốn chủ VC3); vay dài hạn đã từ 0 lên 569 tỷ trong 12 tháng.",
-   "ng": "Saigon Times, CafeF 04/2026 · Vietnamnet 08/2026 · trang dự án · Shinhan 24/09 (KDH) · BCTC · mô hình"
+   "t": "Lô A4 cạnh vòng xoay WTC Gateway (phường Bình Dương), 1,3 ha, 2 tòa 30 tầng, ~1.622 căn, TMĐT 3.733 tỷ; khởi công 22/4/2026, nhà mẫu 11/8/2026. Biên gộp 25% → doanh thu ~5,0 nghìn tỷ, LNST ~796 tỷ ≈ 5,3 nghìn đ/cp, ghi nhận khi bàn giao (trang dự án: 6/2028). Luật KD BĐS 2024 buộc vốn chủ ≥ 20% TMĐT (~747 tỷ, 48% vốn chủ VC3); vay dài hạn từ 0 (6/2025) lên 646 tỷ (9/2026). Giá chào ~55 triệu/m² khớp ~3,1 tỷ/căn cơ sở.",
+   "ng": "Saigon Times, CafeF 04/2026 · Vietnamnet 08/2026 · trang dự án · CBRE, Báo Lào Cai (giá chào) · Shinhan 24/09 (KDH) · BCTC · mô hình"
   },
   {
    "so": "×2,5",
-   "nhan": "P/B VC3 so với trung vị 11 mã BĐS nhà ở (giá 20/10)",
+   "nhan": "P/B VC3 (giá 30/10) so với trung vị 11 mã BĐS nhà ở (giá 20/10)",
    "tieu": "Giá đã trả trước cho Grand Plaza — và hơn thế",
-   "t": "VC3 được trả P/B 2,21 với ROE 4,7%; 11 mã BĐS nhà ở thanh khoản ≥ 10 tỷ/phiên có trung vị 0,89 (ROE 1–23%; PDR 0,89, NLG 0,83, DIG 0,80). Phần giá trên sổ sách ~1,9 nghìn tỷ (20/10) gấp 2,4 lần LNST Grand Plaza ở biên 25%, 1,8 lần ở biên 30% — chưa chiết khấu thời gian. 2023–2025 VC3 giữ P/B trung vị 2,5 dù ROE 5–11%; 2018–2020: 1,6.",
-   "ng": "BCTC VNDirect, giá 20/10/2026 · P/B lịch sử VC3 từ 2015 · mô hình"
+   "t": "VC3 được trả P/B 2,21 với ROE 4,7%; 11 mã BĐS nhà ở thanh khoản ≥ 10 tỷ/phiên có trung vị 0,89 (ROE 1–23%; PDR 0,89, NLG 0,83, DIG 0,80). Phần giá trên sổ sách ~1,9 nghìn tỷ (30/10) gấp 2,4 lần LNST Grand Plaza ở biên 25%, 1,8 lần ở biên 30% — chưa chiết khấu thời gian. 2023–2025 VC3 giữ P/B trung vị 2,5 dù ROE 5–11%; 2018–2020: 1,6.",
+   "ng": "BCTC VNDirect (VC3: Q3/2026, giá 30/10; nhóm: Q2/2026, giá 20/10) · P/B lịch sử VC3 từ 2015 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Sổ sách + lãi Grand Plaza: {up_so} so với giá hiện tại",
-   "t": "Vốn chủ 30/6/2027E (1,61 nghìn tỷ) × P/B 1,0 — quỹ đất Đồng Hới, NOXH, góp vốn MekongHomes 48% và Cát Khánh 15% theo giá vốn — cộng LNST Grand Plaza tiềm năng × 0,65 (bàn giao 2028–2029, chiết khấu ~14%/năm, rủi ro bán hàng). Xấu 10,8: P/B 0,85 như nhóm, biên 20%. Tốt 24,8: P/B 1,67 (thấp 25% lịch sử VC3), biên 30%, hệ số 0,85. Cổ tức cổ phiếu không đổi giá trị.",
-   "ng": "mô hình · P/B lịch sử VC3 và nhóm BĐS nhà ở: BCTC VNDirect, giá 20/10/2026"
+   "t": "Vốn chủ 30/6/2027E (1,62 nghìn tỷ) × P/B 1,0 — quỹ đất Đồng Hới, NOXH, góp vốn MekongHomes 48% và Cát Khánh 15% theo giá vốn — cộng LNST Grand Plaza tiềm năng × 0,65 (bàn giao 2028–2029, chiết khấu ~14%/năm, rủi ro bán hàng). Xấu 10,8: P/B 0,85 như nhóm, biên 20%. Tốt 24,8: P/B 1,67 (thấp 25% lịch sử VC3), biên 30%, hệ số 0,85. Cổ tức cổ phiếu không đổi giá trị.",
+   "ng": "mô hình · P/B lịch sử VC3 và nhóm BĐS nhà ở: BCTC VNDirect, giá nhóm 20/10/2026"
   }
  ],
  "tom_tat": {
@@ -59,19 +59,19 @@
   ],
   "ln": [
    100,
-   73,
+   80,
    51
   ],
   "ln_truoc": 65,
   "eps": [
    672,
-   491,
+   538,
    343
   ],
   "bv": [
    9981,
-   10608,
-   10948
+   10652,
+   10992
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -79,7 +79,7 @@
     "ten": "Doanh thu (tỷ)",
     "v": [
      608,
-     634,
+     620,
      730
     ],
     "d": 0
@@ -88,8 +88,8 @@
     "ten": "ROE",
     "v": [
      7.0,
-     4.8,
-     3.2
+     5.2,
+     3.1
     ],
     "d": 1,
     "pt": 1
@@ -112,7 +112,7 @@
     "mau": "c1",
     "v": [
      191,
-     150,
+     144,
      124
     ]
    },
@@ -130,7 +130,7 @@
     "mau": "c4",
     "v": [
      -65,
-     -87,
+     -76,
      -80
     ]
    },
@@ -139,17 +139,17 @@
     "mau": "c3",
     "v": [
      4,
-     15,
+     18,
      -10
     ]
    }
   ],
   "nhan": "Nhà ở xã hội Bảo Ninh 2 (lãi gộp)",
-  "ng": "2025: lãi gộp 191, bán hàng + quản lý 65, tài chính & khác 3 tỷ. 2026E gồm 17 tỷ thu nhập khác Q2. Nhà ở xã hội: lãi định mức ≤ 10% chi phí. Grand Plaza chưa ghi nhận trước 2028. 2026E–2027E: mô hình."
+  "ng": "2025: lãi gộp 191, bán hàng + quản lý 65, tài chính & khác 3 tỷ. 2026E = 9T thực tế + Q4 ước, gồm 17 tỷ thu nhập khác Q2. Nhà ở xã hội: lãi định mức ≤ 10% chi phí. Grand Plaza chưa ghi nhận trước 2028. 2027E: mô hình."
  },
  "so_sanh": {
   "tieu": "P/B so với 11 mã BĐS nhà ở thanh khoản lớn",
-  "phu": "giá hôm nay, vốn chủ cổ đông 30/6/2026, 148,8 triệu cp",
+  "phu": "giá hôm nay, vốn chủ cổ đông 30/9/2026, 148,8 triệu cp",
   "chi_so": "P/B",
   "chi_so_kv": "P/B (giá 20/10)",
   "nhom": "11 mã BĐS nhà ở GTGD ≥ 10 tỷ/phiên",
@@ -200,10 +200,10 @@
    ]
   ],
   "tv": 0.89,
-  "moi_cp": 10454,
+  "moi_cp": 10519,
   "max": 4,
   "y": "Trừ VPI (3,27, ROE 7,6%), cả nhóm được trả 0,38–1,03 lần sổ sách, kể cả HDC ROE 23% (0,82) và KDH, NVL ROE 9,5% (0,94, 0,71). VC3 ROE 4,7%, dưới trung vị ROE nhóm (5,2%).",
-  "ng": "Nhóm: chủ đầu tư nhà ở GTGD TB20 ≥ 10 tỷ (trừ VIC, VHM, khu công nghiệp, cho thuê, hạ tầng); vốn hóa VNDirect, vốn chủ mẹ BCTC Q2/2026, giá 20/10/2026. VC3 ở nhóm Xây dựng & Vật liệu trong bảng ngành của trang nhưng 96% doanh thu kế hoạch 2026 là BĐS"
+  "ng": "Nhóm: chủ đầu tư nhà ở GTGD TB20 ≥ 10 tỷ (trừ VIC, VHM, khu công nghiệp, cho thuê, hạ tầng); vốn hóa VNDirect, vốn chủ mẹ BCTC Q2/2026, giá 20/10/2026 (VC3: BCTC Q3/2026). VC3 ở nhóm Xây dựng & Vật liệu trong bảng ngành của trang nhưng 96% doanh thu kế hoạch 2026 là BĐS"
  },
  "mo_hinh": {
   "tieu": "Dự phóng: Đồng Hới + nhà ở xã hội; Grand Plaza tính riêng",
@@ -220,7 +220,7 @@
     "ten": "Doanh thu (tỷ)",
     "v": [
      608,
-     469,
+     455,
      400
     ],
     "tang": 1
@@ -229,7 +229,7 @@
     "ten": "Biên gộp (%)",
     "v": [
      31.5,
-     32.0,
+     31.6,
      31.0
     ],
     "d": 1
@@ -238,7 +238,7 @@
     "ten": "Lãi gộp (tỷ)",
     "v": [
      191,
-     150,
+     144,
      124
     ],
     "tang": 1
@@ -269,7 +269,7 @@
     "ten": "Chi phí bán hàng + quản lý (tỷ)",
     "v": [
      65,
-     87,
+     76,
      80
     ]
    },
@@ -277,7 +277,7 @@
     "ten": "Tài chính ròng & khác (tỷ)",
     "v": [
      4,
-     15,
+     18,
      -10
     ]
    },
@@ -285,7 +285,7 @@
     "ten": "LN trước thuế (tỷ)",
     "v": [
      130,
-     93,
+     101,
      64
     ],
     "tang": 1
@@ -294,7 +294,7 @@
     "ten": "LN cổ đông (tỷ)",
     "v": [
      100,
-     73,
+     80,
      51
     ],
     "dam": 1,
@@ -304,7 +304,7 @@
     "ten": "EPS (đ)",
     "v": [
      672,
-     491,
+     538,
      343
     ],
     "eps": 1
@@ -313,8 +313,8 @@
     "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
     "v": [
      1.49,
-     1.58,
-     1.63
+     1.59,
+     1.64
     ],
     "d": 2
    },
@@ -322,8 +322,8 @@
     "ten": "ROE (%)",
     "v": [
      7.0,
-     4.8,
-     3.2
+     5.2,
+     3.1
     ],
     "d": 1
    },
@@ -347,13 +347,13 @@
     ]
    }
   ],
-  "ghi": "2026E = 6T thực tế + 6T cuối ước. Nhà ở xã hội: doanh thu ≈ TMĐT 451 tỷ × 1,1, mỗi tòa ~165 tỷ (T1 Q4/2026, T2–T3 2027). Thuế 21%. Grand Plaza: doanh thu = TMĐT 3.733 tỷ ÷ (1 − biên gộp), chi phí bán 5%, thuế 20%."
+  "ghi": "2026E = 9T thực tế + Q4 ước. Nhà ở xã hội: doanh thu ≈ TMĐT 451 tỷ × 1,1, mỗi tòa ~165 tỷ (T1 dự kiến 11/2026, T2–T3 2027). Thuế 21%. Grand Plaza: doanh thu = TMĐT 3.733 tỷ ÷ (1 − biên gộp), chi phí bán 5%, thuế 20%."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   73
+   80
   ],
   "cuoi": [
    "2027E",
@@ -362,7 +362,7 @@
   "buoc": [
    [
     "Lãi gộp Đồng Hới",
-    -21
+    -16
    ],
    [
     "Nhà ở xã hội",
@@ -370,11 +370,11 @@
    ],
    [
     "Bán hàng + quản lý",
-    6
+    -3
    ],
    [
     "Tài chính & khác",
-    -19
+    -22
    ]
   ],
   "y": "Lãi gộp Đồng Hới giảm theo khối lượng; nhà ở xã hội bù một phần nhưng chỉ có lãi định mức. Thu nhập khác 17 tỷ của Q2/2026 không lặp lại, lãi vay bắt đầu vào chi phí.",
@@ -382,13 +382,13 @@
  },
  "gia_dinh": [
   {
-   "ten": "Doanh thu KĐT Đồng Hới: 6T cuối 2026 · 2027 (tỷ)",
+   "ten": "Doanh thu KĐT Đồng Hới: Q4/2026 · 2027 (tỷ)",
    "v": [
-    "170 · 300",
-    "200 · 400",
-    "260 · 550"
+    "70 · 300",
+    "100 · 400",
+    "150 · 550"
    ],
-   "ly_do": "6T cuối 2025: 193, 2024: 239; cả năm 2025 608. Người mua trả trước 30/6/2026 chỉ 127 tỷ (12/2022: 1.581)"
+   "ly_do": "Q3/2026: 86; Q4/2025: 72, Q4/2024: 157; cả năm 2025 608. Người mua trả trước 30/9/2026 chỉ 138 tỷ (12/2022: 1.581)"
   },
   {
    "ten": "Biên gộp KĐT Đồng Hới",
@@ -397,7 +397,7 @@
     "31%",
     "33%"
    ],
-   "ly_do": "2024 28,9%, 2025 31,5%, 6T/2026 32,7%: giá bán giữ được, khối lượng giảm"
+   "ly_do": "2024 28,9%, 2025 31,5%, 9T/2026 31,9% (Q3 29,5%): giá bán giữ được, khối lượng giảm"
   },
   {
    "ten": "Nhà ở xã hội: doanh thu 2026 · 2027 (tỷ)",
@@ -406,25 +406,25 @@
     "165 · 330",
     "165 · 330"
    ],
-   "ly_do": "568 căn, TMĐT ~451 tỷ (Mekong Group; CafeLand: > 560 tỷ); T1 xong 31/8/2026, T2–T3 21/12/2026; lãi định mức ≤ 10% chi phí (Luật Nhà ở 2023)"
+   "ly_do": "568 căn, TMĐT ~451 tỷ (Mekong Group; CafeLand: > 560 tỷ); T1 dự kiến đưa vào sử dụng 11/2026 (kế hoạch cũ 31/8), Q3 chưa ghi doanh thu; lãi định mức ≤ 10% chi phí (Luật Nhà ở 2023)"
   },
   {
-   "ten": "Bán hàng + quản lý: 6T cuối 2026 · 2027 (tỷ)",
+   "ten": "Bán hàng + quản lý: Q4/2026 · 2027 (tỷ)",
    "v": [
-    "48 · 90",
-    "46 · 80",
-    "42 · 72"
+    "24 · 90",
+    "20 · 80",
+    "17 · 72"
    ],
-   "ly_do": "2025: 65; 6T/2026: 41. Grand Plaza mở nhà mẫu 11/8/2026: chi phí bán hàng ghi khi phát sinh, trước doanh thu 2028"
+   "ly_do": "2025: 65; 9T/2026: 56 (Q3 15, Q4/2025 17). Grand Plaza mở bán 8/2026: chi phí bán hàng ghi khi phát sinh, trước doanh thu 2028"
   },
   {
-   "ten": "Tài chính & khác: 6T cuối 2026 · 2027 (tỷ)",
+   "ten": "Tài chính & khác: Q4/2026 · 2027 (tỷ)",
    "v": [
-    "−4 · −20",
-    "−2 · −10",
+    "−3 · −20",
+    "−1 · −10",
     "0 · −5"
    ],
-   "ly_do": "Nợ vay 721 tỷ (30/6/2026) nhưng lãi vay vào KQKD 6T chỉ 1,4 tỷ (vốn hóa vào dự án); thu nhập khác Q2 17 tỷ không lặp lại"
+   "ly_do": "Nợ vay 758 tỷ (30/9/2026) nhưng lãi vay vào KQKD 9T chỉ 1,4 tỷ (vốn hóa vào dự án); thu nhập khác Q2 17 tỷ không lặp lại"
   },
   {
    "ten": "Biên gộp Grand Plaza",
@@ -433,7 +433,7 @@
     "25%",
     "30%"
    ],
-   "ly_do": "Doanh thu = TMĐT 3.733 tỷ ÷ (1 − biên): ~2,9–3,3 tỷ/căn trên ~1.622 căn; chưa có bảng giá chính thức. Chi phí bán 5%, thuế 20%"
+   "ly_do": "Doanh thu = TMĐT 3.733 tỷ ÷ (1 − biên): ~2,9–3,3 tỷ/căn trên ~1.622 căn; giá chào môi giới ~55 triệu/m² (căn 36 m² ~1,98 tỷ), chưa có bảng giá chính thức. Chi phí bán 5%, thuế 20%"
   },
   {
    "ten": "Hệ số cho lãi Grand Plaza",
@@ -457,21 +457,21 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 48,
+   "ln26": 55,
    "ln27": 6,
    "gia": 10.8,
    "mo_ta": "Đồng Hới 300 tỷ doanh thu 2027, biên 29%, tòa T1 nhà ở xã hội lùi sang 2027; Grand Plaza biên 20% × 0,50; P/B 0,85 như nhóm"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 73,
+   "ln26": 80,
    "ln27": 51,
    "gia": 14.3,
    "mo_ta": "Đồng Hới 400 tỷ, biên 31%, nhà ở xã hội T1 Q4/2026, T2–T3 2027; Grand Plaza biên 25% × 0,65; P/B 1,00"
   },
   {
    "ten": "Tốt",
-   "ln26": 97,
+   "ln26": 98,
    "ln27": 106,
    "gia": 24.8,
    "mo_ta": "Đồng Hới 550 tỷ, biên 33%; Grand Plaza biên 30%, bán nhanh, × 0,85; P/B 1,67 (thấp 25% lịch sử VC3)"
@@ -488,9 +488,9 @@
     "mau": "c2",
     "sh": 1,
     "x": [
-     1557,
-     1609,
-     1666
+     1563,
+     1615,
+     1667
     ],
     "boi": [
      0.85,
@@ -501,9 +501,9 @@
     "boi_ten": "P/B",
     "boi_d": 2,
     "gt": [
-     1323,
-     1609,
-     2782
+     1329,
+     1615,
+     2784
     ]
    },
    {
@@ -531,9 +531,9 @@
    }
   ],
   "von": [
-   1603,
-   2126,
-   3689
+   1609,
+   2132,
+   3691
   ],
   "gia": [
    10.8,
@@ -856,7 +856,7 @@
    2.32,
    2.25,
    2.24,
-   2.21
+   2.22
   ],
   "p10": 1.46,
   "p25": 1.67,
@@ -867,10 +867,10 @@
   ],
   "nay": [
    "2026-10",
-   2.21
+   2.22
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Kịch bản dùng P/B 0,85 · 1,00 · 1,67 cho vốn chủ 30/6/2027E, lãi Grand Plaza tính riêng: xấu = trung vị BĐS nhà ở (0,89), tốt = thấp 25% lịch sử VC3 (1,67). Giá trị cơ sở ≈ P/B 1,37 vốn chủ 30/6/2026; giá 20/10 = 2,21, thấp nhất từ 2022 nhưng ngang đỉnh 2018–2020 (2,20), khi ROE 2–13%."
+  "dung": "Kịch bản dùng P/B 0,85 · 1,00 · 1,67 cho vốn chủ 30/6/2027E, lãi Grand Plaza tính riêng: xấu = trung vị BĐS nhà ở (0,89), tốt = thấp 25% lịch sử VC3 (1,67). Giá trị cơ sở ≈ P/B 1,36 vốn chủ 30/9/2026; giá 30/10 = 2,22, thấp nhất từ 2022 nhưng ngang đỉnh 2018–2020 (2,20), khi ROE 2–13%."
  },
  "theo_doi": [
   {
@@ -887,38 +887,38 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    -2,
-    18,
-    35
+    -5,
+    20,
+    38
    ],
    "ck": 11
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    48,
-    73,
-    97
+    55,
+    80,
+    98
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "20–30/10/2026",
+   "khi": "Đã ra (BCTC Q3/2026)",
    "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Cùng kỳ LN cổ đông 9,4 tỷ; quý không có nhà ở xã hội bàn giao. Xem người mua trả trước 30/9 — tiền giữ chỗ, ký bán Grand Plaza từ 8/2026 sẽ vào đây.",
+   "tieu": "KQKD Q3/2026: lãi đi ngang, tiền Grand Plaza chưa về",
+   "ct": "LN cổ đông 9,7 tỷ (+3%), trên cơ sở cũ 5 tỷ nhưng trong khoảng 0–12; doanh thu 86 tỷ (−29%). Người mua trả trước chỉ 127 → 138 tỷ dù Grand Plaza mở bán 8/2026 (thanh toán từ 5%, giãn 24 tháng).",
    "tac": [
-    "≥ 5 tỷ",
-    "khớp cơ sở; lỗ nghiêng về xấu"
+    "73 → 80 tỷ",
+    "LN cổ đông 2026E cơ sở (bản 20/10 → nay)"
    ],
-   "theo_doi": "LN cổ đông, người mua trả trước"
+   "theo_doi": "người mua trả trước 31/12"
   },
   {
-   "khi": "Q4/2026",
+   "khi": "11/2026–Q4/2026",
    "loai": "len",
    "tieu": "Bàn giao tòa T1 nhà ở xã hội Bảo Ninh 2",
-   "ct": "T1 dự kiến xong 31/8/2026, T2–T3 21/12/2026 (CafeLand); 568 căn, giá bình quân 18,2 triệu/m² gồm VAT; đợt 6 (8–9/2026) chỉ còn 4 căn.",
+   "ct": "T1 đang hoàn thiện, dự kiến đưa vào sử dụng 11/2026 (kế hoạch cũ 31/8); T2–T3 21/12/2026 (CafeLand); 568 căn, giá bình quân 18,2 triệu/m² gồm VAT; đợt 6 (8–9/2026) chỉ còn 4 căn.",
    "tac": [
     "+15 tỷ LNTT",
     "mỗi tòa (~165 tỷ doanh thu, lãi định mức ≤ 10%)"
@@ -929,7 +929,7 @@
    "khi": "Q4/2026–2027",
    "loai": "len",
    "tieu": "Bán hàng Grand Plaza",
-   "ct": "Nhà mẫu mở 11/8/2026; giá bán và tốc độ hấp thụ ~1.622 căn quyết định biên gộp. Thước đo: người mua trả trước tăng từ 127 tỷ.",
+   "ct": "Nhà mẫu mở 11/8/2026; giá bán và tốc độ hấp thụ ~1.622 căn quyết định biên gộp. Thước đo: người mua trả trước tăng từ 138 tỷ (30/9); giá chào ~55 triệu/m².",
    "tac": [
     "±0,9 nghìn đ/cp",
     "mỗi 5 điểm % biên gộp Grand Plaza"
@@ -946,6 +946,17 @@
     "mỗi 0,1 hệ số (bàn giao sớm/chậm ~1 năm)"
    ],
    "theo_doi": "tiến độ xây, ngày bàn giao"
+  },
+  {
+   "khi": "1–4/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026 và kế hoạch 2027 (ĐHĐCĐ)",
+   "ct": "Q4 cơ sở 20 tỷ (xấu -5, tốt 38) phụ thuộc bàn giao tòa T1; kế hoạch 2027 cho biết VC3 có đưa Grand Plaza vào doanh thu trước 2028 hay không, và cổ tức 2026 (kế hoạch 8%) trả tiền hay cổ phiếu.",
+   "tac": [
+    "51 tỷ",
+    "LN cổ đông 2027E cơ sở"
+   ],
+   "theo_doi": "LN Q4, kế hoạch 2027, hình thức cổ tức"
   },
   {
    "khi": "2027+",
@@ -972,10 +983,10 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Đòn bẩy, bảo đảm cho công ty liên kết",
-   "ct": "Vay dài hạn 0 → 569 tỷ trong 12 tháng; tờ trình ĐHĐCĐ 2026: dùng lô đất 4.265 m² ở Đồng Hới bảo đảm khoản vay của công ty liên kết; 380 tỷ góp MekongHomes chưa tạo lãi.",
+   "ct": "Vay dài hạn 0 (6/2025) → 646 tỷ (9/2026); tờ trình ĐHĐCĐ 2026: dùng lô đất 4.265 m² ở Đồng Hới bảo đảm khoản vay của công ty liên kết; 380 tỷ góp MekongHomes chưa tạo lãi.",
    "tac": [
-    "−7 tỷ LNTT/năm",
-    "mỗi 1 điểm % lãi suất trên nợ vay 30/6 nếu không vốn hóa"
+    "−8 tỷ LNTT/năm",
+    "mỗi 1 điểm % lãi suất trên nợ vay 30/9 nếu không vốn hóa"
    ],
    "theo_doi": "nợ vay, lãi liên kết"
   },
@@ -984,12 +995,12 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Hụt kế hoạch 2026",
-   "ct": "LNST 118 tỷ cần 68 tỷ nửa cuối (6T cuối 2025: 20,5); 2025 chỉ đạt 59% kế hoạch LN. Cơ sở 73 tỷ.",
+   "ct": "9T đạt 60/118 tỷ (51%); Q4 cần 58 tỷ (Q4/2025: 11,1). 2025 chỉ đạt 59% kế hoạch LN. Cơ sở 80 tỷ.",
    "tac": [
-    "62%",
+    "68%",
     "kế hoạch LN đạt được ở kịch bản cơ sở"
    ],
-   "theo_doi": "LN Q3, Q4"
+   "theo_doi": "LN Q4"
   },
   {
    "khi": "2026",
@@ -1004,7 +1015,7 @@
    "khi": "Liên tục",
    "loai": "hai",
    "tieu": "Mức P/B thị trường trả",
-   "ct": "P/B VC3 2023–2025 trong khoảng 1,96–2,76; hiện 2,21 — thấp nhất từ 2022 nhưng gấp 2,5 lần trung vị BĐS nhà ở.",
+   "ct": "P/B VC3 2023–2025 trong khoảng 1,96–2,76; hiện 2,22 — thấp nhất từ 2022 nhưng gấp 2,5 lần trung vị BĐS nhà ở.",
    "tac": [
     "±1,1 nghìn đ/cp",
     "mỗi 0,1 lần P/B phần vốn chủ"
@@ -1033,7 +1044,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1053,7 +1065,8 @@
       0.11,
       0.07,
       0.12,
-      0.13
+      0.13,
+      0.14
      ],
      "mau": "c1"
     },
@@ -1074,7 +1087,8 @@
       0.27,
       0.5,
       0.62,
-      0.72
+      0.72,
+      0.76
      ],
      "mau": "c2"
     },
@@ -1095,12 +1109,13 @@
       1.67,
       1.72,
       1.73,
-      1.76
+      1.76,
+      1.77
      ],
      "mau": "c4"
     }
    ],
-   "y": "Người mua trả trước 1,58 → 0,13 nghìn tỷ từ Q4/22; tồn kho chỉ giảm 2,41 → 1,76. Nợ vay 0,11 → 0,72 nghìn tỷ trong 12 tháng: chu kỳ Grand Plaza bắt đầu bằng nợ.",
+   "y": "Người mua trả trước 1,58 → 0,14 nghìn tỷ từ Q4/22; tồn kho chỉ giảm 2,41 → 1,77. Nợ vay 0,27 → 0,76 nghìn tỷ trong 12 tháng: chu kỳ Grand Plaza bắt đầu bằng nợ.",
    "ng": "BCTC (VNDirect)"
   },
   {
@@ -1119,7 +1134,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1135,7 +1151,8 @@
       121,
       72,
       106,
-      162
+      162,
+      86
      ],
      "mau": "c1"
     },
@@ -1152,12 +1169,13 @@
       28,
       29,
       44,
-      44
+      44,
+      25
      ],
      "mau": "c4"
     }
    ],
-   "y": "Doanh thu đỉnh 422 tỷ (Q4/23) khi Bảo Ninh 2 bàn giao dồn; 4 quý gần nhất 462 tỷ (−29% so với 4 quý trước), biên gộp vẫn ~33%.",
+   "y": "Doanh thu đỉnh 422 tỷ (Q4/23) khi Bảo Ninh 2 bàn giao dồn; 4 quý gần nhất 426 tỷ (−38% so với 4 quý trước), biên gộp 9T/2026 vẫn ~32%.",
    "ng": "BCTC (VNDirect)"
   },
   {
@@ -1187,13 +1205,13 @@
       142,
       65,
       100,
-      73,
+      80,
       51
      ],
      "mau": "c1"
     }
    ],
-   "y": "Đỉnh 142 tỷ năm 2023; 2026E 73, 2027E 51 tỷ trước khi Grand Plaza bàn giao — kế hoạch 2026 118 tỷ.",
+   "y": "Đỉnh 142 tỷ năm 2023; 2026E 80, 2027E 51 tỷ trước khi Grand Plaza bàn giao — kế hoạch 2026 118 tỷ.",
    "ng": "BCTC (VNDirect) · mô hình"
   },
   {
@@ -1248,32 +1266,32 @@
    {
     "ten": "Doanh thu",
     "kh": 629,
-    "th": 269,
-    "ky": "6T",
-    "tg": 50,
+    "th": 355,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
    },
    {
     "ten": "LN trước thuế",
     "kh": 148,
-    "th": 64,
-    "ky": "6T",
-    "tg": 50,
+    "th": 76,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
    },
    {
     "ten": "LNST cổ đông công ty mẹ",
     "kh": 118,
-    "th": 50,
-    "ky": "6T",
-    "tg": 50,
+    "th": 60,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
    }
   ],
-  "y": "6 tháng đạt 43% doanh thu, 43% LNST. Cơ sở: doanh thu 634 tỷ (101%) nhờ tòa T1 nhà ở xã hội, nhưng LN cổ đông 73 tỷ (62%) vì phần này chỉ có lãi định mức. 2025 đạt 80,5% doanh thu, 59% LN kế hoạch.",
+  "y": "9 tháng đạt 56% doanh thu, 51% LNST. Cơ sở: doanh thu 620 tỷ (99%) nhờ tòa T1 nhà ở xã hội, nhưng LN cổ đông 80 tỷ (68%) vì phần này chỉ có lãi định mức. 2025 đạt 80,5% doanh thu, 59% LN kế hoạch.",
   "ng": ""
  },
  "mang": [
@@ -1282,8 +1300,8 @@
    "phu": "18,3 ha, Bảo Ninh, Đồng Hới (Quảng Bình cũ, nay Quảng Trị) · doanh thu ghi nhận khi bàn giao",
    "so": [
     [
-     "Doanh thu 2022–6T/2026",
-     "2,8 nghìn tỷ",
+     "Doanh thu 2022–9T/2026",
+     "2,9 nghìn tỷ",
      "BCTC hợp nhất"
     ],
     [
@@ -1292,14 +1310,14 @@
      "cuối 2022 (VietnamFinance)"
     ],
     [
-     "Người mua trả trước 30/6/2026",
-     "127 tỷ",
+     "Người mua trả trước 30/9/2026",
+     "138 tỷ",
      "BCTC"
     ],
     [
      "Biên gộp",
-     "32,7%",
-     "6T/2026; 2025: 31,5%"
+     "31,9%",
+     "9T/2026; 2025: 31,5%"
     ]
    ],
    "y": [
@@ -1342,6 +1360,10 @@
     {
      "t": "Đợt 6 (nhận hồ sơ 10/8–10/9/2026) chỉ còn 4 căn: đầu ra có sẵn, lãi bị giới hạn — giữ doanh thu, không giữ biên.",
      "ng": "Doanh nhân 08/2026 · CafeLand"
+    },
+    {
+     "t": "Tòa T1 đã xong hạ tầng ngoài và phòng cháy, đang hoàn thiện căn hộ; dự kiến đưa vào sử dụng 11/2026 — trễ ~2 tháng so với mốc 31/8.",
+     "ng": "Thương hiệu & Công luận 2026"
     }
    ]
   },
@@ -1361,8 +1383,8 @@
     ],
     [
      "Vay dài hạn VC3",
-     "569 tỷ",
-     "30/6/2026 (30/6/2025: 0)"
+     "646 tỷ",
+     "30/9/2026 (30/6/2025: 0)"
     ],
     [
      "LNST tiềm năng",
@@ -1374,6 +1396,10 @@
     {
      "t": "Văn phòng bán hàng và nhà mẫu khai trương 11/8/2026; khu vực gần ga Metro số 1 và số 2 theo quy hoạch.",
      "ng": "Vietnamnet 08/2026 · CafeF 10/2026"
+    },
+    {
+     "t": "Giá chào trên sàn môi giới ~55 triệu/m² (căn 36 m² ~1,98 tỷ, 65 m² ~3,58 tỷ), thanh toán từ 5%, giãn 24 tháng — chưa phải bảng giá chính thức; tiền khách trả về chậm nên vay vẫn gánh phần lớn vốn xây.",
+     "ng": "CBRE · Báo Lào Cai (giá chào) · tin rao Guland"
     },
     {
      "t": "Trang dự án ghi bàn giao 6/2028; mô hình tính lãi 2028–2029, không đưa vào LN 2026–2027.",
@@ -1402,7 +1428,7 @@
     ],
     [
      "Tài sản dài hạn",
-     "0,69 nghìn tỷ",
+     "0,68 nghìn tỷ",
      "30/9/2024: 0,20"
     ]
    ],
@@ -1602,6 +1628,21 @@
    "ten": "Shinhan — KDH: Gladia là động lực ngắn hạn (quy định vốn chủ dự án)",
    "ngay": "24/09/2026",
    "link": "https://cdn.simplize.vn/simplizevn/report/KDH/20260924_kdh_mua_gia_mt_vnd_24_200_52_6_gladia_la_dong_luc_trong_ngan_han.pdf"
+  },
+  {
+   "ten": "Thương hiệu & Công luận — Quảng Trị tăng tốc nhà ở xã hội (Bảo Ninh 2 tòa T1 dự kiến đưa vào sử dụng 11/2026)",
+   "ngay": "2026",
+   "link": "https://thuonghieucongluan.com.vn/quang-tri-tang-toc-cac-du-an-nha-o-xa-hoi-huong-toi-hoan-thanh-784-can-trong-nam-2026-a334353.html"
+  },
+  {
+   "ten": "CBRE — Nam Mekong Grand Plaza (giá chào ~55 triệu/m²)",
+   "ngay": "2026",
+   "link": "https://residential.cbrevietnam.com/en-US/nam-mekong-grand-plaza-3"
+  },
+  {
+   "ten": "Báo Lào Cai — căn hộ Bình Dương cũ, giá chào Nam Mekong Grand Plaza",
+   "ngay": "2026",
+   "link": "https://baolaocai.vn/can-ho-binh-duong-cu-hut-su-quan-tam-khi-do-thi-moi-mo-rong-tham-khao-gia-tren-batdongsancomvn-post912564.html"
   }
  ]
 }
