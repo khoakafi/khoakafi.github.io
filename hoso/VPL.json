@@ -3,8 +3,8 @@
  "ma": "VPL",
  "ten": "CTCP Vinpearl",
  "nganh": "Nghỉ dưỡng & vui chơi giải trí",
- "ky": "BCTC Q3/2026 · giá 29/10/2026",
- "cap_nhat": "2026-10-30",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
  "lan_sau": "sau BCTC Q4/2026 (~cuối 1/2027)",
  "cp_trieu": 1877.5,
  "cp_ng": "Vốn điều lệ 18.774,5 tỷ (BCTC 30/6/2026) = 1.793,3 triệu cp phổ thông + 84,15 triệu cổ phiếu ưu đãi cổ tức chuyển đổi (CDPS, 6/2026) — tính như đã chuyển đổi 1:1",
@@ -146,9 +146,9 @@
     "ten": "Cổ phiếu VIC",
     "cp_trieu": 7733.5,
     "so_huu": 0.009013,
-    "ln26": 17938,
-    "ln27": 10291,
-    "gtgd": 654,
+    "ln26": 42382,
+    "ln27": 8060,
+    "gtgd": 676,
     "mau": "c2"
    }
   ],
@@ -392,7 +392,7 @@
     "241",
     "241"
    ],
-   "ly_do": "Giá 29/10; xấu −30%. Hồ sơ VIC của trang định giá cơ sở 40,5 nghìn đ — rủi ro giảm lớn hơn"
+   "ly_do": "Giá 30/10; xấu −30%. Hồ sơ VIC của trang định giá cơ sở 42,5 nghìn đ — rủi ro giảm lớn hơn"
   }
  ],
  "kich_ban": [
@@ -408,7 +408,7 @@
    "ln26": 3415,
    "ln27": 2082,
    "gia": 36.7,
-   "mo_ta": "DT cốt lõi 2027 +15%, biên gộp 31%, BH+QL 19,5%, tài chính ròng +600 tỷ; P/E 25; VIC giá 29/10"
+   "mo_ta": "DT cốt lõi 2027 +15%, biên gộp 31%, BH+QL 19,5%, tài chính ròng +600 tỷ; P/E 25; VIC giá 30/10"
   },
   {
    "ten": "Tốt",
@@ -630,7 +630,7 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Định giá cao, free float mỏng",
-   "ct": "P/E 4 quý ~48 trên LN có 1,7 nghìn tỷ một lần và lãi tài chính; VIC 81,7%, CDPS 4,5% khóa 1 năm, GTGD ~82 tỷ/phiên — giá dễ biến động mạnh khi cung tăng.",
+   "ct": "P/E 4 quý ~48 trên LN có 1,7 nghìn tỷ một lần và lãi tài chính; VIC 81,7%, CDPS 4,5% khóa 1 năm, GTGD ~84 tỷ/phiên — giá dễ biến động mạnh khi cung tăng.",
    "tac": [
     "{up_so}",
     "nếu giá về giá trị cơ sở"
@@ -674,7 +674,7 @@
    "khi": "Liên tục",
    "loai": "hai",
    "tieu": "Giá cổ phiếu VIC",
-   "ct": "69,7 triệu cp VIC ≈ 8,9 nghìn đ/cp VPL theo giá 29/10; hồ sơ VIC của trang định giá cơ sở 40,5 nghìn đ — nếu VIC về mức đó, phần này còn 2,8 nghìn tỷ.",
+   "ct": "69,7 triệu cp VIC ≈ 8,9 nghìn đ/cp VPL theo giá 30/10; hồ sơ VIC của trang định giá cơ sở 42,5 nghìn đ — nếu VIC về mức đó, phần này còn 3,0 nghìn tỷ.",
    "tac": [
     "±2,7 nghìn đ/cp",
     "mỗi 30% giá VIC"
