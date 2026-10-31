@@ -3,12 +3,12 @@
  "ma": "NVL",
  "ten": "CTCP Tập đoàn Đầu tư Địa ốc No Va (Novaland)",
  "nganh": "Bất động sản",
- "ky": "BCTC Q2/2026 · công bố đến 10/2026",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 và kết quả chào bán 3:1",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau kết quả chào bán 3:1 (nộp tiền đến 26/11) và BCTC Q4/2026",
  "cp_trieu": 3202.8,
  "vc_them": 8007,
- "cp_ng": "2.402,1 triệu cp đang lưu hành (vốn điều lệ 24.021 tỷ sau thưởng 7,5%, GDKHQ 10/06/2026) + 800,7 triệu cp chào bán 3:1 giá 10.000 đ (GDKHQ 30/09, nộp tiền đến 29/10/2026), giả định bán hết. Giá đã giao dịch không hưởng quyền nên tính trên số cp sau chào bán",
+ "cp_ng": "2.402,1 triệu cp đang lưu hành (vốn điều lệ 24.021 tỷ sau thưởng 7,5%, GDKHQ 10/06/2026) + 800,7 triệu cp chào bán 3:1 giá 10.000 đ (GDKHQ 30/09, nộp tiền gia hạn đến 26/11/2026), giả định bán hết. Giá đã giao dịch không hưởng quyền nên tính trên số cp sau chào bán",
  "co_tuc": [],
  "chia": [
   [
@@ -17,39 +17,39 @@
   ]
  ],
  "tieu_de": {
-  "t": "Không rẻ như vẻ ngoài: lãi 2026 từ bán tài sản, trả nợ bằng cổ phiếu nửa giá sổ sách",
+  "t": "Q3 lãi thật từ bàn giao, nhưng 2027 thiếu dự án nối tiếp; trả nợ bằng cổ phiếu nửa giá sổ sách",
   "dk": "up_duoi:15",
-  "khac": "Lãi từ bán tài sản, trả nợ bằng cổ phiếu nửa giá sổ sách: rủi ro đã nằm trong giá"
+  "khac": "Q3 lãi thật từ bàn giao; pha loãng và năm 2027 trống đã nằm trong giá"
  },
- "dong_mo": "6T/2026 lãi 1,87 nghìn tỷ nhờ bán lô đất (Q1) và thoái vốn Ngôi nhà Mega (Q2); bàn giao Q2 chỉ lãi 23 tỷ trước chi phí tài chính. P/B 0,65 lần vốn chủ giữa 2027 (gồm 8,0 nghìn tỷ chào bán 3:1) cho {gt} ({up}); xấu 8,3, tốt 15,6, cán cân lên/xuống {rr} lần. Cửa tăng: bàn giao TP.HCM, Aqua City mở bán lại.",
+ "dong_mo": "9T/2026 lãi 2,99 nghìn tỷ: Q3 1.119 tỷ từ bàn giao Victoria Village (biên gộp 34%), Q1–Q2 từ bán lô đất và thoái vốn. P/B 0,65 lần vốn chủ giữa 2027 (gồm 8,0 nghìn tỷ chào bán 3:1, nộp tiền dời đến 26/11) cho {gt} ({up}); xấu 8,7, tốt 16,1, cán cân lên/xuống {rr} lần. Cửa tăng: Grand Manhattan, Aqua City mở bán lại 31/10.",
  "luan_diem": [
   {
-   "so": "1,87",
-   "nhan": "nghìn tỷ LN cổ đông 6T/2026, phần lớn một lần",
-   "tieu": "Lãi 2026 đến từ bán tài sản, chưa từ bàn giao",
-   "t": "Q1 chuyển nhượng lô đất đưa lãi gộp lên 1.889 tỷ; Q2 thoái 99,93% Ngôi nhà Mega mang về phần lớn 1.741 tỷ thu nhập tài chính. 6T chỉ giao 341 căn (kế hoạch năm 2.651); Q2 lãi gộp 392 tỷ, trừ bán hàng + quản lý còn 23 tỷ. 9T/2025, không có khoản lớn: lỗ trước thuế 1.043 tỷ, vẫn chịu 777 tỷ thuế. Cơ sở: 6T cuối lỗ ~521 tỷ, cả năm 1.349 tỷ.",
-   "ng": "BCTC Q1–Q2/2026 · báo chí 7/2026 · The Investor · mô hình"
+   "so": "1.119",
+   "nhan": "tỷ LN cổ đông Q3/2026, từ bàn giao",
+   "tieu": "Q3 xác nhận bàn giao thật; 2027 chưa có dự án thay Victoria Village",
+   "t": "Q3 doanh thu 5,1 nghìn tỷ, biên gộp 34%, cốt lõi 1.222 tỷ — gấp 6 lần bình quân Q1–Q3/2025; cơ sở cũ lỗ 440 tỷ. Nhưng Victoria Village đã giao >920/1.044 căn: phần lớn lãi bàn giao 2026 dồn vào Q3–Q4. Cơ sở 2026 3,45 nghìn tỷ; 2027 chỉ 144 tỷ (doanh thu 16 nghìn tỷ, hết khoản một lần, lãi vay vào KQKD nhiều hơn).",
+   "ng": "BCTC Q1–Q3/2026 · báo chí 10/2026 · mô hình"
   },
   {
    "so": "−21%",
    "nhan": "BVPS nếu phát hành đủ 1,7 tỷ cp ở 10.000 đ",
    "tieu": "Trả nợ bằng cổ phiếu giá nửa giá trị sổ sách",
-   "t": "Chào bán 3:1 800,7 triệu cp giá 10.000 đ (nộp tiền đến 29/10) thu 8,0 nghìn tỷ, ~74% trả 13 lô trái phiếu công ty mẹ. BVPS 30/6 là 20,2 nghìn đ: sau đợt này 17,6; thêm riêng lẻ 800 triệu cp và ESOP 111,7 triệu ở 10.000 đ còn ~15,9 — số cp gấp 2,1 lần cuối 2024. P/B 0,53 lần trên cp hiện hữu thành 0,61 sau chào bán, 0,67 nếu đủ 1,7 tỷ cp.",
-   "ng": "ĐHĐCĐ 4/2026 · Vietcap 18/06 · VietnamFinance 9/2026 · BCTC Q2"
+   "t": "Chào bán 3:1 800,7 triệu cp giá 10.000 đ (nộp tiền dời đến 26/11) thu 8,0 nghìn tỷ, ~74% trả 13 lô trái phiếu công ty mẹ. BVPS 30/9 là 20,7 nghìn đ: sau đợt này 18,0; thêm riêng lẻ 800 triệu cp và ESOP 111,7 triệu ở 10.000 đ còn ~16,2 — số cp gấp 2,1 lần cuối 2024. P/B 0,50 lần trên cp hiện hữu thành 0,58 sau chào bán, 0,64 nếu đủ 1,7 tỷ cp.",
+   "ng": "ĐHĐCĐ 4/2026 · Vietcap 18/06 · VietnamFinance 9/2026 · BCTC Q3"
   },
   {
-   "so": "7,3–9,1",
+   "so": "7,2–9,1",
    "nhan": "nghìn tỷ lãi vay/năm ở 10–12,5%",
-   "tieu": "Lãi vay dồn vào dự án, ít hiện trên KQKD",
-   "t": "Nợ vay 72,9 nghìn tỷ (+5,5 trong 6T), tiền 5,0. Lãi vay ghi vào KQKD 6T chỉ 180 tỷ: phần lớn lãi vay dự án được vốn hóa vào hàng tồn kho — 157,7 nghìn tỷ, +16,8 từ Q1/2024 dù bàn giao ít. Ở 10–12,5%/năm (Vietcap dùng 12,5%), lãi bằng 13–16% vốn chủ cổ đông sau chào bán: mỗi năm dự án chậm, chừng ấy cộng vào giá vốn. Thuế 1,2–1,8 nghìn tỷ/năm 2023–2025, kể cả năm lỗ 2024.",
+   "tieu": "Lãi vay bắt đầu vào KQKD khi dự án xong",
+   "t": "Nợ vay 72,4 nghìn tỷ (+5,0 trong 9T), tiền 3,8. Lãi vay vào KQKD 6T chỉ 180 tỷ, Q3 474 khi Victoria Village xong; phần lớn vẫn vốn hóa vào tồn kho — 157,2 nghìn tỷ, +16,4 từ Q1/2024. Ở 10–12,5%/năm (Vietcap dùng 12,5%), lãi bằng 13–16% vốn chủ cổ đông sau chào bán: mỗi năm dự án chậm, chừng ấy cộng vào giá vốn. Thuế 9T/2026 1,3 nghìn tỷ, 2023–2025 1,2–1,8/năm kể cả năm lỗ.",
    "ng": "BCTC (VNDirect) · Vietcap 18/06 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/B 0,65 lần vốn chủ giữa 2027: {up_so} so với giá hiện tại",
-   "t": "Giá trị = P/B × vốn chủ cổ đông 30/6/2027E (56,1 nghìn tỷ, gồm 8,0 nghìn tỷ chào bán) ÷ 3.202,8 triệu cp. 0,65 ≈ thấp 25% P/B từ 2023 (0,64) và thấp 10% từ 2016 (0,65); dưới nhóm ROE thấp DXG, KDH, KBC (0,91–0,94) vì nợ vay/vốn chủ 1,5 lần, LN cốt lõi gần 0. Xấu 8,3 (P/B 0,50 ≈ đáy 0,51, lỗ 2027); tốt 15,6 (P/B 0,85, doanh thu 2027 21 nghìn tỷ khi Aqua City mở bán lại).",
-   "ng": "mô hình · P/B lịch sử: BCTC, giá cuối tháng · bảng cùng ngành giá 20/10"
+   "t": "Giá trị = P/B × vốn chủ cổ đông 30/6/2027E (58,2 nghìn tỷ, gồm 8,0 nghìn tỷ chào bán) ÷ 3.202,8 triệu cp. 0,65 ≈ thấp 25% P/B từ 2023 (0,64) và thấp 10% từ 2016 (0,65); dưới nhóm ROE thấp DXG, KDH, KBC (0,89–0,96) vì nợ vay/vốn chủ 1,5 lần, LN cốt lõi 2027 mỏng. Xấu 8,7 (P/B 0,50 ≈ đáy 0,51, lỗ 2027); tốt 16,1 (P/B 0,85, doanh thu 2027 21 nghìn tỷ khi Aqua City mở bán lại).",
+   "ng": "mô hình · P/B lịch sử: BCTC, giá cuối tháng · bảng cùng ngành giá 30/10"
   }
  ],
  "tom_tat": {
@@ -60,19 +60,19 @@
   ],
   "ln": [
    1744,
-   1349,
+   3452,
    144
   ],
   "ln_truoc": -6455,
   "eps": [
    544,
-   421,
+   1078,
    45
   ],
   "bv": [
    null,
-   17479,
-   17524
+   18136,
+   18181
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -80,7 +80,7 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      7.0,
-     11.1,
+     15.7,
      16.0
     ],
     "d": 1
@@ -89,8 +89,8 @@
     "ten": "ROE",
     "v": [
      4.2,
-     2.7,
-     0.3
+     6.7,
+     0.2
     ],
     "d": 1,
     "pt": 1
@@ -113,7 +113,7 @@
     "mau": "c1",
     "v": [
      4425,
-     4081,
+     5801,
      4960
     ]
    },
@@ -122,7 +122,7 @@
     "mau": "c2",
     "v": [
      3188,
-     3557,
+     4197,
      2500
     ]
    }
@@ -132,61 +132,61 @@
  },
  "so_sanh": {
   "tieu": "P/B so với 11 mã bất động sản vốn hóa lớn nhất",
-  "phu": "giá hôm nay; vốn chủ 30/6 + tiền chào bán 3:1",
+  "phu": "giá hôm nay; vốn chủ 30/9 + tiền chào bán 3:1",
   "chi_so": "P/B",
   "chi_so_kv": "P/B (giá 20/10)",
   "nhom": "11 mã cùng ngành vốn hóa lớn nhất",
   "kv": [
    [
     "VIC",
-    9.33
+    8.78
    ],
    [
     "VHM",
-    1.88
+    1.75
    ],
    [
     "VRE",
-    1.06
+    1.08
    ],
    [
     "BCM",
-    1.85
+    1.75
    ],
    [
     "KBC",
-    0.94
+    0.96
    ],
    [
     "VGC",
-    2.36
+    2.14
    ],
    [
     "VPI",
-    3.27
+    3.3
    ],
    [
     "KDH",
-    0.94
+    0.89
    ],
    [
     "SJS",
-    4.22
+    3.33
    ],
    [
     "IDC",
-    2.09
+    1.94
    ],
    [
     "DXG",
-    0.91
+    0.89
    ]
   ],
-  "tv": 1.88,
-  "moi_cp": 17642,
+  "tv": 1.75,
+  "moi_cp": 17991,
   "max": 4,
-  "y": "Thấp nhất nhóm: ROE cốt lõi gần 0, nợ vay/vốn chủ 1,5 lần (DXG 0,36, KDH 0,90, KBC 1,30); DXG, KDH, KBC được trả 0,91–0,94. Chia vốn hóa 3.202,8 triệu cp cho vốn chủ 30/6 chưa gồm 8,0 nghìn tỷ tiền chào bán thì ra 0,71.",
-  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất, giá 20/10/2026; NVL: vốn chủ 30/6 + 8,0 nghìn tỷ, 3.202,8 triệu cp"
+  "y": "Thấp nhất nhóm: ROE cốt lõi mỏng ngoài quý bàn giao, nợ vay/vốn chủ 1,5 lần (DXG 0,39, KDH 0,95, KBC 1,30); DXG, KDH, KBC được trả 0,89–0,96. Chia vốn hóa 3.202,8 triệu cp cho vốn chủ 30/9 chưa gồm 8,0 nghìn tỷ tiền chào bán thì ra 0,67.",
+  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất, giá 30/10/2026; NVL: vốn chủ 30/9 + 8,0 nghìn tỷ, 3.202,8 triệu cp"
  },
  "mo_hinh": {
   "tieu": "Dự phóng: bàn giao, tài chính, thuế",
@@ -203,7 +203,7 @@
     "ten": "Doanh thu thuần",
     "v": [
      6966,
-     11096,
+     15716,
      16000
     ],
     "tang": 1
@@ -212,7 +212,7 @@
     "ten": "Biên gộp (%)",
     "v": [
      63.5,
-     36.8,
+     36.9,
      31.0
     ],
     "d": 1
@@ -221,7 +221,7 @@
     "ten": "Lãi gộp",
     "v": [
      4425,
-     4081,
+     5801,
      4960
     ]
    },
@@ -229,7 +229,7 @@
     "ten": "Chi phí bán hàng + quản lý",
     "v": [
      -1901,
-     -1823,
+     -2022,
      -2480
     ]
    },
@@ -240,7 +240,7 @@
     "ten": "Thu nhập tài chính",
     "v": [
      3188,
-     3557,
+     4197,
      2500
     ]
    },
@@ -248,7 +248,7 @@
     "ten": "Chi phí tài chính",
     "v": [
      -3673,
-     -3182,
+     -3070,
      -3700
     ]
    },
@@ -256,7 +256,7 @@
     "ten": "Thu nhập khác, liên doanh",
     "v": [
      987,
-     -92,
+     87,
      0
     ]
    },
@@ -264,7 +264,7 @@
     "ten": "LN trước thuế",
     "v": [
      3027,
-     2541,
+     4993,
      1280
     ],
     "dam": 1
@@ -273,7 +273,7 @@
     "ten": "Thuế TNDN",
     "v": [
      -1166,
-     -1318,
+     -1631,
      -1128
     ]
    },
@@ -284,7 +284,7 @@
     "ten": "LN cổ đông",
     "v": [
      1744,
-     1349,
+     3452,
      144
     ],
     "dam": 1,
@@ -294,7 +294,7 @@
     "ten": "EPS (đ, 3.202,8 triệu cp)",
     "v": [
      544,
-     421,
+     1078,
      45
     ],
     "eps": 1
@@ -303,8 +303,8 @@
     "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
     "v": [
      45.3,
-     56.0,
-     56.1
+     58.1,
+     58.2
     ],
     "d": 1
    },
@@ -312,7 +312,7 @@
     "ten": "Nợ vay cuối kỳ (nghìn tỷ)",
     "s": [
      "67,4",
-     "72,9 (30/6)",
+     "72,4 (30/9)",
      "—"
     ]
    },
@@ -320,19 +320,19 @@
     "ten": "ROE (%)",
     "v": [
      4.2,
-     2.7,
-     0.3
+     6.7,
+     0.2
     ],
     "d": 1
    }
   ],
-  "ghi": "2026E = 6T thực tế + Q3–Q4 ước. Thu nhập tài chính gồm lãi cho vay đối tác, thoái vốn, chuyển nhượng dự án; thuế ~1 nghìn tỷ/năm + 10% LNTT (công ty dự án có lãi nộp thuế, lỗ nơi khác không bù trừ). Vốn chủ 2026E gồm 8,0 nghìn tỷ chào bán 3:1."
+  "ghi": "2026E = 9T thực tế + Q4 ước. Thu nhập tài chính gồm lãi cho vay đối tác, thoái vốn, chuyển nhượng dự án; thuế ~1 nghìn tỷ/năm + 10% LNTT (công ty dự án có lãi nộp thuế, lỗ nơi khác không bù trừ). Vốn chủ 2026E gồm 8,0 nghìn tỷ chào bán 3:1."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   1349
+   3452
   ],
   "cuoi": [
    "2027E",
@@ -340,38 +340,38 @@
   ],
   "buoc": [
    [
-    "Lãi gộp",
-    879
-   ],
-   [
     "Thuế, cổ đông thiểu số, khác",
-    148
-   ],
-   [
-    "Chi phí tài chính",
-    -518
+    318
    ],
    [
     "Bán hàng + quản lý",
-    -657
+    -458
+   ],
+   [
+    "Chi phí tài chính",
+    -630
+   ],
+   [
+    "Lãi gộp",
+    -841
    ],
    [
     "Thu nhập tài chính (hết khoản một lần)",
-    -1057
+    -1697
    ]
   ],
-  "y": "Lô đất Q1 và thoái vốn Ngôi nhà Mega Q2 không lặp lại: lãi gộp bàn giao tăng không bù được thu nhập tài chính giảm, chi phí bán hàng và lãi vay. Lợi nhuận về gần 0 khi chưa có thương vụ bán tài sản mới.",
+  "y": "Lô đất Q1, thoái vốn Ngôi nhà Mega Q2 không lặp lại, Victoria Village giao gần hết trong 2026: doanh thu 2027 cao hơn nhưng lãi gộp thấp hơn 2026, thu nhập tài chính giảm, lãi vay vào KQKD nhiều hơn. Lợi nhuận về gần 0 khi chưa có thương vụ bán tài sản mới.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Doanh thu 6T cuối 2026 (nghìn tỷ)",
+   "ten": "Doanh thu Q4/2026 (nghìn tỷ)",
    "v": [
-    "3,5",
-    "6,0",
-    "9,0"
+    "3,0",
+    "5,5",
+    "8,5"
    ],
-   "ly_do": "6T đầu 5,1 (gồm lô đất Q1); 6T chỉ giao 341 căn so với kế hoạch 2.651; Vietcap cả năm 16,1 (6T cuối ~11)"
+   "ly_do": "Q3 5,1 (Victoria Village giao >920/1.044 căn); Q4: phần còn lại Victoria Village, Grand Manhattan (~70% đã bán), Aqua City; kế hoạch năm cần 12,5 trong Q4"
   },
   {
    "ten": "Doanh thu 2027 (nghìn tỷ)",
@@ -383,13 +383,13 @@
    "ly_do": "2024: 9,1; 2025: 7,0; Vietcap 22,6; công ty: doanh thu, LN bùng nổ từ 2027, Aqua City bàn giao trên 9.000 sản phẩm"
   },
   {
-   "ten": "Biên gộp bàn giao 6T cuối 2026 · 2027",
+   "ten": "Biên gộp bàn giao Q4/2026 · 2027",
    "v": [
-    "26% · 27%",
-    "30% · 31%",
-    "33% · 34%"
+    "27% · 27%",
+    "32% · 31%",
+    "35% · 34%"
    ],
-   "ly_do": "Quý không có khoản một lần: Q2/2026 26%, Q1–Q3/2025 35–36%; Vietcap 2027 34,8%; lãi vay vốn hóa đẩy giá vốn lên"
+   "ly_do": "Quý không có khoản một lần: Q3/2026 34% (Victoria Village), Q2/2026 26%, Q1–Q3/2025 35–36%; Vietcap 2027 34,8%; lãi vay vốn hóa đẩy giá vốn lên"
   },
   {
    "ten": "Thu nhập tài chính 2027 (nghìn tỷ)",
@@ -407,7 +407,7 @@
     "3,7",
     "3,5"
    ],
-   "ly_do": "2024: 4,7; 2025: 3,7; ~8,0 nghìn tỷ chào bán trả 15 lô trái phiếu Q4/2026–Q1/2027; Vietcap 4,2"
+   "ly_do": "2024: 4,7; 2025: 3,7; Q3/2026 789 tỷ (lãi vay 474, Q2 145: dự án xong, ngừng vốn hóa); ~8,0 nghìn tỷ chào bán trả 15 lô trái phiếu; Vietcap 4,2"
   },
   {
    "ten": "Bán hàng + quản lý",
@@ -434,7 +434,7 @@
     "0,65",
     "0,85"
    ],
-   "ly_do": "Từ 2023: đáy 0,51, thấp 25% 0,64, trung vị 0,70, cao 1,09; từ 2016 thấp 10% 0,65; DXG, KDH, KBC 0,91–0,94"
+   "ly_do": "Từ 2023: đáy 0,51, thấp 25% 0,64, trung vị 0,70, cao 1,09; từ 2016 thấp 10% 0,65; DXG, KDH, KBC 0,89–0,96"
   },
   {
    "ten": "Số cổ phiếu (triệu)",
@@ -449,24 +449,24 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 94,
+   "ln26": 2438,
    "ln27": -3030,
-   "gia": 8.3,
-   "mo_ta": "Doanh thu 6T cuối 3,5, 2027 9 nghìn tỷ; biên gộp 26–27%; không bán thêm tài sản, lỗ 2027; P/B 0,50"
+   "gia": 8.7,
+   "mo_ta": "Doanh thu Q4 3,0, 2027 9 nghìn tỷ; biên gộp 27%; không bán thêm tài sản, lỗ 2027; P/B 0,50"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 1349,
+   "ln26": 3452,
    "ln27": 144,
-   "gia": 11.4,
-   "mo_ta": "Doanh thu 6T cuối 6,0, 2027 16 nghìn tỷ; biên gộp 30–31%; thu nhập tài chính 2,5 nghìn tỷ; P/B 0,65"
+   "gia": 11.8,
+   "mo_ta": "Doanh thu Q4 5,5, 2027 16 nghìn tỷ; biên gộp 31–32%; thu nhập tài chính 2,5 nghìn tỷ; P/B 0,65"
   },
   {
    "ten": "Tốt",
-   "ln26": 2720,
+   "ln26": 4585,
    "ln27": 2521,
-   "gia": 15.6,
-   "mo_ta": "Bàn giao TP.HCM đúng hạn, Aqua City mở bán lại: doanh thu 2027 21 nghìn tỷ, biên 34%, thêm thương vụ chuyển nhượng; P/B 0,85"
+   "gia": 16.1,
+   "mo_ta": "Grand Manhattan giao trong Q4, Aqua City bán tốt sau mở bán lại: doanh thu 2027 21 nghìn tỷ, biên 34%, thêm thương vụ chuyển nhượng; P/B 0,85"
   }
  ],
  "dinh_gia": {
@@ -480,9 +480,9 @@
     "mau": "c1",
     "sh": 1,
     "x": [
-     53212,
-     56054,
-     58614
+     55555,
+     58157,
+     60478
     ],
     "boi": [
      0.5,
@@ -492,21 +492,21 @@
     "x_ten": "Vốn chủ 30/6/2027E, gồm 8,0 nghìn tỷ chào bán",
     "boi_ten": "P/B",
     "gt": [
-     26606,
-     36435,
-     49822
+     27778,
+     37802,
+     51406
     ]
    }
   ],
   "von": [
-   26606,
-   36435,
-   49822
+   27778,
+   37802,
+   51406
   ],
   "gia": [
-   8.3,
-   11.4,
-   15.6
+   8.7,
+   11.8,
+   16.1
   ]
  },
  "nhay": [
@@ -522,12 +522,12 @@
   ],
   [
    "Chi phí tài chính ±1 điểm % trên nợ vay",
-   640,
+   464,
    0.1
   ],
   [
    "Biên gộp ±3 điểm %",
-   366,
+   346,
    0.1
   ],
   [
@@ -632,7 +632,7 @@
    0.67,
    0.65,
    0.51,
-   0.53
+   0.52
   ],
   "p10": 0.55,
   "p25": 0.64,
@@ -643,10 +643,10 @@
   ],
   "nay": [
    "2026-10",
-   0.53
+   0.52
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Từ 2023 (giai đoạn tái cấu trúc). Kịch bản dùng P/B 0,50 · 0,65 · 0,85 trên vốn chủ 30/6/2027E: 0,50 ≈ đáy; 0,65 ≈ thấp 25% (0,64); 0,85 ≈ ngưỡng cao 25% (0,82). Điểm 10/2026 tính trên 2.402,1 triệu cp hiện hữu; cộng cp và tiền chào bán 3:1: 0,61. 12/2016–2022 trung vị 3,5 lần — thời kỳ khác."
+  "dung": "Từ 2023 (giai đoạn tái cấu trúc). Kịch bản dùng P/B 0,50 · 0,65 · 0,85 trên vốn chủ 30/6/2027E: 0,50 ≈ đáy; 0,65 ≈ thấp 25% (0,64); 0,85 ≈ ngưỡng cao 25% (0,82). Điểm 10/2026 tính trên 2.402,1 triệu cp hiện hữu; cộng cp và tiền chào bán 3:1: 0,58. 12/2016–2022 trung vị 3,5 lần — thời kỳ khác."
  },
  "theo_doi": [
   {
@@ -663,27 +663,27 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    -798,
-    -81,
-    713
+    -551,
+    464,
+    1596
    ],
    "ck": 3226
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    94,
-    1349,
-    2720
+    2438,
+    3452,
+    4585
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "08–29/10/2026",
+   "khi": "08/10–26/11/2026",
    "loai": "hai",
-   "tieu": "Kết quả chào bán 3:1",
-   "ct": "800,7 triệu cp giá 10.000 đ; giá 20/10 chỉ cao hơn 7,5% nên có rủi ro không bán hết — HĐQT được gia hạn hoặc tìm nguồn vốn khác. ~74% tiền trả 13 lô trái phiếu công ty mẹ.",
+   "tieu": "Kết quả chào bán 3:1 (đã gia hạn)",
+   "ct": "800,7 triệu cp giá 10.000 đ; hạn nộp tiền dời từ 29/10 sang 26/11. Giá 30/10 chỉ cao hơn 4% giá chào bán. Em gái Chủ tịch đăng ký mua 30 triệu cp, Diamond Properties 7 triệu cp.",
    "tac": [
     "8,0 nghìn tỷ",
     "tiền trả nợ nếu bán hết; mỗi 100 triệu cp không bán được: −1,0 nghìn tỷ"
@@ -691,26 +691,26 @@
    "theo_doi": "tỷ lệ đăng ký mua"
   },
   {
-   "khi": "≤ 30/10/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Không có khoản một lần, cơ sở lỗ ~440 tỷ (Q3/2025: −878 tỷ). Xem doanh thu bàn giao Victoria Village, Grand Manhattan, người mua trả trước, nợ vay 30/9.",
+   "khi": "30/10/2026",
+   "loai": "len",
+   "tieu": "Đã ra KQKD Q3/2026: lãi 1.119 tỷ từ bàn giao",
+   "ct": "Doanh thu 5.120 tỷ, biên gộp 34%, cốt lõi 1.222 tỷ. Cơ sở cũ lỗ 440 tỷ: Victoria Village giao >920/1.044 căn nhanh hơn dự kiến — dồn vào 2026, không cộng cho 2027.",
    "tac": [
-    "≥ −440 tỷ",
-    "khớp cơ sở; dưới −978 tỷ nghiêng về xấu"
+    "+1.559 tỷ",
+    "so với cơ sở bản 20/10; vốn chủ cổ đông 30/9 49,6 nghìn tỷ"
    ],
-   "theo_doi": "LN cổ đông, doanh thu bàn giao"
+   "theo_doi": "số căn bàn giao"
   },
   {
-   "khi": "Q4/2026–2027",
+   "khi": "Q4/2026",
    "loai": "len",
-   "tieu": "Bàn giao Victoria Village, Grand Manhattan",
-   "ct": "Victoria Village (1.044 căn cao tầng, đã bán hết) giao từ cuối 6/2026; Grand Manhattan (1.027 căn, ~70% đã bán) từ Q3/2026. Kế hoạch giao 2026: 2.651 căn, 6T mới 341.",
+   "tieu": "Bàn giao Grand Manhattan, phần còn lại Victoria Village",
+   "ct": "Victoria Village còn ~120 căn; Grand Manhattan (1.027 căn, ~70% đã bán) bắt đầu giao; Aqua City mục tiêu >500 sản phẩm 2026. Cơ sở Q4 lãi 464 tỷ, cả năm 3,45 nghìn tỷ.",
    "tac": [
-    "+196 tỷ LN",
-    "mỗi 1 nghìn tỷ doanh thu bàn giao thêm (biên gộp 30%)"
+    "+206 tỷ LN",
+    "mỗi 1 nghìn tỷ doanh thu bàn giao thêm (biên gộp 32%)"
    ],
-   "theo_doi": "số căn bàn giao mỗi quý"
+   "theo_doi": "KQKD Q4, số căn bàn giao"
   },
   {
    "khi": "12/2026",
@@ -721,13 +721,13 @@
    "theo_doi": "hấp thụ ở Aqua City"
   },
   {
-   "khi": "2027",
+   "khi": "31/10/2026–2027",
    "loai": "len",
    "tieu": "Aqua City mở bán lại",
-   "ct": "Aqua City chiếm 51% của 227 nghìn tỷ đã bán chưa giao; sổ hồng từ 6/2026. Vietcap dự báo doanh số 2027 31,3 nghìn tỷ (Aqua City 49%) — 6T/2026 NVL chỉ bán 199 căn.",
+   "ct": "Mở bán lại từ 31/10 khi mọi phân khu đủ điều kiện ký hợp đồng; đối tác cam kết >20 nghìn tỷ cho thi công. Aqua City chiếm 51% của 227 nghìn tỷ đã bán chưa giao; Vietcap dự báo doanh số 2027 31,3 nghìn tỷ.",
    "tac": [
     "Kịch bản tốt",
-    "doanh thu 2027 21 nghìn tỷ, P/B 0,85 → 15,6 nghìn đ"
+    "doanh thu 2027 21 nghìn tỷ, P/B 0,85 → 16,1 nghìn đ"
    ],
    "theo_doi": "doanh số, số căn mở bán"
   },
@@ -736,9 +736,9 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Phát hành riêng lẻ, ESOP",
-   "ct": "ĐHĐCĐ 4/2026 duyệt riêng lẻ tối đa 800 triệu cp (≥ 75% giá bình quân 30 phiên) và ESOP 111,7 triệu cp; cổ đông lớn Diamond Properties (7,43%) đã đăng ký bán 4 lần trong 2026.",
+   "ct": "ĐHĐCĐ 4/2026 duyệt riêng lẻ tối đa 800 triệu cp (≥ 75% giá bình quân 30 phiên) và ESOP 111,7 triệu cp; Diamond Properties (7,43%) bán 4 lần trong 2026 rồi 10/2026 đăng ký mua 7 triệu cp.",
    "tac": [
-    "−1,0 nghìn đ/cp",
+    "−1,1 nghìn đ/cp",
     "nếu bán 800 triệu cp riêng lẻ ở 10.000 đ (P/B 0,65)"
    ],
    "theo_doi": "phương án, giá phát hành"
@@ -748,10 +748,10 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Nợ vay và lãi vay",
-   "ct": "Nợ vay 72,9 nghìn tỷ, +5,5 trong 6T; dòng tiền kinh doanh 6T âm. Trái phiếu ~23,8 nghìn tỷ (cuối Q1), nhiều lô đã gia hạn 1–5 năm; tiền chào bán bằng khoảng một phần ba dư nợ trái phiếu.",
+   "ct": "Nợ vay 72,4 nghìn tỷ, +5,0 trong 9T. Lãi vay vào KQKD Q3 474 tỷ (Q2 145): dự án xong thì ngừng vốn hóa. Trái phiếu ~23,8 nghìn tỷ (cuối Q1); tiền chào bán bằng ~1/3 dư nợ trái phiếu.",
    "tac": [
-    "−693 tỷ LN/năm",
-    "mỗi 1 điểm % lãi suất trên 72,9 nghìn tỷ nợ vay nếu không vốn hóa"
+    "−688 tỷ LN/năm",
+    "mỗi 1 điểm % lãi suất trên 72,4 nghìn tỷ nợ vay nếu không vốn hóa"
    ],
    "theo_doi": "nợ vay, đáo hạn trái phiếu"
   },
@@ -798,46 +798,46 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Doanh thu",
      "v": [
-      2010,
       4779,
       1778,
       1937,
       1683,
       1568,
       3587,
-      1509
+      1509,
+      5120
      ],
      "mau": "c4"
     },
     {
      "ten": "Lãi gộp",
      "v": [
-      545,
       1941,
       646,
       673,
       586,
       2520,
       1889,
-      392
+      392,
+      1760
      ],
      "mau": "c1"
     }
    ],
-   "y": "Q4/2025 lãi gộp vượt doanh thu nhờ hoàn nhập tiền sử dụng đất Lakeview City; Q1/2026 có chuyển nhượng lô đất. Chỉ còn bàn giao, Q2/2026 biên gộp 26%.",
+   "y": "Q4/2025 lãi gộp vượt doanh thu nhờ hoàn nhập tiền sử dụng đất Lakeview City; Q1/2026 có chuyển nhượng lô đất. Bàn giao thuần: Q2/2026 biên gộp 26%, Q3/2026 Victoria Village 5,1 nghìn tỷ, biên 34%.",
    "ng": "BCTC (VNDirect) · Vietcap 18/06"
   },
   {
@@ -846,41 +846,41 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Cốt lõi (lãi gộp − bán hàng, quản lý)",
      "v": [
-      251,
       205,
       150,
       1919,
       1514,
-      23
+      23,
+      1222
      ],
      "mau": "c1"
     },
     {
      "ten": "Tài chính ròng",
      "v": [
-      -117,
       -624,
       -993,
       1249,
       -44,
-      1169
+      1169,
+      201
      ],
      "mau": "c2"
     }
    ],
-   "y": "Q1–Q3/2025 cốt lõi 150–251 tỷ/quý không bù nổi tài chính ròng −117 đến −993 tỷ; Q2/2026 tài chính dương nhờ thoái vốn Ngôi nhà Mega.",
-   "ng": "BCTC (VNDirect) · báo chí 7/2026"
+   "y": "Q2–Q3/2025 cốt lõi 150–205 tỷ/quý không bù nổi tài chính ròng; Q2/2026 tài chính dương nhờ thoái vốn Ngôi nhà Mega; Q3/2026 cốt lõi 1.222 tỷ từ bàn giao Victoria Village.",
+   "ng": "BCTC (VNDirect) · báo chí 7/2026, 10/2026"
   },
   {
    "ten": "Nợ vay, người mua trả trước và tiền",
@@ -888,41 +888,41 @@
    "dv": "nghìn tỷ",
    "so_le": 1,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Nợ vay",
      "v": [
-      59.8,
       61.6,
       59.3,
       61.8,
       64.3,
       67.4,
       69.0,
-      72.9
+      72.9,
+      72.4
      ],
      "mau": "c1"
     },
     {
      "ten": "Người mua trả trước",
      "v": [
-      20.2,
       18.9,
       18.3,
       18.4,
       18.8,
       20.4,
       22.0,
-      24.6
+      24.6,
+      23.4
      ],
      "mau": "c2",
      "net": 0
@@ -930,19 +930,19 @@
     {
      "ten": "Tiền",
      "v": [
-      3.8,
       4.6,
       6.1,
       4.3,
       3.8,
       4.4,
       4.5,
-      5.0
+      5.0,
+      3.8
      ],
      "mau": "c4"
     }
    ],
-   "y": "Nợ vay +13,1 nghìn tỷ trong 8 quý lên 72,9, tiền chỉ 5,0; người mua trả trước 24,6 nghìn tỷ là phần nhỏ của 227 nghìn tỷ đã bán chưa giao.",
+   "y": "Nợ vay +10,8 nghìn tỷ trong 8 quý lên 72,4, tiền chỉ 3,8; người mua trả trước giảm còn 23,4 nghìn tỷ khi Victoria Village bàn giao — phần nhỏ của 227 nghìn tỷ đã bán chưa giao.",
    "ng": "BCTC (VNDirect) · Vietcap 18/06"
   },
   {
@@ -970,7 +970,7 @@
      "mau": "c1"
     }
    ],
-   "y": "Đủ chào bán 3:1, riêng lẻ 800 triệu và ESOP 111,7 triệu cp thì số cp gấp 2,1 lần cuối 2024; thưởng 7,5% (6/2026) không đổi giá trị, các đợt ở 10.000 đ kéo BVPS từ 20,2 về ~15,9 nghìn đ.",
+   "y": "Đủ chào bán 3:1, riêng lẻ 800 triệu và ESOP 111,7 triệu cp thì số cp gấp 2,1 lần cuối 2024; thưởng 7,5% (6/2026) không đổi giá trị, các đợt ở 10.000 đ kéo BVPS từ 20,7 về ~16,2 nghìn đ.",
    "ng": "BCTC (vốn điều lệ) · ĐHĐCĐ 4/2026 · Vietcap 18/06 · báo chí 9–10/2026"
   }
  ],
@@ -980,23 +980,23 @@
    {
     "ten": "Doanh thu thuần",
     "kh": 22715,
-    "th": 5096,
-    "ky": "6T",
-    "tg": 50,
+    "th": 10216,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q3"
    },
    {
     "ten": "Lợi nhuận sau thuế",
     "kh": 1852,
-    "th": 1772,
-    "ky": "6T",
-    "tg": 50,
+    "th": 2874,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q3"
    }
   ],
-  "y": "LNST 6T đạt 96% kế hoạch nhờ hai khoản một lần, doanh thu mới 22%: 6T cuối cần 17,6 nghìn tỷ doanh thu, gấp 3,5 lần 6T đầu. Cơ sở: doanh thu 11,1 nghìn tỷ (49%), LNST 1,2 nghìn tỷ (66%).",
+  "y": "LNST 9T đạt 155% kế hoạch (Q3 riêng 1.102 tỷ từ bàn giao), doanh thu mới 45%: Q4 cần 12,5 nghìn tỷ, gấp 2,4 lần Q3. Cơ sở: doanh thu 15,7 nghìn tỷ (69%), LNST 3,4 nghìn tỷ (182%).",
   "ng": ""
  },
  "mang": [
@@ -1012,12 +1012,12 @@
     [
      "Mục tiêu bàn giao",
      ">9.000 sản phẩm",
-     "công ty, từ 2026"
+     "công ty; 2026 >500"
     ],
     [
-     "Quy hoạch 1/500",
-     "điều chỉnh 6/2025",
-     "sổ hồng từ 6/2026"
+     "Mở bán lại",
+     "31/10/2026",
+     "mọi phân khu đủ điều kiện ký HĐMB"
     ],
     [
      "Giá trị dự án (Vietcap)",
@@ -1027,8 +1027,8 @@
    ],
    "y": [
     {
-     "t": "Vietcap kỳ vọng mở bán mới lại từ nửa cuối 2026; Aqua City chiếm 58% doanh số và 40% doanh thu Vietcap dự báo 2026–2028.",
-     "ng": "Vietcap 18/06"
+     "t": "Mở bán lại từ 31/10/2026; đối tác tài chính cam kết >20 nghìn tỷ cho thi công (giữa 8/2026). Aqua City chiếm 58% doanh số và 40% doanh thu Vietcap dự báo 2026–2028.",
+     "ng": "Người Quan Sát 16/10 · Vietcap 18/06"
     },
     {
      "t": "Hạ tầng: cầu Long Hưng, Hương Lộ 2, mở rộng cao tốc TP.HCM–Long Thành–Dầu Giây; sân bay Long Thành khai thác thương mại từ 1/12/2026 (ACV).",
@@ -1083,7 +1083,7 @@
     [
      "Victoria Village",
      "1.044 căn",
-     "bán hết, giao từ 6/2026"
+     "bán hết, >920 căn đã giao đến 30/9"
     ],
     [
      "Grand Manhattan",
@@ -1091,14 +1091,14 @@
      "~70% đã bán, giao từ Q3/2026"
     ],
     [
-     "Giao 6T/2026",
-     "341 căn",
-     "kế hoạch năm 2.651"
+     "Doanh thu Q3/2026",
+     "5,1 nghìn tỷ",
+     "biên gộp 34%"
     ],
     [
-     "Bán 6T/2026",
-     "199 căn",
-     "1.030 sổ hồng"
+     "Giao · bán 6T/2026",
+     "341 · 199 căn",
+     "kế hoạch giao năm 2.651"
     ]
    ],
    "y": [
@@ -1114,27 +1114,27 @@
   },
   {
    "ten": "Vốn — nợ vay, trái phiếu, cổ phiếu",
-   "phu": "Bảng cân đối hợp nhất 30/6/2026 và kế hoạch phát hành 2026",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026 và kế hoạch phát hành 2026",
    "so": [
     [
      "Nợ vay",
-     "72,9 nghìn tỷ",
-     "+8% từ đầu năm"
+     "72,4 nghìn tỷ",
+     "+7% từ đầu năm"
     ],
     [
      "Vốn chủ cổ đông",
-     "48,5 nghìn tỷ",
-     "BVPS 20,2 nghìn đ"
+     "49,6 nghìn tỷ",
+     "BVPS 20,7 nghìn đ"
     ],
     [
      "Hàng tồn kho",
-     "157,7 nghìn tỷ",
-     "3,3 lần vốn chủ"
+     "157,2 nghìn tỷ",
+     "3,2 lần vốn chủ"
     ],
     [
      "Cổ đông thiểu số",
      "16,7 nghìn tỷ",
-     "+3,2 trong 6T"
+     "+3,2 trong 9T"
     ]
    ],
    "y": [
@@ -1143,8 +1143,8 @@
      "ng": "Vietcap 18/06"
     },
     {
-     "t": "Chào bán 3:1: ~5,95 nghìn tỷ trả 13 lô trái phiếu công ty mẹ, phần còn lại góp vốn 2 công ty con để trả 2 lô, giải ngân Q4/2026–Q1/2027.",
-     "ng": "VietnamFinance 9/2026"
+     "t": "Chào bán 3:1: ~5,95 nghìn tỷ trả 13 lô trái phiếu công ty mẹ, phần còn lại góp vốn 2 công ty con để trả 2 lô, giải ngân Q4/2026–Q1/2027; nộp tiền gia hạn đến 26/11.",
+     "ng": "VietnamFinance 9/2026 · CafeF 19/10"
     },
     {
      "t": "Còn: hoán đổi trái phiếu 151,85 triệu cp giá 40.000 đ, khoản vay chuyển đổi tối đa 15 nghìn tỷ (2,5 nghìn tỷ đã giải ngân), trái phiếu chuyển đổi quốc tế 300 triệu USD.",
@@ -1188,9 +1188,9 @@
      "ng": "Knight Frank, theo DSC 19/03"
     },
     {
-     "t": "DXG, KDH, KBC (ROE 1–10%) được trả P/B 0,91–0,94; VHM, BCM, IDC, VGC (ROE cao hoặc khu công nghiệp) trên 1,8.",
+     "t": "DXG, KDH, KBC (ROE 1–9%) được trả P/B 0,89–0,96; VHM, BCM, IDC, VGC (ROE cao hoặc khu công nghiệp) từ 1,75 trở lên.",
      "h": 0,
-     "ng": "bảng cùng ngành, giá 20/10/2026"
+     "ng": "bảng cùng ngành, giá 30/10/2026"
     }
    ]
   },
@@ -1208,9 +1208,9 @@
      "ng": "The Investor 2026"
     },
     {
-     "t": "Cổ đông lớn bán ra: Diamond Properties còn 7,43% sau 4 lần đăng ký bán trong 2026; cổ phiếu giảm sàn 2 phiên trước ngày không hưởng quyền 30/09.",
-     "h": -1,
-     "ng": "CafeF 30/09, 10/10"
+     "t": "Diamond Properties còn 7,43% sau 4 lần bán trong 2026, 10/2026 đăng ký mua 7 triệu cp; em gái Chủ tịch đăng ký mua 30 triệu cp (2–13/11).",
+     "h": 0,
+     "ng": "CafeF 10/10, 28/10 · Doanh Nhân 10/2026"
     }
    ]
   }
@@ -1230,6 +1230,46 @@
  ],
  "ctck_chu": "Chỉ một báo cáo CTCK trong 8 tháng (Vietcap, trước đợt chào bán 3:1); mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành. Giá mục tiêu quy về số cp sau chào bán theo chính độ nhạy của Vietcap (18.600 → 16.200 đ). NVL không chia cổ tức tiền mặt trong 12 tháng qua.",
  "nguon": [
+  {
+   "ten": "Znews — Novaland thoát lỗ, lãi hơn 1.100 tỷ quý III",
+   "ngay": "30/10/2026",
+   "link": "https://znews.vn/novaland-thoat-lo-lai-hon-1100-ty-quy-iii-post1693167.html"
+  },
+  {
+   "ten": "CafeF — lãi hơn 2.800 tỷ sau 9 tháng, Aqua City mở bán trở lại",
+   "ngay": "31/10/2026",
+   "link": "https://cafef.vn/novaland-lai-hon-2800-ty-sau-9-thang-du-an-aqua-city-chinh-thuc-mo-ban-tro-lai-vao-hom-nay-188261031062131507.chn"
+  },
+  {
+   "ten": "Markettimes — lãi gần 2.900 tỷ sau 9 tháng",
+   "ngay": "31/10/2026",
+   "link": "https://markettimes.vn/thoat-canh-thua-lo-novaland-nvl-bao-lai-gan-2-900-ty-dong-sau-9-thang-quan-bai-aqua-city-chinh-thuc-tro-lai-133698.html"
+  },
+  {
+   "ten": "VietTimes — ước KQKD Q3, Victoria Village giao >920 căn",
+   "ngay": "10/2026",
+   "link": "https://viettimes.vn/thay-cha-cheo-lai-novaland-ong-bui-cao-nhat-quan-giup-doanh-nghiep-lai-vuot-ke-hoach-post207208.html"
+  },
+  {
+   "ten": "CafeF — gia hạn chào bán 3:1: nộp tiền đến 26/11",
+   "ngay": "19/10/2026",
+   "link": "https://cafef.vn/novaland-ra-thong-bao-quan-trong-188261019203504631.chn"
+  },
+  {
+   "ten": "Doanh Nhân — gia hạn huy động 8.000 tỷ; tổ chức liên quan đăng ký mua 7 triệu cp",
+   "ngay": "10/2026",
+   "link": "https://doanhnhan.baophapluat.vn/novaland-nvl-gia-han-thoi-gian-huy-dong-8-000-ty-dong-to-chuc-lien-quan-chu-tich-dang-ky-mua-7-trieu-co-phieu.html"
+  },
+  {
+   "ten": "CafeF — em gái Chủ tịch đăng ký mua 30 triệu cp NVL",
+   "ngay": "28/10/2026",
+   "link": "https://cafef.vn/em-gai-chu-tich-novaland-dang-ky-mua-30-trieu-co-phieu-nvl-188261028112045261.chn"
+  },
+  {
+   "ten": "Người Quan Sát — Aqua City chính thức mở bán trở lại",
+   "ngay": "16/10/2026",
+   "link": "https://nguoiquansat.vn/du-an-8-ty-usd-cua-novaland-chinh-thuc-mo-ban-tro-lai-322393.html"
+  },
   {
    "ten": "Vietcap — Aqua City dẫn dắt phục hồi doanh số (cập nhật)",
    "ngay": "18/06/2026",

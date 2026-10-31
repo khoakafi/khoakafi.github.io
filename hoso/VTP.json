@@ -3,9 +3,9 @@
  "ma": "VTP",
  "ten": "Tổng Công ty Cổ phần Bưu chính Viettel (Viettel Post)",
  "nganh": "Chuyển phát, logistics",
- "ky": "BCTC bán niên 2026 soát xét · tách mảng theo báo cáo Q2/2026",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026",
  "cp_trieu": 201.885,
  "cp_ng": "201.885.171 cp (SHS 07/08; vốn điều lệ ~2.019 tỷ) = 172,03 triệu × 1,1736 sau cổ tức cổ phiếu 17,36% (GDKHQ tháng 7/2026); 172,03 triệu sau quyền mua 100:42 giá 10.000 đ (GDKHQ 7/4/2026). Vốn hóa/giá trên bảng giá VNDirect ra 197,4 triệu — chưa cập nhật đủ.",
  "co_tuc": [],
@@ -16,11 +16,11 @@
   ]
  ],
  "tieu_de": {
-  "t": "Lãi đi ngang 6 năm, 2026 lùi về ~320 tỷ; P/E vẫn hơn gấp đôi hãng chuyển phát khu vực",
+  "t": "Q3 lãi lại tăng +28%, nhưng 2026 vẫn lùi về ~340 tỷ; P/E vẫn gấp đôi hãng chuyển phát khu vực",
   "dk": "up_duoi:-5",
-  "khac": "Lãi đi ngang 6 năm, 2026 lùi về ~320 tỷ; giá đã về vùng giá trị theo LN 2027E"
+  "khac": "Q3 lãi lại tăng +28%, 2026 vẫn lùi về ~340 tỷ; giá đã về vùng giá trị theo LN 2027E"
  },
- "dong_mo": "Doanh thu dịch vụ 6T/2026 +17%, nhưng diesel tăng hơn 50%, chi phí bán hàng & quản lý +28% và lãi vay gấp đôi kéo LNST −35%. Mô hình: 2026E 318 tỷ, 2027E 359 tỷ — vẫn dưới 2025. P/E 20 (thấp 25% lịch sử) × LN 2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 LNST 109 tỷ (+28%), vượt cả kịch bản tốt của mô hình cũ (106 tỷ): LN gộp thêm 146 tỷ, nhiều hơn phần chi phí bán hàng & quản lý tăng thêm (126 tỷ). 9T vẫn −14%. Mô hình: 2026E 339 tỷ, 2027E 384 tỷ — vẫn dưới 2025. P/E 20 (thấp 25% lịch sử) × LN 2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
    "so": "+7%",
@@ -30,24 +30,24 @@
    "ng": "BCTC 2019–2025 (VNDirect) · Vietcap 27/05"
   },
   {
-   "so": "−35%",
-   "nhan": "LNST 6T/2026 (BCTC soát xét)",
-   "tieu": "2026: dầu, chi phí mở rộng và lãi vay cùng đè lên biên",
-   "t": "Diesel +53–58% so với cùng kỳ, phụ phí nhiên liệu 8–15% cước chỉ bù một phần: biên gộp dịch vụ Q2 5,9% (cùng kỳ 7,3%). Chi phí BH&QL 6T +28% (nhân công Q2 +50%, thuê ngoài gấp đôi khi vận hành FedEx, quốc tế); lãi vay Q2 33 tỷ (cùng kỳ 15). Mô hình: LNST 2026E 318 tỷ (−21%), 80% kế hoạch 400 tỷ.",
-   "ng": "BCTC soát xét · KBSV, MBS 10/09 · mô hình"
+   "so": "+28%",
+   "nhan": "LNST Q3/2026 (109 tỷ)",
+   "tieu": "Q3: biên gộp hồi, nhưng chi phí ăn gần hết phần tăng thêm",
+   "t": "Doanh thu Q3 +17% (dịch vụ ước +28% khi thẻ cào tiếp tục thu hẹp); LN gộp 377 tỷ (+63%), biên gộp dịch vụ ước ~7,3% (Q2 5,9%). Nhưng chi phí BH&QL 256 tỷ (+96%), lãi vay 44 tỷ: LN gộp trừ BH&QL 121 tỷ, cùng kỳ 100 tỷ. 9T LNST 217 tỷ (−14%); mô hình 2026E 339 tỷ (−16%), 85% kế hoạch 400 tỷ.",
+   "ng": "BCTC Q3/2026 (VNDirect) · BCTC soát xét · mô hình"
   },
   {
-   "so": "359 tỷ",
+   "so": "384 tỷ",
    "nhan": "LNST 2027E (cơ sở)",
    "tieu": "2027 hồi phục một phần: khấu hao, lãi vay đi trước doanh thu",
-   "t": "Doanh thu dịch vụ +12% (FedEx cả năm 400–500 tỷ, kho Đà Nẵng từ 9/2026, Lạng Sơn), biên gộp 6,4% (2025: 7,1%) vì khấu hao 189 tỷ (2025) → ~320 tỷ khi Hưng Yên (1.500 tỷ, 50% vay), Đà Nẵng (722 tỷ), 230 xe tải vào khai thác. Cổ phiếu 121,8 → 201,9 triệu (quyền mua giá 10.000 đ, cổ tức cổ phiếu): EPS 2027E 1.778 đ, EPS 2025 quy đổi 2.006 đ.",
+   "t": "Doanh thu dịch vụ +12% (FedEx cả năm 400–500 tỷ, kho Đà Nẵng từ 9/2026, Lạng Sơn), biên gộp 7,1% (Q3/2026 ~7,3%) dù khấu hao 189 tỷ (2025) → ~320 tỷ khi Hưng Yên (1.500 tỷ, 50% vay), Đà Nẵng (722 tỷ) vào khai thác; BH&QL 4,9% DT dịch vụ (2025 4,1%). Cổ phiếu 121,8 → 201,9 triệu (quyền mua giá 10.000 đ, cổ tức cổ phiếu): EPS 2027E 1.902 đ, EPS 2025 quy đổi 2.006 đ.",
    "ng": "mô hình · KBSV, MBS 10/09 · Vietcap 27/05 · SHS 06/08"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/E 20 × LN 2027E: {up_so} so với giá hiện tại",
-   "t": "P/E 20 = mức thấp 25% lịch sử VTP (trung vị 24,2), gấp đôi trung vị hãng chuyển phát, logistics khu vực (10,2 lần 2026F). Phần định giá theo P/E của KBSV, Vietcap quy về 201,9 triệu cp chỉ ~37,3–37,8 nghìn đ; giá mục tiêu ~57 nghìn chủ yếu từ DCF — MBS cần LNST 2028–2029 716–1.033 tỷ. Xấu 19,8 (P/E 17), tốt 59,7 (P/E 24).",
+   "t": "P/E 20 = mức thấp 25% lịch sử VTP (trung vị 24,2), gấp đôi trung vị hãng chuyển phát, logistics khu vực (10,2 lần 2026F). Phần định giá theo P/E của KBSV, Vietcap quy về 201,9 triệu cp chỉ ~37,3–37,8 nghìn đ; giá mục tiêu ~57 nghìn chủ yếu từ DCF — MBS cần LNST 2028–2029 716–1.033 tỷ. Xấu 20,6 (P/E 17), tốt 62,5 (P/E 24).",
    "ng": "mô hình · MBS, KBSV 10/09 · Vietcap 27/05"
   }
  ],
@@ -59,14 +59,14 @@
   ],
   "ln": [
    405,
-   318,
-   359
+   339,
+   384
   ],
   "ln_truoc": 383,
   "eps": [
    2006,
-   1575,
-   1778
+   1679,
+   1902
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -74,8 +74,8 @@
     "ten": "Doanh thu dịch vụ (nghìn tỷ)",
     "v": [
      15.5,
-     18.4,
-     20.6
+     18.9,
+     21.1
     ],
     "d": 1
    },
@@ -83,13 +83,13 @@
     "ten": "Biên gộp dịch vụ (%)",
     "v": [
      7.1,
-     6.2,
-     6.4
+     6.9,
+     7.1
     ],
     "d": 1
    }
   ],
-  "ng": "LN 2024–2025: BCTC; 2026E = 6T BCTC soát xét (107,9 tỷ) + 6T ước tính. EPS trên 201,9 triệu cp (sau quyền mua 100:42 và cổ tức cổ phiếu 17,36% năm 2026). Cổ tức năm 2025 trả bằng cổ phiếu; Vietcap: chưa chia tiền mặt để tái đầu tư."
+  "ng": "LN 2024–2025: BCTC; 2026E = 9T BCTC (216,9 tỷ: 6T soát xét 107,9 + Q3 109,0) + Q4 ước tính. EPS trên 201,9 triệu cp (sau quyền mua 100:42 và cổ tức cổ phiếu 17,36% năm 2026). Cổ tức năm 2025 trả bằng cổ phiếu; Vietcap: chưa chia tiền mặt để tái đầu tư."
  },
  "so_sanh": {
   "chi_so": "P/E 2026F",
@@ -126,9 +126,9 @@
    ]
   ],
   "tv": 10.2,
-  "moi_cp": 1575,
+  "moi_cp": 1679,
   "max": 40,
-  "y": "YTO, STO (ROE 2026F 16–17%) giao dịch 9,5–10,2 lần; chỉ Yamato (ROE 4%) và J&T trên 15 lần. Mô hình cho VTP LN 2026E −21%, 2027E +13%, ROE ~14%. Cùng ngành niêm yết trong nước (cảng, vận tải biển) P/E 4 quý 5,5–14,3.",
+  "y": "YTO, STO (ROE 2026F 16–17%) giao dịch 9,5–10,2 lần; chỉ Yamato (ROE 4%) và J&T trên 15 lần. Mô hình cho VTP LN 2026E −16%, 2027E +13%, ROE ~14%. Cùng ngành niêm yết trong nước (cảng, vận tải biển) P/E 4 quý 5,5–14,3.",
   "ng": "P/E 2026F cùng ngành: bảng so sánh MBS 10/09 (Bloomberg); VTP: EPS 2026E của mô hình"
  },
  "ln_mang": {
@@ -145,8 +145,8 @@
     "mau": "c1",
     "v": [
      1099,
-     1147,
-     1319
+     1299,
+     1501
     ]
    },
    {
@@ -163,7 +163,7 @@
     "mau": "c4",
     "v": [
      15,
-     23,
+     35,
      -5
     ]
    },
@@ -172,33 +172,33 @@
     "mau": "c2",
     "v": [
      -637,
-     -828,
-     -886
+     -969,
+     -1036
     ]
    }
   ],
   "nhan": null,
   "tong_ten": "LN trước thuế",
-  "ng": "Tổng cột = LN trước thuế (515 → 408 → 458 tỷ): phần dương ~1.300 tỷ trừ ~900 tỷ chi phí — biên mỏng nên LN rất nhạy. LN gộp theo mảng 2025: Vietcap; 2026E–2027E: mô hình."
+  "ng": "Tổng cột = LN trước thuế (515 → 431 → 490 tỷ): phần dương ~1.500 tỷ trừ ~1.000 tỷ chi phí — biên mỏng nên LN rất nhạy. LN gộp theo mảng 2025: Vietcap; 2026E–2027E: mô hình."
  },
  "cau_ln": {
   "ten": "LNST 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   318
+   339
   ],
   "cuoi": [
    "2027E",
-   359
+   384
   ],
   "buoc": [
    [
     "Doanh thu dịch vụ tăng",
-    108
+    122
    ],
    [
     "Biên gộp dịch vụ",
-    27
+    36
    ],
    [
     "Bán hàng thu hẹp",
@@ -206,14 +206,14 @@
    ],
    [
     "Chi phí BH&QL",
-    -46
+    -52
    ],
    [
     "Tài chính, khác & thuế",
-    -20
+    -33
    ]
   ],
-  "y": "Doanh thu dịch vụ tăng và biên nhích từ 6,2% lên 6,4% mang thêm ~135 tỷ; thẻ cào thu hẹp bớt 28 tỷ, chi phí BH&QL 46 tỷ; lãi vay ròng tăng khi giải ngân Hưng Yên.",
+  "y": "Doanh thu dịch vụ tăng và biên nhích từ 6,9% lên 7,1% mang thêm ~158 tỷ; thẻ cào thu hẹp bớt 28 tỷ, chi phí BH&QL 52 tỷ; lãi vay ròng tăng khi giải ngân Hưng Yên.",
   "ng": "mô hình"
  },
  "mo_hinh": {
@@ -231,8 +231,8 @@
     "ten": "Doanh thu (tỷ)",
     "v": [
      15505,
-     18403,
-     20611
+     18869,
+     21134
     ],
     "tang": 1
    },
@@ -240,8 +240,8 @@
     "ten": "Biên gộp (%)",
     "v": [
      7.1,
-     6.2,
-     6.4
+     6.9,
+     7.1
     ],
     "d": 1
    },
@@ -249,8 +249,8 @@
     "ten": "LN gộp (tỷ)",
     "v": [
      1099,
-     1147,
-     1319
+     1299,
+     1500
     ],
     "tang": 1
    },
@@ -281,8 +281,8 @@
     "ten": "Doanh thu thuần (tỷ)",
     "v": [
      20574,
-     22066,
-     23096
+     22533,
+     23618
     ],
     "tang": 1
    },
@@ -290,16 +290,16 @@
     "ten": "Chi phí BH&QL (tỷ)",
     "v": [
      637,
-     828,
-     886
+     969,
+     1036
     ]
    },
    {
     "ten": "Chi phí BH&QL / doanh thu dịch vụ (%)",
     "v": [
      4.1,
-     4.5,
-     4.3
+     5.1,
+     4.9
     ],
     "d": 1
    },
@@ -307,7 +307,7 @@
     "ten": "Tài chính ròng & khác (tỷ)",
     "v": [
      15,
-     23,
+     35,
      -5
     ]
    },
@@ -315,8 +315,8 @@
     "ten": "LN trước thuế (tỷ)",
     "v": [
      515,
-     408,
-     458
+     431,
+     490
     ],
     "tang": 1
    },
@@ -324,8 +324,8 @@
     "ten": "LNST cổ đông (tỷ)",
     "v": [
      405,
-     318,
-     359
+     339,
+     384
     ],
     "dam": 1,
     "tang": 1
@@ -334,59 +334,59 @@
     "ten": "EPS (đ, 201,9 triệu cp)",
     "v": [
      2006,
-     1575,
-     1778
+     1679,
+     1902
     ],
     "eps": 1
    }
   ],
-  "ghi": "6T/2026 hợp nhất theo BCTC soát xét (doanh thu 10.344 tỷ); tách mảng theo báo cáo quý (10.230 tỷ) — chênh 114 tỷ chưa phân bổ. Mảng 2025: KBSV, Vietcap; 1H/2025–1H/2026: FPTS, KBSV, MBS. 2026E = 6 tháng thực tế + 6 tháng ước tính; thuế 21,5%."
+  "ghi": "6T/2026 hợp nhất theo BCTC soát xét (doanh thu 10.344 tỷ); tách mảng theo báo cáo quý (10.230 tỷ) — chênh 114 tỷ chưa phân bổ. Q3/2026 theo BCTC quý; tách mảng Q3 ước tính (bán hàng −25% so cùng kỳ). Mảng 2025: KBSV, Vietcap; 1H/2025–1H/2026: FPTS, KBSV, MBS. 2026E = 9 tháng thực tế + Q4 ước tính; thuế 21,5%."
  },
  "gia_dinh": [
   {
-   "ten": "Doanh thu dịch vụ: 2H/2026 · 2027",
+   "ten": "Doanh thu dịch vụ: Q4/2026 · 2027",
    "v": [
-    "+14% · +8%",
-    "+20% · +12%",
-    "+25% · +17%"
+    "+18% · +8%",
+    "+23% · +12%",
+    "+28% · +17%"
    ],
-   "ly_do": "2H so cùng kỳ, 2027 so 2026E. 6T/2026 +17%, Q2 +22% (có phụ phí nhiên liệu); FedEx từ 5/2026; KBSV 2027F +21%, MBS +17%, SHS +11%"
+   "ly_do": "Q4 so cùng kỳ, 2027 so 2026E. 6T/2026 +17%, Q3 ước +28% (có phụ phí nhiên liệu); FedEx từ 5/2026, kho Đà Nẵng từ 9/2026; KBSV 2027F +21%, MBS +17%, SHS +11%"
   },
   {
-   "ten": "Biên gộp dịch vụ: 2H/2026 · 2027",
+   "ten": "Biên gộp dịch vụ: Q4/2026 · 2027",
    "v": [
-    "5,8% · 6,1%",
-    "6,2% · 6,4%",
-    "6,6% · 6,8%"
+    "6,8% · 6,6%",
+    "7,4% · 7,1%",
+    "7,8% · 7,5%"
    ],
-   "ly_do": "Q1/2026 6,7%, Q2 5,9%, 2025 7,1%; diesel tháng 9 vẫn +53% (MBS); khấu hao 2027 ~+130 tỷ so 2025 (~0,4 điểm %); MBS 2027F 6,2%"
+   "ly_do": "Q1/2026 6,7%, Q2 5,9%, Q3 ước 7,3%, Q4/2025 ~7,7%, 2025 7,1%; khấu hao 2027 ~+130 tỷ so 2025 (~0,4 điểm %). Q3 cho thấy biên gộp cao hơn đi cùng chi phí BH&QL cao hơn — xem cùng dòng dưới"
   },
   {
-   "ten": "Chi phí BH&QL: 2H/2026 · 2027 (% DT dịch vụ)",
+   "ten": "Chi phí BH&QL: Q4/2026 · 2027 (% DT dịch vụ)",
    "v": [
-    "430 tỷ · 4,6%",
-    "400 tỷ · 4,3%",
-    "370 tỷ · 4,1%"
+    "310 tỷ · 5,1%",
+    "285 tỷ · 4,9%",
+    "265 tỷ · 4,7%"
    ],
-   "ly_do": "6T/2026 428 tỷ (5,2% doanh thu dịch vụ, +28%); 2H/2025 chỉ 303 tỷ; 2025: 4,1%. KBSV 2027F +11%, MBS +10%"
+   "ly_do": "Q1 208, Q2 220, Q3 256 tỷ (~5,1% DT dịch vụ); Q4 thường cao hơn Q3 15–30%; 2025: 4,1%. Biên gộp trừ BH&QL 2027: 1,5% · 2,2% · 2,8% (9T/2026 ~1,5%, Q3 2,2%, 2025 3,0%)"
   },
   {
-   "ten": "Bán hàng (thẻ cào, SIM): 2H/2026 · 2027",
+   "ten": "Bán hàng (thẻ cào, SIM): Q3–Q4/2026 · 2027",
    "v": [
     "−25% · −30%",
     "−25% · −30%",
     "−25% · −30%"
    ],
-   "ly_do": "6T/2026 −33%, chủ động thu hẹp; biên gộp 2H/2026 1,5%, 2027 1,2% (6T/2026 1,7%, 2025 0,7%) → LN gộp 66 → 30 tỷ"
+   "ly_do": "6T/2026 −33%, chủ động thu hẹp; biên gộp Q3–Q4/2026 1,5%, 2027 1,2% (6T/2026 1,7%, 2025 0,7%) → LN gộp 66 → 30 tỷ. Q3 chưa có báo cáo tách mảng — ước theo xu hướng"
   },
   {
-   "ten": "Tài chính ròng & khác: 2H/2026 · 2027 (tỷ)",
+   "ten": "Tài chính ròng & khác: Q4/2026 · 2027 (tỷ)",
    "v": [
-    "+10 · −20",
-    "+15 · −5",
-    "+20 · +15"
+    "+5 · −20",
+    "+12 · −5",
+    "+18 · +15"
    ],
-   "ly_do": "6T/2026 8 tỷ: thu nhập tài chính 80, lãi vay 65; tiền + tiền gửi 3.135 tỷ, vay 2.029 tỷ (30/6); Hưng Yên vay 50%"
+   "ly_do": "Q3/2026 15 tỷ: thu nhập tài chính 59, lãi vay 44; tiền + tiền gửi 3.194 tỷ, vay 2.376 tỷ (30/9); Hưng Yên vay 50%"
   },
   {
    "ten": "P/E (× LNST 2027E)",
@@ -401,24 +401,24 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 236,
-   "ln27": 235,
-   "gia": 19.8,
-   "mo_ta": "Dầu neo cao, chi phí không hạ: dịch vụ 2H +14%, 2027 +8%; biên gộp 5,8% · 6,1%; chi phí BH&QL 4,6% doanh thu; P/E 17"
+   "ln26": 275,
+   "ln27": 245,
+   "gia": 20.6,
+   "mo_ta": "Dầu neo cao, chi phí không hạ: dịch vụ Q4 +18%, 2027 +8%; biên gộp 6,8% · 6,6%; chi phí BH&QL 5,1% doanh thu; P/E 17"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 318,
-   "ln27": 359,
-   "gia": 35.6,
-   "mo_ta": "Dịch vụ 2H +20%, 2027 +12%; biên gộp 6,2% · 6,4%; chi phí BH&QL 2H 400 tỷ, 2027 4,3% doanh thu; P/E 20"
+   "ln26": 339,
+   "ln27": 384,
+   "gia": 38.0,
+   "mo_ta": "Dịch vụ Q4 +23%, 2027 +12%; biên gộp 7,4% · 7,1%; chi phí BH&QL Q4 285 tỷ, 2027 4,9% doanh thu; P/E 20"
   },
   {
    "ten": "Tốt",
-   "ln26": 400,
-   "ln27": 502,
-   "gia": 59.7,
-   "mo_ta": "Diesel hạ, Luật TMĐT mở đơn từ sàn: dịch vụ 2H +25%, 2027 +17%; biên gộp 6,6% · 6,8%; P/E 24"
+   "ln26": 391,
+   "ln27": 526,
+   "gia": 62.5,
+   "mo_ta": "Diesel hạ, Luật TMĐT mở đơn từ sàn: dịch vụ Q4 +28%, 2027 +17%; biên gộp 7,8% · 7,5%; P/E 24"
   }
  ],
  "dinh_gia": {
@@ -431,9 +431,9 @@
     "ten": "VTP hợp nhất",
     "mau": "c1",
     "x": [
-     235,
-     359,
-     502
+     245,
+     384,
+     526
     ],
     "boi": [
      17,
@@ -444,21 +444,21 @@
     "sh": 1,
     "boi_ten": "P/E",
     "gt": [
-     3995,
-     7180,
-     12048
+     4165,
+     7680,
+     12624
     ]
    }
   ],
   "von": [
-   3995,
-   7180,
-   12048
+   4165,
+   7680,
+   12624
   ],
   "gia": [
-   19.8,
-   35.6,
-   59.7
+   20.6,
+   38.0,
+   62.5
   ]
  },
  "pe_ls": {
@@ -657,7 +657,7 @@
    25.9,
    31.2,
    30.5,
-   27.1
+   26.7
   ],
   "p10": 17.0,
   "p25": 20.0,
@@ -668,31 +668,31 @@
   ],
   "nay": [
    "2026-10",
-   27.1
+   26.7
   ],
   "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
   "dung": "P/E 4 quý của VTP từ 2018: thấp 10% 17,0, 25% 20,0, trung vị 24,2; 2024–2025 vọt lên 30–58 lần khi chuyển sàn HOSE và thương mại điện tử bùng nổ. Kịch bản dùng 17 · 20 · 24 trên LNST 2027E. Từ 4/2026 tính 172,0 triệu cp (sau quyền mua), từ 7/2026 201,9 triệu cp."
  },
  "nhay": [
   [
-   "P/E ±2 lần",
-   null,
-   3.6
+   "Chi phí BH&QL 2027 ±5%",
+   41,
+   4.1
   ],
   [
-   "Chi phí BH&QL 2027 ±5%",
-   35,
-   3.5
+   "P/E ±2 lần",
+   null,
+   3.8
   ],
   [
    "Biên gộp dịch vụ 2027 ±0,2 điểm %",
-   32,
-   3.2
+   33,
+   3.3
   ],
   [
    "Doanh thu dịch vụ 2027 ±5% (giữ biên, tỷ lệ chi phí)",
-   17,
-   1.7
+   18,
+   1.8
   ],
   [
    "Tài chính ròng 2027 ±20 tỷ",
@@ -715,30 +715,30 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    82,
-    134,
-    186
+    58,
+    122,
+    174
    ],
    "ck": 153
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    236,
-    318,
-    400
+    275,
+    339,
+    391
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "10–11/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Mô hình: LNST ~77 tỷ (cùng kỳ 85). Quý 3 diesel vẫn +50% (MBS); phụ phí nhiên liệu giảm còn 8% từ 8/7 rồi tăng lại từ 24/8; kho Đà Nẵng dự kiến chạy từ 9/2026.",
+   "khi": "10/2026 (đã ra)",
+   "loai": "len",
+   "tieu": "KQKD Q3/2026: LNST 109 tỷ, vượt mô hình cũ",
+   "ct": "Mô hình cũ 77 tỷ (tốt 106), thực tế +28%: LN gộp +63%, BH&QL +96%, thu nhập tài chính 59 tỷ. Nâng LN 2026E–2027E; chưa là xu hướng khi chi phí còn tăng nhanh hơn doanh thu.",
    "tac": [
-    "≥ 77 tỷ",
-    "giữ cơ sở; dưới 47 tỷ nghiêng về kịch bản xấu"
+    "+2,4 nghìn đ/cp",
+    "giá trị cơ sở so với bản 20/10 (35,6)"
    ],
    "theo_doi": "biên gộp dịch vụ, chi phí BH&QL"
   },
@@ -746,9 +746,9 @@
    "khi": "Q4/2026",
    "loai": "hai",
    "tieu": "Mùa cao điểm và hết giảm thuế xăng dầu",
-   "ct": "Quý 4 thường lãi nhất năm (Q4/2025: 153 tỷ). Giảm thuế bảo vệ môi trường, VAT xăng dầu hết 30/9/2026 (SHS) — phụ phí phải tăng nếu dầu không hạ.",
+   "ct": "Quý 4 thường lãi nhất năm (Q4/2025: 153 tỷ, BH&QL 173 tỷ). Mô hình 122 tỷ (−20%) vì BH&QL đã 256 tỷ/quý. Giảm thuế xăng dầu hết 30/9/2026 — phụ phí phải tăng nếu dầu không hạ.",
    "tac": [
-    "82–186 tỷ",
+    "58–174 tỷ",
     "LNST Q4/2026 kịch bản xấu – tốt"
    ],
    "theo_doi": "giá diesel, mức phụ phí nhiên liệu"
@@ -757,10 +757,10 @@
    "khi": "2027",
    "loai": "len",
    "tieu": "Diesel hạ, biên dịch vụ về gần mức 2025",
-   "ct": "Biên gộp dịch vụ 2025 7,1%, Q2/2026 5,9%. MBS: Brent bình quân 2027 78 USD thay vì 82 thì LNST 2027 +51 tỷ.",
+   "ct": "Biên gộp dịch vụ 2025 7,1%, Q2/2026 5,9%, Q3 ước 7,3%. MBS: Brent bình quân 2027 78 USD thay vì 82 thì LNST 2027 +51 tỷ.",
    "tac": [
-    "+6,4 nghìn đ/cp",
-    "nếu biên gộp dịch vụ 2027 6,8% thay vì 6,4%"
+    "+6,6 nghìn đ/cp",
+    "nếu biên gộp dịch vụ 2027 7,5% thay vì 7,1%"
    ],
    "theo_doi": "giá diesel, biên gộp dịch vụ"
   },
@@ -770,7 +770,7 @@
    "tieu": "Luật Thương mại điện tử 122/2025 có hiệu lực",
    "ct": "Cấm ép dùng dịch vụ độc quyền, sàn phải công khai tiêu chí chọn đơn vị vận chuyển; SPX chở ~90% đơn Shopee, J&T ~70% đơn TikTok Shop (FPTS). SHS, Vietcap chưa đưa vào dự báo.",
    "tac": [
-    "+1,7 nghìn đ/cp",
+    "+1,8 nghìn đ/cp",
     "mỗi +5% doanh thu dịch vụ 2027 (giữ biên)"
    ],
    "theo_doi": "sản lượng VTP từ sàn"
@@ -790,8 +790,8 @@
    "tieu": "Dầu neo cao lâu hơn",
    "ct": "Hơn 5.000 xe, ~90% chạy diesel; tháng 9/2026 diesel ~27.700 đ/lít (+53%, MBS). Phụ phí nhiên liệu đi trễ và không bù đủ.",
    "tac": [
-    "−4,8 nghìn đ/cp",
-    "nếu biên gộp dịch vụ 2027 6,1% thay vì 6,4%"
+    "−8,2 nghìn đ/cp",
+    "nếu biên gộp dịch vụ 2027 6,6% thay vì 7,1%"
    ],
    "theo_doi": "giá diesel, biên gộp dịch vụ"
   },
@@ -800,9 +800,9 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Chi phí BH&QL không hạ",
-   "ct": "6T/2026 chi phí BH&QL bằng 5,2% doanh thu dịch vụ (2025: 4,1%): nhân công, thuê ngoài, chi phí giai đoạn đầu FedEx và thị trường quốc tế (MBS).",
+   "ct": "6T/2026 chi phí BH&QL bằng 5,2% doanh thu dịch vụ (2025: 4,1%); Q3 lên 256 tỷ (+96%, ~5,1% doanh thu dịch vụ ước): nhân công, thuê ngoài, chi phí giai đoạn đầu FedEx và thị trường quốc tế (MBS).",
    "tac": [
-    "−3,2 nghìn đ/cp",
+    "−3,3 nghìn đ/cp",
     "mỗi +0,2 điểm % chi phí/doanh thu dịch vụ 2027"
    ],
    "theo_doi": "chi phí BH&QL theo quý"
@@ -905,41 +905,41 @@
    "dv": "tỷ đồng",
    "kieu": "cot",
    "nhan": [
-    "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Cùng kỳ năm trước",
      "v": [
-      58,
       87,
       107,
       131,
       69,
-      97
+      97,
+      85
      ],
      "mau": "c4"
     },
     {
      "ten": "Kỳ này",
      "v": [
-      69,
       97,
       85,
       153,
       39,
-      69
+      69,
+      109
      ],
      "mau": "c1"
     }
    ],
    "so_le": 0,
-   "y": "Q1/2026 −44%, Q2 −29%; 4 quý gần nhất 346 tỷ. Q2/2026 theo BCTC soát xét (báo cáo quý: 72,8 tỷ).",
+   "y": "Q1/2026 −44%, Q2 −29%, Q3 +28%; 4 quý gần nhất 370 tỷ. Q2/2026 theo BCTC soát xét (báo cáo quý: 72,8 tỷ).",
    "ng": "BCTC hợp nhất (VNDirect)"
   },
   {
@@ -947,27 +947,27 @@
    "dv": "% doanh thu thuần",
    "kieu": "duong",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Biên gộp",
      "v": [
-      5.1,
       5.9,
       5.2,
       5.6,
       4.7,
       6.5,
       5.4,
-      5.4
+      5.4,
+      6.5
      ],
      "mau": "c1",
      "net": false
@@ -975,21 +975,21 @@
     {
      "ten": "Chi phí BH&QL",
      "v": [
-      2.7,
       3.0,
       3.5,
       3.2,
       2.6,
       3.1,
       4.4,
-      3.9
+      3.9,
+      4.4
      ],
      "mau": "c2",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Khoảng cách (biên hoạt động) 2,4 điểm % (Q2/25) → 1,5 điểm % (Q2/26). Biên gộp hợp nhất còn được đỡ vì thẻ cào (biên ~1%) thu hẹp.",
+   "y": "Khoảng cách (biên hoạt động) 2,4 điểm % (Q2/25) → 1,5 (Q2/26) → 2,1 (Q3/26; cùng kỳ 2,1). Q3 biên gộp và chi phí cùng vọt lên. Biên gộp hợp nhất còn được đỡ vì thẻ cào (biên ~1%) thu hẹp.",
    "ng": "BCTC hợp nhất (VNDirect), tự tính"
   },
   {
@@ -1032,23 +1032,23 @@
    {
     "ten": "Doanh thu",
     "kh": 19520,
-    "th": 10344,
-    "ky": "6T",
-    "tg": 50,
+    "th": 16117,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC soát xét"
+    "ng": "ĐHĐCĐ 2026 · BCTC 9T/2026"
    },
    {
     "ten": "Lợi nhuận sau thuế",
     "kh": 400,
-    "th": 108,
-    "ky": "6T",
-    "tg": 50,
+    "th": 217,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 2026 · BCTC soát xét"
+    "ng": "ĐHĐCĐ 2026 · BCTC 9T/2026"
    }
   ],
-  "y": "Kế hoạch doanh thu thấp hơn 2025 vì chủ động thu hẹp thẻ cào; LN 6 tháng mới 27% kế hoạch. Mô hình cho LNST 2026E 318 tỷ (80% kế hoạch).",
+  "y": "Kế hoạch doanh thu thấp hơn 2025 vì chủ động thu hẹp thẻ cào; LN 9 tháng 54% kế hoạch — Q4 cần ~183 tỷ, cao hơn Q4/2025 (153 tỷ). Mô hình cho LNST 2026E 339 tỷ (85% kế hoạch).",
   "ng": ""
  },
  "ctck": [
@@ -1217,7 +1217,7 @@
     },
     {
      "h": -1,
-     "t": "Tiền + tiền gửi 3.135 tỷ, vay 2.029 tỷ (30/6/2026), nhưng một phần tiền là tiền thu hộ COD; dòng tiền kinh doanh 6T/2026 âm nhẹ.",
+     "t": "Tiền + tiền gửi 3.194 tỷ, vay 2.376 tỷ (30/9/2026; vay +346 tỷ trong Q3), nhưng một phần tiền là tiền thu hộ COD; dòng tiền kinh doanh 6T/2026 âm nhẹ.",
      "ng": "BCTC · Vietcap 27/05 · SHS 06/08"
     }
    ]
