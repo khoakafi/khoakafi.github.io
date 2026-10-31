@@ -1,0 +1,1526 @@
+{
+ "v": 2,
+ "ma": "IDC",
+ "ten": "Tổng Công ty IDICO – CTCP",
+ "nganh": "Bất động sản khu công nghiệp, phân phối điện, BOT",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 (cuối 1/2027); doanh số Q4 của Tân Phước 1, Vinh Quang",
+ "cp_trieu": 417.4,
+ "cp_ng": "Vốn điều lệ 3.795 tỷ (BCTC Q2/2026) = 379,5 triệu cp, cộng 10% cổ phiếu cổ tức (100:10, ĐKCC 24/07/2026) = 417,4 triệu cp (SHS 03/08: 417.448.705 cp niêm yết; vốn điều lệ mới hơn 4.174 tỷ)",
+ "co_tuc": [
+  [
+   "2025-12-03",
+   1364,
+   "tạm ứng đợt 1/2025: 1.500 đ/cp cũ ≈ 1.364 đ/cp sau cổ phiếu 10% (ĐKCC 04/12/2025, trả 23/12/2025)"
+  ],
+  [
+   "2026-07-23",
+   1364,
+   "đợt 2/2025: 1.500 đ/cp cũ ≈ 1.364 đ/cp sau cổ phiếu 10% (cùng GDKHQ, ĐKCC 24/07/2026, trả 14/08/2026)"
+  ]
+ ],
+ "chia": [
+  [
+   "2026-07-23",
+   1.1
+  ]
+ ],
+ "tieu_de": {
+  "t": "Q3 lãi giảm 41% vì bàn giao đất chậm; giá trị vẫn ở ~370 ha đất cũ và Tân Phước 1, Vinh Quang"
+ },
+ "dong_mo": "9T/2026 LN cổ đông 1.373 tỷ (−7%); Q3 493 tỷ (−41%), ước chỉ ~15 ha bàn giao — 9T ~48/100 ha kế hoạch. Giá trị gồm ~370 ha KCN hiện hữu (biên gộp ~65%), 625 ha KCN mới, thu nhập đều từ điện, dịch vụ, BOT và tiền ròng: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "~370 ha",
+   "nhan": "đất KCN sẵn sàng cho thuê còn lại (phần IDC, 30/9/2026, ước)",
+   "tieu": "Lợi nhuận chính là bán dần quỹ đất cũ",
+   "t": "Cho thuê đất tạo 62% lãi gộp 2025 (1.888/3.060 tỷ, biên 65%). Hựu Thạnh (~148 USD/m²), Phú Mỹ 2 và mở rộng, Cầu Nghìn, Quế Võ 2 còn ~370 ha phần IDC — ~5 năm ở nhịp 80 ha/năm. Mỗi ha ghi nhận ~29–31 tỷ doanh thu, ~16 tỷ LNST và thu về ~10 tỷ giá vốn đã chi. P/E thấp vì đây là bán tài sản không tái tạo: giá trị nằm ở nhịp bàn giao, không ở LN một năm.",
+   "ng": "BSC 11/06 · KBSV 04/06 · SHS 03/08 · mô hình"
+  },
+  {
+   "so": "48/100 ha",
+   "nhan": "bàn giao 9T/2026 (ước) so với kế hoạch cả năm",
+   "tieu": "Q3 xác nhận bàn giao chậm; Q4 phụ thuộc KCN mới",
+   "t": "Q3 LN cổ đông 493 tỷ, trên mức cơ sở cũ 450, phần vượt chủ yếu nhờ lãi tiền gửi (154 tỷ doanh thu tài chính, cùng kỳ 85); lãi gộp 672 tỷ (−47%) cho thấy chỉ ~15 ha bàn giao (ước). 9T LNTT đạt 66% kế hoạch 2.903 tỷ. Ban lãnh đạo chờ ~30 ha Q4 từ Vinh Quang, Tân Phước 1 — mới mở bán nên mô hình cơ sở chỉ tính 25 ha → LN 2026E ~2,0 nghìn tỷ, ngang 2025.",
+   "ng": "BCTC Q3 · Vietstock 29/10 · Stockbiz 2026 · mô hình"
+  },
+  {
+   "so": "625 ha",
+   "nhan": "KCN mới, phần IDC: Tân Phước 1, Vinh Quang, Phú Long",
+   "tieu": "Quỹ đất mới gấp 1,6 lần đất cũ nhưng cần ~14 nghìn tỷ vốn",
+   "t": "Tân Phước 1 (363 ha, IDC 65%, TMĐT ~5.900 tỷ, vay VCB 4.000 tỷ) mở bán Q4/2026, nhắm giá ~130 USD/m²; Vinh Quang (163 ha, TMĐT 3.550 tỷ) ký hợp đồng từ cuối 2026; Phú Long (301 ha, IDC 75%, ~4.960 tỷ) đang làm hạ tầng. Đầu tư 16–22 tỷ/ha thương phẩm, trong khi Hựu Thạnh có giá vốn đền bù thấp: biên sẽ thấp hơn. Mô hình tính 6,0 tỷ/ha sau thuế, chiết khấu, trừ vốn đầu tư (Shinhan ~6,7).",
+   "ng": "KBSV 04/06 · SHS 03/08 · Shinhan 18/09 · Stockbiz · Tạp chí Công Thương"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý (nghìn đ/cp)",
+   "tieu": "Tổng các phần: {up_so} so với giá hiện tại",
+   "t": "KCN hiện hữu 370 ha × 21,9 tỷ/ha (LNST 16,4 + giá vốn đã chi 10 tỷ/ha, bán 80 ha/năm, chiết khấu 13%) + KCN mới 625 ha × 6,0 tỷ/ha + thu nhập đều 2027E 632 tỷ × P/E 9,0 + tiền ròng 1,5 nghìn tỷ. Tương đương P/E 10,5 lần LN 4 quý đến Q3/2026. Xấu 32,2, tốt 60,9. Cổ tức tiền 2025 ≈ 2.727 đ/cp hiện tại.",
+   "ng": "mô hình · BCTC VNDirect"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1932,
+   1971,
+   2237
+  ],
+  "ln_truoc": 1996,
+  "eps": [
+   4629,
+   4722,
+   5359
+  ],
+  "bv": [
+   15475,
+   17314,
+   19674
+  ],
+  "co_tuc_nam": 2727,
+  "them": [
+   {
+    "ten": "Bàn giao đất KCN (ha)",
+    "v": [
+     80,
+     73,
+     95
+    ],
+    "d": 0
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     32.0,
+     28.8,
+     29.0
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC; EPS, BVPS theo 417,4 triệu cp (sau cổ phiếu 10% tháng 7/2026). Cổ tức: 3.000 đ/cp cũ năm 2025 ≈ 2.727 đ/cp hiện tại. BVPS giả định tạm ứng 1.500 đ/cp 12/2026 và 3.000 đ/cp năm 2027 (như 2025)."
+ },
+ "ln_mang": {
+  "tieu": "Lãi gộp theo mảng",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "lãi gộp",
+  "ss": [
+   {
+    "ten": "Cho thuê đất KCN",
+    "mau": "c1",
+    "v": [
+     1888,
+     1772,
+     2353
+    ]
+   },
+   {
+    "ten": "Điện",
+    "mau": "c2",
+    "v": [
+     451,
+     383,
+     420
+    ]
+   },
+   {
+    "ten": "Dịch vụ KCN, BOT, BĐS, khác",
+    "mau": "c4",
+    "v": [
+     721,
+     604,
+     680
+    ]
+   }
+  ],
+  "nhan": "Cho thuê đất KCN",
+  "ng": "2025A: BSC 11/06 theo mảng. 2026E: 6T thực tế — lãi gộp cho thuê đất ước bằng tổng trừ điện, BOT, BĐS (SHS) và dịch vụ, xây dựng, khác (Q1 BSC, Q2 theo biên 2025); Q3: lãi gộp 672 tỷ tách mảng ước (điện 120, khác 150); Q4 mô hình; 2027E: mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 30/10)",
+  "nhom": "8 doanh nghiệp KCN vốn hóa lớn nhất",
+  "kv": [
+   [
+    "GVR",
+    17.9
+   ],
+   [
+    "BCM",
+    18.7
+   ],
+   [
+    "KBC",
+    14.3
+   ],
+   [
+    "VGC",
+    10.6
+   ],
+   [
+    "SIP",
+    8.2
+   ],
+   [
+    "PHR",
+    8.4
+   ],
+   [
+    "NTC",
+    12.5
+   ],
+   [
+    "SZC",
+    21.8
+   ]
+  ],
+  "tv": 13.4,
+  "moi_cp": 4366,
+  "max": 25,
+  "y": "SIP, PHR, VGC giao dịch 8,2–10,6 lần; NTC, KBC, GVR, BCM, SZC giao dịch 12,5–21,8 lần. IDC có ROE ~32% nhưng phần lớn LN là ghi nhận một lần khi bàn giao đất nên được trả thấp hơn cả hai nhóm.",
+  "ng": "BCTC VNDirect (LNST cổ đông 4 quý gần nhất; BCM, KBC, VGC, NTC, SZC đến Q3/2026), vốn hóa VNDirect, giá 30/10/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: cho thuê đất + điện, dịch vụ, BOT",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Cho thuê đất KCN"
+   },
+   {
+    "ten": "Diện tích bàn giao (ha)",
+    "v": [
+     80,
+     73,
+     95
+    ]
+   },
+   {
+    "ten": "Doanh thu cho thuê đất (tỷ)",
+    "v": [
+     2910,
+     2661,
+     3565
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     64.9,
+     66.6,
+     66.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Lãi gộp cho thuê đất (tỷ)",
+    "v": [
+     1888,
+     1772,
+     2353
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Điện, dịch vụ KCN, BOT, BĐS"
+   },
+   {
+    "ten": "Doanh thu điện (tỷ)",
+    "v": [
+     3862,
+     4081,
+     4400
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp điện (tỷ)",
+    "v": [
+     451,
+     383,
+     420
+    ]
+   },
+   {
+    "ten": "Lãi gộp dịch vụ KCN, BOT, BĐS, khác (tỷ)",
+    "v": [
+     721,
+     604,
+     680
+    ]
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     8588,
+     8217,
+     9765
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí bán hàng + quản lý (tỷ)",
+    "v": [
+     396,
+     378,
+     440
+    ]
+   },
+   {
+    "ten": "Tài chính ròng (tỷ)",
+    "v": [
+     176,
+     351,
+     160
+    ]
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     2918,
+     2760,
+     3193
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     1932,
+     1971,
+     2237
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     4629,
+     4722,
+     5359
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     32.0,
+     28.8,
+     29.0
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "Cho thuê đất = ha × tỷ/ha (ghi nhận một lần) + doanh thu phân bổ (~0,6 nghìn tỷ/năm). LN cổ đông = LNTT × (1 − 20%) − cổ đông thiểu số (~240 tỷ/năm ở công ty con điện, BOT + 5% LN cho thuê đất). 2026E = 9T thực tế + Q4 ước; tách mảng Q3 là ước (công ty chưa công bố): ~15 ha bàn giao."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1971
+  ],
+  "cuoi": [
+   "2027E",
+   2237
+  ],
+  "buoc": [
+   [
+    "Cho thuê đất KCN",
+    465
+   ],
+   [
+    "Điện",
+    30
+   ],
+   [
+    "Dịch vụ KCN, BOT, BĐS",
+    61
+   ],
+   [
+    "Chi phí, tài chính, thuế, CĐTS",
+    -290
+   ]
+  ],
+  "y": "Cho thuê đất tạo phần lớn mức tăng (95 ha so với 73); điện hồi lại sau El Nino; lãi tiền gửi giảm khi rót vốn vào KCN mới. Các mảng tính sau thuế 20%, chưa trừ cổ đông thiểu số.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Bàn giao đất: Q4/2026 · 2027 (ha)",
+   "v": [
+    "10 · 70",
+    "25 · 95",
+    "35 · 120"
+   ],
+   "ly_do": "9T ~48 ha (Q3 ước ~15); doanh số ký 8T ~54 ha; ~30 ha Q4 từ KCN mới vừa mở bán; kế hoạch 2026 100 ha; KBSV 2027: 90/105/130"
+  },
+  {
+   "ten": "Doanh thu ghi nhận 2027 (tỷ/ha)",
+   "v": [
+    "28",
+    "31",
+    "34"
+   ],
+   "ly_do": "Q2/2026 ~29 tỷ/ha, 2025 ~31; giá thuê bình quân 6T/2026 +3–5%; Hựu Thạnh ~148, Phú Mỹ 2 124–126 USD/m² (SHS)"
+  },
+  {
+   "ten": "Biên gộp cho thuê đất 2027",
+   "v": [
+    "60%",
+    "66%",
+    "70%"
+   ],
+   "ly_do": "2024 64%, 2025 65% (BSC), 6T/2026 ước ~67%; KCN mới đầu tư 16–22 tỷ/ha thương phẩm kéo biên xuống"
+  },
+  {
+   "ten": "Lãi gộp điện 2027 (tỷ)",
+   "v": [
+    "340",
+    "420",
+    "480"
+   ],
+   "ly_do": "2024: 319, 2025: 451 (thủy văn tốt); biên 6T/2026 7,7% (6T/2025 8,8%); El Nino nửa cuối 2026 (BSC, NHSV)"
+  },
+  {
+   "ten": "Lãi gộp dịch vụ KCN, BOT, BĐS, khác 2027 (tỷ)",
+   "v": [
+    "580",
+    "680",
+    "780"
+   ],
+   "ly_do": "2025: 721; dịch vụ KCN +8–13%/năm; BOT thu phí đến ~2032; KDC Hựu Thạnh (855 tỷ dở dang) ghi nhận từ 2027"
+  },
+  {
+   "ten": "Nhịp bán đất cũ (ha/năm) · chiết khấu",
+   "v": [
+    "60 · 15%",
+    "80 · 13%",
+    "100 · 11%"
+   ],
+   "ly_do": "~370 ha hiện hữu; chiết khấu quanh WACC 12,7% (Shinhan), giá thuê tăng 3–5%/năm"
+  },
+  {
+   "ten": "Giá vốn đã chi, đất hiện hữu (tỷ/ha)",
+   "v": [
+    "10,0",
+    "10,0",
+    "10,0"
+   ],
+   "ly_do": "Đã xong GPMB (KBSV); thu về khi bàn giao. Giá vốn ghi nhận 2025 ~10,8 tỷ/ha (BSC); XDCB dở dang Hựu Thạnh 2.971 tỷ cuối 2025 ≈ 13 tỷ/ha trên 223 ha còn lại"
+  },
+  {
+   "ten": "Giá trị KCN mới (tỷ/ha)",
+   "v": [
+    "3,5",
+    "6,0",
+    "9,0"
+   ],
+   "ly_do": "Sau thuế, chiết khấu, đã trừ vốn đầu tư 16–22 tỷ/ha, phần IDC; không cộng phần đã chi để khỏi đếm trùng. RNAV Shinhan 18/09 ~6,7 tỷ/ha; BSC 15–17 (Tân Phước 1, Vinh Quang)"
+  },
+  {
+   "ten": "P/E thu nhập đều",
+   "v": [
+    "7,5",
+    "9,0",
+    "11,0"
+   ],
+   "ly_do": "IDC từ 2023: thấp 25% 7,3, trung vị 9,0; SIP 8,2, NTC 12,5 (giá 30/10); BOT có thời hạn nên không trả cao hơn"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1706,
+   "ln27": 1479,
+   "gia": 32.2,
+   "mo_ta": "Bàn giao 10 ha Q4/2026, 70 ha 2027; 28 tỷ/ha, biên 60%; bán đất cũ 60 ha/năm, chiết khấu 15%; KCN mới 3,5 tỷ/ha; P/E thu nhập đều 7,5"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1971,
+   "ln27": 2237,
+   "gia": 45.7,
+   "mo_ta": "Bàn giao 25 ha Q4/2026, 95 ha 2027; 31 tỷ/ha, biên 66%; bán đất cũ 80 ha/năm, chiết khấu 13%; KCN mới 6,0 tỷ/ha; P/E thu nhập đều 9,0"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 2184,
+   "ln27": 3078,
+   "gia": 60.9,
+   "mo_ta": "Bàn giao 35 ha Q4/2026, 120 ha 2027; 34 tỷ/ha, biên 70%; bán đất cũ 100 ha/năm, chiết khấu 11%; KCN mới 9,0 tỷ/ha; P/E thu nhập đều 11,0"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "Đất KCN: ha × giá trị/ha đã chiết khấu; thu nhập đều 2027E × P/E; cộng tiền ròng",
+  "ck": 0,
+  "cp": 417.4,
+  "phan": [
+   {
+    "ten": "KCN hiện hữu",
+    "mau": "c1",
+    "x": [
+     370,
+     370,
+     370
+    ],
+    "boi": [
+     17.0,
+     21.9,
+     26.2
+    ],
+    "x_ten": "ha sẵn sàng còn lại, phần IDC (30/9/2026, ước)",
+    "boi_ten": "tỷ đ/ha: (LNST + giá vốn đã chi) × hệ số chiết khấu",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     6290,
+     8103,
+     9694
+    ]
+   },
+   {
+    "ten": "KCN mới",
+    "mau": "c3",
+    "x": [
+     625,
+     625,
+     625
+    ],
+    "boi": [
+     3.5,
+     6.0,
+     9.0
+    ],
+    "x_ten": "ha Tân Phước 1, Vinh Quang, Phú Long (phần IDC)",
+    "boi_ten": "tỷ đ/ha sau thuế, chiết khấu, trừ vốn đầu tư",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     2188,
+     3750,
+     5625
+    ]
+   },
+   {
+    "ten": "Thu nhập đều",
+    "mau": "c2",
+    "x": [
+     457,
+     632,
+     779
+    ],
+    "boi": [
+     7.5,
+     9.0,
+     11.0
+    ],
+    "x_ten": "LN 2027E: điện, dịch vụ KCN, BOT, thuê đất phân bổ, BĐS − chi phí",
+    "boi_ten": "P/E",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     3428,
+     5688,
+     8569
+    ]
+   },
+   {
+    "ten": "Tiền ròng",
+    "mau": "c4",
+    "x": [
+     1547,
+     1547,
+     1547
+    ],
+    "boi": [
+     1,
+     1,
+     1
+    ],
+    "x_ten": "Tiền + đầu tư ngắn hạn − nợ vay 30/9/2026",
+    "boi_ten": "hệ số",
+    "sh": 1,
+    "gt": [
+     1547,
+     1547,
+     1547
+    ]
+   }
+  ],
+  "von": [
+   13453,
+   19088,
+   25435
+  ],
+  "gia": [
+   32.2,
+   45.7,
+   60.9
+  ]
+ },
+ "nhay": [
+  [
+   "Giá vốn đã chi, đất hiện hữu ±2 tỷ đ/ha",
+   null,
+   1.5
+  ],
+  [
+   "Giá trị KCN mới ±1 tỷ đ/ha",
+   null,
+   1.5
+  ],
+  [
+   "P/E thu nhập đều ±1 lần",
+   null,
+   1.5
+  ],
+  [
+   "Nhịp bán KCN hiện hữu ±20 ha/năm",
+   null,
+   0.9
+  ],
+  [
+   "Biên gộp cho thuê đất ±5 điểm %",
+   112,
+   0.9
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   17.5,
+   17.7,
+   17.0,
+   19.3,
+   18.0,
+   18.1,
+   15.7,
+   14.7,
+   14.4,
+   13.3,
+   11.5,
+   12.3,
+   13.0,
+   13.5,
+   14.1,
+   18.0,
+   19.1,
+   20.6,
+   27.8,
+   35.2,
+   34.9,
+   38.6,
+   37.4,
+   33.3,
+   37.3,
+   34.8,
+   33.2,
+   23.8,
+   30.9,
+   44.0,
+   43.2,
+   40.2,
+   34.3,
+   47.3,
+   53.1,
+   36.7,
+   24.9,
+   25.6,
+   31.4,
+   11.1,
+   8.9,
+   7.9,
+   5.6,
+   5.0,
+   6.3,
+   5.5,
+   5.9,
+   5.5,
+   6.3,
+   6.4,
+   6.8,
+   12.0,
+   11.7,
+   10.7,
+   15.4,
+   16.4,
+   16.7,
+   14.0,
+   14.0,
+   13.3,
+   10.9,
+   10.2,
+   10.0,
+   10.9,
+   10.3,
+   10.0,
+   8.4,
+   8.4,
+   8.2,
+   9.5,
+   8.9,
+   6.0,
+   8.8,
+   8.9,
+   9.1,
+   11.0,
+   9.7,
+   9.6,
+   8.3,
+   7.5,
+   9.9,
+   9.5,
+   9.7,
+   8.9,
+   8.9,
+   8.5,
+   7.3,
+   6.2,
+   6.5,
+   6.6
+  ],
+  "p10": 6.4,
+  "p25": 8.9,
+  "tv": 11.8,
+  "thap": [
+   "2022-12",
+   5.0
+  ],
+  "nay": [
+   "2026-10",
+   6.6
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Giá trị cơ sở ≈ P/E 10,5 lần LN 4 quý, 8,5 lần LN 2027E — trên trung vị (9,0) từ 2023; hiện 7,8. Phần thu nhập đều dùng P/E 7,5 · 9,0 · 11,0; phần đất định giá theo ha, không theo P/E."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    300,
+    450,
+    600
+   ],
+   "ck": 842
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    333,
+    598,
+    811
+   ],
+   "ck": 449
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1706,
+    1971,
+    2184
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "29/10/2026",
+   "loai": "hai",
+   "tieu": "Đã ra KQKD Q3/2026: lãi giảm, bàn giao ít",
+   "ct": "Doanh thu 2.076 tỷ (−28%), LN cổ đông 493 tỷ (−41%) — trên cơ sở cũ 450 tỷ, phần vượt nhờ lãi tiền gửi; lãi gộp ước chỉ ~15 ha bàn giao. Tồn kho 8,2 nghìn tỷ, cao nhất từ trước (chi phí KCN đang làm).",
+   "tac": [
+    "493 tỷ",
+    "so với cơ sở cũ 450; giá trị cơ sở gần như không đổi"
+   ],
+   "theo_doi": "ha bàn giao, LN cổ đông"
+  },
+  {
+   "khi": "Cuối 1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Cùng kỳ 449 tỷ. Cần ~976 tỷ LNTT Q4 để đạt kế hoạch; cơ sở 25 ha bàn giao, LNTT 2026E ~2,8 nghìn tỷ (95% kế hoạch).",
+   "tac": [
+    "≥ 598 tỷ",
+    "LN cổ đông Q4 khớp cơ sở; dưới 333 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "ha bàn giao, LN cổ đông"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Vinh Quang, Tân Phước 1 bắt đầu cho thuê",
+   "ct": "Ban lãnh đạo chờ ~30 ha doanh số Q4 từ 2 KCN mới; Tân Phước 1 nhắm giá thuê ~130 USD/m². Đất mới chuyển từ chờ sang đang bán.",
+   "tac": [
+    "±1,5 nghìn đ/cp",
+    "mỗi 1 tỷ đ/ha giá trị KCN mới"
+   ],
+   "theo_doi": "MOU, giá thuê KCN mới"
+  },
+  {
+   "khi": "12/2026",
+   "loai": "len",
+   "tieu": "Tạm ứng cổ tức 2026",
+   "ct": "12/2025 IDC tạm ứng 1.500 đ/cp; năm 2025 trả 3.000 đ/cp tiền + 10% cổ phiếu. Tiền ròng ~1,5 nghìn tỷ sau đợt 8/2026.",
+   "tac": [
+    "~1.500 đ/cp",
+    "nếu lặp lại đợt 12/2025 (chưa công bố)"
+   ],
+   "theo_doi": "nghị quyết HĐQT"
+  },
+  {
+   "khi": "Cuối 2026",
+   "loai": "len",
+   "tieu": "Chuyển niêm yết sang HOSE",
+   "ct": "Ban lãnh đạo cân nhắc chuyển từ HNX sang HOSE cuối 2026 (SHS 03/08): mở rộng nhóm nhà đầu tư tổ chức, thanh khoản.",
+   "tac": "",
+   "theo_doi": "hồ sơ niêm yết"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "KDC Hựu Thạnh mở bán, ghi nhận",
+   "ct": "Khu dân cư, nhà ở công nhân cạnh KCN Hựu Thạnh: chi phí dở dang 855 tỷ, hạ tầng từ 11/2025, mở bán Q4/2026, hạch toán từ 2027 (SHS, Shinhan).",
+   "tac": "",
+   "theo_doi": "doanh số bán"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Thuế Mục 301, xung đột Trung Đông",
+   "ct": "Mỹ áp thêm 12,5% thuế với hàng Việt Nam; Brent trên 100 USD/thùng (Shinhan 18/09). Khách thuê FDI dời quyết định → bàn giao chậm.",
+   "tac": [
+    "±0,9 nghìn đ/cp",
+    "mỗi ±20 ha/năm nhịp bán đất cũ; mỗi 10 ha 2027 ≈ 155 tỷ LN"
+   ],
+   "theo_doi": "MOU, FDI đăng ký mới"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Vốn cho 3 KCN mới",
+   "ct": "TMĐT ~14,4 nghìn tỷ (100%): Tân Phước 1 ~5.900, Vinh Quang 3.550, Phú Long ~4.960 tỷ. Nợ vay đã 5,5 nghìn tỷ; tiền gửi giảm thì lãi tiền gửi giảm theo.",
+   "tac": [
+    "−78 tỷ LNTT/năm",
+    "mỗi 1 nghìn tỷ tiền gửi chuyển sang đầu tư (lợi suất 9T/2026)"
+   ],
+   "theo_doi": "nợ vay, tiền gửi"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Ghi nhận doanh thu theo Thông tư 99/2025",
+   "ct": "Hợp đồng còn nghĩa vụ vận hành phải phân bổ doanh thu (NHSV). IDC vẫn ghi nhận một lần 917 tỷ 6T/2026 (BSC: đủ điều kiện). Phải phân bổ thì LN báo cáo giảm, dòng tiền không đổi.",
+   "tac": "",
+   "theo_doi": "thuyết minh BCTC"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Biên KCN mới thấp hơn",
+   "ct": "Đầu tư 16–22 tỷ/ha thương phẩm ở KCN mới, trong khi Hựu Thạnh có giá vốn đền bù thấp: biên gộp cho thuê có thể rời mức 65%.",
+   "tac": [
+    "±0,9 nghìn đ/cp",
+    "mỗi 5 điểm % biên gộp (LN 2027E ±112 tỷ)"
+   ],
+   "theo_doi": "biên gộp mảng KCN"
+  },
+  {
+   "khi": "H2/2026",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "El Nino và thủy điện",
+   "ct": "Hai nhà máy 114 MW tạo phần lớn lãi mảng điện; biên gộp mảng điện 6T/2026 còn 7,7% (8,8%). El Nino từ nửa cuối 2026 (BSC, NHSV).",
+   "tac": [
+    "±32 tỷ LN",
+    "mỗi ±40 tỷ lãi gộp điện"
+   ],
+   "theo_doi": "sản lượng thủy điện"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Quỹ đất KCN còn lại theo khu",
+   "kieu": "cot_chong",
+   "dv": "ha",
+   "so_le": 0,
+   "nhan": [
+    "H.Thạnh",
+    "Phú Mỹ",
+    "QV2, CN",
+    "T.Phước",
+    "V.Quang",
+    "P.Long"
+   ],
+   "ss": [
+    {
+     "ten": "Hiện hữu, sẵn sàng",
+     "v": [
+      223,
+      129,
+      77,
+      0,
+      0,
+      0
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Mới: hạ tầng, pháp lý",
+     "v": [
+      0,
+      0,
+      0,
+      363,
+      163,
+      301
+     ],
+     "mau": "c3"
+    }
+   ],
+   "y": "429 ha sẵn sàng (Hựu Thạnh hơn một nửa), trước ~27 ha giao Q2 và ~15 ha Q3 (ước); 827 ha ở 3 KCN mới — gần gấp đôi nhưng cần ~14,4 nghìn tỷ đầu tư. Phú Mỹ: Phú Mỹ 2 và mở rộng; QV2, CN: Quế Võ 2, Cầu Nghìn; T.Phước: Tân Phước 1.",
+   "ng": "KBSV 04/06/2026 (1Q2026, tổng diện tích, chưa trừ phần cổ đông khác) · TMĐT: SHS, Tạp chí Công Thương"
+  },
+  {
+   "ten": "Doanh thu theo mảng: 6T/2025 và 6T/2026",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Điện",
+    "Thuê đất",
+    "DV KCN",
+    "BOT",
+    "BĐS, khác"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2025",
+     "v": [
+      1738,
+      833,
+      250,
+      233,
+      503
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "6T/2026",
+     "v": [
+      1851,
+      1190,
+      295,
+      244,
+      176
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Thuê đất +43%: ghi nhận một lần 917 tỷ (+50%), phân bổ 273 tỷ. BĐS dân cư −85% vì Bắc Châu Giang đã giao xong; điện +6,5% nhưng biên gộp chỉ 7,7%.",
+   "ng": "SHS 03/08/2026 (BCTC hợp nhất 6T)"
+  },
+  {
+   "ten": "Lãi gộp và LN cổ đông theo quý",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      636,
+      551,
+      545,
+      1257,
+      707,
+      389,
+      849,
+      672
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "LN cổ đông",
+     "v": [
+      357,
+      343,
+      298,
+      842,
+      449,
+      271,
+      610,
+      493
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "LN đi theo nhịp bàn giao: Q3/2025 842 tỷ, Q1/2026 271, Q2/2026 610, Q3/2026 493 — không nên định giá bằng một quý hay một năm.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "Tiền gửi và nợ vay",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      2.9,
+      4.5,
+      5.2,
+      4.9,
+      6.4,
+      7.4,
+      7.6,
+      7.2,
+      7.0
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Nợ vay",
+     "v": [
+      2.7,
+      3.1,
+      3.4,
+      3.4,
+      4.1,
+      5.9,
+      5.7,
+      5.3,
+      5.5
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "Tiền ròng ~1,5 nghìn tỷ ngày 30/9/2026, sau khi trả 569 tỷ cổ tức 8/2026; nợ vay từ 2,7 lên 5,5 nghìn tỷ để làm KCN mới.",
+   "ng": "BCTC (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu hợp nhất",
+    "kh": 9474,
+    "th": 5832,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 2903,
+    "th": 1927,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
+   },
+   {
+    "ten": "Diện tích cho thuê (doanh số ký)",
+    "kh": 100,
+    "th": 54,
+    "ky": "8T",
+    "tg": 67,
+    "dv": "ha",
+    "ng": "ĐHĐCĐ 2026 · Stockbiz 2026"
+   }
+  ],
+  "y": "9T đạt 62% doanh thu, 66% LNTT; ban lãnh đạo vẫn nhắm ~2.900 tỷ LNTT nhờ ~30 ha từ Vinh Quang, Tân Phước 1 trong Q4. Mô hình cơ sở: LNTT 2026E ~2,8 nghìn tỷ (95% kế hoạch).",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "Cho thuê đất KCN — nguồn lãi chính",
+   "phu": "13 KCN, hơn 4.070 ha (SHS) · Hựu Thạnh, Phú Mỹ 2 và mở rộng, Cầu Nghìn, Quế Võ 2 còn đất; Tân Phước 1, Vinh Quang, Phú Long đang làm",
+   "so": [
+    [
+     "Đất sẵn sàng còn lại",
+     "429 ha",
+     "KBSV, 1Q2026, trước Q2"
+    ],
+    [
+     "KCN mới",
+     "827 ha",
+     "tổng diện tích thương phẩm"
+    ],
+    [
+     "Doanh thu chưa thực hiện",
+     "~5,7 nghìn tỷ",
+     "30/6/2026"
+    ],
+    [
+     "Giá thuê Hựu Thạnh",
+     "~148 USD/m²",
+     "SHS 03/08"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Hựu Thạnh (Tây Ninh, 395 ha thương phẩm, lấp đầy ~44%) là nguồn bàn giao chính; Phú Mỹ 2 và mở rộng (124–126 USD/m²) có tuyến ống khí và cảng thủy nội địa.",
+     "ng": "SHS 03/08"
+    },
+    {
+     "t": "Bổ sung ~19 ha nhà xưởng xây sẵn tại Hựu Thạnh; kế hoạch 100.429 m² sàn kho, xưởng mới năm 2026, mục tiêu 1 triệu m² dài hạn.",
+     "ng": "SHS 03/08 · ĐHĐCĐ 2026"
+    },
+    {
+     "t": "Q2/2026 chi phí xây dựng dở dang dài hạn giảm từ 6,9 xuống 0,6 nghìn tỷ, tồn kho tăng từ 1,3 lên 7,7 nghìn tỷ, tổng tài sản đi ngang: chi phí phát triển KCN được chuyển sang tồn kho, không phải hàng tồn mới. 30/9 tồn kho 8,2 nghìn tỷ: tiếp tục rót vốn làm KCN.",
+     "ng": "BCTC (VNDirect)"
+    }
+   ]
+  },
+  {
+   "ten": "Điện — phân phối trong KCN và hai thủy điện",
+   "phu": "Srok Phu Miêng 51 MW, Đắk Mi 3 63 MW · trạm 110/22 kV Tuy Hạ, Nhơn Trạch 5; đang làm Hựu Thạnh, Tân Phước 1",
+   "so": [
+    [
+     "Doanh thu 6T/2026",
+     "1.851 tỷ",
+     "+6,5%"
+    ],
+    [
+     "Biên gộp 6T/2026",
+     "7,7%",
+     "6T/2025: 8,8%"
+    ],
+    [
+     "Lãi gộp 2025",
+     "451 tỷ",
+     "2024: 319"
+    ],
+    [
+     "Phân phối 2026F",
+     "~1,8 tỷ kWh",
+     "NHSV, +6%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Phân phối qua trạm 110/22 kV có biên mỏng (giá vốn đầu vào +7,8% 6T/2026); thủy điện tạo phần lớn lãi của mảng năng lượng.",
+     "ng": "SHS 03/08 · NHSV 19/06"
+    },
+    {
+     "t": "Điện mặt trời áp mái thí điểm ~10 MWp 2026–2027 ở Nhơn Trạch 1, Nhơn Trạch V, hướng tới 100 MWp năm 2030 theo cơ chế mua bán điện trực tiếp.",
+     "ng": "Shinhan 18/09"
+    }
+   ]
+  },
+  {
+   "ten": "BOT, dịch vụ KCN, BĐS dân cư",
+   "phu": "BOT An Sương – An Lạc (QL1A), QL51 · nước sạch, xử lý nước thải, quản lý KCN · quỹ đất ở ~78,7 ha",
+   "so": [
+    [
+     "BOT 6T/2026",
+     "244 tỷ",
+     "lãi gộp 106 tỷ"
+    ],
+    [
+     "Dịch vụ KCN 6T/2026",
+     "295 tỷ",
+     "+18%"
+    ],
+    [
+     "KDC Hựu Thạnh",
+     "855 tỷ",
+     "chi phí dở dang"
+    ],
+    [
+     "BĐS 6T/2026",
+     "40 tỷ",
+     "−85%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "BOT An Sương – An Lạc thu phí đến khoảng Q4/2032; IDC đang quyết toán để chốt thời điểm kết thúc — nguồn thu có hạn.",
+     "ng": "SHS 03/08"
+    },
+    {
+     "t": "CTCP VTA Global Port (IDC 51%): góp 306 tỷ bằng tài sản gắn cảng Mỹ Xuân A, đã nhận đặt cọc 350 tỷ từ đối tác.",
+     "ng": "SHS 03/08"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn, cổ tức, cổ phiếu",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026",
+   "so": [
+    [
+     "Tiền + đầu tư ngắn hạn",
+     "7,0 nghìn tỷ",
+     ""
+    ],
+    [
+     "Nợ vay",
+     "5,5 nghìn tỷ",
+     ""
+    ],
+    [
+     "Vốn chủ cổ đông",
+     "7,3 nghìn tỷ",
+     "BVPS 17.382 đ"
+    ],
+    [
+     "Cổ tức 2025",
+     "3.000 đ/cp",
+     "+10% cổ phiếu"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Cổ đông lớn: Tập đoàn SSG 22,5%, Bách Việt 11,9%; sở hữu nước ngoài ~15%.",
+     "ng": "Shinhan 18/09 · SHS 03/08"
+    },
+    {
+     "t": "Tân Phước 1 có khoản tài trợ 4.000 tỷ từ Vietcombank; Phú Long đã hoàn tất thủ tục vay và thế chấp tài sản dự án.",
+     "ng": "SHS 03/08"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "FDI đăng ký 8T/2026 40,63 tỷ USD (+55,4%), giải ngân 17,25 tỷ USD (+12%, cao nhất 5 năm).",
+     "h": 1,
+     "ng": "Shinhan 18/09 (Cục Thống kê)"
+    },
+    {
+     "t": "Mỹ áp thuế bổ sung 12,5% với Việt Nam theo điều tra Mục 301; chi phí logistics tăng khiến FDI thận trọng ngắn hạn.",
+     "h": -1,
+     "ng": "Shinhan 18/09"
+    },
+    {
+     "t": "Xung đột Mỹ – Iran, eo Hormuz bị phong tỏa: Brent trên 100 USD/thùng giữa tháng 9/2026.",
+     "h": -1,
+     "ng": "Shinhan 18/09"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "FDI vào các tỉnh phía Nam còn chậm; doanh nghiệp KCN dời bàn giao sang nửa cuối năm.",
+     "h": -1,
+     "ng": "BSC 11/06 · KBSV 04/06"
+    },
+    {
+     "t": "Vành đai 3, 4 và cao tốc Bến Lức – Long Thành dần khép kín, kéo nhu cầu về Hựu Thạnh.",
+     "h": 1,
+     "ng": "SHS 03/08"
+    },
+    {
+     "t": "Thông tư 99/2025/TT-BTC: cho thuê đất còn nghĩa vụ vận hành phải ghi nhận phân bổ.",
+     "h": 0,
+     "ng": "NHSV 19/06 · BSC 11/06"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Quỹ đất thương phẩm còn lại ~1.340 ha (KBSV), trong đó 827 ha ở 3 KCN mới đã có chủ trương.",
+     "h": 1,
+     "ng": "KBSV 04/06"
+    },
+    {
+     "t": "Điện, dịch vụ KCN, BOT, thuê đất phân bổ tạo ~0,6 nghìn tỷ LN/năm (2027E) — khoảng 50% cổ tức tiền 30% mệnh giá; phần còn lại dựa vào bán đất.",
+     "h": 0,
+     "ng": "mô hình · SHS 03/08"
+    },
+    {
+     "t": "P/E 4 quý 7,8 lần (giá 30/10), thấp nhất trong 8 doanh nghiệp KCN vốn hóa lớn.",
+     "h": 0,
+     "ng": "BCTC VNDirect"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-09-18",
+   "kn": "MUA",
+   "tp": 44100,
+   "ln26": 2001,
+   "ln27": 2103,
+   "pp": "RNAV (WACC 12,7%)",
+   "y": "LN dự phóng thận trọng (2026F +4%, 2027F +5%) nhưng RNAV cao: KCN 13,5 nghìn tỷ, điện 4,1 nghìn tỷ; dự kiến cho thuê 105 ha năm 2026.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/idc_mua_gia_mt_vnd_44_100_37_khu_cong_nghiep_xanh_don_song_fdi.pdf"
+  },
+  {
+   "ctck": "SHS",
+   "ngay": "2026-08-03",
+   "kn": "TĂNG TỶ TRỌNG",
+   "tp": 46500,
+   "ln26": null,
+   "ln27": null,
+   "pp": "P/E forward 2026 7,6 lần (trung vị 3 năm)",
+   "y": "Q2 bùng nổ nhờ điểm rơi bàn giao ở dự án giá vốn thấp (Hựu Thạnh, Phú Mỹ 2 MR); LNST 2026F 3.101 tỷ (gồm cổ đông thiểu số) — cao nhất nhóm.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/idc_cap_nhat_kqkd_quy_2_2026.pdf"
+  },
+  {
+   "ctck": "NHSV",
+   "ngay": "2026-06-19",
+   "kn": "MUA",
+   "tp": 60000,
+   "ln26": 2330,
+   "ln27": 2500,
+   "pp": "P/E và SOTP",
+   "y": "Định giá rẻ, cổ tức cao; lưu ý Thông tư 99/2025 buộc phân bổ doanh thu nếu còn nghĩa vụ vận hành; doanh thu chưa thực hiện 6.199 tỷ (Q1/2026).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/inh_gia_hap_dan_quy_at_KCN_thuong_pham_tiep_tuc_gia_tang_manh_me.pdf"
+  },
+  {
+   "ctck": "BSC",
+   "ngay": "2026-06-11",
+   "kn": "THEO DÕI",
+   "tp": 47800,
+   "ln26": 1981,
+   "ln27": null,
+   "pp": "DCF từng KCN + P/E 7 (điện, BOT, khác)",
+   "y": "Thận trọng: 2026 đi ngang vì FDI phía Nam chậm, bàn giao 90 ha (2025: 80); P/B 2 lần ≈ −1 độ lệch chuẩn 5 năm.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/Cho_oi_tin_hieu_hoi_phuc_ro_ret_hon.pdf"
+  },
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-06-04",
+   "kn": "MUA",
+   "tp": 56400,
+   "ln26": 2118,
+   "ln27": 2501,
+   "pp": "RNAV (DCF dự án, so sánh quỹ đất)",
+   "y": "Bàn giao 90/105 ha (2026/2027), giá thuê +3–5%/năm; kịch bản 51.000–58.900 đ/cp trước điều chỉnh cổ tức 7/2026.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/tct_idico_bao_cao_cap_nhat_1q2026.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. Ngày, giá mục tiêu theo bản PDF; báo cáo ra trước 23/07/2026 (KBSV, BSC, NHSV) được trang chia 1,1 (cổ phiếu 10%) và trừ cổ tức 1.500 đ/cp cũ. BSC ghi khuyến nghị THEO DÕI (Simplize: TRUNG LẬP).",
+ "nguon": [
+  {
+   "ten": "Vietstock — Tồn kho IDICO lập kỷ lục, lợi nhuận quý 3 giảm 41% (DT 2.076 tỷ, 9T LN 1.373 tỷ)",
+   "ngay": "29/10/2026",
+   "link": "https://vietstock.vn/2026/10/ton-kho-idico-lap-ky-luc-loi-nhuan-quy-3-giam-41-737-1508462.htm"
+  },
+  {
+   "ten": "Shinhan — Khu công nghiệp xanh đón sóng FDI",
+   "ngay": "18/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/idc_mua_gia_mt_vnd_44_100_37_khu_cong_nghiep_xanh_don_song_fdi.pdf"
+  },
+  {
+   "ten": "SHS — Cập nhật KQKD quý 2/2026",
+   "ngay": "03/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/idc_cap_nhat_kqkd_quy_2_2026.pdf"
+  },
+  {
+   "ten": "NHSV — Định giá hấp dẫn, quỹ đất KCN thương phẩm tiếp tục gia tăng",
+   "ngay": "19/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/inh_gia_hap_dan_quy_at_KCN_thuong_pham_tiep_tuc_gia_tang_manh_me.pdf"
+  },
+  {
+   "ten": "BSC — Chờ đợi tín hiệu hồi phục rõ rệt hơn",
+   "ngay": "11/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/Cho_oi_tin_hieu_hoi_phuc_ro_ret_hon.pdf"
+  },
+  {
+   "ten": "Thương hiệu & Công luận — IDICO lập đỉnh tài sản hơn 23.200 tỷ: XDCB dở dang Hựu Thạnh 2.971, Tân Phước 1 934, Vinh Quang 739 tỷ",
+   "ngay": "2026",
+   "link": "https://thuonghieucongluan.com.vn/idico-lap-dinh-tai-san-hon-23-200-ty-dong-no-vay-tang-manh-trong-giai-doan-mo-rong-khu-cong-nghiep-a302455.html"
+  },
+  {
+   "ten": "KBSV — Báo cáo cập nhật 1Q2026",
+   "ngay": "04/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/tct_idico_bao_cao_cap_nhat_1q2026.pdf"
+  },
+  {
+   "ten": "Doanh nhân — cổ tức 2025: 15% tiền, 10% cổ phiếu (ĐKCC 24/07/2026)",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/co-dong-cua-idico-idc-sap-nhan-duoc-qua-co-tuc-bang-tien-mat-va-co-phieu-voi-tong-ty-le-25.html"
+  },
+  {
+   "ten": "DNSE — IDICO chốt ngày trả cổ tức tiền và cổ phiếu tổng 25%",
+   "ngay": "07/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/idico-chot-ngay-tra-co-tuc-bang-tien-va-co-phieu-tong-ty-le-25-35240773"
+  },
+  {
+   "ten": "FilingReader — tạm ứng cổ tức đợt 1/2025 (ĐKCC 04/12/2025)",
+   "ngay": "21/11/2025",
+   "link": "https://filingreader.com/news-wire/hanoi/2025-11-21/idico-announces-first-advance-dividend-payment-for-2025"
+  },
+  {
+   "ten": "DNSE — vốn điều lệ hơn 4.100 tỷ sau trả cổ tức cổ phiếu",
+   "ngay": "2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/idico-tang-von-dieu-le-len-hon-4100-ty-dong-sau-tra-co-tuc-35263163"
+  },
+  {
+   "ten": "Doanh nhân — ĐHĐCĐ 2026: doanh thu 9.474 tỷ, LNTT 2.903 tỷ, 100 ha",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/idico-idc-dat-ke-hoach-loi-nhuan-di-ngang-nam-2026-day-manh-dau-tu-khu-cong-nghiep-va-mo-rong-nha-xuong.html"
+  },
+  {
+   "ten": "Nhà Đầu Tư — Q2/2026, doanh thu chưa thực hiện hơn 5.700 tỷ",
+   "ngay": "08/2026",
+   "link": "https://nhadautu.vn/loi-nhuan-idico-quy-ii-tang-toc-co-hon-5700-ty-cua-de-danh-d106727.html"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — LNST hợp nhất Q2/2026 663 tỷ",
+   "ngay": "08/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/idico-idc-bao-lai-hop-nhat-quy-ii2026-tang-59-dat-663-ty-dong-post395174.html"
+  },
+  {
+   "ten": "Stockbiz — doanh số 8T ~54 ha, ~30 ha Q4 từ Vinh Quang, Tân Phước 1",
+   "ngay": "2026",
+   "link": "https://stockbiz.vn/tin-tuc/mot-doanh-nghiep-kcn-sap-dua-2-du-an-moi-vao-khai-thac-loi-nhuan-rong-ca-nam-co-the-dat-2000-ty-dong/41640668"
+  },
+  {
+   "ten": "Tạp chí Công Thương — KCN Tân Phước 1 470 ha, vốn ~5.900 tỷ",
+   "ngay": "2025",
+   "link": "https://tapchicongthuong.vn/tong-cong-ty-idico--idc--se-trien-khai-khu-cong-nghiep-470-ha-trong-nam-nay-119259.htm"
+  }
+ ]
+}

@@ -1,0 +1,1552 @@
+{
+ "v": 2,
+ "ma": "DIG",
+ "ten": "Tổng Công ty Cổ phần Đầu tư Phát triển Xây dựng (DIC Corp)",
+ "nganh": "Bất động sản: khu đô thị, quỹ đất, chuyển nhượng dự án",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026, hoặc khi có thuyết minh doanh thu Q3 (Đại Phước 15,3 ha) và nghị quyết thoái vốn Phú Mỹ ATA",
+ "cp_trieu": 844.2,
+ "cp_ng": "Vốn điều lệ 8.441,9 tỷ (BCTC Q3/2026) = 7.964,3 tỷ sau chào bán 150 triệu cp giá 12.000 đ (Q4/2025) + 47,8 triệu cp cổ tức 6% bằng cổ phiếu (GDKHQ 08/09/2026): 844,2 triệu cp (Doanh nhân, Mekong ASEAN); khớp vốn hóa bảng giá VNDirect.",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Rẻ theo sổ sách, không theo lợi nhuận: Q3 lãi 77 tỷ (−64%) vẫn nhờ bán đất, lõi còn lỗ",
+  "dk": "up_tren:-13",
+  "khac": "Đã trả đủ sổ sách cho ROE lõi gần 0: Q3 lãi 77 tỷ (−64%) vẫn nhờ bán đất, lõi còn lỗ"
+ },
+ "dong_mo": "LN 4 quý 632 tỷ, 422 tỷ trong đó là quý bán Đại Phước (Q4/2025); 9T/2026 LN cổ đông 210 tỷ, mới 39% kế hoạch LNTT. Ngoài chuyển nhượng, lãi gộp lõi 9T ~127 tỷ chưa đủ bán hàng + quản lý 165 tỷ. Đổi lại sổ sách vững: nợ vay 1,3 nghìn tỷ, tiền + tiền gửi 5,4 nghìn tỷ. P/B 0,85 lần vốn chủ 30/6/2027E: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "77 tỷ",
+   "nhan": "LN cổ đông Q3/2026, −64% so với cùng kỳ",
+   "tieu": "Q3 xác nhận: lãi vẫn đến từ bán đất, chưa từ kinh doanh",
+   "t": "Doanh thu Q3 761 tỷ (−43%), lãi gộp 160 tỷ, biên 21% (Q2 7,0%) — khớp với ghi nhận Đại Phước 15,3 ha (~520 tỷ, biên 22%; BCTC chưa thuyết minh). Tách phần này, lãi gộp lõi 9T ~127 tỷ < bán hàng + quản lý 165 tỷ. Chi phí tài chính Q3 78 tỷ (lãi vay 36) vượt thu nhập tài chính 71 tỷ. 95% LN 2025 cũng từ hai quý bán Lam Hạ, Đại Phước: P/E 4 quý ~12,8 là giá của bán đất.",
+   "ng": "BCTC Q3/2026 (VNDirect) · Tin nhanh chứng khoán 30/10/2026 · Nhà Đầu Tư, VietnamFinance"
+  },
+  {
+   "so": "1,3×",
+   "nhan": "giá bán buôn quỹ đất so với giá vốn (2025)",
+   "tieu": "Sổ sách không ảo; nợ vay thuộc nhóm thấp nhất ngành",
+   "t": "Biên gộp 22,8% của hai thương vụ 2025 nghĩa là đất bán buôn thu ~1,3 lần giá vốn trên sổ. Nợ vay từ 3,8 nghìn tỷ (cuối 2024) còn 1,3 (30/9/2026, 0,12 lần vốn chủ, thấp nhất 13 mã cùng ngành) nhờ chào bán 1,8 nghìn tỷ và tiền bán dự án. Tiền + tiền gửi 5,4 nghìn tỷ (tiền mặt chỉ 0,3); nợ ngắn hạn ngoài vay 8,3 nghìn tỷ (Q2 +2,8, Q3 −0,5) chưa rõ bản chất; phải thu ngắn hạn 5,9 nghìn tỷ (58% vốn chủ).",
+   "ng": "BCTC Q3/2026 (VNDirect) · bảng cùng ngành 30/10/2026"
+  },
+  {
+   "so": "4,4",
+   "nhan": "nghìn tỷ vốn đầu tư kế hoạch 2026",
+   "tieu": "Tiền bán đất quay vào quỹ đất; lãi lõi chờ Nam Vĩnh Yên",
+   "t": "ĐHĐCĐ 2026: doanh thu 3.000 tỷ (−36%), LNTT 600 tỷ (−27%); đầu tư Nam Vĩnh Yên 1.279, Long Tân 714, CSJ 686 tỷ; khởi công Bắc Vũng Tàu Q3, Long Tân Q4/2026; thoái vốn Phú Mỹ ATA. 9T đạt 50% doanh thu, 39% LNTT. Cơ sở (Q4 bán hàng lõi 500 tỷ biên 13%, không chuyển nhượng mới): LNTT 2026E 240 tỷ (40% kế hoạch); LN 2027E 200 tỷ, ROE ~2,0%.",
+   "ng": "ĐHĐCĐ 24/04/2026 (Doanh nhân, Mekong ASEAN, VietTimes) · BCTC Q3/2026 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 0,85 trên sổ sách 6/2027: {up_so} so với giá hiện tại",
+   "t": "0,85 ≈ trung vị P/B DIG 2015–2017 (0,84, ROE 0,4–3,2%, ngang dự phóng 2026–2027), dưới DXG, KDH, KBC (0,89–0,96) vì quản trị: từ 6/2026 ~28,5 triệu cp của gia đình Chủ tịch bị bán giải chấp, ông Nguyễn Hùng Cường còn 3,41%. Giá −52% trong 12 tháng, dưới giá chào bán 12.000 đ (Q4/2025). Xấu 7,7 (P/B 0,65, lõi lỗ), tốt 12,6 (P/B 1,0, Nam Vĩnh Yên bán tốt).",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect, giá cuối tháng · bảng cùng ngành 30/10/2026 · Doanh nhân 8/2026"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   665,
+   214,
+   200
+  ],
+  "ln_truoc": 114,
+  "eps": [
+   788,
+   253,
+   237
+  ],
+  "bv": [
+   11814,
+   12023,
+   12260
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     4.72,
+     2.0,
+     2.5
+    ],
+    "d": 2
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     7.5,
+     2.1,
+     2.0
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN, vốn chủ 2024–2025: BCTC (VNDirect). EPS, BVPS theo 844,2 triệu cp (sau cổ tức 6% bằng cổ phiếu tháng 9/2026). Không chia cổ tức tiền mặt."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Chuyển nhượng dự án (lãi gộp)",
+    "mau": "c1",
+    "v": [
+     980,
+     114,
+     110
+    ]
+   },
+   {
+    "ten": "Kinh doanh lõi (lãi gộp − bán hàng − quản lý)",
+    "mau": "c2",
+    "v": [
+     -116,
+     -33,
+     120
+    ]
+   },
+   {
+    "ten": "Tài chính ròng, liên kết & khác",
+    "mau": "c4",
+    "v": [
+     -17,
+     159,
+     20
+    ]
+   }
+  ],
+  "nhan": "Chuyển nhượng dự án (lãi gộp)",
+  "ng": "2025: chuyển nhượng = lãi gộp Q3–Q4/2025 (Lam Hạ, Đại Phước); lõi = lãi gộp còn lại − bán hàng − quản lý cả năm. 2026E: Đại Phước 15,3 ha; 2027E: chuyển nhượng/thoái vốn khác (mô hình)."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với 12 mã bất động sản vốn hóa lớn nhất",
+  "phu": "giá hôm nay, vốn chủ cổ đông 30/9/2026, 844,2 triệu cp",
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 30/10)",
+  "nhom": "12 mã cùng ngành vốn hóa lớn nhất",
+  "kv": [
+   [
+    "VIC",
+    8.78
+   ],
+   [
+    "VHM",
+    1.75
+   ],
+   [
+    "VRE",
+    1.08
+   ],
+   [
+    "BCM",
+    1.75
+   ],
+   [
+    "NVL",
+    0.69
+   ],
+   [
+    "KBC",
+    0.96
+   ],
+   [
+    "VGC",
+    2.14
+   ],
+   [
+    "VPI",
+    3.3
+   ],
+   [
+    "KDH",
+    0.89
+   ],
+   [
+    "SJS",
+    3.33
+   ],
+   [
+    "IDC",
+    1.94
+   ],
+   [
+    "DXG",
+    0.89
+   ]
+  ],
+  "tv": 1.75,
+  "moi_cp": 12018,
+  "max": 5,
+  "y": "Nhóm chủ đầu tư ROE thấp DXG (0,8%), KDH (9,1%), KBC (6,9%) được trả 0,89–0,96 lần; NVL (nợ vay 1,5 lần vốn chủ) 0,69. DIG nợ vay chỉ 0,12 lần vốn chủ nhưng ROE lõi gần 0; nhóm trên 1,8 lần là khu công nghiệp (BCM, VGC, IDC) hoặc ROE cao (VHM, SJS).",
+  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất (Q3/2026, VPI Q2), giá 30/10/2026; DIG: vốn chủ 30/9/2026 trên 844,2 triệu cp"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: chuyển nhượng dự án + kinh doanh lõi",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Doanh thu và lãi gộp"
+   },
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     4716,
+     1998,
+     2500
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "– chuyển nhượng dự án (tỷ)",
+    "v": [
+     4291,
+     520,
+     500
+    ]
+   },
+   {
+    "ten": "– bán hàng lõi, dịch vụ (tỷ)",
+    "v": [
+     425,
+     1478,
+     2000
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp lõi (%)",
+    "v": [
+     34.6,
+     13.0,
+     18.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Lãi gộp (tỷ)",
+    "v": [
+     1127,
+     306,
+     470
+    ]
+   },
+   {
+    "ten": "Chi phí bán hàng + quản lý (tỷ)",
+    "v": [
+     263,
+     225,
+     240
+    ]
+   },
+   {
+    "nhom": "Lợi nhuận"
+   },
+   {
+    "ten": "Tài chính ròng, liên kết & khác (tỷ)",
+    "v": [
+     -17,
+     159,
+     20
+    ]
+   },
+   {
+    "ten": "LN trước thuế (tỷ)",
+    "v": [
+     847,
+     240,
+     250
+    ],
+    "dam": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     665,
+     214,
+     200
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     788,
+     253,
+     237
+    ],
+    "eps": 1
+   },
+   {
+    "nhom": "Vốn"
+   },
+   {
+    "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
+    "v": [
+     9.97,
+     10.15,
+     10.35
+    ],
+    "d": 2
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     11814,
+     12023,
+     12260
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     7.5,
+     2.1,
+     2.0
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "2025: chuyển nhượng = doanh thu, lãi gộp Q3–Q4/2025 (Lam Hạ, Đại Phước); lõi = phần còn lại. 2026E = 9T thực tế (tách ước Đại Phước 15,3 ha ~520 tỷ, biên 22% trong Q3 — BCTC chưa thuyết minh) + Q4 bán hàng lõi; thuế 20% khi LNTT dương, thiểu số ~0. Không chia cổ tức tiền mặt."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   214
+  ],
+  "cuoi": [
+   "2027E",
+   200
+  ],
+  "buoc": [
+   [
+    "Chuyển nhượng dự án",
+    -4
+   ],
+   [
+    "Kinh doanh lõi",
+    153
+   ],
+   [
+    "Tài chính ròng & khác",
+    -139
+   ],
+   [
+    "Thuế, thiểu số",
+    -24
+   ]
+  ],
+  "y": "2026E được đỡ bởi thu nhập tài chính đột biến Q2 (164 tỷ) và Đại Phước 15,3 ha (Q3); 2027E dựa vào bán hàng lõi 2.000 tỷ biên 18% (Nam Vĩnh Yên) và 500 tỷ chuyển nhượng — lõi chuyển từ lỗ sang lãi nhỏ.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Chuyển nhượng dự án: 2026 · 2027 (tỷ)",
+   "v": [
+    "520 · 0",
+    "520 · 500",
+    "520 · 1.000"
+   ],
+   "ly_do": "2026: Đại Phước 15,3 ha ước nằm trong Q3 (153.413 m² × 3,4 triệu/m² giá phân khu 7.1; biên gộp Q3 lên 21%), Q4 không có thương vụ mới; 2027: thoái vốn Phú Mỹ ATA. Biên gộp 22%"
+  },
+  {
+   "ten": "Doanh thu · biên gộp lõi Q4/2026",
+   "v": [
+    "200 · 6%",
+    "500 · 13%",
+    "1.200 · 20%"
+   ],
+   "ly_do": "Lõi 9T/2026 ~978 tỷ, biên ~13% (ước tách; Q2 7,0%); ĐHĐCĐ: chung cư A2 ~1.700, Nam Vĩnh Yên ~1.300, Vị Thanh ~300 tỷ cả năm"
+  },
+  {
+   "ten": "Doanh thu · biên gộp lõi 2027",
+   "v": [
+    "1.000 · 14%",
+    "2.000 · 18%",
+    "3.000 · 24%"
+   ],
+   "ly_do": "Doanh thu 2023–2024: 1.028–1.114 tỷ, biên gộp ~23%; Nam Vĩnh Yên 8–10 nghìn tỷ nếu bán hết (Chủ tịch, ĐHĐCĐ 2026)"
+  },
+  {
+   "ten": "Bán hàng + quản lý: Q4/2026 · 2027",
+   "v": [
+    "65 · 250",
+    "60 · 240",
+    "55 · 230"
+   ],
+   "ly_do": "2025: 263 tỷ (Q4: 89); 9T/2026: 165 tỷ"
+  },
+  {
+   "ten": "Tài chính ròng & khác: Q4/2026 · 2027",
+   "v": [
+    "−30 · −60",
+    "0 · +20",
+    "+40 · +100"
+   ],
+   "ly_do": "9T/2026 +158 (Q2 thu nhập tài chính đột biến 164 tỷ; Q3 -14: chi phí tài chính 78, lãi vay 36). Đầu tư 4,4 nghìn tỷ/năm hút tiền gửi"
+  },
+  {
+   "ten": "Thuế · thiểu số",
+   "v": [
+    "20% · ~0",
+    "20% · ~0",
+    "20% · ~0"
+   ],
+   "ly_do": "Thuế khi LNTT dương; 9T/2026 LN cổ đông 210 > LNST 203 tỷ (thiểu số lỗ), vốn chủ thiểu số 105 tỷ"
+  },
+  {
+   "ten": "P/B trên vốn chủ 30/6/2027E",
+   "v": [
+    "0,65",
+    "0,85",
+    "1,00"
+   ],
+   "ly_do": "DIG từ 2015: đáy 0,59 (3/2016), thấp 10% 0,77, thấp 25% 0,98; 2015–2017 (ROE 0–3%) trung vị 0,84; DXG, KDH, KBC 0,89–0,96 (giá 30/10)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 127,
+   "ln27": -170,
+   "gia": 7.7,
+   "mo_ta": "Q4 bán hàng lõi 200 tỷ biên 6%; 2027 doanh thu lõi 1.000 tỷ, lỗ 170 tỷ; P/B 0,65 (bán giải chấp kéo dài)"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 214,
+   "ln27": 200,
+   "gia": 10.3,
+   "mo_ta": "Q4 lõi 500 tỷ biên 13%, không chuyển nhượng mới; 2027 doanh thu lõi 2.000 tỷ biên 18% + 500 tỷ chuyển nhượng; P/B 0,85"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 390,
+   "ln27": 648,
+   "gia": 12.6,
+   "mo_ta": "Q4 bàn giao chung cư A2, Nam Vĩnh Yên 1.200 tỷ biên 20%; 2027 Nam Vĩnh Yên bán tốt (3.000 tỷ, biên 24%), thoái vốn 1.000 tỷ; P/B 1,00"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ cổ đông 30/6/2027E",
+  "ck": 0,
+  "cp": 844.2,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông",
+    "mau": "c1",
+    "sh": 1,
+    "x": [
+     9986,
+     10240,
+     10617
+    ],
+    "boi": [
+     0.65,
+     0.85,
+     1.0
+    ],
+    "x_ten": "Vốn chủ cổ đông 30/6/2027E",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "gt": [
+     6491,
+     8704,
+     10617
+    ]
+   }
+  ],
+  "von": [
+   6491,
+   8704,
+   10617
+  ],
+  "gia": [
+   7.7,
+   10.3,
+   12.6
+  ]
+ },
+ "nhay": [
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.2
+  ],
+  [
+   "Trích lập 10% phải thu ngắn hạn (5,9 nghìn tỷ)",
+   470,
+   0.5
+  ],
+  [
+   "Chuyển nhượng dự án ±1.000 tỷ đến 6/2027 (biên gộp 22%)",
+   176,
+   0.2
+  ],
+  [
+   "LN cổ đông Q4/2026 ±100 tỷ",
+   100,
+   0.1
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   0.97,
+   0.98,
+   0.89,
+   0.91,
+   0.85,
+   0.89,
+   0.89,
+   0.79,
+   0.9,
+   0.9,
+   0.83,
+   0.74,
+   0.66,
+   0.64,
+   0.59,
+   0.71,
+   0.78,
+   0.73,
+   0.77,
+   0.69,
+   0.63,
+   0.67,
+   0.69,
+   0.67,
+   0.68,
+   0.74,
+   0.75,
+   0.92,
+   1.12,
+   1.37,
+   1.32,
+   1.36,
+   1.39,
+   1.38,
+   1.72,
+   1.78,
+   1.95,
+   2.1,
+   2.27,
+   1.99,
+   1.58,
+   1.5,
+   1.35,
+   1.44,
+   1.47,
+   1.17,
+   1.35,
+   1.34,
+   1.35,
+   1.32,
+   1.35,
+   1.35,
+   1.18,
+   1.12,
+   1.09,
+   1.2,
+   1.21,
+   1.12,
+   1.11,
+   1.17,
+   1.02,
+   1.0,
+   0.82,
+   0.9,
+   0.97,
+   0.98,
+   0.98,
+   1.05,
+   1.23,
+   1.55,
+   1.77,
+   2.19,
+   2.12,
+   2.21,
+   2.05,
+   1.99,
+   2.35,
+   2.21,
+   2.21,
+   2.99,
+   2.65,
+   4.36,
+   5.76,
+   8.14,
+   6.19,
+   5.83,
+   6.27,
+   4.41,
+   4.05,
+   2.37,
+   3.13,
+   3.07,
+   2.4,
+   1.43,
+   1.32,
+   1.19,
+   1.46,
+   1.09,
+   1.09,
+   1.51,
+   1.71,
+   1.69,
+   2.08,
+   2.29,
+   2.01,
+   1.62,
+   1.97,
+   2.14,
+   2.17,
+   2.16,
+   2.55,
+   2.2,
+   2.25,
+   2.15,
+   1.98,
+   1.85,
+   1.85,
+   1.64,
+   1.6,
+   1.49,
+   1.4,
+   1.56,
+   1.55,
+   1.15,
+   1.34,
+   1.48,
+   1.81,
+   1.93,
+   1.93,
+   1.71,
+   1.68,
+   1.36,
+   1.32,
+   1.19,
+   1.14,
+   1.17,
+   1.03,
+   0.99,
+   0.8,
+   0.9,
+   0.8,
+   0.8
+  ],
+  "p10": 0.77,
+  "p25": 0.98,
+  "tv": 1.35,
+  "thap": [
+   "2016-03",
+   0.59
+  ],
+  "nay": [
+   "2026-10",
+   0.8
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,65 · 0,85 · 1,00 trên vốn chủ 30/6/2027E: giữa đáy 3/2016 (0,59) và thấp 10% (0,77) · ≈ trung vị 2015–2017 (0,84, ROE 0–3%) · ≈ thấp 25% (0,98). 2018–2019 (ROE 11–12%) trung vị 1,35. Từ 9/2026 tính trên 844,2 triệu cp."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -65,
+    93,
+    196
+   ],
+   "ck": 211
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -83,
+    4,
+    180
+   ],
+   "ck": 422
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    127,
+    214,
+    390
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "30/10/2026 (đã ra)",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026: LN cổ đông 77 tỷ (−64%)",
+   "ct": "Thấp hơn cơ sở cũ (93 tỷ) 17%. Lãi gộp 160 tỷ đúng mô hình; chênh ở tài chính & liên kết -14 tỷ (mô hình +15): chi phí tài chính 78 tỷ, liên kết lỗ 8. Người mua trả trước -436 tỷ trong quý.",
+   "tac": [
+    "-32 tỷ",
+    "LN cổ đông 2026E cơ sở so với bản 20/10 (246 tỷ)"
+   ],
+   "theo_doi": "thuyết minh doanh thu, chi phí tài chính Q3"
+  },
+  {
+   "khi": "Q3/2026",
+   "loai": "len",
+   "tieu": "Đại Phước 15,3 ha: ước đã ghi nhận ở Q3",
+   "ct": "NQ HĐQT 31/7/2026: phân khu 8 (~13,4 ha) cho DCP Châu Á, 1,9 ha phân khu 1–3 cho Việt Nét; chưa công bố giá. Biên gộp Q3 21% (Q2 7,0%) khớp ~520 tỷ ở giá phân khu 7.1; chưa ghi nhận thì cộng vào Q4.",
+   "tac": [
+    "+92 tỷ LN",
+    "nếu chưa nằm trong Q3 (520 tỷ, biên gộp 22%)"
+   ],
+   "theo_doi": "thuyết minh doanh thu Q3"
+  },
+  {
+   "khi": "Q4/2026 → 1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4 và cả năm 2026",
+   "ct": "Cơ sở Q4 LN 4 tỷ (cùng kỳ 422 tỷ nhờ Đại Phước), cả năm 214 tỷ, LNTT 240 (40% kế hoạch). Đạt kế hoạch 600 tỷ LNTT cần ~365 tỷ trong Q4 — chỉ có thể nếu bàn giao chung cư A2 hoặc thoái vốn Phú Mỹ ATA.",
+   "tac": [
+    "-83 → 180 tỷ",
+    "LN cổ đông Q4 xấu → tốt"
+   ],
+   "theo_doi": "doanh thu bàn giao, chuyển nhượng"
+  },
+  {
+   "khi": "4/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: kế hoạch lợi nhuận, cổ tức",
+   "ct": "Kế hoạch 2027 cho biết Nam Vĩnh Yên, chung cư A2 bàn giao bao nhiêu và Long Tân, Bắc Vũng Tàu cần thêm bao nhiêu vốn; cổ tức 2025 đã trả bằng cổ phiếu 6% — đợt pha loãng tiếp theo là rủi ro với giá.",
+   "tac": [
+    "200 tỷ",
+    "LN cổ đông 2027E cơ sở"
+   ],
+   "theo_doi": "kế hoạch LNTT 2027, phương án vốn"
+  },
+  {
+   "khi": "Q3/2026–2027",
+   "loai": "len",
+   "tieu": "Mở bán Nam Vĩnh Yên (Phú Thọ)",
+   "ct": "Kế hoạch 2026 ~1.300 tỷ doanh thu (mở bán Q3); cả dự án 8–10 nghìn tỷ nếu bán hết (ĐHĐCĐ). Đầu tư 2026 1.279 tỷ — lớn nhất trong kế hoạch.",
+   "tac": [
+    "+144 tỷ LN",
+    "mỗi 1.000 tỷ doanh thu, biên gộp 18% (cơ sở 2027)"
+   ],
+   "theo_doi": "doanh số, người mua trả trước"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Thoái vốn Phú Mỹ ATA",
+   "ct": "Đang đàm phán thoái vốn dự án ở khu cảng Cái Mép – Thị Vải \"đã đạt biên kỳ vọng\" (ĐHĐCĐ 2026); chưa có giá trị. Nguồn tiền cho Bắc Vũng Tàu, Long Tân.",
+   "tac": [
+    "+176 tỷ LN",
+    "mỗi 1.000 tỷ giá chuyển nhượng, biên gộp 22%"
+   ],
+   "theo_doi": "nghị quyết HĐQT"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "hai",
+   "tieu": "Khởi công Bắc Vũng Tàu, Long Tân",
+   "ct": "Kế hoạch: Bắc Vũng Tàu Q3/2026 (chưa thấy xác nhận khởi công), Long Tân Q4/2026; ngân hàng đã cam kết tài trợ (Chủ tịch, ĐHĐCĐ). Lãi từ 2028 trở đi, nhưng hút vốn ngay.",
+   "tac": [
+    "4,4 nghìn tỷ",
+    "vốn đầu tư kế hoạch 2026 (gấp ~2,2 lần 2025)"
+   ],
+   "theo_doi": "tiến độ, nợ vay"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Bán giải chấp cổ phiếu lãnh đạo",
+   "ct": "Từ 6/2026 công ty chứng khoán bán ~28,5 triệu cp DIG của gia đình Chủ tịch; ông Nguyễn Hùng Cường còn 3,41% (cuối 7/2026). Áp lực cung và rủi ro quản trị.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi 0,1 lần P/B"
+   ],
+   "theo_doi": "giao dịch nội bộ"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Kinh doanh lõi lỗ",
+   "ct": "Lõi 9T/2026 (ước, trừ Đại Phước) lãi gộp ~127 tỷ < bán hàng + quản lý 165 tỷ; biên gộp BĐS Q2 ~4% (VietnamFinance). Nếu bàn giao 2027 vẫn biên thấp, vốn chủ đứng yên.",
+   "tac": [
+    "±80 tỷ LN",
+    "mỗi 5 điểm % biên gộp trên 2.000 tỷ doanh thu lõi 2027"
+   ],
+   "theo_doi": "biên gộp quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Phải thu ngắn hạn 5,9 nghìn tỷ",
+   "ct": "Bằng 58% vốn chủ, 5,6–6,2 nghìn tỷ suốt 8 quý. Tài liệu đã đọc chưa có thuyết minh; trích lập trừ thẳng vào sổ sách — nền của định giá.",
+   "tac": [
+    "−0,5 nghìn đ/cp",
+    "nếu trích lập 10%"
+   ],
+   "theo_doi": "thuyết minh phải thu"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Pháp lý cổ phần hóa, thuế đất bỏ hoang",
+   "ct": "DSC ngừng định giá 11/2024 vì rủi ro thanh tra cổ phần hóa (công ty: kết luận thanh tra tích cực). NQ 21-NQ/TW (7/2026) định hướng thuế BĐS bỏ hoang — quỹ đất lớn chưa triển khai.",
+   "tac": "",
+   "theo_doi": "kết luận thanh tra, luật thuế"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi gộp và chi phí bán hàng + quản lý theo quý",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      141,
+      29,
+      118,
+      327,
+      654,
+      40,
+      41,
+      160
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Bán hàng + quản lý",
+     "v": [
+      64,
+      53,
+      66,
+      55,
+      89,
+      59,
+      55,
+      50
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Trừ quý có chuyển nhượng — Q3–Q4/2025 (Lam Hạ, Đại Phước: 327 và 654 tỷ), Q3/2026 (160 tỷ, ước có Đại Phước 15,3 ha) — lãi gộp quý chỉ 29–141 tỷ; chi phí bán hàng + quản lý ~55 tỷ/quý.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "LN trước thuế theo nguồn, theo quý",
+   "kieu": "cot_chong",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi kinh doanh (gộp − bán hàng − quản lý)",
+     "v": [
+      77,
+      -24,
+      52,
+      272,
+      564,
+      -20,
+      -14,
+      110
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tài chính ròng, liên kết & khác",
+     "v": [
+      39,
+      -13,
+      23,
+      -14,
+      -13,
+      10,
+      163,
+      -14
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Q2/2026 LNTT 149 tỷ gồm 163 tỷ tài chính ròng, liên kết & khác; Q3 ngược lại: lãi kinh doanh 110 tỷ, tài chính & liên kết -14 tỷ (chi phí tài chính 78).",
+   "ng": "BCTC (VNDirect) · Doanh nhân 8/2026"
+  },
+  {
+   "ten": "Tiền, nợ vay và tồn kho",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền + tiền gửi",
+     "v": [
+      1.68,
+      1.28,
+      1.25,
+      2.01,
+      3.53,
+      2.46,
+      5.58,
+      5.37
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Nợ vay",
+     "v": [
+      3.85,
+      3.35,
+      3.37,
+      3.28,
+      2.24,
+      1.42,
+      1.32,
+      1.27
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Tồn kho",
+     "v": [
+      8.15,
+      9.09,
+      9.19,
+      8.66,
+      6.63,
+      6.8,
+      6.51,
+      6.21
+     ],
+     "mau": "c4",
+     "net": 0
+    }
+   ],
+   "y": "Nợ vay 3,8 → 1,3 nghìn tỷ (cuối 2024 → 30/9/2026); tồn kho 8,7 → 6,2 sau các đợt bán Đại Phước. Tiền + tiền gửi 5,4 nghìn tỷ (Q2 +3,1, đi cùng nợ ngắn hạn khác +2,8; Q3 nợ ngắn hạn khác −0,5).",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "ROE theo năm 2015–2025",
+   "kieu": "cot",
+   "dv": "%",
+   "so_le": 1,
+   "nhan": [
+    "'15",
+    "'16",
+    "'17",
+    "'18",
+    "'19",
+    "'20",
+    "'21",
+    "'22",
+    "'23",
+    "'24",
+    "'25"
+   ],
+   "ss": [
+    {
+     "ten": "ROE (LN cổ đông / vốn chủ bình quân)",
+     "v": [
+      0.4,
+      3.1,
+      3.2,
+      10.8,
+      12.3,
+      14.9,
+      15.8,
+      2.0,
+      2.3,
+      1.5,
+      7.5
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "ROE 11–16% giai đoạn 2018–2021 (P/B trung vị 2018–2019: 1,35); 2022–2024 chỉ 1,5–2,3%; 2025 7,5% nhờ bán dự án.",
+   "ng": "BCTC (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 3000,
+    "th": 1498,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 24/04/2026 · BCTC Q3"
+   },
+   {
+    "ten": "LN trước thuế",
+    "kh": 600,
+    "th": 235,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 24/04/2026 · BCTC Q3"
+   }
+  ],
+  "y": "9 tháng đạt 50% doanh thu, 39% LNTT (Q2 nhờ thu nhập tài chính, Q3 nhờ chuyển nhượng — ước Đại Phước). Cơ sở: LNTT 240 tỷ (40%), doanh thu 1.998 tỷ — đủ kế hoạch cần thêm chuyển nhượng lớn (Phú Mỹ ATA) hoặc bàn giao chung cư A2 ngay Q4.",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "Chuyển nhượng dự án — nguồn lãi 2025–2026",
+   "phu": "Lam Hạ Center Point (Hà Nam cũ) · Khu đô thị du lịch sinh thái Đại Phước (Đồng Nai)",
+   "so": [
+    [
+     "Lam Hạ (Q3/2025)",
+     "1.327 tỷ",
+     "chưa VAT"
+    ],
+    [
+     "Đại Phước 1–3 (12/2025)",
+     "2.465 tỷ",
+     ""
+    ],
+    [
+     "Đại Phước 7.1 (12/2025)",
+     "489 tỷ",
+     "14,4 ha · 3,4 tr/m²"
+    ],
+    [
+     "Đại Phước 15,3 ha (7/2026)",
+     "chưa công bố giá",
+     "ước ghi nhận Q3/2026"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q3–Q4/2025 doanh thu 4,3 nghìn tỷ, lãi gộp 980 tỷ (22,8%); tồn kho 8,7 → 6,6 nghìn tỷ.",
+     "ng": "BCTC (VNDirect)"
+    },
+    {
+     "t": "Phân khu 7.1 (143.906 m²) bán cho Everland An Giang; 2026: phân khu 8 cho DCP Châu Á, 19.110 m² phân khu 1–3 cho Quốc tế Việt Nét.",
+     "ng": "Nhà Đầu Tư 2026 · VietnamFinance 8/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Quỹ đất trọng tâm 2026–2030",
+   "phu": "ĐHĐCĐ 2026: dồn lực cho Bắc Vũng Tàu và Long Tân; Nam Vĩnh Yên là nguồn doanh thu gần",
+   "so": [
+    [
+     "Long Tân (Đồng Nai)",
+     "332 ha",
+     "khởi công KH Q4/2026"
+    ],
+    [
+     "Bắc Vũng Tàu",
+     "91 ha",
+     "khởi công KH Q3/2026"
+    ],
+    [
+     "Nam Vĩnh Yên (Phú Thọ)",
+     "191 ha",
+     "8–10 nghìn tỷ nếu bán hết"
+    ],
+    [
+     "CSJ (Vũng Tàu)",
+     "1,1 ha",
+     "đầu tư 2026: 686 tỷ"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Vốn đầu tư 2026 4.371,5 tỷ: Nam Vĩnh Yên 1.279, Long Tân 714,4, CSJ 685,6 — chủ yếu bồi thường, hạ tầng.",
+     "ng": "ĐHĐCĐ 24/04/2026 (Mekong ASEAN)"
+    },
+    {
+     "t": "Nguồn doanh thu 2026 công ty nêu: chung cư A2 ~1.700, Nam Vĩnh Yên ~1.300, Vị Thanh ~300, Đại Phước ~70 tỷ.",
+     "ng": "ĐHĐCĐ 24/04/2026 (Người Quan Sát, Stockbiz)"
+    },
+    {
+     "t": "Diện tích: Long Tân 332 ha, Bắc Vũng Tàu 91 ha, Nam Vĩnh Yên 191 ha, Vị Thanh 83 ha, Hiệp Phước 22 ha, CSJ 1,1 ha.",
+     "ng": "DSC 21/11/2024"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn — nợ vay, tiền, phải thu, cổ phiếu",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026",
+   "so": [
+    [
+     "Nợ vay",
+     "1,3 nghìn tỷ",
+     "cuối 2024: 3,8"
+    ],
+    [
+     "Tiền + tiền gửi",
+     "5,4 nghìn tỷ",
+     "30/6: 5,6"
+    ],
+    [
+     "Phải thu ngắn hạn",
+     "5,9 nghìn tỷ",
+     "58% vốn chủ"
+    ],
+    [
+     "Người mua trả trước",
+     "2,5 nghìn tỷ",
+     "30/6: 2,9"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Chào bán 150 triệu cp giá 12.000 đ (Q4/2025): vốn điều lệ 6.464 → 7.964 tỷ; hơn 1.000 tỷ tiền chào bán chưa giải ngân (2026).",
+     "ng": "Doanh nhân 2025 · BCTC · Mekong ASEAN 2026"
+    },
+    {
+     "t": "Cổ tức 2025 bằng cổ phiếu 6% (ĐKCC 09/09/2026, 47,8 triệu cp): vốn điều lệ 8.442,1 tỷ, 844,2 triệu cp.",
+     "ng": "Doanh nhân · Mekong ASEAN 8–9/2026"
+    },
+    {
+     "t": "Q1/2026 lỗ 9,9 tỷ, dòng tiền thuần âm hơn 1.100 tỷ.",
+     "ng": "Doanh nhân · Người Quan Sát 5/2026"
+    },
+    {
+     "t": "Q3/2026: doanh thu 761,4 tỷ, LNST 69,2 tỷ (−64,2%); 9T LNST 202,7 tỷ. Tiền mặt 30/9 chỉ 282 tỷ, tiền gửi kỳ hạn 5,1 nghìn tỷ.",
+     "ng": "Tin nhanh chứng khoán 30/10/2026 · BCTC Q3 (VNDirect)"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "Tín dụng BĐS từng ngân hàng không được tăng nhanh hơn tín dụng chung; lãi vay mua nhà trên 9,5–10% kéo tỷ lệ hấp thụ xuống.",
+     "h": -1,
+     "ng": "VNDIRECT 03/2026 (báo cáo DXG)"
+    },
+    {
+     "t": "Nghị quyết 21-NQ/TW (28/7/2026) định hướng thuế BĐS bỏ hoang — tăng chi phí giữ quỹ đất chưa triển khai (Long Tân, Bắc Vũng Tàu).",
+     "h": -1,
+     "ng": "SHS 03/08/2026 (báo cáo KDH)"
+    },
+    {
+     "t": "Sân bay Long Thành mục tiêu khai thác thương mại 1/12/2026 — nền giá cho quỹ đất Đồng Nai (Đại Phước, Long Tân, Hiệp Phước).",
+     "h": 1,
+     "ng": "Báo Mới 2026"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "Q1/2026 giao dịch BĐS cả nước 115.650 (−23,6% so với quý trước); căn hộ, nhà riêng lẻ −32,2%.",
+     "h": -1,
+     "ng": "SHS 03/08/2026 (báo cáo KDH)"
+    },
+    {
+     "t": "Chủ đầu tư ROE thấp được trả quanh 1 lần sổ sách: DXG 0,89, KDH 0,89, KBC 0,96, NVL 0,69; DIG 0,79.",
+     "h": 0,
+     "ng": "bảng cùng ngành, giá 30/10/2026"
+    },
+    {
+     "t": "Quỹ đất Đại Phước vẫn có người mua (Everland An Giang, DCP Châu Á, Quốc tế Việt Nét) ở ~3,4 triệu/m² (phân khu 7.1).",
+     "h": 1,
+     "ng": "Nhà Đầu Tư · VietnamFinance 2026"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Chủ tịch kỳ cựu qua đời 2024; Chủ tịch Nguyễn Hùng Cường nhận thừa kế hơn 11 triệu cp DIG.",
+     "h": 0,
+     "ng": "DSC 21/11/2024 · Mekong ASEAN"
+    },
+    {
+     "t": "Từ 6/2026 ~28,5 triệu cp của gia đình Chủ tịch bị bán giải chấp; ông Cường còn 3,41%, không còn là cổ đông lớn.",
+     "h": -1,
+     "ng": "Doanh nhân · VnBusiness 7–8/2026"
+    },
+    {
+     "t": "Chiến lược: thoái vốn dự án đã đạt biên (Phú Mỹ ATA), dồn lực Bắc Vũng Tàu và Long Tân; giải thể, rút khỏi một số công ty con, liên danh.",
+     "h": 0,
+     "ng": "Mekong ASEAN 04/2026 · Doanh nhân 2026"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "DSC",
+   "ngay": "2024-11-21",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "tạm ngừng định giá",
+   "y": "Ngừng định giá vì rủi ro pháp lý cổ phần hóa và biến động lãnh đạo; dự phóng 2025 doanh thu 1.345 tỷ, LNST 129 tỷ nếu bàn giao Centre Point (thực tế: doanh thu 4.716 tỷ, LN cổ đông 665 tỷ nhờ bán dự án).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DIG/Thoi_ky_song_gio.pdf"
+  }
+ ],
+ "ctck_chu": "Chưa có CTCK theo dõi trong 8 tháng (bản gần nhất trên Simplize: DSC 21/11/2024, ngừng định giá); mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành. DIG không chia cổ tức tiền mặt trong 12 tháng qua (cổ tức 2025 bằng cổ phiếu 6%).",
+ "nguon": [
+  {
+   "ten": "Tin nhanh chứng khoán — Quý III/2026 LNST DIC Corp giảm 64,2%",
+   "ngay": "30/10/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/quy-iii2026-loi-nhuan-sau-thue-cua-dic-corp-dig-giam-642-post400517.html"
+  },
+  {
+   "ten": "DSC — Thời kỳ sóng gió (ngừng định giá)",
+   "ngay": "21/11/2024",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DIG/Thoi_ky_song_gio.pdf"
+  },
+  {
+   "ten": "Doanh nhân — DIG đặt mục tiêu kinh doanh 2026 đi lùi (3.000 tỷ doanh thu, 600 tỷ LNTT)",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dic-corp-dig-dat-muc-tieu-kinh-doanh-nam-2026-di-lui.html"
+  },
+  {
+   "ten": "Mekong ASEAN — DIG hạ mục tiêu lợi nhuận, tăng gấp đôi vốn đầu tư 2026",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/dig-ha-muc-tieu-loi-nhuan-tang-gap-doi-von-da-u-tu-trong-nam-2026-53392.html"
+  },
+  {
+   "ten": "Mekong ASEAN — ĐHĐCĐ DIG: thoái vốn, dồn lực Bắc Vũng Tàu và Long Tân",
+   "ngay": "24/04/2026",
+   "link": "https://mekongasean.vn/dhdcd-dig-tiep-tuc-thoai-von-de-don-luc-cho-2-dai-du-an-vi-tri-dac-dia-54518.html"
+  },
+  {
+   "ten": "VietTimes — Chủ tịch DIC Corp: thời điểm khởi công hai dự án",
+   "ngay": "04/2026",
+   "link": "https://viettimes.vn/chu-tich-dic-corp-tiet-lo-thoi-diem-khoi-cong-hai-du-an-at-chu-bai-post197057.html"
+  },
+  {
+   "ten": "Người Quan Sát — DIG hé lộ nguồn thu, sẵn sàng khởi công 2 dự án lớn",
+   "ngay": "04/2026",
+   "link": "https://nguoiquansat.vn/dic-corp-dig-he-lo-nguon-thu-10-000-ty-dong-san-sang-khoi-cong-2-du-an-lon-288395.html"
+  },
+  {
+   "ten": "Stockbiz — ĐHĐCĐ DIG: nguồn thu từ 6 dự án, 10.000 tỷ từ dự án Phú Thọ",
+   "ngay": "04/2026",
+   "link": "https://stockbiz.vn/tin-tuc/dhdcd-dig-san-sang-khoi-cong-2-du-an-trong-diem-he-lo-nguon-thu-tu-6-du-an-voi-diem-nhan-10000-ty-tu-du-an-phu-tho/39676053"
+  },
+  {
+   "ten": "Doanh nhân — DIG lỗ 9,9 tỷ quý I/2026",
+   "ngay": "05/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dic-corp-dig-bao-lo-9-9-ty-dong-trong-quy-i-2026-muc-tieu-lai-600-ty-ngay-cang-xa.html"
+  },
+  {
+   "ten": "Người Quan Sát — DIG lỗ quý I/2026, dòng tiền thuần âm hơn 1.100 tỷ",
+   "ngay": "05/2026",
+   "link": "https://nguoiquansat.vn/dic-corp-dig-lo-quy-i-2026-dong-tien-thuan-am-hon-1-100-ty-289280.html"
+  },
+  {
+   "ten": "Doanh nhân — DIG báo lãi quý II/2026 nhờ doanh thu tài chính đột biến",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dic-corp-dig-bao-lai-quy-ii-2026-nho-doanh-thu-tai-chinh-dot-bien.html"
+  },
+  {
+   "ten": "VietnamFinance — lãi tăng nhưng lợi nhuận nằm ngoài bất động sản (Q2/2026)",
+   "ngay": "08/2026",
+   "link": "https://vietnamfinance.vn/dic-corp-lai-tang-gap-ba-lan-nhung-loi-nhuan-lai-nam-ngoai-bat-dong-san-d148409.html"
+  },
+  {
+   "ten": "VietnamFinance — DIC Corp 'bỏ túi' 1.300 tỷ sau khi bán Lam Hạ Center Point",
+   "ngay": "2025",
+   "link": "https://vietnamfinance.vn/dic-corp-bo-tui-1300-ty-sau-khi-ban-du-an-lam-ha-center-point-d132668.html"
+  },
+  {
+   "ten": "Nhà Đầu Tư — Hoàn tất deal Đại Phước, ghi nhận gần 3.000 tỷ doanh thu",
+   "ngay": "2026",
+   "link": "https://nhadautu.vn/hoan-tat-deal-dai-phuoc-dic-corp-ghi-nhan-gan-3000-ty-doanh-thu-d102079.html"
+  },
+  {
+   "ten": "Doanh nhân — chốt chuyển nhượng Đại Phước gần 3.000 tỷ ngày cuối năm",
+   "ngay": "12/2025",
+   "link": "https://doanhnhan.baophapluat.vn/dic-corp-dig-chot-thuong-vu-chuyen-nhuong-dat-vang-dai-phuoc-quy-mo-gan-3000-ty-dong-vao-ngay-cuoi-nam-90477.html"
+  },
+  {
+   "ten": "Doanh nhân — lãi ròng 2025 gấp 6 lần nhờ bán dự án Đại Phước",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/dic-corp-dig-lai-rong-2025-gap-6-lan-nho-ban-du-an-dai-phuoc-van-lo-hen-ke-hoach-nam.html"
+  },
+  {
+   "ten": "VietnamFinance — bán thêm hơn 15 ha đất tại Đại Phước",
+   "ngay": "08/2026",
+   "link": "https://vietnamfinance.vn/ban-them-hon-15ha-dat-tai-dai-phuoc-dic-corp-tim-cach-mo-khoa-dong-tien-d148558.html"
+  },
+  {
+   "ten": "Doanh nhân — DIG tiếp tục chuyển nhượng hai phân khu tại Đại Phước",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dic-corp-dig-tiep-tuc-chuyen-nhuong-hai-phan-khu-tai-dai-phuoc.html"
+  },
+  {
+   "ten": "Nhà Đầu Tư — cổ phiếu DIC về đáy 3 năm rưỡi",
+   "ngay": "18/08/2026",
+   "link": "https://nhadautu.vn/don-nhieu-tin-vui-co-phieu-tap-doan-dic-van-loay-hoay-quanh-vung-day-3-nam-ruoi-d107035.html"
+  },
+  {
+   "ten": "Doanh nhân — DIG sắp phát hành 47,8 triệu cp trả cổ tức, vốn điều lệ 8.442 tỷ",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dic-corp-dig-sap-phat-hanh-gan-47-8-trieu-co-phieu-tra-co-tuc-von-dieu-le-vuot-8-442-ty-dong.html"
+  },
+  {
+   "ten": "Mekong ASEAN — DIG chốt danh sách cổ đông trả cổ tức bằng cổ phiếu",
+   "ngay": "08/2026",
+   "link": "https://mekongasean.vn/dig-chot-danh-sach-co-dong-tra-co-tuc-bang-co-phieu-58563.html"
+  },
+  {
+   "ten": "CafeLand — chốt ngày phát hành gần 48 triệu cp trả cổ tức",
+   "ngay": "08/2026",
+   "link": "https://cafeland.vn/tin-tuc/dic-corp-chot-ngay-phat-hanh-gan-48-trieu-co-phieu-tra-co-tuc-gia-dinh-chu-tich-nhan-them-25-trieu-don-vi-154283.html"
+  },
+  {
+   "ten": "Doanh nhân — gia đình Chủ tịch tiếp tục bị bán giải chấp hơn 8 triệu cp",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/gia-dinh-chu-tich-dic-corp-dig-tiep-tuc-bi-ban-giai-chap-hon-8-trieu-co-phieu-ty-le-so-huu-giam-con-5-28.html"
+  },
+  {
+   "ten": "Doanh nhân — gia đình Chủ tịch bị bán giải chấp hơn 14 triệu cp",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/gia-dinh-chu-tich-dic-corp-dig-bi-ban-giai-chap-hon-14-trieu-co-phieu-dig-chi-trong-vai-ngay.html"
+  },
+  {
+   "ten": "VnBusiness — hàng triệu cp DIG của gia đình Chủ tịch bị bán giải chấp",
+   "ngay": "2026",
+   "link": "https://vnbusiness.vn/hang-trieu-co-phieu-dig-thuoc-so-huu-cua-gia-dinh-chu-tich-dic-corp-bi-ban-giai-chap.html"
+  },
+  {
+   "ten": "Doanh nhân — ĐHĐCĐ 2025: chào bán 150 triệu cp giá 12.000 đ",
+   "ngay": "2025",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-dig-corp-dig-dat-muc-tieu-lai-718-ty-dong-nam-2025-len-ke-hoach-chao-ban-150-trieu-co-phieu-gia-12000-dong-82362.html"
+  },
+  {
+   "ten": "Mekong ASEAN — DIG còn hơn 1.000 tỷ chưa giải ngân từ đợt chào bán",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/dig-co-n-hon-1000-ty-do-ng-chua-gia-i-ngan-tu-dot-cha-o-ban-co-phieu-56315.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Chủ tịch mới nhận thừa kế hơn 11 triệu cp DIG",
+   "ngay": "2024",
+   "link": "https://mekongasean.vn/chu-tich-dic-corp-moi-duoc-nhan-thu-a-ke-hon-11-trieu-co-phieu-dig-35783.html"
+  },
+  {
+   "ten": "SHS — báo cáo KDH (Nghị quyết 21-NQ/TW, giao dịch BĐS Q1/2026)",
+   "ngay": "03/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KDH/kdh_tang_nhanh_quy_mo_trong_boi_canh_nhieu_thach_thuc.pdf"
+  },
+  {
+   "ten": "VNDIRECT — báo cáo DXG (tín dụng BĐS, lãi vay mua nhà)",
+   "ngay": "05/03/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/Tiem_can_giai_oan_but_pha_loi_nhuan.pdf"
+  },
+  {
+   "ten": "Báo Mới — sân bay Long Thành khai thác thương mại từ 1/12/2026",
+   "ngay": "2026",
+   "link": "https://baomoi.com/san-bay-long-thanh-se-khai-thac-thuong-mai-tu-1122026-c55607113.epi"
+  }
+ ]
+}

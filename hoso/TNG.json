@@ -1,0 +1,1413 @@
+{
+ "v": 2,
+ "ma": "TNG",
+ "ten": "Công ty Cổ phần Đầu tư và Thương mại TNG",
+ "nganh": "Dệt may xuất khẩu",
+ "ky": "BCTC Q3/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q4/2026",
+ "cp_trieu": 128.73,
+ "cp_ng": "Vốn điều lệ 1.287,3 tỷ ÷ 10.000 đ (BCTC Q3/2026) = 128,73 triệu cp, gồm 6,13 triệu cp ESOP phát hành 10/2025 (hạn chế chuyển nhượng 3 năm); không có cổ phiếu quỹ. Khớp số MAS, Shinhan, SHS dùng khi định giá.",
+ "co_tuc": [
+  [
+   "2025-11-12",
+   500,
+   "tạm ứng đợt 2/2025"
+  ],
+  [
+   "2026-01-23",
+   500,
+   "tạm ứng đợt 3/2025 (chốt 26/01)"
+  ],
+  [
+   "2026-05-06",
+   500,
+   "đợt 4 năm 2025"
+  ],
+  [
+   "2026-08-07",
+   1000,
+   "tạm ứng đợt 1/2026 (chốt 10/08)"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Lãi kỷ lục nhờ giao hàng sớm trước thuế 301; 2027 lương và lãi vay ăn hết phần tăng trưởng"
+ },
+ "dong_mo": "9T/2026 doanh thu 8.095 tỷ (+21%), LN cổ đông 362 tỷ (+29%) nhờ khách Mỹ kéo đơn trước thuế 301. Đổi lại phải thu +37%, nợ vay 4.194 tỷ (+32%). Mô hình: LN 2026E 468 tỷ, 2027E 446 tỷ khi lương và lãi vay tăng nhanh hơn doanh thu (+4%); P/E 6 × LN 2027E cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "+29%",
+   "nhan": "LN cổ đông 9T/2026",
+   "tieu": "Kỷ lục nhờ khách Mỹ kéo đơn trước thuế 301",
+   "t": "9T: doanh thu 8.095 tỷ (+21%), LN 362 tỷ; Q3 doanh thu kỷ lục 3.229 tỷ (+23%), biên gộp hồi về 14,1% từ 12,1% ở Q1. Khách Mỹ (Haddad, Asmara, Columbia) đẩy giao hàng trước khi thuế 301 – lao động cưỡng bức 12,5% hiệu lực 24/7, cộng nhu cầu đồ thể thao mùa giải lớn. Doanh thu 9T đã 85% kế hoạch năm; mô hình 2026E: LN 468 tỷ (+19%), vượt kế hoạch 450 tỷ.",
+   "ng": "BCTC Q3 · Shinhan 13/08 · MAS 21/10 · mô hình"
+  },
+  {
+   "so": "2,06 lần",
+   "nhan": "nợ vay / vốn chủ 30/9/2026",
+   "tieu": "Tăng trưởng được mua bằng vốn lưu động và nợ vay",
+   "t": "Phải thu 1.785 tỷ (+37% so với 30/9/2025) vì TNG nới thời hạn thanh toán để nhận thêm đơn; nợ vay 4.194 tỷ (+32%), 72% ngắn hạn. Lãi vay 9T 221 tỷ (+27%) bằng 34% LN cốt lõi. Cùng kỳ công ty chi ~257 tỷ cổ tức tiền mặt và góp thêm 140 tỷ vào TNG Land. Mỗi 1 điểm % lãi suất ≈ 42 tỷ lãi vay (~8% LN 2027E); đòn bẩy cao nhất nhóm so sánh (MSH 0,86, HTG 1,25 lần).",
+   "ng": "BCTC Q3 · SHS 11/08 · VDS 01/06"
+  },
+  {
+   "so": "12,5%",
+   "nhan": "thuế 301 Mỹ áp cho hàng Việt từ 24/7",
+   "tieu": "2027: giá bán bị ép khi đối thủ chịu 10%",
+   "t": "Bangladesh, Ấn Độ, Indonesia chịu 10%, vài nước có hạn ngạch 0% (TRQ); USTR kết luận điều tra sở hữu trí tuệ với Việt Nam dự kiến 29/11 — cộng dồn, thuế tối thiểu ~15% (Allianz). Châu Mỹ ~50% doanh thu 7T; Decathlon (~30%, châu Âu) là phần đệm. Nguyên liệu tăng 5–10% (Poly tới 15%), mới chốt giá cho 2026. Cơ sở: doanh thu 2027 +4%, biên gộp 13,8% (bằng 4 quý gần nhất; CTCK 14,3–15%) → LN 446 tỷ (−5%).",
+   "ng": "Shinhan 13/08 · SHS 11/08 · VDS 01/06 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/E 6 × LN 2027E: {up_so}, cổ tức là phần chắc",
+   "dk": "up_duoi:15",
+   "t": "P/E 4 quý 5,2 lần, dưới trung vị từ 2015 (7,0) và 7 mã dệt may (6,3) — mức chiết khấu cho đòn bẩy và thuế quan. Cơ sở dùng P/E 6; xấu 5 lần × LN 276 tỷ → 10,7; tốt 7 lần × LN 564 tỷ → 30,7. Cổ tức tiền mặt 2025 2.000 đ/cp (10,5% giá 23/10), kế hoạch 2026 16–20%, đã tạm ứng 1.000 đ — cổ tức ~8–10%/năm là phần chắc của lợi nhuận kỳ vọng.",
+   "ng": "mô hình · P/E: BCTC VNDirect · ĐHĐCĐ 2026",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "P/E 6 × LN 2027E: {up_so} so với giá hiện tại",
+    "t": "P/E 4 quý theo giá 23/10 là 5,2 lần, dưới trung vị từ 2015 (7,0) và 7 mã dệt may (6,3). Cơ sở dùng P/E 6; xấu 5 lần × LN 276 tỷ → 10,7; tốt 7 lần × LN 564 tỷ → 30,7. Giá đã xuống dưới giá trị cơ sở; cộng cổ tức tiền mặt (2025: 2.000 đ/cp, kế hoạch 2026 16–20%) là phần bù cho rủi ro nợ vay và thuế quan."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   393,
+   468,
+   446
+  ],
+  "ln_truoc": 315,
+  "eps": [
+   3053,
+   3636,
+   3465
+  ],
+  "co_tuc_nam": 2000,
+  "them": [
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     8.7,
+     10.4,
+     10.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Biên gộp",
+    "v": [
+     14.2,
+     13.8,
+     13.8
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS = LN cổ đông ÷ 128,73 triệu cp, chưa trừ quỹ khen thưởng phúc lợi. Cổ tức 2025: 4 đợt × 500 đ/cp; 2026 đã tạm ứng 1.000 đ/cp."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Kinh doanh cốt lõi (LN gộp − CPBH − QLDN)",
+    "mau": "c1",
+    "v": [
+     680,
+     829,
+     841
+    ]
+   },
+   {
+    "ten": "Tài chính ròng & khác (chủ yếu lãi vay)",
+    "mau": "c2",
+    "v": [
+     -195,
+     -253,
+     -290
+    ]
+   }
+  ],
+  "ng": "Tài chính ròng & khác lấy 29% → 31% → 34% LN cốt lõi (2025A → 2027E). Không tách LN theo mảng (công ty không công bố; bất động sản ~0,3% doanh thu). 2026E = 9T thực tế + Q4 mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 23/10)",
+  "nhom": "7 mã dệt may có lãi, vốn hóa lớn nhất",
+  "kv": [
+   [
+    "MSH",
+    5.6
+   ],
+   [
+    "TCM",
+    7.9
+   ],
+   [
+    "HTG",
+    4.2
+   ],
+   [
+    "GIL",
+    6.6
+   ],
+   [
+    "TVT",
+    6.3
+   ],
+   [
+    "X20",
+    4.9
+   ],
+   [
+    "TDT",
+    8.1
+   ]
+  ],
+  "tv": 6.3,
+  "moi_cp": 3685,
+  "max": 12,
+  "y": "ROE 4 quý của TNG ~24%, chỉ sau MSH (31%) và HTG (30%); P/E thấp hơn trung vị vì nợ vay/vốn chủ 2,06 lần — cao nhất nhóm (MSH 0,86; HTG 1,25; TCM 0,40).",
+  "ng": "BCTC VNDirect, giá 23/10/2026 (gói số liệu); bỏ STK (lỗ), TET, SVD (P/E > 100), VTZ (biên gộp 4,9%, khác mô hình). TNG: LN cổ đông 4 quý đến Q3/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng toàn công ty",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Kinh doanh cốt lõi (may xuất khẩu ~99% doanh thu)"
+   },
+   {
+    "ten": "Doanh thu thuần (nghìn tỷ)",
+    "v": [
+     8.7,
+     10.37,
+     10.78
+    ],
+    "d": 2,
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     14.2,
+     13.8,
+     13.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "CPBH & QLDN / doanh thu (%)",
+    "v": [
+     6.4,
+     5.8,
+     6.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN cốt lõi (tỷ)",
+    "v": [
+     680,
+     829,
+     841
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Tài chính và lợi nhuận"
+   },
+   {
+    "ten": "Tài chính ròng & khác (tỷ)",
+    "v": [
+     -195,
+     -253,
+     -290
+    ]
+   },
+   {
+    "ten": "Tài chính ròng & khác / LN cốt lõi (%)",
+    "v": [
+     28.7,
+     30.5,
+     34.5
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     485,
+     576,
+     551
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     393,
+     468,
+     446
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     3053,
+     3636,
+     3465
+    ],
+    "eps": 1
+   },
+   {
+    "nhom": "Quý 4/2026 (mô hình cơ sở)"
+   },
+   {
+    "ten": "Doanh thu · LN cổ đông Q4 (tỷ)",
+    "s": [
+     "2.027 · 113",
+     "2.271 · 106",
+     "—"
+    ]
+   }
+  ],
+  "ghi": "2026E = 9T thực tế (BCTC Q3) + Q4 ước tính; thuế 19%. LN cốt lõi = LN gộp − CPBH − QLDN. Tài chính ròng gồm lãi vay, lãi tiền gửi, chênh lệch tỷ giá; khác gồm 25 tỷ bảo hiểm bão (Q1/2026)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   468
+  ],
+  "cuoi": [
+   "2027E",
+   446
+  ],
+  "buoc": [
+   [
+    "Doanh thu +4%",
+    45
+   ],
+   [
+    "Biên gộp giữ ~13,8%",
+    -3
+   ],
+   [
+    "CPBH & QLDN (lương)",
+    -33
+   ],
+   [
+    "Lãi vay & tài chính",
+    -30
+   ],
+   [
+    "Thuế 19% (9T: 18,8%)",
+    -1
+   ]
+  ],
+  "y": "Doanh thu +4% góp 45 tỷ, nhưng lương (CPBH & QLDN −33 tỷ) và lãi vay (−30 tỷ) lấy lại nhiều hơn — LN 2027 giảm nhẹ.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu Q4/2026 (so cùng kỳ)",
+   "v": [
+    "+2%",
+    "+12%",
+    "+20%"
+   ],
+   "ly_do": "9T +21%, Q3 +23%; đơn hàng kín đến 12/2026; tồn kho 30/9 +11% so với cùng kỳ; hiệu ứng giao sớm trước thuế 301 nhạt dần (Shinhan)"
+  },
+  {
+   "ten": "Biên gộp Q4/2026",
+   "v": [
+    "13,2%",
+    "14,0%",
+    "14,6%"
+   ],
+   "ly_do": "Q3/2026 14,1%, Q4/2025 13,8%, Q4/2024 15,8%; nguyên liệu đã chốt giá cho cả năm 2026"
+  },
+  {
+   "ten": "Doanh thu 2027",
+   "v": [
+    "−3%",
+    "+4%",
+    "+7%"
+   ],
+   "ly_do": "Nền 2026 cao vì giao sớm; thuế 301 12,5% so với 10% của Bangladesh, Ấn Độ; CTCK 2027F +3–6,5% trên nền 2026F thấp hơn"
+  },
+  {
+   "ten": "Biên gộp 2027",
+   "v": [
+    "13,2%",
+    "13,8%",
+    "14,2%"
+   ],
+   "ly_do": "4 quý tới Q3/2026 13,8%, 2025 14,2%, 2023 13,8%; lương, nguyên liệu tăng, giá bán bị ép; CTCK 14,3–15%"
+  },
+  {
+   "ten": "CPBH & QLDN / doanh thu 2027",
+   "v": [
+    "6,3%",
+    "6,0%",
+    "5,8%"
+   ],
+   "ly_do": "9T/2026 5,9%, 2025 6,4%; mục tiêu 6–6,5% (VDS); lương chiếm ~60%"
+  },
+  {
+   "ten": "Tài chính ròng & khác (tỷ): Q4/2026 · 2027",
+   "v": [
+    "−80 / −340",
+    "−55 / −290",
+    "−40 / −250"
+   ],
+   "ly_do": "9T/2026 −198, Q4/2025 −30; nợ vay 4.194 tỷ, lãi vay Q3 ~8%/năm; ±1 điểm % ≈ ±42 tỷ"
+  },
+  {
+   "ten": "P/E (× LN 2027E)",
+   "v": [
+    "5,0",
+    "6,0",
+    "7,0"
+   ],
+   "ly_do": "Từ 2015: thấp 10% 4,3, thấp 25% 5,5, trung vị 7,0; 2026 thấp nhất 4,8; 7 mã dệt may 6,3"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 414,
+   "ln27": 276,
+   "gia": 10.7,
+   "mo_ta": "Thuế 301 cộng dồn ~15%+, khách Mỹ ép giá: doanh thu 2027 −3%, biên gộp 13,2%, lãi vay +1 điểm %; LN 276 tỷ, P/E 5"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 468,
+   "ln27": 446,
+   "gia": 20.8,
+   "mo_ta": "Doanh thu 2027 +4%, biên gộp 13,8%, CPBH & QLDN 6%, tài chính ròng −290 tỷ; P/E 6"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 507,
+   "ln27": 564,
+   "gia": 30.7,
+   "mo_ta": "Việt Nam được TRQ, đơn chuyển từ Trung Quốc: doanh thu 2027 +7%, biên gộp 14,2% (như 2025), lãi vay giữ; P/E 7 (trung vị)"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/E",
+  "phu": "P/E × LN 2027E",
+  "ck": 0,
+  "cp": 128.73,
+  "phan": [
+   {
+    "ten": "LN cổ đông 2027E",
+    "mau": "c1",
+    "x": [
+     276,
+     446,
+     564
+    ],
+    "boi": [
+     5.0,
+     6.0,
+     7.0
+    ],
+    "sh": 1,
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "gt": [
+     1380,
+     2676,
+     3948
+    ]
+   }
+  ],
+  "von": [
+   1380,
+   2676,
+   3948
+  ],
+  "gia": [
+   10.7,
+   20.8,
+   30.7
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   8.8,
+   7.0,
+   6.5,
+   6.5,
+   8.7,
+   9.1,
+   10.3,
+   8.2,
+   8.7,
+   8.8,
+   7.3,
+   7.1,
+   7.2,
+   7.6,
+   7.4,
+   7.3,
+   7.0,
+   6.5,
+   6.3,
+   6.1,
+   6.2,
+   6.0,
+   4.6,
+   4.3,
+   4.1,
+   5.7,
+   5.8,
+   5.5,
+   6.2,
+   6.0,
+   6.3,
+   4.8,
+   6.3,
+   5.2,
+   5.7,
+   5.6,
+   6.2,
+   6.0,
+   5.1,
+   4.7,
+   4.2,
+   4.2,
+   4.8,
+   3.5,
+   5.1,
+   4.9,
+   5.5,
+   5.2,
+   5.5,
+   5.2,
+   6.1,
+   5.7,
+   5.6,
+   6.5,
+   5.6,
+   5.5,
+   5.5,
+   4.6,
+   4.2,
+   4.1,
+   4.3,
+   3.9,
+   2.2,
+   3.4,
+   3.9,
+   3.5,
+   3.3,
+   4.1,
+   4.6,
+   4.2,
+   5.5,
+   6.2,
+   7.7,
+   11.6,
+   11.0,
+   10.4,
+   10.1,
+   12.0,
+   11.1,
+   14.6,
+   13.6,
+   16.3,
+   12.6,
+   13.6,
+   11.6,
+   14.0,
+   15.4,
+   13.7,
+   11.2,
+   12.6,
+   11.1,
+   9.8,
+   7.1,
+   5.8,
+   5.9,
+   5.5,
+   6.5,
+   7.4,
+   7.1,
+   8.2,
+   7.1,
+   7.3,
+   8.2,
+   7.9,
+   8.0,
+   7.0,
+   9.3,
+   10.2,
+   10.3,
+   10.7,
+   11.1,
+   10.1,
+   13.4,
+   13.1,
+   14.1,
+   13.2,
+   12.8,
+   12.3,
+   10.3,
+   10.4,
+   9.9,
+   9.2,
+   8.5,
+   6.5,
+   7.4,
+   8.0,
+   8.3,
+   7.1,
+   7.0,
+   7.2,
+   7.0,
+   6.6,
+   7.6,
+   8.4,
+   8.6,
+   6.9,
+   5.9,
+   6.3,
+   5.6,
+   4.9,
+   4.8,
+   5.6
+  ],
+  "p10": 4.3,
+  "p25": 5.5,
+  "tv": 7.0,
+  "thap": [
+   "2020-03",
+   2.2
+  ],
+  "nay": [
+   "2026-10",
+   5.6
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Cơ sở 6,0 nằm giữa thấp 25% (5,5) và trung vị từ 2015 (7,0), ngang 7 mã dệt may (6,3); xấu 5,0 trên thấp 10% (4,3) vì LN xấu đã giảm sâu; tốt 7,0 = trung vị. Số cp từ 10/2025 gồm 6,13 triệu cp ESOP."
+ },
+ "nhay": [
+  [
+   "Biên gộp 2027 ±1 điểm %",
+   87,
+   4.1
+  ],
+  [
+   "P/E ±1 lần",
+   null,
+   3.5
+  ],
+  [
+   "CPBH & QLDN ±0,5 điểm %",
+   44,
+   2.0
+  ],
+  [
+   "Lãi suất vay ±1 điểm %",
+   34,
+   1.6
+  ],
+  [
+   "Doanh thu 2027 ±5% (giữ biên)",
+   33,
+   1.5
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    52,
+    106,
+    145
+   ],
+   "ck": 113
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    414,
+    468,
+    507
+   ]
+  },
+  {
+   "quy": "Cả năm 2027",
+   "ln": [
+    276,
+    446,
+    564
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "11/2026",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "USTR kết luận điều tra 301 – sở hữu trí tuệ",
+   "ct": "Việt Nam là nước duy nhất bị xếp \"Quốc gia ưu tiên\" và điều tra năm 2026; kết luận dự kiến 29/11. Nhánh dư thừa công suất có thể cộng thêm 2,5–12,5% (Shinhan).",
+   "tac": [
+    "−4,4 nghìn đ/cp",
+    "nếu doanh thu 2027 −3% và biên gộp 13,2% (giá bán bị ép)"
+   ],
+   "theo_doi": "công bố USTR, đơn hàng Q1/2027"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "hai",
+   "tieu": "Chốt đơn hàng 2027",
+   "ct": "Đơn hàng 2026 kín đến tháng 12; ban lãnh đạo đàm phán đơn 2027 từ tháng 9 (Shinhan). Giá bán 2027 phản ánh thuế 301 và chi phí nguyên liệu mới.",
+   "tac": [
+    "±1,5 nghìn đ/cp",
+    "mỗi 5% doanh thu 2027"
+   ],
+   "theo_doi": "doanh thu tháng, tồn kho"
+  },
+  {
+   "khi": "01–02/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Mô hình: LN Q4 106 tỷ (Q4/2025: 113 tỷ, có thu nhập khác +14 tỷ). Doanh thu Q4 thường thấp hơn Q3 21–25% (mùa thấp điểm).",
+   "tac": [
+    "≥ 106 tỷ",
+    "giữ cơ sở; dưới 80 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "biên gộp, lãi vay"
+  },
+  {
+   "khi": "Q4/26–Q1/27",
+   "loai": "len",
+   "tieu": "Tạm ứng cổ tức đợt 2/2026",
+   "ct": "Kế hoạch cổ tức 2026 16–20%; đã tạm ứng 10% (GDKHQ 07/08). Năm 2025 chi 20% tiền mặt, chia 4 đợt.",
+   "tac": [
+    "600–1.000 đ/cp",
+    "phần còn lại của kế hoạch"
+   ],
+   "theo_doi": "nghị quyết HĐQT"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Việt Nam được hạn ngạch thuế 0% (TRQ)",
+   "ct": "Bangladesh, Campuchia, Indonesia, Malaysia có TRQ theo lượng bông Mỹ nhập; Việt Nam nhập bông Mỹ lớn nhất (~1,3 tỷ USD năm 2025) nên có cơ sở đàm phán (Shinhan).",
+   "tac": [
+    "+2,6 nghìn đ/cp",
+    "nếu doanh thu 2027 +7% và biên gộp 14,2%"
+   ],
+   "theo_doi": "đàm phán thương mại Việt – Mỹ"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lãi suất và nợ vay ngắn hạn",
+   "ct": "Nợ vay 4.194 tỷ, 72% ngắn hạn; lãi vay Q3 87 tỷ (+23%). MAS (21/10) cân nhắc nâng lãi suất yêu cầu vì giá năng lượng cao và Fed.",
+   "tac": [
+    "±1,6 nghìn đ/cp",
+    "mỗi 1 điểm % lãi suất vay"
+   ],
+   "theo_doi": "chi phí lãi vay / doanh thu"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lương công nhân và giá nguyên liệu",
+   "ct": "Chi phí nhân công sản xuất 2025 +23% vì khan hiếm lao động địa phương; nguyên liệu 2026 đã chốt giá, 2027 thì chưa (đầu vào +5–10%, Poly tới +15% — VDS).",
+   "tac": [
+    "±4,1 nghìn đ/cp",
+    "mỗi 1 điểm % biên gộp 2027"
+   ],
+   "theo_doi": "biên gộp theo quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Khách hàng tập trung, phải thu tăng",
+   "ct": "Decathlon gần 30%, Haddad 15%, Asmara 12% doanh thu 7T/2026 (SHS); phải thu 1.785 tỷ (+37%) — rủi ro thanh toán nếu khách Mỹ gặp khó (Shinhan).",
+   "tac": "",
+   "theo_doi": "số ngày phải thu"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "hai",
+   "tieu": "Bất động sản: CCN Sơn Cẩm, TNG Land",
+   "ct": "CCN Sơn Cẩm đã cho thuê 19/44 ha, doanh thu chưa thực hiện 230 tỷ (VDS); TNG Land (41,7%, vốn góp 280 tỷ) làm nhà ở xã hội Việt Bắc. Chưa tính vào định giá.",
+   "tac": "",
+   "theo_doi": "tiến độ cho thuê, mở bán"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu theo quý",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Doanh thu thuần",
+     "v": [
+      1771,
+      1511,
+      2528,
+      2633,
+      2027,
+      1952,
+      2914,
+      3229
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q3/2026 kỷ lục 3.229 tỷ (+23%); Q4 thường thấp hơn Q3 21–25% vì mùa thấp điểm.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "Biên gộp và biên LN ròng",
+   "dv": "% doanh thu",
+   "kieu": "duong",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      15.8,
+      15.2,
+      14.6,
+      13.7,
+      13.8,
+      12.1,
+      14.6,
+      14.1
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Biên LN cổ đông",
+     "v": [
+      4.2,
+      2.9,
+      4.7,
+      4.4,
+      5.6,
+      3.1,
+      5.1,
+      4.7
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Biên gộp giảm 4 quý liền xuống 12,1% (Q1/2026) vì lương và đơn giá giảm, hồi lại 14,1% ở Q3.",
+   "ng": "BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "Nợ vay, phải thu, tồn kho cuối quý",
+   "dv": "tỷ đồng",
+   "kieu": "duong",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      2700,
+      3157,
+      3681,
+      3187,
+      3327,
+      4271,
+      4417,
+      4194
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Phải thu",
+     "v": [
+      740,
+      668,
+      1266,
+      1301,
+      1005,
+      910,
+      1588,
+      1785
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "Tồn kho",
+     "v": [
+      1074,
+      1542,
+      1561,
+      1201,
+      1446,
+      1805,
+      1860,
+      1334
+     ],
+     "mau": "c3",
+     "net": false
+    }
+   ],
+   "so_le": 0,
+   "y": "Nợ vay +32% và phải thu +37% so với 30/9/2025; tồn kho giảm sau mùa giao hàng Q3 (+11%).",
+   "ng": "BCTC hợp nhất (VNDirect); nợ vay = vay ngắn + dài hạn"
+  },
+  {
+   "ten": "LN cốt lõi và chi phí lãi vay",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "4 quý"
+   ],
+   "ss": [
+    {
+     "ten": "LN cốt lõi",
+     "v": [
+      308,
+      398,
+      552,
+      528,
+      647,
+      680,
+      808
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chi phí lãi vay",
+     "v": [
+      128,
+      135,
+      179,
+      234,
+      184,
+      212,
+      259
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi vay lấy 29–44% LN cốt lõi mỗi năm; 4 quý tới Q3/2026: 259 / 808 tỷ.",
+   "ng": "BCTC hợp nhất (VNDirect); LN cốt lõi = LN gộp − CPBH − QLDN; 4 quý = Q4/2025–Q3/2026"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 9500,
+    "th": 8095,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 450,
+    "th": 362,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
+   }
+  ],
+  "y": "Doanh thu 9T đã 85% kế hoạch, LNST 80%; mô hình cơ sở cả năm vượt kế hoạch LN 4%. 2021–2025 TNG vượt kế hoạch LN 4/5 năm (2023 hụt 24,5%). Cổ tức 2026: kế hoạch 16–20%, đã tạm ứng 10%.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-10-21",
+   "kn": "MUA",
+   "tp": 25000,
+   "ln26": 493,
+   "ln27": null,
+   "pp": "FCFF (r 13%, g 0%)",
+   "y": "Cập nhật Q3: doanh thu 9T đạt 87% dự phóng năm nhưng LN mới 73% vì biên thấp hơn kỳ vọng; Q4 mùa thấp điểm nên có thể hạ dự phóng LN và nâng lãi suất yêu cầu.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/20261021_ctcp_dau_tu_va_thuong_mai_tng_tng_mua_tp_25_000vnd_cap_nhat_ket_qua_kinh_doanh_q3_2026.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-08-13",
+   "kn": "MUA",
+   "tp": 24900,
+   "ln26": 433,
+   "ln27": 454,
+   "pp": "FCFF (WACC 12%, g 2%)",
+   "y": "Đơn hàng kín đến hết 2026, tăng trưởng 2H chậm lại khi hiệu ứng giao sớm trước thuế 301 hết; hạ giá mục tiêu 10% vì rủi ro thuế quan Mỹ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/tng_mua_gia_mt_vnd_24_900_44_9_don_hang_duoc_dam_bao_den_het_nam_2026.pdf"
+  },
+  {
+   "ctck": "SHS",
+   "ngay": "2026-08-11",
+   "kn": "KHẢ QUAN",
+   "tp": 20400,
+   "ln26": 417,
+   "ln27": 442,
+   "pp": "DCF",
+   "y": "Q2 lãi cao nhất lịch sử; rủi ro chính là đòn bẩy (vay 2,2 lần vốn chủ, lãi vay 6T bằng 24% LN gộp) — +1 điểm % lãi suất ≈ +44 tỷ/năm.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/tng_loi_nhuan_quy_cao_ky_luc_bien_loi_nhuan_phuc_hoi.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-07-21",
+   "kn": "MUA",
+   "tp": 26000,
+   "ln26": 493,
+   "ln27": 483,
+   "pp": "FCFF (r 13%, g 0%)",
+   "y": "Dự phóng 2026 lạc quan nhất (LNST 493 tỷ, biên gộp 15,4%), 2027 đi ngang (483 tỷ); thận trọng với đơn Q4/2026–Q1/2027 vì xung đột Mỹ – Iran.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/ctcp_dau_tu_va_thuong_mai_tng_tng_mua_tp_26_000vnd_duy_tri_tang_truong_khi_nganh_phuc_hoi.pdf"
+  },
+  {
+   "ctck": "VDS",
+   "ngay": "2026-06-01",
+   "kn": "MUA",
+   "tp": 30500,
+   "ln26": 436,
+   "ln27": 505,
+   "pp": "Tổng các phần: dệt may FCFF + CCN Sơn Cẩm",
+   "y": "Biên gộp giảm 4 quý liền vì lương và đơn giá giảm; CCN Sơn Cẩm định giá 242 tỷ (đã cho thuê 19/44 ha). Dùng 135 triệu cp (vốn góp 2026F 1.349 tỷ).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/Quan_ly_chi_phi_chat_che_la_chia_khoa_duy_tri_tang_truong.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. VDS (01/06) và Mirae Asset (21/07) ra trước đợt tạm ứng 1.000 đ/cp (GDKHQ 07/08/2026) nên trang trừ khoản này khỏi giá mục tiêu. Dự phóng 2026 của các CTCK lập trước KQKD Q3 (doanh thu 9T đã 85–87% dự phóng cả năm).",
+ "nguon": [
+  {
+   "ten": "Mirae Asset — Cập nhật KQKD Q3/2026",
+   "ngay": "21/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/20261021_ctcp_dau_tu_va_thuong_mai_tng_tng_mua_tp_25_000vnd_cap_nhat_ket_qua_kinh_doanh_q3_2026.pdf"
+  },
+  {
+   "ten": "Shinhan — Đơn hàng được đảm bảo đến hết năm 2026",
+   "ngay": "13/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/tng_mua_gia_mt_vnd_24_900_44_9_don_hang_duoc_dam_bao_den_het_nam_2026.pdf"
+  },
+  {
+   "ten": "SHS — Lợi nhuận quý cao kỷ lục, biên lợi nhuận phục hồi",
+   "ngay": "11/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/tng_loi_nhuan_quy_cao_ky_luc_bien_loi_nhuan_phuc_hoi.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Duy trì tăng trưởng khi ngành phục hồi",
+   "ngay": "21/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/ctcp_dau_tu_va_thuong_mai_tng_tng_mua_tp_26_000vnd_duy_tri_tang_truong_khi_nganh_phuc_hoi.pdf"
+  },
+  {
+   "ten": "VDS — Quản lý chi phí chặt chẽ là chìa khóa duy trì tăng trưởng",
+   "ngay": "01/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/TNG/Quan_ly_chi_phi_chat_che_la_chia_khoa_duy_tri_tang_truong.pdf"
+  },
+  {
+   "ten": "Pháp luật & Doanh nhân — Tạm ứng cổ tức đợt 1/2026 10%, chốt 10/08",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/lai-quy-ii-tang-manh-dau-tu-va-thuong-mai-tng-tng-du-chi-hon-128-ty-dong-tra-co-tuc.html"
+  },
+  {
+   "ten": "Thương hiệu & Công luận — Cổ tức 2025 lần 4 (5%), GDKHQ 06/05",
+   "ngay": "2026",
+   "link": "https://thuonghieucongluan.com.vn/tng-thong-bao-chia-co-tuc-nam-2025-lan-thu-4-voi-ty-le-5-a315267.html"
+  },
+  {
+   "ten": "Pháp luật & Doanh nhân — Cổ tức đợt 3/2025, chốt 26/01/2026",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/dau-tu-va-thuong-mai-tng-tng-du-chi-hon-60-ty-dong-de-tra-co-tuc-dot-3-nam-2025.html"
+  },
+  {
+   "ten": "Báo Văn hóa — Cổ tức đợt 2/2025 (5%), GDKHQ 12/11",
+   "ngay": "2025",
+   "link": "https://baovanhoa.vn/kinh-te/tng-tra-co-tuc-tien-mat-dot-22025-voi-ti-le-5-179196.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Kế hoạch 2026: doanh thu 9.500 tỷ, cổ tức tiền mặt",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/det-may-tng-ky-vong-doanh-thu-9500-ty-dong-duy-tri-co-tuc-tien-mat-53178.html"
+  },
+  {
+   "ten": "Pháp luật & Doanh nhân — ĐHĐCĐ 2026, cổ tức 16–20%",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/vinacapital-mua-manh-co-phieu-chinh-thuc-tro-thanh-co-dong-lon-tai-det-may-tng.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Phát hành 6,13 triệu cp ESOP",
+   "ngay": "2025",
+   "link": "https://mekongasean.vn/det-may-tng-chuan-bi-chao-ban-hon-6-trieu-co-phieu-esop-44877.html"
+  },
+  {
+   "ten": "Pháp luật & Doanh nhân — Vốn điều lệ sau ESOP",
+   "ngay": "2025",
+   "link": "https://doanhnhan.baophapluat.vn/dau-tu-va-thuong-mai-tng-tng-tang-von-dieu-le-len-hon-1300-ty-dong-88862.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Mỹ áp thuế 301 – lao động cưỡng bức 12,5% với hàng Việt Nam từ 24/7/2026; Bangladesh, Ấn Độ, Indonesia, Campuchia 10%, vài nước có TRQ.",
+     "ng": "Shinhan 13/08 · SHS 11/08"
+    },
+    {
+     "h": -1,
+     "t": "Hai nhánh 301 còn mở: dư thừa công suất (Việt Nam trong 16 nước) và sở hữu trí tuệ (kết luận dự kiến 29/11/2026); Allianz: cộng dồn ~15%.",
+     "ng": "Shinhan 13/08"
+    },
+    {
+     "h": 0,
+     "t": "Giá dầu, năng lượng cao và khả năng Fed nâng lãi suất; MAS cân nhắc nâng lãi suất yêu cầu khi định giá.",
+     "ng": "MAS 21/10"
+    },
+    {
+     "h": 1,
+     "t": "Việt Nam chiếm 21% nhập khẩu may mặc của Mỹ năm 2025 (+2,6 điểm %), thành nguồn cung lớn nhất; Trung Quốc chịu ~35%.",
+     "ng": "VDS 01/06 · Shinhan 13/08"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Bangladesh, Ấn Độ chưa đủ năng lực hàng kỹ thuật (áo khoác, đồ thể thao hiệu năng cao) — dư địa cho nhà máy Việt Nam làm hàng khó.",
+     "ng": "Shinhan 13/08"
+    },
+    {
+     "h": -1,
+     "t": "Nhà bán lẻ Âu – Mỹ đặt hàng thận trọng, ép giá; đơn giá sản phẩm giảm dần khi công nhân quen tay.",
+     "ng": "Shinhan 13/08 · VDS 01/06"
+    },
+    {
+     "h": -1,
+     "t": "Giá sợi bông và sợi nhân tạo tăng 5,8–11% từ đầu năm đến 5/2026; Poly có thể +15% theo giá dầu.",
+     "ng": "VDS 01/06"
+    },
+    {
+     "h": 0,
+     "t": "Xuất khẩu may mặc Việt Nam tạo đáy tháng 6/2026 (+2,6%), IIP may mặc +7,8%.",
+     "ng": "MAS 21/07"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Top 7 xuất khẩu may mặc Việt Nam (347 triệu USD), top 3 nhà cung cấp của Decathlon; trung tâm nghiên cứu sản phẩm chung với Decathlon từ cuối 2024.",
+     "ng": "Shinhan 13/08 · VDS 01/06"
+    },
+    {
+     "h": 0,
+     "t": "FOB cấp 1 ~85% doanh thu (biên 15–20%, phải vay mua nguyên liệu), CMT ~15% (biên 10–15%).",
+     "ng": "Shinhan 13/08"
+    },
+    {
+     "h": -1,
+     "t": "Nợ vay 4.194 tỷ (2,06 lần vốn chủ) trong khi chi 20% cổ tức tiền mặt/năm và góp 280 tỷ vào TNG Land.",
+     "ng": "BCTC Q3 · SHS 11/08"
+    },
+    {
+     "h": 0,
+     "t": "Gia đình Chủ tịch Nguyễn Văn Thời nắm ~30% (ông Thời 18,3%, TGĐ Nguyễn Đức Mạnh 11,5%); nước ngoài ~21,7%.",
+     "ng": "Shinhan 13/08 · MAS 21/10"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "May xuất khẩu",
+   "phu": "FOB cấp 1 ~85%, CMT ~15%; áo jacket, quần cargo, đồ thể thao, đồ trẻ em; ~20.000 lao động (MAS)",
+   "so": [
+    [
+     "Doanh thu 9T/2026",
+     "8.095 tỷ",
+     "+21%"
+    ],
+    [
+     "FOB 6T/2026",
+     "4.087 tỷ",
+     "+20%"
+    ],
+    [
+     "CMT 6T/2026",
+     "764 tỷ",
+     "+20%"
+    ],
+    [
+     "Biên gộp Q3/2026",
+     "14,1%",
+     "Q1: 12,1%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Khách hàng 7T/2026: Decathlon gần 30%, Haddad 15%, Asmara 12%, The Children's Place 4% doanh thu; châu Mỹ ~50%, châu Âu ~41%.",
+     "ng": "SHS 11/08"
+    },
+    {
+     "t": "Chi phí nhân công 2025: 2.763 tỷ (+20%), khối sản xuất +23%; tự động hóa tăng năng suất 30–40% trên mỗi đồng biến phí.",
+     "ng": "VDS 01/06"
+    },
+    {
+     "t": "Nguyên liệu ~60% chi phí; vải nhập chủ yếu từ Trung Quốc (52%), Hồng Kông (29%).",
+     "ng": "Shinhan 13/08"
+    }
+   ]
+  },
+  {
+   "ten": "Bất động sản",
+   "phu": "CCN Sơn Cẩm 1, 2 (Thái Nguyên); TNG Land (41,7%) — nhà ở xã hội TNG Việt Bắc",
+   "so": [
+    [
+     "Doanh thu 6T/2026",
+     "15 tỷ",
+     "+25%"
+    ],
+    [
+     "CCN Sơn Cẩm đã cho thuê",
+     "19/44 ha",
+     "chưa thực hiện 230 tỷ"
+    ],
+    [
+     "Vốn góp TNG Land",
+     "280 tỷ",
+     "+140 tỷ trong 6T/2026"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Giá thuê CCN Sơn Cẩm ~100 USD/m²; VDS giả định lấp đầy 25 ha còn lại trong 5 năm, định giá 242 tỷ.",
+     "ng": "VDS 01/06"
+    },
+    {
+     "t": "Nhà ở xã hội TNG Việt Bắc: 1,89 ha, ~2.418 dân, khởi công 23/02/2026, nhận hồ sơ mua đợt 1 từ Q3/2026.",
+     "ng": "SHS 11/08"
+    }
+   ]
+  }
+ ]
+}

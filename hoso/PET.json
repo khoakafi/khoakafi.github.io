@@ -1,0 +1,1565 @@
+{
+ "v": 2,
+ "ma": "PET",
+ "ten": "Tổng CTCP Dịch vụ Tổng hợp Dầu khí (Petrosetco)",
+ "nganh": "Phân phối điện thoại, máy tính; dịch vụ dầu khí",
+ "ky": "BCTC Q2/2026 (Q3/2026 chưa công bố) · giá 20/10/2026",
+ "cap_nhat": "2026-10-20",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 154.7,
+ "cp_ng": "154,7 triệu cp lưu hành = 106,7 triệu × 1,45 sau cổ tức cổ phiếu 5% và thưởng 40% (GDKHQ 09/07/2026, vốn điều lệ 1.553 tỷ); vốn điều lệ Q2/2026 trên VNDirect chưa đổi. Chưa gồm đợt chào bán 106,7 triệu cp giá 10.000 đ (chưa có ngày chốt quyền).",
+ "co_tuc": [],
+ "chia": [
+  [
+   "2026-07-09",
+   1.45
+  ]
+ ],
+ "tieu_de": {
+  "t": "Hơn nửa lãi đến từ PSD, nhưng thị trường trả {pe_conlai} lần LN 2027E cho phần còn lại"
+ },
+ "dong_mo": "6T/2026 LN cổ đông 141 tỷ (+71%), biên gộp 5,8% (cùng kỳ 4,5%) nhờ giá chip; PSD tạo 55% số lãi. Mô hình: LN 2026E 257 tỷ, 2027E 266 tỷ khi biên lùi. P/E từng phần + 50% Cape Pearl: {gt} ({up}); 3 dự án BT chưa tính vì chưa có quỹ đất.",
+ "luan_diem": [
+  {
+   "so": "×3,6",
+   "nhan": "LN hoạt động kinh doanh 6T/2026",
+   "tieu": "Lãi phân phối tăng vọt nhờ chu kỳ chip, chưa phải nền mới",
+   "t": "6T: doanh thu 13.080 tỷ (+50%), LN gộp − chi phí bán hàng, quản lý 319 tỷ (cùng kỳ 88). Biên gộp ngoài PSD 6,0% (cùng kỳ 4,2%), PSD 5,5% (5,1%): hàng tồn mua rẻ khi giá RAM tăng, thêm mô hình nhà phân phối Samsung từ 2025. Lần trước (2022 → 2023) biên HĐKD ngoài PSD từ 3,2% về 1,0%. Mô hình 2027E: HĐKD ngoài PSD −15%, LNST PSD −10%.",
+   "ng": "BCTC PET, PSD (VNDirect) · Vietcap 20/05 · mô hình"
+  },
+  {
+   "so": "55%",
+   "nhan": "LN cổ đông 6T/2026 đến từ PSD",
+   "tieu": "PSD gánh hơn nửa số lãi nhưng được trả 5–6 lần",
+   "t": "PSD (Samsung, Apple ngoài iPhone, máy tính; PET ~75%): 6T LNST 103 tỷ (+99%), LNTT đã 72% kế hoạch năm. Ở giá 20/10 PSD vốn hóa ~1.030 tỷ (70,2 triệu cp sau cổ tức cổ phiếu 30%), P/E 4 quý 5,3; phần PET nắm ~770 tỷ, chỉ 10% vốn hóa PET. Phần còn lại (7.000 tỷ) bằng 53 lần LN 2027E mô hình cho phần này.",
+   "ng": "BCTC PSD (VNDirect) · Doanh nhân 01/2025, 2026 · mô hình"
+  },
+  {
+   "so": "6.802 tỷ",
+   "nhan": "vay ngắn hạn 30/6/2026 (2,7 lần vốn chủ)",
+   "tieu": "Tăng trưởng bằng vốn vay; dự án mới còn cần 2.200 tỷ",
+   "t": "Phải thu 5.102 tỷ (+55% so với 30/6/2025), dòng tiền kinh doanh 6T âm hơn 1.000 tỷ; lãi vay 6T 197 tỷ, gấp 2,1 lần. Chứng khoán kinh doanh 472 tỷ giá gốc, riêng VIX 238,3 tỷ — VIX 30/9 thấp hơn 30/6 ~24%, quý 3 có thể trích thêm ~49 tỷ. Kế hoạch: góp 2.200 tỷ vào 3 liên doanh BT, chào bán 106,7 triệu cp giá 10.000 đ.",
+   "ng": "BCTC Q2 · Doanh nhân, VnBusiness 08/2026 · ĐHĐCĐ 24/4"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Giá đang trả trước cho 3 dự án BT chưa có quỹ đất",
+   "dk": "up_duoi:-20",
+   "t": "PSD × P/E 6,5 (trung vị PSD từ 2015: 6,7), phần còn lại × 11 (trung vị 10 mã cùng ngành 10,8; PET từ 2015: 9,3), Cape Pearl tính 50% hiện giá ~650 tỷ. Ở giá 20/10, vốn hóa cao hơn giá trị cơ sở ~5.100 tỷ: phần trả cho 3 liên doanh BT (PET 41–51%, tổng vốn 36.700 tỷ, đổi đất) chưa có vị trí, diện tích quỹ đất. Kịch bản xấu dùng P/E cao hơn tốt: LN đáy chu kỳ được trả bội số cao.",
+   "ng": "mô hình · BCTC VNDirect, giá 20/10 · ĐHĐCĐ 2026",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "Định giá từng phần: {up_so} so với giá hiện tại",
+    "t": "PSD × P/E 6,5 (trung vị PSD từ 2015: 6,7), phần còn lại × 11 (trung vị 10 mã cùng ngành 10,8; PET từ 2015: 9,3), Cape Pearl tính 50% hiện giá ~650 tỷ. 3 liên doanh BT (PET 41–51%, tổng vốn 36.700 tỷ, thanh toán bằng đất) chưa tính: chưa có vị trí, diện tích quỹ đất. Kịch bản xấu dùng P/E cao hơn tốt: LN đáy chu kỳ được trả bội số cao."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   258,
+   257,
+   266
+  ],
+  "ln_truoc": 150,
+  "eps": [
+   1668,
+   1661,
+   1719
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     21.8,
+     27.9,
+     29.3
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LNST PSD 100% (tỷ)",
+    "v": [
+     143,
+     201,
+     181
+    ]
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS trên 154,7 triệu cp (sau cổ tức cổ phiếu 5%, thưởng 40% tháng 7/2026), chưa gồm đợt chào bán. Cổ tức 2025 trả bằng cổ phiếu."
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông PET theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "PSD (phần của PET)",
+    "mau": "c2",
+    "v": [
+     107,
+     151,
+     136
+    ]
+   },
+   {
+    "ten": "Ngoài PSD: kinh doanh",
+    "mau": "c1",
+    "v": [
+     114,
+     209,
+     182
+    ]
+   },
+   {
+    "ten": "Tài chính ròng & khác",
+    "mau": "c4",
+    "v": [
+     37,
+     -103,
+     -52
+    ]
+   }
+  ],
+  "nhan": "PSD (phần của PET)",
+  "ng": "PSD: 75% LNST PSD. Ngoài PSD = hợp nhất trừ PSD; kinh doanh = LN gộp − chi phí bán hàng, quản lý; thuế, cổ đông thiểu số chia theo LNTT. 2025 gồm ~105 tỷ lãi chứng khoán; 2026E gồm dự phòng VIX. 2026E–2027E: mô hình."
+ },
+ "sotp": {
+  "con": [
+   {
+    "ma": "PSD",
+    "ten": "Dịch vụ Phân phối Tổng hợp Dầu khí",
+    "cp_trieu": 70.24,
+    "so_huu": 0.75,
+    "ln26": 201,
+    "ln27": 181,
+    "gtgd": 4,
+    "mau": "c2",
+    "kv": [
+     [
+      "MWG",
+      11.1
+     ],
+     [
+      "FRT",
+      23.0
+     ],
+     [
+      "DGW",
+      12.0
+     ],
+     [
+      "PNJ",
+      3.9
+     ],
+     [
+      "AST",
+      10.4
+     ],
+     [
+      "SVC",
+      3.9
+     ],
+     [
+      "HAX",
+      38.6
+     ],
+     [
+      "CRC",
+      9.8
+     ],
+     [
+      "BTT",
+      3.7
+     ],
+     [
+      "HTC",
+      16.5
+     ]
+    ],
+    "kv_tv": 10.8,
+    "kv_ten": "10 mã cùng ngành"
+   }
+  ],
+  "conlai": {
+   "ten": "PET ngoài PSD (gồm dự án)",
+   "ln27": 131,
+   "kv": [
+    [
+     "MWG",
+     11.1
+    ],
+    [
+     "FRT",
+     23.0
+    ],
+    [
+     "DGW",
+     12.0
+    ],
+    [
+     "PNJ",
+     3.9
+    ],
+    [
+     "AST",
+     10.4
+    ],
+    [
+     "SVC",
+     3.9
+    ],
+    [
+     "HAX",
+     38.6
+    ],
+    [
+     "CRC",
+     9.8
+    ],
+    [
+     "BTT",
+     3.7
+    ],
+    [
+     "HTC",
+     16.5
+    ]
+   ],
+   "kv_tv": 10.8,
+   "kv_ten": "10 mã cùng ngành"
+  },
+  "kv_chi_so": "P/E 4 quý (giá 20/10)",
+  "kv_max": 60,
+  "kv_ng": "Chấm xám: P/E 4 quý 10 mã cùng ngành vốn hóa lớn nhất, bỏ CTF (LN 4 quý 11 tỷ, P/E 160) — BCTC VNDirect, giá 20/10/2026",
+  "ng": "PSD: 70,24 triệu cp sau cổ tức cổ phiếu 30% (tháng 7/2026); PET sở hữu 76,93% (đầu 2025), PSD tăng vốn 4,2% quý 2/2026 — mô hình dùng 75%"
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông PET 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   257
+  ],
+  "cuoi": [
+   "2027E",
+   266
+  ],
+  "buoc": [
+   [
+    "PSD: doanh thu",
+    8
+   ],
+   [
+    "PSD: biên LNST",
+    -23
+   ],
+   [
+    "Ngoài PSD: doanh thu",
+    11
+   ],
+   [
+    "Ngoài PSD: biên HĐKD",
+    -44
+   ],
+   [
+    "Tài chính, dự phòng & khác",
+    57
+   ]
+  ],
+  "y": "Doanh thu còn tăng nhưng biên lùi về gần đỉnh chu kỳ trước (PSD 1,65%, HĐKD ngoài PSD 1,9%); 2026E đã gánh ~49 tỷ dự phòng VIX nên tài chính 2027 đỡ hơn.",
+  "ng": "mô hình"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo phần",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "PSD (tính 100%)"
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     7.8,
+     10.4,
+     11.0
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Biên LNST (%)",
+    "v": [
+     1.83,
+     1.92,
+     1.65
+    ],
+    "d": 2
+   },
+   {
+    "ten": "LNST (tỷ)",
+    "v": [
+     143,
+     201,
+     181
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "PET ngoài PSD"
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     14.0,
+     17.5,
+     18.4
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Biên HĐKD (%)",
+    "v": [
+     1.46,
+     2.36,
+     1.9
+    ],
+    "d": 2
+   },
+   {
+    "ten": "HĐKD (tỷ)",
+    "v": [
+     205,
+     412,
+     349
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tài chính ròng & khác (tỷ)",
+    "v": [
+     67,
+     -176,
+     -100
+    ]
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     21.8,
+     27.9,
+     29.3
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     452,
+     488,
+     475
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Cổ đông thiểu số (tỷ)",
+    "v": [
+     92,
+     116,
+     101
+    ]
+   },
+   {
+    "ten": "LN cổ đông PET (tỷ)",
+    "v": [
+     258,
+     257,
+     266
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     1668,
+     1661,
+     1719
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "PSD: BCTC riêng (VNDirect). Ngoài PSD = hợp nhất trừ PSD, chưa loại giao dịch nội bộ; HĐKD = LN gộp − chi phí bán hàng, quản lý. 2025 gồm ~105 tỷ lãi chứng khoán; 2026E = 6 tháng thực tế + 6 tháng ước tính (gồm dự phòng VIX quý 3)."
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu PSD: Q3 · Q4/2026 so cùng kỳ",
+   "v": [
+    "+5% · 0%",
+    "+18% · +12%",
+    "+28% · +22%"
+   ],
+   "ly_do": "Q1/2026 +87%, Q2 +40%: mô hình nhà phân phối Samsung chạy từ quý 2/2025 đã vào nền so sánh; kế hoạch 2026 9.000 tỷ"
+  },
+  {
+   "ten": "Biên LNST PSD: 2H/2026 · 2027",
+   "v": [
+    "1,60% · 1,30%",
+    "1,85% · 1,65%",
+    "2,00% · 1,90%"
+   ],
+   "ly_do": "Q1/2026 2,15%, Q2 1,85%; đỉnh chu kỳ trước 1,68% (2021), đáy 0,92% (2023)"
+  },
+  {
+   "ten": "Doanh thu ngoài PSD: Q3 · Q4/2026",
+   "v": [
+    "+10% · −10%",
+    "+25% · +5%",
+    "+35% · +15%"
+   ],
+   "ly_do": "6T/2026 +44%; Q4/2025 5.223 tỷ (+59%) là nền cao; doanh thu, kế hoạch năm: ĐHĐCĐ 23.000 tỷ"
+  },
+  {
+   "ten": "Biên HĐKD ngoài PSD: Q3 · Q4/2026",
+   "v": [
+    "2,0% · 1,5%",
+    "2,4% · 2,0%",
+    "2,7% · 2,3%"
+   ],
+   "ly_do": "6T/2026 2,59%; Q3/2025 2,42%, Q4/2025 1,53% (quý 4 biên thấp nhất năm)"
+  },
+  {
+   "ten": "Biên HĐKD ngoài PSD 2027",
+   "v": [
+    "1,3%",
+    "1,9%",
+    "2,4%"
+   ],
+   "ly_do": "2022 3,24% (đỉnh chip), 2023 0,98% (đáy), 2025 1,46%; Vietcap: giá RAM ổn định lại, hàng tồn giá thấp bán hết"
+  },
+  {
+   "ten": "Doanh thu 2027 (PSD và ngoài PSD)",
+   "v": [
+    "−8%",
+    "+5%",
+    "+12%"
+   ],
+   "ly_do": "So với 2026E. Năm sau đỉnh chip trước, PSD 2023 −22%; hãng mở rộng bán thẳng cho chuỗi lớn; Samsung, điện máy giúp đa dạng hóa"
+  },
+  {
+   "ten": "Tài chính ròng & khác: quý 2H/26 · 2027",
+   "v": [
+    "−35 · −120",
+    "−25 · −100",
+    "−15 · −60"
+   ],
+   "ly_do": "Ngoài PSD, tỷ đồng, chưa gồm chứng khoán: 6T/2026 −47 (lãi vay 120); quý 3 thêm dự phòng VIX −49 (tốt: một nửa)"
+  },
+  {
+   "ten": "P/E: PSD · ngoài PSD",
+   "v": [
+    "8,0 · 12",
+    "6,5 · 11",
+    "5,5 · 10"
+   ],
+   "ly_do": "PSD trung vị từ 2015 6,7, năm LN đáy 2023–24 9–13; cùng ngành trung vị 10,8, PET từ 2015 9,3; xấu dùng bội số cao hơn (LN đáy)"
+  },
+  {
+   "ten": "Cape Pearl: tỷ lệ tính",
+   "v": [
+    "0%",
+    "50%",
+    "100%"
+   ],
+   "ly_do": "Hiện giá nếu triển khai ~650 tỷ: doanh số 4.070 tỷ (90 triệu/m² căn hộ), biên ròng 25%, bán từ 2030, chiết khấu 12%; chưa giải phóng mặt bằng"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 196,
+   "ln27": 127,
+   "gia": 7.6,
+   "mo_ta": "Giá chip đảo chiều: biên PSD 1,30%, HĐKD ngoài PSD 1,3% năm 2027, doanh thu −8%; tài chính ròng −120 tỷ; Cape Pearl không tính; P/E 8,0 và 12"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 257,
+   "ln27": 266,
+   "gia": 17.1,
+   "mo_ta": "Biên lùi về gần đỉnh chu kỳ trước: PSD 1,65%, ngoài PSD 1,9%; doanh thu 2027 +5%; Cape Pearl 50%; P/E 6,5 và 11"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 326,
+   "ln27": 401,
+   "gia": 25.0,
+   "mo_ta": "Giá chip giữ cao: biên PSD 1,90%, ngoài PSD 2,4%; doanh thu 2027 +12%; Cape Pearl 100%; P/E 5,5 và 10; chưa tính dự án BT"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "P/E × LN 2027E từng phần + Cape Pearl",
+  "ck": 0,
+  "cp": 154.7,
+  "phan": [
+   {
+    "ten": "75% PSD",
+    "mau": "c2",
+    "sh": 0.75,
+    "x": [
+     118,
+     181,
+     232
+    ],
+    "boi": [
+     8,
+     6.5,
+     5.5
+    ],
+    "x_ten": "LNST 2027E PSD",
+    "boi_ten": "P/E",
+    "gt": [
+     708,
+     882,
+     957
+    ]
+   },
+   {
+    "ten": "PET ngoài PSD",
+    "mau": "c1",
+    "x": [
+     39,
+     131,
+     227
+    ],
+    "boi": [
+     12,
+     11,
+     10
+    ],
+    "x_ten": "LN cổ đông 2027E",
+    "sh": 1,
+    "boi_ten": "P/E",
+    "gt": [
+     468,
+     1441,
+     2270
+    ]
+   },
+   {
+    "ten": "Cape Pearl",
+    "mau": "c3",
+    "x": [
+     646,
+     646,
+     646
+    ],
+    "boi": [
+     0,
+     0.5,
+     1
+    ],
+    "x_ten": "hiện giá nếu triển khai (tỷ)",
+    "boi_ten": "tỷ lệ tính",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     0,
+     323,
+     646
+    ]
+   }
+  ],
+  "von": [
+   1176,
+   2646,
+   3873
+  ],
+  "gia": [
+   7.6,
+   17.1,
+   25.0
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   8.5,
+   8.1,
+   7.4,
+   7.7,
+   8.0,
+   8.2,
+   8.6,
+   6.9,
+   6.9,
+   6.9,
+   7.2,
+   6.4,
+   6.1,
+   6.1,
+   6.1,
+   6.0,
+   5.5,
+   5.8,
+   5.8,
+   6.7,
+   6.0,
+   5.8,
+   5.5,
+   5.4,
+   5.4,
+   6.6,
+   6.5,
+   6.6,
+   6.8,
+   7.4,
+   7.2,
+   7.1,
+   7.1,
+   7.0,
+   7.1,
+   7.9,
+   7.5,
+   7.1,
+   7.1,
+   6.9,
+   7.7,
+   7.4,
+   7.2,
+   6.8,
+   7.0,
+   6.8,
+   6.4,
+   6.1,
+   6.3,
+   4.7,
+   4.9,
+   4.8,
+   4.9,
+   4.7,
+   4.6,
+   4.1,
+   4.0,
+   4.1,
+   4.1,
+   4.1,
+   4.1,
+   5.0,
+   4.4,
+   4.8,
+   5.8,
+   5.8,
+   5.8,
+   7.4,
+   8.0,
+   7.6,
+   10.0,
+   10.0,
+   9.2,
+   11.1,
+   15.4,
+   13.5,
+   13.5,
+   12.9,
+   12.6,
+   13.5,
+   13.1,
+   15.2,
+   14.9,
+   18.1,
+   17.4,
+   25.5,
+   28.6,
+   22.5,
+   17.0,
+   15.6,
+   14.0,
+   21.7,
+   16.2,
+   11.2,
+   9.5,
+   9.4,
+   12.5,
+   15.2,
+   14.9,
+   18.3,
+   25.7,
+   27.4,
+   29.7,
+   34.9,
+   33.3,
+   25.3,
+   33.1,
+   37.8,
+   34.8,
+   26.7,
+   31.0,
+   26.1,
+   31.5,
+   28.1,
+   27.3,
+   23.1,
+   22.3,
+   22.1,
+   20.0,
+   19.8,
+   18.1,
+   17.6,
+   15.6,
+   13.3,
+   16.5,
+   17.2,
+   26.8,
+   21.2,
+   19.8,
+   19.6,
+   15.5,
+   16.8,
+   15.4,
+   17.1,
+   21.1,
+   19.5,
+   17.9,
+   20.4,
+   20.0,
+   19.0,
+   27.8,
+   24.9
+  ],
+  "p10": 5.0,
+  "p25": 6.6,
+  "tv": 9.3,
+  "thap": [
+   "2019-09",
+   4.0
+  ],
+  "nay": [
+   "2026-10",
+   24.9
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Trung vị P/E 4 quý của PET từ 2015 là 9,3; năm LN đáy 2023–2024 lên 25–38 lần, từ giữa 2025 ở 15–28 lần khi giá tăng nhanh hơn lãi. Hiện 24,9. Kịch bản dùng P/E 12 · 11 · 10 cho phần ngoài PSD, 8,0 · 6,5 · 5,5 cho PSD. Từ 7/2026 dùng 154,7 triệu cp."
+ },
+ "nhay": [
+  [
+   "Cape Pearl tính 0% hoặc 100%",
+   null,
+   2.1
+  ],
+  [
+   "Tài chính ròng 2027 ±50 tỷ",
+   26,
+   1.8
+  ],
+  [
+   "Biên HĐKD ngoài PSD 2027 ±0,2 điểm %",
+   19,
+   1.4
+  ],
+  [
+   "P/E phần ngoài PSD ±1 lần",
+   null,
+   0.8
+  ],
+  [
+   "Biên LNST PSD 2027 ±0,2 điểm %",
+   16,
+   0.7
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    8,
+    35,
+    77
+   ],
+   "ck": 105
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    47,
+    81,
+    108
+   ],
+   "ck": 71
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    196,
+    257,
+    326
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Mô hình: LN cổ đông 35 tỷ (cùng kỳ 105 tỷ có lãi chứng khoán); HĐKD ngoài PSD ~100 tỷ, LNST PSD ~48 tỷ; dự phòng VIX ~49 tỷ nếu chưa bán.",
+   "tac": [
+    "≥ 35 tỷ",
+    "giữ kịch bản cơ sở; HĐKD ngoài PSD dưới 70 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "biên gộp, lãi vay, dự phòng chứng khoán"
+  },
+  {
+   "khi": "Q3–Q4/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dự phòng danh mục chứng khoán",
+   "ct": "Chứng khoán kinh doanh 472 tỷ giá gốc (30/6, +42% từ đầu năm); VIX 238,3 tỷ đã trích 28,9 tỷ. Giá VIX 30/9 thấp hơn 30/6 ~24% (đã tính điều chỉnh 5%).",
+   "tac": [
+    "−49 tỷ LNTT",
+    "quý 3/2026 nếu còn giữ nguyên VIX"
+   ],
+   "theo_doi": "thuyết minh chứng khoán kinh doanh"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "hai",
+   "tieu": "Chào bán 106,7 triệu cp giá 10.000 đ",
+   "ct": "ĐHĐCĐ 24/4 thông qua, chưa có ngày chốt quyền; sau thưởng ~0,69 cp mới/cp. Thu 1.067 tỷ cho Cape Pearl, liên doanh hạ tầng, giảm nợ. Giá trị trên trang tính cho cổ phiếu hiện hữu (gồm quyền).",
+   "tac": [
+    "+69% số cp",
+    "giá lý thuyết sau quyền ~33,6 nghìn đ ở giá 20/10"
+   ],
+   "theo_doi": "ngày ĐKCC, tỷ lệ đặt mua"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "TP.HCM giao đất cho 3 dự án BT xử lý nước thải",
+   "ct": "Liên doanh với Gelex Infra, Viconship (PET 51%, 41%, 41%), tổng vốn 36.700 tỷ, thanh toán bằng quỹ đất; ban lãnh đạo kỳ vọng quyết định chậm nhất 9/2026 — chưa thấy công bố.",
+   "tac": [
+    "chưa định giá",
+    "chưa có vị trí, diện tích quỹ đất"
+   ],
+   "theo_doi": "quyết định của UBND TP.HCM"
+  },
+  {
+   "khi": "2027–2030",
+   "loai": "len",
+   "tieu": "Cape Pearl (Mũi Ngọc) khởi động",
+   "ct": "1,96 ha tại 12B Thanh Đa, quy hoạch 1/500 từ 2014 (600 căn hộ, 21 biệt thự), chưa giải phóng mặt bằng; Sun Group được giao khu đô thị Thanh Đa 423 ha ngay bên cạnh.",
+   "tac": [
+    "+2,1 nghìn đ/cp",
+    "nếu chắc chắn triển khai (cơ sở tính 50%)"
+   ],
+   "theo_doi": "giấy phép, giải phóng mặt bằng"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Giá chip hạ nhiệt, biên về mức đáy",
+   "ct": "Biên gộp 6T/2026 5,8% có phần lãi hàng tồn mua rẻ; lần trước (2022 → 2023) biên HĐKD ngoài PSD 3,2% → 1,0%, LN cổ đông −26%.",
+   "tac": [
+    "−5,3 nghìn đ/cp",
+    "nếu biên PSD, ngoài PSD 2027 như kịch bản xấu"
+   ],
+   "theo_doi": "biên gộp quý, giá DRAM"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Vốn góp 2.200 tỷ cho liên doanh BT",
+   "ct": "Bằng 88% vốn chủ công ty mẹ (2.499 tỷ, 30/6); nếu vay toàn bộ ở ~6%/năm, lãi vay thêm ~132 tỷ/năm khi dự án chưa có thu nhập.",
+   "tac": [
+    "−99 tỷ LN/năm",
+    "nếu vay toàn bộ; khoảng một nửa nếu chào bán đủ"
+   ],
+   "theo_doi": "tiến độ góp vốn, nợ vay công ty mẹ"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Đòn bẩy và dòng tiền âm",
+   "ct": "Vay ngắn hạn 6.802 tỷ (30/9/2024: 4.567), phải thu 5.102 tỷ; dòng tiền kinh doanh 6T âm hơn 1.000 tỷ; lãi vay 6T 197 tỷ.",
+   "tac": [
+    "−1,8 nghìn đ/cp",
+    "mỗi 50 tỷ chi phí tài chính ròng/năm"
+   ],
+   "theo_doi": "vòng quay phải thu, lãi vay"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Hãng bán thẳng cho chuỗi lớn",
+   "ct": "Chuỗi bán lẻ nhập trực tiếp từ hãng đã diễn ra nhiều năm; PET giữ vai trò nhờ kênh truyền thống, tỉnh lẻ. Mô hình nhà phân phối Samsung biên cao hơn nhưng chịu rủi ro tồn kho, công nợ.",
+   "tac": "",
+   "theo_doi": "doanh thu điện thoại, máy tính"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu theo quý: PSD và phần còn lại",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "PET ngoài PSD",
+     "v": [
+      4114,
+      3288,
+      2674,
+      2830,
+      3269,
+      5223,
+      3612,
+      4304
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "PSD",
+     "v": [
+      1540,
+      1312,
+      1343,
+      1886,
+      2215,
+      2376,
+      2517,
+      2647
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "6T/2026 13.080 tỷ (+50%): PSD +60% (Samsung, máy tính), ngoài PSD +44%.",
+   "ng": "BCTC hợp nhất PET, BCTC PSD (VNDirect); ngoài PSD = hợp nhất trừ PSD"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp theo quý",
+   "dv": "% doanh thu",
+   "kieu": "duong",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "PET ngoài PSD",
+     "v": [
+      4.3,
+      4.1,
+      4.8,
+      3.7,
+      5.2,
+      3.6,
+      6.1,
+      5.9
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "PSD",
+     "v": [
+      5.2,
+      7.9,
+      4.9,
+      5.2,
+      4.7,
+      5.9,
+      5.6,
+      5.5
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Ngoài PSD lên 6,1% quý 1/2026 — cao nhất 8 quý; lãi hàng tồn mua rẻ khi giá RAM tăng không lặp lại khi giá chip đứng.",
+   "ng": "BCTC PET, PSD (VNDirect), tự tính"
+  },
+  {
+   "ten": "LNTT hợp nhất theo nguồn",
+   "dv": "tỷ đồng",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "HĐKD (LN gộp − CPBH − QLDN)",
+     "v": [
+      63,
+      86,
+      46,
+      42,
+      109,
+      118,
+      159,
+      159
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tài chính ròng & khác",
+     "v": [
+      29,
+      -9,
+      15,
+      36,
+      74,
+      12,
+      -33,
+      -28
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Tài chính ròng từ +74 tỷ (Q3/2025, lãi chứng khoán) thành −33 và −28 tỷ: lãi vay 6T 197 tỷ (gấp 2,1 lần), dự phòng VIX.",
+   "ng": "BCTC hợp nhất PET (VNDirect)"
+  },
+  {
+   "ten": "Vay ngắn hạn, phải thu, tồn kho",
+   "dv": "tỷ đồng",
+   "kieu": "duong",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Vay ngắn hạn",
+     "v": [
+      4567,
+      4980,
+      4648,
+      5510,
+      6337,
+      7055,
+      7222,
+      6802
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Phải thu ngắn hạn",
+     "v": [
+      3123,
+      2387,
+      2763,
+      3295,
+      3909,
+      4663,
+      5505,
+      5102
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "Tồn kho",
+     "v": [
+      1266,
+      1718,
+      1708,
+      1742,
+      1418,
+      1631,
+      1462,
+      1919
+     ],
+     "mau": "c3",
+     "net": false
+    }
+   ],
+   "so_le": 0,
+   "y": "Vay ngắn hạn 4.567 → 6.802 tỷ trong 7 quý (+49%), song song phải thu; tiền và tiền gửi 4.551 tỷ (30/6).",
+   "ng": "BCTC hợp nhất PET (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 23000,
+    "th": 13080,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 24/4 · BCTC Q2"
+   },
+   {
+    "ten": "LNST hợp nhất",
+    "kh": 318.4,
+    "th": 196,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 24/4 · BCTC Q2"
+   },
+   {
+    "ten": "LNTT PSD",
+    "kh": 180,
+    "th": 129,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ PSD 2026 · BCTC PSD Q2"
+   }
+  ],
+  "y": "6T đạt 62% LNST kế hoạch (đặt −9% so với 2025); mô hình cho LNST hợp nhất 2026E 370 tỷ, 117% kế hoạch dù quý 3 trích dự phòng VIX.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "Vietcap",
+   "ngay": "2026-05-20",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "ln26": 258,
+   "ln27": null,
+   "pp": "EPS trượt × P/E trung vị ngành + Mũi Ngọc",
+   "y": "LN cổ đông 2026 đi ngang 258 tỷ vì thu nhập tài chính −81%; biên LNTT phân phối +14 điểm cơ bản nhờ hàng tồn giá thấp. Ước Mũi Ngọc +13.280 đ/cp (106,7 triệu cp cũ); chưa tính 3 dự án BT.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PET/Mang_phan_phoi_tiep_tuc_dan_dat_tiem_nang_tang_gia_tu_cac_du_an_moi.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — Vietcap 20/05 không đưa khuyến nghị, giá mục tiêu; số trên cổ phiếu của báo cáo tính trên 106,7 triệu cp, trước cổ tức cổ phiếu 5% và thưởng 40% (GDKHQ 09/07/2026). Không có CTCK nào khác theo dõi PET trong 8 tháng; mô hình tự dựng từ BCTC PET, PSD và công bố.",
+ "nguon": [
+  {
+   "ten": "Vietcap — Mảng phân phối tiếp tục dẫn dắt; tiềm năng tăng giá từ các dự án mới",
+   "ngay": "20/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PET/Mang_phan_phoi_tiep_tuc_dan_dat_tiem_nang_tang_gia_tu_cac_du_an_moi.pdf"
+  },
+  {
+   "ten": "Mekong ASEAN — Petrosetco phát hành 48 triệu cổ phiếu, nâng vốn lên 1.553 tỷ đồng",
+   "ngay": "07/2026",
+   "link": "https://mekongasean.vn/petrosetco-phat-ha-nh-48-trieu-co-phieu-nang-von-len-1553-ty-do-ng-55921.html"
+  },
+  {
+   "ten": "Mekong ASEAN — chốt ngày phát hành 48 triệu cổ phiếu (GDKHQ 09/07, ĐKCC 10/07)",
+   "ngay": "07/2026",
+   "link": "https://mekongasean.vn/petrosetco-chot-nga-y-phat-ha-nh-48-trieu-co-phieu-nang-von-len-1554-ty-do-ng-56775.html"
+  },
+  {
+   "ten": "Doanh nhân (Báo Pháp luật) — PET trình 3 phương án tăng vốn: Cape Pearl và hạ tầng",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/petrosetco-pet-trinh-3-phuong-an-tang-von-don-luc-dau-tu-du-an-cape-pearl-va-ha-tang.html"
+  },
+  {
+   "ten": "Vietstock — Petrosetco plans 106.7 million share rights issue",
+   "ngay": "04/2026",
+   "link": "https://en.vietstock.vn/2026/04/petrosetco-plans-1067-million-share-rights-issue-52011-630207.htm"
+  },
+  {
+   "ten": "Mekong ASEAN — chào bán 107 triệu cổ phiếu, góp 2.200 tỷ vào 3 liên doanh hạ tầng",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/petrosetco-cha-o-ban-107-trieu-co-phieu-gop-2200-ty-do-ng-va-o-3-lien-doanh-ha-ta-ng-53469.html"
+  },
+  {
+   "ten": "VietnamFinance — Petrosetco chi 2.200 tỷ đầu tư hạ tầng, hệ sinh thái Gelex",
+   "ngay": "2026",
+   "link": "https://vietnamfinance.vn/petrosetco-chi-2200-ty-dau-tu-ha-tang-do-von-lon-vao-he-sinh-thai-gelex-d145292.html"
+  },
+  {
+   "ten": "Báo Đầu tư — ĐHĐCĐ Petrosetco: 3 dự án hạ tầng xử lý nước tại TP.HCM",
+   "ngay": "04/2026",
+   "link": "https://baodautu.vn/dhdcd-petrosetco-he-lo-trien-khai-3-du-an-ha-tang-xu-ly-nuoc-quy-mo-tai-tphcm-d576645.html"
+  },
+  {
+   "ten": "Tin nhanh Chứng khoán — Petrosetco: áp lực vốn cho chiến lược mở rộng",
+   "ngay": "2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/petrosetco-pet-ap-luc-von-cho-chien-luoc-mo-rong-post395156.html"
+  },
+  {
+   "ten": "DNSE — Nửa đầu 2026, Petrosetco hoàn thành hơn 63% kế hoạch năm",
+   "ngay": "08/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/nua-dau-nam-2026-petrosetco-hoan-thanh-hon-63-ke-hoach-nam-35255381"
+  },
+  {
+   "ten": "Doanh nhân — PET âm dòng tiền nghìn tỷ, đẩy mạnh ôm cổ phiếu VIX",
+   "ngay": "08/2026",
+   "link": "https://doanhnhan.baophapluat.vn/loi-nhuan-tang-vot-91-petrosetco-pet-van-am-dong-tien-nghin-ty-va-day-manh-om-co-phieu-vix.md"
+  },
+  {
+   "ten": "VnBusiness — Petrosetco dòng tiền âm hơn 1.000 tỷ đồng",
+   "ngay": "08/2026",
+   "link": "https://vnbusiness.vn/doanh-thu-vuot-13000-ty-dong-petrosetco-van-dau-dau-vi-dong-tien-am-hon-1000-ty-dong.html"
+  },
+  {
+   "ten": "VietnamFinance — Đại gia phân phối ICT rót thêm trăm tỷ vào chứng khoán",
+   "ngay": "08/2026",
+   "link": "https://vietnamfinance.vn/dai-gia-phan-phoi-ict-lai-to-nua-dau-nam-rot-them-tram-ty-vao-chung-khoan-d148398.html"
+  },
+  {
+   "ten": "Doanh nhân — PSD chốt quyền cổ tức 30% bằng cổ phiếu, mục tiêu doanh thu 9.000 tỷ",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/dich-vu-phan-phoi-tong-hop-dau-khi-psd-chot-quyen-tra-co-tuc-30-bang-co-phieu-de-trinh-muc-tieu-doanh-thu-9-000-ty-dong.html"
+  },
+  {
+   "ten": "Doanh nhân — PSD dự chi 52 tỷ cổ tức 2024 (PET sở hữu 76,93%)",
+   "ngay": "2025",
+   "link": "https://doanhnhan.baophapluat.vn/loi-nhuan-nam-2024-tang-30-dich-vu-phan-phoi-tong-hop-dau-khi-psd-du-chi-52-ty-dong-tra-co-tuc-80648.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — Hậu thoái vốn nhà nước, Petrosetco hé lộ loạt tham vọng lớn",
+   "ngay": "04/2026",
+   "link": "https://nhadautu.vn/hau-thoai-von-nha-nuoc-petrosetco-he-lo-loat-tham-vong-lon-sap-don-nhan-nha-dau-tu-chien-luoc-d104069.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Chi phí leo thang, Petrosetco vẫn báo lãi quý 2 tăng mạnh",
+   "ngay": "07/2026",
+   "link": "https://mekongasean.vn/chi-phi-leo-thang-petrosetco-van-bao-lai-quy-2-tang-manh-57949.html"
+  },
+  {
+   "ten": "24hmoney — Công ty con trả cổ tức, Petrosetco hưởng lợi (PSD: Samsung, Apple ngoài iPhone)",
+   "ngay": "2024",
+   "link": "https://24hmoney.vn/news/cong-ty-con-khoi-dong-tra-co-tuc-2023-petrosetco-pet-huong-loi-lon-c1a2190577"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Giá DRAM tăng mạnh từ 2025 khi các hãng ưu tiên chip nhớ cao cấp cho AI; giá thiết bị tăng đẩy doanh thu và lãi hàng tồn của nhà phân phối.",
+     "ng": "Vietcap 20/05 (CoreWave)"
+    },
+    {
+     "h": -1,
+     "t": "Khi giá RAM ổn định và hàng tồn giá thấp bán hết, biên phân phối giảm lại — Vietcap dự báo từ nửa sau 2026.",
+     "ng": "Vietcap 20/05"
+    },
+    {
+     "h": -1,
+     "t": "Thị trường chứng khoán giảm quý 3/2026: VIX (mã lớn nhất trong danh mục PET) −24% từ 30/6 đến 30/9.",
+     "ng": "VNDirect, tự tính"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 0,
+     "t": "Chuỗi bán lẻ lớn nhập thẳng từ hãng; hãng vẫn giữ nhà phân phối cho kênh truyền thống và tỉnh lẻ vì thị trường phân mảnh, chi phí phủ kênh cao.",
+     "ng": "Vietcap 20/05 (ban lãnh đạo PET)"
+    },
+    {
+     "h": 1,
+     "t": "Cùng chu kỳ: DGW biên gộp quý 2/2026 13,0% — cao nhất từ 2014; doanh thu quý 3/2026 +46% (sơ bộ).",
+     "ng": "hồ sơ DGW trên trang"
+    },
+    {
+     "h": 0,
+     "t": "P/E 4 quý trung vị 10 mã cùng ngành 10,8 (giá 20/10, bỏ CTF); PSD 5,3, PET 24,4.",
+     "ng": "BCTC VNDirect, giá 20/10"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 0,
+     "t": "Phân phối điện thoại, máy tính 76% doanh thu 2025; còn lại dịch vụ dầu khí (cung ứng, logistics, nhân lực), catering (99% thị phần dầu khí), bất động sản.",
+     "ng": "Vietcap 20/05"
+    },
+    {
+     "h": 0,
+     "t": "Nhà nước đã thoái vốn; Quỹ HD nắm 16,74% (5/2026); danh mục chứng khoán tập trung hệ sinh thái Gelex (VIX, GEX); 3 liên doanh hạ tầng với Gelex Infra.",
+     "ng": "Vietcap 20/05 · VietnamFinance"
+    },
+    {
+     "h": -1,
+     "t": "Vốn chủ công ty mẹ 2.499 tỷ (30/6) cho kế hoạch góp 2.200 tỷ vào liên doanh và Cape Pearl: cần chào bán và vay thêm.",
+     "ng": "BCTC Q2 · ĐHĐCĐ 2026"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "PSD — phân phối Samsung, Apple ngoài iPhone, máy tính",
+   "phu": "niêm yết HNX · PET ~75% · 55% LN cổ đông 6T/2026",
+   "so": [
+    [
+     "Doanh thu 6T",
+     "5.164 tỷ",
+     "+60%"
+    ],
+    [
+     "LNST 6T",
+     "103 tỷ",
+     "+99%"
+    ],
+    [
+     "Biên gộp Q2",
+     "5,5%",
+     "Q2/2025 5,2%"
+    ],
+    [
+     "Kế hoạch LNTT 2026",
+     "180 tỷ",
+     "6T đạt 72%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Phân phối điện thoại Samsung, Apple ngoài iPhone (iPad, Mac) và máy tính; từ 2025 PET phân phối Samsung theo mô hình nhà phân phối (mua đứt bán đoạn) — biên cao hơn, chịu rủi ro tồn kho, công nợ.",
+     "ng": "24hmoney 2024 · Vietcap 20/05"
+    },
+    {
+     "t": "Cổ tức 2025 bằng cổ phiếu 30% (giữ tiền cho mở rộng, giảm vay ngân hàng); dự kiến 10% cho 2026.",
+     "ng": "Doanh nhân 2026"
+    },
+    {
+     "t": "Vay ngắn hạn PSD 2.897 tỷ, lãi vay 6T 77 tỷ (30/6/2026).",
+     "ng": "BCTC PSD (VNDirect)"
+    }
+   ]
+  },
+  {
+   "ten": "PET ngoài PSD — điện thoại, dịch vụ dầu khí, catering, bất động sản",
+   "phu": "công ty mẹ và các công ty con khác · hợp nhất trừ PSD",
+   "so": [
+    [
+     "Doanh thu 6T",
+     "7.916 tỷ",
+     "+44%"
+    ],
+    [
+     "Biên gộp 6T",
+     "6,0%",
+     "6T/2025 4,2%"
+    ],
+    [
+     "HĐKD 6T",
+     "205 tỷ",
+     "6T/2025 46 tỷ"
+    ],
+    [
+     "Lãi vay 6T",
+     "120 tỷ",
+     "6T/2025 61 tỷ"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Nhà phân phối Apple từ 2020 (mô hình giao nhận, hưởng phí, không chịu tồn kho); catering dầu khí 99% thị phần, mở rộng sang suất ăn khu công nghiệp, bệnh viện.",
+     "ng": "Vietcap 20/05"
+    },
+    {
+     "t": "Cape Pearl (Mũi Ngọc) 1,96 ha tại 12B Thanh Đa: 600 căn hộ, 21 biệt thự theo quy hoạch 1/500 năm 2014; Vietcap ước sơ bộ ~1.420 tỷ chưa chiết khấu thời gian.",
+     "ng": "Vietcap 20/05"
+    },
+    {
+     "t": "Thiểu số hưởng ~30% LNST hoạt động ngoài PSD (tự tính từ quý 3/2025; trước đó ~15%) — một phần lãi tăng thêm nằm ở công ty con có cổ đông khác.",
+     "ng": "BCTC PET, PSD (VNDirect)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1383 @@
+{
+ "v": 2,
+ "ma": "BSR",
+ "ten": "Tổng Công ty Lọc hóa dầu Việt Nam (Lọc hóa dầu Bình Sơn)",
+ "nganh": "Lọc hóa dầu",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026 (kế hoạch 2027, lịch TA6)",
+ "cp_trieu": 5007.3,
+ "cp_ng": "Vốn điều lệ 50.073 tỷ (BCTC Q3/2026), sau đợt cổ tức + cổ phiếu thưởng 61,5% (chốt quyền 30/10/2025)",
+ "co_tuc": [
+  [
+   "2026-08-11",
+   300,
+   "cổ tức 2025 bằng tiền 3%, thanh toán 11/09/2026"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Quý 3 kỷ lục đã vào giá, năm bảo dưỡng 2027 thì chưa",
+  "dk": "up_duoi:5",
+  "khac": "Quý 3 lãi kỷ lục, nhưng LN 2027 chỉ còn ~30% năm 2026: crack spread và lịch TA6 quyết định giá trị"
+ },
+ "dong_mo": "Q3 lãi kỷ lục 8.968 tỷ đưa LN 2026E lên 31.260 tỷ, nhưng 2027 gặp cùng lúc crack bình thường hóa, bảo dưỡng TA6 ~50 ngày và lỗ tồn kho: LN cơ sở 9.517 tỷ (−70%). Lọc dầu P/E 10 cộng tiền ròng (45 nghìn tỷ ngày 30/9 và lãi Q4) cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "8.968",
+   "nhan": "tỷ LN cổ đông Q3/2026, kỷ lục",
+   "tieu": "Q3 bác bỏ giả định biên đã qua đỉnh",
+   "t": "Q3 lãi cổ đông 8.968 tỷ, gấp ~10 lần cùng kỳ, vượt 94% mô hình cơ sở cũ (4.623) và ước sơ bộ 6.900 tỷ của chính BSR ngày 15/10. Lãi gộp/tấn 4,71 triệu đ, cao hơn Q2 (4,40): crack diesel bình quân 9T 40,8 USD/thùng, Jet A1 42,6 (6T: 30 và 32; 2025: 9–10), tức Q3 còn cao hơn nửa đầu năm. 9T lãi 24.899 tỷ; mô hình cơ sở 2026E 31.260 tỷ, gấp 6,0 lần 2025.",
+   "ng": "BCTC Q3/2026 · BSR (hội thảo NĐT 15/10) · mô hình"
+  },
+  {
+   "so": "−70%",
+   "nhan": "LN 2027E so với 2026E (cơ sở)",
+   "tieu": "2027: biên bình thường hóa đúng năm bảo dưỡng",
+   "t": "Ba lực cùng chiều: crack về ~13 USD/thùng (KBSV 12, MBS ~10; nâng từ 12 vì khủng hoảng kéo sang Q4) kéo biên trước khấu hao từ 4,59 về 2,1 triệu đ/tấn; TA6 dừng máy ~50 ngày làm mất ~1,2 triệu tấn trong khi khấu hao 2,2 nghìn tỷ vẫn tính đủ; giá dầu −10% gây lỗ tồn kho ~1,5 nghìn tỷ. LN 2027E cơ sở 9.517 tỷ, trên KBSV (4.785) và MBS (9.021); đồng thuận Bloomberg 15.547 ứng với kịch bản tốt.",
+   "ng": "KBSV 11/09 · MBS 18/08 · mô hình"
+  },
+  {
+   "so": "9,0",
+   "nhan": "nghìn đ/cp tiền ròng 30/9/2026",
+   "tieu": "Tiền ròng đỡ giá trị, nhưng đã có chỗ tiêu",
+   "t": "Tiền và tiền gửi 58,7 nghìn tỷ, vay 13,5 nghìn tỷ (30/9, đã trả cổ tức): tiền ròng ~33% vốn hóa; lãi tiền gửi ròng 9T 1,3 nghìn tỷ sau thuế. Định giá tách hai phần: lọc dầu P/E 10 × LN lọc dầu 2027E 9.555 tỷ, cộng tiền ròng (cộng LN Q4/2026E) → {gt}. Vốn cho NCMR (capex 2026–2028 ~36,7 nghìn tỷ, 60% vốn chủ) coi như đáng giá bằng vốn bỏ ra.",
+   "ng": "BCTC Q3/2026 · MBS 18/08 · mô hình"
+  },
+  {
+   "so": "0,83",
+   "nhan": "P/B ở đỉnh lợi nhuận trước (12/2022)",
+   "tieu": "Đỉnh lần này được trả giá cao hơn hẳn lần trước",
+   "dk": "up_duoi:5",
+   "t": "Ở đỉnh LN trước (LN 4 quý 15,6 nghìn tỷ), 12/2022 BSR chỉ được trả P/E 2,6 và P/B 0,83; nay LN 4 quý 28,0 nghìn tỷ, P/E 4,9, P/B 1,66 (giá 30/10, BCTC Q3; trung vị P/B từ 2018: 1,26). Giá trị cơ sở {gt_so} đã tương đương P/B 1,62 vốn chủ cuối 2026E và P/E 15,3 LN 2027E. Cán cân lên/xuống {rr}: kịch bản tốt cần crack giữ 16–17 USD/thùng suốt 2027.",
+   "ng": "Giá, BCTC VNDirect · mô hình",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị cơ sở 12 tháng (nghìn đ)",
+    "tieu": "Giá đã về gần giá trị cơ sở: {up_so}",
+    "t": "Lọc dầu P/E 10 × LN lọc dầu 2027E cộng tiền ròng. Kịch bản xấu (crack ~9 USD, giá dầu −20%, TA6 ~60 ngày) 17,8; tốt (crack 16–17 USD, TA6 ~45 ngày) 34,5 nghìn đ/cp. Ở đỉnh LN 12/2022 thị trường chỉ trả P/B 0,83."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   5214,
+   31260,
+   9517
+  ],
+  "ln_truoc": 631,
+  "eps": [
+   1041,
+   6243,
+   1901
+  ],
+  "bv": [
+   12079,
+   17945,
+   19845
+  ],
+  "co_tuc_nam": 300,
+  "them": [
+   {
+    "ten": "Sản lượng tiêu thụ (nghìn tấn)",
+    "v": [
+     7907,
+     8130,
+     6950
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     9.0,
+     41.6,
+     10.1
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. Sản lượng 2025: MBS 18/08. Cổ tức 300 đ/cp là cổ tức 2025 trả bằng tiền (GDKHQ 11/08/2026)."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo nguồn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Lọc dầu (gồm lãi/lỗ tồn kho)",
+    "mau": "c1",
+    "v": [
+     3967,
+     29575,
+     8197
+    ]
+   },
+   {
+    "ten": "Lãi tiền gửi ròng",
+    "mau": "c3",
+    "v": [
+     1247,
+     1685,
+     1320
+    ]
+   }
+  ],
+  "nhan": "Lọc dầu (gồm lãi/lỗ tồn kho)",
+  "ng": "Lãi tiền gửi ròng = doanh thu tài chính − chi phí tài chính, sau thuế. 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/B 2025",
+  "chi_so_kv": "P/B 2025F",
+  "nhom": "Lọc hóa dầu khu vực (MBS)",
+  "kv": [
+   [
+    "Gujarat State Petronet",
+    1.5
+   ],
+   [
+    "S-Oil",
+    0.7
+   ],
+   [
+    "IRPC",
+    0.3
+   ],
+   [
+    "Chevron",
+    2.0
+   ],
+   [
+    "Bangchak Sriracha",
+    0.8
+   ],
+   [
+    "Star Petroleum Refining",
+    0.6
+   ]
+  ],
+  "tv": 0.75,
+  "moi_cp": 12079,
+  "max": 4,
+  "y": "BSR tính trên giá trị sổ sách 31/12/2025 (12.079 đ/cp); theo vốn chủ 30/9/2026 (16.674 đ) P/B ~1,7. Nhóm khu vực ROE 2025F 3–15%; BSR 2026E ~42% nhưng 2027E ~10%.",
+  "ng": "P/B 2025F: MBS 18/08 (Bloomberg)"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: sản lượng × biên lọc dầu",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Sản lượng và biên lọc dầu"
+   },
+   {
+    "ten": "Sản lượng tiêu thụ (nghìn tấn)",
+    "v": [
+     7907,
+     8130,
+     6950
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên trước khấu hao (triệu đ/tấn)",
+    "v": [
+     1.05,
+     4.59,
+     2.1
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Khấu hao",
+    "v": [
+     2202,
+     2180,
+     2200
+    ]
+   },
+   {
+    "ten": "Lãi/lỗ tồn kho",
+    "v": [
+     null,
+     null,
+     -1543
+    ]
+   },
+   {
+    "ten": "Lãi gộp",
+    "v": [
+     6114,
+     35130,
+     10852
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp mỗi tấn (triệu đ)",
+    "v": [
+     0.77,
+     4.32,
+     1.56
+    ],
+    "d": 2
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     141582,
+     221617,
+     142475
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên lợi nhuận gộp (%)",
+    "v": [
+     4.3,
+     15.9,
+     7.6
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Chi phí bán hàng + QLDN",
+    "v": [
+     1576,
+     1951,
+     1567
+    ]
+   },
+   {
+    "ten": "Thu nhập tài chính ròng",
+    "v": [
+     1436,
+     1895,
+     1500
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     6005,
+     35145,
+     10815
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Thuế suất hiệu dụng (%)",
+    "v": [
+     13.2,
+     11.1,
+     12.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     5214,
+     31260,
+     9517
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     1041,
+     6243,
+     1901
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Biên trước khấu hao = (lãi gộp + khấu hao) ÷ sản lượng; 2025A–2026E đã gồm lãi/lỗ tồn kho (BCTC không tách). 2026E = 9 tháng thực tế + Q4 ước tính. ±1 USD/thùng crack ≈ ±0,2 triệu đ/tấn (~7,8 thùng/tấn, 26.200 đ/USD)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   31260
+  ],
+  "cuoi": [
+   "2027E",
+   9517
+  ],
+  "buoc": [
+   [
+    "Biên lọc dầu bình thường hóa",
+    -17808
+   ],
+   [
+    "Sản lượng: TA6 ~50 ngày",
+    -2181
+   ],
+   [
+    "Lỗ tồn kho (giá dầu −10%)",
+    -1358
+   ],
+   [
+    "Chi phí, tài chính, thuế",
+    -396
+   ]
+  ],
+  "y": "~82% mức giảm là biên: từ 4,59 (gồm lãi tồn kho 9T) về 2,1 triệu đ/tấn. TA6 lấy thêm ~2,2 nghìn tỷ, lỗ tồn kho ~1,4 nghìn tỷ.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Lãi gộp/tấn Q4/2026 (triệu đ)",
+   "v": [
+    "1,2",
+    "3,5",
+    "4,7"
+   ],
+   "ly_do": "Thực tế Q2 4,40, Q3 4,71; đầu 10 Brent vẫn > 100 USD. Xấu: giá dầu −25% (lỗ tồn kho), crack ~15; cơ sở: crack bắt đầu hạ; tốt: giữ mức Q3"
+  },
+  {
+   "ten": "Sản lượng 2027 (triệu tấn)",
+   "v": [
+    "6,6",
+    "6,95",
+    "7,25"
+   ],
+   "ly_do": "TA6 ~50 ngày (KBSV); TA5 (3–5/2024) 48 ngày; năm không bảo dưỡng ~8,15 ở 124% công suất (9T/2026: 6,08); kế hoạch 2026: 7,71"
+  },
+  {
+   "ten": "Biên lọc dầu 2027, trước khấu hao (triệu đ/tấn)",
+   "v": [
+    "1,1",
+    "2,1",
+    "2,9"
+   ],
+   "ly_do": "2025: 1,05 (crack ~9 USD); 9T/26: 4,87. Cơ sở ≈ crack 13 (nâng từ 12: khủng hoảng kéo sang Q4; KBSV 12, MBS ~10); tốt ≈ 16–17"
+  },
+  {
+   "ten": "Giá dầu cuối 2027 so với cuối 2026",
+   "v": [
+    "−20%",
+    "−10%",
+    "0%"
+   ],
+   "ly_do": "Lãi/lỗ tồn kho = tồn kho 15,4 nghìn tỷ (30/9) × % đổi giá; MBS: Brent bình quân 87 USD (2026) → 73 (2027)"
+  },
+  {
+   "ten": "Thu nhập tài chính ròng 2027 (tỷ)",
+   "v": [
+    "1.200",
+    "1.500",
+    "1.800"
+   ],
+   "ly_do": "Tiền + tiền gửi 58,7 nghìn tỷ, vay 13,5 (30/9); 2025: 1.436; 9T/26: 1.445; capex NCMR 2027 14,6 nghìn tỷ"
+  },
+  {
+   "ten": "P/E lọc dầu trên LN lọc dầu 2027E",
+   "v": [
+    "13",
+    "10",
+    "8"
+   ],
+   "ly_do": "Giá trị DN/LN hoạt động 4 quý từ 2018: trung vị 9,1, 25% 4,9, 75% 15,1 (BCTC, giá). LN đáy được trả P/E cao; nay 5,2 trên LN đỉnh"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 27081,
+   "ln27": 1765,
+   "gia": 17.8,
+   "mo_ta": "Hormuz thông sớm: crack ~9 USD (biên 1,1 triệu đ/tấn ≈ 2025), giá dầu −20%; TA6 ~60 ngày, 6,6 triệu tấn; P/E lọc dầu 13"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 31260,
+   "ln27": 9517,
+   "gia": 29.1,
+   "mo_ta": "Crack ~13 USD (biên 2,1), giá dầu −10%; TA6 ~50 ngày, 6,95 triệu tấn; P/E lọc dầu 10"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 33545,
+   "ln27": 16457,
+   "gia": 34.5,
+   "mo_ta": "Crack giữ ~16–17 USD (biên 2,9), giá dầu đi ngang; TA6 ~45 ngày, 7,25 triệu tấn; P/E lọc dầu 8"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "Lọc dầu: P/E × LN lọc dầu 2027E; cộng tiền ròng",
+  "ck": 0,
+  "cp": 5007.3,
+  "phan": [
+   {
+    "ten": "Lọc dầu",
+    "mau": "c1",
+    "x": [
+     3425,
+     9555,
+     14873
+    ],
+    "boi": [
+     13,
+     10,
+     8
+    ],
+    "x_ten": "LN lọc dầu 2027E (bỏ lãi tiền gửi, tồn kho)",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     44525,
+     95550,
+     118984
+    ]
+   },
+   {
+    "ten": "Tiền ròng",
+    "mau": "c3",
+    "x": [
+     44593,
+     50129,
+     53772
+    ],
+    "boi": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "x_ten": "30/9/2026 + LN Q4/2026E ± tồn kho 2027E",
+    "boi_ten": "hệ số",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     44593,
+     50129,
+     53772
+    ]
+   }
+  ],
+  "von": [
+   89118,
+   145679,
+   172756
+  ],
+  "gia": [
+   17.8,
+   29.1,
+   34.5
+  ]
+ },
+ "nhay": [
+  [
+   "Biên lọc dầu 2027 ±1 USD/thùng",
+   1250,
+   2.5
+  ],
+  [
+   "P/E lọc dầu ±1 lần",
+   null,
+   1.9
+  ],
+  [
+   "Sản lượng 2027 ±0,5 triệu tấn",
+   825,
+   1.6
+  ],
+  [
+   "Bảo dưỡng TA6 ±10 ngày",
+   368,
+   0.7
+  ],
+  [
+   "Giá dầu cuối 2027 ±10% (tồn kho, một lần)",
+   1358,
+   0.3
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   2.23,
+   1.68,
+   1.54,
+   1.51,
+   1.31,
+   1.74,
+   2.0,
+   1.65,
+   1.41,
+   1.31,
+   1.26,
+   1.36,
+   1.26,
+   1.4,
+   1.31,
+   1.25,
+   1.06,
+   0.92,
+   0.93,
+   0.94,
+   0.9,
+   0.78,
+   0.73,
+   0.68,
+   0.44,
+   0.55,
+   0.61,
+   0.68,
+   0.58,
+   0.68,
+   0.74,
+   0.7,
+   0.74,
+   1.03,
+   1.0,
+   1.23,
+   1.77,
+   1.47,
+   1.62,
+   1.98,
+   1.8,
+   1.65,
+   1.78,
+   2.22,
+   1.86,
+   2.04,
+   2.17,
+   2.31,
+   2.15,
+   1.79,
+   2.07,
+   2.21,
+   1.9,
+   1.63,
+   1.27,
+   1.12,
+   0.93,
+   0.83,
+   1.06,
+   0.95,
+   0.94,
+   0.98,
+   1.0,
+   1.01,
+   1.15,
+   1.17,
+   1.31,
+   1.04,
+   1.06,
+   1.05,
+   1.05,
+   1.08,
+   1.05,
+   0.98,
+   1.21,
+   1.16,
+   1.21,
+   1.26,
+   1.27,
+   1.11,
+   1.1,
+   1.27,
+   1.13,
+   1.14,
+   1.06,
+   0.9,
+   0.96,
+   0.99,
+   1.13,
+   1.45,
+   1.44,
+   1.48,
+   1.35,
+   1.4,
+   1.95,
+   2.58,
+   2.29,
+   1.95,
+   2.17,
+   1.76,
+   1.85,
+   1.79,
+   2.11,
+   1.85
+  ],
+  "p10": 0.75,
+  "p25": 1.0,
+  "tv": 1.26,
+  "thap": [
+   "2020-03",
+   0.44
+  ],
+  "nay": [
+   "2026-10",
+   1.85
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Giá trị ba kịch bản tương đương P/B 1,04 · 1,62 · 1,87 vốn chủ cuối 2026E; ở đỉnh LN 12/2022 P/B chỉ 0,83, trung vị từ 2018 là 1,26."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 52416,
+   "ln": [
+    2979,
+    4623,
+    6274
+   ],
+   "ck": 908
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 57400,
+   "ln": [
+    2182,
+    6361,
+    8646
+   ],
+   "ck": 3062
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    27081,
+    31260,
+    33545
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "30/10/2026",
+   "loai": "len",
+   "tieu": "KQKD Q3/2026: lãi kỷ lục, vượt mô hình",
+   "ct": "LN cổ đông 8.968 tỷ (+888%), vượt cơ sở cũ 4.623 tỷ và ước 6.900 của BSR (15/10); lãi gộp/tấn 4,71 (Q2 4,40). 9T 24.899 tỷ, gấp 11,5 lần kế hoạch LNST cả năm.",
+   "tac": [
+    "+3,2 nghìn đ/cp",
+    "giá trị cơ sở 25,9 → 29,1: lãi Q3–Q4 vào tiền ròng, biên 2027 nâng lên crack ~13"
+   ],
+   "theo_doi": "crack Q4, lãi/lỗ tồn kho"
+  },
+  {
+   "khi": "Cuối 1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026 và kế hoạch 2027",
+   "ct": "Mô hình cơ sở Q4 6.361 tỷ (xấu 2.182, tốt 8.646). Kế hoạch 2027 sẽ cho lịch TA6 và giả định crack của chính BSR — hai biến lớn nhất của giá trị.",
+   "tac": [
+    "≥ 8.000 tỷ",
+    "crack giữ mức Q3; dưới 3.000 tỷ: giá dầu đảo chiều, lỗ tồn kho"
+   ],
+   "theo_doi": "lãi gộp/tấn, tồn kho"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Hormuz thông trở lại, crack về mức trước chiến sự",
+   "ct": "Trung Quốc tăng hạn ngạch xuất khẩu nhiên liệu từ cuối 6/2026; MBS dự báo crack 2027 về ~10 USD/thùng, Brent bình quân 73 USD.",
+   "tac": [
+    "−12,5 nghìn đ/cp",
+    "nếu biên 2027 về 1,1 triệu đ/tấn (≈ 2025) và giá dầu −20%"
+   ],
+   "theo_doi": "crack diesel, xăng Singapore; Brent"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Bảo dưỡng tổng thể TA6",
+   "ct": "KBSV: dừng máy ~50 ngày trong 2027 (TA5 3–5/2024: 48 ngày). Sản lượng mất ~1,2 triệu tấn, khấu hao ~2,2 nghìn tỷ/năm vẫn tính đủ.",
+   "tac": [
+    "±0,7 nghìn đ/cp",
+    "mỗi ±10 ngày dừng máy"
+   ],
+   "theo_doi": "lịch TA6 trong kế hoạch 2027"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "len",
+   "tieu": "TA6 lùi sang 2028",
+   "ct": "BSR từng nghiên cứu kéo chu kỳ bảo dưỡng lên 4 năm và chọn thời điểm TA6 theo tiến độ NCMR; khi đó 2027 chạy cả năm ~124% công suất.",
+   "tac": [
+    "+4,0 nghìn đ/cp",
+    "+1,2 triệu tấn sản lượng 2027"
+   ],
+   "theo_doi": "kế hoạch SXKD 2027"
+  },
+  {
+   "khi": "Đến ~3/2027",
+   "loai": "hai",
+   "tieu": "PVN bán ~2,13% để free float đạt 10%",
+   "ct": "PVN nắm 92,13%; luật buộc free float ≥ 10%, hạn khoảng một năm từ 3/2026. ĐHĐCĐ 2026: nhiều tập đoàn dầu khí lớn quan tâm làm cổ đông chiến lược.",
+   "tac": [
+    "~107 triệu cp",
+    "≈ 2,9 nghìn tỷ theo giá 30/10"
+   ],
+   "theo_doi": "phương án bán vốn của PVN"
+  },
+  {
+   "khi": "2026–2029",
+   "loai": "len",
+   "tieu": "Nâng cấp mở rộng Dung Quất (NCMR)",
+   "ct": "EPC ~1,2 tỷ USD ký 9/7/2026 (37 tháng), kick-off 21/8: 148 → 171 nghìn thùng/ngày, chạy được dầu chua, dầu nặng, đạt Euro V. MBS ước xong cuối 2029.",
+   "tac": [
+    "+15,5%",
+    "công suất chế biến từ ~2029"
+   ],
+   "theo_doi": "tiến độ EPC, giải ngân"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Vốn NCMR rút dần tiền gửi",
+   "ct": "Capex 2026–2028 12,4/14,6/9,6 nghìn tỷ (MBS); vay 40% (~526 triệu USD PVcomBank, BSC); BSR đang thu xếp thêm ~600 triệu USD, giải ngân từ Q3/2027.",
+   "tac": [
+    "14% LN 2027E",
+    "là lãi tiền gửi ròng — giảm dần khi tiền gửi rút cho NCMR"
+   ],
+   "theo_doi": "tiền gửi, nợ vay"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Giá dầu đảo chiều: lỗ tồn kho",
+   "ct": "Tồn kho 15,4 nghìn tỷ (30/9), từng lên 21,6 nghìn tỷ (31/3). BSC (6/2026) từng tính Q3 lỗ tồn kho nếu chiến sự kết thúc — Q3 chưa xảy ra.",
+   "tac": [
+    "±1,4 nghìn tỷ LN",
+    "mỗi ±10% giá dầu (một lần)"
+   ],
+   "theo_doi": "Brent, hàng tồn kho"
+  },
+  {
+   "khi": "Từ 6/2026",
+   "loai": "len",
+   "tieu": "Xăng E10 bắt buộc toàn quốc",
+   "ct": "BSR-BF là đầu mối phối trộn E10; công suất phối trộn dự kiến lên tối đa ~360.000 m³/tháng từ 1/11/2026. MBS ước doanh thu E5/E10 2027 ~6,1 nghìn tỷ.",
+   "tac": "",
+   "theo_doi": "công suất BSR-BF"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Nguồn dầu thô",
+   "ct": "BSR tự chủ ~70% dầu ngọt trong nước, phần còn lại nhập (WTI tối đa 45%); đã bảo đảm dầu thô đến hết 2026. Vận tải gián đoạn làm dầu nhập đắt hơn.",
+   "tac": "",
+   "theo_doi": "hợp đồng dầu thô 2027"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Xung đột Mỹ/Israel – Iran từ 28/2/2026 gián đoạn eo Hormuz; Brent bình quân Q2 96 USD/thùng, ngày 14/9 lên 107,8 USD, đầu 10 vẫn trên 100.",
+     "ng": "MBS 18/08 · Al Jazeera 14/9 · tin thị trường 10/2026"
+    },
+    {
+     "h": -1,
+     "t": "Cung dầu được dự báo chuyển sang dư thừa trung – dài hạn khi Hormuz thông trở lại; MBS dự báo Brent 2027 bình quân 73 USD (2026: 87).",
+     "ng": "KBSV 11/09 · MBS 18/08"
+    },
+    {
+     "h": 0,
+     "t": "Tồn kho dầu quan sát được toàn cầu giảm ~410 triệu thùng trong khủng hoảng (IEA); nhu cầu tái tích trữ có thể giữ crack trên mức trước chiến sự.",
+     "ng": "KBSV 11/09"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Nhiều nhà máy lọc dầu châu Âu, Mỹ đóng cửa 2020–2024; công suất mới ở Trung Đông, châu Á tăng chậm hơn nhu cầu nhiên liệu bay, hóa dầu.",
+     "ng": "MBS 18/08"
+    },
+    {
+     "h": -1,
+     "t": "Trung Quốc tăng hạn ngạch xuất khẩu nhiên liệu từ cuối 6/2026 trong khi xe điện chiếm 45% doanh số xe mới — bất lợi cho crack châu Á.",
+     "ng": "MBS 18/08"
+    },
+    {
+     "h": 1,
+     "t": "Xăng E10 bắt buộc toàn quốc từ 6/2026; nguồn ethanol trong nước mới đáp ứng ~40% nhu cầu.",
+     "ng": "MBS 18/08"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Dung Quất chạy ~124% công suất thiết kế: 9T/2026 sản xuất ~6,15 triệu tấn, tiêu thụ ~6,08; ~70% dầu thô là dầu ngọt trong nước.",
+     "ng": "BSR (VCCI 10/2026) · BSC 02/06"
+    },
+    {
+     "h": 0,
+     "t": "Đáp ứng 30–36% nhu cầu xăng dầu trong nước; Nghi Sơn ~34%.",
+     "ng": "KBSV 11/09 · DSC 12/05"
+    },
+    {
+     "h": -1,
+     "t": "PVN nắm 92,13%, free float chỉ ~8%: phải bán ~2,13% để giữ tư cách công ty đại chúng.",
+     "ng": "DSC 12/05 · VPBankS"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Lọc dầu Dung Quất",
+   "phu": "Công suất thiết kế 6,5 triệu tấn dầu thô/năm (148 nghìn thùng/ngày); 9T/2026 chạy ~124%",
+   "so": [
+    [
+     "Tiêu thụ 9T/2026",
+     "6,08 triệu tấn",
+     "+3%"
+    ],
+    [
+     "Doanh thu 9T",
+     "164.217 tỷ",
+     "+58%"
+    ],
+    [
+     "Lãi gộp/tấn 9T",
+     "4,60 triệu đ",
+     "2025: 0,77"
+    ],
+    [
+     "Diesel trong lãi gộp Q1",
+     "~65%",
+     "biên gộp 29%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Biên gộp Q1/2026: diesel 29% (Q4/25: 15%, Q1/25: 7%), Jet A1 27,5%, RON95 12% (Q4/25: 1%), LPG −1%.",
+     "ng": "BSC 02/06"
+    },
+    {
+     "t": "Hàng tồn kho 31/3 lên 21,6 nghìn tỷ (+70% so với đầu năm) do giá dầu và tích trữ dầu thô; 30/9 còn 15,4 nghìn tỷ.",
+     "ng": "DSC 12/05 · BCTC"
+    }
+   ]
+  },
+  {
+   "ten": "Nâng cấp mở rộng (NCMR)",
+   "phu": "Tổng mức đầu tư điều chỉnh ~1,5 tỷ USD; EPC ~1,2 tỷ USD với liên danh Chengda – BPE, 37 tháng",
+   "so": [
+    [
+     "Công suất sau dự án",
+     "171 nghìn thùng/ngày",
+     "+15,5%"
+    ],
+    [
+     "San lấp mặt bằng",
+     "57,2%",
+     "16/7/2026"
+    ],
+    [
+     "Capex 2026–2028 (MBS)",
+     "36,7 nghìn tỷ",
+     "12,4/14,6/9,6"
+    ],
+    [
+     "Vay",
+     "40%",
+     "~526 triệu USD"
+    ]
+   ],
+   "y": [
+    {
+     "t": "MBS ước dự án xong cuối 2029 (kế hoạch gốc Q1/2028); doanh thu bình quân 2031–2033 cao hơn 2027–2028 ~13,5%, biên gộp +1 điểm %.",
+     "ng": "MBS 18/08"
+    },
+    {
+     "t": "BSR thu xếp thêm khoản vay ~600 triệu USD, chọn ngân hàng trong Q4/2026, giải ngân từ Q3/2027.",
+     "ng": "Hydrocarbon Processing 8/2026"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi gộp mỗi tấn theo quý",
+   "kieu": "cot",
+   "dv": "triệu đ/tấn",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp/tấn",
+     "v": [
+      0.22,
+      0.48,
+      0.5,
+      1.84,
+      4.68,
+      4.4,
+      4.71
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 2,
+   "y": "Q3/2026: 4,71 triệu đ/tấn, cao nhất 7 quý; 9T 4,60, gấp 5,9 lần bình quân 2025 (0,77).",
+   "ng": "BCTC (VNDirect) · sản lượng: BSC 02/06, KBSV 11/09, MBS 18/08, BSR 9T (VCCI)"
+  },
+  {
+   "ten": "Biên gộp theo sản phẩm",
+   "kieu": "cot",
+   "dv": "%",
+   "nhan": [
+    "Q1/25",
+    "Q4/25",
+    "Q1/26"
+   ],
+   "ss": [
+    {
+     "ten": "Diesel",
+     "v": [
+      7.0,
+      15.0,
+      29.0
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Jet A1",
+     "v": [
+      14.0,
+      23.0,
+      27.5
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 1,
+   "y": "Q1/2026 diesel lãi gộp 29% trên 46% doanh thu — ~65% lãi gộp quý; RON95 chỉ 12% (Q4/25: 1%).",
+   "ng": "BSC 02/06"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp theo năm",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 1,
+   "nhan": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "9T/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      3.7,
+      -3.8,
+      7.7,
+      9.5,
+      6.5,
+      0.4,
+      4.3,
+      17.0
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "y": "9T/2026: 17,0% — gần gấp đôi đỉnh chu kỳ trước (9,5% năm 2022); bình quân 2019–2025 chỉ 4,0%.",
+   "ng": "BCTC BSR (VNDirect)"
+  },
+  {
+   "ten": "Tiền ròng và hàng tồn kho",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền ròng",
+     "v": [
+      30162,
+      27161,
+      26380,
+      30610,
+      27985,
+      33258,
+      33150,
+      41010,
+      45126
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Hàng tồn kho",
+     "v": [
+      17659,
+      15891,
+      12479,
+      11847,
+      11871,
+      12667,
+      21574,
+      14626,
+      15430
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Tiền ròng 30/9/2026 45,1 nghìn tỷ (~9,0 nghìn đ/cp, đã trả cổ tức); tồn kho từ đỉnh 21,6 về 15,4 nghìn tỷ.",
+   "ng": "BCTC BSR (VNDirect): tiền + đầu tư ngắn hạn − vay"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 154140,
+    "th": 164217,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 13/4/2026 · BCTC Q3"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 2162,
+    "th": 24902,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 13/4/2026 · BCTC Q3"
+   },
+   {
+    "ten": "Sản lượng tiêu thụ",
+    "kh": 7710,
+    "th": 6080,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "nghìn tấn",
+    "ng": "BSR 9T (VCCI 10/2026)"
+   },
+   {
+    "ten": "San lấp mặt bằng NCMR",
+    "kh": 100,
+    "th": 57.2,
+    "ky": "16/7",
+    "dv": "% khối lượng",
+    "ng": "MBS 18/08"
+   }
+  ],
+  "y": "9 tháng đạt 107% kế hoạch doanh thu và gấp 11,5 lần kế hoạch LNST cả năm — kế hoạch đặt tại ĐHĐCĐ 13/4 vẫn giả định LN giảm 58%. Mô hình cơ sở cả năm 31.260 tỷ LN cổ đông.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-09-11",
+   "kn": "MUA",
+   "tp": 32200,
+   "ln26": 18056,
+   "ln27": 4785,
+   "pp": "FCFF 50% (15.220) + EV/EBITDA 15,8 lần 50% (47.000)",
+   "y": "Tính TA6 dừng máy ~50 ngày trong 2027, crack bình quân 2026–2030 12 USD/thùng, Brent 2026F 85 USD; LN 2027F −74%. Riêng FCFF chỉ 15.220 đ/cp.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/ctcp_tct_loc_hoa_dau_viet_nam_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-08-18",
+   "kn": "TRUNG LẬP",
+   "tp": 29500,
+   "ln26": 24069,
+   "ln27": 9021,
+   "pp": "FCFF 50% + P/B 1,8 lần 50%",
+   "y": "Crack 2027F về ~10 USD/thùng, sản lượng 7,8 triệu tấn; NCMR xong cuối 2029 (kế hoạch gốc Q1/2028); P/B 1,8 = giai đoạn 6–12/2022 khi crack tạo đỉnh.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/bsr_bcpt_dinh_gia_ngan_han_da_duoc_phan_anh_cho_doi_trien_vong_dai_han_tich_cuc.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-08-13",
+   "kn": "MUA",
+   "tp": 33000,
+   "ln26": 23344,
+   "pp": "không nêu (P/E 2026F 5,7 lần)",
+   "y": "Dự phóng doanh thu 2026 199.426 tỷ (diesel 87.390 tỷ, +44%); nhấn mạnh tiền và tiền gửi 53,8 nghìn tỷ, 51% tổng tài sản.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/bao_cao_ngan_ctcp_tong_cong_ty_loc_hoa_dau_viet_nam_bsr_vn_mua_don_bay_lon_tu_crack_spread_ky_luc.pdf"
+  },
+  {
+   "ctck": "BSC",
+   "ngay": "2026-06-02",
+   "kn": "MUA",
+   "tp": 33800,
+   "ln26": 15515,
+   "pp": "EV/EBITDA 6,1 lần (chiết khấu 10% so với trung vị 5 năm)",
+   "y": "Q1 vượt dự phóng nhờ lãi tồn kho giá thấp; giả định Q3 chỉ lãi 800 tỷ khi chiến sự kết thúc (lỗ tồn kho), Q4 1.950 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/Cap_nhat_KQKD_Q12026_-_Crack_spread_duy_tri_muc_cao.pdf"
+  },
+  {
+   "ctck": "DSC",
+   "ngay": "2026-05-12",
+   "kn": "THEO DÕI",
+   "tp": 34100,
+   "ln26": 13268,
+   "pp": "P/B 2,22 lần (+2 độ lệch chuẩn 5 năm)",
+   "y": "Nêu rủi ro bảo trì nhà máy và mất tư cách công ty đại chúng nếu free float không lên 10%; tồn kho 31/3 cao kỷ lục.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/Huong_loi_nho_gia_dau_tang_manh.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. KBSV ghi giá mục tiêu 32.200 đ (danh mục Simplize ghi 42.100). Cổ tức 300 đ/cp (GDKHQ 11/08/2026) trừ vào giá mục tiêu ra trước ngày đó khi so với giá hiện tại.",
+ "nguon": [
+  {
+   "ten": "CafeF — Nhà máy lọc dầu 3 tỷ USD lần đầu lãi gần 1 tỷ USD sau 9 tháng (BCTC Q3/2026)",
+   "ngay": "30/10/2026",
+   "link": "https://cafef.vn/nha-may-loc-dau-3-ty-usd-cua-viet-nam-lan-dau-tien-lai-ngay-1-ty-usd-chi-sau-9-thang-doanh-thu-xang-e10-tang-1900-lan-188261030225946407.chn"
+  },
+  {
+   "ten": "VCCI — BSR củng cố nội lực, mở rộng không gian tăng trưởng (sản lượng, doanh thu 9T/2026)",
+   "ngay": "10/2026",
+   "link": "https://vcci.com.vn/tin-tuc/bsr-cung-co-noi-luc-mo-rong-khong-gian-tang-truong"
+  },
+  {
+   "ten": "VietnamFinance — BSR tăng tốc cung ứng xăng E10",
+   "ngay": "2026",
+   "link": "https://vietnamfinance.vn/bsr-tang-toc-cung-ung-xang-e10-san-luong-thang-6-vuot-61-trieu-lit-d147105.html"
+  },
+  {
+   "ten": "KBSV — Báo cáo cập nhật 2Q2026",
+   "ngay": "11/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/ctcp_tct_loc_hoa_dau_viet_nam_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ten": "MBS — Định giá ngắn hạn đã được phản ánh, chờ triển vọng dài hạn",
+   "ngay": "18/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/bsr_bcpt_dinh_gia_ngan_han_da_duoc_phan_anh_cho_doi_trien_vong_dai_han_tich_cuc.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Đòn bẩy lớn từ crack spread kỷ lục",
+   "ngay": "13/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/bao_cao_ngan_ctcp_tong_cong_ty_loc_hoa_dau_viet_nam_bsr_vn_mua_don_bay_lon_tu_crack_spread_ky_luc.pdf"
+  },
+  {
+   "ten": "BSC — Cập nhật KQKD Q1/2026, crack spread duy trì mức cao",
+   "ngay": "02/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/Cap_nhat_KQKD_Q12026_-_Crack_spread_duy_tri_muc_cao.pdf"
+  },
+  {
+   "ten": "DSC — Hưởng lợi nhờ giá dầu tăng mạnh",
+   "ngay": "12/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/BSR/Huong_loi_nho_gia_dau_tang_manh.pdf"
+  },
+  {
+   "ten": "Stockbiz — BSR báo doanh thu 7 tháng ~120.000 tỷ, LNTT gần 19.000 tỷ",
+   "ngay": "8/2026",
+   "link": "https://stockbiz.vn/tin-tuc/nha-may-loc-dau-3-ty-usd-bao-doanh-thu-7-thang-dau-nam-dat-120000-ty-dong-lai-truoc-thue-gan-19000-ty/41538120"
+  },
+  {
+   "ten": "Viettimes — Chủ nhà máy lọc dầu 3 tỷ USD báo lãi gần 19.000 tỷ đồng",
+   "ngay": "8/2026",
+   "link": "https://viettimes.vn/chu-nha-may-loc-dau-3-ty-usd-cua-viet-nam-bao-lai-gan-19000-ty-dong-post204891.html"
+  },
+  {
+   "ten": "DNSE — BSR lên kế hoạch lãi sau thuế gần 2.200 tỷ năm 2026",
+   "ngay": "4/2026",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/bsr-len-ke-hoach-lai-sau-thue-gan-2200-ty-trong-nam-2026-35172323"
+  },
+  {
+   "ten": "MekongASEAN — Vận hành 124% công suất, BSR thu hơn 100.000 tỷ 6 tháng",
+   "ngay": "7/2026",
+   "link": "https://mekongasean.vn/van-hanh-124-cong-suat-bsr-thu-ve-hon-100000-ty-dong-nua-dau-nam-2026-57706.html"
+  },
+  {
+   "ten": "24hMoney — BSR chốt ngày trả 1.500 tỷ cổ tức tiền mặt",
+   "ngay": "6/2026",
+   "link": "https://24hmoney.vn/news/bsr-chot-ngay-tra-1-500-ty-dong-co-tuc-tien-mat-c1a2801158.html"
+  },
+  {
+   "ten": "MekongASEAN — 10 doanh nghiệp được dự báo vượt kế hoạch lợi nhuận năm sau 9 tháng (TCBS)",
+   "ngay": "10/2026",
+   "link": "https://mekongasean.vn/10-doanh-nghiep-duoc-du-bao-vuot-ke-hoach-loi-nhuan-nam-sau-9-thang-60316.html"
+  },
+  {
+   "ten": "Tạp chí Công Thương — Chuẩn bị bảo dưỡng NMLD Dung Quất trong 48 ngày (TA5)",
+   "ngay": "2024",
+   "link": "https://tapchicongthuong.vn/loc-hoa-dau-binh-son--bsr-chuan-bi-bao-duong-nha-may-loc-dau-dung-quat-trong-48-ngay-117243.htm"
+  },
+  {
+   "ten": "Tạp chí Công Thương — Nghiên cứu kéo dài chu kỳ bảo dưỡng lên 4 năm",
+   "ngay": "",
+   "link": "https://tapchicongthuong.vn/loc-hoa-dau-binh-son--bsr-nghien-cuu-viec-keo-dai-chu-ky-bao-duong-nmld-dung-quat-len-4-nam-125526.htm"
+  },
+  {
+   "ten": "Diễn đàn Doanh nghiệp — Lộ trình thoái vốn nhìn từ cổ phiếu BSR",
+   "ngay": "5/2026",
+   "link": "https://diendandoanhnghiep.vn/xay-dung-lo-trinh-thoai-von-nhin-tu-co-phieu-bsr-10178262.html"
+  },
+  {
+   "ten": "VnEconomy — BSR ấn định ngày chia cổ phiếu thưởng 61,5%",
+   "ngay": "10/2025",
+   "link": "https://vneconomy.vn/bsr-da-an-dinh-ngay-chia-co-phieu-thuong-ty-le-615.htm"
+  },
+  {
+   "ten": "Hydrocarbon Processing — Vietnam's BSR seeks $600 mm financing for Dung Quat expansion",
+   "ngay": "8/2026",
+   "link": "https://hydrocarbonprocessing.com/news/2026/08/vietnams-bsr-seeks-600-mm-in-financing-for-dung-quat-refinery-expansion/"
+  },
+  {
+   "ten": "Al Jazeera — Brent trên 100 USD sau các vụ tấn công quanh Hormuz",
+   "ngay": "14/09/2026",
+   "link": "https://aljazeera.com/news/2026/9/14/us-says-its-clearing-hormuz-traffic-why-are-oil-futures-beyond-100"
+  }
+ ]
+}

@@ -1,0 +1,1578 @@
+{
+ "v": 2,
+ "ma": "PNJ",
+ "ten": "CTCP Vàng bạc Đá quý Phú Nhuận",
+ "nganh": "Bán lẻ trang sức",
+ "ky": "Số sơ bộ Q3/2026 (ĐHĐCĐ 21/10) · BCTC Q2/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q3/2026 (hạn 30/10: dự phòng ghi quý nào) và khi HĐQT chốt giá phát hành",
+ "cp_trieu": 511.7,
+ "cp_ng": "vốn điều lệ 5.119 tỷ (sau thưởng 50% tháng 4/2026) trừ 169.559 cổ phiếu quỹ, trước đợt chào bán riêng lẻ; bảng giá VNDirect (vốn hóa ÷ giá) ra 546,9 triệu — không khớp công bố",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Lộ trình của chính PNJ chỉ cho ROE ~10% năm 2029; giá đang trả cho phục hồi nhanh hơn thế",
+  "dk": "up_duoi:0",
+  "khac": "Giá đã thấp hơn giá trị của lộ trình phục hồi do chính PNJ đặt ra"
+ },
+ "dong_mo": "Q3 sơ bộ lỗ 258 tỷ trước dự phòng, biên gộp 8,7%. Sau dự phòng 7.071 tỷ, vốn chủ cuối 2026 còn ~6.450 tỷ (12.600 đ/cp); PNJ cần 8.000 tỷ, tối đa 550 triệu cp mới. Theo lộ trình lãi 100 tỷ năm 2027, 1.600 tỷ năm 2029, mô hình cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "8,7%",
+   "nhan": "biên gộp Q3/2026 (cùng kỳ 19,8%)",
+   "tieu": "Q3 xác nhận: biên gộp gãy, không chỉ là cú sốc tháng 7",
+   "t": "Q3 sơ bộ: doanh thu 6.995 tỷ (−14%), lãi gộp 609 tỷ (−62%), chi phí chỉ giảm 13% → lỗ 258 tỷ trước dự phòng mới (cùng kỳ lãi 496; mô hình cũ −50). Kế hoạch năm (lãi trước dự phòng 806 tỷ, 9T đã 1.291) ngầm định Q4 lỗ thêm ~485 tỷ — mùa cưới, Tết không đủ kéo biên về 20%.",
+   "ng": "ĐHĐCĐ 21/10 (MBS, KBSV, ACBS) · BCTC"
+  },
+  {
+   "so": "100 tỷ",
+   "nhan": "LNST 2027 theo lộ trình PNJ",
+   "tieu": "Lộ trình phục hồi chậm: lãi 2029 vẫn dưới 60% năm 2025",
+   "t": "PNJ công bố LNST 2027–2029: 0,1 · 1,2 · 1,6 nghìn tỷ, biên gộp 8,8–10,9% (2025: 22%), doanh thu 43,4 → 57,7 nghìn tỷ. Mô hình cơ sở bám lộ trình: ROE 2029E ~10,0% trên vốn chủ sau phát hành, dưới chi phí vốn 12,5%. Cam kết thu đổi còn ~21.000 tỷ, kim cương chiếm 52% tồn kho (~9.000 tỷ) — giá trị phải thu hồi qua bán lẻ nhiều năm.",
+   "ng": "Lộ trình PNJ (KBSV 22/10, ACBS 23/10) · mô hình"
+  },
+  {
+   "so": "770 tỷ",
+   "nhan": "tiền công ty mẹ 30/9 (30/6: 3.700), gồm 700 tỷ vay Chủ tịch",
+   "tieu": "Vốn mới là bắt buộc, giá phát hành quyết định phần còn lại",
+   "t": "ĐHĐCĐ thông qua chào bán riêng lẻ tối đa 550 triệu cp (Q4/2026–Q3/2027), giá ≥ bình quân 30 phiên và ≥ BVPS, hạn chế chuyển nhượng 1 năm. Nhu cầu vốn Q4 ~3.100 tỷ, Q1/2027 ~2.800 tỷ; chào bán cổ đông hiện hữu không khả thi vì lỗ. 8.000 tỷ ở giá 17.450 đ là ~458 triệu cp; ở 14.500 đ thì đủ 550 triệu — cổ đông mới nắm 51,8%.",
+   "ng": "ĐHĐCĐ 21/10 (MBS, KBSV, ACBS)"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 0,8 trên vốn chủ sau phát hành: {up_so} so với giá hiện tại",
+   "t": "Vốn chủ cuối 2027E ~14.600 tỷ trên ~970 triệu cp. ROE 2029E dưới chi phí vốn → P/B = ROE ÷ 12,5% = 0,8. Ở 17.450 đ, sau phát hành thị trường trả ~1,16 lần vốn chủ, ~10,6 lần LN 2029E theo lộ trình. Xấu 7,0 (550 triệu cp ở 14.500 đ, thêm dự phòng 900 tỷ), tốt 30,1 (biên +2 điểm %, khách bán lại 60%).",
+   "ng": "mô hình · lộ trình PNJ"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   2828,
+   -6265,
+   175
+  ],
+  "ln_truoc": 2113,
+  "eps": [
+   5528,
+   -12244,
+   181
+  ],
+  "bv": [
+   25943,
+   12597,
+   15071
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "LN trước dự phòng thu đổi (tỷ)",
+    "v": [
+     2828,
+     806,
+     175
+    ]
+   },
+   {
+    "ten": "Cổ phiếu cuối kỳ (triệu)",
+    "v": [
+     511.7,
+     511.7,
+     970.2
+    ],
+    "d": 1
+   }
+  ],
+  "ng": "2026E: 9 tháng (6T soát xét + Q3 sơ bộ) + Q4 ước tính; dự phòng cả năm 7.071 tỷ. EPS, BVPS 2027E trên 970 triệu cp — giả định phát hành 8.000 tỷ ở giá 17.450 đ; không chia cổ tức 2026"
+ },
+ "ln_mang": {
+  "tieu": "Từ lãi gộp đến LN trước thuế",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "Lãi gộp trước dự phòng",
+    "mau": "c1",
+    "v": [
+     7684,
+     4731,
+     3819
+    ]
+   },
+   {
+    "ten": "Chi phí bán hàng, quản lý, tài chính",
+    "mau": "c3",
+    "v": [
+     -4136,
+     -3719,
+     -3600
+    ]
+   },
+   {
+    "ten": "Dự phòng thu đổi",
+    "mau": "c2",
+    "v": [
+     0,
+     -7071,
+     0
+    ]
+   }
+  ],
+  "ng": "2025A: BCTC; 2026E: kế hoạch điều chỉnh (ĐHĐCĐ 21/10); 2027E: mô hình cơ sở ≈ lộ trình PNJ. Lãi gộp 2027E thấp hơn 2026E dù doanh thu cao hơn: 2026 còn quý 1 kỷ lục."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với doanh nghiệp bán lẻ niêm yết",
+  "chi_so": "P/B trên vốn chủ cuối 2026E (đã trừ dự phòng)",
+  "chi_so_kv": "P/B (bảng giá 23/10)",
+  "nhom": "bán lẻ niêm yết HOSE",
+  "kv": [
+   [
+    "MWG",
+    3.04
+   ],
+   [
+    "FRT",
+    5.24
+   ],
+   [
+    "DGW",
+    2.73
+   ],
+   [
+    "PET",
+    3.09
+   ]
+  ],
+  "tv": 3.07,
+  "moi_cp": 12597,
+  "max": 4,
+  "y": "Nhóm này có ROE 13–29%; PNJ ROE 2029E ~10,0% theo lộ trình — P/B thấp hơn nhóm là hợp lý. Trước 2026 PNJ chưa từng dưới 1,9 lần sổ sách (ROE 20–25%).",
+  "ng": "P/B, ROE: bảng giá VNDirect 23/10/2026 — báo cáo CTCK đã đọc không có bảng so sánh trang sức khu vực"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: kết quả trước/sau dự phòng, vốn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Kết quả kinh doanh"
+   },
+   {
+    "ten": "Doanh thu thuần (nghìn tỷ)",
+    "v": [
+     35.0,
+     39.1,
+     43.4
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp trước dự phòng (%)",
+    "v": [
+     22.0,
+     12.1,
+     8.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Lãi gộp trước dự phòng (tỷ)",
+    "v": [
+     7684,
+     4731,
+     3819
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí bán hàng, quản lý, tài chính (tỷ)",
+    "v": [
+     4136,
+     3719,
+     3600
+    ]
+   },
+   {
+    "ten": "LN trước dự phòng thu đổi (tỷ)",
+    "v": [
+     2828,
+     806,
+     175
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Dự phòng thu đổi (tỷ)",
+    "v": [
+     0,
+     -7071,
+     0
+    ]
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     2828,
+     -6265,
+     175
+    ],
+    "dam": 1
+   },
+   {
+    "ten": "LN 2028E · 2029E (tỷ)",
+    "s": [
+     "",
+     "",
+     "1.290 · 1.590"
+    ]
+   },
+   {
+    "nhom": "Vốn và cổ phiếu"
+   },
+   {
+    "ten": "Tiền phát hành riêng lẻ (tỷ)",
+    "v": [
+     0,
+     0,
+     8000
+    ]
+   },
+   {
+    "ten": "Vốn chủ cuối kỳ (tỷ)",
+    "v": [
+     13275,
+     6446,
+     14621
+    ]
+   },
+   {
+    "ten": "Cổ phiếu (triệu)",
+    "v": [
+     511.7,
+     511.7,
+     970.2
+    ],
+    "d": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     25943,
+     12597,
+     15071
+    ]
+   },
+   {
+    "ten": "ROE 2029E (%)",
+    "s": [
+     "",
+     "",
+     "10,0"
+    ]
+   }
+  ],
+  "ghi": "2026E = 6T soát xét + Q3 sơ bộ + Q4 ước tính (-485 tỷ, ngầm định trong kế hoạch); dự phòng 7.071 tỷ gồm ~822 tỷ đã ghi 6T, không khấu trừ thuế (như kế hoạch). 2027–2029E: doanh thu, biên, chi phí theo lộ trình PNJ. 8.000 tỷ vốn mới ở giá 17.450 đ."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E (trước dự phòng) → 2027E",
+  "dau": [
+   "2026E trước dự phòng",
+   806
+  ],
+  "cuoi": [
+   "2027E",
+   175
+  ],
+  "buoc": [
+   [
+    "Lãi gộp (biên 12,1% → 8,8%)",
+    -912
+   ],
+   [
+    "Chi phí bán hàng, quản lý, tài chính",
+    119
+   ],
+   [
+    "Thuế",
+    162
+   ]
+  ],
+  "y": "Bỏ dự phòng ra, 2027 vẫn lãi ít hơn 2026: năm 2026 có quý 1 lãi 1.467 tỷ trước sự cố; lộ trình cho biên gộp 8,8% (Q3/2026: 8,7%), chi phí giảm ~3%.",
+  "ng": "kế hoạch điều chỉnh, lộ trình PNJ · mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "LN Q4/2026 trước dự phòng (tỷ)",
+   "v": [
+    "−700",
+    "−485",
+    "−200"
+   ],
+   "ly_do": "Kế hoạch năm (trước dự phòng 806, 9T 1.291) ngầm định −485; Q3 −258 ở biên 8,7%; Q4/2025 lãi 1.218"
+  },
+  {
+   "ten": "Dự phòng ngoài 7.071 tỷ (2027, tỷ)",
+   "v": [
+    "+900",
+    "0",
+    "−1.760 hoàn"
+   ],
+   "ly_do": "PNJ giả định 80% khách bán lại; xấu: tồn kho kim cương ~9.000 tỷ bán thanh lý thấp hơn 10%; tốt: bán lại 60% (1 điểm % ≈ 88 tỷ)"
+  },
+  {
+   "ten": "Phát hành 8.000 tỷ ở giá (nghìn đ) → cp mới",
+   "v": [
+    "14,5 → 550 tr",
+    "17,45 → 458 tr",
+    "20,9 → 383 tr"
+   ],
+   "ly_do": "Tối đa 550 triệu cp, giá ≥ bình quân 30 phiên và ≥ BVPS; 14.500 đ là mức để đủ 550 triệu (MBS); cơ sở = giá 23/10; tốt ≈ MA20"
+  },
+  {
+   "ten": "Doanh thu 2027 (nghìn tỷ)",
+   "v": [
+    "38,0",
+    "43,4",
+    "46,0"
+   ],
+   "ly_do": "Cơ sở = lộ trình PNJ (2028: 50,6; 2029: 57,7); xấu ≈ mức 2026, 2029 chỉ 45; tốt +6%. 2025: 35,0; 2026 KH 39,1, 9T 32,7"
+  },
+  {
+   "ten": "Biên gộp 2027 · 2028–2029",
+   "v": [
+    "7,5 · 9,5%",
+    "8,8 · 10,9%",
+    "10,5 · 12,9%"
+   ],
+   "ly_do": "Q3/2026 8,7%; T7–8 ~10%; lộ trình PNJ 8,8 · 10,9 · 10,9%; 2025: 22,0%. Tốt: +2 điểm % nhờ niềm tin quay lại"
+  },
+  {
+   "ten": "Chi phí bán hàng + quản lý + tài chính 2027 (tỷ)",
+   "v": [
+    "3.700",
+    "3.600",
+    "3.600"
+   ],
+   "ly_do": "Lộ trình (lãi gộp − LNTT; 2028: 3.900, 2029: 4.300); 2025: 4.136 tỷ; Q3 −13%; mục tiêu giảm 20–30% chi phí nhân sự, đóng ròng 15–20 cửa hàng"
+  },
+  {
+   "ten": "P/B trên vốn chủ cuối 2027E",
+   "v": [
+    "0,6",
+    "0,8",
+    "1,6"
+   ],
+   "ly_do": "ROE 2029E 10,0% < r 12,5% → ROE ÷ r; tốt ROE 15,9% → (ROE − 7%) ÷ (12,5% − 7%); xấu ROE 2,4% → sàn 0,6 (tài sản chủ yếu vàng, tiền)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": -6480,
+   "ln27": -1750,
+   "gia": 7.0,
+   "mo_ta": "Q4 lỗ 700 tỷ; thêm dự phòng 900 tỷ năm 2027; biên 7,5% → 9,5%, LN 2029 ~300 tỷ; 550 triệu cp mới ở 14.500 đ; P/B 0,6"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": -6265,
+   "ln27": 175,
+   "gia": 12.1,
+   "mo_ta": "Đúng lộ trình PNJ: dự phòng 7.071 tỷ đủ dùng, biên 8,8% → 10,9%, LN 2029 ~1.590 tỷ; 8.000 tỷ ở 17.450 đ; P/B 0,8"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": -5980,
+   "ln27": 2744,
+   "gia": 30.1,
+   "mo_ta": "Khách bán lại 60% → hoàn nhập 1.760 tỷ; biên 10,5% → 12,9%, LN 2029 ~2.880 tỷ; phát hành ở 20.900 đ; P/B 1,6"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ cuối 2027E, sau dự phòng và phát hành",
+  "ck": 0,
+  "cp": 511.7,
+  "phan": [
+   {
+    "ten": "Vốn chủ còn lại sau dự phòng",
+    "mau": "c4",
+    "x": [
+     6231,
+     6446,
+     6731
+    ],
+    "boi": [
+     0.289,
+     0.422,
+     0.915
+    ],
+    "x_ten": "vốn chủ cuối 2026E",
+    "boi_ten": "P/B × phần cổ đông hiện hữu",
+    "boi_d": 3,
+    "sh": 1,
+    "gt": [
+     1801,
+     2720,
+     6159
+    ]
+   },
+   {
+    "ten": "Vốn mới từ phát hành riêng lẻ",
+    "mau": "c1",
+    "x": [
+     7975,
+     8000,
+     8000
+    ],
+    "boi": [
+     0.289,
+     0.422,
+     0.915
+    ],
+    "x_ten": "tiền thu",
+    "boi_ten": "P/B × phần cổ đông hiện hữu",
+    "boi_d": 3,
+    "sh": 1,
+    "gt": [
+     2305,
+     3376,
+     7320
+    ]
+   },
+   {
+    "ten": "LN 2027E giữ lại",
+    "mau": "c3",
+    "x": [
+     -1750,
+     175,
+     984
+    ],
+    "boi": [
+     0.289,
+     0.422,
+     0.915
+    ],
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/B × phần cổ đông hiện hữu",
+    "boi_d": 3,
+    "sh": 1,
+    "gt": [
+     -506,
+     74,
+     900
+    ]
+   },
+   {
+    "ten": "Hoàn nhập dự phòng thu đổi",
+    "mau": "c2",
+    "x": [
+     0,
+     0,
+     1760
+    ],
+    "boi": [
+     0.482,
+     0.527,
+     0.572
+    ],
+    "x_ten": "nếu khách bán lại dưới 80%",
+    "boi_ten": "1,0 lần sổ sách × phần cổ đông hiện hữu",
+    "boi_d": 3,
+    "sh": 1,
+    "gt": [
+     0,
+     0,
+     1007
+    ]
+   }
+  ],
+  "von": [
+   3600,
+   6170,
+   15386
+  ],
+  "gia": [
+   7.0,
+   12.1,
+   30.1
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   2.14,
+   2.17,
+   2.55,
+   2.83,
+   2.77,
+   2.81,
+   2.61,
+   1.92,
+   1.95,
+   1.9,
+   2.74,
+   3.02,
+   3.16,
+   3.18,
+   3.38,
+   4.05,
+   4.35,
+   5.15,
+   4.28,
+   4.71,
+   5.01,
+   4.54,
+   4.28,
+   4.13,
+   4.28,
+   4.91,
+   4.96,
+   5.76,
+   5.35,
+   5.72,
+   5.84,
+   6.09,
+   6.44,
+   6.09,
+   4.94,
+   5.43,
+   5.9,
+   6.11,
+   7.55,
+   6.27,
+   5.64,
+   4.41,
+   4.9,
+   4.97,
+   5.08,
+   4.67,
+   4.42,
+   4.47,
+   4.55,
+   4.3,
+   4.44,
+   4.46,
+   4.26,
+   4.03,
+   4.29,
+   4.47,
+   4.37,
+   4.53,
+   4.39,
+   4.65,
+   4.56,
+   4.02,
+   2.31,
+   2.8,
+   2.85,
+   2.59,
+   2.33,
+   2.88,
+   2.92,
+   3.33,
+   3.58,
+   3.72,
+   3.82,
+   3.69,
+   3.67,
+   4.26,
+   3.99,
+   3.96,
+   3.79,
+   3.42,
+   3.93,
+   4.14,
+   4.01,
+   3.94,
+   4.26,
+   3.9,
+   4.18,
+   4.09,
+   3.48,
+   3.89,
+   3.45,
+   3.47,
+   3.23,
+   3.12,
+   3.36,
+   3.58,
+   3.61,
+   2.2,
+   2.23,
+   2.21,
+   2.53,
+   2.68,
+   2.96,
+   2.87,
+   2.81,
+   2.57,
+   2.8,
+   2.99,
+   3.18,
+   3.03,
+   3.31,
+   3.18,
+   3.0,
+   3.05,
+   3.1,
+   3.19,
+   3.09,
+   2.96,
+   2.98,
+   3.14,
+   3.14,
+   2.82,
+   2.5,
+   2.14,
+   2.38,
+   2.39,
+   2.43,
+   2.42,
+   2.35,
+   2.67,
+   2.57,
+   2.73,
+   3.58,
+   3.13,
+   2.78,
+   2.62,
+   2.34,
+   2.24,
+   1.1,
+   1.6,
+   1.01,
+   0.66
+  ],
+  "p10": 2.31,
+  "p25": 2.78,
+  "tv": 3.44,
+  "thap": [
+   "2026-10",
+   0.66
+  ],
+  "nay": [
+   "2026-10",
+   0.66
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,6 · 0,8 · 1,6 trên vốn chủ cuối 2027E — cơ sở dưới mọi tháng trước 2026 (thấp nhất 1,9, 10/2015) vì ROE 2029E ~10% so với 20–25% trước đây. P/B tháng 10/2026 tính trên vốn chủ 30/6, chưa trừ dự phòng."
+ },
+ "nhay": [
+  [
+   "Biên gộp 2029E ±1 điểm %",
+   462,
+   3.6
+  ],
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.5
+  ],
+  [
+   "LN 2029E ±10%",
+   159,
+   1.2
+  ],
+  [
+   "Chi phí vốn ±1 điểm %",
+   null,
+   1.0
+  ],
+  [
+   "Giá phát hành ±3.000 đ",
+   null,
+   1.0
+  ],
+  [
+   "Khách bán lại ±10 điểm % (dự phòng ±880 tỷ)",
+   880,
+   0.9
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026 (dự báo cũ) · sơ bộ −258",
+   "ln": [
+    -145,
+    -50,
+    186
+   ],
+   "ck": 496
+  },
+  {
+   "quy": "Q4/2026 · trước dự phòng",
+   "ln": [
+    -700,
+    -485,
+    -200
+   ],
+   "ck": 1218
+  },
+  {
+   "quy": "Năm 2026 · sau dự phòng",
+   "ln": [
+    -6480,
+    -6265,
+    -5980
+   ]
+  },
+  {
+   "quy": "Năm 2027",
+   "ln": [
+    -1750,
+    175,
+    2744
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "21/10/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Q3 sơ bộ: lỗ 258 tỷ trước dự phòng mới",
+   "ct": "Doanh thu 6.995 tỷ (−14%), lãi gộp 609 tỷ (−62%), biên 8,7%; thấp hơn mô hình cũ (−50 tỷ) và dự báo VDSC (−145). ĐHĐCĐ thông qua mọi tờ trình.",
+   "tac": [
+    "−208 tỷ",
+    "so với mô hình cũ cơ sở"
+   ],
+   "theo_doi": "biên gộp, chi phí bán hàng"
+  },
+  {
+   "khi": "30/10/2026",
+   "loai": "hai",
+   "tieu": "BCTC Q3/2026",
+   "ct": "Ghi phần dự phòng còn lại (~6.249 tỷ) ở Q3 hay Q4; BVPS sau dự phòng (~12.600 đ) là sàn giá phát hành.",
+   "tac": "",
+   "theo_doi": "dự phòng phải trả, tồn kho kim cương"
+  },
+  {
+   "khi": "Q4/26–Q3/27",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Giá và quy mô đợt phát hành",
+   "ct": "Giá ≥ bình quân 30 phiên và ≥ BVPS, do tổ chức định giá độc lập xác định. Giá càng thấp, cổ đông hiện hữu càng mất phần.",
+   "tac": [
+    "−1,0 nghìn đ/cp",
+    "nếu phát hành đủ 550 triệu cp ở 14.500 đ (cùng 8.000 tỷ)"
+   ],
+   "theo_doi": "nghị quyết HĐQT về giá, nhà đầu tư"
+  },
+  {
+   "khi": "Q4/26–Q1/27",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Thanh khoản trước khi có vốn mới",
+   "ct": "Tiền công ty mẹ 770 tỷ (30/9) gồm 700 tỷ vay Chủ tịch; vay ngân hàng ~3.000 tỷ ngắn hạn; cần ~3.100 tỷ Q4, ~2.800 tỷ Q1/2027.",
+   "tac": "",
+   "theo_doi": "nợ vay, tiền, phải trả khách hàng"
+  },
+  {
+   "khi": "Q4/26–Q1/27",
+   "loai": "len",
+   "tieu": "Mùa cưới, Tết 2027: thước đo niềm tin",
+   "ct": "Kế hoạch ngầm định Q4 lỗ ~485 tỷ trước dự phòng (Q4/2025 lãi 1.218): hòa vốn đã là vượt kế hoạch. Máy kiểm định kim cương tại cửa hàng.",
+   "tac": [
+    "±3,6 nghìn đ/cp",
+    "mỗi 1 điểm % biên gộp 2029E"
+   ],
+   "theo_doi": "doanh thu, biên gộp quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Khách bán lại ít hơn 80% → hoàn nhập dự phòng",
+   "ct": "Hàng đã bán: chuyển quyền lợi sang sản phẩm và ưu đãi; hàng mới thu đổi theo giá thị trường. Mỗi 10 điểm % thấp hơn 80% ≈ 880 tỷ.",
+   "tac": [
+    "+0,9 nghìn đ/cp",
+    "mỗi 10 điểm %"
+   ],
+   "theo_doi": "dự phòng phải trả theo quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Tồn kho kim cương ~9.000 tỷ",
+   "ct": "Kim cương 52% tồn kho (Q2: 41%); giá kim cương thiên nhiên chịu áp lực từ Trung Quốc và kim cương nuôi cấy; tổn thất mua lại thực tế 28,9%.",
+   "tac": [
+    "−0,7 nghìn đ/cp",
+    "mỗi 10% giảm giá thanh lý (900 tỷ)"
+   ],
+   "theo_doi": "tồn kho, biên gộp"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Điều tra P-Lab chưa khép lại",
+   "ct": "Cơ quan điều tra (21/8): PNJ đủ hồ sơ nhập khẩu, lô kim cương lậu không vào hệ thống PNJ; AIGS, Vinacontrol: 100% mẫu là kim cương thiên nhiên.",
+   "tac": "",
+   "theo_doi": "kết luận điều tra, xử lý P-Lab"
+  },
+  {
+   "khi": "2027",
+   "loai": "hai",
+   "tieu": "Cổ đông mới có thể nắm quyền chi phối",
+   "ct": "Phát hành đủ 550 triệu cp → nhà đầu tư mới tới 51,8%; gia đình Chủ tịch từ 11,36% còn ~5,5% nếu không mua thêm.",
+   "tac": "",
+   "theo_doi": "danh sách nhà đầu tư, HĐQT mới"
+  },
+  {
+   "khi": "4/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: kế hoạch chính thức",
+   "ct": "Lộ trình 2027: doanh thu 43,4 nghìn tỷ, LNST 100 tỷ. Kế hoạch cao hơn lộ trình mới là tín hiệu biên gộp hồi.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi 10% LN 2029E"
+   ],
+   "theo_doi": "kế hoạch 2027, cổ tức"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu và lãi gộp theo quý",
+   "dv": "nghìn tỷ",
+   "kieu": "cot",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Doanh thu thuần",
+     "v": [
+      9.6,
+      7.6,
+      8.1,
+      9.6,
+      17.2,
+      8.5,
+      7.0
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Lãi gộp (Q2/26 trước dự phòng 822 tỷ)",
+     "v": [
+      2.0,
+      1.6,
+      1.6,
+      2.4,
+      3.4,
+      0.2,
+      0.6
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 1,
+   "y": "Q1/2026 kỷ lục nhờ vàng 24K; từ Q2 lãi gộp gần như mất hẳn — Q3 sơ bộ chỉ 609 tỷ trên 7,0 nghìn tỷ doanh thu.",
+   "ng": "BCTC VNDirect; Q3/26 sơ bộ (ĐHĐCĐ 21/10); Q2/26 trước dự phòng theo MBS 21/10"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp",
+   "dv": "%",
+   "kieu": "cot",
+   "nhan": [
+    "2024",
+    "2025",
+    "6T/26",
+    "Q3/26",
+    "KH 2026",
+    "LT 2027",
+    "LT 2028"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      17.6,
+      22.0,
+      10.8,
+      8.7,
+      12.1,
+      8.8,
+      10.9
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 1,
+   "y": "Q3 (8,7%) đúng bằng mức lộ trình PNJ đặt cho 2027; đến 2029 biên chỉ về 10,9% — chưa bằng nửa 2025.",
+   "ng": "BCTC; KH 2026 trước dự phòng (4.731/39.057); LT = lộ trình PNJ (KBSV 22/10)"
+  },
+  {
+   "ten": "LNST: lộ trình PNJ và mô hình cơ sở",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "2025A",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "ss": [
+    {
+     "ten": "Lộ trình PNJ",
+     "v": [
+      2828,
+      100,
+      1200,
+      1600
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Mô hình cơ sở",
+     "v": [
+      2828,
+      175,
+      1292,
+      1591
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "2026 lỗ 6.271 tỷ (kế hoạch) không vẽ. Cơ sở bám lộ trình; thuế 20% nên 2027 cao hơn một chút.",
+   "ng": "Lộ trình PNJ tại ĐHĐCĐ 21/10 (KBSV 22/10, ACBS 23/10) · mô hình"
+  },
+  {
+   "ten": "Hàng thuộc chính sách thu đổi và tổn thất ước tính",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Bán đến 2019",
+    "Bán 2020–2026",
+    "Đã mua lại 1/7–3/9"
+   ],
+   "ss": [
+    {
+     "ten": "Giá trị hàng",
+     "v": [
+      10137,
+      10919,
+      4997
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Tổn thất ước tính",
+     "v": [
+      183,
+      638,
+      1446
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Soát xét 6T giả định 7% và 28,8% khách bán lại → dự phòng 2.267 tỷ; kế hoạch mới giả định 80% → 7.071 tỷ. Cam kết còn ~21.000 tỷ cuối Q3.",
+   "ng": "BCTC soát xét 6T/2026 (VietnamFinance, TNCK) · KBSV 22/10"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu (kế hoạch điều chỉnh)",
+    "kh": 39057,
+    "th": 32704,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 21/10 · Q3 sơ bộ"
+   },
+   {
+    "ten": "Lãi gộp trước dự phòng",
+    "kh": 4731,
+    "th": 4205,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "MBS 21/10 · Q3 sơ bộ"
+   },
+   {
+    "ten": "LNST trước dự phòng",
+    "kh": 806,
+    "th": 1291,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "MBS 21/10 · Q3 sơ bộ"
+   },
+   {
+    "ten": "Doanh thu (kế hoạch 4/2026)",
+    "kh": 48660,
+    "th": 32704,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 22/4"
+   }
+  ],
+  "y": "9 tháng: doanh thu 84% kế hoạch mới; lãi trước dự phòng 1.291 tỷ đã vượt cả năm (806) — kế hoạch ngầm định Q4 lỗ ~485 tỷ trước dự phòng.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-10-23",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "ln26": -6271,
+   "ln27": 100,
+   "pp": "cập nhật nhanh sau ĐHĐCĐ",
+   "y": "Dẫn lộ trình PNJ 2027–2029 (LNST 0,1 · 1,2 · 1,6 nghìn tỷ); ước BVPS giảm từ ~24.000 xuống ~14.000 đ trên số cp hiện tại; không loại trừ thay đổi HĐQT.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/20261023_cap_nhat_nhanh_pnj_khong_danh_gia.pdf"
+  },
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-10-22",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": -6271,
+   "ln27": 100,
+   "pp": "cập nhật ĐHĐCĐ bất thường",
+   "y": "Kim cương 52% tồn kho (~9.000 tỷ); tỷ lệ tổn thất bán niên 20,3% thấp hơn thực tế 28,9%; nhu cầu vốn Q4 ~3.100, Q1/2027 ~2.800 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/20261022_ctcp_vang_bac_da_quy_phu_nhuan_cap_nhat_dhcd_bat_thuong_21_10_2026.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-10-21",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": -6271,
+   "ln27": null,
+   "pp": "báo cáo ĐHĐCĐ bất thường",
+   "y": "Tách 6T trước/sau dự phòng (LNST 1.549/728); cam kết thu đổi còn ~21.000 tỷ; để đủ 550 triệu cp giá bình quân 30 phiên phải ~14.500 đ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/20261021_pnj_bao_cao_dai_hoi_co_dong_bat_thuong.pdf"
+  },
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-08-21",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "cập nhật nhanh",
+   "y": "Tạm ngưng xếp hạng; cho rằng dự phòng Q2 đã thận trọng nên các quý sau trích ít — kế hoạch điều chỉnh cho thấy ngược lại.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/cap_nhat_nhanh_pnj_khong_danh_gia_2026_08_21.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-07-16",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "cập nhật thông tin doanh nghiệp",
+   "y": "Dòng thời gian sự kiện và giao dịch: 1–14/7 ban lãnh đạo, người liên quan mua ròng 135 tỷ, cổ đông tổ chức bán ròng 351 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/cap_nhat_thong_tin_doanh_nghiep_ctcp_vang_bac_da_quy_phu_nhuan_pnj.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-07-07",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": 3618,
+   "ln27": 4548,
+   "pp": "P/E 8,2 (trang sức khu vực)",
+   "y": "Giá trị hợp lý 86.900 đ tính trên EPS trước đợt thưởng 50%, ra trước kế hoạch lỗ — không còn so sánh được nên không vẽ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/pnj_cap_nhat_thong_tin_buoi_gap_go_nha_dau_tu_sau_su_kien_p_lab.pdf"
+  },
+  {
+   "ctck": "VDS (Rồng Việt)",
+   "ngay": "2026-06-19",
+   "kn": "MUA",
+   "tp": null,
+   "ln26": 3421,
+   "ln27": 3800,
+   "pp": "DCF + P/E (60:40)",
+   "y": "Trước sự cố, giá mục tiêu 90.200 đ (trước thưởng 50%): Q1/2026 kỷ lục nhờ vàng 24K gấp 4,3 lần — không còn so sánh được nên không vẽ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/Su_linh_hoat_tao_nen_tang_truong.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — ba báo cáo sau ĐHĐCĐ 21/10 (MBS, KBSV, ACBS) không đưa giá mục tiêu; hai báo cáo có giá mục tiêu ra trước sự cố và trước kế hoạch lỗ 6.271 tỷ.",
+ "nguon": [
+  {
+   "ten": "MBS — Báo cáo ĐHĐCĐ bất thường",
+   "ngay": "21/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/20261021_pnj_bao_cao_dai_hoi_co_dong_bat_thuong.pdf"
+  },
+  {
+   "ten": "KBSV — Cập nhật ĐHĐCĐ bất thường 21/10/2026",
+   "ngay": "22/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/20261022_ctcp_vang_bac_da_quy_phu_nhuan_cap_nhat_dhcd_bat_thuong_21_10_2026.pdf"
+  },
+  {
+   "ten": "ACBS — Cập nhật nhanh PNJ",
+   "ngay": "23/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/20261023_cap_nhat_nhanh_pnj_khong_danh_gia.pdf"
+  },
+  {
+   "ten": "CafeF — ĐHĐCĐ bất thường: lỗ 258 tỷ Q3, cần 8.000 tỷ, có lãi từ 2027",
+   "ngay": "21/10/2026",
+   "link": "https://cafef.vn/dhcd-bat-thuong-pnj-bao-lo-258-ty-dong-quy-iii-can-huy-dong-8000-ty-dong-de-phuc-hoi-du-kien-co-lai-tu-2027-188261021100855416.chn"
+  },
+  {
+   "ten": "VnBusiness — những con số tại ĐHĐCĐ bất thường",
+   "ngay": "21/10/2026",
+   "link": "https://vnbusiness.vn/nhung-con-so-bat-ngo-tai-dhcd-bat-thuong-2026-cua-pnj-lo-258-ty-dong-quy-iii-can-huy-dong-8000-ty-dong-de-tai-cau-truc.html"
+  },
+  {
+   "ten": "Mekong ASEAN — lỗ 258 tỷ Q3, kim cương 52% tồn kho",
+   "ngay": "21/10/2026",
+   "link": "https://mekongasean.vn/pnj-lo-258-ty-dong-trong-quy-3-kim-cuong-chiem-52-hang-ton-kho-60912.html"
+  },
+  {
+   "ten": "Tuổi Trẻ — kế hoạch điều chỉnh 2026, lỗ 6.271 tỷ",
+   "ngay": "25/09/2026",
+   "link": "https://tuoitre.vn/pnj-dieu-chinh-ke-hoach-nam-2026-du-kien-lo-6271-ti-dong-100260925180038445.htm"
+  },
+  {
+   "ten": "VietnamFinance — BCTC soát xét 6T: dự phòng thu đổi 2.267 tỷ",
+   "ngay": "09/2026",
+   "link": "https://vietnamfinance.vn/chi-so-cua-pnj-dao-lon-loi-nhuan-boc-hoi-456-ty-du-phong-thu-doi-hang-hoa-len-2267-ty-dong-d150113.html"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — dự phòng 2.267,3 tỷ sau soát xét",
+   "ngay": "09/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/pnj-du-phong-22673-ty-dong-tu-chinh-sach-thu-doi-loi-nhuan-giam-hon-455-ty-dong-sau-kiem-toan-post397002.html"
+  },
+  {
+   "ten": "Vietstock — chào bán riêng lẻ 550 triệu cp",
+   "ngay": "30/09/2026",
+   "link": "https://vietstock.vn/2026/09/pnj-muon-phat-hanh-rieng-le-550-trieu-cp-vuot-luong-dang-luu-hanh-764-1497285.htm"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — phát hành 550 triệu cp",
+   "ngay": "30/09/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/pnj-len-ke-hoach-phat-hanh-rieng-le-toi-da-550-trieu-co-phieu-hoan-nhap-hon-4600-ty-dong-vao-loi-nhuan-post398547.html"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — lỗ 61 tỷ T7–8, đóng 25–30 cửa hàng",
+   "ngay": "28/09/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/pnj-lo-61-ty-dong-trong-hai-thang-7-82026-du-kien-dong-25-30-cua-hang-post398436.html"
+  },
+  {
+   "ten": "CafeF — vay 700 tỷ từ gia đình Chủ tịch",
+   "ngay": "28/09/2026",
+   "link": "https://cafef.vn/pnj-da-vay-700-ty-tu-gia-dinh-ba-cao-thi-ngoc-dung-tinh-dong-30-cua-hang-sau-cu-soc-kim-cuong-188260928112123005.chn"
+  },
+  {
+   "ten": "CafeBiz — thông lệ mua lại 95%, độ nhạy dự phòng",
+   "ngay": "01/10/2026",
+   "link": "https://cafebiz.vn/thong-le-mua-lai-95-rui-ro-cua-ca-thi-truong-kim-cuong-pnj-lanh-du-176261001070141488.chn"
+  },
+  {
+   "ten": "Tuổi Trẻ — sở hữu của gia đình Chủ tịch",
+   "ngay": "04/10/2026",
+   "link": "https://tuoitre.vn/gia-dinh-chu-tich-cao-thi-ngoc-dung-con-bao-nhieu-co-phan-pnj-sau-vu-kim-cuong-100261004183326301.htm"
+  },
+  {
+   "ten": "Znews — kết quả kiểm định AIGS",
+   "ngay": "09/10/2026",
+   "link": "https://znews.vn/co-phieu-pnj-bat-ngo-tang-tran-post1688534.html"
+  },
+  {
+   "ten": "Dân Trí — thành viên HĐQT từ nhiệm",
+   "ngay": "13/10/2026",
+   "link": "https://dantri.com.vn/kinh-doanh/mot-thanh-vien-hdqt-pnj-tu-nhiem-truoc-them-hop-co-dong-bat-thuong-20261013163013891.htm"
+  },
+  {
+   "ten": "CafeF — Vietcap về lợi nhuận PNJ 2026–2032",
+   "ngay": "13/10/2026",
+   "link": "https://cafef.vn/vietcap-du-bao-bat-ngo-ve-loi-nhuan-pnj-trong-7-nam-toi-188261013221225447.chn"
+  },
+  {
+   "ten": "Người Quan Sát — dự báo Q3/2026 của VDSC, MBS",
+   "ngay": "10/2026",
+   "link": "https://nguoiquansat.vn/pnj-duoc-du-bao-lo-nang-quy-iii-2026-du-doanh-thu-gan-11-800-ty-dong-dieu-gi-dang-rut-can-loi-nhuan-320667.html"
+  },
+  {
+   "ten": "Viettimes — điều chỉnh chính sách thu đổi từ 30/9",
+   "ngay": "30/09/2026",
+   "link": "https://viettimes.vn/nong-pnj-thay-doi-chinh-sach-mua-lai-vang-va-kim-cuong-rut-ngan-thoi-gian-thanh-toan-post206433.html"
+  },
+  {
+   "ten": "VnExpress — thư PNJ 28/7: hàng mua lại, 95% khách chọn đổi",
+   "ngay": "28/07/2026",
+   "link": "https://vnexpress.net/pnj-da-chi-hon-7-000-ty-dong-thu-mua-lai-kim-cuong-vang-5102673.html"
+  },
+  {
+   "ten": "Tạp chí Ngân hàng — bãi bỏ độc quyền vàng miếng (NĐ 232/2025)",
+   "ngay": "08/2025",
+   "link": "https://tapchinganhang.gov.vn/chinh-thuc-bai-bo-quy-dinh-nha-nuoc-doc-quyen-san-xuat-vang-mieng-xuat-nhap-khau-vang-nguyen-lieu-de-san-xuat-vang-mieng-16453.html"
+  },
+  {
+   "ten": "CafeF — KQKD 6 tháng 2026 (tự lập)",
+   "ngay": "31/07/2026",
+   "link": "https://cafef.vn/pnj-duy-tri-da-tang-truong-trong-nua-dau-nam-2026-188260731132600826.chn"
+  },
+  {
+   "ten": "Dân Trí — Q2/2026 dự phòng 865 tỷ",
+   "ngay": "30/07/2026",
+   "link": "https://dantri.com.vn/kinh-doanh/pnj-lo-ky-luc-vi-trich-lap-865-ty-dong-du-phong-mua-lai-kim-cuong-vang-20260730203042516.htm"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — KQKD năm 2025",
+   "ngay": "01/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/pnj-dat-doanh-thu-gan-35000-ty-dong-trong-nam-2025-post384119.html"
+  },
+  {
+   "ten": "ACBS — Cập nhật nhanh PNJ",
+   "ngay": "21/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/cap_nhat_nhanh_pnj_khong_danh_gia_2026_08_21.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Cập nhật thông tin doanh nghiệp",
+   "ngay": "16/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/cap_nhat_thong_tin_doanh_nghiep_ctcp_vang_bac_da_quy_phu_nhuan_pnj.pdf"
+  },
+  {
+   "ten": "MBS — Cập nhật sau sự kiện P-Lab",
+   "ngay": "07/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/pnj_cap_nhat_thong_tin_buoi_gap_go_nha_dau_tu_sau_su_kien_p_lab.pdf"
+  },
+  {
+   "ten": "KBSV — Họp nhà đầu tư về các sự kiện gần đây",
+   "ngay": "06/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/analysis_report/ctcp_vang_bac_da_quy_phu_nhuan_cap_nhat_buoi_hop_nha_dau_tu_ve_cac_su_kien_gan_day_2026_07_06.pdf"
+  },
+  {
+   "ten": "VDS — Sự linh hoạt tạo nên tăng trưởng",
+   "ngay": "19/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PNJ/Su_linh_hoat_tao_nen_tang_truong.pdf"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 0,
+     "t": "Giá vàng Q1/2026 bình quân cao hơn cùng kỳ 85–90%: nhu cầu tích trữ vàng 24K tăng mạnh, trang sức đắt lên.",
+     "ng": "VDS 19/06"
+    },
+    {
+     "h": -1,
+     "t": "Lãi suất tăng, tiêu dùng thận trọng; vay thêm ngân hàng khó và đắt nên PNJ chọn phát hành cổ phiếu.",
+     "ng": "KBSV 22/10 · ACBS 23/10"
+    },
+    {
+     "h": 1,
+     "t": "Nghị định 232/2025 bỏ độc quyền vàng miếng, mở nhập khẩu vàng nguyên liệu theo hạn mức: nguồn cung nguyên liệu bớt khan hiếm từ 2026.",
+     "ng": "Tạp chí Ngân hàng · VDS 19/06"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "Giá kim cương thiên nhiên chịu áp lực: nhu cầu Trung Quốc yếu, kim cương nuôi cấy giá thấp cạnh tranh.",
+     "ng": "KBSV 22/10"
+    },
+    {
+     "h": -1,
+     "t": "Thông lệ mua lại kim cương gần nguyên giá (thu đổi tới 95%) là rủi ro chung của ngành; PNJ, người dẫn đầu, gánh trước.",
+     "ng": "CafeBiz 01/10"
+    },
+    {
+     "h": 1,
+     "t": "Quản lý thị trường vàng siết (hóa đơn điện tử, nguồn gốc): khách chuyển sang hàng có thương hiệu.",
+     "ng": "VDS 19/06"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": -1,
+     "t": "Giám đốc P-Lab (công ty con 100%) bị bắt 2/7 vì cấp chứng thư cho ~28.000 viên kim cương nhập lậu; là em trai một thành viên HĐQT.",
+     "ng": "KBSV 06/07 · Mirae Asset 16/07"
+    },
+    {
+     "h": 1,
+     "t": "Cơ quan điều tra xác nhận PNJ đủ hồ sơ nhập khẩu, lô hàng không vào hệ thống PNJ (21/8); AIGS, Vinacontrol kiểm định 100% mẫu là kim cương thiên nhiên.",
+     "ng": "ACBS 21/08 · KBSV 22/10"
+    },
+    {
+     "h": 0,
+     "t": "Tái cấu trúc 3 trụ: tinh gọn (đóng 25–30, mở ~10 cửa hàng, giảm 20–30% chi phí nhân sự), khôi phục niềm tin, tăng trưởng doanh thu.",
+     "ng": "ACBS 23/10 · KBSV 22/10"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Kết quả Q3/2026 sơ bộ",
+   "phu": "Công bố tại ĐHĐCĐ bất thường 21/10, chưa gồm phần dự phòng tăng thêm",
+   "so": [
+    [
+     "Doanh thu",
+     "6.995 tỷ",
+     "−14%"
+    ],
+    [
+     "Lãi gộp",
+     "609 tỷ",
+     "−62%"
+    ],
+    [
+     "Biên gộp",
+     "8,7%",
+     "cùng kỳ 19,8%"
+    ],
+    [
+     "LNST",
+     "−258 tỷ",
+     "cùng kỳ +496"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Chi phí bán hàng và quản lý giảm 13% không bù được lãi gộp; PNJ kéo dài thời gian trả tiền mua lại kim cương lên 120 ngày từ tháng 7.",
+     "ng": "KBSV 22/10"
+    }
+   ]
+  },
+  {
+   "ten": "Chính sách thu đổi và dự phòng",
+   "phu": "Hàng mới: thu đổi theo giá thị trường; hàng đã bán: chuyển quyền lợi sang sản phẩm, ưu đãi",
+   "so": [
+    [
+     "Hàng thuộc chính sách",
+     "26.053 tỷ",
+     "lũy kế 30/6"
+    ],
+    [
+     "Cam kết còn lại",
+     "~21.000 tỷ",
+     "cuối Q3"
+    ],
+    [
+     "Mua lại riêng tháng 7",
+     "~6.000 tỷ",
+     "2025 cả năm ~7.000"
+    ],
+    [
+     "Dự phòng cả năm 2026",
+     "7.071 tỷ",
+     "giả định 80%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Dự phòng là ước tính kế toán, không phải tiền chi ngay; nếu khách bán lại ít hơn giả định, phần thừa được hoàn nhập.",
+     "ng": "KBSV 22/10"
+    },
+    {
+     "t": "Tờ trình cũng chuyển tối đa 4.602,8 tỷ quỹ đầu tư phát triển về lợi nhuận chưa phân phối — không đổi tổng vốn chủ.",
+     "ng": "TNCK 30/9"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn và thanh khoản",
+   "phu": "Chào bán riêng lẻ tối đa 550 triệu cp cho nhà đầu tư chuyên nghiệp, Q4/2026–Q3/2027",
+   "so": [
+    [
+     "Tiền công ty mẹ",
+     "770 tỷ",
+     "30/6: 3.700"
+    ],
+    [
+     "Vay Chủ tịch",
+     "700 tỷ",
+     "hạn mức 1.100"
+    ],
+    [
+     "Vay ngân hàng",
+     "~3.000 tỷ",
+     "ngắn hạn"
+    ],
+    [
+     "Phân bổ 8.000 tỷ",
+     "60 · 20 · 20%",
+     "kinh doanh · vốn lưu động · trả nợ"
+    ]
+   ],
+   "y": [
+    {
+     "t": "PNJ cần 100–150 tỷ mỗi tháng để vận hành; thanh lý tồn kho kim cương đã qua sử dụng phải chịu chiết khấu sâu.",
+     "ng": "MBS 21/10"
+    }
+   ]
+  }
+ ]
+}

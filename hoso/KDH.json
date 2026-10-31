@@ -1,0 +1,1567 @@
+{
+ "v": 2,
+ "ma": "KDH",
+ "ten": "CTCP Đầu tư và Kinh doanh Nhà Khang Điền",
+ "nganh": "Bất động sản nhà ở TP.HCM",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026 (bàn giao thấp tầng Q4, kế hoạch 2027)",
+ "cp_trieu": 1245.3,
+ "cp_ng": "Vốn điều lệ 11.222 tỷ (BCTC Q3/2026) = 1.122,2 triệu cp, + 10% cổ tức bằng cổ phiếu (ĐKCC 08/10/2026) + 10,86 triệu cp ESOP giá 12.000 đ (nộp tiền đến 12/10/2026)",
+ "vc_them": 130,
+ "co_tuc": [],
+ "chia": [
+  [
+   "2026-10-07",
+   1.1
+  ]
+ ],
+ "tieu_de": {
+  "t": "Q3: Gladia vẫn gánh lợi nhuận, tiền cọc Heights đã về; 28 nghìn tỷ quỹ đất còn lại gánh lãi vay"
+ },
+ "dong_mo": "9T/2026 LN cổ đông 1.209 tỷ nhưng 84% LN 2026E (~1,3 nghìn tỷ) là lãi một lần; 2027E còn ~394 tỷ vì Heights chỉ giao từ Q4/2027. Vốn chủ × P/B 0,9 + lãi Gladia chờ ghi nhận: {gt} ({up}); xấu 11,4, tốt 19,7, cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "~84%",
+   "nhan": "LN cổ đông 2026E là lãi một lần",
+   "tieu": "Lợi nhuận 2026 đến từ kế toán, không từ bán hàng",
+   "t": "9T/2026 LN cổ đông 1.209 tỷ (+117%), trong đó ~1.002 tỷ sau thuế là lãi mua rẻ An Lập (Q1) và lãi khi giảm sở hữu Bình Trưng Mới 51% → 48,95% (Q2); Q3 thêm 127 tỷ thu nhập khác chưa có thuyết minh. Doanh thu 9T chỉ 483 tỷ (−83%) vì thấp tầng Bình Trưng Mới nay đi qua dòng liên kết. Mô hình: cả năm ~1,3 nghìn tỷ, phần không gồm lãi một lần ~209 tỷ.",
+   "ng": "BCTC Q3 · SHS 03/08 · Shinhan 24/09 · mô hình"
+  },
+  {
+   "so": "+1,5",
+   "nhan": "nghìn tỷ người mua trả trước trong Q3",
+   "tieu": "Q3 xác nhận Gladia: thấp tầng vẫn giao, cọc Heights đã về",
+   "t": "Lãi liên kết Q3 133 tỷ ≈ 16 căn thấp tầng Bình Trưng Mới được giao — LN cổ đông Q3 176 tỷ, trên mô hình cũ (36 tỷ cơ sở). Người mua trả trước 399 → 1.864 tỷ sau đợt đặt mua Heights (~4.000 tỷ, giao từ Q4/2027). Thấp tầng còn ~130/226 căn chưa giao, ~90 chưa bán. Phần KDH của lãi Gladia còn lại ≈ 1,9 nghìn tỷ ≈ 1,5 nghìn đ/cp, 49% đã có người mua.",
+   "ng": "BCTC Q3 · CafeF, VietnamFinance 08/2026 · Shinhan 24/09 · mô hình"
+  },
+  {
+   "so": "17,8",
+   "nhan": "nghìn tỷ nợ vay 30/9 (+75% trong 9 tháng)",
+   "tieu": "Quỹ đất mở rộng nhanh hơn doanh số",
+   "t": "An Lập (mua 2.553 tỷ, mang về 5,5 nghìn tỷ tồn kho và 2,1 nghìn tỷ nợ), Tân Tạo nâng tổng mức đầu tư 7,7 → 17,9 nghìn tỷ, BT Mả Lạng – Chợ Gà Gạo 16,4 nghìn tỷ đổi lấy ~133 ha Tân Tạo B. 6T/2026 trả 497 tỷ tiền lãi, vốn hóa 521 tỷ vào tồn kho. Tiền cọc Heights kéo nợ ròng/vốn chủ mẹ 74% → 60% trong Q3, nhưng 58% vốn dự án chưa có lịch mở bán — mỗi năm chậm ≈ 0,7 nghìn đ/cp.",
+   "ng": "BCTC Q3 · SHS 03/08 · Shinhan 24/09 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 0,9 cho vốn chủ + lãi Gladia: {up_so} so với giá hiện tại",
+   "t": "Vốn chủ cổ đông 30/9 (+ ESOP) 18,9 nghìn tỷ × 0,9 (≈ đáy lịch sử 0,92 và trung vị 8 chủ đầu tư nhà ở 0,90) + lãi Gladia đã bán × 0,9 + phần chưa bán × 0,6. Xấu 11,4 (P/B 0,7, vùng NVL, DIG); tốt 19,7 (P/B 1,2 = thấp 10% lịch sử, khi Solina, Bình Trưng 18 ha mở bán). EPS 2027E chỉ ~316 đ — định giá theo tài sản, không theo lợi nhuận.",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect, giá cuối tháng · bảng giá 20/10"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1045,
+   1312,
+   394
+  ],
+  "ln_truoc": 810,
+  "eps": [
+   839,
+   1054,
+   316
+  ],
+  "bv": [
+   14874,
+   15271,
+   15587
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "LN không gồm lãi một lần (tỷ)",
+    "v": [
+     1045,
+     209,
+     394
+    ],
+    "d": 0
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     5.8,
+     7.0,
+     2.1
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN, vốn chủ 2024–2025: BCTC; EPS, BVPS theo 1.245,3 triệu cp (sau cổ tức cổ phiếu 10% tháng 10/2026 và ESOP). Không chia cổ tức tiền mặt; cổ tức 2025 trả bằng cổ phiếu."
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Gladia thấp tầng",
+    "mau": "c1",
+    "v": [
+     724,
+     384,
+     326
+    ]
+   },
+   {
+    "ten": "Gladia Heights",
+    "mau": "c2",
+    "v": [
+     0,
+     0,
+     268
+    ]
+   },
+   {
+    "ten": "Lãi một lần (An Lập, Bình Trưng Mới, thu nhập khác Q3)",
+    "mau": "c3",
+    "v": [
+     0,
+     1103,
+     0
+    ]
+   },
+   {
+    "ten": "Privia, chi phí chung, lãi vay & khác",
+    "mau": "c4",
+    "v": [
+     321,
+     -175,
+     -200
+    ]
+   }
+  ],
+  "nhan": "Lãi một lần (An Lập, Bình Trưng Mới, thu nhập khác Q3)",
+  "ng": "2025A: 6T đầu chủ yếu Privia, 6T cuối Gladia thấp tầng (BCTC, VDS 29/05). 2026E: 9T thực tế (lãi một lần 6T theo Shinhan 24/09; Q3: lãi liên kết là thấp tầng, thu nhập khác × 80% là một lần); Q4 và 2027E: mô hình."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với chủ đầu tư nhà ở niêm yết",
+  "phu": "giá hôm nay; KDH: vốn chủ cổ đông 30/9/2026 + ESOP",
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 20/10)",
+  "nhom": "8 chủ đầu tư nhà ở niêm yết",
+  "kv": [
+   [
+    "VHM",
+    1.88
+   ],
+   [
+    "CEO",
+    1.03
+   ],
+   [
+    "TCH",
+    0.97
+   ],
+   [
+    "DXG",
+    0.91
+   ],
+   [
+    "PDR",
+    0.89
+   ],
+   [
+    "NLG",
+    0.83
+   ],
+   [
+    "DIG",
+    0.8
+   ],
+   [
+    "NVL",
+    0.61
+   ]
+  ],
+  "tv": 0.9,
+  "moi_cp": 15188,
+  "max": 2.5,
+  "y": "Trừ VHM (ROE 4 quý 33%), cả nhóm dưới 1,05 lần với ROE 4 quý 1–10%. KDH có ROE 4 quý 9,2% nhưng chỉ ~3% nếu bỏ lãi một lần — mức P/B ngang nhóm là hợp lý, chưa phải rẻ.",
+  "ng": "Nhóm: vốn hóa ÷ vốn chủ cổ đông mẹ 30/6/2026 (bảng giá VNDirect 20/10/2026, BCTC VNDirect); NVL theo bảng giá, đã gồm tiền chào bán 3:1. ROE 4 quý KDH: Q4/2025–Q3/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: Gladia + lãi một lần − chi phí chung",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Gladia thấp tầng (226 căn, KDH ~50%)"
+   },
+   {
+    "ten": "Căn bàn giao trong năm",
+    "s": [
+     "~60",
+     "~56",
+     "40"
+    ]
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     70.6,
+     60.0,
+     60.0
+    ],
+    "d": 0
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     724,
+     384,
+     326
+    ]
+   },
+   {
+    "nhom": "Gladia Heights (616 căn hộ, KDH 50,85%)"
+   },
+   {
+    "ten": "Căn đã đặt mua (lũy kế)",
+    "s": [
+     "—",
+     "~450",
+     "~450"
+    ]
+   },
+   {
+    "ten": "Căn bàn giao trong năm",
+    "v": [
+     0,
+     0,
+     200
+    ]
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     0,
+     0,
+     268
+    ]
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Lãi một lần sau thuế (tỷ)",
+    "v": [
+     0,
+     1103,
+     0
+    ]
+   },
+   {
+    "ten": "Privia, chi phí chung, lãi vay & khác (tỷ)",
+    "v": [
+     321,
+     -175,
+     -200
+    ]
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     1045,
+     1312,
+     394
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     839,
+     1054,
+     316
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
+    "v": [
+     18.5,
+     19.0,
+     19.4
+    ],
+    "d": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     5.8,
+     7.0,
+     2.1
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Nợ vay cuối kỳ (nghìn tỷ)",
+    "s": [
+     "10,1",
+     "17,8 (30/9)",
+     "—"
+    ]
+   }
+  ],
+  "ghi": "Lãi Gladia về cổ đông KDH = căn × giá × (biên gộp − 9% bán hàng, chiết khấu thanh toán; Heights 8%) × (1 − 20%) × ~50%. Bình Trưng Mới là công ty liên kết từ Q2/2026: lãi 159 căn thấp tầng đi qua dòng liên kết. 2026E = 9T thực tế + Q4. Chưa tính KCN Lê Minh Xuân, Solina, Bình Trưng 18 ha."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1312
+  ],
+  "cuoi": [
+   "2027E",
+   394
+  ],
+  "buoc": [
+   [
+    "Hết lãi một lần",
+    -1103
+   ],
+   [
+    "Thấp tầng 56 → 40",
+    -58
+   ],
+   [
+    "Heights giao 200 căn",
+    268
+   ],
+   [
+    "Chi phí chung, lãi vay",
+    -25
+   ]
+  ],
+  "y": "Bỏ lãi một lần, LN 2027E (394 tỷ) vẫn cao hơn phần cốt lõi 2026E (~209 tỷ) nhờ Heights bắt đầu giao; nhưng chi phí chung và lãi vay ghi chi phí ăn gần một nửa phần lãi Gladia.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Căn thấp tầng Gladia giao Q4/2026",
+   "v": [
+    "8",
+    "20",
+    "32"
+   ],
+   "ly_do": "30/6: ~136/226 căn đã bán, ~80 đã giao (Shinhan); Q3 giao ~16 (lãi liên kết 133 tỷ) → ~40 căn chờ giao; Q4 thường là quý giao lớn nhất"
+  },
+  {
+   "ten": "Căn thấp tầng giao năm 2027",
+   "v": [
+    "15",
+    "40",
+    "60"
+   ],
+   "ly_do": "~90 căn chưa bán, ~40 tỷ/căn; năm 2025 bán ~100 căn (VDS), 6T/2026 doanh số chỉ ~300 tỷ (Shinhan); vay mua nhà 8–10%/năm"
+  },
+  {
+   "ten": "Biên gộp thấp tầng",
+   "v": [
+    "55%",
+    "60%",
+    "65%"
+   ],
+   "ly_do": "6T cuối 2025: 71%; 6T/2026: 63% (Shinhan), Q2/2026 biên gộp chung 50%; trừ ~9% bán hàng, chiết khấu thanh toán; thuế 20%"
+  },
+  {
+   "ten": "Căn Gladia Heights giao năm 2027",
+   "v": [
+    "0",
+    "200",
+    "350"
+   ],
+   "ly_do": "GPXD 02/2026, giao từ Q4/2027; ~450 căn đã đặt mua. Privia giao phần lớn ngay quý đầu bàn giao (Q4/2024 doanh thu 2.048 tỷ)"
+  },
+  {
+   "ten": "Biên gộp Gladia Heights",
+   "v": [
+    "40%",
+    "45%",
+    "50%"
+   ],
+   "ly_do": "83–95 triệu/m², gần gấp đôi Privia (biên gộp 41% 6T/2025, VDS); quỹ đất giữ từ trước liên doanh Keppel; trừ 8% bán hàng"
+  },
+  {
+   "ten": "Chi phí chung, lãi vay ghi chi phí: Q4/2026 · 2027 (tỷ)",
+   "v": [
+    "−75 · −260",
+    "−60 · −200",
+    "−45 · −140"
+   ],
+   "ly_do": "6T/2026 −57 tỷ, Q3 −58 tỷ (quản lý 51 tỷ; lãi vay vào chi phí Q1–Q3 6 · 19 · 12 tỷ); nợ vay 17,8 nghìn tỷ"
+  },
+  {
+   "ten": "P/B vốn chủ cổ đông",
+   "v": [
+    "0,7",
+    "0,9",
+    "1,2"
+   ],
+   "ly_do": "KDH từ 2015: thấp nhất 0,92 (10/2026), thấp 10% 1,20, trung vị 1,87; 8 chủ đầu tư nhà ở (20/10): trung vị 0,90, NVL 0,61, DIG 0,80"
+  },
+  {
+   "ten": "Hệ số lãi Gladia: đã bán · chưa bán",
+   "v": [
+    "0,8 · 0,4",
+    "0,9 · 0,6",
+    "0,95 · 0,8"
+   ],
+   "ly_do": "Ghi nhận trải 2026–2028 (~10%/năm); phần chưa bán thêm rủi ro giá và tốc độ bán; xấu: hủy cọc, giảm giá"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1193,
+   "ln27": -150,
+   "gia": 11.4,
+   "mo_ta": "Giao 8 + 15 căn thấp tầng (Q4/2026, 2027), Heights dời sang 2028; biên gộp 55% / 40%; P/B 0,7; hệ số Gladia 0,8 / 0,4"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1312,
+   "ln27": 394,
+   "gia": 14.8,
+   "mo_ta": "Giao 20 + 40 căn thấp tầng, 200 căn Heights trong Q4/2027; biên gộp 60% / 45%; P/B 0,9; hệ số 0,9 / 0,6"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 1451,
+   "ln27": 930,
+   "gia": 19.7,
+   "mo_ta": "Giao 32 + 60 căn thấp tầng, 350 căn Heights; biên gộp 65% / 50%; Solina, Bình Trưng 18 ha mở bán; P/B 1,2; hệ số 0,95 / 0,8"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo tài sản (NAV điều chỉnh)",
+  "phu": "vốn chủ cổ đông × P/B + lãi Gladia chờ ghi nhận × hệ số",
+  "ck": 0,
+  "cp": 1245.3,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông (quỹ đất theo giá sổ sách)",
+    "mau": "c2",
+    "x": [
+     18914,
+     18914,
+     18914
+    ],
+    "boi": [
+     0.7,
+     0.9,
+     1.2
+    ],
+    "x_ten": "Vốn chủ cổ đông 30/9/2026 + ESOP",
+    "boi_ten": "P/B",
+    "sh": 1,
+    "gt": [
+     13240,
+     17023,
+     22697
+    ]
+   },
+   {
+    "ten": "Lãi Gladia đã bán, chờ giao",
+    "mau": "c1",
+    "x": [
+     815,
+     928,
+     1042
+    ],
+    "boi": [
+     0.8,
+     0.9,
+     0.95
+    ],
+    "x_ten": "LNST phần KDH",
+    "boi_ten": "hệ số",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     652,
+     835,
+     990
+    ]
+   },
+   {
+    "ten": "Lãi Gladia phần chưa bán",
+    "mau": "c3",
+    "x": [
+     854,
+     956,
+     1059
+    ],
+    "boi": [
+     0.4,
+     0.6,
+     0.8
+    ],
+    "x_ten": "LNST phần KDH",
+    "boi_ten": "hệ số",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     342,
+     574,
+     847
+    ]
+   }
+  ],
+  "von": [
+   14234,
+   18432,
+   24534
+  ],
+  "gia": [
+   11.4,
+   14.8,
+   19.7
+  ]
+ },
+ "nhay": [
+  [
+   "P/B vốn chủ cổ đông ±0,1 lần",
+   null,
+   1.5
+  ],
+  [
+   "Một năm lãi vay (~1.000 tỷ) không bù được bằng giá bán",
+   1000,
+   0.7
+  ],
+  [
+   "Hệ số lãi Gladia (cả hai phần) ±0,1",
+   null,
+   0.2
+  ],
+  [
+   "Biên gộp Gladia (thấp tầng và Heights) ±5 điểm %",
+   215,
+   0.1
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.11,
+   1.11,
+   1.1,
+   1.03,
+   1.13,
+   1.14,
+   1.14,
+   1.0,
+   1.11,
+   1.2,
+   1.2,
+   1.24,
+   1.21,
+   1.18,
+   1.28,
+   1.28,
+   1.27,
+   1.25,
+   1.27,
+   1.37,
+   1.44,
+   1.48,
+   1.35,
+   1.33,
+   1.31,
+   1.5,
+   1.73,
+   1.71,
+   1.84,
+   1.84,
+   1.85,
+   1.77,
+   1.81,
+   1.95,
+   1.8,
+   1.67,
+   2.11,
+   2.22,
+   2.33,
+   2.35,
+   2.07,
+   1.93,
+   1.88,
+   1.94,
+   2.07,
+   1.96,
+   1.93,
+   2.12,
+   1.93,
+   1.86,
+   1.91,
+   1.87,
+   1.84,
+   1.92,
+   1.74,
+   1.89,
+   2.01,
+   2.06,
+   1.99,
+   2.03,
+   1.89,
+   1.75,
+   1.32,
+   1.5,
+   1.54,
+   1.62,
+   1.6,
+   1.88,
+   1.88,
+   1.93,
+   2.0,
+   2.19,
+   2.38,
+   2.27,
+   2.17,
+   2.5,
+   2.74,
+   2.87,
+   3.11,
+   2.96,
+   3.09,
+   3.79,
+   3.06,
+   3.36,
+   3.29,
+   3.34,
+   3.33,
+   3.02,
+   2.58,
+   2.39,
+   2.53,
+   2.44,
+   1.85,
+   1.5,
+   1.72,
+   1.66,
+   1.76,
+   1.58,
+   1.71,
+   1.85,
+   1.81,
+   1.88,
+   2.29,
+   2.18,
+   1.92,
+   1.85,
+   1.86,
+   1.87,
+   1.84,
+   2.06,
+   2.25,
+   2.08,
+   2.14,
+   2.18,
+   2.14,
+   2.19,
+   2.26,
+   2.14,
+   1.97,
+   2.15,
+   2.07,
+   1.95,
+   1.9,
+   1.53,
+   1.7,
+   1.7,
+   1.74,
+   2.3,
+   2.13,
+   2.26,
+   2.18,
+   1.96,
+   1.71,
+   1.65,
+   1.58,
+   1.54,
+   1.35,
+   1.29,
+   1.04,
+   1.1,
+   0.93,
+   0.92
+  ],
+  "p10": 1.2,
+  "p25": 1.53,
+  "tv": 1.87,
+  "thap": [
+   "2026-10",
+   0.92
+  ],
+  "nay": [
+   "2026-10",
+   0.92
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,7 · 0,9 · 1,2 cho vốn chủ cổ đông (lãi Gladia chờ ghi nhận tính riêng): 0,9 ≈ đáy lịch sử (0,92, 10/2026); 1,2 = thấp 10% (1,20); 0,7 thấp hơn mọi tháng từ 2015. 2023–2025 thị trường trả 1,5–2,3 lần dù ROE chỉ 5–6% — kỳ vọng vào quỹ đất, nay đã rút."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -21,
+    36,
+    99
+   ],
+   "ck": 236
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -16,
+    103,
+    242
+   ],
+   "ck": 489
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1193,
+    1312,
+    1451
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026 (đã ra)",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026: 176 tỷ, trên mô hình cũ",
+   "ct": "LN cổ đông 176 tỷ (−25%), mô hình cũ 36 tỷ: lãi liên kết Bình Trưng Mới 133 tỷ (~16 căn) + 127 tỷ thu nhập khác chưa thuyết minh. Cọc người mua +1,5 nghìn tỷ. 2026E 1.312 tỷ (cũ 1.219).",
+   "tac": [
+    "giữ 14,8 nghìn đ/cp",
+    "lãi Q3 vào vốn chủ, phần chờ giao giảm tương ứng"
+   ],
+   "theo_doi": "lãi liên kết, thu nhập khác"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Bàn giao thấp tầng cuối năm",
+   "ct": "~40 căn đã bán chờ giao (30/9, ước); Q3 giao ~16, 6T/2026 ~20 căn. Q4 thường là quý lớn nhất của KDH (Q4/2025: 489 tỷ LN cổ đông); cơ sở Q4/2026 ~103 tỷ.",
+   "tac": [
+    "+82 tỷ LN",
+    "mỗi 10 căn thấp tầng (~40 tỷ/căn, biên gộp 60%)"
+   ],
+   "theo_doi": "số căn giao, LN Q4"
+  },
+  {
+   "khi": "01–04/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026, kế hoạch 2027 (ĐHĐCĐ)",
+   "ct": "LNST hợp nhất 9T 1.268 tỷ = 85% kế hoạch 1.500 tỷ, doanh thu mới 12%. Kế hoạch 2027 cho biết lịch mở bán Solina, Bình Trưng 18 ha và số căn Heights giao Q4/2027.",
+   "tac": [
+    "394 tỷ",
+    "LN cổ đông 2027E cơ sở — không còn lãi một lần"
+   ],
+   "theo_doi": "kế hoạch LN 2027, lịch mở bán"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Bán phần còn lại Gladia Heights",
+   "ct": "~166 căn hộ chưa bán (tòa thứ ba và phần còn lại của đợt 01/08) cùng 23 căn thương mại. Giá đợt sau là thước đo cho Bình Trưng 18 ha liền kề.",
+   "tac": [
+    "+222 tỷ LN",
+    "phần KDH nếu bán hết ở giá đợt đầu (~8,9 tỷ/căn)"
+   ],
+   "theo_doi": "giá bán, tỷ lệ hấp thụ"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Solina, Bình Trưng 18 ha mở bán",
+   "ct": "Solina GĐ1 đã nộp tiền đất, có GPXD hạ tầng (493 thấp tầng + 1.140 căn hộ); Bình Trưng 18 ha (~3.000 căn hộ) còn quy hoạch 1/500, giao đất. Mở bán đúng hạn là điều kiện cho P/B 1,2.",
+   "tac": [
+    "+4,9 nghìn đ/cp",
+    "kịch bản tốt so với cơ sở"
+   ],
+   "theo_doi": "quyết định giao đất, ngày mở bán"
+  },
+  {
+   "khi": "Q4/2027",
+   "loai": "len",
+   "tieu": "Gladia Heights bắt đầu bàn giao",
+   "ct": "~450 căn đã đặt mua (~4.000 tỷ, KDH 50,85%), khởi công 01/2026. Privia (2024) giao phần lớn ngay quý đầu bàn giao.",
+   "tac": [
+    "+134 tỷ LN",
+    "mỗi 100 căn hộ (~8,9 tỷ/căn, biên gộp 45%)"
+   ],
+   "theo_doi": "tiến độ xây dựng, ngày bàn giao"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Nợ vay, lãi vay vốn hóa",
+   "ct": "Nợ vay 17,8 nghìn tỷ (+75% trong 9T); nợ ròng/vốn chủ mẹ 60% (30/6: 74%) nhờ tiền cọc Heights; 6T trả 497 tỷ tiền lãi. Tân Tạo cần thêm ~8,7 nghìn tỷ theo tổng mức đầu tư mới.",
+   "tac": [
+    "−0,7 nghìn đ/cp",
+    "mỗi năm ~1.000 tỷ lãi vay không bù được bằng giá bán"
+   ],
+   "theo_doi": "nợ vay, lãi vay vốn hóa"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Tín dụng BĐS, Nghị quyết 21-NQ/TW",
+   "ct": "Vay mua nhà 8–10%/năm; NQ 21 (28/7/2026) định hướng thuế BĐS bỏ hoang và thời hạn sở hữu chung cư — tăng chi phí giữ quỹ đất, giảm sức hút căn hộ.",
+   "tac": [
+    "±1,5 nghìn đ/cp",
+    "mỗi 0,1 lần P/B vốn chủ"
+   ],
+   "theo_doi": "lãi vay mua nhà, dự thảo thuế"
+  },
+  {
+   "khi": "2026–2029",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dự án BT Mả Lạng – Chợ Gà Gạo",
+   "ct": "Tổng mức đầu tư 16.370 tỷ, KDH ứng vốn từ 2026, nhận ~133 ha Tân Tạo B (~10,7 nghìn tỷ) và 5,6 nghìn tỷ ngân sách khi xong (Q4/2028): nợ vay còn tăng trước khi tiền về.",
+   "tac": "",
+   "theo_doi": "giải ngân, nợ vay"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thấp tầng giá cao bán chậm",
+   "ct": "~90 căn thấp tầng Gladia chưa bán (~40 tỷ/căn); doanh số 6T/2026 chỉ ~300 tỷ (Shinhan), người mua trả trước tăng trong Q3 chủ yếu từ Heights; giao dịch căn hộ, nhà riêng lẻ Q1/2026 −32% so với quý trước.",
+   "tac": [
+    "−0,2 nghìn đ/cp",
+    "nếu hệ số phần chưa bán 0,6 → 0,4"
+   ],
+   "theo_doi": "số căn bán mỗi quý"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Gladia: căn đã giao, đã bán chờ giao, chưa bán",
+   "kieu": "cot_chong",
+   "dv": "căn",
+   "so_le": 0,
+   "nhan": [
+    "Thấp tầng (226)",
+    "Gladia Heights (616)"
+   ],
+   "ss": [
+    {
+     "ten": "Đã giao",
+     "v": [
+      96,
+      0
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Đã bán chờ giao",
+     "v": [
+      40,
+      450
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chưa bán",
+     "v": [
+      90,
+      166
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "~490 căn đã bán chờ giao là phần lãi chắc nhất; ~90 căn thấp tầng (~40 tỷ/căn) và ~166 căn hộ chưa bán.",
+   "ng": "Shinhan 24/09 (thấp tầng, 30/6/2026) + ~16 căn giao Q3 ước từ lãi liên kết · CafeF, VietnamFinance 08/2026 (Heights, đợt 01/08)"
+  },
+  {
+   "ten": "Vốn gắn với dự án 30/6/2026",
+   "kieu": "cot_chong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "T.Tạo",
+    "A.Lập",
+    "BT18",
+    "Gladia",
+    "PP2",
+    "Solina",
+    "LMX",
+    "Khác"
+   ],
+   "ss": [
+    {
+     "ten": "Đang bán (Gladia)",
+     "v": [
+      0,
+      0,
+      0,
+      4.6,
+      0,
+      0,
+      0,
+      0
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Dự kiến ra hàng 2027–2028",
+     "v": [
+      0,
+      0,
+      5.0,
+      0,
+      0,
+      2.1,
+      1.9,
+      0
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Chưa có lịch mở bán công bố",
+     "v": [
+      9.2,
+      5.5,
+      0,
+      0,
+      2.7,
+      0,
+      0,
+      1.5
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "58% vốn dự án (18,9 nghìn tỷ) ở Tân Tạo, An Lập, Phong Phú 2 và dự án khác — chưa có lịch mở bán công bố; Gladia chỉ 14%.",
+   "ng": "SHS 03/08 (BCTC Q2/2026) · lịch: Shinhan 24/09. T.Tạo: Tân Tạo, A.Lập: An Lập, BT18: Bình Trưng 18 ha, PP2: Phong Phú 2, LMX: KCN Lê Minh Xuân"
+  },
+  {
+   "ten": "Tồn kho, nợ vay và người mua trả trước",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Hàng tồn kho",
+     "v": [
+      22.4,
+      22.2,
+      22.4,
+      23.0,
+      23.1,
+      23.3,
+      29.1,
+      29.5,
+      29.9
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Nợ vay",
+     "v": [
+      7.8,
+      7.1,
+      7.4,
+      9.1,
+      9.9,
+      10.1,
+      15.3,
+      16.7,
+      17.8
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Người mua trả trước",
+     "v": [
+      2.9,
+      1.9,
+      1.3,
+      0.4,
+      0.4,
+      0.6,
+      0.7,
+      0.4,
+      1.9
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "9T/2026: tồn kho +6,7 nghìn tỷ, nợ vay +7,6 nghìn tỷ; người mua trả trước 0,4 → 1,9 nghìn tỷ trong Q3 nhờ tiền đặt mua Gladia Heights.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "Doanh thu thuần và LN gộp theo quý",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Doanh thu thuần",
+     "v": [
+      2048,
+      710,
+      1049,
+      1098,
+      1794,
+      281,
+      161,
+      41
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "LN gộp",
+     "v": [
+      908,
+      307,
+      404,
+      776,
+      1267,
+      183,
+      81,
+      6
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Q1–Q3/2026 doanh thu 281, 161 và 41 tỷ: Bình Trưng Mới thôi hợp nhất, thấp tầng của nó đi qua dòng liên kết (Q3 133 tỷ); biên gộp 6T còn 60%.",
+   "ng": "BCTC (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 4200,
+    "th": 483,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
+   },
+   {
+    "ten": "LNST hợp nhất",
+    "kh": 1500,
+    "th": 1268,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
+   }
+  ],
+  "y": "LNST 9T đạt 85% kế hoạch nhưng ~1.100 tỷ là lãi một lần; doanh thu mới 12%. Bình Trưng Mới (159 căn thấp tầng) thôi hợp nhất từ Q2, Heights chỉ giao từ Q4/2027 — kế hoạch LN có thể đạt, doanh thu thì không.",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "Gladia by the Waters — nguồn lãi 2026–2028",
+   "phu": "11,8 ha mặt tiền Võ Chí Công (Bình Trưng, TP Thủ Đức cũ) · liên doanh Keppel 49% · 226 căn thấp tầng + Gladia Heights 616 căn hộ, 23 căn thương mại",
+   "so": [
+    [
+     "Thấp tầng đã bán",
+     "~136/226 căn",
+     "~96 căn đã giao (30/9, ước)"
+    ],
+    [
+     "Heights đặt mua",
+     ">90% ~500 căn",
+     "~4.000 tỷ, 01/08/2026"
+    ],
+    [
+     "Giá Heights",
+     "83–95 triệu/m²",
+     "gần gấp đôi Privia"
+    ],
+    [
+     "Tồn kho Đoàn Nguyên",
+     "3.467 tỷ",
+     "30/6/2026"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Hai pháp nhân: Đoàn Nguyên (KDH 50,85%) giữ 67 biệt thự và Gladia Heights; Bình Trưng Mới (48,95% sau khi bán 2% trong Q2/2026) giữ 159 căn thấp tầng, nay là công ty liên kết — lãi đi qua dòng liên doanh, liên kết thay vì doanh thu.",
+     "ng": "SHS 03/08 · Shinhan 24/09"
+    },
+    {
+     "t": "Gladia Heights đủ điều kiện bán từ 23/07/2026, GPXD 02/02/2026, bàn giao từ Q4/2027. Gladia là dự án đầu tiên ở Việt Nam đạt BCA Green Mark for Districts.",
+     "ng": "SHS 03/08 · Shinhan 24/09 · CafeF 07–08/2026"
+    },
+    {
+     "t": "Thấp tầng mở bán từ Q3/2025 ở ~230 triệu/m² đất; năm 2025 bán ~100 căn (hợp đồng hơn 4.000 tỷ), giao ~60 căn đến cuối năm.",
+     "ng": "VDS 29/05 · Shinhan 24/09"
+    }
+   ]
+  },
+  {
+   "ten": "Quỹ đất kế tiếp — từ gần đến xa",
+   "phu": "Solina 16,4 ha · Bình Trưng 18 ha · An Lập 8,2 ha · KCN Lê Minh Xuân mở rộng 110 ha · Tân Tạo ~330 ha · Phong Phú 2",
+   "so": [
+    [
+     "Solina (11A)",
+     "2.147 tỷ",
+     "493 thấp tầng + 1.140 căn hộ"
+    ],
+    [
+     "Bình Trưng 18 ha",
+     "4.961 tỷ",
+     "~200 thấp tầng + ~3.000 căn hộ"
+    ],
+    [
+     "An Lập (Cát Lái)",
+     "5.499 tỷ",
+     "mua 99% giá 2.553 tỷ, Q1/2026"
+    ],
+    [
+     "Tân Tạo",
+     "9.238 tỷ",
+     "GPMB 85–90%, TMĐT 17,9 nghìn tỷ"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Solina GĐ1 (13,1 ha) đã nộp tiền đất, có GCN và GPXD hạ tầng; Bình Trưng 18 ha được chấp thuận đầu tư 13/10/2025, còn 1/500, giao đất, GPXD — Shinhan dự kiến mở bán căn hộ 2027, bàn giao 2028.",
+     "ng": "SHS 03/08 · Shinhan 24/09"
+    },
+    {
+     "t": "An Lập đã có GCN đất ở và 1/500 nhưng chưa có lịch khởi công; thương vụ mang về 5.499 tỷ tồn kho và 2.100 tỷ nợ. KDH ghi lãi mua rẻ 285 tỷ, trong khi SHS (85% sổ sách) và Shinhan (DCF 4.541 tỷ) đều định giá dự án dưới giá trị sổ sách.",
+     "ng": "SHS 03/08 · Shinhan 24/09 · VDS 29/05"
+    },
+    {
+     "t": "Tân Tạo: ĐHĐCĐ 07/07/2026 nâng tổng mức đầu tư 7.737 → 17.918 tỷ (+131,6%); ~133 ha Tân Tạo B là quỹ đất đối ứng cho BT Mả Lạng – Chợ Gà Gạo (khởi công 29/08/2026). Shinhan dự kiến thương mại hóa Tân Tạo A từ 2029.",
+     "ng": "SHS 03/08 · Shinhan 24/09"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn — nợ vay, dòng tiền, cổ phiếu",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026",
+   "so": [
+    [
+     "Nợ vay",
+     "17,8 nghìn tỷ",
+     "+75% từ đầu năm"
+    ],
+    [
+     "Nợ vay ròng/vốn chủ mẹ",
+     "60%",
+     "30/6: 74%"
+    ],
+    [
+     "Người mua trả trước",
+     "1.864 tỷ",
+     "30/6: 399 tỷ"
+    ],
+    [
+     "Dòng tiền kinh doanh 6T",
+     "−1.480 tỷ",
+     "SHS 03/08"
+    ]
+   ],
+   "y": [
+    {
+     "t": "86,7% nợ vay là dài hạn, gắn với từng dự án (Tân Tạo, Bình Trưng – Cát Lái, Solina, KCN Lê Minh Xuân); KDH đã tất toán toàn bộ trái phiếu từ giữa 2025.",
+     "ng": "SHS 03/08 · ĐHĐCĐ 2026"
+    },
+    {
+     "t": "6T/2026 vốn hóa 521 tỷ lãi vay, trả 497 tỷ tiền lãi, chỉ 25 tỷ vào chi phí — phần vốn hóa sẽ vào giá vốn khi bàn giao.",
+     "ng": "SHS 03/08"
+    },
+    {
+     "t": "Cổ tức 2025 bằng cổ phiếu 10% (112,2 triệu cp, ĐKCC 08/10/2026) và ESOP 10,86 triệu cp giá 12.000 đ (nộp tiền 29/9–12/10/2026).",
+     "ng": "Doanh Nhân, Mekong ASEAN 9–10/2026"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "Lãi suất huy động tăng, room tín dụng hạn chế đẩy lãi vay BĐS lên cho cả chủ đầu tư và người mua; vay mua nhà cố định ban đầu phổ biến 8–10%/năm.",
+     "h": -1,
+     "ng": "SHS 03/08"
+    },
+    {
+     "t": "Nghị quyết 21-NQ/TW (28/7/2026) định hướng thuế BĐS bỏ hoang và thời hạn sở hữu chung cư — tăng chi phí giữ quỹ đất chưa triển khai.",
+     "h": -1,
+     "ng": "SHS 03/08"
+    },
+    {
+     "t": "Luật Kinh doanh BĐS 2024 và NĐ 96/2024 nâng yêu cầu vốn chủ (15–20% tổng mức đầu tư) — lợi thế cho chủ đầu tư vốn lớn như KDH.",
+     "h": 1,
+     "ng": "Shinhan 24/09"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "Q1/2026 giao dịch BĐS cả nước 115.650 (−23,6% so với quý trước); căn hộ, nhà riêng lẻ −32,2% — người mua thận trọng với nhóm giá trị cao.",
+     "h": -1,
+     "ng": "SHS 03/08"
+    },
+    {
+     "t": "Nguồn cung tương lai lớn: Q1/2026 có 106 dự án đủ điều kiện bán (40,4 nghìn căn); căn hộ TP.HCM mở rộng tăng mạnh, chủ yếu ở Bình Dương cũ.",
+     "h": -1,
+     "ng": "SHS 03/08"
+    },
+    {
+     "t": "Trừ VHM, chủ đầu tư nhà ở niêm yết giao dịch dưới 1,05 lần giá trị sổ sách: NLG 0,83, PDR 0,89, DXG 0,91, NVL 0,61.",
+     "h": 0,
+     "ng": "bảng giá 20/10/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Quỹ đất ~600 ha hoàn toàn trong TP.HCM cũ, pháp lý rõ hơn mặt bằng ngành; lịch sử bàn giao đúng hoặc sớm 2–3 tháng.",
+     "h": 1,
+     "ng": "Shinhan 24/09 · KBSV 16/06"
+    },
+    {
+     "t": "Gladia Heights bán trên 90% của ~500 căn trong ngày mở bán — cầu cho sản phẩm khu Đông vị trí tốt vẫn có ở 83–95 triệu/m².",
+     "h": 1,
+     "ng": "CafeF, VietnamFinance 08/2026"
+    },
+    {
+     "t": "Từ cuối 2021 đến 30/6/2026: tổng tài sản ×2,75, nợ vay ×6,53, dòng tiền kinh doanh âm liên tục — quy mô tăng nhanh hơn khả năng tạo tiền.",
+     "h": -1,
+     "ng": "SHS 03/08"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-09-23",
+   "kn": "MUA",
+   "tp": 24200,
+   "ln26": 1390,
+   "ln27": 363,
+   "pp": "RNAV (DCF dự án, WACC 9,9%), chiết khấu 35%",
+   "y": "RNAV 37.200 đ/cp trước chiết khấu 35%; Tân Tạo 21,1 nghìn tỷ, Phong Phú 2 12,4 nghìn tỷ theo DCF. LN 2026 1,39 nghìn tỷ nhưng cốt lõi ~388 tỷ; 2027 chỉ 363 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KDH/20260924_kdh_mua_gia_mt_vnd_24_200_52_6_gladia_la_dong_luc_trong_ngan_han.pdf"
+  },
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-08-22",
+   "kn": "MUA",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "không đọc được (bản PDF dạng ảnh)",
+   "y": "Chỉ đọc được biểu đồ: nợ ròng/VCSH tăng mạnh đến T6/2026, cơ cấu vốn theo dự án. Simplize ghi giá mục tiêu 20.900 đ (đã quy đổi cổ tức cổ phiếu 10%).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KDH/cap_nhat_kdh_mua_2026_08_22.pdf"
+  },
+  {
+   "ctck": "SHS",
+   "ngay": "2026-08-03",
+   "kn": "THEO DÕI",
+   "tp": 19600,
+   "ln26": 1374,
+   "ln27": 1138,
+   "pp": "RNAV = vốn chủ + thặng dư từng dự án (DCF; 85% hoặc 50% sổ sách)",
+   "y": "Thận trọng nhất: RNAV 22,0 nghìn tỷ ≈ P/B 1,2; Tân Tạo, An Lập, Phong Phú 2 chỉ 85% sổ sách. Nhấn mạnh tài sản dự án tăng nhanh hơn khả năng tạo tiền.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KDH/kdh_tang_nhanh_quy_mo_trong_boi_canh_nhieu_thach_thuc.pdf"
+  },
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-06-16",
+   "kn": "MUA",
+   "tp": null,
+   "ln26": 902,
+   "ln27": 2007,
+   "pp": "RNAV (DCF + so sánh)",
+   "y": "Giá mục tiêu 36.200 đ (trước cổ tức cổ phiếu), viết trước KQKD Q2: doanh thu 2026 6,6 nghìn tỷ, LN 2027 2,0 nghìn tỷ nhờ Solina mở bán 2026 — đã lạc hậu, không đưa vào dải so sánh.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/analysis_report/ctcp_dau_tu_va_kinh_doanh_nha_khang_dien_bao_cao_cap_nhat_1q2026_2026_06_16.pdf"
+  },
+  {
+   "ctck": "VDS",
+   "ngay": "2026-05-29",
+   "kn": "MUA",
+   "tp": null,
+   "ln26": 1460,
+   "ln27": 1632,
+   "pp": "RNAV, WACC 10,1%",
+   "y": "Giá mục tiêu 41.500 đ khi giá 23.000 đ (trước cổ tức cổ phiếu); Tân Tạo 17,8, Bình Trưng 18 ha 9,8 nghìn tỷ theo giá thị trường. Viết trước KQKD Q2 — không đưa vào dải so sánh.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KDH/Bien_loi_nhuan_cai_thien_manh_nho_ban_giao_du_an_Gladia.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. Giá mục tiêu theo bản PDF; báo cáo ra trước 07/10/2026 được trang chia 1,1 theo đợt cổ tức bằng cổ phiếu 10% (ĐKCC 08/10/2026). KBSV, VDS viết trước KQKD Q2/2026 và trước khi giá giảm ~40% nên không đưa vào dải giá mục tiêu; ACBS dạng ảnh, không đọc được. KDH không chia cổ tức tiền mặt trong 12 tháng qua.",
+ "nguon": [
+  {
+   "ten": "Shinhan — Gladia là động lực trong ngắn hạn",
+   "ngay": "23/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KDH/20260924_kdh_mua_gia_mt_vnd_24_200_52_6_gladia_la_dong_luc_trong_ngan_han.pdf"
+  },
+  {
+   "ten": "ACBS — Cập nhật KDH",
+   "ngay": "22/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KDH/cap_nhat_kdh_mua_2026_08_22.pdf"
+  },
+  {
+   "ten": "SHS — Tăng nhanh quy mô trong bối cảnh nhiều thách thức",
+   "ngay": "03/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KDH/kdh_tang_nhanh_quy_mo_trong_boi_canh_nhieu_thach_thuc.pdf"
+  },
+  {
+   "ten": "KBSV — Báo cáo cập nhật 1Q2026",
+   "ngay": "16/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/analysis_report/ctcp_dau_tu_va_kinh_doanh_nha_khang_dien_bao_cao_cap_nhat_1q2026_2026_06_16.pdf"
+  },
+  {
+   "ten": "VDS — Biên lợi nhuận cải thiện mạnh nhờ bàn giao Gladia",
+   "ngay": "29/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KDH/Bien_loi_nhuan_cai_thien_manh_nho_ban_giao_du_an_Gladia.pdf"
+  },
+  {
+   "ten": "CafeF — Keppel, Khang Điền mở bán thành công Gladia Heights",
+   "ngay": "03/08/2026",
+   "link": "https://cafef.vn/keppel-khang-dien-mo-ban-thanh-cong-du-an-gladia-heights-188260803192509963.chn"
+  },
+  {
+   "ten": "VietnamFinance — Gladia Heights: kết quả bán hàng (>90% ~500 căn, gần 4.000 tỷ)",
+   "ngay": "08/2026",
+   "link": "https://vietnamfinance.vn/gladia-heights-khu-can-ho-do-keepel-va-khang-dien-phat-trien-dat-ket-qua-ban-hang-an-tuong-d148585.html"
+  },
+  {
+   "ten": "CafeF — Gladia Heights đủ điều kiện mở bán, giao từ Q4/2027",
+   "ngay": "30/07/2026",
+   "link": "https://cafef.vn/khu-can-ho-gladia-heights-co-van-ban-du-dieu-kien-mo-ban-nha-o-hinh-thanh-trong-tuong-lai-188260730105223331.chn"
+  },
+  {
+   "ten": "Doanh Nhân — sắp phát hành 123 triệu cổ phiếu (cổ tức 10%, ESOP)",
+   "ngay": "09/2026",
+   "link": "https://doanhnhan.baophapluat.vn/nha-khang-dien-kdh-sap-phat-hanh-123-trieu-co-phieu-pho-tong-giam-doc-chi-dam-gom-hang.html"
+  },
+  {
+   "ten": "Mekong ASEAN — phát hành hơn 123 triệu cổ phiếu",
+   "ngay": "09/2026",
+   "link": "https://mekongasean.vn/khang-dien-sap-phat-hanh-hon-123-trieu-co-phieu-59208.html"
+  },
+  {
+   "ten": "Doanh Nhân — hai phương án tăng vốn, thay đổi nhân sự",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/nha-khang-dien-kdh-thay-doi-nhan-su-cap-cao-dong-thoi-trien-khai-hai-phuong-an-tang-von.html"
+  },
+  {
+   "ten": "Doanh Nhân — ĐHĐCĐ 2026: sạch nợ trái phiếu, mục tiêu lãi 1.500 tỷ",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-khang-dien-kdh-2026-sach-no-trai-phieu-noi-khong-voi-phat-hanh-von-moi-va-muc-tieu-lai-1-500-ty-dong.html"
+  },
+  {
+   "ten": "Doanh Nhân — kế hoạch 2026: doanh thu 4.200 tỷ, LNST 1.500 tỷ",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dau-tu-va-kinh-doanh-nha-khang-dien-kdh-dat-muc-tieu-lai-sau-thue-1-500-ty-dong-he-lo-hai-ung-vien-tham-gia-hdqt.html"
+  },
+  {
+   "ten": "Mekong ASEAN — MBS dự báo lợi nhuận quý 3/2026 (KDH 2026: 1.383 tỷ)",
+   "ngay": "09/2026",
+   "link": "https://mekongasean.vn/nganh-nao-duoc-du-bao-tang-truong-loi-nhuan-manh-nhat-quy-32026-60100.html"
+  },
+  {
+   "ten": "VnBusiness — KQKD Q1/2026, dòng tiền kinh doanh âm",
+   "ngay": "04/2026",
+   "link": "https://vnbusiness.vn/khang-dien-bao-lai-tang-131-nhung-dong-tien-kinh-doanh-am-634-ty-dong.html"
+  }
+ ]
+}

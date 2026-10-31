@@ -1,0 +1,1489 @@
+{
+ "v": 2,
+ "ma": "HAH",
+ "ten": "CTCP Vận tải và Xếp dỡ Hải An",
+ "nganh": "Vận tải biển container",
+ "ky": "BCTC Q3/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q4/2026 (Anbien Bay tái ký 30/11)",
+ "cp_trieu": 191.84,
+ "cp_ng": "191,84 triệu cp lưu hành: vốn điều lệ Q2/2026 1.883,4 tỷ (gồm ~17 triệu cp chuyển đổi trái phiếu Q1/2026) + 3,5 triệu cp ESOP 2026 (SHS 27/08); khớp vốn hóa VNDirect. Chưa gồm cổ tức 2026 bằng cổ phiếu 30% (chưa có ngày) và chứng quyền đi kèm trái phiếu.",
+ "co_tuc": [
+  [
+   "2026-07-14",
+   2000,
+   "cổ tức 2025 tiền mặt 20% (ĐKCC 15/07, trả 05/08/2026)"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Q3 xác nhận cước đã qua đỉnh; giá đã phản ánh đủ LN 2027E chỉ lùi ~7%",
+  "dk": "up_duoi:5",
+  "khac": "Q3 xác nhận cước đã qua đỉnh; hợp đồng thuê giữ LN 2027 chỉ lùi ~7%"
+ },
+ "dong_mo": "Lãi gộp Q3/2026 504 tỷ (−21% so với Q2) — phần cước tự khai thác đã hạ; LN cổ đông vẫn 329 tỷ (+8%) nhờ thiểu số và liên kết. 12/18 tàu cho thuê giữ LN 2027E ở ~1.220 tỷ (−7%). P/E 7,5 × LN 2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "~23.000",
+   "nhan": "USD/ngày — giá tái ký 2 năm đầu 2026",
+   "tieu": "Sổ hợp đồng thuê thấp hơn thị trường ~1/3 là đệm cho 2027",
+   "t": "12/18 tàu cho thuê định hạn, chỉ 6 tàu tự khai thác. 3 tàu tái ký trong 5 tháng đầu 2026 ở ~23.000 USD/ngày, kỳ hạn 2 năm — thấp hơn ~36% giá thuê tàu 1.800 TEU tháng 8 (36.193 USD/ngày); New ConTex còn lên 1.651 điểm (01/10). HAH không ăn trọn đỉnh giá thuê 2026, nhưng các tàu tái ký đã khóa doanh thu đến 2028; khi thị trường hạ, tàu đến hạn trong 2027 khó phải tái ký dưới mức này.",
+   "ng": "MBS 08/06 · KBSV 19/06 · SHS 26/08 · ConTex 01/10"
+  },
+  {
+   "so": "−21%",
+   "nhan": "lãi gộp hợp nhất Q3 so với Q2/2026",
+   "tieu": "Q3 xác nhận đỉnh cước đã qua — phần nhạy cước là đội tự khai thác",
+   "t": "Lãi gộp Q3/2026 504 tỷ, chỉ +1,7% cùng kỳ, thấp hơn ~10% so với mô hình cũ (562): đỉnh Q2 (520 tỷ lãi gộp tàu) đến từ phụ phí EBS và cước nội địa tăng — phần của đội tự khai thác, nay đã hạ (IACI −14% từ đỉnh 04/06). Ước tách mảng, tàu Q3 ~395 tỷ ≈ Q1. Mô hình hạ lãi gộp/TEU 2027 cơ sở từ 59,5 xuống 57,0 triệu đ (2025: 56,1; Q3 năm hóa ~53,9).",
+   "ng": "BCTC Q3 · SHS 26/08 · Drewry · mô hình"
+  },
+  {
+   "so": "10,2%",
+   "nhan": "LNST Q3/2026 thuộc thiểu số (Q2: 20,3%)",
+   "tieu": "LN cổ đông Q3 đúng mô hình nhờ thiểu số, liên kết — không nhờ cước",
+   "t": "LNTT Q3 452 tỷ (+4% cùng kỳ), nhưng LN cổ đông 329 tỷ khớp mô hình cũ (326) vì phần thiểu số chỉ 37 tỷ (Q2: 95) và lãi liên kết lên 14 tỷ khi 3 tàu Hải An Green Shipping Lines (HAH 40%) chạy đủ quý. Thiểu số dao động 10–20% mỗi quý; mô hình 2027 dùng 16% (9T/2026 15,5%).",
+   "ng": "BCTC Q3 (VNDirect) · SHS 26/08 · hồ sơ VSC"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/E 7,5 đã trả đủ cho lãi 2027; tăng trưởng 2028 kèm pha loãng",
+   "dk": "up_duoi:5",
+   "t": "P/E 7,5 × LN cổ đông 2027E 1.221 tỷ = {gt}; P/E 4 quý hiện ~7,5, trung vị từ 2015 6,3. Xấu 42,7: lãi gộp 48 triệu đ/TEU (≈ Q1/2025), P/E 8,5; tốt 54,8: 66/TEU, thêm 1 tàu, P/E 7. Đội tàu đóng mới 360 triệu USD (+26.200 TEU, 12/2027–2029) đi kèm trái phiếu có chứng quyền mua tối đa 188 triệu cp giá 20.000 đ (+98% số cp).",
+   "ng": "mô hình · P/E lịch sử: BCTC VNDirect · SHS 26/08",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "P/E 7,5 × LN 2027E: {up_so} so với giá hiện tại",
+    "t": "P/E 7,5 × LN cổ đông 2027E 1.221 tỷ (trung vị P/E từ 2015 6,3, p75 8,8). LN thấp được trả P/E cao hơn: xấu 8,5 lần (42,7), tốt 7 lần (54,8). Rủi ro dài hạn là pha loãng: chứng quyền mua tối đa 188 triệu cp giá 20.000 đ."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1207,
+   1308,
+   1221
+  ],
+  "ln_truoc": 650,
+  "eps": [
+   6289,
+   6818,
+   6365
+  ],
+  "bv": [
+   23506,
+   30145,
+   36511
+  ],
+  "co_tuc_nam": 2000,
+  "them": [
+   {
+    "ten": "ROE",
+    "v": [
+     31.0,
+     25.4,
+     19.1
+    ],
+    "d": 1,
+    "pt": 1
+   },
+   {
+    "ten": "Lãi gộp tàu/TEU (triệu đ)",
+    "v": [
+     56.1,
+     58.4,
+     57.0
+    ],
+    "d": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS, BVPS theo 191,84 triệu cp (gồm ESOP 2026). Cổ tức 2025: 2.000 đ tiền mặt (trả 8/2026); cổ tức 2026 dự kiến 30% bằng cổ phiếu. ROE trên vốn chủ công ty mẹ."
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông theo nguồn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Khai thác tàu",
+    "mau": "c1",
+    "v": [
+     928,
+     984,
+     918
+    ]
+   },
+   {
+    "ten": "Cảng Hải An",
+    "mau": "c2",
+    "v": [
+     165,
+     177,
+     167
+    ]
+   },
+   {
+    "ten": "Depot, logistics, đại lý",
+    "mau": "c3",
+    "v": [
+     113,
+     121,
+     122
+    ]
+   },
+   {
+    "ten": "Liên kết & khác",
+    "mau": "c4",
+    "v": [
+     1,
+     26,
+     14
+    ]
+   }
+  ],
+  "nhan": "Khai thác tàu",
+  "ng": "Lãi gộp cảng, depot và lãi liên kết, thu nhập khác quy về cổ đông theo tỷ lệ LN cổ đông/LNTT từng năm; khai thác tàu = phần còn lại (gánh chi phí quản lý, lãi vay). Lãi gộp theo mảng: SHS 26/08 (thuyết minh BCTC)."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: sức chở × lãi gộp mỗi TEU + cảng, depot",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Khai thác tàu"
+   },
+   {
+    "ten": "Sức chở bình quân (TEU)",
+    "v": [
+     28044,
+     29295,
+     29295
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp mỗi TEU (triệu đ/năm)",
+    "v": [
+     56.1,
+     58.4,
+     57.0
+    ],
+    "d": 1,
+    "dam": 1
+   },
+   {
+    "ten": "Lãi gộp khai thác tàu",
+    "v": [
+     1574,
+     1710,
+     1670
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "nhom": "Cảng, depot & hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Lãi gộp cảng Hải An",
+    "v": [
+     235,
+     258,
+     245
+    ]
+   },
+   {
+    "ten": "Lãi gộp depot, logistics, đại lý",
+    "v": [
+     162,
+     177,
+     180
+    ]
+   },
+   {
+    "ten": "Lãi gộp hợp nhất",
+    "v": [
+     1965,
+     2142,
+     2095
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí quản lý",
+    "v": [
+     147,
+     164,
+     165
+    ]
+   },
+   {
+    "ten": "Tài chính ròng",
+    "v": [
+     -96,
+     -104,
+     -155
+    ]
+   },
+   {
+    "ten": "Liên doanh, liên kết",
+    "v": [
+     26,
+     33,
+     35
+    ]
+   },
+   {
+    "ten": "Thu nhập khác",
+    "v": [
+     -25,
+     5,
+     -15
+    ]
+   },
+   {
+    "ten": "LN trước thuế",
+    "v": [
+     1724,
+     1912,
+     1795
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Cổ đông thiểu số",
+    "v": [
+     194,
+     237,
+     233
+    ]
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     1207,
+     1308,
+     1221
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     6289,
+     6818,
+     6365
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Sức chở = đội tàu HAH công bố (18 tàu, gồm 2 tàu An Biên — liên kết; không gồm 3 tàu HAGSL). Lãi gộp theo mảng chưa loại trừ nội bộ, tổng lệch hợp nhất ≤ 6 tỷ/năm. 2026E = 9 tháng thực tế + Q4 ước tính; Q3 tách mảng là ước tính (lãi gộp hợp nhất thực tế). Thuế 19%, thiểu số Q4 15%, 2027 16% LNST."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1308
+  ],
+  "cuoi": [
+   "2027E",
+   1221
+  ],
+  "buoc": [
+   [
+    "Lãi gộp khai thác tàu",
+    -27
+   ],
+   [
+    "Cảng, depot, logistics",
+    -7
+   ],
+   [
+    "Tài chính ròng",
+    -35
+   ],
+   [
+    "Lãi liên kết",
+    1
+   ],
+   [
+    "Chi phí quản lý & khác",
+    -19
+   ]
+  ],
+  "y": "Tài chính ròng (trái phiếu kèm chứng quyền, vốn cho tàu đóng mới) kéo LN xuống nhiều nhất; lãi gộp khai thác tàu chỉ giảm 2% khi cước tự khai thác về gần mặt bằng 2025 nhờ 12/18 tàu cho thuê.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Lãi gộp khai thác tàu Q4/2026 (tỷ)",
+   "v": [
+    "365",
+    "400",
+    "435"
+   ],
+   "ly_do": "Q1 395, Q2 520 (EBS, cước nội địa tăng), Q3 ~395 (ước tách mảng); Q4/2025 405. New ConTex 1.651 (01/10); Anbien Bay tái ký 30/11"
+  },
+  {
+   "ten": "Lãi gộp khai thác tàu/TEU 2027 (triệu đ)",
+   "v": [
+    "48",
+    "57",
+    "66"
+   ],
+   "ly_do": "2025 56,1; 6T/2026 62,5; Q3 năm hóa ~53,9. Cơ sở hạ từ 59,5 sau Q3; 12/18 tàu cho thuê, 3 tàu tái ký ~23.000 USD/ngày (MBS)"
+  },
+  {
+   "ten": "Sức chở bình quân 2027 (TEU)",
+   "v": [
+    "29.295",
+    "29.295",
+    "30.145"
+   ],
+   "ly_do": "Tàu 3.000 TEU đầu tiên giao 12/2027 — chưa tính. Tốt: thêm 1 tàu cũ ~1.700 TEU từ 7/2027 (kế hoạch 1–2 tàu cũ mỗi năm — MBS)"
+  },
+  {
+   "ten": "Lãi gộp cảng 2027 (tỷ)",
+   "v": [
+    "210",
+    "245",
+    "275"
+   ],
+   "ly_do": "2025 235; 6T/2026 131. Kế hoạch sản lượng 2026 −14,6%, giá dịch vụ +5–25% (KBSV); quy hoạch cầu Ngô Quyền"
+  },
+  {
+   "ten": "Lãi gộp depot, logistics 2027 (tỷ)",
+   "v": [
+    "160",
+    "180",
+    "195"
+   ],
+   "ly_do": "2025 162; 6T/2026 88 (+33%). Kế hoạch sản lượng depot 2026 +14,1%; ONE thay Pantos ở Pan Hải An (31/05)"
+  },
+  {
+   "ten": "Tài chính ròng 2027 (tỷ)",
+   "v": [
+    "−180",
+    "−155",
+    "−140"
+   ],
+   "ly_do": "9T/2026 −79; nợ vay 2.599 tỷ (30/9). Trái phiếu 1.883 tỷ (lãi ≤ 8%) nếu phát hành; lãi vay tàu đang đóng được vốn hóa"
+  },
+  {
+   "ten": "Lãi liên doanh, liên kết 2027 (tỷ)",
+   "v": [
+    "15",
+    "35",
+    "55"
+   ],
+   "ly_do": "2025 26; 9T/2026 21 (Q3 14). HAGSL (HAH 40%): 3 tàu, 6.560 TEU cho thuê; An Biên: 2 tàu"
+  },
+  {
+   "ten": "Cổ đông thiểu số / LNST 2027",
+   "v": [
+    "16%",
+    "16%",
+    "16%"
+   ],
+   "ly_do": "2025 13,9%; 9T/2026 15,5% (Q2 20,3%, Q3 10,2%). Bản 20/10 dùng 18%"
+  },
+  {
+   "ten": "P/E trên LN 2027E",
+   "v": [
+    "8,5",
+    "7,5",
+    "7"
+   ],
+   "ly_do": "P/E 4 quý từ 2015: p25 4,8, trung vị 6,3, p75 8,8; chủ tàu, hãng tàu container khu vực ~8 (Bloomberg 27/08)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1274,
+   "ln27": 964,
+   "gia": 42.7,
+   "mo_ta": "Hormuz, Biển Đỏ thông, cung tàu feeder tăng: lãi gộp 48 triệu đ/TEU (≈ Q1/2025), cảng 210 tỷ; P/E 8,5"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1308,
+   "ln27": 1221,
+   "gia": 47.7,
+   "mo_ta": "Hợp đồng thuê giữ giá, cước tự khai thác về gần mặt bằng 2025: 57,0 triệu đ/TEU; P/E 7,5"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 1340,
+   "ln27": 1503,
+   "gia": 54.8,
+   "mo_ta": "Gián đoạn kéo dài, tái ký giá cao: 66 triệu đ/TEU, thêm 1 tàu cũ từ 7/2027; P/E 7"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá P/E theo chu kỳ cước",
+  "phu": "P/E × LN cổ đông 2027E; LN thấp được trả P/E cao hơn",
+  "ck": 0,
+  "cp": 191.84,
+  "phan": [
+   {
+    "ten": "LN cổ đông 2027E",
+    "mau": "c1",
+    "x": [
+     964,
+     1221,
+     1503
+    ],
+    "boi": [
+     8.5,
+     7.5,
+     7.0
+    ],
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     8194,
+     9158,
+     10521
+    ]
+   }
+  ],
+  "von": [
+   8194,
+   9158,
+   10521
+  ],
+  "gia": [
+   42.7,
+   47.7,
+   54.8
+  ]
+ },
+ "nhay": [
+  [
+   "P/E ±1 lần",
+   null,
+   6.4
+  ],
+  [
+   "Giá thuê ±1.000 USD/ngày × 10 tàu",
+   62,
+   2.4
+  ],
+  [
+   "Lãi gộp khai thác tàu/TEU 2027 ±5%",
+   57,
+   2.2
+  ],
+  [
+   "Tỷ lệ cổ đông thiểu số ±2 điểm %",
+   29,
+   1.1
+  ],
+  [
+   "Lãi gộp cảng 2027 ±30 tỷ",
+   20,
+   0.8
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   5.9,
+   5.9,
+   7.5,
+   6.6,
+   6.1,
+   6.8,
+   6.4,
+   6.0,
+   5.6,
+   5.9,
+   5.8,
+   5.7,
+   5.3,
+   5.6,
+   5.3,
+   6.0,
+   6.0,
+   5.9,
+   6.8,
+   6.8,
+   6.7,
+   6.5,
+   6.3,
+   6.4,
+   6.0,
+   6.0,
+   6.1,
+   5.0,
+   4.7,
+   4.2,
+   4.2,
+   3.8,
+   3.7,
+   3.5,
+   3.3,
+   3.3,
+   4.2,
+   4.5,
+   4.4,
+   4.7,
+   4.8,
+   4.6,
+   4.6,
+   4.8,
+   4.8,
+   5.0,
+   4.8,
+   5.3,
+   5.9,
+   5.5,
+   5.0,
+   4.8,
+   4.5,
+   4.2,
+   4.3,
+   3.4,
+   4.3,
+   4.9,
+   4.5,
+   4.5,
+   5.0,
+   5.3,
+   5.0,
+   6.4,
+   7.3,
+   6.3,
+   7.7,
+   8.8,
+   9.2,
+   7.4,
+   8.5,
+   12.3,
+   13.2,
+   13.9,
+   15.5,
+   12.0,
+   11.3,
+   10.5,
+   9.0,
+   10.6,
+   12.3,
+   9.9,
+   8.6,
+   7.9,
+   6.0,
+   3.9,
+   3.3,
+   2.4,
+   2.6,
+   3.1,
+   2.7,
+   2.9,
+   3.5,
+   3.8,
+   4.2,
+   4.7,
+   6.0,
+   6.8,
+   4.9,
+   7.6,
+   8.0,
+   8.0,
+   11.5,
+   11.8,
+   11.3,
+   13.8,
+   16.9,
+   15.8,
+   12.8,
+   12.6,
+   13.6,
+   13.5,
+   13.9,
+   13.9,
+   9.9,
+   9.8,
+   12.0,
+   12.3,
+   10.6,
+   11.8,
+   9.0,
+   8.6,
+   9.8,
+   8.7,
+   8.4,
+   8.1,
+   8.8,
+   7.9,
+   7.7,
+   7.9,
+   7.6,
+   6.6,
+   7.2,
+   7.8,
+   7.7
+  ],
+  "p10": 3.8,
+  "p25": 4.8,
+  "tv": 6.3,
+  "thap": [
+   "2022-11",
+   2.4
+  ],
+  "nay": [
+   "2026-10",
+   7.7
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/E 8,5 · 7,5 · 7 trên LN 2027E: xấu ≈ p75 (8,8), cơ sở giữa trung vị (6,3) và p75, tốt ≈ mức hiện tại (~7,5) — LN thấp được trả P/E cao hơn; tương đương P/B 1,43 · 1,58 · 1,81 lần vốn chủ cuối 2026E."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E (Bloomberg 27/08/2026)",
+  "nhom": "Hãng tàu, chủ tàu container khu vực",
+  "kv": [
+   [
+    "SITC (HK)",
+    13
+   ],
+   [
+    "Wan Hai (TW)",
+    8
+   ],
+   [
+    "Heung-A (KR)",
+    17
+   ],
+   [
+    "Danaos (US)",
+    5
+   ],
+   [
+    "Costamare (US)",
+    6
+   ]
+  ],
+  "tv": 8,
+  "moi_cp": 6819,
+  "max": 20,
+  "y": "HAH tính trên LN cổ đông 4 quý đến Q3/2026 (6.819 đ/cp). Chủ tàu cho thuê định hạn (Danaos, Costamare) 5–6 lần; hãng tàu nội Á (SITC, Wan Hai, Heung-A) 8–17 lần. HAH kết hợp cả hai: 2/3 số tàu cho thuê, phần còn lại tự khai thác.",
+  "ng": "SHS 26/08 (Bloomberg, 27/08/2026; P/E làm tròn)"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    295,
+    326,
+    357
+   ],
+   "ck": 304
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    273,
+    307,
+    339
+   ],
+   "ck": 308
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1274,
+    1308,
+    1340
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "Đã ra 10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026: LN cổ đông 329 tỷ (+8%)",
+   "ct": "Khớp mô hình cũ (326) nhưng cơ cấu khác: lãi gộp 504 tỷ, thấp hơn ~10%; bù bằng thiểu số 10,2% và liên kết 14 tỷ. LNST hợp nhất 366 tỷ, dưới mức SHS dự báo (390).",
+   "tac": [
+    "−0,8 nghìn đ/cp",
+    "giá trị cơ sở so với bản 20/10 (48,5): hạ lãi gộp/TEU 2027, giảm tỷ lệ thiểu số"
+   ],
+   "theo_doi": "lãi gộp khai thác tàu, phần thiểu số"
+  },
+  {
+   "khi": "01–02/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026, cả năm 2026",
+   "ct": "Cơ sở: LN cổ đông Q4 307 tỷ (−0,2% cùng kỳ), cả năm 1.308 tỷ; LNST hợp nhất 1.545 tỷ = 124% kế hoạch (9T đã 95%).",
+   "tac": [
+    "LN cổ đông Q4 ~307 tỷ",
+    "≤ 273 là xấu, ≥ 339 là tốt"
+   ],
+   "theo_doi": "lãi gộp hợp nhất, giá thuê Anbien Bay"
+  },
+  {
+   "khi": "12/2026–2027",
+   "loai": "len",
+   "tieu": "Tái ký hợp đồng thuê ở giá thị trường",
+   "ct": "Anbien Bay hết hạn 30/11/2026; các tàu còn lại đến hạn dần từ 2027. Giá thuê tàu 1.800 TEU 36.193 USD/ngày (06/08) so với ~23.000 của 3 hợp đồng tái ký đầu 2026.",
+   "tac": [
+    "+2,4 nghìn đ/cp",
+    "mỗi +1.000 USD/ngày trên 10 tàu cả năm 2027"
+   ],
+   "theo_doi": "giá thuê định hạn 1.700–2.800 TEU (ConTex)"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Trái phiếu kèm chứng quyền giá 20.000 đ",
+   "ct": "1.883 tỷ trái phiếu chào cổ đông hiện hữu (10 cp mua 1 trái phiếu, lãi ≤ 8%); mỗi chứng quyền mua 10 cp giá 20.000 đ sau 2–4 năm. Cổ đông không mua bị pha loãng.",
+   "tac": [
+    "+98% số cp",
+    "nếu thực hiện hết 188 triệu cp (giá thực hiện ≈ 40% thị giá)"
+   ],
+   "theo_doi": "ngày chốt quyền, tỷ lệ đặt mua"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Cước nội Á, giá thuê hạ khi Hormuz, Biển Đỏ thông",
+   "ct": "IACI đã giảm 14% từ đỉnh 1.114 USD/FEU (04/06). Tàu quay lại Suez có thể thêm ~10% cung hiệu dụng (KBSV). Kịch bản xấu: lãi gộp khai thác tàu về 48 triệu đ/TEU (≈ Q1/2025).",
+   "tac": [
+    "−7,0 nghìn đ/cp",
+    "lãi gộp/TEU 2027 theo kịch bản xấu (P/E cơ sở)"
+   ],
+   "theo_doi": "Drewry IACI, lượt tàu qua Suez"
+  },
+  {
+   "khi": "2027–2029",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dư cung đúng phân khúc feeder",
+   "ct": "Orderbook 12,98 triệu TEU (38,3% đội tàu, 6/2026); 74% đơn mới từ 7/2025 là tàu dưới 6.500 TEU. Công suất toàn cầu +6–9%/năm 2027–2029, cầu +2–3%.",
+   "tac": [
+    "−2,2 nghìn đ/cp",
+    "mỗi −5% lãi gộp khai thác tàu/TEU 2027"
+   ],
+   "theo_doi": "giao tàu mới, giá thuê định hạn"
+  },
+  {
+   "khi": "12/2027–2029",
+   "loai": "len",
+   "tieu": "Nhận 6 tàu đóng mới (+26.200 TEU)",
+   "ct": "4 tàu 3.000 TEU (HAH) giao từ 12/2027, 2 tàu 7.100 TEU qua HAGSL (6 và 9/2028): ~62.000 TEU năm 2029; ĐHĐCĐ nói có thể thêm 2 tàu 7.100 TEU. Hãng tàu lớn đã đề nghị thuê dài hạn.",
+   "tac": [
+    "+41%",
+    "sức chở HAH tự sở hữu khi đủ 4 tàu 3.000 TEU (chưa có trong LN 2027E)"
+   ],
+   "theo_doi": "hợp đồng thuê cho tàu mới"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Cảng Hải An: cạnh tranh, quy hoạch cầu Ngô Quyền",
+   "ct": "Biên gộp cảng Q2/2026 ~46% (Q2/2025: 54%) vì cạnh tranh trên sông Cấm và chuyển hàng sang Nam Hải Đình Vũ; hướng tuyến cầu Ngô Quyền đi qua một phần đất cảng.",
+   "tac": [
+    "±0,8 nghìn đ/cp",
+    "mỗi ±30 tỷ lãi gộp cảng 2027"
+   ],
+   "theo_doi": "sản lượng cảng, quy hoạch Hải Phòng"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Phần lãi của cổ đông thiểu số",
+   "ct": "Thiểu số 13,9% LNST năm 2025; Q2/2026 20,3%, Q3 10,2%; mô hình 2027 dùng 16%. Tàu mới ở HAGSL chỉ về HAH 40% lợi nhuận.",
+   "tac": [
+    "±1,1 nghìn đ/cp",
+    "mỗi ±2 điểm % tỷ lệ thiểu số"
+   ],
+   "theo_doi": "LN cổ đông / LNST"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Xung đột quanh Hormuz từ cuối 2/2026, Houthi trở lại Biển Đỏ: cước nội Á (Drewry IACI) lên kỷ lục 1.114 USD/FEU ngày 04/06/2026 từ 616 (13/03).",
+     "ng": "SHS 26/08"
+    },
+    {
+     "h": -1,
+     "t": "Nhiên liệu VLSFO Singapore +49% (585 → 869 USD/tấn, 30/01–26/07/2026); phụ phí BAF/EBS chuyển được một phần sang chủ hàng.",
+     "ng": "SHS 26/08"
+    },
+    {
+     "h": 1,
+     "t": "Sản lượng container qua cảng Việt Nam dự báo +10–12%/năm 2024–2030 (FDI, 17 FTA); đường sắt Lào Cai – Hà Nội – Hải Phòng trước 2030.",
+     "ng": "SHS 26/08"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "Orderbook kỷ lục 12,98 triệu TEU (38,3% đội tàu, 6/2026); 74% đơn mới (theo TEU) từ 7/2025 là tàu dưới 6.500 TEU — đúng phân khúc của HAH.",
+     "ng": "SHS 26/08 (Alphaliner)"
+    },
+    {
+     "h": 1,
+     "t": "Giá thuê định hạn vẫn chặt: New ConTex 1.651 điểm (01/10/2026), cao nhất từ 2022; tàu 1.800 TEU ~36.000 USD/ngày, gấp gần 4 lần đáy cuối 2023.",
+     "ng": "ConTex · SHS 26/08"
+    },
+    {
+     "h": -1,
+     "t": "Công suất đội tàu toàn cầu +6–9%/năm 2027–2029 so với cầu +2–3%; tàu quay lại Suez có thể thêm ~10% cung hiệu dụng.",
+     "ng": "KBSV 19/06"
+    },
+    {
+     "h": 1,
+     "t": "Hãng tàu lớn chuyển sang mô hình trục – nan hoa: tàu mẹ không vào được cảng nông, cần tàu feeder 1.000–3.000 TEU.",
+     "ng": "KBSV 19/06 · SHS 26/08"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Đội tàu container lớn nhất Việt Nam (~27–30% thị phần vận tải container nội địa bằng đường biển); hợp tác với 9/10 hãng tàu lớn nhất thế giới.",
+     "ng": "SHS 26/08 · KBSV 19/06"
+    },
+    {
+     "h": 0,
+     "t": "Cổ đông lớn: nhóm Viconship ~22,3% (gồm công ty con), VietinBank Capital 18,24% (mua 17 triệu cp 23–29/09/2026; GELEX bán hết 5,16%), Hải Hà 13,9%.",
+     "ng": "Mekong ASEAN · Báo Pháp luật 09/2026 · SHS 26/08"
+    },
+    {
+     "h": 0,
+     "t": "Nợ vay 2.599 tỷ (30/9/2026), nợ vay ròng 1.103 tỷ ≈ 0,17 lần vốn chủ; dòng tiền kinh doanh 6T 1.402 tỷ, chi đầu tư TSCĐ 901 tỷ.",
+     "ng": "BCTC Q3 · SHS 26/08"
+    },
+    {
+     "h": -1,
+     "t": "Huy động vốn cho tàu mới: trái phiếu kèm chứng quyền 1.883 tỷ (tối đa 188 triệu cp giá 20.000 đ), ESOP 3,5 triệu cp giá 10.000 đ.",
+     "ng": "SHS 26/08 · Mekong ASEAN"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Khai thác tàu",
+   "phu": "18 tàu, 29.295 TEU (gồm 2 tàu An Biên — liên kết); 12 tàu cho thuê định hạn, 6 tàu tự khai thác tuyến Bắc – Nam và nội Á",
+   "so": [
+    [
+     "Lãi gộp 6T/2026",
+     "915 tỷ",
+     "+20% cùng kỳ"
+    ],
+    [
+     "Biên gộp Q2/2026",
+     "34,6%",
+     "cao nhất 6 quý"
+    ],
+    [
+     "Tái ký đầu 2026",
+     "~23.000 USD/ngày",
+     "3 tàu, kỳ hạn 2 năm"
+    ],
+    [
+     "Kế hoạch sản lượng 2026",
+     "496.600 TEU",
+     "−26,4%: chuyển tàu sang cho thuê"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Doanh thu thuần Q2 +20% nhưng doanh thu gộp 3 mảng chỉ +7,2%: loại trừ nội bộ giảm từ 484 xuống 352 tỷ — khớp với việc chuyển tàu từ chạy tuyến của HAH sang cho thuê ngoài.",
+     "ng": "SHS 26/08"
+    },
+    {
+     "t": "Đội tự khai thác chạy 90–95% công suất; hợp đồng nhiên liệu đặt trước 1 tháng, từ 5/2026 giá nhiên liệu bình quân tăng ~20%.",
+     "ng": "MBS 08/06"
+    },
+    {
+     "t": "ONE nhận phần vốn của Pantos tại Pan Hải An (31/05/2026) và cam kết thuê tàu HAH; ZIM thuê tàu tuyến Ấn Độ, ONE thuê 4 tàu tuyến Trung Quốc – Singapore.",
+     "ng": "MBS 08/06 · SHS 26/08"
+    }
+   ]
+  },
+  {
+   "ten": "Cảng Hải An",
+   "phu": "Sông Cấm, Hải Phòng: công suất thiết kế 250.000 TEU/năm, đón tàu 20.000 DWT, thường chạy trên 100% công suất",
+   "so": [
+    [
+     "Lãi gộp 6T/2026",
+     "131 tỷ",
+     "+5% cùng kỳ"
+    ],
+    [
+     "Biên gộp Q2/2026",
+     "46%",
+     "Q2/2025: 54%"
+    ],
+    [
+     "Sản lượng Q1/2026",
+     "120 nghìn TEU",
+     "−9% cùng kỳ"
+    ],
+    [
+     "Kế hoạch 2026",
+     "500 nghìn TEU",
+     "−14,6%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Giá dịch vụ cảng tăng 5–25% bù sản lượng giảm do chuyển một phần hàng sang Nam Hải Đình Vũ (VSC) để giảm tải.",
+     "ng": "KBSV 19/06"
+    },
+    {
+     "t": "Quy hoạch cầu Ngô Quyền có hướng tuyến qua một phần đất cảng — có thể phải dừng khai thác một phần, di dời hoặc chuyển đổi.",
+     "ng": "SHS 26/08"
+    }
+   ]
+  },
+  {
+   "ten": "Depot, logistics, đại lý",
+   "phu": "Bãi container 150.000 m², kho CFS ~4.000 m², depot Pan Hải An 55.000 m² (nay liên doanh với ONE); đại lý tàu biển PAMAR",
+   "so": [
+    [
+     "Lãi gộp 6T/2026",
+     "88 tỷ",
+     "+33% cùng kỳ"
+    ],
+    [
+     "Kế hoạch sản lượng depot 2026",
+     "205.700 TEU",
+     "+14,1%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Depot là động lực tăng sản lượng duy nhất trong kế hoạch 2026; mục tiêu khép kín chuỗi cảng – tàu – logistics để giảm phụ thuộc giá cước.",
+     "ng": "MBS 08/06 · SHS 26/08"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi gộp theo mảng, theo quý",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Khai thác tàu",
+     "v": [
+      313,
+      450,
+      406,
+      405,
+      395,
+      520
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Cảng Hải An",
+     "v": [
+      38,
+      87,
+      48,
+      62,
+      59,
+      72
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Depot, logistics",
+     "v": [
+      35,
+      31,
+      44,
+      52,
+      43,
+      45
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Khai thác tàu tạo ~80% lãi gộp; Q2/2026 520 tỷ (+16% cùng kỳ, +32% so với Q1) — phần tăng đến từ cước và phụ phí của đội tự khai thác.",
+   "ng": "SHS 26/08 (thuyết minh BCTC)"
+  },
+  {
+   "ten": "Biên lãi gộp: khai thác tàu và cảng",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 1,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Khai thác tàu",
+     "v": [
+      24.1,
+      32.4,
+      28.5,
+      29.0,
+      31.0,
+      34.6
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Cảng Hải An",
+     "v": [
+      29.0,
+      54.0,
+      30.2,
+      42.8,
+      37.8,
+      45.6
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "y": "Biên khai thác tàu 34,6% (cao nhất 6 quý); biên cảng giảm từ 54% (Q2/2025) vì cạnh tranh và chuyển hàng sang Nam Hải Đình Vũ.",
+   "ng": "SHS 26/08 (doanh thu chưa loại trừ nội bộ)"
+  },
+  {
+   "ten": "LN cổ đông và phần thiểu số theo quý",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN cổ đông",
+     "v": [
+      233,
+      362,
+      304,
+      308,
+      300,
+      372,
+      329
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Cổ đông thiểu số",
+     "v": [
+      40,
+      53,
+      49,
+      52,
+      51,
+      95,
+      37
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q2/2026 LNST kỷ lục 467 tỷ nhưng thiểu số 95 tỷ (20,3%); Q3 LNST giảm còn 366 tỷ, thiểu số chỉ 37 tỷ nên LN cổ đông vẫn +8% cùng kỳ.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "Sức chở đội tàu cuối kỳ",
+   "kieu": "cot_chong",
+   "dv": "TEU",
+   "nhan": [
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2029"
+   ],
+   "ss": [
+    {
+     "ten": "HAH (gồm An Biên)",
+     "v": [
+      17752,
+      26493,
+      29295,
+      29295,
+      41295
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "HAGSL (HAH 40%)",
+     "v": [
+      0,
+      0,
+      0,
+      6560,
+      20760
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "2026 thêm Green Park, Green Time và Buxmelody (dự kiến) qua HAGSL; 2029 theo lịch nhận 4 tàu 3.000 TEU (HAH) và 2 tàu 7.100 TEU (HAGSL) — ~62.000 TEU, gấp 1,7 lần.",
+   "ng": "SHS 26/08 · KBSV 19/06"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 5140,
+    "th": 4218,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 06/06/2026 · BCTC Q3"
+   },
+   {
+    "ten": "LNST hợp nhất",
+    "kh": 1250,
+    "th": 1184,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 06/06/2026 · BCTC Q3"
+   },
+   {
+    "ten": "Đội tàu (mục tiêu cuối 2028)",
+    "kh": 30,
+    "th": 20,
+    "ky": "8/2026",
+    "dv": "tàu",
+    "ng": "MBS 08/06 · SHS 26/08 (gồm HAGSL; Buxmelody đang mua)"
+   }
+  ],
+  "y": "9 tháng đạt 95% kế hoạch LNST, 82% doanh thu; mô hình cơ sở cả năm ~1.540 tỷ (124% kế hoạch). Kế hoạch giả định cước −5%, giá thuê −10% so với 2025.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "SHS",
+   "ngay": "2026-08-26",
+   "kn": "KHẢ QUAN",
+   "tp": 56800,
+   "ln26": 1326,
+   "ln27": 1269,
+   "pp": "FCFF + EV/EBITDA (50/50)",
+   "y": "Ước LNST hợp nhất Q3 390 tỷ, Q4 372 tỷ; LNST 2027F 1.540 tỷ (thận trọng 1.520, tích cực 1.820). Đã tính pha loãng: 85% chứng quyền thực hiện từ 2028.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/hah_doi_tau_mo_rong_don_dau_chu_ky_tang_truong_moi_cua_van_tai_container_noi_a.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-08-13",
+   "kn": "MUA",
+   "tp": 59500,
+   "ln26": 1284,
+   "ln27": 1331,
+   "pp": "DCF (WACC 11,9%, g 0%)",
+   "y": "Doanh thu vận tải Q2 ước +8% nhờ phụ phí nhiên liệu khẩn cấp (EBS) và thêm 1 tàu; kỳ vọng cung tàu còn hạn chế giữ giá thuê cao trong H2/2026.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/hah_mua_gia_mt_vnd_59_500_28_4_huong_loi_tu_mat_bang_gia_thue_tau_duy_tri_cao.pdf"
+  },
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-06-19",
+   "kn": "MUA",
+   "tp": 64400,
+   "ln26": 1283,
+   "ln27": 1288,
+   "pp": "DCF",
+   "y": "Cước bình quân +2% (2026), −3%/năm 2027–2028; giá thuê +3% rồi −3%/−2%; số tàu cho thuê 9/9,5/11 (2026–2028). Ra trước GDKHQ cổ tức 2.000 đ (14/07).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/ctcp_van_tai_va_xep_do_hai_an_bao_cao_cap_nhat_1q2026.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-06-08",
+   "kn": "KHÁC",
+   "tp": null,
+   "ln26": 1240,
+   "ln27": 1472,
+   "pp": "ghi chép ĐHĐCĐ",
+   "y": "Ban lãnh đạo: 5 tháng LN cổ đông 500 tỷ, đúng tiến độ; 12 tàu đang cho thuê, Anbien Bay tái ký 30/11/2026; nâng chương trình đóng mới lên 4 + 4 tàu.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/hah_cap_nhat_thong_tin_dhcd_thuong_nien_2026.pdf"
+  },
+  {
+   "ctck": "VNDS",
+   "ngay": "2026-06-08",
+   "kn": "KHÁC",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "ghi chép ĐHĐCĐ",
+   "y": "Kế hoạch thận trọng trong khi quyết định đầu tư tích cực hơn hẳn; một số hãng tàu lớn đã chủ động đề nghị thuê dài hạn tàu đóng mới.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/_inh_hinh_hai_trinh_huong_toi_phat_trien_ben_vung.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. Giá mục tiêu KBSV (19/06) ra trước ngày GDKHQ cổ tức tiền 2.000 đ (14/07/2026) — trang tự trừ; SHS, Shinhan ra sau ngày đó. MBS, VNDS: ghi chép ĐHĐCĐ, không có giá mục tiêu.",
+ "nguon": [
+  {
+   "ten": "SHS — Đội tàu mở rộng, đón đầu chu kỳ tăng trưởng mới của vận tải container nội Á",
+   "ngay": "26/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/hah_doi_tau_mo_rong_don_dau_chu_ky_tang_truong_moi_cua_van_tai_container_noi_a.pdf"
+  },
+  {
+   "ten": "Shinhan — Hưởng lợi từ mặt bằng giá thuê tàu duy trì cao",
+   "ngay": "13/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/hah_mua_gia_mt_vnd_59_500_28_4_huong_loi_tu_mat_bang_gia_thue_tau_duy_tri_cao.pdf"
+  },
+  {
+   "ten": "KBSV — Báo cáo cập nhật 1Q2026",
+   "ngay": "19/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/ctcp_van_tai_va_xep_do_hai_an_bao_cao_cap_nhat_1q2026.pdf"
+  },
+  {
+   "ten": "MBS — Cập nhật thông tin ĐHCĐ thường niên 2026",
+   "ngay": "08/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/hah_cap_nhat_thong_tin_dhcd_thuong_nien_2026.pdf"
+  },
+  {
+   "ten": "VNDS — Định hình hải trình hướng tới phát triển bền vững",
+   "ngay": "08/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HAH/_inh_hinh_hai_trinh_huong_toi_phat_trien_ben_vung.pdf"
+  },
+  {
+   "ten": "KBSV — HAH cập nhật 4Q2022 (công ty con Vận tải Container Hải An 50,5%)",
+   "ngay": "2023",
+   "link": "https://www.kbsec.com.vn/pic/Service/HAH%20final%204Q2022.pdf"
+  },
+  {
+   "ten": "Báo Pháp luật — HAH chốt chi 377 tỷ cổ tức tiền mặt",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/van-tai-hai-an-hah-chot-chi-377-ty-dong-tra-co-tuc-tien-mat-viconship-huong-loi-lon.html"
+  },
+  {
+   "ten": "Thương hiệu & Công luận — Hải An phát hành gần 17 triệu cổ phiếu chuyển đổi trái phiếu",
+   "ngay": "03/2026",
+   "link": "https://thuonghieucongluan.com.vn/hai-an-phat-hanh-gan-17-trieu-co-phieu-chuyen-doi-trai-phieu-a309627.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Muốn phát hành gần 1.900 tỷ đồng trái phiếu",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/van-tai-xep-do-hai-an-muon-phat-hanh-gan-1900-ty-dong-trai-phieu-55264.html"
+  },
+  {
+   "ten": "Mekong ASEAN — ĐHĐCĐ Hải An 2026: mục tiêu lãi giảm 11%",
+   "ngay": "06/2026",
+   "link": "https://mekongasean.vn/dhdcd-hai-an-muc-tieu-lai-giam-11-huy-dong-gan-1900-ty-dong-trai-phieu-55971.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Chủ tịch HAH: kết quả 5 tháng đúng kế hoạch lãi 1.250 tỷ",
+   "ngay": "06/2026",
+   "link": "https://mekongasean.vn/chu-tich-hah-ket-qua-5-thang-dang-di-dung-ke-hoach-lai-1250-ty-dong-55987.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Hải An góp thêm vốn vào liên doanh cùng Viconship mua tàu gần 30 triệu USD",
+   "ngay": "08/2026",
+   "link": "https://mekongasean.vn/hai-an-rot-them-von-vao-lien-doanh-cung-viconship-mua-tau-gan-30-trieu-usd-58876.html"
+  },
+  {
+   "ten": "Mekong ASEAN — VietinBank Capital gom thêm cổ phiếu HAH, sở hữu vượt 17%",
+   "ngay": "09/2026",
+   "link": "https://mekongasean.vn/vietinbank-capital-gom-them-co-phieu-hah-so-huu-vuot-17-von-dieu-le-60033.html"
+  },
+  {
+   "ten": "Báo Pháp luật — VietinBank Capital mua thêm 2 triệu cổ phiếu HAH, nâng sở hữu lên 18,24%",
+   "ngay": "09/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vietinbank-capital-mua-them-2-trieu-co-phieu-xep-do-hai-an-hah-nang-so-huu-len-18-24.html"
+  },
+  {
+   "ten": "BCTC hợp nhất Q3/2026 — số liệu VNDirect finfo (nhập 23/10/2026)",
+   "ngay": "23/10/2026",
+   "link": "https://finfo-api.vndirect.com.vn/v4/financial_statements?q=code:HAH~reportType:QUARTER~modelType:1,2,3~fiscalDate:2026-09-30&size=200"
+  },
+  {
+   "ten": "Hellenic Shipping News — New ConTex Commentary 2026 week 40",
+   "ngay": "01/10/2026",
+   "link": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/10/New-Contex-Commentary-2026-week-40.pdf"
+  }
+ ]
+}

@@ -1,0 +1,1456 @@
+{
+ "v": 2,
+ "ma": "VCI",
+ "ten": "CTCP Chứng khoán Vietcap",
+ "nganh": "Chứng khoán",
+ "ky": "BCTC Q3/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q4/2026",
+ "cp_trieu": 1152.2,
+ "cp_ng": "vốn điều lệ 30/9/2026 11.522 tỷ: thưởng 20:7 (GDKHQ 26/03/2026) và ESOP 4,6 triệu cp (Q3/2026)",
+ "co_tuc": [
+  [
+   "2026-01-08",
+   500,
+   "tạm ứng đợt 1/2025, trước thưởng 20:7"
+  ],
+  [
+   "2026-03-26",
+   250,
+   "đợt 2/2025, cùng ngày GDKHQ thưởng 20:7"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Q3 lãi nhờ AFS và phí IPO, lõi vẫn co: ROE 2027 ~3,8% chưa xứng P/B 1,3",
+  "dk": "up_duoi:10",
+  "khac": "Q3 lãi nhờ AFS và phí IPO, lõi vẫn co: giá đã dưới giá trị cơ sở dù ROE 2027 chỉ ~3,8%"
+ },
+ "dong_mo": "Q3/2026 LNST 367 tỷ (−13%) — gấp đôi mô hình cũ nhờ lãi AFS ~200 tỷ, phí tư vấn 128 tỷ và FVTPL 150 tỷ; môi giới −50%, lãi vay +101%. Bỏ các nguồn không đều: 2026E 1.085 tỷ (−19%), 2027E 632 tỷ, ROE ~3,8% khi chi phí vốn lên 7,2%. P/B 1,30 cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "367 tỷ",
+   "nhan": "LNST Q3/2026 — mô hình cũ 176 tỷ",
+   "tieu": "Q3 vượt nhờ nguồn không đều; phần lõi co đúng dự báo",
+   "t": "LNST Q3 −13% so với cùng kỳ nhưng gấp 2,1 lần mức cơ sở cũ. Phần vượt: lãi AFS ~200 tỷ (×3,4), phí tư vấn 128 tỷ (×21), FVTPL ròng 150 tỷ (mô hình 0). Lõi đúng như dự báo: GTGD 14.724 tỷ/phiên (−63%), môi giới 187 tỷ (−50%), lãi vay 385 tỷ (+101%). 9T LNST 959 tỷ (+7%); LNTT 1.101 tỷ = 48% kế hoạch 2.300.",
+   "ng": "BCTC Q3/2026 · Mekong ASEAN 10/2026 · tab Toàn cảnh"
+  },
+  {
+   "so": "77%",
+   "nhan": "vốn chủ nằm trong danh mục AFS (30/9, ước tính)",
+   "tieu": "Sổ sách đi theo giá cổ phiếu, không theo lợi nhuận",
+   "t": "Q3 VCSH giảm 190 tỷ còn 16.948 dù lãi 367 tỷ: thu nhập toàn diện khác ước −603 tỷ (6T −1.251). Danh mục AFS ước ~13,3 nghìn tỷ (30/6: 14,0). Lãi AFS 9T ~550 tỷ (5,4% năm hóa) gồm cổ tức và lãi bán — chốt lãi đẩy LNST nhưng không tăng vốn chủ. Mỗi ±10% giá danh mục = ±1.063 tỷ VCSH, ±1,2 nghìn đ/cp.",
+   "ng": "BCTC Q2, Q3/2026 · VietnamFinance, Finhay 07/2026 · Mekong ASEAN 10/2026"
+  },
+  {
+   "so": "6,8%",
+   "nhan": "chi phí vốn Q3/2026, năm hóa",
+   "tieu": "Chênh lệch cho vay co như dự báo: 4,8 → 4,2 điểm trong một quý",
+   "t": "Dư nợ 30/9 17.308 tỷ (+1% so với 30/6) ≈ 1,0 lần VCSH; lãi cho vay 9T 1.350 tỷ (+63%) là nguồn thu lớn nhất. Q3 lợi suất đứng ở 11,0%, chi phí vốn 6,2% → 6,8%; trung vị 8 CTCK đã ra BCTC Q3 7,1%. Mô hình nâng chi phí vốn 2027 lên 7,2% (cũ 6,8%): mỗi ±0,5 điểm = ±94 tỷ LNST.",
+   "ng": "BCTC VCI và các CTCK Q3/2026 (VNDirect) · NHNN (tab Toàn cảnh)"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 1,30 cho ROE ~3,8%: {up_so} so với giá hiện tại",
+   "t": "P/B tháng 9–10 (1,30–1,32) thấp nhất từ 09/2020, ngang mức thấp 10% lịch sử (1,32); trung vị 10 CTCK lớn nhất 1,31 với ROE 10,3% (VCI 8,1%). Giá 23/10 trả ~2,5 lần vốn chủ cho phần ngoài AFS. Cơ sở: P/B 1,30 × BVPS cuối 2027E 14.561 đ = 1,0 lần AFS + 2,3 lần phần còn lại. Xấu 12,1 (GTGD 11.000, AFS −20%, P/B 0,95), tốt 27,3 (GTGD 21.000, phí IB, P/B 1,65).",
+   "ng": "mô hình · P/B lịch sử từ 2017 · gói số liệu cùng ngành 23/10"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1342,
+   1085,
+   632
+  ],
+  "ln_truoc": 911,
+  "eps": [
+   1165,
+   941,
+   548
+  ],
+  "bv": [
+   15631,
+   14336,
+   14561
+  ],
+  "co_tuc_nam": 556,
+  "them": [
+   {
+    "ten": "ROE",
+    "v": [
+     9.8,
+     6.3,
+     3.8
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "EPS, BVPS theo 1.152,2 triệu cp hiện tại (sau thưởng 20:7). Cổ tức 2025: 500 + 250 đ/cp trước thưởng (≈ 556 đ/cp sau thưởng, 48% LNST); mô hình giữ tỷ lệ chi này cho 2026–2027."
+ },
+ "ln_mang": {
+  "tieu": "Thu nhập hoạt động theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "thu nhập hoạt động",
+  "ss": [
+   {
+    "ten": "Lãi cho vay ký quỹ",
+    "mau": "c1",
+    "v": [
+     1205,
+     1822,
+     1870
+    ]
+   },
+   {
+    "ten": "Môi giới",
+    "mau": "c2",
+    "v": [
+     1000,
+     911,
+     694
+    ]
+   },
+   {
+    "ten": "Đầu tư & IB: FVTPL ròng, AFS, tư vấn",
+    "mau": "c4",
+    "v": [
+     1239,
+     1070,
+     871
+    ]
+   }
+  ],
+  "nhan": "Lãi cho vay ký quỹ",
+  "ng": "Doanh thu hoạt động trừ lỗ FVTPL. Đầu tư & IB = FVTPL ròng, cổ tức và lãi bán AFS, lãi HTM, tư vấn, lưu ký. 2025A: BCTC; 2026E–2027E: kịch bản cơ sở."
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo mảng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Môi giới"
+   },
+   {
+    "ten": "GTGD khớp lệnh toàn thị trường (tỷ/phiên)",
+    "v": [
+     25646,
+     18922,
+     15000
+    ]
+   },
+   {
+    "ten": "DT môi giới / GTGD (phần vạn)",
+    "v": [
+     1.57,
+     1.94,
+     1.85
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Doanh thu môi giới (tỷ)",
+    "v": [
+     1000,
+     911,
+     694
+    ]
+   },
+   {
+    "nhom": "Cho vay ký quỹ"
+   },
+   {
+    "ten": "Dư nợ cuối kỳ (tỷ)",
+    "v": [
+     16167,
+     17000,
+     17000
+    ]
+   },
+   {
+    "ten": "Lãi cho vay ký quỹ (tỷ)",
+    "v": [
+     1205,
+     1822,
+     1870
+    ]
+   },
+   {
+    "nhom": "Đầu tư, IB và chi phí"
+   },
+   {
+    "ten": "FVTPL ròng: lãi − lỗ (tỷ)",
+    "v": [
+     820,
+     140,
+     150
+    ]
+   },
+   {
+    "ten": "AFS, IB & khác (tỷ)",
+    "v": [
+     419,
+     930,
+     721
+    ]
+   },
+   {
+    "ten": "Chi phí hoạt động, trừ lỗ FVTPL (tỷ)",
+    "v": [
+     855,
+     837,
+     750
+    ]
+   },
+   {
+    "ten": "Chi phí lãi vay (tỷ)",
+    "v": [
+     802,
+     1388,
+     1654
+    ]
+   },
+   {
+    "ten": "Chi phí vốn (% nợ phải trả bình quân)",
+    "v": [
+     6.2,
+     6.5,
+     7.2
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Kết quả"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế (tỷ)",
+    "v": [
+     1629,
+     1233,
+     685
+    ]
+   },
+   {
+    "ten": "LNST (tỷ)",
+    "v": [
+     1342,
+     1085,
+     632
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     15631,
+     14336,
+     14561
+    ]
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     9.8,
+     6.3,
+     3.8
+    ],
+    "d": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     1165,
+     941,
+     548
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "2025A, 9T/2026: BCTC hợp nhất. 2026E = 9 tháng thực tế + Q4 ước tính. Lãi suất cho vay 11,0%; chi phí hoạt động = 136 tỷ/quý + 30% DT môi giới (hồi quy 11 quý); thuế 20% trừ phần cổ tức AFS; chi 48% LNST làm cổ tức."
+ },
+ "cau_ln": {
+  "ten": "LNST 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1085
+  ],
+  "cuoi": [
+   "2027E",
+   632
+  ],
+  "buoc": [
+   [
+    "Môi giới",
+    -217
+   ],
+   [
+    "Lãi cho vay ký quỹ",
+    48
+   ],
+   [
+    "FVTPL ròng",
+    10
+   ],
+   [
+    "AFS, IB & khác",
+    -209
+   ],
+   [
+    "Chi phí hoạt động",
+    87
+   ],
+   [
+    "Chi phí lãi vay",
+    -267
+   ],
+   [
+    "Thuế",
+    95
+   ]
+  ],
+  "y": "Lãi vay (−267), môi giới (−217) và AFS, IB (−209) kéo xuống: 2027 chịu trọn năm chi phí vốn 7,2% và GTGD 15.000 tỷ/phiên, không lặp lại lãi bán AFS và phí tư vấn lớn như Q3/2026.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "GTGD thị trường Q4/2026 · 2027 (nghìn tỷ/phiên)",
+   "v": [
+    "11,0 · 11",
+    "13,0 · 15",
+    "15,5 · 21"
+   ],
+   "ly_do": "Q3/2026 14.724, 1–23/10 13.198; bình quân 2023 14.963, 2024 17.697, 2025 25.646. Tốt: nâng hạng FTSE (21/9/2026). Giữ như bản 20/10"
+  },
+  {
+   "ten": "DT môi giới / GTGD thị trường (phần vạn)",
+   "v": [
+    "1,65",
+    "1,85",
+    "2,00"
+   ],
+   "ly_do": "11 quý 2024–Q3/2026: 1,41–2,06; 9T/2026 1,96, Q3 2,02. Thị phần HOSE thứ 4 (Q3/2026)"
+  },
+  {
+   "ten": "Dư nợ cuối 2026 · 2027 (nghìn tỷ)",
+   "v": [
+    "15,5 · 13",
+    "17,0 · 17",
+    "18,0 · 21"
+   ],
+   "ly_do": "30/9/2026: 17,3 (+1% so với 30/6 dù GTGD Q3 −23%), ≈ 1 lần VCSH, trần 2 lần. Cơ sở cuối 2026 giữ ~30/9 (cũ 16,5)"
+  },
+  {
+   "ten": "Chi phí vốn 2027 (% nợ phải trả)",
+   "v": [
+    "7,8%",
+    "7,2%",
+    "6,6%"
+   ],
+   "ly_do": "2025 6,2%, Q2/2026 6,2%, Q3 6,8%; trung vị 8 CTCK Q3 7,1%; huy động 5,5% → 8,0%. Q4/2026: 7,4 · 7,1 · 6,8%. Cơ sở cũ 6,8%"
+  },
+  {
+   "ten": "FVTPL ròng 2027 (tỷ)",
+   "v": [
+    "0",
+    "150",
+    "400"
+   ],
+   "ly_do": "Chưa năm nào âm từ 2019: 2023 447, 2024 787, 2025 820; 9T/2026 140 (Q3 150). Danh mục FVTPL + HTM 30/9 ~5,4 nghìn tỷ"
+  },
+  {
+   "ten": "Thu nhập AFS (% danh mục) · IB & khác 2027 (tỷ)",
+   "v": [
+    "3,0% · 100",
+    "4,0% · 200",
+    "5,0% · 450"
+   ],
+   "ly_do": "AFS: 2025 ~3,5%; 9T/2026 ~5,4% năm hóa gồm lãi bán (cơ sở cũ 3,5%). IB & khác 9T/2026 ~197 tỷ (Q3 có phí tư vấn 128 tỷ); danh mục IB đã ký 400–500 triệu USD"
+  },
+  {
+   "ten": "Giá danh mục AFS cuối 2027 so với 30/6/2026",
+   "v": [
+    "−20%",
+    "−7%",
+    "+6%"
+   ],
+   "ly_do": "30/6 → 30/9 ước −5% (từ VCSH). 30/9 → 23/10: FPT −10%, MCH +2%, HPA +3%, MWG +6% (tỷ trọng chưa công bố)"
+  },
+  {
+   "ten": "P/B mục tiêu (lần)",
+   "v": [
+    "0,95",
+    "1,30",
+    "1,65"
+   ],
+   "ly_do": "Xấu: VND 0,96, VIX 0,98, SHS 0,93 hiện nay; cơ sở: thấp 10% lịch sử (1,32), ≈ trung vị 10 CTCK (1,31); tốt: mức 25% (1,63)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 949,
+   "ln27": -134,
+   "gia": 12.1,
+   "mo_ta": "GTGD 2027 11.000 tỷ/phiên, dư nợ cuối năm 13 nghìn tỷ, chi phí vốn 7,8%, FVTPL ≈ 0, danh mục AFS −20% so với 30/6; ROE −0,9%; P/B 0,95"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1085,
+   "ln27": 632,
+   "gia": 18.9,
+   "mo_ta": "GTGD 15.000, dư nợ 17 nghìn tỷ, chi phí vốn 7,2%, AFS −7% so với 30/6; ROE 3,8%; P/B 1,30"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 1251,
+   "ln27": 1623,
+   "gia": 27.3,
+   "mo_ta": "Nâng hạng kéo GTGD lên 21.000, phí IB 450 tỷ, dư nợ 21 nghìn tỷ, chi phí vốn 6,6%; ROE 9,0%; P/B 1,65"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × VCSH cuối 2027E",
+  "ck": 0,
+  "cp": 1152.2,
+  "phan": [
+   {
+    "ten": "Vốn chủ sở hữu",
+    "mau": "c1",
+    "x": [
+     14716,
+     16778,
+     19053
+    ],
+    "boi": [
+     0.95,
+     1.3,
+     1.65
+    ],
+    "x_ten": "VCSH cuối 2027E",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     13980,
+     21811,
+     31437
+    ]
+   }
+  ],
+  "von": [
+   13980,
+   21811,
+   31437
+  ],
+  "gia": [
+   12.1,
+   18.9,
+   27.3
+  ]
+ },
+ "nhay": [
+  [
+   "Chi phí vốn 2027 ±0,5 điểm %",
+   94,
+   2.8
+  ],
+  [
+   "GTGD 2027 ±3.000 tỷ/phiên",
+   79,
+   2.4
+  ],
+  [
+   "Dư nợ BQ 2027 ±2.000 tỷ",
+   62,
+   1.9
+  ],
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.5
+  ],
+  [
+   "Giá danh mục AFS ±10% (P/B giữ nguyên)",
+   18,
+   1.2
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   4.78,
+   4.32,
+   4.36,
+   4.57,
+   3.22,
+   3.53,
+   4.07,
+   3.43,
+   4.29,
+   3.7,
+   2.97,
+   2.76,
+   2.61,
+   2.89,
+   2.96,
+   2.39,
+   2.12,
+   2.01,
+   1.56,
+   1.97,
+   1.69,
+   1.58,
+   1.37,
+   1.36,
+   1.51,
+   1.53,
+   1.6,
+   1.63,
+   1.46,
+   1.28,
+   1.16,
+   1.05,
+   0.58,
+   0.71,
+   1.04,
+   0.93,
+   0.91,
+   1.11,
+   1.27,
+   1.63,
+   1.73,
+   2.41,
+   2.03,
+   1.97,
+   2.34,
+   2.27,
+   2.68,
+   3.63,
+   3.47,
+   3.78,
+   3.74,
+   4.03,
+   4.19,
+   3.83,
+   2.94,
+   3.18,
+   2.86,
+   2.14,
+   1.82,
+   1.54,
+   1.89,
+   2.26,
+   1.79,
+   1.6,
+   1.62,
+   1.54,
+   1.98,
+   1.72,
+   2.15,
+   2.13,
+   2.19,
+   2.32,
+   2.76,
+   2.8,
+   2.45,
+   1.94,
+   2.49,
+   2.57,
+   2.57,
+   2.71,
+   3.19,
+   2.79,
+   2.54,
+   2.47,
+   2.38,
+   2.32,
+   2.4,
+   2.27,
+   2.2,
+   2.21,
+   2.29,
+   2.02,
+   2.12,
+   2.05,
+   2.05,
+   2.04,
+   2.46,
+   2.79,
+   2.51,
+   2.14,
+   1.92,
+   2.01,
+   2.09,
+   1.82,
+   1.71,
+   1.68,
+   1.64,
+   1.62,
+   1.42,
+   1.54,
+   1.3,
+   1.32
+  ],
+  "p10": 1.32,
+  "p25": 1.63,
+  "tv": 2.14,
+  "thap": [
+   "2020-03",
+   0.58
+  ],
+  "nay": [
+   "2026-10",
+   1.32
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. Từ 03/2026 tính theo số cp sau thưởng 20:7.",
+  "dung": "Kịch bản dùng P/B 0,95 · 1,30 · 1,65. Xấu: dưới mọi tháng từ 2021, mức các CTCK tự doanh lớn đang giao dịch. Cơ sở: ngang mức thấp 10% (1,32), dưới trung vị 2,14 vì ROE 2027E chỉ ~3,8% — tương đương 1,0 lần danh mục AFS + 2,3 lần phần còn lại. Tốt: mức 25% (1,63)."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với 10 CTCK niêm yết lớn nhất",
+  "phu": "theo giá hôm nay, VCSH 30/9/2026",
+  "chi_so": "P/B (VCSH 30/9/2026)",
+  "chi_so_kv": "P/B quý gần nhất (giá 23/10)",
+  "nhom": "10 CTCK vốn hóa lớn nhất",
+  "kv": [
+   [
+    "TCX",
+    2.1
+   ],
+   [
+    "VCK",
+    2.14
+   ],
+   [
+    "SSI",
+    1.4
+   ],
+   [
+    "VPX",
+    1.23
+   ],
+   [
+    "VIX",
+    0.98
+   ],
+   [
+    "HCM",
+    2.28
+   ],
+   [
+    "VND",
+    0.96
+   ],
+   [
+    "MBS",
+    1.39
+   ],
+   [
+    "SHS",
+    0.93
+   ],
+   [
+    "ORS",
+    1.23
+   ]
+  ],
+  "tv": 1.31,
+  "moi_cp": 14709,
+  "max": 3,
+  "y": "Nhóm phân tán 0,93–2,28 lần; ROE 4 quý trung vị 10,3%, VCI 8,1%. ~77% VCSH của VCI là cổ phiếu AFS theo giá thị trường.",
+  "ng": "BCTC VNDirect đến Q3/2026 (SSI đến Q2), giá 23/10/2026 (gói số liệu cùng ngành; bỏ EVF — công ty tài chính)"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    70,
+    176,
+    324
+   ],
+   "ck": 420
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -10,
+    126,
+    293
+   ],
+   "ck": 443
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    949,
+    1085,
+    1251
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026: vượt mô hình nhờ AFS và phí tư vấn",
+   "ct": "LNST 367 tỷ (−13%) so với cơ sở cũ 176 (xấu 70, tốt 324): lãi AFS ~200, tư vấn 128, FVTPL 150 tỷ; môi giới −50%, chi phí vốn 6,8%.",
+   "tac": [
+    "+109%",
+    "so với LNST Q3 cơ sở cũ; 2026E 1.085 tỷ (cũ 930), 2027E 632 (cũ 758) vì chi phí vốn"
+   ],
+   "theo_doi": "lãi bán AFS, phí tư vấn trong thuyết minh"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thanh khoản thấp kéo dài",
+   "ct": "1–23/10 chỉ 13.198 tỷ/phiên (−48% so với Q4/2025); Toàn cảnh THẬN TRỌNG 14/9–22/10, QUAN SÁT từ 23/10; nâng hạng FTSE chưa kéo được dòng tiền.",
+   "tac": [
+    "±2,4 nghìn đ/cp",
+    "mỗi ±3.000 tỷ/phiên GTGD 2027 (±79 tỷ LNST)"
+   ],
+   "theo_doi": "GTGD tháng, thị phần HOSE"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "len",
+   "tieu": "Phí IB từ danh mục 400–500 triệu USD đã ký",
+   "ct": "Q3 doanh thu tư vấn 128 tỷ (×21 cùng kỳ); trong quý Điện Máy Xanh (Vietcap tư vấn) lên sàn. IB & khác 9T ~197 tỷ. Phí theo thương vụ, không đều.",
+   "tac": [
+    "+200 tỷ",
+    "LNST 2027 nếu IB & khác đạt 450 thay vì 200 tỷ"
+   ],
+   "theo_doi": "doanh thu tư vấn, bảo lãnh trong BCTC"
+  },
+  {
+   "khi": "12/2026",
+   "loai": "len",
+   "tieu": "Cổ tức tiền mặt",
+   "ct": "2025 chi 500 + 250 đ/cp trước thưởng (638 tỷ, 48% LNST). Giữ tỷ lệ này: ~450 đ/cp cho LN 2026, tạm ứng từ 12/2026.",
+   "tac": [
+    "~450 đ/cp",
+    "giả định, chưa công bố"
+   ],
+   "theo_doi": "nghị quyết HĐQT tạm ứng cổ tức"
+  },
+  {
+   "khi": "01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Mô hình: LNST ~130 tỷ (−72% so với Q4/2025) khi không có lãi AFS, phí tư vấn lớn như Q3; cả năm 1.085 tỷ, LNTT 1.233 tỷ ≈ 54% kế hoạch.",
+   "tac": [
+    "LNST < 60 tỷ",
+    "nghiêng về kịch bản xấu (xấu: −10); > 290 tỷ nghiêng về tốt"
+   ],
+   "theo_doi": "LNST, OCI, dư nợ 31/12"
+  },
+  {
+   "khi": "01–04/2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Hụt kế hoạch 2026; kế hoạch 2027 tại ĐHĐCĐ",
+   "ct": "9T LNTT 1.101 tỷ = 48% kế hoạch 2.300; mô hình cả năm ~54%. Kế hoạch 2027 sẽ cho thấy ban lãnh đạo nhìn thanh khoản, IB ra sao.",
+   "tac": [
+    "−19%",
+    "LNST 2026E so với 2025 (cơ sở)"
+   ],
+   "theo_doi": "kế hoạch 2027, lãi bán AFS Q4"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Dòng vốn ngoại sau nâng hạng FTSE",
+   "ct": "Hiệu lực 21/9/2026; Vietcap mạnh ở khách hàng tổ chức và nước ngoài, thị phần HOSE thứ 4 (Q2, Q3/2026).",
+   "tac": [
+    "+8,4 nghìn đ/cp",
+    "kịch bản tốt: GTGD 21.000 tỷ/phiên, P/B 1,65"
+   ],
+   "theo_doi": "GTGD khối ngoại, thị phần môi giới"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Dư địa cho vay ký quỹ",
+   "ct": "Dư nợ 30/9 ≈ 1,0 lần VCSH (trần 2 lần), 30/6 thứ 6 trong 40 CTCK; thị phần dư nợ giữ 5,1% trong một năm khi dư nợ ngành +52%.",
+   "tac": [
+    "±1,9 nghìn đ/cp",
+    "mỗi ±2.000 tỷ dư nợ bình quân 2027 (±62 tỷ LNST)"
+   ],
+   "theo_doi": "dư nợ cuối quý, lãi suất cho vay"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Chi phí vốn đuổi theo lãi suất huy động",
+   "ct": "Đã bắt đầu: 6,2% (Q2) → 6,8% (Q3), lãi vay +101%; trung vị 8 CTCK 7,1%, huy động 8,0%. Nợ phải trả 23.247 tỷ, 98% vay ngắn hạn.",
+   "tac": [
+    "±2,8 nghìn đ/cp",
+    "mỗi ±0,5 điểm % chi phí vốn 2027 (±94 tỷ LNST)"
+   ],
+   "theo_doi": "lãi vay / nợ bình quân, lãi suất huy động"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "hai",
+   "tieu": "Giá danh mục AFS",
+   "ct": "AFS ước ~13,3 nghìn tỷ 30/9 (30/6 14.047, giá gốc 12.243); OCI 9T ước −1.854 tỷ. Bán chốt lãi làm đẹp LNST nhưng không tăng vốn chủ.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi ±10% giá danh mục (±1.063 tỷ VCSH)"
+   ],
+   "theo_doi": "thu nhập toàn diện khác, giá MCH, FPT, HPA"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Bốn nguồn thu mỗi quý",
+   "dv": "tỷ đồng",
+   "kieu": "duong",
+   "so_le": 0,
+   "nhan": [
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi cho vay ký quỹ",
+     "v": [
+      180,
+      234,
+      206,
+      252,
+      257,
+      258,
+      314,
+      376,
+      415,
+      463,
+      472
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "FVTPL ròng",
+     "v": [
+      185,
+      249,
+      283,
+      70,
+      200,
+      -12,
+      261,
+      371,
+      61,
+      -71,
+      150
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "Môi giới",
+     "v": [
+      182,
+      181,
+      183,
+      184,
+      149,
+      221,
+      373,
+      257,
+      340,
+      226,
+      187
+     ],
+     "mau": "c3",
+     "net": false
+    },
+    {
+     "ten": "AFS, IB & khác",
+     "v": [
+      92,
+      53,
+      50,
+      120,
+      90,
+      101,
+      84,
+      143,
+      148,
+      249,
+      351
+     ],
+     "mau": "c4",
+     "net": false
+    }
+   ],
+   "y": "Lãi cho vay là nguồn thu lớn nhất từ Q4/2025; Q3/2026 FVTPL ròng hồi lên 150 tỷ và AFS, IB & khác đạt 351 tỷ (lãi AFS ~200, tư vấn 128) trong khi môi giới về 187 tỷ.",
+   "ng": "BCTC hợp nhất quý; FVTPL ròng = lãi − lỗ"
+  },
+  {
+   "ten": "GTGD khớp lệnh toàn thị trường",
+   "dv": "nghìn tỷ/phiên",
+   "kieu": "cot",
+   "so_le": 1,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26",
+    "1–23/10"
+   ],
+   "ss": [
+    {
+     "ten": "GTGD bình quân phiên",
+     "v": [
+      15.1,
+      21.2,
+      39.7,
+      25.4,
+      30.2,
+      19.1,
+      14.7,
+      13.2
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "y": "Q3/2026 −63% so với cùng kỳ; 1–23/10 13.198 tỷ/phiên. Doanh thu môi giới VCI đi theo đúng tỷ lệ (Q3 2,02 phần vạn).",
+   "ng": "tab Toàn cảnh — giá trị khớp lệnh ~700 mã (VNDirect)"
+  },
+  {
+   "ten": "Dư nợ cho vay và vốn chủ cuối quý",
+   "dv": "nghìn tỷ",
+   "kieu": "cot",
+   "so_le": 1,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Dư nợ cho vay",
+     "v": [
+      11.2,
+      10.1,
+      11.3,
+      13.9,
+      16.2,
+      16.6,
+      17.1,
+      17.3
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Vốn chủ sở hữu",
+     "v": [
+      12.9,
+      12.6,
+      12.4,
+      12.7,
+      18.0,
+      17.3,
+      17.1,
+      16.9
+     ],
+     "mau": "c4",
+     "net": false
+    }
+   ],
+   "y": "Dư nợ +54% trong 21 tháng, đi ngang từ Q1/2026; vốn chủ tăng nhờ chào bán Q4/2025 rồi giảm 3 quý liền vì danh mục AFS mất giá và chi cổ tức.",
+   "ng": "BCTC hợp nhất quý"
+  },
+  {
+   "ten": "Lợi suất cho vay và chi phí vốn",
+   "dv": "%/năm",
+   "kieu": "duong",
+   "so_le": 1,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lợi suất cho vay ký quỹ",
+     "v": [
+      9.6,
+      9.6,
+      9.9,
+      10.0,
+      10.1,
+      11.0,
+      11.0
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Chi phí vốn",
+     "v": [
+      5.8,
+      5.9,
+      5.9,
+      6.9,
+      5.9,
+      6.2,
+      6.8
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "y": "Lợi suất cho vay đứng ở 11,0% hai quý; chi phí vốn từ 6,2% lên 6,8% trong Q3 khi huy động đã lên 8,0% từ 08/2026 — chênh lệch bắt đầu co.",
+   "ng": "tính từ BCTC quý: thu nhập, chi phí năm hóa ÷ số dư bình quân"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu hoạt động",
+    "kh": 6525,
+    "th": 3887,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 30/03/2026 · BCTC 9T"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 2300,
+    "th": 1101,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 30/03/2026 · BCTC 9T"
+   }
+  ],
+  "y": "9 tháng đạt 48% kế hoạch LNTT dù Q3 đã có phí IB và lãi AFS; kế hoạch dựa vào GTGD cao. Mô hình cơ sở: cả năm 1.233 tỷ, ~54% kế hoạch.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "DSC",
+   "ngay": "2026-05-26",
+   "kn": "MUA",
+   "tp": 31400,
+   "ln26": null,
+   "ln27": null,
+   "pp": "P/B 1,8 × BVPS 2026F 17.440 đ",
+   "y": "Dự phóng LNTT 2026 2.094 tỷ (+29%) nhờ vốn mới và phí IB từ Q3; P/B mục tiêu 1,8 lần theo bình quân lịch sử và CTCK cùng quy mô. Viết trước khi GTGD giảm từ ~30.000 (Q1) xuống ~15.000 tỷ/phiên (Q3).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VCI/Muc_tieu_tang_truong_cao.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ một báo cáo CTCK trong 8 tháng (DSC 26/05/2026), viết trước khi thanh khoản giảm mạnh — chỉ tham khảo. Chưa có CTCK nào cập nhật sau Q2/2026 (kể cả sau KQKD Q3); mô hình tự dựng từ BCTC, công bố của Vietcap và so sánh cùng ngành.",
+ "nguon": [
+  {
+   "ten": "Mekong ASEAN — Doanh thu môi giới giảm một nửa, Vietcap báo lãi đi xuống trong quý 3",
+   "ngay": "10/2026",
+   "link": "https://mekongasean.vn/doanh-thu-moi-gioi-giam-mot-nua-vietcap-bao-lai-di-xuong-trong-quy-3-60927.html"
+  },
+  {
+   "ten": "DSC — Mục tiêu tăng trưởng cao (VCI)",
+   "ngay": "26/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VCI/Muc_tieu_tang_truong_cao.pdf"
+  },
+  {
+   "ten": "Mekong ASEAN — Vietcap chốt ngày họp ĐHĐCĐ 2026, mục tiêu lãi 2.300 tỷ",
+   "ngay": "03/2026",
+   "link": "https://mekongasean.vn/vietcap-chot-ngay-hop-dhdcd-2026-dat-muc-tieu-lai-2300-ty-dong-52461.html"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ 2026 Vietcap chốt mục tiêu lãi 2.300 tỷ",
+   "ngay": "03/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-2026-chung-khoan-vietcap-vci-chot-muc-tieu-lai-2-300-ty-dong-lo-dien-nhom-co-dong-nam-giu-30-von-dieu-le.html"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — cổ tức 250 đ/cp và thưởng 20:7 (GDKHQ 26/03)",
+   "ngay": "03/2026",
+   "link": "https://thitruongtaichinhtiente.vn/vietcap-du-chi-hon-200-ty-dong-co-tuc-va-gan-300-trieu-co-phieu-thuong-80418.html"
+  },
+  {
+   "ten": "Báo Pháp luật — tạm ứng cổ tức 425 tỷ, huy động gần 4.000 tỷ bổ sung vốn margin",
+   "ngay": "12/2025",
+   "link": "https://doanhnhan.baophapluat.vn/chung-khoan-vietcap-vci-chi-425-ty-dong-tam-ung-co-tuc-huy-dong-gan-4000-ty-bo-sung-von-margin-90190.html"
+  },
+  {
+   "ten": "VietnamFinance — Margin kéo lợi nhuận Vietcap tăng 36% (thu nhập AFS Q2/2026)",
+   "ngay": "07/2026",
+   "link": "https://vietnamfinance.vn/margin-keo-loi-nhuan-vietcap-tang-36-dong-tien-am-duoc-bu-dap-bang-vay-no-d147922.html"
+  },
+  {
+   "ten": "Finhay — Phân tích VCI 2026: thu nhập toàn diện khác, danh mục AFS",
+   "ngay": "07/2026",
+   "link": "https://www.finhay.com.vn/co-phieu-vci-vietcap"
+  },
+  {
+   "ten": "Báo Pháp luật — Tự doanh báo lỗ, Vietcap chật vật với mục tiêu năm",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/tu-doanh-bao-lo-chung-khoan-vietcap-vci-chat-vat-voi-muc-tieu-loi-nhuan-nam.html"
+  },
+  {
+   "ten": "Nhà đầu tư — Lợi nhuận tăng, tư vấn nhiều thương vụ IPO, cổ phiếu Vietcap về đáy 3 năm",
+   "ngay": "21/07/2026",
+   "link": "https://nhadautu.vn/loi-nhuan-tang-tu-van-nhieu-thuong-vu-ipo-co-phieu-vietcap-van-lao-doc-ve-day-3-nam-d106457.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — Thị phần môi giới quý III/2026",
+   "ngay": "10/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/thi-phan-moi-gioi-quy-iii-vps-giu-ngoi-dau-ssi-va-tcbs-bam-sat-204889.html"
+  },
+  {
+   "ten": "Diễn đàn Doanh nghiệp — Chủ tịch Vietcap kiên định đầu tư vào doanh nghiệp uy tín, dòng tiền mạnh",
+   "ngay": "03/2026",
+   "link": "https://diendandoanhnghiep.vn/chu-tich-vietcap-kien-dinh-chien-luoc-dau-tu-vao-cac-doanh-nghiep-uy-tin-dong-tien-manh-10175354.html"
+  },
+  {
+   "ten": "khoanguyeninvest.vn — Toàn cảnh: thanh khoản, lãi suất NHNN, trạng thái thị trường",
+   "ngay": "24/10/2026",
+   "link": "https://khoanguyeninvest.vn/#toan-canh"
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Môi giới",
+   "phu": "Thị phần HOSE thứ 4 (7,0% Q2/2026; giữ hạng Q3) — mạnh ở khách hàng tổ chức, nước ngoài",
+   "so": [
+    [
+     "Doanh thu 9T/2026",
+     "752 tỷ",
+     "+1%"
+    ],
+    [
+     "DT / GTGD thị trường",
+     "1,4–2,1 phần vạn",
+     "11 quý"
+    ],
+    [
+     "Chi phí biến đổi",
+     "30% DT môi giới",
+     "cố định ~136 tỷ/quý"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Doanh thu môi giới đi theo GTGD thị trường; chi phí hoạt động có phần cố định lớn nên lợi nhuận môi giới co mạnh hơn doanh thu khi thanh khoản giảm.",
+     "ng": "BCTC quý · hồi quy 11 quý"
+    },
+    {
+     "t": "Cạnh tranh thị phần gay gắt: VPS 11,5%, SSI 11,1%, TCBS lần đầu trên 10% ở Q3/2026; VCI giữ hạng 4.",
+     "ng": "Thời báo Tài chính 10/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Cho vay ký quỹ",
+   "phu": "Nguồn thu lớn nhất từ Q4/2025",
+   "so": [
+    [
+     "Dư nợ 30/9/2026",
+     "17.308 tỷ",
+     "30/6: 17.146"
+    ],
+    [
+     "Lãi cho vay 9T",
+     "1.350 tỷ",
+     "+63%"
+    ],
+    [
+     "Lợi suất Q3/2026",
+     "11,0%",
+     "chi phí vốn 6,8%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Thị phần dư nợ 5,1% trong 40 CTCK niêm yết, không đổi trong một năm; dư nợ ngành 219.947 → 333.605 tỷ.",
+     "ng": "BCTC các CTCK (VNDirect)"
+    },
+    {
+     "t": "Q4/2025 huy động gần 4.000 tỷ bổ sung vốn cho vay; dòng tiền kinh doanh âm được bù bằng vay ngắn hạn.",
+     "ng": "Báo Pháp luật 12/2025 · VietnamFinance 07/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Đầu tư (AFS, FVTPL)",
+   "phu": "Danh mục cổ phiếu dài hạn, nhiều mã từ các thương vụ IB",
+   "so": [
+    [
+     "AFS 30/6/2026",
+     "14.047 tỷ",
+     "30/9 ước ~13.300"
+    ],
+    [
+     "Thu nhập AFS 9T",
+     "~550 tỷ",
+     "Q2: 229, Q3: ~200 tỷ"
+    ],
+    [
+     "OCI 9T/2026 (ước)",
+     "−1.854 tỷ",
+     "Q3 ước: −603"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q1/2026 mua thêm MBB, MCH, MWG, giảm STB; MCH, HPA vào danh mục AFS từ cuối 2025. Chiến lược: nắm dài hạn doanh nghiệp dòng tiền mạnh.",
+     "ng": "DSC 26/05 · ĐHĐCĐ 2026"
+    },
+    {
+     "t": "FVTPL ròng 9T/2026 140 tỷ (Q2 lỗ 71, Q3 lãi 150 tỷ), sau 820 tỷ năm 2025.",
+     "ng": "BCTC quý · Báo Pháp luật 07/2026"
+    }
+   ]
+  },
+  {
+   "ten": "Ngân hàng đầu tư (IB)",
+   "phu": "Thế mạnh truyền thống; phí ghi nhận theo thương vụ",
+   "so": [
+    [
+     "Danh mục đã ký",
+     "400–500 tr USD",
+     "ĐHĐCĐ 03/2026"
+    ],
+    [
+     "Tư vấn tài chính Q3/2026",
+     "128 tỷ",
+     "×21 cùng kỳ"
+    ],
+    [
+     "Kế hoạch LNTT 2026",
+     "2.300 tỷ",
+     "+41%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Tư vấn IPO/niêm yết VPBankS, Nông nghiệp Hòa Phát, DatViet VAC, F88, Điện Máy Xanh; tư vấn chuyển sàn MCH.",
+     "ng": "Nhà đầu tư 21/07/2026 · Thời báo Tài chính"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Lãi suất huy động (cận trên NHNN) 5,5% (06/2025) → 8,0% (08/2026): chi phí vốn CTCK đi lên.",
+     "ng": "NHNN, tab Toàn cảnh"
+    },
+    {
+     "h": 1,
+     "t": "FTSE Russell nâng Việt Nam lên thị trường mới nổi thứ cấp từ 21/9/2026 — lợi thế cho CTCK mạnh khối ngoại.",
+     "ng": "tab Toàn cảnh"
+    },
+    {
+     "h": -1,
+     "t": "Toàn cảnh thị trường THẬN TRỌNG 14/9–22/10/2026, chuyển QUAN SÁT từ 23/10; dòng tiền vẫn yếu.",
+     "ng": "tab Toàn cảnh 24/10"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "GTGD khớp lệnh: 25.646 tỷ/phiên (2025) → 14.724 (Q3/2026) → 13.198 (1–23/10).",
+     "ng": "tab Toàn cảnh"
+    },
+    {
+     "h": -1,
+     "t": "Dư nợ margin 40 CTCK +52% trong một năm tới 333.605 tỷ khi GTGD giảm: đòn bẩy cao, cạnh tranh lãi suất cho vay.",
+     "ng": "BCTC các CTCK (VNDirect)"
+    },
+    {
+     "h": -1,
+     "t": "Chi phí vốn Q3/2026 của 8 CTCK đã ra BCTC: trung vị 7,1% (VCI 6,8%) — áp lực chung toàn ngành.",
+     "ng": "BCTC Q3/2026 các CTCK (VNDirect)"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Thế mạnh IB (nhiều thương vụ IPO, M&A lớn), thị phần HOSE 7% — nguồn phí không phụ thuộc hoàn toàn vào GTGD.",
+     "ng": "DSC 26/05 · Nhà đầu tư 07/2026"
+    },
+    {
+     "h": -1,
+     "t": "~77% vốn chủ là cổ phiếu AFS: lợi nhuận chỉ nhận cổ tức và lãi bán, vốn chủ dao động theo thị trường.",
+     "ng": "BCTC Q2, Q3/2026"
+    },
+    {
+     "h": -1,
+     "t": "ROE 4 quý 8,1%, thấp nhất nhóm 10 CTCK lớn trừ DSE và SHS, sau khi vốn chủ tăng gần gấp đôi trong 2 năm.",
+     "ng": "gói số liệu cùng ngành · BCTC"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1407 @@
+{
+ "v": 2,
+ "ma": "FRT",
+ "ten": "CTCP Bán lẻ Kỹ thuật số FPT",
+ "nganh": "Bán lẻ dược phẩm, thiết bị số",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026 (kế hoạch 2027, ĐHĐCĐ 2027)",
+ "cp_trieu": 178.8,
+ "cp_ng": "178.815.054 cp (ACBS 24/08; vốn điều lệ BCTC Q3/2026) = 170,3 triệu × 1,05 sau cổ tức cổ phiếu 5% (ĐKCC 30/6/2026)",
+ "co_tuc": [],
+ "chia": [
+  [
+   "2026-06-29",
+   1.05
+  ]
+ ],
+ "tieu_de": {
+  "t": "Quý 3 vượt dự phóng, Long Châu giữ biên 4%; giá vẫn chỉ trả cho chuỗi ngang mức Creador 2025",
+  "dk": "up_tren:29",
+  "khac": "Long Châu giữ biên 4% hai quý liền: lãi 9 tháng gấp đôi, đã vượt kế hoạch cả năm"
+ },
+ "dong_mo": "Q3/2026 LN cổ đông 440 tỷ (+101%), cao hơn mô hình 16%: doanh thu Long Châu +39%, biên LNST giữ ~4,1% như quý 2. 9T LNTT 1.724 tỷ, 111% kế hoạch năm. Ở giá 30/10, trừ FPT Shop theo P/E 11, thị trường trả cho 100% Long Châu ~33 nghìn tỷ — ngang mức Creador góp vốn 2025. Định giá từng chuỗi cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "+105%",
+   "nhan": "LNST Long Châu 9T/2026",
+   "tieu": "Quý 3 xác nhận biên ~4% của Long Châu không phải một quý",
+   "t": "Q3: doanh thu Long Châu 12.052 tỷ (+39%), LNST ước ~489 tỷ (+124%), biên 4,1% — giữ mức quý 2 (4,1%), cùng kỳ 2,5%. Doanh thu mỗi điểm bán 1,37 tỷ/tháng (+16%, tự tính) khi chỉ mở 110 điểm trong quý. 9T LNST ~1.297 tỷ, đã vượt cả năm 2025 (903). Mô hình nâng biên 2027 lên 4,1%: LNST Long Châu 2026E 1.802 tỷ, 2027E 2.281 tỷ (+27%).",
+   "ng": "BCTC Q3 · FRT công bố 29/10 · ACBS 24/08 · mô hình"
+  },
+  {
+   "so": "1,3%",
+   "nhan": "biên LNST FPT Shop & khác Q3/2026",
+   "tieu": "FPT Shop: mùa tựu trường kéo lãi trở lại, nền vẫn mỏng",
+   "t": "Doanh thu Q3 5.478 tỷ (+24%; FRT công bố 9T +30%) với 622 cửa hàng — nhờ laptop mùa tựu trường, phụ kiện, dịch vụ và giá thiết bị cao do thiếu chip nhớ, không phải mở rộng. Lãi ~70 tỷ, sau ~17 tỷ cả 6T. Lãi vay hợp nhất Q3 257 tỷ (+157%) khi tồn kho 15.577 tỷ (+31% từ đầu năm). Mô hình cho FPT Shop 2027E doanh thu −3%, chỉ ~4% giá trị cơ sở.",
+   "ng": "BCTC Q3 · FRT công bố 29/10 · ACBS 24/08 · mô hình"
+  },
+  {
+   "so": "33.100 tỷ",
+   "nhan": "thị trường trả cho 100% Long Châu (giá 30/10)",
+   "tieu": "Giá chưa theo kịp lợi nhuận Long Châu",
+   "dk": "up_tren:29",
+   "t": "Năm 2025 Long Châu thu 2.037 tỷ từ phát hành cổ phần mới (Creador vào từ 4/2025); đợt 1 (887 tỷ, phần FRT 80,74% → 78,59%) ngầm định ~33 nghìn tỷ cho cả chuỗi, khi LNST năm 2025 mới 903 tỷ. Ở giá 30/10, trừ FPT Shop theo P/E 11, phần còn lại quy ra ~33 nghìn tỷ — 14,5 lần LNST Long Châu 2027E, dưới trung vị 15,5 lần của chuỗi nhà thuốc châu Á (MAS) dù mô hình cho LN tăng 27%.",
+   "ng": "BCTC 2025 · ACBS 24/08 · Mekong ASEAN · MAS 16/07 · mô hình",
+   "khac": {
+    "so": "24%",
+    "nhan": "lãi Long Châu thuộc cổ đông thiểu số",
+    "tieu": "Phần của FRT trong Long Châu đã mỏng đi",
+    "t": "Long Châu phát hành cổ phần mới thu 2.037 tỷ năm 2025 (quý 2 và quý 4, Creador vào từ 4/2025); phần FRT hưởng giảm từ 80,74% (đầu 2025) còn ~75,7% — lợi ích cổ đông thiểu số 9T/2026 315 tỷ; quý 3 không phát hành thêm. Mô hình định giá theo 75,7%; mỗi 2 điểm % sở hữu ≈ 4,9 nghìn đ/cp."
+   }
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Định giá từng chuỗi: {up_so} so với giá hiện tại",
+   "t": "Long Châu × P/E 19 (≈ giá Creador trên LNST 2026E; giữa trung vị khu vực 15,4 và trung vị FRT 23,0), FPT Shop × 11 (≈ MWG, DGW). Kịch bản xấu 111,8: doanh thu/điểm bán 2027 +2%, biên Long Châu 3,4%, P/E 15 — bằng nhóm khu vực; tốt 271,2. P/E lịch sử của FRT không dùng làm neo: 2020–2025 lợi nhuận quá mỏng. FRT không trả cổ tức tiền mặt (2025: 5% cổ phiếu).",
+   "ng": "mô hình · P/E khu vực: MAS 16/07"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   795,
+   1518,
+   1865
+  ],
+  "ln_truoc": 318,
+  "eps": [
+   4446,
+   8490,
+   10431
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     51.1,
+     66.5,
+     75.5
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LNST Long Châu 100% (tỷ)",
+    "v": [
+     903,
+     1802,
+     2281
+    ]
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC; 2026E = 9T thực tế + Q4 ước tính. EPS trên 178,8 triệu cp (sau cổ tức cổ phiếu 5% tháng 6/2026); EPS 2025 của CTCK tính trên 170,3 triệu cp. LNST Long Châu 2025: ACBS, MAS."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông FRT theo chuỗi",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Long Châu",
+    "mau": "c3",
+    "v": [
+     714,
+     1364,
+     1726
+    ]
+   },
+   {
+    "ten": "FPT Shop & khác",
+    "mau": "c1",
+    "v": [
+     81,
+     154,
+     139
+    ]
+   }
+  ],
+  "nhan": "Long Châu",
+  "ng": "Long Châu = LNST Long Châu trừ phần cổ đông thiểu số (2025: 79–81%, từ Q4/2025 ~75,7%); FPT Shop & khác = phần còn lại của LN cổ đông. 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 2026F",
+  "chi_so_kv": "P/E 2026F (MAS 16/07)",
+  "nhom": "chuỗi nhà thuốc châu Á",
+  "kv": [
+   [
+    "DFI Retail (Singapore)",
+    16.9
+   ],
+   [
+    "MedPlus (Ấn Độ)",
+    47.3
+   ],
+   [
+    "Tsuruha (Nhật)",
+    18.2
+   ],
+   [
+    "Matsukiyo Cocokara (Nhật)",
+    17.2
+   ],
+   [
+    "Cosmos Pharmaceutical (Nhật)",
+    16.5
+   ],
+   [
+    "Kusuri no Aoki (Nhật)",
+    20.2
+   ],
+   [
+    "Sugi (Nhật)",
+    13.4
+   ],
+   [
+    "Sundrug (Nhật)",
+    14.4
+   ],
+   [
+    "Yifeng (Trung Quốc)",
+    12.7
+   ],
+   [
+    "Laobaixing (Trung Quốc)",
+    14.2
+   ],
+   [
+    "Dashenlin (Trung Quốc)",
+    13.3
+   ],
+   [
+    "Yixintang (Trung Quốc)",
+    12.6
+   ],
+   [
+    "Great Tree (Đài Loan)",
+    16.3
+   ],
+   [
+    "Robinsons Retail (Philippines)",
+    8.6
+   ]
+  ],
+  "tv": 15.4,
+  "moi_cp": 8490,
+  "max": 30,
+  "y": "Nhóm này tăng EBITDA trung vị 6,5% năm 2026F; mô hình cho LN cổ đông FRT 2026E +91%, 2027E +23%. Ở giá 30/10, P/E 2027E của FRT 14,3 — dưới trung vị 2027F của nhóm (15,5).",
+  "ng": "P/E 2026F cùng ngành: bảng so sánh MAS 16/07 (Bloomberg); FRT: EPS 2026E của mô hình"
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông FRT 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1518
+  ],
+  "cuoi": [
+   "2027E",
+   1865
+  ],
+  "buoc": [
+   [
+    "Long Châu: điểm bán mới",
+    192
+   ],
+   [
+    "Long Châu: doanh thu/điểm",
+    93
+   ],
+   [
+    "Long Châu: biên LNST",
+    78
+   ],
+   [
+    "FPT Shop & khác",
+    -16
+   ]
+  ],
+  "y": "82% phần tăng đến từ doanh thu Long Châu (điểm bán mới, doanh thu mỗi điểm); biên LNST chỉ nhích từ 3,9% lên 4,1%; FPT Shop giảm vì cầu bị kéo về sớm.",
+  "ng": "mô hình"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo chuỗi",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Long Châu (tính 100%)"
+   },
+   {
+    "ten": "Điểm bán cuối kỳ (nhà thuốc + tiêm chủng)",
+    "v": [
+     2640,
+     3095,
+     3445
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Doanh thu/điểm bán/tháng (tỷ)",
+    "v": [
+     1.21,
+     1.34,
+     1.42
+    ],
+    "d": 2,
+    "tang": 1
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     34.3,
+     46.0,
+     55.6
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Biên LNST (%)",
+    "v": [
+     2.6,
+     3.9,
+     4.1
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LNST (tỷ)",
+    "v": [
+     903,
+     1802,
+     2281
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Phần về FRT",
+    "s": [
+     "80,7% → 78,6%",
+     "~75,7%",
+     "75,7%"
+    ]
+   },
+   {
+    "nhom": "FPT Shop & khác"
+   },
+   {
+    "ten": "Cửa hàng cuối kỳ",
+    "v": [
+     623,
+     622,
+     622
+    ]
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     16.8,
+     20.4,
+     19.8
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LNST (tỷ)",
+    "v": [
+     81,
+     154,
+     139
+    ]
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Doanh thu (nghìn tỷ)",
+    "v": [
+     51.1,
+     66.5,
+     75.5
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     1219,
+     2422,
+     2990
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Cổ đông thiểu số (tỷ)",
+    "v": [
+     189,
+     438,
+     554
+    ]
+   },
+   {
+    "ten": "LN cổ đông FRT (tỷ)",
+    "v": [
+     795,
+     1518,
+     1865
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     4446,
+     8490,
+     10431
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Doanh thu, LNST từng chuỗi theo quý: ACBS 24/08 (LNST Long Châu 6T/2026 là ước tính ACBS, khớp VDS cho Q1); Q3/2026: doanh thu Long Châu = 9T FRT công bố trừ 6T, LNST ước từ lợi ích cổ đông thiểu số ÷ 24,3%. FPT Shop & khác = hợp nhất trừ Long Châu. Doanh thu/điểm bán tự tính trên số điểm bán bình quân. 2026E = 9 tháng thực tế + quý 4 ước tính."
+ },
+ "gia_dinh": [
+  {
+   "ten": "Điểm bán Long Châu mở mới: Q4/2026 · 2027",
+   "v": [
+    "70 · 250",
+    "110 · 350",
+    "140 · 450"
+   ],
+   "ly_do": "9T/2026 +345 (Q3 +110); kế hoạch 2026 ~450 (ĐHĐCĐ), Q4/2025 mở 120, cả 2025 571; MAS dự báo 250 cho 2027"
+  },
+  {
+   "ten": "Doanh thu/điểm bán Long Châu: Q4/2026 · 2027",
+   "v": [
+    "+6% · +2%",
+    "+11% · +6%",
+    "+15% · +9%"
+   ],
+   "ly_do": "Q4 so cùng kỳ, 2027 so bình quân 2026. Q3 1,37 tỷ/tháng (+16%) trên nền còn thấp; Q4/2025 đã hồi (1,25) — giữ mức Q3 ≈ +10%"
+  },
+  {
+   "ten": "Biên LNST Long Châu: Q4/2026 · 2027",
+   "v": [
+    "3,5% · 3,4%",
+    "4,0% · 4,1%",
+    "4,3% · 4,4%"
+   ],
+   "ly_do": "Q1 3,5%, Q2 4,1%, Q3 ~4,1% (2025: 2,6%); 2027 cơ sở nâng 4,0 → 4,1% sau 2 quý liền ~4,1%; tiêm chủng hòa vốn 2027 (MAS)"
+  },
+  {
+   "ten": "Doanh thu FPT Shop: Q4/2026 · 2027",
+   "v": [
+    "−8% · −12%",
+    "+6% · −3%",
+    "+15% · +5%"
+   ],
+   "ly_do": "Q3 +24%, 9T +29% nhờ giá; nền Q4/2025 cao (5.259 tỷ, mùa iPhone); MAS: FPT Shop 2026 chỉ +6,4%"
+  },
+  {
+   "ten": "Biên LNST FPT Shop & khác: Q4/2026 · 2027",
+   "v": [
+    "0,4% · 0,1%",
+    "1,2% · 0,7%",
+    "1,6% · 1,1%"
+   ],
+   "ly_do": "Q3/2026 1,3%, Q4/2025 1,5%, 6T/2026 0,2%; cả 2025 0,5%; MAS 2027F 0,7%"
+  },
+  {
+   "ten": "P/E Long Châu",
+   "v": [
+    "15",
+    "19",
+    "23"
+   ],
+   "ly_do": "15 = trung vị chuỗi nhà thuốc châu Á 2026F (15,4, MAS); 19 ≈ giá Creador 2025 trên LNST 2026E; 23 ≈ trung vị P/E FRT từ 2018 (23,0)"
+  },
+  {
+   "ten": "P/E FPT Shop & khác",
+   "v": [
+    "8",
+    "11",
+    "13"
+   ],
+   "ly_do": "MWG 10,9, DGW 11,9 (giá 16/10); bán lẻ điện tử khu vực trung vị 12,5 lần 2027F (MBS 13/10)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1406,
+   "ln27": 1341,
+   "gia": 111.8,
+   "mo_ta": "Mở 70 · 250 điểm, doanh thu/điểm +6% · +2%, biên Long Châu 3,5% · 3,4%; FPT Shop 2027 −12%, biên 0,1%; P/E 15 và 8"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1518,
+   "ln27": 1865,
+   "gia": 192.0,
+   "mo_ta": "Mở 110 · 350 điểm, doanh thu/điểm +11% · +6%, biên Long Châu 4,0% · 4,1%; FPT Shop 2027 −3%, biên 0,7%; P/E 19 và 11"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 1594,
+   "ln27": 2213,
+   "gia": 271.2,
+   "mo_ta": "Mở 140 · 450 điểm, doanh thu/điểm +15% · +9%, biên Long Châu 4,3% · 4,4%; FPT Shop 2027 +5%, biên 1,1%; P/E 23 và 13"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo từng chuỗi",
+  "phu": "P/E × LN 2027E từng chuỗi",
+  "ck": 0,
+  "cp": 178.8,
+  "phan": [
+   {
+    "ten": "75,7% Long Châu",
+    "mau": "c3",
+    "sh": 0.757,
+    "x": [
+     1748,
+     2281,
+     2604
+    ],
+    "boi": [
+     15,
+     19,
+     23
+    ],
+    "x_ten": "LNST 2027E Long Châu",
+    "boi_ten": "P/E",
+    "gt": [
+     19849,
+     32808,
+     45338
+    ]
+   },
+   {
+    "ten": "FPT Shop & khác",
+    "mau": "c1",
+    "x": [
+     17,
+     139,
+     242
+    ],
+    "boi": [
+     8,
+     11,
+     13
+    ],
+    "x_ten": "LNST 2027E",
+    "sh": 1,
+    "boi_ten": "P/E",
+    "gt": [
+     136,
+     1529,
+     3146
+    ]
+   }
+  ],
+  "von": [
+   19985,
+   34337,
+   48484
+  ],
+  "gia": [
+   111.8,
+   192.0,
+   271.2
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   11.8,
+   10.6,
+   9.8,
+   16.1,
+   16.0,
+   15.3,
+   14.5,
+   14.3,
+   13.6,
+   12.0,
+   9.7,
+   10.0,
+   9.9,
+   12.5,
+   11.0,
+   9.6,
+   9.9,
+   8.9,
+   6.0,
+   4.7,
+   3.8,
+   7.8,
+   4.1,
+   7.8,
+   11.1,
+   9.3,
+   8.6,
+   26.1,
+   26.3,
+   22.9,
+   null,
+   null,
+   null,
+   89.5,
+   97.3,
+   86.3,
+   104.8,
+   114.1,
+   157.6,
+   48.9,
+   56.4,
+   61.8,
+   40.1,
+   69.3,
+   60.6,
+   21.8,
+   26.7,
+   27.9,
+   16.9,
+   18.8,
+   14.8,
+   18.2,
+   14.6,
+   16.3,
+   13.3,
+   13.0,
+   13.9,
+   20.9,
+   18.5,
+   19.4,
+   34.2,
+   44.5,
+   47.5,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   230.4,
+   239.6,
+   265.9,
+   78.5,
+   70.8,
+   72.0,
+   51.2,
+   54.7,
+   59.0,
+   41.3,
+   40.5,
+   46.9,
+   40.6,
+   41.3,
+   46.9,
+   36.2,
+   33.6,
+   31.9,
+   24.3,
+   23.5,
+   24.3,
+   22.9,
+   23.1,
+   23.4
+  ],
+  "p10": 9.4,
+  "p25": 12.9,
+  "tv": 23.0,
+  "thap": [
+   "2020-01",
+   3.8
+  ],
+  "nay": [
+   "2026-10",
+   23.4
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "P/E 4 quý của FRT méo vì lợi nhuận 2020–2025 quá mỏng (nhiều tháng trên 40 lần); mức thấp 9–13 lần là thời FRT còn là chuỗi điện thoại (2018–2020). Ở giá 30/10 và LN 4 quý đến Q3/2026: 19,6 — dưới trung vị 23,0 dù LN 4 quý gấp 2,2 lần cùng kỳ. Kịch bản dùng P/E 15 · 19 · 23 cho Long Châu, neo vào chuỗi nhà thuốc khu vực và giá Creador. Từ 6/2026 dùng 178,8 triệu cp."
+ },
+ "nhay": [
+  [
+   "Biên LNST Long Châu 2027 ±0,5 điểm %",
+   211,
+   22.4
+  ],
+  [
+   "P/E Long Châu ±1 lần",
+   null,
+   9.7
+  ],
+  [
+   "Biên LNST FPT Shop 2027 ±0,5 điểm %",
+   99,
+   6.1
+  ],
+  [
+   "Doanh thu/điểm bán Long Châu 2027 ±3%",
+   52,
+   5.5
+  ],
+  [
+   "Phần lãi Long Châu về FRT ±2 điểm %",
+   46,
+   4.9
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    290,
+    378,
+    441
+   ],
+   "ck": 219
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    337,
+    449,
+    525
+   ],
+   "ck": 290
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1406,
+    1518,
+    1594
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "Đã ra 10/2026",
+   "loai": "len",
+   "tieu": "KQKD Q3/2026 vượt mô hình",
+   "ct": "LN cổ đông 440 tỷ (+101%) so với dự phóng cơ sở 378 tỷ: Long Châu doanh thu +39%, biên ~4,1% (mô hình 3,9%); FPT Shop lãi ~70 tỷ nhờ mùa tựu trường. Biên Long Châu là xu hướng, phần FPT Shop mang tính mùa vụ.",
+   "tac": [
+    "+7,9 nghìn đ/cp",
+    "giá trị cơ sở 184,1 → 192,0 (biên Long Châu 2027 4,0 → 4,1%, 9T thực tế)"
+   ],
+   "theo_doi": "biên LNST Long Châu Q4"
+  },
+  {
+   "khi": "01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026, kế hoạch 2027",
+   "ct": "Mô hình dự phóng LN cổ đông Q4 449 tỷ (+55%), cả năm 1.518 tỷ; kế hoạch 2027 (ĐHĐCĐ 4/2027) cho thấy nhịp mở điểm bán và mục tiêu lãi — LNTT 2026 đã vượt kế hoạch 11% sau 9 tháng.",
+   "tac": [
+    "≥ 450 tỷ",
+    "giữ kịch bản cơ sở; dưới 340 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "biên LNST Long Châu, lãi FPT Shop"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "hai",
+   "tieu": "FPT Shop: mùa iPhone mới sau đợt tăng giá",
+   "ct": "Apple tăng giá 20–30% một số thiết bị, laptop từ 7/2026 (MAS); nền Q4/2025 cao (5.259 tỷ) — mùa bán chạy nhất năm quyết định lãi FPT Shop.",
+   "tac": [
+    "±0,4 nghìn đ/cp",
+    "mỗi 10% doanh thu FPT Shop Q4/2026"
+   ],
+   "theo_doi": "doanh thu tháng FPT Shop, biên gộp"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Tiêm chủng hòa vốn toàn chuỗi",
+   "ct": "244 trung tâm (30/9), ~80% đặt trong nhà thuốc; dưới 5% doanh thu Long Châu, đã hòa vốn cấp cửa hàng; mục tiêu ~10% doanh thu trong 5 năm (MAS).",
+   "tac": "",
+   "theo_doi": "số trung tâm, doanh thu tiêm chủng"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Doanh thu mỗi điểm bán tăng nhờ thuốc kê đơn, đặc trị",
+   "ct": "Hơn 30 loại thuốc thế hệ mới, thuốc hiếm đưa về năm 2026; Nghị định 90/2026 phạt bán thuốc kê đơn không đơn 10–20 triệu đồng — lợi thế cho chuỗi đạt chuẩn.",
+   "tac": [
+    "+5,2 nghìn đ/cp",
+    "nếu doanh thu/điểm bán 2027 +9% (kịch bản tốt)"
+   ],
+   "theo_doi": "doanh thu/điểm bán theo quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Biên Long Châu không giữ được",
+   "ct": "Biên LNST quý 2–3 ~4,1% là cao nhất; cam kết giữ giá thuốc thiết yếu, khuyến mãi cạnh tranh hoặc chi phí điểm mới có thể kéo biên về mức Q1 (3,5%).",
+   "tac": [
+    "−31,3 nghìn đ/cp",
+    "nếu biên LNST 2027 3,4% thay vì 4,1%"
+   ],
+   "theo_doi": "biên gộp, chi phí BH&QL Long Châu"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Cầu điện thoại, laptop bị kéo về sớm",
+   "ct": "Giá thiết bị +10–20% do thiếu chip nhớ khiến khách mua sớm; MAS dự báo doanh thu FPT Shop chỉ +3,5%/năm 2026–2030.",
+   "tac": [
+    "−7,5 nghìn đ/cp",
+    "nếu doanh thu FPT Shop 2027 −12%, biên 0,1%"
+   ],
+   "theo_doi": "doanh thu FPT Shop, tồn kho"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Long Châu tiếp tục gọi vốn ngoài",
+   "ct": "Sau 2 đợt Creador năm 2025, phần FRT hưởng còn ~75,7%; phát hành thêm ở Long Châu sẽ chia nhỏ tiếp phần lãi của cổ đông FRT.",
+   "tac": [
+    "−4,9 nghìn đ/cp",
+    "mỗi 2 điểm % sở hữu Long Châu"
+   ],
+   "theo_doi": "lợi ích cổ đông thiểu số"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Tồn kho và nợ vay",
+   "ct": "Tồn kho 15.577 tỷ, vay ngắn hạn 14.229 tỷ (30/9); lãi vay quý 3 257 tỷ (+157%), phần lớn bù bằng 230 tỷ thu nhập tài chính từ 11.784 tỷ tiền và đầu tư ngắn hạn.",
+   "tac": "",
+   "theo_doi": "vòng quay tồn kho, chi phí lãi vay ròng"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Chính sách ngành dược",
+   "ct": "Quản lý giá thuốc, kê đơn điện tử, kiểm soát thực phẩm chức năng: đợt siết hàng giả quý 2/2025 làm doanh thu mỗi điểm bán Long Châu giảm 7% so với quý trước.",
+   "tac": "",
+   "theo_doi": "văn bản Bộ Y tế, doanh thu thực phẩm chức năng"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Điểm bán Long Châu cuối quý",
+   "dv": "điểm",
+   "kieu": "cot_chong",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nhà thuốc",
+     "v": [
+      2022,
+      2191,
+      2317,
+      2417,
+      2517,
+      2639,
+      2741
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Trung tâm tiêm chủng",
+     "v": [
+      144,
+      178,
+      203,
+      223,
+      228,
+      236,
+      244
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Mở 571 điểm năm 2025, 345 điểm 9T/2026 (Q3 110; kế hoạch ~450). FPT Shop đứng ở 622 cửa hàng (2023: 755).",
+   "ng": "MAS 16/07 · VDS 09/06 · Shinhan 11/08 · FRT công bố (30/9: 29/10)"
+  },
+  {
+   "ten": "Long Châu: doanh thu mỗi điểm bán mỗi tháng",
+   "dv": "tỷ đồng",
+   "kieu": "duong",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Long Châu",
+     "v": [
+      1.26,
+      1.17,
+      1.18,
+      1.25,
+      1.28,
+      1.31,
+      1.37
+     ],
+     "mau": "c3",
+     "net": false
+    }
+   ],
+   "so_le": 2,
+   "y": "Long Châu đi lên đều sau đáy quý 2/2025 (đợt siết hàng giả), Q3/26 +16%. FPT Shop 2,36 → 2,94 tỷ/cửa hàng/tháng (Q3/25 → Q3/26), chủ yếu nhờ giá. Tự tính: doanh thu ÷ số điểm bán bình quân ÷ 3.",
+   "ng": "ACBS 24/08 · Q3/26: FRT công bố 9T (29/10) · số điểm bán: MAS, VDS, Shinhan, FRT"
+  },
+  {
+   "ten": "LNST Long Châu và phần thiểu số",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "LNST Long Châu",
+     "v": [
+      231,
+      185,
+      218,
+      269,
+      358,
+      450,
+      489
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Cổ đông thiểu số",
+     "v": [
+      45,
+      39,
+      47,
+      59,
+      87,
+      109,
+      119
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Biên LNST 2,9% → 4,1%; phần thuộc cổ đông thiểu số tăng từ 19% lên 24% LNST Long Châu sau 2 đợt Creador góp vốn. Q3/26 LNST Long Châu ước = thiểu số ÷ 24,3%.",
+   "ng": "ACBS 24/08 · BCTC hợp nhất (VNDirect)"
+  },
+  {
+   "ten": "Long Châu: biên gộp và chi phí BH&QL",
+   "dv": "% doanh thu",
+   "kieu": "duong",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      23.3,
+      23.1,
+      23.2,
+      23.8,
+      23.8,
+      23.8
+     ],
+     "mau": "c3",
+     "net": false
+    },
+    {
+     "ten": "Chi phí BH&QL",
+     "v": [
+      19.4,
+      20.0,
+      20.0,
+      20.4,
+      19.6,
+      18.8
+     ],
+     "mau": "c2",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Khoảng cách giữa hai đường — biên hoạt động — nới từ 3,9 lên 5,0 điểm % trong 6 quý; nguồn chính là chi phí chậm lại khi bớt mở mới. FRT chưa tách biên gộp từng chuỗi cho Q3.",
+   "ng": "ACBS 24/08"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 59500,
+    "th": 48273,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 17/4 · BCTC Q3"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 1550,
+    "th": 1724,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 17/4 · BCTC Q3"
+   },
+   {
+    "ten": "Long Châu mở mới điểm bán",
+    "kh": 450,
+    "th": 345,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "điểm",
+    "ng": "ĐHĐCĐ 17/4 · FRT công bố 29/10"
+   }
+  ],
+  "y": "LNTT 9 tháng 1.724 tỷ (+114%), đã 111% kế hoạch — kế hoạch đặt thấp so với đà thực tế; mô hình cho LNTT cả năm 2.420 tỷ, gấp 1,6 lần kế hoạch. Doanh thu 9T 81% kế hoạch.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-08-24",
+   "kn": "KHẢ QUAN",
+   "tp": 158800,
+   "ln26": 1415,
+   "ln27": 1741,
+   "pp": "DCF + P/E",
+   "y": "Nâng dự phóng LNST 2026 thêm 33% lên 1.850 tỷ (+88%) sau 6 tháng; sau 2026 kỳ vọng ~20%/năm khi nền Long Châu cao hơn. Giá mục tiêu hạ 5% vì chi phí vốn tăng.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/20260824_cap_nhat_frt_kha_quan.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-08-11",
+   "kn": "MUA",
+   "tp": 167300,
+   "ln26": 1188,
+   "ln27": 1490,
+   "pp": "SOTP: DCF từng chuỗi",
+   "y": "Long Châu 39,3 nghìn tỷ theo DCF (WACC 11,1%), FRT sở hữu 72%; FPT Shop 1,6 nghìn tỷ. Rủi ro: đòn bẩy cao, cầu ICT yếu, giảm giá hàng tồn kho.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/frt_mua_gia_mt_vnd_167_300_22_ket_qua_kinh_doanh_phu_hop_voi_ky_vong.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-07-16",
+   "kn": "MUA",
+   "tp": 150000,
+   "ln26": 1074,
+   "ln27": 1454,
+   "pp": "SOTP: DCF từng chuỗi",
+   "y": "Báo cáo lần đầu; Long Châu ~92% giá trị doanh nghiệp. Thận trọng với FPT Shop (doanh thu 2026 +6,4%) vì Apple tăng giá và nền 2H/2025 cao.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/ctcp_ban_le_ky_thuat_so_fpt_frt_mua_gmt_150_000_tang_truong_tu_vi_the_dan_dau.pdf"
+  },
+  {
+   "ctck": "VDS",
+   "ngay": "2026-06-09",
+   "kn": "MUA",
+   "tp": 170000,
+   "ln26": 1150,
+   "ln27": 1718,
+   "pp": "SOTP: DCF, EV/EBITDA cuối kỳ 8 · 10 lần",
+   "y": "Long Châu mở ~400 nhà thuốc, 50–55 trung tâm tiêm chủng năm 2026; tăng trưởng cửa hàng cũ chậm lại 1–2 điểm %. Giá mục tiêu tính trên 170,3 triệu cp, trước cổ tức cổ phiếu 5%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/ong_luc_tang_truong_uoc_cung_co.pdf"
+  },
+  {
+   "ctck": "DSC",
+   "ngay": "2026-05-18",
+   "kn": "MUA",
+   "tp": 180000,
+   "ln26": null,
+   "ln27": null,
+   "pp": "P/S 0,52 lần",
+   "y": "Dự phóng LNST 2026 1.122 tỷ (+14%, gồm cổ đông thiểu số). Long Châu là động lực chính; FPT Shop phục hồi nhưng chịu giá RAM, lạm phát. Giá mục tiêu trước cổ tức cổ phiếu 5%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/_Khoi_au_tich_cuc.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. LN 2026F, 2027F là LN cổ đông công ty mẹ. Giá mục tiêu VDS (09/06), DSC (18/05) tính trên 170,3 triệu cp — trang tự quy đổi theo cổ tức cổ phiếu 5% (GDKHQ 29/6/2026). FRT không chi cổ tức tiền mặt.",
+ "nguon": [
+  {
+   "ten": "Tin nhanh Chứng khoán — FRT 9 tháng: doanh thu 48.273 tỷ, Long Châu 33.408 tỷ, 2.741 nhà thuốc",
+   "ngay": "29/10/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/fpt-retail-frt-ghi-nhan-doanh-thu-48273-ty-dong-sau-9-thang-tang-33-so-voi-cung-ky-post400447.html"
+  },
+  {
+   "ten": "Vietstock — FPT Retail tăng trưởng 33% doanh thu sau 9 tháng",
+   "ngay": "10/2026",
+   "link": "https://vietstock.vn/2026/10/fpt-retail-tang-truong-33-doanh-thu-sau-9-thang-tiep-tuc-nang-cao-hieu-qua-van-hanh-737-1508833.htm"
+  },
+  {
+   "ten": "Người Quan sát — KQKD quý III/2026 ngày 30/10 (FRT LNST 559 tỷ)",
+   "ngay": "30/10/2026",
+   "link": "https://nguoiquansat.vn/cap-nhat-kqkd-quy-iii-2026-ngay-30-10-mwg-frt-bao-loi-nhuan-tang-manh-mot-doanh-nghiep-bat-dong-san-lai-but-pha-1-400-325233.html"
+  },
+  {
+   "ten": "ACBS — Cập nhật FRT",
+   "ngay": "24/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/20260824_cap_nhat_frt_kha_quan.pdf"
+  },
+  {
+   "ten": "Shinhan — Kết quả kinh doanh phù hợp với kỳ vọng",
+   "ngay": "11/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/frt_mua_gia_mt_vnd_167_300_22_ket_qua_kinh_doanh_phu_hop_voi_ky_vong.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Tăng trưởng từ vị thế dẫn đầu",
+   "ngay": "16/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/ctcp_ban_le_ky_thuat_so_fpt_frt_mua_gmt_150_000_tang_truong_tu_vi_the_dan_dau.pdf"
+  },
+  {
+   "ten": "VDS (Rồng Việt) — Động lực tăng trưởng được củng cố",
+   "ngay": "09/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/ong_luc_tang_truong_uoc_cung_co.pdf"
+  },
+  {
+   "ten": "DSC — Khởi đầu tích cực",
+   "ngay": "18/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/FRT/_Khoi_au_tich_cuc.pdf"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — chốt quyền cổ tức cổ phiếu 5%",
+   "ngay": "06/2026",
+   "link": "https://thitruongtaichinhtiente.vn/fpt-retail-chot-ngay-nhan-co-tuc-bang-co-phieu-ty-le-5-83527.html"
+  },
+  {
+   "ten": "Mekong ASEAN — thu gần 900 tỷ từ bán cổ phần Long Châu (BCTC Q2/2025)",
+   "ngay": "07/2025",
+   "link": "https://mekongasean.vn/fpt-retail-bao-lai-tang-manh-thu-gan-900-ty-dong-tu-ban-co-phan-long-chau-44392.html"
+  },
+  {
+   "ten": "DNSE — ĐHĐCĐ 2025: Creador mua tối đa 13% Long Châu",
+   "ngay": "04/2025",
+   "link": "https://www.dnse.com.vn/senses/tin-tuc/dhdcd-frt-lo-dien-doi-tac-vua-co-tien-vua-co-kinh-nghiem-cua-long-chau-35040316"
+  },
+  {
+   "ten": "24hmoney — Long Châu được định giá 1,3 tỷ USD",
+   "ngay": "2025",
+   "link": "https://24hmoney.vn/news/chuoi-nha-thuoc-long-chau-duoc-dinh-gia-1-3-ty-usd-c1a2618951"
+  },
+  {
+   "ten": "The Leader — Long Châu 6 tháng 2025: 2.191 nhà thuốc, 178 trung tâm",
+   "ngay": "07/2025",
+   "link": "https://theleader.vn/fpt-retail-lai-lon-nho-chu-luc-long-chau-d41360.html"
+  },
+  {
+   "ten": "Mekong ASEAN — 9 tháng 2025: 2.317 nhà thuốc, 203 trung tâm",
+   "ngay": "10/2025",
+   "link": "https://mekongasean.vn/fpt-retail-lap-ky-luc-doanh-thu-quy-co-hon-6000-ty-dong-tien-mat-48077.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — ĐHĐCĐ 2026: mở rộng chọn lọc, tiêm chủng hòa vốn cấp cửa hàng",
+   "ngay": "04/2026",
+   "link": "https://nhadautu.vn/fpt-retail-long-chau-se-mo-rong-chon-loc-mang-vac-xin-da-hoa-von-cap-cua-hang-d104372.html"
+  },
+  {
+   "ten": "Báo Pháp luật — ĐHĐCĐ 2026: doanh thu mục tiêu 59.500 tỷ",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-2026-fpt-retail-frt-chot-muc-tieu-doanh-thu-59-500-ty-dong-dua-hon-30-loai-thuoc-hiem-the-gioi-ve-viet-nam.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "GNI bình quân đầu người tăng 12,1%/năm giai đoạn 2020–2025; tuổi trung vị dân số lên 34,4 (2020: 32) — nhu cầu chăm sóc sức khỏe tăng dài hạn.",
+     "ng": "Euromonitor, theo MAS 16/07"
+    },
+    {
+     "h": -1,
+     "t": "Chi tiêu y tế hộ gia đình chỉ tăng 1,9%/năm 2021–2025, tỷ trọng trong GDP giảm từ 3,18% xuống 2,14% — tăng trưởng của chuỗi chủ yếu là giành thị phần.",
+     "ng": "MAS 16/07"
+    },
+    {
+     "h": 0,
+     "t": "“Lạm phát chip”: giá thiết bị ICT +10–20% so với cùng kỳ (laptop +2%/tháng từ 4/2025) — đẩy doanh thu FPT Shop nhưng ăn vào sức mua.",
+     "ng": "VDS 09/06 · DSC 18/05"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Bán lẻ kênh nhà thuốc ~290 nghìn tỷ (2025), dự báo +5,2%/năm đến 2030; ~85% doanh số vẫn thuộc nhà thuốc nhỏ lẻ (~39 nghìn cửa hàng).",
+     "ng": "Euromonitor, theo MAS 16/07"
+    },
+    {
+     "h": 1,
+     "t": "Pháp lý nghiêng về chuỗi: Luật Dược sửa đổi (7/2025) công nhận chuỗi nhà thuốc và bán thuốc trực tuyến; Nghị định 90/2026 tăng phạt bán thuốc kê đơn không đơn.",
+     "ng": "MAS 16/07"
+    },
+    {
+     "h": -1,
+     "t": "ICT bão hòa: số máy bán ra đi xuống, giá trị thị trường tăng nhờ giá; Apple tăng giá 20–30% một số thiết bị từ 7/2026.",
+     "ng": "Euromonitor, Bloomberg, theo MAS 16/07"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Long Châu ~11% thị phần (2025); 2.417 nhà thuốc cuối 2025 ≈ 70% số cửa hàng của 3 chuỗi lớn nhất (Pharmacity 952).",
+     "ng": "MAS 16/07"
+    },
+    {
+     "h": 0,
+     "t": "Creador (Malaysia) vào Long Châu từ 4/2025 với tối đa 13% (một nửa cổ phần mới, một nửa mua lại của cổ đông cá nhân); FRT vẫn kiểm soát.",
+     "ng": "DNSE 04/2025 · Mekong ASEAN"
+    },
+    {
+     "h": 0,
+     "t": "FPT Shop chuyển từ mở rộng sang hiệu quả: 755 cửa hàng (2023) còn 621; thêm điện máy (dưới 10% doanh thu), mạng di động ảo FPT, laptop độc quyền.",
+     "ng": "MAS 16/07 · Shinhan 11/08 · VDS 09/06"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Long Châu — nhà thuốc và tiêm chủng",
+   "phu": "FRT hưởng ~75,7% lợi nhuận (Creador ~13%) · ~93% LNTT hợp nhất",
+   "so": [
+    [
+     "Điểm bán 30/9",
+     "2.985",
+     "2.741 nhà thuốc + 244 TTTC"
+    ],
+    [
+     "Doanh thu 9T",
+     "33.408 tỷ",
+     "+36%"
+    ],
+    [
+     "LNST 9T (Q3 ước)",
+     "~1.297 tỷ",
+     "+105%"
+    ],
+    [
+     "Biên LNST Q3",
+     "~4,1%",
+     "cùng kỳ 2,5%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Nhóm ngoài thuốc (thực phẩm chức năng, thiết bị y tế, dược mỹ phẩm) ~45% doanh thu; cùng chiết khấu mua hàng theo quy mô, đưa biên gộp từ 17,1% (2020) lên 23,4% (2025).",
+     "ng": "MAS 16/07"
+    },
+    {
+     "t": "Chi phí nhân viên ~60% chi phí hoạt động (~12% doanh thu); nhân sự mỗi cửa hàng giảm từ ~11 (2021) xuống 7,75 (2025).",
+     "ng": "MAS 16/07"
+    },
+    {
+     "t": "Doanh thu cửa hàng cũ ~+10% ở Q1/2026 nhưng doanh thu bình quân mỗi điểm chỉ +1,3%: điểm mới ở tỉnh nhỏ kéo bình quân xuống.",
+     "ng": "MAS 16/07"
+    },
+    {
+     "t": "Chuỗi đầu tiên tích hợp VNeID; đưa về hơn 30 loại thuốc thế hệ mới, thuốc hiếm năm 2026 để tăng doanh thu mỗi điểm bán.",
+     "ng": "DSC 18/05 · ĐHĐCĐ 2026"
+    }
+   ]
+  },
+  {
+   "ten": "FPT Shop — điện thoại, laptop, điện máy",
+   "phu": "FPT Shop, F.Studio (Apple) · FRT sở hữu 100%",
+   "so": [
+    [
+     "Cửa hàng 30/9",
+     "622",
+     "2023: 755"
+    ],
+    [
+     "Doanh thu 9T",
+     "14.865 tỷ",
+     "+29%"
+    ],
+    [
+     "Doanh thu/cửa hàng/tháng Q3",
+     "2,94 tỷ",
+     "+24%"
+    ],
+    [
+     "LNST 9T (gồm khác)",
+     "~88 tỷ",
+     "biên 0,6%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "iPhone là nhóm hàng chủ lực: điện thoại Apple tại Việt Nam +38% giá trị ở Q1/2026, laptop +29% vì khách tích trữ trước đợt thiếu RAM (GfK).",
+     "ng": "VDS 09/06"
+    },
+    {
+     "t": "Doanh thu bình quân dưới ~6,2 tỷ/cửa hàng/quý thường không đủ bù chi phí; quý 3/2026 đạt ~8,8 tỷ.",
+     "ng": "MAS 16/07 · tự tính"
+    },
+    {
+     "t": "Thêm TV, điện máy, gia dụng, mạng di động ảo FPT MVNO và laptop giá rẻ độc quyền để giữ lượng khách khi điện thoại bão hòa.",
+     "ng": "Shinhan 11/08 · VDS 09/06"
+    }
+   ]
+  }
+ ]
+}

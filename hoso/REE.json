@@ -1,0 +1,1473 @@
+{
+ "v": 2,
+ "ma": "REE",
+ "ten": "Công ty Cổ phần Cơ điện lạnh",
+ "nganh": "Điện, nước, văn phòng cho thuê, cơ điện (đa ngành)",
+ "ky": "BCTC Q2/2026 · BCTC Q3/2026 của CHP, PPC, SHP · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "cp_trieu": 623.4,
+ "cp_ng": "Vốn điều lệ 30/6/2026 (622,9 triệu cp, sau cổ tức cổ phiếu 15% tháng 5/2026) + 0,5 triệu cp ESOP 8/2026",
+ "co_tuc": [
+  [
+   "2026-02-26",
+   1000,
+   "Cổ tức 2025 đợt 1, 10% tiền mặt (trước đợt chia 15% bằng cổ phiếu)"
+  ]
+ ],
+ "tieu_de": {
+  "t": "El Nino sẽ lấy nửa lãi thủy điện đầu 2027 — giá hiện chỉ ngang giá trị, chưa có biên an toàn",
+  "dk": "up_duoi:12",
+  "khac": "El Nino sẽ lấy nửa lãi thủy điện đầu 2027, nhưng giá đã chiết khấu nhiều hơn mức đó"
+ },
+ "dong_mo": "LN 6T/2026 +9% nhờ giá điện thị trường, M&E và nước. Mô hình: 2026E 2.619 tỷ (+4%), 2027E 2.536 tỷ (−3%) vì hồ cạn sau El Nino — thấp hơn bình quân CTCK 6% và 18%. Định giá từng phần cho {gt} ({up}); cán cân lên/xuống {rr} lần. Đáy lợi nhuận rơi vào BCTC 6T/2027.",
+ "luan_diem": [
+  {
+   "so": "−55%",
+   "nhan": "LN thủy điện 6T/2027, kịch bản cơ sở",
+   "tieu": "El Nino: lãi thủy điện chạm đáy nửa đầu 2027",
+   "t": "IRI: xác suất El Nino 77–100% đến 4/2027. Hai lần khô hạn gần nhất, lãi 8 công ty thủy điện (theo tỷ lệ REE nắm hiện nay) nửa đầu năm sau giảm 51% (2020) và 76% (2024), rồi hồi +30%, +25% ở nửa cuối. Mô hình: 6T/2027 −55%, cả năm thủy & nhiệt điện −16% còn ~880 tỷ. Giá CGM 7T +36% chỉ bù một phần khi hồ cạn.",
+   "ng": "BCTC 8 công ty (VNDirect) × sở hữu MBS 16/06 · KBSV 15/09 · mô hình"
+  },
+  {
+   "so": "+9%",
+   "nhan": "LN cổ đông 6T/2026",
+   "tieu": "2026 còn tăng nhờ giá điện, M&E và nước",
+   "t": "6T/2026 LN 1.346 tỷ: thủy điện +12% dù sản lượng −10% (giá thị trường +30%); M&E lãi gấp đôi nhờ hoàn nhập dự phòng, ký mới 5.865 tỷ — gấp 1,5 lần cả năm 2025; văn phòng +16%, nước +18% (Sông Đà giai đoạn 2). Nửa cuối thủy điện yếu đi: mô hình Q3 699 tỷ (+4%), Q4 574 tỷ (−7%), cả năm 93% kế hoạch.",
+   "ng": "SHS 30/07 · KBSV 15/09 · mô hình"
+  },
+  {
+   "so": "{con_pct}",
+   "nhan": "vốn hóa REE là cổ phần 6 công ty điện niêm yết (giá hôm nay)",
+   "tieu": "Phần còn lại được trả {pe_conlai} lần LN 2027E",
+   "t": "VSH 53%, TMP 43%, SBH 26%, TBC 60%, CHP 24%, PPC 23% tính theo giá thị trường. Phần còn lại — 182.000 m² văn phòng, ~240 MW gió, mặt trời giá FIT, gió Duyên Hải 48 MW và 128 MW mới, cổ phần nước, M&E — được trả {pe_conlai} lần LN 2027E. Gió mới: 696–802 tỷ doanh thu/năm nhưng năm đầu lãi mỏng vì vay ~4.200 tỷ; Phú Cường 200 MW chỉ phát điện từ Q4/2027.",
+   "ng": "MBS 16/06 · SHS 30/07 · giá VNDirect"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Định giá từng phần: {up_so} so với giá hiện tại",
+   "t": "Thủy & nhiệt điện × 12 lần LN 2027E (lãi đáy; trung vị lịch sử VSH, CHP, TBC, SBH 11–12,7), gió-mặt trời × 11, gió mới theo vốn góp, văn phòng × 13, nước × 10, M&E & khác × 8. Cơ sở ≈ P/B 1,3 vốn chủ cuối 2026E (trung vị từ 2015: 1,43). Xấu 39,3: hồ cạn như 2024, P/B ~1,1; tốt 59,1.",
+   "ng": "mô hình · P/E, P/B: BCTC VNDirect"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   2529,
+   2619,
+   2536
+  ],
+  "ln_truoc": 1992,
+  "eps": [
+   4057,
+   4201,
+   4068
+  ],
+  "bv": [
+   33600,
+   36923,
+   39991
+  ],
+  "co_tuc_nam": 1000,
+  "them": [
+   {
+    "ten": "ROE",
+    "v": [
+     12.7,
+     11.9,
+     10.6
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC; EPS, BVPS theo 623,4 triệu cp hiện tại; cổ tức tiền mặt 10%/năm"
+ },
+ "sotp": {
+  "con": [
+   {
+    "ma": "VSH",
+    "ten": "Thủy điện Vĩnh Sơn – Sông Hinh",
+    "cp_trieu": 236.2,
+    "so_huu": 0.53,
+    "ln26": 860,
+    "ln27": 651,
+    "mau": "c2"
+   },
+   {
+    "ma": "TMP",
+    "ten": "Thủy điện Thác Mơ",
+    "cp_trieu": 70.0,
+    "so_huu": 0.43,
+    "ln26": 322,
+    "ln27": 259,
+    "mau": "c3"
+   },
+   {
+    "ma": "SBH",
+    "ten": "Thủy điện Sông Ba Hạ",
+    "cp_trieu": 124.2,
+    "so_huu": 0.26,
+    "ln26": 465,
+    "ln27": 493,
+    "mau": "c4"
+   },
+   {
+    "ma": "TBC",
+    "ten": "Thủy điện Thác Bà",
+    "cp_trieu": 63.5,
+    "so_huu": 0.6,
+    "ln26": 209,
+    "ln27": 159,
+    "mau": "c3"
+   },
+   {
+    "ma": "CHP",
+    "ten": "Thủy điện miền Trung",
+    "cp_trieu": 157.7,
+    "so_huu": 0.24,
+    "ln26": 301,
+    "ln27": 273,
+    "mau": "c4"
+   },
+   {
+    "ma": "PPC",
+    "ten": "Nhiệt điện Phả Lại",
+    "cp_trieu": 326.2,
+    "so_huu": 0.23,
+    "ln26": 250,
+    "ln27": 250,
+    "mau": "c3"
+   }
+  ],
+  "conlai": {
+   "ten": "Văn phòng, gió, mặt trời, nước, M&E, thủy điện nhỏ",
+   "mau": "c1",
+   "ln27": 1733
+  },
+  "kv_ng": "Sở hữu theo MBS 16/06/2026; số cp theo vốn điều lệ 30/6/2026; cả 6 mã giao dịch rất mỏng (dưới 1 tỷ đồng/phiên). LN 2026E–2027E của từng công ty: ước của trang theo cùng giả định thủy văn",
+  "ng": "Giá sống từng mã; LN 2027E cơ sở của trang"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng theo mảng (LN phần REE)",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Điện"
+   },
+   {
+    "ten": "Thủy & nhiệt điện, 9 công ty niêm yết (tỷ)",
+    "v": [
+     1082,
+     1048,
+     880
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "— trong đó thủy điện 6 tháng đầu năm (tỷ)",
+    "v": [
+     437,
+     488,
+     220
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Gió, mặt trời, bán lẻ, REE Energy (tỷ)",
+    "v": [
+     330,
+     298,
+     343
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Văn phòng & BĐS"
+   },
+   {
+    "ten": "Văn phòng cho thuê (tỷ)",
+    "v": [
+     467,
+     527,
+     559
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "BĐS dân cư & khác (tỷ)",
+    "v": [
+     104,
+     -6,
+     15
+    ]
+   },
+   {
+    "nhom": "Nước, M&E"
+   },
+   {
+    "ten": "Nước (tỷ)",
+    "v": [
+     371,
+     415,
+     440
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "M&E (tỷ)",
+    "v": [
+     164,
+     229,
+     250
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Khác: tiền gửi, cổ tức, chi phí công ty mẹ (tỷ)",
+    "v": [
+     11,
+     108,
+     50
+    ]
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "LN cổ đông REE (tỷ)",
+    "v": [
+     2529,
+     2619,
+     2536
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     4057,
+     4201,
+     4068
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     33600,
+     36923,
+     39991
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     12.7,
+     11.9,
+     10.6
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "Thủy & nhiệt điện = LN 9 công ty niêm yết × tỷ lệ REE nắm (MBS 16/06); 6T/2026 ra 527 tỷ, khớp SHS (528). Mảng 2025: MBS 16/06 (năm), SHS 30/07 (6 tháng); hai nguồn chia mảng lệch vài chục tỷ nên gộp \"khác\". 2026E = 6T thực tế + Q3, Q4 ước (CHP, PPC, SHP đã có Q3)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông REE 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   2619
+  ],
+  "cuoi": [
+   "2027E",
+   2536
+  ],
+  "buoc": [
+   [
+    "Thủy & nhiệt điện",
+    -169
+   ],
+   [
+    "Gió, mặt trời, bán lẻ",
+    45
+   ],
+   [
+    "Văn phòng & BĐS",
+    53
+   ],
+   [
+    "Nước",
+    25
+   ],
+   [
+    "M&E & khác",
+    -37
+   ]
+  ],
+  "y": "Thủy & nhiệt điện mất 169 tỷ — lớn hơn phần tăng của gió, văn phòng và nước cộng lại; \"khác\" giảm khi tiền gửi chuyển vào dự án gió.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Lãi thủy điện Q3 · Q4/2026 so cùng kỳ",
+   "v": [
+    "−20% · −40%",
+    "−10% · −25%",
+    "0% · −10%"
+   ],
+   "ly_do": "Q3 đã ra: CHP −15%, SHP +3%. Nửa cuối 2023 (El Nino bắt đầu) −43%; KBSV: mưa Tây Nguyên – Nam Bộ cuối 2026 thấp hơn trung bình 20–40%"
+  },
+  {
+   "ten": "Lãi thủy điện 6T/2027 · 6T cuối 2027",
+   "v": [
+    "−70% · 0%",
+    "−55% · +20%",
+    "−35% · +35%"
+   ],
+   "ly_do": "6T/2020 −51%, 6T/2024 −76%; nửa cuối 2020, 2024 +30%, +25%. IRI: El Nino đến 4/2027; giá CGM cao bù một phần"
+  },
+  {
+   "ten": "LN Phả Lại (100%) Q4/2026 · 2027",
+   "v": [
+    "40 · 150",
+    "80 · 250",
+    "120 · 330"
+   ],
+   "ly_do": "9T/2026 170 tỷ (Q3 chỉ 4 tỷ); 2025 165, 2024 427. El Nino huy động nhiệt điện cao nhưng tổ máy cũ, chi phí than"
+  },
+  {
+   "ten": "Gió mới 128 MW: vận hành · LN 2027",
+   "v": [
+    "2H/2027 · 0",
+    "Q1/2027 · 30",
+    "11/2026 · 70"
+   ],
+   "ly_do": "TMĐT 6.121 tỷ, vay ~4.200 tỷ; doanh thu 696–802 tỷ/năm (SHS, KBSV). Ước của trang: khấu hao 20 năm + lãi vay 8% ăn gần hết lãi năm đầu"
+  },
+  {
+   "ten": "LN văn phòng 6T cuối 2026 · 2027",
+   "v": [
+    "+6% · 0%",
+    "+10% · +6%",
+    "+14% · +10%"
+   ],
+   "ly_do": "6T/2026 +15,8%; E.Town 6 lấp đầy 58% (6/2026), KBSV giả định bình quân 68% năm 2026, 85% năm 2027; hạng B TP.HCM trống 12,5%"
+  },
+  {
+   "ten": "Nước 6T cuối 2026 · 2027",
+   "v": [
+    "0% · 0%",
+    "+7% · +6%",
+    "+12% · +10%"
+   ],
+   "ly_do": "6T/2026 +18%: tiêu thụ Hà Nội từ Sông Đà +25% sau giai đoạn 2; nửa cuối 2025 đã có giai đoạn 2 nên nhịp chậm lại"
+  },
+  {
+   "ten": "LN M&E · khác 2027 (tỷ)",
+   "v": [
+    "170 · 0",
+    "250 · 50",
+    "300 · 90"
+   ],
+   "ly_do": "Ký mới 6T 5.865 tỷ; KBSV LN M&E 2027 291, MBS 241. Khác (6T/2026 118) giảm khi tiền gửi góp vốn gió mới, Phú Cường"
+  },
+  {
+   "ten": "P/E thủy & nhiệt · gió, mặt trời",
+   "v": [
+    "13,5 · 11",
+    "12 · 11",
+    "11 · 12"
+   ],
+   "ly_do": "Lãi đáy được trả P/E cao hơn (REE 2024: 15–18 lần); trung vị lịch sử VSH 12,7, CHP 11,6, TBC 11,4, SBH 11,1, TMP 9,8; GEG thấp 25% 11,8"
+  },
+  {
+   "ten": "P/E văn phòng · nước · M&E",
+   "v": [
+    "13 · 10 · 7,5",
+    "13 · 10 · 8",
+    "14 · 11 · 9"
+   ],
+   "ly_do": "Văn phòng: tỷ suất vốn hóa 8% (MBS) ~18 lần LN; nước: BWE thấp 25% 9,8, trung vị 11,9, MBS 10. Kịch bản xấu không hạ thêm bội số mảng ổn định"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 2403,
+   "ln27": 1956,
+   "gia": 39.3,
+   "mo_ta": "Hồ cạn như 2024: thủy điện 6T/2027 −70%, nửa cuối không hồi; gió mới chậm sang 2H/2027; M&E trích dự phòng; P/E thủy điện 13,5 (lãi đáy), mảng khác giữ"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 2619,
+   "ln27": 2536,
+   "gia": 48.3,
+   "mo_ta": "Thủy điện Q4/2026 −25%, 6T/2027 −55%, nửa cuối +20%; gió mới từ Q1/2027; văn phòng +6%; P/E thủy điện 12, văn phòng 13, nước 10"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 2806,
+   "ln27": 3085,
+   "gia": 59.1,
+   "mo_ta": "El Nino nhẹ: 6T/2027 −35%, nửa cuối +35%; gió mới từ 11/2026; M&E lãi 300 tỷ; P/E thủy điện 11, văn phòng 14, nước 11"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo từng phần",
+  "phu": "P/E × LN 2027E từng mảng; gió mới theo vốn góp",
+  "ck": 0,
+  "cp": 623.4,
+  "phan": [
+   {
+    "ten": "Thủy & nhiệt điện niêm yết",
+    "mau": "c1",
+    "x": [
+     611,
+     880,
+     1169
+    ],
+    "boi": [
+     13.5,
+     12,
+     11
+    ],
+    "sh": 1,
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "gt": [
+     8248,
+     10560,
+     12859
+    ]
+   },
+   {
+    "ten": "Gió, mặt trời, bán lẻ điện",
+    "mau": "c1",
+    "x": [
+     278,
+     313,
+     348
+    ],
+    "boi": [
+     11,
+     11,
+     12
+    ],
+    "sh": 1,
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "gt": [
+     3058,
+     3443,
+     4176
+    ]
+   },
+   {
+    "ten": "Gió mới 128 MW",
+    "mau": "c1",
+    "x": [
+     1836,
+     1836,
+     1836
+    ],
+    "boi": [
+     0.8,
+     1.0,
+     1.2
+    ],
+    "x_ten": "vốn góp",
+    "boi_ten": "P/B",
+    "sh": 1,
+    "gt": [
+     1469,
+     1836,
+     2203
+    ]
+   },
+   {
+    "ten": "Văn phòng & BĐS",
+    "mau": "c2",
+    "x": [
+     497,
+     574,
+     640
+    ],
+    "boi": [
+     13,
+     13,
+     14
+    ],
+    "sh": 1,
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "gt": [
+     6461,
+     7462,
+     8960
+    ]
+   },
+   {
+    "ten": "Nước",
+    "mau": "c3",
+    "x": [
+     400,
+     440,
+     468
+    ],
+    "boi": [
+     10,
+     10,
+     11
+    ],
+    "sh": 1,
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "gt": [
+     4000,
+     4400,
+     5148
+    ]
+   },
+   {
+    "ten": "M&E & khác",
+    "mau": "c4",
+    "x": [
+     170,
+     300,
+     390
+    ],
+    "boi": [
+     7.5,
+     8,
+     9
+    ],
+    "sh": 1,
+    "x_ten": "LN 2027E",
+    "boi_ten": "P/E",
+    "gt": [
+     1275,
+     2400,
+     3510
+    ]
+   }
+  ],
+  "von": [
+   24511,
+   30101,
+   36856
+  ],
+  "gia": [
+   39.3,
+   48.3,
+   59.1
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.39,
+   1.25,
+   1.2,
+   1.19,
+   1.21,
+   1.29,
+   1.4,
+   1.18,
+   1.15,
+   1.23,
+   1.13,
+   1.12,
+   1.12,
+   1.04,
+   1.04,
+   1.0,
+   1.04,
+   1.03,
+   1.04,
+   0.99,
+   1.06,
+   1.04,
+   1.05,
+   1.17,
+   1.22,
+   1.09,
+   1.18,
+   1.2,
+   1.4,
+   1.64,
+   1.65,
+   1.49,
+   1.49,
+   1.45,
+   1.6,
+   1.67,
+   1.72,
+   1.49,
+   1.45,
+   1.39,
+   1.29,
+   1.25,
+   1.38,
+   1.31,
+   1.35,
+   1.15,
+   1.12,
+   1.09,
+   1.19,
+   1.1,
+   1.06,
+   1.06,
+   1.11,
+   1.08,
+   1.11,
+   1.19,
+   1.24,
+   1.22,
+   1.13,
+   1.13,
+   1.06,
+   1.02,
+   0.81,
+   0.89,
+   0.96,
+   0.94,
+   0.99,
+   1.09,
+   1.19,
+   1.24,
+   1.39,
+   1.4,
+   1.46,
+   1.54,
+   1.42,
+   1.45,
+   1.52,
+   1.51,
+   1.44,
+   1.67,
+   1.65,
+   1.89,
+   1.75,
+   1.71,
+   1.71,
+   1.76,
+   1.9,
+   1.92,
+   2.39,
+   2.27,
+   1.98,
+   2.15,
+   1.92,
+   1.97,
+   1.78,
+   1.72,
+   1.8,
+   1.56,
+   1.55,
+   1.53,
+   1.59,
+   1.68,
+   1.73,
+   1.57,
+   1.58,
+   1.32,
+   1.39,
+   1.38,
+   1.36,
+   1.45,
+   1.51,
+   1.46,
+   1.72,
+   1.72,
+   1.92,
+   1.82,
+   1.77,
+   1.7,
+   1.74,
+   1.76,
+   1.68,
+   1.8,
+   1.78,
+   1.71,
+   1.73,
+   1.89,
+   1.85,
+   1.8,
+   1.81,
+   1.82,
+   1.74,
+   1.63,
+   1.65,
+   1.6,
+   1.77,
+   1.56,
+   1.56,
+   1.47,
+   1.37,
+   1.31,
+   1.37,
+   1.32
+  ],
+  "p10": 1.05,
+  "p25": 1.18,
+  "tv": 1.43,
+  "thap": [
+   "2020-03",
+   0.81
+  ],
+  "nay": [
+   "2026-10",
+   1.32
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Giá trị cơ sở ≈ P/B 1,3 vốn chủ cuối 2026E — dưới trung vị 1,43 từ 2015; xấu 1,1 (gần mức thấp 10% 1,05), tốt 1,6. Hiện 1,32, bằng 10/2023 khi đợt El Nino trước bắt đầu."
+ },
+ "nhay": [
+  [
+   "Thủy điện 6T/2027 ±20 điểm %",
+   98,
+   1.9
+  ],
+  [
+   "P/E thủy & nhiệt điện ±1 lần",
+   null,
+   1.4
+  ],
+  [
+   "Thủy điện 6T cuối 2027 ±15 điểm %",
+   75,
+   1.4
+  ],
+  [
+   "P/E văn phòng & BĐS ±1 lần",
+   null,
+   0.9
+  ],
+  [
+   "LN M&E 2027 ±50 tỷ",
+   50,
+   0.6
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    596,
+    699,
+    785
+   ],
+   "ck": 674
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    461,
+    574,
+    675
+   ],
+   "ck": 620
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    2403,
+    2619,
+    2806
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "Cuối 10/2026",
+   "loai": "hai",
+   "tieu": "BCTC Q3/2026",
+   "ct": "Mô hình Q3 699 tỷ (+4%): thủy điện −10% (CHP đã ra −15%, SHP +3%). Một bài dự báo trước kỳ (9/10) đưa 679–733 tỷ.",
+   "tac": [
+    "≥ 700 tỷ",
+    "giữ kịch bản cơ sở; dưới 600 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "LN Q3, LN thủy điện VSH, SBH"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Gió Duyên Hải 2 & 3 (128 MW) phát điện",
+   "ct": "Mục tiêu vận hành 30/10/2026, đang đàm phán giá điện; 350–404 triệu kWh, 696–802 tỷ doanh thu/năm.",
+   "tac": [
+    "+0,7 nghìn đ/cp",
+    "nếu vận hành từ 11/2026 (LN 2027 70 thay vì 30 tỷ)"
+   ],
+   "theo_doi": "ngày vận hành thương mại, giá bán"
+  },
+  {
+   "khi": "Q4/26–Q2/27",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "El Nino làm cạn hồ thủy điện",
+   "ct": "IRI: El Nino 77–100% đến 4/2027. 6T/2024 lãi thủy điện −76% — nếu lặp lại, 6T/2027 mất thêm ~70 tỷ so với cơ sở.",
+   "tac": [
+    "−1,4 nghìn đ/cp",
+    "nếu 6T/2027 −70% thay vì −55%"
+   ],
+   "theo_doi": "mực nước hồ, lượng mưa Tây Nguyên"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "hai",
+   "tieu": "Giá thị trường điện (CGM)",
+   "ct": "CGM 7T/2026 +36%, tháng 7 1.250 đ/kWh (+96%): thủy điện 6T lãi +12% dù sản lượng −10%; PPC (23%) được huy động cao khi khô hạn.",
+   "tac": "",
+   "theo_doi": "giá CGM tháng"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "M&E biến backlog kỷ lục thành lợi nhuận",
+   "ct": "Ký mới 6T 5.865 tỷ (Trung tâm dữ liệu An Khánh, sân bay Long Thành, Phú Quốc); mục tiêu cả năm 7.000–8.000 tỷ (SHS).",
+   "tac": [
+    "+0,6 nghìn đ/cp",
+    "nếu LN M&E 2027 300 thay vì 250 tỷ"
+   ],
+   "theo_doi": "doanh thu, ký mới M&E"
+  },
+  {
+   "khi": "Q4 hằng năm",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Dự phòng phải thu M&E",
+   "ct": "Trích lập bình quân 423 tỷ/năm trước đây; phải thu ròng cuối 2025 còn 58,6 tỷ (KBSV). Thị trường BĐS cao cấp yếu kéo dài thời gian thu tiền.",
+   "tac": [
+    "−1,3 nghìn đ/cp",
+    "mỗi 100 tỷ dự phòng mới (P/E 8)"
+   ],
+   "theo_doi": "phải thu M&E, chi phí quản lý Q4"
+  },
+  {
+   "khi": "Q4/2027",
+   "loai": "len",
+   "tieu": "Phú Cường 1A & 1B (200 MW) phát điện",
+   "ct": "TMĐT 9.140 tỷ, REE nắm 99,99%; 560 triệu kWh, ~1.110 tỷ doanh thu/năm từ 2028 — chưa có trong LN 2027E.",
+   "tac": "",
+   "theo_doi": "tiến độ trạm 220 kV, đường dây"
+  },
+  {
+   "khi": "2026–2028",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "The Light Square bán chậm",
+   "ct": "Thấp tầng mới bán 8/45 căn, 6T/2026 lỗ 6 tỷ; bàn giao dời sang 2026–2028. Mảng nhỏ so với văn phòng.",
+   "tac": "",
+   "theo_doi": "số căn bàn giao"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "hai",
+   "tieu": "Chuyển giao lãnh đạo, room ngoại đầy",
+   "ct": "Bà Mai Thanh rời HĐQT (ĐHĐCĐ bất thường 10/7); Platinum Victory (259,8 triệu cp, 41,7%) đăng ký mua thêm ~20,5 triệu cp ba đợt 6–9/2026, không mua được; sở hữu ngoại 49%.",
+   "tac": "",
+   "theo_doi": "giao dịch cổ đông lớn, kế hoạch vốn"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi thủy điện 6 tháng đầu năm (phần REE)",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "ss": [
+    {
+     "ten": "6 tháng đầu năm",
+     "v": [
+      213,
+      104,
+      278,
+      677,
+      611,
+      145,
+      437,
+      488
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Sau hai lần khô hạn, 6T/2020 −51%, 6T/2024 −76%; 6T/2026 +12% nhờ hồ đầy sau 2025 và giá điện thị trường cao. Mô hình 6T/2027 −55%.",
+   "ng": "BCTC 8 công ty thủy điện (VNDirect) × tỷ lệ REE nắm hiện nay (MBS 16/06)"
+  },
+  {
+   "ten": "Sản lượng điện 6 tháng theo nguồn",
+   "dv": "triệu kWh",
+   "kieu": "cot",
+   "nhan": [
+    "Thủy điện",
+    "Nhiệt điện",
+    "Gió",
+    "Mặt trời"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2025",
+     "v": [
+      2730,
+      1972,
+      196,
+      152
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "6T/2026",
+     "v": [
+      2470,
+      2531,
+      219,
+      154
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Thủy điện −10% (Q2 −23%), nhiệt điện Phả Lại +28%: khô hạn chuyển sản lượng sang nhiệt điện, nhưng REE chỉ nắm 23% PPC.",
+   "ng": "KBSV 15/09 (100% sản lượng các nhà máy)"
+  },
+  {
+   "ten": "M&E: ký mới và doanh thu",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Ký mới",
+    "Doanh thu"
+   ],
+   "ss": [
+    {
+     "ten": "Cả năm 2025",
+     "v": [
+      3811,
+      3520
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "6T/2026",
+     "v": [
+      5865,
+      1552
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Ký mới 6T/2026 gấp 1,5 lần cả năm 2025; doanh thu 6T +18%. Backlog chuyển sang 2026 5.913 tỷ (MBS).",
+   "ng": "KBSV 15/09 · MBS 16/06"
+  },
+  {
+   "ten": "LN cổ đông theo mảng, 6 tháng",
+   "dv": "tỷ đồng",
+   "kieu": "cot",
+   "nhan": [
+    "Điện",
+    "VP & BĐS",
+    "Nước",
+    "M&E, khác"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2025",
+     "v": [
+      652,
+      320,
+      161,
+      103
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "6T/2026",
+     "v": [
+      695,
+      254,
+      190,
+      207
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "BĐS −21% vì cùng kỳ có bán một tòa chung cư Bồ Xuyên (~160 tỷ doanh thu); văn phòng riêng +16%.",
+   "ng": "SHS 30/07 (BCTC hợp nhất 6T/2026)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu hợp nhất",
+    "kh": 12230,
+    "th": 4897,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · SHS 30/07"
+   },
+   {
+    "ten": "LNST cổ đông",
+    "kh": 2814,
+    "th": 1346,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC"
+   },
+   {
+    "ten": "Doanh thu M&E (+33%)",
+    "kh": 4682,
+    "th": 1552,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "MBS 16/06 · KBSV 15/09"
+   }
+  ],
+  "y": "LN 6T đạt 47,8% kế hoạch, doanh thu 40% vì M&E dồn cuối năm. Mô hình cả năm 93% kế hoạch: nửa cuối thủy điện yếu.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-09-15",
+   "kn": "MUA",
+   "tp": 58100,
+   "ln26": 2777,
+   "ln27": 2899,
+   "pp": "SOTP (DCF điện, tỷ suất văn phòng), chiết khấu 10%",
+   "y": "Thủy điện 2026–2027 doanh thu −6%/−3% vì El Nino; M&E doanh thu +28%/+15%, LN M&E 252/291 tỷ; E.Town 6 lấp đầy 68%/85%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/REE/20260915_ctcp_co_dien_lanh_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-08-07",
+   "kn": "MUA",
+   "tp": 60800,
+   "ln26": 2777,
+   "ln27": null,
+   "pp": "P/E, P/B",
+   "y": "Giá CGM +30% bù sản lượng thủy điện −9,5% ở 6T; gió Duyên Hải 2 & 3 vận hành 30/10/2026; P/E 2026F 10,7.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/REE/bao_cao_ngan_ctcp_co_dien_lanh_ree_vn_mua_but_toc_dien_gio_vung_vang_vuot_el_nino.pdf"
+  },
+  {
+   "ctck": "SHS",
+   "ngay": "2026-07-30",
+   "kn": "TĂNG TỶ TRỌNG",
+   "tp": 70300,
+   "ln26": null,
+   "ln27": null,
+   "pp": "SOTP",
+   "y": "Chia LN theo mảng 6T; Phú Cường 200 MW đẩy sớm lên Q4/2027; Nam Bộ 3 (500 MW ngoài khơi) xin chủ trương Q4/2026.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/REE/ree_cap_nhat_kqkd_quy_2_2026.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-06-16",
+   "kn": "KHẢ QUAN",
+   "tp": 63400,
+   "ln26": 2767,
+   "ln27": 3304,
+   "pp": "SOTP (DCF thủy điện con, P/E 11 liên kết)",
+   "y": "Sản lượng thủy điện 2026 −9,2%, 2027 +5% — lạc quan hơn trang về 2027; văn phòng định giá tỷ suất vốn hóa 8%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/REE/ree_bcpt_vung_vang_truoc_kho_khan.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Giá mục tiêu ghi đúng số trong báo cáo (SHS 70.300, MBS 63.400; Simplize ghi 70.200, 63.300).",
+ "nguon": [
+  {
+   "ten": "KBSV — REE cập nhật 2Q2026",
+   "ngay": "15/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/REE/20260915_ctcp_co_dien_lanh_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Bứt tốc điện gió, vững vàng vượt El Nino",
+   "ngay": "07/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/REE/bao_cao_ngan_ctcp_co_dien_lanh_ree_vn_mua_but_toc_dien_gio_vung_vang_vuot_el_nino.pdf"
+  },
+  {
+   "ten": "SHS — Cập nhật KQKD Q2/2026 (LN theo mảng)",
+   "ngay": "30/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/REE/ree_cap_nhat_kqkd_quy_2_2026.pdf"
+  },
+  {
+   "ten": "MBS — Vững vàng trước khó khăn (SOTP, sở hữu)",
+   "ngay": "16/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/REE/ree_bcpt_vung_vang_truoc_kho_khan.pdf"
+  },
+  {
+   "ten": "Thời báo Tài chính — kế hoạch 2026",
+   "ngay": "2026",
+   "link": "https://thoibaotaichinhvietnam.vn/ree-dat-muc-tieu-loi-nhuan-hon-2800-ty-dong-trong-nam-2026-193995.html"
+  },
+  {
+   "ten": "Doanh nhân — chốt quyền cổ tức tiền mặt 10% (GDKHQ 26/02/2026)",
+   "ngay": "02/2026",
+   "link": "https://doanhnhan.baophapluat.vn/co-dien-lanh-ree-lai-rong-2025-lap-dinh-lich-su-chot-quyen-chia-co-tuc-tien-mat.html"
+  },
+  {
+   "ten": "Doanh nhân — phát hành 81,2 triệu cp trả cổ tức 15%",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/co-dien-lanh-ree-bao-lai-quy-i-2026-tang-hai-chu-so-sap-phat-hanh-hon-81-trieu-co-phieu-tra-co-tuc.html"
+  },
+  {
+   "ten": "Doanh nhân — ESOP 500.000 cp giá 10.000 đ",
+   "ngay": "2026",
+   "link": "https://doanhnhan.baophapluat.vn/co-dien-lanh-ree-muon-phat-hanh-500-000-co-phieu-esop-cho-nhan-su-chu-chot.html"
+  },
+  {
+   "ten": "Doanh nhân — Platinum Victory mua hụt 20,5 triệu cp",
+   "ngay": "09/2026",
+   "link": "https://doanhnhan.baophapluat.vn/co-dien-lanh-ree-quy-ngoai-platinum-victory-tiep-tuc-mua-hut-20-5-trieu-co-phieu-hoan-tat-phan-phoi-co-phieu-esop.html"
+  },
+  {
+   "ten": "Doanh nhân — hai công ty con điện gió 6.121 tỷ",
+   "ngay": "2025",
+   "link": "https://doanhnhan.baophapluat.vn/ree-lap-hai-cong-ty-con-trien-khai-cac-du-an-dien-gio-6121-ty-dong-tai-vinh-long-87788.html"
+  },
+  {
+   "ten": "VietnamFinance — góp hơn 1.800 tỷ vào hai công ty gió",
+   "ngay": "2025",
+   "link": "https://vietnamfinance.vn/ree-don-von-hon-1800-ty-lap-hai-cong-ty-con-ve-nang-luong-tai-tao-d134277.html"
+  },
+  {
+   "ten": "24hmoney — giá CGM 7 tháng 2026",
+   "ngay": "08/2026",
+   "link": "https://24hmoney.vn/news/pow-nt2-san-luong-7t-tang-truong-manh-gia-cgm-cao-nt-3-4-duy-tri-tich-cuc-c30a2823174.html"
+  },
+  {
+   "ten": "Elibook — dự báo LN Q3/2026 trước kỳ",
+   "ngay": "09/10/2026",
+   "link": "https://elibook.vn/2026/10/09/ree-loi-nhuan-quy-3-nganh-dien-lai-gap-doi-con-ree-them-9-nguoi-nha-mua-vao-khi-quy-ngoai-dung-tay/"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "IRI: El Nino 77–100% từ 8/2026 đến 4/2027; mưa Tây Nguyên – Nam Bộ cuối 2026 dự báo thấp hơn trung bình 20–40%.",
+     "ng": "KBSV 15/09"
+    },
+    {
+     "h": 1,
+     "t": "Giá thị trường điện 7T/2026 +36%: khô hạn đẩy nhiệt điện lên biên, thủy điện còn nước bán được giá cao.",
+     "ng": "24hmoney"
+    },
+    {
+     "h": 1,
+     "t": "Đầu tư công 2026 kế hoạch giải ngân hơn 790.000 tỷ, ưu tiên sân bay và trung tâm dữ liệu — nguồn việc cho M&E.",
+     "ng": "Mirae Asset 07/08"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Quy hoạch điện VIII điều chỉnh (QĐ 768/QĐ-TTg) ưu tiên gió, mặt trời; REE nhắm 3.000 MW đến 2030 (hiện ~1,3–1,4 GW).",
+     "ng": "Mirae Asset · SHS"
+    },
+    {
+     "h": 0,
+     "t": "Văn phòng TP.HCM Q2/2026: hạng A trống 16,7%, hạng B 12,5% (+0,6 điểm % so với quý trước) — nhu cầu chững.",
+     "ng": "KBSV 15/09"
+    },
+    {
+     "h": 1,
+     "t": "Nước: tiêu thụ Hà Nội từ nguồn Sông Đà +25% sau khi nhà máy hoàn thành giai đoạn 2; VCW dự kiến tăng đôi công suất.",
+     "ng": "SHS 30/07"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 0,
+     "t": "Ông Nguyễn Ngọc Thái Bình làm Tổng Giám đốc từ 5/2026; ông Lee Liang Whye (Platinum Victory) làm Chủ tịch; bà Mai Thanh chủ trì Ủy ban Chiến lược.",
+     "ng": "SHS 30/07"
+    },
+    {
+     "h": 1,
+     "t": "Đòn bẩy thấp: nợ vay 30/6/2026 ~10.200 tỷ, tiền và đầu tư ngắn hạn ~7.400 tỷ.",
+     "ng": "BCTC Q2/2026"
+    },
+    {
+     "h": -1,
+     "t": "Cổ phần thiểu số ở CHP (24%), SBH (26%), PPC (23%), TMP (43%): REE không quyết định cổ tức hay đầu tư của các công ty này.",
+     "ng": "MBS 16/06"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Điện",
+   "phu": "Theo sở hữu: thủy điện 584 MW, nhiệt điện 239 MW, gió – mặt trời giá FIT 205 MW (MBS 16/06); thêm gió Duyên Hải 48 MW (70%) từ 3/2026",
+   "so": [
+    [
+     "LN 6T/2026",
+     "695 tỷ",
+     "+6,7%"
+    ],
+    [
+     "Sản lượng thủy điện 6T",
+     "2.470 triệu kWh",
+     "−10%"
+    ],
+    [
+     "Gió mới 128 MW",
+     "vận hành 30/10/2026",
+     "mục tiêu"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Thủy điện 6T lãi +11,6% nhờ giá thị trường +30% và chi phí tài chính giảm, dù sản lượng −9,5%.",
+     "ng": "SHS 30/07"
+    },
+    {
+     "t": "Trà Khúc 2 (30 MW, 120 triệu kWh/năm) vận hành cuối 2026 – đầu 2027, bán theo biểu giá chi phí tránh được.",
+     "ng": "SHS 30/07"
+    },
+    {
+     "t": "Dự án điện mặt trời nổi ~1.000 MW trên hồ Thác Mơ, Trị An, Sông Hinh, Thác Bà đang xin phê duyệt.",
+     "ng": "SHS 30/07 · MBS 16/06"
+    }
+   ]
+  },
+  {
+   "ten": "Văn phòng & BĐS",
+   "phu": "182.000 m² văn phòng cho thuê (E.town, Cộng Hòa); The Light Square (Hưng Yên)",
+   "so": [
+    [
+     "Doanh thu VP 6T",
+     "628 tỷ",
+     "+13,1%"
+    ],
+    [
+     "LN VP 6T",
+     "260 tỷ",
+     "+15,8%"
+    ],
+    [
+     "Lấp đầy E.Town 6",
+     "58%",
+     "6/2026"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Toàn danh mục lấp đầy 91–92%; tháp tài chính 99 tầng Thủ Thiêm (REE 43%) vẫn ở giai đoạn đề xuất.",
+     "ng": "SHS 30/07"
+    }
+   ]
+  },
+  {
+   "ten": "Nước và M&E",
+   "phu": "Cổ phần 20–44% các công ty nước: sản xuất (Sông Đà, Thủ Đức), phân phối TP.HCM, Khánh Hòa; REE M&E và thương mại",
+   "so": [
+    [
+     "LN nước 6T",
+     "190 tỷ",
+     "+18%"
+    ],
+    [
+     "LN M&E 6T",
+     "89 tỷ",
+     "gấp 2,1 lần"
+    ],
+    [
+     "Ký mới M&E 6T",
+     "5.865 tỷ",
+     "kỷ lục"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Sản lượng nước xử lý 6T 260,7 triệu m³ (+5,8%), phân phối 151,3 triệu m³ (+5,1%).",
+     "ng": "SHS 30/07"
+    },
+    {
+     "t": "Sân bay Long Thành (REE thầu phụ) đã khởi động lại sau thanh tra phía chủ đầu tư.",
+     "ng": "SHS 30/07"
+    }
+   ]
+  }
+ ]
+}

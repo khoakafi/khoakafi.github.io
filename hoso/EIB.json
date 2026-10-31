@@ -1,0 +1,1535 @@
+{
+ "v": 2,
+ "ma": "EIB",
+ "ten": "Ngân hàng TMCP Xuất Nhập khẩu Việt Nam (Eximbank)",
+ "nganh": "Ngân hàng",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026",
+ "cp_trieu": 1862.7,
+ "cp_ng": "1.862,7 triệu cp lưu hành (Vietcap 15/04; MAS 03/04: 1.863): vốn điều lệ 18.688 tỷ = 1.868,8 triệu cp, trừ ~6,1 triệu cp quỹ (không nhận cổ tức cổ phiếu 2022–2024)",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Q3 lãi 144 tỷ, dư nợ co 19% trong một quý: giá trên sổ sách đang trả trước cho tái cấu trúc EIB",
+  "dk": "up_duoi:0",
+  "khac": "Dư nợ co 19%, ROE 2027E 3,2%: giá đã về quanh sổ sách, phép thử là bộ máy mới đưa tín dụng tăng trở lại"
+ },
+ "dong_mo": "Ở giá 16,1 (30/10), EIB giao dịch 1,13 lần giá sổ sách — ngang ACB, CTG có ROE 16–22% — trong khi LN cổ đông Q3 chỉ 144 tỷ (−68%), dư nợ co 36,2 nghìn tỷ trong một quý và nợ nhóm 2 tăng ~50%. Cơ sở: LNTT 2026E 545 tỷ (~36% kế hoạch), ROE 2027E 3,2%; P/B 1,0 × vốn chủ 30/6/2027E cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "−68%",
+   "nhan": "LN cổ đông Q3/2026 so với cùng kỳ",
+   "tieu": "Q3 bác bỏ kịch bản phục hồi: 144 tỷ, thấp hơn 45% mô hình cũ",
+   "t": "Dự phòng Q3 chỉ 199 tỷ (mô hình cũ ~400) nhưng lãi thuần 1.090 tỷ (−22% so với Q2, NIM quý ~1,82%) khi dư nợ co lại; chi phí hoạt động +3,6% so với cùng kỳ dù đã cắt hơn 500 nhân sự. 9T: LNTT 864 tỷ (−58%), đạt 57% kế hoạch 1.515 tỷ. Q4 mùa chi phí cao — Q4/2025 lỗ trước thuế 537 tỷ; cơ sở Q4/2026 lỗ trước thuế ~320 tỷ → LNTT 2026E 545 tỷ. LN 2027E 868 tỷ (cũ 1.476), ROE 2027E 3,2% (cũ 5,4%).",
+   "ng": "BCTC Q3 · kinhtechungkhoan, CafeF 31/10 · ĐHĐCĐ 28/4 · mô hình"
+  },
+  {
+   "so": "−19,2%",
+   "nhan": "dư nợ cho vay trong Q3/2026",
+   "tieu": "Bảng cân đối co lại: dư nợ −36,2, tiền gửi −12,3 nghìn tỷ trong một quý",
+   "t": "Dư nợ 30/9 151,9 nghìn tỷ (−17,6% từ đầu năm, kế hoạch +16,5%); tiền gửi khách hàng 158,3 nghìn tỷ (−10,7%); tổng tài sản −24,6 nghìn tỷ; dư nợ/tiền gửi về 96% từ 110%. Ngân hàng chưa giải thích công khai (chủ động cắt khoản vay lợi suất thấp/rủi ro, hay bán, chuyển nợ), nhưng hệ quả thấy ngay: lãi thuần mất một phần năm. Cơ sở: dư nợ Q4 +3%, 2027 +10% từ nền thấp; NIM 2027E 2,10%; mỗi 10 điểm cơ bản NIM ≈ ±1,5 nghìn đ/cp.",
+   "ng": "BCTC Q3 (VNDirect) · kinhtechungkhoan 31/10 · mô hình"
+  },
+  {
+   "so": "5,65%",
+   "nhan": "nợ nhóm 2–5 / dư nợ 30/9/2026 (cuối 2025: 4,05%)",
+   "tieu": "Nợ xấu giảm trên sổ, nợ nhóm 2 tăng ~50%: áp lực dồn sang 2027",
+   "t": "Nợ nhóm 3–5 suy ra ~3.980 tỷ (~2,6% dư nợ; 30/6: 5.794 tỷ, 3,08%) trong khi chỉ ~392 tỷ dự phòng dùng xử lý nợ trong Q3 — phần giảm còn lại đến từ thu hồi, bán nợ hoặc nợ quay về nhóm 2, chưa có thuyết minh. Nhóm 2 hơn 4.600 tỷ (~3,0% dư nợ). Quỹ dự phòng 1.644 tỷ (1,08% dư nợ), bao phủ ~41%. Cơ sở: dự phòng Q4 550 tỷ, chi phí tín dụng 2027 0,85%; mỗi 0,1 điểm % ≈ ±1,0 nghìn đ/cp.",
+   "ng": "BCTC Q3 · kinhtechungkhoan 31/10 (một nguồn) · Tạp chí Kinh tế Tài chính 7/2026"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 1,0 × vốn chủ giữa 2027: {up_so}",
+   "t": "Giá 16,1 (30/10) = 1,13 lần sổ sách 30/9; với r 14%, g 7%, mức này ngầm định ROE dài hạn ~15% — EIB mới đạt một lần (15,4% năm 2022). Q3 hạ ROE 2027E từ 5,4% xuống 3,2% nhưng giá trị cơ sở chỉ giảm 14,8 → 14,4 vì định giá neo vốn chủ: P/B 1,0 ≈ thấp 10% từ 2015 (1,02). Xấu 11,0 (P/B 0,8, lỗ 2027); tốt 19,6 (P/B 1,3 ≈ trung vị ngành) cần ROE lên ~9% hoặc đối tác chiến lược — room ngoại vừa mở từ 6% lên 30%.",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect · bảng cùng ngành 30/10"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1137,
+   414,
+   868
+  ],
+  "ln_truoc": 3327,
+  "eps": [
+   610,
+   222,
+   466
+  ],
+  "bv": [
+   13962,
+   14164,
+   14629
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "ROE (%)",
+    "v": [
+     4.4,
+     1.6,
+     3.2
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2024–2025: BCTC. EPS, BVPS theo 1.862,7 triệu cp lưu hành. Không chia cổ tức năm 2025 (ĐHĐCĐ 28/4/2026, giữ ~3.400 tỷ lợi nhuận chưa phân phối); giả định không chia tiền 2026–2027."
+ },
+ "ln_mang": {
+  "tieu": "Thu nhập hoạt động theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "thu nhập hoạt động",
+  "ss": [
+   {
+    "ten": "Lãi thuần",
+    "mau": "c1",
+    "v": [
+     5980,
+     4966,
+     5183
+    ]
+   },
+   {
+    "ten": "Ngoài lãi",
+    "mau": "c3",
+    "v": [
+     1312,
+     1056,
+     1320
+    ]
+   }
+  ],
+  "ng": "Lãi thuần chiếm ~82% thu nhập (2025 và 2026E); ngoài lãi yếu: phí dịch vụ ròng 2025 chỉ 241 tỷ (−78%), 9T/2026 ngoài lãi −29%. 2025A: BCTC, MAS; 2026E–2027E: mô hình."
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: nguồn vốn → NIM → lợi nhuận",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Tín dụng và thu nhập"
+   },
+   {
+    "ten": "Dư nợ cho vay (nghìn tỷ)",
+    "v": [
+     184.2,
+     156.4,
+     172.1
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "NIM (%)",
+    "v": [
+     2.48,
+     2.02,
+     2.1
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Thu nhập lãi thuần (tỷ)",
+    "v": [
+     5980,
+     4966,
+     5183
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Thu nhập ngoài lãi (tỷ)",
+    "v": [
+     1312,
+     1056,
+     1320
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí hoạt động (tỷ)",
+    "v": [
+     4253,
+     3930,
+     4009
+    ]
+   },
+   {
+    "ten": "CIR (%)",
+    "v": [
+     58.3,
+     65.3,
+     61.6
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Dự phòng và nợ xấu"
+   },
+   {
+    "ten": "Chi phí dự phòng (tỷ)",
+    "v": [
+     1526,
+     1547,
+     1396
+    ]
+   },
+   {
+    "ten": "Chi phí tín dụng (% dư nợ bq)",
+    "v": [
+     0.87,
+     0.91,
+     0.85
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Nợ xấu (%)",
+    "v": [
+     2.86,
+     2.9,
+     2.8
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Bao phủ nợ xấu (%)",
+    "v": [
+     43.9,
+     43,
+     49
+    ]
+   },
+   {
+    "nhom": "Lợi nhuận và vốn"
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     1512,
+     545,
+     1098
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     1137,
+     414,
+     868
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     13962,
+     14164,
+     14629
+    ]
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     4.4,
+     1.6,
+     3.2
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "2025A: BCTC; nợ xấu, bao phủ: MAS. 2026E = 9T thực tế (BCTC Q3) + Q4 ước. NIM = lãi thuần ÷ 94,5% tổng tài sản bình quân (khớp 2,48% của MAS cho 2025); tổng tài sản giữ 1,59 lần dư nợ như 30/9. Xử lý nợ bằng dự phòng 0,6% dư nợ/năm; không chia cổ tức tiền."
+ },
+ "gia_dinh": [
+  {
+   "ten": "Tín dụng Q4/2026 · 2027",
+   "v": [
+    "−2% · +5%",
+    "+3% · +10%",
+    "+7% · +15%"
+   ],
+   "ly_do": "Q3 −19,2% (−36,2 nghìn tỷ), 9T −17,6%; tiền gửi 9T −10,7%, dư nợ/tiền gửi 96%. Kế hoạch +16,5% không còn khả thi; hệ thống 9T +11,6% (MBS). 2027 tăng từ nền thấp (cũ +7 / +11 / +15%)"
+  },
+  {
+   "ten": "NIM Q4/2026",
+   "v": [
+    "1,70%",
+    "1,90%",
+    "2,10%"
+   ],
+   "ly_do": "Q1 2,15%, Q2 2,20%, Q3 1,82% (lãi thuần −22% so với Q2); lãi huy động ở vùng cao đến ~Q2/2027 (MBS 16/10); CASA 14,1%"
+  },
+  {
+   "ten": "NIM 2027",
+   "v": [
+    "1,90%",
+    "2,10%",
+    "2,40%"
+   ],
+   "ly_do": "Cũ 2,15 / 2,35 / 2,60%. 2025 2,48%, 2026E 2,02%. Dư nợ chỉ còn 63% tổng tài sản (30/6: 71%) nên NIM tính trên tổng tài sản thấp hơn; tốt: dư nợ quay lại, bỏ khoản vay lợi suất thấp"
+  },
+  {
+   "ten": "Ngoài lãi Q4/2026 · 2027",
+   "v": [
+    "150 tỷ · +5%",
+    "230 tỷ · +25%",
+    "320 tỷ · +50%"
+   ],
+   "ly_do": "Q1 148, Q2 426, Q3 253 tỷ; Q4/2025 152 tỷ. 9T −29%. Vietcap 2026F ngoài lãi +22%, MAS +69%"
+  },
+  {
+   "ten": "Chi phí hoạt động Q4/2026 · 2027",
+   "v": [
+    "1.300 tỷ · +3%",
+    "1.100 tỷ · +2%",
+    "1.000 tỷ · −3%"
+   ],
+   "ly_do": "9T 2.830 tỷ (−1,9%; Q3 +3,6%) dù cắt hơn 500 nhân sự; Q4 mùa vụ cao: Q4/2024 967, Q4/2025 1.369 tỷ. CIR 2025 58,3%, 9T/2026 60,3%"
+  },
+  {
+   "ten": "Dự phòng Q4/2026",
+   "v": [
+    "900 tỷ",
+    "550 tỷ",
+    "300 tỷ"
+   ],
+   "ly_do": "9T 997 tỷ (Q3 199); Q4/2025 1.011 tỷ. Nợ nhóm 2 hơn 4.600 tỷ (+50% trong Q3), bao phủ ~41%"
+  },
+  {
+   "ten": "Chi phí tín dụng 2027",
+   "v": [
+    "1,10%",
+    "0,85%",
+    "0,60%"
+   ],
+   "ly_do": "2024 0,59% (MAS), 2025 0,87%, 9T/2026 0,79%/năm; Vietcap 2026F 0,9%. 30% nợ nhóm 2 chuyển xấu và trích đủ ≈ 0,59 nghìn đ/cp"
+  },
+  {
+   "ten": "P/B (× vốn chủ 30/6/2027E)",
+   "v": [
+    "0,8",
+    "1,0",
+    "1,3"
+   ],
+   "ly_do": "Hiện 1,13. Từ 2015: thấp 10% 1,02, trung vị 1,35; 2015–2018 (ROE ≤ 6%) 0,83–1,39. P/B 1,0 ⇔ ROE dài hạn = chi phí vốn 14%. Giữ nguyên sau Q3; như hồ sơ GEX"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": -186,
+   "ln27": -436,
+   "gia": 11.0,
+   "mo_ta": "Dư nợ Q4 −2% / 2027 +5%, NIM 2027 1,90%, chi phí tín dụng 1,1%, Q4 dự phòng 900 tỷ; lỗ 2026–2027, CIR 79%; P/B 0,8 (đáy 12/2016: 0,83)"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 414,
+   "ln27": 868,
+   "gia": 14.4,
+   "mo_ta": "Dư nợ Q4 +3% / 2027 +10%, NIM 2,10%, chi phí tín dụng 0,85%, CIR 62%; Q4 lỗ trước thuế ~320 tỷ; ROE 2027 3,2%; P/B 1,0"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 866,
+   "ln27": 2572,
+   "gia": 19.6,
+   "mo_ta": "Dư nợ Q4 +7% / 2027 +15%, NIM 2,40%, chi phí tín dụng 0,6%, CIR 46%; ROE 2027 9,2%; P/B 1,3 ≈ trung vị ngành (1,25)"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ 30/6/2027E",
+  "ck": 0,
+  "cp": 1862.7,
+  "phan": [
+   {
+    "ten": "Vốn chủ 30/6/2027E",
+    "mau": "c1",
+    "x": [
+     25564,
+     26816,
+     28121
+    ],
+    "boi": [
+     0.8,
+     1.0,
+     1.3
+    ],
+    "x_ten": "mô hình",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     20451,
+     26816,
+     36557
+    ]
+   }
+  ],
+  "von": [
+   20451,
+   26816,
+   36557
+  ],
+  "gia": [
+   11.0,
+   14.4,
+   19.6
+  ]
+ },
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.16,
+   1.16,
+   1.15,
+   1.13,
+   1.15,
+   1.11,
+   1.16,
+   0.99,
+   1.02,
+   1.01,
+   0.89,
+   0.95,
+   0.89,
+   0.91,
+   0.92,
+   0.93,
+   1.22,
+   1.08,
+   1.11,
+   1.05,
+   0.96,
+   0.95,
+   0.88,
+   0.83,
+   0.89,
+   0.98,
+   1.07,
+   1.03,
+   1.08,
+   1.17,
+   1.05,
+   1.09,
+   1.12,
+   1.02,
+   1.12,
+   1.13,
+   1.39,
+   1.34,
+   1.21,
+   1.31,
+   1.22,
+   1.22,
+   1.18,
+   1.16,
+   1.17,
+   1.13,
+   1.11,
+   1.14,
+   1.36,
+   1.45,
+   1.46,
+   1.41,
+   1.44,
+   1.52,
+   1.46,
+   1.35,
+   1.31,
+   1.31,
+   1.34,
+   1.39,
+   1.4,
+   1.35,
+   1.15,
+   1.18,
+   1.32,
+   1.36,
+   1.27,
+   1.32,
+   1.3,
+   1.31,
+   1.28,
+   1.43,
+   1.25,
+   1.33,
+   1.48,
+   2.02,
+   2.38,
+   2.2,
+   1.92,
+   1.81,
+   1.69,
+   1.61,
+   1.92,
+   2.36,
+   2.62,
+   2.35,
+   2.56,
+   2.08,
+   2.22,
+   2.14,
+   2.01,
+   1.97,
+   2.22,
+   2.4,
+   1.35,
+   1.72,
+   1.6,
+   1.3,
+   1.37,
+   1.37,
+   1.42,
+   1.49,
+   1.47,
+   1.8,
+   1.46,
+   1.37,
+   1.25,
+   1.26,
+   1.28,
+   1.41,
+   1.43,
+   1.4,
+   1.52,
+   1.44,
+   1.38,
+   1.38,
+   1.52,
+   1.61,
+   1.34,
+   1.39,
+   1.34,
+   1.59,
+   1.45,
+   1.41,
+   1.65,
+   1.66,
+   1.96,
+   2.13,
+   1.86,
+   1.59,
+   1.55,
+   1.5,
+   1.47,
+   1.68,
+   1.7,
+   1.56,
+   1.51,
+   1.48,
+   1.26,
+   1.22,
+   1.2,
+   1.14
+  ],
+  "p10": 1.02,
+  "p25": 1.15,
+  "tv": 1.35,
+  "thap": [
+   "2016-12",
+   0.83
+  ],
+  "nay": [
+   "2026-10",
+   1.14
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,8 · 1,0 · 1,3: cơ sở ≈ thấp 10% từ 2015 (1,02), dưới trung vị giai đoạn ROE thấp 2015–2018 (1,11) vì P/B 1,0 đã tương ứng ROE dài hạn 14% (mức 2024) trong khi mô hình chỉ thấy 3,2% năm 2027; xấu ≈ đáy 12/2016 (0,83); tốt ≈ trung vị ngành hiện nay (1,25)."
+ },
+ "nhay": [
+  [
+   "NIM 2027 ±10 điểm cơ bản",
+   195,
+   1.5
+  ],
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.4
+  ],
+  [
+   "Chi phí tín dụng 2027 ±0,1 điểm %",
+   130,
+   1.0
+  ],
+  [
+   "Ngoài lãi 2027 ±10%",
+   104,
+   0.8
+  ],
+  [
+   "CIR 2027 ±1 điểm %",
+   51,
+   0.4
+  ]
+ ],
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   414
+  ],
+  "cuoi": [
+   "2027E",
+   868
+  ],
+  "buoc": [
+   [
+    "Lãi thuần",
+    171
+   ],
+   [
+    "Ngoài lãi",
+    209
+   ],
+   [
+    "Chi phí hoạt động",
+    -62
+   ],
+   [
+    "Dự phòng",
+    120
+   ],
+   [
+    "Thuế, khác",
+    16
+   ]
+  ],
+  "y": "Lãi thuần (+4%: NIM 2,10% thay 2,02%, dư nợ +10% từ nền đã co) và ngoài lãi hồi từ nền thấp là hai động lực; dự phòng (1.396 tỷ, chi phí tín dụng 0,85%) giảm nhẹ so với 2026E (1.547 tỷ). Cả năm 2027 vẫn chỉ bằng ~26% LN 2024.",
+  "ng": "mô hình"
+ },
+ "so_sanh": {
+  "tieu": "P/B so với ngân hàng niêm yết",
+  "phu": "theo giá hôm nay",
+  "chi_so": "P/B (vốn chủ 30/9/2026)",
+  "chi_so_kv": "P/B (giá 30/10)",
+  "nhom": "12 ngân hàng vốn hóa lớn nhất",
+  "kv": [
+   [
+    "VCB",
+    1.85
+   ],
+   [
+    "BID",
+    1.31
+   ],
+   [
+    "TCB",
+    1.27
+   ],
+   [
+    "VPB",
+    1.24
+   ],
+   [
+    "CTG",
+    1.15
+   ],
+   [
+    "MBB",
+    1.24
+   ],
+   [
+    "HDB",
+    1.76
+   ],
+   [
+    "STB",
+    1.97
+   ],
+   [
+    "ACB",
+    1.19
+   ],
+   [
+    "LPB",
+    2.39
+   ],
+   [
+    "SHB",
+    0.69
+   ],
+   [
+    "MSB",
+    1.17
+   ]
+  ],
+  "tv": 1.25,
+  "moi_cp": 14297,
+  "max": 3,
+  "y": "P/B EIB ngang ACB (1,19), CTG (1,15), MSB (1,17) dù ROE 4 quý chỉ 0,7% so với 14,0–21,9% của ba ngân hàng này. Mã ROE thấp được trả cao duy nhất là STB (ROE 2,5%, P/B 1,97) — thị trường đã tính ROE phục hồi và đấu giá 32,5% cổ phần.",
+  "ng": "BCTC VNDirect, giá 30/10/2026 (vốn hóa ÷ vốn chủ quý gần nhất, CTG và HDB 30/6; bảng cùng ngành); STB: hồ sơ STB"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    -88,
+    261,
+    537
+   ],
+   "ck": 445
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -850,
+    -249,
+    203
+   ],
+   "ck": -472
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    -186,
+    414,
+    866
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "30/10/2026",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "KQKD Q3: LN 144 tỷ, dưới mô hình cũ 45%",
+   "ct": "LNTT 186 tỷ (−67%). Dự phòng thấp hơn dự kiến (199 tỷ) nhưng lãi thuần −22% so với Q2 vì dư nợ co 19,2%. Không phải một lần: bảng cân đối nhỏ hơn kéo cả Q4 và 2027 — LN 2027E 1.476 → 868 tỷ.",
+   "tac": [
+    "−0,4 nghìn đ/cp",
+    "giá trị cơ sở 14,8 → 14,4"
+   ],
+   "theo_doi": "thuyết minh dư nợ, nợ nhóm 2"
+  },
+  {
+   "khi": "01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026: quý mùa chi phí",
+   "ct": "Cơ sở: lỗ trước thuế ~320 tỷ (chi phí hoạt động 1.100 tỷ, dự phòng 550 tỷ); Q4/2025 lỗ trước thuế 537 tỷ. LNTT 2026E 545 tỷ ≈ 36% kế hoạch 1.515 tỷ.",
+   "tac": [
+    "−249 tỷ",
+    "LN cổ đông Q4 cơ sở (tốt 203, xấu −850)"
+   ],
+   "theo_doi": "dư nợ cuối năm, NIM Q4, dự phòng"
+  },
+  {
+   "khi": "Từ 14/10/2026",
+   "loai": "len",
+   "tieu": "Room ngoại mở từ 6% lên 30%",
+   "ct": "ĐHĐCĐ bất thường 14/10 bỏ trần sở hữu nước ngoài 6% do chính EIB đặt năm 2025; khối ngoại hiện ~3,5%. Mở đường vào rổ chỉ số thị trường mới nổi và cho đối tác chiến lược.",
+   "tac": [
+    "+1,4 nghìn đ/cp",
+    "mỗi +0,1 lần P/B"
+   ],
+   "theo_doi": "sở hữu khối ngoại"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "len",
+   "tieu": "Đối tác chiến lược, tăng vốn",
+   "ct": "Mục tiêu vốn hóa 5 tỷ USD năm 2028, khối ngoại ~24% (15% cho đối tác chiến lược). Phát hành trên giá sổ sách nâng BVPS và CAR; chưa có kế hoạch cụ thể.",
+   "tac": [
+    "19,6 nghìn đ/cp",
+    "kịch bản tốt, P/B 1,3"
+   ],
+   "theo_doi": "nghị quyết phát hành"
+  },
+  {
+   "khi": "4/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: chiến lược của bộ máy mới",
+   "ct": "Kế hoạch tín dụng và lợi nhuận 2027 cho biết bảng cân đối co lại ở Q3 là dọn dẹp một lần hay định hướng thu hẹp. Cổ tức: 2025 không chia; cơ sở không chia tiền 2026–2027.",
+   "tac": [
+    "+10%",
+    "tín dụng 2027 cơ sở (xấu +5%, tốt +15%)"
+   ],
+   "theo_doi": "kế hoạch tín dụng, LNTT 2027"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "len",
+   "tieu": "Bộ máy mới, chi phí giảm",
+   "ct": "Chủ tịch Nguyễn Lê Quốc Anh (CEO Techcombank 2016–2020) từ 24/7, cùng 4 thành viên HĐQT độc lập người nước ngoài; cắt hơn 500 nhân sự, nhưng chi phí hoạt động 9T mới −1,9% (Q3 +3,6%).",
+   "tac": [
+    "±0,4 nghìn đ/cp",
+    "mỗi 1 điểm % CIR 2027"
+   ],
+   "theo_doi": "CIR, chiến lược 2026–2030"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Bảng cân đối co lại, NIM chưa thấy đáy",
+   "ct": "Q3 dư nợ −19,2%, tiền gửi −7,2%, NIM quý ~1,82%; CASA ~14%, lãi huy động ở vùng cao đến ~Q2/2027 (MBS). Kịch bản xấu: dư nợ Q4 −2%, NIM 2027 1,90%.",
+   "tac": [
+    "−1,5 nghìn đ/cp",
+    "mỗi 10 điểm cơ bản NIM 2027"
+   ],
+   "theo_doi": "dư nợ, tiền gửi, lãi huy động"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Nợ nhóm 2 tăng ~50%, bao phủ ~41%",
+   "ct": "30/9 nợ nhóm 2–5 5,65% dư nợ (cuối 2025: 4,05%), nhóm 2 hơn 4.600 tỷ. Nếu 30% nhóm 2 chuyển xấu và trích đủ: ~0,59 nghìn đ/cp sau thuế. Kịch bản xấu: Q4 dự phòng 900 tỷ, chi phí tín dụng 2027 1,1%.",
+   "tac": [
+    "−1,0 nghìn đ/cp",
+    "mỗi 0,1 điểm % chi phí tín dụng 2027"
+   ],
+   "theo_doi": "nợ nhóm 2–3, bao phủ"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Quản trị chưa ổn định",
+   "ct": "Hai lần đổi chủ tịch trong 8 tháng (12/2025, 7/2026); 3 Phó TGĐ từ nhiệm (25/5), 3 thành viên HĐQT xin thôi (7/2026, gồm người Gelex đề cử); ĐHĐCĐ thứ ba trong năm ngày 14/10.",
+   "tac": "",
+   "theo_doi": "nhân sự cấp cao"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "hai",
+   "tieu": "Vai trò Gelex",
+   "ct": "Gelex giữ 10% (giá gốc 3.297 tỷ), muốn lên 15% khi luật cho phép; người Gelex đề cử đã rời HĐQT. Hệ sinh thái Gelex — động lực tín dụng, phí Vietcap kỳ vọng — chưa thấy: dư nợ, ngoài lãi 9T đều giảm.",
+   "tac": "",
+   "theo_doi": "giao dịch cổ đông lớn"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "NIM: từ ~3% về 1,8%",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 2,
+   "nhan": [
+    "Q1/23",
+    "Q2/23",
+    "Q3/23",
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "NIM 4 quý",
+     "v": [
+      3.29,
+      3.03,
+      2.63,
+      2.56,
+      2.57,
+      2.72,
+      2.98,
+      2.9,
+      2.77,
+      2.63,
+      2.5,
+      2.48,
+      2.43,
+      2.37,
+      2.25
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "NIM quý",
+     "v": [
+      2.84,
+      2.48,
+      1.93,
+      3.01,
+      2.84,
+      3.08,
+      2.98,
+      2.77,
+      2.34,
+      2.45,
+      2.42,
+      2.71,
+      2.15,
+      2.2,
+      1.82
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "NIM 4 quý từ 3,29% (Q1/2023) về 2,25%: chi phí vốn tăng nhanh hơn lợi suất (2025: +42 so với +16 điểm cơ bản, MAS); NIM quý Q1–Q2/2026 2,15–2,20%, Q3 rơi về 1,82% khi dư nợ co lại.",
+   "ng": "BCTC (VNDirect): lãi thuần ÷ 94,5% tổng tài sản bình quân; chi phí vốn, lợi suất: MAS 03/04"
+  },
+  {
+   "ten": "Q3: dư nợ co 19%, tiền gửi co 7%",
+   "kieu": "cot",
+   "dv": "nghìn tỷ đồng",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền gửi khách hàng",
+     "v": [
+      167.4,
+      175.8,
+      177.3,
+      176.2,
+      177.3,
+      182.1,
+      170.6,
+      158.3
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Dư nợ cho vay",
+     "v": [
+      165.2,
+      180.3,
+      182.7,
+      180.9,
+      184.2,
+      189.3,
+      188.0,
+      151.9
+     ],
+     "mau": "c3"
+    }
+   ],
+   "y": "Dư nợ vượt tiền gửi khách hàng từ Q1/2025 (30/6/2026: 110%); Q3 dư nợ giảm 36,2 nghìn tỷ, tiền gửi 12,3 nghìn tỷ, dư nợ/tiền gửi về 96%. Năm 2025 phần thiếu bù bằng liên ngân hàng (gấp đôi) và giấy tờ có giá (+85%).",
+   "ng": "BCTC; vay liên ngân hàng, giấy tờ có giá 2025: MAS 03/04"
+  },
+  {
+   "ten": "Lợi nhuận trước dự phòng teo dần",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "so_le": 0,
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "LNTT",
+     "v": [
+      832,
+      657,
+      560,
+      -537,
+      338,
+      340,
+      186
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Dự phòng",
+     "v": [
+      127,
+      201,
+      187,
+      1011,
+      319,
+      479,
+      199
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "Tổng cột = lợi nhuận trước dự phòng: 959 tỷ (Q1/2025) → 819 tỷ (Q2/2026) → 385 tỷ (Q3). Q3 dự phòng chỉ lấy 52% (Q1–Q2: 49–58%) mà LNTT vẫn thấp nhất từ Q1/2025 trừ quý lỗ Q4/2025 (−537 tỷ).",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "Nợ xấu giảm trên sổ, dự phòng vẫn mỏng",
+   "kieu": "duong",
+   "dv": "% dư nợ",
+   "so_le": 2,
+   "nhan": [
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Quỹ dự phòng / dư nợ",
+     "v": [
+      1.0,
+      1.09,
+      1.07,
+      1.26,
+      1.16,
+      0.98,
+      1.08
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Nợ xấu (nhóm 3–5)",
+     "v": [
+      1.8,
+      2.65,
+      2.53,
+      2.86,
+      3.07,
+      3.08,
+      2.62
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "Nợ xấu chưa có dự phòng: 0,8 điểm % dư nợ (2022) → 1,5 điểm % (30/9/2026, ~2.340 tỷ ≈ 9% vốn chủ). Nợ xấu 30/9 giảm còn ~2,6% nhưng nhóm 2–5 lên 5,65% (cuối 2025: 4,05%) — nợ nhóm 2 hơn 4.600 tỷ.",
+   "ng": "Dự phòng: BCTC; nợ xấu: MAS 03/04 (2022–2025), Tạp chí Kinh tế Tài chính (Q1, Q2/2026); 30/9: nhóm 2–5 5,65% và nhóm 2 > 4.600 tỷ theo kinhtechungkhoan 31/10, nợ xấu = hiệu hai số (ước tính)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 1515,
+    "th": 864,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 28/4/2026 · BCTC Q3"
+   },
+   {
+    "ten": "Tín dụng (kế hoạch +16,5%)",
+    "kh": 30396,
+    "th": -32350,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 (Vietcap 15/04) · BCTC Q3"
+   }
+  ],
+  "y": "LNTT 9T đạt 57% kế hoạch — kế hoạch đã hạ 63% từ 4.066 tỷ (dự thảo 17/3); cơ sở cả năm 545 tỷ ≈ 36% vì Q4 lỗ. Dư nợ 9T giảm 32.350 tỷ (−17,6%) thay vì tăng 30.396 tỷ; tiền gửi khách hàng −10,7% (kế hoạch huy động +17,8%); nợ xấu mục tiêu 2,5% — 30/9 ~2,6% (ước tính) nhưng nhóm 2 tăng.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "Vietcap",
+   "ngay": "2026-04-15",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "ln26": 1187,
+   "ln27": null,
+   "pp": "không định giá (P/B 2026F 1,6 lần ở giá 23.000)",
+   "y": "Viết trước KQKD Q1: 2026 là năm “tạo nền” — LNST +4%, NIM đi ngang 2,5%, dự phòng +32%, CIR ~58%; động lực là tái cấu trúc, hệ sinh thái Gelex, FTSE; P/B cao hơn trung vị ngành.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/EIB/2026Tao_nen_e_tang_truong_manh_me_sau_tai_cau_truc.pdf"
+  },
+  {
+   "ctck": "MAS",
+   "ngay": "2026-04-03",
+   "kn": "TĂNG TỶ TRỌNG",
+   "tp": 26000,
+   "ln26": 2824,
+   "ln27": 3377,
+   "pp": "thu nhập thặng dư + P/B 1,7 lần 2026F",
+   "y": "Lạc quan nhất: LNTT 2026 3.530 tỷ (+134%) nhờ lãi thuần +25%, NIM 2,74%, phí gấp 3, CIR 49%. Thực tế 9T: LNTT 864 tỷ, NIM Q3 ~1,8%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/EIB/ngan_hang_tmcp_xuat_nhap_khau_viet_nam_eib_vn_tang_ty_trong_tp_vnd26_000_dan_xoay_chuyen_cuc_dien.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — cả hai báo cáo viết trước KQKD Q1/2026 nên dự phóng 2026 đã lệch xa thực tế (MAS: LNTT 2026 3.530 tỷ; 9T thực tế 864 tỷ). Vietcap không khuyến nghị, không nêu giá mục tiêu. Mô hình và định giá của trang ở các phần trên.",
+ "nguon": [
+  {
+   "ten": "Kinh tế Chứng khoán — Eximbank: lợi nhuận giảm sâu, dư nợ tín dụng thu hẹp hơn 36.000 tỷ (BCTC Q3/2026; nợ nhóm 2–5, nhóm 2)",
+   "ngay": "31/10/2026",
+   "link": "https://kinhtechungkhoan.vn/eximbank-eib-loi-nhuan-giam-sau-du-no-tin-dung-thu-hep-hon-36000-ty-dong"
+  },
+  {
+   "ten": "CafeF — Cập nhật lợi nhuận quý 3/2026 của 27 ngân hàng (EIB: LNTT 186 tỷ, −67%)",
+   "ngay": "31/10/2026",
+   "link": "https://cafef.vn/cap-nhat-loi-nhuan-quy-3-2026-cua-27-ngan-hang-sang-31-10-vietcombank-vietinbank-mb-bidv-hdbank-eximbank-188261031075812515.chn"
+  },
+  {
+   "ten": "Vietcap — 2026: Tạo nền để tăng trưởng mạnh mẽ sau tái cấu trúc",
+   "ngay": "15/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/EIB/2026Tao_nen_e_tang_truong_manh_me_sau_tai_cau_truc.pdf"
+  },
+  {
+   "ten": "MAS — Dần xoay chuyển cục diện (Tăng tỷ trọng, 26.000 đ)",
+   "ngay": "03/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/EIB/ngan_hang_tmcp_xuat_nhap_khau_viet_nam_eib_vn_tang_ty_trong_tp_vnd26_000_dan_xoay_chuyen_cuc_dien.pdf"
+  },
+  {
+   "ten": "Mekong ASEAN — ĐHĐCĐ Eximbank: mục tiêu lợi nhuận đi ngang (1.515 tỷ)",
+   "ngay": "28/04/2026",
+   "link": "https://mekongasean.vn/dhdcd-eximbank-muc-tieu-loi-nhuan-di-ngang-bau-bo-sung-3-thanh-vien-hdqt-54592.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Eximbank đặt mục tiêu lợi nhuận tăng 169% (dự thảo 17/3: 4.066 tỷ)",
+   "ngay": "03/2026",
+   "link": "https://mekongasean.vn/eximbank-dat-muc-tieu-loi-nhuan-tang-169-ta-i-sa-n-vuot-300000-ty-do-ng-52781.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Eximbank giữ gần 3.400 tỷ lợi nhuận, không chia cổ tức",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/co-dong-mong-co-tuc-eximbank-van-giu-3400-ty-dong-loi-nhuan-cung-co-nen-tang-54609.html"
+  },
+  {
+   "ten": "Tạp chí Kinh tế Tài chính — Eximbank tăng bộ đệm dự phòng (nợ xấu 30/6: 5.794 tỷ, 3,08%; nhóm 3 +80%)",
+   "ngay": "07/2026",
+   "link": "https://tapchikinhtetaichinh.vn/eximbank-tang-bo-dem-du-phong-loi-nhuan-nua-dau-nam-chiu-suc-ep-163266.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Lợi nhuận Q1/2026 giảm 59% (nợ xấu 3,07%)",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/eximbank-tang-manh-du-phong-loi-nhuan-quy-12026-giam-59-so-voi-cung-ky-54746.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — Eximbank tăng cường trích lập (nợ xấu theo ngân hàng 2,89%)",
+   "ngay": "07/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/eximbank-toi-uu-hieu-qua-hoat-dong-tang-cuong-trich-lap-du-phong-201494.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — ĐHĐCĐ bất thường 24/7: lãi 6 tháng ước 730 tỷ",
+   "ngay": "07/2026",
+   "link": "https://nhadautu.vn/egm-eximbank-lai-6-thang-dat-730-ty-dong-giam-gan-51-d106547.html"
+  },
+  {
+   "ten": "VnExpress — Cựu CEO Techcombank làm Chủ tịch Eximbank",
+   "ngay": "07/2026",
+   "link": "https://vnexpress.net/cuu-ceo-techcombank-lam-chu-tich-eximbank-5101585.html"
+  },
+  {
+   "ten": "VietnamFinance — Eximbank cắt giảm hơn 500 nhân sự sau 6 tháng",
+   "ngay": "08/2026",
+   "link": "https://vietnamfinance.vn/loi-nhuan-sut-giam-eximbank-cat-giam-hon-500-nhan-su-sau-6-thang-d148373.html"
+  },
+  {
+   "ten": "Báo Pháp luật — 3 thành viên HĐQT xin thôi, kiện toàn nhân sự quản trị",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/eximbank-eib-tiep-tuc-trien-khai-cac-noi-dung-nhan-su-quan-tri-theo-dinh-huong-da-duoc-co-dong-thong-qua.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — Biến động nhân sự cấp cao trước ĐHĐCĐ bất thường",
+   "ngay": "06/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/eximbank-bien-dong-nhan-su-cap-cao-truoc-them-dai-hoi-dong-co-dong-bat-thuong-198750.html"
+  },
+  {
+   "ten": "Tạp chí Kinh tế Tài chính — Eximbank bỏ giới hạn sở hữu ngoại 6%",
+   "ngay": "14/10/2026",
+   "link": "https://tapchikinhtetaichinh.vn/eximbank-bo-gioi-han-so-huu-ngoai-6-chu-tich-noi-ve-thach-thuc-quan-tri-169569.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Eximbank điều chỉnh room ngoại, bổ sung nhân sự HĐQT",
+   "ngay": "10/2026",
+   "link": "https://mekongasean.vn/eximbank-dieu-chinh-room-ngoai-bo-sung-nhan-su-hdqt-60631.html"
+  },
+  {
+   "ten": "Nhà Đầu tư — Gelex sẽ tăng sở hữu Eximbank lên 15% khi pháp lý cho phép",
+   "ngay": "04/2026",
+   "link": "https://nhadautu.vn/gelex-se-tang-so-huu-tai-eximbank-len-15-khi-dieu-kien-phap-ly-cho-phep-d103973.html"
+  },
+  {
+   "ten": "MBS — SHB: gặp gỡ nhà đầu tư 10/2026 (lãi suất, tín dụng hệ thống 9T)",
+   "ngay": "16/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/SHB/20261016_shb_bao_cao_gap_go_nha_dau_tu_thang_10_2026_cap_nhat_kqkd_so_bo_9t26_trien_vong_nam_2026.pdf"
+  },
+  {
+   "ten": "LuatVietnam — Luật Các tổ chức tín dụng 2024 (giới hạn sở hữu)",
+   "ngay": "2024",
+   "link": "https://luatvietnam.vn/tin-van-ban-moi/da-co-toan-van-luat-cac-to-chuc-tin-dung-co-hieu-luc-tu-01-7-2024-186-96872-article.html"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "GDP 9T/2026 +9,01%, FDI giải ngân 21,07 tỷ USD (+12,1%): cầu vốn còn mạnh — EIB chỉ hưởng khi có vốn huy động.",
+     "ng": "MBS 16/10 (báo cáo SHB)"
+    },
+    {
+     "h": -1,
+     "t": "Lãi huy động lên vùng cao từ Q3/2025, ban lãnh đạo SHB kỳ vọng đi ngang đến ~Q2/2027; liên ngân hàng 6–12 tháng ~8,4–8,7%.",
+     "ng": "MBS 16/10 (báo cáo SHB)"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "Tín dụng hệ thống 9T +11,59%, huy động +9,78%: thiếu vốn toàn ngành; ngân hàng CASA thấp như EIB (14%) chịu chi phí vốn tăng nhanh nhất.",
+     "ng": "MBS 16/10 · MAS 03/04"
+    },
+    {
+     "h": -1,
+     "t": "Nghị định 86/2024 siết khấu trừ tài sản bảo đảm khi trích lập nợ quá hạn: dự phòng EIB 2025 +58%, 9T/2026 gấp 1,9 lần.",
+     "ng": "Vietcap 15/04 · BCTC"
+    },
+    {
+     "h": 0,
+     "t": "Luật Các TCTD 2024: cổ đông tổ chức ≤ 10%, kèm người liên quan ≤ 15% — trần cho Gelex (10%) và một đối tác chiến lược.",
+     "ng": "Luật 32/2024/QH15"
+    },
+    {
+     "h": 1,
+     "t": "Nâng hạng thị trường: Vietcap kỳ vọng EIB vào danh mục ETF mô phỏng FTSE thị trường mới nổi — điều kiện room ngoại nay đã có.",
+     "ng": "Vietcap 15/04 · ĐHĐCĐ 14/10"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Chủ tịch Nguyễn Lê Quốc Anh (CEO Techcombank 2016–2020) từ 24/7/2026, 4 thành viên HĐQT độc lập người nước ngoài; trần sở hữu nước ngoài 6% → 30%.",
+     "ng": "VnExpress 7/2026 · TCKT-TC 10/2026"
+    },
+    {
+     "h": -1,
+     "t": "Q3 dư nợ −19,2%, tiền gửi khách hàng −7,2% (9T: −17,6% / −10,7%); 3 Phó TGĐ từ nhiệm (25/5), 3 thành viên HĐQT xin thôi (7/2026).",
+     "ng": "BCTC Q3 · Thời báo Tài chính · Báo Pháp luật"
+    },
+    {
+     "h": 0,
+     "t": "Trụ sở chuyển ra Hà Nội (3/2026); không chia cổ tức 2025, giữ ~3.400 tỷ lợi nhuận chưa phân phối để củng cố vốn; CAR cao hơn trung vị ngành.",
+     "ng": "Vietcap 15/04 · Mekong ASEAN 4/2026"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Tín dụng và nguồn vốn",
+   "phu": "Dư nợ 151,9 nghìn tỷ · tiền gửi khách hàng 158,3 nghìn tỷ (30/9/2026)",
+   "so": [
+    [
+     "Dư nợ 9T",
+     "−17,6%",
+     "Q3 −19,2%"
+    ],
+    [
+     "Tiền gửi KH 9T",
+     "−10,7%",
+     "Q3 −7,2%"
+    ],
+    [
+     "Dư nợ/tiền gửi",
+     "96%",
+     "30/6: 110%"
+    ],
+    [
+     "CASA 2025",
+     "14,1%",
+     "nhóm ~20–25%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Cá nhân ~57% dư nợ (2025), thương mại là ngành lớn nhất; mua nợ 10.623 tỷ cuối 2025 (2024: 800 tỷ) — Vietcap: 2026 thu hẹp mua nợ lợi suất thấp.",
+     "ng": "Vietcap 15/04 · MAS 03/04"
+    },
+    {
+     "t": "2025 tiền gửi chỉ +5,9% khi dư nợ +11,5%: vay liên ngân hàng gấp đôi lên 40.908 tỷ, giấy tờ có giá +85% lên 20.068 tỷ.",
+     "ng": "MAS 03/04"
+    }
+   ]
+  },
+  {
+   "ten": "Thu nhập",
+   "phu": "Lãi thuần 9T 3.866 tỷ (−9,9%) · ngoài lãi 826 tỷ (−29%)",
+   "so": [
+    [
+     "NIM Q3/2026",
+     "1,82%",
+     "Q2: 2,20%"
+    ],
+    [
+     "Phí ròng 2025",
+     "241 tỷ",
+     "−78%"
+    ],
+    [
+     "Ngoại hối",
+     "~33% ngoài lãi",
+     "bq 2021–2025"
+    ],
+    [
+     "CIR 9T/2026",
+     "60,3%",
+     "2025: 58,3%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "2025: chi phí lãi +30,5% (9.542 tỷ) vượt thu nhập lãi +17,3%; chi phí vốn +42 điểm cơ bản lên 4,22%, lợi suất cho vay chỉ +16 lên 6,43%.",
+     "ng": "MAS 03/04"
+    },
+    {
+     "t": "Phí ròng 2025 giảm 78% vì chi phí hoa hồng +44% (1.563 tỷ) trong khi phí gộp giảm; Vietcap kỳ vọng thanh toán trong hệ sinh thái Gelex kéo phí lên.",
+     "ng": "MAS 03/04 · Vietcap 15/04"
+    }
+   ]
+  },
+  {
+   "ten": "Chất lượng tài sản",
+   "phu": "Nợ nhóm 2–5 5,65% dư nợ · nợ xấu ~2,6% (ước tính) · bao phủ ~41% (30/9/2026)",
+   "so": [
+    [
+     "Nợ xấu 30/9",
+     "~2,6%",
+     "30/6: 3,08%"
+    ],
+    [
+     "Nợ nhóm 2",
+     "> 4.600 tỷ",
+     "+50% trong Q3"
+    ],
+    [
+     "Bao phủ",
+     "~41%",
+     "30/6: 32%"
+    ],
+    [
+     "Dự phòng 9T",
+     "997 tỷ",
+     "gấp 1,9 lần"
+    ]
+   ],
+   "y": [
+    {
+     "t": "9T dùng ~1.667 tỷ dự phòng để xử lý nợ (ước tính từ BCTC; Q3 ~392 tỷ). Q3 nợ xấu giảm ~1.810 tỷ — nhiều hơn phần xử lý bằng dự phòng: phần còn lại là thu hồi, bán nợ hoặc nợ quay về nhóm 2; chưa có thuyết minh.",
+     "ng": "BCTC · kinhtechungkhoan 31/10 · Tạp chí Kinh tế Tài chính 7/2026"
+    },
+    {
+     "t": "Nợ nhóm 2: cuối 2025 2.192 tỷ (+31%) → 30/9 hơn 4.600 tỷ (+50% riêng Q3); nhóm 2–5 / dư nợ 4,05% → 5,65%: áp lực chuyển nhóm dồn sang 2027.",
+     "ng": "MAS 03/04 · kinhtechungkhoan 31/10"
+    }
+   ]
+  },
+  {
+   "ten": "Quản trị và cổ đông",
+   "phu": "Gelex 10% · VIX 4,8% (4/2026) · khối ngoại ~3,5%",
+   "so": [
+    [
+     "Chủ tịch",
+     "Nguyễn Lê Quốc Anh",
+     "từ 24/7/2026"
+    ],
+    [
+     "HĐQT độc lập nước ngoài",
+     "4 người",
+     "bầu 24/7"
+    ],
+    [
+     "Trần sở hữu ngoại",
+     "6% → 30%",
+     "ĐHĐCĐ 14/10"
+    ],
+    [
+     "Nhân sự 6T",
+     "−500+",
+     "cắt giảm"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Hai lần đổi chủ tịch trong 8 tháng (Nguyễn Cảnh Anh → Phạm Thị Huyền Trang 12/2025 → Nguyễn Lê Quốc Anh 7/2026); ĐHĐCĐ 14/10 là lần thứ ba trong năm.",
+     "ng": "Vietcap 15/04 · VnExpress · TCKT-TC"
+    },
+    {
+     "t": "Gelex mua lên 10% năm 2024 (giá gốc 3.297 tỷ), muốn lên 15% khi luật cho phép; người Gelex đề cử vào HĐQT (4/2026) đã xin thôi (7/2026).",
+     "ng": "Nhà Đầu tư 4/2026 · Báo Pháp luật 7/2026"
+    }
+   ]
+  }
+ ]
+}

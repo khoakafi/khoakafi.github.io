@@ -1,0 +1,1594 @@
+{
+ "v": 2,
+ "ma": "PC1",
+ "ten": "CTCP Tập đoàn PC1",
+ "nganh": "Xây lắp điện · Điện · Niken · KCN",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026 (hạn 30/1/2027) · ngày chốt quyền phát hành 148 triệu cp",
+ "cp_trieu": 411.29,
+ "cp_ng": "411.285.343 cp (SHS 04/08; vốn điều lệ 4.112,9 tỷ Q2/2026), không thưởng/chia tách từ 11/2025. Cổ tức 2025 bằng cổ phiếu 15%, chào bán 74 triệu cp và ESOP 12,3 triệu cp giá 10.000 đ (ĐHĐCĐ 22/4/2026) chưa chốt quyền. Vốn hóa VNDirect 7.506 tỷ tính theo giá phiên trước (18,25).",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Q3 vượt dự báo nhờ thủy điện mùa mưa, nhưng giá đã trả trước cho phục hồi xây lắp",
+  "dk": "up_duoi:-5",
+  "khac": "Q3 vượt dự báo nhờ thủy điện mùa mưa, nợ vay giảm — giá trị nằm ở từng mảng"
+ },
+ "dong_mo": "Q3/2026 LN cổ đông 258 tỷ (−14% so với cùng kỳ), cao hơn 54% so với mô hình cũ: thủy điện mùa mưa nằm ở công ty con, thiểu số nhận 38% LNST. Nợ vay giảm 1,3 nghìn tỷ trong quý. LN 2026E 686 tỷ, 2027E 785 tỷ nhờ đất Nomura 2. Tổng các phần cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "70%",
+   "nhan": "lãi gộp 6T/2026 từ bán điện và niken",
+   "tieu": "Lợi nhuận đã dời sang điện và niken — phần lớn ở công ty con",
+   "t": "Doanh thu 6T/2026 xây lắp −25%, cột thép −52% (nền 2025 có 500 kV mạch 3); bán điện (biên 53%) và niken (45%) làm ra 657/935 tỷ lãi gộp. Hai mảng ở công ty con PC1 sở hữu 55–60%. Q3 xác nhận: LNST 416 tỷ (+6%) nhưng LN cổ đông 258 tỷ (−14%) vì thiểu số nhận 38% (Q3/2025: 24%); 9T: 36%.",
+   "ng": "SHS 04/08 (thuyết minh BCTC 6T) · BCTC Q3/2026 · DSC 16/06"
+  },
+  {
+   "so": "49 tỷ",
+   "nhan": "LN cổ đông 2027E của xây lắp & tập đoàn",
+   "tieu": "Xây lắp — mảng gốc — chỉ lãi mỏng sau chi phí chung và lãi vay",
+   "t": "Biên gộp xây lắp 6T/2026 4,9%, Q3 ước ~8,7% (phần còn lại của lãi gộp quý); mảng gánh phần lớn chi phí quản lý và lãi vay vốn lưu động. 6T: xây lắp, cột thép, BĐS và chi phí tập đoàn lỗ ~42 tỷ trước thuế nếu bỏ CT2. Cơ sở 2027 doanh thu 5,5 nghìn tỷ, biên 8%, lãi vay giảm theo nợ 30/9 → ~49 tỷ; backlog ~4 nghìn tỷ (MAS 16/10). ±1 nghìn tỷ doanh thu = ±1,3 nghìn đ/cp.",
+   "ng": "BCTC 6T, Q3/2026 · MAS 16/10 · DSC 16/06 · mô hình"
+  },
+  {
+   "so": "140 ha",
+   "nhan": "đất cho thuê Nomura 2 (ước tính)",
+   "tieu": "Tăng trưởng 2027 đến từ đất Nomura 2, không phải từ điện",
+   "t": "Nomura 2 (197 ha, vốn 2,78 nghìn tỷ, PC1 100%) có MOU 25 ha với khách Nhật; cơ sở bàn giao 15 ha năm 2027 (+156 tỷ LN), mỗi 10 ha ~104 tỷ. Theo ha (LNST/ha + 340 tỷ vốn đã chi, bán 20 ha/năm, chiết khấu 13%): ~877 tỷ ≈ 2,1 nghìn đ/cp. Thượng Hà 13 MW đã chạy, Bảo Lạc A 30 MW phát điện 11/2026, nhưng El Niño giữ LN điện 2027E ~ngang 2026E (318 tỷ).",
+   "ng": "QĐ 1709/QĐ-TTg · SHS 04/08 · MAS 16/10 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Giá trị cơ sở {up_so}: giá đang trả trước cho phục hồi xây lắp",
+   "dk": "up_duoi:-5",
+   "t": "Điện P/E 10 × 318 tỷ, niken P/E 8 × 150 tỷ, xây lắp & tập đoàn P/E 8,5 × 92 tỷ (LN cổ đông 2027E); Nomura 2 theo ha, liên kết 0,8 lần sổ sách → {gt}. P/E 4 quý chỉ 6,8 lần (giá 30/10) vì LN 4 quý gồm Q4/2025 kỷ lục và lãi CT2; trên LN 2027E là 9,7 lần. Xấu 11,2: xây lắp lỗ, niken 15 nghìn USD/t; tốt 29,8: xây lắp 7 nghìn tỷ.",
+   "ng": "mô hình · BCTC (VNDirect) · giá 30/10/2026",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "Giá trị cơ sở {up_so}: định giá từng mảng",
+    "t": "Điện P/E 10 × 318 tỷ, niken P/E 8 × 150 tỷ, xây lắp & tập đoàn P/E 8,5 × 92 tỷ (LN cổ đông 2027E); Nomura 2 theo ha, liên kết 0,8 lần sổ sách → {gt}, ≈ 9,5 lần LN 2027E. Xấu 11,2: xây lắp lỗ, niken 15 nghìn USD/t, El Niño; tốt 29,8: xây lắp 7 nghìn tỷ, biên 9,5%, niken 18,5."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1041,
+   686,
+   785
+  ],
+  "ln_truoc": 468,
+  "eps": [
+   2531,
+   1668,
+   1909
+  ],
+  "bv": [
+   15828,
+   17152,
+   19062
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "LN không gồm thoái vốn CT2 (tỷ)",
+    "v": [
+     1041,
+     590,
+     785
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     17.3,
+     10.1,
+     10.5
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC; 2026E gồm 6T soát xét và Q3 thực tế. EPS, BVPS theo 411,29 triệu cp. Cổ tức trả bằng cổ phiếu (15%: 11/2024, 11/2025); cổ tức 2025 15% cổ phiếu chưa chốt quyền."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo mảng",
+  "cot": [
+   "9T/2026",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN cổ đông",
+  "ss": [
+   {
+    "ten": "Điện (thủy điện, điện gió)",
+    "mau": "c1",
+    "v": [
+     283,
+     319,
+     317
+    ]
+   },
+   {
+    "ten": "Niken",
+    "mau": "c2",
+    "v": [
+     136,
+     171,
+     150
+    ]
+   },
+   {
+    "ten": "Xây lắp, KCN vận hành & tập đoàn",
+    "mau": "c3",
+    "v": [
+     123,
+     159,
+     92
+    ]
+   },
+   {
+    "ten": "Đất Nomura 2 & liên kết",
+    "mau": "c4",
+    "v": [
+     27,
+     37,
+     226
+    ]
+   }
+  ],
+  "nhan": "Điện (thủy điện, điện gió)",
+  "ng": "Sau thuế, sau cổ đông thiểu số. Lãi vay chia cho điện, niken sao cho thiểu số mô hình khớp 6T/2026 (166 tỷ); Q3 theo mảng là ước tính (BCTC quý không có thuyết minh mảng) khớp thiểu số Q3 (159 tỷ). 9T xây lắp & tập đoàn gồm 120 tỷ thoái vốn CT2."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: doanh thu × biên theo mảng, lãi vay và thiểu số phân bổ",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Doanh thu (tỷ đồng)"
+   },
+   {
+    "ten": "Xây lắp điện & hạ tầng",
+    "v": [
+     6699,
+     4667,
+     5500
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Cột thép (sản xuất công nghiệp)",
+    "v": [
+     1467,
+     785,
+     850
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Bán điện",
+    "v": [
+     1802,
+     1741,
+     1854
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Niken (Tấn Phát)",
+    "v": [
+     1139,
+     1073,
+     1028
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Đất KCN Nomura 2",
+    "v": [
+     0,
+     0,
+     525
+    ]
+   },
+   {
+    "ten": "KCN vận hành, BĐS, thương mại",
+    "v": [
+     1978,
+     1673,
+     1260
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tổng doanh thu",
+    "v": [
+     13085,
+     9939,
+     11017
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "nhom": "Biên gộp (%)"
+   },
+   {
+    "ten": "Xây lắp",
+    "v": [
+     null,
+     6.8,
+     8.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Bán điện",
+    "v": [
+     null,
+     57.7,
+     57.2
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Niken",
+    "v": [
+     null,
+     42.0,
+     39.5
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Lợi nhuận (tỷ đồng)"
+   },
+   {
+    "ten": "Chi phí lãi vay",
+    "v": [
+     682,
+     771,
+     730
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     1559,
+     1244,
+     1357
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Cổ đông thiểu số",
+    "v": [
+     315,
+     384,
+     364
+    ]
+   },
+   {
+    "ten": "LN cổ đông PC1",
+    "v": [
+     1041,
+     686,
+     785
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     2531,
+     1668,
+     1909
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "2025A theo mảng: xây lắp (DSC 16/06), niken (Viettimes); bán điện, cột thép là ước tính, dòng KCN/BĐS/thương mại = phần còn lại. 2026E = 6T soát xét (mảng theo SHS 04/08) + Q3 thực tế (mảng ước tính, khớp thiểu số) + Q4 ước tính. Biên điện = doanh thu × 92% − chi phí cố định ~590 tỷ/năm."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   686
+  ],
+  "cuoi": [
+   "2027E",
+   785
+  ],
+  "buoc": [
+   [
+    "Đất Nomura 2",
+    156
+   ],
+   [
+    "Điện",
+    -1
+   ],
+   [
+    "Niken",
+    -22
+   ],
+   [
+    "Lãi thoái vốn CT2 (2026, một lần)",
+    -96
+   ],
+   [
+    "Xây lắp, BĐS, KCN & tập đoàn",
+    29
+   ],
+   [
+    "Liên kết",
+    33
+   ]
+  ],
+  "y": "LN 2027E +14%: đất Nomura 2 bù lãi CT2 không lặp lại và niken giá thấp hơn; điện đứng yên vì El Niño sau Q3/2026 nước tốt; xây lắp & tập đoàn lãi mỏng nhờ lãi vay giảm.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu xây lắp 2027 (nghìn tỷ)",
+   "v": [
+    "4,0",
+    "5,5",
+    "7,0"
+   ],
+   "ly_do": "Đỉnh 2025: 6,7 (500 kV mạch 3); 2026E ~4,7; backlog ~4 (MAS 16/10) từ ~8,2 đầu năm; lưới truyền tải 18,1 tỷ USD 2026–2030 (QHĐ VIII, MAS)"
+  },
+  {
+   "ten": "Biên gộp xây lắp 2027",
+   "v": [
+    "6,5%",
+    "8,0%",
+    "9,5%"
+   ],
+   "ly_do": "6T/2026 4,9%, Q3 ước ~8,7%; quý 4 thường có quyết toán. Cơ sở 8%: xây lắp & tập đoàn chỉ lãi ~49 tỷ sau lãi vay"
+  },
+  {
+   "ten": "Điện hiện hữu 2027 · 2 nhà máy mới",
+   "v": [
+    "−6% · 130",
+    "−3% · 165",
+    "+5% · 190"
+   ],
+   "ly_do": "So 2026E: El Niño đến 4/2027 (IRI); mới: Thượng Hà 13 MW, Bảo Lạc A 30 MW (116,6 triệu kWh/năm — MAS), tỷ đồng doanh thu, giá ~1.150 đ/kWh"
+  },
+  {
+   "ten": "Giá niken 2027 (nghìn USD/tấn)",
+   "v": [
+    "15,0",
+    "16,0",
+    "18,5"
+   ],
+   "ly_do": "6T/2026 ~17,5 (biên 44,6%); 7/9/2026 ~16,6; MAS giả định 15,5. Sản lượng giữ nguyên, giá vốn ~622 tỷ/năm"
+  },
+  {
+   "ten": "Nomura 2: ha giao 2027 · ha/năm",
+   "v": [
+    "5 · 14",
+    "15 · 20",
+    "25 · 28"
+   ],
+   "ly_do": "MOU 25 ha với khách Nhật (DSC, MAS); 140 ha cho thuê là giả định (71% của 197 ha) — chưa có công bố quy hoạch chi tiết"
+  },
+  {
+   "ten": "Nomura 2: doanh thu (tỷ/ha)",
+   "v": [
+    "33",
+    "35",
+    "38"
+   ],
+   "ly_do": "Hải Phòng: Tràng Duệ 3 ~180, Quế Võ 2 ~153 USD/m² (VDS); VGC, IDC ghi nhận 29–33 tỷ/ha. Vốn ~19,9 tỷ/ha (2.783 tỷ ÷ 140 ha)"
+  },
+  {
+   "ten": "Lãi vay 2027 (tỷ)",
+   "v": [
+    "760",
+    "730",
+    "715"
+   ],
+   "ly_do": "9T/2026 581 (Q3 201); nợ vay 30/9 10,9 nghìn tỷ (30/6: 12,2) sau khi trả 900 tỷ trái phiếu 10%; hai nhà máy mới hết vốn hóa lãi"
+  },
+  {
+   "ten": "P/E điện · niken · xây lắp",
+   "v": [
+    "10,5 · 9 · 3",
+    "10 · 8 · 8,5",
+    "9,5 · 7 · 9,5"
+   ],
+   "ly_do": "Thủy điện (6 mã) trung vị 10,3; khai khoáng ~8,9; nhà thầu (5 mã) 8,6. LN đáy trả P/E cao hơn; xấu: lỗ xây lắp chỉ tính 3 năm"
+  },
+  {
+   "ten": "Liên kết: hệ số × 1.781 tỷ sổ sách",
+   "v": [
+    "0,6",
+    "0,8",
+    "1,0"
+   ],
+   "ly_do": "Western Pacific 30% (5 KCN), Gang thép Cao Bằng 25%… (31/12/2025, MBS); lãi liên kết 2025 chỉ 56 tỷ, 6T/2026 19 tỷ"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 536,
+   "ln27": 307,
+   "gia": 11.2,
+   "mo_ta": "Xây lắp 2027 4,0 nghìn tỷ, biên 6,5% (lỗ); niken 15,0 nghìn USD/t; El Niño; Nomura 2 14 ha/năm; liên kết 0,6 lần sổ sách"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 686,
+   "ln27": 785,
+   "gia": 18.1,
+   "mo_ta": "Xây lắp 5,5 nghìn tỷ, biên 8% (hòa vốn); niken 16,0; Nomura 2 giao 15 ha 2027, 20 ha/năm; P/E 10 · 8 · 8,5"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 854,
+   "ln27": 1440,
+   "gia": 29.8,
+   "mo_ta": "Xây lắp 7,0 nghìn tỷ, biên 9,5%; niken 18,5; thủy văn tốt; Nomura 2 25 ha 2027, 28 ha/năm; liên kết theo sổ sách"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "Điện, niken, xây lắp & tập đoàn: P/E × LN 2027E; đất Nomura 2 theo ha (cộng giá vốn đã chi); liên kết theo sổ sách",
+  "ck": 0,
+  "cp": 411.29,
+  "phan": [
+   {
+    "ten": "Điện (thủy điện, điện gió)",
+    "mau": "c1",
+    "x": [
+     251,
+     318,
+     421
+    ],
+    "boi": [
+     10.5,
+     10,
+     9.5
+    ],
+    "x_ten": "LN cổ đông 2027E của mảng điện",
+    "boi_ten": "P/E",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     2636,
+     3180,
+     4000
+    ]
+   },
+   {
+    "ten": "Niken (Tấn Phát 57%)",
+    "mau": "c2",
+    "x": [
+     120,
+     150,
+     224
+    ],
+    "boi": [
+     9,
+     8,
+     7
+    ],
+    "x_ten": "LN cổ đông 2027E của mảng niken",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     1080,
+     1200,
+     1568
+    ]
+   },
+   {
+    "ten": "Xây lắp, cột thép, KCN vận hành & tập đoàn",
+    "mau": "c3",
+    "x": [
+     -139,
+     92,
+     358
+    ],
+    "boi": [
+     3,
+     8.5,
+     9.5
+    ],
+    "x_ten": "LN cổ đông 2027E sau chi phí chung, lãi vay vốn lưu động (không gồm đất Nomura 2, liên kết)",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     -417,
+     782,
+     3401
+    ]
+   },
+   {
+    "ten": "Đất KCN Nomura 2 & công ty liên kết",
+    "mau": "c4",
+    "x": [
+     1309,
+     2302,
+     3299
+    ],
+    "boi": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "x_ten": "Nomura 2: 140 ha × giá trị/ha (LNST/ha + vốn đã chi, chiết khấu); liên kết: 1.781 tỷ sổ sách × 0,6/0,8/1,0",
+    "boi_ten": "hệ số",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     1309,
+     2302,
+     3299
+    ]
+   }
+  ],
+  "von": [
+   4608,
+   7464,
+   12268
+  ],
+  "gia": [
+   11.2,
+   18.1,
+   29.8
+  ]
+ },
+ "nhay": [
+  [
+   "Lãi suất vay ±1 điểm % (10,9 nghìn tỷ nợ)",
+   87,
+   1.8
+  ],
+  [
+   "Doanh thu xây lắp 2027 ±1 nghìn tỷ (biên 8%)",
+   64,
+   1.3
+  ],
+  [
+   "Sản lượng điện nhà máy hiện hữu ±5%",
+   40,
+   1.0
+  ],
+  [
+   "Biên gộp xây lắp 2027 ±1 điểm %",
+   44,
+   0.9
+  ],
+  [
+   "Giá niken 2027 ±1.000 USD/tấn",
+   32,
+   0.6
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   7.4,
+   7.3,
+   7.2,
+   9.1,
+   9.4,
+   9.3,
+   12.0,
+   13.7,
+   13.3,
+   15.4,
+   15.6,
+   14.7,
+   16.3,
+   16.8,
+   15.9,
+   17.0,
+   16.0,
+   15.7,
+   13.7,
+   15.4,
+   15.5,
+   8.4,
+   9.6,
+   7.9,
+   6.4,
+   7.0,
+   6.8,
+   6.8,
+   6.7,
+   6.8,
+   6.2,
+   5.9,
+   5.4,
+   5.8,
+   6.5,
+   6.2,
+   8.1,
+   7.8,
+   7.5,
+   6.4,
+   4.5,
+   6.3,
+   7.7,
+   7.4,
+   7.5,
+   8.9,
+   9.8,
+   10.0,
+   9.6,
+   10.0,
+   10.2,
+   10.6,
+   10.6,
+   9.8,
+   10.7,
+   10.3,
+   10.4,
+   9.5,
+   10.6,
+   11.4,
+   12.7,
+   13.2,
+   11.4,
+   13.2,
+   16.0,
+   13.4,
+   11.7,
+   12.5,
+   11.7,
+   19.4,
+   15.9,
+   10.1,
+   12.7,
+   13.5,
+   17.5,
+   16.3,
+   16.9,
+   17.1,
+   24.5,
+   21.8,
+   22.3,
+   28.6,
+   32.7,
+   25.1,
+   43.6,
+   47.0,
+   48.8,
+   238.6,
+   244.6,
+   222.3,
+   86.4,
+   87.6,
+   88.1,
+   32.1,
+   33.0,
+   30.5,
+   19.1,
+   18.9,
+   19.0,
+   18.4,
+   17.3,
+   15.9,
+   17.8,
+   17.7,
+   20.9,
+   22.5,
+   21.5,
+   20.0,
+   15.8,
+   16.4,
+   17.6,
+   11.9,
+   11.2,
+   7.7,
+   6.8,
+   8.1,
+   7.5,
+   7.4,
+   7.4,
+   6.6
+  ],
+  "p10": 6.8,
+  "p25": 8.1,
+  "tv": 12.6,
+  "thap": [
+   "2020-03",
+   4.5
+  ],
+  "nay": [
+   "2026-10",
+   6.6
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Giá trị cơ sở ≈ 9,5 lần LN 2027E, giữa thấp 25% (8,1) và trung vị (12,6) từ 2016. P/E 4 quý 6,6 lần thấp vì LN 4 quý gồm Q4/2025 kỷ lục (543 tỷ) và lãi thoái vốn CT2."
+ },
+ "so_sanh": {
+  "tieu": "P/E 4 quý so với thủy điện và nhà thầu niêm yết",
+  "phu": "giá hôm nay; PC1: LN cổ đông 4 quý đến Q3/2026, 411,29 triệu cp",
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 30/10)",
+  "nhom": "6 thủy điện + 5 nhà thầu xây lắp niêm yết",
+  "kv": [
+   [
+    "HHV",
+    8.3
+   ],
+   [
+    "DPG",
+    8.4
+   ],
+   [
+    "LCG",
+    8.6
+   ],
+   [
+    "TV2",
+    8.9
+   ],
+   [
+    "CTD",
+    9.0
+   ],
+   [
+    "VPD",
+    9.4
+   ],
+   [
+    "HNA",
+    9.7
+   ],
+   [
+    "TMP",
+    10.0
+   ],
+   [
+    "SHP",
+    10.7
+   ],
+   [
+    "VSH",
+    11.6
+   ],
+   [
+    "CHP",
+    12.2
+   ]
+  ],
+  "tv": 9.4,
+  "moi_cp": 2705,
+  "max": 20,
+  "y": "Thủy điện trung vị 10,3, nhà thầu 8,6 lần. PC1 6,8 lần (giá 30/10) trông rẻ, nhưng LN 4 quý (1.112 tỷ) gồm Q4/2025 kỷ lục (543 tỷ) và ~96 tỷ thoái vốn CT2; trên LN 2027E cơ sở là 9,7 lần.",
+  "ng": "Vốn hóa VNDirect 30/10/2026 ÷ LN cổ đông 4 quý (BCTC VNDirect)"
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    83,
+    167,
+    250
+   ],
+   "ck": 301
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -33,
+    117,
+    285
+   ],
+   "ck": 543
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    536,
+    686,
+    854
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "30/10/2026",
+   "loai": "len",
+   "tieu": "KQKD Q3/2026 vượt mô hình nhờ thủy điện",
+   "ct": "LN cổ đông 258 tỷ (−14% YoY), mô hình cũ 167 (khoảng 83–250); lãi gộp 724 tỷ (+6%) dù doanh thu −20%. Thiểu số 159 tỷ: phần lớn là thủy điện mùa mưa (ước ~629 tỷ doanh thu).",
+   "tac": [
+    "686 tỷ",
+    "LN cổ đông 2026E cơ sở (bản 24/10: 635)"
+   ],
+   "theo_doi": "thuyết minh mảng Q3"
+  },
+  {
+   "khi": "1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Cơ sở LN cổ đông ~117 tỷ (−78% so với Q4/2025 có quyết toán mạch 3): hết mùa nước, xây lắp quyết toán cuối năm. LNST 2026E 1.070 tỷ ≈ 101% kế hoạch.",
+   "tac": [
+    "≥ 120 tỷ",
+    "giữ cơ sở; lỗ quý nghiêng về xấu"
+   ],
+   "theo_doi": "biên xây lắp, backlog"
+  },
+  {
+   "khi": "11/2026",
+   "loai": "len",
+   "tieu": "Bảo Lạc A phát điện",
+   "ct": "Bảo Lạc A 30 MW (thiết kế 116,6 triệu kWh/năm) phát điện 11/2026; Thượng Hà 13 MW đã vận hành (MAS 16/10). +43 MW, ~12% công suất sở hữu (SHS).",
+   "tac": [
+    "+23 tỷ",
+    "LN cổ đông 2027E sau khấu hao, lãi vay"
+   ],
+   "theo_doi": "ngày vận hành thương mại"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Nomura 2 bàn giao đất đầu tiên",
+   "ct": "MOU 25 ha với khách hàng Nhật (ĐHĐCĐ 4/2026); XDCB dở dang 340 tỷ (30/6) từ 25 tỷ đầu năm. Cơ sở: giao 15 ha năm 2027, 20 ha/năm sau đó.",
+   "tac": [
+    "+104 tỷ",
+    "LN mỗi 10 ha (PC1 sở hữu 100%)"
+   ],
+   "theo_doi": "hợp đồng thuê đất"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Hợp đồng lưới điện, điện gió mới",
+   "ct": "QHĐ VIII: 18,1 tỷ USD lưới truyền tải 2026–2030, 12.944 km 500 kV mới (MAS). Đã ký > 2.000 tỷ (Vingroup, Masterise); đàm phán điện gió ngoài khơi Philippines ~200 triệu USD (MBS).",
+   "tac": [
+    "+3,7 nghìn đ/cp",
+    "nếu xây lắp 2027 đạt 7 nghìn tỷ, biên 9,5%"
+   ],
+   "theo_doi": "backlog, trúng thầu EVN"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "len",
+   "tieu": "Cổ đông mới, tái cấu trúc quản trị",
+   "ct": "Nhóm CII nắm ~12%, VietinBank Capital 7,5% từ 9/7/2026 (SHS); HĐQT mới bầu 24/7 làm việc với BCG để chỉnh chiến lược, ưu tiên an toàn tài chính (MBS 27/07).",
+   "tac": "",
+   "theo_doi": "HĐQT, chiến lược mới"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Vụ án lãnh đạo: nghĩa vụ tài chính, hồi tố",
+   "ct": "16/5/2026 khởi tố 7 lãnh đạo (vi phạm kế toán, tham ô); vụ án 47 bị can, > 1.800 tỷ tài sản bị phong tỏa (SHS). Kết luận điều tra có thể phát sinh nghĩa vụ hoặc điều chỉnh hồi tố BCTC.",
+   "tac": "",
+   "theo_doi": "kết luận điều tra, ý kiến kiểm toán"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Phát hành 148 triệu cp đã duyệt",
+   "ct": "ĐHĐCĐ 22/4/2026: cổ tức 15% bằng cổ phiếu, chào bán 74 triệu cp và ESOP 12,3 triệu cp, cùng giá 10.000 đ — chưa có ngày chốt quyền.",
+   "tac": [
+    "−8%",
+    "giá trị cơ sở/cp nếu phát hành 86,3 triệu cp giá 10.000 đ"
+   ],
+   "theo_doi": "ngày chốt quyền"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Xây lắp không hồi phục",
+   "ct": "Backlog ~4 nghìn tỷ (MAS 16/10) từ ~8,2 nghìn tỷ đầu năm; hợp đồng EPC lớn với EVN cần năng lực ký kết, pháp lý sạch. Doanh thu 4 nghìn tỷ, biên 6,5% → xây lắp & tập đoàn lỗ.",
+   "tac": [
+    "±1,3 nghìn đ/cp",
+    "mỗi ±1 nghìn tỷ doanh thu xây lắp 2027"
+   ],
+   "theo_doi": "backlog, biên gộp"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Giá niken, El Niño",
+   "ct": "LME ~16,6 nghìn USD/t (7/9) từ 19,2 nghìn (1/6); El Niño đến 4/2027 làm sản lượng thủy điện giảm. Điện và niken là ~70% lãi gộp.",
+   "tac": [
+    "±0,6 · ±1,0",
+    "nghìn đ/cp: niken ±1.000 USD/t · điện ±5% sản lượng"
+   ],
+   "theo_doi": "giá LME, nước về hồ"
+  },
+  {
+   "khi": "9/2026",
+   "loai": "hai",
+   "tieu": "Đã mua lại 900 tỷ trái phiếu",
+   "ct": "8/9/2026 mua lại toàn bộ lô PC1H2227002 (lãi 10%, đáo hạn 5/2027) theo quyết định UBCKNN. Nợ vay 30/9 còn 10,9 nghìn tỷ (−1,3 trong Q3), tiền + đầu tư ngắn hạn 5,0 nghìn tỷ.",
+   "tac": "",
+   "theo_doi": "nợ vay, dòng tiền"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh thu theo mảng: 6T/2025 → 6T/2026",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Xây lắp",
+    "Cột thép",
+    "Bán điện",
+    "Niken",
+    "KCN",
+    "BĐS",
+    "T.mại"
+   ],
+   "ss": [
+    {
+     "ten": "6T/2025",
+     "v": [
+      2296,
+      713,
+      787,
+      459,
+      300,
+      0,
+      195
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "6T/2026",
+     "v": [
+      1729,
+      345,
+      762,
+      562,
+      319,
+      256,
+      204
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Xây lắp −25%, cột thép −52% trên nền mạch 3; niken +22%, BĐS Phú Thị Riverside mới ghi nhận.",
+   "ng": "SHS 04/08 (thuyết minh BCTC 6T/2026)"
+  },
+  {
+   "ten": "Lãi gộp 6T/2026 theo mảng",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Bán điện",
+    "Niken",
+    "Xây lắp",
+    "Cột thép",
+    "BĐS",
+    "KCN",
+    "Khác"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp 6T/2026",
+     "v": [
+      406,
+      251,
+      84,
+      60,
+      56,
+      53,
+      25
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 0,
+   "y": "Điện (biên 53%) và niken (45%): 70% lãi gộp trên 31% doanh thu; xây lắp 41% doanh thu, biên 4,9%, chỉ 9% lãi gộp.",
+   "ng": "SHS 04/08 (thuyết minh BCTC 6T/2026)"
+  },
+  {
+   "ten": "LN sau thuế theo quý: cổ đông PC1 và thiểu số",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Cổ đông PC1",
+     "v": [
+      33,
+      81,
+      159,
+      160,
+      68,
+      55,
+      142,
+      301,
+      543,
+      181,
+      130,
+      258
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Cổ đông thiểu số",
+     "v": [
+      56,
+      49,
+      31,
+      99,
+      64,
+      90,
+      23,
+      94,
+      109,
+      89,
+      78,
+      159
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Q4/2025 kỷ lục (quyết toán mạch 3, bàn giao 90 căn Phú Thị); Q3/2026 thiểu số nhận 38% LNST — thủy điện mùa mưa ở công ty con.",
+   "ng": "BCTC (VNDirect); 6T/2026 soát xét"
+  },
+  {
+   "ten": "Nợ vay, tiền và XDCB dở dang",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      10.8,
+      11.1,
+      11.1,
+      11.9,
+      11.7,
+      12.4,
+      12.2,
+      10.9
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      3.3,
+      3.6,
+      3.5,
+      4.7,
+      5.3,
+      5.6,
+      5.3,
+      5.0
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "XDCB dở dang",
+     "v": [
+      0.2,
+      0.2,
+      0.5,
+      0.6,
+      1.1,
+      1.7,
+      1.9,
+      1.6
+     ],
+     "mau": "c4",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Q3 nợ vay giảm còn 10,9 nghìn tỷ (1,6 lần vốn chủ cổ đông) sau khi trả 900 tỷ trái phiếu; XDCB 1,6 nghìn tỷ (30/6: 1,9; Bảo Lạc A, Nomura 2).",
+   "ng": "BCTC (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 15618,
+    "th": 6825,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 22/4/2026 · BCTC 9T"
+   },
+   {
+    "ten": "LNST hợp nhất",
+    "kh": 1056,
+    "th": 894,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 22/4/2026 · BCTC 9T"
+   }
+  ],
+  "y": "Kế hoạch lập trước vụ án; 9T đạt 44% doanh thu, 85% LNST (gồm 120 tỷ lãi CT2). Cơ sở 2026E: doanh thu 9,9 nghìn tỷ (64%), LNST 1.070 tỷ (101%). HĐQT mới có thể điều chỉnh (MBS 27/07).",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-10-16",
+   "kn": "NẮM GIỮ",
+   "tp": 20100,
+   "ln26": 753,
+   "ln27": null,
+   "pp": "không nêu (báo cáo ngắn); ≈ 11 lần EPS 2026F",
+   "y": "Dự báo 2026: doanh thu 11.187 tỷ (−14,5%), LN cổ đông 753 tỷ; xây lắp + cột thép −23%, backlog còn ~4.000 tỷ; kỳ vọng phục hồi 2027 nhờ lưới truyền tải.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PC1/20261016_bao_cao_ngan_ctcp_tap_doan_pc1_pc1_vn_nam_giu_da_tru_cot_ky_vong_phuc_hoi.pdf"
+  },
+  {
+   "ctck": "SHS",
+   "ngay": "2026-08-04",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "—",
+   "y": "Không khuyến nghị vì rủi ro thượng tầng dù KQKD ngắn hạn ổn định; tách lãi gộp 6T theo mảng: điện, niken ~70%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PC1/pc1_cap_nhat_kqkd_quy_2_2026.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-07-27",
+   "kn": "KHÁC",
+   "tp": null,
+   "ln26": 890,
+   "ln27": 1542,
+   "pp": "—",
+   "y": "Tổng hợp ĐHĐCĐ bất thường: ký mới > 2.000 tỷ (Vingroup, Masterise), ưu tiên an toàn tài chính, có thể chỉnh kế hoạch; bảng dự phóng 2027F doanh thu 15.663 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PC1/pc1_tong_hop_dai_hoi_co_dong_bat_thuong_24_07_2026.pdf"
+  },
+  {
+   "ctck": "DSC",
+   "ngay": "2026-06-16",
+   "kn": "MUA",
+   "tp": 25100,
+   "ln26": 1163,
+   "ln27": null,
+   "pp": "DCF 50% (23.900) + P/B 50% (26.300)",
+   "y": "Ra sau vụ khởi tố; giả định Nomura 2 lấp đầy ~50% ngay 2026, doanh thu 2026F 16.313 tỷ — cao hơn nhiều so với 6T thực tế.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PC1/Bao_cao_khuyen_nghi_au_tu_.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. MBS, SHS không đưa giá mục tiêu. ACBS 19/08/2026 (MUA, 25.700) có trên Simplize nhưng chưa tải được bản đầy đủ.",
+ "nguon": [
+  {
+   "ten": "Mirae Asset — Đa trụ cột, kỳ vọng phục hồi (NẮM GIỮ)",
+   "ngay": "16/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PC1/20261016_bao_cao_ngan_ctcp_tap_doan_pc1_pc1_vn_nam_giu_da_tru_cot_ky_vong_phuc_hoi.pdf"
+  },
+  {
+   "ten": "SHS — Cập nhật KQKD quý 2/2026 (cơ cấu mảng 6T)",
+   "ngay": "04/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PC1/pc1_cap_nhat_kqkd_quy_2_2026.pdf"
+  },
+  {
+   "ten": "MBS — Tổng hợp ĐHĐCĐ bất thường 24/07/2026",
+   "ngay": "27/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PC1/pc1_tong_hop_dai_hoi_co_dong_bat_thuong_24_07_2026.pdf"
+  },
+  {
+   "ten": "DSC — Báo cáo khuyến nghị đầu tư PC1",
+   "ngay": "16/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PC1/Bao_cao_khuyen_nghi_au_tu_.pdf"
+  },
+  {
+   "ten": "QĐ 1709/QĐ-TTg — KCN Nomura – Hải Phòng giai đoạn 2 (197,16 ha, 2.782,72 tỷ)",
+   "ngay": "2024",
+   "link": "https://luatvietnam.vn/dau-tu/quyet-dinh-1709-qd-ttg-2024-chu-truong-du-an-ha-tang-kcn-nomura-hai-phong-giai-doan-2-383609-d1.html"
+  },
+  {
+   "ten": "Tạp chí Công Thương — PC1 được phê duyệt KCN 197 ha tại Hải Phòng",
+   "ngay": "2024",
+   "link": "https://tapchicongthuong.vn/tap-doan-pc1-duoc-phe-duyet-khu-cong-nghiep-197-ha-tai-hai-phong-131984.htm"
+  },
+  {
+   "ten": "Báo Pháp Luật — PC1 chi 900 tỷ mua lại toàn bộ trái phiếu trước hạn",
+   "ngay": "14/09/2026",
+   "link": "https://doanhnhan.baophapluat.vn/nhan-an-phat-vi-pham-hanh-chinh-tap-doan-pc1-chi-900-ty-dong-mua-lai-toan-bo-trai-phieu-truoc-han.html"
+  },
+  {
+   "ten": "Báo Pháp Luật — Kế hoạch 2026, phát hành 148 triệu cp",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/tap-doan-pc1-pc1-dat-muc-tieu-kinh-doanh-nam-2026-than-trong-muon-phat-hanh-148-trieu-co-phieu-de-tang-von.html"
+  },
+  {
+   "ten": "Mekong ASEAN — Kế hoạch LN 2026, cổ tức bằng cổ phiếu",
+   "ngay": "04/2026",
+   "link": "https://mekongasean.vn/pc1-cai-so-lui-ve-loi-nhuan-tra-co-tuc-bang-co-phieu-53464.html"
+  },
+  {
+   "ten": "VietnamFinance — KQKD 6T/2026 (soát xét)",
+   "ngay": "08/2026",
+   "link": "https://vietnamfinance.vn/pc1-doanh-thu-di-xuong-nhung-lai-lon-dong-tien-suy-giam-d148563.html"
+  },
+  {
+   "ten": "Viettimes — Doanh thu niken 2024–2025",
+   "ngay": "2026",
+   "link": "https://viettimes.vn/he-lo-ve-vu-khi-bi-mat-cua-tap-doan-pc1-post197799.html"
+  },
+  {
+   "ten": "Cbonds — Giá niken LME giao ngay",
+   "ngay": "07/09/2026",
+   "link": "https://cbonds.hk/indexes/181085/"
+  },
+  {
+   "ten": "Mekong ASEAN — Nhóm CII nâng sở hữu PC1 lên gần 13%",
+   "ngay": "2026",
+   "link": "https://mekongasean.vn/nhom-cii-tiep-tuc-mua-co-phieu-pc1-nang-so-huu-len-gan-13-59076.html"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — PC1 báo lãi 893,95 tỷ đồng 9 tháng 2026",
+   "ngay": "30/10/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/tap-doan-pc1-bao-lai-89395-ty-dong-trong-9-thang-dau-nam-2026-post400489.html"
+  },
+  {
+   "ten": "CafeF — KQKD quý 3/2026 của PC1",
+   "ngay": "30/10/2026",
+   "link": "https://cafef.vn/doanh-nghiep-co-nu-chu-tich-sinh-nam-1999-lam-an-ra-sao-trong-quy-3-2026-188261030151550142.chn"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "QHĐ VIII điều chỉnh: lưới truyền tải 2026–2030 ~18,1 tỷ USD; xây mới 12.944 km 500 kV, 15.307 km 220 kV.",
+     "ng": "MAS 16/10"
+    },
+    {
+     "h": -1,
+     "t": "La Niña suy yếu, chuyển sang El Niño: thủy văn 2026 kém hơn nền cao 2025; IRI dự El Niño đến 4/2027.",
+     "ng": "SHS 04/08 · hồ sơ POW"
+    },
+    {
+     "h": 0,
+     "t": "Niken: Indonesia siết hạn ngạch, INSG dự thiếu hụt ~32 nghìn tấn 2026, nhưng LME về ~16,6 nghìn USD/t (9/2026) từ 19,2 nghìn (6/2026).",
+     "ng": "SHS 04/08 · DSC 16/06 · Cbonds"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "PC1 chiếm ~30% thị phần xây lắp điện; làm các gói 500 kV mạch 3, Lào Cai – Vĩnh Yên.",
+     "ng": "DSC 16/06 · SHS 04/08"
+    },
+    {
+     "h": 1,
+     "t": "Hải Phòng hút FDI điện tử: giá thuê đất KCN 150–190 USD/m² (Tràng Duệ 3, Quế Võ 2).",
+     "ng": "VDS (hồ sơ KBC)"
+    },
+    {
+     "h": 0,
+     "t": "Thủy điện niêm yết P/E 4 quý trung vị 10,3, nhà thầu xây lắp 8,6 lần (giá 23/10).",
+     "ng": "BCTC VNDirect"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": -1,
+     "t": "Vụ án 16/5/2026: HĐQT mới bầu 24/7 (chủ tịch là con gái ông Trịnh Văn Tuấn); đổi kiểm toán sang nhóm ngoài Big4 (UHY, iCPA, PKF-TTG).",
+     "ng": "MBS 27/07 · SHS 04/08"
+    },
+    {
+     "h": -1,
+     "t": "Nợ vay 10,9 nghìn tỷ (30/9), 1,6 lần vốn chủ cổ đông; 28 công ty con cấp 1, nhiều pháp nhân xây lắp chỉ lãi 3–6 tỷ/năm.",
+     "ng": "BCTC · DSC 16/06"
+    },
+    {
+     "h": 0,
+     "t": "Mục tiêu 1.000 MW điện sạch đến 2030 (thêm điện mặt trời Điện Biên, điện gió ngoài khơi 2027–2030) — cần vốn chủ, đi cùng kế hoạch phát hành.",
+     "ng": "SHS 04/08 · Báo Pháp Luật"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Điện — thủy điện, điện gió",
+   "phu": "Thủy điện ~170 MW, điện gió 144 MW (Quảng Trị, giá FIT 8,5 US cent/kWh); +43 MW cuối 2026",
+   "so": [
+    [
+     "Doanh thu 6T/2026",
+     "762 tỷ",
+     "−3,2%"
+    ],
+    [
+     "Biên gộp 6T",
+     "53,2%",
+     "mùa khô"
+    ],
+    [
+     "LN cổ đông 2027E",
+     "318 tỷ",
+     "cơ sở"
+    ],
+    [
+     "Doanh thu Q3/2026",
+     "~629 tỷ",
+     "ước, mùa mưa"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Bảo Lạc A: xây dựng ~95%, XDCB 768 tỷ (30/6); Thượng Hà: XDCB 466 tỷ. Thành lập công ty điện mặt trời Điện Biên.",
+     "ng": "SHS 04/08"
+    }
+   ]
+  },
+  {
+   "ten": "Niken — mỏ Tấn Phát (57%)",
+   "phu": "Mỏ niken – đồng Cao Bằng, 600 nghìn tấn quặng thô/năm, bao tiêu bởi Trafigura",
+   "so": [
+    [
+     "Doanh thu 6T/2026",
+     "562 tỷ",
+     "+22,4%"
+    ],
+    [
+     "Biên gộp 6T",
+     "44,6%",
+     "cao nhất tập đoàn"
+    ],
+    [
+     "Doanh thu 2025",
+     "1.139 tỷ",
+     "−33%"
+    ],
+    [
+     "LN cổ đông 2027E",
+     "150 tỷ",
+     "cơ sở"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Giai đoạn 2 dự kiến 2028–2029; chủ tịch Tấn Phát nằm trong nhóm bị khởi tố, có thể làm chậm.",
+     "ng": "SHS 04/08 · DSC 16/06"
+    }
+   ]
+  },
+  {
+   "ten": "Xây lắp điện, cột thép, thương mại",
+   "phu": "Tổng thầu EPC lưới điện; DAST (cột thép, 90%); nhiều công ty xây lắp 51–100%",
+   "so": [
+    [
+     "Xây lắp 2025",
+     "6.699 tỷ",
+     "+81,7%"
+    ],
+    [
+     "6T/2026",
+     "1729 tỷ",
+     "−25%"
+    ],
+    [
+     "Biên gộp 6T",
+     "4,9%",
+     "Q3 ước ~8,7%"
+    ],
+    [
+     "Backlog",
+     "~4.000 tỷ",
+     "MAS 16/10"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Philippines: điện gió 58 MW (~1.000 tỷ doanh thu dự kiến 2026 — DSC); đàm phán điện gió ngoài khơi ~200 triệu USD (MBS).",
+     "ng": "DSC 16/06 · MBS 27/07"
+    }
+   ]
+  },
+  {
+   "ten": "KCN và BĐS",
+   "phu": "Nomura – Hải Phòng (70%), Nomura 2 (197 ha, 100%), Western Pacific (30%, 5 KCN); BĐS Phú Thị Riverside (182 căn)",
+   "so": [
+    [
+     "KCN vận hành 6T",
+     "319 tỷ",
+     "+6,3%"
+    ],
+    [
+     "XDCB Nomura 2",
+     "340 tỷ",
+     "30/6/2026"
+    ],
+    [
+     "BĐS 6T/2026",
+     "256 tỷ",
+     "biên 21,9%"
+    ],
+    [
+     "Lãi liên kết 6T",
+     "19 tỷ",
+     "cùng kỳ −13"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Phú Thị Riverside bàn giao từ Q4/2025, phần còn lại trong 2026; dự án dân cư tiếp theo (Định Công, Bắc Từ Liêm, Gia Lâm) đang làm pháp lý, 2027–2028.",
+     "ng": "SHS 04/08 · DSC 16/06"
+    }
+   ]
+  }
+ ]
+}

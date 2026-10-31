@@ -1,0 +1,1524 @@
+{
+ "v": 2,
+ "ma": "DCM",
+ "ten": "Tổng Công ty Phân bón Dầu khí Cà Mau – CTCP (Đạm Cà Mau)",
+ "nganh": "Phân bón",
+ "ky": "BCTC Q3/2026 · giá 29/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 (kế hoạch 2027, giá khí công thức mới)",
+ "cp_trieu": 529.4,
+ "cp_ng": "Vốn điều lệ 5.294 tỷ (BCTC Q2/2026); không thưởng/chia tách — giá điều chỉnh lệch 5,8% từ 7/2026 là cổ tức tiền 2.000 đ",
+ "co_tuc": [
+  [
+   "2026-07-09",
+   2000,
+   "cổ tức 2025 bằng tiền 20%, thanh toán 21/07/2026"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Q3 xác nhận biên urê thời chiến đã khép lại; giá đã trả đủ cho lãi 2027",
+  "dk": "up_duoi:5",
+  "khac": "Q3 xác nhận biên urê đã khép lại; tiền ròng thu về giữ giá dưới giá trị lãi 2027"
+ },
+ "dong_mo": "Q3/2026 LN 430 tỷ (+31%), khớp mô hình: doanh thu +92% nhờ sản lượng, biên gộp về 19,1% (Q2 29,8%). 9T 2.286 tỷ, gấp 1,9 lần kế hoạch năm. LN 2027E cơ sở 1.681 tỷ (−12% so với 2025). P/E 9 × LN cốt lõi cộng tiền ròng cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "19,1%",
+   "nhan": "biên gộp Q3/2026 (Q2: 29,8%)",
+   "tieu": "Q3 xác nhận: lãi đỉnh đến từ chênh lệch giá, không từ sản lượng",
+   "t": "Q2 giá bán urê 15,3 triệu đ/tấn (+41%) khi urê Trung Đông lên 907 USD, khí theo dầu tăng chậm hơn: lãi gộp urê ~6,8 triệu đ/tấn. Q3 urê Trung Đông về 400–440 USD: doanh thu +92% nhưng LN gộp chỉ 1.099 tỷ, biên 19,1% — thấp hơn cả Q3/2025 (22,0%); lãi gộp urê ước ~3,7 triệu đ/tấn, ngang 2025. LN 430 tỷ (+31%) so với mô hình cơ sở 422 — tăng nhờ sản lượng, không nhờ giá. Phần bền: khấu trừ VAT khí (~500 tỷ/năm).",
+   "ng": "BCTC Q3/2026 · KBSV 11/09 · Tạp chí Công Thương · mô hình"
+  },
+  {
+   "so": "150%",
+   "nhan": "kế hoạch xuất khẩu urê sau 9 tháng",
+   "tieu": "Xuất khẩu là van điều tiết, không phải động lực mới",
+   "t": "9 tháng xuất 413 nghìn tấn urê (150% kế hoạch) khi nội địa mới đạt 66%: DCM đẩy hàng ra ngoài lúc giá thế giới cao, rồi quay về nội địa khi giá giảm — Q3 xuất khẩu chỉ 62 nghìn tấn, nội địa 153. Doanh thu Q3 +92% chủ yếu vì cùng kỳ thấp (urê Q3/2025 ~125 nghìn tấn) và NPK, tự doanh gấp đôi. Sản lượng hết dư địa: nhà máy 800 nghìn tấn đã sản xuất 967 nghìn tấn urê quy đổi năm 2025. Mô hình 2027: 850 nghìn tấn (2026E 922).",
+   "ng": "Thông cáo DCM 16/10 · BCTC Q3/2026 · SHS 04/08"
+  },
+  {
+   "so": "5,3",
+   "nhan": "nghìn tỷ tiền ròng 30/9/2026",
+   "tieu": "Tồn kho đã thu về thành tiền",
+   "t": "Dù trả cổ tức 1,06 nghìn tỷ (21/7), tiền ròng tăng từ 4,3 (30/6) lên 5,3 nghìn tỷ: tồn kho giảm 1,4 nghìn tỷ về 4,3, phải thu giảm, vay ngắn hạn còn 2,7 nghìn tỷ. Cộng LN Q4: ~5,6 nghìn tỷ cuối 2026E, 10,6 nghìn đ/cp (31% vốn hóa) — nâng giá trị cơ sở so với bản 18/10. Một phần có thể quay lại tồn kho khi tích hàng Đông Xuân.",
+   "ng": "BCTC Q3/2026 · SHS 04/08 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Trên lãi 2027 bình thường hóa, giá đã đủ",
+   "dk": "up_duoi:5",
+   "t": "P/E ~7,0 trên LN 4 quý (có quý 2 đỉnh) trông rẻ, nhưng LN 2027E cơ sở 1.681 tỷ — urê về mặt bằng 2025, khí 9,3 USD/mmBtu — còn thấp hơn 2025 (−12%). Bỏ tiền ròng, giá 29/10 trả ~8,3 lần LN cốt lõi 2027E, trên trung vị 8,8 từ 2016. P/E 9 × LN cốt lõi + tiền ròng: {gt}. Xấu 27,0 (urê, khí như 2023–2024; P/E 13), tốt 48,4 (urê ~500 USD, khí 8,5).",
+   "ng": "mô hình · giá, BCTC VNDirect",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "Giá đã xuống dưới giá trị theo lãi 2027: {up_so}",
+    "t": "P/E 9 × LN cốt lõi 2027E 1.548 tỷ (bỏ lãi tiền gửi) cộng tiền ròng cuối 2026E 5,6 nghìn tỷ. LN đáy được trả P/E cao nên kịch bản xấu dùng 13 lần (như 2–7/2024), tốt 7 lần; trung vị giá trị DN/LN hoạt động từ 2016: 8,8. Xấu 27,0, tốt 48,4 nghìn đ/cp."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1915,
+   2556,
+   1681
+  ],
+  "ln_truoc": 1420,
+  "eps": [
+   3617,
+   4828,
+   3175
+  ],
+  "bv": [
+   20330,
+   22977,
+   25153
+  ],
+  "co_tuc_nam": 2000,
+  "them": [
+   {
+    "ten": "LN cốt lõi, bỏ lãi tiền gửi (tỷ)",
+    "v": [
+     1644,
+     2516,
+     1548
+    ]
+   },
+   {
+    "ten": "Urê tiêu thụ (nghìn tấn)",
+    "v": [
+     805,
+     922,
+     850
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     18.3,
+     22.3,
+     13.2
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2024–2025: BCTC kiểm toán (LNST-CTM 2025 1.915 tỷ; VNDirect cộng 4 quý ra 1.960 vì quý 4 lấy bản tự lập). Cổ tức 2.000 đ/cp là cổ tức 2025 (GDKHQ 09/07/2026)."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo nguồn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Phân bón (sau chi phí)",
+    "mau": "c1",
+    "v": [
+     1644,
+     2516,
+     1548
+    ]
+   },
+   {
+    "ten": "Lãi tiền gửi ròng",
+    "mau": "c3",
+    "v": [
+     271,
+     40,
+     133
+    ]
+   }
+  ],
+  "nhan": "Phân bón (sau chi phí)",
+  "ng": "Lãi tiền gửi ròng = doanh thu tài chính − chi phí tài chính, sau thuế. 2026E–2027E: mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 2025",
+  "chi_so_kv": "P/E trượt 2025",
+  "nhom": "Phân bón trong nước và thế giới (VDSC)",
+  "kv": [
+   [
+    "DPM",
+    15.6
+   ],
+   [
+    "CF Industries",
+    8.1
+   ],
+   [
+    "China BlueChemical",
+    10.3
+   ],
+   [
+    "China XLX",
+    10.6
+   ],
+   [
+    "BFC",
+    8.75
+   ],
+   [
+    "Nutrien",
+    14.29
+   ],
+   [
+    "Yara",
+    7.68
+   ]
+  ],
+  "tv": 10.3,
+  "moi_cp": 3617,
+  "max": 20,
+  "y": "DCM tính trên EPS 2025 kiểm toán (3.617 đ); bỏ DHB (P/E 190,6 vì LN gần 0). Trên EPS 2027E cơ sở (3.175 đ) P/E theo giá 29/10 là 10,8 — quanh trung vị nhóm.",
+  "ng": "P/E trượt 2025: VDSC 12/06 (Bloomberg)"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: sản lượng × chênh lệch urê – khí",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Urê"
+   },
+   {
+    "ten": "Tiêu thụ (nghìn tấn)",
+    "v": [
+     805,
+     922,
+     850
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Giá bán bình quân (triệu đ/tấn)",
+    "v": [
+     10.74,
+     12.28,
+     10.8
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Giá khí đầu vào (USD/mmBtu)",
+    "v": [
+     8.37,
+     9.47,
+     9.3
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Giá vốn + giảm trừ mỗi tấn (triệu đ)",
+    "v": [
+     7.19,
+     7.56,
+     7.47
+    ],
+    "d": 2
+   },
+   {
+    "ten": "Lãi gộp mỗi tấn (triệu đ)",
+    "v": [
+     3.56,
+     4.72,
+     3.33
+    ],
+    "d": 2,
+    "dam": 1
+   },
+   {
+    "ten": "Lãi gộp urê",
+    "v": [
+     2862,
+     4347,
+     2832
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Lãi gộp NPK, tự doanh, khác",
+    "v": [
+     1173,
+     1041,
+     1100
+    ]
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     16961,
+     22698,
+     17716
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên lợi nhuận gộp (%)",
+    "v": [
+     23.8,
+     23.7,
+     22.2
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Chi phí bán hàng + QLDN",
+    "v": [
+     2189,
+     2572,
+     2200
+    ]
+   },
+   {
+    "ten": "Thu nhập tài chính ròng",
+    "v": [
+     305,
+     45,
+     150
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     2157,
+     2870,
+     1892
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     1915,
+     2556,
+     1681
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     3617,
+     4828,
+     3175
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Giá vốn urê/tấn = 2,17 + 0,57 × giá khí (hệ số suy từ dự phóng VDSC 2025–2027F; 2025 có 6 tháng chưa khấu trừ VAT khí). 2026E = 9 tháng thực tế (lãi gộp urê Q2 tách theo biên các mảng khác của Q1, VDSC; Q3 = LN gộp thực tế − ~300 tỷ mảng khác ước, giá bán urê Q3 chưa công bố — dùng 11,2) + Q4 ước tính; giá khí 2026E là số ngầm định."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   2556
+  ],
+  "cuoi": [
+   "2027E",
+   1681
+  ],
+  "buoc": [
+   [
+    "Giá bán urê về mặt bằng 2025",
+    -1212
+   ],
+   [
+    "Giá khí, giá vốn mỗi tấn",
+    77
+   ],
+   [
+    "Sản lượng urê",
+    -213
+   ],
+   [
+    "Chi phí, mảng khác, tài chính",
+    473
+   ]
+  ],
+  "y": "Giá bán urê 12,28 → 10,8 triệu đ/tấn lấy đi ~1,2 nghìn tỷ; chi phí bán hàng + QLDN về mức 2025 (~2,2 nghìn tỷ) khi xuất khẩu giảm bù lại một phần.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Giá bán urê Q4/2026 (triệu đ/tấn)",
+   "v": [
+    "11,0",
+    "11,6",
+    "12,4"
+   ],
+   "ly_do": "Q2: 15,3. Urê Trung Đông cuối 9 ~440, dự báo Q4 ~445 USD (24hMoney). Q3: lãi gộp urê ước ~3,7 triệu đ/tấn (biên gộp chung 19,1%)"
+  },
+  {
+   "ten": "Giá khí Q4/2026 (USD/mmBtu)",
+   "v": [
+    "10,6",
+    "10,0",
+    "9,3"
+   ],
+   "ly_do": "~90% khí theo 46% giá dầu FO (BSC). ĐHĐCĐ 23/9: giá khí 9T cao hơn kế hoạch 27%. 6T/2026 ngầm định ~9,3"
+  },
+  {
+   "ten": "Urê tiêu thụ Q4/2026 (nghìn tấn)",
+   "v": [
+    "160",
+    "180",
+    "205"
+   ],
+   "ly_do": "Q4/2025: 209; kế hoạch tháng 10 chỉ bán 50 nghìn tấn, nhà máy bảo dưỡng tổng thể cuối 9; Đông Xuân từ tháng 11. Q3 thực tế 214,8"
+  },
+  {
+   "ten": "Thu nhập tài chính ròng 2027 (tỷ)",
+   "v": [
+    "100",
+    "150",
+    "200"
+   ],
+   "ly_do": "2025: 305; Q3/2026 −88 (doanh thu TC 56, lãi vay 37, ~107 tỷ chi phí TC khác). Không vào định giá phân bón"
+  },
+  {
+   "ten": "Giá bán urê 2027 (triệu đ/tấn)",
+   "v": [
+    "9,9",
+    "10,8",
+    "11,9"
+   ],
+   "ly_do": "2025: 10,75 khi urê Trung Đông bình quân 410 USD (ACBS); 6T/2026: 12,95. Xấu ≈ giá nội địa 2023–2024 (~10,0 — VDSC); tốt ≈ urê ~500 USD"
+  },
+  {
+   "ten": "Giá khí 2027 (USD/mmBtu)",
+   "v": [
+    "9,8",
+    "9,3",
+    "8,5"
+   ],
+   "ly_do": "2023–2024: 9,5–9,7; 2025: 8,37 (Brent 67); VDSC 2027F 9,27 (Brent 76, công thức mới từ 2027). Mỗi 1 USD/mmBtu ≈ 0,57 triệu đ/tấn urê"
+  },
+  {
+   "ten": "Urê tiêu thụ 2027 (nghìn tấn)",
+   "v": [
+    "800",
+    "850",
+    "880"
+   ],
+   "ly_do": "Công suất 800; tiêu thụ 2025 bằng 101% (VDSC); 2026E 922 có rút tồn kho; VDSC dự báo 2027 885"
+  },
+  {
+   "ten": "Lãi gộp NPK, tự doanh, khác 2027 (tỷ)",
+   "v": [
+    "900",
+    "1.100",
+    "1.250"
+   ],
+   "ly_do": "2025: 1.173 (VDSC: NPK 597, tự doanh 191, khác 385); 6T/2026 ~470 khi biên NPK, tự doanh co lại (Q1: 13%, 2%)"
+  },
+  {
+   "ten": "Chi phí bán hàng + QLDN 2027 (tỷ)",
+   "v": [
+    "1.850",
+    "2.200",
+    "2.400"
+   ],
+   "ly_do": "2024: 1.495; 2025: 2.189 (12,9% DT); 6T/2026: 1.400 (+47%, cước xuất khẩu); Q3 512; 2026E 2.570"
+  },
+  {
+   "ten": "P/E trên LN cốt lõi 2027E",
+   "v": [
+    "13",
+    "9",
+    "7"
+   ],
+   "ly_do": "Giá trị DN/LN hoạt động 4 quý từ 2016: 25% 6,9 · trung vị 8,8 · 90% 12,5. LN đáy (2–7/2024) được trả 13–14 lần; đỉnh 12/2022 chỉ 1,5"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 2302,
+   "ln27": 779,
+   "gia": 27.0,
+   "mo_ta": "Urê, khí như 2023–2024: giá bán 9,9 triệu đ/tấn, khí 9,8 USD/mmBtu, lãi gộp 2,15 triệu đ/tấn; 800 nghìn tấn; LN cốt lõi ~690 tỷ; P/E 13"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 2556,
+   "ln27": 1681,
+   "gia": 36.9,
+   "mo_ta": "Urê về mặt bằng 2025 (10,8 triệu đ/tấn), khí 9,3 USD/mmBtu: lãi gộp 3,33 triệu đ/tấn; 850 nghìn tấn; chi phí như 2025; P/E 9"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 2911,
+   "ln27": 2988,
+   "gia": 48.4,
+   "mo_ta": "Urê ~500 USD (11,9 triệu đ/tấn), khí 8,5 USD/mmBtu ≈ 2025: lãi gộp 4,89 triệu đ/tấn; 880 nghìn tấn; P/E 7"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "Phân bón: P/E × LN cốt lõi 2027E; cộng tiền ròng",
+  "ck": 0,
+  "cp": 529.4,
+  "phan": [
+   {
+    "ten": "Phân bón",
+    "mau": "c1",
+    "x": [
+     690,
+     1548,
+     2810
+    ],
+    "boi": [
+     13,
+     9,
+     7
+    ],
+    "x_ten": "LN cốt lõi 2027E (bỏ lãi tiền gửi ròng)",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     8970,
+     13932,
+     19670
+    ]
+   },
+   {
+    "ten": "Tiền ròng",
+    "mau": "c3",
+    "x": [
+     5336,
+     5590,
+     5945
+    ],
+    "boi": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "x_ten": "30/9/2026 + LN Q4/2026E",
+    "boi_ten": "hệ số",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     5336,
+     5590,
+     5945
+    ]
+   }
+  ],
+  "von": [
+   14306,
+   19522,
+   25615
+  ],
+  "gia": [
+   27.0,
+   36.9,
+   48.4
+  ]
+ },
+ "nhay": [
+  [
+   "Giá bán urê 2027 ±0,5 triệu đ/tấn",
+   378,
+   6.4
+  ],
+  [
+   "Giá khí 2027 ±0,5 USD/mmBtu",
+   216,
+   3.7
+  ],
+  [
+   "Chi phí bán hàng + QLDN 2027 ±10%",
+   196,
+   3.3
+  ],
+  [
+   "P/E phân bón ±1 lần",
+   null,
+   2.9
+  ],
+  [
+   "Urê tiêu thụ 2027 ±50 nghìn tấn",
+   148,
+   2.5
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   8.9,
+   8.9,
+   8.9,
+   10.5,
+   10.1,
+   9.3,
+   9.1,
+   9.9,
+   9.0,
+   8.5,
+   8.0,
+   7.6,
+   9.3,
+   8.9,
+   11.2,
+   8.7,
+   9.6,
+   9.1,
+   8.6,
+   8.7,
+   7.9,
+   8.0,
+   8.6,
+   8.5,
+   10.0,
+   10.1,
+   9.9,
+   9.0,
+   9.1,
+   8.9,
+   11.9,
+   12.9,
+   11.5,
+   9.2,
+   9.1,
+   7.8,
+   7.2,
+   7.2,
+   7.0,
+   7.7,
+   7.7,
+   7.5,
+   8.0,
+   8.2,
+   8.0,
+   9.1,
+   8.6,
+   7.8,
+   7.5,
+   6.5,
+   10.4,
+   13.4,
+   13.5,
+   12.5,
+   10.1,
+   12.8,
+   12.9,
+   10.8,
+   12.7,
+   11.6,
+   10.7,
+   13.8,
+   12.7,
+   12.2,
+   15.3,
+   14.7,
+   17.5,
+   18.5,
+   23.3,
+   19.5,
+   18.8,
+   13.8,
+   10.2,
+   11.9,
+   10.7,
+   6.0,
+   5.3,
+   4.7,
+   5.0,
+   4.5,
+   4.4,
+   3.5,
+   3.2,
+   3.4,
+   2.9,
+   3.0,
+   2.9,
+   4.3,
+   4.7,
+   5.6,
+   7.9,
+   8.4,
+   6.9,
+   10.5,
+   10.6,
+   10.4,
+   16.1,
+   16.8,
+   14.7,
+   16.2,
+   15.6,
+   16.0,
+   13.2,
+   13.6,
+   13.3,
+   12.7,
+   12.2,
+   11.5,
+   13.2,
+   12.3,
+   12.0,
+   11.8,
+   12.0,
+   12.8,
+   12.4,
+   11.7,
+   11.0,
+   9.5,
+   9.1,
+   10.2,
+   11.9,
+   13.4,
+   11.8,
+   9.2,
+   8.1,
+   7.1,
+   6.4,
+   6.9,
+   7.0
+  ],
+  "p10": 5.5,
+  "p25": 7.9,
+  "tv": 9.5,
+  "thap": [
+   "2023-02",
+   2.9
+  ],
+  "nay": [
+   "2026-10",
+   7.0
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. Quý 4/2025 theo BCTC kiểm toán (~390 tỷ; VNDirect ghi 435).",
+  "dung": "Giá trị ba kịch bản tương đương P/E 18,4 · 11,6 · 8,6 trên LN 2027E (gồm lãi tiền gửi). LN đáy 2023 từng được trả P/E 14,7–16,8 (2–7/2024); LN đỉnh 2022 chỉ 2,9–3,5."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 5073,
+   "ln": [
+    164,
+    422,
+    644
+   ],
+   "ck": 328
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 4958,
+   "ln": [
+    17,
+    271,
+    626
+   ],
+   "ck": 390
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    2302,
+    2556,
+    2911
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "30/10/2026",
+   "loai": "hai",
+   "tieu": "Đã ra: KQKD Q3/2026 khớp kịch bản cơ sở",
+   "ct": "DT 5.742 tỷ (+92%), LN 430 tỷ (+31%) vs mô hình 422; biên gộp 19,1%. Chi phí TC 144 tỷ (lãi vay 37). 9T 2.286 tỷ (193% KH).",
+   "tac": [
+    "430 tỷ",
+    "LN Q3 thực tế; mô hình cũ 164–644"
+   ],
+   "theo_doi": "chi phí tài chính khác Q4"
+  },
+  {
+   "khi": "Q4/2026 – 1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026 sau bảo dưỡng",
+   "ct": "Tháng 10 chỉ bán 50 nghìn tấn urê (bảo dưỡng cuối 9); mô hình cơ sở Q4 271 tỷ (−31%), cả năm 2.556 tỷ.",
+   "tac": [
+    "17–626 tỷ",
+    "LN Q4 xấu – tốt; dưới 150 tỷ: urê/khí nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "lãi gộp/tấn urê, tồn kho"
+  },
+  {
+   "khi": "Từ 11/2026",
+   "loai": "len",
+   "tieu": "Đông Xuân, nhập khẩu của Ấn Độ và Brazil",
+   "ct": "Đông Xuân là mùa tiêu thụ nội địa lớn nhất; Ấn Độ mở thầu ~1,7 triệu tấn (8/2026), Brazil vào mùa nhập cao điểm; urê Trung Đông hồi từ dưới 400 lên ~440 USD cuối 9.",
+   "tac": [
+    "±6,4 nghìn đ/cp",
+    "mỗi ±0,5 triệu đ/tấn giá bán urê 2027"
+   ],
+   "theo_doi": "giá urê Trung Đông, giá Cà Mau tại đại lý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Nguồn cung urê quay lại",
+   "ct": "Trung Quốc xuất khẩu lại từ 6–7/2026; Indorama (Nigeria) nâng công suất 2,8 → 4,2 triệu tấn; Hormuz thông thì urê lưu trên tàu, kho nổi đổ ra thị trường (KBSV).",
+   "tac": [
+    "−11,6 nghìn đ/cp",
+    "nếu giá bán urê 2027 về 9,9 triệu đ/tấn (≈ 2023–2024)"
+   ],
+   "theo_doi": "xuất khẩu urê của Trung Quốc"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Giá khí neo theo dầu",
+   "ct": "~90% khí mua của PVN theo 46% giá dầu FO, phần còn lại theo Brent (BSC). Brent Q2 bình quân 103 USD, 3/9 vẫn 95 USD: urê giảm mà khí không giảm là cái kẹp biên của Q3.",
+   "tac": [
+    "±3,7 nghìn đ/cp",
+    "mỗi ±0,5 USD/mmBtu giá khí 2027"
+   ],
+   "theo_doi": "Brent, dầu FO Singapore"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Nội địa yếu, xuất khẩu tốn cước",
+   "ct": "Urê nội địa 9T mới 66% kế hoạch (6T −40%) vì giá cao; chi phí bán hàng + QLDN 6T +47%. Mô hình 2027 giữ ~2,2 nghìn tỷ như 2025.",
+   "tac": [
+    "±3,3 nghìn đ/cp",
+    "mỗi ±10% chi phí bán hàng + QLDN 2027"
+   ],
+   "theo_doi": "chi phí bán hàng/doanh thu"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Sản phẩm mới: CO2 thực phẩm, khí công nghiệp",
+   "ct": "CO2 thực phẩm bán từ 2/2026 (~3.700 tấn, >50 tỷ/năm); dự án 288 tỷ thu hồi argon, nitơ lỏng (7.500 + 4.600 tấn/năm) đạt 44% tiến độ.",
+   "tac": "",
+   "theo_doi": "tiến độ EPC khí công nghiệp"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "len",
+   "tieu": "Nâng công suất Nhà máy Đạm lên 125%",
+   "ct": "Đang lập FS cùng licensor; nhà máy 800 nghìn tấn đã sản xuất 967 nghìn tấn urê quy đổi năm 2025. Khí bổ sung dự kiến từ Nam Du – U Minh, Khánh Mỹ – Đầm Dơi.",
+   "tac": [
+    "+200 nghìn tấn",
+    "urê/năm nếu triển khai — chưa vào mô hình"
+   ],
+   "theo_doi": "phê duyệt FS, nguồn khí"
+  },
+  {
+   "khi": "Từ Q4/2028",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Khí Nam Du – U Minh đắt hơn ~35%",
+   "ct": "ĐHĐCĐ bất thường 23/9 đã thông qua sửa hợp đồng khí với PV GAS đưa Nam Du – U Minh vào từ Q4/2028 (~11,56 USD/mmBtu, đến 4/2032); KBSV nâng giá khí 2028–2030 thêm 10%.",
+   "tac": [
+    "−400 tỷ LN/năm",
+    "nếu giá khí bình quân +10% (sản lượng, giá khí cơ sở 2027)"
+   ],
+   "theo_doi": "giá khí mới, tỷ trọng"
+  },
+  {
+   "khi": "2027",
+   "loai": "hai",
+   "tieu": "Cổ tức tiền",
+   "ct": "2024 và 2025 đều trả 2.000 đ/cp (20%); kế hoạch 2026 là 10% (1.000 đ). Tiền ròng cuối 2026E ~10,6 nghìn đ/cp.",
+   "tac": [
+    "1.000–2.000 đ/cp",
+    "≈ 3–6% giá 29/10"
+   ],
+   "theo_doi": "nghị quyết cổ tức 2026, kế hoạch 2027"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Brent Q2/2026 bình quân 103 USD/thùng (EIA), 3/9 vẫn 95 USD; ĐHĐCĐ 23/9: giá dầu 9T cao hơn kế hoạch ~30%, giá khí +27% — khí theo dầu nên không giảm cùng urê.",
+     "ng": "Ship & Bunker (EIA) · Vietstock 23/9"
+    },
+    {
+     "h": 1,
+     "t": "Phân bón chịu VAT 5% từ 1/7/2025: DCM được khấu trừ VAT đầu vào của khí, ước tới ~500 tỷ/năm.",
+     "ng": "Tạp chí Công Thương"
+    },
+    {
+     "h": 0,
+     "t": "Luật Dầu khí sửa đổi hiệu lực 1/3/2027: rút ngắn phê duyệt FDP, ưu đãi mỏ cận biên — cải thiện nguồn khí nội địa dài hạn, chưa tác động ngắn hạn.",
+     "ng": "KBSV 11/09"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": -1,
+     "t": "Urê Trung Đông 400 USD (1/2026) → 907 USD (cuối 4) → 400–450 USD (7/2026) khi Bangladesh, Ai Cập, Ấn Độ phục hồi sản xuất và Trung Quốc xuất khẩu lại.",
+     "ng": "SHS 04/08 · KBSV 11/09"
+    },
+    {
+     "h": -1,
+     "t": "Cung mới: Indorama (Nigeria) Train 3 nâng công suất 2,8 → 4,2 triệu tấn/năm.",
+     "ng": "KBSV 11/09"
+    },
+    {
+     "h": 1,
+     "t": "Cầu nhập khẩu: Ấn Độ mở thầu ~1,7 triệu tấn (đóng 11/8), Brazil vào mùa nhập 8–12; Campuchia — thị trường xuất khẩu chính của DCM — vào mùa mưa.",
+     "ng": "SHS 04/08 · KBSV 11/09"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "~32% thị phần urê và ~11,3% tổng thị phần phân bón trong nước (2025); PVN nắm 75,56%.",
+     "ng": "KBSV 11/09 · ACBS 05/08"
+    },
+    {
+     "h": 0,
+     "t": "Xuất khẩu linh hoạt: 9T/2026 413 nghìn tấn urê (150% kế hoạch); ACBS: định hướng xuất khẩu 25–30% sản lượng.",
+     "ng": "Thông cáo 16/10 · ACBS 05/08"
+    },
+    {
+     "h": 1,
+     "t": "Tồn kho 5,7 → 4,3 nghìn tỷ (30/6 → 30/9), vay ngắn hạn 3,6 → 2,7 nghìn tỷ; Q3 chi phí tài chính 144 tỷ (lãi vay 37).",
+     "ng": "BCTC Q3/2026"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Urê Cà Mau",
+   "phu": "Công suất thiết kế 800 nghìn tấn/năm; ~32% thị phần urê trong nước (KBSV)",
+   "so": [
+    [
+     "Tiêu thụ 9T/2026",
+     "741 nghìn tấn",
+     "96% KH năm"
+    ],
+    [
+     "Xuất khẩu 9T",
+     "413 nghìn tấn",
+     "150% KH"
+    ],
+    [
+     "Giá bán Q2/2026",
+     "15,3 triệu đ/tấn",
+     "+41%"
+    ],
+    [
+     "Lãi gộp/tấn 2025",
+     "3,56 triệu đ",
+     "VDSC"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q1/2026 biên gộp urê 39% (Q4/2025: 46%) khi giá khí 8,8 USD/mmBtu (−6%); xuất khẩu 177 nghìn tấn (+19%).",
+     "ng": "VDSC 12/06"
+    },
+    {
+     "t": "Sản xuất urê Q2 258,7 nghìn tấn (+1% so với Q1), ~257–259 nghìn tấn/quý — sát trần; 2025 sản xuất 966,7 nghìn tấn urê quy đổi.",
+     "ng": "SHS 04/08"
+    },
+    {
+     "t": "Q3 bán 214,8 nghìn tấn urê (+72% so với ~125 cùng kỳ; xuất khẩu 62,0); tháng 9 bán 78,7; kế hoạch tháng 10 chỉ 50 nghìn tấn.",
+     "ng": "Thông cáo DCM 16/10"
+    }
+   ]
+  },
+  {
+   "ten": "NPK, tự doanh và sản phẩm mới",
+   "phu": "Ba nhà máy ~1,5 triệu tấn phân bón/năm (MAS); tự doanh phân phối DAP, kali",
+   "so": [
+    [
+     "NPK 9T/2026",
+     "176,8 nghìn tấn",
+     "76% KH"
+    ],
+    [
+     "Tự doanh 6T",
+     "217 nghìn tấn",
+     "+17%"
+    ],
+    [
+     "Biên gộp NPK Q1/2026",
+     "13%",
+     "VDSC"
+    ],
+    [
+     "Biên gộp tự doanh Q1/2026",
+     "~2%",
+     "VDSC"
+    ]
+   ],
+   "y": [
+    {
+     "t": "NPK 6T −28% vì giá cao; Q3 bán ~57,8 nghìn tấn. Doanh thu ngoài urê Q3 ước ~3,5 nghìn tỷ, gấp đôi cùng kỳ (~1,7) — chủ yếu tự doanh (biên ~2%).",
+     "ng": "SHS 04/08 · thông cáo 16/10 · BCTC Q3 (ước)"
+    },
+    {
+     "t": "CO2 thực phẩm thương mại từ 2/2026 (~3.700 tấn, >50 tỷ doanh thu/năm); dự án khí công nghiệp 288 tỷ (7.500 tấn argon + 4.600 tấn nitơ lỏng/năm) đạt 44%.",
+     "ng": "MAS 27/08 · SHS 04/08"
+    }
+   ]
+  },
+  {
+   "ten": "Nguồn khí và dự án",
+   "phu": "Khí ~90% từ PVN (46% giá dầu FO), còn lại theo Brent; bổ sung Nam Du – U Minh từ Q4/2028",
+   "so": [
+    [
+     "Giá khí 2025",
+     "8,37 USD/mmBtu",
+     "−14%"
+    ],
+    [
+     "Giá khí Q1/2026",
+     "8,8 USD/mmBtu",
+     "−6%"
+    ],
+    [
+     "Nam Du – U Minh",
+     "11,56 USD/mmBtu",
+     "~+35%"
+    ],
+    [
+     "Nâng công suất urê",
+     "125%",
+     "đang lập FS"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Từ 2027 phần khí tính theo Brent đổi sang 13,7% Brent (từ 12,7%), bỏ phần cộng 1 USD/mmBtu; VDSC hạ giá khí 2027 1 USD/mmBtu.",
+     "ng": "VDSC 12/06 · BSC"
+    },
+    {
+     "t": "Nhà máy và kho cảng PVCFC – Nhơn Trạch đạt 14,47% tiến độ; cụm xuất hàng xá triển khai 480 ngày từ 24/12/2025.",
+     "ng": "SHS 04/08"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Urê tiêu thụ: nội địa và xuất khẩu",
+   "kieu": "cot_chong",
+   "dv": "nghìn tấn",
+   "nhan": [
+    "2025",
+    "KH 2026",
+    "9T/2026"
+   ],
+   "ss": [
+    {
+     "ten": "Nội địa",
+     "v": [
+      404,
+      496,
+      328
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Xuất khẩu",
+     "v": [
+      401,
+      275,
+      413
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "9 tháng xuất khẩu 413 nghìn tấn (150% kế hoạch), nội địa mới 66%; riêng Q3 xuất khẩu chỉ 62 nghìn tấn.",
+   "ng": "VDSC 12/06 (2025) · ĐHĐCĐ 2026 · thông cáo DCM 16/10"
+  },
+  {
+   "ten": "Giá bán urê bình quân của DCM",
+   "kieu": "cot",
+   "dv": "triệu đ/tấn",
+   "nhan": [
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Giá bán urê",
+     "v": [
+      9.9,
+      10.9,
+      11.0,
+      11.0,
+      10.8,
+      15.3
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 1,
+   "y": "Q2/2026 15,3 triệu đ/tấn (+41%) khi urê Trung Đông lên 907 USD; 5 quý trước đó quanh 10–11 triệu đ/tấn.",
+   "ng": "VDSC 12/06 · KBSV 11/09 (Q3/25 suy từ cả năm)"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp theo năm",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 1,
+   "nhan": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "9T/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      29.6,
+      26.8,
+      23.9,
+      21.4,
+      13.6,
+      17.4,
+      28.7,
+      35.2,
+      15.7,
+      18.7,
+      23.8,
+      25.1
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "y": "Đỉnh chu kỳ trước 35,2% (2022), đáy 13,6% (2019) và 15,7% (2023); 9T/2026 25,1% — riêng Q3 19,1%.",
+   "ng": "BCTC DCM (VNDirect; 2025 kiểm toán)"
+  },
+  {
+   "ten": "Tiền ròng và hàng tồn kho",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền ròng",
+     "v": [
+      7594,
+      7197,
+      9258,
+      4899,
+      5390,
+      6149,
+      4327,
+      5319
+     ],
+     "mau": "c3"
+    },
+    {
+     "ten": "Hàng tồn kho",
+     "v": [
+      2950,
+      3250,
+      2795,
+      4597,
+      4809,
+      4665,
+      5669,
+      4306
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "30/9/2026 tiền ròng 5,3 nghìn tỷ (30/6: 4,3, sau cổ tức 1,06 nghìn tỷ) khi tồn kho giảm về 4,3 nghìn tỷ.",
+   "ng": "BCTC DCM (VNDirect): tiền + đầu tư ngắn hạn − vay"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 17615,
+    "th": 17740,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 22/4/2026 · BCTC Q3 (doanh thu thuần)"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 1182,
+    "th": 2286,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 22/4/2026 · BCTC Q3 (LN cổ đông)"
+   },
+   {
+    "ten": "Urê tiêu thụ",
+    "kh": 771,
+    "th": 741,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "nghìn tấn",
+    "ng": "ĐHĐCĐ · thông cáo 16/10"
+   },
+   {
+    "ten": "Urê xuất khẩu",
+    "kh": 275,
+    "th": 413,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "nghìn tấn",
+    "ng": "thông cáo 16/10"
+   }
+  ],
+  "y": "9 tháng LN đạt 193% kế hoạch cả năm — kế hoạch (−38%) đặt khi chưa tính giá urê tăng; doanh thu 101%, urê 96%. Mô hình cơ sở cả năm 2.556 tỷ LN cổ đông.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-09-11",
+   "kn": "MUA",
+   "tp": 42100,
+   "ln26": 2987,
+   "ln27": 1634,
+   "pp": "FCFF 50% + EV/EBITDA 6,7 lần 50%",
+   "y": "Hạ LN 2026/27 thêm 24%/23% vì giá urê thấp hơn kỳ vọng; nâng giá khí 2028–2030 thêm 10% do khí Nam Du – U Minh. Định giá cộng tiền 10.881 tỷ, trừ nợ ròng 2.074 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/tct_phan_bon_dau_khi_ca_mau_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-08-27",
+   "kn": "MUA",
+   "tp": 40600,
+   "ln26": 2690,
+   "pp": "không nêu (P/E 2026F 6,1 lần)",
+   "y": "Urê bình quân 7T 587 USD/tấn, kỳ vọng 400–450 USD nửa cuối năm; dự báo urê 891 nghìn tấn, NPK 350 nghìn tấn, biên gộp 24,9% (LNST 2026F).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/bao_cao_ngan_ctcp_tong_cong_ty_phan_bon_dau_khi_ca_mau_dcm_vn_mua_cung_khan_hiem_xuat_khau_but_pha.pdf"
+  },
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-08-05",
+   "kn": "MUA",
+   "tp": 42600,
+   "ln26": 2213,
+   "ln27": 1987,
+   "pp": "không nêu",
+   "y": "Giữ dự phóng LN 2026 +15%, giá mục tiêu đến cuối 2026 sau cổ tức; urê bình quân 2026 trên 500 USD, xuất khẩu 25–30% sản lượng.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/dcm_cap_nhat_nhanh_05_08_2026.pdf"
+  },
+  {
+   "ctck": "SHS",
+   "ngay": "2026-08-04",
+   "kn": "KHẢ QUAN",
+   "tp": 36650,
+   "ln26": 2499,
+   "ln27": 1740,
+   "pp": "DCF",
+   "y": "Hạ giá mục tiêu từ 49.500 vì chi phí vốn cao hơn; giá urê nửa cuối năm 12.300 đ/kg; nêu 3.300 tỷ tiền gửi bị phong tỏa cho khoản vay ngắn hạn.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/dcm_bao_cao_cap_nhat_kqkd.pdf"
+  },
+  {
+   "ctck": "VDSC",
+   "ngay": "2026-06-12",
+   "kn": "MUA",
+   "tp": 48500,
+   "ln26": 3059,
+   "ln27": 2680,
+   "pp": "FCFF 50% + P/B 1,7 lần 50%",
+   "y": "Viết khi urê gần đỉnh: giá bán urê 2026 +25% (~550 USD), Brent 80, LN 2027 chỉ −12%; hạ giá khí 2027 1 USD/mmBtu theo công thức mới.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/Tan_huong_co_hoi_tu_khu_vuc_Trung_ong.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Cổ tức 2.000 đ/cp (GDKHQ 09/07/2026) được trừ vào giá mục tiêu VDSC (12/06) khi so với giá hiện tại; SHS ghi 36.650 đ (Simplize 36.600).",
+ "nguon": [
+  {
+   "ten": "KBSV — Báo cáo cập nhật 2Q2026",
+   "ngay": "11/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/tct_phan_bon_dau_khi_ca_mau_bao_cao_cap_nhat_2q2026.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Cung khan hiếm, xuất khẩu bứt phá",
+   "ngay": "27/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/bao_cao_ngan_ctcp_tong_cong_ty_phan_bon_dau_khi_ca_mau_dcm_vn_mua_cung_khan_hiem_xuat_khau_but_pha.pdf"
+  },
+  {
+   "ten": "ACBS — Cập nhật nhanh DCM",
+   "ngay": "05/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/dcm_cap_nhat_nhanh_05_08_2026.pdf"
+  },
+  {
+   "ten": "SHS — Báo cáo cập nhật KQKD",
+   "ngay": "04/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/dcm_bao_cao_cap_nhat_kqkd.pdf"
+  },
+  {
+   "ten": "VDSC — Tận hưởng cơ hội từ khu vực Trung Đông",
+   "ngay": "12/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DCM/Tan_huong_co_hoi_tu_khu_vuc_Trung_ong.pdf"
+  },
+  {
+   "ten": "Vietstock — ĐHĐCĐ bất thường DCM: lợi nhuận 9 tháng bứt phá",
+   "ngay": "23/09/2026",
+   "link": "https://vietstock.vn/2026/09/dhdcd-bat-thuong-dcm-loi-nhuan-9-thang-but-pha-737-1495043.htm"
+  },
+  {
+   "ten": "Tuổi Trẻ — PVCFC thông qua các quyết sách tại ĐHĐCĐ bất thường 2026",
+   "ngay": "24/09/2026",
+   "link": "https://tuoitre.vn/pvcfc-thong-qua-cac-quyet-sach-tai-dai-hoi-co-dong-bat-thuong-2026-100260924143257913.htm"
+  },
+  {
+   "ten": "Mekong ASEAN — Phân bón Cà Mau vượt 50% mục tiêu xuất khẩu urê 2026 (thông cáo 16/10)",
+   "ngay": "10/2026",
+   "link": "https://mekongasean.vn/phan-bon-ca-mau-vuot-50-muc-tieu-xuat-khau-ure-nam-2026-60713.html"
+  },
+  {
+   "ten": "Doanh nghiệp Hội nhập — Đạm Cà Mau sắp chi hơn 1.000 tỷ trả cổ tức tháng 7",
+   "ngay": "29/06/2026",
+   "link": "https://doanhnghiephoinhap.vn/dam-ca-mau-sap-chi-hon-1000-ty-dong-tra-co-tuc-cho-co-dong-trong-thang-7-141460.html"
+  },
+  {
+   "ten": "Stockbiz — DCM chốt chi hơn 1.000 tỷ trả cổ tức trong tháng 7",
+   "ngay": "6/2026",
+   "link": "https://stockbiz.vn/tin-tuc/dcm-dam-ca-mau-chot-chi-hon-1000-ty-dong-tra-co-tuc-trong-thang-7/40658398"
+  },
+  {
+   "ten": "Báo Pháp luật — DCM đặt mục tiêu lãi 2026 đi lùi, cổ tức 20%",
+   "ngay": "4/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dam-ca-mau-dcm-dat-muc-tieu-lai-sau-thue-nam-2026-di-lui-du-chia-co-tuc-ty-le-20.html"
+  },
+  {
+   "ten": "Báo Pháp luật — Lợi nhuận 2025 tăng 34%",
+   "ngay": "3/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dam-ca-mau-dcm-loi-nhuan-nam-2025-tang-truong-34-chot-quyen-tham-du-dhdcd-thuong-nien.html"
+  },
+  {
+   "ten": "Mekong ASEAN — ĐHĐCĐ 2026: mục tiêu doanh thu 35.000 tỷ đến 2030",
+   "ngay": "4/2026",
+   "link": "https://mekongasean.vn/phan-bon-ca-mau-muc-tieu-doanh-thu-35000-ty-dong-khong-phai-dem-cua-trong-lo-54358.html"
+  },
+  {
+   "ten": "BSC — Báo cáo DCM (công thức giá khí: 46% giá dầu FO, 12,7%/13,7% Brent)",
+   "ngay": "2023",
+   "link": "https://www.bsc.com.vn/Report/ReportFile/11257"
+  },
+  {
+   "ten": "elibook — VNDIRECT: giá khí DCM ~10 USD/mmBtu khi Brent 80",
+   "ngay": "09/04/2026",
+   "link": "https://elibook.vn/2026/04/09/dcm-loi-nhuan-rong-co-the-dat-muc-cao-3400-ty-trong-nam-2026/"
+  },
+  {
+   "ten": "Tạp chí Công Thương — DCM có thể được khấu trừ VAT tới 500 tỷ đồng/năm",
+   "ngay": "",
+   "link": "https://tapchicongthuong.vn/dam-ca-mau--dcm--co-the-duoc-khau-tru-thue-vat-toi-500-ty-dong-nam-126681.htm"
+  },
+  {
+   "ten": "Tạp chí Công Thương — DCM muốn nâng công suất nhà máy urê",
+   "ngay": "",
+   "link": "https://tapchicongthuong.vn/dam-ca-mau--dcm--muon-nang-cong-suat-nha-may-ure--mo-mang-xuat-khau-trai-cay-131754.htm"
+  },
+  {
+   "ten": "Đại biểu Nhân dân — Bảo dưỡng tổng thể Nhà máy Đạm Cà Mau 2026",
+   "ngay": "30/09/2026",
+   "link": "https://daibieunhandan.vn/dam-ca-mau-chay-dua-tung-gio-tren-cong-truong-bao-duong-10432260.html"
+  },
+  {
+   "ten": "24hMoney — Giá urê cuối 9/2026 và dự báo quý 4",
+   "ngay": "10/2026",
+   "link": "https://24hmoney.vn/posts/-c55a2844900.html"
+  },
+  {
+   "ten": "Ship & Bunker — EIA: Brent Q2/2026 bình quân 102,93 USD",
+   "ngay": "2026",
+   "link": "https://shipandbunker.com/news/world/352050-eia-slashes-brent-forecast-as-supply-disruptions-ease-ship-bunker-cuts-bunker-price-outlook-sharply"
+  },
+  {
+   "ten": "Báo Lào Cai — Brent trên 95 USD (3/9)",
+   "ngay": "03/09/2026",
+   "link": "https://baolaocai.vn/gia-xang-dau-hom-nay-39-brent-tren-95-usd-xang-chieu-nay-co-the-tang-post907514.html"
+  }
+ ]
+}

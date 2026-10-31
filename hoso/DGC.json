@@ -1,0 +1,1577 @@
+{
+ "v": 2,
+ "ma": "DGC",
+ "ten": "Công ty cổ phần Tập đoàn Hóa chất Đức Giang",
+ "nganh": "Hóa chất",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-30",
+ "lan_sau": "sau BCTC Q4/2026 (cuối 1/2027) hoặc khi có kết luận điều tra",
+ "cp_trieu": 379.78,
+ "cp_ng": "379.778.413 cp lưu hành (SHS 24/08/2026), vốn điều lệ 3.798 tỷ; không thưởng/chia tách — giá điều chỉnh lệch 20,6% từ 9/2026 là cổ tức tiền 8.000 đ (GDKHQ 14/09/2026)",
+ "co_tuc": [
+  [
+   "2025-12-24",
+   3000,
+   "tạm ứng cổ tức 2025 đợt 1 (30%)"
+  ],
+  [
+   "2026-09-14",
+   8000,
+   "5.000 đ còn lại của 2025 + 3.000 đ tạm ứng 2026; trả 25/09/2026"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Lãi hóa chất Q3 hồi 30% từ đáy, vẫn −46% cùng kỳ; giá đã trả kịch bản xấu, chưa trả hồi phục",
+  "dk": "up_tren:15",
+  "khac": "Lãi hóa chất Q3 hồi 30% từ đáy, vẫn −46% cùng kỳ; giá đã trả phần lớn cho hồi phục 2027"
+ },
+ "dong_mo": "Mỏ apatit 25 đóng để phục vụ điều tra, lưu huỳnh tăng gấp 3, thuế xuất khẩu P4 lên 10%: biên gộp từ 31,5% (2025) còn 18,9% (Q2/2026), Q3 nhích lên 20,5%. Sau cổ tức 8.000 đ/cp (25/9), tiền ròng 30/9 còn 22,0 nghìn đ/cp. P/E 6 × LN cốt lõi 2027E cộng tiền ròng cuối 2026E, trừ 500 tỷ rủi ro pháp lý: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "−58%",
+   "nhan": "LN từ hóa chất 9T/2026 so với cùng kỳ",
+   "tieu": "Q3 xác nhận đáy biên ở Q2, chưa phải hồi phục",
+   "t": "Bỏ lãi tiền gửi, LN cổ đông từ hóa chất 9T/2026 còn 854 tỷ (9T/2025: 2.015). Q3 326 tỷ: +30% so với Q2 nhờ biên gộp 18,9% → 20,5%, vẫn −46% cùng kỳ. Ba cú sốc còn nguyên: mỏ 25 đóng, nhập toàn bộ quặng (tự khai thác rẻ hơn ~24% — Yuanta); lưu huỳnh (~10% giá vốn) 865–890 USD/tấn tháng 8; thuế xuất khẩu P4 10% → 15% (2027). Cơ sở 2027: biên gộp 24% (2025: 31,5%).",
+   "ng": "BCTC Q3/2026 VNDirect · Yuanta 11/05 · SunSirs, Argus, Fertilizer Daily · NĐ 199/2025 · mô hình"
+  },
+  {
+   "so": "22,2",
+   "nhan": "nghìn đ/cp tiền ròng cuối 2026E",
+   "tieu": "Tiền mặt là phần chắc nhất của giá",
+   "t": "30/9, sau khi trả 8.000 đ/cp (3,04 nghìn tỷ) ngày 25/9: tiền và tiền gửi 9,76 nghìn tỷ, vay 1,39 nghìn tỷ, không vay dài hạn. Tiền ròng chỉ giảm 1,83 nghìn tỷ nhờ LN Q3, tồn kho giảm 375 tỷ, nợ phải trả ngoài vay tăng 488 tỷ (mô hình cho đảo chiều một phần). Cuối 2026E ~8,4 nghìn tỷ. Lãi tiền gửi đóng ~30% LN 2026E. Điểm trừ: BĐS Đức Giang chưa nộp tiền sử dụng đất.",
+   "ng": "BCTC Q3/2026 VNDirect · Mekong ASEAN · MBS 13/08"
+  },
+  {
+   "so": "14",
+   "nhan": "bị can, gồm cựu Chủ tịch Đào Hữu Huyền",
+   "tieu": "Rủi ro pháp lý chưa có giá, nên trừ thẳng vào tiền",
+   "t": "Ba nhóm cáo buộc: ô nhiễm môi trường, khai thác tài nguyên trái phép, vi phạm kế toán. BCTC 2025 kiểm toán ngoại trừ (tồn kho, ảnh hưởng vụ án). Doanh nghiệp mới trích ~100 tỷ cho môi trường; cá nhân đã khắc phục 331 tỷ. Mô hình trừ 500 tỷ (cơ sở), 1.500 tỷ (xấu) — mỗi 1.000 tỷ ≈ 2,6 nghìn đ/cp. HĐQT mới từ 8/5 (Chủ tịch Đào Hữu Kha); Tổng giám đốc thay 14/8 sau khi bị khởi tố 23/7.",
+   "ng": "MAS 27/07 · MBS 13/08 · SHS 24/08 · Simplize"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Giá đã trả cho kịch bản xấu, chưa trả cho lưu huỳnh hạ nhiệt",
+   "dk": "up_tren:15",
+   "t": "Bỏ tiền ròng, giá 30/10 trả 2,8 lần LN cốt lõi 2027E cơ sở, 3,7 lần LN cốt lõi 9T/2026 năm hóa; trước 12/2025 thấp 25% là 7,7, trung vị 9,2. P/E 6 × 1.516 tỷ + tiền ròng − 500 tỷ: {gt}. Xấu 31,2 (biên 20%, 9T/2026: 20,7%; P/E 5, trừ 1.500 tỷ); tốt 67,1 (mỏ mở lại, biên 28%, Nghi Sơn 1.000 tỷ doanh thu, P/E 8).",
+   "ng": "mô hình · giá, BCTC VNDirect",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "Giá đã trả phần lớn cho hồi phục 2027",
+    "t": "P/E 6 × LN cốt lõi 2027E 1.516 tỷ (biên gộp 24%: lưu huỳnh hạ, quặng vẫn nhập) + tiền ròng cuối 2026E 8,4 nghìn tỷ − 500 tỷ rủi ro pháp lý: {gt}. Phần lời còn lại nằm ở kịch bản mỏ mở lại (tốt 67,1: biên 28%, P/E 8); xấu 31,2 nghìn đ/cp."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   3025,
+   1689,
+   1889
+  ],
+  "ln_truoc": 2987,
+  "eps": [
+   7965,
+   4447,
+   4974
+  ],
+  "bv": [
+   39567,
+   35536,
+   37510
+  ],
+  "co_tuc_nam": 3000,
+  "them": [
+   {
+    "ten": "LN cốt lõi, bỏ lãi tiền gửi (tỷ)",
+    "v": [
+     2504,
+     1175,
+     1516
+    ]
+   },
+   {
+    "ten": "Biên LN gộp",
+    "v": [
+     31.5,
+     20.8,
+     23.2
+    ],
+    "d": 1,
+    "pt": 1
+   },
+   {
+    "ten": "Tiền ròng/cp (nghìn đ)",
+    "v": [
+     27.4,
+     22.2,
+     21.9
+    ],
+    "d": 1
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     21.3,
+     11.8,
+     13.6
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "2025: BCTC kiểm toán (LN cổ đông 3.025 tỷ; VNDirect cộng 4 quý bản tự lập 2.990). 9T/2026 theo VNDirect (1.267; Q3 478). Cổ tức 2026 kế hoạch 30% (3.000 đ) — đã tạm ứng cùng 5.000 đ còn lại của 2025 (GDKHQ 14/09/2026)."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo nguồn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Hóa chất (sau chi phí)",
+    "mau": "c1",
+    "v": [
+     2504,
+     1175,
+     1516
+    ]
+   },
+   {
+    "ten": "Lãi tiền gửi ròng",
+    "mau": "c3",
+    "v": [
+     521,
+     514,
+     373
+    ]
+   }
+  ],
+  "nhan": "Hóa chất (sau chi phí)",
+  "ng": "Lãi tiền gửi ròng = doanh thu tài chính − chi phí tài chính, sau thuế và CĐTS. 2026E–2027E: mô hình (2027E giảm vì đã trả 3.038 tỷ cổ tức)."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 30/10)",
+  "nhom": "11 mã cùng ngành Hóa chất vốn hóa lớn nhất",
+  "kv": [
+   [
+    "GVR",
+    17.9
+   ],
+   [
+    "DCM",
+    6.6
+   ],
+   [
+    "DPM",
+    9.2
+   ],
+   [
+    "PHR",
+    8.4
+   ],
+   [
+    "BFC",
+    12.8
+   ],
+   [
+    "DPR",
+    8.0
+   ],
+   [
+    "TDP",
+    27.5
+   ],
+   [
+    "TRC",
+    9.7
+   ],
+   [
+    "CSV",
+    8.7
+   ],
+   [
+    "VFG",
+    5.4
+   ],
+   [
+    "APH",
+    7.1
+   ]
+  ],
+  "tv": 8.7,
+  "moi_cp": 4882,
+  "max": 25,
+  "y": "DGC tính trên EPS 4 quý 4.882 đ (gồm lãi tiền gửi). Bỏ tiền ròng sau cổ tức 9/2026, giá 30/10 chỉ trả ~3,3 lần LN cốt lõi 4 quý. Nhóm gồm cả cao su (GVR, PHR, DPR, TRC) và phân bón (DCM, DPM).",
+  "ng": "BCTC VNDirect (DGC, DCM, DPM, DPR, BFC… đến Q3/2026), giá 30/10/2026 (gói số liệu)"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: doanh thu × biên gộp theo chế độ chi phí, tiền ròng tách riêng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Mảng hóa chất hiện hữu (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     11262,
+     9559,
+     10000
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên lợi nhuận gộp (%)",
+    "v": [
+     31.5,
+     20.8,
+     24.0
+    ],
+    "d": 1,
+    "dam": 1
+   },
+   {
+    "ten": "Lãi gộp",
+    "v": [
+     3553,
+     1987,
+     2400
+    ],
+    "tang": 1
+   },
+   {
+    "nhom": "Nghi Sơn — xút, clo (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu",
+    "v": [
+     0,
+     0,
+     700
+    ]
+   },
+   {
+    "ten": "Lãi gộp",
+    "v": [
+     0,
+     0,
+     84
+    ]
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Chi phí bán hàng + QLDN",
+    "v": [
+     562,
+     532,
+     590
+    ]
+   },
+   {
+    "ten": "Thu nhập tài chính ròng",
+    "v": [
+     621,
+     639,
+     463
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     3606,
+     2100,
+     2347
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LNST",
+    "v": [
+     3189,
+     1823,
+     2042
+    ]
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     3025,
+     1689,
+     1889
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Trong đó: LN cốt lõi (bỏ lãi tiền gửi)",
+    "v": [
+     2504,
+     1175,
+     1516
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     7965,
+     4447,
+     4974
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "Tiền ròng cuối năm",
+    "v": [
+     10420,
+     8424,
+     8327
+    ]
+   }
+  ],
+  "ghi": "2025A: BCTC kiểm toán (lãi gộp, LNTT, LNST, LN cổ đông); chi phí, tài chính cộng 4 quý. 2026E = 9 tháng thực tế + Q4 ước tính (Nghi Sơn chưa vận hành thương mại). Tiền ròng = tiền + đầu tư ngắn hạn − vay, trừ cổ tức đã chốt quyền; 2027E trừ cổ tức 30% và đầu tư ròng ~1.000 tỷ (MBS 2027F)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1689
+  ],
+  "cuoi": [
+   "2027E",
+   1889
+  ],
+  "buoc": [
+   [
+    "Biên gộp hóa chất",
+    259
+   ],
+   [
+    "Doanh thu hóa chất",
+    74
+   ],
+   [
+    "Nghi Sơn",
+    68
+   ],
+   [
+    "Lãi tiền gửi",
+    -141
+   ],
+   [
+    "Chi phí, thuế, CĐTS",
+    -60
+   ]
+  ],
+  "y": "Biên gộp 20,8% → 24% khi lưu huỳnh hạ (quặng vẫn nhập, thuế P4 15%) thêm ~259 tỷ; lãi tiền gửi mất ~141 tỷ vì đã trả 3.038 tỷ cổ tức.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Biên gộp Q4/2026 (%)",
+   "v": [
+    "17,5",
+    "21",
+    "24"
+   ],
+   "ly_do": "Q2: 18,9%; Q3: 20,5% (mô hình cũ 20%); Q4/2025: 25,0%. Quặng vẫn nhập (đủ đến hết Q1/2027 — MBS); lưu huỳnh 865–890 USD/tấn tháng 8"
+  },
+  {
+   "ten": "Quặng apatit · lưu huỳnh 2027",
+   "v": [
+    "nhập · đắt",
+    "nhập · rẻ lại",
+    "mỏ · rẻ lại"
+   ],
+   "ly_do": "Mỏ 25 đóng phục vụ điều tra, chưa có thời gian mở lại (MBS); quặng tự khai thác rẻ hơn ~24% (Yuanta). Lưu huỳnh gấp 3 cùng kỳ (Q1/2026), có lúc 1.100 USD/tấn"
+  },
+  {
+   "ten": "Doanh thu mảng hiện hữu 2027 (tỷ)",
+   "v": [
+    "9.200",
+    "10.000",
+    "10.800"
+   ],
+   "ly_do": "9T/2026 × 4/3 = 9.346; kế hoạch 2026 10.100; 2025 11.262, trừ nhà máy cồn (~2% doanh thu — Yuanta) đang bán"
+  },
+  {
+   "ten": "Biên gộp mảng hiện hữu 2027 (%)",
+   "v": [
+    "20",
+    "24",
+    "28"
+   ],
+   "ly_do": "9T/2026 20,7%; Q4/2025 25,0%; 2025 31,5% khi tự chủ quặng, thuế xuất khẩu P4 5%. Thuế 15% từ 2027 (P4 43% doanh thu 2024) trừ ~1,5–2 điểm %"
+  },
+  {
+   "ten": "Nghi Sơn 2027: doanh thu · biên",
+   "v": [
+    "300 · 0%",
+    "700 · 12%",
+    "1.000 · 20%"
+   ],
+   "ly_do": "Đủ công suất ~1.500 tỷ/năm, năm đầu ~70% (Yuanta); đã lùi 3 lần. CSV (xút – clo) biên gộp 4 quý 24,7%; năm đầu gánh khấu hao ~160 tỷ"
+  },
+  {
+   "ten": "Chi phí bán hàng + QLDN 2027 (tỷ)",
+   "v": [
+    "560",
+    "590",
+    "620"
+   ],
+   "ly_do": "2025: 562; 9T/2026: 397; thêm chi phí bán xút từ Nghi Sơn"
+  },
+  {
+   "ten": "Thu nhập tài chính ròng 2027",
+   "v": [
+    "5,5%",
+    "5,5%",
+    "5,5%"
+   ],
+   "ly_do": "× tiền ròng cuối 2026E. 2025: 621 tỷ trên ~11 nghìn tỷ; 9T/2026: 514 tỷ (~6,3%/năm). Không đổi định giá (tiền tính riêng)"
+  },
+  {
+   "ten": "P/E trên LN cốt lõi 2027E",
+   "v": [
+    "5",
+    "6",
+    "8"
+   ],
+   "ly_do": "Giá trị DN/LN cốt lõi 4 quý trước 12/2025: 25% 7,7 · trung vị 9,2; từ 12/2025: 2,3–7,2. Xấu là mất hẳn lợi thế quặng, không phải đáy chu kỳ"
+  },
+  {
+   "ten": "Truy thu, xử phạt (tỷ, trừ vào tiền)",
+   "v": [
+    "1.500",
+    "500",
+    "0"
+   ],
+   "ly_do": "Chưa có kết luận; DN mới trích ~100 tỷ cho môi trường; cá nhân đã khắc phục 331 tỷ (MBS); MBS đưa QLDN 2026F lên 1.236 tỷ (2025: 172)"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1582,
+   "ln27": 1367,
+   "gia": 31.2,
+   "mo_ta": "Mỏ đóng, lưu huỳnh còn đắt: biên gộp 20% như 9T/2026, doanh thu 9.200 tỷ; Nghi Sơn 300 tỷ hòa vốn; LN cốt lõi ~1.010 tỷ × P/E 5; trừ 1.500 tỷ truy thu/xử phạt"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1689,
+   "ln27": 1889,
+   "gia": 44.8,
+   "mo_ta": "Lưu huỳnh hạ, quặng vẫn nhập, thuế P4 15%: biên gộp 24%, doanh thu 10.000 tỷ; Nghi Sơn 700 tỷ (biên 12%); LN cốt lõi 1.516 tỷ × P/E 6; trừ 500 tỷ"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 1789,
+   "ln27": 2505,
+   "gia": 67.1,
+   "mo_ta": "Mỏ 25 mở lại trong 2027, lưu huỳnh bình thường: biên gộp 28%, doanh thu 10.800 tỷ; Nghi Sơn 1.000 tỷ (biên 20%); LN cốt lõi ~2.120 tỷ × P/E 8"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "Hóa chất: P/E × LN cốt lõi 2027E; cộng tiền ròng, trừ rủi ro pháp lý",
+  "ck": 0,
+  "cp": 379.78,
+  "phan": [
+   {
+    "ten": "Hóa chất",
+    "mau": "c1",
+    "x": [
+     1005,
+     1516,
+     2121
+    ],
+    "boi": [
+     5,
+     6,
+     8
+    ],
+    "x_ten": "LN cốt lõi 2027E (bỏ lãi tiền gửi)",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     5025,
+     9096,
+     16968
+    ]
+   },
+   {
+    "ten": "Tiền ròng",
+    "mau": "c3",
+    "x": [
+     6808,
+     7924,
+     8532
+    ],
+    "boi": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "x_ten": "cuối 2026E (sau cổ tức 9/2026) − truy thu/xử phạt giả định",
+    "boi_ten": "hệ số",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     6808,
+     7924,
+     8532
+    ]
+   }
+  ],
+  "von": [
+   11833,
+   17020,
+   25500
+  ],
+  "gia": [
+   31.2,
+   44.8,
+   67.1
+  ]
+ },
+ "nhay": [
+  [
+   "P/E hóa chất ±1 lần",
+   null,
+   4.0
+  ],
+  [
+   "Doanh thu hóa chất 2027 ±5%",
+   97,
+   1.5
+  ],
+  [
+   "Biên gộp hóa chất 2027 ±1 điểm %",
+   80,
+   1.3
+  ],
+  [
+   "Truy thu, xử phạt ±500 tỷ",
+   null,
+   1.3
+  ],
+  [
+   "Nghi Sơn: doanh thu 2027 ±300 tỷ",
+   29,
+   0.5
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   7.2,
+   7.2,
+   8.5,
+   7.5,
+   6.9,
+   7.3,
+   7.3,
+   6.0,
+   7.4,
+   7.7,
+   7.5,
+   8.9,
+   8.5,
+   8.1,
+   7.2,
+   7.1,
+   6.6,
+   7.8,
+   7.9,
+   8.4,
+   10.4,
+   8.4,
+   8.5,
+   8.2,
+   7.5,
+   7.6,
+   8.0,
+   6.5,
+   7.4,
+   7.6,
+   7.5,
+   8.4,
+   8.3,
+   7.9,
+   8.1,
+   7.9,
+   7.4,
+   6.0,
+   6.1,
+   6.4,
+   6.7,
+   6.8,
+   7.5,
+   11.6,
+   12.1,
+   13.1,
+   14.8,
+   13.6,
+   12.1,
+   8.8,
+   8.6,
+   7.5,
+   6.0,
+   5.6,
+   6.3,
+   4.4,
+   4.2,
+   4.1,
+   5.3,
+   4.8,
+   4.8,
+   5.6,
+   4.4,
+   6.1,
+   7.5,
+   8.1,
+   7.1,
+   8.0,
+   8.8,
+   8.3,
+   8.3,
+   9.1,
+   8.8,
+   10.7,
+   11.1,
+   11.5,
+   12.3,
+   13.9,
+   16.3,
+   18.9,
+   24.2,
+   24.5,
+   21.2,
+   20.7,
+   17.9,
+   11.7,
+   16.3,
+   17.3,
+   11.1,
+   12.6,
+   9.6,
+   7.5,
+   5.9,
+   5.8,
+   4.0,
+   3.8,
+   3.9,
+   3.4,
+   3.5,
+   3.5,
+   4.1,
+   4.8,
+   5.4,
+   8.2,
+   8.7,
+   7.4,
+   10.5,
+   10.5,
+   10.0,
+   13.7,
+   15.1,
+   14.5,
+   16.0,
+   15.5,
+   14.2,
+   14.3,
+   14.6,
+   14.1,
+   14.1,
+   15.0,
+   14.3,
+   14.2,
+   12.7,
+   11.6,
+   10.9,
+   12.4,
+   12.5,
+   12.0,
+   11.2,
+   11.7,
+   11.4,
+   8.3,
+   8.3,
+   9.4,
+   6.4,
+   6.8,
+   6.8,
+   7.0,
+   5.7,
+   7.7,
+   6.4,
+   6.0
+  ],
+  "p10": 5.3,
+  "p25": 6.8,
+  "tv": 8.1,
+  "thap": [
+   "2023-02",
+   3.4
+  ],
+  "nay": [
+   "2026-10",
+   6.0
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Giá trị ba kịch bản tương đương P/E 8,7 · 9,0 · 10,2 trên LN 2027E (gồm lãi tiền gửi). Bỏ tiền ròng, giá trị DN/LN cốt lõi 4 quý trước 12/2025: 25% 7,7 · trung vị 9,2; từ 12/2025 chỉ 2,3–7,2."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 2450,
+   "ln": [
+    320,
+    406,
+    500
+   ],
+   "ck": 752
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 2550,
+   "ln": [
+    314,
+    422,
+    522
+   ],
+   "ck": 587
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1582,
+    1689,
+    1789
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "Đã ra (10/2026)",
+   "loai": "len",
+   "tieu": "KQKD Q3/2026: vượt mô hình nhờ khoản ngoài cốt lõi",
+   "ct": "Doanh thu 2.469 tỷ (−12%), biên gộp 20,5% (Q2: 18,9%), LN cổ đông 478 tỷ (−36%) — mô hình cũ 406 tỷ. Phần vượt chủ yếu là lãi tiền gửi đủ quý, thu nhập khác +15 tỷ, CĐTS thấp; lãi gộp chỉ hơn ~16 tỷ.",
+   "tac": [
+    "+72 tỷ",
+    "so với mô hình cơ sở; không đổi giả định biên gộp 2027"
+   ],
+   "theo_doi": "biên gộp Q4, chi phí lưu huỳnh"
+  },
+  {
+   "khi": "Cuối 1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Mô hình cơ sở: doanh thu 2.550 tỷ, biên gộp 21%, LN cổ đông 422 tỷ (−28%); lãi tiền gửi giảm còn ~145 tỷ/quý sau cổ tức. Cùng kỳ 587 tỷ. Cả năm cơ sở 1.689 tỷ.",
+   "tac": [
+    "≥ 500 tỷ",
+    "nghiêng kịch bản tốt; dưới 330 tỷ: kịch bản xấu"
+   ],
+   "theo_doi": "biên gộp, giá lưu huỳnh, xuất khẩu P4"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Nghi Sơn chạy thử (xút – clo)",
+   "ct": "Giai đoạn 1 vốn 2.400 tỷ, 50.000 tấn NaOH/năm; xây dựng ~90% (SHS), chạy thử Q4/2026 sau 3 lần lùi. Việt Nam nhập >80% xút nên đầu ra sẵn (MBS).",
+   "tac": [
+    "+1,1 nghìn đ/cp",
+    "trong giá trị cơ sở (700 tỷ doanh thu 2027); đủ công suất thêm ~2,7 nghìn đ/cp"
+   ],
+   "theo_doi": "ngày vận hành thương mại, giá xút"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "hai",
+   "tieu": "Bán nhà máy cồn, cơ cấu ắc quy",
+   "ct": "Đang đàm phán chuyển nhượng nhà máy cồn (~2% doanh thu 2025), lãnh đạo cam kết không lỗ; ethanol Mỹ rẻ hơn sản xuất trong nước. Ắc quy Tia Sáng chuyển sang pin lithium.",
+   "tac": "",
+   "theo_doi": "giá chuyển nhượng"
+  },
+  {
+   "khi": "1/1/2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thuế xuất khẩu P4 lên 15%",
+   "ct": "Nghị định 199/2025: 5% → 10% (2026) → 15% (2027). P4 là 43% doanh thu 2024 (BSC); Ấn Độ chiếm 25–35% doanh thu P4. Đã tính vào biên gộp 2027.",
+   "tac": [
+    "≈ −210 tỷ LNTT",
+    "mỗi +5 điểm % trên 4.253 tỷ doanh thu P4 (2024), nếu không đẩy được vào giá"
+   ],
+   "theo_doi": "giá xuất khẩu P4, thị phần Ấn Độ"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Mỏ apatit 25 mở lại",
+   "ct": "Mỏ đóng phục vụ điều tra, chưa có thời gian mở lại; quặng nhập Ai Cập đủ đến hết Q1/2027, đang tìm thêm nguồn Kazakhstan, Ma-rốc (MBS).",
+   "tac": [
+    "+5,1 nghìn đ/cp",
+    "biên gộp 2027 24% → 28%, cùng P/E 6"
+   ],
+   "theo_doi": "kết luận điều tra, giấy phép khai thác"
+  },
+  {
+   "khi": "2027",
+   "loai": "hai",
+   "tieu": "Cổ tức tiền",
+   "ct": "9 tháng trả 11.000 đ/cp (3.000 đ tháng 12/2025, 8.000 đ tháng 9/2026); kế hoạch 2026 (30%) đã tạm ứng hết. Mô hình giữ 30%/năm từ 2027.",
+   "tac": [
+    "3.000 đ/cp",
+    "≈ 9% giá 30/10 nếu giữ 30%/năm"
+   ],
+   "theo_doi": "kế hoạch, cổ tức tại ĐHĐCĐ 2027"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Lưu huỳnh còn đắt",
+   "ct": "Lưu huỳnh (~10% giá vốn) gấp 3 cùng kỳ ở Q1/2026, có lúc 1.100 USD/tấn; DGC cắt phân bón. Lãnh đạo (8/2026): lưu huỳnh còn cao thì lợi nhuận còn khó.",
+   "tac": [
+    "±1,3 nghìn đ/cp",
+    "mỗi ±1 điểm % biên gộp 2027"
+   ],
+   "theo_doi": "giá lưu huỳnh Trung Đông"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "len",
+   "tieu": "P4 Trung Quốc giữ giá cao",
+   "ct": "Wengfu trúng thầu 27.350 NDT/tấn (6/8/2026), SunSirs ~28.000 đầu 9; P4 +30% trong Q1/2026 do chi phí đẩy (VNDS). PAT (51%, sản xuất P4) vẫn tăng lãi (MBS).",
+   "tac": "",
+   "theo_doi": "giá P4 Vân Nam, Quý Châu"
+  },
+  {
+   "khi": "Chưa định",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Kết luận điều tra, truy thu, xử phạt",
+   "ct": "14 bị can; cáo buộc ô nhiễm, khai thác trái phép, vi phạm kế toán. BCTC 2025 kiểm toán ngoại trừ; DN chưa ghi nhận khoản nào ngoài ~100 tỷ dự phòng môi trường.",
+   "tac": [
+    "−2,6 nghìn đ/cp",
+    "mỗi 1.000 tỷ truy thu/xử phạt; cơ sở đã trừ 500 tỷ"
+   ],
+   "theo_doi": "kết luận điều tra, điều chỉnh hồi tố BCTC"
+  },
+  {
+   "khi": "Chưa định",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Dự án BĐS Đức Giang (Hà Nội)",
+   "ct": "Chấp thuận chủ trương 12/11/2025 (Yuanta); lãnh đạo chờ thị trường hồi phục mới nộp tiền sử dụng đất (MBS) — khoản chi có thể lấy đi một phần tiền ròng.",
+   "tac": "",
+   "theo_doi": "tiền sử dụng đất, thời điểm khởi công"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": -1,
+     "t": "Xung đột Trung Đông, eo Hormuz gián đoạn: lưu huỳnh gấp 3 cùng kỳ (Q1/2026), có lúc 1.100 USD/tấn; điện, than cốc, amoniac cùng tăng.",
+     "ng": "Yuanta 11/05 · MBS 13/08 · VNDS 29/04"
+    },
+    {
+     "h": -1,
+     "t": "Nghị định 199/2025: thuế xuất khẩu phốt pho vàng 5% → 10% từ 1/1/2026, 15% từ 1/1/2027.",
+     "ng": "VCCI"
+    },
+    {
+     "h": 1,
+     "t": "Doanh thu tài chính 9T/2026 576 tỷ (+6%) trên ~12 nghìn tỷ tiền gửi, ~6%/năm; sau cổ tức 9/2026 còn 9,8 nghìn tỷ — đệm lợi nhuận nhỏ lại.",
+     "ng": "BCTC Q3/2026 VNDirect"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "P4 Trung Quốc +30% trong Q1/2026 do chi phí đẩy; Wengfu trúng thầu 27.350 NDT/tấn (6/8/2026), ~28.000 đầu 9.",
+     "ng": "VNDS 29/04 · SMM · SunSirs"
+    },
+    {
+     "h": 1,
+     "t": "Xút: Việt Nam nhập 600–800 nghìn tấn/năm, trên 80% nhu cầu — đầu ra sẵn cho Nghi Sơn.",
+     "ng": "SHS 24/08 · MBS 13/08"
+    },
+    {
+     "h": -1,
+     "t": "Ethanol Mỹ rẻ hơn sản xuất trong nước sau thỏa thuận thương mại Việt – Mỹ: DGC rút khỏi mảng cồn.",
+     "ng": "MBS 13/08 · SHS 24/08"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": -1,
+     "t": "Khởi tố 14 bị can (17/3/2026), 7 người tạm giam; 23/7 khởi tố thêm Tổng giám đốc, một thành viên HĐQT, một Phó TGĐ. Sở hữu nước ngoài 17,9% → 3,9%.",
+     "ng": "MAS 27/07 · SHS 24/08"
+    },
+    {
+     "h": 1,
+     "t": "Gia đình ông Huyền giữ 40,7%; HĐQT mới đại diện ~45% vốn. Nhân sự chủ chốt, kỹ sư ở lại, nhà máy chạy liên tục.",
+     "ng": "MAS 27/07 · MBS 13/08"
+    },
+    {
+     "h": 0,
+     "t": "Vào diện kiểm soát (5/2026, chậm BCTC kiểm toán), cảnh báo (30/6, kiểm toán ngoại trừ); ra khỏi diện cảnh báo 21/8/2026.",
+     "ng": "MAS 27/07 · Simplize"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Phốt pho vàng (P4) và axit",
+   "phu": "P4 4.253 tỷ (43,1%), axit phosphoric 1.773 tỷ (18%) doanh thu 2024 (BSC); P4 chủ yếu xuất khẩu",
+   "so": [
+    [
+     "P4 Trung Quốc 6/8/2026",
+     "27.350 NDT/tấn",
+     "Wengfu (SMM)"
+    ],
+    [
+     "Giá P4 Q1/2026",
+     "+30%",
+     "chi phí đẩy (VNDS)"
+    ],
+    [
+     "Thuế xuất khẩu P4",
+     "10% → 15%",
+     "2026 → 2027"
+    ],
+    [
+     "Xuất khẩu P4 6T/2026",
+     "≈ −15%",
+     "SHS ước"
+    ]
+   ],
+   "y": [
+    {
+     "t": "PAT (sở hữu 51%, sản phẩm chính P4) vẫn tăng lợi nhuận nhờ giá P4 cao, cầu tốt; phần sụt chủ yếu ở phân bón (lãnh đạo, ĐHĐCĐ 2026).",
+     "ng": "MBS 13/08"
+    },
+    {
+     "t": "Ấn Độ chiếm 25–35% doanh thu P4 — thị trường chịu tác động trực tiếp khi thuế xuất khẩu tăng.",
+     "ng": "BSC (6/2025)"
+    }
+   ]
+  },
+  {
+   "ten": "Phân bón và nguyên liệu",
+   "phu": "Supe lân, DAP, MAP; lưu huỳnh là đầu vào axit sunfuric; quặng apatit từ mỏ Lào Cai (đang đóng)",
+   "so": [
+    [
+     "Lưu huỳnh Q1/2026",
+     "gấp 3 cùng kỳ",
+     "Yuanta"
+    ],
+    [
+     "Đỉnh 2026",
+     "~1.100 USD/tấn",
+     "MBS"
+    ],
+    [
+     "Quặng tự khai thác",
+     "rẻ hơn ~24%",
+     "Yuanta"
+    ],
+    [
+     "Quặng nhập Ai Cập",
+     "đủ đến Q1/2027",
+     "MBS"
+    ]
+   ],
+   "y": [
+    {
+     "t": "DGC giảm sản lượng phân bón, giữ lưu huỳnh cho sản phẩm giá trị cao hơn; đang tìm thêm quặng từ Kazakhstan, Ma-rốc.",
+     "ng": "MBS 13/08"
+    },
+    {
+     "t": "Q1/2026 dừng axit và phân bón một tháng để bảo dưỡng định kỳ 3 năm; cùng Tết, tổng thời gian dừng gần 40 ngày.",
+     "ng": "Yuanta 11/05"
+    }
+   ]
+  },
+  {
+   "ten": "Nghi Sơn và tái cơ cấu",
+   "phu": "Tổ hợp 12.000 tỷ, 3 giai đoạn; giai đoạn 1 vốn 2.400 tỷ (xút – clo và dẫn xuất)",
+   "so": [
+    [
+     "Giai đoạn 1",
+     "50.000 tấn NaOH/năm",
+     "báo chí"
+    ],
+    [
+     "XDCB dở dang 30/6",
+     "> 1.221 tỷ",
+     "+500 tỷ trong 6T (SHS)"
+    ],
+    [
+     "Doanh thu đủ công suất",
+     "~1.500 tỷ/năm",
+     "Yuanta"
+    ],
+    [
+     "Chạy thử",
+     "Q4/2026",
+     "lùi từ Q1/2026"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Lùi tiến độ do nhập thiết bị chậm, không liên quan vụ án; chỉ còn hạng mục đường giao thông (lãnh đạo, 8/2026).",
+     "ng": "MBS 13/08"
+    },
+    {
+     "t": "Ắc quy Tia Sáng chuyển sang pin lithium, pin năng lượng mặt trời; BĐS Đức Giang có thể lùi khởi công.",
+     "ng": "SHS 24/08"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Biên lợi nhuận gộp theo quý",
+   "kieu": "cot",
+   "dv": "%",
+   "nhan": [
+    "Q4/23",
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      32.9,
+      32.1,
+      39.3,
+      34.5,
+      33.9,
+      34.9,
+      33.9,
+      31.1,
+      25.0,
+      23.0,
+      18.9,
+      20.5
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 1,
+   "y": "32–39% khi tự chủ quặng (Q4/2023 – Q2/2025); 25,0% Q4/2025, 23,0% Q1/2026 (quặng nhập, lưu huỳnh gấp 3, dừng máy ~40 ngày), 18,9% Q2, 20,5% Q3/2026.",
+   "ng": "BCTC DGC (VNDirect)"
+  },
+  {
+   "ten": "LN cổ đông theo quý: hóa chất và lãi tiền gửi",
+   "kieu": "cot_chong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Hóa chất",
+     "v": [
+      544,
+      728,
+      593,
+      613,
+      686,
+      722,
+      607,
+      456,
+      278,
+      250,
+      326
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Lãi tiền gửi ròng",
+     "v": [
+      129,
+      133,
+      113,
+      134,
+      124,
+      120,
+      145,
+      132,
+      131,
+      130,
+      152
+     ],
+     "mau": "c3"
+    }
+   ],
+   "so_le": 0,
+   "y": "Lãi tiền gửi đứng ở 113–152 tỷ/quý; phần hóa chất từ 728 tỷ (Q2/2024) xuống 250 tỷ (Q2/2026), Q3 326 tỷ. Sau cổ tức 9/2026, lãi tiền gửi giảm ~1/4.",
+   "ng": "BCTC DGC (VNDirect); lãi tiền gửi = (DT tài chính − CP tài chính) sau thuế, CĐTS"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp theo năm",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 1,
+   "nhan": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "9T/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      19.5,
+      16.0,
+      11.7,
+      24.6,
+      18.7,
+      23.7,
+      33.3,
+      46.9,
+      35.4,
+      35.0,
+      31.5,
+      20.7
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "y": "Đỉnh chu kỳ 46,9% (2022); 2023–2025 31–35% khi tự chủ quặng; 9T/2026 20,7% — về vùng 2018–2020 (19–25%).",
+   "ng": "BCTC DGC (VNDirect; 2025 kiểm toán)"
+  },
+  {
+   "ten": "Tiền ròng và hàng tồn kho",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền ròng",
+     "v": [
+      10575,
+      9821,
+      10209,
+      10602,
+      11141,
+      11560,
+      10084,
+      10197,
+      8370
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Hàng tồn kho",
+     "v": [
+      738,
+      985,
+      963,
+      1285,
+      1871,
+      1682,
+      1784,
+      2460,
+      2086
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Tiền ròng 30/9/2026 8,4 nghìn tỷ, sau khi trả 3,04 nghìn tỷ cổ tức (25/9); tồn kho 2,09 nghìn tỷ, giảm từ 2,46 (30/6), vẫn gấp 2,8 lần Q3/2024 (quặng nhập đủ dùng đến hết Q1/2027 — MBS).",
+   "ng": "BCTC DGC (VNDirect): tiền + đầu tư ngắn hạn − vay"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 10100,
+    "th": 7009,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 1600,
+    "th": 1369,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3 (VNDirect)"
+   },
+   {
+    "ten": "Cổ tức tiền 2026",
+    "kh": 3000,
+    "th": 3000,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "đ/cp",
+    "ng": "tạm ứng, GDKHQ 14/09/2026"
+   }
+  ],
+  "y": "9 tháng đạt 86% kế hoạch LNST (kế hoạch đã −50% so với 2025). Mô hình cơ sở cả năm LNST 1.823 tỷ (114% kế hoạch), LN cổ đông 1.689 tỷ.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "SHS",
+   "ngay": "2026-08-24",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "pp": "không định giá (vụ án chưa kết luận, nguồn quặng bất định)",
+   "y": "Biên gộp Q2 18,9% do quặng nhập và phân bón kém; nêu rủi ro truy thu, xử phạt, điều chỉnh hồi tố BCTC; Nghi Sơn xong ~90% xây dựng, chạy thử Q4/2026.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/bao_cao_cap_nhat_kqkd_dgc.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-08-13",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "ln26": 1884,
+   "ln27": 3516,
+   "pp": "ghi chép KQKD Q2, ĐHĐCĐ 2026; có bảng dự phóng",
+   "y": "Mỏ 25 chưa có thời gian mở lại, quặng nhập Ai Cập đủ đến hết Q1/2027; lưu huỳnh có lúc 1.100 USD/tấn. Dự phóng 2026F gồm chi phí QLDN 1.236 tỷ (2025: 172).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/dgc_cap_nhat_kqkd_q2_2026_va_dai_hoi_co_dong_2026.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-07-27",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "pp": "cập nhật thông tin doanh nghiệp",
+   "y": "Dòng thời gian pháp lý 12/2025 – 7/2026; gia đình ông Huyền 40,7% vốn; quỹ ngoại thoái vốn mạnh trong Q2/2026 (VinaCapital ra hết, Dragon Capital dưới 5%).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/cap_nhat_thong_tin_doanh_nghiep_ctcp_tap_doan_hoa_chat_duc_giang.pdf"
+  },
+  {
+   "ctck": "Yuanta",
+   "ngay": "2026-05-11",
+   "kn": "MUA",
+   "tp": 128139,
+   "pp": "giữ định giá cũ (ba kịch bản, báo cáo 3/2026)",
+   "y": "Giữ khuyến nghị dù LN Q1 −49%: chờ thông tin rõ hơn thay vì sửa mô hình. Ước quặng tự khai thác rẻ hơn ~24%; lưu huỳnh (~10% giá vốn) gấp 3 cùng kỳ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/Cho_oi_man_suong_tan_i.pdf"
+  },
+  {
+   "ctck": "VNDIRECT",
+   "ngay": "2026-04-29",
+   "kn": "KHÔNG ĐÁNH GIÁ",
+   "tp": null,
+   "pp": "KQKD Q1/2026, tạm dừng dự phóng",
+   "y": "KQKD Q1 thấp hơn dự phóng; P4 +30% trong Q1 chủ yếu do chi phí đẩy (Hormuz); ước Nghi Sơn đã giải ngân ~1.600 tỷ (66,8%).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/Gian_oan_san_xuat_gay_ap_luc_len_loi_nhuan.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — sau khi lãnh đạo bị khởi tố, phần lớn CTCK ngừng định giá DGC; mô hình và định giá của trang ở các phần trên. Yuanta giữ giá mục tiêu 128.139 đ đặt trước biến cố; cổ tức 8.000 đ/cp (GDKHQ 14/09/2026) được trừ khi so với giá hiện tại (Simplize ghi 120.100).",
+ "nguon": [
+  {
+   "ten": "SHS — Báo cáo cập nhật KQKD DGC",
+   "ngay": "24/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/bao_cao_cap_nhat_kqkd_dgc.pdf"
+  },
+  {
+   "ten": "MBS — Cập nhật KQKD Q2/2026 và Đại hội cổ đông 2026",
+   "ngay": "13/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/dgc_cap_nhat_kqkd_q2_2026_va_dai_hoi_co_dong_2026.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Cập nhật thông tin doanh nghiệp DGC",
+   "ngay": "27/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/cap_nhat_thong_tin_doanh_nghiep_ctcp_tap_doan_hoa_chat_duc_giang.pdf"
+  },
+  {
+   "ten": "Yuanta — Chờ đợi màn sương tan đi",
+   "ngay": "11/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/Cho_oi_man_suong_tan_i.pdf"
+  },
+  {
+   "ten": "VNDIRECT — Gián đoạn sản xuất gây áp lực lên lợi nhuận",
+   "ngay": "29/04/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DGC/Gian_oan_san_xuat_gay_ap_luc_len_loi_nhuan.pdf"
+  },
+  {
+   "ten": "Mekong ASEAN — Hóa chất Đức Giang chốt ngày trả cổ tức tiền mặt tỷ lệ 80%",
+   "ngay": "9/2026",
+   "link": "https://mekongasean.vn/hoa-chat-duc-giang-chot-ngay-tra-co-tuc-tien-mat-ty-le-80-59204.html"
+  },
+  {
+   "ten": "24hMoney — Tuần 14–18/09: nổi bật các khoản cổ tức kỷ lục (DGC GDKHQ 14/09)",
+   "ngay": "9/2026",
+   "link": "https://24hmoney.vn/news/tuan-14-18-09-noi-bat-cac-khoan-co-tuc-ky-luc-c1a2831633.html"
+  },
+  {
+   "ten": "Báo Văn hóa — DGC chốt quyền nhận cổ tức tiền mặt 30%",
+   "ngay": "12/2025",
+   "link": "https://baovanhoa.vn/kinh-te/hoa-chat-duc-giang-dgc-chot-quyen-nhan-co-tuc-tien-mat-30-187260.html"
+  },
+  {
+   "ten": "VCCI — Nghị định 199/2025: thuế xuất khẩu phốt pho vàng 10% (2026), 15% (2027)",
+   "ngay": "2025",
+   "link": "https://www.vcci.com.vn/tin-tuc/trien-khai-chinh-sach-uu-dai-ve-thue-moi-cho-o-to-dien-va-mot-so-mat-hang"
+  },
+  {
+   "ten": "BSC — Cập nhật DGC: cơ cấu doanh thu 2024 (P4 4.253 tỷ, axit 1.773 tỷ)",
+   "ngay": "01/04/2025",
+   "link": "https://new.bsc.com.vn/Report/ReportFile/12763954"
+  },
+  {
+   "ten": "elibook — BSC: rủi ro tăng thuế xuất khẩu P4 (Ấn Độ 25–35% doanh thu P4)",
+   "ngay": "05/06/2025",
+   "link": "https://elibook.vn/2025/06/05/dgc-rui-ro-tang-thue-xuat-khau-p4-khong-anh-huong-nhieu-den-tiem-nang-tang-truong-dai-han/"
+  },
+  {
+   "ten": "SMM — Giá trúng thầu phốt pho vàng Wengfu 27.350 NDT/tấn",
+   "ngay": "8/2026",
+   "link": "https://news.metal.com/vn/newscontent/104046410-hóa-chất-phốt-pho-giá-trúng-thầu-phốt-pho-vàng-wengfu-hôm-thứ-năm-27350-nhân-dân-tệtấn"
+  },
+  {
+   "ten": "SunSirs — Giá phốt pho vàng Trung Quốc",
+   "ngay": "9/2026",
+   "link": "https://www.sunsirs.com/vn/prodetail-708.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — Đức Giang tăng gấp rưỡi công suất dự án số 1 tại Nghi Sơn",
+   "ngay": "",
+   "link": "https://thoibaotaichinhvietnam.vn/hoa-chat-duc-giang-tang-gap-ruoi-cong-suat-du-an-so-1-tai-nghi-son-183390.html"
+  },
+  {
+   "ten": "VnEconomy — Tiến độ giải ngân dự án Tổ hợp hóa chất 12.000 tỷ tại Nghi Sơn",
+   "ngay": "",
+   "link": "https://vneconomy.vn/tien-do-giai-ngan-du-an-to-hop-hoa-chat-12-000-ty-dong-tai-nghi-son.htm"
+  },
+  {
+   "ten": "Fertilizer Daily — KPC nâng giá lưu huỳnh tháng 7 lên kỷ lục 950 USD/tấn FOB",
+   "ngay": "09/07/2026",
+   "link": "https://www.fertilizerdaily.com/20260709-kuwait-kpc-sulphur-price-record/"
+  },
+  {
+   "ten": "ChemAnalyst — Giá phốt pho vàng Trung Quốc tăng 4,3% (nguồn cung thắt)",
+   "ngay": "24/09/2026",
+   "link": "https://www.chemanalyst.com/NewsAndDeals/NewsDetails/china-yellow-phosphorus-prices-jump-4-3-as-plant-outages-44658"
+  },
+  {
+   "ten": "Simplize — Tin DGC (ra khỏi diện cảnh báo 21/08/2026)",
+   "ngay": "8/2026",
+   "link": "https://simplize.vn/co-phieu/DGC/tin-tuc"
+  }
+ ]
+}

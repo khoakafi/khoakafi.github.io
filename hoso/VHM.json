@@ -1,0 +1,1330 @@
+{
+ "v": 2,
+ "ma": "VHM",
+ "ten": "CTCP Vinhomes",
+ "nganh": "Bất động sản",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026",
+ "cp_trieu": 8214.8,
+ "cp_ng": "Vốn điều lệ 82.148 tỷ (BCTC Q3/2026, sau chia cổ phiếu 1:1, ĐKCC 07/08/2026)",
+ "co_tuc": [
+  [
+   "2026-06-29",
+   3000,
+   "cổ tức tiền mặt 2025: 6.000 đ/cp trước chia 1:1, quy đổi 3.000 đ"
+  ]
+ ],
+ "tieu_de": {
+  "t": "Q3 gấp đôi kỳ vọng, nhưng chia lãi BCC kéo biên xuống 23,5%; 2027 lùi về nhịp bán lẻ"
+ },
+ "dong_mo": "9 tháng lãi 71,4 nghìn tỷ, vượt kế hoạch cả năm; 2026E 88,6 nghìn tỷ (+111%). Lô lớn thưa đi, 2027E lùi 37% về 56,2 nghìn tỷ. P/B 1,5 lần vốn chủ giữa 2027 cho {gt} ({up}); xấu 38,1, tốt 86,4, cán cân lên/xuống {rr} lần. Cửa tăng: Global Sportia, mở bán Cam Lâm.",
+ "luan_diem": [
+  {
+   "so": "+111%",
+   "nhan": "LN cổ đông 2026E",
+   "tieu": "Q3 gấp đôi mô hình cũ, năm 2026 đã chốt kỷ lục",
+   "t": "Q3 lãi 23,1 nghìn tỷ (+453%; mô hình cũ cơ sở 11,6): chuyển nhượng BĐS 75,8 nghìn tỷ, biên gộp 66,5%. 9 tháng 71,4 nghìn tỷ, LNST hợp nhất 75,1 — 125% kế hoạch 60 nghìn tỷ. Q4 mô hình 17,2 nghìn tỷ (Q4/2025: 27,5) → cả năm 88,6.",
+   "ng": "BCTC Q3 · VHM công bố 30/10 · mô hình"
+  },
+  {
+   "so": "−37%",
+   "nhan": "LN cổ đông 2027E",
+   "tieu": "Q3 xác nhận: biên lô lớn không kéo dài",
+   "t": "Biên LN cổ đông trên doanh thu quy đổi từ 35,9% (6T) xuống 23,5% ở Q3: chi phí tài chính 24,4 nghìn tỷ, trong đó 19,9 là lãi chia đối tác BCC; lãi vay 4,5 nghìn tỷ (+68%). Mô hình để biên 2027 ở 28% (2023–2025: 28–30%): doanh thu quy đổi ~201 nghìn tỷ → LN 56,2 nghìn tỷ, vẫn hơn 2025 34%.",
+   "ng": "BCTC Q3 · thuyết minh chi phí tài chính · mô hình"
+  },
+  {
+   "so": "185,6",
+   "nhan": "nghìn tỷ chưa ghi nhận (30/9)",
+   "tieu": "Bán lẻ gánh Q3; backlog lo khoảng nửa 2027",
+   "t": "Doanh số Q3 71,5 nghìn tỷ, 81% bán lẻ (~58 — bằng 66% bán lẻ cả năm 2025); 9 tháng 219,6 nghìn tỷ (+35%). Backlog 30/9 lùi từ 196,8 xuống 185,6 vì bàn giao lớn. Ghi nhận 31% mỗi 6 tháng thì ~48% doanh thu quy đổi 2027E đến từ hợp đồng ký trước 2027; phần còn lại cần Global Sportia, Cam Lâm, Phước Vĩnh Tây.",
+   "ng": "VHM công bố 30/10 · Vietcap 02/06 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "P/B 1,5 lần vốn chủ: {up_so} so với giá hiện tại",
+   "t": "Giá trị = P/B × vốn chủ cổ đông 30/6/2027E (40,3 nghìn đ/cp); 1,5 lần ≈ trung vị P/B từ 2022 (1,58), hợp với ROE 2027E 16,9%. Xấu 38,1 (P/B 1,0 như 2024, doanh số 2027 170 nghìn tỷ); tốt 86,4 (P/B 2,0, doanh số 340 nghìn tỷ nhờ lô lớn mới). P/E 4 quý trông rẻ vì lô lớn đẩy LN lên; tính trên LN 2027E, P/E cao hơn 76%.",
+   "ng": "mô hình · P/B lịch sử: BCTC, giá cuối tháng"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   41895,
+   88573,
+   56208
+  ],
+  "ln_truoc": 31801,
+  "eps": [
+   5100,
+   10782,
+   6842
+  ],
+  "bv": [
+   28982,
+   36999,
+   43841
+  ],
+  "co_tuc_nam": 3000,
+  "them": [
+   {
+    "ten": "Doanh số bán (nghìn tỷ)",
+    "v": [
+     205.3,
+     279.6,
+     250
+    ],
+    "d": 0
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     19.0,
+     32.7,
+     16.9
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN, vốn chủ 2024–2025 và 9T/2026: BCTC; 2026E = 9T + Q4 mô hình. EPS, BVPS theo 8.214,8 triệu cp. Cổ tức 3.000 đ là đợt 2025 (6.000 đ trước chia)."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo nửa năm",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "6 tháng đầu",
+    "mau": "c2",
+    "v": [
+     10197,
+     48235,
+     26839
+    ]
+   },
+   {
+    "ten": "6 tháng cuối",
+    "mau": "c1",
+    "v": [
+     31698,
+     40338,
+     29369
+    ]
+   }
+  ],
+  "nhan": "6 tháng đầu",
+  "ng": "2025A, 6T/2026 và Q3/2026: BCTC; Q4/2026 và 2027: mô hình. 6 tháng cuối 2026E = Q3 thực tế 23.146 + Q4 17.192."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với chủ đầu tư nhà ở niêm yết",
+  "phu": "giá hôm nay, vốn chủ cuối 2026E",
+  "chi_so": "P/B 2026E",
+  "chi_so_kv": "P/B 2026F",
+  "nhom": "Nhà ở niêm yết",
+  "kv": [
+   [
+    "KDH",
+    1.5
+   ],
+   [
+    "PDR",
+    1.1
+   ],
+   [
+    "DXG",
+    1.2
+   ]
+  ],
+  "tv": 1.2,
+  "moi_cp": 36999,
+  "max": 3,
+  "y": "VHM được trả cao hơn vì ROE 2026E ~33%, gấp 2–9 lần nhóm (ROE 2026F: KDH 12,8%, PDR 7,5%, DXG 3,3%).",
+  "ng": "P/B, ROE 2026F của nhóm: MBS 19/05 (Bloomberg, giá ngày báo cáo); VHM: vốn chủ cuối 2026E của mô hình"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: doanh số → backlog → ghi nhận",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Bán hàng (nghìn tỷ đồng)"
+   },
+   {
+    "ten": "Doanh số bán",
+    "v": [
+     205.3,
+     279.6,
+     250.0
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Tỷ trọng bán lô lớn",
+    "s": [
+     "57%",
+     "6T trên 70% · Q3 19%",
+     "—"
+    ]
+   },
+   {
+    "ten": "Doanh thu chưa ghi nhận cuối kỳ",
+    "v": [
+     186.4,
+     184.2,
+     233.5
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Ghi nhận"
+   },
+   {
+    "ten": "Ghi nhận mỗi kỳ (% backlog + doanh số)",
+    "s": [
+     "6T 27% · 34%",
+     "6T 40% · Q3 37% · Q4 25%",
+     "6T 31% · 31%"
+    ]
+   },
+   {
+    "ten": "Doanh thu quy đổi (nghìn tỷ)",
+    "v": [
+     138.4,
+     294.0,
+     200.7
+    ],
+    "d": 1,
+    "tang": 1
+   },
+   {
+    "ten": "Biên LN cổ đông/doanh thu quy đổi (%)",
+    "v": [
+     30.3,
+     30.1,
+     28.0
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Lợi nhuận và vốn chủ"
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     41895,
+     88573,
+     56208
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     5100,
+     10782,
+     6842
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
+    "v": [
+     238.1,
+     303.9,
+     360.1
+    ],
+    "d": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     19.0,
+     32.7,
+     16.9
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Nợ vay cuối kỳ (nghìn tỷ)",
+    "s": [
+     "146,3",
+     "240,6 (30/9)",
+     "—"
+    ]
+   }
+  ],
+  "ghi": "Doanh thu quy đổi = DT bất động sản + bán lô lớn qua chuyển nhượng cổ phần + dự án BCC (VHM công bố; 9T/2026: 232,6 nghìn tỷ). 2026E = 9T thực tế + Q4; Q4 ghi nhận một tỷ lệ của (backlog 30/9 + doanh số Q4), 2027 mỗi 6 tháng một tỷ lệ của (backlog đầu kỳ + doanh số kỳ). Chưa tính cổ tức tiền mặt năm 2026."
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh số bán Q4/2026 (nghìn tỷ)",
+   "v": [
+    "40",
+    "60",
+    "85"
+   ],
+   "ly_do": "Q1 ~82, Q2 ~66, Q3 71,5 (81% bán lẻ); Shinhan dự báo cả năm 311 (Q4 ~91), Vietcap 287 (~67); căn trên 20–30 tỷ bán chậm"
+  },
+  {
+   "ten": "Doanh số bán 2027 (nghìn tỷ)",
+   "v": [
+    "170",
+    "250",
+    "340"
+   ],
+   "ly_do": "2025: 205; Vietcap 294, Shinhan 353, DSC 195; bán lẻ Q3/2026 ~58/quý; thêm Global Sportia, Cam Lâm; tín dụng BĐS bị giới hạn"
+  },
+  {
+   "ten": "Ghi nhận Q4/2026 (% backlog 30/9 + doanh số Q4)",
+   "v": [
+    "18%",
+    "25%",
+    "32%"
+   ],
+   "ly_do": "Q3/2026: 37% (có lô lớn ghi nhận ngay); Q4 thường là quý bàn giao lớn (Q4/2025 doanh thu thuần 102 nghìn tỷ)"
+  },
+  {
+   "ten": "Ghi nhận mỗi 6 tháng 2027 (% backlog đầu kỳ + doanh số kỳ)",
+   "v": [
+    "27%",
+    "31%",
+    "37%"
+   ],
+   "ly_do": "Ước từ số VHM công bố: 6T/2025 27%, 6T cuối 2025 34%, 6T/2026 40% (lô lớn ghi nhận ngay); bán lẻ mở bán 2025 bàn giao 2026–2029 (Vietcap)"
+  },
+  {
+   "ten": "Biên LN cổ đông/doanh thu quy đổi Q4/2026",
+   "v": [
+    "24%",
+    "28%",
+    "32%"
+   ],
+   "ly_do": "2023–2025: 28–30%; 6T/2026 35,9%; Q3 23,5% (chia lãi đối tác BCC 19,9 nghìn tỷ); 9T 30,7%"
+  },
+  {
+   "ten": "Biên LN cổ đông/doanh thu quy đổi 2027",
+   "v": [
+    "23%",
+    "28%",
+    "31%"
+   ],
+   "ly_do": "Lô lớn thưa hơn; lãi vay Q3 4,5 nghìn tỷ (+68%); xấu hạ 25% → 23% theo Q3 (chia lãi BCC); thiểu số 9T 4,9% LNST"
+  },
+  {
+   "ten": "P/B trên vốn chủ cổ đông 30/6/2027E",
+   "v": [
+    "1,0",
+    "1,5",
+    "2,0"
+   ],
+   "ly_do": "Từ 2018: thấp 10% 0,99, trung vị 2,34; từ 2022: 1,58. Theo ROE 2027E 10,9 / 16,9 / 24,0% (r 15%, g 6%): 0,5 / 1,2 / 2,0"
+  },
+  {
+   "ten": "Cổ tức tiền mặt trước 30/6/2027",
+   "v": [
+    "0",
+    "0",
+    "0"
+   ],
+   "ly_do": "Chưa có kế hoạch cho năm 2026, Vietcap dự báo 0; nếu trả, vốn chủ dùng định giá giảm tương ứng"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 81127,
+   "ln27": 34285,
+   "gia": 38.1,
+   "mo_ta": "Doanh số Q4 40, 2027 170 nghìn tỷ; ghi nhận Q4 18%, 2027 27%/6 tháng; biên 24% → 23%; P/B 1,0"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 88573,
+   "ln27": 56208,
+   "gia": 60.4,
+   "mo_ta": "Doanh số Q4 60, 2027 250 nghìn tỷ; ghi nhận Q4 25%, 2027 31%/6 tháng; biên 28% → 28%; P/B 1,5"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 99090,
+   "ln27": 85685,
+   "gia": 86.4,
+   "mo_ta": "Doanh số Q4 85, 2027 340 nghìn tỷ nhờ thương vụ lô lớn mới; ghi nhận Q4 32%, 2027 37%; biên 32% → 31%; P/B 2,0"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ cổ đông 30/6/2027E",
+  "ck": 0,
+  "cp": 8214.8,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông",
+    "mau": "c1",
+    "sh": 1,
+    "x": [
+     313261,
+     330779,
+     355062
+    ],
+    "boi": [
+     1.0,
+     1.5,
+     2.0
+    ],
+    "x_ten": "Vốn chủ 30/6/2027E",
+    "boi_ten": "P/B",
+    "gt": [
+     313261,
+     496168,
+     710124
+    ]
+   }
+  ],
+  "von": [
+   313261,
+   496168,
+   710124
+  ],
+  "gia": [
+   38.1,
+   60.4,
+   86.4
+  ]
+ },
+ "nhay": [
+  [
+   "P/B ±0,1 lần",
+   null,
+   4.0
+  ],
+  [
+   "Tốc độ ghi nhận ±3 điểm %/kỳ",
+   4020,
+   0.7
+  ],
+  [
+   "Biên LN cổ đông ±2 điểm %",
+   3145,
+   0.6
+  ],
+  [
+   "Doanh số Q4/2026 ±20 nghìn tỷ",
+   2702,
+   0.5
+  ],
+  [
+   "Doanh số 2027 ±50 nghìn tỷ",
+   2170,
+   0.4
+  ]
+ ],
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    8219,
+    11601,
+    17451
+   ],
+   "ck": 4184
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    9746,
+    17192,
+    27709
+   ],
+   "ck": 27514
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    81127,
+    88573,
+    99090
+   ]
+  }
+ ],
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   88573
+  ],
+  "cuoi": [
+   "2027E",
+   56208
+  ],
+  "buoc": [
+   [
+    "DT quy đổi −32%",
+    -28096
+   ],
+   [
+    "Biên 30,1% → 28%",
+    -4269
+   ]
+  ],
+  "y": "Doanh thu quy đổi giảm 32% là phần chính (87% mức giảm): 2026 có lô lớn và Q3 bàn giao dồn; biên chỉ hạ từ 30,1% về 28% vì Q3 đã kéo biên 2026 xuống.",
+  "ng": "mô hình"
+ },
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   9.17,
+   8.96,
+   8.79,
+   7.37,
+   7.51,
+   5.88,
+   6.33,
+   5.97,
+   6.5,
+   6.79,
+   7.1,
+   7.14,
+   6.0,
+   5.8,
+   6.45,
+   5.53,
+   5.63,
+   5.61,
+   5.73,
+   5.29,
+   5.46,
+   4.84,
+   3.31,
+   3.83,
+   4.08,
+   4.02,
+   4.14,
+   3.85,
+   3.7,
+   3.73,
+   3.69,
+   4.0,
+   4.18,
+   3.95,
+   3.78,
+   3.86,
+   3.77,
+   4.34,
+   3.98,
+   3.72,
+   3.61,
+   3.94,
+   3.23,
+   3.13,
+   3.07,
+   2.63,
+   2.57,
+   2.2,
+   2.35,
+   2.09,
+   2.02,
+   2.19,
+   1.82,
+   1.62,
+   1.75,
+   1.54,
+   1.63,
+   1.25,
+   1.55,
+   1.49,
+   1.48,
+   1.52,
+   1.75,
+   1.43,
+   1.19,
+   1.02,
+   1.01,
+   1.06,
+   1.02,
+   1.06,
+   1.04,
+   0.99,
+   0.93,
+   0.9,
+   0.88,
+   0.94,
+   0.97,
+   0.94,
+   0.89,
+   0.87,
+   0.86,
+   0.84,
+   1.04,
+   1.18,
+   1.55,
+   1.53,
+   1.8,
+   2.01,
+   1.99,
+   1.91,
+   1.95,
+   2.34,
+   2.0,
+   1.86,
+   1.78,
+   2.52,
+   2.44,
+   2.38,
+   2.32,
+   2.27,
+   2.13,
+   1.96
+  ],
+  "p10": 0.99,
+  "p25": 1.53,
+  "tv": 2.34,
+  "thap": [
+   "2025-02",
+   0.84
+  ],
+  "nay": [
+   "2026-10",
+   1.96
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 1,0 · 1,5 · 2,0 trên vốn chủ 30/6/2027E: 1,0 ≈ thấp 10% (0,99); 1,5 ≈ trung vị từ 2022 (1,58); 2,0 dưới trung vị từ 2018 (2,34) — mức bị kéo lên bởi 2018–2021, khi ROE trên 35%."
+ },
+ "su_kien": [
+  {
+   "khi": "30/10/2026",
+   "loai": "len",
+   "tieu": "KQKD Q3/2026: gấp đôi mô hình cũ",
+   "ct": "LN cổ đông 23,1 nghìn tỷ vs cơ sở cũ 11,6, nhờ chuyển nhượng BĐS 75,8 nghìn tỷ; nhưng 19,9 nghìn tỷ lãi chia đối tác BCC kéo biên xuống 23,5%.",
+   "tac": [
+    "+1,7 nghìn đ/cp",
+    "giá trị cơ sở 58,7 → 60,4 (vốn chủ 30/9 cao hơn)"
+   ],
+   "theo_doi": "biên LN, chi phí BCC"
+  },
+  {
+   "khi": "01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4 và cả năm 2026",
+   "ct": "Doanh thu thuần 9T 202,6 nghìn tỷ, 71% kế hoạch 285; mô hình cơ sở Q4 17,2 nghìn tỷ LN (Q4/2025: 27,5) từ bàn giao Ocean Park 2–3, Green Paradise.",
+   "tac": [
+    "≥ 17,2 nghìn tỷ",
+    "khớp cơ sở; dưới 9,7 nghìn tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "LN cổ đông, backlog 31/12"
+  },
+  {
+   "khi": "Q1/2027",
+   "loai": "len",
+   "tieu": "Global Gate Hạ Long bắt đầu bàn giao",
+   "ct": "Liền kề, biệt thự đã lên tầng 2–3 (MBS 10/2026); dự án chiếm ~14% backlog 30/6 — nguồn chính cho doanh thu 2027.",
+   "tac": [
+    "~27,6 nghìn tỷ",
+    "phần backlog Global Gate chờ ghi nhận"
+   ],
+   "theo_doi": "tiến độ bàn giao"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Chuyển nhượng cổ phần Global Sportia",
+   "ct": "VHM vẫn giữ 85% lợi ích (MBS 10/2026) trong khi Shinhan, Vietcap định giá với 33–35% — dư địa một thương vụ lô lớn qua chuyển nhượng cổ phần.",
+   "tac": [
+    "Kịch bản tốt",
+    "doanh số 2027 340 nghìn tỷ, P/B 2,0 → 86,4"
+   ],
+   "theo_doi": "công bố chuyển nhượng"
+  },
+  {
+   "khi": "04/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ 2027: kế hoạch và cổ tức",
+   "ct": "LNST 9T đã 125% kế hoạch 2026; kế hoạch 2027 sẽ cho thấy ban lãnh đạo kỳ vọng bao nhiêu lô lớn. Cổ tức tiền mặt 2026 chưa có trong mô hình.",
+   "tac": [
+    "−4,5 nghìn đ/cp",
+    "mỗi 3.000 đ/cp cổ tức tiền mặt trả trước 30/6/2027 (P/B 1,5)"
+   ],
+   "theo_doi": "kế hoạch LN 2027"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Mở bán Cam Lâm, Phước Vĩnh Tây, Global Sportia",
+   "ct": "Cam Lâm xong bồi thường đầu 2027 (MBS); Shinhan dự báo doanh số 2027 353 nghìn tỷ, Vietcap 294 — cao hơn mức 250 của kịch bản cơ sở.",
+   "tac": [
+    "+5,8 nghìn tỷ LN 2027",
+    "mỗi 50 nghìn tỷ doanh số 2027 thêm"
+   ],
+   "theo_doi": "doanh số quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lô lớn thưa, biên về mức bán lẻ",
+   "ct": "Lô lớn chỉ còn 19% doanh số Q3 (6T: trên 70%); biên Q3 23,5% khi chia lãi BCC. Kịch bản xấu: doanh số 2027 170 nghìn tỷ, biên 23%.",
+   "tac": [
+    "−22,3 nghìn đ/cp",
+    "kịch bản xấu so với cơ sở (P/B 1,0)"
+   ],
+   "theo_doi": "tỷ trọng lô lớn, chi phí BCC"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Siết tín dụng bất động sản",
+   "ct": "Tín dụng BĐS không được tăng nhanh hơn tín dụng chung (9–12% với phần lớn ngân hàng); căn trên 20–30 tỷ đã bán chậm (MBS 10/2026).",
+   "tac": [
+    "±0,7 nghìn đ/cp",
+    "mỗi 3 điểm % tốc độ ghi nhận"
+   ],
+   "theo_doi": "lãi suất vay mua nhà, tỷ lệ hấp thụ"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Đòn bẩy tăng nhanh",
+   "ct": "Nợ vay 30/9 240,6 nghìn tỷ (+64% từ đầu năm); lãi vay Q3 4,5 nghìn tỷ (+68%); tổng tài sản 1,34 triệu tỷ.",
+   "tac": [
+    "±0,6 nghìn đ/cp",
+    "mỗi 2 điểm % biên LN cổ đông"
+   ],
+   "theo_doi": "nợ vay ròng/vốn chủ, lãi suất trái phiếu"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Phải thu tăng nhanh hơn lợi nhuận",
+   "ct": "Phải thu ngắn hạn 9T +175,9 nghìn tỷ (riêng Q3 +93,2), gấp 2,3 lần LNST; người mua trả trước Q3 giảm 18,1 nghìn tỷ.",
+   "tac": "",
+   "theo_doi": "phải thu, dòng tiền kinh doanh"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Doanh số bán: bán lẻ và bán lô lớn",
+   "kieu": "cot_chong",
+   "dv": "nghìn tỷ",
+   "so_le": 0,
+   "nhan": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "ss": [
+    {
+     "ten": "Bán lẻ",
+     "v": [
+      36.3,
+      80.8,
+      42.6,
+      70.7,
+      88.3
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Bán lô lớn",
+     "v": [
+      42.6,
+      47.4,
+      44.4,
+      33.2,
+      117.0
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "Lô lớn 57% năm 2025, trên 70% ở 6T/2026; Q3/2026 đảo lại: 71,5 nghìn tỷ, 81% bán lẻ. 9T/2026: 219,6 nghìn tỷ.",
+   "ng": "Tổng: DSC 19/03 · tỷ trọng bán lẻ: Vietcap 02/06 · 2026: Shinhan 07/09, VHM công bố 30/10"
+  },
+  {
+   "ten": "Doanh thu chưa ghi nhận cuối kỳ",
+   "kieu": "cot",
+   "dv": "nghìn tỷ",
+   "so_le": 0,
+   "nhan": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "3/26",
+    "6/26",
+    "9/26"
+   ],
+   "ss": [
+    {
+     "ten": "Chưa ghi nhận",
+     "v": [
+      52.4,
+      107.6,
+      99.7,
+      94.2,
+      186.4,
+      201.6,
+      196.8,
+      185.6
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Backlog 30/9/2026 185,6 nghìn tỷ, ~1,7 lần trung bình 2021–2025; lùi nhẹ từ 30/6 vì Q3 bàn giao lớn.",
+   "ng": "DSC 19/03 · Vietcap 02/06 · Shinhan 07/09 · VHM công bố 30/10"
+  },
+  {
+   "ten": "LN cổ đông theo quý",
+   "kieu": "cot",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN cổ đông",
+     "v": [
+      12.2,
+      2.7,
+      7.5,
+      4.2,
+      27.5,
+      25.6,
+      22.7,
+      23.1
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Bốn quý liền trên 22 nghìn tỷ: Q4/2025 đến Q3/2026 được 98,9 nghìn tỷ, gấp 3,1 lần cả năm 2024.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "Nợ vay và người mua trả trước",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      72.2,
+      81.3,
+      88.0,
+      90.4,
+      141.5,
+      146.3,
+      162.1,
+      215.5,
+      240.6
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Người mua trả trước",
+     "v": [
+      49.4,
+      40.3,
+      43.3,
+      47.9,
+      100.8,
+      87.6,
+      105.2,
+      143.5,
+      125.5
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "9 tháng 2026: nợ vay +94 nghìn tỷ; người mua trả trước tăng đến 30/6 rồi giảm 18 nghìn tỷ trong Q3 khi bàn giao.",
+   "ng": "BCTC (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 285000,
+    "th": 202586,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 21/04/2026 · BCTC Q3"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 60000,
+    "th": 75059,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 21/04/2026 · BCTC Q3"
+   }
+  ],
+  "y": "LNST 9 tháng đã 125% kế hoạch; doanh thu thuần 71% (doanh thu quy đổi 82%). Kế hoạch doanh thu cần ~82 nghìn tỷ trong Q4 — mô hình cơ sở ghi nhận 61 nghìn tỷ quy đổi.",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "Bán hàng — đại dự án và bán lô lớn",
+   "phu": "Green Paradise (Cần Giờ, 2.870 ha) · Saigon Park (880 ha, 97%) · Global Gate Hạ Long (4.120 ha) · Hải Vân Bay (512 ha)",
+   "so": [
+    [
+     "Doanh số 9T/2026",
+     "219,6 nghìn tỷ",
+     "+35%"
+    ],
+    [
+     "Doanh số Q3/2026",
+     "71,5 nghìn tỷ",
+     "bán lẻ 81%"
+    ],
+    [
+     "Doanh số 6T/2026",
+     "148,1 nghìn tỷ",
+     "lô lớn trên 70%"
+    ],
+    [
+     "Doanh số 2025",
+     "205,3 nghìn tỷ",
+     "+98%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Bán lô lớn: bán sỉ cả phân khu cho đối tác (CapitaLand, Nomura, MIK, Masterise, Samty) — biên cao, ghi nhận sớm. Shinhan cho rằng thu tiền nhanh, nhưng phải thu ngắn hạn 9T/2026 vẫn tăng 175,9 nghìn tỷ.",
+     "ng": "MBS 06/10 · Vietcap 02/06 · Shinhan 07/09 · BCTC Q3"
+    },
+    {
+     "t": "Từ đầu năm, nhất là Q3/2026, trọng tâm chuyển sang căn hộ vừa túi tiền (50–80 m², 5–6 tỷ đồng ở Hóc Môn), hấp thụ tốt; sản phẩm trên 20–30 tỷ đồng cầu yếu.",
+     "ng": "MBS 06/10"
+    },
+    {
+     "t": "Năm 2027 có thêm Global Sportia (Hà Nội), Cam Lâm (Khánh Hòa, xong bồi thường đầu năm), Phước Vĩnh Tây; Global Sportia VHM vẫn giữ 85% lợi ích.",
+     "ng": "MBS 06/10 · Shinhan 07/09"
+    }
+   ]
+  },
+  {
+   "ten": "Ghi nhận — backlog và bàn giao",
+   "phu": "Doanh thu quy đổi = DT bất động sản + bán lô lớn qua chuyển nhượng cổ phần + dự án BCC với Vingroup",
+   "so": [
+    [
+     "Chưa ghi nhận 30/9",
+     "185,6 nghìn tỷ",
+     "30/6: 196,8"
+    ],
+    [
+     "Người mua trả trước",
+     "125,5 nghìn tỷ",
+     "+43% từ đầu năm"
+    ],
+    [
+     "Doanh thu quy đổi 9T",
+     "232,6 nghìn tỷ",
+     "6T: 134,2"
+    ],
+    [
+     "Chia lãi đối tác BCC Q3",
+     "19,9 nghìn tỷ",
+     "chi phí tài chính khác"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q3/2026: chuyển nhượng BĐS 75,8 nghìn tỷ (89% doanh thu thuần), biên gộp 66,5%. Ở dự án hợp tác, VHM ghi toàn bộ doanh thu rồi chia lãi cho đối tác BCC qua chi phí tài chính khác (19,9 nghìn tỷ) — nên LN thấp hơn nhiều so với biên gộp.",
+     "ng": "BCTC Q3 · Znews, Người Đưa Tin 30/10"
+    },
+    {
+     "t": "6T/2026: doanh thu bất động sản 94,3 nghìn tỷ, chủ yếu Ocean Park 2–3 (39,0) và Green Paradise (46,2); tổng thầu 14,9, dịch vụ và khác 8,0.",
+     "ng": "Shinhan 07/09"
+    },
+    {
+     "t": "Royal Island, Wonder City, Hải Vân Bay do Vingroup hoặc Vinpearl đứng tên — lợi ích chuyển về VHM qua hợp đồng BCC, ghi vào thu nhập tài chính.",
+     "ng": "Vietcap 02/06 · MBS 06/10"
+    },
+    {
+     "t": "Global Gate Hạ Long: ~55 nghìn sản phẩm, đang bán phân khu Vịnh Thiên Đường, bàn giao từ Q1/2027; khu đại học vận hành 2028, metro Hà Nội – Quảng Ninh 2029.",
+     "ng": "MBS 06/10"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn — nợ vay, phải thu, cổ tức",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026",
+   "so": [
+    [
+     "Nợ vay",
+     "240,6 nghìn tỷ",
+     "+64% từ đầu năm"
+    ],
+    [
+     "Tiền + đầu tư ngắn hạn",
+     "55,5 nghìn tỷ",
+     ""
+    ],
+    [
+     "Phải thu ngắn hạn",
+     "381,5 nghìn tỷ",
+     "+86%"
+    ],
+    [
+     "Hàng tồn kho",
+     "247,3 nghìn tỷ",
+     "+88%"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Đã phát hành đến ~50 nghìn tỷ trái phiếu từ đầu năm, một phần để đảo nợ cũ; nếu phát hành quốc tế lúc này, trái phiếu USD ~7–8%/năm, trái phiếu xanh 3–5%.",
+     "ng": "MBS 06/10"
+    },
+    {
+     "t": "Cuối 2025: vay ngân hàng lãi thả nổi 7,2–14%/năm, trái phiếu cố định 11–12,5%; phải thu bên liên quan 124 nghìn tỷ, trong đó đặt cọc BCC với Vingroup ~64 nghìn tỷ.",
+     "ng": "DSC 19/03"
+    },
+    {
+     "t": "Cổ tức 2025: 6.000 đ/cp tiền mặt (24,6 nghìn tỷ, giao dịch không hưởng quyền 29/06, trả 22/07/2026) và cổ phiếu tỷ lệ 1:1 (ĐKCC 07/08/2026).",
+     "ng": "Vietcap 02/06 · Shinhan 07/09 · báo chí 6/2026"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "Tín dụng 2026 mục tiêu ~15%; tín dụng BĐS của từng ngân hàng không được tăng nhanh hơn tín dụng chung (9–12% với phần lớn ngân hàng).",
+     "h": -1,
+     "ng": "NHNN, theo DSC 19/03"
+    },
+    {
+     "t": "Năm 2025 dư nợ BĐS ~4 triệu tỷ (+34%), ~23% tổng dư nợ — nền cao, siết lại sẽ chạm cả người mua lẫn chủ đầu tư.",
+     "h": -1,
+     "ng": "NHNN, theo DSC 19/03"
+    },
+    {
+     "t": "Lãi suất vay mua nhà trên 9,5–10% sẽ kéo tỷ lệ hấp thụ dự án xuống.",
+     "h": -1,
+     "ng": "VNDirect 20/05 (báo cáo DXG)"
+    },
+    {
+     "t": "Quy hoạch tổng thể Hà Nội mới (duyệt 13/05/2026): đô thị đa trung tâm, đẩy nhanh giao thông — lợi cho quỹ đất Global Sportia.",
+     "h": 1,
+     "ng": "Vietcap 02/06"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "Nguồn cung căn hộ 2026–2027 dồi dào: Hà Nội 39.915 căn, TP.HCM 35.500 căn.",
+     "h": -1,
+     "ng": "Knight Frank, theo DSC 19/03"
+    },
+    {
+     "t": "Giá sơ cấp 2025: Hà Nội 3.877 USD/m² (+31,4%), TP.HCM 3.940 USD/m² (+8,8%) — tăng chủ yếu nhờ phân khúc hạng sang.",
+     "h": 0,
+     "ng": "Knight Frank, theo DSC 19/03"
+    },
+    {
+     "t": "Cầu dịch về sản phẩm dưới 10 tỷ đồng; căn trên 20–30 tỷ đồng bán chậm.",
+     "h": 0,
+     "ng": "MBS 06/10"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Thị phần ~27% toàn thị trường nhà ở 2016–2023, gấp 3 lần 4 chủ đầu tư kế tiếp cộng lại; quỹ đất gần 19.500 ha.",
+     "h": 1,
+     "ng": "CBRE, theo Shinhan 07/09 · DSC 19/03"
+    },
+    {
+     "t": "Chuyển sang đô thị gắn hạ tầng: metro Bến Thành – Cần Giờ, đường sắt Hà Nội – Quảng Ninh qua BOO, BT, EPC; EPC biên ~5%.",
+     "h": 0,
+     "ng": "Shinhan 07/09"
+    },
+    {
+     "t": "Vingroup sở hữu 71,7%; lợi ích nhiều dự án đi qua hợp đồng BCC với công ty mẹ.",
+     "h": 0,
+     "ng": "MBS 06/10 · Vietcap 02/06"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "MBS",
+   "ngay": "2026-10-06",
+   "kn": "KHÔNG KHUYẾN NGHỊ",
+   "tp": null,
+   "ln26": null,
+   "ln27": null,
+   "pp": "ghi chú gặp nhà đầu tư",
+   "y": "Global Gate bàn giao từ Q1/2027, Cam Lâm kinh doanh 2027, Global Sportia vẫn 85% lợi ích; chuyển sang căn hộ 5–6 tỷ; đã phát hành ~50 nghìn tỷ trái phiếu từ đầu năm.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/20261006_vhm_bcpt_bao_cao_gap_go_nha_dau_tu_thang_10_2026.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-09-07",
+   "kn": "MUA",
+   "tp": 99800,
+   "ln26": 76874,
+   "ln27": 107131,
+   "pp": "RNAV, DCF từng dự án, WACC 15,1%",
+   "y": "Lạc quan nhất: doanh số 311 / 353 nghìn tỷ (2026 / 2027), LN 2027 +39%; RNAV 819,6 nghìn tỷ không chiết khấu, Global Sportia tính 33% lợi ích.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/vhm_mua_gia_mt_vnd_99_800_33_9_giu_vung_vi_the_voi_chien_luoc_ban_lo_lon.pdf"
+  },
+  {
+   "ctck": "Vietcap",
+   "ngay": "2026-06-02",
+   "kn": "PHÙ HỢP THỊ TRƯỜNG",
+   "tp": 76850,
+   "ln26": 54875,
+   "ln27": 56435,
+   "pp": "RNAV chiết khấu 15%, WACC 13,2%",
+   "y": "153.700 đ trước chia 1:1. Hạ khuyến nghị sau khi giá tăng 47% trong 2 tháng; LN 2027–2028 gần đi ngang vì phần cổ đông thiểu số tăng mạnh (12,3 nghìn tỷ năm 2027).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/Hoat_ong_ban_lo_lon_se_la_ong_luc_tang_truong_cua_nam_2026.pdf"
+  },
+  {
+   "ctck": "DSC",
+   "ngay": "2026-03-19",
+   "kn": "THEO DÕI",
+   "tp": 52606,
+   "ln26": 36438,
+   "ln27": 38903,
+   "pp": "50% RNAV chiết khấu 10% + 50% P/B 2,03",
+   "y": "105.211 đ trước chia 1:1. Viết trước KQKD Q1: dự báo doanh số 2026 −10%, LN −11% — đã lạc hậu sau 6T/2026.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/Bao_cao_khuyen_nghi_au_tu_VHM.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Giá mục tiêu ra trước 07/08/2026 đã chia 2 theo tỷ lệ chia cổ phiếu 1:1; so với giá hiện tại đã trừ cổ tức 3.000 đ/cp (6.000 đ trước chia, giao dịch không hưởng quyền 29/06/2026).",
+ "nguon": [
+  {
+   "ten": "Shinhan — Giữ vững vị thế với chiến lược bán lô lớn",
+   "ngay": "07/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/vhm_mua_gia_mt_vnd_99_800_33_9_giu_vung_vi_the_voi_chien_luoc_ban_lo_lon.pdf"
+  },
+  {
+   "ten": "MBS — Gặp gỡ nhà đầu tư tháng 10/2026",
+   "ngay": "06/10/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/20261006_vhm_bcpt_bao_cao_gap_go_nha_dau_tu_thang_10_2026.pdf"
+  },
+  {
+   "ten": "Vietcap — Bán lô lớn là động lực tăng trưởng năm 2026",
+   "ngay": "02/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/Hoat_ong_ban_lo_lon_se_la_ong_luc_tang_truong_cua_nam_2026.pdf"
+  },
+  {
+   "ten": "DSC — Báo cáo khuyến nghị VHM",
+   "ngay": "19/03/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VHM/Bao_cao_khuyen_nghi_au_tu_VHM.pdf"
+  },
+  {
+   "ten": "MBS — báo cáo DXG (bảng so sánh chủ đầu tư nhà ở)",
+   "ngay": "19/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/dxg_bcpt_dong_luc_tang_truong_tu_mo_ban_the_prive.pdf"
+  },
+  {
+   "ten": "VNDirect — báo cáo DXG (lãi suất vay mua nhà, tín dụng BĐS)",
+   "ngay": "20/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/Tiem_can_giai_oan_but_pha_loi_nhuan.pdf"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — ĐHĐCĐ: kế hoạch 285 / 60 nghìn tỷ, cổ tức 160%",
+   "ngay": "04/2026",
+   "link": "https://thitruongtaichinhtiente.vn/dhdcd-vinhomes-ke-hoach-loi-nhuan-ky-luc-60-000-ty-dong-chia-co-tuc-160-82302.html"
+  },
+  {
+   "ten": "VietnamFinance — nâng kế hoạch lợi nhuận thêm 10 nghìn tỷ trước ĐHĐCĐ",
+   "ngay": "04/2026",
+   "link": "https://vietnamfinance.vn/vinhomes-bo-sung-10000-ty-dong-vao-muc-tieu-loi-nhuan-sat-them-to-chuc-dhdcd-d143652.html"
+  },
+  {
+   "ten": "Tạp chí Kinh tế Tài chính — cổ tức 6.000 đ, giao dịch không hưởng quyền 29/06",
+   "ngay": "06/2026",
+   "link": "https://tapchikinhtetaichinh.vn/hang-loat-doanh-nghiep-chia-co-tuc-va-thuong-co-phieu-tam-diem-vinhomes-tra-co-tuc-6000-dongco-phieu-160309.html"
+  },
+  {
+   "ten": "Nhà Đầu Tư — KQKD Q2/2026",
+   "ngay": "07/2026",
+   "link": "https://nhadautu.vn/dieu-gi-khien-loi-nhuan-quy-ii-2026-cua-vinhomes-tang-gap-3-lan-d106502.html"
+  },
+  {
+   "ten": "Znews — Khoản lãi 75.000 tỷ của Vinhomes đến từ đâu (chuyển nhượng BĐS, chi phí BCC)",
+   "ngay": "30/10/2026",
+   "link": "https://znews.vn/khoan-lai-75000-ty-cua-vinhomes-den-tu-dau-post1693094.html"
+  },
+  {
+   "ten": "Người Đưa Tin — doanh số 9T 219,6 nghìn tỷ, biên gộp chuyển nhượng 66,5%",
+   "ngay": "30/10/2026",
+   "link": "https://www.nguoiduatin.vn/vinhomes-ghi-nhan-gan-220000-ty-dong-doanh-so-ban-hang-sau-9-thang-204261030181156598.htm"
+  },
+  {
+   "ten": "Báo Pháp Luật — LN 9T vượt 75.000 tỷ, backlog 185,6 nghìn tỷ",
+   "ngay": "30/10/2026",
+   "link": "https://baophapluat.vn/vinhomes-vhm-loi-nhuan-9-thang-vuot-75-000-ty-dong-gap-gan-5-lan-cung-ky.html"
+  },
+  {
+   "ten": "VietTimes — Vinhomes lãi hơn 23.000 tỷ trong quý III",
+   "ngay": "30/10/2026",
+   "link": "https://viettimes.vn/vinhomes-lai-hon-23000-ty-dong-trong-quy-iii-gap-5-lan-cung-ky-post207724.html"
+  },
+  {
+   "ten": "MarketTimes — lãi 9T vượt kế hoạch năm",
+   "ngay": "30/10/2026",
+   "link": "https://markettimes.vn/vinhomes-vhm-bao-lai-hon-75-000-ty-dong-sau-9-thang-vuot-ke-hoach-nam-133699.html"
+  }
+ ]
+}

@@ -1,0 +1,1557 @@
+{
+ "v": 2,
+ "ma": "DXG",
+ "ten": "CTCP Bluemarq Group (Tập đoàn Đất Xanh)",
+ "nganh": "Bất động sản nhà ở, môi giới",
+ "ky": "BCTC Q3/2026 · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026 hoặc khi mở bán GĐ3 The Privé",
+ "cp_trieu": 1268.1,
+ "cp_ng": "Vốn điều lệ 12.698,5 tỷ (BCTC Q2/2026, đã gồm 155,7 triệu cp thưởng 14%, ĐKCC 29/05/2026) = 1.269,85 triệu cp, trừ 1,75 triệu cp quỹ (VnEconomy, Simplize: lưu hành 1.268.104.965)",
+ "co_tuc": [],
+ "chia": [
+  [
+   "2026-05-28",
+   1.14
+  ]
+ ],
+ "tieu_de": {
+  "t": "Giá dưới giá trị sổ sách, chưa tính ~5,6 nghìn tỷ lãi The Privé đã bán chờ bàn giao",
+  "dk": "up_tren:15",
+  "khac": "~5,6 nghìn tỷ lãi The Privé đã bán chờ bàn giao: 2027 là năm lợi nhuận đổi cấp"
+ },
+ "dong_mo": "Q3/2026 cổ đông DXG chỉ nhận 15 tỷ (−84%), 9T 106 tỷ: 2026 là đáy lợi nhuận. Bước ngoặt là The Privé (DXG 100%): ~1.520 căn đã bán, người mua trả trước (hợp nhất) 9,1 nghìn tỷ, bàn giao từ Q2/2027 — LN 2027E cơ sở ~1,6 nghìn tỷ. Vốn chủ + lãi chờ ghi nhận + 59% DXS: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "5,6",
+   "nhan": "nghìn tỷ LNST The Privé đã bán, chưa vào sổ",
+   "tieu": "Lãi đã chốt nằm ngoài vốn chủ",
+   "t": "GĐ1 (1.024 căn, ~125 triệu/m² chưa VAT) bán hết năm 2025; GĐ2 chào 3 block (~750 căn), hấp thụ 60–70%. ~1.520 căn × 9–9,7 tỷ ≈ 14,1 nghìn tỷ hợp đồng; người mua trả trước (hợp nhất) 9,1 nghìn tỷ (30/9/2025: 2,9). Biên gộp 55% (MBS; VNDS trên 60%), trừ chi phí còn lại và thuế: ~5,6 nghìn tỷ LNST ≈ 4,4 nghìn đ/cp, DXG hưởng 100% — chưa nằm trong vốn chủ 14,3 nghìn tỷ.",
+   "ng": "BCTC Q3 · VNDS 05/03 · MBS 19/05 · VCBS qua báo chí 10/2026 · mô hình"
+  },
+  {
+   "so": "15 tỷ",
+   "nhan": "LN cổ đông Q3/2026, thấp hơn kịch bản xấu của trang",
+   "tieu": "Q3 xác nhận 2026 là đáy; The Privé vẫn thu tiền",
+   "t": "Q3 doanh thu 683 tỷ (−36%), lãi gộp 329 tỷ (−45%), bán hàng + quản lý 285 tỷ → lãi kinh doanh chính ~43 tỷ; LNST hợp nhất 3 tỷ. Dưới MBS 65 / VCBS 99 tỷ. 9T cổ đông nhận 106 tỷ (−52%). Người mua trả trước vẫn +1,0 nghìn tỷ trong quý. 2026E ~131 tỷ, 49% kế hoạch.",
+   "ng": "BCTC Q3 DXG (VNDirect) · MBS, VCBS qua báo chí 10/2026 · mô hình"
+  },
+  {
+   "so": "×11,9",
+   "nhan": "LN cổ đông 2027E so với 2026E (cơ sở)",
+   "tieu": "Bàn giao từ Q2/2027 đổi cấp lợi nhuận; tốc độ là biến số",
+   "t": "DXG đặt mốc bàn giao GĐ1 từ Q2/2027 (xây thô ~50% ở 4/2026). MBS chỉ tính block 8 (~260 căn) trong 2027, VNDS ~5,3 nghìn tỷ doanh thu (~590 căn). Cơ sở 400 căn → LN cổ đông 2027E ~1,6 nghìn tỷ; xấu 130 căn → ~0,3; tốt 770 căn → ~3,4 nghìn tỷ. Trừ 59% DXS theo giá thị trường, phần còn lại được trả {pe_conlai} lần LN 2027E. Chậm bàn giao chỉ dời lãi sang 2028 — nên định giá theo tài sản, không theo P/E 2027.",
+   "ng": "ĐHĐCĐ 17/04 · MBS 19/05 · VNDS 05/03 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Vốn chủ + lãi chờ ghi nhận + DXS: {up_so} so với giá hiện tại",
+   "t": "59% DXS × P/B 0,6 (thấp 25% lịch sử DXS; hiện 0,43) + lãi The Privé đã bán × 0,75 (bàn giao trải 2027–2029, chiết khấu ~14%/năm) + vốn chủ ngoài DXS 10,5 nghìn tỷ × P/B 0,85 (≈ thấp 10% lịch sử DXG). Tương đương P/B cả công ty ~1,08 lần (30/9). Xấu 8,0 (bàn giao chậm, P/B 0,55), tốt 15,6. ~1.650 căn The Privé chưa bán chỉ tính theo giá sổ sách.",
+   "ng": "mô hình · P/B lịch sử DXG, DXS: BCTC VNDirect, giá cuối tháng"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   231,
+   131,
+   1558
+  ],
+  "ln_truoc": 256,
+  "eps": [
+   182,
+   103,
+   1229
+  ],
+  "bv": [
+   11221,
+   11313,
+   12541
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "ROE",
+    "v": [
+     1.9,
+     0.9,
+     10.3
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN, vốn chủ 2024–2025: BCTC; EPS, BVPS theo 1.268,1 triệu cp lưu hành (sau thưởng 14% tháng 5/2026). Không chia cổ tức tiền mặt năm 2025."
+ },
+ "ln_mang": {
+  "tieu": "LN cổ đông DXG theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "59% DXS (môi giới, dự án DXS)",
+    "mau": "c2",
+    "v": [
+     199,
+     88,
+     118
+    ]
+   },
+   {
+    "ten": "The Privé",
+    "mau": "c1",
+    "v": [
+     0,
+     0,
+     1440
+    ]
+   },
+   {
+    "ten": "Phát triển khác & chi phí tập đoàn",
+    "mau": "c4",
+    "v": [
+     32,
+     43,
+     0
+    ]
+   }
+  ],
+  "nhan": "The Privé",
+  "ng": "Phát triển khác (Gem Sky World, dự án khác) & chi phí tập đoàn = LN cổ đông − 59% LN DXS − The Privé. 2026E–2027E: mô hình."
+ },
+ "sotp": {
+  "con": [
+   {
+    "ma": "DXS",
+    "ten": "Đất Xanh Services",
+    "cp_trieu": 579.1,
+    "so_huu": 0.59,
+    "ln26": 150,
+    "ln27": 200,
+    "gtgd": 7.7,
+    "mau": "c2"
+   }
+  ],
+  "conlai": {
+   "ten": "Bluemarq: The Privé, quỹ đất, tiền ròng",
+   "mau": "c1",
+   "ln27": 1440
+  },
+  "kv_ng": "Sở hữu DXS 59% (Yuanta 10/02, MBS 19/05); số cp DXS theo vốn điều lệ 30/6/2026. DXS có P/B 0,43 theo giá 30/10 — thấp nhất kể từ khi niêm yết",
+  "ng": "Giá DXS: VNDirect; LN 2027E: mô hình"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: DXS + The Privé + phần còn lại",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "The Privé (DXG 100%)"
+   },
+   {
+    "ten": "Căn bàn giao trong năm",
+    "v": [
+     0,
+     0,
+     400
+    ]
+   },
+   {
+    "ten": "Doanh thu ghi nhận (tỷ)",
+    "v": [
+     0,
+     0,
+     3600
+    ]
+   },
+   {
+    "ten": "Biên LNST trên doanh thu (%)",
+    "s": [
+     "—",
+     "—",
+     "40"
+    ]
+   },
+   {
+    "ten": "LNST The Privé (tỷ)",
+    "v": [
+     0,
+     0,
+     1440
+    ]
+   },
+   {
+    "ten": "Người mua trả trước cuối kỳ (nghìn tỷ, hợp nhất)",
+    "s": [
+     "6,2",
+     "9,1 (30/9)",
+     "—"
+    ]
+   },
+   {
+    "nhom": "Đất Xanh Services (DXS, DXG giữ 59%)"
+   },
+   {
+    "ten": "LN cổ đông DXS (tỷ)",
+    "v": [
+     336,
+     150,
+     200
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Phần về DXG (tỷ)",
+    "v": [
+     199,
+     88,
+     118
+    ]
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     4192,
+     4000,
+     7600
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Phát triển khác & chi phí tập đoàn (tỷ)",
+    "v": [
+     32,
+     43,
+     0
+    ]
+   },
+   {
+    "ten": "LN cổ đông DXG (tỷ)",
+    "v": [
+     231,
+     131,
+     1558
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     182,
+     103,
+     1229
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
+    "v": [
+     14.2,
+     14.3,
+     15.9
+    ],
+    "d": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     1.9,
+     0.9,
+     10.3
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "LN cổ đông DXG = 59% LN cổ đông DXS + The Privé + phần còn lại (Gem Sky World, dự án khác, chi phí tập đoàn; 2025: 32 tỷ, 6T/2026: ~1 tỷ; BCTC Q3 của DXS chưa có). The Privé ghi nhận khi bàn giao: căn × 9 tỷ × (biên gộp − 5%) × (1 − 20%). 2026E = 9T thực tế + Q4 ước; doanh thu ngoài The Privé giữ ~4.000 tỷ."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   131
+  ],
+  "cuoi": [
+   "2027E",
+   1558
+  ],
+  "buoc": [
+   [
+    "The Privé bàn giao 400 căn",
+    1440
+   ],
+   [
+    "DXS (59%)",
+    30
+   ],
+   [
+    "Phát triển khác & chi phí",
+    -43
+   ]
+  ],
+  "y": "The Privé tạo gần như toàn bộ mức tăng: 400 căn × 9 tỷ × biên LNST 40%. DXS nhích lên; phần còn lại về ~0 như 6T/2026 — Gem Sky World bán chậm, chi phí bán GĐ3 The Privé ghi ngay khi phát sinh.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Căn The Privé bàn giao năm 2027",
+   "v": [
+    "130",
+    "400",
+    "770"
+   ],
+   "ly_do": "ĐHĐCĐ 4/2026: GĐ1 (1.024 căn) bàn giao từ Q2/2027, xây thô ~50%; MBS: chỉ block 8 (~260 căn) trong 2027; VNDS: ~5,3 nghìn tỷ doanh thu (~590 căn)"
+  },
+  {
+   "ten": "Biên gộp The Privé",
+   "v": [
+    "50%",
+    "55%",
+    "60%"
+   ],
+   "ly_do": "MBS 55%, VNDS trên 60%; quỹ đất có từ 2018. Hỗ trợ lãi suất 30 tháng và chiết khấu 10% khi thanh toán sớm (MBS) kéo biên xuống"
+  },
+  {
+   "ten": "Giá bán bình quân GĐ1 · GĐ2 (tỷ/căn, chưa VAT)",
+   "v": [
+    "9,0 · 9,7",
+    "9,0 · 9,7",
+    "9,0 · 9,7"
+   ],
+   "ly_do": "GĐ1 ~125 triệu/m² (VNDS), ~9 tỷ/căn (MBS); GĐ2 cao hơn ~8%; ~500 căn GĐ2 đã bán (60–70% của ~750 căn đã chào)"
+  },
+  {
+   "ten": "LN cổ đông DXS: 2026 · 2027 (tỷ)",
+   "v": [
+    "110 · 50",
+    "150 · 200",
+    "190 · 350"
+   ],
+   "ly_do": "6T/2026 152 (Q2 lỗ 37); Q3 cổ đông thiểu số hợp nhất DXG −12 tỷ → DXS nhiều khả năng lỗ tiếp; 2025: 336. Hạ 2027 cơ sở 250 → 200"
+  },
+  {
+   "ten": "Phát triển khác & chi phí tập đoàn 2027 (tỷ)",
+   "v": [
+    "−150",
+    "0",
+    "+150"
+   ],
+   "ly_do": "2024 +173, 2025 +32, 6T/2026 ~1: Gem Sky World bán chậm, chi phí bán GĐ3 The Privé, lãi vay"
+  },
+  {
+   "ten": "LN cổ đông DXG Q4/2026 (tỷ)",
+   "v": [
+    "−30",
+    "25",
+    "70"
+   ],
+   "ly_do": "9T 106 (Q3 15, lãi kinh doanh chính ~43); Q4/2025 8, Q4/2024 161; kế hoạch năm 268 tỷ"
+  },
+  {
+   "ten": "P/B 59% DXS",
+   "v": [
+    "0,43",
+    "0,60",
+    "0,70"
+   ],
+   "ly_do": "DXS từ 7/2021: thấp nhất 0,43 (10/2026, = hiện tại), thấp 25% 0,60, trung vị 0,69"
+  },
+  {
+   "ten": "Hệ số cho lãi The Privé đã bán",
+   "v": [
+    "0,55",
+    "0,75",
+    "0,90"
+   ],
+   "ly_do": "Chiết khấu ~14%/năm (WACC MBS 13,6%, VNDS 14,5%): bàn giao trong ~1 năm 0,88, ~2 năm 0,77; xấu: chậm 1 năm, ~15% hợp đồng giảm giá/huỷ"
+  },
+  {
+   "ten": "P/B vốn chủ phần phát triển",
+   "v": [
+    "0,55",
+    "0,85",
+    "1,10"
+   ],
+   "ly_do": "DXG từ 2015: đáy 0,58 (3/2020), thấp 10% 0,88, thấp 25% 1,09; lãi đã bán tính riêng nên không trả thêm"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 76,
+   "ln27": 301,
+   "gia": 8.0,
+   "mo_ta": "Bàn giao 130 căn năm 2027, biên gộp 50%, DXS lãi 50 tỷ; P/B DXS 0,43, phần phát triển 0,55; lãi đã bán × 0,55"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 131,
+   "ln27": 1558,
+   "gia": 12.2,
+   "mo_ta": "Bàn giao 400 căn 2027, biên 55%, DXS 200 tỷ; P/B DXS 0,6, phần phát triển 0,85; lãi đã bán × 0,75"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 176,
+   "ln27": 3406,
+   "gia": 15.6,
+   "mo_ta": "Bàn giao 770 căn 2027, biên 60%, DXS 350 tỷ, GĐ3 bán tốt; P/B DXS 0,7, phần phát triển 1,1; lãi đã bán × 0,9"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo tài sản (NAV điều chỉnh)",
+  "phu": "59% DXS × P/B + lãi The Privé đã bán chờ ghi nhận × hệ số + vốn chủ phần phát triển × P/B",
+  "ck": 0,
+  "cp": 1268.1,
+  "phan": [
+   {
+    "ten": "59% DXS",
+    "mau": "c2",
+    "sh": 0.59,
+    "x": [
+     6476,
+     6476,
+     6476
+    ],
+    "boi": [
+     0.43,
+     0.6,
+     0.7
+    ],
+    "x_ten": "Vốn chủ cổ đông DXS 30/6/2026",
+    "boi_ten": "P/B",
+    "gt": [
+     1643,
+     2293,
+     2675
+    ]
+   },
+   {
+    "ten": "Lãi The Privé đã bán",
+    "mau": "c1",
+    "x": [
+     5064,
+     5626,
+     6189
+    ],
+    "boi": [
+     0.55,
+     0.75,
+     0.9
+    ],
+    "x_ten": "LNST chờ ghi nhận",
+    "boi_ten": "hệ số chiết khấu",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     2785,
+     4220,
+     5570
+    ]
+   },
+   {
+    "ten": "Vốn chủ phần phát triển",
+    "mau": "c3",
+    "x": [
+     10500,
+     10500,
+     10500
+    ],
+    "boi": [
+     0.55,
+     0.85,
+     1.1
+    ],
+    "x_ten": "Vốn chủ DXG ngoài phần DXS 30/9/2026",
+    "boi_ten": "P/B",
+    "sh": 1,
+    "gt": [
+     5775,
+     8925,
+     11550
+    ]
+   }
+  ],
+  "von": [
+   10203,
+   15438,
+   19795
+  ],
+  "gia": [
+   8.0,
+   12.2,
+   15.6
+  ]
+ },
+ "nhay": [
+  [
+   "P/B phần phát triển ±0,1 lần",
+   null,
+   0.8
+  ],
+  [
+   "Hệ số lãi The Privé ±0,1 (bàn giao sớm/chậm ~1 năm)",
+   null,
+   0.4
+  ],
+  [
+   "Biên gộp The Privé ±5 điểm %",
+   563,
+   0.3
+  ],
+  [
+   "P/B DXS ±0,1 lần",
+   null,
+   0.3
+  ],
+  [
+   "Căn GĐ2 đã bán ±100",
+   388,
+   0.2
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.38,
+   1.39,
+   1.27,
+   1.11,
+   1.28,
+   1.41,
+   1.6,
+   1.21,
+   1.35,
+   1.5,
+   1.41,
+   1.48,
+   1.42,
+   1.25,
+   1.21,
+   1.13,
+   1.14,
+   1.14,
+   1.15,
+   1.03,
+   1.0,
+   1.04,
+   1.22,
+   1.12,
+   1.21,
+   1.29,
+   1.61,
+   1.69,
+   1.48,
+   1.49,
+   1.64,
+   1.77,
+   1.82,
+   1.55,
+   1.59,
+   1.74,
+   2.46,
+   2.65,
+   2.89,
+   2.62,
+   2.58,
+   2.28,
+   2.18,
+   2.32,
+   2.46,
+   1.99,
+   1.84,
+   1.81,
+   1.76,
+   1.72,
+   1.56,
+   1.49,
+   1.23,
+   1.25,
+   1.16,
+   1.26,
+   1.42,
+   1.26,
+   0.85,
+   0.87,
+   0.7,
+   0.88,
+   0.58,
+   0.74,
+   0.84,
+   0.83,
+   0.65,
+   0.78,
+   0.82,
+   0.93,
+   1.1,
+   1.27,
+   1.56,
+   1.97,
+   2.01,
+   1.96,
+   2.18,
+   1.87,
+   1.68,
+   1.36,
+   1.34,
+   1.7,
+   2.3,
+   2.46,
+   2.38,
+   2.88,
+   3.18,
+   2.49,
+   1.83,
+   1.29,
+   1.64,
+   1.72,
+   1.32,
+   0.91,
+   0.82,
+   0.82,
+   0.95,
+   0.67,
+   0.84,
+   0.9,
+   1.0,
+   0.99,
+   1.27,
+   1.46,
+   1.24,
+   1.1,
+   1.31,
+   1.26,
+   1.21,
+   1.19,
+   1.29,
+   1.05,
+   1.14,
+   1.09,
+   0.94,
+   1.06,
+   1.13,
+   1.13,
+   1.18,
+   1.05,
+   1.03,
+   1.13,
+   1.09,
+   1.05,
+   1.28,
+   1.4,
+   1.64,
+   1.88,
+   1.7,
+   1.67,
+   1.54,
+   1.4,
+   1.26,
+   1.18,
+   1.14,
+   1.2,
+   1.16,
+   1.13,
+   0.92,
+   1.07,
+   0.9,
+   0.9
+  ],
+  "p10": 0.88,
+  "p25": 1.09,
+  "tv": 1.27,
+  "thap": [
+   "2020-03",
+   0.58
+  ],
+  "nay": [
+   "2026-10",
+   0.9
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Kịch bản dùng P/B 0,55 · 0,85 · 1,1 cho vốn chủ phần phát triển (ngoài DXS, chưa gồm lãi The Privé đã bán): ≈ đáy 3/2020 (0,58), thấp 10% (0,88), thấp 25% (1,09). Giá trị cơ sở ≈ P/B 1,08 cả công ty, 0,78 lần vốn chủ cộng lãi chờ ghi nhận; trung vị từ 2023: 1,14."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    25,
+    65,
+    95
+   ],
+   "ck": 93
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    -30,
+    25,
+    70
+   ],
+   "ck": 8
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    76,
+    131,
+    176
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "30/10/2026 → 01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q3 dưới kỳ vọng; Q4 là phép thử",
+   "ct": "Q3 LN cổ đông 15 tỷ: dưới MBS 65, VCBS 99 tỷ và kịch bản xấu cũ 25 tỷ. Q4 cơ sở ~25 tỷ (cùng kỳ 8); xem người mua trả trước 31/12 (30/9: 9,1 nghìn tỷ).",
+   "tac": [
+    "≥ 25 tỷ Q4",
+    "khớp cơ sở; lỗ Q4 thì 2026E dưới 106 tỷ"
+   ],
+   "theo_doi": "LN cổ đông, người mua trả trước, LN DXS"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Mở bán GĐ3 The Privé",
+   "ct": "Block 1–4, ~1.130 căn, ~140 triệu/m² (MBS); đã dời từ Q2/2026 (ĐHĐCĐ). Bán được thì chuyển quỹ đất giá sổ sách thành lãi chờ ghi nhận.",
+   "tac": [
+    "+0,2 nghìn đ/cp",
+    "mỗi 100 căn bán (~10,4 tỷ/căn, LNST ~416 tỷ khi giao từ 2029)"
+   ],
+   "theo_doi": "tỷ lệ hấp thụ, giá bán"
+  },
+  {
+   "khi": "12/2026",
+   "loai": "len",
+   "tieu": "Sân bay Long Thành, Gem Sky World đợt 2",
+   "ct": "ACV đặt mục tiêu khai thác thương mại 1/12/2026; Gem Sky World (4.025 căn, ~2.400 đã bán) mở bán Emerald, Aquamarine, Opal Park cuối năm (MBS).",
+   "tac": "",
+   "theo_doi": "doanh số Gem Sky World"
+  },
+  {
+   "khi": "Q2/2027",
+   "loai": "len",
+   "tieu": "Bàn giao GĐ1 The Privé",
+   "ct": "Lãi bắt đầu vào sổ: 1.024 căn GĐ1 đã bán hết; block 8 lên tầng 15, block 5–7 tầng 12 (MBS 5/2026).",
+   "tac": [
+    "+360 tỷ LN",
+    "mỗi 100 căn bàn giao (9 tỷ/căn, biên LNST 40%)"
+   ],
+   "theo_doi": "số căn bàn giao mỗi quý"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "hai",
+   "tieu": "Opal City View, Gem City nộp tiền sử dụng đất",
+   "ct": "Hai dự án đã có 1/500, nộp tiền sử dụng đất trong 2026 để mở bán 2027 (MBS); DXG đã dời 6 dự án sang 2027 (Yuanta). Cần vốn trước khi có doanh số.",
+   "tac": "",
+   "theo_doi": "tiến độ pháp lý, nợ vay"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Siết tín dụng bất động sản",
+   "ct": "Tín dụng BĐS không được tăng nhanh hơn tín dụng chung; lãi vay mua nhà tăng từ cuối 2025. GĐ2 chỉ hấp thụ 60–70% so với 100% GĐ1.",
+   "tac": [
+    "±0,4 nghìn đ/cp",
+    "mỗi 0,1 hệ số (bàn giao sớm/chậm ~1 năm)"
+   ],
+   "theo_doi": "hấp thụ GĐ2–3, lãi vay mua nhà"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Biên The Privé thấp hơn kỳ vọng",
+   "ct": "Hỗ trợ lãi suất 30 tháng và chiết khấu 10% khi thanh toán sớm (MBS) có thể kéo biên gộp xuống dưới mức 55–60% mà CTCK giả định.",
+   "tac": [
+    "±0,3 nghìn đ/cp",
+    "mỗi 5 điểm % biên gộp (LNST chờ ghi nhận ±563 tỷ)"
+   ],
+   "theo_doi": "biên gộp khi bàn giao"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "DXS: môi giới theo chu kỳ",
+   "ct": "DXS lỗ 37 tỷ Q2/2026 sau khi lãi 189 tỷ Q1; Q3 cổ đông thiểu số hợp nhất DXG −12 tỷ — DXS nhiều khả năng lỗ tiếp. Môi giới đi theo thanh khoản thị trường.",
+   "tac": [
+    "±0,3 nghìn đ/cp",
+    "mỗi 0,1 lần P/B DXS"
+   ],
+   "theo_doi": "LN DXS, doanh số phân phối"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Huy động vốn, phải thu",
+   "ct": "2025 đã chào bán 3,54 nghìn tỷ (~50% vốn điều lệ cuối 2024, VNDS); GĐ3 The Privé, Opal City View, Gem City cần vốn. Phải thu ngắn hạn 14,6 nghìn tỷ (30/9; 30/6: 13,8).",
+   "tac": [
+    "−0,2 nghìn đ/cp",
+    "nếu chào bán 10% cổ phiếu ở 10.000 đ"
+   ],
+   "theo_doi": "phải thu, phương án phát hành"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "hai",
+   "tieu": "Mức P/B thị trường trả",
+   "ct": "Từ 2023, P/B DXG đi từ 0,67 đến 1,88; hiện 0,90 — sát mức thấp 10% lịch sử (0,88).",
+   "tac": [
+    "±0,8 nghìn đ/cp",
+    "mỗi 0,1 lần P/B phần phát triển"
+   ],
+   "theo_doi": "P/B so với ROE"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "The Privé: căn đã bán và chưa bán",
+   "kieu": "cot_chong",
+   "dv": "căn",
+   "so_le": 0,
+   "nhan": [
+    "GĐ1",
+    "GĐ2",
+    "GĐ3"
+   ],
+   "ss": [
+    {
+     "ten": "Đã bán",
+     "v": [
+      1024,
+      500,
+      0
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Chưa bán",
+     "v": [
+      0,
+      520,
+      1131
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "~1.520 căn đã bán ≈ 14,1 nghìn tỷ hợp đồng; GĐ2 còn ~520 căn, GĐ3 ~1.130 căn chưa mở bán.",
+   "ng": "VNDS 05/03 · MBS 19/05 · VCBS qua báo chí 10/2026 (GĐ2: 60–70% của ~750 căn đã chào)"
+  },
+  {
+   "ten": "Người mua trả trước và nợ vay",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Người mua trả trước",
+     "v": [
+      1.0,
+      1.1,
+      1.8,
+      1.2,
+      2.9,
+      6.2,
+      6.9,
+      8.1,
+      9.1
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Nợ vay",
+     "v": [
+      5.4,
+      6.6,
+      7.5,
+      5.9,
+      6.3,
+      4.8,
+      4.8,
+      5.2,
+      5.6
+     ],
+     "mau": "c4",
+     "net": 0
+    }
+   ],
+   "y": "Người mua trả trước từ 2,9 lên 9,1 nghìn tỷ trong 12 tháng (The Privé); nợ vay 5,6 nghìn tỷ, tiền và tiền gửi 5,1 nghìn tỷ (30/9).",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "Lãi gộp và chi phí bán hàng + quản lý",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      789,
+      510,
+      467,
+      599,
+      712,
+      634,
+      363,
+      329
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Bán hàng + quản lý",
+     "v": [
+      391,
+      225,
+      235,
+      366,
+      590,
+      353,
+      356,
+      285
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Q2–Q3/2026 chi phí bán hàng + quản lý ăn gần hết lãi gộp: lãi kinh doanh chính ~7 và ~43 tỷ (Q3/2025: 232 tỷ).",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "LNST: cổ đông DXG và cổ đông thiểu số",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Cổ đông DXG",
+     "v": [
+      161,
+      48,
+      81,
+      93,
+      8,
+      38,
+      53,
+      15
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Cổ đông thiểu số",
+     "v": [
+      48,
+      30,
+      188,
+      71,
+      75,
+      177,
+      -18,
+      -12
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "Từ Q2/2025, 3/6 quý phần cổ đông thiểu số (chủ yếu ở DXS) lớn hơn phần DXG; Q2–Q3/2026 phần này âm (DXS lỗ Q2, BCTC Q3 DXS chưa có). 9T/2026: 58% LNST thuộc cổ đông thiểu số.",
+   "ng": "BCTC (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 5000,
+    "th": 2823,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 17/04/2026 · BCTC Q3"
+   },
+   {
+    "ten": "LNST cổ đông công ty mẹ",
+    "kh": 268,
+    "th": 106,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 17/04/2026 · BCTC Q3"
+   }
+  ],
+  "y": "9 tháng đạt 56% doanh thu, 40% lợi nhuận. Q4 cần ~162 tỷ (Q4/2025: 8) để đạt kế hoạch — khó; mô hình cơ sở 131 tỷ (49%).",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "The Privé — dự án quyết định 2027–2029",
+   "phu": "6,7 ha An Phú (TP Thủ Đức cũ) · 3.175 căn hộ · DXG 100% · giấy phép xây dựng Q4/2024, mở bán GĐ1 Q2/2025",
+   "so": [
+    [
+     "GĐ1 (block 5–8)",
+     "1.024 căn",
+     "bán hết, ~125 triệu/m²"
+    ],
+    [
+     "GĐ2 (block 9–12)",
+     "~500/1.020 căn",
+     "60–70% phần đã chào"
+    ],
+    [
+     "GĐ3 (block 1–4)",
+     "~1.130 căn",
+     "~140 triệu/m², chưa mở bán"
+    ],
+    [
+     "Người mua trả trước",
+     "9,1 nghìn tỷ",
+     "30/9/2026, hợp nhất"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Giỏ hàng GĐ1 giao dịch hết trong 72 giờ (5/2025); GĐ2 bán chậm hơn: block 10–11 hấp thụ ~50% sau 2–3 tháng, ~70% đến 5/2026; block 9 và 12 dời sau Tết.",
+     "ng": "Nhà Đầu Tư 2025 · Yuanta 10/02 · VNDS 05/03 · MBS 19/05"
+    },
+    {
+     "t": "Người mua vay ở MB, TPBank, LPBank, OCB, MBV, VietinBank, BIDV với lãi ưu đãi cố định 12–24 tháng 8–10%/năm; DXG hỗ trợ lãi suất 30 tháng.",
+     "ng": "VNDS 05/03 · MBS 19/05"
+    },
+    {
+     "t": "Còn ~5,8 nghìn tỷ tiền hợp đồng sẽ thu đến khi bàn giao (14,1 nghìn tỷ đã bán − 8,3 nghìn tỷ người mua trả trước ngoài DXS). VNDS ước cả dự án ~33 nghìn tỷ doanh thu, ~13 nghìn tỷ dòng tiền ròng; MBS: NPV 7.259 tỷ (WACC 13,6%).",
+     "ng": "BCTC Q3 · VNDS 05/03 · MBS 19/05 · mô hình"
+    }
+   ]
+  },
+  {
+   "ten": "Đất Xanh Services (DXS) — môi giới và dự án công ty thành viên",
+   "phu": "DXG giữ 59% · 579,1 triệu cp · nhận thương hiệu Đất Xanh từ 5/2026 khi DXG đổi tên Bluemarq",
+   "so": [
+    [
+     "LN cổ đông 2025",
+     "336 tỷ",
+     "BCTC quý"
+    ],
+    [
+     "6T/2026",
+     "152 tỷ",
+     "Q2 lỗ 37 tỷ"
+    ],
+    [
+     "Kế hoạch 2026",
+     "527 tỷ",
+     "doanh thu 5.300 tỷ"
+    ],
+    [
+     "P/B (30/10)",
+     "0,43",
+     "thấp nhất từ khi niêm yết"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Năm 2025 DXS đóng góp 88% doanh thu và 87% LNST hợp nhất DXG; Q1/2026 doanh thu môi giới 604 tỷ (+209%) nhờ phân phối The Privé, Sun Urban City.",
+     "ng": "Yuanta 10/02 · MBS 19/05"
+    },
+    {
+     "t": "Doanh thu bán BĐS Q1/2026 860 tỷ (+29%) đến từ bàn giao Gem Sky World (~200 căn) và dự án của công ty thành viên Regal Group, Linkgroup.",
+     "ng": "MAS 30/07 · MBS 19/05"
+    }
+   ]
+  },
+  {
+   "ten": "Quỹ đất và dự án kế tiếp",
+   "phu": "Gem Sky World (92 ha, Long Thành) · Opal City View · Gem City · DXH Park City · Park View · Gem Premium",
+   "so": [
+    [
+     "Gem Sky World",
+     "4.025 căn",
+     "~2.400 đã bán, ~1.950 đã giao"
+    ],
+    [
+     "Opal City View",
+     "~1.600 căn",
+     "1/500, nộp tiền đất 2026"
+    ],
+    [
+     "Gem City (Opal City)",
+     "~2.500 căn",
+     "Nghị quyết 171"
+    ],
+    [
+     "Gem Premium",
+     "2.630 căn",
+     "chờ 1/500"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Gem Sky World còn ~450 căn đã bán chờ giao năm 2026; Q1/2026 biên gộp bán BĐS 37,9% (Q1/2025: 55,9%) vì giá bán nhà phố vùng ven thấp hơn.",
+     "ng": "MBS 19/05"
+    },
+    {
+     "t": "Năm 2026 DXG chỉ mở bán mới 2 dự án (thay vì 6), dời 6 dự án sang 2027; Gem City được đưa vào Nghị quyết 171 để gỡ pháp lý.",
+     "ng": "Yuanta 10/02"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn — nợ vay, phải thu, cổ phiếu",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026",
+   "so": [
+    [
+     "Nợ vay",
+     "5,6 nghìn tỷ",
+     "tiền + tiền gửi 5,1"
+    ],
+    [
+     "Phải thu ngắn hạn",
+     "14,6 nghìn tỷ",
+     "DXS 9,3 (30/6)"
+    ],
+    [
+     "Hàng tồn kho",
+     "16,3 nghìn tỷ",
+     ""
+    ],
+    [
+     "Vốn chủ cổ đông",
+     "14,3 nghìn tỷ",
+     "BVPS 11.293 đ"
+    ]
+   ],
+   "y": [
+    {
+     "t": "2025 huy động 3,54 nghìn tỷ qua chào bán cho cổ đông và riêng lẻ (~50% vốn điều lệ cuối 2024); nợ ròng/vốn chủ còn ~0,2 lần cuối 2025.",
+     "ng": "VNDS 05/03"
+    },
+    {
+     "t": "Thưởng 14% (155,7 triệu cp từ thặng dư vốn và LN chưa phân phối), ĐKCC 29/05/2026; vốn điều lệ lên 12.698,5 tỷ, 1,75 triệu cp quỹ.",
+     "ng": "Doanh nhân 5/2026 · VnEconomy"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "NHNN giới hạn tăng trưởng tín dụng BĐS không vượt tín dụng chung của từng ngân hàng; lãi vay mua nhà ở ngân hàng quốc doanh tăng từ cuối 2025.",
+     "h": -1,
+     "ng": "VNDS 05/03"
+    },
+    {
+     "t": "Lãi vay mua nhà trên 9,5–10% sẽ kéo tỷ lệ hấp thụ dự án xuống.",
+     "h": -1,
+     "ng": "VNDS 05/03"
+    },
+    {
+     "t": "Bộ Xây dựng đề xuất người mua nhà thứ hai chỉ được vay tối đa 50% giá trị hợp đồng.",
+     "h": -1,
+     "ng": "VNDS 05/03"
+    },
+    {
+     "t": "Hạ tầng phía Nam: Vành đai 3, Metro số 1, cao tốc Bến Lức – Long Thành; sân bay Long Thành mục tiêu khai thác 1/12/2026.",
+     "h": 1,
+     "ng": "VNDS 05/03 · báo chí 10/2026"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "Nguồn cung sơ cấp Q1/2026 ~77.900 sản phẩm (+65%), lượng hấp thụ +170% (DXS-FERI) — nền cho mảng môi giới.",
+     "h": 1,
+     "ng": "MAS 30/07"
+    },
+    {
+     "t": "Khu Đông TP.HCM: giá 5.000–8.000 USD/m² (5 năm trước 2.500–3.000); hấp thụ ở TP Thủ Đức trên 80% năm 2025 (CBRE).",
+     "h": 1,
+     "ng": "VNDS 05/03"
+    },
+    {
+     "t": "Nguồn cung căn hộ phía Nam 2026–2027 dự báo tăng mạnh (CBRE) — cạnh tranh cho GĐ3 The Privé.",
+     "h": 0,
+     "ng": "MBS 19/05"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Đổi tên Bluemarq Group (06/05/2026): DXG tập trung đầu tư, phát triển, quản lý tài sản và gọi vốn quốc tế; thương hiệu Đất Xanh giao DXS.",
+     "h": 0,
+     "ng": "NHSV 12/05"
+    },
+    {
+     "t": "The Privé là dự án duy nhất đang mở bán; DXG hưởng 100% lợi ích, trong khi lãi môi giới và dự án của DXS chia với cổ đông thiểu số DXS.",
+     "h": 1,
+     "ng": "VNDS 05/03 · MAS 30/07"
+    },
+    {
+     "t": "Thanh khoản cổ phiếu ~103 tỷ/phiên; P/B 0,90, sát mức thấp 10% lịch sử từ 2015 (0,88).",
+     "h": 0,
+     "ng": "bảng giá 30/10 · BCTC"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "MAS",
+   "ngay": "2026-07-30",
+   "kn": "MUA",
+   "tp": 13900,
+   "ln26": 250,
+   "ln27": null,
+   "pp": "không nêu (báo cáo ngắn)",
+   "y": "Dự báo 2026 doanh thu 4.958 tỷ, LN 250 tỷ (+8%): bán BĐS +34%, môi giới +17%; The Privé ~60% doanh thu bán BĐS 2027, giao từ Q2/2027.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/bao_cao_ngan_ctcp_bluemarq_group_dxg_vn_mua_the_prive_dan_dat_chu_ky_tang_truong_moi.pdf"
+  },
+  {
+   "ctck": "MBS",
+   "ngay": "2026-05-19",
+   "kn": "KHẢ QUAN",
+   "tp": 20800,
+   "ln26": 373,
+   "ln27": 734,
+   "pp": "RNAV (DCF dự án có 1/500), môi giới P/E 8",
+   "y": "Thận trọng nhất về bàn giao: chỉ block 8 (~260 căn) năm 2027, 3 block GĐ1 còn lại từ 2028; doanh số ký bán 12,25 / 11,55 nghìn tỷ (2026 / 2027).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/dxg_bcpt_dong_luc_tang_truong_tu_mo_ban_the_prive.pdf"
+  },
+  {
+   "ctck": "NHSV",
+   "ngay": "2026-05-12",
+   "kn": "MUA",
+   "tp": 20800,
+   "ln26": null,
+   "ln27": null,
+   "pp": "không nêu (cập nhật KQKD)",
+   "y": "Đổi tên Bluemarq, thương hiệu Đất Xanh giao DXS; Q1 LNST hợp nhất +173% nhờ chi phí bán hàng + quản lý giảm 40% so với Q4, nhưng LN cổ đông mẹ chỉ 38 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/Tu_at_Xanh_en_Bluemarq_Buoc_ngoat_tai_cau_truc.pdf"
+  },
+  {
+   "ctck": "VNDIRECT",
+   "ngay": "2026-03-05",
+   "kn": "KHẢ QUAN",
+   "tp": 20500,
+   "ln26": 369,
+   "ln27": 2517,
+   "pp": "RNAV, WACC 14,5%",
+   "y": "Lạc quan nhất về 2027: doanh thu 10,3 nghìn tỷ, LN gấp 6,8 lần nhờ The Privé (~5,3 nghìn tỷ doanh thu, 2,3 nghìn tỷ LNST); giá mục tiêu ≈ P/B 2026 1,4 lần.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/Tiem_can_giai_oan_but_pha_loi_nhuan.pdf"
+  },
+  {
+   "ctck": "Yuanta",
+   "ngay": "2026-02-10",
+   "kn": "MUA",
+   "tp": 26000,
+   "ln26": null,
+   "ln27": null,
+   "pp": "không nêu (báo cáo nhanh)",
+   "y": "DXS đóng góp 88% doanh thu, 87% LNST hợp nhất 2025 (DXG giữ 59%); block 10–11 The Privé hấp thụ 50–52% sau 2–3 tháng; dời 6 dự án sang 2027.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/Co_hoi_tich_luy_tai_vung_gia_thap.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. Ngày và giá mục tiêu theo bản PDF; báo cáo ra trước 28/05/2026 được trang chia 1,14 theo đợt thưởng 14% (ĐKCC 29/05/2026). DXG không chia cổ tức tiền mặt trong 12 tháng qua.",
+ "nguon": [
+  {
+   "ten": "Kinh tế Chứng khoán — KQKD Q3/2026: lợi nhuận giảm 98%, người mua trả trước vượt 9.000 tỷ",
+   "ngay": "30/10/2026",
+   "link": "https://kinhtechungkhoan.vn/bluemarq-group-dxg-loi-nhuan-giam-98-tien-nguoi-mua-nha-tra-truoc-vuot-9000-ty-dong"
+  },
+  {
+   "ten": "VnBusiness — KQKD Q3/2026: lợi nhuận lao dốc, dòng tiền thuần âm",
+   "ngay": "30/10/2026",
+   "link": "https://vnbusiness.vn/loi-nhuan-bluemarq-group-lao-doc-dong-tien-thuan-am-hon-1800-ty-dong.html"
+  },
+  {
+   "ten": "Người Quan Sát — cập nhật KQKD Q3/2026 ngày 30/10",
+   "ngay": "30/10/2026",
+   "link": "https://nguoiquansat.vn/cap-nhat-kqkd-quy-iii-2026-ngay-30-10-mwg-frt-bao-loi-nhuan-tang-manh-mot-doanh-nghiep-bat-dong-san-lai-but-pha-1-400-325233.html"
+  },
+  {
+   "ten": "Mirae Asset (MAS) — The Privé dẫn dắt chu kỳ tăng trưởng mới",
+   "ngay": "30/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/bao_cao_ngan_ctcp_bluemarq_group_dxg_vn_mua_the_prive_dan_dat_chu_ky_tang_truong_moi.pdf"
+  },
+  {
+   "ten": "MBS — Động lực tăng trưởng từ mở bán The Privé",
+   "ngay": "19/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/dxg_bcpt_dong_luc_tang_truong_tu_mo_ban_the_prive.pdf"
+  },
+  {
+   "ten": "NHSV — Từ Đất Xanh đến Bluemarq: bước ngoặt tái cấu trúc",
+   "ngay": "12/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/Tu_at_Xanh_en_Bluemarq_Buoc_ngoat_tai_cau_truc.pdf"
+  },
+  {
+   "ten": "VNDIRECT — Tiệm cận giai đoạn bứt phá lợi nhuận",
+   "ngay": "05/03/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/Tiem_can_giai_oan_but_pha_loi_nhuan.pdf"
+  },
+  {
+   "ten": "Yuanta — Cơ hội tích lũy tại vùng giá thấp",
+   "ngay": "10/02/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/DXG/Co_hoi_tich_luy_tai_vung_gia_thap.pdf"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — ĐHĐCĐ 2026: doanh thu 5.000 tỷ, The Privé",
+   "ngay": "04/2026",
+   "link": "https://thitruongtaichinhtiente.vn/dhdcd-dat-xanh-dxg-muc-tieu-doanh-thu-5-000-ty-dong-san-sang-trien-khai-10-du-an-tai-trung-tam-tp-ho-chi-minh-82234.html"
+  },
+  {
+   "ten": "Doanh nhân — ĐHĐCĐ 2026: kế hoạch 5.000 tỷ, thưởng cổ phiếu 14%",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-2026-dat-xanh-dxg-len-ke-hoach-thu-5-000-ty-dong-chia-thuong-co-phieu-ty-le-14.html"
+  },
+  {
+   "ten": "Doanh nhân — chốt quyền thưởng gần 156 triệu cổ phiếu (ĐKCC 29/05)",
+   "ngay": "05/2026",
+   "link": "https://doanhnhan.baophapluat.vn/vua-doi-ten-bluemarq-group-dxg-chot-quyen-chia-gan-156-trieu-co-phieu-thuong.html"
+  },
+  {
+   "ten": "Doanh nhân — hoàn tất thưởng, vốn điều lệ gần 12.700 tỷ",
+   "ngay": "06/2026",
+   "link": "https://doanhnhan.baophapluat.vn/hoan-tat-chia-co-phieu-thuong-bluemarq-group-dxg-nang-von-dieu-le-len-gan-12-700-ty-dong.html"
+  },
+  {
+   "ten": "VnEconomy — số cổ phiếu lưu hành, cổ phiếu quỹ DXG",
+   "ngay": "2026",
+   "link": "https://vneconomy.vn/dragon-capital-giam-so-huu-tai-dxg-xuong-duoi-6.htm"
+  },
+  {
+   "ten": "Elibook — KQKD Q2/2026: lợi nhuận cốt lõi, cổ đông thiểu số",
+   "ngay": "08/09/2026",
+   "link": "https://elibook.vn/2026/09/08/dxg-loi-nhuan-cot-loi-chi-con-7-ty-co-dong-thieu-so-am-63-mieng-banh-nghi-quyet-21-co-phai-con-bai-cuu-canh/"
+  },
+  {
+   "ten": "Elibook — dự báo Q3/2026 của MBS, VCBS; hấp thụ GĐ2 The Privé",
+   "ngay": "13/10/2026",
+   "link": "https://elibook.vn/2026/10/13/dxg-loi-nhuan-quy-3-hut-30-40-tin-dung-bat-dong-san-chay-nham-voi-khien-the-prive-chi-ban-duoc-60-o-dot-2/"
+  },
+  {
+   "ten": "Dân Việt — MBS dự báo lợi nhuận Q3/2026 DXG",
+   "ngay": "10/2026",
+   "link": "https://danviet.vn/mbs-du-bao-loi-nhuan-dxg-kdh-nlg-di-lui-trong-quy-3-2026-d1465232.html"
+  },
+  {
+   "ten": "Thị trường Tài chính Tiền tệ — VCBS dự báo KQKD Q3/2026",
+   "ngay": "10/2026",
+   "link": "https://thitruongtaichinhtiente.vn/vcbs-du-bao-loat-doanh-nghiep-tang-truong-loi-nhuan-quy-iii-2026-bang-lan-85834.html"
+  },
+  {
+   "ten": "Báo Mới — sân bay Long Thành khai thác thương mại từ 1/12/2026",
+   "ngay": "2026",
+   "link": "https://baomoi.com/san-bay-long-thanh-se-khai-thac-thuong-mai-tu-1122026-c55607113.epi"
+  },
+  {
+   "ten": "Doanh nhân — DXS: KQKD Q1/2026, kế hoạch 2026",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dat-xanh-services-dxs-bao-lai-rong-quy-i-2026-tang-372-hoan-thanh-36-ke-hoach-nam.html"
+  },
+  {
+   "ten": "Nhà Đầu Tư — The Privé GĐ1 giao dịch hết trong 72 giờ",
+   "ngay": "2025",
+   "link": "https://nhadautu.vn/phan-khu-dep-nhat-the-prive-chuan-bi-ra-mat-thi-truong-d99294.html"
+  }
+ ]
+}

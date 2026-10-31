@@ -9,7 +9,30 @@ const BO_CUNG = new Set(['DCL','VC3','SSB','KHG','VPI']);
 SUM.rows.forEach(r=>{ if(BO_CUNG.has(r.t) || (r.watch && !(r.wstar===1 && r.wgrade!=='weak' && !(r.wrng < 5)))) r.watch=0; });   // nen < 5% -> engine ra B!, khong thanh B*
 if(SUM.tpn&&SUM.tpn.recent) SUM.tpn.recent=SUM.tpn.recent.filter(x=>!BO_CUNG.has(x.t));
 const ROWS = () => SUM.rows;
-const byT = {}; SUM.rows.forEach(r => byT[r.t] = r);
+const byT = {}; SUM.rows.forEach(r => { byT[r.t] = r; r.__pPub = r.p; });
+/* Chia/thuong co phieu (GMD 07/10/2026, 3:2): ngay GDKHQ gia tham chieu = gia dong cua da cong bo x k (k ~ 0,67).
+   Ban phat hanh truoc khi VNDirect dieu chinh van giu nguong cu (GMD 'dong cua >= 83.00' trong khi tham chieu 52).
+   Phat hien bang tham chieu hom nay / gia cong bo -> quy doi nguong gia (x k), nguong KL (/ k), va chu tren man hinh. */
+window.__knDC = window.__knDC || {};
+function knBuocGia(p, b){ return b === 'HN' || b === 'UP' ? 0.1 : (p < 10 ? 0.01 : (p < 50 ? 0.05 : 0.1)); }
+function knChiaTach(code, k){
+  if (window.__knDC[code]) return; window.__knDC[code] = k;
+  const row = byT[code]; const b = row && row.b;
+  const len = x => { const sb = knBuocGia(x, b); return +(Math.ceil(x/sb - 1e-9)*sb).toFixed(2); };
+  const g = window.SIGS && window.SIGS.trig && window.SIGS.trig[code];
+  if (g) { [0, 2, 5].forEach(i => { if (+g[i] > 0) g[i] = len(g[i]*k); }); [1, 3, 4].forEach(i => { if (+g[i] > 0) g[i] = Math.round(g[i]/k); }); }
+  if (row) { if (row.p > 0) row.p = row.p*k; ['hi52', 'lo52'].forEach(f => { if (row[f] > 0) row[f] = row[f]*k; }); if (row.v20 > 0) row.v20 = row.v20/k; }
+}
+/* Quy doi so tren chu (gia x k, "x triệu cp" / k) cho ma vua chia tach hom nay */
+function knQuyDoi(tx, code){
+  const k = window.__knDC[code]; if (!k || !tx) return tx;
+  const g = window.SIGS && window.SIGS.trig && window.SIGS.trig[code];   // nguong da quy doi + lam tron buoc gia (knChiaTach)
+  let t = String(tx);
+  if (g && +g[0] > 0 && +g[1] > 0) t = t.replace(/≥ \d+(?:\.\d+)? · KL ≥ \d+(?:\.\d+)? triệu cp/g, '≥ \u0000' + (+g[0]).toFixed(2) + ' · KL ≥ \u0000' + (g[1]/1e6).toFixed(2) + ' triệu cp');
+  t = t.replace(/(^|[^\u0000\d.])(\d+(?:\.\d+)?) triệu cp/g, (m, a, x) => a + '\u0000' + (x/k).toFixed(2) + ' triệu cp');
+  t = t.replace(/(^|[^\d\u0000.])(\d+\.\d{2})(?![\d%])/g, (m, a, x) => a + (x*k).toFixed(2)).replace(/\u0000/g, '');
+  return t + ' (đã quy đổi theo chia cổ phiếu hôm nay)';
+}
 // ==== Ma chi xem chart (KHONG vao ro tin hieu, khong sinh deal) ====
 const XTRA = {};
 [['VNINDEX','Chỉ số VN-Index'],['VN30','Chỉ số VN30'],['VN100','Chỉ số VN100'],['HNX','Chỉ số HNX-Index'],['HNX30','Chỉ số HNX30'],['UPCOM','Chỉ số UPCoM-Index'],['VNXALL','Chỉ số VNX Allshare']].forEach(x => { XTRA[x[0]] = {t:x[0], b:'IX', n:x[1]}; });
@@ -68,9 +91,17 @@ function __fTxtB(x){ return window.__FIN_BANK ? String(x).replace(/Doanh thu/g,'
    tot voi Referer suot may thang; bo Referer o do lam B* mat gia (15 loi goi
    dchart cung luc, mot so bi tu choi -> deal ra "..."). Khong dung
    <meta name="referrer"> cho ca site vi se mat Referer o link KAFI va GA. */
+/* Han cho (14/10/2026): truoc day khong co -> nguon nao treo la tab Chi tiet ma quay vong mai.
+   Vietcap 5 s (hong thi roi sang VNDirect), con lai 25 s (bang gia toan san co luc mat > 10 s). */
 async function jget(u){
-  const r = await fetch(u, /iq\.vietcap\.com\.vn/.test(u) ? { referrerPolicy: 'no-referrer' } : undefined);
-  if(!r.ok) throw new Error(r.status); return r.json(); }
+  const vc = /iq\.vietcap\.com\.vn/.test(u);
+  const ac = typeof AbortController === 'function' ? new AbortController() : null;
+  const hen = ac ? setTimeout(() => { try { ac.abort(); } catch(e){} }, vc ? 5000 : 25000) : null;
+  try {
+    const opt = {}; if (vc) opt.referrerPolicy = 'no-referrer'; if (ac) opt.signal = ac.signal;
+    const r = await fetch(u, opt);
+    if(!r.ok) throw new Error(r.status); return await r.json();
+  } finally { if (hen) clearTimeout(hen); } }
 const api = {
   ohlc: async (sym, days) => {
     try { const H = window.HH; const b = H && H.bars ? H.bars[sym] : null;
@@ -918,6 +949,8 @@ async function liveQuote(){
       if (!row) { try { const _c = (d.pctChange!=null) ? +(+d.pctChange).toFixed(2) : null; const _x = XTRA[d.code];
         if (_x && _x.b === 'UP') { _x.p = d.close; _x.chg = _c; }
         else if (!_x && (d.floor === 'UPCOM' || d.floor === 'OTC') && d.type === 'STOCK') XTRA[d.code] = {t:d.code, b:'UP', n:'', p:d.close, chg:_c}; } catch(e){} return; }
+      try { if (d.date === knGioVN().ngay && +d.basicPrice > 0 && row.__pPub > 0 && String(SUM.asof || '') < d.date) {
+        const _k = +d.basicPrice / row.__pPub; if (Math.abs(_k - 1) > 0.015) knChiaTach(d.code, _k); } } catch(e){}
       const _dk = knDuKhop();
       if (_dk === 'ATC' && row.__pNay === d.date) { n++; return; }            // ATC: giu gia khop lien tuc truoc 14:30
       if (d.date === knGioVN().ngay && !(+d.nmVolume > 0)) {                    // chua khop lenh nao hom nay -> gia tham chieu, 0%
@@ -964,7 +997,7 @@ function bstarDeals(){
   out.sort((a,b) => a.bdate < b.bdate ? 1 : -1);
   BSTAR.deals = out; return out;
 }
-/* Ty trong B* (engine 24/09/2026): dau X mang m[2] = 50 | 25 | 12.5 (% tai khoan). Tra null neu ban phat hanh cu chua co. */
+/* Ty trong B* (engine 29/09/2026): dau X mang m[2] = 35 | 25 | 15 (% tai khoan, co tran thanh khoan TK 10 ty -> co the 5-30). Tra null neu ban phat hanh cu chua co. */
 let __knBuyMap = null;
 function knBuyOf(t, bdate){
   if (!__knBuyMap) { __knBuyMap = {}; const T = (window.SIGS && window.SIGS.t) || {};
@@ -2248,6 +2281,37 @@ async function loadRecs(){
   } catch(e){ box.innerHTML = '<div class="mini">Không tải được dữ liệu khuyến nghị.</div>'; }
 }
 let proLoadedFor = null, proChart = null, proVolChart = null, proCandle = null, proVol = null, proSm = null, proMa = null, useLog = false;
+/* 29/10/2026 (anh Khoa: "thêm MA50 - MA200, cái đo % kéo từ giá này đến giá kia, RSI"): công cụ chart Chi tiết mã.
+   Bật/tắt nhớ theo người xem (localStorage kn_ind). RSI là khung riêng dưới khối lượng (lightweight-charts 4 không có pane). */
+let proRsiChart = null, proRsi = null, proMa50 = null, proMa200 = null;
+const KN_IND = (function(){ let o = { ma20: 1, ma50: 0, ma200: 0, rsi: 0 };
+  try { const j = JSON.parse(localStorage.getItem('kn_ind') || 'null'); if (j && typeof j === 'object') o = Object.assign(o, j); } catch(e){}
+  return o; })();
+window.__knRsiH = function(){ return KN_IND.rsi ? ((window.innerWidth || 999) < 620 ? 84 : 110) : 0; };
+window.__knDo = { on: false, a: null, b: null, xong: false };
+function knVeTools(){
+  const box = document.getElementById('dTools'); if (!box) return;
+  const DS = [['ma20', 'MA20', '#2962FF'], ['ma50', 'MA50', '#FF9800'], ['ma200', 'MA200', '#9C27B0'], ['rsi', 'RSI', '#7E57C2']];
+  const nut = (k, ten, mau, bat) => `<button type="button" data-k="${k}" class="knTool${bat ? ' on' : ''}" style="--m:${mau}"><i></i>${ten}</button>`;
+  box.innerHTML = DS.map(d => nut(d[0], d[1], d[2], !!KN_IND[d[0]])).join('')
+    + `<button type="button" data-k="do" class="knTool knDo${window.__knDo.on ? ' on' : ''}" title="Bấm điểm đầu rồi điểm cuối trên chart để đo % (Esc để xoá)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17 17 3l4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg>Đo %</button>`;
+  if (!document.getElementById('knToolCss')) { const st = document.createElement('style'); st.id = 'knToolCss';
+    st.textContent = '#dTools{display:flex;gap:6px;flex-wrap:wrap;align-items:center}'
+      + '.knTool{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 10px;border:1px solid #DDE1E6;border-radius:7px;background:#fff;color:#6B7280;font:600 12.5px Inter,sans-serif;cursor:pointer}'
+      + '.knTool i{width:12px;height:3px;border-radius:2px;background:#C3CCD8}.knTool.on{color:#111827;border-color:#B8C2CF;background:#F6F8FA}.knTool.on i{background:var(--m)}'
+      + '.knTool.knDo.on{color:#fff;background:#18A34B;border-color:#18A34B}.knTool:hover{border-color:#9AA4B2}'
+      + '#proK.coRsi{height:auto!important}';
+    document.head.appendChild(st); }
+  box.onclick = function(e){ const b = e.target.closest('.knTool'); if (!b) return; const k = b.dataset.k;
+    if (k === 'do') { const D = window.__knDo; D.on = !D.on; D.a = D.b = null; D.xong = false; b.classList.toggle('on', D.on); if (window.__knVeDo) window.__knVeDo(); return; }
+    KN_IND[k] = KN_IND[k] ? 0 : 1; b.classList.toggle('on', !!KN_IND[k]);
+    try { localStorage.setItem('kn_ind', JSON.stringify(KN_IND)); } catch(x){}
+    if (k === 'rsi') { proLoadedFor = null; loadProChart(); if (window.__knTranMan) setTimeout(window.__knTranMan, 30); return; }
+    const sr = k === 'ma20' ? proMa : k === 'ma50' ? proMa50 : proMa200;
+    try { if (sr) sr.applyOptions({ visible: !!KN_IND[k] }); } catch(x){}
+    if (window.__proLegend) window.__proLegend(null);
+  };
+}
 // Dung lai toan bo mui tren chart = tin hieu DA CHOT + tin hieu DANG DAT TRONG PHIEN.
 // Trong phien: gia >= nguong gia va volume >= nguong volume (bep da phat hanh trong SIGS.trig)
 // -> ve mui tren; neu gia tut xuong duoi nguong thi mui tu bien mat o lan ve ke tiep.
@@ -2363,16 +2427,25 @@ function loadProChart(){
   /* Doi ma: GIU NGUYEN khung (chieu cao da canh theo man hinh), chi thay chart ben trong.
      Truoc day dung lai innerHTML moi lan -> khung ve 360px roi nhay lai ~479px: giat khi bam sang ma khac. */
   const _k0 = document.getElementById('proK');
-  const giuKhung = !!(_k0 && wrap.contains(_k0) && document.getElementById('proPx') && document.getElementById('proVolPane'));
+  const giuKhung = !!(_k0 && wrap.contains(_k0) && document.getElementById('proPx') && document.getElementById('proVolPane') && document.getElementById('proRsiPane'));
   if (!giuKhung) wrap.innerHTML = '<div id="proK" style="position:relative">'
-    + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas></div>'
+    + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas><canvas id="proDoCv" style="position:absolute;left:0;top:0;z-index:4;pointer-events:none"></canvas></div>'
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
+    + '<div id="proRsiPane" style="height:0;display:none;border-top:1px solid #F0F3FA;position:relative"><div id="proRsiLegend" style="position:absolute;top:4px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#7E57C2;pointer-events:none;background:rgba(255,255,255,.85);padding:0 6px;border-radius:4px"></div></div>'
     + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
     + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:none;padding:3px 9px;text-shadow:0 1px 0 #fff,0 -1px 0 #fff,1px 0 0 #fff,-1px 0 0 #fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
     + '<button id="proFsBtn" title="Phóng to toàn màn hình" style="position:absolute;top:6px;right:8px;z-index:6;width:30px;height:30px;border:1px solid #DDE1E6;border-radius:6px;background:rgba(255,255,255,.92);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;color:#787B86"></button>'
     + '</div>';
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
   try { if (proVolChart && proVolChart.remove) proVolChart.remove(); } catch(e){}
+  try { if (proRsiChart && proRsiChart.remove) proRsiChart.remove(); } catch(e){}
+  proRsiChart = proRsi = null;
+  knVeTools();
+  { const rp = document.getElementById('proRsiPane'), pk = document.getElementById('proK'), rh = window.__knRsiH();
+    if (rp) { rp.style.display = rh ? '' : 'none'; rp.style.height = rh + 'px'; }
+    if (pk) pk.classList.toggle('coRsi', !!rh);
+    const px0 = document.getElementById('proPx');
+    if (px0 && !window.__proFS && !px0.dataset.knTm) px0.style.height = (360 - rh) + 'px'; }
   const UP = '#18A34B', DOWN = '#F23645';
   const baseOpts = {
     autoSize: true,
@@ -2471,14 +2544,43 @@ function loadProChart(){
   for (let i = 0; i < curOhlc.c.length; i++){ s += curOhlc.c[i]; if (i >= 20) s -= curOhlc.c[i-20]; if (i >= 19) ma.push({ time: curOhlc.t[i], value: +(s/20).toFixed(2) }); }
   proMa = proChart.addLineSeries({ color: '#2962FF', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false });
   proMa.setData(ma);
+  if (!KN_IND.ma20) proMa.applyOptions({ visible: false });
+  const smaN = (n) => { const o = []; let t = 0; for (let i = 0; i < candData.length; i++){ t += candData[i].close; if (i >= n) t -= candData[i-n].close; o.push(i >= n-1 ? +(t/n).toFixed(2) : null); } return o; };
+  const ma50a = smaN(50), ma200a = smaN(200);
+  const toS = a => a.map((v,i) => v == null ? null : { time: curOhlc.t[i], value: v }).filter(Boolean);
+  proMa50 = proChart.addLineSeries({ color: '#FF9800', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false, visible: !!KN_IND.ma50 });
+  proMa50.setData(toS(ma50a));
+  proMa200 = proChart.addLineSeries({ color: '#9C27B0', lineWidth: 1, priceLineVisible: false, lastValueVisible: false, crosshairMarkerVisible: false, visible: !!KN_IND.ma200 });
+  proMa200.setData(toS(ma200a));
+  // RSI(14) kieu Wilder tren gia dong cua (nen cuoi gom gia trong phien)
+  const rsiA = (function(){ const N = 14, o = new Array(candData.length).fill(null); let g = 0, l = 0;
+    for (let i = 1; i < candData.length; i++){ const d = candData[i].close - candData[i-1].close, up = Math.max(d, 0), dn = Math.max(-d, 0);
+      if (i <= N) { g += up; l += dn; if (i === N) { g /= N; l /= N; o[i] = l === 0 ? 100 : 100 - 100/(1 + g/l); } }
+      else { g = (g*(N-1) + up)/N; l = (l*(N-1) + dn)/N; o[i] = l === 0 ? 100 : 100 - 100/(1 + g/l); } }
+    return o; })();
+  window.__knRsiA = rsiA;
+  if (KN_IND.rsi) {
+    const o3 = JSON.parse(JSON.stringify(baseOpts));
+    o3.timeScale.visible = true; o3.layout.attributionLogo = false;
+    try { proVolChart.applyOptions({ timeScale: { visible: false } }); } catch(e){}   // truc thoi gian chuyen xuong khung RSI (duoi cung, nhu TradingView)
+    o3.rightPriceScale.scaleMargins = { top: 0.12, bottom: 0.08 };
+    o3.handleScale = { mouseWheel: true, pinch: true, axisPressedMouseMove: false };
+    proRsiChart = LightweightCharts.createChart(document.getElementById('proRsiPane'), o3);
+    proRsi = proRsiChart.addLineSeries({ color: '#7E57C2', lineWidth: 1.5, priceLineVisible: false, lastValueVisible: true, crosshairMarkerVisible: false,
+      autoscaleInfoProvider: () => ({ priceRange: { minValue: 0, maxValue: 100 } }) });
+    proRsi.setData(rsiA.map((v,i) => v == null ? null : { time: curOhlc.t[i], value: +v.toFixed(2) }).filter(Boolean));
+    [70, 30].forEach(v => proRsi.createPriceLine({ price: v, color: '#B0B7C3', lineWidth: 1, lineStyle: 2, axisLabelVisible: false }));
+    proRsi.createPriceLine({ price: 50, color: '#E3E6EA', lineWidth: 1, lineStyle: 1, axisLabelVisible: false });
+  }
   // dong bo truc thoi gian 2 khung
   const syncTS = (a,b) => a.timeScale().subscribeVisibleLogicalRangeChange(r => { if (r) try { b.timeScale().setVisibleLogicalRange(r); } catch(e){} });
   syncTS(proChart, proVolChart); syncTS(proVolChart, proChart);
+  if (proRsiChart) { syncTS(proChart, proRsiChart); syncTS(proRsiChart, proChart); }
   // ep do rong truc gia 2 khung bang nhau -> nen va cot volume thang hang
   const alignScales = () => { try {
-    const w1 = proChart.priceScale('right').width(), w2 = proVolChart.priceScale('right').width();
-    const w = Math.max(w1, w2);
-    if (w > 0) { proChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); proVolChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); }
+    const w1 = proChart.priceScale('right').width(), w2 = proVolChart.priceScale('right').width(), w3 = proRsiChart ? proRsiChart.priceScale('right').width() : 0;
+    const w = Math.max(w1, w2, w3);
+    if (w > 0) { proChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); proVolChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); if (proRsiChart) proRsiChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); }
   } catch(e){} };
   setTimeout(alignScales, 80); setTimeout(alignScales, 400); setTimeout(alignScales, 1000);
   // ==== mui ten + nhan mau (ve tay nhu ban cu) ====
@@ -2511,9 +2613,49 @@ function loadProChart(){
   };
   window.__paintBadges = paintBadges;
   proChart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(paintBadges));
+  // ==== Thuoc do %: bam diem dau -> re chuot -> bam diem cuoi (Esc / bam lan nua de do lai) ====
+  const veDo = () => {
+    try {
+      const cv = document.getElementById('proDoCv'), px = document.getElementById('proPx'); if (!cv || !px || !proChart) return;
+      const w = px.clientWidth, h = px.clientHeight, dpr = window.devicePixelRatio || 1;
+      if (cv.width !== Math.round(w*dpr) || cv.height !== Math.round(h*dpr)) { cv.width = Math.round(w*dpr); cv.height = Math.round(h*dpr); cv.style.width = w+'px'; cv.style.height = h+'px'; }
+      const g = cv.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0); g.clearRect(0,0,w,h);
+      const D = window.__knDo; px.style.cursor = D.on ? 'crosshair' : '';
+      if (!D.on || !D.a || !D.b) return;
+      const ts = proChart.timeScale();
+      const x1 = ts.logicalToCoordinate(D.a.l), x2 = ts.logicalToCoordinate(D.b.l), y1 = proCandle.priceToCoordinate(D.a.p), y2 = proCandle.priceToCoordinate(D.b.p);
+      if (x1 == null || x2 == null || y1 == null || y2 == null) return;
+      const pct = (D.b.p / D.a.p - 1) * 100, len = pct >= 0, mau = len ? '#18A34B' : '#F23645';
+      g.fillStyle = len ? 'rgba(24,163,75,.12)' : 'rgba(242,54,69,.12)';
+      g.fillRect(Math.min(x1,x2), Math.min(y1,y2), Math.abs(x2-x1), Math.abs(y2-y1));
+      g.strokeStyle = mau; g.lineWidth = 1.5; g.setLineDash([]);
+      const xm = (x1 + x2) / 2, ym = (y1 + y2) / 2;
+      g.beginPath(); g.moveTo(xm, y1); g.lineTo(xm, y2); g.moveTo(x1, ym); g.lineTo(x2, ym); g.stroke();
+      const mui = (x, y, dx, dy) => { g.beginPath(); g.moveTo(x, y); g.lineTo(x - 5*dx - 4*dy, y - 5*dy - 4*dx); g.lineTo(x - 5*dx + 4*dy, y - 5*dy + 4*dx); g.closePath(); g.fillStyle = mau; g.fill(); };
+      if (Math.abs(y2 - y1) > 10) mui(xm, y2, 0, y2 > y1 ? 1 : -1);
+      if (Math.abs(x2 - x1) > 10) mui(x2, ym, x2 > x1 ? 1 : -1, 0);
+      const n = Math.round(D.b.l - D.a.l), dp = D.b.p - D.a.p;
+      const t1 = (pct >= 0 ? '+' : '') + pct.toFixed(2) + '%  (' + (dp >= 0 ? '+' : '') + dp.toFixed(2) + ')';
+      const t2 = Math.abs(n) + ' phiên · ' + D.a.p.toFixed(2) + ' → ' + D.b.p.toFixed(2);
+      g.font = '600 12.5px Inter, sans-serif'; const bw = Math.max(g.measureText(t1).width, g.measureText(t2).width) + 18, bh = 40;
+      let bx = xm - bw/2, by = len ? Math.min(y1,y2) - bh - 6 : Math.max(y1,y2) + 6;
+      bx = Math.max(4, Math.min(w - bw - 4, bx)); by = Math.max(4, Math.min(h - bh - 4, by));
+      g.fillStyle = mau; g.beginPath(); if (g.roundRect) g.roundRect(bx, by, bw, bh, 6); else g.rect(bx, by, bw, bh); g.fill();
+      g.fillStyle = '#fff'; g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillText(t1, bx + bw/2, by + 13); g.font = '500 11.5px Inter, sans-serif'; g.fillText(t2, bx + bw/2, by + 28);
+    } catch(e){}
+  };
+  window.__knVeDo = veDo;
+  proChart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(veDo));
+  const diemDo = p => { if (!p || !p.point || p.logical == null) return null; const pr = proCandle.coordinateToPrice(p.point.y); return pr == null ? null : { l: p.logical, p: +pr }; };
+  proChart.subscribeClick(p => { const D = window.__knDo; if (!D.on) return; const d = diemDo(p); if (!d) return;
+    if (!D.a || D.xong) { D.a = d; D.b = null; D.xong = false; } else { D.b = d; D.xong = true; } veDo(); });
+  proChart.subscribeCrosshairMove(p => { const D = window.__knDo; if (!D.on || !D.a || D.xong) return; const d = diemDo(p); if (d) { D.b = d; veDo(); } });
+  if (!window.__knDoEsc) { window.__knDoEsc = 1; document.addEventListener('keydown', e => { if (e.key === 'Escape' && window.__knDo.a) { window.__knDo.a = window.__knDo.b = null; window.__knDo.xong = false; if (window.__knVeDo) window.__knVeDo(); } }); }
+  veDo();
   window.__knAlign = alignScales;
   try { const _pe = document.getElementById('proPx'); if (!_pe.__knRO) { _pe.__knRO = 1;
-    new ResizeObserver(() => { if (window.__paintBadges) requestAnimationFrame(window.__paintBadges); if (window.__knAlign) window.__knAlign(); }).observe(_pe); } } catch(e){}
+    new ResizeObserver(() => { if (window.__paintBadges) requestAnimationFrame(window.__paintBadges); if (window.__knVeDo) requestAnimationFrame(window.__knVeDo); if (window.__knAlign) window.__knAlign(); }).observe(_pe); } } catch(e){}
   addProBadges();
   const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 }); } catch(e){} };
   __setRange(); setTimeout(__setRange, 150); setTimeout(__setRange, 600);
@@ -2537,8 +2679,8 @@ function loadProChart(){
       w2.style.cssText = 'position:fixed;left:0;right:0;top:' + topY + 'px;bottom:' + botH + 'px;z-index:70;background:#fff;padding:8px 12px;overflow:hidden';
       if (pk2) pk2.style.setProperty('height','auto','important');
       const vh2 = window.innerHeight - topY - botH - 16;
-      const volH = Math.max(110, Math.round(vh2 * 0.20));
-      const pxH = Math.max(200, vh2 - volH);
+      const volH = Math.max(110, Math.round(vh2 * 0.20)), rsH = window.__knRsiH();
+      const pxH = Math.max(200, vh2 - volH - rsH);
       px2.style.height = pxH + 'px';
       vp2.style.height = volH + 'px';
       if (vl2) vl2.style.top = (pxH + 6) + 'px';
@@ -2546,7 +2688,7 @@ function loadProChart(){
     } else {
       w2.style.cssText = '';
       if (pk2) pk2.style.removeProperty('height');
-      px2.style.height = '360px';
+      px2.style.height = (360 - window.__knRsiH()) + 'px'; delete px2.dataset.knTm;
       vp2.style.height = '145px';
       if (vl2) vl2.style.top = '366px';
       document.body.style.overflow = '';
@@ -2590,7 +2732,11 @@ function loadProChart(){
     const gt20 = gt20arr[ii] != null ? gt20arr[ii] / 1e6 : null;
     const dsh = NAR ? dstr.slice(0,5) : dstr;
     const head = '';
-    if (leg) leg.innerHTML = head + (NAR ? '' : dsh + SP) + L.o + d.open + SP + L.h + d.high + SP + L.l + d.low + SP + L.c + '<span style="color:' + (chg < 0 ? '#F23645' : '#18A34B') + '">' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(NAR ? 1 : 2) + '%)</span>' + SP + L.m + (maV == null ? '—' : maV);
+    const maX = (on, ten, arr, mau) => on ? SP + '<span style="color:' + mau + '">' + ten + (NAR ? ' ' : ' = ') + (arr[ii] == null ? '—' : arr[ii]) + '</span>' : '';
+    if (leg) leg.innerHTML = head + (NAR ? '' : dsh + SP) + L.o + d.open + SP + L.h + d.high + SP + L.l + d.low + SP + L.c + '<span style="color:' + (chg < 0 ? '#F23645' : '#18A34B') + '">' + d.close + ' (' + (chg >= 0 ? '+' : '') + chg.toFixed(NAR ? 1 : 2) + '%)</span>'
+      + (KN_IND.ma20 ? SP + '<span style="color:#2962FF">' + L.m + (maV == null ? '—' : maV) + '</span>' : '') + maX(KN_IND.ma50, 'MA50', ma50a, '#FF9800') + maX(KN_IND.ma200, 'MA200', ma200a, '#9C27B0');
+    const rleg = document.getElementById('proRsiLegend');
+    if (rleg) { const rv = rsiA[ii]; rleg.innerHTML = 'RSI(14) = ' + (rv == null ? '—' : rv.toFixed(1)) + (rv != null && rv >= 70 ? ' · quá mua' : rv != null && rv <= 30 ? ' · quá bán' : ''); }
     const _isIx = ((XROW(curT)||{}).b === 'IX');
     const fV = x => x == null ? '—' : (NAR ? (x >= 1e6 ? (x/1e6).toFixed(2) + 'tr' : Math.round(x/1e3) + 'k') : Math.round(x).toLocaleString('en-US'));
     if (vleg && _isIx) vleg.innerHTML = dsh + SP + L.v + fV(vv) + (pct == null ? '' : SP + pct + '%');
@@ -2610,6 +2756,13 @@ function loadProChart(){
   };
   proChart.subscribeCrosshairMove(onCross);
   proVolChart.subscribeCrosshairMove(onCross);
+  if (proRsiChart) { proRsiChart.subscribeCrosshairMove(onCross);
+    let mr = false;
+    proChart.subscribeCrosshairMove(p => { if (mr) return; mr = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
+      if (ci == null || rsiA[ci] == null) proRsiChart.clearCrosshairPosition(); else proRsiChart.setCrosshairPosition(rsiA[ci], curOhlc.t[ci], proRsi); } catch(e){} mr = false; });
+    proRsiChart.subscribeCrosshairMove(p => { if (mr) return; mr = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
+      if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, curOhlc.t[ci], proCandle); } catch(e){} mr = false; });
+  }
   // soi guong con tro giua 2 khung
   let mirroring = false;
   proChart.subscribeCrosshairMove(p => { if (mirroring) return; mirroring = true; try {
@@ -2638,6 +2791,7 @@ inits.detail = function(t){
         <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:9px">
           <div class="search-wrap"><input id="dQ" placeholder="Nhập mã hoặc tên công ty…" style="width:206px;padding:6px 11px"><div id="sugg"></div></div>
           <div id="dTitle" style="font-size:15.5px;font-weight:700"></div>
+          <div id="dTools"></div>
           <div id="dRanges" style="display:none"></div>
           <div id="dTpn" style="margin-left:auto"></div>
         </div>
@@ -2686,7 +2840,7 @@ inits.detail = function(t){
 #finCharts .fd.dn{color:var(--red);background:var(--red-soft)}
 #finCharts .fd.fl{color:var(--muted);background:var(--panel2)}
 #finCharts .fbox{height:215px;position:relative}
-#finCharts .fins{font-size:12.5px;line-height:1.6;color:var(--muted);margin-top:10px;padding:9px 12px;background:var(--panel2);border-radius:8px;border-left:3px solid var(--blue)}
+#finCharts .fins{font-size:12.5px;line-height:1.6;color:var(--muted);margin-top:10px;padding:9px 12px;background:var(--panel2);border-radius:8px;border-left:3px solid var(--green)}
 #finCharts .fins b{color:var(--text);font-weight:700}
           </style>
           <div id="finCharts">
@@ -2796,6 +2950,17 @@ function knDtConTuoi(t){
   const v = knDtLay(t);
   return !!(v && Date.now() - v.ohTs < KN_DT_TTL);
 }
+/* Giu toi da 30 ma BCTC tren may; day bo nho thi xoa het kho nay (khong dung den du lieu khac). */
+function knCbLuu(t, khoa, qs, rts){
+  try {
+    let ds = []; try { ds = JSON.parse(localStorage.getItem('kn_cb__ds') || '[]'); } catch(e){}
+    ds = ds.filter(x => x !== t); ds.push(t);
+    while (ds.length > 30) { try { localStorage.removeItem('kn_cb_' + ds.shift()); } catch(e){} }
+    try { localStorage.setItem('kn_cb_' + t, JSON.stringify({ k: khoa, v: { qs, rts } })); }
+    catch(e){ ds.forEach(x => { try { localStorage.removeItem('kn_cb_' + x); } catch(e2){} }); ds = []; }
+    localStorage.setItem('kn_cb__ds', JSON.stringify(ds));
+  } catch(e){}
+}
 const knDtCho = new Map();   // ma -> lan tai dang chay do, de khong tai hai lan
 async function knDtTai(t, isX){
   const cu = knDtLay(t);
@@ -2804,12 +2969,16 @@ async function knDtTai(t, isX){
      luc cham tay moi co tac dung: nha tay ra la dung luon lan tai da chay. */
   const dangCho = knDtCho.get(t);
   if (dangCho) return dangCho;
+  /* BCTC + chi so chi doi sau phien -> luu tren may theo phien (14/10/2026): mo lai trang chi con cho gia.
+     Chi luu khi co du lieu (khong bao gio luu ket qua rong). */
+  const khoaCb = knKhoaPhien(KN_MOC_SEC), luuCb = (cu && cu.qs && cu.rts) ? null : knDocCache('kn_cb_' + t, khoaCb);
   const viec = (async function(){
     const [oh, qs, rts] = await Promise.all([
       api.ohlc(t, 5100),
-      isX ? Promise.resolve([]) : (cu && cu.qs  ? Promise.resolve(cu.qs)  : api.kqkd(t).catch(()=>[])),
-      isX ? Promise.resolve([]) : (cu && cu.rts ? Promise.resolve(cu.rts) : api.ratios(t).catch(()=>[]))
+      isX ? Promise.resolve([]) : (cu && cu.qs  ? Promise.resolve(cu.qs)  : luuCb ? Promise.resolve(luuCb.qs)  : api.kqkd(t).catch(()=>[])),
+      isX ? Promise.resolve([]) : (cu && cu.rts ? Promise.resolve(cu.rts) : luuCb ? Promise.resolve(luuCb.rts) : api.ratios(t).catch(()=>[]))
     ]);
+    if (!isX && !luuCb && qs && qs.length && rts && rts.length) knCbLuu(t, khoaCb, qs, rts);
     const v = { oh, qs, rts, ohTs: Date.now() };
     knDtGhi(t, v);
     return v;
@@ -2910,6 +3079,8 @@ async function loadDetail(t){
     toast('Lỗi tải dữ liệu '+t+': '+e.message);
   }
 }
+/* phantich.js (khoi "Phan tich co ban chuyen sau", file rieng ngoai IIFE nay) doc trang thai tab Chi tiet ma qua day. Chi doc. */
+window.__knCt = { ma: () => curT, jget, KN_FF, byT, sum: () => SUM, SEC_MAP, kho: () => knDtKho, knKhoaPhien, knDocCache, KN_MOC_SEC, fmt, cls };
 // ===== B★: nang cap hien thi diem mua dat chuan nen co hep + thi truong thuan (display-only) =====
 let __ixSD=null, __ixSI=null;
 (async()=>{ try{ const to2=NOW()+86400; __ixSD=await jget(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=VNINDEX&resolution=D&from=${to2-86400*5100}&to=${to2}`); __ixSI={}; __ixSD.t.forEach((ts,k2)=>__ixSI[ts]=k2); }catch(e){} })();
@@ -2967,6 +3138,7 @@ function computeTPN(oh, boardCode, qsAv){
         dA: 'Đóng cửa phiên tới ≥ ' + _px + ' · KL ≥ ' + _kl + _duoi, ts: _ts };
     }
   } catch(e){} }
+  if (_st && window.__knDC[curT]) _st = Object.assign({}, _st, { dL: knQuyDoi(_st.dL, curT), dA: knQuyDoi(_st.dA, curT) });
   return {markers, state: _st};
 }
 let curMarkers = [];
@@ -2998,13 +3170,15 @@ function knTpnCapNhat(s){
     const chip = ['ĐANG NẮM GIỮ — T+' + n + (pnl != null ? ', ' + (pnl > 0 ? '+' : '') + pnl.toFixed(1) + '%' : ''),
                   pnl != null && pnl < 0 ? '#fdecec' : '#e7f6ec', pnl != null && pnl < 0 ? '#e5484d' : '#128a3e'];
     if (!laMua && them <= 0) return { c: chip, dL: s.dL, dA: s.dA, ts: s.ts };   // cung ngay du lieu: giu loi dan cua may, chi cap nhat %
+    // Tu T+4: giu loi dan cua may (moc MA10/MA20 + cat lo, engine 01/10/2026) — truoc day ghi de bang moc -7% nen PET lai 28% van hien 'BAN duoi 38.59'.
+    if (!laMua && n > 3 && /MA(10|20)|Giữ, bán khi|Bán nếu hôm nay đóng cửa dưới/.test(String(s.dL || ''))) return { c: chip, dL: s.dL, dA: s.dA, ts: s.ts };
     const f2 = x => x >= 100 ? x.toFixed(1) : x.toFixed(2);
     const tx = fill ? ('Giá vốn ' + f2(fill) + '. ' + (n < 3 ? 'Chờ hàng về — T+3: đóng cửa ≤ ' + f2(fill) + ' là BÁN toàn bộ.'
                                                      : n === 3 ? 'Hôm nay T+3: đóng cửa ≤ ' + f2(fill) + ' là BÁN toàn bộ; trên giá vốn thì giữ, từ T+4 cắt lỗ dưới ' + f2(fill*0.93) + '.'
-                                                     : 'BÁN nếu hôm nay đóng cửa dưới ' + f2(fill*0.93) + ' (mốc MA tính lại sau phiên).'))
+                                                     : 'Bán nếu đóng cửa dưới ' + f2(fill*0.93) + ' (mốc giữ cập nhật sau phiên).'))
                     : 'Đã vào lệnh phiên trước. Bản cập nhật sau phiên sẽ tính lại mốc giữ/bán.';
-    const bm = String(s.dL || s.dA || '').match(/Buy (\d+(?:\.\d+)?)% tài khoản/);
-    const tx2 = bm ? tx + ' Tỷ trọng: Buy ' + bm[1] + '% tài khoản.' : tx;
+    const bm = String(s.dL || s.dA || '').match(/Buy (\d+(?:\.\d+)?)%/);
+    const tx2 = bm ? tx + ' Buy ' + bm[1] + '%.' : tx;
     return { c: chip, dL: tx2, dA: tx2, ts: s.ts };
   } catch(e) { return s; }
 }
@@ -3263,7 +3437,7 @@ var __finPlug = {
 function drawFundCharts(cols){
   try{
     if(typeof Chart === 'undefined' || !cols || !cols.length) return;
-    var C = { dt:'#2563EB', ln:'#18A34B', roe:'#18A34B', pe:'#2563EB', pb:'#18A34B' };
+    var C = { dt:'#475569', ln:'#18A34B', roe:'#18A34B', pe:'#475569', pb:'#18A34B' };   // tone trang: xanh + xam dam (20/10)
     var INK=__FUI.ink, MUT=__FUI.mut, GRID=__FUI.grid;
     var L = cols.map(function(c){ return c.lb; }), last = cols.length-1;
     var V = function(k){ return cols.map(function(c){ return c[k]; }); };
@@ -3394,7 +3568,7 @@ function __finCss(){
    '#finModalHead .fd.dn{color:var(--red);background:var(--red-soft)}',
    '#finModalHead .fd.fl{color:var(--muted);background:var(--panel2)}',
    '#finModal .fbox{height:min(56vh,470px);position:relative}',
-   '#finModalIns{font-size:14px;line-height:1.65;color:var(--muted);margin-top:12px;padding:11px 14px;background:var(--panel2);border-radius:9px;border-left:3px solid var(--blue)}',
+   '#finModalIns{font-size:14px;line-height:1.65;color:var(--muted);margin-top:12px;padding:11px 14px;background:var(--panel2);border-radius:9px;border-left:3px solid var(--green)}',
    '#finModalIns b{color:var(--text);font-weight:700}',
    '#finModalFoot{margin-top:11px;font-size:11.5px;color:var(--muted);text-align:right;letter-spacing:.2px}'
   ].join('');
@@ -3507,7 +3681,7 @@ function drawKq(qs){
   if (kqChart) kqChart.destroy();
   kqChart = new Chart($('#cvKq'), { data: { labels, datasets: [
     {type:'bar', label:'Doanh thu', data:rev, backgroundColor:'rgba(24,163,75,.45)', yAxisID:'y'},
-    {type:'line', label:'LNST', data:np, borderColor:'#2563eb', backgroundColor:'#2563eb', yAxisID:'y2', tension:.25}
+    {type:'line', label:'LNST', data:np, borderColor:'#475569', backgroundColor:'#475569', yAxisID:'y2', tension:.25}
   ]}, options: chartJsOpts(2) });
   // bảng 12 quý
   const yoy = (arr,i) => { const j = last12.length-12+i; const q = last12[i]; const prevIdx = qs.findIndex(x=>x.yearReport===q.yearReport-1 && x.lengthReport===q.lengthReport); const cur = pick(q,NPAT); const prev = prevIdx>=0?pick(qs[prevIdx],NPAT):null; return (cur!=null&&prev!=null&&prev!==0)?(cur/Math.abs(prev)-1)*100:null; };
@@ -3519,8 +3693,8 @@ function drawRt(rts){
   const labels = rts.map(x=>x.yearReport+'Q'+x.quarter);
   if (rtChart) rtChart.destroy();
   rtChart = new Chart($('#cvRt'), { data: { labels, datasets: [
-    {type:'line', label:'P/E', data:rts.map(x=>x.pe), borderColor:'#2563eb', yAxisID:'y', tension:.25},
-    {type:'line', label:'P/B', data:rts.map(x=>x.pb), borderColor:'#d97706', yAxisID:'y2', tension:.25},
+    {type:'line', label:'P/E', data:rts.map(x=>x.pe), borderColor:'#475569', yAxisID:'y', tension:.25},
+    {type:'line', label:'P/B', data:rts.map(x=>x.pb), borderColor:'#94A3B8', yAxisID:'y2', tension:.25},
     {type:'line', label:'ROE %', data:rts.map(x=>x.roe!=null?x.roe*100:null), borderColor:'#18a34b', yAxisID:'y2', tension:.25}
   ]}, options: chartJsOpts(2) });
 }
@@ -3545,7 +3719,9 @@ inits.compare = function(){
   drawSec();
 };
 // ===== DINH GIA THEO DONG (khoang P/B & ROE lich su, hien tai theo phien) =====
-const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB','TPB','VIB','MSB','OCB'], sec:['SSI','VND','VCI','HCM','MBS','VDS','BSI','SHS','VIX','FTS','ORS','TCX','VPX','VCK'] };
+const SEC_GROUPS = { bank:['VCB','BID','CTG','TCB','MBB','ACB','STB','SHB','VPB','TPB','VIB','MSB','OCB'], sec:['SSI','VND','VCI','HCM','MBS','VDS','BSI','SHS','VIX','FTS','ORS','TCX','VPX','VCK','KAI'] };
+/* Ma moi len san: khoang P/B chi tinh tu ngay niem yet -> ghi chu de nguoi xem khong hieu nham la '6 nam'. */
+const SEC_MOI = { KAI: '09/09/2026' };
 let secCache = {}, secChart = null, secGrp = 'bank', secLoi = null;
 /* Dem so ma thuc su ve duoc khoang P/B. Dung de biet mot lan tai la that bai hay thanh cong. */
 function secDemMuc(D, codes){
@@ -3567,6 +3743,8 @@ async function drawSec(){
     if (luu) { luu._k = khoa; secCache[secGrp] = cch = luu; }
   }
   /* Cache rong = lan tai truoc that bai. Bo di de tai lai, dung de ca phien chart trong. */
+  /* Cache cua danh sach ma cu (vd. truoc khi them KAI 13/10/2026) -> tai lai de co du ma. */
+  if (cch && cch._codes !== codes.join(',')) cch = null;
   if (cch && !secDemMuc(cch, codes)) {
     secCache[secGrp] = cch = null;
     try { localStorage.removeItem('kn_sec_' + secGrp); } catch(e){}
@@ -3605,7 +3783,7 @@ async function drawSec(){
         if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb;
       } catch(e){ if (out[t].curPb == null && rts.length) out[t].curPb = rts[rts.length-1].pb; }
     } catch(e){ if (!secLoi) secLoi = 'mã ' + t + ': ' + ((e && e.message) || 'không gọi được'); } }));
-    out._ts = Date.now(); out._k = khoa;
+    out._ts = Date.now(); out._k = khoa; out._codes = codes.join(',');
     secCache[secGrp] = out;
     /* Chi ghi cache khi ve du ma. Tai hong ma van ghi thi ca phien sau do chart trong. */
     const nOk = secDemMuc(out, codes);
@@ -3632,6 +3810,8 @@ async function drawSec(){
   }
   if (cv) cv.style.display = '';
   if (msg) msg.style.display = 'none';
+  { const moi = items.filter(c => SEC_MOI[c]); const st2 = $('#secSt');
+    if (st2 && moi.length && !/mới niêm yết/.test(st2.textContent)) st2.textContent += (st2.textContent ? ' · ' : '') + moi.map(c => c + ' mới niêm yết ' + SEC_MOI[c] + ' (khoảng P/B tính từ ngày lên sàn)').join(', '); }
   const secLbl = { id:'secLbl', afterDatasetsDraw(chart){ const ctx = chart.ctx; const meta = chart.getDatasetMeta(0);
     meta.data.forEach((bar,i)=>{ const d = D[items[i]];
       ctx.save(); ctx.font = '700 11px Inter, sans-serif'; ctx.fillStyle = '#1F2937'; ctx.textAlign = 'center';
@@ -3648,7 +3828,7 @@ async function drawSec(){
       plugins:{ legend:{display:false}, tooltip:{callbacks:{ label: c => { const d = D[items[c.dataIndex]];
         return c.datasetIndex===1 ? 'ROE hiện tại: '+(d.curRoe!=null?d.curRoe.toFixed(1)+'%':'--')
           : ['P/B cao nhất: '+d.pbHi.toFixed(2), 'P/B thấp nhất: '+d.pbLo.toFixed(2), 'P/B hiện tại: '+(d.curPb!=null?(+d.curPb).toFixed(2):'--'),
-             'Sổ sách/cp: '+(d.bvps!=null?(+d.bvps).toFixed(2)+' (VNDirect)':'--')]; } }} },
+             'Sổ sách/cp: '+(d.bvps!=null?(+d.bvps).toFixed(2)+' (VNDirect)':'--')].concat(SEC_MOI[items[c.dataIndex]] ? ['Niêm yết '+SEC_MOI[items[c.dataIndex]]+' — khoảng P/B chưa đủ 6 năm'] : []); } }} },
       scales:{ x:{grid:{display:false}, ticks:{color:'#1F2937', font:{weight:600, size:12, family:'Inter'}}},
                y:{beginAtZero:true, grid:{color:'#F1F3F6'}, ticks:{color:'#7A828E', font:{size:11}}, title:{display:true, text:'P/B', color:'#7A828E', font:{size:11}}},
                y2:{position:'right', beginAtZero:true, grid:{drawOnChartArea:false}, ticks:{color:'#D97706', font:{size:11}, callback:v=>v+'%'}, title:{display:true, text:'ROE', color:'#D97706', font:{size:11}}} } },
@@ -3711,7 +3891,7 @@ inits.watch = function(){
   const tableHtml = (list, sortable)=>`<div style="overflow:auto"><table>${headRow(sortable)}${list.map(rowHtml).join('')}</table></div>`;
   el.innerHTML = `<div class="card">
     <h2 style="margin-bottom:3px">Watchlist ${lab}</h2>
-    <div class="mini" style="margin-bottom:10px">Chỉ còn mã B★ (nền thắt chặt, cơ bản đạt). <b>Buy 50% / 25% / 12.5%</b> = tỷ trọng nếu nổ phiên tới (% vốn cuối năm trước). Nhãn <span style="font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309">mỏng</span> = GTGD TB20 10–15 tỷ: vẫn canh được, nhưng tín hiệu chỉ hợp lệ khi phiên nổ kéo TB20 lên ≥ 15 tỷ.</div>
+    <div class="mini" style="margin-bottom:10px">Chỉ còn mã B★ (nền thắt chặt, cơ bản đạt). <b>Buy 35% / 25% / 15%</b> = tỷ trọng nếu nổ phiên tới (% vốn cuối năm trước; mã thanh khoản thấp tự giảm để lệnh ≤ 20% GTGD, tính cho tài khoản 10 tỷ). Nhãn <span style="font-size:9.5px;font-weight:700;padding:0 5px;border-radius:4px;background:#FFF4E5;color:#B45309">mỏng</span> = GTGD TB20 10–15 tỷ: vẫn canh được, nhưng tín hiệu chỉ hợp lệ khi phiên nổ kéo TB20 lên ≥ 15 tỷ.</div>
     ${strong.length?tableHtml(strong,true):'<div class="mini" style="padding:8px 0">Chưa có mã đạt chuẩn cơ bản — cập nhật cuối phiên để quét lại.</div>'}
     <div class="mini" style="margin-top:9px;color:#7A828E">+/- LN, DT/TOI quý = tăng trưởng quý gần nhất so với cùng kỳ (cùng số với mục Chỉ số cơ bản trong Chi tiết mã; ngân hàng dùng TOI thay doanh thu). Khối lượng &amp; % KL ước tính theo trung bình 20 phiên.</div>
   </div>
@@ -4487,7 +4667,9 @@ function pinNameBar(){
       var dinh = k.getBoundingClientRect().top + window.scrollY;   // vi tri chart trong trang
       var CHAN = 66;                                               // chua dai lien he ghim duoi
       var tong = Math.max(430, Math.round(window.innerHeight - dinh - CHAN));
-      var hPx  = Math.round(tong * 0.74), hVol = tong - hPx;
+      var rsH = window.__knRsiH ? window.__knRsiH() : 0;
+      var hPx  = Math.round(tong * 0.74) - rsH, hVol = tong - hPx - rsH;
+      px.dataset.knTm = '1';
       /* Do lai moi nhip va chi sua khi lech >6px: lan dau chart duoc dung truoc
          khi dai watchlist ve xong nen vi tri con xe dich; cach nay tu chinh lai. */
       if (Math.abs(parseFloat(px.style.height || 0) - hPx) > 6){
@@ -4505,6 +4687,7 @@ function pinNameBar(){
     }catch(e){}
   }
   var __tmLai = 0;
+  window.__knTranMan = __chartTranMan;
   /* Mo mot ma -> chart duoc dung lai tu dau, canh lai ngay thay vi doi nhip */
   try {
     var __od = window.openDetail;

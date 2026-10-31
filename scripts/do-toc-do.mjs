@@ -1,0 +1,34 @@
+// Do toc do tab Chi tiet ma tren trinh duyet that (Chromium tren runner): thoi gian doi ma + request cham.
+import { chromium } from 'playwright';
+const b = await chromium.launch(); const ctx = await b.newContext({ viewport: { width: 1440, height: 900 }, userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36', locale: 'vi-VN', timezoneId: 'Asia/Ho_Chi_Minh' }); const p = await ctx.newPage();
+const req = new Map(), cham = [];
+p.on('request', r => req.set(r, Date.now()));
+const xong = new Set(); p.on('requestfailed', r => xong.add(r)); p.on('requestfinished', async r => { xong.add(r); const t0 = req.get(r); const ms = Date.now() - t0; if (ms > 250 || /dchart|finfo|vietcap/.test(r.url())) cham.push([ms, r.url().slice(0, 140)]); });
+p.on('requestfailed', r => cham.push(['LOI ' + (Date.now() - req.get(r)), r.url().slice(0, 140), r.failure()?.errorText]));
+const loiJs = []; p.on('pageerror', e => loiJs.push(String(e && e.stack || e).slice(0, 400))); p.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') loiJs.push('console.' + m.type() + ': ' + m.text().slice(0, 300)); });
+const t0 = Date.now();
+await p.goto('https://khoanguyeninvest.vn/?cb=' + Date.now(), { waitUntil: 'domcontentloaded' });
+console.log('DOMContentLoaded', Date.now() - t0, 'ms');
+await p.waitForFunction(() => typeof window.openDetail === 'function' || typeof window.showView === 'function', null, { timeout: 30000 });
+console.log('JS san sang', Date.now() - t0, 'ms');
+for (const ma of (process.env.MA || 'KDH,NVL').split(',')) {
+  const s = Date.now();
+  await p.evaluate(m => { (window.openDetail || ((x) => { showView('detail'); loadDetail(x); }))(m); }, ma);
+  try { await p.waitForFunction(m => { const e = document.getElementById('dTitle'); return e && e.textContent.trim().startsWith(m) && !e.querySelector('.spin'); }, ma, { timeout: 30000, polling: 50 }); console.log('Doi ma', ma, ':', Date.now() - s, 'ms'); }
+  catch (e) { console.log('Doi ma', ma, ': QUA 30s | tieu de:', await p.evaluate(() => document.getElementById('dTitle')?.innerHTML.slice(0, 200)), '| hien:', await p.evaluate(() => getComputedStyle(document.getElementById('view-detail')||document.body).display)); }
+  await p.waitForTimeout(1500);
+}
+const chan = await p.evaluate(async () => {
+  const o = { scripts: [...document.scripts].map(x => x.src.split('/').pop()).filter(Boolean).join(' '), sw: !!navigator.serviceWorker?.controller };
+  const tg = async (ten, u, opt) => { const s = performance.now(); try { const r = await Promise.race([fetch(u, opt), new Promise((_, j) => setTimeout(() => j(new Error('QUA 15s')), 15000))]); o[ten] = r.status + ' ' + Math.round(performance.now() - s) + 'ms'; } catch (e) { o[ten] = 'LOI ' + Math.round(performance.now() - s) + 'ms ' + e.message; } };
+  await tg('vietcap', 'https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/HPG/statistics-financial', { referrerPolicy: 'no-referrer' });
+  await tg('finfo BCTC', 'https://api-finfo.vndirect.com.vn/v4/financial_statements?q=code:HPG~reportType:QUARTER~itemCode:21001,23000&sort=fiscalDate:desc&size=150');
+  await tg('dchart', 'https://dchart-api.vndirect.com.vn/dchart/history?symbol=HPG&resolution=D&from=1351394069&to=1792034069');
+  try { o.coVc = sessionStorage.getItem('kn_vc_hong'); } catch (e) {}
+  return o; });
+console.log('\nCHAN DOAN:', JSON.stringify(chan, null, 1));
+cham.sort((a, b) => (+String(b[0]).replace(/\D/g, '')) - (+String(a[0]).replace(/\D/g, '')));
+console.log('\nRequest > 400ms:'); cham.slice(0, 40).forEach(x => console.log('  ', ...x));
+console.log('\nDANG TREO (chua tra ve):'); for (const [r, t] of req) if (!xong.has(r)) console.log('  ', Date.now() - t, 'ms', r.url().slice(0, 200));
+console.log('\nLoi JS:'); loiJs.slice(0, 30).forEach(x => console.log('  ', x));
+await b.close();

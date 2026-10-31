@@ -1,0 +1,1577 @@
+{
+ "v": 2,
+ "ma": "KBC",
+ "ten": "Tổng Công ty Phát triển Đô thị Kinh Bắc – CTCP",
+ "nganh": "Bất động sản khu công nghiệp và khu đô thị",
+ "ky": "BCTC Q3/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q4/2026 (cuối 1/2027)",
+ "cp_trieu": 941.75,
+ "cp_ng": "Vốn điều lệ 9.417,5 tỷ (BCTC Q3/2026) = 941,75 triệu cp; Shinhan, VNDS, KBSV: 941.754.759 cp. Không có cổ phiếu quỹ, thưởng hay cổ tức từ 2024; vốn hóa/giá trên bảng giá 23/10 khớp số cp này.",
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Giá ngang sổ sách, chưa tính lãi ~640 ha đất KCN; Tràng Cát, nợ vay là phần phải chiết khấu",
+  "dk": "up_tren:10",
+  "khac": "Lãi ~640 ha đất KCN đã vào giá; phần còn lại phụ thuộc Tràng Cát và nợ vay"
+ },
+ "dong_mo": "Q3/2026 LN cổ đông 911 tỷ nhờ ~55 ha bàn giao (gấp 3,3 lần cùng kỳ); 9T LNST 1.197 tỷ, 40% kế hoạch. Giá trị = vốn chủ 30/9/2026 (Tràng Cát × 0,80, phần còn lại × 0,85) + lãi chưa ghi nhận của ~640 ha đất KCN và ~1.475 ha KCN mới: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "~640 ha",
+   "nhan": "đất còn trống ở 5 KCN đang chạy, phần KBC (30/9/2026)",
+   "tieu": "Lãi nằm ở đất KCN chưa giao, chưa có trong sổ sách",
+   "t": "Tràng Duệ 3 (~406 ha phần KBC), cụm Hưng Yên, Quế Võ 2 MR, Nam Sơn Hạp Lĩnh, Tân Phú Trung còn ~640 ha. 9T/2026 giao ~76 ha, doanh thu đất 3.293 tỷ (~43 tỷ/ha), biên gộp 63%: mỗi ha ~19 tỷ lãi sau thuế. Bán 100 ha/năm, chiết khấu 15%: ~9,1 nghìn tỷ lãi chưa ghi nhận — vốn chủ chỉ ghi đất theo giá vốn.",
+   "ng": "KBSV 11/06 · báo chí 10/2026 · mô hình"
+  },
+  {
+   "so": "55 ha",
+   "nhan": "bàn giao Q3/2026, gấp 3,3 lần cùng kỳ",
+   "tieu": "Nhịp giao đất đã trở lại; Q4 là phép thử",
+   "t": "Q3 LN cổ đông 911 tỷ từ ~55 ha (chủ yếu Quế Võ 2 MR, khách Luxshare); 6T chỉ 231 tỷ với ~21 ha. 6T ký hơn 170 ha MOU và hợp đồng, Q3 mới giao ~55. Ban lãnh đạo nhắm tới ~100 ha Q4; cơ sở 60 ha → LN 2026E ~2,0 nghìn tỷ. Lãi vay 357 tỷ/quý ăn hết lãi gộp của ~15 ha mỗi quý.",
+   "ng": "BCTC Q3 · báo chí 10/2026 · Shinhan 26/08 · mô hình"
+  },
+  {
+   "so": "17.800 tỷ",
+   "nhan": "giá vốn Tràng Cát (30/6/2026) — 69% vốn chủ cổ đông",
+   "tieu": "Tràng Cát: tài sản lớn nhất chưa tạo tiền, lại gánh lãi vay",
+   "t": "585 ha ở Hải Phòng, đã nộp tiền sử dụng đất, GPMB xong; vốn đầu tư tăng 648 tỷ chỉ trong Q1/2026, khi cả công ty vốn hóa 441 tỷ lãi vay (KBSV). Bán buôn sớm nhất 2027 (KBSV: 10 ha ≈ 2,4 nghìn tỷ, biên 54%). Nợ vay 33,8 nghìn tỷ (+5,2 trong 9T). Mô hình tính 0,80 lần giá vốn (xấu 0,50, tốt 1,0); CTCK 1,05–1,3 lần.",
+   "ng": "KBSV 11/06 · Shinhan 26/08 · VNDS 15/06 · BCTC Q3"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý (nghìn đ/cp)",
+   "tieu": "NAV điều chỉnh: {up_so} so với giá hiện tại",
+   "t": "Vốn chủ 30/9/2026 25,9 nghìn tỷ (27.551 đ/cp): Tràng Cát × 0,80 + phần còn lại × 0,85 (P/B KBC từ 2015: thấp 25% 0,80, trung vị 1,09), cộng ~640 ha × 14,2 tỷ/ha và ~1.475 ha KCN mới × 2,0 tỷ/ha. Bằng 1,28 lần sổ sách, 13,8 lần LN 2027E. Xấu 21,4 (Tràng Cát 0,50, bán 60 ha/năm), tốt 45,5.",
+   "ng": "mô hình · BCTC Q3/2026"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   2147,
+   2049,
+   2402
+  ],
+  "ln_truoc": 426,
+  "eps": [
+   2280,
+   2176,
+   2551
+  ],
+  "bv": [
+   26335,
+   28513,
+   31063
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Bàn giao đất KCN (ha)",
+    "v": [
+     121,
+     136,
+     140
+    ],
+    "d": 0
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     9.9,
+     7.9,
+     8.6
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC kiểm toán (tổng 4 quý BCTC: 381 / 2.103 tỷ). EPS, BVPS theo 941,75 triệu cp. Không giả định cổ tức (kế hoạch 2.000 đ/cp tiền mặt từ LN 2026 chưa có ngày chốt). Bàn giao 2025 ~121 ha (VDS)."
+ },
+ "ln_mang": {
+  "tieu": "Lãi gộp theo mảng",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "lãi gộp",
+  "ss": [
+   {
+    "ten": "Cho thuê đất KCN",
+    "mau": "c1",
+    "v": [
+     2495,
+     3647,
+     3612
+    ]
+   },
+   {
+    "ten": "BĐS dân cư (NOXH, Tràng Cát)",
+    "mau": "c2",
+    "v": [
+     263,
+     233,
+     1204
+    ]
+   },
+   {
+    "ten": "Dịch vụ KCN, nhà xưởng",
+    "mau": "c4",
+    "v": [
+     433,
+     424,
+     489
+    ]
+   }
+  ],
+  "nhan": "Cho thuê đất KCN",
+  "ng": "2025A: tổng lãi gộp kiểm toán 3.191 tỷ, chia mảng ước (BĐS 18%, dịch vụ và nhà xưởng 52% doanh thu — biên Q1/2026 theo VDS). 2026E: 9T thực tế (lãi gộp đất 2.085 tỷ, báo chí 10/2026) + Q4 mô hình; 2027E: mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 23/10)",
+  "nhom": "8 doanh nghiệp KCN vốn hóa lớn nhất",
+  "kv": [
+   [
+    "GVR",
+    2.08
+   ],
+   [
+    "BCM",
+    1.79
+   ],
+   [
+    "VGC",
+    2.33
+   ],
+   [
+    "IDC",
+    2.08
+   ],
+   [
+    "SIP",
+    2.4
+   ],
+   [
+    "PHR",
+    1.68
+   ],
+   [
+    "NTC",
+    2.15
+   ],
+   [
+    "SZC",
+    1.16
+   ]
+  ],
+  "tv": 2.08,
+  "moi_cp": 27551,
+  "max": 3,
+  "y": "IDC, SIP, NTC, VGC — tiền ròng, ROE 17–32% — và GVR, PHR, BCM giao dịch 1,7–2,4 lần sổ sách; SZC, KBC — nợ vay lớn, ROE 5–7% — quanh 1 lần. Muốn được định giá lại, KBC phải biến đất thành tiền và hạ nợ.",
+  "ng": "BCTC VNDirect (vốn chủ cổ đông quý gần nhất: Q2/2026; KBC Q3/2026), vốn hóa VNDirect, giá 23/10/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: cho thuê đất KCN + BĐS dân cư",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Cho thuê đất KCN"
+   },
+   {
+    "ten": "Diện tích bàn giao (ha)",
+    "v": [
+     121,
+     136,
+     140
+    ]
+   },
+   {
+    "ten": "Doanh thu cho thuê đất (tỷ)",
+    "v": [
+     4396,
+     5813,
+     6020
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     56.8,
+     62.7,
+     60.0
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "BĐS dân cư, dịch vụ"
+   },
+   {
+    "ten": "Doanh thu BĐS: NOXH, Tràng Cát (tỷ)",
+    "v": [
+     1460,
+     1614,
+     2896
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Trong đó Tràng Cát (tỷ)",
+    "v": [
+     0,
+     0,
+     1896
+    ]
+   },
+   {
+    "ten": "Doanh thu dịch vụ KCN, nhà xưởng (tỷ)",
+    "v": [
+     832,
+     815,
+     940
+    ]
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     6687,
+     8242,
+     9856
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp (tỷ)",
+    "v": [
+     3191,
+     4304,
+     5305
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí bán hàng + quản lý (tỷ)",
+    "v": [
+     750,
+     754,
+     837
+    ]
+   },
+   {
+    "ten": "Chi phí lãi vay (tỷ)",
+    "v": [
+     639,
+     1294,
+     1550
+    ]
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     2925,
+     2993,
+     3318
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     2147,
+     2049,
+     2402
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     2280,
+     2176,
+     2551
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     26335,
+     28513,
+     31063
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     9.9,
+     7.9,
+     8.6
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "Đất KCN = ha × tỷ/ha × biên gộp; Tràng Cát bán buôn ~237 tỷ/ha, biên 54% (KBSV). 2025A: BCTC kiểm toán, biên đất ước. 2026E = 9T thực tế + Q4 ước. Thuế 23%; cổ đông thiểu số 4% (2026), 6% (2027: Tràng Duệ 3 KBC 89%, Hưng Yên 69%)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   2049
+  ],
+  "cuoi": [
+   "2027E",
+   2402
+  ],
+  "buoc": [
+   [
+    "Cho thuê đất KCN",
+    -27
+   ],
+   [
+    "Tràng Cát lô đầu",
+    788
+   ],
+   [
+    "Lãi vay",
+    -197
+   ],
+   [
+    "Lãi bán cổ phần 2026",
+    -266
+   ],
+   [
+    "Dịch vụ, chi phí, khác",
+    55
+   ]
+  ],
+  "y": "Tăng trưởng 2027E đến từ lô Tràng Cát đầu tiên (8 ha); đất KCN đi ngang (~140 ha), lãi vay tăng và khoản lãi chuyển nhượng cổ phần 345 tỷ của 2026 không lặp lại. Các mảng tính sau thuế 23%.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Bàn giao đất KCN: Q4/2026 · 2027 (ha)",
+   "v": [
+    "30 · 100",
+    "60 · 140",
+    "100 · 190"
+   ],
+   "ly_do": "9T ~76 ha (Q3 ~55); mục tiêu Q4 tới ~100 ha; kế hoạch 2026 250 ha; KBSV 2027 152, Shinhan 191; 2025 ~121 ha"
+  },
+  {
+   "ten": "Doanh thu ghi nhận (tỷ/ha)",
+   "v": [
+    "40",
+    "43",
+    "46"
+   ],
+   "ly_do": "9T/2026 ~43 (3.293 tỷ/76 ha), 2025 ~36; giá thuê Tràng Duệ 3 ~180, Quế Võ 2 MR ~153, NSHL ~190 USD/m² (VDS)"
+  },
+  {
+   "ten": "Biên gộp cho thuê đất 2027",
+   "v": [
+    "56%",
+    "60%",
+    "63%"
+   ],
+   "ly_do": "9T/2026 63%, Q1/2026 67% (VDS), 6T/2025 53% (Shinhan); cụm Hưng Yên giá thấp hơn; Tràng Duệ 3 tổng vốn >8.000 tỷ"
+  },
+  {
+   "ten": "Tràng Cát bán buôn 2027 (ha)",
+   "v": [
+    "0",
+    "8",
+    "15"
+   ],
+   "ly_do": "KBSV 10 ha (~237 tỷ/ha, biên 54%) năm 2027; VNDS 5/10 ha 2026–27; mô hình không ghi nhận Tràng Cát năm 2026"
+  },
+  {
+   "ten": "Lãi vay vào KQKD 2027 (tỷ)",
+   "v": [
+    "1.700",
+    "1.550",
+    "1.450"
+   ],
+   "ly_do": "Q3/2026 357 tỷ/quý; nợ vay 33,8 nghìn tỷ, +5,2 nghìn tỷ trong 9T; một phần lãi vốn hóa vào tồn kho"
+  },
+  {
+   "ten": "Nhịp bán đất KCN (ha/năm) · chiết khấu",
+   "v": [
+    "60 · 18%",
+    "100 · 15%",
+    "140 · 13%"
+   ],
+   "ly_do": "~640 ha phần KBC; WACC Shinhan 13,2%, VNDS 12,8%, chi phí vốn chủ 18–19%; giá thuê tăng 3–5%/năm"
+  },
+  {
+   "ten": "KCN mới (tỷ/ha sau thuế, đã chiết khấu)",
+   "v": [
+    "0,5",
+    "2,0",
+    "3,5"
+   ],
+   "ly_do": "~1.475 ha phần KBC, đang GPMB; giá trị CTCK ~3–6 tỷ/ha nhưng gồm cả giá vốn đã chi (đã nằm trong vốn chủ)"
+  },
+  {
+   "ten": "Tràng Cát · vốn chủ còn lại (lần sổ sách)",
+   "v": [
+    "0,50 · 0,60",
+    "0,80 · 0,85",
+    "1,00 · 1,00"
+   ],
+   "ly_do": "0,5 ≈ thu hồi giá vốn sau 5 năm, chiết khấu 15%; CTCK 1,05–1,3 lần; P/B KBC từ 2015: thấp 10% 0,71, thấp 25% 0,80, trung vị 1,09"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1440,
+   "ln27": 646,
+   "gia": 21.4,
+   "mo_ta": "Bàn giao 30 ha Q4/2026, 100 ha 2027; 40 tỷ/ha, biên 56%; Tràng Cát chưa bán, 0,50 lần giá vốn; đất cũ 60 ha/năm, chiết khấu 18%; KCN mới 0,5 tỷ/ha; vốn chủ còn lại 0,60 lần"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 2049,
+   "ln27": 2402,
+   "gia": 35.3,
+   "mo_ta": "Bàn giao 60 ha Q4/2026, 140 ha 2027; 43 tỷ/ha, biên 60%; Tràng Cát 8 ha 2027, 0,80 lần giá vốn; đất cũ 100 ha/năm, chiết khấu 15%; KCN mới 2,0 tỷ/ha; vốn chủ còn lại 0,85 lần"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 2928,
+   "ln27": 4393,
+   "gia": 45.5,
+   "mo_ta": "Bàn giao 100 ha Q4/2026, 190 ha 2027; 46 tỷ/ha, biên 63%; Tràng Cát 15 ha 2027, 1,0 lần giá vốn; đất cũ 140 ha/năm, chiết khấu 13%; KCN mới 3,5 tỷ/ha; vốn chủ còn lại 1,0 lần"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo tài sản (NAV điều chỉnh)",
+  "phu": "Tràng Cát × hệ số giá vốn + vốn chủ còn lại × P/B + lãi chưa ghi nhận của đất KCN (ha × tỷ/ha)",
+  "ck": 0,
+  "cp": 941.75,
+  "phan": [
+   {
+    "ten": "Đất KCN đang cho thuê",
+    "mau": "c1",
+    "x": [
+     640,
+     640,
+     640
+    ],
+    "boi": [
+     8.8,
+     14.2,
+     18.4
+    ],
+    "x_ten": "ha còn trống ở 5 KCN đang chạy, phần KBC (30/9/2026)",
+    "boi_ten": "tỷ đ/ha: lãi sau thuế chưa ghi nhận × hệ số chiết khấu",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     5632,
+     9088,
+     11776
+    ]
+   },
+   {
+    "ten": "KCN mới",
+    "mau": "c3",
+    "x": [
+     1475,
+     1475,
+     1475
+    ],
+    "boi": [
+     0.5,
+     2.0,
+     3.5
+    ],
+    "x_ten": "ha thương phẩm KCN đã có chủ trương, phần KBC",
+    "boi_ten": "tỷ đ/ha sau thuế, đã chiết khấu",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     738,
+     2950,
+     5162
+    ]
+   },
+   {
+    "ten": "KĐT Tràng Cát",
+    "mau": "c2",
+    "x": [
+     17800,
+     17800,
+     17800
+    ],
+    "boi": [
+     0.5,
+     0.8,
+     1.0
+    ],
+    "x_ten": "giá vốn trong tồn kho (30/6/2026)",
+    "boi_ten": "lần giá vốn",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     8900,
+     14240,
+     17800
+    ]
+   },
+   {
+    "ten": "Vốn chủ còn lại",
+    "mau": "c4",
+    "x": [
+     8146,
+     8146,
+     8146
+    ],
+    "boi": [
+     0.6,
+     0.85,
+     1.0
+    ],
+    "x_ten": "vốn chủ cổ đông 30/9/2026 − giá vốn Tràng Cát",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "sh": 1,
+    "gt": [
+     4888,
+     6924,
+     8146
+    ]
+   }
+  ],
+  "von": [
+   20158,
+   33202,
+   42884
+  ],
+  "gia": [
+   21.4,
+   35.3,
+   45.5
+  ]
+ },
+ "nhay": [
+  [
+   "Hệ số giá vốn Tràng Cát ±0,1 lần",
+   null,
+   1.9
+  ],
+  [
+   "Giá trị KCN mới ±1 tỷ đ/ha",
+   null,
+   1.6
+  ],
+  [
+   "Nhịp bán đất KCN ±30 ha/năm",
+   null,
+   0.9
+  ],
+  [
+   "Biên gộp cho thuê đất ±5 điểm %",
+   218,
+   0.9
+  ],
+  [
+   "Chiết khấu đất KCN ±2 điểm %",
+   null,
+   0.5
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.19,
+   1.2,
+   1.18,
+   1.16,
+   1.12,
+   1.1,
+   1.13,
+   0.85,
+   0.88,
+   1.01,
+   0.9,
+   0.9,
+   0.81,
+   0.87,
+   0.84,
+   0.91,
+   0.96,
+   1.02,
+   1.16,
+   1.12,
+   1.2,
+   1.1,
+   0.89,
+   0.86,
+   0.84,
+   0.89,
+   0.93,
+   0.92,
+   0.95,
+   1.02,
+   0.88,
+   0.88,
+   0.85,
+   0.75,
+   0.79,
+   0.77,
+   0.81,
+   0.74,
+   0.77,
+   0.76,
+   0.71,
+   0.67,
+   0.67,
+   0.67,
+   0.71,
+   0.67,
+   0.69,
+   0.71,
+   0.76,
+   0.77,
+   0.77,
+   0.76,
+   0.75,
+   0.74,
+   0.77,
+   0.81,
+   0.76,
+   0.74,
+   0.79,
+   0.79,
+   0.74,
+   0.71,
+   0.56,
+   0.64,
+   0.7,
+   0.69,
+   0.62,
+   0.69,
+   0.71,
+   0.69,
+   0.8,
+   1.23,
+   1.85,
+   1.92,
+   1.87,
+   1.84,
+   1.54,
+   1.77,
+   1.59,
+   1.96,
+   2.0,
+   2.24,
+   1.84,
+   2.23,
+   1.97,
+   2.38,
+   2.2,
+   1.82,
+   1.74,
+   1.71,
+   1.97,
+   1.86,
+   1.55,
+   0.94,
+   1.0,
+   1.14,
+   1.22,
+   1.01,
+   1.16,
+   1.23,
+   1.27,
+   1.32,
+   1.49,
+   1.46,
+   1.36,
+   1.08,
+   1.32,
+   1.35,
+   1.28,
+   1.31,
+   1.48,
+   1.23,
+   1.33,
+   1.23,
+   1.16,
+   1.12,
+   1.18,
+   1.1,
+   1.15,
+   1.13,
+   1.2,
+   1.23,
+   1.27,
+   0.94,
+   1.04,
+   1.06,
+   1.26,
+   1.56,
+   1.42,
+   1.38,
+   1.37,
+   1.37,
+   1.36,
+   1.34,
+   1.21,
+   1.29,
+   1.15,
+   1.15,
+   1.05,
+   1.03,
+   0.96,
+   1.02
+  ],
+  "p10": 0.71,
+  "p25": 0.8,
+  "tv": 1.09,
+  "thap": [
+   "2020-03",
+   0.56
+  ],
+  "nay": [
+   "2026-10",
+   1.02
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Giá trị cơ sở ≈ 1,28 lần vốn chủ 30/9/2026 — trên trung vị 1,09 vì cộng lãi đất KCN chưa ghi nhận; phần sổ sách dùng 0,80–0,85 lần (quanh thấp 25% 0,80); hiện 0,98. Kịch bản xấu 0,50–0,60 lần, dưới thấp 10% (0,71)."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    297,
+    906,
+    1785
+   ],
+   "ck": 608
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1440,
+    2049,
+    2928
+   ]
+  },
+  {
+   "quy": "Cả năm 2027",
+   "ln": [
+    646,
+    2402,
+    4393
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "1–2/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Cùng kỳ 608 tỷ. Mục tiêu tới ~100 ha Q4 (Quế Võ 2 MR, Tràng Duệ 3, NSHL); cơ sở 60 ha. Xem ha bàn giao, biên gộp đất và lãi vay.",
+   "tac": [
+    "≥ 906 tỷ",
+    "LN cổ đông Q4 khớp cơ sở; dưới 297 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "ha bàn giao, LN cổ đông"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Tràng Duệ 3 vào giai đoạn bàn giao",
+   "ct": "GPMB 302 ha (7/2026), hạ tầng 172 ha; CTP Asia 22,45 ha, LG ~30 ha MOU. ~406 ha phần KBC — gần 2/3 đất còn trống ở các KCN đang chạy.",
+   "tac": [
+    "+174 tỷ LN",
+    "mỗi 10 ha bàn giao (43 tỷ/ha, biên 60%)"
+   ],
+   "theo_doi": "GPMB, MOU, hợp đồng thuê"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Tràng Cát bán buôn lô đầu",
+   "ct": "KBSV: 10 ha năm 2027 ≈ 2,4 nghìn tỷ doanh thu, biên 54%; VNDS: 5/10 ha 2026–27. Giao dịch thật đầu tiên kéo hệ số định giá về gần giá vốn.",
+   "tac": [
+    "±1,9 nghìn đ/cp",
+    "mỗi 0,1 lần giá vốn Tràng Cát"
+   ],
+   "theo_doi": "hợp đồng bán buôn, giá/m²"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "len",
+   "tieu": "FDI công nghệ cao về phía Bắc",
+   "ct": "FDI đăng ký 7T/2026 38,06 tỷ USD (+58%), giải ngân 15,2 tỷ USD (+12%); Nghị quyết 10-NQ/TW ưu tiên FDI công nghệ cao. KCN Bắc Ninh, Hải Phòng của KBC đón điện tử, bán dẫn.",
+   "tac": [
+    "±0,9 nghìn đ/cp",
+    "mỗi ±30 ha/năm nhịp bán đất KCN"
+   ],
+   "theo_doi": "FDI đăng ký, MOU mới"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi vay ăn vào lợi nhuận",
+   "ct": "Nợ vay 33,8 nghìn tỷ (+5,2 nghìn tỷ từ đầu năm); lãi vay vào KQKD Q3 357 tỷ, chưa kể phần vốn hóa (Q1: 441 tỷ). Nợ đến hạn 2,6 nghìn tỷ (cuối Q1, KBSV).",
+   "tac": [
+    "−260 tỷ LN/năm",
+    "mỗi +1 điểm % lãi suất trên 33,8 nghìn tỷ nợ vay, nếu ghi hết vào chi phí"
+   ],
+   "theo_doi": "nợ vay, lãi vay"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Pha loãng khi huy động vốn",
+   "ct": "ĐHĐCĐ 4/2026 chọn huy động vốn qua chứng khoán thay vì định giá lại tài sản (chưa công bố quy mô). Q2/2025 đã phát hành 174 triệu cp giá 23.900 đ.",
+   "tac": [
+    "−1,1 nghìn đ/cp",
+    "mỗi 100 triệu cp mới giá 24.000 đ (giá trị cơ sở)"
+   ],
+   "theo_doi": "nghị quyết phát hành"
+  },
+  {
+   "khi": "2027–2028",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Tràng Cát chậm bán",
+   "ct": "KBSV đã dời doanh thu Tràng Cát sang 2027 vì lãi suất tăng, tín dụng BĐS thương mại thu hẹp. Mỗi năm chậm, lãi vay vốn hóa đẩy giá vốn lên mà giá trị không tăng.",
+   "tac": [
+    "−5,7 nghìn đ/cp",
+    "Tràng Cát 0,50 lần giá vốn thay vì 0,80"
+   ],
+   "theo_doi": "tồn kho Tràng Cát"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Thuế Mục 301, xung đột Trung Đông",
+   "ct": "Mỹ áp thêm 12,5% thuế với hàng Việt Nam (USTR 23/07/2026) và siết cấm vận Iran. Khách thuê FDI có thể dời quyết định → bàn giao chậm.",
+   "tac": [
+    "−696 tỷ LN 2027E",
+    "nếu chỉ giao 100 ha thay vì 140 (kịch bản xấu)"
+   ],
+   "theo_doi": "MOU, FDI đăng ký mới"
+  },
+  {
+   "khi": "2027",
+   "loai": "hai",
+   "tieu": "Cổ tức tiền mặt từ LN 2026",
+   "ct": "Tài liệu ĐHĐCĐ 2026: dự kiến 2.000 đ/cp tiền mặt (~1,9 nghìn tỷ). 9T mới đạt 40% LNST kế hoạch, nợ vay 33,8 nghìn tỷ; 2024 KBC từng hủy cổ tức 2022 cùng mức.",
+   "tac": [
+    "92%",
+    "LN cổ đông 2026E cơ sở nếu chia đủ; mô hình chưa trừ"
+   ],
+   "theo_doi": "nghị quyết HĐQT, ngày chốt quyền"
+  },
+  {
+   "khi": "2027–2030",
+   "loai": "hai",
+   "tieu": "Dự án ngoài mô hình",
+   "ct": "Trung tâm dữ liệu AI với AIC ở Tân Phú Trung (~2,1 tỷ USD), điện gió Vân Canh 340 MW (~14,7 nghìn tỷ), Khoái Châu 888 ha: chưa tính giá trị, nhưng cần thêm vốn.",
+   "tac": "",
+   "theo_doi": "giấy phép, vốn góp"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Đất ở 5 KCN đang cho thuê (1Q2026)",
+   "kieu": "cot_chong",
+   "dv": "ha",
+   "so_le": 0,
+   "nhan": [
+    "TĐ3",
+    "H.Yên",
+    "QV2 MR",
+    "NSHL",
+    "TPT"
+   ],
+   "ss": [
+    {
+     "ten": "Đã cho thuê",
+     "v": [
+      0,
+      93,
+      5,
+      157,
+      245
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Còn trống",
+     "v": [
+      456,
+      152,
+      86,
+      47,
+      69
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Còn ~810 ha trống (1Q2026), Tràng Duệ 3 chiếm hơn nửa; Q2–Q3 giao thêm ~56 ha, chủ yếu Quế Võ 2 MR. Chưa gồm 2.114 ha KCN mới (Long An, Phú Bình, Kim Thành 2, Bình Giang).",
+   "ng": "KBSV 11/06/2026 (bảng 6: diện tích thương phẩm × tỷ lệ lấp đầy)"
+  },
+  {
+   "ten": "Lãi gộp và LN cổ đông theo quý",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      385,
+      1185,
+      538,
+      784,
+      602,
+      649,
+      200,
+      1723
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "LN cổ đông",
+     "v": [
+      30,
+      783,
+      405,
+      307,
+      608,
+      224,
+      7,
+      911
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "LN đi theo ha bàn giao: Q1/2025 783 tỷ (~83 ha Hưng Yên), Q2/2026 7 tỷ, Q3/2026 911 tỷ (~55 ha) — định giá theo một quý là sai.",
+   "ng": "BCTC quý (VNDirect); Q4/2025 kiểm toán năm cao hơn 44 tỷ"
+  },
+  {
+   "ten": "Nợ vay, tồn kho và tiền",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      10.1,
+      17.6,
+      26.1,
+      27.0,
+      28.6,
+      30.2,
+      32.7,
+      33.8
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Tồn kho",
+     "v": [
+      13.8,
+      20.3,
+      23.7,
+      25.1,
+      27.1,
+      29.5,
+      33.4,
+      35.4
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      8.4,
+      8.5,
+      20.0,
+      11.3,
+      10.2,
+      14.4,
+      11.7,
+      12.1
+     ],
+     "mau": "c4"
+    }
+   ],
+   "y": "Nợ vay từ 10,1 lên 33,8 nghìn tỷ trong 7 quý, tồn kho từ 13,8 lên 35,4: vốn vay nằm ở Tràng Cát, Tràng Duệ 3, Khoái Châu; tiền + đầu tư ngắn hạn 12,1 nghìn tỷ.",
+   "ng": "BCTC (VNDirect)"
+  },
+  {
+   "ten": "Thu nhập tài chính và lãi vay theo quý",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Thu nhập tài chính",
+     "v": [
+      158,
+      135,
+      163,
+      90,
+      290,
+      90,
+      433,
+      80
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Lãi vay vào KQKD",
+     "v": [
+      85,
+      108,
+      114,
+      211,
+      262,
+      263,
+      299,
+      357
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Lãi vay Q3/2026 357 tỷ, gấp 4,2 lần Q4/2024, chưa kể phần vốn hóa (Q1/2026: 441 tỷ, KBSV): cần ~15 ha bàn giao mỗi quý chỉ để trả lãi. Q2/2026 có 345 tỷ lãi chuyển nhượng cổ phần.",
+   "ng": "BCTC (VNDirect) · KBSV 11/06 · Shinhan 26/08"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 10000,
+    "th": 5112,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
+   },
+   {
+    "ten": "Lợi nhuận sau thuế",
+    "kh": 3000,
+    "th": 1197,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 · BCTC Q3"
+   },
+   {
+    "ten": "Bàn giao đất KCN",
+    "kh": 250,
+    "th": 76,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "ha",
+    "ng": "VDS 16/06 · báo chí 10/2026"
+   }
+  ],
+  "y": "9T đạt 51% doanh thu, 40% LNST, ~30% diện tích. Cơ sở: LNST 2026E ~2.141 tỷ (71% kế hoạch) với 60 ha Q4; chạm kế hoạch cần ~100 ha Q4 (kịch bản tốt).",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "Cho thuê đất KCN — nguồn lãi chính",
+   "phu": "Quỹ đất KCN hơn 5.000 ha (KBSV): 5 KCN đang cho thuê ở Hải Phòng, Bắc Ninh, Hưng Yên, TP.HCM; 2.114 ha KCN mới đã có chủ trương",
+   "so": [
+    [
+     "Còn trống, 5 KCN",
+     "~754 ha",
+     "sau Q3/2026, 100% dự án"
+    ],
+    [
+     "Phần KBC",
+     "~640 ha",
+     "theo tỷ lệ sở hữu"
+    ],
+    [
+     "Ký 6T/2026",
+     ">170 ha",
+     "Shinhan 26/08"
+    ],
+    [
+     "Giá thuê",
+     "150–190 USD/m²",
+     "VDS 16/06"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Hơn 90% khách thuê là doanh nghiệp FDI, chủ yếu Đài Loan, Trung Quốc; khách lớn: Canon, Foxconn, LG, Luxshare, Goertek.",
+     "ng": "Shinhan 26/08"
+    },
+    {
+     "t": "Quế Võ 2 MR gần như dành cho Luxshare-ICT (MOU ~96 ha, ~153 USD/m²); ~55 ha giao Q3/2026 chủ yếu ở khu này. Tràng Duệ 3 nằm trong KKT Đình Vũ – Cát Hải, được ưu đãi thuế TNDN.",
+     "ng": "KBSV 11/06 · VDS 16/06 · báo chí 10/2026"
+    },
+    {
+     "t": "KBC thường mất ~6 năm để lấp đầy trên 90% một KCN; 6 KCN (1.529 ha) đã lấp đầy 100%.",
+     "ng": "Shinhan 26/08"
+    }
+   ]
+  },
+  {
+   "ten": "Bất động sản dân cư — Tràng Cát, Khoái Châu, NOXH",
+   "phu": "Tràng Cát 585 ha (Hải Phòng), Khoái Châu 888,5 ha (Hưng Yên), NOXH Nếnh và Tràng Duệ, KĐT Phúc Ninh",
+   "so": [
+    [
+     "Giá vốn Tràng Cát",
+     "~17,8 nghìn tỷ",
+     "30/6/2026"
+    ],
+    [
+     "Doanh thu BĐS 9T",
+     "1.214 tỷ",
+     "+74%"
+    ],
+    [
+     "Khoái Châu",
+     "39.787 tỷ",
+     "tổng vốn; đã đầu tư 739 tỷ"
+    ],
+    [
+     "Biên gộp NOXH",
+     "~16%",
+     "Q1/2026, VDS"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Tràng Cát đã nộp tiền sử dụng đất, GPMB 100%, san lấp gần 100 ha; định hướng \"AI City\", bán buôn cho đối tác lớn kết hợp bán lẻ theo tiến độ hạ tầng.",
+     "ng": "KBSV 11/06 · VNDS 15/06"
+    },
+    {
+     "t": "Khoái Châu (Trump International Hưng Yên) thi công Q2/2025–Q2/2029; Shinhan kỳ vọng đóng góp doanh thu từ 2030.",
+     "ng": "VNDS 15/06 · Shinhan 26/08"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn, nợ vay, cổ đông",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026",
+   "so": [
+    [
+     "Nợ vay",
+     "33,8 nghìn tỷ",
+     "+5,2 nghìn tỷ trong 9T"
+    ],
+    [
+     "Tiền + đầu tư ngắn hạn",
+     "12,1 nghìn tỷ",
+     ""
+    ],
+    [
+     "Tồn kho",
+     "35,4 nghìn tỷ",
+     ""
+    ],
+    [
+     "Vốn chủ cổ đông",
+     "25,9 nghìn tỷ",
+     "BVPS 27.551 đ"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q2/2025 chào bán riêng lẻ 174,1 triệu cp giá 23.900 đ (~4,2 nghìn tỷ, hạn chế chuyển nhượng 1 năm) để tái cơ cấu nợ.",
+     "ng": "Vietstock 06/2025 · BCTC"
+    },
+    {
+     "t": "Nợ phải trả 48,8 nghìn tỷ, gấp 1,7 lần vốn chủ; nhóm ông Đặng Thành Tâm và bên liên quan nắm ~32% (VDS).",
+     "ng": "BCTC · VDS 16/06"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "FDI đăng ký 7T/2026 38,06 tỷ USD (+58%), giải ngân 15,2 tỷ USD (+12%); vốn cấp mới gấp 2,1 lần cùng kỳ.",
+     "h": 1,
+     "ng": "Shinhan 26/08 (Cục Thống kê)"
+    },
+    {
+     "t": "Mỹ áp thuế bổ sung 12,5% với Việt Nam theo Mục 301 (USTR 23/07/2026); Mỹ – Iran chuyển sang cấm vận tài chính.",
+     "h": -1,
+     "ng": "Shinhan 26/08"
+    },
+    {
+     "t": "Lãi suất có xu hướng tăng, tín dụng cho BĐS thương mại thu hẹp trong 2026.",
+     "h": -1,
+     "ng": "KBSV 11/06"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "Chuỗi điện tử, bán dẫn dịch chuyển về Bắc Ninh, Hải Phòng, Thái Nguyên, gần cảng Lạch Huyện và hành lang sang Nam Trung Quốc.",
+     "h": 1,
+     "ng": "VNDS 15/06"
+    },
+    {
+     "t": "Nghị quyết 10-NQ/TW (8/6/2026) ưu tiên FDI công nghệ cao, mục tiêu ~10% KCN sinh thái vào 2030.",
+     "h": 1,
+     "ng": "Shinhan 26/08"
+    },
+    {
+     "t": "Nửa đầu 2026 doanh nghiệp KCN giao đất chậm vì khách FDI thận trọng trước thuế quan và giá dầu.",
+     "h": -1,
+     "ng": "KBSV 11/06 · VNDS 15/06"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "Còn ~640 ha đất KCN đang chạy và ~1.475 ha KCN mới (phần KBC), cộng Tràng Cát 585 ha.",
+     "h": 1,
+     "ng": "KBSV 11/06 · mô hình"
+    },
+    {
+     "t": "Lãi vay vào KQKD 357 tỷ/quý (Q3/2026): cần ~15 ha bàn giao mỗi quý chỉ để trả lãi.",
+     "h": -1,
+     "ng": "BCTC · mô hình"
+    },
+    {
+     "t": "P/B 0,98 lần (giá 23/10), cùng SZC thấp nhất nhóm KCN lớn (trung vị 2,08).",
+     "h": 0,
+     "ng": "BCTC VNDirect"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-08-26",
+   "kn": "MUA",
+   "tp": 38500,
+   "ln26": 3053,
+   "ln27": 4732,
+   "pp": "RNAV (WACC 13,2%)",
+   "y": "RNAV: KCN 19,3 nghìn tỷ, KĐT 26,7 nghìn tỷ (Tràng Cát DCF 18,8); dự phóng 161 ha 2026, 191 ha 2027 và Tràng Cát ~10 ha từ 2026 — lạc quan nhất nhóm.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KBC/kbc_mua_gia_mt_vnd_38_500_39_don_song_fdi_nho_chien_luoc_esg_va_quy_dat_lon.pdf"
+  },
+  {
+   "ctck": "VDS",
+   "ngay": "2026-06-16",
+   "kn": "MUA",
+   "tp": 41600,
+   "ln26": 3122,
+   "ln27": 5277,
+   "pp": "P/B 2026F 1,4 lần (trung bình 5 năm)",
+   "y": "Kỳ vọng hợp đồng ~92 ha Luxshare ở Quế Võ 2 MR (giao phần lớn trong Q3, trễ một quý so với kịch bản tích cực); lưu ý nợ vay/vốn chủ 111%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KBC/Tap_trung_au_tu_xay_dung_va_hoan_thien_ha_tang.pdf"
+  },
+  {
+   "ctck": "VNDS",
+   "ngay": "2026-06-15",
+   "kn": "KHẢ QUAN",
+   "tp": 35700,
+   "ln26": 2156,
+   "ln27": 3283,
+   "pp": "SOTP (DCF KCN, Tràng Cát 1,3 lần P/B)",
+   "y": "Tràng Cát bán buôn 5/10 ha 2026–27 nâng biên gộp lên trên 56%; P/B 1,1 lần thấp hơn trung bình ngành KCN.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KBC/Chu_ky_tang_truong_ang_dan_hinh_thanh_.pdf"
+  },
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-06-11",
+   "kn": "MUA",
+   "tp": 35300,
+   "ln26": 2219,
+   "ln27": 3829,
+   "pp": "RNAV (DCF dự án, giá trị sổ sách quỹ đất)",
+   "y": "Dời Tràng Cát sang 2027 (10 ha, 2,4 nghìn tỷ); bàn giao 142/152 ha; cảnh báo 441 tỷ lãi vay vốn hóa trong Q1 và 2,6 nghìn tỷ nợ đến hạn.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KBC/tct_phat_trien_do_thi_kinh_bac_bao_cao_cap_nhat_1q2026.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. Ngày, giá mục tiêu theo bản PDF; KBC không trả cổ tức từ 2024 nên không quy đổi. VNDS ghi KHẢ QUAN (Simplize: MUA). Chưa có bản đầy đủ: ACBS 13/08 (KHẢ QUAN, 32.300 đ), DSC 07/08 (THEO DÕI, 28.950 đ). Chưa có CTCK cập nhật sau KQKD Q3/2026 (24/10).",
+ "nguon": [
+  {
+   "ten": "Shinhan — Đón sóng FDI nhờ chiến lược ESG và quỹ đất lớn",
+   "ngay": "26/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KBC/kbc_mua_gia_mt_vnd_38_500_39_don_song_fdi_nho_chien_luoc_esg_va_quy_dat_lon.pdf"
+  },
+  {
+   "ten": "VDS — Tập trung đầu tư xây dựng và hoàn thiện hạ tầng",
+   "ngay": "16/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KBC/Tap_trung_au_tu_xay_dung_va_hoan_thien_ha_tang.pdf"
+  },
+  {
+   "ten": "VNDS — Chu kỳ tăng trưởng đang dần hình thành",
+   "ngay": "15/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KBC/Chu_ky_tang_truong_ang_dan_hinh_thanh_.pdf"
+  },
+  {
+   "ten": "KBSV — Báo cáo cập nhật 1Q2026",
+   "ngay": "11/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/KBC/tct_phat_trien_do_thi_kinh_bac_bao_cao_cap_nhat_1q2026.pdf"
+  },
+  {
+   "ten": "Thời báo Tài chính — Q3/2026 lãi 937 tỷ, gấp 3 lần cùng kỳ; 9T doanh thu theo mảng",
+   "ngay": "10/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/kinh-bac-lai-hon-937-ty-dong-trong-quy-iii-2026-gap-3-lan-cung-ky-205326.html"
+  },
+  {
+   "ten": "Kinh tế Chứng khoán — Q3 bàn giao ~55 ha, dự kiến tới 100 ha Q4",
+   "ngay": "10/2026",
+   "link": "https://kinhtechungkhoan.vn/loi-nhuan-quy-iii-bat-tang-kinh-bac-du-kien-ban-giao-toi-100-ha-dat-khu-cong-nghiep-trong-quy-iv"
+  },
+  {
+   "ten": "Người Quan sát — KQKD Q3/2026, LN tăng hơn 200%",
+   "ngay": "10/2026",
+   "link": "https://nguoiquansat.vn/kinh-bac-kbc-no-phat-sung-dau-tien-kqkd-quy-iii-2026-nhom-bat-dong-san-khu-cong-nghiep-loi-nhuan-tang-hon-200-321494.html"
+  },
+  {
+   "ten": "Doanh nghiệp Hội nhập — cho thuê đất 9T biên lãi gộp 63%",
+   "ngay": "10/2026",
+   "link": "https://doanhnghiephoinhap.vn/mang-cho-thue-dat-khu-cong-nghiep-cua-do-thi-kinh-bac-kbc-dat-bien-lai-gop-63-sau-9-thang-151381.html"
+  },
+  {
+   "ten": "VnBusiness — Q3/2026: tồn kho, nợ vay tiếp tục tăng",
+   "ngay": "10/2026",
+   "link": "https://vnbusiness.vn/kinh-bac-lai-gan-1000-ty-dong-trong-quy-iii-nhung-hang-ton-kho-va-no-vay-tiep-tuc-phinh-to.html"
+  },
+  {
+   "ten": "Mekong ASEAN — KQKD Q3/2026: lãi gấp 3 lần cùng kỳ",
+   "ngay": "10/2026",
+   "link": "https://mekongasean.vn/kinh-bac-bao-lai-quy-32026-gap-3-lan-cung-ky-60546.html"
+  },
+  {
+   "ten": "ACBS — Ghi chú ĐHĐCĐ 2026 KBC: kế hoạch cổ tức tiền mặt 2.000 đ/cp",
+   "ngay": "04/2026",
+   "link": "https://acbs.com.vn/acbsmedia/2026/04/KBC_2026-AGM-VN.pdf"
+  },
+  {
+   "ten": "Vietnambiz — ĐHĐCĐ 2026: doanh thu 10.000 tỷ, LNST 3.000 tỷ",
+   "ngay": "04/2026",
+   "link": "https://vietnambiz.vn/kinh-bac-dat-muc-tieu-lai-3000-ty-trong-nam-2026-202633010346479.htm"
+  },
+  {
+   "ten": "Vietstock — ĐHĐCĐ KBC: không chia LN 2025, cam kết cổ tức 2026",
+   "ngay": "04/2026",
+   "link": "https://vietstock.vn/2026/04/dhdcd-kbc-khat-von-nhung-van-cam-ket-chia-co-tuc-2026-737-1429716.htm"
+  },
+  {
+   "ten": "Doanh Nhân — ĐHĐCĐ 2026: không định giá lại tài sản, huy động vốn mới",
+   "ngay": "18/04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-2026-kinh-bac-kbc-kien-quyet-khong-dinh-gia-lai-tai-san-tren-giay-chot-phuong-an-huy-dong-von-moi.html"
+  },
+  {
+   "ten": "Vietstock — chào bán 250 triệu cp riêng lẻ giá 23.900 đ",
+   "ngay": "06/2025",
+   "link": "https://vietstock.vn/2025/06/kbc-muon-chao-ban-250-trieu-cp-rieng-le-voi-gia-23900-dongcp-764-1319980.htm"
+  }
+ ]
+}

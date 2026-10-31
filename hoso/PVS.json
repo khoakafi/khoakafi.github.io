@@ -1,0 +1,1522 @@
+{
+ "v": 2,
+ "ma": "PVS",
+ "ten": "Tổng CTCP Dịch vụ Kỹ thuật Dầu khí Việt Nam (PTSC)",
+ "nganh": "Dịch vụ kỹ thuật dầu khí",
+ "ky": "BCTC Q3/2026 · giá 29/10/2026",
+ "cap_nhat": "2026-10-29",
+ "lan_sau": "sau BCTC Q4/2026 (hoàn nhập Sao Vàng – Đại Nguyệt)",
+ "cp_trieu": 613.7,
+ "cp_ng": "Vốn điều lệ 5.114,2 tỷ (511,42 triệu cp) × 1,2 sau cổ tức 20% bằng cổ phiếu (GDKHQ 14/9/2026); VNDirect 16/10: vốn hóa ÷ giá 15/10 = 613,7 triệu",
+ "chia": [
+  [
+   "2026-09-14",
+   1.2
+  ]
+ ],
+ "co_tuc": [],
+ "tieu_de": {
+  "t": "Quý 3: lãi cốt lõi bật lên, nhưng kho nổi và tiền gửi hụt — LN đi lùi dù doanh thu +10%"
+ },
+ "dong_mo": "Q3/2026 LN 315 tỷ (−3% YoY), thấp hơn cơ sở cũ 15%: lãi HĐKD cốt lõi lên 355 tỷ nhưng kho nổi −54%, tài chính ròng chỉ 39 tỷ. LN 2026E 2.062 tỷ (~0,7 nghìn tỷ một lần), 2027E 1.625 tỷ. Tiền ròng + kho nổi P/E 7 + kinh doanh P/E 9 cho {gt} ({up}); cán cân {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "79%",
+   "nhan": "LN cổ đông 2025 từ kho nổi và tiền gửi",
+   "tieu": "M&C làm doanh thu, kho nổi và tiền gửi làm lợi nhuận",
+   "t": "M&C chiếm 67% doanh thu 2025 nhưng lãi HĐKD cốt lõi cả công ty (lãi gộp − chi phí bán hàng, quản lý) chỉ 484 tỷ; 2016–2024 bình quân ~37 tỷ/năm. Trong 1.847 tỷ LN cổ đông 2025, liên doanh kho nổi góp 826 tỷ, tài chính ròng (lãi ~16 nghìn tỷ tiền gửi, tỷ giá) 633 tỷ sau thuế. 9T/2026 LN +25% nhưng 460 tỷ là bồi thường hủy hợp đồng điện gió; trừ ra, LNTT +8%.",
+   "ng": "BCTC Q3/2026 (VNDirect) · KAFI 10/08 · mô hình"
+  },
+  {
+   "so": "~4,5%",
+   "nhan": "biên M&C sau dự phòng bảo hành, Q3/2026 (ước)",
+   "tieu": "Quý 3 xác nhận biên M&C nhích lên — mới một quý",
+   "t": "Lãi HĐKD cốt lõi Q3 355 tỷ (cùng kỳ −23); 9T 502 tỷ, đã vượt cả năm 2025. Giữ O&M, dịch vụ theo nhịp 6T, biên M&C sau dự phòng bảo hành Q3 ~4,5% (báo cáo ~8,9%, dự phòng ~315 tỷ); 9T ~3,5%, 2025 2,7%. Cơ sở 2027 nâng lên 3,5% (cũ 3%); ±1 điểm % = ±182 tỷ LN, ±2,7 nghìn đ/cp.",
+   "ng": "BCTC Q3/2026 (VNDirect) · ACBS 31/07 · MAS 10/08 · mô hình"
+  },
+  {
+   "so": "−54%",
+   "nhan": "lãi kho nổi Q3/2026 so cùng kỳ",
+   "tieu": "Kho nổi: quý 3 tệ hơn 6 tháng đầu, đúng lúc 4/6 chiếc đến kỳ tái ký",
+   "t": "Lãi liên doanh Q3 98 tỷ, 9T 438 tỷ (−33%); BCTC chưa có giải trình — 6T Vietcap gắn với bảo dưỡng lớn FPSO Ruby II. Orkid, Ruby II, Lam Sơn, Sao Vàng – Đại Nguyệt hết hạn trong 2027, ban lãnh đạo kỳ vọng giá thuê tái ký +10–15%; FSO Lạc Đà Vàng (51%) từ Q4/2026. Cơ sở 2027 hạ còn 740 tỷ (cũ 820); ±100 tỷ = ±1,1 nghìn đ/cp.",
+   "ng": "BCTC Q3/2026 · Shinhan 16/07 · Vietcap 08/05 · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Tiền ròng đỡ hơn nửa giá; giá trị cơ sở {up_so}",
+   "dk": "up_tren:-4",
+   "t": "Tiền ròng 30/9/2026 15,7 nghìn tỷ — xấp xỉ vốn chủ — nhưng vốn lưu động âm 5,8 nghìn tỷ (2022–Q3/2024: ~1,8) vì tiền ứng trước, chi phí phải trả của các dự án lớn. Trừ phần vượt còn 11,7 nghìn tỷ (~19,1 nghìn đ/cp). Cộng kho nổi P/E 7 × 740 tỷ, kinh doanh P/E 9 × 535 tỷ ra {gt}. Xấu 22,3 (biên M&C 2%, tiền ứng trước chi hết), tốt 48,4.",
+   "ng": "BCTC Q3/2026 (VNDirect) · mô hình",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "Tổng các phần: giá trị cơ sở {up_so}",
+    "t": "Tiền ròng điều chỉnh 11,7 nghìn tỷ (~19,1 nghìn đ/cp): 30/9/2026 15,7 nghìn tỷ, trừ phần vốn lưu động âm vượt mức 2022–Q3/2024 (tiền ứng trước dự án). Cộng kho nổi P/E 7 × 740 tỷ, kinh doanh P/E 9 × 535 tỷ ra {gt}. Xấu 22,3: biên M&C 2%, tiền ứng trước chi hết; tốt 48,4: biên 4,5%, hợp đồng mới."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1847,
+   2062,
+   1625
+  ],
+  "ln_truoc": 1070,
+  "eps": [
+   3010,
+   3360,
+   2648
+  ],
+  "bv": [
+   24267,
+   26841,
+   29489
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "LN không gồm thu nhập khác (tỷ)",
+    "v": [
+     1771,
+     1319,
+     1450
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     13.0,
+     13.2,
+     9.4
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC. EPS, BVPS theo 613,7 triệu cp (sau cổ tức 20% bằng cổ phiếu, GDKHQ 14/9/2026). Chia cổ phiếu 7% (11/2025) và 20% (9/2026); lần trả tiền gần nhất 7% (11/2024). Thu nhập khác = bồi thường, hoàn nhập dự phòng (sau thuế)."
+ },
+ "ln_mang": {
+  "tieu": "Lợi nhuận cổ đông theo nguồn",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ss": [
+   {
+    "ten": "Kinh doanh cốt lõi (M&C + dịch vụ)",
+    "mau": "c1",
+    "v": [
+     312,
+     398,
+     360
+    ]
+   },
+   {
+    "ten": "Kho nổi FSO/FPSO (liên doanh)",
+    "mau": "c2",
+    "v": [
+     826,
+     588,
+     740
+    ]
+   },
+   {
+    "ten": "Tài chính ròng (tiền gửi, tỷ giá)",
+    "mau": "c3",
+    "v": [
+     633,
+     333,
+     350
+    ]
+   },
+   {
+    "ten": "Thu nhập khác (bồi thường, hoàn nhập)",
+    "mau": "c4",
+    "v": [
+     76,
+     743,
+     175
+    ]
+   }
+  ],
+  "nhan": "Kinh doanh cốt lõi (M&C + dịch vụ)",
+  "ng": "Sau thuế (thuế chia theo tỷ lệ; lãi kho nổi đã sau thuế ở liên doanh); cổ đông thiểu số trừ vào kinh doanh cốt lõi. 2026E–2027E: mô hình."
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: doanh thu × biên sau bảo hành, cộng kho nổi và tiền gửi",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Doanh thu (tỷ đồng)"
+   },
+   {
+    "ten": "Cơ khí, xây lắp (M&C)",
+    "v": [
+     21804,
+     25979,
+     26000
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lắp đặt, bảo dưỡng (O&M)",
+    "v": [
+     3192,
+     4162,
+     3800
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tàu, vận hành kho nổi, cảng, khảo sát",
+    "v": [
+     7721,
+     9561,
+     10100
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tổng doanh thu",
+    "v": [
+     32718,
+     39702,
+     39900
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "nhom": "Biên lãi gộp sau dự phòng bảo hành (%)"
+   },
+   {
+    "ten": "M&C",
+    "v": [
+     2.7,
+     3.5,
+     3.5
+    ],
+    "d": 1
+   },
+   {
+    "ten": "O&M",
+    "v": [
+     4.1,
+     5.6,
+     6.5
+    ],
+    "d": 1
+   },
+   {
+    "ten": "Tàu, kho nổi, cảng, khảo sát",
+    "v": [
+     14.8,
+     13.6,
+     14.0
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Lợi nhuận trước thuế theo nguồn (tỷ đồng)"
+   },
+   {
+    "ten": "Lãi HĐKD cốt lõi (sau bán hàng, quản lý)",
+    "v": [
+     484,
+     741,
+     671
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi liên doanh kho nổi",
+    "v": [
+     826,
+     588,
+     740
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Tài chính ròng (tiền gửi, tỷ giá − lãi vay)",
+    "v": [
+     799,
+     488,
+     500
+    ]
+   },
+   {
+    "ten": "Thu nhập khác (bồi thường, hoàn nhập)",
+    "v": [
+     96,
+     1076,
+     250
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     2205,
+     2893,
+     2161
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     1847,
+     2062,
+     1625
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     3010,
+     3360,
+     2648
+    ],
+    "eps": 1
+   }
+  ],
+  "ghi": "Doanh thu mảng 2025: KAFI 10/08; biên 2025: Vietcap 08/05 (cách ghi cũ, dự phòng bảo hành trong giá vốn), mảng dịch vụ = phần còn lại. 6T/2026: M&C 10.491 tỷ (MAS), M&C 48%, O&M 8% lãi gộp (ACBS); Q3: O&M, dịch vụ theo nhịp 6T, M&C phần còn lại (ước); dự phòng bảo hành = chi phí bán hàng trừ ~27 tỷ/quý thường xuyên. 2026E = 9 tháng thực tế (BCTC Q3) + Q4 ước tính; thuế 30% LNTT ngoài liên doanh (2019–2024 34–46%, 2025 21%, 9T/2026 32%)."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   2062
+  ],
+  "cuoi": [
+   "2027E",
+   1625
+  ],
+  "buoc": [
+   [
+    "Thu nhập khác (bồi thường, hoàn nhập)",
+    -826
+   ],
+   [
+    "Lãi HĐKD cốt lõi",
+    -70
+   ],
+   [
+    "Lãi kho nổi",
+    152
+   ],
+   [
+    "Tài chính ròng",
+    12
+   ],
+   [
+    "Thuế, cổ đông thiểu số",
+    295
+   ]
+  ],
+  "y": "LN 2027E −21% vì 460 tỷ bồi thường và ~600 tỷ hoàn nhập Sao Vàng – Đại Nguyệt của 2026 không lặp lại; không gồm thu nhập khác, LN +10%. Thuế 30% (bản trước 24%) theo mức 9T/2026. Thấp hơn cả 4 CTCK có số 2027 (1,9–2,4 nghìn tỷ).",
+  "ng": "mô hình · KAFI, ACBS, Shinhan, Vietcap"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu M&C 2027 (nghìn tỷ)",
+   "v": [
+    "20",
+    "26",
+    "32"
+   ],
+   "ly_do": "Backlog 2027 đã ký > 20 nghìn tỷ (6/2026); 2026E 26,0. Kỳ vọng thêm Nam Du – U Minh, LNG Thị Vải 3; Vietcap ~33, KAFI giảm"
+  },
+  {
+   "ten": "Biên M&C sau dự phòng bảo hành 2027",
+   "v": [
+    "2,0%",
+    "3,5%",
+    "4,5%"
+   ],
+   "ly_do": "2025: 2,7%; 6T/2026 ~2,7%, Q3 ~4,5% (ước), 9T ~3,5%. Cơ sở = mức 9T (bản trước 3%)"
+  },
+  {
+   "ten": "O&M 2027: doanh thu (nghìn tỷ) · biên",
+   "v": [
+    "3,2 · 4,5%",
+    "3,8 · 6,5%",
+    "4,4 · 9,0%"
+   ],
+   "ly_do": "Doanh thu 6T/2026 +98% nhờ đấu nối Lô B và mỏ Marjan (đến 12/2026); biên 2025 4,1%, 6T ~5,6%, bình quân lịch sử ~9,5% (Vietcap)"
+  },
+  {
+   "ten": "Tàu, kho nổi, cảng, khảo sát 2027 · biên",
+   "v": [
+    "9,6 · 13%",
+    "10,1 · 14%",
+    "10,6 · 15%"
+   ],
+   "ly_do": "2025: 7,7 nghìn tỷ, biên ~14,8%; 9T/2026 7,1 nghìn tỷ, ~13,6%; thêm 2 tàu cuối 2025"
+  },
+  {
+   "ten": "Chi phí quản lý + bán hàng thường xuyên 2027 (tỷ)",
+   "v": [
+    "1.750",
+    "1.900",
+    "2.000"
+   ],
+   "ly_do": "2025: 1.389; 9T/2026 1.245 (quản lý Q2 +33%: nhân sự theo khối lượng EPCI — KAFI; Q3 về 320) → đi theo khối lượng việc"
+  },
+  {
+   "ten": "Lãi liên doanh kho nổi 2027 (tỷ)",
+   "v": [
+    "600",
+    "740",
+    "860"
+   ],
+   "ly_do": "2025: 826; 2026E 588 (Q3 chỉ 98); 4/6 hợp đồng hết hạn 2027, giá thuê kỳ vọng +10–15%; cơ sở ~90% mức 2025 (cũ 820)"
+  },
+  {
+   "ten": "Thu nhập khác 2027 (hoàn nhập thường xuyên, tỷ)",
+   "v": [
+    "100",
+    "250",
+    "400"
+   ],
+   "ly_do": "Bình quân 2019–2025 ~287 tỷ/năm; dự phòng bảo hành ~4,0 nghìn tỷ (Q1/2026, Vietcap). Không gồm Sao Vàng – Đại Nguyệt (2026)"
+  },
+  {
+   "ten": "Tiền ròng dùng để định giá (nghìn tỷ)",
+   "v": [
+    "9,9",
+    "11,7",
+    "13,7"
+   ],
+   "ly_do": "15,7 (30/9/2026) trừ vốn lưu động âm: xấu trừ hết 5,8; cơ sở trừ phần vượt mức 2022–Q3/2024 (−1,8); tốt trừ một nửa phần vượt"
+  },
+  {
+   "ten": "P/E kinh doanh · kho nổi",
+   "v": [
+    "11 · 6",
+    "9 · 7",
+    "8 · 8"
+   ],
+   "ly_do": "Kinh doanh: P/E ngành 9,6 (KAFI 10/08), lãi đáy được trả P/E cao hơn. Kho nổi: Yinson (FPSO) 9,1 (MBS 17/09), trừ rủi ro hết hạn 2027–2028"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1400,
+   "ln27": 899,
+   "gia": 22.3,
+   "mo_ta": "M&C 2027 20 nghìn tỷ, biên 2,0%; kho nổi 600 tỷ; hoàn nhập Sao Vàng – Đại Nguyệt trễ; tiền ứng trước chi hết; P/E 11 · 6"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 2062,
+   "ln27": 1625,
+   "gia": 35.3,
+   "mo_ta": "M&C 26 nghìn tỷ, biên 3,5%; kho nổi 740 tỷ; hoàn nhập Sao Vàng – Đại Nguyệt Q4/2026; P/E 9 · 7"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 2366,
+   "ln27": 2418,
+   "gia": 48.4,
+   "mo_ta": "M&C 32 nghìn tỷ, biên 4,5%; kho nổi 860 tỷ (tái ký giá cao); hợp đồng mới giữ một nửa tiền ứng trước; P/E 8 · 8"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "Kinh doanh, kho nổi: P/E × LN 2027E; cộng tiền ròng điều chỉnh",
+  "ck": 0,
+  "cp": 613.7,
+  "phan": [
+   {
+    "ten": "Kinh doanh (M&C + dịch vụ)",
+    "mau": "c1",
+    "x": [
+     19,
+     535,
+     1138
+    ],
+    "boi": [
+     11,
+     9,
+     8
+    ],
+    "x_ten": "LN 2027E sau thuế, CĐTS (không gồm lãi tiền gửi, liên doanh)",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     209,
+     4815,
+     9104
+    ]
+   },
+   {
+    "ten": "Kho nổi FSO/FPSO (liên doanh)",
+    "mau": "c2",
+    "x": [
+     600,
+     740,
+     860
+    ],
+    "boi": [
+     6,
+     7,
+     8
+    ],
+    "x_ten": "Lãi liên doanh 2027E",
+    "boi_ten": "P/E",
+    "sh": 1,
+    "gt": [
+     3600,
+     5180,
+     6880
+    ]
+   },
+   {
+    "ten": "Tiền ròng điều chỉnh",
+    "mau": "c3",
+    "x": [
+     9860,
+     11695,
+     13689
+    ],
+    "boi": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "x_ten": "30/9/2026, trừ tiền ứng trước dự án vượt mức bình thường (LN Q4/2026 ≈ vốn đầu tư)",
+    "boi_ten": "hệ số",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     9860,
+     11695,
+     13689
+    ]
+   }
+  ],
+  "von": [
+   13669,
+   21690,
+   29673
+  ],
+  "gia": [
+   22.3,
+   35.3,
+   48.4
+  ]
+ },
+ "nhay": [
+  [
+   "Biên M&C sau bảo hành 2027 ±1 điểm %",
+   182,
+   2.7
+  ],
+  [
+   "Tiền ứng trước dự án ±1 nghìn tỷ",
+   null,
+   1.6
+  ],
+  [
+   "P/E kho nổi ±1 lần",
+   null,
+   1.2
+  ],
+  [
+   "Lãi kho nổi 2027 ±100 tỷ",
+   100,
+   1.1
+  ],
+  [
+   "Chi phí quản lý 2027 ±5%",
+   66,
+   1.0
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2015-01",
+   "2015-02",
+   "2015-03",
+   "2015-04",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10",
+   "2015-11",
+   "2015-12",
+   "2016-01",
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   1.38,
+   1.3,
+   1.09,
+   1.25,
+   1.02,
+   1.09,
+   1.04,
+   0.99,
+   0.98,
+   1.02,
+   0.89,
+   0.76,
+   0.7,
+   0.66,
+   0.67,
+   0.75,
+   0.79,
+   0.77,
+   0.72,
+   0.92,
+   0.93,
+   0.84,
+   0.77,
+   0.71,
+   0.77,
+   0.8,
+   0.77,
+   0.75,
+   0.72,
+   0.71,
+   0.69,
+   0.69,
+   0.69,
+   0.64,
+   0.77,
+   0.99,
+   1.16,
+   1.03,
+   0.88,
+   0.76,
+   0.71,
+   0.72,
+   0.71,
+   0.89,
+   0.97,
+   0.87,
+   0.87,
+   0.79,
+   0.84,
+   0.86,
+   0.87,
+   0.98,
+   0.88,
+   0.9,
+   0.88,
+   0.81,
+   0.76,
+   0.72,
+   0.68,
+   0.68,
+   0.64,
+   0.6,
+   0.36,
+   0.47,
+   0.49,
+   0.46,
+   0.42,
+   0.49,
+   0.53,
+   0.5,
+   0.56,
+   0.68,
+   0.63,
+   0.88,
+   0.9,
+   0.79,
+   1.0,
+   1.12,
+   0.97,
+   1.01,
+   1.11,
+   1.19,
+   0.98,
+   1.06,
+   1.05,
+   1.41,
+   1.41,
+   1.0,
+   1.22,
+   0.95,
+   0.91,
+   1.12,
+   0.93,
+   0.86,
+   0.83,
+   0.84,
+   1.0,
+   1.03,
+   1.0,
+   1.0,
+   1.19,
+   1.25,
+   1.33,
+   1.37,
+   1.49,
+   1.27,
+   1.45,
+   1.43,
+   1.38,
+   1.39,
+   1.48,
+   1.5,
+   1.57,
+   1.47,
+   1.47,
+   1.47,
+   1.46,
+   1.36,
+   1.25,
+   1.23,
+   1.19,
+   1.25,
+   1.08,
+   0.9,
+   0.95,
+   1.13,
+   1.18,
+   1.16,
+   1.12,
+   1.12,
+   1.07,
+   1.14,
+   1.51,
+   1.63,
+   1.4,
+   1.3,
+   1.29,
+   1.26,
+   1.13,
+   1.31,
+   1.33,
+   1.21
+  ],
+  "p10": 0.67,
+  "p25": 0.77,
+  "tv": 0.97,
+  "thap": [
+   "2020-03",
+   0.36
+  ],
+  "nay": [
+   "2026-10",
+   1.21
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Ba kịch bản tương đương P/B 0,86 · 1,32 · 1,77 vốn chủ cuối 2026E; trung vị từ 2015 là 0,97, khi ROE chỉ 5–10% (2025: 13,0%, cao nhất từ 2016). Tiền ròng 30/9/2026 xấp xỉ toàn bộ vốn chủ."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 10575,
+   "ln": [
+    247,
+    369,
+    495
+   ],
+   "ck": 324
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 11850,
+   "ln": [
+    138,
+    801,
+    1104
+   ],
+   "ck": 835
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1400,
+    2062,
+    2366
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "28/10/2026",
+   "loai": "hai",
+   "tieu": "Đã ra Q3/2026: LN 315 tỷ, thấp hơn cơ sở 15%",
+   "ct": "Doanh thu 10.579 tỷ (+10%), lãi HĐKD cốt lõi 355 tỷ vượt dự phóng; hụt ở kho nổi 98 tỷ, tài chính ròng 39 tỷ (cùng kỳ 204), thuế 38%.",
+   "tac": [
+    "+0,5 nghìn đ/cp",
+    "giá trị cơ sở so với bản 18/10"
+   ],
+   "theo_doi": "lãi liên doanh, thuế"
+  },
+  {
+   "khi": "1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Cơ sở LN 801 tỷ (cùng kỳ 835), gồm ~434 tỷ hoàn nhập sau thuế. Xem lãi kho nổi có về lại ~170 tỷ/quý và biên M&C có giữ mức Q3.",
+   "tac": [
+    "367 tỷ",
+    "LN cơ sở không gồm hoàn nhập"
+   ],
+   "theo_doi": "lãi liên doanh, biên M&C"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Hoàn nhập dự phòng Sao Vàng – Đại Nguyệt",
+   "ct": "Dự phòng bảo hành hơn 680 tỷ; ban lãnh đạo dự kiến hoàn nhập ~600–635 tỷ khi ký nghiệm thu cuối cùng cuối 2026 (KAFI, ACBS, Vietcap).",
+   "tac": [
+    "+420 tỷ",
+    "LN 2026E sau thuế, một lần — không nhân P/E"
+   ],
+   "theo_doi": "biên bản nghiệm thu"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "First oil Lạc Đà Vàng",
+   "ct": "CPP hạ thủy 30/6; doanh thu CPP ~80 triệu USD ghi nhận Q3–Q4 (MAS). FSO Lạc Đà Vàng (PVS 51%, Vietcap ước thuê ~100 nghìn USD/ngày) bắt đầu có lãi.",
+   "tac": [
+    "+40 tỷ/năm",
+    "lãi liên doanh ước tính (Vietcap)"
+   ],
+   "theo_doi": "ngày first oil"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "len",
+   "tieu": "Chuyển niêm yết sang HOSE",
+   "ct": "PVS dự kiến chuyển từ HNX sang HOSE trong Q4/2026 (ACBS, Vietcap): thanh khoản, khả năng vào rổ chỉ số.",
+   "tac": "",
+   "theo_doi": "hồ sơ niêm yết"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Hợp đồng M&C mới",
+   "ct": "Backlog 2027 đã ký > 20 nghìn tỷ. CTCK kỳ vọng thêm Nam Du – U Minh, LNG Thị Vải 3; Hải Sư Vàng có thể FID 2027 (gói ~450–500 triệu USD), Cá Voi Xanh (5 tỷ USD) khởi động tiền dự án cuối 2026–2027.",
+   "tac": [
+    "+2,2 nghìn đ/cp",
+    "nếu doanh thu M&C 2027 đạt 32 nghìn tỷ (biên cơ sở)"
+   ],
+   "theo_doi": "hợp đồng ký mới"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Biên M&C không cải thiện",
+   "ct": "Sau dự phòng bảo hành, biên M&C 6T/2026 ~2,7%, Q3 ~4,5% (ước), 9T ~3,5%. Cơ sở cần 3,5% cho 2027 — tức giữ mức 9T.",
+   "tac": [
+    "±2,7 nghìn đ/cp",
+    "mỗi ±1 điểm % biên M&C 2027"
+   ],
+   "theo_doi": "biên gộp, dự phòng bảo hành"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "4/6 kho nổi tái ký hợp đồng",
+   "ct": "Orkid, Ruby II, Lam Sơn, Sao Vàng – Đại Nguyệt hết hạn trong 2027. Ruby II (60%) là nguồn lãi lớn nhất (Vietcap ước ~400 tỷ/năm), đang gia hạn từng năm.",
+   "tac": [
+    "±1,1 nghìn đ/cp",
+    "mỗi ±100 tỷ lãi liên doanh 2027"
+   ],
+   "theo_doi": "giá thuê tái ký"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Tiền ứng trước dự án chi ra",
+   "ct": "Vốn lưu động âm 5,8 nghìn tỷ (30/9/2026), 2022–Q3/2024 chỉ ~1,8: phần tiền này chi ra khi Lô B, Lạc Đà Vàng xong mà không có dự án lớn thay thế.",
+   "tac": [
+    "−3,0 nghìn đ/cp",
+    "nếu vốn lưu động về 0 (kịch bản xấu)"
+   ],
+   "theo_doi": "tiền ròng, người mua trả trước"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Điện gió nước ngoài: hủy hợp đồng, nội địa hóa",
+   "ct": "Khách hàng Đài Loan hủy hợp đồng 450 triệu USD (35 chân đế Formosa) vì yêu cầu nội địa hóa 60%; PVS nhận 460 tỷ bồi thường nhưng mất ~234 tỷ LN dự kiến 2026–2027 (Vietcap).",
+   "tac": "",
+   "theo_doi": "hợp đồng điện gió mới"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi trước thuế theo nguồn",
+   "kieu": "duong",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "ss": [
+    {
+     "ten": "HĐKD cốt lõi (M&C + dịch vụ)",
+     "v": [
+      100,
+      24,
+      304,
+      375,
+      -125,
+      5,
+      107,
+      -188,
+      -265,
+      484
+     ],
+     "mau": "c1",
+     "net": false
+    },
+    {
+     "ten": "Kho nổi (liên doanh)",
+     "v": [
+      678,
+      485,
+      734,
+      581,
+      195,
+      414,
+      657,
+      664,
+      864,
+      826
+     ],
+     "mau": "c2",
+     "net": false
+    },
+    {
+     "ten": "Tài chính ròng",
+     "v": [
+      152,
+      229,
+      437,
+      251,
+      258,
+      183,
+      326,
+      560,
+      351,
+      799
+     ],
+     "mau": "c3",
+     "net": false
+    }
+   ],
+   "so_le": 0,
+   "y": "2016–2024 lãi HĐKD cốt lõi bình quân ~37 tỷ/năm; 2025 lên 484 tỷ. Kho nổi và tiền gửi là nền lãi.",
+   "ng": "BCTC PVS (VNDirect)"
+  },
+  {
+   "ten": "Biên gộp M&C: báo cáo và sau dự phòng bảo hành",
+   "kieu": "cot",
+   "dv": "%",
+   "nhan": [
+    "2025",
+    "Q1/2026",
+    "6T/2026",
+    "Q3/2026"
+   ],
+   "ss": [
+    {
+     "ten": "Báo cáo (dự phòng bảo hành ở chi phí bán hàng)",
+     "v": [
+      2.7,
+      9.1,
+      6.7,
+      8.9
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "Sau dự phòng bảo hành (so được với 2025)",
+     "v": [
+      2.7,
+      4.3,
+      2.7,
+      4.5
+     ],
+     "mau": "c1"
+    }
+   ],
+   "so_le": 1,
+   "y": "Thông tư 99 đưa dự phòng bảo hành sang chi phí bán hàng; biên so được với 2025 ~2,7% ở 6T, Q3 lên ~4,5%. 6T, Q3 là ước tính.",
+   "ng": "Vietcap 08/05 · ACBS 31/07 · MAS 10/08 · mô hình"
+  },
+  {
+   "ten": "Lãi liên doanh kho nổi theo quý",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi liên doanh",
+     "v": [
+      197,
+      236,
+      215,
+      216,
+      213,
+      230,
+      214,
+      168,
+      157,
+      183,
+      98
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "6T/2026 −23% (FPSO Ruby II bảo dưỡng lớn), Q3 còn 98 tỷ; FSO Lạc Đà Vàng góp từ Q4/2026, FSO Lô B từ 2028.",
+   "ng": "BCTC PVS (VNDirect)"
+  },
+  {
+   "ten": "Tiền ròng và vốn lưu động",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "nhan": [
+    "12/22",
+    "6/23",
+    "12/23",
+    "6/24",
+    "12/24",
+    "6/25",
+    "12/25",
+    "6/26",
+    "9/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền ròng",
+     "v": [
+      8.7,
+      9.4,
+      8.3,
+      8.1,
+      13.6,
+      15.4,
+      15.0,
+      15.3,
+      15.7
+     ],
+     "mau": "c3",
+     "net": false
+    },
+    {
+     "ten": "Vốn lưu động (âm = tiền ứng trước, phải trả)",
+     "v": [
+      -2.2,
+      -2.3,
+      -1.8,
+      -1.3,
+      -4.5,
+      -5.5,
+      -5.7,
+      -6.0,
+      -5.8
+     ],
+     "mau": "c4",
+     "net": false
+    }
+   ],
+   "so_le": 1,
+   "y": "Cuối 2024 tiền ròng tăng 4,1 nghìn tỷ trong một quý, cùng lúc vốn lưu động âm thêm 2,7 nghìn tỷ: phần lớn là tiền của dự án.",
+   "ng": "BCTC PVS (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu",
+    "kh": 33000,
+    "th": 27852,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 18/6/2026 · BCTC Q3/2026"
+   },
+   {
+    "ten": "LNST (trước cổ đông thiểu số)",
+    "kh": 990,
+    "th": 1344,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 18/6/2026 · BCTC Q3/2026"
+   }
+  ],
+  "y": "Kế hoạch LN chỉ ~một nửa 2025, 9T đã đạt 136% (gồm 460 tỷ bồi thường); doanh thu 84%. 2022–2025 PVS vượt kế hoạch doanh thu bình quân 52% (Vietcap).",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "KAFI",
+   "ngay": "2026-08-10",
+   "kn": "KHẢ QUAN",
+   "tp": 48300,
+   "ln26": 2050,
+   "ln27": 1859,
+   "pp": "DCF 70%, EV/EBITDA 15%, P/E 15%",
+   "y": "Hạ giá mục tiêu 6% vì tỷ trọng M&C (biên thấp) tăng sau Sư Tử Trắng 2B, Khánh Mỹ – Đầm Dơi; dự báo doanh thu 2027 giảm còn 28,4 nghìn tỷ. Lưu ý tiền mặt phục vụ vốn lưu động.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/20260810_tong_ctcp_dich_vu_ky_thuat_dau_khi_viet_nam_hnx_pvs_tien_do_trien_khai_cac_du_an_duy_tri_tich_cuc.pdf"
+  },
+  {
+   "ctck": "Mirae Asset",
+   "ngay": "2026-08-10",
+   "kn": "MUA",
+   "tp": 44000,
+   "ln26": 2028,
+   "ln27": null,
+   "pp": "không nêu (báo cáo ngắn)",
+   "y": "Lãi thuần từ HĐKD 6T đi ngang (828 tỷ, −1%): tăng trưởng LN đến từ thu nhập khác. Giữ dự báo 2026: doanh thu 40,7 nghìn tỷ, LN 2.028 tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/bao_cao_ngan_tong_ctcp_dich_vu_ky_thuat_dau_khi_viet_nam_pvs_vn_mua_don_song_du_an_giu_mach_doanh_thu.pdf"
+  },
+  {
+   "ctck": "ACBS",
+   "ngay": "2026-07-31",
+   "kn": "MUA",
+   "tp": 49400,
+   "ln26": 2197,
+   "ln27": 2230,
+   "pp": "không nêu (cập nhật nhanh)",
+   "y": "LNST 2026 dự báo 2.197 tỷ (+16%, trước CĐTS) gồm hoàn nhập dự phòng > 630 tỷ (Sao Vàng – Đại Nguyệt ~600); biên gộp xây lắp ~6% (số báo cáo).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/pvs_cap_nhat_nhanh_31_07_2026.pdf"
+  },
+  {
+   "ctck": "Shinhan",
+   "ngay": "2026-07-16",
+   "kn": "MUA",
+   "tp": 46700,
+   "ln26": 2148,
+   "ln27": 2270,
+   "pp": "DCF (WACC 12,7%, tăng trưởng dài hạn 2%)",
+   "y": "Báo cáo lần đầu: backlog M&C 2026–2030 ~6,4 tỷ USD, doanh thu đỉnh 2027 (49,2 nghìn tỷ); giả định thu nhập khác ~600–700 tỷ/năm 2026–2027.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/pvs_mua_gia_mt_vnd_46_700_22_9_huong_loi_tu_chu_ky_moi.pdf"
+  },
+  {
+   "ctck": "Vietcap",
+   "ngay": "2026-05-08",
+   "kn": "MUA",
+   "tp": 60000,
+   "ln26": 1853,
+   "ln27": 2376,
+   "pp": "DCF, chiết khấu 5% vì minh bạch hạn chế",
+   "y": "Chỉ ra biên M&C báo cáo tăng chủ yếu do Thông tư 99 (Q1 cộng lại dự phòng ~4,3%). Kỳ vọng lãi tỷ giá tăng theo doanh thu quốc tế (15% lên 42% năm 2029).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/Bien_loi_nhuan_MC_tang_va_lai_ty_gia_thuan_thuc_ay_toc_o_tang_truong_loi_nhuan_kep_3_nam.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — số liệu và quan điểm của CTCK; mô hình và định giá của trang ở các phần trên. Cả 5 báo cáo ra trước đợt cổ tức 20% bằng cổ phiếu (GDKHQ 14/9/2026): giá mục tiêu trong báo cáo tính trên 511 triệu cp, trang tự chia 1,2. LN của ACBS là LNST trước cổ đông thiểu số.",
+ "nguon": [
+  {
+   "ten": "KAFI — Tiến độ triển khai các dự án duy trì tích cực",
+   "ngay": "10/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/20260810_tong_ctcp_dich_vu_ky_thuat_dau_khi_viet_nam_hnx_pvs_tien_do_trien_khai_cac_du_an_duy_tri_tich_cuc.pdf"
+  },
+  {
+   "ten": "Mirae Asset — Đón sóng dự án, giữ mạch doanh thu",
+   "ngay": "10/08/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/bao_cao_ngan_tong_ctcp_dich_vu_ky_thuat_dau_khi_viet_nam_pvs_vn_mua_don_song_du_an_giu_mach_doanh_thu.pdf"
+  },
+  {
+   "ten": "ACBS — Cập nhật nhanh PVS",
+   "ngay": "31/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/pvs_cap_nhat_nhanh_31_07_2026.pdf"
+  },
+  {
+   "ten": "Shinhan — Hưởng lợi từ chu kỳ mới",
+   "ngay": "16/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/pvs_mua_gia_mt_vnd_46_700_22_9_huong_loi_tu_chu_ky_moi.pdf"
+  },
+  {
+   "ten": "Vietcap — Biên lợi nhuận M&C tăng và lãi tỷ giá thuần",
+   "ngay": "08/05/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVS/Bien_loi_nhuan_MC_tang_va_lai_ty_gia_thuan_thuc_ay_toc_o_tang_truong_loi_nhuan_kep_3_nam.pdf"
+  },
+  {
+   "ten": "Vietcap — Ghi chú ĐHĐCĐ 2026 (kế hoạch, backlog 2027, chuyển sàn)",
+   "ngay": "19/06/2026",
+   "link": "https://www.vietcap.com.vn/en/research-center/pvs-solid-2026-earnings-and-new-contracts-for-2027-agm-note"
+  },
+  {
+   "ten": "Stockbiz — Ngày đăng ký cuối cùng trả cổ tức bằng cổ phiếu (100:20, GDKHQ 14/9)",
+   "ngay": "09/2026",
+   "link": "https://stockbiz.vn/tin-tuc/pvs-ngay-dang-ky-cuoi-cung-tra-co-tuc-bang-co-phieu-cho-co-dong-hien-huu/41651873"
+  },
+  {
+   "ten": "Stockbiz — Chu kỳ đầu tư năng lượng mới mở kho backlog (backlog 2027)",
+   "ngay": "2026",
+   "link": "https://stockbiz.vn/tin-tuc/chu-ky-dau-tu-nang-luong-moi-mo-kho-backlog-lon-cua-cac-nha-thau/41125156"
+  },
+  {
+   "ten": "MBS — PVT: bảng so sánh vận tải, kho nổi (Yinson P/E)",
+   "ngay": "17/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/PVT/pvt_bcpt_tu_nen_tang_vung_chai_den_chu_ky_tang_truong_moi.pdf"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Nghị quyết 70-NQ/TW (8/2025): dầu khí là trụ cột an ninh năng lượng, mục tiêu sản lượng khí gấp 3 lần vào 2030; NQ 66.6/2025 phân cấp phê duyệt phát triển mỏ cho PVN.",
+     "ng": "Shinhan 16/07"
+    },
+    {
+     "h": 1,
+     "t": "Vốn đầu tư thượng nguồn 2026–2030 dự báo gấp ~3 lần 2021–2025; PVN đặt mục tiêu giải ngân ~100 nghìn tỷ năm 2026.",
+     "ng": "Shinhan 16/07"
+    },
+    {
+     "h": 0,
+     "t": "Hợp đồng quốc tế bằng USD, chi phí phần lớn bằng VND: lãi tỷ giá thuần 2025 493 tỷ, Q1/2026 chỉ 52 tỷ — biến động theo tỷ giá.",
+     "ng": "Vietcap 08/05"
+    },
+    {
+     "h": 0,
+     "t": "Giá dầu: xung đột Mỹ – Iran năm 2026 đẩy giá dầu tăng vọt; giá PVS tương quan cao với giá dầu nhưng lãi phụ thuộc backlog hơn.",
+     "ng": "Shinhan 16/07 · Vietcap 08/05"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Khai thác dầu thô Q1/2026 2,63 triệu tấn (+10,4%) — quý tăng đầu tiên sau 11 năm giảm.",
+     "ng": "Shinhan 16/07 (Bộ Công Thương)"
+    },
+    {
+     "h": 1,
+     "t": "Chuỗi dự án lớn: Lô B – Ô Môn (12 tỷ USD), Lạc Đà Vàng, Sư Tử Trắng 2B, Khánh Mỹ – Đầm Dơi; tiếp theo Hải Sư Vàng, Cá Voi Xanh (5 tỷ USD).",
+     "ng": "Shinhan 16/07 · KAFI 10/08"
+    },
+    {
+     "h": -1,
+     "t": "Điện gió Đài Loan: yêu cầu nội địa hóa 60%, nhiều dự án bị loại hoặc hủy — khách hàng hủy hợp đồng 450 triệu USD với PVS.",
+     "ng": "Vietcap 08/05"
+    },
+    {
+     "h": 1,
+     "t": "Điện gió ngoài khơi: GWEC dự báo lắp đặt toàn cầu 9 GW (2025) → 33 GW (2030); xuất khẩu điện gió sang Singapore, Malaysia 3.000 MW là dự án trọng điểm quốc gia.",
+     "ng": "Shinhan 16/07 · Vietcap 08/05"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Backlog ~5,5 tỷ USD (cùng kỳ 3,5); backlog 2027 đã ký > 20 nghìn tỷ, ~70% khối lượng 2026.",
+     "ng": "Shinhan 16/07 · Vietcap 19/06"
+    },
+    {
+     "h": -1,
+     "t": "Lãi HĐKD cốt lõi thấp kéo dài: khấu hao nhanh 3 năm hạ tầng M&C, ước tính chi phí thận trọng, dự phòng bảo hành ~4,0 nghìn tỷ (Q1/2026).",
+     "ng": "Shinhan 16/07 · Vietcap 08/05"
+    },
+    {
+     "h": 0,
+     "t": "Mục tiêu doanh thu 2030 ~60 nghìn tỷ (gần gấp đôi 2025); đầu tư 2026–2030 15,4 nghìn tỷ (M&C 6,8; tàu 4,8; cảng 3,3) — gần bằng tiền ròng điều chỉnh.",
+     "ng": "Shinhan 16/07 · Vietcap 08/05"
+    },
+    {
+     "h": 1,
+     "t": "Vốn điều lệ lên 6.137 tỷ sau cổ tức 20% bằng cổ phiếu (9/2026); dự kiến chuyển sang HOSE Q4/2026.",
+     "ng": "Stockbiz · ACBS 31/07"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Cơ khí, xây lắp (M&C) — EPCI dầu khí, điện gió, trên bờ",
+   "phu": "67% doanh thu 2025; cảng – bãi chế tạo Vũng Tàu ~200 ha, đang mở rộng thêm ~30 ha",
+   "so": [
+    [
+     "Doanh thu 2025",
+     "21.804 tỷ",
+     ""
+    ],
+    [
+     "6T/2026",
+     "10.491 tỷ",
+     "+19%"
+    ],
+    [
+     "Biên sau bảo hành 9T",
+     "~3,5%",
+     "Q3 ~4,5% (ước)"
+    ],
+    [
+     "Backlog 2027 đã ký",
+     "> 20 nghìn tỷ",
+     "~70% khối lượng 2026"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Lô B: EPCI#1 (giàn trung tâm) 65%, EPCI#2 (4 giàn vệ tinh) 95%, tuyến ống bờ 40–45%, FSO Lô B 45%; chi phí phải trả EPCI#1 2.736 tỷ; dòng khí đầu tiên Q3/2027.",
+     "ng": "Shinhan 16/07 · MAS 10/08"
+    },
+    {
+     "t": "Sư Tử Trắng 2B: EPCIC ký 22/4/2026, > 10.000 tỷ (topside > 6.500 tấn, jacket ~5.000 tấn); Khánh Mỹ – Đầm Dơi: EPCI ký 12/5, khí đầu tiên Q4/2027.",
+     "ng": "KAFI 10/08 · MAS 10/08"
+    },
+    {
+     "t": "Điện gió: Baltica 2 vượt 95% (22/4), Fengmiao load-out > 8.000 tấn (4/2026), Formosa 4 hoàn thành 2028; backlog điện gió ~1 tỷ USD.",
+     "ng": "KAFI 10/08"
+    }
+   ]
+  },
+  {
+   "ten": "Kho nổi FSO/FPSO — 6 chiếc qua liên doanh",
+   "phu": "~60% thị phần kho nổi trong nước; lãi ghi theo phần sở hữu (lãi liên doanh, gồm cả Bãi tàu PV 28,75%)",
+   "so": [
+    [
+     "Lãi liên doanh 2025",
+     "826 tỷ",
+     "45% LN"
+    ],
+    [
+     "9T/2026",
+     "438 tỷ",
+     "−33%"
+    ],
+    [
+     "Hết hạn hợp đồng 2027",
+     "4/6 chiếc",
+     ""
+    ],
+    [
+     "FPSO Ruby II (60%)",
+     "92.500 USD/ngày",
+     "gia hạn từng năm"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Orkid (49%), Ruby II (60%), Lam Sơn (51%, đã gia hạn đến hết 2027), Sao Vàng – Đại Nguyệt hết hạn 2027; Biển Đông 01 (51%), Rồng Đôi MV12 (33%) đến 2028.",
+     "ng": "Shinhan 16/07 · Vietcap 08/05"
+    },
+    {
+     "t": "Mới: FSO Lạc Đà Vàng (51%) từ first oil Q4/2026; FSO Lô B (51%) hợp đồng 14 năm (> 480 triệu USD), hoàn thành Q4/2027, mục tiêu ROE > 10%.",
+     "ng": "Vietcap 08/05 · MAS 10/08"
+    }
+   ]
+  },
+  {
+   "ten": "Dịch vụ: O&M, tàu, cảng, khảo sát",
+   "phu": "~97% thị phần tàu dịch vụ dầu khí, 100% căn cứ cảng dầu khí; ~24 tàu",
+   "so": [
+    [
+     "Doanh thu 2025",
+     "10.913 tỷ",
+     "33%"
+    ],
+    [
+     "O&M 6T/2026",
+     "+98%",
+     "đấu nối Lô B, Marjan"
+    ],
+    [
+     "Biên gộp tàu, cảng, khảo sát",
+     "~15%",
+     "2025"
+    ],
+    [
+     "Đầu tư 2026–2030",
+     "15,4 nghìn tỷ",
+     "M&C, tàu, cảng"
+    ]
+   ],
+   "y": [
+    {
+     "t": "O&M: POS làm đấu nối, chạy thử 2 CPP + 4 WHP Lô B (7/2025–12/2026) và cải hoán, đấu nối mỏ Marjan, Saudi Arabia (3/2025–12/2026).",
+     "ng": "KAFI 10/08"
+    },
+    {
+     "t": "Tàu dịch vụ: thêm 2 tàu mua cuối 2025; Vietcap dự báo doanh thu tàu, vận hành kho nổi, khảo sát 2026 +10%.",
+     "ng": "Vietcap 08/05"
+    }
+   ]
+  }
+ ]
+}

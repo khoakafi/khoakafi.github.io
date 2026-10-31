@@ -1,0 +1,1595 @@
+{
+ "v": 2,
+ "ma": "VGC",
+ "ten": "Tổng Công ty Viglacera – CTCP",
+ "nganh": "Bất động sản khu công nghiệp, vật liệu xây dựng",
+ "ky": "KQKD Q3/2026 công bố · BCTC Q2/2026 · giá 23/10/2026",
+ "cap_nhat": "2026-10-26",
+ "lan_sau": "sau BCTC Q4/2026 (kèm bàn giao đất cả năm, kế hoạch 2027)",
+ "cp_trieu": 448.35,
+ "cp_ng": "Vốn điều lệ 4.483,5 tỷ (BCTC Q2/2026) = 448,35 triệu cp, không có cổ phiếu quỹ (SHS 30/07: 448.350.000 cp lưu hành). Giá điều chỉnh tháng 7/2026 là do cổ tức tiền 2.200 đ/cp (GDKHQ 28/07/2026), số cp không đổi.",
+ "co_tuc": [
+  [
+   "2025-11-11",
+   2200,
+   "cổ tức 2024: 22% tiền mặt (ĐKCC 12/11/2025, trả 05/12/2025)"
+  ],
+  [
+   "2026-07-28",
+   2200,
+   "cổ tức 2025: 22% tiền mặt (ĐKCC 29/07/2026, trả từ 28/08/2026)"
+  ]
+ ],
+ "tieu_de": {
+  "t": "9T/2026 vượt 25% kế hoạch LNTT, nhưng LN cổ đông chỉ +46%: lãi KCN chia cho đối tác"
+ },
+ "dong_mo": "9T/2026 LNTT 2.281 tỷ (+73%), LN cổ đông 1.243 tỷ (+46%); Q3 riêng 464 tỷ, gấp 5,0 lần cùng kỳ nhờ biên gộp KCN 57% và kính có lãi. Gồm ~620 ha đất KCN đang vận hành, 845 ha KCN mới (phần VGC), VLXD và dịch vụ: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "luan_diem": [
+  {
+   "so": "30%",
+   "nhan": "LNST 9T/2026 thuộc cổ đông thiểu số (2025: 12%)",
+   "tieu": "Tăng trưởng KCN vẫn phải chia với đối tác",
+   "t": "LNTT 9T 2.281 tỷ (+73%), LNST 1.769 tỷ (+85%), nhưng LN cổ đông 1.243 tỷ (+46%). Q3 thiểu số còn 25% LNST (Q2 32%): tỷ lệ chạy theo khu bàn giao, chưa phải xu hướng — Sông Công II, KCN Số 1 (VGC 51%) chiếm phần lớn 111 ha ký 4T. Mô hình giữ ~30% đến 2027: mỗi 10 ha bàn giao còn ~88 tỷ LN cổ đông.",
+   "ng": "KQKD Q3 công bố 24/10 · elibook 26/10 · BCTC VNDirect · mô hình"
+  },
+  {
+   "so": "57%",
+   "nhan": "biên gộp cho thuê đất 9T/2026 (2025: 63%)",
+   "tieu": "Q3 bác bỏ lo ngại biên KCN tụt nhanh",
+   "t": "Doanh thu cho thuê đất 9T 3.271 tỷ (+40%), lãi gộp ~1.855 tỷ — 54% lãi gộp hợp nhất từ 28% doanh thu. Biên 57%, cao hơn mức ~51% hồ sơ trước ước cho 6T. Đất mới vẫn đắt hơn: KCN Số 1 GĐ1 ~14 tỷ/ha thương phẩm, giá thuê phía Bắc 23–36 tỷ/ha. Cơ sở nâng biên 2027 từ 53% lên 55% (BSC 59%); mỗi 5 điểm % ≈ 135 tỷ LN 2027E.",
+   "ng": "KQKD Q3 công bố (Doanh nghiệp & Kinh tế xanh, Znews) · BSC 01/06 · BVSC 26/03 · mô hình"
+  },
+  {
+   "so": "186 tỷ",
+   "nhan": "lãi gộp kính, gương 9T/2026 (9T/2025: lỗ 33 tỷ)",
+   "tieu": "Kính hết lỗ, nhưng VLXD vẫn là phần lãi mỏng",
+   "t": "Doanh thu kính, gương 9T 2.109 tỷ (+49%) nhờ VFG hợp nhất và thuế chống bán phá giá chính thức từ 12/06/2026 (Indonesia 32,8–43,8%, Malaysia 41,1–63,4%). Biên gộp VLXD 9T ước ~17,5% (2025: 14,6%). Cơ sở 2027 17,5%: lãi gộp VLXD ~1,9 nghìn tỷ, nhưng sau chi phí bán hàng, quản lý thu nhập đều chỉ ~522 tỷ LN cổ đông.",
+   "ng": "KQKD Q3 công bố (Kinh tế & Chứng khoán) · SHS 30/07 · QĐ 1400/QĐ-BCT · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý (nghìn đ/cp)",
+   "tieu": "Tổng các phần: {up_so} so với giá hiện tại",
+   "t": "Đất KCN đang vận hành 620 ha × 11,1 tỷ/ha + KCN mới 845 ha × 4,5 + thu nhập đều 2027E 522 tỷ × P/E 11,5 + dự án chưa tạo lãi 1,9 nghìn tỷ − nợ vay ròng 1,4 nghìn tỷ. Tương đương P/E 9,6 lần LN 4 quý đến Q3, P/B 2,0 lần (trung vị từ 2015: 1,98). Q3 vượt dự phóng nhưng giá trị chỉ nhích vì định giá theo quỹ đất, không theo lãi một năm. Xấu 23,6, tốt 54,1.",
+   "ng": "mô hình · BCTC VNDirect · KQKD Q3 công bố · BSC 01/06"
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   1403,
+   1783,
+   1770
+  ],
+  "ln_truoc": 1105,
+  "eps": [
+   3129,
+   3977,
+   3948
+  ],
+  "bv": [
+   19339,
+   20979,
+   22727
+  ],
+  "co_tuc_nam": 2200,
+  "them": [
+   {
+    "ten": "Bàn giao đất KCN (ha)",
+    "v": [
+     110,
+     146,
+     150
+    ],
+    "d": 0
+   },
+   {
+    "ten": "Cổ đông thiểu số (% LNST)",
+    "v": [
+     12,
+     29,
+     30
+    ],
+    "d": 0,
+    "pt": 1
+   }
+  ],
+  "ng": "LN 2024–2025: BCTC; EPS, BVPS theo 448,35 triệu cp. Cổ tức tiền 2.200 đ/cp cho năm 2024 và 2025. BVPS 2027E giả định cổ tức năm 2026 là 2.200 đ/cp. 2026E = 9T thực tế (Q3 theo công bố 24/10) + Q4 ước. Bàn giao 2025: BVSC (KBSV ghi 120 ha); 2026E gồm Q3 ~24 ha ước từ doanh thu cho thuê đất."
+ },
+ "ln_mang": {
+  "tieu": "Lãi gộp theo mảng",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "lãi gộp",
+  "ss": [
+   {
+    "ten": "Cho thuê đất KCN",
+    "mau": "c1",
+    "v": [
+     2092,
+     2647,
+     2722
+    ]
+   },
+   {
+    "ten": "Vật liệu xây dựng",
+    "mau": "c2",
+    "v": [
+     1262,
+     1764,
+     1855
+    ]
+   },
+   {
+    "ten": "Dịch vụ KCN, nhà ở, khác",
+    "mau": "c4",
+    "v": [
+     645,
+     437,
+     544
+    ]
+   }
+  ],
+  "nhan": "Cho thuê đất KCN",
+  "ng": "2025A: KCN BVSC 26/03, VLXD biên 14,6% (KBSV), còn lại = tổng trừ hai mảng; năm 2025 có ~275 tỷ hoàn nhập dự phòng (KBSV). 2026E: KCN 9T công bố (lãi gộp ~1.855 tỷ), dịch vụ và nhà ở ước, VLXD = tổng trừ hai phần trên; + Q4 mô hình; 2027E mô hình."
+ },
+ "so_sanh": {
+  "chi_so": "P/E 4 quý",
+  "chi_so_kv": "P/E 4 quý (giá 23/10)",
+  "nhom": "8 doanh nghiệp KCN niêm yết vốn hóa lớn",
+  "kv": [
+   [
+    "GVR",
+    17.9
+   ],
+   [
+    "BCM",
+    20.2
+   ],
+   [
+    "SZC",
+    22.0
+   ],
+   [
+    "KBC",
+    14.6
+   ],
+   [
+    "NTC",
+    13.2
+   ],
+   [
+    "PHR",
+    8.4
+   ],
+   [
+    "SIP",
+    8.2
+   ],
+   [
+    "IDC",
+    6.5
+   ]
+  ],
+  "tv": 13.9,
+  "moi_cp": 4003,
+  "max": 25,
+  "y": "IDC, SIP, PHR, NTC giao dịch 6,5–10 lần; KBC, GVR, SZC, BCM 14–21 lần. Tính cả Q3 công bố, VGC còn ~11 lần, dưới trung vị — dù 30% LNST 9T thuộc cổ đông thiểu số và gần 2/3 doanh thu là VLXD biên mỏng.",
+  "ng": "BCTC VNDirect (LNST cổ đông 4 quý đến Q2/2026; KBC đến Q3/2026; VGC đến Q3/2026 theo công bố), vốn hóa VNDirect, giá 23/10/2026"
+ },
+ "mo_hinh": {
+  "tieu": "Dự phóng: cho thuê đất KCN + VLXD, dịch vụ",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Cho thuê đất KCN"
+   },
+   {
+    "ten": "Diện tích bàn giao (ha)",
+    "v": [
+     110,
+     146,
+     150
+    ]
+   },
+   {
+    "ten": "Doanh thu cho thuê đất (tỷ)",
+    "v": [
+     3296,
+     4711,
+     4950
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp (%)",
+    "v": [
+     63.5,
+     56.2,
+     55.0
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Vật liệu xây dựng"
+   },
+   {
+    "ten": "Doanh thu VLXD (tỷ)",
+    "v": [
+     8641,
+     10094,
+     10599
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên gộp VLXD (%)",
+    "v": [
+     14.6,
+     17.5,
+     17.5
+    ],
+    "d": 1
+   },
+   {
+    "nhom": "Hợp nhất"
+   },
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     13315,
+     16118,
+     17199
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Lãi gộp (tỷ)",
+    "v": [
+     3999,
+     4848,
+     5122
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí ròng: bán hàng, quản lý, tài chính, khác (tỷ)",
+    "v": [
+     1798,
+     1605,
+     1880
+    ]
+   },
+   {
+    "ten": "LNTT (tỷ)",
+    "v": [
+     2202,
+     3243,
+     3242
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Cổ đông thiểu số (% LNST)",
+    "v": [
+     12.0,
+     29.2,
+     30.0
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN cổ đông (tỷ)",
+    "v": [
+     1403,
+     1783,
+     1770
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     3129,
+     3977,
+     3948
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     16.5,
+     19.7,
+     18.1
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "Cho thuê đất = ha × tỷ/ha × biên gộp; VLXD = doanh thu × biên. LN cổ đông = LNTT × (1 − 22%) × (1 − tỷ lệ thiểu số). 2026E = 9T thực tế (Q3 công bố) + Q4 ước; KCN 9T theo công bố, biên VLXD 9T là ước tính."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   1783
+  ],
+  "cuoi": [
+   "2027E",
+   1770
+  ],
+  "buoc": [
+   [
+    "Cho thuê đất KCN",
+    41
+   ],
+   [
+    "VLXD",
+    50
+   ],
+   [
+    "Dịch vụ KCN, nhà ở",
+    58
+   ],
+   [
+    "Chi phí, tài chính, thiểu số",
+    -162
+   ]
+  ],
+  "y": "LN 2027E đi ngang: 2026E đã gồm 9T vượt dự phóng; đất KCN 150 ha so với 146, biên 55% (9T 57%), VLXD biên 17,5%. Chi phí ròng tăng ~275 tỷ (thu tài chính 2026 cao, vay cho KCN mới). Tính sau thuế 22%, thiểu số 30%.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Bàn giao đất: Q4/2026 · 2027 (ha)",
+   "v": [
+    "30 · 115",
+    "45 · 150",
+    "60 · 170"
+   ],
+   "ly_do": "9T ~101 ha (6T ~77; Q3 ~24 ước từ doanh thu 772 tỷ); kế hoạch 150 ha; đã ký 111 ha trong 4T; KBSV 2027F 142 ha"
+  },
+  {
+   "ten": "Doanh thu/ha · biên gộp KCN 2027",
+   "v": [
+    "31 · 50%",
+    "33 · 55%",
+    "34 · 58%"
+   ],
+   "ly_do": "Biên 9T/2026 56,7% (công bố; hồ sơ 21/10 ước 6T ~51%, cơ sở cũ 53%); 2025: 63%. Đất mới 125–140 USD/m², đầu tư ~14 tỷ/ha"
+  },
+  {
+   "ten": "VLXD 2027: doanh thu · biên gộp",
+   "v": [
+    "0% · 15,5%",
+    "+5% · 17,5%",
+    "+8% · 19,0%"
+   ],
+   "ly_do": "Biên 2025 14,6%; 9T/2026 ước ~17,5% (kính lãi gộp 186 tỷ, 9T/2025 lỗ 33); cơ sở cũ 17%. Thuế CBPG kính từ 12/06/2026; BSC 2027F doanh thu +4%"
+  },
+  {
+   "ten": "Cổ đông thiểu số (% LNST): Q4/2026 · 2027",
+   "v": [
+    "32% · 34%",
+    "28% · 30%",
+    "24% · 26%"
+   ],
+   "ly_do": "2025: 12%; 9T/2026: 30% (Q2 32%, Q3 25%). 4/6 KCN mới VGC nắm 51%; VLXD sở hữu ~70% (BSC)"
+  },
+  {
+   "ten": "Nhịp bán đất cũ (ha/năm) · chiết khấu",
+   "v": [
+    "60 · 13,0%",
+    "80 · 12,5%",
+    "100 · 12,0%"
+   ],
+   "ly_do": "~665 ha còn ở 11 KCN đang vận hành; giá thuê tăng 3–5%/năm; BSC dùng WACC 11,2%"
+  },
+  {
+   "ten": "Giá trị KCN mới (tỷ/ha, phần VGC)",
+   "v": [
+    "3,0",
+    "4,5",
+    "6,0"
+   ],
+   "ly_do": "Sau thuế, chiết khấu, trừ vốn còn phải đầu tư. NAV/ha của BVSC: Sông Công II 3,8, Dốc Đá Trắng 10,5, Trấn Yên 1,8 (100%)"
+  },
+  {
+   "ten": "P/E thu nhập đều",
+   "v": [
+    "10,0",
+    "11,5",
+    "13,0"
+   ],
+   "ly_do": "VGC từ 2016: thấp 10% 10,2, thấp 25% 12,8; phần này chủ yếu là VLXD biên mỏng, chu kỳ theo bất động sản"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 1521,
+   "ln27": 974,
+   "gia": 23.6,
+   "mo_ta": "Bàn giao 30 ha Q4/2026, 115 ha 2027, biên đất 50%; VLXD biên 15,5%; thiểu số 34%; bán đất cũ 60 ha/năm, chiết khấu 13,0%; KCN mới 3,0 tỷ/ha; P/E 10,0"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 1783,
+   "ln27": 1770,
+   "gia": 38.3,
+   "mo_ta": "Bàn giao 45 ha Q4/2026, 150 ha 2027, biên đất 55%; VLXD biên 17,5%; thiểu số 30%; bán đất cũ 80 ha/năm, chiết khấu 12,5%; KCN mới 4,5 tỷ/ha; P/E 11,5"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 2092,
+   "ln27": 2427,
+   "gia": 54.1,
+   "mo_ta": "Bàn giao 60 ha Q4/2026, 170 ha 2027, biên đất 58%; VLXD biên 19%; thiểu số 26%; bán đất cũ 100 ha/năm, chiết khấu 12,0%; KCN mới 6,0 tỷ/ha; P/E 13,0"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá tổng các phần",
+  "phu": "Đất KCN: ha × giá trị/ha; thu nhập đều 2027E × P/E; dự án chưa tạo lãi theo sổ sách; trừ nợ vay ròng",
+  "ck": 0,
+  "cp": 448.35,
+  "phan": [
+   {
+    "ten": "KCN đang vận hành",
+    "mau": "c1",
+    "x": [
+     620,
+     620,
+     620
+    ],
+    "boi": [
+     8.3,
+     11.1,
+     13.9
+    ],
+    "x_ten": "ha thương phẩm còn lại, phần VGC (30/6/2026)",
+    "boi_ten": "tỷ đ/ha: (LNST + giá vốn đã chi) × hệ số chiết khấu",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     5146,
+     6882,
+     8618
+    ]
+   },
+   {
+    "ten": "KCN mới",
+    "mau": "c3",
+    "x": [
+     845,
+     845,
+     845
+    ],
+    "boi": [
+     3.0,
+     4.5,
+     6.0
+    ],
+    "x_ten": "ha 6 KCN mới, phần VGC",
+    "boi_ten": "tỷ đ/ha sau thuế, chiết khấu, trừ vốn còn phải đầu tư",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     2535,
+     3802,
+     5070
+    ]
+   },
+   {
+    "ten": "Thu nhập đều",
+    "mau": "c2",
+    "x": [
+     238,
+     522,
+     773
+    ],
+    "boi": [
+     10.0,
+     11.5,
+     13.0
+    ],
+    "x_ten": "LN cổ đông 2027E: VLXD, dịch vụ KCN, nhà ở − chi phí chung",
+    "boi_ten": "P/E",
+    "boi_d": 1,
+    "sh": 1,
+    "gt": [
+     2380,
+     6003,
+     10049
+    ]
+   },
+   {
+    "ten": "Dự án chưa tạo lãi",
+    "mau": "c4",
+    "x": [
+     1931,
+     1931,
+     1931
+    ],
+    "boi": [
+     1,
+     1,
+     1
+    ],
+    "x_ten": "Angsana Vân Hải, dự án nhà ở khác, công ty liên kết (BSC 01/06)",
+    "boi_ten": "hệ số",
+    "sh": 1,
+    "gt": [
+     1931,
+     1931,
+     1931
+    ]
+   }
+  ],
+  "von": [
+   10564,
+   17190,
+   24240
+  ],
+  "gia": [
+   23.6,
+   38.3,
+   54.1
+  ],
+  "no_rong": 1428,
+  "no_rong_ten": "Trừ nợ vay ròng 30/6/2026 và cổ tức 986 tỷ trả 8/2026"
+ },
+ "nhay": [
+  [
+   "Giá trị KCN mới ±1 tỷ đ/ha",
+   null,
+   1.9
+  ],
+  [
+   "Nhịp bán đất KCN đang vận hành ±20 ha/năm",
+   null,
+   1.2
+  ],
+  [
+   "P/E thu nhập đều ±1 lần",
+   null,
+   1.2
+  ],
+  [
+   "Biên gộp cho thuê đất ±5 điểm %",
+   135,
+   1.1
+  ],
+  [
+   "Cổ đông thiểu số ±5 điểm % LNST",
+   126,
+   1.0
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/E",
+  "t": [
+   "2016-02",
+   "2016-03",
+   "2016-04",
+   "2016-05",
+   "2016-06",
+   "2016-07",
+   "2016-08",
+   "2016-09",
+   "2016-10",
+   "2016-11",
+   "2016-12",
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   6.1,
+   12.3,
+   11.0,
+   10.5,
+   10.4,
+   11.3,
+   10.4,
+   11.9,
+   12.8,
+   10.7,
+   10.4,
+   10.4,
+   9.0,
+   9.8,
+   9.8,
+   9.0,
+   10.3,
+   10.4,
+   12.3,
+   15.4,
+   15.3,
+   17.7,
+   17.0,
+   16.8,
+   16.4,
+   17.4,
+   16.5,
+   18.4,
+   16.4,
+   14.1,
+   13.8,
+   14.1,
+   11.5,
+   13.1,
+   14.6,
+   15.9,
+   16.5,
+   16.4,
+   15.6,
+   14.6,
+   14.8,
+   14.1,
+   14.2,
+   14.6,
+   14.4,
+   13.2,
+   13.2,
+   13.0,
+   12.5,
+   9.7,
+   11.9,
+   12.9,
+   13.1,
+   13.1,
+   15.8,
+   16.9,
+   16.9,
+   18.8,
+   19.0,
+   24.2,
+   28.2,
+   26.9,
+   27.4,
+   18.8,
+   18.9,
+   19.2,
+   17.9,
+   16.8,
+   20.6,
+   26.6,
+   26.3,
+   23.9,
+   19.2,
+   23.7,
+   17.3,
+   10.9,
+   14.3,
+   16.6,
+   15.7,
+   11.8,
+   9.3,
+   8.3,
+   7.7,
+   8.9,
+   8.6,
+   8.5,
+   8.6,
+   14.4,
+   15.4,
+   17.2,
+   18.1,
+   17.5,
+   16.0,
+   17.7,
+   17.8,
+   17.0,
+   20.4,
+   21.5,
+   18.7,
+   20.0,
+   19.0,
+   16.5,
+   24.9,
+   24.6,
+   23.0,
+   32.2,
+   34.2,
+   37.9,
+   21.1,
+   19.9,
+   15.9,
+   16.1,
+   16.5,
+   21.8,
+   18.2,
+   17.1,
+   14.1,
+   14.2,
+   13.5,
+   16.2,
+   16.4,
+   15.0,
+   13.6,
+   14.6,
+   15.5,
+   13.1,
+   12.7,
+   14.2,
+   14.6
+  ],
+  "p10": 10.2,
+  "p25": 12.8,
+  "tv": 15.5,
+  "thap": [
+   "2016-02",
+   6.1
+  ],
+  "nay": [
+   "2026-10",
+   14.6
+  ],
+  "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
+  "dung": "Giá trị cơ sở ≈ P/E 9,6 lần LN 4 quý đến Q3, 9,7 lần LN 2027E — dưới thấp 25% từ 2016 (12,8); từ 2021 thấp 25% 14,4, trung vị 17,1; hiện 11,1. Tính theo vốn chủ: P/B 2,0 lần, ngang trung vị P/B từ 2015 (1,98). Phần đất định giá theo ha; thu nhập đều P/E 10,0 · 11,5 · 13,0."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "ln": [
+    180,
+    300,
+    420
+   ],
+   "ck": 92,
+   "cong_bo": 464
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "ln": [
+    278,
+    540,
+    849
+   ],
+   "ck": 552
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    1521,
+    1783,
+    2092
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "24/10/2026",
+   "loai": "len",
+   "tieu": "Đã ra: KQKD Q3/2026 vượt cơ sở",
+   "ct": "LN cổ đông Q3 464 tỷ, gấp 5,0 lần cùng kỳ, +55% so với cơ sở cũ 300 tỷ (tốt 420): biên gộp KCN 9T 57%, kính có lãi, thiểu số chỉ 25%. 9T LNTT đạt 125% kế hoạch năm.",
+   "tac": [
+    "+288 tỷ",
+    "LN 2026E cơ sở so với hồ sơ 21/10 (1.495 → 1.783 tỷ)"
+   ],
+   "theo_doi": "BCTC Q3 đầy đủ: ha bàn giao, số dư 30/9"
+  },
+  {
+   "khi": "Q4/2026",
+   "loai": "hai",
+   "tieu": "Bàn giao đất quý 4",
+   "ct": "9T ~101 ha (Q3 ~24 ha ước từ doanh thu 772 tỷ), kế hoạch 150 ha; cơ sở Q4 45 ha, LN cổ đông 540 tỷ (cùng kỳ 552). Phần lớn đất còn lại ở Sông Công II, KCN Số 1 (VGC 51%).",
+   "tac": [
+    "~88 tỷ LN",
+    "mỗi 10 ha bàn giao thêm (phần cổ đông VGC)"
+   ],
+   "theo_doi": "ha bàn giao, LN cổ đông Q4"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "len",
+   "tieu": "Thuế chống bán phá giá kính chính thức",
+   "ct": "QĐ 1400/QĐ-BCT (12/06/2026): kính nổi không màu Indonesia 32,8–43,8%, Malaysia 41,1–63,4%. VGC ~40% thị phần kính; biên gộp kính −5% (2025) → 12% (Q1/2026).",
+   "tac": [
+    "±58 tỷ LN",
+    "mỗi 1 điểm % biên gộp VLXD 2027E"
+   ],
+   "theo_doi": "biên gộp kính"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "KCN mới vào khai thác",
+   "ct": "KCN Số 1 GĐ1 (Hưng Yên) dự kiến khởi công 6/2026, khách đã đặt cọc hơn 30 ha; Phù Ninh đang đền bù; Dốc Đá Trắng giải phóng mặt bằng hơn 80%. Đất mới thay dần đất cũ.",
+   "tac": [
+    "±1,9 nghìn đ/cp",
+    "mỗi 1 tỷ đ/ha giá trị KCN mới"
+   ],
+   "theo_doi": "tiến độ GPMB, MOU"
+  },
+  {
+   "khi": "3–4/2027",
+   "loai": "hai",
+   "tieu": "Kế hoạch 2027, cổ tức, thoái vốn nhà nước",
+   "ct": "ĐHĐCĐ 2027: kế hoạch LN và cổ tức 2026 (hai năm liền 2.200 đ/cp). Bộ Xây dựng lùi thoái vốn 38,58% sang 2026–2030; GELEX nắm 50,21%, cổ phiếu tự do ~11%.",
+   "tac": "",
+   "theo_doi": "kế hoạch 2027, phương án thoái vốn"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Phần lãi chia cho đối tác tăng",
+   "ct": "Thiểu số 30% LNST 9T/2026 (2025: 12%; Q3 25%). 4 trong 6 KCN mới VGC chỉ nắm 51%; VLXD sở hữu bình quân ~70% (BSC).",
+   "tac": [
+    "±126 tỷ LN",
+    "mỗi 5 điểm % LNST 2027E thuộc cổ đông thiểu số"
+   ],
+   "theo_doi": "LNST − LN cổ đông"
+  },
+  {
+   "khi": "2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Biên gộp KCN thấp hơn ở khu mới",
+   "ct": "9T/2026 biên gộp cho thuê đất 56,7% (2025: 63%) — giảm chậm hơn lo ngại. KCN Số 1 GĐ1 đầu tư ~14 tỷ/ha thương phẩm; đất cũ giá vốn thấp còn ít.",
+   "tac": [
+    "±1,1 nghìn đ/cp",
+    "mỗi 5 điểm % biên gộp đất KCN (LN 2027E ±135 tỷ)"
+   ],
+   "theo_doi": "biên gộp KCN"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "FDI, thuế Mỹ và cạnh tranh KCN",
+   "ct": "Mỹ thêm 12,5% thuế (Mục 301), Brent trên 100 USD (Shinhan 18/09) dù FDI đăng ký 8T +55%. Ban lãnh đạo: cạnh tranh KCN tăng mạnh vì nhiều chủ đầu tư mới.",
+   "tac": [
+    "±1,2 nghìn đ/cp",
+    "mỗi ±20 ha/năm nhịp bán đất KCN đang vận hành"
+   ],
+   "theo_doi": "FDI đăng ký mới phía Bắc"
+  },
+  {
+   "khi": "2026–2030",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Vốn cho 6 KCN mới",
+   "ct": "KCN Số 1 GĐ1 2.300 tỷ, Tây Phổ Yên GĐ1 ~5.400 tỷ; nợ vay 5,5 nghìn tỷ (30/6). Tồn kho 30/9 hơn 10,4 nghìn tỷ (30/6: 9,9), dòng tiền kinh doanh 9T ~708 tỷ so với LNST 1.769 tỷ (Dân Việt 25/10).",
+   "tac": "",
+   "theo_doi": "nợ vay, tồn kho, dòng tiền"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 1,
+   "tieu": "Giá nhiên liệu và VLXD",
+   "ct": "Than, dầu FO, soda chiếm phần lớn giá thành gạch, kính (KBSV). ĐHĐCĐ lập kế hoạch LNTT 2026 thận trọng (1.820 tỷ, −17%) vì giá nhiên liệu tăng do xung đột Trung Đông.",
+   "tac": "",
+   "theo_doi": "giá than, dầu FO"
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "LNST theo quý: cổ đông VGC và cổ đông thiểu số",
+   "kieu": "cot_chong",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26",
+    "Q3/26"
+   ],
+   "ss": [
+    {
+     "ten": "LN cổ đông VGC",
+     "v": [
+      535,
+      321,
+      438,
+      92,
+      552,
+      216,
+      563,
+      464
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Cổ đông thiểu số",
+     "v": [
+      10,
+      -22,
+      102,
+      25,
+      86,
+      105,
+      269,
+      152
+     ],
+     "mau": "c3"
+    }
+   ],
+   "y": "Phần thiểu số 105 → 526 tỷ (9T/2025 → 9T/2026); Q2/2026 269 tỷ (32% LNST), Q3 152 tỷ (25%).",
+   "ng": "BCTC (VNDirect): LNST − LNST cổ đông công ty mẹ; Q3/2026 theo công bố 24/10 (LNST 616) và elibook 26/10 (LN cổ đông 464)"
+  },
+  {
+   "ten": "Doanh thu 9T theo mảng",
+   "kieu": "cot",
+   "dv": "tỷ",
+   "so_le": 0,
+   "nhan": [
+    "Đất KCN",
+    "Kính, gương",
+    "VLXD khác, dịch vụ, nhà ở"
+   ],
+   "ss": [
+    {
+     "ten": "9T/2025",
+     "v": [
+      2333,
+      1417,
+      5587
+     ],
+     "mau": "c4"
+    },
+    {
+     "ten": "9T/2026",
+     "v": [
+      3271,
+      2109,
+      6152
+     ],
+     "mau": "c1"
+    }
+   ],
+   "y": "Đất KCN +40%, kính, gương +49% (VFG hợp nhất, thuế chống bán phá giá); phần còn lại (gạch ốp lát, sứ, dịch vụ KCN, nhà ở) +10%.",
+   "ng": "KQKD 9T/2026 công bố 24/10 (Doanh nghiệp & Kinh tế xanh, Kinh tế & Chứng khoán); 9T/2025 suy từ tăng trưởng; tổng: BCTC"
+  },
+  {
+   "ten": "Quỹ đất KCN còn lại theo tỷ lệ sở hữu của VGC",
+   "kieu": "cot_chong",
+   "dv": "ha",
+   "so_le": 0,
+   "nhan": [
+    "Đang vận hành",
+    "KCN mới"
+   ],
+   "ss": [
+    {
+     "ten": "VGC nắm 100%",
+     "v": [
+      585,
+      191
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "VGC nắm 51–60%",
+     "v": [
+      122,
+      1282
+     ],
+     "mau": "c3"
+    }
+   ],
+   "y": "707 ha ở 11 KCN đang vận hành, 585 ha VGC nắm 100% (Thuận Thành 200, Phong Điền 173 ha); 1.473 ha ở 6 KCN mới thì 1.282 ha ở khu VGC chỉ nắm 51–60% (Tây Phổ Yên, Phù Ninh, Sông Công II, KCN Số 1, Dốc Đá Trắng).",
+   "ng": "BSC 01/06/2026 (dữ liệu đầu 2026, 100% diện tích)"
+  },
+  {
+   "ten": "Tiền + đầu tư ngắn hạn và nợ vay",
+   "kieu": "duong",
+   "dv": "nghìn tỷ",
+   "so_le": 1,
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tiền + đầu tư ngắn hạn",
+     "v": [
+      2.2,
+      3.3,
+      2.4,
+      3.0,
+      3.3,
+      4.6,
+      4.7,
+      5.1
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Nợ vay",
+     "v": [
+      5.0,
+      4.8,
+      4.7,
+      5.1,
+      4.9,
+      5.6,
+      5.8,
+      5.5
+     ],
+     "mau": "c2"
+    }
+   ],
+   "y": "Nợ vay ròng chỉ 0,4 nghìn tỷ ngày 30/6/2026, trước khi trả 986 tỷ cổ tức 8/2026; vốn cho 6 KCN mới (KCN Số 1 GĐ1 2.300 tỷ, Tây Phổ Yên GĐ1 ~5.400 tỷ) chưa giải ngân mạnh.",
+   "ng": "BCTC (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu hợp nhất",
+    "kh": 15300,
+    "th": 11532,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 25/4/2026 · KQKD Q3 công bố 24/10"
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "kh": 1820,
+    "th": 2281,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 25/4/2026 · KQKD Q3 công bố 24/10"
+   },
+   {
+    "ten": "Bàn giao đất KCN",
+    "kh": 150,
+    "th": 77,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "ha",
+    "ng": "BSC 01/06 · MAS 14/09 · Vietcap"
+   },
+   {
+    "ten": "Ký mới đất KCN",
+    "kh": 125,
+    "th": 111,
+    "ky": "4T",
+    "tg": 33,
+    "dv": "ha",
+    "ng": "BSC 01/06 (ĐHĐCĐ 2026)"
+   }
+  ],
+  "y": "9T đạt 125% LNTT kế hoạch, 75% doanh thu — kế hoạch thận trọng (−17%); 2020–2025 VGC luôn vượt LNTT kế hoạch (116–154%, BSC). Mô hình cơ sở: LNTT 2026E ~3,2 nghìn tỷ (178% kế hoạch). Bàn giao đất: công ty chưa công bố số 9T.",
+  "ng": ""
+ },
+ "mang": [
+  {
+   "ten": "Khu công nghiệp — nguồn lãi chính",
+   "phu": "11 KCN đang vận hành ở phía Bắc và Huế; 6 KCN mới ở Thái Nguyên, Phú Thọ, Hưng Yên, Khánh Hòa, Lào Cai",
+   "so": [
+    [
+     "Đất sẵn sàng còn lại",
+     "~707 ha",
+     "BSC, đầu 2026"
+    ],
+    [
+     "KCN mới",
+     "1.473 ha",
+     "4/6 khu VGC nắm 51%"
+    ],
+    [
+     "Doanh thu cho thuê đất 9T",
+     "3.271 tỷ",
+     "+40%, biên gộp 56,7%"
+    ],
+    [
+     "Ký mới 4T/2026",
+     "111 ha",
+     "kế hoạch bán mới 125 ha"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Khách hàng: Samsung, LG, Foxconn, Luxshare, BYD, Canon...; giá thuê 120–145 USD/m² ở Bắc Ninh, Hưng Yên, 50–90 USD/m² ở Huế, Phú Thọ, Thái Bình.",
+     "ng": "KBSV 25/02 · BVSC 26/03"
+    },
+    {
+     "t": "Sông Công II: 80 ha đã xong hạ tầng, khách đăng ký gần hết (có dự án FDI 400 triệu USD); KCN Số 1 GĐ1 dự kiến khởi công 6/2026, khách đặt cọc hơn 30 ha.",
+     "ng": "BSC 01/06"
+    },
+    {
+     "t": "Q1/2026 chi phí dở dang dài hạn giảm từ 5,9 xuống 0,7 nghìn tỷ, tồn kho tăng từ 4,0 lên 9,5 nghìn tỷ: chi phí phát triển KCN chuyển sang tồn kho, không phải hàng tồn mới.",
+     "ng": "BCTC (VNDirect)"
+    }
+   ]
+  },
+  {
+   "ten": "Vật liệu xây dựng — kính, gạch ốp lát, sứ, gạch ngói",
+   "phu": "8 nhà máy gạch ốp lát 43 triệu m²/năm; kính hơn 113 triệu m²/năm (VFG 100% từ 2025); sứ, sen vòi 2,55 triệu sản phẩm/năm",
+   "so": [
+    [
+     "Kính, gương 9T/2026",
+     "2.109 tỷ",
+     "+49%, lãi gộp 186 tỷ"
+    ],
+    [
+     "Gạch ốp lát 6T/2026",
+     "1.797 tỷ",
+     "+11%"
+    ],
+    [
+     "Sứ, sen vòi 6T/2026",
+     "608 tỷ",
+     "+24%"
+    ],
+    [
+     "Thị phần",
+     "kính ~40%, gạch ~30%",
+     "KBSV"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Than chiếm 25–35% giá thành gạch ốp lát; dầu FO 35–65% và soda 20–25% giá thành kính, đều nhập khẩu.",
+     "ng": "KBSV 25/02"
+    },
+    {
+     "t": "Bê tông khí vượt công suất, nâng từ 200 lên 240 nghìn m³/năm; Viglacera Tiên Sơn tăng giá gạch 5–10%.",
+     "ng": "MAS 14/09 · BSC 01/06"
+    },
+    {
+     "t": "Tái cơ cấu 2025: đóng 7 chi nhánh, địa điểm (11/2025); VFG nòng cốt mảng kính, Viglacera Tiên Sơn nòng cốt gạch ốp lát.",
+     "ng": "KBSV 25/02 · BSC 01/06"
+    }
+   ]
+  },
+  {
+   "ten": "Nhà ở xã hội, khu đô thị",
+   "phu": "Kim Chung CT3 (Thăng Long Green City), Tiên Dương 1 (16,2 ha), nhà ở công nhân trong KCN",
+   "so": [
+    [
+     "Doanh thu 6T/2026",
+     "329 tỷ",
+     "+148%"
+    ],
+    [
+     "Bán 6T/2026",
+     "479 căn",
+     "45% kế hoạch năm"
+    ],
+    [
+     "Biên gộp NOXH",
+     "~12%",
+     "Q1/2026, BSC"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Kim Chung đã bán hết 929 căn; Tiên Dương, Đặng Xá 2 và nhà ở thương mại giá hợp lý là nguồn tiếp theo.",
+     "ng": "BSC 01/06 · MAS 14/09"
+    }
+   ]
+  },
+  {
+   "ten": "Vốn, cổ tức, cổ đông",
+   "phu": "Bảng cân đối hợp nhất 30/6/2026",
+   "so": [
+    [
+     "Tiền + đầu tư ngắn hạn",
+     "5,1 nghìn tỷ",
+     ""
+    ],
+    [
+     "Nợ vay",
+     "5,5 nghìn tỷ",
+     ""
+    ],
+    [
+     "Vốn chủ cổ đông",
+     "8,4 nghìn tỷ",
+     "BVPS 18.740 đ"
+    ],
+    [
+     "Cổ tức 2024, 2025",
+     "2.200 đ/cp",
+     "~986 tỷ mỗi năm"
+    ]
+   ],
+   "y": [
+    {
+     "t": "GELEX (qua Hạ tầng GELEX) 50,21%, Bộ Xây dựng 38,58%; cổ phiếu tự do ~11%, nhà đầu tư nước ngoài 1–6%.",
+     "ng": "KBSV 25/02 · SHS 30/07 · Doanh nhân 7/2026"
+    }
+   ]
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "t": "FDI đăng ký 8T/2026 40,6 tỷ USD (+55%), giải ngân 17,3 tỷ USD (+12%, cao nhất 5 năm).",
+     "h": 1,
+     "ng": "Shinhan 18/09 (Cục Thống kê)"
+    },
+    {
+     "t": "Mỹ áp thêm 12,5% thuế theo Mục 301; Brent trên 100 USD/thùng do eo Hormuz bị phong tỏa.",
+     "h": -1,
+     "ng": "Shinhan 18/09"
+    },
+    {
+     "t": "113 dự án nhà ở thương mại được cấp phép Q2/2026 (+95% so với quý trước); chương trình 1 triệu căn nhà ở xã hội.",
+     "h": 1,
+     "ng": "MAS 14/09 · KBSV 25/02"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "t": "Thuế chống bán phá giá chính thức với kính nổi Indonesia, Malaysia (QĐ 1400/QĐ-BCT, 12/06/2026).",
+     "h": 1,
+     "ng": "Tạp chí Công Thương"
+    },
+    {
+     "t": "KCN phía Bắc đón FDI điện tử, bán dẫn (Goertek, Luxshare, Amkor mở rộng); giá thuê thấp hơn phía Nam ~22%.",
+     "h": 1,
+     "ng": "KBSV 25/02"
+    },
+    {
+     "t": "Cạnh tranh KCN tăng mạnh vì nhiều chủ đầu tư mới; ban lãnh đạo lập kế hoạch LNTT 2026 −17%.",
+     "h": -1,
+     "ng": "BSC 01/06 (ĐHĐCĐ 2026)"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "t": "~2.180 ha thương phẩm còn lại: 707 ha ở 11 KCN đang vận hành, 1.473 ha ở 6 KCN mới.",
+     "h": 1,
+     "ng": "BSC 01/06"
+    },
+    {
+     "t": "Cổ đông thiểu số 30% LNST 9T/2026 (2025: 12%): tăng trưởng nằm ở KCN góp vốn 51%.",
+     "h": -1,
+     "ng": "BCTC VNDirect · KQKD Q3 công bố"
+    },
+    {
+     "t": "P/E 4 quý (gồm Q3 công bố) 11,1 lần (giá 23/10) so với trung vị 13,9 của 8 doanh nghiệp KCN niêm yết.",
+     "h": 0,
+     "ng": "BCTC VNDirect"
+    }
+   ]
+  }
+ ],
+ "ctck": [
+  {
+   "ctck": "MAS",
+   "ngay": "2026-09-14",
+   "kn": "MUA",
+   "tp": 51200,
+   "ln26": 1803,
+   "ln27": null,
+   "pp": "P/E (≈ 12,7 lần EPS 2026F)",
+   "y": "KCN dẫn dắt: bàn giao 2026 nâng lên 150 ha, doanh thu KCN 2026F +51%; VLXD +19% nhờ nguồn cung nhà ở và thuế chống bán phá giá kính.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/bao_cao_ngan_tong_cong_ty_viglacera_vgc_vn_mua_khu_cong_nghiep_dan_dat_vat_lieu_xay_dung_cai_thien.pdf"
+  },
+  {
+   "ctck": "SHS",
+   "ngay": "2026-07-30",
+   "kn": "TĂNG TỶ TRỌNG",
+   "tp": 52000,
+   "ln26": 2201,
+   "ln27": 2605,
+   "pp": "P/E 10,6 lần LN 2026F",
+   "y": "Lạc quan nhất: LNST 2026F 2.367 tỷ nhưng chỉ tính 165 tỷ cho cổ đông thiểu số (6T/2026 thực tế đã 374 tỷ).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/vgc_cap_nhat_kqkd_quy_2_2026.pdf"
+  },
+  {
+   "ctck": "BSC",
+   "ngay": "2026-06-01",
+   "kn": "MUA",
+   "tp": 51800,
+   "ln26": 1441,
+   "ln27": 1604,
+   "pp": "Tổng các phần: RNAV KCN, DCF VLXD (WACC 11,2%)",
+   "y": "Thận trọng về lợi nhuận (2026F +3%) vì KCN ghi nhận dồn về H2; định giá KCN 11,2 nghìn tỷ, VLXD 8,8 nghìn tỷ (phần VGC).",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/Cap_nhat_KQKD_Q12026_va_HC_2026.pdf"
+  },
+  {
+   "ctck": "BVSC",
+   "ngay": "2026-03-26",
+   "kn": "MUA",
+   "tp": 57812,
+   "ln26": 1699,
+   "ln27": null,
+   "pp": "NAV 50% + P/B 2,42 lần 50%",
+   "y": "Đặt cược vào mảng kính: biên gộp từ −5% lên 19% năm 2026 nhờ thuế chống bán phá giá; bàn giao 134 ha.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/Hoat_ong_kinh_doanh_mang_kinh_ang_buoc_vao_chu_ky_phuc_hoi_voi_nhung_tin_hieu_lac_quan.pdf"
+  },
+  {
+   "ctck": "KBSV",
+   "ngay": "2026-02-25",
+   "kn": "MUA",
+   "tp": 65700,
+   "ln26": 1622,
+   "ln27": 1907,
+   "pp": "Tổng các phần: DCF VLXD, RNAV KCN, khu dân cư",
+   "y": "Báo cáo lần đầu: bàn giao 130/142 ha (2026/2027), biên VLXD 17%; VLXD 11,9 nghìn tỷ, KCN 17,0 nghìn tỷ.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/tong_cong_ty_viglacera_bao_cao_lan_dau.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. Ngày, giá mục tiêu theo bản PDF; báo cáo ra trước 28/07/2026 (KBSV, BVSC, BSC) được trang trừ cổ tức 2.200 đ/cp. LN dự phóng là LN cổ đông công ty mẹ.",
+ "nguon": [
+  {
+   "ten": "MAS — Khu công nghiệp dẫn dắt, vật liệu xây dựng cải thiện",
+   "ngay": "14/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/bao_cao_ngan_tong_cong_ty_viglacera_vgc_vn_mua_khu_cong_nghiep_dan_dat_vat_lieu_xay_dung_cai_thien.pdf"
+  },
+  {
+   "ten": "SHS — Cập nhật KQKD quý 2/2026",
+   "ngay": "30/07/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/vgc_cap_nhat_kqkd_quy_2_2026.pdf"
+  },
+  {
+   "ten": "BSC — Cập nhật KQKD Q1/2026 và ĐHĐCĐ 2026",
+   "ngay": "01/06/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/Cap_nhat_KQKD_Q12026_va_HC_2026.pdf"
+  },
+  {
+   "ten": "BVSC — Mảng kính bước vào chu kỳ phục hồi",
+   "ngay": "26/03/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/Hoat_ong_kinh_doanh_mang_kinh_ang_buoc_vao_chu_ky_phuc_hoi_voi_nhung_tin_hieu_lac_quan.pdf"
+  },
+  {
+   "ten": "KBSV — Báo cáo lần đầu: Chu kỳ mới",
+   "ngay": "25/02/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/VGC/tong_cong_ty_viglacera_bao_cao_lan_dau.pdf"
+  },
+  {
+   "ten": "Shinhan — báo cáo IDC: FDI 8T/2026, thuế Mục 301",
+   "ngay": "18/09/2026",
+   "link": "https://cdn.simplize.vn/simplizevn/report/IDC/idc_mua_gia_mt_vnd_44_100_37_khu_cong_nghiep_xanh_don_song_fdi.pdf"
+  },
+  {
+   "ten": "Mekong ASEAN — chốt ngày trả cổ tức 22% năm 2025 (GDKHQ 28/07/2026)",
+   "ngay": "07/2026",
+   "link": "https://mekongasean.vn/viglacera-chot-ngay-tra-co-tuc-22-nam-2025-57374.html"
+  },
+  {
+   "ten": "Doanh nhân — chi gần 1.000 tỷ trả cổ tức 22%",
+   "ngay": "07/2026",
+   "link": "https://doanhnhan.baophapluat.vn/viglacera-vgc-chi-gan-1-000-ty-dong-tra-co-tuc-ty-le-22-mo-rong-quy-dat-khu-cong-nghiep-xanh.html"
+  },
+  {
+   "ten": "Mekong ASEAN — cổ tức 2024: 22% tiền mặt (ĐKCC 12/11/2025)",
+   "ngay": "10/2025",
+   "link": "https://mekongasean.vn/viglacera-chot-nga-y-chi-ga-n-1000-ty-do-ng-tra-co-tuc-ba-ng-tie-n-mat-48029.html"
+  },
+  {
+   "ten": "Thời báo Tài chính — ĐHĐCĐ 2026: kế hoạch thận trọng, lùi thoái vốn sang 2026–2030",
+   "ngay": "04/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/viglacera-dat-ke-hoach-loi-nhuan-than-trong-bo-xay-dung-lui-thoai-von-sang-giai-doan-2026-2030-196385.html"
+  },
+  {
+   "ten": "Doanh nhân — ĐHĐCĐ 2026: chuẩn bị khởi công 900 ha KCN",
+   "ngay": "04/2026",
+   "link": "https://doanhnhan.baophapluat.vn/dhdcd-viglacera-vgc-2026-de-xuat-lui-thoi-han-thoai-von-nha-nuoc-chuan-bi-khoi-cong-900-ha-khu-cong-nghiep.html"
+  },
+  {
+   "ten": "CafeF — lần đầu lãi hơn 1.000 tỷ trong một quý (Q2/2026)",
+   "ngay": "29/07/2026",
+   "link": "https://cafef.vn/mot-doanh-nghiep-ho-gelex-lan-dau-lai-hon-1000-ty-dong-quy-co-phieu-van-o-vung-day-1-nam-188260729134457334.chn"
+  },
+  {
+   "ten": "Stockbiz — Q2/2026: KCN 2.490 tỷ, gạch ốp lát 1.798 tỷ doanh thu 6T",
+   "ngay": "07/2026",
+   "link": "https://stockbiz.vn/tin-tuc/vgc-viglacera-lan-dau-lai-hon-1000-ty-dong-trong-mot-quy/41175447"
+  },
+  {
+   "ten": "Thương hiệu & Công luận — 6T/2026 LNTT 1.452,5 tỷ, kế hoạch quý 3",
+   "ngay": "08/2026",
+   "link": "https://thuonghieucongluan.com.vn/vgc-ghi-nhan-1-452-5-ty-dong-loi-nhuan-truoc-thue-sau-6-thang-a328836.html"
+  },
+  {
+   "ten": "elibook — Vietcap: bàn giao Q2/2026 ~55 ha",
+   "ngay": "05/09/2026",
+   "link": "https://elibook.vn/2026/09/05/vgc-quy-ky-luc-nghin-ty-dong-va-cuoc-lon-vao-chu-ky-khu-cong-nghiep-moi-2026-2030/"
+  },
+  {
+   "ten": "elibook — ký 111 ha trong 4T/2026 (Sông Công 37 ha, Số 1 30 ha)",
+   "ngay": "27/05/2026",
+   "link": "https://elibook.vn/2026/05/27/vgc-ban-lanh-dao-cho-biet-doanh-so-cho-thue-dat-trong-4t-2026-dat-muc-an-tuong-111-ha-ky-vong-ca-nam-150-ha/"
+  },
+  {
+   "ten": "Doanh nhân — Q3/2026: lãi gấp 5,2 lần, kính và gương chuyển từ lỗ sang lãi",
+   "ngay": "24/10/2026",
+   "link": "https://doanhnhan.baophapluat.vn/viglacera-vgc-lai-quy-iii-tang-gap-5-2-lan-mang-kinh-va-guong-chuyen-tu-lo-sang-lai.html"
+  },
+  {
+   "ten": "Dân Việt — BCTC bất động sản Q3/2026: Viglacera LNTT 9T 2.281 tỷ",
+   "ngay": "24/10/2026",
+   "link": "https://danviet.vn/bao-cao-tai-chinh-bat-dong-san-quy-3-2026-ngay-24-10-viglacera-lai-2281-ti-dong-nha-da-nang-giam-88-d1469563.html"
+  },
+  {
+   "ten": "Doanh nghiệp & Kinh tế xanh — 9T LNTT gần 2.300 tỷ, KCN 3.271 tỷ doanh thu",
+   "ngay": "25/10/2026",
+   "link": "https://doanhnghiepkinhtexanh.vn/viglacera-vgc-bao-lai-truoc-thue-gan-2300-ty-dong-sau-9-thang-vuot-25-ke-hoach-nam-a55049.html"
+  },
+  {
+   "ten": "Kinh tế & Chứng khoán — Q3 lãi gộp 1.209 tỷ, kính lãi gộp 186 tỷ 9T",
+   "ngay": "25/10/2026",
+   "link": "https://kinhtechungkhoan.vn/loi-nhuan-quy-iii-gap-hon-5-lan-viglacera-vgc-vuot-ke-hoach-nam-sau-9-thang"
+  },
+  {
+   "ten": "Znews — Viglacera lãi đột biến (lãi gộp KCN 9T)",
+   "ngay": "25/10/2026",
+   "link": "https://znews.vn/viglacera-lai-dot-bien-post1691719.html"
+  },
+  {
+   "ten": "Người Quan Sát — Q3 tăng bằng lần, 9T hơn 2.200 tỷ",
+   "ngay": "25/10/2026",
+   "link": "https://nguoiquansat.vn/loi-nhuan-quy-iii-tang-bang-lan-viglacera-vgc-thu-ve-hon-2-200-ty-dong-sau-9-thang-323877.html"
+  },
+  {
+   "ten": "Dân Việt — dòng tiền, tồn kho 30/9/2026",
+   "ngay": "25/10/2026",
+   "link": "https://danviet.vn/viglacera-lai-nhung-dong-tien-va-hang-ton-kho-he-lo-dieu-gi-d1470017.html"
+  },
+  {
+   "ten": "elibook — LN cổ đông 9T 1.242 tỷ, Q3 464 tỷ (75% LNST)",
+   "ngay": "26/10/2026",
+   "link": "https://elibook.vn/2026/10/26/vgc-chin-thang-da-vuot-du-phong-ca-nam-nhung-song-gelex-moi-co-mot-nguoi-len-tau/"
+  },
+  {
+   "ten": "Tạp chí Công Thương — áp thuế chống bán phá giá chính thức kính nổi",
+   "ngay": "06/2026",
+   "link": "https://tapchicongthuong.vn/chinh-thuc-ap-thue-chong-ban-pha-gia-voi-kinh-noi-khong-mau-indonesia-va-malaysia-528179.htm"
+  },
+  {
+   "ten": "Trung tâm WTO — QĐ 1400/QĐ-BCT",
+   "ngay": "06/2026",
+   "link": "https://trungtamwto.vn/chuyen-de/32708-bct-ap-dung-thue-cbpg-chinh-thuc-doi-voi-mot-so-san-pham-kinh-noi-khong-mau-co-xuat-xu-tu-indonesia-va-malaysia"
+  }
+ ]
+}

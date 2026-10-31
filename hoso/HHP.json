@@ -1,0 +1,1358 @@
+{
+ "v": 2,
+ "ma": "HHP",
+ "ten": "Công ty Cổ phần HHP Global (Giấy Hoàng Hà Hải Phòng)",
+ "nganh": "Giấy bao bì",
+ "ky": "BCTC Q2/2026 · chưa có KQKD Q3/2026 (24/10)",
+ "cap_nhat": "2026-10-24",
+ "lan_sau": "sau BCTC Q3/2026",
+ "cp_trieu": 92.18,
+ "cp_ng": "Vốn điều lệ 921,79 tỷ (9/2026) sau cổ tức cổ phiếu 6,5% (ĐKCC 19/08/2026, ~5,63 triệu cp mới); BCTC Q2/2026 còn 865,5 tỷ. Giá điều chỉnh lệch 6,5% từ 8/2026 là đợt này; không có cổ tức tiền.",
+ "co_tuc": [],
+ "chia": [
+  [
+   "2026-08-18",
+   1.065
+  ]
+ ],
+ "tieu_de": {
+  "t": "Giá đã vượt cả kịch bản tốt; Phú Yên sẽ gánh lãi vay trước khi mang về lãi",
+  "dk": "up_duoi:-28",
+  "khac": "Phú Yên sẽ gánh lãi vay và khấu hao trước khi mang về lãi cho cổ đông HHP"
+ },
+ "dong_mo": "Nhà máy Hải Phòng nâng lãi gộp lên 200 tỷ năm 2025 nhưng lãi vay ăn 64% LN hoạt động 6T/2026. Nhà máy Phú Yên (51%) rời dở dang sẽ đưa thêm ~50 tỷ lãi vay và ~55 tỷ khấu hao/năm vào lãi lỗ: LN cổ đông 2026E–2027E cơ sở ~51 tỷ/năm, ROE ~5%. P/B 1,0 × vốn chủ 30/6/2027E: {gt} ({up}).",
+ "luan_diem": [
+  {
+   "so": "1.091 tỷ",
+   "nhan": "dở dang ngày 30/6/2026 (chủ yếu Phú Yên)",
+   "tieu": "Phú Yên sẽ gánh lãi vay trước khi mang về lãi",
+   "t": "Nhà máy 100 nghìn tấn ở Phú Yên lên kế hoạch chạy thử có tải từ 1/2026 nhưng 30/6 vẫn nằm trong dở dang 1.091 tỷ — lãi vay của nó còn được vốn hóa. Tiền lệ Hải Phòng (cùng cỡ): vào vận hành 2/2025, lãi vay từ 7,5 lên 26,4–28,7 tỷ/quý. Cơ sở: Phú Yên bán 55 nghìn tấn năm 2027, sau khấu hao ~55 và lãi vay ~50 tỷ vẫn lỗ 11 tỷ trước thuế; HHP chỉ hưởng 51%.",
+   "ng": "BCTC VNDirect · HHP · FPTS 10/09/2025 · mô hình"
+  },
+  {
+   "so": "5,1%",
+   "nhan": "ROE 2025 (2020: 10,3%)",
+   "tieu": "Vốn tăng nhanh hơn lợi nhuận",
+   "t": "Vốn điều lệ từ 180 tỷ (2020) lên 921,79 tỷ (9/2026) qua chào bán, ESOP và cổ tức cổ phiếu; vốn chủ cổ đông gấp 4,6 lần nhưng LN 2025 chỉ gấp 2,3 lần 2020 (21,3 → 48,0 tỷ). Cổ tức 2025 trả 6,5% bằng cổ phiếu (GDKHQ 18/8/2026), không có tiền mặt. Kiểm toán 2025 cắt LNST từ 56,1 xuống 52,0 tỷ.",
+   "ng": "BCTC VNDirect · Vietstock · VietnamFinance"
+  },
+  {
+   "so": "1,6 lần",
+   "nhan": "LN hoạt động / lãi vay 6T/2026",
+   "tieu": "Biên mỏng trên đòn bẩy dày",
+   "t": "6T/2026 lãi gộp 123 tỷ (biên 7,7%), trừ bán hàng và QLDN còn 104 tỷ; lãi vay 66,6 tỷ. Nợ vay 2.332 tỷ = 2,3 lần vốn chủ cổ đông, 44% ngắn hạn; tồn kho 604 tỷ, gấp 2,1 lần cùng kỳ. Mỗi 1 điểm % biên gộp ≈ 32 tỷ LNTT/năm (2025: 71 tỷ). Thêm nhà ở xã hội Đông Hải 1.158,6 tỷ (vốn chủ liên danh 316 tỷ).",
+   "ng": "BCTC Q2/2026 · QĐ 1071/QĐ-UBND · mô hình"
+  },
+  {
+   "so": "{gt_so}",
+   "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+   "tieu": "Giá đã vượt cả kịch bản tốt",
+   "dk": "up_duoi:-28",
+   "t": "P/B 1,59 lần (23/10) với ROE ~5%: trung vị từ 2018 là 0,99, 8 mã cùng ngành 0,84; MZG (giấy bao bì miền Bắc, nợ vay 2,45 lần vốn chủ, ROE 10,5%) 1,19 lần. Mặt bằng ngành ứng với ROE của HHP chỉ ~0,78 lần. P/B 1,0 × vốn chủ 30/6/2027E: {gt} ({up}). Tốt (Phú Yên 75%, biên 8,6%, P/B 1,3): 15,6; xấu 9,1 nghìn đ.",
+   "ng": "mô hình · giá, BCTC VNDirect · bảng cùng ngành",
+   "khac": {
+    "so": "{gt_so}",
+    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
+    "tieu": "P/B 1,0 × vốn chủ 30/6/2027E: {up_so}",
+    "t": "ROE 2026E–2027E cơ sở ~5% không đỡ được P/B cao hơn trung vị lịch sử (0,99); 8 mã cùng ngành trung vị 0,84. Xấu 9,1 (P/B 0,85, Phú Yên 30%, biên 6,6%), tốt 15,6 nghìn đ (P/B 1,3, Phú Yên 75%, biên 8,6%)."
+   }
+  }
+ ],
+ "tom_tat": {
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "ln": [
+   48,
+   51,
+   51
+  ],
+  "ln_truoc": 19.6,
+  "eps": [
+   521,
+   549,
+   549
+  ],
+  "bv": [
+   10530,
+   11026,
+   11575
+  ],
+  "co_tuc_nam": 0,
+  "them": [
+   {
+    "ten": "Doanh thu thuần (tỷ)",
+    "v": [
+     3124,
+     3259,
+     3772
+    ]
+   },
+   {
+    "ten": "ROE",
+    "v": [
+     5.1,
+     5.1,
+     4.9
+    ],
+    "d": 1,
+    "pt": 1
+   }
+  ],
+  "ng": "EPS, BVPS trên 92,18 triệu cp (sau cổ tức cổ phiếu 6,5%, GDKHQ 18/08/2026). LNST 2025 hợp nhất 52,0 tỷ (kiểm toán), cổ đông 48,0 tỷ. Không có cổ tức tiền."
+ },
+ "ln_mang": {
+  "tieu": "LN trước thuế theo nguồn",
+  "dv": "tỷ đồng",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "tong_ten": "LN trước thuế",
+  "ss": [
+   {
+    "ten": "HĐKD cốt lõi hiện hữu",
+    "mau": "c1",
+    "v": [
+     166,
+     204,
+     207
+    ]
+   },
+   {
+    "ten": "Phú Yên (100%)",
+    "mau": "c2",
+    "v": [
+     0,
+     -13,
+     -11
+    ]
+   },
+   {
+    "ten": "Lãi vay ròng, khác",
+    "mau": "c3",
+    "v": [
+     -95,
+     -126,
+     -130
+    ]
+   }
+  ],
+  "ng": "HĐKD cốt lõi = LN gộp − bán hàng − QLDN (Hải Phòng + thương mại); lãi vay ròng, khác = doanh thu tài chính − chi phí tài chính + liên kết + khác. Phú Yên: LNTT của nhà máy (HHP sở hữu 51%). 2026E–2027E: mô hình cơ sở."
+ },
+ "so_sanh": {
+  "tieu": "P/B so với 8 mã cùng ngành vốn hóa lớn nhất",
+  "phu": "giá hôm nay, vốn chủ cổ đông 30/6/2026, 92,18 triệu cp",
+  "chi_so": "P/B",
+  "chi_so_kv": "P/B (giá 23/10)",
+  "nhom": "8 mã cùng ngành vốn hóa lớn nhất",
+  "kv": [
+   [
+    "VIF",
+    1.02
+   ],
+   [
+    "DHC",
+    1.57
+   ],
+   [
+    "MZG",
+    1.19
+   ],
+   [
+    "HAP",
+    0.65
+   ],
+   [
+    "TEG",
+    0.54
+   ],
+   [
+    "CAP",
+    2.51
+   ],
+   [
+    "VID",
+    0.36
+   ],
+   [
+    "BKG",
+    0.17
+   ]
+  ],
+  "tv": 0.84,
+  "moi_cp": 10818,
+  "max": 3,
+  "y": "ROE 4 quý của HHP 5,1%, nhóm trung vị 5,9%. Mặt bằng 8 mã: mỗi 1 điểm % ROE ≈ 0,05 lần P/B — ở ROE của HHP là ~0,78 lần. Giấy bao bì: DHC (ROE 23,8%) 1,57; MZG (10,5%) 1,19.",
+  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC Q2/2026, giá 23/10/2026; HHP: vốn chủ cổ đông 30/6/2026 trên 92,18 triệu cp"
+ },
+ "mo_hinh": {
+  "tieu": "Mô hình: Hải Phòng + thương mại, cộng nhà máy Phú Yên",
+  "cot": [
+   "2025A",
+   "2026E",
+   "2027E"
+  ],
+  "dong": [
+   {
+    "nhom": "Hiện hữu: Hải Phòng + thương mại (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu",
+    "v": [
+     3124,
+     3183,
+     3250
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Biên lợi nhuận gộp (%)",
+    "v": [
+     6.4,
+     7.6,
+     7.6
+    ],
+    "d": 1
+   },
+   {
+    "ten": "LN gộp − bán hàng − QLDN",
+    "v": [
+     166,
+     204,
+     207
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí tài chính (lãi vay)",
+    "v": [
+     110,
+     137,
+     140
+    ]
+   },
+   {
+    "nhom": "Phú Yên: 100 nghìn tấn/năm, sở hữu 51%"
+   },
+   {
+    "ten": "Sản lượng bán (nghìn tấn)",
+    "v": [
+     0,
+     8,
+     55
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN gộp sau khấu hao (tỷ)",
+    "v": [
+     0,
+     1,
+     50
+    ]
+   },
+   {
+    "ten": "LN trước thuế nhà máy (tỷ)",
+    "v": [
+     0,
+     -13,
+     -11
+    ]
+   },
+   {
+    "nhom": "Hợp nhất (tỷ đồng)"
+   },
+   {
+    "ten": "Doanh thu thuần",
+    "v": [
+     3124,
+     3259,
+     3772
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "Chi phí lãi vay",
+    "v": [
+     103,
+     149,
+     190
+    ]
+   },
+   {
+    "ten": "Lợi nhuận trước thuế",
+    "v": [
+     71,
+     66,
+     66
+    ],
+    "tang": 1
+   },
+   {
+    "ten": "LN cổ đông",
+    "v": [
+     48,
+     51,
+     51
+    ],
+    "dam": 1,
+    "tang": 1
+   },
+   {
+    "ten": "EPS (đ)",
+    "v": [
+     521,
+     549,
+     549
+    ],
+    "eps": 1
+   },
+   {
+    "ten": "BVPS (đ)",
+    "v": [
+     10530,
+     11026,
+     11575
+    ],
+    "ps": 1
+   },
+   {
+    "ten": "ROE (%)",
+    "v": [
+     5.1,
+     5.1,
+     4.9
+    ],
+    "d": 1
+   }
+  ],
+  "ghi": "2026E = 6 tháng thực tế + Q3, Q4 ước tính; Hà Nam thoái vốn 8/2025. Phú Yên hạch toán vận hành từ Q4/2026: sản lượng × lãi gộp tiền mặt/tấn − khấu hao 55 tỷ/năm, trừ lãi vay 50 tỷ/năm. Thuế hiệu dụng 26% (2025: 27%). EPS, BVPS trên 92,18 triệu cp."
+ },
+ "cau_ln": {
+  "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
+  "dau": [
+   "2026E",
+   51
+  ],
+  "cuoi": [
+   "2027E",
+   51
+  ],
+  "buoc": [
+   [
+    "Lãi gộp hiện hữu",
+    3
+   ],
+   [
+    "Chi phí, lãi vay",
+    -2
+   ],
+   [
+    "Phú Yên (phần 51%)",
+    1
+   ],
+   [
+    "Thuế, CĐTS, khác",
+    -2
+   ]
+  ],
+  "y": "LN đi ngang: biên hiện hữu giữ 7,6%, lãi vay nhích lên; phần lỗ Phú Yên của HHP 6,4 tỷ (Q4/2026) rồi 5,6 tỷ (cả 2027) — mỗi 10 nghìn tấn bán thêm ≈ 8 tỷ LN cổ đông.",
+  "ng": "mô hình"
+ },
+ "gia_dinh": [
+  {
+   "ten": "Doanh thu hiện hữu Q3 · Q4/2026 (tỷ/quý)",
+   "v": [
+    "740",
+    "790",
+    "840"
+   ],
+   "ly_do": "Q1/2026: 839; Q2: 765 (−20% so với cùng kỳ khi thương mại co lại); Q3/2025: 706; Q4/2025: 803"
+  },
+  {
+   "ten": "Biên gộp hiện hữu H2/2026 · 2027 (%)",
+   "v": [
+    "6,8 · 6,6",
+    "7,6 · 7,6",
+    "8,4 · 8,6"
+   ],
+   "ly_do": "2024: 3,1%; 2025: 6,4%; 6T/2026: 7,7% (Q2 8,7%, cao nhất từ 2022). OCC ~85% nguyên liệu (FPTS)"
+  },
+  {
+   "ten": "Doanh thu hiện hữu 2027 (tỷ)",
+   "v": [
+    "3.000",
+    "3.250",
+    "3.500"
+   ],
+   "ly_do": "2026E cơ sở 3.183; thương mại (~60% doanh thu, biên ~2%) dùng để mở khách cho nhà máy"
+  },
+  {
+   "ten": "Lãi vay hiện hữu 2027 (tỷ)",
+   "v": [
+    "150",
+    "140",
+    "130"
+   ],
+   "ly_do": "6T/2026: 66,6 (Q2 35,1); nợ vay 2.332 tỷ; nhà ở xã hội cần vốn"
+  },
+  {
+   "ten": "Phú Yên bán Q4/2026 · 2027 (nghìn tấn)",
+   "v": [
+    "3 · 30",
+    "8 · 55",
+    "15 · 75"
+   ],
+   "ly_do": "Công suất 100. 30/6/2026 còn 1.091 tỷ dở dang. FPTS (9/2025) giả định 80% năm đầu; thị trường miền Trung, Nam HHP chưa có khách"
+  },
+  {
+   "ten": "Phú Yên lãi gộp tiền mặt (triệu đ/tấn)",
+   "v": [
+    "1,4",
+    "1,9",
+    "2,3"
+   ],
+   "ly_do": "Hải Phòng 1H2025: biên gộp sản xuất 12,3% (~1,3 triệu đ/tấn sau khấu hao, + ~0,6 khấu hao/tấn); FPTS 2026F 14–15%. Giá bán 9.500–9.900 đ/kg"
+  },
+  {
+   "ten": "Phú Yên khấu hao · lãi vay (tỷ/năm)",
+   "v": [
+    "55 · 50",
+    "55 · 50",
+    "55 · 50"
+   ],
+   "ly_do": "Tổng mức ~1.200 tỷ (FPTS), ~20 năm; vay ~600 tỷ × 8,3%. Hải Phòng rời dở dang: lãi vay 7,5 → 28,7 tỷ/quý"
+  },
+  {
+   "ten": "P/B trên vốn chủ 30/6/2027E (lần)",
+   "v": [
+    "0,85",
+    "1,00",
+    "1,30"
+   ],
+   "ly_do": "Từ 2018: 25% 0,86 · trung vị 0,99 · 90% 1,31; 8 mã cùng ngành 0,84. ROE 2027E: −2,6 · 4,9 · 11,5%"
+  }
+ ],
+ "kich_ban": [
+  {
+   "ten": "Xấu",
+   "ln26": 29,
+   "ln27": -25,
+   "gia": 9.1,
+   "mo_ta": "Biên gộp về 6,6% (≈ 2025), doanh thu 3.000 tỷ, lãi vay 150 tỷ; Phú Yên 30 nghìn tấn, lãi gộp 1,4 triệu đ/tấn: lỗ 69 tỷ; P/B 0,85"
+  },
+  {
+   "ten": "Cơ sở",
+   "ln26": 51,
+   "ln27": 51,
+   "gia": 11.3,
+   "mo_ta": "Biên gộp 7,6% như 6T/2026, doanh thu 3.250 tỷ, lãi vay 140 tỷ; Phú Yên 55 nghìn tấn (lỗ 11 tỷ trước thuế); ROE ~4,9%; P/B 1,0"
+  },
+  {
+   "ten": "Tốt",
+   "ln26": 76,
+   "ln27": 127,
+   "gia": 15.6,
+   "mo_ta": "Biên gộp 8,6% (≈ Q2/2026), doanh thu 3.500 tỷ; Phú Yên 75 nghìn tấn, 2,3 triệu đ/tấn: lãi 53 tỷ; ROE ~11,5%; P/B 1,3"
+  }
+ ],
+ "dinh_gia": {
+  "tieu": "Định giá theo P/B",
+  "phu": "P/B × vốn chủ cổ đông 30/6/2027E",
+  "ck": 0,
+  "cp": 92.18,
+  "phan": [
+   {
+    "ten": "Vốn chủ cổ đông",
+    "mau": "c1",
+    "sh": 1,
+    "x": [
+     982,
+     1042,
+     1105
+    ],
+    "boi": [
+     0.85,
+     1.0,
+     1.3
+    ],
+    "x_ten": "Vốn chủ cổ đông 30/6/2027E",
+    "boi_ten": "P/B",
+    "boi_d": 2,
+    "gt": [
+     835,
+     1042,
+     1436
+    ]
+   }
+  ],
+  "von": [
+   835,
+   1042,
+   1436
+  ],
+  "gia": [
+   9.1,
+   11.3,
+   15.6
+  ]
+ },
+ "nhay": [
+  [
+   "Biên gộp hiện hữu 2027 ±1 điểm %",
+   24,
+   1.4
+  ],
+  [
+   "P/B ±0,1 lần",
+   null,
+   1.1
+  ],
+  [
+   "Lãi suất vay 2027 ±1 điểm %",
+   18,
+   1.0
+  ],
+  [
+   "Doanh thu hiện hữu 2027 ±10%",
+   18,
+   1.0
+  ],
+  [
+   "Phú Yên bán 2027 ±10 nghìn tấn",
+   8,
+   0.5
+  ]
+ ],
+ "pe_ls": {
+  "loai": "P/B",
+  "t": [
+   "2018-08",
+   "2018-09",
+   "2018-10",
+   "2018-11",
+   "2018-12",
+   "2019-01",
+   "2019-02",
+   "2019-03",
+   "2019-04",
+   "2019-05",
+   "2019-06",
+   "2019-07",
+   "2019-08",
+   "2019-09",
+   "2019-10",
+   "2019-11",
+   "2019-12",
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12",
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "v": [
+   0.97,
+   1.08,
+   1.41,
+   1.29,
+   1.29,
+   1.31,
+   1.29,
+   1.3,
+   1.36,
+   1.41,
+   1.4,
+   1.05,
+   1.04,
+   1.06,
+   1.13,
+   1.1,
+   1.12,
+   1.16,
+   1.14,
+   1.18,
+   1.23,
+   1.04,
+   0.97,
+   0.94,
+   0.96,
+   0.98,
+   1.02,
+   1.16,
+   1.26,
+   1.09,
+   1.18,
+   1.52,
+   1.0,
+   0.87,
+   0.91,
+   0.82,
+   0.99,
+   1.03,
+   1.23,
+   1.18,
+   1.08,
+   0.95,
+   1.02,
+   1.1,
+   0.94,
+   0.86,
+   0.79,
+   0.78,
+   0.77,
+   0.74,
+   0.73,
+   0.69,
+   0.63,
+   0.71,
+   0.7,
+   0.68,
+   0.98,
+   0.95,
+   0.93,
+   1.01,
+   1.0,
+   0.96,
+   0.83,
+   0.9,
+   0.91,
+   0.92,
+   0.97,
+   0.98,
+   0.86,
+   0.84,
+   0.83,
+   0.89,
+   0.9,
+   0.88,
+   0.87,
+   0.8,
+   0.78,
+   0.77,
+   0.81,
+   0.83,
+   0.82,
+   0.8,
+   0.85,
+   0.9,
+   0.82,
+   0.86,
+   1.02,
+   1.08,
+   1.0,
+   1.17,
+   1.31,
+   1.15,
+   1.18,
+   1.3,
+   1.28,
+   1.34,
+   1.5,
+   1.63,
+   1.59
+  ],
+  "p10": 0.78,
+  "p25": 0.86,
+  "tv": 0.99,
+  "thap": [
+   "2022-12",
+   0.63
+  ],
+  "nay": [
+   "2026-10",
+   1.59
+  ],
+  "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. Tháng 1–4/2024 cộng 6,5% cổ phiếu thưởng (GDKHQ 17/01/2024) chưa vào vốn điều lệ quý; từ 8/2026 dùng 92,18 triệu cp.",
+  "dung": "P/B 0,85 · 1,0 · 1,3 ≈ 25% · trung vị · 90% lịch sử từ 2018 — giai đoạn ROE 2–12%. Giá 23/10 ~1,6 lần, quanh đỉnh 1,63 (09/2026); P/E 4 quý ~31,8 lần (trung vị 16,6). Giá trị cơ sở tương đương P/E 20,6 lần LN 2027E."
+ },
+ "theo_doi": [
+  {
+   "quy": "Q3/2026",
+   "fd": "2026-09-30",
+   "dt": 790,
+   "ln": [
+    4.5,
+    12.8,
+    21.3
+   ],
+   "ck": 9.7
+  },
+  {
+   "quy": "Q4/2026",
+   "fd": "2026-12-31",
+   "dt": 866,
+   "ln": [
+    -7.1,
+    6.4,
+    23.5
+   ],
+   "ck": 8.7
+  },
+  {
+   "quy": "Cả năm 2026",
+   "ln": [
+    29,
+    51,
+    76
+   ]
+  }
+ ],
+ "su_kien": [
+  {
+   "khi": "Cuối 10/2026",
+   "loai": "hai",
+   "tieu": "KQKD Q3/2026",
+   "ct": "Cơ sở: doanh thu ~790 tỷ, biên gộp 7,6%, lãi vay 35 tỷ → LN cổ đông 12,8 tỷ (+32% so với 9,7 tỷ cùng kỳ). Theo dõi dở dang: Phú Yên rời sổ thì lãi vay nhảy bậc.",
+   "tac": [
+    "≥ 18 tỷ",
+    "nghiêng về kịch bản tốt; dưới 8 tỷ: kịch bản xấu"
+   ],
+   "theo_doi": "biên gộp, lãi vay, dở dang"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Phú Yên rời dở dang: lãi vay, khấu hao vào lãi lỗ",
+   "ct": "~50 tỷ lãi vay và ~55 tỷ khấu hao/năm bắt đầu tính vào chi phí khi sản lượng còn thấp. Cơ sở: Q4/2026 lỗ 13 tỷ, 2027 lỗ 11 tỷ trước thuế.",
+   "tac": [
+    "−35,0 tỷ",
+    "LN cổ đông 2027E phần Phú Yên nếu chỉ bán 30 nghìn tấn (kịch bản xấu)"
+   ],
+   "theo_doi": "sản lượng Phú Yên mỗi quý"
+  },
+  {
+   "khi": "2027",
+   "loai": "len",
+   "tieu": "Phú Yên lấp đầy nhanh như Hải Phòng",
+   "ct": "Hải Phòng đạt 90–95% công suất ngay năm đầu nhờ mạng lưới thương mại miền Bắc (FPTS). Phú Yên 75% năm 2027, 2,3 triệu đ/tấn: +21,7 tỷ LN cho cổ đông HHP.",
+   "tac": [
+    "±0,5 nghìn đ/cp",
+    "mỗi ±10 nghìn tấn Phú Yên bán năm 2027"
+   ],
+   "theo_doi": "khách hàng miền Trung, Nam"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Giá OCC và giá giấy bao bì",
+   "ct": "Giấy thu hồi OCC ~85% nguyên liệu; 1H2025 OCC +12% kéo biên gộp sản xuất xuống 4,7 điểm (FPTS). Biên gộp hợp nhất: 2024 3,1%, 6T/2026 7,7%.",
+   "tac": [
+    "±1,4 nghìn đ/cp",
+    "mỗi ±1 điểm % biên gộp 2027 (≈ ±32 tỷ LNTT)"
+   ],
+   "theo_doi": "giá OCC, giá giấy miền Bắc"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi suất và đáo hạn nợ ngắn hạn",
+   "ct": "Nợ vay 2.332 tỷ (30/6/2026), 44% ngắn hạn; LN hoạt động chỉ 1,6 lần lãi vay — dư địa trước lỗ mỏng.",
+   "tac": [
+    "±1,0 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất trên ~2.400 tỷ nợ"
+   ],
+   "theo_doi": "lãi suất cho vay doanh nghiệp"
+  },
+  {
+   "khi": "2026–2029",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Nhà ở xã hội Đông Hải cần vốn",
+   "ct": "Tổng mức 1.158,6 tỷ (QĐ 1071/QĐ-UBND 24/3/2026), ~810 căn, liên danh với NHS; vốn chủ phần nhà đầu tư 316 tỷ, huy động 842,6 tỷ; thi công chậm nhất 9/2026, 36 tháng.",
+   "tac": [
+    "316 tỷ",
+    "vốn chủ liên danh — bằng 32% vốn chủ cổ đông HHP"
+   ],
+   "theo_doi": "phần góp của HHP, tiến độ"
+  },
+  {
+   "khi": "2028–2029",
+   "loai": "len",
+   "tieu": "Bàn giao nhà ở xã hội",
+   "ct": "Lợi nhuận định mức tối đa 10% chi phí đầu tư phần nhà ở xã hội (Luật Nhà ở 2023) — với tổng mức 1.158,6 tỷ là dưới ~116 tỷ trước thuế cho cả liên danh. Chưa vào mô hình.",
+   "tac": "",
+   "theo_doi": "giấy phép xây dựng, bán hàng"
+  },
+  {
+   "khi": "Đầu 2027",
+   "loai": "hai",
+   "tieu": "Làng nghề Phong Khê di dời xong",
+   "ct": "Phong Khê (~400–500 nghìn tấn/năm, ~10% công suất ngành) dừng từ Q4/2024 đỡ giá giấy miền Bắc; FPTS (9/2025) dự kiến di dời xong cuối 2026–đầu 2027 — nguồn cung có thể quay lại.",
+   "tac": "",
+   "theo_doi": "giá giấy bao bì miền Bắc"
+  },
+  {
+   "khi": "2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Phát hành thêm cổ phiếu",
+   "ct": "Vốn điều lệ gấp 5,1 lần từ 2020. Nợ vay 2,3 lần vốn chủ, Phú Yên và nhà ở xã hội cùng cần vốn — tăng vốn tiếp là khả năng phải tính.",
+   "tac": [
+    "−6,1%",
+    "EPS cho mỗi 6,5% cổ phiếu mới"
+   ],
+   "theo_doi": "tờ trình ĐHĐCĐ"
+  }
+ ],
+ "top_down": [
+  {
+   "tang": "Vĩ mô",
+   "y": [
+    {
+     "h": 1,
+     "t": "Bán lẻ và xuất nhập khẩu kéo cầu bao bì carton: FPTS ước nhu cầu giấy bao bì 2025–2030 tăng 9,7%/năm.",
+     "ng": "FPTS 10/09/2025"
+    },
+    {
+     "h": -1,
+     "t": "Lãi suất: với 2.332 tỷ nợ vay, mỗi 1 điểm % ≈ 23 tỷ LNTT/năm — một phần ba LNTT 2025 (71 tỷ).",
+     "ng": "BCTC Q2/2026 · mô hình"
+    },
+    {
+     "h": -1,
+     "t": "OCC và bột giấy nhập khẩu tính bằng USD: tỷ giá tăng 2,5–3% năm 2025 đội giá nguyên liệu.",
+     "ng": "FPTS 10/09/2025"
+    }
+   ]
+  },
+  {
+   "tang": "Ngành",
+   "y": [
+    {
+     "h": 1,
+     "t": "Phong Khê (~10% công suất ngành, chủ yếu giấy bao bì) dừng từ Q4/2024 vì môi trường: nguồn cung miền Bắc giảm, giá bán 1H2025 +8%.",
+     "ng": "FPTS 10/09/2025"
+    },
+    {
+     "h": -1,
+     "t": "OCC ~85% nguyên liệu, tăng ~12% năm 2025: biên sản xuất giảm dù giá bán tăng.",
+     "ng": "FPTS 10/09/2025"
+    },
+    {
+     "h": 0,
+     "t": "Cùng ngành: DHC ROE 23,8%, nợ vay 0,43 lần vốn chủ; MZG ROE 10,5%, nợ vay 2,45 lần — HHP ROE 5,1%, 2,3 lần.",
+     "ng": "BCTC Q2/2026 (bảng cùng ngành)"
+    }
+   ]
+  },
+  {
+   "tang": "Doanh nghiệp",
+   "y": [
+    {
+     "h": 1,
+     "t": "Hải Phòng (100 nghìn tấn, Tiên Lãng) chạy 90–95% công suất ngay năm đầu 2025; lãi gộp từ 16 tỷ (Q4/2024) lên 51–67 tỷ/quý.",
+     "ng": "FPTS 10/09/2025 · BCTC"
+    },
+    {
+     "h": -1,
+     "t": "Thương mại giấy ~60% doanh thu 1H2025 với biên gộp 1,6%; thoái toàn bộ Giấy Hoàng Hà Hà Nam (20–25 nghìn tấn) 8/2025.",
+     "ng": "FPTS 10/09/2025"
+    },
+    {
+     "h": 0,
+     "t": "Phú Yên (51%): doanh thu 2025 120,6 tỷ từ thương mại, LNST 1,98 tỷ; nhà máy chưa vận hành thương mại.",
+     "ng": "BCTN 2025 (LongLiveStock) · HHP"
+    }
+   ]
+  }
+ ],
+ "mang": [
+  {
+   "ten": "Sản xuất giấy — Hải Phòng",
+   "phu": "Nhà máy 100 nghìn tấn/năm (Tiên Lãng), vận hành 2/2025; medium, testliner, kraftliner",
+   "so": [
+    [
+     "Doanh thu sản xuất 1H2025",
+     "639,6 tỷ",
+     "FPTS"
+    ],
+    [
+     "Biên gộp sản xuất 1H2025",
+     "12,3%",
+     "−4,7 điểm"
+    ],
+    [
+     "Giá bán 1H2025",
+     "9.500–9.900 đ/kg",
+     "+8%"
+    ],
+    [
+     "Tiêu thụ 1H2025",
+     "> 60 nghìn tấn",
+     "FPTS"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Nhà máy cũ 15 nghìn tấn (Kiều Hạ) đóng cửa 2024; 2024 sản xuất chỉ còn ~3% doanh thu, biên gộp hợp nhất xuống 3,1%.",
+     "ng": "FPTS 10/09/2025"
+    },
+    {
+     "t": "Lãi gộp quý từ 16,2 tỷ (Q4/2024) lên 66,6 tỷ (Q2/2026); biên Q2/2026 8,7%.",
+     "ng": "BCTC VNDirect"
+    }
+   ]
+  },
+  {
+   "ten": "Nhà máy Phú Yên (51%)",
+   "phu": "Giấy Hoàng Hà Phú Yên: 100 nghìn tấn/năm, KCN Đông Bắc Sông Cầu; medium, testliner định lượng thấp",
+   "so": [
+    [
+     "Dở dang 30/6/2026",
+     "1.091 tỷ",
+     "BCTC"
+    ],
+    [
+     "Tổng mức đầu tư",
+     "~1.200 tỷ",
+     "FPTS"
+    ],
+    [
+     "Doanh thu 2025",
+     "120,6 tỷ",
+     "thương mại"
+    ],
+    [
+     "Chạy thử có tải",
+     "từ 1/2026",
+     "kế hoạch HHP"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Đóng điện lưới 7/12/2025, kế hoạch chạy thử liên động có tải từ 15/1/2026, mục tiêu cuộn giấy đầu tiên trước Tết.",
+     "ng": "HHP"
+    },
+    {
+     "t": "Thị trường miền Trung, Nam mới với HHP; FPTS giả định 80% công suất năm đầu, 85% năm thứ hai.",
+     "ng": "FPTS 10/09/2025"
+    }
+   ]
+  },
+  {
+   "ten": "Thương mại giấy",
+   "phu": "Phân phối giấy, OCC, bột giấy — mở khách cho hai nhà máy",
+   "so": [
+    [
+     "Doanh thu 1H2025",
+     "1.005,1 tỷ",
+     "+24%"
+    ],
+    [
+     "Biên gộp 1H2025",
+     "1,6%",
+     "FPTS"
+    ]
+   ],
+   "y": [
+    {
+     "t": "Q2/2026 doanh thu hợp nhất −20% so với cùng kỳ nhưng lãi gộp +8%: thương mại co lại, sản xuất giữ.",
+     "ng": "BCTC VNDirect"
+    }
+   ]
+  },
+  {
+   "ten": "Nhà ở xã hội Đông Hải",
+   "phu": "Liên danh HHP – NHS; một tòa 30 tầng, ~810 căn; 36 tháng từ 24/3/2026",
+   "so": [
+    [
+     "Tổng mức đầu tư",
+     "1.158,6 tỷ",
+     "−296 tỷ"
+    ],
+    [
+     "Vốn chủ nhà đầu tư",
+     "316 tỷ",
+     ""
+    ],
+    [
+     "Vốn huy động",
+     "842,6 tỷ",
+     ""
+    ],
+    [
+     "Thi công",
+     "chậm nhất 9/2026",
+     ""
+    ]
+   ],
+   "y": [
+    {
+     "t": "Tổng mức điều chỉnh từ 1.455 xuống 1.158,6 tỷ theo QĐ 1071/QĐ-UBND ngày 24/3/2026.",
+     "ng": "Công luận · Tin nhanh chứng khoán"
+    }
+   ]
+  }
+ ],
+ "bieu_do": [
+  {
+   "ten": "Lãi gộp và chi phí lãi vay theo quý",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q1/24",
+    "Q2/24",
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Lãi gộp",
+     "v": [
+      12.7,
+      18.8,
+      10.1,
+      16.2,
+      33.7,
+      61.7,
+      53.3,
+      51.2,
+      56.4,
+      66.6
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Lãi vay",
+     "v": [
+      5.4,
+      5.5,
+      6.3,
+      7.5,
+      17.1,
+      26.4,
+      28.7,
+      31.0,
+      31.5,
+      35.1
+     ],
+     "mau": "c2"
+    }
+   ],
+   "so_le": 0,
+   "y": "Hải Phòng vào vận hành (2/2025) đưa lãi gộp từ 16,2 lên 51–67 tỷ/quý, lãi vay theo từ 7,5 lên 35,1 tỷ/quý.",
+   "ng": "BCTC hợp nhất HHP (VNDirect)"
+  },
+  {
+   "ten": "Biên lợi nhuận gộp theo năm",
+   "kieu": "duong",
+   "dv": "%",
+   "so_le": 1,
+   "nhan": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "6T/26"
+   ],
+   "ss": [
+    {
+     "ten": "Biên gộp",
+     "v": [
+      9.8,
+      9.7,
+      7.8,
+      8.1,
+      6.2,
+      3.1,
+      6.4,
+      7.7
+     ],
+     "mau": "c1",
+     "net": false
+    }
+   ],
+   "y": "Từ 9,8% (2019) xuống 3,1% (2024) khi đóng nhà máy cũ; 6T/2026 7,7% — chưa về mức 2019–2022.",
+   "ng": "BCTC HHP (VNDirect)"
+  },
+  {
+   "ten": "Nợ vay và tài sản dở dang",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Nợ vay",
+     "v": [
+      1620,
+      1744,
+      1876,
+      2167,
+      2125,
+      2298,
+      2326,
+      2332
+     ],
+     "mau": "c2"
+    },
+    {
+     "ten": "Dở dang",
+     "v": [
+      1408,
+      1408,
+      254,
+      561,
+      794,
+      950,
+      1040,
+      1091
+     ],
+     "mau": "c4"
+    }
+   ],
+   "so_le": 0,
+   "y": "Dở dang giảm mạnh Q1/2025 khi Hải Phòng vận hành, rồi lên lại 1.091 tỷ (Phú Yên); nợ vay 2.332 tỷ.",
+   "ng": "BCTC HHP (VNDirect): vay ngắn hạn + dài hạn; chi phí xây dựng dở dang"
+  },
+  {
+   "ten": "Hàng tồn kho và phải thu",
+   "kieu": "cot",
+   "dv": "tỷ đồng",
+   "nhan": [
+    "Q3/24",
+    "Q4/24",
+    "Q1/25",
+    "Q2/25",
+    "Q3/25",
+    "Q4/25",
+    "Q1/26",
+    "Q2/26"
+   ],
+   "ss": [
+    {
+     "ten": "Tồn kho",
+     "v": [
+      333,
+      354,
+      364,
+      287,
+      363,
+      500,
+      525,
+      604
+     ],
+     "mau": "c1"
+    },
+    {
+     "ten": "Phải thu",
+     "v": [
+      522,
+      537,
+      614,
+      842,
+      800,
+      716,
+      729,
+      435
+     ],
+     "mau": "c3"
+    }
+   ],
+   "so_le": 0,
+   "y": "Tồn kho 604 tỷ (30/6/2026), ~79 ngày giá vốn so với ~29 ngày cùng kỳ; phải thu giảm từ 842 xuống 435 tỷ.",
+   "ng": "BCTC HHP (VNDirect)"
+  }
+ ],
+ "ke_hoach": {
+  "nam": 2026,
+  "ds": [
+   {
+    "ten": "Doanh thu thuần",
+    "kh": 3473,
+    "th": 1603,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 (BCTN 2025) · BCTC Q2"
+   },
+   {
+    "ten": "LNST hợp nhất",
+    "kh": 56.3,
+    "th": 31.9,
+    "ky": "6T",
+    "tg": 50,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 2026 (BCTN 2025) · BCTC Q2"
+   }
+  ],
+  "y": "6 tháng đạt 57% kế hoạch LNST, 46% kế hoạch doanh thu (kế hoạch: doanh thu +11,2%, LNST +17,2% so với 2025). Mô hình cơ sở cả năm 51 tỷ LN cổ đông vì Phú Yên bắt đầu gánh lãi vay từ Q4.",
+  "ng": ""
+ },
+ "ctck": [
+  {
+   "ctck": "FPTS",
+   "ngay": "2025-09-10",
+   "kn": "MUA",
+   "tp": 11950,
+   "ln26": 69.6,
+   "pp": "FCFE 50% + FCFF 50%",
+   "y": "Viết trước khi Phú Yên chạy thử: giả định nhà máy đóng góp từ Q2/2026 với 80% công suất, biên gộp sản xuất 14–15%, lãi vay 200–250 tỷ/năm giai đoạn 2026–2034; LN cổ đông 2026F 69,6 tỷ. Giá mục tiêu ≈ 11.200 đ sau cổ tức cổ phiếu 6,5%.",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHP/ong_luc_tang_truong_trong_dai_han_tu_nha_may_Hai_Phong_va_nha_may_Phu_Yen.pdf"
+  }
+ ],
+ "ctck_chu": "Chỉ một báo cáo CTCK trong 14 tháng (FPTS 10/09/2025, trước khi Phú Yên chạy thử) — chỉ dùng mô tả doanh nghiệp và số 1H2025; mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành. Giá mục tiêu FPTS quy đổi theo cổ tức cổ phiếu 6,5% (GDKHQ 18/08/2026).",
+ "nguon": [
+  {
+   "ten": "FPTS — Động lực tăng trưởng dài hạn từ nhà máy Hải Phòng và Phú Yên",
+   "ngay": "10/09/2025",
+   "link": "https://cdn.simplize.vn/simplizevn/report/HHP/ong_luc_tang_truong_trong_dai_han_tu_nha_may_Hai_Phong_va_nha_may_Phu_Yen.pdf"
+  },
+  {
+   "ten": "Vietstock — Chốt quyền nhận cổ tức tỷ lệ 6,5%, cổ phiếu HHP vẫn giảm sàn",
+   "ngay": "8/2026",
+   "link": "https://vietstock.vn/2026/08/chot-quyen-nhan-co-tuc-voi-ty-le-65-co-phieu-hhp-van-giam-san-738-1479599.htm"
+  },
+  {
+   "ten": "Vietstock — Hồ sơ HHP (vốn điều lệ 921,79 tỷ, 9/2026)",
+   "ngay": "10/2026",
+   "link": "https://finance.vietstock.vn/HHP/profile.htm"
+  },
+  {
+   "ten": "VietnamFinance — HHP Global sau kiểm toán: lợi nhuận bị điều chỉnh giảm hơn 4 tỷ",
+   "ngay": "2026",
+   "link": "https://vietnamfinance.vn/hhp-global-sau-kiem-toan-loi-nhuan-bi-dieu-chinh-giam-hon-4-ty-dong-d142448.html"
+  },
+  {
+   "ten": "HHP — Báo cáo thường niên 2025",
+   "ngay": "2026",
+   "link": "https://static2.vietstock.vn/data/HOSE/2025/BCTN/VN/HHP_Baocaothuongnien_2025.pdf"
+  },
+  {
+   "ten": "LongLiveStock — HHP: kế hoạch 2026, Giấy Hoàng Hà Phú Yên 2025",
+   "ngay": "2026",
+   "link": "https://longlivestock.com/stock/HHP"
+  },
+  {
+   "ten": "Vietstock — Nghị quyết và biên bản ĐHĐCĐ 2026",
+   "ngay": "5/2026",
+   "link": "https://en.vietstock.vn/2026/05/hhp-resolution-and-minutes-of-the-2026-agm-962-633540.htm"
+  },
+  {
+   "ten": "Công luận — HHP hạ gần 296 tỷ vốn đầu tư dự án nhà ở xã hội",
+   "ngay": "3/2026",
+   "link": "https://congluan.vn/hhp-global-hhp-ha-gan-296-ty-dong-von-dau-tu-du-an-nha-o-xa-hoi-loi-nhuan-2025-tang-136-truoc-them-dai-hoi-post340418.html"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — HHP điều chỉnh giảm quy mô dự án nhà ở xã hội tại Hải Phòng",
+   "ngay": "3/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/cong-ty-giay-hhp-global-hhp-dieu-chinh-giam-quy-mo-dau-tu-du-an-nha-o-xa-hoi-tai-hai-phong-post387662.html"
+  },
+  {
+   "ten": "Báo Pháp luật — HHP điều chỉnh vốn dự án nhà ở xã hội, lợi nhuận 2025 tăng 136%",
+   "ngay": "3/2026",
+   "link": "https://doanhnhan.baophapluat.vn/hhp-global-hhp-dieu-chinh-von-du-an-nha-o-xa-hoi-loi-nhuan-2025-tang-136.html"
+  },
+  {
+   "ten": "Kinh tế Chứng khoán — Doanh nghiệp giấy lấn sân nhà ở xã hội, liên danh NHS",
+   "ngay": "2025",
+   "link": "https://kinhtechungkhoan.vn/mot-doanh-nghiep-giay-lan-san-bat-dong-san-lien-danh-voi-chuyen-gia-nha-o-xa-hoi-trien-khai-du-an-nghin-ty-1393973.html"
+  },
+  {
+   "ten": "HHP — Nhà máy giấy Hoàng Hà Phú Yên tăng tốc, cuộn giấy đầu tiên trước Tết Bính Ngọ",
+   "ngay": "12/2025",
+   "link": "https://hhpglobaljsc.com/hhp-nha-may-giay-hoang-ha-phu-yen-tang-toc-ve-dich-quyet-tam-cho-ra-doi-cuon-giay-dau-tien-truoc-tet-binh-ngo-2026/"
+  }
+ ]
+}
