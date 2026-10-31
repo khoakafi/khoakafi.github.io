@@ -3,11 +3,11 @@
  "ma": "HSG",
  "ten": "CTCP Tập đoàn Hoa Sen",
  "nganh": "Tôn mạ, ống thép",
- "ky": "BCTC quý 3 NĐ2026 (4–6/2026) · niên độ 1/10–30/9",
- "cap_nhat": "2026-10-21",
- "lan_sau": "sau BCTC quý 4 NĐ2026 (7–9/2026)",
+ "ky": "BCTC Q3/2026 (quý 4 NĐ2026, 7–9/2026) · giá 30/10/2026 · niên độ 1/10–30/9",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026 (quý 1 NĐ2027, 10–12/2026); ĐHĐCĐ 3/2027 (kế hoạch NĐ2027)",
  "cp_trieu": 807.3,
- "cp_ng": "Vốn điều lệ 8.072,6 tỷ (BCTC 30/6/2026) sau cổ tức 30% bằng cổ phiếu (186,3 triệu cp, chốt quyền 05/05/2026); không có cổ phiếu quỹ",
+ "cp_ng": "Vốn điều lệ 8.072,6 tỷ (BCTC 30/9/2026) sau cổ tức 30% bằng cổ phiếu (186,3 triệu cp, chốt quyền 05/05/2026); không có cổ phiếu quỹ",
  "chia": [
   [
    "2026-05-04",
@@ -16,60 +16,60 @@
  ],
  "co_tuc": [],
  "tieu_de": {
-  "t": "Lãi quý 3 là lãi tồn kho; bỏ phần đó, lãi vay ăn gần nửa lãi hoạt động"
+  "t": "Hết lãi tồn kho, lãi vay ăn 59% lãi hoạt động quý 4 — NĐ2027 cơ sở chỉ ~302 tỷ"
  },
- "dong_mo": "Biên gộp 15,3% quý 3 NĐ2026 đến từ HRC tích giá thấp bán ra khi giá tăng; HRC đã giảm ~10% từ đỉnh tháng 6, xuất khẩu −45%, lãi vay gấp đôi. Cơ sở NĐ2027 (10/2026–9/2027): LN 382 tỷ, ROE ~3%; P/B theo ROE cho {gt} ({up}), cán cân lên/xuống {rr} lần — cổ phiếu đi theo giá HRC, chưa có lý do định giá lại.",
+ "dong_mo": "NĐ2026 (10/2025–9/2026) LN 623 tỷ (−15%), vượt kế hoạch nhờ lãi tồn kho quý 3; quý 4 biên về 12,0%, LN 55 tỷ (−37%) khi lãi vay lên 139 tỷ (~7,6%/năm). Cơ sở NĐ2027: LN 302 tỷ, ROE ~2,5%; P/B theo ROE cho {gt} ({up}), cán cân {rr} lần — cần HRC đi lên hoặc nợ vay giảm.",
  "luan_diem": [
   {
-   "so": "15,3%",
-   "nhan": "biên gộp quý 3 NĐ2026 (4–6/2026)",
-   "tieu": "Lãi quý 3 là lãi tồn kho, chiều giá đã đảo",
-   "t": "HSG tích HRC giá thấp cuối 2025 (tồn kho +1.200 tỷ trong quý 1 NĐ, trên 100 ngày) rồi bán ra khi HRC lên ~600 USD/tấn (5/2026, +19% từ đầu năm): biên gộp 15,3%, LN 382 tỷ, gấp ba quý trước. HRC kỳ hạn T9 đã thấp hơn đỉnh T6 10,2% trong khi tồn kho 8.268 tỷ (30/6) mang giá vốn cao. Cơ sở quý 4 (7–9/2026): biên 11,2%, LN ~8 tỷ; xấu (biên 9%) lỗ 242 tỷ.",
-   "ng": "BCTC VNDirect · VDS 17/04 · BSC 06/05 · MAS 12/08 (hồ sơ HPG) · mô hình"
+   "so": "12,0%",
+   "nhan": "biên gộp quý 4 NĐ2026 (7–9/2026)",
+   "tieu": "Quý 4 xác nhận: hết lãi tồn kho, lãi gộp/tấn về mức thường",
+   "t": "Biên gộp từ 15,3% (quý 3, HRC tích giá thấp bán khi giá lên) về 12,0%; lãi gộp mỗi tấn ~2,45 triệu đ (sản lượng quý 4 ước từ doanh thu 10.384 tỷ, HSG chưa công bố) = mức NĐ2025. Tốt hơn mô hình cũ (biên 11,2%, LN ~8 tỷ): HRC giảm từ đỉnh T6 không gây lỗ tồn kho. Nhưng LN chỉ 55 tỷ (−37%) vì lãi vay và thuế ~40%.",
+   "ng": "BCTC Q3/2026 (VNDirect) · mô hình 21/10 · MAS 12/08 (hồ sơ HPG)"
   },
   {
-   "so": "+104%",
-   "nhan": "chi phí lãi vay 9 tháng NĐ2026",
-   "tieu": "Lãi vay ăn gần nửa lãi hoạt động",
-   "t": "9 tháng NĐ2026 lãi hoạt động (LN gộp − bán hàng, QLDN) +38% nhưng LN trước thuế −2%, LNST −12%: lãi vay 281 tỷ vì vay ngắn hạn tài trợ tồn kho (7,3 nghìn tỷ, 30/6) và lãi suất bình quân lên ~6,2% (NĐ2025 ~3,8%); doanh thu tài chính còn 69 tỷ (−69%) khi xuất khẩu giảm, tỷ giá đứng yên. Bỏ lãi tồn kho, 6 tháng đầu NĐ lãi vay = 47% lãi hoạt động; NĐ2027E cơ sở 50%.",
-   "ng": "BCTC VNDirect · BSC 06/05 · mô hình"
+   "so": "+127%",
+   "nhan": "chi phí lãi vay cả NĐ2026",
+   "tieu": "Lãi vay là biến số chính, và vẫn đang tăng",
+   "t": "Cả NĐ2026 lãi hoạt động (LN gộp − bán hàng, QLDN) +50% nhưng LN trước thuế −5%, LN cổ đông −15%: lãi vay 420 tỷ vì vay ngắn hạn tài trợ tồn kho (7,3 nghìn tỷ, 30/9) và lãi suất bình quân 6,0 → 6,2 → 7,6%/năm qua 3 quý (NĐ2025 ~3,8%); doanh thu tài chính còn 82 tỷ (−71%). Quý 4 lãi vay = 59% lãi hoạt động; NĐ2027E cơ sở 62%.",
+   "ng": "BCTC VNDirect · mô hình"
   },
   {
    "so": "−45%",
    "nhan": "xuất khẩu tôn + ống 6T NĐ2026",
    "tieu": "Mất xuất khẩu, nội địa thêm đối thủ",
-   "t": "Xuất khẩu từng là 37% sản lượng tôn + ống (NĐ2025), nay ~105 nghìn tấn/quý: EU tính phí CBAM từ 2026, Úc điều tra chống bán phá giá thép mạ kẽm Việt Nam từ 4/2026. Nội địa 9 tháng +6% (~883 nghìn tấn) nhưng NKG, GDA thêm 1,4 triệu tấn công suất, thị phần HSG 2025 còn 24,1%. Cơ sở NĐ2027: 1,80 triệu tấn, lãi gộp 2,40 triệu đ/tấn ≈ NĐ2025 → LN 382 tỷ; MBS 901, VDS 1.236 giả định giá tôn còn tăng.",
+   "t": "Xuất khẩu từng là 37% sản lượng tôn + ống (NĐ2025), nay ~105 nghìn tấn/quý: EU tính phí CBAM từ 2026, Úc điều tra chống bán phá giá thép mạ kẽm Việt Nam từ 4/2026. Nội địa 9 tháng +6% nhưng NKG, GDA thêm 1,4 triệu tấn công suất, thị phần HSG 2025 còn 24,1%. Cơ sở NĐ2027: 1,83 triệu tấn (≈ NĐ2026 ước), 2,40 triệu đ/tấn → LN 302 tỷ; MBS 901, VDS 1.236 giả định giá tôn còn tăng.",
    "ng": "BSC 06/05 · FPTS 20/03 · MBS 14/04 · 24hmoney · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/B theo ROE: {up_so} so với giá hiện tại",
-   "t": "Giá trị = P/B × vốn chủ 30/9/2027E (BVPS ~15,2 nghìn đ), P/B = 0,55 + 0,05 × ROE: ROE NĐ2027E ~3,2% → 0,71, sát trung vị 11 mã cùng ngành (0,72) và NKG (0,68); tương đương P/E ~23 lần LN NĐ2027E. Mỗi ±100 đ/kg chênh lệch tôn – HRC = ±149 tỷ LN, ±1,1 nghìn đ/cp. Xấu 7,7: lỗ, P/B 0,55 (đáy 2018–2019); tốt 15,5: HRC đi lên, ROE ~8%.",
-   "ng": "mô hình · P/B lịch sử: BCTC VNDirect · cùng ngành: giá 20/10/2026"
+   "t": "Giá trị = P/B × vốn chủ 30/9/2027E (BVPS ~15,1 nghìn đ), P/B = 0,55 + 0,05 × ROE: ROE NĐ2027E ~2,5% → 0,68, dưới trung vị 11 mã cùng ngành (0,77); cũ 10,7 trước khi nâng lãi suất vay (7%), thuế (20%). Mỗi ±100 đ/kg chênh lệch tôn – HRC = ±146 tỷ LN, ±1,0 nghìn đ/cp. Xấu 7,8: lỗ, P/B 0,55 (đáy 2018–2019); tốt 15,0: HRC đi lên, ROE ~8%.",
+   "ng": "mô hình · P/B lịch sử: BCTC VNDirect · cùng ngành: giá 30/10/2026"
   }
  ],
  "tom_tat": {
   "cot": [
    "NĐ2025A",
-   "NĐ2026E",
+   "NĐ2026A",
    "NĐ2027E"
   ],
   "ln": [
    735,
-   577,
-   382
+   623,
+   302
   ],
   "ln_truoc": 515,
   "eps": [
    910,
-   714,
-   473
+   772,
+   374
   ],
   "bv": [
    14025,
-   14684,
-   15157
+   14735,
+   15109
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -77,7 +77,7 @@
     "ten": "Lãi gộp mỗi tấn (triệu đ)",
     "v": [
      2.45,
-     2.57,
+     2.6,
      2.4
     ],
     "d": 2
@@ -86,20 +86,20 @@
     "ten": "ROE",
     "v": [
      6.6,
-     5.0,
-     3.2
+     5.4,
+     2.5
     ],
     "d": 1,
     "pt": 1
    }
   ],
-  "ng": "Niên độ 1/10–30/9 (NĐ2026 = 10/2025–9/2026). NĐ2024–2025: BCTC. EPS, BVPS theo 807,3 triệu cp sau cổ tức 30% bằng cổ phiếu (5/2026); NĐ2025 không trả cổ tức tiền mặt."
+  "ng": "Niên độ 1/10–30/9 (NĐ2026 = 10/2025–9/2026). NĐ2024–2026: BCTC (NĐ2026 cộng 4 quý). Lãi gộp/tấn NĐ2026 dùng sản lượng quý 4 ước. EPS, BVPS theo 807,3 triệu cp sau cổ tức 30% bằng cổ phiếu (5/2026); NĐ2025 không trả cổ tức tiền mặt."
  },
  "ln_mang": {
   "tieu": "LN trước thuế theo nguồn",
   "cot": [
    "NĐ2025A",
-   "NĐ2026E",
+   "NĐ2026A",
    "NĐ2027E"
   ],
   "tong_ten": "LN trước thuế",
@@ -109,8 +109,8 @@
     "mau": "c1",
     "v": [
      745,
-     980,
-     720
+     1117,
+     732
     ]
    },
    {
@@ -118,8 +118,8 @@
     "mau": "c2",
     "v": [
      -185,
-     -391,
-     -360
+     -420,
+     -455
     ]
    },
    {
@@ -127,18 +127,18 @@
     "mau": "c4",
     "v": [
      265,
-     115,
+     88,
      100
     ]
    }
   ],
-  "ng": "Lãi hoạt động = LN gộp − chi phí bán hàng, QLDN; tài chính khác = doanh thu tài chính − chi phí tài chính ngoài lãi vay (chủ yếu tỷ giá). NĐ2025: BCTC; NĐ2026E–2027E: mô hình."
+  "ng": "Lãi hoạt động = LN gộp − chi phí bán hàng, QLDN; tài chính khác = doanh thu tài chính − chi phí tài chính ngoài lãi vay (chủ yếu tỷ giá). NĐ2025–2026: BCTC; NĐ2027E: mô hình."
  },
  "mo_hinh": {
   "tieu": "Mô hình: sản lượng × lãi gộp mỗi tấn − chi phí − lãi vay",
   "cot": [
    "NĐ2025A",
-   "NĐ2026E",
+   "NĐ2026A",
    "NĐ2027E"
   ],
   "dong": [
@@ -149,8 +149,8 @@
     "ten": "Sản lượng tiêu thụ (nghìn tấn)",
     "v": [
      1845,
-     1760,
-     1800
+     1830,
+     1830
     ],
     "tang": 1
    },
@@ -158,7 +158,7 @@
     "ten": "Doanh thu mỗi tấn (triệu đ)",
     "v": [
      19.8,
-     20.63,
+     20.62,
      20.34
     ],
     "d": 2
@@ -167,7 +167,7 @@
     "ten": "Lãi gộp mỗi tấn (triệu đ)",
     "v": [
      2.45,
-     2.57,
+     2.6,
      2.4
     ],
     "d": 2,
@@ -177,7 +177,7 @@
     "ten": "Bán hàng + QLDN mỗi tấn (triệu đ)",
     "v": [
      2.05,
-     2.01,
+     1.99,
      2.0
     ],
     "d": 2
@@ -189,8 +189,8 @@
     "ten": "Doanh thu thuần",
     "v": [
      36538,
-     36303,
-     36619
+     37736,
+     37230
     ],
     "tang": 1
    },
@@ -198,7 +198,7 @@
     "ten": "Biên lợi nhuận gộp (%)",
     "v": [
      12.4,
-     12.4,
+     12.6,
      11.8
     ],
     "d": 1
@@ -207,23 +207,23 @@
     "ten": "Lãi hoạt động",
     "v": [
      745,
-     980,
-     720
+     1117,
+     732
     ]
    },
    {
     "ten": "Chi phí lãi vay",
     "v": [
      185,
-     391,
-     360
+     420,
+     455
     ]
    },
    {
     "ten": "Tài chính khác + thu nhập khác",
     "v": [
      265,
-     115,
+     88,
      100
     ]
    },
@@ -231,16 +231,16 @@
     "ten": "LN trước thuế",
     "v": [
      825,
-     703,
-     460
+     785,
+     377
     ]
    },
    {
     "ten": "LN cổ đông",
     "v": [
      735,
-     577,
-     382
+     623,
+     302
     ],
     "dam": 1,
     "tang": 1
@@ -249,8 +249,8 @@
     "ten": "EPS (đ)",
     "v": [
      910,
-     714,
-     473
+     772,
+     374
     ],
     "eps": 1
    },
@@ -258,8 +258,8 @@
     "ten": "BVPS cuối niên độ (đ)",
     "v": [
      14025,
-     14684,
-     15157
+     14735,
+     15109
     ],
     "ps": 1
    },
@@ -267,80 +267,62 @@
     "ten": "ROE (%)",
     "v": [
      6.6,
-     5.0,
-     3.2
+     5.4,
+     2.5
     ],
     "d": 1
    }
   ],
-  "ghi": "Niên độ 1/10–30/9. Sản lượng HSG công bố (tôn, ống thép, ống nhựa…); NĐ2025 theo MBS, khớp kế hoạch ĐHĐCĐ. NĐ2026E = 9 tháng BCTC + quý 4 (7–9/2026) ước tính. Doanh thu mỗi tấn gồm hàng hóa thương mại. Thuế NĐ2027E 17%."
+  "ghi": "Niên độ 1/10–30/9. Sản lượng HSG công bố (tôn, ống thép, ống nhựa…); NĐ2025 theo MBS; NĐ2026 = 9 tháng HSG công bố + quý 4 ước từ doanh thu (~510 nghìn tấn, doanh thu/tấn quý 3 −6%). NĐ2026: BCTC 4 quý. Doanh thu mỗi tấn gồm hàng hóa thương mại. Thuế NĐ2027E 20%."
  },
  "cau_ln": {
-  "ten": "LN cổ đông NĐ2026E → NĐ2027E (kịch bản cơ sở)",
+  "ten": "LN cổ đông NĐ2026A → NĐ2027E (kịch bản cơ sở)",
   "dau": [
-   "NĐ2026E",
-   577
+   "NĐ2026A",
+   623
   ],
   "cuoi": [
    "NĐ2027E",
-   382
+   302
   ],
   "buoc": [
    [
     "Lãi gộp/tấn về mức thường",
-    -303
+    -374
    ],
    [
     "Sản lượng",
-    23
+    0
    ],
    [
     "Bán hàng, QLDN/tấn",
-    20
+    -11
    ],
    [
     "Lãi vay",
-    31
+    -35
    ],
    [
     "Tài chính, khác",
-    -15
+    12
    ],
    [
     "Thuế TNDN",
-    49
+    87
    ]
   ],
-  "y": "Lãi gộp mỗi tấn về 2,40 triệu đ (NĐ2026E 2,57 nhờ quý 3) lấy đi ~303 tỷ trước thuế; sản lượng, chi phí và lãi vay chỉ bù ~74 tỷ.",
+  "y": "Lãi gộp mỗi tấn về 2,40 triệu đ (NĐ2026 2,60 nhờ quý 3) lấy đi ~374 tỷ trước thuế; lãi vay thêm 35 tỷ; thuế giảm theo LN.",
   "ng": "mô hình (bước trước thuế; thuế tách riêng)"
  },
  "gia_dinh": [
   {
-   "ten": "Biên gộp quý 4 NĐ2026 (7–9/2026)",
-   "v": [
-    "9,0%",
-    "11,2%",
-    "12,4%"
-   ],
-   "ly_do": "HRC T9 thấp hơn đỉnh T6 10,2% (MAS) khi giá vốn còn tồn kho mua quý 2; 11,2% = quý 1 NĐ2026 (không lãi tồn kho); 12,4% = bình quân NĐ2025"
-  },
-  {
-   "ten": "Doanh thu/tấn H2/2026 so với quý 2",
-   "v": [
-    "−7,5%",
-    "−6%",
-    "−4,5%"
-   ],
-   "ly_do": "Cùng giả định giá thép hồ sơ HPG: HPG chào HRC T7/T8/T9 −2,2%/−8,0%/−10,2% so với đỉnh T6 (MAS 12/08); NĐ2027 −1% · 0% · +1%"
-  },
-  {
    "ten": "Sản lượng NĐ2027 (nghìn tấn)",
    "v": [
-    "1.690",
-    "1.800",
-    "1.900"
+    "1.720",
+    "1.830",
+    "1.930"
    ],
-   "ly_do": "NĐ2026E ~1.760; nội địa 9T +6%, xuất khẩu 6T −45%; NKG, GDA thêm 1,4 triệu tấn công suất; MBS 2027F 1.833"
+   "ly_do": "NĐ2026 ~1.830 (quý 4 ước); nội địa 9T +6%, xuất khẩu 6T −45%; NKG, GDA thêm 1,4 triệu tấn công suất; MBS 2027F 1.833"
   },
   {
    "ten": "Lãi gộp mỗi tấn NĐ2027 (triệu đ)",
@@ -349,7 +331,16 @@
     "2,40",
     "2,65"
    ],
-   "ly_do": "NĐ2025 2,45; 6T NĐ2026 2,32 (không lãi tồn kho); quý 3 3,31 (lãi tồn kho). MBS: chênh lệch tôn – HRC 130–134 USD/tấn"
+   "ly_do": "NĐ2025 2,45; 6T NĐ2026 2,32; quý 3 3,31 (lãi tồn kho); quý 4 ~2,45 — xác nhận mức cơ sở. MBS: chênh lệch tôn – HRC 130–134 USD/tấn"
+  },
+  {
+   "ten": "Doanh thu/tấn NĐ2027 so với quý 4 NĐ2026",
+   "v": [
+    "−1%",
+    "0%",
+    "+1%"
+   ],
+   "ly_do": "Cùng giả định giá thép hồ sơ HPG: HRC nhập khẩu chào ngang giá nội (trần), chống lẩn tránh 27,83% đến 7/2030 (sàn)"
   },
   {
    "ten": "Bán hàng + QLDN mỗi tấn (triệu đ)",
@@ -358,16 +349,16 @@
     "2,00",
     "1,95"
    ],
-   "ly_do": "NĐ2025 2,05; 9T NĐ2026 2,00 (quý 3: 2,13 vì cước vận chuyển); thêm cửa hàng Hoa Sen Home"
+   "ly_do": "NĐ2025 2,05; NĐ2026 ~1,99; quý 4 ~1,98 (QLDN 215 tỷ, cao nhất 12 quý); thêm cửa hàng Hoa Sen Home"
   },
   {
    "ten": "Nợ vay bình quân · lãi suất NĐ2027",
    "v": [
-    "6.500 · 6,5%",
-    "6.000 · 6,0%",
-    "5.200 · 5,5%"
+    "7.000 · 7,5%",
+    "6.500 · 7,0%",
+    "5.500 · 6,0%"
    ],
-   "ly_do": "Vay ngắn hạn 7.252 tỷ (30/6/2026), lãi suất bình quân quý 2/2026 ~6,2% (NĐ2025 ~3,8%); HRC thấp hơn kéo vốn lưu động xuống"
+   "ly_do": "Nâng từ 6.000 · 6%: vay 7.333 tỷ (30/9), bình quân NĐ2026 ~6.883; lãi suất quý 4 ~7,6%/năm (cả NĐ2026 6,1%, NĐ2025 3,8%)"
   },
   {
    "ten": "Tài chính ngoài lãi vay + khác (tỷ)",
@@ -376,48 +367,48 @@
     "100",
     "150"
    ],
-   "ly_do": "NĐ2025 265 (lãi tỷ giá từ xuất khẩu); 9T NĐ2026 95 khi xuất khẩu giảm, USD/VND đi ngang (BSC)"
+   "ly_do": "NĐ2025 265 (lãi tỷ giá từ xuất khẩu); NĐ2026 88 khi xuất khẩu giảm, USD/VND đi ngang (BSC)"
   },
   {
    "ten": "Thuế TNDN hiệu dụng NĐ2027",
    "v": [
     "25%",
-    "17%",
-    "15%"
+    "20%",
+    "17%"
    ],
-   "ly_do": "NĐ2025 10,8%; 9T NĐ2026 17,9% (quý 1: 35% vì lỗ công ty con chưa ghi thuế hoãn lại — VDS); năm lỗ không ghi tài sản thuế"
+   "ly_do": "Nâng cơ sở 17% → 20%: cả NĐ2026 20,5% (quý 4 ~40%); NĐ2025 10,8%; năm lỗ không ghi tài sản thuế"
   },
   {
    "ten": "P/B = 0,55 + 0,05 × ROE (%)",
    "v": [
     "0,55",
-    "0,71",
-    "0,96"
+    "0,68",
+    "0,94"
    ],
-   "ly_do": "Sàn 0,55 ≈ đáy 2018–2019 (0,49–0,70); ROE 3% → 0,70 ≈ trung vị 11 mã cùng ngành (0,72), NKG 0,68; ROE 8% → 0,95 ≈ bình quân 2025 (0,95)"
+   "ly_do": "Sàn 0,55 ≈ đáy 2018–2019 (0,49–0,70); ROE 4% → 0,75 ≈ trung vị 11 mã cùng ngành (0,77), NKG 0,77; ROE 8% → 0,95 ≈ bình quân 2025 (0,95)"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 326,
-   "ln27": -274,
-   "gia": 7.7,
-   "mo_ta": "Quý 4 biên 9% (lỗ 242 tỷ); NĐ2027 1,69 triệu tấn, lãi gộp 2,15 triệu đ/tấn, lãi vay 422 tỷ → lỗ 274 tỷ; P/B 0,55"
+   "ln26": 623,
+   "ln27": -375,
+   "gia": 7.8,
+   "mo_ta": "NĐ2027 1,72 triệu tấn, lãi gộp 2,15 triệu đ/tấn (HRC giảm, lỗ tồn kho), lãi vay 525 tỷ (7,5%) → lỗ 375 tỷ; P/B 0,55"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 577,
-   "ln27": 382,
-   "gia": 10.8,
-   "mo_ta": "Quý 4 biên 11,2% (hòa vốn); NĐ2027 1,80 triệu tấn, 2,40 triệu đ/tấn ≈ NĐ2025, lãi vay 360 tỷ; ROE ~3,2%, P/B 0,71"
+   "ln26": 623,
+   "ln27": 302,
+   "gia": 10.3,
+   "mo_ta": "NĐ2027 1,83 triệu tấn, 2,40 triệu đ/tấn ≈ quý 4 NĐ2026, lãi vay 455 tỷ (7%); ROE ~2,5%, P/B 0,68"
   },
   {
    "ten": "Tốt",
-   "ln26": 732,
-   "ln27": 1015,
-   "gia": 15.5,
-   "mo_ta": "HRC đi lên: lãi gộp 2,65 triệu đ/tấn, 1,90 triệu tấn, nợ vay giảm; ROE ~8%, P/B 0,96"
+   "ln26": 623,
+   "ln27": 972,
+   "gia": 15.0,
+   "mo_ta": "HRC đi lên: lãi gộp 2,65 triệu đ/tấn, 1,93 triệu tấn, nợ vay giảm về 5.500 tỷ; ROE ~8%, P/B 0,94"
   }
  ],
  "dinh_gia": {
@@ -430,35 +421,35 @@
     "ten": "Vốn chủ cổ đông 30/9/2027E",
     "mau": "c1",
     "x": [
-     11329,
-     12236,
-     13024
+     11521,
+     12197,
+     12868
     ],
     "boi": [
      0.55,
-     0.71,
-     0.96
+     0.68,
+     0.94
     ],
     "x_ten": "cuối NĐ2027E",
     "boi_ten": "P/B",
     "boi_d": 2,
     "sh": 1,
     "gt": [
-     6231,
-     8688,
-     12503
+     6337,
+     8294,
+     12096
     ]
    }
   ],
   "von": [
-   6231,
-   8688,
-   12503
+   6337,
+   8294,
+   12096
   ],
   "gia": [
-   7.7,
-   10.8,
-   15.5
+   7.8,
+   10.3,
+   15.0
   ]
  },
  "nhay": [
@@ -469,22 +460,22 @@
   ],
   [
    "Lãi gộp mỗi tấn NĐ2027 ±0,1 triệu đ",
-   149,
-   1.1
+   146,
+   1.0
   ],
   [
    "Bán hàng + QLDN mỗi tấn ±0,05 triệu đ",
-   75,
+   73,
    0.5
   ],
   [
    "Lãi suất vay NĐ2027 ±1 điểm %",
-   50,
+   52,
    0.4
   ],
   [
    "Sản lượng NĐ2027 ±5%",
-   30,
+   29,
    0.2
   ]
  ],
@@ -776,7 +767,7 @@
    0.75,
    0.74,
    0.68,
-   0.71
+   0.74
   ],
   "p10": 0.62,
   "p25": 0.82,
@@ -787,27 +778,27 @@
   ],
   "nay": [
    "2026-10",
-   0.71
+   0.74
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Kịch bản dùng P/B 0,55 · 0,71 · 0,96 theo ROE NĐ2027E: từ vùng đáy 2018–2019 (0,49–0,70) qua quanh p10–p25 (0,62–0,82) đến bình quân 2025 (0,95) — dưới trung vị 1,12 vì ROE chưa về mức 2016–2021."
+  "dung": "Kịch bản dùng P/B 0,55 · 0,68 · 0,94 theo ROE NĐ2027E: từ vùng đáy 2018–2019 (0,49–0,70) qua quanh p10 (0,62) đến bình quân 2025 (0,95) — dưới trung vị 1,12 vì ROE chưa về mức 2016–2021."
  },
  "so_sanh": {
-  "chi_so": "P/B (vốn chủ 30/6/2026)",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "chi_so": "P/B (vốn chủ 30/9/2026)",
+  "chi_so_kv": "P/B (giá 30/10)",
   "nhom": "11 mã kim loại công nghiệp vốn hóa lớn nhất",
   "kv": [
    [
     "HPG",
-    1.23
+    1.18
    ],
    [
     "NKG",
-    0.68
+    0.77
    ],
    [
     "VGS",
-    0.78
+    0.77
    ],
    [
     "SMC",
@@ -815,11 +806,11 @@
    ],
    [
     "DTL",
-    1.31
+    1.29
    ],
    [
     "TKU",
-    1.14
+    1.18
    ],
    [
     "TLH",
@@ -827,11 +818,11 @@
    ],
    [
     "HMC",
-    0.72
+    0.7
    ],
    [
     "TNI",
-    0.39
+    0.4
    ],
    [
     "KMT",
@@ -839,14 +830,14 @@
    ],
    [
     "MEL",
-    0.38
+    0.4
    ]
   ],
-  "tv": 0.72,
-  "moi_cp": 14673,
+  "tv": 0.77,
+  "moi_cp": 14735,
   "max": 1.5,
-  "y": "NKG — đối thủ tôn mạ trực tiếp — P/B 0,68 với ROE 4 quý 2,2%; HPG 1,23 với ROE 17,4%. ROE 4 quý của HSG 5,7% gồm lãi tồn kho quý 3; NĐ2027E cơ sở ~3%.",
-  "ng": "BCTC VNDirect quý 2/2026, giá 20/10/2026 (vốn hóa VNDirect)"
+  "y": "NKG — đối thủ tôn mạ trực tiếp — P/B 0,77 với ROE 4 quý 3,2%; HPG 1,18 với ROE 19,7%. ROE NĐ2026 của HSG 5,4% gồm lãi tồn kho quý 3; NĐ2027E cơ sở ~2,5%.",
+  "ng": "BCTC VNDirect quý gần nhất, giá 30/10/2026 (vốn hóa VNDirect)"
  },
  "theo_doi": [
   {
@@ -864,43 +855,65 @@
    "quy": "Q4/2026 (quý 1 NĐ27)",
    "fd": "2026-12-31",
    "ln": [
-    -67,
-    101,
-    265
+    -92,
+    81,
+    254
    ],
    "ck": 62
   },
   {
-   "quy": "Cả NĐ2026",
+   "quy": "Cả NĐ2027",
    "ln": [
-    326,
-    577,
-    732
+    -375,
+    302,
+    972
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "10–11/2026",
+   "khi": "10/2026",
    "loai": "hai",
-   "tieu": "KQKD quý 4 NĐ2026 (7–9/2026)",
-   "ct": "HRC giảm ~10% từ đỉnh T6 khi giá vốn còn tồn kho mua quý 2. Cơ sở: biên 11,2%, LN ~8 tỷ; xấu lỗ 242 tỷ; tốt 164 tỷ; cùng kỳ 88 tỷ.",
+   "tieu": "Đã ra: KQKD quý 4 NĐ2026 (7–9/2026)",
+   "ct": "LN 55 tỷ (−37%) vs mô hình cũ ~8 tỷ: biên 12,0% (cũ 11,2%), doanh thu 10.384 tỷ; lãi vay 139 tỷ, thuế ~40%. Cả NĐ2026 623 tỷ, vượt phương án 2 (600).",
    "tac": [
-    "Biên gộp ≥ 12,4%",
-    "nghiêng về kịch bản tốt; dưới 10% là xấu"
+    "−37% YoY",
+    "không lỗ tồn kho; lãi suất cao hơn → nâng giả định lãi vay NĐ2027"
    ],
-   "theo_doi": "biên gộp, dự phòng giảm giá tồn kho"
+   "theo_doi": "BCTC kiểm toán NĐ2026"
+  },
+  {
+   "khi": "01/2027",
+   "loai": "hai",
+   "tieu": "KQKD quý 1 NĐ2027 (10–12/2026)",
+   "ct": "Cơ sở LN ~81 tỷ (xấu −92, tốt 254); cùng kỳ 62 tỷ. Điểm cần xem: lãi suất vay, nợ vay có giảm theo tồn kho không.",
+   "tac": [
+    "±0,4 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất vay"
+   ],
+   "theo_doi": "biên gộp, lãi vay quý"
+  },
+  {
+   "khi": "3/2027",
+   "loai": "hai",
+   "tieu": "ĐHĐCĐ: kế hoạch NĐ2027, cổ tức NĐ2026",
+   "ct": "NĐ2026 đặt 2 phương án (LNST 500/600 tỷ) và đã vượt cả hai; NĐ2025 trả cổ tức 30% bằng cổ phiếu. Kế hoạch NĐ2027 so với cơ sở mô hình.",
+   "tac": [
+    "302 tỷ",
+    "LN NĐ2027E cơ sở để so với kế hoạch"
+   ],
+   "theo_doi": "tài liệu ĐHĐCĐ"
   },
   {
    "khi": "Q4/2026–2027",
    "loai": "len",
    "tieu": "Mùa xây dựng, đầu tư công, nhà ở xã hội",
-   "ct": "Sản lượng nội địa (tôn + ống) 9 tháng +6% lên ~883 nghìn tấn; MBS dự báo tiêu thụ tôn mạ toàn ngành 2026 +10%, nhà ở xã hội +45%, đầu tư công +18%.",
+   "ct": "Sản lượng nội địa (tôn + ống) 9 tháng +6%; MBS dự báo tiêu thụ tôn mạ toàn ngành 2026 +10%, nhà ở xã hội +45%, đầu tư công +18%.",
    "tac": [
     "±0,2 nghìn đ/cp",
-    "mỗi ±5% sản lượng NĐ2027 (±30 tỷ LN)"
+    "mỗi ±5% sản lượng NĐ2027 (±29 tỷ LN)"
    ],
-   "theo_doi": "sản lượng hằng tháng HSG công bố"
+   "theo_doi": "sản lượng HSG công bố"
   },
   {
    "khi": "2027",
@@ -908,8 +921,8 @@
    "tieu": "Giá HRC đi lên lại",
    "ct": "HSG giữ trên 100 ngày tồn kho: HRC tăng thì lặp lại lãi tồn kho như quý 3 NĐ2026. Kịch bản tốt: lãi gộp 2,65 triệu đ/tấn.",
    "tac": [
-    "±1,1 nghìn đ/cp",
-    "mỗi ±100 đ/kg chênh lệch tôn – HRC (±149 tỷ LN)"
+    "±1,0 nghìn đ/cp",
+    "mỗi ±100 đ/kg chênh lệch tôn – HRC (±146 tỷ LN)"
    ],
    "theo_doi": "giá HRC HPG chào hằng tháng"
   },
@@ -929,12 +942,24 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "HRC giảm tiếp, lỗ tồn kho",
-   "ct": "HRC Ấn Độ, Indonesia chào 534–535 USD/tấn; tồn kho 8.268 tỷ (30/6) chịu lỗ khi giá giảm — như NĐ2022–2023 (biên gộp 9,7–9,9%, LN 251 và 30 tỷ).",
+   "ct": "HRC Ấn Độ, Indonesia chào 534–535 USD/tấn; tồn kho tăng lại 8.722 tỷ (30/9) chịu lỗ khi giá giảm — như NĐ2022–2023 (biên gộp 9,7–9,9%, LN 251 và 30 tỷ).",
    "tac": [
-    "−3,1 nghìn đ/cp",
+    "−2,5 nghìn đ/cp",
     "về kịch bản xấu (lãi gộp 2,15 triệu đ/tấn, P/B 0,55)"
    ],
    "theo_doi": "giá HRC, biên gộp quý"
+  },
+  {
+   "khi": "Liên tục",
+   "loai": "xuong",
+   "muc": 3,
+   "tieu": "Lãi vay",
+   "ct": "Vay ngắn hạn 7.333 tỷ (30/9/2026), lãi suất bình quân lên ~7,6%/năm quý 4 (NĐ2025 ~3,8%); lãi vay NĐ2026 +127%, quý 4 = 59% lãi hoạt động.",
+   "tac": [
+    "±0,4 nghìn đ/cp",
+    "mỗi ±1 điểm % lãi suất (±52 tỷ LN)"
+   ],
+   "theo_doi": "lãi suất, nợ vay ròng"
   },
   {
    "khi": "2026–2027",
@@ -958,23 +983,11 @@
    "theo_doi": "thị phần VSA, chiết khấu đại lý"
   },
   {
-   "khi": "Liên tục",
-   "loai": "xuong",
-   "muc": 2,
-   "tieu": "Lãi vay",
-   "ct": "Vay ngắn hạn 7.252 tỷ (30/6/2026), lãi suất bình quân ~6,2% (NĐ2025 ~3,8%); lãi vay 9 tháng +104%.",
-   "tac": [
-    "±0,4 nghìn đ/cp",
-    "mỗi ±1 điểm % lãi suất (±50 tỷ LN)"
-   ],
-   "theo_doi": "lãi suất, nợ vay ròng"
-  },
-  {
    "khi": "2026–2028",
    "loai": "xuong",
    "muc": 1,
    "tieu": "Đầu tư mới: Phú Mỹ, nhà ở xã hội",
-   "ct": "Xây dựng dở dang 1.487 tỷ (31/3/2026, +114%) cho nhà máy tôn Hoa Sen Phú Mỹ, Hoa Sen Home; ĐHĐCĐ 3/2026 nêu hướng 20.000 căn nhà ở xã hội — thêm nhu cầu vốn.",
+   "ct": "Xây dựng dở dang 1.656 tỷ (30/9/2026; 31/3: 1.487) cho nhà máy Phú Mỹ, Hoa Sen Home; cổ đông thiểu số góp thêm ~90 tỷ vào công ty con quý 4; ĐHĐCĐ nêu 20.000 căn nhà ở xã hội — thêm nhu cầu vốn.",
    "tac": "",
    "theo_doi": "đầu tư, nợ vay ròng"
   }
@@ -990,7 +1003,7 @@
     },
     {
      "h": -1,
-     "t": "Lãi suất cho vay tăng từ 3/2026; lãi suất bình quân của HSG lên ~6,2% (NĐ2025 ~3,8%).",
+     "t": "Lãi suất cho vay tăng từ 3/2026; lãi suất bình quân của HSG lên ~7,6% quý 4 NĐ2026 (NĐ2025 ~3,8%).",
      "ng": "FPTS 20/03 · BCTC"
     },
     {
@@ -1030,7 +1043,7 @@
     },
     {
      "h": -1,
-     "t": "Vốn lưu động nặng: tồn kho trên 100 ngày (108 ngày quý 1 NĐ), vay ngắn hạn 7.252 tỷ; dòng tiền kinh doanh âm hai quý đầu NĐ2026.",
+     "t": "Vốn lưu động nặng: tồn kho trên 100 ngày (108 ngày quý 1 NĐ), vay ngắn hạn 7.333 tỷ (30/9/2026); dòng tiền kinh doanh âm hai quý đầu NĐ2026.",
      "ng": "VDS 17/04 · NHSV 12/05"
     },
     {
@@ -1185,7 +1198,6 @@
    "kieu": "duong",
    "dv": "%",
    "nhan": [
-    "Q3/23",
     "Q4/23",
     "Q1/24",
     "Q2/24",
@@ -1196,13 +1208,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Biên gộp",
      "v": [
-      13.3,
       10.5,
       12.1,
       12.3,
@@ -1213,14 +1225,15 @@
       12.3,
       11.2,
       11.7,
-      15.3
+      15.3,
+      12.0
      ],
      "mau": "c1",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Q2/26 (quý 3 NĐ) 15,3% là lãi tồn kho; 11 quý trước dao động 8,5–13,3%, trung vị 12,1%.",
+   "y": "Q2/26 (quý 3 NĐ) 15,3% là lãi tồn kho; Q3/26 về 12,0%, trong dải 10 quý trước 8,5–12,8%.",
    "ng": "BCTC HSG (VNDirect), quý dương lịch"
   },
   {
@@ -1228,47 +1241,47 @@
    "kieu": "cot",
    "dv": "tỷ đồng",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Chi phí lãi vay",
      "v": [
-      40,
       49,
       46,
       43,
       47,
       52,
       108,
-      121
+      121,
+      139
      ],
      "mau": "c1"
     },
     {
      "ten": "Doanh thu tài chính",
      "v": [
-      129,
       43,
       120,
       61,
       56,
       39,
       26,
-      4
+      4,
+      12
      ],
      "mau": "c4"
     }
    ],
    "so_le": 0,
-   "y": "Lãi vay gấp 2,5 lần từ Q1/26 khi vay ngắn hạn tài trợ tồn kho; doanh thu tài chính (tỷ giá xuất khẩu) gần như mất.",
+   "y": "Lãi vay tăng mỗi quý (108 → 121 → 139 tỷ) dù dư nợ đi ngang ~7,3 nghìn tỷ — lãi suất lên; doanh thu tài chính gần như mất.",
    "ng": "BCTC HSG (VNDirect)"
   },
   {
@@ -1276,27 +1289,27 @@
    "kieu": "duong",
    "dv": "tỷ đồng",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Hàng tồn kho",
      "v": [
-      9712,
       9749,
       8029,
       8042,
       8204,
       9440,
       10180,
-      8268
+      8268,
+      8722
      ],
      "mau": "c1",
      "net": false
@@ -1304,65 +1317,65 @@
     {
      "ten": "Vay ngắn hạn",
      "v": [
-      5364,
       6410,
       3532,
       4630,
       4404,
       6143,
       8268,
-      7252
+      7252,
+      7333
      ],
      "mau": "c2",
      "net": false
     }
    ],
    "so_le": 0,
-   "y": "Tích HRC giá thấp đẩy tồn kho lên 10.180 tỷ (31/3/2026), vay ngắn hạn 8.268 tỷ; quý 3 NĐ bán bớt tồn kho, vay còn 7.252 tỷ.",
+   "y": "Tích HRC giá thấp đẩy tồn kho lên 10.180 tỷ (31/3/2026); quý 3 NĐ bán bớt, quý 4 tăng lại 8.722 tỷ, vay ngắn hạn 7.333 tỷ chưa giảm.",
    "ng": "BCTC HSG (VNDirect)"
   }
  ],
  "ke_hoach": {
-  "nam": "niên độ 2025–2026",
+  "nam": "niên độ 2025–2026 (đã kết thúc)",
   "ds": [
    {
-    "ten": "Sản lượng",
+    "ten": "Sản lượng (quý 4 ước)",
     "kh": 1750,
-    "th": 1319.5,
-    "ky": "9T",
-    "tg": 75,
+    "th": 1830,
+    "ky": "12T",
+    "tg": 100,
     "dv": "nghìn tấn",
-    "ng": "ĐHĐCĐ 7/3/2026 (phương án 1) · HSG ước tính 13/7"
+    "ng": "ĐHĐCĐ 7/3/2026 (phương án 1) · 9T HSG công bố + quý 4 ước từ doanh thu"
    },
    {
     "ten": "Doanh thu thuần",
     "kh": 35000,
-    "th": 27351,
-    "ky": "9T",
-    "tg": 75,
+    "th": 37736,
+    "ky": "12T",
+    "tg": 100,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 7/3/2026 · BCTC"
+    "ng": "ĐHĐCĐ 7/3/2026 · BCTC 4 quý"
    },
    {
     "ten": "LNST (phương án 1)",
     "kh": 500,
-    "th": 568,
-    "ky": "9T",
-    "tg": 75,
+    "th": 624,
+    "ky": "12T",
+    "tg": 100,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 7/3/2026 · BCTC"
+    "ng": "ĐHĐCĐ 7/3/2026 · BCTC 4 quý"
    },
    {
     "ten": "LNST (phương án 2)",
     "kh": 600,
-    "th": 568,
-    "ky": "9T",
-    "tg": 75,
+    "th": 624,
+    "ky": "12T",
+    "tg": 100,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 7/3/2026 · BCTC"
+    "ng": "ĐHĐCĐ 7/3/2026 · BCTC 4 quý"
    }
   ],
-  "y": "9 tháng đã vượt LNST phương án 1 nhờ riêng quý 3 (382 tỷ); cơ sở cả niên độ 577 tỷ ≈ phương án 2 khi quý 4 về hòa vốn. Sản lượng, doanh thu chậm nhịp (75%, 78%)."
+  "y": "Cả niên độ vượt hai phương án LNST (624 tỷ = 125% / 104%) và doanh thu phương án 2 (37.000); phần vượt đến từ riêng quý 3 (382 tỷ)."
  },
  "ctck": [
   {
