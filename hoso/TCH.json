@@ -3,9 +3,9 @@
  "ma": "TCH",
  "ten": "CTCP Đầu tư Dịch vụ Tài chính Hoàng Huy",
  "nganh": "Bất động sản nhà ở (Hải Phòng), phân phối xe tải",
- "ky": "BCTC Q2/2026 (Q1 năm tài chính 2026) · trả trước, tồn kho theo dự án đến 30/6/2026",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 (Q2 năm tài chính 2026, cuối 10/2026)",
+ "ky": "BCTC Q3/2026 (Q2 năm tài chính 2026, 7–9/2026) · giá 30/10/2026",
+ "cap_nhat": "2026-10-31",
+ "lan_sau": "sau BCTC Q4/2026 (Q3 năm tài chính 2026, cuối 1/2027)",
  "cp_trieu": 1003.3,
  "cp_ng": "Vốn điều lệ 9.121 tỷ (BCTC Q2/2026) = 912,1 triệu cp; thưởng 10:1 (~91,2 triệu cp), GDKHQ 03/09/2026, ĐKCC 04/09/2026 → 1.003,3 triệu cp, vốn điều lệ ~10.033 tỷ. Không có cổ phiếu quỹ.",
  "co_tuc": [],
@@ -16,38 +16,38 @@
   ]
  ],
  "tieu_de": {
-  "t": "Lãi từ 9,3 nghìn tỷ hợp đồng đã bán đã vào giá; phần chưa bán mới quyết định",
+  "t": "Quý bàn giao lớn đầu tiên lãi 538 tỷ; ~8 nghìn tỷ hợp đồng còn lại đã vào giá",
   "dk": "up_duoi:10",
-  "khac": "Giá chưa phản ánh hết ~2,3 nghìn tỷ lãi cổ đông từ hợp đồng đã bán chờ bàn giao"
+  "khac": "Quý bàn giao lớn đầu tiên lãi 538 tỷ; giá chưa phản ánh hết ~2,1 nghìn tỷ lãi chờ giao"
  },
- "dong_mo": "Năm tài chính 2025 (4/2025–3/2026) LN cổ đông chỉ 194 tỷ, LNST đạt 15% kế hoạch. Thấp tầng New City II, Green River (~9,3 nghìn tỷ hợp đồng) bàn giao từ Q2/2026: LN FY2026E cơ sở ~1,2 nghìn tỷ. Nhưng trả trước chỉ tăng 368 tỷ trong Q2/2026. Vốn chủ × P/B 0,85 + lãi đã bán: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q2 năm tài chính 2026 (7–9/2026) LN cổ đông 538 tỷ, gấp 13 lần cùng kỳ: doanh thu 1,96 nghìn tỷ, biên gộp BĐS ~54%. 6 tháng đạt 46% kế hoạch LNST; FY2026E cơ sở ~1,4 nghìn tỷ. Trả trước giảm còn 5,6 nghìn tỷ, bán mới vẫn chậm. Vốn chủ × P/B 0,85 + lãi đã bán: {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "9,3",
-   "nhan": "nghìn tỷ hợp đồng đã bán, chờ bàn giao",
-   "tieu": "Lợi nhuận FY2026–2027 phần lớn đã bán xong",
-   "t": "Người mua trả trước 6.492 tỷ (30/6/2026): CRV — chủ đầu tư New City II — 4.180 tỷ; Green River, H2 Commerce 2.313 tỷ. Trần thu 70% trước bàn giao → hợp đồng ~9,3 nghìn tỷ (VDS: doanh số năm tài chính 2025 ~9.000 tỷ). Biên gộp 50%, chi phí bán hàng 10%, thuế 20%: cổ đông TCH nhận ~2,3 nghìn tỷ ≈ 2,3 nghìn đ/cp, gấp 12 lần LN FY2025.",
-   "ng": "BCTC Q2/2026 TCH, CRV · Luật KDBĐS 2023 · VDS 08/06 · mô hình"
+   "so": "538",
+   "nhan": "tỷ LN cổ đông Q2 FY2026 (7–9/2026); cùng kỳ 40",
+   "tieu": "Q3 xác nhận bàn giao đã chạy, biên cao hơn dự phóng",
+   "t": "Doanh thu 1.958 tỷ, LN gộp 956 tỷ; trừ ~250 tỷ xe, cho thuê thì BĐS ~1,7 nghìn tỷ, biên gộp ~54%, chi phí bán hàng ~4% (mô hình cũ 50% và 10%, LN quý cơ sở 241 tỷ). 6 tháng LNST 914 tỷ = 46% kế hoạch. Thiểu số nhận 28% LNST quý (New City II ở CRV) → phần của TCH hạ 77% → 73%.",
+   "ng": "BCTC Q3/2026 (VNDirect) · Mekong ASEAN 30/10 · mô hình"
   },
   {
-   "so": "+368 tỷ",
-   "nhan": "trả trước tăng thêm Q2/2026; Q3/2025: +2.642 tỷ",
-   "tieu": "Đà bán đã chậm hẳn; FY2027 phụ thuộc phần chưa bán",
-   "t": "Trả trước tăng 2.642 tỷ Q3/2025, 2.264 tỷ Q4/2025, rồi chỉ 775 và 368 tỷ hai quý 2026. ~60% căn thấp tầng New City II, Green River chưa bán (VDS: đã bán ~400 và ~350 căn), 2.494 căn HH1–HH4 chưa mở bán đến 8/2026; lãi vay mua nhà trên 9%, TCH hỗ trợ lãi suất 0% năm đầu. Cơ sở FY2027 chỉ ~4,5 nghìn tỷ doanh thu bàn giao, dưới SHS (7,3) và VDS (8,3).",
+   "so": "8,0",
+   "nhan": "nghìn tỷ hợp đồng đã bán còn chờ giao (30/9/2026)",
+   "tieu": "Còn ~2,1 nghìn tỷ lãi chờ ghi nhận; bán mới vẫn chậm",
+   "t": "Trả trước giảm 6.492 → 5.600 tỷ: ~1,7 nghìn tỷ bàn giao rút khỏi trả trước, tiền bán mới ước chỉ ~0,3 nghìn tỷ (Q3/2025: +2,6). Trần thu 70% → còn ~8,0 nghìn tỷ hợp đồng; biên 52%, bán hàng 6%: cổ đông TCH nhận ~2,1 nghìn tỷ ≈ 2,1 nghìn đ/cp. ~60% thấp tầng, HH1–HH4 chưa bán; cơ sở FY2027 ~4,5 nghìn tỷ bàn giao (SHS 7,3, VDS 8,3).",
    "ng": "BCTC (VNDirect) · VDS 08/06 · SHS 08/08 · mô hình"
   },
   {
-   "so": "4,6",
-   "nhan": "nghìn tỷ tiền và tiền gửi, không nợ vay (30/6/2026)",
-   "tieu": "Bảng cân đối sạch, nhưng tiền đang chuyển thành đất",
-   "t": "Tiền và đầu tư ngắn hạn giảm từ 6,9 nghìn tỷ (12/2025) còn 4,6; tồn kho tăng 3,3 nghìn tỷ: ~1.322 tỷ tiền đất I14 Bắc Sông Cấm (giao đất 23/07/2026) và xây New City II; dòng tiền kinh doanh Q2/2026 âm 1.596 tỷ. 150 Tô Hiệu (998 căn) còn nghĩa vụ tiền đất. Tài chính ròng 99 tỷ — 49% LNTT Q2/2026 — sẽ giảm theo số dư tiền trước khi tiền bàn giao về bù.",
-   "ng": "BCTC (VNDirect) · SHS 08/08"
+   "so": "3,2",
+   "nhan": "nghìn tỷ tiền và tiền gửi, không nợ vay (30/9/2026)",
+   "tieu": "Tiền tiếp tục chuyển thành đất; tồn kho 69% tài sản",
+   "t": "Tiền và đầu tư ngắn hạn giảm từ 6,9 nghìn tỷ (12/2025) còn 3,2 dù quý vừa bàn giao ~1,7 nghìn tỷ; tồn kho tăng 4,9 nghìn tỷ trong 9 tháng lên 15,3: ~1.322 tỷ tiền đất I14, xây New City II, dự án mới. 150 Tô Hiệu còn nghĩa vụ tiền đất. Tài chính ròng 74 tỷ/quý (Q1: 99) sẽ giảm tiếp theo số dư tiền.",
+   "ng": "BCTC (VNDirect) · SHS 08/08 · Kinh tế Chứng khoán 31/10"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Vốn chủ × P/B 0,85 + lãi đã bán: {up_so} so với giá hiện tại",
-   "t": "Vốn chủ cổ đông 11,6 nghìn tỷ (30/6/2026) × 0,85 (≈ thấp 10% lịch sử TCH 0,86; trung vị 8 chủ đầu tư nhà ở 0,90) + ~2,3 nghìn tỷ lãi đã bán × 0,85. Tương đương P/B 1,02 lần, 9,7 lần LN FY2026E. Xấu 8,2 (P/B 0,6 như đáy 2/2023, giao chậm, biên 44%), tốt 16,0 (P/B 1,15, biên 56%). Căn chưa bán, HH1–HH4, Tô Hiệu, I14 chỉ tính theo giá sổ sách.",
+   "t": "Vốn chủ cổ đông 12,2 nghìn tỷ (30/9/2026) × 0,85 (≈ thấp 10% lịch sử TCH 0,86; trung vị 8 chủ đầu tư nhà ở 0,89) + ~2,1 nghìn tỷ lãi đã bán × 0,85. Tương đương P/B 1,00 lần, 8,7 lần LN FY2026E. Xấu 8,4 (P/B 0,6 như đáy 2/2023, biên 44%, bán hàng 10%), tốt 16,2 (P/B 1,15, biên 56%). Căn chưa bán, HH1–HH4, Tô Hiệu, I14 chỉ tính theo giá sổ sách.",
    "ng": "mô hình · P/B lịch sử: BCTC VNDirect, giá cuối tháng"
   }
  ],
@@ -59,19 +59,19 @@
   ],
   "ln": [
    194,
-   1222,
-   1323
+   1395,
+   1389
   ],
   "ln_truoc": 855,
   "eps": [
    193,
-   1218,
-   1319
+   1390,
+   1384
   ],
   "bv": [
    11458,
-   12676,
-   13995
+   12848,
+   14233
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -79,7 +79,7 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      1.45,
-     4.99,
+     5.3,
      5.5
     ],
     "d": 2
@@ -88,8 +88,8 @@
     "ten": "ROE",
     "v": [
      1.8,
-     10.1,
-     9.9
+     11.4,
+     10.2
     ],
     "d": 1,
     "pt": 1
@@ -111,8 +111,8 @@
     "mau": "c1",
     "v": [
      129,
-     1647,
-     1848
+     2072,
+     2118
     ]
    },
    {
@@ -120,8 +120,8 @@
     "mau": "c2",
     "v": [
      236,
-     324,
-     300
+     302,
+     260
     ]
    },
    {
@@ -129,7 +129,7 @@
     "mau": "c4",
     "v": [
      -9,
-     10,
+     8,
      0
     ]
    }
@@ -140,49 +140,49 @@
  },
  "so_sanh": {
   "tieu": "P/B so với chủ đầu tư nhà ở niêm yết",
-  "phu": "giá hôm nay; vốn chủ cổ đông 30/6/2026, 1.003,3 triệu cp",
+  "phu": "giá hôm nay; vốn chủ cổ đông 30/9/2026, 1.003,3 triệu cp",
   "chi_so": "P/B",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "chi_so_kv": "P/B (giá 30/10)",
   "nhom": "8 chủ đầu tư nhà ở niêm yết",
   "kv": [
    [
     "VHM",
-    1.88
+    1.75
    ],
    [
     "CEO",
-    1.03
+    1.01
    ],
    [
     "KDH",
-    0.94
-   ],
-   [
-    "DXG",
-    0.91
-   ],
-   [
-    "PDR",
     0.89
    ],
    [
+    "DXG",
+    0.89
+   ],
+   [
+    "PDR",
+    0.88
+   ],
+   [
     "NLG",
-    0.83
+    0.81
    ],
    [
     "DIG",
-    0.8
+    0.79
    ],
    [
     "NVL",
     0.61
    ]
   ],
-  "tv": 0.9,
-  "moi_cp": 11583,
+  "tv": 0.89,
+  "moi_cp": 12119,
   "max": 2.5,
-  "y": "Trừ VHM (ROE 4 quý 30%), cả nhóm 0,6–1,03 lần với ROE 4 quý 1–9%. TCH ROE 4 quý 2,6% nhưng có ~9,3 nghìn tỷ hợp đồng chờ giao và không nợ vay — P/B quanh 1 lần là mức của nhóm cộng phần lãi đã bán, chưa phải rẻ.",
-  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ 30/6/2026 (bảng giá VNDirect 20/10/2026, BCTC VNDirect); NVL đã gồm tiền chào bán 3:1 (như hồ sơ KDH)"
+  "y": "Trừ VHM (ROE 4 quý 38%), cả nhóm 0,6–1,01 lần với ROE 4 quý 1–13%. TCH ROE 4 quý ~7% sau quý bàn giao, còn ~8,0 nghìn tỷ hợp đồng chờ giao và không nợ vay — P/B quanh 1 lần là mức của nhóm cộng phần lãi đã bán, chưa phải rẻ.",
+  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ quý BCTC gần nhất (30/9/2026; CEO, PDR 30/6) — bảng giá VNDirect 30/10/2026; NVL theo bảng giá, đã gồm tiền chào bán 3:1 (như hồ sơ KDH)"
  },
  "mo_hinh": {
   "tieu": "Dự phóng hợp nhất (năm tài chính 1/4–31/3)",
@@ -199,7 +199,7 @@
     "ten": "Doanh thu bàn giao BĐS (tỷ)",
     "v": [
      481,
-     4000,
+     4300,
      4500
     ],
     "tang": 1
@@ -208,16 +208,16 @@
     "ten": "Biên gộp BĐS (%)",
     "s": [
      "—",
-     "50",
-     "50"
+     "52",
+     "52"
     ]
    },
    {
     "ten": "Chi phí bán hàng, hỗ trợ (% doanh thu BĐS)",
     "s": [
      "—",
-     "10",
-     "10"
+     "6",
+     "6"
     ]
    },
    {
@@ -227,7 +227,7 @@
     "ten": "Doanh thu thuần (tỷ)",
     "v": [
      1447,
-     4995,
+     5296,
      5496
     ],
     "tang": 1
@@ -236,32 +236,32 @@
     "ten": "LN gộp (tỷ)",
     "v": [
      352,
-     2162,
-     2414
+     2421,
+     2504
     ]
    },
    {
     "ten": "Chi phí bán hàng + quản lý (tỷ)",
     "v": [
      223,
-     515,
-     566
+     349,
+     386
     ]
    },
    {
     "ten": "Tài chính ròng (tỷ)",
     "v": [
      236,
-     324,
-     300
+     302,
+     260
     ]
    },
    {
     "ten": "LN trước thuế (tỷ)",
     "v": [
      356,
-     1981,
-     2148
+     2382,
+     2378
     ],
     "tang": 1
    },
@@ -269,16 +269,16 @@
     "ten": "LNST hợp nhất (tỷ)",
     "v": [
      256,
-     1588,
-     1718
+     1917,
+     1902
     ]
    },
    {
     "ten": "LN cổ đông TCH (tỷ)",
     "v": [
      194,
-     1222,
-     1323
+     1395,
+     1389
     ],
     "dam": 1,
     "tang": 1
@@ -287,8 +287,8 @@
     "ten": "EPS (đ)",
     "v": [
      193,
-     1218,
-     1319
+     1390,
+     1384
     ],
     "eps": 1
    },
@@ -296,8 +296,8 @@
     "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
     "v": [
      11.5,
-     12.7,
-     14.0
+     12.9,
+     14.3
     ],
     "d": 1
    },
@@ -305,77 +305,77 @@
     "ten": "ROE (%)",
     "v": [
      1.8,
-     10.1,
-     9.9
+     11.4,
+     10.2
     ],
     "d": 1
    }
   ],
-  "ghi": "FY2026E = Q1 thực tế (4–6/2026: LN cổ đông 125 tỷ) + 3 quý ước. LN cổ đông = LNST × 77% (FY2024–Q1 FY2026: ~76%; New City II thuộc CRV, TCH hưởng ~2/3). Xe + cho thuê: doanh thu ~1.000 tỷ/năm, đóng góp ròng ~12 tỷ/quý. FY2025A theo BCTC kiểm toán (VDS 08/06)."
+  "ghi": "FY2026E = 6 tháng thực tế (4–9/2026: LN cổ đông 663 tỷ, Q1 125 + Q2 538) + 2 quý ước. LN cổ đông = LNST × 73% (6T FY2026 72,5%; FY2024–2025 ~76%; New City II thuộc CRV, TCH hưởng ~2/3). Xe + cho thuê: doanh thu ~1.000 tỷ/năm, đóng góp ròng ~12 tỷ/quý. FY2025A theo BCTC kiểm toán (VDS 08/06)."
  },
  "cau_ln": {
   "ten": "LN cổ đông FY2026E → FY2027E (kịch bản cơ sở)",
   "dau": [
    "FY2026E",
-   1222
+   1395
   ],
   "cuoi": [
    "FY2027E",
-   1323
+   1389
   ],
   "buoc": [
    [
-    "Bàn giao BĐS (+500 tỷ doanh thu)",
-    123
+    "Bàn giao BĐS (+200 tỷ doanh thu)",
+    28
    ],
    [
     "Tài chính ròng",
-    -15
+    -28
    ],
    [
     "Xe, cho thuê và khác",
-    -7
+    -6
    ]
   ],
-  "y": "Bàn giao thêm ~500 tỷ doanh thu BĐS gần như là toàn bộ mức tăng; lãi tài chính giảm vì tiền đã chuyển vào I14, Tô Hiệu. Không có hợp đồng bán mới thì FY2027 đi ngang.",
+  "y": "Bàn giao BĐS FY2027 cơ sở chỉ nhỉnh hơn FY2026 (~4,5 so với ~4,3 nghìn tỷ); lãi tài chính giảm vì tiền đã chuyển vào I14, Tô Hiệu. Không có hợp đồng bán mới thì FY2027 đi ngang.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
    "ten": "Hợp đồng đã bán chờ bàn giao (tỷ)",
    "v": [
-    "9.300",
-    "9.300",
-    "9.300"
+    "8.000",
+    "8.000",
+    "8.000"
    ],
-   "ly_do": "Trả trước 6.492 tỷ (30/6/2026) ÷ trần 70% trước bàn giao (Luật KDBĐS 2023); VDS: doanh số năm tài chính 2025 ~9.000 tỷ"
+   "ly_do": "Trả trước 5.600 tỷ (30/9/2026) ÷ trần 70% trước bàn giao (Luật KDBĐS 2023); 30/6: 6.492 tỷ → ~9.300, quý vừa giao ~1.700"
   },
   {
    "ten": "Biên gộp BĐS",
    "v": [
     "44%",
-    "50%",
+    "52%",
     "56%"
    ],
-   "ly_do": "SHS: Q1 FY2026 ~46% (Green River); VDS 57% cho thấp tầng (tiền đất nộp 2023–2024, giá bán cao hơn 20–30% lúc tính tiền đất)"
+   "ly_do": "Q2 FY2026 ~54% (ước, trừ ~41 tỷ lãi gộp xe, cho thuê); SHS: Green River ~46%; VDS 57% cho thấp tầng (cũ: 44/50/56%)"
   },
   {
    "ten": "Chi phí bán hàng, hỗ trợ (% doanh thu BĐS)",
    "v": [
-    "12%",
     "10%",
-    "7%"
+    "6%",
+    "4%"
    ],
-   "ly_do": "SHS nâng 5% → 10% (hỗ trợ lãi suất 0% năm đầu, chiết khấu); VDS 9%"
+   "ly_do": "Q2 FY2026 ~4% doanh thu BĐS; SHS 10% (hỗ trợ lãi suất 0% năm đầu), VDS 9% — giữ dự phòng hỗ trợ ghi sau (cũ: 12/10/7%)"
   },
   {
    "ten": "Doanh thu bàn giao BĐS FY2026 (tỷ)",
    "v": [
-    "2.300",
-    "4.000",
-    "5.600"
+    "3.500",
+    "4.300",
+    "5.300"
    ],
-   "ly_do": "Kế hoạch doanh thu 5.000 tỷ gồm ~1.000 xe, cho thuê; Q1 203 tỷ; New City II giao từ Q3/2026. FY2025 chỉ đạt 29% kế hoạch doanh thu"
+   "ly_do": "6T ~1.910 tỷ (Q1 203, Q2 ~1.710); kế hoạch doanh thu 5.000 tỷ gồm ~1.000 xe, cho thuê. Cơ sở ~1.200 tỷ/quý hai quý còn lại (cũ: 4.000)"
   },
   {
    "ten": "Doanh thu bàn giao BĐS FY2027 (tỷ)",
@@ -387,22 +387,22 @@
    "ly_do": "Phần còn lại hợp đồng đã bán + bán mới (thấp tầng còn ~60% chưa bán, HH1–HH2, H2 giao FY2027–2028); SHS 7.288, VDS 8.337"
   },
   {
-   "ten": "Tài chính ròng mỗi quý Q2–Q4 FY2026 (tỷ)",
+   "ten": "Tài chính ròng mỗi quý Q3–Q4 FY2026 (tỷ)",
    "v": [
-    "60",
-    "75",
-    "90"
+    "50",
+    "65",
+    "80"
    ],
-   "ly_do": "Q1: 99 tỷ trên 4,6 nghìn tỷ tiền (30/6); tiền giảm 1,3 nghìn tỷ trong quý vì tiền đất I14, xây dựng"
+   "ly_do": "Q1 99, Q2 74 tỷ; tiền + đầu tư ngắn hạn 3,2 nghìn tỷ (30/9), giảm 1,3 trong quý"
   },
   {
    "ten": "Phần LNST thuộc cổ đông TCH",
    "v": [
-    "77%",
-    "77%",
-    "77%"
+    "73%",
+    "73%",
+    "73%"
    ],
-   "ly_do": "FY2024, FY2025, Q1 FY2026 ổn định ~76%; theo cơ cấu trả trước (New City II ở CRV, TCH hưởng ~2/3) ~79%"
+   "ly_do": "6T FY2026 72,5% (Q2 72%; New City II ở CRV, TCH hưởng ~2/3); FY2024–2025 ~76% (cũ: 77%)"
   },
   {
    "ten": "P/B vốn chủ (lãi đã bán tính riêng)",
@@ -411,7 +411,7 @@
     "0,85",
     "1,15"
    ],
-   "ly_do": "TCH từ 2016: đáy 0,58 (2/2023), thấp 10% 0,86, thấp 25% 1,19, trung vị 1,40; 8 chủ đầu tư nhà ở: trung vị 0,90"
+   "ly_do": "TCH từ 2016: đáy 0,58 (2/2023), thấp 10% 0,86, thấp 25% 1,19, trung vị 1,40; 8 chủ đầu tư nhà ở: trung vị 0,89"
   },
   {
    "ten": "Hệ số cho lãi đã bán chờ ghi nhận",
@@ -426,24 +426,24 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 672,
-   "ln27": 670,
-   "gia": 8.2,
-   "mo_ta": "Giao BĐS 2.300 tỷ FY2026, 2.500 tỷ FY2027; biên gộp 44%, bán hàng 12%; P/B 0,6, lãi đã bán × 0,7"
+   "ln26": 1051,
+   "ln27": 641,
+   "gia": 8.4,
+   "mo_ta": "Giao BĐS 3.500 tỷ FY2026, 2.500 tỷ FY2027; biên gộp 44%, bán hàng 10%; P/B 0,6, lãi đã bán × 0,7"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 1222,
-   "ln27": 1323,
-   "gia": 11.8,
-   "mo_ta": "Giao 4.000 / 4.500 tỷ; biên gộp 50%, bán hàng 10%; P/B 0,85, lãi đã bán × 0,85"
+   "ln26": 1395,
+   "ln27": 1389,
+   "gia": 12.1,
+   "mo_ta": "Giao 4.300 / 4.500 tỷ; biên gộp 52%, bán hàng 6%; P/B 0,85, lãi đã bán × 0,85"
   },
   {
    "ten": "Tốt",
-   "ln26": 1943,
-   "ln27": 2213,
-   "gia": 16.0,
-   "mo_ta": "Giao 5.600 / 6.500 tỷ (HH1–HH2, thấp tầng bán lại tốt); biên 56%, bán hàng 7%; P/B 1,15, lãi đã bán × 0,95"
+   "ln26": 1800,
+   "ln27": 2189,
+   "gia": 16.2,
+   "mo_ta": "Giao 5.300 / 6.500 tỷ (HH1–HH2, thấp tầng bán lại tốt); biên 56%, bán hàng 4%; P/B 1,15, lãi đã bán × 0,95"
   }
  ],
  "dinh_gia": {
@@ -456,32 +456,32 @@
     "ten": "Vốn chủ cổ đông (quỹ đất theo giá sổ sách)",
     "mau": "c2",
     "x": [
-     11621,
-     11621,
-     11621
+     12159,
+     12159,
+     12159
     ],
     "boi": [
      0.6,
      0.85,
      1.15
     ],
-    "x_ten": "Vốn chủ cổ đông TCH 30/6/2026",
+    "x_ten": "Vốn chủ cổ đông TCH 30/9/2026",
     "boi_ten": "P/B",
     "boi_d": 2,
     "sh": 1,
     "gt": [
-     6973,
-     9878,
-     13364
+     7295,
+     10335,
+     13983
     ]
    },
    {
     "ten": "Lãi hợp đồng đã bán, chờ bàn giao",
     "mau": "c1",
     "x": [
-     1833,
-     2292,
-     2807
+     1588,
+     2149,
+     2429
     ],
     "boi": [
      0.7,
@@ -493,21 +493,21 @@
     "boi_d": 2,
     "sh": 1,
     "gt": [
-     1283,
-     1948,
-     2667
+     1112,
+     1827,
+     2308
     ]
    }
   ],
   "von": [
-   8256,
-   11826,
-   16031
+   8407,
+   12162,
+   16291
   ],
   "gia": [
-   8.2,
-   11.8,
-   16.0
+   8.4,
+   12.1,
+   16.2
   ]
  },
  "nhay": [
@@ -518,12 +518,12 @@
   ],
   [
    "Biên gộp BĐS ±5 điểm % (hợp đồng đã bán)",
-   286,
+   234,
    0.2
   ],
   [
    "Hợp đồng đã bán ±1.000 tỷ",
-   246,
+   269,
    0.2
   ],
   [
@@ -533,7 +533,7 @@
   ],
   [
    "Phần LN thuộc cổ đông TCH ±5 điểm %",
-   149,
+   147,
    0.1
   ]
  ],
@@ -783,7 +783,7 @@
    0.9,
    1.05,
    1.0,
-   0.96
+   1.02
   ],
   "p10": 0.86,
   "p25": 1.19,
@@ -794,10 +794,10 @@
   ],
   "nay": [
    "2026-10",
-   0.96
+   1.02
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Kịch bản dùng P/B 0,6 · 0,85 · 1,15 cho vốn chủ (lãi đã bán tính riêng): ≈ đáy 2/2023 (0,58), thấp 10% (0,86), dưới thấp 25% (1,19); trung vị từ 2016 1,40, từ 2023 1,19. Giá trị cơ sở ≈ P/B 1,02 cả công ty, 0,85 lần vốn chủ cộng lãi chờ ghi nhận."
+  "dung": "Kịch bản dùng P/B 0,6 · 0,85 · 1,15 cho vốn chủ (lãi đã bán tính riêng): ≈ đáy 2/2023 (0,58), thấp 10% (0,86), dưới thấp 25% (1,19); trung vị từ 2016 1,40, từ 2023 1,19. Giá trị cơ sở ≈ P/B 1,00 cả công ty, 0,85 lần vốn chủ cộng lãi chờ ghi nhận."
  },
  "theo_doi": [
   {
@@ -814,9 +814,9 @@
    "quy": "Q4/2026 (Q3 FY2026)",
    "fd": "2026-12-31",
    "ln": [
-    189,
-    381,
-    633
+    178,
+    334,
+    517
    ],
    "ck": 52
   },
@@ -824,49 +824,60 @@
    "quy": "Q1/2027 (Q4 FY2026)",
    "fd": "2027-03-31",
    "ln": [
-    230,
-    475,
-    796
+    210,
+    398,
+    620
    ],
    "ck": 81
   },
   {
    "quy": "Cả FY2026 (4/2026–3/2027)",
    "ln": [
-    672,
-    1222,
-    1943
+    1051,
+    1395,
+    1800
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "Cuối 10/2026",
-   "loai": "hai",
-   "tieu": "BCTC Q3/2026 (Q2 FY2026)",
-   "ct": "Quý đầu bàn giao thấp tầng New City II theo kế hoạch (SHS: từ Q3/2026). Xem doanh thu BĐS, biên gộp và trả trước 30/9: giảm vì bàn giao là tốt, giảm vì không bán được là xấu.",
+   "khi": "30/10/2026",
+   "loai": "len",
+   "tieu": "Đã ra: Q2 FY2026 (7–9/2026) lãi 538 tỷ",
+   "ct": "Mô hình cũ cơ sở 241 tỷ (xấu 127, tốt 389). Vượt nhờ bàn giao nhanh (~1,7 nghìn tỷ doanh thu BĐS so với ~0,8 giả định) và biên gộp ~54%. Phần lớn là LN về sớm: FY2026E cơ sở chỉ tăng 1.222 → 1.395 tỷ.",
    "tac": [
-    "≥ 241 tỷ",
-    "LN cổ đông khớp cơ sở; dưới 127 tỷ nghiêng về xấu"
+    "11,8 → 12,1",
+    "giá trị cơ sở (nghìn đ/cp): biên cao hơn, hợp đồng còn lại ít hơn"
+   ],
+   "theo_doi": "biên gộp BĐS, trả trước"
+  },
+  {
+   "khi": "Cuối 1/2027",
+   "loai": "hai",
+   "tieu": "BCTC Q4/2026 (Q3 FY2026)",
+   "ct": "Quý bàn giao thứ hai: doanh thu BĐS có giữ trên 1 nghìn tỷ, biên gộp trên 50%, và trả trước có tăng lại nhờ bán mới hay tiếp tục giảm.",
+   "tac": [
+    "≥ 334 tỷ",
+    "LN cổ đông khớp cơ sở; dưới 178 tỷ nghiêng về xấu"
    ],
    "theo_doi": "doanh thu BĐS, trả trước"
   },
   {
-   "khi": "Q3/26–Q1/27",
+   "khi": "Q4/26–Q1/27",
    "loai": "len",
-   "tieu": "Bàn giao thấp tầng New City II, Green River",
-   "ct": "Green River đã bắt đầu bàn giao (thành phẩm 702 tỷ tại 30/6); New City II xây thô hầu hết phân khu, một số block đã cất nóc, giao từ Q3/2026 (SHS 8/2026).",
+   "tieu": "Bàn giao tiếp thấp tầng New City II, Green River",
+   "ct": "6 tháng đã giao ~1,9 nghìn tỷ doanh thu BĐS, doanh thu thuần đạt 48% kế hoạch 5.000 tỷ. Cơ sở còn ~2,4 nghìn tỷ trong hai quý tới.",
    "tac": [
-    "+246 tỷ LN",
-    "mỗi 1.000 tỷ doanh thu bàn giao (biên gộp 50%, bán hàng 10%)"
+    "+269 tỷ LN",
+    "mỗi 1.000 tỷ doanh thu bàn giao (biên gộp 52%, bán hàng 6%)"
    ],
    "theo_doi": "doanh thu BĐS mỗi quý"
   },
   {
-   "khi": "Q4/2026",
+   "khi": "Q4/2026–2027",
    "loai": "len",
    "tieu": "Mở bán HH1–HH2 (New City II)",
-   "ct": "2 trong 4 tháp 33 tầng của cụm HH1–HH4 (2.494 căn), sát trung tâm hành chính mới Bắc Sông Cấm; SHS ghi dự kiến mở bán Q3/2026, chưa có công bố giá.",
+   "ct": "2 trong 4 tháp 33 tầng của cụm HH1–HH4 (2.494 căn), sát trung tâm hành chính mới Bắc Sông Cấm; SHS ghi dự kiến mở bán Q3/2026, nhưng trả trước 30/9 chưa cho thấy đợt bán lớn.",
    "tac": [
     "+0,2 nghìn đ/cp",
     "mỗi 1.000 tỷ hợp đồng bán mới (hệ số 0,85)"
@@ -878,7 +889,7 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Thanh khoản BĐS Hải Phòng, lãi vay mua nhà",
-   "ct": "Trả trước chỉ +368 tỷ Q2/2026; lãi vay mua nhà trên 9% từ đầu 2026; nguồn cung mới tại Thủy Nguyên từ Vinhomes, Doji, Masterise, Nam Long (VDS).",
+   "ct": "Tiền bán mới ước chỉ ~0,3 nghìn tỷ Q3/2026 (trả trước +368 tỷ Q2); lãi vay mua nhà trên 9% từ đầu 2026; nguồn cung mới tại Thủy Nguyên từ Vinhomes, Doji, Masterise, Nam Long (VDS).",
    "tac": [
     "±1,2 nghìn đ/cp",
     "mỗi 0,1 lần P/B vốn chủ (giá trị quỹ đất chưa bán)"
@@ -890,19 +901,18 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Tiền chuyển vào quỹ đất mới",
-   "ct": "I14 (3,25 ha) đã hút ~1.322 tỷ; 150 Tô Hiệu chờ nộp tiền đất, giấy phép xây dựng; VCBS ghi TCH nghiên cứu thêm 7 dự án ~330 ha. Lãi tiền gửi giảm, ROE chậm lên.",
+   "ct": "Tồn kho +1.577 tỷ trong Q3/2026, chiếm 69% tài sản; I14 đã hút ~1.322 tỷ; 150 Tô Hiệu chờ nộp tiền đất. Lãi tiền gửi giảm, ROE chậm lên.",
    "tac": "",
    "theo_doi": "tiền, tồn kho \"dự án khác\""
   },
   {
    "khi": "FY2026–2027",
-   "loai": "xuong",
-   "muc": 2,
+   "loai": "hai",
    "tieu": "Biên gộp, chi phí hỗ trợ bán hàng",
-   "ct": "Biên gộp BĐS Q2/2026 ~46% (SHS), dưới mức 57% VDS giả định; SHS nâng chi phí bán hàng lên 10% doanh thu vì hỗ trợ lãi suất, chiết khấu.",
+   "ct": "Q2 FY2026 biên gộp BĐS ~54%, bán hàng ~4% — tốt hơn SHS (46%, 10%). Green River (~46%) và hỗ trợ lãi suất có thể kéo biên xuống ở các quý sau.",
    "tac": [
     "±0,2 nghìn đ/cp",
-    "mỗi 5 điểm % biên gộp trên hợp đồng đã bán (LN cổ đông ±286 tỷ)"
+    "mỗi 5 điểm % biên gộp trên hợp đồng đã bán (LN cổ đông ±234 tỷ)"
    ],
    "theo_doi": "biên gộp BĐS mỗi quý"
   },
@@ -911,7 +921,7 @@
    "loai": "xuong",
    "muc": 1,
    "tieu": "Lợi ích thiểu số qua CRV, HHS",
-   "ct": "New City II thuộc CRV (TCH hưởng ~2/3: trực tiếp ~38%, qua HHS — TCH giữ 58,31% — ~51%); VDS lưu ý tăng vốn CRV có thể đổi tỷ lệ hưởng. Thiểu số nhận 23% LNST Q2/2026.",
+   "ct": "New City II thuộc CRV (TCH hưởng ~2/3: trực tiếp ~38%, qua HHS — TCH giữ 58,31% — ~51%). Thiểu số nhận 28% LNST Q3/2026 (Q2: 23%); VDS lưu ý tăng vốn CRV có thể đổi tỷ lệ hưởng.",
    "tac": [
     "±0,1 nghìn đ/cp",
     "mỗi 5 điểm % phần LN thuộc cổ đông TCH"
@@ -922,10 +932,10 @@
    "khi": "FY2026",
    "loai": "hai",
    "tieu": "Kế hoạch LNST 2.000 tỷ",
-   "ct": "ĐHĐCĐ 24/07: doanh thu 5.000 tỷ, LNST 2.000 tỷ, cổ tức 10%. FY2025 chỉ đạt 15% kế hoạch LNST (256/1.700 tỷ); Q1 FY2026 đạt 8%.",
+   "ct": "ĐHĐCĐ 24/07: doanh thu 5.000 tỷ, LNST 2.000 tỷ, cổ tức 10%. 6 tháng đạt 46% LNST (914 tỷ), 48% doanh thu; FY2025 chỉ đạt 15% kế hoạch LNST.",
    "tac": [
-    "~1.590 tỷ",
-    "LNST hợp nhất cơ sở (79% kế hoạch)"
+    "~1.920 tỷ",
+    "LNST hợp nhất cơ sở (96% kế hoạch)"
    ],
    "theo_doi": "lũy kế LNST"
   },
@@ -940,52 +950,52 @@
  ],
  "bieu_do": [
   {
-   "ten": "Người mua trả trước: CRV (New City II) và phần còn lại",
-   "kieu": "cot_chong",
+   "ten": "Người mua trả trước và doanh thu theo quý",
+   "kieu": "cot",
    "dv": "nghìn tỷ",
    "so_le": 1,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
-     "ten": "CRV — chủ đầu tư New City II",
+     "ten": "Người mua trả trước cuối quý",
      "v": [
-      0.3,
+      0.5,
       0.2,
-      0.1,
-      0.1,
-      2.0,
-      3.5,
-      4.0,
-      4.2
+      0.4,
+      3.1,
+      5.3,
+      6.1,
+      6.5,
+      5.6
      ],
      "mau": "c1"
     },
     {
-     "ten": "Green River, H2 Commerce, khác",
+     "ten": "Doanh thu thuần trong quý",
      "v": [
-      0.7,
+      1.6,
+      0.9,
+      0.4,
       0.3,
-      0.1,
       0.3,
-      1.1,
-      1.8,
-      2.2,
-      2.3
+      0.4,
+      0.5,
+      2.0
      ],
      "mau": "c2"
     }
    ],
-   "y": "Trả trước tăng 2,6 và 2,3 nghìn tỷ hai quý cuối 2025, rồi chỉ 0,8 và 0,4 nghìn tỷ hai quý 2026: hợp đồng mới đã chậm lại.",
-   "ng": "BCTC TCH, CRV (VNDirect)"
+   "y": "Trả trước tăng 2,6 và 2,3 nghìn tỷ hai quý cuối 2025, chậm lại nửa đầu 2026; Q3/2026 bàn giao đẩy doanh thu lên 2,0 nghìn tỷ và trả trước giảm 0,9 nghìn tỷ.",
+   "ng": "BCTC TCH (VNDirect)"
   },
   {
    "ten": "LN trước thuế: kinh doanh cốt lõi và tài chính ròng",
@@ -993,46 +1003,46 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Cốt lõi (LN gộp − bán hàng, quản lý)",
      "v": [
-      384,
       458,
       276,
       55,
       29,
       -24,
       66,
-      92
+      92,
+      857
      ],
      "mau": "c1"
     },
     {
      "ten": "Tài chính ròng",
      "v": [
-      42,
       23,
       46,
       24,
       40,
       81,
       91,
-      99
+      99,
+      74
      ],
      "mau": "c2"
     }
    ],
-   "y": "Từ Q3/2025, lãi tiền gửi/cho vay ngang hoặc lớn hơn lãi kinh doanh cốt lõi: Q2/2026 99 tỷ so với 92 tỷ.",
+   "y": "Q3/2025–Q2/2026 lãi tiền gửi ngang hoặc lớn hơn lãi cốt lõi; Q3/2026 bàn giao đảo ngược: cốt lõi 857 tỷ, tài chính 74 tỷ.",
    "ng": "BCTC (VNDirect)"
   },
   {
@@ -1041,47 +1051,47 @@
    "dv": "nghìn tỷ",
    "so_le": 1,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Tiền + đầu tư ngắn hạn",
      "v": [
-      3.1,
       3.7,
       3.7,
       2.3,
       6.1,
       6.9,
       5.9,
-      4.6
+      4.6,
+      3.2
      ],
      "mau": "c1"
     },
     {
      "ten": "Hàng tồn kho",
      "v": [
-      9.4,
       8.7,
       8.5,
       8.9,
       9.4,
       10.4,
       11.6,
-      13.7
+      13.7,
+      15.3
      ],
      "mau": "c4",
      "net": 0
     }
    ],
-   "y": "Hai quý 2026 tiền giảm 2,3 nghìn tỷ, tồn kho tăng 3,3 nghìn tỷ: tiền đất I14, xây New City II. Nợ vay: 0.",
+   "y": "Ba quý 2026 tiền giảm 3,6 nghìn tỷ, tồn kho tăng 4,9 nghìn tỷ: tiền đất I14, xây New City II, dự án mới. Nợ vay: 0.",
    "ng": "BCTC (VNDirect) · SHS 08/08"
   },
   {
@@ -1090,46 +1100,46 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Cổ đông TCH",
      "v": [
-      220,
       307,
       188,
       38,
       40,
       52,
       81,
-      125
+      125,
+      538
      ],
      "mau": "c1"
     },
     {
      "ten": "Cổ đông thiểu số",
      "v": [
-      38,
       73,
       67,
       18,
       16,
       -1,
       15,
-      38
+      38,
+      213
      ],
      "mau": "c4"
     }
    ],
-   "y": "LN cổ đông chạm đáy 38–52 tỷ/quý (Q2–Q4/2025); Q2/2026 lên 125 tỷ, cổ đông thiểu số nhận 23% LNST.",
+   "y": "LN cổ đông chạm đáy 38–52 tỷ/quý (Q2–Q4/2025); Q3/2026 lên 538 tỷ, cổ đông thiểu số nhận 28% LNST.",
    "ng": "BCTC (VNDirect)"
   }
  ],
@@ -1139,23 +1149,23 @@
    {
     "ten": "Doanh thu thuần",
     "kh": 5000,
-    "th": 451,
-    "ky": "3T",
-    "tg": 25,
+    "th": 2409,
+    "ky": "6T",
+    "tg": 50,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 24/07/2026 · BCTC Q2/2026"
+    "ng": "ĐHĐCĐ 24/07/2026 · BCTC Q2, Q3/2026"
    },
    {
     "ten": "LNST hợp nhất",
     "kh": 2000,
-    "th": 164,
-    "ky": "3T",
-    "tg": 25,
+    "th": 914,
+    "ky": "6T",
+    "tg": 50,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 24/07/2026 · BCTC Q2/2026"
+    "ng": "ĐHĐCĐ 24/07/2026 · BCTC Q2, Q3/2026"
    }
   ],
-  "y": "Q1 (4–6/2026) đạt 9% doanh thu, 8% LNST kế hoạch. FY2025 chỉ đạt 29% và 15%. Cơ sở: doanh thu ~5.000 tỷ, LNST ~1.590 tỷ (79%) vì biên gộp BĐS 50% và chi phí hỗ trợ bán hàng 10%.",
+  "y": "6 tháng (4–9/2026) đạt 48% doanh thu, 46% LNST kế hoạch. FY2025 chỉ đạt 29% và 15%. Cơ sở: doanh thu ~5.300 tỷ, LNST ~1.920 tỷ (96%); tốt 2.470 tỷ vượt kế hoạch nếu hai quý tới giao như Q3.",
   "ng": ""
  },
  "mang": [
@@ -1188,6 +1198,10 @@
     {
      "t": "Thấp tầng xây thô hầu hết phân khu, một số block cất nóc, bàn giao từ Q3/2026; HH1–HH4 (2.494 căn) đang làm hầm; 495 căn NOXH đủ điều kiện bán từ 4/2026.",
      "ng": "SHS 08/08"
+    },
+    {
+     "t": "Q3/2026 TCH ghi ~1,7 nghìn tỷ doanh thu BĐS, biên gộp ~54%; thiểu số tăng lên 28% LNST — khớp với phần lớn bàn giao nằm ở CRV. Số tách theo dự án chờ BCTC CRV Q3/2026.",
+     "ng": "BCTC Q3/2026 (VNDirect) · mô hình"
     },
     {
      "t": "Q2/2026 chi phí dở dang New City II chỉ tăng 587 tỷ; phần tăng lớn nhất là \"dự án khác\" +1.334 tỷ ≈ tiền đất I14 (Đại Lộc, công ty con 100% của CRV).",
@@ -1305,7 +1319,7 @@
   },
   {
    "ten": "Vốn — cổ đông, cổ phiếu, bảng cân đối",
-   "phu": "Bảng cân đối hợp nhất 30/6/2026 · cổ phiếu sau thưởng 10%",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026 · cổ phiếu sau thưởng 10%",
    "so": [
     [
      "Ông Đỗ Hữu Hạ và liên quan",
@@ -1319,13 +1333,13 @@
     ],
     [
      "Vốn chủ cổ đông",
-     "11,6 nghìn tỷ",
-     "BVPS 11.583 đ"
+     "12,2 nghìn tỷ",
+     "BVPS 12.119 đ"
     ],
     [
      "Nợ vay",
      "0",
-     "tiền + tiền gửi 4,6 nghìn tỷ"
+     "tiền + tiền gửi 3,2 nghìn tỷ"
     ]
    ],
    "y": [
@@ -1371,9 +1385,9 @@
      "ng": "VDS 08/06"
     },
     {
-     "t": "Chủ đầu tư nhà ở niêm yết (trừ VHM) giao dịch 0,6–1,03 lần sổ sách với ROE 4 quý 1–9%.",
+     "t": "Chủ đầu tư nhà ở niêm yết (trừ VHM) giao dịch 0,6–1,01 lần sổ sách với ROE 4 quý 1–13%.",
      "h": 0,
-     "ng": "bảng giá 20/10 · BCTC VNDirect"
+     "ng": "bảng giá 30/10 · BCTC VNDirect"
     }
    ]
   },
@@ -1499,6 +1513,16 @@
    "ten": "DNSE — BCTC Q2/2026 TCH: LN cổ đông 125,42 tỷ",
    "ngay": "08/2026",
    "link": "https://www.dnse.com.vn/senses/tin-tuc/bctc-quy-22026-tch-loi-nhuan-sau-thue-cong-ty-me-quy-2-gap-2-lan-so-voi-cung-ky-dat-12542-ty-dong-35253170"
+  },
+  {
+   "ten": "Mekong ASEAN — Hoàng Huy báo lãi tăng 13 lần, rót 3.000 tỷ vào hai dự án mới",
+   "ngay": "30/10/2026",
+   "link": "https://mekongasean.vn/hoang-huy-bao-lai-tang-13-lan-rot-3000-ty-dong-vao-hai-du-an-moi-61282.html"
+  },
+  {
+   "ten": "Kinh tế Chứng khoán — Hoàng Huy (TCH) lãi gấp hơn 13 lần, tồn kho chiếm 70% tài sản",
+   "ngay": "31/10/2026",
+   "link": "https://kinhtechungkhoan.vn/hoang-huy-tch-lai-gap-hon-13-lan-nho-ga-de-trung-vang-ton-kho-chiem-70-tai-san"
   }
  ]
 }
