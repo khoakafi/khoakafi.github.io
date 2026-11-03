@@ -3,11 +3,11 @@
  "ma": "VPI",
  "ten": "CTCP Phát triển Bất động sản Văn Phú (Văn Phú – Invest)",
  "nganh": "Bất động sản nhà ở",
- "ky": "BCTC Q2/2026 · công bố, báo chí đến 15/10/2026 (KQKD Q3 chưa ra)",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 hoặc khi có ngày GDKHQ cổ tức cổ phiếu đợt 2",
+ "ky": "BCTC Q3/2026 · giá 02/11/2026",
+ "cap_nhat": "2026-11-03",
+ "lan_sau": "sau BCTC Q4/2026 hoặc khi có ngày GDKHQ cổ tức cổ phiếu đợt 2",
  "cp_trieu": 352.0,
- "cp_ng": "Vốn điều lệ 3.200 tỷ (BCTC Q2/2026) + 32 triệu cp cổ tức 10% bằng cổ phiếu (ĐKCC 08/09/2026) = 3.520 tỷ, 352 triệu cp; bảng giá VNDirect còn tính ~344,5 triệu. Đợt 2 (10%, ~35,2 triệu cp) đang xin ý kiến cổ đông, chưa có ngày GDKHQ.",
+ "cp_ng": "Vốn điều lệ 30/9/2026 3.520 tỷ (BCTC Q3) = 352 triệu cp, đã gồm 32 triệu cp cổ tức 10% (ĐKCC 08/09/2026). Đợt 2 (10%, ~35,2 triệu cp) ĐHĐCĐ thông qua 16/10, dự kiến Q4/2026, chưa có ngày GDKHQ.",
  "co_tuc": [],
  "chia": [
   [
@@ -16,39 +16,39 @@
   ]
  ],
  "tieu_de": {
-  "t": "Trả ~3 lần sổ sách cho ROE dưới 10%: giá đã đi trước kế hoạch lãi gần gấp đôi 2026",
+  "t": "Q3 lãi 21 tỷ, 9 tháng mới 31% kế hoạch: giá đi trước lợi nhuận, quý 4 phải gánh gần 70%",
   "dk": "up_duoi:5",
-  "khac": "Kế hoạch lãi gần gấp đôi 2026 dồn vào quý 4; giá đã lùi dưới giá trị cơ sở"
+  "khac": "Q3 lãi 21 tỷ, quý 4 phải gánh gần 70% kế hoạch; giá đã lùi dưới giá trị cơ sở"
  },
- "dong_mo": "ĐHĐCĐ đặt LNST 2026 720 tỷ (×1,8): 6T mới đạt 28%, nửa cuối cần doanh thu gấp 2,2 lần cùng kỳ, dựa vào chuyển nhượng dự án phía Nam. Cơ sở: LN cổ đông 2026E ~0,50 nghìn tỷ, 2027E ~0,56 (ROE ~9%), nợ vay 7,4 nghìn tỷ. P/B 2,8 lần vốn chủ 30/6/2027E: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3 LN cổ đông 21 tỷ (−82%): không có đợt bàn giao lớn. 9T LNST 221 tỷ = 31% kế hoạch 720 tỷ. Cơ sở: LN cổ đông 2026E ~0,41 nghìn tỷ, 2027E ~0,56 (ROE ~9%), nợ vay 7,6 nghìn tỷ. P/B 2,8 lần vốn chủ 30/6/2027E: {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "28%",
-   "nhan": "kế hoạch LNST 2026 đạt sau 6 tháng",
-   "tieu": "Kế hoạch lãi ×1,8 dồn vào quý 4 và chuyển nhượng dự án",
-   "t": "ĐHĐCĐ 23/4 đặt doanh thu 4.500 tỷ, LNST 720 tỷ. 6T: doanh thu 1.129 tỷ, LNST 201 tỷ. Nửa cuối cần ~3,4 nghìn tỷ doanh thu — gấp 2,2 lần cùng kỳ — khi người mua trả trước chỉ còn 523 tỷ sau bàn giao Q2. CTS tính 41% doanh thu 2026 từ chuyển nhượng dự án phía Nam: lãi cao, thời điểm khó đoán. Cơ sở: LNST 607 tỷ (84% kế hoạch); 2024 đạt 87%, 2025 112%.",
-   "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q2 (VNDirect) · CTS 30/03 · mô hình"
+   "so": "31%",
+   "nhan": "kế hoạch LNST 2026 đạt sau 9 tháng",
+   "tieu": "Q3 bác giả định chia đều nửa cuối: kế hoạch dồn hết vào quý 4",
+   "t": "Q3 doanh thu 155 tỷ, LN cổ đông 21 tỷ — mô hình cũ chờ 138 tỷ. 9T: doanh thu 1.284 tỷ, LNST 221 tỷ. Đạt kế hoạch cần Q4 doanh thu ~3,2 nghìn tỷ (gấp 2,8 lần Q4/2025), LNST ~499 tỷ; chuyển nhượng dự án phía Nam (CTS tính 41% doanh thu 2026) chưa xuất hiện. Cơ sở: LNST 494 tỷ (69% kế hoạch); 2024 đạt 87%.",
+   "ng": "BCTC Q3 (VNDirect) · công bố 9T 30/10 · ĐHĐCĐ 23/04 · CTS 30/03 · mô hình"
   },
   {
-   "so": "1,27 lần",
-   "nhan": "nợ vay ròng / vốn chủ (30/6/2026)",
+   "so": "1,30 lần",
+   "nhan": "nợ vay ròng / vốn chủ (30/9/2026)",
    "tieu": "Mở rộng phía Nam bằng nợ; lãi vay nằm trong tồn kho",
-   "t": "Tồn kho 6,34 nghìn tỷ (+21% từ đầu năm; cuối 2024: 2,95) cho Thủy Nguyên, Phú Thuận và quỹ đất TP.HCM, Đồng Nai, Vũng Tàu. Nợ vay 7,4 nghìn tỷ (trái phiếu 2,9), dòng tiền kinh doanh 6T âm ~1,5 nghìn tỷ; nợ ròng/vốn chủ từ 0,83 (cuối 2024) lên 1,27. Lãi vay vào KQKD 2025 chỉ 0,9% dư nợ bình quân, 6T/2026 còn âm: lãi đang được vốn hóa, sẽ thành giá vốn khi bàn giao.",
-   "ng": "BCTC (VNDirect) · VnBusiness 8/2026 · mô hình"
+   "t": "Tồn kho 6,94 nghìn tỷ 30/9 (+32% từ đầu năm; cuối 2024: 2,95) cho Thủy Nguyên, Phú Thuận và quỹ đất TP.HCM, Đồng Nai, Vũng Tàu. Nợ vay 7,6 nghìn tỷ (+21% từ đầu năm; trái phiếu 2,9 30/6); nợ ròng/vốn chủ từ 0,83 (cuối 2024) lên 1,30. Lãi vay vào KQKD 9T/2026 năm hóa −0,5% dư nợ (2025: 0,9%): lãi đang được vốn hóa, sẽ thành giá vốn khi bàn giao.",
+   "ng": "BCTC Q3 (VNDirect) · VnBusiness 8/2026 · mô hình"
   },
   {
-   "so": "2/5",
-   "nhan": "lô đất đối ứng BT đã nhận (6/2026)",
-   "tieu": "Quyền chọn 2027–2028: Phú Thuận và đất trung tâm TP.HCM",
-   "t": "Phú Thuận (Q7, 602 căn, ~100 triệu/m², biên gộp ~45% theo CTS) dự kiến bàn giao Q4/2027 — đòn bẩy chính của LN 2027–2028: mỗi 1.000 tỷ doanh thu ≈ +249 tỷ LN cổ đông. BT Phạm Văn Đồng – Gò Dưa (công ty con 60%) được trả bằng đất trung tâm TP.HCM (234 Lý Tự Trọng, 129 Đinh Tiên Hoàng…); chi phí dở dang 2,46 nghìn tỷ, đã dự phòng 0,34. Giá trị đất chưa công bố nên chưa đưa vào định giá.",
-   "ng": "CTS 30/03 · VnExpress · CafeF 31/07 · Doanh nhân 2026 · mô hình"
+   "so": "1.263 tỷ",
+   "nhan": "doanh số Phú Thuận đến 30/9/2026",
+   "tieu": "Q3 xác nhận Phú Thuận bán được: nguồn LN 2027–2028",
+   "t": "Người mua trả trước tăng từ 523 lên 1.076 tỷ trong Q3, trong đó Phú Thuận 554 tỷ (Thủy Nguyên 287, Yên Phong 225). Phú Thuận (Q7, 602 căn, biên gộp ~45% theo CTS) bàn giao dự kiến Q4/2027: mỗi 1.000 tỷ doanh thu ≈ +249 tỷ LN cổ đông. Đất đối ứng BT Phạm Văn Đồng – Gò Dưa (chi phí dở dang 2,46 nghìn tỷ, đã nhận 2/5 lô) chưa công bố giá trị nên chưa đưa vào định giá.",
+   "ng": "công bố 9T 30–31/10 (Tin nhanh CK, CafeF) · CTS 30/03 · CafeF 31/07 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/B 2,8 lần vốn chủ giữa 2027: {up_so} so với giá hiện tại",
-   "t": "Thị trường trả VPI 2,45–4,5 lần sổ sách suốt 9 năm (trung vị 3,54), gấp đôi trung vị 11 mã cùng ngành (1,85). Mức 2,7–4,3 lần đi cùng ROE 12–15% (2020–2023); ROE 2027E cơ sở ~9%. P/B 2,8 (bình quân 2020–2021) × vốn chủ 30/6/2027E 5,95 nghìn tỷ ≈ P/E 2027E ~30 lần. Xấu 39,5 (đáy 2,45, kế hoạch trượt), tốt 62,5 (3,5 ≈ trung vị: đạt kế hoạch, Phú Thuận giao đúng hạn).",
-   "ng": "mô hình · P/B lịch sử VPI và cùng ngành: BCTC VNDirect, giá 20/10/2026"
+   "t": "Thị trường trả VPI 2,45–4,5 lần sổ sách suốt 9 năm (trung vị 3,57), gấp đôi trung vị 11 mã cùng ngành (1,77). Mức 2,7–4,3 lần đi cùng ROE 12–15% (2020–2023); ROE 2027E cơ sở ~9%. P/B 2,8 (bình quân 2020–2021) × vốn chủ 30/6/2027E 5,86 nghìn tỷ ≈ P/E 2027E ~29 lần. Xấu 38,6 (đáy 2,45, kế hoạch trượt), tốt 62,3 (3,5 ≈ trung vị: đạt kế hoạch, Phú Thuận giao đúng hạn).",
+   "ng": "mô hình · P/B lịch sử VPI và cùng ngành: BCTC VNDirect, giá 02/11/2026"
   }
  ],
  "tom_tat": {
@@ -59,19 +59,19 @@
   ],
   "ln": [
    391,
-   502,
+   410,
    564
   ],
   "ln_truoc": 328,
   "eps": [
    1111,
-   1426,
+   1165,
    1602
   ],
   "bv": [
    14913,
-   16340,
-   17943
+   16079,
+   17681
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -79,7 +79,7 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      1.98,
-     3.33,
+     2.78,
      3.6
     ],
     "d": 2
@@ -88,8 +88,8 @@
     "ten": "ROE",
     "v": [
      7.7,
-     9.1,
-     9.4
+     7.5,
+     9.5
     ],
     "d": 1,
     "pt": 1
@@ -112,7 +112,7 @@
     "mau": "c1",
     "v": [
      473,
-     779,
+     651,
      922
     ]
    },
@@ -121,7 +121,7 @@
     "mau": "c2",
     "v": [
      -26,
-     8,
+     -12,
      -60
     ]
    },
@@ -130,7 +130,7 @@
     "mau": "c4",
     "v": [
      73,
-     1,
+     2,
      0
     ]
    }
@@ -140,30 +140,30 @@
  },
  "so_sanh": {
   "tieu": "P/B so với 11 mã bất động sản vốn hóa lớn nhất",
-  "phu": "giá hôm nay, vốn chủ cổ đông 30/6/2026, 352 triệu cp",
+  "phu": "giá hôm nay, vốn chủ cổ đông 30/9/2026, 352 triệu cp",
   "chi_so": "P/B",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "chi_so_kv": "P/B (giá 02/11)",
   "nhom": "11 mã cùng ngành vốn hóa lớn nhất",
   "kv": [
    [
     "VIC",
-    9.33
+    9.69
    ],
    [
     "VHM",
-    1.88
+    1.8
    ],
    [
     "VRE",
-    1.06
+    1.08
    ],
    [
     "BCM",
-    1.85
+    1.77
    ],
    [
     "NVL",
-    0.71
+    0.69
    ],
    [
     "KBC",
@@ -171,30 +171,30 @@
    ],
    [
     "VGC",
-    2.36
+    2.13
    ],
    [
     "KDH",
-    0.94
+    0.89
    ],
    [
     "SJS",
-    4.22
+    3.33
    ],
    [
     "IDC",
-    2.09
+    1.97
    ],
    [
     "DXG",
-    0.91
+    0.89
    ]
   ],
-  "tv": 1.85,
-  "moi_cp": 15359,
+  "tv": 1.77,
+  "moi_cp": 15419,
   "max": 5,
-  "y": "Cao thứ ba nhóm sau VIC và SJS. Nhóm trên 1,8 lần có ROE 4 quý cao (VHM 32,6%, IDC 32,7%, SJS 17,3%) hoặc khu công nghiệp (BCM, VGC); DXG, KDH, KBC (ROE 1–10%) chỉ 0,91–0,94. ROE 4 quý của VPI: 7,7%.",
-  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất, giá 20/10/2026; VPI: vốn chủ 30/6/2026 trên 352 triệu cp"
+  "y": "Cùng VIC, SJS ở nhóm cao nhất. Nhóm trên 1,7 lần có ROE 4 quý cao (VHM 37,6%, IDC 26,8%, SJS 41,1%) hoặc khu công nghiệp (BCM, VGC); DXG, KDH, KBC (ROE 1–9%) chỉ 0,89–0,94. ROE 4 quý của VPI: 5,8%.",
+  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất, giá 02/11/2026; VPI: vốn chủ 30/9/2026 trên 352 triệu cp"
  },
  "mo_hinh": {
   "tieu": "Dự phóng toàn công ty",
@@ -211,7 +211,7 @@
     "ten": "Doanh thu thuần (tỷ)",
     "v": [
      1976,
-     3329,
+     2784,
      3600
     ],
     "tang": 1
@@ -228,7 +228,7 @@
     "ten": "Biên gộp (%)",
     "v": [
      37.9,
-     35.2,
+     36.2,
      37.0
     ],
     "d": 1
@@ -237,7 +237,7 @@
     "ten": "Lãi gộp (tỷ)",
     "v": [
      749,
-     1172,
+     1007,
      1332
     ],
     "tang": 1
@@ -246,7 +246,7 @@
     "ten": "Bán hàng + quản lý (tỷ)",
     "v": [
      276,
-     393,
+     356,
      410
     ]
    },
@@ -254,7 +254,7 @@
     "ten": "Tài chính ròng, liên kết & khác (tỷ)",
     "v": [
      47,
-     9,
+     -10,
      -60
     ]
    },
@@ -265,7 +265,7 @@
     "ten": "LN trước thuế (tỷ)",
     "v": [
      520,
-     788,
+     641,
      862
     ],
     "tang": 1
@@ -274,7 +274,7 @@
     "ten": "LNST (tỷ)",
     "v": [
      393,
-     607,
+     494,
      664
     ]
    },
@@ -282,7 +282,7 @@
     "ten": "Cổ đông thiểu số (tỷ)",
     "v": [
      2,
-     105,
+     84,
      100
     ]
    },
@@ -290,7 +290,7 @@
     "ten": "LN cổ đông công ty mẹ (tỷ)",
     "v": [
      391,
-     502,
+     410,
      564
     ],
     "dam": 1,
@@ -300,7 +300,7 @@
     "ten": "EPS (đ, 352 triệu cp)",
     "v": [
      1111,
-     1426,
+     1165,
      1602
     ],
     "eps": 1
@@ -312,8 +312,8 @@
     "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
     "v": [
      5.25,
-     5.75,
-     6.32
+     5.66,
+     6.22
     ],
     "d": 2
    },
@@ -321,8 +321,8 @@
     "ten": "ROE (%)",
     "v": [
      7.7,
-     9.1,
-     9.4
+     7.5,
+     9.5
     ],
     "d": 1
    },
@@ -330,18 +330,18 @@
     "ten": "Nợ vay · người mua trả trước (nghìn tỷ)",
     "s": [
      "6,3 · 1,0",
-     "7,4 · 0,5 (30/6)",
+     "7,6 · 1,1 (30/9)",
      "—"
     ]
    }
   ],
-  "ghi": "2026E = 6T thực tế (BCTC) + 6T cuối ước. Quản lý ~110 tỷ/6 tháng, bán hàng 5% doanh thu; thuế 23%, cổ đông thiểu số 15% LNST (6T/2026: 22%). Không chia cổ tức tiền mặt."
+  "ghi": "2026E = 9T thực tế (BCTC Q3) + Q4 ước. Quản lý Q4 ~65 tỷ, bán hàng 5% doanh thu; thuế 23%, cổ đông thiểu số 15% LNST (9T/2026: 20%). Không chia cổ tức tiền mặt."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   502
+   410
   ],
   "cuoi": [
    "2027E",
@@ -354,42 +354,42 @@
    ],
    [
     "Lãi gộp dự án khác",
-    -233
+    -125
    ],
    [
     "Bán hàng + quản lý",
-    -11
+    -35
    ],
    [
     "Tài chính ròng (lãi vay)",
-    -45
+    -33
    ],
    [
     "Thuế, thiểu số",
-    13
+    9
    ]
   ],
-  "y": "Phú Thuận (1.200 tỷ doanh thu, biên 43%) bù phần chuyển nhượng dự án 2026 không lặp lại; lãi vay thôi vốn hóa khi dự án xong ăn bớt phần tăng.",
+  "y": "Phú Thuận (1.200 tỷ doanh thu, biên 43%) là nguồn tăng chính; dự án khác 2027 thấp hơn 2026E; lãi vay thôi vốn hóa khi dự án xong ăn bớt phần tăng.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Doanh thu 6T cuối 2026 (tỷ)",
+   "ten": "Doanh thu Q4/2026 (tỷ)",
    "v": [
+    "800",
     "1.500",
-    "2.200",
-    "3.000"
+    "2.500"
    ],
-   "ly_do": "Kế hoạch cần 3.371; 6T cuối 2025: 1.548; CTS: chuyển nhượng dự án phía Nam ~1,9 nghìn tỷ trong 2026; người mua trả trước 30/6 còn 523 tỷ"
+   "ly_do": "Kế hoạch cần 3.216; Q4/2025 1.153; trả trước 30/9 Thủy Nguyên 287, Yên Phong 225 (Phú Thuận 554 giao 2027); chuyển nhượng phía Nam (CTS ~1,9 nghìn tỷ) chưa có trong 9T"
   },
   {
-   "ten": "Biên gộp 6T cuối 2026",
+   "ten": "Biên gộp Q4/2026",
    "v": [
     "32%",
-    "34%",
-    "35%"
+    "35%",
+    "37%"
    ],
-   "ly_do": "6T/2026 37,6%; CTS 2026F 35%; TT39-40 (~500 tỷ doanh thu) chỉ ~26% (CTS); 2025: 37,9%"
+   "ly_do": "9T/2026 37,5%, Q3 37,1%; Q4/2025 40,2%; CTS 2026F 35%; TT39-40 chỉ ~26% (CTS)"
   },
   {
    "ten": "Doanh thu Phú Thuận 2027 (tỷ)",
@@ -407,7 +407,7 @@
     "2.400",
     "2.600"
    ],
-   "ly_do": "Thủy Nguyên (tồn kho 3,8 nghìn tỷ cuối 2025), dịch vụ lưu trú, chuyển nhượng; 2025: 1.976, 2026E cơ sở 3.329"
+   "ly_do": "Thủy Nguyên (tồn kho 3,8 nghìn tỷ cuối 2025), dịch vụ lưu trú, chuyển nhượng; 2025: 1.976, 2026E cơ sở 2.784"
   },
   {
    "ten": "Biên gộp 2027: Phú Thuận · khác",
@@ -419,13 +419,13 @@
    "ly_do": "CTS: Phú Thuận, Phú Hội ~45% nhờ đất có sớm; lãi vay vốn hóa (KQKD 2025 chỉ ghi 0,9% dư nợ) và đất mới mua phía Nam kéo xuống"
   },
   {
-   "ten": "Tài chính ròng & khác 2027 (tỷ)",
+   "ten": "Tài chính ròng & khác: Q4/2026 · 2027 (tỷ)",
    "v": [
-    "−120",
-    "−60",
-    "0"
+    "−80 · −120",
+    "−30 · −60",
+    "0 · 0"
    ],
-   "ly_do": "2025 +47 (thu nhập tài chính 195, liên kết 67); 6T/2026 +9. Dự án xong thì lãi vay thôi vốn hóa: nợ vay 7,4 nghìn tỷ"
+   "ly_do": "Q4/2025 −141 (chi phí tài chính 188); 9T/2026 +20; 2025 +47. Dự án xong thì lãi vay thôi vốn hóa: nợ vay 7,6 nghìn tỷ"
   },
   {
    "ten": "Thuế · cổ đông thiểu số",
@@ -434,7 +434,7 @@
     "23% · 15%",
     "23% · 15%"
    ],
-   "ly_do": "Thuế: 6T/2026 22,8%, 2025 24,5%. Thiểu số: 6T/2026 22% LNST (Q2 45 tỷ), 2024–2025 gần 0"
+   "ly_do": "Thuế: 9T/2026 22,8%, 2025 24,5%. Thiểu số: 9T/2026 20% LNST (Q2 45 tỷ), 2024–2025 gần 0"
   },
   {
    "ten": "P/B trên vốn chủ 30/6/2027E",
@@ -443,30 +443,30 @@
     "2,8",
     "3,5"
    ],
-   "ly_do": "VPI từ 11/2017: đáy 2,45 (5/2021), thấp 10% 2,67, thấp 25% 3,02, trung vị 3,54; 2020–2021 (ROE ~12%) bình quân 2,7–3,0; trung vị 11 mã cùng ngành 1,85"
+   "ly_do": "VPI từ 11/2017: đáy 2,45 (5/2021), thấp 10% 2,67, thấp 25% 3,02, trung vị 3,57; 2020–2021 (ROE ~12%) bình quân 2,7–3,0; trung vị 11 mã cùng ngành 1,77"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 350,
+   "ln26": 224,
    "ln27": 211,
-   "gia": 39.5,
-   "mo_ta": "Chuyển nhượng dự án lùi: 6T cuối 2026 doanh thu 1.500 tỷ (LNST cả năm 59% kế hoạch); Phú Thuận lùi sang 2028, ROE 2027E ~3,7%; P/B 2,45 = đáy lịch sử"
+   "gia": 38.6,
+   "mo_ta": "Chuyển nhượng dự án lùi, bàn giao ít: Q4/2026 doanh thu 800 tỷ (LNST cả năm 38% kế hoạch); Phú Thuận lùi sang 2028, ROE 2027E ~3,8%; P/B 2,45 = đáy lịch sử"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 502,
+   "ln26": 410,
    "ln27": 564,
-   "gia": 47.3,
-   "mo_ta": "6T cuối 2026 doanh thu 2.200 tỷ (LNST 84% kế hoạch); Phú Thuận ghi nhận 1.200 tỷ Q4/2027; ROE 2027E ~9%; P/B 2,8"
+   "gia": 46.6,
+   "mo_ta": "Q4/2026 doanh thu 1.500 tỷ từ Thủy Nguyên, Yên Phong (LNST 69% kế hoạch); Phú Thuận ghi nhận 1.200 tỷ Q4/2027; ROE 2027E ~9%; P/B 2,8"
   },
   {
    "ten": "Tốt",
-   "ln26": 674,
+   "ln26": 659,
    "ln27": 1022,
-   "gia": 62.5,
-   "mo_ta": "Vượt kế hoạch 2026 (112%, như 2025); Phú Thuận ghi nhận 2.400 tỷ; ROE 2027E ~16%; P/B 3,5 ≈ trung vị lịch sử"
+   "gia": 62.3,
+   "mo_ta": "Q4/2026 doanh thu 2.500 tỷ có chuyển nhượng dự án: vượt kế hoạch 2026 (109%); Phú Thuận ghi nhận 2.400 tỷ; ROE 2027E ~16%; P/B 3,5 ≈ trung vị lịch sử"
   }
  ],
  "dinh_gia": {
@@ -480,9 +480,9 @@
     "mau": "c1",
     "sh": 1,
     "x": [
-     5673,
-     5949,
-     6281
+     5548,
+     5857,
+     6266
     ],
     "boi": [
      2.45,
@@ -493,21 +493,21 @@
     "boi_ten": "P/B",
     "boi_d": 2,
     "gt": [
-     13899,
-     16657,
-     21984
+     13593,
+     16400,
+     21931
     ]
    }
   ],
   "von": [
-   13899,
-   16657,
-   21984
+   13593,
+   16400,
+   21931
   ],
   "gia": [
-   39.5,
-   47.3,
-   62.5
+   38.6,
+   46.6,
+   62.3
   ]
  },
  "nhay": [
@@ -517,7 +517,7 @@
    1.7
   ],
   [
-   "LN cổ đông 6T cuối 2026 ±100 tỷ",
+   "LN cổ đông Q4/2026 ±100 tỷ",
    100,
    0.8
   ],
@@ -527,9 +527,9 @@
    0.7
   ],
   [
-   "Biên gộp 6T cuối 2026 ±3 điểm %",
-   43,
-   0.3
+   "Biên gộp Q4/2026 ±3 điểm %",
+   29,
+   0.2
   ],
   [
    "Biên gộp 2027 ±3 điểm %",
@@ -647,7 +647,8 @@
    "2026-07",
    "2026-08",
    "2026-09",
-   "2026-10"
+   "2026-10",
+   "2026-11"
   ],
   "v": [
    3.58,
@@ -757,21 +758,22 @@
    3.88,
    4.03,
    3.86,
-   3.22
+   3.74,
+   3.76
   ],
   "p10": 2.67,
   "p25": 3.02,
-  "tv": 3.54,
+  "tv": 3.57,
   "thap": [
    "2021-05",
    2.45
   ],
   "nay": [
-   "2026-10",
-   3.22
+   "2026-11",
+   3.76
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Kịch bản dùng P/B 2,45 · 2,8 · 3,5 trên vốn chủ 30/6/2027E: đáy 5/2021 (2,45); giữa thấp 10% (2,67) và thấp 25% (3,02), ≈ bình quân 2020–2021 khi ROE ~12%; ≈ trung vị (3,54). Điểm 10/2026 tính trên 352 triệu cp; trung vị 11 mã cùng ngành 1,85."
+  "dung": "Kịch bản dùng P/B 2,45 · 2,8 · 3,5 trên vốn chủ 30/6/2027E: đáy 5/2021 (2,45); giữa thấp 10% (2,67) và thấp 25% (3,02), ≈ bình quân 2020–2021 khi ROE ~12%; ≈ trung vị (3,57). Điểm từ 9/2026 tính trên 352 triệu cp; trung vị 11 mã cùng ngành 1,77."
  },
  "theo_doi": [
   {
@@ -788,38 +790,50 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    116,
-    208,
-    310
+    46,
+    232,
+    481
    ],
    "ck": 128
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    350,
-    502,
-    674
+    224,
+    410,
+    659
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "20–30/10/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Hạn 30/10. Cùng kỳ LN cổ đông 118 tỷ, doanh thu 396 tỷ. Xem người mua trả trước, tồn kho, nợ vay 30/9 — thước đo bàn giao quý 4.",
+   "khi": "30/10/2026 (đã ra)",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "KQKD Q3/2026: LN cổ đông 21 tỷ (−82%), dưới kịch bản xấu",
+   "ct": "Mô hình 20/10: cơ sở 138, xấu 77. Doanh thu 155 tỷ — không có đợt bàn giao lớn, biên gộp vẫn 37%. Trả trước +553 tỷ (Phú Thuận): lệch thời điểm, nhưng kế hoạch dồn hết vào Q4.",
    "tac": [
-    "≥ 138 tỷ",
-    "LN cổ đông Q3 khớp cơ sở; dưới 77 tỷ nghiêng về xấu"
+    "-92 tỷ LN 2026E",
+    "giá trị cơ sở 47,3 → 46,6 nghìn đ/cp"
    ],
-   "theo_doi": "LN cổ đông, người mua trả trước"
+   "theo_doi": "người mua trả trước, tồn kho"
+  },
+  {
+   "khi": "Cuối 1/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026: quý quyết định",
+   "ct": "Cơ sở LN cổ đông Q4 232 tỷ (Q4/2025: 128): bàn giao Thủy Nguyên (thêm ~200 sản phẩm cuối năm), Yên Phong. Đạt kế hoạch cần LNST Q4 ~499 tỷ.",
+   "tac": [
+    "≥ 232 tỷ",
+    "LN cổ đông Q4 khớp cơ sở; dưới 46 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "LN cổ đông, doanh thu bàn giao"
   },
   {
    "khi": "Q4/2026",
    "loai": "len",
    "tieu": "Chuyển nhượng dự án phía Nam",
-   "ct": "CTS (30/3) tính ~1,9 nghìn tỷ doanh thu chuyển nhượng dự án phía Nam trong 2026 (41% dự phóng); Q4/2025 bàn giao và chuyển nhượng (Thủy Nguyên, Bắc Ninh) đưa doanh thu quý lên 1.153 tỷ.",
+   "ct": "CTS (30/3) tính ~1,9 nghìn tỷ doanh thu chuyển nhượng dự án phía Nam trong 2026 (41% dự phóng); Q4/2025 bàn giao và chuyển nhượng (Thủy Nguyên, Bắc Ninh) đưa doanh thu quý lên 1.153 tỷ. 9T/2026 chưa có.",
    "tac": [
     "+131 tỷ LN",
     "mỗi 500 tỷ doanh thu chuyển nhượng ở biên gộp 45% (≈ +1,0 nghìn đ/cp)"
@@ -857,7 +871,7 @@
    "khi": "Q4/2026",
    "loai": "hai",
    "tieu": "Cổ tức cổ phiếu đợt 2 (10%)",
-   "ct": "HĐQT xin ý kiến cổ đông (hạn 15/10) chia thêm 10% bằng cổ phiếu từ LN 2025 (~352 tỷ mệnh giá); đợt 1 (10%) đã chốt 8/9. Không chia tiền mặt.",
+   "ct": "ĐHĐCĐ thông qua bằng văn bản 16/10, HĐQT triển khai 22/10: thêm 10% bằng cổ phiếu từ LN 2025, dự kiến Q4/2026 sau khi UBCK xác nhận hồ sơ. Không chia tiền mặt.",
    "tac": [
     "÷1,1",
     "giá trị và EPS trên 1 cp khi phát hành ~35,2 triệu cp (tổng giá trị không đổi)"
@@ -869,10 +883,10 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Nợ vay tăng, dòng tiền kinh doanh âm",
-   "ct": "Nợ vay 7,4 nghìn tỷ (30/6, +18% từ đầu năm), trái phiếu 2,9 nghìn tỷ; dòng tiền kinh doanh 6T âm ~1,5 nghìn tỷ khi tồn kho tăng vì quỹ đất TP.HCM, Đồng Nai, Vũng Tàu.",
+   "ct": "Nợ vay 7,6 nghìn tỷ (30/9, +21% từ đầu năm), trái phiếu 2,9 nghìn tỷ (30/6); dòng tiền kinh doanh 6T âm ~1,5 nghìn tỷ khi tồn kho tăng vì quỹ đất TP.HCM, Đồng Nai, Vũng Tàu.",
    "tac": [
-    "74 tỷ/năm",
-    "lãi vay thêm mỗi 1 điểm % lãi suất trên 7,4 nghìn tỷ nợ"
+    "76 tỷ/năm",
+    "lãi vay thêm mỗi 1 điểm % lãi suất trên 7,6 nghìn tỷ nợ"
    ],
    "theo_doi": "nợ ròng/vốn chủ, đáo hạn trái phiếu"
   },
@@ -881,12 +895,12 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Kế hoạch 2026 trượt",
-   "ct": "6T đạt 28% LNST kế hoạch; 2024 chỉ đạt 87%. Chuyển nhượng dự án lùi sang 2027 thì LN cổ đông 2026 về ~0,35 nghìn tỷ (kịch bản xấu).",
+   "ct": "9T đạt 31% LNST kế hoạch (Q3 chỉ 20 tỷ); 2024 đạt 87%. Chuyển nhượng dự án lùi sang 2027 thì LN cổ đông 2026 về ~0,22 nghìn tỷ (kịch bản xấu).",
    "tac": [
     "±0,8 nghìn đ/cp",
-    "mỗi 100 tỷ LN cổ đông 6T cuối 2026"
+    "mỗi 100 tỷ LN cổ đông Q4/2026"
    ],
-   "theo_doi": "KQKD Q3–Q4"
+   "theo_doi": "KQKD Q4"
   },
   {
    "khi": "Liên tục",
@@ -905,7 +919,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Phần bù P/B thu hẹp",
-   "ct": "P/B ~3 lần so với trung vị 1,85 của 11 mã cùng ngành; free-float ~35,5% (CTS). Hai đợt cổ tức cổ phiếu liên tiếp tăng cung cổ phiếu trong khi ROE dưới 10%.",
+   "ct": "P/B trên 3 lần so với trung vị 1,77 của 11 mã cùng ngành; free-float ~35,5% (CTS). Hai đợt cổ tức cổ phiếu liên tiếp tăng cung cổ phiếu trong khi ROE dưới 10%.",
    "tac": [
     "±1,7 nghìn đ/cp",
     "mỗi 0,1 lần P/B"
@@ -920,46 +934,46 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Doanh thu thuần",
      "v": [
-      855,
       749,
       249,
       179,
       396,
       1153,
       287,
-      842
+      842,
+      155
      ],
      "mau": "c1"
     },
     {
      "ten": "Lãi gộp",
      "v": [
-      146,
       100,
       58,
       54,
       174,
       464,
       83,
-      341
+      341,
+      58
      ],
      "mau": "c4"
     }
    ],
-   "y": "Doanh thu dồn vào quý bàn giao, chuyển nhượng: Q4/2025 1.153 tỷ, Q2/2026 842 tỷ; các quý khác 179–396 tỷ. Biên gộp 6T/2026 37,6%.",
+   "y": "Doanh thu dồn vào quý bàn giao, chuyển nhượng: Q4/2025 1.153 tỷ, Q2/2026 842 tỷ; Q3/2026 chỉ 155 tỷ. Biên gộp 9T/2026 37,5% (9T/2025 34,6%).",
    "ng": "BCTC (VNDirect)"
   },
   {
@@ -968,46 +982,46 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Cổ đông công ty mẹ",
      "v": [
-      110,
       102,
       141,
       4,
       118,
       128,
       27,
-      130
+      130,
+      21
      ],
      "mau": "c1"
     },
     {
      "ten": "Cổ đông thiểu số",
      "v": [
-      0,
       -4,
       1,
       -2,
       1,
       2,
       0,
-      45
+      45,
+      -1
      ],
      "mau": "c4"
     }
    ],
-   "y": "LN quý dao động 4–141 tỷ theo đợt bàn giao; Q2/2026 cổ đông thiểu số nhận 45 tỷ (26% LNST) — các quý trước gần 0.",
+   "y": "LN quý dao động 4–141 tỷ theo đợt bàn giao; Q2/2026 cổ đông thiểu số nhận 45 tỷ (26% LNST) — các quý khác gần 0. Q3/2026 chỉ 21 tỷ.",
    "ng": "BCTC (VNDirect)"
   },
   {
@@ -1016,60 +1030,60 @@
    "dv": "nghìn tỷ",
    "so_le": 2,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Nợ vay",
      "v": [
-      5.69,
       4.55,
       5.95,
       6.13,
       6.04,
       6.29,
       6.91,
-      7.4
+      7.4,
+      7.62
      ],
      "mau": "c1"
     },
     {
      "ten": "Tồn kho",
      "v": [
-      3.35,
       2.95,
       3.51,
       5.05,
       5.41,
       5.25,
       5.95,
-      6.34
+      6.34,
+      6.94
      ],
      "mau": "c2"
     },
     {
      "ten": "Người mua trả trước",
      "v": [
-      0.11,
       0.09,
       0.08,
       0.18,
       0.83,
       1.04,
       1.07,
-      0.52
+      0.52,
+      1.08
      ],
      "mau": "c4"
     }
    ],
-   "y": "12 tháng đến 30/6/2026: tồn kho +1,29 nghìn tỷ, nợ vay +1,27; tiền khách trả trước lên 1,07 (3/2026) rồi còn 0,52 sau bàn giao Q2.",
+   "y": "12 tháng đến 30/9/2026: tồn kho +1,53 nghìn tỷ, nợ vay +1,57; tiền khách trả trước còn 0,52 sau bàn giao Q2 rồi lên 1,08 (30/9, Phú Thuận 554 tỷ).",
    "ng": "BCTC (VNDirect)"
   },
   {
@@ -1101,7 +1115,7 @@
      "mau": "c1"
     }
    ],
-   "y": "2025 chỉ 52 tỷ = 0,9% dư nợ bình quân ~5,8 nghìn tỷ đi vào KQKD; 6T/2026 âm (Q2 ghi giảm 55 tỷ, năm hóa −0,9%). Phần còn lại vốn hóa vào dự án, thành giá vốn khi bàn giao; 2023: 11,1%.",
+   "y": "2025 chỉ 52 tỷ = 0,9% dư nợ bình quân ~5,8 nghìn tỷ đi vào KQKD; 9T/2026 âm (Q2 ghi giảm 55 tỷ, năm hóa −0,5%). Phần còn lại vốn hóa vào dự án, thành giá vốn khi bàn giao; 2023: 11,1%.",
    "ng": "BCTC (VNDirect); dư nợ bình quân 5 thời điểm cuối quý"
   }
  ],
@@ -1111,32 +1125,32 @@
    {
     "ten": "Doanh thu thuần",
     "kh": 4500,
-    "th": 1129,
-    "ky": "6T",
-    "tg": 50,
+    "th": 1284,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q3"
    },
    {
     "ten": "LN trước thuế",
     "kh": 900,
-    "th": 260,
-    "ky": "6T",
-    "tg": 50,
+    "th": 286,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q3"
    },
    {
     "ten": "LNST",
     "kh": 720,
-    "th": 201,
-    "ky": "6T",
-    "tg": 50,
+    "th": 221,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 23/04/2026 · BCTC Q3"
    }
   ],
-  "y": "6 tháng đạt 25% doanh thu, 29% LNTT, 28% LNST. 2024 đạt 87% LNST kế hoạch, 2025 đạt 112%. Mô hình cơ sở: LNST 607 tỷ (84%).",
+  "y": "9 tháng đạt 29% doanh thu, 32% LNTT, 31% LNST; Q4 cần ~499 tỷ LNST. 2024 đạt 87% LNST kế hoạch, 2025 đạt 112%. Mô hình cơ sở: LNST 494 tỷ (69%).",
   "ng": ""
  },
  "mang": [
@@ -1153,6 +1167,11 @@
      "Thủy Nguyên — doanh thu 2025",
      "~600 tỷ",
      "28% doanh thu năm, phân khu Phú Quý, Phát Lộc"
+    ],
+    [
+     "Thủy Nguyên — đã phân phối",
+     "339 sản phẩm",
+     "30/9/2026; thêm ~200 cuối năm, trả trước 287 tỷ"
     ],
     [
      "TT39-40",
@@ -1186,6 +1205,11 @@
      "2 tháp 35 tầng, ~100 triệu/m², bàn giao dự kiến Q4/2027"
     ],
     [
+     "Phú Thuận — doanh số",
+     "~1.263 tỷ",
+     "đến 30/9/2026; người mua trả trước 554 tỷ"
+    ],
+    [
      "Phú Thuận — chi phí dở dang",
      "923 tỷ",
      "31/12/2025 (CTS)"
@@ -1196,9 +1220,9 @@
      "17.200 m², trúng đấu giá"
     ],
     [
-     "Tồn kho 30/6/2026",
-     "6,34 nghìn tỷ",
-     "+21% từ đầu năm"
+     "Tồn kho 30/9/2026",
+     "6,94 nghìn tỷ",
+     "+32% từ đầu năm"
     ]
    ],
    "y": [
@@ -1245,22 +1269,22 @@
   },
   {
    "ten": "Vốn — nợ vay, cổ phiếu",
-   "phu": "Bảng cân đối hợp nhất 30/6/2026",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026",
    "so": [
     [
      "Nợ vay",
-     "7,40 nghìn tỷ",
-     "tiền + đầu tư ngắn hạn 0,51"
+     "7,62 nghìn tỷ",
+     "tiền + đầu tư ngắn hạn 0,59"
     ],
     [
      "Trái phiếu",
      "2,91 nghìn tỷ",
-     "VnBusiness 8/2026"
+     "30/6/2026 (VnBusiness 8/2026)"
     ],
     [
      "Vốn chủ cổ đông",
-     "5,41 nghìn tỷ",
-     "BVPS 15.359 đ (352 triệu cp)"
+     "5,43 nghìn tỷ",
+     "BVPS 15.419 đ (352 triệu cp)"
     ],
     [
      "Vốn điều lệ",
@@ -1270,11 +1294,11 @@
    ],
    "y": [
     {
-     "t": "Cổ tức 10% bằng cổ phiếu (32 triệu cp, ĐKCC 08/09/2026); HĐQT đề xuất thêm 10% (~352 tỷ mệnh giá), lấy ý kiến cổ đông đến 15/10/2026.",
+     "t": "Cổ tức 10% bằng cổ phiếu (32 triệu cp, ĐKCC 08/09/2026); đợt 2 thêm 10% (~35,2 triệu cp) ĐHĐCĐ thông qua 16/10, dự kiến phát hành Q4/2026.",
      "ng": "Mekong ASEAN 08–10/2026"
     },
     {
-     "t": "Phải thu ngắn hạn giảm từ 1,64 xuống 0,64 nghìn tỷ trong Q2/2026; dòng tiền kinh doanh 6T vẫn âm ~1,5 nghìn tỷ.",
+     "t": "Phải thu ngắn hạn 1,64 (3/2026) → 0,64 (6/2026) → 1,05 nghìn tỷ (9/2026); dòng tiền kinh doanh 6T âm ~1,5 nghìn tỷ.",
      "ng": "BCTC (VNDirect) · VnBusiness"
     }
    ]
@@ -1315,9 +1339,9 @@
      "ng": "MBS 06/10 (báo cáo VHM)"
     },
     {
-     "t": "DXG, KDH, KBC (ROE 1–10%) được trả P/B 0,91–0,94; VHM, IDC (ROE ~33%) 1,9–2,1. VPI ~3 lần với ROE 4 quý 7,7%.",
+     "t": "DXG, KDH, KBC (ROE 1–9%) được trả P/B 0,89–0,94; VHM, IDC (ROE 27–38%) 1,8–2,0. VPI trên 3 lần với ROE 4 quý 5,8%.",
      "h": -1,
-     "ng": "bảng cùng ngành, giá 20/10/2026"
+     "ng": "bảng cùng ngành, giá 02/11/2026"
     }
    ]
   },
@@ -1330,12 +1354,12 @@
      "ng": "BCTC · CTS 30/03"
     },
     {
-     "t": "Nợ ròng/vốn chủ 1,27 lần, dòng tiền kinh doanh âm: tăng trưởng 2027–2028 dựa vào nợ vay và chuyển nhượng dự án.",
+     "t": "Nợ ròng/vốn chủ 1,30 lần, dòng tiền kinh doanh âm: tăng trưởng 2027–2028 dựa vào nợ vay và chuyển nhượng dự án.",
      "h": -1,
      "ng": "BCTC · VnBusiness 8/2026"
     },
     {
-     "t": "Không chia tiền mặt; vốn điều lệ tăng 60% từ đầu 2022 qua cổ tức cổ phiếu và chào bán; thêm 10% đang chờ cổ đông duyệt.",
+     "t": "Không chia tiền mặt; vốn điều lệ tăng 60% từ đầu 2022 qua cổ tức cổ phiếu và chào bán; thêm 10% đã được ĐHĐCĐ duyệt 16/10.",
      "h": -1,
      "ng": "BCTC · Mekong ASEAN 10/2026"
     }
@@ -1355,8 +1379,23 @@
    "link": "https://cdn.simplize.vn/simplizevn/report/VPI/Tang_truong_ben_vung_nho_ban_giao_cac_san_pham_tai_VLASTA_Thuy_Nguyen_TERRA_Bac_Giang_va_ay_manh_hoat_ong_chuyen_nhuong_du_an.pdf"
   }
  ],
- "ctck_chu": "Chỉ một báo cáo CTCK trong 8 tháng (CTS 30/03/2026, không xếp hạng, không giá mục tiêu); mô hình tự dựng từ BCTC, công bố của doanh nghiệp và so sánh cùng ngành. VPI không chia cổ tức tiền mặt; cổ tức 10% bằng cổ phiếu chốt 08/09/2026.",
+ "ctck_chu": "Chỉ một báo cáo CTCK trong 8 tháng (CTS 30/03/2026, không xếp hạng, không giá mục tiêu); mô hình tự dựng từ BCTC (đến Q3/2026), công bố của doanh nghiệp và so sánh cùng ngành. VPI không chia cổ tức tiền mặt; cổ tức 10% bằng cổ phiếu chốt 08/09/2026.",
  "nguon": [
+  {
+   "ten": "CafeF — lãi 221 tỷ 9 tháng; người mua trả trước theo dự án, doanh số Phú Thuận, Thủy Nguyên",
+   "ngay": "31/10/2026",
+   "link": "https://cafef.vn/van-phu-bao-lai-221-ty-trong-9-thang-dau-nam-nho-tang-toc-mo-ban-cac-du-an-tai-hai-phong-ha-noi-tphcm-188261031060215903.chn"
+  },
+  {
+   "ten": "Tin nhanh chứng khoán — lợi nhuận gộp 9 tháng 2026 tăng 68,9%",
+   "ngay": "30/10/2026",
+   "link": "https://www.tinnhanhchungkhoan.vn/van-phu-vpi-loi-nhuan-gop-9-thang-dau-nam-2026-tang-689-post400527.html"
+  },
+  {
+   "ten": "Mekong ASEAN — triển khai phát hành hơn 35 triệu cổ phiếu trả cổ tức lần hai",
+   "ngay": "10/2026",
+   "link": "https://mekongasean.vn/van-phu-trien-khai-phat-hanh-hon-35-trieu-co-phieu-tra-co-tuc-lan-hai-61020.html"
+  },
   {
    "ten": "CTS — Tăng trưởng nhờ bàn giao VLASTA Thủy Nguyên, TERRA Bắc Giang, đẩy mạnh chuyển nhượng dự án",
    "ngay": "30/03/2026",
