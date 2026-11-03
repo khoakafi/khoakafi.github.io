@@ -3,9 +3,9 @@
  "ma": "PLX",
  "ten": "Tập đoàn Xăng dầu Việt Nam (Petrolimex)",
  "nganh": "Phân phối xăng dầu",
- "ky": "BCTC Q2/2026 · sản lượng 6T/2026",
- "cap_nhat": "2026-10-18",
- "lan_sau": "sau BCTC Q3/2026",
+ "ky": "BCTC Q3/2026 · giá 02/11/2026",
+ "cap_nhat": "2026-11-03",
+ "lan_sau": "sau BCTC Q4/2026 · khi Nghị định xăng dầu mới ban hành",
  "cp_trieu": 1293.9,
  "cp_ng": "Vốn điều lệ 12.938,8 tỷ; đã bán hết 23,3 triệu cổ phiếu quỹ 26/8–16/9/2026 (VNDirect 15/10: vốn hóa ÷ giá = 1.293,9 triệu)",
  "co_tuc": [
@@ -16,45 +16,45 @@
   ]
  ],
  "tieu_de": {
-  "t": "Lãi 2026 đến từ thị phần, không phải hoàn nhập — giá mới trả cho biên năm 2025",
+  "t": "Q3 lãi gấp đôi nhờ nhịp giá dầu, sản lượng đã chậm lại — giá chỉ trả cho biên năm 2025",
   "dk": "up_tren:10",
-  "khac": "Lãi 2026 đến từ thị phần, không phải hoàn nhập — biên mỗi lít quyết định phần còn lại"
+  "khac": "Q3 lãi gấp đôi nhờ nhịp giá dầu, sản lượng đã chậm lại — biên mỗi lít 2027 quyết định giá trị"
  },
- "dong_mo": "6 tháng 2026 lãi 2.037 tỷ (+36%) trong khi dự phòng tồn kho ròng chỉ 248 tỷ: động lực là sản lượng +14,2% khi Petrolimex lấp chỗ trống nguồn cung. Cơ sở: biên mỗi lít 2027 lùi về mức 2024 nhưng giữ thị phần, LN đi ngang ~3,5 nghìn tỷ; P/E 15 cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Quý 3 lãi 1.241 tỷ (+103%), vượt mô hình cũ (996 tỷ) nhờ lãi gộp ~1.558 đ/lít khi PLX nhập hàng trước đợt tăng giá T9; nhưng sản lượng quý chỉ ~+5% (6T +14,2%) và vay ngắn hạn gấp 2,5 lần. Cơ sở: biên 2027 về mức 2024, LN ~3,3 nghìn tỷ; P/E 15 cho {gt} ({up}), cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "+14,2%",
-   "nhan": "sản lượng 6T/2026 (thị trường ~+6%)",
-   "tieu": "Cú sốc nguồn cung dồn khách về Petrolimex",
-   "t": "Khi eo Hormuz bị phong tỏa, PLX — 36 kho, 2,2 triệu m³ (~50 ngày bán, gấp đôi PV OIL) — mua kỷ lục 1,3 triệu m³ trong tháng 3 và giữ nguồn khi nhiều thương nhân thiếu hàng. Sản lượng 6T +14,2%; MAS ước 9T nội địa +16% (diesel +25%) so với thị trường ~+6%, thị phần ~46% từ 40% năm 2024. 19 giấy phép phân phối bị thu hồi đến cuối T8: mô hình giữ phần lớn thị phần, sản lượng 2027 +4%.",
-   "ng": "PLX 15/07 · MAS 29/09 · FPTS 29/04 · mô hình"
+   "so": "+11%",
+   "nhan": "sản lượng 9T/2026 (6T: +14,2%)",
+   "tieu": "Thị phần đã giành được, nhưng đà tăng chậm lại",
+   "t": "Khi eo Hormuz bị phong tỏa, PLX — 36 kho, 2,2 triệu m³ (~50 ngày bán, gấp đôi PV OIL) — mua kỷ lục 1,3 triệu m³ trong tháng 3 và giữ nguồn khi nhiều thương nhân thiếu hàng: 6T +14,2%, thị phần ~46% (MAS) từ 40% năm 2024. 9T còn +11% — quý 3 chỉ ~+5% khi hàng về đủ. Mô hình: Q4 +5%, 2027 +4% trên nền đã cao; thị phần về 43% thì mất 2,2 nghìn đ/cp.",
+   "ng": "PLX 15/07 · CafeF 02/11 · MAS 29/09 · mô hình"
   },
   {
-   "so": "248 tỷ",
-   "nhan": "dự phòng tồn kho ròng 6T/2026",
-   "tieu": "Lãi nửa năm không nhờ hoàn nhập",
-   "t": "Quý 1 trích 6.322 tỷ dự phòng khi diesel Singapore rơi 18% đầu tháng 4, quý 2 hoàn nhập 6.074 tỷ — ròng chỉ 248 tỷ. Lãi 6T đến từ kinh doanh: lãi gộp 1.126 đ/lít (6T/2025: 1.012), chi phí 862 đ, lãi kinh doanh 264 đ/lít — gần gấp đôi năm 2025 (138). Tài chính lại yếu: tiền và đầu tư ngắn hạn giảm từ 28,5 về 17,8 nghìn tỷ (trả vay, vốn lưu động), thu chi tài chính 6T ròng −76 tỷ.",
-   "ng": "BCTC Q1–Q2 · TC Kinh tế Tài chính · KIS 07/05 · mô hình"
+   "so": "1.241 tỷ",
+   "nhan": "LN cổ đông Q3/2026 (+103%; mô hình cũ 996)",
+   "tieu": "Q3 xác nhận biên cao, nhưng phần vượt là nhịp giá dầu",
+   "t": "Lãi gộp Q3 7,3 nghìn tỷ (+62%), ~1.558 đ/lít — PLX nhập nhiều hàng T8 trước đợt tăng giá đầu T9 (MAS). Chi phí bán hàng cũng tăng 43% lên 5,3 nghìn tỷ (~1.208 đ/lít, chưa giải trình) nên lãi kinh doanh 350 đ/lít — cao hơn 6T (264) nhưng khó lặp lại khi giá dầu hạ. Vay 30/9 27,2 nghìn tỷ (30/6: 10,7) khi tồn kho lên 29,3 nghìn tỷ.",
+   "ng": "BCTC Q3 · CafeF 02/11 · MAS 29/09 · mô hình"
   },
   {
-   "so": "±6,0",
+   "so": "±5,8",
    "nhan": "nghìn đ/cp mỗi ±30 đ/lít lãi gộp 2027",
    "tieu": "Biên mỗi lít quyết định giá trị — nghị định mới là phép thử",
-   "t": "Lãi kinh doanh 2025 chỉ 138 đ/lít — hiệu của lãi gộp 1.023 đ và chi phí 885 đ — nên mỗi ±30 đ/lít lãi gộp 2027 (10% lợi nhuận định mức 300 đ/lít) đổi LN ±518 tỷ. Dự thảo thay Nghị định 83 cho thương nhân tự tính giá bán, chi phí định mức điều chỉnh theo CPI; lấy ý kiến đến 23/08/2026, MAS kỳ vọng ban hành trong T10. Mô hình cơ sở chưa tính lợi ích này.",
-   "ng": "BCTC · FPTS 29/04 · MAS 29/09 · Bộ Công Thương"
+   "t": "Lãi kinh doanh 2025 chỉ 138 đ/lít — hiệu của lãi gộp 1.023 đ và chi phí 885 đ — nên mỗi ±30 đ/lít lãi gộp 2027 (10% lợi nhuận định mức 300 đ/lít) đổi LN ±499 tỷ. Dự thảo thay Nghị định 83 cho thương nhân tự tính giá bán, chi phí định mức điều chỉnh theo CPI; Thủ tướng yêu cầu trình Chính phủ trước 10/11/2026 (VPCP 21/10). Mô hình cơ sở chưa tính lợi ích này.",
+   "ng": "BCTC · FPTS 29/04 · VPCP 21/10 · Bộ Công Thương"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Giá mới trả cho biên năm 2025; giá trị cơ sở {up_so}",
    "dk": "up_tren:10",
-   "t": "Nếu lãi kinh doanh 2027 chỉ bằng 2025 (138 đ/lít), P/E 15 cho 33,3 nghìn đ — sát giá 16/10; P/B 1,61 lần vốn chủ cuối 2026E, gần đáy 1,56 (10/2022). Định giá: P/E 15 × LN 2027E (≈ mức thấp 10% từ 2017, ≈ P/B 1,87). Xấu 29,1: lãi kinh doanh 95 đ/lít, sản lượng −2%, P/E 20; tốt 49,5: lãi gộp như 6T/2026, P/E 13.",
+   "t": "Nếu lãi kinh doanh 2027 chỉ bằng 2025 (138 đ/lít), P/E 15 cho 30,8 nghìn đ — sát giá 02/11; P/B 1,49 lần vốn chủ cuối 2026E, dưới đáy 1,56 (10/2022). Định giá: P/E 15 × LN 2027E (≈ mức thấp 10% từ 2017, ≈ P/B 1,71). Xấu 26,5: lãi kinh doanh 95 đ/lít, sản lượng −2%, P/E 20; tốt 46,8: lãi gộp ≈ 6T/2026, P/E 13.",
    "ng": "mô hình · P/E, P/B lịch sử: BCTC VNDirect",
    "khac": {
     "so": "{gt_so}",
     "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
     "tieu": "P/E 15 × LN 2027E: {up_so} so với giá hiện tại",
-    "t": "P/E 15 × LN 2027E (≈ mức thấp 10% P/E 4 quý từ 2017, ≈ P/B 1,87 vốn chủ cuối 2026E). Cơ sở: biên mỗi lít 2027 về mức 2024, giữ thị phần 2026. Lãi đáy được trả P/E cao nên kịch bản xấu dùng 20 (≈ trung vị), tốt 13. Xấu 29,1, tốt 49,5 nghìn đ/cp. Cổ tức kế hoạch 2026: 1.000 đ/cp."
+    "t": "P/E 15 × LN 2027E (≈ mức thấp 10% P/E 4 quý từ 2017, ≈ P/B 1,71 vốn chủ cuối 2026E). Cơ sở: biên mỗi lít 2027 về mức 2024, giữ thị phần 2026. Lãi đáy được trả P/E cao nên kịch bản xấu dùng 20 (≈ trung vị), tốt 13. Xấu 26,5, tốt 46,8 nghìn đ/cp. Cổ tức kế hoạch 2026: 1.000 đ/cp."
    }
   }
  ],
@@ -66,19 +66,19 @@
   ],
   "ln": [
    2675,
-   3509,
-   3507
+   4003,
+   3274
   ],
   "ln_truoc": 2890,
   "eps": [
    2068,
-   2712,
-   2710
+   3094,
+   2530
   ],
   "bv": [
    20254,
-   21747,
-   23458
+   22166,
+   23697
   ],
   "co_tuc_nam": 1200,
   "them": [
@@ -86,8 +86,8 @@
     "ten": "Sản lượng (triệu m³/tấn)",
     "v": [
      17.705,
-     20.11,
-     20.92
+     19.38,
+     20.16
     ],
     "d": 1
    },
@@ -95,7 +95,7 @@
     "ten": "Lãi kinh doanh (đ/lít)",
     "v": [
      138,
-     220,
+     267,
      175
     ]
    },
@@ -103,8 +103,8 @@
     "ten": "ROE",
     "v": [
      10.2,
-     12.9,
-     12.0
+     14.6,
+     11.0
     ],
     "d": 1,
     "pt": 1
@@ -125,8 +125,8 @@
     "mau": "c1",
     "v": [
      1801,
-     3115,
-     2697
+     3614,
+     2580
     ]
    },
    {
@@ -134,8 +134,8 @@
     "mau": "c4",
     "v": [
      874,
-     394,
-     810
+     389,
+     694
     ]
    }
   ],
@@ -157,8 +157,8 @@
     "ten": "Sản lượng xuất bán (triệu m³/tấn)",
     "v": [
      17.705,
-     20.11,
-     20.92
+     19.38,
+     20.16
     ],
     "d": 2,
     "tang": 1
@@ -167,7 +167,7 @@
     "ten": "Lãi gộp (đ/lít)",
     "v": [
      1023,
-     1110,
+     1272,
      1070
     ]
    },
@@ -175,7 +175,7 @@
     "ten": "Chi phí bán hàng + QLDN (đ/lít)",
     "v": [
      885,
-     890,
+     1005,
      895
     ]
    },
@@ -183,7 +183,7 @@
     "ten": "Lãi kinh doanh (đ/lít)",
     "v": [
      138,
-     220,
+     267,
      175
     ],
     "dam": 1
@@ -195,8 +195,8 @@
     "ten": "Lãi gộp",
     "v": [
      18113,
-     22328,
-     22380
+     24666,
+     21571
     ],
     "tang": 1
    },
@@ -204,8 +204,8 @@
     "ten": "Chi phí bán hàng + QLDN",
     "v": [
      15660,
-     17891,
-     18720
+     19480,
+     18043
     ],
     "tang": 1
    },
@@ -213,16 +213,16 @@
     "ten": "Tài chính ròng, liên doanh & khác",
     "v": [
      1191,
-     561,
-     1100
+     559,
+     950
     ]
    },
    {
     "ten": "Lợi nhuận trước thuế",
     "v": [
      3643,
-     4998,
-     4760
+     5745,
+     4478
     ],
     "tang": 1
    },
@@ -230,7 +230,7 @@
     "ten": "Cổ đông thiểu số",
     "v": [
      351,
-     613,
+     605,
      420
     ]
    },
@@ -238,8 +238,8 @@
     "ten": "LN cổ đông",
     "v": [
      2675,
-     3509,
-     3507
+     4003,
+     3274
     ],
     "dam": 1,
     "tang": 1
@@ -248,76 +248,76 @@
     "ten": "EPS (đ)",
     "v": [
      2068,
-     2712,
-     2710
+     3094,
+     2530
     ],
     "eps": 1
    }
   ],
-  "ghi": "Mỗi lít = số hợp nhất ÷ sản lượng xuất bán (m³/tấn, công ty công bố; 6T/2025, 2H/2025 suy từ +14,2%). 2026E = 6 tháng thực tế + Q3–Q4 ước tính. Doanh thu đi theo giá dầu nên không dùng để dự phóng lãi; thuế 17,5% LNTT."
+  "ghi": "Mỗi lít = số hợp nhất ÷ sản lượng xuất bán (m³/tấn, công ty công bố; 6T/2025, 2H/2025 suy từ +14,2%, Q3/2026 từ 9T +11%). 2026E = 9 tháng thực tế + Q4 ước tính. Doanh thu đi theo giá dầu nên không dùng để dự phóng lãi; thuế Q4 19%, 2027 17,5% LNTT."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   3509
+   4003
   ],
   "cuoi": [
    "2027E",
-   3507
+   3274
   ],
   "buoc": [
    [
     "Sản lượng",
-    146
+    171
    ],
    [
     "Lãi gộp mỗi lít",
-    -693
+    -3236
    ],
    [
     "Chi phí mỗi lít",
-    -93
+    1828
    ],
    [
     "Tài chính, liên doanh",
-    445
+    323
    ],
    [
     "Cổ đông thiểu số",
-    193
+    185
    ]
   ],
-  "y": "Lãi kinh doanh mỗi lít lùi từ 220 về 175 đ (lãi gộp 1.110 → 1.070) lấy đi phần lớn mức tăng; bù lại là sản lượng cả năm, thu nhập tài chính trở lại khi tồn kho, phải thu về mức bình thường, và phần cổ đông thiểu số hạ từ mức cao 2026.",
+  "y": "Lãi kinh doanh mỗi lít lùi từ 267 về 175 đ (lãi gộp 1.272 → 1.070) lấy đi phần lớn mức tăng; bù lại là sản lượng cả năm, thu nhập tài chính trở lại khi tồn kho, phải thu về mức bình thường, và phần cổ đông thiểu số hạ từ mức cao 2026.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Sản lượng 2H/2026 so với cùng kỳ",
+   "ten": "Sản lượng Q4/2026 so với cùng kỳ",
    "v": [
-    "+10%",
-    "+13%",
+    "+2%",
+    "+5%",
+    "+8%"
+   ],
+   "ly_do": "6T +14,2%, 9T +11% (CafeF 02/11) → Q3 ~+5%: lợi thế nguồn cung nhạt dần khi hàng về đủ"
+  },
+  {
+   "ten": "Lãi gộp Q4/2026 (đ/lít)",
+   "v": [
+    "1.050",
+    "1.300",
+    "1.450"
+   ],
+   "ly_do": "Q3 ~1.558 (nhập hàng T8 trước đợt tăng giá T9 — MAS), 6T 1.126, 2H/2025 1.034; xấu = giá dầu hạ nhanh, lỗ tồn kho"
+  },
+  {
+   "ten": "Chi phí bán hàng + QLDN Q4/2026",
+   "v": [
+    "+28%",
+    "+22%",
     "+16%"
    ],
-   "ly_do": "6T +14,2% (PLX); MAS ước 9T nội địa +16%, diesel +25%, thị trường +6%; ACBS giả định 2H +10%"
-  },
-  {
-   "ten": "Lãi gộp Q3 · Q4/2026 (đ/lít)",
-   "v": [
-    "1.060 · 960",
-    "1.130 · 1.060",
-    "1.190 · 1.120"
-   ],
-   "ly_do": "6T 1.126 (gồm 248 tỷ dự phòng ròng), 2H/2025 1.034; Q3 nhập nhiều hàng T8 trước đợt tăng giá đầu T9 (MAS); Q4 giá dầu có thể hạ"
-  },
-  {
-   "ten": "Chi phí bán hàng + QLDN 2H/2026",
-   "v": [
-    "+16%",
-    "+12%",
-    "+9%"
-   ],
-   "ly_do": "Q1 +19,5%, Q2 +14,1% so với cùng kỳ (cước vận tải, phí theo giá trị hàng); tinh gọn 51 → 34 công ty xăng dầu (ABS)"
+   "ly_do": "So với cùng kỳ: Q1 +19,5%, Q2 +14,1%, Q3 +41% (bán hàng +43%, chưa giải trình; phí theo giá trị hàng, cước vận tải); giá dầu hạ thì giảm theo"
   },
   {
    "ten": "Sản lượng 2027",
@@ -335,7 +335,7 @@
     "1.070",
     "1.130"
    ],
-   "ly_do": "2024 1.102 (giá dầu đi ngang), 2025 1.023 (giá giảm), 6T/2026 1.126; tốt = nghị định mới cho tự định giá"
+   "ly_do": "2024 1.102 (giá dầu đi ngang), 2025 1.023 (giá giảm), 9T/2026 1.264; giữ như bản 18/10 — Q3 cao là nhịp giá dầu"
   },
   {
    "ten": "Chi phí bán hàng + QLDN 2027 (đ/lít)",
@@ -344,16 +344,16 @@
     "895",
     "885"
    ],
-   "ly_do": "2024 924, 2025 885, 2026E 890: giảm nhờ quy mô; lương, ~50 cửa hàng mở mới/năm (FPTS) đẩy lên"
+   "ly_do": "2024 924, 2025 885, 2026E 1.005 (cao vì phí theo giá trị hàng khi giá dầu cao); lương, ~50 cửa hàng mới/năm đẩy lên"
   },
   {
    "ten": "Tài chính ròng, liên doanh & khác 2027 (tỷ)",
    "v": [
-    "850",
-    "1.100",
-    "1.250"
+    "700",
+    "950",
+    "1.150"
    ],
-   "ly_do": "2024 1.179, 2025 1.191; 6T/2026 chỉ 261 khi tiền gửi giảm, lãi vay tăng; thu 844 tỷ từ bán cổ phiếu quỹ (9/2026)"
+   "ly_do": "2024 1.179, 2025 1.191; 9T/2026 chỉ 409: 30/9 vay 27,2 nghìn tỷ, gần bằng tiền và tiền gửi — hạ từ 850 · 1.100 · 1.250"
   },
   {
    "ten": "P/E trên LN 2027E",
@@ -362,30 +362,30 @@
     "15",
     "13"
    ],
-   "ly_do": "Lãi đáy được trả P/E cao: 20 ≈ trung vị từ 2017 (20,0); 15 ≈ mức thấp 10% (15,1); tương đương P/B 1,40 · 1,87 · 2,20 vốn chủ cuối 2026E"
+   "ly_do": "Lãi đáy được trả P/E cao: 20 ≈ trung vị từ 2017 (19,9); 15 ≈ mức thấp 10% (14,9); tương đương P/B 1,25 · 1,71 · 2,04 vốn chủ cuối 2026E"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 2277,
-   "ln27": 1885,
-   "gia": 29.1,
+   "ln26": 2718,
+   "ln27": 1716,
+   "gia": 26.5,
    "mo_ta": "Giá dầu hạ nhanh: lỗ tồn kho Q4, lãi gộp 2027 1.000 đ/lít, thị phần trả lại (sản lượng −2%); P/E 20 trên lãi đáy"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 3509,
-   "ln27": 3507,
-   "gia": 40.7,
+   "ln26": 4003,
+   "ln27": 3274,
+   "gia": 38.0,
    "mo_ta": "Lãi kinh doanh 2027 175 đ/lít ≈ 2024 (lãi gộp 1.070, chi phí 895 đ), giữ thị phần, sản lượng +4%; P/E 15"
   },
   {
    "ten": "Tốt",
-   "ln26": 4512,
-   "ln27": 4928,
-   "gia": 49.5,
-   "mo_ta": "Nghị định mới giữ lãi gộp 1.130 đ/lít (≈ 6T/2026), sản lượng +6%, tài chính hồi phục; P/E 13"
+   "ln26": 4959,
+   "ln27": 4661,
+   "gia": 46.8,
+   "mo_ta": "Nghị định mới giữ lãi gộp 1.130 đ/lít (≈ 6T/2026), sản lượng +6%, vốn lưu động giải phóng; P/E 13"
   }
  ],
  "dinh_gia": {
@@ -398,9 +398,9 @@
     "ten": "LN cổ đông 2027E",
     "mau": "c1",
     "x": [
-     1885,
-     3507,
-     4928
+     1716,
+     3274,
+     4661
     ],
     "boi": [
      20,
@@ -411,38 +411,38 @@
     "boi_ten": "P/E",
     "sh": 1,
     "gt": [
-     37700,
-     52605,
-     64064
+     34320,
+     49110,
+     60593
     ]
    }
   ],
   "von": [
-   37700,
-   52605,
-   64064
+   34320,
+   49110,
+   60593
   ],
   "gia": [
-   29.1,
-   40.7,
-   49.5
+   26.5,
+   38.0,
+   46.8
   ]
  },
  "nhay": [
   [
    "Lãi gộp 2027 ±30 đ/lít",
-   518,
-   6.0
+   499,
+   5.8
   ],
   [
    "Chi phí mỗi lít 2027 ±20 đ",
-   345,
-   4.0
+   333,
+   3.9
   ],
   [
    "P/E ±1 lần",
    null,
-   2.7
+   2.5
   ],
   [
    "Tài chính, liên doanh 2027 ±200 tỷ",
@@ -451,8 +451,8 @@
   ],
   [
    "Sản lượng 2027 ±5%",
-   145,
-   1.7
+   140,
+   1.6
   ]
  ],
  "pe_ls": {
@@ -572,7 +572,8 @@
    "2026-07",
    "2026-08",
    "2026-09",
-   "2026-10"
+   "2026-10",
+   "2026-11"
   ],
   "v": [
    2.97,
@@ -689,21 +690,22 @@
    1.67,
    1.79,
    1.78,
-   1.78
+   1.7,
+   1.63
   ],
-  "p10": 1.75,
-  "p25": 1.92,
-  "tv": 2.78,
+  "p10": 1.74,
+  "p25": 1.91,
+  "tv": 2.73,
   "thap": [
    "2022-10",
    1.56
   ],
   "nay": [
-   "2026-10",
-   1.78
+   "2026-11",
+   1.63
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data. Trước 9/2026 tính trên 1.270,6 triệu cp lưu hành (trừ cổ phiếu quỹ đã bán 9/2026).",
-  "dung": "Kịch bản dùng P/E 20 · 15 · 13 trên LN 2027E — tương đương P/B 1,40 · 1,87 · 2,20 lần vốn chủ cuối 2026E: xấu dưới đáy 1,56 (10/2022), cơ sở quanh mức thấp 25% (1,92)."
+  "dung": "Kịch bản dùng P/E 20 · 15 · 13 trên LN 2027E — tương đương P/B 1,25 · 1,71 · 2,04 lần vốn chủ cuối 2026E: xấu dưới đáy 1,56 (10/2022), cơ sở quanh mức thấp 25% (1,91)."
  },
  "theo_doi": [
   {
@@ -720,40 +722,51 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    -201,
-    476,
-    977
+    -560,
+    726,
+    1682
    ],
    "ck": 565
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    2277,
-    3509,
-    4512
+    2718,
+    4003,
+    4959
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "10–11/2026",
-   "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "PLX nhập nhiều hàng T8 trước đợt tăng giá đầu T9, chiết khấu đại lý vẫn ở mức có lãi (MAS). Mô hình cơ sở LN 996 tỷ (Q3/2025: 611), lãi gộp ~5,7 nghìn tỷ.",
+   "khi": "11/2026",
+   "loai": "len",
+   "tieu": "Đã ra KQKD Q3: LN 1.241 tỷ (+103%)",
+   "ct": "Vượt khoảng cơ sở cũ (996 tỷ) nhờ lãi gộp 7,3 nghìn tỷ; 9T LNTT 4,7 nghìn tỷ, 139% kế hoạch năm. Nhưng sản lượng chỉ ~+5%, chi phí bán hàng +43%, thuế 24% — mô hình không nâng biên 2027.",
    "tac": [
-    "Lãi gộp ≥ 5,7 nghìn tỷ",
-    "giữ kịch bản cơ sở; dưới 5,2 nghìn tỷ nghiêng về kịch bản xấu"
+    "2026E 4,0 nghìn tỷ",
+    "LN 2027E cơ sở 3,3 nghìn tỷ (bản 18/10: 3,5)"
    ],
-   "theo_doi": "lãi gộp, dự phòng tồn kho"
+   "theo_doi": "lãi gộp/lít, chi phí bán hàng"
   },
   {
-   "khi": "10/2026–2027",
+   "khi": "01–02/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Mô hình cơ sở LN 726 tỷ (Q4/2025: 565), lãi gộp ~6,1 nghìn tỷ. Giá dầu hạ trong quý thì lỗ tồn kho như Q1/2026 (kịch bản xấu lỗ ~0,6 nghìn tỷ).",
+   "tac": [
+    "Lãi gộp ≥ 6,1 nghìn tỷ",
+    "giữ kịch bản cơ sở; dưới 4,8 nghìn tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "lãi gộp, dự phòng tồn kho, vay ngắn hạn"
+  },
+  {
+   "khi": "11/2026–2027",
    "loai": "len",
    "tieu": "Nghị định kinh doanh xăng dầu mới",
-   "ct": "Thay NĐ 83/2014: thương nhân tự tính giá bán, Nhà nước chỉ công bố chi phí kinh doanh định mức (theo CPI); siết điều kiện đầu mối, gộp đại lý, nhận quyền bán lẻ vào \"thương nhân phân phối\".",
+   "ct": "Thay NĐ 83/2014: thương nhân tự tính giá bán, Nhà nước chỉ công bố chi phí kinh doanh định mức (theo CPI); siết điều kiện đầu mối. VPCP 21/10: Bộ Công Thương trình Chính phủ trước 10/11/2026.",
    "tac": [
-    "+6,0 nghìn đ/cp",
+    "+5,8 nghìn đ/cp",
     "mỗi +30 đ/lít lãi gộp 2027"
    ],
    "theo_doi": "ngày ban hành, hiệu lực"
@@ -765,7 +778,7 @@
    "tieu": "Giá dầu hạ nhanh khi Hormuz thông",
    "ct": "Tồn kho ~20 ngày bán, giá bán điều chỉnh theo kỳ: Q1/2026 phải trích 6.322 tỷ dự phòng khi diesel Singapore −18% trong một tuần. 2H/2025 (giá giảm) lãi kinh doanh chỉ 109 đ/lít.",
    "tac": [
-    "−14,0 nghìn đ/cp",
+    "−13,5 nghìn đ/cp",
     "nếu lãi gộp 2027 chỉ 1.000 đ/lít (sản lượng, P/E cơ sở)"
    ],
    "theo_doi": "Brent, diesel Singapore"
@@ -777,7 +790,7 @@
    "tieu": "Hết hỗ trợ thuế xăng dầu",
    "ct": "Thuế BVMT 0 đ/lít, thuế nhập khẩu ưu đãi, GTGT được gia hạn đến 31/12/2026 (NQ 43/2026/NQ-CP). Áp lại có thể đẩy giá bán lẻ lên 18–36% (MAS), ảnh hưởng sức mua.",
    "tac": [
-    "±1,7 nghìn đ/cp",
+    "±1,6 nghìn đ/cp",
     "mỗi ±5% sản lượng 2027"
    ],
    "theo_doi": "nghị quyết gia hạn, CPI"
@@ -789,7 +802,7 @@
    "tieu": "Thị phần trả lại khi nguồn cung bình thường",
    "ct": "PV OIL vẫn tăng chiết khấu cho đại lý để giành thị phần (FPTS); khi hàng đủ, đại lý có lựa chọn và PLX khó giữ chiết khấu thấp như 2026.",
    "tac": [
-    "−2,3 nghìn đ/cp",
+    "−2,2 nghìn đ/cp",
     "nếu thị phần về 43% (2025) thay vì giữ ~46%"
    ],
    "theo_doi": "sản lượng nội địa hằng tháng"
@@ -806,7 +819,7 @@
    "khi": "Liên tục",
    "loai": "len",
    "tieu": "Mảng ngoài xăng dầu tăng tốc",
-   "ct": "6T/2026: nhiên liệu bay hơn 350 tỷ, Hóa dầu (PLC) ~240 tỷ (gấp 3), liên doanh Castrol BP Petco hơn 200 tỷ, Gas Petrolimex hơn 120 tỷ (×1,6).",
+   "ct": "6T/2026: nhiên liệu bay >350 tỷ, Hóa dầu (PLC) ~240 tỷ (gấp 3), Castrol BP Petco >200 tỷ, Gas Petrolimex >120 tỷ. Q3 chững lại: lãi liên doanh, liên kết 110 tỷ (Q2: 154), PLC lỗ 62,6 tỷ (BCTC riêng).",
    "tac": [
     "±1,9 nghìn đ/cp",
     "mỗi ±200 tỷ LNTT 2027 từ các mảng này (P/E cơ sở)"
@@ -909,9 +922,9 @@
    "phu": "~93% doanh thu, 84% lãi gộp 2025 · bán lẻ qua 2.946 cửa hàng tự sở hữu, bán buôn qua 1.433 đại lý, khách công nghiệp",
    "so": [
     [
-     "Sản lượng 6T/2026",
-     "~10 triệu m³/tấn",
-     "+14,2%"
+     "Sản lượng 9T/2026",
+     "~14,7 triệu m³/tấn",
+     "+11%"
     ],
     [
      "Cửa hàng tự sở hữu",
@@ -1077,47 +1090,47 @@
    "kieu": "cot",
    "dv": "tỷ đồng",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Lãi gộp",
      "v": [
-      3436,
       4640,
       3712,
       5148,
       4499,
       4754,
       3701,
-      7554
+      7554,
+      7303
      ],
      "mau": "c1"
     },
     {
      "ten": "Chi phí bán hàng + QLDN",
      "v": [
-      3587,
       4166,
       3617,
       3764,
       4016,
       4263,
       4322,
-      4296
+      4296,
+      5661
      ],
      "mau": "c4"
     }
    ],
    "so_le": 0,
-   "y": "Chi phí đi một đường (~4,3 nghìn tỷ/quý), lãi gộp chạy theo giá dầu: Q1/2026 thấp hơn chi phí vì trích 6.322 tỷ dự phòng, Q2 hoàn nhập 6.074 tỷ.",
+   "y": "Lãi gộp chạy theo giá dầu: Q1/2026 thấp hơn chi phí vì trích 6.322 tỷ dự phòng, Q2 hoàn nhập 6.074 tỷ; Q3 chi phí nhảy lên 5,7 nghìn tỷ (bán hàng +43%).",
    "ng": "BCTC PLX (VNDirect)"
   },
   {
@@ -1128,7 +1141,8 @@
     "2024",
     "6T/25",
     "2H/25",
-    "6T/26"
+    "6T/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1137,7 +1151,8 @@
       1102,
       1012,
       1034,
-      1126
+      1126,
+      1558
      ],
      "mau": "c1"
     },
@@ -1147,13 +1162,14 @@
       924,
       843,
       925,
-      862
+      862,
+      1208
      ],
      "mau": "c4"
     }
    ],
    "so_le": 0,
-   "y": "Lãi kinh doanh mỗi lít: 178 (2024) → 169 (6T/25) → 109 (2H/25, giá dầu giảm) → 264 đ (6T/26).",
+   "y": "Lãi kinh doanh mỗi lít: 178 (2024) → 169 (6T/25) → 109 (2H/25, giá dầu giảm) → 264 (6T/26) → 350 đ (Q3/26, sản lượng Q3 suy từ 9T +11%).",
    "ng": "BCTC (VNDirect) ÷ sản lượng PLX công bố"
   },
   {
@@ -1213,32 +1229,32 @@
    {
     "ten": "Sản lượng xuất bán",
     "kh": 19442,
-    "th": 10000,
-    "ky": "6T",
-    "tg": 50,
+    "th": 14686,
+    "ky": "9T",
+    "tg": 75,
     "dv": "nghìn m³/tấn",
-    "ng": "ĐHĐCĐ 24/04 · sơ kết 15/07"
+    "ng": "ĐHĐCĐ 24/04 · ước từ 9T +11% (CafeF 02/11)"
    },
    {
     "ten": "Doanh thu thuần",
     "kh": 315000,
-    "th": 234744,
-    "ky": "6T",
-    "tg": 50,
+    "th": 373226,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 24/04 · BCTC Q2"
+    "ng": "ĐHĐCĐ 24/04 · BCTC Q3"
    },
    {
     "ten": "Lợi nhuận trước thuế",
     "kh": 3380,
-    "th": 2898,
-    "ky": "6T",
-    "tg": 50,
+    "th": 4688,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 24/04 · BCTC Q2"
+    "ng": "ĐHĐCĐ 24/04 · BCTC Q3"
    }
   ],
-  "y": "6 tháng đạt 86% kế hoạch LNTT, 51% sản lượng — kế hoạch đặt khi quý 1 ước lỗ ~1.000 tỷ từ xăng dầu. Mô hình cơ sở cả năm LNTT 5,0 nghìn tỷ, gấp 1,5 lần kế hoạch.",
+  "y": "9 tháng đạt 139% kế hoạch LNTT, ~76% sản lượng — kế hoạch đặt khi quý 1 ước lỗ ~1.000 tỷ từ xăng dầu. Mô hình cơ sở cả năm LNTT 5,7 nghìn tỷ, gấp 1,7 lần kế hoạch.",
   "ng": ""
  },
  "ctck": [
@@ -1359,6 +1375,21 @@
    "ten": "Bộ Công Thương — Điều hành giá 15/10/2026 (NQ 43/2026/NQ-CP)",
    "ngay": "15/10/2026",
    "link": "https://moit.gov.vn/tin-tuc/thong-tin-ve-viec-dieu-hanh-gia-xang-dau-ngay-15-10-2026.html"
+  },
+  {
+   "ten": "CafeF — Petrolimex lợi nhuận 9 tháng đạt 4.688 tỷ, vượt kế hoạch gần 40%",
+   "ngay": "02/11/2026",
+   "link": "https://cafef.vn/petrolimex-loi-nhuan-9-thang-dat-4688-ty-dong-vuot-ke-hoach-loi-nhuan-nam-2026-gan-40-188261102004807731.chn"
+  },
+  {
+   "ten": "Vietnambiz — Vay nợ của Petrolimex vượt tỷ USD, gấp 2,5 lần sau một quý",
+   "ngay": "11/2026",
+   "link": "https://vietnambiz.vn/vay-no-cua-petrolimex-vuot-ty-usd-gap-25-lan-sau-mot-quy-2026112111939887.htm"
+  },
+  {
+   "ten": "Văn phòng Chính phủ — 10747/VPCP-CN: trình Nghị định xăng dầu trước 10/11/2026",
+   "ngay": "21/10/2026",
+   "link": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/10/10747_vpcp-cn_21102026_1-signed.signed.pdf"
   },
   {
    "ten": "Bộ Công Thương — Dự thảo Nghị định thay Nghị định 83/2014",
