@@ -41,7 +41,7 @@ jobs:
         echo "  Tat ca deu hong -> API that su chet, hoac chan theo IP."
         echo
         echo "=== header tra ve (bo day du cua Chrome)"
-        curl -s --compressed -m 25 -o /dev/null -D - -H "User-Agent: $UA" -H "Origin: $O" -H "Referer: $O/" -H "Sec-Fetch-Site: cross-site" -H "Sec-Fetch-Mode: cors" "$U" | grep -iE 'http/|access-control|x-cache|vary|age:|server:' || true
+        curl -s --compressed -m 25 -o /dev/null -D - -H "User-Agent: $UA" -H "Origin: $O" -H "Referer: $O/" -H "Sec-Fetch-Site: cross-site" -H "Sec-Fetch-Mode: cors" "$U" | grep -iE 'http/|access-control|x-cache|vary|age:|server:|x-frame-options|content-security-policy' || true
         echo
         echo "=== 400 ky tu dau cua noi dung (goi KHONG Referer)"
         curl -s --compressed -m 25 -H "User-Agent: $UA" -H "Origin: $O" "$U" | head -c 400; echo
