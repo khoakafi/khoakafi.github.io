@@ -407,6 +407,11 @@ không đáng quan tâm" + "trải ra, không bấm mở; chart như số cửa 
   (PNJ viết lại sau ĐHĐCĐ bất thường: dự phòng kim cương 7.071 tỷ là tổng cả năm gồm ~822 tỷ đã ghi 6T; P/B theo ROE 2029E). Mẹ sau con (MSN sau MCH + TCB,
   VSC chạy lại sau HAH). SSI, VGC chờ BCTC hợp nhất. `ho-so-tai.yml` cần `apt-get update` trước khi cài poppler (mirror 404).
 
+- **Đợt Q3 xong 03/11/2026: 105/106 hồ sơ** (HUT chờ BCTC). Mã chưa có BCTC trên VNDirect thì chờ — số báo chí hay chỉ có LNTT/LNST tổng;
+  ngân hàng có thể làm theo LNTT công bố (LNST ước theo thuế 6T, ghi rõ) rồi làm lại khi VNDirect nhập. `co-ban-data.yml` `lai=<danh sách>` ~1 giờ.
+  **Bài học 31/10:** trong worktree `/home/user/cbr` có tác tử đang sửa file → TUYỆT ĐỐI không `git stash` / `pull --rebase` (đã cuốn mất bản sửa
+  của 7 tác tử, phải khôi phục từ stash). Đẩy bằng `git pull --no-rebase` rồi push (scratchpad `day.sh`). Một phiên Claude khác cũng đẩy lên nhánh này.
+
 ## KQKD công bố trước VNDirect — `bctc_cong_bo.json` (29/10/2026)
 
 Anh Khoa: "KQKD Q3 ra rồi — cập nhật số cho kĩ, không bị mất deal". VNDirect nhập BCTC trễ (FPT công bố 21/10, 29/10 vẫn chưa có;
