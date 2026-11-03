@@ -3,9 +3,9 @@
  "ma": "BVH",
  "ten": "Tập đoàn Bảo Việt",
  "nganh": "Bảo hiểm",
- "ky": "BCTC Q2/2026 · giá 20/10/2026",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "ky": "BCTC Q3/2026 · giá 02/11/2026",
+ "cap_nhat": "2026-11-03",
+ "lan_sau": "sau BCTC Q4/2026 (cuối 01/2027)",
  "cp_trieu": 742.3,
  "cp_ng": "vốn điều lệ 7.423 tỷ ÷ 10.000 đ (742.322.764 cp); không thưởng, chia tách từ 2023",
  "co_tuc": [
@@ -16,45 +16,45 @@
   ]
  ],
  "tieu_de": {
-  "t": "Lãi +37% nhờ phình tài sản bằng repo — P/B 2 lần đã trả cho ROE 15%",
+  "t": "Q3: lợi suất đầu tư lên 4,5% nhưng lỗ bảo hiểm sâu thêm — giá đã trả gần đủ",
   "dk": "up_duoi:12",
-  "khac": "Lãi +37% nhờ phình tài sản bằng repo; lãi suất 8% là phần lợi nhuận chưa tới"
+  "khac": "Q3: lợi suất đầu tư lên 4,5% bù lỗ bảo hiểm sâu thêm; lãi suất 8% còn chưa vào hết"
  },
- "dong_mo": "Ở giá 69,7 (20/10), BVH giao dịch 2,0 lần giá sổ sách, 15,6 lần LN 4 quý — P/E dưới mức thấp 10% từ 2015 chỉ vì ROE đã lên 13,4%. LN 2026E +36% nhờ tài sản phình; 2027E +24% khi tài sản +9% và lợi suất ròng nhích lên 4,25%. P/B 1,9 × vốn chủ giữa 2027 cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "LN cổ đông Q3 824 tỷ (+9%), 9T +27%. Ở giá 66,3 (02/11), BVH giao dịch 1,9 lần giá sổ sách, 14,5 lần LN 4 quý (ROE 13,3%). LN 2026E +25%; 2027E +30% nếu lợi suất ròng giữ 4,35% và biên gộp bảo hiểm về 2,5%. P/B 1,9 × vốn chủ giữa 2027 cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "+19%",
-   "nhan": "tài sản bình quân 6T so với cùng kỳ",
-   "tieu": "Lãi tăng vì bảng cân đối to ra, không vì lợi suất",
-   "t": "LN cổ đông 6T/2026 1.832 tỷ (+37%). Phần LNTT tăng thêm (613 tỷ) nằm hết ở thu nhập tài chính ròng (+925 tỷ, +17,6%) — tăng đúng nhịp tài sản: lợi suất ròng 4,06%, thấp hơn 2025 (4,15%), 2023 (4,96%). 12 tháng đến 30/6 tài sản +51,6 nghìn tỷ, 70% từ nợ ngắn hạn (gồm repo); chi phí repo và lãi vay 6T 1.654 tỷ, hơn gấp đôi cùng kỳ.",
-   "ng": "BCTC Q2/2026 · Stockbiz 08/2026"
+   "so": "4,52%",
+   "nhan": "lợi suất ròng Q3/2026 (năm hóa), cao nhất từ Q1/2024",
+   "tieu": "Q3 đổi động lực: lợi suất lên, tài sản co lại",
+   "t": "LN cổ đông Q3 824 tỷ (+9%), thấp hơn cơ sở cũ 980 tỷ. Thu nhập tài chính ròng vẫn 3.515 tỷ (+21%) dù tài sản giảm 9,7 nghìn tỷ trong quý: nợ ngắn hạn (gồm repo) −13,1 nghìn tỷ, chi phí repo và lãi vay 831 tỷ (Q2 898). Q3 xác nhận lãi suất cao đang vào lợi suất; bác bỏ giả định tài sản phình tiếp bằng repo. Phần hụt là bảo hiểm.",
+   "ng": "BCTC Q3/2026 · KQKD 9T BVH"
   },
   {
    "so": "8,0%",
    "nhan": "lãi tiết kiệm 6–12 tháng, 8/2026 (NHNN)",
    "tieu": "Lãi suất 8% là gió thuận thật, nhưng phải chia ba",
-   "t": "Từ 5,5% (6/2025): tiền gửi ~167 nghìn tỷ (hơn nửa tài sản) tái tục ở mức cao hơn — lãi tiền gửi 6T ~5.000 tỷ, ~6%/năm, hợp đồng mới tới 8,9%. Lợi suất gộp Q2 5,74% (2025: 5,25%), nhưng chi phí repo/tài sản cũng lên 1,15% (0,65%), và tiết kiệm 8% làm sản phẩm tích lũy nhân thọ kém hấp dẫn. Cơ sở: lợi suất ròng 2027 4,25%; ±10 điểm cơ bản ≈ ±277 tỷ LN.",
+   "t": "Từ 5,5% (6/2025): tiền gửi ~167 nghìn tỷ (hơn nửa tài sản) tái tục ở mức cao hơn — lãi tiền gửi 6T ~5.000 tỷ, ~6%/năm, hợp đồng mới tới 8,9%. Lợi suất gộp Q3 6,01% (2025: 5,25%), nhưng chi phí repo/tài sản cũng lên 1,07% (0,65%), và tiết kiệm 8% làm sản phẩm tích lũy nhân thọ kém hấp dẫn. Cơ sở: lợi suất ròng 2027 4,35%; ±10 điểm cơ bản ≈ ±262 tỷ LN.",
    "ng": "NHNN · CafeF 06/08/2026 · BCTC · mô hình"
   },
   {
-   "so": "−7,7",
-   "nhan": "nghìn tỷ — bảo hiểm sau chi phí, 2025",
-   "tieu": "Mảng bảo hiểm sau chi phí vẫn lỗ ~8 nghìn tỷ mỗi năm",
-   "t": "LN gộp bảo hiểm từ −2.490 tỷ (2023) lên 1.238 tỷ (2025), 6T/2026 1.291 tỷ — nhưng chi phí bán hàng + quản lý cũng tăng 2,7 nghìn tỷ (6.169 → 8.888 tỷ). Kết quả sau chi phí chỉ từ −8.660 lên −7.650 tỷ, 6T/2026 lại xấu hơn cùng kỳ (−3.955 so với −3.663 tỷ). Doanh thu thuần bảo hiểm quanh 40 nghìn tỷ từ 2022: phi nhân thọ +21% (6T), nhưng nhân thọ (~3/4 phí gốc) chỉ +5%.",
-   "ng": "BCTC 2023–Q2/2026 · KQKD Q2/2026 BVH"
+   "so": "−2,5",
+   "nhan": "nghìn tỷ — bảo hiểm sau chi phí, Q3/2026",
+   "tieu": "Lỗ bảo hiểm sau chi phí sâu thêm, nhân thọ là chỗ hụt",
+   "t": "Q3 LN gộp bảo hiểm −512 tỷ (Q3/2025 +245); cộng chi phí bán hàng + quản lý, bảo hiểm sau chi phí −2.541 tỷ so với −1.970; 9T −6.495 so với −5.633 tỷ. Phi nhân thọ 9T vẫn lãi 245 tỷ (+23,1%), nên phần xấu đi nằm ở nhân thọ (~3/4 phí gốc, 6T chỉ +5%). Doanh thu thuần bảo hiểm 9T đi ngang (30,4 nghìn tỷ, bằng cùng kỳ).",
+   "ng": "BCTC Q3/2026 · KQKD 9T BVH"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
-   "tieu": "Giá đã gần giá trị: P/B 2 lần trả đủ cho ROE ~15%",
+   "tieu": "Giá đã gần giá trị: P/B ~1,9 lần trả đủ cho ROE ~16%",
    "dk": "up_duoi:12",
-   "t": "P/B 1,9 × vốn chủ 30/6/2027E cho {gt} ({up}). 1,9 nằm giữa trung vị (1,77) và mức 75% (1,99) từ 2021, cao hơn vì ROE 2027E ~16% cao nhất từ 2015; (ROE − 7%) ÷ (11,5% − 7%) cho ~2,0. P/E 4 quý 15,6 dưới mức thấp 10% từ 2015 (17,1) chỉ vì LN mới tăng. So 8 công ty bảo hiểm niêm yết (P/B trung vị 1,16), BVH đắt ~1,7 lần.",
+   "t": "P/B 1,9 × vốn chủ 30/6/2027E cho {gt} ({up}). 1,9 nằm giữa trung vị (1,77) và mức 75% (1,99) từ 2021, cao hơn vì ROE 2027E ~16% (2025: 12,0%); (ROE − 7%) ÷ (11,5% − 7%) cho ~1,9. P/E 4 quý 14,5 dưới mức thấp 10% từ 2015 (17,0) chỉ vì LN mới tăng. So 8 công ty bảo hiểm niêm yết (P/B trung vị 1,13), BVH đắt ~1,7 lần.",
    "ng": "mô hình · P/B lịch sử: BCTC VNDirect",
    "khac": {
     "so": "{gt_so}",
     "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
     "tieu": "P/B 1,9 × vốn chủ giữa 2027: {up_so}",
-    "t": "P/B 1,9 × vốn chủ 30/6/2027E cho {gt} ({up}): giữa trung vị (1,77) và mức 75% (1,99) từ 2021, khớp ROE 2027E ~16% với chi phí vốn 11,5%. Mỗi 10 điểm cơ bản lợi suất ròng ≈ ±4,3 nghìn đ/cp. Xấu 54,7 (P/B 1,5), tốt 93,8 (P/B 2,3)."
+    "t": "P/B 1,9 × vốn chủ 30/6/2027E cho {gt} ({up}): giữa trung vị (1,77) và mức 75% (1,99) từ 2021, khớp ROE 2027E ~16% với chi phí vốn 11,5%. Mỗi 10 điểm cơ bản lợi suất ròng ≈ ±4,2 nghìn đ/cp. Xấu 54,0 (P/B 1,5), tốt 92,2 (P/B 2,3)."
    }
   }
  ],
@@ -66,19 +66,19 @@
   ],
   "ln": [
    2825,
-   3845,
-   4751
+   3518,
+   4568
   ],
   "ln_truoc": 2110,
   "eps": [
    3805,
-   5181,
-   6400
+   4739,
+   6154
   ],
   "bv": [
    32940,
-   37064,
-   42344
+   36520,
+   41581
   ],
   "co_tuc_nam": 809,
   "them": [
@@ -86,8 +86,8 @@
     "ten": "ROE (%)",
     "v": [
      12.0,
-     14.8,
-     16.1
+     13.6,
+     15.8
     ],
     "d": 1,
     "pt": 1
@@ -96,8 +96,8 @@
     "ten": "Lợi suất ròng (%)",
     "v": [
      4.15,
-     4.09,
-     4.25
+     4.26,
+     4.35
     ],
     "d": 2,
     "pt": 1
@@ -120,8 +120,8 @@
     "mau": "c1",
     "v": [
      11095,
-     12829,
-     14721
+     13097,
+     14259
     ]
    },
    {
@@ -129,8 +129,8 @@
     "mau": "c4",
     "v": [
      -7650,
-     -8107,
-     -8863
+     -8823,
+     -8629
     ]
    },
    {
@@ -138,12 +138,12 @@
     "mau": "c3",
     "v": [
      84,
-     88,
+     103,
      90
     ]
    }
   ],
-  "ng": "BVH kiếm tiền như một quỹ đầu tư 316 nghìn tỷ: thu nhập tài chính ròng gấp ~3 lần LNTT, mảng bảo hiểm sau chi phí bán hàng, quản lý lỗ ~8 nghìn tỷ/năm — đó là chi phí của nguồn vốn phí bảo hiểm. 2025A: BCTC; 2026E–2027E: mô hình."
+  "ng": "BVH kiếm tiền như một quỹ đầu tư 306 nghìn tỷ: thu nhập tài chính ròng gấp ~3 lần LNTT, mảng bảo hiểm sau chi phí bán hàng, quản lý lỗ ~8 nghìn tỷ/năm — đó là chi phí của nguồn vốn phí bảo hiểm. 2025A: BCTC; 2026E–2027E: mô hình."
  },
  "mo_hinh": {
   "tieu": "Dự phóng: tài sản × lợi suất ròng − lỗ bảo hiểm sau chi phí",
@@ -160,8 +160,8 @@
     "ten": "Tổng tài sản cuối năm (nghìn tỷ)",
     "v": [
      291.8,
-     331.5,
-     361.3
+     316.7,
+     338.9
     ],
     "d": 1,
     "tang": 1
@@ -170,8 +170,8 @@
     "ten": "Lợi suất ròng / tài sản bq (%)",
     "v": [
      4.15,
-     4.09,
-     4.25
+     4.26,
+     4.35
     ],
     "d": 2
    },
@@ -179,8 +179,8 @@
     "ten": "Thu nhập tài chính ròng (tỷ)",
     "v": [
      11095,
-     12829,
-     14721
+     13097,
+     14259
     ],
     "tang": 1
    },
@@ -188,7 +188,7 @@
     "ten": "Trong đó trừ chi phí repo, lãi vay (tỷ)",
     "s": [
      "1.747",
-     "1.654 (6T)",
+     "2.485 (9T)",
      "—"
     ]
    },
@@ -199,8 +199,8 @@
     "ten": "Doanh thu thuần bảo hiểm (tỷ)",
     "v": [
      40948,
-     41040,
-     42271
+     41049,
+     42280
     ],
     "tang": 1
    },
@@ -208,8 +208,8 @@
     "ten": "Biên LN gộp bảo hiểm (%)",
     "v": [
      3.0,
-     3.8,
-     3.5
+     1.0,
+     2.5
     ],
     "d": 1
    },
@@ -217,8 +217,8 @@
     "ten": "LN gộp bảo hiểm (tỷ)",
     "v": [
      1238,
-     1559,
-     1479
+     402,
+     1057
     ],
     "tang": 1
    },
@@ -226,8 +226,8 @@
     "ten": "Chi phí bán hàng + quản lý (tỷ)",
     "v": [
      8888,
-     9666,
-     10342
+     9225,
+     9686
     ],
     "tang": 1
    },
@@ -235,8 +235,8 @@
     "ten": "Bảo hiểm sau chi phí (tỷ)",
     "v": [
      -7650,
-     -8107,
-     -8863
+     -8823,
+     -8629
     ]
    },
    {
@@ -246,8 +246,8 @@
     "ten": "LNTT (tỷ)",
     "v": [
      3529,
-     4811,
-     5949
+     4378,
+     5720
     ],
     "tang": 1
    },
@@ -255,8 +255,8 @@
     "ten": "LN cổ đông (tỷ)",
     "v": [
      2825,
-     3845,
-     4751
+     3518,
+     4568
     ],
     "dam": 1,
     "tang": 1
@@ -265,8 +265,8 @@
     "ten": "EPS (đ)",
     "v": [
      3805,
-     5181,
-     6400
+     4739,
+     6154
     ],
     "eps": 1
    },
@@ -274,67 +274,67 @@
     "ten": "BVPS (đ)",
     "v": [
      32940,
-     37064,
-     42344
+     36520,
+     41581
     ]
    },
    {
     "ten": "ROE (%)",
     "v": [
      12.0,
-     14.8,
-     16.1
+     13.6,
+     15.8
     ],
     "d": 1
    }
   ],
-  "ghi": "2025A: BCTC; 2026E = 6T thực tế + 6T ước. Thuế 18,5%, cổ đông thiểu số 2%. Vốn chủ 30/6/2026 đã trừ cổ tức 2025 (Q2 giảm 613 tỷ ngoài LN). Độ nhạy quy đổi theo P/E ngầm định của kịch bản cơ sở (11,6 lần LN 2027E)."
+  "ghi": "2025A: BCTC; 2026E = 9T thực tế + Q4 ước. Thuế 18,5%, cổ đông thiểu số 2%. Vốn chủ 30/9/2026 đã trừ cổ tức 2025 (Q2 giảm 613 tỷ ngoài LN). Độ nhạy quy đổi theo P/E ngầm định của kịch bản cơ sở (11,8 lần LN 2027E)."
  },
  "gia_dinh": [
   {
-   "ten": "Tổng tài sản H2/2026 · 2027",
+   "ten": "Tổng tài sản Q4/2026 · 2027",
    "v": [
-    "+2% · +5%",
-    "+5% · +9%",
-    "+7% · +11%"
+    "+1,0% · +4%",
+    "+3,5% · +7%",
+    "+6,0% · +10%"
    ],
-   "ly_do": "6T/2026 +8,2%, 2025 +16,1%. Dự phòng nghiệp vụ tăng ~7%/năm; phần còn lại là nợ ngắn hạn (gồm repo) — 12 tháng qua +36,1 nghìn tỷ."
+   "ly_do": "Q4/2024 +5,5%, Q4/2025 +7,0%; Q3/2026 −3,1% khi nợ ngắn hạn (gồm repo) −13,1 nghìn tỷ. 2027 cơ sở 9% → 7%: chỉ còn dự phòng nghiệp vụ (~7%/năm) kéo tài sản."
   },
   {
-   "ten": "Lợi suất ròng H2/2026 (năm hóa)",
+   "ten": "Lợi suất ròng Q4/2026 (năm hóa)",
    "v": [
-    "3,95%",
     "4,10%",
-    "4,25%"
+    "4,35%",
+    "4,55%"
    ],
-   "ly_do": "Thu nhập tài chính ròng ÷ tài sản bình quân: Q1/2026 3,95%, Q2 4,16%; 2025 4,15%."
+   "ly_do": "Q1/2026 3,95 · Q2 4,16 · Q3 4,52%; Q4 thường thấp hơn Q3 0,1–0,4 điểm (Q4/2025 4,14%)."
   },
   {
    "ten": "Lợi suất ròng 2027",
    "v": [
-    "3,90%",
-    "4,25%",
-    "4,50%"
+    "3,95%",
+    "4,35%",
+    "4,60%"
    ],
-   "ly_do": "2023 4,96 · 2024 4,48 · 2025 4,15%. Tiền gửi tái tục ở lãi ~8% đẩy lợi suất gộp lên; chi phí repo đi theo lãi liên ngân hàng."
+   "ly_do": "2023 4,96 · 2024 4,48 · 2025 4,15 · 9T/2026 4,24%. Cơ sở 4,25 → 4,35% sau Q3 (4,52%): tiền gửi tái tục ở lãi ~8%, repo giảm."
   },
   {
-   "ten": "LN gộp bảo hiểm H2/2026",
+   "ten": "LN gộp bảo hiểm Q4/2026",
    "v": [
-    "−82 tỷ",
-    "268 tỷ",
-    "468 tỷ"
+    "−777 tỷ",
+    "−377 tỷ",
+    "−77 tỷ"
    ],
-   "ly_do": "H2/2025: 68 tỷ (Q4 −177); 6T/2026 cao hơn cùng kỳ 121 tỷ."
+   "ly_do": "Q4/2025 −177 tỷ. So cùng kỳ 2026: Q1 −269, Q2 +390, Q3 −757 tỷ."
   },
   {
    "ten": "Biên LN gộp bảo hiểm 2027",
    "v": [
-    "1,5%",
-    "3,5%",
-    "5,0%"
+    "0,5%",
+    "2,5%",
+    "4,0%"
    ],
-   "ly_do": "2023 −6,2 · 2024 −2,4 · 2025 3,0 · 6T/2026 6,3% (Q4 thường âm). Xấu: hủy hợp đồng, lãi chia chủ hợp đồng tăng."
+   "ly_do": "2023 −6,2 · 2024 −2,4 · 2025 3,0 · 9T/2026 2,6% (Q3 −5,2%). Cơ sở 3,5 → 2,5% sau Q3. Xấu: hủy hợp đồng, lãi chia chủ hợp đồng tăng."
   },
   {
    "ten": "Doanh thu thuần bảo hiểm 2027",
@@ -343,16 +343,16 @@
     "+3%",
     "+6%"
    ],
-   "ly_do": "2022–2025: 40,7 · 40,0 · 39,8 · 40,9 nghìn tỷ; 6T/2026 −0,5% (phi nhân thọ +21%, nhân thọ chậm)."
+   "ly_do": "2022–2025: 40,7 · 40,0 · 39,8 · 40,9 nghìn tỷ; 9T/2026 30,4 nghìn tỷ, bằng cùng kỳ (phi nhân thọ +15%, nhân thọ chậm)."
   },
   {
-   "ten": "Chi phí bán hàng + QL H2/2026 · 2027",
+   "ten": "Chi phí bán hàng + QL Q4/2026 · 2027",
    "v": [
-    "+13% · +11%",
-    "+9% · +7%",
-    "+6% · +5%"
+    "+12% · +9%",
+    "+6% · +5%",
+    "+2% · +3%"
    ],
-   "ly_do": "2025 +26%; 6T/2026 +8,5% (Q2 +18%)."
+   "ly_do": "2025 +26%; 9T/2026 +3,2% (Q3 −8%). Cơ sở 2027 7% → 5%."
   },
   {
    "ten": "P/B (× vốn chủ 30/6/2027E)",
@@ -367,24 +367,24 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 3168,
-   "ln27": 2131,
-   "gia": 54.7,
-   "mo_ta": "Lợi suất ròng 2027 3,90%, tài sản +5%, biên gộp bảo hiểm 1,5%, chi phí +11%; ROE 2027 7,8%; P/B 1,5"
+   "ln26": 2923,
+   "ln27": 2054,
+   "gia": 54.0,
+   "mo_ta": "Lợi suất ròng 2027 3,95%, tài sản +4%, biên gộp bảo hiểm 0,5%, chi phí +9%; ROE 2027 7,6%; P/B 1,5"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 3845,
-   "ln27": 4751,
-   "gia": 74.0,
-   "mo_ta": "Lợi suất ròng 4,25%, tài sản +9%, biên gộp 3,5%, chi phí +7%; ROE 2027 16,1%; P/B 1,9"
+   "ln26": 3518,
+   "ln27": 4568,
+   "gia": 72.8,
+   "mo_ta": "Lợi suất ròng 4,35%, tài sản +7%, biên gộp 2,5%, chi phí +5%; ROE 2027 15,8%; P/B 1,9"
   },
   {
    "ten": "Tốt",
-   "ln26": 4350,
-   "ln27": 6613,
-   "gia": 93.8,
-   "mo_ta": "Lợi suất ròng 4,50%, tài sản +11%, biên gộp 5,0%, chi phí +5%; ROE 2027 21,4%; P/B 2,3"
+   "ln26": 3975,
+   "ln27": 6446,
+   "gia": 92.2,
+   "mo_ta": "Lợi suất ròng 4,60%, tài sản +10%, biên gộp 4,0%, chi phí +3%; ROE 2027 21,2%; P/B 2,3"
   }
  ],
  "dinh_gia": {
@@ -394,12 +394,12 @@
   "cp": 742.3,
   "phan": [
    {
-    "ten": "Vốn chủ 30/6/2026",
+    "ten": "Vốn chủ 30/9/2026",
     "mau": "c1",
     "x": [
-     25668,
-     25668,
-     25668
+     26247,
+     26247,
+     26247
     ],
     "boi": [
      1.5,
@@ -411,44 +411,44 @@
     "boi_d": 1,
     "sh": 1,
     "gt": [
-     38502,
-     48769,
-     59036
+     39370,
+     49869,
+     60368
     ]
    },
    {
-    "ten": "LN giữ lại 12 tháng",
+    "ten": "LN giữ lại 9 tháng",
     "mau": "c3",
     "x": [
-     1377,
-     3246,
-     4595
+     457,
+     2197,
+     3510
     ],
     "boi": [
      1.5,
      1.9,
      2.3
     ],
-    "x_ten": "7/2026–6/2027E, sau cổ tức",
+    "x_ten": "10/2026–6/2027E, sau cổ tức",
     "boi_ten": "P/B",
     "boi_d": 1,
     "sh": 1,
     "gt": [
-     2066,
-     6167,
-     10568
+     686,
+     4174,
+     8073
     ]
    }
   ],
   "von": [
-   40568,
-   54936,
-   69604
+   40056,
+   54043,
+   68441
   ],
   "gia": [
-   54.7,
-   74.0,
-   93.8
+   54.0,
+   72.8,
+   92.2
   ]
  },
  "pe_ls": {
@@ -595,7 +595,8 @@
    "2026-07",
    "2026-08",
    "2026-09",
-   "2026-10"
+   "2026-10",
+   "2026-11"
   ],
   "v": [
    1.96,
@@ -739,18 +740,19 @@
    1.77,
    1.85,
    2.15,
-   2.06
+   2.0,
+   1.87
   ],
   "p10": 1.52,
   "p25": 1.75,
-  "tv": 2.09,
+  "tv": 2.08,
   "thap": [
    "2023-11",
    1.34
   ],
   "nay": [
-   "2026-10",
-   2.06
+   "2026-11",
+   1.87
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
   "dung": "Kịch bản dùng P/B 1,5 · 1,9 · 2,3: cơ sở giữa trung vị (1,77) và mức 75% (1,99) từ 2021 vì ROE cao nhất từ 2015; xấu ≈ trung vị 2024 (1,50, ROE 9,6%); tốt ≈ đỉnh 3/2026 (2,50). Giai đoạn 2015–2019 P/B 2,4–4,3 lần với ROE 6–12%."
@@ -759,26 +761,26 @@
   [
    "Biên LN gộp bảo hiểm 2027 ±1 điểm %",
    338,
-   5.3
+   5.4
   ],
   [
    "Lợi suất ròng 2027 ±10 điểm cơ bản",
-   277,
-   4.3
+   262,
+   4.2
   ],
   [
    "P/B ±0,1 lần",
    null,
-   3.9
+   3.8
   ],
   [
    "Chi phí 2027 ±3 điểm %",
-   232,
-   3.6
+   221,
+   3.5
   ],
   [
    "Tổng tài sản 2027 ±3 điểm %",
-   169,
+   165,
    2.6
   ]
  ],
@@ -786,82 +788,82 @@
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   3845
+   3518
   ],
   "cuoi": [
    "2027E",
-   4751
+   4568
   ],
   "buoc": [
    [
     "Tài chính ròng: tài sản lớn hơn",
-    1057
+    689
    ],
    [
     "Tài chính ròng: lợi suất",
-    455
+    239
    ],
    [
     "LN gộp bảo hiểm",
-    -64
+    523
    ],
    [
     "Chi phí bán hàng + QL",
-    -540
+    -368
    ],
    [
     "Liên kết, khác, làm tròn",
-    -2
+    -33
    ]
   ],
-  "y": "Tài sản +9% góp phần lớn nhất; lợi suất ròng nhích 16 điểm cơ bản khi tiền gửi tái tục; chi phí +7% lấy lại khoảng một phần ba.",
+  "y": "Tài sản +7% góp phần lớn nhất (+689 tỷ); biên gộp bảo hiểm hồi từ 1,0% về 2,5% thêm 523 tỷ; lợi suất ròng nhích 9 điểm cơ bản; chi phí +5% lấy lại 368 tỷ.",
   "ng": "mô hình"
  },
  "so_sanh": {
   "tieu": "P/B so với 8 công ty bảo hiểm niêm yết lớn nhất",
-  "phu": "theo giá hôm nay, vốn chủ 30/6/2026",
-  "chi_so": "P/B (vốn chủ 30/6/2026)",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "phu": "theo giá hôm nay, vốn chủ 30/9/2026",
+  "chi_so": "P/B (vốn chủ 30/9/2026)",
+  "chi_so_kv": "P/B (giá 02/11)",
   "nhom": "8 mã cùng ngành vốn hóa lớn nhất",
   "kv": [
    [
     "PVI",
-    1.82
+    1.77
    ],
    [
     "PRE",
-    1.73
-   ],
-   [
-    "PGI",
-    1.2
+    1.66
    ],
    [
     "MIG",
-    1.18
+    1.23
+   ],
+   [
+    "PGI",
+    1.19
    ],
    [
     "BIC",
-    1.14
+    1.07
    ],
    [
     "VNR",
-    0.91
+    0.87
    ],
    [
     "PTI",
-    0.8
+    0.79
    ],
    [
     "BMI",
     0.67
    ]
   ],
-  "tv": 1.16,
-  "moi_cp": 34580,
+  "tv": 1.13,
+  "moi_cp": 35359,
   "max": 2.5,
-  "y": "ROE 4 quý của 8 mã 9,8–16,1% (trung vị 12,8%), ngang BVH (13,4%), nhưng P/B chỉ 0,67–1,82. Phần bù của BVH: mã bảo hiểm duy nhất có thanh khoản (74 tỷ/phiên, nhóm ≤ 2 tỷ) và có mảng nhân thọ — giá trị hợp đồng đang hiệu lực không nằm trong sổ sách.",
-  "ng": "BCTC VNDirect, giá 20/10/2026 (bảng cùng ngành)"
+  "y": "ROE 4 quý của 8 mã 9,2–15,2% (trung vị 12,1%), ngang BVH (13,3%), nhưng P/B chỉ 0,67–1,77. Phần bù của BVH: mã bảo hiểm duy nhất có thanh khoản (62 tỷ/phiên, nhóm ≤ 2 tỷ) và có mảng nhân thọ — giá trị hợp đồng đang hiệu lực không nằm trong sổ sách.",
+  "ng": "BCTC VNDirect đến Q3/2026 (BMI Q2), giá 02/11/2026 (bảng cùng ngành)"
  },
  "theo_doi": [
   {
@@ -878,32 +880,43 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    682,
-    1034,
-    1296
+    267,
+    862,
+    1319
    ],
    "ck": 729
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    3168,
-    3845,
-    4350
+    2923,
+    3518,
+    3975
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "Cuối 10/2026",
+   "khi": "30/10/2026",
    "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Cơ sở LN cổ đông 980 tỷ (+29%). Xem lợi suất ròng (Q2 4,16%), chi phí repo và LN gộp bảo hiểm (Q3/2025 245 tỷ).",
+   "tieu": "Đã ra: KQKD Q3/2026 — lợi suất tốt, bảo hiểm xấu",
+   "ct": "LN cổ đông 824 tỷ (+9%), dưới cơ sở cũ 980 tỷ: lợi suất ròng 4,52% vượt giả định 4,10%, nhưng LN gộp bảo hiểm −512 tỷ. 2026E cơ sở 3.845 → 3.518 tỷ.",
    "tac": [
-    "Lợi suất ròng ≥ 4,1%",
-    "giữ nhịp Q2; dưới 3,95% nghiêng về kịch bản xấu"
+    "−16% so với cơ sở",
+    "giá trị cơ sở 74,0 → 72,8 nghìn đ/cp"
    ],
-   "theo_doi": "DT, CP tài chính; LN gộp bảo hiểm"
+   "theo_doi": "LN gộp bảo hiểm, lợi suất ròng"
+  },
+  {
+   "khi": "Cuối 01/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Cơ sở LN cổ đông 862 tỷ (+18%), cả năm 3.518 tỷ. Q4 thường trích dự phòng: LN gộp bảo hiểm Q4/2025 −177 tỷ.",
+   "tac": [
+    "Lợi suất ròng ≥ 4,35%",
+    "giữ nhịp Q3; LN gộp bảo hiểm dưới −600 tỷ nghiêng về kịch bản xấu"
+   ],
+   "theo_doi": "LN gộp bảo hiểm, chi phí tài chính"
   },
   {
    "khi": "11–12/2026",
@@ -919,16 +932,16 @@
    "tieu": "Tiền gửi tái tục ở lãi suất cao",
    "ct": "Lãi tiết kiệm 6–12 tháng 8,0% (8/2026) từ 5,5% (6/2025); tiền gửi ~167 nghìn tỷ đang có lợi suất ~6%/năm, hợp đồng mới tới 8,9%.",
    "tac": [
-    "+277 tỷ LN",
-    "mỗi +10 điểm cơ bản lợi suất ròng 2027 (≈ +4,3 nghìn đ/cp)"
+    "+262 tỷ LN",
+    "mỗi +10 điểm cơ bản lợi suất ròng 2027 (≈ +4,2 nghìn đ/cp)"
    ],
    "theo_doi": "lãi huy động, DT tài chính"
   },
   {
-   "khi": "2026–2027",
+   "khi": "2027",
    "loai": "len",
-   "tieu": "Biên gộp bảo hiểm giữ trên 5%",
-   "ct": "6T/2026 6,3% (Q2 9,2%): bồi thường giảm, phi nhân thọ tăng nhanh. Cơ sở chỉ dùng 3,5% cho 2027 vì Q4 thường âm.",
+   "tieu": "Biên gộp bảo hiểm hồi về mức 2025",
+   "ct": "9T/2026 2,6% (Q2 9,2%, Q3 −5,2%); 2025 3,0%. Cơ sở 2,5% cho 2027; phi nhân thọ 9T lãi +23,1%.",
    "tac": [
     "+338 tỷ LN",
     "mỗi +1 điểm % biên gộp 2027"
@@ -948,9 +961,9 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Chi phí repo tăng nhanh hơn lợi suất",
-   "ct": "Nợ ngắn hạn 80,9 nghìn tỷ (30/6, gấp 1,8 lần cùng kỳ); repo và lãi vay chiếm 73% chi phí tài chính. Lãi liên ngân hàng lên là chênh lệch mỏng đi ngay.",
+   "ct": "Nợ ngắn hạn 67,9 nghìn tỷ (30/9; 30/6 80,9); repo và lãi vay 9T 2.485 tỷ, gấp 2,1 lần cùng kỳ, 73% chi phí tài chính. Lãi liên ngân hàng lên là chênh lệch mỏng đi ngay.",
    "tac": [
-    "−4,3 nghìn đ/cp",
+    "−4,2 nghìn đ/cp",
     "mỗi −10 điểm cơ bản lợi suất ròng 2027"
    ],
    "theo_doi": "chi phí tài chính, nợ ngắn hạn"
@@ -971,10 +984,10 @@
    "khi": "Liên tục",
    "loai": "xuong",
    "muc": 2,
-   "tieu": "Chi phí hoạt động tăng nhanh",
-   "ct": "Chi phí bán hàng + quản lý 2025 +26%, Q2/2026 +18%; cơ sở +7% cho 2027.",
+   "tieu": "Chi phí hoạt động tăng trở lại",
+   "ct": "Chi phí bán hàng + quản lý 2025 +26%, 9T/2026 +3,2% (Q2 +18%); cơ sở +5% cho 2027.",
    "tac": [
-    "−232 tỷ LN",
+    "−221 tỷ LN",
     "mỗi +3 điểm % chi phí 2027"
    ],
    "theo_doi": "chi phí quản lý theo quý"
@@ -984,9 +997,9 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Bội số co lại",
-   "ct": "P/B từ 2,50 (3/2026) về 1,77 (7/2026) rồi 2,02: biên độ ~30% trong 4 tháng; kịch bản xấu 1,5 lần ≈ trung vị 2024.",
+   "ct": "P/B từ 2,50 (3/2026) về 1,77 (7/2026); nay 1,88 (vốn chủ 30/9): biên độ ~30% trong 4 tháng; kịch bản xấu 1,5 lần ≈ trung vị 2024.",
    "tac": [
-    "−3,9 nghìn đ/cp",
+    "−3,8 nghìn đ/cp",
     "mỗi 0,1 lần P/B"
    ],
    "theo_doi": "P/B, khối ngoại"
@@ -994,12 +1007,11 @@
  ],
  "bieu_do": [
   {
-   "ten": "Lợi suất gộp lên, chi phí repo lên theo",
+   "ten": "Lợi suất gộp lên nhanh hơn chi phí repo",
    "kieu": "duong",
    "dv": "% tài sản bình quân, năm hóa",
    "so_le": 2,
    "nhan": [
-    "Q1/24",
     "Q2/24",
     "Q3/24",
     "Q4/24",
@@ -1008,13 +1020,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Lợi suất ròng",
      "v": [
-      5.03,
       4.36,
       4.36,
       4.22,
@@ -1023,14 +1035,14 @@
       4.33,
       4.14,
       3.95,
-      4.16
+      4.16,
+      4.52
      ],
      "mau": "c1"
     },
     {
      "ten": "Lợi suất gộp",
      "v": [
-      5.72,
       5.31,
       5.25,
       5.24,
@@ -1039,14 +1051,14 @@
       5.34,
       5.37,
       5.33,
-      5.74
+      5.74,
+      6.01
      ],
      "mau": "c2"
     },
     {
      "ten": "Chi phí repo, lãi vay",
      "v": [
-      0.42,
       0.4,
       0.41,
       0.52,
@@ -1055,21 +1067,21 @@
       0.64,
       0.76,
       1.01,
-      1.15
+      1.15,
+      1.07
      ],
      "mau": "c3"
     }
    ],
-   "y": "Q2/2026 lợi suất gộp 5,74% (2025: 5,25%) nhưng chi phí repo lên 1,15% (0,65%): lợi suất ròng 4,16%, ngang 2025.",
+   "y": "Q3/2026 lợi suất gộp 6,01% (2025: 5,25%), chi phí repo 1,07% (Q2 1,15%): lợi suất ròng 4,52%, cao nhất từ Q1/2024.",
    "ng": "BCTC (VNDirect): DT, CP tài chính quý × 4 ÷ tổng tài sản bình quân"
   },
   {
-   "ten": "Tài sản phình nhờ nợ ngắn hạn",
+   "ten": "Tài sản phình nhờ nợ ngắn hạn, Q3 rút bớt",
    "kieu": "cot_chong",
    "dv": "nghìn tỷ đồng",
    "so_le": 0,
    "nhan": [
-    "Q2/24",
     "Q3/24",
     "Q4/24",
     "Q1/25",
@@ -1077,13 +1089,13 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Dự phòng nghiệp vụ, nợ khác",
      "v": [
-      177.4,
       182.6,
       186.9,
       190.9,
@@ -1091,14 +1103,14 @@
       197.7,
       202.0,
       205.8,
-      208.0
+      208.0,
+      210.8
      ],
      "mau": "c4"
     },
     {
      "ten": "Vốn chủ",
      "v": [
-      23.2,
       23.8,
       23.6,
       24.3,
@@ -1106,14 +1118,14 @@
       25.5,
       25.5,
       26.3,
-      26.7
+      26.7,
+      27.3
      ],
      "mau": "c2"
     },
     {
      "ten": "Nợ ngắn hạn (gồm repo)",
      "v": [
-      34.3,
       31.9,
       40.8,
       40.6,
@@ -1121,12 +1133,13 @@
       49.5,
       64.3,
       75.4,
-      80.9
+      80.9,
+      67.9
      ],
      "mau": "c1"
     }
    ],
-   "y": "12 tháng đến 30/6/2026 tài sản +51,6 nghìn tỷ: nợ ngắn hạn +36,1, dự phòng và nợ khác +13,6, vốn chủ +1,9.",
+   "y": "12 tháng đến 30/9/2026 tài sản +33,2 nghìn tỷ: nợ ngắn hạn +18,4, dự phòng và nợ khác +13,1, vốn chủ +1,8; riêng Q3 nợ ngắn hạn −13,1.",
    "ng": "BCTC (VNDirect); dự phòng, nợ khác = tổng tài sản − vốn chủ − nợ ngắn hạn"
   },
   {
@@ -1135,74 +1148,74 @@
    "dv": "tỷ đồng",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Tài chính ròng",
      "v": [
-      2579,
       2580,
       2563,
       2708,
       2904,
       2920,
       2958,
-      3238
+      3238,
+      3515
      ],
      "mau": "c1"
     },
     {
      "ten": "LN gộp bảo hiểm",
      "v": [
-      -145,
       67,
       577,
       593,
       245,
       -177,
       308,
-      983
+      983,
+      -512
      ],
      "mau": "c2"
     },
     {
      "ten": "Liên kết, khác",
      "v": [
-      50,
       23,
       35,
       34,
       17,
       -2,
       34,
-      14
+      14,
+      35
      ],
      "mau": "c3"
     },
     {
      "ten": "Chi phí bán hàng, QL",
      "v": [
-      -1796,
       -1970,
       -2328,
       -2505,
       -2215,
       -1840,
       -2295,
-      -2951
+      -2951,
+      -2029
      ],
      "mau": "c4"
     }
    ],
-   "y": "~3 nghìn tỷ thu nhập tài chính ròng mỗi quý gánh 1,8–3 nghìn tỷ chi phí; LN gộp bảo hiểm là phần dao động (Q4/2025 −177, Q2/2026 +983 tỷ).",
+   "y": "~3 nghìn tỷ thu nhập tài chính ròng mỗi quý gánh 1,8–3 nghìn tỷ chi phí; LN gộp bảo hiểm là phần dao động (Q2/2026 +983, Q3/2026 −512 tỷ).",
    "ng": "BCTC (VNDirect); khác = LNTT − các khoản trên (liên kết, thu nhập khác)"
   },
   {
@@ -1260,7 +1273,7 @@
    "ln26": 3214,
    "ln27": 3695,
    "pp": "RI 50% + P/B 1,6 lần 50%",
-   "y": "Luận điểm: lãi suất tăng nâng thu nhập đầu tư và giảm trích lập dự phòng nhân thọ. LN 2026F 3.214 tỷ — 6T/2026 đã đạt 57%.",
+   "y": "Luận điểm: lãi suất tăng nâng thu nhập đầu tư và giảm trích lập dự phòng nhân thọ. LN 2026F 3.214 tỷ — 9T/2026 đã đạt 83%.",
    "link": "https://cdn.simplize.vn/simplizevn/report/BVH/Bao_cao_phan_tich_va_inh_gia.pdf"
   },
   {
@@ -1277,6 +1290,21 @@
  ],
  "ctck_chu": "Hai báo cáo CTCK đã đọc ra trước 8 tháng (ELDIAN 12/2025, Vietcap 05/2025) — chỉ dùng mô tả doanh nghiệp, ngành; mô hình tự dựng từ BCTC, công bố của Bảo Việt và so sánh cùng ngành. Giá mục tiêu Vietcap so với giá hiện tại đã trừ cổ tức 1.055 đ (GDKHQ 14/11/2025).",
  "nguon": [
+  {
+   "ten": "Thời báo Tài chính VN — BVH đạt gần 48.000 tỷ doanh thu 9 tháng (LNTT 3.299 tỷ, LNST 2.698 tỷ)",
+   "ngay": "30/10/2026",
+   "link": "https://thoibaotaichinhvietnam.vn/tap-doan-bao-viet-bvh-dat-gan-48-000-ty-dong-doanh-thu-9-thang-dau-nam-206183.html"
+  },
+  {
+   "ten": "Báo Pháp luật — BVH đạt gần 48.000 tỷ doanh thu 9 tháng; Bảo hiểm Bảo Việt LNST 245 tỷ (+23,1%)",
+   "ngay": "31/10/2026",
+   "link": "https://doanhnhan.baophapluat.vn/tap-doan-bao-viet-bvh-dat-gan-48-000-ty-dong-doanh-thu-9-thang-dau-nam.html"
+  },
+  {
+   "ten": "Vietstock — Lãi 9 tháng của Tập đoàn Bảo Việt tăng 24%",
+   "ngay": "30/10/2026",
+   "link": "https://vietstock.vn/2026/10/lai-9-thang-cua-tap-doan-bao-viet-tang-24-737-1509730.htm"
+  },
   {
    "ten": "Thời báo Tài chính VN — BVH: doanh thu hợp nhất 6T/2026 hơn 32.000 tỷ, LNTT 2.289 tỷ",
    "ngay": "31/07/2026",
@@ -1369,8 +1397,8 @@
     },
     {
      "h": 1,
-     "t": "Phi nhân thọ tăng tốt: Bảo hiểm Bảo Việt doanh thu 6T/2026 +21,1%, LNST +5,3%; tỷ lệ kết hợp 9T/2025 thấp nhất từ 2020.",
-     "ng": "BVH KQKD Q2/2026 · ELDIAN 12/2025"
+     "t": "Phi nhân thọ tăng tốt: Bảo hiểm Bảo Việt doanh thu 9T/2026 11.063 tỷ (+15,1%), LNST 245 tỷ (+23,1%; 6T chỉ +5,3%).",
+     "ng": "BVH KQKD Q3/2026 (Báo Pháp luật 31/10/2026)"
     }
    ]
   },
@@ -1379,8 +1407,8 @@
    "y": [
     {
      "h": 0,
-     "t": "Bộ Tài chính sở hữu 65%, Sumitomo Life là cổ đông chiến lược: cổ phiếu tự do ít, nhưng BVH là mã bảo hiểm duy nhất có thanh khoản (74 tỷ/phiên).",
-     "ng": "ELDIAN 12/2025 · bảng giá 20/10"
+     "t": "Bộ Tài chính sở hữu 65%, Sumitomo Life là cổ đông chiến lược: cổ phiếu tự do ít, nhưng BVH là mã bảo hiểm duy nhất có thanh khoản (62 tỷ/phiên, 10/2026).",
+     "ng": "ELDIAN 12/2025 · bảng giá 02/11"
     },
     {
      "h": -1,
@@ -1428,17 +1456,17 @@
   },
   {
    "ten": "Phi nhân thọ — Bảo hiểm Bảo Việt (100%)",
-   "phu": "Doanh thu 6T/2026 7.404 tỷ (+21,1%)",
+   "phu": "Doanh thu 9T/2026 11.063 tỷ (+15,1%)",
    "so": [
     [
-     "Doanh thu 6T",
-     "7.404 tỷ",
-     "+21,1%"
+     "Doanh thu 9T",
+     "11.063 tỷ",
+     "+15,1%"
     ],
     [
-     "LNST 6T",
-     "+5,3%",
-     "so với cùng kỳ"
+     "LNST 9T",
+     "245 tỷ",
+     "+23,1%"
     ],
     [
      "Phí gốc 2024",
@@ -1464,7 +1492,7 @@
   },
   {
    "ten": "Đầu tư — danh mục tập đoàn",
-   "phu": "Tổng tài sản 30/6/2026 315.683 tỷ (+8,2% từ đầu năm)",
+   "phu": "Tổng tài sản 30/9/2026 305.991 tỷ (+4,9% từ đầu năm)",
    "so": [
     [
      "Tiền gửi ngân hàng",
