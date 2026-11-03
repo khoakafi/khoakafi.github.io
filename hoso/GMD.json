@@ -3,9 +3,9 @@
  "ma": "GMD",
  "ten": "CTCP Tập đoàn Gemadept",
  "nganh": "Cảng biển, logistics",
- "ky": "BCTC Q2/2026 (soát xét) · sản lượng 7T/2026 · giá 20/10/2026",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 (cuối 10/2026)",
+ "ky": "BCTC Q3/2026 · giá 02/11/2026",
+ "cap_nhat": "2026-11-03",
+ "lan_sau": "sau BCTC Q4/2026 (cuối 1/2027); sớm hơn nếu chốt bán 24% Gemalink",
  "cp_trieu": 649.3,
  "cp_ng": "649,34 triệu cp: 426,5 triệu (BCTC Q2/2026) + 6,4 triệu cp ESOP (Q3/2026) = 432,89 triệu, cộng 216,4 triệu cp thưởng 50% (chốt 8/10, GDKHQ 7/10/2026) — vốn điều lệ 6.493,4 tỷ",
  "chia": [
@@ -24,34 +24,34 @@
  "tieu_de": {
   "t": "Nửa lãi lõi đến từ Gemalink đã chạy 146% công suất: 2027 là năm chờ giai đoạn 2"
  },
- "dong_mo": "Gemalink mang về 532 tỷ LN 6T/2026 (+67%) nhưng đã chạy 146% công suất; Nam Đình Vũ mất hàng MSC, chỉ dùng ~68% công suất sau GĐ3. Bỏ ~435 tỷ lãi bán vốn CJ, LN lõi 2026E +28%, 2027E chỉ +9%. Tổng các phần cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 LN cổ đông 444 tỷ (+41%): cảng hợp nhất +36%, Gemalink ước +29% dù đã chạy 146% công suất; thuế quý 34% kéo LN dưới mô hình. Bỏ ~435 tỷ lãi bán vốn CJ, LN lõi 2026E +28%, 2027E chỉ +9% chờ GĐ2. Tổng các phần cho {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
    "so": "146%",
    "nhan": "công suất thiết kế Gemalink, 6T/2026",
    "tieu": "Gemalink gánh nửa lãi lõi nhưng đã hết chỗ",
-   "t": "6T/2026 Gemalink 1,10 triệu TEU (+23%), mang về 532 tỷ cho GMD (+67%) nhờ giá bốc dỡ +10–13% từ 2/2026; cảng phải dùng cầu bến lân cận, phao nổi. Cơ sở: phần GMD 1.110 tỷ 2026E (+34%) → 1.247 tỷ 2027E (+12%), sản lượng chỉ +5% đến khi GĐ2 (+1,25 triệu TEU, 220–250 triệu USD, 85% vay) chạy từ Q4/2027.",
-   "ng": "ACBS 24/08 · KBSV 03/09 · MBS 12/08 · KAFI 30/09 · mô hình"
+   "t": "6T/2026 Gemalink 1,10 triệu TEU (+23%), 532 tỷ cho GMD (+67%) nhờ giá bốc dỡ +10–13% từ 2/2026. Q3 xác nhận đà chưa gãy: lãi liên doanh, liên kết 349 tỷ (+17%), phần Gemalink ước ~268. Cơ sở: phần GMD 1.115 tỷ 2026E (+35%) → 1.252 tỷ 2027E (+12%), sản lượng chỉ +5% đến khi GĐ2 (+1,25 triệu TEU) chạy từ Q4/2027.",
+   "ng": "BCTC Q3/2026 · ACBS 24/08 · KBSV 03/09 · KAFI 30/09 · mô hình"
   },
   {
    "so": "−9%",
    "nhan": "sản lượng Nam Đình Vũ 6T/2026",
    "tieu": "Nam Đình Vũ thừa công suất: GĐ3 có khấu hao trước khi có hàng",
-   "t": "MSC chuyển tuyến sang HTIT (Lạch Huyện) để giữ cam kết sản lượng: 7T/2026 NĐV 790 nghìn TEU — 43% mục tiêu 1,85 triệu, ~68% công suất 2 triệu. Giá dịch vụ +15–20% vẫn kéo LN hoạt động hợp nhất 6T +21% (910 tỷ). Cơ sở: NĐV 2026E 1,45 triệu TEU (−3%), 2027E +7% nhờ 2 tuyến Hapag-Lloyd và 2–3 tuyến mới.",
-   "ng": "ACBS 24/08 · KBSV 03/09 · MBS 12/08 · DSC · mô hình"
+   "t": "MSC chuyển tuyến sang HTIT (Lạch Huyện): 7T/2026 NĐV 790 nghìn TEU — 43% mục tiêu 1,85 triệu, ~68% công suất. Giá dịch vụ vẫn kéo LN hoạt động hợp nhất 9T +25%; Q3 325 tỷ (+36%) dù biên gộp 31,8% (cùng kỳ 42,7%) khi hợp nhất trọn quý vận tải biển. Cơ sở: NĐV 2026E 1,45 triệu TEU (−3%), 2027E +7% nhờ tuyến mới.",
+   "ng": "BCTC Q3/2026 · ACBS 24/08 · MBS 12/08 · DSC · mô hình"
   },
   {
    "so": "435 tỷ",
    "nhan": "lãi bán vốn CJ, FCC sau thuế (ước), Q2/2026",
    "tieu": "LN 2027 giảm vì 2026 có lãi bán vốn; phần lõi tăng chậm lại",
-   "t": "Q2/2026 ghi 609 tỷ lãi chuyển nhượng (bán 49,1% CJ Gemadept Logistics, nâng CJ Gemadept Shipping lên 100%, thoái FCC); thuế quý tăng ~174 tỷ. LN cổ đông 2026E 2.690 tỷ, bỏ khoản này 2.255 (+28%); 2027E 2.464 (+9%) — dưới KBSV (2.670) vì Gemalink kín chỗ. Cao su Campuchia (~1.196 tỷ sổ sách) chưa tính vào LN: hoãn bán từ 2023.",
-   "ng": "BCTC Q2/2026 · KAFI 30/09 · SHS 06/08 · mô hình"
+   "t": "Q2/2026 ghi 609 tỷ lãi chuyển nhượng (bán 49,1% CJ Gemadept Logistics, nâng CJ Gemadept Shipping lên 100%, thoái FCC). 9T/2026 LN cổ đông 2.112 tỷ, bỏ khoản này 1.677 (+44%). Cơ sở 2026E 2.689, lõi 2.255 (+28%); 2027E 2.467 (+9%) — dưới KBSV (2.670) vì Gemalink kín chỗ. Cao su (~1.196 tỷ sổ sách) chưa vào LN.",
+   "ng": "BCTC Q2, Q3/2026 · KAFI 30/09 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Tổng các phần: {up_so} so với giá hiện tại",
-   "t": "Gemalink × P/E 18 (trung vị P/E GMD từ 2021: 17,9; HPHT, ICTSI 19–20 lần), cảng & logistics hợp nhất × 13 (trung vị cảng khu vực 12,4), SCS và liên kết khác × 6,5 (SCS đang 5,5 lần), cao su theo sổ sách — tương đương ~14,7 lần LN 2027E. Tính trên 649,3 triệu cp sau thưởng 50% (GDKHQ 7/10/2026).",
+   "t": "Gemalink × P/E 18 (trung vị P/E GMD từ 2021: 17,7; HPHT, ICTSI 19–20 lần), cảng & logistics hợp nhất × 13 (trung vị cảng khu vực 12,4), SCS và liên kết khác × 6,5 (SCS đang 5,1 lần), cao su theo sổ sách — tương đương ~14,7 lần LN 2027E. Tính trên 649,3 triệu cp sau thưởng 50% (GDKHQ 7/10/2026).",
    "ng": "mô hình · P/E lịch sử: BCTC VNDirect · MBS 14/07 (Bloomberg)"
   }
  ],
@@ -63,19 +63,19 @@
   ],
   "ln": [
    1756,
-   2690,
-   2464
+   2689,
+   2467
   ],
   "ln_truoc": 1455,
   "eps": [
    2704,
-   4143,
-   3795
+   4141,
+   3799
   ],
   "bv": [
    20237,
-   22786,
-   25041
+   22749,
+   25009
   ],
   "co_tuc_nam": 1467,
   "them": [
@@ -84,7 +84,7 @@
     "v": [
      1756,
      2255,
-     2464
+     2467
     ]
    },
    {
@@ -98,7 +98,7 @@
     "pt": 1
    }
   ],
-  "ng": "LN 2024–2025: BCTC; 2026E = 6 tháng thực tế (soát xét) + H2 ước tính. Số trên 1 cp tính theo 649,3 triệu cp sau thưởng 50%. Cổ tức: 2.200 đ/cp cũ năm 2025 ≈ 1.467 đ/cp mới; giả định chi ~1.000 tỷ/năm từ 2027."
+  "ng": "LN 2024–2025: BCTC; 2026E = 9 tháng thực tế + Q4 ước tính. Số trên 1 cp tính theo 649,3 triệu cp sau thưởng 50%. Cổ tức: 2.200 đ/cp cũ năm 2025 ≈ 1.467 đ/cp mới; giả định chi ~1.000 tỷ/năm từ 2027."
  },
  "ln_mang": {
   "tieu": "LN cổ đông theo nguồn",
@@ -114,8 +114,8 @@
     "mau": "c1",
     "v": [
      827,
-     1110,
-     1247
+     1115,
+     1252
     ]
    },
    {
@@ -123,8 +123,8 @@
     "mau": "c2",
     "v": [
      598,
-     827,
-     917
+     810,
+     915
     ]
    },
    {
@@ -132,7 +132,7 @@
     "mau": "c3",
     "v": [
      331,
-     318,
+     329,
      300
     ]
    },
@@ -184,9 +184,9 @@
    ]
   ],
   "tv": 12.4,
-  "moi_cp": 3296,
+  "moi_cp": 3495,
   "max": 25,
-  "y": "GMD tính trên LN cổ đông 4 quý đến Q2/2026 trừ ~435 tỷ lãi bán vốn. Trên trung vị 12,4 của nhóm, gần hai nhà khai thác cảng nước sâu quốc tế HPHT, ICTSI (19–20 lần): phần trả thêm là cho Gemalink; cảng sông, cảng tổng hợp trong nước 5–15 lần.",
+  "y": "GMD tính trên LN cổ đông 4 quý đến Q3/2026 trừ ~435 tỷ lãi bán vốn. Trên trung vị 12,4 của nhóm, gần hai nhà khai thác cảng nước sâu quốc tế HPHT, ICTSI (19–20 lần): phần trả thêm là cho Gemalink; cảng sông, cảng tổng hợp trong nước 5–15 lần.",
   "ng": "P/E 2025 cùng ngành: MBS 14/07/2026 (Bloomberg 01/07); GMD: BCTC VNDirect, BCTC bán niên soát xét"
  },
  "mo_hinh": {
@@ -204,8 +204,8 @@
     "ten": "Sản lượng Gemalink (nghìn TEU)",
     "v": [
      1930,
-     2200,
-     2310
+     2220,
+     2331
     ],
     "tang": 1
    },
@@ -213,16 +213,16 @@
     "ten": "LN cho GMD/TEU (nghìn đ)",
     "v": [
      428,
-     504,
-     540
+     502,
+     537
     ]
    },
    {
     "ten": "LN Gemalink, phần GMD (tỷ)",
     "v": [
      827,
-     1110,
-     1247
+     1115,
+     1252
     ],
     "tang": 1
    },
@@ -251,16 +251,16 @@
     "ten": "LN hoạt động/TEU (nghìn đ)",
     "v": [
      398,
-     474,
-     507
+     484,
+     517
     ]
    },
    {
     "ten": "LN hoạt động hợp nhất (tỷ)",
     "v": [
      1253,
-     1513,
-     1705
+     1545,
+     1741
     ],
     "tang": 1
    },
@@ -268,8 +268,8 @@
     "ten": "Lợi ích cổ đông thiểu số (tỷ)",
     "v": [
      547,
-     531,
-     599
+     560,
+     632
     ]
    },
    {
@@ -279,7 +279,7 @@
     "ten": "SCS và liên kết khác (tỷ)",
     "v": [
      331,
-     318,
+     329,
      300
     ]
    },
@@ -295,8 +295,8 @@
     "ten": "LN cổ đông (tỷ)",
     "v": [
      1756,
-     2690,
-     2464
+     2689,
+     2467
     ],
     "dam": 1,
     "tang": 1
@@ -306,7 +306,7 @@
     "v": [
      1756,
      2255,
-     2464
+     2467
     ],
     "tang": 1
    },
@@ -314,23 +314,23 @@
     "ten": "EPS (đ, 649,3 triệu cp)",
     "v": [
      2704,
-     4143,
-     3795
+     4141,
+     3799
     ],
     "eps": 1
    }
   ],
-  "ghi": "LN hoạt động hợp nhất = LN gộp − bán hàng − quản lý + thu nhập khác ròng; tính trên sản lượng NĐV + Phước Long + Bình Dương (gồm cả logistics, tàu). 2026E = 6 tháng thực tế + H2 ước tính; sản lượng 6T/2025 suy từ tăng trưởng công bố. Thuế 16%; thiểu số tăng cùng LN hoạt động hợp nhất."
+  "ghi": "LN hoạt động hợp nhất = LN gộp − bán hàng − quản lý + thu nhập khác ròng; tính trên sản lượng NĐV + Phước Long + Bình Dương (gồm cả logistics, tàu). 2026E = 9 tháng thực tế + Q4 ước tính; Gemalink Q3/2026 ước = lãi liên doanh, liên kết − SCS và khác bình quân 6T. Sản lượng 6T/2025 suy từ tăng trưởng công bố; H2/2026 chưa có số công bố. Thuế 2027 16%; thiểu số tăng cùng LN hoạt động hợp nhất."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   2690
+   2689
   ],
   "cuoi": [
    "2027E",
-   2464
+   2467
   ],
   "buoc": [
    [
@@ -339,38 +339,38 @@
    ],
    [
     "Cảng, logistics hợp nhất",
-    90
+    105
    ],
    [
     "SCS và liên kết khác",
-    -18
+    -29
    ],
    [
     "Không còn lãi bán vốn CJ, FCC",
     -435
    ]
   ],
-  "y": "Phần lõi thêm ~209 tỷ (+9%), chủ yếu từ giá dịch vụ; không bù được ~435 tỷ lãi bán vốn một lần của 2026.",
+  "y": "Phần lõi thêm ~213 tỷ (+9%), chủ yếu từ giá dịch vụ; không bù được ~435 tỷ lãi bán vốn một lần của 2026.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
    "ten": "Sản lượng Gemalink H2/2026 · 2027",
    "v": [
-    "980 · −4%",
-    "1.100 · +5%",
+    "1.060 · −4%",
+    "1.120 · +5%",
     "1.180 · +8%"
    ],
-   "ly_do": "Nghìn TEU. 6T/2026 1.100 (+23%, 146% công suất GĐ1); H2/2025 ~1.036; Q2 có hàng đi Mỹ chạy trước thuế (SHS); GĐ2 từ Q4/2027"
+   "ly_do": "Nghìn TEU. 6T/2026 1.100 (+23%, 146% công suất GĐ1); H2/2025 ~1.036; Q3 chưa công bố (MBS ước +27%); GĐ2 từ Q4/2027"
   },
   {
-   "ten": "LN cho GMD/TEU Gemalink: H2/2026 · 2027",
+   "ten": "Gemalink phần GMD Q4/2026 (tỷ) · LN/TEU 2027",
    "v": [
-    "475 · −2%",
-    "525 · +7%",
-    "555 · +9%"
+    "275 · −2%",
+    "315 · +7%",
+    "345 · +9%"
    ],
-   "ly_do": "Nghìn đ. Q2/2026 ~518, H2/2025 ~491; giá bốc dỡ +10–13% từ 2/2026; KBSV: giá phía Nam +7–10%/năm"
+   "ly_do": "Q4/2025 301; Q3/2026 ước ~268, Q2 299; giá bốc dỡ +10–13% từ 2/2026; KBSV: giá phía Nam +7–10%/năm"
   },
   {
    "ten": "NĐV tháng 8–12/2026 · 2027",
@@ -391,13 +391,13 @@
    "ly_do": "So cùng kỳ. 2025 1,65 triệu TEU (+24%); 6T/2026 ~823 nghìn TEU (+6,5%; ACBS +6%)"
   },
   {
-   "ten": "LN hoạt động/TEU hợp nhất: H2/2026 · 2027",
+   "ten": "LN hoạt động hợp nhất Q4/2026 (tỷ) · /TEU 2027",
    "v": [
-    "+8% · 0%",
-    "+16% · +7%",
-    "+24% · +9%"
+    "250 · 0%",
+    "310 · +7%",
+    "360 · +9%"
    ],
-   "ly_do": "6T/2026 615 nghìn đ (+22%): giá +15–20% (KBSV, MBS) bù sản lượng −1%; H2 gánh chi phí cuối năm (H2/2025: 303)"
+   "ly_do": "Q3/2026 325 (+36%), Q4/2025 262 sau thu nhập khác −168. Thuế Q4 16% / 5% / 0%: Q3 cao (34%, 2025: 37%), Q4 thấp (2025: 3%)"
   },
   {
    "ten": "SCS và liên kết khác 2027 (tỷ)",
@@ -415,7 +415,7 @@
     "18",
     "20"
    ],
-   "ly_do": "P/E 4 quý GMD từ 2021: p25 14,9, trung vị 17,9, p75 21,2; HPHT 19,9, ICTSI 18,9 (P/E 2025, Bloomberg)"
+   "ly_do": "P/E 4 quý GMD từ 2021: p25 14,6, trung vị 17,7, p75 21,0; HPHT 19,9, ICTSI 18,9 (P/E 2025, Bloomberg)"
   },
   {
    "ten": "P/E hợp nhất · liên kết",
@@ -424,7 +424,7 @@
     "13 · 6,5",
     "15 · 8"
    ],
-   "ly_do": "Cảng khu vực và VN trung vị 12,4 (SGP 15,3, PHP 12,4, QNP 8,3); SCS đang 5,5 lần LN 4 quý (giá 20/10)"
+   "ly_do": "Cảng khu vực và VN trung vị 12,4 (SGP 15,3, PHP 12,4, QNP 8,3); SCS đang 5,1 lần LN 4 quý (giá 02/11)"
   },
   {
    "ten": "Dự án cao su (× sổ sách)",
@@ -439,23 +439,23 @@
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 2517,
-   "ln27": 1965,
-   "gia": 34.8,
-   "mo_ta": "Hàng đi Mỹ hụt sau đợt chạy trước thuế: Gemalink H2 980 nghìn TEU, 2027 −4%; NĐV 2027 −3%; LN/TEU hợp nhất đi ngang; P/E 14 · 10 · 5; cao su 50% sổ sách"
+   "ln26": 2548,
+   "ln27": 2037,
+   "gia": 36.4,
+   "mo_ta": "Q4 LN 437 tỷ (thuế 16%); hàng đi Mỹ hụt: Gemalink 2027 −4%; NĐV 2027 −3%; LN/TEU hợp nhất đi ngang; P/E 14 · 10 · 5; cao su 50% sổ sách"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 2690,
-   "ln27": 2464,
-   "gia": 57.8,
+   "ln26": 2689,
+   "ln27": 2467,
+   "gia": 57.9,
    "mo_ta": "Gemalink 2027 2,3 triệu TEU, LN/TEU +7%; NĐV +7%; LN/TEU hợp nhất +7%; P/E 18 · 13 · 6,5; cao su theo sổ sách"
   },
   {
    "ten": "Tốt",
-   "ln26": 2827,
-   "ln27": 2749,
-   "gia": 74.3,
+   "ln26": 2802,
+   "ln27": 2680,
+   "gia": 72.3,
    "mo_ta": "Gemalink 2027 2,5 triệu TEU (+8%, GĐ2 chạy sớm), LN/TEU +9%; NĐV +12%; P/E 20 · 15 · 8; bán cao su theo giả định KAFI"
   }
  ],
@@ -469,9 +469,9 @@
     "ten": "65,1% Gemalink",
     "mau": "c1",
     "x": [
-     938,
-     1247,
-     1397
+     1011,
+     1252,
+     1347
     ],
     "boi": [
      14,
@@ -482,9 +482,9 @@
     "boi_ten": "P/E",
     "sh": 1,
     "gt": [
-     13132,
-     22446,
-     27940
+     14154,
+     22536,
+     26940
     ]
    },
    {
@@ -492,8 +492,8 @@
     "mau": "c2",
     "x": [
      746,
-     918,
-     1031
+     915,
+     1013
     ],
     "boi": [
      10,
@@ -505,8 +505,8 @@
     "sh": 1,
     "gt": [
      7460,
-     11934,
-     15465
+     11895,
+     15195
     ]
    },
    {
@@ -555,14 +555,14 @@
    }
   ],
   "von": [
-   22590,
-   37526,
-   48237
+   23612,
+   37577,
+   46967
   ],
   "gia": [
-   34.8,
-   57.8,
-   74.3
+   36.4,
+   57.9,
+   72.3
   ]
  },
  "nhay": [
@@ -573,7 +573,7 @@
   ],
   [
    "Sản lượng Gemalink 2027 ±5%",
-   62,
+   63,
    1.7
   ],
   [
@@ -736,7 +736,8 @@
    "2026-07",
    "2026-08",
    "2026-09",
-   "2026-10"
+   "2026-10",
+   "2026-11"
   ],
   "v": [
    6.7,
@@ -880,21 +881,22 @@
    17.4,
    13.2,
    13.0,
-   13.4
+   13.3,
+   12.7
   ],
   "p10": 6.3,
-  "p25": 11.1,
+  "p25": 11.2,
   "tv": 15.8,
   "thap": [
    "2018-08",
    4.1
   ],
   "nay": [
-   "2026-10",
-   13.4
+   "2026-11",
+   12.7
   ],
   "ng": "Giá cuối tháng, LNST cổ đông 4 quý gần nhất (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Cơ sở ≈ 14,7 lần LN 2027E cả công ty (bỏ cao su): dưới trung vị 17,9 lần LN 4 quý từ 2021 vì 2027 Gemalink kín công suất; xấu ≈ 11,2 (quanh p10–p25 từ 2021), tốt ≈ 16,7. P/E 4 quý hiện thấp vì gồm lãi bán vốn CJ."
+  "dung": "Cơ sở ≈ 14,7 lần LN 2027E cả công ty (bỏ cao su): dưới trung vị 17,7 lần LN 4 quý từ 2021 vì 2027 Gemalink kín công suất; xấu ≈ 11,3 (quanh p10–p25 từ 2021), tốt ≈ 16,7. P/E 4 quý hiện thấp vì gồm lãi bán vốn CJ."
  },
  "theo_doi": [
   {
@@ -911,32 +913,43 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    452,
-    545,
-    618
+    437,
+    578,
+    690
    ],
    "ck": 592
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    2517,
-    2690,
-    2827
+    2548,
+    2689,
+    2802
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "10–11/2026",
+   "khi": "Đã ra 10/2026",
    "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Cơ sở LN cổ đông ~477 tỷ (Q3/2025: 315): Gemalink ~260, LN hoạt động hợp nhất ~290 tỷ. Quý 3 thường gánh chi phí quản lý lớn (Q3/2025: 198 tỷ).",
+   "tieu": "KQKD Q3/2026: lõi tốt, thuế cao",
+   "ct": "LN cổ đông 444 tỷ (+41%) so với cơ sở cũ 477: cảng hợp nhất 325 tỷ (+36%), liên doanh, liên kết 349 như dự kiến; thuế 124 tỷ (34%) như Q3/2025 (37%) — lệch theo mùa, không phải xu hướng.",
    "tac": [
-    "LN ≥ 440 tỷ",
-    "giữ cơ sở; dưới 410 tỷ nghiêng về xấu"
+    "giữ cơ sở",
+    "2026E 2.689 tỷ (cũ 2.690); 2027E giữ nguyên giả định"
    ],
-   "theo_doi": "lãi liên doanh, sản lượng NĐV"
+   "theo_doi": "thuế Q4, lãi liên doanh"
+  },
+  {
+   "khi": "1–2/2027",
+   "loai": "hai",
+   "tieu": "KQKD Q4/2026",
+   "ct": "Cơ sở LN cổ đông ~578 tỷ (Q4/2025: 592): Gemalink ~315, LN hoạt động hợp nhất ~310 tỷ, thuế quý thấp như Q4/2025. Q4 hay có lỗ khác (2024: −305, 2025: −168 tỷ).",
+   "tac": [
+    "LN ≥ 530 tỷ",
+    "giữ cơ sở; dưới 450 tỷ nghiêng về xấu"
+   ],
+   "theo_doi": "sản lượng Gemalink cả năm, thu nhập khác"
   },
   {
    "khi": "Q4/2027",
@@ -1084,8 +1097,8 @@
     },
     {
      "h": 1,
-     "t": "Tiền và đầu tư ngắn hạn 5.347 tỷ, nợ vay 2.519 tỷ (30/6/2026): tiền ròng ~2.800 tỷ, dư cho phần vốn góp GĐ2 (85% vốn dự án là vay).",
-     "ng": "BCTC Q2/2026"
+     "t": "Tiền và đầu tư ngắn hạn 5.331 tỷ, nợ vay 2.636 tỷ (30/9/2026): tiền ròng ~2.700 tỷ, dư cho phần vốn góp GĐ2 (85% vốn dự án là vay).",
+     "ng": "BCTC Q3/2026"
     }
    ]
   }
@@ -1111,9 +1124,9 @@
      "Q4: 301 tỷ"
     ],
     [
-     "LN cho GMD 6T/2026",
-     "532 tỷ",
-     "+67%"
+     "LN cho GMD 9T/2026 (ước)",
+     "~800 tỷ",
+     "+52%"
     ]
    ],
    "y": [
@@ -1217,9 +1230,9 @@
      "+43%, hợp nhất CJ Shipping"
     ],
     [
-     "SCS LN 4 quý",
-     "754 tỷ",
-     "P/E 5,5 lần"
+     "SCS LN 4 quý đến Q3/2026",
+     "744 tỷ",
+     "P/E 5,1 lần"
     ],
     [
      "SCS và liên kết khác 6T/2026",
@@ -1318,7 +1331,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "so_le": 0,
    "ss": [
@@ -1330,7 +1344,8 @@
       207.4,
       301.0,
       233.4,
-      298.6
+      298.6,
+      267.6
      ],
      "mau": "c1"
     },
@@ -1342,7 +1357,8 @@
       239.8,
       262.4,
       387.1,
-      522.4
+      522.4,
+      325.2
      ],
      "mau": "c2"
     },
@@ -1354,7 +1370,8 @@
       89.6,
       89.6,
       78.1,
-      84.4
+      84.4,
+      81.3
      ],
      "mau": "c3"
     },
@@ -1366,13 +1383,14 @@
       -25.3,
       95.8,
       17.8,
-      645.5
+      645.5,
+      35.9
      ],
      "mau": "c4"
     }
    ],
-   "y": "Gemalink từ ~160 tỷ/quý (H1/2025) lên ~300 tỷ; Q2/2026 có 609 tỷ lãi bán vốn CJ, FCC.",
-   "ng": "BCTC VNDirect; Gemalink: Báo Pháp luật (9T/2025), Vietstock (Q4/2025), ACBS, MBS — Q1–Q2/2025, Q1/2026 suy từ tăng trưởng"
+   "y": "Gemalink từ ~160 tỷ/quý (H1/2025) lên ~270–300 tỷ; Q2/2026 có 609 tỷ lãi bán vốn CJ, FCC; Q3 cảng hợp nhất 325 tỷ.",
+   "ng": "BCTC VNDirect; Gemalink: Báo Pháp luật (9T/2025), Vietstock (Q4/2025), ACBS, MBS — Q1–Q2/2025, Q1/2026 suy từ tăng trưởng; Q3/2026 ước (lãi liên doanh, liên kết trừ SCS, khác bình quân 6T)"
   }
  ],
  "ke_hoach": {
@@ -1381,20 +1399,20 @@
    {
     "ten": "Doanh thu",
     "kh": 6500,
-    "th": 3214,
-    "ky": "6T",
-    "tg": 50,
+    "th": 5424,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 6/5/2026 (kịch bản 1; kịch bản 2: 6.800) · BCTC Q2"
+    "ng": "ĐHĐCĐ 6/5/2026 (kịch bản 1; kịch bản 2: 6.800) · BCTC Q3"
    },
    {
     "ten": "Lợi nhuận trước thuế",
     "kh": 2800,
-    "th": 2267,
-    "ky": "6T",
-    "tg": 50,
+    "th": 2977,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 6/5/2026 (kịch bản 2: 3.000) · BCTC Q2"
+    "ng": "ĐHĐCĐ 6/5/2026 (kịch bản 2: 3.000) · BCTC Q3"
    },
    {
     "ten": "Sản lượng Nam Đình Vũ",
@@ -1415,7 +1433,7 @@
     "ng": "KBSV 03/09"
    }
   ],
-  "y": "6 tháng đạt 81% kế hoạch LNTT (kịch bản 3.000 tỷ: 76%), gồm 609 tỷ lãi bán vốn; cơ sở cả năm ~3.658 tỷ. Nam Đình Vũ sau 7 tháng mới 43% mục tiêu sản lượng, Gemalink đã 55%.",
+  "y": "9 tháng đạt 106% kế hoạch LNTT (kịch bản 3.000 tỷ: 99%), gồm 609 tỷ lãi bán vốn; cơ sở cả năm ~3.722 tỷ. Nam Đình Vũ sau 7 tháng mới 43% mục tiêu sản lượng, Gemalink đã 55%.",
   "ng": ""
  },
  "ctck": [
