@@ -3,46 +3,46 @@
  "ma": "CEO",
  "ten": "CTCP Tập đoàn C.E.O (CEO Group)",
  "nganh": "Bất động sản, khách sạn nghỉ dưỡng",
- "ky": "BCTC Q2/2026 · công bố, báo chí đến 20/10/2026 (KQKD Q3 chưa ra)",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 hoặc khi Mê Linh mở bán, có ngày GDKHQ đợt chào bán",
+ "ky": "BCTC Q3/2026 · giá 02/11/2026",
+ "cap_nhat": "2026-11-03",
+ "lan_sau": "sau BCTC Q4/2026 hoặc khi Mê Linh mở bán, có ngày GDKHQ đợt chào bán",
  "cp_trieu": 595.8,
- "cp_ng": "Vốn điều lệ 5.674,2 tỷ (BCTC Q2/2026) + 28,37 triệu cp cổ tức 5% bằng cổ phiếu (GDKHQ 09/06/2026, ĐKCC 10/06/2026) = ~5.957,8 tỷ, 595,8 triệu cp (MarketTimes: vốn điều lệ \"gần 5.958 tỷ\"); khớp vốn hóa bảng giá VNDirect. Chào bán 96,5 triệu cp + ~17 triệu cp ESOP giá 10.000 đ chưa có ngày GDKHQ, chưa tính.",
+ "cp_ng": "Vốn điều lệ 30/9/2026 5.957,8 tỷ (BCTC Q3/2026) = 5.674,2 tỷ (Q2) + 28,37 triệu cp cổ tức 5% bằng cổ phiếu (GDKHQ 09/06/2026, ĐKCC 10/06/2026) = 595,8 triệu cp (MarketTimes: vốn điều lệ \"gần 5.958 tỷ\"); khớp vốn hóa bảng giá VNDirect. Chào bán 96,5 triệu cp + ~17 triệu cp ESOP giá 10.000 đ chưa có ngày GDKHQ, chưa tính.",
  "co_tuc": [],
  "tieu_de": {
-  "t": "ROE 3% nhưng vẫn được trả ~1 lần sổ sách — mức của thời ROE 11–22% (2015–2019)",
+  "t": "ROE 3% vẫn được trả ~1 lần sổ sách; Q3 chưa có Mê Linh mà nợ vay đã gấp 6,6 lần đầu năm",
   "dk": "up_duoi:-5",
   "khac": "Đã về quanh giá trị cho ROE 3–4%; lãi chỉ đổi cấp khi Mê Linh bàn giao 2027"
  },
- "dong_mo": "LN cổ đông 4 quý 191 tỷ, ROE 3,1%. Giá mất 64% từ đỉnh 52 tuần nhưng P/B vẫn 1,04 lần (20/10). 6T/2026 tồn kho +2,2 nghìn tỷ khi Mê Linh khởi công, tiền ròng thành nợ ròng. LN 2027E cơ sở ~0,27 nghìn tỷ, ROE ~4%. P/B 0,9 lần vốn chủ 30/6/2027E: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3/2026 LN cổ đông 41 tỷ (−13%), vẫn chưa có doanh thu Mê Linh; 4 quý 185 tỷ, ROE 3,0%. Nợ vay 30/9 2,86 nghìn tỷ (×6,6 đầu năm), tiền ròng 1,11 thành nợ ròng 2,22. LN 2027E cơ sở ~0,27 nghìn tỷ, ROE ~4%. P/B 0,9 lần vốn chủ 30/6/2027E: {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
-   "so": "3,1%",
+   "so": "3,0%",
    "nhan": "ROE 4 quý gần nhất",
    "tieu": "Mức P/B của thời ROE 15%, cho ROE 3%",
-   "t": "2015–2019 CEO có ROE 11–22% và được trả trung vị 1,00 lần sổ sách. 2022–2025 ROE chỉ 3–9% nhưng P/B trung vị 1,9 lần (11/2025: 2,36). Giá mất 64% mới đưa P/B về 1,04 (20/10) — ngang thời ROE 15%, khi LN cổ đông 4 quý chỉ 191 tỷ. P/E 4 quý ~34 lần; về trung vị lịch sử 14,2 lần cần LN ~460 tỷ, gấp 2,4 lần.",
-   "ng": "BCTC (VNDirect) · giá cuối tháng từ 2015 · bảng giá 20/10/2026"
+   "t": "2015–2019 CEO có ROE 11–22% và được trả trung vị 1,00 lần sổ sách. 2022–2025 ROE chỉ 3–9% nhưng P/B trung vị 1,9 lần (11/2025: 2,36). Giá mất 64% mới đưa P/B về 1,03 (02/11) — ngang thời ROE 15%, khi LN cổ đông 4 quý chỉ 185 tỷ. P/E 4 quý ~35 lần; về trung vị lịch sử 14,5 lần cần LN ~450 tỷ, gấp 2,4 lần.",
+   "ng": "BCTC Q3/2026 (VNDirect) · giá cuối tháng từ 2015 · bảng giá 02/11/2026"
   },
   {
-   "so": "1,9",
-   "nhan": "nghìn tỷ: tiền ròng thành nợ ròng trong 6T/2026",
+   "so": "3,3",
+   "nhan": "nghìn tỷ: tiền ròng thành nợ ròng trong 9T/2026",
    "tieu": "Mê Linh hút vốn trước khi có doanh thu",
-   "t": "Q2/2026 tồn kho +2,2 nghìn tỷ lên 3,68 (×2,5 đầu năm); nguồn: vay dài hạn +0,9, nợ ngắn hạn khác +1,0, tiền và đầu tư ngắn hạn −0,44 nghìn tỷ. Dòng tiền kinh doanh 6T âm hơn 1,6 nghìn tỷ. Cùng lúc Mê Linh khởi công (17/04/2026): 17,1 ha giao 11/2025, 6,1 ha đất ở nộp tiền sử dụng đất, HĐQT duyệt vay BIDV ~1.287 tỷ. Lãi vay vào KQKD Q2 chỉ 11 tỷ (~4%/năm dư nợ bình quân): phần chênh với lãi ngân hàng đang vốn hóa.",
-   "ng": "BCTC (VNDirect) · VnBusiness 8/2026 · VnExpress, Fili 11/2025"
+   "t": "Q2 tồn kho +2,2 nghìn tỷ (đất Mê Linh), trả bằng nợ ngắn hạn khác và tiền; Q3 vay dài hạn thêm 1,25 nghìn tỷ, nợ ngắn hạn giảm 0,97, XDCB +211 tỷ. Nợ vay 30/9 2,86 nghìn tỷ, tiền + đầu tư ngắn hạn còn 0,64. Lãi vay vào KQKD Q3 chỉ 9,8 tỷ (~2%/năm dư nợ bình quân): phần lớn đang vốn hóa, sẽ vào giá vốn khi bàn giao. Dòng tiền kinh doanh 6T âm hơn 1,6 nghìn tỷ.",
+   "ng": "BCTC Q2, Q3/2026 (VNDirect) · VnBusiness 8/2026"
   },
   {
-   "so": "5,7%",
-   "nhan": "LNST trên phần doanh thu kế hoạch 2026 tăng thêm",
-   "tieu": "Kế hoạch doanh thu ×2,2 nhưng lãi chỉ +50%",
-   "t": "ĐHĐCĐ 24/4 đặt doanh thu 3.000 tỷ (+124%), LNST 300 tỷ (+50%): ~1,66 nghìn tỷ doanh thu tăng thêm chỉ mang về ~94 tỷ (5,7%; 2025: 15,4%) — khớp với đất Mê Linh nộp tiền theo giá hiện hành. 6T đạt 24% doanh thu, 49% LNST; nửa cuối cần 2,27 nghìn tỷ doanh thu (×3,8 cùng kỳ). Cơ sở: Mê Linh ghi nhận 300 tỷ Q4/2026, 1.300 tỷ 2027, biên gộp 19%.",
-   "ng": "ĐHĐCĐ 24/04/2026 (Dân Trí, Vietstock) · BCTC Q2 · mô hình"
+   "so": "33%",
+   "nhan": "kế hoạch doanh thu 2026 sau 9 tháng",
+   "tieu": "Q3 bác bỏ kịch bản đạt kế hoạch 2026",
+   "t": "ĐHĐCĐ đặt doanh thu 3.000 tỷ (+124%), LNST 300 tỷ; phần doanh thu tăng thêm chỉ mang LNST 5,7% (2025: 15,4%). 9T doanh thu 993 tỷ (ngang cùng kỳ), LNST 188 tỷ (63%). Q4 cần 2,01 nghìn tỷ doanh thu, ×5,7 Q4/2025, mà 30/9 người mua trả trước chỉ +31 tỷ. Cơ sở: Mê Linh 150 tỷ Q4, 1.450 tỷ 2027; LNST 2026 78% kế hoạch.",
+   "ng": "ĐHĐCĐ 24/04/2026 (Dân Trí, Vietstock) · BCTC Q3 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/B 0,9 lần vốn chủ giữa 2027: {up_so} so với giá hiện tại",
-   "t": "P/B 0,9 nằm giữa thấp 10% (0,84) và thấp 25% (0,95) lịch sử CEO, ngang DXG, KDH, KBC (ROE 1–10%: 0,91–0,94 lần); VRE ROE 15% cũng chỉ 1,06. Mức này đã là ~22 lần LN 2027E. Chào bán 96,5 triệu cp giá 10.000 đ (≈0,94 lần BVPS) + ESOP: −0,2 nghìn đ/cp. Xấu 8,0 (P/B 0,75, Mê Linh lùi, ROE ~1%), tốt 13,0 (1,15 ≈ trung vị; Mê Linh 1,8 nghìn tỷ doanh thu 2027, ROE ~7%).",
-   "ng": "mô hình · P/B lịch sử CEO và cùng ngành: BCTC VNDirect, giá 20/10/2026"
+   "t": "P/B 0,9 nằm giữa thấp 10% (0,84) và thấp 25% (0,95) lịch sử CEO, ngang DXG, KDH, KBC (ROE 1–9%: 0,89–0,94 lần); VRE ROE 15% cũng chỉ 1,08. Mức này đã là ~21 lần LN 2027E. Chào bán 96,5 triệu cp giá 10.000 đ (≈0,94 lần BVPS) + ESOP: −0,1 nghìn đ/cp. Xấu 8,0 (P/B 0,75, Mê Linh lùi, ROE ~1%), tốt 13,0 (1,15 ≈ trung vị; Mê Linh 2,1 nghìn tỷ doanh thu 2027, ROE ~8%).",
+   "ng": "mô hình · P/B lịch sử CEO và cùng ngành: BCTC Q3/2026 VNDirect, giá 02/11/2026"
   }
  ],
  "tom_tat": {
@@ -53,19 +53,19 @@
   ],
   "ln": [
    177,
-   202,
-   265
+   189,
+   272
   ],
   "ln_truoc": 190,
   "eps": [
    297,
-   339,
-   445
+   317,
+   457
   ],
   "bv": [
    10422,
-   10747,
-   11192
+   10723,
+   11179
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -73,8 +73,8 @@
     "ten": "Doanh thu (nghìn tỷ)",
     "v": [
      1.34,
-     1.63,
-     2.65
+     1.48,
+     2.8
     ],
     "d": 2
    },
@@ -82,8 +82,8 @@
     "ten": "ROE",
     "v": [
      2.9,
-     3.2,
-     4.1
+     3.0,
+     4.2
     ],
     "d": 1,
     "pt": 1
@@ -106,8 +106,8 @@
     "mau": "c1",
     "v": [
      0,
-     45,
-     195
+     22,
+     218
     ]
    },
    {
@@ -115,7 +115,7 @@
     "mau": "c2",
     "v": [
      203,
-     219,
+     213,
      202
     ]
    },
@@ -124,8 +124,8 @@
     "mau": "c4",
     "v": [
      25,
-     20,
-     -59
+     25,
+     -75
     ]
    }
   ],
@@ -134,30 +134,30 @@
  },
  "so_sanh": {
   "tieu": "P/B so với 12 mã bất động sản vốn hóa lớn nhất",
-  "phu": "giá hôm nay, vốn chủ cổ đông 30/6/2026, 595,8 triệu cp",
+  "phu": "giá hôm nay, vốn chủ cổ đông 30/9/2026, 595,8 triệu cp",
   "chi_so": "P/B",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "chi_so_kv": "P/B (giá 02/11)",
   "nhom": "12 mã cùng ngành vốn hóa lớn nhất",
   "kv": [
    [
     "VIC",
-    9.33
+    9.69
    ],
    [
     "VHM",
-    1.88
+    1.8
    ],
    [
     "VRE",
-    1.06
+    1.08
    ],
    [
     "BCM",
-    1.85
+    1.77
    ],
    [
     "NVL",
-    0.71
+    0.69
    ],
    [
     "KBC",
@@ -165,34 +165,34 @@
    ],
    [
     "VGC",
-    2.36
+    2.13
    ],
    [
     "VPI",
-    3.27
+    3.28
    ],
    [
     "KDH",
-    0.94
+    0.89
    ],
    [
     "SJS",
-    4.22
+    3.33
    ],
    [
     "IDC",
-    2.09
+    1.97
    ],
    [
     "DXG",
-    0.91
+    0.89
    ]
   ],
-  "tv": 1.86,
-  "moi_cp": 10585,
+  "tv": 1.79,
+  "moi_cp": 10651,
   "max": 5,
-  "y": "Nhóm ROE thấp DXG (1,4%), KBC (6,9%), KDH (9,5%) chỉ 0,91–0,94 lần, NVL 0,71; VRE ROE 15% được 1,06. CEO ROE 3,1% đang được trả cao hơn cả nhóm ROE thấp. BCM, VGC, IDC (khu công nghiệp) và VHM, SJS có ROE cao hoặc quỹ đất lớn.",
-  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất, giá 20/10/2026; CEO: vốn chủ 30/6/2026 trên 595,8 triệu cp"
+  "y": "Nhóm ROE thấp DXG (0,8%), KBC (6,9%), KDH (9,1%) chỉ 0,89–0,94 lần, NVL 0,69; VRE ROE 15% được 1,08. CEO ROE 3,0% đang được trả cao hơn cả nhóm ROE thấp. BCM, VGC, IDC (khu công nghiệp) và VHM, SJS có ROE cao hoặc quỹ đất lớn.",
+  "ng": "Bảng cùng ngành: vốn hóa VNDirect, vốn chủ mẹ BCTC gần nhất, giá 02/11/2026; CEO: vốn chủ 30/9/2026 trên 595,8 triệu cp"
  },
  "mo_hinh": {
   "tieu": "Dự phóng: kinh doanh hiện hữu + Mê Linh",
@@ -209,8 +209,8 @@
     "ten": "Doanh thu thuần (tỷ)",
     "v": [
      1339,
-     1627,
-     2650
+     1483,
+     2800
     ],
     "tang": 1
    },
@@ -218,15 +218,15 @@
     "ten": "— trong đó Mê Linh (tỷ)",
     "v": [
      0,
-     300,
-     1300
+     150,
+     1450
     ]
    },
    {
     "ten": "Lãi kinh doanh hiện hữu (tỷ)",
     "v": [
      203,
-     219,
+     213,
      202
     ]
    },
@@ -234,7 +234,7 @@
     "ten": "— trên doanh thu hiện hữu (%)",
     "v": [
      15.2,
-     16.5,
+     16.0,
      15.0
     ],
     "d": 1
@@ -243,16 +243,16 @@
     "ten": "Lãi Mê Linh sau bán hàng (tỷ)",
     "v": [
      0,
-     45,
-     195
+     22,
+     218
     ]
    },
    {
     "ten": "Tài chính ròng & khác (tỷ)",
     "v": [
      25,
-     20,
-     -59
+     25,
+     -75
     ]
    },
    {
@@ -262,8 +262,8 @@
     "ten": "LN trước thuế (tỷ)",
     "v": [
      228,
-     284,
-     338
+     260,
+     345
     ],
     "tang": 1
    },
@@ -271,24 +271,24 @@
     "ten": "LNST (tỷ)",
     "v": [
      206,
-     254,
-     284
+     235,
+     289
     ]
    },
    {
     "ten": "Cổ đông thiểu số (tỷ)",
     "v": [
      29,
-     53,
-     19
+     46,
+     17
     ]
    },
    {
     "ten": "LN cổ đông công ty mẹ (tỷ)",
     "v": [
      177,
-     202,
-     265
+     189,
+     272
     ],
     "dam": 1,
     "tang": 1
@@ -297,8 +297,8 @@
     "ten": "EPS (đ, 595,8 triệu cp)",
     "v": [
      297,
-     339,
-     445
+     317,
+     457
     ],
     "eps": 1
    },
@@ -309,8 +309,8 @@
     "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
     "v": [
      6.21,
-     6.4,
-     6.67
+     6.39,
+     6.66
     ],
     "d": 2
    },
@@ -318,8 +318,8 @@
     "ten": "ROE (%)",
     "v": [
      2.9,
-     3.2,
-     4.1
+     3.0,
+     4.2
     ],
     "d": 1
    },
@@ -327,71 +327,71 @@
     "ten": "Nợ vay · tồn kho (nghìn tỷ)",
     "s": [
      "0,44 · 1,47",
-     "1,53 · 3,68 (30/6)",
+     "2,86 · 3,78 (30/9)",
      "—"
     ]
    }
   ],
-  "ghi": "2026E = 6T thực tế (BCTC) + 6T cuối ước. Lãi kinh doanh = lãi gộp − bán hàng − quản lý. Thuế 10% phần hiện hữu (2025: 9,7%), 20% Mê Linh; thiểu số 15% LNST phần hiện hữu (2025: 14%, 6T/2026: 29%). Mê Linh qua công ty con C.E.O Quốc tế, giả định CEO hưởng toàn bộ. Chưa tính KCN Tiên Lãng và đợt chào bán."
+  "ghi": "2026E = 9T thực tế (BCTC Q3) + Q4 ước. Lãi kinh doanh = lãi gộp − bán hàng − quản lý. Thuế 10% phần hiện hữu (2025: 9,7%), 20% Mê Linh; thiểu số 15% LNST phần hiện hữu (2025: 14%, 9T/2026: 22%). Mê Linh qua công ty con C.E.O Quốc tế, giả định CEO hưởng toàn bộ. Chưa tính KCN Tiên Lãng và đợt chào bán."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2026E → 2027E (kịch bản cơ sở)",
   "dau": [
    "2026E",
-   202
+   189
   ],
   "cuoi": [
    "2027E",
-   265
+   272
   ],
   "buoc": [
    [
     "Mê Linh bàn giao",
-    120
+    157
    ],
    [
     "Kinh doanh hiện hữu",
-    -13
+    -8
    ],
    [
     "Tài chính ròng (lãi vay)",
-    -61
+    -76
    ],
    [
     "Thuế, thiểu số",
-    17
+    10
    ]
   ],
-  "y": "Mê Linh (1.300 tỷ doanh thu, biên gộp 19%) tạo gần hết mức tăng; lãi vay thôi vốn hóa ăn bớt ~61 tỷ. Dòng cuối: 6T/2026 thực tế chỉ 66% LNTT về cổ đông (thiểu số 29%), mô hình 2027 dùng 76%.",
+  "y": "Mê Linh (1.450 tỷ doanh thu, biên gộp 19%) tạo gần hết mức tăng; lãi vay thôi vốn hóa ăn bớt ~76 tỷ. Dòng cuối: 9T/2026 thực tế 71% LNTT về cổ đông (thiểu số 22% LNST), mô hình 2027 dùng 76%.",
   "ng": "mô hình"
  },
  "gia_dinh": [
   {
-   "ten": "Doanh thu hiện hữu 6T cuối 2026 · 2027 (tỷ)",
+   "ten": "Doanh thu hiện hữu Q4/2026 · 2027 (tỷ)",
    "v": [
-    "560 · 1.200",
-    "600 · 1.350",
-    "640 · 1.500"
+    "300 · 1.200",
+    "340 · 1.350",
+    "380 · 1.500"
    ],
-   "ly_do": "2023–2025: 1.393 / 1.308 / 1.339; 6T cuối 2025: 591; 6T/2026: 727 (−3%). Khách sạn 2025 +40% (~710.000 lượt khách); BĐS 2024: 576 tỷ"
+   "ly_do": "2023–2025: 1.393 / 1.308 / 1.339; Q4/2023–2025: 451 / 382 / 349; 9T/2026: 993 (ngang cùng kỳ). Khách sạn 2025 +40%; BĐS 2024: 576 tỷ"
   },
   {
-   "ten": "Lãi kinh doanh / doanh thu hiện hữu: 6T cuối · 2027",
+   "ten": "Lãi kinh doanh / doanh thu hiện hữu: Q4 · 2027",
    "v": [
-    "11% · 12%",
-    "14% · 15%",
-    "16% · 17%"
+    "8% · 12%",
+    "11% · 15%",
+    "14% · 17%"
    ],
-   "ly_do": "Lãi gộp − bán hàng − quản lý: 2023–2025 15,0% / 14,1% / 15,2%; 6T cuối 2025 13,1%; 6T/2026 18,5% (Q2 16,0%)"
+   "ly_do": "Lãi gộp − bán hàng − quản lý: 2023–2025 15,0% / 14,1% / 15,2%; Q4/2023–2025 10,9% / 13,9% / 7,4% (quản lý dồn vào Q4); 9T/2026 17,7% (Q3 15,5%)"
   },
   {
    "ten": "Doanh thu Mê Linh: Q4/2026 · 2027 (tỷ)",
    "v": [
     "0 · 500",
-    "300 · 1.300",
-    "800 · 1.800"
+    "150 · 1.450",
+    "500 · 2.100"
    ],
-   "ly_do": "Giao 17,1 ha (6,1 ha đất ở thương mại) 11/2025, khởi công 17/04/2026, chưa công bố giá bán. Kế hoạch 2026 cần ~1,7 nghìn tỷ doanh thu mới; tồn kho 30/6: 3,68 nghìn tỷ (giá vốn)"
+   "ly_do": "Khởi công 17/04/2026, chưa công bố giá bán. Q3 chưa có doanh thu; người mua trả trước chỉ +31 tỷ → hạ Q4 (cơ sở 300 → 150), lùi phần còn lại sang 2027; tồn kho 30/9: 3,78 nghìn tỷ"
   },
   {
    "ten": "Biên gộp Mê Linh (bán hàng 4% doanh thu)",
@@ -403,13 +403,13 @@
    "ly_do": "Kế hoạch 2026 ngầm định LNST 5,7% trên doanh thu tăng thêm (≈ biên gộp 11–15%); đất nộp tiền theo giá hiện hành; 2022 (doanh thu BĐS > 2,1 nghìn tỷ) biên gộp cả công ty 35,8%"
   },
   {
-   "ten": "Tài chính ròng & khác: 6T cuối · 2027 (tỷ)",
+   "ten": "Tài chính ròng & khác: Q4 · 2027 (tỷ)",
    "v": [
-    "−20 · −110",
-    "−5 · −60",
-    "+10 · −20"
+    "−15 · −140",
+    "−5 · −75",
+    "+3 · −30"
    ],
-   "ly_do": "2025 +25 (thu nhập tài chính 76, lãi vay 27, khác -24); 6T/2026 +25. Nợ vay 30/6 1,53 nghìn tỷ, tiền + đầu tư ngắn hạn còn 0,77; lãi vay thôi vốn hóa khi bàn giao"
+   "ly_do": "9T/2026 +29, Q3 +4 (thu nhập tài chính 6,7, cùng kỳ 15,5). Nợ vay 30/9 2,86 nghìn tỷ (30/6: 1,53), tiền + đầu tư ngắn hạn 0,64 → 2027 hạ thêm; lãi vay thôi vốn hóa khi bàn giao"
   },
   {
    "ten": "LN cổ đông / LNTT: hiện hữu · Mê Linh",
@@ -418,7 +418,7 @@
     "76% · 80%",
     "76% · 80%"
    ],
-   "ly_do": "Hiện hữu: thuế 10%, thiểu số 15%; 2023–2025 LN cổ đông = 78–80% LNTT, 6T/2026 66%. Mê Linh: thuế 20%, giả định CEO hưởng toàn bộ (công ty con C.E.O Quốc tế)"
+   "ly_do": "Hiện hữu: thuế 10%, thiểu số 15%; 2023–2025 LN cổ đông = 78–80% LNTT, 9T/2026 71%. Mê Linh: thuế 20%, giả định CEO hưởng toàn bộ (công ty con C.E.O Quốc tế)"
   },
   {
    "ten": "P/B trên vốn chủ 30/6/2027E",
@@ -427,30 +427,30 @@
     "0,90",
     "1,15"
    ],
-   "ly_do": "CEO từ 2015: thấp 10% 0,84, thấp 25% 0,95, trung vị 1,12; 2015–2019 (ROE 11–22%) trung vị 1,00; DXG, KDH, KBC 0,91–0,94, NVL 0,71 (giá 20/10)"
+   "ly_do": "CEO từ 2015: thấp 10% 0,84, thấp 25% 0,95, trung vị 1,12; 2015–2019 (ROE 11–22%) trung vị 1,00; DXG, KDH 0,89, KBC 0,94, NVL 0,69 (giá 02/11)"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 137,
-   "ln27": 58,
+   "ln26": 153,
+   "ln27": 35,
    "gia": 8.0,
-   "mo_ta": "Mê Linh chưa bàn giao 2026, chỉ 500 tỷ doanh thu 2027 ở biên gộp 12%; lãi vay vào KQKD; LNST 2026 62% kế hoạch, ROE 2027E ~0,9%; P/B 0,75 (giữa NVL 0,71 và thấp 10% lịch sử)"
+   "mo_ta": "Mê Linh chưa bàn giao 2026, chỉ 500 tỷ doanh thu 2027 ở biên gộp 12%; lãi vay vào KQKD; LNST 2026 65% kế hoạch, ROE 2027E ~0,6%; P/B 0,75 (giữa NVL 0,71 và thấp 10% lịch sử)"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 202,
-   "ln27": 265,
-   "gia": 9.9,
-   "mo_ta": "Mê Linh 300 tỷ Q4/2026, 1.300 tỷ 2027 (biên gộp 19%); hiện hữu đi ngang; LNST 2026 85% kế hoạch, ROE 2027E ~4,1%; P/B 0,90"
+   "ln26": 189,
+   "ln27": 272,
+   "gia": 9.8,
+   "mo_ta": "Mê Linh 150 tỷ Q4/2026, 1.450 tỷ 2027 (biên gộp 19%); hiện hữu đi ngang; LNST 2026 78% kế hoạch, ROE 2027E ~4,2%; P/B 0,90"
   },
   {
    "ten": "Tốt",
-   "ln26": 332,
-   "ln27": 497,
+   "ln26": 277,
+   "ln27": 542,
    "gia": 13.0,
-   "mo_ta": "Mê Linh 800 tỷ Q4/2026, 1.800 tỷ 2027 (biên 26%), khách sạn tăng tiếp; LNST 2026 130% kế hoạch, ROE 2027E ~7,3%; P/B 1,15 ≈ trung vị lịch sử"
+   "mo_ta": "Mê Linh 500 tỷ Q4/2026, 2.100 tỷ 2027 (biên 26%), khách sạn tăng tiếp; LNST 2026 109% kế hoạch, ROE 2027E ~8,0%; P/B 1,15 ≈ trung vị lịch sử"
   }
  ],
  "dinh_gia": {
@@ -464,9 +464,9 @@
     "mau": "c1",
     "sh": 1,
     "x": [
-     6365,
-     6522,
-     6757
+     6369,
+     6511,
+     6721
     ],
     "boi": [
      0.75,
@@ -477,20 +477,20 @@
     "boi_ten": "P/B",
     "boi_d": 2,
     "gt": [
-     4774,
-     5870,
-     7771
+     4777,
+     5860,
+     7729
     ]
    }
   ],
   "von": [
-   4774,
-   5870,
-   7771
+   4777,
+   5860,
+   7729
   ],
   "gia": [
    8.0,
-   9.9,
+   9.8,
    13.0
   ]
  },
@@ -501,7 +501,7 @@
    1.1
   ],
   [
-   "LN cổ đông 6T cuối 2026 ±50 tỷ",
+   "LN cổ đông Q4/2026 ±50 tỷ",
    50,
    0.1
   ],
@@ -512,8 +512,8 @@
   ],
   [
    "Biên gộp Mê Linh ±5 điểm %",
-   35,
-   0.1
+   32,
+   0.0
   ]
  ],
  "pe_ls": {
@@ -660,7 +660,8 @@
    "2026-07",
    "2026-08",
    "2026-09",
-   "2026-10"
+   "2026-10",
+   "2026-11"
   ],
   "v": [
    1.15,
@@ -804,6 +805,7 @@
    1.08,
    1.23,
    1.02,
+   1.05,
    1.04
   ],
   "p10": 0.84,
@@ -814,7 +816,7 @@
    0.51
   ],
   "nay": [
-   "2026-10",
+   "2026-11",
    1.04
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
@@ -835,43 +837,43 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    14,
-    64,
-    180
+    7,
+    43,
+    131
    ],
    "ck": 39
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    137,
-    202,
-    332
+    153,
+    189,
+    277
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "20–30/10/2026",
+   "khi": "Q3/2026 (đã ra)",
    "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "Cùng kỳ LN cổ đông 47 tỷ; Q3 luôn là quý doanh thu thấp nhất (242–254 tỷ, 2023–2025). Xem tồn kho, nợ vay, người mua trả trước 30/9 — dấu hiệu Mê Linh đã mở bán.",
+   "tieu": "KQKD Q3/2026: lãi trên cơ sở, chất lượng thấp hơn",
+   "ct": "LN cổ đông 41 tỷ (−13%; mô hình cũ 33): doanh thu +10% nhưng biên gộp 25,1% (cùng kỳ 35,0%), lãi kinh doanh 41 tỷ (52); thiểu số −0,6 tỷ. Chưa có doanh thu Mê Linh.",
    "tac": [
-    "≥ 33 tỷ",
-    "LN cổ đông Q3 khớp cơ sở; dưới 18 tỷ nghiêng về xấu"
+    "146 tỷ",
+    "LN cổ đông 9T (+6%; 63% kế hoạch LNST theo LNST)"
    ],
-   "theo_doi": "LN cổ đông, người mua trả trước"
+   "theo_doi": "biên gộp, lãi kinh doanh"
   },
   {
    "khi": "Q4/2026",
    "loai": "len",
    "tieu": "Mê Linh mở bán, bàn giao đợt đầu",
-   "ct": "Kế hoạch 3.000 tỷ doanh thu cần ~1,7 nghìn tỷ từ dự án mới trong nửa cuối; Mê Linh khởi công 17/04/2026, hồ sơ giao đất đợt 2 hạn Q2/2026; giá bán chưa công bố.",
+   "ct": "Kế hoạch 3.000 tỷ doanh thu cần 2,01 nghìn tỷ trong Q4 (×5,7 Q4/2025): gần như chắc trượt. 30/9 người mua trả trước chỉ +31 tỷ; giá bán chưa công bố. Cơ sở: 150 tỷ Q4.",
    "tac": [
     "+60 tỷ LN",
     "mỗi 500 tỷ doanh thu Mê Linh ở biên gộp 19%"
    ],
-   "theo_doi": "ngày mở bán, giá bán"
+   "theo_doi": "ngày mở bán, người mua trả trước"
   },
   {
    "khi": "Q4/2026–2027",
@@ -879,7 +881,7 @@
    "tieu": "Chào bán 96,5 triệu cp + ESOP",
    "ct": "Giá 10.000 đ (100:17) + ~17 triệu cp ESOP, thu ~1,13 nghìn tỷ cho Mê Linh (C.E.O Quốc tế), KCN, Sonasea Residences, Sunny Garden City; số cp +19%.",
    "tac": [
-    "−0,2 nghìn đ/cp",
+    "−0,1 nghìn đ/cp",
     "giá trị cơ sở sau chào bán (vốn chủ +1,13 nghìn tỷ, 709 triệu cp)"
    ],
    "theo_doi": "ngày GDKHQ, tỷ lệ đặt mua"
@@ -908,10 +910,10 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Nợ vay tăng, dòng tiền âm",
-   "ct": "Nợ vay 1,53 nghìn tỷ (30/6, ×3,5 đầu năm), tiền + đầu tư ngắn hạn 0,77; KCN còn cần ~2,4 nghìn tỷ ngoài vốn chủ. Lãi vay vào KQKD khi dự án bàn giao.",
+   "ct": "Nợ vay 2,86 nghìn tỷ (30/9, ×6,6 đầu năm), tiền + đầu tư ngắn hạn 0,64; KCN còn cần ~2,4 nghìn tỷ ngoài vốn chủ. Lãi vay vào KQKD khi dự án bàn giao.",
    "tac": [
-    "−12 tỷ LN/năm",
-    "mỗi 1 điểm % lãi suất trên 1,53 nghìn tỷ nợ khi thôi vốn hóa"
+    "−22 tỷ LN/năm",
+    "mỗi 1 điểm % lãi suất trên 2,86 nghìn tỷ nợ khi thôi vốn hóa"
    ],
    "theo_doi": "nợ ròng, dòng tiền kinh doanh"
   },
@@ -922,8 +924,8 @@
    "tieu": "Biên Mê Linh thấp hơn giả định",
    "ct": "Kế hoạch 2026 ngầm định LNST 5,7% trên doanh thu mới; đất ở nộp tiền theo giá hiện hành, không còn lợi thế quỹ đất từ 2008 như Sunny Garden City.",
    "tac": [
-    "±52 tỷ LN 2027",
-    "mỗi 5 điểm % biên gộp trên 1.300 tỷ doanh thu Mê Linh (cơ sở)"
+    "±58 tỷ LN 2027",
+    "mỗi 5 điểm % biên gộp trên 1.450 tỷ doanh thu Mê Linh (cơ sở)"
    ],
    "theo_doi": "biên gộp khi bàn giao"
   },
@@ -932,9 +934,9 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Thiểu số hưởng phần lớn hơn",
-   "ct": "6T/2026 cổ đông thiểu số nhận 42 tỷ = 29% LNST (2025: 14%; 2024: -24 tỷ). Lãi tăng ở công ty con có thiểu số không về cổ đông CEO.",
+   "ct": "9T/2026 cổ đông thiểu số nhận 41 tỷ = 22% LNST (Q3 −0,6 tỷ; 2025: 14%; 2024: -24 tỷ). Lãi tăng ở công ty con có thiểu số không về cổ đông CEO.",
    "tac": [
-    "±13 tỷ LN 2027",
+    "±11 tỷ LN 2027",
     "mỗi 10 điểm % tỷ lệ thiểu số trên LNST phần hiện hữu"
    ],
    "theo_doi": "LNST thiểu số mỗi quý"
@@ -967,46 +969,46 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Doanh thu thuần",
      "v": [
-      245,
       382,
       326,
       421,
       242,
       349,
       432,
-      295
+      295,
+      266
      ],
      "mau": "c1"
     },
     {
      "ten": "Lãi gộp",
      "v": [
-      90,
       70,
       87,
       157,
       85,
       88,
       145,
-      98
+      98,
+      67
      ],
      "mau": "c4"
     }
    ],
-   "y": "Không còn đợt bàn giao lớn: doanh thu quý 242–432 tỷ, Q3 luôn thấp nhất. 6T/2026 727 tỷ (−3%), biên gộp 33,5%.",
+   "y": "Không còn đợt bàn giao lớn: doanh thu quý 242–432 tỷ, Q3 luôn thấp nhất. 9T/2026 993 tỷ (ngang cùng kỳ), biên gộp 31,2%; Q3 25,1% (cùng kỳ 35,0%).",
    "ng": "BCTC (VNDirect)"
   },
   {
@@ -1015,60 +1017,60 @@
    "dv": "nghìn tỷ",
    "so_le": 2,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Tồn kho",
      "v": [
-      1.27,
       1.38,
       1.42,
       1.37,
       1.4,
       1.47,
       1.47,
-      3.68
+      3.68,
+      3.78
      ],
      "mau": "c1"
     },
     {
      "ten": "Nợ vay",
      "v": [
-      0.54,
       0.53,
       0.5,
       0.48,
       0.43,
       0.44,
       0.68,
-      1.53
+      1.53,
+      2.86
      ],
      "mau": "c2"
     },
     {
      "ten": "Tiền + đầu tư ngắn hạn",
      "v": [
-      1.86,
       2.0,
       1.85,
       1.74,
       1.51,
       1.55,
       1.22,
-      0.77
+      0.77,
+      0.64
      ],
      "mau": "c4"
     }
    ],
-   "y": "Q2/2026 tồn kho +2,2 nghìn tỷ; nợ vay 0,44 → 1,53, tiền + đầu tư ngắn hạn 1,55 → 0,77 nghìn tỷ trong 6 tháng.",
+   "y": "Q2/2026 tồn kho +2,2 nghìn tỷ; nợ vay 0,44 → 2,86, tiền + đầu tư ngắn hạn 1,55 → 0,64 nghìn tỷ trong 9 tháng; Q3 vay dài hạn +1,25.",
    "ng": "BCTC (VNDirect)"
   },
   {
@@ -1077,46 +1079,46 @@
    "dv": "tỷ",
    "so_le": 0,
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Cổ đông công ty mẹ",
      "v": [
-      44,
       66,
       39,
       52,
       47,
       39,
       63,
-      42
+      42,
+      41
      ],
      "mau": "c1"
     },
     {
      "ten": "Cổ đông thiểu số",
      "v": [
-      5,
       -2,
       17,
       -12,
       5,
       19,
       31,
-      11
+      11,
+      -1
      ],
      "mau": "c4"
     }
    ],
-   "y": "Thiểu số âm năm 2024 (-24 tỷ), 6T/2026 nhận 42 tỷ = 29% LNST. Q2/2026 LNST 53 tỷ > LNTT 47 tỷ nhờ hoàn nhập thuế hoãn lại.",
+   "y": "Thiểu số âm năm 2024 (-24 tỷ), 6T/2026 nhận 42 tỷ = 29% LNST, Q3 −0,6 tỷ. Q2/2026 LNST 53 tỷ > LNTT 47 tỷ nhờ hoàn nhập thuế hoãn lại.",
    "ng": "BCTC (VNDirect) · Mekong ASEAN 8/2026"
   },
   {
@@ -1166,23 +1168,23 @@
    {
     "ten": "Doanh thu thuần",
     "kh": 3000,
-    "th": 727,
-    "ky": "6T",
-    "tg": 50,
+    "th": 993,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 24/04/2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 24/04/2026 · BCTC Q3"
    },
    {
     "ten": "LNST",
     "kh": 300,
-    "th": 147,
-    "ky": "6T",
-    "tg": 50,
+    "th": 188,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 24/04/2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 24/04/2026 · BCTC Q3"
    }
   ],
-  "y": "6 tháng đạt 24% doanh thu, 49% LNST. Nửa cuối cần 2,27 nghìn tỷ doanh thu (×3,8 cùng kỳ) — chỉ đạt nếu Mê Linh bàn giao Q4. 2025 đạt 113% kế hoạch LNST. Cơ sở: LNST 254 tỷ (85%), doanh thu 1.627 tỷ (54%).",
+  "y": "9 tháng đạt 33% doanh thu, 63% LNST. Q4 cần 2,01 nghìn tỷ doanh thu (×5,7 Q4/2025), 112 tỷ LNST — Q3 chưa có doanh thu Mê Linh. 2025 đạt 113% kế hoạch LNST. Cơ sở: LNST 235 tỷ (78%), doanh thu 1.483 tỷ (49%).",
   "ng": ""
  },
  "mang": [
@@ -1253,8 +1255,12 @@
      "ng": "VnExpress, Fili 11/2025"
     },
     {
-     "t": "Q2/2026 tồn kho +2,2 nghìn tỷ, vay dài hạn +0,9 nghìn tỷ — cùng quý khởi công; tồn kho chủ yếu là chi phí dở dang dự án.",
-     "ng": "BCTC Q2 (VNDirect) · Mekong ASEAN 8/2026"
+     "t": "Q2/2026 tồn kho +2,2 nghìn tỷ, vay dài hạn +0,9 nghìn tỷ — cùng quý khởi công; Q3 vay dài hạn thêm +1,25 nghìn tỷ nhưng tồn kho chỉ +94 tỷ, người mua trả trước +31 tỷ: chưa thấy tiền bán hàng.",
+     "ng": "BCTC Q2, Q3/2026 (VNDirect) · Mekong ASEAN 8/2026"
+    },
+    {
+     "t": "5/2026 Trường Phát Hà Nội và BHS Property ký hợp tác phát triển kinh doanh dự án; đến 03/11 chưa có công bố mở bán, giá bán chính thức.",
+     "ng": "Diễn đàn Doanh nghiệp 05/2026"
     }
    ]
   },
@@ -1309,14 +1315,14 @@
      "294 biệt thự, 72 liền kề"
     ],
     [
-     "Nợ vay 30/6/2026",
-     "1,53 nghìn tỷ",
-     "tiền + ĐTNH 0,77"
+     "Nợ vay 30/9/2026",
+     "2,86 nghìn tỷ",
+     "tiền + ĐTNH 0,64"
     ],
     [
      "Vốn chủ cổ đông",
-     "6,31 nghìn tỷ",
-     "BVPS 10.585 đ"
+     "6,35 nghìn tỷ",
+     "BVPS 10.651 đ"
     ]
    ],
    "y": [
@@ -1361,9 +1367,9 @@
      "ng": "Shinhan 07/09/2026 (VHM)"
     },
     {
-     "t": "Nhóm ROE thấp được trả dưới 1 lần sổ sách: DXG 0,91, KDH 0,94, KBC 0,94, NVL 0,71; VRE (ROE 15%) 1,06.",
+     "t": "Nhóm ROE thấp được trả dưới 1 lần sổ sách: DXG 0,89, KDH 0,89, KBC 0,94, NVL 0,69; VRE (ROE 15%) 1,08.",
      "h": -1,
-     "ng": "bảng cùng ngành, giá 20/10/2026"
+     "ng": "bảng cùng ngành, giá 02/11/2026"
     },
     {
      "t": "Giá thuê đất KCN Hải Phòng ~180 USD/m² (Tràng Duệ 3) — mức tham chiếu cho KCN Tiên Lãng.",
@@ -1465,6 +1471,11 @@
    "ten": "Điện tử Ứng dụng — khởi công CEOHomes Hana Garden",
    "ngay": "04/2026",
    "link": "https://dientuungdung.vn/ceo-group-khoi-cong-khu-do-thi-ceohomes-hana-garden-tai-me-linh-ha-noi-14633.html"
+  },
+  {
+   "ten": "Diễn đàn Doanh nghiệp — Trường Phát Hà Nội, BHS Property hợp tác kinh doanh CEOHomes Hana Garden",
+   "ngay": "05/2026",
+   "link": "https://diendandoanhnghiep.vn/truong-phat-ha-noi-va-bhs-property-ky-ket-hop-tac-phat-trien-kinh-doanh-du-an-ceohomes-hana-garden-10178597.html"
   },
   {
    "ten": "CafeF — khởi công KCN đầu tiên trong Khu thương mại tự do Hải Phòng",
