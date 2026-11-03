@@ -3,9 +3,9 @@
  "ma": "CTD",
  "ten": "CTCP Xây dựng Coteccons",
  "nganh": "Xây dựng (tổng thầu)",
- "ky": "BCTC Q2/2026 (hết năm tài chính 2026) · KQKD sơ bộ quý 1 FY2027 (7–9/2026) · ACBS 23/10, MAS 21/10/2026",
- "cap_nhat": "2026-10-24",
- "lan_sau": "sau BCTC quý 1 FY2027 (7–9/2026)",
+ "ky": "BCTC Q3/2026 (quý 1 FY2027) · giá 02/11/2026",
+ "cap_nhat": "2026-11-03",
+ "lan_sau": "sau BCTC Q4/2026 (quý 2 FY2027) · ngày GDKHQ cổ tức 2.500 đ",
  "cp_trieu": 111.82,
  "cp_ng": "114,03 triệu cp niêm yết trừ ~2,2 triệu cổ phiếu quỹ = 111,82 triệu lưu hành (FPTS 25/08, MAS); cổ tức 2.500 đ/cp ≈ 279,6 tỷ cũng ứng với 111,8 triệu cp. Đã gồm hai đợt thưởng 20:1 (GDKHQ 24/12/2025 và 17/04/2026).",
  "co_tuc": [
@@ -18,7 +18,7 @@
  "tieu_de": {
   "t": "Doanh thu vượt đỉnh cũ, lợi nhuận mới bằng nửa: cược vào biên gộp, không phải backlog"
  },
- "dong_mo": "Quý 1 FY2027 (7–9/2026, sơ bộ): doanh thu 11.270 tỷ (+51%), LN 306 tỷ — gấp 2,1 lần LN lõi cùng kỳ; biên gộp ~5%. Giữ 4,6% cho 3 quý còn lại thì FY2027E 1.014 tỷ, sát kế hoạch 1.050. Mỗi ±0,5 điểm % biên gộp = ±12,8 nghìn đ/cp. P/E 9 × LN lõi 2027 lịch hóa + 50% nợ Ngôi Sao Việt: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "BCTC quý 1 FY2027 (7–9/2026): doanh thu 11.269 tỷ (+51%), LN 305 tỷ — gấp 2,1 lần LN lõi cùng kỳ; biên gộp 5,0%, khớp số sơ bộ. Giữ 4,6% cho 3 quý còn lại thì FY2027E 1.001 tỷ, sát kế hoạch 1.050. Mỗi ±0,5 điểm % biên gộp = ±12,8 nghìn đ/cp. P/E 9 × LN lõi 2027 lịch hóa + 50% nợ Ngôi Sao Việt: {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
    "so": "4,2%",
@@ -29,10 +29,10 @@
   },
   {
    "so": "×2,1",
-   "nhan": "LN quý 1 FY2027 (sơ bộ) so với LN lõi cùng kỳ",
-   "tieu": "Quý 1 FY2027: biên gộp ~5%, lợi nhuận bắt đầu đuổi theo doanh thu",
-   "t": "Số sơ bộ công bố tại ĐHĐCĐ 20/10: doanh thu 11.270 tỷ (+51%), LN 306 tỷ (+4%; cùng kỳ có ~147 tỷ lãi Emerald — ACBS tính +80% nếu bỏ ra). Ban lãnh đạo nói biên gộp ~5%, từ 3–4% trước đây. Sau 25% thời gian đã đạt 27% doanh thu, 29% LN kế hoạch; quý 1 thường chỉ ~20% doanh thu năm. Cơ sở giữ 4,6% cho 3 quý còn lại: FY2027E 1.014 tỷ (+29%); CTCK 827–904 tỷ chưa cập nhật.",
-   "ng": "MAS 21/10 · ACBS 23/10 · mô hình"
+   "nhan": "LN quý 1 FY2027 (BCTC) so với LN lõi cùng kỳ",
+   "tieu": "BCTC quý 1 FY2027 xác nhận biên gộp 5%: lãi gộp +75%, LN lõi gấp đôi",
+   "t": "Doanh thu 11.269 tỷ (+51%), lãi gộp 562 tỷ (+75%, biên 4,98% từ 4,3% cùng kỳ), LN 305 tỷ (+4%; cùng kỳ có ~147 tỷ lãi Emerald). Chi phí bán hàng, quản lý 1,82% doanh thu — chưa giảm như ước; lãi vay 158 tỷ được lãi tiền gửi bù. Sau 25% thời gian đạt 27% doanh thu, 29% LN kế hoạch. Cơ sở giữ 4,6% cho 3 quý còn lại: FY2027E 1.001 tỷ (+27%).",
+   "ng": "BCTC Q3/2026 (VNDirect) · MAS 21/10 · mô hình"
   },
   {
    "so": "70.000",
@@ -45,7 +45,7 @@
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "P/E 9 lần LN lõi 2027: giá trị cơ sở {up_so}",
-   "t": "LN lõi 2027 lịch hóa (½ FY2027E + ½ FY2028E) 1.047 tỷ × P/E 9 + 50% khoản 526 tỷ Ngôi Sao Việt (sau thuế; tòa công nhận thỏa thuận 7/2026, chưa có lịch trả) = {gt}, ≈ P/B 0,93 vốn chủ 6/2027E. P/E 9 ≈ trung vị 8 nhà thầu (8,5), dưới mức CTD đang được trả (9,5 lần LN 4 quý). Giá 23/10: P/B 0,78 so với trung vị nhóm 0,86. Xấu 50,8: biên 3,9% → 3,7%, dự phòng 100–120 tỷ/năm; tốt 112,9: biên 5%, ROE ~14%.",
+   "t": "LN lõi 2027 lịch hóa (½ FY2027E + ½ FY2028E) 1.040 tỷ × P/E 9 + 50% khoản 526 tỷ Ngôi Sao Việt (sau thuế; tòa công nhận thỏa thuận 7/2026, chưa có lịch trả) = {gt}, ≈ P/B 0,92 vốn chủ 6/2027E. P/E 9 ≈ trung vị 8 nhà thầu (9,1) và mức CTD đang được trả (8,9 lần LN 4 quý). Giá 02/11: P/B 0,72 so với trung vị nhóm 0,90. Xấu 50,2: biên 3,9% → 3,7%, dự phòng 100–120 tỷ/năm; tốt 112,3: biên 5%, ROE ~14%.",
    "ng": "BCTC (VNDirect) · nhadautu.vn · ACBS 23/10 · mô hình"
   }
  ],
@@ -57,19 +57,19 @@
   ],
   "ln": [
    788,
-   1014,
+   1001,
    1079
   ],
   "ln_truoc": 456,
   "eps": [
    7047,
-   9068,
+   8952,
    9649
   ],
   "bv": [
    86315,
-   92994,
-   100145
+   92875,
+   100026
   ],
   "co_tuc_nam": 2500,
   "them": [
@@ -77,7 +77,7 @@
     "ten": "LN lõi, bỏ khoản một lần (tỷ)",
     "v": [
      642,
-     1014,
+     1001,
      1079
     ]
    },
@@ -85,14 +85,14 @@
     "ten": "ROE",
     "v": [
      8.5,
-     10.1,
+     10.0,
      10.0
     ],
     "d": 1,
     "pt": 1
    }
   ],
-  "ng": "Năm tài chính 1/7–30/6 (FY2027 = 7/2026–6/2027). FY2027E gồm quý 1 sơ bộ (LN 306 tỷ). EPS, BVPS theo 111,82 triệu cp. FY2026 có ~147 tỷ lãi Emerald 68 sau thuế. Cổ tức tiền 2.500 đ/cp cho FY2026 (ĐHĐCĐ 20/10/2026), chưa có ngày GDKHQ; BVPS dự phóng đã trừ."
+  "ng": "Năm tài chính 1/7–30/6 (FY2027 = 7/2026–6/2027). FY2027E gồm quý 1 BCTC (LN 305 tỷ). EPS, BVPS theo 111,82 triệu cp. FY2026 có ~147 tỷ lãi Emerald 68 sau thuế. Cổ tức tiền 2.500 đ/cp cho FY2026 (ĐHĐCĐ 20/10/2026), chưa có ngày GDKHQ; BVPS dự phóng đã trừ."
  },
  "ln_mang": {
   "tieu": "LN cổ đông theo nguồn",
@@ -107,7 +107,7 @@
     "mau": "c1",
     "v": [
      594,
-     1028,
+     988,
      1095
     ]
    },
@@ -116,7 +116,7 @@
     "mau": "c2",
     "v": [
      44,
-     -28,
+     -1,
      -32
     ]
    },
@@ -131,13 +131,13 @@
    }
   ],
   "nhan": "Xây lắp (lãi gộp − chi phí, dự phòng)",
-  "ng": "Sau thuế (chia theo tỷ lệ). FY2027E: quý 1 sơ bộ + mô hình; không gồm hoàn nhập Ngôi Sao Việt (tính riêng trong định giá)."
+  "ng": "Sau thuế (chia theo tỷ lệ). FY2027E: quý 1 BCTC + mô hình; không gồm hoàn nhập Ngôi Sao Việt (tính riêng trong định giá)."
  },
  "so_sanh": {
   "tieu": "P/B so với nhà thầu xây dựng, hạ tầng niêm yết",
-  "phu": "giá hôm nay; CTD: vốn chủ cổ đông 30/6/2026, 111,82 triệu cp",
+  "phu": "giá hôm nay; CTD: vốn chủ cổ đông 30/9/2026, 111,82 triệu cp",
   "chi_so": "P/B",
-  "chi_so_kv": "P/B (giá 23/10)",
+  "chi_so_kv": "P/B (giá 02/11)",
   "nhom": "8 nhà thầu xây dựng, hạ tầng niêm yết",
   "kv": [
    [
@@ -146,38 +146,38 @@
    ],
    [
     "LCG",
-    0.5
+    0.51
    ],
    [
     "FCN",
     0.62
    ],
    [
-    "CII",
-    0.85
-   ],
-   [
     "VCG",
-    0.87
+    0.88
    ],
    [
-    "DPG",
-    1.09
+    "CII",
+    0.92
    ],
    [
     "PC1",
-    1.12
+    1.1
+   ],
+   [
+    "DPG",
+    1.16
    ],
    [
     "HUT",
     1.17
    ]
   ],
-  "tv": 0.86,
-  "moi_cp": 86315,
+  "tv": 0.9,
+  "moi_cp": 89060,
   "max": 2,
-  "y": "Nhóm 0,45–1,17 lần, trung vị 0,86 với ROE 4 quý trung vị 5,7%; trên 1 lần là DPG, PC1 (ROE 13–17%) và HUT. CTD ROE 8,5%, tiền ròng 1,9 nghìn tỷ nhưng P/B dưới trung vị — thị trường chiết khấu rủi ro thu tiền từ chủ đầu tư BĐS.",
-  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ BCTC Q2/2026 (bảng giá VNDirect 23/10/2026, BCTC VNDirect); ROE = LNST cổ đông 4 quý ÷ vốn chủ"
+  "y": "Nhóm 0,45–1,17 lần, trung vị 0,90 với ROE 4 quý trung vị 5,9%; trên 1 lần là DPG, PC1 (ROE 13–17%) và HUT. CTD ROE 8,0%, tiền ròng 30/9 1,6 nghìn tỷ nhưng P/B dưới trung vị — thị trường chiết khấu rủi ro thu tiền từ chủ đầu tư BĐS.",
+  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ quý BCTC gần nhất (bảng giá VNDirect 02/11/2026, BCTC VNDirect); ROE = LNST cổ đông 4 quý ÷ vốn chủ"
  },
  "mo_hinh": {
   "tieu": "Mô hình: doanh thu × biên gộp − chi phí + tài chính ròng",
@@ -194,7 +194,7 @@
     "ten": "Doanh thu thuần",
     "v": [
      34340,
-     43570,
+     43569,
      48000
     ],
     "tang": 1
@@ -212,7 +212,7 @@
     "ten": "Lãi gộp",
     "v": [
      1446,
-     2049,
+     2047,
      2208
     ],
     "tang": 1
@@ -221,7 +221,7 @@
     "ten": "Chi phí bán hàng, quản lý lõi (% doanh thu)",
     "v": [
      1.82,
-     1.65,
+     1.77,
      1.65
     ],
     "d": 2
@@ -238,7 +238,7 @@
     "ten": "Lãi HĐKD",
     "v": [
      768,
-     1301,
+     1247,
      1386
     ],
     "tang": 1
@@ -250,7 +250,7 @@
     "ten": "Tài chính ròng (lãi tiền gửi − chi phí tài chính)",
     "v": [
      57,
-     -35,
+     -1,
      -40
     ]
    },
@@ -258,7 +258,7 @@
     "ten": "Thu nhập khác",
     "v": [
      194,
-     18,
+     17,
      20
     ]
    },
@@ -266,7 +266,7 @@
     "ten": "Lợi nhuận trước thuế",
     "v": [
      1020,
-     1284,
+     1265,
      1366
     ],
     "tang": 1
@@ -275,7 +275,7 @@
     "ten": "LN cổ đông",
     "v": [
      788,
-     1014,
+     1001,
      1079
     ],
     "dam": 1,
@@ -285,7 +285,7 @@
     "ten": "LN lõi (bỏ lãi Emerald 68)",
     "v": [
      642,
-     1014,
+     1001,
      1079
     ],
     "tang": 1
@@ -294,7 +294,7 @@
     "ten": "EPS (đ)",
     "v": [
      7047,
-     9068,
+     8952,
      9649
     ],
     "eps": 1
@@ -303,13 +303,13 @@
     "ten": "BVPS cuối năm (đ)",
     "v": [
      86315,
-     92994,
-     100145
+     92875,
+     100026
     ],
     "ps": 1
    }
   ],
-  "ghi": "Năm tài chính 1/7–30/6. FY2026: cộng 4 quý BCTC; dự phòng ròng 52 tỷ (MAS). FY2027E = quý 1 sơ bộ (doanh thu 11.270, LN 306; lãi gộp theo biên ~5% ban lãnh đạo nêu) + 3 quý mô hình. Thuế 21%. Không gồm hoàn nhập 526 tỷ Ngôi Sao Việt."
+  "ghi": "Năm tài chính 1/7–30/6. FY2026: cộng 4 quý BCTC; dự phòng ròng 52 tỷ (MAS). FY2027E = quý 1 BCTC (Q3/2026: doanh thu 11.269, lãi gộp 562, LN 305) + 3 quý mô hình. Thuế 21%. Không gồm hoàn nhập 526 tỷ Ngôi Sao Việt."
  },
  "cau_ln": {
   "ten": "LN cổ đông FY2026A → FY2027E (cơ sở)",
@@ -319,16 +319,16 @@
   ],
   "cuoi": [
    "FY2027E",
-   1014
+   1001
   ],
   "buoc": [
    [
     "Lãi gộp",
-    603
+    602
    ],
    [
     "Chi phí quản lý",
-    -93
+    -145
    ],
    [
     "Dự phòng",
@@ -336,18 +336,18 @@
    ],
    [
     "Tài chính ròng",
-    -92
+    -58
    ],
    [
     "Lãi Emerald, khác",
-    -176
+    -177
    ],
    [
     "Thuế",
-    -38
+    -31
    ]
   ],
-  "y": "Lãi gộp thêm 603 tỷ nhờ doanh thu +27% và biên 4,70% (quý 1 ~5%) bù 183 tỷ lãi Emerald 68 không lặp lại và tài chính ròng chuyển âm: LN +29%, LN lõi +58%. Kế hoạch 1.050.",
+  "y": "Lãi gộp thêm 602 tỷ nhờ doanh thu +27% và biên 4,70% (quý 1 5,0%) bù 183 tỷ lãi Emerald 68 không lặp lại và tài chính ròng chuyển âm: LN +27%, LN lõi +56%. Kế hoạch 1.050.",
   "ng": "BCTC · MAS 21/10 · mô hình"
  },
  "gia_dinh": [
@@ -358,7 +358,7 @@
     "32,3",
     "35,0"
    ],
-   "ly_do": "Cùng kỳ 26,9 (+5% · +20% · +30%); quý 1 đã 11,3 (+51%). Cả năm cơ sở 43,6 so với kế hoạch 42; CTCK 36,4–42,2 (trước quý 1)"
+   "ly_do": "Cùng kỳ 26,9 (+5% · +20% · +30%); quý 1 BCTC 11,3 (+51%). Cả năm cơ sở 43,6 so với kế hoạch 42; CTCK 36,4–42,2 (trước quý 1)"
   },
   {
    "ten": "Biên gộp 3 quý còn lại · FY2028",
@@ -367,16 +367,16 @@
     "4,6 · 4,6%",
     "5,0 · 5,1%"
    ],
-   "ly_do": "Quý 1 FY2027 ~5% (ban lãnh đạo); 6 tháng đầu 2026 4,46%; FY2026 4,21%; 12 tháng đến 6/2018: 6,8%. ACBS vẫn dự phóng 3,4–3,5%"
+   "ly_do": "Quý 1 FY2027 4,98% (BCTC); 6 tháng đầu 2026 4,46%; FY2026 4,21%; 12 tháng đến 6/2018: 6,8%. ACBS vẫn dự phóng 3,4–3,5%"
   },
   {
    "ten": "Chi phí quản lý lõi (% doanh thu)",
    "v": [
-    "1,85",
-    "1,70",
-    "1,60"
+    "1,90",
+    "1,75",
+    "1,65"
    ],
-   "ly_do": "Không gồm dự phòng: FY2025 1,88%, FY2026 1,82%; quý 1 FY2027 ước ~1,5% (phần còn lại của LN sơ bộ)"
+   "ly_do": "Không gồm dự phòng: FY2025 1,88%, FY2026 1,82%; quý 1 FY2027 1,82% (BCTC; cùng kỳ 2,1%)"
   },
   {
    "ten": "Dự phòng phải thu ròng (tỷ, 3 quý · FY2028)",
@@ -394,7 +394,7 @@
     "−25 · −40",
     "20 · 40"
    ],
-   "ly_do": "FY2026 +57; Q2/2026 ≈ 0. Tháng 10/2026: tiền gửi ~7,8 nghìn tỷ, vay ngắn hạn > 4 nghìn tỷ, trái phiếu mới ~1,4 nghìn tỷ (MAS 21/10)"
+   "ly_do": "FY2026 +57; quý 1 FY2027 +24 (lãi vay 158). 30/9/2026: tiền + tiền gửi 9,6 nghìn tỷ, nợ vay 8,0; còn chi ~280 tỷ cổ tức"
   },
   {
    "ten": "Doanh thu FY2028 (nghìn tỷ)",
@@ -421,29 +421,29 @@
     "9",
     "8,5"
    ],
-   "ly_do": "Trung vị 8 nhà thầu 8,5 lần LN 4 quý; CTD đang 9,5. LN thấp định giá theo sổ sách: P/E 12 ≈ P/B 0,57 (thấp 10% từ 2015: 0,57)"
+   "ly_do": "Trung vị 8 nhà thầu 9,1 lần LN 4 quý; CTD đang 8,9. LN thấp định giá theo sổ sách: P/E 12 ≈ P/B 0,56 (thấp 10% từ 2015: 0,57)"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": 605,
+   "ln26": 593,
    "ln27": 342,
-   "gia": 50.8,
-   "mo_ta": "3 quý còn lại doanh thu +5%, biên gộp 3,9% → 3,7% (FY2028); dự phòng 100–120 tỷ, tài chính ròng −100/−150 tỷ; không thu được Ngôi Sao Việt; P/E 12 ≈ P/B 0,57"
+   "gia": 50.2,
+   "mo_ta": "3 quý còn lại doanh thu +5%, biên gộp 3,9% → 3,7% (FY2028); dự phòng 100–120 tỷ, tài chính ròng −100/−150 tỷ; không thu được Ngôi Sao Việt; P/E 12 ≈ P/B 0,56"
   },
   {
    "ten": "Cơ sở",
-   "ln26": 1014,
+   "ln26": 1001,
    "ln27": 1079,
-   "gia": 86.1,
-   "mo_ta": "Doanh thu 43,6 → 48,0 nghìn tỷ, biên gộp 4,6% cho 3 quý còn lại và FY2028; thu 50% Ngôi Sao Việt; P/E 9 ≈ P/B 0,93"
+   "gia": 85.6,
+   "mo_ta": "Doanh thu 43,6 → 48,0 nghìn tỷ, biên gộp 4,6% cho 3 quý còn lại và FY2028; thu 50% Ngôi Sao Việt; P/E 9 ≈ P/B 0,92"
   },
   {
    "ten": "Tốt",
-   "ln26": 1301,
+   "ln26": 1287,
    "ln27": 1570,
-   "gia": 112.9,
+   "gia": 112.3,
    "mo_ta": "Biên gộp giữ 5%, doanh thu 46,3 → 54,0 nghìn tỷ, hoàn nhập dự phòng; thu đủ Ngôi Sao Việt; P/E 8,5 ≈ P/B 1,18"
   }
  ],
@@ -457,9 +457,9 @@
     "ten": "Xây lắp (LN lõi)",
     "mau": "c1",
     "x": [
-     473,
-     1047,
-     1436
+     468,
+     1040,
+     1428
     ],
     "boi": [
      12,
@@ -470,9 +470,9 @@
     "boi_ten": "P/E",
     "sh": 1,
     "gt": [
-     5676,
-     9423,
-     12206
+     5616,
+     9360,
+     12138
     ]
    },
    {
@@ -500,14 +500,14 @@
    }
   ],
   "von": [
-   5676,
-   9633,
-   12627
+   5616,
+   9570,
+   12559
   ],
   "gia": [
-   50.8,
-   86.1,
-   112.9
+   50.2,
+   85.6,
+   112.3
   ]
  },
  "nhay": [
@@ -519,12 +519,12 @@
   [
    "P/E ±1 lần",
    null,
-   9.4
+   9.3
   ],
   [
    "Doanh thu ±10%",
-   93,
-   7.5
+   92,
+   7.4
   ],
   [
    "Dự phòng ±100 tỷ/năm",
@@ -681,7 +681,8 @@
    "2026-07",
    "2026-08",
    "2026-09",
-   "2026-10"
+   "2026-10",
+   "2026-11"
   ],
   "v": [
    1.04,
@@ -825,18 +826,19 @@
    0.72,
    0.73,
    0.68,
-   0.78
+   0.74,
+   0.74
   ],
   "p10": 0.57,
-  "p25": 0.68,
-  "tv": 0.94,
+  "p25": 0.69,
+  "tv": 0.93,
   "thap": [
    "2022-12",
    0.32
   ],
   "nay": [
-   "2026-10",
-   0.78
+   "2026-11",
+   0.74
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
   "ref": [
@@ -845,21 +847,32 @@
     "ten": "thấp 10% từ 7/2019"
    },
    {
-    "v": 0.72,
+    "v": 0.73,
     "ten": "trung vị từ 7/2019"
    }
   ],
-  "dung": "Ba kịch bản ≈ P/B 0,57 · 0,93 · 1,18 vốn chủ 6/2027E. Từ 7/2019 (ROE dưới 10%) P/B thấp 10% 0,52, trung vị 0,72, cao 90% 0,96; từ 2024 trung vị 0,87. P/E 4 quý 2021–2025 vô nghĩa (LN gần 0) nên dùng P/B. Tháng 12/2025–3/2026 đã sửa tay số cp sau thưởng 20:1."
+  "dung": "Ba kịch bản ≈ P/B 0,56 · 0,92 · 1,18 vốn chủ 6/2027E. Từ 7/2019 (ROE dưới 10%) P/B thấp 10% 0,52, trung vị 0,73, cao 90% 0,96; từ 2024 trung vị 0,87. P/E 4 quý 2021–2025 vô nghĩa (LN gần 0) nên dùng P/B. Tháng 12/2025–3/2026 đã sửa tay số cp sau thưởng 20:1."
  },
  "theo_doi": [
+  {
+   "quy": "Q3/2026 (quý 1 FY2027)",
+   "fd": "2026-09-30",
+   "dt": 11270,
+   "ln": [
+    306,
+    306,
+    306
+   ],
+   "ck": 295
+  },
   {
    "quy": "Q4/2026 (quý 2 FY2027)",
    "fd": "2026-12-31",
    "dt": 12022,
    "ln": [
-    166,
-    316,
-    421
+    163,
+    313,
+    417
    ],
    "ck": 228
   },
@@ -868,30 +881,30 @@
    "fd": "2027-03-31",
    "dt": 7700,
    "ln": [
-    31,
-    139,
-    215
+    27,
+    135,
+    211
    ],
    "ck": 119
   },
   {
    "quy": "Cả FY2027 (7/2026–6/2027)",
    "ln": [
-    605,
-    1014,
-    1301
+    593,
+    1001,
+    1287
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "Cuối 10/2026",
-   "loai": "hai",
-   "tieu": "BCTC quý 1 FY2027 (7–9/2026)",
-   "ct": "Số sơ bộ: doanh thu 11.270 tỷ (+51%), LN 306 tỷ (+4%). Kiểm tra biên gộp có đúng ~5%, chi phí lãi vay và dự phòng — cơ sở đã dùng số sơ bộ.",
+   "khi": "Đã ra 11/2026",
+   "loai": "len",
+   "tieu": "BCTC quý 1 FY2027: khớp sơ bộ, biên gộp 5%",
+   "ct": "Doanh thu 11.269 tỷ (+51%), LN 305 tỷ — bản trước dùng số sơ bộ 306. Biên gộp 4,98%; bán hàng + quản lý 205 tỷ, lãi vay 158 tỷ (quý trước 135), tài chính ròng +24 tỷ.",
    "tac": [
-    "306 tỷ",
-    "LN quý sơ bộ; lệch nhiều thì sửa cơ sở"
+    "305 tỷ",
+    "khớp cơ sở cũ (306); chi phí quản lý cao hơn ước nên nâng giả định"
    ],
    "theo_doi": "biên gộp, lãi vay"
   },
@@ -899,10 +912,10 @@
    "khi": "1/2027",
    "loai": "hai",
    "tieu": "KQKD quý 2 FY2027 (10–12/2026)",
-   "ct": "Cơ sở LN 316 tỷ (cùng kỳ 228), doanh thu ~12,0 nghìn tỷ, biên gộp 4,6% — quý doanh thu cao thứ hai trong năm.",
+   "ct": "Cơ sở LN 313 tỷ (cùng kỳ 228), doanh thu ~12,0 nghìn tỷ, biên gộp 4,6% — quý doanh thu cao thứ hai trong năm.",
    "tac": [
-    "≥ 320 tỷ",
-    "giữ cơ sở; dưới 170 tỷ nghiêng về xấu"
+    "≥ 310 tỷ",
+    "giữ cơ sở; dưới 160 tỷ nghiêng về xấu"
    ],
    "theo_doi": "biên gộp quý"
   },
@@ -910,7 +923,7 @@
    "khi": "11/2026–2027",
    "loai": "len",
    "tieu": "Cổ tức tiền 25% (2.500 đ/cp)",
-   "ct": "Kế hoạch sau ĐHĐCĐ 20/10/2026: ~280 tỷ (35% LN FY2026), ~3,7% giá 23/10; kèm ESOP 1,2 triệu cp giá 10.000 đ. Chưa có ngày GDKHQ.",
+   "ct": "Kế hoạch sau ĐHĐCĐ 20/10/2026: ~280 tỷ (35% LN FY2026), ~3,9% giá 02/11; kèm ESOP 1,2 triệu cp giá 10.000 đ. Chưa có ngày GDKHQ.",
    "tac": [
     "2.500 đ/cp",
     "tiền mặt; giá điều chỉnh giảm tương ứng ngày GDKHQ"
@@ -934,7 +947,7 @@
    "tieu": "Hạ tầng: Bến Thành – Cần Giờ, công trình APEC 2027",
    "ct": "Quý 1 trúng 2 gói cầu, cầu cạn Bến Thành – Cần Giờ ~7.000 tỷ; trung tâm hội nghị APEC, mở rộng sân bay Phú Quốc (Sun Group) phải xong trước APEC 2027. Ngoài nhà ở ~50% doanh thu FY2027.",
    "tac": [
-    "+7,5 nghìn đ/cp",
+    "+7,4 nghìn đ/cp",
     "nếu doanh thu cao hơn cơ sở 10%"
    ],
    "theo_doi": "doanh thu quý, ký mới"
@@ -956,7 +969,7 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Thu tiền từ chủ đầu tư bất động sản",
-   "ct": "72% backlog là dân dụng; phải thu 16,5 nghìn tỷ, phải thu có vấn đề 1.835 tỷ (+18%), dự phòng 1.315 tỷ (MAS). Lãi suất cao làm chủ đầu tư chậm thanh toán.",
+   "ct": "72% backlog là dân dụng; phải thu 30/9 18,0 nghìn tỷ, phải thu có vấn đề 1.835 tỷ (+18%), dự phòng 1.315 tỷ (MAS). Lãi suất cao làm chủ đầu tư chậm thanh toán.",
    "tac": [
     "−6,4 nghìn đ/cp",
     "mỗi 100 tỷ dự phòng thêm mỗi năm"
@@ -968,7 +981,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Nợ vay và chênh lệch lãi suất",
-   "ct": "Nợ vay 30/6 5,9 nghìn tỷ (+99%), lãi vay Q2/2026 135 tỷ (×3,4); thêm ~1,4 nghìn tỷ trái phiếu mới (MAS 21/10). FPTS dự phóng lãi vay FY2027 564 tỷ.",
+   "ct": "Nợ vay 30/9 8,0 nghìn tỷ (+110% so với 30/9/2025), chi phí tài chính Q3/2026 160 tỷ (×3,2), lãi vay 158; tiền gửi 9,6 nghìn tỷ còn bù được. FPTS dự phóng lãi vay FY2027 564 tỷ.",
    "tac": [
     "±6,4 nghìn đ/cp",
     "mỗi ±100 tỷ tài chính ròng mỗi năm"
@@ -982,7 +995,7 @@
    "tieu": "Ký mới chậm lại sau năm kỷ lục",
    "ct": "FY2026 ký 60,3 nghìn tỷ, gấp 2,4 lần bình quân 10 năm; quý 1 FY2027 14,5 (−25%). MAS dự báo 28–36 nghìn tỷ/năm; cơ sở FY2028 cần 48,0 nghìn tỷ doanh thu.",
    "tac": [
-    "−7,5 nghìn đ/cp",
+    "−7,4 nghìn đ/cp",
     "nếu doanh thu thấp hơn cơ sở 10%"
    ],
    "theo_doi": "ký mới, backlog"
@@ -1053,7 +1066,7 @@
     }
    ],
    "so_le": 1,
-   "y": "FY = 12 tháng 1/7–30/6 (cộng 4 quý BCTC). Biên gộp từ 8,6% (FY2016) về 2,2% (FY2023), hồi lên 4,2% — chưa bằng hai phần ba mức FY2016–2018; quý 1 FY2027 ~5% (sơ bộ).",
+   "y": "FY = 12 tháng 1/7–30/6 (cộng 4 quý BCTC). Biên gộp từ 8,6% (FY2016) về 2,2% (FY2023), hồi lên 4,2% — chưa bằng hai phần ba mức FY2016–2018; quý 1 FY2027 (Q3/2026) 5,0%.",
    "ng": "BCTC CTD (VNDirect)"
   },
   {
@@ -1100,61 +1113,61 @@
    "kieu": "cot_chong",
    "dv": "tỷ đồng",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Lãi HĐKD (gồm dự phòng)",
      "v": [
-      87,
       95,
       54,
       246,
       166,
       256,
       152,
-      194
+      194,
+      356
      ],
      "mau": "c1"
     },
     {
      "ten": "Tài chính ròng",
      "v": [
-      32,
       23,
       11,
       -15,
       28,
       28,
       -1,
-      3
+      3,
+      24
      ],
      "mau": "c2"
     },
     {
      "ten": "Thu nhập khác",
      "v": [
-      -3,
       17,
       -2,
       6,
       183,
       1,
       3,
-      8
+      8,
+      2
      ],
      "mau": "c4"
     }
    ],
    "so_le": 0,
-   "y": "Q2/2025 có 160 tỷ hoàn nhập dự phòng, Q3/2025 có 183 tỷ lãi Emerald 68; tài chính ròng về ~0 từ Q1/2026 khi lãi vay tăng.",
+   "y": "Q2/2025 có 160 tỷ hoàn nhập dự phòng, Q3/2025 có 183 tỷ lãi Emerald 68. Q3/2026 lãi HĐKD 356 tỷ, cao nhất 8 quý; tài chính ròng quanh 0 dù lãi vay tăng, nhờ lãi tiền gửi.",
    "ng": "BCTC CTD (VNDirect) · FPTS 25/08"
   },
   {
@@ -1162,27 +1175,27 @@
    "kieu": "duong",
    "dv": "nghìn tỷ",
    "nhan": [
-    "Q3/24",
     "Q4/24",
     "Q1/25",
     "Q2/25",
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
      "ten": "Nợ vay",
      "v": [
-      2.3,
       2.7,
       2.8,
       3.0,
       3.8,
       5.2,
       7.0,
-      5.9
+      5.9,
+      8.0
      ],
      "mau": "c1",
      "net": false
@@ -1190,14 +1203,14 @@
     {
      "ten": "Tiền + tiền gửi",
      "v": [
-      4.3,
       4.7,
       3.6,
       4.3,
       4.5,
       6.3,
       6.2,
-      7.8
+      7.8,
+      9.6
      ],
      "mau": "c2",
      "net": false
@@ -1205,21 +1218,21 @@
     {
      "ten": "Người mua trả trước",
      "v": [
-      3.1,
       3.4,
       3.9,
       4.8,
       5.3,
       7.1,
       7.5,
-      9.0
+      9.0,
+      9.6
      ],
      "mau": "c4",
      "net": false
     }
    ],
    "so_le": 1,
-   "y": "Nợ vay tăng cùng tiền gửi và tiền ứng trước của chủ đầu tư: tiền ròng 30/6/2026 vẫn dương 1,9 nghìn tỷ.",
+   "y": "Nợ vay tăng cùng tiền gửi và tiền ứng trước của chủ đầu tư: tiền ròng 30/9/2026 vẫn dương 1,6 nghìn tỷ.",
    "ng": "BCTC CTD (VNDirect)"
   }
  ],
@@ -1229,23 +1242,23 @@
    {
     "ten": "Doanh thu",
     "kh": 42000,
-    "th": 11270,
-    "ky": "3T sơ bộ",
+    "th": 11269,
+    "ky": "3T (BCTC)",
     "tg": 25,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 20/10/2026 · MAS 21/10, ACBS 23/10"
+    "ng": "Kế hoạch ĐHĐCĐ 20/10/2026 · thực hiện BCTC Q3/2026"
    },
    {
     "ten": "LNST",
     "kh": 1050,
-    "th": 306,
-    "ky": "3T sơ bộ",
+    "th": 305,
+    "ky": "3T (BCTC)",
     "tg": 25,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 20/10/2026 · MAS 21/10, ACBS 23/10"
+    "ng": "Kế hoạch ĐHĐCĐ 20/10/2026 · thực hiện BCTC Q3/2026"
    }
   ],
-  "y": "Quý 1 thường chỉ ~20% doanh thu năm. FY2026 vượt kế hoạch 14% doanh thu, 13% LNST; FY2024–2025 đạt 100–106%. Mô hình cơ sở FY2027: 43,6 nghìn tỷ / 1.014 tỷ.",
+  "y": "Quý 1 thường chỉ ~20% doanh thu năm. FY2026 vượt kế hoạch 14% doanh thu, 13% LNST; FY2024–2025 đạt 100–106%. Mô hình cơ sở FY2027: 43,6 nghìn tỷ / 1.001 tỷ.",
   "ng": ""
  },
  "ctck": [
@@ -1368,6 +1381,11 @@
    "link": "https://baovanhoa.vn/kinh-te/coteccons-ctd-chot-quyen-chia-co-tuc-10-bang-tien-182283.html"
   },
   {
+   "ten": "Báo Đầu tư — ĐHĐCĐ Coteccons ước lãi 306 tỷ quý I niên độ 2026–2027",
+   "ngay": "10/2026",
+   "link": "https://baodautu.vn/dhdcd-coteccons-uoc-tinh-lai-306-ty-dong-trong-quy-i-nien-do-2026---2027-d727384.html"
+  },
+  {
    "ten": "Mekong ASEAN — Phát hành hơn 5 triệu cổ phiếu thưởng (20:1)",
    "ngay": "12/2025",
    "link": "https://mekongasean.vn/coteccons-chuan-bi-phat-hanh-hon-5-trieu-co-phieu-thuong-44818.html"
@@ -1449,7 +1467,7 @@
     },
     {
      "h": 0,
-     "t": "Dòng tiền kinh doanh FY2026 +816 tỷ (FY2025 −1.150) nhờ tiền khách ứng trước tăng 4,2 nghìn tỷ; nợ vay 5,9 nghìn tỷ.",
+     "t": "Dòng tiền kinh doanh FY2026 +816 tỷ (FY2025 −1.150) nhờ tiền khách ứng trước tăng 4,2 nghìn tỷ; nợ vay 30/9/2026 8,0 nghìn tỷ.",
      "ng": "ACBS 09/10 · BCTC"
     }
    ]
