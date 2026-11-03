@@ -2165,8 +2165,9 @@ const ttFaUrl = ma => 'https://fireant.vn/embed?widget=symbol-news&symbol=' + en
 let ttFaSan = false, ttFaHen = 0;
 window.addEventListener('message', e => {
   if (e.origin !== 'https://fireant.vn') return;
-  const d = e.data; if (!d || d.source !== 'fireant-widget' || d.id !== TT_FA_ID) return;
-  const f = document.getElementById('ttFaKhung'); if (!f) return;
+  const d = e.data; if (!d || d.source !== 'fireant-widget') return;
+  const f = document.getElementById(d.id === TT_FA_ID ? 'ttFaKhung' : d.id === 'kn_fa_cd' ? 'ttFaCd' : ''); if (!f) return;
+  if (d.id === 'kn_fa_cd') { if (d.type === 'resize' && d.height > 0) f.style.height = Math.min(Math.max(d.height, 120), 1200) + 'px'; return; }
   if (d.type === 'ready') { ttFaSan = true; clearTimeout(ttFaHen); const c = document.getElementById('ttFaCho'); if (c) c.remove(); }
   if (d.type === 'resize' && d.height > 0) f.style.height = Math.min(Math.max(d.height, 160), 6000) + 'px';
 });
@@ -2197,7 +2198,12 @@ function veTinTuc(){
 
   if (TT_LOCHIEN === 'fa') {
     ttFaSan = false; clearTimeout(ttFaHen);
-    box.innerHTML = dau + '<div>'
+    box.innerHTML = dau
+      /* Cong dong FireAnt: widget chinh thuc "Sentiment theo ma" (ty le bai tich cuc/tieu cuc + 3 bai moi nhat) */
+      + '<div><iframe id="ttFaCd" src="https://fireant.vn/embed?widget=symbol-sentiment&symbol=' + encodeURIComponent(ma) + '&_id=kn_fa_cd"'
+      + ' title="Cộng đồng FireAnt — ' + ttEsc(ma) + '" referrerpolicy="strict-origin-when-cross-origin"'
+      + ' style="display:block;width:100%;height:300px;border:0;background:transparent"></iframe></div>'
+      + '<div style="margin-top:10px">'
       + '<div id="ttFaCho" class="mini" style="padding:6px 0">Đang tải tin từ FireAnt…</div>'
       + '<iframe id="ttFaKhung" src="' + ttEsc(ttFaUrl(ma)) + '" title="Tin tức ' + ttEsc(ma) + ' — FireAnt"'
       + ' referrerpolicy="strict-origin-when-cross-origin"'
