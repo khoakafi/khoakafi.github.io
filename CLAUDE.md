@@ -426,7 +426,9 @@ nào nhanh hơn VNDirect; hiện gom tay bằng tác tử WebSearch (máy task k
 
 Tab Tin tức (Chi tiết mã) mặc định chip **FireAnt** = iframe widget chính thức `https://fireant.vn/embed?widget=symbol-news&symbol=<MA>&count=30&_id=kn_fa_tin` (số tin là `count`, tối đa 30; `limit` bị bỏ qua → 8 tin)
 (tìm từ `fireant.vn/widgets/builder`; danh sách widget ở chunk `224-*.js`). Widget gửi `postMessage {source:'fireant-widget', type:'ready'|'resize', id, height}`
-→ khung tự giãn. 12 s không 'ready' → gợi ý xem tin VNDirect. Các chip VNDirect (Tất cả / Tin bài / Công bố TT / Phân tích) giữ nguyên.
+→ khung tự giãn. **Chỉ còn tin FireAnt** (03/11 anh Khoa bỏ tin VNDirect; code VNDirect cũ còn trong file nhưng không gọi).
+Ảnh: widget chỉ vẽ thumbnail 80×56 khi bài có ảnh riêng (FPT 03/11: 6/30 bài), không có tóm tắt — giao diện bên trong iframe là của FireAnt, không chỉnh được.
+Muốn đúng kiểu trang FireAnt (ảnh lớn + tóm tắt) phải có dữ liệu bài — API cần token, không dùng. Kiểm Safari: `do-trang.yml` ô `trinh` = webkit (runner ubuntu-24.04).
 **Không gọi API FireAnt** (`restv2.fireant.vn` cần token, 401). Dò trang bằng Chromium trên runner: workflow `do-trang.yml` (`scripts/do-trang.mjs`, ô `eval` chạy JS trong trang).
 
 ## Số hiệu suất B★ tính ở đâu
