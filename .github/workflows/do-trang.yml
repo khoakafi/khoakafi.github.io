@@ -1,0 +1,33 @@
+name: do-trang
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: URL can mo bang Chromium
+        required: true
+        type: string
+      eval:
+        description: JS chay trong trang (than ham async, return gia tri)
+        required: false
+        default: ''
+        type: string
+      cho:
+        description: Cho bao nhieu ms sau khi mo
+        default: '6000'
+        type: string
+      chars:
+        default: '4000'
+        type: string
+jobs:
+  do:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v4
+    - run: npm i --no-save playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
+    - run: node scripts/do-trang.mjs
+      env:
+        URL_: ${{ inputs.url }}
+        EVAL: ${{ inputs.eval }}
+        CHO: ${{ inputs.cho }}
+        CHARS: ${{ inputs.chars }}
