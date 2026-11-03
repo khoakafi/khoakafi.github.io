@@ -36,7 +36,7 @@ jobs:
     timeout-minutes: 10
     steps:
     - uses: actions/checkout@v4
-    - run: npm i --no-save playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium webkit >/dev/null 2>&1
+    - run: npm i --no-save playwright@1.55.0 >/dev/null 2>&1 && npx playwright install --with-deps chromium webkit 2>&1 | tail -15
     - run: node scripts/do-trang.mjs
       env:
         URL_: ${{ inputs.url }}
