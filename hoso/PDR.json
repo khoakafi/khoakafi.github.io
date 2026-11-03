@@ -3,44 +3,44 @@
  "ma": "PDR",
  "ten": "CTCP Phát triển Bất động sản Phát Đạt",
  "nganh": "Bất động sản nhà ở, nghỉ dưỡng",
- "ky": "BCTC Q2/2026 · 35% Lotte Thủ Thiêm trả xong 10/8/2026",
- "cap_nhat": "2026-10-20",
- "lan_sau": "sau BCTC Q3/2026 hoặc khi Thuận An 2 hoàn tất",
+ "ky": "BCTC Q3/2026 · giá 02/11/2026",
+ "cap_nhat": "2026-11-03",
+ "lan_sau": "sau BCTC Q4/2026, hoặc khi ghi nhận EverRich 2 / 49,95% Thuận An 2 còn lại",
  "cp_trieu": 997.8,
- "cp_ng": "Vốn điều lệ 9.978,1 tỷ (BCTC Q2/2026) = 997,8 triệu cp; chưa gồm cổ tức cổ phiếu 10% và chào bán 5:1 (tối đa 199,56 triệu cp) đã được ĐHĐCĐ 2026 thông qua nhưng chưa thực hiện",
+ "cp_ng": "Vốn điều lệ 9.978,1 tỷ (BCTC Q3/2026) = 997,8 triệu cp; chưa gồm cổ tức cổ phiếu 10% và chào bán 5:1 (tối đa 199,56 triệu cp) đã được ĐHĐCĐ 2026 thông qua nhưng chưa thực hiện",
  "co_tuc": [],
  "tieu_de": {
-  "t": "61% vốn chủ dồn vào 35% Thủ Thiêm: lãi vay trả ngay, lãi dự án chờ đến 2029"
+  "t": "Bán nửa Thuận An 2 chỉ đủ trả lãi vay: 61% vốn chủ nằm ở Thủ Thiêm, chờ đến 2029"
  },
- "dong_mo": "6T/2026 lãi 213 tỷ nhờ 1,4 nghìn tỷ lãi bán dự án; kinh doanh cốt lõi lỗ 240 tỷ. Tiền bán dự án và vay MB đã vào 35% Lotte Thủ Thiêm (7.666 tỷ), mở bán sớm nhất 2029. Cơ sở: 2026E lỗ 123 tỷ, 2027E lãi ~397 tỷ nhờ Thuận An 2. Theo tài sản: {gt} ({up}); cán cân lên/xuống {rr} lần.",
+ "dong_mo": "Q3 lãi 10 tỷ: 710 tỷ thu nhập tài chính (lãi bán 49,95% Thuận An 2) trừ lãi vay 180 tỷ, cốt lõi lỗ 251 tỷ và thuế 144 tỷ. Nợ vay 30/9 13,6 nghìn tỷ sau khoản vay MB cho 35% Lotte Thủ Thiêm (mở bán sớm nhất 2029). Cơ sở: 2026E lỗ 800 tỷ (gồm ~750 tỷ chênh giá vốn EverRich 2), 2027E lỗ 394 tỷ. Theo tài sản: {gt} ({up}); cán cân lên/xuống {rr} lần.",
  "luan_diem": [
   {
    "so": "61%",
-   "nhan": "vốn chủ 30/6/2026 nằm ở 35% Lotte Thủ Thiêm (giá vốn)",
+   "nhan": "vốn chủ 30/9/2026 nằm ở 35% Lotte Thủ Thiêm (giá vốn)",
    "tieu": "Một khoản góp vốn, chưa có dòng tiền trước 2029",
-   "t": "10/8/2026 PDR trả xong 7.666 tỷ cho 35% Lotte Properties HCMC (định giá vốn chủ ~21,9 nghìn tỷ), bằng 61% vốn chủ cổ đông 30/6 (12,59 nghìn tỷ). Vay MB tối đa 8.835 tỷ, 96 tháng: 6.108 tỷ trả chuyển nhượng, 2.727 tỷ góp thêm khi dự án tăng vốn lên 12 nghìn tỷ. Khối thương mại khởi công 23/10/2026, xong 10/2029; MBS ước mở bán nhà ở (1.634 căn) từ 2029.",
-   "ng": "MBS 14/10 · nghị quyết HĐQT 29/6/2026 (báo chí) · BCTC Q2"
+   "t": "10/8/2026 PDR trả xong 7.666 tỷ cho 35% Lotte Properties HCMC (định giá vốn chủ ~21,9 nghìn tỷ), bằng 61% vốn chủ cổ đông 30/9 (12,60 nghìn tỷ). Vay dài hạn Q3 tăng 8,5 nghìn tỷ (gói vay MB, 96 tháng); còn tối đa 2.727 tỷ góp thêm khi dự án tăng vốn lên 12 nghìn tỷ. Khối thương mại khởi công 23/10/2026, xong 10/2029; MBS ước mở bán nhà ở (1.634 căn) từ 2029.",
+   "ng": "MBS 14/10 · nghị quyết HĐQT 29/6/2026 (báo chí) · BCTC Q3"
   },
   {
-   "so": "−240 tỷ",
-   "nhan": "kinh doanh cốt lõi 6T/2026 (lãi gộp − bán hàng − quản lý)",
-   "tieu": "Lợi nhuận là tiền bán dự án",
-   "t": "6T/2026 LNST 213 tỷ nhờ 1.381 tỷ thu nhập tài chính từ bán 80% Thuận An 1 (giá 1.901 tỷ, Mitsubishi), 99,34% Serenity (giá 2.500 tỷ, lãi 465 tỷ), 30% Tam Hiệp. Doanh thu 158 tỷ, dự phòng ~504 tỷ. Q3 không bàn giao, không bán dự án (MBS) mà lãi vay Lotte chạy từ 10/8: cơ sở Q3 lỗ ~200 tỷ, 2026E lỗ 123 tỷ — kế hoạch 868 tỷ cần Thuận An 2 ghi nhận ngay Q4.",
-   "ng": "BCTC Q1–Q2/2026 · MBS 14/10 · Vietnamfinance 31/07 · mô hình"
+   "so": "−491 tỷ",
+   "nhan": "kinh doanh cốt lõi 9T/2026 (lãi gộp − bán hàng − quản lý)",
+   "tieu": "Q3 xác nhận: không bán dự án là lỗ",
+   "t": "9T LN cổ đông 223 tỷ nhờ 2,09 nghìn tỷ thu nhập tài chính: Thuận An 1 (1.901 tỷ), Serenity (lãi 465 tỷ), Tam Hiệp, và Q3 bán 49,95% Thuận An 2 (lãi 662,6 tỷ). Bàn giao BĐS Q3 chỉ 8 tỷ (−98%), quản lý 241 tỷ. Mô hình cũ Q3 lỗ 200 tỷ chỉ sai vì nửa Thuận An 2 về sớm; phần vận hành đúng hướng. Cơ sở 2026E lỗ 800 tỷ; kế hoạch 868 tỷ cần nửa còn lại về ngay Q4 và EverRich 2 không lỗ (kịch bản tốt lãi 821 tỷ).",
+   "ng": "BCTC Q1–Q3/2026 · Vietstock, Znews 30–31/10 · mô hình"
   },
   {
-   "so": "850 tỷ",
+   "so": "1.050 tỷ",
    "nhan": "lãi vay 2027E cơ sở (2025: 347 tỷ)",
    "tieu": "Lãi vay vượt lãi kinh doanh đến khi Thủ Thiêm mở bán",
-   "t": "Nợ vay 5,2 nghìn tỷ (30/6) lên ~11,4 nghìn tỷ nếu giải ngân đủ gói vay MB 6,1 nghìn tỷ; MBS: nợ vay/vốn chủ 45% → 84%, lãi vay 617 / 767 tỷ (2026F/27F), khả năng trả lãi 0,5–0,6 lần. Cơ sở 2027E: bàn giao ~1,0 nghìn tỷ (lãi gộp ~477 tỷ) + lãi bán Thuận An 2 (≥ 3.000 tỷ, giá sổ 1.576 tỷ) → LN ~397 tỷ. Thuận An 2 dời sang 2028 thì 2027 lỗ ~1,3 nghìn tỷ.",
-   "ng": "BCTC Q2 · MBS 14/10 · HĐQT 10/6/2026 (báo chí) · mô hình"
+   "t": "Nợ vay 30/9 13,6 nghìn tỷ (30/6: 5,2), đã vượt mức MBS ước cuối 2026 (10,6). Lãi vay Q3 180 tỷ mới gồm ~7 tuần khoản vay MB; quý đủ ~290 tỷ. Cơ sở 2027E: bàn giao ~1,0 nghìn tỷ (lãi gộp ~477 tỷ) + lãi nửa Thuận An 2 còn lại (~663 tỷ trước thuế) vẫn lỗ 394 tỷ; nửa còn lại dời 2028 thì 2027 lỗ ~1,5 nghìn tỷ.",
+   "ng": "BCTC Q3 · MBS 14/10 · mô hình"
   },
   {
    "so": "{gt_so}",
    "nhan": "giá trị hợp lý 12 tháng (nghìn đ)",
    "tieu": "Định giá theo tài sản: {up_so} so với giá hiện tại",
-   "t": "Thủ Thiêm 7.666 tỷ × 0,85 (thiểu số, rủi ro tiến độ) + lãi Thuận An 2 sau thuế ~1,11 nghìn tỷ × 0,8 + vốn chủ phần còn lại 4,92 nghìn tỷ × P/B 0,70 — phần này gánh ~11,4 nghìn tỷ nợ vay, 2,3 lần vốn chủ. Tương đương P/B 0,86 cả công ty. Giá mục tiêu CTCK 17,1–20 nghìn đ dựa trên RNAV: DCF Bắc Hà Thanh, Poulo Condor, 239 CMT8 và Lotte đủ giá vốn.",
-   "ng": "mô hình · P/B cùng ngành giá 20/10 · MBS 14/10, Shinhan 13/03, VCBS 18/03"
+   "t": "Thủ Thiêm 7.666 tỷ × 0,85 (thiểu số, rủi ro tiến độ) + lãi nửa Thuận An 2 còn lại sau thuế ~0,52 nghìn tỷ × 0,8 + vốn chủ phần còn lại 4,93 nghìn tỷ trừ ~750 tỷ lỗ EverRich 2, × P/B 0,70 — phần này gánh 13,6 nghìn tỷ nợ vay, 2,8 lần vốn chủ. Tương đương P/B 0,78 cả công ty. Giá mục tiêu CTCK 17,1–20 nghìn đ dựa trên RNAV: DCF Bắc Hà Thanh, Poulo Condor, 239 CMT8 và Lotte đủ giá vốn.",
+   "ng": "mô hình · P/B cùng ngành giá 02/11 · MBS 14/10, Shinhan 13/03, VCBS 18/03"
   }
  ],
  "tom_tat": {
@@ -51,19 +51,19 @@
   ],
   "ln": [
    515,
-   -123,
-   397
+   -800,
+   -394
   ],
   "ln_truoc": 155,
   "eps": [
    516,
-   -123,
-   398
+   -802,
+   -395
   ],
   "bv": [
    12400,
-   12281,
-   12679
+   11603,
+   11208
   ],
   "co_tuc_nam": 0,
   "them": [
@@ -71,8 +71,8 @@
     "ten": "Lãi bán dự án & tài chính (tỷ)",
     "v": [
      638,
-     1396,
-     1444
+     2101,
+     683
     ],
     "d": 0
    },
@@ -80,8 +80,8 @@
     "ten": "ROE",
     "v": [
      4.4,
-     -1.0,
-     3.2
+     -6.7,
+     -3.5
     ],
     "d": 1,
     "pt": 1
@@ -104,8 +104,8 @@
     "mau": "c1",
     "v": [
      638,
-     1396,
-     1444
+     2101,
+     683
     ]
    },
    {
@@ -113,7 +113,7 @@
     "mau": "c2",
     "v": [
      459,
-     -99,
+     -1192,
      177
     ]
    },
@@ -122,8 +122,8 @@
     "mau": "c3",
     "v": [
      -347,
-     -617,
-     -850
+     -657,
+     -1050
     ]
    },
    {
@@ -131,43 +131,43 @@
     "mau": "c4",
     "v": [
      -99,
-     -509,
+     -610,
      -60
     ]
    }
   ],
-  "ng": "Kinh doanh cốt lõi = lãi gộp − bán hàng − quản lý. 2026E: 6T thực tế (lãi bán Thuận An 1, Serenity, Tam Hiệp; dự phòng ~504 tỷ) + 6T cuối mô hình; 2027E: lãi bán Thuận An 2 (cơ sở)."
+  "ng": "Kinh doanh cốt lõi = lãi gộp − bán hàng − quản lý. 2026E: 9T thực tế (lãi bán Thuận An 1, Serenity, Tam Hiệp, 49,95% Thuận An 2; dự phòng 6T ~504 tỷ) + Q4 mô hình (EverRich 2 lỗ gộp ~750 tỷ); 2027E: lãi 49,95% Thuận An 2 còn lại (cơ sở)."
  },
  "so_sanh": {
   "tieu": "P/B so với chủ đầu tư nhà ở niêm yết",
-  "phu": "giá hôm nay; vốn chủ cổ đông 30/6/2026, 997,8 triệu cp",
+  "phu": "giá hôm nay; vốn chủ cổ đông 30/9/2026, 997,8 triệu cp",
   "chi_so": "P/B",
-  "chi_so_kv": "P/B (giá 20/10)",
+  "chi_so_kv": "P/B (giá 02/11)",
   "nhom": "8 chủ đầu tư nhà ở niêm yết",
   "kv": [
    [
     "VHM",
-    1.88
+    1.8
    ],
    [
     "CEO",
-    1.03
+    1.01
    ],
    [
     "TCH",
-    0.97
+    0.98
    ],
    [
     "KDH",
-    0.94
+    0.9
    ],
    [
     "DXG",
-    0.91
+    0.89
    ],
    [
     "NLG",
-    0.83
+    0.82
    ],
    [
     "DIG",
@@ -178,11 +178,11 @@
     0.61
    ]
   ],
-  "tv": 0.93,
-  "moi_cp": 12618,
+  "tv": 0.9,
+  "moi_cp": 12628,
   "max": 2.5,
-  "y": "Trừ VHM (ROE 4 quý 34%), cả nhóm ở 0,61–1,03 lần với ROE 1–10%. PDR ~0,9 lần, ngang trung vị (0,93), ROE 4 quý 5% gần như toàn bộ từ bán dự án; 61% sổ sách là khoản góp vốn chưa sinh lời — không có lý do trả hơn nhóm.",
-  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ BCTC gần nhất (bảng giá VNDirect 20/10/2026); NVL theo bảng giá, đã gồm tiền chào bán 3:1"
+  "y": "Trừ VHM (ROE 4 quý 38%), cả nhóm ở 0,61–1,01 lần với ROE 1–10%. PDR ~0,9 lần, ngang trung vị (0,90), ROE 4 quý 5% gần như toàn bộ từ bán dự án; 61% sổ sách là khoản góp vốn chưa sinh lời — không có lý do trả hơn nhóm.",
+  "ng": "Vốn hóa ÷ vốn chủ cổ đông mẹ BCTC gần nhất (bảng giá VNDirect 02/11/2026); NVL theo bảng giá, đã gồm tiền chào bán 3:1"
  },
  "mo_hinh": {
   "tieu": "Dự phóng: bàn giao + bán dự án − lãi vay",
@@ -199,8 +199,16 @@
     "ten": "Doanh thu bàn giao BĐS (tỷ)",
     "v": [
      949,
-     600,
+     413,
      1000
+    ]
+   },
+   {
+    "ten": "Chuyển nhượng EverRich 2 (tỷ)",
+    "v": [
+     0,
+     5226,
+     0
     ]
    },
    {
@@ -216,7 +224,7 @@
     "ten": "Doanh thu thuần (tỷ)",
     "v": [
      1325,
-     838,
+     5828,
      1030
     ],
     "tang": 1
@@ -225,7 +233,7 @@
     "ten": "Lãi gộp (tỷ)",
     "v": [
      720,
-     446,
+     -444,
      477
     ]
    },
@@ -233,7 +241,7 @@
     "ten": "Bán hàng + quản lý (tỷ)",
     "v": [
      -261,
-     -545,
+     -748,
      -300
     ]
    },
@@ -241,7 +249,7 @@
     "ten": "Kinh doanh cốt lõi (tỷ)",
     "v": [
      459,
-     -99,
+     -1192,
      177
     ]
    },
@@ -252,23 +260,23 @@
     "ten": "Lãi bán dự án & thu nhập tài chính (tỷ)",
     "v": [
      638,
-     1396,
-     1444
+     2101,
+     683
     ]
    },
    {
     "ten": "Lãi vay (tỷ)",
     "v": [
      -347,
-     -617,
-     -850
+     -657,
+     -1050
     ]
    },
    {
     "ten": "Dự phòng, liên kết & khác (tỷ)",
     "v": [
      -99,
-     -509,
+     -610,
      -60
     ]
    },
@@ -276,24 +284,24 @@
     "ten": "LN trước thuế (tỷ)",
     "v": [
      651,
-     171,
-     711
+     -358,
+     -250
     ]
    },
    {
     "ten": "Thuế & cổ đông thiểu số (tỷ)",
     "v": [
      -136,
-     -294,
-     -314
+     -442,
+     -144
     ]
    },
    {
     "ten": "LN cổ đông (tỷ)",
     "v": [
      515,
-     -123,
-     397
+     -800,
+     -394
     ],
     "dam": 1,
     "tang": 1
@@ -302,8 +310,8 @@
     "ten": "EPS (đ)",
     "v": [
      516,
-     -123,
-     398
+     -802,
+     -395
     ],
     "eps": 1
    },
@@ -314,8 +322,8 @@
     "ten": "Vốn chủ cổ đông cuối kỳ (nghìn tỷ)",
     "v": [
      12.4,
-     12.3,
-     12.7
+     11.6,
+     11.2
     ],
     "d": 1
    },
@@ -323,13 +331,13 @@
     "ten": "ROE (%)",
     "v": [
      4.4,
-     -1.0,
-     3.2
+     -6.7,
+     -3.5
     ],
     "d": 1
    }
   ],
-  "ghi": "2026E = 6T thực tế + 6T cuối mô hình (Q3 không bàn giao, Q4 giao Bắc Hà Thanh). Lãi bán Thuận An 2 = 3.000 − 1.576 tỷ giá sổ; thuế ~21% lãi bán dự án (6T/2026: 292/1.381 tỷ), lỗ kinh doanh và lãi vay không được trừ. Chưa tính chào bán 5:1."
+  "ghi": "2026E = 9T thực tế + Q4 mô hình (Q4 giao Bắc Hà Thanh; ghi nhận EverRich 2 giá 5.226 tỷ trên chi phí dở dang ~5.975 tỷ). Nửa Thuận An 2 còn lại giả định lãi bằng đợt 1 (662,6 tỷ). Thuế ~21% lãi bán dự án (9T/2026: 440/2.091 tỷ), lỗ kinh doanh và lãi vay không được trừ. Chưa tính chào bán 5:1."
  },
  "cau_ln": {
   "ten": "LN cổ đông 2025A → 2027E (kịch bản cơ sở)",
@@ -339,12 +347,12 @@
   ],
   "cuoi": [
    "2027E",
-   397
+   -394
   ],
   "buoc": [
    [
     "Lãi bán dự án",
-    806
+    45
    ],
    [
     "Kinh doanh cốt lõi",
@@ -352,7 +360,7 @@
    ],
    [
     "Lãi vay",
-    -503
+    -703
    ],
    [
     "Dự phòng & khác",
@@ -360,21 +368,30 @@
    ],
    [
     "Thuế",
-    -178
+    -8
    ]
   ],
-  "y": "Lãi bán dự án 2027E gấp 2,3 lần 2025 (Thuận An 2) nhưng lãi vay tăng thêm ~503 tỷ và kinh doanh cốt lõi giảm khi Bắc Hà Thanh gần bán hết: LN vẫn dưới 2025. Đi từ 2026E (lỗ) thì phần cải thiện chủ yếu là không lặp lại ~504 tỷ dự phòng.",
+  "y": "Lãi bán dự án 2027E (nửa Thuận An 2 còn lại) chỉ ngang 2025 nhưng lãi vay tăng thêm ~703 tỷ sau khoản vay MB và kinh doanh cốt lõi giảm khi Bắc Hà Thanh gần bán hết: từ lãi 2025 sang lỗ. Đi từ 2026E thì phần cải thiện chủ yếu là không lặp lại ~750 tỷ lỗ EverRich 2 và ~504 tỷ dự phòng.",
   "ng": "BCTC 2025 · mô hình"
  },
  "gia_dinh": [
   {
    "ten": "Doanh thu bàn giao Q4/2026 (tỷ)",
    "v": [
-    "200",
-    "600",
-    "1.100"
+    "100",
+    "400",
+    "800"
    ],
-   "ly_do": "Bắc Hà Thanh (1.422 sản phẩm, GĐ2 chờ pháp lý); Q3 không bàn giao (MBS); MBS cả năm 1.120 tỷ (611 căn 6T cuối)"
+   "ly_do": "Bắc Hà Thanh (1.422 sản phẩm, GĐ2 chờ pháp lý); Q3 chỉ 8 tỷ (−98%); MBS cả năm 1.120 tỷ — cần ~1,1 nghìn tỷ trong Q4"
+  },
+  {
+   "ten": "Lãi/lỗ gộp EverRich 2 khi ghi nhận (tỷ)",
+   "v": [
+    "−749",
+    "−749",
+    "0"
+   ],
+   "ly_do": "Bán cho Big Gain 5.225,5 tỷ (21/8/2026), cấn trừ 6.944 tỷ đã ứng; chi phí dở dang 30/6 ~5.975 tỷ, chưa thấy trích lập. Tốt: chênh lệch đã nằm trong phải trả Big Gain"
   },
   {
    "ten": "Doanh thu bàn giao 2027 (tỷ)",
@@ -395,31 +412,31 @@
    "ly_do": "2025: 38,3%; MBS 2026F 48,5% (nhiều đất nền, shophouse), 2027F 44,5%"
   },
   {
-   "ten": "Thuận An 2 (99,9% Cao ốc Hòa Phú)",
+   "ten": "49,95% Thuận An 2 còn lại (lãi trước thuế)",
    "v": [
     "dời 2028",
-    "3.000 tỷ 2027",
-    "3.000 tỷ 2027"
+    "663 tỷ 2027",
+    "663 tỷ Q4/2026"
    ],
-   "ly_do": "HĐQT 10/6/2026: giá không thấp hơn 3.000 tỷ, chốt theo BCTC kiểm toán; giá sổ 1.576 tỷ (MBS); MBS dự kiến 2027"
+   "ly_do": "Q3 đã ghi nhận 49,95% Cao ốc Hòa Phú, lãi 662,6 tỷ; nửa còn lại giả định cùng giá. HĐQT 10/6: cả gói ≥ 3.000 tỷ, giá sổ 1.576 tỷ"
   },
   {
-   "ten": "Lãi vay 6T cuối 2026 · 2027 (tỷ)",
+   "ten": "Lãi vay Q4/2026 · 2027 (tỷ)",
    "v": [
-    "470 · 1.000",
-    "430 · 850",
-    "320 · 650"
+    "320 · 1.200",
+    "290 · 1.050",
+    "240 · 850"
    ],
-   "ly_do": "MBS 617 (2026F) → 6T cuối 430, 2027F 767; nợ vay ~11 nghìn tỷ, ~8%/năm vào chi phí. Tốt: một phần lãi vay Lotte được vốn hóa"
+   "ly_do": "Nợ vay 30/9 13,6 nghìn tỷ, ~8–8,5%/năm vào chi phí; Q3 180 tỷ (vay MB từ 10/8); MBS 2027F 767. Tốt: trả bớt nợ bằng tiền Thuận An 2"
   },
   {
-   "ten": "Bán hàng + quản lý 6T cuối · 2027 (tỷ)",
+   "ten": "Bán hàng + quản lý Q4/2026 · 2027 (tỷ)",
    "v": [
-    "260 · 340",
-    "200 · 300",
-    "160 · 260"
+    "240 · 340",
+    "150 · 300",
+    "100 · 260"
    ],
-   "ly_do": "6T/2026 345 tỷ (197 tỷ dự phòng); 2025 261 tỷ; MBS 2027F 271 tỷ"
+   "ly_do": "Q2 235, Q3 254 tỷ (gồm dự phòng); 2025 261 tỷ; MBS 2027F 271 tỷ"
   },
   {
    "ten": "Hệ số Thủ Thiêm (trên giá vốn)",
@@ -437,7 +454,7 @@
     "0,8",
     "1,0"
    ],
-   "ly_do": "Chưa hoàn tất; bên mua theo báo chí thuộc hệ sinh thái Bcons; xấu: dời sang 2028 hoặc giảm giá"
+   "ly_do": "Nửa đầu đã ghi nhận Q3 (rủi ro còn lại thấp hơn); bên mua theo báo chí thuộc hệ sinh thái Bcons; xấu: nửa sau dời 2028 hoặc giảm giá"
   },
   {
    "ten": "P/B vốn chủ phần còn lại",
@@ -446,35 +463,35 @@
     "0,70",
     "0,95"
    ],
-   "ly_do": "Phần này gánh nợ vay ~2,3 lần vốn chủ; NVL 0,61, DIG 0,80, NLG 0,83, KDH 0,94 (giá 20/10)"
+   "ly_do": "Phần này gánh nợ vay ~2,8 lần vốn chủ; NVL 0,61, DIG 0,80, NLG 0,82, KDH 0,90 (giá 02/11)"
   }
  ],
  "kich_ban": [
   {
    "ten": "Xấu",
-   "ln26": -543,
-   "ln27": -1268,
-   "gia": 8.0,
-   "mo_ta": "Q4 giao 200 tỷ, Thuận An 2 dời sang 2028, lãi vay 2027 1.000 tỷ; Thủ Thiêm × 0,70, Thuận An 2 × 0,4, phần còn lại P/B 0,45"
+   "ln26": -1133,
+   "ln27": -1468,
+   "gia": 7.5,
+   "mo_ta": "Q4 giao 100 tỷ, EverRich 2 lỗ ~750 tỷ, nửa Thuận An 2 dời 2028, lãi vay 2027 1.200 tỷ; Thủ Thiêm × 0,70, Thuận An 2 × 0,4, phần còn lại P/B 0,45"
   },
   {
    "ten": "Cơ sở",
-   "ln26": -123,
-   "ln27": 397,
-   "gia": 10.9,
-   "mo_ta": "Q4 giao 600 tỷ, Thuận An 2 ghi nhận 2027, lãi vay 2027 850 tỷ; Thủ Thiêm × 0,85, Thuận An 2 × 0,8, phần còn lại P/B 0,70"
+   "ln26": -800,
+   "ln27": -394,
+   "gia": 9.9,
+   "mo_ta": "Q4 giao 400 tỷ, EverRich 2 lỗ ~750 tỷ, nửa Thuận An 2 ghi nhận 2027, lãi vay 2027 1.050 tỷ; Thủ Thiêm × 0,85, Thuận An 2 × 0,8, phần còn lại P/B 0,70"
   },
   {
    "ten": "Tốt",
-   "ln26": 364,
-   "ln27": 966,
-   "gia": 13.5,
-   "mo_ta": "Q4 giao 1.100 tỷ (như MBS), bàn giao 2027 1.500 tỷ, một phần lãi vay Lotte vốn hóa; Thủ Thiêm × 1,0, Thuận An 2 × 1,0, phần còn lại P/B 0,95"
+   "ln26": 821,
+   "ln27": -347,
+   "gia": 12.9,
+   "mo_ta": "Q4 giao 800 tỷ và nửa Thuận An 2, EverRich 2 không lỗ, bàn giao 2027 1.500 tỷ, trả bớt nợ; Thủ Thiêm × 1,0, Thuận An 2 × 1,0, phần còn lại P/B 0,95"
   }
  ],
  "dinh_gia": {
   "tieu": "Định giá theo tài sản (NAV điều chỉnh)",
-  "phu": "Thủ Thiêm theo giá vốn × hệ số + lãi Thuận An 2 × hệ số + vốn chủ phần còn lại × P/B",
+  "phu": "Thủ Thiêm theo giá vốn × hệ số + lãi Thuận An 2 còn lại × hệ số + vốn chủ phần còn lại × P/B",
   "ck": 0,
   "cp": 997.8,
   "phan": [
@@ -502,61 +519,61 @@
     ]
    },
    {
-    "ten": "Lãi Thuận An 2 chờ ghi nhận",
+    "ten": "Lãi 49,95% Thuận An 2 còn lại",
     "mau": "c3",
     "x": [
-     1114,
-     1114,
-     1114
+     523,
+     523,
+     523
     ],
     "boi": [
      0.4,
      0.8,
      1.0
     ],
-    "x_ten": "Lãi sau thuế (giá ≥ 3.000 tỷ − giá sổ 1.576 tỷ)",
+    "x_ten": "Lãi sau thuế, giả định bằng đợt 1 (Q3: 662,6 tỷ trước thuế)",
     "boi_ten": "hệ số",
     "boi_d": 1,
     "sh": 1,
     "gt": [
-     446,
-     891,
-     1114
+     209,
+     418,
+     523
     ]
    },
    {
     "ten": "Vốn chủ phần còn lại",
     "mau": "c2",
     "x": [
-     4924,
-     4924,
-     4924
+     4185,
+     4185,
+     4934
     ],
     "boi": [
      0.45,
      0.7,
      0.95
     ],
-    "x_ten": "Vốn chủ cổ đông 30/6/2026 − giá vốn Thủ Thiêm",
+    "x_ten": "Vốn chủ cổ đông 30/9/2026 − giá vốn Thủ Thiêm − lỗ EverRich 2",
     "boi_ten": "P/B",
     "boi_d": 2,
     "sh": 1,
     "gt": [
-     2216,
-     3447,
-     4678
+     1883,
+     2930,
+     4687
     ]
    }
   ],
   "von": [
-   8028,
-   10854,
-   13458
+   7458,
+   9864,
+   12876
   ],
   "gia": [
-   8.0,
-   10.9,
-   13.5
+   7.5,
+   9.9,
+   12.9
   ]
  },
  "nhay": [
@@ -571,18 +588,23 @@
    0.7
   ],
   [
-   "P/B vốn chủ phần còn lại ±0,1 lần",
-   null,
+   "EverRich 2 không lỗ (chênh ~750 tỷ đã nằm trong phải trả Big Gain)",
+   749,
    0.5
   ],
   [
-   "Giá bán Thuận An 2 ±300 tỷ",
-   235,
-   0.2
+   "P/B vốn chủ phần còn lại ±0,1 lần",
+   null,
+   0.4
   ],
   [
-   "Lãi suất ±1 điểm % trên ~11 nghìn tỷ nợ vay (1 năm)",
-   110,
+   "Giá bán 49,95% Thuận An 2 còn lại ±150 tỷ",
+   118,
+   0.1
+  ],
+  [
+   "Lãi suất ±1 điểm % trên 13,6 nghìn tỷ nợ vay (1 năm)",
+   136,
    0.1
   ]
  ],
@@ -730,7 +752,8 @@
    "2026-07",
    "2026-08",
    "2026-09",
-   "2026-10"
+   "2026-10",
+   "2026-11"
   ],
   "v": [
    1.54,
@@ -874,21 +897,22 @@
    0.91,
    0.98,
    0.89,
-   0.9
+   0.9,
+   0.87
   ],
   "p10": 1.16,
-  "p25": 1.39,
+  "p25": 1.36,
   "tv": 2.04,
   "thap": [
    "2023-02",
    0.83
   ],
   "nay": [
-   "2026-10",
-   0.9
+   "2026-11",
+   0.87
   ],
   "ng": "Giá cuối tháng, vốn chủ sở hữu công ty mẹ (BCTC VNDirect, dùng sau 45 ngày kết thúc quý); dữ liệu nhánh co-ban-data.",
-  "dung": "Kịch bản dùng P/B 0,45 · 0,70 · 0,95 cho vốn chủ phần còn lại (Thủ Thiêm tính riêng theo giá vốn × hệ số): dưới đáy lịch sử (0,83, 2/2023) vì phần này gánh ~11,4 nghìn tỷ nợ vay. Cả công ty ở giá trị cơ sở ≈ P/B 0,86. P/B từ 1,18 (6/2026) còn 0,90 sau thương vụ Lotte; 2023–2025: 0,83–2,5 lần dù ROE 1,5–7%."
+  "dung": "Kịch bản dùng P/B 0,45 · 0,70 · 0,95 cho vốn chủ phần còn lại (Thủ Thiêm tính riêng theo giá vốn × hệ số): dưới đáy lịch sử (0,83, 2/2023) vì phần này gánh 13,6 nghìn tỷ nợ vay. Cả công ty ở giá trị cơ sở ≈ P/B 0,78. P/B từ 1,18 (6/2026) còn 0,87 sau thương vụ Lotte; 2023–2025: 0,83–2,5 lần dù ROE 1,5–7%."
  },
  "theo_doi": [
   {
@@ -905,32 +929,44 @@
    "quy": "Q4/2026",
    "fd": "2026-12-31",
    "ln": [
-    -456,
-    -136,
-    125
+    -1356,
+    -1023,
+    598
    ],
    "ck": 314
   },
   {
    "quy": "Cả năm 2026",
    "ln": [
-    -543,
-    -123,
-    364
+    -1133,
+    -800,
+    821
    ]
   }
  ],
  "su_kien": [
   {
-   "khi": "20–30/10/2026",
+   "khi": "30/10/2026 (đã ra)",
    "loai": "hai",
-   "tieu": "KQKD Q3/2026",
-   "ct": "MBS dự báo LN 26 tỷ (−70%); không bàn giao, không bán dự án mà lãi vay Lotte chạy từ 10/8. Xem nợ vay, phải thu khác 30/9 và cách hạch toán 35% Lotte.",
+   "tieu": "KQKD Q3/2026: lãi 10 tỷ nhờ bán nửa Thuận An 2",
+   "ct": "Thu nhập tài chính 710 tỷ (lãi 49,95% Hòa Phú 662,6) − lãi vay 180 − cốt lõi lỗ 251 − khác; thuế 144 tỷ. Mô hình cũ: lỗ 200 tỷ, MBS +26. Lệch vì thời điểm bán vốn.",
    "tac": [
-    "−200 tỷ",
-    "cơ sở; lãi như MBS (+26 tỷ) là kịch bản tốt"
+    "10 tỷ",
+    "LN cổ đông Q3 (cùng kỳ 86 tỷ); 9T 223 tỷ = 26% kế hoạch"
    ],
-   "theo_doi": "LN cổ đông, lãi vay, phải thu"
+   "theo_doi": "nợ vay, người mua trả trước, phải thu"
+  },
+  {
+   "khi": "Q4/2026–2027",
+   "loai": "xuong",
+   "muc": 2,
+   "tieu": "Ghi nhận EverRich 2: có thể lỗ ~750 tỷ",
+   "ct": "Bán cho Big Gain 5.226 tỷ (21/8), cấn trừ 6.944 tỷ đối tác đã ứng — không thu thêm tiền, còn nợ 2.421 tỷ. Chi phí dở dang ~5.975 tỷ (30/6), chưa thấy trích lập; thêm ~924 tỷ bồi thường hợp đồng.",
+   "tac": [
+    "−0,8 nghìn đ/cp",
+    "cơ sở đã trừ; không lỗ là kịch bản tốt"
+   ],
+   "theo_doi": "doanh thu, giá vốn, dự phòng tồn kho Q4"
   },
   {
    "khi": "23/10/2026",
@@ -946,11 +982,11 @@
   {
    "khi": "Q4/2026–2027",
    "loai": "hai",
-   "tieu": "Thuận An 2: ghi nhận Q4/2026 hay 2027",
-   "ct": "Kế hoạch tổng doanh thu 8.830 tỷ ≈ giá 4 thương vụ (8.039 tỷ) + ~0,8 nghìn tỷ vận hành — hàm ý tính Thuận An 2 trong 2026; MBS dời sang 2027. Chỉ đổi năm ghi nhận.",
+   "tieu": "49,95% Thuận An 2 còn lại: Q4/2026 hay 2027",
+   "ct": "Q3 đã ghi nhận nửa đầu (lãi 662,6 tỷ). Kế hoạch LNST 868 tỷ (9T đạt 223) cần nửa còn lại trong Q4; cơ sở đặt 2027. Chỉ đổi năm ghi nhận, không đổi giá trị.",
    "tac": [
-    "+1.114 tỷ LN",
-    "năm hoàn tất (≥ 3.000 tỷ, giá sổ 1.576 tỷ, thuế ~21%)"
+    "+523 tỷ LN",
+    "năm ghi nhận nửa còn lại (lãi giả định bằng đợt 1, thuế ~21%)"
    ],
    "theo_doi": "công bố hoàn tất chuyển nhượng"
   },
@@ -970,10 +1006,10 @@
    "loai": "xuong",
    "muc": 3,
    "tieu": "Lãi vay vượt lãi kinh doanh",
-   "ct": "Nợ vay ~11,4 nghìn tỷ sau gói vay MB (96 tháng), thêm tối đa 2.727 tỷ khi Lotte Properties HCMC tăng vốn lên 12 nghìn tỷ. MBS: khả năng trả lãi 0,5–0,6 lần 2026–2027.",
+   "ct": "Nợ vay 30/9 13,6 nghìn tỷ (gói vay MB 96 tháng), thêm tối đa 2.727 tỷ khi Lotte Properties HCMC tăng vốn lên 12 nghìn tỷ; còn nợ Big Gain 2.421 tỷ. Q3 lãi vay 180 tỷ so với cốt lõi lỗ 251 tỷ.",
    "tac": [
-    "±110 tỷ LN/năm",
-    "mỗi 1 điểm % lãi suất trên ~11 nghìn tỷ nợ vay"
+    "±136 tỷ LN/năm",
+    "mỗi 1 điểm % lãi suất trên 13,6 nghìn tỷ nợ vay"
    ],
    "theo_doi": "nợ vay, lãi vay mỗi quý"
   },
@@ -994,7 +1030,7 @@
    "loai": "xuong",
    "muc": 2,
    "tieu": "Chất lượng phải thu",
-   "ct": "Phải thu khác gần 5.000 tỷ (gấp ~4,7 lần đầu năm), ~1.700 tỷ phải thu cá nhân; bên mua Serenity (Fortis) lập 3/2026, PDR còn ~694 tỷ phải thu dài hạn (MBS).",
+   "ct": "Phải thu ngắn hạn 30/9 5,5 nghìn tỷ (30/6: 7,0); 30/6 phải thu khác gần 5.000 tỷ, ~1.700 tỷ phải thu cá nhân; bên mua Serenity (Fortis) lập 3/2026, PDR còn ~694 tỷ phải thu dài hạn (MBS).",
    "tac": [
     "−0,2 nghìn đ/cp",
     "nếu trích lập 20% phần phải thu cá nhân"
@@ -1006,10 +1042,10 @@
    "loai": "xuong",
    "muc": 1,
    "tieu": "Chào bán 5:1 giá 10.000 đ, cổ tức cổ phiếu 10%",
-   "ct": "Tối đa 199,56 triệu cp thu 1.996 tỷ (Hàn River 1.550, 239 CMT8 300, vốn lưu động 146), giá dưới giá trị sổ sách ~12,6 nghìn đ/cp; cả hai chưa thực hiện.",
+   "ct": "Tối đa 199,56 triệu cp thu 1.996 tỷ (Hàn River 1.550, 239 CMT8 300, vốn lưu động 146), giá dưới giá trị sổ sách ~12,6 nghìn đ/cp; cả hai chưa thực hiện (vốn điều lệ 30/9 chưa đổi).",
    "tac": [
-    "−0,1 nghìn đ/cp",
-    "nếu chào bán đủ ở 10.000 đ (dưới giá trị cơ sở)"
+    "+1.996 tỷ tiền",
+    "nếu chào bán đủ; giá 10.000 đ ≈ giá trị cơ sở nên giá trị/cp gần như không đổi"
    ],
    "theo_doi": "ngày đăng ký cuối cùng"
   },
@@ -1025,9 +1061,9 @@
    "khi": "Liên tục",
    "loai": "hai",
    "tieu": "Mức P/B thị trường trả",
-   "ct": "P/B từ 1,18 (6/2026) xuống 0,90 sau khi công bố vay MB mua Lotte; đáy lịch sử 0,83 (2/2023); 2023–2025: 0,83–2,5 lần dù ROE 1,5–7%.",
+   "ct": "P/B từ 1,18 (6/2026) xuống 0,87 sau khi công bố vay MB mua Lotte; đáy lịch sử 0,83 (2/2023); 2023–2025: 0,83–2,5 lần dù ROE 1,5–7%.",
    "tac": [
-    "±0,5 nghìn đ/cp",
+    "±0,4 nghìn đ/cp",
     "mỗi 0,1 lần P/B phần còn lại"
    ],
    "theo_doi": "P/B so với ROE"
@@ -1047,7 +1083,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1060,7 +1097,8 @@
       2,
       408,
       907,
-      474
+      474,
+      710
      ],
      "mau": "c1"
     },
@@ -1074,16 +1112,17 @@
       196,
       170,
       -7,
-      -233
+      -233,
+      -251
      ],
      "mau": "c4"
     }
    ],
-   "y": "8 quý: 2,2 nghìn tỷ thu nhập tài chính (gần hết là lãi bán dự án) so với 316 tỷ lãi cốt lõi; Q2/2026 cốt lõi lỗ 233 tỷ (gồm ~164 tỷ dự phòng).",
+   "y": "9 quý: 2,9 nghìn tỷ thu nhập tài chính (gần hết là lãi bán dự án) so với lãi 65 tỷ cốt lõi; Q2–Q3/2026 cốt lõi lỗ 233 / 251 tỷ (quản lý ~240 tỷ/quý, gồm dự phòng); Q3 thu nhập tài chính 710 tỷ là nửa Thuận An 2.",
    "ng": "BCTC (VNDirect); cốt lõi = lãi gộp − bán hàng − quản lý"
   },
   {
-   "ten": "Bán 4 dự án, mua 35% Thủ Thiêm",
+   "ten": "Bán dự án, mua 35% Thủ Thiêm",
    "kieu": "cot_chong",
    "dv": "tỷ",
    "so_le": 0,
@@ -1092,6 +1131,7 @@
     "Tam Hiệp",
     "Serenity",
     "Thuận An 2",
+    "EverRich 2",
     "Lotte 35%"
    ],
    "ss": [
@@ -1101,7 +1141,8 @@
       1901,
       638,
       2500,
-      0,
+      1500,
+      5226,
       0
      ],
      "mau": "c2"
@@ -1112,7 +1153,8 @@
       0,
       0,
       0,
-      3000,
+      1500,
+      0,
       0
      ],
      "mau": "c4"
@@ -1124,13 +1166,14 @@
       0,
       0,
       0,
+      0,
       7666
      ],
      "mau": "c1"
     }
    ],
-   "y": "Giá 4 thương vụ cộng lại ~8,04 nghìn tỷ ≈ giá mua 35% Lotte (7.666 tỷ), chưa gồm ~2.727 tỷ góp thêm khi dự án tăng vốn.",
-   "ng": "Công bố PDR qua báo chí 2–6/2026 (Thuận An 2: giá tối thiểu, HĐQT 10/6); Tam Hiệp ~638 tỷ, Lotte: MBS 14/10"
+   "y": "4 thương vụ thu tiền ~8,04 nghìn tỷ ≈ giá mua 35% Lotte (7.666 tỷ), chưa gồm ~2.727 tỷ góp thêm. Thuận An 2: nửa đầu ghi nhận Q3 (chia đôi giá tối thiểu 3.000 tỷ). EverRich 2 (5.226 tỷ) chỉ cấn trừ khoản Big Gain đã ứng, không thu thêm tiền.",
+   "ng": "Công bố PDR qua báo chí 2–10/2026 (Thuận An 2: giá tối thiểu, HĐQT 10/6); Tam Hiệp ~638 tỷ, Lotte: MBS 14/10; EverRich 2: cafebiz 9/2026"
   },
   {
    "ten": "Nợ vay và tiền",
@@ -1145,7 +1188,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1158,7 +1202,8 @@
       5.9,
       5.5,
       4.4,
-      5.2
+      5.2,
+      13.6
      ],
      "mau": "c1"
     },
@@ -1172,13 +1217,14 @@
       0.1,
       0.4,
       0.2,
-      2.6
+      2.6,
+      1.7
      ],
      "mau": "c4",
      "net": 0
     }
    ],
-   "y": "30/6/2026 nợ vay 5,2 nghìn tỷ, tiền 2,6 nghìn tỷ nhờ bán dự án — trước khi trả 7.666 tỷ cho Lotte (10/8) bằng gói vay MB 6.108 tỷ và tiền mặt; MBS ước nợ vay cuối 2026 10,6 nghìn tỷ.",
+   "y": "Q3 nợ vay tăng từ 5,2 lên 13,6 nghìn tỷ sau khi trả 7.666 tỷ cho Lotte (10/8) bằng vay MB và tiền mặt; tiền còn 1,7 nghìn tỷ. MBS từng ước nợ vay cuối 2026 10,6 nghìn tỷ.",
    "ng": "BCTC (VNDirect); MBS 14/10"
   },
   {
@@ -1194,7 +1240,8 @@
     "Q3/25",
     "Q4/25",
     "Q1/26",
-    "Q2/26"
+    "Q2/26",
+    "Q3/26"
    ],
    "ss": [
     {
@@ -1207,7 +1254,8 @@
       6.1,
       7.0,
       8.1,
-      7.0
+      7.0,
+      5.5
      ],
      "mau": "c1"
     },
@@ -1221,13 +1269,14 @@
       15.0,
       16.7,
       15.1,
-      13.6
+      13.6,
+      13.0
      ],
      "mau": "c2",
      "net": 0
     }
    ],
-   "y": "Phải thu ngắn hạn 7,0 nghìn tỷ (30/6) = 56% vốn chủ, chưa giảm dù đã bán nhiều dự án; tồn kho giảm khi Serenity thôi hợp nhất.",
+   "y": "Phải thu ngắn hạn 30/9 5,5 nghìn tỷ (30/6: 7,0) = 44% vốn chủ. Tồn kho 13,0 nghìn tỷ vẫn gồm EverRich 2 (~6 nghìn tỷ) đến khi ghi nhận bán cho Big Gain.",
    "ng": "BCTC (VNDirect); MBS 14/10"
   }
  ],
@@ -1237,23 +1286,32 @@
    {
     "ten": "LNST cổ đông công ty mẹ",
     "kh": 868,
-    "th": 213,
-    "ky": "6T",
-    "tg": 50,
+    "th": 223,
+    "ky": "9T",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 16/4/2026 · BCTC Q2"
+    "ng": "ĐHĐCĐ 16/4/2026 · BCTC Q3"
+   },
+   {
+    "ten": "Tổng doanh thu (thuần + tài chính)",
+    "kh": 8830,
+    "th": 2273,
+    "ky": "9T",
+    "tg": 75,
+    "dv": "tỷ",
+    "ng": "ĐHĐCĐ 16/4/2026 (gồm chuyển nhượng cổ phần) · BCTC Q3"
    },
    {
     "ten": "Chào bán 5:1 cho cổ đông (tiền thu)",
     "kh": 1996,
     "th": 0,
-    "ky": "10/2026",
-    "tg": 80,
+    "ky": "30/9",
+    "tg": 75,
     "dv": "tỷ",
-    "ng": "ĐHĐCĐ 16/4/2026"
+    "ng": "ĐHĐCĐ 16/4/2026 · vốn điều lệ BCTC Q3"
    }
   ],
-  "y": "6T đạt 25% kế hoạch LNST dù đã có 1,4 nghìn tỷ lãi bán dự án. Kế hoạch tổng doanh thu 8.830 tỷ ≈ giá 4 thương vụ (8.039 tỷ) + vận hành: muốn đạt, Thuận An 2 phải ghi nhận ngay Q4. Mô hình cơ sở: 2026E lỗ 123 tỷ.",
+  "y": "9T đạt 26% kế hoạch LNST dù đã có 2,09 nghìn tỷ thu nhập tài chính; tổng doanh thu 2.273 tỷ, riêng doanh thu thuần chỉ 182 tỷ. Muốn đạt, Q4 cần nửa Thuận An 2 còn lại và EverRich 2 không lỗ. Mô hình cơ sở: 2026E lỗ 800 tỷ.",
   "ng": ""
  },
  "mang": [
@@ -1319,7 +1377,7 @@
     [
      "Thuận An 2 (99,9%)",
      "≥ 3.000 tỷ",
-     "HĐQT 10/6/2026, chờ hoàn tất"
+     "49,95% xong Q3 (lãi 662,6 tỷ)"
     ]
    ],
    "y": [
@@ -1334,6 +1392,14 @@
     {
      "t": "6T/2026 lãi thanh lý đầu tư 1.381 tỷ đưa LNTT lên 505 tỷ trong khi kinh doanh chính lỗ 241 tỷ.",
      "ng": "MBS 14/10 · BCTC"
+    },
+    {
+     "t": "Q3/2026: chuyển nhượng 49,95% Cao ốc Hòa Phú (chủ đầu tư Thuận An 2) qua công ty con Cao ốc Bình Dương, lãi 662,6 tỷ; thêm 46,5 tỷ lãi thanh lý đầu tư.",
+     "ng": "BCTC Q3 · Vietstock 30/10"
+    },
+    {
+     "t": "The EverRich 2 chuyển nhượng cho Big Gain 21/8/2026, giá 5.225,5 tỷ cấn trừ 6.944 tỷ đối tác đã ứng; PDR còn phải trả 2.421,4 tỷ, thêm ~924 tỷ bồi thường hợp đồng tư vấn, quản lý dự án.",
+     "ng": "cafebiz, markettimes 9/2026 · BCTC Q3"
     }
    ]
   },
@@ -1375,27 +1441,27 @@
   },
   {
    "ten": "Vốn — nợ vay, phải thu, cổ phiếu",
-   "phu": "Bảng cân đối hợp nhất 30/6/2026 (trước khoản vay MB)",
+   "phu": "Bảng cân đối hợp nhất 30/9/2026 (sau khoản vay MB)",
    "so": [
     [
      "Nợ vay",
-     "5,2 nghìn tỷ",
-     "trước gói vay MB"
+     "13,6 nghìn tỷ",
+     "30/6: 5,2 nghìn tỷ"
     ],
     [
      "Tiền + đầu tư NH",
-     "2,6 nghìn tỷ",
-     "30/6/2026"
+     "1,7 nghìn tỷ",
+     "30/9/2026"
     ],
     [
-     "Phải thu ngắn hạn",
-     "7,0 nghìn tỷ",
-     "phải thu khác ~5 nghìn tỷ"
+     "Người mua trả trước",
+     "5,8 nghìn tỷ",
+     "~5,2 nghìn tỷ EverRich 2"
     ],
     [
      "Vốn chủ cổ đông",
-     "12,59 nghìn tỷ",
-     "BVPS 12.618 đ"
+     "12,60 nghìn tỷ",
+     "BVPS 12.628 đ"
     ]
    ],
    "y": [
@@ -1520,6 +1586,36 @@
  ],
  "ctck_chu": "Chỉ tham khảo — mô hình và định giá của trang ở các phần trên. VCBS, Shinhan, VPBS ra trước thương vụ Lotte (6/2026); MBS 14/10 là bản duy nhất đã tính khoản vay MB. PDR không chia cổ tức tiền mặt trong 12 tháng qua.",
  "nguon": [
+  {
+   "ten": "Vietstock — Phát Đạt thoát lỗ nhờ chuyển nhượng công ty con, thêm 5,2 nghìn tỷ người mua trả trước từ The EverRich 2",
+   "ngay": "30/10/2026",
+   "link": "https://vietstock.vn/2026/10/phat-dat-thoat-lo-nho-chuyen-nhuong-cong-ty-con-nhan-them-52-ngan-ty-nguoi-mua-tra-truoc-tu-the-everrich-2-737-1509812.htm"
+  },
+  {
+   "ten": "Znews — Phát Đạt hụt thu 98% mảng bất động sản quý III",
+   "ngay": "10/2026",
+   "link": "https://znews.vn/phat-dat-hut-thu-98-mang-bat-dong-san-quy-iii-post1693595.html"
+  },
+  {
+   "ten": "Doanh nhân — PDR thoát lỗ nhờ bán tài sản, đột biến 5.200 tỷ tiền khách trả trước",
+   "ngay": "10/2026",
+   "link": "https://doanhnhan.baophapluat.vn/bat-dong-san-phat-dat-pdr-thoat-lo-nho-ban-tai-san-dot-bien-5-200-ty-dong-tien-khach-tra-truoc-tai-the-everrich-2.html"
+  },
+  {
+   "ten": "An ninh Thủ đô — Phát Đạt lãi nhờ bán vốn, nợ vay tăng sau thương vụ Lotte",
+   "ngay": "11/2026",
+   "link": "https://anninhthudo.vn/phat-dat-thoat-lo-nho-ban-von-du-an-khoan-dau-tu-vao-lotte-gay-ap-luc-no-vay-post674184.antd"
+  },
+  {
+   "ten": "CafeBiz — Chính thức bán EverRich 2 sau 9 năm, Phát Đạt vẫn còn 2 gánh nặng trên BCTC",
+   "ngay": "09/2026",
+   "link": "https://cafebiz.vn/chinh-thuc-ban-everrich-2-sau-9-nam-phat-dat-van-con-2-ganh-nang-tren-bao-cao-tai-chinh-176260908134441422.chn"
+  },
+  {
+   "ten": "Markettimes — Bán EverRich 2: phải trả Big Gain, bồi thường hợp đồng",
+   "ngay": "09/2026",
+   "link": "https://markettimes.vn/chinh-thuc-ban-everrich-2-sau-9-nam-phat-dat-van-con-2-ganh-nang-tren-bao-cao-tai-chinh-130503.html"
+  },
   {
    "ten": "MBS — Thủ Thiêm mở chu kỳ mới, lợi nhuận ngắn hạn chịu áp lực lãi vay",
    "ngay": "14/10/2026",
