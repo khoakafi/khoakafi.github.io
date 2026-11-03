@@ -2139,7 +2139,7 @@ function renderMatch(){
 /* ===== Tin tuc theo ma =====
    Nguon: VNDirect finfo (dung nha cung cap ma app da dung cho gia/BCTC).
    Loc theo truong tagCodes -> ra tin bao, cong bo thong tin, bao cao phan tich
-   cua dung ma do. FireAnt tra 401 (phai co token) nen khong lay tu do;
+   cua dung ma do. API FireAnt tra 401 (phai co token) -> tin FireAnt di qua widget nhung chinh thuc (chip "FireAnt", mac dinh);
    TCBS / SSI / DNSE deu chan CORS nen trinh duyet khong goi duoc. */
 const TT_NHOM = {
   company_news:      ['Doanh nghiệp', '#0E7A35', '#E7F6EC'],
@@ -2155,42 +2155,88 @@ const TT_LOC = [
   ['cbtt', 'Công bố TT',  ['disclosure','rights_disclosure']],
   ['bc',   'Phân tích',   ['analytic_report']]
 ];
-let TT_DATA = [], TT_MA = '', TT_LOCHIEN = 'all';
+let TT_DATA = [], TT_MA = '', TT_LOCHIEN = 'fa', TT_LOI = false, TT_DANG = false;
+/* FireAnt: widget chinh thuc "Tin tuc theo ma" (fireant.vn/widgets/builder -> /embed?widget=symbol-news).
+   Khong dung API cua ho (restv2 can token). Widget gui postMessage
+   {source:'fireant-widget', type:'ready'|'resize', id, height} -> tu gian chieu cao khung. */
+const TT_FA_ID = 'kn_fa_tin';
+const ttFaUrl = ma => 'https://fireant.vn/embed?widget=symbol-news&symbol=' + encodeURIComponent(ma)
+  + '&limit=30&_id=' + TT_FA_ID;
+let ttFaSan = false, ttFaHen = 0;
+window.addEventListener('message', e => {
+  if (e.origin !== 'https://fireant.vn') return;
+  const d = e.data; if (!d || d.source !== 'fireant-widget' || d.id !== TT_FA_ID) return;
+  const f = document.getElementById('ttFaKhung'); if (!f) return;
+  if (d.type === 'ready') { ttFaSan = true; clearTimeout(ttFaHen); const c = document.getElementById('ttFaCho'); if (c) c.remove(); }
+  if (d.type === 'resize' && d.height > 0) f.style.height = Math.min(Math.max(d.height, 160), 6000) + 'px';
+});
 const ttEsc = t => String(t == null ? '' : t)
   .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
-async function loadTinTuc(){
+async function loadTinTuc(giu){
   const box = document.getElementById('tab-news'); if (!box || !curT) return;
   if (TT_MA === curT && TT_DATA.length) { veTinTuc(); return; }
-  const ma = curT; TT_MA = ma; TT_DATA = []; TT_LOCHIEN = 'all';
-  box.innerHTML = '<div class="mini" style="padding:6px 0">Đang tải tin…</div>';
+  const ma = curT; TT_MA = ma; TT_DATA = []; TT_LOI = false; TT_DANG = true; TT_LOCHIEN = giu || 'fa';
+  veTinTuc();   /* FireAnt hien ngay, khong cho VNDirect */
   try {
     const u = 'https://api-finfo.vndirect.com.vn/v4/news?q=tagCodes:' + ma
             + '~locale:VN&size=50&sort=newsDate:desc';
     const r = await fetch(u, {cache:'no-store'}).then(x => x.json());
     if (TT_MA !== ma) return;
     TT_DATA = (r && r.data) || [];
-    veTinTuc();
   } catch(e) {
     if (TT_MA !== ma) return;
-    box.innerHTML = '<div class="mini">Không tải được tin. '
-      + '<a href="javascript:void 0" style="color:var(--green-dark);font-weight:700" '
-      + 'onclick="__ttTaiLai()">Thử lại</a></div>';
+    TT_LOI = true;
   }
+  TT_DANG = false;
+  /* dang xem FireAnt thi chi cap nhat so tren chip, khong ve lai iframe */
+  if (TT_LOCHIEN === 'fa') { const c = document.getElementById('ttChips'); if (c) c.innerHTML = ttChips(); }
+  else veTinTuc();
+}
+
+function ttDem(k){ const g = (TT_LOC.find(x => x[0] === k) || [])[2];
+  return g ? TT_DATA.filter(d => g.indexOf(d.newsGroup) >= 0).length : TT_DATA.length; }
+function ttChips(){
+  const nut = (k, ten) => '<button class="pill' + (TT_LOCHIEN === k ? ' on' : '') + '" style="font-size:11.5px;padding:4px 11px"'
+    + ' onclick="__ttLoc(\'' + k + '\')">' + ten + '</button>';
+  return nut('fa', 'FireAnt')
+    + TT_LOC.filter(x => x[0] === 'all' || ttDem(x[0]) > 0)
+        .map(([k, ten]) => nut(k, ten + (TT_DATA.length ? ' ' + ttDem(k) : ''))).join('');
 }
 
 function veTinTuc(){
   const box = document.getElementById('tab-news'); if (!box) return;
-  const dem = k => { const g = (TT_LOC.find(x => x[0] === k) || [])[2];
-    return g ? TT_DATA.filter(d => g.indexOf(d.newsGroup) >= 0).length : TT_DATA.length; };
-  const chips = TT_LOC.filter(x => dem(x[0]) > 0).map(([k, ten]) =>
-    '<button class="pill' + (TT_LOCHIEN === k ? ' on' : '') + '" style="font-size:11.5px;padding:4px 11px"'
-    + ' onclick="__ttLoc(\'' + k + '\')">' + ten + ' ' + dem(k) + '</button>').join('');
+  const dau = '<div id="ttChips" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">' + ttChips() + '</div>';
+  const ma = TT_MA || curT || '';
+
+  if (TT_LOCHIEN === 'fa') {
+    ttFaSan = false; clearTimeout(ttFaHen);
+    box.innerHTML = dau + '<div>'
+      + '<div id="ttFaCho" class="mini" style="padding:6px 0">Đang tải tin từ FireAnt…</div>'
+      + '<iframe id="ttFaKhung" src="' + ttEsc(ttFaUrl(ma)) + '" title="Tin tức ' + ttEsc(ma) + ' — FireAnt"'
+      + ' referrerpolicy="strict-origin-when-cross-origin"'
+      + ' style="display:block;width:100%;height:620px;border:0;background:transparent"></iframe>'
+      + '<div class="mini" style="margin-top:8px;font-style:italic">Nguồn tin: widget FireAnt · '
+      + '<a href="https://fireant.vn/ma-chung-khoan/' + encodeURIComponent(ma) + '/tin-tuc" target="_blank" rel="noopener"'
+      + ' style="color:var(--green-dark);font-weight:700">Mở trên FireAnt ↗</a></div></div>';
+    /* 12 s khong thay widget bao 'ready' -> bao cho nguoi xem, goi y chuyen sang VNDirect */
+    ttFaHen = setTimeout(() => {
+      if (ttFaSan) return; const c = document.getElementById('ttFaCho'); if (!c) return;
+      c.innerHTML = 'FireAnt tải chậm hoặc bị chặn. <a href="javascript:void 0" style="color:var(--green-dark);font-weight:700"'
+        + ' onclick="__ttLoc(\'all\')">Xem tin VNDirect</a>';
+    }, 12000);
+    return;
+  }
+
   const nhomLoc = (TT_LOC.find(x => x[0] === TT_LOCHIEN) || [])[2];
   const ds = nhomLoc ? TT_DATA.filter(d => nhomLoc.indexOf(d.newsGroup) >= 0) : TT_DATA;
 
   if (!TT_DATA.length) {
-    box.innerHTML = '<div class="mini">Chưa có tin nào cho mã này.</div>'; return;
+    box.innerHTML = dau + (TT_LOI
+      ? '<div class="mini">Không tải được tin VNDirect. <a href="javascript:void 0" style="color:var(--green-dark);font-weight:700" onclick="__ttTaiLai()">Thử lại</a></div>'
+      : TT_DANG ? '<div class="mini">Đang tải tin…</div>'
+      : '<div class="mini">Chưa có tin VNDirect cho mã này.</div>');
+    return;
   }
   const ngay = d => d ? (d.slice(8,10) + '/' + d.slice(5,7)) : '';
   const html = ds.map(d => {
@@ -2215,7 +2261,7 @@ function veTinTuc(){
              + 'style="flex:none;width:52px;height:52px;border-radius:8px;object-fit:cover;background:#EEF0F3">' : '')
       + '</a>';
   }).join('');
-  box.innerHTML = '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px">' + chips + '</div>'
+  box.innerHTML = dau
     + (ds.length ? html : '<div class="mini" style="padding:10px 0">Không có tin trong mục này.</div>')
     + '<div class="mini" style="margin-top:10px;font-style:italic">Nguồn tin: VNDirect · bấm để mở bài gốc.</div>';
 }
@@ -2223,7 +2269,7 @@ function veTinTuc(){
    let o cap script nen KHONG nam tren window -> phai doi qua ham nay, neu khong
    lenh gan chi tao ra mot bien toan cuc khac va bo loc khong an gi. */
 window.__ttLoc = function(k){ TT_LOCHIEN = k; veTinTuc(); };
-window.__ttTaiLai = function(){ TT_MA = ''; loadTinTuc(); };
+window.__ttTaiLai = function(){ const k = TT_LOCHIEN; TT_MA = ''; loadTinTuc(k); };
 window.loadTinTuc = loadTinTuc; window.veTinTuc = veTinTuc;
 
 async function loadRecs(){

@@ -422,6 +422,13 @@ VNDirect thắng (as-of lùi về ngày công bố nếu số khớp ±10%). D�
 Nguồn tự động: đã dò KBS, 24hmoney (cũng chỉ đến Q2 khi FPT đã công bố), Simplize, CafeF, Vietstock, FireAnt (401), TCBS — chưa có nguồn
 nào nhanh hơn VNDirect; hiện gom tay bằng tác tử WebSearch (máy task không mở được báo VN, chỉ đọc đoạn trích; hạn ~200 lượt/tác tử).
 
+## Tin tức FireAnt (03/11/2026, anh Khoa: "nhúng tin tức của fireant")
+
+Tab Tin tức (Chi tiết mã) mặc định chip **FireAnt** = iframe widget chính thức `https://fireant.vn/embed?widget=symbol-news&symbol=<MA>&limit=30&_id=kn_fa_tin`
+(tìm từ `fireant.vn/widgets/builder`; danh sách widget ở chunk `224-*.js`). Widget gửi `postMessage {source:'fireant-widget', type:'ready'|'resize', id, height}`
+→ khung tự giãn. 12 s không 'ready' → gợi ý xem tin VNDirect. Các chip VNDirect (Tất cả / Tin bài / Công bố TT / Phân tích) giữ nguyên.
+**Không gọi API FireAnt** (`restv2.fireant.vn` cần token, 401). Dò trang bằng Chromium trên runner: workflow `do-trang.yml` (`scripts/do-trang.mjs`, ô `eval` chạy JS trong trang).
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`
