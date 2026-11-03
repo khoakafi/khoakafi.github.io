@@ -2161,7 +2161,7 @@ let TT_DATA = [], TT_MA = '', TT_LOCHIEN = 'fa', TT_LOI = false, TT_DANG = false
    {source:'fireant-widget', type:'ready'|'resize', id, height} -> tu gian chieu cao khung. */
 const TT_FA_ID = 'kn_fa_tin';
 const ttFaUrl = ma => 'https://fireant.vn/embed?widget=symbol-news&symbol=' + encodeURIComponent(ma)
-  + '&limit=30&_id=' + TT_FA_ID;
+  + '&limit=20&_id=' + TT_FA_ID;
 let ttFaSan = false, ttFaHen = 0;
 window.addEventListener('message', e => {
   if (e.origin !== 'https://fireant.vn') return;
