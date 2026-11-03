@@ -2173,25 +2173,11 @@ window.addEventListener('message', e => {
 const ttEsc = t => String(t == null ? '' : t)
   .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
-async function loadTinTuc(giu){
+async function loadTinTuc(){
+  /* 03/11 anh Khoa: chi lay tin FireAnt (bo tin VNDirect) */
   const box = document.getElementById('tab-news'); if (!box || !curT) return;
-  if (TT_MA === curT && TT_DATA.length) { veTinTuc(); return; }
-  const ma = curT; TT_MA = ma; TT_DATA = []; TT_LOI = false; TT_DANG = true; TT_LOCHIEN = giu || 'fa';
-  veTinTuc();   /* FireAnt hien ngay, khong cho VNDirect */
-  try {
-    const u = 'https://api-finfo.vndirect.com.vn/v4/news?q=tagCodes:' + ma
-            + '~locale:VN&size=50&sort=newsDate:desc';
-    const r = await fetch(u, {cache:'no-store'}).then(x => x.json());
-    if (TT_MA !== ma) return;
-    TT_DATA = (r && r.data) || [];
-  } catch(e) {
-    if (TT_MA !== ma) return;
-    TT_LOI = true;
-  }
-  TT_DANG = false;
-  /* dang xem FireAnt thi chi cap nhat so tren chip, khong ve lai iframe */
-  if (TT_LOCHIEN === 'fa') { const c = document.getElementById('ttChips'); if (c) c.innerHTML = ttChips(); }
-  else veTinTuc();
+  if (TT_MA === curT && document.getElementById('ttFaKhung')) return;
+  TT_MA = curT; TT_LOCHIEN = 'fa'; veTinTuc();
 }
 
 function ttDem(k){ const g = (TT_LOC.find(x => x[0] === k) || [])[2];
@@ -2206,7 +2192,7 @@ function ttChips(){
 
 function veTinTuc(){
   const box = document.getElementById('tab-news'); if (!box) return;
-  const dau = '<div id="ttChips" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">' + ttChips() + '</div>';
+  const dau = '';
   const ma = TT_MA || curT || '';
 
   if (TT_LOCHIEN === 'fa') {
@@ -2222,8 +2208,7 @@ function veTinTuc(){
     /* 12 s khong thay widget bao 'ready' -> bao cho nguoi xem, goi y chuyen sang VNDirect */
     ttFaHen = setTimeout(() => {
       if (ttFaSan) return; const c = document.getElementById('ttFaCho'); if (!c) return;
-      c.innerHTML = 'FireAnt tải chậm hoặc bị chặn. <a href="javascript:void 0" style="color:var(--green-dark);font-weight:700"'
-        + ' onclick="__ttLoc(\'all\')">Xem tin VNDirect</a>';
+      c.innerHTML = 'FireAnt tải chậm hoặc bị chặn — bấm "Mở trên FireAnt" bên dưới.';
     }, 12000);
     return;
   }

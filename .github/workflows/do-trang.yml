@@ -18,6 +18,14 @@ on:
       chars:
         default: '4000'
         type: string
+      trinh:
+        description: chromium | webkit (iPhone 13)
+        default: chromium
+        type: string
+      feval:
+        description: JS chay trong tung iframe
+        default: ''
+        type: string
       vw:
         description: Be rong cua so (px)
         default: '1280'
@@ -28,7 +36,7 @@ jobs:
     timeout-minutes: 10
     steps:
     - uses: actions/checkout@v4
-    - run: npm i --no-save playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
+    - run: npm i --no-save playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium webkit >/dev/null 2>&1
     - run: node scripts/do-trang.mjs
       env:
         URL_: ${{ inputs.url }}
@@ -36,3 +44,5 @@ jobs:
         CHO: ${{ inputs.cho }}
         CHARS: ${{ inputs.chars }}
         VW: ${{ inputs.vw }}
+        TRINH: ${{ inputs.trinh }}
+        FEVAL: ${{ inputs.feval }}
