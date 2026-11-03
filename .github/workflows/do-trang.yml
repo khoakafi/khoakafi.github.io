@@ -18,6 +18,10 @@ on:
       chars:
         default: '4000'
         type: string
+      vw:
+        description: Be rong cua so (px)
+        default: '1280'
+        type: string
 jobs:
   do:
     runs-on: ubuntu-latest
@@ -31,3 +35,4 @@ jobs:
         EVAL: ${{ inputs.eval }}
         CHO: ${{ inputs.cho }}
         CHARS: ${{ inputs.chars }}
+        VW: ${{ inputs.vw }}

@@ -2,7 +2,7 @@
 import { chromium } from 'playwright';
 const URL_ = process.env.URL_, EVAL = process.env.EVAL || '', CHO = +(process.env.CHO || 6000);
 const b = await chromium.launch();
-const p = await b.newPage({ viewport: { width: 1280, height: 900 } });
+const p = await b.newPage({ viewport: { width: +(process.env.VW || 1280), height: 900 } });
 const req = [];
 p.on('request', r => { const u = r.url(); if (!/\.(png|jpe?g|svg|woff2?|css)(\?|$)/.test(u)) req.push(r.method() + ' ' + u); });
 p.on('console', m => console.log('[console]', m.text().slice(0, 300)));
