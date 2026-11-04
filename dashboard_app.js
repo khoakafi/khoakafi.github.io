@@ -2858,31 +2858,23 @@ function loadProChart(){
   };
   proChart.subscribeCrosshairMove(onCross);
   proVolChart.subscribeCrosshairMove(onCross);
-  [[proPeChart, proPe, 'pe'], [proPbChart, proPb, 'pb']].forEach(([ch, sr, k]) => { if (!ch) return;
-    ch.subscribeCrosshairMove(onCross);
-    let mk = false;
-    proChart.subscribeCrosshairMove(p => { if (mk) return; mk = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
-      if (ci == null || dgA[k][ci] == null) ch.clearCrosshairPosition(); else ch.setCrosshairPosition(+dgA[k][ci].toFixed(2), curOhlc.t[ci], sr); } catch(e){} mk = false; });
-    ch.subscribeCrosshairMove(p => { if (mk) return; mk = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
-      if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, curOhlc.t[ci], proCandle); } catch(e){} mk = false; });
-  });
-  if (proRsiChart) { proRsiChart.subscribeCrosshairMove(onCross);
-    let mr = false;
-    proChart.subscribeCrosshairMove(p => { if (mr) return; mr = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
-      if (ci == null || rsiA[ci] == null) proRsiChart.clearCrosshairPosition(); else proRsiChart.setCrosshairPosition(rsiA[ci], curOhlc.t[ci], proRsi); } catch(e){} mr = false; });
-    proRsiChart.subscribeCrosshairMove(p => { if (mr) return; mr = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
-      if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, curOhlc.t[ci], proCandle); } catch(e){} mr = false; });
-  }
-  // soi guong con tro giua 2 khung
-  let mirroring = false;
-  proChart.subscribeCrosshairMove(p => { if (mirroring) return; mirroring = true; try {
+  /* Dong bo con tro giua MOI khung (gia, KL, RSI, P/E, P/B) bang MOT co chung: truoc day moi cap co co rieng ->
+     khung P/E co the bi khung khac xoa ngay sau khi vua dat (04/11, KDH "con chuot ko theo"). Chi khung co chuot that dieu khien. */
+  const khung = [[proChart, proCandle, ci => candData[ci] ? candData[ci].close : null], [proVolChart, proVol, ci => volAt(ci)]];
+  if (proRsiChart) khung.push([proRsiChart, proRsi, ci => rsiA[ci]]);
+  if (proPeChart) khung.push([proPeChart, proPe, ci => dgA.pe[ci] == null ? null : +dgA.pe[ci].toFixed(2)]);
+  if (proPbChart) khung.push([proPbChart, proPb, ci => dgA.pb[ci] == null ? null : +dgA.pb[ci].toFixed(2)]);
+  let dongBo = false;
+  khung.forEach(([ch]) => { if (ch !== proChart && ch !== proVolChart) ch.subscribeCrosshairMove(onCross);
+    ch.subscribeCrosshairMove(p => { if (dongBo) return; dongBo = true; try {
       const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
-      if (ci == null) proVolChart.clearCrosshairPosition(); else proVolChart.setCrosshairPosition(volAt(ci), curOhlc.t[ci], proVol);
-    } catch(e){} mirroring = false; });
-  proVolChart.subscribeCrosshairMove(p => { if (mirroring) return; mirroring = true; try {
-      const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
-      if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, curOhlc.t[ci], proCandle);
-    } catch(e){} mirroring = false; });
+      khung.forEach(([c2, s2, gt]) => { if (c2 === ch) return; try {
+        const v = ci == null ? null : gt(ci);
+        if (ci == null) c2.clearCrosshairPosition();
+        else if (v == null || !isFinite(v)) c2.setCrosshairPosition(NaN, curOhlc.t[ci], s2);
+        else c2.setCrosshairPosition(v, curOhlc.t[ci], s2);
+      } catch(e){ try { c2.clearCrosshairPosition(); } catch(_){} } });
+    } catch(e){} dongBo = false; }); });
   /* Khung #proK duoc GIU khi doi ma -> listener chi gan 1 lan. Truoc day no nho showLeg cua MA DAU TIEN:
      roi chuot khoi chart (vd sang bang ben phai) la ghi de gia/GTGD cua ma cu len legend. Nay goi qua window.__proRoi (ma hien tai). */
   window.__proRoi = () => { lastCi = -999; showLeg(null); updateKpis(null); updateDPx(null); };
