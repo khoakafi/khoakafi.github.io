@@ -431,6 +431,13 @@ Tab Tin tức (Chi tiết mã) mặc định chip **FireAnt** = iframe widget ch
 Muốn đúng kiểu trang FireAnt (ảnh lớn + tóm tắt) phải có dữ liệu bài — API cần token, không dùng. Kiểm Safari: `do-trang.yml` ô `trinh` = webkit (runner ubuntu-24.04).
 **Không gọi API FireAnt** (`restv2.fireant.vn` cần token, 401). Dò trang bằng Chromium trên runner: workflow `do-trang.yml` (`scripts/do-trang.mjs`, ô `eval` chạy JS trong trang).
 
+## P/E, P/B dưới chart (04/11/2026, anh Khoa: "thêm P/B vs P/E chạy dưới chart")
+
+Nút **P/E**, **P/B** trên thanh công cụ chart (cạnh MA/RSI, nhớ theo `kn_ind`) → khung riêng như RSI (`proPePane`, `proPbPane`; `__knRsiH` = tổng chiều cao
+các khung phụ, khung dưới cùng mang trục thời gian). Số: VNDirect `ratios?q=code:X~ratioCode:PRICE_TO_EARNINGS|PRICE_TO_BOOK&sort=reportDate:desc&size=3000`
+(theo ngày, từ 12/2017; P/E cũ trước giữa 2022 dùng BCTC trước ngày công bố — chỉ để xem). Phiên VNDirect chưa có số (hôm nay) → quy theo giá.
+Vạch đứt "TB nN" = trung bình ≤ 5 năm (tham chiếu, không phải tín hiệu). Cache `KN_DG` trong bộ nhớ, chỉ lưu khi tải được. Test: scratchpad `pepb-test.js`.
+
 ## Số hiệu suất B★ tính ở đâu
 
 `bstar_books.js` chỉ nướng sẵn đường đến hết năm trước (`BSTAR_CURVE.end`). Phần năm nay `bstarCurve()`

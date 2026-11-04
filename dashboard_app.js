@@ -2321,14 +2321,20 @@ let proLoadedFor = null, proChart = null, proVolChart = null, proCandle = null, 
 /* 29/10/2026 (anh Khoa: "thêm MA50 - MA200, cái đo % kéo từ giá này đến giá kia, RSI"): công cụ chart Chi tiết mã.
    Bật/tắt nhớ theo người xem (localStorage kn_ind). RSI là khung riêng dưới khối lượng (lightweight-charts 4 không có pane). */
 let proRsiChart = null, proRsi = null, proMa50 = null, proMa200 = null;
-const KN_IND = (function(){ let o = { ma20: 1, ma50: 0, ma200: 0, rsi: 0 };
+/* 04/11/2026 (anh Khoa: "thêm P/B vs P/E chạy dưới chart"): 2 khung riêng như RSI, số ngày của VNDirect (ratios, từ 12/2017),
+   phiên chưa có số thì nội suy theo giá (P/E hôm nay = P/E phiên gần nhất × giá nay / giá phiên đó). */
+let proPeChart = null, proPe = null, proPbChart = null, proPb = null;
+const KN_DG = {};   // { MA: { pe: {ngay: v}, pb: {ngay: v} } } — chi luu khi tai thanh cong
+const KN_IND = (function(){ let o = { ma20: 1, ma50: 0, ma200: 0, rsi: 0, pe: 0, pb: 0 };
   try { const j = JSON.parse(localStorage.getItem('kn_ind') || 'null'); if (j && typeof j === 'object') o = Object.assign(o, j); } catch(e){}
   return o; })();
-window.__knRsiH = function(){ return KN_IND.rsi ? ((window.innerWidth || 999) < 620 ? 84 : 110) : 0; };
+window.__knPaneH = function(){ return (window.innerWidth || 999) < 620 ? 84 : 110; };
+/* tong chieu cao cac khung chi bao duoi khoi luong (RSI, P/E, P/B) */
+window.__knRsiH = function(){ return ((KN_IND.rsi ? 1 : 0) + (KN_IND.pe ? 1 : 0) + (KN_IND.pb ? 1 : 0)) * window.__knPaneH(); };
 window.__knDo = { on: false, a: null, b: null, xong: false };
 function knVeTools(){
   const box = document.getElementById('dTools'); if (!box) return;
-  const DS = [['ma20', 'MA20', '#2962FF'], ['ma50', 'MA50', '#FF9800'], ['ma200', 'MA200', '#9C27B0'], ['rsi', 'RSI', '#7E57C2']];
+  const DS = [['ma20', 'MA20', '#2962FF'], ['ma50', 'MA50', '#FF9800'], ['ma200', 'MA200', '#9C27B0'], ['rsi', 'RSI', '#7E57C2'], ['pe', 'P/E', '#475569'], ['pb', 'P/B', '#18A34B']];
   const nut = (k, ten, mau, bat) => `<button type="button" data-k="${k}" class="knTool${bat ? ' on' : ''}" style="--m:${mau}"><i></i>${ten}</button>`;
   box.innerHTML = DS.map(d => nut(d[0], d[1], d[2], !!KN_IND[d[0]])).join('')
     + `<button type="button" data-k="do" class="knTool knDo${window.__knDo.on ? ' on' : ''}" title="Bấm điểm đầu rồi điểm cuối trên chart để đo % (Esc để xoá)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17 17 3l4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg>Đo %</button>`;
@@ -2343,7 +2349,7 @@ function knVeTools(){
     if (k === 'do') { const D = window.__knDo; D.on = !D.on; D.a = D.b = null; D.xong = false; b.classList.toggle('on', D.on); if (window.__knVeDo) window.__knVeDo(); return; }
     KN_IND[k] = KN_IND[k] ? 0 : 1; b.classList.toggle('on', !!KN_IND[k]);
     try { localStorage.setItem('kn_ind', JSON.stringify(KN_IND)); } catch(x){}
-    if (k === 'rsi') { proLoadedFor = null; loadProChart(); if (window.__knTranMan) setTimeout(window.__knTranMan, 30); return; }
+    if (k === 'rsi' || k === 'pe' || k === 'pb') { proLoadedFor = null; loadProChart(); if (window.__knTranMan) setTimeout(window.__knTranMan, 30); return; }
     const sr = k === 'ma20' ? proMa : k === 'ma50' ? proMa50 : proMa200;
     try { if (sr) sr.applyOptions({ visible: !!KN_IND[k] }); } catch(x){}
     if (window.__proLegend) window.__proLegend(null);
@@ -2464,11 +2470,13 @@ function loadProChart(){
   /* Doi ma: GIU NGUYEN khung (chieu cao da canh theo man hinh), chi thay chart ben trong.
      Truoc day dung lai innerHTML moi lan -> khung ve 360px roi nhay lai ~479px: giat khi bam sang ma khac. */
   const _k0 = document.getElementById('proK');
-  const giuKhung = !!(_k0 && wrap.contains(_k0) && document.getElementById('proPx') && document.getElementById('proVolPane') && document.getElementById('proRsiPane'));
+  const giuKhung = !!(_k0 && wrap.contains(_k0) && document.getElementById('proPx') && document.getElementById('proVolPane') && document.getElementById('proRsiPane') && document.getElementById('proPbPane'));
   if (!giuKhung) wrap.innerHTML = '<div id="proK" style="position:relative">'
     + '<div id="proPx" style="height:360px;position:relative"><canvas id="proBadgeCv" style="position:absolute;left:0;top:0;z-index:3;pointer-events:none"></canvas><canvas id="proDoCv" style="position:absolute;left:0;top:0;z-index:4;pointer-events:none"></canvas></div>'
     + '<div id="proVolPane" style="height:145px;border-top:1px solid #F0F3FA"></div>'
     + '<div id="proRsiPane" style="height:0;display:none;border-top:1px solid #F0F3FA;position:relative"><div id="proRsiLegend" style="position:absolute;top:4px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#7E57C2;pointer-events:none;background:rgba(255,255,255,.85);padding:0 6px;border-radius:4px"></div></div>'
+    + '<div id="proPePane" style="height:0;display:none;border-top:1px solid #F0F3FA;position:relative"><div id="proPeLegend" style="position:absolute;top:4px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#475569;pointer-events:none;background:rgba(255,255,255,.85);padding:0 6px;border-radius:4px"></div></div>'
+    + '<div id="proPbPane" style="height:0;display:none;border-top:1px solid #F0F3FA;position:relative"><div id="proPbLegend" style="position:absolute;top:4px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;pointer-events:none;background:rgba(255,255,255,.85);padding:0 6px;border-radius:4px"></div></div>'
     + '<div id="proLegend" style="position:absolute;top:6px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:rgba(255,255,255,.82);padding:3px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
     + '<div id="proVolLegend" style="position:absolute;top:366px;left:8px;z-index:5;font:12.5px/1.6 Inter,sans-serif;color:#128A3E;background:none;padding:3px 9px;text-shadow:0 1px 0 #fff,0 -1px 0 #fff,1px 0 0 #fff,-1px 0 0 #fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 48px);border-radius:4px;pointer-events:none"></div>'
     + '<button id="proFsBtn" title="Phóng to toàn màn hình" style="position:absolute;top:6px;right:8px;z-index:6;width:30px;height:30px;border:1px solid #DDE1E6;border-radius:6px;background:rgba(255,255,255,.92);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;color:#787B86"></button>'
@@ -2476,10 +2484,13 @@ function loadProChart(){
   try { if (proChart && proChart.remove) proChart.remove(); } catch(e){}
   try { if (proVolChart && proVolChart.remove) proVolChart.remove(); } catch(e){}
   try { if (proRsiChart && proRsiChart.remove) proRsiChart.remove(); } catch(e){}
-  proRsiChart = proRsi = null;
+  try { if (proPeChart && proPeChart.remove) proPeChart.remove(); } catch(e){}
+  try { if (proPbChart && proPbChart.remove) proPbChart.remove(); } catch(e){}
+  proRsiChart = proRsi = proPeChart = proPe = proPbChart = proPb = null;
   knVeTools();
-  { const rp = document.getElementById('proRsiPane'), pk = document.getElementById('proK'), rh = window.__knRsiH();
-    if (rp) { rp.style.display = rh ? '' : 'none'; rp.style.height = rh + 'px'; }
+  { const pk = document.getElementById('proK'), rh = window.__knRsiH(), ph = window.__knPaneH();
+    [['proRsiPane', 'rsi'], ['proPePane', 'pe'], ['proPbPane', 'pb']].forEach(([id, k]) => { const rp = document.getElementById(id);
+      if (rp) { rp.style.display = KN_IND[k] ? '' : 'none'; rp.style.height = (KN_IND[k] ? ph : 0) + 'px'; } });
     if (pk) pk.classList.toggle('coRsi', !!rh);
     const px0 = document.getElementById('proPx');
     if (px0 && !window.__proFS && !px0.dataset.knTm) px0.style.height = (360 - rh) + 'px'; }
@@ -2598,8 +2609,8 @@ function loadProChart(){
   window.__knRsiA = rsiA;
   if (KN_IND.rsi) {
     const o3 = JSON.parse(JSON.stringify(baseOpts));
-    o3.timeScale.visible = true; o3.layout.attributionLogo = false;
-    try { proVolChart.applyOptions({ timeScale: { visible: false } }); } catch(e){}   // truc thoi gian chuyen xuong khung RSI (duoi cung, nhu TradingView)
+    o3.timeScale.visible = !(KN_IND.pe || KN_IND.pb); o3.layout.attributionLogo = false;
+    try { proVolChart.applyOptions({ timeScale: { visible: false } }); } catch(e){}   // truc thoi gian chuyen xuong khung duoi cung (nhu TradingView)
     o3.rightPriceScale.scaleMargins = { top: 0.12, bottom: 0.08 };
     o3.handleScale = { mouseWheel: true, pinch: true, axisPressedMouseMove: false };
     proRsiChart = LightweightCharts.createChart(document.getElementById('proRsiPane'), o3);
@@ -2609,15 +2620,62 @@ function loadProChart(){
     [70, 30].forEach(v => proRsi.createPriceLine({ price: v, color: '#B0B7C3', lineWidth: 1, lineStyle: 2, axisLabelVisible: false }));
     proRsi.createPriceLine({ price: 50, color: '#E3E6EA', lineWidth: 1, lineStyle: 1, axisLabelVisible: false });
   }
+  // P/E, P/B: chuoi theo ngay khop voi nen; tai xong moi ve (khung hien ngay, so den sau)
+  const ngayNen = curOhlc.t.map(tt => { if (typeof tt === 'number' || /^\d+$/.test(String(tt))) return new Date(Number(tt) * 1000).toISOString().slice(0,10); return String(tt).slice(0,10); });
+  const dgA = { pe: new Array(candData.length).fill(null), pb: new Array(candData.length).fill(null) };
+  window.__knDgA = dgA;
+  const dgTao = (k, mau) => {
+    const o4 = JSON.parse(JSON.stringify(baseOpts));
+    o4.timeScale.visible = (k === 'pb' || !KN_IND.pb); o4.layout.attributionLogo = false;
+    try { proVolChart.applyOptions({ timeScale: { visible: false } }); } catch(e){}
+    o4.rightPriceScale.scaleMargins = { top: 0.14, bottom: 0.1 };
+    o4.handleScale = { mouseWheel: true, pinch: true, axisPressedMouseMove: false };
+    const ch = LightweightCharts.createChart(document.getElementById(k === 'pe' ? 'proPePane' : 'proPbPane'), o4);
+    const sr = ch.addLineSeries({ color: mau, lineWidth: 1.5, priceLineVisible: false, lastValueVisible: true, crosshairMarkerVisible: false });
+    return [ch, sr];
+  };
+  if (KN_IND.pe) [proPeChart, proPe] = dgTao('pe', '#475569');
+  if (KN_IND.pb) [proPbChart, proPb] = dgTao('pb', '#18A34B');
+  if (KN_IND.pe || KN_IND.pb) {
+    const maDg = curT;
+    const veDg = (dl) => {
+      if (maDg !== curT || !dl) return;
+      ['pe', 'pb'].forEach(k => {
+        const src = dl[k] || {}, a = dgA[k]; let iCuoi = -1;
+        for (let i = 0; i < ngayNen.length; i++) { const v = src[ngayNen[i]]; if (v != null && v > 0) { a[i] = v; iCuoi = i; } }
+        // phien sau ngay VNDirect cap nhat (hom nay): quy theo gia
+        if (iCuoi >= 0) for (let i = iCuoi + 1; i < ngayNen.length; i++) { const c0 = candData[iCuoi].close, c1 = candData[i].close; if (c0 > 0 && c1 > 0) a[i] = a[iCuoi] * c1 / c0; }
+        const sr = k === 'pe' ? proPe : proPb; if (!sr) return;
+        const ds = a.map((v,i) => v == null ? null : { time: curOhlc.t[i], value: +v.toFixed(2) }).filter(Boolean);
+        sr.setData(ds);
+        // duong trung binh 5 nam (tham chieu, khong phai tin hieu)
+        const gan = ds.slice(-1250).map(x => x.value).filter(v => v > 0 && v < (k === 'pe' ? 200 : 50));
+        if (gan.length > 60) { const tb = gan.reduce((x,y) => x + y, 0) / gan.length;
+          const nam = Math.max(1, Math.round(gan.length / 250)); dgA.nam = nam;
+          sr.createPriceLine({ price: +tb.toFixed(2), color: '#A9B4C2', lineWidth: 1, lineStyle: 2, axisLabelVisible: true, title: 'TB ' + nam + 'N' }); dgA[k + 'Tb'] = tb; }
+      });
+      if (window.__proLegend) window.__proLegend(null);
+    };
+    if (KN_DG[maDg]) veDg(KN_DG[maDg]);
+    else {
+      const lay = rc => jget(KN_FF + 'ratios?q=code:' + maDg + '~ratioCode:' + rc + '&sort=reportDate:desc&size=3000')
+        .then(r => { const o = {}; (r && r.data || []).forEach(x => { const v = knFfSo(x.value); if (v != null) o[String(x.reportDate).slice(0,10)] = v; }); return o; });
+      Promise.all([lay('PRICE_TO_EARNINGS'), lay('PRICE_TO_BOOK')]).then(([pe, pb]) => {
+        const dl = { pe: pe, pb: pb };
+        if (Object.keys(pe).length + Object.keys(pb).length > 20) KN_DG[maDg] = dl;   // khong luu khi tai hong / rong
+        veDg(dl);
+      }).catch(() => { ['proPeLegend', 'proPbLegend'].forEach(id => { const e = document.getElementById(id); if (e) e.textContent = 'Không tải được P/E, P/B'; }); });
+    }
+  }
   // dong bo truc thoi gian 2 khung
   const syncTS = (a,b) => a.timeScale().subscribeVisibleLogicalRangeChange(r => { if (r) try { b.timeScale().setVisibleLogicalRange(r); } catch(e){} });
   syncTS(proChart, proVolChart); syncTS(proVolChart, proChart);
-  if (proRsiChart) { syncTS(proChart, proRsiChart); syncTS(proRsiChart, proChart); }
+  [proRsiChart, proPeChart, proPbChart].forEach(c => { if (c) { syncTS(proChart, c); syncTS(c, proChart); } });
   // ep do rong truc gia 2 khung bang nhau -> nen va cot volume thang hang
   const alignScales = () => { try {
-    const w1 = proChart.priceScale('right').width(), w2 = proVolChart.priceScale('right').width(), w3 = proRsiChart ? proRsiChart.priceScale('right').width() : 0;
-    const w = Math.max(w1, w2, w3);
-    if (w > 0) { proChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); proVolChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); if (proRsiChart) proRsiChart.applyOptions({ rightPriceScale: { minimumWidth: w } }); }
+    const phu = [proRsiChart, proPeChart, proPbChart].filter(Boolean);
+    const w = Math.max(proChart.priceScale('right').width(), proVolChart.priceScale('right').width(), ...phu.map(c => c.priceScale('right').width()));
+    if (w > 0) [proChart, proVolChart, ...phu].forEach(c => c.applyOptions({ rightPriceScale: { minimumWidth: w } }));
   } catch(e){} };
   setTimeout(alignScales, 80); setTimeout(alignScales, 400); setTimeout(alignScales, 1000);
   // ==== mui ten + nhan mau (ve tay nhu ban cu) ====
@@ -2774,6 +2832,9 @@ function loadProChart(){
       + (KN_IND.ma20 ? SP + '<span style="color:#2962FF">' + L.m + (maV == null ? '—' : maV) + '</span>' : '') + maX(KN_IND.ma50, 'MA50', ma50a, '#FF9800') + maX(KN_IND.ma200, 'MA200', ma200a, '#9C27B0');
     const rleg = document.getElementById('proRsiLegend');
     if (rleg) { const rv = rsiA[ii]; rleg.innerHTML = 'RSI(14) = ' + (rv == null ? '—' : rv.toFixed(1)) + (rv != null && rv >= 70 ? ' · quá mua' : rv != null && rv <= 30 ? ' · quá bán' : ''); }
+    [['pe', 'P/E', 'proPeLegend'], ['pb', 'P/B', 'proPbLegend']].forEach(([k, ten, id]) => { const e = document.getElementById(id); if (!e || !KN_IND[k]) return;
+      const v = dgA[k][ii], tb = dgA[k + 'Tb'];
+      e.innerHTML = ten + ' = ' + (v == null ? '—' : v.toFixed(2)) + (tb ? '<span style="color:#7C8BA1"> · TB ' + (dgA.nam || 5) + ' năm ' + tb.toFixed(2) + (v != null ? ' (' + (v >= tb ? '+' : '') + ((v/tb - 1)*100).toFixed(0) + '%)' : '') + '</span>' : ''); });
     const _isIx = ((XROW(curT)||{}).b === 'IX');
     const fV = x => x == null ? '—' : (NAR ? (x >= 1e6 ? (x/1e6).toFixed(2) + 'tr' : Math.round(x/1e3) + 'k') : Math.round(x).toLocaleString('en-US'));
     if (vleg && _isIx) vleg.innerHTML = dsh + SP + L.v + fV(vv) + (pct == null ? '' : SP + pct + '%');
@@ -2793,6 +2854,14 @@ function loadProChart(){
   };
   proChart.subscribeCrosshairMove(onCross);
   proVolChart.subscribeCrosshairMove(onCross);
+  [[proPeChart, proPe, 'pe'], [proPbChart, proPb, 'pb']].forEach(([ch, sr, k]) => { if (!ch) return;
+    ch.subscribeCrosshairMove(onCross);
+    let mk = false;
+    proChart.subscribeCrosshairMove(p => { if (mk) return; mk = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
+      if (ci == null || dgA[k][ci] == null) ch.clearCrosshairPosition(); else ch.setCrosshairPosition(+dgA[k][ci].toFixed(2), curOhlc.t[ci], sr); } catch(e){} mk = false; });
+    ch.subscribeCrosshairMove(p => { if (mk) return; mk = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
+      if (ci == null) proChart.clearCrosshairPosition(); else proChart.setCrosshairPosition(candData[ci].close, curOhlc.t[ci], proCandle); } catch(e){} mk = false; });
+  });
   if (proRsiChart) { proRsiChart.subscribeCrosshairMove(onCross);
     let mr = false;
     proChart.subscribeCrosshairMove(p => { if (mr) return; mr = true; try { const ci = (p && p.time != null && tpos[p.time] != null) ? tpos[p.time] : null;
