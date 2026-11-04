@@ -2616,7 +2616,8 @@ function loadProChart(){
     proRsiChart = LightweightCharts.createChart(document.getElementById('proRsiPane'), o3);
     proRsi = proRsiChart.addLineSeries({ color: '#7E57C2', lineWidth: 1.5, priceLineVisible: false, lastValueVisible: true, crosshairMarkerVisible: false,
       autoscaleInfoProvider: () => ({ priceRange: { minValue: 0, maxValue: 100 } }) });
-    proRsi.setData(rsiA.map((v,i) => v == null ? null : { time: curOhlc.t[i], value: +v.toFixed(2) }).filter(Boolean));
+    // giu cho trong (whitespace) cho phien chua co so -> thu tu nen trung chart gia, dong bo theo logical range khong lech
+    proRsi.setData(rsiA.map((v,i) => v == null ? { time: curOhlc.t[i] } : { time: curOhlc.t[i], value: +v.toFixed(2) }));
     [70, 30].forEach(v => proRsi.createPriceLine({ price: v, color: '#B0B7C3', lineWidth: 1, lineStyle: 2, axisLabelVisible: false }));
     proRsi.createPriceLine({ price: 50, color: '#E3E6EA', lineWidth: 1, lineStyle: 1, axisLabelVisible: false });
   }
@@ -2636,6 +2637,7 @@ function loadProChart(){
   };
   if (KN_IND.pe) [proPeChart, proPe] = dgTao('pe', '#475569');
   if (KN_IND.pb) [proPbChart, proPb] = dgTao('pb', '#18A34B');
+  window.__knCh = { gia: proChart, pe: proPeChart, pb: proPbChart, rsi: proRsiChart };   // de kiem dong bo truc thoi gian
   if (KN_IND.pe || KN_IND.pb) {
     const maDg = curT;
     const veDg = (dl) => {
@@ -2646,8 +2648,10 @@ function loadProChart(){
         // phien sau ngay VNDirect cap nhat (hom nay): quy theo gia
         if (iCuoi >= 0) for (let i = iCuoi + 1; i < ngayNen.length; i++) { const c0 = candData[iCuoi].close, c1 = candData[i].close; if (c0 > 0 && c1 > 0) a[i] = a[iCuoi] * c1 / c0; }
         const sr = k === 'pe' ? proPe : proPb; if (!sr) return;
-        const ds = a.map((v,i) => v == null ? null : { time: curOhlc.t[i], value: +v.toFixed(2) }).filter(Boolean);
-        sr.setData(ds);
+        sr.setData(a.map((v,i) => v == null ? { time: curOhlc.t[i] } : { time: curOhlc.t[i], value: +v.toFixed(2) }));
+        const ds = a.map((v,i) => v == null ? null : { value: +v.toFixed(2) }).filter(Boolean);
+        // so ve sau khi chart da keo/zoom -> dat lai cung khung nhin voi chart gia
+        try { const ch = k === 'pe' ? proPeChart : proPbChart, r = proChart.timeScale().getVisibleLogicalRange(); if (ch && r) ch.timeScale().setVisibleLogicalRange(r); } catch(e){}
         // duong trung binh 5 nam (tham chieu, khong phai tin hieu)
         const gan = ds.slice(-1250).map(x => x.value).filter(v => v > 0 && v < (k === 'pe' ? 200 : 50));
         if (gan.length > 60) { const tb = gan.reduce((x,y) => x + y, 0) / gan.length;

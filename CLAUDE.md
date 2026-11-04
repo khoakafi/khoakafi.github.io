@@ -436,7 +436,7 @@ Muốn đúng kiểu trang FireAnt (ảnh lớn + tóm tắt) phải có dữ li
 Nút **P/E**, **P/B** trên thanh công cụ chart (cạnh MA/RSI, nhớ theo `kn_ind`) → khung riêng như RSI (`proPePane`, `proPbPane`; `__knRsiH` = tổng chiều cao
 các khung phụ, khung dưới cùng mang trục thời gian). Số: VNDirect `ratios?q=code:X~ratioCode:PRICE_TO_EARNINGS|PRICE_TO_BOOK&sort=reportDate:desc&size=3000`
 (theo ngày, từ 12/2017; P/E cũ trước giữa 2022 dùng BCTC trước ngày công bố — chỉ để xem). Phiên VNDirect chưa có số (hôm nay) → quy theo giá.
-Vạch đứt "TB nN" = trung bình ≤ 5 năm (tham chiếu, không phải tín hiệu). Cache `KN_DG` trong bộ nhớ, chỉ lưu khi tải được. Test: scratchpad `pepb-test.js`.
+Vạch đứt "TB nN" = trung bình ≤ 5 năm (tham chiếu, không phải tín hiệu). Cache `KN_DG` trong bộ nhớ, chỉ lưu khi tải được. Test: scratchpad `pepb-test.js`. **Chuỗi phải đủ mọi nến** (phiên chưa có số = `{time}` trống), vì các khung đồng bộ theo logical range (thứ tự nến) — lọc bỏ null làm lệch mấy năm (04/11, HDG).
 
 ## Số hiệu suất B★ tính ở đâu
 
