@@ -17,7 +17,8 @@ jobs:
       env:
         START: |
           https://www.vps.com.vn/
-          https://www.ssi.com.vn/khach-hang-ca-nhan/danh-muc-ty-le-ky-quy
-          https://www.ssi.com.vn/
-          https://www.vietcap.com.vn/
+          https://trading.vietcap.com.vn/price-board/utilities/margin-management?type=stock&language=vi
+        ALL_LINKS: '1'
+        WAIT: '12000'
+        MAXB: '4000'
     - run: python3 scripts/margin-doc.py

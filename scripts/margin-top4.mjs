@@ -18,7 +18,7 @@ async function taiFile(p, u) {
 async function xem(p, u, sau) {
   if (daXem.has(u)) return; daXem.add(u);
   console.log('#'.repeat(16), u);
-  let resp; try { resp = await p.goto(u, { waitUntil: 'domcontentloaded', timeout: 45000 }); await p.waitForTimeout(6000); } catch (e) { console.log('  LOI', e.message); return; }
+  let resp; try { resp = await p.goto(u, { waitUntil: 'domcontentloaded', timeout: 45000 }); await p.waitForTimeout(+(process.env.WAIT || 6000)); await p.mouse.wheel(0, 4000).catch(()=>{}); await p.waitForTimeout(2000); } catch (e) { console.log('  LOI', e.message); return; }
   console.log('  HTTP', resp && resp.status(), 'title:', await p.title());
   const ct = resp && resp.headers()['content-type'] || '';
   if (/pdf|excel|spreadsheet|octet/.test(ct)) { await taiFile(p, u); return; }
@@ -29,10 +29,20 @@ async function xem(p, u, sau) {
   const links = await p.evaluate(() => [...document.querySelectorAll('a[href]')].map(a => [a.href, (a.innerText || a.title || '').replace(/\s+/g, ' ').trim().slice(0, 120)]));
   const files = links.filter(([h]) => /\.(pdf|xlsx?)(\?|#|$)/i.test(h) || /download|attachment|upload/i.test(h));
   const lienQuan = links.filter(([h, t]) => KEY.test(h) || KEY.test(t));
+  if (process.env.ALL_LINKS) [...new Map(links)].slice(0, 200).forEach(([h, t]) => console.log('   . ', t, '=>', h));
   console.log('  link lien quan:', lienQuan.length); [...new Map(lienQuan)].slice(0, 40).forEach(([h, t]) => console.log('   -', t, '=>', h));
   for (const [h, t] of files) if (KEY.test(h) || KEY.test(t)) await taiFile(p, h);
   if (sau > 0) for (const [h, t] of [...new Map(lienQuan)].slice(0, 8)) if (!/\.(pdf|xlsx?)/i.test(h) && /^https?:/.test(h)) await xem(p, h, sau - 1);
 }
 const p = await ctx.newPage();
+const MAXB = +(process.env.MAXB || 3000);
+p.on('response', async r => { try {
+  const u = r.url(), ct = r.headers()['content-type'] || '';
+  if (!/json|excel|spreadsheet|pdf|text\/plain|csv/.test(ct) || /google|facebook|analytics|sentry|clarity|hotjar/.test(u)) return;
+  const body = await r.text().catch(() => '');
+  const n = (body.match(new RegExp(RX.source, 'g')) || []).length;
+  console.log('   ~ XHR', r.status(), ct.split(';')[0], body.length, 'ma:', n, u.slice(0, 220));
+  if (n > 0 || /margin|ky-?quy|loan|ratio/i.test(u)) { const f = `/tmp/m4/x${++nf}.txt`; fs.writeFileSync(f, body); console.log('     body:', body.slice(0, MAXB).replace(/\s+/g, ' ')); }
+} catch (e) {} });
 for (const u of START) await xem(p, u, /\.(pdf|xlsx?)/i.test(u) ? 0 : 1);
 await b.close();
