@@ -1,0 +1,15 @@
+name: margin-ds
+on:
+  workflow_dispatch:
+  push:
+    branches: ['claude/**']
+    paths: ['scripts/margin-ds.*', '.github/workflows/margin-ds.yml']
+jobs:
+  do:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+    - uses: actions/checkout@v4
+    - run: sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq poppler-utils >/dev/null
+    - run: pip install -q pandas openpyxl xlrd
+    - run: python3 scripts/margin-ds.py scripts/margin-ds.txt
