@@ -13,12 +13,21 @@ jobs:
     - run: sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq poppler-utils >/dev/null
     - run: pip install -q pandas openpyxl xlrd
     - run: npm i --no-save playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
+    - name: VPS menu
+      run: |
+        UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+        curl -s -A "$UA" https://www.vps.com.vn/api/v1/public/configs/menu > /tmp/menu.json
+        python3 -c "
+        import json,re
+        s=open('/tmp/menu.json').read()
+        for m in sorted(set(re.findall(r'\"([^\"]{0,40}(?:ky-quy|ky quy|ký quỹ|Ký quỹ|margin|Margin|danh-muc|Danh mục)[^\"]{0,120})\"', s)))): print('MENU', m)
+        "
+        for t in 1 2 3 4 5 6 7 8 9 10; do echo "== posts type $t"; curl -s -A "$UA" "https://www.vps.com.vn/api/v1/posts?sortBy=updatedAt&orderBy=desc&page=1&pageSize=50&type=$t" | grep -oiE '"(title|slug)":"[^"]{0,150}' | grep -iE 'quy|margin|danh' | head -15; done
     - run: node scripts/margin-top4.mjs
       env:
         START: |
-          https://www.vps.com.vn/
-          https://trading.vietcap.com.vn/price-board/utilities/margin-management?type=stock&language=vi
-        ALL_LINKS: '1'
+          https://www.vietcap.com.vn/san-pham-tai-chinh/huong-dan-chung-khoan-co-so/v01-goi-vay-tieu-chuan
+        ALL_LINKS: ''
         WAIT: '12000'
         MAXB: '4000'
     - run: python3 scripts/margin-doc.py
