@@ -1,0 +1,23 @@
+name: margin-top4
+on:
+  workflow_dispatch:
+  push:
+    branches: ['claude/**']
+    paths: ['scripts/margin-top4.*', 'scripts/margin-doc.py', '.github/workflows/margin-top4.yml']
+jobs:
+  do:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+    - uses: actions/checkout@v4
+    - run: sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq poppler-utils >/dev/null
+    - run: pip install -q pandas openpyxl xlrd
+    - run: npm i --no-save playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
+    - run: node scripts/margin-top4.mjs
+      env:
+        START: |
+          https://www.vps.com.vn/
+          https://www.ssi.com.vn/khach-hang-ca-nhan/danh-muc-ty-le-ky-quy
+          https://www.ssi.com.vn/
+          https://www.vietcap.com.vn/
+    - run: python3 scripts/margin-doc.py
