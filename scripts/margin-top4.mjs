@@ -31,7 +31,7 @@ async function xem(p, u, sau) {
   const lienQuan = links.filter(([h, t]) => KEY.test(h) || KEY.test(t));
   if (process.env.ALL_LINKS) [...new Map(links)].slice(0, 200).forEach(([h, t]) => console.log('   . ', t, '=>', h));
   console.log('  link lien quan:', lienQuan.length); [...new Map(lienQuan)].slice(0, 40).forEach(([h, t]) => console.log('   -', t, '=>', h));
-  for (const [h, t] of files) if (KEY.test(h) || KEY.test(t)) await taiFile(p, h);
+  for (const [h, t] of files) if (KEY.test(h) || KEY.test(t) || /danh-muc|ky-quy/.test(u)) await taiFile(p, h);
   if (sau > 0) for (const [h, t] of [...new Map(lienQuan)].slice(0, 8)) if (!/\.(pdf|xlsx?)/i.test(h) && /^https?:/.test(h)) await xem(p, h, sau - 1);
 }
 const p = await ctx.newPage();
@@ -44,5 +44,5 @@ p.on('response', async r => { try {
   console.log('   ~ XHR', r.status(), ct.split(';')[0], body.length, 'ma:', n, u.slice(0, 220));
   if (n > 0 || /margin|ky-?quy|loan|ratio/i.test(u)) { const f = `/tmp/m4/x${++nf}.txt`; fs.writeFileSync(f, body); console.log('     body:', body.slice(0, MAXB).replace(/\s+/g, ' ')); }
 } catch (e) {} });
-for (const u of START) await xem(p, u, /\.(pdf|xlsx?)/i.test(u) ? 0 : 1);
+for (const u of START) await xem(p, u, /\.(pdf|xlsx?)/i.test(u) ? 0 : (/vps/.test(u) ? 2 : 1));
 await b.close();
