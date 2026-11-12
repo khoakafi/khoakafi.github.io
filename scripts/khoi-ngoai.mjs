@@ -69,7 +69,10 @@ for (const [c, r] of Object.entries(ROWS)){
   const cuoi = a[a.length - 1] || a.slice().reverse().find(Boolean);
   if (!coGd || !(r.val20 >= 500)) continue;                                // bỏ mã không có giao dịch ngoại / GTGD TB20 < 0,5 tỷ
   const sh = r.cap > 0 && r.p > 0 ? r.cap * 1e9 / (r.p * 1000) : 0;         // số CP ước tính
-  const own = a.map(x => (x && sh > 0 && x.totalRoom > 0) ? Math.round((x.totalRoom - x.currentRoom) / sh * 1e4) / 100 : null);
+  /* % sở hữu theo ngày = (1 − room còn ÷ room tối đa) × trần %. Không chia cho số CP từng ngày: room tối đa đổi theo đợt phát hành
+     (FPT 29/10 nhảy 23,8% -> 26,0% chỉ vì đổi số CP) -> quy về tỷ lệ trên room thì liền mạch. Trần % = room tối đa phiên cuối ÷ số CP. */
+  const limPct = (sh > 0 && cuoi && cuoi.totalRoom > 0) ? cuoi.totalRoom / sh * 100 : null;
+  const own = a.map(x => (x && limPct && x.totalRoom > 0) ? Math.round((1 - x.currentRoom / x.totalRoom) * limPct * 100) / 100 : null);
   s[c] = {
     sec: (SEC[c] || '').trim(), san: r.b, ten: r.n, cap: r.cap, v20: r.val20, p: r.p,
     lim: (sh > 0 && cuoi && cuoi.totalRoom > 0) ? Math.round(cuoi.totalRoom / sh * 1e4) / 100 : null,
