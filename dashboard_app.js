@@ -1550,8 +1550,8 @@ const KN_BUOC = [   /* 12/11/2026: theo brief landing page — mỗi bước m�
   ['Thu thập','Data','Giá, thanh khoản và diễn biến thị trường.'],
   ['Bối cảnh','Market','Đánh giá thị trường trước khi tìm cơ hội.'],
   ['Xếp hạng','Score','Lọc và xếp hạng cổ phiếu theo tiêu chí định lượng.'],
-  ['Tín hiệu','Signal','Mua, bán hoặc đứng ngoài.'],
-  ['Quản trị','Risk','Tỷ trọng, điểm cắt lỗ, giới hạn rủi ro.'],
+  ['Điểm vào/ra','Signal','Mua, bán hoặc đứng ngoài.'],
+  ['Tỷ trọng & cắt lỗ','Risk','Vào bao nhiêu, sai thì thoát ở đâu.'],
   ['Rà soát','Review','Theo dõi kết quả, cập nhật dữ liệu, rà hệ thống.']
 ];
 function knHeroHtml(){
@@ -1567,11 +1567,6 @@ function knHeroHtml(){
         <h1>Đầu tư có quy tắc. <em>Giao dịch có kỷ luật.</em></h1>
         <p class="kh-lead">Hệ thống phân tích dữ liệu thị trường, đánh giá cổ phiếu và xác định điểm mua bán theo bộ quy tắc định lượng.</p>
         <p class="kh-khong">Không dự đoán thị trường. Không chạy theo cảm xúc.</p>
-        <ul class="kh-ds">
-          <li><b>Dữ liệu</b><span>Giá, thanh khoản, xu hướng thị trường.</span></li>
-          <li><b>Tín hiệu</b><span>Xếp hạng cổ phiếu, điểm mua bán.</span></li>
-          <li><b>Quản trị</b><span>Kiểm soát rủi ro, theo dõi hiệu suất.</span></li>
-        </ul>
         <div class="kh-num" id="khNum"></div>
       </div>
       <div class="kh-dev">
@@ -1593,10 +1588,11 @@ function knHeroHtml(){
         <a class="kh-b1" href="https://zalo.me/g/ykbtyp974" target="_blank" rel="noopener" onclick="try{gtag('event','cta_zalo',{from:'hero'})}catch(e){}">${zalo}Room Zalo trải nghiệm</a>
         <button class="kh-b3" type="button" onclick="knHeroCuon()">Xem số liệu hiệu suất ↓</button>
       </div>
-      <p class="kh-root">Nền tảng: <b>Jesse Livermore</b> · <b>Richard Wyckoff</b> · <b>CANSLIM — William O'Neil</b> · <b>Mark Minervini</b>. Nguyên tắc của họ thì ai cũng đọc được; phần tôi mất mười năm trên thị trường để hiệu chỉnh là <b>ngưỡng</b> — con số quyết định thế nào là đủ ở mỗi bước.</p>
+      <p class="kh-root">Nền tảng: <b>Livermore</b> · <b>Wyckoff</b> · <b>CANSLIM</b> · <b>Minervini</b> — phần tự hiệu chỉnh là <b>ngưỡng</b> ở từng bước.</p>
     </div>
     <div class="kh-flow">
-      <div class="kf-hd"><h2>Sáu bước chạy sau mỗi phiên</h2></div>
+      <div class="kf-hd"><h2>Quy trình 6 bước</h2><p>chạy lại toàn sàn sau mỗi phiên</p></div>
+      <div class="kf-ph">${[['Dữ liệu','Giá, thanh khoản, xu hướng thị trường'],['Tín hiệu','Xếp hạng cổ phiếu, điểm mua bán'],['Quản trị','Kiểm soát rủi ro, theo dõi hiệu suất']].map((x,i)=>`<div><b><i>0${i+1}</i>${x[0]}</b><span>${x[1]}</span></div>`).join('')}</div>
       <div class="kf-line">${KN_BUOC.map((b,i)=>`<div class="kf-s"><span class="kf-n">${i+1}</span><h3>${b[0]}<em>${b[1]}</em></h3><p>${b[2]}</p></div>`).join('')}</div>
     </div>
   </section>`;
