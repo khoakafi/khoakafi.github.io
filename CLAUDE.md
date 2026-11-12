@@ -473,3 +473,13 @@ Cả hai máy phát hành đều nướng `bstar_live.js` (Chrome: `autorun.js`;
 
 Làm từng phần nhỏ, đẩy lên ngay, báo ngắn gọn. Ghét chờ lâu và ghét dừng giữa chừng để hỏi.
 Sai thì nói thẳng là sai, đừng vòng vo.
+
+## Tab Khối ngoại (12/11/2026, anh Khoa: "như FireAnt nhưng nhìn ra insight, đa chiều, sang")
+
+`khoingoai.js` (`?v=`, tab cạnh Toàn cảnh, link `#khoi-ngoai`) + `khoingoai_data.js` (`window.KNG`, nạp lười khi mở tab, sw.js nhóm dữ liệu).
+Dữ liệu cuối phiên: workflow **`khoi-ngoai.yml`** (repo web, 15:23 / 17:47 / 20:17 VN T2–T6 + bấm tay) → `scripts/khoi-ngoai.mjs`: 60 phiên VNDirect
+`foreigns?q=tradingDate:D&size=4000` (mọi mã + VNINDEX/VN30/HNX/UPCOM + `FU_HNX` phái sinh) + `stock_prices?q=date:D` (adClose); hỏng/thiếu → không ghi.
+Mã: GTGD TB20 ≥ 0,5 tỷ và có giao dịch ngoại (~270). **Số VNDirect gồm cả thoả thuận** (MCH −9.594 tỷ 09/10/2026) — chart thị trường cắt cột đột biến ở trần trục + ghi tên.
+Trong phiên: VPS `getliststockdata/<mã,...>` (`fBVol`×10 = CP, `fBValue`×1000 = VND — khớp VNDirect) cho ~260 mã + VNDirect chỉ số hôm nay; mỗi phút.
+% sở hữu theo ngày = (1 − currentRoom/totalRoom) × trần %; trần % = totalRoom phiên cuối ÷ số CP (vốn hóa ÷ giá). Khớp CafeF (ACB 21,8% vs 21,98%).
+Không chia room cho số CP từng ngày (FPT nhảy 2 điểm khi đổi số CP). CafeF GDKhoiNgoai bỏ qua PageSize (chỉ 20 dòng) — không dùng.
