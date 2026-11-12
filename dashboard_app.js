@@ -214,22 +214,22 @@ const ga = (n,p) => { try { window.gtag && gtag('event', n, p||{}); } catch(e){}
 function knNgayStr(d){
   return d.getFullYear() + '-' + ('0'+(d.getMonth()+1)).slice(-2) + '-' + ('0'+d.getDate()).slice(-2);
 }
-function knPhienTruoc(d){
+function knPhienTruoc(d){                     // d = ngay theo gio VN (doc bang getUTC*)
   const x = new Date(d);
-  do { x.setDate(x.getDate() - 1); } while (x.getDay() === 0 || x.getDay() === 6);
+  do { x.setUTCDate(x.getUTCDate() - 1); } while (x.getUTCDay() === 0 || x.getUTCDay() === 6);
   return x;
 }
-function knKhoaPhien(moc){                    // moc: mang phut-trong-ngay, tang dan
-  const now = new Date();
+function knKhoaPhien(moc){                    // moc: mang phut-trong-ngay (gio VN), tang dan
+  const now = new Date(Date.now() + 7*3600e3); // 12/11/2026: theo GIO VN, khong theo may khach
   let d = now, i = -1;
-  if (now.getDay() === 0 || now.getDay() === 6) {          // T7/CN -> dung cua thu 6
+  if (now.getUTCDay() === 0 || now.getUTCDay() === 6) {    // T7/CN -> dung cua thu 6
     d = knPhienTruoc(now); i = moc.length - 1;
   } else {
-    const p = now.getHours() * 60 + now.getMinutes();
+    const p = now.getUTCHours() * 60 + now.getUTCMinutes();
     for (let k = 0; k < moc.length; k++) if (p >= moc[k]) i = k;
     if (i < 0) { d = knPhienTruoc(now); i = moc.length - 1; }   // chua toi moc dau -> phien truoc
   }
-  return knNgayStr(d) + '#' + i;
+  return d.toISOString().slice(0,10) + '#' + i;
 }
 function knDocCache(ten, khoa){
   try { const s = localStorage.getItem(ten); if (!s) return null;
@@ -238,7 +238,7 @@ function knDocCache(ten, khoa){
 function knGhiCache(ten, khoa, v){
   try { localStorage.setItem(ten, JSON.stringify({ k: khoa, v: v })); } catch(e){}
 }
-const KN_MOC_LB  = [11*60+30, 15*60+5];   // Leader Board: 11h30 va sau phien
+const KN_MOC_LB  = [11*60+35, 15*60+5];   // Leader Board: 11h35 (het phien sang) va sau phien, gio VN
 const KN_MOC_SEC = [15*60+5];             // Dinh gia theo dong: 1 lan sau phien
 const _ntf = {};
 function beepSound(){ try { const a = new (window.AudioContext||window.webkitAudioContext)(); const o = a.createOscillator(), g = a.createGain(); o.connect(g); g.connect(a.destination); o.frequency.value = 880; g.gain.value = 0.12; o.start(); o.stop(a.currentTime + 0.3); } catch(e){} }
@@ -818,8 +818,11 @@ async function lbLoad(){
     }
     let ngay = '';
     const any = Object.values(lbRaw)[0];
-    if (any) { const d = new Date(any[any.length-1].t*1000); ngay = ('0'+d.getDate()).slice(-2)+'/'+('0'+(d.getMonth()+1)).slice(-2); }
-    lbStamp = 'Kết phiên ' + ngay + ' · cập nhật ' + new Date().toTimeString().slice(0,5)
+    let sang = false;
+    if (any) { const d = new Date(any[any.length-1].t*1000 + 7*3600e3); ngay = ('0'+d.getUTCDate()).slice(-2)+'/'+('0'+(d.getUTCMonth()+1)).slice(-2);
+      const g = knGioVN(); sang = d.toISOString().slice(0,10) === g.ngay && g.h < 15 + 5/60; }   // nen hom nay ma chua het phien chieu -> so phien sang
+    const gioVN = new Date(Date.now() + 7*3600e3).toISOString().slice(11,16);
+    lbStamp = (sang ? 'Phiên sáng ' : 'Kết phiên ') + ngay + ' · cập nhật ' + gioVN
             + ' · ' + Object.keys(lbRaw).length + ' mã';
     lbScores = lbTinhDiem();
     lbKhoa = knKhoaPhien(KN_MOC_LB);
@@ -852,7 +855,7 @@ inits.leader = function(){
       <div id="lbGrid"></div>
     </div>`;
   }
-  /* Diem so chi doi theo PHIEN (11h30 va sau khi ket phien), T7/CN khong doi.
+  /* Diem so chi doi theo PHIEN (11h35 het phien sang va 15h05 sau phien, gio VN), T7/CN khong doi.
      Co ban dung phien roi thi ve ngay, khong tai lai 2,3MB va khong quay vong tron. */
   const khoa = knKhoaPhien(KN_MOC_LB);
   if (lbKhoa !== khoa) {
@@ -1049,7 +1052,7 @@ async function bstarLoadPrices(onlyOpen){
   /* 1) Lay tu kho (giu QUA NGAY, khong theo phien): lich su den phien truoc khong doi, con gia
         hom nay bstarGia lay tu bang gia (byT) roi. Ma nao lich su ket thuc truoc phien truoc -> tai lai. */
   const khoa = 'v2';
-  const phienTruoc = knNgayStr(knPhienTruoc(new Date(Date.now() + 7*3600*1000)));
+  const phienTruoc = knPhienTruoc(new Date(Date.now() + 7*3600*1000)).toISOString().slice(0,10);
   const kho = knDocCache(KN_BS_KHO, khoa) || {};
   // Du lich su = bat dau tu thang 12 nam truoc (may phat hanh giu tu 01/12). Truoc: 'ds.length > 100' -> thang 1 den ~cuoi thang 4 moi nam
   // bstar_live.js luon bi bo qua, trang dau hien 'dang tinh'.
@@ -1592,8 +1595,10 @@ function knHeroHtml(){
     </div>
     <div class="kh-flow">
       <div class="kf-hd"><h2>Quy trình 6 bước</h2><p>chạy lại toàn sàn sau mỗi phiên</p></div>
-      <div class="kf-ph">${[['Dữ liệu','Giá, thanh khoản, xu hướng thị trường'],['Tín hiệu','Xếp hạng cổ phiếu, điểm mua bán'],['Quản trị','Kiểm soát rủi ro, theo dõi hiệu suất']].map((x,i)=>`<div><b><i>0${i+1}</i>${x[0]}</b><span>${x[1]}</span></div>`).join('')}</div>
-      <div class="kf-line">${KN_BUOC.map((b,i)=>`<div class="kf-s"><span class="kf-n">${i+1}</span><h3>${b[0]}<em>${b[1]}</em></h3><p>${b[2]}</p></div>`).join('')}</div>
+      <div class="kf2">${[['Dữ liệu','Giá, thanh khoản, xu hướng thị trường'],['Tín hiệu','Xếp hạng cổ phiếu, điểm mua bán'],['Quản trị','Kiểm soát rủi ro, theo dõi hiệu suất']].map((g,gi)=>`<div class="kf2-c">
+        <div class="kf2-h"><i>0${gi+1}</i><div><b>${g[0]}</b><span>${g[1]}</span></div></div>
+        <div class="kf2-s">${KN_BUOC.slice(gi*2,gi*2+2).map((b,k)=>`<div><span class="kf2-n">${gi*2+k+1}</span><h3>${b[0]}<em>${b[1]}</em></h3><p>${b[2]}</p></div>`).join('')}</div>
+      </div>`).join('')}</div>
     </div>
   </section>`;
 }

@@ -809,7 +809,7 @@
     var trangThai = share < .1 ? 'Thị trường yếu' : share < .25 ? 'Thị trường phân hóa' : share < .5 ? 'Thị trường khá' : 'Thị trường mạnh';
     var LBD = LB.slice().sort(function(a, b){ return b.avg - a.avg; });
     var tapTrung = LBD.filter(function(s){ return s.avg >= 380; }).slice(0, 2);
-    var K = KN(); var stamp = (K && K.lbStamp) || ''; var ngay = (stamp.match(/Kết phiên (\S+)/) || [])[1] || '';
+    var K = KN(); var stamp = (K && K.lbStamp) || ''; var ngay = (stamp.match(/(?:Kết phiên|Phiên sáng) (\S+)/) || [])[1] || '';
     fx.innerHTML = '<div class="knFxTop"><div><div class="knFxL">Tiêu điểm hôm nay' + (ngay ? ' · ' + ngay : '') + '</div><div class="knFxT">' + trangThai + '</div>'
       + '<div class="knFxS">' + khaLen + '/' + ALL.length + ' mã từ Khá trở lên · ' + mkt[0] + ' mã Yếu. Lãnh đạo dòng tiền ' + (khoeLen ? 'chỉ còn ' + khoeLen + ' mã.' : 'hiện chưa có.') + '</div></div>'
       + '<div class="knFxN"><b>' + khoeLen + '<small>/' + ALL.length + '</small></b><span>mã Khỏe trở lên</span></div></div>'
