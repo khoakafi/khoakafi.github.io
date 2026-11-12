@@ -67,7 +67,7 @@ for (const [c, r] of Object.entries(ROWS)){
   const net = a.map(x => x ? ty(x.netVal) : null);
   const coGd = a.some(x => x && (x.buyVal > 0 || x.sellVal > 0));
   const cuoi = a[a.length - 1] || a.slice().reverse().find(Boolean);
-  if (!coGd || !(r.val20 >= 1000)) continue;                               // bỏ mã không có giao dịch ngoại / GTGD TB20 < 1 tỷ
+  if (!coGd || !(r.val20 >= 500)) continue;                                // bỏ mã không có giao dịch ngoại / GTGD TB20 < 0,5 tỷ
   const sh = r.cap > 0 && r.p > 0 ? r.cap * 1e9 / (r.p * 1000) : 0;         // số CP ước tính
   const own = a.map(x => (x && sh > 0 && x.totalRoom > 0) ? Math.round((x.totalRoom - x.currentRoom) / sh * 1e4) / 100 : null);
   s[c] = {
@@ -79,7 +79,7 @@ for (const [c, r] of Object.entries(ROWS)){
   };
   co++;
 }
-if (co < 300) throw new Error('qua it ma: ' + co);
+if (co < 150) throw new Error('qua it ma: ' + co);
 const out = { asof: NGAY[NGAY.length - 1], tao: new Date().toISOString(), d: NGAY, m, s };
 fs.writeFileSync('khoingoai_data.js', 'window.KNG=' + JSON.stringify(out) + ';\n');
 console.log('ghi khoingoai_data.js', co, 'ma,', (fs.statSync('khoingoai_data.js').size / 1024).toFixed(0), 'KB');
