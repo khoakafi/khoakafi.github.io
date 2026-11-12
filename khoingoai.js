@@ -239,17 +239,6 @@
           <td style="color:${c === 'mua' ? GD : '#B42318'};font-weight:700">${sg(m.kk.r)}%</td>
           <td style="color:${mau(m.pk)}">${m.pk == null ? '—' : sg(m.pk) + '%'}</td></tr>`; }).join('') || '<tr><td colspan="5" style="color:#94A3B8">Chưa có mã đủ ngưỡng</td></tr>'}</tbody></table></div>`; }).join('')}</div>
       <div class="kn-note" style="margin-top:8px">"Ngoại mua chiếm" = giá trị ngoại mua ÷ tổng giá trị giao dịch của mã trong kỳ (khớp lệnh + thoả thuận). Trên 30% là khối ngoại gần như dẫn dắt mã đó.</div></div>
-    <div class="kn-g2">
-      <div class="kn-card"><div class="kn-ey">Theo ngành · ${tenKy}</div><div class="kn-h"><h2>Tiền ngoại đi vào ngành nào</h2></div>
-        <div style="margin-top:10px">${(() => { const mx = Math.max(...ngs.map(g => Math.abs(g[ky])), 1);
-          return ngs.map(g => { const v = g[ky], w = Math.abs(v) / mx * 46, tp = g.top.slice().sort((a, b) => v >= 0 ? b[ky] - a[ky] : a[ky] - b[ky])[0];
-            return `<div class="kn-ng"><span class="t">${g.t}</span><span class="b"><i style="${v >= 0 ? 'left:50%' : 'right:50%'};width:${w}%;background:${v >= 0 ? G : R}"></i></span>
-              <span class="v" style="color:${mau(v)}">${sg(v, Math.abs(v) >= 100 ? 0 : 1)}</span><span class="m kn-hide">${tp ? tp.t : ''}</span>
-              <span class="x kn-hide" title="20 phiên">${KY === '20' ? '' : '20P ' + sg(g.d20, 0)}</span></div>`; }).join(''); })()}</div></div>
-      <div class="kn-card"><div class="kn-ey">Bản đồ hành vi · 20 phiên</div><div class="kn-h"><h2>Ngoại gom hay xả, giá đi đâu</h2></div>
-        <p class="kn-sub">Ngang: giá 20 phiên · Dọc: ròng ÷ GTGD của chính mã. Mã GTGD ≥ 20 tỷ/phiên, chấm to = ròng lớn. Bấm chấm để xem mã.</p>
-        <div class="kn-ch q"><canvas id="knC3"></canvas></div></div>
-    </div>
     <div class="kn-card"><div class="kn-ey">Sở hữu &amp; room ngoại</div><div class="kn-h"><h2>Tỷ lệ nắm giữ của nhà đầu tư nước ngoài</h2></div>
       <div class="kn-g2 eq" style="margin-top:6px">
         <div><div class="kn-sb">Thay đổi sở hữu 20 phiên <span class="tg">điểm %, mã GTGD ≥ 10 tỷ</span></div>
@@ -287,21 +276,6 @@
     let ck = 0; const cum = co.map(v => ck += v);
     charts.c2 = new Chart($('#knC2'), {type: 'line', data: {labels: lab, datasets: [{data: cum, borderColor: INK, borderWidth: 2, pointRadius: 0, fill: {target: 'origin', above: 'rgba(24,163,75,.10)', below: 'rgba(229,72,77,.10)'}, tension: .25}]},
       options: opt({plugins: {legend: {display: false}, tooltip: {mode: 'index', intersect: false, callbacks: {label: c => 'Luỹ kế ' + ty(c.raw)}}}})});
-    const pts = ma.filter(m => m.v20 >= 20000 && m.p20 != null && m.dom != null).map(m => ({x: Math.max(-30, Math.min(30, m.p20)), y: Math.max(-25, Math.min(25, m.dom)), m}));
-    const nhan = {id: 'knlab', afterDatasetsDraw(c){ const x = c.ctx; x.save(); x.font = '700 10.5px Inter,sans-serif'; x.fillStyle = INK; x.textAlign = 'center';
-      const me = c.getDatasetMeta(0); pts.forEach((p, i) => { if (Math.abs(p.m.dom) < 6 && Math.abs(p.m.d20) < 150) return; const e = me.data[i]; x.fillText(p.m.t, e.x, e.y - 8); });
-      const a = c.chartArea, sx = c.scales.x, sy = c.scales.y; x.font = '800 10px Inter,sans-serif'; x.fillStyle = 'rgba(100,116,139,.75)';
-      x.textAlign = 'left'; x.fillText('GOM ÂM THẦM', a.left + 6, a.top + 12); x.fillText('ÁP LỰC BÁN', a.left + 6, a.bottom - 6);
-      x.textAlign = 'right'; x.fillText('ĐỒNG THUẬN TĂNG', a.right - 6, a.top + 12); x.fillText('NỘI ĐỠ GIÁ', a.right - 6, a.bottom - 6);
-      x.strokeStyle = '#CBD5E1'; x.setLineDash([4, 4]); x.beginPath(); x.moveTo(sx.getPixelForValue(0), a.top); x.lineTo(sx.getPixelForValue(0), a.bottom);
-      x.moveTo(a.left, sy.getPixelForValue(0)); x.lineTo(a.right, sy.getPixelForValue(0)); x.stroke(); x.restore(); }};
-    charts.c3 = new Chart($('#knC3'), {type: 'scatter', plugins: [nhan], data: {datasets: [{data: pts,
-        pointBackgroundColor: pts.map(p => p.m.dom >= 0 ? 'rgba(24,163,75,.75)' : 'rgba(229,72,77,.72)'), pointBorderColor: '#fff', pointBorderWidth: 1.5,
-        pointRadius: pts.map(p => Math.max(4, Math.min(13, Math.sqrt(Math.abs(p.m.d20)) * .9))), pointHoverRadius: 12}]},
-      options: opt({onClick: (e, a) => { if (a.length) { veMa(pts[a[0].index].m.t); document.getElementById('knTk').scrollIntoView({behavior: 'smooth'}); } },
-        plugins: {legend: {display: false}, tooltip: {callbacks: {title: c => c[0].raw.m.t + ' · ' + c[0].raw.m.ng, label: c => [`Ròng 20P: ${ty(c.raw.m.d20)} (${sg(c.raw.m.dom)}% GTGD)`, `Giá 20P: ${sg(c.raw.m.p20)}%`, `Sở hữu: ${vn(c.raw.m.own, 1)}%`]}}},
-        scales: {x: {grid: {color: GRID}, border: {display: false}, ticks: {color: MUT, font: {size: 10.5}, callback: v => v + '%'}, title: {display: true, text: 'Giá 20 phiên', color: MUT, font: {size: 11}}},
-                 y: {grid: {color: GRID}, border: {display: false}, ticks: {color: MUT, font: {size: 10.5}, callback: v => v + '%'}, title: {display: true, text: 'Ròng ÷ GTGD', color: MUT, font: {size: 11}}}}})});
     veMa(tkMa || (ma.slice().sort((a, b) => Math.abs(b.d20) - Math.abs(a.d20))[0] || {}).t, T);
   }
   function ownHtml(m){
