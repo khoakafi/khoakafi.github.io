@@ -70,6 +70,19 @@
 #view-kng .kn-q4>div{border-radius:12px;padding:10px 12px;border:1px solid #E6EBEF}
 #view-kng .kn-q4 b{display:block;font-size:13px;color:${INK}}#view-kng .kn-q4 span{font-size:12px;color:${MUT};line-height:1.45}
 #view-kng .kn-q4 em{font-style:normal;font-weight:700;font-size:12px}
+#view-kng .kn-g2.eq{grid-template-columns:1fr 1fr;gap:24px}
+#view-kng .kn-sb{font-size:13px;font-weight:800;color:${INK};margin:4px 0 6px}
+#view-kng .kn-ng{display:grid;grid-template-columns:150px 1fr 64px 44px 84px;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid #F1F4F7;font-size:13px}
+#view-kng .kn-g2.eq .kn-ng{grid-template-columns:110px 1fr 56px}
+#view-kng .kn-ng .t{font-weight:700;color:${INK};white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#view-kng .kn-ng .b{position:relative;height:10px;background:linear-gradient(90deg,transparent calc(50% - .5px),#CBD5E1 calc(50% - .5px),#CBD5E1 calc(50% + .5px),transparent calc(50% + .5px))}
+#view-kng .kn-ng .b i{position:absolute;top:0;bottom:0;border-radius:3px}
+#view-kng .kn-ng .v{text-align:right;font-weight:800;font-variant-numeric:tabular-nums}
+#view-kng .kn-ng .m{font-size:11.5px;font-weight:700;color:${INK};text-align:right}#view-kng .kn-ng .x{font-size:11px;color:${MUT};text-align:right;white-space:nowrap}
+#view-kng .kn-ng.ck{cursor:pointer}#view-kng .kn-ng.ck:hover{background:#F7FAF8}
+#view-kng .kn-tkr{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px;margin:12px 0 4px}
+#view-kng .kn-tkr div{background:#F6F8FA;border-radius:10px;padding:8px 10px}
+#view-kng .kn-tkr span{display:block;font-size:11px;color:${MUT};font-weight:600;white-space:nowrap}#view-kng .kn-tkr b{font-size:16px;color:${INK};white-space:nowrap}
 #view-kng .kn-g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 #view-kng .kn-lst{list-style:none;margin:0;padding:0}
 #view-kng .kn-lst li{display:flex;align-items:center;gap:10px;padding:8px 2px;border-bottom:1px solid #F1F4F7;cursor:pointer;font-size:13px}
@@ -85,7 +98,7 @@
 #view-kng .kn-ins{display:flex;flex-direction:column;gap:8px;margin:2px 0 14px}
 #view-kng .kn-ins div{display:flex;gap:10px;align-items:baseline;font-size:13.5px;color:#334155;line-height:1.5}
 #view-kng .kn-ins i{flex:none;width:7px;height:7px;border-radius:50%;margin-top:6px}
-@media(max-width:1000px){#view-kng .kn-kpi{grid-template-columns:1fr 1fr}#view-kng .kn-k.main{grid-column:1/-1}
+@media(max-width:1000px){#view-kng .kn-g2.eq{grid-template-columns:1fr}#view-kng .kn-tkr{grid-template-columns:repeat(2,1fr)}#view-kng .kn-ng{grid-template-columns:120px 1fr 56px}#view-kng .kn-kpi{grid-template-columns:1fr 1fr}#view-kng .kn-k.main{grid-column:1/-1}
   #view-kng .kn-g2,#view-kng .kn-g3,#view-kng .kn-tk{grid-template-columns:1fr}#view-kng .kn-q4{grid-template-columns:1fr 1fr}
   #view-kng .kn-ch.q{height:330px}#view-kng .kn-card{padding:14px 13px}#view-kng .kn-hide{display:none}}
 `;
@@ -111,7 +124,7 @@
     await Promise.all(lo.map(async l => { try {
       const j = await (await fetch('https://bgapidatafeed.vps.com.vn/getliststockdata/' + l.join(','), {cache: 'no-store'})).json();
       (j || []).forEach(x => { const b = (+x.fBValue || 0) * 1000 / 1e9, se = (+x.fSValue || 0) * 1000 / 1e9;
-        out.s[x.sym] = {b, x: se, n: b - se, room: (+x.fRoom || 0) * 10, p: +x.lastPrice || null}; });
+        out.s[x.sym] = {b, x: se, n: b - se, room: (+x.fRoom || 0) * 10, p: +x.lastPrice || null, g: (+x.lot || 0) * 10 * (+x.avePrice || 0) * 1000 / 1e9}; });
     } catch(e){} }));
     try { const j = await (await fetch('https://api-finfo.vndirect.com.vn/v4/foreigns?q=code:VNINDEX,HNX,UPCOM,FU_HNX~tradingDate:' + g.ngay + '&size=10', {cache: 'no-store'})).json();
       (j.data || []).forEach(x => { out.m[x.code] = {b: x.buyVal / 1e9, x: x.sellVal / 1e9}; }); } catch(e){}
@@ -148,7 +161,11 @@
       const o20 = o[L] != null && o[L-20] != null ? o[L] - o[L-20] : null;
       return {t, sec: x.sec, ng: nganh(x.sec), ten: x.ten, v20: x.v20, cap: x.cap, lim: x.lim, own: o[L], o20, n, o, px,
         d1: n[L], d5: sum(n, 5), d20: sum(n, 20), d60: sum(n, n.length), st, dom: gd20 > 0 ? sum(n, 20) / gd20 * 100 : null, p5, p20,
-        con: x.lim != null && o[L] != null ? x.lim - o[L] : null, hb: lv ? lv.b : x.bt, hx: lv ? lv.x : x.xt};
+        con: x.lim != null && o[L] != null ? x.lim - o[L] : null, hb: lv ? lv.b : x.bt, hx: lv ? lv.x : x.xt,
+        p1: px[L] && px[L-1] ? (px[L] / px[L-1] - 1) * 100 : null,
+        /* kỳ 1/5/20: ngoại mua, ngoại bán, GTGD toàn mã (tỷ). Trong phiên: kỳ 1 lấy VPS, kỳ 5/20 lấy file (trễ 1 phiên). */
+        k: {1: lv ? {b: lv.b, x: lv.x, g: lv.g} : (x.kb ? {b: x.kb[0], x: x.kx[0], g: x.kg[0]} : null),
+            5: x.kb ? {b: x.kb[1], x: x.kx[1], g: x.kg[1]} : null, 20: x.kb ? {b: x.kb[2], x: x.kx[2], g: x.kg[2]} : null}};
     });
     return {d, L, co, fu, bTong, xTong, ma};
   }
@@ -165,6 +182,9 @@
     const T = tinh(), {d, L, co, fu, ma} = T;
     const ky = {1: 'd1', 5: 'd5', 20: 'd20'}[KY];
     const tenKy = {1: 'hôm nay', 5: '5 phiên', 20: '20 phiên'}[KY];
+    const SAN = {1: 3, 5: 10, 20: 20};
+    ma.forEach(m => { const q = m.k[KY]; m.pk = {1: m.p1, 5: m.p5, 20: m.p20}[KY];
+      m.kk = q && q.g > 0 ? {g: q.g, mb: q.b / q.g * 100, mx: q.x / q.g * 100, r: (q.b - q.x) / q.g * 100} : null; });
     /* chuỗi thị trường */
     let st = 0; for (let i = L; i >= 0; i--){ const s = Math.sign(co[i]); if (!st) st = s; else if (s !== Math.sign(st)) break; else st += s; }
     const c5 = sum(co, 5), c20 = sum(co, 20);
@@ -179,6 +199,8 @@
     const fu1 = fu[L];
     if (fu1 && Math.sign(fu1) !== Math.sign(co[L]) && Math.abs(fu1) > 50) ins.push([SL, `Phái sinh ngược chiều cổ phiếu: ${fu1 > 0 ? 'mua' : 'bán'} ròng ${vn(Math.abs(fu1), 0)} tỷ hợp đồng tương lai trong khi ${co[L] < 0 ? 'bán' : 'mua'} ròng cổ phiếu — có thể là phòng hộ, không hẳn là rút/vào vốn thật.`]);
     const gomGiam = ma.filter(m => m.v20 >= 20000 && m.dom >= 3 && m.p20 != null && m.p20 < -3).sort((a, b) => b.dom - a.dom).slice(0, 4);
+    const chiPhoi = ma.filter(m => m.v20 >= 10000 && m.kk && Math.abs(m[ky]) >= SAN[KY] && Math.abs(m.kk.r) >= 15).sort((a, b) => Math.abs(b.kk.r) - Math.abs(a.kk.r)).slice(0, 4);
+    if (chiPhoi.length) ins.push([INK, `Khối ngoại chi phối thanh khoản (${tenKy}): ${chiPhoi.map(m => `<b>${m.t}</b> ${m.kk.r > 0 ? 'mua' : 'bán'} ròng ${vn(Math.abs(m.kk.r), 0)}% GTGD`).join(' · ')}.`]);
     if (gomGiam.length) ins.push([GD, `Ngoại gom trong lúc giá giảm (20 phiên): ${gomGiam.map(m => `<b>${m.t}</b>`).join(', ')} — nhóm đáng theo dõi nhất.`]);
 
     const liveTxt = live ? `<span class="kn-live"><i></i>Trong phiên · cập nhật ${live.hm}</span>` : `<span class="kn-live eod"><i></i>Kết phiên ${dm(D.asof)}</span>`;
@@ -202,43 +224,48 @@
       <div class="kn-h" style="margin-top:10px"><h2 style="font-size:14px">Luỹ kế</h2><span class="kn-sub" style="margin:0">cộng dồn từ ${dm(d[0])}</span></div>
       <div class="kn-ch sm"><canvas id="knC2"></canvas></div>
     </div>
+    <div class="kn-card"><div class="kn-ey">Ngoại chi phối giao dịch · ${tenKy}</div>
+      <div class="kn-h"><h2>Mã nào khối ngoại thực sự tác động</h2></div>
+      <p class="kn-sub">Xếp theo <b>ròng ÷ giá trị giao dịch của chính mã</b> — tiền ngoại chiếm bao nhiêu phần trăm thanh khoản, không xếp theo số tỷ tuyệt đối.
+        Chỉ mã GTGD ≥ 10 tỷ/phiên và ròng ≥ ${vn(SAN[KY], 0)} tỷ.</p>
+      <div class="kn-g2 eq">${['mua', 'ban'].map(c => {
+        const ds = ma.filter(m => m.v20 >= 10000 && m.kk && m.kk.g > 0 && (c === 'mua' ? m[ky] >= SAN[KY] : m[ky] <= -SAN[KY]))
+          .sort((a, b) => c === 'mua' ? b.kk.r - a.kk.r : a.kk.r - b.kk.r).slice(0, 10);
+        return `<div><div class="kn-sb" style="color:${c === 'mua' ? GD : '#B42318'}">${c === 'mua' ? 'Ngoại gom' : 'Ngoại xả'}</div>
+        <table class="kn-t"><thead><tr><th>Mã</th><th>Ròng</th><th>Ngoại ${c === 'mua' ? 'mua' : 'bán'} chiếm</th><th>Ròng / GTGD</th><th>Giá</th></tr></thead><tbody>
+        ${ds.map(m => { const sh = c === 'mua' ? m.kk.mb : m.kk.mx;
+          return `<tr class="ck" data-t="${m.t}"><td><b>${m.t}</b><span class="tg kn-hide">${m.ng}</span></td><td>${sg(m[ky])} tỷ</td>
+          <td><div class="kn-db"><span style="width:${Math.round(Math.min(100, sh) * .7)}px;background:${c === 'mua' ? G : R};opacity:.85"></span><b>${vn(sh, 0)}%</b></div></td>
+          <td style="color:${c === 'mua' ? GD : '#B42318'};font-weight:700">${sg(m.kk.r)}%</td>
+          <td style="color:${mau(m.pk)}">${m.pk == null ? '—' : sg(m.pk) + '%'}</td></tr>`; }).join('') || '<tr><td colspan="5" style="color:#94A3B8">Chưa có mã đủ ngưỡng</td></tr>'}</tbody></table></div>`; }).join('')}</div>
+      <div class="kn-note" style="margin-top:8px">"Ngoại mua chiếm" = giá trị ngoại mua ÷ tổng giá trị giao dịch của mã trong kỳ (khớp lệnh + thoả thuận). Trên 30% là khối ngoại gần như dẫn dắt mã đó.</div></div>
     <div class="kn-g2">
-      <div class="kn-card"><div class="kn-ey">Theo ngành</div><div class="kn-h"><h2>Tiền ngoại đi vào ngành nào</h2></div>
-        <p class="kn-sub">Ròng của các mã trong ngành, tỷ đồng · xếp theo ${tenKy}</p>
-        <table class="kn-t"><thead><tr><th>Ngành</th><th>Hôm nay</th><th>5 phiên</th><th>20 phiên</th><th class="kn-hide">Mã gom mạnh nhất</th></tr></thead><tbody>
-        ${(() => { const mx = Math.max(...ngs.map(g => Math.max(Math.abs(g.d1), Math.abs(g.d5), Math.abs(g.d20)))) || 1;
-          const o = v => { const a = Math.min(1, Math.abs(v) / mx * 1.6); return `<span class="kn-hm" style="background:${v >= 0 ? `rgba(24,163,75,${.08 + a * .5})` : `rgba(229,72,77,${.08 + a * .5})`};color:${a > .55 ? '#fff' : v >= 0 ? GD : '#B42318'}">${sg(v, Math.abs(v) >= 100 ? 0 : 1)}</span>`; };
-          return ngs.map(g => { const tp = g.top.slice().sort((a, b) => b[ky] - a[ky])[0];
-            return `<tr><td><b>${g.t}</b><span class="tg">${g.n} mã</span></td><td>${o(g.d1)}</td><td>${o(g.d5)}</td><td>${o(g.d20)}</td><td class="kn-hide"><span class="kn-chip" style="background:#F1F4F7;color:${INK}">${tp.t} ${sg(tp[ky])}</span></td></tr>`; }).join(''); })()}
-        </tbody></table></div>
+      <div class="kn-card"><div class="kn-ey">Theo ngành · ${tenKy}</div><div class="kn-h"><h2>Tiền ngoại đi vào ngành nào</h2></div>
+        <div style="margin-top:10px">${(() => { const mx = Math.max(...ngs.map(g => Math.abs(g[ky])), 1);
+          return ngs.map(g => { const v = g[ky], w = Math.abs(v) / mx * 46, tp = g.top.slice().sort((a, b) => v >= 0 ? b[ky] - a[ky] : a[ky] - b[ky])[0];
+            return `<div class="kn-ng"><span class="t">${g.t}</span><span class="b"><i style="${v >= 0 ? 'left:50%' : 'right:50%'};width:${w}%;background:${v >= 0 ? G : R}"></i></span>
+              <span class="v" style="color:${mau(v)}">${sg(v, Math.abs(v) >= 100 ? 0 : 1)}</span><span class="m kn-hide">${tp ? tp.t : ''}</span>
+              <span class="x kn-hide" title="20 phiên">${KY === '20' ? '' : '20P ' + sg(g.d20, 0)}</span></div>`; }).join(''); })()}</div></div>
       <div class="kn-card"><div class="kn-ey">Bản đồ hành vi · 20 phiên</div><div class="kn-h"><h2>Ngoại gom hay xả, giá đi đâu</h2></div>
-        <p class="kn-sub">Ngang: giá 20 phiên · Dọc: ròng ÷ giá trị giao dịch của chính mã. Mã GTGD ≥ 20 tỷ/phiên. Bấm chấm để xem mã.</p>
-        <div class="kn-ch q"><canvas id="knC3"></canvas></div>
-        <div class="kn-q4">
-          <div style="background:#F3FAF5"><b>Gom âm thầm</b><span>Ngoại mua, giá còn giảm</span><br><em style="color:${GD}">${ma.filter(m => m.v20 >= 20000 && m.dom > 1 && m.p20 < 0).length} mã</em></div>
-          <div style="background:#F3FAF5"><b>Đồng thuận tăng</b><span>Ngoại mua, giá tăng</span><br><em style="color:${GD}">${ma.filter(m => m.v20 >= 20000 && m.dom > 1 && m.p20 >= 0).length} mã</em></div>
-          <div style="background:#FDF4F4"><b>Nội đỡ giá</b><span>Ngoại bán, giá vẫn tăng</span><br><em style="color:#B42318">${ma.filter(m => m.v20 >= 20000 && m.dom < -1 && m.p20 >= 0).length} mã</em></div>
-          <div style="background:#FDF4F4"><b>Áp lực bán</b><span>Ngoại bán, giá giảm</span><br><em style="color:#B42318">${ma.filter(m => m.v20 >= 20000 && m.dom < -1 && m.p20 < 0).length} mã</em></div>
-        </div></div>
+        <p class="kn-sub">Ngang: giá 20 phiên · Dọc: ròng ÷ GTGD của chính mã. Mã GTGD ≥ 20 tỷ/phiên, chấm to = ròng lớn. Bấm chấm để xem mã.</p>
+        <div class="kn-ch q"><canvas id="knC3"></canvas></div></div>
     </div>
-    <div class="kn-g2">${['mua', 'ban'].map(c => {
-      const ds = ma.filter(m => c === 'mua' ? m[ky] > 0 : m[ky] < 0).sort((a, b) => c === 'mua' ? b[ky] - a[ky] : a[ky] - b[ky]).slice(0, 12);
-      const mx = Math.max(...ds.map(m => Math.abs(m[ky])), 1);
-      return `<div class="kn-card"><div class="kn-ey" style="color:${c === 'mua' ? GD : '#B42318'}">${c === 'mua' ? 'Top mua ròng' : 'Top bán ròng'} · ${tenKy}</div>
-        <table class="kn-t" style="margin-top:8px"><thead><tr><th>Mã</th><th>Ròng (tỷ)</th><th class="kn-hide">% GTGD</th><th>Chuỗi</th><th>Giá 20P</th><th>Sở hữu / trần</th></tr></thead><tbody>
-        ${ds.map(m => `<tr class="ck" data-t="${m.t}"><td><b>${m.t}</b><span class="tg kn-hide">${m.ng}</span></td>
-          <td><div class="kn-db"><span style="width:${Math.round(Math.abs(m[ky]) / mx * 60)}px;background:${c === 'mua' ? G : R}"></span>${sg(m[ky])}</div></td>
-          <td class="kn-hide">${m.dom == null ? '—' : sg(m.dom) + '%'}</td>
-          <td>${Math.abs(m.st) >= 2 ? `<span class="kn-chip" style="background:${m.st > 0 ? '#ECF7F0' : '#FDECEC'};color:${m.st > 0 ? GD : '#B42318'}">${Math.abs(m.st)} ${m.st > 0 ? 'mua' : 'bán'}</span>` : '<span style="color:#CBD5E1">—</span>'}</td>
-          <td style="color:${mau(m.p20)}">${m.p20 == null ? '—' : sg(m.p20) + '%'}</td>
-          <td>${ownHtml(m)}</td></tr>`).join('')}</tbody></table></div>`; }).join('')}</div>
-    <div class="kn-card"><div class="kn-ey">Sở hữu &amp; room ngoại</div><div class="kn-h"><h2>Ai đang được nắm giữ thêm, ai bị rút</h2></div>
-      <p class="kn-sub">% sở hữu nước ngoài = (room tối đa − room còn lại) ÷ số cổ phiếu lưu hành. Thay đổi tính theo điểm % trong 20 phiên.</p>
-      <div class="kn-g3">${[
-        ['Sở hữu tăng mạnh nhất', ma.filter(m => m.o20 != null && m.v20 >= 5000).sort((a, b) => b.o20 - a.o20).slice(0, 7), m => `<span style="color:${GD};font-weight:700">${sg(m.o20, 2)} đ%</span>`, m => `sở hữu ${vn(m.own, 1)}%`],
-        ['Sở hữu giảm mạnh nhất', ma.filter(m => m.o20 != null && m.v20 >= 5000).sort((a, b) => a.o20 - b.o20).slice(0, 7), m => `<span style="color:#B42318;font-weight:700">${sg(m.o20, 2)} đ%</span>`, m => `sở hữu ${vn(m.own, 1)}%`],
-        ['Kín hoặc sắp kín room', ma.filter(m => m.con != null && m.lim > 0 && m.v20 >= 5000 && m.con < 1.5).sort((a, b) => a.con - b.con).slice(0, 7), m => `<span class="kn-chip" style="background:${m.con < .2 ? INK : '#F1F4F7'};color:${m.con < .2 ? '#fff' : INK}">${m.con < .2 ? 'Kín room' : 'còn ' + vn(m.con, 1) + '%'}</span>`, m => `${vn(m.own, 1)}% / trần ${vn(m.lim, 0)}%`]
-      ].map(([t, ds, phai, giua]) => `<div><div style="font-size:13px;font-weight:800;color:${INK};margin-bottom:4px">${t}</div><ul class="kn-lst">${ds.map(m => `<li data-t="${m.t}"><b>${m.t}</b><span class="x">${giua(m)} · ${m.ng}</span>${phai(m)}</li>`).join('') || '<li><span class="x">Không có mã</span></li>'}</ul></div>`).join('')}</div></div>
+    <div class="kn-card"><div class="kn-ey">Sở hữu &amp; room ngoại</div><div class="kn-h"><h2>Tỷ lệ nắm giữ của nhà đầu tư nước ngoài</h2></div>
+      <div class="kn-g2 eq" style="margin-top:6px">
+        <div><div class="kn-sb">Thay đổi sở hữu 20 phiên <span class="tg">điểm %, mã GTGD ≥ 10 tỷ</span></div>
+          ${(() => { const ds = ma.filter(m => m.o20 != null && m.v20 >= 10000 && Math.abs(m.o20) >= .05);
+            const up = ds.slice().sort((a, b) => b.o20 - a.o20).slice(0, 6), dn = ds.slice().sort((a, b) => a.o20 - b.o20).slice(0, 6).reverse();
+            const mx = Math.max(...up.concat(dn).map(m => Math.abs(m.o20)), .1);
+            return up.concat(dn).map(m => `<div class="kn-ng ck" data-t="${m.t}"><span class="t"><b>${m.t}</b> <span class="tg">${vn(m.own, 1)}%</span></span>
+              <span class="b"><i style="${m.o20 >= 0 ? 'left:50%' : 'right:50%'};width:${Math.abs(m.o20) / mx * 46}%;background:${m.o20 >= 0 ? G : R}"></i></span>
+              <span class="v" style="color:${mau(m.o20)}">${sg(m.o20, 2)}</span></div>`).join(''); })()}</div>
+        <div><div class="kn-sb">Room sắp kín <span class="tg">ngoại chỉ mua được khi có ngoại khác bán</span></div>
+          <table class="kn-t"><thead><tr><th>Mã</th><th>Sở hữu / trần</th><th>Còn</th><th>Ròng 20P</th></tr></thead><tbody>
+          ${ma.filter(m => m.con != null && m.lim > 0 && m.v20 >= 5000 && m.con < 2).sort((a, b) => a.con - b.con).slice(0, 8).map(m => `<tr class="ck" data-t="${m.t}"><td><b>${m.t}</b><span class="tg kn-hide">${m.ng}</span></td>
+            <td>${ownHtml(m)}</td><td>${m.con < .2 ? `<span class="kn-chip" style="background:${INK};color:#fff">Kín</span>` : vn(m.con, 1) + '%'}</td>
+            <td style="color:${mau(m.d20)}">${sg(m.d20)} tỷ</td></tr>`).join('') || '<tr><td colspan="4" style="color:#94A3B8">Không có mã</td></tr>'}</tbody></table></div>
+      </div>
+      <div class="kn-note" style="margin-top:8px">% sở hữu = (1 − room còn lại ÷ room tối đa) × trần sở hữu. Trần = room tối đa ÷ số cổ phiếu (ước tính từ vốn hoá).</div></div>
     <div class="kn-card" id="knTk"></div>
     <div class="kn-note">Nguồn: VNDirect (cuối phiên, ${d.length - (live ? 1 : 0)} phiên đến ${dm(D.asof)}); trong phiên: bảng giá VPS, chỉ tính ~260 mã thanh khoản cao nhất. % sở hữu tính từ room công bố và vốn hóa (ước tính số cổ phiếu), có thể lệch nhỏ với số công bố của sàn. Chỉ mô tả dòng tiền đã xảy ra, không phải khuyến nghị.</div>`;
 
@@ -289,28 +316,26 @@
     T = T || tinh(); const m = T.ma.find(x => x.t === t);
     tkMa = t;
     const goiY = T.ma.slice().sort((a, b) => (b.v20 || 0) - (a.v20 || 0)).slice(0, 8).map(x => x.t);
-    box.innerHTML = `<div class="kn-ey">Tra cứu từng mã</div>
-      <div class="kn-tk" style="margin-top:10px"><div>
-        <input id="knQ" value="${t}" maxlength="5" placeholder="Nhập mã">
-        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">${goiY.map(x => `<span class="kn-chip" data-q="${x}" style="background:${x === t ? INK : '#F1F4F7'};color:${x === t ? '#fff' : INK};cursor:pointer">${x}</span>`).join('')}</div>
-        ${m ? `<div style="margin-top:14px;font-size:13px;color:${MUT}">${m.ten || ''}<br>${m.ng}</div>
-        <div class="kn-st">
+    box.innerHTML = `<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+        <div><div class="kn-ey">Tra cứu từng mã</div><div style="font-size:13px;color:${MUT};margin-top:4px">${m ? (m.ten || '') + ' · ' + m.ng : ''}</div></div>
+        <input id="knQ" value="${t}" maxlength="5" placeholder="Nhập mã" style="width:120px;border:1.5px solid #E1E7ED;border-radius:10px;padding:8px 12px;font:800 15px Inter,sans-serif;text-transform:uppercase;outline:none;margin-left:auto">
+        <div style="display:flex;flex-wrap:wrap;gap:6px">${goiY.map(x => `<span class="kn-chip" data-q="${x}" style="background:${x === t ? INK : '#F1F4F7'};color:${x === t ? '#fff' : INK};cursor:pointer;padding:5px 9px">${x}</span>`).join('')}</div></div>
+      ${m ? `<div class="kn-tkr">
           <div><span>Ròng hôm nay</span><b style="color:${mau(m.d1)}">${ty(m.d1)}</b></div>
           <div><span>Ròng 20 phiên</span><b style="color:${mau(m.d20)}">${ty(m.d20)}</b></div>
-          <div><span>% GTGD 20 phiên</span><b>${m.dom == null ? '—' : sg(m.dom) + '%'}</b></div>
+          <div><span>Ròng / GTGD 20P</span><b>${m.k[20] && m.k[20].g > 0 ? sg((m.k[20].b - m.k[20].x) / m.k[20].g * 100) + '%' : '—'}</b></div>
+          <div><span>Ngoại chiếm GTGD 20P</span><b>${m.k[20] && m.k[20].g > 0 ? vn((m.k[20].b + m.k[20].x) / 2 / m.k[20].g * 100, 0) + '%' : '—'}</b></div>
           <div><span>Chuỗi</span><b>${Math.abs(m.st) >= 2 ? Math.abs(m.st) + ' phiên ' + (m.st > 0 ? 'mua' : 'bán') : '—'}</b></div>
-          <div><span>Sở hữu ngoại</span><b>${vn(m.own, 2)}%</b></div>
-          <div><span>Trần sở hữu</span><b>${m.lim ? vn(m.lim, 0) + '%' : '—'}</b></div>
-          <div><span>Thay đổi sở hữu 20P</span><b style="color:${mau(m.o20)}">${m.o20 == null ? '—' : sg(m.o20, 2) + ' đ%'}</b></div>
-          <div><span>Room còn lại</span><b>${m.con == null ? '—' : vn(m.con, 2) + '%'}</b></div>
-        </div>` : `<p class="kn-sub" style="margin-top:12px">Không có dữ liệu khối ngoại cho ${t} (mã ít giao dịch ngoại hoặc GTGD &lt; 1 tỷ/phiên).</p>`}
-      </div><div>${m ? `
-        <div class="kn-h" style="margin-top:0"><h2 style="font-size:15px">Giá</h2><span class="kn-sub" style="margin:0">đóng cửa điều chỉnh</span></div><div class="kn-ch sm"><canvas id="knT1"></canvas></div>
+          <div><span>Sở hữu / trần</span><b>${vn(m.own, 1)}% <small style="color:${MUT};font-weight:600">/ ${m.lim ? vn(m.lim, 0) + '%' : '—'}</small></b></div>
+          <div><span>Sở hữu 20P</span><b style="color:${mau(m.o20)}">${m.o20 == null ? '—' : sg(m.o20, 2) + ' đ%'}</b></div>
+          <div><span>Room còn</span><b>${m.con == null ? '—' : vn(m.con, 2) + '%'}</b></div>
+        </div>
+        <div class="kn-h"><h2 style="font-size:15px">Giá</h2><span class="kn-sub" style="margin:0">đóng cửa điều chỉnh</span></div><div class="kn-ch sm"><canvas id="knT1"></canvas></div>
         <div class="kn-h"><h2 style="font-size:15px">Mua/bán ròng mỗi phiên</h2><span class="kn-sub" style="margin:0">tỷ đồng</span></div><div class="kn-ch sm"><canvas id="knT2"></canvas></div>
-        <div class="kn-h"><h2 style="font-size:15px">% sở hữu nước ngoài</h2><span class="kn-sub" style="margin:0">nét đứt = trần sở hữu</span></div><div class="kn-ch sm"><canvas id="knT3"></canvas></div>` : ''}
-      </div></div>`;
+        <div class="kn-h"><h2 style="font-size:15px">% sở hữu nước ngoài</h2><span class="kn-sub" style="margin:0">nét đứt = trần sở hữu (khi gần chạm)</span></div><div class="kn-ch sm"><canvas id="knT3"></canvas></div>`
+      : `<p class="kn-sub" style="margin-top:12px">Không có dữ liệu khối ngoại cho ${t} (mã ít giao dịch ngoại hoặc GTGD &lt; 0,5 tỷ/phiên).</p>`}`;
     box.querySelectorAll('[data-q]').forEach(c => c.onclick = () => veMa(c.dataset.q));
-    const q = box.querySelector('#knQ'); q.onkeydown = e => { if (e.key === 'Enter') veMa(q.value.toUpperCase().trim()); };
+    const q = box.querySelector('#knQ'); q.onfocus = () => q.select(); q.onkeydown = e => { if (e.key === 'Enter') veMa(q.value.toUpperCase().trim()); };
     ['t1', 't2', 't3'].forEach(k => { if (charts[k]) { try { charts[k].destroy(); } catch(e){} delete charts[k]; } });
     if (!m) return;
     const lab = T.d.map(dm), base = {plugins: {legend: {display: false}, tooltip: {mode: 'index', intersect: false}}};
