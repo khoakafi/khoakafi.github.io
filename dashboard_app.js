@@ -1546,13 +1546,13 @@ function ddVNI(curve){
    Mot khung trang duy nhat: gioi thieu + mockup + 6 chi so song + quy trinh 6 buoc.
    Mockup: khung ve bang CSS, ben trong la anh chup that (mock-web.webp / mock-app.webp).
    Che do app bo qua. */
-const KN_BUOC = [
-  ['Thu thập','Data','Giá, khối lượng, BCTC, định giá, dòng tiền.'],
-  ['Làm sạch','Normalize','Cổ tức, chia tách, thanh khoản mỏng, số liệu lỗi.'],
-  ['Xếp hạng','Score','Không đoán giá ngày mai — chấm và xếp thứ tự.'],
-  ['Đọc cấu trúc','Pattern','Nền, độ siết, nhịp tích luỹ — không chỉ một cây nến.'],
-  ['Gác cổng','Rule & Risk','Không đủ điều kiện thì không có giao dịch.'],
-  ['Đối soát','Review','Ngày vào, giá ra, lãi lỗ sau phí, cạnh VN-Index.']
+const KN_BUOC = [   /* 12/11/2026: theo brief landing page — mỗi bước một câu */
+  ['Thu thập','Data','Giá, thanh khoản và diễn biến thị trường.'],
+  ['Bối cảnh','Market','Đánh giá thị trường trước khi tìm cơ hội.'],
+  ['Xếp hạng','Score','Lọc và xếp hạng cổ phiếu theo tiêu chí định lượng.'],
+  ['Tín hiệu','Signal','Mua, bán hoặc đứng ngoài.'],
+  ['Quản trị','Risk','Tỷ trọng, điểm cắt lỗ, giới hạn rủi ro.'],
+  ['Rà soát','Review','Theo dõi kết quả, cập nhật dữ liệu, rà hệ thống.']
 ];
 function knHeroHtml(){
   /* Dau Zalo kieu icon app tren dien thoai: o vuong bo goc xanh, chu Zalo trang o giua */
@@ -1564,10 +1564,14 @@ function knHeroHtml(){
     <div class="kh-in">
       <div class="kh-txt">
         <span class="kh-tag"><i></i>Khoa Nguyen Signal · Hệ thống giao dịch định lượng</span>
-        <h1>Máy đọc dữ liệu. <em>Quy tắc quyết định có hành động hay không.</em></h1>
-        <p>Tôi không hô hào mã nào sẽ tăng bao nhiêu. Khoa Nguyen Signal là cỗ máy tôi tự viết, chạy bằng tiền thật từ 2019: hết phiên là chấm lại toàn sàn qua hai vòng — <b>doanh nghiệp có khoẻ không</b> và <b>đồ thị có đẹp không</b>.</p>
-        <p>Máy đọc được lượng dữ liệu một người không đọc nổi mỗi ngày, nhưng máy không khuyến nghị. Quy tắc định lượng mới quyết định: <b>mã nào đáng theo dõi, khi nào được vào lệnh, khi nào phải đứng ngoài</b>. Nền siết chặt nhất được gắn <b>B★</b>.</p>
-        <p>Hệ thống không có niềm tin — hệ thống có nhật ký. Sai thì mức sai được kiểm soát, đúng thì xu hướng được giữ đủ lâu.</p>
+        <h1>Đầu tư có quy tắc. <em>Giao dịch có kỷ luật.</em></h1>
+        <p class="kh-lead">Hệ thống phân tích dữ liệu thị trường, đánh giá cổ phiếu và xác định điểm mua bán theo bộ quy tắc định lượng.</p>
+        <p class="kh-khong">Không dự đoán thị trường. Không chạy theo cảm xúc.</p>
+        <ul class="kh-ds">
+          <li><b>Dữ liệu</b><span>Giá, thanh khoản, xu hướng thị trường.</span></li>
+          <li><b>Tín hiệu</b><span>Xếp hạng cổ phiếu, điểm mua bán.</span></li>
+          <li><b>Quản trị</b><span>Kiểm soát rủi ro, theo dõi hiệu suất.</span></li>
+        </ul>
         <div class="kh-num" id="khNum"></div>
       </div>
       <div class="kh-dev">
@@ -1627,9 +1631,12 @@ function knHeroVe(){
     const thieu = (BSTAR.thieu || []).length;
     const nhan = 'Hệ thống từ 2019' + (dangTinh ? ' <i style="font-style:normal;color:#D97706">· đang tính ' + nam + '…</i>'
       : thieu ? ' <i style="font-style:normal;color:#D97706" title="' + BSTAR.thieu.join(', ') + '">· đang tải ' + thieu + ' mã</i>' : '');
-    num.innerHTML = o(nhan, f(st.all), 'up') + o('VN-Index cùng kỳ', f(st.vall), 'mut')
-      + o('Tỷ lệ thắng', Math.round(st.winrate) + '%') + o('Deal đã chốt', String(st.ndeal))
-      + o('R:R', st.rr.toFixed(1)) + o('Max drawdown', '−' + Math.abs(st.maxdd).toFixed(1) + '%', 'down');
+    const vn = x => x.replace('.', ',');
+    num.innerHTML = '<div class="kh-n1">' + o(nhan.replace('Hệ thống từ 2019', 'Lợi nhuận hệ thống từ 2019'), vn(f(st.all)), 'up')
+      + o('VN-Index cùng kỳ', vn(f(st.vall)), 'mut') + '</div><div class="kh-n2">'
+      + o('Tỷ lệ thắng', Math.round(st.winrate) + '%') + o('Số giao dịch', String(st.ndeal))
+      + o('Risk/Reward', vn(st.rr.toFixed(1))) + o('Drawdown tối đa', '−' + vn(Math.abs(st.maxdd).toFixed(1)) + '%', 'down') + '</div>'
+      + '<p class="kh-ghi">Sổ mô phỏng theo tín hiệu B★ từ 2019: mỗi deal 25% vốn đầu năm, giá đóng cửa, đã trừ phí 0,4%/deal và lãi vay 13%/năm phần vượt vốn, chưa tính trượt giá. Kết quả quá khứ, không phải cam kết lợi nhuận.</p>';
   }catch(e){}
 }
 inits.market = async function(){

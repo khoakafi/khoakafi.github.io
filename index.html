@@ -204,9 +204,21 @@ body.knFit #view-compare>.card{margin-bottom:0}
 #knHero h1 em{font-style:normal;color:var(--green-dark)}
 #knHero p{font-size:clamp(12.5px,1.62vh,16px);line-height:1.66;color:#4B5563;margin-bottom:8px}
 #knHero p b{color:#12203A;font-weight:700}
+#knHero p.kh-lead{font-size:clamp(13.5px,1.8vh,17px);color:#374151;margin-bottom:4px}
+#knHero p.kh-khong{font-size:clamp(13px,1.7vh,16px);color:#12203A;font-weight:700;margin-bottom:12px}
+.kh-ds{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.kh-ds li{padding:10px 12px;border-top:3px solid #18A34B;background:#F4FAF6;border-radius:0 0 10px 10px}
+.kh-ds b{display:block;font-size:clamp(13px,1.65vh,15.5px);color:#12203A;font-weight:800;margin-bottom:2px}
+.kh-ds span{font-size:clamp(12px,1.5vh,14px);color:#4B5563;line-height:1.45}
+.kh-num .kh-n1{display:flex;gap:28px;align-items:flex-end}
+.kh-num .kh-n1 .v.up{font-size:clamp(28px,4.2vh,42px);line-height:1.05}
+.kh-num .kh-n2{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px 18px;margin-top:10px}
+.kh-num .kh-n2 .v{font-size:clamp(15px,2vh,21px)}
+.kh-num p.kh-ghi{max-width:540px;font-size:11.5px!important;line-height:1.45!important;color:#94A3B8!important;margin:9px 0 0!important}
+@media(max-width:700px){.kh-ds{grid-template-columns:1fr;gap:6px}.kh-ds li{border-top:0;border-left:3px solid #18A34B;border-radius:0 8px 8px 0;padding:7px 11px}.kh-num .kh-n2{grid-template-columns:repeat(2,minmax(0,1fr))}.kh-num{padding-bottom:34px}}
 #knHero p.kh-root{font-size:clamp(11.5px,1.45vh,14px);line-height:1.55;color:#6B7280;border-left:3px solid #CFE9D8;padding-left:11px;margin-top:9px}
 #knHero p.kh-root b{color:var(--green-dark);font-weight:700}
-.kh-num{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 22px;margin:10px 0 0;padding-top:10px;border-top:1px solid #E7ECE9}
+.kh-num{display:block;margin:10px 0 0;padding-top:10px;border-top:1px solid #E7ECE9}
 .kh-num .l{font-size:clamp(11px,1.1vh,13px);color:var(--muted);font-weight:600;white-space:nowrap}
 .kh-num .v{font-size:clamp(17px,2.4vh,26px);font-weight:800;margin-top:2px;letter-spacing:-.015em}
 .kh-num .v.mut{color:#6B7280}
@@ -309,7 +321,7 @@ body.knFit #view-compare>.card{margin-bottom:0}
 <script src="bstar_live.js"></script>
 <script src="hanghoa_data.js?v=20260907a"></script>
 <script src="nhan_dinh.js?v=20260914a"></script>
-<script src="dashboard_app.js?v=20261104c"></script>
+<script src="dashboard_app.js?v=20261112a"></script>
 <script src="market_v2.js?v=20260907l"></script>
 <script src="laisuat.js?v=20260926b"></script>
 <script src="tongquan_data.js"></script>
