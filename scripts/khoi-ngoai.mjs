@@ -41,16 +41,18 @@ console.log('phien', NGAY[0], '->', NGAY[NGAY.length - 1], NGAY.length);
 const CHI_SO = { VNINDEX: 'VNINDEX', VN30: 'VN30', HNX: 'HNX', UPCOM: 'UPCOM', FU: 'FU_HNX' };
 const F = {};   // code -> [row|null per ngày]
 const P = {};   // code -> [adClose per ngày]
+const GT = {};  // code -> [giá trị giao dịch khớp + thoả thuận per ngày] (số ngoại của VNDirect gồm cả thoả thuận)
 for (let k = 0; k < NGAY.length; k++){
   const d = NGAY[k];
   const [f, p] = await Promise.all([
     lay(`${API}/foreigns?q=tradingDate:${d}&size=4000`),
-    lay(`${API}/stock_prices?q=date:${d}&size=4000&fields=code,adClose,close`)
+    lay(`${API}/stock_prices?q=date:${d}&size=4000&fields=code,adClose,close,nmValue,ptValue`)
   ]);
   let n = 0;
   for (const x of f.data){ const c = x.code; if (!ROWS[c] && !Object.values(CHI_SO).includes(c)) continue;
     (F[c] ||= Array(NGAY.length).fill(null))[k] = x; n++; }
-  for (const x of p.data){ if (!ROWS[x.code]) continue; (P[x.code] ||= Array(NGAY.length).fill(null))[k] = x.adClose ?? x.close; }
+  for (const x of p.data){ if (!ROWS[x.code]) continue; (P[x.code] ||= Array(NGAY.length).fill(null))[k] = x.adClose ?? x.close;
+    (GT[x.code] ||= Array(NGAY.length).fill(0))[k] = (+x.nmValue || 0) + (+x.ptValue || 0); }
   console.log(d, 'foreigns', f.data.length, '-> giu', n, '| gia', p.data.length);
   if (f.data.length < 500) throw new Error('phien ' + d + ' thieu du lieu foreigns: ' + f.data.length);
 }
@@ -78,6 +80,10 @@ for (const [c, r] of Object.entries(ROWS)){
     lim: (sh > 0 && cuoi && cuoi.totalRoom > 0) ? Math.round(cuoi.totalRoom / sh * 1e4) / 100 : null,
     room: cuoi ? cuoi.currentRoom : null, tr: cuoi ? cuoi.totalRoom : null, sh: Math.round(sh),
     n: net, o: own, bt: cuoi ? ty(cuoi.buyVal) : 0, xt: cuoi ? ty(cuoi.sellVal) : 0,
+    /* tổng 1 / 5 / 20 phiên: ngoại mua, ngoại bán, giá trị giao dịch toàn mã (tỷ) -> "ngoại chiếm bao nhiêu % giao dịch" */
+    kb: [1, 5, 20].map(k => ty(a.slice(-k).reduce((t, x) => t + (x ? x.buyVal : 0), 0))),
+    kx: [1, 5, 20].map(k => ty(a.slice(-k).reduce((t, x) => t + (x ? x.sellVal : 0), 0))),
+    kg: [1, 5, 20].map(k => ty((GT[c] || []).slice(-k).reduce((t, v) => t + (v || 0), 0))),
     px: (P[c] || []).map(v => v == null ? null : +(+v).toFixed(2))
   };
   co++;
