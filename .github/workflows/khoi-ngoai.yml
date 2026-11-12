@@ -1,0 +1,31 @@
+name: khoi-ngoai
+# Tab "Khoi ngoai": dung khoingoai_data.js tu VNDirect sau phien (60 phien, moi ma). Hong thi khong ghi.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 8 * * 1-5'    # 15:23 VN
+    - cron: '47 10 * * 1-5'   # 17:47 VN (du phong, lich GitHub hay tre)
+    - cron: '17 13 * * 1-5'   # 20:17 VN (du phong)
+permissions:
+  contents: write
+  pages: write
+concurrency: { group: khoi-ngoai, cancel-in-progress: false }
+jobs:
+  dung:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+    - uses: actions/checkout@v4
+    - name: Dung du lieu
+      run: node scripts/khoi-ngoai.mjs
+    - name: Commit neu co thay doi
+      run: |
+        if git diff --quiet -- khoingoai_data.js 2>/dev/null && git ls-files --error-unmatch khoingoai_data.js >/dev/null 2>&1; then echo "khong doi"; exit 0; fi
+        git config user.name "kafi-auto" && git config user.email "auto@khoanguyeninvest.vn"
+        git add khoingoai_data.js
+        git commit -m "[AUTO] khoi ngoai $(date -u +%Y-%m-%d)"
+        for i in 1 2 3 4; do git pull --no-rebase --no-edit -q origin main && git push -q origin HEAD:main && break; sleep $((i*5)); done
+        curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+          https://api.github.com/repos/${{ github.repository }}/pages/builds -o /dev/null -w "pages build: %{http_code}\n" || true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
