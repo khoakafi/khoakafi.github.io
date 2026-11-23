@@ -370,7 +370,36 @@
    "uutien": 4,
    "pdf": "https://sbv.gov.vn/documents/20117/0/Di%E1%BB%85n+bi%E1%BA%BFn+l%C3%A3i+su%E1%BA%A5t+th%C3%A1ng+9.2026.pdf/0297d354-bca4-726c-89fd-2093d5fc6260?t=1792641770112",
    "lay": "2026-10-23"
+  },
+  "2026-10": {
+   "kkh": [
+    0.1,
+    0.2
+   ],
+   "d1_6": [
+    4.1,
+    4.5
+   ],
+   "d6_12": [
+    6.7,
+    8.3
+   ],
+   "d12_24": [
+    6.4,
+    7.9
+   ],
+   "d24": [
+    7.4,
+    8.3
+   ],
+   "vay": [
+    8.4,
+    11.1
+   ],
+   "uutien": 4,
+   "pdf": "https://sbv.gov.vn/documents/20117/0/Lai+suat+thang+10.2026.pdf/14eaf90e-d71a-e37b-6cba-d9c7da59e7fe?t=1795420922990",
+   "lay": "2026-11-23"
   }
  },
- "capNhat": "2026-10-23"
+ "capNhat": "2026-11-23"
 }
