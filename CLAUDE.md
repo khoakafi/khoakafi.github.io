@@ -225,6 +225,8 @@ Dữ liệu mới dùng lại được: nhánh `he-moi-data` (1.934 mã gồm m�
   sổ +13%/năm, sụt −26%** (B★ +7,5%/deal, +57%/năm, −12%). Giai đoạn 2024–26 đã "dùng" một lần.
 - **Đứng vững ngoài mẫu (chưa thành luật, chờ anh Khoa):** deal B★ có LNST quý ≥ +25% lãi +12,6% / +10,4% (2021–23 / 2024–26), deal còn lại +2,4% / +4,4%.
   Luật cơ bản B★ hiện chỉ loại LN tăng 0–25%, vẫn cho qua LN giảm.
+  **Nhưng không cần đổi tỷ trọng 35/25/15:** C hơn ở cả 3 mức (6/6 ô, ô nhỏ), song giữ trần 35% thì thêm C chỉ đưa sổ +847% → +886%;
+  phần tăng lớn (+1.181%) chỉ có khi đẩy nhóm tốt nhất lên 45% = thêm rủi ro (KET-QUA.md mục 4b).
 
 ## Phân tích cơ bản chuyên sâu (15/10/2026)
 
