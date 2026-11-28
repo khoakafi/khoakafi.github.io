@@ -214,6 +214,18 @@ ORS 21/10 trượt B★ vì biên độ 10/30 phiên = 0,63. kafi-core `research
 **Sổ deal hụt** (29/10, anh Khoa: "lưu ý để back-test ngày càng thông minh"): kafi-core `research/deal-hut.md` — mỗi mã nổ đẹp mà không ra B★
 ghi luật chặn + số đo + kết quả 10/20 phiên; giả thuyết ghi trước (H1 phiên bật lẻ, H2 LNST quý âm), chỉ kiểm khi đủ ≥ 20 ca. VSC 21/10: nền 0,77.
 
+## Hệ mới "điểm mua trong nền, không cần trần" (28/11/2026) — KHÔNG ĐẠT, không lên web
+
+Anh Khoa: B★ phải mua ở phiên trần (mua sớm sợ không trần, trần cứng không mua được) → muốn hệ kiểu Pocket Pivot, ~30 deal/năm, ngang B★
+(mốc = B★ trên web, giả định mua được giá trần). kafi-core nhánh `claude/happy-maxwell-sg52le`: `research/he-moi/` (`GIA-THUYET.md` ghi trước, `KET-QUA.md`).
+Dữ liệu mới dùng lại được: nhánh `he-moi-data` (1.934 mã gồm mã đã hủy, 2013–nay, OHLC gốc + điều chỉnh + KL + giá trần + khối ngoại theo ngày), `he-moi-vni` (VNINDEX từ 2010, DNSE).
+- **Pocket Pivot = mua bừa** cùng bộ lọc ở cả 2014–20 và 2021–23 (mọi kiểu thoát). Đừng thử lại.
+- **Lợi thế B★ nằm ở chính phiên đóng trần**: mua trong phiên khi chạm ngưỡng thì 33–46% số lần xịt (−2,2 đến −2,8%/lệnh). B★ trước 2021: −0,4%/deal (18 deal).
+- Luật chốt N★ (nền B★ + LN quý ≥ 25% + dòng tiền tích cực, mua khi giá chạm +5% trong phiên): học 2021–23 +7,2%/deal; **kiểm tra 2024–26 +2,3%/deal,
+  sổ +13%/năm, sụt −26%** (B★ +7,5%/deal, +57%/năm, −12%). Giai đoạn 2024–26 đã "dùng" một lần.
+- **Đứng vững ngoài mẫu (chưa thành luật, chờ anh Khoa):** deal B★ có LNST quý ≥ +25% lãi +12,6% / +10,4% (2021–23 / 2024–26), deal còn lại +2,4% / +4,4%.
+  Luật cơ bản B★ hiện chỉ loại LN tăng 0–25%, vẫn cho qua LN giảm.
+
 ## Phân tích cơ bản chuyên sâu (15/10/2026)
 
 `phantich.js` (file riêng, `?v=`): khối dưới "Tài chính — 12 quý" ở tab Chi tiết mã (web + app). dashboard_app.js bọc trong IIFE nên
