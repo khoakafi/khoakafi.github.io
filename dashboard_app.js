@@ -2340,12 +2340,19 @@ window.__knPaneH = function(){ return (window.innerWidth || 999) < 620 ? 84 : 11
 /* tong chieu cao cac khung chi bao duoi khoi luong (RSI, P/E, P/B) */
 window.__knRsiH = function(){ return ((KN_IND.rsi ? 1 : 0) + (KN_IND.pe ? 1 : 0) + (KN_IND.pb ? 1 : 0)) * window.__knPaneH(); };
 window.__knDo = { on: false, a: null, b: null, xong: false };
+/* 28/11/2026 anh Khoa: cong cu ke duong xu huong (trend line). Bam diem dau, bam diem cuoi; luu theo ma (localStorage kn_tl_<MA>).
+   Moi diem luu {t: thoi gian nen, o: so phien vuot nen cuoi (ke ra tuong lai), p: gia}. Net dut keo dai sang phai. */
+window.__knTl = { on: false, a: null, b: null };
+function knTlDoc(t){ try { return JSON.parse(localStorage.getItem('kn_tl_' + t) || '[]') || []; } catch(e){ return []; } }
+function knTlGhi(t, ds){ try { if (ds.length) localStorage.setItem('kn_tl_' + t, JSON.stringify(ds)); else localStorage.removeItem('kn_tl_' + t); } catch(e){} }
 function knVeTools(){
   const box = document.getElementById('dTools'); if (!box) return;
   const DS = [['ma20', 'MA20', '#2962FF'], ['ma50', 'MA50', '#FF9800'], ['ma200', 'MA200', '#9C27B0'], ['rsi', 'RSI', '#7E57C2'], ['pe', 'P/E', '#475569'], ['pb', 'P/B', '#18A34B']];
   const nut = (k, ten, mau, bat) => `<button type="button" data-k="${k}" class="knTool${bat ? ' on' : ''}" style="--m:${mau}"><i></i>${ten}</button>`;
   box.innerHTML = DS.map(d => nut(d[0], d[1], d[2], !!KN_IND[d[0]])).join('')
-    + `<button type="button" data-k="do" class="knTool knDo${window.__knDo.on ? ' on' : ''}" title="Bấm điểm đầu rồi điểm cuối trên chart để đo % (Esc để xoá)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17 17 3l4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg>Đo %</button>`;
+    + `<button type="button" data-k="do" class="knTool knDo${window.__knDo.on ? ' on' : ''}" title="Bấm điểm đầu rồi điểm cuối trên chart để đo % (Esc để xoá)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17 17 3l4 4L7 21z"/><path d="m7 13 2 2M10 10l2 2M13 7l2 2"/></svg>Đo %</button>`
+    + `<button type="button" data-k="tl" class="knTool knDo${window.__knTl.on ? ' on' : ''}" title="Kẻ đường xu hướng: bấm điểm đầu rồi điểm cuối trên chart (Esc để huỷ)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19 20 5"/><circle cx="4" cy="19" r="2"/><circle cx="20" cy="5" r="2"/></svg>Kẻ</button>`
+    + (curT && knTlDoc(curT).length ? `<button type="button" data-k="tlx" class="knTool" title="Xoá các đường đã kẻ của ${curT}">Xoá nét kẻ (${knTlDoc(curT).length})</button>` : '');
   if (!document.getElementById('knToolCss')) { const st = document.createElement('style'); st.id = 'knToolCss';
     st.textContent = '#dTools{display:flex;gap:6px;flex-wrap:wrap;align-items:center}'
       + '.knTool{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 10px;border:1px solid #DDE1E6;border-radius:7px;background:#fff;color:#6B7280;font:600 12.5px Inter,sans-serif;cursor:pointer}'
@@ -2354,7 +2361,9 @@ function knVeTools(){
       + '#proK.coRsi{height:auto!important}';
     document.head.appendChild(st); }
   box.onclick = function(e){ const b = e.target.closest('.knTool'); if (!b) return; const k = b.dataset.k;
-    if (k === 'do') { const D = window.__knDo; D.on = !D.on; D.a = D.b = null; D.xong = false; b.classList.toggle('on', D.on); if (window.__knVeDo) window.__knVeDo(); return; }
+    if (k === 'do') { const D = window.__knDo; D.on = !D.on; D.a = D.b = null; D.xong = false; if (D.on) { window.__knTl.on = false; window.__knTl.a = window.__knTl.b = null; } knVeTools(); if (window.__knVeDo) window.__knVeDo(); if (window.__knVeTl) window.__knVeTl(); return; }
+    if (k === 'tl') { const T = window.__knTl; T.on = !T.on; T.a = T.b = null; if (T.on) { const D = window.__knDo; D.on = false; D.a = D.b = null; D.xong = false; } knVeTools(); if (window.__knVeDo) window.__knVeDo(); if (window.__knVeTl) window.__knVeTl(); return; }
+    if (k === 'tlx') { knTlGhi(curT, []); knVeTools(); if (window.__knVeTl) window.__knVeTl(); return; }
     KN_IND[k] = KN_IND[k] ? 0 : 1; b.classList.toggle('on', !!KN_IND[k]);
     try { localStorage.setItem('kn_ind', JSON.stringify(KN_IND)); } catch(x){}
     if (k === 'rsi' || k === 'pe' || k === 'pb') { proLoadedFor = null; loadProChart(); if (window.__knTranMan) setTimeout(window.__knTranMan, 30); return; }
@@ -2727,7 +2736,7 @@ function loadProChart(){
       const w = px.clientWidth, h = px.clientHeight, dpr = window.devicePixelRatio || 1;
       if (cv.width !== Math.round(w*dpr) || cv.height !== Math.round(h*dpr)) { cv.width = Math.round(w*dpr); cv.height = Math.round(h*dpr); cv.style.width = w+'px'; cv.style.height = h+'px'; }
       const g = cv.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0); g.clearRect(0,0,w,h);
-      const D = window.__knDo; px.style.cursor = D.on ? 'crosshair' : '';
+      const D = window.__knDo; px.style.cursor = (D.on || window.__knTl.on) ? 'crosshair' : '';
       if (!D.on || !D.a || !D.b) return;
       const ts = proChart.timeScale();
       const x1 = ts.logicalToCoordinate(D.a.l), x2 = ts.logicalToCoordinate(D.b.l), y1 = proCandle.priceToCoordinate(D.a.p), y2 = proCandle.priceToCoordinate(D.b.p);
@@ -2760,9 +2769,46 @@ function loadProChart(){
   proChart.subscribeCrosshairMove(p => { const D = window.__knDo; if (!D.on || !D.a || D.xong) return; const d = diemDo(p); if (d) { D.b = d; veDo(); } });
   if (!window.__knDoEsc) { window.__knDoEsc = 1; document.addEventListener('keydown', e => { if (e.key === 'Escape' && window.__knDo.a) { window.__knDo.a = window.__knDo.b = null; window.__knDo.xong = false; if (window.__knVeDo) window.__knVeDo(); } }); }
   veDo();
+  /* ==== Duong xu huong ==== */
+  const tlIdx = d => { const ts = curOhlc.t; let lo = 0, hi = ts.length - 1; if (d.t <= ts[0]) return 0; if (d.t >= ts[hi]) return hi + (d.o || 0);
+    while (lo < hi) { const m = (lo + hi + 1) >> 1; if (ts[m] <= d.t) lo = m; else hi = m - 1; } return lo; };
+  const tlTu = q => { const n = curOhlc.t.length - 1, i = Math.round(q.l), c = Math.max(0, Math.min(n, i)); return { t: curOhlc.t[c], o: i > n ? i - n : 0, p: +q.p.toFixed(2) }; };
+  const veTl = () => {
+    try {
+      const px = document.getElementById('proPx'); if (!px || !proChart) return;
+      let cv = document.getElementById('proTlCv');
+      if (!cv) { cv = document.createElement('canvas'); cv.id = 'proTlCv'; cv.style.cssText = 'position:absolute;left:0;top:0;z-index:4;pointer-events:none'; px.appendChild(cv); }
+      const w = px.clientWidth, h = px.clientHeight, dpr = window.devicePixelRatio || 1;
+      if (cv.width !== Math.round(w*dpr) || cv.height !== Math.round(h*dpr)) { cv.width = Math.round(w*dpr); cv.height = Math.round(h*dpr); cv.style.width = w+'px'; cv.style.height = h+'px'; }
+      const g = cv.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0); g.clearRect(0,0,w,h);
+      const T = window.__knTl; if (T.on) px.style.cursor = 'crosshair'; else if (!window.__knDo.on) px.style.cursor = '';
+      const ts = proChart.timeScale(), ds = knTlDoc(curT).slice();
+      if (T.on && T.a && T.b) ds.push({a: T.a, b: T.b, tam: 1});
+      const wR = w - 60;   // chua truc gia ben phai
+      ds.forEach(L => {
+        const i1 = tlIdx(L.a), i2 = tlIdx(L.b); const x1 = ts.logicalToCoordinate(i1), x2 = ts.logicalToCoordinate(i2);
+        const y1 = proCandle.priceToCoordinate(L.a.p), y2 = proCandle.priceToCoordinate(L.b.p); if (x1 == null || x2 == null || y1 == null || y2 == null) return;
+        g.strokeStyle = L.tam ? '#2962FF' : '#1F4FD8'; g.lineWidth = 1.8; g.setLineDash([]);
+        g.beginPath(); g.moveTo(x1, y1); g.lineTo(x2, y2); g.stroke();
+        if (Math.abs(x2 - x1) > 2) { const k = (y2 - y1) / (x2 - x1), xe = x2 > x1 ? wR : 0; g.setLineDash([5, 4]); g.lineWidth = 1.2; g.globalAlpha = .7;
+          g.beginPath(); g.moveTo(x2, y2); g.lineTo(xe, y2 + k * (xe - x2)); g.stroke(); g.globalAlpha = 1; g.setLineDash([]); }
+        g.fillStyle = '#fff'; g.strokeStyle = '#1F4FD8'; g.lineWidth = 1.5; [[x1, y1], [x2, y2]].forEach(([x, y]) => { g.beginPath(); g.arc(x, y, 3.2, 0, 7); g.fill(); g.stroke(); });
+      });
+      if (T.on && T.a && !T.b) { const x = ts.logicalToCoordinate(tlIdx(T.a)), y = proCandle.priceToCoordinate(T.a.p); if (x != null && y != null) { g.fillStyle = '#2962FF'; g.beginPath(); g.arc(x, y, 4, 0, 7); g.fill(); } }
+    } catch(e){}
+  };
+  window.__knVeTl = veTl;
+  proChart.timeScale().subscribeVisibleLogicalRangeChange(() => requestAnimationFrame(veTl));
+  proChart.subscribeClick(p => { const T = window.__knTl; if (!T.on) return; const d = diemDo(p); if (!d) return;
+    if (!T.a) { T.a = tlTu(d); T.b = null; veTl(); return; }
+    const b = tlTu(d); const ds = knTlDoc(curT); ds.push({a: T.a, b}); knTlGhi(curT, ds);
+    T.on = false; T.a = T.b = null; knVeTools(); veTl(); });
+  proChart.subscribeCrosshairMove(p => { const T = window.__knTl; if (!T.on || !T.a) return; const d = diemDo(p); if (d) { T.b = tlTu(d); veTl(); } });
+  if (!window.__knTlEsc) { window.__knTlEsc = 1; document.addEventListener('keydown', e => { if (e.key === 'Escape' && window.__knTl.on) { window.__knTl.on = false; window.__knTl.a = window.__knTl.b = null; knVeTools(); if (window.__knVeTl) window.__knVeTl(); } }); }
+  veTl(); knVeTools();
   window.__knAlign = alignScales;
   try { const _pe = document.getElementById('proPx'); if (!_pe.__knRO) { _pe.__knRO = 1;
-    new ResizeObserver(() => { if (window.__paintBadges) requestAnimationFrame(window.__paintBadges); if (window.__knVeDo) requestAnimationFrame(window.__knVeDo); if (window.__knAlign) window.__knAlign(); }).observe(_pe); } } catch(e){}
+    new ResizeObserver(() => { if (window.__paintBadges) requestAnimationFrame(window.__paintBadges); if (window.__knVeDo) requestAnimationFrame(window.__knVeDo); if (window.__knVeTl) requestAnimationFrame(window.__knVeTl); if (window.__knAlign) window.__knAlign(); }).observe(_pe); } } catch(e){}
   addProBadges();
   const __setRange = () => { try { proChart.timeScale().setVisibleLogicalRange({ from: Math.max(0, curOhlc.t.length - 130), to: curOhlc.t.length + 5 }); } catch(e){} };
   __setRange(); setTimeout(__setRange, 150); setTimeout(__setRange, 600);
@@ -2783,9 +2829,15 @@ function loadProChart(){
       const ft2 = document.getElementById('nameBar');
       const topY = hd2 ? Math.round(hd2.getBoundingClientRect().bottom) : 0;
       const botH = ft2 ? Math.max(0, Math.round(window.innerHeight - ft2.getBoundingClientRect().top)) : 0;
-      w2.style.cssText = 'position:fixed;left:0;right:0;top:' + topY + 'px;bottom:' + botH + 'px;z-index:70;background:#fff;padding:8px 12px;overflow:hidden';
+      /* 28/11/2026: phong to van giu thanh ten ma + cong cu (MA, RSI, Do %, Ke). Doi #dTitle/#dTools vao mot dai co dinh tren chart, thu nho thi tra ve cho cu. */
+      let fh = document.getElementById('proFsHead');
+      if (!fh) { fh = document.createElement('div'); fh.id = 'proFsHead'; document.body.appendChild(fh);
+        ['dTitle', 'dTools'].forEach(id => { const e = document.getElementById(id); if (!e) return; const m = document.createComment('fs-' + id); e.parentNode.insertBefore(m, e); fh.appendChild(e); }); }
+      fh.style.cssText = 'position:fixed;left:0;right:0;top:' + topY + 'px;z-index:71;background:#fff;padding:8px 14px 6px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;border-bottom:1px solid #EEF1F4';
+      const fhH = fh.offsetHeight;
+      w2.style.cssText = 'position:fixed;left:0;right:0;top:' + (topY + fhH) + 'px;bottom:' + botH + 'px;z-index:70;background:#fff;padding:8px 12px;overflow:hidden';
       if (pk2) pk2.style.setProperty('height','auto','important');
-      const vh2 = window.innerHeight - topY - botH - 16;
+      const vh2 = window.innerHeight - topY - fhH - botH - 16;
       const volH = Math.max(110, Math.round(vh2 * 0.20)), rsH = window.__knRsiH();
       const pxH = Math.max(200, vh2 - volH - rsH);
       px2.style.height = pxH + 'px';
@@ -2793,6 +2845,10 @@ function loadProChart(){
       if (vl2) vl2.style.top = (pxH + 6) + 'px';
       document.body.style.overflow = 'hidden';
     } else {
+      const fh = document.getElementById('proFsHead');
+      if (fh) { ['dTitle', 'dTools'].forEach(id => { const e = document.getElementById(id); if (!e) return;
+          const it = document.createNodeIterator(document.body, NodeFilter.SHOW_COMMENT); let c; while ((c = it.nextNode())) if (c.nodeValue === 'fs-' + id) { c.parentNode.insertBefore(e, c); c.remove(); break; } });
+        fh.remove(); }
       w2.style.cssText = '';
       if (pk2) pk2.style.removeProperty('height');
       px2.style.height = (360 - window.__knRsiH()) + 'px'; delete px2.dataset.knTm;
@@ -2901,10 +2957,10 @@ inits.detail = function(t){
         <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:9px">
           <div class="search-wrap"><input id="dQ" placeholder="Nhập mã hoặc tên công ty…" style="width:206px;padding:6px 11px"><div id="sugg"></div></div>
           <div id="dTitle" style="font-size:15.5px;font-weight:700"></div>
-          <div id="dTools"></div>
           <div id="dRanges" style="display:none"></div>
           <div id="dTpn" style="margin-left:auto"></div>
         </div>
+        <div id="dTools" style="margin:0 0 8px"></div>
         <div style="display:flex;gap:10px;align-items:flex-start" id="dFlex">
           <div style="flex:1;min-width:0">
             <div id="chartSigWrap" style="display:none">
